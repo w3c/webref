@@ -77369,7 +77369,20 @@
         "number": "7.2.6.2"
       },
       "definedIn": "pre",
-      "links": []
+      "links": [
+        {
+          "type": "dev",
+          "id": "the-navigationprecommitcontroller-interface:navigationnavigateoptions-2",
+          "name": "precommitController.redirect(USVString url, NavigationNavigateOptions options)",
+          "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationprecommitcontroller-interface%3Anavigationnavigateoptions-2",
+          "heading": {
+            "id": "the-navigationprecommitcontroller-interface",
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationprecommitcontroller-interface",
+            "title": "The NavigationPrecommitController interface",
+            "number": "7.2.6.10.2"
+          }
+        }
+      ]
     },
     {
       "id": "dom-navigationnavigateoptions-state",
@@ -77985,8 +77998,20 @@
         {
           "type": "dev",
           "id": "ongoing-navigation-tracking:dom-navigation-4",
-          "name": "navigation.transition.finished",
+          "name": "navigation.transition.committed",
           "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigation-tracking%3Adom-navigation-4",
+          "heading": {
+            "id": "ongoing-navigation-tracking",
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigation-tracking",
+            "title": "Ongoing navigation tracking",
+            "number": "7.2.6.8"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ongoing-navigation-tracking:dom-navigation-5",
+          "name": "navigation.transition.finished",
+          "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigation-tracking%3Adom-navigation-5",
           "heading": {
             "id": "ongoing-navigation-tracking",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigation-tracking",
@@ -79631,6 +79656,26 @@
       "links": []
     },
     {
+      "id": "abort-a-navigateevent",
+      "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#abort-a-navigateevent",
+      "linkingText": [
+        "abort a NavigateEvent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ongoing-navigation-tracking",
+        "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigation-tracking",
+        "title": "Ongoing navigation tracking",
+        "number": "7.2.6.8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "inform-the-navigation-api-about-aborting-navigation",
       "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#inform-the-navigation-api-about-aborting-navigation",
       "linkingText": [
@@ -79770,8 +79815,20 @@
         {
           "type": "dev",
           "id": "ongoing-navigation-tracking:dom-navigation-transition-5",
-          "name": "navigation.transition.finished",
+          "name": "navigation.transition.committed",
           "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigation-tracking%3Adom-navigation-transition-5",
+          "heading": {
+            "id": "ongoing-navigation-tracking",
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigation-tracking",
+            "title": "Ongoing navigation tracking",
+            "number": "7.2.6.8"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ongoing-navigation-tracking:dom-navigation-transition-6",
+          "name": "navigation.transition.finished",
+          "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigation-tracking%3Adom-navigation-transition-6",
           "heading": {
             "id": "ongoing-navigation-tracking",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigation-tracking",
@@ -79806,6 +79863,26 @@
       "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigationtransition-from",
       "linkingText": [
         "from entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ongoing-navigation-tracking",
+        "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigation-tracking",
+        "title": "Ongoing navigation tracking",
+        "number": "7.2.6.8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "concept-navigationtransition-committed",
+      "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigationtransition-committed",
+      "linkingText": [
+        "committed promise"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -79902,6 +79979,41 @@
           "id": "dom-navigationtransition-from-dev",
           "name": "navigation.transition.from",
           "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtransition-from-dev",
+          "heading": {
+            "id": "ongoing-navigation-tracking",
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigation-tracking",
+            "title": "Ongoing navigation tracking",
+            "number": "7.2.6.8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-navigationtransition-committed",
+      "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtransition-committed",
+      "linkingText": [
+        "committed"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NavigationTransition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ongoing-navigation-tracking",
+        "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigation-tracking",
+        "title": "Ongoing navigation tracking",
+        "number": "7.2.6.8"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-navigationtransition-committed-dev",
+          "name": "navigation.transition.committed",
+          "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtransition-committed-dev",
           "heading": {
             "id": "ongoing-navigation-tracking",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigation-tracking",
@@ -80561,6 +80673,41 @@
       "links": []
     },
     {
+      "id": "dom-navigationinterceptoptions-precommithandler",
+      "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-precommithandler",
+      "linkingText": [
+        "precommitHandler"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "NavigationInterceptOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-navigateevent-interface",
+        "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigateevent-interface",
+        "title": "The NavigateEvent interface",
+        "number": "7.2.6.10.1"
+      },
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-navigationinterceptoptions-precommithandler-dev",
+          "name": "event.intercept({ precommitHandler, handler, focusReset, scroll })",
+          "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-precommithandler-dev",
+          "heading": {
+            "id": "the-navigateevent-interface",
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigateevent-interface",
+            "title": "The NavigateEvent interface",
+            "number": "7.2.6.10.1"
+          }
+        }
+      ]
+    },
+    {
       "id": "dom-navigationinterceptoptions-handler",
       "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-handler",
       "linkingText": [
@@ -80584,7 +80731,7 @@
         {
           "type": "dev",
           "id": "dom-navigationinterceptoptions-handler-dev",
-          "name": "event.intercept({ handler, focusReset, scroll })",
+          "name": "event.intercept({ precommitHandler, handler, focusReset, scroll })",
           "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-handler-dev",
           "heading": {
             "id": "the-navigateevent-interface",
@@ -80619,7 +80766,7 @@
         {
           "type": "dev",
           "id": "dom-navigationinterceptoptions-focusreset-dev",
-          "name": "event.intercept({ handler, focusReset, scroll })",
+          "name": "event.intercept({ precommitHandler, handler, focusReset, scroll })",
           "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-focusreset-dev",
           "heading": {
             "id": "the-navigateevent-interface",
@@ -80654,7 +80801,7 @@
         {
           "type": "dev",
           "id": "dom-navigationinterceptoptions-scroll-dev",
-          "name": "event.intercept({ handler, focusReset, scroll })",
+          "name": "event.intercept({ precommitHandler, handler, focusReset, scroll })",
           "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationinterceptoptions-scroll-dev",
           "heading": {
             "id": "the-navigateevent-interface",
@@ -80818,6 +80965,26 @@
       "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigateevent-interception-state",
       "linkingText": [
         "interception state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-navigateevent-interface",
+        "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigateevent-interface",
+        "title": "The NavigateEvent interface",
+        "number": "7.2.6.10.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "concept-navigateevent-navigation-precommit-handler-list",
+      "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigateevent-navigation-precommit-handler-list",
+      "linkingText": [
+        "navigation precommit handler list"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -81010,7 +81177,7 @@
             "id": "the-navigationdestination-interface",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
             "title": "The NavigationDestination interface",
-            "number": "7.2.6.10.2"
+            "number": "7.2.6.10.3"
           }
         },
         {
@@ -81022,7 +81189,7 @@
             "id": "the-navigationdestination-interface",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
             "title": "The NavigationDestination interface",
-            "number": "7.2.6.10.2"
+            "number": "7.2.6.10.3"
           }
         },
         {
@@ -81034,7 +81201,7 @@
             "id": "the-navigationdestination-interface",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
             "title": "The NavigationDestination interface",
-            "number": "7.2.6.10.2"
+            "number": "7.2.6.10.3"
           }
         },
         {
@@ -81046,7 +81213,7 @@
             "id": "the-navigationdestination-interface",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
             "title": "The NavigationDestination interface",
-            "number": "7.2.6.10.2"
+            "number": "7.2.6.10.3"
           }
         },
         {
@@ -81058,7 +81225,7 @@
             "id": "the-navigationdestination-interface",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
             "title": "The NavigationDestination interface",
-            "number": "7.2.6.10.2"
+            "number": "7.2.6.10.3"
           }
         },
         {
@@ -81070,7 +81237,7 @@
             "id": "the-navigationdestination-interface",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
             "title": "The NavigationDestination interface",
-            "number": "7.2.6.10.2"
+            "number": "7.2.6.10.3"
           }
         }
       ]
@@ -81414,7 +81581,7 @@
         {
           "type": "dev",
           "id": "dom-navigateevent-intercept-dev",
-          "name": "event.intercept({ handler, focusReset, scroll })",
+          "name": "event.intercept({ precommitHandler, handler, focusReset, scroll })",
           "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-intercept-dev",
           "heading": {
             "id": "the-navigateevent-interface",
@@ -81481,6 +81648,101 @@
       "links": []
     },
     {
+      "id": "navigationprecommitcontroller",
+      "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationprecommitcontroller",
+      "linkingText": [
+        "NavigationPrecommitController"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-navigationprecommitcontroller-interface",
+        "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationprecommitcontroller-interface",
+        "title": "The NavigationPrecommitController interface",
+        "number": "7.2.6.10.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "navigationprecommithandler",
+      "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationprecommithandler",
+      "linkingText": [
+        "NavigationPrecommitHandler"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-navigationprecommitcontroller-interface",
+        "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationprecommitcontroller-interface",
+        "title": "The NavigationPrecommitController interface",
+        "number": "7.2.6.10.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "concept-navigationprecommitcontroller-event",
+      "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigationprecommitcontroller-event",
+      "linkingText": [
+        "event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-navigationprecommitcontroller-interface",
+        "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationprecommitcontroller-interface",
+        "title": "The NavigationPrecommitController interface",
+        "number": "7.2.6.10.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-navigationprecommitcontroller-redirect",
+      "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationprecommitcontroller-redirect",
+      "linkingText": [
+        "redirect(url, options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "NavigationPrecommitController"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-navigationprecommitcontroller-interface",
+        "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationprecommitcontroller-interface",
+        "title": "The NavigationPrecommitController interface",
+        "number": "7.2.6.10.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-navigationprecommitcontroller-redirect-dev",
+          "name": "precommitController.redirect(USVString url, NavigationNavigateOptions options)",
+          "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationprecommitcontroller-redirect-dev",
+          "heading": {
+            "id": "the-navigationprecommitcontroller-interface",
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationprecommitcontroller-interface",
+            "title": "The NavigationPrecommitController interface",
+            "number": "7.2.6.10.2"
+          }
+        }
+      ]
+    },
+    {
       "id": "navigationdestination",
       "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationdestination",
       "linkingText": [
@@ -81495,7 +81757,7 @@
         "id": "the-navigationdestination-interface",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
         "title": "The NavigationDestination interface",
-        "number": "7.2.6.10.2"
+        "number": "7.2.6.10.3"
       },
       "definedIn": "pre",
       "links": []
@@ -81515,7 +81777,7 @@
         "id": "the-navigationdestination-interface",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
         "title": "The NavigationDestination interface",
-        "number": "7.2.6.10.2"
+        "number": "7.2.6.10.3"
       },
       "definedIn": "prose",
       "links": []
@@ -81535,7 +81797,7 @@
         "id": "the-navigationdestination-interface",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
         "title": "The NavigationDestination interface",
-        "number": "7.2.6.10.2"
+        "number": "7.2.6.10.3"
       },
       "definedIn": "prose",
       "links": []
@@ -81555,7 +81817,7 @@
         "id": "the-navigationdestination-interface",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
         "title": "The NavigationDestination interface",
-        "number": "7.2.6.10.2"
+        "number": "7.2.6.10.3"
       },
       "definedIn": "prose",
       "links": []
@@ -81575,7 +81837,7 @@
         "id": "the-navigationdestination-interface",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
         "title": "The NavigationDestination interface",
-        "number": "7.2.6.10.2"
+        "number": "7.2.6.10.3"
       },
       "definedIn": "prose",
       "links": []
@@ -81597,7 +81859,7 @@
         "id": "the-navigationdestination-interface",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
         "title": "The NavigationDestination interface",
-        "number": "7.2.6.10.2"
+        "number": "7.2.6.10.3"
       },
       "definedIn": "prose",
       "links": [
@@ -81610,7 +81872,7 @@
             "id": "the-navigationdestination-interface",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
             "title": "The NavigationDestination interface",
-            "number": "7.2.6.10.2"
+            "number": "7.2.6.10.3"
           }
         }
       ]
@@ -81632,7 +81894,7 @@
         "id": "the-navigationdestination-interface",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
         "title": "The NavigationDestination interface",
-        "number": "7.2.6.10.2"
+        "number": "7.2.6.10.3"
       },
       "definedIn": "prose",
       "links": [
@@ -81645,7 +81907,7 @@
             "id": "the-navigationdestination-interface",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
             "title": "The NavigationDestination interface",
-            "number": "7.2.6.10.2"
+            "number": "7.2.6.10.3"
           }
         }
       ]
@@ -81667,7 +81929,7 @@
         "id": "the-navigationdestination-interface",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
         "title": "The NavigationDestination interface",
-        "number": "7.2.6.10.2"
+        "number": "7.2.6.10.3"
       },
       "definedIn": "prose",
       "links": [
@@ -81680,7 +81942,7 @@
             "id": "the-navigationdestination-interface",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
             "title": "The NavigationDestination interface",
-            "number": "7.2.6.10.2"
+            "number": "7.2.6.10.3"
           }
         }
       ]
@@ -81702,7 +81964,7 @@
         "id": "the-navigationdestination-interface",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
         "title": "The NavigationDestination interface",
-        "number": "7.2.6.10.2"
+        "number": "7.2.6.10.3"
       },
       "definedIn": "prose",
       "links": [
@@ -81715,7 +81977,7 @@
             "id": "the-navigationdestination-interface",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
             "title": "The NavigationDestination interface",
-            "number": "7.2.6.10.2"
+            "number": "7.2.6.10.3"
           }
         }
       ]
@@ -81737,7 +81999,7 @@
         "id": "the-navigationdestination-interface",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
         "title": "The NavigationDestination interface",
-        "number": "7.2.6.10.2"
+        "number": "7.2.6.10.3"
       },
       "definedIn": "prose",
       "links": [
@@ -81750,7 +82012,7 @@
             "id": "the-navigationdestination-interface",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
             "title": "The NavigationDestination interface",
-            "number": "7.2.6.10.2"
+            "number": "7.2.6.10.3"
           }
         }
       ]
@@ -81772,7 +82034,7 @@
         "id": "the-navigationdestination-interface",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
         "title": "The NavigationDestination interface",
-        "number": "7.2.6.10.2"
+        "number": "7.2.6.10.3"
       },
       "definedIn": "prose",
       "links": [
@@ -81785,7 +82047,7 @@
             "id": "the-navigationdestination-interface",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-navigationdestination-interface",
             "title": "The NavigationDestination interface",
-            "number": "7.2.6.10.2"
+            "number": "7.2.6.10.3"
           }
         }
       ]
@@ -81805,7 +82067,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -81825,7 +82087,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -81845,7 +82107,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -81865,7 +82127,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -81885,7 +82147,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -81905,7 +82167,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -81925,7 +82187,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -81945,7 +82207,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -81965,7 +82227,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -81985,7 +82247,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -82005,7 +82267,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -82025,7 +82287,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -82045,7 +82307,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -82065,7 +82327,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -82085,7 +82347,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -82105,7 +82367,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -82125,7 +82387,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -82145,7 +82407,7 @@
         "id": "navigate-event-firing",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-firing",
         "title": "Firing the event",
-        "number": "7.2.6.10.3"
+        "number": "7.2.6.10.4"
       },
       "definedIn": "prose",
       "links": []
@@ -82165,7 +82427,7 @@
         "id": "navigate-event-scroll-focus",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-scroll-focus",
         "title": "Scroll and focus behavior",
-        "number": "7.2.6.10.4"
+        "number": "7.2.6.10.5"
       },
       "definedIn": "prose",
       "links": []
@@ -82185,7 +82447,7 @@
         "id": "navigate-event-scroll-focus",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-scroll-focus",
         "title": "Scroll and focus behavior",
-        "number": "7.2.6.10.4"
+        "number": "7.2.6.10.5"
       },
       "definedIn": "prose",
       "links": []
@@ -82205,7 +82467,7 @@
         "id": "navigate-event-scroll-focus",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-scroll-focus",
         "title": "Scroll and focus behavior",
-        "number": "7.2.6.10.4"
+        "number": "7.2.6.10.5"
       },
       "definedIn": "prose",
       "links": []
@@ -82225,7 +82487,7 @@
         "id": "navigate-event-scroll-focus",
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigate-event-scroll-focus",
         "title": "Scroll and focus behavior",
-        "number": "7.2.6.10.4"
+        "number": "7.2.6.10.5"
       },
       "definedIn": "prose",
       "links": []
@@ -89276,6 +89538,26 @@
       "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#apply-the-traverse-history-step",
       "linkingText": [
         "apply the traverse history step"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "updating-the-traversable",
+        "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#updating-the-traversable",
+        "title": "Updating the traversable",
+        "number": "7.4.6.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "resume-applying-the-traverse-history-step",
+      "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#resume-applying-the-traverse-history-step",
+      "linkingText": [
+        "resume applying the traverse history step"
       ],
       "localLinkingText": [],
       "type": "dfn",
