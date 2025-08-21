@@ -372,7 +372,7 @@
           "html": "<p>If <var>forStorage</var> is true, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror\">DataCloneError</a></code>.</p>"
         },
         {
-          "html": "<p>Set <var>serialized</var>.<code>[[type]]</code> to the value of <var>value</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-type\" id=\"ref-for-dom-rtcencodedvideoframe-type①\">type</a></code>.</p>"
+          "html": "<p>Set <var>serialized</var>.<code>[[type]]</code> to the value of <var>value</var>.<code>[[type]]</code>.</p>"
         },
         {
           "html": "<p>Set <var>serialized</var>.<code>[[metadata]]</code> to an internal representation of <var>value</var>’s metadata.</p>"
@@ -387,7 +387,7 @@
       "rationale": "set",
       "steps": [
         {
-          "html": "<p>Set <var>value</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframe-type\" id=\"ref-for-dom-rtcencodedvideoframe-type②\">type</a></code> to <var>serialized</var>.<code>[[type]]</code>.</p>"
+          "html": "<p>Set <var>value</var>.<code>[[type]]</code> to <var>serialized</var>.<code>[[type]]</code>.</p>"
         },
         {
           "html": "<p>Set <var>value</var>’s metadata to the platform object representation of <var>serialized</var>.<code>[[metadata]]</code>.</p>"
@@ -631,7 +631,7 @@
           "html": "<p>If <var>encoder</var> is undefined, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>, abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>encoder</var> is not processing video frames, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>, abort these steps.</p>"
+          "html": "<p>If <var>encoder</var> does not belong to a video <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver①①\">RTCRtpReceiver</a></code>, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>, abort these steps.</p>"
         },
         {
           "html": "<p>If <var>rid</var> is defined, but does not conform to the grammar requirements specified\nin Section 10 of <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-rfc8851\" title=\"RTP Payload Format Restrictions\">[RFC8851]</a>, then reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code> and abort\nthese steps.</p>"
@@ -720,7 +720,7 @@
           "html": "<p>If <var>depacketizer</var> is undefined, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>, abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>depacketizer</var> does not belong to a video <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver①①\">RTCRtpReceiver</a></code>, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code>, abort these steps.</p>"
+          "html": "<p>If <var>depacketizer</var> does not belong to a video <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver①②\">RTCRtpReceiver</a></code>, reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code>, abort these steps.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">In parallel</a>, run the following steps:",
