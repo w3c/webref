@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "ARIAMixin": {
-        "fragment": "interface mixin ARIAMixin {\n  [CEReactions] attribute DOMString? role;\n  [CEReactions] attribute Element? ariaActiveDescendantElement;\n  [CEReactions] attribute DOMString? ariaAtomic;\n  [CEReactions] attribute DOMString? ariaAutoComplete;\n  [CEReactions] attribute DOMString? ariaBrailleLabel;\n  [CEReactions] attribute DOMString? ariaBrailleRoleDescription;\n  [CEReactions] attribute DOMString? ariaBusy;\n  [CEReactions] attribute DOMString? ariaChecked;\n  [CEReactions] attribute DOMString? ariaColCount;\n  [CEReactions] attribute DOMString? ariaColIndex;\n  [CEReactions] attribute DOMString? ariaColIndexText;\n  [CEReactions] attribute DOMString? ariaColSpan;\n  [CEReactions] attribute FrozenArray<Element>? ariaControlsElements;\n  [CEReactions] attribute DOMString? ariaCurrent;\n  [CEReactions] attribute FrozenArray<Element>? ariaDescribedByElements;\n  [CEReactions] attribute DOMString? ariaDescription;\n  [CEReactions] attribute FrozenArray<Element>? ariaDetailsElements;\n  [CEReactions] attribute DOMString? ariaDisabled;\n  [CEReactions] attribute FrozenArray<Element>? ariaErrorMessageElements;\n  [CEReactions] attribute DOMString? ariaExpanded;\n  [CEReactions] attribute FrozenArray<Element>? ariaFlowToElements;\n  [CEReactions] attribute DOMString? ariaHasPopup;\n  [CEReactions] attribute DOMString? ariaHidden;\n  [CEReactions] attribute DOMString? ariaInvalid;\n  [CEReactions] attribute DOMString? ariaKeyShortcuts;\n  [CEReactions] attribute DOMString? ariaLabel;\n  [CEReactions] attribute FrozenArray<Element>? ariaLabelledByElements;\n  [CEReactions] attribute DOMString? ariaLevel;\n  [CEReactions] attribute DOMString? ariaLive;\n  [CEReactions] attribute DOMString? ariaModal;\n  [CEReactions] attribute DOMString? ariaMultiLine;\n  [CEReactions] attribute DOMString? ariaMultiSelectable;\n  [CEReactions] attribute DOMString? ariaOrientation;\n  [CEReactions] attribute FrozenArray<Element>? ariaOwnsElements;\n  [CEReactions] attribute DOMString? ariaPlaceholder;\n  [CEReactions] attribute DOMString? ariaPosInSet;\n  [CEReactions] attribute DOMString? ariaPressed;\n  [CEReactions] attribute DOMString? ariaReadOnly;\n  [CEReactions] attribute DOMString? ariaRelevant;\n  [CEReactions] attribute DOMString? ariaRequired;\n  [CEReactions] attribute DOMString? ariaRoleDescription;\n  [CEReactions] attribute DOMString? ariaRowCount;\n  [CEReactions] attribute DOMString? ariaRowIndex;\n  [CEReactions] attribute DOMString? ariaRowIndexText;\n  [CEReactions] attribute DOMString? ariaRowSpan;\n  [CEReactions] attribute DOMString? ariaSelected;\n  [CEReactions] attribute DOMString? ariaSetSize;\n  [CEReactions] attribute DOMString? ariaSort;\n  [CEReactions] attribute DOMString? ariaValueMax;\n  [CEReactions] attribute DOMString? ariaValueMin;\n  [CEReactions] attribute DOMString? ariaValueNow;\n  [CEReactions] attribute DOMString? ariaValueText;\n};",
+        "fragment": "interface mixin ARIAMixin {\n[CEReactions, Reflect] attribute DOMString? role;\n[CEReactions, Reflect=\"aria-activedescendant\"] attribute Element? ariaActiveDescendantElement;\n[CEReactions, Reflect=\"aria-atomic\"] attribute DOMString? ariaAtomic;\n[CEReactions, Reflect=\"aria-autocomplete\"] attribute DOMString? ariaAutoComplete;\n[CEReactions, Reflect=\"aria-braillelabel\"] attribute DOMString? ariaBrailleLabel;\n[CEReactions, Reflect=\"aria-brailleroledescription\"] attribute DOMString? ariaBrailleRoleDescription;\n[CEReactions, Reflect=\"aria-busy\"] attribute DOMString? ariaBusy;\n[CEReactions, Reflect=\"aria-checked\"] attribute DOMString? ariaChecked;\n[CEReactions, Reflect=\"aria-colcount\"] attribute DOMString? ariaColCount;\n[CEReactions, Reflect=\"aria-colindex\"] attribute DOMString? ariaColIndex;\n[CEReactions, Reflect=\"aria-colindextext\"] attribute DOMString? ariaColIndexText;\n[CEReactions, Reflect=\"aria-colspan\"] attribute DOMString? ariaColSpan;\n[CEReactions, Reflect=\"aria-controls\"] attribute FrozenArray<Element>? ariaControlsElements;\n[CEReactions, Reflect=\"aria-current\"] attribute DOMString? ariaCurrent;\n[CEReactions, Reflect=\"aria-describedby\"] attribute FrozenArray<Element>? ariaDescribedByElements;\n[CEReactions, Reflect=\"aria-description\"] attribute DOMString? ariaDescription;\n[CEReactions, Reflect=\"aria-details\"] attribute FrozenArray<Element>? ariaDetailsElements;\n[CEReactions, Reflect=\"aria-disabled\"] attribute DOMString? ariaDisabled;\n[CEReactions, Reflect=\"aria-errormessage\"] attribute FrozenArray<Element>? ariaErrorMessageElements;\n[CEReactions, Reflect=\"aria-expanded\"] attribute DOMString? ariaExpanded;\n[CEReactions, Reflect=\"aria-flowto\"] attribute FrozenArray<Element>? ariaFlowToElements;\n[CEReactions, Reflect=\"aria-haspopup\"] attribute DOMString? ariaHasPopup;\n[CEReactions, Reflect=\"aria-hidden\"] attribute DOMString? ariaHidden;\n[CEReactions, Reflect=\"aria-invalid\"] attribute DOMString? ariaInvalid;\n[CEReactions, Reflect=\"aria-keyshortcuts\"] attribute DOMString? ariaKeyShortcuts;\n[CEReactions, Reflect=\"aria-label\"] attribute DOMString? ariaLabel;\n[CEReactions, Reflect=\"aria-labelledby\"] attribute FrozenArray<Element>? ariaLabelledByElements;\n[CEReactions, Reflect=\"aria-level\"] attribute DOMString? ariaLevel;\n[CEReactions, Reflect=\"aria-live\"] attribute DOMString? ariaLive;\n[CEReactions, Reflect=\"aria-modal\"] attribute DOMString? ariaModal;\n[CEReactions, Reflect=\"aria-multiline\"] attribute DOMString? ariaMultiLine;\n[CEReactions, Reflect=\"aria-multiselectable\"] attribute DOMString? ariaMultiSelectable;\n[CEReactions, Reflect=\"aria-orientation\"] attribute DOMString? ariaOrientation;\n[CEReactions, Reflect=\"aria-owns\"] attribute FrozenArray<Element>? ariaOwnsElements;\n[CEReactions, Reflect=\"aria-placeholder\"] attribute DOMString? ariaPlaceholder;\n[CEReactions, Reflect=\"aria-posinset\"] attribute DOMString? ariaPosInSet;\n[CEReactions, Reflect=\"aria-pressed\"] attribute DOMString? ariaPressed;\n[CEReactions, Reflect=\"aria-readonly\"] attribute DOMString? ariaReadOnly;\n[CEReactions, Reflect=\"aria-relevant\"] attribute DOMString? ariaRelevant;\n[CEReactions, Reflect=\"aria-required\"] attribute DOMString? ariaRequired;\n[CEReactions, Reflect=\"aria-roledescription\"] attribute DOMString? ariaRoleDescription;\n[CEReactions, Reflect=\"aria-rowcount\"] attribute DOMString? ariaRowCount;\n[CEReactions, Reflect=\"aria-rowindex\"] attribute DOMString? ariaRowIndex;\n[CEReactions, Reflect=\"aria-rowindextext\"] attribute DOMString? ariaRowIndexText;\n[CEReactions, Reflect=\"aria-rowspan\"] attribute DOMString? ariaRowSpan;\n[CEReactions, Reflect=\"aria-selected\"] attribute DOMString? ariaSelected;\n[CEReactions, Reflect=\"aria-setsize\"] attribute DOMString? ariaSetSize;\n[CEReactions, Reflect=\"aria-sort\"] attribute DOMString? ariaSort;\n[CEReactions, Reflect=\"aria-valuemax\"] attribute DOMString? ariaValueMax;\n[CEReactions, Reflect=\"aria-valuemin\"] attribute DOMString? ariaValueMin;\n[CEReactions, Reflect=\"aria-valuenow\"] attribute DOMString? ariaValueNow;\n[CEReactions, Reflect=\"aria-valuetext\"] attribute DOMString? ariaValueText;\n  };",
         "type": "interface mixin",
         "name": "ARIAMixin",
         "inheritance": null,
@@ -30,6 +30,12 @@
               {
                 "type": "extended-attribute",
                 "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
                 "rhs": null,
                 "arguments": []
               }
@@ -55,6 +61,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-activedescendant\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -77,6 +92,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-atomic\""
+                },
                 "arguments": []
               }
             ],
@@ -101,6 +125,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-autocomplete\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -123,6 +156,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-braillelabel\""
+                },
                 "arguments": []
               }
             ],
@@ -147,6 +189,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-brailleroledescription\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -169,6 +220,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-busy\""
+                },
                 "arguments": []
               }
             ],
@@ -193,6 +253,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-checked\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -215,6 +284,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-colcount\""
+                },
                 "arguments": []
               }
             ],
@@ -239,6 +317,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-colindex\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -262,6 +349,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-colindextext\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -284,6 +380,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-colspan\""
+                },
                 "arguments": []
               }
             ],
@@ -317,6 +422,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-controls\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -339,6 +453,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-current\""
+                },
                 "arguments": []
               }
             ],
@@ -372,6 +495,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-describedby\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -394,6 +526,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-description\""
+                },
                 "arguments": []
               }
             ],
@@ -427,6 +568,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-details\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -449,6 +599,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-disabled\""
+                },
                 "arguments": []
               }
             ],
@@ -482,6 +641,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-errormessage\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -504,6 +672,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-expanded\""
+                },
                 "arguments": []
               }
             ],
@@ -537,6 +714,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-flowto\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -559,6 +745,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-haspopup\""
+                },
                 "arguments": []
               }
             ],
@@ -583,6 +778,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-hidden\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -605,6 +809,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-invalid\""
+                },
                 "arguments": []
               }
             ],
@@ -629,6 +842,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-keyshortcuts\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -651,6 +873,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-label\""
+                },
                 "arguments": []
               }
             ],
@@ -684,6 +915,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-labelledby\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -706,6 +946,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-level\""
+                },
                 "arguments": []
               }
             ],
@@ -730,6 +979,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-live\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -752,6 +1010,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-modal\""
+                },
                 "arguments": []
               }
             ],
@@ -776,6 +1043,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-multiline\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -799,6 +1075,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-multiselectable\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -821,6 +1106,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-orientation\""
+                },
                 "arguments": []
               }
             ],
@@ -854,6 +1148,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-owns\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -876,6 +1179,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-placeholder\""
+                },
                 "arguments": []
               }
             ],
@@ -900,6 +1212,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-posinset\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -922,6 +1243,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-pressed\""
+                },
                 "arguments": []
               }
             ],
@@ -946,6 +1276,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-readonly\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -968,6 +1307,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-relevant\""
+                },
                 "arguments": []
               }
             ],
@@ -992,6 +1340,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-required\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -1014,6 +1371,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-roledescription\""
+                },
                 "arguments": []
               }
             ],
@@ -1038,6 +1404,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-rowcount\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -1060,6 +1435,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-rowindex\""
+                },
                 "arguments": []
               }
             ],
@@ -1084,6 +1468,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-rowindextext\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -1106,6 +1499,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-rowspan\""
+                },
                 "arguments": []
               }
             ],
@@ -1130,6 +1532,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-selected\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -1152,6 +1563,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-setsize\""
+                },
                 "arguments": []
               }
             ],
@@ -1176,6 +1596,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-sort\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -1198,6 +1627,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-valuemax\""
+                },
                 "arguments": []
               }
             ],
@@ -1222,6 +1660,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-valuemin\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -1245,6 +1692,15 @@
                 "name": "CEReactions",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-valuenow\""
+                },
+                "arguments": []
               }
             ],
             "special": "",
@@ -1267,6 +1723,15 @@
                 "type": "extended-attribute",
                 "name": "CEReactions",
                 "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"aria-valuetext\""
+                },
                 "arguments": []
               }
             ],

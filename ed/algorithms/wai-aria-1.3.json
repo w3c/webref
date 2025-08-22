@@ -117,18 +117,6 @@
           "html": "Otherwise, pass the value to the user without translation."
         }
       ]
-    },
-    {
-      "html": "For every IDL attribute <var>idlAttribute</var> defined in <code>ARIAMixin</code> when included on an element:",
-      "rationale": "let",
-      "steps": [
-        {
-          "html": "<p>Let <var>contentAttributeName</var> be the local name of the <abbr title=\"Accessible Rich Internet Applications\">ARIA</abbr> content attribute determined by looking up <var>idlAttribute</var> in the <abbr title=\"Accessible Rich Internet Applications\">ARIA</abbr> Attribute Correspondence table.</p>"
-        },
-        {
-          "html": "<p><var>idlAttribute</var> must <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflect\">reflect</a> <var>contentAttributeName</var> and support <a data-link-type=\"interface\" data-lt=\"ElementInternals\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#elementinternals\"><code>ElementInternals</code></a>.</p>"
-        }
-      ]
     }
   ]
 }
