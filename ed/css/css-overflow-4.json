@@ -252,8 +252,8 @@
     {
       "name": "block-ellipsis",
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-block-ellipsis",
-      "value": "none | auto | <string>",
-      "initial": "none",
+      "value": "no-ellipsis | auto | <string>",
+      "initial": "no-ellipsis",
       "appliesTo": "block containers",
       "inherited": "yes",
       "percentages": "N/A",
@@ -262,11 +262,11 @@
       "animationType": "discrete",
       "values": [
         {
-          "name": "none",
+          "name": "no-ellipsis",
           "prose": "The rendering is unaffected.",
-          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-block-ellipsis-none",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-block-ellipsis-no-ellipsis",
           "type": "value",
-          "value": "none"
+          "value": "no-ellipsis"
         },
         {
           "name": "auto",
@@ -277,7 +277,7 @@
         },
         {
           "name": "<string>",
-          "prose": "Render the specified string as the block overflow ellipsis at the end of the affected line box. The UA may truncate this string if it is absurdly long.",
+          "prose": "Render the specified string as the block overflow ellipsis at the end of the affected line box. The UA may truncate this string if it is absurdly long. When set to the empty string, the behavior is identical to the no-ellipsis value.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-block-ellipsis-string",
           "type": "value",
           "value": "<string>"
@@ -302,7 +302,7 @@
       "values": [
         {
           "name": "none",
-          "prose": "Sets max-lines to none, continue to auto, and block-ellipsis to none.",
+          "prose": "Sets max-lines to none, continue to auto, and block-ellipsis to no-ellipsis.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-none",
           "type": "value",
           "value": "none"
