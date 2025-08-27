@@ -25,10 +25,17 @@
     },
     {
       "name": ":heading()",
-      "prose": "As a functional pseudo-class, :heading() notation represents elements that have a heading level among An+B. The syntax is:",
+      "prose": "As a functional pseudo-class, :heading() notation represents elements that have a heading level among matching any of the provided integer values. The syntax is:",
       "href": "https://drafts.csswg.org/selectors-5/#heading-functional-pseudo",
-      "value": ":heading( <An+B># )"
+      "value": ":heading( <level># )"
     }
   ],
-  "values": []
+  "values": [
+    {
+      "name": "<level>",
+      "prose": "where <level> is a <number-token> with its type flag set to \"integer\".",
+      "href": "https://drafts.csswg.org/selectors-5/#typedef-level",
+      "type": "type"
+    }
+  ]
 }
