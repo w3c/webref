@@ -425,10 +425,18 @@
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>promise</var> with a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#gpuadapter\" id=\"ref-for-gpuadapter⑦\">GPUAdapter</a></code> encapsulating <var>adapter</var>.</p>"
             }
+          ],
+          "additional": [
+            {
+              "html": "Otherwise:",
+              "rationale": "resolve",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">Resolve</a> <var>promise</var> with <code>null</code>.</p>"
+                }
+              ]
+            }
           ]
-        },
-        {
-          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">Resolve</a> <var>promise</var> with <code>null</code>.</p>"
         }
       ]
     },
@@ -700,7 +708,7 @@
           ],
           "additional": [
             {
-              "html": "Else:",
+              "html": "Otherwise:",
               "rationale": "set",
               "steps": [
                 {
@@ -2546,7 +2554,7 @@
                       "html": "<p>Let <var>textureLayout</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dictdef-gputexturebindinglayout\" id=\"ref-for-dictdef-gputexturebindinglayout④\">GPUTextureBindingLayout</a></code>.</p>"
                     },
                     {
-                      "html": "Else if the sampled type of <var>resource</var> is:",
+                      "html": "Otherwise, if the sampled type of <var>resource</var> is:",
                       "rationale": ".switch",
                       "steps": [
                         {
@@ -2680,16 +2688,18 @@
                         {
                           "html": "<p>Set <var>previousEntry</var>.<var>storageTexture</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpustoragetexturebindinglayout-access\" id=\"ref-for-dom-gpustoragetexturebindinglayout-access⑧\">access</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpustoragetextureaccess-read-write\" id=\"ref-for-dom-gpustoragetextureaccess-read-write④\">\"read-write\"</a></code>.</p>"
                         }
+                      ],
+                      "additional": [
+                        {
+                          "html": "Otherwise:",
+                          "rationale": "append",
+                          "steps": [
+                            {
+                              "html": "<p>Append <var>entry</var> to <var>groupDescs</var>[<var>group</var>].</p>"
+                            }
+                          ]
+                        }
                       ]
-                    }
-                  ]
-                },
-                {
-                  "html": "Else",
-                  "rationale": "append",
-                  "steps": [
-                    {
-                      "html": "<p>Append <var>entry</var> to <var>groupDescs</var>[<var>group</var>].</p>"
                     }
                   ]
                 }
@@ -3452,14 +3462,16 @@
             {
               "html": "<p>Let <var>bias</var> be <code>(float)<var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-depthbias\" id=\"ref-for-dom-gpudepthstencilstate-depthbias②\">depthBias</a></code> * <var>r</var> + <var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-depthbiasslopescale\" id=\"ref-for-dom-gpudepthstencilstate-depthbiasslopescale②\">depthBiasSlopeScale</a></code> * <var>maxDepthSlope</var></code>.</p>"
             }
-          ]
-        },
-        {
-          "html": "Otherwise, if <var>format</var> is a <strong>float</strong> format:",
-          "rationale": "let",
-          "steps": [
+          ],
+          "additional": [
             {
-              "html": "<p>Let <var>bias</var> be <code>(float)<var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-depthbias\" id=\"ref-for-dom-gpudepthstencilstate-depthbias③\">depthBias</a></code> * 2^(exp(max depth in primitive) - <var>r</var>) + <var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-depthbiasslopescale\" id=\"ref-for-dom-gpudepthstencilstate-depthbiasslopescale③\">depthBiasSlopeScale</a></code> * <var>maxDepthSlope</var></code>.</p>"
+              "html": "Otherwise, if <var>format</var> is a <strong>float</strong> format:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>bias</var> be <code>(float)<var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-depthbias\" id=\"ref-for-dom-gpudepthstencilstate-depthbias③\">depthBias</a></code> * 2^(exp(max depth in primitive) - <var>r</var>) + <var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-depthbiasslopescale\" id=\"ref-for-dom-gpudepthstencilstate-depthbiasslopescale③\">depthBiasSlopeScale</a></code> * <var>maxDepthSlope</var></code>.</p>"
+                }
+              ]
             }
           ]
         },
@@ -3470,14 +3482,16 @@
             {
               "html": "<p>Set <var>bias</var> to <code>min(<var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-depthbiasclamp\" id=\"ref-for-dom-gpudepthstencilstate-depthbiasclamp③\">depthBiasClamp</a></code>, <var>bias</var>)</code>.</p>"
             }
-          ]
-        },
-        {
-          "html": "Otherwise if <var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-depthbiasclamp\" id=\"ref-for-dom-gpudepthstencilstate-depthbiasclamp④\">depthBiasClamp</a></code> &lt; <code>0</code>:",
-          "rationale": "set",
-          "steps": [
+          ],
+          "additional": [
             {
-              "html": "<p>Set <var>bias</var> to <code>max(<var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-depthbiasclamp\" id=\"ref-for-dom-gpudepthstencilstate-depthbiasclamp⑤\">depthBiasClamp</a></code>, <var>bias</var>)</code>.</p>"
+              "html": "Otherwise, if <var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-depthbiasclamp\" id=\"ref-for-dom-gpudepthstencilstate-depthbiasclamp④\">depthBiasClamp</a></code> &lt; <code>0</code>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>bias</var> to <code>max(<var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-depthbiasclamp\" id=\"ref-for-dom-gpudepthstencilstate-depthbiasclamp⑤\">depthBiasClamp</a></code>, <var>bias</var>)</code>.</p>"
+                }
+              ]
             }
           ]
         },
@@ -5393,14 +5407,16 @@
                 {
                   "html": "<p>Append <var>colorAttachment</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpasscolorattachment-view\" id=\"ref-for-dom-gpurenderpasscolorattachment-view①⑨\">view</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputextureview-descriptor-slot\" id=\"ref-for-dom-gputextureview-descriptor-slot①⑥\" data-timeline=\"const\">[[descriptor]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gputextureviewdescriptor-format\" id=\"ref-for-dom-gputextureviewdescriptor-format②⑤\">format</a></code> to <var>layout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpasslayout-colorformats\" id=\"ref-for-dom-gpurenderpasslayout-colorformats③\">colorFormats</a></code>.</p>"
                 }
-              ]
-            },
-            {
-              "html": "Otherwise:",
-              "rationale": "append",
-              "steps": [
+              ],
+              "additional": [
                 {
-                  "html": "<p>Append <code>null</code> to <var>layout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpasslayout-colorformats\" id=\"ref-for-dom-gpurenderpasslayout-colorformats④\">colorFormats</a></code>.</p>"
+                  "html": "Otherwise:",
+                  "rationale": "append",
+                  "steps": [
+                    {
+                      "html": "<p>Append <code>null</code> to <var>layout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpasslayout-colorformats\" id=\"ref-for-dom-gpurenderpasslayout-colorformats④\">colorFormats</a></code>.</p>"
+                    }
+                  ]
                 }
               ]
             }
@@ -6061,9 +6077,6 @@
               "html": "<p><var>bindGroupSpaceUsed</var> + <var>vertexBufferSpaceUsed</var> must be ≤\n<var>encoder</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpuobjectbase-device-slot\" id=\"ref-for-dom-gpuobjectbase-device-slot⑦⓪\" data-timeline=\"const\">[[device]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-device-limits-slot\" id=\"ref-for-dom-device-limits-slot②①\" data-timeline=\"const\">[[limits]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-supported-limits-maxbindgroupsplusvertexbuffers\" id=\"ref-for-dom-supported-limits-maxbindgroupsplusvertexbuffers④\">maxBindGroupsPlusVertexBuffers</a></code>.</p>"
             }
           ]
-        },
-        {
-          "html": "<p>Otherwise return <code>true</code>.</p>"
         }
       ]
     },
@@ -6074,10 +6087,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If any of the following conditions are unsatisfied, return <code>false</code>:</p>\n      <div class=\"validusage\">\n       <ul>\n        <li data-md=\"\">\n         <p>It must be <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-valid-to-draw\" id=\"ref-for-abstract-opdef-valid-to-draw③\" data-timeline=\"device\">valid to draw</a> with <var>encoder</var>.</p>\n        </li><li data-md=\"\">\n         <p><var>encoder</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurendercommandsmixin-index_buffer-slot\" id=\"ref-for-dom-gpurendercommandsmixin-index_buffer-slot④\" data-timeline=\"device\">[[index_buffer]]</a></code> must not be <code>null</code>.</p>\n        </li><li data-md=\"\">\n         <p>Let <var>topology</var> be <var>encoder</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurendercommandsmixin-pipeline-slot\" id=\"ref-for-dom-gpurendercommandsmixin-pipeline-slot⑤\" data-timeline=\"device\">[[pipeline]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpipeline-descriptor-slot\" id=\"ref-for-dom-gpurenderpipeline-descriptor-slot⑤\" data-timeline=\"device\">[[descriptor]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpipelinedescriptor-primitive\" id=\"ref-for-dom-gpurenderpipelinedescriptor-primitive⑤\">primitive</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpuprimitivestate-topology\" id=\"ref-for-dom-gpuprimitivestate-topology④\">topology</a></code>.</p>\n        </li><li data-md=\"\">\n         <p>If <var>topology</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpuprimitivetopology-line-strip\" id=\"ref-for-dom-gpuprimitivetopology-line-strip⑦\">\"line-strip\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpuprimitivetopology-triangle-strip\" id=\"ref-for-dom-gpuprimitivetopology-triangle-strip④\">\"triangle-strip\"</a></code>:</p>\n         <ul>\n          <li data-md=\"\">\n           <p><var>encoder</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurendercommandsmixin-index_format-slot\" id=\"ref-for-dom-gpurendercommandsmixin-index_format-slot②\" data-timeline=\"device\">[[index_format]]</a></code> must equal\n<var>encoder</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurendercommandsmixin-pipeline-slot\" id=\"ref-for-dom-gpurendercommandsmixin-pipeline-slot⑥\" data-timeline=\"device\">[[pipeline]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpipeline-descriptor-slot\" id=\"ref-for-dom-gpurenderpipeline-descriptor-slot⑥\" data-timeline=\"device\">[[descriptor]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpipelinedescriptor-primitive\" id=\"ref-for-dom-gpurenderpipelinedescriptor-primitive⑥\">primitive</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpuprimitivestate-stripindexformat\" id=\"ref-for-dom-gpuprimitivestate-stripindexformat③\">stripIndexFormat</a></code>.</p>\n         </li></ul>\n       </li></ul>\n      </div>"
-        },
-        {
-          "html": "<p>Otherwise return <code>true</code>.</p>"
+          "html": "<p>If any of the following conditions are unsatisfied, return <code>false</code>:</p>\n      <div class=\"validusage\">\n       <ul>\n        <li data-md=\"\">\n         <p>It must be <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webgpu/#abstract-opdef-valid-to-draw\" id=\"ref-for-abstract-opdef-valid-to-draw③\" data-timeline=\"device\">valid to draw</a> with <var>encoder</var>.</p>\n        </li><li data-md=\"\">\n         <p><var>encoder</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurendercommandsmixin-index_buffer-slot\" id=\"ref-for-dom-gpurendercommandsmixin-index_buffer-slot④\" data-timeline=\"device\">[[index_buffer]]</a></code> must not be <code>null</code>.</p>\n        </li><li data-md=\"\">\n         <p>Let <var>topology</var> be <var>encoder</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurendercommandsmixin-pipeline-slot\" id=\"ref-for-dom-gpurendercommandsmixin-pipeline-slot⑤\" data-timeline=\"device\">[[pipeline]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpipeline-descriptor-slot\" id=\"ref-for-dom-gpurenderpipeline-descriptor-slot⑤\" data-timeline=\"device\">[[descriptor]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpipelinedescriptor-primitive\" id=\"ref-for-dom-gpurenderpipelinedescriptor-primitive⑤\">primitive</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpuprimitivestate-topology\" id=\"ref-for-dom-gpuprimitivestate-topology④\">topology</a></code>.</p>\n        </li><li data-md=\"\">\n         <p>If <var>topology</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpuprimitivetopology-line-strip\" id=\"ref-for-dom-gpuprimitivetopology-line-strip⑦\">\"line-strip\"</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpuprimitivetopology-triangle-strip\" id=\"ref-for-dom-gpuprimitivetopology-triangle-strip④\">\"triangle-strip\"</a></code>:</p>\n         <ul>\n          <li data-md=\"\">\n           <p><var>encoder</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurendercommandsmixin-index_format-slot\" id=\"ref-for-dom-gpurendercommandsmixin-index_format-slot②\" data-timeline=\"device\">[[index_format]]</a></code> must equal\n<var>encoder</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurendercommandsmixin-pipeline-slot\" id=\"ref-for-dom-gpurendercommandsmixin-pipeline-slot⑥\" data-timeline=\"device\">[[pipeline]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpipeline-descriptor-slot\" id=\"ref-for-dom-gpurenderpipeline-descriptor-slot⑥\" data-timeline=\"device\">[[descriptor]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpurenderpipelinedescriptor-primitive\" id=\"ref-for-dom-gpurenderpipelinedescriptor-primitive⑥\">primitive</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpuprimitivestate-stripindexformat\" id=\"ref-for-dom-gpuprimitivestate-stripindexformat③\">stripIndexFormat</a></code>.</p>\n         </li></ul>\n       </li></ul>\n      </div>\n      <p>Otherwise, return <code>true</code>.</p>"
         }
       ]
     },
@@ -7089,31 +7099,18 @@
           "html": "<p>Let <var>alphaMode</var> be <var>configuration</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-alphamode\" id=\"ref-for-dom-gpucanvasconfiguration-alphamode②\">alphaMode</a></code>.</p>"
         },
         {
-          "html": "<dl class=\"switch\">\n       <dt data-md=\"\">If <var>alphaMode</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasalphamode-opaque\" id=\"ref-for-dom-gpucanvasalphamode-opaque①\">\"opaque\"</a></code>:\n       </dt><dd data-md=\"\">\n        \n        \n       </dd><dt data-md=\"\">Otherwise:\n       </dt><dd data-md=\"\">\n        <p>Tag <var>snapshot</var> with <var>alphaMode</var>.</p>\n      </dd></dl>",
-          "rationale": ".switch",
+          "html": "If <var>alphaMode</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpucanvasalphamode-opaque\" id=\"ref-for-dom-gpucanvasalphamode-opaque①\">\"opaque\"</a></code>:",
+          "rationale": "clear",
           "steps": [
             {
-              "operation": "switch",
-              "steps": [
-                {
-                  "case": "If alphaMode is \"opaque\":",
-                  "html": "",
-                  "rationale": "clear",
-                  "steps": [
-                    {
-                      "html": "<p>Clear the alpha channel of <var>snapshot</var> to 1.0.</p>"
-                    },
-                    {
-                      "html": "<p>Tag <var>snapshot</var> as being opaque.</p>"
-                    }
-                  ]
-                },
-                {
-                  "case": "Otherwise:",
-                  "html": "<p>Tag <var>snapshot</var> with <var>alphaMode</var>.</p>"
-                }
-              ]
+              "html": "<p>Clear the alpha channel of <var>snapshot</var> to 1.0.</p>"
+            },
+            {
+              "html": "<p>Tag <var>snapshot</var> as being opaque.</p>"
             }
+          ],
+          "ignored": [
+            "Tag snapshot with alphaMode."
           ]
         },
         {
@@ -7351,9 +7348,6 @@
               "html": "<p>Return.</p>"
             }
           ]
-        },
-        {
-          "html": "<p>Otherwise issue the following steps to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#content-timeline\" id=\"ref-for-content-timeline①②⑦\">content timeline</a>:</p>"
         }
       ]
     },
@@ -7608,17 +7602,19 @@
                 }
               ]
             }
-          ]
-        },
-        {
-          "html": "Otherwise:",
-          "rationale": "initialize",
-          "steps": [
+          ],
+          "additional": [
             {
-              "html": "<p>Initialize the <var>vertexIndexList</var> with <var>drawCall</var>.vertexCount integers.</p>"
-            },
-            {
-              "html": "<p>Set each <var>vertexIndexList</var> item <var>i</var> to the value <var>drawCall</var>.firstVertex + <var>i</var>.</p>"
+              "html": "Otherwise:",
+              "rationale": "initialize",
+              "steps": [
+                {
+                  "html": "<p>Initialize the <var>vertexIndexList</var> with <var>drawCall</var>.vertexCount integers.</p>"
+                },
+                {
+                  "html": "<p>Set each <var>vertexIndexList</var> item <var>i</var> to the value <var>drawCall</var>.firstVertex + <var>i</var>.</p>"
+                }
+              ]
             }
           ]
         },
@@ -8177,7 +8173,7 @@
               "html": "<p>Set <var>stencilState</var> to <var>depthStencilDesc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-stencilfront\" id=\"ref-for-dom-gpudepthstencilstate-stencilfront⑤\">stencilFront</a></code> if\n<var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-frontfacing\" id=\"ref-for-fragment-frontfacing①\">frontFacing</a> is <code>true</code> and\n<var>depthStencilDesc</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpudepthstencilstate-stencilback\" id=\"ref-for-dom-gpudepthstencilstate-stencilback⑤\">stencilBack</a></code> otherwise.</p>"
             },
             {
-              "html": "<p>If <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-stencilpassed\" id=\"ref-for-fragment-stencilpassed①\">stencilPassed</a> is <code>false</code>:</p>\n        <ul>\n         <li data-md=\"\">\n          <p>Let <var>stencilOp</var> be <var>stencilState</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpustencilfacestate-failop\" id=\"ref-for-dom-gpustencilfacestate-failop③\">failOp</a></code>.</p>\n        </li></ul>\n        <p>Else if <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depthpassed\" id=\"ref-for-fragment-depthpassed④\">depthPassed</a> is <code>false</code>:</p>\n        <ul>\n         <li data-md=\"\">\n          <p>Let <var>stencilOp</var> be <var>stencilState</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpustencilfacestate-depthfailop\" id=\"ref-for-dom-gpustencilfacestate-depthfailop⑤\">depthFailOp</a></code>.</p>\n        </li></ul>\n        <p>Else:</p>\n        <ul>\n         <li data-md=\"\">\n          <p>Let <var>stencilOp</var> be <var>stencilState</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpustencilfacestate-passop\" id=\"ref-for-dom-gpustencilfacestate-passop③\">passOp</a></code>.</p>\n        </li></ul>"
+              "html": "<p>If <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-stencilpassed\" id=\"ref-for-fragment-stencilpassed①\">stencilPassed</a> is <code>false</code>:</p>\n        <ul>\n         <li data-md=\"\">\n          <p>Let <var>stencilOp</var> be <var>stencilState</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpustencilfacestate-failop\" id=\"ref-for-dom-gpustencilfacestate-failop③\">failOp</a></code>.</p>\n        </li></ul>\n        <p>Otherwise, if <var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-depthpassed\" id=\"ref-for-fragment-depthpassed④\">depthPassed</a> is <code>false</code>:</p>\n        <ul>\n         <li data-md=\"\">\n          <p>Let <var>stencilOp</var> be <var>stencilState</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpustencilfacestate-depthfailop\" id=\"ref-for-dom-gpustencilfacestate-depthfailop⑤\">depthFailOp</a></code>.</p>\n        </li></ul>\n        <p>Otherwise:</p>\n        <ul>\n         <li data-md=\"\">\n          <p>Let <var>stencilOp</var> be <var>stencilState</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-gpustencilfacestate-passop\" id=\"ref-for-dom-gpustencilfacestate-passop③\">passOp</a></code>.</p>\n        </li></ul>"
             },
             {
               "html": "<p>Update the value of the stencil aspect of <var>state</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webgpu/#dom-renderstate-depthstencilattachment-slot\" id=\"ref-for-dom-renderstate-depthstencilattachment-slot⑥\" data-timeline=\"queue\">[[depthStencilAttachment]]</a></code> at\n<var>fragment</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webgpu/#fragment-destination\" id=\"ref-for-fragment-destination⑤\">destination</a> by performing the operation described by <var>stencilOp</var>.</p>"
