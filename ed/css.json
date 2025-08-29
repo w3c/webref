@@ -11626,7 +11626,7 @@
       "name": "place-content",
       "href": "https://drafts.csswg.org/css-align-3/#propdef-place-content",
       "initial": "normal",
-      "appliesTo": "block containers, flex containers, and grid containers",
+      "appliesTo": "see individual properties",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "see individual properties",
@@ -11660,7 +11660,7 @@
       "name": "place-self",
       "href": "https://drafts.csswg.org/css-align-3/#propdef-place-self",
       "initial": "auto",
-      "appliesTo": "block-level boxes, absolutely-positioned boxes, and grid items",
+      "appliesTo": "see individual properties",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "see individual properties",
@@ -15820,9 +15820,9 @@
     },
     {
       "name": ":heading()",
-      "prose": "As a functional pseudo-class, :heading() notation represents elements that have a heading level among An+B. The syntax is:",
+      "prose": "As a functional pseudo-class, :heading() notation represents elements that have a heading level among matching any of the provided integer values. The syntax is:",
       "href": "https://drafts.csswg.org/selectors-5/#heading-functional-pseudo",
-      "syntax": ":heading( <An-B># )",
+      "syntax": ":heading( <level># )",
       "extended": []
     },
     {
@@ -17768,6 +17768,12 @@
       "name": "length-percentage",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-length-percentage",
       "syntax": "[ <length> | <percentage> ]",
+      "extended": []
+    },
+    {
+      "name": "level",
+      "prose": "where <level> is a <number-token> with its type flag set to \"integer\".",
+      "href": "https://drafts.csswg.org/selectors-5/#typedef-level",
       "extended": []
     },
     {
