@@ -9,21 +9,30 @@ interface CSSViewTransitionRule : CSSRule {
   [SameObject] readonly attribute FrozenArray<CSSOMString> types;
 };
 
-[Exposed=Window]
-interface ViewTransitionTypeSet {
-  setlike<DOMString>;
+partial interface Document {
+  ViewTransition startViewTransition(
+    optional (ViewTransitionUpdateCallback or StartViewTransitionOptions) callbackOptions = {}
+  );
+  readonly attribute ViewTransition? activeViewTransition;
 };
 
-[Exposed=Window]
-partial interface ViewTransition {
-  attribute ViewTransitionTypeSet types;
-};
+callback ViewTransitionUpdateCallback = Promise<any> ();
 
 dictionary StartViewTransitionOptions {
   ViewTransitionUpdateCallback? update = null;
   sequence<DOMString>? types = null;
 };
 
-partial interface Document {
-  ViewTransition startViewTransition(optional (ViewTransitionUpdateCallback or StartViewTransitionOptions) callbackOptions = {});
+[Exposed=Window]
+interface ViewTransition {
+  readonly attribute Promise<undefined> updateCallbackDone;
+  readonly attribute Promise<undefined> ready;
+  readonly attribute Promise<undefined> finished;
+  undefined skipTransition();
+  attribute ViewTransitionTypeSet types;
+};
+
+[Exposed=Window]
+interface ViewTransitionTypeSet {
+  setlike<DOMString>;
 };

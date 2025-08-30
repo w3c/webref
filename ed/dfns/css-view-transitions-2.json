@@ -5,6 +5,428 @@
   },
   "dfns": [
     {
+      "id": "view-transitions",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transitions",
+      "linkingText": [
+        "view transitions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "intro",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#intro",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "propdef-view-transition-name",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-name",
+      "linkingText": [
+        "view-transition-name"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "view-transition-name-prop",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-name-prop",
+        "title": "Tagging Individually Transitioning Subtrees: the view-transition-name property",
+        "number": "2.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "view-transition-name",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-name",
+      "linkingText": [
+        "view transition name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "view-transition-name-prop",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-name-prop",
+        "title": "Tagging Individually Transitioning Subtrees: the view-transition-name property",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-view-transition-name-none",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-name-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "view-transition-name"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "view-transition-name-prop",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-name-prop",
+        "title": "Tagging Individually Transitioning Subtrees: the view-transition-name property",
+        "number": "2.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "document-scoped-view-transition-name",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-scoped-view-transition-name",
+      "linkingText": [
+        "document-scoped view transition name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "view-transition-name-prop",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-name-prop",
+        "title": "Tagging Individually Transitioning Subtrees: the view-transition-name property",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "pseudo-element-root",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#pseudo-element-root",
+      "linkingText": [
+        "pseudo-element root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pseudo-root",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#pseudo-root",
+        "title": "Pseudo-element Trees",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "pseudo-element-tree",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#pseudo-element-tree",
+      "linkingText": [
+        "pseudo-element tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pseudo-root",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#pseudo-root",
+        "title": "Pseudo-element Trees",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "view-transition-tree",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-tree",
+      "linkingText": [
+        "view transition tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "view-transition-pseudos",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-pseudos",
+        "title": "View Transition Pseudo-elements",
+        "number": "3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "view-transition-pseudo-elements",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-pseudo-elements",
+      "linkingText": [
+        "view transition pseudo-elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "view-transition-pseudos",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-pseudos",
+        "title": "View Transition Pseudo-elements",
+        "number": "3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "named-view-transition-pseudo-elements",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#named-view-transition-pseudo-elements",
+      "linkingText": [
+        "named view transition pseudo-elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "named-view-transition-pseudo",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#named-view-transition-pseudo",
+        "title": "Named View Transition Pseudo-elements",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "typedef-pt-name-selector",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#typedef-pt-name-selector",
+      "linkingText": [
+        "<pt-name-selector>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "named-view-transition-pseudo",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#named-view-transition-pseudo",
+        "title": "Named View Transition Pseudo-elements",
+        "number": "3.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "selectordef-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#selectordef-view-transition",
+      "linkingText": [
+        "::view-transition"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "view-transition-pseudo",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-pseudo",
+        "title": "View Transition Tree Root: the ::view-transition pseudo-element",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "selectordef-view-transition-group",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#selectordef-view-transition-group",
+      "linkingText": [
+        "::view-transition-group()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "::view-transition-group",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#%3A%3Aview-transition-group",
+        "title": "View Transition Named Subtree Root: the ::view-transition-group() pseudo-element",
+        "number": "3.2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "selectordef-view-transition-image-pair",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#selectordef-view-transition-image-pair",
+      "linkingText": [
+        "::view-transition-image-pair()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "::view-transition-image-pair",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#%3A%3Aview-transition-image-pair",
+        "title": "View Transition Image Pair Isolation: the ::view-transition-image-pair() pseudo-element",
+        "number": "3.2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "selectordef-view-transition-old",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#selectordef-view-transition-old",
+      "linkingText": [
+        "::view-transition-old()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "::view-transition-old",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#%3A%3Aview-transition-old",
+        "title": "View Transition Old State Image: the ::view-transition-old() pseudo-element",
+        "number": "3.2.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "selectordef-view-transition-new",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#selectordef-view-transition-new",
+      "linkingText": [
+        "::view-transition-new()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "::view-transition-new",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#%3A%3Aview-transition-new",
+        "title": "View Transition New State Image: the ::view-transition-new() pseudo-element",
+        "number": "3.2.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "snapshot-containing-block",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#snapshot-containing-block",
+      "linkingText": [
+        "snapshot containing block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "snapshot-containing-block-concept",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#snapshot-containing-block-concept",
+        "title": "The Snapshot Containing Block",
+        "number": "4.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "snapshot-containing-block-origin",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#snapshot-containing-block-origin",
+      "linkingText": [
+        "snapshot containing block origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "snapshot-containing-block-concept",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#snapshot-containing-block-concept",
+        "title": "The Snapshot Containing Block",
+        "number": "4.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "snapshot-containing-block-size",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#snapshot-containing-block-size",
+      "linkingText": [
+        "snapshot containing block size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "snapshot-containing-block-concept",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#snapshot-containing-block-concept",
+        "title": "The Snapshot Containing Block",
+        "number": "4.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "view-transition-layer",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-layer",
+      "linkingText": [
+        "view transition layer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "view-transition-stacking-layer",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-stacking-layer",
+        "title": "View Transition Painting Order",
+        "number": "4.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "global-view-transition-user-agent-style-sheet",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#global-view-transition-user-agent-style-sheet",
+      "linkingText": [
+        "global view transition user agent style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ua-styles",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#ua-styles",
+        "title": "User Agent Stylesheet",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "at-view-transition-rule",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#at-view-transition-rule",
       "linkingText": [
@@ -19,7 +441,7 @@
         "id": "view-transition-rule",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-rule",
         "title": "The @view-transition rule",
-        "number": "2.3.1"
+        "number": "6.3.1"
       },
       "definedIn": "heading",
       "links": []
@@ -41,7 +463,7 @@
         "id": "view-transition-navigation-descriptor",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-navigation-descriptor",
         "title": "The navigation descriptor",
-        "number": "2.3.2"
+        "number": "6.3.2"
       },
       "definedIn": "table",
       "links": []
@@ -63,7 +485,7 @@
         "id": "view-transition-navigation-descriptor",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-navigation-descriptor",
         "title": "The navigation descriptor",
-        "number": "2.3.2"
+        "number": "6.3.2"
       },
       "definedIn": "prose",
       "links": []
@@ -85,7 +507,7 @@
         "id": "view-transition-navigation-descriptor",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-navigation-descriptor",
         "title": "The navigation descriptor",
-        "number": "2.3.2"
+        "number": "6.3.2"
       },
       "definedIn": "dt",
       "links": []
@@ -107,7 +529,7 @@
         "id": "view-transition-navigation-descriptor",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-navigation-descriptor",
         "title": "The navigation descriptor",
-        "number": "2.3.2"
+        "number": "6.3.2"
       },
       "definedIn": "dt",
       "links": []
@@ -127,7 +549,7 @@
         "id": "cssom",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#cssom",
         "title": "Accessing the @view-transition rule using CSSOM",
-        "number": "2.3.3"
+        "number": "6.3.3"
       },
       "definedIn": "pre",
       "links": []
@@ -149,7 +571,7 @@
         "id": "cssom",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#cssom",
         "title": "Accessing the @view-transition rule using CSSOM",
-        "number": "2.3.3"
+        "number": "6.3.3"
       },
       "definedIn": "pre",
       "links": []
@@ -171,7 +593,7 @@
         "id": "cssom",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#cssom",
         "title": "Accessing the @view-transition rule using CSSOM",
-        "number": "2.3.3"
+        "number": "6.3.3"
       },
       "definedIn": "pre",
       "links": []
@@ -191,7 +613,7 @@
         "id": "the-active-view-transition-pseudo",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-pseudo",
         "title": "The :active-view-transition pseudo-class",
-        "number": "3.3.1"
+        "number": "7.3.1"
       },
       "definedIn": "prose",
       "links": []
@@ -211,51 +633,9 @@
         "id": "the-active-view-transition-type-pseudo",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#the-active-view-transition-type-pseudo",
         "title": "The :active-view-transition-type() pseudo-class",
-        "number": "3.3.2"
+        "number": "7.3.2"
       },
       "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "viewtransitiontypeset",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransitiontypeset",
-      "linkingText": [
-        "ViewTransitionTypeSet"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "view-transitions-extension-types",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transitions-extension-types",
-        "title": "Changing the types of an ongoing view transition",
-        "number": "3.4"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-viewtransition-types",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-types",
-      "linkingText": [
-        "types"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "ViewTransition"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "view-transitions-extension-types",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transitions-extension-types",
-        "title": "Changing the types of an ongoing view transition",
-        "number": "3.4"
-      },
-      "definedIn": "pre",
       "links": []
     },
     {
@@ -275,7 +655,7 @@
         "id": "types-cross-doc",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#types-cross-doc",
         "title": "Activating the transition type for cross-document view transitions",
-        "number": "3.5"
+        "number": "7.4"
       },
       "definedIn": "table",
       "links": []
@@ -297,7 +677,7 @@
         "id": "types-cross-doc",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#types-cross-doc",
         "title": "Activating the transition type for cross-document view transitions",
-        "number": "3.5"
+        "number": "7.4"
       },
       "definedIn": "prose",
       "links": []
@@ -317,7 +697,7 @@
         "id": "view-transition-class-prop",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-class-prop",
         "title": "The view-transition-class property",
-        "number": "4.3"
+        "number": "8.3"
       },
       "definedIn": "table",
       "links": []
@@ -339,7 +719,7 @@
         "id": "view-transition-class-prop",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-class-prop",
         "title": "The view-transition-class property",
-        "number": "4.3"
+        "number": "8.3"
       },
       "definedIn": "dt",
       "links": []
@@ -361,7 +741,7 @@
         "id": "view-transition-class-prop",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-class-prop",
         "title": "The view-transition-class property",
-        "number": "4.3"
+        "number": "8.3"
       },
       "definedIn": "dt",
       "links": []
@@ -381,7 +761,7 @@
         "id": "pseudo-element-class-additions",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#pseudo-element-class-additions",
         "title": "Additions to named view transition pseudo-elements",
-        "number": "4.4"
+        "number": "8.4"
       },
       "definedIn": "pre",
       "links": []
@@ -401,71 +781,7 @@
         "id": "pseudo-element-class-additions",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#pseudo-element-class-additions",
         "title": "Additions to named view transition pseudo-elements",
-        "number": "4.4"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dictdef-startviewtransitionoptions",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#dictdef-startviewtransitionoptions",
-      "linkingText": [
-        "StartViewTransitionOptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "extend-document-types",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#extend-document-types",
-        "title": "Extending document.startViewTransition()",
-        "number": "5"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-startviewtransitionoptions-update",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-startviewtransitionoptions-update",
-      "linkingText": [
-        "update"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "StartViewTransitionOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "extend-document-types",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#extend-document-types",
-        "title": "Extending document.startViewTransition()",
-        "number": "5"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-startviewtransitionoptions-types",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-startviewtransitionoptions-types",
-      "linkingText": [
-        "types"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "StartViewTransitionOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "extend-document-types",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#extend-document-types",
-        "title": "Extending document.startViewTransition()",
-        "number": "5"
+        "number": "8.4"
       },
       "definedIn": "pre",
       "links": []
@@ -485,10 +801,107 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "extend-document-types",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#extend-document-types",
-        "title": "Extending document.startViewTransition()",
-        "number": "5"
+        "id": "additions-to-document-api",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document-api",
+        "title": "Additions to Document",
+        "number": "9.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "callbackdef-viewtransitionupdatecallback",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#callbackdef-viewtransitionupdatecallback",
+      "linkingText": [
+        "ViewTransitionUpdateCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "additions-to-document-api",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document-api",
+        "title": "Additions to Document",
+        "number": "9.1"
+      },
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-callbackdef-viewtransitionupdatecallback⑦",
+          "name": "viewTransition = document.startViewTransition(updateCallback)",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-callbackdef-viewtransitionupdatecallback%E2%91%A6",
+          "heading": {
+            "id": "additions-to-document-api",
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document-api",
+            "title": "Additions to Document",
+            "number": "9.1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dictdef-startviewtransitionoptions",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dictdef-startviewtransitionoptions",
+      "linkingText": [
+        "StartViewTransitionOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "additions-to-document-api",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document-api",
+        "title": "Additions to Document",
+        "number": "9.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-startviewtransitionoptions-update",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-startviewtransitionoptions-update",
+      "linkingText": [
+        "update"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StartViewTransitionOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "additions-to-document-api",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document-api",
+        "title": "Additions to Document",
+        "number": "9.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-startviewtransitionoptions-types",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-startviewtransitionoptions-types",
+      "linkingText": [
+        "types"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StartViewTransitionOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "additions-to-document-api",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document-api",
+        "title": "Additions to Document",
+        "number": "9.1"
       },
       "definedIn": "pre",
       "links": []
@@ -508,35 +921,531 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "extend-document-types",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#extend-document-types",
-        "title": "Extending document.startViewTransition()",
-        "number": "5"
+        "id": "ViewTransition-prepare",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#ViewTransition-prepare",
+        "title": "startViewTransition() Method Steps",
+        "number": "9.1.1"
       },
       "definedIn": "prose",
-      "links": []
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-document-startviewtransition⑧",
+          "name": "viewTransition = document.startViewTransition(updateCallback)",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-dom-document-startviewtransition%E2%91%A7",
+          "heading": {
+            "id": "additions-to-document-api",
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document-api",
+            "title": "Additions to Document",
+            "number": "9.1"
+          }
+        }
+      ]
     },
     {
-      "id": "document-activeviewtransition",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-activeviewtransition",
+      "id": "dom-document-activeviewtransition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-document-activeviewtransition",
       "linkingText": [
         "activeViewTransition"
       ],
       "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "doc-activeviewtransition",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#doc-activeviewtransition",
+        "title": "activeViewTransition Property",
+        "number": "9.1.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "viewtransition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition",
+      "linkingText": [
+        "ViewTransition"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-viewtransition①②",
+          "name": "viewTransition = document.startViewTransition(updateCallback)",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-viewtransition%E2%91%A0%E2%91%A1",
+          "heading": {
+            "id": "additions-to-document-api",
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document-api",
+            "title": "Additions to Document",
+            "number": "9.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-viewtransition①⑦",
+          "name": "viewTransition.updateCallbackDone",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-viewtransition%E2%91%A0%E2%91%A6",
+          "heading": {
+            "id": "the-domtransition-interface",
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+            "title": "The ViewTransition interface",
+            "number": "9.2"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-viewtransition①⑧",
+          "name": "viewTransition.ready",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-viewtransition%E2%91%A0%E2%91%A7",
+          "heading": {
+            "id": "the-domtransition-interface",
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+            "title": "The ViewTransition interface",
+            "number": "9.2"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-viewtransition①⑨",
+          "name": "viewTransition.finished",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-viewtransition%E2%91%A0%E2%91%A8",
+          "heading": {
+            "id": "the-domtransition-interface",
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+            "title": "The ViewTransition interface",
+            "number": "9.2"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-viewtransition②⓪",
+          "name": "viewTransition.skipTransition()",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-viewtransition%E2%91%A1%E2%93%AA",
+          "heading": {
+            "id": "the-domtransition-interface",
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+            "title": "The ViewTransition interface",
+            "number": "9.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-viewtransition-updatecallbackdone",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-updatecallbackdone",
+      "linkingText": [
+        "updateCallbackDone"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-viewtransition-updatecallbackdone②",
+          "name": "viewTransition.updateCallbackDone",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-dom-viewtransition-updatecallbackdone%E2%91%A1",
+          "heading": {
+            "id": "the-domtransition-interface",
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+            "title": "The ViewTransition interface",
+            "number": "9.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-viewtransition-ready",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-ready",
+      "linkingText": [
+        "ready"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-viewtransition-ready②",
+          "name": "viewTransition.ready",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-dom-viewtransition-ready%E2%91%A1",
+          "heading": {
+            "id": "the-domtransition-interface",
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+            "title": "The ViewTransition interface",
+            "number": "9.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-viewtransition-finished",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-finished",
+      "linkingText": [
+        "finished"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-viewtransition-finished②",
+          "name": "viewTransition.finished",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-dom-viewtransition-finished%E2%91%A1",
+          "heading": {
+            "id": "the-domtransition-interface",
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+            "title": "The ViewTransition interface",
+            "number": "9.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-viewtransition-types",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-types",
+      "linkingText": [
+        "types"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "viewtransition-named-elements",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition-named-elements",
+      "linkingText": [
+        "named elements"
+      ],
+      "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "document"
+        "ViewTransition"
       ],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "active-view-transition",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#active-view-transition",
-        "title": "Exposing current transition: activeViewTransition",
-        "number": "5.1"
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
       },
       "definedIn": "dt",
       "links": []
+    },
+    {
+      "id": "viewtransition-phase",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition-phase",
+      "linkingText": [
+        "phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "viewtransition-update-callback",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition-update-callback",
+      "linkingText": [
+        "update callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "viewtransition-ready-promise",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition-ready-promise",
+      "linkingText": [
+        "ready promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "viewtransition-update-callback-done-promise",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition-update-callback-done-promise",
+      "linkingText": [
+        "update callback done promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "viewtransition-finished-promise",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition-finished-promise",
+      "linkingText": [
+        "finished promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "viewtransition-transition-root-pseudo-element",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition-transition-root-pseudo-element",
+      "linkingText": [
+        "transition root pseudo-element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "viewtransition-initial-snapshot-containing-block-size",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition-initial-snapshot-containing-block-size",
+      "linkingText": [
+        "initial snapshot containing block size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "viewtransition-active-types",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition-active-types",
+      "linkingText": [
+        "active types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "viewtransition-outbound-post-capture-steps",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition-outbound-post-capture-steps",
+      "linkingText": [
+        "outbound post-capture steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-domtransition-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+        "title": "The ViewTransition interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "viewtransitiontypeset",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransitiontypeset",
+      "linkingText": [
+        "ViewTransitionTypeSet"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-viewtransitiontypeset-interface",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#the-viewtransitiontypeset-interface",
+        "title": "The ViewTransitionTypeSet Interface",
+        "number": "9.2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-viewtransition-skiptransition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-skiptransition",
+      "linkingText": [
+        "skipTransition()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ViewTransition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ViewTransition-skipTransition",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#ViewTransition-skipTransition",
+        "title": "skipTransition() Method Steps",
+        "number": "9.2.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-viewtransition-skiptransition⑤",
+          "name": "viewTransition.skipTransition()",
+          "href": "https://drafts.csswg.org/css-view-transitions-2/#ref-for-dom-viewtransition-skiptransition%E2%91%A4",
+          "heading": {
+            "id": "the-domtransition-interface",
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#the-domtransition-interface",
+            "title": "The ViewTransition interface",
+            "number": "9.2"
+          }
+        }
+      ]
     },
     {
       "id": "view-transition-name-auto",
@@ -555,7 +1464,7 @@
         "id": "additions-to-vt-name",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-vt-name",
         "title": "Additions to view-transition-name",
-        "number": "6.3"
+        "number": "10.3"
       },
       "definedIn": "prose",
       "links": []
@@ -575,7 +1484,7 @@
         "id": "view-transition-group-prop",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-group-prop",
         "title": "The view-transition-group property",
-        "number": "7.3"
+        "number": "11.3"
       },
       "definedIn": "table",
       "links": []
@@ -595,9 +1504,119 @@
         "id": "view-transition-group-children-pseudo",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-group-children-pseudo",
         "title": "View Transition Tree Root: the ::view-transition-group-children pseudo-element",
-        "number": "7.3.1"
+        "number": "11.3.1"
       },
       "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "document-active-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-active-view-transition",
+      "linkingText": [
+        "active view transition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "additions-to-document",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document",
+        "title": "Additions to Document",
+        "number": "12.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "document-rendering-suppression-for-view-transitions",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-rendering-suppression-for-view-transitions",
+      "linkingText": [
+        "rendering suppression for view transitions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "additions-to-document",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document",
+        "title": "Additions to Document",
+        "number": "12.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "document-dynamic-view-transition-style-sheet",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-dynamic-view-transition-style-sheet",
+      "linkingText": [
+        "dynamic view transition style sheet"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "additions-to-document",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document",
+        "title": "Additions to Document",
+        "number": "12.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "document-show-view-transition-tree",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-show-view-transition-tree",
+      "linkingText": [
+        "show view transition tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "additions-to-document",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document",
+        "title": "Additions to Document",
+        "number": "12.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "document-update-callback-queue",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#document-update-callback-queue",
+      "linkingText": [
+        "update callback queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "additions-to-document",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document",
+        "title": "Additions to Document",
+        "number": "12.1.1"
+      },
+      "definedIn": "dt",
       "links": []
     },
     {
@@ -611,13 +1630,13 @@
       "for": [
         "document"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "cross-doc-data-structure-document",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-data-structure-document",
+        "id": "additions-to-document",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document",
         "title": "Additions to Document",
-        "number": "8.1.1"
+        "number": "12.1.1"
       },
       "definedIn": "dt",
       "links": []
@@ -633,57 +1652,515 @@
       "for": [
         "document"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "cross-doc-data-structure-document",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-data-structure-document",
+        "id": "additions-to-document",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#additions-to-document",
         "title": "Additions to Document",
-        "number": "8.1.1"
+        "number": "12.1.1"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "viewtransition-active-types",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition-active-types",
+      "id": "captured-in-a-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-in-a-view-transition",
       "linkingText": [
-        "active types"
+        "captured in a view transition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "elements-concept",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#elements-concept",
+        "title": "Additions to Elements",
+        "number": "12.1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "captured-element",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element",
+      "linkingText": [
+        "captured element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "captured-element-old-image",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-image",
+      "linkingText": [
+        "old image"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "ViewTransition"
+        "captured element"
       ],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "cross-doc-data-structure-vt",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-data-structure-vt",
-        "title": "Additions to ViewTransition",
-        "number": "8.1.2"
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "viewtransition-outbound-post-capture-steps",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition-outbound-post-capture-steps",
+      "id": "captured-element-old-width",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-width",
       "linkingText": [
-        "outbound post-capture steps"
+        "old width"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "ViewTransition"
+        "captured element"
       ],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "cross-doc-data-structure-vt",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-data-structure-vt",
-        "title": "Additions to ViewTransition",
-        "number": "8.1.2"
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-old-height",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-height",
+      "linkingText": [
+        "old height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-old-transform",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-transform",
+      "linkingText": [
+        "old transform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-old-writing-mode",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-writing-mode",
+      "linkingText": [
+        "old writing-mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-old-direction",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-direction",
+      "linkingText": [
+        "old direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-old-text-orientation",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-text-orientation",
+      "linkingText": [
+        "old text-orientation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-old-mix-blend-mode",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-mix-blend-mode",
+      "linkingText": [
+        "old mix-blend-mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-old-backdrop-filter",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-backdrop-filter",
+      "linkingText": [
+        "old backdrop-filter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-old-color-scheme",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-color-scheme",
+      "linkingText": [
+        "old color-scheme"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-new-element",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-new-element",
+      "linkingText": [
+        "new element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-class-list",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-class-list",
+      "linkingText": [
+        "class list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-containing-group-name",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-containing-group-name",
+      "linkingText": [
+        "containing group name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-transform-from-snapshot-containing-block",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-transform-from-snapshot-containing-block",
+      "linkingText": [
+        "transform from snapshot containing block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-old-border-width",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-border-width",
+      "linkingText": [
+        "old border width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-style-definitions",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-style-definitions",
+      "linkingText": [
+        "style definitions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "captured-element-group-keyframes",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-group-keyframes",
+      "linkingText": [
+        "group keyframes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-group-animation-name-rule",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-group-animation-name-rule",
+      "linkingText": [
+        "group animation name rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-group-styles-rule",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-group-styles-rule",
+      "linkingText": [
+        "group styles rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-image-pair-isolation-rule",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-image-pair-isolation-rule",
+      "linkingText": [
+        "image pair isolation rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "captured-element-image-animation-name-rule",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-image-animation-name-rule",
+      "linkingText": [
+        "image animation name rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "captured element"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "captured-elements",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-elements",
+        "title": "Captured elements",
+        "number": "12.1.3"
       },
       "definedIn": "dt",
       "links": []
@@ -703,7 +2180,7 @@
         "id": "cross-doc-data-structure-serialization",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-data-structure-serialization",
         "title": "Serializable view transition params",
-        "number": "8.1.3"
+        "number": "12.1.4"
       },
       "definedIn": "prose",
       "links": []
@@ -725,7 +2202,7 @@
         "id": "cross-doc-data-structure-serialization",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-data-structure-serialization",
         "title": "Serializable view transition params",
-        "number": "8.1.3"
+        "number": "12.1.4"
       },
       "definedIn": "dt",
       "links": []
@@ -747,97 +2224,29 @@
         "id": "cross-doc-data-structure-serialization",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#cross-doc-data-structure-serialization",
         "title": "Serializable view transition params",
-        "number": "8.1.3"
+        "number": "12.1.4"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "captured-element-class-list",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-class-list",
+      "id": "perform-pending-transition-operations",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#perform-pending-transition-operations",
       "linkingText": [
-        "class list"
+        "perform pending transition operations"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "captured element"
-      ],
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "capture-classes-data-structure",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#capture-classes-data-structure",
-        "title": "Captured elements extension",
-        "number": "8.2.1"
+        "id": "perform-pending-transition-operations-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#perform-pending-transition-operations-algorithm",
+        "title": "Perform pending transition operations",
+        "number": "12.2"
       },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "captured-element-containing-group-name",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-containing-group-name",
-      "linkingText": [
-        "containing group name"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "captured element"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "capture-classes-data-structure",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#capture-classes-data-structure",
-        "title": "Captured elements extension",
-        "number": "8.2.1"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "captured-element-transform-from-snapshot-containing-block",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-transform-from-snapshot-containing-block",
-      "linkingText": [
-        "transform from snapshot containing block"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "captured element"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "capture-classes-data-structure",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#capture-classes-data-structure",
-        "title": "Captured elements extension",
-        "number": "8.2.1"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "captured-element-old-border-width",
-      "href": "https://drafts.csswg.org/css-view-transitions-2/#captured-element-old-border-width",
-      "linkingText": [
-        "old border width"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "captured element"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "capture-classes-data-structure",
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#capture-classes-data-structure",
-        "title": "Captured elements extension",
-        "number": "8.2.1"
-      },
-      "definedIn": "dt",
+      "definedIn": "prose",
       "links": []
     },
     {
@@ -855,7 +2264,107 @@
         "id": "vt-rule-algo",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-rule-algo",
         "title": "Resolving the @view-transition rule",
-        "number": "8.3"
+        "number": "12.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "setup-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#setup-view-transition",
+      "linkingText": [
+        "setup view transition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "setup-view-transition-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#setup-view-transition-algorithm",
+        "title": "Setup single-document view transition",
+        "number": "12.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activate-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#activate-view-transition",
+      "linkingText": [
+        "activate view transition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "setup-view-transition-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#setup-view-transition-algorithm",
+        "title": "Setup single-document view transition",
+        "number": "12.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "capture-the-old-state",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#capture-the-old-state",
+      "linkingText": [
+        "capture the old state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "capture-old-state-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#capture-old-state-algorithm",
+        "title": "Capture the old state",
+        "number": "12.4.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "capture-the-new-state",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#capture-the-new-state",
+      "linkingText": [
+        "capture the new state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "capture-new-state-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#capture-new-state-algorithm",
+        "title": "Capture the new state",
+        "number": "12.4.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "setup-transition-pseudo-elements",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#setup-transition-pseudo-elements",
+      "linkingText": [
+        "setup transition pseudo-elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "setup-transition-pseudo-elements-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#setup-transition-pseudo-elements-algorithm",
+        "title": "Setup transition pseudo-elements",
+        "number": "12.4.3"
       },
       "definedIn": "prose",
       "links": []
@@ -875,7 +2384,7 @@
         "id": "check-eligibility",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#check-eligibility",
         "title": "Check eligibility for outbound cross-document view transition",
-        "number": "8.4.1"
+        "number": "12.5.1.1"
       },
       "definedIn": "prose",
       "links": []
@@ -895,7 +2404,7 @@
         "id": "setup-outbound-transition",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#setup-outbound-transition",
         "title": "Setup the outbound transition when ready to swap pages",
-        "number": "8.4.2"
+        "number": "12.5.1.2"
       },
       "definedIn": "prose",
       "links": []
@@ -915,7 +2424,7 @@
         "id": "update-opt-in",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#update-opt-in",
         "title": "Update the opt-in flag to reflect the current state",
-        "number": "8.4.3"
+        "number": "12.5.1.3"
       },
       "definedIn": "prose",
       "links": []
@@ -935,7 +2444,7 @@
         "id": "access-view-transition-in-new-doc",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#access-view-transition-in-new-doc",
         "title": "Activating the view transition in the new Document",
-        "number": "8.5"
+        "number": "12.5.2"
       },
       "definedIn": "prose",
       "links": []
@@ -955,7 +2464,7 @@
         "id": "vt-group-value-resolve",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-group-value-resolve",
         "title": "Resolving the view-transition-group value",
-        "number": "8.7.1"
+        "number": "12.5.4.1"
       },
       "definedIn": "prose",
       "links": []
@@ -975,7 +2484,7 @@
         "id": "vt-containing-group-name-resolve",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-containing-group-name-resolve",
         "title": "Resolving the containing group name",
-        "number": "8.7.2"
+        "number": "12.5.4.2"
       },
       "definedIn": "prose",
       "links": []
@@ -995,7 +2504,7 @@
         "id": "vt-group-name-resolve",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-group-name-resolve",
         "title": "Resolving the group name",
-        "number": "8.7.3"
+        "number": "12.5.4.3"
       },
       "definedIn": "prose",
       "links": []
@@ -1017,7 +2526,7 @@
         "id": "vt-group-name-resolve",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-group-name-resolve",
         "title": "Resolving the group name",
-        "number": "8.7.3"
+        "number": "12.5.4.3"
       },
       "definedIn": "dt",
       "links": []
@@ -1039,7 +2548,7 @@
         "id": "vt-group-name-resolve",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-group-name-resolve",
         "title": "Resolving the group name",
-        "number": "8.7.3"
+        "number": "12.5.4.3"
       },
       "definedIn": "dt",
       "links": []
@@ -1061,7 +2570,7 @@
         "id": "vt-group-name-resolve",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-group-name-resolve",
         "title": "Resolving the group name",
-        "number": "8.7.3"
+        "number": "12.5.4.3"
       },
       "definedIn": "dt",
       "links": []
@@ -1081,7 +2590,208 @@
         "id": "vt-group-transform-adjust",
         "href": "https://drafts.csswg.org/css-view-transitions-2/#vt-group-transform-adjust",
         "title": "Adjust the group’s transform to be relative to its containing ::view-transition-group()",
-        "number": "8.7.7"
+        "number": "12.5.4.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "call-the-update-callback",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#call-the-update-callback",
+      "linkingText": [
+        "call the update callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "call-dom-update-callback-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#call-dom-update-callback-algorithm",
+        "title": "Call the update callback",
+        "number": "12.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "schedule-the-update-callback",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#schedule-the-update-callback",
+      "linkingText": [
+        "schedule the update callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "call-dom-update-callback-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#call-dom-update-callback-algorithm",
+        "title": "Call the update callback",
+        "number": "12.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "flush-the-update-callback-queue",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#flush-the-update-callback-queue",
+      "linkingText": [
+        "flush the update callback queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "call-dom-update-callback-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#call-dom-update-callback-algorithm",
+        "title": "Call the update callback",
+        "number": "12.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "skip-the-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#skip-the-view-transition",
+      "linkingText": [
+        "skip the view transition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "skip-the-view-transition-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#skip-the-view-transition-algorithm",
+        "title": "Skip the view transition",
+        "number": "12.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "view-transition-page-visibility-change-steps",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#view-transition-page-visibility-change-steps",
+      "linkingText": [
+        "view transition page-visibility change steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "page-visibility-change-steps",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#page-visibility-change-steps",
+        "title": "View transition page-visibility change steps",
+        "number": "12.8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "capture-the-image",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#capture-the-image",
+      "linkingText": [
+        "capture the image",
+        "capturing the image"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "capture-the-image-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#capture-the-image-algorithm",
+        "title": "Capture the image",
+        "number": "12.9"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "capture-rendering-characteristics",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#capture-rendering-characteristics",
+      "linkingText": [
+        "capture rendering characteristics"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "capture-rendering-characteristics-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#capture-rendering-characteristics-algorithm",
+        "title": "Capture rendering characteristics",
+        "number": "12.9.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "handle-transition-frame",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#handle-transition-frame",
+      "linkingText": [
+        "handle transition frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "handle-transition-frame-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#handle-transition-frame-algorithm",
+        "title": "Handle transition frame",
+        "number": "12.10"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "update-pseudo-element-styles",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#update-pseudo-element-styles",
+      "linkingText": [
+        "update pseudo-element styles"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "style-transition-pseudo-elements-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#style-transition-pseudo-elements-algorithm",
+        "title": "Update pseudo-element styles",
+        "number": "12.11"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "clear-view-transition",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#clear-view-transition",
+      "linkingText": [
+        "clear view transition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "clear-view-transition-algorithm",
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#clear-view-transition-algorithm",
+        "title": "Clear view transition",
+        "number": "12.12"
       },
       "definedIn": "prose",
       "links": []
