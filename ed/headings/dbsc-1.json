@@ -1,0 +1,471 @@
+{
+  "spec": {
+    "title": "Device Bound Session Credentials",
+    "url": "https://w3c.github.io/webappsec-dbsc/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/webappsec-dbsc/#title",
+      "level": 1,
+      "title": "Device Bound Session Credentials"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/webappsec-dbsc/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/webappsec-dbsc/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/webappsec-dbsc/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/webappsec-dbsc/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/webappsec-dbsc/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "2"
+    },
+    {
+      "id": "non-goals",
+      "href": "https://w3c.github.io/webappsec-dbsc/#non-goals",
+      "level": 3,
+      "title": "Non-goals",
+      "number": "2.1"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/webappsec-dbsc/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "3"
+    },
+    {
+      "id": "privacy-cookies",
+      "href": "https://w3c.github.io/webappsec-dbsc/#privacy-cookies",
+      "level": 3,
+      "title": "Cookie considerations",
+      "number": "3.1"
+    },
+    {
+      "id": "privacy-side-channel-leak",
+      "href": "https://w3c.github.io/webappsec-dbsc/#privacy-side-channel-leak",
+      "level": 3,
+      "title": "Timing side channel leak",
+      "number": "3.2"
+    },
+    {
+      "id": "federated-sessions",
+      "href": "https://w3c.github.io/webappsec-dbsc/#federated-sessions",
+      "level": 3,
+      "title": "Federated sessions",
+      "number": "3.3"
+    },
+    {
+      "id": "alternatives",
+      "href": "https://w3c.github.io/webappsec-dbsc/#alternatives",
+      "level": 2,
+      "title": "Alternatives considered",
+      "number": "4"
+    },
+    {
+      "id": "alternatives-webauthn",
+      "href": "https://w3c.github.io/webappsec-dbsc/#alternatives-webauthn",
+      "level": 3,
+      "title": "WebAuthn and silent mediation",
+      "number": "4.1"
+    },
+    {
+      "id": "server-considerations",
+      "href": "https://w3c.github.io/webappsec-dbsc/#server-considerations",
+      "level": 2,
+      "title": "Server considerations",
+      "number": "5"
+    },
+    {
+      "id": "user-agent-considerations",
+      "href": "https://w3c.github.io/webappsec-dbsc/#user-agent-considerations",
+      "level": 2,
+      "title": "User agent considerations",
+      "number": "6"
+    },
+    {
+      "id": "framework",
+      "href": "https://w3c.github.io/webappsec-dbsc/#framework",
+      "level": 2,
+      "title": "Framework",
+      "number": "7"
+    },
+    {
+      "id": "framework-session-store",
+      "href": "https://w3c.github.io/webappsec-dbsc/#framework-session-store",
+      "level": 3,
+      "title": "Session store",
+      "number": "7.1"
+    },
+    {
+      "id": "framework-sessions-id",
+      "href": "https://w3c.github.io/webappsec-dbsc/#framework-sessions-id",
+      "level": 3,
+      "title": "Sessions by id",
+      "number": "7.2"
+    },
+    {
+      "id": "framework-session",
+      "href": "https://w3c.github.io/webappsec-dbsc/#framework-session",
+      "level": 3,
+      "title": "Device bound session",
+      "number": "7.3"
+    },
+    {
+      "id": "framework-scope",
+      "href": "https://w3c.github.io/webappsec-dbsc/#framework-scope",
+      "level": 3,
+      "title": "Session scope",
+      "number": "7.4"
+    },
+    {
+      "id": "framework-scope-specification",
+      "href": "https://w3c.github.io/webappsec-dbsc/#framework-scope-specification",
+      "level": 3,
+      "title": "Scope specification",
+      "number": "7.5"
+    },
+    {
+      "id": "framework-session-credential",
+      "href": "https://w3c.github.io/webappsec-dbsc/#framework-session-credential",
+      "level": 3,
+      "title": "Session credential",
+      "number": "7.6"
+    },
+    {
+      "id": "framework-registrable-origin-label",
+      "href": "https://w3c.github.io/webappsec-dbsc/#framework-registrable-origin-label",
+      "level": 3,
+      "title": "Registrable origin label",
+      "number": "7.7"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "number": "8"
+    },
+    {
+      "id": "algo-identify-session",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algo-identify-session",
+      "level": 3,
+      "title": "Identify session",
+      "number": "8.1"
+    },
+    {
+      "id": "algo-url-in-scope",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algo-url-in-scope",
+      "level": 3,
+      "title": "Identify if a URL is in scope of a session",
+      "number": "8.2"
+    },
+    {
+      "id": "algo-request-allows-refresh",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algo-request-allows-refresh",
+      "level": 3,
+      "title": "Identify if a request is allowed to refresh",
+      "number": "8.3"
+    },
+    {
+      "id": "algo-host-pattern-matches",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algo-host-pattern-matches",
+      "level": 3,
+      "title": "Identify if a host matches a pattern",
+      "number": "8.4"
+    },
+    {
+      "id": "algo-identify-session-needing-refresh",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algo-identify-session-needing-refresh",
+      "level": 3,
+      "title": "Identify session needing refresh",
+      "number": "8.5"
+    },
+    {
+      "id": "algo-identify-if-missing-session-credential",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algo-identify-if-missing-session-credential",
+      "level": 3,
+      "title": "Identify if missing session credential",
+      "number": "8.6"
+    },
+    {
+      "id": "algo-process-challenge",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algo-process-challenge",
+      "level": 3,
+      "title": "Cache challenge",
+      "number": "8.7"
+    },
+    {
+      "id": "algo-session-request",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algo-session-request",
+      "level": 3,
+      "title": "Send request",
+      "number": "8.8"
+    },
+    {
+      "id": "algo-create-session",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algo-create-session",
+      "level": 3,
+      "title": "Create session",
+      "number": "8.9"
+    },
+    {
+      "id": "algo-process-session-registration",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algo-process-session-registration",
+      "level": 3,
+      "title": "Process session registration",
+      "number": "8.10"
+    },
+    {
+      "id": "algo-create-session-key-pair",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algo-create-session-key-pair",
+      "level": 3,
+      "title": "Create session key pair",
+      "number": "8.11"
+    },
+    {
+      "id": "algo-add-debug-header",
+      "href": "https://w3c.github.io/webappsec-dbsc/#algo-add-debug-header",
+      "level": 3,
+      "title": "Add debug header",
+      "number": "8.12"
+    },
+    {
+      "id": "format",
+      "href": "https://w3c.github.io/webappsec-dbsc/#format",
+      "level": 2,
+      "title": "DBSC Formats",
+      "number": "9"
+    },
+    {
+      "id": "header-secure-session-registration",
+      "href": "https://w3c.github.io/webappsec-dbsc/#header-secure-session-registration",
+      "level": 3,
+      "title": "`Secure-Session-Registration` HTTP header field",
+      "number": "9.1"
+    },
+    {
+      "id": "header-secure-session-challenge",
+      "href": "https://w3c.github.io/webappsec-dbsc/#header-secure-session-challenge",
+      "level": 3,
+      "title": "`Secure-Session-Challenge` HTTP header field",
+      "number": "9.2"
+    },
+    {
+      "id": "challenge-structured-header-serialization",
+      "href": "https://w3c.github.io/webappsec-dbsc/#challenge-structured-header-serialization",
+      "level": 4,
+      "title": "`Secure-Session-Challenge` structured header serialization",
+      "number": "9.2.1"
+    },
+    {
+      "id": "header-secure-session-response",
+      "href": "https://w3c.github.io/webappsec-dbsc/#header-secure-session-response",
+      "level": 3,
+      "title": "`Secure-Session-Response` HTTP header field",
+      "number": "9.3"
+    },
+    {
+      "id": "header-sec-secure-session-id",
+      "href": "https://w3c.github.io/webappsec-dbsc/#header-sec-secure-session-id",
+      "level": 3,
+      "title": "`Sec-Secure-Session-Id` HTTP header field",
+      "number": "9.4"
+    },
+    {
+      "id": "header-secure-session-skipped",
+      "href": "https://w3c.github.io/webappsec-dbsc/#header-secure-session-skipped",
+      "level": 3,
+      "title": "`Secure-Session-Skipped` HTTP header field",
+      "number": "9.5"
+    },
+    {
+      "id": "format-session-instructions",
+      "href": "https://w3c.github.io/webappsec-dbsc/#format-session-instructions",
+      "level": 3,
+      "title": "JSON Session Instruction Format",
+      "number": "9.6"
+    },
+    {
+      "id": "format-session-scope-instructions",
+      "href": "https://w3c.github.io/webappsec-dbsc/#format-session-scope-instructions",
+      "level": 3,
+      "title": "JSON Session Scope Instruction Format",
+      "number": "9.7"
+    },
+    {
+      "id": "format-session-scope-rule",
+      "href": "https://w3c.github.io/webappsec-dbsc/#format-session-scope-rule",
+      "level": 3,
+      "title": "JSON Session Scope Rule Format",
+      "number": "9.8"
+    },
+    {
+      "id": "format-session-credentials",
+      "href": "https://w3c.github.io/webappsec-dbsc/#format-session-credentials",
+      "level": 3,
+      "title": "JSON Session Credentials Format",
+      "number": "9.9"
+    },
+    {
+      "id": "format-jwt",
+      "href": "https://w3c.github.io/webappsec-dbsc/#format-jwt",
+      "level": 3,
+      "title": "DBSC Proof JWT Syntax",
+      "number": "9.10"
+    },
+    {
+      "id": "changes-to-other-specifications",
+      "href": "https://w3c.github.io/webappsec-dbsc/#changes-to-other-specifications",
+      "level": 2,
+      "title": "10. Changes to other specifications"
+    },
+    {
+      "id": "changes-to-fetch",
+      "href": "https://w3c.github.io/webappsec-dbsc/#changes-to-fetch",
+      "level": 3,
+      "title": "Changes to the Fetch specification",
+      "number": "10.1"
+    },
+    {
+      "id": "changes-to-clear-site-data",
+      "href": "https://w3c.github.io/webappsec-dbsc/#changes-to-clear-site-data",
+      "level": 3,
+      "title": "Changes to the Clear Site Data specification",
+      "number": "10.2"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://w3c.github.io/webappsec-dbsc/#iana-considerations",
+      "level": 2,
+      "title": "11. IANA Considerations"
+    },
+    {
+      "id": "iana-ses-session-challenge",
+      "href": "https://w3c.github.io/webappsec-dbsc/#iana-ses-session-challenge",
+      "level": 3,
+      "title": "Secure-Session-Challenge",
+      "number": "11.1"
+    },
+    {
+      "id": "iana-sec-secure-session-id",
+      "href": "https://w3c.github.io/webappsec-dbsc/#iana-sec-secure-session-id",
+      "level": 3,
+      "title": "Sec-Secure-Session-Id",
+      "number": "11.2"
+    },
+    {
+      "id": "iana-secure-session-registration",
+      "href": "https://w3c.github.io/webappsec-dbsc/#iana-secure-session-registration",
+      "level": 3,
+      "title": "Secure-Session-Registration",
+      "number": "11.3"
+    },
+    {
+      "id": "iana-secure-session-response",
+      "href": "https://w3c.github.io/webappsec-dbsc/#iana-secure-session-response",
+      "level": 3,
+      "title": "Secure-Session-Response",
+      "number": "11.4"
+    },
+    {
+      "id": "iana-secure-session-skipped",
+      "href": "https://w3c.github.io/webappsec-dbsc/#iana-secure-session-skipped",
+      "level": 3,
+      "title": "Secure-Session-Skipped",
+      "number": "11.5"
+    },
+    {
+      "id": "well-known",
+      "href": "https://w3c.github.io/webappsec-dbsc/#well-known",
+      "level": 3,
+      "title": "device-bound-sessions Well Known",
+      "number": "11.6"
+    },
+    {
+      "id": "changelog",
+      "href": "https://w3c.github.io/webappsec-dbsc/#changelog",
+      "level": 2,
+      "title": "12. Changelog"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/webappsec-dbsc/#acknowledgements",
+      "level": 2,
+      "title": "13. Acknowledgements"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/webappsec-dbsc/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/webappsec-dbsc/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/webappsec-dbsc/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/webappsec-dbsc/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/webappsec-dbsc/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/webappsec-dbsc/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/webappsec-dbsc/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/webappsec-dbsc/#normative",
+      "level": 3,
+      "title": "Normative References"
+    }
+  ]
+}

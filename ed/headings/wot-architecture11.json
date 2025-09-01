@@ -1,0 +1,1280 @@
+{
+  "spec": {
+    "title": "Web of Things (WoT) Architecture 1.1",
+    "url": "https://w3c.github.io/wot-architecture/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/wot-architecture/#title",
+      "level": 1,
+      "title": "Web of Things (WoT) Architecture 1.1"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/wot-architecture/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/wot-architecture/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/wot-architecture/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "x2-conformance"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/wot-architecture/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "alternateIds": [
+        "x3-terminology"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "device-categories",
+      "href": "https://w3c.github.io/wot-architecture/#device-categories",
+      "level": 3,
+      "title": "Device Categories",
+      "alternateIds": [
+        "x3-1-device-categories"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "sec-application-domains",
+      "href": "https://w3c.github.io/wot-architecture/#sec-application-domains",
+      "level": 2,
+      "title": "Application Domains",
+      "alternateIds": [
+        "x4-application-domains"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "consumer-use-cases",
+      "href": "https://w3c.github.io/wot-architecture/#consumer-use-cases",
+      "level": 3,
+      "title": "Consumer",
+      "alternateIds": [
+        "x4-1-consumer"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "industrial-iot-usecases",
+      "href": "https://w3c.github.io/wot-architecture/#industrial-iot-usecases",
+      "level": 3,
+      "title": "Industrial",
+      "alternateIds": [
+        "x4-2-industrial"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "example-smart-factory",
+      "href": "https://w3c.github.io/wot-architecture/#example-smart-factory",
+      "level": 4,
+      "title": "Example: Smart Factory",
+      "alternateIds": [
+        "x4-2-1-example-smart-factory"
+      ],
+      "number": "4.2.1"
+    },
+    {
+      "id": "sec-transportationlogistics",
+      "href": "https://w3c.github.io/wot-architecture/#sec-transportationlogistics",
+      "level": 3,
+      "title": "Transportation & Logistics",
+      "alternateIds": [
+        "transportationlogistics"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "sec-utilities",
+      "href": "https://w3c.github.io/wot-architecture/#sec-utilities",
+      "level": 3,
+      "title": "Utilities",
+      "alternateIds": [
+        "utilities"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "sec-oilandgas",
+      "href": "https://w3c.github.io/wot-architecture/#sec-oilandgas",
+      "level": 3,
+      "title": "Oil and Gas",
+      "alternateIds": [
+        "oilandgas"
+      ],
+      "number": "4.5"
+    },
+    {
+      "id": "sec-insurance",
+      "href": "https://w3c.github.io/wot-architecture/#sec-insurance",
+      "level": 3,
+      "title": "Insurance",
+      "alternateIds": [
+        "insurance"
+      ],
+      "number": "4.6"
+    },
+    {
+      "id": "sec-engineering-and-construction",
+      "href": "https://w3c.github.io/wot-architecture/#sec-engineering-and-construction",
+      "level": 3,
+      "title": "Engineering and Construction",
+      "alternateIds": [
+        "engineering-and-construction"
+      ],
+      "number": "4.7"
+    },
+    {
+      "id": "sec-agriculture",
+      "href": "https://w3c.github.io/wot-architecture/#sec-agriculture",
+      "level": 3,
+      "title": "Agriculture",
+      "alternateIds": [
+        "agriculture"
+      ],
+      "number": "4.8"
+    },
+    {
+      "id": "sec-healthcare",
+      "href": "https://w3c.github.io/wot-architecture/#sec-healthcare",
+      "level": 3,
+      "title": "Healthcare",
+      "alternateIds": [
+        "healthcare"
+      ],
+      "number": "4.9"
+    },
+    {
+      "id": "sec-environmentmonitoring",
+      "href": "https://w3c.github.io/wot-architecture/#sec-environmentmonitoring",
+      "level": 3,
+      "title": "Environment Monitoring",
+      "alternateIds": [
+        "environmentmonitoring"
+      ],
+      "number": "4.10"
+    },
+    {
+      "id": "sec-smart-cities",
+      "href": "https://w3c.github.io/wot-architecture/#sec-smart-cities",
+      "level": 3,
+      "title": "Smart Cities",
+      "alternateIds": [
+        "smartcities"
+      ],
+      "number": "4.11"
+    },
+    {
+      "id": "sec-smart-buildings",
+      "href": "https://w3c.github.io/wot-architecture/#sec-smart-buildings",
+      "level": 3,
+      "title": "Smart Buildings",
+      "alternateIds": [
+        "smartbuildings"
+      ],
+      "number": "4.12"
+    },
+    {
+      "id": "sec-connected-car",
+      "href": "https://w3c.github.io/wot-architecture/#sec-connected-car",
+      "level": 3,
+      "title": "Connected Car",
+      "alternateIds": [
+        "connectedcar"
+      ],
+      "number": "4.13"
+    },
+    {
+      "id": "connected-car-example",
+      "href": "https://w3c.github.io/wot-architecture/#connected-car-example",
+      "level": 4,
+      "title": "Connected Car Example",
+      "alternateIds": [
+        "connectedcar-example"
+      ],
+      "number": "4.13.1"
+    },
+    {
+      "id": "sec-common-deployment-patterns",
+      "href": "https://w3c.github.io/wot-architecture/#sec-common-deployment-patterns",
+      "level": 2,
+      "title": "Common Deployment Patterns",
+      "alternateIds": [
+        "x5-common-deployment-patterns"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "telemetry",
+      "href": "https://w3c.github.io/wot-architecture/#telemetry",
+      "level": 3,
+      "title": "Telemetry",
+      "alternateIds": [
+        "x5-1-telemetry"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "device-controllers",
+      "href": "https://w3c.github.io/wot-architecture/#device-controllers",
+      "level": 3,
+      "title": "Device Controllers",
+      "alternateIds": [
+        "x5-2-device-controllers"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "thing-to-thing",
+      "href": "https://w3c.github.io/wot-architecture/#thing-to-thing",
+      "level": 3,
+      "title": "Thing-to-Thing",
+      "alternateIds": [
+        "x5-3-thing-to-thing"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "remote-access",
+      "href": "https://w3c.github.io/wot-architecture/#remote-access",
+      "level": 3,
+      "title": "Remote Access",
+      "alternateIds": [
+        "x5-4-remote-access"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "smart-home-gateways",
+      "href": "https://w3c.github.io/wot-architecture/#smart-home-gateways",
+      "level": 3,
+      "title": "Smart Home Gateways",
+      "alternateIds": [
+        "x5-5-smart-home-gateways"
+      ],
+      "number": "5.5"
+    },
+    {
+      "id": "edge-devices",
+      "href": "https://w3c.github.io/wot-architecture/#edge-devices",
+      "level": 3,
+      "title": "Edge Devices",
+      "alternateIds": [
+        "x5-6-edge-devices"
+      ],
+      "number": "5.6"
+    },
+    {
+      "id": "digital-twins",
+      "href": "https://w3c.github.io/wot-architecture/#digital-twins",
+      "level": 3,
+      "title": "Digital Twins",
+      "alternateIds": [
+        "x5-7-digital-twins"
+      ],
+      "number": "5.7"
+    },
+    {
+      "id": "cloud-connected-devices",
+      "href": "https://w3c.github.io/wot-architecture/#cloud-connected-devices",
+      "level": 4,
+      "title": "Cloud Connected Devices",
+      "alternateIds": [
+        "x5-7-1-cloud-connected-devices"
+      ],
+      "number": "5.7.1"
+    },
+    {
+      "id": "orchestration",
+      "href": "https://w3c.github.io/wot-architecture/#orchestration",
+      "level": 4,
+      "title": "Orchestration",
+      "alternateIds": [
+        "x5-7-2-orchestration"
+      ],
+      "number": "5.7.2"
+    },
+    {
+      "id": "legacy-devices",
+      "href": "https://w3c.github.io/wot-architecture/#legacy-devices",
+      "level": 4,
+      "title": "Legacy Devices",
+      "alternateIds": [
+        "x5-7-3-legacy-devices"
+      ],
+      "number": "5.7.3"
+    },
+    {
+      "id": "multi-cloud",
+      "href": "https://w3c.github.io/wot-architecture/#multi-cloud",
+      "level": 3,
+      "title": "Multi-Cloud",
+      "alternateIds": [
+        "x5-8-multi-cloud"
+      ],
+      "number": "5.8"
+    },
+    {
+      "id": "virtual-thing",
+      "href": "https://w3c.github.io/wot-architecture/#virtual-thing",
+      "level": 3,
+      "title": "Virtual Things",
+      "alternateIds": [
+        "x5-9-virtual-things"
+      ],
+      "number": "5.9"
+    },
+    {
+      "id": "sec-cross-domain-collaboration",
+      "href": "https://w3c.github.io/wot-architecture/#sec-cross-domain-collaboration",
+      "level": 3,
+      "title": "Cross-domain Collaboration",
+      "alternateIds": [
+        "x5-10-cross-domain-collaboration"
+      ],
+      "number": "5.10"
+    },
+    {
+      "id": "sec-system-integration",
+      "href": "https://w3c.github.io/wot-architecture/#sec-system-integration",
+      "level": 3,
+      "title": "System Integration",
+      "alternateIds": [
+        "x5-11-system-integration"
+      ],
+      "number": "5.11"
+    },
+    {
+      "id": "sec-wot-architecture",
+      "href": "https://w3c.github.io/wot-architecture/#sec-wot-architecture",
+      "level": 2,
+      "title": "Abstract WoT System Architecture",
+      "alternateIds": [
+        "x6-abstract-wot-system-architecture"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "sec-architecture-overview",
+      "href": "https://w3c.github.io/wot-architecture/#sec-architecture-overview",
+      "level": 3,
+      "title": "Fundamental Concepts",
+      "alternateIds": [
+        "x6-1-fundamental-concepts"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "metadata",
+      "href": "https://w3c.github.io/wot-architecture/#metadata",
+      "level": 4,
+      "title": "Metadata",
+      "alternateIds": [
+        "x6-1-1-metadata"
+      ],
+      "number": "6.1.1"
+    },
+    {
+      "id": "metadata-thing-descriptions",
+      "href": "https://w3c.github.io/wot-architecture/#metadata-thing-descriptions",
+      "level": 5,
+      "title": "Thing Descriptions",
+      "alternateIds": [
+        "x6-1-1-1-thing-descriptions"
+      ],
+      "number": "6.1.1.1"
+    },
+    {
+      "id": "metadata-thing-models",
+      "href": "https://w3c.github.io/wot-architecture/#metadata-thing-models",
+      "level": 5,
+      "title": "Thing Models",
+      "alternateIds": [
+        "x6-1-1-2-thing-models"
+      ],
+      "number": "6.1.1.2"
+    },
+    {
+      "id": "links",
+      "href": "https://w3c.github.io/wot-architecture/#links",
+      "level": 4,
+      "title": "Links",
+      "alternateIds": [
+        "x6-1-2-links"
+      ],
+      "number": "6.1.2"
+    },
+    {
+      "id": "intermediaries",
+      "href": "https://w3c.github.io/wot-architecture/#intermediaries",
+      "level": 4,
+      "title": "Intermediaries",
+      "alternateIds": [
+        "x6-1-3-intermediaries"
+      ],
+      "number": "6.1.3"
+    },
+    {
+      "id": "sec-affordances",
+      "href": "https://w3c.github.io/wot-architecture/#sec-affordances",
+      "level": 3,
+      "title": "Affordances",
+      "alternateIds": [
+        "x6-2-affordances"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "sec-web-thing",
+      "href": "https://w3c.github.io/wot-architecture/#sec-web-thing",
+      "level": 3,
+      "title": "Web Thing",
+      "alternateIds": [
+        "x6-3-web-thing"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "lifecycle",
+      "href": "https://w3c.github.io/wot-architecture/#lifecycle",
+      "level": 3,
+      "title": "Lifecycle",
+      "alternateIds": [
+        "x6-4-lifecycle"
+      ],
+      "number": "6.4"
+    },
+    {
+      "id": "simple-system-lifecycle",
+      "href": "https://w3c.github.io/wot-architecture/#simple-system-lifecycle",
+      "level": 4,
+      "title": "Simple System Lifecycle",
+      "alternateIds": [
+        "x6-4-1-simple-system-lifecycle"
+      ],
+      "number": "6.4.1"
+    },
+    {
+      "id": "system-lifecycle-no-directory",
+      "href": "https://w3c.github.io/wot-architecture/#system-lifecycle-no-directory",
+      "level": 4,
+      "title": "System Lifecycle with Registration",
+      "alternateIds": [
+        "x6-4-2-system-lifecycle-with-registration"
+      ],
+      "number": "6.4.2"
+    },
+    {
+      "id": "thing-lifecycle",
+      "href": "https://w3c.github.io/wot-architecture/#thing-lifecycle",
+      "level": 4,
+      "title": "Thing Lifecycle",
+      "alternateIds": [
+        "x6-4-3-thing-lifecycle"
+      ],
+      "number": "6.4.3"
+    },
+    {
+      "id": "sec-interaction-model",
+      "href": "https://w3c.github.io/wot-architecture/#sec-interaction-model",
+      "level": 3,
+      "title": "Interaction Model",
+      "alternateIds": [
+        "x6-5-interaction-model"
+      ],
+      "number": "6.5"
+    },
+    {
+      "id": "properties",
+      "href": "https://w3c.github.io/wot-architecture/#properties",
+      "level": 4,
+      "title": "Properties",
+      "alternateIds": [
+        "x6-5-1-properties"
+      ],
+      "number": "6.5.1"
+    },
+    {
+      "id": "actions",
+      "href": "https://w3c.github.io/wot-architecture/#actions",
+      "level": 4,
+      "title": "Actions",
+      "alternateIds": [
+        "x6-5-2-actions"
+      ],
+      "number": "6.5.2"
+    },
+    {
+      "id": "events",
+      "href": "https://w3c.github.io/wot-architecture/#events",
+      "level": 4,
+      "title": "Events",
+      "alternateIds": [
+        "x6-5-3-events"
+      ],
+      "number": "6.5.3"
+    },
+    {
+      "id": "sec-hypermedia-controls",
+      "href": "https://w3c.github.io/wot-architecture/#sec-hypermedia-controls",
+      "level": 3,
+      "title": "Hypermedia Controls",
+      "alternateIds": [
+        "x6-6-hypermedia-controls"
+      ],
+      "number": "6.6"
+    },
+    {
+      "id": "sec-hypermedia-links",
+      "href": "https://w3c.github.io/wot-architecture/#sec-hypermedia-links",
+      "level": 4,
+      "title": "Links",
+      "alternateIds": [
+        "x6-6-1-links"
+      ],
+      "number": "6.6.1"
+    },
+    {
+      "id": "sec-hypermedia-forms",
+      "href": "https://w3c.github.io/wot-architecture/#sec-hypermedia-forms",
+      "level": 4,
+      "title": "Forms",
+      "alternateIds": [
+        "x6-6-2-forms"
+      ],
+      "number": "6.6.2"
+    },
+    {
+      "id": "sec-protocol-bindings",
+      "href": "https://w3c.github.io/wot-architecture/#sec-protocol-bindings",
+      "level": 3,
+      "title": "Protocol Bindings",
+      "alternateIds": [
+        "x6-7-protocol-bindings"
+      ],
+      "number": "6.7"
+    },
+    {
+      "id": "hypermedia-driven",
+      "href": "https://w3c.github.io/wot-architecture/#hypermedia-driven",
+      "level": 4,
+      "title": "Hypermedia-driven",
+      "alternateIds": [
+        "x6-7-1-hypermedia-driven"
+      ],
+      "number": "6.7.1"
+    },
+    {
+      "id": "sec-arch-URIs",
+      "href": "https://w3c.github.io/wot-architecture/#sec-arch-URIs",
+      "level": 4,
+      "title": "URIs",
+      "alternateIds": [
+        "x6-7-2-uris"
+      ],
+      "number": "6.7.2"
+    },
+    {
+      "id": "media-types",
+      "href": "https://w3c.github.io/wot-architecture/#media-types",
+      "level": 3,
+      "title": "Media Types",
+      "alternateIds": [
+        "x6-8-media-types"
+      ],
+      "number": "6.8"
+    },
+    {
+      "id": "sec-i18n",
+      "href": "https://w3c.github.io/wot-architecture/#sec-i18n",
+      "level": 3,
+      "title": "Internationalization",
+      "alternateIds": [
+        "x6-9-internationalization"
+      ],
+      "number": "6.9"
+    },
+    {
+      "id": "sec-wot-servient-architecture-high-level",
+      "href": "https://w3c.github.io/wot-architecture/#sec-wot-servient-architecture-high-level",
+      "level": 3,
+      "title": "WoT System Components and their Interconnectivity",
+      "alternateIds": [
+        "x6-10-wot-system-components-and-their-interconnectivity"
+      ],
+      "number": "6.10"
+    },
+    {
+      "id": "direct-communication",
+      "href": "https://w3c.github.io/wot-architecture/#direct-communication",
+      "level": 4,
+      "title": "Direct Communication",
+      "alternateIds": [
+        "x6-10-1-direct-communication"
+      ],
+      "number": "6.10.1"
+    },
+    {
+      "id": "indirect-communication",
+      "href": "https://w3c.github.io/wot-architecture/#indirect-communication",
+      "level": 4,
+      "title": "Indirect Communication",
+      "alternateIds": [
+        "x6-10-2-indirect-communication"
+      ],
+      "number": "6.10.2"
+    },
+    {
+      "id": "sec-building-blocks",
+      "href": "https://w3c.github.io/wot-architecture/#sec-building-blocks",
+      "level": 2,
+      "title": "WoT Building Blocks",
+      "alternateIds": [
+        "x7-wot-building-blocks"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "sec-thing-description",
+      "href": "https://w3c.github.io/wot-architecture/#sec-thing-description",
+      "level": 3,
+      "title": "WoT Thing Description",
+      "alternateIds": [
+        "x7-1-wot-thing-description"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "sec-thing-model",
+      "href": "https://w3c.github.io/wot-architecture/#sec-thing-model",
+      "level": 3,
+      "title": "Thing Model",
+      "alternateIds": [
+        "x7-2-thing-model"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "wot-profiles",
+      "href": "https://w3c.github.io/wot-architecture/#wot-profiles",
+      "level": 3,
+      "title": "Profiles",
+      "alternateIds": [
+        "x7-3-profiles"
+      ],
+      "number": "7.3"
+    },
+    {
+      "id": "profiling-methodology",
+      "href": "https://w3c.github.io/wot-architecture/#profiling-methodology",
+      "level": 4,
+      "title": "Profiling Methodology",
+      "alternateIds": [
+        "profile-description-methodology"
+      ],
+      "number": "7.3.1"
+    },
+    {
+      "id": "sec-discovery",
+      "href": "https://w3c.github.io/wot-architecture/#sec-discovery",
+      "level": 3,
+      "title": "WoT Discovery",
+      "alternateIds": [
+        "x7-4-wot-discovery"
+      ],
+      "number": "7.4"
+    },
+    {
+      "id": "sec-discovery-introductions",
+      "href": "https://w3c.github.io/wot-architecture/#sec-discovery-introductions",
+      "level": 4,
+      "title": "Introduction Mechanisms",
+      "alternateIds": [
+        "x7-4-1-introduction-mechanisms"
+      ],
+      "number": "7.4.1"
+    },
+    {
+      "id": "sec-discovery-exploration",
+      "href": "https://w3c.github.io/wot-architecture/#sec-discovery-exploration",
+      "level": 4,
+      "title": "Exploration Mechanisms",
+      "alternateIds": [
+        "x7-4-2-exploration-mechanisms"
+      ],
+      "number": "7.4.2"
+    },
+    {
+      "id": "sec-binding-templates",
+      "href": "https://w3c.github.io/wot-architecture/#sec-binding-templates",
+      "level": 3,
+      "title": "WoT Binding Templates",
+      "alternateIds": [
+        "x7-5-wot-binding-templates"
+      ],
+      "number": "7.5"
+    },
+    {
+      "id": "sec-scripting-api",
+      "href": "https://w3c.github.io/wot-architecture/#sec-scripting-api",
+      "level": 3,
+      "title": "WoT Scripting API",
+      "alternateIds": [
+        "x7-6-wot-scripting-api"
+      ],
+      "number": "7.6"
+    },
+    {
+      "id": "sec-security-guidelines",
+      "href": "https://w3c.github.io/wot-architecture/#sec-security-guidelines",
+      "level": 3,
+      "title": "WoT Security and Privacy Guidelines",
+      "alternateIds": [
+        "x7-7-wot-security-and-privacy-guidelines"
+      ],
+      "number": "7.7"
+    },
+    {
+      "id": "sec-servient-implementation",
+      "href": "https://w3c.github.io/wot-architecture/#sec-servient-implementation",
+      "level": 2,
+      "title": "Abstract Servient Architecture",
+      "alternateIds": [
+        "x8-abstract-servient-architecture"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "behavior-implementation",
+      "href": "https://w3c.github.io/wot-architecture/#behavior-implementation",
+      "level": 3,
+      "title": "Behavior Implementation",
+      "alternateIds": [
+        "x8-1-behavior-implementation"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "wot-runtime",
+      "href": "https://w3c.github.io/wot-architecture/#wot-runtime",
+      "level": 3,
+      "title": "WoT Runtime",
+      "alternateIds": [
+        "x8-2-wot-runtime"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "wot-scripting-api",
+      "href": "https://w3c.github.io/wot-architecture/#wot-scripting-api",
+      "level": 3,
+      "title": "WoT Scripting API",
+      "alternateIds": [
+        "x8-3-wot-scripting-api"
+      ],
+      "number": "8.3"
+    },
+    {
+      "id": "expose-consumed-thing",
+      "href": "https://w3c.github.io/wot-architecture/#expose-consumed-thing",
+      "level": 3,
+      "title": "Exposed Thing and Consumed Thing Abstractions",
+      "alternateIds": [
+        "x8-4-exposed-thing-and-consumed-thing-abstractions"
+      ],
+      "number": "8.4"
+    },
+    {
+      "id": "private-security-data",
+      "href": "https://w3c.github.io/wot-architecture/#private-security-data",
+      "level": 3,
+      "title": "Private Security Data",
+      "alternateIds": [
+        "x8-5-private-security-data"
+      ],
+      "number": "8.5"
+    },
+    {
+      "id": "protocol-stack-implementation",
+      "href": "https://w3c.github.io/wot-architecture/#protocol-stack-implementation",
+      "level": 3,
+      "title": "Protocol Stack Implementation",
+      "alternateIds": [
+        "x8-6-protocol-stack-implementation"
+      ],
+      "number": "8.6"
+    },
+    {
+      "id": "system-api",
+      "href": "https://w3c.github.io/wot-architecture/#system-api",
+      "level": 3,
+      "title": "System API",
+      "alternateIds": [
+        "x8-7-system-api"
+      ],
+      "number": "8.7"
+    },
+    {
+      "id": "alt-servient-impl",
+      "href": "https://w3c.github.io/wot-architecture/#alt-servient-impl",
+      "level": 3,
+      "title": "Alternative Servient and WoT Implementations",
+      "alternateIds": [
+        "x8-8-alternative-servient-and-wot-implementations"
+      ],
+      "number": "8.8"
+    },
+    {
+      "id": "native-impl",
+      "href": "https://w3c.github.io/wot-architecture/#native-impl",
+      "level": 4,
+      "title": "Native WoT API",
+      "alternateIds": [
+        "x8-8-1-native-wot-api"
+      ],
+      "number": "8.8.1"
+    },
+    {
+      "id": "existing-impl",
+      "href": "https://w3c.github.io/wot-architecture/#existing-impl",
+      "level": 4,
+      "title": "Thing Description for Existing Devices",
+      "alternateIds": [
+        "x8-8-2-thing-description-for-existing-devices"
+      ],
+      "number": "8.8.2"
+    },
+    {
+      "id": "sec-deployment-scenario",
+      "href": "https://w3c.github.io/wot-architecture/#sec-deployment-scenario",
+      "level": 2,
+      "title": "Example WoT Deployments",
+      "alternateIds": [
+        "x9-example-wot-deployments"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "sec-client-server-roles",
+      "href": "https://w3c.github.io/wot-architecture/#sec-client-server-roles",
+      "level": 3,
+      "title": "Thing and Consumer Roles",
+      "alternateIds": [
+        "x9-1-thing-and-consumer-roles"
+      ],
+      "number": "9.1"
+    },
+    {
+      "id": "sec-topologies-deployment-scenarios",
+      "href": "https://w3c.github.io/wot-architecture/#sec-topologies-deployment-scenarios",
+      "level": 3,
+      "title": "Topology of WoT Systems and Deployment Scenarios",
+      "alternateIds": [
+        "x9-2-topology-of-wot-systems-and-deployment-scenarios"
+      ],
+      "number": "9.2"
+    },
+    {
+      "id": "sec-deployment-app-dev",
+      "href": "https://w3c.github.io/wot-architecture/#sec-deployment-app-dev",
+      "level": 4,
+      "title": "Consumer and Thing on the Same Network",
+      "alternateIds": [
+        "x9-2-1-consumer-and-thing-on-the-same-network"
+      ],
+      "number": "9.2.1"
+    },
+    {
+      "id": "sec-deployment-intermediaries",
+      "href": "https://w3c.github.io/wot-architecture/#sec-deployment-intermediaries",
+      "level": 4,
+      "title": "Consumer and Thing Connected via Intermediaries",
+      "alternateIds": [
+        "x9-2-2-consumer-and-thing-connected-via-intermediaries"
+      ],
+      "number": "9.2.2"
+    },
+    {
+      "id": "sec-deployment-app-proxy-dev",
+      "href": "https://w3c.github.io/wot-architecture/#sec-deployment-app-proxy-dev",
+      "level": 5,
+      "title": "Intermediary Acting as a Proxy",
+      "alternateIds": [
+        "x9-2-2-1-intermediary-acting-as-a-proxy"
+      ],
+      "number": "9.2.2.1"
+    },
+    {
+      "id": "sec-deployment-digital-twin",
+      "href": "https://w3c.github.io/wot-architecture/#sec-deployment-digital-twin",
+      "level": 5,
+      "title": "Intermediary Acting as a Digital Twin",
+      "alternateIds": [
+        "x9-2-2-2-intermediary-acting-as-a-digital-twin"
+      ],
+      "number": "9.2.2.2"
+    },
+    {
+      "id": "sec-deployment-cloud",
+      "href": "https://w3c.github.io/wot-architecture/#sec-deployment-cloud",
+      "level": 4,
+      "title": "Devices in a Local Network Controlled from a Cloud Service",
+      "alternateIds": [
+        "x9-2-3-devices-in-a-local-network-controlled-from-a-cloud-service"
+      ],
+      "number": "9.2.3"
+    },
+    {
+      "id": "sec-deployment-discovery-with-directory",
+      "href": "https://w3c.github.io/wot-architecture/#sec-deployment-discovery-with-directory",
+      "level": 4,
+      "title": "Discovery Using a Thing Description Directory",
+      "alternateIds": [
+        "x9-2-4-discovery-using-a-thing-description-directory"
+      ],
+      "number": "9.2.4"
+    },
+    {
+      "id": "sec-deployment-service-to-service",
+      "href": "https://w3c.github.io/wot-architecture/#sec-deployment-service-to-service",
+      "level": 4,
+      "title": "Service-to-Service Connections Across Multiple Domains",
+      "alternateIds": [
+        "x9-2-5-service-to-service-connections-across-multiple-domains"
+      ],
+      "number": "9.2.5"
+    },
+    {
+      "id": "sec-deployment-service-to-service-synchronized",
+      "href": "https://w3c.github.io/wot-architecture/#sec-deployment-service-to-service-synchronized",
+      "level": 5,
+      "title": "Connection Through Thing Description Directory Synchronization",
+      "alternateIds": [
+        "x9-2-5-1-connection-through-thing-description-directory-synchronization"
+      ],
+      "number": "9.2.5.1"
+    },
+    {
+      "id": "sec-deployment-service-sync-proxy",
+      "href": "https://w3c.github.io/wot-architecture/#sec-deployment-service-sync-proxy",
+      "level": 5,
+      "title": "Connection Through Proxy Synchronization",
+      "alternateIds": [
+        "x9-2-5-2-connection-through-proxy-synchronization"
+      ],
+      "number": "9.2.5.2"
+    },
+    {
+      "id": "sec-security-considerations",
+      "href": "https://w3c.github.io/wot-architecture/#sec-security-considerations",
+      "level": 2,
+      "title": "10. Security Considerations",
+      "alternateIds": [
+        "x10-security-considerations"
+      ]
+    },
+    {
+      "id": "sec-security-consideration-td-risks",
+      "href": "https://w3c.github.io/wot-architecture/#sec-security-consideration-td-risks",
+      "level": 3,
+      "title": "WoT Thing Description Risks",
+      "alternateIds": [
+        "x10-1-wot-thing-description-risks"
+      ],
+      "number": "10.1"
+    },
+    {
+      "id": "sec-security-consideration-td-private",
+      "href": "https://w3c.github.io/wot-architecture/#sec-security-consideration-td-private",
+      "level": 4,
+      "title": "Thing Description Private Security Data Risk",
+      "alternateIds": [
+        "x10-1-1-thing-description-private-security-data-risk"
+      ],
+      "number": "10.1.1"
+    },
+    {
+      "id": "sec-security-consideration-td-cm",
+      "href": "https://w3c.github.io/wot-architecture/#sec-security-consideration-td-cm",
+      "level": 4,
+      "title": "Thing Description Communication Metadata Risk",
+      "alternateIds": [
+        "x10-1-2-thing-description-communication-metadata-risk"
+      ],
+      "number": "10.1.2"
+    },
+    {
+      "id": "sec-security-consideration-scripting-risks",
+      "href": "https://w3c.github.io/wot-architecture/#sec-security-consideration-scripting-risks",
+      "level": 3,
+      "title": "WoT Scripting API Risks",
+      "alternateIds": [
+        "x10-2-wot-scripting-api-risks"
+      ],
+      "number": "10.2"
+    },
+    {
+      "id": "sec-security-consideration-cross-script",
+      "href": "https://w3c.github.io/wot-architecture/#sec-security-consideration-cross-script",
+      "level": 4,
+      "title": "Cross-Script Security Risk",
+      "alternateIds": [
+        "x10-2-1-cross-script-security-risk"
+      ],
+      "number": "10.2.1"
+    },
+    {
+      "id": "sec-security-consideration-device-direct-access",
+      "href": "https://w3c.github.io/wot-architecture/#sec-security-consideration-device-direct-access",
+      "level": 4,
+      "title": "Physical Device Direct Access Risk",
+      "alternateIds": [
+        "x10-2-2-physical-device-direct-access-risk"
+      ],
+      "number": "10.2.2"
+    },
+    {
+      "id": "sec-security-consideration-runtime-risks",
+      "href": "https://w3c.github.io/wot-architecture/#sec-security-consideration-runtime-risks",
+      "level": 3,
+      "title": "WoT Runtime Risks",
+      "alternateIds": [
+        "x10-3-wot-runtime-risks"
+      ],
+      "number": "10.3"
+    },
+    {
+      "id": "sec-security-consideration-update-provisioning",
+      "href": "https://w3c.github.io/wot-architecture/#sec-security-consideration-update-provisioning",
+      "level": 4,
+      "title": "Provisioning and Update Security Risk",
+      "alternateIds": [
+        "x10-3-1-provisioning-and-update-security-risk"
+      ],
+      "number": "10.3.1"
+    },
+    {
+      "id": "sec-security-consideration-credentials-storage",
+      "href": "https://w3c.github.io/wot-architecture/#sec-security-consideration-credentials-storage",
+      "level": 4,
+      "title": "Security Credentials Storage Risk",
+      "alternateIds": [
+        "x10-3-2-security-credentials-storage-risk"
+      ],
+      "number": "10.3.2"
+    },
+    {
+      "id": "sec-security-consideration-trusted-environment-risks",
+      "href": "https://w3c.github.io/wot-architecture/#sec-security-consideration-trusted-environment-risks",
+      "level": 3,
+      "title": "Trusted Environment Risks",
+      "alternateIds": [
+        "x10-4-trusted-environment-risks"
+      ],
+      "number": "10.4"
+    },
+    {
+      "id": "sec-security-consideration-secure-transport",
+      "href": "https://w3c.github.io/wot-architecture/#sec-security-consideration-secure-transport",
+      "level": 3,
+      "title": "Secure Transport",
+      "alternateIds": [
+        "x10-5-secure-transport"
+      ],
+      "number": "10.5"
+    },
+    {
+      "id": "sec-privacy-considerations",
+      "href": "https://w3c.github.io/wot-architecture/#sec-privacy-considerations",
+      "level": 2,
+      "title": "11. Privacy Considerations",
+      "alternateIds": [
+        "x11-privacy-considerations"
+      ]
+    },
+    {
+      "id": "sec-privacy-consideration-td-risks",
+      "href": "https://w3c.github.io/wot-architecture/#sec-privacy-consideration-td-risks",
+      "level": 3,
+      "title": "WoT Thing Description Risks",
+      "alternateIds": [
+        "x11-1-wot-thing-description-risks"
+      ],
+      "number": "11.1"
+    },
+    {
+      "id": "sec-privacy-consideration-td-pii",
+      "href": "https://w3c.github.io/wot-architecture/#sec-privacy-consideration-td-pii",
+      "level": 4,
+      "title": "Thing Description Personally Identifiable Information Risk",
+      "alternateIds": [
+        "x11-1-1-thing-description-personally-identifiable-information-risk"
+      ],
+      "number": "11.1.1"
+    },
+    {
+      "id": "arch-privacy-consideration-access-controls",
+      "href": "https://w3c.github.io/wot-architecture/#arch-privacy-consideration-access-controls",
+      "level": 3,
+      "title": "Access to Personally Identifiable Information",
+      "alternateIds": [
+        "x11-2-access-to-personally-identifiable-information"
+      ],
+      "number": "11.2"
+    },
+    {
+      "id": "sec-accessibility-considerations",
+      "href": "https://w3c.github.io/wot-architecture/#sec-accessibility-considerations",
+      "level": 2,
+      "title": "12. Accessibility Considerations",
+      "alternateIds": [
+        "x12-accessibility-considerations"
+      ]
+    },
+    {
+      "id": "sec-accessibility-considerations-greenfield",
+      "href": "https://w3c.github.io/wot-architecture/#sec-accessibility-considerations-greenfield",
+      "level": 3,
+      "title": "Greenfield WoT Systems",
+      "alternateIds": [
+        "x12-1-greenfield-wot-systems"
+      ],
+      "number": "12.1"
+    },
+    {
+      "id": "sec-accessibility-considerations-brownfield",
+      "href": "https://w3c.github.io/wot-architecture/#sec-accessibility-considerations-brownfield",
+      "level": 3,
+      "title": "Brownfield WoT Systems",
+      "alternateIds": [
+        "x12-2-brownfield-wot-systems"
+      ],
+      "number": "12.2"
+    },
+    {
+      "id": "changes",
+      "href": "https://w3c.github.io/wot-architecture/#changes",
+      "level": 2,
+      "title": "Recent Specification Changes",
+      "alternateIds": [
+        "a-recent-specification-changes"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "changes-from-11-july-2023-proposed-recommendation",
+      "href": "https://w3c.github.io/wot-architecture/#changes-from-11-july-2023-proposed-recommendation",
+      "level": 3,
+      "title": "Changes from 11 July 2023 Proposed Recommendation",
+      "alternateIds": [
+        "changes-from-pr"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "changes-from-19-january-2023-candidate-recommendation",
+      "href": "https://w3c.github.io/wot-architecture/#changes-from-19-january-2023-candidate-recommendation",
+      "level": 3,
+      "title": "Changes from 19 January 2023 Candidate Recommendation",
+      "alternateIds": [
+        "changes-from-cr"
+      ],
+      "number": "A.2"
+    },
+    {
+      "id": "changes-from-the-wd-published-september-7-2022",
+      "href": "https://w3c.github.io/wot-architecture/#changes-from-the-wd-published-september-7-2022",
+      "level": 3,
+      "title": "Changes from the WD published September 7, 2022",
+      "alternateIds": [
+        "changes-from-wd-2022-09-07"
+      ],
+      "number": "A.3"
+    },
+    {
+      "id": "changes-in-wd-published-september-7-2022-from-the-fpwd-version",
+      "href": "https://w3c.github.io/wot-architecture/#changes-in-wd-published-september-7-2022-from-the-fpwd-version",
+      "level": 3,
+      "title": "Changes in WD published September 7, 2022 from the FPWD version",
+      "alternateIds": [
+        "changes-from-fpwd-1.1"
+      ],
+      "number": "A.4"
+    },
+    {
+      "id": "changes-in-the-fpwd-from-the-1-0-version-of-wot-architecture",
+      "href": "https://w3c.github.io/wot-architecture/#changes-in-the-fpwd-from-the-1-0-version-of-wot-architecture",
+      "level": 3,
+      "title": "Changes in the FPWD from the 1.0 version of [wot-architecture]",
+      "alternateIds": [
+        "changes-in-fpwd-1.1-from-recommendation-1.0"
+      ],
+      "number": "A.5"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/wot-architecture/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgments",
+      "alternateIds": [
+        "b-acknowledgments"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/wot-architecture/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "c-references"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/wot-architecture/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "c-1-normative-references"
+      ],
+      "number": "C.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/wot-architecture/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "c-2-informative-references"
+      ],
+      "number": "C.2"
+    }
+  ]
+}
