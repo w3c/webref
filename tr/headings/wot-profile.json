@@ -1,0 +1,868 @@
+{
+  "spec": {
+    "title": "Web of Things (WoT) Profile",
+    "url": "https://www.w3.org/TR/wot-profile/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/wot-profile/#title",
+      "level": 1,
+      "title": "Web of Things (WoT) Profile"
+    },
+    {
+      "id": "motivation-for-a-profile",
+      "href": "https://www.w3.org/TR/wot-profile/#motivation-for-a-profile",
+      "level": 3,
+      "title": "Motivation for a Profile",
+      "alternateIds": [
+        "motivation-for-a-profile-0"
+      ]
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/wot-profile/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://www.w3.org/TR/wot-profile/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "deployment-scenarios",
+      "href": "https://www.w3.org/TR/wot-profile/#deployment-scenarios",
+      "level": 3,
+      "title": "Deployment Scenarios",
+      "alternateIds": [
+        "x1-1-deployment-scenarios"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "profile-use-cases",
+      "href": "https://www.w3.org/TR/wot-profile/#profile-use-cases",
+      "level": 3,
+      "title": "Summary of Use Cases and Requirements",
+      "alternateIds": [
+        "x1-2-summary-of-use-cases-and-requirements"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "profile-use-case-MVSE",
+      "href": "https://www.w3.org/TR/wot-profile/#profile-use-case-MVSE",
+      "level": 4,
+      "title": "Multi-Vendor System Integration - Out of the box interoperability",
+      "alternateIds": [
+        "x1-2-1-multi-vendor-system-integration-out-of-the-box-interoperability"
+      ],
+      "number": "1.2.1"
+    },
+    {
+      "id": "why-profile",
+      "href": "https://www.w3.org/TR/wot-profile/#why-profile",
+      "level": 3,
+      "title": "Why a Profile?",
+      "alternateIds": [
+        "why-define-a-profile"
+      ],
+      "number": "1.3"
+    },
+    {
+      "id": "out-of-the-box-interoperability-0",
+      "href": "https://www.w3.org/TR/wot-profile/#out-of-the-box-interoperability-0",
+      "level": 3,
+      "title": "Out-of-the-box interoperability",
+      "alternateIds": [
+        "out-of-the-box-interoperability"
+      ],
+      "number": "1.4"
+    },
+    {
+      "id": "technical-interoperability",
+      "href": "https://www.w3.org/TR/wot-profile/#technical-interoperability",
+      "level": 4,
+      "title": "Technical Interoperability",
+      "alternateIds": [
+        "out-of-the-box-interoperability-technical-interop"
+      ],
+      "number": "1.4.1"
+    },
+    {
+      "id": "syntactic-interoperability",
+      "href": "https://www.w3.org/TR/wot-profile/#syntactic-interoperability",
+      "level": 4,
+      "title": "Syntactic Interoperability",
+      "alternateIds": [
+        "out-of-the-box-interoperability-syntactic-interop"
+      ],
+      "number": "1.4.2"
+    },
+    {
+      "id": "semantic-interoperability",
+      "href": "https://www.w3.org/TR/wot-profile/#semantic-interoperability",
+      "level": 4,
+      "title": "Semantic Interoperability",
+      "alternateIds": [
+        "out-of-the-box-interoperability-semantic-interop"
+      ],
+      "number": "1.4.3"
+    },
+    {
+      "id": "organisational-interoperability",
+      "href": "https://www.w3.org/TR/wot-profile/#organisational-interoperability",
+      "level": 4,
+      "title": "Organisational Interoperability",
+      "alternateIds": [
+        "out-of-the-box-interoperability-organisational-interop"
+      ],
+      "number": "1.4.4"
+    },
+    {
+      "id": "structure-of-this-document",
+      "href": "https://www.w3.org/TR/wot-profile/#structure-of-this-document",
+      "level": 3,
+      "title": "Structure of this document",
+      "alternateIds": [
+        "x1-5-structure-of-this-document"
+      ],
+      "number": "1.5"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/wot-profile/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "x2-conformance"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/wot-profile/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "alternateIds": [
+        "x3-terminology"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "additional-definitions",
+      "href": "https://www.w3.org/TR/wot-profile/#additional-definitions",
+      "level": 3,
+      "title": "Additional Definitions",
+      "alternateIds": [
+        "additional-definitions-"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "requirements",
+      "href": "https://www.w3.org/TR/wot-profile/#requirements",
+      "level": 2,
+      "title": "Profile Requirements",
+      "alternateIds": [
+        "x4-profile-requirements"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "interoperability",
+      "href": "https://www.w3.org/TR/wot-profile/#interoperability",
+      "level": 3,
+      "title": "Interoperability",
+      "alternateIds": [
+        "x4-1-interoperability"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "limit-and-reduce-complexity",
+      "href": "https://www.w3.org/TR/wot-profile/#limit-and-reduce-complexity",
+      "level": 3,
+      "title": "Limit and reduce complexity",
+      "alternateIds": [
+        "x4-2-limit-and-reduce-complexity"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "no-ambiguities-select-single-choice",
+      "href": "https://www.w3.org/TR/wot-profile/#no-ambiguities-select-single-choice",
+      "level": 3,
+      "title": "No Ambiguities, select single choice",
+      "alternateIds": [
+        "x4-3-no-ambiguities-select-single-choice"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "developer-guidance",
+      "href": "https://www.w3.org/TR/wot-profile/#developer-guidance",
+      "level": 3,
+      "title": "Developer guidance",
+      "alternateIds": [
+        "x4-4-developer-guidance"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "multiple-profiles-mechanism",
+      "href": "https://www.w3.org/TR/wot-profile/#multiple-profiles-mechanism",
+      "level": 3,
+      "title": "Multiple profiles (mechanism)",
+      "alternateIds": [
+        "x4-5-multiple-profiles-mechanism"
+      ],
+      "number": "4.5"
+    },
+    {
+      "id": "composable-profiles",
+      "href": "https://www.w3.org/TR/wot-profile/#composable-profiles",
+      "level": 3,
+      "title": "Composable profiles",
+      "alternateIds": [
+        "x4-6-composable-profiles"
+      ],
+      "number": "4.6"
+    },
+    {
+      "id": "validatible-tds",
+      "href": "https://www.w3.org/TR/wot-profile/#validatible-tds",
+      "level": 3,
+      "title": "Validatible TDs",
+      "alternateIds": [
+        "x4-7-validatible-tds"
+      ],
+      "number": "4.7"
+    },
+    {
+      "id": "identification-of-profiles",
+      "href": "https://www.w3.org/TR/wot-profile/#identification-of-profiles",
+      "level": 3,
+      "title": "Identification of profiles",
+      "alternateIds": [
+        "x4-8-identification-of-profiles"
+      ],
+      "number": "4.8"
+    },
+    {
+      "id": "finite-set-of-features-and-capabilities",
+      "href": "https://www.w3.org/TR/wot-profile/#finite-set-of-features-and-capabilities",
+      "level": 3,
+      "title": "Finite set of features and capabilities",
+      "alternateIds": [
+        "x4-9-finite-set-of-features-and-capabilities"
+      ],
+      "number": "4.9"
+    },
+    {
+      "id": "profiling-mechanism",
+      "href": "https://www.w3.org/TR/wot-profile/#profiling-mechanism",
+      "level": 2,
+      "title": "Profiling Mechanism",
+      "alternateIds": [
+        "x5-profiling-mechanism"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "common-constraints",
+      "href": "https://www.w3.org/TR/wot-profile/#common-constraints",
+      "level": 2,
+      "title": "Common Constraints",
+      "alternateIds": [
+        "x6-common-constraints"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "common-constraints-accessibilityy",
+      "href": "https://www.w3.org/TR/wot-profile/#common-constraints-accessibilityy",
+      "level": 3,
+      "title": "Accessibility",
+      "alternateIds": [
+        "accessibility"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "sdec-common-constraints-units",
+      "href": "https://www.w3.org/TR/wot-profile/#sdec-common-constraints-units",
+      "level": 3,
+      "title": "Units",
+      "alternateIds": [
+        "units"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "common-constraints-date-format",
+      "href": "https://www.w3.org/TR/wot-profile/#common-constraints-date-format",
+      "level": 3,
+      "title": "Date Format",
+      "alternateIds": [
+        "date-format"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "common-constraints-security",
+      "href": "https://www.w3.org/TR/wot-profile/#common-constraints-security",
+      "level": 3,
+      "title": "Security",
+      "alternateIds": [
+        "x6-4-security"
+      ],
+      "number": "6.4"
+    },
+    {
+      "id": "common-constraints-discovery",
+      "href": "https://www.w3.org/TR/wot-profile/#common-constraints-discovery",
+      "level": 3,
+      "title": "Discovery",
+      "alternateIds": [
+        "x6-5-discovery"
+      ],
+      "number": "6.5"
+    },
+    {
+      "id": "common-constraints-links",
+      "href": "https://www.w3.org/TR/wot-profile/#common-constraints-links",
+      "level": 3,
+      "title": "Links",
+      "alternateIds": [
+        "x6-6-links"
+      ],
+      "number": "6.6"
+    },
+    {
+      "id": "sec-link-relation-types",
+      "href": "https://www.w3.org/TR/wot-profile/#sec-link-relation-types",
+      "level": 4,
+      "title": "Link Relation Types",
+      "alternateIds": [
+        "x6-6-1-link-relation-types"
+      ],
+      "number": "6.6.1"
+    },
+    {
+      "id": "sec-link-media-types",
+      "href": "https://www.w3.org/TR/wot-profile/#sec-link-media-types",
+      "level": 4,
+      "title": "Media Types for Link Targets",
+      "alternateIds": [
+        "x6-6-2-media-types-for-link-targets"
+      ],
+      "number": "6.6.2"
+    },
+    {
+      "id": "common-constraints-errors",
+      "href": "https://www.w3.org/TR/wot-profile/#common-constraints-errors",
+      "level": 2,
+      "title": "Errors",
+      "alternateIds": [
+        "error-responses"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "sec-default-language",
+      "href": "https://www.w3.org/TR/wot-profile/#sec-default-language",
+      "level": 2,
+      "title": "Default Language",
+      "alternateIds": [
+        "x8-default-language"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "http-basic-profile",
+      "href": "https://www.w3.org/TR/wot-profile/#http-basic-profile",
+      "level": 2,
+      "title": "HTTP Basic Profile",
+      "alternateIds": [
+        "x9-http-basic-profile"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "http-basic-profile-identifier",
+      "href": "https://www.w3.org/TR/wot-profile/#http-basic-profile-identifier",
+      "level": 3,
+      "title": "Identifier",
+      "alternateIds": [
+        "x9-1-identifier"
+      ],
+      "number": "9.1"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding",
+      "href": "https://www.w3.org/TR/wot-profile/#http-basic-profile-protocol-binding",
+      "level": 3,
+      "title": "Protocol Binding",
+      "alternateIds": [
+        "x9-2-protocol-binding"
+      ],
+      "number": "9.2"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-properties",
+      "href": "https://www.w3.org/TR/wot-profile/#http-basic-profile-protocol-binding-properties",
+      "level": 4,
+      "title": "Properties",
+      "alternateIds": [
+        "x9-2-1-properties"
+      ],
+      "number": "9.2.1"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-readproperty",
+      "href": "https://www.w3.org/TR/wot-profile/#http-basic-profile-protocol-binding-readproperty",
+      "level": 5,
+      "title": "readproperty",
+      "alternateIds": [
+        "x9-2-1-1-readproperty"
+      ],
+      "number": "9.2.1.1"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-writeproperty",
+      "href": "https://www.w3.org/TR/wot-profile/#http-basic-profile-protocol-binding-writeproperty",
+      "level": 5,
+      "title": "writeproperty",
+      "alternateIds": [
+        "x9-2-1-2-writeproperty"
+      ],
+      "number": "9.2.1.2"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-readallproperties",
+      "href": "https://www.w3.org/TR/wot-profile/#http-basic-profile-protocol-binding-readallproperties",
+      "level": 5,
+      "title": "readallproperties",
+      "alternateIds": [
+        "x9-2-1-3-readallproperties"
+      ],
+      "number": "9.2.1.3"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-writemultipleproperties",
+      "href": "https://www.w3.org/TR/wot-profile/#http-basic-profile-protocol-binding-writemultipleproperties",
+      "level": 5,
+      "title": "writemultipleproperties",
+      "alternateIds": [
+        "x9-2-1-4-writemultipleproperties"
+      ],
+      "number": "9.2.1.4"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-actions",
+      "href": "https://www.w3.org/TR/wot-profile/#http-basic-profile-protocol-binding-actions",
+      "level": 4,
+      "title": "Actions",
+      "alternateIds": [
+        "x9-2-2-actions"
+      ],
+      "number": "9.2.2"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-invokeaction",
+      "href": "https://www.w3.org/TR/wot-profile/#http-basic-profile-protocol-binding-invokeaction",
+      "level": 5,
+      "title": "invokeaction",
+      "alternateIds": [
+        "x9-2-2-1-invokeaction"
+      ],
+      "number": "9.2.2.1"
+    },
+    {
+      "id": "actionstatus-object",
+      "href": "https://www.w3.org/TR/wot-profile/#actionstatus-object",
+      "level": 6,
+      "title": "ActionStatus object",
+      "alternateIds": [
+        "ActionStatus"
+      ],
+      "number": "9.2.2.1.1"
+    },
+    {
+      "id": "synchronous-action-response",
+      "href": "https://www.w3.org/TR/wot-profile/#synchronous-action-response",
+      "level": 6,
+      "title": "Synchronous Action Response",
+      "alternateIds": [
+        "sync-action-response"
+      ],
+      "number": "9.2.2.1.2"
+    },
+    {
+      "id": "asynchronous-action-response",
+      "href": "https://www.w3.org/TR/wot-profile/#asynchronous-action-response",
+      "level": 6,
+      "title": "Asynchronous Action Response",
+      "alternateIds": [
+        "async-action-response"
+      ],
+      "number": "9.2.2.1.3"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-queryaction",
+      "href": "https://www.w3.org/TR/wot-profile/#http-basic-profile-protocol-binding-queryaction",
+      "level": 5,
+      "title": "queryaction",
+      "alternateIds": [
+        "x9-2-2-2-queryaction"
+      ],
+      "number": "9.2.2.2"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-cancelaction",
+      "href": "https://www.w3.org/TR/wot-profile/#http-basic-profile-protocol-binding-cancelaction",
+      "level": 5,
+      "title": "cancelaction",
+      "alternateIds": [
+        "x9-2-2-3-cancelaction"
+      ],
+      "number": "9.2.2.3"
+    },
+    {
+      "id": "queryallactions",
+      "href": "https://www.w3.org/TR/wot-profile/#queryallactions",
+      "level": 5,
+      "title": "queryallactions",
+      "alternateIds": [
+        "x9-2-2-4-queryallactions"
+      ],
+      "number": "9.2.2.4"
+    },
+    {
+      "id": "sec-http-sse-profile",
+      "href": "https://www.w3.org/TR/wot-profile/#sec-http-sse-profile",
+      "level": 2,
+      "title": "10. HTTP SSE Profile",
+      "alternateIds": [
+        "x10-http-sse-profile"
+      ]
+    },
+    {
+      "id": "http-sse-profile-identifier",
+      "href": "https://www.w3.org/TR/wot-profile/#http-sse-profile-identifier",
+      "level": 3,
+      "title": "Identifier",
+      "alternateIds": [
+        "x10-1-identifier"
+      ],
+      "number": "10.1"
+    },
+    {
+      "id": "http-sse-profile-protocol-binding",
+      "href": "https://www.w3.org/TR/wot-profile/#http-sse-profile-protocol-binding",
+      "level": 3,
+      "title": "Protocol Binding",
+      "alternateIds": [
+        "x10-2-protocol-binding"
+      ],
+      "number": "10.2"
+    },
+    {
+      "id": "http-sse-profile-protocol-binding-properties",
+      "href": "https://www.w3.org/TR/wot-profile/#http-sse-profile-protocol-binding-properties",
+      "level": 4,
+      "title": "Properties",
+      "alternateIds": [
+        "x10-2-1-properties"
+      ],
+      "number": "10.2.1"
+    },
+    {
+      "id": "observeproperty",
+      "href": "https://www.w3.org/TR/wot-profile/#observeproperty",
+      "level": 5,
+      "title": "observeproperty",
+      "alternateIds": [
+        "x10-2-1-1-observeproperty"
+      ],
+      "number": "10.2.1.1"
+    },
+    {
+      "id": "unobserveproperty",
+      "href": "https://www.w3.org/TR/wot-profile/#unobserveproperty",
+      "level": 5,
+      "title": "unobserveproperty",
+      "alternateIds": [
+        "x10-2-1-2-unobserveproperty"
+      ],
+      "number": "10.2.1.2"
+    },
+    {
+      "id": "observeallproperties",
+      "href": "https://www.w3.org/TR/wot-profile/#observeallproperties",
+      "level": 5,
+      "title": "observeallproperties",
+      "alternateIds": [
+        "x10-2-1-3-observeallproperties"
+      ],
+      "number": "10.2.1.3"
+    },
+    {
+      "id": "unobserveallproperties",
+      "href": "https://www.w3.org/TR/wot-profile/#unobserveallproperties",
+      "level": 5,
+      "title": "unobserveallproperties",
+      "alternateIds": [
+        "x10-2-1-4-unobserveallproperties"
+      ],
+      "number": "10.2.1.4"
+    },
+    {
+      "id": "http-sse-profile-protocol-binding-events",
+      "href": "https://www.w3.org/TR/wot-profile/#http-sse-profile-protocol-binding-events",
+      "level": 4,
+      "title": "Events",
+      "alternateIds": [
+        "x10-2-2-events"
+      ],
+      "number": "10.2.2"
+    },
+    {
+      "id": "http-sse-profile-protocol-binding-subscribeevent",
+      "href": "https://www.w3.org/TR/wot-profile/#http-sse-profile-protocol-binding-subscribeevent",
+      "level": 5,
+      "title": "subscribeevent",
+      "alternateIds": [
+        "x10-2-2-1-subscribeevent"
+      ],
+      "number": "10.2.2.1"
+    },
+    {
+      "id": "http-sse-profile-protocol-binding-events-unsubscribeevent",
+      "href": "https://www.w3.org/TR/wot-profile/#http-sse-profile-protocol-binding-events-unsubscribeevent",
+      "level": 5,
+      "title": "unsubscribeevent",
+      "alternateIds": [
+        "x10-2-2-2-unsubscribeevent"
+      ],
+      "number": "10.2.2.2"
+    },
+    {
+      "id": "http-sse-profile-protocol-binding-events-subscribeallevents",
+      "href": "https://www.w3.org/TR/wot-profile/#http-sse-profile-protocol-binding-events-subscribeallevents",
+      "level": 5,
+      "title": "subscribeallevents",
+      "alternateIds": [
+        "x10-2-2-3-subscribeallevents"
+      ],
+      "number": "10.2.2.3"
+    },
+    {
+      "id": "http-sse-profile-protocol-binding-events-unsubscribeallevents",
+      "href": "https://www.w3.org/TR/wot-profile/#http-sse-profile-protocol-binding-events-unsubscribeallevents",
+      "level": 5,
+      "title": "unsubscribeallevents",
+      "alternateIds": [
+        "x10-2-2-4-unsubscribeallevents"
+      ],
+      "number": "10.2.2.4"
+    },
+    {
+      "id": "sec-http-webhook-profile",
+      "href": "https://www.w3.org/TR/wot-profile/#sec-http-webhook-profile",
+      "level": 2,
+      "title": "11. HTTP Webhook Profile",
+      "alternateIds": [
+        "x11-http-webhook-profile"
+      ]
+    },
+    {
+      "id": "sec-http-webhook-profile-intro",
+      "href": "https://www.w3.org/TR/wot-profile/#sec-http-webhook-profile-intro",
+      "level": 3,
+      "title": "Introduction",
+      "alternateIds": [
+        "x11-1-introduction"
+      ],
+      "number": "11.1"
+    },
+    {
+      "id": "webhook-example",
+      "href": "https://www.w3.org/TR/wot-profile/#webhook-example",
+      "level": 4,
+      "title": "Webhook Example",
+      "alternateIds": [
+        "x11-1-1-webhook-example"
+      ],
+      "number": "11.1.1"
+    },
+    {
+      "id": "http-webhook-profile-identifier",
+      "href": "https://www.w3.org/TR/wot-profile/#http-webhook-profile-identifier",
+      "level": 3,
+      "title": "Identifier",
+      "alternateIds": [
+        "x11-2-identifier"
+      ],
+      "number": "11.2"
+    },
+    {
+      "id": "sec-http-webhook-profile-message-format",
+      "href": "https://www.w3.org/TR/wot-profile/#sec-http-webhook-profile-message-format",
+      "level": 3,
+      "title": "Message Format",
+      "alternateIds": [
+        "x11-3-message-format"
+      ],
+      "number": "11.3"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding",
+      "href": "https://www.w3.org/TR/wot-profile/#http-webhook-profile-protocol-binding",
+      "level": 3,
+      "title": "Protocol Binding",
+      "alternateIds": [
+        "x11-4-protocol-binding"
+      ],
+      "number": "11.4"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-events",
+      "href": "https://www.w3.org/TR/wot-profile/#http-webhook-profile-protocol-binding-events",
+      "level": 4,
+      "title": "Operations",
+      "alternateIds": [
+        "x11-4-1-operations"
+      ],
+      "number": "11.4.1"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-subscribeevent",
+      "href": "https://www.w3.org/TR/wot-profile/#http-webhook-profile-protocol-binding-subscribeevent",
+      "level": 5,
+      "title": "subscribeevent",
+      "alternateIds": [
+        "x11-4-1-1-subscribeevent"
+      ],
+      "number": "11.4.1.1"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-events-unsubscribeevent",
+      "href": "https://www.w3.org/TR/wot-profile/#http-webhook-profile-protocol-binding-events-unsubscribeevent",
+      "level": 5,
+      "title": "unsubscribeevent",
+      "alternateIds": [
+        "x11-4-1-2-unsubscribeevent"
+      ],
+      "number": "11.4.1.2"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-events-subscribeallevents",
+      "href": "https://www.w3.org/TR/wot-profile/#http-webhook-profile-protocol-binding-events-subscribeallevents",
+      "level": 5,
+      "title": "subscribeallevents",
+      "alternateIds": [
+        "x11-4-1-3-subscribeallevents"
+      ],
+      "number": "11.4.1.3"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-events-unsubscribeallevents",
+      "href": "https://www.w3.org/TR/wot-profile/#http-webhook-profile-protocol-binding-events-unsubscribeallevents",
+      "level": 5,
+      "title": "unsubscribeallevents",
+      "alternateIds": [
+        "x11-4-1-4-unsubscribeallevents"
+      ],
+      "number": "11.4.1.4"
+    },
+    {
+      "id": "sec-http-webhook-profile-protocol-binding-event-listeners",
+      "href": "https://www.w3.org/TR/wot-profile/#sec-http-webhook-profile-protocol-binding-event-listeners",
+      "level": 4,
+      "title": "Event Connections",
+      "alternateIds": [
+        "x11-4-2-event-connections"
+      ],
+      "number": "11.4.2"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/wot-profile/#privacy-considerations",
+      "level": 2,
+      "title": "12. Privacy Considerations",
+      "alternateIds": [
+        "x12-privacy-considerations"
+      ]
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/wot-profile/#security-considerations",
+      "level": 2,
+      "title": "13. Security Considerations",
+      "alternateIds": [
+        "x13-security-considerations"
+      ]
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/wot-profile/#changes",
+      "level": 2,
+      "title": "Recent Specification Changes",
+      "alternateIds": [
+        "a-recent-specification-changes"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "changes-from-the-fpwd-published-24-november-2020",
+      "href": "https://www.w3.org/TR/wot-profile/#changes-from-the-fpwd-published-24-november-2020",
+      "level": 3,
+      "title": "Changes from the FPWD published 24 November 2020",
+      "alternateIds": [
+        "changes-from-fpwd"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/wot-profile/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "b-references"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/wot-profile/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "b-1-normative-references"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/wot-profile/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "b-2-informative-references"
+      ],
+      "number": "B.2"
+    }
+  ]
+}

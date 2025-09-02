@@ -1,0 +1,1631 @@
+{
+  "spec": {
+    "title": "Web of Things (WoT) Architecture 1.1",
+    "url": "https://www.w3.org/TR/wot-architecture11/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-action",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-action",
+      "linkingText": [
+        "Action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-anonymous-thing-description",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-anonymous-thing-description",
+      "linkingText": [
+        "WoT Anonymous Thing Description",
+        "Anonymous TD"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-connected-device",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-connected-device",
+      "linkingText": [
+        "Connected Device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-binding-templates",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-binding-templates",
+      "linkingText": [
+        "WoT Binding Templates",
+        "Binding Templates"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-consumed-thing",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-consumed-thing",
+      "linkingText": [
+        "Consumed Thing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-content-type",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-content-type",
+      "linkingText": [
+        "Content Type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-consuming-a-thing",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-consuming-a-thing",
+      "linkingText": [
+        "Consuming a Thing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-consumer",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-consumer",
+      "linkingText": [
+        "Consumer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-data-schema",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-data-schema",
+      "linkingText": [
+        "Data Schema"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-device",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-device",
+      "linkingText": [
+        "Device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-digital-twin",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-digital-twin",
+      "linkingText": [
+        "Digital Twin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-directory",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-directory",
+      "linkingText": [
+        "Directory"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-discovery",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-discovery",
+      "linkingText": [
+        "WoT Discovery",
+        "Discovery"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-discoverer",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-discoverer",
+      "linkingText": [
+        "WoT Discoverer",
+        "Discoverer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-domain-specific-vocabulary",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-domain-specific-vocabulary",
+      "linkingText": [
+        "Domain-specific Vocabulary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-edge-device",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-edge-device",
+      "linkingText": [
+        "Edge Device"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-enriched-thing-description",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-enriched-thing-description",
+      "linkingText": [
+        "WoT Enriched Thing Description",
+        "Enriched TD"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-event",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-event",
+      "linkingText": [
+        "Event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-exploration",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-exploration",
+      "linkingText": [
+        "WoT Exploration",
+        "Exploration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-exposed-thing",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-exposed-thing",
+      "linkingText": [
+        "Exposed Thing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-exposing-a-thing",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-exposing-a-thing",
+      "linkingText": [
+        "Exposing a Thing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-hypermedia-control",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-hypermedia-control",
+      "linkingText": [
+        "Hypermedia Control"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-interaction-affordance",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-interaction-affordance",
+      "linkingText": [
+        "Interaction Affordance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-interaction-model",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-interaction-model",
+      "linkingText": [
+        "Interaction Model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-intermediary",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-intermediary",
+      "linkingText": [
+        "Intermediary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-introduction",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-introduction",
+      "linkingText": [
+        "WoT Introduction",
+        "Introduction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-iot-platform",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-iot-platform",
+      "linkingText": [
+        "IoT Platform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-metadata",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-metadata",
+      "linkingText": [
+        "Metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-personally-identifiable-information",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-personally-identifiable-information",
+      "linkingText": [
+        "Personally Identifiable Information",
+        "Personally Identifiable Information (PII)"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-orchestration",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-orchestration",
+      "linkingText": [
+        "Orchestration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-partial-td",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-partial-td",
+      "linkingText": [
+        "Partial TD"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-privacy",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-privacy",
+      "linkingText": [
+        "Privacy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-private-security-data",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-private-security-data",
+      "linkingText": [
+        "Private Security Data"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-producer",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-producer",
+      "linkingText": [
+        "Producer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-profile",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-profile",
+      "linkingText": [
+        "Profile"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-property",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-property",
+      "linkingText": [
+        "Property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-protocol-binding",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-protocol-binding",
+      "linkingText": [
+        "WoT Protocol Binding",
+        "Protocol Binding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-public-security-metadata",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-public-security-metadata",
+      "linkingText": [
+        "Public Security Metadata"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-registrant",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-registrant",
+      "linkingText": [
+        "WoT Registrant",
+        "Registrant"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-security",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-security",
+      "linkingText": [
+        "Security"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-security-configuration",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-security-configuration",
+      "linkingText": [
+        "Security Configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-service",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-service",
+      "linkingText": [
+        "Service"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-servient",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-servient",
+      "linkingText": [
+        "Servient"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-shadow",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-shadow",
+      "linkingText": [
+        "Shadow"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-subprotocol",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-subprotocol",
+      "linkingText": [
+        "Subprotocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-system",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-system",
+      "linkingText": [
+        "System"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-td",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-td",
+      "linkingText": [
+        "TD"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-tdd",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-tdd",
+      "linkingText": [
+        "TDD"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-td-vocabulary",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-td-vocabulary",
+      "linkingText": [
+        "TD Vocabulary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-td-context-extension",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-td-context-extension",
+      "linkingText": [
+        "TD Context Extension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-td-server",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-td-server",
+      "linkingText": [
+        "TD Server"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-thing",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-thing",
+      "linkingText": [
+        "Thing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-web-thing",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-web-thing",
+      "linkingText": [
+        "Web Thing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-thing-description-directory",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-thing-description-directory",
+      "linkingText": [
+        "WoT Thing Description Directory",
+        "Thing Description Directory"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-td-fragment",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-td-fragment",
+      "linkingText": [
+        "TD Fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-thing-description-server",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-thing-description-server",
+      "linkingText": [
+        "WoT Thing Description Server",
+        "Thing Description Server"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-thing-model",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-thing-model",
+      "linkingText": [
+        "WoT Thing Model",
+        "Thing Model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-transport-protocol",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-transport-protocol",
+      "linkingText": [
+        "Transport Protocol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-trusted-environment",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-trusted-environment",
+      "linkingText": [
+        "Trusted Environment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-virtual-thing",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-virtual-thing",
+      "linkingText": [
+        "Virtual Thing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-vocabulary",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-vocabulary",
+      "linkingText": [
+        "Vocabulary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-term",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-term",
+      "linkingText": [
+        "Term"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-vocabulary-term",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-vocabulary-term",
+      "linkingText": [
+        "Vocabulary Term"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-interface",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-interface",
+      "linkingText": [
+        "WoT Interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-profile",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-profile",
+      "linkingText": [
+        "WoT Profile"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-runtime",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-runtime",
+      "linkingText": [
+        "WoT Runtime"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-scripting-api",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-scripting-api",
+      "linkingText": [
+        "WoT Scripting API"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-servient",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-servient",
+      "linkingText": [
+        "WoT Servient"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-wot-thing-description",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-wot-thing-description",
+      "linkingText": [
+        "WoT Thing Description"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-thing-description",
+      "href": "https://www.w3.org/TR/wot-architecture11/#dfn-thing-description",
+      "linkingText": [
+        "Thing Description"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/wot-architecture11/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    }
+  ]
+}

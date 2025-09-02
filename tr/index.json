@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-09-01T01:36:31.418Z",
+  "date": "2025-09-02T01:53:54.634Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -131,16 +131,21 @@
       "tc39-explicit-resource-management",
       "tc39-intl-duration-format",
       "tc39-intl-locale-info",
+      "tc39-iterator-sequencing",
       "tc39-json-parse-with-source",
       "tc39-math-sum",
       "tc39-shadowrealm",
       "tc39-source-phase-imports",
       "tc39-temporal",
+      "tc39-upsert",
       "testutils",
       "url",
       "urlpattern",
       "login-status",
       "at-driver",
+      "shacl12-compact-syntax",
+      "shacl12-inf-rules",
+      "shacl12-node-expr",
       "execCommand",
       "element-timing",
       "gamepad-extensions",
@@ -159,9 +164,9 @@
       "tracestate-ids-registry",
       "web-nfc",
       "web-share-target",
-      "dbsc",
-      "passkey-endpoints",
       "webrtc-ice",
+      "wot-binding-registry",
+      "wot-bindings-registry",
       "wasm-core-2-fork-branch-hinting",
       "wasm-js-api-2-fork-content-security-policy",
       "wasm-js-api-2-fork-esm-integration",
@@ -223,6 +228,7 @@
       "keyboard-map",
       "layout-instability",
       "local-font-access",
+      "local-network-access",
       "manifest-incubations",
       "media-feeds",
       "prefetch",
@@ -239,7 +245,6 @@
       "permissions-revoke",
       "portals",
       "prefer-current-tab",
-      "private-network-access",
       "responsive-image-client-hints",
       "sanitizer-api",
       "savedata",
@@ -263,6 +268,7 @@
       "web-smart-card",
       "device-attributes",
       "managed-configuration",
+      "webcrypto-modern-algos",
       "webcrypto-secure-curves",
       "webhid",
       "webpackage",
@@ -449,6 +455,7 @@
       "cssom-1",
       "cssom-view-1",
       "dapt",
+      "dbsc-1",
       "design-principles",
       "device-memory-1",
       "device-posture",
@@ -545,6 +552,7 @@
       "orientation-sensor",
       "owl-time",
       "paint-timing",
+      "passkey-endpoints-1",
       "payment-handler",
       "payment-method-id",
       "payment-method-manifest",
@@ -643,6 +651,8 @@
       "wasm-core-2",
       "wasm-js-api-2",
       "wasm-web-api-2",
+      "wcag-3.0",
+      "WCAG22",
       "web-animations-1",
       "web-animations-2",
       "web-locks",
@@ -693,6 +703,10 @@
       "window-management",
       "WOFF",
       "WOFF2",
+      "wot-architecture11",
+      "wot-discovery",
+      "wot-profile",
+      "wot-thing-description11",
       "xhr"
     ],
     "post": [
@@ -719,10 +733,10 @@
     ]
   },
   "stats": {
-    "crawled": 385,
-    "errors": 0
+    "crawled": 393,
+    "errors": 1
   },
-  "crawler": "reffy-19.1.7",
+  "crawler": "reffy-19.2.0",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -768,7 +782,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "1 September 2025",
+      "date": "2 September 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -985,7 +999,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/act-rules-format-1.1/",
-        "status": "First Public Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "title": "Accessibility Conformance Testing (ACT) Rules Format 1.1",
@@ -1359,6 +1373,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "autoplay-policy-detection"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/autoplay-detection/",
         "https://w3c.github.io/autoplay/"
@@ -1949,7 +1969,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -2036,6 +2056,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "compute-pressure"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/compute-pressure/",
         "https://w3c.github.io/compute-pressure/"
@@ -2401,7 +2427,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -2463,7 +2489,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -2524,7 +2550,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -2584,7 +2610,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -2653,7 +2679,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -2679,6 +2705,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-anchor-position"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-anchor-position-1/",
         "https://drafts.csswg.org/css-anchor-position-1/"
@@ -2717,7 +2749,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -2783,7 +2815,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -2854,7 +2886,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -2925,7 +2957,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -2993,7 +3025,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -3063,7 +3095,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -3131,7 +3163,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -3199,7 +3231,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -3266,7 +3298,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -3335,7 +3367,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -3402,7 +3434,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -3472,7 +3504,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -3541,7 +3573,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -3609,7 +3641,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -3686,7 +3718,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -3746,7 +3778,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -3815,7 +3847,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -3888,7 +3920,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -3914,6 +3946,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-color-hdr"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-color-hdr-1/",
         "https://drafts.csswg.org/css-color-hdr-1/"
@@ -3953,7 +3991,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4025,7 +4063,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4093,7 +4131,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4162,7 +4200,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4231,7 +4269,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4303,7 +4341,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4371,7 +4409,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4440,7 +4478,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4510,7 +4548,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4578,7 +4616,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4646,7 +4684,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4715,7 +4753,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4784,7 +4822,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4852,7 +4890,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4923,7 +4961,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -4996,7 +5034,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -5063,7 +5101,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -5125,7 +5163,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -5151,6 +5189,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-gaps"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-gaps-1/",
         "https://drafts.csswg.org/css-gaps-1/"
@@ -5190,7 +5234,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -5258,7 +5302,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -5327,7 +5371,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -5397,7 +5441,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -5465,7 +5509,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -5491,6 +5535,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-highlight-api"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-highlight-api-1/",
         "https://drafts.csswg.org/css-highlight-api-1/"
@@ -5531,7 +5581,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -5602,7 +5652,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -5670,7 +5720,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -5739,7 +5789,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -5805,7 +5855,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -5865,7 +5915,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -5934,7 +5984,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6001,7 +6051,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6069,7 +6119,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6095,6 +6145,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-mixins"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-mixins-1/",
         "https://drafts.csswg.org/css-mixins-1/"
@@ -6135,7 +6191,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6203,7 +6259,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6269,7 +6325,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6333,7 +6389,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6397,7 +6453,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6423,6 +6479,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-nesting"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-nesting-1/",
         "https://drafts.csswg.org/css-nesting-1/"
@@ -6461,7 +6523,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6531,7 +6593,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6600,7 +6662,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6668,7 +6730,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6736,7 +6798,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6805,7 +6867,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6867,7 +6929,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -6935,7 +6997,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7005,7 +7067,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7073,7 +7135,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7140,7 +7202,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7210,7 +7272,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7271,7 +7333,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7297,6 +7359,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-rhythm"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/css-rhythm-1/",
         "https://drafts.csswg.org/css-rhythm-1/"
@@ -7332,7 +7400,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7399,7 +7467,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7468,7 +7536,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7533,7 +7601,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7603,7 +7671,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7672,7 +7740,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7742,7 +7810,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7810,7 +7878,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7880,7 +7948,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -7950,7 +8018,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -8020,7 +8088,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -8086,7 +8154,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -8163,7 +8231,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -8217,7 +8285,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -8287,7 +8355,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -8357,7 +8425,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -8427,7 +8495,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -8496,7 +8564,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -8565,7 +8633,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -8633,7 +8701,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -8702,7 +8770,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -8771,7 +8839,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -8893,7 +8961,8 @@
       "dfns": "dfns/css-transitions-2.json",
       "headings": "headings/css-transitions-2.json",
       "ids": "ids/css-transitions-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/css-transitions-2/ triggered HTTP status 520\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 122)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-typed-om-1/",
@@ -8913,7 +8982,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -8981,7 +9050,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -9048,7 +9117,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -9117,7 +9186,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -9187,7 +9256,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -9257,7 +9326,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -9326,7 +9395,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -9395,7 +9464,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -9441,8 +9510,6 @@
       "algorithms": "algorithms/css-view-transitions-1.json",
       "links": "links/css-view-transitions-1.json",
       "refs": "refs/css-view-transitions-1.json",
-      "idl": "idl/css-view-transitions.idl",
-      "css": "css/css-view-transitions.json",
       "dfns": "dfns/css-view-transitions-1.json",
       "headings": "headings/css-view-transitions-1.json",
       "ids": "ids/css-view-transitions-1.json",
@@ -9450,7 +9517,7 @@
     },
     {
       "url": "https://www.w3.org/TR/css-view-transitions-2/",
-      "seriesComposition": "delta",
+      "seriesComposition": "full",
       "shortname": "css-view-transitions-2",
       "series": {
         "shortname": "css-view-transitions",
@@ -9466,7 +9533,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -9511,8 +9578,8 @@
       "algorithms": "algorithms/css-view-transitions-2.json",
       "links": "links/css-view-transitions-2.json",
       "refs": "refs/css-view-transitions-2.json",
-      "idl": "idl/css-view-transitions-2.idl",
-      "css": "css/css-view-transitions-2.json",
+      "idl": "idl/css-view-transitions.idl",
+      "css": "css/css-view-transitions.json",
       "dfns": "dfns/css-view-transitions-2.json",
       "headings": "headings/css-view-transitions-2.json",
       "ids": "ids/css-view-transitions-2.json",
@@ -9548,7 +9615,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -9605,7 +9672,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -9674,7 +9741,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -9742,7 +9809,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -9827,7 +9894,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -9920,7 +9987,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -9976,7 +10043,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -10045,7 +10112,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -10153,6 +10220,68 @@
       "dfns": "dfns/dapt.json",
       "headings": "headings/dapt.json",
       "ids": "ids/dapt.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/dbsc-1/",
+      "seriesComposition": "full",
+      "shortname": "dbsc-1",
+      "series": {
+        "shortname": "dbsc",
+        "currentSpecification": "dbsc-1",
+        "title": "Device Bound Session Credentials",
+        "shortTitle": "Device Bound Session Credentials",
+        "releaseUrl": "https://www.w3.org/TR/dbsc/",
+        "nightlyUrl": "https://w3c.github.io/webappsec-dbsc/"
+      },
+      "seriesVersion": "1",
+      "formerNames": [
+        "dbsc"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Application Security Working Group",
+          "url": "https://www.w3.org/groups/wg/webappsec/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/dbsc-1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/webappsec-dbsc/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/webappsec-dbsc",
+        "sourcePath": "spec.bs",
+        "filename": "index.html"
+      },
+      "title": "Device Bound Session Credentials",
+      "source": "w3c",
+      "shortTitle": "Device Bound Session Credentials",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/dbsc-1/",
+        "https://w3c.github.io/webappsec-dbsc/"
+      ],
+      "crawled": "https://www.w3.org/TR/dbsc-1/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 20 Aug 2025 12:28:26 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "21 August 2025",
+      "revision": "48fdf24adb7b24912970231f9df3b6489fe1f908",
+      "algorithms": "algorithms/dbsc-1.json",
+      "links": "links/dbsc-1.json",
+      "refs": "refs/dbsc-1.json",
+      "dfns": "dfns/dbsc-1.json",
+      "headings": "headings/dbsc-1.json",
+      "ids": "ids/dbsc-1.json",
       "cddl": []
     },
     {
@@ -11943,7 +12072,7 @@
         },
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -12009,7 +12138,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -12389,7 +12518,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -13078,7 +13207,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/IFT/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -14500,7 +14629,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -14565,7 +14694,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -14634,7 +14763,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -14831,7 +14960,7 @@
       "groups": [
         {
           "name": "MiniApps Working Group",
-          "url": "https://www.w3.org/2021/miniapps/"
+          "url": "https://www.w3.org/groups/wg/miniapps/"
         }
       ],
       "release": {
@@ -14885,7 +15014,7 @@
       "groups": [
         {
           "name": "MiniApps Working Group",
-          "url": "https://www.w3.org/2021/miniapps/"
+          "url": "https://www.w3.org/groups/wg/miniapps/"
         }
       ],
       "release": {
@@ -14941,7 +15070,7 @@
       "groups": [
         {
           "name": "MiniApps Working Group",
-          "url": "https://www.w3.org/2021/miniapps/"
+          "url": "https://www.w3.org/groups/wg/miniapps/"
         }
       ],
       "release": {
@@ -15062,7 +15191,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -16013,6 +16142,67 @@
       "dfns": "dfns/paint-timing.json",
       "headings": "headings/paint-timing.json",
       "ids": "ids/paint-timing.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/passkey-endpoints-1/",
+      "seriesComposition": "full",
+      "shortname": "passkey-endpoints-1",
+      "series": {
+        "shortname": "passkey-endpoints",
+        "currentSpecification": "passkey-endpoints-1",
+        "title": "A Well-Known URL for Relying Party Passkey Endpoints",
+        "shortTitle": "A Well-Known URL for Relying Party Passkey Endpoints",
+        "releaseUrl": "https://www.w3.org/TR/passkey-endpoints/",
+        "nightlyUrl": "https://w3c.github.io/webappsec-passkey-endpoints/"
+      },
+      "seriesVersion": "1",
+      "formerNames": [
+        "passkey-endpoints"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Application Security Working Group",
+          "url": "https://www.w3.org/groups/wg/webappsec/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/passkey-endpoints-1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/webappsec-passkey-endpoints/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/webappsec-passkey-endpoints",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "A Well-Known URL for Relying Party Passkey Endpoints",
+      "source": "w3c",
+      "shortTitle": "A Well-Known URL for Relying Party Passkey Endpoints",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/passkey-endpoints-1/",
+        "https://w3c.github.io/webappsec-passkey-endpoints/"
+      ],
+      "crawled": "https://www.w3.org/TR/passkey-endpoints-1/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 20 Aug 2025 12:28:26 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "21 August 2025",
+      "revision": "bc27ffe5b7045d493a5547690b5d41e64d2945c8",
+      "algorithms": "algorithms/passkey-endpoints-1.json",
+      "links": "links/passkey-endpoints-1.json",
+      "refs": "refs/passkey-endpoints-1.json",
+      "headings": "headings/passkey-endpoints-1.json",
+      "ids": "ids/passkey-endpoints-1.json",
       "cddl": []
     },
     {
@@ -17500,11 +17690,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-schema/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 18 Aug 2025 17:28:23 GMT"
+        "lastModified": "Mon, 01 Sep 2025 18:54:34 GMT"
       },
       "generator": "respec",
-      "date": "18 August 2025",
-      "revision": "d0946215dd337c1fdec80191711e864edb761519",
+      "date": "01 September 2025",
+      "revision": "95e92ff4b8e93740ee157b2fc415d51672a0c511",
       "links": "links/rdf12-schema.json",
       "refs": "refs/rdf12-schema.json",
       "headings": "headings/rdf12-schema.json",
@@ -18014,7 +18204,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -18346,7 +18536,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -18612,7 +18802,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -18678,7 +18868,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -18903,11 +19093,11 @@
       ],
       "crawled": "https://www.w3.org/TR/shacl12-core/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 30 Aug 2025 09:27:10 GMT"
+        "lastModified": "Mon, 01 Sep 2025 07:36:07 GMT"
       },
       "generator": "respec",
-      "date": "30 August 2025",
-      "revision": "47ddd893b78e3c78c8e6e9421056926f4e7e2a04",
+      "date": "01 September 2025",
+      "revision": "495497281ceb45ef5e82fce74f4955eb67cc176d",
       "algorithms": "algorithms/shacl12-core.json",
       "links": "links/shacl12-core.json",
       "refs": "refs/shacl12-core.json",
@@ -18960,11 +19150,11 @@
       ],
       "crawled": "https://www.w3.org/TR/shacl12-sparql/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 28 Aug 2025 11:22:22 GMT"
+        "lastModified": "Mon, 01 Sep 2025 07:35:57 GMT"
       },
       "generator": "respec",
-      "date": "28 August 2025",
-      "revision": "59f86d0ea34e0dd5f1f931fb4a5e7c36b1b28590",
+      "date": "01 September 2025",
+      "revision": "495497281ceb45ef5e82fce74f4955eb67cc176d",
       "algorithms": "algorithms/shacl12-sparql.json",
       "links": "links/shacl12-sparql.json",
       "refs": "refs/shacl12-sparql.json",
@@ -22105,6 +22295,118 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/wcag-3.0/",
+      "seriesComposition": "full",
+      "shortname": "wcag-3.0",
+      "series": {
+        "shortname": "wcag",
+        "currentSpecification": "WCAG22",
+        "title": "Web Content Accessibility Guidelines (WCAG)",
+        "shortTitle": "WCAG",
+        "releaseUrl": "https://www.w3.org/TR/wcag/",
+        "nightlyUrl": "https://w3c.github.io/wcag/guidelines/22/"
+      },
+      "seriesVersion": "3.0",
+      "nightly": {
+        "url": "https://w3c.github.io/wcag3/guidelines/",
+        "status": "Editor's Draft",
+        "sourcePath": "src/pages/guidelines/index.astro",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/wcag3",
+        "filename": "index.html"
+      },
+      "seriesPrevious": "WCAG22",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Accessibility Guidelines Working Group",
+          "url": "https://www.w3.org/WAI/about/groups/agwg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/wcag-3.0/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "title": "W3C Accessibility Guidelines (WCAG) 3.0",
+      "source": "w3c",
+      "shortTitle": "WCAG 3.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/wcag-3.0/",
+        "https://w3c.github.io/wcag3/guidelines/"
+      ],
+      "crawled": "https://www.w3.org/TR/wcag-3.0/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 12 Dec 2024 10:23:09 GMT"
+      },
+      "generator": "respec",
+      "date": "12 December 2024",
+      "links": "links/wcag-3.0.json",
+      "refs": "refs/wcag-3.0.json",
+      "dfns": "dfns/wcag-3.0.json",
+      "headings": "headings/wcag-3.0.json",
+      "ids": "ids/wcag-3.0.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "seriesComposition": "full",
+      "shortname": "WCAG22",
+      "series": {
+        "shortname": "wcag",
+        "currentSpecification": "WCAG22",
+        "title": "Web Content Accessibility Guidelines (WCAG)",
+        "shortTitle": "WCAG",
+        "releaseUrl": "https://www.w3.org/TR/wcag/",
+        "nightlyUrl": "https://w3c.github.io/wcag/guidelines/22/"
+      },
+      "seriesVersion": "2.2",
+      "seriesNext": "wcag-3.0",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Accessibility Guidelines Working Group",
+          "url": "https://www.w3.org/WAI/about/groups/agwg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/WCAG22/",
+        "status": "Recommendation",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/wcag/guidelines/22/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/wcag",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "source": "w3c",
+      "shortTitle": "WCAG 2.2",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/WCAG22/",
+        "https://w3c.github.io/wcag/guidelines/22/"
+      ],
+      "crawled": "https://www.w3.org/TR/WCAG22/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 12 Dec 2024 10:36:22 GMT"
+      },
+      "generator": "respec",
+      "date": "12 December 2024",
+      "links": "links/WCAG22.json",
+      "refs": "refs/WCAG22.json",
+      "dfns": "dfns/WCAG22.json",
+      "headings": "headings/WCAG22.json",
+      "ids": "ids/WCAG22.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/web-animations-1/",
       "seriesComposition": "full",
       "shortname": "web-animations-1",
@@ -22122,7 +22424,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -22193,7 +22495,7 @@
       "groups": [
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
+          "url": "https://www.w3.org/groups/wg/css/"
         }
       ],
       "release": {
@@ -23690,11 +23992,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webdriver2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 25 Aug 2025 15:50:35 GMT"
+        "lastModified": "Mon, 01 Sep 2025 08:25:15 GMT"
       },
       "generator": "respec",
-      "date": "25 August 2025",
-      "revision": "e380bf33dc543cf7273e7c7dd9762330ba6fd9d1",
+      "date": "01 September 2025",
+      "revision": "bba8cb713b8e415136ed5c41aeb2cf2649f32ce0",
       "algorithms": "algorithms/webdriver2.json",
       "links": "links/webdriver2.json",
       "refs": "refs/webdriver2.json",
@@ -25255,6 +25557,217 @@
       "refs": "refs/WOFF2.json",
       "headings": "headings/WOFF2.json",
       "ids": "ids/WOFF2.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/wot-architecture11/",
+      "seriesComposition": "full",
+      "shortname": "wot-architecture11",
+      "series": {
+        "shortname": "wot-architecture",
+        "currentSpecification": "wot-architecture11",
+        "title": "Web of Things (WoT) Architecture",
+        "shortTitle": "WoT Architecture",
+        "releaseUrl": "https://www.w3.org/TR/wot-architecture/",
+        "nightlyUrl": "https://w3c.github.io/wot-architecture/"
+      },
+      "seriesVersion": "1.1",
+      "shortTitle": "WoT Architecture 1.1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web of Things Working Group",
+          "url": "https://www.w3.org/WoT/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/wot-architecture11/",
+        "status": "Recommendation",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/wot-architecture/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/wot-architecture",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Web of Things (WoT) Architecture 1.1",
+      "source": "w3c",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/wot-architecture11/",
+        "https://w3c.github.io/wot-architecture/"
+      ],
+      "crawled": "https://www.w3.org/TR/wot-architecture11/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 04 Dec 2023 05:13:04 GMT"
+      },
+      "date": "05 December\n    2023",
+      "links": "links/wot-architecture11.json",
+      "dfns": "dfns/wot-architecture11.json",
+      "headings": "headings/wot-architecture11.json",
+      "ids": "ids/wot-architecture11.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/wot-discovery/",
+      "seriesComposition": "full",
+      "shortname": "wot-discovery",
+      "series": {
+        "shortname": "wot-discovery",
+        "currentSpecification": "wot-discovery",
+        "title": "Web of Things (WoT) Discovery",
+        "shortTitle": "WoT Discovery",
+        "releaseUrl": "https://www.w3.org/TR/wot-discovery/",
+        "nightlyUrl": "https://w3c.github.io/wot-discovery/"
+      },
+      "shortTitle": "WoT Discovery",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web of Things Working Group",
+          "url": "https://www.w3.org/WoT/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/wot-discovery/",
+        "status": "Recommendation",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/wot-discovery/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/wot-discovery",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Web of Things (WoT) Discovery",
+      "source": "w3c",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/wot-discovery/",
+        "https://w3c.github.io/wot-discovery/"
+      ],
+      "crawled": "https://www.w3.org/TR/wot-discovery/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 04 Dec 2023 05:05:29 GMT"
+      },
+      "date": "05 December\n    2023",
+      "links": "links/wot-discovery.json",
+      "dfns": "dfns/wot-discovery.json",
+      "headings": "headings/wot-discovery.json",
+      "ids": "ids/wot-discovery.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/wot-profile/",
+      "seriesComposition": "full",
+      "shortname": "wot-profile",
+      "series": {
+        "shortname": "wot-profile",
+        "currentSpecification": "wot-profile",
+        "title": "Web of Things (WoT) Profile",
+        "shortTitle": "WoT",
+        "releaseUrl": "https://www.w3.org/TR/wot-profile/",
+        "nightlyUrl": "https://w3c.github.io/wot-profile/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web of Things Working Group",
+          "url": "https://www.w3.org/WoT/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/wot-profile/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/wot-profile/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/wot-profile",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Web of Things (WoT) Profile",
+      "source": "w3c",
+      "shortTitle": "WoT",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/wot-profile/",
+        "https://w3c.github.io/wot-profile/"
+      ],
+      "crawled": "https://www.w3.org/TR/wot-profile/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 18 Jan 2023 12:36:18 GMT"
+      },
+      "date": "18 January\n    2023",
+      "algorithms": "algorithms/wot-profile.json",
+      "links": "links/wot-profile.json",
+      "dfns": "dfns/wot-profile.json",
+      "headings": "headings/wot-profile.json",
+      "ids": "ids/wot-profile.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/wot-thing-description11/",
+      "seriesComposition": "full",
+      "shortname": "wot-thing-description11",
+      "series": {
+        "shortname": "wot-thing-description",
+        "currentSpecification": "wot-thing-description11",
+        "title": "Web of Things (WoT) Thing Description",
+        "shortTitle": "WoT",
+        "releaseUrl": "https://www.w3.org/TR/wot-thing-description/",
+        "nightlyUrl": "https://w3c.github.io/wot-thing-description/"
+      },
+      "seriesVersion": "1.1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web of Things Working Group",
+          "url": "https://www.w3.org/WoT/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/wot-thing-description11/",
+        "status": "Recommendation",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/wot-thing-description/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/wot-thing-description",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Web of Things (WoT) Thing Description 1.1",
+      "source": "w3c",
+      "shortTitle": "WoT 1.1",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/wot-thing-description11/",
+        "https://w3c.github.io/wot-thing-description/"
+      ],
+      "crawled": "https://www.w3.org/TR/wot-thing-description11/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 04 Dec 2023 05:07:44 GMT"
+      },
+      "date": "05 December\n    2023",
+      "links": "links/wot-thing-description11.json",
+      "dfns": "dfns/wot-thing-description11.json",
+      "headings": "headings/wot-thing-description11.json",
+      "ids": "ids/wot-thing-description11.json",
       "cddl": []
     }
   ]

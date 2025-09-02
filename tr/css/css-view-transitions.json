@@ -1,13 +1,13 @@
 {
   "spec": {
-    "title": "CSS View Transitions Module Level 1",
-    "url": "https://www.w3.org/TR/css-view-transitions-1/"
+    "title": "CSS View Transitions Module Level 2",
+    "url": "https://www.w3.org/TR/css-view-transitions-2/"
   },
   "properties": [
     {
-      "name": "view-transition-name",
-      "href": "https://www.w3.org/TR/css-view-transitions-1/#propdef-view-transition-name",
-      "value": "none | <custom-ident>",
+      "name": "view-transition-class",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#propdef-view-transition-class",
+      "value": "none | <custom-ident>+",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -18,60 +18,135 @@
       "values": [
         {
           "name": "none",
-          "prose": "The element will not participate independently in a view transition.",
-          "href": "https://www.w3.org/TR/css-view-transitions-1/#valdef-view-transition-name-none",
+          "prose": "No class would apply to the named view transition pseudo-elements generated for this element.",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-class-none",
           "type": "value",
           "value": "none"
         },
         {
+          "name": "<custom-ident>+",
+          "prose": "All of the specified <custom-ident> values (apart from none) are applied when used in named view transition pseudo-element selectors. none is an invalid <custom-ident> for view-transition-class, even when combined with another <custom-ident>. Each 'view transition class' is a tree-scoped name.",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-class-custom-ident",
+          "type": "value",
+          "value": "<custom-ident>+"
+        }
+      ],
+      "styleDeclaration": [
+        "view-transition-class",
+        "viewTransitionClass"
+      ]
+    },
+    {
+      "name": "view-transition-group",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#propdef-view-transition-group",
+      "value": "normal | contain | nearest | <custom-ident>",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "containingGroupName.",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-group-normal",
+          "type": "value",
+          "value": "normal"
+        },
+        {
+          "name": "contain",
+          "prose": "containingGroupName.",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-group-contain",
+          "type": "value",
+          "value": "contain"
+        },
+        {
+          "name": "nearest",
+          "prose": "The document-scoped view transition name of the element’s nearest flat tree ancestor which participates in the transition.",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-group-nearest",
+          "type": "value",
+          "value": "nearest"
+        },
+        {
           "name": "<custom-ident>",
-          "prose": "The element participates independently in a view transition—​as either an old or new element—​with the specified view transition name. The values none and auto are excluded from <custom-ident> here.",
-          "href": "https://www.w3.org/TR/css-view-transitions-1/#valdef-view-transition-name-custom-ident",
+          "prose": "group if the element has a flat tree ancestor whose document-scoped view transition name is group and participates in transition; Otherwise containingGroupName.",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-group-custom-ident",
           "type": "value",
           "value": "<custom-ident>"
         }
       ],
       "styleDeclaration": [
-        "view-transition-name",
-        "viewTransitionName"
+        "view-transition-group",
+        "viewTransitionGroup"
       ]
     }
   ],
-  "atrules": [],
+  "atrules": [
+    {
+      "name": "@view-transition",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#at-view-transition-rule",
+      "descriptors": [
+        {
+          "name": "navigation",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#descdef-view-transition-navigation",
+          "for": "@view-transition",
+          "value": "auto | none",
+          "initial": "none",
+          "values": [
+            {
+              "name": "none",
+              "prose": "There will be no transition.",
+              "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-navigation-none",
+              "type": "value",
+              "value": "none"
+            },
+            {
+              "name": "auto",
+              "prose": "The transition will be enabled if the navigation is same-origin, without cross-origin redirects, and whose NavigationType is traverse, or push or replace, with user navigation involvement not equal to \"browser UI\".",
+              "href": "https://www.w3.org/TR/css-view-transitions-2/#valdef-view-transition-navigation-auto",
+              "type": "value",
+              "value": "auto"
+            }
+          ]
+        },
+        {
+          "name": "types",
+          "href": "https://www.w3.org/TR/css-view-transitions-2/#descdef-view-transition-types",
+          "for": "@view-transition",
+          "value": "none | <custom-ident>+",
+          "initial": "none"
+        }
+      ],
+      "value": "@view-transition { <declaration-list> }"
+    }
+  ],
   "selectors": [
     {
-      "name": "::view-transition",
-      "prose": "The ::view-transition pseudo-element is a tree-abiding pseudo-element that is also a pseudo-element root. Its originating element is the document’s document element, and its containing block is the snapshot containing block.",
-      "href": "https://www.w3.org/TR/css-view-transitions-1/#selectordef-view-transition",
-      "value": "::view-transition"
+      "name": ":active-view-transition",
+      "prose": "The :active-view-transition pseudo-class applies to the root element of the document, if it has an active view transition.",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#active-view-transition-pseudo",
+      "value": ":active-view-transition"
     },
     {
-      "name": "::view-transition-group()",
-      "prose": "The ::view-transition-group() pseudo-element is a named view transition pseudo-element that represents a matching named view transition capture. A ::view-transition-group() pseudo-element is generated for each view transition name as a child of the ::view-transition pseudo-element, and contains a corresponding ::view-transition-image-pair().",
-      "href": "https://www.w3.org/TR/css-view-transitions-1/#selectordef-view-transition-group"
-    },
-    {
-      "name": "::view-transition-image-pair()",
-      "prose": "The ::view-transition-image-pair() pseudo-element is a named view transition pseudo-element that represents a pair of corresponding old/new view transition captures. This pseudo-element is a child of the corresponding ::view-transition-group() pseudo-element and contains a corresponding ::view-transition-old() pseudo-element and/or a corresponding ::view-transition-new() pseudo-element (in that order).",
-      "href": "https://www.w3.org/TR/css-view-transitions-1/#selectordef-view-transition-image-pair"
-    },
-    {
-      "name": "::view-transition-old()",
-      "prose": "The ::view-transition-old() pseudo-element is an empty named view transition pseudo-element that represents a visual snapshot of the “old” state as a replaced element; it is omitted if there’s no “old” state to represent. Each ::view-transition-old() pseudo-element is a child of the corresponding ::view-transition-image-pair() pseudo-element.",
-      "href": "https://www.w3.org/TR/css-view-transitions-1/#selectordef-view-transition-old"
-    },
-    {
-      "name": "::view-transition-new()",
-      "prose": "The ::view-transition-new() pseudo-element (like the analogous ::view-transition-old() pseudo-element) is an empty named view transition pseudo-element that represents a visual snapshot of the “new” state as a replaced element; it is omitted if there’s no “new” state to represent. Each ::view-transition-new() pseudo-element is a child of the corresponding ::view-transition-image-pair() pseudo-element.",
-      "href": "https://www.w3.org/TR/css-view-transitions-1/#selectordef-view-transition-new"
+      "name": ":active-view-transition-type()",
+      "prose": "The :active-view-transition-type() pseudo-class applies to the root element of the document, if it has a matching active view transition. It has the following syntax definition:",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#active-view-transition-type-pseudo"
     }
   ],
   "values": [
     {
-      "name": "<pt-name-selector>",
-      "href": "https://www.w3.org/TR/css-view-transitions-1/#typedef-pt-name-selector",
+      "name": "<pt-name-and-class-selector>",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#typedef-pt-name-and-class-selector",
       "type": "type",
-      "value": "'*' | <custom-ident>"
+      "value": "<pt-name-selector> <pt-class-selector>? | <pt-class-selector>"
+    },
+    {
+      "name": "<pt-class-selector>",
+      "href": "https://www.w3.org/TR/css-view-transitions-2/#typedef-pt-class-selector",
+      "type": "type",
+      "value": "['.' <custom-ident>]+"
     }
   ]
 }
