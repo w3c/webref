@@ -5,7 +5,6 @@
   },
   "links": {
     "rawlinks": {
-      "https://datatracker.ietf.org/doc/html/bcp14": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clearAppBadge": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/setAppBadge": {},
       "https://github.com/grorg": {},
@@ -15,37 +14,32 @@
       "https://infra.spec.whatwg.org/": {},
       "https://lists.webkit.org/pipermail/webkit-dev/2020-February/031058.html": {},
       "https://notifications.spec.whatwg.org/": {},
-      "https://webidl.spec.whatwg.org/": {
-        "anchors": [
-          "SecureContext",
-          "idl-promise",
-          "EnforceRange"
-        ]
-      },
+      "https://webidl.spec.whatwg.org/": {},
+      "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/rfc/rfc2119": {},
       "https://www.rfc-editor.org/rfc/rfc8174": {},
-      "https://www.w3.org/2021/Process-20211102/": {
-        "anchors": [
-          "recs-and-notes"
-        ]
-      },
-      "https://www.w3.org/Consortium/Patent-Policy/": {
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/appmanifest/": {},
+      "https://www.w3.org/TR/permissions/": {},
+      "https://www.w3.org/groups/wg/webapps": {},
+      "https://www.w3.org/groups/wg/webapps/ipr": {},
+      "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
         ]
       },
-      "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/appmanifest/": {},
-      "https://www.w3.org/TR/permissions/": {},
-      "https://www.w3.org/groups/wg/webapps": {},
-      "https://www.w3.org/groups/wg/webapps/ipr": {}
+      "https://www.w3.org/policies/process/20250818/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      }
     },
     "autolinks": {
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
           "concept-origin",
-          "same-origin"
+          "same-origin-domain"
         ]
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
@@ -75,8 +69,8 @@
           "relevant-settings-object",
           "concept-environment-top-level-origin",
           "queue-a-global-task",
-          "dom-manipulation-task-source",
-          "user-interaction-task-source"
+          "user-interaction-task-source",
+          "dom-manipulation-task-source"
         ]
       },
       "https://html.spec.whatwg.org/multipage/workers.html": {
@@ -99,16 +93,19 @@
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
+          "SecureContext",
+          "idl-promise",
           "idl-undefined",
+          "EnforceRange",
           "idl-unsigned-long-long",
           "include",
           "this",
           "a-promise-rejected-with",
           "invalidstateerror",
           "idl-DOMException",
+          "securityerror",
           "a-new-promise",
           "reject",
-          "securityerror",
           "notallowederror",
           "resolve"
         ]
