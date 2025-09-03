@@ -141,6 +141,9 @@
           "html": "If the counter value is 0,\n\t\tthe representation is the character for 0 specified for the given counter style.\n\t\tSkip the rest of this algorithm."
         },
         {
+          "html": "If the counter value is negative,\n\t\tinstead use the absolute value of the counter value for the remaining steps of this algorithm."
+        },
+        {
           "html": "Initially represent the counter value as a decimal number.\n\t\tFor each digit that is not 0,\n\t\tappend the appropriate digit marker to the digit.\n\t\tThe ones digit has no marker."
         },
         {
@@ -150,7 +153,13 @@
           "html": "Drop any trailing zeros\n\t\tand collapse any remaining zeros into a single zero digit."
         },
         {
-          "html": "Replace the digits 0-9 with the appropriate character\n\t\tfor the given counter style.\n\t\tReturn the resultant string as the representation of the counter value."
+          "html": "Replace the digits 0-9 with the appropriate character\n\t\tfor the given counter style."
+        },
+        {
+          "html": "If the counter value was negative,\n\t\tprepend the appropriate negative sign character for the given counter style\n\t\tas specified in the table of characters for each style."
+        },
+        {
+          "html": "Return the resultant string as the representation of the counter value."
         }
       ]
     },
@@ -160,6 +169,9 @@
       "steps": [
         {
           "html": "If the counter value is 0,\n\t\tthe representation is the character for 0 specified for the given counter style.\n\t\tSkip the rest of this algorithm."
+        },
+        {
+          "html": "If the counter value is negative,\n\t\tinstead use the absolute value of the counter value for the remaining steps of this algorithm."
         },
         {
           "html": "Initially represent the counter value as a decimal number.\n\t\tStarting from the right (ones place),\n\t\tsplit the decimal number into groups of four digits."
@@ -180,7 +192,13 @@
           "html": "For the Korean styles,\n\t\tinsert a space (\" \" U+0020) between each group."
         },
         {
-          "html": "Replace the digits 0-9 with the appropriate character\n\t\tfor the given counter style.\n\t\tReturn the resultant string as the representation of the counter value."
+          "html": "Replace the digits 0-9 with the appropriate character\n\t\tfor the given counter style."
+        },
+        {
+          "html": "If the counter value was negative,\n\t\tprepend the appropriate negative sign character for the given counter style\n\t\tas specified in the table of characters for each style."
+        },
+        {
+          "html": "Return the resultant string as the representation of the counter value."
         }
       ]
     },

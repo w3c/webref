@@ -69,6 +69,28 @@
       "links": []
     },
     {
+      "id": "dom-ipaddressspace-loopback",
+      "href": "https://wicg.github.io/local-network-access/#dom-ipaddressspace-loopback",
+      "linkingText": [
+        "\"loopback\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IPAddressSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
       "id": "ip-address-space",
       "href": "https://wicg.github.io/local-network-access/#ip-address-space",
       "linkingText": [
@@ -79,6 +101,28 @@
       ],
       "type": "dfn",
       "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "ip-address-space-loopback",
+      "href": "https://wicg.github.io/local-network-access/#ip-address-space-loopback",
+      "linkingText": [
+        "loopback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "IP address space"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -124,6 +168,26 @@
         "IP address space"
       ],
       "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "loopback-address",
+      "href": "https://wicg.github.io/local-network-access/#loopback-address",
+      "linkingText": [
+        "loopback address"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "ip-address-space-section",
@@ -257,48 +321,6 @@
       "links": []
     },
     {
-      "id": "dictdef-localnetworkaccesspermissiondescriptor",
-      "href": "https://wicg.github.io/local-network-access/#dictdef-localnetworkaccesspermissiondescriptor",
-      "linkingText": [
-        "LocalNetworkAccessPermissionDescriptor"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "integration-with-permissions",
-        "href": "https://wicg.github.io/local-network-access/#integration-with-permissions",
-        "title": "Integration with Permissions",
-        "number": "3.1"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-localnetworkaccesspermissiondescriptor-id",
-      "href": "https://wicg.github.io/local-network-access/#dom-localnetworkaccesspermissiondescriptor-id",
-      "linkingText": [
-        "id"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "LocalNetworkAccessPermissionDescriptor"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "integration-with-permissions",
-        "href": "https://wicg.github.io/local-network-access/#integration-with-permissions",
-        "title": "Integration with Permissions",
-        "number": "3.1"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
       "id": "connection-ip-address-space",
       "href": "https://wicg.github.io/local-network-access/#connection-ip-address-space",
       "linkingText": [
@@ -315,7 +337,7 @@
         "id": "fetching",
         "href": "https://wicg.github.io/local-network-access/#fetching",
         "title": "Fetching",
-        "number": "3.2.1"
+        "number": "3.3.1"
       },
       "definedIn": "prose",
       "links": []
@@ -337,7 +359,7 @@
         "id": "fetching",
         "href": "https://wicg.github.io/local-network-access/#fetching",
         "title": "Fetching",
-        "number": "3.2.1"
+        "number": "3.3.1"
       },
       "definedIn": "prose",
       "links": []
@@ -359,7 +381,7 @@
         "id": "fetching",
         "href": "https://wicg.github.io/local-network-access/#fetching",
         "title": "Fetching",
-        "number": "3.2.1"
+        "number": "3.3.1"
       },
       "definedIn": "prose",
       "links": []
@@ -379,7 +401,7 @@
         "id": "fetching",
         "href": "https://wicg.github.io/local-network-access/#fetching",
         "title": "Fetching",
-        "number": "3.2.1"
+        "number": "3.3.1"
       },
       "definedIn": "prose",
       "links": []
@@ -399,7 +421,7 @@
         "id": "fetching",
         "href": "https://wicg.github.io/local-network-access/#fetching",
         "title": "Fetching",
-        "number": "3.2.1"
+        "number": "3.3.1"
       },
       "definedIn": "prose",
       "links": []
@@ -419,7 +441,7 @@
         "id": "fetch-api",
         "href": "https://wicg.github.io/local-network-access/#fetch-api",
         "title": "Fetch API",
-        "number": "3.2.2"
+        "number": "3.3.2"
       },
       "definedIn": "prose",
       "links": []
@@ -441,7 +463,7 @@
         "id": "fetch-api",
         "href": "https://wicg.github.io/local-network-access/#fetch-api",
         "title": "Fetch API",
-        "number": "3.2.2"
+        "number": "3.3.2"
       },
       "definedIn": "pre",
       "links": []
@@ -463,7 +485,7 @@
         "id": "fetch-api",
         "href": "https://wicg.github.io/local-network-access/#fetch-api",
         "title": "Fetch API",
-        "number": "3.2.2"
+        "number": "3.3.2"
       },
       "definedIn": "pre",
       "links": []
@@ -485,7 +507,7 @@
         "id": "integration-with-html",
         "href": "https://wicg.github.io/local-network-access/#integration-with-html",
         "title": "Integration with HTML",
-        "number": "3.6"
+        "number": "3.7"
       },
       "definedIn": "prose",
       "links": []

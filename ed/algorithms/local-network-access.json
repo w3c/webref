@@ -14,7 +14,7 @@
           "html": "<p>If <var>address</var> belongs to the <code>::ffff:0:0/96</code> \"IPv4-mapped Address\"\n  address block, then replace <var>address</var> with its embedded IPv4 address.</p>"
         },
         {
-          "html": "For each <var>row</var> in the\n  <a href=\"https://wicg.github.io/local-network-access/#non-public-ip-address-blocks\">Non-public IP address blocks\"</a>\n  table:",
+          "html": "For each <var>row</var> in the\n  <a href=\"https://wicg.github.io/local-network-access/#non-public-ip-address-blocks\">Non-public IP address blocks</a>\n  table:",
           "rationale": "if",
           "steps": [
             {
@@ -23,7 +23,7 @@
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#ip-address-space-public\" id=\"ref-for-ip-address-space-public②\">public</a>.</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#ip-address-space-public\" id=\"ref-for-ip-address-space-public③\">public</a>.</p>"
         }
       ]
     },
@@ -47,7 +47,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">Request</a> objects are given a new <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"request\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"target IP address space\" id=\"request-target-ip-address-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">target IP\n  address space</dfn> property, initially null.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">Response</a> objects are given a new\n  <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"response\" data-dfn-type=\"dfn\" data-export=\"\" id=\"response-ip-address-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IP address space</dfn> property, whose value is\n  an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#ip-address-space\" id=\"ref-for-ip-address-space⑨\">IP address space</a>, initially null.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">Response</a> objects are given a new\n  <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"response\" data-dfn-type=\"dfn\" data-export=\"\" id=\"response-ip-address-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IP address space</dfn> property, whose value is\n  an <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#ip-address-space\" id=\"ref-for-ip-address-space①⓪\">IP address space</a>, initially null.</p>"
         },
         {
           "html": "Define a new <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"local-network-access-check\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Local Network Access check</dfn> algorithm.\n  Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection\" id=\"ref-for-concept-connection①\">connection</a> <var>connection</var>:",
@@ -64,7 +64,7 @@
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space①\">target IP address space</a> is not\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#ip-address-space-public\" id=\"ref-for-ip-address-space-public⑦\">public</a>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space①\">target IP address space</a> is not\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#ip-address-space-public\" id=\"ref-for-ip-address-space-public⑧\">public</a>.</p>"
                 },
                 {
                   "html": "<p>If <var>connection</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#connection-ip-address-space\" id=\"ref-for-connection-ip-address-space①\">IP address space</a> is not equal to\n  then <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#request-target-ip-address-space\" id=\"ref-for-request-target-ip-address-space②\">target IP address space</a>, then return\n  a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a>.</p>"
@@ -197,7 +197,7 @@
                 },
                 {
                   "case": "local",
-                  "html": "Set <var>request</var>’s targetAddressSpace to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#ip-address-space-local\" id=\"ref-for-ip-address-space-local②②\">local</a>."
+                  "html": "Set <var>request</var>’s targetAddressSpace to <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#ip-address-space-local\" id=\"ref-for-ip-address-space-local②④\">local</a>."
                 }
               ]
             }
@@ -206,7 +206,7 @@
       ]
     },
     {
-      "html": "To support the checks in <a data-link-type=\"biblio\" href=\"https://wicg.github.io/local-network-access/#biblio-fetch\" title=\"Fetch Standard\">[FETCH]</a>, user\nagents must remember the source IP address space of contexts in which network\nrequests are made. To this effect, the\n<a data-link-type=\"biblio\" href=\"https://wicg.github.io/local-network-access/#biblio-html\" title=\"HTML Standard\">[HTML]</a> specification is patched as\nfollows:",
+      "html": "To support the checks in <a data-link-type=\"biblio\" href=\"https://wicg.github.io/local-network-access/#biblio-fetch\" title=\"Fetch Standard\">[FETCH]</a>, user agents must remember the source IP\naddress space of contexts in which network requests are made. To this effect,\nthe <a data-link-type=\"biblio\" href=\"https://wicg.github.io/local-network-access/#biblio-html\" title=\"HTML Standard\">[HTML]</a> specification is patched as follows:",
       "rationale": "set",
       "steps": [
         {
