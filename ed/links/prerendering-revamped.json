@@ -6,6 +6,7 @@
   "links": {
     "rawlinks": {
       "http://www.w3.org/community/": {},
+      "https://console.spec.whatwg.org/": {},
       "https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-no-vary-search": {},
       "https://dom.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {},
@@ -13,6 +14,7 @@
       "https://github.com/WICG/nav-speculation/issues/319": {},
       "https://github.com/shivanigithub/fenced-frame": {},
       "https://github.com/w3c/webdriver-bidi/issues/321": {},
+      "https://github.com/whatwg/html/pull/11426": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -97,8 +99,14 @@
       "https://www.w3.org/community/wicg/": {}
     },
     "autolinks": {
+      "https://console.spec.whatwg.org/": {
+        "anchors": [
+          "report-a-warning-to-the-console"
+        ]
+      },
       "https://dom.spec.whatwg.org/": {
         "anchors": [
+          "concept-element-attributes-change-ext",
           "document",
           "concept-node",
           "concept-node-document",
@@ -172,11 +180,12 @@
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
+          "valid-navigable-target-name-or-keyword",
+          "node-navigable",
           "navigable",
           "top-level-traversable",
           "nav-bc",
           "auxiliary-browsing-context",
-          "node-navigable",
           "creating-a-new-top-level-traversable",
           "nav-document",
           "destroy-a-top-level-traversable",
@@ -205,6 +214,11 @@
           "allowed-to-use"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/image-maps.html": {
+        "anchors": [
+          "the-area-element"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/indices.html": {
         "anchors": [
           "event-beforeunload"
@@ -225,6 +239,8 @@
       },
       "https://html.spec.whatwg.org/multipage/links.html": {
         "anchors": [
+          "concept-hyperlink-url",
+          "attr-hyperlink-target",
           "downloading-hyperlinks"
         ]
       },
@@ -252,6 +268,11 @@
           "dom-navigator-registerprotocolhandler",
           "normalize-protocol-handler-parameters",
           "dom-navigator-unregisterprotocolhandler"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/text-level-semantics.html": {
+        "anchors": [
+          "the-a-element"
         ]
       },
       "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html": {
@@ -308,23 +329,26 @@
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
+          "struct",
+          "struct-item",
           "list",
+          "string",
+          "map-exists",
+          "list-iterate",
+          "list-append",
           "list-item",
           "user-agent",
           "assert",
           "list-size",
           "list-remove",
-          "list-iterate",
           "map-iterate",
           "map-set",
           "iteration-continue",
           "iteration-break",
-          "list-append",
           "list-is-empty",
           "list-contain",
           "list-empty",
           "ordered-map",
-          "map-exists",
           "implementation-defined"
         ]
       },
@@ -579,6 +603,39 @@
           "notsupportederror"
         ]
       },
+      "https://whatpr.org/html/11426/semantics.html": {
+        "anchors": [
+          "get-an-element's-target"
+        ]
+      },
+      "https://whatpr.org/html/11426/speculative-loading.html": {
+        "anchors": [
+          "speculation-rule-set",
+          "speculation-rule",
+          "sr-set-prefetch",
+          "sr-requirements",
+          "parse-a-speculation-rule",
+          "speculative-load-candidate",
+          "consider-speculative-loads",
+          "inner-consider-speculative-loads-steps",
+          "document-sr-sets",
+          "sr-urls",
+          "compute-speculative-load-referrer-policy",
+          "sl-candidate-url",
+          "sl-candidate-nvs-hint",
+          "sr-nvs-hint",
+          "sl-candidate-eagerness",
+          "sr-eagerness",
+          "sl-candidate-referrer-policy",
+          "sl-candidate-tags",
+          "sr-tags",
+          "sr-predicate",
+          "finding-matching-links",
+          "collect-tags-from-speculative-load-candidates",
+          "prefetch-candidate",
+          "sl-candidate-anonymization-policy"
+        ]
+      },
       "https://wicg.github.io/background-fetch/": {
         "anchors": [
           "dom-backgroundfetchmanager-fetch"
@@ -620,10 +677,10 @@
         "anchors": [
           "prefetch-record",
           "prefetch-record-url",
-          "prefetch-record-anonymization-policy",
-          "prefetch-record-referrer-policy",
           "prefetch-record-no-vary-search-hint",
-          "start-a-referrer-initiated-navigational-prefetch",
+          "prefetch-record-referrer-policy",
+          "prefetch-record-tags",
+          "prefetch-record-anonymization-policy",
           "prefetch-record-matches-a-url",
           "document-prefetch-records",
           "prefetch-record-is-expected-to-match-a-url",
