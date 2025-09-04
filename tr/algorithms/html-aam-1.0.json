@@ -157,7 +157,7 @@
           "html": "Otherwise use <code>title</code> attribute."
         },
         {
-          "html": "If there is no <code>summary</code> element as a direct child of the <code>details</code> element, the user agent should provide one with a subtree containing a localized string of the word \"details\"."
+          "html": "If there is no <code>summary</code> element as a direct child of the <code>details</code> element, the user agent <em class=\"rfc2119\">SHOULD</em> provide one with a subtree containing a localized string of the word \"details\"."
         },
         {
           "html": "If there is a <code>summary</code> element as a direct child of the <code>details</code> element, but none of the above yield a usable text string, there is no\n              <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a>."
@@ -308,7 +308,7 @@
       ]
     },
     {
-      "html": "An <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-description\">accessible description</a> <em class=\"rfc2119\">MAY</em> be provided to any <abbr title=\"HyperText Markup Language\">HTML</abbr> element that is a valid child of the <code>body</code> element. The following list\n          represents the order of precedence for  to compute the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-description\">accessible description</a> of an element. As\n          defined by <a href=\"https://www.w3.org/TR/accname-1.2/#mapping_additional_nd_description\">Accessible Name and Description Computation: Description Computation </a>,  <em class=\"rfc2119\">MUST</em>\n          use the first applicable description source, even if its use results in an empty description.",
+      "html": "Authors <em class=\"rfc2119\">MAY</em> provide an <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-description\">accessible description</a> for any <abbr title=\"HyperText Markup Language\">HTML</abbr> element that is a valid child of the <code>body</code> element. The following list\n          represents the order of precedence for  to compute the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-description\">accessible description</a> of an element. As\n          defined by <a href=\"https://www.w3.org/TR/accname-1.2/#mapping_additional_nd_description\">Accessible Name and Description Computation: Description Computation </a>,  <em class=\"rfc2119\">MUST</em>\n          use the first applicable description source, even if its use results in an empty description.",
       "rationale": "if",
       "steps": [
         {
