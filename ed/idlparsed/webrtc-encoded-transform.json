@@ -1208,7 +1208,7 @@
         "href": "https://w3c.github.io/webrtc-encoded-transform/#rtctransformevent"
       },
       "RTCRtpScriptTransformer": {
-        "fragment": "[Exposed=DedicatedWorker]\ninterface RTCRtpScriptTransformer : EventTarget {\n    // Attributes and methods related to the transformer source\n    readonly attribute ReadableStream readable;\n    Promise<unsigned long long> generateKeyFrame(optional DOMString rid);\n    Promise<undefined> sendKeyFrameRequest();\n    // Attributes and methods related to the transformer sink\n    readonly attribute WritableStream writable;\n    attribute EventHandler onkeyframerequest;\n    // Attributes for configuring the Javascript code\n    readonly attribute any options;\n};",
+        "fragment": "[Exposed=DedicatedWorker]\ninterface RTCRtpScriptTransformer : EventTarget {\n    // Attributes and methods related to the transformer source\n    readonly attribute ReadableStream readable;\n    Promise<undefined> generateKeyFrame(optional DOMString rid);\n    Promise<undefined> sendKeyFrameRequest();\n    // Attributes and methods related to the transformer sink\n    readonly attribute WritableStream writable;\n    attribute EventHandler onkeyframerequest;\n    // Attributes for configuring the Javascript code\n    readonly attribute any options;\n};",
         "type": "interface",
         "name": "RTCRtpScriptTransformer",
         "inheritance": "EventTarget",
@@ -1245,7 +1245,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "unsigned long long"
+                  "idlType": "undefined"
                 }
               ]
             },

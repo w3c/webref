@@ -6,7 +6,7 @@
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "[Exposed=DedicatedWorker]\ninterface RTCRtpScriptTransformer : EventTarget {\n    // Attributes and methods related to the transformer source\n    readonly attribute ReadableStream readable;\n    Promise<unsigned long long> generateKeyFrame(optional DOMString rid);\n    Promise<undefined> sendKeyFrameRequest();\n    // Attributes and methods related to the transformer sink\n    readonly attribute WritableStream writable;\n    attribute EventHandler onkeyframerequest;\n    // Attributes for configuring the Javascript code\n    readonly attribute any options;\n};",
+    "fragment": "[Exposed=DedicatedWorker]\ninterface RTCRtpScriptTransformer : EventTarget {\n    // Attributes and methods related to the transformer source\n    readonly attribute ReadableStream readable;\n    Promise<undefined> generateKeyFrame(optional DOMString rid);\n    Promise<undefined> sendKeyFrameRequest();\n    // Attributes and methods related to the transformer sink\n    readonly attribute WritableStream writable;\n    attribute EventHandler onkeyframerequest;\n    // Attributes for configuring the Javascript code\n    readonly attribute any options;\n};",
     "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpscripttransformer"
   },
   "extended": [],
