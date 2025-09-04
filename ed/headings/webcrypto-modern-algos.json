@@ -1,0 +1,1087 @@
+{
+  "spec": {
+    "title": "Modern Algorithms in the Web Cryptography API",
+    "url": "https://wicg.github.io/webcrypto-modern-algos/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#title",
+      "level": 1,
+      "title": "Modern Algorithms in the Web Cryptography API"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "specification-conventions",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#specification-conventions",
+      "level": 2,
+      "title": "Specification Conventions",
+      "alternateIds": [
+        "x2-specification-conventions"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "partial-subtlecrypto-interface",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#partial-subtlecrypto-interface",
+      "level": 2,
+      "title": "Partial SubtleCrypto interface",
+      "alternateIds": [
+        "x3-partial-subtlecrypto-interface"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "subtlecrypto-interface-datatypes",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-datatypes",
+      "level": 3,
+      "title": "Data Types",
+      "alternateIds": [
+        "x3-1-data-types"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "subtlecrypto-interface-keyformat",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyformat",
+      "level": 4,
+      "title": "Key Formats",
+      "alternateIds": [
+        "x3-1-1-key-formats"
+      ],
+      "number": "3.1.1"
+    },
+    {
+      "id": "subtlecrypto-interface-keyusage",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyusage",
+      "level": 4,
+      "title": "Key Usages",
+      "alternateIds": [
+        "x3-1-2-key-usages"
+      ],
+      "number": "3.1.2"
+    },
+    {
+      "id": "partial-subtlecrypto-interface-methods",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#partial-subtlecrypto-interface-methods",
+      "level": 3,
+      "title": "Methods and Parameters",
+      "alternateIds": [
+        "x3-2-methods-and-parameters"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "SubtleCrypto-method-encapsulateKey",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#SubtleCrypto-method-encapsulateKey",
+      "level": 4,
+      "title": "The encapsulateKey method",
+      "alternateIds": [
+        "x3-2-1-the-encapsulatekey-method"
+      ],
+      "number": "3.2.1"
+    },
+    {
+      "id": "SubtleCrypto-method-encapsulateBits",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#SubtleCrypto-method-encapsulateBits",
+      "level": 4,
+      "title": "The encapsulateBits method",
+      "alternateIds": [
+        "x3-2-2-the-encapsulatebits-method"
+      ],
+      "number": "3.2.2"
+    },
+    {
+      "id": "SubtleCrypto-method-decapsulateKey",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#SubtleCrypto-method-decapsulateKey",
+      "level": 4,
+      "title": "The decapsulateKey method",
+      "alternateIds": [
+        "x3-2-3-the-decapsulatekey-method"
+      ],
+      "number": "3.2.3"
+    },
+    {
+      "id": "SubtleCrypto-method-decapsulateBits",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#SubtleCrypto-method-decapsulateBits",
+      "level": 4,
+      "title": "The decapsulateBits method",
+      "alternateIds": [
+        "x3-2-4-the-decapsulatebits-method"
+      ],
+      "number": "3.2.4"
+    },
+    {
+      "id": "SubtleCrypto-method-getPublicKey",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#SubtleCrypto-method-getPublicKey",
+      "level": 4,
+      "title": "The getPublicKey method",
+      "alternateIds": [
+        "x3-2-5-the-getpublickey-method"
+      ],
+      "number": "3.2.5"
+    },
+    {
+      "id": "SubtleCrypto-method-supports",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#SubtleCrypto-method-supports",
+      "level": 4,
+      "title": "The supports method",
+      "alternateIds": [
+        "x3-2-6-the-supports-method"
+      ],
+      "number": "3.2.6"
+    },
+    {
+      "id": "partial-subtlecrypto-interface-checking-support-for-algorithm",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#partial-subtlecrypto-interface-checking-support-for-algorithm",
+      "level": 3,
+      "title": "Checking support for an algorithm",
+      "alternateIds": [
+        "x3-3-checking-support-for-an-algorithm"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "encapsulation",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#encapsulation",
+      "level": 2,
+      "title": "Encapsulation dictionaries",
+      "alternateIds": [
+        "x4-encapsulation-dictionaries"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "partial-JsonWebKey-dictionary",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#partial-JsonWebKey-dictionary",
+      "level": 2,
+      "title": "Partial JsonWebKey dictionary",
+      "alternateIds": [
+        "x5-partial-jsonwebkey-dictionary"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "ml-kem",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-kem",
+      "level": 2,
+      "title": "ML-KEM",
+      "alternateIds": [
+        "x6-ml-kem"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "ml-kem-description",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-kem-description",
+      "level": 3,
+      "title": "Description",
+      "alternateIds": [
+        "x6-1-description"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "ml-kem-registration",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-kem-registration",
+      "level": 3,
+      "title": "Registration",
+      "alternateIds": [
+        "x6-2-registration"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "ml-kem-operations",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-kem-operations",
+      "level": 3,
+      "title": "Operations",
+      "alternateIds": [
+        "x6-3-operations"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "ml-kem-operations-encapsulate",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-kem-operations-encapsulate",
+      "level": 4,
+      "title": "Encapsulate",
+      "alternateIds": [
+        "x6-3-1-encapsulate"
+      ],
+      "number": "6.3.1"
+    },
+    {
+      "id": "ml-kem-operations-decapsulate",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-kem-operations-decapsulate",
+      "level": 4,
+      "title": "Decapsulate",
+      "alternateIds": [
+        "x6-3-2-decapsulate"
+      ],
+      "number": "6.3.2"
+    },
+    {
+      "id": "ml-kem-operations-generate-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-kem-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "alternateIds": [
+        "x6-3-3-generate-key"
+      ],
+      "number": "6.3.3"
+    },
+    {
+      "id": "ml-kem-operations-import-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-kem-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "alternateIds": [
+        "x6-3-4-import-key"
+      ],
+      "number": "6.3.4"
+    },
+    {
+      "id": "ml-kem-operations-export-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-kem-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "alternateIds": [
+        "x6-3-5-export-key"
+      ],
+      "number": "6.3.5"
+    },
+    {
+      "id": "ml-dsa",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-dsa",
+      "level": 2,
+      "title": "ML-DSA",
+      "alternateIds": [
+        "x7-ml-dsa"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "ml-dsa-description",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-dsa-description",
+      "level": 3,
+      "title": "Description",
+      "alternateIds": [
+        "x7-1-description"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "ml-dsa-registration",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-dsa-registration",
+      "level": 3,
+      "title": "Registration",
+      "alternateIds": [
+        "x7-2-registration"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "context-params",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#context-params",
+      "level": 3,
+      "title": "ContextParams dictionary",
+      "alternateIds": [
+        "x7-3-contextparams-dictionary"
+      ],
+      "number": "7.3"
+    },
+    {
+      "id": "ml-dsa-operations",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-dsa-operations",
+      "level": 3,
+      "title": "Operations",
+      "alternateIds": [
+        "x7-4-operations"
+      ],
+      "number": "7.4"
+    },
+    {
+      "id": "ml-dsa-operations-sign",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-dsa-operations-sign",
+      "level": 4,
+      "title": "Sign",
+      "alternateIds": [
+        "x7-4-1-sign"
+      ],
+      "number": "7.4.1"
+    },
+    {
+      "id": "ml-dsa-operations-verify",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-dsa-operations-verify",
+      "level": 4,
+      "title": "Verify",
+      "alternateIds": [
+        "x7-4-2-verify"
+      ],
+      "number": "7.4.2"
+    },
+    {
+      "id": "ml-dsa-operations-generate-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-dsa-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "alternateIds": [
+        "x7-4-3-generate-key"
+      ],
+      "number": "7.4.3"
+    },
+    {
+      "id": "ml-dsa-operations-import-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-dsa-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "alternateIds": [
+        "x7-4-4-import-key"
+      ],
+      "number": "7.4.4"
+    },
+    {
+      "id": "ml-dsa-operations-export-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#ml-dsa-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "alternateIds": [
+        "x7-4-5-export-key"
+      ],
+      "number": "7.4.5"
+    },
+    {
+      "id": "slh-dsa",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#slh-dsa",
+      "level": 2,
+      "title": "SLH-DSA",
+      "alternateIds": [
+        "x8-slh-dsa"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "slh-dsa-description",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#slh-dsa-description",
+      "level": 3,
+      "title": "Description",
+      "alternateIds": [
+        "x8-1-description"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "slh-dsa-registration",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#slh-dsa-registration",
+      "level": 3,
+      "title": "Registration",
+      "alternateIds": [
+        "x8-2-registration"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "slh-dsa-operations",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#slh-dsa-operations",
+      "level": 3,
+      "title": "Operations",
+      "alternateIds": [
+        "x8-3-operations"
+      ],
+      "number": "8.3"
+    },
+    {
+      "id": "slh-dsa-operations-sign",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#slh-dsa-operations-sign",
+      "level": 4,
+      "title": "Sign",
+      "alternateIds": [
+        "x8-3-1-sign"
+      ],
+      "number": "8.3.1"
+    },
+    {
+      "id": "slh-dsa-operations-verify",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#slh-dsa-operations-verify",
+      "level": 4,
+      "title": "Verify",
+      "alternateIds": [
+        "x8-3-2-verify"
+      ],
+      "number": "8.3.2"
+    },
+    {
+      "id": "slh-dsa-operations-generate-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#slh-dsa-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "alternateIds": [
+        "x8-3-3-generate-key"
+      ],
+      "number": "8.3.3"
+    },
+    {
+      "id": "slh-dsa-operations-import-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#slh-dsa-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "alternateIds": [
+        "x8-3-4-import-key"
+      ],
+      "number": "8.3.4"
+    },
+    {
+      "id": "slh-dsa-operations-export-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#slh-dsa-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "alternateIds": [
+        "x8-3-5-export-key"
+      ],
+      "number": "8.3.5"
+    },
+    {
+      "id": "aes-ocb",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#aes-ocb",
+      "level": 2,
+      "title": "AES-OCB",
+      "alternateIds": [
+        "x9-aes-ocb"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "aes-ocb-description",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#aes-ocb-description",
+      "level": 3,
+      "title": "Description",
+      "alternateIds": [
+        "x9-1-description"
+      ],
+      "number": "9.1"
+    },
+    {
+      "id": "aes-ocb-registration",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#aes-ocb-registration",
+      "level": 3,
+      "title": "Registration",
+      "alternateIds": [
+        "x9-2-registration"
+      ],
+      "number": "9.2"
+    },
+    {
+      "id": "aead-params",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#aead-params",
+      "level": 3,
+      "title": "AeadParams dictionary",
+      "alternateIds": [
+        "x9-3-aeadparams-dictionary"
+      ],
+      "number": "9.3"
+    },
+    {
+      "id": "aes-ocb-operations",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#aes-ocb-operations",
+      "level": 3,
+      "title": "Operations",
+      "alternateIds": [
+        "x9-4-operations"
+      ],
+      "number": "9.4"
+    },
+    {
+      "id": "aes-ocb-operations-encrypt",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#aes-ocb-operations-encrypt",
+      "level": 4,
+      "title": "Encrypt",
+      "alternateIds": [
+        "x9-4-1-encrypt"
+      ],
+      "number": "9.4.1"
+    },
+    {
+      "id": "aes-ocb-operations-decrypt",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#aes-ocb-operations-decrypt",
+      "level": 4,
+      "title": "Decrypt",
+      "alternateIds": [
+        "x9-4-2-decrypt"
+      ],
+      "number": "9.4.2"
+    },
+    {
+      "id": "aes-ocb-operations-generate-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#aes-ocb-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "alternateIds": [
+        "x9-4-3-generate-key"
+      ],
+      "number": "9.4.3"
+    },
+    {
+      "id": "aes-ocb-operations-import-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#aes-ocb-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "alternateIds": [
+        "x9-4-4-import-key"
+      ],
+      "number": "9.4.4"
+    },
+    {
+      "id": "aes-ocb-operations-export-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#aes-ocb-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "alternateIds": [
+        "x9-4-5-export-key"
+      ],
+      "number": "9.4.5"
+    },
+    {
+      "id": "aes-ocb-operations-get-key-length",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#aes-ocb-operations-get-key-length",
+      "level": 4,
+      "title": "Get key length",
+      "alternateIds": [
+        "x9-4-6-get-key-length"
+      ],
+      "number": "9.4.6"
+    },
+    {
+      "id": "chacha20-poly1305",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#chacha20-poly1305",
+      "level": 2,
+      "title": "10. ChaCha20-Poly1305",
+      "alternateIds": [
+        "x10-chacha20-poly1305"
+      ]
+    },
+    {
+      "id": "chacha20-poly1305-description",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#chacha20-poly1305-description",
+      "level": 3,
+      "title": "Description",
+      "alternateIds": [
+        "x10-1-description"
+      ],
+      "number": "10.1"
+    },
+    {
+      "id": "chacha20-poly1305-registration",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#chacha20-poly1305-registration",
+      "level": 3,
+      "title": "Registration",
+      "alternateIds": [
+        "x10-2-registration"
+      ],
+      "number": "10.2"
+    },
+    {
+      "id": "chacha20-poly1305-operations",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#chacha20-poly1305-operations",
+      "level": 3,
+      "title": "Operations",
+      "alternateIds": [
+        "x10-3-operations"
+      ],
+      "number": "10.3"
+    },
+    {
+      "id": "chacha20-poly1305-operations-encrypt",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#chacha20-poly1305-operations-encrypt",
+      "level": 4,
+      "title": "Encrypt",
+      "alternateIds": [
+        "x10-3-1-encrypt"
+      ],
+      "number": "10.3.1"
+    },
+    {
+      "id": "chacha20-poly1305-operations-decrypt",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#chacha20-poly1305-operations-decrypt",
+      "level": 4,
+      "title": "Decrypt",
+      "alternateIds": [
+        "x10-3-2-decrypt"
+      ],
+      "number": "10.3.2"
+    },
+    {
+      "id": "chacha20-poly1305-operations-generate-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#chacha20-poly1305-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "alternateIds": [
+        "x10-3-3-generate-key"
+      ],
+      "number": "10.3.3"
+    },
+    {
+      "id": "chacha20-poly1305-operations-import-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#chacha20-poly1305-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "alternateIds": [
+        "x10-3-4-import-key"
+      ],
+      "number": "10.3.4"
+    },
+    {
+      "id": "chacha20-poly1305-operations-export-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#chacha20-poly1305-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "alternateIds": [
+        "x10-3-5-export-key"
+      ],
+      "number": "10.3.5"
+    },
+    {
+      "id": "chacha20-poly1305-operations-get-key-length",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#chacha20-poly1305-operations-get-key-length",
+      "level": 4,
+      "title": "Get key length",
+      "alternateIds": [
+        "x10-3-6-get-key-length"
+      ],
+      "number": "10.3.6"
+    },
+    {
+      "id": "sha3",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#sha3",
+      "level": 2,
+      "title": "11. SHA-3",
+      "alternateIds": [
+        "x11-sha-3"
+      ]
+    },
+    {
+      "id": "sha3-description",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#sha3-description",
+      "level": 3,
+      "title": "Description",
+      "alternateIds": [
+        "x11-1-description"
+      ],
+      "number": "11.1"
+    },
+    {
+      "id": "sha3-registration",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#sha3-registration",
+      "level": 3,
+      "title": "Registration",
+      "alternateIds": [
+        "x11-2-registration"
+      ],
+      "number": "11.2"
+    },
+    {
+      "id": "sha3-operations",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#sha3-operations",
+      "level": 3,
+      "title": "Operations",
+      "alternateIds": [
+        "x11-3-operations"
+      ],
+      "number": "11.3"
+    },
+    {
+      "id": "sha3-operations-digest",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#sha3-operations-digest",
+      "level": 4,
+      "title": "Digest",
+      "alternateIds": [
+        "x11-3-1-digest"
+      ],
+      "number": "11.3.1"
+    },
+    {
+      "id": "cshake",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#cshake",
+      "level": 2,
+      "title": "12. cSHAKE",
+      "alternateIds": [
+        "x12-cshake"
+      ]
+    },
+    {
+      "id": "cshake-description",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#cshake-description",
+      "level": 3,
+      "title": "Description",
+      "alternateIds": [
+        "x12-1-description"
+      ],
+      "number": "12.1"
+    },
+    {
+      "id": "cshake-registration",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#cshake-registration",
+      "level": 3,
+      "title": "Registration",
+      "alternateIds": [
+        "x12-2-registration"
+      ],
+      "number": "12.2"
+    },
+    {
+      "id": "cshake-params",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#cshake-params",
+      "level": 3,
+      "title": "CShakeParams dictionary",
+      "alternateIds": [
+        "x12-3-cshakeparams-dictionary"
+      ],
+      "number": "12.3"
+    },
+    {
+      "id": "cshake-operations",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#cshake-operations",
+      "level": 3,
+      "title": "Operations",
+      "alternateIds": [
+        "x12-4-operations"
+      ],
+      "number": "12.4"
+    },
+    {
+      "id": "cshake-operations-digest",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#cshake-operations-digest",
+      "level": 4,
+      "title": "Digest",
+      "alternateIds": [
+        "x12-4-1-digest"
+      ],
+      "number": "12.4.1"
+    },
+    {
+      "id": "kmac",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac",
+      "level": 2,
+      "title": "13. KMAC",
+      "alternateIds": [
+        "x13-kmac"
+      ]
+    },
+    {
+      "id": "kmac-description",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-description",
+      "level": 3,
+      "title": "Description",
+      "alternateIds": [
+        "x13-1-description"
+      ],
+      "number": "13.1"
+    },
+    {
+      "id": "kmac-registration",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-registration",
+      "level": 3,
+      "title": "Registration",
+      "alternateIds": [
+        "x13-2-registration"
+      ],
+      "number": "13.2"
+    },
+    {
+      "id": "kmac-keygen-params",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-keygen-params",
+      "level": 3,
+      "title": "KmacKeyGenParams dictionary",
+      "alternateIds": [
+        "x13-3-kmackeygenparams-dictionary"
+      ],
+      "number": "13.3"
+    },
+    {
+      "id": "kmac-importparams",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-importparams",
+      "level": 3,
+      "title": "KmacImportParams dictionary",
+      "alternateIds": [
+        "x13-4-kmacimportparams-dictionary"
+      ],
+      "number": "13.4"
+    },
+    {
+      "id": "KmacKeyAlgorithm-dictionary",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#KmacKeyAlgorithm-dictionary",
+      "level": 3,
+      "title": "KmacKeyAlgorithm dictionary",
+      "alternateIds": [
+        "x13-5-kmackeyalgorithm-dictionary"
+      ],
+      "number": "13.5"
+    },
+    {
+      "id": "kmac-params",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-params",
+      "level": 3,
+      "title": "KmacParams dictionary",
+      "alternateIds": [
+        "x13-6-kmacparams-dictionary"
+      ],
+      "number": "13.6"
+    },
+    {
+      "id": "kmac-operations",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-operations",
+      "level": 3,
+      "title": "Operations",
+      "alternateIds": [
+        "x13-7-operations"
+      ],
+      "number": "13.7"
+    },
+    {
+      "id": "kmac-operations-sign",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-operations-sign",
+      "level": 4,
+      "title": "Sign",
+      "alternateIds": [
+        "x13-7-1-sign"
+      ],
+      "number": "13.7.1"
+    },
+    {
+      "id": "kmac-operations-verify",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-operations-verify",
+      "level": 4,
+      "title": "Verify",
+      "alternateIds": [
+        "x13-7-2-verify"
+      ],
+      "number": "13.7.2"
+    },
+    {
+      "id": "kmac-operations-generate-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-operations-generate-key",
+      "level": 4,
+      "title": "Generate Key",
+      "alternateIds": [
+        "x13-7-3-generate-key"
+      ],
+      "number": "13.7.3"
+    },
+    {
+      "id": "kmac-operations-import-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-operations-import-key",
+      "level": 4,
+      "title": "Import Key",
+      "alternateIds": [
+        "x13-7-4-import-key"
+      ],
+      "number": "13.7.4"
+    },
+    {
+      "id": "kmac-operations-export-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-operations-export-key",
+      "level": 4,
+      "title": "Export Key",
+      "alternateIds": [
+        "x13-7-5-export-key"
+      ],
+      "number": "13.7.5"
+    },
+    {
+      "id": "kmac-operations-get-key-length",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-operations-get-key-length",
+      "level": 4,
+      "title": "Get key length",
+      "alternateIds": [
+        "x13-7-6-get-key-length"
+      ],
+      "number": "13.7.6"
+    },
+    {
+      "id": "argon2",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2",
+      "level": 2,
+      "title": "14. Argon2",
+      "alternateIds": [
+        "x14-argon2"
+      ]
+    },
+    {
+      "id": "argon2-description",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-description",
+      "level": 3,
+      "title": "Description",
+      "alternateIds": [
+        "x14-1-description"
+      ],
+      "number": "14.1"
+    },
+    {
+      "id": "argon2-registration",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-registration",
+      "level": 3,
+      "title": "Registration",
+      "alternateIds": [
+        "x14-2-registration"
+      ],
+      "number": "14.2"
+    },
+    {
+      "id": "argon2-params",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-params",
+      "level": 3,
+      "title": "Argon2Params dictionary",
+      "alternateIds": [
+        "x14-3-argon2params-dictionary"
+      ],
+      "number": "14.3"
+    },
+    {
+      "id": "argon2-operations",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-operations",
+      "level": 3,
+      "title": "Operations",
+      "alternateIds": [
+        "x14-4-operations"
+      ],
+      "number": "14.4"
+    },
+    {
+      "id": "argon2-operations-derive-bits",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-operations-derive-bits",
+      "level": 4,
+      "title": "Derive Bits",
+      "alternateIds": [
+        "x14-4-1-derive-bits"
+      ],
+      "number": "14.4.1"
+    },
+    {
+      "id": "argon2-operations-import-key",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-operations-import-key",
+      "level": 4,
+      "title": "Import key",
+      "alternateIds": [
+        "x14-4-2-import-key"
+      ],
+      "number": "14.4.2"
+    },
+    {
+      "id": "argon2-operations-get-key-length",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-operations-get-key-length",
+      "level": 4,
+      "title": "Get key length",
+      "alternateIds": [
+        "x14-4-3-get-key-length"
+      ],
+      "number": "14.4.3"
+    },
+    {
+      "id": "usage-example",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#usage-example",
+      "level": 2,
+      "title": "15. Usage Example",
+      "alternateIds": [
+        "x15-usage-example"
+      ]
+    },
+    {
+      "id": "jwk-mapping",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#jwk-mapping",
+      "level": 2,
+      "title": "Mapping between JSON Web Key / JSON Web Algorithm",
+      "alternateIds": [
+        "a-mapping-between-json-web-key-json-web-algorithm"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "algorithm-mappings",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#algorithm-mappings",
+      "level": 3,
+      "title": "Algorithm mappings",
+      "alternateIds": [
+        "a-1-algorithm-mappings"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "pkcs8-mapping",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#pkcs8-mapping",
+      "level": 2,
+      "title": "Mapping between Algorithm and PKCS#8 PrivateKeyInfo",
+      "alternateIds": [
+        "b-mapping-between-algorithm-and-pkcs-8-privatekeyinfo"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "spki-mapping",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#spki-mapping",
+      "level": 2,
+      "title": "Mapping between Algorithm and SubjectPublicKeyInfo",
+      "alternateIds": [
+        "c-mapping-between-algorithm-and-subjectpublickeyinfo"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "conformance",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "d-conformance"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "e-references"
+      ],
+      "number": "E"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "e-1-normative-references"
+      ],
+      "number": "E.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "e-2-informative-references"
+      ],
+      "number": "E.2"
+    }
+  ]
+}

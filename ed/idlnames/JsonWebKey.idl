@@ -24,3 +24,10 @@ dictionary JsonWebKey {
   sequence<RsaOtherPrimesInfo> oth;
   DOMString k;
 };
+
+// Source: Modern Algorithms in the Web Cryptography API (https://wicg.github.io/webcrypto-modern-algos/)
+partial dictionary JsonWebKey {
+  // The following fields are defined in draft-ietf-cose-dilithium-07
+  DOMString pub;
+  DOMString priv;
+};

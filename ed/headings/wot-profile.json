@@ -1,0 +1,721 @@
+{
+  "spec": {
+    "title": "Web of Things (WoT) Profiles",
+    "url": "https://w3c.github.io/wot-profile/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/wot-profile/#title",
+      "level": 1,
+      "title": "Web of Things (WoT) Profiles"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/wot-profile/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/wot-profile/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "motivation",
+      "href": "https://w3c.github.io/wot-profile/#motivation",
+      "level": 3,
+      "title": "Motivation",
+      "alternateIds": [
+        "x1-1-motivation"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "use-cases-and-requirements",
+      "href": "https://w3c.github.io/wot-profile/#use-cases-and-requirements",
+      "level": 3,
+      "title": "Use Cases and Requirements",
+      "alternateIds": [
+        "x1-2-use-cases-and-requirements"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "out-of-the-box-interoperability",
+      "href": "https://w3c.github.io/wot-profile/#out-of-the-box-interoperability",
+      "level": 3,
+      "title": "Out-of-the-Box Interoperability",
+      "alternateIds": [
+        "x1-3-out-of-the-box-interoperability"
+      ],
+      "number": "1.3"
+    },
+    {
+      "id": "technical-interoperability",
+      "href": "https://w3c.github.io/wot-profile/#technical-interoperability",
+      "level": 4,
+      "title": "Technical Interoperability",
+      "alternateIds": [
+        "out-of-the-box-interoperability-technical-interop"
+      ],
+      "number": "1.3.1"
+    },
+    {
+      "id": "syntactic-interoperability",
+      "href": "https://w3c.github.io/wot-profile/#syntactic-interoperability",
+      "level": 4,
+      "title": "Syntactic Interoperability",
+      "alternateIds": [
+        "out-of-the-box-interoperability-syntactic-interop"
+      ],
+      "number": "1.3.2"
+    },
+    {
+      "id": "semantic-interoperability",
+      "href": "https://w3c.github.io/wot-profile/#semantic-interoperability",
+      "level": 4,
+      "title": "Semantic Interoperability",
+      "alternateIds": [
+        "out-of-the-box-interoperability-semantic-interop"
+      ],
+      "number": "1.3.3"
+    },
+    {
+      "id": "organizational-interoperability",
+      "href": "https://w3c.github.io/wot-profile/#organizational-interoperability",
+      "level": 4,
+      "title": "Organizational Interoperability",
+      "alternateIds": [
+        "out-of-the-box-interoperability-organizational-interop"
+      ],
+      "number": "1.3.4"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/wot-profile/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "x2-conformance"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/wot-profile/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "alternateIds": [
+        "x3-terminology"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "additional-definitions",
+      "href": "https://w3c.github.io/wot-profile/#additional-definitions",
+      "level": 3,
+      "title": "Additional Definitions",
+      "alternateIds": [
+        "additional-definitions-"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "profiling-mechanism",
+      "href": "https://w3c.github.io/wot-profile/#profiling-mechanism",
+      "level": 2,
+      "title": "Profiling Mechanism",
+      "alternateIds": [
+        "x4-profiling-mechanism"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "common-constraints",
+      "href": "https://w3c.github.io/wot-profile/#common-constraints",
+      "level": 2,
+      "title": "Common Constraints",
+      "alternateIds": [
+        "x5-common-constraints"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "common-constraints-units",
+      "href": "https://w3c.github.io/wot-profile/#common-constraints-units",
+      "level": 3,
+      "title": "Units",
+      "alternateIds": [
+        "units"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "common-constraints-date-format",
+      "href": "https://w3c.github.io/wot-profile/#common-constraints-date-format",
+      "level": 3,
+      "title": "Date Format",
+      "alternateIds": [
+        "date-format"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "common-constraints-security",
+      "href": "https://w3c.github.io/wot-profile/#common-constraints-security",
+      "level": 3,
+      "title": "Security",
+      "alternateIds": [
+        "x5-3-security"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "common-constraints-discovery",
+      "href": "https://w3c.github.io/wot-profile/#common-constraints-discovery",
+      "level": 3,
+      "title": "Discovery",
+      "alternateIds": [
+        "x5-4-discovery"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "common-constraints-links",
+      "href": "https://w3c.github.io/wot-profile/#common-constraints-links",
+      "level": 3,
+      "title": "Links",
+      "alternateIds": [
+        "x5-5-links"
+      ],
+      "number": "5.5"
+    },
+    {
+      "id": "common-constraints-errors",
+      "href": "https://w3c.github.io/wot-profile/#common-constraints-errors",
+      "level": 3,
+      "title": "Errors",
+      "alternateIds": [
+        "error-responses"
+      ],
+      "number": "5.6"
+    },
+    {
+      "id": "http-basic-profile",
+      "href": "https://w3c.github.io/wot-profile/#http-basic-profile",
+      "level": 2,
+      "title": "HTTP Basic Profile",
+      "alternateIds": [
+        "x6-http-basic-profile"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "http-basic-profile-identifier",
+      "href": "https://w3c.github.io/wot-profile/#http-basic-profile-identifier",
+      "level": 3,
+      "title": "Identifier",
+      "alternateIds": [
+        "x6-1-identifier"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding",
+      "href": "https://w3c.github.io/wot-profile/#http-basic-profile-protocol-binding",
+      "level": 3,
+      "title": "Protocol Binding",
+      "alternateIds": [
+        "x6-2-protocol-binding"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-properties",
+      "href": "https://w3c.github.io/wot-profile/#http-basic-profile-protocol-binding-properties",
+      "level": 4,
+      "title": "Properties",
+      "alternateIds": [
+        "x6-2-1-properties"
+      ],
+      "number": "6.2.1"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-readproperty",
+      "href": "https://w3c.github.io/wot-profile/#http-basic-profile-protocol-binding-readproperty",
+      "level": 5,
+      "title": "readproperty",
+      "alternateIds": [
+        "x6-2-1-1-readproperty"
+      ],
+      "number": "6.2.1.1"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-writeproperty",
+      "href": "https://w3c.github.io/wot-profile/#http-basic-profile-protocol-binding-writeproperty",
+      "level": 5,
+      "title": "writeproperty",
+      "alternateIds": [
+        "x6-2-1-2-writeproperty"
+      ],
+      "number": "6.2.1.2"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-readallproperties",
+      "href": "https://w3c.github.io/wot-profile/#http-basic-profile-protocol-binding-readallproperties",
+      "level": 5,
+      "title": "readallproperties",
+      "alternateIds": [
+        "x6-2-1-3-readallproperties"
+      ],
+      "number": "6.2.1.3"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-writemultipleproperties",
+      "href": "https://w3c.github.io/wot-profile/#http-basic-profile-protocol-binding-writemultipleproperties",
+      "level": 5,
+      "title": "writemultipleproperties",
+      "alternateIds": [
+        "x6-2-1-4-writemultipleproperties"
+      ],
+      "number": "6.2.1.4"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-actions",
+      "href": "https://w3c.github.io/wot-profile/#http-basic-profile-protocol-binding-actions",
+      "level": 4,
+      "title": "Actions",
+      "alternateIds": [
+        "x6-2-2-actions"
+      ],
+      "number": "6.2.2"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-invokeaction",
+      "href": "https://w3c.github.io/wot-profile/#http-basic-profile-protocol-binding-invokeaction",
+      "level": 5,
+      "title": "invokeaction",
+      "alternateIds": [
+        "x6-2-2-1-invokeaction"
+      ],
+      "number": "6.2.2.1"
+    },
+    {
+      "id": "actionstatus-object",
+      "href": "https://w3c.github.io/wot-profile/#actionstatus-object",
+      "level": 6,
+      "title": "ActionStatus object",
+      "alternateIds": [
+        "ActionStatus"
+      ],
+      "number": "6.2.2.1.1"
+    },
+    {
+      "id": "synchronous-action-response",
+      "href": "https://w3c.github.io/wot-profile/#synchronous-action-response",
+      "level": 6,
+      "title": "Synchronous Action Response",
+      "alternateIds": [
+        "sync-action-response"
+      ],
+      "number": "6.2.2.1.2"
+    },
+    {
+      "id": "asynchronous-action-response",
+      "href": "https://w3c.github.io/wot-profile/#asynchronous-action-response",
+      "level": 6,
+      "title": "Asynchronous Action Response",
+      "alternateIds": [
+        "async-action-response"
+      ],
+      "number": "6.2.2.1.3"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-queryaction",
+      "href": "https://w3c.github.io/wot-profile/#http-basic-profile-protocol-binding-queryaction",
+      "level": 5,
+      "title": "queryaction",
+      "alternateIds": [
+        "x6-2-2-2-queryaction"
+      ],
+      "number": "6.2.2.2"
+    },
+    {
+      "id": "http-basic-profile-protocol-binding-cancelaction",
+      "href": "https://w3c.github.io/wot-profile/#http-basic-profile-protocol-binding-cancelaction",
+      "level": 5,
+      "title": "cancelaction",
+      "alternateIds": [
+        "x6-2-2-3-cancelaction"
+      ],
+      "number": "6.2.2.3"
+    },
+    {
+      "id": "queryallactions",
+      "href": "https://w3c.github.io/wot-profile/#queryallactions",
+      "level": 5,
+      "title": "queryallactions",
+      "alternateIds": [
+        "x6-2-2-4-queryallactions"
+      ],
+      "number": "6.2.2.4"
+    },
+    {
+      "id": "http-sse-profile",
+      "href": "https://w3c.github.io/wot-profile/#http-sse-profile",
+      "level": 2,
+      "title": "HTTP SSE Profile",
+      "alternateIds": [
+        "x7-http-sse-profile"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "http-sse-profile-identifier",
+      "href": "https://w3c.github.io/wot-profile/#http-sse-profile-identifier",
+      "level": 3,
+      "title": "Identifier",
+      "alternateIds": [
+        "x7-1-identifier"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "http-sse-profile-protocol-binding",
+      "href": "https://w3c.github.io/wot-profile/#http-sse-profile-protocol-binding",
+      "level": 3,
+      "title": "Protocol Binding",
+      "alternateIds": [
+        "x7-2-protocol-binding"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "http-sse-profile-protocol-binding-properties",
+      "href": "https://w3c.github.io/wot-profile/#http-sse-profile-protocol-binding-properties",
+      "level": 4,
+      "title": "Properties",
+      "alternateIds": [
+        "x7-2-1-properties"
+      ],
+      "number": "7.2.1"
+    },
+    {
+      "id": "observeproperty",
+      "href": "https://w3c.github.io/wot-profile/#observeproperty",
+      "level": 5,
+      "title": "observeproperty",
+      "alternateIds": [
+        "x7-2-1-1-observeproperty"
+      ],
+      "number": "7.2.1.1"
+    },
+    {
+      "id": "unobserveproperty",
+      "href": "https://w3c.github.io/wot-profile/#unobserveproperty",
+      "level": 5,
+      "title": "unobserveproperty",
+      "alternateIds": [
+        "x7-2-1-2-unobserveproperty"
+      ],
+      "number": "7.2.1.2"
+    },
+    {
+      "id": "observeallproperties",
+      "href": "https://w3c.github.io/wot-profile/#observeallproperties",
+      "level": 5,
+      "title": "observeallproperties",
+      "alternateIds": [
+        "x7-2-1-3-observeallproperties"
+      ],
+      "number": "7.2.1.3"
+    },
+    {
+      "id": "unobserveallproperties",
+      "href": "https://w3c.github.io/wot-profile/#unobserveallproperties",
+      "level": 5,
+      "title": "unobserveallproperties",
+      "alternateIds": [
+        "x7-2-1-4-unobserveallproperties"
+      ],
+      "number": "7.2.1.4"
+    },
+    {
+      "id": "http-sse-profile-protocol-binding-events",
+      "href": "https://w3c.github.io/wot-profile/#http-sse-profile-protocol-binding-events",
+      "level": 4,
+      "title": "Events",
+      "alternateIds": [
+        "x7-2-2-events"
+      ],
+      "number": "7.2.2"
+    },
+    {
+      "id": "http-sse-profile-protocol-binding-subscribeevent",
+      "href": "https://w3c.github.io/wot-profile/#http-sse-profile-protocol-binding-subscribeevent",
+      "level": 5,
+      "title": "subscribeevent",
+      "alternateIds": [
+        "x7-2-2-1-subscribeevent"
+      ],
+      "number": "7.2.2.1"
+    },
+    {
+      "id": "http-sse-profile-protocol-binding-events-unsubscribeevent",
+      "href": "https://w3c.github.io/wot-profile/#http-sse-profile-protocol-binding-events-unsubscribeevent",
+      "level": 5,
+      "title": "unsubscribeevent",
+      "alternateIds": [
+        "x7-2-2-2-unsubscribeevent"
+      ],
+      "number": "7.2.2.2"
+    },
+    {
+      "id": "http-sse-profile-protocol-binding-events-subscribeallevents",
+      "href": "https://w3c.github.io/wot-profile/#http-sse-profile-protocol-binding-events-subscribeallevents",
+      "level": 5,
+      "title": "subscribeallevents",
+      "alternateIds": [
+        "x7-2-2-3-subscribeallevents"
+      ],
+      "number": "7.2.2.3"
+    },
+    {
+      "id": "http-sse-profile-protocol-binding-events-unsubscribeallevents",
+      "href": "https://w3c.github.io/wot-profile/#http-sse-profile-protocol-binding-events-unsubscribeallevents",
+      "level": 5,
+      "title": "unsubscribeallevents",
+      "alternateIds": [
+        "x7-2-2-4-unsubscribeallevents"
+      ],
+      "number": "7.2.2.4"
+    },
+    {
+      "id": "http-webhook-profile",
+      "href": "https://w3c.github.io/wot-profile/#http-webhook-profile",
+      "level": 2,
+      "title": "HTTP Webhook Profile",
+      "alternateIds": [
+        "x8-http-webhook-profile"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "http-webhook-profile-identifier",
+      "href": "https://w3c.github.io/wot-profile/#http-webhook-profile-identifier",
+      "level": 3,
+      "title": "Identifier",
+      "alternateIds": [
+        "x8-1-identifier"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding",
+      "href": "https://w3c.github.io/wot-profile/#http-webhook-profile-protocol-binding",
+      "level": 3,
+      "title": "Protocol Binding",
+      "alternateIds": [
+        "x8-2-protocol-binding"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-properties",
+      "href": "https://w3c.github.io/wot-profile/#http-webhook-profile-protocol-binding-properties",
+      "level": 4,
+      "title": "Properties",
+      "alternateIds": [
+        "x8-2-1-properties"
+      ],
+      "number": "8.2.1"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-observeproperty",
+      "href": "https://w3c.github.io/wot-profile/#http-webhook-profile-protocol-binding-observeproperty",
+      "level": 5,
+      "title": "observeproperty",
+      "alternateIds": [
+        "x8-2-1-1-observeproperty"
+      ],
+      "number": "8.2.1.1"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-unobserveproperty",
+      "href": "https://w3c.github.io/wot-profile/#http-webhook-profile-protocol-binding-unobserveproperty",
+      "level": 5,
+      "title": "unobserveproperty",
+      "alternateIds": [
+        "x8-2-1-2-unobserveproperty"
+      ],
+      "number": "8.2.1.2"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-events-observeallproperties",
+      "href": "https://w3c.github.io/wot-profile/#http-webhook-profile-protocol-binding-events-observeallproperties",
+      "level": 5,
+      "title": "observeallproperties",
+      "alternateIds": [
+        "x8-2-1-3-observeallproperties"
+      ],
+      "number": "8.2.1.3"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-unobserveallproperties",
+      "href": "https://w3c.github.io/wot-profile/#http-webhook-profile-protocol-binding-unobserveallproperties",
+      "level": 5,
+      "title": "unobserveallproperties",
+      "alternateIds": [
+        "x8-2-1-4-unobserveallproperties"
+      ],
+      "number": "8.2.1.4"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-events",
+      "href": "https://w3c.github.io/wot-profile/#http-webhook-profile-protocol-binding-events",
+      "level": 4,
+      "title": "Events",
+      "alternateIds": [
+        "x8-2-2-events"
+      ],
+      "number": "8.2.2"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-subscribeevent",
+      "href": "https://w3c.github.io/wot-profile/#http-webhook-profile-protocol-binding-subscribeevent",
+      "level": 5,
+      "title": "subscribeevent",
+      "alternateIds": [
+        "x8-2-2-1-subscribeevent"
+      ],
+      "number": "8.2.2.1"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-unsubscribeevent",
+      "href": "https://w3c.github.io/wot-profile/#http-webhook-profile-protocol-binding-unsubscribeevent",
+      "level": 5,
+      "title": "unsubscribeevent",
+      "alternateIds": [
+        "x8-2-2-2-unsubscribeevent"
+      ],
+      "number": "8.2.2.2"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-events-subscribeallevents",
+      "href": "https://w3c.github.io/wot-profile/#http-webhook-profile-protocol-binding-events-subscribeallevents",
+      "level": 5,
+      "title": "subscribeallevents",
+      "alternateIds": [
+        "x8-2-2-3-subscribeallevents"
+      ],
+      "number": "8.2.2.3"
+    },
+    {
+      "id": "http-webhook-profile-protocol-binding-unsubscribeallevents",
+      "href": "https://w3c.github.io/wot-profile/#http-webhook-profile-protocol-binding-unsubscribeallevents",
+      "level": 5,
+      "title": "unsubscribeallevents",
+      "alternateIds": [
+        "x8-2-2-4-unsubscribeallevents"
+      ],
+      "number": "8.2.2.4"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/wot-profile/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "x9-privacy-considerations"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/wot-profile/#security-considerations",
+      "level": 2,
+      "title": "10. Security Considerations",
+      "alternateIds": [
+        "x10-security-considerations"
+      ]
+    },
+    {
+      "id": "accessibility-considerations",
+      "href": "https://w3c.github.io/wot-profile/#accessibility-considerations",
+      "level": 2,
+      "title": "11. Accessibility Considerations",
+      "alternateIds": [
+        "x11-accessibility-considerations"
+      ]
+    },
+    {
+      "id": "changes",
+      "href": "https://w3c.github.io/wot-profile/#changes",
+      "level": 2,
+      "title": "Recent Specification Changes",
+      "alternateIds": [
+        "a-recent-specification-changes"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "changes-from-the-wd-published-18-january-2023",
+      "href": "https://w3c.github.io/wot-profile/#changes-from-the-wd-published-18-january-2023",
+      "level": 3,
+      "title": "Changes from the WD published 18 January 2023",
+      "alternateIds": [
+        "changes-from-wd"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "changes-from-the-fpwd-published-24-november-2020",
+      "href": "https://w3c.github.io/wot-profile/#changes-from-the-fpwd-published-24-november-2020",
+      "level": 3,
+      "title": "Changes from the FPWD published 24 November 2020",
+      "alternateIds": [
+        "changes-from-fpwd"
+      ],
+      "number": "A.2"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/wot-profile/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "b-references"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/wot-profile/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "b-1-normative-references"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/wot-profile/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "b-2-informative-references"
+      ],
+      "number": "B.2"
+    }
+  ]
+}

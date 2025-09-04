@@ -9,8 +9,8 @@
       "functions": {
         "Window": [
           "CSSViewTransitionRule",
-          "ViewTransitionTypeSet",
-          "ViewTransition"
+          "ViewTransition",
+          "ViewTransitionTypeSet"
         ]
       }
     },
@@ -84,43 +84,30 @@
         "partial": false,
         "href": "https://drafts.csswg.org/css-view-transitions-2/#cssviewtransitionrule"
       },
-      "ViewTransitionTypeSet": {
-        "fragment": "[Exposed=Window]\ninterface ViewTransitionTypeSet {\n  setlike<DOMString>;\n};",
-        "type": "interface",
-        "name": "ViewTransitionTypeSet",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "setlike",
-            "idlType": [
-              {
-                "type": null,
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "DOMString"
-              }
-            ],
-            "arguments": [],
-            "extAttrs": [],
-            "readonly": false,
-            "async": false
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransitiontypeset"
+      "ViewTransitionUpdateCallback": {
+        "fragment": "callback ViewTransitionUpdateCallback = Promise<any> ();",
+        "type": "callback",
+        "name": "ViewTransitionUpdateCallback",
+        "idlType": {
+          "type": "return-type",
+          "extAttrs": [],
+          "generic": "Promise",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            }
+          ]
+        },
+        "arguments": [],
+        "extAttrs": [],
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#callbackdef-viewtransitionupdatecallback"
       },
       "StartViewTransitionOptions": {
         "fragment": "dictionary StartViewTransitionOptions {\n  ViewTransitionUpdateCallback? update = null;\n  sequence<DOMString>? types = null;\n};",
@@ -177,50 +164,178 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://drafts.csswg.org/css-view-transitions-2/#dictdef-startviewtransitionoptions"
-      }
-    },
-    "idlExtendedNames": {
-      "ViewTransition": [
-        {
-          "fragment": "[Exposed=Window]\npartial interface ViewTransition {\n  attribute ViewTransitionTypeSet types;\n};",
-          "type": "interface",
-          "name": "ViewTransition",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "attribute",
-              "name": "types",
-              "idlType": {
-                "type": "attribute-type",
+      },
+      "ViewTransition": {
+        "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  readonly attribute Promise<undefined> updateCallbackDone;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> finished;\n  undefined skipTransition();\n  attribute ViewTransitionTypeSet types;\n};",
+        "type": "interface",
+        "name": "ViewTransition",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "updateCallbackDone",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-updatecallbackdone"
+          },
+          {
+            "type": "attribute",
+            "name": "ready",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-ready"
+          },
+          {
+            "type": "attribute",
+            "name": "finished",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-finished"
+          },
+          {
+            "type": "operation",
+            "name": "skipTransition",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-skiptransition"
+          },
+          {
+            "type": "attribute",
+            "name": "types",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ViewTransitionTypeSet"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-types"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransition"
+      },
+      "ViewTransitionTypeSet": {
+        "fragment": "[Exposed=Window]\ninterface ViewTransitionTypeSet {\n  setlike<DOMString>;\n};",
+        "type": "interface",
+        "name": "ViewTransitionTypeSet",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "setlike",
+            "idlType": [
+              {
+                "type": null,
                 "extAttrs": [],
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "ViewTransitionTypeSet"
-              },
-              "extAttrs": [],
-              "special": "",
-              "readonly": false,
-              "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-types"
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "Window"
-              },
-              "arguments": []
-            }
-          ],
-          "partial": true
-        }
-      ],
+                "idlType": "DOMString"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransitiontypeset"
+      }
+    },
+    "idlExtendedNames": {
       "Document": [
         {
-          "fragment": "partial interface Document {\n  ViewTransition startViewTransition(optional (ViewTransitionUpdateCallback or StartViewTransitionOptions) callbackOptions = {});\n};",
+          "fragment": "partial interface Document {\n  ViewTransition startViewTransition(\n    optional (ViewTransitionUpdateCallback or StartViewTransitionOptions) callbackOptions = {}\n  );\n  readonly attribute ViewTransition? activeViewTransition;\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -276,6 +391,22 @@
               "extAttrs": [],
               "special": "",
               "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-document-startviewtransition"
+            },
+            {
+              "type": "attribute",
+              "name": "activeViewTransition",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "ViewTransition"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true,
+              "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-document-activeviewtransition"
             }
           ],
           "extAttrs": [],
@@ -287,8 +418,8 @@
     "exposed": {
       "Window": [
         "CSSViewTransitionRule",
-        "ViewTransitionTypeSet",
-        "ViewTransition"
+        "ViewTransition",
+        "ViewTransitionTypeSet"
       ]
     },
     "dependencies": {
@@ -296,24 +427,22 @@
         "CSSRule",
         "CSSOMString"
       ],
-      "ViewTransitionTypeSet": [],
-      "ViewTransition": [
-        "ViewTransitionTypeSet"
-      ],
-      "StartViewTransitionOptions": [
-        "ViewTransitionUpdateCallback"
-      ],
       "Document": [
         "ViewTransition",
         "ViewTransitionUpdateCallback",
         "StartViewTransitionOptions"
-      ]
+      ],
+      "StartViewTransitionOptions": [
+        "ViewTransitionUpdateCallback"
+      ],
+      "ViewTransition": [
+        "ViewTransitionTypeSet"
+      ],
+      "ViewTransitionTypeSet": []
     },
     "externalDependencies": [
       "CSSRule",
       "CSSOMString",
-      "ViewTransition",
-      "ViewTransitionUpdateCallback",
       "Document"
     ],
     "hasObsoleteIdl": false

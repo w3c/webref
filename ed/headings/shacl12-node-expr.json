@@ -1,0 +1,542 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 Node Expressions",
+    "url": "https://w3c.github.io/data-shapes/shacl12-node-expr/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#title",
+      "level": 1,
+      "title": "SHACL 1.2 Node Expressions"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "specifications",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#specifications",
+      "level": 2,
+      "title": "SHACL Specifications",
+      "alternateIds": [
+        "shacl-specifications"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "terminolgy",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#terminolgy",
+      "level": 3,
+      "title": "Terminology",
+      "alternateIds": [
+        "x1-1-terminology"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "document-conventions",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#document-conventions",
+      "level": 3,
+      "title": "Document Conventions",
+      "alternateIds": [
+        "x1-2-document-conventions"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-3-conformance"
+      ],
+      "number": "1.3"
+    },
+    {
+      "id": "getting-started",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#getting-started",
+      "level": 2,
+      "title": "Getting started with Node Expressions",
+      "alternateIds": [
+        "x2-getting-started-with-node-expressions"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "syntax",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#syntax",
+      "level": 2,
+      "title": "Node Expression Syntax",
+      "alternateIds": [
+        "x3-node-expression-syntax"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "ConstantNodeExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#ConstantNodeExpression",
+      "level": 3,
+      "title": "Constant Node Expressions",
+      "alternateIds": [
+        "x3-1-constant-node-expressions"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "IRIExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#IRIExpression",
+      "level": 4,
+      "title": "IRI Expressions",
+      "alternateIds": [
+        "x3-1-1-iri-expressions"
+      ],
+      "number": "3.1.1"
+    },
+    {
+      "id": "LiteralExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#LiteralExpression",
+      "level": 4,
+      "title": "Literal Expressions",
+      "alternateIds": [
+        "x3-1-2-literal-expressions"
+      ],
+      "number": "3.1.2"
+    },
+    {
+      "id": "blank-node-functions",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#blank-node-functions",
+      "level": 3,
+      "title": "Node Expressions based on Blank Nodes",
+      "alternateIds": [
+        "x3-2-node-expressions-based-on-blank-nodes"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "NamedParameterFunctions",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#NamedParameterFunctions",
+      "level": 4,
+      "title": "Named Parameter Functions",
+      "alternateIds": [
+        "x3-2-1-named-parameter-functions"
+      ],
+      "number": "3.2.1"
+    },
+    {
+      "id": "ListParameterFunction",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#ListParameterFunction",
+      "level": 4,
+      "title": "List Parameter Functions",
+      "alternateIds": [
+        "x3-2-2-list-parameter-functions"
+      ],
+      "number": "3.2.2"
+    },
+    {
+      "id": "failure-handling",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#failure-handling",
+      "level": 3,
+      "title": "Handling of Failures",
+      "alternateIds": [
+        "x3-3-handling-of-failures"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "library",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#library",
+      "level": 2,
+      "title": "Node Expressions Library",
+      "alternateIds": [
+        "x4-node-expressions-library"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "library-basic",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#library-basic",
+      "level": 3,
+      "title": "Basic Node Expressions",
+      "alternateIds": [
+        "x4-1-basic-node-expressions"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "VarExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#VarExpression",
+      "level": 4,
+      "title": "Var Expressions",
+      "alternateIds": [
+        "x4-1-1-var-expressions"
+      ],
+      "number": "4.1.1"
+    },
+    {
+      "id": "ListExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#ListExpression",
+      "level": 4,
+      "title": "List Expressions",
+      "alternateIds": [
+        "x4-1-2-list-expressions"
+      ],
+      "number": "4.1.2"
+    },
+    {
+      "id": "PathValuesExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#PathValuesExpression",
+      "level": 4,
+      "title": "Path Values Expressions",
+      "alternateIds": [
+        "x4-1-3-path-values-expressions"
+      ],
+      "number": "4.1.3"
+    },
+    {
+      "id": "ExistsExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#ExistsExpression",
+      "level": 4,
+      "title": "Exists Expressions",
+      "alternateIds": [
+        "x4-1-4-exists-expressions"
+      ],
+      "number": "4.1.4"
+    },
+    {
+      "id": "IfExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#IfExpression",
+      "level": 4,
+      "title": "If Expressions",
+      "alternateIds": [
+        "x4-1-5-if-expressions"
+      ],
+      "number": "4.1.5"
+    },
+    {
+      "id": "library-list-operators",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#library-list-operators",
+      "level": 3,
+      "title": "List Operator Expressions",
+      "alternateIds": [
+        "x4-2-list-operator-expressions"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "DistinctExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#DistinctExpression",
+      "level": 4,
+      "title": "Distinct Expressions",
+      "alternateIds": [
+        "x4-2-1-distinct-expressions"
+      ],
+      "number": "4.2.1"
+    },
+    {
+      "id": "IntersectionExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#IntersectionExpression",
+      "level": 4,
+      "title": "Intersection Expressions",
+      "alternateIds": [
+        "x4-2-2-intersection-expressions"
+      ],
+      "number": "4.2.2"
+    },
+    {
+      "id": "UnionExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#UnionExpression",
+      "level": 4,
+      "title": "Union Expressions",
+      "alternateIds": [
+        "x4-2-3-union-expressions"
+      ],
+      "number": "4.2.3"
+    },
+    {
+      "id": "MinusExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#MinusExpression",
+      "level": 4,
+      "title": "Minus Expressions",
+      "alternateIds": [
+        "x4-2-4-minus-expressions"
+      ],
+      "number": "4.2.4"
+    },
+    {
+      "id": "FilterShapeExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#FilterShapeExpression",
+      "level": 4,
+      "title": "Filter Shape Expressions",
+      "alternateIds": [
+        "x4-2-5-filter-shape-expressions"
+      ],
+      "number": "4.2.5"
+    },
+    {
+      "id": "LimitExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#LimitExpression",
+      "level": 4,
+      "title": "Limit Expressions",
+      "alternateIds": [
+        "x4-2-6-limit-expressions"
+      ],
+      "number": "4.2.6"
+    },
+    {
+      "id": "OffsetExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#OffsetExpression",
+      "level": 4,
+      "title": "Offset Expressions",
+      "alternateIds": [
+        "x4-2-7-offset-expressions"
+      ],
+      "number": "4.2.7"
+    },
+    {
+      "id": "OrderByExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#OrderByExpression",
+      "level": 4,
+      "title": "OrderBy Expressions",
+      "alternateIds": [
+        "x4-2-8-orderby-expressions"
+      ],
+      "number": "4.2.8"
+    },
+    {
+      "id": "library-aggregation",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#library-aggregation",
+      "level": 3,
+      "title": "Aggregation Expressions",
+      "alternateIds": [
+        "x4-3-aggregation-expressions"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "CountExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#CountExpression",
+      "level": 4,
+      "title": "Count Expressions",
+      "alternateIds": [
+        "x4-3-1-count-expressions"
+      ],
+      "number": "4.3.1"
+    },
+    {
+      "id": "MinExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#MinExpression",
+      "level": 4,
+      "title": "Min Expressions",
+      "alternateIds": [
+        "x4-3-2-min-expressions"
+      ],
+      "number": "4.3.2"
+    },
+    {
+      "id": "MaxExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#MaxExpression",
+      "level": 4,
+      "title": "Max Expressions",
+      "alternateIds": [
+        "x4-3-3-max-expressions"
+      ],
+      "number": "4.3.3"
+    },
+    {
+      "id": "SumExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#SumExpression",
+      "level": 4,
+      "title": "Sum Expressions",
+      "alternateIds": [
+        "x4-3-4-sum-expressions"
+      ],
+      "number": "4.3.4"
+    },
+    {
+      "id": "misc",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#misc",
+      "level": 3,
+      "title": "Miscellaneous Node Expressions",
+      "alternateIds": [
+        "x4-4-miscellaneous-node-expressions"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "InstancesOfExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#InstancesOfExpression",
+      "level": 4,
+      "title": "InstancesOf Expressions",
+      "alternateIds": [
+        "x4-4-1-instancesof-expressions"
+      ],
+      "number": "4.4.1"
+    },
+    {
+      "id": "constraint-components",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#constraint-components",
+      "level": 2,
+      "title": "Constraint Components",
+      "alternateIds": [
+        "x5-constraint-components"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "ExpressionConstraintComponent",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#ExpressionConstraintComponent",
+      "level": 3,
+      "title": "sh:expression",
+      "alternateIds": [
+        "x5-1-sh-expression"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "NodeByExpressionConstraintComponent",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#NodeByExpressionConstraintComponent",
+      "level": 3,
+      "title": "sh:nodeByExpression",
+      "alternateIds": [
+        "x5-2-sh-nodebyexpression"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "dynamic-shacl",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#dynamic-shacl",
+      "level": 2,
+      "title": "Dynamic SHACL",
+      "alternateIds": [
+        "x6-dynamic-shacl"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "example-dynamic-minimum-age-of-presidents",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#example-dynamic-minimum-age-of-presidents",
+      "level": 3,
+      "title": "Example: Dynamic Minimum Age of Presidents",
+      "alternateIds": [
+        "x6-1-example-dynamic-minimum-age-of-presidents"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "example-dynamic-enumerations",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#example-dynamic-enumerations",
+      "level": 3,
+      "title": "Example: Dynamic Enumerations",
+      "alternateIds": [
+        "x6-2-example-dynamic-enumerations"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "security",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "x7-security-considerations"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "privacy",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "x8-privacy-considerations"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "ack",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "a-acknowledgements"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "internationalization",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#internationalization",
+      "level": 2,
+      "title": "Internationalization Considerations",
+      "alternateIds": [
+        "b-internationalization-considerations"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#index",
+      "level": 2,
+      "title": "Index",
+      "alternateIds": [
+        "c-index"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "alternateIds": [
+        "c-1-terms-defined-by-this-specification"
+      ],
+      "number": "C.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "alternateIds": [
+        "c-2-terms-defined-by-reference"
+      ],
+      "number": "C.2"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "d-references"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "d-1-normative-references"
+      ],
+      "number": "D.1"
+    }
+  ]
+}

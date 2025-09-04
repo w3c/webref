@@ -5,9 +5,156 @@
   },
   "algorithms": [
     {
+      "name": "parse a speculation rule",
+      "html": "Modify <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#parse-a-speculation-rule\" id=\"ref-for-parse-a-speculation-rule\">parse a speculation rule</a> by adding the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>targetHint</var> be null.</p>"
+        },
+        {
+          "html": "If <var>input</var>[\"<code>target_hint</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>input</var>[\"<code>target_hint</code>\"] is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#valid-navigable-target-name-or-keyword\" id=\"ref-for-valid-navigable-target-name-or-keyword\">valid navigable target name or keyword</a>:",
+              "rationale": "return",
+              "steps": [
+                {
+                  "html": "<p>The user agent may <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#report-a-warning-to-the-console\" id=\"ref-for-report-a-warning-to-the-console\">report a warning to the console</a> indicating that the supplied target hint was invalid.</p>"
+                },
+                {
+                  "html": "<p>Return null.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Set <var>targetHint</var> to <var>input</var>[\"<code>target_hint</code>\"].</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "inner consider speculative loads steps",
+      "html": "Update the <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#inner-consider-speculative-loads-steps\" id=\"ref-for-inner-consider-speculative-loads-steps\">inner consider speculative loads steps</a> algorithm by appending the following steps near the beginning, after assembling <var>prefetchCandidates</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>prerenderCandidates</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>ruleSet</var> of <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#document-sr-sets\" id=\"ref-for-document-sr-sets\">speculation rule sets</a>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>rule</var> of <var>ruleSet</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#speculation-rule-set-prerender-rules\" id=\"ref-for-speculation-rule-set-prerender-rules①\">prerender rules</a>:",
+              "rationale": "for",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>url</var> of <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sr-urls\" id=\"ref-for-sr-urls\">URLs</a>:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>referrerPolicy</var> be the result of <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#compute-speculative-load-referrer-policy\" id=\"ref-for-compute-speculative-load-referrer-policy\">computing a speculative load referrer policy</a> given <var>rule</var> and null.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-candidate\" id=\"ref-for-prerender-candidate\">prerender candidate</a> with</p>\n            <dl class=\"props\">\n             <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-url\" id=\"ref-for-sl-candidate-url\">URL</a>\n             </dt><dd data-md=\"\">\n              <p><var>url</var></p>\n             </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-nvs-hint\" id=\"ref-for-sl-candidate-nvs-hint\">No-Vary-Search hint</a>\n             </dt><dd data-md=\"\">\n              <p><var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sr-nvs-hint\" id=\"ref-for-sr-nvs-hint\">No-Vary-Search hint</a></p>\n             </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-eagerness\" id=\"ref-for-sl-candidate-eagerness\">eagerness</a>\n             </dt><dd data-md=\"\">\n              <p><var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sr-eagerness\" id=\"ref-for-sr-eagerness\">eagerness</a></p>\n             </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-referrer-policy\" id=\"ref-for-sl-candidate-referrer-policy\">referrer policy</a>\n             </dt><dd data-md=\"\">\n              <p><var>referrerPolicy</var></p>\n             </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-tags\" id=\"ref-for-sl-candidate-tags\">tags</a>\n             </dt><dd data-md=\"\">\n              <p><var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sr-tags\" id=\"ref-for-sr-tags\">tags</a></p>\n             </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-candidate-target-navigable-name-hint\" id=\"ref-for-prerender-candidate-target-navigable-name-hint\">target navigable name hint</a>\n             </dt><dd data-md=\"\">\n              <p><var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#speculation-rule-target-navigable-name-hint\" id=\"ref-for-speculation-rule-target-navigable-name-hint②\">target navigable name hint</a></p>\n            </dd></dl>\n            <p>to <var>prerenderCandidates</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sr-predicate\" id=\"ref-for-sr-predicate\">predicate</a> is not null, then:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>links</var> be the result of <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#finding-matching-links\" id=\"ref-for-finding-matching-links\">finding matching links</a> given <var>document</var> and <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sr-predicate\" id=\"ref-for-sr-predicate①\">predicate</a>.</p>"
+                    },
+                    {
+                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>link</var> of <var>links</var>:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>Let <var>target</var> be <var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#speculation-rule-target-navigable-name-hint\" id=\"ref-for-speculation-rule-target-navigable-name-hint③\">target navigable name hint</a>.</p>"
+                        },
+                        {
+                          "html": "<p>If <var>target</var> is null, set it to the result of <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/semantics.html#get-an-element's-target\" id=\"ref-for-get-an-element's-target\">getting an element’s target</a> given <var>link</var>.</p>"
+                        },
+                        {
+                          "html": "<p>Let <var>referrerPolicy</var> be the result of <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#compute-speculative-load-referrer-policy\" id=\"ref-for-compute-speculative-load-referrer-policy①\">computing a speculative load referrer policy</a> given <var>rule</var> and <var>link</var>.</p>"
+                        },
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-candidate\" id=\"ref-for-prerender-candidate①\">prerender candidate</a> with</p>\n              <dl class=\"props\">\n               <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-url\" id=\"ref-for-sl-candidate-url①\">URL</a>\n               </dt><dd data-md=\"\">\n                <p><var>link</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/links.html#concept-hyperlink-url\" id=\"ref-for-concept-hyperlink-url\">url</a></p>\n               </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-nvs-hint\" id=\"ref-for-sl-candidate-nvs-hint①\">No-Vary-Search hint</a>\n               </dt><dd data-md=\"\">\n                <p><var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sr-nvs-hint\" id=\"ref-for-sr-nvs-hint①\">No-Vary-Search hint</a></p>\n               </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-eagerness\" id=\"ref-for-sl-candidate-eagerness①\">eagerness</a>\n               </dt><dd data-md=\"\">\n                <p><var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sr-eagerness\" id=\"ref-for-sr-eagerness①\">eagerness</a></p>\n               </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-referrer-policy\" id=\"ref-for-sl-candidate-referrer-policy①\">referrer policy</a>\n               </dt><dd data-md=\"\">\n                <p><var>referrerPolicy</var></p>\n               </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-tags\" id=\"ref-for-sl-candidate-tags①\">tags</a>\n               </dt><dd data-md=\"\">\n                <p><var>rule</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sr-tags\" id=\"ref-for-sr-tags①\">tags</a></p>\n               </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-candidate-target-navigable-name-hint\" id=\"ref-for-prerender-candidate-target-navigable-name-hint①\">target navigable name hint</a>\n               </dt><dd data-md=\"\">\n                <p><var>target</var></p>\n              </dd></dl>\n              <p>to <var>prerenderCandidates</var>.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>speculativeLoadCandidates</var> be the union of <var>prefetchCandidates</var> and <var>prerenderCandidates</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "inner consider speculative loads steps",
+      "html": "Replace the step which performs the actual prefetching by looping over <var>prefetchCandidateGroups</var> with the following:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>speculativeLoadCandidateGroups</var> be the union of <var>prefetchCandidateGroups</var> and <var>prerenderCandidateGroups</var>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>group</var> of <var>speculativeLoadCandidateGroups</var>:",
+          "rationale": "run the following steps",
+          "steps": [
+            {
+              "html": "The user agent may run the following steps:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>candidate</var> be <var>group</var>[0].</p>"
+                },
+                {
+                  "html": "<p>Let <var>tagsToSend</var> be the result of <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#collect-tags-from-speculative-load-candidates\" id=\"ref-for-collect-tags-from-speculative-load-candidates\">collecting tags from speculative load candidates</a> given <var>group</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>prefetchRecord</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record\" id=\"ref-for-prefetch-record①\">prefetch record</a> with</p>\n          <dl class=\"props\">\n           <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#source\" id=\"ref-for-source\">source</a>\n           </dt><dd data-md=\"\">\n            <p>\"<code>speculation rules</code>\"</p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url\">URL</a>\n           </dt><dd data-md=\"\">\n            <p><var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-url\" id=\"ref-for-sl-candidate-url②\">URL</a></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-no-vary-search-hint\" id=\"ref-for-prefetch-record-no-vary-search-hint\">No-Vary-Search hint</a>\n           </dt><dd data-md=\"\">\n            <p><var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-nvs-hint\" id=\"ref-for-sl-candidate-nvs-hint②\">No-Vary-Search hint</a></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-referrer-policy\" id=\"ref-for-prefetch-record-referrer-policy\">referrer policy</a>\n           </dt><dd data-md=\"\">\n            <p><var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-referrer-policy\" id=\"ref-for-sl-candidate-referrer-policy②\">referrer policy</a></p>\n           </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-tags\" id=\"ref-for-prefetch-record-tags\">tags</a>\n           </dt><dd data-md=\"\">\n            <p><var>tagsToSend</var></p>\n          </dd></dl>"
+                },
+                {
+                  "html": "<p>If <var>candidate</var> is a <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#prefetch-candidate\" id=\"ref-for-prefetch-candidate\">prefetch candidate</a>, then set <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-anonymization-policy\" id=\"ref-for-prefetch-record-anonymization-policy\">anonymization policy</a> to <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://whatpr.org/html/11426/speculative-loading.html#sl-candidate-anonymization-policy\" id=\"ref-for-sl-candidate-anonymization-policy\">anonymization policy</a>.</p>"
+                },
+                {
+                  "html": "If <var>candidate</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-candidate\" id=\"ref-for-prerender-candidate②\">prerender candidate</a>, then the user agent may run the following steps:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable\">prerendering traversable</a> to \"<code>to be created</code>\".</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-target-navigable-name-hint\" id=\"ref-for-prerendering-target-navigable-name-hint\">prerendering target navigable name hint</a> to <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerender-candidate-target-navigable-name-hint\" id=\"ref-for-prerender-candidate-target-navigable-name-hint②\">target navigable name hint</a>.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#start-a-referrer-initiated-navigational-prerender\" id=\"ref-for-start-a-referrer-initiated-navigational-prerender\">Start a referrer-initiated navigational prerender</a> given <var>document</var> and <var>prefetchRecord</var>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>If the user agent did not run the previous step, then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#start-a-referrer-initiated-navigational-prefetch\" id=\"ref-for-start-a-referrer-initiated-navigational-prefetch\">start a referrer-initiated navigational prefetch</a> given <var>document</var> and <var>prefetchRecord</var>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Document/post-prerendering activation steps list",
       "href": "https://wicg.github.io/nav-speculation/prerendering.html#document-post-prerendering-activation-steps-list",
-      "html": "Every <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document④\">Document</a></code> has a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-post-prerendering-activation-steps-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">post-prerendering activation steps list</dfn>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> where each <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">item</a> is a series of algorithm steps. For convenience, we define the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"platform object\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"platform-object-post-prerendering-activation-steps-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">post-prerendering activation steps list</dfn> for any platform object <var>platformObject</var> as:",
+      "html": "Every <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document④\">Document</a></code> has a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"document-post-prerendering-activation-steps-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">post-prerendering activation steps list</dfn>, which is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> where each <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">item</a> is a series of algorithm steps. For convenience, we define the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"platform object\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"platform-object-post-prerendering-activation-steps-list\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">post-prerendering activation steps list</dfn> for any platform object <var>platformObject</var> as:",
       "rationale": ".switch",
       "steps": [
         {
@@ -53,10 +200,10 @@
           "html": "<p>Set <var>prerenderingTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#navigable-loading-mode\" id=\"ref-for-navigable-loading-mode③\">loading mode</a> to \"<code>prerender</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>prefetchRecord</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record\" id=\"ref-for-prefetch-record\">prefetch record</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url\">URL</a> is <var>startingURL</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-anonymization-policy\" id=\"ref-for-prefetch-record-anonymization-policy\">anonymization policy</a> is null, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-referrer-policy\" id=\"ref-for-prefetch-record-referrer-policy\">referrer policy</a> is the empty string, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-no-vary-search-hint\" id=\"ref-for-prefetch-record-no-vary-search-hint\">No-Vary-Search hint</a> is the <a data-link-type=\"dfn\" href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#iref-default-url-search-variance\" id=\"ref-for-iref-default-url-search-variance\">default URL search variance</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#source\" id=\"ref-for-source\">source</a> is \"<code>browser UI</code>\", and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①\">prerendering traversable</a> is <var>prerenderingTraversable</var>.</p>"
+          "html": "<p>Let <var>prefetchRecord</var> be a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record\" id=\"ref-for-prefetch-record②\">prefetch record</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url①\">URL</a> is <var>startingURL</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-anonymization-policy\" id=\"ref-for-prefetch-record-anonymization-policy①\">anonymization policy</a> is null, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-referrer-policy\" id=\"ref-for-prefetch-record-referrer-policy①\">referrer policy</a> is the empty string, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-no-vary-search-hint\" id=\"ref-for-prefetch-record-no-vary-search-hint①\">No-Vary-Search hint</a> is the <a data-link-type=\"dfn\" href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html#iref-default-url-search-variance\" id=\"ref-for-iref-default-url-search-variance\">default URL search variance</a>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#source\" id=\"ref-for-source①\">source</a> is \"<code>browser UI</code>\", and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable②\">prerendering traversable</a> is <var>prerenderingTraversable</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#start-a-referrer-initiated-navigational-prefetch\" id=\"ref-for-start-a-referrer-initiated-navigational-prefetch\">Start a referrer-initiated navigational prefetch</a> given <var>prerenderingTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a> and <var>prefetchRecord</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#start-a-referrer-initiated-navigational-prefetch\" id=\"ref-for-start-a-referrer-initiated-navigational-prefetch①\">Start a referrer-initiated navigational prefetch</a> given <var>prerenderingTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a> and <var>prefetchRecord</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\" id=\"ref-for-navigate\">Navigate</a> <var>prerenderingTraversable</var> to <var>startingURL</var> using <var>prerenderingTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①\">active document</a>.</p>"
@@ -96,51 +243,51 @@
     {
       "name": "start a referrer-initiated navigational prerender",
       "href": "https://wicg.github.io/nav-speculation/prerendering.html#start-a-referrer-initiated-navigational-prerender",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"start-a-referrer-initiated-navigational-prerender\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start a referrer-initiated navigational prerender</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑥\">Document</a></code> <var>referrerDoc</var> and a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record\" id=\"ref-for-prefetch-record①\">prefetch record</a> <var>prefetchRecord</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"start-a-referrer-initiated-navigational-prerender\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">start a referrer-initiated navigational prerender</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑦\">Document</a></code> <var>referrerDoc</var> and a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record\" id=\"ref-for-prefetch-record③\">prefetch record</a> <var>prefetchRecord</var>:",
       "rationale": "assert",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url①\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#http-scheme\" id=\"ref-for-http-scheme①\">HTTP(S) scheme</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url②\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#http-scheme\" id=\"ref-for-http-scheme①\">HTTP(S) scheme</a>.</p>"
         },
         {
-          "html": "<p>If <var>referrerDoc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable①\">node navigable</a> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable③\">top-level traversable</a>, then return.</p>"
+          "html": "<p>If <var>referrerDoc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable②\">node navigable</a> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable③\">top-level traversable</a>, then return.</p>"
         },
         {
           "html": "<p>If <var>referrerDoc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#concept-document-bc\" id=\"ref-for-concept-document-bc\">browsing context</a> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#auxiliary-browsing-context\" id=\"ref-for-auxiliary-browsing-context①\">auxiliary browsing context</a>, then return.</p>"
         },
         {
-          "html": "<p>If <var>referrerDoc</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site\">same site</a> with <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url②\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①\">origin</a>, then return.</p>"
+          "html": "<p>If <var>referrerDoc</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site\">same site</a> with <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url③\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①\">origin</a>, then return.</p>"
         },
         {
           "html": "<p>If <var>referrerDoc</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#has-a-matching-prefetch-record\" id=\"ref-for-has-a-matching-prefetch-record\">has a matching prefetch record</a> given <var>prefetchRecord</var> with <i><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#checkprerender\" id=\"ref-for-checkprerender\">checkPrerender</a></i> set to true, then return.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable②\">prerendering traversable</a> is \"<code>to be created</code>\".</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable③\">prerendering traversable</a> is \"<code>to be created</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>prerenderingTraversable</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#creating-a-new-top-level-traversable\" id=\"ref-for-creating-a-new-top-level-traversable①\">creating a new top-level traversable</a>.</p>\n      <p>The user agent can use <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-target-navigable-name-hint\" id=\"ref-for-prerendering-target-navigable-name-hint\">prerendering target navigable name hint</a> as a hint to their implementation of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#creating-a-new-top-level-traversable\" id=\"ref-for-creating-a-new-top-level-traversable②\">create a new top-level traversable</a>. This hint indicates that the web developer expects the eventual <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-activate\" id=\"ref-for-prerendering-traversable-activate①\">activation</a> of the created <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable③\">prerendering traversable</a> to be in place of a particular predecessor traversable: the one that would be chosen by the invoking <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#the-rules-for-choosing-a-navigable\" id=\"ref-for-the-rules-for-choosing-a-navigable\">the rules for choosing a navigable</a> given <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-target-navigable-name-hint\" id=\"ref-for-prerendering-target-navigable-name-hint①\">prerendering target navigable name hint</a> and <var>referrerDoc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable②\">node navigable</a>.</p>"
+          "html": "<p>Let <var>prerenderingTraversable</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#creating-a-new-top-level-traversable\" id=\"ref-for-creating-a-new-top-level-traversable①\">creating a new top-level traversable</a>.</p>\n      <p>The user agent can use <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-target-navigable-name-hint\" id=\"ref-for-prerendering-target-navigable-name-hint①\">prerendering target navigable name hint</a> as a hint to their implementation of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#creating-a-new-top-level-traversable\" id=\"ref-for-creating-a-new-top-level-traversable②\">create a new top-level traversable</a>. This hint indicates that the web developer expects the eventual <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-activate\" id=\"ref-for-prerendering-traversable-activate①\">activation</a> of the created <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable④\">prerendering traversable</a> to be in place of a particular predecessor traversable: the one that would be chosen by the invoking <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#the-rules-for-choosing-a-navigable\" id=\"ref-for-the-rules-for-choosing-a-navigable\">the rules for choosing a navigable</a> given <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-target-navigable-name-hint\" id=\"ref-for-prerendering-target-navigable-name-hint②\">prerendering target navigable name hint</a> and <var>referrerDoc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable③\">node navigable</a>.</p>"
         },
         {
           "html": "<p>Set <var>prerenderingTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#navigable-loading-mode\" id=\"ref-for-navigable-loading-mode④\">loading mode</a> to \"<code>prerender</code>\".</p>"
         },
         {
-          "html": "<p>Set <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable④\">prerendering traversable</a> to <var>prerenderingTraversable</var>.</p>"
+          "html": "<p>Set <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable⑤\">prerendering traversable</a> to <var>prerenderingTraversable</var>.</p>"
         },
         {
-          "html": "<p>Set <var>prerenderingTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-remove-from-referrer\" id=\"ref-for-prerendering-traversable-remove-from-referrer\">remove from referrer</a> to be an algorithm which sets <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable⑤\">prerendering traversable</a> to null.</p>"
+          "html": "<p>Set <var>prerenderingTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-remove-from-referrer\" id=\"ref-for-prerendering-traversable-remove-from-referrer\">remove from referrer</a> to be an algorithm which sets <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable⑥\">prerendering traversable</a> to null.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#start-a-referrer-initiated-navigational-prefetch\" id=\"ref-for-start-a-referrer-initiated-navigational-prefetch①\">Start a referrer-initiated navigational prefetch</a> given <var>referrerDoc</var> and <var>prefetchRecord</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#start-a-referrer-initiated-navigational-prefetch\" id=\"ref-for-start-a-referrer-initiated-navigational-prefetch②\">Start a referrer-initiated navigational prefetch</a> given <var>referrerDoc</var> and <var>prefetchRecord</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\" id=\"ref-for-navigate①\">Navigate</a> <var>prerenderingTraversable</var> to <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url③\">URL</a> using <var>referrerDoc</var>, with <i><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-referrer-policy\" id=\"ref-for-navigation-referrer-policy\">referrerPolicy</a></i> set to <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-referrer-policy\" id=\"ref-for-prefetch-record-referrer-policy①\">referrer policy</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\" id=\"ref-for-navigate①\">Navigate</a> <var>prerenderingTraversable</var> to <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url④\">URL</a> using <var>referrerDoc</var>, with <i><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-referrer-policy\" id=\"ref-for-navigation-referrer-policy\">referrerPolicy</a></i> set to <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-referrer-policy\" id=\"ref-for-prefetch-record-referrer-policy②\">referrer policy</a>.</p>"
         }
       ]
     },
     {
       "name": "prerendering traversable/update the successor for activation",
       "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-update-the-successor-for-activation",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"prerendering traversable\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prerendering-traversable-update-the-successor-for-activation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the successor for activation</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable⑧\">prerendering traversable</a> <var>successorTraversable</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url②\">URL</a> <var>startingURL</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>activationURL</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"prerendering traversable\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prerendering-traversable-update-the-successor-for-activation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the successor for activation</dfn> given a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable⑨\">prerendering traversable</a> <var>successorTraversable</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url②\">URL</a> <var>startingURL</var>, and a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url③\">URL</a> <var>activationURL</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -169,7 +316,7 @@
     {
       "name": "prerendering traversable/activate",
       "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-activate",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"prerendering traversable\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prerendering-traversable-activate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">activate</dfn> a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable⑨\">prerendering traversable</a> <var>successorTraversable</var> in place of a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable⑤\">top-level traversable</a> <var>predecessorTraversable</var> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#history-handling-behavior\" id=\"ref-for-history-handling-behavior\">history handling behavior</a> <var>historyHandling</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> <var>startingURL</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑤\">URL</a> <var>activationURL</var>, an optional <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-id\" id=\"ref-for-navigation-id\">navigation ID</a> <var>navigationId</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"prerendering traversable\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prerendering-traversable-activate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">activate</dfn> a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①⓪\">prerendering traversable</a> <var>successorTraversable</var> in place of a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable⑤\">top-level traversable</a> <var>predecessorTraversable</var> given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#history-handling-behavior\" id=\"ref-for-history-handling-behavior\">history handling behavior</a> <var>historyHandling</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> <var>startingURL</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑤\">URL</a> <var>activationURL</var>, an optional <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-id\" id=\"ref-for-navigation-id\">navigation ID</a> <var>navigationId</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -241,7 +388,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>navigable</var> of <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑦\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#inclusive-descendant-navigables\" id=\"ref-for-inclusive-descendant-navigables①\">inclusive descendant navigables</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#navigation-and-traversal-task-source\" id=\"ref-for-navigation-and-traversal-task-source①\">navigation and traversal task source</a>, given <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①\">active window</a>, to perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>navigable</var> of <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑦\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#inclusive-descendant-navigables\" id=\"ref-for-inclusive-descendant-navigables①\">inclusive descendant navigables</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#navigation-and-traversal-task-source\" id=\"ref-for-navigation-and-traversal-task-source①\">navigation and traversal task source</a>, given <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①\">active window</a>, to perform the following steps:",
           "rationale": "for",
           "steps": [
             {
@@ -257,7 +404,7 @@
               "html": "<p>Let <var>doc</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑧\">active document</a>.</p>"
             },
             {
-              "html": "<p class=\"XXX\">We should really propagate the loading mode change here, in the posted task. This is where implementations would update what is returned by <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#dom-document-prerendering\" id=\"ref-for-dom-document-prerendering③\">document.prerendering</a></code>. However, right now it lives on the traversable, so it gets magically updated when we move over the session history entry. Probably we need to move it to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑧\">Document</a></code>.\n\n</p>"
+              "html": "<p class=\"XXX\">We should really propagate the loading mode change here, in the posted task. This is where implementations would update what is returned by <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#dom-document-prerendering\" id=\"ref-for-dom-document-prerendering③\">document.prerendering</a></code>. However, right now it lives on the traversable, so it gets magically updated when we move over the session history entry. Probably we need to move it to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code>.\n\n</p>"
             },
             {
               "html": "<p>If <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin②\">origin</a> is the same as <var>origin</var>, then set <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#document-activation-start-time\" id=\"ref-for-document-activation-start-time\">activation start time</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time\">current high resolution time</a> for <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a>.</p>"
@@ -266,7 +413,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">Fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#eventdef-document-prerenderingchange\" id=\"ref-for-eventdef-document-prerenderingchange①\">prerenderingchange</a></code> at <var>doc</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>steps</var> in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#document-post-prerendering-activation-steps-list\" id=\"ref-for-document-post-prerendering-activation-steps-list②\">post-prerendering activation steps list</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>steps</var> in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#document-post-prerendering-activation-steps-list\" id=\"ref-for-document-post-prerendering-activation-steps-list②\">post-prerendering activation steps list</a>:",
               "rationale": "run",
               "steps": [
                 {
@@ -284,11 +431,11 @@
     {
       "name": "prerendering traversable/remove from referrer",
       "href": "https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-remove-from-referrer",
-      "html": "A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①⓪\">prerendering traversable</a> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"prerendering traversable\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prerendering-traversable-remove-from-referrer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove from referrer</dfn>, which is null or an algorithm with no arguments, initially set to null.\n\n\n    <p>To ensure that the references for a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①①\">prerendering traversable</a> are cleared once it is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#destroy-a-top-level-traversable\" id=\"ref-for-destroy-a-top-level-traversable②\">destroyed</a>, modify <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#destroy-a-top-level-traversable\" id=\"ref-for-destroy-a-top-level-traversable③\">destroy a top-level traversable</a> by appending the following step:</p>",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①①\">prerendering traversable</a> has an associated <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"prerendering traversable\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prerendering-traversable-remove-from-referrer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove from referrer</dfn>, which is null or an algorithm with no arguments, initially set to null.\n\n\n    <p>To ensure that the references for a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①②\">prerendering traversable</a> are cleared once it is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#destroy-a-top-level-traversable\" id=\"ref-for-destroy-a-top-level-traversable②\">destroyed</a>, modify <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#destroy-a-top-level-traversable\" id=\"ref-for-destroy-a-top-level-traversable③\">destroy a top-level traversable</a> by appending the following step:</p>",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>traversable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①②\">prerendering traversable</a> and <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-remove-from-referrer\" id=\"ref-for-prerendering-traversable-remove-from-referrer①\">remove from referrer</a> is not null, then call <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-remove-from-referrer\" id=\"ref-for-prerendering-traversable-remove-from-referrer②\">remove from referrer</a>.</p>"
+          "html": "<p>If <var>traversable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①③\">prerendering traversable</a> and <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-remove-from-referrer\" id=\"ref-for-prerendering-traversable-remove-from-referrer①\">remove from referrer</a> is not null, then call <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-remove-from-referrer\" id=\"ref-for-prerendering-traversable-remove-from-referrer②\">remove from referrer</a>.</p>"
         }
       ]
     },
@@ -298,31 +445,31 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Set <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#navigable-loading-mode\" id=\"ref-for-navigable-loading-mode⑥\">loading mode</a> to <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable③\">node navigable</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#navigable-loading-mode\" id=\"ref-for-navigable-loading-mode⑦\">loading mode</a>.</p>"
+          "html": "<p>Set <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#navigable-loading-mode\" id=\"ref-for-navigable-loading-mode⑥\">loading mode</a> to <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable④\">node navigable</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#navigable-loading-mode\" id=\"ref-for-navigable-loading-mode⑦\">loading mode</a>.</p>"
         }
       ]
     },
     {
       "name": "find a matching prerendered prefetch record",
       "href": "https://wicg.github.io/nav-speculation/prerendering.html#find-a-matching-prerendered-prefetch-record",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-matching-prerendered-prefetch-record\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a matching prerendered prefetch record</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⓪\">Document</a></code> <var>predecessorDocument</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑥\">URL</a> <var>url</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-a-matching-prerendered-prefetch-record\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find a matching prerendered prefetch record</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①①\">Document</a></code> <var>predecessorDocument</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑥\">URL</a> <var>url</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>recordToUse</var> be null.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>record</var> of <var>predecessorDocument</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records\">prefetch records</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>record</var> of <var>predecessorDocument</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records\">prefetch records</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①③\">prerendering traversable</a> is not a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①④\">prerendering traversable</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+              "html": "<p>If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①④\">prerendering traversable</a> is not a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①⑤\">prerendering traversable</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
             },
             {
-              "html": "<p>If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①⑤\">prerendering traversable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑨\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#is-initial-about%3Ablank\" id=\"ref-for-is-initial-about%3Ablank①\">is initial about:blank</a> is true, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+              "html": "<p>If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①⑥\">prerendering traversable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document⑨\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#is-initial-about%3Ablank\" id=\"ref-for-is-initial-about%3Ablank①\">is initial about:blank</a> is true, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
             },
             {
-              "html": "If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url④\">URL</a> is equal to <var>url</var>:",
+              "html": "If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url⑤\">URL</a> is equal to <var>url</var>:",
               "rationale": "set",
               "steps": [
                 {
@@ -368,7 +515,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: this is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>.</p>"
         },
         {
-          "html": "<p>If any of the following conditions hold:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable⑥\">top-level traversable</a>;</p>\n       </li><li data-md=\"\">\n        <p><var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①⑥\">prerendering traversable</a>;</p>\n       </li><li data-md=\"\">\n        <p><var>navigable</var> is a <a href=\"https://github.com/shivanigithub/fenced-frame\">fenced frame</a>;</p>\n        \n       </li><li data-md=\"\">\n        <p><var>cspNavigationType</var> is not \"<code>other</code>\"; or</p>\n       </li><li data-md=\"\">\n        <p><var>documentResource</var> is not null</p>\n      </li></ul>\n      <p>then return null.</p>"
+          "html": "<p>If any of the following conditions hold:</p>\n      <ul>\n       <li data-md=\"\">\n        <p><var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable⑥\">top-level traversable</a>;</p>\n       </li><li data-md=\"\">\n        <p><var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①⑦\">prerendering traversable</a>;</p>\n       </li><li data-md=\"\">\n        <p><var>navigable</var> is a <a href=\"https://github.com/shivanigithub/fenced-frame\">fenced frame</a>;</p>\n        \n       </li><li data-md=\"\">\n        <p><var>cspNavigationType</var> is not \"<code>other</code>\"; or</p>\n       </li><li data-md=\"\">\n        <p><var>documentResource</var> is not null</p>\n      </li></ul>\n      <p>then return null.</p>"
         },
         {
           "html": "<p>Let <var>predecessorDocument</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①⓪\">active document</a>.</p>"
@@ -387,14 +534,14 @@
               "html": "<p>If <var>completeRecord</var> is not null, return <var>completeRecord</var>.</p>"
             },
             {
-              "html": "<p>Let <var>potentialRecords</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
+              "html": "<p>Let <var>potentialRecords</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>record</var> of <var>predecessorDocument</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records②\">prefetch records</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>record</var> of <var>predecessorDocument</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records②\">prefetch records</a>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If all of the following are true, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> <var>record</var> to <var>potentialRecords</var>:</p>\n          <ul>\n           <li data-md=\"\">\n            <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①⑦\">prerendering traversable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①⑧\">prerendering traversable</a>;</p>\n           </li><li data-md=\"\">\n            <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①⑨\">prerendering traversable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①①\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#is-initial-about%3Ablank\" id=\"ref-for-is-initial-about%3Ablank②\">is initial about:blank</a> is true;</p>\n           </li><li data-md=\"\">\n            <p><var>record</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-is-expected-to-match-a-url\" id=\"ref-for-prefetch-record-is-expected-to-match-a-url\">is expected to match a URL</a> given <var>url</var>; and</p>\n           </li><li data-md=\"\">\n            <p><var>cutoffTime</var> is null or <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-start-time\" id=\"ref-for-prefetch-record-start-time\">start time</a> is less than <var>cutoffTime</var>.</p>\n          </li></ul>"
+                  "html": "<p>If all of the following are true, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">append</a> <var>record</var> to <var>potentialRecords</var>:</p>\n          <ul>\n           <li data-md=\"\">\n            <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①⑧\">prerendering traversable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable①⑨\">prerendering traversable</a>;</p>\n           </li><li data-md=\"\">\n            <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable②⓪\">prerendering traversable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①①\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#is-initial-about%3Ablank\" id=\"ref-for-is-initial-about%3Ablank②\">is initial about:blank</a> is true;</p>\n           </li><li data-md=\"\">\n            <p><var>record</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-is-expected-to-match-a-url\" id=\"ref-for-prefetch-record-is-expected-to-match-a-url\">is expected to match a URL</a> given <var>url</var>; and</p>\n           </li><li data-md=\"\">\n            <p><var>cutoffTime</var> is null or <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-start-time\" id=\"ref-for-prefetch-record-start-time\">start time</a> is less than <var>cutoffTime</var>.</p>\n          </li></ul>"
                 }
               ]
             },
@@ -402,10 +549,10 @@
               "html": "<p>If <var>potentialRecords</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is empty</a>, return null.</p>"
             },
             {
-              "html": "<p>Wait until the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#ongoing-navigation\" id=\"ref-for-ongoing-navigation②\">ongoing navigation</a> of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable②⓪\">prerendering traversable</a> of any element of <var>predecessorDocument</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records③\">prefetch records</a> changes.</p>"
+              "html": "<p>Wait until the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#ongoing-navigation\" id=\"ref-for-ongoing-navigation②\">ongoing navigation</a> of the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable②①\">prerendering traversable</a> of any element of <var>predecessorDocument</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records③\">prefetch records</a> changes.</p>"
             },
             {
-              "html": "<p>If <var>cutoffTime</var> is null and any element of <var>potentialRecords</var> has a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable②①\">prerendering traversable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①②\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#is-initial-about%3Ablank\" id=\"ref-for-is-initial-about%3Ablank③\">is initial about:blank</a> is false, set <var>cutoffTime</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time①\">current high resolution time</a> for the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a> of <var>predecessorDocument</var>.</p>"
+              "html": "<p>If <var>cutoffTime</var> is null and any element of <var>potentialRecords</var> has a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable②②\">prerendering traversable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①②\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#is-initial-about%3Ablank\" id=\"ref-for-is-initial-about%3Ablank③\">is initial about:blank</a> is false, set <var>cutoffTime</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time①\">current high resolution time</a> for the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a> of <var>predecessorDocument</var>.</p>"
             }
           ]
         }
@@ -424,10 +571,10 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>matchingPrerenderedNavigable</var> be <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable②③\">prerendering traversable</a>.</p>"
+              "html": "<p>Let <var>matchingPrerenderedNavigable</var> be <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable②④\">prerendering traversable</a>.</p>"
             },
             {
-              "html": "<p>Let <var>startingURL</var> be <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url⑤\">URL</a>.</p>"
+              "html": "<p>Let <var>startingURL</var> be <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-url\" id=\"ref-for-prefetch-record-url⑥\">URL</a>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-activate\" id=\"ref-for-prerendering-traversable-activate④\">Activate</a> <var>matchingPrerenderedNavigable</var> in place of <var>navigable</var> given <var>historyHandling</var>, <var>startingURL</var>, <var>url</var>, and <var>navigationId</var>.</p>"
@@ -455,14 +602,14 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③\">prerendering navigable</a> and <var>currentURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin②\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site①\">same site</a> with <var>initiatorOrigin</var>, then:",
+          "html": "If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable④\">prerendering navigable</a> and <var>currentURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin②\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site①\">same site</a> with <var>initiatorOrigin</var>, then:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable⑦\">top-level traversable</a>, then return null.</p>"
             },
             {
-              "html": "<p>Otherwise, the user agent must wait to continue this algorithm until <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#navigable-loading-mode\" id=\"ref-for-navigable-loading-mode⑧\">loading mode</a> becomes \"<code>normal</code>\". At any point during this wait (including immediately), it may instead choose to <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#destroy-a-top-level-traversable\" id=\"ref-for-destroy-a-top-level-traversable④\">destroy</a> <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable⑧\">top-level traversable</a> and return null from this algorithm.</p>"
+              "html": "<p>Otherwise, if <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①③\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#document-allow-cross-origin-iframes-navigation-while-prerendering\" id=\"ref-for-document-allow-cross-origin-iframes-navigation-while-prerendering\">allow cross origin iframes navigation while prerendering</a> is false,  the user agent must wait to continue this algorithm until <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#navigable-loading-mode\" id=\"ref-for-navigable-loading-mode⑧\">loading mode</a> becomes \"<code>normal</code>\". At any point during this wait (including immediately), it may instead choose to <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#destroy-a-top-level-traversable\" id=\"ref-for-destroy-a-top-level-traversable④\">destroy</a> <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable⑧\">top-level traversable</a> and return null from this algorithm.</p>"
             }
           ]
         }
@@ -474,7 +621,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable④\">prerendering navigable</a>, and <var>responseOrigin</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>initiatorOrigin</var>, then:",
+          "html": "If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable⑤\">prerendering navigable</a>, and <var>responseOrigin</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>initiatorOrigin</var>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -482,6 +629,25 @@
             },
             {
               "html": "<p>If <var>loadingModes</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> `<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#supports-loading-mode-credentialed-prerender\" id=\"ref-for-supports-loading-mode-credentialed-prerender\">credentialed-prerender</a></code>`, then return null.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "create and initialize a Document object patch",
+      "html": "In <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-lifecycle.html#initialise-the-document-object\" id=\"ref-for-initialise-the-document-object\">create and initialize a Document object</a>, add the following step after \"If navigationParams’s response has a <code>Refresh</code> header, then:\":",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>navigationParams</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-navigable\" id=\"ref-for-navigation-params-navigable\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable⑥\">prerendering navigable</a>, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>loadingModes</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#get-the-supported-loading-modes\" id=\"ref-for-get-the-supported-loading-modes①\">getting the supported loading modes</a> for <var>response</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>loadingModes</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contains</a> `<code><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#supports-loading-mode-prerender-cross-origin-frames\" id=\"ref-for-supports-loading-mode-prerender-cross-origin-frames\">prerender-cross-origin-frames</a></code>`, set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#document-allow-cross-origin-iframes-navigation-while-prerendering\" id=\"ref-for-document-allow-cross-origin-iframes-navigation-while-prerendering①\">allow cross origin iframes navigation while prerendering</a> to true.</p>"
             }
           ]
         }
@@ -497,7 +663,7 @@
           "rationale": "destroy",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#destroy-a-top-level-traversable\" id=\"ref-for-destroy-a-top-level-traversable⑤\">Destroy</a> <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top\">top-level traversable</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#destroy-a-top-level-traversable\" id=\"ref-for-destroy-a-top-level-traversable⑤\">Destroy</a> <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①\">top-level traversable</a>.</p>"
             },
             {
               "html": "<p>Return.</p>"
@@ -505,7 +671,7 @@
           ]
         },
         {
-          "html": "If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable②④\">prerendering traversable</a> and <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-prerender-initial-response-search-variance\" id=\"ref-for-prerendering-traversable-prerender-initial-response-search-variance\">prerender initial response search variance</a> is null:",
+          "html": "If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable②⑤\">prerendering traversable</a> and <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-traversable-prerender-initial-response-search-variance\" id=\"ref-for-prerendering-traversable-prerender-initial-response-search-variance\">prerender initial response search variance</a> is null:",
           "rationale": "set",
           "steps": [
             {
@@ -521,17 +687,17 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable⑥\">prerendering navigable</a>, then return without invoking the external software package.</p>"
+          "html": "<p>If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable⑧\">prerendering navigable</a>, then return without invoking the external software package.</p>"
         }
       ]
     },
     {
       "name": "navigate historyHandling patch",
-      "html": "Patch the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\" id=\"ref-for-navigate⑤\">navigate</a> algorithm to ensure the session history of a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable⑦\">prerendering navigable</a> stays trivial by prepending the following step before all others:",
+      "html": "Patch the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\" id=\"ref-for-navigate⑤\">navigate</a> algorithm to ensure the session history of a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable⑨\">prerendering navigable</a> stays trivial by prepending the following step before all others:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable⑧\">prerendering navigable</a>, then set <var>historyHandling</var> to \"<code>replace</code>\".</p>"
+          "html": "<p>If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable①⓪\">prerendering navigable</a>, then set <var>historyHandling</var> to \"<code>replace</code>\".</p>"
         }
       ]
     },
@@ -541,7 +707,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable⑨\">prerendering navigable</a>, then set <var>historyHandling</var> to \"<code>replace</code>\".</p>"
+          "html": "<p>If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable①①\">prerendering navigable</a>, then set <var>historyHandling</var> to \"<code>replace</code>\".</p>"
         }
       ]
     },
@@ -578,7 +744,7 @@
           "html": "<p>Let <var>originMatchingEntries</var> be the entries in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/client-hints-infrastructure#accept-ch-cache\" id=\"ref-for-accept-ch-cache③\">Accept-CH cache</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/client-hints-infrastructure#accept-ch-cache-origin\" id=\"ref-for-accept-ch-cache-origin\">origin</a> is\n   <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin①\">same origin</a> with <var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>.</p>"
         },
         {
-          "html": "If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable①④\">prerendering navigable</a>, then:",
+          "html": "If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable①⑥\">prerendering navigable</a>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -588,7 +754,7 @@
               "html": "<p>Let <var>origin</var> be <var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>.</p>"
             },
             {
-              "html": "<p>If <var>prerenderAcceptClientHintsCache</var>[<var>origin</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>, then let <var>originMatchingEntries</var> be the entries in the <var>prerenderAcceptClientHintsCache</var> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin②\">same origin</a> with <var>origin</var>.</p>"
+              "html": "<p>If <var>prerenderAcceptClientHintsCache</var>[<var>origin</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>, then let <var>originMatchingEntries</var> be the entries in the <var>prerenderAcceptClientHintsCache</var> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin②\">origin</a> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin②\">same origin</a> with <var>origin</var>.</p>"
             }
           ]
         }
@@ -603,7 +769,7 @@
           "html": "<p>Let <var>navigable</var> be <var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global①\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①\">navigable</a>.</p>"
         },
         {
-          "html": "<p>If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable①⑤\">prerendering navigable</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">set</a> <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable-prerender-scoped-accept-ch-cache\" id=\"ref-for-prerendering-navigable-prerender-scoped-accept-ch-cache②\">prerender-scoped Accept-CH cache</a>[<var>origin</var>] to <var>hintSet</var>.</p>"
+          "html": "<p>If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable①⑦\">prerendering navigable</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">set</a> <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable-prerender-scoped-accept-ch-cache\" id=\"ref-for-prerendering-navigable-prerender-scoped-accept-ch-cache②\">prerender-scoped Accept-CH cache</a>[<var>origin</var>] to <var>hintSet</var>.</p>"
         },
         {
           "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">set</a> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/client-hints-infrastructure#accept-ch-cache\" id=\"ref-for-accept-ch-cache④\">Accept-CH cache</a>[<var>origin</var>] to <var>hintSet</var>.</p>"
@@ -617,28 +783,28 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①\">top-level traversable</a> <var>traversable</var> of the user agent’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable-set\" id=\"ref-for-top-level-traversable-set\">top-level traversable set</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top②\">top-level traversable</a> <var>traversable</var> of the user agent’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable-set\" id=\"ref-for-top-level-traversable-set\">top-level traversable set</a>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>navigables</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#inclusive-descendant-navigables\" id=\"ref-for-inclusive-descendant-navigables②\">inclusive descendant navigables</a> of <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①③\">active document</a>.</p>"
+              "html": "<p>Let <var>navigables</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#inclusive-descendant-navigables\" id=\"ref-for-inclusive-descendant-navigables②\">inclusive descendant navigables</a> of <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①④\">active document</a>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>navigable</var> in <var>navigables</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>navigable</var> in <var>navigables</var>:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>activeDocument</var> be the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①④\">active document</a>.</p>"
+                  "html": "<p>Let <var>activeDocument</var> be the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①⑤\">active document</a>.</p>"
                 },
                 {
                   "html": "<p>If <var>activeDocument</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin③\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin③\">same origin</a> with <var>origin</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>prefetchRecord</var> in <var>activeDocument</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records④\">prefetch records</a>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>prefetchRecord</var> in <var>activeDocument</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records④\">prefetch records</a>:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<p>If <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable②⑥\">prerendering traversable</a> is null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
+                      "html": "<p>If <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prerendering-traversable\" id=\"ref-for-prerendering-traversable②⑦\">prerendering traversable</a> is null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
                     },
                     {
                       "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-cancel-and-discard\" id=\"ref-for-prefetch-record-cancel-and-discard\">Cancel and discard</a> <var>prefetchRecord</var> given <var>activeDocument</var>.</p>"
@@ -657,7 +823,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Otherwise, if <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global②\">global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code>, and that <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window②\">Window</a></code>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable②\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable①⑥\">prerendering navigable</a>:",
+          "html": "Otherwise, if <var>httpRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global②\">global object</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code>, and that <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window②\">Window</a></code>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable②\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable①⑧\">prerendering navigable</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -686,7 +852,7 @@
           "html": "<p>Let <var>slmHeader</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header\">getting a structured field value</a> given `<code><a data-link-type=\"http-header\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#http-headerdef-supports-loading-mode\" id=\"ref-for-http-headerdef-supports-loading-mode①\">Supports-Loading-Mode</a></code>` and \"<code>list</code>\" from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
         },
         {
-          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> containing all elements of <var>slmHeader</var> that are <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc8941.html#name-tokens\" id=\"ref-for-name-tokens③\">tokens</a>.</p>"
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a> containing all elements of <var>slmHeader</var> that are <a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc8941.html#name-tokens\" id=\"ref-for-name-tokens③\">tokens</a>.</p>"
         }
       ]
     },
@@ -696,7 +862,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>subject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑤\">node navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②⓪\">prerendering navigable</a>, then append the following step to <var>subject</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list\">post-prerendering activation steps list</a> and return.</p>"
+          "html": "<p>If <var>subject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑥\">node navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②②\">prerendering navigable</a>, then append the following step to <var>subject</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list\">post-prerendering activation steps list</a> and return.</p>"
         }
       ]
     },
@@ -706,7 +872,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable③\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②①\">prerendering navigable</a>, then return true.</p>"
+          "html": "<p>If <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable③\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②③\">prerendering navigable</a>, then return true.</p>"
         }
       ]
     },
@@ -716,7 +882,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable④\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②②\">prerendering navigable</a>, then return.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable④\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②④\">prerendering navigable</a>, then return.</p>"
         }
       ]
     },
@@ -732,7 +898,7 @@
           "html": "<p>If the operation in question is a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-regular-operation\" id=\"ref-for-dfn-regular-operation①\">regular operation</a>, then set <var>realm</var> to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>.</p>"
         },
         {
-          "html": "If <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑤\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②⑤\">prerendering navigable</a>, then:",
+          "html": "If <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑤\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②⑦\">prerendering navigable</a>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -766,7 +932,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑥\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②⑥\">prerendering navigable</a>, then append the following steps to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list②\">post-prerendering activation steps list</a> and return.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑥\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②⑧\">prerendering navigable</a>, then append the following steps to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list②\">post-prerendering activation steps list</a> and return.</p>"
         }
       ]
     },
@@ -777,7 +943,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑦\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②⑦\">prerendering navigable</a>, then:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑦\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②⑨\">prerendering navigable</a>, then:",
           "rationale": "let",
           "steps": [
             {
@@ -796,7 +962,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑧\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑧\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②⑧\">prerendering navigable</a>, then:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑧\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑧\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③⓪\">prerendering navigable</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -821,7 +987,7 @@
           "html": "<p>If <var>document</var> is null, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑥\">node navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable②⑨\">prerendering navigable</a>, then append the following steps to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#document-post-prerendering-activation-steps-list\" id=\"ref-for-document-post-prerendering-activation-steps-list④\">post-prerendering activation steps list</a> and return <var>promise</var>.</p>"
+          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑦\">node navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③①\">prerendering navigable</a>, then append the following steps to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#document-post-prerendering-activation-steps-list\" id=\"ref-for-document-post-prerendering-activation-steps-list④\">post-prerendering activation steps list</a> and return <var>promise</var>.</p>"
         }
       ]
     },
@@ -831,7 +997,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①③\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑨\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③⓪\">prerendering navigable</a>, then append these steps to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list⑤\">post-prerendering activation steps list</a>. Otherwise, run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑥\">in parallel</a>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①③\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable⑨\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③②\">prerendering navigable</a>, then append these steps to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list⑤\">post-prerendering activation steps list</a>. Otherwise, run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑥\">in parallel</a>.</p>"
         }
       ]
     },
@@ -841,7 +1007,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object\">current global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①⓪\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③①\">prerendering navigable</a>, then return \"<code>default</code>\".</p>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object\">current global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①⓪\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③③\">prerendering navigable</a>, then return \"<code>default</code>\".</p>"
         },
         {
           "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://notifications.spec.whatwg.org/#get-the-notifications-permission-state\" id=\"ref-for-get-the-notifications-permission-state\">get the notifications permission state</a> and return it.</p>"
@@ -854,7 +1020,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①④\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①①\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③③\">prerendering navigable</a>, then append the following steps to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list⑥\">post-prerendering activation steps list</a> and return.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①④\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①①\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③⑤\">prerendering navigable</a>, then append the following steps to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list⑥\">post-prerendering activation steps list</a> and return.</p>"
         },
         {
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②①\">this</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/sensors/#dom-sensor-state-slot\" id=\"ref-for-dom-sensor-state-slot\">[[state]]</a></code> is \"<code>idle</code>\", then return.</p>"
@@ -870,7 +1036,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⑤\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①②\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③④\">prerendering navigable</a>, then append the following steps to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list⑦\">post-prerendering activation steps list</a> and return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/battery/#dfn-batterypromise\" id=\"ref-for-dfn-batterypromise\">[[BatteryPromise]]</a>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⑤\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①②\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③⑥\">prerendering navigable</a>, then append the following steps to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list⑦\">post-prerendering activation steps list</a> and return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/battery/#dfn-batterypromise\" id=\"ref-for-dfn-batterypromise\">[[BatteryPromise]]</a>.</p>"
         }
       ]
     },
@@ -883,7 +1049,7 @@
           "html": "<p>Let <var>promise</var> be a new promise.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⑥\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①③\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③⑤\">prerendering navigable</a>, then append the following steps to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list⑧\">post-prerendering activation steps list</a> and return <var>promise</var>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⑥\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①③\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③⑦\">prerendering navigable</a>, then append the following steps to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list⑧\">post-prerendering activation steps list</a> and return <var>promise</var>.</p>"
         },
         {
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent①\">user agent</a> does not support locking the screen orientation, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror\">NotSupportedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> and return <var>promise</var>.</p>"
@@ -902,13 +1068,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⑦\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①④\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③⑥\">prerendering navigable</a>, then return an empty sequence.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⑦\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①④\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③⑧\">prerendering navigable</a>, then return an empty sequence.</p>"
         }
       ]
     },
     {
       "name": "gamepadconnected post-prerendering",
-      "html": "Modify the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/gamepad/#dfn-gamepadconnected\" id=\"ref-for-dfn-gamepadconnected①\">gamepadconnected</a></code> section to indicate that every <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①④\">Document</a></code> <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#document-post-prerendering-activation-steps-list\" id=\"ref-for-document-post-prerendering-activation-steps-list⑤\">post-prerendering activation steps list</a> should gain the following steps:",
+      "html": "Modify the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/gamepad/#dfn-gamepadconnected\" id=\"ref-for-dfn-gamepadconnected①\">gamepadconnected</a></code> section to indicate that every <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑤\">Document</a></code> <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#document-post-prerendering-activation-steps-list\" id=\"ref-for-document-post-prerendering-activation-steps-list⑤\">post-prerendering activation steps list</a> should gain the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -922,7 +1088,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⑨\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①⑥\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③⑧\">prerendering navigable</a>, then return.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①⑨\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①⑥\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable④⓪\">prerendering navigable</a>, then return.</p>"
         }
       ]
     },
@@ -953,7 +1119,7 @@
           "html": "<p>Let (<var>normalizedScheme</var>, <var>normalizedURLString</var>) be the result of running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#normalize-protocol-handler-parameters\" id=\"ref-for-normalize-protocol-handler-parameters\">normalize protocol handler parameters</a> with scheme, url, and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②⓪\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①⑦\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable③⑨\">prerendering navigable</a>, then append the following steps to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list⑨\">post-prerendering activation steps list</a> and return.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②⓪\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①⑦\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable④①\">prerendering navigable</a>, then append the following steps to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list⑨\">post-prerendering activation steps list</a> and return.</p>"
         }
       ]
     },
@@ -966,7 +1132,7 @@
           "html": "<p>Let (<var>normalizedScheme</var>, <var>normalizedURLString</var>) be the result of running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#normalize-protocol-handler-parameters\" id=\"ref-for-normalize-protocol-handler-parameters①\">normalize protocol handler parameters</a> with scheme, url, and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②①\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①⑧\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable④⓪\">prerendering navigable</a>, then append the following steps to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list①⓪\">post-prerendering activation steps list</a> and return.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②①\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable①⑧\">navigable</a> is a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#prerendering-navigable\" id=\"ref-for-prerendering-navigable④②\">prerendering navigable</a>, then append the following steps to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prerendering.html#platform-object-post-prerendering-activation-steps-list\" id=\"ref-for-platform-object-post-prerendering-activation-steps-list①⓪\">post-prerendering activation steps list</a> and return.</p>"
         }
       ]
     }

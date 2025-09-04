@@ -9,7 +9,15 @@
     "fragment": "dictionary JsonWebKey {\n  // The following fields are defined in Section 3.1 of JSON Web Key\n  DOMString kty;\n  DOMString use;\n  sequence<DOMString> key_ops;\n  DOMString alg;\n\n  // The following fields are defined in JSON Web Key Parameters Registration\n  boolean ext;\n\n  // The following fields are defined in Section 6 of JSON Web Algorithms\n  DOMString crv;\n  DOMString x;\n  DOMString y;\n  DOMString d;\n  DOMString n;\n  DOMString e;\n  DOMString p;\n  DOMString q;\n  DOMString dp;\n  DOMString dq;\n  DOMString qi;\n  sequence<RsaOtherPrimesInfo> oth;\n  DOMString k;\n};",
     "href": "https://w3c.github.io/webcrypto/#dfn-JsonWebKey"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Modern Algorithms in the Web Cryptography API",
+        "url": "https://wicg.github.io/webcrypto-modern-algos/"
+      },
+      "fragment": "partial dictionary JsonWebKey {\n  // The following fields are defined in draft-ietf-cose-dilithium-07\n  DOMString pub;\n  DOMString priv;\n};"
+    }
+  ],
   "inheritance": null,
   "includes": []
 }

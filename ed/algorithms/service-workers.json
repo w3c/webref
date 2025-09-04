@@ -3822,7 +3822,10 @@
                       "html": "<p>Set <var>timingInfo</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-timing-info-worker-cache-lookup-start\" id=\"ref-for-service-worker-timing-info-worker-cache-lookup-start\">worker cache lookup start</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-coarsened-shared-current-time\" id=\"ref-for-dfn-coarsened-shared-current-time①\">coarsened shared current time</a> given <var>useHighResPerformanceTimers</var>.</p>"
                     },
                     {
-                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate⑥\">For each</a> <var>cacheName</var> → <var>cache</var> of the <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key①③\">storage key</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-name-to-cache-map\" id=\"ref-for-dfn-name-to-cache-map⑥\">name to cache map</a>.",
+                      "html": "<p>Let <var>caches</var> be the result of running <a data-link-type=\"dfn\" href=\"https://storage.spec.whatwg.org/#obtain-a-local-storage-bottle-map\" id=\"ref-for-obtain-a-local-storage-bottle-map\">obtain a local storage bottle map</a> with <var>reservedClient</var> and \"<code>caches</code>\".</p>"
+                    },
+                    {
+                      "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate⑥\">For each</a> <var>cacheName</var> → <var>cache</var> of <var>caches</var>.",
                       "rationale": "if",
                       "steps": [
                         {
@@ -4960,7 +4963,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove⑥\">Remove</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-to-registration-map\" id=\"ref-for-dfn-scope-to-registration-map⑧\">registration map</a>[(<var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key①④\">storage key</a>, <var>job</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-job-scope-url\" id=\"ref-for-dfn-job-scope-url①⓪\">scope url</a>)].</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove⑥\">Remove</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-to-registration-map\" id=\"ref-for-dfn-scope-to-registration-map⑧\">registration map</a>[(<var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key①③\">storage key</a>, <var>job</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-job-scope-url\" id=\"ref-for-dfn-job-scope-url①⓪\">scope url</a>)].</p>"
         },
         {
           "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#resolve-job-promise\" id=\"ref-for-resolve-job-promise④\">Resolve Job Promise</a> with <var>job</var> and true.</p>"
@@ -4985,7 +4988,7 @@
           "html": "<p>Let <var>scopeString</var> be <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer①③\">serialized</a> <var>scope</var> with the <em>exclude fragment flag</em> set.</p>"
         },
         {
-          "html": "<p>Let <var>registration</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-registration\" id=\"ref-for-dfn-service-worker-registration⑥①\">service worker registration</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key①⑤\">storage key</a> is set to <var>storage key</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-url\" id=\"ref-for-dfn-scope-url①⑧\">scope url</a> is set to <var>scope</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-update-via-cache\" id=\"ref-for-dfn-update-via-cache⑨\">update via cache mode</a> is set to <var>updateViaCache</var>.</p>"
+          "html": "<p>Let <var>registration</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-service-worker-registration\" id=\"ref-for-dfn-service-worker-registration⑥①\">service worker registration</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#service-worker-registration-storage-key\" id=\"ref-for-service-worker-registration-storage-key①④\">storage key</a> is set to <var>storage key</var>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-url\" id=\"ref-for-dfn-scope-url①⑧\">scope url</a> is set to <var>scope</var>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-update-via-cache\" id=\"ref-for-dfn-update-via-cache⑨\">update via cache mode</a> is set to <var>updateViaCache</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④\">Set</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-to-registration-map\" id=\"ref-for-dfn-scope-to-registration-map⑨\">registration map</a>[(<var>storage key</var>, <var>scopeString</var>)] to <var>registration</var>.</p>"

@@ -1,0 +1,29 @@
+{
+  "name": "Argon2Params",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Modern Algorithms in the Web Cryptography API",
+      "url": "https://wicg.github.io/webcrypto-modern-algos/"
+    },
+    "fragment": "dictionary Argon2Params : Algorithm {\n  required BufferSource nonce;\n  required [EnforceRange] unsigned long parallelism;\n  required [EnforceRange] unsigned long memory;\n  required [EnforceRange] unsigned long passes;\n  [EnforceRange] octet version;\n  BufferSource secretValue;\n  BufferSource associatedData;\n};",
+    "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-Argon2Params"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "Algorithm",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Cryptography API Level 2",
+        "url": "https://www.w3.org/TR/webcrypto-2/"
+      },
+      "fragment": "dictionary Algorithm {\n  required DOMString name;\n};",
+      "href": "https://w3c.github.io/webcrypto/#dfn-Algorithm"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

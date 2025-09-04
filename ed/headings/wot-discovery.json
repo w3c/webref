@@ -1,0 +1,650 @@
+{
+  "spec": {
+    "title": "Web of Things (WoT) Discovery",
+    "url": "https://w3c.github.io/wot-discovery/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/wot-discovery/#title",
+      "level": 1,
+      "title": "Web of Things (WoT) Discovery"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/wot-discovery/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/wot-discovery/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/wot-discovery/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "x2-conformance"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/wot-discovery/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "alternateIds": [
+        "x3-terminology"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "architecture",
+      "href": "https://w3c.github.io/wot-discovery/#architecture",
+      "level": 2,
+      "title": "Architecture",
+      "alternateIds": [
+        "x4-architecture"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "discoverer-process",
+      "href": "https://w3c.github.io/wot-discovery/#discoverer-process",
+      "level": 2,
+      "title": "Discoverer Process",
+      "alternateIds": [
+        "x5-discoverer-process"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "introduction-mech",
+      "href": "https://w3c.github.io/wot-discovery/#introduction-mech",
+      "level": 2,
+      "title": "Introduction Mechanisms",
+      "alternateIds": [
+        "x6-introduction-mechanisms"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "introduction-direct",
+      "href": "https://w3c.github.io/wot-discovery/#introduction-direct",
+      "level": 3,
+      "title": "Direct",
+      "alternateIds": [
+        "x6-1-direct"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "introduction-well-known",
+      "href": "https://w3c.github.io/wot-discovery/#introduction-well-known",
+      "level": 3,
+      "title": "Well-Known URIs",
+      "alternateIds": [
+        "x6-2-well-known-uris"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "introduction-dns-sd-sec",
+      "href": "https://w3c.github.io/wot-discovery/#introduction-dns-sd-sec",
+      "level": 3,
+      "title": "DNS-Based Service Discovery",
+      "alternateIds": [
+        "x6-3-dns-based-service-discovery"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "introduction-core-rd-sec",
+      "href": "https://w3c.github.io/wot-discovery/#introduction-core-rd-sec",
+      "level": 3,
+      "title": "CoRE Link Format and CoRE Resource Directory",
+      "alternateIds": [
+        "x6-4-core-link-format-and-core-resource-directory"
+      ],
+      "number": "6.4"
+    },
+    {
+      "id": "introduction-did-sec",
+      "href": "https://w3c.github.io/wot-discovery/#introduction-did-sec",
+      "level": 3,
+      "title": "DID Documents",
+      "alternateIds": [
+        "x6-5-did-documents"
+      ],
+      "number": "6.5"
+    },
+    {
+      "id": "exploration-mech",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-mech",
+      "level": 2,
+      "title": "Exploration Mechanisms",
+      "alternateIds": [
+        "x7-exploration-mechanisms"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "exploration-overview",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-overview",
+      "level": 3,
+      "title": "Overview",
+      "alternateIds": [
+        "x7-1-overview"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "exploration-ontology",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-ontology",
+      "level": 4,
+      "title": "Ontology",
+      "alternateIds": [
+        "x7-1-1-ontology"
+      ],
+      "number": "7.1.1"
+    },
+    {
+      "id": "exploration-td-type-thingdirectory",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-td-type-thingdirectory",
+      "level": 5,
+      "title": "ThingDirectory",
+      "alternateIds": [
+        "x7-1-1-1-thingdirectory"
+      ],
+      "number": "7.1.1.1"
+    },
+    {
+      "id": "exploration-td-type-thinglink",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-td-type-thinglink",
+      "level": 5,
+      "title": "ThingLink",
+      "alternateIds": [
+        "x7-1-1-2-thinglink"
+      ],
+      "number": "7.1.1.2"
+    },
+    {
+      "id": "exploration-secboot",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-secboot",
+      "level": 4,
+      "title": "Security Bootstrapping",
+      "alternateIds": [
+        "x7-1-2-security-bootstrapping"
+      ],
+      "number": "7.1.2"
+    },
+    {
+      "id": "exploration-server",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-server",
+      "level": 3,
+      "title": "Thing Description Server",
+      "alternateIds": [
+        "x7-2-thing-description-server"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "exploration-directory",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory",
+      "level": 3,
+      "title": "Thing Description Directory",
+      "alternateIds": [
+        "x7-3-thing-description-directory"
+      ],
+      "number": "7.3"
+    },
+    {
+      "id": "exploration-directory-info",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory-info",
+      "level": 4,
+      "title": "Information Model",
+      "alternateIds": [
+        "x7-3-1-information-model"
+      ],
+      "number": "7.3.1"
+    },
+    {
+      "id": "exploration-directory-registration-info",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory-registration-info",
+      "level": 5,
+      "title": "Registration Information",
+      "alternateIds": [
+        "x7-3-1-1-registration-information"
+      ],
+      "number": "7.3.1.1"
+    },
+    {
+      "id": "exploration-directory-registration-expiry",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory-registration-expiry",
+      "level": 5,
+      "title": "Registration Expiry",
+      "alternateIds": [
+        "x7-3-1-2-registration-expiry"
+      ],
+      "number": "7.3.1.2"
+    },
+    {
+      "id": "exploration-directory-anonymous-td",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory-anonymous-td",
+      "level": 5,
+      "title": "Anonymous TD Identifiers",
+      "alternateIds": [
+        "x7-3-1-3-anonymous-td-identifiers"
+      ],
+      "number": "7.3.1.3"
+    },
+    {
+      "id": "exploration-directory-api",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory-api",
+      "level": 4,
+      "title": "Directory Service API",
+      "alternateIds": [
+        "x7-3-2-directory-service-api"
+      ],
+      "number": "7.3.2"
+    },
+    {
+      "id": "exploration-directory-api-things",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory-api-things",
+      "level": 5,
+      "title": "Things API",
+      "alternateIds": [
+        "x7-3-2-1-things-api"
+      ],
+      "number": "7.3.2.1"
+    },
+    {
+      "id": "exploration-directory-api-things-creation",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory-api-things-creation",
+      "level": 6,
+      "title": "Creation",
+      "alternateIds": [
+        "x7-3-2-1-1-creation"
+      ],
+      "number": "7.3.2.1.1"
+    },
+    {
+      "id": "exploration-directory-api-things-retrieval",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory-api-things-retrieval",
+      "level": 6,
+      "title": "Retrieval",
+      "alternateIds": [
+        "x7-3-2-1-2-retrieval"
+      ],
+      "number": "7.3.2.1.2"
+    },
+    {
+      "id": "exploration-directory-api-things-update",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory-api-things-update",
+      "level": 6,
+      "title": "Update",
+      "alternateIds": [
+        "x7-3-2-1-3-update"
+      ],
+      "number": "7.3.2.1.3"
+    },
+    {
+      "id": "exploration-directory-api-things-deletion",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory-api-things-deletion",
+      "level": 6,
+      "title": "Deletion",
+      "alternateIds": [
+        "x7-3-2-1-4-deletion"
+      ],
+      "number": "7.3.2.1.4"
+    },
+    {
+      "id": "exploration-directory-api-things-listing",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory-api-things-listing",
+      "level": 6,
+      "title": "Listing",
+      "alternateIds": [
+        "x7-3-2-1-5-listing"
+      ],
+      "number": "7.3.2.1.5"
+    },
+    {
+      "id": "exploration-directory-api-things-validation",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory-api-things-validation",
+      "level": 6,
+      "title": "Validation",
+      "alternateIds": [
+        "x7-3-2-1-6-validation"
+      ],
+      "number": "7.3.2.1.6"
+    },
+    {
+      "id": "exploration-directory-api-notification",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory-api-notification",
+      "level": 5,
+      "title": "Events API",
+      "alternateIds": [
+        "x7-3-2-2-events-api"
+      ],
+      "number": "7.3.2.2"
+    },
+    {
+      "id": "exploration-directory-api-search",
+      "href": "https://w3c.github.io/wot-discovery/#exploration-directory-api-search",
+      "level": 5,
+      "title": "Search API",
+      "alternateIds": [
+        "x7-3-2-3-search-api"
+      ],
+      "number": "7.3.2.3"
+    },
+    {
+      "id": "jsonpath-semantic",
+      "href": "https://w3c.github.io/wot-discovery/#jsonpath-semantic",
+      "level": 6,
+      "title": "Syntactic search: JSONPath",
+      "alternateIds": [
+        "x7-3-2-3-1-syntactic-search-jsonpath"
+      ],
+      "number": "7.3.2.3.1"
+    },
+    {
+      "id": "xpath-semantic",
+      "href": "https://w3c.github.io/wot-discovery/#xpath-semantic",
+      "level": 6,
+      "title": "Syntactic search: XPath",
+      "alternateIds": [
+        "x7-3-2-3-2-syntactic-search-xpath"
+      ],
+      "number": "7.3.2.3.2"
+    },
+    {
+      "id": "search-semantic",
+      "href": "https://w3c.github.io/wot-discovery/#search-semantic",
+      "level": 6,
+      "title": "Semantic search: SPARQL",
+      "alternateIds": [
+        "x7-3-2-3-3-semantic-search-sparql"
+      ],
+      "number": "7.3.2.3.3"
+    },
+    {
+      "id": "directory-api-spec",
+      "href": "https://w3c.github.io/wot-discovery/#directory-api-spec",
+      "level": 5,
+      "title": "API Specification (Thing Model)",
+      "alternateIds": [
+        "x7-3-2-4-api-specification-thing-model"
+      ],
+      "number": "7.3.2.4"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/wot-discovery/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "x8-security-considerations"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "security-consideration-dos",
+      "href": "https://w3c.github.io/wot-discovery/#security-consideration-dos",
+      "level": 3,
+      "title": "Denial of Service",
+      "alternateIds": [
+        "x8-1-denial-of-service"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "security-consideration-amp-ddos",
+      "href": "https://w3c.github.io/wot-discovery/#security-consideration-amp-ddos",
+      "level": 3,
+      "title": "Amplification and Distributed Denial of Service",
+      "alternateIds": [
+        "x8-2-amplification-and-distributed-denial-of-service"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "security-consideration-lan-self-discovery",
+      "href": "https://w3c.github.io/wot-discovery/#security-consideration-lan-self-discovery",
+      "level": 3,
+      "title": "Self-Discovery on LANs",
+      "alternateIds": [
+        "x8-3-self-discovery-on-lans"
+      ],
+      "number": "8.3"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/wot-discovery/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "x9-privacy-considerations"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "privacy-consideration-location-tracking",
+      "href": "https://w3c.github.io/wot-discovery/#privacy-consideration-location-tracking",
+      "level": 3,
+      "title": "Location Tracking and Profiling",
+      "alternateIds": [
+        "x9-1-location-tracking-and-profiling"
+      ],
+      "number": "9.1"
+    },
+    {
+      "id": "privacy-consideration-query-tracking",
+      "href": "https://w3c.github.io/wot-discovery/#privacy-consideration-query-tracking",
+      "level": 3,
+      "title": "Query Tracking",
+      "alternateIds": [
+        "x9-2-query-tracking"
+      ],
+      "number": "9.2"
+    },
+    {
+      "id": "performance-considerations",
+      "href": "https://w3c.github.io/wot-discovery/#performance-considerations",
+      "level": 2,
+      "title": "10. Performance Considerations",
+      "alternateIds": [
+        "x10-performance-considerations"
+      ]
+    },
+    {
+      "id": "perf-incremental-transfer",
+      "href": "https://w3c.github.io/wot-discovery/#perf-incremental-transfer",
+      "level": 3,
+      "title": "Incremental Transfer",
+      "alternateIds": [
+        "x10-1-incremental-transfer"
+      ],
+      "number": "10.1"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://w3c.github.io/wot-discovery/#iana-considerations",
+      "level": 2,
+      "title": "11. IANA Considerations",
+      "alternateIds": [
+        "x11-iana-considerations"
+      ]
+    },
+    {
+      "id": "well-known-uri-suffix",
+      "href": "https://w3c.github.io/wot-discovery/#well-known-uri-suffix",
+      "level": 3,
+      "title": "Well-Known URI Registration",
+      "alternateIds": [
+        "x11-1-well-known-uri-registration"
+      ],
+      "number": "11.1"
+    },
+    {
+      "id": "service-name",
+      "href": "https://w3c.github.io/wot-discovery/#service-name",
+      "level": 3,
+      "title": "Service Name Registration",
+      "alternateIds": [
+        "x11-2-service-name-registration"
+      ],
+      "number": "11.2"
+    },
+    {
+      "id": "core-resource-type",
+      "href": "https://w3c.github.io/wot-discovery/#core-resource-type",
+      "level": 3,
+      "title": "CoRE Resource Types Registration",
+      "alternateIds": [
+        "x11-3-core-resource-types-registration"
+      ],
+      "number": "11.3"
+    },
+    {
+      "id": "other-name-considerations",
+      "href": "https://w3c.github.io/wot-discovery/#other-name-considerations",
+      "level": 2,
+      "title": "12. Other Name Registration Considerations",
+      "alternateIds": [
+        "x12-other-name-registration-considerations"
+      ]
+    },
+    {
+      "id": "did-service-name",
+      "href": "https://w3c.github.io/wot-discovery/#did-service-name",
+      "level": 3,
+      "title": "DID Service Name Registration",
+      "alternateIds": [
+        "x12-1-did-service-name-registration"
+      ],
+      "number": "12.1"
+    },
+    {
+      "id": "tdd-extensions-jsonschema",
+      "href": "https://w3c.github.io/wot-discovery/#tdd-extensions-jsonschema",
+      "level": 2,
+      "title": "JSON Schema for WoT Discovery TD-extensions",
+      "alternateIds": [
+        "a-json-schema-for-wot-discovery-td-extensions"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "changes",
+      "href": "https://w3c.github.io/wot-discovery/#changes",
+      "level": 2,
+      "title": "Recent Specification Changes",
+      "alternateIds": [
+        "b-recent-specification-changes"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "changes-from-11-july-2023-proposed-recommendation",
+      "href": "https://w3c.github.io/wot-discovery/#changes-from-11-july-2023-proposed-recommendation",
+      "level": 3,
+      "title": "Changes from 11 July 2023 Proposed Recommendation",
+      "alternateIds": [
+        "changes-from-pr"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "changes-from-19-january-2023-candidate-recommendation",
+      "href": "https://w3c.github.io/wot-discovery/#changes-from-19-january-2023-candidate-recommendation",
+      "level": 3,
+      "title": "Changes from 19 January 2023 Candidate Recommendation",
+      "alternateIds": [
+        "changes-from-cr"
+      ],
+      "number": "B.2"
+    },
+    {
+      "id": "changes-from-10-august-2022-working-draft",
+      "href": "https://w3c.github.io/wot-discovery/#changes-from-10-august-2022-working-draft",
+      "level": 3,
+      "title": "Changes from 10 August 2022 Working Draft",
+      "alternateIds": [
+        "changes-from-third-draft"
+      ],
+      "number": "B.3"
+    },
+    {
+      "id": "changes-from-2-june-2021-working-draft",
+      "href": "https://w3c.github.io/wot-discovery/#changes-from-2-june-2021-working-draft",
+      "level": 3,
+      "title": "Changes from 2 June 2021 Working Draft",
+      "alternateIds": [
+        "changes-from-second-draft"
+      ],
+      "number": "B.4"
+    },
+    {
+      "id": "changes-from-24-november-2020-first-public-working-draft",
+      "href": "https://w3c.github.io/wot-discovery/#changes-from-24-november-2020-first-public-working-draft",
+      "level": 3,
+      "title": "Changes from 24 November 2020 First Public Working Draft",
+      "alternateIds": [
+        "changes-from-first-draft"
+      ],
+      "number": "B.5"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/wot-discovery/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgments",
+      "alternateIds": [
+        "c-acknowledgments"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/wot-discovery/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "d-references"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/wot-discovery/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "d-1-normative-references"
+      ],
+      "number": "D.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/wot-discovery/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "d-2-informative-references"
+      ],
+      "number": "D.2"
+    }
+  ]
+}

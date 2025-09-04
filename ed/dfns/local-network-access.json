@@ -1,0 +1,516 @@
+{
+  "spec": {
+    "title": "Local Network Access",
+    "url": "https://wicg.github.io/local-network-access/"
+  },
+  "dfns": [
+    {
+      "id": "enumdef-ipaddressspace",
+      "href": "https://wicg.github.io/local-network-access/#enumdef-ipaddressspace",
+      "linkingText": [
+        "IPAddressSpace"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-ipaddressspace-public",
+      "href": "https://wicg.github.io/local-network-access/#dom-ipaddressspace-public",
+      "linkingText": [
+        "\"public\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IPAddressSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-ipaddressspace-local",
+      "href": "https://wicg.github.io/local-network-access/#dom-ipaddressspace-local",
+      "linkingText": [
+        "\"local\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IPAddressSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-ipaddressspace-loopback",
+      "href": "https://wicg.github.io/local-network-access/#dom-ipaddressspace-loopback",
+      "linkingText": [
+        "\"loopback\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "IPAddressSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "ip-address-space",
+      "href": "https://wicg.github.io/local-network-access/#ip-address-space",
+      "linkingText": [
+        "IP address space"
+      ],
+      "localLinkingText": [
+        "address space"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "ip-address-space-loopback",
+      "href": "https://wicg.github.io/local-network-access/#ip-address-space-loopback",
+      "linkingText": [
+        "loopback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "IP address space"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "ip-address-space-local",
+      "href": "https://wicg.github.io/local-network-access/#ip-address-space-local",
+      "linkingText": [
+        "local"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "IP address space"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "ip-address-space-public",
+      "href": "https://wicg.github.io/local-network-access/#ip-address-space-public",
+      "linkingText": [
+        "public"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "IP address space"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "loopback-address",
+      "href": "https://wicg.github.io/local-network-access/#loopback-address",
+      "linkingText": [
+        "loopback address"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "local-address",
+      "href": "https://wicg.github.io/local-network-access/#local-address",
+      "linkingText": [
+        "local address"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "public-address",
+      "href": "https://wicg.github.io/local-network-access/#public-address",
+      "linkingText": [
+        "public address"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "ip-address-space-less-public",
+      "href": "https://wicg.github.io/local-network-access/#ip-address-space-less-public",
+      "linkingText": [
+        "less public"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "IP address space"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "determine-the-ip-address-space",
+      "href": "https://wicg.github.io/local-network-access/#determine-the-ip-address-space",
+      "linkingText": [
+        "determine the IP address space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ip-address-space-section",
+        "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+        "title": "IP Address Space",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "local-network-request",
+      "href": "https://wicg.github.io/local-network-access/#local-network-request",
+      "linkingText": [
+        "local network request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "local-network-request-section",
+        "href": "https://wicg.github.io/local-network-access/#local-network-request-section",
+        "title": "Local Network Request",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "permissiondef-local-network-access",
+      "href": "https://wicg.github.io/local-network-access/#permissiondef-local-network-access",
+      "linkingText": [
+        "\"local-network-access\""
+      ],
+      "localLinkingText": [],
+      "type": "permission",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "integration-with-permissions",
+        "href": "https://wicg.github.io/local-network-access/#integration-with-permissions",
+        "title": "Integration with Permissions",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "connection-ip-address-space",
+      "href": "https://wicg.github.io/local-network-access/#connection-ip-address-space",
+      "linkingText": [
+        "IP address space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "connection"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetching",
+        "href": "https://wicg.github.io/local-network-access/#fetching",
+        "title": "Fetching",
+        "number": "3.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "request-target-ip-address-space",
+      "href": "https://wicg.github.io/local-network-access/#request-target-ip-address-space",
+      "linkingText": [
+        "target IP address space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetching",
+        "href": "https://wicg.github.io/local-network-access/#fetching",
+        "title": "Fetching",
+        "number": "3.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "response-ip-address-space",
+      "href": "https://wicg.github.io/local-network-access/#response-ip-address-space",
+      "linkingText": [
+        "IP address space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "response"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetching",
+        "href": "https://wicg.github.io/local-network-access/#fetching",
+        "title": "Fetching",
+        "number": "3.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "local-network-access-check",
+      "href": "https://wicg.github.io/local-network-access/#local-network-access-check",
+      "linkingText": [
+        "Local Network Access check"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetching",
+        "href": "https://wicg.github.io/local-network-access/#fetching",
+        "title": "Fetching",
+        "number": "3.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "http-no-service-worker-fetch",
+      "href": "https://wicg.github.io/local-network-access/#http-no-service-worker-fetch",
+      "linkingText": [
+        "HTTP-no-service-worker fetch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fetching",
+        "href": "https://wicg.github.io/local-network-access/#fetching",
+        "title": "Fetching",
+        "number": "3.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "targetaddressspace",
+      "href": "https://wicg.github.io/local-network-access/#targetaddressspace",
+      "linkingText": [
+        "targetAddressSpace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetch-api",
+        "href": "https://wicg.github.io/local-network-access/#fetch-api",
+        "title": "Fetch API",
+        "number": "3.3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-requestinit-targetaddressspace",
+      "href": "https://wicg.github.io/local-network-access/#dom-requestinit-targetaddressspace",
+      "linkingText": [
+        "targetAddressSpace"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RequestInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetch-api",
+        "href": "https://wicg.github.io/local-network-access/#fetch-api",
+        "title": "Fetch API",
+        "number": "3.3.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-request-targetaddressspace",
+      "href": "https://wicg.github.io/local-network-access/#dom-request-targetaddressspace",
+      "linkingText": [
+        "targetAddressSpace"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Request"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fetch-api",
+        "href": "https://wicg.github.io/local-network-access/#fetch-api",
+        "title": "Fetch API",
+        "number": "3.3.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "policy-container-ip-address-space",
+      "href": "https://wicg.github.io/local-network-access/#policy-container-ip-address-space",
+      "linkingText": [
+        "IP address space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy container"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "integration-with-html",
+        "href": "https://wicg.github.io/local-network-access/#integration-with-html",
+        "title": "Integration with HTML",
+        "number": "3.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}

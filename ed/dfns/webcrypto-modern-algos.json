@@ -1,0 +1,1647 @@
+{
+  "spec": {
+    "title": "Modern Algorithms in the Web Cryptography API",
+    "url": "https://wicg.github.io/webcrypto-modern-algos/"
+  },
+  "dfns": [
+    {
+      "id": "dom-keyformat",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat",
+      "linkingText": [
+        "KeyFormat"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyformat",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyformat",
+        "title": "Key Formats",
+        "alternateIds": [
+          "x3-1-1-key-formats"
+        ],
+        "number": "3.1.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-keyformat-raw",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw",
+      "linkingText": [
+        "raw"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyformat",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyformat",
+        "title": "Key Formats",
+        "alternateIds": [
+          "x3-1-1-key-formats"
+        ],
+        "number": "3.1.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-keyformat-spki",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-spki",
+      "linkingText": [
+        "spki"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyformat",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyformat",
+        "title": "Key Formats",
+        "alternateIds": [
+          "x3-1-1-key-formats"
+        ],
+        "number": "3.1.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-keyformat-pkcs8",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-pkcs8",
+      "linkingText": [
+        "pkcs8"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyformat",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyformat",
+        "title": "Key Formats",
+        "alternateIds": [
+          "x3-1-1-key-formats"
+        ],
+        "number": "3.1.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-keyformat-jwk",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-jwk",
+      "linkingText": [
+        "jwk"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyformat",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyformat",
+        "title": "Key Formats",
+        "alternateIds": [
+          "x3-1-1-key-formats"
+        ],
+        "number": "3.1.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-keyformat-raw-public",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-public",
+      "linkingText": [
+        "raw-public"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyformat",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyformat",
+        "title": "Key Formats",
+        "alternateIds": [
+          "x3-1-1-key-formats"
+        ],
+        "number": "3.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-keyformat-raw-private",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-private",
+      "linkingText": [
+        "raw-private"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyformat",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyformat",
+        "title": "Key Formats",
+        "alternateIds": [
+          "x3-1-1-key-formats"
+        ],
+        "number": "3.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-keyformat-raw-seed",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-seed",
+      "linkingText": [
+        "raw-seed"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyformat",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyformat",
+        "title": "Key Formats",
+        "alternateIds": [
+          "x3-1-1-key-formats"
+        ],
+        "number": "3.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-keyformat-raw-secret",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret",
+      "linkingText": [
+        "raw-secret"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyformat",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyformat",
+        "title": "Key Formats",
+        "alternateIds": [
+          "x3-1-1-key-formats"
+        ],
+        "number": "3.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-keyusage",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyusage",
+      "linkingText": [
+        "KeyUsage"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyusage",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyusage",
+        "title": "Key Usages",
+        "alternateIds": [
+          "x3-1-2-key-usages"
+        ],
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-keyusage-encrypt",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyusage-encrypt",
+      "linkingText": [
+        "encrypt"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyusage",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyusage",
+        "title": "Key Usages",
+        "alternateIds": [
+          "x3-1-2-key-usages"
+        ],
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-keyusage-decrypt",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyusage-decrypt",
+      "linkingText": [
+        "decrypt"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyusage",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyusage",
+        "title": "Key Usages",
+        "alternateIds": [
+          "x3-1-2-key-usages"
+        ],
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-keyusage-sign",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyusage-sign",
+      "linkingText": [
+        "sign"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyusage",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyusage",
+        "title": "Key Usages",
+        "alternateIds": [
+          "x3-1-2-key-usages"
+        ],
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-keyusage-verify",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyusage-verify",
+      "linkingText": [
+        "verify"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyusage",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyusage",
+        "title": "Key Usages",
+        "alternateIds": [
+          "x3-1-2-key-usages"
+        ],
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-keyusage-derivekey",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyusage-derivekey",
+      "linkingText": [
+        "deriveKey"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyusage",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyusage",
+        "title": "Key Usages",
+        "alternateIds": [
+          "x3-1-2-key-usages"
+        ],
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-keyusage-derivebits",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyusage-derivebits",
+      "linkingText": [
+        "deriveBits"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyusage",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyusage",
+        "title": "Key Usages",
+        "alternateIds": [
+          "x3-1-2-key-usages"
+        ],
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-keyusage-wrapkey",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyusage-wrapkey",
+      "linkingText": [
+        "wrapKey"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyusage",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyusage",
+        "title": "Key Usages",
+        "alternateIds": [
+          "x3-1-2-key-usages"
+        ],
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-keyusage-unwrapkey",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyusage-unwrapkey",
+      "linkingText": [
+        "unwrapKey"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyusage",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyusage",
+        "title": "Key Usages",
+        "alternateIds": [
+          "x3-1-2-key-usages"
+        ],
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-keyusage-encapsulatekey",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyusage-encapsulatekey",
+      "linkingText": [
+        "encapsulateKey"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyusage",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyusage",
+        "title": "Key Usages",
+        "alternateIds": [
+          "x3-1-2-key-usages"
+        ],
+        "number": "3.1.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-keyusage-encapsulatebits",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyusage-encapsulatebits",
+      "linkingText": [
+        "encapsulateBits"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyusage",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyusage",
+        "title": "Key Usages",
+        "alternateIds": [
+          "x3-1-2-key-usages"
+        ],
+        "number": "3.1.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-keyusage-decapsulatekey",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyusage-decapsulatekey",
+      "linkingText": [
+        "decapsulateKey"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyusage",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyusage",
+        "title": "Key Usages",
+        "alternateIds": [
+          "x3-1-2-key-usages"
+        ],
+        "number": "3.1.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-keyusage-decapsulatebits",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-keyusage-decapsulatebits",
+      "linkingText": [
+        "decapsulateBits"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "KeyUsage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subtlecrypto-interface-keyusage",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#subtlecrypto-interface-keyusage",
+        "title": "Key Usages",
+        "alternateIds": [
+          "x3-1-2-key-usages"
+        ],
+        "number": "3.1.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-encapsulateKey",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-SubtleCrypto-method-encapsulateKey",
+      "linkingText": [
+        "encapsulateKey(encapsulationAlgorithm, encapsulationKey, sharedKeyAlgorithm, extractable, usages)",
+        "encapsulateKey()",
+        "encapsulateKey(encapsulationAlgorithm, encapsulationKey, sharedKeyAlgorithm, extractable, keyUsages)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.encapsulateKey",
+        "SubtleCrypto.encapsulateKey()",
+        "encapsulateKey"
+      ],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "SubtleCrypto-method-encapsulateKey",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#SubtleCrypto-method-encapsulateKey",
+        "title": "The encapsulateKey method",
+        "alternateIds": [
+          "x3-2-1-the-encapsulatekey-method"
+        ],
+        "number": "3.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-encapsulateBits",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-SubtleCrypto-method-encapsulateBits",
+      "linkingText": [
+        "encapsulateBits(encapsulationAlgorithm, encapsulationKey)",
+        "encapsulateBits()"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.encapsulateBits",
+        "SubtleCrypto.encapsulateBits()",
+        "encapsulateBits"
+      ],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "SubtleCrypto-method-encapsulateBits",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#SubtleCrypto-method-encapsulateBits",
+        "title": "The encapsulateBits method",
+        "alternateIds": [
+          "x3-2-2-the-encapsulatebits-method"
+        ],
+        "number": "3.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-decapsulateKey",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-SubtleCrypto-method-decapsulateKey",
+      "linkingText": [
+        "decapsulateKey(decapsulationAlgorithm, decapsulationKey, ciphertext, sharedKeyAlgorithm, extractable, usages)",
+        "decapsulateKey()",
+        "decapsulateKey(decapsulationAlgorithm, decapsulationKey, ciphertext, sharedKeyAlgorithm, extractable, keyUsages)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.decapsulateKey",
+        "SubtleCrypto.decapsulateKey()",
+        "decapsulateKey"
+      ],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "SubtleCrypto-method-decapsulateKey",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#SubtleCrypto-method-decapsulateKey",
+        "title": "The decapsulateKey method",
+        "alternateIds": [
+          "x3-2-3-the-decapsulatekey-method"
+        ],
+        "number": "3.2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-decapsulateBits",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-SubtleCrypto-method-decapsulateBits",
+      "linkingText": [
+        "decapsulateBits(decapsulationAlgorithm, decapsulationKey, ciphertext)",
+        "decapsulateBits()"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.decapsulateBits",
+        "SubtleCrypto.decapsulateBits()",
+        "decapsulateBits"
+      ],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "SubtleCrypto-method-decapsulateBits",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#SubtleCrypto-method-decapsulateBits",
+        "title": "The decapsulateBits method",
+        "alternateIds": [
+          "x3-2-4-the-decapsulatebits-method"
+        ],
+        "number": "3.2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-getPublicKey",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-SubtleCrypto-method-getPublicKey",
+      "linkingText": [
+        "getPublicKey(key, usages)",
+        "getPublicKey()",
+        "getPublicKey(key, keyUsages)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.getPublicKey",
+        "SubtleCrypto.getPublicKey()",
+        "getPublicKey"
+      ],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "SubtleCrypto-method-getPublicKey",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#SubtleCrypto-method-getPublicKey",
+        "title": "The getPublicKey method",
+        "alternateIds": [
+          "x3-2-5-the-getpublickey-method"
+        ],
+        "number": "3.2.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-supports",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-SubtleCrypto-method-supports",
+      "linkingText": [
+        "supports(operation, algorithm, length)",
+        "supports()",
+        "supports(operation, algorithm)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.supports",
+        "SubtleCrypto.supports()",
+        "supports"
+      ],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "SubtleCrypto-method-supports",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#SubtleCrypto-method-supports",
+        "title": "The supports method",
+        "alternateIds": [
+          "x3-2-6-the-supports-method"
+        ],
+        "number": "3.2.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-SubtleCrypto-method-supports-additionalAlgorithm",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-SubtleCrypto-method-supports-additionalAlgorithm",
+      "linkingText": [
+        "supports(operation, algorithm, additionalAlgorithm)",
+        "supports!overload-1()",
+        "supports!overload-1(operation, algorithm, additionalAlgorithm)"
+      ],
+      "localLinkingText": [
+        "SubtleCrypto.supports!overload-1",
+        "SubtleCrypto.supports!overload-1()",
+        "supports!overload-1"
+      ],
+      "type": "method",
+      "for": [
+        "SubtleCrypto"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "SubtleCrypto-method-supports",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#SubtleCrypto-method-supports",
+        "title": "The supports method",
+        "alternateIds": [
+          "x3-2-6-the-supports-method"
+        ],
+        "number": "3.2.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-check-support-for-algorithm",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-check-support-for-algorithm",
+      "linkingText": [
+        "check support for an algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "partial-subtlecrypto-interface-checking-support-for-algorithm",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#partial-subtlecrypto-interface-checking-support-for-algorithm",
+        "title": "Checking support for an algorithm",
+        "alternateIds": [
+          "x3-3-checking-support-for-an-algorithm"
+        ],
+        "number": "3.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-EncapsulatedKey",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-EncapsulatedKey",
+      "linkingText": [
+        "EncapsulatedKey"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encapsulation",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#encapsulation",
+        "title": "Encapsulation dictionaries",
+        "alternateIds": [
+          "x4-encapsulation-dictionaries"
+        ],
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-EncapsulatedKey-sharedKey",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-EncapsulatedKey-sharedKey",
+      "linkingText": [
+        "sharedKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncapsulatedKey"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encapsulation",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#encapsulation",
+        "title": "Encapsulation dictionaries",
+        "alternateIds": [
+          "x4-encapsulation-dictionaries"
+        ],
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-EncapsulatedKey-ciphertext",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-EncapsulatedKey-ciphertext",
+      "linkingText": [
+        "ciphertext"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncapsulatedKey"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encapsulation",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#encapsulation",
+        "title": "Encapsulation dictionaries",
+        "alternateIds": [
+          "x4-encapsulation-dictionaries"
+        ],
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-EncapsulatedBits",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-EncapsulatedBits",
+      "linkingText": [
+        "EncapsulatedBits"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encapsulation",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#encapsulation",
+        "title": "Encapsulation dictionaries",
+        "alternateIds": [
+          "x4-encapsulation-dictionaries"
+        ],
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-EncapsulatedBits-sharedKey",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-EncapsulatedBits-sharedKey",
+      "linkingText": [
+        "sharedKey"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncapsulatedBits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encapsulation",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#encapsulation",
+        "title": "Encapsulation dictionaries",
+        "alternateIds": [
+          "x4-encapsulation-dictionaries"
+        ],
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-EncapsulatedBits-ciphertext",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-EncapsulatedBits-ciphertext",
+      "linkingText": [
+        "ciphertext"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncapsulatedBits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encapsulation",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#encapsulation",
+        "title": "Encapsulation dictionaries",
+        "alternateIds": [
+          "x4-encapsulation-dictionaries"
+        ],
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-jsonwebkey-pub",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub",
+      "linkingText": [
+        "pub"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "partial-JsonWebKey-dictionary",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#partial-JsonWebKey-dictionary",
+        "title": "Partial JsonWebKey dictionary",
+        "alternateIds": [
+          "x5-partial-jsonwebkey-dictionary"
+        ],
+        "number": "5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-jsonwebkey-priv",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv",
+      "linkingText": [
+        "priv"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "JsonWebKey"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "partial-JsonWebKey-dictionary",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#partial-JsonWebKey-dictionary",
+        "title": "Partial JsonWebKey dictionary",
+        "alternateIds": [
+          "x5-partial-jsonwebkey-dictionary"
+        ],
+        "number": "5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dfn-ContextParams",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams",
+      "linkingText": [
+        "ContextParams"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "context-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#context-params",
+        "title": "ContextParams dictionary",
+        "alternateIds": [
+          "x7-3-contextparams-dictionary"
+        ],
+        "number": "7.3"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dfn-ContextParams-context",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-ContextParams-context",
+      "linkingText": [
+        "context"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ContextParams"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "context-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#context-params",
+        "title": "ContextParams dictionary",
+        "alternateIds": [
+          "x7-3-contextparams-dictionary"
+        ],
+        "number": "7.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-AeadParams",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-AeadParams",
+      "linkingText": [
+        "AeadParams"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "aead-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#aead-params",
+        "title": "AeadParams dictionary",
+        "alternateIds": [
+          "x9-3-aeadparams-dictionary"
+        ],
+        "number": "9.3"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dfn-AeadParams-iv",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-AeadParams-iv",
+      "linkingText": [
+        "iv"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AeadParams"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "aead-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#aead-params",
+        "title": "AeadParams dictionary",
+        "alternateIds": [
+          "x9-3-aeadparams-dictionary"
+        ],
+        "number": "9.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-AeadParams-additionalData",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-AeadParams-additionalData",
+      "linkingText": [
+        "additionalData"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AeadParams"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "aead-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#aead-params",
+        "title": "AeadParams dictionary",
+        "alternateIds": [
+          "x9-3-aeadparams-dictionary"
+        ],
+        "number": "9.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-AeadParams-tagLength",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-AeadParams-tagLength",
+      "linkingText": [
+        "tagLength"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AeadParams"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "aead-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#aead-params",
+        "title": "AeadParams dictionary",
+        "alternateIds": [
+          "x9-3-aeadparams-dictionary"
+        ],
+        "number": "9.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-CShakeParams",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-CShakeParams",
+      "linkingText": [
+        "CShakeParams"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cshake-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#cshake-params",
+        "title": "CShakeParams dictionary",
+        "alternateIds": [
+          "x12-3-cshakeparams-dictionary"
+        ],
+        "number": "12.3"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dfn-CShakeParams-length",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-CShakeParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CShakeParams"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cshake-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#cshake-params",
+        "title": "CShakeParams dictionary",
+        "alternateIds": [
+          "x12-3-cshakeparams-dictionary"
+        ],
+        "number": "12.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-CShakeParams-functionName",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-CShakeParams-functionName",
+      "linkingText": [
+        "functionName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CShakeParams"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cshake-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#cshake-params",
+        "title": "CShakeParams dictionary",
+        "alternateIds": [
+          "x12-3-cshakeparams-dictionary"
+        ],
+        "number": "12.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-CShakeParams-customization",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-CShakeParams-customization",
+      "linkingText": [
+        "customization"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CShakeParams"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cshake-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#cshake-params",
+        "title": "CShakeParams dictionary",
+        "alternateIds": [
+          "x12-3-cshakeparams-dictionary"
+        ],
+        "number": "12.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-KmacKeyGenParams",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacKeyGenParams",
+      "linkingText": [
+        "KmacKeyGenParams"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "kmac-keygen-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-keygen-params",
+        "title": "KmacKeyGenParams dictionary",
+        "alternateIds": [
+          "x13-3-kmackeygenparams-dictionary"
+        ],
+        "number": "13.3"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dfn-KmacKeyGenParams-length",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacKeyGenParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KmacKeyGenParams"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "kmac-keygen-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-keygen-params",
+        "title": "KmacKeyGenParams dictionary",
+        "alternateIds": [
+          "x13-3-kmackeygenparams-dictionary"
+        ],
+        "number": "13.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-KmacImportParams",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacImportParams",
+      "linkingText": [
+        "KmacImportParams"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "kmac-importparams",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-importparams",
+        "title": "KmacImportParams dictionary",
+        "alternateIds": [
+          "x13-4-kmacimportparams-dictionary"
+        ],
+        "number": "13.4"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dfn-KmacImportParams-length",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacImportParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KmacImportParams"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "kmac-importparams",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-importparams",
+        "title": "KmacImportParams dictionary",
+        "alternateIds": [
+          "x13-4-kmacimportparams-dictionary"
+        ],
+        "number": "13.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-KmacKeyAlgorithm",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacKeyAlgorithm",
+      "linkingText": [
+        "KmacKeyAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "KmacKeyAlgorithm-dictionary",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#KmacKeyAlgorithm-dictionary",
+        "title": "KmacKeyAlgorithm dictionary",
+        "alternateIds": [
+          "x13-5-kmackeyalgorithm-dictionary"
+        ],
+        "number": "13.5"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dfn-KmacKeyAlgorithm-length",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacKeyAlgorithm-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KmacKeyAlgorithm"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "KmacKeyAlgorithm-dictionary",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#KmacKeyAlgorithm-dictionary",
+        "title": "KmacKeyAlgorithm dictionary",
+        "alternateIds": [
+          "x13-5-kmackeyalgorithm-dictionary"
+        ],
+        "number": "13.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-KmacParams",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacParams",
+      "linkingText": [
+        "KmacParams"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "kmac-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-params",
+        "title": "KmacParams dictionary",
+        "alternateIds": [
+          "x13-6-kmacparams-dictionary"
+        ],
+        "number": "13.6"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dfn-KmacParams-length",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacParams-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KmacParams"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "kmac-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-params",
+        "title": "KmacParams dictionary",
+        "alternateIds": [
+          "x13-6-kmacparams-dictionary"
+        ],
+        "number": "13.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-KmacParams-customization",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacParams-customization",
+      "linkingText": [
+        "customization"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "KmacParams"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "kmac-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#kmac-params",
+        "title": "KmacParams dictionary",
+        "alternateIds": [
+          "x13-6-kmacparams-dictionary"
+        ],
+        "number": "13.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-Argon2Params",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-Argon2Params",
+      "linkingText": [
+        "Argon2Params"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "argon2-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-params",
+        "title": "Argon2Params dictionary",
+        "alternateIds": [
+          "x14-3-argon2params-dictionary"
+        ],
+        "number": "14.3"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dfn-Argon2Params-nonce",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-Argon2Params-nonce",
+      "linkingText": [
+        "nonce"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Argon2Params"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "argon2-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-params",
+        "title": "Argon2Params dictionary",
+        "alternateIds": [
+          "x14-3-argon2params-dictionary"
+        ],
+        "number": "14.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-Argon2Params-parallelism",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-Argon2Params-parallelism",
+      "linkingText": [
+        "parallelism"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Argon2Params"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "argon2-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-params",
+        "title": "Argon2Params dictionary",
+        "alternateIds": [
+          "x14-3-argon2params-dictionary"
+        ],
+        "number": "14.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-Argon2Params-memory",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-Argon2Params-memory",
+      "linkingText": [
+        "memory"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Argon2Params"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "argon2-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-params",
+        "title": "Argon2Params dictionary",
+        "alternateIds": [
+          "x14-3-argon2params-dictionary"
+        ],
+        "number": "14.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-Argon2Params-passes",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-Argon2Params-passes",
+      "linkingText": [
+        "passes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Argon2Params"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "argon2-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-params",
+        "title": "Argon2Params dictionary",
+        "alternateIds": [
+          "x14-3-argon2params-dictionary"
+        ],
+        "number": "14.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-Argon2Params-version",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-Argon2Params-version",
+      "linkingText": [
+        "version"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Argon2Params"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "argon2-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-params",
+        "title": "Argon2Params dictionary",
+        "alternateIds": [
+          "x14-3-argon2params-dictionary"
+        ],
+        "number": "14.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-Argon2Params-secretValue",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-Argon2Params-secretValue",
+      "linkingText": [
+        "secretValue"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Argon2Params"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "argon2-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-params",
+        "title": "Argon2Params dictionary",
+        "alternateIds": [
+          "x14-3-argon2params-dictionary"
+        ],
+        "number": "14.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-Argon2Params-associatedData",
+      "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-Argon2Params-associatedData",
+      "linkingText": [
+        "associatedData"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Argon2Params"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "argon2-params",
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#argon2-params",
+        "title": "Argon2Params dictionary",
+        "alternateIds": [
+          "x14-3-argon2params-dictionary"
+        ],
+        "number": "14.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}

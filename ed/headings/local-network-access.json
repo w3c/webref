@@ -1,0 +1,389 @@
+{
+  "spec": {
+    "title": "Local Network Access",
+    "url": "https://wicg.github.io/local-network-access/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/local-network-access/#title",
+      "level": 1,
+      "title": "Local Network Access"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/local-network-access/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://wicg.github.io/local-network-access/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/local-network-access/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://wicg.github.io/local-network-access/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "goals",
+      "href": "https://wicg.github.io/local-network-access/#goals",
+      "level": 3,
+      "title": "Goals",
+      "number": "1.1"
+    },
+    {
+      "id": "non-goals",
+      "href": "https://wicg.github.io/local-network-access/#non-goals",
+      "level": 3,
+      "title": "Non-goals",
+      "number": "1.2"
+    },
+    {
+      "id": "examples",
+      "href": "https://wicg.github.io/local-network-access/#examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "1.3"
+    },
+    {
+      "id": "example-user-granting-permission",
+      "href": "https://wicg.github.io/local-network-access/#example-user-granting-permission",
+      "level": 4,
+      "title": "User granting permission",
+      "number": "1.3.1"
+    },
+    {
+      "id": "example-user-denying-permission",
+      "href": "https://wicg.github.io/local-network-access/#example-user-denying-permission",
+      "level": 4,
+      "title": "User denying permission",
+      "number": "1.3.2"
+    },
+    {
+      "id": "example-new-device-configuration",
+      "href": "https://wicg.github.io/local-network-access/#example-new-device-configuration",
+      "level": 4,
+      "title": "New device configuration",
+      "number": "1.3.3"
+    },
+    {
+      "id": "example-app-based-sign-in",
+      "href": "https://wicg.github.io/local-network-access/#example-app-based-sign-in",
+      "level": 4,
+      "title": "App-based sign in",
+      "number": "1.3.4"
+    },
+    {
+      "id": "framework",
+      "href": "https://wicg.github.io/local-network-access/#framework",
+      "level": 2,
+      "title": "Framework",
+      "number": "2"
+    },
+    {
+      "id": "ip-address-space-section",
+      "href": "https://wicg.github.io/local-network-access/#ip-address-space-section",
+      "level": 3,
+      "title": "IP Address Space",
+      "number": "2.1"
+    },
+    {
+      "id": "local-network-request-section",
+      "href": "https://wicg.github.io/local-network-access/#local-network-request-section",
+      "level": 3,
+      "title": "Local Network Request",
+      "number": "2.2"
+    },
+    {
+      "id": "permission-prompt",
+      "href": "https://wicg.github.io/local-network-access/#permission-prompt",
+      "level": 3,
+      "title": "Local Network Request Permission Prompt",
+      "number": "2.3"
+    },
+    {
+      "id": "secure-context-restriction",
+      "href": "https://wicg.github.io/local-network-access/#secure-context-restriction",
+      "level": 3,
+      "title": "Secure Context Restriction",
+      "number": "2.4"
+    },
+    {
+      "id": "mixed-content-lna",
+      "href": "https://wicg.github.io/local-network-access/#mixed-content-lna",
+      "level": 3,
+      "title": "Mixed Content",
+      "number": "2.5"
+    },
+    {
+      "id": "integrations",
+      "href": "https://wicg.github.io/local-network-access/#integrations",
+      "level": 2,
+      "title": "Integrations",
+      "number": "3"
+    },
+    {
+      "id": "integration-with-permissions",
+      "href": "https://wicg.github.io/local-network-access/#integration-with-permissions",
+      "level": 3,
+      "title": "Integration with Permissions",
+      "number": "3.1"
+    },
+    {
+      "id": "integration-with-permissions-policy",
+      "href": "https://wicg.github.io/local-network-access/#integration-with-permissions-policy",
+      "level": 3,
+      "title": "Integration with Permissions Policy",
+      "number": "3.2"
+    },
+    {
+      "id": "integration-with-fetch",
+      "href": "https://wicg.github.io/local-network-access/#integration-with-fetch",
+      "level": 3,
+      "title": "Integration with Fetch",
+      "number": "3.3"
+    },
+    {
+      "id": "fetching",
+      "href": "https://wicg.github.io/local-network-access/#fetching",
+      "level": 4,
+      "title": "Fetching",
+      "number": "3.3.1"
+    },
+    {
+      "id": "fetch-api",
+      "href": "https://wicg.github.io/local-network-access/#fetch-api",
+      "level": 4,
+      "title": "Fetch API",
+      "number": "3.3.2"
+    },
+    {
+      "id": "integration-with-mixed-content",
+      "href": "https://wicg.github.io/local-network-access/#integration-with-mixed-content",
+      "level": 3,
+      "title": "Integration with Mixed Content",
+      "number": "3.4"
+    },
+    {
+      "id": "integration-with-websockets",
+      "href": "https://wicg.github.io/local-network-access/#integration-with-websockets",
+      "level": 3,
+      "title": "Integration with WebSockets",
+      "number": "3.5"
+    },
+    {
+      "id": "integration-with-webtransport",
+      "href": "https://wicg.github.io/local-network-access/#integration-with-webtransport",
+      "level": 3,
+      "title": "Integration with WebTransport",
+      "number": "3.6"
+    },
+    {
+      "id": "integration-with-html",
+      "href": "https://wicg.github.io/local-network-access/#integration-with-html",
+      "level": 3,
+      "title": "Integration with HTML",
+      "number": "3.7"
+    },
+    {
+      "id": "integration-with-workers",
+      "href": "https://wicg.github.io/local-network-access/#integration-with-workers",
+      "level": 3,
+      "title": "Integration with Workers",
+      "number": "3.8"
+    },
+    {
+      "id": "implementation-considerations",
+      "href": "https://wicg.github.io/local-network-access/#implementation-considerations",
+      "level": 2,
+      "title": "Implementation considerations",
+      "number": "4"
+    },
+    {
+      "id": "file-urls",
+      "href": "https://wicg.github.io/local-network-access/#file-urls",
+      "level": 3,
+      "title": "File URLs",
+      "number": "4.1"
+    },
+    {
+      "id": "proxies",
+      "href": "https://wicg.github.io/local-network-access/#proxies",
+      "level": 3,
+      "title": "Proxies",
+      "number": "4.2"
+    },
+    {
+      "id": "http-cache",
+      "href": "https://wicg.github.io/local-network-access/#http-cache",
+      "level": 3,
+      "title": "HTTP Cache",
+      "number": "4.3"
+    },
+    {
+      "id": "http-cache-main-resources",
+      "href": "https://wicg.github.io/local-network-access/#http-cache-main-resources",
+      "level": 4,
+      "title": "Main resources",
+      "number": "4.3.1"
+    },
+    {
+      "id": "http-cache-subresources",
+      "href": "https://wicg.github.io/local-network-access/#http-cache-subresources",
+      "level": 4,
+      "title": "Subresources",
+      "number": "4.3.2"
+    },
+    {
+      "id": "rollout-difficulties",
+      "href": "https://wicg.github.io/local-network-access/#rollout-difficulties",
+      "level": 3,
+      "title": "Rollout Difficulties",
+      "number": "4.4"
+    },
+    {
+      "id": "security-and-privacy",
+      "href": "https://wicg.github.io/local-network-access/#security-and-privacy",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "5"
+    },
+    {
+      "id": "user-mediation",
+      "href": "https://wicg.github.io/local-network-access/#user-mediation",
+      "level": 3,
+      "title": "User Mediation",
+      "number": "5.1"
+    },
+    {
+      "id": "dns-rebinding",
+      "href": "https://wicg.github.io/local-network-access/#dns-rebinding",
+      "level": 3,
+      "title": "DNS rebinding",
+      "number": "5.2"
+    },
+    {
+      "id": "scope-of-mitigation",
+      "href": "https://wicg.github.io/local-network-access/#scope-of-mitigation",
+      "level": 3,
+      "title": "Scope of Mitigation",
+      "number": "5.3"
+    },
+    {
+      "id": "cross-network-confusion",
+      "href": "https://wicg.github.io/local-network-access/#cross-network-confusion",
+      "level": 3,
+      "title": "Cross-network confusion",
+      "number": "5.4"
+    },
+    {
+      "id": "local-network-attackers",
+      "href": "https://wicg.github.io/local-network-access/#local-network-attackers",
+      "level": 3,
+      "title": "Local network attackers",
+      "number": "5.5"
+    },
+    {
+      "id": "security-http-cache",
+      "href": "https://wicg.github.io/local-network-access/#security-http-cache",
+      "level": 3,
+      "title": "HTTP cache",
+      "number": "5.6"
+    },
+    {
+      "id": "security-http-cache-subresources",
+      "href": "https://wicg.github.io/local-network-access/#security-http-cache-subresources",
+      "level": 4,
+      "title": "Applying checks to subresources",
+      "number": "5.6.1"
+    },
+    {
+      "id": "cache-poisoning",
+      "href": "https://wicg.github.io/local-network-access/#cache-poisoning",
+      "level": 4,
+      "title": "HTTP cache poisoning",
+      "number": "5.6.2"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://wicg.github.io/local-network-access/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "6"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/local-network-access/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/local-network-access/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/local-network-access/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/local-network-access/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/local-network-access/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/local-network-access/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/local-network-access/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/local-network-access/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/local-network-access/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://wicg.github.io/local-network-access/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

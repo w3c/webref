@@ -27,7 +27,7 @@ interface Request {
 // Source: Fetch Standard (https://fetch.spec.whatwg.org/)
 Request includes Body;
 
-// Source: Private Network Access (https://wicg.github.io/private-network-access/)
+// Source: Local Network Access (https://wicg.github.io/local-network-access/)
 partial interface Request {
   readonly attribute IPAddressSpace targetAddressSpace;
 };

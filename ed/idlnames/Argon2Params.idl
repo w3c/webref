@@ -1,0 +1,10 @@
+// Source: Modern Algorithms in the Web Cryptography API (https://wicg.github.io/webcrypto-modern-algos/)
+dictionary Argon2Params : Algorithm {
+  required BufferSource nonce;
+  required [EnforceRange] unsigned long parallelism;
+  required [EnforceRange] unsigned long memory;
+  required [EnforceRange] unsigned long passes;
+  [EnforceRange] octet version;
+  BufferSource secretValue;
+  BufferSource associatedData;
+};

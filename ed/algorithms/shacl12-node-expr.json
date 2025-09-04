@@ -1,0 +1,23 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 Node Expressions",
+    "url": "https://w3c.github.io/data-shapes/shacl12-node-expr/"
+  },
+  "algorithms": [
+    {
+      "html": "Let <code>var</code> be the <a data-cite=\"shacl12-core#dfn-value\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-value\" id=\"ref-for-index-term-value-2\">value</a> of <code>shnex:var</code> in the <a href=\"https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-var-expression\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-var-expression-1\">var expression</a>.\n\t\t\t\t\t\t\tThe <a data-cite=\"shacl12-core#dfn-output-nodes\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-output-nodes\" id=\"ref-for-index-term-output-nodes-14\">output nodes</a> of the <a href=\"https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-var-expression\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-var-expression-2\">var expression</a> are computed as follows, in order:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "if <code>var</code> is <code>\"focusNode\"</code> then <code>evalExpr(expr, focusGraph, focusNode, scope) -&gt; [focusNode]</code>"
+        },
+        {
+          "html": "if <code>var</code> is in the <code>scope</code> then <code>evalExpr(expr, focusGraph, focusNode, scope) -&gt; [ scope[var] ]</code>"
+        },
+        {
+          "html": "otherwise <code>evalExpr(expr, focusGraph, focusNode, scope) -&gt; []</code>"
+        }
+      ]
+    }
+  ]
+}

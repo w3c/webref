@@ -252,55 +252,6 @@
         "extAttrs": [],
         "href": "https://w3c.github.io/webcrypto/#dom-keytype"
       },
-      "KeyUsage": {
-        "fragment": "enum KeyUsage { \"encrypt\", \"decrypt\", \"sign\", \"verify\", \"deriveKey\", \"deriveBits\", \"wrapKey\", \"unwrapKey\" };",
-        "type": "enum",
-        "name": "KeyUsage",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "encrypt",
-            "href": "https://w3c.github.io/webcrypto/#dom-keyusage-encrypt"
-          },
-          {
-            "type": "enum-value",
-            "value": "decrypt",
-            "href": "https://w3c.github.io/webcrypto/#dom-keyusage-decrypt"
-          },
-          {
-            "type": "enum-value",
-            "value": "sign",
-            "href": "https://w3c.github.io/webcrypto/#dom-keyusage-sign"
-          },
-          {
-            "type": "enum-value",
-            "value": "verify",
-            "href": "https://w3c.github.io/webcrypto/#dom-keyusage-verify"
-          },
-          {
-            "type": "enum-value",
-            "value": "deriveKey",
-            "href": "https://w3c.github.io/webcrypto/#dom-keyusage-derivekey"
-          },
-          {
-            "type": "enum-value",
-            "value": "deriveBits",
-            "href": "https://w3c.github.io/webcrypto/#dom-keyusage-derivebits"
-          },
-          {
-            "type": "enum-value",
-            "value": "wrapKey",
-            "href": "https://w3c.github.io/webcrypto/#dom-keyusage-wrapkey"
-          },
-          {
-            "type": "enum-value",
-            "value": "unwrapKey",
-            "href": "https://w3c.github.io/webcrypto/#dom-keyusage-unwrapkey"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://w3c.github.io/webcrypto/#dom-keyusage"
-      },
       "CryptoKey": {
         "fragment": "[SecureContext,Exposed=(Window,Worker),Serializable]\ninterface CryptoKey {\n  readonly attribute KeyType type;\n  readonly attribute boolean extractable;\n  readonly attribute object algorithm;\n  readonly attribute object usages;\n};",
         "type": "interface",
@@ -404,35 +355,6 @@
         ],
         "partial": false,
         "href": "https://w3c.github.io/webcrypto/#dfn-CryptoKey"
-      },
-      "KeyFormat": {
-        "fragment": "enum KeyFormat { \"raw\", \"spki\", \"pkcs8\", \"jwk\" };",
-        "type": "enum",
-        "name": "KeyFormat",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "raw",
-            "href": "https://w3c.github.io/webcrypto/#dom-keyformat-raw"
-          },
-          {
-            "type": "enum-value",
-            "value": "spki",
-            "href": "https://w3c.github.io/webcrypto/#dom-keyformat-spki"
-          },
-          {
-            "type": "enum-value",
-            "value": "pkcs8",
-            "href": "https://w3c.github.io/webcrypto/#dom-keyformat-pkcs8"
-          },
-          {
-            "type": "enum-value",
-            "value": "jwk",
-            "href": "https://w3c.github.io/webcrypto/#dom-keyformat-jwk"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://w3c.github.io/webcrypto/#dom-keyformat"
       },
       "SubtleCrypto": {
         "fragment": "[SecureContext,Exposed=(Window,Worker)]\ninterface SubtleCrypto {\n  Promise<ArrayBuffer> encrypt(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource data\n  );\n  Promise<ArrayBuffer> decrypt(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource data\n  );\n  Promise<ArrayBuffer> sign(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource data\n  );\n  Promise<boolean> verify(\n    AlgorithmIdentifier algorithm,\n    CryptoKey key,\n    BufferSource signature,\n    BufferSource data\n  );\n  Promise<ArrayBuffer> digest(\n    AlgorithmIdentifier algorithm,\n    BufferSource data\n  );\n\n  Promise<(CryptoKey or CryptoKeyPair)> generateKey(\n    AlgorithmIdentifier algorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<CryptoKey> deriveKey(\n    AlgorithmIdentifier algorithm,\n    CryptoKey baseKey,\n    AlgorithmIdentifier derivedKeyType,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<ArrayBuffer> deriveBits(\n    AlgorithmIdentifier algorithm,\n    CryptoKey baseKey,\n    optional unsigned long? length = null\n  );\n\n  Promise<CryptoKey> importKey(\n    KeyFormat format,\n    (BufferSource or JsonWebKey) keyData,\n    AlgorithmIdentifier algorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n  Promise<(ArrayBuffer or JsonWebKey)> exportKey(\n    KeyFormat format,\n    CryptoKey key\n  );\n\n  Promise<ArrayBuffer> wrapKey(\n    KeyFormat format,\n    CryptoKey key,\n    CryptoKey wrappingKey,\n    AlgorithmIdentifier wrapAlgorithm\n  );\n  Promise<CryptoKey> unwrapKey(\n    KeyFormat format,\n    BufferSource wrappedKey,\n    CryptoKey unwrappingKey,\n    AlgorithmIdentifier unwrapAlgorithm,\n    AlgorithmIdentifier unwrappedKeyAlgorithm,\n    boolean extractable,\n    sequence<KeyUsage> keyUsages\n  );\n};",
@@ -3074,6 +2996,8 @@
       "ArrayBufferView",
       "ArrayBuffer",
       "BufferSource",
+      "KeyUsage",
+      "KeyFormat",
       "Uint8Array"
     ],
     "hasObsoleteIdl": false
