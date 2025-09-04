@@ -1,0 +1,37 @@
+From 35274a4d962eaf2f92efd36de0fc1155221b3f94 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 4 Sep 2025 09:45:12 +0200
+Subject: [PATCH] Drop `KeyUsage` and `KeyFormat` enumerations
+
+The "Modern Algorithms in the Web Cryptography API" proposal extends
+definitions in Web Crypto. Most extensions are handled through `partial`
+definitions but Web IDL does not support partial enumerations.
+---
+ ed/idl/webcrypto.idl | 4 ----
+ 1 file changed, 4 deletions(-)
+
+diff --git a/ed/idl/webcrypto.idl b/ed/idl/webcrypto.idl
+index 9c742fa970..ebb9cf5718 100644
+--- a/ed/idl/webcrypto.idl
++++ b/ed/idl/webcrypto.idl
+@@ -28,8 +28,6 @@ dictionary KeyAlgorithm {
+ 
+ enum KeyType { "public", "private", "secret" };
+ 
+-enum KeyUsage { "encrypt", "decrypt", "sign", "verify", "deriveKey", "deriveBits", "wrapKey", "unwrapKey" };
+-
+ [SecureContext,Exposed=(Window,Worker),Serializable]
+ interface CryptoKey {
+   readonly attribute KeyType type;
+@@ -38,8 +36,6 @@ interface CryptoKey {
+   readonly attribute object usages;
+ };
+ 
+-enum KeyFormat { "raw", "spki", "pkcs8", "jwk" };
+-
+ [SecureContext,Exposed=(Window,Worker)]
+ interface SubtleCrypto {
+   Promise<ArrayBuffer> encrypt(
+-- 
+2.37.1.windows.1
+
