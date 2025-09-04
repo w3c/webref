@@ -7,7 +7,7 @@ Webref adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
 applied to data. A new major version is released whenever a breaking change is
 made to the data structure.
 
-## v7.0.x - 2025-TBD
+## v7.0.11 - 2025-09-04
 
 CSS extracts are now consolidated into a single file.
 
@@ -25,7 +25,7 @@ In version 6, `listAll()` resolved with an object where the keys were spec short
 - The consolidation removes duplicates, merging extended definitions into a single feature. The definition from the latest spec level is used when a feature is defined in more than one level. If you need the definition from earlier levels, please [raise an issue](https://github.com/w3c/webref/issues) to describe your needs!
 - Some of the possible values that a CSS feature could take appeared nested under that feature definition in a `values` key in version 6. Such values are no longer reported in the new version: they were confusing in any case because they did not cover the whole range of values that a feature could take, and could contain values that were not atomic keyword values. Values could be re-introduced when CSS specs are more systematic about them. In the meantime, you will need to parse the feature's syntax (the `syntax` key) to extract keyword values.
 
-Additionally, the package now also exposes a new `index()` async method that resolves with an object similar to that returned by `listAll()`, except that lists of features under each category are indexed by feature names. For scoped features, the feature name is used as identifier when it is unambiguous. If a  feature is defined differently for different scopes, the feature name is completed with the name of the first scoping feature to disambiguate. For example, `type() for @function`, `type() for attr()`.
+Additionally, the package now also exposes a new `index()` async method that resolves with an object similar to that returned by `listAll()`, except that lists of features under each category are indexed by feature names. For scoped features, the feature name is used as identifier when it is unambiguous. If a feature is defined differently for different scopes, the feature name is completed with the name of the first scoping feature to disambiguate. For example, `type() for @function`, `type() for attr()`.
 
 ## v6.0.0 - 2022-11-28
 
