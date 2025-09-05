@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-09-04T01:36:01.940Z",
+  "date": "2025-09-05T01:54:08.110Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -44,7 +44,8 @@
       "filter-effects-2",
       "encoding",
       "fetch",
-      "fido-v2.1",
+      "fido-client-to-authenticator-protocol-v2.1",
+      "fido-client-to-authenticator-protocol-v2.2",
       "fs",
       "fullscreen",
       "html",
@@ -233,7 +234,6 @@
       "media-feeds",
       "prefetch",
       "prerendering-revamped",
-      "speculation-rules",
       "netinfo",
       "observable",
       "overscroll-scrollend-events",
@@ -707,6 +707,7 @@
       "wot-discovery",
       "wot-profile",
       "wot-thing-description11",
+      "xml-entity-names",
       "xhr"
     ],
     "post": [
@@ -733,10 +734,10 @@
     ]
   },
   "stats": {
-    "crawled": 393,
+    "crawled": 394,
     "errors": 0
   },
-  "crawler": "reffy-19.2.0",
+  "crawler": "reffy-19.2.1",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -782,7 +783,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "4 September 2025",
+      "date": "5 September 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -1385,11 +1386,11 @@
       ],
       "crawled": "https://www.w3.org/TR/autoplay-detection/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Dec 2024 10:47:53 GMT"
+        "lastModified": "Thu, 04 Sep 2025 10:53:52 GMT"
       },
       "generator": "bikeshed",
-      "date": "16 December 2024",
-      "revision": "f3d65c5e9f3b02f52cca19b2e80329d154c1903c",
+      "date": "4 September 2025",
+      "revision": "052da0a6c2d94ed14fce6be3c2b4973a664e0ea2",
       "algorithms": "algorithms/autoplay-detection.json",
       "links": "links/autoplay-detection.json",
       "refs": "refs/autoplay-detection.json",
@@ -4100,11 +4101,11 @@
       ],
       "crawled": "https://www.w3.org/TR/css-conditional-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 15 Feb 2022 15:32:38 GMT"
+        "lastModified": "Mon, 01 Sep 2025 18:03:48 GMT"
       },
       "generator": "bikeshed",
-      "date": "17 February 2022",
-      "revision": "7d62867f3ebbe2edb45f85f06902ab6e4d6acd76",
+      "date": "4 September 2025",
+      "revision": "48345f7040afb7e4737eeb74bb8e1fbf04507034",
       "links": "links/css-conditional-4.json",
       "refs": "refs/css-conditional-4.json",
       "css": "css/css-conditional-4.json",
@@ -12615,11 +12616,12 @@
       ],
       "crawled": "https://www.w3.org/TR/gpc/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 09 Aug 2025 15:04:08 GMT"
+        "lastModified": "Thu, 04 Sep 2025 19:22:00 GMT"
       },
       "generator": "respec",
-      "date": "09 August 2025",
-      "revision": "a1907040bf05adb5274864ffa16d740822a3fe9c",
+      "date": "04 September 2025",
+      "revision": "71934143a5be5b210369d14e2d97fe6c82a046db",
+      "algorithms": "algorithms/gpc.json",
       "links": "links/gpc.json",
       "refs": "refs/gpc.json",
       "idl": "idl/gpc.idl",
@@ -17509,7 +17511,7 @@
         "sourcePath": "spec/index.html",
         "filename": "index.html"
       },
-      "title": "RDF 1.2 Concepts and Abstract Syntax",
+      "title": "RDF 1.2 Concepts and Abstract Data Model",
       "source": "w3c",
       "shortTitle": "RDF 1.2 Concepts and Abstract Syntax",
       "categories": [],
@@ -17520,11 +17522,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-concepts/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 17 Aug 2025 16:52:16 GMT"
+        "lastModified": "Thu, 04 Sep 2025 18:26:10 GMT"
       },
       "generator": "respec",
-      "date": "17 August 2025",
-      "revision": "29b6f5d3c752f91d0c1afe506be10d109b99d68b",
+      "date": "04 September 2025",
+      "revision": "7691d6dd6e4fdba064139c39dd164ada92b554f4",
       "algorithms": "algorithms/rdf12-concepts.json",
       "links": "links/rdf12-concepts.json",
       "refs": "refs/rdf12-concepts.json",
@@ -22339,10 +22341,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wcag-3.0/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Dec 2024 10:23:09 GMT"
+        "lastModified": "Thu, 04 Sep 2025 12:00:01 GMT"
       },
       "generator": "respec",
-      "date": "12 December 2024",
+      "date": "04 September 2025",
+      "algorithms": "algorithms/wcag-3.0.json",
       "links": "links/wcag-3.0.json",
       "refs": "refs/wcag-3.0.json",
       "dfns": "dfns/wcag-3.0.json",
@@ -24183,11 +24186,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 29 Aug 2025 01:56:21 GMT"
+        "lastModified": "Thu, 04 Sep 2025 15:13:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "29 August 2025",
-      "revision": "5aec9975765aae61a3febae4bc0667ae037a6508",
+      "date": "4 September 2025",
+      "revision": "8bce961de30b422a3cda7596eaede8f582f1a839",
       "algorithms": "algorithms/webnn.json",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
@@ -24248,11 +24251,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webrtc-encoded-transform/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 21 Aug 2025 14:59:42 GMT"
+        "lastModified": "Thu, 04 Sep 2025 14:38:20 GMT"
       },
       "generator": "bikeshed",
-      "date": "21 August 2025",
-      "revision": "aeceff85acba2457effbd857f87b80d2972d7afe",
+      "date": "4 September 2025",
+      "revision": "4b230504f5124298df6d8fb3a7db748d6cc4e770",
       "algorithms": "algorithms/webrtc-encoded-transform.json",
       "links": "links/webrtc-encoded-transform.json",
       "refs": "refs/webrtc-encoded-transform.json",
@@ -25768,6 +25771,58 @@
       "dfns": "dfns/wot-thing-description11.json",
       "headings": "headings/wot-thing-description11.json",
       "ids": "ids/wot-thing-description11.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/xml-entity-names/",
+      "seriesComposition": "full",
+      "shortname": "xml-entity-names",
+      "series": {
+        "shortname": "xml-entity-names",
+        "currentSpecification": "xml-entity-names",
+        "title": "XML Entity Definitions for Characters",
+        "shortTitle": "XML Entity Definitions for Characters",
+        "releaseUrl": "https://www.w3.org/TR/xml-entity-names/",
+        "nightlyUrl": "https://w3c.github.io/xml-entities/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/xml-entities/",
+        "status": "Editor's Draft",
+        "sourcePath": "character-set.xml",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/xml-entities",
+        "filename": "index.html"
+      },
+      "categories": [],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Math Working Group",
+          "url": "https://www.w3.org/Math/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/xml-entity-names/",
+        "status": "Recommendation",
+        "filename": "index.html"
+      },
+      "title": "XML Entity Definitions for Characters (3rd Edition)",
+      "source": "w3c",
+      "shortTitle": "XML Entity Definitions for Characters",
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/xml-entity-names/",
+        "https://w3c.github.io/xml-entities/"
+      ],
+      "crawled": "https://www.w3.org/TR/xml-entity-names/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 02 Mar 2023 00:02:34 GMT"
+      },
+      "date": "2 March 2023",
+      "links": "links/xml-entity-names.json",
+      "refs": "refs/xml-entity-names.json",
+      "headings": "headings/xml-entity-names.json",
+      "ids": "ids/xml-entity-names.json",
       "cddl": []
     }
   ]

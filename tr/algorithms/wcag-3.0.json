@@ -1,0 +1,50 @@
+{
+  "spec": {
+    "title": "W3C Accessibility Guidelines (WCAG) 3.0",
+    "url": "https://www.w3.org/TR/wcag-3.0/"
+  },
+  "algorithms": [
+    {
+      "html": "For each word of text:",
+      "rationale": "fail",
+      "steps": [
+        {
+          "html": "Is the text purely <a href=\"https://www.w3.org/TR/wcag-3.0/#dfn-decorative\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decorative-2\">decorative</a> or, is it not readable by anybody?\n<ul>\n<li>Yes, Pass</li>\n<li>No, Continue</li>\n</ul>"
+        },
+        {
+          "html": "Does the default/authored presentation meet minimum <a href=\"https://www.w3.org/TR/wcag-3.0/#dfn-requirement\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-requirement-3\">requirements</a>?",
+          "ignored": [
+            "Yes, the default/authored presentation meets Readable Blocks of Text (foundational) and Readable Text Style (foundational), Continue No, Fail"
+          ]
+        },
+        {
+          "html": "Can the text appearance be adjusted by the user?",
+          "rationale": "fail",
+          "steps": [
+            {
+              "html": "Yes, text must be <a href=\"https://www.w3.org/TR/wcag-3.0/#dfn-user-manipulable-text\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-manipulable-text-1\">user-manipulable text</a> and:",
+              "ignored": [
+                "The accessibility support set meets: Adjustable blocks of text Adjustable text style Content and functional are not lost with text adjustment Pass"
+              ]
+            },
+            {
+              "html": "Yes, via produce-provided themes:",
+              "ignored": [
+                "Adjustable blocks of text Adjustable text style Content and functional are not lost with text adjustment Pass"
+              ]
+            },
+            {
+              "html": "No, and the <a href=\"https://www.w3.org/TR/wcag-3.0/#dfn-product\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-product-1\">product</a> does not provide its own themes:",
+              "rationale": "fail",
+              "steps": [
+                {
+                  "html": "Fail."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
