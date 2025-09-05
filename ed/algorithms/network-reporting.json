@@ -26,7 +26,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> (<var>parsed</var>), and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#origin\" id=\"ref-for-origin⑥\">origin</a> (<var>origin</var>),\n  this algorithm extracts a list of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#network-reporting-endpoint\" id=\"ref-for-network-reporting-endpoint⑧\">network reporting endpoints</a> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#endpoint-group\" id=\"ref-for-endpoint-group②⓪\">endpoint groups</a> for <var>origin</var>, and updates the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#reporting-cache\" id=\"ref-for-reporting-cache①\">reporting\n  cache</a> accordingly.",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> (<var>parsed</var>), and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#origin\" id=\"ref-for-origin⑥\">origin</a> (<var>origin</var>),\n  this algorithm extracts a list of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#network-reporting-endpoint\" id=\"ref-for-network-reporting-endpoint⑧\">network reporting endpoints</a>\n  and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#endpoint-group\" id=\"ref-for-endpoint-group②⓪\">endpoint groups</a> for <var>origin</var>, and updates the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#reporting-cache\" id=\"ref-for-reporting-cache①\">reporting\n  cache</a> accordingly.",
       "rationale": "let",
       "steps": [
         {
@@ -46,7 +46,7 @@
               "html": "<p>Let <var>name</var> be <var>item</var>’s \"<a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-group\" id=\"ref-for-network_reporting_endpoints-group①\"><code>group</code></a>\" member’s value if\n  present, and \"<code>default</code>\" otherwise.</p>"
             },
             {
-              "html": "<p>If there is already a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#endpoint-group\" id=\"ref-for-endpoint-group②①\">endpoint group</a> in <var>groups</var> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-endpoint-group-name\" id=\"ref-for-dom-endpoint-group-name③\">name</a></code> is <var>name</var>, skip to the next <var>item</var>.</p>"
+              "html": "<p>If there is already a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#endpoint-group\" id=\"ref-for-endpoint-group②①\">endpoint group</a> in <var>groups</var> whose\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-endpoint-group-name\" id=\"ref-for-dom-endpoint-group-name③\">name</a></code> is <var>name</var>, skip to the next <var>item</var>.</p>"
             },
             {
               "html": "<p>Let <var>endpoints</var> be an empty list.</p>"
@@ -56,10 +56,10 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>endpoint item</var> has no member named \"<a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-url\" id=\"ref-for-network_reporting_endpoints-url②\"><code>url</code></a>\", or that member’s\n  value is not a string, or if that value is not an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#absolute-url-string\" id=\"ref-for-absolute-url-string\">absolute-URL string</a> or a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#path-absolute-url-string\" id=\"ref-for-path-absolute-url-string\">path-absolute-URL string</a>,\n  skip to the next <var>endpoint item</var>.</p>"
+                  "html": "<p>If <var>endpoint item</var> has no member named \"<a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-url\" id=\"ref-for-network_reporting_endpoints-url②\"><code>url</code></a>\", or that member’s\n  value is not a string, or if that value is not an\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#absolute-url-string\" id=\"ref-for-absolute-url-string\">absolute-URL string</a> or a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#path-absolute-url-string\" id=\"ref-for-path-absolute-url-string\">path-absolute-URL string</a>,\n  skip to the next <var>endpoint item</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>endpoint url</var> be the result of executing the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL\n  parser</a> on <var>endpoint item</var>’s \"<a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-url\" id=\"ref-for-network_reporting_endpoints-url③\"><code>url</code></a>\" member’s value, with <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url\">base URL</a> set to <var>response</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">url</a>. If <var>endpoint url</var> is failure, skip to the next <var>endpoint item</var>.</p>"
+                  "html": "<p>Let <var>endpoint url</var> be the result of executing the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL\n  parser</a> on <var>endpoint item</var>’s \"<a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-url\" id=\"ref-for-network_reporting_endpoints-url③\"><code>url</code></a>\" member’s value, with\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url\">base URL</a> set to <var>response</var>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">url</a>. If <var>endpoint url</var> is failure, skip to the next\n  <var>endpoint item</var>.</p>"
                 },
                 {
                   "html": "<p>If <var>endpoint item</var> has a member named \"<a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#network_reporting_endpoints-priority\" id=\"ref-for-network_reporting_endpoints-priority②\"><code>priority</code></a>\", whose value is\n  not a non-negative integer, skip to the next <var>endpoint item</var>.</p>"
@@ -108,12 +108,12 @@
               "html": "<p>Let <var>settings</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a>.</p>"
             },
             {
-              "html": "<p>Let <var>report</var> be the result of running <a href=\"https://w3c.github.io/reporting/#queue-report\"><cite>Reporting API</cite> § 2.3 Queue data as type for destination</a> with <var>data</var>, <var>type</var>, <var>endpoint group</var> and <var>settings</var>.</p>"
+              "html": "<p>Let <var>report</var> be the result of running <a href=\"https://w3c.github.io/reporting/#queue-report\"><cite>Reporting API</cite> § 2.3 Queue data as type for destination</a> with\n  <var>data</var>, <var>type</var>, <var>endpoint group</var> and <var>settings</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Otherwise, let <var>report</var> be the result of running <a href=\"https://w3c.github.io/reporting/#queue-report\"><cite>Reporting API</cite> § 2.3 Queue data as type for destination</a> with <var>data</var>, <var>type</var>, and <var>endpoint group</var>.</p>"
+          "html": "<p>Otherwise, let <var>report</var> be the result of running\n  <a href=\"https://w3c.github.io/reporting/#queue-report\"><cite>Reporting API</cite> § 2.3 Queue data as type for destination</a> with <var>data</var>, <var>type</var>, and <var>endpoint group</var>.</p>"
         },
         {
           "html": "<p>Append <var>report</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#reporting-cache\" id=\"ref-for-reporting-cache⑤\">reporting cache</a>.</p>"
@@ -121,29 +121,29 @@
       ]
     },
     {
-      "html": "Given an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#endpoint-group\" id=\"ref-for-endpoint-group②③\">endpoint group</a> (<var>group</var>), this algorithm chooses an arbitrary\n  eligible <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#endpoint\" id=\"ref-for-endpoint⑦\">endpoint</a> from the group, if there is one, taking into\n  account the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-priority\" id=\"ref-for-dom-network-reporting-endpoint-priority⑤\">priority</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-weight\" id=\"ref-for-dom-network-reporting-endpoint-weight③\">weight</a></code> of the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#endpoint\" id=\"ref-for-endpoint⑧\">endpoints</a>.",
+      "html": "Given an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#endpoint-group\" id=\"ref-for-endpoint-group②③\">endpoint group</a> (<var>group</var>), this algorithm chooses an arbitrary\n  eligible <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#endpoint\" id=\"ref-for-endpoint⑦\">endpoint</a> from the group, if there is one, taking into\n  account the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-priority\" id=\"ref-for-dom-network-reporting-endpoint-priority⑤\">priority</a></code> and\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-weight\" id=\"ref-for-dom-network-reporting-endpoint-weight③\">weight</a></code> of the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#endpoint\" id=\"ref-for-endpoint⑧\">endpoints</a>.",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>endpoints</var> be a copy of <var>group</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-endpoint-group-endpoints\" id=\"ref-for-dom-endpoint-group-endpoints①\">endpoints</a></code> list.</p>"
         },
         {
-          "html": "<p>Remove every <var>endpoint</var> from <var>endpoints</var> that is <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#network-reporting-endpoint-pending\" id=\"ref-for-network-reporting-endpoint-pending\">pending</a>.</p>"
+          "html": "<p>Remove every <var>endpoint</var> from <var>endpoints</var> that is\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#network-reporting-endpoint-pending\" id=\"ref-for-network-reporting-endpoint-pending\">pending</a>.</p>"
         },
         {
           "html": "<p>If <var>endpoints</var> is empty, return <code>null</code>.</p>"
         },
         {
-          "html": "<p>Let <var>priority</var> be the minimum <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-priority\" id=\"ref-for-dom-network-reporting-endpoint-priority⑥\">priority</a></code> value of each <var>endpoint</var> in <var>endpoints</var>.</p>"
+          "html": "<p>Let <var>priority</var> be the minimum <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-priority\" id=\"ref-for-dom-network-reporting-endpoint-priority⑥\">priority</a></code>\n  value of each <var>endpoint</var> in <var>endpoints</var>.</p>"
         },
         {
-          "html": "<p>Remove every <var>endpoint</var> from <var>endpoints</var> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-priority\" id=\"ref-for-dom-network-reporting-endpoint-priority⑦\">priority</a></code> value is not equal to <var>priority</var>.</p>"
+          "html": "<p>Remove every <var>endpoint</var> from <var>endpoints</var> whose\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-priority\" id=\"ref-for-dom-network-reporting-endpoint-priority⑦\">priority</a></code> value is not equal to <var>priority</var>.</p>"
         },
         {
           "html": "<p>If <var>endpoints</var> is empty, return <code>null</code>.</p>"
         },
         {
-          "html": "<p>Let <var>total weight</var> be the sum of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-weight\" id=\"ref-for-dom-network-reporting-endpoint-weight④\">weight</a></code> value of each <var>endpoint</var> in <var>endpoints</var>.</p>"
+          "html": "<p>Let <var>total weight</var> be the sum of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-weight\" id=\"ref-for-dom-network-reporting-endpoint-weight④\">weight</a></code>\n  value of each <var>endpoint</var> in <var>endpoints</var>.</p>"
         },
         {
           "html": "<p>Let <var>weight</var> be a random number ≥ 0 and ≤ <var>total weight</var>.</p>"
@@ -153,10 +153,10 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>weight</var> is less than or equal to <var>endpoint</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-weight\" id=\"ref-for-dom-network-reporting-endpoint-weight⑤\">weight</a></code>, return <var>endpoint</var>.</p>"
+              "html": "<p>If <var>weight</var> is less than or equal to <var>endpoint</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-weight\" id=\"ref-for-dom-network-reporting-endpoint-weight⑤\">weight</a></code>, return <var>endpoint</var>.</p>"
             },
             {
-              "html": "<p>Subtract <var>endpoint</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-weight\" id=\"ref-for-dom-network-reporting-endpoint-weight⑥\">weight</a></code> from <var>weight</var>.</p>"
+              "html": "<p>Subtract <var>endpoint</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-weight\" id=\"ref-for-dom-network-reporting-endpoint-weight⑥\">weight</a></code> from\n  <var>weight</var>.</p>"
             }
           ]
         },
@@ -170,10 +170,10 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>reports</var> be a copy of the list of queued <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report\" id=\"ref-for-report①\">report</a> objects in <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#reporting-cache\" id=\"ref-for-reporting-cache⑦\">reporting cache</a>.</p>"
+          "html": "<p>Let <var>reports</var> be a copy of the list of queued <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report\" id=\"ref-for-report①\">report</a> objects in\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#reporting-cache\" id=\"ref-for-reporting-cache⑦\">reporting cache</a>.</p>"
         },
         {
-          "html": "<p>Let <var>endpoint map</var> be an empty map of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#network-reporting-endpoint\" id=\"ref-for-network-reporting-endpoint①⓪\">network reporting endpoint</a> objects to lists of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report\" id=\"ref-for-report②\">report</a> objects.</p>"
+          "html": "<p>Let <var>endpoint map</var> be an empty map of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#network-reporting-endpoint\" id=\"ref-for-network-reporting-endpoint①⓪\">network reporting endpoint</a>\n  objects to lists of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report\" id=\"ref-for-report②\">report</a> objects.</p>"
         },
         {
           "html": "For each <var>report</var> in <var>reports</var>:",
@@ -183,21 +183,21 @@
               "html": "<p>Let <var>origin</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#origin\" id=\"ref-for-origin⑦\">origin</a> of <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report-url\" id=\"ref-for-report-url\">url</a>.</p>"
             },
             {
-              "html": "<p>Let <var>client</var> be the entry in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#reporting-cache\" id=\"ref-for-reporting-cache⑧\">reporting cache</a> for <var>origin</var>.</p>"
+              "html": "<p>Let <var>client</var> be the entry in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#reporting-cache\" id=\"ref-for-reporting-cache⑧\">reporting cache</a> for\n  <var>origin</var>.</p>"
             },
             {
-              "html": "If there exists an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#endpoint-group\" id=\"ref-for-endpoint-group②④\">endpoint group</a> (<var>group</var>) in <var>client</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-client-endpoint-groups\" id=\"ref-for-dom-client-endpoint-groups①\">endpoint-groups</a></code> list whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-endpoint-group-name\" id=\"ref-for-dom-endpoint-group-name⑤\">name</a></code> is <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report-destination\" id=\"ref-for-report-destination\">destination</a>:",
+              "html": "If there exists an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#endpoint-group\" id=\"ref-for-endpoint-group②④\">endpoint group</a> (<var>group</var>) in\n  <var>client</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-client-endpoint-groups\" id=\"ref-for-dom-client-endpoint-groups①\">endpoint-groups</a></code> list whose\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-endpoint-group-name\" id=\"ref-for-dom-endpoint-group-name⑤\">name</a></code> is <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report-destination\" id=\"ref-for-report-destination\">destination</a>:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>endpoint</var> be the result of executing <a href=\"https://w3c.github.io/reporting/network-reporting.html#choose-endpoint\">§ 5.1 Choose an endpoint from a group</a> on <var>group</var>.</p>"
+                  "html": "<p>Let <var>endpoint</var> be the result of executing <a href=\"https://w3c.github.io/reporting/network-reporting.html#choose-endpoint\">§ 5.1 Choose an endpoint from a group</a> on\n  <var>group</var>.</p>"
                 },
                 {
                   "html": "If <var>endpoint</var> is not <code>null</code>:",
                   "rationale": "append",
                   "steps": [
                     {
-                      "html": "<p>Append <var>report</var> to <var>endpoint map</var>’s list of reports for <var>endpoint</var>.</p>"
+                      "html": "<p>Append <var>report</var> to <var>endpoint map</var>’s list of reports for\n  <var>endpoint</var>.</p>"
                     },
                     {
                       "html": "<p>Skip to the next <var>report</var>.</p>"
@@ -207,25 +207,25 @@
               ]
             },
             {
-              "html": "If <var>origin</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-tuple\" id=\"ref-for-concept-origin-tuple\">tuple origin</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-host\" id=\"ref-for-concept-origin-host①\">host</a> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain\" id=\"ref-for-concept-domain\">domain</a>:",
+              "html": "If <var>origin</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-tuple\" id=\"ref-for-concept-origin-tuple\">tuple origin</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-host\" id=\"ref-for-concept-origin-host①\">host</a> is a\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain\" id=\"ref-for-concept-domain\">domain</a>:",
               "rationale": "for",
               "steps": [
                 {
-                  "html": "For each <var>parent domain</var> that is a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6797#section-8.2\" id=\"ref-for-section-8.2\">superdomain match</a> for <var>origin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-host\" id=\"ref-for-concept-origin-host②\">host</a> <a data-link-type=\"biblio\" href=\"https://w3c.github.io/reporting/network-reporting.html#biblio-rfc6797\" title=\"HTTP Strict Transport Security (HSTS)\">[RFC6797]</a>, considering longer\n  domains first:",
+                  "html": "For each <var>parent domain</var> that is a <a data-link-type=\"dfn\" href=\"https://tools.ietf.org/html/rfc6797#section-8.2\" id=\"ref-for-section-8.2\">superdomain match</a>\n  for <var>origin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-host\" id=\"ref-for-concept-origin-host②\">host</a> <a data-link-type=\"biblio\" href=\"https://w3c.github.io/reporting/network-reporting.html#biblio-rfc6797\" title=\"HTTP Strict Transport Security (HSTS)\">[RFC6797]</a>, considering longer\n  domains first:",
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>parent origin</var> be a copy of <var>origin</var>, with its <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-host\" id=\"ref-for-concept-origin-host③\">host</a> replaced with <var>parent domain</var>.</p>"
+                      "html": "<p>Let <var>parent origin</var> be a copy of <var>origin</var>, with its\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-host\" id=\"ref-for-concept-origin-host③\">host</a> replaced with <var>parent domain</var>.</p>"
                     },
                     {
-                      "html": "<p>Let <var>client</var> be the entry in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#reporting-cache\" id=\"ref-for-reporting-cache⑨\">reporting cache</a> for <var>parent origin</var>.</p>"
+                      "html": "<p>Let <var>client</var> be the entry in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#reporting-cache\" id=\"ref-for-reporting-cache⑨\">reporting cache</a> for\n  <var>parent origin</var>.</p>"
                     },
                     {
-                      "html": "If there exists an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#endpoint-group\" id=\"ref-for-endpoint-group②⑤\">endpoint group</a> (<var>group</var>) in <var>client</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-client-endpoint-groups\" id=\"ref-for-dom-client-endpoint-groups②\">endpoint-groups</a></code> list whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-endpoint-group-name\" id=\"ref-for-dom-endpoint-group-name⑥\">name</a></code> is <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report-destination\" id=\"ref-for-report-destination①\">destination</a> <b>and</b> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-endpoint-group-subdomains\" id=\"ref-for-dom-endpoint-group-subdomains①\">subdomains</a></code> flag is \"<code>include</code>\":",
+                      "html": "If there exists an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#endpoint-group\" id=\"ref-for-endpoint-group②⑤\">endpoint group</a> (<var>group</var>) in\n  <var>client</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-client-endpoint-groups\" id=\"ref-for-dom-client-endpoint-groups②\">endpoint-groups</a></code> list whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-endpoint-group-name\" id=\"ref-for-dom-endpoint-group-name⑥\">name</a></code> is <var>report</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report-destination\" id=\"ref-for-report-destination①\">destination</a> <b>and</b>\n  whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-endpoint-group-subdomains\" id=\"ref-for-dom-endpoint-group-subdomains①\">subdomains</a></code> flag is \"<code>include</code>\":",
                       "rationale": "let",
                       "steps": [
                         {
-                          "html": "<p>Let <var>endpoint</var> be the result of executing <a href=\"https://w3c.github.io/reporting/network-reporting.html#choose-endpoint\">§ 5.1 Choose an endpoint from a group</a> on <var>group</var>.</p>"
+                          "html": "<p>Let <var>endpoint</var> be the result of executing\n  <a href=\"https://w3c.github.io/reporting/network-reporting.html#choose-endpoint\">§ 5.1 Choose an endpoint from a group</a> on <var>group</var>.</p>"
                         },
                         {
                           "html": "If <var>endpoint</var> is not <code>null</code>:",
@@ -246,7 +246,7 @@
               ]
             },
             {
-              "html": "<p>If we reach this step, the <var>report</var> did not match any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#network-reporting-endpoint\" id=\"ref-for-network-reporting-endpoint①①\">network\n  reporting endpoint</a> and the user agent MAY remove <var>report</var> from the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#reporting-cache\" id=\"ref-for-reporting-cache①⓪\">reporting cache</a> directly. Depending on load, the user agent MAY\n  instead wait for <a href=\"https://w3c.github.io/reporting/network-reporting.html#gc\">§ 6.2 Garbage Collection</a> at some point in the future.</p>"
+              "html": "<p>If we reach this step, the <var>report</var> did not match any <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#network-reporting-endpoint\" id=\"ref-for-network-reporting-endpoint①①\">network\n  reporting endpoint</a> and the user agent MAY remove <var>report</var> from the\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#reporting-cache\" id=\"ref-for-reporting-cache①⓪\">reporting cache</a> directly. Depending on load, the user agent MAY\n  instead wait for <a href=\"https://w3c.github.io/reporting/network-reporting.html#gc\">§ 6.2 Garbage Collection</a> at some point in the future.</p>"
             }
           ]
         },
@@ -274,14 +274,14 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>result</var> be the result of executing <a href=\"https://w3c.github.io/reporting/#try-delivery\"><cite>Reporting API</cite> § 3.5.2 Attempt to deliver reports to endpoint</a> on <var>endpoint</var>, <var>origin</var>, and <var>per-origin reports</var>.</p>"
+                  "html": "<p>Let <var>result</var> be the result of executing <a href=\"https://w3c.github.io/reporting/#try-delivery\"><cite>Reporting API</cite> § 3.5.2 Attempt to deliver reports to endpoint</a>\n  on <var>endpoint</var>, <var>origin</var>, and <var>per-origin reports</var>.</p>"
                 },
                 {
                   "html": "If <var>result</var> is \"<code>Success</code>\":",
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "<p>Set <var>endpoint</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/#dom-endpoint-failures\" id=\"ref-for-dom-endpoint-failures①\">failures</a></code> to 0, and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-retry_after\" id=\"ref-for-dom-network-reporting-endpoint-retry_after②\">retry_after</a></code> to <code>null</code>.</p>"
+                      "html": "<p>Set <var>endpoint</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/#dom-endpoint-failures\" id=\"ref-for-dom-endpoint-failures①\">failures</a></code> to 0, and its\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/reporting/network-reporting.html#dom-network-reporting-endpoint-retry_after\" id=\"ref-for-dom-network-reporting-endpoint-retry_after②\">retry_after</a></code> to <code>null</code>.</p>"
                     },
                     {
                       "html": "<p>Remove each <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/#report\" id=\"ref-for-report④\">report</a> in <var>reports</var> from the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/reporting/network-reporting.html#reporting-cache\" id=\"ref-for-reporting-cache①①\">reporting\n  cache</a>.</p>"
