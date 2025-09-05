@@ -6523,7 +6523,7 @@
       "styleDeclaration": [
         "corner"
       ],
-      "syntax": "[ <length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]? ] || <corner-shape-value>{1,4}",
+      "syntax": "<'border-radius'> || <'corner-shape'>",
       "extended": []
     },
     {
@@ -6540,7 +6540,7 @@
         "corner-block-end",
         "cornerBlockEnd"
       ],
-      "syntax": "[ <length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]? ] || <corner-shape-value>{1,2}",
+      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
       "extended": []
     },
     {
@@ -6557,7 +6557,7 @@
         "corner-block-end-shape",
         "cornerBlockEndShape"
       ],
-      "syntax": "<corner-shape-value>{1,2}",
+      "syntax": "<'corner-top-left-shape'>{1,2}",
       "extended": []
     },
     {
@@ -6574,7 +6574,7 @@
         "corner-block-start",
         "cornerBlockStart"
       ],
-      "syntax": "[ <length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]? ] || <corner-shape-value>{1,2}",
+      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
       "extended": []
     },
     {
@@ -6591,7 +6591,7 @@
         "corner-block-start-shape",
         "cornerBlockStartShape"
       ],
-      "syntax": "<corner-shape-value>{1,2}",
+      "syntax": "<'corner-top-left-shape'>{1,2}",
       "extended": []
     },
     {
@@ -6608,7 +6608,7 @@
         "corner-bottom",
         "cornerBottom"
       ],
-      "syntax": "[ <length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]? ] || <corner-shape-value>{1,2}",
+      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
       "extended": []
     },
     {
@@ -6625,7 +6625,7 @@
         "corner-bottom-left",
         "cornerBottomLeft"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2} || <corner-shape-value>",
+      "syntax": "<'border-top-left-radius'>{1,2} || <'corner-top-left-shape'>",
       "extended": []
     },
     {
@@ -6660,7 +6660,7 @@
         "corner-bottom-right",
         "cornerBottomRight"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2} || <corner-shape-value>",
+      "syntax": "<'border-top-left-radius'>{1,2} || <'corner-top-left-shape'>",
       "extended": []
     },
     {
@@ -6695,7 +6695,7 @@
         "corner-bottom-shape",
         "cornerBottomShape"
       ],
-      "syntax": "<corner-shape-value>{1,2}",
+      "syntax": "<'corner-top-left-shape'>{1,2}",
       "extended": []
     },
     {
@@ -6712,7 +6712,7 @@
         "corner-end-end",
         "cornerEndEnd"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2} || <corner-shape-value>",
+      "syntax": "<'border-top-left-radius'>{1,2} || <'corner-top-left-shape'>",
       "extended": []
     },
     {
@@ -6747,7 +6747,7 @@
         "corner-end-start",
         "cornerEndStart"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2} || <corner-shape-value>",
+      "syntax": "<'border-top-left-radius'>{1,2} || <'corner-top-left-shape'>",
       "extended": []
     },
     {
@@ -6782,7 +6782,7 @@
         "corner-inline-end",
         "cornerInlineEnd"
       ],
-      "syntax": "[ <length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]? ] || <corner-shape-value>{1,2}",
+      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
       "extended": []
     },
     {
@@ -6799,7 +6799,7 @@
         "corner-inline-end-shape",
         "cornerInlineEndShape"
       ],
-      "syntax": "<corner-shape-value>{1,2}",
+      "syntax": "<'corner-top-left-shape'>{1,2}",
       "extended": []
     },
     {
@@ -6816,7 +6816,7 @@
         "corner-inline-start",
         "cornerInlineStart"
       ],
-      "syntax": "[ <length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]? ] || <corner-shape-value>{1,2}",
+      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
       "extended": []
     },
     {
@@ -6833,7 +6833,7 @@
         "corner-inline-start-shape",
         "cornerInlineStartShape"
       ],
-      "syntax": "<corner-shape-value>{1,2}",
+      "syntax": "<'corner-top-left-shape'>{1,2}",
       "extended": []
     },
     {
@@ -6850,7 +6850,7 @@
         "corner-left",
         "cornerLeft"
       ],
-      "syntax": "[ <length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]? ] || <corner-shape-value>{1,2}",
+      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
       "extended": []
     },
     {
@@ -6867,7 +6867,7 @@
         "corner-left-shape",
         "cornerLeftShape"
       ],
-      "syntax": "<corner-shape-value>{1,2}",
+      "syntax": "<'corner-top-left-shape'>{1,2}",
       "extended": []
     },
     {
@@ -6884,7 +6884,7 @@
         "corner-right",
         "cornerRight"
       ],
-      "syntax": "[ <length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]? ] || <corner-shape-value>{1,2}",
+      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
       "extended": []
     },
     {
@@ -6901,7 +6901,7 @@
         "corner-right-shape",
         "cornerRightShape"
       ],
-      "syntax": "<corner-shape-value>{1,2}",
+      "syntax": "<'corner-top-left-shape'>{1,2}",
       "extended": []
     },
     {
@@ -6918,7 +6918,7 @@
         "corner-shape",
         "cornerShape"
       ],
-      "syntax": "<corner-shape-value>{1,4}",
+      "syntax": "<'corner-top-left-shape'>{1,4}",
       "extended": []
     },
     {
@@ -6935,7 +6935,7 @@
         "corner-start-end",
         "cornerStartEnd"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2} || <corner-shape-value>",
+      "syntax": "<'border-top-left-radius'>{1,2} || <'corner-top-left-shape'>",
       "extended": []
     },
     {
@@ -6970,7 +6970,7 @@
         "corner-start-start",
         "cornerStartStart"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2} || <corner-shape-value>",
+      "syntax": "<'border-top-left-radius'>{1,2} || <'corner-top-left-shape'>",
       "extended": []
     },
     {
@@ -7005,7 +7005,7 @@
         "corner-top",
         "cornerTop"
       ],
-      "syntax": "[ <length-percentage [0,∞]>{1,2} [ / <length-percentage [0,∞]>{1,2} ]? ] || <corner-shape-value>{1,2}",
+      "syntax": "<'border-top-radius'> || <'corner-top-shape'>",
       "extended": []
     },
     {
@@ -7022,7 +7022,7 @@
         "corner-top-left",
         "cornerTopLeft"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2} || <corner-shape-value>",
+      "syntax": "<'border-top-left-radius'>{1,2} || <'corner-top-left-shape'>",
       "extended": []
     },
     {
@@ -7057,7 +7057,7 @@
         "corner-top-right",
         "cornerTopRight"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2} || <corner-shape-value>",
+      "syntax": "<'border-top-left-radius'>{1,2} || <'corner-top-left-shape'>",
       "extended": []
     },
     {
@@ -7092,7 +7092,7 @@
         "corner-top-shape",
         "cornerTopShape"
       ],
-      "syntax": "<corner-shape-value>{1,2}",
+      "syntax": "<'corner-top-left-shape'>{1,2}",
       "extended": []
     },
     {
@@ -16621,7 +16621,7 @@
     {
       "name": "bg-clip",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-bg-clip",
-      "syntax": "<visual-box> | border-area| text",
+      "syntax": "<visual-box> | [ border-area || text ]",
       "extended": []
     },
     {
