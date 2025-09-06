@@ -20,9 +20,6 @@
             },
             {
               "html": "If <var>editContext</var>'s <a href=\"https://www.w3.org/TR/edit-context/#dfn-associated-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-associated-element-14\">associated element</a> is not null, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
-            },
-            {
-              "html": "Set <var>editContext</var>'s <a href=\"https://www.w3.org/TR/edit-context/#dfn-associated-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-associated-element-15\">associated element</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
             }
           ]
         },
@@ -30,22 +27,28 @@
           "html": "Let <var>oldEditContext</var> be the value of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s internal [[EditContext]] slot."
         },
         {
-          "html": "If <var>oldEditContext</var> is not null, then:",
-          "rationale": "assert",
+          "html": "If <var>oldEditContext</var> is not null and <var>oldEditContext</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s\n                                <a href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>'s\n                                <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-active-editcontext\" class=\"internalDFN\" id=\"ref-for-dfn-active-editcontext-7\">active EditContext</a>, then:",
+          "rationale": "run",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var>oldEditContext</var>'s <a href=\"https://www.w3.org/TR/edit-context/#dfn-associated-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-associated-element-16\">associated element</a> is equal to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+              "html": "Run the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-deactivate-an-editcontext\" class=\"internalDFN\" id=\"ref-for-dfn-deactivate-an-editcontext-2\">deactivate an EditContext</a> with <var>oldEditContext</var>."
             },
             {
-              "html": "Set <var>oldEditContext</var>'s <a href=\"https://www.w3.org/TR/edit-context/#dfn-associated-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-associated-element-17\">associated element</a> to null."
+              "html": "If <var>oldEditContext</var>'s <a href=\"https://www.w3.org/TR/edit-context/#dfn-associated-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-associated-element-15\">associated element</a> is not equal to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, then terminate these steps."
+            },
+            {
+              "html": "If <var>editContext</var> is not null, <var>editContext</var>'s <a href=\"https://www.w3.org/TR/edit-context/#dfn-associated-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-associated-element-16\">associated element</a> is not null and <var>editContext</var>'s\n                                        <a href=\"https://www.w3.org/TR/edit-context/#dfn-associated-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-associated-element-17\">associated element</a> is not equal to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\"><code>NotSupportedError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
             }
           ]
         },
         {
-          "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s internal [[EditContext]] slot to be <var>editContext</var>."
+          "html": "If <var>oldEditContext</var> is not null, set <var>oldEditContext</var>'s <a href=\"https://www.w3.org/TR/edit-context/#dfn-associated-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-associated-element-18\">associated element</a> to null."
         },
         {
-          "html": "If <var>oldEditContext</var> is not null and <var>oldEditContext</var> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s\n                                <a href=\"https://dom.spec.whatwg.org/#concept-node-document\">node document</a>'s\n                                <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-active-editcontext\" class=\"internalDFN\" id=\"ref-for-dfn-active-editcontext-7\">active EditContext</a>, then run the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/edit-context/#dfn-deactivate-an-editcontext\" class=\"internalDFN\" id=\"ref-for-dfn-deactivate-an-editcontext-2\">deactivate an EditContext</a>\n                                with <var>oldEditContext</var>."
+          "html": "If <var>editContext</var> is not null, then set <var>editContext</var>'s <a href=\"https://www.w3.org/TR/edit-context/#dfn-associated-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-associated-element-19\">associated element</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+        },
+        {
+          "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s internal [[EditContext]] slot to be <var>editContext</var>."
         }
       ]
     },
