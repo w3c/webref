@@ -1917,11 +1917,11 @@
     {
       "name": "center point",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-center-point",
-      "html": "An <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-14\">element</a>'s <dfn data-lt=\"center point|in-view center point\" id=\"dfn-center-point\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">in-view center point</dfn>\n is the origin position of the rectangle\n that is the intersection between\n the element's first <a data-link-type=\"interface\" data-lt=\"DOMRect\" href=\"https://www.w3.org/TR/geometry-1/#domrect\" id=\"ref-for-index-term-domrect-interface-1\"><code>DOMRect</code></a> of <a data-link-type=\"method\" data-lt=\"getClientRects()\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-getclientrects\" id=\"ref-for-index-term-getclientrects-for-element-1\"><code>getClientRects</code></a><code>()</code>\n and the <a href=\"https://www.w3.org/TR/webdriver2/#dfn-viewport\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-viewport-2\">initial viewport</a>.\n Given an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-15\">element</a> that is known to be <a href=\"https://www.w3.org/TR/webdriver2/#dfn-in-view\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-in-view-2\">in view</a>,\n it can be calculated this way:",
+      "html": "An <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-14\">element</a>'s <dfn data-lt=\"center point|in-view center point\" id=\"dfn-center-point\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">in-view center point</dfn>\n is the origin position of the rectangle\n that is the intersection between\n the element's first <a data-link-type=\"interface\" data-lt=\"DOMRect\" href=\"https://www.w3.org/TR/geometry-1/#domrect\" id=\"ref-for-index-term-domrect-interface-1\"><code>DOMRect</code></a> of <a data-link-type=\"method\" data-lt=\"getClientRects()\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-getclientrects\" id=\"ref-for-index-term-getclientrects-for-element-1\"><code>getClientRects</code></a><code>()</code>\n and the <a href=\"https://www.w3.org/TR/webdriver2/#dfn-viewport\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-viewport-2\">initial viewport</a>.\n It can be calculated this way:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>rectangle</var> be\n  the first object of the <a data-link-type=\"interface\" data-lt=\"DOMRect\" href=\"https://www.w3.org/TR/geometry-1/#domrect\" id=\"ref-for-index-term-domrect-interface-2\"><code>DOMRect</code></a> collection\n  returned by calling <a data-link-type=\"method\" data-lt=\"getClientRects()\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-getclientrects\" id=\"ref-for-index-term-getclientrects-for-element-2\"><code>getClientRects</code></a><code>()</code> on <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-16\"><var>element</var></a>.\n\n </p>"
+          "html": "<p>Let <var>rectangle</var> be\n  the first object of the <a data-link-type=\"interface\" data-lt=\"DOMRect\" href=\"https://www.w3.org/TR/geometry-1/#domrect\" id=\"ref-for-index-term-domrect-interface-2\"><code>DOMRect</code></a> collection\n  returned by calling <a data-link-type=\"method\" data-lt=\"getClientRects()\" href=\"https://www.w3.org/TR/cssom-view-1/#dom-element-getclientrects\" id=\"ref-for-index-term-getclientrects-for-element-2\"><code>getClientRects</code></a><code>()</code> on <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-15\"><var>element</var></a>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>left</var> be\n  <a href=\"https://www.w3.org/TR/webdriver2/#dfn-max\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-max-1\">max</a>(0, <a href=\"https://www.w3.org/TR/webdriver2/#dfn-min\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-min-1\">min</a>(<a href=\"https://www.w3.org/TR/webdriver2/#dfn-x-coordinate\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-x-coordinate-1\">x coordinate</a>,\n  <a href=\"https://www.w3.org/TR/webdriver2/#dfn-x-coordinate\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-x-coordinate-2\">x coordinate</a> + <a href=\"https://www.w3.org/TR/webdriver2/#dfn-width-dimension\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-width-dimension-1\">width dimension</a>)).\n\n </p>"
@@ -1949,7 +1949,7 @@
     {
       "name": "disabled",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-disabled",
-      "html": "An <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-17\">element</a> <var>element</var> is <dfn id=\"dfn-disabled\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">disabled</dfn> if the following steps\n return true:",
+      "html": "An <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-16\">element</a> <var>element</var> is <dfn id=\"dfn-disabled\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">disabled</dfn> if the following steps\n return true:",
       "rationale": "if",
       "steps": [
         {
@@ -1978,7 +1978,7 @@
     {
       "name": "pointer-interactable paint tree",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-pointer-interactable-paint-tree",
-      "html": "An <var><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-21\">element</a></var>'s\n <dfn id=\"dfn-pointer-interactable-paint-tree\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">pointer-interactable paint tree</dfn>\n is produced this way:",
+      "html": "An <var><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-20\">element</a></var>'s\n <dfn id=\"dfn-pointer-interactable-paint-tree\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">pointer-interactable paint tree</dfn>\n is produced this way:",
       "rationale": "if",
       "steps": [
         {
@@ -2224,7 +2224,7 @@
               "html": "Let <var>node</var> be the result of calling <a href=\"https://www.w3.org/TR/webdriver2/#dfn-snapshotitem\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-snapshotitem-1\">snapshotItem</a> with\n    <var>evaluateResult</var> as <a href=\"https://www.w3.org/TR/webdriver2/#dfn-this\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-this-5\">this</a> and <var>index</var> as the\n    argument."
             },
             {
-              "html": "<p>If <var>node</var> is not an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-23\">element</a> return an <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-102\">error</a>\n    with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-code-95\">error code</a> <a href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-selector\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invalid-selector-4\">invalid selector</a>.\n\n   </p>"
+              "html": "<p>If <var>node</var> is not an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-22\">element</a> return an <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-102\">error</a>\n    with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-code-95\">error code</a> <a href=\"https://www.w3.org/TR/webdriver2/#dfn-invalid-selector\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-invalid-selector-4\">invalid selector</a>.\n\n   </p>"
             },
             {
               "html": "Append <var>node</var> to <var>result</var>."
@@ -2448,7 +2448,7 @@
           "html": "<p>Let <var>active element</var> be the <a href=\"https://www.w3.org/TR/webdriver2/#dfn-active-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-active-element-1\">active element</a>\n  of <var>session</var>'s <a href=\"https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-current-browsing-context-43\">current browsing\n  context</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#document-element\" id=\"ref-for-index-term-document-element-5\">document element</a>.\n\n </p>"
         },
         {
-          "html": "<p>If <var>active element</var> is a non-null <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-25\">element</a>,\n  return <a href=\"https://www.w3.org/TR/webdriver2/#dfn-success\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-success-60\">success</a> with data set to <a href=\"https://www.w3.org/TR/webdriver2/#dfn-web-element-reference-object\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-web-element-reference-object-2\">web element reference\n  object</a> for <var>session</var> and <var>active element</var>.\n\n  </p><p>Otherwise, return <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-129\">error</a> with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-code-120\">error code</a> <a href=\"https://www.w3.org/TR/webdriver2/#dfn-no-such-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-no-such-element-8\">no such element</a>.\n</p>"
+          "html": "<p>If <var>active element</var> is a non-null <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-24\">element</a>,\n  return <a href=\"https://www.w3.org/TR/webdriver2/#dfn-success\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-success-60\">success</a> with data set to <a href=\"https://www.w3.org/TR/webdriver2/#dfn-web-element-reference-object\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-web-element-reference-object-2\">web element reference\n  object</a> for <var>session</var> and <var>active element</var>.\n\n  </p><p>Otherwise, return <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-129\">error</a> with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-code-120\">error code</a> <a href=\"https://www.w3.org/TR/webdriver2/#dfn-no-such-element\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-no-such-element-8\">no such element</a>.\n</p>"
         }
       ]
     },
@@ -2519,7 +2519,7 @@
     {
       "name": "container",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-container",
-      "html": "An <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-26\"><var>element</var></a>'s <dfn id=\"dfn-container\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">container</dfn> is:",
+      "html": "An <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-25\"><var>element</var></a>'s <dfn id=\"dfn-container\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">container</dfn> is:",
       "rationale": ".switch",
       "steps": [
         {
@@ -2527,7 +2527,7 @@
           "steps": [
             {
               "case": "option element in a valid element context",
-              "html": "The <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-27\"><var>element</var></a>'s <a href=\"https://www.w3.org/TR/webdriver2/#dfn-element-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-context-3\">element context</a>,\n  which is determined by:",
+              "html": "The <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-26\"><var>element</var></a>'s <a href=\"https://www.w3.org/TR/webdriver2/#dfn-element-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-context-3\">element context</a>,\n  which is determined by:",
               "rationale": "let",
               "steps": [
                 {
@@ -2543,7 +2543,7 @@
             },
             {
               "case": "optgroup element in a valid element context",
-              "html": "The <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-27\"><var>element</var></a>'s <a href=\"https://www.w3.org/TR/webdriver2/#dfn-element-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-context-3\">element context</a>,\n  which is determined by:",
+              "html": "The <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-26\"><var>element</var></a>'s <a href=\"https://www.w3.org/TR/webdriver2/#dfn-element-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-context-3\">element context</a>,\n  which is determined by:",
               "rationale": "let",
               "steps": [
                 {
@@ -2563,7 +2563,7 @@
             },
             {
               "case": "Otherwise",
-              "html": "<p>The container is the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-28\">element</a> itself.\n</p>"
+              "html": "<p>The container is the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-27\">element</a> itself.\n</p>"
             }
           ]
         }
@@ -2869,10 +2869,10 @@
           "html": "<p><a href=\"https://www.w3.org/TR/webdriver2/#dfn-scrolls-into-view\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-scrolls-into-view-3\">Scroll into view</a> the <var>element</var>'s <a href=\"https://www.w3.org/TR/webdriver2/#dfn-container\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-container-1\">container</a>.\n\n </p>"
         },
         {
-          "html": "<p>If <var>element</var>'s <a href=\"https://www.w3.org/TR/webdriver2/#dfn-container\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-container-2\">container</a> is still not <a href=\"https://www.w3.org/TR/webdriver2/#dfn-in-view\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-in-view-3\">in view</a>,\n  return <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-147\">error</a> with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-code-135\">error code</a> <a href=\"https://www.w3.org/TR/webdriver2/#dfn-element-not-interactable\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-not-interactable-2\">element not interactable</a>.\n\n </p>"
+          "html": "<p>If <var>element</var>'s <a href=\"https://www.w3.org/TR/webdriver2/#dfn-container\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-container-2\">container</a> is still not <a href=\"https://www.w3.org/TR/webdriver2/#dfn-in-view\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-in-view-2\">in view</a>,\n  return <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-147\">error</a> with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-code-135\">error code</a> <a href=\"https://www.w3.org/TR/webdriver2/#dfn-element-not-interactable\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-not-interactable-2\">element not interactable</a>.\n\n </p>"
         },
         {
-          "html": "<p>If <var>element</var>'s <a href=\"https://www.w3.org/TR/webdriver2/#dfn-container\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-container-3\">container</a>\n  is <a href=\"https://www.w3.org/TR/webdriver2/#dfn-obscuring\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-obscuring-5\">obscured</a> by another <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-34\">element</a>,\n  return <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-148\">error</a> with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-code-136\">error code</a> <a href=\"https://www.w3.org/TR/webdriver2/#dfn-element-click-intercepted\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-click-intercepted-2\">element click intercepted</a>.\n\n </p>"
+          "html": "<p>If <var>element</var>'s <a href=\"https://www.w3.org/TR/webdriver2/#dfn-container\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-container-3\">container</a>\n  is <a href=\"https://www.w3.org/TR/webdriver2/#dfn-obscuring\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-obscuring-5\">obscured</a> by another <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-33\">element</a>,\n  return <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-148\">error</a> with <a href=\"https://www.w3.org/TR/webdriver2/#dfn-error-code\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-error-code-136\">error code</a> <a href=\"https://www.w3.org/TR/webdriver2/#dfn-element-click-intercepted\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-element-click-intercepted-2\">element click intercepted</a>.\n\n </p>"
         },
         {
           "html": "Matching on <var>element</var>:",
@@ -3454,7 +3454,7 @@
                 },
                 {
                   "case": "element is content editable",
-                  "html": "If <var><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-40\">element</a></var> does not currently have focus,\n      set the text insertion caret after any child content."
+                  "html": "If <var><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-39\">element</a></var> does not currently have focus,\n      set the text insertion caret after any child content."
                 },
                 {
                   "case": "Otherwise",
@@ -3462,7 +3462,7 @@
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<p>If <var>element</var> does not currently have focus,\n        let <var>current text length</var> be the\n        <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-index-term-length-for-string-1\">length</a> of <var><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-41\">element</a></var>'s <a href=\"https://www.w3.org/TR/webdriver2/#dfn-api-value\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-api-value-1\">API value</a>.\n\n      </p>"
+                      "html": "<p>If <var>element</var> does not currently have focus,\n        let <var>current text length</var> be the\n        <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-index-term-length-for-string-1\">length</a> of <var><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-40\">element</a></var>'s <a href=\"https://www.w3.org/TR/webdriver2/#dfn-api-value\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-api-value-1\">API value</a>.\n\n      </p>"
                     },
                     {
                       "html": "<p>Set the text insertion caret using <a href=\"https://www.w3.org/TR/webdriver2/#dfn-set-selection-range\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-set-selection-range-1\">set selection range</a>\n       using <var>current text length</var> for both the <code>start</code>\n       and <code>end</code> parameters.\n     </p>"
@@ -5957,7 +5957,7 @@
     {
       "name": "encoding a canvas as base64",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-encoding-a-canvas-as-base64",
-      "html": "To <dfn data-lt=\"encoding a canvas as base64|encode a canvas as Base64 a canvas element\" id=\"dfn-encoding-a-canvas-as-base64\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">encode a canvas as\n Base64 a <code>canvas</code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-44\">element</a></dfn>:",
+      "html": "To <dfn data-lt=\"encoding a canvas as base64|encode a canvas as Base64 a canvas element\" id=\"dfn-encoding-a-canvas-as-base64\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">encode a canvas as\n Base64 a <code>canvas</code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-index-term-element-43\">element</a></dfn>:",
       "rationale": "if",
       "steps": [
         {
