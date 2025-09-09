@@ -1,0 +1,21 @@
+; GENERATED CONTENT - DO NOT EDIT
+; Content was automatically extracted by Reffy into webref
+; (https://github.com/w3c/webref)
+; Source: Prefetch (https://wicg.github.io/nav-speculation/prefetch.html)
+
+speculation.PreloadingStatus = "pending" / "ready" / "success" / "failure"
+
+SpeculationEvent = (
+  speculation.PrefetchStatusUpdated
+)
+
+speculation.PrefetchStatusUpdated = (
+   method: "speculation.prefetchStatusUpdated",
+   params: speculation.PrefetchStatusUpdatedParameters
+)
+
+speculation.PrefetchStatusUpdatedParameters = {
+   context: text,
+   url: text,
+   status: speculation.PreloadingStatus
+}
