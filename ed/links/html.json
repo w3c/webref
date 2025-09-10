@@ -1202,7 +1202,6 @@
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/autoplay": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/autoplay": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Permissions-Policy/document-domain": {},
-      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options": {},
       "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/103": {},
       "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise": {
         "anchors": [
@@ -1978,12 +1977,17 @@
       },
       "https://drafts.csswg.org/selectors/": {
         "anchors": [
+          "typedef-selector-list",
+          "parse-a-selector",
+          "selector",
           "type-selector",
           "attribute-selector",
           "pseudo-class",
           "the-focus-visible-pseudo",
           "indicate-focus",
-          "pseudo-element"
+          "pseudo-element",
+          "match-a-selector-against-an-element",
+          "scoping-root"
         ]
       },
       "https://drafts.csswg.org/web-animations-1/": {
@@ -2066,6 +2070,7 @@
         "anchors": [
           "http-origin",
           "abnf",
+          "sec-purpose-header",
           "http-scheme",
           "is-local",
           "local-scheme",
@@ -2107,6 +2112,7 @@
           "byte-sequence-as-a-body",
           "response-body-info",
           "resolve-an-origin",
+          "credentials",
           "reserve-deferred-fetch-quota",
           "concept-response",
           "concept-response-type",
@@ -2182,6 +2188,8 @@
       "https://github.com/WICG/close-watcher": {},
       "https://github.com/WICG/import-maps": {},
       "https://github.com/WICG/import-maps/issues/235": {},
+      "https://github.com/WICG/nav-speculation": {},
+      "https://github.com/WICG/nav-speculation/issues/348": {},
       "https://github.com/WICG/navigation-api": {},
       "https://github.com/annevk/orb": {},
       "https://github.com/dewitt/opensearch/blob/master/opensearch-1-1-draft-6.md": {
@@ -2241,7 +2249,6 @@
       "https://github.com/whatwg/html/issues/7363": {},
       "https://github.com/whatwg/html/issues/763": {},
       "https://github.com/whatwg/html/issues/7718": {},
-      "https://github.com/whatwg/html/issues/7832": {},
       "https://github.com/whatwg/html/issues/8620": {},
       "https://github.com/whatwg/html/issues/8906": {},
       "https://github.com/whatwg/html/issues/958": {},
@@ -2260,6 +2267,14 @@
         ]
       },
       "https://graphviz.org/doc/info/lang.html": {},
+      "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html": {
+        "anchors": [
+          "name-http-header-field-definitio",
+          "parse-a-url-search-variance",
+          "name-data-model",
+          "name-comparing"
+        ]
+      },
       "https://httpwg.org/specs/rfc6265.html": {
         "anchors": [
           "sane-cookie-syntax",
@@ -2313,8 +2328,10 @@
       "https://httpwg.org/specs/rfc8941.html": {
         "anchors": [
           "boolean",
-          "token",
-          "param"
+          "list",
+          "param",
+          "string",
+          "token"
         ]
       },
       "https://immersive-web.github.io/webxr/": {
@@ -2470,6 +2487,7 @@
       "https://spec.whatwg.org/": {},
       "https://storage.spec.whatwg.org/": {
         "anchors": [
+          "storage-key",
           "obtain-a-local-storage-bottle-map",
           "obtain-a-session-storage-bottle-map",
           "obtain-a-storage-key-for-non-storage-purposes",
@@ -2723,6 +2741,15 @@
           "concept-urlencoded-serializer",
           "is-special",
           "warning-avoid-psl"
+        ]
+      },
+      "https://urlpattern.spec.whatwg.org/": {
+        "anchors": [
+          "url-pattern",
+          "url-pattern-match",
+          "build-a-url-pattern-from-an-infra-value",
+          "parse-a-constructor-string",
+          "dictdef-urlpatterninit"
         ]
       },
       "https://w3c.github.io/DOM-Parsing/": {
@@ -3624,6 +3651,8 @@
           "dom-keyboard-lock"
         ]
       },
+      "https://wicg.github.io/nav-speculation/prefetch.html": {},
+      "https://wicg.github.io/nav-speculation/prerendering.html": {},
       "https://wicg.github.io/periodic-background-sync/": {
         "anchors": [
           "periodicsyncmanager",
@@ -3651,6 +3680,7 @@
           "requestdevice-method"
         ]
       },
+      "https://wicg.io/": {},
       "https://wiki.mozilla.org/APNG_Specification": {},
       "https://wiki.whatwg.org/": {},
       "https://wiki.whatwg.org/wiki/DOM_XSLTProcessor": {},
