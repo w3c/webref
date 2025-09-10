@@ -215,6 +215,13 @@
     },
     {
       "spec": {
+        "title": "Push API",
+        "url": "https://www.w3.org/TR/push-api/"
+      },
+      "fragment": "Window includes PushManagerAttribute;"
+    },
+    {
+      "spec": {
         "title": "requestIdleCallback()",
         "url": "https://www.w3.org/TR/requestidlecallback/"
       },
@@ -466,6 +473,21 @@
         },
         "fragment": "interface mixin WindowLocalStorage {\n  readonly attribute Storage localStorage;\n};",
         "href": "https://html.spec.whatwg.org/multipage/webstorage.html#windowlocalstorage"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "PushManagerAttribute",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Push API",
+          "url": "https://www.w3.org/TR/push-api/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin PushManagerAttribute {\n  readonly attribute PushManager pushManager;\n};",
+        "href": "https://w3c.github.io/push-api/#dom-pushmanagerattribute"
       },
       "extended": [],
       "inheritance": null,

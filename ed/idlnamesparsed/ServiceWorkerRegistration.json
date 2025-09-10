@@ -64,7 +64,7 @@
         "title": "Push API",
         "url": "https://www.w3.org/TR/push-api/"
       },
-      "fragment": "[SecureContext]\npartial interface ServiceWorkerRegistration {\n  readonly attribute PushManager pushManager;\n};"
+      "fragment": "ServiceWorkerRegistration includes PushManagerAttribute;"
     }
   ],
   "inheritance": {
@@ -90,5 +90,21 @@
     "inheritance": null,
     "includes": []
   },
-  "includes": []
+  "includes": [
+    {
+      "name": "PushManagerAttribute",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Push API",
+          "url": "https://www.w3.org/TR/push-api/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin PushManagerAttribute {\n  readonly attribute PushManager pushManager;\n};",
+        "href": "https://w3c.github.io/push-api/#dom-pushmanagerattribute"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
 }

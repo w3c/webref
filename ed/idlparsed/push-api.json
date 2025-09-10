@@ -59,6 +59,40 @@
         "partial": false,
         "href": "https://w3c.github.io/push-api/#dom-pushpermissiondescriptor"
       },
+      "PushManagerAttribute": {
+        "fragment": "[SecureContext]\ninterface mixin PushManagerAttribute {\n  readonly attribute PushManager pushManager;\n};",
+        "type": "interface mixin",
+        "name": "PushManagerAttribute",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "pushManager",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PushManager"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/push-api/#dom-pushmanagerattribute-pushmanager"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/push-api/#dom-pushmanagerattribute"
+      },
       "PushManager": {
         "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushManager {\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedContentEncodings;\n\n  Promise<PushSubscription> subscribe(optional PushSubscriptionOptionsInit options = {});\n  Promise<PushSubscription?> getSubscription();\n  Promise<PermissionState> permissionState(optional PushSubscriptionOptionsInit options = {});\n};",
         "type": "interface",
@@ -1071,39 +1105,22 @@
       }
     },
     "idlExtendedNames": {
+      "Window": [
+        {
+          "fragment": "Window includes PushManagerAttribute;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Window",
+          "includes": "PushManagerAttribute"
+        }
+      ],
       "ServiceWorkerRegistration": [
         {
-          "fragment": "[SecureContext]\npartial interface ServiceWorkerRegistration {\n  readonly attribute PushManager pushManager;\n};",
-          "type": "interface",
-          "name": "ServiceWorkerRegistration",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "attribute",
-              "name": "pushManager",
-              "idlType": {
-                "type": "attribute-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "PushManager"
-              },
-              "extAttrs": [],
-              "special": "",
-              "readonly": true,
-              "href": "https://w3c.github.io/push-api/#dom-serviceworkerregistration-pushmanager"
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "SecureContext",
-              "rhs": null,
-              "arguments": []
-            }
-          ],
-          "partial": true
+          "fragment": "ServiceWorkerRegistration includes PushManagerAttribute;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "ServiceWorkerRegistration",
+          "includes": "PushManagerAttribute"
         }
       ],
       "ServiceWorkerGlobalScope": [
@@ -1190,8 +1207,14 @@
       "PushPermissionDescriptor": [
         "PermissionDescriptor"
       ],
-      "ServiceWorkerRegistration": [
+      "PushManagerAttribute": [
         "PushManager"
+      ],
+      "Window": [
+        "PushManagerAttribute"
+      ],
+      "ServiceWorkerRegistration": [
+        "PushManagerAttribute"
       ],
       "PushManager": [
         "PushSubscription",
@@ -1245,7 +1268,6 @@
     },
     "externalDependencies": [
       "PermissionDescriptor",
-      "ServiceWorkerRegistration",
       "PermissionState",
       "ArrayBuffer",
       "BufferSource",

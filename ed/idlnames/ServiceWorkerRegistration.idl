@@ -55,7 +55,4 @@ partial interface ServiceWorkerRegistration {
 };
 
 // Source: Push API (https://www.w3.org/TR/push-api/)
-[SecureContext]
-partial interface ServiceWorkerRegistration {
-  readonly attribute PushManager pushManager;
-};
+ServiceWorkerRegistration includes PushManagerAttribute;

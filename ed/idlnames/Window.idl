@@ -237,6 +237,9 @@ partial interface Window {
     [SecureContext] attribute EventHandler ondevicemotion;
 };
 
+// Source: Push API (https://www.w3.org/TR/push-api/)
+Window includes PushManagerAttribute;
+
 // Source: requestIdleCallback() (https://www.w3.org/TR/requestidlecallback/)
 partial interface Window {
   unsigned long requestIdleCallback(IdleRequestCallback callback, optional IdleRequestOptions options = {});
