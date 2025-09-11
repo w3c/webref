@@ -239,6 +239,56 @@
       "links": []
     },
     {
+      "id": "dfn-scope",
+      "href": "https://www.w3.org/TR/push-api/#dfn-scope",
+      "linkingText": [
+        "scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "push subscription"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "push-subscription",
+        "href": "https://www.w3.org/TR/push-api/#push-subscription",
+        "title": "Push subscription",
+        "alternateIds": [
+          "x3-4-push-subscription"
+        ],
+        "number": "3.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-window-accessible-scope",
+      "href": "https://www.w3.org/TR/push-api/#dfn-window-accessible-scope",
+      "linkingText": [
+        "window-accessible scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "push subscription"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "push-subscription",
+        "href": "https://www.w3.org/TR/push-api/#push-subscription",
+        "title": "Push subscription",
+        "alternateIds": [
+          "x3-4-push-subscription"
+        ],
+        "number": "3.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "dfn-push-endpoint",
       "href": "https://www.w3.org/TR/push-api/#dfn-push-endpoint",
       "linkingText": [
@@ -308,6 +358,52 @@
       "links": []
     },
     {
+      "id": "dfn-associated-service-worker-registration",
+      "href": "https://www.w3.org/TR/push-api/#dfn-associated-service-worker-registration",
+      "linkingText": [
+        "associated service worker registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "relationship-to-service-worker-registrations",
+        "href": "https://www.w3.org/TR/push-api/#relationship-to-service-worker-registrations",
+        "title": "Relationship to service worker registrations",
+        "alternateIds": [
+          "x3-4-1-relationship-to-service-worker-registrations"
+        ],
+        "number": "3.4.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-associated-push-subscription",
+      "href": "https://www.w3.org/TR/push-api/#dfn-associated-push-subscription",
+      "linkingText": [
+        "associated push subscription"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "relationship-to-service-worker-registrations",
+        "href": "https://www.w3.org/TR/push-api/#relationship-to-service-worker-registrations",
+        "title": "Relationship to service worker registrations",
+        "alternateIds": [
+          "x3-4-1-relationship-to-service-worker-registrations"
+        ],
+        "number": "3.4.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "dfn-refresh",
       "href": "https://www.w3.org/TR/push-api/#dfn-refresh",
       "linkingText": [
@@ -323,9 +419,9 @@
         "href": "https://www.w3.org/TR/push-api/#subscription-refreshes",
         "title": "Subscription refreshes",
         "alternateIds": [
-          "x3-4-1-subscription-refreshes"
+          "x3-4-2-subscription-refreshes"
         ],
-        "number": "3.4.1"
+        "number": "3.4.2"
       },
       "definedIn": "prose",
       "links": []
@@ -347,9 +443,9 @@
         "href": "https://www.w3.org/TR/push-api/#subscription-deactivation",
         "title": "Subscription deactivation",
         "alternateIds": [
-          "x3-4-2-subscription-deactivation"
+          "x3-4-3-subscription-deactivation"
         ],
-        "number": "3.4.2"
+        "number": "3.4.3"
       },
       "definedIn": "prose",
       "links": []
@@ -473,26 +569,72 @@
       "links": []
     },
     {
-      "id": "dom-serviceworkerregistration-pushmanager",
-      "href": "https://www.w3.org/TR/push-api/#dom-serviceworkerregistration-pushmanager",
+      "id": "dom-pushmanagerattribute",
+      "href": "https://www.w3.org/TR/push-api/#dom-pushmanagerattribute",
+      "linkingText": [
+        "PushManagerAttribute"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pushmanagerattribute-mixin",
+        "href": "https://www.w3.org/TR/push-api/#pushmanagerattribute-mixin",
+        "title": "PushManagerAttribute mixin",
+        "alternateIds": [
+          "extensions-to-the-serviceworkerregistration-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-pushmanagerattribute-pushmanager",
+      "href": "https://www.w3.org/TR/push-api/#dom-pushmanagerattribute-pushmanager",
       "linkingText": [
         "pushManager"
       ],
       "localLinkingText": [
-        "ServiceWorkerRegistration.pushManager"
+        "PushManagerAttribute.pushManager"
       ],
       "type": "attribute",
       "for": [
-        "ServiceWorkerRegistration"
+        "PushManagerAttribute"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "extensions-to-the-serviceworkerregistration-interface",
-        "href": "https://www.w3.org/TR/push-api/#extensions-to-the-serviceworkerregistration-interface",
-        "title": "Extensions to the ServiceWorkerRegistration Interface",
+        "id": "pushmanagerattribute-mixin",
+        "href": "https://www.w3.org/TR/push-api/#pushmanagerattribute-mixin",
+        "title": "PushManagerAttribute mixin",
         "alternateIds": [
-          "x6-extensions-to-the-serviceworkerregistration-interface"
+          "extensions-to-the-serviceworkerregistration-interface"
+        ],
+        "number": "6"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dfn-pushmanager",
+      "href": "https://www.w3.org/TR/push-api/#dfn-pushmanager",
+      "linkingText": [
+        "pushManager"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pushmanagerattribute-mixin",
+        "href": "https://www.w3.org/TR/push-api/#pushmanagerattribute-mixin",
+        "title": "PushManagerAttribute mixin",
+        "alternateIds": [
+          "extensions-to-the-serviceworkerregistration-interface"
         ],
         "number": "6"
       },
@@ -520,6 +662,31 @@
         "number": "7"
       },
       "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "dfn-service-worker-registration",
+      "href": "https://www.w3.org/TR/push-api/#dfn-service-worker-registration",
+      "linkingText": [
+        "service worker registration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PushManager"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pushmanager-interface",
+        "href": "https://www.w3.org/TR/push-api/#pushmanager-interface",
+        "title": "PushManager interface",
+        "alternateIds": [
+          "x7-pushmanager-interface"
+        ],
+        "number": "7"
+      },
+      "definedIn": "prose",
       "links": []
     },
     {

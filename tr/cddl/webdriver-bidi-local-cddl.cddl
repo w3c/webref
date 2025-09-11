@@ -1687,7 +1687,8 @@ EmulationCommand = (
   emulation.SetLocaleOverride //
   emulation.SetScreenOrientationOverride //
   emulation.SetScriptingEnabled //
-  emulation.SetTimezoneOverride
+  emulation.SetTimezoneOverride //
+  emulation.SetUserAgentOverride
 )
 
 emulation.SetForcedColorsModeThemeOverride = (
@@ -1757,6 +1758,17 @@ emulation.ScreenOrientation = {
 
 emulation.SetScreenOrientationOverrideParameters = {
   screenOrientation: emulation.ScreenOrientation / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.SetUserAgentOverride = (
+  method: "emulation.setUserAgentOverride",
+  params: emulation.SetUserAgentOverrideParameters
+)
+
+emulation.SetUserAgentOverrideParameters = {
+  userAgent: text / null,
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
 }
