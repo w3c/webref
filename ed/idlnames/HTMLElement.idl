@@ -31,6 +31,9 @@ interface HTMLElement : Element {
   undefined hidePopover();
   boolean togglePopover(optional (TogglePopoverOptions or boolean) options = {});
   [CEReactions] attribute DOMString? popover;
+
+  [CEReactions, Reflect, ReflectRange=(0, 8)] attribute unsigned long headingOffset;
+  [CEReactions, Reflect] attribute boolean headingReset;
 };
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
