@@ -3328,7 +3328,7 @@
           "html": "<p>\n              If <var>usages</var> contains any entry which is not \"<code>sign</code>\" or\n              \"<code>verify</code>\", then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n            </p>"
         },
         {
-          "html": "<dl class=\"switch\">\n              <dt>\n                If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacKeyGenParams-length\" class=\"internalDFN\" id=\"ref-for-dfn-KmacKeyGenParams-length-2\"><code>length</code></a> member of\n                <var>normalizedAlgorithm</var> is present:\n              </dt>\n              <dd>\n                Let <var>length</var> be equal to the\n                <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacKeyGenParams-length\" class=\"internalDFN\" id=\"ref-for-dfn-KmacKeyGenParams-length-3\"><code>length</code></a>\n                member of <var>normalizedAlgorithm</var>.\n              </dd>\n              <dt>\n                Otherwise, if the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of\n                <var>normalizedAlgorithm</var> is a case-sensitive string match for\n                \"<code>KMAC128</code>\":\n              </dt>\n              <dd>\n                Let <var>length</var> be 128.\n              </dd>\n              <dt>\n                Otherwise, if the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of\n                <var>normalizedAlgorithm</var> is a case-sensitive string match for\n                \"<code>KMAC256</code>\":\n              </dt>\n              <dd>\n                Let <var>length</var> be 256.\n              </dd>\n            </dl>",
+          "html": "<dl class=\"switch\">\n              <dt>\n                If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacKeyGenParams-length\" class=\"internalDFN\" id=\"ref-for-dfn-KmacKeyGenParams-length-2\"><code>length</code></a> member of\n                <var>normalizedAlgorithm</var> is present:\n              </dt>\n              <dd>\n                \n              </dd>\n              <dt>\n                Otherwise, if the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of\n                <var>normalizedAlgorithm</var> is a case-sensitive string match for\n                \"<code>KMAC128</code>\":\n              </dt>\n              <dd>\n                Let <var>length</var> be 128.\n              </dd>\n              <dt>\n                Otherwise, if the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of\n                <var>normalizedAlgorithm</var> is a case-sensitive string match for\n                \"<code>KMAC256</code>\":\n              </dt>\n              <dd>\n                Let <var>length</var> be 256.\n              </dd>\n            </dl>",
           "rationale": ".switch",
           "steps": [
             {
@@ -3336,7 +3336,16 @@
               "steps": [
                 {
                   "case": "If the length member of normalizedAlgorithm is present:",
-                  "html": "Let <var>length</var> be equal to the\n                <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacKeyGenParams-length\" class=\"internalDFN\" id=\"ref-for-dfn-KmacKeyGenParams-length-3\"><code>length</code></a>\n                member of <var>normalizedAlgorithm</var>."
+                  "html": "",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "Let <var>length</var> be equal to the\n                    <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacKeyGenParams-length\" class=\"internalDFN\" id=\"ref-for-dfn-KmacKeyGenParams-length-3\"><code>length</code></a>\n                    member of <var>normalizedAlgorithm</var>."
+                    },
+                    {
+                      "html": "If <var>length</var> is zero, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n                    <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>."
+                    }
+                  ]
                 },
                 {
                   "case": "Otherwise, if the name member of normalizedAlgorithm is a case-sensitive string match for \"KMAC128\":",
