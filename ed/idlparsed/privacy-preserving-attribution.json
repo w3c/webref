@@ -308,7 +308,7 @@
         "href": "https://w3c.github.io/attribution/#dictdef-attributionimpressionresult"
       },
       "AttributionConversionOptions": {
-        "fragment": "dictionary AttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  sequence<unsigned long> matchValues = [];\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> impressionCallers = [];\n\n  AttributionLogic logic = \"last-n-touch\";\n  AttributionLogicOptions logicOptions;\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
+        "fragment": "dictionary AttributionConversionOptions {\n  required USVString aggregationService;\n  double epsilon = 1.0;\n\n  required unsigned long histogramSize;\n\n  unsigned long lookbackDays;\n  sequence<unsigned long> matchValues = [];\n  sequence<USVString> impressionSites = [];\n  sequence<USVString> impressionCallers = [];\n\n  sequence<double> credit;\n  unsigned long value = 1;\n  unsigned long maxValue = 1;\n};",
         "type": "dictionary",
         "name": "AttributionConversionOptions",
         "inheritance": null,
@@ -466,38 +466,28 @@
           },
           {
             "type": "field",
-            "name": "logic",
+            "name": "credit",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
-              "idlType": "AttributionLogic"
-            },
-            "default": {
-              "type": "string",
-              "value": "last-n-touch"
-            },
-            "required": false,
-            "href": "https://w3c.github.io/attribution/#dom-attributionconversionoptions-logic"
-          },
-          {
-            "type": "field",
-            "name": "logicOptions",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "AttributionLogicOptions"
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "double"
+                }
+              ]
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/attribution/#dom-attributionconversionoptions-logicoptions"
+            "href": "https://w3c.github.io/attribution/#dom-attributionconversionoptions-credit"
           },
           {
             "type": "field",
@@ -541,56 +531,6 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://w3c.github.io/attribution/#dictdef-attributionconversionoptions"
-      },
-      "AttributionLogic": {
-        "fragment": "enum AttributionLogic {\n  \"last-n-touch\",\n};",
-        "type": "enum",
-        "name": "AttributionLogic",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "last-n-touch",
-            "href": "https://w3c.github.io/attribution/#dom-attributionlogic-last-n-touch"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://w3c.github.io/attribution/#enumdef-attributionlogic"
-      },
-      "AttributionLogicOptions": {
-        "fragment": "dictionary AttributionLogicOptions {\n  sequence<double> credit;\n};",
-        "type": "dictionary",
-        "name": "AttributionLogicOptions",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "credit",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "double"
-                }
-              ]
-            },
-            "default": null,
-            "required": false,
-            "href": "https://w3c.github.io/attribution/#dom-attributionlogicoptions-credit"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://w3c.github.io/attribution/#dictdef-attributionlogicoptions"
       },
       "AttributionConversionResult": {
         "fragment": "dictionary AttributionConversionResult {\n  required Uint8Array report;\n};",
@@ -827,11 +767,7 @@
       ],
       "AttributionImpressionOptions": [],
       "AttributionImpressionResult": [],
-      "AttributionConversionOptions": [
-        "AttributionLogic",
-        "AttributionLogicOptions"
-      ],
-      "AttributionLogicOptions": [],
+      "AttributionConversionOptions": [],
       "AttributionConversionResult": [
         "Uint8Array"
       ]
