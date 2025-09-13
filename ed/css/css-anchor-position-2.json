@@ -1,0 +1,61 @@
+{
+  "spec": {
+    "title": "CSS Anchor Positioning Level 2",
+    "url": "https://drafts.csswg.org/css-anchor-position-2/"
+  },
+  "properties": [],
+  "atrules": [
+    {
+      "name": "@container",
+      "descriptors": [
+        {
+          "name": "fallback",
+          "href": "https://drafts.csswg.org/css-anchor-position-2/#descdef-container-fallback",
+          "for": "@container",
+          "value": "none | [ [<dashed-ident> || <try-tactic>] | <position-area> ]",
+          "type": "discrete",
+          "values": [
+            {
+              "name": "none",
+              "prose": "The anchored container does not have any position-try-fallbacks applied.",
+              "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-container-fallback-none",
+              "type": "value",
+              "value": "none"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "selectors": [],
+  "values": [
+    {
+      "name": "<anchored-query>",
+      "href": "https://drafts.csswg.org/css-anchor-position-2/#typedef-anchored-query",
+      "type": "type",
+      "value": "not <anchored-in-parens> | <anchored-in-parens> [ [ and <anchored-in-parens> ]* | [ or <anchored-in-parens> ]* ] | <anchored-feature>"
+    },
+    {
+      "name": "<anchored-in-parens>",
+      "href": "https://drafts.csswg.org/css-anchor-position-2/#typedef-anchored-in-parens",
+      "type": "type",
+      "value": "( <anchored-query> ) | ( <anchored-feature> ) | <general-enclosed>"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "<query-in-parens>",
+      "value": "... | anchored( <anchored-query> )"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "anchored",
+      "prose": "Establishes a query container for container queries, allowing for descendants of an anchor positioned element to be styled based on certain features of the anchoring. (Currently, limited to which of the position-try-fallbacks are applied, if any.) The anchored container-type applies style containment to the query container.",
+      "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-container-type-anchored",
+      "type": "value",
+      "value": "anchored",
+      "for": "container-type"
+    }
+  ]
+}
