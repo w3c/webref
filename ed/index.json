@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-09-13T06:50:04.200Z",
+  "date": "2025-09-13T13:03:32.825Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -31,10 +31,10 @@
     ]
   },
   "stats": {
-    "crawled": 711,
-    "errors": 6
+    "crawled": 713,
+    "errors": 7
   },
-  "crawler": "reffy-19.2.1",
+  "crawler": "reffy-19.2.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -1045,6 +1045,68 @@
       "idlparsed": "idlparsed/font-metrics-api-1.json"
     },
     {
+      "url": "https://drafts.csswg.org/css-anchor-position-2/",
+      "seriesComposition": "delta",
+      "shortname": "css-anchor-position-2",
+      "series": {
+        "shortname": "css-anchor-position",
+        "currentSpecification": "css-anchor-position-1",
+        "title": "CSS Anchor Positioning",
+        "shortTitle": "CSS Anchor Positioning",
+        "releaseUrl": "https://www.w3.org/TR/css-anchor-position/",
+        "nightlyUrl": "https://drafts.csswg.org/css-anchor-position/"
+      },
+      "seriesVersion": "2",
+      "seriesPrevious": "css-anchor-position-1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/groups/wg/css/"
+        }
+      ],
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-anchor-position-2/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-anchor-position-2/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-anchor-position-2/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Anchor Positioning Level 2",
+      "source": "spec",
+      "shortTitle": "CSS Anchor Positioning 2",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-anchor-position"
+        ]
+      },
+      "versions": [
+        "https://drafts.csswg.org/css-anchor-position-2/"
+      ],
+      "crawled": "https://drafts.csswg.org/css-anchor-position-2/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "2 September 2025",
+      "revision": "f1b21acae251883a080feeb66c7306913c80be51",
+      "links": "links/css-anchor-position-2.json",
+      "refs": "refs/css-anchor-position-2.json",
+      "css": "css/css-anchor-position-2.json",
+      "dfns": "dfns/css-anchor-position-2.json",
+      "headings": "headings/css-anchor-position-2.json",
+      "ids": "ids/css-anchor-position-2.json",
+      "cddl": []
+    },
+    {
       "url": "https://drafts.csswg.org/css-backgrounds-4/",
       "seriesComposition": "delta",
       "shortname": "css-backgrounds-4",
@@ -1326,7 +1388,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-extensions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
+        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -1505,7 +1567,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-link-params-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
+        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
       },
       "generator": "bikeshed",
       "date": "17 July 2025",
@@ -1567,7 +1629,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-page-4/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
+        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
       },
       "generator": "bikeshed",
       "date": "12 May 2023",
@@ -2004,7 +2066,8 @@
       "dfns": "dfns/filter-effects-2.json",
       "headings": "headings/filter-effects-2.json",
       "ids": "ids/filter-effects-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-2/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://encoding.spec.whatwg.org/",
@@ -2394,6 +2457,7 @@
           "https://html.spec.whatwg.org/multipage/document-sequences.html",
           "https://html.spec.whatwg.org/multipage/browsing-the-web.html",
           "https://html.spec.whatwg.org/multipage/document-lifecycle.html",
+          "https://html.spec.whatwg.org/multipage/speculative-loading.html",
           "https://html.spec.whatwg.org/multipage/webappapis.html",
           "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html",
           "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html",
@@ -2545,6 +2609,59 @@
       "ids": "ids/anchors.json",
       "cddl": [],
       "idlparsed": "idlparsed/anchors.json"
+    },
+    {
+      "url": "https://immersive-web.github.io/body-tracking/",
+      "seriesComposition": "full",
+      "shortname": "body-tracking",
+      "series": {
+        "shortname": "body-tracking",
+        "currentSpecification": "body-tracking",
+        "title": "WebXR Body Tracking",
+        "shortTitle": "WebXR Body Tracking",
+        "nightlyUrl": "https://immersive-web.github.io/body-tracking/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Immersive Web Community Group",
+          "url": "https://www.w3.org/community/immersive-web/"
+        }
+      ],
+      "nightly": {
+        "url": "https://immersive-web.github.io/body-tracking/",
+        "status": "Draft Community Group Report",
+        "alternateUrls": [],
+        "repository": "https://github.com/immersive-web/body-tracking",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "WebXR Body Tracking Module - Level 1",
+      "source": "spec",
+      "shortTitle": "WebXR Body Tracking 1",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://immersive-web.github.io/body-tracking/"
+      ],
+      "crawled": "https://immersive-web.github.io/body-tracking/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 05 Sep 2025 16:12:13 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "5 September 2025",
+      "revision": "9d44b6f3ba3b3d745a9ed2f566c7b0c6d9ca792d",
+      "algorithms": "algorithms/body-tracking.json",
+      "links": "links/body-tracking.json",
+      "refs": "refs/body-tracking.json",
+      "idl": "idl/body-tracking.idl",
+      "dfns": "dfns/body-tracking.json",
+      "headings": "headings/body-tracking.json",
+      "ids": "ids/body-tracking.json",
+      "cddl": [],
+      "idlparsed": "idlparsed/body-tracking.json"
     },
     {
       "url": "https://immersive-web.github.io/model-element/",
@@ -7120,7 +7237,7 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 25 Aug 2025 15:20:17 GMT"
+        "lastModified": "Mon, 25 Aug 2025 15:20:16 GMT"
       },
       "date": "25 August 2025",
       "links": "links/tc39-temporal.json",
@@ -7511,55 +7628,6 @@
       "cddl": []
     },
     {
-      "url": "https://w3c.github.io/data-shapes/shacl12-inf-rules/",
-      "seriesComposition": "full",
-      "shortname": "shacl12-inf-rules",
-      "series": {
-        "shortname": "shacl-inf-rules",
-        "currentSpecification": "shacl12-inf-rules",
-        "title": "SHACL 1.2 Inference Rules",
-        "shortTitle": "SHACL 1.2 Inference Rules",
-        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-inf-rules/"
-      },
-      "seriesVersion": "1.2",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Data Shapes Working Group",
-          "url": "https://www.w3.org/groups/wg/data-shapes/"
-        }
-      ],
-      "nightly": {
-        "url": "https://w3c.github.io/data-shapes/shacl12-inf-rules/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/data-shapes",
-        "sourcePath": "shacl12-inf-rules/index.html",
-        "filename": "index.html"
-      },
-      "title": "SHACL 1.2 Inference Rules",
-      "source": "spec",
-      "shortTitle": "SHACL 1.2 Inference Rules",
-      "categories": [],
-      "standing": "good",
-      "versions": [
-        "https://w3c.github.io/data-shapes/shacl12-inf-rules/"
-      ],
-      "crawled": "https://w3c.github.io/data-shapes/shacl12-inf-rules/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 09 Sep 2025 13:44:43 GMT"
-      },
-      "generator": "respec",
-      "date": "09 September 2025",
-      "links": "links/shacl12-inf-rules.json",
-      "refs": "refs/shacl12-inf-rules.json",
-      "dfns": "dfns/shacl12-inf-rules.json",
-      "headings": "headings/shacl12-inf-rules.json",
-      "ids": "ids/shacl12-inf-rules.json",
-      "cddl": [],
-      "error": "Error: Loading https://w3c.github.io/data-shapes/shacl12-inf-rules/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 138)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
-    },
-    {
       "url": "https://w3c.github.io/data-shapes/shacl12-node-expr/",
       "seriesComposition": "full",
       "shortname": "shacl12-node-expr",
@@ -7606,6 +7674,57 @@
       "dfns": "dfns/shacl12-node-expr.json",
       "headings": "headings/shacl12-node-expr.json",
       "ids": "ids/shacl12-node-expr.json",
+      "cddl": []
+    },
+    {
+      "url": "https://w3c.github.io/data-shapes/shacl12-rules/",
+      "seriesComposition": "full",
+      "shortname": "shacl12-rules",
+      "series": {
+        "shortname": "shacl-rules",
+        "currentSpecification": "shacl12-rules",
+        "title": "SHACL 1.2 Rules",
+        "shortTitle": "SHACL 1.2 Rules",
+        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-rules/"
+      },
+      "seriesVersion": "1.2",
+      "formerNames": [
+        "shacl12-inf-rules"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Data Shapes Working Group",
+          "url": "https://www.w3.org/groups/wg/data-shapes/"
+        }
+      ],
+      "nightly": {
+        "url": "https://w3c.github.io/data-shapes/shacl12-rules/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/data-shapes",
+        "sourcePath": "shacl12-rules/index.html",
+        "filename": "index.html"
+      },
+      "title": "SHACL 1.2 Rules",
+      "source": "spec",
+      "shortTitle": "SHACL 1.2 Rules",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://w3c.github.io/data-shapes/shacl12-rules/"
+      ],
+      "crawled": "https://w3c.github.io/data-shapes/shacl12-rules/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 10 Sep 2025 10:47:06 GMT"
+      },
+      "generator": "respec",
+      "date": "10 September 2025",
+      "links": "links/shacl12-rules.json",
+      "refs": "refs/shacl12-rules.json",
+      "dfns": "dfns/shacl12-rules.json",
+      "headings": "headings/shacl12-rules.json",
+      "ids": "ids/shacl12-rules.json",
       "cddl": []
     },
     {
@@ -8594,9 +8713,13 @@
         "shortname": "wot-binding-registry",
         "currentSpecification": "wot-binding-registry",
         "title": "Web of Things (WoT) Binding Registry",
-        "shortTitle": "WoT",
+        "shortTitle": "WoT Bindings Registry",
         "nightlyUrl": "https://w3c.github.io/wot-binding-registry/"
       },
+      "shortTitle": "WoT Bindings Registry",
+      "formerNames": [
+        "wot-bindings-registry"
+      ],
       "organization": "W3C",
       "groups": [
         {
@@ -8614,7 +8737,6 @@
       },
       "title": "Web of Things (WoT) Binding Registry",
       "source": "spec",
-      "shortTitle": "WoT",
       "categories": [],
       "standing": "good",
       "versions": [
@@ -8632,42 +8754,6 @@
       "headings": "headings/wot-binding-registry.json",
       "ids": "ids/wot-binding-registry.json",
       "cddl": []
-    },
-    {
-      "url": "https://w3c.github.io/wot-bindings-registry/",
-      "seriesComposition": "full",
-      "shortname": "wot-bindings-registry",
-      "series": {
-        "shortname": "wot-bindings-registry",
-        "currentSpecification": "wot-bindings-registry",
-        "title": "Web of Things (WoT) Bindings Registry",
-        "shortTitle": "WoT Bindings Registry",
-        "nightlyUrl": "https://w3c.github.io/wot-bindings-registry/"
-      },
-      "shortTitle": "WoT Bindings Registry",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web of Things Working Group",
-          "url": "https://www.w3.org/WoT/wg/"
-        }
-      ],
-      "nightly": {
-        "url": "https://w3c.github.io/wot-bindings-registry/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/wot-bindings-registry",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "Web of Things (WoT) Bindings Registry",
-      "source": "spec",
-      "categories": [],
-      "standing": "good",
-      "versions": [
-        "https://w3c.github.io/wot-bindings-registry/"
-      ],
-      "error": "Error: Loading https://w3c.github.io/wot-bindings-registry/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 160)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://webassembly.github.io/branch-hinting/core/bikeshed/",
@@ -8817,7 +8903,7 @@
       ],
       "crawled": "https://webassembly.github.io/esm-integration/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 11 Jul 2025 14:44:47 GMT"
+        "lastModified": "Fri, 11 Jul 2025 14:44:46 GMT"
       },
       "generator": "bikeshed",
       "date": "11 July 2025",
@@ -18136,7 +18222,7 @@
       "shortname": "css-2022",
       "series": {
         "shortname": "css",
-        "currentSpecification": "css-2024",
+        "currentSpecification": "css-2025",
         "title": "CSS Snapshot",
         "shortTitle": "CSS Snapshot",
         "releaseUrl": "https://www.w3.org/TR/css/",
@@ -18197,7 +18283,7 @@
       "shortname": "css-2023",
       "series": {
         "shortname": "css",
-        "currentSpecification": "css-2024",
+        "currentSpecification": "css-2025",
         "title": "CSS Snapshot",
         "shortTitle": "CSS Snapshot",
         "releaseUrl": "https://www.w3.org/TR/css/",
@@ -18259,7 +18345,7 @@
       "shortname": "css-2024",
       "series": {
         "shortname": "css",
-        "currentSpecification": "css-2024",
+        "currentSpecification": "css-2025",
         "title": "CSS Snapshot",
         "shortTitle": "CSS Snapshot",
         "releaseUrl": "https://www.w3.org/TR/css/",
@@ -18267,6 +18353,7 @@
       },
       "seriesVersion": "2024",
       "seriesPrevious": "css-2023",
+      "seriesNext": "css-2025",
       "organization": "W3C",
       "groups": [
         {
@@ -18302,7 +18389,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2024/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
+        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
       },
       "generator": "bikeshed",
       "date": "28 February 2025",
@@ -18312,6 +18399,67 @@
       "dfns": "dfns/css-2024.json",
       "headings": "headings/css-2024.json",
       "ids": "ids/css-2024.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/css-2025/",
+      "seriesComposition": "full",
+      "shortname": "css-2025",
+      "series": {
+        "shortname": "css",
+        "currentSpecification": "css-2025",
+        "title": "CSS Snapshot",
+        "shortTitle": "CSS Snapshot",
+        "releaseUrl": "https://www.w3.org/TR/css/",
+        "nightlyUrl": "https://drafts.csswg.org/css/"
+      },
+      "seriesVersion": "2025",
+      "seriesPrevious": "css-2024",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/groups/wg/css/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-2025/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-2025/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-2025/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-2025/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Snapshot 2025",
+      "source": "w3c",
+      "shortTitle": "CSS Snapshot 2025",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/css-2025/",
+        "https://drafts.csswg.org/css-2025/"
+      ],
+      "crawled": "https://drafts.csswg.org/css-2025/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "9 September 2025",
+      "revision": "f1b21acae251883a080feeb66c7306913c80be51",
+      "links": "links/css-2025.json",
+      "refs": "refs/css-2025.json",
+      "dfns": "dfns/css-2025.json",
+      "headings": "headings/css-2025.json",
+      "ids": "ids/css-2025.json",
       "cddl": []
     },
     {
@@ -18396,6 +18544,7 @@
         "nightlyUrl": "https://drafts.csswg.org/css-anchor-position/"
       },
       "seriesVersion": "1",
+      "seriesNext": "css-anchor-position-2",
       "organization": "W3C",
       "groups": [
         {
@@ -18518,6 +18667,7 @@
       "headings": "headings/css-animation-worklet-1.json",
       "ids": "ids/css-animation-worklet-1.json",
       "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 341)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/css-animation-worklet-1.json"
     },
     {
@@ -18994,7 +19144,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-break-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
+        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
       },
       "generator": "bikeshed",
       "date": "28 August 2023",
@@ -19798,7 +19948,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-conditional-4/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -19897,7 +20047,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-conditional-5/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
+        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
       },
       "generator": "bikeshed",
       "date": "4 September 2025",
@@ -21144,7 +21294,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-grid-2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
+        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
       },
       "generator": "bikeshed",
       "date": "29 August 2025",
@@ -21624,7 +21774,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-line-grid-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
+        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
       },
       "generator": "bikeshed",
       "date": "26 July 2024",
@@ -21897,7 +22047,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-mixins-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
+        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
       },
       "generator": "bikeshed",
       "date": "17 July 2025",
@@ -22378,7 +22528,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-overflow-4/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
+        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
       },
       "generator": "bikeshed",
       "date": "12 September 2025",
@@ -22932,6 +23082,7 @@
       "headings": "headings/css-properties-values-api-1.json",
       "ids": "ids/css-properties-values-api-1.json",
       "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-properties-values-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 405)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/css-properties-values-api-1.json"
     },
     {
@@ -23192,7 +23343,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-round-display-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
+        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
       },
       "generator": "bikeshed",
       "date": "10 March 2025",
@@ -23260,7 +23411,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-ruby-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
+        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
       },
       "generator": "bikeshed",
       "date": "15 July 2024",
@@ -23748,7 +23899,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-shapes-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
+        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
       },
       "generator": "bikeshed",
       "date": "11 June 2025",
@@ -25198,7 +25349,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-variables-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Sep 2025 22:09:14 GMT"
+        "lastModified": "Fri, 12 Sep 2025 22:09:13 GMT"
       },
       "generator": "bikeshed",
       "date": "5 May 2025",
@@ -31033,7 +31184,7 @@
       "headings": "headings/motion-1.json",
       "ids": "ids/motion-1.json",
       "cddl": [],
-      "error": "Error: Loading https://drafts.fxtf.org/motion-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 529)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://drafts.fxtf.org/motion-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 531)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
@@ -31192,7 +31343,7 @@
       ],
       "crawled": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jul 2024 08:09:25 GMT"
+        "lastModified": "Tue, 23 Jul 2024 08:09:24 GMT"
       },
       "generator": "respec",
       "date": "23 July 2024",
@@ -33306,7 +33457,7 @@
       },
       "title": "RDF 1.2 Concepts and Abstract Data Model",
       "source": "w3c",
-      "shortTitle": "RDF 1.2 Concepts and Abstract Syntax",
+      "shortTitle": "RDF 1.2 Concepts and Abstract Data Model",
       "categories": [],
       "standing": "good",
       "versions": [
@@ -36526,7 +36677,7 @@
       ],
       "crawled": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Sep 2025 13:40:15 GMT"
+        "lastModified": "Thu, 11 Sep 2025 13:40:14 GMT"
       },
       "generator": "respec",
       "date": "11 September 2025",
@@ -37567,7 +37718,7 @@
       ],
       "crawled": "https://w3c.github.io/sdw/time-aggregates/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 01 Sep 2025 09:14:52 GMT"
+        "lastModified": "Mon, 01 Sep 2025 09:14:51 GMT"
       },
       "generator": "respec",
       "date": "01 September 2025",
@@ -37684,7 +37835,7 @@
       "headings": "headings/vocab-ssn-ext.json",
       "ids": "ids/vocab-ssn-ext.json",
       "cddl": [],
-      "error": "Error: Loading https://w3c.github.io/sdw-sosa-ssn/ssn-extensions/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 637)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://w3c.github.io/sdw-sosa-ssn/ssn-extensions/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 639)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/vocab-ssn/",
@@ -38396,7 +38547,7 @@
       ],
       "crawled": "https://w3c.github.io/web-locks/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 02 May 2025 18:23:47 GMT"
+        "lastModified": "Fri, 02 May 2025 18:23:46 GMT"
       },
       "generator": "bikeshed",
       "date": "2 May 2025",
@@ -41436,7 +41587,7 @@
       ],
       "crawled": "https://w3c.github.io/wot-architecture/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 05 Jun 2024 12:29:40 GMT"
+        "lastModified": "Wed, 05 Jun 2024 12:29:39 GMT"
       },
       "generator": "respec",
       "date": "05 June 2024",

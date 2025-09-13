@@ -1,0 +1,15 @@
+{
+  "name": "XRBody",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Body Tracking Module - Level 1",
+      "url": "https://immersive-web.github.io/body-tracking/"
+    },
+    "fragment": "[Exposed=Window]\ninterface XRBody {\n    iterable<XRBodyJoint, XRBodySpace>;\n\n    readonly attribute unsigned long size;\n    XRBodySpace get(XRBodyJoint key);\n};",
+    "href": "https://immersive-web.github.io/body-tracking/#xrbody"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

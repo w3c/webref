@@ -17,6 +17,11 @@ partial interface XRFrame {
   [SameObject] readonly attribute XRAnchorSet trackedAnchors;
 };
 
+// Source: WebXR Body Tracking Module - Level 1 (https://immersive-web.github.io/body-tracking/)
+partial interface XRFrame {
+   [SameObject] readonly attribute XRBody? body;
+};
+
 // Source: WebXR Plane Detection Module (https://immersive-web.github.io/real-world-geometry/plane-detection.html)
 partial interface XRFrame {
   readonly attribute XRPlaneSet detectedPlanes;

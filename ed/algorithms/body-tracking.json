@@ -1,0 +1,22 @@
+{
+  "spec": {
+    "title": "WebXR Body Tracking Module - Level 1",
+    "url": "https://immersive-web.github.io/body-tracking/"
+  },
+  "algorithms": [
+    {
+      "name": "index-joint-space",
+      "href": "https://immersive-web.github.io/body-tracking/#dom-xrbody-get-jointname",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRBody\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrbody-get-jointname\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>get(<var>jointName</var>)</code></dfn> method when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/body-tracking/#xrbody\" id=\"ref-for-xrbody⑤\">XRBody</a></code> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a> MUST run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>joints</var> be the value of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/body-tracking/#dom-xrbody-joints-slot\" id=\"ref-for-dom-xrbody-joints-slot②\">[[joints]]</a></code> internal slot.</p>"
+        },
+        {
+          "html": "<p>Return <var>joints</var>[<var>jointName</var>]. (This implies returning <code>undefined</code> for unknown <var>jointName</var>.)</p>"
+        }
+      ]
+    }
+  ]
+}

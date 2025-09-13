@@ -112,6 +112,13 @@
           "syntax": "none | top | right | bottom | left | block-start | inline-start | block-end | inline-end | x | y | block | inline"
         },
         {
+          "name": "fallback",
+          "href": "https://drafts.csswg.org/css-anchor-position-2/#descdef-container-fallback",
+          "for": "@container",
+          "type": "discrete",
+          "syntax": "none | [ [<dashed-ident> || <try-tactic>] | <position-area> ]"
+        },
+        {
           "name": "height",
           "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-height",
           "for": "@container",
@@ -16424,6 +16431,18 @@
       "name": "anchor-size",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-anchor-size",
       "syntax": "width | height | block | inline | self-block | self-inline",
+      "extended": []
+    },
+    {
+      "name": "anchored-in-parens",
+      "href": "https://drafts.csswg.org/css-anchor-position-2/#typedef-anchored-in-parens",
+      "syntax": "( <anchored-query> ) | ( <anchored-feature> ) | <general-enclosed>",
+      "extended": []
+    },
+    {
+      "name": "anchored-query",
+      "href": "https://drafts.csswg.org/css-anchor-position-2/#typedef-anchored-query",
+      "syntax": "not <anchored-in-parens> | <anchored-in-parens> [ [ and <anchored-in-parens> ]* | [ or <anchored-in-parens> ]* ] | <anchored-feature>",
       "extended": []
     },
     {

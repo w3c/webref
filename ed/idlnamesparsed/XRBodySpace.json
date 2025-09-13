@@ -1,0 +1,51 @@
+{
+  "name": "XRBodySpace",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Body Tracking Module - Level 1",
+      "url": "https://immersive-web.github.io/body-tracking/"
+    },
+    "fragment": "[Exposed=Window]\ninterface XRBodySpace: XRSpace {\n  readonly attribute XRBodyJoint jointName;\n};",
+    "href": "https://immersive-web.github.io/body-tracking/#xrbodyspace"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRSpace",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "WebXR Device API",
+        "url": "https://www.w3.org/TR/webxr/"
+      },
+      "fragment": "[SecureContext, Exposed=Window] interface XRSpace : EventTarget {\n\n};",
+      "href": "https://immersive-web.github.io/webxr/#xrspace"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [
+        {
+          "spec": {
+            "title": "Observable",
+            "url": "https://wicg.github.io/observable/"
+          },
+          "fragment": "partial interface EventTarget {\n  Observable when(DOMString type, optional ObservableEventListenerOptions options = {});\n};"
+        }
+      ],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}
