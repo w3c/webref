@@ -158,8 +158,8 @@
       },
       "https://drafts.csswg.org/css-box-4/": {
         "anchors": [
-          "margin-edge",
           "border-box",
+          "margin-edge",
           "propdef-margin-top",
           "propdef-margin-left",
           "propdef-margin-right",
@@ -184,7 +184,8 @@
           "cascade-origin-animation",
           "valdef-all-revert",
           "cascade-origin-user",
-          "valdef-all-revert-layer"
+          "valdef-all-revert-layer",
+          "longhand"
         ]
       },
       "https://drafts.csswg.org/css-cascade-6/": {
@@ -217,9 +218,9 @@
       "https://drafts.csswg.org/css-display-4/": {
         "anchors": [
           "principal-box",
-          "containing-block",
           "containing-block-chain",
           "initial-containing-block",
+          "containing-block",
           "propdef-display",
           "propdef-visibility",
           "valdef-visibility-force-hidden"
@@ -259,21 +260,22 @@
         "anchors": [
           "absolute-position",
           "propdef-position",
+          "absolute-positioning-containing-block",
           "valdef-top-auto",
-          "inset-modified-containing-block",
-          "original-containing-block",
           "propdef-top",
           "propdef-left",
           "propdef-right",
           "propdef-bottom",
+          "inset-modified-containing-block",
           "propdef-inset-block-start",
-          "propdef-inset-block-end"
+          "propdef-inset-block-end",
+          "original-containing-block"
         ]
       },
       "https://drafts.csswg.org/css-position-4/": {
         "anchors": [
+          "document-top-layer",
           "in-a-higher-top-layer",
-          "in-the-same-top-layer",
           "scrollable-containing-block",
           "local-containing-block"
         ]
