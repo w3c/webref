@@ -140,74 +140,6 @@
       ]
     },
     {
-      "name": "justify-self",
-      "newValues": "anchor-center",
-      "values": [
-        {
-          "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
-          "type": "value",
-          "value": "anchor-center"
-        }
-      ],
-      "styleDeclaration": [
-        "justify-self",
-        "justifySelf"
-      ]
-    },
-    {
-      "name": "align-self",
-      "newValues": "anchor-center",
-      "values": [
-        {
-          "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
-          "type": "value",
-          "value": "anchor-center"
-        }
-      ],
-      "styleDeclaration": [
-        "align-self",
-        "alignSelf"
-      ]
-    },
-    {
-      "name": "justify-items",
-      "newValues": "anchor-center",
-      "values": [
-        {
-          "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
-          "type": "value",
-          "value": "anchor-center"
-        }
-      ],
-      "styleDeclaration": [
-        "justify-items",
-        "justifyItems"
-      ]
-    },
-    {
-      "name": "align-items",
-      "newValues": "anchor-center",
-      "values": [
-        {
-          "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
-          "type": "value",
-          "value": "anchor-center"
-        }
-      ],
-      "styleDeclaration": [
-        "align-items",
-        "alignItems"
-      ]
-    },
-    {
       "name": "top",
       "newValues": "<anchor()> | <anchor-size()>",
       "styleDeclaration": [
@@ -279,6 +211,102 @@
       "styleDeclaration": [
         "position-visibility",
         "positionVisibility"
+      ]
+    },
+    {
+      "name": "justify-self",
+      "newValues": "anchor-center | dialog",
+      "values": [
+        {
+          "name": "anchor-center",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
+          "type": "value",
+          "value": "anchor-center"
+        },
+        {
+          "name": "dialog",
+          "prose": "The new dialog value allows this behavior to be specified: if the box is absolutely positioned and its position-area value is not none, it is aligned as per normal (see § 4.1 Area-specific Default Alignment); otherwise, it is aligned as per center.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-dialog",
+          "type": "value",
+          "value": "dialog"
+        }
+      ],
+      "styleDeclaration": [
+        "justify-self",
+        "justifySelf"
+      ]
+    },
+    {
+      "name": "align-self",
+      "newValues": "anchor-center | dialog",
+      "values": [
+        {
+          "name": "anchor-center",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
+          "type": "value",
+          "value": "anchor-center"
+        },
+        {
+          "name": "dialog",
+          "prose": "The new dialog value allows this behavior to be specified: if the box is absolutely positioned and its position-area value is not none, it is aligned as per normal (see § 4.1 Area-specific Default Alignment); otherwise, it is aligned as per center.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-dialog",
+          "type": "value",
+          "value": "dialog"
+        }
+      ],
+      "styleDeclaration": [
+        "align-self",
+        "alignSelf"
+      ]
+    },
+    {
+      "name": "justify-items",
+      "newValues": "anchor-center | dialog",
+      "values": [
+        {
+          "name": "anchor-center",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
+          "type": "value",
+          "value": "anchor-center"
+        },
+        {
+          "name": "dialog",
+          "prose": "The new dialog value allows this behavior to be specified: if the box is absolutely positioned and its position-area value is not none, it is aligned as per normal (see § 4.1 Area-specific Default Alignment); otherwise, it is aligned as per center.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-dialog",
+          "type": "value",
+          "value": "dialog"
+        }
+      ],
+      "styleDeclaration": [
+        "justify-items",
+        "justifyItems"
+      ]
+    },
+    {
+      "name": "align-items",
+      "newValues": "anchor-center | dialog",
+      "values": [
+        {
+          "name": "anchor-center",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
+          "type": "value",
+          "value": "anchor-center"
+        },
+        {
+          "name": "dialog",
+          "prose": "The new dialog value allows this behavior to be specified: if the box is absolutely positioned and its position-area value is not none, it is aligned as per normal (see § 4.1 Area-specific Default Alignment); otherwise, it is aligned as per center.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-dialog",
+          "type": "value",
+          "value": "dialog"
+        }
+      ],
+      "styleDeclaration": [
+        "align-items",
+        "alignItems"
       ]
     },
     {
@@ -741,6 +769,20 @@
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-span-bottom",
           "type": "value",
           "value": "span-bottom"
+        },
+        {
+          "name": "span-left",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-span-left",
+          "type": "value",
+          "value": "span-left"
+        },
+        {
+          "name": "span-right",
+          "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-span-right",
+          "type": "value",
+          "value": "span-right"
         },
         {
           "name": "span-y-start",
