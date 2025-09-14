@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-09-13T01:36:24.716Z",
+  "date": "2025-09-14T01:46:46.217Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -26,6 +26,7 @@
       "dom",
       "css-typed-om-2",
       "font-metrics-api-1",
+      "css-anchor-position-2",
       "css-backgrounds-4",
       "css-color-6",
       "css-conditional-values-1",
@@ -50,6 +51,7 @@
       "fullscreen",
       "html",
       "anchors",
+      "body-tracking",
       "model-element",
       "raw-camera-access",
       "webxr-plane-detection",
@@ -145,8 +147,8 @@
       "login-status",
       "at-driver",
       "shacl12-compact-syntax",
-      "shacl12-inf-rules",
       "shacl12-node-expr",
+      "shacl12-rules",
       "execCommand",
       "element-timing",
       "gamepad-extensions",
@@ -167,7 +169,6 @@
       "web-share-target",
       "webrtc-ice",
       "wot-binding-registry",
-      "wot-bindings-registry",
       "wasm-core-2-fork-branch-hinting",
       "wasm-js-api-2-fork-content-security-policy",
       "wasm-js-api-2-fork-esm-integration",
@@ -344,6 +345,7 @@
       "css-2022",
       "css-2023",
       "css-2024",
+      "css-2025",
       "css-align-3",
       "css-anchor-position-1",
       "css-animation-worklet-1",
@@ -734,10 +736,10 @@
     ]
   },
   "stats": {
-    "crawled": 394,
+    "crawled": 395,
     "errors": 0
   },
-  "crawler": "reffy-19.2.1",
+  "crawler": "reffy-19.2.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -783,7 +785,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "13 September 2025",
+      "date": "14 September 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -2417,7 +2419,7 @@
       "shortname": "css-2022",
       "series": {
         "shortname": "css",
-        "currentSpecification": "css-2024",
+        "currentSpecification": "css-2025",
         "title": "CSS Snapshot",
         "shortTitle": "CSS Snapshot",
         "releaseUrl": "https://www.w3.org/TR/css/",
@@ -2478,7 +2480,7 @@
       "shortname": "css-2023",
       "series": {
         "shortname": "css",
-        "currentSpecification": "css-2024",
+        "currentSpecification": "css-2025",
         "title": "CSS Snapshot",
         "shortTitle": "CSS Snapshot",
         "releaseUrl": "https://www.w3.org/TR/css/",
@@ -2540,7 +2542,7 @@
       "shortname": "css-2024",
       "series": {
         "shortname": "css",
-        "currentSpecification": "css-2024",
+        "currentSpecification": "css-2025",
         "title": "CSS Snapshot",
         "shortTitle": "CSS Snapshot",
         "releaseUrl": "https://www.w3.org/TR/css/",
@@ -2548,6 +2550,7 @@
       },
       "seriesVersion": "2024",
       "seriesPrevious": "css-2023",
+      "seriesNext": "css-2025",
       "organization": "W3C",
       "groups": [
         {
@@ -2593,6 +2596,67 @@
       "dfns": "dfns/css-2024.json",
       "headings": "headings/css-2024.json",
       "ids": "ids/css-2024.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/css-2025/",
+      "seriesComposition": "full",
+      "shortname": "css-2025",
+      "series": {
+        "shortname": "css",
+        "currentSpecification": "css-2025",
+        "title": "CSS Snapshot",
+        "shortTitle": "CSS Snapshot",
+        "releaseUrl": "https://www.w3.org/TR/css/",
+        "nightlyUrl": "https://drafts.csswg.org/css/"
+      },
+      "seriesVersion": "2025",
+      "seriesPrevious": "css-2024",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/groups/wg/css/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-2025/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-2025/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-2025/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-2025/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Snapshot 2025",
+      "source": "w3c",
+      "shortTitle": "CSS Snapshot 2025",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/css-2025/",
+        "https://drafts.csswg.org/css-2025/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-2025/",
+      "crawlCacheInfo": {
+        "lastModified": "Sat, 06 Sep 2025 15:12:56 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "9 September 2025",
+      "revision": "f3b5a761525457b4519dda8452a25e2582d8a820",
+      "links": "links/css-2025.json",
+      "refs": "refs/css-2025.json",
+      "dfns": "dfns/css-2025.json",
+      "headings": "headings/css-2025.json",
+      "ids": "ids/css-2025.json",
       "cddl": []
     },
     {
@@ -2677,6 +2741,7 @@
         "nightlyUrl": "https://drafts.csswg.org/css-anchor-position/"
       },
       "seriesVersion": "1",
+      "seriesNext": "css-anchor-position-2",
       "organization": "W3C",
       "groups": [
         {
@@ -4070,7 +4135,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-conditional-4/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -10515,11 +10580,11 @@
       ],
       "crawled": "https://www.w3.org/TR/did-1.1/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 07 Sep 2025 16:23:44 GMT"
+        "lastModified": "Sat, 13 Sep 2025 16:04:12 GMT"
       },
       "generator": "respec",
-      "date": "07 September 2025",
-      "revision": "6c64d17c6c1ab3e05f1120df239cd0b55fe04e27",
+      "date": "13 September 2025",
+      "revision": "b2e27953cf17406aa0a8b4b9662c5ffc28879d2f",
       "algorithms": "algorithms/did-1.1.json",
       "links": "links/did-1.1.json",
       "refs": "refs/did-1.1.json",
@@ -17513,7 +17578,7 @@
       },
       "title": "RDF 1.2 Concepts and Abstract Data Model",
       "source": "w3c",
-      "shortTitle": "RDF 1.2 Concepts and Abstract Syntax",
+      "shortTitle": "RDF 1.2 Concepts and Abstract Data Model",
       "categories": [],
       "standing": "good",
       "versions": [
@@ -19431,11 +19496,11 @@
       ],
       "crawled": "https://www.w3.org/TR/sparql12-query/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 07 Sep 2025 18:59:42 GMT"
+        "lastModified": "Sat, 13 Sep 2025 15:30:57 GMT"
       },
       "generator": "respec",
-      "date": "07 September 2025",
-      "revision": "afed22390e4168cfa7696e4409ba00932d2fbfa0",
+      "date": "13 September 2025",
+      "revision": "0956a85dcfbdf2396c6831fb998bd04604a8ab5f",
       "algorithms": "algorithms/sparql12-query.json",
       "links": "links/sparql12-query.json",
       "refs": "refs/sparql12-query.json",
