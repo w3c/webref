@@ -1,29 +1,33 @@
-From faaa4cf0e963176563339e6befb3fb84077d5f7f Mon Sep 17 00:00:00 2001
+From 72944b9e997845440b87fd416cfa6e41318d61e5 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Thu, 6 Mar 2025 16:31:29 +0100
+Date: Mon, 15 Sep 2025 10:39:34 +0200
 Subject: [PATCH] Fix IDL of SVG spec
 
-HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
+- `HTMLHyperlinkElementUtils`: https://github.com/w3c/svgwg/issues/312
+- Constructor: https://github.com/w3c/svgwg/pull/1010
 
 Also drop `SVGPathElement`, now that SVG Paths is also being crawled, pending
 clarification of status between SVG 2 and SVG Paths.
 ---
- ed/idl/SVG.idl | 20 ++++++++++++++------
- 1 file changed, 14 insertions(+), 6 deletions(-)
+ ed/idl/SVG.idl | 22 ++++++++++++++++------
+ 1 file changed, 16 insertions(+), 6 deletions(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index 9ce619d1e..5dff2947b 100644
+index d046678667..d1346c82c1 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
-@@ -13,7 +13,6 @@ interface SVGElement : Element {
+@@ -314,8 +314,9 @@ interface mixin SVGElementInstance {
+   [SameObject] readonly attribute SVGUseElement? correspondingUseElement;
  };
  
- SVGElement includes GlobalEventHandlers;
--SVGElement includes DocumentAndElementEventHandlers;
- SVGElement includes SVGElementInstance;
- SVGElement includes HTMLOrSVGElement;
+-[Constructor(Animation source, Animatable newTarget), Exposed=Window]
++[Exposed=Window]
+ interface ShadowAnimation : Animation {
++  constructor(Animation source, Animatable newTarget);
+   [SameObject] readonly attribute Animation sourceAnimation;
+ };
  
-@@ -419,10 +418,6 @@ interface SVGAnimatedPreserveAspectRatio {
+@@ -418,10 +419,6 @@ interface SVGAnimatedPreserveAspectRatio {
    [SameObject] readonly attribute SVGPreserveAspectRatio animVal;
  };
  
@@ -34,7 +38,7 @@ index 9ce619d1e..5dff2947b 100644
  [Exposed=Window]
  interface SVGRectElement : SVGGeometryElement {
    [SameObject] readonly attribute SVGAnimatedLength x;
-@@ -673,7 +668,20 @@ interface SVGAElement : SVGGraphicsElement {
+@@ -671,7 +668,20 @@ interface SVGAElement : SVGGraphicsElement {
  };
  
  SVGAElement includes SVGURIReference;
@@ -57,5 +61,5 @@ index 9ce619d1e..5dff2947b 100644
  [Exposed=Window]
  interface SVGViewElement : SVGElement {};
 -- 
-2.37.1.windows.1
+2.51.0
 
