@@ -979,18 +979,18 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/constant(type, value)",
-      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-constant-type-value",
+      "name": "MLGraphBuilder/constant(dataType, value)",
+      "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-constant-datatype-value",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⑤\">this</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#mlgraphbuilder-can-build\" id=\"ref-for-mlgraphbuilder-can-build③\">can not build</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②④\">throw</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②②\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<p>Set <var>value</var> to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#cast\" id=\"ref-for-cast①\">casting</a> <var>value</var> to <var>type</var>.</p>"
+          "html": "<p>Set <var>value</var> to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#cast\" id=\"ref-for-cast①\">casting</a> <var>value</var> to <var>dataType</var>.</p>"
         },
         {
-          "html": "<p>Let <var>descriptor</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor\">creating an MLOperandDescriptor</a> given <var>type</var> and « ».</p>"
+          "html": "<p>Let <var>descriptor</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#create-an-mloperanddescriptor\" id=\"ref-for-create-an-mloperanddescriptor\">creating an MLOperandDescriptor</a> given <var>dataType</var> and « ».</p>"
         },
         {
           "html": "<em>Make graph connections:</em>",
@@ -1329,7 +1329,7 @@
       ]
     },
     {
-      "name": "MLGraphBuilder/cast(input, type, options)",
+      "name": "MLGraphBuilder/cast(input, dataType, options)",
       "href": "https://www.w3.org/TR/webnn/#dom-mlgraphbuilder-cast",
       "rationale": ".algorithm",
       "steps": [
@@ -1344,7 +1344,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①⑤\">operator</a> for the \"cast\" operation, given <var>type</var> and <var>options</var>.</p>"
+              "html": "<p>Let <var>operator</var> be an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#operators\" id=\"ref-for-operators①⑤\">operator</a> for the \"cast\" operation, given <var>dataType</var> and <var>options</var>.</p>"
             },
             {
               "html": "<p>Let <var>output</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webnn/#copy-an-mloperand\" id=\"ref-for-copy-an-mloperand\">copying an MLOperand</a> given <var>input</var>.</p>"

@@ -14,6 +14,7 @@
       "https://infra.spec.whatwg.org/": {},
       "https://url.spec.whatwg.org/": {},
       "https://w3c.github.io/element-timing/": {},
+      "https://w3c.github.io/long-animation-frames/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/SVG2/": {},
@@ -24,7 +25,9 @@
       "https://www.w3.org/TR/css-fonts-4/": {},
       "https://www.w3.org/TR/css-text-4/": {},
       "https://www.w3.org/TR/cssom-view-1/": {},
+      "https://www.w3.org/TR/event-timing/": {},
       "https://www.w3.org/TR/hr-time-3/": {},
+      "https://www.w3.org/TR/largest-contentful-paint/": {},
       "https://www.w3.org/TR/performance-timeline/": {},
       "https://www.w3.org/TR/selectors-4/": {},
       "https://www.w3.org/groups/wg/webperf": {},
@@ -35,7 +38,7 @@
           "sec-Disclosure"
         ]
       },
-      "https://www.w3.org/policies/process/20231103/": {
+      "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
           "recs-and-notes"
         ]
@@ -154,8 +157,14 @@
           "concept-url-scheme"
         ]
       },
+      "https://w3c.github.io/element-timing/": {
+        "anchors": [
+          "performanceelementtiming"
+        ]
+      },
       "https://w3c.github.io/long-animation-frames/": {
         "anchors": [
+          "performancelonganimationframetiming",
           "current-frame-timing-info",
           "queue-a-long-animation-frame-entry"
         ]
@@ -163,6 +172,7 @@
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "idl-DOMString",
+          "dfn-platform-object",
           "Exposed",
           "this",
           "Default",
@@ -251,10 +261,21 @@
           "dom-element-getboundingclientrect"
         ]
       },
+      "https://www.w3.org/TR/event-timing/": {
+        "anchors": [
+          "performanceeventtiming"
+        ]
+      },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
           "dom-domhighrestimestamp",
           "dfn-current-high-resolution-time"
+        ]
+      },
+      "https://www.w3.org/TR/largest-contentful-paint/": {
+        "anchors": [
+          "largestcontentfulpaint",
+          "dom-largestcontentfulpaint-rendertime"
         ]
       },
       "https://www.w3.org/TR/performance-timeline/": {

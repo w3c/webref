@@ -140,10 +140,10 @@
               ]
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/largest-contentful-paint/#report-largest-contentful-paint\" id=\"ref-for-report-largest-contentful-paint\">Report largest contentful paint</a> given <var>document</var>, <var>paintTimingInfo</var>, <var>paintedImages</var> and <var>paintedTextNodes</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/largest-contentful-paint/#report-largest-contentful-paint\" id=\"ref-for-report-largest-contentful-paint\">Report largest contentful paint</a> given <var>document</var>, <var>paintTimingInfo</var>,\n<var>paintedImages</var> and <var>paintedTextNodes</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#report-element-timing\" id=\"ref-for-report-element-timing\">Report element timing</a> given <var>document</var>, <var>paintTimingInfo</var>, <var>paintedImages</var> and <var>paintedTextNodes</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/element-timing/#report-element-timing\" id=\"ref-for-report-element-timing\">Report element timing</a> given <var>document</var>, <var>paintTimingInfo</var>,\n<var>paintedImages</var> and <var>paintedTextNodes</var>.</p>"
             },
             {
               "html": "<p>If <var>frameTimingInfo</var> is not null, then <a data-link-type=\"dfn\" href=\"https://w3c.github.io/long-animation-frames/#queue-a-long-animation-frame-entry\" id=\"ref-for-queue-a-long-animation-frame-entry\">queue a long animation frame entry</a> given <var>document</var>, <var>frameTimingInfo</var>, and <var>paintTimingInfo</var>.</p>"
@@ -188,7 +188,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Create a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/paint-timing/#performancepainttiming\" id=\"ref-for-performancepainttiming⑤\">PerformancePaintTiming</a></code> object <var>newEntry</var> with <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a> and set its attributes as follows:",
+          "html": "Create a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/paint-timing/#performancepainttiming\" id=\"ref-for-performancepainttiming⑥\">PerformancePaintTiming</a></code> object <var>newEntry</var> with <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a> and set its attributes as follows:",
           "rationale": "set",
           "steps": [
             {
@@ -198,7 +198,7 @@
               "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype①\">entryType</a></code> attribute to <code class=\"highlight\"><c- u=\"\">\"paint\"</c-></code>.</p>"
             },
             {
-              "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime①\">startTime</a></code> attribute to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#default-paint-timestamp\" id=\"ref-for-default-paint-timestamp\">default paint timestamp</a> given <var>paintTimingInfo</var>.</p>"
+              "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime①\">startTime</a></code> attribute to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/paint-timing/#default-paint-timestamp\" id=\"ref-for-default-paint-timestamp①\">default paint timestamp</a> given <var>paintTimingInfo</var>.</p>"
             },
             {
               "html": "<p>Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/performance-timeline/#dom-performanceentry-duration\" id=\"ref-for-dom-performanceentry-duration①\">duration</a></code> attribute to 0.</p>"
