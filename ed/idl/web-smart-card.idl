@@ -3,7 +3,7 @@
 // (https://github.com/w3c/webref)
 // Source: Web Smart Card API (https://wicg.github.io/web-smart-card/)
 
-[Exposed=Window, SecureContext]
+[Exposed=Window, SecureContext, IsolatedContext]
 partial interface Navigator {
   [SameObject] readonly attribute SmartCardResourceManager smartCard;
 };
@@ -13,7 +13,7 @@ partial interface WorkerNavigator {
   [SameObject] readonly attribute SmartCardResourceManager smartCard;
 };
 
-[Exposed=(DedicatedWorker, SharedWorker, Window), SecureContext]
+[Exposed=(DedicatedWorker, SharedWorker, Window), SecureContext, IsolatedContext]
 interface SmartCardResourceManager {
   Promise<SmartCardContext> establishContext();
 };
