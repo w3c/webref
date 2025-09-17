@@ -10,11 +10,11 @@
         "format": "summary table",
         "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-mediaquerylist-change"
       },
-      "type": "change#eventdef-mediaquerylist-changeReferenced in:4.2. The MediaQueryList Interface (2)",
+      "type": "change",
       "targets": [
         "MediaQueryList"
       ],
-      "interface": "Event"
+      "interface": "MediaQueryListEvent"
     },
     {
       "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-window-resize",
@@ -22,9 +22,10 @@
         "format": "summary table",
         "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-window-resize"
       },
-      "type": "resize#eventdef-window-resizeReferenced in:12.1. Resizing viewportsChanges From 17 December 2013",
+      "type": "resize",
       "targets": [
-        "Window"
+        "Window",
+        "VisualViewport"
       ],
       "interface": "Event"
     },
@@ -34,33 +35,26 @@
         "format": "summary table",
         "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-document-scroll"
       },
-      "type": "scroll#eventdef-document-scrollReferenced in:12.2. Scrolling (2)Changes From 17 December 2013",
-      "targets": [
-        "Document",
-        "Element"
-      ],
-      "interface": "Event"
-    },
-    {
-      "src": {
-        "format": "fire an event phrasing"
-      },
-      "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-window-resize",
-      "type": "resize",
-      "targets": [
-        "Window"
-      ],
-      "interface": "Event"
-    },
-    {
-      "src": {
-        "format": "fire an event phrasing"
-      },
-      "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-document-scroll",
       "type": "scroll",
       "targets": [
         "Document",
-        "Element"
+        "Element",
+        "VisualViewport"
+      ],
+      "interface": "Event",
+      "bubbles": true
+    },
+    {
+      "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-document-scrollend",
+      "src": {
+        "format": "summary table",
+        "href": "https://www.w3.org/TR/cssom-view-1/#eventdef-document-scrollend"
+      },
+      "type": "scrollend",
+      "targets": [
+        "Document",
+        "Element",
+        "VisualViewport"
       ],
       "interface": "Event",
       "bubbles": true
