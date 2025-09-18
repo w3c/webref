@@ -7,7 +7,6 @@
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://drafts.csswg.org/css-align": {},
-      "https://drafts.csswg.org/css-gaps-1/": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
       "https://github.com/w3c/csswg-drafts/issues/10233": {
         "anchors": [
@@ -15,12 +14,16 @@
         ]
       },
       "https://github.com/w3c/csswg-drafts/issues/10854": {},
-      "https://github.com/w3c/csswg-drafts/issues/10869": {},
+      "https://github.com/w3c/csswg-drafts/issues/10884": {},
       "https://github.com/w3c/csswg-drafts/issues/10915": {},
       "https://github.com/w3c/csswg-drafts/issues/11243": {},
       "https://github.com/w3c/csswg-drafts/issues/11480": {},
+      "https://github.com/w3c/csswg-drafts/issues/12022": {},
+      "https://github.com/w3c/csswg-drafts/issues/12111": {},
+      "https://github.com/w3c/csswg-drafts/issues/3071": {},
       "https://github.com/w3c/csswg-drafts/issues/4650": {},
       "https://github.com/w3c/csswg-drafts/issues/9326": {},
+      "https://github.com/w3c/csswg-drafts/issues/9530": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
@@ -34,12 +37,12 @@
           "proprietary-extension"
         ]
       },
+      "https://www.w3.org/TR/CSS2/": {},
       "https://www.w3.org/TR/CSS2/about.html": {
         "anchors": [
           "property-defs"
         ]
       },
-      "https://www.w3.org/TR/CSS21/": {},
       "https://www.w3.org/TR/CSS21/conform.html": {
         "anchors": [
           "style-sheet",
@@ -52,6 +55,7 @@
           "content-distribution"
         ]
       },
+      "https://www.w3.org/TR/css-box-4/": {},
       "https://www.w3.org/TR/css-break-4/": {},
       "https://www.w3.org/TR/css-cascade-5/": {},
       "https://www.w3.org/TR/css-cascade/": {
@@ -68,6 +72,7 @@
           "order-accessibility"
         ]
       },
+      "https://www.w3.org/TR/css-gaps-1/": {},
       "https://www.w3.org/TR/css-grid-1/": {
         "anchors": [
           "abspos-items"
@@ -76,15 +81,17 @@
       "https://www.w3.org/TR/css-grid-2/": {
         "anchors": [
           "order-accessibility",
+          "algo-init",
+          "algo-content",
           "subgrids",
           "algo-track-sizing",
           "subgrid-item-contribution",
+          "auto-placement-algo",
           "intrinsic-sizes",
           "gutters",
           "alignment"
         ]
       },
-      "https://www.w3.org/TR/css-grid-3/": {},
       "https://www.w3.org/TR/css-multicol-1/": {},
       "https://www.w3.org/TR/css-sizing-3/": {},
       "https://www.w3.org/TR/css-text-4/": {},
@@ -120,30 +127,13 @@
           "sec-Disclosure"
         ]
       },
-      "https://www.w3.org/policies/process/20231103/": {
+      "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
           "recs-and-notes"
         ]
       }
     },
     "autolinks": {
-      "https://drafts.csswg.org/css-gaps-1/": {
-        "anchors": [
-          "funcdef-repeat"
-        ]
-      },
-      "https://www.w3.org/TR/CSS21/box.html": {
-        "anchors": [
-          "x10",
-          "x17"
-        ]
-      },
-      "https://www.w3.org/TR/CSS21/visuren.html": {
-        "anchors": [
-          "propdef-display",
-          "containing-block"
-        ]
-      },
       "https://www.w3.org/TR/css-align-3/": {
         "anchors": [
           "baseline-sharing-group",
@@ -162,6 +152,12 @@
           "alignment-baseline"
         ]
       },
+      "https://www.w3.org/TR/css-box-4/": {
+        "anchors": [
+          "content-box",
+          "margin-box"
+        ]
+      },
       "https://www.w3.org/TR/css-break-4/": {
         "anchors": [
           "forced-break",
@@ -170,6 +166,7 @@
       },
       "https://www.w3.org/TR/css-cascade-5/": {
         "anchors": [
+          "used-value",
           "shorthand-property",
           "longhand"
         ]
@@ -177,7 +174,11 @@
       "https://www.w3.org/TR/css-display-4/": {
         "anchors": [
           "blockify",
-          "propdef-reading-flow"
+          "propdef-reading-flow",
+          "propdef-display",
+          "independent-formatting-context",
+          "valdef-display-grid",
+          "containing-block"
         ]
       },
       "https://www.w3.org/TR/css-flexbox-1/": {
@@ -192,6 +193,11 @@
           "propdef-flex-wrap"
         ]
       },
+      "https://www.w3.org/TR/css-gaps-1/": {
+        "anchors": [
+          "funcdef-repeat-line-color-repeat"
+        ]
+      },
       "https://www.w3.org/TR/css-grid-2/": {
         "anchors": [
           "grid-layout",
@@ -199,8 +205,7 @@
           "grid-container",
           "grid-track",
           "definite-grid-position",
-          "propdef-grid-template-rows",
-          "propdef-grid-template-columns",
+          "subgrid",
           "explicit-grid",
           "implicit-grid",
           "propdef-grid-auto-rows",
@@ -208,25 +213,18 @@
           "valdef-repeat-auto-fill",
           "valdef-repeat-auto-fit",
           "valdef-grid-template-columns-auto",
-          "subgrid",
+          "automatic-grid-position",
+          "collapsed-grid-track",
+          "valdef-grid-template-columns-min-content",
+          "propdef-grid-template-columns",
           "propdef-grid-template-areas",
           "valdef-grid-template-areas-none",
-          "collapsed-track",
-          "automatic-grid-position",
           "grid-placement-property",
+          "propdef-grid-auto-flow",
           "grid-area",
+          "propdef-grid-template-rows",
           "valdef-grid-template-rows-none",
           "implicit-grid-track"
-        ]
-      },
-      "https://www.w3.org/TR/css-grid-3/": {
-        "anchors": [
-          "propdef-masonry-template-tracks",
-          "propdef-masonry-track",
-          "valdef-display-masonry",
-          "propdef-masonry-template-areas",
-          "propdef-masonry-auto-tracks",
-          "propdef-grid-auto-flow"
         ]
       },
       "https://www.w3.org/TR/css-sizing-3/": {
@@ -247,8 +245,8 @@
       "https://www.w3.org/TR/css-values-4/": {
         "anchors": [
           "css-wide-keywords",
-          "typedef-length-percentage",
           "comb-one",
+          "typedef-length-percentage",
           "comb-any"
         ]
       },
@@ -261,6 +259,7 @@
         "anchors": [
           "block-axis",
           "inline-axis",
+          "start",
           "writing-mode"
         ]
       }
