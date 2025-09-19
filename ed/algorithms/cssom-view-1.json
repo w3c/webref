@@ -1761,16 +1761,16 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>doc</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑨③\">viewport’s</a> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑥\">Document</a></code>.</p>"
+          "html": "<p>Let <var>doc</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑨③\">viewport’s</a> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑤\">Document</a></code>.</p>"
         },
         {
           "html": "<p>If <var>doc</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-snap-1/#scroll-snap-container\" id=\"ref-for-scroll-snap-container①\">snap container</a>,\nrun the steps to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#document-update-scrollsnapchanging-targets\" id=\"ref-for-document-update-scrollsnapchanging-targets\">update scrollsnapchanging targets</a>\nfor <var>doc</var> with <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#eventual-snap-target\" id=\"ref-for-eventual-snap-target\">eventual snap target</a> in the block axis\nas newBlockTarget and <var>doc</var>’s <span id=\"ref-for-eventual-snap-target①\">eventual snap target</span> in the inline axis\nas newInlineTarget.</p>"
         },
         {
-          "html": "<p>If <var>doc</var> is already in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-event-targets\" id=\"ref-for-document-pending-scroll-event-targets\">pending scroll event targets</a>, abort these steps.</p>"
+          "html": "<p>If (<var>doc</var>, <code>\"scroll\"</code>) is already in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-events\" id=\"ref-for-document-pending-scroll-events\">pending scroll events</a>, abort these steps.</p>"
         },
         {
-          "html": "<p>Append <var>doc</var> to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-event-targets\" id=\"ref-for-document-pending-scroll-event-targets①\">pending scroll event targets</a>.</p>"
+          "html": "<p>Append (<var>doc</var>, <code>\"scroll\"</code>) to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-events\" id=\"ref-for-document-pending-scroll-events①\">pending scroll events</a>.</p>"
         }
       ]
     },
@@ -1785,10 +1785,10 @@
           "html": "<p>If the element is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-snap-1/#scroll-snap-container\" id=\"ref-for-scroll-snap-container②\">snap container</a>,\nrun the steps to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#document-update-scrollsnapchanging-targets\" id=\"ref-for-document-update-scrollsnapchanging-targets①\">update scrollsnapchanging targets</a>\nfor the element with the element’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#eventual-snap-target\" id=\"ref-for-eventual-snap-target②\">eventual snap target</a> in the block axis\nas newBlockTarget and the element’s <span id=\"ref-for-eventual-snap-target③\">eventual snap target</span> in the inline axis\nas newInlineTarget.</p>"
         },
         {
-          "html": "<p>If the element is already in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-event-targets\" id=\"ref-for-document-pending-scroll-event-targets②\">pending scroll event targets</a>, abort these steps.</p>"
+          "html": "<p>If the element is already in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-events\" id=\"ref-for-document-pending-scroll-events②\">pending scroll events</a>, abort these steps.</p>"
         },
         {
-          "html": "<p>Append the element to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-event-targets\" id=\"ref-for-document-pending-scroll-event-targets③\">pending scroll event targets</a>.</p>"
+          "html": "<p>Append the element to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-events\" id=\"ref-for-document-pending-scroll-events③\">pending scroll events</a>.</p>"
         }
       ]
     },
@@ -1803,44 +1803,17 @@
           "html": "<p>Let <var>doc</var> be <var>vv</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport-associated-document\" id=\"ref-for-visualviewport-associated-document⑧\">associated document</a>.</p>"
         },
         {
-          "html": "<p>If <var>vv</var> is already in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-event-targets\" id=\"ref-for-document-pending-scroll-event-targets④\">pending scroll event targets</a>, abort these steps.</p>"
+          "html": "<p>If (<var>vv</var>, <code>\"scroll\"</code>) is already in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-events\" id=\"ref-for-document-pending-scroll-events④\">pending scroll events</a>, abort these steps.</p>"
         },
         {
-          "html": "<p>Append <var>vv</var> to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-event-targets\" id=\"ref-for-document-pending-scroll-event-targets⑤\">pending scroll event targets</a>.</p>"
+          "html": "<p>Append (<var>vv</var>, <code>\"scroll\"</code>) to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-events\" id=\"ref-for-document-pending-scroll-events⑤\">pending scroll events</a>.</p>"
         }
       ]
     },
     {
       "name": "Document/run the scroll steps",
       "href": "https://drafts.csswg.org/cssom-view-1/#document-run-the-scroll-steps",
-      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"document-run-the-scroll-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run the scroll steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑦\">Document</a></code> <var>doc</var>, run these steps:",
-      "rationale": "run",
-      "steps": [
-        {
-          "html": "<p>Run the steps to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#document-dispatch-pending-scrollsnapchanging-events\" id=\"ref-for-document-dispatch-pending-scrollsnapchanging-events\">dispatch pending scrollsnapchanging events</a> for <var>doc</var>.</p>"
-        },
-        {
-          "html": "For each item <var>target</var> in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-event-targets\" id=\"ref-for-document-pending-scroll-event-targets⑥\">pending scroll event targets</a>,\nin the order they were added to the list, run these substeps:",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>target</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑧\">Document</a></code>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://drafts.csswg.org/cssom-view-1/#eventdef-document-scroll\" id=\"ref-for-eventdef-document-scroll①\">scroll</a> that bubbles at <var>target</var>.</p>"
-            },
-            {
-              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire④\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://drafts.csswg.org/cssom-view-1/#eventdef-document-scroll\" id=\"ref-for-eventdef-document-scroll②\">scroll</a> at <var>target</var>.</p>"
-            }
-          ]
-        },
-        {
-          "html": "<p>Empty <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-event-targets\" id=\"ref-for-document-pending-scroll-event-targets⑦\">pending scroll event targets</a>.</p>"
-        },
-        {
-          "html": "<p>Run the steps to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#document-dispatch-pending-scrollsnapchange-events\" id=\"ref-for-document-dispatch-pending-scrollsnapchange-events\">dispatch pending scrollsnapchange events</a> for <var>doc</var>.</p>"
-        }
-      ]
-    },
-    {
-      "html": "Whenever scrolling is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scroll-completed\" id=\"ref-for-scroll-completed\">completed</a>, the user agent must run these steps:",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"document-run-the-scroll-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run the scroll steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑥\">Document</a></code> <var>doc</var>, run these steps:",
       "rationale": "for",
       "steps": [
         {
@@ -1848,43 +1821,82 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>box</var> belongs to a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑨④\">viewport</a>, let <var>doc</var> be the <span id=\"ref-for-x1⑨⑤\">viewport’s</span> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑨\">Document</a></code> and <var>target</var> be the <span id=\"ref-for-x1⑨⑥\">viewport</span>.\nIf <var>box</var> belongs to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport\" id=\"ref-for-visualviewport⑨\">VisualViewport</a></code>, let <var>doc</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport\" id=\"ref-for-visualviewport①⓪\">VisualViewport</a></code>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport-associated-document\" id=\"ref-for-visualviewport-associated-document⑨\">associated document</a> and <var>target</var>\nbe the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport\" id=\"ref-for-visualviewport①①\">VisualViewport</a></code>. Otherwise, <var>box</var> belongs to an element and let <var>doc</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①②\">node document</a> and <var>target</var> be the element.</p>"
+              "html": "<p>If <var>box</var> belongs to a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑨④\">viewport</a>, let <var>doc</var> be the <span id=\"ref-for-x1⑨⑤\">viewport’s</span> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑦\">Document</a></code> and <var>target</var> be the <span id=\"ref-for-x1⑨⑥\">viewport</span>.\nIf <var>box</var> belongs to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport\" id=\"ref-for-visualviewport⑨\">VisualViewport</a></code>, let <var>doc</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport\" id=\"ref-for-visualviewport①⓪\">VisualViewport</a></code>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport-associated-document\" id=\"ref-for-visualviewport-associated-document⑨\">associated document</a> and <var>target</var>\nbe the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport\" id=\"ref-for-visualviewport①①\">VisualViewport</a></code>. Otherwise, <var>box</var> belongs to an element and let <var>doc</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①②\">node document</a> and <var>target</var> be the element.</p>"
             },
             {
               "html": "<p>If <var>box</var> belongs to a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-snap-1/#scroll-snap-container\" id=\"ref-for-scroll-snap-container③\">snap container</a>, <var>snapcontainer</var>,\nrun the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#document-update-scrollsnapchange-targets\" id=\"ref-for-document-update-scrollsnapchange-targets\">update scrollsnapchange targets</a> steps for <var>snapcontainer</var>.</p>"
             },
             {
-              "html": "<p>If <var>target</var> is already in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scrollend-event-targets\" id=\"ref-for-document-pending-scrollend-event-targets\">pending scrollend event targets</a>, abort these steps.</p>"
+              "html": "<p>If (<var>target</var>, <code>\"scrollend\"</code>) is already in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-events\" id=\"ref-for-document-pending-scroll-events⑥\">pending scroll events</a>, abort these steps.</p>"
             },
             {
-              "html": "<p>Append <var>target</var> to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scrollend-event-targets\" id=\"ref-for-document-pending-scrollend-event-targets①\">pending scrollend event targets</a>.</p>"
+              "html": "<p>Append (<var>target</var>, <code>\"scrollend\"</code>) to <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-events\" id=\"ref-for-document-pending-scroll-events⑦\">pending scroll events</a>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Run the steps to <u class=\"link-error\" data-link-spec=\"css-scroll-snap-2\" data-lt=\"dispatch pending scrollsnapchange targets\" title=\"LINK ERROR: No 'dfn' refs found for 'dispatch pending scrollsnapchange targets'.\">dispatch pending scrollsnapchange targets</u> for <var>doc</var>.</p>"
-        },
-        {
-          "html": "For each item <var>target</var> in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scrollend-event-targets\" id=\"ref-for-document-pending-scrollend-event-targets②\">pending scrollend event targets</a>, in the order they were added to the list, run these substeps:",
+          "html": "For each item (<var>target</var>, <var>type</var>) in <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-events\" id=\"ref-for-document-pending-scroll-events⑧\">pending scroll events</a>,\nin the order they were added to the list, run these substeps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>target</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②⓪\">Document</a></code>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑤\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend\" id=\"ref-for-eventdef-document-scrollend④\">scrollend</a> that bubbles at <var>target</var>.</p>"
+              "html": "<p>If <var>target</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑧\">Document</a></code>, and <var>type</var> is <code>\"scroll\"</code> or <code>\"scrollend\"</code>,\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">fire an event</a> named <var>type</var> that bubbles at <var>target</var>.</p>"
             },
             {
-              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑥\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend\" id=\"ref-for-eventdef-document-scrollend⑤\">scrollend</a> at <var>target</var>.</p>"
+              "html": "<p>Otherwise, if <var>type</var> is <code>\"scrollsnapchange\"</code>, then:</p>"
+            },
+            {
+              "html": "<p>Let <var>blockTarget</var> and <var>inlineTarget</var> be null initially.</p>"
+            },
+            {
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#scrollsnapchangetargetblock\" id=\"ref-for-scrollsnapchangetargetblock\">scrollsnapchangeTargetBlock</a> associated with <var>target</var> is a pseudo-element,\nset <var>blockTarget</var> to the owning element of that <span id=\"ref-for-scrollsnapchangetargetblock①\">scrollsnapchangeTargetBlock</span>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, set <var>blockTarget</var> to that <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#scrollsnapchangetargetblock\" id=\"ref-for-scrollsnapchangetargetblock②\">scrollsnapchangeTargetBlock</a>.</p>"
+            },
+            {
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#scrollsnapchangetargetinline\" id=\"ref-for-scrollsnapchangetargetinline\">scrollsnapchangeTargetInline</a> associated with <var>target</var> is a pseudo-element,\nset <var>inlineTarget</var> to the owning element of that <span id=\"ref-for-scrollsnapchangetargetinline①\">scrollsnapchangeTargetInline</span>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, Set <var>inlineTarget</var> to that <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#scrollsnapchangetargetinline\" id=\"ref-for-scrollsnapchangetargetinline②\">scrollsnapchangeTargetInline</a>.</p>"
+            },
+            {
+              "html": "<p>Fire a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#snapevent\" id=\"ref-for-snapevent\">SnapEvent</a></code>, <var>snapevent</var>, named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#eventdef-snapevent-scrollsnapchange\" id=\"ref-for-eventdef-snapevent-scrollsnapchange\">scrollsnapchange</a></code> at <var>target</var>\nand let <var>snapevent</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#dom-snapevent-snaptargetblock\" id=\"ref-for-dom-snapevent-snaptargetblock\">snapTargetBlock</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#dom-snapevent-snaptargetinline\" id=\"ref-for-dom-snapevent-snaptargetinline\">snapTargetInline</a></code> attributes be <var>blockTarget</var> and <var>inlineTarget</var> respectively.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if <var>type</var> is <code>\"scrollsnapchanging\"</code>, then:</p>"
+            },
+            {
+              "html": "<p>Let <var>blockTarget</var> and <var>inlineTarget</var> be null initially.</p>"
+            },
+            {
+              "html": "<p>If the <u class=\"link-error\" data-lt=\"scrollsnapchanging block-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging block-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging block-axis target</u> associated with <var>target</var> is a pseudo-element,\nset <var>blockTarget</var> to the owning element of that <u class=\"link-error\" data-lt=\"scrollsnapchanging block-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging block-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging block-axis target</u>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, set <var>blockTarget</var> to that <u class=\"link-error\" data-lt=\"scrollsnapchanging block-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging block-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging block-axis target</u>.</p>"
+            },
+            {
+              "html": "<p>If the <u class=\"link-error\" data-lt=\"scrollsnapchanging inline-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging inline-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging inline-axis target</u> associated with <var>target</var> is a pseudo-element,\nset <var>inlineTarget</var> to the owning element of that <u class=\"link-error\" data-lt=\"scrollsnapchanging inline-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging inline-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging inline-axis target</u>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, set <var>inlineTarget</var> to that <u class=\"link-error\" data-lt=\"scrollsnapchanging inline-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging inline-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging inline-axis target</u>.</p>"
+            },
+            {
+              "html": "<p>Fire a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#snapevent\" id=\"ref-for-snapevent①\">SnapEvent</a></code>, <var>snapevent</var>, named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#eventdef-snapevent-scrollsnapchanging\" id=\"ref-for-eventdef-snapevent-scrollsnapchanging\">scrollsnapchanging</a></code> at <var>target</var>\nand let <var>snapevent</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#dom-snapevent-snaptargetblock\" id=\"ref-for-dom-snapevent-snaptargetblock①\">snapTargetBlock</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/css-scroll-snap-2/#dom-snapevent-snaptargetinline\" id=\"ref-for-dom-snapevent-snaptargetinline①\">snapTargetInline</a></code> attributes be <var>blockTarget</var> and <var>inlineTarget</var>, respectively.</p>"
+            },
+            {
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire④\">fire an event</a> named <var>type</var> at <var>target</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Empty <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scrollend-event-targets\" id=\"ref-for-document-pending-scrollend-event-targets③\">pending scrollend event targets</a>.</p>"
+          "html": "<p>Empty <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#document-pending-scroll-events\" id=\"ref-for-document-pending-scroll-events⑨\">pending scroll events</a>.</p>"
         }
       ]
     },
     {
       "name": "run snapshot post-layout state steps",
       "href": "https://drafts.csswg.org/cssom-view-1/#run-snapshot-post-layout-state-steps",
-      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"run-snapshot-post-layout-state-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run snapshot post-layout state steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②⑤\">Document</a></code> <var>doc</var>, run these steps:",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"run-snapshot-post-layout-state-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run snapshot post-layout state steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②③\">Document</a></code> <var>doc</var>, run these steps:",
       "rationale": "for",
       "steps": [
         {
