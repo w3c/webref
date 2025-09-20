@@ -6725,10 +6725,25 @@
             },
             {
               "html": "For each <var>x</var> in the range [0, <var>copySize</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuextent3d-width\" id=\"ref-for-gpuextent3d-width②⑧\">width</a> − 1]:",
-              "rationale": "set",
+              "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#texel-block\" id=\"ref-for-texel-block③⓪\">texel block</a>\n(<var>dstOrigin</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuorigin3d-x\" id=\"ref-for-gpuorigin3d-x⑦\">x</a> + <var>x</var>, <var>dstOrigin</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuorigin3d-y\" id=\"ref-for-gpuorigin3d-y⑦\">y</a> + <var>y</var>) of\n<var>dstSubregion</var> to be an <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#equivalent-texel-representation\" id=\"ref-for-equivalent-texel-representation⑤\">equivalent texel representation</a> of the pixel at\n(<var>srcOrigin</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuorigin2d-x\" id=\"ref-for-gpuorigin2d-x①\">x</a> + <var>x</var>, <var>srcOrigin</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuorigin2d-y\" id=\"ref-for-gpuorigin2d-y①\">y</a> + <var>srcY</var>) of\n<var>source</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucopyexternalimagesourceinfo-source\" id=\"ref-for-dom-gpucopyexternalimagesourceinfo-source③\">source</a></code> after applying any\n<a href=\"https://gpuweb.github.io/gpuweb/#color-space-conversions\">color encoding</a> required by\n<var>destination</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucopyexternalimagedestinfo-colorspace\" id=\"ref-for-dom-gpucopyexternalimagedestinfo-colorspace②\">colorSpace</a></code> and\n<var>destination</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucopyexternalimagedestinfo-premultipliedalpha\" id=\"ref-for-dom-gpucopyexternalimagedestinfo-premultipliedalpha②\">premultipliedAlpha</a></code>.</p>"
+                  "html": "<p>Let <var>srcColor</var> be the <a href=\"https://gpuweb.github.io/gpuweb/#color-spaces\">color-managed color value</a> of the pixel at\n(<var>srcOrigin</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuorigin2d-x\" id=\"ref-for-gpuorigin2d-x①\">x</a> + <var>x</var>, <var>srcOrigin</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuorigin2d-y\" id=\"ref-for-gpuorigin2d-y①\">y</a> + <var>srcY</var>) of\n<var>source</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucopyexternalimagesourceinfo-source\" id=\"ref-for-dom-gpucopyexternalimagesourceinfo-source③\">source</a></code>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>dstColor</var> be the numeric RGBA value resulting from applying any\n<a href=\"https://gpuweb.github.io/gpuweb/#color-space-conversions\">color encoding</a> required by\n<var>destination</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucopyexternalimagedestinfo-colorspace\" id=\"ref-for-dom-gpucopyexternalimagedestinfo-colorspace②\">colorSpace</a></code> and\n<var>destination</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gpucopyexternalimagedestinfo-premultipliedalpha\" id=\"ref-for-dom-gpucopyexternalimagedestinfo-premultipliedalpha②\">premultipliedAlpha</a></code>\nto <var>srcColor</var>.</p>"
+                },
+                {
+                  "html": "If <var>texture</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dom-gputexture-format\" id=\"ref-for-dom-gputexture-format②③\" data-timeline=\"const\">format</a></code> is an <code>-srgb</code> format:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p>Set <var>dstColor</var> to the result of applying the sRGB non-linear-to-linear conversion to it.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#texel-block\" id=\"ref-for-texel-block③⓪\">texel block</a>\n(<var>dstOrigin</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuorigin3d-x\" id=\"ref-for-gpuorigin3d-x⑦\">x</a> + <var>x</var>, <var>dstOrigin</var>.<a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#gpuorigin3d-y\" id=\"ref-for-gpuorigin3d-y⑦\">y</a> + <var>y</var>) of\n<var>dstSubregion</var> to an <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#equivalent-texel-representation\" id=\"ref-for-equivalent-texel-representation⑤\">equivalent texel representation</a> of <var>dstColor</var>.</p>"
                 }
               ]
             }
