@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-09-20T06:45:34.943Z",
+  "date": "2025-09-20T12:51:53.767Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -1471,9 +1471,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Sep 2025 16:12:33 GMT"
+        "lastModified": "Sat, 20 Sep 2025 06:45:47 GMT"
       },
-      "date": "19 September 2025",
+      "date": "20 September 2025",
       "algorithms": "algorithms/compression-dictionary.json",
       "links": "links/compression-dictionary.json",
       "refs": "refs/compression-dictionary.json",
@@ -1520,9 +1520,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Sep 2025 16:12:33 GMT"
+        "lastModified": "Sat, 20 Sep 2025 06:45:47 GMT"
       },
-      "date": "19 September 2025",
+      "date": "20 September 2025",
       "algorithms": "algorithms/no-vary-search.json",
       "links": "links/no-vary-search.json",
       "refs": "refs/no-vary-search.json",
@@ -1569,9 +1569,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Sep 2025 16:12:33 GMT"
+        "lastModified": "Sat, 20 Sep 2025 06:45:47 GMT"
       },
-      "date": "19 September 2025",
+      "date": "20 September 2025",
       "algorithms": "algorithms/rfc6265bis.json",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
@@ -1699,7 +1699,8 @@
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
       "ids": "ids/css-typed-om-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -1750,7 +1751,8 @@
       "dfns": "dfns/font-metrics-api-1.json",
       "headings": "headings/font-metrics-api-1.json",
       "ids": "ids/font-metrics-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 18)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-anchor-position-2/",
@@ -26214,7 +26216,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-writing-modes-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Sep 2025 22:29:45 GMT"
+        "lastModified": "Fri, 19 Sep 2025 22:29:46 GMT"
       },
       "generator": "bikeshed",
       "date": "24 March 2025",
@@ -28993,8 +28995,7 @@
       "dfns": "dfns/geometry-1.json",
       "headings": "headings/geometry-1.json",
       "ids": "ids/geometry-1.json",
-      "cddl": [],
-      "error": "Error: Loading https://drafts.fxtf.org/geometry-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 488)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "cddl": []
     },
     {
       "url": "https://www.w3.org/TR/gpc/",
@@ -33921,10 +33922,10 @@
       ],
       "crawled": "https://w3c.github.io/rdf-concepts/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Sep 2025 09:34:41 GMT"
+        "lastModified": "Sat, 20 Sep 2025 10:27:55 GMT"
       },
       "generator": "respec",
-      "date": "19 September 2025",
+      "date": "20 September 2025",
       "algorithms": "algorithms/rdf12-concepts.json",
       "links": "links/rdf12-concepts.json",
       "refs": "refs/rdf12-concepts.json",
@@ -38518,18 +38519,17 @@
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Jun 2025 13:09:53 GMT"
+        "lastModified": "Sat, 20 Sep 2025 07:43:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 June 2025",
-      "revision": "1041527d508218acc40f0278d4abc3be9ba5e3bd",
+      "date": "20 September 2025",
+      "revision": "fb97b8c1fd723644cebcc53ed45df11c6c44ddc5",
       "algorithms": "algorithms/wasm-core-2.json",
       "links": "links/wasm-core-2.json",
       "refs": "refs/wasm-core-2.json",
       "headings": "headings/wasm-core-2.json",
       "ids": "ids/wasm-core-2.json",
-      "cddl": [],
-      "error": "Error: Loading https://webassembly.github.io/spec/core/bikeshed/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 643)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "cddl": []
     },
     {
       "url": "https://www.w3.org/TR/wasm-js-api-2/",
@@ -38592,11 +38592,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Sep 2025 20:49:13 GMT"
+        "lastModified": "Sat, 20 Sep 2025 07:43:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 September 2025",
-      "revision": "11eb34c9e6af6927d1bc14f92f44fd9695e54080",
+      "date": "20 September 2025",
+      "revision": "fb97b8c1fd723644cebcc53ed45df11c6c44ddc5",
       "algorithms": "algorithms/wasm-js-api-2.json",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
@@ -38658,11 +38658,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 19 Sep 2025 20:49:13 GMT"
+        "lastModified": "Sat, 20 Sep 2025 07:43:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 September 2025",
-      "revision": "11eb34c9e6af6927d1bc14f92f44fd9695e54080",
+      "date": "20 September 2025",
+      "revision": "fb97b8c1fd723644cebcc53ed45df11c6c44ddc5",
       "algorithms": "algorithms/wasm-web-api-2.json",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
