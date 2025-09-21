@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-09-21T06:43:40.441Z",
+  "date": "2025-09-21T12:50:25.320Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -745,7 +745,7 @@
   },
   "stats": {
     "crawled": 713,
-    "errors": 3
+    "errors": 6
   },
   "crawler": "reffy-19.2.2",
   "results": [
@@ -1471,7 +1471,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 21 Sep 2025 01:02:39 GMT"
+        "lastModified": "Sun, 21 Sep 2025 10:58:04 GMT"
       },
       "date": "21 September 2025",
       "algorithms": "algorithms/compression-dictionary.json",
@@ -1520,7 +1520,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 21 Sep 2025 01:02:39 GMT"
+        "lastModified": "Sun, 21 Sep 2025 10:58:04 GMT"
       },
       "date": "21 September 2025",
       "algorithms": "algorithms/no-vary-search.json",
@@ -1569,7 +1569,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 21 Sep 2025 01:02:39 GMT"
+        "lastModified": "Sun, 21 Sep 2025 10:58:04 GMT"
       },
       "date": "21 September 2025",
       "algorithms": "algorithms/rfc6265bis.json",
@@ -1699,7 +1699,8 @@
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
       "ids": "ids/css-typed-om-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -22253,7 +22254,8 @@
       "dfns": "dfns/css-layout-api-1.json",
       "headings": "headings/css-layout-api-1.json",
       "ids": "ids/css-layout-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 385)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-line-grid-1/",
@@ -22519,7 +22521,8 @@
       "elements": "elements/css-masking-1.json",
       "headings": "headings/css-masking-1.json",
       "ids": "ids/css-masking-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/css-masking-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 389)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-mixins-1/",
