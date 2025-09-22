@@ -745,16 +745,16 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>matchedImpressions</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑤\">not empty</a>.</p>"
         },
         {
-          "html": "<p>Let <var>sortedImpressions</var> be <var>matchedImpressions</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"ref-for-list-sort-in-ascending-order\">sorted in ascending order</a>\nby <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#impression-priority\" id=\"ref-for-impression-priority①\">priority</a>, then by <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#impression-timestamp\" id=\"ref-for-impression-timestamp⑤\">timestamp</a>.</p>"
+          "html": "<p>Let <var>sortedImpressions</var> be <var>matchedImpressions</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-descending-order\" id=\"ref-for-list-sort-in-descending-order\">sorted in descending order</a>\nby <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#impression-priority\" id=\"ref-for-impression-priority①\">priority</a>, then by <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#impression-timestamp\" id=\"ref-for-impression-timestamp⑤\">timestamp</a>.</p>"
         },
         {
           "html": "<p>Let <var>N</var> be the minimum of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑧\">size</a> of <var>credit</var>, and the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑨\">size</a> of <var>sortedImpressions</var>.</p>"
         },
         {
-          "html": "<p>Let <var>lastNImpressions</var> be the last <var>N</var> entries of <var>sortedImpressions</var>.</p>"
+          "html": "<p>Let <var>lastNImpressions</var> be the first <var>N</var> entries of <var>sortedImpressions</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove④\">Remove</a> all but the last <var>N</var> entries of <var>credit</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove④\">Remove</a> all but the first <var>N</var> entries of <var>credit</var>.</p>"
         },
         {
           "html": "<p>Let <var>normalizedCredit</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#fairly-allocate-credit\" id=\"ref-for-fairly-allocate-credit\">fairly allocating credit</a> with <var>credit</var> and <var>value</var>.</p>"
