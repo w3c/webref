@@ -12,7 +12,7 @@ interface MLGraphBuilder {
                      AllowSharedBufferSource buffer);
 
   // Create a scalar operand from the specified number of the specified type.
-  MLOperand constant(MLOperandDataType type, MLNumber value);
+  MLOperand constant(MLOperandDataType dataType, MLNumber value);
 
   // Create an operand from a specified constant tensor.
   MLOperand constant(MLTensor tensor);
@@ -38,7 +38,7 @@ partial interface MLGraphBuilder {
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
   MLOperand cast(MLOperand input,
-                 MLOperandDataType type,
+                 MLOperandDataType dataType,
                  optional MLOperatorOptions options = {});
 };
 

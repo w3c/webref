@@ -1581,7 +1581,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#typedefdef-mlnamedoperands"
       },
       "MLGraphBuilder": {
-        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(USVString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor,\n                     AllowSharedBufferSource buffer);\n\n  // Create a scalar operand from the specified number of the specified type.\n  MLOperand constant(MLOperandDataType type, MLNumber value);\n\n  // Create an operand from a specified constant tensor.\n  MLOperand constant(MLTensor tensor);\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
+        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLGraphBuilder {\n  // Construct the graph builder from the context.\n  constructor(MLContext context);\n\n  // Create an operand for a graph input.\n  MLOperand input(USVString name, MLOperandDescriptor descriptor);\n\n  // Create an operand for a graph constant.\n  MLOperand constant(MLOperandDescriptor descriptor,\n                     AllowSharedBufferSource buffer);\n\n  // Create a scalar operand from the specified number of the specified type.\n  MLOperand constant(MLOperandDataType dataType, MLNumber value);\n\n  // Create an operand from a specified constant tensor.\n  MLOperand constant(MLTensor tensor);\n\n  // Compile the graph up to the specified output operands asynchronously.\n  Promise<MLGraph> build(MLNamedOperands outputs);\n};",
         "type": "interface",
         "name": "MLGraphBuilder",
         "inheritance": null,
@@ -1721,7 +1721,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "type",
+                "name": "dataType",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -1754,7 +1754,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-constant-type-value"
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlgraphbuilder-constant-datatype-value"
           },
           {
             "type": "operation",
@@ -6073,7 +6073,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand cast(MLOperand input,\n                 MLOperandDataType type,\n                 optional MLOperatorOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand cast(MLOperand input,\n                 MLOperandDataType dataType,\n                 optional MLOperatorOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -6108,7 +6108,7 @@
                 },
                 {
                   "type": "argument",
-                  "name": "type",
+                  "name": "dataType",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",

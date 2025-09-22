@@ -5,35 +5,19 @@
   },
   "properties": [
     {
-      "name": "item-slack",
-      "href": "https://drafts.csswg.org/css-grid-3/#propdef-item-slack",
-      "value": "<length-percentage> | infinite",
-      "initial": "1em",
+      "name": "item-tolerance",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-item-tolerance",
+      "value": "normal | <length-percentage> | infinite",
+      "initial": "normal",
       "appliesTo": "masonry containers",
       "inherited": "no",
       "percentages": "relative to the grid-axis content box size of the masonry container",
       "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "as length",
-      "values": [
-        {
-          "name": "<length-percentage>",
-          "prose": "Specifies the tie threshold for the masonry container. Placement positions are considered to be equally good (“tied”) if they are within the specified distance from the shortest position.",
-          "href": "https://drafts.csswg.org/css-grid-3/#valdef-item-slack-length-percentage",
-          "type": "value",
-          "value": "<length-percentage>"
-        },
-        {
-          "name": "infinite",
-          "prose": "Specifies an infinite tie threshold. This makes items distribute themselves strictly in order, without considering the length of the tracks at all.",
-          "href": "https://drafts.csswg.org/css-grid-3/#valdef-item-slack-infinite",
-          "type": "value",
-          "value": "infinite"
-        }
-      ],
       "styleDeclaration": [
-        "item-slack",
-        "itemSlack"
+        "item-tolerance",
+        "itemTolerance"
       ]
     },
     {
@@ -304,7 +288,7 @@
     {
       "name": "item-flow",
       "href": "https://drafts.csswg.org/css-grid-3/#propdef-item-flow",
-      "value": "<'item-direction'> || <'item-wrap'> || <'item-pack'> || <'item-slack'>",
+      "value": "<'item-direction'> || <'item-wrap'> || <'item-pack'> || <'item-tolerance'>",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -324,12 +308,48 @@
   "warnings": [
     {
       "msg": "Dangling value",
+      "name": "something",
+      "prose": "This value causes an element to generate a masonry container box.",
+      "href": "https://drafts.csswg.org/css-grid-3/#valdef-display-something",
+      "type": "value",
+      "value": "something",
+      "for": "display"
+    },
+    {
+      "msg": "Dangling value",
       "name": "auto-areas",
-      "prose": "The new auto-areas value for the repeat() notation represents the number of repetitions necessary for the total number of explicit tracks to match the grid-template-areas / masonry-template-areas value in effect in the corresponding axis. If multiple tracks are listed for the repetition, the final repetition is truncated as necessary to produce the correct number of tracks.",
+      "prose": "The new auto-areas value for the repeat() notation represents the number of repetitions necessary for the total number of explicit tracks to match the grid-template-areas value in effect in the corresponding axis. If multiple tracks are listed for the repetition, the final repetition is truncated as necessary to produce the correct number of tracks.",
       "href": "https://drafts.csswg.org/css-grid-3/#valdef-repeat-auto-areas",
       "type": "value",
       "value": "auto-areas",
       "for": "repeat()"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "<length-percentage>",
+      "prose": "Specifies the tie threshold for the masonry container. Placement positions are considered to be equally good (“tied”) if they are within the specified distance from the shortest position.",
+      "href": "https://drafts.csswg.org/css-grid-3/#valdef-item-slack-length-percentage",
+      "type": "value",
+      "value": "<length-percentage>",
+      "for": "item-slack"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "normal",
+      "prose": "Resolves to a used value of 1em in masonry layout and a used value of 0 in all other layout modes.",
+      "href": "https://drafts.csswg.org/css-grid-3/#valdef-item-slack-normal",
+      "type": "value",
+      "value": "normal",
+      "for": "item-slack"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "infinite",
+      "prose": "Specifies an infinite tie threshold. This makes items distribute themselves strictly in order, without considering the length of the tracks at all.",
+      "href": "https://drafts.csswg.org/css-grid-3/#valdef-item-slack-infinite",
+      "type": "value",
+      "value": "infinite",
+      "for": "item-slack"
     }
   ]
 }

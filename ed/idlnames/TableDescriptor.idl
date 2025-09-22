@@ -1,6 +1,7 @@
 // Source: WebAssembly JavaScript Interface (https://www.w3.org/TR/wasm-js-api-2/)
 dictionary TableDescriptor {
   required TableKind element;
-  required [EnforceRange] unsigned long initial;
-  [EnforceRange] unsigned long maximum;
+  required AddressValue initial;
+  AddressValue maximum;
+  AddressType address;
 };

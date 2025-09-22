@@ -6,7 +6,7 @@
       "title": "Scalable Vector Graphics (SVG) 2",
       "url": "https://www.w3.org/TR/SVG2/"
     },
-    "fragment": "[Exposed=Window]\ninterface SVGAnimatedString {\n           attribute DOMString baseVal;\n  readonly attribute DOMString animVal;\n};",
+    "fragment": "[Exposed=Window]\ninterface SVGAnimatedString {\n           attribute (DOMString or TrustedScriptURL) baseVal;\n  readonly attribute DOMString animVal;\n};",
     "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAnimatedString"
   },
   "extended": [],

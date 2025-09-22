@@ -6,7 +6,7 @@
       "title": "WebAssembly JavaScript Interface",
       "url": "https://www.w3.org/TR/wasm-js-api-2/"
     },
-    "fragment": "[Exposed=*]\nnamespace WebAssembly {\n    boolean validate(BufferSource bytes);\n    Promise<Module> compile(BufferSource bytes);\n\n    Promise<WebAssemblyInstantiatedSource> instantiate(\n        BufferSource bytes, optional object importObject);\n\n    Promise<Instance> instantiate(\n        Module moduleObject, optional object importObject);\n};",
+    "fragment": "[Exposed=*]\nnamespace WebAssembly {\n    boolean validate(BufferSource bytes, optional WebAssemblyCompileOptions options = {});\n    Promise<Module> compile(BufferSource bytes, optional WebAssemblyCompileOptions options = {});\n\n    Promise<WebAssemblyInstantiatedSource> instantiate(\n        BufferSource bytes, optional object importObject, optional WebAssemblyCompileOptions options = {});\n\n    Promise<Instance> instantiate(\n        Module moduleObject, optional object importObject);\n\n    readonly attribute Tag JSTag;\n};",
     "href": "https://webassembly.github.io/spec/js-api/#namespacedef-webassembly"
   },
   "extended": [
@@ -15,7 +15,7 @@
         "title": "WebAssembly Web API",
         "url": "https://www.w3.org/TR/wasm-web-api-2/"
       },
-      "fragment": "[Exposed=(Window,Worker)]\npartial namespace WebAssembly {\n  Promise<Module> compileStreaming(Promise<Response> source);\n  Promise<WebAssemblyInstantiatedSource> instantiateStreaming(\n      Promise<Response> source, optional object importObject);\n};"
+      "fragment": "[Exposed=(Window,Worker)]\npartial namespace WebAssembly {\n  Promise<Module> compileStreaming(Promise<Response> source, optional WebAssemblyCompileOptions options = {});\n  Promise<WebAssemblyInstantiatedSource> instantiateStreaming(\n      Promise<Response> source, optional object importObject, optional WebAssemblyCompileOptions options = {});\n};"
     }
   ],
   "inheritance": null,

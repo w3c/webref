@@ -6,7 +6,7 @@
       "title": "WebAssembly JavaScript Interface",
       "url": "https://www.w3.org/TR/wasm-js-api-2/"
     },
-    "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Module {\n  constructor(BufferSource bytes);\n  static sequence<ModuleExportDescriptor> exports(Module moduleObject);\n  static sequence<ModuleImportDescriptor> imports(Module moduleObject);\n  static sequence<ArrayBuffer> customSections(Module moduleObject, DOMString sectionName);\n};",
+    "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Module {\n  constructor(BufferSource bytes, optional WebAssemblyCompileOptions options = {});\n  static sequence<ModuleExportDescriptor> exports(Module moduleObject);\n  static sequence<ModuleImportDescriptor> imports(Module moduleObject);\n  static sequence<ArrayBuffer> customSections(Module moduleObject, DOMString sectionName);\n};",
     "href": "https://webassembly.github.io/spec/js-api/#module"
   },
   "extended": [],

@@ -14,7 +14,6 @@
       "https://github.com/WICG/nav-speculation/issues/319": {},
       "https://github.com/shivanigithub/fenced-frame": {},
       "https://github.com/w3c/webdriver-bidi/issues/321": {},
-      "https://github.com/whatwg/html/pull/11426": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
@@ -24,6 +23,13 @@
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
           "navigables"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html": {
+        "anchors": [
+          "speculation-rules",
+          "speculative-loading-security",
+          "speculative-loading-privacy"
         ]
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -79,12 +85,6 @@
       "https://webaudio.github.io/web-speech-api/": {},
       "https://webbluetoothcg.github.io/web-bluetooth/": {},
       "https://webidl.spec.whatwg.org/": {},
-      "https://whatpr.org/html/11426/speculative-loading.html": {
-        "anchors": [
-          "speculative-loading-security",
-          "speculative-loading-privacy"
-        ]
-      },
       "https://wicg.github.io/background-fetch/": {},
       "https://wicg.github.io/background-sync/spec/": {},
       "https://wicg.github.io/client-hints-infrastructure/": {},
@@ -262,6 +262,39 @@
           "dom-navigationtype-replace",
           "window-navigable",
           "dom-open"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "get-an-element's-target"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html": {
+        "anchors": [
+          "speculation-rule-set",
+          "speculation-rule",
+          "sr-set-prefetch",
+          "sr-requirements",
+          "parse-a-speculation-rule",
+          "speculative-load-candidate",
+          "consider-speculative-loads",
+          "inner-consider-speculative-loads-steps",
+          "document-sr-sets",
+          "sr-urls",
+          "compute-speculative-load-referrer-policy",
+          "sl-candidate-url",
+          "sl-candidate-nvs-hint",
+          "sr-nvs-hint",
+          "sl-candidate-eagerness",
+          "sr-eagerness",
+          "sl-candidate-referrer-policy",
+          "sl-candidate-tags",
+          "sr-tags",
+          "sr-predicate",
+          "finding-matching-links",
+          "collect-tags-from-speculative-load-candidates",
+          "prefetch-candidate",
+          "sl-candidate-anonymization-policy"
         ]
       },
       "https://html.spec.whatwg.org/multipage/system-state.html": {
@@ -603,39 +636,6 @@
           "idl-DOMException",
           "reject",
           "notsupportederror"
-        ]
-      },
-      "https://whatpr.org/html/11426/semantics.html": {
-        "anchors": [
-          "get-an-element's-target"
-        ]
-      },
-      "https://whatpr.org/html/11426/speculative-loading.html": {
-        "anchors": [
-          "speculation-rule-set",
-          "speculation-rule",
-          "sr-set-prefetch",
-          "sr-requirements",
-          "parse-a-speculation-rule",
-          "speculative-load-candidate",
-          "consider-speculative-loads",
-          "inner-consider-speculative-loads-steps",
-          "document-sr-sets",
-          "sr-urls",
-          "compute-speculative-load-referrer-policy",
-          "sl-candidate-url",
-          "sl-candidate-nvs-hint",
-          "sr-nvs-hint",
-          "sl-candidate-eagerness",
-          "sr-eagerness",
-          "sl-candidate-referrer-policy",
-          "sl-candidate-tags",
-          "sr-tags",
-          "sr-predicate",
-          "finding-matching-links",
-          "collect-tags-from-speculative-load-candidates",
-          "prefetch-candidate",
-          "sl-candidate-anonymization-policy"
         ]
       },
       "https://wicg.github.io/background-fetch/": {

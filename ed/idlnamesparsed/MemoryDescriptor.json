@@ -6,7 +6,7 @@
       "title": "WebAssembly JavaScript Interface",
       "url": "https://www.w3.org/TR/wasm-js-api-2/"
     },
-    "fragment": "dictionary MemoryDescriptor {\n  required [EnforceRange] unsigned long initial;\n  [EnforceRange] unsigned long maximum;\n};",
+    "fragment": "dictionary MemoryDescriptor {\n  required AddressValue initial;\n  AddressValue maximum;\n  AddressType address;\n};",
     "href": "https://webassembly.github.io/spec/js-api/#dictdef-memorydescriptor"
   },
   "extended": [],

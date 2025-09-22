@@ -1548,67 +1548,6 @@
           ],
           "extAttrs": [],
           "partial": true
-        },
-        {
-          "fragment": "partial interface RTCRtpSender {\n    Promise<undefined> generateKeyFrame(optional sequence <DOMString> rids);\n};",
-          "type": "interface",
-          "name": "RTCRtpSender",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "generateKeyFrame",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "Promise",
-                "nullable": false,
-                "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "undefined"
-                  }
-                ]
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "rids",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "sequence",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": [
-                      {
-                        "type": "argument-type",
-                        "extAttrs": [],
-                        "generic": "",
-                        "nullable": false,
-                        "union": false,
-                        "idlType": "DOMString"
-                      }
-                    ]
-                  },
-                  "default": null,
-                  "optional": true,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": "",
-              "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsender-generatekeyframe"
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
         }
       ],
       "RTCRtpReceiver": [

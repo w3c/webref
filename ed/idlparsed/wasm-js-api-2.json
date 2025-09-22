@@ -12,6 +12,18 @@
           "Memory",
           "Table",
           "Global"
+        ],
+        "Window": [
+          "Tag",
+          "Exception"
+        ],
+        "Worker": [
+          "Tag",
+          "Exception"
+        ],
+        "Worklet": [
+          "Tag",
+          "Exception"
         ]
       },
       "functions": {}
@@ -60,8 +72,60 @@
         "partial": false,
         "href": "https://webassembly.github.io/spec/js-api/#dictdef-webassemblyinstantiatedsource"
       },
+      "WebAssemblyCompileOptions": {
+        "fragment": "dictionary WebAssemblyCompileOptions {\n    USVString? importedStringConstants;\n    sequence<USVString> builtins;\n};",
+        "type": "dictionary",
+        "name": "WebAssemblyCompileOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "importedStringConstants",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-webassemblycompileoptions-importedstringconstants"
+          },
+          {
+            "type": "field",
+            "name": "builtins",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-webassemblycompileoptions-builtins"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#dictdef-webassemblycompileoptions"
+      },
       "WebAssembly": {
-        "fragment": "[Exposed=*]\nnamespace WebAssembly {\n    boolean validate(BufferSource bytes);\n    Promise<Module> compile(BufferSource bytes);\n\n    Promise<WebAssemblyInstantiatedSource> instantiate(\n        BufferSource bytes, optional object importObject);\n\n    Promise<Instance> instantiate(\n        Module moduleObject, optional object importObject);\n};",
+        "fragment": "[Exposed=*]\nnamespace WebAssembly {\n    boolean validate(BufferSource bytes, optional WebAssemblyCompileOptions options = {});\n    Promise<Module> compile(BufferSource bytes, optional WebAssemblyCompileOptions options = {});\n\n    Promise<WebAssemblyInstantiatedSource> instantiate(\n        BufferSource bytes, optional object importObject, optional WebAssemblyCompileOptions options = {});\n\n    Promise<Instance> instantiate(\n        Module moduleObject, optional object importObject);\n\n    readonly attribute Tag JSTag;\n};",
         "type": "namespace",
         "name": "WebAssembly",
         "inheritance": null,
@@ -92,6 +156,24 @@
                 },
                 "default": null,
                 "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebAssemblyCompileOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -134,6 +216,24 @@
                 },
                 "default": null,
                 "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebAssemblyCompileOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -191,6 +291,24 @@
                   "idlType": "object"
                 },
                 "default": null,
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebAssemblyCompileOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -256,6 +374,22 @@
             "extAttrs": [],
             "special": "",
             "href": "https://webassembly.github.io/spec/js-api/#dom-webassembly-instantiate-moduleobject-importobject"
+          },
+          {
+            "type": "attribute",
+            "name": "JSTag",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Tag"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-webassembly-jstag"
           }
         ],
         "extAttrs": [
@@ -273,7 +407,7 @@
         "href": "https://webassembly.github.io/spec/js-api/#namespacedef-webassembly"
       },
       "ImportExportKind": {
-        "fragment": "enum ImportExportKind {\n  \"function\",\n  \"table\",\n  \"memory\",\n  \"global\"\n};",
+        "fragment": "enum ImportExportKind {\n  \"function\",\n  \"table\",\n  \"memory\",\n  \"global\",\n  \"tag\"\n};",
         "type": "enum",
         "name": "ImportExportKind",
         "values": [
@@ -296,10 +430,49 @@
             "type": "enum-value",
             "value": "global",
             "href": "https://webassembly.github.io/spec/js-api/#dom-importexportkind-global"
+          },
+          {
+            "type": "enum-value",
+            "value": "tag",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-importexportkind-tag"
           }
         ],
         "extAttrs": [],
         "href": "https://webassembly.github.io/spec/js-api/#enumdef-importexportkind"
+      },
+      "AddressType": {
+        "fragment": "enum AddressType {\n  \"i32\",\n  \"i64\",\n};",
+        "type": "enum",
+        "name": "AddressType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "i32",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-addresstype-i32"
+          },
+          {
+            "type": "enum-value",
+            "value": "i64",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-addresstype-i64"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://webassembly.github.io/spec/js-api/#enumdef-addresstype"
+      },
+      "AddressValue": {
+        "fragment": "typedef any AddressValue;",
+        "type": "typedef",
+        "name": "AddressValue",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "any"
+        },
+        "extAttrs": [],
+        "href": "https://webassembly.github.io/spec/js-api/#typedefdef-addressvalue"
       },
       "ModuleExportDescriptor": {
         "fragment": "dictionary ModuleExportDescriptor {\n  required USVString name;\n  required ImportExportKind kind;\n  // Note: Other fields such as signature may be added in the future.\n};",
@@ -404,7 +577,7 @@
         "href": "https://webassembly.github.io/spec/js-api/#dictdef-moduleimportdescriptor"
       },
       "Module": {
-        "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Module {\n  constructor(BufferSource bytes);\n  static sequence<ModuleExportDescriptor> exports(Module moduleObject);\n  static sequence<ModuleImportDescriptor> imports(Module moduleObject);\n  static sequence<ArrayBuffer> customSections(Module moduleObject, DOMString sectionName);\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Module {\n  constructor(BufferSource bytes, optional WebAssemblyCompileOptions options = {});\n  static sequence<ModuleExportDescriptor> exports(Module moduleObject);\n  static sequence<ModuleImportDescriptor> imports(Module moduleObject);\n  static sequence<ArrayBuffer> customSections(Module moduleObject, DOMString sectionName);\n};",
         "type": "interface",
         "name": "Module",
         "inheritance": null,
@@ -426,6 +599,24 @@
                 },
                 "default": null,
                 "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebAssemblyCompileOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -684,7 +875,7 @@
         "href": "https://webassembly.github.io/spec/js-api/#instance"
       },
       "MemoryDescriptor": {
-        "fragment": "dictionary MemoryDescriptor {\n  required [EnforceRange] unsigned long initial;\n  [EnforceRange] unsigned long maximum;\n};",
+        "fragment": "dictionary MemoryDescriptor {\n  required AddressValue initial;\n  AddressValue maximum;\n  AddressType address;\n};",
         "type": "dictionary",
         "name": "MemoryDescriptor",
         "inheritance": null,
@@ -695,18 +886,11 @@
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "EnforceRange",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
+              "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long"
+              "idlType": "AddressValue"
             },
             "default": null,
             "required": true,
@@ -715,25 +899,34 @@
           {
             "type": "field",
             "name": "maximum",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long"
+              "idlType": "AddressValue"
             },
             "default": null,
             "required": false,
             "href": "https://webassembly.github.io/spec/js-api/#dom-memorydescriptor-maximum"
+          },
+          {
+            "type": "field",
+            "name": "address",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AddressType"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-memorydescriptor-address"
           }
         ],
         "extAttrs": [],
@@ -741,7 +934,7 @@
         "href": "https://webassembly.github.io/spec/js-api/#dictdef-memorydescriptor"
       },
       "Memory": {
-        "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Memory {\n  constructor(MemoryDescriptor descriptor);\n  unsigned long grow([EnforceRange] unsigned long delta);\n  ArrayBuffer toFixedLengthBuffer();\n  ArrayBuffer toResizableBuffer();\n  readonly attribute ArrayBuffer buffer;\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Memory {\n  constructor(MemoryDescriptor descriptor);\n  AddressValue grow(AddressValue delta);\n  ArrayBuffer toFixedLengthBuffer();\n  ArrayBuffer toResizableBuffer();\n  readonly attribute ArrayBuffer buffer;\n};",
         "type": "interface",
         "name": "Memory",
         "inheritance": null,
@@ -778,27 +971,20 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long"
+              "idlType": "AddressValue"
             },
             "arguments": [
               {
                 "type": "argument",
                 "name": "delta",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "EnforceRange",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
+                "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "unsigned long"
+                  "idlType": "AddressValue"
                 },
                 "default": null,
                 "optional": false,
@@ -901,7 +1087,7 @@
         "href": "https://webassembly.github.io/spec/js-api/#enumdef-tablekind"
       },
       "TableDescriptor": {
-        "fragment": "dictionary TableDescriptor {\n  required TableKind element;\n  required [EnforceRange] unsigned long initial;\n  [EnforceRange] unsigned long maximum;\n};",
+        "fragment": "dictionary TableDescriptor {\n  required TableKind element;\n  required AddressValue initial;\n  AddressValue maximum;\n  AddressType address;\n};",
         "type": "dictionary",
         "name": "TableDescriptor",
         "inheritance": null,
@@ -928,18 +1114,11 @@
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "EnforceRange",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
+              "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long"
+              "idlType": "AddressValue"
             },
             "default": null,
             "required": true,
@@ -948,25 +1127,34 @@
           {
             "type": "field",
             "name": "maximum",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long"
+              "idlType": "AddressValue"
             },
             "default": null,
             "required": false,
             "href": "https://webassembly.github.io/spec/js-api/#dom-tabledescriptor-maximum"
+          },
+          {
+            "type": "field",
+            "name": "address",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AddressType"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-tabledescriptor-address"
           }
         ],
         "extAttrs": [],
@@ -974,7 +1162,7 @@
         "href": "https://webassembly.github.io/spec/js-api/#dictdef-tabledescriptor"
       },
       "Table": {
-        "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Table {\n  constructor(TableDescriptor descriptor, optional any value);\n  unsigned long grow([EnforceRange] unsigned long delta, optional any value);\n  any get([EnforceRange] unsigned long index);\n  undefined set([EnforceRange] unsigned long index, optional any value);\n  readonly attribute unsigned long length;\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Table {\n  constructor(TableDescriptor descriptor, optional any value);\n  AddressValue grow(AddressValue delta, optional any value);\n  any get(AddressValue index);\n  undefined set(AddressValue index, optional any value);\n  readonly attribute AddressValue length;\n};",
         "type": "interface",
         "name": "Table",
         "inheritance": null,
@@ -1027,27 +1215,20 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long"
+              "idlType": "AddressValue"
             },
             "arguments": [
               {
                 "type": "argument",
                 "name": "delta",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "EnforceRange",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
+                "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "unsigned long"
+                  "idlType": "AddressValue"
                 },
                 "default": null,
                 "optional": false,
@@ -1089,21 +1270,14 @@
               {
                 "type": "argument",
                 "name": "index",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "EnforceRange",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
+                "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "unsigned long"
+                  "idlType": "AddressValue"
                 },
                 "default": null,
                 "optional": false,
@@ -1129,21 +1303,14 @@
               {
                 "type": "argument",
                 "name": "index",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "EnforceRange",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
+                "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "unsigned long"
+                  "idlType": "AddressValue"
                 },
                 "default": null,
                 "optional": false,
@@ -1179,7 +1346,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long"
+              "idlType": "AddressValue"
             },
             "extAttrs": [],
             "special": "",
@@ -1400,6 +1567,347 @@
         ],
         "partial": false,
         "href": "https://webassembly.github.io/spec/js-api/#global"
+      },
+      "TagType": {
+        "fragment": "dictionary TagType {\n  required sequence<ValueType> parameters;\n};",
+        "type": "dictionary",
+        "name": "TagType",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "parameters",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ValueType"
+                }
+              ]
+            },
+            "default": null,
+            "required": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-tagtype-parameters"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#dictdef-tagtype"
+      },
+      "Tag": {
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Tag {\n  constructor(TagType type);\n};",
+        "type": "interface",
+        "name": "Tag",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TagType"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://webassembly.github.io/spec/js-api/#dom-tag-tag"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNamespace",
+            "rhs": {
+              "type": "identifier",
+              "value": "WebAssembly"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "Worklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#tag"
+      },
+      "ExceptionOptions": {
+        "fragment": "dictionary ExceptionOptions {\n  boolean traceStack = false;\n};",
+        "type": "dictionary",
+        "name": "ExceptionOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "traceStack",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-exceptionoptions-tracestack"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#dictdef-exceptionoptions"
+      },
+      "Exception": {
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Exception {\n  constructor(Tag exceptionTag, sequence<any> payload, optional ExceptionOptions options = {});\n  any getArg([EnforceRange] unsigned long index);\n  boolean is(Tag exceptionTag);\n  readonly attribute (DOMString or undefined) stack;\n};",
+        "type": "interface",
+        "name": "Exception",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "exceptionTag",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Tag"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "payload",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "any"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ExceptionOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://webassembly.github.io/spec/js-api/#dom-exception-exception"
+          },
+          {
+            "type": "operation",
+            "name": "getArg",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "EnforceRange",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-exception-getarg"
+          },
+          {
+            "type": "operation",
+            "name": "is",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "exceptionTag",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Tag"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webassembly.github.io/spec/js-api/#dom-exception-is"
+          },
+          {
+            "type": "attribute",
+            "name": "stack",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webassembly.github.io/spec/js-api/#dom-exception-stack"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNamespace",
+            "rhs": {
+              "type": "identifier",
+              "value": "WebAssembly"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "Worklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://webassembly.github.io/spec/js-api/#exception"
       }
     },
     "idlExtendedNames": {},
@@ -1412,6 +1920,18 @@
         "Memory",
         "Table",
         "Global"
+      ],
+      "Window": [
+        "Tag",
+        "Exception"
+      ],
+      "Worker": [
+        "Tag",
+        "Exception"
+      ],
+      "Worklet": [
+        "Tag",
+        "Exception"
       ]
     },
     "dependencies": {
@@ -1419,11 +1939,14 @@
         "Module",
         "Instance"
       ],
+      "WebAssemblyCompileOptions": [],
       "WebAssembly": [
         "BufferSource",
+        "WebAssemblyCompileOptions",
         "Module",
         "WebAssemblyInstantiatedSource",
-        "Instance"
+        "Instance",
+        "Tag"
       ],
       "ModuleExportDescriptor": [
         "ImportExportKind"
@@ -1433,6 +1956,7 @@
       ],
       "Module": [
         "BufferSource",
+        "WebAssemblyCompileOptions",
         "ModuleExportDescriptor",
         "Module",
         "ModuleImportDescriptor",
@@ -1441,22 +1965,40 @@
       "Instance": [
         "Module"
       ],
-      "MemoryDescriptor": [],
+      "MemoryDescriptor": [
+        "AddressValue",
+        "AddressType"
+      ],
       "Memory": [
         "MemoryDescriptor",
+        "AddressValue",
         "ArrayBuffer"
       ],
       "TableDescriptor": [
-        "TableKind"
+        "TableKind",
+        "AddressValue",
+        "AddressType"
       ],
       "Table": [
-        "TableDescriptor"
+        "TableDescriptor",
+        "AddressValue"
       ],
       "GlobalDescriptor": [
         "ValueType"
       ],
       "Global": [
         "GlobalDescriptor"
+      ],
+      "TagType": [
+        "ValueType"
+      ],
+      "Tag": [
+        "TagType"
+      ],
+      "ExceptionOptions": [],
+      "Exception": [
+        "Tag",
+        "ExceptionOptions"
       ]
     },
     "externalDependencies": [

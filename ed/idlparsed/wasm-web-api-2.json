@@ -12,7 +12,7 @@
     "idlExtendedNames": {
       "WebAssembly": [
         {
-          "fragment": "[Exposed=(Window,Worker)]\npartial namespace WebAssembly {\n  Promise<Module> compileStreaming(Promise<Response> source);\n  Promise<WebAssemblyInstantiatedSource> instantiateStreaming(\n      Promise<Response> source, optional object importObject);\n};",
+          "fragment": "[Exposed=(Window,Worker)]\npartial namespace WebAssembly {\n  Promise<Module> compileStreaming(Promise<Response> source, optional WebAssemblyCompileOptions options = {});\n  Promise<WebAssemblyInstantiatedSource> instantiateStreaming(\n      Promise<Response> source, optional object importObject, optional WebAssemblyCompileOptions options = {});\n};",
           "type": "namespace",
           "name": "WebAssembly",
           "inheritance": null,
@@ -61,6 +61,24 @@
                   },
                   "default": null,
                   "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "WebAssemblyCompileOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
                   "variadic": false
                 }
               ],
@@ -129,6 +147,24 @@
                   "default": null,
                   "optional": true,
                   "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "WebAssemblyCompileOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
                 }
               ],
               "extAttrs": [],
@@ -171,6 +207,7 @@
       "WebAssembly": [
         "Module",
         "Response",
+        "WebAssemblyCompileOptions",
         "WebAssemblyInstantiatedSource"
       ]
     },
@@ -178,6 +215,7 @@
       "WebAssembly",
       "Module",
       "Response",
+      "WebAssemblyCompileOptions",
       "WebAssemblyInstantiatedSource"
     ],
     "hasObsoleteIdl": false

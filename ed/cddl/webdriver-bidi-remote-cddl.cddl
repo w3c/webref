@@ -121,7 +121,6 @@ session.UnsubscribeByIDRequest = {
 
 session.UnsubscribeByAttributesRequest = {
   events: [+text],
-  ? contexts: [+browsingContext.BrowsingContext],
 }
 
 session.Status = (
@@ -161,7 +160,8 @@ BrowserCommand = (
   browser.GetClientWindows //
   browser.GetUserContexts //
   browser.RemoveUserContext //
-  browser.SetClientWindowState
+  browser.SetClientWindowState //
+  browser.SetDownloadBehavior
 )
 
 browser.ClientWindow = text;
@@ -237,6 +237,32 @@ browser.ClientWindowRectState = (
   ? height: js-uint,
   ? x: js-int,
   ? y: js-int,
+)
+
+browser.SetDownloadBehavior = (
+  method: "browser.setDownloadBehavior",
+  params: browser.SetDownloadBehaviorParameters
+)
+
+browser.SetDownloadBehaviorParameters = {
+  downloadBehavior: browser.DownloadBehavior / null,
+  ? userContexts: [+browser.UserContext]
+}
+
+browser.DownloadBehavior = {
+  (
+    browser.DownloadBehaviorAllowed //
+    browser.DownloadBehaviorDenied
+  )
+}
+
+browser.DownloadBehaviorAllowed = (
+  type: "allowed",
+  ? destinationFolder: text
+)
+
+browser.DownloadBehaviorDenied = (
+  type: "denied"
 )
 
 BrowsingContextCommand = (
@@ -1719,7 +1745,6 @@ session.UnsubscribeByIDRequest = {
 
 session.UnsubscribeByAttributesRequest = {
   events: [+text],
-  ? contexts: [+browsingContext.BrowsingContext],
 }
 
 session.Status = (
@@ -1759,7 +1784,8 @@ BrowserCommand = (
   browser.GetClientWindows //
   browser.GetUserContexts //
   browser.RemoveUserContext //
-  browser.SetClientWindowState
+  browser.SetClientWindowState //
+  browser.SetDownloadBehavior
 )
 
 browser.ClientWindow = text;
@@ -1835,6 +1861,32 @@ browser.ClientWindowRectState = (
   ? height: js-uint,
   ? x: js-int,
   ? y: js-int,
+)
+
+browser.SetDownloadBehavior = (
+  method: "browser.setDownloadBehavior",
+  params: browser.SetDownloadBehaviorParameters
+)
+
+browser.SetDownloadBehaviorParameters = {
+  downloadBehavior: browser.DownloadBehavior / null,
+  ? userContexts: [+browser.UserContext]
+}
+
+browser.DownloadBehavior = {
+  (
+    browser.DownloadBehaviorAllowed //
+    browser.DownloadBehaviorDenied
+  )
+}
+
+browser.DownloadBehaviorAllowed = (
+  type: "allowed",
+  ? destinationFolder: text
+)
+
+browser.DownloadBehaviorDenied = (
+  type: "denied"
 )
 
 BrowsingContextCommand = (

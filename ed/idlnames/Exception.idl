@@ -1,0 +1,8 @@
+// Source: WebAssembly JavaScript Interface (https://www.w3.org/TR/wasm-js-api-2/)
+[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]
+interface Exception {
+  constructor(Tag exceptionTag, sequence<any> payload, optional ExceptionOptions options = {});
+  any getArg([EnforceRange] unsigned long index);
+  boolean is(Tag exceptionTag);
+  readonly attribute (DOMString or undefined) stack;
+};

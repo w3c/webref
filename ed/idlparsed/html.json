@@ -18262,25 +18262,6 @@
         "extAttrs": [],
         "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasimagesource"
       },
-      "PredefinedColorSpace": {
-        "fragment": "enum PredefinedColorSpace { \"srgb\", \"display-p3\" };",
-        "type": "enum",
-        "name": "PredefinedColorSpace",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "srgb",
-            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-predefinedcolorspace-srgb"
-          },
-          {
-            "type": "enum-value",
-            "value": "display-p3",
-            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-predefinedcolorspace-display-p3"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://html.spec.whatwg.org/multipage/canvas.html#predefinedcolorspace"
-      },
       "CanvasColorType": {
         "fragment": "enum CanvasColorType { \"unorm8\", \"float16\" };",
         "type": "enum",
@@ -24128,6 +24109,25 @@
         ],
         "partial": false,
         "href": "https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvasrenderingcontext2d"
+      },
+      "PredefinedColorSpace": {
+        "fragment": "enum PredefinedColorSpace { \"srgb\", \"display-p3\" };",
+        "type": "enum",
+        "name": "PredefinedColorSpace",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "srgb",
+            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-predefinedcolorspace-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "display-p3",
+            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-predefinedcolorspace-display-p3"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#predefinedcolorspace"
       },
       "CustomElementRegistry": {
         "fragment": "[Exposed=Window]\ninterface CustomElementRegistry {\n  constructor();\n\n  [CEReactions] undefined define(DOMString name, CustomElementConstructor constructor, optional ElementDefinitionOptions options = {});\n  (CustomElementConstructor or undefined) get(DOMString name);\n  DOMString? getName(CustomElementConstructor constructor);\n  Promise<CustomElementConstructor> whenDefined(DOMString name);\n  [CEReactions] undefined upgrade(Node root);\n  undefined initialize(Node root);\n};",

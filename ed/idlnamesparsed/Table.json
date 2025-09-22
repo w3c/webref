@@ -6,7 +6,7 @@
       "title": "WebAssembly JavaScript Interface",
       "url": "https://www.w3.org/TR/wasm-js-api-2/"
     },
-    "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Table {\n  constructor(TableDescriptor descriptor, optional any value);\n  unsigned long grow([EnforceRange] unsigned long delta, optional any value);\n  any get([EnforceRange] unsigned long index);\n  undefined set([EnforceRange] unsigned long index, optional any value);\n  readonly attribute unsigned long length;\n};",
+    "fragment": "[LegacyNamespace=WebAssembly, Exposed=*]\ninterface Table {\n  constructor(TableDescriptor descriptor, optional any value);\n  AddressValue grow(AddressValue delta, optional any value);\n  any get(AddressValue index);\n  undefined set(AddressValue index, optional any value);\n  readonly attribute AddressValue length;\n};",
     "href": "https://webassembly.github.io/spec/js-api/#table"
   },
   "extended": [],

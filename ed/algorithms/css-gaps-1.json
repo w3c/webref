@@ -114,6 +114,40 @@
           "html": "If <var>auto gaps</var> is non-empty,\n\t\t\t\t<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#assign-gap-decoration-values\" id=\"ref-for-assign-gap-decoration-values②\">assign gap decoration values</a> to <var>auto gaps</var>\n\t\t\t\tusing the list of values in the second argument of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#auto-repeater\" id=\"ref-for-auto-repeater⑥\">auto repeater</a>."
         }
       ]
+    },
+    {
+      "name": "interpolate with auto repeaters",
+      "html": "When either of the lists we are interpolating between (<var>from</var> and <var>to</var>) include an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#auto-repeater\" id=\"ref-for-auto-repeater⑦\">auto repeater</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Split each of <var>from</var> and <var>to</var> into segments, similar to how we <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#assign-gap-decoration-values\" id=\"ref-for-assign-gap-decoration-values③\">assign gap decoration values</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>leading values</var> be the values before the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#auto-repeater\" id=\"ref-for-auto-repeater⑧\">auto repeater</a>."
+            },
+            {
+              "html": "Let <var>trailing values</var> be the values after the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#auto-repeater\" id=\"ref-for-auto-repeater⑨\">auto repeater</a>."
+            },
+            {
+              "html": "Let <var>auto values</var> be the values inside the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#auto-repeater\" id=\"ref-for-auto-repeater①⓪\">auto repeater</a>."
+            }
+          ]
+        },
+        {
+          "html": "If only one of <var>from</var> or <var>to</var> contains an auto-repeater, we fall back to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#discrete\" id=\"ref-for-discrete\">discrete</a> interpolation."
+        },
+        {
+          "html": "Expand any integer repeaters on each segment."
+        },
+        {
+          "html": "If the length of <var>leading values</var> in <var>from</var> and <var>leading values</var> in <var>to</var> don’t match, we fall back to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#discrete\" id=\"ref-for-discrete①\">discrete</a> interpolation.\n\t\t\t\t\tIf the length of <var>trailing values</var> in <var>from</var> and <var>trailing values</var> in <var>to</var> don’t match, we fall back to <span id=\"ref-for-discrete②\">discrete</span> interpolation."
+        },
+        {
+          "html": "When both <var>from</var> and <var>to</var> contain auto-repeaters, and the length of their segments match as described above,\n\t\t\t\t\tapply <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#repeatable-list\" id=\"ref-for-repeatable-list①\">repeatable list</a> interpolation to the lists of values in each <var>auto values</var>."
+        }
+      ]
     }
   ]
 }

@@ -137,6 +137,30 @@
         "extAttrs": [],
         "href": "https://w3c.github.io/mediasession/#enumdef-mediasessionaction"
       },
+      "MediaSessionEnterPictureInPictureReason": {
+        "fragment": "enum MediaSessionEnterPictureInPictureReason {\n  \"other\",\n  \"useraction\",\n  \"contentoccluded\"\n};",
+        "type": "enum",
+        "name": "MediaSessionEnterPictureInPictureReason",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "other",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionenterpictureinpicturereason-other"
+          },
+          {
+            "type": "enum-value",
+            "value": "useraction",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionenterpictureinpicturereason-useraction"
+          },
+          {
+            "type": "enum-value",
+            "value": "contentoccluded",
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionenterpictureinpicturereason-contentoccluded"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediasession/#enumdef-mediasessionenterpictureinpicturereason"
+      },
       "MediaSessionActionHandler": {
         "fragment": "callback MediaSessionActionHandler = undefined(MediaSessionActionDetails details);",
         "type": "callback",
@@ -995,7 +1019,7 @@
         "href": "https://w3c.github.io/mediasession/#dictdef-mediapositionstate"
       },
       "MediaSessionActionDetails": {
-        "fragment": "dictionary MediaSessionActionDetails {\n  required MediaSessionAction action;\n  double seekOffset;\n  double seekTime;\n  boolean fastSeek;\n  boolean isActivating;\n};",
+        "fragment": "dictionary MediaSessionActionDetails {\n  required MediaSessionAction action;\n  double seekOffset;\n  double seekTime;\n  boolean fastSeek;\n  boolean isActivating;\n  MediaSessionEnterPictureInPictureReason enterPictureInPictureReason;\n};",
         "type": "dictionary",
         "name": "MediaSessionActionDetails",
         "inheritance": null,
@@ -1079,6 +1103,22 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/mediasession/#dom-mediasessionactiondetails-isactivating"
+          },
+          {
+            "type": "field",
+            "name": "enterPictureInPictureReason",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaSessionEnterPictureInPictureReason"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/mediasession/#dom-mediasessionactiondetails-enterpictureinpicturereason"
           }
         ],
         "extAttrs": [],
@@ -1170,7 +1210,8 @@
       "MediaImage": [],
       "MediaPositionState": [],
       "MediaSessionActionDetails": [
-        "MediaSessionAction"
+        "MediaSessionAction",
+        "MediaSessionEnterPictureInPictureReason"
       ]
     },
     "externalDependencies": [

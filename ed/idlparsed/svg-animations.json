@@ -14,14 +14,13 @@
           "SVGSetElement",
           "SVGAnimateMotionElement",
           "SVGMPathElement",
-          "SVGAnimateTransformElement",
-          "SVGDiscardElement"
+          "SVGAnimateTransformElement"
         ]
       }
     },
     "idlNames": {
       "TimeEvent": {
-        "fragment": "[Exposed=Window]\ninterface TimeEvent : Event {\n\n  readonly attribute WindowProxy? view;\n  readonly attribute long detail;\n\n  undefined initTimeEvent(DOMString typeArg, Window? viewArg, long detailArg);\n};",
+        "fragment": "[Exposed=Window]\ninterface TimeEvent : Event {\n\n  readonly attribute WindowProxy? view;\n  readonly attribute long detail;\n\n  undefined initTimeEvent(DOMString typeArg, optional Window? viewArg = null, optional long detailArg = 0);\n};",
         "type": "interface",
         "name": "TimeEvent",
         "inheritance": "Event",
@@ -96,8 +95,10 @@
                   "union": false,
                   "idlType": "Window"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "null"
+                },
+                "optional": true,
                 "variadic": false
               },
               {
@@ -112,8 +113,11 @@
                   "union": false,
                   "idlType": "long"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "number",
+                  "value": "0"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -447,25 +451,6 @@
           }
         ],
         "partial": false
-      },
-      "SVGDiscardElement": {
-        "fragment": "[Exposed=Window]\ninterface SVGDiscardElement : SVGAnimationElement {\n};",
-        "type": "interface",
-        "name": "SVGDiscardElement",
-        "inheritance": "SVGAnimationElement",
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -601,8 +586,7 @@
         "SVGSetElement",
         "SVGAnimateMotionElement",
         "SVGMPathElement",
-        "SVGAnimateTransformElement",
-        "SVGDiscardElement"
+        "SVGAnimateTransformElement"
       ]
     },
     "dependencies": {
@@ -630,9 +614,6 @@
         "SVGURIReference"
       ],
       "SVGAnimateTransformElement": [
-        "SVGAnimationElement"
-      ],
-      "SVGDiscardElement": [
         "SVGAnimationElement"
       ],
       "SVGSVGElement": []

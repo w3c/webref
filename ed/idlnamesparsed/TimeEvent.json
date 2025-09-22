@@ -6,7 +6,7 @@
       "title": "SVG Animations",
       "url": "https://svgwg.org/specs/animations/"
     },
-    "fragment": "[Exposed=Window]\ninterface TimeEvent : Event {\n\n  readonly attribute WindowProxy? view;\n  readonly attribute long detail;\n\n  undefined initTimeEvent(DOMString typeArg, Window? viewArg, long detailArg);\n};"
+    "fragment": "[Exposed=Window]\ninterface TimeEvent : Event {\n\n  readonly attribute WindowProxy? view;\n  readonly attribute long detail;\n\n  undefined initTimeEvent(DOMString typeArg, optional Window? viewArg = null, optional long detailArg = 0);\n};"
   },
   "extended": [],
   "inheritance": {

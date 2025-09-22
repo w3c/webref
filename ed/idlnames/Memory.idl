@@ -2,7 +2,7 @@
 [LegacyNamespace=WebAssembly, Exposed=*]
 interface Memory {
   constructor(MemoryDescriptor descriptor);
-  unsigned long grow([EnforceRange] unsigned long delta);
+  AddressValue grow(AddressValue delta);
   ArrayBuffer toFixedLengthBuffer();
   ArrayBuffer toResizableBuffer();
   readonly attribute ArrayBuffer buffer;

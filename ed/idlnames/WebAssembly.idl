@@ -1,20 +1,22 @@
 // Source: WebAssembly JavaScript Interface (https://www.w3.org/TR/wasm-js-api-2/)
 [Exposed=*]
 namespace WebAssembly {
-    boolean validate(BufferSource bytes);
-    Promise<Module> compile(BufferSource bytes);
+    boolean validate(BufferSource bytes, optional WebAssemblyCompileOptions options = {});
+    Promise<Module> compile(BufferSource bytes, optional WebAssemblyCompileOptions options = {});
 
     Promise<WebAssemblyInstantiatedSource> instantiate(
-        BufferSource bytes, optional object importObject);
+        BufferSource bytes, optional object importObject, optional WebAssemblyCompileOptions options = {});
 
     Promise<Instance> instantiate(
         Module moduleObject, optional object importObject);
+
+    readonly attribute Tag JSTag;
 };
 
 // Source: WebAssembly Web API (https://www.w3.org/TR/wasm-web-api-2/)
 [Exposed=(Window,Worker)]
 partial namespace WebAssembly {
-  Promise<Module> compileStreaming(Promise<Response> source);
+  Promise<Module> compileStreaming(Promise<Response> source, optional WebAssemblyCompileOptions options = {});
   Promise<WebAssemblyInstantiatedSource> instantiateStreaming(
-      Promise<Response> source, optional object importObject);
+      Promise<Response> source, optional object importObject, optional WebAssemblyCompileOptions options = {});
 };

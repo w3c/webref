@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "RTCDegradationPreference": {
-        "fragment": "enum RTCDegradationPreference {\n  \"maintain-framerate\",\n  \"maintain-resolution\",\n  \"balanced\"\n};",
+        "fragment": "enum RTCDegradationPreference {\n  \"maintain-framerate\",\n  \"maintain-resolution\",\n  \"balanced\",\n  \"maintain-framerate-and-resolution\"\n};",
         "type": "enum",
         "name": "RTCDegradationPreference",
         "values": [
@@ -28,6 +28,11 @@
             "type": "enum-value",
             "value": "balanced",
             "href": "https://w3c.github.io/mst-content-hint/#dom-rtcdegradationpreference-balanced"
+          },
+          {
+            "type": "enum-value",
+            "value": "maintain-framerate-and-resolution",
+            "href": "https://w3c.github.io/mst-content-hint/#dom-rtcdegradationpreference-maintain-framerate-and-resolution"
           }
         ],
         "extAttrs": [],

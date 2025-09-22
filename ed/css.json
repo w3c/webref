@@ -6164,7 +6164,7 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "repeatable list, see § 3.4.1 Interpolation behavior.",
       "styleDeclaration": [
         "column-rule-color",
         "columnRuleColor"
@@ -6215,7 +6215,7 @@
       "percentages": "n/a",
       "computedValue": "list of absolute lengths, snapped as a border width, or 0 under conditions described below",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "repeatable list, see § 3.4.1 Interpolation behavior.",
       "styleDeclaration": [
         "column-rule-width",
         "columnRuleWidth"
@@ -9206,7 +9206,7 @@
         "item-flow",
         "itemFlow"
       ],
-      "syntax": "<'item-direction'> || <'item-wrap'> || <'item-pack'> || <'item-slack'>",
+      "syntax": "<'item-direction'> || <'item-wrap'> || <'item-pack'> || <'item-tolerance'>",
       "extended": []
     },
     {
@@ -9227,9 +9227,9 @@
       "extended": []
     },
     {
-      "name": "item-slack",
-      "href": "https://drafts.csswg.org/css-grid-3/#propdef-item-slack",
-      "initial": "1em",
+      "name": "item-tolerance",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-item-tolerance",
+      "initial": "normal",
       "appliesTo": "masonry containers",
       "inherited": "no",
       "percentages": "relative to the grid-axis content box size of the masonry container",
@@ -9237,10 +9237,10 @@
       "canonicalOrder": "per grammar",
       "animationType": "as length",
       "styleDeclaration": [
-        "item-slack",
-        "itemSlack"
+        "item-tolerance",
+        "itemTolerance"
       ],
-      "syntax": "<length-percentage> | infinite",
+      "syntax": "normal | <length-percentage> | infinite",
       "extended": []
     },
     {
@@ -10347,7 +10347,7 @@
       "name": "max-lines",
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-max-lines",
       "initial": "none",
-      "appliesTo": "block containers which are also either fragmentation containers that capture region breaks or line-clamp containers",
+      "appliesTo": "block containers which are also either line-clamp containers or fragmentation containers that capture region breaks",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "the keyword none or an integer",
@@ -12133,7 +12133,7 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "repeatable list, see § 3.4.1 Interpolation behavior.",
       "styleDeclaration": [
         "row-rule-color",
         "rowRuleColor"
@@ -12184,7 +12184,7 @@
       "percentages": "n/a",
       "computedValue": "list of absolute lengths, snapped as a border width, or 0 under conditions described below",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "repeatable list, see § 3.4.1 Interpolation behavior.",
       "styleDeclaration": [
         "row-rule-width",
         "rowRuleWidth"
@@ -13153,7 +13153,7 @@
         "shape-subtract",
         "shapeSubtract"
       ],
-      "syntax": "none | [ <basic-shape>| <uri> ]+",
+      "syntax": "none | [ <basic-shape> | <uri> ]+",
       "extended": []
     },
     {
@@ -15481,6 +15481,13 @@
       "prose": "The ::placeholder pseudo-element represents the portion of the input that contains the placeholder text.",
       "href": "https://drafts.csswg.org/css-forms-1/#selectordef-placeholder",
       "syntax": "::placeholder",
+      "extended": []
+    },
+    {
+      "name": "::reveal-icon",
+      "prose": "The ::reveal-icon pseudo-element represents the portion of the input that allows the user to temporarily disable obscuring of sensitive text input when clicked if provided by the user agent. User agents providing ::reveal-icon may choose to remove it in some circumstances to help protect sensitive text input from being revealed unintentionally.",
+      "href": "https://drafts.csswg.org/css-forms-1/#selectordef-reveal-icon",
+      "syntax": "::reveal-icon",
       "extended": []
     },
     {

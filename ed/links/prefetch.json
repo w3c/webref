@@ -13,6 +13,17 @@
       "https://fetch.spec.whatwg.org/": {},
       "https://github.com/privacycg/storage-partitioning": {},
       "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/document-lifecycle.html": {
+        "anchors": [
+          "note-sl-candidate-redundant-with-nvs-strictness"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html": {
+        "anchors": [
+          "speculative-loading-security",
+          "speculative-loading-privacy"
+        ]
+      },
       "https://httpwg.org/specs/rfc6265.html": {},
       "https://infra.spec.whatwg.org/": {},
       "https://privacycg.github.io/storage-partitioning/": {},
@@ -30,17 +41,6 @@
       "https://w3c.github.io/webappsec-referrer-policy/": {},
       "https://w3c.github.io/webappsec-secure-contexts/": {},
       "https://w3c.github.io/webdriver-bidi/": {},
-      "https://whatpr.org/html/11426/document-lifecycle.html": {
-        "anchors": [
-          "note-sl-candidate-redundant-with-nvs-strictness"
-        ]
-      },
-      "https://whatpr.org/html/11426/speculative-loading.html": {
-        "anchors": [
-          "speculative-loading-security",
-          "speculative-loading-privacy"
-        ]
-      },
       "https://wicg.github.io/nav-speculation/prerendering.html": {},
       "https://www.ietf.org/archive/id/draft-geohash-hint-00.html": {},
       "https://www.rfc-editor.org/rfc/rfc8610": {},
@@ -71,12 +71,14 @@
           "determine-the-network-partition-key",
           "credentials",
           "concept-request",
+          "concept-request-clone",
+          "concept-request-referrer",
+          "concept-request-body",
           "fetch-controller",
           "fetch-controller-abort",
           "concept-network-error",
           "concept-request-url",
           "concept-request-reserved-client",
-          "concept-request-referrer",
           "concept-request-url-list",
           "concept-response-clone",
           "concept-request-policy-container",
@@ -88,7 +90,6 @@
           "concept-request-mode",
           "concept-request-referrer-policy",
           "concept-request-method",
-          "concept-request-body",
           "concept-header-list-set",
           "concept-request-header-list",
           "concept-request-reload-navigation-flag",
@@ -241,6 +242,20 @@
           "process-early-hint-headers"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/speculative-loading.html": {
+        "anchors": [
+          "speculation-rule-tag",
+          "prefetch-ip-anonymization-policy",
+          "speculative-load-candidate",
+          "sl-candidate-url",
+          "prefetch-candidate",
+          "sl-candidate-anonymization-policy",
+          "prerender-candidate",
+          "cross-origin-prefetch-ip-anonymization-policy",
+          "copiap-origin",
+          "sec-speculation-tags"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/structured-data.html": {
         "anchors": [
           "structuredserializeforstorage"
@@ -365,20 +380,6 @@
           "navigable-id",
           "set-of-sessions-for-which-an-event-is-enabled",
           "emit-an-event"
-        ]
-      },
-      "https://whatpr.org/html/11426/speculative-loading.html": {
-        "anchors": [
-          "speculation-rule-tag",
-          "prefetch-ip-anonymization-policy",
-          "speculative-load-candidate",
-          "sl-candidate-url",
-          "prefetch-candidate",
-          "sl-candidate-anonymization-policy",
-          "prerender-candidate",
-          "cross-origin-prefetch-ip-anonymization-policy",
-          "copiap-origin",
-          "sec-speculation-tags"
         ]
       },
       "https://wicg.github.io/nav-speculation/prerendering.html": {

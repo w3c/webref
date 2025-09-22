@@ -309,14 +309,14 @@
         },
         {
           "name": "<integer [1,∞]>",
-          "prose": "Whether this should imply discard or collapse is an unresolved question. [Issue #7708] Sets continue to collapse if either or both values are specified, unless the -webkit-legacy keyword is also specified. Sets max-lines to the specified <integer> or to none if omitted, and block-ellipsis to other component of the value if specified or to auto if omitted.",
+          "prose": "Sets continue to collapse if either or both values are specified, unless the -webkit-legacy keyword is also specified. Sets max-lines to the specified <integer> or to none if omitted, and block-ellipsis to other component of the value if specified or to auto if omitted.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-integer-1",
           "type": "value",
           "value": "<integer [1,∞]>"
         },
         {
           "name": "<block-ellipsis>",
-          "prose": "Whether this should imply discard or collapse is an unresolved question. [Issue #7708] Sets continue to collapse if either or both values are specified, unless the -webkit-legacy keyword is also specified. Sets max-lines to the specified <integer> or to none if omitted, and block-ellipsis to other component of the value if specified or to auto if omitted.",
+          "prose": "Sets continue to collapse if either or both values are specified, unless the -webkit-legacy keyword is also specified. Sets max-lines to the specified <integer> or to none if omitted, and block-ellipsis to other component of the value if specified or to auto if omitted.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-line-clamp-block-ellipsis",
           "type": "value",
           "value": "<block-ellipsis>"
@@ -378,18 +378,18 @@
           "value": "auto"
         },
         {
-          "name": "discard",
-          "prose": "The box must establish an independent formatting context and becomes a fragmentation container that captures region breaks, if it is not already. [CSS-BREAK-3] Content after the first region break is not rendered (see below). (If the box is a multi-column container, any overflow columns are also not rendered.)",
-          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-discard",
-          "type": "value",
-          "value": "discard"
-        },
-        {
           "name": "collapse",
-          "prose": "If the box is a block container, then it must establish an independent formatting context that also becomes a line-clamp container. This causes all content after the clamp point to be visually hidden, and to not be taken into account for the box’s automatic block size. If the box is a multicol container, the behavior is the same as 'continue/auto'.",
+          "prose": "If the box is a block container, then it must establish an independent formatting context that also becomes a line-clamp container. This causes all content after the clamp point to be visually hidden, and to not be taken into account for the box’s automatic block size. If the box is a multicol container, the behavior is the same as auto.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-collapse",
           "type": "value",
           "value": "collapse"
+        },
+        {
+          "name": "discard",
+          "prose": "The box must establish an independent formatting context and becomes a fragmentation container that captures region breaks, if it is not already. [CSS-BREAK-3] Content after the first region break is not rendered. See § 5.3.2 Discarding Content for further details. continue: discard is meant to generalize and replace the region-fragment property from [CSS-REGIONS-1]. Once it is sufficiently stable in this specification, region-fragment should be removed from the regions specification in favor of this.",
+          "href": "https://drafts.csswg.org/css-overflow-4/#valdef-continue-discard",
+          "type": "value",
+          "value": "discard"
         }
       ],
       "styleDeclaration": [
@@ -401,7 +401,7 @@
       "href": "https://drafts.csswg.org/css-overflow-4/#propdef-max-lines",
       "value": "none | <integer [1,∞]>",
       "initial": "none",
-      "appliesTo": "block containers which are also either fragmentation containers that capture region breaks or line-clamp containers",
+      "appliesTo": "block containers which are also either line-clamp containers or fragmentation containers that capture region breaks",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "the keyword none or an integer",

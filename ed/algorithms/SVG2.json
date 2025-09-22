@@ -1670,10 +1670,16 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the reflected attribute is not present,\n  the <a class=\"idlinterface\" href=\"https://svgwg.org/svg2-draft/types.html#InterfaceSVGAnimatedString\">SVGAnimatedString</a> object is defined to additionally reflect\n  a second, deprecated attribute, and that deprecated attribute is present,\n  then set that deprecated attribute to the specified value."
+          "html": "If the reflected attribute’s element is an <a class=\"idlinterface\" href=\"https://svgwg.org/svg2-draft/interact.html#InterfaceSVGScriptElement\">SVGScriptElement</a>, let <var>value</var> be the result of\n    executing the <a href=\"https://www.w3.org/TR/trusted-types/#get-trusted-type-compliant-string-algorithm\">Get Trusted Type compliant string</a>\n    algorithm, with <a href=\"https://www.w3.org/TR/trusted-types/#trustedscripturl\">TrustedScriptURL</a>,\n    reflected attribute’s Document's relevant global object, 'SVGScriptElement href', and 'script'."
         },
         {
-          "html": "Otherwise, set the reflected attribute to the specified value."
+          "html": "Otherwise, let value be the specified value."
+        },
+        {
+          "html": "If the reflected attribute is not present,\n  the <a class=\"idlinterface\" href=\"https://svgwg.org/svg2-draft/types.html#InterfaceSVGAnimatedString\">SVGAnimatedString</a> object is defined to additionally reflect\n  a second, deprecated attribute, and that deprecated attribute is present,\n  then set that deprecated attribute to value."
+        },
+        {
+          "html": "Otherwise, set the reflected attribute to value."
         }
       ]
     },
@@ -2793,17 +2799,17 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>shift</var> be the cumulative <var>x</var> and\n\t  <var>y</var> shifts due to <span class=\"attr-name\">‘<a href=\"https://svgwg.org/svg2-draft/text.html#TextElementXAttribute\"><span>x</span></a>’</span> and <span class=\"attr-name\">‘<a href=\"https://svgwg.org/svg2-draft/text.html#TextElementYAttribute\"><span>y</span></a>’</span>\n\t  attributes, initialized to (0,0)."
+              "html": "Let <var>shift</var> be the cumulative <var>x</var> and\n\t  <var>y</var> shifts due to <span class=\"attr-name\">‘<a href=\"https://svgwg.org/svg2-draft/text.html#TextElementDXAttribute\"><span>dx</span></a>’</span> and <span class=\"attr-name\">‘<a href=\"https://svgwg.org/svg2-draft/text.html#TextElementDYAttribute\"><span>dy</span></a>’</span>\n\t  attributes, initialized to (0,0)."
             },
             {
               "html": "For each array element with index <var>i</var> in result:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>resolve_x</var>[<var>i</var>] is unspecified, set it to 0.\n\t      If <var>resolve_y</var>[<var>i</var>] is unspecified, set it to 0."
+                  "html": "If <var>resolve_dx</var>[<var>i</var>] is unspecified, set it to 0.\n\t      If <var>resolve_dy</var>[<var>i</var>] is unspecified, set it to 0."
                 },
                 {
-                  "html": "Let <var>shift.x</var> = <var>shift.x</var> + <var>resolve_x</var>[<var>i</var>]\n\t      and <var>shift.y</var> = <var>shift.y</var> + <var>resolve_y</var>[<var>i</var>]."
+                  "html": "Let <var>shift.x</var> = <var>shift.x</var> + <var>resolve_dx</var>[<var>i</var>]\n\t      and <var>shift.y</var> = <var>shift.y</var> + <var>resolve_dy</var>[<var>i</var>]."
                 },
                 {
                   "html": "Let <var>result</var>[<var>i</var>].x = CSS_positions[<var>i</var>].x + shift.x\n\t      and <var>result</var>[<var>i</var>].y = CSS_positions[<var>i</var>].y + shift.y."
@@ -3412,7 +3418,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>cluster</var> be the result of\n  <a href=\"https://svgwg.org/svg2-draft/text.html#TermFindTypographicCharacterForCharacter\">finding the typograhic\n  character for the character</a> at index <var>charnum</var> within\n  the current element."
+          "html": "Let <var>cluster</var> be the result of\n  <a href=\"https://svgwg.org/svg2-draft/text.html#TermFindTypographicCharacterForCharacter\">finding the typographic\n  character for the character</a> at index <var>charnum</var> within\n  the current element."
         },
         {
           "html": "If <var>cluster</var> is null, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> an\n  <a href=\"https://heycam.github.io/webidl/#indexsizeerror\">IndexSizeError</a>."
@@ -3760,7 +3766,7 @@
           "html": "If the element matches any relevant\n  <a href=\"https://www.w3.org/TR/2011/REC-CSS2-20110607/selector.html#pseudo-class-selectors\">dynamic pseudo-class selectors</a>\n  appropriate to the type of pointer event, such as <code>:hover</code>,\n  <code>:active</code>, or <code>:focus</code> as described in\n  [<a href=\"https://svgwg.org/svg2-draft/refs.html#ref-css2\">CSS2</a>], section 5.11, then the relevant class\n  properties are applied;"
         },
         {
-          "html": "If the element and the event type are associated with the activation\n  or cancelation of declarative animation though the use of\n  <a href=\"https://svgwg.org/specs/animations/#EventValueSyntax\">event-value</a> timing specifiers,\n  any corresponding instance times must be resolved, and any conseqential\n  actions of this instance time resolution (such as immediately starting\n  or stopping the animation) must be performed;"
+          "html": "If the element and the event type are associated with the activation\n  or cancelation of declarative animation though the use of\n  <a href=\"https://svgwg.org/specs/animations/#EventValueSyntax\">event-value</a> timing specifiers,\n  any corresponding instance times must be resolved, and any consequential\n  actions of this instance time resolution (such as immediately starting\n  or stopping the animation) must be performed;"
         },
         {
           "html": "If the element is a hyperlink (e.g., it is a descendant element of an <span class=\"element-name\">‘<a href=\"https://svgwg.org/svg2-draft/linking.html#AElement\"><span>a</span></a>’</span>\n  element), and the pointer event is of a type that activates that hyperlink (e.g.\n  via a mouse click), and if the hyperlink traversal changes the context of the\n  content (e.g. opens a different document, or moves the pointer away from this\n  element by moving to another part of the same document), then no further\n  processing for this element is performed;"

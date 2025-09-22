@@ -2517,7 +2517,7 @@
         "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGAnimatedAngle"
       },
       "SVGAnimatedString": {
-        "fragment": "[Exposed=Window]\ninterface SVGAnimatedString {\n           attribute DOMString baseVal;\n  readonly attribute DOMString animVal;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGAnimatedString {\n           attribute (DOMString or TrustedScriptURL) baseVal;\n  readonly attribute DOMString animVal;\n};",
         "type": "interface",
         "name": "SVGAnimatedString",
         "inheritance": null,
@@ -2530,8 +2530,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
+              "union": true,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TrustedScriptURL"
+                }
+              ]
             },
             "extAttrs": [],
             "special": "",
@@ -2994,7 +3011,7 @@
         "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGURIReference"
       },
       "SVGSVGElement": {
-        "fragment": "[Exposed=Window]\ninterface SVGSVGElement : SVGGraphicsElement {\n\n  [SameObject] readonly attribute SVGAnimatedLength x;\n  [SameObject] readonly attribute SVGAnimatedLength y;\n  [SameObject] readonly attribute SVGAnimatedLength width;\n  [SameObject] readonly attribute SVGAnimatedLength height;\n\n  attribute float currentScale;\n  [SameObject] readonly attribute DOMPointReadOnly currentTranslate;\n\n  NodeList getIntersectionList(DOMRectReadOnly rect, SVGElement? referenceElement);\n  NodeList getEnclosureList(DOMRectReadOnly rect, SVGElement? referenceElement);\n  boolean checkIntersection(SVGElement element, DOMRectReadOnly rect);\n  boolean checkEnclosure(SVGElement element, DOMRectReadOnly rect);\n\n  undefined deselectAll();\n\n  SVGNumber createSVGNumber();\n  SVGLength createSVGLength();\n  SVGAngle createSVGAngle();\n  DOMPoint createSVGPoint();\n  DOMMatrix createSVGMatrix();\n  DOMRect createSVGRect();\n  SVGTransform createSVGTransform();\n  SVGTransform createSVGTransformFromMatrix(optional DOMMatrix2DInit matrix = {});\n\n  Element getElementById(DOMString elementId);\n\n  // Deprecated methods that have no effect when called,\n  // but which are kept for compatibility reasons.\n  unsigned long suspendRedraw(unsigned long maxWaitMilliseconds);\n  undefined unsuspendRedraw(unsigned long suspendHandleID);\n  undefined unsuspendRedrawAll();\n  undefined forceRedraw();\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGSVGElement : SVGGraphicsElement {\n\n  [SameObject] readonly attribute SVGAnimatedLength x;\n  [SameObject] readonly attribute SVGAnimatedLength y;\n  [SameObject] readonly attribute SVGAnimatedLength width;\n  [SameObject] readonly attribute SVGAnimatedLength height;\n\n  attribute float currentScale;\n  [SameObject] readonly attribute DOMPointReadOnly currentTranslate;\n\n  NodeList getIntersectionList(DOMRectReadOnly rect, SVGElement? referenceElement);\n  NodeList getEnclosureList(DOMRectReadOnly rect, SVGElement? referenceElement);\n  boolean checkIntersection(SVGElement element, DOMRectReadOnly rect);\n  boolean checkEnclosure(SVGElement element, DOMRectReadOnly rect);\n\n  undefined deselectAll();\n\n  [NewObject] SVGNumber createSVGNumber();\n  [NewObject] SVGLength createSVGLength();\n  [NewObject] SVGAngle createSVGAngle();\n  [NewObject] DOMPoint createSVGPoint();\n  [NewObject] DOMMatrix createSVGMatrix();\n  [NewObject] DOMRect createSVGRect();\n  [NewObject] SVGTransform createSVGTransform();\n  [NewObject] SVGTransform createSVGTransformFromMatrix(optional DOMMatrix2DInit matrix = {});\n\n  Element? getElementById(DOMString elementId);\n\n  // Deprecated methods that have no effect when called,\n  // but which are kept for compatibility reasons.\n  unsigned long suspendRedraw(unsigned long maxWaitMilliseconds);\n  undefined unsuspendRedraw(unsigned long suspendHandleID);\n  undefined unsuspendRedrawAll();\n  undefined forceRedraw();\n};",
         "type": "interface",
         "name": "SVGSVGElement",
         "inheritance": "SVGGraphicsElement",
@@ -3349,7 +3366,14 @@
               "idlType": "SVGNumber"
             },
             "arguments": [],
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": ""
           },
           {
@@ -3364,7 +3388,14 @@
               "idlType": "SVGLength"
             },
             "arguments": [],
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": ""
           },
           {
@@ -3379,7 +3410,14 @@
               "idlType": "SVGAngle"
             },
             "arguments": [],
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": ""
           },
           {
@@ -3394,7 +3432,14 @@
               "idlType": "DOMPoint"
             },
             "arguments": [],
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": ""
           },
           {
@@ -3409,7 +3454,14 @@
               "idlType": "DOMMatrix"
             },
             "arguments": [],
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": ""
           },
           {
@@ -3424,7 +3476,14 @@
               "idlType": "DOMRect"
             },
             "arguments": [],
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": ""
           },
           {
@@ -3439,7 +3498,14 @@
               "idlType": "SVGTransform"
             },
             "arguments": [],
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": ""
           },
           {
@@ -3473,7 +3539,14 @@
                 "variadic": false
               }
             ],
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": ""
           },
           {
@@ -3483,7 +3556,7 @@
               "type": "return-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "Element"
             },
@@ -4119,7 +4192,7 @@
         "href": "https://svgwg.org/svg2-draft/struct.html#InterfaceGetSVGDocument"
       },
       "SVGStyleElement": {
-        "fragment": "[Exposed=Window]\ninterface SVGStyleElement : SVGElement {\n  attribute DOMString type;\n  attribute DOMString media;\n  attribute DOMString title;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGStyleElement : SVGElement {\n  attribute DOMString type;\n  attribute DOMString media;\n  attribute DOMString title;\n  attribute boolean disabled;\n};",
         "type": "interface",
         "name": "SVGStyleElement",
         "inheritance": "SVGElement",
@@ -4171,6 +4244,21 @@
             "special": "",
             "readonly": false,
             "href": "https://svgwg.org/svg2-draft/styling.html#__svg__SVGStyleElement__title"
+          },
+          {
+            "type": "attribute",
+            "name": "disabled",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
           }
         ],
         "extAttrs": [
@@ -7432,7 +7520,7 @@
         "href": "https://svgwg.org/svg2-draft/embedded.html#InterfaceSVGForeignObjectElement"
       },
       "SVGMarkerElement": {
-        "fragment": "[Exposed=Window]\ninterface SVGMarkerElement : SVGElement {\n\n  // Marker Unit Types\n  const unsigned short SVG_MARKERUNITS_UNKNOWN = 0;\n  const unsigned short SVG_MARKERUNITS_USERSPACEONUSE = 1;\n  const unsigned short SVG_MARKERUNITS_STROKEWIDTH = 2;\n\n  // Marker Orientation Types\n  const unsigned short SVG_MARKER_ORIENT_UNKNOWN = 0;\n  const unsigned short SVG_MARKER_ORIENT_AUTO = 1;\n  const unsigned short SVG_MARKER_ORIENT_ANGLE = 2;\n\n  [SameObject] readonly attribute SVGAnimatedLength refX;\n  [SameObject] readonly attribute SVGAnimatedLength refY;\n  [SameObject] readonly attribute SVGAnimatedEnumeration markerUnits;\n  [SameObject] readonly attribute SVGAnimatedLength markerWidth;\n  [SameObject] readonly attribute SVGAnimatedLength markerHeight;\n  [SameObject] readonly attribute SVGAnimatedEnumeration orientType;\n  [SameObject] readonly attribute SVGAnimatedAngle orientAngle;\n  attribute DOMString orient;\n\n  undefined setOrientToAuto();\n  undefined setOrientToAngle(SVGAngle angle);\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGMarkerElement : SVGElement {\n\n  // Marker Unit Types\n  const unsigned short SVG_MARKERUNITS_UNKNOWN = 0;\n  const unsigned short SVG_MARKERUNITS_USERSPACEONUSE = 1;\n  const unsigned short SVG_MARKERUNITS_STROKEWIDTH = 2;\n\n  // Marker Orientation Types\n  const unsigned short SVG_MARKER_ORIENT_UNKNOWN = 0;\n  const unsigned short SVG_MARKER_ORIENT_AUTO = 1;\n  const unsigned short SVG_MARKER_ORIENT_ANGLE = 2;\n  const unsigned short SVG_MARKER_ORIENT_AUTO_START_REVERSE = 3;\n\n  [SameObject] readonly attribute SVGAnimatedLength refX;\n  [SameObject] readonly attribute SVGAnimatedLength refY;\n  [SameObject] readonly attribute SVGAnimatedEnumeration markerUnits;\n  [SameObject] readonly attribute SVGAnimatedLength markerWidth;\n  [SameObject] readonly attribute SVGAnimatedLength markerHeight;\n  [SameObject] readonly attribute SVGAnimatedEnumeration orientType;\n  [SameObject] readonly attribute SVGAnimatedAngle orientAngle;\n  attribute DOMString orient;\n\n  undefined setOrientToAuto();\n  undefined setOrientToAngle(SVGAngle angle);\n};",
         "type": "interface",
         "name": "SVGMarkerElement",
         "inheritance": "SVGElement",
@@ -7544,6 +7632,24 @@
               "value": "2"
             },
             "href": "https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__SVG_MARKER_ORIENT_ANGLE"
+          },
+          {
+            "type": "const",
+            "name": "SVG_MARKER_ORIENT_AUTO_START_REVERSE",
+            "idlType": {
+              "type": "const-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "value": {
+              "type": "number",
+              "value": "3"
+            },
+            "href": "https://svgwg.org/svg2-draft/painting.html#__svg__SVGMarkerElement__SVG_MARKER_ORIENT_AUTO_START_REVERSE"
           },
           {
             "type": "attribute",
@@ -8498,7 +8604,7 @@
         "href": "https://svgwg.org/svg2-draft/interact.html#InterfaceSVGScriptElement"
       },
       "SVGAElement": {
-        "fragment": "[Exposed=Window]\ninterface SVGAElement : SVGGraphicsElement {\n  [SameObject] readonly attribute SVGAnimatedString target;\n  attribute DOMString download;\n  attribute USVString ping;\n  attribute DOMString rel;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  attribute DOMString hreflang;\n  attribute DOMString type;\n\n  attribute DOMString text;\n\n  attribute DOMString referrerPolicy;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGAElement : SVGGraphicsElement {\n  [SameObject] readonly attribute SVGAnimatedString target;\n  attribute DOMString download;\n  attribute USVString ping;\n  attribute DOMString rel;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  attribute DOMString hreflang;\n  attribute DOMString type;\n\n  attribute DOMString referrerPolicy;\n};",
         "type": "interface",
         "name": "SVGAElement",
         "inheritance": "SVGGraphicsElement",
@@ -8637,22 +8743,6 @@
             "special": "",
             "readonly": false,
             "href": "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__type"
-          },
-          {
-            "type": "attribute",
-            "name": "text",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://svgwg.org/svg2-draft/linking.html#__svg__SVGAElement__text"
           },
           {
             "type": "attribute",
@@ -9240,7 +9330,9 @@
       "SVGAnimatedAngle": [
         "SVGAngle"
       ],
-      "SVGAnimatedString": [],
+      "SVGAnimatedString": [
+        "TrustedScriptURL"
+      ],
       "SVGAnimatedRect": [
         "DOMRect",
         "DOMRectReadOnly"
@@ -9466,6 +9558,7 @@
       "DOMMatrix",
       "DOMPointInit",
       "DOMPoint",
+      "TrustedScriptURL",
       "DOMRectReadOnly",
       "Document",
       "DOMPointReadOnly",
