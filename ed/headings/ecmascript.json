@@ -1846,11 +1846,18 @@
       "number": "7.3.35"
     },
     {
+      "id": "sec-getoptionsobject",
+      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getoptionsobject",
+      "title": "GetOptionsObject ( options )",
+      "level": 3,
+      "number": "7.3.36"
+    },
+    {
       "id": "sec-SetterThatIgnoresPrototypeProperties",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-SetterThatIgnoresPrototypeProperties",
       "title": "SetterThatIgnoresPrototypeProperties ( thisValue, home, p, v )",
       "level": 3,
-      "number": "7.3.36"
+      "number": "7.3.37"
     },
     {
       "id": "sec-operations-on-iterator-objects",
@@ -7117,8 +7124,8 @@
       "number": "19.3.34"
     },
     {
-      "id": "sec-uint8array",
-      "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-uint8array",
+      "id": "sec-constructor-properties-of-the-global-object-uint8array",
+      "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-uint8array",
       "title": "Uint8Array ( . . . )",
       "level": 3,
       "number": "19.3.35"
@@ -11616,6 +11623,132 @@
       "title": "Properties of TypedArray Instances",
       "level": 3,
       "number": "23.2.8"
+    },
+    {
+      "id": "sec-uint8array",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array",
+      "title": "Uint8Array Objects",
+      "level": 2,
+      "number": "23.3"
+    },
+    {
+      "id": "sec-additional-properties-of-the-uint8array-constructor",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-additional-properties-of-the-uint8array-constructor",
+      "title": "Additional Properties of the Uint8Array Constructor",
+      "level": 3,
+      "number": "23.3.1"
+    },
+    {
+      "id": "sec-uint8array.frombase64",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array.frombase64",
+      "title": "Uint8Array.fromBase64 ( string [ , options ] )",
+      "level": 4,
+      "number": "23.3.1.1"
+    },
+    {
+      "id": "sec-uint8array.fromhex",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array.fromhex",
+      "title": "Uint8Array.fromHex ( string )",
+      "level": 4,
+      "number": "23.3.1.2"
+    },
+    {
+      "id": "sec-additional-properties-of-the-uint8array-prototype-object",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-additional-properties-of-the-uint8array-prototype-object",
+      "title": "Additional Properties of the Uint8Array Prototype Object",
+      "level": 3,
+      "number": "23.3.2"
+    },
+    {
+      "id": "sec-uint8array.prototype.setfrombase64",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array.prototype.setfrombase64",
+      "title": "Uint8Array.prototype.setFromBase64 ( string [ , options ] )",
+      "level": 4,
+      "number": "23.3.2.1"
+    },
+    {
+      "id": "sec-uint8array.prototype.setfromhex",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array.prototype.setfromhex",
+      "title": "Uint8Array.prototype.setFromHex ( string )",
+      "level": 4,
+      "number": "23.3.2.2"
+    },
+    {
+      "id": "sec-uint8array.prototype.tobase64",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array.prototype.tobase64",
+      "title": "Uint8Array.prototype.toBase64 ( [ options ] )",
+      "level": 4,
+      "number": "23.3.2.3"
+    },
+    {
+      "id": "sec-uint8array.prototype.tohex",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-uint8array.prototype.tohex",
+      "title": "Uint8Array.prototype.toHex ( )",
+      "level": 4,
+      "number": "23.3.2.4"
+    },
+    {
+      "id": "sec-abstract-operations-for-uint8array-objects",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-abstract-operations-for-uint8array-objects",
+      "title": "Abstract Operations for Uint8Array Objects",
+      "level": 3,
+      "number": "23.3.3"
+    },
+    {
+      "id": "sec-validateuint8array",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-validateuint8array",
+      "title": "ValidateUint8Array ( ta )",
+      "level": 4,
+      "number": "23.3.3.1"
+    },
+    {
+      "id": "sec-getuint8arraybytes",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-getuint8arraybytes",
+      "title": "GetUint8ArrayBytes ( ta )",
+      "level": 4,
+      "number": "23.3.3.2"
+    },
+    {
+      "id": "sec-setuint8arraybytes",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-setuint8arraybytes",
+      "title": "SetUint8ArrayBytes ( into, bytes )",
+      "level": 4,
+      "number": "23.3.3.3"
+    },
+    {
+      "id": "sec-skipasciiwhitespace",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-skipasciiwhitespace",
+      "title": "SkipAsciiWhitespace ( string, index )",
+      "level": 4,
+      "number": "23.3.3.4"
+    },
+    {
+      "id": "sec-decodefinalbase64chunk",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-decodefinalbase64chunk",
+      "title": "DecodeFinalBase64Chunk ( chunk, throwOnExtraBits )",
+      "level": 4,
+      "number": "23.3.3.5"
+    },
+    {
+      "id": "sec-decodefulllengthbase64chunk",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-decodefulllengthbase64chunk",
+      "title": "DecodeFullLengthBase64Chunk ( chunk )",
+      "level": 4,
+      "number": "23.3.3.6"
+    },
+    {
+      "id": "sec-frombase64",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-frombase64",
+      "title": "FromBase64 ( string, alphabet, lastChunkHandling [ , maxLength ] )",
+      "level": 4,
+      "number": "23.3.3.7"
+    },
+    {
+      "id": "sec-fromhex",
+      "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-fromhex",
+      "title": "FromHex ( string [ , maxLength ] )",
+      "level": 4,
+      "number": "23.3.3.8"
     },
     {
       "id": "sec-keyed-collections",
