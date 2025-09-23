@@ -4881,7 +4881,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlroundingtype"
       },
       "MLPool2dOptions": {
-        "fragment": "dictionary MLPool2dOptions : MLOperatorOptions {\n  sequence<[EnforceRange] unsigned long> windowDimensions;\n  sequence<[EnforceRange] unsigned long> padding;\n  sequence<[EnforceRange] unsigned long> strides;\n  sequence<[EnforceRange] unsigned long> dilations;\n  MLInputOperandLayout layout = \"nchw\";\n  MLRoundingType roundingType = \"floor\";\n  sequence<[EnforceRange] unsigned long> outputSizes;\n};",
+        "fragment": "dictionary MLPool2dOptions : MLOperatorOptions {\n  sequence<[EnforceRange] unsigned long> windowDimensions;\n  sequence<[EnforceRange] unsigned long> padding;\n  sequence<[EnforceRange] unsigned long> strides;\n  sequence<[EnforceRange] unsigned long> dilations;\n  MLInputOperandLayout layout = \"nchw\";\n  MLRoundingType outputShapeRounding = \"floor\";\n  sequence<[EnforceRange] unsigned long> outputSizes;\n};",
         "type": "dictionary",
         "name": "MLPool2dOptions",
         "inheritance": "MLOperatorOptions",
@@ -5035,7 +5035,7 @@
           },
           {
             "type": "field",
-            "name": "roundingType",
+            "name": "outputShapeRounding",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -5050,7 +5050,7 @@
               "value": "floor"
             },
             "required": false,
-            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-roundingtype"
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlpool2doptions-outputshaperounding"
           },
           {
             "type": "field",
@@ -9666,7 +9666,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand instanceNormalization(MLOperand input,\n                                  optional MLInstanceNormalizationOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand instanceNormalization(\n    MLOperand input,\n    optional MLInstanceNormalizationOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
