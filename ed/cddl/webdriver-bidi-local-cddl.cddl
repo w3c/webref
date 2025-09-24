@@ -652,7 +652,8 @@ network.ResponseStartedParameters = {
 ScriptResult = (
   script.AddPreloadScriptResult /
   script.EvaluateResult /
-  script.GetRealmsResult
+  script.GetRealmsResult /
+  script.CallFunctionResult
 )
 
 ScriptEvent = (
@@ -1079,6 +1080,8 @@ script.AddPreloadScriptResult = {
   script: script.PreloadScript
 }
 
+script.CallFunctionResult = script.EvaluateResult
+
 script.GetRealmsResult = {
   realms: [*script.RealmInfo]
 }
@@ -1455,7 +1458,7 @@ browser.DownloadBehavior = {
 
 browser.DownloadBehaviorAllowed = (
   type: "allowed",
-  ? destinationFolder: text
+  destinationFolder: text
 )
 
 browser.DownloadBehaviorDenied = (
@@ -3473,7 +3476,8 @@ network.ResponseStartedParameters = {
 ScriptResult = (
   script.AddPreloadScriptResult /
   script.EvaluateResult /
-  script.GetRealmsResult
+  script.GetRealmsResult /
+  script.CallFunctionResult
 )
 
 ScriptEvent = (
@@ -3899,6 +3903,8 @@ script.Source = {
 script.AddPreloadScriptResult = {
   script: script.PreloadScript
 }
+
+script.CallFunctionResult = script.EvaluateResult
 
 script.GetRealmsResult = {
   realms: [*script.RealmInfo]
