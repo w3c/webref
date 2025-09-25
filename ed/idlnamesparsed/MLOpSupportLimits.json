@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLOpSupportLimits {\n  MLInputOperandLayout preferredInputLayout;\n  [EnforceRange] unsigned long long maxTensorByteLength;\n  MLDataTypeLimits input;\n  MLDataTypeLimits constant;\n  MLDataTypeLimits output;\n};",
+    "fragment": "dictionary MLOpSupportLimits {\n  MLInputOperandLayout preferredInputLayout;\n  [EnforceRange] unsigned long long maxTensorByteLength;\n  MLTensorLimits input;\n  MLTensorLimits constant;\n  MLTensorLimits output;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlopsupportlimits"
   },
   "extended": [
