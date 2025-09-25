@@ -7,7 +7,7 @@
     {
       "name": "obtain a lock manager",
       "href": "https://www.w3.org/TR/web-locks/#obtain-a-lock-manager",
-      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-a-lock-manager\">obtain a lock manager</dfn>, given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>environment</var>, run these steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-a-lock-manager\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a lock manager</dfn>, given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>environment</var>, run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -40,7 +40,7 @@
     {
       "name": "get the lock request queue",
       "href": "https://www.w3.org/TR/web-locks/#get-the-lock-request-queue",
-      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-lock-request-queue\">get the lock request queue</dfn> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-manager-lock-request-queue-map\" id=\"ref-for-lock-manager-lock-request-queue-map\">lock request queue map</a> <var>queueMap</var> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#resource-name\" id=\"ref-for-resource-name④\">resource name</a> <var>name</var>, run these steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-lock-request-queue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the lock request queue</dfn> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-manager-lock-request-queue-map\" id=\"ref-for-lock-manager-lock-request-queue-map\">lock request queue map</a> <var>queueMap</var> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#resource-name\" id=\"ref-for-resource-name④\">resource name</a> <var>name</var>, run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -54,7 +54,7 @@
     {
       "name": "grantable",
       "href": "https://www.w3.org/TR/web-locks/#grantable",
-      "html": "A <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-request\" id=\"ref-for-lock-request④\">lock request</a> <var>request</var> is said to be <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"grantable\">grantable</dfn> if the following steps return true:",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-request\" id=\"ref-for-lock-request④\">lock request</a> <var>request</var> is said to be <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"grantable\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">grantable</dfn> if the following steps return true:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -89,7 +89,7 @@
     {
       "name": "terminate remaining locks and requests",
       "href": "https://www.w3.org/TR/web-locks/#terminate-remaining-locks-and-requests",
-      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"terminate-remaining-locks-and-requests\">terminate remaining locks and requests</dfn> with <var>agent</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps②\">enqueue the following steps</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-task-queue\" id=\"ref-for-lock-task-queue①\">lock task queue</a>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"terminate-remaining-locks-and-requests\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">terminate remaining locks and requests</dfn> with <var>agent</var>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps②\">enqueue the following steps</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-task-queue\" id=\"ref-for-lock-task-queue①\">lock task queue</a>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -115,17 +115,17 @@
     {
       "name": "LockManager request method",
       "href": "https://www.w3.org/TR/web-locks/#dom-lockmanager-request",
-      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"LockManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-lockmanager-request\"><code>request(<var>name</var>, <var>callback</var>)</code></dfn> and <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"LockManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-lockmanager-request-name-options-callback\"><code>request(<var>name</var>, <var>options</var>, <var>callback</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LockManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-lockmanager-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>request(<var>name</var>, <var>callback</var>)</code></dfn> and\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LockManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-lockmanager-request-name-options-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>request(<var>name</var>, <var>options</var>, <var>callback</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <var>options</var> was not passed, then let <var>options</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/web-locks/#dictdef-lockoptions\" id=\"ref-for-dictdef-lockoptions①\">LockOptions</a></code> dictionary with default members.</p>"
         },
         {
-          "html": "<p>Let <var>environment</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>environment</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>.</p>"
         },
         {
-          "html": "<p>If <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+          "html": "<p>If <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>manager</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#obtain-a-lock-manager\" id=\"ref-for-obtain-a-lock-manager\">obtaining a lock manager</a> given <var>environment</var>. If that returned failure, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
@@ -159,14 +159,14 @@
     {
       "name": "LockManager/query()",
       "href": "https://www.w3.org/TR/web-locks/#dom-lockmanager-query",
-      "html": "The <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"LockManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-lockmanager-query\"><code>query()</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LockManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-lockmanager-query\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>query()</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>environment</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>environment</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>.</p>"
         },
         {
-          "html": "<p>If <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active①\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code>.</p>"
+          "html": "<p>If <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active①\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>manager</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#obtain-a-lock-manager\" id=\"ref-for-obtain-a-lock-manager①\">obtaining a lock manager</a> given <var>environment</var>. If that returned failure, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑧\">a promise rejected with</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code>.</p>"
@@ -185,7 +185,7 @@
     {
       "name": "request a lock",
       "href": "https://www.w3.org/TR/web-locks/#request-a-lock",
-      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"request-a-lock\">request a lock</dfn> with <var>promise</var>, <var>agent</var>, <var>clientId</var>, <var>manager</var>, <var>callback</var>, <var>name</var>, <var>mode</var>, <var>ifAvailable</var>, <var>steal</var>, and <var>signal</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"request-a-lock\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">request a lock</dfn> with <var>promise</var>, <var>agent</var>, <var>clientId</var>, <var>manager</var>, <var>callback</var>, <var>name</var>, <var>mode</var>, <var>ifAvailable</var>, <var>steal</var>, and <var>signal</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -239,7 +239,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>ifAvailable</var> is true and <var>request</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#grantable\" id=\"ref-for-grantable\">grantable</a>,\n then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps⑤\">enqueue the following steps</a> on <var>callback</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object③\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop\">responsible event loop</a>:",
+                  "html": "If <var>ifAvailable</var> is true and <var>request</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#grantable\" id=\"ref-for-grantable\">grantable</a>,\n then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps⑤\">enqueue the following steps</a> on <var>callback</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object③\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop\">responsible event loop</a>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -268,7 +268,7 @@
     {
       "name": "release the lock",
       "href": "https://www.w3.org/TR/web-locks/#release-the-lock",
-      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"release-the-lock\">release the lock</dfn> <var>lock</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"release-the-lock\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">release the lock</dfn> <var>lock</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -297,7 +297,7 @@
     {
       "name": "abort the request",
       "href": "https://www.w3.org/TR/web-locks/#abort-the-request",
-      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"abort-the-request\">abort the request</dfn> <var>request</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"abort-the-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">abort the request</dfn> <var>request</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -326,7 +326,7 @@
     {
       "name": "signal to abort the request",
       "href": "https://www.w3.org/TR/web-locks/#signal-to-abort-the-request",
-      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"signal-to-abort-the-request\">signal to abort the request</dfn> <var>request</var> with <var>signal</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"signal-to-abort-the-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">signal to abort the request</dfn> <var>request</var> with <var>signal</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -340,7 +340,7 @@
     {
       "name": "process the lock request queue",
       "href": "https://www.w3.org/TR/web-locks/#process-the-lock-request-queue",
-      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-the-lock-request-queue\">process the lock request queue</dfn> <var>queue</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-the-lock-request-queue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process the lock request queue</dfn> <var>queue</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -390,7 +390,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>lock</var> to <var>manager</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-manager-held-lock-set\" id=\"ref-for-lock-manager-held-lock-set③\">held lock set</a>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps⑦\">Enqueue the following steps</a> on <var>callback</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object④\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop①\">responsible event loop</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#enqueue-the-following-steps\" id=\"ref-for-enqueue-the-following-steps⑦\">Enqueue the following steps</a> on <var>callback</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object④\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\" id=\"ref-for-responsible-event-loop①\">responsible event loop</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -435,7 +435,7 @@
     {
       "name": "snapshot the lock state",
       "href": "https://www.w3.org/TR/web-locks/#snapshot-the-lock-state",
-      "html": "To <dfn class=\"dfn-paneled\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"snapshot-the-lock-state\">snapshot the lock state</dfn> for <var>manager</var> with <var>promise</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"snapshot-the-lock-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">snapshot the lock state</dfn> for <var>manager</var> with <var>promise</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -445,7 +445,7 @@
           "html": "<p>Let <var>pending</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>queue</var> of <var>manager</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-manager-lock-request-queue-map\" id=\"ref-for-lock-manager-lock-request-queue-map⑤\">lock request queue map</a>'s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values\">values</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate\">For each</a> <var>queue</var> of <var>manager</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-locks/#lock-manager-lock-request-queue-map\" id=\"ref-for-lock-manager-lock-request-queue-map⑤\">lock request queue map</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values\">values</a>:",
           "rationale": "for",
           "steps": [
             {
