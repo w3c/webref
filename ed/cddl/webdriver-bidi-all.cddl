@@ -48,8 +48,10 @@ ErrorResponse = {
 }
 
 ResultData = (
+  BrowserResult /
   BrowsingContextResult /
-  EmptyResult /
+  EmulationResult /
+  InputResult /
   NetworkResult /
   ScriptResult /
   SessionResult /
@@ -119,9 +121,11 @@ SessionCommand = (
 )
 
 SessionResult = (
-   session.NewResult /
-   session.StatusResult /
-   session.SubscribeResult
+  session.EndResult /
+  session.NewResult /
+  session.StatusResult /
+  session.SubscribeResult /
+  session.UnsubscribeResult
 )
 
 session.CapabilitiesRequest = {
@@ -249,6 +253,8 @@ session.End = (
   params: EmptyParams
 )
 
+session.EndResult = EmptyResult
+
 session.Subscribe = (
   method: "session.subscribe",
   params: session.SubscriptionRequest
@@ -265,6 +271,8 @@ session.Unsubscribe = (
 
 session.UnsubscribeParameters = session.UnsubscribeByAttributesRequest / session.UnsubscribeByIDRequest
 
+session.UnsubscribeResult = EmptyResult
+
 BrowserCommand = (
   browser.Close //
   browser.CreateUserContext //
@@ -276,8 +284,13 @@ BrowserCommand = (
 )
 
 BrowserResult = (
-   browser.CreateUserContextResult /
-   browser.GetUserContextsResult
+  browser.CloseResult /
+  browser.CreateUserContextResult /
+  browser.GetClientWindowsResult /
+  browser.GetUserContextsResult /
+  browser.RemoveUserContextResult /
+  browser.SetClientWindowStateResult /
+  browser.SetDownloadBehaviorResult
 )
 
 browser.ClientWindow = text;
@@ -302,6 +315,8 @@ browser.Close = (
   method: "browser.close",
   params: EmptyParams,
 )
+
+browser.CloseResult = EmptyResult
 
 browser.CreateUserContext = (
   method: "browser.createUserContext",
@@ -343,6 +358,8 @@ browser.RemoveUserContextParameters = {
   userContext: browser.UserContext
 }
 
+browser.RemoveUserContextResult = EmptyResult
+
 browser.SetClientWindowState = (
   method: "browser.setClientWindowState",
   params: browser.SetClientWindowStateParameters
@@ -364,6 +381,8 @@ browser.ClientWindowRectState = (
   ? x: js-int,
   ? y: js-int,
 )
+
+browser.SetClientWindowStateResult = browser.ClientWindowInfo
 
 browser.SetDownloadBehavior = (
   method: "browser.setDownloadBehavior",
@@ -391,6 +410,8 @@ browser.DownloadBehaviorDenied = (
   type: "denied"
 )
 
+browser.SetDownloadBehaviorResult = EmptyResult
+
 BrowsingContextCommand = (
   browsingContext.Activate //
   browsingContext.CaptureScreenshot //
@@ -407,12 +428,17 @@ BrowsingContextCommand = (
 )
 
 BrowsingContextResult = (
+  browsingContext.ActivateResult /
   browsingContext.CaptureScreenshotResult /
+  browsingContext.CloseResult /
   browsingContext.CreateResult /
   browsingContext.GetTreeResult /
+  browsingContext.HandleUserPromptResult /
   browsingContext.LocateNodesResult /
   browsingContext.NavigateResult /
   browsingContext.PrintResult /
+  browsingContext.ReloadResult /
+  browsingContext.SetViewportResult /
   browsingContext.TraverseHistoryResult
 )
 
@@ -514,6 +540,8 @@ browsingContext.ActivateParameters = {
   context: browsingContext.BrowsingContext
 }
 
+browsingContext.ActivateResult = EmptyResult
+
 browsingContext.CaptureScreenshot = (
   method: "browsingContext.captureScreenshot",
   params: browsingContext.CaptureScreenshotParameters
@@ -563,6 +591,8 @@ browsingContext.CloseParameters = {
   ? promptUnload: bool .default false
 }
 
+browsingContext.CloseResult = EmptyResult
+
 browsingContext.Create = (
   method: "browsingContext.create",
   params: browsingContext.CreateParameters
@@ -605,6 +635,8 @@ browsingContext.HandleUserPromptParameters = {
   ? accept: bool,
   ? userText: text,
 }
+
+browsingContext.HandleUserPromptResult = EmptyResult
 
 browsingContext.LocateNodes = (
   method: "browsingContext.locateNodes",
@@ -684,6 +716,8 @@ browsingContext.ReloadParameters = {
   ? wait: browsingContext.ReadinessState,
 }
 
+browsingContext.ReloadResult = browsingContext.NavigateResult
+
 browsingContext.SetViewport = (
   method: "browsingContext.setViewport",
   params: browsingContext.SetViewportParameters
@@ -701,6 +735,8 @@ browsingContext.Viewport = {
   height: js-uint,
 }
 
+browsingContext.SetViewportResult = EmptyResult
+
 browsingContext.TraverseHistory = (
   method: "browsingContext.traverseHistory",
   params: browsingContext.TraverseHistoryParameters
@@ -711,8 +747,7 @@ browsingContext.TraverseHistoryParameters = {
   delta: js-int,
 }
 
-browsingContext.TraverseHistoryResult = {
-}
+browsingContext.TraverseHistoryResult = EmptyResult
 
 browsingContext.ContextCreated = (
  method: "browsingContext.contextCreated",
@@ -838,6 +873,16 @@ EmulationCommand = (
   emulation.SetUserAgentOverride
 )
 
+EmulationResult = (
+  emulation.SetForcedColorsModeThemeOverrideResult /
+  emulation.SetGeolocationOverrideResult /
+  emulation.SetLocaleOverrideResult /
+  emulation.SetScreenOrientationOverrideResult /
+  emulation.SetScriptingEnabledResult /
+  emulation.SetTimezoneOverrideResult /
+  emulation.SetUserAgentOverrideResult
+)
+
 emulation.SetForcedColorsModeThemeOverride = (
   method: "emulation.setForcedColorsModeThemeOverride",
   params: emulation.SetForcedColorsModeThemeOverrideParameters
@@ -850,6 +895,8 @@ emulation.SetForcedColorsModeThemeOverrideParameters = {
 }
 
 emulation.ForcedColorsModeTheme = "light" / "dark"
+
+emulation.SetForcedColorsModeThemeOverrideResult = EmptyResult
 
 emulation.SetGeolocationOverride = (
   method: "emulation.setGeolocationOverride",
@@ -879,6 +926,8 @@ emulation.GeolocationPositionError = {
    type: "positionUnavailable"
 }
 
+emulation.SetGeolocationOverrideResult = EmptyResult
+
 emulation.SetLocaleOverride = (
   method: "emulation.setLocaleOverride",
   params: emulation.SetLocaleOverrideParameters
@@ -889,6 +938,8 @@ emulation.SetLocaleOverrideParameters = {
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
 }
+
+emulation.SetLocaleOverrideResult = EmptyResult
 
 emulation.SetScreenOrientationOverride = (
   method: "emulation.setScreenOrientationOverride",
@@ -909,6 +960,8 @@ emulation.SetScreenOrientationOverrideParameters = {
   ? userContexts: [+browser.UserContext],
 }
 
+emulation.SetScreenOrientationOverrideResult = EmptyResult
+
 emulation.SetUserAgentOverride = (
   method: "emulation.setUserAgentOverride",
   params: emulation.SetUserAgentOverrideParameters
@@ -919,6 +972,8 @@ emulation.SetUserAgentOverrideParameters = {
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
 }
+
+emulation.SetUserAgentOverrideResult = EmptyResult
 
 emulation.SetScriptingEnabled = (
   method: "emulation.setScriptingEnabled",
@@ -931,6 +986,8 @@ emulation.SetScriptingEnabledParameters = {
   ? userContexts: [+browser.UserContext],
 }
 
+emulation.SetScriptingEnabledResult = EmptyResult
+
 emulation.SetTimezoneOverride = (
   method: "emulation.setTimezoneOverride",
   params: emulation.SetTimezoneOverrideParameters
@@ -941,6 +998,8 @@ emulation.SetTimezoneOverrideParameters = {
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
 }
+
+emulation.SetTimezoneOverrideResult = EmptyResult
 
 NetworkCommand = (
   network.AddDataCollector //
@@ -959,7 +1018,19 @@ NetworkCommand = (
 )
 
 NetworkResult = (
-   network.AddInterceptResult
+  network.AddDataCollectorResult /
+  network.AddInterceptResult /
+  network.ContinueRequestResult /
+  network.ContinueResponseResult /
+  network.ContinueWithAuthResult /
+  network.DisownDataResult /
+  network.FailRequestResult /
+  network.GetDataResult /
+  network.ProvideResponseResult /
+  network.RemoveDataCollectorResult /
+  network.RemoveInterceptResult /
+  network.SetCacheBehaviorResult /
+  network.SetExtraHeadersResult
 )
 
 NetworkEvent = (
@@ -1174,6 +1245,8 @@ network.ContinueRequestParameters = {
   ?url: text,
 }
 
+network.ContinueRequestResult = EmptyResult
+
 network.ContinueResponse = (
   method: "network.continueResponse",
   params: network.ContinueResponseParameters
@@ -1187,6 +1260,8 @@ network.ContinueResponseParameters = {
   ?reasonPhrase: text,
   ?statusCode: js-uint,
 }
+
+network.ContinueResponseResult = EmptyResult
 
 network.ContinueWithAuth = (
   method: "network.continueWithAuth",
@@ -1207,6 +1282,8 @@ network.ContinueWithAuthNoCredentials = (
   action: "default" / "cancel"
 )
 
+network.ContinueWithAuthResult = EmptyResult
+
 network.DisownData = (
   method: "network.disownData",
   params: network.disownDataParameters
@@ -1218,6 +1295,8 @@ network.disownDataParameters = {
   request: network.Request,
 }
 
+network.DisownDataResult = EmptyResult
+
 network.FailRequest = (
   method: "network.failRequest",
   params: network.FailRequestParameters
@@ -1226,6 +1305,8 @@ network.FailRequest = (
 network.FailRequestParameters = {
   request: network.Request,
 }
+
+network.FailRequestResult = EmptyResult
 
 network.GetData = (
   method: "network.getData",
@@ -1257,6 +1338,8 @@ network.ProvideResponseParameters = {
   ?statusCode: js-uint,
 }
 
+network.ProvideResponseResult = EmptyResult
+
 network.RemoveDataCollector = (
   method: "network.removeDataCollector",
   params: network.RemoveDataCollectorParameters
@@ -1266,6 +1349,8 @@ network.RemoveDataCollectorParameters = {
   collector: network.Collector
 }
 
+network.RemoveDataCollectorResult = EmptyResult
+
 network.RemoveIntercept = (
   method: "network.removeIntercept",
   params: network.RemoveInterceptParameters
@@ -1274,6 +1359,8 @@ network.RemoveIntercept = (
 network.RemoveInterceptParameters = {
   intercept: network.Intercept
 }
+
+network.RemoveInterceptResult = EmptyResult
 
 network.SetCacheBehavior = (
   method: "network.setCacheBehavior",
@@ -1285,6 +1372,8 @@ network.SetCacheBehaviorParameters = {
   ? contexts: [+browsingContext.BrowsingContext]
 }
 
+network.SetCacheBehaviorResult = EmptyResult
+
 network.SetExtraHeaders = (
   method: "network.setExtraHeaders",
   params: network.SetExtraHeadersParameters
@@ -1295,6 +1384,8 @@ network.SetExtraHeadersParameters = {
   ? contexts: [+browsingContext.BrowsingContext]
   ? userContexts: [+browser.UserContext]
 }
+
+network.SetExtraHeadersResult = EmptyResult
 
 network.AuthRequired = (
   method: "network.authRequired",
@@ -1357,9 +1448,11 @@ ScriptCommand = (
 
 ScriptResult = (
   script.AddPreloadScriptResult /
+  script.CallFunctionResult /
+  script.DisownResult /
   script.EvaluateResult /
   script.GetRealmsResult /
-  script.CallFunctionResult
+  script.RemovePreloadScriptResult
 )
 
 ScriptEvent = (
@@ -1823,6 +1916,8 @@ script.DisownParameters = {
   target: script.Target;
 }
 
+script.DisownResult = EmptyResult
+
 script.CallFunction = (
   method: "script.callFunction",
   params: script.CallFunctionParameters
@@ -1877,6 +1972,8 @@ script.RemovePreloadScript = (
 script.RemovePreloadScriptParameters = {
   script: script.PreloadScript
 }
+
+script.RemovePreloadScriptResult = EmptyResult
 
 script.Message = (
   method: "script.message",
@@ -2054,6 +2151,12 @@ InputCommand = (
   input.SetFiles
 )
 
+InputResult = (
+  input.PerformActionsResult /
+  input.ReleaseActionsResult /
+  input.SetFilesResult
+)
+
 InputEvent = (
   input.FileDialogOpened
 )
@@ -2190,6 +2293,8 @@ input.PointerCommonProperties = (
 
 input.Origin = "viewport" / "pointer" / input.ElementOrigin
 
+input.PerformActionsResult = EmptyResult
+
 input.ReleaseActions = (
   method: "input.releaseActions",
   params: input.ReleaseActionsParameters
@@ -2198,6 +2303,8 @@ input.ReleaseActions = (
 input.ReleaseActionsParameters = {
   context: browsingContext.BrowsingContext,
 }
+
+input.ReleaseActionsResult = EmptyResult
 
 input.SetFiles = (
   method: "input.setFiles",
@@ -2209,6 +2316,8 @@ input.SetFilesParameters = {
   element: script.SharedReference,
   files: [*text]
 }
+
+input.SetFilesResult = EmptyResult
 
 input.FileDialogOpened = (
    method: "input.fileDialogOpened",
@@ -2227,7 +2336,8 @@ WebExtensionCommand = (
 )
 
 WebExtensionResult = (
-  webExtension.InstallResult
+  webExtension.InstallResult /
+  webExtension.UninstallResult
 )
 
 webExtension.Extension = text
@@ -2274,6 +2384,8 @@ webExtension.Uninstall = (
 webExtension.UninstallParameters = {
    extension: webExtension.Extension,
 }
+
+webExtension.UninstallResult = EmptyResult
 
 Command = {
   id: js-uint,
@@ -3690,6 +3802,12 @@ InputCommand = (
   input.SetFiles
 )
 
+InputResult = (
+  input.PerformActionsResult /
+  input.ReleaseActionsResult /
+  input.SetFilesResult
+)
+
 input.ElementOrigin = {
   type: "element",
   element: script.SharedReference
@@ -3922,8 +4040,10 @@ ErrorResponse = {
 }
 
 ResultData = (
+  BrowserResult /
   BrowsingContextResult /
-  EmptyResult /
+  EmulationResult /
+  InputResult /
   NetworkResult /
   ScriptResult /
   SessionResult /
@@ -3985,9 +4105,11 @@ ErrorCode = "invalid argument" /
             "unsupported operation"
 
 SessionResult = (
-   session.NewResult /
-   session.StatusResult /
-   session.SubscribeResult
+  session.EndResult /
+  session.NewResult /
+  session.StatusResult /
+  session.SubscribeResult /
+  session.UnsubscribeResult
 )
 
 session.CapabilitiesRequest = {
@@ -4082,13 +4204,22 @@ session.NewResult = {
   }
 }
 
+session.EndResult = EmptyResult
+
 session.SubscribeResult = {
   subscription: session.Subscription,
 }
 
+session.UnsubscribeResult = EmptyResult
+
 BrowserResult = (
-   browser.CreateUserContextResult /
-   browser.GetUserContextsResult
+  browser.CloseResult /
+  browser.CreateUserContextResult /
+  browser.GetClientWindowsResult /
+  browser.GetUserContextsResult /
+  browser.RemoveUserContextResult /
+  browser.SetClientWindowStateResult /
+  browser.SetDownloadBehaviorResult
 )
 
 browser.ClientWindow = text;
@@ -4109,6 +4240,8 @@ browser.UserContextInfo = {
   userContext: browser.UserContext
 }
 
+browser.CloseResult = EmptyResult
+
 browser.CreateUserContextResult = browser.UserContextInfo
 
 browser.GetClientWindowsResult = {
@@ -4119,13 +4252,24 @@ browser.GetUserContextsResult = {
   userContexts: [ + browser.UserContextInfo]
 }
 
+browser.RemoveUserContextResult = EmptyResult
+
+browser.SetClientWindowStateResult = browser.ClientWindowInfo
+
+browser.SetDownloadBehaviorResult = EmptyResult
+
 BrowsingContextResult = (
+  browsingContext.ActivateResult /
   browsingContext.CaptureScreenshotResult /
+  browsingContext.CloseResult /
   browsingContext.CreateResult /
   browsingContext.GetTreeResult /
+  browsingContext.HandleUserPromptResult /
   browsingContext.LocateNodesResult /
   browsingContext.NavigateResult /
   browsingContext.PrintResult /
+  browsingContext.ReloadResult /
+  browsingContext.SetViewportResult /
   browsingContext.TraverseHistoryResult
 )
 
@@ -4216,9 +4360,13 @@ browsingContext.NavigationInfo = {
 
 browsingContext.UserPromptType = "alert" / "beforeunload" / "confirm" / "prompt";
 
+browsingContext.ActivateResult = EmptyResult
+
 browsingContext.CaptureScreenshotResult = {
   data: text
 }
+
+browsingContext.CloseResult = EmptyResult
 
 browsingContext.CreateResult = {
   context: browsingContext.BrowsingContext
@@ -4227,6 +4375,8 @@ browsingContext.CreateResult = {
 browsingContext.GetTreeResult = {
   contexts: browsingContext.InfoList
 }
+
+browsingContext.HandleUserPromptResult = EmptyResult
 
 browsingContext.LocateNodesResult = {
     nodes: [ * script.NodeRemoteValue ]
@@ -4241,8 +4391,11 @@ browsingContext.PrintResult = {
   data: text
 }
 
-browsingContext.TraverseHistoryResult = {
-}
+browsingContext.ReloadResult = browsingContext.NavigateResult
+
+browsingContext.SetViewportResult = EmptyResult
+
+browsingContext.TraverseHistoryResult = EmptyResult
 
 browsingContext.ContextCreated = (
  method: "browsingContext.contextCreated",
@@ -4358,8 +4511,44 @@ browsingContext.UserPromptOpenedParameters = {
   ? defaultValue: text
 }
 
+EmulationResult = (
+  emulation.SetForcedColorsModeThemeOverrideResult /
+  emulation.SetGeolocationOverrideResult /
+  emulation.SetLocaleOverrideResult /
+  emulation.SetScreenOrientationOverrideResult /
+  emulation.SetScriptingEnabledResult /
+  emulation.SetTimezoneOverrideResult /
+  emulation.SetUserAgentOverrideResult
+)
+
+emulation.SetForcedColorsModeThemeOverrideResult = EmptyResult
+
+emulation.SetGeolocationOverrideResult = EmptyResult
+
+emulation.SetLocaleOverrideResult = EmptyResult
+
+emulation.SetScreenOrientationOverrideResult = EmptyResult
+
+emulation.SetUserAgentOverrideResult = EmptyResult
+
+emulation.SetScriptingEnabledResult = EmptyResult
+
+emulation.SetTimezoneOverrideResult = EmptyResult
+
 NetworkResult = (
-   network.AddInterceptResult
+  network.AddDataCollectorResult /
+  network.AddInterceptResult /
+  network.ContinueRequestResult /
+  network.ContinueResponseResult /
+  network.ContinueWithAuthResult /
+  network.DisownDataResult /
+  network.FailRequestResult /
+  network.GetDataResult /
+  network.ProvideResponseResult /
+  network.RemoveDataCollectorResult /
+  network.RemoveInterceptResult /
+  network.SetCacheBehaviorResult /
+  network.SetExtraHeadersResult
 )
 
 NetworkEvent = (
@@ -4491,9 +4680,29 @@ network.AddInterceptResult = {
   intercept: network.Intercept
 }
 
+network.ContinueRequestResult = EmptyResult
+
+network.ContinueResponseResult = EmptyResult
+
+network.ContinueWithAuthResult = EmptyResult
+
+network.DisownDataResult = EmptyResult
+
+network.FailRequestResult = EmptyResult
+
 network.GetDataResult = {
   bytes: network.BytesValue,
 }
+
+network.ProvideResponseResult = EmptyResult
+
+network.RemoveDataCollectorResult = EmptyResult
+
+network.RemoveInterceptResult = EmptyResult
+
+network.SetCacheBehaviorResult = EmptyResult
+
+network.SetExtraHeadersResult = EmptyResult
 
 network.AuthRequired = (
   method: "network.authRequired",
@@ -4547,9 +4756,11 @@ network.ResponseStartedParameters = {
 
 ScriptResult = (
   script.AddPreloadScriptResult /
+  script.CallFunctionResult /
+  script.DisownResult /
   script.EvaluateResult /
   script.GetRealmsResult /
-  script.CallFunctionResult
+  script.RemovePreloadScriptResult
 )
 
 ScriptEvent = (
@@ -4976,11 +5187,15 @@ script.AddPreloadScriptResult = {
   script: script.PreloadScript
 }
 
+script.DisownResult = EmptyResult
+
 script.CallFunctionResult = script.EvaluateResult
 
 script.GetRealmsResult = {
   realms: [*script.RealmInfo]
 }
+
+script.RemovePreloadScriptResult = EmptyResult
 
 script.Message = (
   method: "script.message",
@@ -5078,6 +5293,12 @@ InputEvent = (
   input.FileDialogOpened
 )
 
+input.PerformActionsResult = EmptyResult
+
+input.ReleaseActionsResult = EmptyResult
+
+input.SetFilesResult = EmptyResult
+
 input.FileDialogOpened = (
    method: "input.fileDialogOpened",
    params: input.FileDialogInfo
@@ -5090,7 +5311,8 @@ input.FileDialogInfo = {
 }
 
 WebExtensionResult = (
-  webExtension.InstallResult
+  webExtension.InstallResult /
+  webExtension.UninstallResult
 )
 
 webExtension.Extension = text
@@ -5098,3 +5320,5 @@ webExtension.Extension = text
 webExtension.InstallResult = {
   extension: webExtension.Extension
 }
+
+webExtension.UninstallResult = EmptyResult
