@@ -253,40 +253,52 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: this is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>.</p>"
         },
         {
-          "html": "<p>Let <var>cutoffTime</var> be null.</p>"
+          "html": "<p>Let <var>timeout</var> be null.</p>"
         },
         {
-          "html": "While true:",
-          "rationale": "let",
+          "html": "<p>Optionally, set <var>timeout</var> to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> duration representing the maximum time the implementation is willing to wait for an ongoing prefetch to respond, before it gives up and restarts the navigation.</p>"
+        },
+        {
+          "html": "<p>Let <var>startTime</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-unsafe-shared-current-time\" id=\"ref-for-dfn-unsafe-shared-current-time\">unsafe shared current time</a>.</p>"
+        },
+        {
+          "html": "Run these steps, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when\">abort when</a> <var>timeout</var> is not null and the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-unsafe-shared-current-time\" id=\"ref-for-dfn-unsafe-shared-current-time①\">unsafe shared current time</a> − <var>startTime</var> is greater than <var>timeout</var>:",
+          "rationale": "while",
           "steps": [
             {
-              "html": "<p>Let <var>completeRecord</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#find-a-matching-complete-prefetch-record\" id=\"ref-for-find-a-matching-complete-prefetch-record\">finding a matching complete prefetch record</a> given <var>navigable</var>, <var>sourceSnapshotParams</var>, and <var>url</var>.</p>"
-            },
-            {
-              "html": "<p>If <var>completeRecord</var> is not null, return <var>completeRecord</var>.</p>"
-            },
-            {
-              "html": "<p>Let <var>potentialRecords</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
-            },
-            {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>record</var> of <var>sourceSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#source-snapshot-params-prefetch-records\" id=\"ref-for-source-snapshot-params-prefetch-records①\">prefetch records</a>:",
-              "rationale": "if",
+              "html": "While true:",
+              "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>If all of the following are true, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> <var>record</var> to <var>potentialRecords</var>:</p>\n          <ul>\n           <li data-md=\"\">\n            <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-state\" id=\"ref-for-prefetch-record-state⑤\">state</a> is \"<code>ongoing</code>\".</p>\n           </li><li data-md=\"\">\n            <p><var>record</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-is-expected-to-match-a-url\" id=\"ref-for-prefetch-record-is-expected-to-match-a-url\">is expected to match a URL</a> given <var>url</var>.</p>\n           </li><li data-md=\"\">\n            <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-expiry-time\" id=\"ref-for-prefetch-record-expiry-time③\">expiry time</a> is greater than the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time②\">current high resolution time</a> for <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window\">active window</a>.</p>\n           </li><li data-md=\"\">\n            <p><var>cutoffTime</var> is null or <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-start-time\" id=\"ref-for-prefetch-record-start-time\">start time</a> is less than <var>cutoffTime</var>.</p>\n          </li></ul>"
+                  "html": "<p>Let <var>completeRecord</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#find-a-matching-complete-prefetch-record\" id=\"ref-for-find-a-matching-complete-prefetch-record\">finding a matching complete prefetch record</a> given <var>navigable</var>, <var>sourceSnapshotParams</var>, and <var>url</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>completeRecord</var> is not null, return <var>completeRecord</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>potentialRecords</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>record</var> of <var>sourceSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#source-snapshot-params-prefetch-records\" id=\"ref-for-source-snapshot-params-prefetch-records①\">prefetch records</a>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If all of the following are true:</p>\n            <ul>\n             <li data-md=\"\">\n              <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-state\" id=\"ref-for-prefetch-record-state⑤\">state</a> is \"<code>ongoing</code>\";</p>\n             </li><li data-md=\"\">\n              <p><var>record</var> <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-is-expected-to-match-a-url\" id=\"ref-for-prefetch-record-is-expected-to-match-a-url\">is expected to match a URL</a> given <var>url</var>; and</p>\n             </li><li data-md=\"\">\n              <p><var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-expiry-time\" id=\"ref-for-prefetch-record-expiry-time③\">expiry time</a> is greater than the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time②\">current high resolution time</a> for <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window\">active window</a>,</p>\n            </li></ul>\n            then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> <var>record</var> to <var>potentialRecords</var>."
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>If <var>potentialRecords</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①\">is empty</a>, return null.</p>"
+                },
+                {
+                  "html": "<p>Wait until the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-state\" id=\"ref-for-prefetch-record-state⑥\">state</a> of any element of <var>sourceSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#source-snapshot-params-prefetch-records\" id=\"ref-for-source-snapshot-params-prefetch-records③\">prefetch records</a> changes.</p>"
                 }
               ]
-            },
-            {
-              "html": "<p>If <var>potentialRecords</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①\">is empty</a>, return null.</p>"
-            },
-            {
-              "html": "<p>Wait until the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-state\" id=\"ref-for-prefetch-record-state⑥\">state</a> of any element of <var>sourceSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#source-snapshot-params-prefetch-records\" id=\"ref-for-source-snapshot-params-prefetch-records②\">prefetch records</a> changes.</p>"
-            },
-            {
-              "html": "<p>If <var>cutoffTime</var> is null and any element of <var>potentialRecords</var> has a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-state\" id=\"ref-for-prefetch-record-state⑦\">state</a> that is not \"<code>ongoing</code>\", set <var>cutoffTime</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time③\">current high resolution time</a> for <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①\">active window</a>.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>Return null.</p>"
         }
       ]
     },
@@ -330,7 +342,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-state\" id=\"ref-for-prefetch-record-state⑧\">state</a> is \"<code>canceled</code>\", then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.</p>"
+              "html": "<p>If <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-state\" id=\"ref-for-prefetch-record-state⑦\">state</a> is \"<code>canceled</code>\", then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.</p>"
             },
             {
               "html": "If <var>checkPrerender</var> is true:",
@@ -789,7 +801,7 @@
                   "html": "<p>If <var>proposedPartitionKey</var> is not equal to <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-source-partition-key\" id=\"ref-for-prefetch-record-source-partition-key①\">source partition key</a> and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer-policy\" id=\"ref-for-concept-request-referrer-policy①\">referrer policy</a> is not in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#list-of-sufficiently-strict-speculative-navigation-referrer-policies\" id=\"ref-for-list-of-sufficiently-strict-speculative-navigation-referrer-policies\">list of sufficiently strict speculative navigation referrer policies</a>, then set <var>response</var> to a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error⑤\">network error</a> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break⑤\">break</a>.</p>"
                 },
                 {
-                  "html": "<p>If <var>request</var> cannot be fetched given <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-anonymization-policy\" id=\"ref-for-prefetch-record-anonymization-policy②\">anonymization policy</a> for an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a> reason, then set <var>response</var> to a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error⑥\">network error</a> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break⑥\">break</a>.</p>"
+                  "html": "<p>If <var>request</var> cannot be fetched given <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-anonymization-policy\" id=\"ref-for-prefetch-record-anonymization-policy②\">anonymization policy</a> for an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined③\">implementation-defined</a> reason, then set <var>response</var> to a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error⑥\">network error</a> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break⑥\">break</a>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> a new <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#exchange-record\" id=\"ref-for-exchange-record①\">exchange record</a> whose <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#exchange-record-request\" id=\"ref-for-exchange-record-request⑥\">request</a> is <var>request</var> and <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#exchange-record-response\" id=\"ref-for-exchange-record-response⑥\">response</a> is null to <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-redirect-chain\" id=\"ref-for-prefetch-record-redirect-chain⑥\">redirect chain</a>.</p>"
@@ -998,7 +1010,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">Append</a> <var>prefetchRecord</var> to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#document-prefetch-records\" id=\"ref-for-document-prefetch-records⑧\">prefetch records</a>.</p>"
         },
         {
-          "html": "<p>Set <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-start-time\" id=\"ref-for-prefetch-record-start-time①\">start time</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time④\">current high resolution time</a> for the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> of <var>document</var>.</p>"
+          "html": "<p>Set <var>prefetchRecord</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#prefetch-record-start-time\" id=\"ref-for-prefetch-record-start-time\">start time</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time③\">current high resolution time</a> for the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> of <var>document</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#trigger-a-prefetch-status-updated-event\" id=\"ref-for-trigger-a-prefetch-status-updated-event⑤\">Trigger a prefetch status updated event</a> given <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable④\">node navigable</a>, <var>prefetchRecord</var>, and \"<code class=\"cddl\"><a data-link-type=\"cddl\" href=\"https://wicg.github.io/nav-speculation/prefetch.html#cddl-value-speculationpreloadingstatus-pending\" id=\"ref-for-cddl-value-speculationpreloadingstatus-pending\">pending</a></code>\" status.</p>"
@@ -1120,7 +1132,7 @@
               ]
             },
             {
-              "html": "<p>Let <var>secondKey</var> be null or an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined③\">implementation-defined</a> value.</p>"
+              "html": "<p>Let <var>secondKey</var> be null or an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> value.</p>"
             },
             {
               "html": "<p>Let <var>destinationPartitionKey</var> be (<var>topLevelSite</var>, <var>secondKey</var>).</p>"
