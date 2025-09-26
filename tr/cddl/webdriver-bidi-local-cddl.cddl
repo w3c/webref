@@ -26,8 +26,10 @@ ErrorResponse = {
 }
 
 ResultData = (
+  BrowserResult /
   BrowsingContextResult /
-  EmptyResult /
+  EmulationResult /
+  InputResult /
   NetworkResult /
   ScriptResult /
   SessionResult /
@@ -89,9 +91,11 @@ ErrorCode = "invalid argument" /
 "unsupported operation"
 
 SessionResult = (
-   session.NewResult /
-   session.StatusResult /
-   session.SubscribeResult
+  session.EndResult /
+  session.NewResult /
+  session.StatusResult /
+  session.SubscribeResult /
+  session.UnsubscribeResult
 )
 
 session.CapabilitiesRequest = {
@@ -186,13 +190,22 @@ session.NewResult = {
   }
 }
 
+session.EndResult = EmptyResult
+
 session.SubscribeResult = {
   subscription: session.Subscription,
 }
 
+session.UnsubscribeResult = EmptyResult
+
 BrowserResult = (
-   browser.CreateUserContextResult /
-   browser.GetUserContextsResult
+  browser.CloseResult /
+  browser.CreateUserContextResult /
+  browser.GetClientWindowsResult /
+  browser.GetUserContextsResult /
+  browser.RemoveUserContextResult /
+  browser.SetClientWindowStateResult /
+  browser.SetDownloadBehaviorResult
 )
 
 browser.ClientWindow = text;
@@ -213,6 +226,8 @@ browser.UserContextInfo = {
   userContext: browser.UserContext
 }
 
+browser.CloseResult = EmptyResult
+
 browser.CreateUserContextResult = browser.UserContextInfo
 
 browser.GetClientWindowsResult = {
@@ -223,13 +238,24 @@ browser.GetUserContextsResult = {
   userContexts: [ + browser.UserContextInfo]
 }
 
+browser.RemoveUserContextResult = EmptyResult
+
+browser.SetClientWindowStateResult = browser.ClientWindowInfo
+
+browser.SetDownloadBehaviorResult = EmptyResult
+
 BrowsingContextResult = (
+  browsingContext.ActivateResult /
   browsingContext.CaptureScreenshotResult /
+  browsingContext.CloseResult /
   browsingContext.CreateResult /
   browsingContext.GetTreeResult /
+  browsingContext.HandleUserPromptResult /
   browsingContext.LocateNodesResult /
   browsingContext.NavigateResult /
   browsingContext.PrintResult /
+  browsingContext.ReloadResult /
+  browsingContext.SetViewportResult /
   browsingContext.TraverseHistoryResult
 )
 
@@ -320,9 +346,13 @@ browsingContext.NavigationInfo = {
 
 browsingContext.UserPromptType = "alert" / "beforeunload" / "confirm" / "prompt";
 
+browsingContext.ActivateResult = EmptyResult
+
 browsingContext.CaptureScreenshotResult = {
   data: text
 }
+
+browsingContext.CloseResult = EmptyResult
 
 browsingContext.CreateResult = {
   context: browsingContext.BrowsingContext
@@ -331,6 +361,8 @@ browsingContext.CreateResult = {
 browsingContext.GetTreeResult = {
   contexts: browsingContext.InfoList
 }
+
+browsingContext.HandleUserPromptResult = EmptyResult
 
 browsingContext.LocateNodesResult = {
     nodes: [ * script.NodeRemoteValue ]
@@ -345,8 +377,11 @@ browsingContext.PrintResult = {
   data: text
 }
 
-browsingContext.TraverseHistoryResult = {
-}
+browsingContext.ReloadResult = browsingContext.NavigateResult
+
+browsingContext.SetViewportResult = EmptyResult
+
+browsingContext.TraverseHistoryResult = EmptyResult
 
 browsingContext.ContextCreated = (
  method: "browsingContext.contextCreated",
@@ -462,8 +497,44 @@ browsingContext.UserPromptOpenedParameters = {
   ? defaultValue: text
 }
 
+EmulationResult = (
+  emulation.SetForcedColorsModeThemeOverrideResult /
+  emulation.SetGeolocationOverrideResult /
+  emulation.SetLocaleOverrideResult /
+  emulation.SetScreenOrientationOverrideResult /
+  emulation.SetScriptingEnabledResult /
+  emulation.SetTimezoneOverrideResult /
+  emulation.SetUserAgentOverrideResult
+)
+
+emulation.SetForcedColorsModeThemeOverrideResult = EmptyResult
+
+emulation.SetGeolocationOverrideResult = EmptyResult
+
+emulation.SetLocaleOverrideResult = EmptyResult
+
+emulation.SetScreenOrientationOverrideResult = EmptyResult
+
+emulation.SetUserAgentOverrideResult = EmptyResult
+
+emulation.SetScriptingEnabledResult = EmptyResult
+
+emulation.SetTimezoneOverrideResult = EmptyResult
+
 NetworkResult = (
-   network.AddInterceptResult
+  network.AddDataCollectorResult /
+  network.AddInterceptResult /
+  network.ContinueRequestResult /
+  network.ContinueResponseResult /
+  network.ContinueWithAuthResult /
+  network.DisownDataResult /
+  network.FailRequestResult /
+  network.GetDataResult /
+  network.ProvideResponseResult /
+  network.RemoveDataCollectorResult /
+  network.RemoveInterceptResult /
+  network.SetCacheBehaviorResult /
+  network.SetExtraHeadersResult
 )
 
 NetworkEvent = (
@@ -595,9 +666,29 @@ network.AddInterceptResult = {
   intercept: network.Intercept
 }
 
+network.ContinueRequestResult = EmptyResult
+
+network.ContinueResponseResult = EmptyResult
+
+network.ContinueWithAuthResult = EmptyResult
+
+network.DisownDataResult = EmptyResult
+
+network.FailRequestResult = EmptyResult
+
 network.GetDataResult = {
   bytes: network.BytesValue,
 }
+
+network.ProvideResponseResult = EmptyResult
+
+network.RemoveDataCollectorResult = EmptyResult
+
+network.RemoveInterceptResult = EmptyResult
+
+network.SetCacheBehaviorResult = EmptyResult
+
+network.SetExtraHeadersResult = EmptyResult
 
 network.AuthRequired = (
   method: "network.authRequired",
@@ -651,9 +742,11 @@ network.ResponseStartedParameters = {
 
 ScriptResult = (
   script.AddPreloadScriptResult /
+  script.CallFunctionResult /
+  script.DisownResult /
   script.EvaluateResult /
   script.GetRealmsResult /
-  script.CallFunctionResult
+  script.RemovePreloadScriptResult
 )
 
 ScriptEvent = (
@@ -1080,11 +1173,15 @@ script.AddPreloadScriptResult = {
   script: script.PreloadScript
 }
 
+script.DisownResult = EmptyResult
+
 script.CallFunctionResult = script.EvaluateResult
 
 script.GetRealmsResult = {
   realms: [*script.RealmInfo]
 }
+
+script.RemovePreloadScriptResult = EmptyResult
 
 script.Message = (
   method: "script.message",
@@ -1182,6 +1279,12 @@ InputEvent = (
   input.FileDialogOpened
 )
 
+input.PerformActionsResult = EmptyResult
+
+input.ReleaseActionsResult = EmptyResult
+
+input.SetFilesResult = EmptyResult
+
 input.FileDialogOpened = (
    method: "input.fileDialogOpened",
    params: input.FileDialogInfo
@@ -1194,7 +1297,8 @@ input.FileDialogInfo = {
 }
 
 WebExtensionResult = (
-  webExtension.InstallResult
+  webExtension.InstallResult /
+  webExtension.UninstallResult
 )
 
 webExtension.Extension = text
@@ -1202,6 +1306,8 @@ webExtension.Extension = text
 webExtension.InstallResult = {
   extension: webExtension.Extension
 }
+
+webExtension.UninstallResult = EmptyResult
 
 Command = {
   id: js-uint,
@@ -2618,6 +2724,12 @@ InputCommand = (
   input.SetFiles
 )
 
+InputResult = (
+  input.PerformActionsResult /
+  input.ReleaseActionsResult /
+  input.SetFilesResult
+)
+
 input.ElementOrigin = {
   type: "element",
   element: script.SharedReference
@@ -2850,8 +2962,10 @@ ErrorResponse = {
 }
 
 ResultData = (
+  BrowserResult /
   BrowsingContextResult /
-  EmptyResult /
+  EmulationResult /
+  InputResult /
   NetworkResult /
   ScriptResult /
   SessionResult /
@@ -2913,9 +3027,11 @@ ErrorCode = "invalid argument" /
             "unsupported operation"
 
 SessionResult = (
-   session.NewResult /
-   session.StatusResult /
-   session.SubscribeResult
+  session.EndResult /
+  session.NewResult /
+  session.StatusResult /
+  session.SubscribeResult /
+  session.UnsubscribeResult
 )
 
 session.CapabilitiesRequest = {
@@ -3010,13 +3126,22 @@ session.NewResult = {
   }
 }
 
+session.EndResult = EmptyResult
+
 session.SubscribeResult = {
   subscription: session.Subscription,
 }
 
+session.UnsubscribeResult = EmptyResult
+
 BrowserResult = (
-   browser.CreateUserContextResult /
-   browser.GetUserContextsResult
+  browser.CloseResult /
+  browser.CreateUserContextResult /
+  browser.GetClientWindowsResult /
+  browser.GetUserContextsResult /
+  browser.RemoveUserContextResult /
+  browser.SetClientWindowStateResult /
+  browser.SetDownloadBehaviorResult
 )
 
 browser.ClientWindow = text;
@@ -3037,6 +3162,8 @@ browser.UserContextInfo = {
   userContext: browser.UserContext
 }
 
+browser.CloseResult = EmptyResult
+
 browser.CreateUserContextResult = browser.UserContextInfo
 
 browser.GetClientWindowsResult = {
@@ -3047,13 +3174,24 @@ browser.GetUserContextsResult = {
   userContexts: [ + browser.UserContextInfo]
 }
 
+browser.RemoveUserContextResult = EmptyResult
+
+browser.SetClientWindowStateResult = browser.ClientWindowInfo
+
+browser.SetDownloadBehaviorResult = EmptyResult
+
 BrowsingContextResult = (
+  browsingContext.ActivateResult /
   browsingContext.CaptureScreenshotResult /
+  browsingContext.CloseResult /
   browsingContext.CreateResult /
   browsingContext.GetTreeResult /
+  browsingContext.HandleUserPromptResult /
   browsingContext.LocateNodesResult /
   browsingContext.NavigateResult /
   browsingContext.PrintResult /
+  browsingContext.ReloadResult /
+  browsingContext.SetViewportResult /
   browsingContext.TraverseHistoryResult
 )
 
@@ -3144,9 +3282,13 @@ browsingContext.NavigationInfo = {
 
 browsingContext.UserPromptType = "alert" / "beforeunload" / "confirm" / "prompt";
 
+browsingContext.ActivateResult = EmptyResult
+
 browsingContext.CaptureScreenshotResult = {
   data: text
 }
+
+browsingContext.CloseResult = EmptyResult
 
 browsingContext.CreateResult = {
   context: browsingContext.BrowsingContext
@@ -3155,6 +3297,8 @@ browsingContext.CreateResult = {
 browsingContext.GetTreeResult = {
   contexts: browsingContext.InfoList
 }
+
+browsingContext.HandleUserPromptResult = EmptyResult
 
 browsingContext.LocateNodesResult = {
     nodes: [ * script.NodeRemoteValue ]
@@ -3169,8 +3313,11 @@ browsingContext.PrintResult = {
   data: text
 }
 
-browsingContext.TraverseHistoryResult = {
-}
+browsingContext.ReloadResult = browsingContext.NavigateResult
+
+browsingContext.SetViewportResult = EmptyResult
+
+browsingContext.TraverseHistoryResult = EmptyResult
 
 browsingContext.ContextCreated = (
  method: "browsingContext.contextCreated",
@@ -3286,8 +3433,44 @@ browsingContext.UserPromptOpenedParameters = {
   ? defaultValue: text
 }
 
+EmulationResult = (
+  emulation.SetForcedColorsModeThemeOverrideResult /
+  emulation.SetGeolocationOverrideResult /
+  emulation.SetLocaleOverrideResult /
+  emulation.SetScreenOrientationOverrideResult /
+  emulation.SetScriptingEnabledResult /
+  emulation.SetTimezoneOverrideResult /
+  emulation.SetUserAgentOverrideResult
+)
+
+emulation.SetForcedColorsModeThemeOverrideResult = EmptyResult
+
+emulation.SetGeolocationOverrideResult = EmptyResult
+
+emulation.SetLocaleOverrideResult = EmptyResult
+
+emulation.SetScreenOrientationOverrideResult = EmptyResult
+
+emulation.SetUserAgentOverrideResult = EmptyResult
+
+emulation.SetScriptingEnabledResult = EmptyResult
+
+emulation.SetTimezoneOverrideResult = EmptyResult
+
 NetworkResult = (
-   network.AddInterceptResult
+  network.AddDataCollectorResult /
+  network.AddInterceptResult /
+  network.ContinueRequestResult /
+  network.ContinueResponseResult /
+  network.ContinueWithAuthResult /
+  network.DisownDataResult /
+  network.FailRequestResult /
+  network.GetDataResult /
+  network.ProvideResponseResult /
+  network.RemoveDataCollectorResult /
+  network.RemoveInterceptResult /
+  network.SetCacheBehaviorResult /
+  network.SetExtraHeadersResult
 )
 
 NetworkEvent = (
@@ -3419,9 +3602,29 @@ network.AddInterceptResult = {
   intercept: network.Intercept
 }
 
+network.ContinueRequestResult = EmptyResult
+
+network.ContinueResponseResult = EmptyResult
+
+network.ContinueWithAuthResult = EmptyResult
+
+network.DisownDataResult = EmptyResult
+
+network.FailRequestResult = EmptyResult
+
 network.GetDataResult = {
   bytes: network.BytesValue,
 }
+
+network.ProvideResponseResult = EmptyResult
+
+network.RemoveDataCollectorResult = EmptyResult
+
+network.RemoveInterceptResult = EmptyResult
+
+network.SetCacheBehaviorResult = EmptyResult
+
+network.SetExtraHeadersResult = EmptyResult
 
 network.AuthRequired = (
   method: "network.authRequired",
@@ -3475,9 +3678,11 @@ network.ResponseStartedParameters = {
 
 ScriptResult = (
   script.AddPreloadScriptResult /
+  script.CallFunctionResult /
+  script.DisownResult /
   script.EvaluateResult /
   script.GetRealmsResult /
-  script.CallFunctionResult
+  script.RemovePreloadScriptResult
 )
 
 ScriptEvent = (
@@ -3904,11 +4109,15 @@ script.AddPreloadScriptResult = {
   script: script.PreloadScript
 }
 
+script.DisownResult = EmptyResult
+
 script.CallFunctionResult = script.EvaluateResult
 
 script.GetRealmsResult = {
   realms: [*script.RealmInfo]
 }
+
+script.RemovePreloadScriptResult = EmptyResult
 
 script.Message = (
   method: "script.message",
@@ -4006,6 +4215,12 @@ InputEvent = (
   input.FileDialogOpened
 )
 
+input.PerformActionsResult = EmptyResult
+
+input.ReleaseActionsResult = EmptyResult
+
+input.SetFilesResult = EmptyResult
+
 input.FileDialogOpened = (
    method: "input.fileDialogOpened",
    params: input.FileDialogInfo
@@ -4018,7 +4233,8 @@ input.FileDialogInfo = {
 }
 
 WebExtensionResult = (
-  webExtension.InstallResult
+  webExtension.InstallResult /
+  webExtension.UninstallResult
 )
 
 webExtension.Extension = text
@@ -4026,3 +4242,5 @@ webExtension.Extension = text
 webExtension.InstallResult = {
   extension: webExtension.Extension
 }
+
+webExtension.UninstallResult = EmptyResult
