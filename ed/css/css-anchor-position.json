@@ -25,7 +25,7 @@
         },
         {
           "name": "<dashed-ident>#",
-          "prose": "If the element generates a principal box, the element is an anchor element, with a list of anchor names as specified. Each anchor name is a tree-scoped name. Otherwise, the property has no effect.",
+          "prose": "If the element generates a principal box, the element is an anchor element, with a list of anchor names as specified. Each anchor name is a loosely matched tree-scoped name. Otherwise, the property has no effect.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-name-dashed-ident",
           "type": "value",
           "value": "<dashed-ident>#"
@@ -57,14 +57,14 @@
         },
         {
           "name": "all",
-          "prose": "Specifies that all anchor names defined by this element or its descendants—​whose scope is not already limited by a descendant using anchor-scope—​to be in scope only for this element’s descendants; and limits descendants to only match anchor names to anchor elements within this subtree. This value only affects anchor names in the same tree scope, as if it were a tree-scoped name. (That is, anchor-scope: all acts identically to anchor-scope: --foo, --bar, ..., listing all relevant anchor names.)",
+          "prose": "Specifies that all anchor names defined by this element or its descendants—​whose scope is not already limited by a descendant using anchor-scope—​to be in scope only for this element’s descendants; and limits descendants to only match anchor names to anchor elements within this subtree. This value only affects anchor names in the same tree scope, as if it were a strictly matched tree-scoped name. (That is, anchor-scope: all acts identically to anchor-scope: --foo, --bar, ..., listing all relevant anchor names.)",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-scope-all",
           "type": "value",
           "value": "all"
         },
         {
           "name": "<dashed-ident>",
-          "prose": "Specifies that a matching anchor name defined by this element or its descendants—​whose scope is not already limited by a descendant using anchor-scope—​to be in scope only for this element’s descendants; and limits descendants to only match these anchor names to anchor elements within this subtree. The <dashed-ident> is a tree-scoped name.",
+          "prose": "Specifies that a matching anchor name defined by this element or its descendants—​whose scope is not already limited by a descendant using anchor-scope—​to be in scope only for this element’s descendants; and limits descendants to only match these anchor names to anchor elements within this subtree. The <dashed-ident> represents a strictly matched tree-scoped name, i.e. it can only match against anchor names in the same shadow tree.[CSS-SCOPING-1]",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-anchor-scope-dashed-ident",
           "type": "value",
           "value": "<dashed-ident>"
