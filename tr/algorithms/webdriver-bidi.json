@@ -938,7 +938,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>collector id</var> be <var>collector</var>’s <code>collector</code>.</p>"
+              "html": "<p>Let <var>collector id</var> be <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-collector\" id=\"ref-for-network-collector-collector\">collector</a>.</p>"
             },
             {
               "html": "<p>For each <var>collected data</var> in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#collected-network-data\" id=\"ref-for-collected-network-data\">collected network data</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#remove-collector-from-data\" id=\"ref-for-remove-collector-from-data\">remove collector from data</a>\n  with <var>collected data</var> and <var>collector id</var>.</p>"
@@ -1551,7 +1551,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>user context</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context\" id=\"ref-for-user-context②⓪\">user context</a>.</p>"
+          "html": "<p>Let <var>user context</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context\" id=\"ref-for-user-context①②\">user context</a>.</p>"
         },
         {
           "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">contain</a> \"<code>acceptInsecureCerts</code>\":",
@@ -1579,7 +1579,7 @@
               "html": "<p>Let <var>proxy configuration</var> be <var>command parameters</var>[\"<code>proxy</code>\"].</p>"
             },
             {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends②③\">remote end</a> is unable to configure proxy settings per <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context\" id=\"ref-for-user-context②①\">user context</a>,\n   or is unable to configure the proxy with <var>proxy configuration</var>, return  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors②⓪\">error</a> with\n   <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation⑤\">unsupported operation</a>.</p>"
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends②③\">remote end</a> is unable to configure proxy settings per <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context\" id=\"ref-for-user-context①③\">user context</a>,\n   or is unable to configure the proxy with <var>proxy configuration</var>, return  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors②⓪\">error</a> with\n   <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation⑤\">unsupported operation</a>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">Set</a> <var>session</var>’s\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-to-proxy-configuration-map\" id=\"ref-for-user-context-to-proxy-configuration-map①\">user context to proxy configuration map</a>[<var>user context</var>]\n  to <var>proxy configuration</var>.</p>"
@@ -4808,11 +4808,11 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>collector</var>’s <code>contexts</code> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty⑧\">empty</a>:",
+          "html": "If <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-contexts\" id=\"ref-for-network-collector-contexts\">contexts</a> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty⑧\">empty</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>collector</var>’s <code>contexts</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①①\">contains</a> <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑤\">navigable id</a>, return true.</p>"
+              "html": "<p>If <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-contexts\" id=\"ref-for-network-collector-contexts①\">contexts</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①①\">contains</a> <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑥\">navigable id</a>, return true.</p>"
             },
             {
               "html": "<p>Otherwise, return false.</p>"
@@ -4820,14 +4820,14 @@
           ]
         },
         {
-          "html": "If <var>collector</var>’s <code>user contexts</code> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty⑨\">empty</a>:",
+          "html": "If <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-user-contexts\" id=\"ref-for-network-collector-user-contexts①⑨\">user contexts</a> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty⑨\">empty</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>user context</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context②⑨\">associated user context</a>.</p>"
             },
             {
-              "html": "<p>If <var>collector</var>’s <code>user contexts</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①②\">contains</a> <var>user context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-user-context-id\" id=\"ref-for-user-context-user-context-id⑨\">user context id</a>, return true.</p>"
+              "html": "<p>If <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-user-contexts\" id=\"ref-for-network-collector-user-contexts②⓪\">user contexts</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①②\">contains</a> <var>user context</var>’s\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context-user-context-id\" id=\"ref-for-user-context-user-context-id⑨\">user context id</a>, return true.</p>"
             },
             {
               "html": "<p>Otherwise, return false.</p>"
@@ -4854,7 +4854,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>collected data</var> be a struct with\n <code>bytes</code> field set to null,\n <code>cloned body</code> field set to <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-clone\" id=\"ref-for-concept-body-clone\">clone</a> with <var>response body</var>,\n <code>collectors</code> field set to an empty list,\n <code>pending</code> field set to true,\n <code>request</code> field set to <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id\">request id</a>,\n <code>size</code> field set to null,\n <code>type</code> field set to \"response\".</p>"
+                  "html": "<p>Let <var>collected data</var> be a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data\" id=\"ref-for-network-data②\">network data</a> with\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-bytes\" id=\"ref-for-network-data-bytes\">bytes</a> set to null,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-cloned-body\" id=\"ref-for-network-data-cloned-body\">cloned body</a> set to <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-clone\" id=\"ref-for-concept-body-clone\">clone</a> of <var>response body</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-collectors\" id=\"ref-for-network-data-collectors\">collectors</a> set to an empty list,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-pending\" id=\"ref-for-network-data-pending\">pending</a> set to true,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-request\" id=\"ref-for-network-data-request\">request</a> set to <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id①\">request id</a>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-size\" id=\"ref-for-network-data-size\">size</a> set to null,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-type\" id=\"ref-for-network-data-type\">type</a> set to \"response\".</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②⑥\">Append</a> <var>collected data</var> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#collected-network-data\" id=\"ref-for-collected-network-data②\">collected network data</a>.</p>"
@@ -4879,7 +4879,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>collected data</var>’s <code>request</code> is <var>request id</var> and\n  <var>collected data</var>’s <code>type</code> is <var>data type</var>, return <var>collected data</var>.</p>"
+              "html": "<p>If <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-request\" id=\"ref-for-network-data-request①\">request</a> is <var>request id</var> and\n  <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-type\" id=\"ref-for-network-data-type①\">type</a> is <var>data type</var>, return <var>collected data</var>.</p>"
             }
           ]
         },
@@ -4895,16 +4895,16 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>collected data</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-collected-data\" id=\"ref-for-get-collected-data\">get collected data</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id①\">request id</a> and \"response\".</p>"
+          "html": "<p>Let <var>collected data</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-collected-data\" id=\"ref-for-get-collected-data\">get collected data</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id②\">request id</a> and \"response\".</p>"
         },
         {
           "html": "<p>If <var>collected data</var> is null, return.</p>"
         },
         {
-          "html": "<p>Set <var>collected data</var>’s <code>pending</code> to false.</p>"
+          "html": "<p>Set <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-pending\" id=\"ref-for-network-data-pending①\">pending</a> to false.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#resume\" id=\"ref-for-resume①③\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id②\">request id</a>, \"response\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#resume\" id=\"ref-for-resume①③\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id③\">request id</a>, \"response\").</p>"
         }
       ]
     },
@@ -4918,13 +4918,13 @@
           "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status\">status</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#redirect-status\" id=\"ref-for-redirect-status\">redirect status</a>, return.</p>"
         },
         {
-          "html": "<p>Let <var>collected data</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-collected-data\" id=\"ref-for-get-collected-data①\">get collected data</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id③\">request id</a> and \"response\".</p>"
+          "html": "<p>Let <var>collected data</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-collected-data\" id=\"ref-for-get-collected-data①\">get collected data</a> with <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id④\">request id</a> and \"response\".</p>"
         },
         {
           "html": "<p>If <var>collected data</var> is null, return.</p>"
         },
         {
-          "html": "<p>Set <var>collected data</var>’s <code>pending</code> to false.</p>"
+          "html": "<p>Set <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-pending\" id=\"ref-for-network-data-pending②\">pending</a> to false.</p>"
         },
         {
           "html": "<p>Let <var>navigable</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-navigable-for-request\" id=\"ref-for-get-navigable-for-request\">get navigable for request</a> with <var>request</var>.</p>"
@@ -4937,7 +4937,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①①\">Remove</a> <var>collected data</var> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#collected-network-data\" id=\"ref-for-collected-network-data④\">collected network data</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#resume\" id=\"ref-for-resume①④\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id④\">request id</a>, \"response\").</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#resume\" id=\"ref-for-resume①④\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑤\">request id</a>, \"response\").</p>"
             },
             {
               "html": "<p>Return.</p>"
@@ -4959,7 +4959,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>collector</var>’s <code>data types</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①③\">contains</a> \"response\" and if <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#match-collector-for-navigable\" id=\"ref-for-match-collector-for-navigable\">match collector for navigable</a> with <var>collector</var> and <var>top-level navigable</var>:",
+                  "html": "If <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-data-types\" id=\"ref-for-network-collector-data-types\">data types</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①③\">contains</a> \"response\" and if\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#match-collector-for-navigable\" id=\"ref-for-match-collector-for-navigable\">match collector for navigable</a> with <var>collector</var> and <var>top-level navigable</var>:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -4979,7 +4979,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①②\">Remove</a> <var>collected data</var> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#collected-network-data\" id=\"ref-for-collected-network-data⑤\">collected network data</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#resume\" id=\"ref-for-resume①⑤\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑤\">request id</a>, \"response\").</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#resume\" id=\"ref-for-resume①⑤\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑥\">request id</a>, \"response\").</p>"
             },
             {
               "html": "<p>Return.</p>"
@@ -5014,7 +5014,7 @@
           "html": "<p>Let <var>processBodyError</var> be this step: Do nothing.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#body-fully-read\" id=\"ref-for-body-fully-read\">Fully read</a> <var>collected data</var>’s <code>cloned body</code> given <var>processBody</var> and <var>processBodyError</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#body-fully-read\" id=\"ref-for-body-fully-read\">Fully read</a> <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-cloned-body\" id=\"ref-for-network-data-cloned-body①\">cloned body</a> given <var>processBody</var> and <var>processBodyError</var>.</p>"
         },
         {
           "html": "If <var>bytes</var> is not null:",
@@ -5025,22 +5025,22 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>size</var> is less than or equal to <var>collector</var>’s <code>max encoded data size</code>,\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②⑧\">append</a> <var>collector</var>’s <code>collector</code> to <var>collected data</var>’s <code>collectors</code>.</p>"
+                  "html": "<p>If <var>size</var> is less than or equal to <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-max-encoded-data-size\" id=\"ref-for-network-collector-max-encoded-data-size①\">max encoded data size</a>,\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②⑧\">append</a> <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-collector\" id=\"ref-for-network-collector-collector①\">collector</a> to <var>collected data</var>’s\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-collectors\" id=\"ref-for-network-data-collectors①\">collectors</a>.</p>"
                 }
               ]
             },
             {
-              "html": "If <var>collected data</var>’s <code>collectors</code> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①②\">empty</a>:",
+              "html": "If <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-collectors\" id=\"ref-for-network-data-collectors②\">collectors</a> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①②\">empty</a>:",
               "rationale": "set",
               "steps": [
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#allocate-size-to-record-data\" id=\"ref-for-allocate-size-to-record-data\">Allocate size to record data</a> given <var>size</var>.</p>"
                 },
                 {
-                  "html": "<p>Set <var>collected data</var>’s <code>bytes</code> to <var>bytes</var>.</p>"
+                  "html": "<p>Set <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-bytes\" id=\"ref-for-network-data-bytes①\">bytes</a> to <var>bytes</var>.</p>"
                 },
                 {
-                  "html": "<p>Set <var>collected data</var>’s <code>size</code> to <var>size</var>.</p>"
+                  "html": "<p>Set <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-size\" id=\"ref-for-network-data-size①\">size</a> to <var>size</var>.</p>"
                 }
               ]
             },
@@ -5050,7 +5050,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#resume\" id=\"ref-for-resume①⑥\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑥\">request id</a>, \"response\").</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#resume\" id=\"ref-for-resume①⑥\">Resume</a> with \"<code>network data collected</code>\" and (<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑦\">request id</a>, \"response\").</p>"
         }
       ]
     },
@@ -5061,7 +5061,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>available size</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#max-total-data-size\" id=\"ref-for-max-total-data-size\">max total data size</a>.</p>"
+          "html": "<p>Let <var>available size</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#max-total-data-size\" id=\"ref-for-max-total-data-size①\">max total data size</a>.</p>"
         },
         {
           "html": "<p>Let <var>already collected data</var> be an empty list.</p>"
@@ -5071,11 +5071,11 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>collected data</var>’s <code>bytes</code> is not null:",
+              "html": "If <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-bytes\" id=\"ref-for-network-data-bytes②\">bytes</a> is not null:",
               "rationale": "decrease",
               "steps": [
                 {
-                  "html": "<p>Decrease <var>available size</var> by <var>collected data</var>’s <code>size</code>.</p>"
+                  "html": "<p>Decrease <var>available size</var> by <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-size\" id=\"ref-for-network-data-size②\">size</a>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②⑨\">Append</a> <var>collected data</var> to <var>already collected data</var></p>"
@@ -5093,13 +5093,13 @@
               "rationale": "increase",
               "steps": [
                 {
-                  "html": "<p>Increase <var>available size</var> by <var>collected data</var>’s <code>size</code>.</p>"
+                  "html": "<p>Increase <var>available size</var> by <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-size\" id=\"ref-for-network-data-size③\">size</a>.</p>"
                 },
                 {
-                  "html": "<p>Set <var>collected data</var>’s <code>bytes</code> field to null.</p>"
+                  "html": "<p>Set <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-bytes\" id=\"ref-for-network-data-bytes③\">bytes</a> field to null.</p>"
                 },
                 {
-                  "html": "<p>Set <var>collected data</var>’s <code>size</code> field to null.</p>"
+                  "html": "<p>Set <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-size\" id=\"ref-for-network-data-size④\">size</a> field to null.</p>"
                 },
                 {
                   "html": "<p>If <var>available size</var> is greater than or equal to <var>size</var>, return.</p>"
@@ -5117,14 +5117,14 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>collected data</var>’s <code>collectors</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①④\">contains</a> <var>collector id</var>:",
+          "html": "If <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-collectors\" id=\"ref-for-network-data-collectors③\">collectors</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①④\">contains</a> <var>collector id</var>:",
           "rationale": "remove",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①④\">Remove</a> <var>collector id</var> from <var>collected data</var>’s <code>collectors</code>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①④\">Remove</a> <var>collector id</var> from <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-collectors\" id=\"ref-for-network-data-collectors④\">collectors</a>.</p>"
             },
             {
-              "html": "If <var>collected data</var>’s <code>collectors</code> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①③\">empty</a>:",
+              "html": "If <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-collectors\" id=\"ref-for-network-data-collectors⑤\">collectors</a> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①③\">empty</a>:",
               "rationale": "remove",
               "steps": [
                 {
@@ -5360,7 +5360,7 @@
           "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status②\">status</a> is 401, let <var>header name</var> be\n `<code>WWW-Authenticate</code>`. Otherwise if <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status③\">status</a> is 407, let\n <var>header name</var> be `<code>Proxy-Authenticate</code>`. Otherwise return null.</p>"
         },
         {
-          "html": "<p>Let <var>challenges</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑥\">list</a>.</p>"
+          "html": "<p>Let <var>challenges</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑨\">list</a>.</p>"
         },
         {
           "html": "For each (<var>name</var>, <var>value</var>) in <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list④\">header list</a>:",
@@ -5435,7 +5435,7 @@
               "html": "<p>Let <var>environment settings</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client③\">client</a>.</p>"
             },
             {
-              "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②①\">navigable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window②\">active window</a> is <var>environment\n settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global①\">global object</a>, set <var>navigable id</var>\n to that navigable’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑥\">navigable id</a>, and set <var>top-level navigable id</var> to\n that navigable’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①②\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑦\">navigable id</a>.</p>"
+              "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②①\">navigable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window②\">active window</a> is <var>environment\n settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global①\">global object</a>, set <var>navigable id</var>\n to that navigable’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑦\">navigable id</a>, and set <var>top-level navigable id</var> to\n that navigable’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①②\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑧\">navigable id</a>.</p>"
             }
           ]
         },
@@ -5709,7 +5709,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>request id</var> be request’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑧\">request id</a>.</p>"
+          "html": "<p>Let <var>request id</var> be request’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑨\">request id</a>.</p>"
         },
         {
           "html": "<p>Let <var>url</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-serializer\" id=\"ref-for-concept-url-serializer⑥\">URL serializer</a> with <var>request</var>’s\n <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url①\">URL</a>.</p>"
@@ -6565,7 +6565,7 @@
           "html": "<p>If <var>input user context ids</var> is not empty and <var>input context ids</var> is not\n empty, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨⓪\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument④⑦\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>If <var>max encoded data size</var> is greater than <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#max-total-data-size\" id=\"ref-for-max-total-data-size①\">max total data size</a>,\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument④⑧\">invalid argument</a>.</p>"
+          "html": "<p>If <var>max encoded data size</var> is 0 or <var>max encoded data size</var> is greater than\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#max-total-data-size\" id=\"ref-for-max-total-data-size②\">max total data size</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument④⑧\">invalid argument</a>.</p>"
         },
         {
           "html": "If <var>input context ids</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①⑦\">empty</a>:",
@@ -6604,7 +6604,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>collector</var> be a struct with\n <code>max encoded data size</code> field set to <var>max encoded data size</var>,\n <code>data types</code> field set to <var>data types</var>,\n <code>collector</code> field set to <var>collector id</var>,\n <code>collector type</code> field set to <var>collector type</var>,\n <code>contexts</code> field set to <var>input context ids</var>,\n <code>user contexts</code> field set to <var>input user context ids</var>.</p>"
+          "html": "<p>Let <var>collector</var> be a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector\" id=\"ref-for-network-collector④\">collector</a> with\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-max-encoded-data-size\" id=\"ref-for-network-collector-max-encoded-data-size④\">max encoded data size</a> field set to <var>max encoded data size</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-data-types\" id=\"ref-for-network-collector-data-types①\">data types</a> field set to <var>data types</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-collector\" id=\"ref-for-network-collector-collector②\">collector</a> field set to <var>collector id</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-collector-type\" id=\"ref-for-network-collector-collector-type\">collector type</a> field set to <var>collector type</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-contexts\" id=\"ref-for-network-collector-contexts②\">contexts</a> field set to <var>input context ids</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-user-contexts\" id=\"ref-for-network-collector-user-contexts②①\">user contexts</a> field set to <var>input user context ids</var>.</p>"
         },
         {
           "html": "<p>Set <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collectors\" id=\"ref-for-network-collectors③\">network collectors</a>[<var>collector id</var>] to <var>collector</var>.</p>"
@@ -6623,7 +6623,7 @@
           "html": "<p>Let <var>intercept</var> be the string representation of a <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webdriver-bidi/#biblio-rfc9562\" title=\"Universally Unique IDentifiers (UUIDs)\">UUID</a>.</p>"
         },
         {
-          "html": "<p>Let <var>url patterns</var> be the <code>urlPatterns</code> field of <var>command\n parameters</var> if present, or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑦\">list</a> otherwise.</p>"
+          "html": "<p>Let <var>url patterns</var> be the <code>urlPatterns</code> field of <var>command\n parameters</var> if present, or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⓪\">list</a> otherwise.</p>"
         },
         {
           "html": "<p>Let <var>navigables</var> be null.</p>"
@@ -6659,7 +6659,7 @@
           "html": "<p>Let <var>intercept map</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#intercept-map\" id=\"ref-for-intercept-map①\">intercept map</a>.</p>"
         },
         {
-          "html": "<p>Let <var>parsed patterns</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑧\">list</a>.</p>"
+          "html": "<p>Let <var>parsed patterns</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③①\">list</a>.</p>"
         },
         {
           "html": "For each <var>url pattern</var> in <var>url patterns</var>:",
@@ -7016,13 +7016,13 @@
           ]
         },
         {
-          "html": "<p>If <var>collected data</var>’s <code>pending</code> is true:</p>",
+          "html": "<p>If <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-pending\" id=\"ref-for-network-data-pending③\">pending</a> is true:</p>",
           "ignored": [
             "Await with \"network data collected\" and (request id, data type)."
           ]
         },
         {
-          "html": "If <var>collector id</var> is not null and if <var>collected data</var>’s <code>collectors</code>\n does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②①\">contain</a> <var>collector id</var>:",
+          "html": "If <var>collector id</var> is not null and if <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-collectors\" id=\"ref-for-network-data-collectors⑥\">collectors</a>\n does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②①\">contain</a> <var>collector id</var>:",
           "rationale": "return",
           "steps": [
             {
@@ -7031,7 +7031,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>bytes</var> be <var>collected data</var>’s <code>bytes</code>.</p>"
+          "html": "<p>Let <var>bytes</var> be <var>collected data</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-bytes\" id=\"ref-for-network-data-bytes④\">bytes</a>.</p>"
         },
         {
           "html": "If <var>bytes</var> is null,",
@@ -7343,7 +7343,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>user contexts</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⑨\">list</a>.</p>"
+              "html": "<p>Let <var>user contexts</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③②\">list</a>.</p>"
             },
             {
               "html": "For <var>user context id</var> in <var>command parameters</var>[\"<code>userContexts</code>\"]:",
@@ -7457,7 +7457,7 @@
                   "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map⑤\">blocked request map</a>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id⑨\">request id</a>.</p>"
+                  "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id①⓪\">request id</a>.</p>"
                 },
                 {
                   "html": "<p>Set <var>blocked requests</var>[<var>request id</var>] to (<var>request</var>,\n \"<code>authRequired</code>\", <var>response</var>).</p>"
@@ -7625,13 +7625,13 @@
                   "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map⑥\">blocked request map</a>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id①⓪\">request id</a>.</p>"
+                  "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id①①\">request id</a>.</p>"
                 },
                 {
                   "html": "<p>Set <var>blocked requests</var>[<var>request id</var>] to (<var>request</var>,\n \"<code>beforeRequestSent</code>\", null).</p>"
                 },
                 {
-                  "html": "<p>Let (<var>response</var>, <var>status</var>) be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#awaits\" id=\"ref-for-awaits⑥\">await</a> with «\"<code>continue\n request</code>\"», and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id①①\">request id</a>.</p>"
+                  "html": "<p>Let (<var>response</var>, <var>status</var>) be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#awaits\" id=\"ref-for-awaits⑥\">await</a> with «\"<code>continue\n request</code>\"», and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id①②\">request id</a>.</p>"
                 },
                 {
                   "html": "<p>If <var>status</var> is \"<code>complete</code>\" set <var>response status</var> to <var>status</var>.</p>"
@@ -7790,7 +7790,7 @@
                   "html": "<p>Let <var>blocked requests</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#blocked-request-map\" id=\"ref-for-blocked-request-map⑦\">blocked request map</a>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id①②\">request id</a>.</p>"
+                  "html": "<p>Let <var>request id</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#request-id\" id=\"ref-for-request-id①③\">request id</a>.</p>"
                 },
                 {
                   "html": "<p>Set <var>blocked requests</var>[<var>request id</var>] to (<var>request</var>,\n \"<code>beforeRequestSent</code>\", <var>response</var>).</p>"
@@ -8321,7 +8321,7 @@
           "html": "<p class=\"assertion\">Assert: <var>global object</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope\" id=\"ref-for-workerglobalscope①\">WorkerGlobalScope</a></code> object.</p>"
         },
         {
-          "html": "<p>Let <var>owners</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⓪\">list</a>.</p>"
+          "html": "<p>Let <var>owners</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③③\">list</a>.</p>"
         },
         {
           "html": "For each <var>owner</var> in the <var>global object</var>’s associated <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/workers.html#concept-WorkerGlobalScope-owner-set\" id=\"ref-for-concept-WorkerGlobalScope-owner-set①\">owner set</a>:",
@@ -8378,7 +8378,7 @@
               "html": "<p>If <var>navigable</var> is null, return null.</p>"
             },
             {
-              "html": "<p>Let <var>navigable id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑨\">navigable id</a> for <var>navigable</var>.</p>"
+              "html": "<p>Let <var>navigable id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②⓪\">navigable id</a> for <var>navigable</var>.</p>"
             },
             {
               "html": "<p>Let <var>realm info</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map⑦⑨\">map</a> matching the <code>script.WindowRealmInfo</code> production,\n with the <code>realm</code> field set to <var>realm id</var>, the <code>origin</code>\n field set to <var>origin</var>, and the <code>context</code> field set to <var>navigable id</var>.</p>"
@@ -8399,7 +8399,7 @@
                   "html": "<p>If <var>navigable</var> is null, return null.</p>"
                 },
                 {
-                  "html": "<p>Let <var>navigable id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②⓪\">navigable id</a> for <var>navigable</var>.</p>"
+                  "html": "<p>Let <var>navigable id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②①\">navigable id</a> for <var>navigable</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>sandbox name</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-a-sandbox-name\" id=\"ref-for-get-a-sandbox-name\">get a sandbox name</a> given\n <var>realm</var>.</p>"
@@ -8815,7 +8815,7 @@
                       "html": "<p>Set <var>serialized</var>[\"<code>childNodeCount</code>\"] to <var>child node count</var>.</p>"
                     },
                     {
-                      "html": "Otherwise, let <var>children</var> be an empty\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③①\">list</a> and, for each node <var>child</var> in the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-child\" id=\"ref-for-concept-tree-child④\">children</a> of\n <var>value</var>:",
+                      "html": "Otherwise, let <var>children</var> be an empty\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③④\">list</a> and, for each node <var>child</var> in the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-child\" id=\"ref-for-concept-tree-child④\">children</a> of\n <var>value</var>:",
                       "rationale": "let",
                       "steps": [
                         {
@@ -8898,7 +8898,7 @@
                   "html": "<p>Let <var>navigable</var> be <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable②\">navigable</a>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>navigable id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②①\">navigable id</a> for <var>navigable</var>.</p>"
+                  "html": "<p>Let <var>navigable id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②②\">navigable id</a> for <var>navigable</var>.</p>"
                 },
                 {
                   "html": "<p>Let <var>serialized</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪⑤\">map</a> matching the\n <code>script.WindowProxyProperties</code> production in the <code class=\"cddl\"><a data-link-type=\"cddl\" href=\"https://www.w3.org/TR/webdriver-bidi/#cddl-module-local-end-definition\" id=\"ref-for-cddl-module-local-end-definition⑥⑧\">local end definition</a></code> with the <code>context</code> property set to <var>navigable id</var>.</p>"
@@ -8913,7 +8913,7 @@
               "rationale": "assert",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values⑨\">type</a>(<var>value</var>) is Object</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values\" id=\"ref-for-sec-ecmascript-data-types-and-values⑨\">Type</a>(<var>value</var>) is Object</p>"
                 },
                 {
                   "html": "<p>Let <var>remote value</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①⓪⑨\">map</a> matching the <code>script.ObjectRemoteValue</code> production\n in the <code class=\"cddl\"><a data-link-type=\"cddl\" href=\"https://www.w3.org/TR/webdriver-bidi/#cddl-module-local-end-definition\" id=\"ref-for-cddl-module-local-end-definition⑦②\">local end definition</a></code>, with the <code>handle</code> property set\n to <var>handle id</var> if it’s not null, or omitted otherwise.</p>"
@@ -9134,7 +9134,7 @@
               "html": "<p>Let <var>navigable</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑧\">node navigable</a>.</p>"
             },
             {
-              "html": "<p>Let <var>navigable id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②②\">navigable id</a> for <var>navigable</var> if <var>navigable</var> is not null.</p>"
+              "html": "<p>Let <var>navigable id</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②③\">navigable id</a> for <var>navigable</var> if <var>navigable</var> is not null.</p>"
             }
           ]
         },
@@ -9231,7 +9231,7 @@
           "html": "<p>Let <var>function declaration</var> be the <code>functionDeclaration</code> field of <var>command\n parameters</var>.</p>"
         },
         {
-          "html": "<p>Let <var>arguments</var> be the <code>arguments</code> field of <var>command\n parameters</var> if present, or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③②\">list</a> otherwise.</p>"
+          "html": "<p>Let <var>arguments</var> be the <code>arguments</code> field of <var>command\n parameters</var> if present, or an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑤\">list</a> otherwise.</p>"
         },
         {
           "html": "<p>Let <var>user contexts</var> to be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑥①\">set</a>.</p>"
@@ -9336,7 +9336,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>deserialized arguments list</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③③\">list</a>.</p>"
+          "html": "<p>Let <var>deserialized arguments list</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑥\">list</a>.</p>"
         },
         {
           "html": "For each <var>serialized argument</var> of <var>serialized arguments list</var>:",
@@ -9402,7 +9402,7 @@
           "html": "<p>Let <var>command arguments</var> be the value of the <code>arguments</code> field\n of <var>command parameters</var>.</p>"
         },
         {
-          "html": "<p>Let <var>deserialized arguments</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③④\">list</a>.</p>"
+          "html": "<p>Let <var>deserialized arguments</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑦\">list</a>.</p>"
         },
         {
           "html": "<p>If <var>command arguments</var> is not null, set <var>deserialized arguments</var> to the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑦⑧\">trying</a> to\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#deserialize-arguments\" id=\"ref-for-deserialize-arguments\">deserialize arguments</a> given <var>realm</var>, <var>command arguments</var> and <var>session</var>.</p>"
@@ -9593,7 +9593,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>environment settings</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑤\">list</a> of all the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①③\">environment settings objects</a>\n that have their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-execution-ready-flag\" id=\"ref-for-concept-environment-execution-ready-flag\">execution ready flag</a> set.</p>"
+          "html": "<p>Let <var>environment settings</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑧\">list</a> of all the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object①③\">environment settings objects</a>\n that have their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-execution-ready-flag\" id=\"ref-for-concept-environment-execution-ready-flag\">execution ready flag</a> set.</p>"
         },
         {
           "html": "If <var>command parameters</var> contains <code>context</code>:",
@@ -9606,7 +9606,7 @@
               "html": "<p>Let <var>document</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①⑨\">active document</a>.</p>"
             },
             {
-              "html": "<p>Let <var>navigable environment settings</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑥\">list</a>.</p>"
+              "html": "<p>Let <var>navigable environment settings</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑨\">list</a>.</p>"
             },
             {
               "html": "For each <var>settings</var> of <var>environment settings</var>:",
@@ -10201,7 +10201,7 @@
           "rationale": "append",
           "steps": [
             {
-              "html": "<p>Append the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②④\">navigable id</a> for <var>navigable</var> to <var>navigable ids</var>.</p>"
+              "html": "<p>Append the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②⑤\">navigable id</a> for <var>navigable</var> to <var>navigable ids</var>.</p>"
             }
           ]
         },
@@ -10210,7 +10210,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>other navigables</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑧\">list</a></p>"
+              "html": "<p>Let <var>other navigables</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④①\">list</a></p>"
             },
             {
               "html": "<p>For each <var>other id</var> in <var>navigable ids</var>:</p>"
@@ -10572,7 +10572,7 @@
           "html": "<p>Let <var>navigable</var> be the <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document②\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②⑦\">navigable</a>.</p>"
         },
         {
-          "html": "<p>Let <var>navigable id</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②⑤\">navigable id</a>.</p>"
+          "html": "<p>Let <var>navigable id</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②⑥\">navigable id</a>.</p>"
         },
         {
           "html": "<p>Let <var>multiple</var> be <code>false</code>.</p>"
