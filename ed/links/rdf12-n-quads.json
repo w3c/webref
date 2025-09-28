@@ -43,11 +43,22 @@
           "literal_with_FORM_FEED",
           "literal_with_LINE_FEED",
           "literal_with_REVERSE_SOLIDUS",
-          "literal_with_UTF8_boundaries",
+          "literal_needing_uchar_escaping-01",
+          "literal_needing_uchar_escaping-02",
           "literal_all_controls",
           "literal_all_punctuation",
           "literal_ascii_boundaries",
           "literal_with_extra_whitespace"
+        ]
+      },
+      "https://w3c.github.io/rdf-tests/rdf/rdf12/rdf-n-quads/syntax/index.html": {
+        "anchors": [
+          "ntriples12-bad-iri-1",
+          "nquads-langdir-bad-1",
+          "nquads-langdir-bad-2",
+          "nquads-langdir-bad-3",
+          "nquads-langdir-bad-4",
+          "nquads-langdir-bad-5"
         ]
       },
       "https://w3c.github.io/sparql-concepts/spec/": {},
@@ -60,10 +71,20 @@
       "https://www.rfc-editor.org/rfc/rfc3629": {},
       "https://www.rfc-editor.org/rfc/rfc3986": {
         "anchors": [
-          "section-5"
+          "section-5",
+          "section-3.3"
         ]
       },
-      "https://www.rfc-editor.org/rfc/rfc3987": {},
+      "https://www.rfc-editor.org/rfc/rfc3987": {
+        "anchors": [
+          "section-2.2"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc5646": {
+        "anchors": [
+          "section-2.2.9"
+        ]
+      },
       "https://www.rfc-editor.org/rfc/rfc8174": {},
       "https://www.unicode.org/reports/tr36/tr36-15.html": {},
       "https://www.unicode.org/versions/latest/": {},
@@ -93,7 +114,7 @@
           "dfn-iri",
           "dfn-default-graph",
           "dfn-base-direction",
-          "dfn-literal",
+          "dfn-rdf-literal",
           "dfn-language-tag",
           "dfn-datatype-iri",
           "dfn-lexical-form",
@@ -101,6 +122,7 @@
           "dfn-blank-node",
           "dfn-rdf-string",
           "defined-version-labels",
+          "dfn-ill-typed",
           "dfn-rdf-graph"
         ]
       },
