@@ -76,7 +76,7 @@ partial interface Window {
 
 // Source: Fetch Standard (https://fetch.spec.whatwg.org/)
 partial interface Window {
-  [NewObject] FetchLaterResult fetchLater(RequestInfo input, optional DeferredRequestInit init = {});
+  [NewObject, SecureContext] FetchLaterResult fetchLater(RequestInfo input, optional DeferredRequestInit init = {});
 };
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)

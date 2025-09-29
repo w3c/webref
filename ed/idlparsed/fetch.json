@@ -2240,7 +2240,7 @@
       ],
       "Window": [
         {
-          "fragment": "partial interface Window {\n  [NewObject] FetchLaterResult fetchLater(RequestInfo input, optional DeferredRequestInit init = {});\n};",
+          "fragment": "partial interface Window {\n  [NewObject, SecureContext] FetchLaterResult fetchLater(RequestInfo input, optional DeferredRequestInit init = {});\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -2296,6 +2296,12 @@
                 {
                   "type": "extended-attribute",
                   "name": "NewObject",
+                  "rhs": null,
+                  "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "SecureContext",
                   "rhs": null,
                   "arguments": []
                 }

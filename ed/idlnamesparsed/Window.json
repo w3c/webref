@@ -36,7 +36,7 @@
         "title": "Fetch Standard",
         "url": "https://fetch.spec.whatwg.org/"
       },
-      "fragment": "partial interface Window {\n  [NewObject] FetchLaterResult fetchLater(RequestInfo input, optional DeferredRequestInit init = {});\n};"
+      "fragment": "partial interface Window {\n  [NewObject, SecureContext] FetchLaterResult fetchLater(RequestInfo input, optional DeferredRequestInit init = {});\n};"
     },
     {
       "spec": {
