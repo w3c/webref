@@ -209,7 +209,7 @@
                       "html": "If the value of the <code>serviceEndpoint</code> property of the <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-7\">service</a></var>\n\t\t\t\t\t\t\t\t\t\t\tis a <a data-cite=\"INFRA#string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, add this value to a list of\n\t\t\t\t\t\t\t\t\t\t\t<var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-3\">service endpoint</a> URLs</var>."
                     },
                     {
-                      "html": "If the value of the <code>serviceEndpoint</code> property of the <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-8\">service</a></var>\n\t\t\t\t\t\t\t\t\t\t\tis a <a data-cite=\"INFRA#ordered-set\" href=\"https://infra.spec.whatwg.org/#ordered-set\">set</a>, add all its items that are <a data-cite=\"INFRA#string\" href=\"https://infra.spec.whatwg.org/#string\">strings</a>\n\t\t\t\t\t\t\t\t\t\t\tto a list of <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-4\">service endpoint</a> URLs</var>."
+                      "html": "If the value of the <code>serviceEndpoint</code> property of the <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-8\">service</a></var>\n\t\t\t\t\t\t\t\t\t\t\tis a <a data-cite=\"INFRA#sets\" href=\"https://infra.spec.whatwg.org/#sets\">set</a>, add all its items that are <a data-cite=\"INFRA#string\" href=\"https://infra.spec.whatwg.org/#string\">strings</a>\n\t\t\t\t\t\t\t\t\t\t\tto a list of <var>selected <a href=\"https://w3c.github.io/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-4\">service endpoint</a> URLs</var>."
                     }
                   ]
                 },
@@ -387,7 +387,7 @@
               "html": "Append the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-48\">DID</a></var> to the <var>request HTTP(S) URL</var>."
             },
             {
-              "html": "Set the <code>Accept</code> <var>HTTP request header</var> to <code>application/did-resolution\"</code>\n\t\t\t\t\t\tin order to request a complete <a href=\"https://w3c.github.io/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">8. </bdi>DID Resolution Result</a>, OR"
+              "html": "Set the <code>Accept</code> <var>HTTP request header</var> to <code>application/did-resolution</code>\n\t\t\t\t\t\tin order to request a complete <a href=\"https://w3c.github.io/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">8. </bdi>DID Resolution Result</a>, OR"
             },
             {
               "html": "set the <code>Accept</code> <var>HTTP request header</var> to the value of the <b>accept</b> <var>resolution option</var>."
@@ -414,7 +414,7 @@
               "html": "Append the <var>input <a href=\"https://w3c.github.io/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-56\">DID URL</a></var> to the <var>request HTTP(S) URL</var>."
             },
             {
-              "html": "Set the <code>Accept</code> <var>HTTP request header</var> to <code>application/did-url-dereferencing\"</code>\n\t\t\t\t\t\tin order to request a complete <a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-result\" class=\"sec-ref\"><bdi class=\"secno\">9. </bdi>DID URL Dereferencing Result</a>, OR"
+              "html": "Set the <code>Accept</code> <var>HTTP request header</var> to <code>application/did-url-dereferencing</code>\n\t\t\t\t\t\tin order to request a complete <a href=\"https://w3c.github.io/did-resolution/#did-url-dereferencing-result\" class=\"sec-ref\"><bdi class=\"secno\">9. </bdi>DID URL Dereferencing Result</a>, OR"
             },
             {
               "html": "set the <code>Accept</code> <var>HTTP request header</var> to the value of the <b>accept</b> <var>dereferencing option</var>."
@@ -453,7 +453,7 @@
           "rationale": ".algorithm",
           "steps": [
             {
-              "html": "If the value of the <code>Content-Type</code> <var>HTTP response header</var> is <code>application/did-resolution\"</code>:",
+              "html": "If the value of the <code>Content-Type</code> <var>HTTP response header</var> is <code>application/did-resolution</code>:",
               "rationale": ".algorithm",
               "steps": [
                 {
@@ -483,7 +483,7 @@
           "rationale": ".algorithm",
           "steps": [
             {
-              "html": "If the value of the <code>Content-Type</code> <var>HTTP response header</var> is <code>application/did-url-dereferencing\"</code>:",
+              "html": "If the value of the <code>Content-Type</code> <var>HTTP response header</var> is <code>application/did-url-dereferencing</code>:",
               "rationale": ".algorithm",
               "steps": [
                 {

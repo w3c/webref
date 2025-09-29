@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-09-29T12:55:40.423Z",
+  "date": "2025-09-29T18:51:39.945Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -32,7 +32,7 @@
   },
   "stats": {
     "crawled": 713,
-    "errors": 3
+    "errors": 5
   },
   "crawler": "reffy-19.2.2",
   "results": [
@@ -761,7 +761,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 29 Sep 2025 12:33:52 GMT"
+        "lastModified": "Mon, 29 Sep 2025 17:10:38 GMT"
       },
       "date": "29 September 2025",
       "algorithms": "algorithms/compression-dictionary.json",
@@ -810,7 +810,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 29 Sep 2025 12:33:52 GMT"
+        "lastModified": "Mon, 29 Sep 2025 17:10:38 GMT"
       },
       "date": "29 September 2025",
       "algorithms": "algorithms/no-vary-search.json",
@@ -859,7 +859,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 29 Sep 2025 12:33:52 GMT"
+        "lastModified": "Mon, 29 Sep 2025 17:10:38 GMT"
       },
       "date": "29 September 2025",
       "algorithms": "algorithms/rfc6265bis.json",
@@ -990,7 +990,8 @@
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
       "ids": "ids/css-typed-om-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -3346,11 +3347,11 @@
       ],
       "crawled": "https://privacycg.github.io/requestStorageAccessFor/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 31 Mar 2025 15:39:02 GMT"
+        "lastModified": "Mon, 29 Sep 2025 15:00:09 GMT"
       },
       "generator": "bikeshed",
-      "date": "31 March 2025",
-      "revision": "cd672aea8fa6e2ee7b4ace1922f1dd13a451e2c4",
+      "date": "29 September 2025",
+      "revision": "092b7ae13a25af6b218f16b8a086cf244f48598e",
       "algorithms": "algorithms/requestStorageAccessFor.json",
       "links": "links/requestStorageAccessFor.json",
       "refs": "refs/requestStorageAccessFor.json",
@@ -24941,6 +24942,7 @@
       "headings": "headings/css-typed-om-1.json",
       "ids": "ids/css-typed-om-1.json",
       "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 432)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/css-typed-om-1.json"
     },
     {
@@ -26132,10 +26134,10 @@
       ],
       "crawled": "https://w3c.github.io/dapt/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 28 Sep 2025 22:46:43 GMT"
+        "lastModified": "Mon, 29 Sep 2025 13:50:07 GMT"
       },
       "generator": "respec",
-      "date": "28 September 2025",
+      "date": "29 September 2025",
       "algorithms": "algorithms/dapt.json",
       "links": "links/dapt.json",
       "refs": "refs/dapt.json",
@@ -26493,10 +26495,10 @@
       ],
       "crawled": "https://w3c.github.io/did-resolution/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Sep 2025 13:03:45 GMT"
+        "lastModified": "Mon, 29 Sep 2025 17:32:22 GMT"
       },
       "generator": "respec",
-      "date": "18 September 2025",
+      "date": "29 September 2025",
       "algorithms": "algorithms/did-resolution.json",
       "links": "links/did-resolution.json",
       "refs": "refs/did-resolution.json",
@@ -38339,10 +38341,10 @@
       ],
       "crawled": "https://w3c.github.io/wcag/guidelines/22/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 25 Sep 2025 14:10:40 GMT"
+        "lastModified": "Mon, 29 Sep 2025 16:18:55 GMT"
       },
       "generator": "respec",
-      "date": "25 September 2025",
+      "date": "29 September 2025",
       "links": "links/WCAG22.json",
       "refs": "refs/WCAG22.json",
       "dfns": "dfns/WCAG22.json",
