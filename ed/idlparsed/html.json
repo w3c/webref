@@ -25288,7 +25288,7 @@
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#toggleevent"
       },
       "ToggleEventInit": {
-        "fragment": "dictionary ToggleEventInit : EventInit {\n  DOMString oldState = \"\";\n  DOMString newState = \"\";\n};",
+        "fragment": "dictionary ToggleEventInit : EventInit {\n  DOMString oldState = \"\";\n  DOMString newState = \"\";\n  Element? source = null;\n};",
         "type": "dictionary",
         "name": "ToggleEventInit",
         "inheritance": "EventInit",
@@ -25326,6 +25326,23 @@
             "default": {
               "type": "string",
               "value": ""
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "source",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Element"
+            },
+            "default": {
+              "type": "null"
             },
             "required": false
           }
@@ -47163,7 +47180,8 @@
         "Element"
       ],
       "ToggleEventInit": [
-        "EventInit"
+        "EventInit",
+        "Element"
       ],
       "CommandEvent": [
         "Event",
