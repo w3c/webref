@@ -5025,7 +5025,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>size</var> is less than or equal to <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-max-encoded-data-size\" id=\"ref-for-network-collector-max-encoded-data-size①\">max encoded data size</a>,\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②⑧\">append</a> <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-collector\" id=\"ref-for-network-collector-collector①\">collector</a> to <var>collected data</var>’s\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-collectors\" id=\"ref-for-network-data-collectors①\">collectors</a>.</p>"
+                  "html": "<p>If <var>size</var> is less than or equal to <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-max-encoded-item-size\" id=\"ref-for-network-collector-max-encoded-item-size①\">max encoded item size</a>,\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②⑧\">append</a> <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-collector\" id=\"ref-for-network-collector-collector①\">collector</a> to <var>collected data</var>’s\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-data-collectors\" id=\"ref-for-network-data-collectors①\">collectors</a>.</p>"
                 }
               ]
             },
@@ -5061,7 +5061,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>available size</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#max-total-data-size\" id=\"ref-for-max-total-data-size①\">max total data size</a>.</p>"
+          "html": "<p>Let <var>available size</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#max-total-collected-size\" id=\"ref-for-max-total-collected-size①\">max total collected size</a>.</p>"
         },
         {
           "html": "<p>Let <var>already collected data</var> be an empty list.</p>"
@@ -6550,7 +6550,7 @@
           "html": "<p>Let <var>data types</var> be <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-create\" id=\"ref-for-set-create④\">create a set</a> with\n <var>command parameters</var>[\"<code>dataTypes</code>\"].</p>"
         },
         {
-          "html": "<p>Let <var>max encoded data size</var> be <var>command parameters</var>\n [\"<code>maxEncodedDataSize</code>\"].</p>"
+          "html": "<p>Let <var>max encoded item size</var> be <var>command parameters</var>\n [\"<code>maxEncodedDataSize</code>\"].</p>"
         },
         {
           "html": "<p>Let <var>collector type</var> be <var>command parameters</var>\n [\"<code>collectorType</code>\"].</p>"
@@ -6565,7 +6565,7 @@
           "html": "<p>If <var>input user context ids</var> is not empty and <var>input context ids</var> is not\n empty, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨⓪\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument④⑦\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>If <var>max encoded data size</var> is 0 or <var>max encoded data size</var> is greater than\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#max-total-data-size\" id=\"ref-for-max-total-data-size②\">max total data size</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument④⑧\">invalid argument</a>.</p>"
+          "html": "<p>If <var>max encoded item size</var> is 0 or <var>max encoded item size</var> is greater than\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#max-total-collected-size\" id=\"ref-for-max-total-collected-size②\">max total collected size</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument④⑧\">invalid argument</a>.</p>"
         },
         {
           "html": "If <var>input context ids</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①⑦\">empty</a>:",
@@ -6604,7 +6604,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>collector</var> be a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector\" id=\"ref-for-network-collector④\">collector</a> with\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-max-encoded-data-size\" id=\"ref-for-network-collector-max-encoded-data-size④\">max encoded data size</a> field set to <var>max encoded data size</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-data-types\" id=\"ref-for-network-collector-data-types①\">data types</a> field set to <var>data types</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-collector\" id=\"ref-for-network-collector-collector②\">collector</a> field set to <var>collector id</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-collector-type\" id=\"ref-for-network-collector-collector-type\">collector type</a> field set to <var>collector type</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-contexts\" id=\"ref-for-network-collector-contexts②\">contexts</a> field set to <var>input context ids</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-user-contexts\" id=\"ref-for-network-collector-user-contexts②①\">user contexts</a> field set to <var>input user context ids</var>.</p>"
+          "html": "<p>Let <var>collector</var> be a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector\" id=\"ref-for-network-collector④\">collector</a> with\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-max-encoded-item-size\" id=\"ref-for-network-collector-max-encoded-item-size④\">max encoded item size</a> field set to <var>max encoded item size</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-data-types\" id=\"ref-for-network-collector-data-types①\">data types</a> field set to <var>data types</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-collector\" id=\"ref-for-network-collector-collector②\">collector</a> field set to <var>collector id</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-collector-type\" id=\"ref-for-network-collector-collector-type\">collector type</a> field set to <var>collector type</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-contexts\" id=\"ref-for-network-collector-contexts②\">contexts</a> field set to <var>input context ids</var>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collector-user-contexts\" id=\"ref-for-network-collector-user-contexts②①\">user contexts</a> field set to <var>input user context ids</var>.</p>"
         },
         {
           "html": "<p>Set <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#network-collectors\" id=\"ref-for-network-collectors③\">network collectors</a>[<var>collector id</var>] to <var>collector</var>.</p>"

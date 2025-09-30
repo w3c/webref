@@ -1,0 +1,1842 @@
+{
+  "spec": {
+    "title": "Semantic Sensor Network Ontology",
+    "url": "https://www.w3.org/TR/vocab-ssn-2017/"
+  },
+  "headings": [
+    {
+      "id": "respecDocument",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#respecDocument",
+      "level": 1,
+      "title": "Semantic Sensor Network Ontology",
+      "alternateIds": [
+        "title"
+      ]
+    },
+    {
+      "id": "w3c-recommendation-19-october-2017",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#w3c-recommendation-19-october-2017",
+      "level": 2,
+      "title": "W3C Recommendation 19 October 2017 (Link errors corrected 08 December 2017)"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#abstract",
+      "level": 2,
+      "title": "Abstract",
+      "alternateIds": [
+        "abstract-0"
+      ]
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#sotd",
+      "level": 2,
+      "title": "Status of This Document",
+      "alternateIds": [
+        "status-of-this-document"
+      ]
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "Modularization",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Modularization",
+      "level": 2,
+      "title": "Modularization",
+      "alternateIds": [
+        "x2-modularization"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "vertical-segmentation",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#vertical-segmentation",
+      "level": 2,
+      "title": "Vertical Segmentation"
+    },
+    {
+      "id": "horizontal-segmentation",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#horizontal-segmentation",
+      "level": 2,
+      "title": "Horizontal Segmentation"
+    },
+    {
+      "id": "Developments",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Developments",
+      "level": 2,
+      "title": "Origins of SSN and SOSA",
+      "alternateIds": [
+        "x3-origins-of-ssn-and-sosa"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "Axiomatization",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Axiomatization",
+      "level": 2,
+      "title": "Axiomatization",
+      "alternateIds": [
+        "x4-axiomatization"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "namespaces",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#namespaces",
+      "level": 3,
+      "title": "Namespaces",
+      "alternateIds": [
+        "x4-1-namespaces"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "overview-of-classes-and-properties",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#overview-of-classes-and-properties",
+      "level": 3,
+      "title": "Overview of Classes and Properties",
+      "alternateIds": [
+        "x4-2-overview-of-classes-and-properties"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "Observations",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Observations",
+      "level": 3,
+      "title": "Observations",
+      "alternateIds": [
+        "x4-3-observations"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "Observations-overview",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Observations-overview",
+      "level": 4,
+      "title": "Overview and examples",
+      "alternateIds": [
+        "x4-3-1-overview-and-examples"
+      ],
+      "number": "4.3.1"
+    },
+    {
+      "id": "Observations-specification",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Observations-specification",
+      "level": 4,
+      "title": "Specification",
+      "alternateIds": [
+        "x4-3-2-specification"
+      ],
+      "number": "4.3.2"
+    },
+    {
+      "id": "SOSAObservableProperty",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAObservableProperty",
+      "level": 5,
+      "title": "sosa:ObservableProperty",
+      "alternateIds": [
+        "x4-3-2-1-sosa-observableproperty"
+      ],
+      "number": "4.3.2.1"
+    },
+    {
+      "id": "SOSAObservation",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAObservation",
+      "level": 5,
+      "title": "sosa:Observation",
+      "alternateIds": [
+        "x4-3-2-2-sosa-observation"
+      ],
+      "number": "4.3.2.2"
+    },
+    {
+      "id": "SOSAobservedProperty",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAobservedProperty",
+      "level": 5,
+      "title": "sosa:observedProperty",
+      "alternateIds": [
+        "x4-3-2-3-sosa-observedproperty"
+      ],
+      "number": "4.3.2.3"
+    },
+    {
+      "id": "SOSAphenomenonTime",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAphenomenonTime",
+      "level": 5,
+      "title": "sosa:phenomenonTime",
+      "alternateIds": [
+        "x4-3-2-4-sosa-phenomenontime"
+      ],
+      "number": "4.3.2.4"
+    },
+    {
+      "id": "SOSASensor",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSASensor",
+      "level": 5,
+      "title": "sosa:Sensor",
+      "alternateIds": [
+        "x4-3-2-5-sosa-sensor"
+      ],
+      "number": "4.3.2.5"
+    },
+    {
+      "id": "SOSAobserves",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAobserves",
+      "level": 5,
+      "title": "sosa:observes",
+      "alternateIds": [
+        "x4-3-2-6-sosa-observes"
+      ],
+      "number": "4.3.2.6"
+    },
+    {
+      "id": "SOSAisObservedBy",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAisObservedBy",
+      "level": 5,
+      "title": "sosa:isObservedBy",
+      "alternateIds": [
+        "x4-3-2-7-sosa-isobservedby"
+      ],
+      "number": "4.3.2.7"
+    },
+    {
+      "id": "SOSAmadeObservation",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAmadeObservation",
+      "level": 5,
+      "title": "sosa:madeObservation",
+      "alternateIds": [
+        "x4-3-2-8-sosa-madeobservation"
+      ],
+      "number": "4.3.2.8"
+    },
+    {
+      "id": "SOSAmadeBySensor",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAmadeBySensor",
+      "level": 5,
+      "title": "sosa:madeBySensor",
+      "alternateIds": [
+        "x4-3-2-9-sosa-madebysensor"
+      ],
+      "number": "4.3.2.9"
+    },
+    {
+      "id": "SSNStimulus",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNStimulus",
+      "level": 5,
+      "title": "ssn:Stimulus",
+      "alternateIds": [
+        "x4-3-2-10-ssn-stimulus"
+      ],
+      "number": "4.3.2.10"
+    },
+    {
+      "id": "SSNisProxyFor",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNisProxyFor",
+      "level": 5,
+      "title": "ssn:isProxyFor",
+      "alternateIds": [
+        "x4-3-2-11-ssn-isproxyfor"
+      ],
+      "number": "4.3.2.11"
+    },
+    {
+      "id": "SSNwasOriginatedBy",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNwasOriginatedBy",
+      "level": 5,
+      "title": "ssn:wasOriginatedBy",
+      "alternateIds": [
+        "x4-3-2-12-ssn-wasoriginatedby"
+      ],
+      "number": "4.3.2.12"
+    },
+    {
+      "id": "SSNdetects",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNdetects",
+      "level": 5,
+      "title": "ssn:detects",
+      "alternateIds": [
+        "x4-3-2-13-ssn-detects"
+      ],
+      "number": "4.3.2.13"
+    },
+    {
+      "id": "Actuations",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Actuations",
+      "level": 3,
+      "title": "Actuations",
+      "alternateIds": [
+        "x4-4-actuations"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "Actuations-overview",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Actuations-overview",
+      "level": 4,
+      "title": "Overview and examples",
+      "alternateIds": [
+        "x4-4-1-overview-and-examples"
+      ],
+      "number": "4.4.1"
+    },
+    {
+      "id": "Actuations-specification",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Actuations-specification",
+      "level": 4,
+      "title": "Specification",
+      "alternateIds": [
+        "x4-4-2-specification"
+      ],
+      "number": "4.4.2"
+    },
+    {
+      "id": "SOSAActuatableProperty",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAActuatableProperty",
+      "level": 5,
+      "title": "sosa:ActuatableProperty",
+      "alternateIds": [
+        "x4-4-2-1-sosa-actuatableproperty"
+      ],
+      "number": "4.4.2.1"
+    },
+    {
+      "id": "SOSAActuation",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAActuation",
+      "level": 5,
+      "title": "sosa:Actuation",
+      "alternateIds": [
+        "x4-4-2-2-sosa-actuation"
+      ],
+      "number": "4.4.2.2"
+    },
+    {
+      "id": "SOSAactsOnProperty",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAactsOnProperty",
+      "level": 5,
+      "title": "sosa:actsOnProperty",
+      "alternateIds": [
+        "x4-4-2-3-sosa-actsonproperty"
+      ],
+      "number": "4.4.2.3"
+    },
+    {
+      "id": "SOSAisActedOnBy",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAisActedOnBy",
+      "level": 5,
+      "title": "sosa:isActedOnBy",
+      "alternateIds": [
+        "x4-4-2-4-sosa-isactedonby"
+      ],
+      "number": "4.4.2.4"
+    },
+    {
+      "id": "SOSAActuator",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAActuator",
+      "level": 5,
+      "title": "sosa:Actuator",
+      "alternateIds": [
+        "x4-4-2-5-sosa-actuator"
+      ],
+      "number": "4.4.2.5"
+    },
+    {
+      "id": "SOSAmadeActuation",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAmadeActuation",
+      "level": 5,
+      "title": "sosa:madeActuation",
+      "alternateIds": [
+        "x4-4-2-6-sosa-madeactuation"
+      ],
+      "number": "4.4.2.6"
+    },
+    {
+      "id": "SOSAmadeByActuator",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAmadeByActuator",
+      "level": 5,
+      "title": "sosa:madeByActuator",
+      "alternateIds": [
+        "x4-4-2-7-sosa-madebyactuator"
+      ],
+      "number": "4.4.2.7"
+    },
+    {
+      "id": "Sampling",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Sampling",
+      "level": 3,
+      "title": "Samplings",
+      "alternateIds": [
+        "x4-5-samplings"
+      ],
+      "number": "4.5"
+    },
+    {
+      "id": "Sampling-overview",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Sampling-overview",
+      "level": 4,
+      "title": "Overview and examples",
+      "alternateIds": [
+        "x4-5-1-overview-and-examples"
+      ],
+      "number": "4.5.1"
+    },
+    {
+      "id": "Sampling-specification",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Sampling-specification",
+      "level": 4,
+      "title": "Specification",
+      "alternateIds": [
+        "x4-5-2-specification"
+      ],
+      "number": "4.5.2"
+    },
+    {
+      "id": "SOSASample",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSASample",
+      "level": 5,
+      "title": "sosa:Sample",
+      "alternateIds": [
+        "x4-5-2-1-sosa-sample"
+      ],
+      "number": "4.5.2.1"
+    },
+    {
+      "id": "SOSAhasSample",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAhasSample",
+      "level": 5,
+      "title": "sosa:hasSample",
+      "alternateIds": [
+        "x4-5-2-2-sosa-hassample"
+      ],
+      "number": "4.5.2.2"
+    },
+    {
+      "id": "SOSAisSampleOf",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAisSampleOf",
+      "level": 5,
+      "title": "sosa:isSampleOf",
+      "alternateIds": [
+        "x4-5-2-3-sosa-issampleof"
+      ],
+      "number": "4.5.2.3"
+    },
+    {
+      "id": "SOSASampling",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSASampling",
+      "level": 5,
+      "title": "sosa:Sampling",
+      "alternateIds": [
+        "x4-5-2-4-sosa-sampling"
+      ],
+      "number": "4.5.2.4"
+    },
+    {
+      "id": "SOSASampler",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSASampler",
+      "level": 5,
+      "title": "sosa:Sampler",
+      "alternateIds": [
+        "x4-5-2-5-sosa-sampler"
+      ],
+      "number": "4.5.2.5"
+    },
+    {
+      "id": "SOSAmadeSampling",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAmadeSampling",
+      "level": 5,
+      "title": "sosa:madeSampling",
+      "alternateIds": [
+        "x4-5-2-6-sosa-madesampling"
+      ],
+      "number": "4.5.2.6"
+    },
+    {
+      "id": "SOSAmadeBySampler",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAmadeBySampler",
+      "level": 5,
+      "title": "sosa:madeBySampler",
+      "alternateIds": [
+        "x4-5-2-7-sosa-madebysampler"
+      ],
+      "number": "4.5.2.7"
+    },
+    {
+      "id": "Features-of-Interest-and-Properties",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Features-of-Interest-and-Properties",
+      "level": 3,
+      "title": "Features of Interest and Properties",
+      "alternateIds": [
+        "x4-6-features-of-interest-and-properties"
+      ],
+      "number": "4.6"
+    },
+    {
+      "id": "Features-of-Interest-and-Properties-overview",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Features-of-Interest-and-Properties-overview",
+      "level": 4,
+      "title": "Overview and examples",
+      "alternateIds": [
+        "x4-6-1-overview-and-examples"
+      ],
+      "number": "4.6.1"
+    },
+    {
+      "id": "Features-of-Interest-and-Properties-specification",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Features-of-Interest-and-Properties-specification",
+      "level": 4,
+      "title": "Specification",
+      "alternateIds": [
+        "x4-6-2-specification"
+      ],
+      "number": "4.6.2"
+    },
+    {
+      "id": "SOSAFeatureOfInterest",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAFeatureOfInterest",
+      "level": 5,
+      "title": "sosa:FeatureOfInterest",
+      "alternateIds": [
+        "x4-6-2-1-sosa-featureofinterest"
+      ],
+      "number": "4.6.2.1"
+    },
+    {
+      "id": "SOSAhasFeatureOfInterest",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAhasFeatureOfInterest",
+      "level": 5,
+      "title": "sosa:hasFeatureOfInterest",
+      "alternateIds": [
+        "x4-6-2-2-sosa-hasfeatureofinterest"
+      ],
+      "number": "4.6.2.2"
+    },
+    {
+      "id": "SOSAisFeatureOfInterestOf",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAisFeatureOfInterestOf",
+      "level": 5,
+      "title": "sosa:isFeatureOfInterestOf",
+      "alternateIds": [
+        "x4-6-2-3-sosa-isfeatureofinterestof"
+      ],
+      "number": "4.6.2.3"
+    },
+    {
+      "id": "SSNProperty",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNProperty",
+      "level": 5,
+      "title": "ssn:Property",
+      "alternateIds": [
+        "x4-6-2-4-ssn-property"
+      ],
+      "number": "4.6.2.4"
+    },
+    {
+      "id": "SSNhasProperty",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNhasProperty",
+      "level": 5,
+      "title": "ssn:hasProperty",
+      "alternateIds": [
+        "x4-6-2-5-ssn-hasproperty"
+      ],
+      "number": "4.6.2.5"
+    },
+    {
+      "id": "SSNisPropertyOf",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNisPropertyOf",
+      "level": 5,
+      "title": "ssn:isPropertyOf",
+      "alternateIds": [
+        "x4-6-2-6-ssn-ispropertyof"
+      ],
+      "number": "4.6.2.6"
+    },
+    {
+      "id": "SSNforProperty",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNforProperty",
+      "level": 5,
+      "title": "ssn:forProperty",
+      "alternateIds": [
+        "x4-6-2-7-ssn-forproperty"
+      ],
+      "number": "4.6.2.7"
+    },
+    {
+      "id": "Results",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Results",
+      "level": 3,
+      "title": "Results",
+      "alternateIds": [
+        "x4-7-results"
+      ],
+      "number": "4.7"
+    },
+    {
+      "id": "Results-overview",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Results-overview",
+      "level": 4,
+      "title": "Overview and examples",
+      "alternateIds": [
+        "x4-7-1-overview-and-examples"
+      ],
+      "number": "4.7.1"
+    },
+    {
+      "id": "Results-specification",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Results-specification",
+      "level": 4,
+      "title": "Specification",
+      "alternateIds": [
+        "x4-7-2-specification"
+      ],
+      "number": "4.7.2"
+    },
+    {
+      "id": "SOSAResult",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAResult",
+      "level": 5,
+      "title": "sosa:Result",
+      "alternateIds": [
+        "x4-7-2-1-sosa-result"
+      ],
+      "number": "4.7.2.1"
+    },
+    {
+      "id": "SOSAhasResult",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAhasResult",
+      "level": 5,
+      "title": "sosa:hasResult",
+      "alternateIds": [
+        "x4-7-2-2-sosa-hasresult"
+      ],
+      "number": "4.7.2.2"
+    },
+    {
+      "id": "SOSAisResultOf",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAisResultOf",
+      "level": 5,
+      "title": "sosa:isResultOf",
+      "alternateIds": [
+        "x4-7-2-3-sosa-isresultof"
+      ],
+      "number": "4.7.2.3"
+    },
+    {
+      "id": "SOSAhasSimpleResult",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAhasSimpleResult",
+      "level": 5,
+      "title": "sosa:hasSimpleResult",
+      "alternateIds": [
+        "x4-7-2-4-sosa-hassimpleresult"
+      ],
+      "number": "4.7.2.4"
+    },
+    {
+      "id": "SOSAresultTime",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAresultTime",
+      "level": 5,
+      "title": "sosa:resultTime",
+      "alternateIds": [
+        "x4-7-2-5-sosa-resulttime"
+      ],
+      "number": "4.7.2.5"
+    },
+    {
+      "id": "Procedures",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Procedures",
+      "level": 3,
+      "title": "Procedures",
+      "alternateIds": [
+        "x4-8-procedures"
+      ],
+      "number": "4.8"
+    },
+    {
+      "id": "Procedures-overview",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Procedures-overview",
+      "level": 4,
+      "title": "Overview and examples",
+      "alternateIds": [
+        "x4-8-1-overview-and-examples"
+      ],
+      "number": "4.8.1"
+    },
+    {
+      "id": "Procedures-specification",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Procedures-specification",
+      "level": 4,
+      "title": "Specification",
+      "alternateIds": [
+        "x4-8-2-specification"
+      ],
+      "number": "4.8.2"
+    },
+    {
+      "id": "SOSAProcedure",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAProcedure",
+      "level": 5,
+      "title": "sosa:Procedure",
+      "alternateIds": [
+        "x4-8-2-1-sosa-procedure"
+      ],
+      "number": "4.8.2.1"
+    },
+    {
+      "id": "SOSAusedProcedure",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAusedProcedure",
+      "level": 5,
+      "title": "sosa:usedProcedure",
+      "alternateIds": [
+        "x4-8-2-2-sosa-usedprocedure"
+      ],
+      "number": "4.8.2.2"
+    },
+    {
+      "id": "SSNimplements",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNimplements",
+      "level": 5,
+      "title": "ssn:implements",
+      "alternateIds": [
+        "x4-8-2-3-ssn-implements"
+      ],
+      "number": "4.8.2.3"
+    },
+    {
+      "id": "SSNimplementedBy",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNimplementedBy",
+      "level": 5,
+      "title": "ssn:implementedBy",
+      "alternateIds": [
+        "x4-8-2-4-ssn-implementedby"
+      ],
+      "number": "4.8.2.4"
+    },
+    {
+      "id": "SSNhasInput",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNhasInput",
+      "level": 5,
+      "title": "ssn:hasInput",
+      "alternateIds": [
+        "x4-8-2-5-ssn-hasinput"
+      ],
+      "number": "4.8.2.5"
+    },
+    {
+      "id": "SSNInput",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNInput",
+      "level": 5,
+      "title": "ssn:Input",
+      "alternateIds": [
+        "x4-8-2-6-ssn-input"
+      ],
+      "number": "4.8.2.6"
+    },
+    {
+      "id": "SSNhasOutput",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNhasOutput",
+      "level": 5,
+      "title": "ssn:hasOutput",
+      "alternateIds": [
+        "x4-8-2-7-ssn-hasoutput"
+      ],
+      "number": "4.8.2.7"
+    },
+    {
+      "id": "SSNOutput",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNOutput",
+      "level": 5,
+      "title": "ssn:Output",
+      "alternateIds": [
+        "x4-8-2-8-ssn-output"
+      ],
+      "number": "4.8.2.8"
+    },
+    {
+      "id": "Systems-and-their-Deployment",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Systems-and-their-Deployment",
+      "level": 3,
+      "title": "Systems and their Deployment",
+      "alternateIds": [
+        "x4-9-systems-and-their-deployment"
+      ],
+      "number": "4.9"
+    },
+    {
+      "id": "Systems-and-their-Deployment-overview",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Systems-and-their-Deployment-overview",
+      "level": 4,
+      "title": "Overview and examples",
+      "alternateIds": [
+        "x4-9-1-overview-and-examples"
+      ],
+      "number": "4.9.1"
+    },
+    {
+      "id": "Systems-and-their-Deployment-specification",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Systems-and-their-Deployment-specification",
+      "level": 4,
+      "title": "Specification",
+      "alternateIds": [
+        "x4-9-2-specification"
+      ],
+      "number": "4.9.2"
+    },
+    {
+      "id": "SOSAPlatform",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAPlatform",
+      "level": 5,
+      "title": "sosa:Platform",
+      "alternateIds": [
+        "x4-9-2-1-sosa-platform"
+      ],
+      "number": "4.9.2.1"
+    },
+    {
+      "id": "SOSAhosts",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAhosts",
+      "level": 5,
+      "title": "sosa:hosts",
+      "alternateIds": [
+        "x4-9-2-2-sosa-hosts"
+      ],
+      "number": "4.9.2.2"
+    },
+    {
+      "id": "SOSAisHostedBy",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SOSAisHostedBy",
+      "level": 5,
+      "title": "sosa:isHostedBy",
+      "alternateIds": [
+        "x4-9-2-3-sosa-ishostedby"
+      ],
+      "number": "4.9.2.3"
+    },
+    {
+      "id": "SSNSystem",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSystem",
+      "level": 5,
+      "title": "ssn:System",
+      "alternateIds": [
+        "x4-9-2-4-ssn-system"
+      ],
+      "number": "4.9.2.4"
+    },
+    {
+      "id": "SSNhasSubSystem",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNhasSubSystem",
+      "level": 5,
+      "title": "ssn:hasSubSystem",
+      "alternateIds": [
+        "x4-9-2-5-ssn-hassubsystem"
+      ],
+      "number": "4.9.2.5"
+    },
+    {
+      "id": "SSNDeployment",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNDeployment",
+      "level": 5,
+      "title": "ssn:Deployment",
+      "alternateIds": [
+        "x4-9-2-6-ssn-deployment"
+      ],
+      "number": "4.9.2.6"
+    },
+    {
+      "id": "SSNdeployedSystem",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNdeployedSystem",
+      "level": 5,
+      "title": "ssn:deployedSystem",
+      "alternateIds": [
+        "x4-9-2-7-ssn-deployedsystem"
+      ],
+      "number": "4.9.2.7"
+    },
+    {
+      "id": "SSNhasDeployment",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNhasDeployment",
+      "level": 5,
+      "title": "ssn:hasDeployment",
+      "alternateIds": [
+        "x4-9-2-8-ssn-hasdeployment"
+      ],
+      "number": "4.9.2.8"
+    },
+    {
+      "id": "SSNdeployedOnPlatform",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNdeployedOnPlatform",
+      "level": 5,
+      "title": "ssn:deployedOnPlatform",
+      "alternateIds": [
+        "x4-9-2-9-ssn-deployedonplatform"
+      ],
+      "number": "4.9.2.9"
+    },
+    {
+      "id": "SSNinDeployment",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNinDeployment",
+      "level": 5,
+      "title": "ssn:inDeployment",
+      "alternateIds": [
+        "x4-9-2-10-ssn-indeployment"
+      ],
+      "number": "4.9.2.10"
+    },
+    {
+      "id": "HorizontalSegmentation",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#HorizontalSegmentation",
+      "level": 2,
+      "title": "Horizontal Segmentation",
+      "alternateIds": [
+        "x5-horizontal-segmentation"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "System-capabilities",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#System-capabilities",
+      "level": 3,
+      "title": "System Capabilities Module",
+      "alternateIds": [
+        "x5-1-system-capabilities-module"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "overview-and-examples",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#overview-and-examples",
+      "level": 4,
+      "title": "Overview and examples",
+      "alternateIds": [
+        "x5-1-1-overview-and-examples"
+      ],
+      "number": "5.1.1"
+    },
+    {
+      "id": "specification",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#specification",
+      "level": 4,
+      "title": "Specification",
+      "alternateIds": [
+        "x5-1-2-specification"
+      ],
+      "number": "5.1.2"
+    },
+    {
+      "id": "ssn-system",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#ssn-system",
+      "level": 5,
+      "title": "ssn:System",
+      "alternateIds": [
+        "x5-1-2-1-ssn-system"
+      ],
+      "number": "5.1.2.1"
+    },
+    {
+      "id": "SSNSYSTEMinCondition",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMinCondition",
+      "level": 5,
+      "title": "ssn-system:inCondition",
+      "alternateIds": [
+        "x5-1-2-2-ssn-system-incondition"
+      ],
+      "number": "5.1.2.2"
+    },
+    {
+      "id": "SSNSYSTEMCondition",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMCondition",
+      "level": 5,
+      "title": "ssn-system:Condition",
+      "alternateIds": [
+        "x5-1-2-3-ssn-system-condition"
+      ],
+      "number": "5.1.2.3"
+    },
+    {
+      "id": "SSNSYSTEMhasSystemCapability",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMhasSystemCapability",
+      "level": 5,
+      "title": "ssn-system:hasSystemCapability",
+      "alternateIds": [
+        "x5-1-2-4-ssn-system-hassystemcapability"
+      ],
+      "number": "5.1.2.4"
+    },
+    {
+      "id": "SSNSYSTEMSystemCapability",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMSystemCapability",
+      "level": 5,
+      "title": "ssn-system:SystemCapability",
+      "alternateIds": [
+        "x5-1-2-5-ssn-system-systemcapability"
+      ],
+      "number": "5.1.2.5"
+    },
+    {
+      "id": "SSNSYSTEMhasSystemProperty",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMhasSystemProperty",
+      "level": 5,
+      "title": "ssn-system:hasSystemProperty",
+      "alternateIds": [
+        "x5-1-2-6-ssn-system-hassystemproperty"
+      ],
+      "number": "5.1.2.6"
+    },
+    {
+      "id": "SSNSYSTEMSystemProperty",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMSystemProperty",
+      "level": 5,
+      "title": "ssn-system:SystemProperty",
+      "alternateIds": [
+        "x5-1-2-7-ssn-system-systemproperty"
+      ],
+      "number": "5.1.2.7"
+    },
+    {
+      "id": "SSNSYSTEMMeasurementRange",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMMeasurementRange",
+      "level": 5,
+      "title": "ssn-system:MeasurementRange",
+      "alternateIds": [
+        "x5-1-2-8-ssn-system-measurementrange"
+      ],
+      "number": "5.1.2.8"
+    },
+    {
+      "id": "SSNSYSTEMActuationRange",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMActuationRange",
+      "level": 5,
+      "title": "ssn-system:ActuationRange",
+      "alternateIds": [
+        "x5-1-2-9-ssn-system-actuationrange"
+      ],
+      "number": "5.1.2.9"
+    },
+    {
+      "id": "SSNSYSTEMAccuracy",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMAccuracy",
+      "level": 5,
+      "title": "ssn-system:Accuracy",
+      "alternateIds": [
+        "x5-1-2-10-ssn-system-accuracy"
+      ],
+      "number": "5.1.2.10"
+    },
+    {
+      "id": "SSNSYSTEMDetectionLimit",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMDetectionLimit",
+      "level": 5,
+      "title": "ssn-system:DetectionLimit",
+      "alternateIds": [
+        "x5-1-2-11-ssn-system-detectionlimit"
+      ],
+      "number": "5.1.2.11"
+    },
+    {
+      "id": "SSNSYSTEMDrift",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMDrift",
+      "level": 5,
+      "title": "ssn-system:Drift",
+      "alternateIds": [
+        "x5-1-2-12-ssn-system-drift"
+      ],
+      "number": "5.1.2.12"
+    },
+    {
+      "id": "SSNSYSTEMFrequency",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMFrequency",
+      "level": 5,
+      "title": "ssn-system:Frequency",
+      "alternateIds": [
+        "x5-1-2-13-ssn-system-frequency"
+      ],
+      "number": "5.1.2.13"
+    },
+    {
+      "id": "SSNSYSTEMLatency",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMLatency",
+      "level": 5,
+      "title": "ssn-system:Latency",
+      "alternateIds": [
+        "x5-1-2-14-ssn-system-latency"
+      ],
+      "number": "5.1.2.14"
+    },
+    {
+      "id": "SSNSYSTEMPrecision",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMPrecision",
+      "level": 5,
+      "title": "ssn-system:Precision",
+      "alternateIds": [
+        "x5-1-2-15-ssn-system-precision"
+      ],
+      "number": "5.1.2.15"
+    },
+    {
+      "id": "SSNSYSTEMResolution",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMResolution",
+      "level": 5,
+      "title": "ssn-system:Resolution",
+      "alternateIds": [
+        "x5-1-2-16-ssn-system-resolution"
+      ],
+      "number": "5.1.2.16"
+    },
+    {
+      "id": "SSNSYSTEMResponseTime",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMResponseTime",
+      "level": 5,
+      "title": "ssn-system:ResponseTime",
+      "alternateIds": [
+        "x5-1-2-17-ssn-system-responsetime"
+      ],
+      "number": "5.1.2.17"
+    },
+    {
+      "id": "SSNSYSTEMSelectivity",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMSelectivity",
+      "level": 5,
+      "title": "ssn-system:Selectivity",
+      "alternateIds": [
+        "x5-1-2-18-ssn-system-selectivity"
+      ],
+      "number": "5.1.2.18"
+    },
+    {
+      "id": "SSNSYSTEMSensitivity",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMSensitivity",
+      "level": 5,
+      "title": "ssn-system:Sensitivity",
+      "alternateIds": [
+        "x5-1-2-19-ssn-system-sensitivity"
+      ],
+      "number": "5.1.2.19"
+    },
+    {
+      "id": "SSNSYSTEMhasOperatingRange",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMhasOperatingRange",
+      "level": 5,
+      "title": "ssn-system:hasOperatingRange",
+      "alternateIds": [
+        "x5-1-2-20-ssn-system-hasoperatingrange"
+      ],
+      "number": "5.1.2.20"
+    },
+    {
+      "id": "SSNSYSTEMOperatingRange",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMOperatingRange",
+      "level": 5,
+      "title": "ssn-system:OperatingRange",
+      "alternateIds": [
+        "x5-1-2-21-ssn-system-operatingrange"
+      ],
+      "number": "5.1.2.21"
+    },
+    {
+      "id": "SSNSYSTEMhasOperatingProperty",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMhasOperatingProperty",
+      "level": 5,
+      "title": "ssn-system:hasOperatingProperty",
+      "alternateIds": [
+        "x5-1-2-22-ssn-system-hasoperatingproperty"
+      ],
+      "number": "5.1.2.22"
+    },
+    {
+      "id": "SSNSYSTEMOperatingProperty",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMOperatingProperty",
+      "level": 5,
+      "title": "ssn-system:OperatingProperty",
+      "alternateIds": [
+        "x5-1-2-23-ssn-system-operatingproperty"
+      ],
+      "number": "5.1.2.23"
+    },
+    {
+      "id": "SSNSYSTEMMaintenanceSchedule",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMMaintenanceSchedule",
+      "level": 5,
+      "title": "ssn-system:MaintenanceSchedule",
+      "alternateIds": [
+        "x5-1-2-24-ssn-system-maintenanceschedule"
+      ],
+      "number": "5.1.2.24"
+    },
+    {
+      "id": "SSNSYSTEMOperatingPowerRange",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMOperatingPowerRange",
+      "level": 5,
+      "title": "ssn-system:OperatingPowerRange",
+      "alternateIds": [
+        "x5-1-2-25-ssn-system-operatingpowerrange"
+      ],
+      "number": "5.1.2.25"
+    },
+    {
+      "id": "SSNSYSTEMhasSurvivalRange",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMhasSurvivalRange",
+      "level": 5,
+      "title": "ssn-system:hasSurvivalRange",
+      "alternateIds": [
+        "x5-1-2-26-ssn-system-hassurvivalrange"
+      ],
+      "number": "5.1.2.26"
+    },
+    {
+      "id": "SSNSYSTEMSurvivalRange",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMSurvivalRange",
+      "level": 5,
+      "title": "ssn-system:SurvivalRange",
+      "alternateIds": [
+        "x5-1-2-27-ssn-system-survivalrange"
+      ],
+      "number": "5.1.2.27"
+    },
+    {
+      "id": "SSNSYSTEMhasSurvivalProperty",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMhasSurvivalProperty",
+      "level": 5,
+      "title": "ssn-system:hasSurvivalProperty",
+      "alternateIds": [
+        "x5-1-2-28-ssn-system-hassurvivalproperty"
+      ],
+      "number": "5.1.2.28"
+    },
+    {
+      "id": "SSNSYSTEMSurvivalProperty",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMSurvivalProperty",
+      "level": 5,
+      "title": "ssn-system:SurvivalProperty",
+      "alternateIds": [
+        "x5-1-2-29-ssn-system-survivalproperty"
+      ],
+      "number": "5.1.2.29"
+    },
+    {
+      "id": "SSNSYSTEMSystemLifetime",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMSystemLifetime",
+      "level": 5,
+      "title": "ssn-system:SystemLifetime",
+      "alternateIds": [
+        "x5-1-2-30-ssn-system-systemlifetime"
+      ],
+      "number": "5.1.2.30"
+    },
+    {
+      "id": "SSNSYSTEMBatteryLifetime",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMBatteryLifetime",
+      "level": 5,
+      "title": "ssn-system:BatteryLifetime",
+      "alternateIds": [
+        "x5-1-2-31-ssn-system-batterylifetime"
+      ],
+      "number": "5.1.2.31"
+    },
+    {
+      "id": "SSNSYSTEMqualityOfObservation",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSYSTEMqualityOfObservation",
+      "level": 5,
+      "title": "ssn-system:qualityOfObservation",
+      "alternateIds": [
+        "x5-1-2-32-ssn-system-qualityofobservation"
+      ],
+      "number": "5.1.2.32"
+    },
+    {
+      "id": "Sample_Relations",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#Sample_Relations",
+      "level": 3,
+      "title": "Sample Relations Module",
+      "alternateIds": [
+        "x5-2-sample-relations-module"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "sample_relationships_def",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#sample_relationships_def",
+      "level": 4,
+      "title": "Sample Relationships Specification",
+      "alternateIds": [
+        "SAMPglance"
+      ],
+      "number": "5.2.1"
+    },
+    {
+      "id": "SAMPRelationshipNature",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SAMPRelationshipNature",
+      "level": 5,
+      "title": "sampling:RelationshipNature",
+      "alternateIds": [
+        "x5-2-1-1-sampling-relationshipnature"
+      ],
+      "number": "5.2.1.1"
+    },
+    {
+      "id": "SAMPSampleRelationship",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SAMPSampleRelationship",
+      "level": 5,
+      "title": "sampling:SampleRelationship",
+      "alternateIds": [
+        "x5-2-1-2-sampling-samplerelationship"
+      ],
+      "number": "5.2.1.2"
+    },
+    {
+      "id": "SAMPhasSampleRelationship",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SAMPhasSampleRelationship",
+      "level": 5,
+      "title": "sampling:hasSampleRelationship",
+      "alternateIds": [
+        "x5-2-1-3-sampling-hassamplerelationship"
+      ],
+      "number": "5.2.1.3"
+    },
+    {
+      "id": "SAMPnatureOfRelationship",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SAMPnatureOfRelationship",
+      "level": 5,
+      "title": "sampling:natureOfRelationship",
+      "alternateIds": [
+        "x5-2-1-4-sampling-natureofrelationship"
+      ],
+      "number": "5.2.1.4"
+    },
+    {
+      "id": "SAMPrelatedSample",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SAMPrelatedSample",
+      "level": 5,
+      "title": "sampling:relatedSample",
+      "alternateIds": [
+        "x5-2-1-5-sampling-relatedsample"
+      ],
+      "number": "5.2.1.5"
+    },
+    {
+      "id": "VerticalSegmentation",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#VerticalSegmentation",
+      "level": 2,
+      "title": "Vertical Segmentation",
+      "alternateIds": [
+        "x6-vertical-segmentation"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "DUL_Alignment",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#DUL_Alignment",
+      "level": 3,
+      "title": "Dolce-Ultralite Alignment Module",
+      "alternateIds": [
+        "x6-1-dolce-ultralite-alignment-module"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "DUL_Alignment-namespaces",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#DUL_Alignment-namespaces",
+      "level": 4,
+      "title": "Namespaces",
+      "alternateIds": [
+        "x6-1-1-namespaces"
+      ],
+      "number": "6.1.1"
+    },
+    {
+      "id": "DUL-Classes-Alignment",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#DUL-Classes-Alignment",
+      "level": 4,
+      "title": "Class Alignments",
+      "alternateIds": [
+        "x6-1-2-class-alignments"
+      ],
+      "number": "6.1.2"
+    },
+    {
+      "id": "DUL_Alignment_property",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#DUL_Alignment_property",
+      "level": 4,
+      "title": "Property Alignments",
+      "alternateIds": [
+        "x6-1-3-property-alignments"
+      ],
+      "number": "6.1.3"
+    },
+    {
+      "id": "SSNX_Alignment",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNX_Alignment",
+      "level": 3,
+      "title": "SSNX Alignment Module",
+      "alternateIds": [
+        "x6-2-ssnx-alignment-module"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "SSNX",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNX",
+      "level": 4,
+      "title": "Namespaces",
+      "alternateIds": [
+        "x6-2-1-namespaces"
+      ],
+      "number": "6.2.1"
+    },
+    {
+      "id": "SSNX-Classes-Alignment",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNX-Classes-Alignment",
+      "level": 4,
+      "title": "Class Alignments",
+      "alternateIds": [
+        "x6-2-2-class-alignments"
+      ],
+      "number": "6.2.2"
+    },
+    {
+      "id": "SSNX_Alignment_property",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNX_Alignment_property",
+      "level": 4,
+      "title": "Property Alignments",
+      "alternateIds": [
+        "x6-2-3-property-alignments"
+      ],
+      "number": "6.2.3"
+    },
+    {
+      "id": "OM_Alignment",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#OM_Alignment",
+      "level": 3,
+      "title": "O&M Alignment Module",
+      "alternateIds": [
+        "x6-3-o-m-alignment-module"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "OM_Alignment_UML_URI",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#OM_Alignment_UML_URI",
+      "level": 4,
+      "title": "Identifying the UML elements",
+      "alternateIds": [
+        "x6-3-1-identifying-the-uml-elements"
+      ],
+      "number": "6.3.1"
+    },
+    {
+      "id": "OM_Alignment_ns",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#OM_Alignment_ns",
+      "level": 4,
+      "title": "Namespaces",
+      "alternateIds": [
+        "x6-3-2-namespaces"
+      ],
+      "number": "6.3.2"
+    },
+    {
+      "id": "OM_Alignment_utility",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#OM_Alignment_utility",
+      "level": 4,
+      "title": "Utility Classes",
+      "alternateIds": [
+        "x6-3-3-utility-classes"
+      ],
+      "number": "6.3.3"
+    },
+    {
+      "id": "OM_Alignment_class",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#OM_Alignment_class",
+      "level": 4,
+      "title": "Class Alignments",
+      "alternateIds": [
+        "x6-3-4-class-alignments"
+      ],
+      "number": "6.3.4"
+    },
+    {
+      "id": "OM_Alignment_property",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#OM_Alignment_property",
+      "level": 4,
+      "title": "Property Alignments",
+      "alternateIds": [
+        "x6-3-5-property-alignments"
+      ],
+      "number": "6.3.5"
+    },
+    {
+      "id": "OBOE_Alignment",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#OBOE_Alignment",
+      "level": 3,
+      "title": "OBOE Alignment Module",
+      "alternateIds": [
+        "x6-4-oboe-alignment-module"
+      ],
+      "number": "6.4"
+    },
+    {
+      "id": "OBOE_Alignment_ns",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#OBOE_Alignment_ns",
+      "level": 4,
+      "title": "Namespaces",
+      "alternateIds": [
+        "x6-4-1-namespaces"
+      ],
+      "number": "6.4.1"
+    },
+    {
+      "id": "OBOE_Alignment_class",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#OBOE_Alignment_class",
+      "level": 4,
+      "title": "Class Alignments",
+      "alternateIds": [
+        "x6-4-2-class-alignments"
+      ],
+      "number": "6.4.2"
+    },
+    {
+      "id": "OBOE_Alignment_property",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#OBOE_Alignment_property",
+      "level": 4,
+      "title": "Property Alignments",
+      "alternateIds": [
+        "x6-4-3-property-alignments"
+      ],
+      "number": "6.4.3"
+    },
+    {
+      "id": "PROV_Alignment",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#PROV_Alignment",
+      "level": 3,
+      "title": "PROV Alignment Module",
+      "alternateIds": [
+        "x6-5-prov-alignment-module"
+      ],
+      "number": "6.5"
+    },
+    {
+      "id": "PROV_Alignment_ns",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#PROV_Alignment_ns",
+      "level": 4,
+      "title": "Namespaces",
+      "alternateIds": [
+        "x6-5-1-namespaces"
+      ],
+      "number": "6.5.1"
+    },
+    {
+      "id": "PROV_Alignment_class",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#PROV_Alignment_class",
+      "level": 4,
+      "title": "Class Alignments",
+      "alternateIds": [
+        "x6-5-2-class-alignments"
+      ],
+      "number": "6.5.2"
+    },
+    {
+      "id": "PROV_Alignment_property",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#PROV_Alignment_property",
+      "level": 4,
+      "title": "Property Alignments",
+      "alternateIds": [
+        "x6-5-3-property-alignments"
+      ],
+      "number": "6.5.3"
+    },
+    {
+      "id": "common-modeling-questions",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#common-modeling-questions",
+      "level": 2,
+      "title": "Common Modeling Questions",
+      "alternateIds": [
+        "x7-common-modeling-questions"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "location",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#location",
+      "level": 3,
+      "title": "Location",
+      "alternateIds": [
+        "x7-1-location"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "forecasts",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#forecasts",
+      "level": 3,
+      "title": "Forecasts",
+      "alternateIds": [
+        "x7-2-forecasts"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "quantity-values-and-unit-of-measures",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#quantity-values-and-unit-of-measures",
+      "level": 3,
+      "title": "Quantity Values and Unit of Measures",
+      "alternateIds": [
+        "x7-3-quantity-values-and-unit-of-measures"
+      ],
+      "number": "7.3"
+    },
+    {
+      "id": "SSNProperty-instances",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNProperty-instances",
+      "level": 3,
+      "title": "Generic or Specific Instances of ssn:Property",
+      "alternateIds": [
+        "x7-4-generic-or-specific-instances-of-ssn-property"
+      ],
+      "number": "7.4"
+    },
+    {
+      "id": "SSNSystem-instances",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#SSNSystem-instances",
+      "level": 3,
+      "title": "Generic or Specific Instances of ssn:System",
+      "alternateIds": [
+        "x7-5-generic-or-specific-instances-of-ssn-system"
+      ],
+      "number": "7.5"
+    },
+    {
+      "id": "wide-review",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#wide-review",
+      "level": 2,
+      "title": "Wide review",
+      "alternateIds": [
+        "a-wide-review"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "examples",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#examples",
+      "level": 2,
+      "title": "Complete Examples",
+      "alternateIds": [
+        "b-complete-examples"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "iphone_barometer-sosa",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#iphone_barometer-sosa",
+      "level": 3,
+      "title": "iPhone Barometer",
+      "alternateIds": [
+        "b-1-iphone-barometer"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "coil_oil_plant-sosa",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#coil_oil_plant-sosa",
+      "level": 3,
+      "title": "Coal Oil Point Reserve",
+      "alternateIds": [
+        "b-2-coal-oil-point-reserve"
+      ],
+      "number": "B.2"
+    },
+    {
+      "id": "apartment-134",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#apartment-134",
+      "level": 3,
+      "title": "apartment 134",
+      "alternateIds": [
+        "b-3-apartment-134"
+      ],
+      "number": "B.3"
+    },
+    {
+      "id": "tree-height",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#tree-height",
+      "level": 3,
+      "title": "Tree height measurement",
+      "alternateIds": [
+        "b-4-tree-height-measurement"
+      ],
+      "number": "B.4"
+    },
+    {
+      "id": "seismograph",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#seismograph",
+      "level": 3,
+      "title": "Seismographs",
+      "alternateIds": [
+        "b-5-seismographs"
+      ],
+      "number": "B.5"
+    },
+    {
+      "id": "sunspots",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#sunspots",
+      "level": 3,
+      "title": "Number of sunspots",
+      "alternateIds": [
+        "b-6-number-of-sunspots"
+      ],
+      "number": "B.6"
+    },
+    {
+      "id": "spinning-cups",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#spinning-cups",
+      "level": 3,
+      "title": "Wind sensor spinning cups",
+      "alternateIds": [
+        "b-7-wind-sensor-spinning-cups"
+      ],
+      "number": "B.7"
+    },
+    {
+      "id": "ice-core",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#ice-core",
+      "level": 3,
+      "title": "Ice Core",
+      "alternateIds": [
+        "b-8-ice-core"
+      ],
+      "number": "B.8"
+    },
+    {
+      "id": "dht22-description",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#dht22-description",
+      "level": 3,
+      "title": "DHT22 Description",
+      "alternateIds": [
+        "b-9-dht22-description"
+      ],
+      "number": "B.9"
+    },
+    {
+      "id": "dht22-deployment",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#dht22-deployment",
+      "level": 3,
+      "title": "DHT22 Deployment",
+      "alternateIds": [
+        "b-10-dht22-deployment"
+      ],
+      "number": "B.10"
+    },
+    {
+      "id": "ip68-smart-sensor",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#ip68-smart-sensor",
+      "level": 3,
+      "title": "IP68 Smart Sensor",
+      "alternateIds": [
+        "b-11-ip68-smart-sensor"
+      ],
+      "number": "B.11"
+    },
+    {
+      "id": "omxml-examples",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#omxml-examples",
+      "level": 3,
+      "title": "Examples from O&M",
+      "alternateIds": [
+        "b-12-examples-from-o-m"
+      ],
+      "number": "B.12"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "alternateIds": [
+        "c-acknowledgments"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#changes",
+      "level": 2,
+      "title": "Change History",
+      "alternateIds": [
+        "d-change-history"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "changes-since-original-https-www-w3-org-2005-incubator-ssn-xgr-ssn-20110628",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#changes-since-original-https-www-w3-org-2005-incubator-ssn-xgr-ssn-20110628",
+      "level": 2,
+      "title": "Changes since Original (https://www.w3.org/2005/Incubator/ssn/XGR-ssn-20110628/)"
+    },
+    {
+      "id": "changes-since-1st-public-working-draft-http-www-w3-org-tr-2016-wd-vocab-ssn-20160531",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#changes-since-1st-public-working-draft-http-www-w3-org-tr-2016-wd-vocab-ssn-20160531",
+      "level": 2,
+      "title": "Changes since 1st Public Working Draft (http://www.w3.org/TR/2016/WD-vocab-ssn-20160531/)"
+    },
+    {
+      "id": "changes-since-2nd-public-working-draft-https-www-w3-org-tr-2017-wd-vocab-ssn-20170105",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#changes-since-2nd-public-working-draft-https-www-w3-org-tr-2017-wd-vocab-ssn-20170105",
+      "level": 3,
+      "title": "Changes since 2nd Public Working Draft (https://www.w3.org/TR/2017/WD-vocab-ssn-20170105/)"
+    },
+    {
+      "id": "changes-since-3rd-public-working-draft-https-www-w3-org-tr-2017-wd-vocab-ssn-20170504",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#changes-since-3rd-public-working-draft-https-www-w3-org-tr-2017-wd-vocab-ssn-20170504",
+      "level": 3,
+      "title": "Changes since 3rd Public Working Draft (https://www.w3.org/TR/2017/WD-vocab-ssn-20170504/)"
+    },
+    {
+      "id": "changes-since-w3c-candidate-recommendation-11-july-2017-https-www-w3-org-tr-2017-cr-vocab-ssn-20170711",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#changes-since-w3c-candidate-recommendation-11-july-2017-https-www-w3-org-tr-2017-cr-vocab-ssn-20170711",
+      "level": 3,
+      "title": "Changes since W3C Candidate Recommendation 11 July 2017 (https://www.w3.org/TR/2017/CR-vocab-ssn-20170711/)"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "e-references"
+      ],
+      "number": "E"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "e-1-normative-references"
+      ],
+      "number": "E.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/vocab-ssn-2017/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "e-2-informative-references"
+      ],
+      "number": "E.2"
+    }
+  ]
+}
