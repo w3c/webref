@@ -125,7 +125,7 @@
       "name": "<image-set-option>",
       "href": "https://www.w3.org/TR/css-images-4/#typedef-image-set-option",
       "type": "type",
-      "value": "[ <image> | <string> ] [ <resolution> || type(<string>) ]"
+      "value": "[ <image> | <string> ] [ <resolution> || type(<string>) ]?"
     },
     {
       "name": "image()",
@@ -155,7 +155,7 @@
       "name": "<cf-image>",
       "href": "https://www.w3.org/TR/css-images-4/#typedef-cf-image",
       "type": "type",
-      "value": "<percentage [0,100]>? && [ <image> | <color> ]"
+      "value": "[ <image> | <color> ] && <percentage [0,100]>?"
     },
     {
       "name": "element()",
@@ -170,10 +170,10 @@
       "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]"
     },
     {
-      "name": "linear-gradient()",
-      "value": "linear-gradient( [ [ <angle> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list> )",
-      "href": "https://www.w3.org/TR/css-images-4/#funcdef-linear-gradient",
-      "type": "function"
+      "name": "<linear-gradient-syntax>",
+      "href": "https://www.w3.org/TR/css-images-4/#typedef-linear-gradient-syntax",
+      "type": "type",
+      "value": "[ [ <angle> | <zero> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list>"
     },
     {
       "name": "<side-or-corner>",
@@ -182,23 +182,23 @@
       "value": "[left | right] || [top | bottom]"
     },
     {
-      "name": "radial-gradient()",
-      "value": "radial-gradient( [ [ [ <rg-ending-shape> || <rg-size> ]? [ at <position> ]? ] || <color-interpolation-method>]? , <color-stop-list> )",
-      "href": "https://www.w3.org/TR/css-images-4/#funcdef-radial-gradient",
-      "type": "function"
+      "name": "<radial-gradient-syntax>",
+      "href": "https://www.w3.org/TR/css-images-4/#typedef-radial-gradient-syntax",
+      "type": "type",
+      "value": "[ [ [ <radial-shape> || <radial-size> ]? [ at <position> ]? ] || <color-interpolation-method>]? , <color-stop-list>"
     },
     {
       "name": "conic-gradient()",
-      "value": "conic-gradient( [ [ [ from <angle> ]? [ at <position> ]? ] || <color-interpolation-method> ]? , <angular-color-stop-list> )",
+      "value": "conic-gradient( [ <conic-gradient-syntax> ] )",
       "href": "https://www.w3.org/TR/css-images-4/#funcdef-conic-gradient",
       "type": "function",
       "values": [
         {
-          "name": "<angle>",
+          "name": "<angle> | <zero>",
           "prose": "The entire gradient is rotated by this angle. If omitted, defaults to 0deg. The unit identifier may be omitted if the <angle> is zero.",
-          "href": "https://www.w3.org/TR/css-images-4/#valdef-conic-gradient-angle",
+          "href": "https://www.w3.org/TR/css-images-4/#valdef-conic-gradient-angle--zero",
           "type": "value",
-          "value": "<angle>"
+          "value": "<angle> | <zero>"
         },
         {
           "name": "<position>",
@@ -210,29 +210,38 @@
       ]
     },
     {
+      "name": "<conic-gradient-syntax>",
+      "href": "https://www.w3.org/TR/css-images-4/#typedef-conic-gradient-syntax",
+      "type": "type",
+      "value": "[ [ [ from [ <angle> | <zero> ] ]? [ at <position> ]? ] || <color-interpolation-method> ]? , <angular-color-stop-list>"
+    },
+    {
       "name": "repeating-linear-gradient()",
       "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
       "href": "https://www.w3.org/TR/css-images-4/#funcdef-repeating-linear-gradient",
-      "type": "function"
+      "type": "function",
+      "value": "repeating-linear-gradient( [ <linear-gradient-syntax> ] )"
     },
     {
       "name": "repeating-radial-gradient()",
       "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
       "href": "https://www.w3.org/TR/css-images-4/#funcdef-repeating-radial-gradient",
-      "type": "function"
+      "type": "function",
+      "value": "repeating-radial-gradient( [ <radial-gradient-syntax> ] )"
     },
     {
       "name": "repeating-conic-gradient()",
       "prose": "In addition to linear-gradient(), radial-gradient(), and conic-gradient(), this specification defines repeating-linear-gradient(), repeating-radial-gradient(), and repeating-conic-gradient() values. These notations take the same values and are interpreted the same as their respective non-repeating siblings defined previously.",
       "href": "https://www.w3.org/TR/css-images-4/#funcdef-repeating-conic-gradient",
       "type": "function",
+      "value": "repeating-conic-gradient( [ <conic-gradient-syntax> ] )",
       "values": [
         {
-          "name": "<angle>",
+          "name": "<angle> | <zero>",
           "prose": "The entire gradient is rotated by this angle. If omitted, defaults to 0deg. The unit identifier may be omitted if the <angle> is zero.",
-          "href": "https://www.w3.org/TR/css-images-4/#valdef-conic-gradient-angle",
+          "href": "https://www.w3.org/TR/css-images-4/#valdef-conic-gradient-angle--zero",
           "type": "value",
-          "value": "<angle>"
+          "value": "<angle> | <zero>"
         },
         {
           "name": "<position>",
@@ -247,13 +256,13 @@
       "name": "<color-stop-list>",
       "href": "https://www.w3.org/TR/css-images-4/#typedef-color-stop-list",
       "type": "type",
-      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#"
+      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#?"
     },
     {
       "name": "<linear-color-stop>",
       "href": "https://www.w3.org/TR/css-images-4/#typedef-linear-color-stop",
       "type": "type",
-      "value": "<color> && <color-stop-length>?"
+      "value": "<color> <color-stop-length>?"
     },
     {
       "name": "<linear-color-hint>",
@@ -271,25 +280,25 @@
       "name": "<angular-color-stop-list>",
       "href": "https://www.w3.org/TR/css-images-4/#typedef-angular-color-stop-list",
       "type": "type",
-      "value": "<angular-color-stop> , [ <angular-color-hint>? , <angular-color-stop> ]#"
+      "value": "<angular-color-stop> , [ <angular-color-hint>? , <angular-color-stop> ]#?"
     },
     {
       "name": "<angular-color-stop>",
       "href": "https://www.w3.org/TR/css-images-4/#typedef-angular-color-stop",
       "type": "type",
-      "value": "<color> && <color-stop-angle>?"
+      "value": "<color> <color-stop-angle>?"
     },
     {
       "name": "<angular-color-hint>",
       "href": "https://www.w3.org/TR/css-images-4/#typedef-angular-color-hint",
       "type": "type",
-      "value": "<angle-percentage>"
+      "value": "<angle-percentage> | <zero>"
     },
     {
       "name": "<color-stop-angle>",
       "href": "https://www.w3.org/TR/css-images-4/#typedef-color-stop-angle",
       "type": "type",
-      "value": "<angle-percentage>{1,2}"
+      "value": "[ <angle-percentage> | <zero> ]{1,2}"
     },
     {
       "name": "<color-stop>",
@@ -336,7 +345,7 @@
     },
     {
       "name": "<color-stripe>",
-      "prose": "Each <color-stripe> entry defines a solid-color stripe with the specified <color> and thickness. If the thickness is omitted, it defaults to 1fr. Thickness values are intepreted as follows:",
+      "prose": "Each <color-stripe> entry defines a solid-color stripe with the specified <color> and thickness. If the thickness is omitted, it defaults to 1fr. Thickness values are interpreted as follows:",
       "href": "https://www.w3.org/TR/css-images-4/#typedef-color-stripe",
       "type": "type",
       "value": "<color> && [ <length-percentage> | <flex> ]?"
@@ -346,6 +355,13 @@
       "prose": "Implementations must accept -webkit-image-set() as a parse-time alias of image-set(). (It’s a valid value, with identical arguments to image-set(), and is turned into image-set() during parsing.)",
       "href": "https://www.w3.org/TR/css-images-4/#funcdef--webkit-image-set",
       "type": "function"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "<radial-size>",
+      "value": "<radial-extent>{1,2} | <length-percentage [0,∞]>{1,2}"
     }
   ]
 }
