@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-10-02T12:49:37.624Z",
+  "date": "2025-10-02T18:48:36.294Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -746,7 +746,7 @@
   },
   "stats": {
     "crawled": 714,
-    "errors": 2
+    "errors": 4
   },
   "crawler": "reffy-19.2.3",
   "results": [
@@ -1472,7 +1472,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-compression-dictionary.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 02 Oct 2025 00:56:27 GMT"
+        "lastModified": "Thu, 02 Oct 2025 16:38:15 GMT"
       },
       "date": "2 October 2025",
       "algorithms": "algorithms/compression-dictionary.json",
@@ -1521,7 +1521,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 02 Oct 2025 00:56:27 GMT"
+        "lastModified": "Thu, 02 Oct 2025 16:38:15 GMT"
       },
       "date": "2 October 2025",
       "algorithms": "algorithms/no-vary-search.json",
@@ -1570,7 +1570,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 02 Oct 2025 00:56:28 GMT"
+        "lastModified": "Thu, 02 Oct 2025 16:38:15 GMT"
       },
       "date": "2 October 2025",
       "algorithms": "algorithms/rfc6265bis.json",
@@ -7816,9 +7816,9 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 26 Sep 2025 07:46:57 GMT"
+        "lastModified": "Thu, 02 Oct 2025 18:06:35 GMT"
       },
-      "date": "26 September 2025",
+      "date": "2 October 2025",
       "links": "links/tc39-temporal.json",
       "dfns": "dfns/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
@@ -7863,9 +7863,9 @@
       ],
       "crawled": "https://tc39.es/proposal-upsert/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 17 Sep 2025 17:06:20 GMT"
+        "lastModified": "Thu, 02 Oct 2025 18:30:45 GMT"
       },
-      "date": "17 September 2025",
+      "date": "2 October 2025",
       "links": "links/tc39-upsert.json",
       "headings": "headings/tc39-upsert.json",
       "ids": "ids/tc39-upsert.json",
@@ -22526,7 +22526,8 @@
       "elements": "elements/css-masking-1.json",
       "headings": "headings/css-masking-1.json",
       "ids": "ids/css-masking-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/css-masking-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 389)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-mixins-1/",
@@ -22922,7 +22923,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-nesting-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 02 Oct 2025 02:22:47 GMT"
+        "lastModified": "Thu, 02 Oct 2025 02:22:48 GMT"
       },
       "generator": "bikeshed",
       "date": "9 September 2025",
@@ -25468,7 +25469,8 @@
       "dfns": "dfns/css-typed-om-1.json",
       "headings": "headings/css-typed-om-1.json",
       "ids": "ids/css-typed-om-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 432)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-ui-3/",
@@ -27943,10 +27945,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/core/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 29 Sep 2025 12:40:30 GMT"
+        "lastModified": "Thu, 02 Oct 2025 13:51:58 GMT"
       },
       "generator": "respec",
-      "date": "29 September 2025",
+      "date": "02 October 2025",
       "algorithms": "algorithms/epub-33.json",
       "links": "links/epub-33.json",
       "refs": "refs/epub-33.json",
@@ -28001,10 +28003,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/authoring/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 29 Sep 2025 12:40:30 GMT"
+        "lastModified": "Thu, 02 Oct 2025 13:51:58 GMT"
       },
       "generator": "respec",
-      "date": "29 September 2025",
+      "date": "02 October 2025",
       "algorithms": "algorithms/epub-34.json",
       "links": "links/epub-34.json",
       "refs": "refs/epub-34.json",
@@ -28058,10 +28060,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/a11y/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 29 Sep 2025 12:40:30 GMT"
+        "lastModified": "Thu, 02 Oct 2025 13:51:58 GMT"
       },
       "generator": "respec",
-      "date": "29 September 2025",
+      "date": "02 October 2025",
       "links": "links/epub-a11y-111.json",
       "refs": "refs/epub-a11y-111.json",
       "dfns": "dfns/epub-a11y-111.json",
@@ -28114,10 +28116,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 29 Sep 2025 12:40:30 GMT"
+        "lastModified": "Thu, 02 Oct 2025 13:51:58 GMT"
       },
       "generator": "respec",
-      "date": "29 September 2025",
+      "date": "02 October 2025",
       "algorithms": "algorithms/epub-rs-33.json",
       "links": "links/epub-rs-33.json",
       "refs": "refs/epub-rs-33.json",
@@ -28171,10 +28173,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 29 Sep 2025 12:40:30 GMT"
+        "lastModified": "Thu, 02 Oct 2025 13:51:58 GMT"
       },
       "generator": "respec",
-      "date": "29 September 2025",
+      "date": "02 October 2025",
       "algorithms": "algorithms/epub-rs-34.json",
       "links": "links/epub-rs-34.json",
       "refs": "refs/epub-rs-34.json",
@@ -30898,10 +30900,10 @@
       ],
       "crawled": "https://w3c.github.io/mediacapture-main/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 25 Sep 2025 14:25:05 GMT"
+        "lastModified": "Thu, 02 Oct 2025 14:42:46 GMT"
       },
       "generator": "respec",
-      "date": "25 September 2025",
+      "date": "02 October 2025",
       "algorithms": "algorithms/mediacapture-streams.json",
       "links": "links/mediacapture-streams.json",
       "refs": "refs/mediacapture-streams.json",
@@ -38157,7 +38159,7 @@
       ],
       "crawled": "https://w3c.github.io/sdw/time-aggregates/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 01 Sep 2025 09:14:51 GMT"
+        "lastModified": "Mon, 01 Sep 2025 09:14:52 GMT"
       },
       "generator": "respec",
       "date": "01 September 2025",
@@ -38581,11 +38583,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 01 Oct 2025 17:00:49 GMT"
+        "lastModified": "Thu, 02 Oct 2025 16:25:55 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 October 2025",
-      "revision": "26b39e1db78325db9e377f7fe8464fb90b8f77c0",
+      "date": "2 October 2025",
+      "revision": "7071edc091e3f095e343815285964077fcaa3b96",
       "algorithms": "algorithms/wasm-core-2.json",
       "links": "links/wasm-core-2.json",
       "refs": "refs/wasm-core-2.json",
@@ -38654,11 +38656,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 01 Oct 2025 17:00:49 GMT"
+        "lastModified": "Thu, 02 Oct 2025 16:25:55 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 October 2025",
-      "revision": "26b39e1db78325db9e377f7fe8464fb90b8f77c0",
+      "date": "2 October 2025",
+      "revision": "7071edc091e3f095e343815285964077fcaa3b96",
       "algorithms": "algorithms/wasm-js-api-2.json",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
@@ -38720,11 +38722,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 01 Oct 2025 17:00:49 GMT"
+        "lastModified": "Thu, 02 Oct 2025 16:25:55 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 October 2025",
-      "revision": "26b39e1db78325db9e377f7fe8464fb90b8f77c0",
+      "date": "2 October 2025",
+      "revision": "7071edc091e3f095e343815285964077fcaa3b96",
       "algorithms": "algorithms/wasm-web-api-2.json",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
@@ -40357,11 +40359,11 @@
       ],
       "crawled": "https://w3c.github.io/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 01 Oct 2025 14:49:14 GMT"
+        "lastModified": "Thu, 02 Oct 2025 14:46:07 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 October 2025",
-      "revision": "092df074535298fb5218579475977e3dca4ec536",
+      "date": "2 October 2025",
+      "revision": "20868f9e0ff25b398df55b73e481be425d4965c0",
       "algorithms": "algorithms/webdriver-bidi.json",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",
@@ -42207,10 +42209,10 @@
       ],
       "crawled": "https://w3c.github.io/wot-thing-description/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 01 Oct 2025 14:51:14 GMT"
+        "lastModified": "Thu, 02 Oct 2025 12:58:14 GMT"
       },
       "generator": "respec",
-      "date": "01 October 2025",
+      "date": "02 October 2025",
       "algorithms": "algorithms/wot-thing-description11.json",
       "links": "links/wot-thing-description11.json",
       "refs": "refs/wot-thing-description11.json",
