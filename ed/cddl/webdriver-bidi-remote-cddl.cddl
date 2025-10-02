@@ -682,7 +682,7 @@ network.CookieHeader = {
     value: network.BytesValue,
 }
 
-network.DataType = "response"
+network.DataType = "request" / "response"
 
 network.Header = {
   name: text,
@@ -2312,7 +2312,7 @@ network.CookieHeader = {
     value: network.BytesValue,
 }
 
-network.DataType = "response"
+network.DataType = "request" / "response"
 
 network.Header = {
   name: text,
@@ -3851,7 +3851,7 @@ network.Cookie = {
     Extensible,
 }
 
-network.DataType = "response"
+network.DataType = "request" / "response"
 
 network.FetchTimingInfo = {
     timeOrigin: float,

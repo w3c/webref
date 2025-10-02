@@ -105,13 +105,6 @@
           "syntax": "<length>"
         },
         {
-          "name": "direction",
-          "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-direction",
-          "for": "@container",
-          "type": "discrete",
-          "syntax": "none | top | right | bottom | left | block-start | inline-start | block-end | inline-end | x | y | block | inline"
-        },
-        {
           "name": "fallback",
           "href": "https://drafts.csswg.org/css-anchor-position-2/#descdef-container-fallback",
           "for": "@container",
@@ -142,6 +135,13 @@
         {
           "name": "scrollable",
           "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-scrollable",
+          "for": "@container",
+          "type": "discrete",
+          "syntax": "none | top | right | bottom | left | block-start | inline-start | block-end | inline-end | x | y | block | inline"
+        },
+        {
+          "name": "scrolled",
+          "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-scrolled",
           "for": "@container",
           "type": "discrete",
           "syntax": "none | top | right | bottom | left | block-start | inline-start | block-end | inline-end | x | y | block | inline"
@@ -6305,8 +6305,10 @@
       "styleDeclaration": [
         "contain"
       ],
-      "syntax": "none | strict | content | [ [size | inline-size] || layout || style || paint ]",
-      "extended": []
+      "syntax": "none | strict | content | [ [size | inline-size] || layout || style || paint ] | view-transition",
+      "extended": [
+        "https://drafts.csswg.org/css-view-transitions-2/"
+      ]
     },
     {
       "name": "contain-intrinsic-block-size",

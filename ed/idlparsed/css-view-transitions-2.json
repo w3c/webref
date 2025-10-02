@@ -166,7 +166,7 @@
         "href": "https://drafts.csswg.org/css-view-transitions-2/#dictdef-startviewtransitionoptions"
       },
       "ViewTransition": {
-        "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  readonly attribute Promise<undefined> updateCallbackDone;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> finished;\n  undefined skipTransition();\n  attribute ViewTransitionTypeSet types;\n};",
+        "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  readonly attribute Promise<undefined> updateCallbackDone;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> finished;\n  undefined skipTransition();\n  attribute ViewTransitionTypeSet types;\n  readonly attribute Element transitionRoot;\n};",
         "type": "interface",
         "name": "ViewTransition",
         "inheritance": null,
@@ -277,6 +277,22 @@
             "special": "",
             "readonly": false,
             "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-types"
+          },
+          {
+            "type": "attribute",
+            "name": "transitionRoot",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Element"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-transitionroot"
           }
         ],
         "extAttrs": [
@@ -412,6 +428,86 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "Element": [
+        {
+          "fragment": "partial interface Element {\n  ViewTransition startViewTransition(\n    optional (ViewTransitionUpdateCallback or StartViewTransitionOptions) callbackOptions = {}\n  );\n  readonly attribute ViewTransition? activeViewTransition;\n};",
+          "type": "interface",
+          "name": "Element",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "startViewTransition",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ViewTransition"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "callbackOptions",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": true,
+                    "idlType": [
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "ViewTransitionUpdateCallback"
+                      },
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "StartViewTransitionOptions"
+                      }
+                    ]
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "",
+              "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-element-startviewtransition"
+            },
+            {
+              "type": "attribute",
+              "name": "activeViewTransition",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "ViewTransition"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true,
+              "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-element-activeviewtransition"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -435,15 +531,22 @@
       "StartViewTransitionOptions": [
         "ViewTransitionUpdateCallback"
       ],
+      "Element": [
+        "ViewTransition",
+        "ViewTransitionUpdateCallback",
+        "StartViewTransitionOptions"
+      ],
       "ViewTransition": [
-        "ViewTransitionTypeSet"
+        "ViewTransitionTypeSet",
+        "Element"
       ],
       "ViewTransitionTypeSet": []
     },
     "externalDependencies": [
       "CSSRule",
       "CSSOMString",
-      "Document"
+      "Document",
+      "Element"
     ],
     "hasObsoleteIdl": false
   }

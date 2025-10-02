@@ -1,0 +1,8 @@
+// Source: WebXR Device API (https://www.w3.org/TR/webxr/)
+dictionary XRVisibilityMaskChangeEventInit : EventInit {
+  required XRSession session;
+  required XREye eye;
+  required unsigned long index;
+  required Float32Array vertices;
+  required Uint32Array indices;
+};

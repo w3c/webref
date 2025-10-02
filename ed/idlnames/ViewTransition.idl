@@ -6,4 +6,5 @@ interface ViewTransition {
   readonly attribute Promise<undefined> finished;
   undefined skipTransition();
   attribute ViewTransitionTypeSet types;
+  readonly attribute Element transitionRoot;
 };

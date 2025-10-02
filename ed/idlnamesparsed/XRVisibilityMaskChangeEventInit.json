@@ -1,0 +1,29 @@
+{
+  "name": "XRVisibilityMaskChangeEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "dictionary XRVisibilityMaskChangeEventInit : EventInit {\n  required XRSession session;\n  required XREye eye;\n  required unsigned long index;\n  required Float32Array vertices;\n  required Uint32Array indices;\n};",
+    "href": "https://immersive-web.github.io/webxr/#dictdef-xrvisibilitymaskchangeeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

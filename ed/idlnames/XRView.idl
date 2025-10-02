@@ -1,6 +1,7 @@
 // Source: WebXR Device API (https://www.w3.org/TR/webxr/)
 [SecureContext, Exposed=Window] interface XRView {
   readonly attribute XREye eye;
+  readonly attribute unsigned long index;
   readonly attribute double? recommendedViewportScale;
 
   undefined requestViewportScale(double? scale);

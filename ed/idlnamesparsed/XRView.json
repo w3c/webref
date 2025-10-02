@@ -6,7 +6,7 @@
       "title": "WebXR Device API",
       "url": "https://www.w3.org/TR/webxr/"
     },
-    "fragment": "[SecureContext, Exposed=Window] interface XRView {\n  readonly attribute XREye eye;\n  readonly attribute double? recommendedViewportScale;\n\n  undefined requestViewportScale(double? scale);\n};",
+    "fragment": "[SecureContext, Exposed=Window] interface XRView {\n  readonly attribute XREye eye;\n  readonly attribute unsigned long index;\n  readonly attribute double? recommendedViewportScale;\n\n  undefined requestViewportScale(double? scale);\n};",
     "href": "https://immersive-web.github.io/webxr/#xrview"
   },
   "extended": [

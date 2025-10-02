@@ -164,6 +164,13 @@
         },
         {
           "spec": {
+            "title": "CSS View Transitions Module Level 2",
+            "url": "https://www.w3.org/TR/css-view-transitions-2/"
+          },
+          "fragment": "partial interface Element {\n  ViewTransition startViewTransition(\n    optional (ViewTransitionUpdateCallback or StartViewTransitionOptions) callbackOptions = {}\n  );\n  readonly attribute ViewTransition? activeViewTransition;\n};"
+        },
+        {
+          "spec": {
             "title": "CSSOM View Module",
             "url": "https://www.w3.org/TR/cssom-view-1/"
           },

@@ -107,6 +107,14 @@ partial interface Element {
     [SameObject] StylePropertyMapReadOnly computedStyleMap();
 };
 
+// Source: CSS View Transitions Module Level 2 (https://www.w3.org/TR/css-view-transitions-2/)
+partial interface Element {
+  ViewTransition startViewTransition(
+    optional (ViewTransitionUpdateCallback or StartViewTransitionOptions) callbackOptions = {}
+  );
+  readonly attribute ViewTransition? activeViewTransition;
+};
+
 // Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
 partial interface Element {
   DOMRectList getClientRects();

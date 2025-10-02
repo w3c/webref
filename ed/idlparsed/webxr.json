@@ -12,7 +12,8 @@
           "XRSessionEvent",
           "XRInputSourceEvent",
           "XRInputSourcesChangeEvent",
-          "XRReferenceSpaceEvent"
+          "XRReferenceSpaceEvent",
+          "XRVisibilityMaskChangeEvent"
         ]
       },
       "functions": {
@@ -1565,7 +1566,7 @@
         "href": "https://immersive-web.github.io/webxr/#enumdef-xreye"
       },
       "XRView": {
-        "fragment": "[SecureContext, Exposed=Window] interface XRView {\n  readonly attribute XREye eye;\n  readonly attribute double? recommendedViewportScale;\n\n  undefined requestViewportScale(double? scale);\n};",
+        "fragment": "[SecureContext, Exposed=Window] interface XRView {\n  readonly attribute XREye eye;\n  readonly attribute unsigned long index;\n  readonly attribute double? recommendedViewportScale;\n\n  undefined requestViewportScale(double? scale);\n};",
         "type": "interface",
         "name": "XRView",
         "inheritance": null,
@@ -1585,6 +1586,22 @@
             "special": "",
             "readonly": true,
             "href": "https://immersive-web.github.io/webxr/#dom-xrview-eye"
+          },
+          {
+            "type": "attribute",
+            "name": "index",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrview-index"
           },
           {
             "type": "attribute",
@@ -3465,6 +3482,264 @@
         "partial": false,
         "href": "https://immersive-web.github.io/webxr/#dictdef-xrreferencespaceeventinit"
       },
+      "XRVisibilityMaskChangeEvent": {
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRVisibilityMaskChangeEvent : Event {\n  constructor(DOMString type, XRVisibilityMaskChangeEventInit eventInitDict);\n  [SameObject] readonly attribute XRSession session;\n  readonly attribute XREye eye;\n  readonly attribute unsigned long index;\n  [SameObject] readonly attribute Float32Array vertices;\n  [SameObject] readonly attribute Uint32Array indices;\n};",
+        "type": "interface",
+        "name": "XRVisibilityMaskChangeEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "XRVisibilityMaskChangeEventInit"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://immersive-web.github.io/webxr/#dom-xrvisibilitymaskchangeevent-xrvisibilitymaskchangeevent"
+          },
+          {
+            "type": "attribute",
+            "name": "session",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRSession"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrvisibilitymaskchangeevent-session"
+          },
+          {
+            "type": "attribute",
+            "name": "eye",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XREye"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrvisibilitymaskchangeevent-eye"
+          },
+          {
+            "type": "attribute",
+            "name": "index",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrvisibilitymaskchangeevent-index"
+          },
+          {
+            "type": "attribute",
+            "name": "vertices",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Float32Array"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrvisibilitymaskchangeevent-vertices"
+          },
+          {
+            "type": "attribute",
+            "name": "indices",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Uint32Array"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrvisibilitymaskchangeevent-indices"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#xrvisibilitymaskchangeevent"
+      },
+      "XRVisibilityMaskChangeEventInit": {
+        "fragment": "dictionary XRVisibilityMaskChangeEventInit : EventInit {\n  required XRSession session;\n  required XREye eye;\n  required unsigned long index;\n  required Float32Array vertices;\n  required Uint32Array indices;\n};",
+        "type": "dictionary",
+        "name": "XRVisibilityMaskChangeEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "session",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRSession"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrvisibilitymaskchangeeventinit-session"
+          },
+          {
+            "type": "field",
+            "name": "eye",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XREye"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrvisibilitymaskchangeeventinit-eye"
+          },
+          {
+            "type": "field",
+            "name": "index",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrvisibilitymaskchangeeventinit-index"
+          },
+          {
+            "type": "field",
+            "name": "vertices",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Float32Array"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrvisibilitymaskchangeeventinit-vertices"
+          },
+          {
+            "type": "field",
+            "name": "indices",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Uint32Array"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://immersive-web.github.io/webxr/#dom-xrvisibilitymaskchangeeventinit-indices"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://immersive-web.github.io/webxr/#dictdef-xrvisibilitymaskchangeeventinit"
+      },
       "XRSessionSupportedPermissionDescriptor": {
         "fragment": "dictionary XRSessionSupportedPermissionDescriptor: PermissionDescriptor {\n  XRSessionMode mode;\n};",
         "type": "dictionary",
@@ -3767,6 +4042,7 @@
         "XRInputSourceEvent",
         "XRInputSourcesChangeEvent",
         "XRReferenceSpaceEvent",
+        "XRVisibilityMaskChangeEvent",
         "XRPermissionStatus"
       ]
     },
@@ -3910,6 +4186,21 @@
         "XRReferenceSpace",
         "XRRigidTransform"
       ],
+      "XRVisibilityMaskChangeEvent": [
+        "Event",
+        "XRVisibilityMaskChangeEventInit",
+        "XRSession",
+        "XREye",
+        "Float32Array",
+        "Uint32Array"
+      ],
+      "XRVisibilityMaskChangeEventInit": [
+        "EventInit",
+        "XRSession",
+        "XREye",
+        "Float32Array",
+        "Uint32Array"
+      ],
       "XRSessionSupportedPermissionDescriptor": [
         "PermissionDescriptor",
         "XRSessionMode"
@@ -3937,6 +4228,7 @@
       "WebGLRenderingContextBase",
       "Event",
       "EventInit",
+      "Uint32Array",
       "PermissionDescriptor",
       "PermissionStatus"
     ],
