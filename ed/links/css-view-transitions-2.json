@@ -196,6 +196,8 @@
           "concept-class",
           "concept-id",
           "connected",
+          "concept-tree-inclusive-ancestor",
+          "concept-tree-order",
           "concept-document-origin",
           "concept-tree-ancestor",
           "concept-shadow-including-descendant"
@@ -261,17 +263,19 @@
       "https://drafts.csswg.org/css-contain-2/": {
         "anchors": [
           "skips-its-contents",
+          "propdef-contain",
+          "layout-containment",
           "element-contents"
         ]
       },
       "https://drafts.csswg.org/css-display-4/": {
         "anchors": [
           "principal-box",
-          "root-element",
           "containing-block",
           "replaced-element",
           "initial-containing-block",
-          "propdef-visibility"
+          "propdef-visibility",
+          "root-element"
         ]
       },
       "https://drafts.csswg.org/css-images-3/": {
@@ -359,11 +363,6 @@
           "mult-opt"
         ]
       },
-      "https://drafts.csswg.org/css-view-transitions-1/": {
-        "anchors": [
-          "dom-document-startviewtransition"
-        ]
-      },
       "https://drafts.csswg.org/css-viewport/": {
         "anchors": [
           "interactive-widget"
@@ -383,6 +382,7 @@
       "https://drafts.csswg.org/css2/": {
         "anchors": [
           "element",
+          "propdef-z-index",
           "viewport%E2%91%A0"
         ]
       },
@@ -542,8 +542,8 @@
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "rendering-opportunity",
-          "concept-relevant-realm",
           "concept-relevant-global",
+          "concept-relevant-realm",
           "queue-a-global-task",
           "dom-manipulation-task-source",
           "concept-task",
@@ -603,14 +603,14 @@
           "idl-sequence",
           "idl-DOMString",
           "method-steps",
+          "this",
           "invalidstateerror",
           "idl-DOMException",
+          "aborterror",
           "idl-undefined",
           "a-new-promise",
-          "this",
           "mark-a-promise-as-handled",
           "getter-steps",
-          "aborterror",
           "idl-unrestricted-double",
           "resolve",
           "a-promise-resolved-with",
