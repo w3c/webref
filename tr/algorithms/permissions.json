@@ -91,11 +91,11 @@
     {
       "name": "default permission key generation algorithm",
       "href": "https://www.w3.org/TR/permissions/#dfn-default-permission-key-generation-algorithm",
-      "html": "The <dfn class=\"export\" data-export=\"\" id=\"dfn-default-permission-key-generation-algorithm\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">default permission key generation algorithm</dfn>, given an\n               <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\">origin</a> <var>origin</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\">origin</a> <var>top level origin</var>, runs the following steps:",
+      "html": "The <dfn class=\"export\" data-export=\"\" id=\"dfn-default-permission-key-generation-algorithm\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">default permission key generation algorithm</dfn>, given an\n               <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\">origin</a> <var>origin</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\">origin</a> <var>embedded origin</var>, runs the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Return <var>top level origin</var>."
+          "html": "Return <var>origin</var>."
         }
       ]
     },
@@ -164,7 +164,7 @@
           ]
         },
         {
-          "html": "Let <var>key</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"permission key generation algorithm\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-key-generation-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-permission-key-generation-algorithm-3\">generating a permission key</a> for <var data-type=\"PermissionDescriptor\">descriptor</var> with <var>settings</var>'s\n            <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\">origin</a> and <var>settings</var>'s\n            <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\">top-level origin</a>."
+          "html": "Let <var>key</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"permission key generation algorithm\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-key-generation-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-permission-key-generation-algorithm-3\">generating a permission key</a> for <var data-type=\"PermissionDescriptor\">descriptor</var> with <var>settings</var>'s\n            <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\">top-level origin</a> and <var>settings</var>'s\n            <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\">origin</a>."
         },
         {
           "html": "Let <var>entry</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"get a permission store entry\" href=\"https://www.w3.org/TR/permissions/#dfn-get-a-permission-store-entry\" class=\"internalDFN\" id=\"ref-for-dfn-get-a-permission-store-entry-1\">getting a permission store entry</a> with <var data-type=\"PermissionDescriptor\">descriptor</var> and <var>key</var>."
@@ -199,7 +199,7 @@
           "html": "Let <var>settings</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\">current settings object</a>."
         },
         {
-          "html": "Let <var>key</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"permission key generation algorithm\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-key-generation-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-permission-key-generation-algorithm-4\">generating a permission key</a> for <var data-type=\"PermissionDescriptor\">descriptor</var> with <var>settings</var>'s\n            <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\">origin</a> and <var>settings</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\">top-level origin</a>."
+          "html": "Let <var>key</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"permission key generation algorithm\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-key-generation-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-permission-key-generation-algorithm-4\">generating a permission key</a> for <var data-type=\"PermissionDescriptor\">descriptor</var> with <var>settings</var>'s\n            <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\">top-level origin</a> and <var>settings</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\">origin</a>."
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\">current settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#responsible-event-loop\">responsible event loop</a> to <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/permissions/#dfn-set-a-permission-store-entry\" class=\"internalDFN\" id=\"ref-for-dfn-set-a-permission-store-entry-1\">set a permission store entry</a> with <var data-type=\"PermissionDescriptor\">descriptor</var>,\n            <var>key</var>, and <var>current state</var>."
@@ -370,7 +370,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>target key</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"permission key generation algorithm\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-key-generation-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-permission-key-generation-algorithm-5\">generating a permission key</a> for <var data-type=\"PermissionDescriptor\">descriptor</var> with <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\">current settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\">origin</a> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\">current settings object</a>'s\n          <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\">top-level origin</a> if <var>key</var> is null, or <var>key</var> otherwise."
+          "html": "Let <var>target key</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"permission key generation algorithm\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-key-generation-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-permission-key-generation-algorithm-5\">generating a permission key</a> for <var data-type=\"PermissionDescriptor\">descriptor</var> with <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\">current settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\">top-level origin</a> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object\">current settings object</a>'s\n          <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\">origin</a> if <var>key</var> is null, or <var>key</var> otherwise."
         },
         {
           "html": "Let <var>settings list</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a> containing all <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\">environment settings objects</a>\n          which belong to the <var>user agent</var> if provided, or all user agents otherwise."
@@ -383,7 +383,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>settings key</var> be be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"permission key generation algorithm\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-key-generation-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-permission-key-generation-algorithm-6\">generating a permission key</a> for <var data-type=\"PermissionDescriptor\">descriptor</var> with <var>settings</var>'s\n              <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\">origin</a> and <var>settings</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\">top-level origin</a>."
+              "html": "Let <var>settings key</var> be be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"permission key generation algorithm\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-key-generation-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-permission-key-generation-algorithm-6\">generating a permission key</a> for <var data-type=\"PermissionDescriptor\">descriptor</var> with <var>settings</var>'s\n              <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\">top-level origin</a> and <var>settings</var>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\">origin</a>."
             },
             {
               "html": "Let <var>matches</var> be the result of running the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-key-comparison-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-permission-key-comparison-algorithm-3\">permission key comparison algorithm</a> for <var data-type=\"PermissionDescriptor\">descriptor</var>, given <var>settings key</var> and <var>key</var>."
@@ -470,10 +470,10 @@
           "html": "Let <var>origin</var> be the value of the <code>origin</code> field of <var>command parameters</var>."
         },
         {
-          "html": "Let <var>top level origin</var> be the value of the <code>topLevelOrigin</code> field of\n                  <var>command parameters</var>, if present, and <var>origin</var> otherwise."
+          "html": "Let <var>embedded origin</var> be the value of the <code>embeddedOrigin</code> field of\n                  <var>command parameters</var>, if present, and <var>origin</var> otherwise."
         },
         {
-          "html": "Let <var>key</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"permission key generation algorithm\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-key-generation-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-permission-key-generation-algorithm-7\">generating a permission key</a> for <var>descriptor</var> with <var>origin</var> and\n                  <var>top level origin</var>."
+          "html": "Let <var>key</var> be the result of <a data-link-type=\"dfn|abstract-op\" data-lt=\"permission key generation algorithm\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-key-generation-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-permission-key-generation-algorithm-7\">generating a permission key</a> for <var>descriptor</var> with <var>origin</var> and\n                  <var>embedded origin</var>."
         },
         {
           "html": "Let <var>user agent</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\">user agent</a> that represents the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#user-context\">user context</a>\n                  with the id <var>user context id</var>."
