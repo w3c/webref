@@ -17,21 +17,22 @@
       "https://tc39.es/ecma262/multipage/": {},
       "https://tc39.es/proposal-source-phase-imports/": {},
       "https://webassembly.github.io/spec/core/": {},
-      "https://webassembly.github.io/spec/js-api/": {},
+      "https://webassembly.github.io/spec/web-api/": {},
       "https://webassembly.github.io/spec/web-api/index.html": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.w3.org/2004/01/pp-impl/101196/status": {},
-      "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/wasm-core/": {},
+      "https://www.w3.org/TR/wasm-js-api/": {},
+      "https://www.w3.org/TR/wasm-web-api/": {},
+      "https://www.w3.org/groups/wg/wasm": {},
+      "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
         ]
       },
-      "https://www.w3.org/TR/wasm-core/": {},
-      "https://www.w3.org/TR/wasm-js-api/": {},
-      "https://www.w3.org/TR/wasm-web-api/": {},
-      "https://www.w3.org/groups/wg/wasm": {},
-      "https://www.w3.org/policies/process/20231103/": {}
+      "https://www.w3.org/policies/process/20250818/": {}
     },
     "autolinks": {
       "https://encoding.spec.whatwg.org/": {
@@ -41,6 +42,9 @@
       },
       "https://heycam.github.io/webidl/": {
         "anchors": [
+          "EnforceRange",
+          "idl-unsigned-long",
+          "js-unsigned-long",
           "create-a-namespace-object"
         ]
       },
@@ -65,23 +69,24 @@
         "anchors": [
           "list",
           "ordered-map",
-          "list-is-empty",
           "list-iterate",
-          "list-append",
-          "map-exists",
+          "iteration-continue",
+          "list-is-empty",
           "map-set",
+          "map-exists",
+          "list-append",
           "map-iterate",
           "list-size",
+          "string-length",
           "byte-sequence",
-          "iteration-continue",
           "set-append"
         ]
       },
       "https://tc39.es/ecma262/multipage/abstract-operations.html": {
         "anchors": [
+          "sec-createdataproperty",
           "sec-get-o-p",
           "sec-iscallable",
-          "sec-createdataproperty",
           "sec-setintegritylevel",
           "sec-tostring",
           "sec-createarrayfromlist",
@@ -91,7 +96,8 @@
           "sec-getiteratorfrommethod",
           "sec-tobigint64",
           "sec-toint32",
-          "sec-tonumber"
+          "sec-tonumber",
+          "sec-tobigint"
         ]
       },
       "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
@@ -127,12 +133,12 @@
       },
       "https://tc39.github.io/ecma262/": {
         "anchors": [
-          "sec-native-error-types-used-in-this-standard-typeerror",
           "sec-returnifabrupt-shorthands",
-          "sec-object-type",
-          "sec-ecmascript-language-types-number-type",
-          "sec-ecmascript-language-types-bigint-type",
           "sec-ordinaryobjectcreate",
+          "sec-native-error-types-used-in-this-standard-typeerror",
+          "sec-object-type",
+          "sec-ecmascript-language-types-bigint-type",
+          "sec-ecmascript-language-types-number-type",
           "sec-module-namespace-exotic-objects",
           "sec-arraybuffer-objects",
           "sec-native-error-types-used-in-this-standard-rangeerror",
@@ -140,8 +146,21 @@
           "sec-built-in-function-objects",
           "current-realm",
           "%E2%84%A4",
+          "mathematical-value",
           "%F0%9D%94%BD",
+          "%E2%84%9D",
+          "sec-makebasicobject",
           "sec-nativeerror-object-structure",
+          "sec-string-object",
+          "sec-ecmascript-language-types-string-type",
+          "sec-string.fromcharcode",
+          "sec-string.prototype.charcodeat",
+          "sec-string.fromcodepoint",
+          "sec-string.prototype.codepointat",
+          "sec-string.prototype.concat",
+          "sec-string.prototype.substring",
+          "sec-isstrictlyequal",
+          "sec-islessthan",
           "cyclic-module-record",
           "sec-newmoduleenvironment",
           "sec-GetImportedModule",
@@ -167,6 +186,7 @@
           "embed-error",
           "embed-module-validate",
           "embed-module-imports",
+          "embed-match-externtype",
           "embed-global-alloc",
           "embed-module-exports",
           "embed-instance-export",
@@ -181,12 +201,19 @@
           "embed-table-grow",
           "embed-table-read",
           "embed-table-write",
+          "embed-val-default",
           "embed-global-type",
           "embed-global-read",
           "embed-global-write",
           "embed-func-type",
           "embed-func-invoke",
-          "embed-func-alloc"
+          "embed-exn-tag",
+          "embed-exn-read",
+          "embed-exn-alloc",
+          "embed-func-alloc",
+          "embed-match-valtype",
+          "embed-ref-type",
+          "embed-tag-type"
         ]
       },
       "https://webassembly.github.io/spec/core/binary/modules.html": {
@@ -203,7 +230,8 @@
       },
       "https://webassembly.github.io/spec/core/exec/instructions.html": {
         "anchors": [
-          "exec-memory-grow"
+          "exec-memory-grow",
+          "exec-throw-ref"
         ]
       },
       "https://webassembly.github.io/spec/core/exec/numerics.html": {
@@ -219,8 +247,12 @@
           "syntax-memaddr",
           "syntax-tableaddr",
           "syntax-funcaddr",
+          "syntax-structaddr",
+          "syntax-arrayaddr",
           "syntax-globaladdr",
-          "syntax-externaddr",
+          "syntax-tagaddr",
+          "syntax-exnaddr",
+          "syntax-hostaddr",
           "syntax-externval",
           "values",
           "syntax-frame",
@@ -228,7 +260,8 @@
           "page-size",
           "table-instances",
           "global-instances",
-          "syntax-hostfunc"
+          "syntax-hostfunc",
+          "syntax-trap"
         ]
       },
       "https://webassembly.github.io/spec/core/intro/introduction.html": {
@@ -253,15 +286,25 @@
           "syntax-numtype",
           "vector-types",
           "syntax-mut",
+          "syntax-tagtype",
           "syntax-memtype",
+          "syntax-addrtype",
+          "syntax-tabletype",
           "syntax-limits",
           "syntax-reftype",
-          "syntax-tabletype"
+          "heap-types"
         ]
       },
       "https://webassembly.github.io/spec/core/syntax/values.html": {
         "anchors": [
-          "syntax-float"
+          "syntax-float",
+          "syntax-int"
+        ]
+      },
+      "https://webassembly.github.io/spec/core/valid/matching.html": {
+        "anchors": [
+          "match-reftype",
+          "match-valtype"
         ]
       },
       "https://webassembly.github.io/spec/core/valid/modules.html": {
@@ -273,12 +316,13 @@
         "anchors": [
           "valid-memtype",
           "valid-tabletype",
-          "valid-limits",
           "match-externtype"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
+          "idl-USVString",
+          "idl-sequence",
           "idl-boolean",
           "BufferSource",
           "idl-promise",
@@ -292,15 +336,15 @@
           "upon-fulfillment",
           "upon-rejection",
           "dfn-throw",
-          "idl-USVString",
-          "LegacyNamespace",
-          "idl-sequence",
-          "idl-DOMString",
-          "EnforceRange",
-          "idl-unsigned-long",
           "idl-any",
+          "LegacyNamespace",
+          "idl-DOMString",
           "idl-undefined",
           "dfn-associated-realm",
+          "abstract-opdef-converttoint",
+          "Exposed",
+          "EnforceRange",
+          "idl-unsigned-long",
           "dfn-namespace-object"
         ]
       }
