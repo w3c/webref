@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-10-05T06:45:26.139Z",
+  "date": "2025-10-05T12:51:44.642Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -32,7 +32,7 @@
   },
   "stats": {
     "crawled": 714,
-    "errors": 2
+    "errors": 3
   },
   "crawler": "reffy-19.2.3",
   "results": [
@@ -14670,9 +14670,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 30 Sep 2025 22:05:44 GMT"
+        "lastModified": "Thu, 02 Oct 2025 05:25:17 GMT"
       },
-      "date": "30 September 2025",
+      "date": "2 October 2025",
       "links": "links/rfc2397.json",
       "headings": "headings/rfc2397.json",
       "ids": "ids/rfc2397.json",
@@ -16155,9 +16155,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 01 Oct 2025 00:47:02 GMT"
+        "lastModified": "Sun, 05 Oct 2025 11:08:53 GMT"
       },
-      "date": "1 October 2025",
+      "date": "5 October 2025",
       "algorithms": "algorithms/rfc9163.json",
       "links": "links/rfc9163.json",
       "refs": "refs/rfc9163.json",
@@ -24866,7 +24866,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transitions-2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 03 Oct 2025 17:47:42 GMT"
+        "lastModified": "Fri, 03 Oct 2025 17:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "12 September 2025",
@@ -25352,7 +25352,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-variables-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 03 Oct 2025 17:47:42 GMT"
+        "lastModified": "Fri, 03 Oct 2025 17:47:43 GMT"
       },
       "generator": "bikeshed",
       "date": "5 May 2025",
@@ -30104,7 +30104,8 @@
       "dfns": "dfns/mathml4.json",
       "headings": "headings/mathml4.json",
       "ids": "ids/mathml4.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://w3c.github.io/mathml/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 514)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/media-capabilities/",
