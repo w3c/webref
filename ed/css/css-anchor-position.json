@@ -168,52 +168,6 @@
       ]
     },
     {
-      "name": "position-visibility",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-visibility",
-      "value": "always | [ anchors-valid || anchors-visible || no-overflow ]",
-      "initial": "anchors-visible",
-      "appliesTo": "absolutely positioned boxes",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "discrete",
-      "values": [
-        {
-          "name": "always",
-          "prose": "This property has no effect. (The box is displayed without regard for its anchors or its overflowing status.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-always",
-          "type": "value",
-          "value": "always"
-        },
-        {
-          "name": "anchors-valid",
-          "prose": "If any of the box’s required anchor references do not resolve to a target anchor element, the box’s visibility property computes to force-hidden. What is a required anchor reference? anchor() functions that don’t have a fallback value; the default anchor *sometimes*? Need more detail here. Any anchors are missing, or all anchors are missing? I can see use-cases for either, potentially. Do we want to make a decision here, or make it controllable somehow?",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchors-valid",
-          "type": "value",
-          "value": "anchors-valid"
-        },
-        {
-          "name": "anchors-visible",
-          "prose": "If the box has a default anchor box but that anchor box is invisible or clipped by intervening boxes, the box’s visibility property computes to force-hidden.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchors-visible",
-          "type": "value",
-          "value": "anchors-visible"
-        },
-        {
-          "name": "no-overflow",
-          "prose": "If the box overflows its inset-modified containing block even after applying position-try, the box’s visibility property computes to force-hidden.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-no-overflow",
-          "type": "value",
-          "value": "no-overflow"
-        }
-      ],
-      "styleDeclaration": [
-        "position-visibility",
-        "positionVisibility"
-      ]
-    },
-    {
       "name": "justify-self",
       "newValues": "anchor-center | dialog",
       "values": [
@@ -390,7 +344,7 @@
     {
       "name": "position-try-fallbacks",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-try-fallbacks",
-      "value": "none | [ [<dashed-ident> || <try-tactic>] | <'position-area'> ]#",
+      "value": "none | [ [<dashed-ident> || <try-tactic>] | <position-area> ]#",
       "initial": "none",
       "appliesTo": "absolutely positioned boxes",
       "inherited": "no",
@@ -454,11 +408,11 @@
           "value": "<dashed-ident> || <try-tactic>"
         },
         {
-          "name": "<'position-area'>",
+          "name": "<position-area>",
           "prose": "Automatically creates a position option composed solely of a position-area property with the given value.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-position-area",
           "type": "value",
-          "value": "<'position-area'>"
+          "value": "<position-area>"
         }
       ],
       "styleDeclaration": [
@@ -534,6 +488,52 @@
         "position-try",
         "positionTry"
       ]
+    },
+    {
+      "name": "position-visibility",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-visibility",
+      "value": "always | [ anchors-valid || anchors-visible || no-overflow ]",
+      "initial": "anchors-visible",
+      "appliesTo": "absolutely positioned boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "always",
+          "prose": "This property has no effect. (The box is displayed without regard for its anchors or its overflowing status.)",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-always",
+          "type": "value",
+          "value": "always"
+        },
+        {
+          "name": "anchors-valid",
+          "prose": "If any of the box’s required anchor references do not resolve to a target anchor element, the box’s visibility property computes to force-hidden. What is a required anchor reference? anchor() functions that don’t have a fallback value; the default anchor *sometimes*? Need more detail here. Any anchors are missing, or all anchors are missing? I can see use-cases for either, potentially. Do we want to make a decision here, or make it controllable somehow?",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchors-valid",
+          "type": "value",
+          "value": "anchors-valid"
+        },
+        {
+          "name": "anchors-visible",
+          "prose": "If the box has a default anchor box but that anchor box is invisible or clipped by intervening boxes, the box’s visibility property computes to force-hidden.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchors-visible",
+          "type": "value",
+          "value": "anchors-visible"
+        },
+        {
+          "name": "no-overflow",
+          "prose": "If the box overflows its inset-modified containing block even after applying position-try, the box’s visibility property computes to force-hidden.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-no-overflow",
+          "type": "value",
+          "value": "no-overflow"
+        }
+      ],
+      "styleDeclaration": [
+        "position-visibility",
+        "positionVisibility"
+      ]
     }
   ],
   "atrules": [
@@ -551,179 +551,179 @@
       "name": "<position-area>",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-position-area",
       "type": "type",
-      "value": "[ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | x-self-start | x-self-end | span-x-self-start | span-x-self-end | span-all ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | y-self-start | y-self-end | span-y-self-start | span-y-self-end | span-all ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all ] | [ self-block-start | center | self-block-end | span-self-block-start | span-self-block-end | span-all ] || [ self-inline-start | center | self-inline-end | span-self-inline-start | span-self-inline-end | span-all ] | [ start | center | end | span-start | span-end | span-all ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all ]{1,2} ]",
+      "value": "[ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | self-x-start | self-x-end | span-self-x-start | span-self-x-end | span-all ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | self-y-start | self-y-end | span-self-y-start | span-self-y-end | span-all ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all ] | [ self-block-start | center | self-block-end | span-self-block-start | span-self-block-end | span-all ] || [ self-inline-start | center | self-inline-end | span-self-inline-start | span-self-inline-end | span-all ] | [ start | center | end | span-start | span-end | span-all ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all ]{1,2} ]",
       "values": [
         {
           "name": "start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-start",
           "type": "value",
           "value": "start"
         },
         {
           "name": "end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-end",
           "type": "value",
           "value": "end"
         },
         {
           "name": "self-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-self-start",
           "type": "value",
           "value": "self-start"
         },
         {
           "name": "self-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-self-end",
           "type": "value",
           "value": "self-end"
         },
         {
           "name": "top",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-top",
           "type": "value",
           "value": "top"
         },
         {
           "name": "bottom",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-bottom",
           "type": "value",
           "value": "bottom"
         },
         {
           "name": "left",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-left",
           "type": "value",
           "value": "left"
         },
         {
           "name": "right",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-right",
           "type": "value",
           "value": "right"
         },
         {
           "name": "y-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-y-start",
           "type": "value",
           "value": "y-start"
         },
         {
           "name": "y-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-y-end",
           "type": "value",
           "value": "y-end"
         },
         {
-          "name": "y-self-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-y-self-start",
+          "name": "self-x-start",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-self-x-start",
           "type": "value",
-          "value": "y-self-start"
+          "value": "self-x-start"
         },
         {
-          "name": "y-self-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-y-self-end",
+          "name": "self-y-end",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-self-y-end",
           "type": "value",
-          "value": "y-self-end"
+          "value": "self-y-end"
         },
         {
           "name": "x-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-x-start",
           "type": "value",
           "value": "x-start"
         },
         {
           "name": "x-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-x-end",
           "type": "value",
           "value": "x-end"
         },
         {
-          "name": "x-self-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-x-self-start",
+          "name": "self-x-start",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-self-x-start%E2%91%A0",
           "type": "value",
-          "value": "x-self-start"
+          "value": "self-x-start"
         },
         {
-          "name": "x-self-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-x-self-end",
+          "name": "self-x-end",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-self-x-end",
           "type": "value",
-          "value": "x-self-end"
+          "value": "self-x-end"
         },
         {
           "name": "block-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-block-start",
           "type": "value",
           "value": "block-start"
         },
         {
           "name": "block-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-block-end",
           "type": "value",
           "value": "block-end"
         },
         {
           "name": "self-block-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-self-block-start",
           "type": "value",
           "value": "self-block-start"
         },
         {
           "name": "self-block-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-self-block-end",
           "type": "value",
           "value": "self-block-end"
         },
         {
           "name": "inline-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-inline-start",
           "type": "value",
           "value": "inline-start"
         },
         {
           "name": "inline-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-inline-end",
           "type": "value",
           "value": "inline-end"
         },
         {
           "name": "self-inline-start",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-self-inline-start",
           "type": "value",
           "value": "self-inline-start"
         },
         {
           "name": "self-inline-end",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-self-inline-end",
           "type": "value",
           "value": "self-inline-end"
         },
         {
           "name": "center",
-          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, x-self-end, etc) are identical, but refer to the box’s own writing mode.",
+          "prose": "The single corresponding row or column, depending on which axis this keyword is specifying. Like in anchor(), the plain logical keywords (start, end, etc) refer to the writing mode of the box’s containing block. The x-start/etc determine their direction in the same way, but in the specified physical axis. The self-* logical keywords (self-start, self-x-end, etc) are identical, but refer to the box’s own writing mode.",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-center",
           "type": "value",
           "value": "center"
@@ -799,18 +799,18 @@
           "value": "span-y-end"
         },
         {
-          "name": "span-y-self-start",
+          "name": "span-self-y-start",
           "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-span-y-self-start",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-span-self-y-start",
           "type": "value",
-          "value": "span-y-self-start"
+          "value": "span-self-y-start"
         },
         {
-          "name": "span-y-self-end",
+          "name": "span-self-y-end",
           "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-span-y-self-end",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-span-self-y-end",
           "type": "value",
-          "value": "span-y-self-end"
+          "value": "span-self-y-end"
         },
         {
           "name": "span-x-start",
@@ -827,18 +827,18 @@
           "value": "span-x-end"
         },
         {
-          "name": "span-x-self-start",
+          "name": "span-self-x-start",
           "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-span-x-self-start",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-span-self-x-start",
           "type": "value",
-          "value": "span-x-self-start"
+          "value": "span-self-x-start"
         },
         {
-          "name": "span-x-self-end",
+          "name": "span-self-x-end",
           "prose": "Two adjacent rows or columns, depending on which axis this keyword is specifying: the center row/column, and the row/column corresponding to the other half of the keyword as per the single-track keywords. (For example, span-top spans the first two rows—​the center row and the top row.)",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-span-x-self-end",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-area-span-self-x-end",
           "type": "value",
-          "value": "span-x-self-end"
+          "value": "span-self-x-end"
         },
         {
           "name": "span-block-start",
