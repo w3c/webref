@@ -5867,15 +5867,24 @@
         "target": "VisualViewport"
       },
       {
-        "target": "Document",
-        "bubbles": false
-      },
-      {
         "target": "Element",
         "bubbles": false
       }
     ],
     "interface": "Event"
+  },
+  {
+    "type": "scroll",
+    "interface": "Event",
+    "targets": [
+      {
+        "target": "Document",
+        "bubbles": true,
+        "bubblingPath": [
+          "Window"
+        ]
+      }
+    ]
   },
   {
     "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend",
@@ -5889,15 +5898,24 @@
         "target": "VisualViewport"
       },
       {
-        "target": "Document",
-        "bubbles": false
-      },
-      {
         "target": "Element",
         "bubbles": false
       }
     ],
     "interface": "Event"
+  },
+  {
+    "type": "scrollend",
+    "interface": "Event",
+    "targets": [
+      {
+        "target": "Document",
+        "bubbles": true,
+        "bubblingPath": [
+          "Window"
+        ]
+      }
+    ]
   },
   {
     "src": {

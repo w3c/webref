@@ -37,11 +37,11 @@
       },
       "type": "scroll",
       "targets": [
-        "Document",
-        "Element",
-        "VisualViewport"
+        "VisualViewport",
+        "Element"
       ],
-      "interface": "Event"
+      "interface": "Event",
+      "bubbles": false
     },
     {
       "href": "https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend",
@@ -51,11 +51,27 @@
       },
       "type": "scrollend",
       "targets": [
-        "Document",
-        "Element",
-        "VisualViewport"
+        "VisualViewport",
+        "Element"
       ],
-      "interface": "Event"
+      "interface": "Event",
+      "bubbles": false
+    },
+    {
+      "type": "scroll",
+      "interface": "Event",
+      "bubbles": true,
+      "targets": [
+        "Document"
+      ]
+    },
+    {
+      "type": "scrollend",
+      "interface": "Event",
+      "bubbles": true,
+      "targets": [
+        "Document"
+      ]
     }
   ]
 }
