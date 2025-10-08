@@ -1,0 +1,709 @@
+{
+  "spec": {
+    "title": "Cookies: HTTP State Management Mechanism",
+    "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html"
+  },
+  "algorithms": [
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.2.1-1.1.1\">Let <em>expiredCookies</em> be a list of references to all expired cookies in the user agent's cookie store.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.1-1.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "For each <em>cookie</em> of <em>expiredCookies</em>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.1-1.2.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.2.1-1.2.2.1.1\">Remove <em>cookie</em> from the user agent's cookie store.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.1-1.2.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.2.1-1.3.1\">Return <em>expiredCookies</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.1-1.3.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "To <strong>Remove Excess Cookies for a Host</strong> given a host <em>host</em>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.2.2-2.1.1\">Let <em>insecureCookies</em> be a list of references to all cookies in the user agent's cookie store whose host is host-equal\nto <em>host</em> and whose secure is false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.2.2-2.2.1\">Sort <em>insecureCookies</em> by earliest last-access-time first.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.2.2-2.3.1\">Let <em>secureCookies</em> be a list of references to all cookies in the user agent's cookie store whose host is host-equal\nto <em>host</em> and whose secure is true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.2.2-2.4.1\">Sort <em>secureCookies</em> by earliest last-access-time first.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.2.2-2.5.1\">Let <em>excessHostCookies</em> be an empty list of cookies.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.5.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "While <em>insecureCookies</em>'s size + <em>secureCookies</em>'s size is greater than the user agent's total cookies-per-host limit:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.6.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <em>insecureCookies</em> is not empty:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.6.2.1.1\" class=\"pilcrow\">¶</a>",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.2.2-2.6.2.1.2.1.1\">Let <em>cookie</em> be the first item of <em>insecureCookies</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.6.2.1.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.2.2-2.6.2.1.2.2.1\">Remove <em>cookie</em> from <em>insecureCookies</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.6.2.1.2.2.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.2.2-2.6.2.1.2.3.1\">Remove <em>cookie</em> from the user agent's cookie store.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.6.2.1.2.3.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.2.2-2.6.2.1.2.4.1\">Append <em>cookie</em> to <em>excessHostCookies</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.6.2.1.2.4.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.6.2.2.1\" class=\"pilcrow\">¶</a>",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.2.2-2.6.2.2.2.1.1\">Let <em>cookie</em> be the first item of <em>secureCookies</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.6.2.2.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.2.2-2.6.2.2.2.2.1\">Remove <em>cookie</em> from <em>secureCookies</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.6.2.2.2.2.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.2.2-2.6.2.2.2.3.1\">Remove <em>cookie</em> from the user agent's cookie store.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.6.2.2.2.3.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.2.2-2.6.2.2.2.4.1\">Append <em>cookie</em> to <em>excessHostCookies</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.6.2.2.2.4.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.2.2-2.7.1\">Return <em>excessHostCookies</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2-2.7.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "To <strong>Remove Global Excess Cookies</strong>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.3-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.2.3-2.1.1\">Let <em>allCookies</em> be the result of sorting the user agent's cookie store by earliest last-access-time first.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.3-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.2.3-2.2.1\">Let <em>excessGlobalCookies</em> be an empty list of cookies.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.3-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "While <em>allCookies</em>'s size is greater than the user agent's total cookies limit:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.3-2.3.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.2.3-2.3.2.1.1\">Let <em>cookie</em> be the first item of <em>allCookies</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.3-2.3.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.2.3-2.3.2.2.1\">Remove <em>cookie</em> from <em>allCookies</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.3-2.3.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.2.3-2.3.2.3.1\">Remove <em>cookie</em> from the user agent's cookie store.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.3-2.3.2.3.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.2.3-2.3.2.4.1\">Append <em>cookie</em> to <em>excessGlobalCookies</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.3-2.3.2.4.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.2.3-2.4.1\">Return <em>excessGlobalCookies</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.3-2.4.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "Note that the various boolean flags defined as a part\nof the algorithm (i.e., found-time, found-day-of-month, found-month,\nfound-year) are initially \"not set\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-2\" class=\"pilcrow\">¶</a>",
+      "rationale": "process",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.3.1-3.1.1\">Using the grammar below, divide the cookie-date into date-tokens.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.1.1\" class=\"pilcrow\">¶</a></p>\n<div class=\"lang-abnf sourcecode\" id=\"section-5.3.1-3.1.2\">\n<pre>cookie-date     = *delimiter date-token-list *delimiter\ndate-token-list = date-token *( 1*delimiter date-token )\ndate-token      = 1*non-delimiter\n\ndelimiter       = %x09 / %x20-2F / %x3B-40 / %x5B-60 / %x7B-7E\nnon-delimiter   = %x00-08 / %x0A-1F / DIGIT / \":\" / ALPHA\n                  / %x7F-FF\nnon-digit       = %x00-2F / %x3A-FF\n\nday-of-month    = 1*2DIGIT [ non-digit *OCTET ]\nmonth           = ( \"jan\" / \"feb\" / \"mar\" / \"apr\" /\n                    \"may\" / \"jun\" / \"jul\" / \"aug\" /\n                    \"sep\" / \"oct\" / \"nov\" / \"dec\" ) *OCTET\nyear            = 2*4DIGIT [ non-digit *OCTET ]\ntime            = hms-time [ non-digit *OCTET ]\nhms-time        = time-field \":\" time-field \":\" time-field\ntime-field      = 1*2DIGIT\n</pre><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.1.2\" class=\"pilcrow\">¶</a>\n</div>"
+        },
+        {
+          "html": "Process each date-token sequentially in the order the date-tokens\nappear in the cookie-date:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.2.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.3.1-3.2.2.1.1\">If the found-time flag is not set and the token matches the\n time production, set the found-time flag and set the hour-value,\n minute-value, and second-value to the numbers denoted by the digits\n in the date-token, respectively. Skip the remaining sub-steps and\n continue to the next date-token.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.2.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.3.1-3.2.2.2.1\">If the found-day-of-month flag is not set and the date-token matches\n the day-of-month production, set the found-day-of-month flag and set\n the day-of-month-value to the number denoted by the date-token. Skip\n the remaining sub-steps and continue to the next date-token.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.2.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.3.1-3.2.2.3.1\">If the found-month flag is not set and the date-token matches the\n month production, set the found-month flag and set the month-value\n to the month denoted by the date-token. Skip the remaining sub-steps\n and continue to the next date-token.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.2.2.3.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.3.1-3.2.2.4.1\">If the found-year flag is not set and the date-token matches the\n year production, set the found-year flag and set the year-value to\n the number denoted by the date-token. Skip the remaining sub-steps\n and continue to the next date-token.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.2.2.4.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.3.1-3.3.1\">If the year-value is greater than or equal to 70 and less than or equal to\n99, increment the year-value by 1900.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.3.1-3.4.1\">If the year-value is greater than or equal to 0 and less than or equal to\n69, increment the year-value by 2000.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.4.1\" class=\"pilcrow\">¶</a></p>",
+          "ignored": [
+            "NOTE: Some existing user agents interpret two-digit years differently.¶"
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.3.1-3.5.1\">If one of the following is true:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.5.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.3.1-3.5.2.1\">\n                  <p id=\"section-5.3.1-3.5.2.1.1\">at least one of the found-day-of-month, found-month, found-year, or\nfound-time flags is not set,<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.5.2.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.3.1-3.5.2.2\">\n                  <p id=\"section-5.3.1-3.5.2.2.1\">the day-of-month-value is less than 1 or greater than 31,<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.5.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.3.1-3.5.2.3\">\n                  <p id=\"section-5.3.1-3.5.2.3.1\">the year-value is less than 1601,<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.5.2.3.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.3.1-3.5.2.4\">\n                  <p id=\"section-5.3.1-3.5.2.4.1\">the hour-value is greater than 23,<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.5.2.4.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.3.1-3.5.2.5\">\n                  <p id=\"section-5.3.1-3.5.2.5.1\">the minute-value is greater than 59, or<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.5.2.5.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.3.1-3.5.2.6\">\n                  <p id=\"section-5.3.1-3.5.2.6.1\">the second-value is greater than 59,<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.5.2.6.1\" class=\"pilcrow\">¶</a></p>\n</li>\n              </ul>\n<p id=\"section-5.3.1-3.5.3\">\nthen return failure.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.5.3\" class=\"pilcrow\">¶</a></p>\n<p id=\"section-5.3.1-3.5.4\">\n(Note that leap seconds cannot be represented in this syntax.)<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.5.4\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.3.1-3.6.1\">Let the parsed-cookie-date be the date whose day-of-month, month,\nyear, hour, minute, and second (in UTC) are the\nday-of-month-value, the month-value, the year-value, the hour-value,\nthe minute-value, and the second-value, respectively. If no such date\nexists, abort these steps and fail to parse the cookie-date.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.6.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.3.1-3.7.1\">Return the parsed-cookie-date as the result of this algorithm.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1-3.7.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "To determine the <strong>Cookie Default Path</strong>, given a URL path <em>path</em>, run these steps.\nThey return a URL path.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.3-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.3.3-2.1.1\">Assert: <em>path</em> is a non-empty list.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.3-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.3.3-2.2.1\">If <em>path</em>'s size is greater than 1, then remove <em>path</em>'s last item.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.3-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.3.3-2.3.1\">Otherwise, set <em>path</em>[0] to the empty string.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.3-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.3.3-2.4.1\">Return <em>path</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.3-2.4.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "To determine if a URL path <em>requestPath</em> <strong>Path-Matches</strong> a URL path <em>cookiePath</em>, run these steps.\nThey return a boolean.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.4-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.3.4-2.1.1\">Let <em>serializedRequestPath</em> be the result of URL path serializing <em>requestPath</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.4-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.3.4-2.2.1\">Let <em>serializedCookiePath</em> be the result of URL path serializing <em>cookiePath</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.4-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.3.4-2.3.1\">If <em>serializedCookiePath</em> is <em>serializedRequestPath</em>, then return true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.4-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.3.4-2.4.1\">If <em>serializedRequestPath</em> starts with <em>serializedCookiePath</em> and <em>serializedCookiePath</em> ends\nwith a U+002F (/), then return true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.4-2.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.3.4-2.5.1\">Return whether the concatenation of <em>serializedRequestPath</em> followed by U+002F (/) starts with <em>serializedCookiePath</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.4-2.5.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "To <strong>Parse and Store a Cookie</strong> given a byte sequence <em>input</em>, boolean <em>isSecure</em>, domain or IP address <em>host</em>,\nURL path <em>path</em>, boolean <em>httpOnlyAllowed</em>, boolean <em>allowNonHostOnlyCookieForPublicSuffix</em>, and boolean <em>sameSiteStrictOrLaxAllowed</em>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.1-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.4.1-2.1.1\">Let <em>cookie</em> be the result of running Parse a Cookie with <em>input</em>, <em>isSecure</em>, <em>host</em>, and <em>path</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.1-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.1-2.2.1\">If <em>cookie</em> is failure, then return.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.1-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.1-2.3.1\">Return the result of Store a Cookie given <em>cookie</em>, <em>isSecure</em>, <em>host</em>, <em>path</em>, <em>httpOnlyAllowed</em>,\n<em>allowNonHostOnlyCookieForPublicSuffix</em>, and <em>sameSiteStrictOrLaxAllowed</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.1-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "To <strong>Parse a Cookie</strong> given a byte sequence <em>input</em>, boolean <em>isSecure</em>, host <em>host</em>,\nURL path <em>path</em>, run these steps. They return a new cookie or failure:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.4.2-2.1.1\">If <em>input</em> contains a byte in the range 0x00 to 0x08, inclusive,\nthe range 0x0A to 0x1F inclusive, or 0x7F (CTL bytes excluding HTAB),\nthen return failure.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.2-2.2.1\">Let <em>nameValueInput</em> be null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.2-2.3.1\">Let <em>attributesInput</em> be the empty byte sequence.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.2-2.4.1\">If <em>input</em> contains 0x3B (;), then set <em>nameValueInput</em> to the bytes up to, but not including,\nthe first 0x3B (;), and <em>attributesInput</em> to the remainder of <em>input</em> (including the 0x3B (;) in question).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.2-2.5.1\">Otherwise, set <em>nameValueInput</em> to <em>input</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.5.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.2-2.6.1\">Assert: <em>nameValueInput</em> is a byte sequence.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.6.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.2-2.7.1\">Let <em>name</em> be null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.7.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.2-2.8.1\">Let <em>value</em> be null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.8.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.2-2.9.1\">If <em>nameValueInput</em> does not contain a 0x3D (=) character, then set <em>name</em>\nto the empty byte sequence, and <em>value</em> to <em>nameValueInput</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.9.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.2-2.10.1\">Otherwise, set <em>name</em> to the bytes up to, but not\nincluding, the first 0x3D (=), and set <em>value</em>\nto the bytes after the first 0x3D (=) (possibly being the\nempty byte sequence).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.10.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.2-2.11.1\">Remove any leading or trailing WSP bytes from <em>name</em> and <em>value</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.11.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.2-2.12.1\">If <em>name</em>'s length + <em>value</em>'s length is 0 or is greater than 4096, then return failure.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.12.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.2-2.13.1\">Let <em>cookie</em> be a new cookie whose name is <em>name</em> and value is <em>value</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.13.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.2-2.14.1\">Set <em>cookie</em>'s path to the result of running Cookie Default Path with <em>path</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.14.1\" class=\"pilcrow\">¶</a></p>\n<p id=\"section-5.4.2-2.14.2\">\nNote: A <code>Path</code> attribute can override this.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.14.2\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "While <em>attributesInput</em> is not an empty byte sequence:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.4.2-2.15.2.1.1\">Let <em>maxAgeSeen</em> be false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.2-2.15.2.2.1\">Let <em>char</em> be the result of consuming the first byte of <em>attributesInput</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.2-2.15.2.3.1\">Assert: <em>char</em> is 0x3B (;).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.3.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.2-2.15.2.4.1\">Let <em>attributeNameValueInput</em> be null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.4.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.2-2.15.2.5.1\">If <em>attributesInput</em> contains 0x3B (;), then\nset <em>attributeNameValueInput</em> to the result of consuming the bytes of\n<em>attributesInput</em> up to, but not including, the first 0x3B (;).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.5.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.2-2.15.2.6.1\">Otherwise, set <em>attributeNameValueInput</em> to the result of consuming the remainder of <em>attributesInput</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.6.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.2-2.15.2.7.1\">Let <em>attributeName</em> be null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.7.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.2-2.15.2.8.1\">Let <em>attributeValue</em> be the empty string.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.8.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.2-2.15.2.9.1\">If <em>attributeNameValueInput</em> contains a 0x3D (=), then set <em>attributeName</em> to the bytes\nup to, but not including, the first 0x3D (=) of <em>attributeNameValueInput</em>, and <em>attributeValue</em> to the bytes\nafter the first 0x3D (=) of <em>attributeNameValueInput</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.9.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.2-2.15.2.10.1\">Otherwise, set <em>attributeName</em> to <em>attributeNameValueInput</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.10.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.2-2.15.2.11.1\">Remove any leading or trailing WSP bytes from <em>attributeName</em> and <em>attributeValue</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.11.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.2-2.15.2.12.1\">If <em>attributeValue</em>'s length is greater than 1024, then continue.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.12.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "If <em>attributeName</em> is a byte-case-insensitive match for <code>Expires</code>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.13.1\" class=\"pilcrow\">¶</a>",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.13.2.1.1\">If <em>maxAgeSeen</em> is true, then continue.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.13.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.13.2.2.1\">Let <em>expiryTime</em> be the result of running Parse a Date given <em>attributeValue</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.13.2.2.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.13.2.3.1\">If <em>attributeValue</em> is failure, then continue.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.13.2.3.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.13.2.4.1\">If <em>expiryTime</em> is greater than the current time and date + the user agent's cookie age limit,\nthen set <em>expiryTime</em> to the user agent's cookie age limit.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.13.2.4.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.13.2.5.1\">If <em>expiryTime</em> is earlier than the earliest date the user agent can\nrepresent, the user agent MAY replace <em>expiryTime</em> with the earliest\nrepresentable date.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.13.2.5.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.13.2.6.1\">Set <em>cookie</em>'s expiry-time to <em>expiryTime</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.13.2.6.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ]
+            },
+            {
+              "html": "If <em>attributeName</em> is a byte-case-insensitive match for <code>Max-Age</code>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.14.1\" class=\"pilcrow\">¶</a>",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.14.2.1.1\">If <em>attributeValue</em> is empty, continue.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.14.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.14.2.2.1\">If the first byte of <em>attributeValue</em> is neither a DIGIT, nor 0x2D (-)\nfollowed by a DIGIT, then continue.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.14.2.2.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.14.2.3.1\">If the remainder of <em>attributeValue</em> contains a non-DIGIT, then continue.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.14.2.3.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.14.2.4.1\">Let <em>deltaSeconds</em> be <em>attributeValue</em>, converted to a base 10 integer.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.14.2.4.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.14.2.5.1\">Set <em>deltaSeconds</em> to the smaller of <em>deltaSeconds</em> and the user agent's cookie age limit, in seconds.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.14.2.5.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.14.2.6.1\">If <em>deltaSeconds</em> is less than or equal to 0, let <em>expiryTime</em> be\nthe earliest representable date and time. Otherwise, let <em>expiryTime</em>\nbe the current date and time + <em>deltaSeconds</em> seconds.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.14.2.6.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.14.2.7.1\">Set <em>cookie</em>'s expiry-time to <em>expiryTime</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.14.2.7.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.14.2.8.1\">Set <em>maxAgeSeen</em> to true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.14.2.8.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ]
+            },
+            {
+              "html": "If <em>attributeName</em> is a byte-case-insensitive match for <code>Domain</code>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.15.1\" class=\"pilcrow\">¶</a>",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.15.2.1.1\">Let <em>host</em> be failure.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.15.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "If <em>attributeValue</em> contains only ASCII bytes:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.15.2.2.1\" class=\"pilcrow\">¶</a>",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p id=\"section-5.4.2-2.15.2.15.2.2.2.1.1\">Let <em>hostInput</em> be <em>attributeValue</em>, ASCII decoded.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.15.2.2.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                    },
+                    {
+                      "html": "<p id=\"section-5.4.2-2.15.2.15.2.2.2.2.1\">If <em>hostInput</em> starts with U+002E (.), then set <em>hostInput</em> to <em>hostInput</em>\nwithout its leading U+002E (.).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.15.2.2.2.2.1\" class=\"pilcrow\">¶</a></p>"
+                    },
+                    {
+                      "html": "<p id=\"section-5.4.2-2.15.2.15.2.2.2.3.1\">Set <em>host</em> to the result of host parsing <em>hostInput</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.15.2.2.2.3.1\" class=\"pilcrow\">¶</a></p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.15.2.3.1\">Set <em>cookie</em>'s host to <em>host</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.15.2.3.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ]
+            },
+            {
+              "html": "If <em>attributeName</em> is a byte-case-insensitive match for <code>Path</code>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.16.1\" class=\"pilcrow\">¶</a>",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <em>attributeValue</em> is not empty and if the first byte of\n<em>attributeValue</em> is 0x2F (/), then:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.16.2.1.1\" class=\"pilcrow\">¶</a>",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "<p id=\"section-5.4.2-2.15.2.16.2.1.2.1.1\">Set <em>cookie</em>'s path to <em>attributeValue</em> split on 0x2F (/).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.16.2.1.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                    },
+                    {
+                      "html": "<p id=\"section-5.4.2-2.15.2.16.2.1.2.2.1\">Set <em>cookie</em>'s has-path attribute to true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.16.2.1.2.2.1\" class=\"pilcrow\">¶</a></p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "If <em>attributeName</em> is a byte-case-insensitive match for <code>Secure</code>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.17.1\" class=\"pilcrow\">¶</a>",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.17.2.1.1\">Set <em>cookie</em>'s secure to true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.17.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ]
+            },
+            {
+              "html": "If <em>attributeName</em> is a byte-case-insensitive match for <code>HttpOnly</code>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.18.1\" class=\"pilcrow\">¶</a>",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.18.2.1.1\">Set <em>cookie</em>'s http-only to true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.18.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ]
+            },
+            {
+              "html": "If <em>attributeName</em> is a byte-case-insensitive match for <code>SameSite</code>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.19.1\" class=\"pilcrow\">¶</a>",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.19.2.1.1\">If <em>attributeValue</em> is a byte-case-insensitive match for <code>None</code>, then set <em>cookie</em>'s same-site to \"none\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.19.2.1.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.19.2.2.1\">If <em>attributeValue</em> is a byte-case-insensitive match for <code>Strict</code>, then set <em>cookie</em>'s same-site to \"strict\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.19.2.2.1\" class=\"pilcrow\">¶</a></p>"
+                },
+                {
+                  "html": "<p id=\"section-5.4.2-2.15.2.19.2.3.1\">If <em>attributeValue</em> is a byte-case-insensitive match for <code>Lax</code>, then set <em>cookie</em>'s same-site to \"lax\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.15.2.19.2.3.1\" class=\"pilcrow\">¶</a></p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.4.2-2.16.1\">Return <em>cookie</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2-2.16.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "To <strong>Store a Cookie</strong> given a cookie <em>cookie</em>, boolean <em>isSecure</em>, domain or IP address <em>host</em>,\nboolean <em>httpOnlyAllowed</em>, boolean <em>allowNonHostOnlyCookieForPublicSuffix</em>, and boolean <em>sameSiteStrictOrLaxAllowed</em>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.4.3-2.1.1\">Assert: <em>cookie</em>'s name's length + <em>cookie</em>'s value's length is not 0 or greater than 4096.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.3-2.2.1\">Assert: <em>cookie</em>'s name does not contain a byte in the range 0x00 to 0x08, inclusive, in the range 0x0A to 0x1F, inclusive, or\n0x7F (CTL characters excluding HTAB).<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.3-2.3.1\">If <em>cookie</em>'s host is failure, then return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.3-2.4.1\">Set <em>cookie</em>'s creation-time and last-access-time to the current date and time.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "If <em>allowNonHostOnlyCookieForPublicSuffix</em> is false and <em>cookie</em>'s host is a public suffix:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.5.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.4.3-2.5.2.1.1\">If <em>cookie</em>'s host is host-equal to <em>host</em>, then set <em>cookie</em>'s host to null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.5.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.3-2.5.2.2.1\">Otherwise, return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.5.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        },
+        {
+          "html": "If <em>cookie</em>'s host is null:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.6.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.4.3-2.6.2.1.1\">Set <em>cookie</em>'s host-only to true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.6.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.3-2.6.2.2.1\">Set <em>cookie</em>'s host to <em>host</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.6.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.7.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.4.3-2.7.2.1.1\">If <em>host</em> does not Domain-Match <em>cookie</em>'s host, then return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.7.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.3-2.7.2.2.1\">Set <em>cookie</em>'s host-only to false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.7.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.4.3-2.8.1\">Assert: <em>cookie</em>'s host is a domain or IP address.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.8.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.3-2.9.1\">If <em>httpOnlyAllowed</em> is false and <em>cookie</em>'s http-only is true, then return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.9.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "If <em>isSecure</em> is false:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.10.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.4.3-2.10.2.1.1\">If <em>cookie</em>'s secure is true, then return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.10.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.3-2.10.2.2.1\">If the user agent's cookie store contains at least one cookie <em>existingCookie</em> that meets all of the following criteria:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.10.2.2.1\" class=\"pilcrow\">¶</a></p>\n\n<p id=\"section-5.4.3-2.10.2.2.3\">\nthen return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.10.2.2.3\" class=\"pilcrow\">¶</a></p>\n<p id=\"section-5.4.3-2.10.2.2.4\">\nNote: The path comparison is not symmetric, ensuring only that a newly-created, non-secure\ncookie does not overlay an existing secure cookie, providing some mitigation against\ncookie-fixing attacks. That is, given an existing secure cookie named 'a' with a path of\n'/login', a non-secure cookie named 'a' could be set for a path of '/' or '/foo', but not for\na path of '/login' or '/login/en'.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.10.2.2.4\" class=\"pilcrow\">¶</a></p>",
+              "ignored": [
+                "existingCookie's name is cookie's name;¶ existingCookie's secure is true;¶ existingCookie's host Domain-Matches cookie's host, or vice-versa; and¶ cookie's path Path-Matches existingCookie's path,¶"
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.4.3-2.11.1\">If <em>cookie</em>'s same-site is not \"<code>none</code>\" and <em>sameSiteStrictOrLaxAllowed</em> is false,\nthen return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.11.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.3-2.12.1\">If <em>cookie</em>'s same-site is \"<code>none</code>\" and <em>cookie</em>'s secure is false,\nthen return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.12.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.3-2.13.1\">If <em>cookie</em>'s name, byte-lowercased, starts with <code>__secure-</code> and <em>cookie</em>'s secure is false,\nthen return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.13.1\" class=\"pilcrow\">¶</a></p>\n<p id=\"section-5.4.3-2.13.2\">\nNote: The check here and those below are with a byte-lowercased value in order to protect servers that process these values in a case-insensitive manner.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.13.2\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.3-2.14.1\">If <em>cookie</em>'s name, byte-lowercased, starts with <code>__host-</code> and <em>cookie</em> is not Host-prefix compatible, then return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.14.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.3-2.15.1\">If <em>cookie</em>'s name, byte-lowercased, starts with <code>__http-</code> and <em>cookie</em> is not Http-prefix compatible, then return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.15.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.3-2.16.1\">If <em>cookie</em>'s name, byte-lowercased, starts with <code>__host-http-</code> and <em>cookie</em> is not both Host-prefix compatible and Http-prefix compatible, then return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.16.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.3-2.17.1\">If <em>cookie</em>'s name is the empty byte sequence and one of the following is true:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.17.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.4.3-2.17.2.1\">\n                  <p id=\"section-5.4.3-2.17.2.1.1\"><em>cookie</em>'s value, byte-lowercased, starts with <code>__secure-</code>,<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.17.2.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.4.3-2.17.2.2\">\n                  <p id=\"section-5.4.3-2.17.2.2.1\"><em>cookie</em>'s value, byte-lowercased, starts with <code>__host-</code>,<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.17.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.4.3-2.17.2.3\">\n                  <p id=\"section-5.4.3-2.17.2.3.1\"><em>cookie</em>'s value, byte-lowercased, starts with <code>__http-</code>, or<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.17.2.3.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.4.3-2.17.2.4\">\n                  <p id=\"section-5.4.3-2.17.2.4.1\"><em>cookie</em>'s value, byte-lowercased, starts with <code>__host-http-</code>,<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.17.2.4.1\" class=\"pilcrow\">¶</a></p>\n</li>\n              </ul>\n<p id=\"section-5.4.3-2.17.3\">\nthen return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.17.3\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "If the user agent's cookie store contains a cookie <em>oldCookie</em> whose name is <em>cookie</em>'s name,\nhost is host-equal to <em>cookie</em>'s host, host-only is <em>cookie</em>'s host-only, and path is path-equal to <em>cookie</em>'s path:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.18.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.4.3-2.18.2.1.1\">If <em>httpOnlyAllowed</em> is false and <em>oldCookie</em>'s http-only is true,\nthen return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.18.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.3-2.18.2.2.1\">If <em>cookie</em>'s secure is equal to <em>oldCookie</em>'s secure, <em>cookie</em>'s same-site is equal to <em>oldCookie</em>'s\nsame-site, and <em>cookie</em>'s expiry-time is equal to <em>oldCookie</em>'s expiry-time, then return null.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.18.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.3-2.18.2.3.1\">Set <em>cookie</em>'s creation-time to <em>oldCookie</em>'s creation-time.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.18.2.3.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.3-2.18.2.4.1\">Remove <em>oldCookie</em> from the user agent's cookie store.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.18.2.4.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.4.3-2.19.1\">Insert <em>cookie</em> into the user agent's cookie store.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.19.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.3-2.20.1\">Return <em>cookie</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3-2.20.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "To <strong>Garbage Collect Cookies</strong> given a host <em>host</em>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.4-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.4.4-2.1.1\">Let <em>expiredCookies</em> be the result of running Remove Expired Cookies.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.4-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.4-2.2.1\">Let <em>excessHostCookies</em> be the result of running Remove Excess Cookies for Host given <em>host</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.4-2.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.4-2.3.1\">Let <em>excessGlobalCookies</em> be the result of running Remove Global Excess Cookies.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.4-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.4-2.4.1\">Let <em>removedCookies</em> be « ».<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.4-2.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "For each <em>cookieList</em> of « <em>expiredCookies</em>, <em>excessHostCookies</em>, <em>excessGlobalCookies</em> », do the following:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.4-2.5.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "extend",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.4.4-2.5.2.1.1\">Extend <em>removedCookies</em> with <em>cookieList</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.4-2.5.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.4.4-2.6.1\">Return <em>removedCookies</em><a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.4-2.6.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "To <strong>Retrieve Cookies</strong> given a boolean <em>isSecure</em>, host <em>host</em>, URL path <em>path</em>,\nboolean <em>httpOnlyAllowed</em>, and string <em>sameSite</em>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "assert",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.4.5-2.1.1\">Assert: <em>sameSite</em> is \"<code>strict-or-less</code>\", \"<code>lax-or-less</code>\", \"<code>unset-or-less</code>\", or \"<code>none</code>\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.5-2.2.1\">Let <em>cookies</em> be all cookies from the user agent's cookie store that meet these conditions:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.4.5-2.2.2.1\">\n                  <p id=\"section-5.4.5-2.2.2.1.1\">One of the following is true:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.1.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.4.5-2.2.2.1.2.1\">\n                      <p id=\"section-5.4.5-2.2.2.1.2.1.1\">cookie's host-only is true and <em>host</em> is host-equal to cookie's host, or<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.1.2.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                    <li class=\"normal\" id=\"section-5.4.5-2.2.2.1.2.2\">\n                      <p id=\"section-5.4.5-2.2.2.1.2.2.1\">cookie's host-only is false and <em>host</em> Domain-Matches cookie's host.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.1.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                  </ul>\n<p id=\"section-5.4.5-2.2.2.1.3\">\nIt's possible that the public suffix list changed since a cookie was\ncreated. If this change results in a cookie's host becoming a public\nsuffix and the cookie's host-only is false, then that cookie SHOULD NOT\nbe returned.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.1.3\" class=\"pilcrow\">¶</a></p>\n<p id=\"section-5.4.5-2.2.2.1.4\">\nXXX: We should probably move this requirement out-of-bound as this invalidation\nshould happen as part of updating the public suffixes.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.1.4\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.4.5-2.2.2.2\">\n                  <p id=\"section-5.4.5-2.2.2.2.1\"><em>path</em> Path-Matches cookie's path.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.4.5-2.2.2.3\">\n                  <p id=\"section-5.4.5-2.2.2.3.1\">One of the following is true:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.3.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.4.5-2.2.2.3.2.1\">\n                      <p id=\"section-5.4.5-2.2.2.3.2.1.1\">cookie's secure is true and <em>isSecure</em> is true, or<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.3.2.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                    <li class=\"normal\" id=\"section-5.4.5-2.2.2.3.2.2\">\n                      <p id=\"section-5.4.5-2.2.2.3.2.2.1\">cookie's secure is false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.3.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                  </ul>\n</li>\n                <li class=\"normal\" id=\"section-5.4.5-2.2.2.4\">\n                  <p id=\"section-5.4.5-2.2.2.4.1\">One of the following is true:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.4.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.4.5-2.2.2.4.2.1\">\n                      <p id=\"section-5.4.5-2.2.2.4.2.1.1\">cookie's http-only is true and <em>httpOnlyAllowed</em> is true, or<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.4.2.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                    <li class=\"normal\" id=\"section-5.4.5-2.2.2.4.2.2\">\n                      <p id=\"section-5.4.5-2.2.2.4.2.2.1\">cookie's http-only is false.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.4.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                  </ul>\n</li>\n                <li class=\"normal\" id=\"section-5.4.5-2.2.2.5\">\n                  <p id=\"section-5.4.5-2.2.2.5.1\">One of the following is true:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.5.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.4.5-2.2.2.5.2.1\">\n                      <p id=\"section-5.4.5-2.2.2.5.2.1.1\">cookie's same-site is \"<code>strict</code>\" and <em>sameSite</em> is \"<code>strict-or-less</code>\";<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.5.2.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                    <li class=\"normal\" id=\"section-5.4.5-2.2.2.5.2.2\">\n                      <p id=\"section-5.4.5-2.2.2.5.2.2.1\">cookie's same-site is \"<code>lax</code>\" and <em>sameSite</em> is one of \"<code>strict-or-less</code>\" or \"<code>lax-or-less</code>\";<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.5.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                    <li class=\"normal\" id=\"section-5.4.5-2.2.2.5.2.3\">\n                      <p id=\"section-5.4.5-2.2.2.5.2.3.1\">cookie's same-site is \"<code>unset</code>\" and <em>sameSite</em> is one of \"<code>strict-or-less</code>\", \"<code>lax-or-less</code>\", or \"<code>unset-or-less</code>\"; or<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.5.2.3.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                    <li class=\"normal\" id=\"section-5.4.5-2.2.2.5.2.4\">\n                      <p id=\"section-5.4.5-2.2.2.5.2.4.1\">cookie's same-site is \"<code>none</code>\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.2.2.5.2.4.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                  </ul>\n</li>\n              </ul>"
+        },
+        {
+          "html": "<p id=\"section-5.4.5-2.3.1\">Sort <em>cookies</em> in the following order:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.3.1\" class=\"pilcrow\">¶</a></p>\n<ul class=\"normal\">\n<li class=\"normal\" id=\"section-5.4.5-2.3.2.1\">\n                  <p id=\"section-5.4.5-2.3.2.1.1\">Cookies whose path's size is greater are listed before cookies whose path's size\nis smaller.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.3.2.1.1\" class=\"pilcrow\">¶</a></p>\n</li>\n                <li class=\"normal\" id=\"section-5.4.5-2.3.2.2\">\n                  <p id=\"section-5.4.5-2.3.2.2.1\">Among cookies whose path's size is equal, cookies whose creation-time is earlier\nare listed before cookies whose creation-time is later.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.3.2.2.1\" class=\"pilcrow\">¶</a></p>\n</li>\n              </ul>"
+        },
+        {
+          "html": "<p id=\"section-5.4.5-2.4.1\">Set the last-access-time of each cookie of <em>cookies</em> to the current date and time\nand reflect these changes in the user agent's cookie store.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.4.5-2.5.1\">Return <em>cookies</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5-2.5.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "To <strong>Serialize Cookies</strong> given a list of cookies <em>cookies</em>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.6-1\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.4.6-2.1.1\">Let <em>output</em> be an empty byte sequence.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.6-2.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "For each <em>cookie</em> of <em>cookies</em>:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.6-2.2.1\" class=\"pilcrow\">¶</a>",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p id=\"section-5.4.6-2.2.2.1.1\">If <em>output</em> is not the empty byte sequence, then append 0x3B (;) followed by 0x20 (SP) to <em>output</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.6-2.2.2.1.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.6-2.2.2.2.1\">If <em>cookie</em>'s name is not the empty byte sequence, then append <em>cookie</em>'s name followed by\n0x3D (=) to <em>output</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.6-2.2.2.2.1\" class=\"pilcrow\">¶</a></p>"
+            },
+            {
+              "html": "<p id=\"section-5.4.6-2.2.2.3.1\">Append <em>cookie</em>'s value to <em>output</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.6-2.2.2.3.1\" class=\"pilcrow\">¶</a></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p id=\"section-5.4.6-2.3.1\">Return <em>output</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.6-2.3.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "<code>Set-Cookie</code> header fields contained in responses with non-100-level status\ncodes (including those in responses with 400- and 500-level status codes)\nSHOULD be processed as follows:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.1-3\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.5.1-4.1.1\">Let <em>isSecure</em> be a boolean indicating whether request's URL's scheme is deemed secure, in an implementation-defined manner.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.1-4.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.5.1-4.2.1\">Let <em>host</em> be request's host.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.1-4.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.5.1-4.3.1\">Let <em>path</em> be request's URL's path.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.1-4.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.5.1-4.4.1\">Let <em>httpOnlyAllowed</em> be true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.1-4.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.5.1-4.5.1\">Let <em>allowNonHostOnlyCookieForPublicSuffix</em> be a boolean whose value is implementation-defined.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.1-4.5.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.5.1-4.6.1\">Let <em>sameSiteStrictOrLaxAllowed</em> be a boolean whose value is implementation-defined.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.1-4.6.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.5.1-4.7.1\">Let <em>cookie</em> be the result of running Parse and Store a Cookie given the header field value,\n<em>isSecure</em>, <em>host</em>, <em>path</em>, <em>httpOnlyAllowed</em>, <em>allowNonHostOnlyCookieForPublicSuffix</em>, and\n<em>sameSiteStrictOrLaxAllowed</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.1-4.7.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.5.1-4.8.1\">If <em>cookie</em> is null, then return.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.1-4.8.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.5.1-4.9.1\">Run Garbage Collect Cookies given <em>cookie</em>'s host.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.1-4.9.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    },
+    {
+      "html": "If the user agent does attach a <code>Cookie</code> header field to an HTTP request, the\nuser agent MUST compute its value as follows:<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.2-4\" class=\"pilcrow\">¶</a>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p id=\"section-5.5.2-5.1.1\">Let <em>isSecure</em> be a boolean indicating whether request's URL's scheme is deemed secure, in an implementation-defined manner.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.2-5.1.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.5.2-5.2.1\">Let <em>host</em> be request's host.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.2-5.2.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.5.2-5.3.1\">Let <em>path</em> be request's URL's path.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.2-5.3.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.5.2-5.4.1\">Let <em>httpOnlyAllowed</em> be true.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.2-5.4.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.5.2-5.5.1\">Let <em>sameSite</em> be a string whose value is implementation-defined, but has to be one of\n\"<code>strict-or-less</code>\", \"<code>lax-or-less</code>\", \"<code>unset-or-less</code>\", or \"<code>none</code>\".<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.2-5.5.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.5.2-5.6.1\">Let <em>cookies</em> be the result of running Retrieve Cookies given <em>isSecure</em>, <em>host</em>, <em>path</em>,\n<em>httpOnlyAllowed</em>, and <em>sameSite</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.2-5.6.1\" class=\"pilcrow\">¶</a></p>"
+        },
+        {
+          "html": "<p id=\"section-5.5.2-5.7.1\">Return the result of running Serialize Cookies given <em>cookies</em>.<a href=\"https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.2-5.7.1\" class=\"pilcrow\">¶</a></p>"
+        }
+      ]
+    }
+  ]
+}

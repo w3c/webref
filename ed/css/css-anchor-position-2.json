@@ -45,7 +45,7 @@
       "name": "<position-area-query>",
       "href": "https://drafts.csswg.org/css-anchor-position-2/#typedef-position-area-query",
       "type": "type",
-      "value": "[ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | x-self-start | x-self-end | span-x-self-start | span-x-self-end | span-all | any ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | y-self-start | y-self-end | span-y-self-start | span-y-self-end | span-all | any ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all | any ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all | any ] | [ self-block-start | center | self-block-end | span-self-block-start | span-self-block-end | span-all | any ] || [ self-inline-start | center | self-inline-end | span-self-inline-start | span-self-inline-end | span-all | any ] | [ start | center | end | span-start | span-end | span-all | any ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all | any ]{1,2} ]",
+      "value": "[ [ left | center | right | span-left | span-right | x-start | x-end | span-x-start | span-x-end | self-x-start | self-x-end | span-self-x-start | span-self-x-end | span-all | any ] || [ top | center | bottom | span-top | span-bottom | y-start | y-end | span-y-start | span-y-end | self-y-start | self-y-end | span-self-y-start | span-self-y-end | span-all | any ] | [ block-start | center | block-end | span-block-start | span-block-end | span-all | any ] || [ inline-start | center | inline-end | span-inline-start | span-inline-end | span-all | any ] | [ self-block-start | center | self-block-end | span-self-block-start | span-self-block-end | span-all | any ] || [ self-inline-start | center | self-inline-end | span-self-inline-start | span-self-inline-end | span-all | any ] | [ start | center | end | span-start | span-end | span-all | any ]{1,2} | [ self-start | center | self-end | span-self-start | span-self-end | span-all | any ]{1,2} ]",
       "values": [
         {
           "name": "any",
@@ -125,18 +125,18 @@
           "value": "y-end"
         },
         {
-          "name": "y-self-start",
+          "name": "self-y-start",
           "prose": "See respective definitions for '<position-area>'.",
-          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-y-self-start",
+          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-self-y-start",
           "type": "value",
-          "value": "y-self-start"
+          "value": "self-y-start"
         },
         {
-          "name": "y-self-end",
+          "name": "self-y-end",
           "prose": "See respective definitions for '<position-area>'.",
-          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-y-self-end",
+          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-self-y-end",
           "type": "value",
-          "value": "y-self-end"
+          "value": "self-y-end"
         },
         {
           "name": "x-start",
@@ -153,18 +153,18 @@
           "value": "x-end"
         },
         {
-          "name": "x-self-start",
+          "name": "self-x-start",
           "prose": "See respective definitions for '<position-area>'.",
-          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-x-self-start",
+          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-self-x-start",
           "type": "value",
-          "value": "x-self-start"
+          "value": "self-x-start"
         },
         {
-          "name": "x-self-end",
+          "name": "self-x-end",
           "prose": "See respective definitions for '<position-area>'.",
-          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-x-self-end",
+          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-self-x-end",
           "type": "value",
-          "value": "x-self-end"
+          "value": "self-x-end"
         },
         {
           "name": "block-start",
@@ -300,18 +300,18 @@
           "value": "span-y-end"
         },
         {
-          "name": "span-y-self-start",
+          "name": "span-self-y-start",
           "prose": "See respective definitions for '<position-area>'.",
-          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-span-y-self-start",
+          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-span-self-y-start",
           "type": "value",
-          "value": "span-y-self-start"
+          "value": "span-self-y-start"
         },
         {
-          "name": "span-y-self-end",
+          "name": "span-self-y-end",
           "prose": "See respective definitions for '<position-area>'.",
-          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-span-y-self-end",
+          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-span-self-y-end",
           "type": "value",
-          "value": "span-y-self-end"
+          "value": "span-self-y-end"
         },
         {
           "name": "span-x-start",
@@ -328,18 +328,18 @@
           "value": "span-x-end"
         },
         {
-          "name": "span-x-self-start",
+          "name": "span-self-x-start",
           "prose": "See respective definitions for '<position-area>'.",
-          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-span-x-self-start",
+          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-span-self-x-start",
           "type": "value",
-          "value": "span-x-self-start"
+          "value": "span-self-x-start"
         },
         {
-          "name": "span-x-self-end",
+          "name": "span-self-x-end",
           "prose": "See respective definitions for '<position-area>'.",
-          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-span-x-self-end",
+          "href": "https://drafts.csswg.org/css-anchor-position-2/#valdef-position-area-query-span-self-x-end",
           "type": "value",
-          "value": "span-x-self-end"
+          "value": "span-self-x-end"
         },
         {
           "name": "span-block-start",

@@ -1,0 +1,853 @@
+{
+  "spec": {
+    "title": "Cookies: HTTP State Management Mechanism",
+    "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#title",
+      "level": 1,
+      "title": "Cookies: HTTP State Management Mechanism"
+    },
+    {
+      "id": "section-abstract",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-abstract",
+      "level": 2,
+      "title": "Abstract",
+      "alternateIds": [
+        "abstract"
+      ]
+    },
+    {
+      "id": "section-note.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-note.1",
+      "level": 2,
+      "title": "About This Document",
+      "alternateIds": [
+        "name-about-this-document"
+      ]
+    },
+    {
+      "id": "section-boilerplate.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-boilerplate.1",
+      "level": 2,
+      "title": "Status of This Memo",
+      "alternateIds": [
+        "name-status-of-this-memo"
+      ]
+    },
+    {
+      "id": "section-boilerplate.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-boilerplate.2",
+      "level": 2,
+      "title": "Copyright Notice",
+      "alternateIds": [
+        "name-copyright-notice"
+      ]
+    },
+    {
+      "id": "section-toc.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-toc.1",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "name-table-of-contents"
+      ]
+    },
+    {
+      "id": "section-1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-1",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "name-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "section-1.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-1.1",
+      "level": 3,
+      "title": "Examples",
+      "alternateIds": [
+        "name-examples"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "section-2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-2",
+      "level": 2,
+      "title": "Conventions",
+      "alternateIds": [
+        "name-conventions"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "section-2.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-2.1",
+      "level": 3,
+      "title": "Terminology",
+      "alternateIds": [
+        "name-terminology"
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "section-2.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-2.2",
+      "level": 3,
+      "title": "ABNF",
+      "alternateIds": [
+        "name-abnf"
+      ],
+      "number": "2.2"
+    },
+    {
+      "id": "section-3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-3",
+      "level": 2,
+      "title": "Which Requirements to Implement",
+      "alternateIds": [
+        "name-which-requirements-to-imple"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "section-3.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-3.1",
+      "level": 3,
+      "title": "Cookie Producing Implementations",
+      "alternateIds": [
+        "name-cookie-producing-implementa"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "section-3.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-3.2",
+      "level": 3,
+      "title": "Cookie Consuming Implementations",
+      "alternateIds": [
+        "name-cookie-consuming-implementa"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "section-3.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-3.3",
+      "level": 3,
+      "title": "Programming Languages & Software Frameworks",
+      "alternateIds": [
+        "name-programming-languages-softw"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "section-4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4",
+      "level": 2,
+      "title": "Server Requirements",
+      "alternateIds": [
+        "name-server-requirements"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "section-4.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1",
+      "level": 3,
+      "title": "Set-Cookie",
+      "alternateIds": [
+        "name-set-cookie"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "section-4.1.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.1",
+      "level": 4,
+      "title": "Syntax",
+      "alternateIds": [
+        "name-syntax"
+      ],
+      "number": "4.1.1"
+    },
+    {
+      "id": "section-4.1.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2",
+      "level": 4,
+      "title": "Semantics (Non-Normative)",
+      "alternateIds": [
+        "name-semantics-non-normative"
+      ],
+      "number": "4.1.2"
+    },
+    {
+      "id": "section-4.1.2.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.1",
+      "level": 5,
+      "title": "The Expires Attribute",
+      "alternateIds": [
+        "name-the-expires-attribute"
+      ],
+      "number": "4.1.2.1"
+    },
+    {
+      "id": "section-4.1.2.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.2",
+      "level": 5,
+      "title": "The Max-Age Attribute",
+      "alternateIds": [
+        "name-the-max-age-attribute"
+      ],
+      "number": "4.1.2.2"
+    },
+    {
+      "id": "section-4.1.2.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.3",
+      "level": 5,
+      "title": "The Domain Attribute",
+      "alternateIds": [
+        "name-the-domain-attribute"
+      ],
+      "number": "4.1.2.3"
+    },
+    {
+      "id": "section-4.1.2.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.4",
+      "level": 5,
+      "title": "The Path Attribute",
+      "alternateIds": [
+        "name-the-path-attribute"
+      ],
+      "number": "4.1.2.4"
+    },
+    {
+      "id": "section-4.1.2.5",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.5",
+      "level": 5,
+      "title": "The Secure Attribute",
+      "alternateIds": [
+        "name-the-secure-attribute"
+      ],
+      "number": "4.1.2.5"
+    },
+    {
+      "id": "section-4.1.2.6",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.6",
+      "level": 5,
+      "title": "The HttpOnly Attribute",
+      "alternateIds": [
+        "name-the-httponly-attribute"
+      ],
+      "number": "4.1.2.6"
+    },
+    {
+      "id": "section-4.1.2.7",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.2.7",
+      "level": 5,
+      "title": "The SameSite Attribute",
+      "alternateIds": [
+        "name-the-samesite-attribute"
+      ],
+      "number": "4.1.2.7"
+    },
+    {
+      "id": "section-4.1.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3",
+      "level": 4,
+      "title": "Cookie Name Prefixes",
+      "alternateIds": [
+        "name-cookie-name-prefixes"
+      ],
+      "number": "4.1.3"
+    },
+    {
+      "id": "section-4.1.3.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3.1",
+      "level": 5,
+      "title": "The \"__Secure-\" Prefix",
+      "alternateIds": [
+        "name-the-__secure-prefix"
+      ],
+      "number": "4.1.3.1"
+    },
+    {
+      "id": "section-4.1.3.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3.2",
+      "level": 5,
+      "title": "The \"__Host-\" Prefix",
+      "alternateIds": [
+        "name-the-__host-prefix"
+      ],
+      "number": "4.1.3.2"
+    },
+    {
+      "id": "section-4.1.3.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3.3",
+      "level": 5,
+      "title": "The \"__Http-\" Prefix",
+      "alternateIds": [
+        "name-the-__http-prefix"
+      ],
+      "number": "4.1.3.3"
+    },
+    {
+      "id": "section-4.1.3.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.1.3.4",
+      "level": 5,
+      "title": "The \"__Host-Http-\" prefix",
+      "alternateIds": [
+        "name-the-__host-http-prefix"
+      ],
+      "number": "4.1.3.4"
+    },
+    {
+      "id": "section-4.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.2",
+      "level": 3,
+      "title": "Cookie",
+      "alternateIds": [
+        "name-cookie"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "section-4.2.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.2.1",
+      "level": 4,
+      "title": "Syntax",
+      "alternateIds": [
+        "name-syntax-2"
+      ],
+      "number": "4.2.1"
+    },
+    {
+      "id": "section-4.2.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-4.2.2",
+      "level": 4,
+      "title": "Semantics",
+      "alternateIds": [
+        "name-semantics"
+      ],
+      "number": "4.2.2"
+    },
+    {
+      "id": "section-5",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5",
+      "level": 2,
+      "title": "User Agent Requirements",
+      "alternateIds": [
+        "name-user-agent-requirements"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "section-5.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.1",
+      "level": 3,
+      "title": "Cookie Concepts",
+      "alternateIds": [
+        "name-cookie-concepts"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "section-5.1.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.1.1",
+      "level": 4,
+      "title": "Cookie Store And Limits",
+      "alternateIds": [
+        "name-cookie-store-and-limits"
+      ],
+      "number": "5.1.1"
+    },
+    {
+      "id": "section-5.1.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.1.2",
+      "level": 4,
+      "title": "Cookie Struct",
+      "alternateIds": [
+        "name-cookie-struct"
+      ],
+      "number": "5.1.2"
+    },
+    {
+      "id": "section-5.1.2.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.1.2.1",
+      "level": 5,
+      "title": "Cookie Struct Miscellaneous",
+      "alternateIds": [
+        "name-cookie-struct-miscellaneous"
+      ],
+      "number": "5.1.2.1"
+    },
+    {
+      "id": "section-5.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2",
+      "level": 3,
+      "title": "Cookie Store Eviction",
+      "alternateIds": [
+        "name-cookie-store-eviction"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "section-5.2.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.1",
+      "level": 4,
+      "title": "Remove Expired Cookies",
+      "alternateIds": [
+        "name-remove-expired-cookies"
+      ],
+      "number": "5.2.1"
+    },
+    {
+      "id": "section-5.2.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.2",
+      "level": 4,
+      "title": "Remove Excess Cookies for a Host",
+      "alternateIds": [
+        "name-remove-excess-cookies-for-a"
+      ],
+      "number": "5.2.2"
+    },
+    {
+      "id": "section-5.2.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.2.3",
+      "level": 4,
+      "title": "Remove Global Excess Cookies",
+      "alternateIds": [
+        "name-remove-global-excess-cookie"
+      ],
+      "number": "5.2.3"
+    },
+    {
+      "id": "section-5.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3",
+      "level": 3,
+      "title": "Subcomponent Algorithms",
+      "alternateIds": [
+        "name-subcomponent-algorithms"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "section-5.3.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.1",
+      "level": 4,
+      "title": "Parse a Date",
+      "alternateIds": [
+        "name-parse-a-date"
+      ],
+      "number": "5.3.1"
+    },
+    {
+      "id": "section-5.3.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.2",
+      "level": 4,
+      "title": "Domain Matching",
+      "alternateIds": [
+        "name-domain-matching"
+      ],
+      "number": "5.3.2"
+    },
+    {
+      "id": "section-5.3.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.3",
+      "level": 4,
+      "title": "Cookie Default Path",
+      "alternateIds": [
+        "name-cookie-default-path"
+      ],
+      "number": "5.3.3"
+    },
+    {
+      "id": "section-5.3.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.3.4",
+      "level": 4,
+      "title": "Path Matching",
+      "alternateIds": [
+        "name-path-matching"
+      ],
+      "number": "5.3.4"
+    },
+    {
+      "id": "section-5.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4",
+      "level": 3,
+      "title": "Main Algorithms",
+      "alternateIds": [
+        "name-main-algorithms"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "section-5.4.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.1",
+      "level": 4,
+      "title": "Parse and Store a Cookie",
+      "alternateIds": [
+        "name-parse-and-store-a-cookie"
+      ],
+      "number": "5.4.1"
+    },
+    {
+      "id": "section-5.4.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.2",
+      "level": 4,
+      "title": "Parse a Cookie",
+      "alternateIds": [
+        "name-parse-a-cookie"
+      ],
+      "number": "5.4.2"
+    },
+    {
+      "id": "section-5.4.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.3",
+      "level": 4,
+      "title": "Store a Cookie",
+      "alternateIds": [
+        "name-store-a-cookie"
+      ],
+      "number": "5.4.3"
+    },
+    {
+      "id": "section-5.4.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.4",
+      "level": 4,
+      "title": "Garbage Collect Cookies",
+      "alternateIds": [
+        "name-garbage-collect-cookies"
+      ],
+      "number": "5.4.4"
+    },
+    {
+      "id": "section-5.4.5",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.5",
+      "level": 4,
+      "title": "Retrieve Cookies",
+      "alternateIds": [
+        "name-retrieve-cookies"
+      ],
+      "number": "5.4.5"
+    },
+    {
+      "id": "section-5.4.6",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.4.6",
+      "level": 4,
+      "title": "Serialize Cookies",
+      "alternateIds": [
+        "name-serialize-cookies"
+      ],
+      "number": "5.4.6"
+    },
+    {
+      "id": "section-5.5",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5",
+      "level": 3,
+      "title": "Requirements Specific to Non-Browser User Agents",
+      "alternateIds": [
+        "name-requirements-specific-to-no"
+      ],
+      "number": "5.5"
+    },
+    {
+      "id": "section-5.5.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.1",
+      "level": 4,
+      "title": "The Set-Cookie Header Field",
+      "alternateIds": [
+        "name-the-set-cookie-header-field"
+      ],
+      "number": "5.5.1"
+    },
+    {
+      "id": "section-5.5.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.2",
+      "level": 4,
+      "title": "The Cookie Header Field",
+      "alternateIds": [
+        "name-the-cookie-header-field"
+      ],
+      "number": "5.5.2"
+    },
+    {
+      "id": "section-5.5.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.5.3",
+      "level": 4,
+      "title": "Cookie Store Eviction for Non-Browser User Agents",
+      "alternateIds": [
+        "name-cookie-store-eviction-for-n"
+      ],
+      "number": "5.5.3"
+    },
+    {
+      "id": "section-5.6",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-5.6",
+      "level": 3,
+      "title": "Requirements Specific to Browser User Agents",
+      "alternateIds": [
+        "name-requirements-specific-to-br"
+      ],
+      "number": "5.6"
+    },
+    {
+      "id": "section-6",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-6",
+      "level": 2,
+      "title": "Implementation Considerations",
+      "alternateIds": [
+        "name-implementation-consideratio"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "section-6.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-6.1",
+      "level": 3,
+      "title": "Limits",
+      "alternateIds": [
+        "name-limits"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "section-6.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-6.2",
+      "level": 3,
+      "title": "Application Programming Interfaces",
+      "alternateIds": [
+        "name-application-programming-int"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "section-7",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "name-privacy-considerations"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "section-7.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7.1",
+      "level": 3,
+      "title": "Third-Party Cookies",
+      "alternateIds": [
+        "name-third-party-cookies"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "section-7.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7.2",
+      "level": 3,
+      "title": "Cookie Policy",
+      "alternateIds": [
+        "name-cookie-policy"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "section-7.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7.3",
+      "level": 3,
+      "title": "User Controls",
+      "alternateIds": [
+        "name-user-controls"
+      ],
+      "number": "7.3"
+    },
+    {
+      "id": "section-7.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-7.4",
+      "level": 3,
+      "title": "Expiration Dates",
+      "alternateIds": [
+        "name-expiration-dates"
+      ],
+      "number": "7.4"
+    },
+    {
+      "id": "section-8",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "name-security-considerations"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "section-8.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.1",
+      "level": 3,
+      "title": "Overview",
+      "alternateIds": [
+        "name-overview"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "section-8.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.2",
+      "level": 3,
+      "title": "Ambient Authority",
+      "alternateIds": [
+        "name-ambient-authority"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "section-8.3",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.3",
+      "level": 3,
+      "title": "Clear Text",
+      "alternateIds": [
+        "name-clear-text"
+      ],
+      "number": "8.3"
+    },
+    {
+      "id": "section-8.4",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.4",
+      "level": 3,
+      "title": "Session Identifiers",
+      "alternateIds": [
+        "name-session-identifiers"
+      ],
+      "number": "8.4"
+    },
+    {
+      "id": "section-8.5",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.5",
+      "level": 3,
+      "title": "Weak Confidentiality",
+      "alternateIds": [
+        "name-weak-confidentiality"
+      ],
+      "number": "8.5"
+    },
+    {
+      "id": "section-8.6",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.6",
+      "level": 3,
+      "title": "Weak Integrity",
+      "alternateIds": [
+        "name-weak-integrity"
+      ],
+      "number": "8.6"
+    },
+    {
+      "id": "section-8.7",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.7",
+      "level": 3,
+      "title": "Reliance on DNS",
+      "alternateIds": [
+        "name-reliance-on-dns"
+      ],
+      "number": "8.7"
+    },
+    {
+      "id": "section-8.8",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-8.8",
+      "level": 3,
+      "title": "SameSite Cookies",
+      "alternateIds": [
+        "name-samesite-cookies"
+      ],
+      "number": "8.8"
+    },
+    {
+      "id": "section-9",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-9",
+      "level": 2,
+      "title": "IANA Considerations",
+      "alternateIds": [
+        "name-iana-considerations"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "section-9.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-9.1",
+      "level": 3,
+      "title": "Cookie",
+      "alternateIds": [
+        "name-cookie-2"
+      ],
+      "number": "9.1"
+    },
+    {
+      "id": "section-9.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-9.2",
+      "level": 3,
+      "title": "Set-Cookie",
+      "alternateIds": [
+        "name-set-cookie-2"
+      ],
+      "number": "9.2"
+    },
+    {
+      "id": "section-10",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-10",
+      "level": 2,
+      "title": "10. Changes",
+      "alternateIds": [
+        "name-changes"
+      ]
+    },
+    {
+      "id": "section-11",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-11",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "name-acknowledgements"
+      ]
+    },
+    {
+      "id": "section-12",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-12",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "name-references"
+      ]
+    },
+    {
+      "id": "section-12.1",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-12.1",
+      "level": 3,
+      "title": "Normative References",
+      "alternateIds": [
+        "name-normative-references"
+      ]
+    },
+    {
+      "id": "section-12.2",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#section-12.2",
+      "level": 3,
+      "title": "Informative References",
+      "alternateIds": [
+        "name-informative-references"
+      ]
+    },
+    {
+      "id": "appendix-A",
+      "href": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html#appendix-A",
+      "level": 2,
+      "title": "Authors' Addresses",
+      "alternateIds": [
+        "name-authors-addresses"
+      ]
+    }
+  ]
+}
