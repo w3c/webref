@@ -47,9 +47,11 @@
       "https://w3c.github.io/resource-timing/": {},
       "https://w3c.github.io/screen-orientation/": {},
       "https://w3c.github.io/webdriver/": {},
+      "https://w3c.github.io/webtransport/": {},
       "https://webaudio.github.io/web-audio-api/": {},
       "https://webbluetoothcg.github.io/web-bluetooth/": {},
       "https://webidl.spec.whatwg.org/": {},
+      "https://websockets.spec.whatwg.org/": {},
       "https://wicg.github.io/nav-speculation/prefetch.html": {},
       "https://www.jsonrpc.org/specification": {},
       "https://www.rfc-editor.org/rfc/rfc4648": {},
@@ -394,6 +396,7 @@
           "concept-document-window",
           "dom-document-defaultview",
           "window-navigable",
+          "blocking-webtransport",
           "windowproxy",
           "set-up-a-window-environment-settings-object"
         ]
@@ -414,6 +417,7 @@
           "realm-execution-context",
           "concept-script-base-url",
           "queue-a-task",
+          "concept-relevant-realm",
           "concept-settings-object-global",
           "concept-settings-object-time-origin",
           "api-base-url",
@@ -425,7 +429,6 @@
           "concept-settings-object-origin",
           "creating-a-classic-script",
           "concept-environment-execution-ready-flag",
-          "concept-relevant-realm",
           "worker-event-loop-2",
           "responsible-event-loop",
           "environment-settings-object's-realm",
@@ -485,6 +488,7 @@
           "serialize-an-infra-value-to-json-bytes",
           "list-remove",
           "map-getting-the-values",
+          "struct-item",
           "map-remove",
           "map-clear",
           "convert-a-json-derived-javascript-value-to-an-infra-value",
@@ -496,7 +500,6 @@
           "list-clone",
           "set-equal",
           "map-set",
-          "struct-item",
           "forgiving-base64-encode",
           "list-size",
           "list-extend",
@@ -680,6 +683,11 @@
           "dfn-user-prompt-handler"
         ]
       },
+      "https://w3c.github.io/webtransport/": {
+        "anchors": [
+          "webtransport-cleanup"
+        ]
+      },
       "https://webaudio.github.io/web-audio-api/": {
         "anchors": [
           "AudioWorkletGlobalScope"
@@ -692,6 +700,11 @@
           "this",
           "exceptiondef-typeerror",
           "dfn-platform-object"
+        ]
+      },
+      "https://websockets.spec.whatwg.org/": {
+        "anchors": [
+          "websocket"
         ]
       },
       "https://www.rfc-editor.org/rfc/rfc8610": {

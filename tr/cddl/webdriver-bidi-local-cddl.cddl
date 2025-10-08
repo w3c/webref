@@ -1820,6 +1820,7 @@ EmulationCommand = (
   emulation.SetForcedColorsModeThemeOverride //
   emulation.SetGeolocationOverride //
   emulation.SetLocaleOverride //
+  emulation.SetNetworkConditions //
   emulation.SetScreenOrientationOverride //
   emulation.SetScriptingEnabled //
   emulation.SetTimezoneOverride //
@@ -1876,6 +1877,23 @@ emulation.SetLocaleOverrideParameters = {
   locale: text / null,
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
+}
+
+emulation.SetNetworkConditions = (
+  method: "emulation.setNetworkConditions",
+  params: emulation.setNetworkConditionsParameters
+)
+
+emulation.setNetworkConditionsParameters = {
+  networkConditions: emulation.NetworkConditions / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.NetworkConditions = emulation.NetworkConditionsOffline
+
+emulation.NetworkConditionsOffline = {
+  type: "offline"
 }
 
 emulation.SetScreenOrientationOverride = (

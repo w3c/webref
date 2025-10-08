@@ -357,14 +357,38 @@
       ]
     },
     {
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#dom-htmlscriptelement-src\" id=\"ref-for-dom-htmlscriptelement-src②\">src</a></code> setter steps are:",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#dom-htmlscriptelement-src\" id=\"ref-for-dom-htmlscriptelement-src②\">src</a></code> getter steps are:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<ins>Let <var>value</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-type-compliant-string\" id=\"ref-for-abstract-opdef-get-trusted-type-compliant-string⑥\">Get Trusted Type compliant string</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscripturl\" id=\"ref-for-trustedscripturl①①\">TrustedScriptURL</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a>, the given value, <code>HTMLScriptElement src</code>, and\n<code>script</code>.</ins>"
+          "html": "<ins>Let <var>element</var> be the result of running <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <u class=\"link-error\" data-lt=\"get the element\" title=\"LINK ERROR: No 'dfn' refs found for 'get the element' that are marked for export.\n  (Possible specs this could be from: html)\">get the element</u>.</ins>"
         },
         {
-          "html": "<ins>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#attr-script-src\" id=\"ref-for-attr-script-src\">src</a> content attribute to <var>value</var>.</ins>"
+          "html": "<ins>Let <var>contentAttributeValue</var> be the result of running <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s <u class=\"link-error\" data-lt=\"get the content attribute\" title=\"LINK ERROR: No 'dfn' refs found for 'get the content attribute' that are marked for export.\n  (Possible specs this could be from: html)\">get the content attribute</u>.</ins>"
+        },
+        {
+          "html": "<ins>If <var>contentAttributeValue</var> is null, then return the empty string.</ins>"
+        },
+        {
+          "html": "<ins>Let <var>urlString</var> be the result of encoding-parsing-and-serializing a URL given <var>contentAttributeValue</var>, relative to <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①\">node document</a>.</ins>"
+        },
+        {
+          "html": "<ins>If <var>urlString</var> is not failure, then return <var>urlString</var>.</ins>"
+        },
+        {
+          "html": "<ins>Return <var>contentAttributeValue</var>, <u class=\"link-error\" data-lt=\"converted to a scalar value string\" title=\"LINK ERROR: No 'dfn' refs found for 'converted to a scalar value string'.\">converted to a scalar value string</u>.\n</ins>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#dom-htmlscriptelement-src\" id=\"ref-for-dom-htmlscriptelement-src③\">src</a></code> setter steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<ins>Let <var>value</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-type-compliant-string\" id=\"ref-for-abstract-opdef-get-trusted-type-compliant-string⑥\">Get Trusted Type compliant string</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscripturl\" id=\"ref-for-trustedscripturl①①\">TrustedScriptURL</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a>, the given value, <code>HTMLScriptElement src</code>, and\n<code>script</code>.</ins>"
+        },
+        {
+          "html": "<ins>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#attr-script-src\" id=\"ref-for-attr-script-src\">src</a> content attribute to <var>value</var>.</ins>"
         }
       ]
     },
