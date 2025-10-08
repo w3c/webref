@@ -1240,7 +1240,7 @@
         "href": "https://w3c-fedid.github.io/FedCM/#dictdef-identityassertionresponse"
       },
       "IdentityProviderClientMetadata": {
-        "fragment": "dictionary IdentityProviderClientMetadata {\n  USVString privacy_policy_url;\n  USVString terms_of_service_url;\n};",
+        "fragment": "dictionary IdentityProviderClientMetadata {\n  USVString privacy_policy_url;\n  USVString terms_of_service_url;\n  boolean client_is_third_party_to_top_frame_origin = false;\n};",
         "type": "dictionary",
         "name": "IdentityProviderClientMetadata",
         "inheritance": null,
@@ -1276,6 +1276,25 @@
             "default": null,
             "required": false,
             "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderclientmetadata-terms_of_service_url"
+          },
+          {
+            "type": "field",
+            "name": "client_is_third_party_to_top_frame_origin",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c-fedid.github.io/FedCM/#dom-identityproviderclientmetadata-client_is_third_party_to_top_frame_origin"
           }
         ],
         "extAttrs": [],
