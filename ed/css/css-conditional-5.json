@@ -404,7 +404,100 @@
           "href": "https://drafts.csswg.org/css-conditional-5/#descdef-container-scrolled",
           "for": "@container",
           "value": "none | top | right | bottom | left | block-start | inline-start | block-end | inline-end | x | y | block | inline",
-          "type": "discrete"
+          "type": "discrete",
+          "values": [
+            {
+              "name": "none",
+              "prose": "The query container has not had a relative scroll yet.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrolled-none",
+              "type": "value",
+              "value": "none"
+            },
+            {
+              "name": "top",
+              "prose": "The most recent relative scroll was upwards.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrolled-top",
+              "type": "value",
+              "value": "top"
+            },
+            {
+              "name": "right",
+              "prose": "The most recent relative scroll was to the right.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrolled-right",
+              "type": "value",
+              "value": "right"
+            },
+            {
+              "name": "bottom",
+              "prose": "The most recent relative scroll was downwards.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrolled-bottom",
+              "type": "value",
+              "value": "bottom"
+            },
+            {
+              "name": "left",
+              "prose": "The most recent relative scroll was to the left.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrolled-left",
+              "type": "value",
+              "value": "left"
+            },
+            {
+              "name": "block-start",
+              "prose": "The most recent relative scroll was towards the block-start direction.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrolled-block-start",
+              "type": "value",
+              "value": "block-start"
+            },
+            {
+              "name": "inline-start",
+              "prose": "The most recent relative scroll was towards the inline-start direction.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrolled-inline-start",
+              "type": "value",
+              "value": "inline-start"
+            },
+            {
+              "name": "block-end",
+              "prose": "The most recent relative scroll was towards the block-end direction.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrolled-block-end",
+              "type": "value",
+              "value": "block-end"
+            },
+            {
+              "name": "inline-end",
+              "prose": "The most recent relative scroll was towards the inline-end direction.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrolled-inline-end",
+              "type": "value",
+              "value": "inline-end"
+            },
+            {
+              "name": "x",
+              "prose": "The most recent relative scroll was in the horizontal direction.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrolled-x",
+              "type": "value",
+              "value": "x"
+            },
+            {
+              "name": "y",
+              "prose": "The most recent relative scroll was in the vertical direction.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrolled-y",
+              "type": "value",
+              "value": "y"
+            },
+            {
+              "name": "block",
+              "prose": "The most recent relative scroll was in the block direction.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrolled-block",
+              "type": "value",
+              "value": "block"
+            },
+            {
+              "name": "inline",
+              "prose": "The most recent relative scroll was in the inline direction.",
+              "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-scrolled-inline",
+              "type": "value",
+              "value": "inline"
+            }
+          ]
         }
       ],
       "value": "@container <container-condition># { <block-contents> }"
@@ -549,125 +642,6 @@
       "prose": "A container scroll-state query allows querying a container for state that depends on scroll position. It is a boolean combination of individual scroll-state features (<scroll-state-feature>) that each query a single feature of the query container. The syntax of a <scroll-state-feature> is the same as for a media feature: a feature name, a comparator, and a value.",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-feature",
       "type": "type"
-    }
-  ],
-  "warnings": [
-    {
-      "msg": "Dangling value",
-      "name": "none",
-      "prose": "The query container has not had a relative scroll yet.",
-      "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-direction-none",
-      "type": "value",
-      "value": "none",
-      "for": "@container/direction"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "top",
-      "prose": "The most recent relative scroll was upwards.",
-      "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-direction-top",
-      "type": "value",
-      "value": "top",
-      "for": "@container/direction"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "right",
-      "prose": "The most recent relative scroll was to the right.",
-      "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-direction-right",
-      "type": "value",
-      "value": "right",
-      "for": "@container/direction"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "bottom",
-      "prose": "The most recent relative scroll was downwards.",
-      "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-direction-bottom",
-      "type": "value",
-      "value": "bottom",
-      "for": "@container/direction"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "left",
-      "prose": "The most recent relative scroll was to the left.",
-      "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-direction-left",
-      "type": "value",
-      "value": "left",
-      "for": "@container/direction"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "block-start",
-      "prose": "The most recent relative scroll was towards the block-start direction.",
-      "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-direction-block-start",
-      "type": "value",
-      "value": "block-start",
-      "for": "@container/direction"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "inline-start",
-      "prose": "The most recent relative scroll was towards the inline-start direction.",
-      "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-direction-inline-start",
-      "type": "value",
-      "value": "inline-start",
-      "for": "@container/direction"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "block-end",
-      "prose": "The most recent relative scroll was towards the block-end direction.",
-      "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-direction-block-end",
-      "type": "value",
-      "value": "block-end",
-      "for": "@container/direction"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "inline-end",
-      "prose": "The most recent relative scroll was towards the inline-end direction.",
-      "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-direction-inline-end",
-      "type": "value",
-      "value": "inline-end",
-      "for": "@container/direction"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "x",
-      "prose": "The most recent relative scroll was in the horizontal direction.",
-      "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-direction-x",
-      "type": "value",
-      "value": "x",
-      "for": "@container/direction"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "y",
-      "prose": "The most recent relative scroll was in the vertical direction.",
-      "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-direction-y",
-      "type": "value",
-      "value": "y",
-      "for": "@container/direction"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "block",
-      "prose": "The most recent relative scroll was in the block direction.",
-      "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-direction-block",
-      "type": "value",
-      "value": "block",
-      "for": "@container/direction"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "inline",
-      "prose": "The most recent relative scroll was in the inline direction.",
-      "href": "https://drafts.csswg.org/css-conditional-5/#valdef-container-direction-inline",
-      "type": "value",
-      "value": "inline",
-      "for": "@container/direction"
     }
   ]
 }
