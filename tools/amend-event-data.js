@@ -104,12 +104,32 @@ const patches = {
       change: { interface: "CookieChangeEvent" }
     }
   ],
-  // pending https://github.com/w3c/csswg-drafts/pull/7466/files
+  // Scroll events bubble or not, depending on target, crawl does not
+  // capture that nuance given how the algorithm is currently written
   'cssom-view-1': [
     {
-      pattern: { type: "change" },
-      matched: 1,
-      change: { interface: 'MediaQueryListEvent' }
+      pattern: { type: /^scroll(end)?$/ },
+      matched: 2,
+      change: {
+        targets: [ "VisualViewport", "Element" ],
+        bubbles: false
+      }
+    },
+    {
+      add: {
+        type: "scroll",
+        interface: "Event",
+        bubbles: true,
+        targets: [ "Document" ]
+      }
+    },
+    {
+      add: {
+        type: "scrollend",
+        interface: "Event",
+        bubbles: true,
+        targets: [ "Document" ]
+      }
     }
   ],
   // pending resolution of https://github.com/w3c/csswg-drafts/issues/7603
