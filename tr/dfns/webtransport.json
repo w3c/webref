@@ -221,28 +221,6 @@
       "links": []
     },
     {
-      "id": "session-drain",
-      "href": "https://www.w3.org/TR/webtransport/#session-drain",
-      "linkingText": [
-        "drain"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "session"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "webtransport-session",
-        "href": "https://www.w3.org/TR/webtransport/#webtransport-session",
-        "title": "WebTransport session",
-        "number": "3.1"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
       "id": "session-draining",
       "href": "https://www.w3.org/TR/webtransport/#session-draining",
       "linkingText": [
@@ -441,10 +419,10 @@
       "links": []
     },
     {
-      "id": "stream-send-stop_sending",
-      "href": "https://www.w3.org/TR/webtransport/#stream-send-stop_sending",
+      "id": "stream-abort-receiving",
+      "href": "https://www.w3.org/TR/webtransport/#stream-abort-receiving",
       "linkingText": [
-        "send STOP_SENDING"
+        "abort receiving"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -463,10 +441,10 @@
       "links": []
     },
     {
-      "id": "stream-reset",
-      "href": "https://www.w3.org/TR/webtransport/#stream-reset",
+      "id": "stream-abort-sending",
+      "href": "https://www.w3.org/TR/webtransport/#stream-abort-sending",
       "linkingText": [
-        "reset"
+        "abort sending"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -485,10 +463,10 @@
       "links": []
     },
     {
-      "id": "stream-signal-stop_sending",
-      "href": "https://www.w3.org/TR/webtransport/#stream-signal-stop_sending",
+      "id": "stream-signal-receiving-aborted",
+      "href": "https://www.w3.org/TR/webtransport/#stream-signal-receiving-aborted",
       "linkingText": [
-        "STOP_SENDING"
+        "receiving aborted"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -507,10 +485,10 @@
       "links": []
     },
     {
-      "id": "stream-signal-reset_stream",
-      "href": "https://www.w3.org/TR/webtransport/#stream-signal-reset_stream",
+      "id": "stream-signal-sending-aborted",
+      "href": "https://www.w3.org/TR/webtransport/#stream-signal-sending-aborted",
       "linkingText": [
-        "RESET_STREAM"
+        "sending aborted"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -851,6 +829,28 @@
       "links": []
     },
     {
+      "id": "dom-webtransportdatagramduplexstream-readablemode-slot",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-readablemode-slot",
+      "linkingText": [
+        "[[ReadableMode]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportDatagramDuplexStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "datagram-duplex-stream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
       "id": "dom-webtransportdatagramduplexstream-writables-slot",
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-writables-slot",
       "linkingText": [
@@ -1054,6 +1054,28 @@
       "href": "https://www.w3.org/TR/webtransport/#webtransportdatagramduplexstream-create-readable",
       "linkingText": [
         "readable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransportDatagramDuplexStream/create"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "datagram-duplex-stream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "webtransportdatagramduplexstream-create-readablemode",
+      "href": "https://www.w3.org/TR/webtransport/#webtransportdatagramduplexstream-create-readablemode",
+      "linkingText": [
+        "readableMode"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2567,6 +2589,48 @@
       "links": []
     },
     {
+      "id": "enumdef-datagramsreadablemode",
+      "href": "https://www.w3.org/TR/webtransport/#enumdef-datagramsreadablemode",
+      "linkingText": [
+        "DatagramsReadableMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-configuration",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
+        "title": "Configuration",
+        "number": "6.9"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-datagramsreadablemode-bytes",
+      "href": "https://www.w3.org/TR/webtransport/#dom-datagramsreadablemode-bytes",
+      "linkingText": [
+        "\"bytes\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "DatagramsReadableMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-configuration",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
+        "title": "Configuration",
+        "number": "6.9"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
       "id": "dictdef-webtransportoptions",
       "href": "https://www.w3.org/TR/webtransport/#dictdef-webtransportoptions",
       "linkingText": [
@@ -2758,6 +2822,28 @@
         "number": "6.9"
       },
       "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-webtransportoptions-datagramsreadablemode",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportoptions-datagramsreadablemode",
+      "linkingText": [
+        "datagramsReadableMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-configuration",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
+        "title": "Configuration",
+        "number": "6.9"
+      },
+      "definedIn": "dt",
       "links": []
     },
     {
@@ -3908,26 +3994,6 @@
       "href": "https://www.w3.org/TR/webtransport/#grouped",
       "linkingText": [
         "grouped"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "sendGroup",
-        "href": "https://www.w3.org/TR/webtransport/#sendGroup",
-        "title": "Interface WebTransportSendGroup",
-        "number": "8"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "ungrouped",
-      "href": "https://www.w3.org/TR/webtransport/#ungrouped",
-      "linkingText": [
-        "ungrouped"
       ],
       "localLinkingText": [],
       "type": "dfn",

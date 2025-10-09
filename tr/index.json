@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-10-08T01:36:40.817Z",
+  "date": "2025-10-09T01:47:14.526Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -20,7 +20,7 @@
       "cookiestore",
       "partitioned-cookies",
       "client-hint-reliability",
-      "compression-dictionary",
+      "layered-cookies",
       "no-vary-search",
       "rfc6265bis",
       "dom",
@@ -136,6 +136,7 @@
       "tc39-iterator-sequencing",
       "tc39-json-parse-with-source",
       "tc39-math-sum",
+      "tc39-nonextensible-applies-to-private",
       "tc39-shadowrealm",
       "tc39-source-phase-imports",
       "tc39-temporal",
@@ -311,6 +312,7 @@
       "rfc9218",
       "rfc9530",
       "rfc9649",
+      "rfc9842",
       "promises-guide",
       "GIF",
       "w3c-patent-policy",
@@ -480,7 +482,7 @@
       "encrypted-media-2",
       "epub-33",
       "epub-34",
-      "epub-a11y-111",
+      "epub-a11y-12",
       "epub-rs-33",
       "epub-rs-34",
       "ethical-web-principles",
@@ -740,7 +742,7 @@
     "crawled": 397,
     "errors": 0
   },
-  "crawler": "reffy-19.2.3",
+  "crawler": "reffy-19.2.4",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -786,7 +788,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "8 October 2025",
+      "date": "9 October 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -7209,7 +7211,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-position-4/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -10706,11 +10708,11 @@
       ],
       "crawled": "https://www.w3.org/TR/did-resolution/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 Oct 2025 17:13:35 GMT"
+        "lastModified": "Wed, 08 Oct 2025 17:52:11 GMT"
       },
       "generator": "respec",
-      "date": "07 October 2025",
-      "revision": "7d7ea775525326bb42a778e4e59cc9998cd353e9",
+      "date": "08 October 2025",
+      "revision": "8876f2ba3609bea472ca13ca2de72810501323da",
       "algorithms": "algorithms/did-resolution.json",
       "links": "links/did-resolution.json",
       "refs": "refs/did-resolution.json",
@@ -11710,12 +11712,12 @@
       "cddl": []
     },
     {
-      "url": "https://www.w3.org/TR/epub-a11y-111/",
+      "url": "https://www.w3.org/TR/epub-a11y-12/",
       "seriesComposition": "full",
-      "shortname": "epub-a11y-111",
+      "shortname": "epub-a11y-12",
       "series": {
         "shortname": "epub-a11y",
-        "currentSpecification": "epub-a11y-111",
+        "currentSpecification": "epub-a11y-12",
         "title": "EPUB Accessibility",
         "shortTitle": "EPUB Accessibility",
         "releaseUrl": "https://www.w3.org/TR/epub-a11y/",
@@ -11730,6 +11732,9 @@
         "repository": "https://github.com/w3c/epub-specs",
         "filename": "index.html"
       },
+      "formerNames": [
+        "epub-a11y-111"
+      ],
       "organization": "W3C",
       "groups": [
         {
@@ -11738,30 +11743,30 @@
         }
       ],
       "release": {
-        "url": "https://www.w3.org/TR/epub-a11y-111/",
+        "url": "https://www.w3.org/TR/epub-a11y-12/",
         "status": "Working Draft",
         "filename": "Overview.html"
       },
       "title": "EPUB Accessibility 1.2",
       "source": "w3c",
-      "shortTitle": "EPUB Accessibility 1.1.1",
+      "shortTitle": "EPUB Accessibility 1.2",
       "categories": [],
       "standing": "good",
       "versions": [
-        "https://www.w3.org/TR/epub-a11y-111/",
+        "https://www.w3.org/TR/epub-a11y-12/",
         "https://w3c.github.io/epub-specs/epub34/a11y/"
       ],
-      "crawled": "https://www.w3.org/TR/epub-a11y-111/",
+      "crawled": "https://www.w3.org/TR/epub-a11y-12/",
       "crawlCacheInfo": {
         "lastModified": "Tue, 30 Sep 2025 13:32:24 GMT"
       },
       "generator": "respec",
       "date": "02 October 2025",
-      "links": "links/epub-a11y-111.json",
-      "refs": "refs/epub-a11y-111.json",
-      "dfns": "dfns/epub-a11y-111.json",
-      "headings": "headings/epub-a11y-111.json",
-      "ids": "ids/epub-a11y-111.json",
+      "links": "links/epub-a11y-12.json",
+      "refs": "refs/epub-a11y-12.json",
+      "dfns": "dfns/epub-a11y-12.json",
+      "headings": "headings/epub-a11y-12.json",
+      "ids": "ids/epub-a11y-12.json",
       "cddl": []
     },
     {
@@ -12233,7 +12238,7 @@
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
-          "css/css-fill-stroke"
+          "css/fill-stroke"
         ]
       },
       "versions": [
@@ -20861,7 +20866,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/ttml-imsc1.3/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "title": "IMSC Text Profile 1.3",
@@ -22411,11 +22416,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wasm-js-api-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Jun 2025 13:03:11 GMT"
+        "lastModified": "Wed, 08 Oct 2025 22:15:17 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 June 2025",
-      "revision": "1041527d508218acc40f0278d4abc3be9ba5e3bd",
+      "date": "8 October 2025",
+      "revision": "338cf40f6bacd05e9d727d4577fe9e3cefff967f",
       "algorithms": "algorithms/wasm-js-api-2.json",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
@@ -22477,11 +22482,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wasm-web-api-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Jun 2025 13:03:17 GMT"
+        "lastModified": "Wed, 08 Oct 2025 22:08:21 GMT"
       },
       "generator": "bikeshed",
-      "date": "24 June 2025",
-      "revision": "1041527d508218acc40f0278d4abc3be9ba5e3bd",
+      "date": "8 October 2025",
+      "revision": "338cf40f6bacd05e9d727d4577fe9e3cefff967f",
       "algorithms": "algorithms/wasm-web-api-2.json",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
@@ -22765,7 +22770,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/web-locks/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -24836,10 +24841,10 @@
       ],
       "crawled": "https://www.w3.org/TR/webtransport/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 02 Jul 2025 14:56:23 GMT"
+        "lastModified": "Wed, 08 Oct 2025 17:08:31 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 July 2025",
+      "date": "8 October 2025",
       "algorithms": "algorithms/webtransport.json",
       "links": "links/webtransport.json",
       "refs": "refs/webtransport.json",
