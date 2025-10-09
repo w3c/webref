@@ -1,0 +1,15 @@
+{
+  "name": "SFrameKeyManagement",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "WebRTC Encoded Transform",
+      "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+    },
+    "fragment": "interface mixin SFrameKeyManagement {\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional CryptoKeyID keyID);\n    attribute EventHandler onerror;\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#sframekeymanagement"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

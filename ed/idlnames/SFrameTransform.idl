@@ -1,10 +1,8 @@
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=Window]
 interface SFrameTransform : EventTarget {
     constructor(optional SFrameTransformOptions options = {});
-    Promise<undefined> setEncryptionKey(CryptoKey key, optional CryptoKeyID keyID);
-    attribute EventHandler onerror;
 };
 
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
-SFrameTransform includes GenericTransformStream;
+SFrameTransform includes SFrameKeyManagement;

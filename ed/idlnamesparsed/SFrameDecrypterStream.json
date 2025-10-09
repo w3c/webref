@@ -1,13 +1,13 @@
 {
-  "name": "SFrameTransform",
+  "name": "SFrameDecrypterStream",
   "type": "interface",
   "defined": {
     "spec": {
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "[Exposed=Window]\ninterface SFrameTransform : EventTarget {\n    constructor(optional SFrameTransformOptions options = {});\n};",
-    "href": "https://w3c.github.io/webrtc-encoded-transform/#sframetransform"
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameDecrypterStream : EventTarget {\n    constructor(optional SFrameTransformOptions options = {});\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#sframedecrypterstream"
   },
   "extended": [
     {
@@ -15,7 +15,14 @@
         "title": "WebRTC Encoded Transform",
         "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
       },
-      "fragment": "SFrameTransform includes SFrameKeyManagement;"
+      "fragment": "SFrameDecrypterStream includes GenericTransformStream;"
+    },
+    {
+      "spec": {
+        "title": "WebRTC Encoded Transform",
+        "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+      },
+      "fragment": "SFrameDecrypterStream includes SFrameKeyManagement;"
     }
   ],
   "inheritance": {
@@ -42,6 +49,21 @@
     "includes": []
   },
   "includes": [
+    {
+      "name": "GenericTransformStream",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Streams Standard",
+          "url": "https://streams.spec.whatwg.org/"
+        },
+        "fragment": "interface mixin GenericTransformStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
+        "href": "https://streams.spec.whatwg.org/#generictransformstream"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
     {
       "name": "SFrameKeyManagement",
       "type": "interface mixin",

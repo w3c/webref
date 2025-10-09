@@ -8,13 +8,16 @@
       "constructors": {
         "Window": [
           "SFrameTransform",
+          "SFrameEncrypterStream",
+          "SFrameDecrypterStream",
           "SFrameTransformErrorEvent",
           "RTCEncodedVideoFrame",
           "RTCEncodedAudioFrame",
           "RTCRtpScriptTransform"
         ],
         "DedicatedWorker": [
-          "SFrameTransform",
+          "SFrameEncrypterStream",
+          "SFrameDecrypterStream",
           "SFrameTransformErrorEvent",
           "RTCEncodedVideoFrame",
           "RTCEncodedAudioFrame",
@@ -61,25 +64,6 @@
         "extAttrs": [],
         "href": "https://w3c.github.io/webrtc-encoded-transform/#typedefdef-rtcrtptransform"
       },
-      "SFrameTransformRole": {
-        "fragment": "enum SFrameTransformRole {\n    \"encrypt\",\n    \"decrypt\"\n};",
-        "type": "enum",
-        "name": "SFrameTransformRole",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "encrypt",
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformrole-encrypt"
-          },
-          {
-            "type": "enum-value",
-            "value": "decrypt",
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformrole-decrypt"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-sframetransformrole"
-      },
       "SFrameCipherSuite": {
         "fragment": "// List of supported cipher suites, as defined in [[RFC9605]] section 4.5.\nenum SFrameCipherSuite {\n     \"AES_128_CTR_HMAC_SHA256_80\",\n     \"AES_128_CTR_HMAC_SHA256_64\",\n     \"AES_128_CTR_HMAC_SHA256_32\",\n     \"AES_128_GCM_SHA256_128\",\n     \"AES_256_GCM_SHA512_128\"\n};",
         "type": "enum",
@@ -115,30 +99,11 @@
         "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-sframeciphersuite"
       },
       "SFrameTransformOptions": {
-        "fragment": "dictionary SFrameTransformOptions {\n    SFrameTransformRole role = \"encrypt\";\n    required SFrameCipherSuite cipherSuite;\n};",
+        "fragment": "dictionary SFrameTransformOptions {\n    required SFrameCipherSuite cipherSuite;\n};",
         "type": "dictionary",
         "name": "SFrameTransformOptions",
         "inheritance": null,
         "members": [
-          {
-            "type": "field",
-            "name": "role",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "SFrameTransformRole"
-            },
-            "default": {
-              "type": "string",
-              "value": "encrypt"
-            },
-            "required": false,
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformoptions-role"
-          },
           {
             "type": "field",
             "name": "cipherSuite",
@@ -214,37 +179,12 @@
         "extAttrs": [],
         "href": "https://w3c.github.io/webrtc-encoded-transform/#typedefdef-cryptokeyid"
       },
-      "SFrameTransform": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform : EventTarget {\n    constructor(optional SFrameTransformOptions options = {});\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional CryptoKeyID keyID);\n    attribute EventHandler onerror;\n};",
-        "type": "interface",
-        "name": "SFrameTransform",
-        "inheritance": "EventTarget",
+      "SFrameKeyManagement": {
+        "fragment": "interface mixin SFrameKeyManagement {\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional CryptoKeyID keyID);\n    attribute EventHandler onerror;\n};",
+        "type": "interface mixin",
+        "name": "SFrameKeyManagement",
+        "inheritance": null,
         "members": [
-          {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "SFrameTransformOptions"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-sframetransform"
-          },
           {
             "type": "operation",
             "name": "setEncryptionKey",
@@ -301,7 +241,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-setencryptionkey"
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframekeymanagement-setencryptionkey"
           },
           {
             "type": "attribute",
@@ -317,7 +257,89 @@
             "extAttrs": [],
             "special": "",
             "readonly": false,
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-onerror"
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframekeymanagement-onerror"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframekeymanagement"
+      },
+      "SFrameTransform": {
+        "fragment": "[Exposed=Window]\ninterface SFrameTransform : EventTarget {\n    constructor(optional SFrameTransformOptions options = {});\n};",
+        "type": "interface",
+        "name": "SFrameTransform",
+        "inheritance": "EventTarget",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SFrameTransformOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-sframetransform"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframetransform"
+      },
+      "SFrameEncrypterStream": {
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameEncrypterStream : EventTarget {\n    constructor(optional SFrameTransformOptions options = {});\n};",
+        "type": "interface",
+        "name": "SFrameEncrypterStream",
+        "inheritance": "EventTarget",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SFrameTransformOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeencrypterstream-sframeencrypterstream"
           }
         ],
         "extAttrs": [
@@ -339,7 +361,60 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframetransform"
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframeencrypterstream"
+      },
+      "SFrameDecrypterStream": {
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameDecrypterStream : EventTarget {\n    constructor(optional SFrameTransformOptions options = {});\n};",
+        "type": "interface",
+        "name": "SFrameDecrypterStream",
+        "inheritance": "EventTarget",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SFrameTransformOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecrypterstream-sframedecrypterstream"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframedecrypterstream"
       },
       "SFrameTransformErrorEventType": {
         "fragment": "enum SFrameTransformErrorEventType {\n    \"authentication\",\n    \"keyID\",\n    \"syntax\"\n};",
@@ -1580,11 +1655,43 @@
       ],
       "SFrameTransform": [
         {
-          "fragment": "SFrameTransform includes GenericTransformStream;",
+          "fragment": "SFrameTransform includes SFrameKeyManagement;",
           "type": "includes",
           "extAttrs": [],
           "target": "SFrameTransform",
+          "includes": "SFrameKeyManagement"
+        }
+      ],
+      "SFrameEncrypterStream": [
+        {
+          "fragment": "SFrameEncrypterStream includes GenericTransformStream;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SFrameEncrypterStream",
           "includes": "GenericTransformStream"
+        },
+        {
+          "fragment": "SFrameEncrypterStream includes SFrameKeyManagement;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SFrameEncrypterStream",
+          "includes": "SFrameKeyManagement"
+        }
+      ],
+      "SFrameDecrypterStream": [
+        {
+          "fragment": "SFrameDecrypterStream includes GenericTransformStream;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SFrameDecrypterStream",
+          "includes": "GenericTransformStream"
+        },
+        {
+          "fragment": "SFrameDecrypterStream includes SFrameKeyManagement;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SFrameDecrypterStream",
+          "includes": "SFrameKeyManagement"
         }
       ],
       "DedicatedWorkerGlobalScope": [
@@ -1620,13 +1727,16 @@
     "exposed": {
       "Window": [
         "SFrameTransform",
+        "SFrameEncrypterStream",
+        "SFrameDecrypterStream",
         "SFrameTransformErrorEvent",
         "RTCEncodedVideoFrame",
         "RTCEncodedAudioFrame",
         "RTCRtpScriptTransform"
       ],
       "DedicatedWorker": [
-        "SFrameTransform",
+        "SFrameEncrypterStream",
+        "SFrameDecrypterStream",
         "SFrameTransformErrorEvent",
         "RTCEncodedVideoFrame",
         "RTCEncodedAudioFrame",
@@ -1643,16 +1753,29 @@
         "RTCRtpTransform"
       ],
       "SFrameTransformOptions": [
-        "SFrameTransformRole",
         "SFrameCipherSuite"
+      ],
+      "SFrameKeyManagement": [
+        "CryptoKey",
+        "CryptoKeyID",
+        "EventHandler"
       ],
       "SFrameTransform": [
         "EventTarget",
         "SFrameTransformOptions",
-        "CryptoKey",
-        "CryptoKeyID",
-        "EventHandler",
-        "GenericTransformStream"
+        "SFrameKeyManagement"
+      ],
+      "SFrameEncrypterStream": [
+        "EventTarget",
+        "SFrameTransformOptions",
+        "GenericTransformStream",
+        "SFrameKeyManagement"
+      ],
+      "SFrameDecrypterStream": [
+        "EventTarget",
+        "SFrameTransformOptions",
+        "GenericTransformStream",
+        "SFrameKeyManagement"
       ],
       "SFrameTransformErrorEvent": [
         "Event",
@@ -1716,9 +1839,9 @@
     "externalDependencies": [
       "RTCRtpSender",
       "RTCRtpReceiver",
-      "EventTarget",
       "CryptoKey",
       "EventHandler",
+      "EventTarget",
       "Event",
       "EventInit",
       "DOMHighResTimeStamp",
