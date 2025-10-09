@@ -130,70 +130,6 @@
       "links": []
     },
     {
-      "id": "enumdef-sframetransformrole",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-sframetransformrole",
-      "linkingText": [
-        "SFrameTransformRole"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sframe",
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
-        "title": "SFrameTransform",
-        "number": "3"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-sframetransformrole-encrypt",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformrole-encrypt",
-      "linkingText": [
-        "\"encrypt\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "SFrameTransformRole"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sframe",
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
-        "title": "SFrameTransform",
-        "number": "3"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-sframetransformrole-decrypt",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformrole-decrypt",
-      "linkingText": [
-        "\"decrypt\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "SFrameTransformRole"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sframe",
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
-        "title": "SFrameTransform",
-        "number": "3"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
       "id": "enumdef-sframeciphersuite",
       "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-sframeciphersuite",
       "linkingText": [
@@ -344,28 +280,6 @@
       "links": []
     },
     {
-      "id": "dom-sframetransformoptions-role",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformoptions-role",
-      "linkingText": [
-        "role"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "SFrameTransformOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sframe",
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
-        "title": "SFrameTransform",
-        "number": "3"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
       "id": "dom-sframetransformoptions-ciphersuite",
       "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformoptions-ciphersuite",
       "linkingText": [
@@ -428,6 +342,117 @@
       "links": []
     },
     {
+      "id": "sframekeymanagement",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#sframekeymanagement",
+      "linkingText": [
+        "SFrameKeyManagement"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sframekeymanagement-setencryptionkey",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframekeymanagement-setencryptionkey",
+      "linkingText": [
+        "setEncryptionKey(key, keyID)",
+        "setEncryptionKey(key)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "SFrameKeyManagement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sframekeymanagement-setencryptionkey-key-keyid-key",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframekeymanagement-setencryptionkey-key-keyid-key",
+      "linkingText": [
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SFrameKeyManagement/setEncryptionKey(key, keyID)",
+        "SFrameKeyManagement/setEncryptionKey(key)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sframekeymanagement-setencryptionkey-key-keyid-keyid",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframekeymanagement-setencryptionkey-key-keyid-keyid",
+      "linkingText": [
+        "keyID"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "SFrameKeyManagement/setEncryptionKey(key, keyID)",
+        "SFrameKeyManagement/setEncryptionKey(key)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sframekeymanagement-onerror",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframekeymanagement-onerror",
+      "linkingText": [
+        "onerror"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SFrameKeyManagement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
       "id": "sframetransform",
       "href": "https://w3c.github.io/webrtc-encoded-transform/#sframetransform",
       "linkingText": [
@@ -473,16 +498,38 @@
       "links": []
     },
     {
-      "id": "dom-sframetransform-setencryptionkey-key-keyid-key",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-setencryptionkey-key-keyid-key",
+      "id": "sframeencrypterstream",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#sframeencrypterstream",
       "linkingText": [
-        "key"
+        "SFrameEncrypterStream"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sframeencrypterstream-sframeencrypterstream-options-options",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeencrypterstream-sframeencrypterstream-options-options",
+      "linkingText": [
+        "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "SFrameTransform/setEncryptionKey(key, keyID)",
-        "SFrameTransform/setEncryptionKey(key)"
+        "SFrameEncrypterStream/SFrameEncrypterStream(options)",
+        "SFrameEncrypterStream/constructor(options)",
+        "SFrameEncrypterStream/SFrameEncrypterStream()",
+        "SFrameEncrypterStream/constructor()"
       ],
       "access": "public",
       "informative": false,
@@ -496,17 +543,14 @@
       "links": []
     },
     {
-      "id": "dom-sframetransform-setencryptionkey-key-keyid-keyid",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-setencryptionkey-key-keyid-keyid",
+      "id": "sframedecrypterstream",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#sframedecrypterstream",
       "linkingText": [
-        "keyID"
+        "SFrameDecrypterStream"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "SFrameTransform/setEncryptionKey(key, keyID)",
-        "SFrameTransform/setEncryptionKey(key)"
-      ],
+      "type": "interface",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -519,15 +563,18 @@
       "links": []
     },
     {
-      "id": "dom-sframetransform-onerror",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-onerror",
+      "id": "dom-sframedecrypterstream-sframedecrypterstream-options-options",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecrypterstream-sframedecrypterstream-options-options",
       "linkingText": [
-        "onerror"
+        "options"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "argument",
       "for": [
-        "SFrameTransform"
+        "SFrameDecrypterStream/SFrameDecrypterStream(options)",
+        "SFrameDecrypterStream/constructor(options)",
+        "SFrameDecrypterStream/SFrameDecrypterStream()",
+        "SFrameDecrypterStream/constructor()"
       ],
       "access": "public",
       "informative": false,
@@ -893,11 +940,100 @@
       "links": []
     },
     {
+      "id": "dom-sframeencrypterstream-sframeencrypterstream",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeencrypterstream-sframeencrypterstream",
+      "linkingText": [
+        "SFrameEncrypterStream(options)",
+        "constructor(options)",
+        "SFrameEncrypterStream()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SFrameEncrypterStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-sframedecrypterstream-sframedecrypterstream",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecrypterstream-sframedecrypterstream",
+      "linkingText": [
+        "SFrameDecrypterStream(options)",
+        "constructor(options)",
+        "SFrameDecrypterStream()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "SFrameDecrypterStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrameTransform",
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "sframe-initialization-algorithm",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe-initialization-algorithm",
+      "linkingText": [
+        "SFrame initialization algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sframe-algorithms",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe-algorithms",
+        "title": "Algorithms",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "sframe-transform-algorithm",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe-transform-algorithm",
+      "linkingText": [
+        "SFrame transform algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sframe-algorithms",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe-algorithms",
+        "title": "Algorithms",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "dom-sframetransform-setencryptionkey",
       "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-setencryptionkey",
       "linkingText": [
-        "setEncryptionKey(key, keyID)",
-        "setEncryptionKey(key)"
+        "setEncryptionKey(key, keyID)"
       ],
       "localLinkingText": [],
       "type": "method",
