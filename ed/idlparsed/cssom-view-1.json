@@ -1462,7 +1462,7 @@
     "idlExtendedNames": {
       "Window": [
         {
-          "fragment": "partial interface Window {\n    [NewObject] MediaQueryList matchMedia(CSSOMString query);\n    [SameObject, Replaceable] readonly attribute Screen screen;\n    [SameObject, Replaceable] readonly attribute VisualViewport? visualViewport;\n\n    // browsing context\n    undefined moveTo(long x, long y);\n    undefined moveBy(long x, long y);\n    undefined resizeTo(long width, long height);\n    undefined resizeBy(long x, long y);\n\n    // viewport\n    [Replaceable] readonly attribute long innerWidth;\n    [Replaceable] readonly attribute long innerHeight;\n\n    // viewport scrolling\n    [Replaceable] readonly attribute double scrollX;\n    [Replaceable] readonly attribute double pageXOffset;\n    [Replaceable] readonly attribute double scrollY;\n    [Replaceable] readonly attribute double pageYOffset;\n    undefined scroll(optional ScrollToOptions options = {});\n    undefined scroll(unrestricted double x, unrestricted double y);\n    undefined scrollTo(optional ScrollToOptions options = {});\n    undefined scrollTo(unrestricted double x, unrestricted double y);\n    undefined scrollBy(optional ScrollToOptions options = {});\n    undefined scrollBy(unrestricted double x, unrestricted double y);\n\n    // client\n    [Replaceable] readonly attribute long screenX;\n    [Replaceable] readonly attribute long screenLeft;\n    [Replaceable] readonly attribute long screenY;\n    [Replaceable] readonly attribute long screenTop;\n    [Replaceable] readonly attribute long outerWidth;\n    [Replaceable] readonly attribute long outerHeight;\n    [Replaceable] readonly attribute double devicePixelRatio;\n};",
+          "fragment": "partial interface Window {\n    [NewObject] MediaQueryList matchMedia(CSSOMString query);\n    [SameObject, Replaceable] readonly attribute Screen screen;\n    [SameObject, Replaceable] readonly attribute VisualViewport? visualViewport;\n\n    // browsing context\n    undefined moveTo(long x, long y);\n    undefined moveBy(long x, long y);\n    undefined resizeTo(long width, long height);\n    undefined resizeBy(long x, long y);\n\n    // viewport\n    [Replaceable] readonly attribute long innerWidth;\n    [Replaceable] readonly attribute long innerHeight;\n\n    // viewport scrolling\n    [Replaceable] readonly attribute double scrollX;\n    [Replaceable] readonly attribute double pageXOffset;\n    [Replaceable] readonly attribute double scrollY;\n    [Replaceable] readonly attribute double pageYOffset;\n    Promise<undefined> scroll(optional ScrollToOptions options = {});\n    Promise<undefined> scroll(unrestricted double x, unrestricted double y);\n    Promise<undefined> scrollTo(optional ScrollToOptions options = {});\n    Promise<undefined> scrollTo(unrestricted double x, unrestricted double y);\n    Promise<undefined> scrollBy(optional ScrollToOptions options = {});\n    Promise<undefined> scrollBy(unrestricted double x, unrestricted double y);\n\n    // client\n    [Replaceable] readonly attribute long screenX;\n    [Replaceable] readonly attribute long screenLeft;\n    [Replaceable] readonly attribute long screenY;\n    [Replaceable] readonly attribute long screenTop;\n    [Replaceable] readonly attribute long outerWidth;\n    [Replaceable] readonly attribute long outerHeight;\n    [Replaceable] readonly attribute double devicePixelRatio;\n};",
           "type": "interface",
           "name": "Window",
           "inheritance": null,
@@ -1905,10 +1905,19 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
               },
               "arguments": [
                 {
@@ -1940,10 +1949,19 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
               },
               "arguments": [
                 {
@@ -1989,10 +2007,19 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
               },
               "arguments": [
                 {
@@ -2024,10 +2051,19 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
               },
               "arguments": [
                 {
@@ -2073,10 +2109,19 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
               },
               "arguments": [
                 {
@@ -2108,10 +2153,19 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
               },
               "arguments": [
                 {
@@ -2528,7 +2582,7 @@
       ],
       "Element": [
         {
-          "fragment": "partial interface Element {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n\n  boolean checkVisibility(optional CheckVisibilityOptions options = {});\n\n  undefined scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});\n  undefined scroll(optional ScrollToOptions options = {});\n  undefined scroll(unrestricted double x, unrestricted double y);\n  undefined scrollTo(optional ScrollToOptions options = {});\n  undefined scrollTo(unrestricted double x, unrestricted double y);\n  undefined scrollBy(optional ScrollToOptions options = {});\n  undefined scrollBy(unrestricted double x, unrestricted double y);\n  attribute unrestricted double scrollTop;\n  attribute unrestricted double scrollLeft;\n  readonly attribute long scrollWidth;\n  readonly attribute long scrollHeight;\n  readonly attribute long clientTop;\n  readonly attribute long clientLeft;\n  readonly attribute long clientWidth;\n  readonly attribute long clientHeight;\n  readonly attribute double currentCSSZoom;\n};",
+          "fragment": "partial interface Element {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n\n  boolean checkVisibility(optional CheckVisibilityOptions options = {});\n\n  Promise<undefined> scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});\n  Promise<undefined> scroll(optional ScrollToOptions options = {});\n  Promise<undefined> scroll(unrestricted double x, unrestricted double y);\n  Promise<undefined> scrollTo(optional ScrollToOptions options = {});\n  Promise<undefined> scrollTo(unrestricted double x, unrestricted double y);\n  Promise<undefined> scrollBy(optional ScrollToOptions options = {});\n  Promise<undefined> scrollBy(unrestricted double x, unrestricted double y);\n  attribute unrestricted double scrollTop;\n  attribute unrestricted double scrollLeft;\n  readonly attribute long scrollWidth;\n  readonly attribute long scrollHeight;\n  readonly attribute long clientTop;\n  readonly attribute long clientLeft;\n  readonly attribute long clientWidth;\n  readonly attribute long clientHeight;\n  readonly attribute double currentCSSZoom;\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -2613,10 +2667,19 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
               },
               "arguments": [
                 {
@@ -2665,10 +2728,19 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
               },
               "arguments": [
                 {
@@ -2700,10 +2772,19 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
               },
               "arguments": [
                 {
@@ -2749,10 +2830,19 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
               },
               "arguments": [
                 {
@@ -2784,10 +2874,19 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
               },
               "arguments": [
                 {
@@ -2833,10 +2932,19 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
               },
               "arguments": [
                 {
@@ -2868,10 +2976,19 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "",
+                "generic": "Promise",
                 "nullable": false,
                 "union": false,
-                "idlType": "undefined"
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
               },
               "arguments": [
                 {

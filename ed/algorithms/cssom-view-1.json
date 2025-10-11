@@ -69,10 +69,34 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#smooth-scroll-aborted\" id=\"ref-for-smooth-scroll-aborted\">Abort</a> any ongoing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll\">smooth scroll</a> for <var>box</var>."
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#smooth-scroll-aborted\" id=\"ref-for-smooth-scroll-aborted\">Abort</a> any ongoing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll\">smooth scroll</a> for <var>box</var>.</p>"
         },
         {
-          "html": "If the user agent honors the <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-overflow-3/#propdef-scroll-behavior\" id=\"ref-for-propdef-scroll-behavior\">scroll-behavior</a> property and one of the following are true:\n  \n      <ul>\n       <li><var>behavior</var> is \"<code>auto</code>\" and <var>element</var> is not null and its computed value of the\n   <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-overflow-3/#propdef-scroll-behavior\" id=\"ref-for-propdef-scroll-behavior①\">scroll-behavior</a> property is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-overflow-3/#valdef-scroll-behavior-smooth\" id=\"ref-for-valdef-scroll-behavior-smooth\">smooth</a>\n   \n       </li><li><var>behavior</var> is <code>smooth</code>\n  \n      </li></ul>\n      \n  ...then perform a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll①\">smooth scroll</a> of <var>box</var> to <var>position</var>. Once the position has finished updating, emit the <a class=\"idl-code\" data-link-type=\"event\" href=\"https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend\" id=\"ref-for-eventdef-document-scrollend\">scrollend</a> event.\n  Otherwise, perform an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#concept-instant-scroll\" id=\"ref-for-concept-instant-scroll\">instant scroll</a> of <var>box</var> to <var>position</var>. After an <span id=\"ref-for-concept-instant-scroll①\">instant scroll</span> emit the <span id=\"ref-for-eventdef-document-scrollend①\">scrollend</span> event."
+          "html": "<p>Resolve all pending scroll <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise\">Promise</a></code>s whose scroll container is <var>box</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>scrollPromise</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①\">Promise</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return <var>scrollPromise</var>, and run the remaining steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>If the user agent honors the <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-overflow-3/#propdef-scroll-behavior\" id=\"ref-for-propdef-scroll-behavior\">scroll-behavior</a> property and one of the following is true:</p>\n      <ul>\n       <li><var>behavior</var> is \"<code>auto</code>\" and <var>element</var> is not null and its computed value of the\n  <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-overflow-3/#propdef-scroll-behavior\" id=\"ref-for-propdef-scroll-behavior①\">scroll-behavior</a> property is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-overflow-3/#valdef-scroll-behavior-smooth\" id=\"ref-for-valdef-scroll-behavior-smooth\">smooth</a>, or\n  \n       </li><li><var>behavior</var> is <code>smooth</code>\n\n      </li></ul>\n      \nthen perform a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll①\">smooth scroll</a> of <var>box</var> to <var>position</var>;\notherwise, perform an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#concept-instant-scroll\" id=\"ref-for-concept-instant-scroll\">instant scroll</a> of <var>box</var> to <var>position</var>."
+        },
+        {
+          "html": "<p>Wait until either the position has finished updating, or <var>scrollPromise</var> has been resolved.</p>"
+        },
+        {
+          "html": "If <var>scrollPromise</var> is still in the pending state:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the scroll position changed as a result of this call, emit the <a class=\"idl-code\" data-link-type=\"event\" href=\"https://drafts.csswg.org/cssom-view-1/#eventdef-document-scrollend\" id=\"ref-for-eventdef-document-scrollend\">scrollend</a> event.</p>"
+            },
+            {
+              "html": "<p>Resolve <var>scrollPromise</var>.</p>"
+            }
+          ]
         }
       ]
     },
@@ -122,10 +146,19 @@
           "html": "<p>Let <var>element</var> be <var>doc</var>’s root element if there is one, null otherwise.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll\">Perform a scroll</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1②②\">viewport</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box⑤\">scrolling box</a> to its current scroll position + (<var>layout dx</var>, <var>layout dy</var>) with <var>element</var> as the\nassociated element, and <var>behavior</var> as the scroll behavior.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll\">Perform a scroll</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1②②\">viewport</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box⑤\">scrolling box</a> to its current scroll position + (<var>layout dx</var>, <var>layout dy</var>) with <var>element</var> as the\nassociated element, and <var>behavior</var> as the scroll behavior.\nLet <var>scrollPromise1</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise②\">Promise</a></code> returned from this step.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll①\">Perform a scroll</a> of <var>vv</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box⑥\">scrolling box</a> to its current scroll position + (<var>visual dx</var>, <var>visual dy</var>) with <var>element</var> as the associated\nelement, and <var>behavior</var> as the scroll behavior.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll①\">Perform a scroll</a> of <var>vv</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box⑥\">scrolling box</a> to its current scroll position + (<var>visual dx</var>, <var>visual dy</var>) with <var>element</var> as the associated\nelement, and <var>behavior</var> as the scroll behavior.\nLet <var>scrollPromise2</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③\">Promise</a></code> returned from this step.</p>"
+        },
+        {
+          "html": "<p>Let <var>scrollPromise</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise④\">Promise</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return <var>scrollPromise</var>, and run the remaining steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Resolve <var>scrollPromise</var> when both <var>scrollPromise1</var> and <var>scrollPromise2</var> have settled.</p>"
         }
       ]
     },
@@ -298,7 +331,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#normalize-non-finite-values\" id=\"ref-for-normalize-non-finite-values\">Normalize non-finite values</a> for <var>x</var> and <var>y</var>.</p>"
         },
         {
-          "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1③④\">viewport</a>, abort these steps.</p>"
+          "html": "<p>If there is no <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1③④\">viewport</a>, return a resolved <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①①\">Promise</a></code> and abort the remaining steps.</p>"
         },
         {
           "html": "<p>Let <var>viewport width</var> be the width of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1③⑤\">viewport</a> excluding the width of the scroll bar, if any.</p>"
@@ -348,13 +381,16 @@
           "html": "<p>Let <var>position</var> be the scroll position the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1④⑤\">viewport</a> would have\nby aligning the x-coordinate <var>x</var> of the <span id=\"ref-for-x1④⑥\">viewport</span> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area⑧\">scrolling area</a>\nwith the left of the <span id=\"ref-for-x1④⑦\">viewport</span>\nand aligning the y-coordinate <var>y</var> of the <span id=\"ref-for-x1④⑧\">viewport</span> <span id=\"ref-for-scrolling-area⑨\">scrolling area</span>\nwith the top of the <span id=\"ref-for-x1④⑨\">viewport</span>.</p>"
         },
         {
-          "html": "<p>If <var>position</var> is the same as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑤⓪\">viewport’s</a> current scroll position,\nand the <span id=\"ref-for-x1⑤①\">viewport</span> does not have an ongoing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll③\">smooth scroll</a>, abort these steps.</p>"
+          "html": "<p>If <var>position</var> is the same as the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑤⓪\">viewport’s</a> current scroll position,\nand the <span id=\"ref-for-x1⑤①\">viewport</span> does not have an ongoing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll③\">smooth scroll</a>, return a resolved <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①②\">Promise</a></code> and abort the remaining steps.</p>"
         },
         {
           "html": "<p>Let <var>document</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑤②\">viewport’s</a> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document③\">Document</a></code>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#viewport-perform-a-scroll\" id=\"ref-for-viewport-perform-a-scroll②\">Perform a scroll</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑤③\">viewport</a> to <var>position</var>,\n<var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-4/#root-element\" id=\"ref-for-root-element①\">root element</a> as the associated element, if there is one, or null otherwise,\nand the scroll behavior being the value of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-scrolloptions-behavior\" id=\"ref-for-dom-scrolloptions-behavior\">behavior</a></code> dictionary member of <var>options</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#viewport-perform-a-scroll\" id=\"ref-for-viewport-perform-a-scroll②\">Perform a scroll</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑤③\">viewport</a> to <var>position</var>,\n<var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-4/#root-element\" id=\"ref-for-root-element①\">root element</a> as the associated element, if there is one, or null otherwise,\nand the scroll behavior being the value of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-scrolloptions-behavior\" id=\"ref-for-dom-scrolloptions-behavior\">behavior</a></code> dictionary member of <var>options</var>.\nLet <var>scrollPromise</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①③\">Promise</a></code> returned from this step.</p>"
+        },
+        {
+          "html": "<p>Return <var>scrollPromise</var>.</p>"
         }
       ]
     },
@@ -392,7 +428,7 @@
           "html": "<p>Add the value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-window-scrolly\" id=\"ref-for-dom-window-scrolly②\">scrollY</a></code> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-scrolltooptions-top\" id=\"ref-for-dom-scrolltooptions-top③\">top</a></code> dictionary member.</p>"
         },
         {
-          "html": "<p>Act as if the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-window-scroll\" id=\"ref-for-dom-window-scroll③\">scroll()</a></code> method was invoked with <var>options</var> as the only argument.</p>"
+          "html": "<p>Return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①④\">Promise</a></code> returned from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-window-scroll\" id=\"ref-for-dom-window-scroll③\">scroll()</a></code> after the method is invoked with <var>options</var> as the only argument.</p>"
         }
       ]
     },
@@ -792,13 +828,16 @@
           "html": "<p>Otherwise, if <var>arg</var> is false, then set <var>block</var> to \"<code>end</code>\".</p>"
         },
         {
-          "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-4/#box\" id=\"ref-for-box⑧\">box</a>,\nor is not available to user-agent features,\nthen return.</p>"
+          "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-4/#box\" id=\"ref-for-box⑧\">box</a>,\nor is not available to user-agent features,\nthen return a resolved <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise②②\">Promise</a></code> and abort the remaining steps.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scroll-a-target-into-view\" id=\"ref-for-scroll-a-target-into-view\">Scroll the element into view</a>\nwith <var>behavior</var>, <var>block</var>, <var>inline</var>, and <var>container</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scroll-a-target-into-view\" id=\"ref-for-scroll-a-target-into-view\">Scroll the element into view</a>\nwith <var>behavior</var>, <var>block</var>, <var>inline</var>, and <var>container</var>.\nLet <var>scrollPromise</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise②③\">Promise</a></code> returned from this step</p>"
         },
         {
           "html": "<p>Optionally perform some other action that brings the element to the user’s attention.</p>"
+        },
+        {
+          "html": "<p>Return <var>scrollPromise</var>.</p>"
         }
       ]
     },
@@ -851,28 +890,31 @@
           "html": "<p>Let <var>document</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>.</p>"
         },
         {
-          "html": "<p>If <var>document</var> is not the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>, terminate these steps.</p>"
+          "html": "<p>If <var>document</var> is not the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>, return a resolved <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise②④\">Promise</a></code> and abort the remaining steps.</p>"
         },
         {
           "html": "<p>Let <var>window</var> be the value of <var>document</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-document-defaultview\" id=\"ref-for-dom-document-defaultview\">defaultView</a></code> attribute.</p>"
         },
         {
-          "html": "<p>If <var>window</var> is null, terminate these steps.</p>"
+          "html": "<p>If <var>window</var> is null, return a resolved <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise②⑤\">Promise</a></code> and abort the remaining steps.</p>"
         },
         {
-          "html": "<p>If the element is the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-4/#root-element\" id=\"ref-for-root-element⑨\">root element</a> and <var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\" id=\"ref-for-concept-document-quirks②\">quirks mode</a>, terminate these steps.</p>"
+          "html": "<p>If the element is the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-4/#root-element\" id=\"ref-for-root-element⑨\">root element</a> and <var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\" id=\"ref-for-concept-document-quirks②\">quirks mode</a>, return a resolved <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise②⑥\">Promise</a></code> and abort the remaining steps.</p>"
         },
         {
-          "html": "<p>If the element is the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-4/#root-element\" id=\"ref-for-root-element①⓪\">root element</a> invoke <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-window-scroll\" id=\"ref-for-dom-window-scroll④\">scroll()</a></code> on <var>window</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-window-scrollx\" id=\"ref-for-dom-window-scrollx③\">scrollX</a></code> on <var>window</var> as first argument and <var>y</var> as second argument,\nand terminate these steps.</p>"
+          "html": "<p>If the element is the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-4/#root-element\" id=\"ref-for-root-element①⓪\">root element</a>, return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise②⑦\">Promise</a></code> returned by <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-window-scroll\" id=\"ref-for-dom-window-scroll④\">scroll()</a></code> on <var>window</var> after the method is invoked with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-window-scrollx\" id=\"ref-for-dom-window-scrollx③\">scrollX</a></code> on <var>window</var> as first argument and <var>y</var> as second argument, and abort the remaining steps.</p>"
         },
         {
-          "html": "<p>If the element is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#the-body-element-2\" id=\"ref-for-the-body-element-2⑥\">the <code>body</code> element</a>,\n<var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\" id=\"ref-for-concept-document-quirks③\">quirks mode</a>,\nand the element is not <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#potentially-scrollable\" id=\"ref-for-potentially-scrollable②\">potentially scrollable</a>,\ninvoke <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-window-scroll\" id=\"ref-for-dom-window-scroll⑤\">scroll()</a></code> on <var>window</var> with <var>options</var> as the only argument,\nand terminate these steps.</p>"
+          "html": "<p>If the element is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#the-body-element-2\" id=\"ref-for-the-body-element-2⑥\">the <code>body</code> element</a>,\n<var>document</var> is in <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-quirks\" id=\"ref-for-concept-document-quirks③\">quirks mode</a>,\nand the element is not <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#potentially-scrollable\" id=\"ref-for-potentially-scrollable②\">potentially scrollable</a>,\nreturn the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise②⑧\">Promise</a></code> returned by <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-window-scroll\" id=\"ref-for-dom-window-scroll⑤\">scroll()</a></code> on <var>window</var> after the method is invoked with\n<var>options</var> as the only argument, and abort the remaining steps.</p>"
         },
         {
-          "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-4/#box\" id=\"ref-for-box⑨\">box</a>,\nthe element has no associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box①⓪\">scrolling box</a>,\nor the element has no overflow,\nterminate these steps.</p>"
+          "html": "<p>If the element does not have any associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-4/#box\" id=\"ref-for-box⑨\">box</a>,\nthe element has no associated <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box①⓪\">scrolling box</a>,\nor the element has no overflow,\nreturn a resolved <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise②⑨\">Promise</a></code> and abort the remaining steps.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scroll-an-element\" id=\"ref-for-scroll-an-element\">Scroll the element</a> to <var>x</var>,<var>y</var>,\nwith the scroll behavior being the value of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-scrolloptions-behavior\" id=\"ref-for-dom-scrolloptions-behavior②\">behavior</a></code> dictionary member of <var>options</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scroll-an-element\" id=\"ref-for-scroll-an-element\">Scroll the element</a> to <var>x</var>,<var>y</var>,\nwith the scroll behavior being the value of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-scrolloptions-behavior\" id=\"ref-for-dom-scrolloptions-behavior②\">behavior</a></code> dictionary member of <var>options</var>.  Let <var>scrollPromise</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③⓪\">Promise</a></code> returned from this step.</p>"
+        },
+        {
+          "html": "<p>Return <var>scrollPromise</var>.</p>"
         }
       ]
     },
@@ -922,7 +964,7 @@
           "html": "<p>Add the value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-element-scrolltop\" id=\"ref-for-dom-element-scrolltop②\">scrollTop</a></code> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-scrolltooptions-top\" id=\"ref-for-dom-scrolltooptions-top⑨\">top</a></code> dictionary member.</p>"
         },
         {
-          "html": "<p>Act as if the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-element-scroll\" id=\"ref-for-dom-element-scroll③\">scroll()</a></code> method was invoked with <var>options</var> as the only argument.</p>"
+          "html": "<p>Return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③①\">Promise</a></code> returned by <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-element-scroll\" id=\"ref-for-dom-element-scroll③\">scroll()</a></code> after the method is invoked with <var>options</var> as the only argument.</p>"
         }
       ]
     },
@@ -1328,11 +1370,14 @@
       "rationale": ".algorithm",
       "steps": [
         {
+          "html": "<p>Let <var>ancestorPromises</var> be an empty set of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③②\">Promise</a></code>s.</p>"
+        },
+        {
           "html": "For each ancestor element or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑧③\">viewport</a> that establishes a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scrolling-box\" id=\"ref-for-scrolling-box①④\">scrolling box</a> <var>scrolling box</var>,\nin order of innermost to outermost <span id=\"ref-for-scrolling-box①⑤\">scrolling box</span>, run these substeps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑧\">Document</a></code> associated with <var>target</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> associated with the element or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑧④\">viewport</a> associated with <var>scrolling box</var>, terminate these steps.</p>"
+              "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑧\">Document</a></code> associated with <var>target</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑨\">Document</a></code> associated with the element or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑧④\">viewport</a> associated with <var>scrolling box</var>,\nabort any remaining iteration of this loop.</p>"
             },
             {
               "html": "<p>Let <var>position</var> be the scroll position resulting from running the steps to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#determine-the-scroll-into-view-position\" id=\"ref-for-determine-the-scroll-into-view-position\">determine the scroll-into-view position</a> of <var>target</var> with <var>behavior</var> as the <var>scroll behavior</var>,\n<var>block</var> as the <var>block flow position</var>, <var>inline</var> as the <var>inline base direction position</var> and <var>scrolling box</var> as the <var>scrolling box</var>.</p>"
@@ -1342,7 +1387,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<dl class=\"switch\">\n           <dt>If <var>scrolling box</var> is associated with an element\n    \n           </dt><dd>\n        <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll③\">Perform a scroll</a> of the element’s <var>scrolling box</var> to <var>position</var>, with the element as the associated element and\n        <var>behavior</var> as the scroll behavior.\n    \n           </dd><dt>If <var>scrolling box</var> is associated with a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑧⑤\">viewport</a>\n    \n           </dt><dd>\n            \n          </dd></dl>",
+                  "html": "<dl class=\"switch\">\n           <dt>If <var>scrolling box</var> is associated with an element\n    \n           </dt><dd>\n        <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll③\">Perform a scroll</a> of the element’s <var>scrolling box</var> to <var>position</var>, with the element as the associated element and\n        <var>behavior</var> as the scroll behavior.\n        Add the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③③\">Promise</a></code> retured from this step to the set <var>ancestorPromises</var>.\n    \n           </dd><dt>If <var>scrolling box</var> is associated with a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑧⑤\">viewport</a>\n    \n           </dt><dd>\n            \n          </dd></dl>",
                   "rationale": ".switch",
                   "steps": [
                     {
@@ -1350,7 +1395,7 @@
                       "steps": [
                         {
                           "case": "If scrolling box is associated with an element",
-                          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll③\">Perform a scroll</a> of the element’s <var>scrolling box</var> to <var>position</var>, with the element as the associated element and\n        <var>behavior</var> as the scroll behavior."
+                          "html": "<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll③\">Perform a scroll</a> of the element’s <var>scrolling box</var> to <var>position</var>, with the element as the associated element and\n        <var>behavior</var> as the scroll behavior.\n        Add the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③③\">Promise</a></code> retured from this step to the set <var>ancestorPromises</var>."
                         },
                         {
                           "case": "If scrolling box is associated with a viewport",
@@ -1364,7 +1409,7 @@
                               "html": "<p>Let <var>root element</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-display-4/#root-element\" id=\"ref-for-root-element②③\">root element</a>, if there is one, or null otherwise.</p>"
                             },
                             {
-                              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#viewport-perform-a-scroll\" id=\"ref-for-viewport-perform-a-scroll④\">Perform a scroll</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑧⑦\">viewport</a> to <var>position</var>, with <var>root element</var> as the associated element and <var>behavior</var>\nas the scroll behavior.</p>"
+                              "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#viewport-perform-a-scroll\" id=\"ref-for-viewport-perform-a-scroll④\">Perform a scroll</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑧⑦\">viewport</a> to <var>position</var>, with <var>root element</var> as the associated element and <var>behavior</var>\nas the scroll behavior.\nAdd the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③④\">Promise</a></code> retured from this step in the set <var>ancestorPromises</var>.</p>"
                             }
                           ]
                         }
@@ -1375,9 +1420,18 @@
               ]
             },
             {
-              "html": "<p>If <var>container</var> is not null and either <var>scrolling box</var>\nis a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-ancestor\" id=\"ref-for-concept-shadow-including-inclusive-ancestor①\">shadow-including inclusive ancestor</a> of <var>container</var> or\nis a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑧⑧\">viewport</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">document</a> is a <span id=\"ref-for-concept-shadow-including-inclusive-ancestor②\">shadow-including inclusive ancestor</span> of <var>container</var>,\nabort the rest of these steps.</p>"
+              "html": "<p>If <var>container</var> is not null and either <var>scrolling box</var>\nis a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-ancestor\" id=\"ref-for-concept-shadow-including-inclusive-ancestor①\">shadow-including inclusive ancestor</a> of <var>container</var> or\nis a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/visuren.html#x1\" id=\"ref-for-x1⑧⑧\">viewport</a> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">document</a> is a <span id=\"ref-for-concept-shadow-including-inclusive-ancestor②\">shadow-including inclusive ancestor</span> of <var>container</var>,\nabort any remaining iteration of this loop.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>Let <var>scrollPromise</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③⑤\">Promise</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return <var>scrollPromise</var>, and run the remaining steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Resolve <var>scrollPromise</var> when all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③⑥\">Promise</a></code>s in <var>ancestorPromises</var> have settled.</p>"
         }
       ]
     },
@@ -1432,10 +1486,13 @@
           "html": "<p>Let <var>position</var> be the scroll position <var>box</var> would have by aligning <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area②②\">scrolling area</a> x-coordinate <var>x</var> with the left of <var>box</var> and aligning <span id=\"ref-for-scrolling-area②③\">scrolling area</span> y-coordinate <var>y</var> with the top of <var>box</var>.</p>"
         },
         {
-          "html": "<p>If <var>position</var> is the same as <var>box</var>’s current scroll position, and <var>box</var> does not have an ongoing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll⑤\">smooth scroll</a>, abort these steps.</p>"
+          "html": "<p>If <var>position</var> is the same as <var>box</var>’s current scroll position, and <var>box</var> does not have an ongoing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll\" id=\"ref-for-concept-smooth-scroll⑤\">smooth scroll</a>, return a resolved <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③⑦\">Promise</a></code> and abort the remaining steps.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll④\">Perform a scroll</a> of <var>box</var> to <var>position</var>, <var>element</var> as the associated element and <var>behavior</var> as the scroll behavior.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#perform-a-scroll\" id=\"ref-for-perform-a-scroll④\">Perform a scroll</a> of <var>box</var> to <var>position</var>, <var>element</var> as the associated element and <var>behavior</var> as the scroll behavior.\nLet <var>scrollPromise</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise③⑧\">Promise</a></code> returned from this step.</p>"
+        },
+        {
+          "html": "<p>Return <var>scrollPromise</var>.</p>"
         }
       ]
     },
