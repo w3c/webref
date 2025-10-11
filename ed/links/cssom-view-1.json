@@ -605,22 +605,32 @@
           "overflow-scroll-position"
         ]
       },
+      "https://www.w3.org/TR/css-backgrounds-3/": {},
+      "https://www.w3.org/TR/css-borders-4/": {},
       "https://www.w3.org/TR/css-box-4/": {},
       "https://www.w3.org/TR/css-break-4/": {},
+      "https://www.w3.org/TR/css-color-4/": {},
+      "https://www.w3.org/TR/css-contain-2/": {},
       "https://www.w3.org/TR/css-display-4/": {},
       "https://www.w3.org/TR/css-overflow-3/": {},
+      "https://www.w3.org/TR/css-position-3/": {},
       "https://www.w3.org/TR/css-pseudo-4/": {},
       "https://www.w3.org/TR/css-scoping-1/": {},
       "https://www.w3.org/TR/css-scroll-snap-1/": {},
       "https://www.w3.org/TR/css-scroll-snap-2/": {},
+      "https://www.w3.org/TR/css-text-3/": {},
       "https://www.w3.org/TR/css-text-4/": {},
       "https://www.w3.org/TR/css-transforms-1/": {},
+      "https://www.w3.org/TR/css-ui-4/": {},
       "https://www.w3.org/TR/css-values-3/": {},
       "https://www.w3.org/TR/css-values-4/": {},
       "https://www.w3.org/TR/css-viewport-1/": {},
+      "https://www.w3.org/TR/css-writing-modes-3/": {},
       "https://www.w3.org/TR/css-writing-modes-4/": {},
       "https://www.w3.org/TR/cssom-1/": {},
+      "https://www.w3.org/TR/cssom-view-1/": {},
       "https://www.w3.org/TR/geometry-1/": {},
+      "https://www.w3.org/TR/mediaqueries-5/": {},
       "https://www.w3.org/TR/selectors-4/": {},
       "https://www.w3.org/TR/uievents/": {},
       "https://www.w3.org/groups/wg/css": {},
@@ -643,6 +653,7 @@
           "parent-element",
           "document",
           "concept-event-fire",
+          "dom-event-istrusted",
           "eventtarget",
           "callbackdef-eventlistener",
           "add-an-event-listener",
@@ -652,27 +663,52 @@
           "eventtarget-event-listener-list",
           "event-listener-capture",
           "remove-an-event-listener",
+          "dom-eventtarget-addeventlistener",
+          "dom-eventtarget-removeeventlistener",
           "event",
           "dictdef-eventinit",
           "element",
           "shadowroot",
           "concept-node",
+          "boundary-point-node",
+          "concept-tree-root",
+          "concept-shadow-including-inclusive-ancestor",
+          "concept-tree-index",
+          "concept-documentfragment-host",
+          "concept-tree-parent",
           "concept-document-quirks",
           "node",
+          "range",
+          "concept-range-start-node",
+          "concept-range-end-node",
+          "concept-range-start-offset",
+          "concept-range-end-offset",
           "concept-node-document",
           "concept-element",
           "concept-range",
           "concept-attribute-element",
           "concept-document",
           "concept-closed-shadow-hidden",
-          "range",
-          "dispatch-flag",
-          "text"
+          "text",
+          "dispatch-flag"
         ]
       },
       "https://drafts.csswg.org/css-scoping-1/": {
         "anchors": [
           "flat-tree"
+        ]
+      },
+      "https://drafts.csswg.org/css-ui-4/": {
+        "anchors": [
+          "propdef-pointer-events"
+        ]
+      },
+      "https://drafts.csswg.org/css-viewport/": {
+        "anchors": [
+          "scaled",
+          "unscaled",
+          "effective-zoom",
+          "propdef-zoom"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -688,6 +724,7 @@
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
           "fully-active",
+          "auxiliary-browsing-context",
           "nav-document"
         ]
       },
@@ -712,7 +749,16 @@
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
           "concept-document-window",
-          "window"
+          "window",
+          "windowproxy",
+          "window-bc",
+          "dom-open",
+          "dom-document-defaultview"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/rendering.html": {
+        "anchors": [
+          "being-rendered"
         ]
       },
       "https://html.spec.whatwg.org/multipage/sections.html": {
@@ -722,6 +768,7 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
+          "concept-relevant-global",
           "event-loop",
           "eventhandler",
           "event-handlers",
@@ -748,11 +795,13 @@
           "idl-undefined",
           "idl-long",
           "idl-double",
+          "this",
           "dfn-convert-ecmascript-to-idl-value",
           "Exposed",
           "idl-boolean",
           "idl-unsigned-long",
-          "idl-sequence"
+          "idl-sequence",
+          "idl-DOMString"
         ]
       },
       "https://www.w3.org/TR/CSS2/intro.html": {
@@ -775,16 +824,39 @@
           "content-distribution-properties"
         ]
       },
+      "https://www.w3.org/TR/css-backgrounds-3/": {
+        "anchors": [
+          "valdef-line-style-double"
+        ]
+      },
+      "https://www.w3.org/TR/css-borders-4/": {
+        "anchors": [
+          "propdef-border-top-width",
+          "propdef-border-left-width"
+        ]
+      },
       "https://www.w3.org/TR/css-box-4/": {
         "anchors": [
           "margin-edge",
           "padding-edge",
-          "border-edge"
+          "border-edge",
+          "border-box"
         ]
       },
       "https://www.w3.org/TR/css-break-4/": {
         "anchors": [
           "box-fragment"
+        ]
+      },
+      "https://www.w3.org/TR/css-color-4/": {
+        "anchors": [
+          "propdef-opacity"
+        ]
+      },
+      "https://www.w3.org/TR/css-contain-2/": {
+        "anchors": [
+          "propdef-content-visibility",
+          "skips-its-contents"
         ]
       },
       "https://www.w3.org/TR/css-display-4/": {
@@ -795,7 +867,16 @@
           "valdef-display-table-column",
           "valdef-display-table-column-group",
           "root-element",
-          "invisible"
+          "valdef-display-table",
+          "valdef-display-inline-table",
+          "anonymous",
+          "block-box",
+          "box-tree",
+          "invisible",
+          "containing-block",
+          "principal-box",
+          "inline-level-box",
+          "block-level"
         ]
       },
       "https://www.w3.org/TR/css-overflow-3/": {
@@ -809,7 +890,15 @@
           "propdef-scroll-behavior",
           "valdef-scroll-behavior-smooth",
           "scroll-container",
-          "classic-scrollbars"
+          "classic-scrollbars",
+          "valdef-scroll-behavior-auto"
+        ]
+      },
+      "https://www.w3.org/TR/css-position-3/": {
+        "anchors": [
+          "propdef-position",
+          "valdef-position-fixed",
+          "valdef-position-static"
         ]
       },
       "https://www.w3.org/TR/css-pseudo-4/": {
@@ -817,11 +906,17 @@
           "csspseudoelement"
         ]
       },
+      "https://www.w3.org/TR/css-scoping-1/": {
+        "anchors": [
+          "shadow-root"
+        ]
+      },
       "https://www.w3.org/TR/css-scroll-snap-1/": {
         "anchors": [
           "scroll-snap-position",
           "scroll-snap",
-          "scroll-snap-container"
+          "scroll-snap-container",
+          "propdef-scroll-snap-type"
         ]
       },
       "https://www.w3.org/TR/css-scroll-snap-2/": {
@@ -830,7 +925,12 @@
           "eventual-snap-target",
           "document-update-scrollsnapchange-targets",
           "scrollsnapchangetargetblock",
-          "scrollsnapchangetargetinline"
+          "scrollsnapchangetargetinline",
+          "snapevent",
+          "eventdef-snapevent-scrollsnapchange",
+          "dom-snapevent-snaptargetblock",
+          "dom-snapevent-snaptargetinline",
+          "eventdef-snapevent-scrollsnapchanging"
         ]
       },
       "https://www.w3.org/TR/css-text-4/": {
@@ -863,11 +963,20 @@
         "anchors": [
           "domrect",
           "domrectlist",
+          "dom-domrect-x",
+          "dom-domrect-y",
+          "dom-domrect-width",
+          "dom-domrect-height",
           "domquad",
           "dictdef-domquadinit",
           "domrectreadonly",
           "dompoint",
           "dictdef-dompointinit"
+        ]
+      },
+      "https://www.w3.org/TR/mediaqueries-5/": {
+        "anchors": [
+          "descdef-media-color"
         ]
       },
       "https://www.w3.org/TR/selectors-4/": {
