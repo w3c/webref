@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "CSSOM View Module",
+      "title": "CSSOM View Module Level 1",
       "url": "https://www.w3.org/TR/cssom-view-1/"
     },
     "fragment": "[Exposed=Window]\ninterface VisualViewport : EventTarget {\n  readonly attribute double offsetLeft;\n  readonly attribute double offsetTop;\n\n  readonly attribute double pageLeft;\n  readonly attribute double pageTop;\n\n  readonly attribute double width;\n  readonly attribute double height;\n\n  readonly attribute double scale;\n\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n  attribute EventHandler onscrollend;\n};",

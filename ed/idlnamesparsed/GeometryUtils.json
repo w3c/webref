@@ -3,7 +3,7 @@
   "type": "interface mixin",
   "defined": {
     "spec": {
-      "title": "CSSOM View Module",
+      "title": "CSSOM View Module Level 1",
       "url": "https://www.w3.org/TR/cssom-view-1/"
     },
     "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",

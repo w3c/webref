@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "CSS Object Model (CSSOM)",
+      "title": "CSS Object Model (CSSOM) Module Level 1",
       "url": "https://www.w3.org/TR/cssom-1/"
     },
     "fragment": "[Exposed=Window]\ninterface CSSStyleSheet : StyleSheet {\n  constructor(optional CSSStyleSheetInit options = {});\n\n  readonly attribute CSSRule? ownerRule;\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n\n  Promise<CSSStyleSheet> replace(USVString text);\n  undefined replaceSync(USVString text);\n};",
@@ -12,7 +12,7 @@
   "extended": [
     {
       "spec": {
-        "title": "CSS Object Model (CSSOM)",
+        "title": "CSS Object Model (CSSOM) Module Level 1",
         "url": "https://www.w3.org/TR/cssom-1/"
       },
       "fragment": "partial interface CSSStyleSheet {\n  [SameObject] readonly attribute CSSRuleList rules;\n  long addRule(optional DOMString selector = \"undefined\", optional DOMString style = \"undefined\", optional unsigned long index);\n  undefined removeRule(optional unsigned long index = 0);\n};"
@@ -23,7 +23,7 @@
     "type": "interface",
     "defined": {
       "spec": {
-        "title": "CSS Object Model (CSSOM)",
+        "title": "CSS Object Model (CSSOM) Module Level 1",
         "url": "https://www.w3.org/TR/cssom-1/"
       },
       "fragment": "[Exposed=Window]\ninterface StyleSheet {\n  readonly attribute CSSOMString type;\n  readonly attribute USVString? href;\n  readonly attribute (Element or ProcessingInstruction)? ownerNode;\n  readonly attribute CSSStyleSheet? parentStyleSheet;\n  readonly attribute DOMString? title;\n  [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n  attribute boolean disabled;\n};",

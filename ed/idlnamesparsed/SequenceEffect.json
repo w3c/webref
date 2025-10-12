@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Web Animations Level 2",
+      "title": "Web Animations Module Level 2",
       "url": "https://www.w3.org/TR/web-animations-2/"
     },
     "fragment": "[Exposed=Window]\ninterface SequenceEffect : GroupEffect {\n  constructor(sequence<AnimationEffect>? children,\n              optional (unrestricted double or EffectTiming) timing = {});\n\n  SequenceEffect clone ();\n};",
@@ -15,7 +15,7 @@
     "type": "interface",
     "defined": {
       "spec": {
-        "title": "Web Animations Level 2",
+        "title": "Web Animations Module Level 2",
         "url": "https://www.w3.org/TR/web-animations-2/"
       },
       "fragment": "[Exposed=Window]\ninterface GroupEffect {\n  constructor(sequence<AnimationEffect>? children,\n              optional (unrestricted double or EffectTiming) timing = {});\n\n  readonly attribute AnimationNodeList  children;\n  readonly attribute AnimationEffect?   firstChild;\n  readonly attribute AnimationEffect?   lastChild;\n  GroupEffect clone ();\n\n  undefined prepend (AnimationEffect... effects);\n  undefined append (AnimationEffect... effects);\n};",

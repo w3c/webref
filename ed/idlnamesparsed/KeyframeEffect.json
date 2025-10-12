@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Web Animations",
+      "title": "Web Animations Module Level 1",
       "url": "https://www.w3.org/TR/web-animations-1/"
     },
     "fragment": "[Exposed=Window]\ninterface KeyframeEffect : AnimationEffect {\n  constructor(Element?       target,\n              object?        keyframes,\n              optional (unrestricted double or KeyframeEffectOptions) options = {});\n  constructor(KeyframeEffect source);\n  attribute Element?           target;\n  attribute CSSOMString?       pseudoElement;\n  attribute CompositeOperation composite;\n  sequence<object> getKeyframes();\n  undefined        setKeyframes(object? keyframes);\n};",
@@ -12,7 +12,7 @@
   "extended": [
     {
       "spec": {
-        "title": "Web Animations Level 2",
+        "title": "Web Animations Module Level 2",
         "url": "https://www.w3.org/TR/web-animations-2/"
       },
       "fragment": "partial interface KeyframeEffect {\n    attribute IterationCompositeOperation    iterationComposite;\n};"
@@ -23,7 +23,7 @@
     "type": "interface",
     "defined": {
       "spec": {
-        "title": "Web Animations",
+        "title": "Web Animations Module Level 1",
         "url": "https://www.w3.org/TR/web-animations-1/"
       },
       "fragment": "[Exposed=Window]\ninterface AnimationEffect {\n    EffectTiming         getTiming();\n    ComputedEffectTiming getComputedTiming();\n    undefined            updateTiming(optional OptionalEffectTiming timing = {});\n};",
@@ -32,7 +32,7 @@
     "extended": [
       {
         "spec": {
-          "title": "Web Animations Level 2",
+          "title": "Web Animations Module Level 2",
           "url": "https://www.w3.org/TR/web-animations-2/"
         },
         "fragment": "[Exposed=Window]\npartial interface AnimationEffect {\n    // Timing hierarchy\n    readonly attribute GroupEffect?     parent;\n    readonly attribute AnimationEffect? previousSibling;\n    readonly attribute AnimationEffect? nextSibling;\n\n    undefined before (AnimationEffect... effects);\n    undefined after (AnimationEffect... effects);\n    undefined replace (AnimationEffect... effects);\n    undefined remove ();\n};"

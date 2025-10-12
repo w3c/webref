@@ -145,14 +145,14 @@
     },
     {
       "spec": {
-        "title": "CSSOM View Module",
+        "title": "CSSOM View Module Level 1",
         "url": "https://www.w3.org/TR/cssom-view-1/"
       },
       "fragment": "partial interface Document {\n  Element? elementFromPoint(double x, double y);\n  sequence<Element> elementsFromPoint(double x, double y);\n  CaretPosition? caretPositionFromPoint(double x, double y, optional CaretPositionFromPointOptions options = {});\n  readonly attribute Element? scrollingElement;\n};"
     },
     {
       "spec": {
-        "title": "CSSOM View Module",
+        "title": "CSSOM View Module Level 1",
         "url": "https://www.w3.org/TR/cssom-view-1/"
       },
       "fragment": "Document includes GeometryUtils;"
@@ -194,7 +194,7 @@
     },
     {
       "spec": {
-        "title": "Web Animations",
+        "title": "Web Animations Module Level 1",
         "url": "https://www.w3.org/TR/web-animations-1/"
       },
       "fragment": "partial interface Document {\n    readonly attribute DocumentTimeline timeline;\n};"
@@ -281,7 +281,7 @@
         },
         {
           "spec": {
-            "title": "CSS Object Model (CSSOM)",
+            "title": "CSS Object Model (CSSOM) Module Level 1",
             "url": "https://www.w3.org/TR/cssom-1/"
           },
           "fragment": "partial interface mixin DocumentOrShadowRoot {\n  [SameObject] readonly attribute StyleSheetList styleSheets;\n  attribute ObservableArray<CSSStyleSheet> adoptedStyleSheets;\n};"
@@ -302,7 +302,7 @@
         },
         {
           "spec": {
-            "title": "Web Animations",
+            "title": "Web Animations Module Level 1",
             "url": "https://www.w3.org/TR/web-animations-1/"
           },
           "fragment": "partial interface mixin DocumentOrShadowRoot {\n    sequence<Animation> getAnimations();\n};"
@@ -362,7 +362,7 @@
         },
         {
           "spec": {
-            "title": "CSS Animations Level 1",
+            "title": "CSS Animations Module Level 1",
             "url": "https://www.w3.org/TR/css-animations-1/"
           },
           "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onanimationstart;\n  attribute EventHandler onanimationiteration;\n  attribute EventHandler onanimationend;\n  attribute EventHandler onanimationcancel;\n};"
@@ -376,7 +376,7 @@
         },
         {
           "spec": {
-            "title": "CSS Transitions Level 1",
+            "title": "CSS Transitions Module Level 1",
             "url": "https://www.w3.org/TR/css-transitions-1/"
           },
           "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler ontransitionrun;\n  attribute EventHandler ontransitionstart;\n  attribute EventHandler ontransitionend;\n  attribute EventHandler ontransitioncancel;\n};"
@@ -433,7 +433,7 @@
       "type": "interface mixin",
       "defined": {
         "spec": {
-          "title": "CSSOM View Module",
+          "title": "CSSOM View Module Level 1",
           "url": "https://www.w3.org/TR/cssom-view-1/"
         },
         "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",

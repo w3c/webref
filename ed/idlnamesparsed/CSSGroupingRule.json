@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "CSS Object Model (CSSOM)",
+      "title": "CSS Object Model (CSSOM) Module Level 1",
       "url": "https://www.w3.org/TR/cssom-1/"
     },
     "fragment": "[Exposed=Window]\ninterface CSSGroupingRule : CSSRule {\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n};",
@@ -15,7 +15,7 @@
     "type": "interface",
     "defined": {
       "spec": {
-        "title": "CSS Object Model (CSSOM)",
+        "title": "CSS Object Model (CSSOM) Module Level 1",
         "url": "https://www.w3.org/TR/cssom-1/"
       },
       "fragment": "[Exposed=Window]\ninterface CSSRule {\n  attribute CSSOMString cssText;\n  readonly attribute CSSRule? parentRule;\n  readonly attribute CSSStyleSheet? parentStyleSheet;\n\n  // the following attribute and constants are historical\n  readonly attribute unsigned short type;\n  const unsigned short STYLE_RULE = 1;\n  const unsigned short CHARSET_RULE = 2;\n  const unsigned short IMPORT_RULE = 3;\n  const unsigned short MEDIA_RULE = 4;\n  const unsigned short FONT_FACE_RULE = 5;\n  const unsigned short PAGE_RULE = 6;\n  const unsigned short MARGIN_RULE = 9;\n  const unsigned short NAMESPACE_RULE = 10;\n};",
@@ -24,7 +24,7 @@
     "extended": [
       {
         "spec": {
-          "title": "CSS Animations Level 1",
+          "title": "CSS Animations Module Level 1",
           "url": "https://www.w3.org/TR/css-animations-1/"
         },
         "fragment": "partial interface CSSRule {\n    const unsigned short KEYFRAMES_RULE = 7;\n    const unsigned short KEYFRAME_RULE = 8;\n};"
@@ -38,7 +38,7 @@
       },
       {
         "spec": {
-          "title": "CSS Counter Styles Level 3",
+          "title": "CSS Counter Styles Module Level 3",
           "url": "https://www.w3.org/TR/css-counter-styles-3/"
         },
         "fragment": "partial interface CSSRule {\n    const unsigned short COUNTER_STYLE_RULE = 11;\n};"

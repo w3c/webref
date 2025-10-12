@@ -166,7 +166,7 @@
     },
     {
       "spec": {
-        "title": "CSS Spatial Navigation Level 1",
+        "title": "CSS Spatial Navigation Module Level 1",
         "url": "https://www.w3.org/TR/css-nav-1/"
       },
       "fragment": "partial interface Window {\n    undefined navigate(SpatialNavigationDirection dir);\n};"
@@ -180,14 +180,14 @@
     },
     {
       "spec": {
-        "title": "CSS Object Model (CSSOM)",
+        "title": "CSS Object Model (CSSOM) Module Level 1",
         "url": "https://www.w3.org/TR/cssom-1/"
       },
       "fragment": "partial interface Window {\n  [NewObject] CSSStyleProperties getComputedStyle(Element elt, optional CSSOMString? pseudoElt);\n};"
     },
     {
       "spec": {
-        "title": "CSSOM View Module",
+        "title": "CSSOM View Module Level 1",
         "url": "https://www.w3.org/TR/cssom-view-1/"
       },
       "fragment": "partial interface Window {\n    [NewObject] MediaQueryList matchMedia(CSSOMString query);\n    [SameObject, Replaceable] readonly attribute Screen screen;\n    [SameObject, Replaceable] readonly attribute VisualViewport? visualViewport;\n\n    // browsing context\n    undefined moveTo(long x, long y);\n    undefined moveBy(long x, long y);\n    undefined resizeTo(long width, long height);\n    undefined resizeBy(long x, long y);\n\n    // viewport\n    [Replaceable] readonly attribute long innerWidth;\n    [Replaceable] readonly attribute long innerHeight;\n\n    // viewport scrolling\n    [Replaceable] readonly attribute double scrollX;\n    [Replaceable] readonly attribute double pageXOffset;\n    [Replaceable] readonly attribute double scrollY;\n    [Replaceable] readonly attribute double pageYOffset;\n    Promise<undefined> scroll(optional ScrollToOptions options = {});\n    Promise<undefined> scroll(unrestricted double x, unrestricted double y);\n    Promise<undefined> scrollTo(optional ScrollToOptions options = {});\n    Promise<undefined> scrollTo(unrestricted double x, unrestricted double y);\n    Promise<undefined> scrollBy(optional ScrollToOptions options = {});\n    Promise<undefined> scrollBy(unrestricted double x, unrestricted double y);\n\n    // client\n    [Replaceable] readonly attribute long screenX;\n    [Replaceable] readonly attribute long screenLeft;\n    [Replaceable] readonly attribute long screenY;\n    [Replaceable] readonly attribute long screenTop;\n    [Replaceable] readonly attribute long outerWidth;\n    [Replaceable] readonly attribute long outerHeight;\n    [Replaceable] readonly attribute double devicePixelRatio;\n};"
@@ -287,7 +287,7 @@
         },
         {
           "spec": {
-            "title": "CSS Animations Level 1",
+            "title": "CSS Animations Module Level 1",
             "url": "https://www.w3.org/TR/css-animations-1/"
           },
           "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onanimationstart;\n  attribute EventHandler onanimationiteration;\n  attribute EventHandler onanimationend;\n  attribute EventHandler onanimationcancel;\n};"
@@ -301,7 +301,7 @@
         },
         {
           "spec": {
-            "title": "CSS Transitions Level 1",
+            "title": "CSS Transitions Module Level 1",
             "url": "https://www.w3.org/TR/css-transitions-1/"
           },
           "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler ontransitionrun;\n  attribute EventHandler ontransitionstart;\n  attribute EventHandler ontransitionend;\n  attribute EventHandler ontransitioncancel;\n};"

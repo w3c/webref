@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Scroll-driven Animations",
+      "title": "Scroll-driven Animations Module Level 1",
       "url": "https://www.w3.org/TR/scroll-animations-1/"
     },
     "fragment": "[Exposed=Window]\ninterface ViewTimeline : ScrollTimeline {\n  constructor(optional ViewTimelineOptions options = {});\n  readonly attribute Element subject;\n  readonly attribute CSSNumericValue startOffset;\n  readonly attribute CSSNumericValue endOffset;\n};",
@@ -15,7 +15,7 @@
     "type": "interface",
     "defined": {
       "spec": {
-        "title": "Scroll-driven Animations",
+        "title": "Scroll-driven Animations Module Level 1",
         "url": "https://www.w3.org/TR/scroll-animations-1/"
       },
       "fragment": "[Exposed=Window]\ninterface ScrollTimeline : AnimationTimeline {\n  constructor(optional ScrollTimelineOptions options = {});\n  readonly attribute Element? source;\n  readonly attribute ScrollAxis axis;\n};",
@@ -27,7 +27,7 @@
       "type": "interface",
       "defined": {
         "spec": {
-          "title": "Web Animations",
+          "title": "Web Animations Module Level 1",
           "url": "https://www.w3.org/TR/web-animations-1/"
         },
         "fragment": "[Exposed=Window]\ninterface AnimationTimeline {\n};",
@@ -36,7 +36,7 @@
       "extended": [
         {
           "spec": {
-            "title": "Web Animations Level 2",
+            "title": "Web Animations Module Level 2",
             "url": "https://www.w3.org/TR/web-animations-2/"
           },
           "fragment": "[Exposed=Window]\npartial interface AnimationTimeline {\n    readonly attribute CSSNumberish? currentTime;\n    readonly attribute CSSNumberish? duration;\n    Animation play (optional AnimationEffect? effect = null);\n};"

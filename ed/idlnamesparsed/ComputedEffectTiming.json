@@ -3,7 +3,7 @@
   "type": "dictionary",
   "defined": {
     "spec": {
-      "title": "Web Animations",
+      "title": "Web Animations Module Level 1",
       "url": "https://www.w3.org/TR/web-animations-1/"
     },
     "fragment": "dictionary ComputedEffectTiming : EffectTiming {\n  double?              progress;\n  unrestricted double? currentIteration;\n};",
@@ -12,7 +12,7 @@
   "extended": [
     {
       "spec": {
-        "title": "Web Animations Level 2",
+        "title": "Web Animations Module Level 2",
         "url": "https://www.w3.org/TR/web-animations-2/"
       },
       "fragment": "partial dictionary ComputedEffectTiming {\n    CSSNumberish         startTime;\n    CSSNumberish         endTime;\n    CSSNumberish         activeDuration;\n    CSSNumberish?        localTime;\n};"
@@ -23,7 +23,7 @@
     "type": "dictionary",
     "defined": {
       "spec": {
-        "title": "Web Animations",
+        "title": "Web Animations Module Level 1",
         "url": "https://www.w3.org/TR/web-animations-1/"
       },
       "fragment": "dictionary EffectTiming {\n  FillMode                           fill = \"auto\";\n  double                             iterationStart = 0.0;\n  unrestricted double                iterations = 1.0;\n  PlaybackDirection                  direction = \"normal\";\n  DOMString                          easing = \"linear\";\n};",
@@ -32,7 +32,7 @@
     "extended": [
       {
         "spec": {
-          "title": "Web Animations Level 2",
+          "title": "Web Animations Module Level 2",
           "url": "https://www.w3.org/TR/web-animations-2/"
         },
         "fragment": "partial dictionary EffectTiming {\n    double delay;\n    double endDelay;\n    double playbackRate = 1.0;\n    (unrestricted double or CSSNumericValue or DOMString) duration = \"auto\";\n};"

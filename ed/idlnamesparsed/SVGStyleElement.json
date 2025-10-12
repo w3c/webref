@@ -32,7 +32,7 @@
     "extended": [
       {
         "spec": {
-          "title": "CSS Object Model (CSSOM)",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
           "url": "https://www.w3.org/TR/cssom-1/"
         },
         "fragment": "SVGElement includes ElementCSSInlineStyle;"
@@ -122,7 +122,7 @@
         },
         {
           "spec": {
-            "title": "CSS Spatial Navigation Level 1",
+            "title": "CSS Spatial Navigation Module Level 1",
             "url": "https://www.w3.org/TR/css-nav-1/"
           },
           "fragment": "partial interface Element {\n    Node getSpatialNavigationContainer();\n    sequence<Node> focusableAreas(optional FocusableAreasOption option = {});\n    Node? spatialNavigationSearch(SpatialNavigationDirection dir, optional SpatialNavigationSearchOptions options = {});\n};"
@@ -143,7 +143,7 @@
         },
         {
           "spec": {
-            "title": "CSS Shadow Parts",
+            "title": "CSS Shadow Parts Module Level 1",
             "url": "https://www.w3.org/TR/css-shadow-parts-1/"
           },
           "fragment": "partial interface Element {\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList part;\n};"
@@ -164,14 +164,14 @@
         },
         {
           "spec": {
-            "title": "CSSOM View Module",
+            "title": "CSSOM View Module Level 1",
             "url": "https://www.w3.org/TR/cssom-view-1/"
           },
           "fragment": "partial interface Element {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n\n  boolean checkVisibility(optional CheckVisibilityOptions options = {});\n\n  Promise<undefined> scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});\n  Promise<undefined> scroll(optional ScrollToOptions options = {});\n  Promise<undefined> scroll(unrestricted double x, unrestricted double y);\n  Promise<undefined> scrollTo(optional ScrollToOptions options = {});\n  Promise<undefined> scrollTo(unrestricted double x, unrestricted double y);\n  Promise<undefined> scrollBy(optional ScrollToOptions options = {});\n  Promise<undefined> scrollBy(unrestricted double x, unrestricted double y);\n  attribute unrestricted double scrollTop;\n  attribute unrestricted double scrollLeft;\n  readonly attribute long scrollWidth;\n  readonly attribute long scrollHeight;\n  readonly attribute long clientTop;\n  readonly attribute long clientLeft;\n  readonly attribute long clientWidth;\n  readonly attribute long clientHeight;\n  readonly attribute double currentCSSZoom;\n};"
         },
         {
           "spec": {
-            "title": "CSSOM View Module",
+            "title": "CSSOM View Module Level 1",
             "url": "https://www.w3.org/TR/cssom-view-1/"
           },
           "fragment": "// like Range\nElement includes GeometryUtils;"
@@ -199,7 +199,7 @@
         },
         {
           "spec": {
-            "title": "Web Animations",
+            "title": "Web Animations Module Level 1",
             "url": "https://www.w3.org/TR/web-animations-1/"
           },
           "fragment": "Element includes Animatable;"
@@ -323,7 +323,7 @@
           "type": "interface mixin",
           "defined": {
             "spec": {
-              "title": "CSSOM View Module",
+              "title": "CSSOM View Module Level 1",
               "url": "https://www.w3.org/TR/cssom-view-1/"
             },
             "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
@@ -353,7 +353,7 @@
           "type": "interface mixin",
           "defined": {
             "spec": {
-              "title": "Web Animations",
+              "title": "Web Animations Module Level 1",
               "url": "https://www.w3.org/TR/web-animations-1/"
             },
             "fragment": "interface mixin Animatable {\n    Animation           animate(object? keyframes,\n                                optional (unrestricted double or KeyframeAnimationOptions) options = {});\n    sequence<Animation> getAnimations(optional GetAnimationsOptions options = {});\n};",
@@ -371,7 +371,7 @@
         "type": "interface mixin",
         "defined": {
           "spec": {
-            "title": "CSS Object Model (CSSOM)",
+            "title": "CSS Object Model (CSSOM) Module Level 1",
             "url": "https://www.w3.org/TR/cssom-1/"
           },
           "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleProperties style;\n};",
@@ -410,7 +410,7 @@
           },
           {
             "spec": {
-              "title": "CSS Animations Level 1",
+              "title": "CSS Animations Module Level 1",
               "url": "https://www.w3.org/TR/css-animations-1/"
             },
             "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onanimationstart;\n  attribute EventHandler onanimationiteration;\n  attribute EventHandler onanimationend;\n  attribute EventHandler onanimationcancel;\n};"
@@ -424,7 +424,7 @@
           },
           {
             "spec": {
-              "title": "CSS Transitions Level 1",
+              "title": "CSS Transitions Module Level 1",
               "url": "https://www.w3.org/TR/css-transitions-1/"
             },
             "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler ontransitionrun;\n  attribute EventHandler ontransitionstart;\n  attribute EventHandler ontransitionend;\n  attribute EventHandler ontransitioncancel;\n};"
@@ -499,7 +499,7 @@
       "type": "interface mixin",
       "defined": {
         "spec": {
-          "title": "CSS Object Model (CSSOM)",
+          "title": "CSS Object Model (CSSOM) Module Level 1",
           "url": "https://www.w3.org/TR/cssom-1/"
         },
         "fragment": "interface mixin LinkStyle {\n  readonly attribute CSSStyleSheet? sheet;\n};",

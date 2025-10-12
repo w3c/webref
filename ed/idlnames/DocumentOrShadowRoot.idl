@@ -13,7 +13,7 @@ partial interface mixin DocumentOrShadowRoot {
   readonly attribute Element? activeElement;
 };
 
-// Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)
+// Source: CSS Object Model (CSSOM) Module Level 1 (https://www.w3.org/TR/cssom-1/)
 partial interface mixin DocumentOrShadowRoot {
   [SameObject] readonly attribute StyleSheetList styleSheets;
   attribute ObservableArray<CSSStyleSheet> adoptedStyleSheets;
@@ -29,7 +29,7 @@ partial interface mixin DocumentOrShadowRoot {
   readonly attribute Element? pointerLockElement;
 };
 
-// Source: Web Animations (https://www.w3.org/TR/web-animations-1/)
+// Source: Web Animations Module Level 1 (https://www.w3.org/TR/web-animations-1/)
 partial interface mixin DocumentOrShadowRoot {
     sequence<Animation> getAnimations();
 };

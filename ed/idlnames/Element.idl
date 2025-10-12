@@ -82,7 +82,7 @@ partial interface Element {
     [CEReactions, Reflect] attribute DOMString elementTiming;
 };
 
-// Source: CSS Spatial Navigation Level 1 (https://www.w3.org/TR/css-nav-1/)
+// Source: CSS Spatial Navigation Module Level 1 (https://www.w3.org/TR/css-nav-1/)
 partial interface Element {
     Node getSpatialNavigationContainer();
     sequence<Node> focusableAreas(optional FocusableAreasOption option = {});
@@ -97,7 +97,7 @@ partial interface Element {
 // Source: CSS Regions Module Level 1 (https://www.w3.org/TR/css-regions-1/)
 Element includes Region;
 
-// Source: CSS Shadow Parts (https://www.w3.org/TR/css-shadow-parts-1/)
+// Source: CSS Shadow Parts Module Level 1 (https://www.w3.org/TR/css-shadow-parts-1/)
 partial interface Element {
   [SameObject, PutForwards=value] readonly attribute DOMTokenList part;
 };
@@ -115,7 +115,7 @@ partial interface Element {
   readonly attribute ViewTransition? activeViewTransition;
 };
 
-// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
+// Source: CSSOM View Module Level 1 (https://www.w3.org/TR/cssom-view-1/)
 partial interface Element {
   DOMRectList getClientRects();
   [NewObject] DOMRect getBoundingClientRect();
@@ -140,7 +140,7 @@ partial interface Element {
   readonly attribute double currentCSSZoom;
 };
 
-// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
+// Source: CSSOM View Module Level 1 (https://www.w3.org/TR/cssom-view-1/)
 // like Range
 Element includes GeometryUtils;
 
@@ -159,5 +159,5 @@ partial interface Element {
 // Source: Accessible Rich Internet Applications (WAI-ARIA) 1.3 (https://www.w3.org/TR/wai-aria-1.3/)
 Element includes ARIAMixin;
 
-// Source: Web Animations (https://www.w3.org/TR/web-animations-1/)
+// Source: Web Animations Module Level 1 (https://www.w3.org/TR/web-animations-1/)
 Element includes Animatable;

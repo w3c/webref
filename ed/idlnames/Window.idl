@@ -169,7 +169,7 @@ partial interface Window {
   readonly attribute LaunchQueue launchQueue;
 };
 
-// Source: CSS Spatial Navigation Level 1 (https://www.w3.org/TR/css-nav-1/)
+// Source: CSS Spatial Navigation Module Level 1 (https://www.w3.org/TR/css-nav-1/)
 partial interface Window {
     undefined navigate(SpatialNavigationDirection dir);
 };
@@ -179,12 +179,12 @@ partial interface Window {
 [SameObject, Replaceable] readonly attribute Viewport viewport;
 };
 
-// Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)
+// Source: CSS Object Model (CSSOM) Module Level 1 (https://www.w3.org/TR/cssom-1/)
 partial interface Window {
   [NewObject] CSSStyleProperties getComputedStyle(Element elt, optional CSSOMString? pseudoElt);
 };
 
-// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
+// Source: CSSOM View Module Level 1 (https://www.w3.org/TR/cssom-view-1/)
 partial interface Window {
     [NewObject] MediaQueryList matchMedia(CSSOMString query);
     [SameObject, Replaceable] readonly attribute Screen screen;

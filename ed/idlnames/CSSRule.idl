@@ -1,4 +1,4 @@
-// Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)
+// Source: CSS Object Model (CSSOM) Module Level 1 (https://www.w3.org/TR/cssom-1/)
 [Exposed=Window]
 interface CSSRule {
   attribute CSSOMString cssText;
@@ -17,7 +17,7 @@ interface CSSRule {
   const unsigned short NAMESPACE_RULE = 10;
 };
 
-// Source: CSS Animations Level 1 (https://www.w3.org/TR/css-animations-1/)
+// Source: CSS Animations Module Level 1 (https://www.w3.org/TR/css-animations-1/)
 partial interface CSSRule {
     const unsigned short KEYFRAMES_RULE = 7;
     const unsigned short KEYFRAME_RULE = 8;
@@ -28,7 +28,7 @@ partial interface CSSRule {
     const unsigned short SUPPORTS_RULE = 12;
 };
 
-// Source: CSS Counter Styles Level 3 (https://www.w3.org/TR/css-counter-styles-3/)
+// Source: CSS Counter Styles Module Level 3 (https://www.w3.org/TR/css-counter-styles-3/)
 partial interface CSSRule {
     const unsigned short COUNTER_STYLE_RULE = 11;
 };

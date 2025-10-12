@@ -204,7 +204,7 @@ partial interface Document {
   readonly attribute ViewTransition? activeViewTransition;
 };
 
-// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
+// Source: CSSOM View Module Level 1 (https://www.w3.org/TR/cssom-view-1/)
 partial interface Document {
   Element? elementFromPoint(double x, double y);
   sequence<Element> elementsFromPoint(double x, double y);
@@ -212,7 +212,7 @@ partial interface Document {
   readonly attribute Element? scrollingElement;
 };
 
-// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
+// Source: CSSOM View Module Level 1 (https://www.w3.org/TR/cssom-view-1/)
 Document includes GeometryUtils;
 
 // Source: Permissions Policy (https://www.w3.org/TR/permissions-policy-1/)
@@ -244,7 +244,7 @@ partial interface Document {
   readonly attribute SVGSVGElement? rootElement;
 };
 
-// Source: Web Animations (https://www.w3.org/TR/web-animations-1/)
+// Source: Web Animations Module Level 1 (https://www.w3.org/TR/web-animations-1/)
 partial interface Document {
     readonly attribute DocumentTimeline timeline;
 };
