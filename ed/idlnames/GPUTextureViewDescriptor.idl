@@ -9,4 +9,7 @@ dictionary GPUTextureViewDescriptor
     GPUIntegerCoordinate mipLevelCount;
     GPUIntegerCoordinate baseArrayLayer = 0;
     GPUIntegerCoordinate arrayLayerCount;
+
+    // Requires "texture-component-swizzle" feature.
+    DOMString swizzle = "rgba";
 };
