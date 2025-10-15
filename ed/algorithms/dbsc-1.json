@@ -261,7 +261,7 @@
     {
       "name": "algorithms/send a request",
       "href": "https://w3c.github.io/webappsec-dbsc/#algorithms-send-a-request",
-      "html": "This algorithm describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"algorithms\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"send a request\" id=\"algorithms-send-a-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">send\n  a request</dfn> for a device bound session registration or refresh. It\n  takes as input a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③\">request</a> (<var>originating request</var>), <var>key pair</var>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a> (<var>destination</var>),\n  and optional <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①②\">strings</a> <var>session id</var>, <var>challenge</var>, and <var>authorization</var>.\n\n\n    <p>User agents will perform these steps whenever a bound credential is missing,\n  but MAY do this at any time. Sending a request proactively before the bound\n  credential expires can minimize the latency costs of DBSC.</p>",
+      "html": "This algorithm describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"algorithms\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"send a request\" id=\"algorithms-send-a-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">send a\n  request</dfn> for a device bound session registration or refresh. It takes as\n  input a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③\">request</a> (<var>originating request</var>), an optional <var>key pair</var>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④\">URL</a>\n  (<var>destination</var>), and optional <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①②\">strings</a> <var>session id</var>, <var>challenge</var>, and\n  <var>authorization</var>.\n\n\n    <p>User agents will perform these steps whenever a bound credential is missing,\n  but MAY do this at any time. Sending a request proactively before the bound\n  credential expires can minimize the latency costs of DBSC.</p>",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -283,7 +283,10 @@
           "html": "<p>If <var>originating request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url②\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin③\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site②\">same site</a> with\n <var>destination</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin④\">origin</a>, return.</p>"
         },
         {
-          "html": "<p>Let <var>signed challenge</var> be null. If <var>challenge</var> or <var>authorization</var> is\n non-null, create a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#dbsc-proof\" id=\"ref-for-dbsc-proof①\">DBSC proof</a>, sign it with <var>key pair</var>, and store the\n result in <var>signed challenge</var>.</p>"
+          "html": "<p>Let <var>session response</var> be null. If <var>challenge</var> or <var>authorization</var> is\n non-null, let <var>session response</var> be the result of creating a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#dbsc-proof\" id=\"ref-for-dbsc-proof①\">DBSC proof</a>\n for <var>challenge</var> and <var>authorization</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>key pair</var> and <var>session response</var> are non-null, sign <var>session response</var>\n with <var>key pair</var>.</p>"
         },
         {
           "html": "<p>Create a <var>request</var> for use in <a href=\"https://fetch.spec.whatwg.org/#http-fetch\">HTTP fetch</a>.</p>"
@@ -298,7 +301,7 @@
           "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode\">redirect mode</a> to \"follow\".</p>"
         },
         {
-          "html": "<p>If <var>signed challenge</var> is non-null, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-append\" id=\"ref-for-concept-header-list-append\">append</a> the header\n (\"Secure-Session-Response\", <var>signed challenge</var>) to <var>request</var>’s\n <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list①\">header list</a>.</p>"
+          "html": "<p>If <var>session response</var> is non-null, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-append\" id=\"ref-for-concept-header-list-append\">append</a> the header\n (\"Secure-Session-Response\", <var>session response</var>) to <var>request</var>’s\n <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list①\">header list</a>.</p>"
         },
         {
           "html": "<p>If <var>session id</var> is non-null, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-append\" id=\"ref-for-concept-header-list-append①\">append</a> the header\n (\"Sec-Secure-Session-Id\", <var>session id</var>) to <var>request</var>’s\n <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list②\">header list</a>.</p>"
@@ -356,7 +359,7 @@
     {
       "name": "create a session",
       "href": "https://w3c.github.io/webappsec-dbsc/#create-session",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"create-session\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a session</dfn> due to the <var>response</var>\n(a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a>) to a registration request to <var>destination</var> (a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑤\">URL</a>) for\n<var>session id</var> (a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①③\">string</a> or null) with a <var>key pair</var>, perform the following\nsteps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"create-session\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a session</dfn> due to the <var>response</var>\n(a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a>) to a registration request to <var>destination</var> (a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑤\">URL</a>) for\n<var>session id</var> (a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①③\">string</a> or null) with an optional <var>key pair</var>, perform the\nfollowing steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -585,7 +588,7 @@
               "html": "<p>Let <var>key pair</var> be the result of running\n <a href=\"https://w3c.github.io/webappsec-dbsc/#algo-create-session-key-pair\">§ 8.11 Create session key pair</a> on <var>registration entry</var>,\n <var>params</var>, and <var>endpoint</var>.</p>"
             },
             {
-              "html": "<p>If <var>key pair</var> is null, return.</p>"
+              "html": "<p>If <var>key pair</var> is \"failure\", return.</p>"
             },
             {
               "html": "<p>Call <a href=\"https://w3c.github.io/webappsec-dbsc/#algo-session-request\">§ 8.8 Send request</a> with <var>request</var>, <var>key pair</var>, <var>endpoint</var>,\n session identifier as null, <var>challenge</var>, and <var>authorization</var>.</p>"
@@ -597,7 +600,7 @@
     {
       "name": "create a session key pair",
       "href": "https://w3c.github.io/webappsec-dbsc/#create-session-key-pair",
-      "html": "This algorithm describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"create a session key pair\" id=\"create-session-key-pair\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create\na session key pair</dfn>, including key sharing between a Relying Party and\nSession Provider. It takes as inputs the <var>registration entry</var> and <var>params</var> of a\n`<code><a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-dbsc/#secure-session-registration-header\" id=\"ref-for-secure-session-registration-header④\">Secure-Session-Registration</a></code>` header and the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑥\">URL</a> (<var>registration URL</var>) of\nthe registration endpoint. It returns a key pair for use in the session or null\nif no key is possible.",
+      "html": "This algorithm describes how to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"create a session key pair\" id=\"create-session-key-pair\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create\na session key pair</dfn>, including key sharing between a Relying Party and\nSession Provider. It takes as inputs the <var>registration entry</var> and <var>params</var> of a\n`<code><a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-dbsc/#secure-session-registration-header\" id=\"ref-for-secure-session-registration-header④\">Secure-Session-Registration</a></code>` header and the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑥\">URL</a> (<var>registration URL</var>) of\nthe registration endpoint. It returns a key pair for use in the session, null to\nindicate that no key is needed, or the string \"failure\" to indicate that key\npair creation failed.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -616,20 +619,20 @@
           ]
         },
         {
-          "html": "<p>If <var>algorithm list</var> is empty, return null.</p>"
+          "html": "<p>If <var>algorithm list</var> is empty, return \"failure\".</p>"
         },
         {
           "html": "If any of <var>params</var>[\"provider_key\"], <var>params</var>[\"provider_session_id\"], or\n <var>params</var>[\"provider_url\"] exists:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If any of the three keys is missing, return null.</p>"
+              "html": "<p>If any of the three keys is missing, return \"failure\".</p>"
             },
             {
               "html": "<p>Let <var>permission</var> be the result of performing <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use\">request permission to use</a> for \"device-bound-session-key-sharing\".</p>"
             },
             {
-              "html": "<p>If <var>permission</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied\">\"denied\"</a></code>, return null.</p>"
+              "html": "<p>If <var>permission</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied\">\"denied\"</a></code>, return \"failure\".</p>"
             },
             {
               "html": "<p>Let <var>provider URL</var> be a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url⑦\">URL</a> constructed from\n <var>params</var>[\"provider_url\"].</p>"
@@ -638,7 +641,7 @@
               "html": "<p>Let <var>provider origin</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a> of <var>provider URL</var>.</p>"
             },
             {
-              "html": "<p>If <var>provider origin</var> is opaque, return null.</p>"
+              "html": "<p>If <var>provider origin</var> is opaque, return \"failure\".</p>"
             },
             {
               "html": "<p>Let <var>provider domain</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-registrable-domain\" id=\"ref-for-host-registrable-domain①①\">registrable domain</a> of\n <var>provider URL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host⑨\">host</a>.</p>"
@@ -650,19 +653,19 @@
               "html": "<p>Let <var>provider session</var> be the session in the user agent’s\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#session-store\" id=\"ref-for-session-store⑦\">session store</a>[<var>provider domain</var>][<var>provider session identifier</var>].</p>"
             },
             {
-              "html": "<p>If <var>provider session</var> is null, return null.</p>"
+              "html": "<p>If <var>provider session</var> is null, return \"failure\".</p>"
             },
             {
-              "html": "<p>If <var>provider session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-scope\" id=\"ref-for-device-bound-session-session-scope⑦\">session scope</a>\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#session-scope-origin\" id=\"ref-for-session-scope-origin⑤\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin②\">same origin</a> with <var>provider\n origin</var>, return null.</p>"
+              "html": "<p>If <var>provider session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-scope\" id=\"ref-for-device-bound-session-session-scope⑦\">session scope</a>\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#session-scope-origin\" id=\"ref-for-session-scope-origin⑤\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin②\">same origin</a> with <var>provider\n origin</var>, return \"failure\".</p>"
             },
             {
-              "html": "<p>If <var>provider session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-key-pair\" id=\"ref-for-device-bound-session-session-key-pair①\">session key pair</a>’s JWK thumbprint (see\n <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webappsec-dbsc/#biblio-rfc7638\" title=\"JSON Web Key (JWK) Thumbprint\">[RFC7638]</a>) does not match <var>params</var>[\"provider_key\"]\n when encoded in base64url (see <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webappsec-dbsc/#biblio-rfc4648\" title=\"The Base16, Base32, and Base64 Data Encodings\">[RFC4648]</a>) without padding, return null.</p>"
+              "html": "<p>If <var>provider session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-key-pair\" id=\"ref-for-device-bound-session-session-key-pair①\">session key pair</a> is null, or <var>provider\n session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-key-pair\" id=\"ref-for-device-bound-session-session-key-pair②\">session key pair</a>’s JWK thumbprint (see <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webappsec-dbsc/#biblio-rfc7638\" title=\"JSON Web Key (JWK) Thumbprint\">[RFC7638]</a>) does\n not match <var>params</var>[\"provider_key\"] when encoded in base64url (see\n <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webappsec-dbsc/#biblio-rfc4648\" title=\"The Base16, Base32, and Base64 Data Encodings\">[RFC4648]</a>) without padding, return \"failure\".</p>"
             },
             {
               "html": "<p>Let <var>provider well known URL</var> be a copy of <var>provider URL</var>, with the\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path④\">path</a> replaced with \"/.well-known/device-bound-sessions\".</p>"
             },
             {
-              "html": "<p>Let <var>provider well known response</var> be the result of fetching <var>provider\n well known URL</var>. If any of the following hold, return null:</p>",
+              "html": "<p>Let <var>provider well known response</var> be the result of fetching <var>provider\n well known URL</var>. If any of the following hold, return \"failure\":</p>",
               "ignored": [
                 "provider well known response’s status is not 200. provider well known response’s body is not a JSON-encoded dictionary. provider well known response’s body contains the key \"provider_origin\". provider well known response’s body does not include the key \"relying_origins\". The value of the key \"relying_origins\" does not include the origin of registration URL."
               ]
@@ -674,18 +677,18 @@
               "html": "<p>Let <var>relying well known URL</var> be a copy of <var>registration URL</var>, with the\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path⑤\">path</a> replaced with \"/.well-known/device-bound-sessions\".</p>"
             },
             {
-              "html": "<p>Let <var>relying well known response</var> be the result of fetching <var>relying well\n known URL</var>. If any of the following hold, return null:</p>",
+              "html": "<p>Let <var>relying well known response</var> be the result of fetching <var>relying well\n known URL</var>. If any of the following hold, return \"failure\":</p>",
               "ignored": [
                 "relying well known response’s status is not 200. relying well known response’s body is not a JSON-encoded dictionary. relying well known response’s body contains the key \"relying_origins\". relying well known response’s body does not include the key \"provider_origin\". The value of the key \"provider_origin\" is not the origin of provider URL."
               ]
             },
             {
-              "html": "<p>Return <var>provider session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-key-pair\" id=\"ref-for-device-bound-session-session-key-pair②\">session key pair</a>.</p>"
+              "html": "<p>Return <var>provider session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-key-pair\" id=\"ref-for-device-bound-session-session-key-pair③\">session key pair</a>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return a new key pair created for <var>algorithm list</var>.</p>"
+          "html": "<p>Return a new key pair created for <var>algorithm list</var>, using null if the\n selected algorithm is \"none\".</p>"
         }
       ]
     },
@@ -720,7 +723,7 @@
       "rationale": "run",
       "steps": [
         {
-          "html": "<p>Run <a href=\"https://w3c.github.io/webappsec-dbsc/#algo-session-request\">§ 8.8 Send request</a> with <var>httpRequest</var>, the\nreturned <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-key-pair\" id=\"ref-for-device-bound-session-session-key-pair③\">session key pair</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-refresh-url\" id=\"ref-for-device-bound-session-refresh-url②\">refresh URL</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-identifier\" id=\"ref-for-device-bound-session-session-identifier⑦\">session identifier</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-cached-challenge\" id=\"ref-for-device-bound-session-cached-challenge③\">cached challenge</a>, and an empty\nauthorization.</p>"
+          "html": "<p>Run <a href=\"https://w3c.github.io/webappsec-dbsc/#algo-session-request\">§ 8.8 Send request</a> with <var>httpRequest</var>, the\nreturned <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-key-pair\" id=\"ref-for-device-bound-session-session-key-pair④\">session key pair</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-refresh-url\" id=\"ref-for-device-bound-session-refresh-url②\">refresh URL</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-session-identifier\" id=\"ref-for-device-bound-session-session-identifier⑦\">session identifier</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#device-bound-session-cached-challenge\" id=\"ref-for-device-bound-session-cached-challenge③\">cached challenge</a>, and an empty\nauthorization.</p>"
         },
         {
           "html": "<p>Restart <a href=\"https://fetch.spec.whatwg.org/#http-network-or-cache-fetch\">HTTP-network-or-cache\nfetch</a> with the original inputs.</p>"
