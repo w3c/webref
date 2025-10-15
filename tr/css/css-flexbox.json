@@ -5,29 +5,6 @@
   },
   "properties": [
     {
-      "name": "display",
-      "newValues": "flex | inline-flex",
-      "values": [
-        {
-          "name": "flex",
-          "prose": "This value causes an element to generate a flex container box that is block-level when placed in flow layout.",
-          "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-display-flex",
-          "type": "value",
-          "value": "flex"
-        },
-        {
-          "name": "inline-flex",
-          "prose": "This value causes an element to generate a flex container box that is inline-level when placed in flow layout.",
-          "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-display-inline-flex",
-          "type": "value",
-          "value": "inline-flex"
-        }
-      ],
-      "styleDeclaration": [
-        "display"
-      ]
-    },
-    {
       "name": "flex-direction",
       "href": "https://www.w3.org/TR/css-flexbox-1/#propdef-flex-direction",
       "value": "row | row-reverse | column | column-reverse",
@@ -115,7 +92,7 @@
     {
       "name": "flex-flow",
       "href": "https://www.w3.org/TR/css-flexbox-1/#propdef-flex-flow",
-      "value": "<‘flex-direction’> || <‘flex-wrap’>",
+      "value": "<'flex-direction'> || <'flex-wrap'>",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -129,33 +106,9 @@
       ]
     },
     {
-      "name": "order",
-      "href": "https://www.w3.org/TR/css-flexbox-1/#propdef-order",
-      "value": "<integer>",
-      "initial": "0",
-      "appliesTo": "flex items",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "specified integer",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
-      "values": [
-        {
-          "name": "<integer>",
-          "prose": "The order property controls the order in which flex items appear within the flex container, by assigning them to ordinal groups. It takes a single <integer> value, which specifies which ordinal group the flex item belongs to.",
-          "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-order-integer",
-          "type": "value",
-          "value": "<integer>"
-        }
-      ],
-      "styleDeclaration": [
-        "order"
-      ]
-    },
-    {
       "name": "flex",
       "href": "https://www.w3.org/TR/css-flexbox-1/#propdef-flex",
-      "value": "none | [ <‘flex-grow’> <‘flex-shrink’>? || <‘flex-basis’> ]",
+      "value": "none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]",
       "initial": "0 1 auto",
       "appliesTo": "flex items",
       "inherited": "no",
@@ -165,25 +118,25 @@
       "canonicalOrder": "per grammar",
       "values": [
         {
-          "name": "<‘flex-grow’>",
-          "prose": "This <number> component sets flex-grow longhand and specifies the flex grow factor, which determines how much the flex item will grow relative to the rest of the flex items in the flex container when positive free space is distributed. When omitted, it is set to 1.",
+          "name": "<'flex-grow'>",
+          "prose": "This <number [0,∞]> component sets flex-grow longhand and specifies the flex grow factor, which determines how much the flex item will grow relative to the rest of the flex items in the flex container when positive free space is distributed. When omitted, it is set to 1.",
           "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-flex-flex-grow",
           "type": "value",
-          "value": "<‘flex-grow’>"
+          "value": "<'flex-grow'>"
         },
         {
-          "name": "<‘flex-shrink’>",
-          "prose": "This <number> component sets flex-shrink longhand and specifies the flex shrink factor, which determines how much the flex item will shrink relative to the rest of the flex items in the flex container when negative free space is distributed. When omitted, it is set to 1.",
+          "name": "<'flex-shrink'>",
+          "prose": "This <number [0,∞]> component sets flex-shrink longhand and specifies the flex shrink factor, which determines how much the flex item will shrink relative to the rest of the flex items in the flex container when negative free space is distributed. When omitted, it is set to 1.",
           "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-flex-flex-shrink",
           "type": "value",
-          "value": "<‘flex-shrink’>"
+          "value": "<'flex-shrink'>"
         },
         {
-          "name": "<‘flex-basis’>",
-          "prose": "This component sets the flex-basis longhand, which specifies the flex basis: the initial main size of the flex item, before free space is distributed according to the flex factors. <‘flex-basis’> accepts the same values as the width and height properties (except that auto is treated differently) plus the content keyword: When omitted from the flex shorthand, its specified value is 0.",
+          "name": "<'flex-basis'>",
+          "prose": "This component sets the flex-basis longhand, which specifies the flex basis: the initial main size of the flex item, before free space is distributed according to the flex factors. <'flex-basis'> accepts the same values as the width and height properties (except that auto is treated differently) plus the content keyword: When omitted from the flex shorthand, its specified value is 0.",
           "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-flex-flex-basis",
           "type": "value",
-          "value": "<‘flex-basis’>"
+          "value": "<'flex-basis'>"
         },
         {
           "name": "none",
@@ -200,7 +153,7 @@
     {
       "name": "flex-grow",
       "href": "https://www.w3.org/TR/css-flexbox-1/#propdef-flex-grow",
-      "value": "<number>",
+      "value": "<number [0,∞]>",
       "initial": "0",
       "appliesTo": "flex items",
       "inherited": "no",
@@ -211,7 +164,7 @@
       "values": [
         {
           "name": "<number>",
-          "prose": "The flex-grow property sets the flex grow factor to the provided <number>. Negative numbers are invalid.",
+          "prose": "The flex-grow property sets the flex grow factor to the provided <number>. Negative values are not allowed.",
           "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-flex-grow-number",
           "type": "value",
           "value": "<number>"
@@ -225,7 +178,7 @@
     {
       "name": "flex-shrink",
       "href": "https://www.w3.org/TR/css-flexbox-1/#propdef-flex-shrink",
-      "value": "<number>",
+      "value": "<number [0,∞]>",
       "initial": "1",
       "appliesTo": "flex items",
       "inherited": "no",
@@ -236,7 +189,7 @@
       "values": [
         {
           "name": "<number>",
-          "prose": "The flex-shrink property sets the flex shrink factor to the provided <number>. Negative numbers are invalid.",
+          "prose": "The flex-shrink property sets the flex shrink factor to the provided <number>. Negative values are not allowed.",
           "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-flex-shrink-number",
           "type": "value",
           "value": "<number>"
@@ -250,7 +203,7 @@
     {
       "name": "flex-basis",
       "href": "https://www.w3.org/TR/css-flexbox-1/#propdef-flex-basis",
-      "value": "content | <‘width’>",
+      "value": "content | <'width'>",
       "initial": "auto",
       "appliesTo": "flex items",
       "inherited": "no",
@@ -268,7 +221,7 @@
         },
         {
           "name": "content",
-          "prose": "Indicates an automatic size based on the flex item’s content. (It is typically equivalent to the max-content size, but with adjustments to handle aspect ratios, intrinsic sizing constraints, and orthogonal flows; see details in §9 Flex Layout Algorithm.)",
+          "prose": "Indicates an automatic size based on the flex item’s content. (This is typically equivalent to the max-content size, but with adjustments to handle preferred aspect ratios, intrinsic sizing constraints, and orthogonal flows; see details in § 9 Flex Layout Algorithm.)",
           "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-flex-basis-content",
           "type": "value",
           "value": "content"
@@ -314,14 +267,14 @@
         },
         {
           "name": "space-between",
-          "prose": "Flex items are evenly distributed in the line. If the leftover free-space is negative or there is only a single flex item on the line, this value is identical to flex-start. Otherwise, the main-start margin edge of the first flex item on the line is placed flush with the main-start edge of the line, the main-end margin edge of the last flex item on the line is placed flush with the main-end edge of the line, and the remaining flex items on the line are distributed so that the spacing between any two adjacent items is the same.",
+          "prose": "Flex items are evenly distributed in the line. If the leftover free-space is negative or there is only a single flex item on the line, this value falls back to safe flex-start. Otherwise, the main-start margin edge of the first flex item on the line is placed flush with the main-start edge of the line, the main-end margin edge of the last flex item on the line is placed flush with the main-end edge of the line, and the remaining flex items on the line are distributed so that the spacing between any two adjacent items is the same.",
           "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-justify-content-space-between",
           "type": "value",
           "value": "space-between"
         },
         {
           "name": "space-around",
-          "prose": "Flex items are evenly distributed in the line, with half-size spaces on either end. If the leftover free-space is negative or there is only a single flex item on the line, this value is identical to center. Otherwise, the flex items on the line are distributed such that the spacing between any two adjacent flex items on the line is the same, and the spacing between the first/last flex items and the flex container edges is half the size of the spacing between flex items.",
+          "prose": "Flex items are evenly distributed in the line, with half-size spaces on either end. If the leftover free-space is negative or there is only a single flex item on the line, this value falls back to safe center. Otherwise, the flex items on the line are distributed such that the spacing between any two adjacent flex items on the line is the same, and the spacing between the first/last flex items and the flex container edges is half the size of the spacing between flex items.",
           "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-justify-content-space-around",
           "type": "value",
           "value": "space-around"
@@ -487,21 +440,21 @@
         },
         {
           "name": "space-between",
-          "prose": "Lines are evenly distributed in the flex container. If the leftover free-space is negative or there is only a single flex line in the flex container, this value is identical to flex-start. Otherwise, the cross-start edge of the first line in the flex container is placed flush with the cross-start content edge of the flex container, the cross-end edge of the last line in the flex container is placed flush with the cross-end content edge of the flex container, and the remaining lines in the flex container are distributed so that the spacing between any two adjacent lines is the same.",
+          "prose": "Lines are evenly distributed in the flex container. If the leftover free-space is negative or there is only a single flex line in the flex container, this value falls back to safe flex-start. Otherwise, the cross-start edge of the first line in the flex container is placed flush with the cross-start content edge of the flex container, the cross-end edge of the last line in the flex container is placed flush with the cross-end content edge of the flex container, and the remaining lines in the flex container are distributed so that the spacing between any two adjacent lines is the same.",
           "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-align-content-space-between",
           "type": "value",
           "value": "space-between"
         },
         {
           "name": "space-around",
-          "prose": "Lines are evenly distributed in the flex container, with half-size spaces on either end. If the leftover free-space is negative this value is identical to center. Otherwise, the lines in the flex container are distributed such that the spacing between any two adjacent lines is the same, and the spacing between the first/last lines and the flex container edges is half the size of the spacing between flex lines.",
+          "prose": "Lines are evenly distributed in the flex container, with half-size spaces on either end. If the leftover free-space is negative this value falls back to safe center. Otherwise, the lines in the flex container are distributed such that the spacing between any two adjacent lines is the same, and the spacing between the first/last lines and the flex container edges is half the size of the spacing between flex lines.",
           "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-align-content-space-around",
           "type": "value",
           "value": "space-around"
         },
         {
           "name": "stretch",
-          "prose": "Lines stretch to take up the remaining space. If the leftover free-space is negative, this value is identical to flex-start. Otherwise, the free-space is split equally between all of the lines, increasing their cross size.",
+          "prose": "Lines stretch to take up the remaining space. If the leftover free-space is negative, this value falls back to flex-start. Otherwise, the free-space is split equally between all of the lines, increasing their cross size.",
           "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-align-content-stretch",
           "type": "value",
           "value": "stretch"
@@ -515,5 +468,25 @@
   ],
   "atrules": [],
   "selectors": [],
-  "values": []
+  "values": [],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "flex",
+      "prose": "This value causes an element to generate a flex container box that is block-level when placed in flow layout.",
+      "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-display-flex",
+      "type": "value",
+      "value": "flex",
+      "for": "display"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "inline-flex",
+      "prose": "This value causes an element to generate a flex container box that is inline-level when placed in flow layout.",
+      "href": "https://www.w3.org/TR/css-flexbox-1/#valdef-display-inline-flex",
+      "type": "value",
+      "value": "inline-flex",
+      "for": "display"
+    }
+  ]
 }
