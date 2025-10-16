@@ -7,6 +7,16 @@
       "extended": []
     },
     {
+      "descriptors": [],
+      "name": "@annotation",
+      "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-annotation",
+      "for": [
+        "@font-feature-values"
+      ],
+      "syntax": "@annotation { <declaration-list> }",
+      "extended": []
+    },
+    {
       "name": "@apply",
       "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-apply",
       "descriptors": [],
@@ -46,6 +56,16 @@
       "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-bottom-right-corner",
       "descriptors": [],
       "syntax": "@bottom-right-corner { <declaration-list> };",
+      "extended": []
+    },
+    {
+      "descriptors": [],
+      "name": "@character-variant",
+      "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-character-variant",
+      "for": [
+        "@font-feature-values"
+      ],
+      "syntax": "@character-variant { <declaration-list> }",
       "extended": []
     },
     {
@@ -439,55 +459,6 @@
       "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values",
       "descriptors": [
         {
-          "name": "@annotation",
-          "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-annotation",
-          "type": "at-rule",
-          "for": "@font-feature-values",
-          "syntax": "@annotation { <declaration-list> }"
-        },
-        {
-          "name": "@character-variant",
-          "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-character-variant",
-          "type": "at-rule",
-          "for": "@font-feature-values",
-          "syntax": "@character-variant { <declaration-list> }"
-        },
-        {
-          "name": "@historical-forms",
-          "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-historical-forms",
-          "type": "at-rule",
-          "for": "@font-feature-values",
-          "syntax": "@historical-forms { <declaration-list> }"
-        },
-        {
-          "name": "@ornaments",
-          "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-ornaments",
-          "type": "at-rule",
-          "for": "@font-feature-values",
-          "syntax": "@ornaments { <declaration-list> }"
-        },
-        {
-          "name": "@styleset",
-          "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-styleset",
-          "type": "at-rule",
-          "for": "@font-feature-values",
-          "syntax": "@styleset { <declaration-list> }"
-        },
-        {
-          "name": "@stylistic",
-          "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-stylistic",
-          "type": "at-rule",
-          "for": "@font-feature-values",
-          "syntax": "@stylistic { <declaration-list> }"
-        },
-        {
-          "name": "@swash",
-          "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-swash",
-          "type": "at-rule",
-          "for": "@font-feature-values",
-          "syntax": "@swash { <declaration-list> }"
-        },
-        {
           "name": "font-display",
           "href": "https://drafts.csswg.org/css-fonts-4/#descdef-font-feature-values-font-display",
           "for": "@font-feature-values",
@@ -541,6 +512,16 @@
         }
       ],
       "syntax": "@function <function-token> <function-parameter>#? ) [ returns <css-type> ]? { <declaration-rule-list> }",
+      "extended": []
+    },
+    {
+      "descriptors": [],
+      "name": "@historical-forms",
+      "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-historical-forms",
+      "for": [
+        "@font-feature-values"
+      ],
+      "syntax": "@historical-forms { <declaration-list> }",
       "extended": []
     },
     {
@@ -893,6 +874,16 @@
       "extended": []
     },
     {
+      "descriptors": [],
+      "name": "@ornaments",
+      "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-ornaments",
+      "for": [
+        "@font-feature-values"
+      ],
+      "syntax": "@ornaments { <declaration-list> }",
+      "extended": []
+    },
+    {
       "name": "@page",
       "prose": "Authors can specify various aspects of a page box, such as its dimensions, orientation, and margins, within an @page rule. @page rules are allowed wherever rule-sets are allowed. An @page rule consists of the keyword @page, an optional comma-separated list of page selectors and a block of declarations (said to be in the page context). An @page rule can also contain other at-rules, interleaved between declarations. The current level of this specification only allows margin at-rules inside @page.",
       "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-page",
@@ -1007,11 +998,41 @@
       "extended": []
     },
     {
+      "descriptors": [],
+      "name": "@styleset",
+      "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-styleset",
+      "for": [
+        "@font-feature-values"
+      ],
+      "syntax": "@styleset { <declaration-list> }",
+      "extended": []
+    },
+    {
+      "descriptors": [],
+      "name": "@stylistic",
+      "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-stylistic",
+      "for": [
+        "@font-feature-values"
+      ],
+      "syntax": "@stylistic { <declaration-list> }",
+      "extended": []
+    },
+    {
       "name": "@supports",
       "prose": "The @supports rule is a conditional group rule whose condition tests whether the user agent supports CSS property:value pairs. Authors can use it to write style sheets that use new features when available but degrade gracefully when those features are not supported. These queries are called CSS feature queries or (colloquially) supports queries.",
       "href": "https://drafts.csswg.org/css-conditional-3/#at-ruledef-supports",
       "descriptors": [],
       "syntax": "@supports <supports-condition> { <rule-list> }",
+      "extended": []
+    },
+    {
+      "descriptors": [],
+      "name": "@swash",
+      "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-swash",
+      "for": [
+        "@font-feature-values"
+      ],
+      "syntax": "@swash { <declaration-list> }",
       "extended": []
     },
     {
