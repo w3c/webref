@@ -25,10 +25,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>returnValue</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a></p>"
+          "html": "<p>Let <var>returnValue</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment\">Upon fulfillment</a> of <var>source</var> with value <var>unwrappedSource</var>:",
+          "html": "If <var>source</var> was fulfilled with value <var>unwrappedSource</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -56,7 +56,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-consume-body\" id=\"ref-for-concept-body-consume-body\">Consume</a> <var>response</var>’s body as an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-arraybuffer-objects\" id=\"ref-for-sec-arraybuffer-objects\">ArrayBuffer</a></code>, and let <var>bodyPromise</var> be the result.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment①\">Upon fulfillment</a> of <var>bodyPromise</var> with value <var>bodyArrayBuffer</var>:",
+              "html": "If <var>bodyPromise</var> was fulfilled with value <var>bodyArrayBuffer</var>:",
               "rationale": "let",
               "steps": [
                 {
@@ -65,25 +65,29 @@
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#asynchronously-compile-a-webassembly-module\" id=\"ref-for-asynchronously-compile-a-webassembly-module\">Asynchronously compile the WebAssembly module</a> <var>stableBytes</var> using the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\" id=\"ref-for-networking-task-source\">networking task source</a> and <var>options</var> and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>returnValue</var> with the result.</p>"
                 }
-              ]
-            },
-            {
-              "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-rejection\" id=\"ref-for-upon-rejection\">Upon rejection</a> of <var>bodyPromise</var> with reason <var>reason</var>:",
-              "rationale": "reject",
-              "steps": [
+              ],
+              "additional": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">Reject</a> <var>returnValue</var> with <var>reason</var>.</p>"
+                  "html": "If <var>bodyPromise</var> was rejected with reason <var>reason</var>:",
+                  "rationale": "reject",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">Reject</a> <var>returnValue</var> with <var>reason</var>.</p>"
+                    }
+                  ]
                 }
               ]
             }
-          ]
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-rejection\" id=\"ref-for-upon-rejection①\">Upon rejection</a> of <var>source</var> with reason <var>reason</var>:",
-          "rationale": "reject",
-          "steps": [
+          ],
+          "additional": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">Reject</a> <var>returnValue</var> with <var>reason</var>.</p>"
+              "html": "If <var>source</var> was rejected with reason <var>reason</var>:",
+              "rationale": "reject",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">Reject</a> <var>returnValue</var> with <var>reason</var>.</p>"
+                }
+              ]
             }
           ]
         },

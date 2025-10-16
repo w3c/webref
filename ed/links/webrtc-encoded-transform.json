@@ -46,6 +46,7 @@
         ]
       },
       "https://html.spec.whatwg.org/multipage/": {},
+      "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-webrtc/": {},
       "https://storage.googleapis.com/downloads.webmproject.org/docs/vp9/vp9-bitstream-specification-v0.6-20160331-draft.pdf": {},
       "https://streams.spec.whatwg.org/": {
@@ -62,7 +63,6 @@
       "https://w3c.github.io/mediacapture-main/": {},
       "https://w3c.github.io/webcodecs/": {},
       "https://w3c.github.io/webcrypto/": {},
-      "https://w3c.github.io/webrtc-encoded-transform/": {},
       "https://w3c.github.io/webrtc-identity/": {},
       "https://w3c.github.io/webrtc-nv-use-cases/": {},
       "https://w3c.github.io/webrtc-pc/": {},
@@ -153,6 +153,14 @@
           "worker"
         ]
       },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list",
+          "list-remove",
+          "list-contain",
+          "set-append"
+        ]
+      },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
           "readablestream",
@@ -194,17 +202,13 @@
           "dfn-CryptoKey"
         ]
       },
-      "https://w3c.github.io/webrtc-encoded-transform/": {
-        "anchors": [
-          "dom-sframetransform-onerror"
-        ]
-      },
       "https://w3c.github.io/webrtc-pc/": {
         "anchors": [
           "dom-rtcpeerconnection",
           "dom-rtcrtpsender",
           "dom-rtcrtpreceiver",
-          "dom-rtcconfiguration"
+          "dom-rtcconfiguration",
+          "dom-rtcrtpencodingparameters-active"
         ]
       },
       "https://webidl.spec.whatwg.org/": {

@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-10-16T12:57:29.688Z",
+  "date": "2025-10-16T18:53:26.360Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -145,7 +145,7 @@
       "urlpattern",
       "login-status",
       "at-driver",
-      "shacl12-compact-syntax",
+      "shacl12-cs",
       "shacl12-node-expr",
       "shacl12-rules",
       "execCommand",
@@ -748,9 +748,9 @@
   },
   "stats": {
     "crawled": 716,
-    "errors": 5
+    "errors": 2
   },
-  "crawler": "reffy-19.2.4",
+  "crawler": "reffy-20.0.1",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -1474,7 +1474,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Oct 2025 06:58:00 GMT"
+        "lastModified": "Thu, 16 Oct 2025 16:57:00 GMT"
       },
       "date": "16 October 2025",
       "algorithms": "algorithms/layered-cookies.json",
@@ -1523,7 +1523,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Oct 2025 06:58:00 GMT"
+        "lastModified": "Thu, 16 Oct 2025 16:56:59 GMT"
       },
       "date": "16 October 2025",
       "algorithms": "algorithms/no-vary-search.json",
@@ -1572,7 +1572,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Oct 2025 06:58:00 GMT"
+        "lastModified": "Thu, 16 Oct 2025 16:56:59 GMT"
       },
       "date": "16 October 2025",
       "algorithms": "algorithms/rfc6265bis.json",
@@ -2028,7 +2028,7 @@
       },
       "title": "CSS Extensions Module Level 1",
       "source": "spec",
-      "shortTitle": "CSS Extensions",
+      "shortTitle": "CSS Extensions 1",
       "categories": [
         "browser"
       ],
@@ -3181,9 +3181,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Oct 2025 07:50:29 GMT"
+        "lastModified": "Thu, 16 Oct 2025 15:32:34 GMT"
       },
-      "date": "15 October 2025",
+      "date": "16 October 2025",
       "algorithms": "algorithms/html.json",
       "links": "links/html.json",
       "refs": "refs/html.json",
@@ -6804,7 +6804,7 @@
       "groups": [
         {
           "name": "SVG Working Group",
-          "url": "https://www.w3.org/Graphics/SVG/WG/"
+          "url": "https://www.w3.org/groups/wg/svg/"
         }
       ],
       "nightly": {
@@ -6928,7 +6928,7 @@
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Oct 2025 01:17:55 GMT"
+        "lastModified": "Wed, 15 Oct 2025 01:17:54 GMT"
       },
       "date": "15 October 2025",
       "links": "links/ecmascript.json",
@@ -7867,9 +7867,9 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Oct 2025 12:53:18 GMT"
+        "lastModified": "Thu, 16 Oct 2025 15:53:40 GMT"
       },
-      "date": "15 October 2025",
+      "date": "16 October 2025",
       "links": "links/tc39-temporal.json",
       "dfns": "dfns/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
@@ -8207,17 +8207,20 @@
       ]
     },
     {
-      "url": "https://w3c.github.io/data-shapes/shacl12-compact-syntax/",
+      "url": "https://w3c.github.io/data-shapes/shacl12-cs/",
       "seriesComposition": "full",
-      "shortname": "shacl12-compact-syntax",
+      "shortname": "shacl12-cs",
       "series": {
-        "shortname": "shacl-compact-syntax",
-        "currentSpecification": "shacl12-compact-syntax",
+        "shortname": "shacl-cs",
+        "currentSpecification": "shacl12-cs",
         "title": "SHACL Compact Syntax",
         "shortTitle": "SHACL Compact Syntax",
-        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-compact-syntax/"
+        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-cs/"
       },
       "seriesVersion": "1.2",
+      "formerNames": [
+        "shacl12-compact-syntax"
+      ],
       "organization": "W3C",
       "groups": [
         {
@@ -8226,11 +8229,11 @@
         }
       ],
       "nightly": {
-        "url": "https://w3c.github.io/data-shapes/shacl12-compact-syntax/",
+        "url": "https://w3c.github.io/data-shapes/shacl12-cs/",
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/data-shapes",
-        "sourcePath": "shacl12-compact-syntax/index.html",
+        "sourcePath": "shacl12-cs/index.html",
         "filename": "index.html"
       },
       "title": "SHACL Compact Syntax",
@@ -8239,20 +8242,19 @@
       "categories": [],
       "standing": "good",
       "versions": [
-        "https://w3c.github.io/data-shapes/shacl12-compact-syntax/"
+        "https://w3c.github.io/data-shapes/shacl12-cs/"
       ],
-      "crawled": "https://w3c.github.io/data-shapes/shacl12-compact-syntax/",
+      "crawled": "https://w3c.github.io/data-shapes/shacl12-cs/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 09 Oct 2025 23:00:58 GMT"
+        "lastModified": "Tue, 14 Oct 2025 21:49:09 GMT"
       },
       "generator": "respec",
       "date": "04 August 2025",
-      "links": "links/shacl12-compact-syntax.json",
-      "refs": "refs/shacl12-compact-syntax.json",
-      "headings": "headings/shacl12-compact-syntax.json",
-      "ids": "ids/shacl12-compact-syntax.json",
-      "cddl": [],
-      "error": "Error: Loading https://w3c.github.io/data-shapes/shacl12-compact-syntax/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 139)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "links": "links/shacl12-cs.json",
+      "refs": "refs/shacl12-cs.json",
+      "headings": "headings/shacl12-cs.json",
+      "ids": "ids/shacl12-cs.json",
+      "cddl": []
     },
     {
       "url": "https://w3c.github.io/data-shapes/shacl12-node-expr/",
@@ -16463,9 +16465,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Oct 2025 04:17:08 GMT"
+        "lastModified": "Mon, 13 Oct 2025 22:47:56 GMT"
       },
-      "date": "16 October 2025",
+      "date": "13 October 2025",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
@@ -21355,7 +21357,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-flexbox-1/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -22364,8 +22366,7 @@
       "dfns": "dfns/css-layout-api-1.json",
       "headings": "headings/css-layout-api-1.json",
       "ids": "ids/css-layout-api-1.json",
-      "cddl": [],
-      "error": "Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 387)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "cddl": []
     },
     {
       "url": "https://www.w3.org/TR/css-line-grid-1/",
@@ -22631,8 +22632,7 @@
       "elements": "elements/css-masking-1.json",
       "headings": "headings/css-masking-1.json",
       "ids": "ids/css-masking-1.json",
-      "cddl": [],
-      "error": "Error: Loading https://drafts.fxtf.org/css-masking-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 391)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "cddl": []
     },
     {
       "url": "https://www.w3.org/TR/css-mixins-1/",
@@ -27065,7 +27065,7 @@
       ],
       "crawled": "https://w3c.github.io/did/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 18 Sep 2025 17:32:40 GMT"
+        "lastModified": "Thu, 18 Sep 2025 17:32:39 GMT"
       },
       "generator": "respec",
       "date": "25 November 2025",
@@ -27120,10 +27120,10 @@
       ],
       "crawled": "https://w3c.github.io/did-resolution/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 13 Oct 2025 09:26:48 GMT"
+        "lastModified": "Thu, 16 Oct 2025 13:51:43 GMT"
       },
       "generator": "respec",
-      "date": "13 October 2025",
+      "date": "16 October 2025",
       "algorithms": "algorithms/did-resolution.json",
       "links": "links/did-resolution.json",
       "refs": "refs/did-resolution.json",
@@ -28049,7 +28049,7 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/core/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Oct 2025 12:42:38 GMT"
+        "lastModified": "Thu, 16 Oct 2025 12:42:39 GMT"
       },
       "generator": "respec",
       "date": "16 October 2025",
@@ -28107,7 +28107,7 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/authoring/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Oct 2025 12:42:39 GMT"
+        "lastModified": "Thu, 16 Oct 2025 12:42:38 GMT"
       },
       "generator": "respec",
       "date": "16 October 2025",
@@ -28167,7 +28167,7 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/a11y/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Oct 2025 12:42:38 GMT"
+        "lastModified": "Thu, 16 Oct 2025 12:42:39 GMT"
       },
       "generator": "respec",
       "date": "16 October 2025",
@@ -28223,7 +28223,7 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Oct 2025 12:42:39 GMT"
+        "lastModified": "Thu, 16 Oct 2025 12:42:38 GMT"
       },
       "generator": "respec",
       "date": "16 October 2025",
@@ -28280,7 +28280,7 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Oct 2025 12:42:38 GMT"
+        "lastModified": "Thu, 16 Oct 2025 12:42:39 GMT"
       },
       "generator": "respec",
       "date": "16 October 2025",
@@ -28519,7 +28519,7 @@
       ],
       "crawled": "https://w3c.github.io/webappsec-fetch-metadata/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Apr 2025 06:19:12 GMT"
+        "lastModified": "Tue, 01 Apr 2025 06:19:11 GMT"
       },
       "generator": "bikeshed",
       "date": "1 April 2025",
@@ -28615,7 +28615,7 @@
       "groups": [
         {
           "name": "SVG Working Group",
-          "url": "https://www.w3.org/Graphics/SVG/WG/"
+          "url": "https://www.w3.org/groups/wg/svg/"
         },
         {
           "name": "Cascading Style Sheets (CSS) Working Group",
@@ -30146,7 +30146,7 @@
       ],
       "crawled": "https://w3c.github.io/IntersectionObserver/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 27 Jun 2024 18:36:19 GMT"
+        "lastModified": "Thu, 27 Jun 2024 18:36:18 GMT"
       },
       "generator": "bikeshed",
       "date": "27 June 2024",
@@ -31930,7 +31930,7 @@
       ],
       "crawled": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jul 2024 08:09:25 GMT"
+        "lastModified": "Tue, 23 Jul 2024 08:09:24 GMT"
       },
       "generator": "respec",
       "date": "23 July 2024",
@@ -32719,11 +32719,11 @@
       ],
       "crawled": "https://w3c.github.io/webappsec-passkey-endpoints/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 15 Oct 2025 23:17:18 GMT"
+        "lastModified": "Thu, 16 Oct 2025 16:43:06 GMT"
       },
       "generator": "bikeshed",
-      "date": "15 October 2025",
-      "revision": "f33ccad3a4d916e7f66ef69a49f698301e37ce5d",
+      "date": "16 October 2025",
+      "revision": "4604bd91ed9ceb6653bcbd3e09e3982ff9e67ff2",
       "algorithms": "algorithms/passkey-endpoints-1.json",
       "links": "links/passkey-endpoints-1.json",
       "refs": "refs/passkey-endpoints-1.json",
@@ -33634,8 +33634,8 @@
       ],
       "crawled": "https://w3c.github.io/attribution/",
       "generator": "bikeshed",
-      "date": "14 October 2025",
-      "revision": "a0033094c980932dfc93f049c5fa6d66a6ffdc43",
+      "date": "16 October 2025",
+      "revision": "2c38eb6ee42bbbc2a4b4b03aa400e51ad2e6c933",
       "algorithms": "algorithms/privacy-preserving-attribution.json",
       "links": "links/privacy-preserving-attribution.json",
       "refs": "refs/privacy-preserving-attribution.json",
@@ -34944,10 +34944,10 @@
       ],
       "crawled": "https://w3c.github.io/screen-orientation/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 09 Aug 2023 07:26:26 GMT"
+        "lastModified": "Thu, 16 Oct 2025 15:17:24 GMT"
       },
       "generator": "respec",
-      "date": "09 August 2023",
+      "date": "16 October 2025",
       "algorithms": "algorithms/screen-orientation.json",
       "links": "links/screen-orientation.json",
       "refs": "refs/screen-orientation.json",
@@ -35516,7 +35516,7 @@
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/ServiceWorker",
-        "sourcePath": "docs/index.bs",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Service Workers Nightly",
@@ -35597,7 +35597,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-core/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 14 Oct 2025 21:49:10 GMT"
+        "lastModified": "Tue, 14 Oct 2025 21:49:09 GMT"
       },
       "generator": "respec",
       "date": "14 October 2025",
@@ -35653,7 +35653,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-sparql/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 14 Oct 2025 21:49:10 GMT"
+        "lastModified": "Tue, 14 Oct 2025 21:49:09 GMT"
       },
       "generator": "respec",
       "date": "14 October 2025",
@@ -36295,7 +36295,7 @@
       "groups": [
         {
           "name": "SVG Working Group",
-          "url": "https://www.w3.org/Graphics/SVG/WG/"
+          "url": "https://www.w3.org/groups/wg/svg/"
         }
       ],
       "release": {
@@ -36357,7 +36357,7 @@
       "groups": [
         {
           "name": "SVG Working Group",
-          "url": "https://www.w3.org/Graphics/SVG/WG/"
+          "url": "https://www.w3.org/groups/wg/svg/"
         }
       ],
       "release": {
@@ -36412,7 +36412,7 @@
       "groups": [
         {
           "name": "SVG Working Group",
-          "url": "https://www.w3.org/Graphics/SVG/WG/"
+          "url": "https://www.w3.org/groups/wg/svg/"
         }
       ],
       "release": {
@@ -36470,7 +36470,7 @@
       "groups": [
         {
           "name": "SVG Working Group",
-          "url": "https://www.w3.org/Graphics/SVG/WG/"
+          "url": "https://www.w3.org/groups/wg/svg/"
         }
       ],
       "release": {
@@ -36578,7 +36578,7 @@
       "groups": [
         {
           "name": "SVG Working Group",
-          "url": "https://www.w3.org/Graphics/SVG/WG/"
+          "url": "https://www.w3.org/groups/wg/svg/"
         }
       ],
       "release": {
@@ -36670,7 +36670,7 @@
       "groups": [
         {
           "name": "SVG Working Group",
-          "url": "https://www.w3.org/Graphics/SVG/WG/"
+          "url": "https://www.w3.org/groups/wg/svg/"
         }
       ],
       "release": {
@@ -38266,7 +38266,7 @@
       ],
       "crawled": "https://w3c.github.io/sdw/time-aggregates/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 01 Sep 2025 09:14:52 GMT"
+        "lastModified": "Mon, 01 Sep 2025 09:14:51 GMT"
       },
       "generator": "respec",
       "date": "01 September 2025",
@@ -38690,11 +38690,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Oct 2025 07:11:38 GMT"
+        "lastModified": "Thu, 16 Oct 2025 16:20:45 GMT"
       },
       "generator": "bikeshed",
       "date": "16 October 2025",
-      "revision": "f915557f1ff6982b29cebb5f877175138c028f43",
+      "revision": "939d97ed1fb09e2e691e4f455482fbb5f4ed119e",
       "algorithms": "algorithms/wasm-core-2.json",
       "links": "links/wasm-core-2.json",
       "refs": "refs/wasm-core-2.json",
@@ -38763,11 +38763,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Oct 2025 07:11:38 GMT"
+        "lastModified": "Thu, 16 Oct 2025 16:20:45 GMT"
       },
       "generator": "bikeshed",
       "date": "16 October 2025",
-      "revision": "f915557f1ff6982b29cebb5f877175138c028f43",
+      "revision": "939d97ed1fb09e2e691e4f455482fbb5f4ed119e",
       "algorithms": "algorithms/wasm-js-api-2.json",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
@@ -38829,11 +38829,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Oct 2025 07:11:38 GMT"
+        "lastModified": "Thu, 16 Oct 2025 16:20:45 GMT"
       },
       "generator": "bikeshed",
       "date": "16 October 2025",
-      "revision": "f915557f1ff6982b29cebb5f877175138c028f43",
+      "revision": "939d97ed1fb09e2e691e4f455482fbb5f4ed119e",
       "algorithms": "algorithms/wasm-web-api-2.json",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
@@ -40798,11 +40798,11 @@
       ],
       "crawled": "https://w3c.github.io/webrtc-encoded-transform/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 09 Oct 2025 15:44:22 GMT"
+        "lastModified": "Thu, 16 Oct 2025 14:13:21 GMT"
       },
       "generator": "bikeshed",
-      "date": "9 October 2025",
-      "revision": "6ef8bde00d955042c8b8b98925e02d3dc1c93ff0",
+      "date": "16 October 2025",
+      "revision": "45066af79c5df1ce820e65f0a338fb6264ce04ba",
       "algorithms": "algorithms/webrtc-encoded-transform.json",
       "links": "links/webrtc-encoded-transform.json",
       "refs": "refs/webrtc-encoded-transform.json",
@@ -41120,10 +41120,10 @@
       ],
       "crawled": "https://w3c.github.io/webrtc-pc/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 25 Sep 2025 14:46:59 GMT"
+        "lastModified": "Thu, 16 Oct 2025 14:25:33 GMT"
       },
       "generator": "respec",
-      "date": "25 September 2025",
+      "date": "16 October 2025",
       "algorithms": "algorithms/webrtc.json",
       "links": "links/webrtc.json",
       "refs": "refs/webrtc.json",
@@ -42152,7 +42152,7 @@
       ],
       "crawled": "https://w3c.github.io/wot-architecture/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 05 Jun 2024 12:29:40 GMT"
+        "lastModified": "Wed, 05 Jun 2024 12:29:39 GMT"
       },
       "generator": "respec",
       "date": "05 June 2024",
