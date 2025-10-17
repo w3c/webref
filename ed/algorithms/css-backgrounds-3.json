@@ -5,6 +5,43 @@
   },
   "algorithms": [
     {
+      "name": "border-radius-outset",
+      "href": "https://drafts.csswg.org/css-backgrounds-3/#outset-adjusted-border-radius",
+      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"outset-adjusted-border-radius\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">outset-adjusted border radius</dfn> given the 2-dimensional <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#size\" id=\"ref-for-size\">size</a>s <var>edge</var>, <var>radius</var>, and <var>outset</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>coverage</var> be <code>2 * min(<var>radius</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#width\" id=\"ref-for-width\">width</a> / <var>edge</var>’s <span id=\"ref-for-width①\">width</span>, <var>radius</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#height\" id=\"ref-for-height\">height</a> / <var>edge</var>’s <span id=\"ref-for-height①\">height</span>)</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>adustedRadiusWidth</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-backgrounds-3/#adjusted-radius-dimension\" id=\"ref-for-adjusted-radius-dimension\">adjusted radius dimension</a> given <var>coverage</var>, <var>radius</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#width\" id=\"ref-for-width②\">width</a>, and <var>outset</var>’s <span id=\"ref-for-width③\">width</span>.</p>"
+        },
+        {
+          "html": "<p>Let <var>adustedRadiusHeight</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-backgrounds-3/#adjusted-radius-dimension\" id=\"ref-for-adjusted-radius-dimension①\">adjusted radius dimension</a> given <var>coverage</var>, <var>radius</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#height\" id=\"ref-for-height②\">height</a>, and <var>outset</var>’s <span id=\"ref-for-height③\">height</span>.</p>"
+        },
+        {
+          "html": "<p>Return (<var>adustedRadiusWidth</var>, <var>adustedRadiusHeight</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "border-radius-outset",
+      "href": "https://drafts.csswg.org/css-backgrounds-3/#outset-adjusted-border-radius",
+      "html": "To compute the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"outset-adjusted-border-radius\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">outset-adjusted border radius</dfn> given the 2-dimensional <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-3/#size\" id=\"ref-for-size\">size</a>s <var>edge</var>, <var>radius</var>, and <var>outset</var>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>radius</var> is greater than <var>spread</var>, or if <var>coverage</var> is greater than 1, then return <code><var>radius</var> + <var>outset</var></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>ratio</var> be <code><var>radius</var> / <var>outset</var></code>.</p>"
+        },
+        {
+          "html": "<p>Return <code><var>radius</var> + <var>outset</var> * (1 - (1 - <var>ratio</var>)<sup>3</sup> * (1 - <var>coverage</var><sup>3</sup>))</code>.</p>"
+        }
+      ]
+    },
+    {
       "html": "After the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-backgrounds-3/#border-image-dfn\" id=\"ref-for-border-image-dfn②\">border image</a> given by <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-backgrounds-3/#propdef-border-image-source\" id=\"ref-for-propdef-border-image-source③\">border-image-source</a>\n\tis sliced by the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-backgrounds-3/#propdef-border-image-slice\" id=\"ref-for-propdef-border-image-slice⑤\">border-image-slice</a> values,\n\tthe resulting nine images are scaled, positioned, and tiled\n\tinto their corresponding <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-backgrounds-3/#border-image-region\" id=\"ref-for-border-image-region④\">border image regions</a> in four steps:",
       "rationale": "if",
       "steps": [
