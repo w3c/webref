@@ -6,8 +6,6 @@
   "links": {
     "rawlinks": {
       "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
-      "http://wpt.live/css/css-conditional/at-supports-font-format-001.html": {},
-      "http://wpt.live/css/css-conditional/at-supports-font-tech-001.html": {},
       "http://wpt.live/css/css-conditional/container-queries/animation-container-size.html": {},
       "http://wpt.live/css/css-conditional/container-queries/animation-container-type-dynamic.html": {},
       "http://wpt.live/css/css-conditional/container-queries/animation-nested-animation.html": {},
@@ -285,6 +283,7 @@
         ]
       },
       "https://drafts.csswg.org/css-display/": {},
+      "https://drafts.csswg.org/css-extensions-1/": {},
       "https://drafts.csswg.org/css-fonts-4/": {
         "anchors": [
           "font-tech-definitions",
@@ -292,6 +291,7 @@
         ]
       },
       "https://drafts.csswg.org/css-fonts-5/": {},
+      "https://drafts.csswg.org/css-namespaces/": {},
       "https://drafts.csswg.org/css-overflow-3/": {},
       "https://drafts.csswg.org/css-position-3/": {},
       "https://drafts.csswg.org/css-position-4/": {},
@@ -336,6 +336,7 @@
       },
       "https://github.com/w3c/csswg-drafts/issues/11116": {},
       "https://github.com/w3c/csswg-drafts/issues/11117": {},
+      "https://github.com/w3c/csswg-drafts/issues/12622": {},
       "https://github.com/w3c/csswg-drafts/issues/2463": {},
       "https://github.com/w3c/csswg-drafts/issues/5984": {
         "anchors": [
@@ -353,8 +354,6 @@
       "https://github.com/w3c/csswg-drafts/issues/8110": {},
       "https://github.com/w3c/csswg-drafts/pull/10544": {},
       "https://github.com/w3c/csswg-drafts/pull/10874": {},
-      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/at-supports-font-format-001.html": {},
-      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/at-supports-font-tech-001.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/animation-container-size.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/animation-container-type-dynamic.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/animation-nested-animation.html": {},
@@ -608,8 +607,6 @@
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://webidl.spec.whatwg.org/": {},
-      "https://wpt.fyi/results/css/css-conditional/at-supports-font-format-001.html": {},
-      "https://wpt.fyi/results/css/css-conditional/at-supports-font-tech-001.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/animation-container-size.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/animation-container-type-dynamic.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/animation-nested-animation.html": {},
@@ -913,14 +910,14 @@
           "longhand",
           "cascade-dependent-keyword",
           "valdef-all-revert",
-          "valdef-all-revert-layer"
+          "valdef-all-revert-layer",
+          "at-ruledef-import"
         ]
       },
       "https://drafts.csswg.org/css-conditional-3/": {
         "anchors": [
           "supports-queries",
           "at-ruledef-supports",
-          "typedef-supports-decl",
           "conditional-group-rule",
           "at-ruledef-media",
           "css-feature-queries",
@@ -946,6 +943,11 @@
           "independent-formatting-context"
         ]
       },
+      "https://drafts.csswg.org/css-extensions-1/": {
+        "anchors": [
+          "typedef-extension-name"
+        ]
+      },
       "https://drafts.csswg.org/css-fonts-4/": {
         "anchors": [
           "font-tech-values",
@@ -956,6 +958,11 @@
       "https://drafts.csswg.org/css-fonts-5/": {
         "anchors": [
           "at-font-face-rule"
+        ]
+      },
+      "https://drafts.csswg.org/css-namespaces-3/": {
+        "anchors": [
+          "at-ruledef-namespace"
         ]
       },
       "https://drafts.csswg.org/css-overflow-3/": {
@@ -1024,8 +1031,8 @@
       },
       "https://drafts.csswg.org/css-syntax-3/": {
         "anchors": [
-          "typedef-at-keyword-token",
           "at-rule",
+          "typedef-at-keyword-token",
           "at-ruledef-charset",
           "typedef-rule-list",
           "typedef-block-contents",
@@ -1096,7 +1103,8 @@
       "https://drafts.csswg.org/cssom-1/": {
         "anchors": [
           "supported-css-property",
-          "cssomstring"
+          "cssomstring",
+          "cssgroupingrule"
         ]
       },
       "https://drafts.csswg.org/cssom-view-1/": {
