@@ -166,7 +166,7 @@
         "href": "https://drafts.csswg.org/css-view-transitions-2/#dictdef-startviewtransitionoptions"
       },
       "ViewTransition": {
-        "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  readonly attribute Promise<undefined> updateCallbackDone;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> finished;\n  undefined skipTransition();\n  attribute ViewTransitionTypeSet types;\n  readonly attribute Element transitionRoot;\n};",
+        "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  readonly attribute Promise<undefined> updateCallbackDone;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> finished;\n  undefined skipTransition();\n  attribute ViewTransitionTypeSet types;\n  readonly attribute Element transitionRoot;\n  undefined waitUntil(Promise<any> promise);\n};",
         "type": "interface",
         "name": "ViewTransition",
         "inheritance": null,
@@ -293,6 +293,48 @@
             "special": "",
             "readonly": true,
             "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-transitionroot"
+          },
+          {
+            "type": "operation",
+            "name": "waitUntil",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "promise",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "Promise",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "any"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-waituntil"
           }
         ],
         "extAttrs": [

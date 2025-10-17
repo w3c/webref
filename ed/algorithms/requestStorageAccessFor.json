@@ -170,17 +170,14 @@
     },
     {
       "name": "top-level-storage-access-key-generation",
-      "html": "To generate a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-permission-key\" id=\"ref-for-dfn-permission-key①\">permission key</a> for the \"<a class=\"idl-code\" data-link-type=\"permission\" href=\"https://privacycg.github.io/requestStorageAccessFor/#permissiondef-top-level-storage-access\" id=\"ref-for-permissiondef-top-level-storage-access⑥\"><code>top-level-storage-access</code></a>\" feature, given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>settings</var>, run the following steps:",
+      "html": "To generate a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-permission-key\" id=\"ref-for-dfn-permission-key①\">permission key</a> for the \"<a class=\"idl-code\" data-link-type=\"permission\" href=\"https://privacycg.github.io/requestStorageAccessFor/#permissiondef-top-level-storage-access\" id=\"ref-for-permissiondef-top-level-storage-access⑥\"><code>top-level-storage-access</code></a>\" feature, given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin③\">origin</a> <var>origin</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin④\">origin</a> <var>embedded origin</var>, run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>current origin</var> be <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>.</p>"
+          "html": "<p>If <var>embedded origin</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-site-same-site\" id=\"ref-for-concept-site-same-site④\">same site</a> with <var>origin</var>, return null.</p>"
         },
         {
-          "html": "<p>If <var>current origin</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-site-same-site\" id=\"ref-for-concept-site-same-site④\">same site</a> with <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin①\">top-level origin</a>, return null.</p>"
-        },
-        {
-          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site\">obtaining a site</a> from <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin②\">top-level origin</a>.</p>"
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site\">obtaining a site</a> from <var>origin</var>.</p>"
         }
       ]
     },
@@ -234,7 +231,7 @@
           "html": "<p>Let <var>settings</var> be <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object③\">relevant settings object</a>.</p>"
         },
         {
-          "html": "<p>Let <var>origin</var> be <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin③\">origin</a>.</p>"
+          "html": "<p>Let <var>origin</var> be <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>.</p>"
         },
         {
           "html": "<p>Let <var>descriptor</var> be a newly created <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/requestStorageAccessFor/#dictdef-toplevelstorageaccesspermissiondescriptor\" id=\"ref-for-dictdef-toplevelstorageaccesspermissiondescriptor②\">TopLevelStorageAccessPermissionDescriptor</a></code> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissiondescriptor-name\" id=\"ref-for-dom-permissiondescriptor-name②\">name</a></code> set to \"<a class=\"idl-code\" data-link-type=\"permission\" href=\"https://privacycg.github.io/requestStorageAccessFor/#permissiondef-top-level-storage-access\" id=\"ref-for-permissiondef-top-level-storage-access⑧\"><code>top-level-storage-access</code></a>\" and with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://privacycg.github.io/requestStorageAccessFor/#dom-toplevelstorageaccesspermissiondescriptor-requestedorigin\" id=\"ref-for-dom-toplevelstorageaccesspermissiondescriptor-requestedorigin③\">requestedOrigin</a></code> set to <var>origin</var>.</p>"
