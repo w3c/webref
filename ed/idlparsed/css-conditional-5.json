@@ -8,7 +8,8 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "CSSContainerRule"
+          "CSSContainerRule",
+          "CSSSupportsConditionRule"
         ]
       }
     },
@@ -65,24 +66,67 @@
         ],
         "partial": false,
         "href": "https://drafts.csswg.org/css-conditional-5/#csscontainerrule"
+      },
+      "CSSSupportsConditionRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSSupportsConditionRule : CSSGroupingRule {\n  readonly attribute CSSOMString name;\n};",
+        "type": "interface",
+        "name": "CSSSupportsConditionRule",
+        "inheritance": "CSSGroupingRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-conditional-5/#dom-csssupportsconditionrule-name"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-conditional-5/#csssupportsconditionrule"
       }
     },
     "idlExtendedNames": {},
     "globals": {},
     "exposed": {
       "Window": [
-        "CSSContainerRule"
+        "CSSContainerRule",
+        "CSSSupportsConditionRule"
       ]
     },
     "dependencies": {
       "CSSContainerRule": [
         "CSSConditionRule",
         "CSSOMString"
+      ],
+      "CSSSupportsConditionRule": [
+        "CSSGroupingRule",
+        "CSSOMString"
       ]
     },
     "externalDependencies": [
       "CSSConditionRule",
-      "CSSOMString"
+      "CSSOMString",
+      "CSSGroupingRule"
     ],
     "hasObsoleteIdl": false
   }

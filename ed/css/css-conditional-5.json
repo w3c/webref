@@ -501,6 +501,13 @@
         }
       ],
       "value": "@container <container-condition># { <block-contents> }"
+    },
+    {
+      "name": "@supports-condition",
+      "prose": "The @supports-condition at-rule is a conditional group rule that allows authors to define and name a supports query for later reuse, creating a named supports condition. This enables complex or frequently-used feature queries to be referenced by name, improving maintainability and readability.",
+      "href": "https://drafts.csswg.org/css-conditional-5/#at-ruledef-supports-condition",
+      "descriptors": [],
+      "value": "@supports-condition <supports-condition-name> { <block-contents> }"
     }
   ],
   "selectors": [],
@@ -510,6 +517,12 @@
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-feature",
       "type": "type",
       "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-at-rule-fn> | <supports-decl>"
+    },
+    {
+      "name": "<supports-decl>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-decl",
+      "type": "type",
+      "value": "( [ <declaration> | <supports-condition-name> ] )"
     },
     {
       "name": "<supports-font-tech-fn>",
@@ -647,6 +660,12 @@
       "name": "<scroll-state-feature>",
       "prose": "A container scroll-state query allows querying a container for state that depends on scroll position. It is a boolean combination of individual scroll-state features (<scroll-state-feature>) that each query a single feature of the query container. The syntax of a <scroll-state-feature> is the same as for a media feature: a feature name, a comparator, and a value.",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-scroll-state-feature",
+      "type": "type"
+    },
+    {
+      "name": "<supports-condition-name>",
+      "prose": "Where <supports-condition-name> is an <extension-name> that defines the name of the supports query.",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-condition-name",
       "type": "type"
     }
   ]

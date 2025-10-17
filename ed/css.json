@@ -1026,6 +1026,14 @@
       "extended": []
     },
     {
+      "name": "@supports-condition",
+      "prose": "The @supports-condition at-rule is a conditional group rule that allows authors to define and name a supports query for later reuse, creating a named supports condition. This enables complex or frequently-used feature queries to be referenced by name, improving maintainability and readability.",
+      "href": "https://drafts.csswg.org/css-conditional-5/#at-ruledef-supports-condition",
+      "descriptors": [],
+      "syntax": "@supports-condition <supports-condition-name> { <block-contents> }",
+      "extended": []
+    },
+    {
       "descriptors": [],
       "name": "@swash",
       "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-swash",
@@ -18947,9 +18955,15 @@
       "extended": []
     },
     {
+      "name": "supports-condition-name",
+      "prose": "Where <supports-condition-name> is an <extension-name> that defines the name of the supports query.",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-condition-name",
+      "extended": []
+    },
+    {
       "name": "supports-decl",
-      "href": "https://drafts.csswg.org/css-conditional-3/#typedef-supports-decl",
-      "syntax": "( <declaration> )",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-decl",
+      "syntax": "( [ <declaration> | <supports-condition-name> ] )",
       "extended": []
     },
     {
