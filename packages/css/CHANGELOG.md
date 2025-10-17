@@ -7,6 +7,17 @@ Webref adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
 applied to data. A new major version is released whenever a breaking change is
 made to the data structure.
 
+## v8.0.0 - 2025-10-17
+
+### Breaking change
+
+Subsidiary at-rules are now reported at the root level, scoped to their parent at-rule through a `for` property.
+
+### How to upgrade
+
+Unless you're processing at-rules and only expecting unscoped ones, upgrade from version 7 should not require any code update. If you're willing to list unscoped at-rules, filter out those that have a `for` property.
+
+
 ## v7.0.11 - 2025-09-04
 
 CSS extracts are now consolidated into a single file.
