@@ -701,14 +701,14 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment\">Upon fulfillment</a> of <var>promiseOfModule</var> with value <var>module</var>:",
-          "rationale": "resolve",
+          "html": "If <var>promiseOfModule</var> was fulfilled with value <var>module</var>:",
+          "rationale": "reject",
           "steps": [
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#asynchronously-instantiate-a-webassembly-module\" id=\"ref-for-asynchronously-instantiate-a-webassembly-module\">Instantiate the WebAssembly module</a> <var>module</var> importing <var>importObject</var>, and let <var>innerPromise</var> be the result.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment①\">Upon fulfillment</a> of <var>innerPromise</var> with value <var>instance</var>.",
+              "html": "If <var>innerPromise</var> was fulfilled with value <var>instance</var>.",
               "rationale": "let",
               "steps": [
                 {
@@ -717,25 +717,29 @@
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">Resolve</a> <var>promise</var> with <var>result</var>.</p>"
                 }
-              ]
-            },
-            {
-              "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-rejection\" id=\"ref-for-upon-rejection\">Upon rejection</a> of <var>innerPromise</var> with reason <var>reason</var>:",
-              "rationale": "reject",
-              "steps": [
+              ],
+              "additional": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">Reject</a> <var>promise</var> with <var>reason</var>.</p>"
+                  "html": "If <var>innerPromise</var> was rejected with reason <var>reason</var>:",
+                  "rationale": "reject",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">Reject</a> <var>promise</var> with <var>reason</var>.</p>"
+                    }
+                  ]
                 }
               ]
             }
-          ]
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-rejection\" id=\"ref-for-upon-rejection①\">Upon rejection</a> of <var>promiseOfModule</var> with reason <var>reason</var>:",
-          "rationale": "reject",
-          "steps": [
+          ],
+          "additional": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">Reject</a> <var>promise</var> with <var>reason</var>.</p>"
+              "html": "If <var>promiseOfModule</var> was rejected with reason <var>reason</var>:",
+              "rationale": "reject",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">Reject</a> <var>promise</var> with <var>reason</var>.</p>"
+                }
+              ]
             }
           ]
         },

@@ -325,13 +325,13 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If the processing fails on decryption side due to <var>data</var> not following the SFrame format, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransform-onerror\" id=\"ref-for-dom-sframetransform-onerror\">error</a></code> at <var>this</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerroreventtype-syntax\" id=\"ref-for-dom-sframetransformerroreventtype-syntax\">syntax</a></code>\nand its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame\">frame</a></code> attribute set to <var>frame</var>.</p>"
+              "html": "<p>If the processing fails on decryption side due to <var>data</var> not following the SFrame format, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframekeymanagement-onerror\" id=\"ref-for-dom-sframekeymanagement-onerror\">error</a></code> at <var>this</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerroreventtype-syntax\" id=\"ref-for-dom-sframetransformerroreventtype-syntax\">syntax</a></code>\nand its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame\">frame</a></code> attribute set to <var>frame</var>.</p>"
             },
             {
-              "html": "<p>If the processing fails on decryption side due to the key identifier parsed in <var>data</var> being unknown, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransform-onerror\" id=\"ref-for-dom-sframetransform-onerror①\">error</a></code> at <var>this</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent①\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype①\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerroreventtype-keyid\" id=\"ref-for-dom-sframetransformerroreventtype-keyid\">keyID</a></code>,\nits <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame①\">frame</a></code> attribute set to <var>frame</var> and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerrorevent-keyid\" id=\"ref-for-dom-sframetransformerrorevent-keyid\">keyID</a></code> attribute set to the keyID value parsed in the SFrame header.</p>"
+              "html": "<p>If the processing fails on decryption side due to the key identifier parsed in <var>data</var> being unknown, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframekeymanagement-onerror\" id=\"ref-for-dom-sframekeymanagement-onerror①\">error</a></code> at <var>this</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent①\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype①\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerroreventtype-keyid\" id=\"ref-for-dom-sframetransformerroreventtype-keyid\">keyID</a></code>,\nits <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame①\">frame</a></code> attribute set to <var>frame</var> and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerrorevent-keyid\" id=\"ref-for-dom-sframetransformerrorevent-keyid\">keyID</a></code> attribute set to the keyID value parsed in the SFrame header.</p>"
             },
             {
-              "html": "<p>If the processing fails on decryption side due to validation of the authentication tag, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire②\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransform-onerror\" id=\"ref-for-dom-sframetransform-onerror②\">error</a></code> at <var>this</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent②\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype②\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerroreventtype-authentication\" id=\"ref-for-dom-sframetransformerroreventtype-authentication\">authentication</a></code>\nand its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame②\">frame</a></code> attribute set to <var>frame</var>.</p>"
+              "html": "<p>If the processing fails on decryption side due to validation of the authentication tag, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire②\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframekeymanagement-onerror\" id=\"ref-for-dom-sframekeymanagement-onerror②\">error</a></code> at <var>this</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent②\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype②\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerroreventtype-authentication\" id=\"ref-for-dom-sframetransformerroreventtype-authentication\">authentication</a></code>\nand its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame②\">frame</a></code> attribute set to <var>frame</var>.</p>"
             },
             {
               "html": "<p>Abort these steps.</p>"
@@ -684,40 +684,42 @@
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">In parallel</a>, run the following steps:",
-          "rationale": "gather",
+          "rationale": "let",
           "steps": [
             {
-              "html": "<p>Gather a list of video encoders, named <var>videoEncoders</var> from <var>encoder</var>, ordered according negotiated RIDs if any.</p>"
+              "html": "<p>Let <var>layers</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of the layers for this <var>encoder</var>, ordered by negotiated encoding index.</p>"
             },
             {
-              "html": "<p>If <var>rid</var> is defined, remove from <var>videoEncoders</var> any video encoder that does not match <var>rid</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> from <var>layers</var> all layers that are not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpencodingparameters-active\" id=\"ref-for-dom-rtcrtpencodingparameters-active\">active</a></code>, or whose\ncorresponding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender①①\">RTCRtpSender</a></code> track has ended.</p>"
             },
             {
-              "html": "<p>If <var>rid</var> is undefined, remove from <var>videoEncoders</var> all video encoders except the first one.</p>"
-            },
+              "html": "<p>If <var>rid</var> is not undefined, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">remove</a> from <var>layers</var> all layers whose RID is not <var>rid</var>.</p>"
+            }
+          ],
+          "additional": [
             {
-              "html": "<p>If <var>videoEncoders</var> is empty, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④\">queue a task</a> to reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror\">NotFoundError</a></code> and abort these steps.\n<var>videoEncoders</var> is expected to be empty if the corresponding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender①①\">RTCRtpSender</a></code> is not active, or the corresponding <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender①②\">RTCRtpSender</a></code> track is ended.</p>"
-            },
-            {
-              "html": "<p>Let <var>videoEncoder</var> be the first encoder in <var>videoEncoders</var>.</p>"
-            },
-            {
-              "html": "<p>If <var>rid</var> is undefined, set <var>rid</var> to the RID value corresponding to <var>videoEncoder</var>.</p>"
-            },
-            {
-              "html": "<p>Create a pending key frame task called <var>task</var> with <var>task</var>.<code>[[rid]]</code> set to rid and <var>task</var>.<code>[[promise]]</code>| set to <var>promise</var>.</p>"
-            },
-            {
-              "html": "<p>If <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code> is undefined, initialize <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code> to an empty set.</p>"
-            },
-            {
-              "html": "<p>Let <var>shouldTriggerKeyFrame</var> be <code>false</code> if <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code> contains a task whose <code>[[rid]]</code>\nvalue is equal to <var>rid</var>, and <code>true</code> otherwise.</p>"
-            },
-            {
-              "html": "<p>Add <var>task</var> to <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code>.</p>"
-            },
-            {
-              "html": "<p>If <var>shouldTriggerKeyFrame</var> is <code>true</code>, instruct <var>videoEncoder</var> to generate a key frame for the next provided video frame.</p>"
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">In parallel</a>, run the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>layers</var> is now empty, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④\">queue a task</a> to reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror\">NotFoundError</a></code> and abort these steps.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove②\">Remove</a> from <var>layers</var> all layers already <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">found</a> in any <code>[[layers]]</code> of any tasks in <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code>.</p>"
+                },
+                {
+                  "html": "<p>Create a pending key frame task called <var>task</var> with <var>task</var>.<code>[[layers]]</code> set to <var>layers</var> and <var>task</var>.<code>[[promise]]</code> set to <var>promise</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code> is undefined, initialize <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code> to an empty set.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>task</var> to <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code>.</p>"
+                },
+                {
+                  "html": "<p>For each <var>layer</var> in <var>layers</var> (if any), instruct <var>encoder</var> to generate a key frame for its\nnext provided video frame to that <var>layer</var>.</p>"
+                }
+              ]
             }
           ]
         }
@@ -741,14 +743,17 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>frame</var> was generated by a video encoder identified by <var>task</var>.<code>[[rid]]</code>, run the following steps:",
+              "html": "If <var>frame</var> was generated for a layer <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contained</a> in <var>task</var>.<code>[[layers]]</code>,\nthen run the following steps:",
               "rationale": "remove",
               "steps": [
                 {
-                  "html": "<p>Remove <var>task</var> from <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove③\">Remove</a> that layer from <var>task</var>.<code>[[layers]]</code>.</p>"
                 },
                 {
-                  "html": "<p>Resolve <var>task</var>.<code>[[promise]]</code> with undefined.</p>"
+                  "html": "<p>If <var>task</var>.<code>[[layers]]</code> is now empty, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove④\">remove</a> <var>task</var> from\n<var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">Resolve</a> <var>task</var>.<code>[[promise]]</code> with undefined.</p>"
                 }
               ]
             }
@@ -773,13 +778,13 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If sending a Full Intra Request (FIR) by <var>depacketizer</var>’s receiver is not deemed appropriate, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>promise</var> with undefined and abort these steps.\nSection 4.3.1 of <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#biblio-rfc5104\" title=\"Codec Control Messages in the RTP Audio-Visual Profile with Feedback (AVPF)\">[RFC5104]</a> provides guidelines of how and when it is appropriate to sending a Full Intra Request.</p>"
+              "html": "<p>If sending a Full Intra Request (FIR) by <var>depacketizer</var>’s receiver is not deemed appropriate, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">resolve</a> <var>promise</var> with undefined and abort these steps.\nSection 4.3.1 of <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#biblio-rfc5104\" title=\"Codec Control Messages in the RTP Audio-Visual Profile with Feedback (AVPF)\">[RFC5104]</a> provides guidelines of how and when it is appropriate to sending a Full Intra Request.</p>"
             },
             {
               "html": "<p>Generate a Full Intra Request (FIR) packet as defined in section 4.3.1 of <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#biblio-rfc5104\" title=\"Codec Control Messages in the RTP Audio-Visual Profile with Feedback (AVPF)\">[RFC5104]</a> and send it through <var>depacketizer</var>’s receiver.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑤\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">resolve</a> <var>promise</var> with undefined.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑤\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve③\">resolve</a> <var>promise</var> with undefined.</p>"
             }
           ]
         }
