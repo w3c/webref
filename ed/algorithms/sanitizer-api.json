@@ -67,7 +67,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>compliantHTML</var> be the result of invoking the <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/trusted-types/dist/spec/#abstract-opdef-get-trusted-type-compliant-string\" id=\"ref-for-abstract-opdef-get-trusted-type-compliant-string②\">Get Trusted Type compliant string</a> algorithm with\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedhtml\" id=\"ref-for-trustedhtml⑤\">TrustedHTML</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>, <var>html</var>, \"Document parseHTMLUnsafe\", and \"script\".</p>"
+          "html": "<p>Let <var>compliantHTML</var> be the result of invoking the <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/trusted-types/dist/spec/#abstract-opdef-get-trusted-type-compliant-string\" id=\"ref-for-abstract-opdef-get-trusted-type-compliant-string②\">Get Trusted Type compliant string</a> algorithm with\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/trusted-types/dist/spec/#trustedhtml\" id=\"ref-for-trustedhtml⑤\">TrustedHTML</a></code>, the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object\">current global object</a>, <var>html</var>, \"Document parseHTMLUnsafe\", and \"script\".</p>"
         },
         {
           "html": "<p>Let <var>document</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑥\">Document</a></code>, whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-content-type\" id=\"ref-for-concept-document-content-type\">content type</a> is \"text/html\".</p>"
@@ -134,7 +134,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>valid</var> be the return value of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-set-a-configuration\" id=\"ref-for-sanitizer-set-a-configuration\">set a configuration</a> with\n <var>configuration</var> and true on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>.</p>"
+          "html": "<p>Let <var>valid</var> be the return value of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-set-a-configuration\" id=\"ref-for-sanitizer-set-a-configuration\">set a configuration</a> with\n <var>configuration</var> and true on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>.</p>"
         },
         {
           "html": "<p>If <var>valid</var> is false, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
@@ -148,7 +148,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>config</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-configuration\" id=\"ref-for-sanitizer-configuration\">configuration</a>.</p>"
+          "html": "<p>Let <var>config</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizer-configuration\" id=\"ref-for-sanitizer-configuration\">configuration</a>.</p>"
         },
         {
           "html": "If <var>config</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements\">elements</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>:",
@@ -1428,9 +1428,41 @@
       ]
     },
     {
+      "name": "SanitizerConfig/remove",
+      "href": "https://wicg.github.io/sanitizer-api/#sanitizerconfig-remove",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"SanitizerConfig\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizerconfig-remove\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove</dfn> an <var>item</var> from a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> <var>list</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>removed</var> to false.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> <var>entry</var> of <var>list</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>item</var>[\"name\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is①①\">equals</a> <var>entry</var>[\"name\"] and\n  <var>item</var>[\"namespace\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is①②\">equals</a> <var>entry</var>[\"namespace\"]:",
+              "rationale": "remove",
+              "steps": [
+                {
+                  "html": "<p>Remove item <var>entry</var> from <var>list</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>removed</var> to true.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>removed</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "SanitizerConfig/add",
       "href": "https://wicg.github.io/sanitizer-api/#sanitizerconfig-add",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"SanitizerConfig\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizerconfig-add\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add</dfn> a <var>name</var> to a <var>list</var>, where <var>name</var> is\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-name\" id=\"ref-for-canonicalize-a-sanitizer-name③\">canonicalized</a> and <var>list</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②\">ordered map</a>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"SanitizerConfig\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizerconfig-add\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add</dfn> a <var>name</var> to a <var>list</var>, where <var>name</var> is\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-name\" id=\"ref-for-canonicalize-a-sanitizer-name③\">canonicalized</a> and <var>list</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①\">ordered map</a>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1476,14 +1508,14 @@
     {
       "name": "SanitizerConfig/remove duplicates",
       "href": "https://wicg.github.io/sanitizer-api/#sanitizerconfig-remove-duplicates",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"SanitizerConfig\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizerconfig-remove-duplicates\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove duplicates</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> <var>list</var>,",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"SanitizerConfig\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizerconfig-remove-duplicates\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove duplicates</dfn> from a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> <var>list</var>,",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>result</var> be « ».</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>entry</var> of <var>list</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-add\" id=\"ref-for-sanitizerconfig-add②\">add</a> <var>entry</var> to <var>result</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>entry</var> of <var>list</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-add\" id=\"ref-for-sanitizerconfig-add②\">add</a> <var>entry</var> to <var>result</var>.</p>"
         },
         {
           "html": "<p>Return <var>result</var>.</p>"
@@ -1493,7 +1525,7 @@
     {
       "name": "SanitizerConfig/intersection",
       "href": "https://wicg.github.io/sanitizer-api/#sanitizerconfig-intersection",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"SanitizerConfig\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizerconfig-intersection\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">intersection</dfn> of two <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">lists</a> <var>A</var> and <var>B</var>\ncontaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#typedefdef-sanitizerelement\" id=\"ref-for-typedefdef-sanitizerelement⑦\">SanitizerElement</a></code> is the same as <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-intersection\" id=\"ref-for-set-intersection④\">set intersection</a>,\nbut with the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④\">set</a> entries previously <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-name\" id=\"ref-for-canonicalize-a-sanitizer-name④\">canonicalized</a>:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"SanitizerConfig\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"sanitizerconfig-intersection\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">intersection</dfn> of two <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">lists</a> <var>A</var> and <var>B</var>\ncontaining <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#typedefdef-sanitizerelement\" id=\"ref-for-typedefdef-sanitizerelement⑦\">SanitizerElement</a></code> is the same as <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-intersection\" id=\"ref-for-set-intersection④\">set intersection</a>,\nbut with the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④\">set</a> entries previously <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-name\" id=\"ref-for-canonicalize-a-sanitizer-name④\">canonicalized</a>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1503,10 +1535,10 @@
           "html": "<p>Let <var>set B</var> be « [] »</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>entry</var> of <var>A</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">append</a> the result of\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-name\" id=\"ref-for-canonicalize-a-sanitizer-name⑤\">canonicalize a sanitizer name</a> <var>entry</var> to <var>set A</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>entry</var> of <var>A</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">append</a> the result of\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-name\" id=\"ref-for-canonicalize-a-sanitizer-name⑤\">canonicalize a sanitizer name</a> <var>entry</var> to <var>set A</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>entry</var> of <var>B</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">append</a> the result of\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-name\" id=\"ref-for-canonicalize-a-sanitizer-name⑥\">canonicalize a sanitizer name</a> <var>entry</var> to <var>set B</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>entry</var> of <var>B</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">append</a> the result of\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-name\" id=\"ref-for-canonicalize-a-sanitizer-name⑥\">canonicalize a sanitizer name</a> <var>entry</var> to <var>set B</var>.</p>"
         },
         {
           "html": "<p>Retrun the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-intersection\" id=\"ref-for-set-intersection⑤\">intersection</a> of <var>set A</var> and <var>set B</var>.</p>"
