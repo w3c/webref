@@ -489,14 +489,14 @@
       ]
     },
     {
-      "html": "To generate a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-permission-key\" id=\"ref-for-dfn-permission-key②\">permission key</a> for the \"<a class=\"idl-code\" data-link-type=\"permission\" href=\"https://privacycg.github.io/storage-access/#permissiondef-storage-access\" id=\"ref-for-permissiondef-storage-access⑧\"><code>storage-access</code></a>\" feature, given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>settings</var>, run the following steps:",
+      "html": "To generate a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-permission-key\" id=\"ref-for-dfn-permission-key②\">permission key</a> for the \"<a class=\"idl-code\" data-link-type=\"permission\" href=\"https://privacycg.github.io/storage-access/#permissiondef-storage-access\" id=\"ref-for-permissiondef-storage-access⑧\"><code>storage-access</code></a>\" feature, given an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin④\">origin</a> <var>origin</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑤\">origin</a> <var>embeddedOrigin</var>:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>topLevelSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site④\">obtaining a site</a> from <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin⑤\">top-level origin</a>.</p>"
+          "html": "<p>Let <var>topLevelSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site④\">obtaining a site</a> from <var>origin</var>.</p>"
         },
         {
-          "html": "<p>Let <var>embeddedSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site⑤\">obtaining a site</a> from <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>.</p>"
+          "html": "<p>Let <var>embeddedSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site⑤\">obtaining a site</a> from <var>embeddedOrigin</var>.</p>"
         },
         {
           "html": "<p>Return (<var>topLevelSite</var>, <var>embeddedSite</var>).</p>"
@@ -556,7 +556,7 @@
           "html": "<p>Let <var>settings</var> be <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object⑦\">relevant settings object</a>.</p>"
         },
         {
-          "html": "<p>Let <var>top-level site</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site⑥\">obtaining a site</a> from <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin②\">origin</a>.</p>"
+          "html": "<p>Let <var>top-level site</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site⑥\">obtaining a site</a> from <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>.</p>"
         },
         {
           "html": "If <var>embedded origin</var> is a single U+002A ASTERISK character (*), then:",
@@ -587,7 +587,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>embedded origin</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site⑤\">same site</a> with <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin③\">origin</a> return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error\" id=\"ref-for-dfn-error③\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error-code\" id=\"ref-for-dfn-error-code③\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation①\">unsupported operation</a>.</p>"
+              "html": "<p>If <var>embedded origin</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-site\" id=\"ref-for-same-site⑤\">same site</a> with <var>settings</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin②\">origin</a> return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error\" id=\"ref-for-dfn-error③\">WebDriver error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error-code\" id=\"ref-for-dfn-error-code③\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/webdriver-spec.html#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation①\">unsupported operation</a>.</p>"
             },
             {
               "html": "If <var>blocked</var> is <code>true</code>, then:",
