@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-10-18T12:54:15.058Z",
+  "date": "2025-10-18T18:48:56.924Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -748,7 +748,7 @@
   },
   "stats": {
     "crawled": 716,
-    "errors": 2
+    "errors": 4
   },
   "crawler": "reffy-20.0.1",
   "results": [
@@ -4095,11 +4095,11 @@
       ],
       "crawled": "https://privacycg.github.io/storage-access/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 12 Apr 2025 00:28:48 GMT"
+        "lastModified": "Sat, 18 Oct 2025 13:57:57 GMT"
       },
       "generator": "bikeshed",
-      "date": "12 April 2025",
-      "revision": "b569d1e224927140624d2ac0626cac09f6a01772",
+      "date": "18 October 2025",
+      "revision": "03af52d120e8f2ccb566c79597b7de8a31284b66",
       "algorithms": "algorithms/storage-access.json",
       "links": "links/storage-access.json",
       "refs": "refs/storage-access.json",
@@ -20208,7 +20208,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-4/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 17 Oct 2025 16:31:05 GMT"
+        "lastModified": "Fri, 17 Oct 2025 16:31:06 GMT"
       },
       "generator": "bikeshed",
       "date": "12 October 2025",
@@ -24461,7 +24461,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-shadow-parts-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 17 Oct 2025 16:31:05 GMT"
+        "lastModified": "Fri, 17 Oct 2025 16:31:06 GMT"
       },
       "generator": "bikeshed",
       "date": "12 October 2025",
@@ -24738,7 +24738,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-speech-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 17 Oct 2025 16:31:06 GMT"
+        "lastModified": "Fri, 17 Oct 2025 16:31:07 GMT"
       },
       "generator": "bikeshed",
       "date": "29 October 2024",
@@ -26395,7 +26395,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-writing-modes-4/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 17 Oct 2025 16:31:05 GMT"
+        "lastModified": "Fri, 17 Oct 2025 16:31:06 GMT"
       },
       "generator": "bikeshed",
       "date": "12 October 2025",
@@ -28223,7 +28223,7 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Oct 2025 12:42:38 GMT"
+        "lastModified": "Thu, 16 Oct 2025 12:42:39 GMT"
       },
       "generator": "respec",
       "date": "16 October 2025",
@@ -29109,7 +29109,8 @@
       "dfns": "dfns/geometry-1.json",
       "headings": "headings/geometry-1.json",
       "ids": "ids/geometry-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/geometry-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 490)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/gpc/",
@@ -31771,7 +31772,8 @@
       "dfns": "dfns/motion-1.json",
       "headings": "headings/motion-1.json",
       "ids": "ids/motion-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/motion-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 533)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
