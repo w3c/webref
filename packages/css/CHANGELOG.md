@@ -15,7 +15,7 @@ Subsidiary at-rules are now reported at the root level, scoped to their parent a
 
 ### How to upgrade
 
-Unless you're processing at-rules and only expecting unscoped ones, upgrade from version 7 should not require any code update. If you're willing to list unscoped at-rules, filter out those that have a `for` property.
+Unless you're processing at-rules and only expecting unscoped ones, upgrade from version 7 should not require any code update. If you need to list only unscoped at-rules, filter out those that have a `for` property.
 
 
 ## v7.0.11 - 2025-09-04
