@@ -51,6 +51,7 @@ const ast = definitionSyntax.parse(properties['flex'].syntax);
 Additional keys may be set depending on the type of the CSS feature. For example:
 
 - At-rules have a `descriptors` key that contains the list of descriptors defined for the given at-rule. That list may not be exhaustive. For example, it does not contain descriptors that are only implicitly defined in specs, such as families of properties that some at-rules (e.g, `@position-try`) accept as descriptors.
+- At-rule that are scoped to another at-rules have a `for` key that contains the list of scoping at-rules.
 - Functions and types that are scoped to a property or other feature have a `for` key that contains the list of scoping features for that feature. A scoping feature may be a property, a function or a type. When the scoping feature is a type, its name in the `for` key is enclosed between `<` and `>`.
 - Properties have a `styleDeclaration` key that contains the list of IDL attribute names that the property generates. A number of other keys may be set to describe the property's initial value, animation type and other parameters.
 
