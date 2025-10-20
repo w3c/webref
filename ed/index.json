@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-10-20T06:50:20.702Z",
+  "date": "2025-10-20T12:55:28.670Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -748,7 +748,7 @@
   },
   "stats": {
     "crawled": 716,
-    "errors": 3
+    "errors": 6
   },
   "crawler": "reffy-20.0.1",
   "results": [
@@ -1474,7 +1474,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 20 Oct 2025 06:38:59 GMT"
+        "lastModified": "Mon, 20 Oct 2025 07:09:28 GMT"
       },
       "date": "20 October 2025",
       "algorithms": "algorithms/layered-cookies.json",
@@ -1523,7 +1523,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 20 Oct 2025 06:38:59 GMT"
+        "lastModified": "Mon, 20 Oct 2025 07:09:28 GMT"
       },
       "date": "20 October 2025",
       "algorithms": "algorithms/no-vary-search.json",
@@ -1572,7 +1572,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 20 Oct 2025 06:38:59 GMT"
+        "lastModified": "Mon, 20 Oct 2025 07:09:28 GMT"
       },
       "date": "20 October 2025",
       "algorithms": "algorithms/rfc6265bis.json",
@@ -2715,7 +2715,8 @@
       "dfns": "dfns/filter-effects-2.json",
       "headings": "headings/filter-effects-2.json",
       "ids": "ids/filter-effects-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-2/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 34)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://encoding.spec.whatwg.org/",
@@ -19256,7 +19257,8 @@
       "dfns": "dfns/css-animation-worklet-1.json",
       "headings": "headings/css-animation-worklet-1.json",
       "ids": "ids/css-animation-worklet-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 342)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-animations-1/",
@@ -25574,8 +25576,7 @@
       "dfns": "dfns/css-typed-om-1.json",
       "headings": "headings/css-typed-om-1.json",
       "ids": "ids/css-typed-om-1.json",
-      "cddl": [],
-      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 434)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "cddl": []
     },
     {
       "url": "https://www.w3.org/TR/css-ui-3/",
@@ -28733,7 +28734,8 @@
       "elements": "elements/filter-effects-1.json",
       "headings": "headings/filter-effects-1.json",
       "ids": "ids/filter-effects-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/filter-effects-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 484)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/fingerprinting-guidance/",
@@ -29110,7 +29112,8 @@
       "dfns": "dfns/geometry-1.json",
       "headings": "headings/geometry-1.json",
       "ids": "ids/geometry-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.fxtf.org/geometry-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 490)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/gpc/",
@@ -32657,11 +32660,11 @@
       ],
       "crawled": "https://w3c.github.io/paint-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 15 Sep 2025 14:03:58 GMT"
+        "lastModified": "Mon, 20 Oct 2025 12:22:26 GMT"
       },
       "generator": "bikeshed",
-      "date": "15 September 2025",
-      "revision": "cb8ea4f67440a4a65839a807a2842c532660bc3c",
+      "date": "20 October 2025",
+      "revision": "8ab378a84d96bfc78102b853dd5411ec3b20acc6",
       "algorithms": "algorithms/paint-timing.json",
       "links": "links/paint-timing.json",
       "refs": "refs/paint-timing.json",
@@ -40467,11 +40470,11 @@
       ],
       "crawled": "https://w3c.github.io/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 Oct 2025 09:32:31 GMT"
+        "lastModified": "Mon, 20 Oct 2025 10:10:14 GMT"
       },
       "generator": "bikeshed",
-      "date": "7 October 2025",
-      "revision": "18639ef3612d3ad5bbd302cd8e6ef0e6f81119c2",
+      "date": "20 October 2025",
+      "revision": "df9d1d5bf17a81d72f9e1090fc9b354279099a48",
       "algorithms": "algorithms/webdriver-bidi.json",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",
@@ -40545,11 +40548,11 @@
       ],
       "crawled": "https://w3c.github.io/webdriver/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Sep 2025 09:46:38 GMT"
+        "lastModified": "Mon, 20 Oct 2025 10:03:30 GMT"
       },
       "generator": "respec",
-      "date": "08 September 2025",
-      "revision": "a101f0aade5f10da9e48707bd19dd3ed40193695",
+      "date": "20 October 2025",
+      "revision": "00a6484ff3520f658005280307dae16ee94683d9",
       "algorithms": "algorithms/webdriver2.json",
       "links": "links/webdriver2.json",
       "refs": "refs/webdriver2.json",
