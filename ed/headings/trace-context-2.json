@@ -350,64 +350,44 @@
       "number": "3.5"
     },
     {
-      "id": "trace-context-http-response-headers-format",
-      "href": "https://w3c.github.io/trace-context/#trace-context-http-response-headers-format",
+      "id": "trace-context-server-timing-metric-format",
+      "href": "https://w3c.github.io/trace-context/#trace-context-server-timing-metric-format",
       "level": 2,
-      "title": "Trace Context HTTP Response Headers Format",
+      "title": "Trace Context Server Timing Metric Format",
       "alternateIds": [
-        "x4-trace-context-http-response-headers-format"
+        "x4-trace-context-server-timing-metric-format"
       ],
       "number": "4"
     },
     {
-      "id": "traceresponse-header",
-      "href": "https://w3c.github.io/trace-context/#traceresponse-header",
+      "id": "trace-context-metric",
+      "href": "https://w3c.github.io/trace-context/#trace-context-metric",
       "level": 3,
-      "title": "Traceresponse Header",
+      "title": "Trace Context Metric",
       "alternateIds": [
-        "x4-1-traceresponse-header"
+        "x4-1-trace-context-metric"
       ],
       "number": "4.1"
     },
     {
-      "id": "header-name-1",
-      "href": "https://w3c.github.io/trace-context/#header-name-1",
+      "id": "metric-name",
+      "href": "https://w3c.github.io/trace-context/#metric-name",
       "level": 4,
-      "title": "Header Name",
+      "title": "Metric Name",
       "alternateIds": [
-        "x4-1-1-header-name"
+        "x4-1-1-metric-name"
       ],
       "number": "4.1.1"
     },
     {
-      "id": "traceresponse-header-field-values",
-      "href": "https://w3c.github.io/trace-context/#traceresponse-header-field-values",
+      "id": "metric-description-format",
+      "href": "https://w3c.github.io/trace-context/#metric-description-format",
       "level": 4,
-      "title": "traceresponse Header Field Values",
+      "title": "Metric Description Format",
       "alternateIds": [
-        "x4-1-2-traceresponse-header-field-values"
+        "x4-1-2-metric-description-format"
       ],
       "number": "4.1.2"
-    },
-    {
-      "id": "version-0",
-      "href": "https://w3c.github.io/trace-context/#version-0",
-      "level": 5,
-      "title": "version",
-      "alternateIds": [
-        "x4-1-2-1-version"
-      ],
-      "number": "4.1.2.1"
-    },
-    {
-      "id": "version-format-0",
-      "href": "https://w3c.github.io/trace-context/#version-format-0",
-      "level": 5,
-      "title": "version-format",
-      "alternateIds": [
-        "x4-1-2-2-version-format"
-      ],
-      "number": "4.1.2.2"
     },
     {
       "id": "trace-id-0",
@@ -415,19 +395,29 @@
       "level": 5,
       "title": "trace-id",
       "alternateIds": [
-        "x4-1-2-3-trace-id"
+        "x4-1-2-1-trace-id"
       ],
-      "number": "4.1.2.3"
+      "number": "4.1.2.1"
     },
     {
-      "id": "child-id",
-      "href": "https://w3c.github.io/trace-context/#child-id",
+      "id": "span-id",
+      "href": "https://w3c.github.io/trace-context/#span-id",
       "level": 5,
-      "title": "child-id",
+      "title": "span-id",
       "alternateIds": [
-        "x4-1-2-4-child-id"
+        "x4-1-2-2-span-id"
       ],
-      "number": "4.1.2.4"
+      "number": "4.1.2.2"
+    },
+    {
+      "id": "version-0",
+      "href": "https://w3c.github.io/trace-context/#version-0",
+      "level": 5,
+      "title": "version",
+      "alternateIds": [
+        "x4-1-2-3-version"
+      ],
+      "number": "4.1.2.3"
     },
     {
       "id": "trace-flags-0",
@@ -435,9 +425,9 @@
       "level": 5,
       "title": "trace-flags",
       "alternateIds": [
-        "x4-1-2-5-trace-flags"
+        "x4-1-2-4-trace-flags"
       ],
-      "number": "4.1.2.5"
+      "number": "4.1.2.4"
     },
     {
       "id": "sampled-flag-0",
@@ -445,9 +435,9 @@
       "level": 6,
       "title": "Sampled flag",
       "alternateIds": [
-        "x4-1-2-5-1-sampled-flag"
+        "x4-1-2-4-1-sampled-flag"
       ],
-      "number": "4.1.2.5.1"
+      "number": "4.1.2.4.1"
     },
     {
       "id": "random-trace-id-flag-0",
@@ -455,9 +445,9 @@
       "level": 6,
       "title": "Random Trace ID Flag",
       "alternateIds": [
-        "x4-1-2-5-2-random-trace-id-flag"
+        "x4-1-2-4-2-random-trace-id-flag"
       ],
-      "number": "4.1.2.5.2"
+      "number": "4.1.2.4.2"
     },
     {
       "id": "other-flags-0",
@@ -465,9 +455,9 @@
       "level": 6,
       "title": "Other Flags",
       "alternateIds": [
-        "x4-1-2-5-3-other-flags"
+        "x4-1-2-4-3-other-flags"
       ],
-      "number": "4.1.2.5.3"
+      "number": "4.1.2.4.3"
     },
     {
       "id": "processing-model",
