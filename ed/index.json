@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-10-23T06:57:55.244Z",
+  "date": "2025-10-23T12:58:05.423Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -1042,6 +1042,7 @@
       "headings": "headings/font-metrics-api-1.json",
       "ids": "ids/font-metrics-api-1.json",
       "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 18)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/font-metrics-api-1.json"
     },
     {
@@ -5481,7 +5482,6 @@
       "links": "links/WEBGL_depth_texture.json",
       "idl": "idl/WEBGL_depth_texture.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 98)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13510:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:477:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}",
       "idlparsed": "idlparsed/WEBGL_depth_texture.json"
     },
     {
@@ -15112,7 +15112,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Oct 2025 00:16:49 GMT"
+        "lastModified": "Wed, 22 Oct 2025 12:51:27 GMT"
       },
       "date": "22 October 2025",
       "links": "links/rfc6797.json",
@@ -18708,6 +18708,7 @@
       "headings": "headings/css-animation-worklet-1.json",
       "ids": "ids/css-animation-worklet-1.json",
       "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 342)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/css-animation-worklet-1.json"
     },
     {
@@ -25052,6 +25053,7 @@
       "headings": "headings/css-typed-om-1.json",
       "ids": "ids/css-typed-om-1.json",
       "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 434)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/css-typed-om-1.json"
     },
     {
@@ -28607,7 +28609,6 @@
       "headings": "headings/geometry-1.json",
       "ids": "ids/geometry-1.json",
       "cddl": [],
-      "error": "Error: Loading https://drafts.fxtf.org/geometry-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 490)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/geometry-1.json"
     },
     {
@@ -31295,8 +31296,7 @@
       "dfns": "dfns/motion-1.json",
       "headings": "headings/motion-1.json",
       "ids": "ids/motion-1.json",
-      "cddl": [],
-      "error": "Error: Loading https://drafts.fxtf.org/motion-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 533)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "cddl": []
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
