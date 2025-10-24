@@ -3525,154 +3525,18 @@
     {
       "name": "animation-trigger",
       "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger",
-      "initial": "see individual properties",
+      "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "see individual properties",
+      "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "styleDeclaration": [
         "animation-trigger",
         "animationTrigger"
       ],
-      "syntax": "<single-animation-trigger>#",
-      "extended": []
-    },
-    {
-      "name": "animation-trigger-behavior",
-      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-behavior",
-      "initial": "once",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "list, each item a keyword as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "not animatable",
-      "styleDeclaration": [
-        "animation-trigger-behavior",
-        "animationTriggerBehavior"
-      ],
-      "syntax": "<single-animation-trigger-behavior>#",
-      "extended": []
-    },
-    {
-      "name": "animation-trigger-exit-range",
-      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-exit-range",
-      "initial": "see individual properties",
-      "appliesTo": "see individual properties",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "animation-trigger-exit-range",
-        "animationTriggerExitRange"
-      ],
-      "syntax": "[ <'animation-trigger-exit-range-start'> <'animation-trigger-exit-range-end'>? ]#",
-      "extended": []
-    },
-    {
-      "name": "animation-trigger-exit-range-end",
-      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-exit-range-end",
-      "initial": "auto",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
-      "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
-      "canonicalOrder": "per grammar",
-      "animationType": "not animatable",
-      "styleDeclaration": [
-        "animation-trigger-exit-range-end",
-        "animationTriggerExitRangeEnd"
-      ],
-      "syntax": "[ auto | normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
-      "extended": []
-    },
-    {
-      "name": "animation-trigger-exit-range-start",
-      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-exit-range-start",
-      "initial": "auto",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
-      "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
-      "canonicalOrder": "per grammar",
-      "animationType": "not animatable",
-      "styleDeclaration": [
-        "animation-trigger-exit-range-start",
-        "animationTriggerExitRangeStart"
-      ],
-      "syntax": "[ auto | normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
-      "extended": []
-    },
-    {
-      "name": "animation-trigger-range",
-      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-range",
-      "initial": "see individual properties",
-      "appliesTo": "see individual properties",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "animation-trigger-range",
-        "animationTriggerRange"
-      ],
-      "syntax": "[ <'animation-trigger-range-start'> <'animation-trigger-range-end'>? ]#",
-      "extended": []
-    },
-    {
-      "name": "animation-trigger-range-end",
-      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-range-end",
-      "initial": "normal",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
-      "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
-      "canonicalOrder": "per grammar",
-      "animationType": "not animatable",
-      "styleDeclaration": [
-        "animation-trigger-range-end",
-        "animationTriggerRangeEnd"
-      ],
-      "syntax": "[ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
-      "extended": []
-    },
-    {
-      "name": "animation-trigger-range-start",
-      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-range-start",
-      "initial": "normal",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
-      "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
-      "canonicalOrder": "per grammar",
-      "animationType": "not animatable",
-      "styleDeclaration": [
-        "animation-trigger-range-start",
-        "animationTriggerRangeStart"
-      ],
-      "syntax": "[ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
-      "extended": []
-    },
-    {
-      "name": "animation-trigger-timeline",
-      "href": "https://drafts.csswg.org/css-animations-2/#propdef-animation-trigger-timeline",
-      "initial": "auto",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "list, each item either the keyword none, the keyword auto, a case-sensitive css identifier, a computed scroll() function, or a computed view() function",
-      "canonicalOrder": "per grammar",
-      "animationType": "not animatable",
-      "styleDeclaration": [
-        "animation-trigger-timeline",
-        "animationTriggerTimeline"
-      ],
-      "syntax": "<single-animation-timeline>#",
+      "syntax": "[ none | [ <dashed-ident> <animation-action>+ ]+ ]#",
       "extended": []
     },
     {
@@ -7378,6 +7242,57 @@
         "emptyCells"
       ],
       "syntax": "show | hide",
+      "extended": []
+    },
+    {
+      "name": "event-trigger",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-event-trigger",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "event-trigger",
+        "eventTrigger"
+      ],
+      "syntax": "none | [ <'event-trigger-name'> <'event-trigger-source'> ]#",
+      "extended": []
+    },
+    {
+      "name": "event-trigger-name",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-event-trigger-name",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "event-trigger-name",
+        "eventTriggerName"
+      ],
+      "syntax": "none | <dashed-ident>#",
+      "extended": []
+    },
+    {
+      "name": "event-trigger-source",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-event-trigger-source",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "event-trigger-source",
+        "eventTriggerSource"
+      ],
+      "syntax": "[ none | <event-trigger-event>+ ]#",
       "extended": []
     },
     {
@@ -14443,6 +14358,159 @@
       "extended": []
     },
     {
+      "name": "timeline-trigger",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-timeline-trigger",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "timeline-trigger",
+        "timelineTrigger"
+      ],
+      "syntax": "none | [ <'timeline-trigger-name'> <'timeline-trigger-source'> <'timeline-trigger-range'> [ '/' <'timeline-trigger-exit-range'> ]? ]#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-exit-range",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-timeline-trigger-exit-range",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "timeline-trigger-exit-range",
+        "timelineTriggerExitRange"
+      ],
+      "syntax": "[ <'animation-trigger-exit-range-start'> <'animation-trigger-exit-range-end'>? ]#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-exit-range-end",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-timeline-trigger-exit-range-end",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
+      "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "timeline-trigger-exit-range-end",
+        "timelineTriggerExitRangeEnd"
+      ],
+      "syntax": "[ auto | normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-exit-range-start",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-timeline-trigger-exit-range-start",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
+      "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "timeline-trigger-exit-range-start",
+        "timelineTriggerExitRangeStart"
+      ],
+      "syntax": "[ auto | normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-name",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-timeline-trigger-name",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "timeline-trigger-name",
+        "timelineTriggerName"
+      ],
+      "syntax": "none | <dashed-ident>#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-range",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-timeline-trigger-range",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "timeline-trigger-range",
+        "timelineTriggerRange"
+      ],
+      "syntax": "[ <'animation-trigger-range-start'> <'animation-trigger-range-end'>? ]#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-range-end",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-timeline-trigger-range-end",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
+      "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "timeline-trigger-range-end",
+        "timelineTriggerRangeEnd"
+      ],
+      "syntax": "[ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-range-start",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-timeline-trigger-range-start",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
+      "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "timeline-trigger-range-start",
+        "timelineTriggerRangeStart"
+      ],
+      "syntax": "[ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-source",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-timeline-trigger-source",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item either the keyword none, the keyword auto, a case-sensitive css identifier, a computed scroll() function, or a computed view() function",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "timeline-trigger-source",
+        "timelineTriggerSource"
+      ],
+      "syntax": "<single-animation-timeline>#",
+      "extended": []
+    },
+    {
       "name": "top",
       "href": "https://drafts.csswg.org/css-position-3/#propdef-top",
       "initial": "auto",
@@ -16522,6 +16590,12 @@
       "extended": []
     },
     {
+      "name": "animation-action",
+      "prose": "The possible <animation-action> values, and what effect they have in each animation state:",
+      "href": "https://drafts.csswg.org/css-animations-2/#typedef-animation-action",
+      "extended": []
+    },
+    {
       "name": "any-value",
       "prose": "The <any-value> production is identical to <declaration-value>, but also allows top-level <semicolon-token> tokens and <delim-token> tokens with a value of \"!\". It represents the entirety of what valid CSS can be in any context.",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-any-value",
@@ -17318,6 +17392,12 @@
       "name": "eof-token",
       "prose": "An <eof-token> is a conceptual token, not actually produced by the tokenizer, used to indicate that the token stream has been exhausted.",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-eof-token",
+      "extended": []
+    },
+    {
+      "name": "event-trigger-event",
+      "href": "https://drafts.csswg.org/css-animations-2/#typedef-event-trigger-event",
+      "syntax": "activate | click | touch | dblclick | keypress(<string>) | ...",
       "extended": []
     },
     {
@@ -18792,18 +18872,6 @@
       "name": "single-animation-timeline",
       "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation-timeline",
       "syntax": "auto | none | <dashed-ident> | <scroll()> | <view()>",
-      "extended": []
-    },
-    {
-      "name": "single-animation-trigger",
-      "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger",
-      "syntax": "<single-animation-trigger-behavior> || [ none | auto | [ [ <dashed-ident> | <scroll()> | <view()> ] [ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]{0,4} ] ]",
-      "extended": []
-    },
-    {
-      "name": "single-animation-trigger-behavior",
-      "href": "https://drafts.csswg.org/css-animations-2/#typedef-single-animation-trigger-behavior",
-      "syntax": "once | repeat | alternate | state",
       "extended": []
     },
     {
