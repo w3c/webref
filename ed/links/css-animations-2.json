@@ -32,12 +32,14 @@
       },
       "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-anchor-position-1/": {},
       "https://drafts.csswg.org/css-animations-1/": {
         "anchors": [
           "keyframes",
           "animation-name"
         ]
       },
+      "https://drafts.csswg.org/css-animations-2/": {},
       "https://drafts.csswg.org/css-animations/": {},
       "https://drafts.csswg.org/css-cascade-4/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
@@ -72,7 +74,6 @@
       },
       "https://drafts.csswg.org/web-animations-2/": {
         "anchors": [
-          "trigger-behaviors",
           "trigger-ranges"
         ]
       },
@@ -120,7 +121,15 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "concept-tree-order",
+          "event",
+          "dom-event-target",
           "event-target"
+        ]
+      },
+      "https://drafts.csswg.org/css-anchor-position-1/": {
+        "anchors": [
+          "anchor-name",
+          "propdef-anchor-scope"
         ]
       },
       "https://drafts.csswg.org/css-animations-1/": {
@@ -152,6 +161,14 @@
           "eventdef-globaleventhandlers-animationend",
           "eventdef-globaleventhandlers-animationiteration",
           "animationevent"
+        ]
+      },
+      "https://drafts.csswg.org/css-animations-2/": {
+        "anchors": [
+          "propdef-animation-trigger-range-start",
+          "propdef-animation-trigger-range-end",
+          "propdef-animation-trigger-exit-range-start",
+          "propdef-animation-trigger-exit-range-end"
         ]
       },
       "https://drafts.csswg.org/css-cascade-5/": {
@@ -205,10 +222,11 @@
           "mult-comma",
           "css-css-identifier",
           "typedef-dashed-ident",
+          "mult-one-plus",
           "comb-any",
           "mult-opt",
           "typedef-length-percentage",
-          "mult-num-range"
+          "string-value"
         ]
       },
       "https://drafts.csswg.org/css-writing-modes-4/": {
@@ -232,6 +250,7 @@
           "funcdef-view",
           "scroll-progress-timelines",
           "view-progress-timelines",
+          "valdef-animation-timeline-range-cover",
           "named-timeline-range",
           "propdef-animation-range-start",
           "propdef-animation-range-end"
@@ -291,12 +310,7 @@
       },
       "https://drafts.csswg.org/web-animations-2/": {
         "anchors": [
-          "dom-animation-starttime",
-          "animation-trigger-behavior",
-          "animation-trigger",
-          "animation-trigger-active-interval",
-          "default-range",
-          "exit-range"
+          "dom-animation-starttime"
         ]
       },
       "https://drafts.fxtf.org/css-masking-1/": {
