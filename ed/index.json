@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-10-24T06:54:16.987Z",
+  "date": "2025-10-24T12:51:48.306Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -748,7 +748,7 @@
   },
   "stats": {
     "crawled": 716,
-    "errors": 2
+    "errors": 4
   },
   "crawler": "reffy-20.0.1",
   "results": [
@@ -1866,7 +1866,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-backgrounds-4/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Oct 2025 02:44:01 GMT"
+        "lastModified": "Fri, 24 Oct 2025 02:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "15 October 2025",
@@ -4208,7 +4208,8 @@
       "links": "links/glTF.json",
       "headings": "headings/glTF.json",
       "ids": "ids/glTF.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at runNextTicks (node:internal/process/task_queues:64:3)\n    at process.processTimers (node:internal/timers:516:9)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13510:13\n      at processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at runNextTicks (node:internal/process/task_queues:64:3)\n      at process.processTimers (node:internal/timers:516:9)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24) {\n    [cause]: AggregateError [ETIMEDOUT]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at Timeout.internalConnectMultipleTimeout (node:net:1716:5)\n        at listOnTimeout (node:internal/timers:583:11)\n        at process.processTimers (node:internal/timers:519:7) {\n      code: 'ETIMEDOUT',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html",
@@ -4253,7 +4254,8 @@
       "links": "links/ESSL.json",
       "headings": "headings/ESSL.json",
       "ids": "ids/ESSL.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 61)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13510:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:477:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22) {\n    [cause]: ConnectTimeoutError: Connect Timeout Error (attempted addresses: 174.138.88.143:443, timeout: 10000ms)\n        at onConnectTimeout (node:internal/deps/undici/undici:2602:28)\n        at Immediate._onImmediate (node:internal/deps/undici/undici:2583:11)\n        at process.processImmediate (node:internal/timers:483:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
@@ -15583,7 +15585,7 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Oct 2025 00:46:56 GMT"
+        "lastModified": "Wed, 22 Oct 2025 20:42:42 GMT"
       },
       "date": "22 October 2025",
       "links": "links/rfc6454.json",
@@ -19108,7 +19110,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-align-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Oct 2025 02:44:01 GMT"
+        "lastModified": "Fri, 24 Oct 2025 02:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "21 October 2025",
@@ -19314,7 +19316,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-animations-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Oct 2025 02:44:01 GMT"
+        "lastModified": "Fri, 24 Oct 2025 02:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "21 October 2025",
@@ -20348,7 +20350,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-adjust-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Oct 2025 02:44:01 GMT"
+        "lastModified": "Fri, 24 Oct 2025 02:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "22 October 2025",
@@ -21458,7 +21460,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-font-loading-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Oct 2025 02:44:01 GMT"
+        "lastModified": "Fri, 24 Oct 2025 02:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "11 May 2024",
@@ -21940,7 +21942,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-grid-2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Oct 2025 02:44:01 GMT"
+        "lastModified": "Fri, 24 Oct 2025 02:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "29 August 2025",
@@ -22554,7 +22556,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-logical-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Oct 2025 02:44:01 GMT"
+        "lastModified": "Fri, 24 Oct 2025 02:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "12 October 2025",
@@ -24114,7 +24116,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scoping-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Oct 2025 02:44:01 GMT"
+        "lastModified": "Fri, 24 Oct 2025 02:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "26 September 2025",
@@ -24253,7 +24255,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scroll-snap-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Oct 2025 02:44:01 GMT"
+        "lastModified": "Fri, 24 Oct 2025 02:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "26 August 2025",
@@ -25078,7 +25080,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-text-4/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Oct 2025 02:44:01 GMT"
+        "lastModified": "Fri, 24 Oct 2025 02:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "8 July 2025",
@@ -25285,7 +25287,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transforms-1/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Oct 2025 02:44:01 GMT"
+        "lastModified": "Fri, 24 Oct 2025 02:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "5 June 2025",
@@ -25771,7 +25773,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-3/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Oct 2025 02:44:01 GMT"
+        "lastModified": "Fri, 24 Oct 2025 02:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "4 March 2025",
@@ -25909,7 +25911,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-5/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Oct 2025 02:44:01 GMT"
+        "lastModified": "Fri, 24 Oct 2025 02:44:02 GMT"
       },
       "generator": "bikeshed",
       "date": "26 September 2025",
@@ -38888,10 +38890,10 @@
       ],
       "crawled": "https://w3c.github.io/wcag3/guidelines/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 08 Oct 2025 12:05:24 GMT"
+        "lastModified": "Fri, 24 Oct 2025 11:43:21 GMT"
       },
       "generator": "respec",
-      "date": "08 October 2025",
+      "date": "24 October 2025",
       "algorithms": "algorithms/wcag-3.0.json",
       "links": "links/wcag-3.0.json",
       "refs": "refs/wcag-3.0.json",
@@ -39415,11 +39417,11 @@
       ],
       "crawled": "https://w3c.github.io/webauthn/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 13 Aug 2025 18:11:45 GMT"
+        "lastModified": "Fri, 24 Oct 2025 10:50:12 GMT"
       },
       "generator": "bikeshed",
-      "date": "13 August 2025",
-      "revision": "1147dcca0892af7a7cc1ebd756e851230139aae8",
+      "date": "24 October 2025",
+      "revision": "f53fc025fe5ad279adfdcd96c460c31a1fa28154",
       "algorithms": "algorithms/webauthn-3.json",
       "links": "links/webauthn-3.json",
       "refs": "refs/webauthn-3.json",
