@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-10-26T06:45:10.580Z",
+  "date": "2025-10-26T12:49:43.080Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -748,7 +748,7 @@
   },
   "stats": {
     "crawled": 716,
-    "errors": 3
+    "errors": 2
   },
   "crawler": "reffy-20.0.1",
   "results": [
@@ -1474,7 +1474,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 26 Oct 2025 01:03:42 GMT"
+        "lastModified": "Sun, 26 Oct 2025 09:20:12 GMT"
       },
       "date": "26 October 2025",
       "algorithms": "algorithms/layered-cookies.json",
@@ -1523,7 +1523,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 26 Oct 2025 01:03:42 GMT"
+        "lastModified": "Sun, 26 Oct 2025 09:20:12 GMT"
       },
       "date": "26 October 2025",
       "algorithms": "algorithms/no-vary-search.json",
@@ -1572,7 +1572,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 26 Oct 2025 01:03:42 GMT"
+        "lastModified": "Sun, 26 Oct 2025 09:20:12 GMT"
       },
       "date": "26 October 2025",
       "algorithms": "algorithms/rfc6265bis.json",
@@ -4208,8 +4208,7 @@
       "links": "links/glTF.json",
       "headings": "headings/glTF.json",
       "ids": "ids/glTF.json",
-      "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:13510:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:477:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22) {\n    [cause]: ConnectTimeoutError: Connect Timeout Error (attempted addresses: 174.138.88.143:443, timeout: 10000ms)\n        at onConnectTimeout (node:internal/deps/undici/undici:2602:28)\n        at Immediate._onImmediate (node:internal/deps/undici/undici:2583:11)\n        at process.processImmediate (node:internal/timers:483:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT'\n    }\n  }\n}"
+      "cddl": []
     },
     {
       "url": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html",
