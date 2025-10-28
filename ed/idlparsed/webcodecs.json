@@ -5873,7 +5873,7 @@
         "href": "https://w3c.github.io/webcodecs/#dictdef-imagedecoderesult"
       },
       "ImageTrackList": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrackList {\n  getter ImageTrack (unsigned long index);\n\n  readonly attribute Promise<undefined> ready;\n  readonly attribute unsigned long length;\n  readonly attribute long selectedIndex;\n  readonly attribute ImageTrack? selectedTrack;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface ImageTrackList {\n  getter ImageTrack (unsigned long index);\n\n  readonly attribute Promise<undefined> ready;\n  readonly attribute unsigned long length;\n  readonly attribute long selectedIndex;\n  readonly attribute ImageTrack? selectedTrack;\n};",
         "type": "interface",
         "name": "ImageTrackList",
         "inheritance": null,
@@ -6000,13 +6000,19 @@
               ]
             },
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
           }
         ],
         "partial": false,
         "href": "https://w3c.github.io/webcodecs/#imagetracklist"
       },
       "ImageTrack": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrack {\n  readonly attribute boolean animated;\n  readonly attribute unsigned long frameCount;\n  readonly attribute unrestricted float repetitionCount;\n  attribute boolean selected;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface ImageTrack {\n  readonly attribute boolean animated;\n  readonly attribute unsigned long frameCount;\n  readonly attribute unrestricted float repetitionCount;\n  attribute boolean selected;\n};",
         "type": "interface",
         "name": "ImageTrack",
         "inheritance": null,
@@ -6091,6 +6097,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],

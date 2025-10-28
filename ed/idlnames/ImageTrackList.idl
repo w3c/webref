@@ -1,5 +1,5 @@
 // Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=(Window,DedicatedWorker), SecureContext]
 interface ImageTrackList {
   getter ImageTrack (unsigned long index);
 

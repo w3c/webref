@@ -6,7 +6,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrack {\n  readonly attribute boolean animated;\n  readonly attribute unsigned long frameCount;\n  readonly attribute unrestricted float repetitionCount;\n  attribute boolean selected;\n};",
+    "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface ImageTrack {\n  readonly attribute boolean animated;\n  readonly attribute unsigned long frameCount;\n  readonly attribute unrestricted float repetitionCount;\n  attribute boolean selected;\n};",
     "href": "https://w3c.github.io/webcodecs/#imagetrack"
   },
   "extended": [],
