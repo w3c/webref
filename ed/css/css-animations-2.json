@@ -89,7 +89,7 @@
         },
         {
           "name": "[ <dashed-ident> <animation-action>+ ]+",
-          "prose": "The corresponding animation is a triggered animation, responding to the triggers named by each <dashed-ident>, and responding by taking the action named by the corresponding <animation-action>. (See § 5.1 Trigger Scope/Resolution for how <dashed-ident>s are resolved to triggers.) How many <animation-action>s a trigger accepts, and what exactly activates them, is determined by the type of the trigger. (Event triggers only take a single <animation-action>, while timeline triggers can take one or two.) Specifying the wrong number of actions (too many or too few) is valid syntactically, but causes the trigger to have no effect. If multiple triggers occur simultaneously, they take effect in the order specified. If the same <dashed-ident> is specified multiple times, all but the last have no effect.",
+          "prose": "The corresponding animation is a triggered animation, responding to the triggers named by each <dashed-ident>, and responding by taking the action named by the corresponding <animation-action>. (See § 5.1 Trigger Scope/Resolution for how <dashed-ident>s are resolved to triggers.) How many <animation-action>s a trigger accepts, and what exactly activates them, is determined by the type of the trigger. (Event triggers take one and possibly an optional second, depending on whether they’re stateless or stateful; timeline triggers take one and optionally a second.) Specifying the wrong number of actions (too many or too few) is valid syntactically, but causes the trigger to have no effect. If multiple triggers occur simultaneously, they take effect in the order specified. If the same <dashed-ident> is specified multiple times, all but the last have no effect.",
           "href": "https://drafts.csswg.org/css-animations-2/#valdef-animation-trigger--dashed-ident-animation-action",
           "type": "value",
           "value": "[ <dashed-ident> <animation-action>+ ]+"
@@ -135,7 +135,7 @@
     {
       "name": "timeline-trigger-range",
       "href": "https://drafts.csswg.org/css-animations-2/#propdef-timeline-trigger-range",
-      "value": "[ <'animation-trigger-range-start'> <'animation-trigger-range-end'>? ]#",
+      "value": "[ <'timeline-trigger-range-start'> <'timeline-trigger-range-end'>? ]#",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -183,7 +183,7 @@
     {
       "name": "timeline-trigger-exit-range",
       "href": "https://drafts.csswg.org/css-animations-2/#propdef-timeline-trigger-exit-range",
-      "value": "[ <'animation-trigger-exit-range-start'> <'animation-trigger-exit-range-end'>? ]#",
+      "value": "[ <'timeline-trigger-exit-range-start'> <'timeline-trigger-exit-range-end'>? ]#",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -209,7 +209,7 @@
       "name": "timeline-trigger-exit-range-start",
       "href": "https://drafts.csswg.org/css-animations-2/#propdef-timeline-trigger-exit-range-start",
       "value": "[ auto | normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
-      "initial": "normal",
+      "initial": "auto",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
@@ -234,7 +234,7 @@
       "name": "timeline-trigger-exit-range-end",
       "href": "https://drafts.csswg.org/css-animations-2/#propdef-timeline-trigger-exit-range-end",
       "value": "[ auto | normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
-      "initial": "normal",
+      "initial": "auto",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
@@ -299,7 +299,7 @@
     {
       "name": "event-trigger-source",
       "href": "https://drafts.csswg.org/css-animations-2/#propdef-event-trigger-source",
-      "value": "[ none | <event-trigger-event>+ ]#",
+      "value": "[ none | <event-trigger-event>+ [ / <event-trigger-event>+ ]? ]#",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -307,6 +307,22 @@
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
+      "values": [
+        {
+          "name": "none",
+          "prose": "The corresponding entry in the coordinated value list does not define a trigger.",
+          "href": "https://drafts.csswg.org/css-animations-2/#valdef-event-trigger-source-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<event-trigger-event>+ [ / <event-trigger-event>+ ]?",
+          "prose": "Defines what event(s) the event trigger responds to. If a / is used in the value, the event trigger is stateful; the set of events before the / are the event trigger’s enter events, while those after the / are the exit events. (The same events can occur in both sets.) Otherwise, the event trigger is stateless, and the provided events are its enter events.",
+          "href": "https://drafts.csswg.org/css-animations-2/#valdef-event-trigger-source-event-trigger-event--event-trigger-event",
+          "type": "value",
+          "value": "<event-trigger-event>+ [ / <event-trigger-event>+ ]?"
+        }
+      ],
       "styleDeclaration": [
         "event-trigger-source",
         "eventTriggerSource"
