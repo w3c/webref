@@ -55,7 +55,7 @@
           "html": "<p>Let <var>expectedType</var> be null.</p>"
         },
         {
-          "html": "<p>Set <var>attributeData</var> to the result of <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-type-data-for-attribute\" id=\"ref-for-abstract-opdef-get-trusted-type-data-for-attribute\">Get Trusted Type data for attribute</a> algorithm, with the following arguments:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><var>interface</var> as <var>element</var></p>\n         </li><li data-md=\"\">\n          <p><var>attribute</var></p>\n         </li><li data-md=\"\">\n          <p><var>attrNs</var></p>\n        </li></ul>"
+          "html": "<p>Set <var>attributeData</var> to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#get-trusted-type-data-for-attribute%E2%91%A0\" id=\"ref-for-get-trusted-type-data-for-attribute①\">get trusted type data for attribute</a> algorithm, with the following arguments:</p>\n        <ul>\n         <li data-md=\"\">\n          <p><var>interface</var> as <var>element</var></p>\n         </li><li data-md=\"\">\n          <p><var>attribute</var></p>\n         </li><li data-md=\"\">\n          <p><var>attrNs</var></p>\n        </li></ul>"
         },
         {
           "html": "<p>If <var>attributeData</var> is not null, then set <var>expectedType</var> to the interface’s name of the value of the fourth member of <var>attributeData</var>.</p>"
@@ -66,11 +66,13 @@
       ]
     },
     {
-      "html": "To create a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedtypepolicy\" id=\"ref-for-trustedtypepolicy①⓪\">TrustedTypePolicy</a></code>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedtypepolicyfactory\" id=\"ref-for-trustedtypepolicyfactory③\">TrustedTypePolicyFactory</a></code> (<var>factory</var>),\na string (<var>policyName</var>), <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#dictdef-trustedtypepolicyoptions\" id=\"ref-for-dictdef-trustedtypepolicyoptions④\">TrustedTypePolicyOptions</a></code> dictionary (<var>options</var>), and a\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global\">global object</a> (<var>global</var>) run these steps:",
+      "name": "create a trusted type policy",
+      "href": "https://www.w3.org/TR/trusted-types/#create-a-trusted-type-policy",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-trusted-type-policy\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a trusted type policy</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedtypepolicyfactory\" id=\"ref-for-trustedtypepolicyfactory③\">TrustedTypePolicyFactory</a></code> (<var>factory</var>),\na string (<var>policyName</var>), <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#dictdef-trustedtypepolicyoptions\" id=\"ref-for-dictdef-trustedtypepolicyoptions④\">TrustedTypePolicyOptions</a></code> dictionary (<var>options</var>), and a\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global\">global object</a> (<var>global</var>) run these steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>allowedByCSP</var> be the result of executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-should-trusted-type-policy-creation-be-blocked-by-content-security-policy\" id=\"ref-for-abstract-opdef-should-trusted-type-policy-creation-be-blocked-by-content-security-policy\">Should Trusted Type policy creation be blocked by Content Security Policy?</a> algorithm with <var>global</var>,\n<var>policyName</var> and <var>factory</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trustedtypepolicyfactory-created-policy-names\" id=\"ref-for-trustedtypepolicyfactory-created-policy-names\">created policy names</a> value.</p>"
+          "html": "<p>Let <var>allowedByCSP</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#should-trusted-type-policy-creation-be-blocked-by-content-security-policy\" id=\"ref-for-should-trusted-type-policy-creation-be-blocked-by-content-security-policy\">should Trusted Type policy creation be blocked by content security policy?</a> algorithm with <var>global</var>,\n<var>policyName</var> and <var>factory</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trustedtypepolicyfactory-created-policy-names\" id=\"ref-for-trustedtypepolicyfactory-created-policy-names\">created policy names</a> value.</p>"
         },
         {
           "html": "<p>If <var>allowedByCSP</var> is <code>\"Blocked\"</code>, throw a TypeError and abort further steps.</p>"
@@ -79,7 +81,7 @@
           "html": "<p>If <var>policyName</var> is <code>default</code> and the <var>factory</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trustedtypepolicyfactory-default-policy\" id=\"ref-for-trustedtypepolicyfactory-default-policy①\">default policy</a>\nvalue is not null, throw a TypeError and abort further steps.</p>"
         },
         {
-          "html": "<p>Let <var>policy</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedtypepolicy\" id=\"ref-for-trustedtypepolicy①①\">TrustedTypePolicy</a></code> object.</p>"
+          "html": "<p>Let <var>policy</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedtypepolicy\" id=\"ref-for-trustedtypepolicy①⓪\">TrustedTypePolicy</a></code> object.</p>"
         },
         {
           "html": "<p>Set <var>policy</var>’s <code>name</code> property value to <var>policyName</var>.</p>"
@@ -99,11 +101,13 @@
       ]
     },
     {
-      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedtypepolicy\" id=\"ref-for-trustedtypepolicy①②\">TrustedTypePolicy</a></code> <var>policy</var>, a type name <var>trustedTypeName</var>,\na string <var>value</var> and a list <var>arguments</var>, execute the following steps:",
+      "name": "create a trusted type",
+      "href": "https://www.w3.org/TR/trusted-types/#create-a-trusted-type",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-trusted-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a trusted type</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedtypepolicy\" id=\"ref-for-trustedtypepolicy①①\">TrustedTypePolicy</a></code> <var>policy</var>, a type name <var>trustedTypeName</var>,\na string <var>value</var> and a list <var>arguments</var>, perform the following steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>policyValue</var> be the result of executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-type-policy-value\" id=\"ref-for-abstract-opdef-get-trusted-type-policy-value\">Get Trusted Type policy value</a> with the same arguments as this algorithm and additionally true as <var>throwIfMissing</var>.</p>"
+          "html": "<p>Let <var>policyValue</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#get-trusted-type-policy-value\" id=\"ref-for-get-trusted-type-policy-value\">get trusted type policy value</a> with the same arguments as this algorithm and additionally true as <var>throwIfMissing</var>.</p>"
         },
         {
           "html": "<p>If the algorithm threw an error, rethrow the error and abort the following steps.</p>"
@@ -120,7 +124,9 @@
       ]
     },
     {
-      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedtypepolicy\" id=\"ref-for-trustedtypepolicy①③\">TrustedTypePolicy</a></code> <var>policy</var>, a type name <var>trustedTypeName</var>,\na string <var>value</var>, a list <var>arguments</var>, and a boolean <var>throwIfMissing</var>, execute the following steps:",
+      "name": "get trusted type policy value",
+      "href": "https://www.w3.org/TR/trusted-types/#get-trusted-type-policy-value",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-trusted-type-policy-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get trusted type policy value</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedtypepolicy\" id=\"ref-for-trustedtypepolicy①②\">TrustedTypePolicy</a></code> <var>policy</var>, a type name <var>trustedTypeName</var>,\na string <var>value</var>, a list <var>arguments</var>, and a boolean <var>throwIfMissing</var>, perform the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -156,20 +162,22 @@
       ]
     },
     {
-      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#typedefdef-trustedtype\" id=\"ref-for-typedefdef-trustedtype\">TrustedType</a></code> type (<var>expectedType</var>), a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global①\">global object</a> (<var>global</var>),\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#typedefdef-trustedtype\" id=\"ref-for-typedefdef-trustedtype①\">TrustedType</a></code> or a string (<var>input</var>), a string (<var>sink</var>) and a string (<var>sinkGroup</var>), run these steps:",
+      "name": "get trusted type compliant string",
+      "href": "https://www.w3.org/TR/trusted-types/#get-trusted-type-compliant-string",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"get-trusted-type-compliant-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get trusted type compliant string</dfn> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#typedefdef-trustedtype\" id=\"ref-for-typedefdef-trustedtype\">TrustedType</a></code> type (<var>expectedType</var>), a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global①\">global object</a> (<var>global</var>),\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#typedefdef-trustedtype\" id=\"ref-for-typedefdef-trustedtype①\">TrustedType</a></code> or a string (<var>input</var>), a string (<var>sink</var>) and a string (<var>sinkGroup</var>), run these steps:",
       "rationale": "if",
       "steps": [
         {
           "html": "<p>If <var>input</var> is an instance of <var>expectedType</var>, return stringified\n<var>input</var> and abort these steps.</p>"
         },
         {
-          "html": "<p>Let <var>requireTrustedTypes</var> be the result of executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-does-sink-type-require-trusted-types\" id=\"ref-for-abstract-opdef-does-sink-type-require-trusted-types\">Does sink type require trusted types?</a> algorithm,\npassing <var>global</var>, <var>sinkGroup</var>, and true.</p>"
+          "html": "<p>Let <var>requireTrustedTypes</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#does-sink-type-require-trusted-types\" id=\"ref-for-does-sink-type-require-trusted-types\">Does sink type require trusted types?</a> algorithm,\npassing <var>global</var>, <var>sinkGroup</var>, and true.</p>"
         },
         {
           "html": "<p>If <var>requireTrustedTypes</var> is <code>false</code>, return stringified <var>input</var> and abort these steps.</p>"
         },
         {
-          "html": "<p>Let <var>convertedInput</var> be the result of executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-process-value-with-a-default-policy\" id=\"ref-for-abstract-opdef-process-value-with-a-default-policy\">Process value with a default policy</a> with the same arguments as this algorithm.</p>"
+          "html": "<p>Let <var>convertedInput</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#process-value-with-a-default-policy\" id=\"ref-for-process-value-with-a-default-policy\">Process value with a default policy</a> with the same arguments as this algorithm.</p>"
         },
         {
           "html": "<p>If the algorithm threw an error, rethrow the error and abort the following steps.</p>"
@@ -179,7 +187,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>disposition</var> be the result of executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-should-sink-type-mismatch-violation-be-blocked-by-content-security-policy\" id=\"ref-for-abstract-opdef-should-sink-type-mismatch-violation-be-blocked-by-content-security-policy\">Should sink type mismatch violation be blocked by Content Security Policy?</a> algorithm,\npassing <var>global</var>, stringified <var>input</var> as <var>source</var>, <var>sinkGroup</var> and <var>sink</var>.</p>"
+              "html": "<p>Let <var>disposition</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#should-sink-type-mismatch-violation-be-blocked-by-content-security-policy\" id=\"ref-for-should-sink-type-mismatch-violation-be-blocked-by-content-security-policy\">should sink type mismatch violation be blocked by content security policy?</a> algorithm,\npassing <var>global</var>, stringified <var>input</var> as <var>source</var>, <var>sinkGroup</var> and <var>sink</var>.</p>"
             },
             {
               "html": "<p>If <var>disposition</var> is <code>“Allowed”</code>, return stringified <var>input</var> and abort further steps.</p>"
@@ -198,14 +206,16 @@
       ]
     },
     {
-      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#typedefdef-trustedtype\" id=\"ref-for-typedefdef-trustedtype②\">TrustedType</a></code> type (<var>expectedType</var>), a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global②\">global object</a> (<var>global</var>),\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#typedefdef-trustedtype\" id=\"ref-for-typedefdef-trustedtype③\">TrustedType</a></code> or a string (<var>input</var>), and a string (<var>sink</var>), run these steps:",
+      "name": "process value with a default policy",
+      "href": "https://www.w3.org/TR/trusted-types/#process-value-with-a-default-policy",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-value-with-a-default-policy\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process value with a default policy</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#typedefdef-trustedtype\" id=\"ref-for-typedefdef-trustedtype②\">TrustedType</a></code> type (<var>expectedType</var>), a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global②\">global object</a> (<var>global</var>),\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#typedefdef-trustedtype\" id=\"ref-for-typedefdef-trustedtype③\">TrustedType</a></code> or a string (<var>input</var>), and a string (<var>sink</var>), run these steps:",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>defaultPolicy</var> be the value of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#window-trusted-type-policy-factory\" id=\"ref-for-window-trusted-type-policy-factory\">trusted type policy factory</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trustedtypepolicyfactory-default-policy\" id=\"ref-for-trustedtypepolicyfactory-default-policy③\">default policy</a>.</p>"
         },
         {
-          "html": "<p>Let <var>policyValue</var> be the result of executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-type-policy-value\" id=\"ref-for-abstract-opdef-get-trusted-type-policy-value①\">Get Trusted Type policy value</a>, with the following arguments:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><var>defaultPolicy</var> as <var>policy</var></p>\n      </li><li data-md=\"\">\n       <p>stringified <var>input</var> as <var>value</var></p>\n      </li><li data-md=\"\">\n       <p><var>expectedType</var>’s type name as <var>trustedTypeName</var></p>\n      </li><li data-md=\"\">\n       <p>« <var>trustedTypeName</var>, <var>sink</var> » as <var>arguments</var></p>\n      </li><li data-md=\"\">\n       <p>false as <var>throwIfMissing</var></p>\n     </li></ul>"
+          "html": "<p>Let <var>policyValue</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#get-trusted-type-policy-value\" id=\"ref-for-get-trusted-type-policy-value①\">get trusted type policy value</a>, with the following arguments:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><var>defaultPolicy</var> as <var>policy</var></p>\n      </li><li data-md=\"\">\n       <p>stringified <var>input</var> as <var>value</var></p>\n      </li><li data-md=\"\">\n       <p><var>expectedType</var>’s type name as <var>trustedTypeName</var></p>\n      </li><li data-md=\"\">\n       <p>« <var>trustedTypeName</var>, <var>sink</var> » as <var>arguments</var></p>\n      </li><li data-md=\"\">\n       <p>false as <var>throwIfMissing</var></p>\n     </li></ul>"
         },
         {
           "html": "<p>If the algorithm threw an error, rethrow the error and abort the following steps.</p>"
@@ -222,26 +232,30 @@
       ]
     },
     {
-      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement\" id=\"ref-for-htmlscriptelement④\">HTMLScriptElement</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/SVG2/interact.html#InterfaceSVGScriptElement\" id=\"ref-for-InterfaceSVGScriptElement\">SVGScriptElement</a></code> (<var>script</var>), this algorithm performs the following steps:",
+      "name": "prepare the script text",
+      "href": "https://www.w3.org/TR/trusted-types/#prepare-the-script-text",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prepare-the-script-text\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">prepare the script text</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement\" id=\"ref-for-htmlscriptelement④\">HTMLScriptElement</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/SVG2/interact.html#InterfaceSVGScriptElement\" id=\"ref-for-InterfaceSVGScriptElement\">SVGScriptElement</a></code> (<var>script</var>), perform the following steps:",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>sink</var> be \"<code>HTMLScriptElement text</code>\" if <var>script</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement\" id=\"ref-for-htmlscriptelement⑤\">HTMLScriptElement</a></code>; otherwise \"<code>SVGScriptElement text</code>\".</p>"
         },
         {
-          "html": "<p>If <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text\">script text</a> value is not equal to its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-child-text-content\" id=\"ref-for-concept-child-text-content\">child text content</a>,\nset <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text①\">script text</a> to the result of executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-type-compliant-string\" id=\"ref-for-abstract-opdef-get-trusted-type-compliant-string\">Get Trusted Type compliant string</a>, with the following arguments:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscripturl\" id=\"ref-for-trustedscripturl④\">TrustedScriptURL</a></code> as <var>expectedType</var>,</p>\n      </li><li data-md=\"\">\n       <p><var>script</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①\">Document</a></code>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> as <var>global</var>,</p>\n      </li><li data-md=\"\">\n       <p><var>script</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-child-text-content\" id=\"ref-for-concept-child-text-content①\">child text content</a> attribute value as <var>input</var>,</p>\n      </li><li data-md=\"\">\n       <p><var>sink</var>,</p>\n      </li><li data-md=\"\">\n       <p><code>'script'</code> as <var>sinkGroup</var>.</p>\n     </li></ul>\n     <p>If the algorithm threw an error, rethrow the error.</p>"
+          "html": "<p>If <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text\">script text</a> value is not equal to its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-child-text-content\" id=\"ref-for-concept-child-text-content\">child text content</a>,\nset <var>script</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text①\">script text</a> to the result of executing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#get-trusted-type-compliant-string\" id=\"ref-for-get-trusted-type-compliant-string\">get Trusted Type compliant string</a>, with the following arguments:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscripturl\" id=\"ref-for-trustedscripturl④\">TrustedScriptURL</a></code> as <var>expectedType</var>,</p>\n      </li><li data-md=\"\">\n       <p><var>script</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①\">Document</a></code>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> as <var>global</var>,</p>\n      </li><li data-md=\"\">\n       <p><var>script</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-child-text-content\" id=\"ref-for-concept-child-text-content①\">child text content</a> attribute value as <var>input</var>,</p>\n      </li><li data-md=\"\">\n       <p><var>sink</var>,</p>\n      </li><li data-md=\"\">\n       <p><code>'script'</code> as <var>sinkGroup</var>.</p>\n     </li></ul>\n     <p>If the algorithm threw an error, rethrow the error.</p>"
         }
       ]
     },
     {
-      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement\" id=\"ref-for-htmlscriptelement④\">HTMLScriptElement</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/SVG2/interact.html#InterfaceSVGScriptElement\" id=\"ref-for-InterfaceSVGScriptElement\">SVGScriptElement</a></code> (<var>script</var>), this algorithm performs the following steps:",
+      "name": "get trusted type compliant attribute value",
+      "href": "https://www.w3.org/TR/trusted-types/#get-trusted-type-compliant-attribute-value",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"get-trusted-type-compliant-attribute-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get trusted type compliant attribute value</dfn> given a string <var>attributeName</var>, string <var>attributeNs</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element④\">Element</a></code> <var>element</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#typedefdef-trustedtype\" id=\"ref-for-typedefdef-trustedtype④\">TrustedType</a></code> or a string <var>newValue</var>, perform the following steps:",
       "rationale": "if",
       "steps": [
         {
           "html": "<p>If <var>attributeNs</var> is the empty string, set <var>attributeNs</var> to null.</p>"
         },
         {
-          "html": "<p>Set <var>attributeData</var> to the result of <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-type-data-for-attribute\" id=\"ref-for-abstract-opdef-get-trusted-type-data-for-attribute①\">Get Trusted Type data for attribute</a> algorithm, with the following arguments:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><var>element</var></p>\n      </li><li data-md=\"\">\n       <p><var>attributeName</var></p>\n      </li><li data-md=\"\">\n       <p><var>attributeNs</var></p>\n     </li></ul>"
+          "html": "<p>Set <var>attributeData</var> to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#get-trusted-type-data-for-attribute%E2%91%A0\" id=\"ref-for-get-trusted-type-data-for-attribute①①\">get Trusted Type data for attribute</a> algorithm, with the following arguments:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><var>element</var></p>\n      </li><li data-md=\"\">\n       <p><var>attributeName</var></p>\n      </li><li data-md=\"\">\n       <p><var>attributeNs</var></p>\n     </li></ul>"
         },
         {
           "html": "If <var>attributeData</var> is null, then:",
@@ -265,12 +279,14 @@
           "html": "<p>Let <var>sink</var> be the value of the fifth member of <var>attributeData</var>.</p>"
         },
         {
-          "html": "<p>Return the result of executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-type-compliant-string\" id=\"ref-for-abstract-opdef-get-trusted-type-compliant-string①\">Get Trusted Type compliant string</a> with the following arguments:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><var>expectedType</var></p>\n      </li><li data-md=\"\">\n       <p><var>newValue</var> as <var>input</var></p>\n      </li><li data-md=\"\">\n       <p><var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a> as <var>global</var></p>\n      </li><li data-md=\"\">\n       <p><var>sink</var></p>\n      </li><li data-md=\"\">\n       <p>'script' as <var>sinkGroup</var></p>\n     </li></ul>"
+          "html": "<p>Return the result of executing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#get-trusted-type-compliant-string\" id=\"ref-for-get-trusted-type-compliant-string①\">get trusted type compliant string</a> with the following arguments:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><var>expectedType</var></p>\n      </li><li data-md=\"\">\n       <p><var>newValue</var> as <var>input</var></p>\n      </li><li data-md=\"\">\n       <p><var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a> as <var>global</var></p>\n      </li><li data-md=\"\">\n       <p><var>sink</var></p>\n      </li><li data-md=\"\">\n       <p>'script' as <var>sinkGroup</var></p>\n     </li></ul>"
         }
       ]
     },
     {
-      "html": "If the algorithm threw an error, rethrow the error.",
+      "name": "get Trusted Type data for attribute",
+      "href": "https://www.w3.org/TR/trusted-types/#get-trusted-type-data-for-attribute%E2%91%A0",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-trusted-type-data-for-attribute①\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get Trusted Type data for attribute</dfn> given <var>element</var>, <var>attribute</var>, <var>attributeNs</var>, perform the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -298,7 +314,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>value</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-type-compliant-string\" id=\"ref-for-abstract-opdef-get-trusted-type-compliant-string③\">Get Trusted Type compliant string</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript①⑤\">TrustedScript</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a>, the given value, <code>HTMLScriptElement innerText</code>, and\n<code>script</code>.</p>"
+          "html": "<p>Let <var>value</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#get-trusted-type-compliant-string\" id=\"ref-for-get-trusted-type-compliant-string③\">get trusted type compliant string</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript①⑤\">TrustedScript</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a>, the given value, <code>HTMLScriptElement innerText</code>, and\n<code>script</code>.</p>"
         },
         {
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text②\">script text</a> value to <var>value</var>.</p>"
@@ -322,7 +338,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>value</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-type-compliant-string\" id=\"ref-for-abstract-opdef-get-trusted-type-compliant-string④\">Get Trusted Type compliant string</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript①⑥\">TrustedScript</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>, the given value, <code>HTMLScriptElement textContent</code>, and\n<code>script</code>.</p>"
+          "html": "<p>Let <var>value</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#get-trusted-type-compliant-string\" id=\"ref-for-get-trusted-type-compliant-string④\">get trusted type compliant string</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript①⑥\">TrustedScript</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>, the given value, <code>HTMLScriptElement textContent</code>, and\n<code>script</code>.</p>"
         },
         {
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text③\">script text</a> value to <var>value</var>.</p>"
@@ -346,7 +362,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<ins>Let <var>value</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-type-compliant-string\" id=\"ref-for-abstract-opdef-get-trusted-type-compliant-string⑤\">Get Trusted Type compliant string</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript①⑦\">TrustedScript</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a>, the given value, <code>HTMLScriptElement text</code>, and\n<code>script</code>.</ins>"
+          "html": "<ins>Let <var>value</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#get-trusted-type-compliant-string\" id=\"ref-for-get-trusted-type-compliant-string⑤\">get trusted type compliant string</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript①⑦\">TrustedScript</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a>, the given value, <code>HTMLScriptElement text</code>, and\n<code>script</code>.</ins>"
         },
         {
           "html": "<ins>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text④\">script text</a> value to the given value.</ins>"
@@ -361,10 +377,10 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<ins>Let <var>element</var> be the result of running <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <u class=\"link-error\" data-lt=\"get the element\" title=\"LINK ERROR: No 'dfn' refs found for 'get the element' that are marked for export.\n  (Possible specs this could be from: html)\">get the element</u>.</ins>"
+          "html": "<ins>Let <var>element</var> be the result of running <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s get the element.</ins>"
         },
         {
-          "html": "<ins>Let <var>contentAttributeValue</var> be the result of running <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s <u class=\"link-error\" data-lt=\"get the content attribute\" title=\"LINK ERROR: No 'dfn' refs found for 'get the content attribute' that are marked for export.\n  (Possible specs this could be from: html)\">get the content attribute</u>.</ins>"
+          "html": "<ins>Let <var>contentAttributeValue</var> be the result of running <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s get the content attribute.</ins>"
         },
         {
           "html": "<ins>If <var>contentAttributeValue</var> is null, then return the empty string.</ins>"
@@ -376,7 +392,7 @@
           "html": "<ins>If <var>urlString</var> is not failure, then return <var>urlString</var>.</ins>"
         },
         {
-          "html": "<ins>Return <var>contentAttributeValue</var>, <u class=\"link-error\" data-lt=\"converted to a scalar value string\" title=\"LINK ERROR: No 'dfn' refs found for 'converted to a scalar value string'.\">converted to a scalar value string</u>.\n</ins>"
+          "html": "<ins>Return <var>contentAttributeValue</var>, converted to a scalar value string.\n</ins>"
         }
       ]
     },
@@ -385,7 +401,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<ins>Let <var>value</var> be the result of calling <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-type-compliant-string\" id=\"ref-for-abstract-opdef-get-trusted-type-compliant-string⑥\">Get Trusted Type compliant string</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscripturl\" id=\"ref-for-trustedscripturl①①\">TrustedScriptURL</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a>, the given value, <code>HTMLScriptElement src</code>, and\n<code>script</code>.</ins>"
+          "html": "<ins>Let <var>value</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#get-trusted-type-compliant-string\" id=\"ref-for-get-trusted-type-compliant-string⑥\">get trusted type compliant string</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscripturl\" id=\"ref-for-trustedscripturl①①\">TrustedScriptURL</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a>, the given value, <code>HTMLScriptElement src</code>, and\n<code>script</code>.</ins>"
         },
         {
           "html": "<ins>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#attr-script-src\" id=\"ref-for-attr-script-src\">src</a> content attribute to <var>value</var>.</ins>"
@@ -424,7 +440,7 @@
           "html": "<p>If <var>parser document</var> is non-null and <var>el</var> does not have an <code id=\"script-processing-model:attr-script-async-4\"><a href=\"https://html.spec.whatwg.org/#attr-script-async\">async</a></code> attribute, then set <var>el</var>’s <a href=\"https://html.spec.whatwg.org/#script-force-async\" id=\"script-processing-model:script-force-async-2\">force async</a> to true.</p>"
         },
         {
-          "html": "<ins>\n      <p>Execute the <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-prepare-the-script-text\" id=\"ref-for-abstract-opdef-prepare-the-script-text\">Prepare the script text</a> algorithm on <var>el</var>. If that algorithm threw an error, then return.</p>\n     </ins>"
+          "html": "<ins>\n      <p>Execute the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#prepare-the-script-text\" id=\"ref-for-prepare-the-script-text\">Prepare the script text</a> algorithm on <var>el</var>. If that algorithm threw an error, then return.</p>\n     </ins>"
         },
         {
           "html": "<p>\n      Let <var>source text</var> be <var>el</var>’s \n      <del><a data-x-internal=\"child-text-content\" href=\"https://dom.spec.whatwg.org/#concept-child-text-content\" id=\"script-processing-model:child-text-content\">child text content</a>.</del>\n      <ins><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#htmlscriptelement-script-text\" id=\"ref-for-htmlscriptelement-script-text⑦\">script text</a> value.</ins>\n     </p>"
@@ -448,7 +464,7 @@
           "html": "<p>Let <var>encodedScriptSource</var> be the result of removing the leading <code>\"javascript:\"</code> from <var>urlString</var>.</p>"
         },
         {
-          "html": "<p>Let <var>convertedScriptSource</var> be the result of executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-process-value-with-a-default-policy\" id=\"ref-for-abstract-opdef-process-value-with-a-default-policy①\">Process value with a default policy</a> algorithm, with the following arguments:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript①⑧\">TrustedScript</a></code> as <var>expectedType</var></p>\n      </li><li data-md=\"\">\n       <p><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">clients</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a> as <var>global</var></p>\n      </li><li data-md=\"\">\n       <p><var>encodedScriptSource</var> as <var>input</var></p>\n      </li><li data-md=\"\">\n       <p><code>\"Location href\"</code> as <var>sink</var></p>\n     </li></ul>\n     <p>If that algorithm threw an error or <var>convertedScriptSource</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript①⑨\">TrustedScript</a></code> object, return \"Blocked\" and abort further steps.</p>"
+          "html": "<p>Let <var>convertedScriptSource</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#process-value-with-a-default-policy\" id=\"ref-for-process-value-with-a-default-policy①\">Process value with a default policy</a> algorithm, with the following arguments:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript①⑧\">TrustedScript</a></code> as <var>expectedType</var></p>\n      </li><li data-md=\"\">\n       <p><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">clients</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a> as <var>global</var></p>\n      </li><li data-md=\"\">\n       <p><var>encodedScriptSource</var> as <var>input</var></p>\n      </li><li data-md=\"\">\n       <p><code>\"Location href\"</code> as <var>sink</var></p>\n     </li></ul>\n     <p>If that algorithm threw an error or <var>convertedScriptSource</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript①⑨\">TrustedScript</a></code> object, return \"Blocked\" and abort further steps.</p>"
         },
         {
           "html": "<p>Set <var>urlString</var> to be the result of prepending <code>\"javascript:\"</code> to stringified <var>convertedScriptSource</var>.</p>"
@@ -465,7 +481,9 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global③\">global object</a> (<var>global</var>), a string (<var>sinkGroup</var>) and a boolean (<var>includeReportOnlyPolicies</var>), this algorithm\nreturns <code>true</code> if the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#injection-sink\" id=\"ref-for-injection-sink②⑤\">injection sink</a> requires a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trusted-type\" id=\"ref-for-trusted-type⑤\">Trusted Type</a>, and <code>false</code> otherwise.",
+      "name": "does sink type require trusted types?",
+      "href": "https://www.w3.org/TR/trusted-types/#does-sink-type-require-trusted-types",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"does-sink-type-require-trusted-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">does sink type require trusted types?</dfn> algorithm, given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global③\">global object</a> (<var>global</var>), a string (<var>sinkGroup</var>) and a boolean (<var>includeReportOnlyPolicies</var>), performs these steps:",
       "rationale": "for",
       "steps": [
         {
@@ -498,7 +516,9 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global④\">global object</a> (<var>global</var>), a string (<var>sink</var>), a string (<var>sinkGroup</var>) and a string (<var>source</var>) this algorithm\nreturns <code>\"Blocked\"</code> if the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#injection-sink\" id=\"ref-for-injection-sink②⑥\">injection sink</a> requires a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trusted-type\" id=\"ref-for-trusted-type⑥\">Trusted Type</a>, and\n<code>\"Allowed\"</code> otherwise.",
+      "name": "should sink type mismatch violation be blocked by content security policy?",
+      "href": "https://www.w3.org/TR/trusted-types/#should-sink-type-mismatch-violation-be-blocked-by-content-security-policy",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"should-sink-type-mismatch-violation-be-blocked-by-content-security-policy\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">should sink type mismatch violation be blocked by content security policy?</dfn> algorithm, given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global④\">global object</a> (<var>global</var>), a string (<var>sink</var>), a string (<var>sinkGroup</var>) and a string (<var>source</var>), performs the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -564,7 +584,9 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑤\">global object</a> (<var>global</var>), a string (<var>policyName</var>) and a list of\nstrings (<var>createdPolicyNames</var>), this algorithm returns <code>\"Blocked\"</code> if the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedtypepolicy\" id=\"ref-for-trustedtypepolicy①④\">TrustedTypePolicy</a></code> should not be created, and <code>\"Allowed\"</code> otherwise.",
+      "name": "Should Trusted Type policy creation be blocked by content security policy?",
+      "href": "https://www.w3.org/TR/trusted-types/#should-trusted-type-policy-creation-be-blocked-by-content-security-policy",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"should-trusted-type-policy-creation-be-blocked-by-content-security-policy\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Should Trusted Type policy creation be blocked by content security policy?</dfn> algorithm, given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑤\">global object</a> (<var>global</var>), a string (<var>policyName</var>) and a list of\nstrings (<var>createdPolicyNames</var>), performs the following steps:",
       "rationale": "let",
       "steps": [
         {

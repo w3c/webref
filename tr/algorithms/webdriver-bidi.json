@@ -6788,7 +6788,7 @@
                   "html": "<p>Let <var>user context</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-user-context\" id=\"ref-for-get-user-context④\">get user context</a> with <var>user context id</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>user context</var> is null, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤①\">invalid argument</a>.</p>"
+                  "html": "<p>If <var>user context</var> is null, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-user-context\" id=\"ref-for-errors-no-such-user-context④\">no such user context</a>.</p>"
                 }
               ]
             }
@@ -6834,7 +6834,7 @@
                   "html": "<p>Let <var>navigable</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑤⑨\">trying</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-a-navigable\" id=\"ref-for-get-a-navigable①⑤\">get a navigable</a>\n with <var>navigable id</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④⑧\">top-level traversable</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨⑤\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤②\">invalid argument</a>.</p>"
+                  "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④⑧\">top-level traversable</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨⑤\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤①\">invalid argument</a>.</p>"
                 },
                 {
                   "html": "<p>Append <var>navigable</var> to <var>navigables</var>.</p>"
@@ -6842,7 +6842,7 @@
               ]
             },
             {
-              "html": "<p>If <var>navigables</var> is an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤⑧\">set</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨①\">error code</a>\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤③\">invalid argument</a>.</p>"
+              "html": "<p>If <var>navigables</var> is an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤⑧\">set</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨①\">error code</a>\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤②\">invalid argument</a>.</p>"
             }
           ]
         },
@@ -6890,7 +6890,7 @@
           "html": "<p>Let (<var>request</var>, <var>phase</var>, <var>response</var>) be <var>blocked requests</var>[<var>request id</var>].</p>"
         },
         {
-          "html": "<p>If <var>phase</var> is not \"<code>beforeRequestSent</code>\", then return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨⑧\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨③\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤④\">invalid argument</a>.</p>"
+          "html": "<p>If <var>phase</var> is not \"<code>beforeRequestSent</code>\", then return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨⑧\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨③\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤③\">invalid argument</a>.</p>"
         },
         {
           "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨④\">contains</a> \"<code>url</code>\":",
@@ -6900,7 +6900,7 @@
               "html": "<p>Let <var>url record</var> be the result of applying the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser③\">URL parser</a> to <var>command\n parameters</var>[\"<code>url</code>\"], with <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-base-url\" id=\"ref-for-concept-script-base-url②\">base URL</a> null.</p>"
             },
             {
-              "html": "<p>If <var>url record</var> is failure, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨⑨\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨④\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤⑤\">invalid argument</a>.</p>\n        <p>TODO: Should we also resume here?</p>"
+              "html": "<p>If <var>url record</var> is failure, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors⑨⑨\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨④\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤④\">invalid argument</a>.</p>\n        <p>TODO: Should we also resume here?</p>"
             },
             {
               "html": "<p>Let <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url②\">url</a> be <var>url record</var>.</p>"
@@ -7066,7 +7066,7 @@
           "html": "<p>Let (<var>request</var>, <var>phase</var>, <var>response</var>) be <var>blocked requests</var>[<var>request id</var>].</p>"
         },
         {
-          "html": "<p>If <var>phase</var> is not \"<code>authRequired</code>\", then return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪④\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤⑥\">invalid argument</a>.</p>"
+          "html": "<p>If <var>phase</var> is not \"<code>authRequired</code>\", then return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪④\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤⑤\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>If <var>command parameters</var> \"<code>action</code>\" is \"<code>cancel</code>\", set\n <var>response</var>’s authentication credentials  to\n \"<code>cancelled</code>\".</p>"
@@ -7146,7 +7146,7 @@
           "html": "<p>Let (<var>request</var>, <var>phase</var>, <var>response</var>) be\n <var>blocked requests</var>[<var>request id</var>].</p>"
         },
         {
-          "html": "<p>If <var>phase</var> is \"<code>authRequired</code>\", then return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪⑧\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⓪③\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤⑦\">invalid argument</a>.</p>"
+          "html": "<p>If <var>phase</var> is \"<code>authRequired</code>\", then return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①⓪⑧\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⓪③\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤⑥\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>response</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a>.</p>"
@@ -7192,7 +7192,7 @@
           "html": "<p>Let <var>disown</var> be <var>command parameters</var>[\"<code>disown</code>\"].</p>"
         },
         {
-          "html": "<p>If <var>disown</var> is true and <var>collector id</var> is null, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①①⓪\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⓪⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤⑧\">invalid argument</a>.</p>"
+          "html": "<p>If <var>disown</var> is true and <var>collector id</var> is null, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①①⓪\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⓪⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤⑦\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>collected data</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-collected-data\" id=\"ref-for-get-collected-data④\">get collected data</a> given <var>request id</var> and <var>data type</var>.</p>"
@@ -7412,7 +7412,7 @@
               "html": "<p>Let <var>context</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑥③\">trying</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-a-navigable\" id=\"ref-for-get-a-navigable①⑥\">get a navigable</a>\nwith <var>navigable id</var>.</p>"
             },
             {
-              "html": "<p>If <var>context</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context\">top-level browsing context</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①①⑥\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①①\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤⑨\">invalid argument</a>.</p>"
+              "html": "<p>If <var>context</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context\">top-level browsing context</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①①⑥\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①①\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤⑧\">invalid argument</a>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③⑤\">Append</a> <var>context</var> to <var>navigables</var>.</p>"
@@ -7524,7 +7524,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①②\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①③\">contains</a> \"<code>contexts</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①①⑦\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①②\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥⓪\">invalid argument</a>.</p>"
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①②\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①③\">contains</a> \"<code>contexts</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①①⑦\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①②\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤⑨\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>headers</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑥④\">trying</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#create-a-headers-list\" id=\"ref-for-create-a-headers-list①\">create a headers list</a> with\n <var>command parameters</var>[\"<code>headers</code>\"].</p>"
@@ -7544,7 +7544,7 @@
                   "html": "<p>Let <var>user context</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-user-context\" id=\"ref-for-get-user-context⑤\">get user context</a> with <var>user context id</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>user context</var> is null, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①①⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①③\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥①\">invalid argument</a>.</p>"
+                  "html": "<p>If <var>user context</var> is null, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①①⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①③\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-user-context\" id=\"ref-for-errors-no-such-user-context⑤\">no such user context</a>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③⑥\">Append</a> <var>user context</var> to <var>user contexts</var>.</p>"
@@ -8274,7 +8274,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑨\">size</a> of <var>serialized key-value</var> is not 2,\n  return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①①⑨\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①④\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥②\">invalid argument</a>.</p>"
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑨\">size</a> of <var>serialized key-value</var> is not 2,\n  return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①①⑨\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①④\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥⓪\">invalid argument</a>.</p>"
             },
             {
               "html": "<p>Let <var>serialized key</var> be <var>serialized key-value</var>[0].</p>"
@@ -8349,7 +8349,7 @@
           "html": "<p>Let <var>value</var> be the value of the <code>value</code> field of <var>local protocol value</var> or undefined\n if no such a field.</p>"
         },
         {
-          "html": "<p>In the following list of conditions and associated steps, run the first set of steps for which\n the associated condition is true:</p>\n      <dl>\n       <dt><var>type</var> is the string \"<code>array</code>\"\n  \n       </dt><dd>\n        \n       </dd><dt><var>type</var> is the string \"<code>date</code>\"\n  \n       </dt><dd>\n        \n       </dd><dt><var>type</var> is the string \"<code>map</code>\"\n  \n       </dt><dd>\n        \n       </dd><dt><var>type</var> is the string \"<code>object</code>\"\n  \n       </dt><dd>\n        \n       </dd><dt><var>type</var> is the string \"<code>regexp</code>\"\n  \n       </dt><dd>\n        \n       </dd><dt><var>type</var> is the string \"<code>set</code>\"\n  \n       </dt><dd>\n        \n       </dd><dt>otherwise\n  \n       </dt><dd>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥⑤\">invalid argument</a>.\n\n      </dd></dl>",
+          "html": "<p>In the following list of conditions and associated steps, run the first set of steps for which\n the associated condition is true:</p>\n      <dl>\n       <dt><var>type</var> is the string \"<code>array</code>\"\n  \n       </dt><dd>\n        \n       </dd><dt><var>type</var> is the string \"<code>date</code>\"\n  \n       </dt><dd>\n        \n       </dd><dt><var>type</var> is the string \"<code>map</code>\"\n  \n       </dt><dd>\n        \n       </dd><dt><var>type</var> is the string \"<code>object</code>\"\n  \n       </dt><dd>\n        \n       </dd><dt><var>type</var> is the string \"<code>regexp</code>\"\n  \n       </dt><dd>\n        \n       </dd><dt><var>type</var> is the string \"<code>set</code>\"\n  \n       </dt><dd>\n        \n       </dd><dt>otherwise\n  \n       </dt><dd>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥③\">invalid argument</a>.\n\n      </dd></dl>",
           "rationale": "let",
           "steps": [
             {
@@ -8365,7 +8365,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>value</var> does not match <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-date-time-string-format\" id=\"ref-for-sec-date-time-string-format\">Date Time String Format</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②⓪\">error</a> with\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥③\">invalid argument</a>.</p>"
+                  "html": "<p>If <var>value</var> does not match <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-date-time-string-format\" id=\"ref-for-sec-date-time-string-format\">Date Time String Format</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②⓪\">error</a> with\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①⑤\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥①\">invalid argument</a>.</p>"
                 },
                 {
                   "html": "<p>Let <var>date result</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-construct\" id=\"ref-for-sec-construct\">Construct</a>(<a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-date-constructor\" id=\"ref-for-sec-date-constructor\">Date</a>, <var>value</var>).</p>"
@@ -8419,7 +8419,7 @@
                   "html": "<p>Let <var>flags</var> be the value of the <code>flags</code> field of <var>local protocol value</var> or\n undefined if no such a field.</p>"
                 },
                 {
-                  "html": "<p>Let <var>regex_result</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-regexp-pattern-flags\" id=\"ref-for-sec-regexp-pattern-flags\">Regexp</a>(<var>pattern</var>, <var>flags</var>). If this throws exception, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②①\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥④\">invalid argument</a>.</p>"
+                  "html": "<p>Let <var>regex_result</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-regexp-pattern-flags\" id=\"ref-for-sec-regexp-pattern-flags\">Regexp</a>(<var>pattern</var>, <var>flags</var>). If this throws exception, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②①\">error</a>\n with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥②\">invalid argument</a>.</p>"
                 },
                 {
                   "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑦⑥\">success</a> with data <var>regex_result</var>.</p>"
@@ -8529,7 +8529,7 @@
               "html": "<p>Let <var>number_result</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-stringtonumber\" id=\"ref-for-sec-stringtonumber\">StringToNumber</a>(<var>value</var>).</p>"
             },
             {
-              "html": "<p>If <var>number_result</var> is NaN, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥⑥\">invalid argument</a></p>"
+              "html": "<p>If <var>number_result</var> is NaN, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥④\">invalid argument</a></p>"
             },
             {
               "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑧⑤\">success</a> with data <var>number_result</var>.</p>"
@@ -8544,7 +8544,7 @@
                   "html": "<p>Let <var>bigint_result</var> be <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-stringtobigint\" id=\"ref-for-sec-stringtobigint\">StringToBigInt</a>(<var>value</var>).</p>"
                 },
                 {
-                  "html": "<p>If <var>bigint_result</var> is undefined, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥⑦\">invalid argument</a></p>"
+                  "html": "<p>If <var>bigint_result</var> is undefined, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②⓪\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥⑤\">invalid argument</a></p>"
                 },
                 {
                   "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑧⑦\">success</a> with data <var>bigint_result</var>.</p>"
@@ -8554,7 +8554,7 @@
           ]
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②①\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥⑧\">invalid argument</a></p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①②⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②①\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥⑥\">invalid argument</a></p>"
         }
       ]
     },
@@ -9495,7 +9495,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②①\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②②\">contains</a> \"<code>contexts</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①③①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥⑨\">invalid argument</a>.</p>"
+          "html": "<p>If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②①\">contains</a> \"<code>userContexts</code>\"\n and <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②②\">contains</a> \"<code>contexts</code>\",\n return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①③①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②⑥\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥⑦\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>function declaration</var> be the <code>functionDeclaration</code> field of <var>command\n parameters</var>.</p>"
@@ -9524,7 +9524,7 @@
                   "html": "<p>Let <var>navigable</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-try\" id=\"ref-for-dfn-try⑦⑥\">trying</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-a-navigable\" id=\"ref-for-get-a-navigable①⑧\">get a navigable</a> with <var>navigable id</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④⑨\">top-level traversable</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①③②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑦⓪\">invalid argument</a>.</p>"
+                  "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable④⑨\">top-level traversable</a>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①③②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②⑦\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥⑧\">invalid argument</a>.</p>"
                 },
                 {
                   "html": "<p>Append <var>navigable</var> to <var>navigables</var>.</p>"
@@ -9548,7 +9548,7 @@
                   "html": "<p>Set <var>user context</var> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#get-user-context\" id=\"ref-for-get-user-context⑥\">get user context</a> with <var>user context id</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>user context</var> is null, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①③③\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②⑧\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-user-context\" id=\"ref-for-errors-no-such-user-context④\">no such user context</a>.</p>"
+                  "html": "<p>If <var>user context</var> is null, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①③③\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②⑧\">error code</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#errors-no-such-user-context\" id=\"ref-for-errors-no-such-user-context⑥\">no such user context</a>.</p>"
                 }
               ]
             }
@@ -9727,7 +9727,7 @@
           "rationale": "return",
           "steps": [
             {
-              "html": "<p>Return an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①③④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑦①\">invalid argument</a></p>"
+              "html": "<p>Return an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors①③④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑥⑨\">invalid argument</a></p>"
             }
           ]
         },
