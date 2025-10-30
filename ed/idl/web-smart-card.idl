@@ -8,7 +8,7 @@ partial interface Navigator {
   [SameObject] readonly attribute SmartCardResourceManager smartCard;
 };
 
-[Exposed=(DedicatedWorker, SharedWorker), SecureContext]
+[Exposed=(DedicatedWorker, SharedWorker), SecureContext, IsolatedContext]
 partial interface WorkerNavigator {
   [SameObject] readonly attribute SmartCardResourceManager smartCard;
 };
@@ -18,7 +18,7 @@ interface SmartCardResourceManager {
   Promise<SmartCardContext> establishContext();
 };
 
-[Exposed=(DedicatedWorker, SharedWorker, Window), SecureContext]
+[Exposed=(DedicatedWorker, SharedWorker, Window), SecureContext, IsolatedContext]
 interface SmartCardContext {
   Promise<sequence<DOMString>> listReaders();
 
@@ -96,7 +96,7 @@ dictionary SmartCardConnectOptions {
   sequence<SmartCardProtocol> preferredProtocols;
 };
 
-[Exposed=(DedicatedWorker, SharedWorker, Window), SecureContext]
+[Exposed=(DedicatedWorker, SharedWorker, Window), SecureContext, IsolatedContext]
 interface SmartCardConnection {
   Promise<undefined> disconnect(optional SmartCardDisposition disposition = "leave");
 
@@ -149,8 +149,12 @@ enum SmartCardConnectionState {
   "raw"
 };
 
-[Exposed=(DedicatedWorker, SharedWorker, Window), Serializable]
-interface SmartCardError : DOMException {
+[
+  Exposed=(DedicatedWorker, SharedWorker, Window),
+  Serializable,
+  SecureContext,
+  IsolatedContext
+] interface SmartCardError : DOMException {
   constructor(optional DOMString message = "", SmartCardErrorOptions options);
   readonly attribute SmartCardResponseCode responseCode;
 };
