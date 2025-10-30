@@ -140,10 +140,10 @@
           "html": "<p>Let <var>publicSuffix</var> be the public suffix determined by running the\n <a href=\"https://github.com/publicsuffix/list/wiki/Format#formal-algorithm\">Public Suffix List algorithm</a>\n with <var>host</var> as domain. <a data-link-type=\"biblio\" href=\"https://url.spec.whatwg.org/#biblio-psl\" title=\"Public Suffix List\">[PSL]</a>\n\n </p>"
         },
         {
-          "html": "<p>Assert: <var>publicSuffix</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string③\">ASCII string</a> that does not\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-ends-with\" id=\"ref-for-string-ends-with①\">end with</a> \"<code>.</code>\".\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>publicSuffix</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string③\">ASCII string</a> that\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-ends-with\" id=\"ref-for-string-ends-with①\">ends with</a> <var>trailingDot</var>.\n\n </p>"
         },
         {
-          "html": "<p>Return <var>publicSuffix</var> and <var>trailingDot</var> concatenated.\n</p>"
+          "html": "<p>Return <var>publicSuffix</var>.\n</p>"
         }
       ]
     },
@@ -163,10 +163,10 @@
           "html": "<p>Let <var>registrableDomain</var> be the registrable domain determined by running the\n <a href=\"https://github.com/publicsuffix/list/wiki/Format#formal-algorithm\">Public Suffix List algorithm</a>\n with <var>host</var> as domain. <a data-link-type=\"biblio\" href=\"https://url.spec.whatwg.org/#biblio-psl\" title=\"Public Suffix List\">[PSL]</a>\n\n </p>"
         },
         {
-          "html": "<p>Assert: <var>registrableDomain</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string④\">ASCII string</a> that does not\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-ends-with\" id=\"ref-for-string-ends-with③\">end with</a> \"<code>.</code>\".\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>registrableDomain</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string④\">ASCII string</a> that\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-ends-with\" id=\"ref-for-string-ends-with③\">ends with</a> <var>trailingDot</var>.\n\n </p>"
         },
         {
-          "html": "<p>Return <var>registrableDomain</var> and <var>trailingDot</var> concatenated.\n</p>"
+          "html": "<p>Return <var>registrableDomain</var>.\n</p>"
         }
       ]
     },
@@ -195,7 +195,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>result</var> is not the empty string and does not contain a\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#forbidden-domain-code-point\" id=\"ref-for-forbidden-domain-code-point③\">forbidden domain code point</a>.\n\n  </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>result</var> is not the empty string and does not contain a\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#forbidden-domain-code-point\" id=\"ref-for-forbidden-domain-code-point③\">forbidden domain code point</a>.\n\n  </p>"
         },
         {
           "html": "<p>Return <var>result</var>.\n</p>"
@@ -812,7 +812,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>url</var> does not have an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path③\">opaque path</a>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>url</var> does not have an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path③\">opaque path</a>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>path</var> be <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path④\">path</a>.\n\n </p>"
@@ -1003,7 +1003,7 @@
                           "rationale": "assert",
                           "steps": [
                             {
-                              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>base</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special③\">is special</a> (and therefore does not have\n         an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path④\">opaque path</a>).\n\n         </p>"
+                              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>base</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special③\">is special</a> (and therefore does not have\n         an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path④\">opaque path</a>).\n\n         </p>"
                             },
                             {
                               "html": "<p>Set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-relative-or-authority-state\" id=\"ref-for-special-relative-or-authority-state\">special relative or authority state</a>.\n        </p>"
@@ -2036,7 +2036,7 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>tuple</var>’s name and <var>tuple</var>’s value are\n   <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①⓪\">scalar value strings</a>.\n\n   </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>tuple</var>’s name and <var>tuple</var>’s value are\n   <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①⓪\">scalar value strings</a>.\n\n   </p>"
             },
             {
               "html": "<p>Let <var>name</var> be the result of running\n   <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-percent-encode-after-encoding\" id=\"ref-for-string-percent-encode-after-encoding⑥\">percent-encode after encoding</a> with <var>encoding</var>,\n   <var>tuple</var>’s name, the\n   <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#application-x-www-form-urlencoded-percent-encode-set\" id=\"ref-for-application-x-www-form-urlencoded-percent-encode-set②\"><code>application/x-www-form-urlencoded</code> percent-encode set</a>, and true.\n\n   </p>"
