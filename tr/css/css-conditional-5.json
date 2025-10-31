@@ -18,28 +18,28 @@
       "values": [
         {
           "name": "size",
-          "prose": "Establishes a query container for container size queries on both the inline and block axis. Applies layout containment, style containment, and size containment to the principal box.",
+          "prose": "Establishes a query container for container size queries on both the inline and block axis. Applies style containment and size containment to the principal box, and establishes an independent formatting context.",
           "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-type-size",
           "type": "value",
           "value": "size"
         },
         {
           "name": "inline-size",
-          "prose": "Establishes a query container for container size queries on the container’s own inline axis. Applies layout containment, style containment, and inline-size containment to the principal box.",
+          "prose": "Establishes a query container for container size queries on the container’s own inline axis. Applies style containment and inline-size containment to the principal box, and establishes an independent formatting context.",
           "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-type-inline-size",
           "type": "value",
           "value": "inline-size"
         },
         {
           "name": "scroll-state",
-          "prose": "Establishes a query container for scroll-state queries",
+          "prose": "Establishes a query container for container scroll-state queries",
           "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-type-scroll-state",
           "type": "value",
           "value": "scroll-state"
         },
         {
           "name": "normal",
-          "prose": "The element is not a query container for any container size queries or scroll-state queries, but remains a query container for container style queries.",
+          "prose": "The element is not a query container for any container size queries or container scroll-state queries, but remains a query container for container style queries.",
           "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-type-normal",
           "type": "value",
           "value": "normal"
@@ -108,7 +108,7 @@
     },
     {
       "name": "@else",
-      "prose": "The @else rule is a conditional group rule used to form conditional rule chains, which associate multiple conditional rules and guarantee that only the first one that matches will evaluate its condition as true. It is defined as:",
+      "prose": "The @else rule is a conditional group rule used to form conditional rule chains, which associate multiple conditional group rules and guarantee that only the first one that matches will evaluate its condition as true. It is defined as:",
       "href": "https://www.w3.org/TR/css-conditional-5/#at-ruledef-else",
       "descriptors": [],
       "value": "@else <boolean-condition>? { <rule-list> }"
@@ -252,7 +252,7 @@
           "name": "snapped",
           "href": "https://www.w3.org/TR/css-conditional-5/#descdef-container-snapped",
           "for": "@container",
-          "value": "none | x | y | block | inline",
+          "value": "none | x | y | block | inline | both",
           "type": "discrete",
           "values": [
             {
@@ -278,94 +278,236 @@
             },
             {
               "name": "block",
-              "prose": "snapped container feature matches block if the query container is a snap target for its scroll container. in the block direction of the snap container.",
+              "prose": "snapped container feature matches block if the query container is a snap target for its scroll container. in the block direction of the scroll snap container.",
               "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-snapped-block",
               "type": "value",
               "value": "block"
             },
             {
               "name": "inline",
-              "prose": "snapped container feature matches inline if the query container is a snap target for its scroll container in the inline direction of the snap container.",
+              "prose": "snapped container feature matches inline if the query container is a snap target for its scroll container in the inline direction of the scroll snap container.",
               "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-snapped-inline",
               "type": "value",
               "value": "inline"
+            },
+            {
+              "name": "both",
+              "prose": "snapped container feature matches both if the query container is a snap target for its scroll container in both directions of the scroll snap container.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-snapped-both",
+              "type": "value",
+              "value": "both"
             }
           ]
         },
         {
-          "name": "overflowing",
-          "href": "https://www.w3.org/TR/css-conditional-5/#descdef-container-overflowing",
+          "name": "scrollable",
+          "href": "https://www.w3.org/TR/css-conditional-5/#descdef-container-scrollable",
           "for": "@container",
-          "value": "none | top | right | bottom | left | block-start | inline-start | block-end | inline-end",
+          "value": "none | top | right | bottom | left | block-start | inline-start | block-end | inline-end | x | y | block | inline",
           "type": "discrete",
           "values": [
             {
               "name": "none",
               "prose": "The scroll container does not have scrollable overflow in any direction.",
-              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-none",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrollable-none",
               "type": "value",
               "value": "none"
             },
             {
               "name": "top",
               "prose": "The scroll container has scrollable overflow past the top edge.",
-              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-top",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrollable-top",
               "type": "value",
               "value": "top"
             },
             {
               "name": "right",
               "prose": "The scroll container has scrollable overflow past the right edge.",
-              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-right",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrollable-right",
               "type": "value",
               "value": "right"
             },
             {
               "name": "bottom",
               "prose": "The scroll container has scrollable overflow past the bottom edge.",
-              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-bottom",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrollable-bottom",
               "type": "value",
               "value": "bottom"
             },
             {
               "name": "left",
               "prose": "The scroll container has scrollable overflow past the left edge.",
-              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-left",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrollable-left",
               "type": "value",
               "value": "left"
             },
             {
               "name": "block-start",
               "prose": "The scroll container has scrollable overflow past the block-start edge.",
-              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-block-start",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrollable-block-start",
               "type": "value",
               "value": "block-start"
             },
             {
               "name": "inline-start",
               "prose": "The scroll container has scrollable overflow past the inline-start edge.",
-              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-inline-start",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrollable-inline-start",
               "type": "value",
               "value": "inline-start"
             },
             {
               "name": "block-end",
               "prose": "The scroll container has scrollable overflow past the block-end edge.",
-              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-block-end",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrollable-block-end",
               "type": "value",
               "value": "block-end"
             },
             {
               "name": "inline-end",
               "prose": "The scroll container has scrollable overflow past the inline-end edge.",
-              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-overflowing-inline-end",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrollable-inline-end",
               "type": "value",
               "value": "inline-end"
+            },
+            {
+              "name": "x",
+              "prose": "The scroll container has horizontally scrollable overflow.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrollable-x",
+              "type": "value",
+              "value": "x"
+            },
+            {
+              "name": "y",
+              "prose": "The scroll container has vertically scrollable overflow.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrollable-y",
+              "type": "value",
+              "value": "y"
+            },
+            {
+              "name": "block",
+              "prose": "The scroll container has scrollable overflow in its block direction.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrollable-block",
+              "type": "value",
+              "value": "block"
+            },
+            {
+              "name": "inline",
+              "prose": "The scroll container has scrollable overflow in its inline direction.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrollable-inline",
+              "type": "value",
+              "value": "inline"
+            }
+          ]
+        },
+        {
+          "name": "scrolled",
+          "href": "https://www.w3.org/TR/css-conditional-5/#descdef-container-scrolled",
+          "for": "@container",
+          "value": "none | top | right | bottom | left | block-start | inline-start | block-end | inline-end | x | y | block | inline",
+          "type": "discrete",
+          "values": [
+            {
+              "name": "none",
+              "prose": "The query container has not had a relative scroll yet.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrolled-none",
+              "type": "value",
+              "value": "none"
+            },
+            {
+              "name": "top",
+              "prose": "The most recent relative scroll was upwards.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrolled-top",
+              "type": "value",
+              "value": "top"
+            },
+            {
+              "name": "right",
+              "prose": "The most recent relative scroll was to the right.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrolled-right",
+              "type": "value",
+              "value": "right"
+            },
+            {
+              "name": "bottom",
+              "prose": "The most recent relative scroll was downwards.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrolled-bottom",
+              "type": "value",
+              "value": "bottom"
+            },
+            {
+              "name": "left",
+              "prose": "The most recent relative scroll was to the left.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrolled-left",
+              "type": "value",
+              "value": "left"
+            },
+            {
+              "name": "block-start",
+              "prose": "The most recent relative scroll was towards the block-start direction.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrolled-block-start",
+              "type": "value",
+              "value": "block-start"
+            },
+            {
+              "name": "inline-start",
+              "prose": "The most recent relative scroll was towards the inline-start direction.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrolled-inline-start",
+              "type": "value",
+              "value": "inline-start"
+            },
+            {
+              "name": "block-end",
+              "prose": "The most recent relative scroll was towards the block-end direction.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrolled-block-end",
+              "type": "value",
+              "value": "block-end"
+            },
+            {
+              "name": "inline-end",
+              "prose": "The most recent relative scroll was towards the inline-end direction.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrolled-inline-end",
+              "type": "value",
+              "value": "inline-end"
+            },
+            {
+              "name": "x",
+              "prose": "The most recent relative scroll was in the horizontal direction.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrolled-x",
+              "type": "value",
+              "value": "x"
+            },
+            {
+              "name": "y",
+              "prose": "The most recent relative scroll was in the vertical direction.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrolled-y",
+              "type": "value",
+              "value": "y"
+            },
+            {
+              "name": "block",
+              "prose": "The most recent relative scroll was in the block direction.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrolled-block",
+              "type": "value",
+              "value": "block"
+            },
+            {
+              "name": "inline",
+              "prose": "The most recent relative scroll was in the inline direction.",
+              "href": "https://www.w3.org/TR/css-conditional-5/#valdef-container-scrolled-inline",
+              "type": "value",
+              "value": "inline"
             }
           ]
         }
       ],
       "value": "@container <container-condition># { <block-contents> }"
+    },
+    {
+      "name": "@supports-condition",
+      "prose": "The @supports-condition at-rule is a conditional group rule that allows authors to define and name a supports query for later reuse, creating a named supports condition. This enables complex or frequently-used feature queries to be referenced by name, improving maintainability and readability.",
+      "href": "https://www.w3.org/TR/css-conditional-5/#at-ruledef-supports-condition",
+      "descriptors": [],
+      "value": "@supports-condition <supports-condition-name> { <block-contents> }"
     }
   ],
   "selectors": [],
@@ -374,7 +516,13 @@
       "name": "<supports-feature>",
       "href": "https://www.w3.org/TR/css-conditional-5/#typedef-supports-feature",
       "type": "type",
-      "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-decl>"
+      "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-at-rule-fn> | <supports-decl>"
+    },
+    {
+      "name": "<supports-decl>",
+      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-supports-decl",
+      "type": "type",
+      "value": "( [ <declaration> | <supports-condition-name> ] )"
     },
     {
       "name": "<supports-font-tech-fn>",
@@ -387,6 +535,18 @@
       "href": "https://www.w3.org/TR/css-conditional-5/#typedef-supports-font-format-fn",
       "type": "type",
       "value": "font-format( <font-format> )"
+    },
+    {
+      "name": "<supports-at-rule-fn>",
+      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-supports-at-rule-fn",
+      "type": "type",
+      "value": "at-rule( <at-keyword-token> )"
+    },
+    {
+      "name": "<boolean-condition>",
+      "prose": "Where <boolean-condition> is a boolean algebra a la Media Queries 4 § 3 Syntax, but with media() and supports() functions as leaves.",
+      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-boolean-condition",
+      "type": "type"
     },
     {
       "name": "media()",
@@ -404,7 +564,7 @@
       "name": "<container-condition>",
       "href": "https://www.w3.org/TR/css-conditional-5/#typedef-container-condition",
       "type": "type",
-      "value": "[ <container-name> ]? <container-query>"
+      "value": "[ <container-name>? <container-query>? ]!"
     },
     {
       "name": "<container-name>",
@@ -437,6 +597,36 @@
       "value": "( <style-query> ) | ( <style-feature> ) | <general-enclosed>"
     },
     {
+      "name": "<style-feature>",
+      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-style-feature",
+      "type": "type",
+      "value": "<style-feature-plain> | <style-feature-boolean> | <style-range>"
+    },
+    {
+      "name": "<style-feature-plain>",
+      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-style-feature-plain",
+      "type": "type",
+      "value": "<style-feature-name> : <style-feature-value>"
+    },
+    {
+      "name": "<style-feature-boolean>",
+      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-style-feature-boolean",
+      "type": "type",
+      "value": "<style-feature-name>"
+    },
+    {
+      "name": "<style-range>",
+      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-style-range",
+      "type": "type",
+      "value": "<style-range-value> <mf-comparison> <style-range-value> | <style-range-value> <mf-lt> <style-range-value> <mf-lt> <style-range-value> | <style-range-value> <mf-gt> <style-range-value> <mf-gt> <style-range-value>"
+    },
+    {
+      "name": "<style-range-value>",
+      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-style-range-value",
+      "type": "type",
+      "value": "<custom-property-name> | <style-feature-value>"
+    },
+    {
       "name": "<scroll-state-query>",
       "href": "https://www.w3.org/TR/css-conditional-5/#typedef-scroll-state-query",
       "type": "type",
@@ -455,15 +645,27 @@
       "type": "type"
     },
     {
-      "name": "<style-feature>",
-      "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is either the same as for a valid declaration [CSS-SYNTAX-3], a supported CSS property, or a <custom-property-name>.",
-      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-style-feature",
+      "name": "<style-feature-name>",
+      "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is either the same as for a valid declaration[CSS-SYNTAX-3], a <style-feature-name> or a valid style range(<style-range>). The <style-feature-name> can be either a supported CSS property or a valid <custom-property-name>. The <style-feature-value> production matches any valid <declaration-value> as long as it doesn’t contain <mf-lt>, <mf-gt> and <mf-eq> tokens.",
+      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-style-feature-name",
+      "type": "type"
+    },
+    {
+      "name": "<style-feature-value>",
+      "prose": "A container style query allows querying the computed values of the query container. It is a boolean combination of individual style features (<style-feature>) that each query a single, specific property of the query container. The syntax of a <style-feature> is either the same as for a valid declaration[CSS-SYNTAX-3], a <style-feature-name> or a valid style range(<style-range>). The <style-feature-name> can be either a supported CSS property or a valid <custom-property-name>. The <style-feature-value> production matches any valid <declaration-value> as long as it doesn’t contain <mf-lt>, <mf-gt> and <mf-eq> tokens.",
+      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-style-feature-value",
       "type": "type"
     },
     {
       "name": "<scroll-state-feature>",
       "prose": "A container scroll-state query allows querying a container for state that depends on scroll position. It is a boolean combination of individual scroll-state features (<scroll-state-feature>) that each query a single feature of the query container. The syntax of a <scroll-state-feature> is the same as for a media feature: a feature name, a comparator, and a value.",
       "href": "https://www.w3.org/TR/css-conditional-5/#typedef-scroll-state-feature",
+      "type": "type"
+    },
+    {
+      "name": "<supports-condition-name>",
+      "prose": "Where <supports-condition-name> is an <extension-name> that defines the name of the supports query.",
+      "href": "https://www.w3.org/TR/css-conditional-5/#typedef-supports-condition-name",
       "type": "type"
     }
   ]

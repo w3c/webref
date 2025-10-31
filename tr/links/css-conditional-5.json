@@ -5,8 +5,8 @@
   },
   "links": {
     "rawlinks": {
-      "http://wpt.live/css/css-conditional/at-supports-font-format-001.html": {},
-      "http://wpt.live/css/css-conditional/at-supports-font-tech-001.html": {},
+      "http://wpt.live/css/css-conditional/at-supports-selector-details-content-before.html": {},
+      "http://wpt.live/css/css-conditional/at-supports-selector-details-content.html": {},
       "http://wpt.live/css/css-conditional/container-queries/animation-container-size.html": {},
       "http://wpt.live/css/css-conditional/container-queries/animation-container-type-dynamic.html": {},
       "http://wpt.live/css/css-conditional/container-queries/animation-nested-animation.html": {},
@@ -32,6 +32,7 @@
       "http://wpt.live/css/css-conditional/container-queries/container-computed.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-for-cue.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-for-shadow-dom.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/container-ident-function.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-inheritance.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-inner-at-rules.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-inside-multicol-with-table.html": {},
@@ -54,6 +55,7 @@
       "http://wpt.live/css/css-conditional/container-queries/container-type-layout-invalidation.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-type-parsing.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-units-animation.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/container-units-auto.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-units-basic.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-units-computational-independence.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-units-content-box.html": {},
@@ -66,6 +68,7 @@
       "http://wpt.live/css/css-conditional/container-queries/container-units-invalidation.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-units-media-queries.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-units-rule-cache.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/container-units-selection-pseudo.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-units-selection.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-units-shadow.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-units-sharing-via-rule-node.html": {},
@@ -161,6 +164,8 @@
       "http://wpt.live/css/css-conditional/container-queries/layout-dependent-focus.html": {},
       "http://wpt.live/css/css-conditional/container-queries/multicol-container-001.html": {},
       "http://wpt.live/css/css-conditional/container-queries/multicol-inside-container.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/multiple-size-containers-comma-separated-queries.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/multiple-style-containers-comma-separated-queries.html": {},
       "http://wpt.live/css/css-conditional/container-queries/nested-query-containers.html": {},
       "http://wpt.live/css/css-conditional/container-queries/nested-size-style-container-invalidation.html": {},
       "http://wpt.live/css/css-conditional/container-queries/never-match-container.html": {},
@@ -187,14 +192,17 @@
       "http://wpt.live/css/css-conditional/container-queries/pseudo-elements-011.html": {},
       "http://wpt.live/css/css-conditional/container-queries/pseudo-elements-012.html": {},
       "http://wpt.live/css/css-conditional/container-queries/pseudo-elements-013.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/query-container-name.html": {},
       "http://wpt.live/css/css-conditional/container-queries/query-content-box.html": {},
       "http://wpt.live/css/css-conditional/container-queries/query-evaluation-style.html": {},
       "http://wpt.live/css/css-conditional/container-queries/query-evaluation.html": {},
       "http://wpt.live/css/css-conditional/container-queries/reattach-container-with-dirty-child.html": {},
       "http://wpt.live/css/css-conditional/container-queries/registered-color-style-queries.html": {},
       "http://wpt.live/css/css-conditional/container-queries/resize-while-content-visibility-hidden.html": {},
-      "http://wpt.live/css/css-conditional/container-queries/scroll-state/at-container-overflowing-parsing.html": {},
-      "http://wpt.live/css/css-conditional/container-queries/scroll-state/at-container-overflowing-serialization.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/at-container-scrollable-parsing.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/at-container-scrollable-serialization.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/at-container-scrolled-parsing.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/at-container-scrolled-serialization.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/at-container-snapped-parsing.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/at-container-snapped-serialization.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/at-container-stuck-parsing.html": {},
@@ -202,36 +210,67 @@
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/container-type-scroll-state-computed.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/container-type-scroll-state-containment.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/container-type-scroll-state-parsing.html": {},
-      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-initially-overflowing.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/multiple-scroll-state-containers-comma-separated-queries.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-initially-scrollable.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-initially-snapped.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-initially-stuck.html": {},
-      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-overflowing-change.html": {},
-      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-overflowing-container-type-change.html": {},
-      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-overflowing-layout-change.html": {},
-      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-overflowing-wm.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-query-with-var.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-axis.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-body-001.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-body-002.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-change.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-container-type-change.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-layout-change-002.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-layout-change.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-pseudo.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-root.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-wm.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-arrow-key-scroll.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-home-end-scroll.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-hv.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-keyboard-scroll-on-body.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-keyboard-scroll-on-root.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-mouse-drag-scroll.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-multiple-scrollers.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-programmatic-absolute-scrolls.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-programmatic-relative-scrolls.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-pu-pd-scroll.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-scrollbar-button-clicks.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-scrollbar-track-clicks.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-spacebar-scroll.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-user-touch-scroll.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-wheel-scroll.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-wm.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-both.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-change.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-container-type-change.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-layout-change.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-none.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-pseudo.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-snap-changing.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-wm.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-stuck-container-type-change.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-stuck-layout-change.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-stuck-pseudo.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-stuck-writing-direction.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scroll-state/scroll-state-target-query-change.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scrollbar-container-units-block.html": {},
       "http://wpt.live/css/css-conditional/container-queries/scrollbar-container-units-inline.html": {},
       "http://wpt.live/css/css-conditional/container-queries/sibling-layout-dependency.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/size-container-auto-height.html": {},
       "http://wpt.live/css/css-conditional/container-queries/size-container-no-principal-box.html": {},
       "http://wpt.live/css/css-conditional/container-queries/size-container-with-quotes.html": {},
       "http://wpt.live/css/css-conditional/container-queries/size-container-writing-mode-change.html": {},
       "http://wpt.live/css/css-conditional/container-queries/size-feature-evaluation.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/size-query-with-var.html": {},
       "http://wpt.live/css/css-conditional/container-queries/style-change-in-container.html": {},
       "http://wpt.live/css/css-conditional/container-queries/style-container-for-shadow-dom.html": {},
       "http://wpt.live/css/css-conditional/container-queries/style-container-invalidation-inheritance.html": {},
       "http://wpt.live/css/css-conditional/container-queries/style-not-sharing-float.html": {},
       "http://wpt.live/css/css-conditional/container-queries/style-query-document-element.html": {},
       "http://wpt.live/css/css-conditional/container-queries/style-query-no-cycle.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/style-query-registered-custom-rem-change.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/style-query-unset-on-root.html": {},
       "http://wpt.live/css/css-conditional/container-queries/style-query-with-unknown-width.html": {},
       "http://wpt.live/css/css-conditional/container-queries/svg-foreignobject-child-container.html": {},
       "http://wpt.live/css/css-conditional/container-queries/svg-foreignobject-no-size-container.html": {},
@@ -246,12 +285,14 @@
       "http://wpt.live/css/css-conditional/container-queries/transition-style-change-event-002.html": {},
       "http://wpt.live/css/css-conditional/container-queries/transition-style-change-event.html": {},
       "http://wpt.live/css/css-conditional/container-queries/unsupported-axis.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/var-evaluation.html": {},
       "http://wpt.live/css/css-conditional/container-queries/viewport-units-dynamic.html": {},
       "http://wpt.live/css/css-conditional/container-queries/viewport-units.html": {},
       "http://wpt.live/css/css-conditional/container-queries/whitespace-update-after-removal.html": {},
       "http://wpt.live/css/css-conditional/js/CSS-supports-L5.html": {},
+      "http://wpt.live/css/css-conditional/js/supports-at-rule.html": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://drafts.csswg.org/css-position-4/": {},
+      "https://drafts.csswg.org/css-extensions-1/": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
       "https://github.com/w3c/csswg-drafts/issues/10433": {},
       "https://github.com/w3c/csswg-drafts/issues/10784": {
@@ -264,22 +305,54 @@
           "issuecomment-2379885032"
         ]
       },
+      "https://github.com/w3c/csswg-drafts/issues/10982": {},
+      "https://github.com/w3c/csswg-drafts/issues/11116": {},
+      "https://github.com/w3c/csswg-drafts/issues/11117": {},
+      "https://github.com/w3c/csswg-drafts/issues/11181": {},
+      "https://github.com/w3c/csswg-drafts/issues/11182": {},
+      "https://github.com/w3c/csswg-drafts/issues/11183": {},
+      "https://github.com/w3c/csswg-drafts/issues/12090": {},
+      "https://github.com/w3c/csswg-drafts/issues/12236": {
+        "anchors": [
+          "issuecomment-3204826253"
+        ]
+      },
+      "https://github.com/w3c/csswg-drafts/issues/12622": {},
+      "https://github.com/w3c/csswg-drafts/issues/12973": {},
+      "https://github.com/w3c/csswg-drafts/issues/2463": {},
       "https://github.com/w3c/csswg-drafts/issues/5984": {
         "anchors": [
           "issuecomment-2112977366"
         ]
       },
       "https://github.com/w3c/csswg-drafts/issues/6205": {},
+      "https://github.com/w3c/csswg-drafts/issues/6400": {
+        "anchors": [
+          "issuecomment-3200664309"
+        ]
+      },
       "https://github.com/w3c/csswg-drafts/issues/6402": {
         "anchors": [
           "issuecomment-1812973013"
         ]
       },
+      "https://github.com/w3c/csswg-drafts/issues/6966": {},
       "https://github.com/w3c/csswg-drafts/issues/7369": {},
       "https://github.com/w3c/csswg-drafts/issues/8110": {},
+      "https://github.com/w3c/csswg-drafts/issues/8376": {
+        "anchors": [
+          "issuecomment-2773374483"
+        ]
+      },
+      "https://github.com/w3c/csswg-drafts/issues/9192": {
+        "anchors": [
+          "issuecomment-1789850349"
+        ]
+      },
+      "https://github.com/w3c/csswg-drafts/pull/10544": {},
       "https://github.com/w3c/csswg-drafts/pull/10874": {},
-      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/at-supports-font-format-001.html": {},
-      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/at-supports-font-tech-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/at-supports-selector-details-content-before.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/at-supports-selector-details-content.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/animation-container-size.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/animation-container-type-dynamic.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/animation-nested-animation.html": {},
@@ -305,6 +378,7 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-computed.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-for-cue.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-for-shadow-dom.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-ident-function.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-inheritance.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-inner-at-rules.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-inside-multicol-with-table.html": {},
@@ -327,6 +401,7 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-type-layout-invalidation.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-type-parsing.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-units-animation.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-units-auto.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-units-basic.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-units-computational-independence.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-units-content-box.html": {},
@@ -339,6 +414,7 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-units-invalidation.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-units-media-queries.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-units-rule-cache.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-units-selection-pseudo.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-units-selection.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-units-shadow.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-units-sharing-via-rule-node.html": {},
@@ -435,6 +511,8 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/layout-dependent-focus.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/multicol-container-001.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/multicol-inside-container.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/multiple-size-containers-comma-separated-queries.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/multiple-style-containers-comma-separated-queries.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/nested-query-containers.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/nested-size-style-container-invalidation.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/never-match-container.html": {},
@@ -461,14 +539,17 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/pseudo-elements-011.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/pseudo-elements-012.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/pseudo-elements-013.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/query-container-name.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/query-content-box.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/query-evaluation-style.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/query-evaluation.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/reattach-container-with-dirty-child.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/registered-color-style-queries.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/resize-while-content-visibility-hidden.html": {},
-      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/at-container-overflowing-parsing.html": {},
-      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/at-container-overflowing-serialization.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/at-container-scrollable-parsing.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/at-container-scrollable-serialization.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/at-container-scrolled-parsing.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/at-container-scrolled-serialization.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/at-container-snapped-parsing.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/at-container-snapped-serialization.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/at-container-stuck-parsing.html": {},
@@ -476,36 +557,67 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/container-type-scroll-state-computed.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/container-type-scroll-state-containment.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/container-type-scroll-state-parsing.html": {},
-      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-initially-overflowing.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/multiple-scroll-state-containers-comma-separated-queries.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-initially-scrollable.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-initially-snapped.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-initially-stuck.html": {},
-      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-overflowing-change.html": {},
-      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-overflowing-container-type-change.html": {},
-      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-overflowing-layout-change.html": {},
-      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-overflowing-wm.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-query-with-var.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-axis.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-body-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-body-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-change.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-container-type-change.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-layout-change-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-layout-change.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-pseudo.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-root.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-wm.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-arrow-key-scroll.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-home-end-scroll.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-hv.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-keyboard-scroll-on-body.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-keyboard-scroll-on-root.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-mouse-drag-scroll.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-multiple-scrollers.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-programmatic-absolute-scrolls.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-programmatic-relative-scrolls.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-pu-pd-scroll.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-scrollbar-button-clicks.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-scrollbar-track-clicks.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-spacebar-scroll.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-user-touch-scroll.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-wheel-scroll.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-wm.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-both.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-change.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-container-type-change.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-layout-change.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-none.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-pseudo.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-snap-changing.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-wm.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-stuck-container-type-change.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-stuck-layout-change.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-stuck-pseudo.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-stuck-writing-direction.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scroll-state/scroll-state-target-query-change.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scrollbar-container-units-block.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/scrollbar-container-units-inline.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/sibling-layout-dependency.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/size-container-auto-height.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/size-container-no-principal-box.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/size-container-with-quotes.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/size-container-writing-mode-change.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/size-feature-evaluation.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/size-query-with-var.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/style-change-in-container.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/style-container-for-shadow-dom.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/style-container-invalidation-inheritance.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/style-not-sharing-float.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/style-query-document-element.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/style-query-no-cycle.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/style-query-registered-custom-rem-change.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/style-query-unset-on-root.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/style-query-with-unknown-width.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/svg-foreignobject-child-container.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/svg-foreignobject-no-size-container.html": {},
@@ -520,10 +632,12 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/transition-style-change-event-002.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/transition-style-change-event.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/unsupported-axis.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/var-evaluation.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/viewport-units-dynamic.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/viewport-units.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/whitespace-update-after-removal.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/js/CSS-supports-L5.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/js/supports-at-rule.html": {},
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "event-loop-processing-model"
@@ -533,8 +647,8 @@
       "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://webidl.spec.whatwg.org/": {},
-      "https://wpt.fyi/results/css/css-conditional/at-supports-font-format-001.html": {},
-      "https://wpt.fyi/results/css/css-conditional/at-supports-font-tech-001.html": {},
+      "https://wpt.fyi/results/css/css-conditional/at-supports-selector-details-content-before.html": {},
+      "https://wpt.fyi/results/css/css-conditional/at-supports-selector-details-content.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/animation-container-size.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/animation-container-type-dynamic.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/animation-nested-animation.html": {},
@@ -560,6 +674,7 @@
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-computed.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-for-cue.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-for-shadow-dom.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/container-ident-function.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-inheritance.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-inner-at-rules.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-inside-multicol-with-table.html": {},
@@ -582,6 +697,7 @@
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-type-layout-invalidation.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-type-parsing.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-units-animation.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/container-units-auto.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-units-basic.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-units-computational-independence.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-units-content-box.html": {},
@@ -594,6 +710,7 @@
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-units-invalidation.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-units-media-queries.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-units-rule-cache.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/container-units-selection-pseudo.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-units-selection.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-units-shadow.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-units-sharing-via-rule-node.html": {},
@@ -690,6 +807,8 @@
       "https://wpt.fyi/results/css/css-conditional/container-queries/layout-dependent-focus.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/multicol-container-001.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/multicol-inside-container.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/multiple-size-containers-comma-separated-queries.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/multiple-style-containers-comma-separated-queries.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/nested-query-containers.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/nested-size-style-container-invalidation.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/never-match-container.html": {},
@@ -716,14 +835,17 @@
       "https://wpt.fyi/results/css/css-conditional/container-queries/pseudo-elements-011.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/pseudo-elements-012.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/pseudo-elements-013.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/query-container-name.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/query-content-box.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/query-evaluation-style.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/query-evaluation.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/reattach-container-with-dirty-child.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/registered-color-style-queries.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/resize-while-content-visibility-hidden.html": {},
-      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/at-container-overflowing-parsing.html": {},
-      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/at-container-overflowing-serialization.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/at-container-scrollable-parsing.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/at-container-scrollable-serialization.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/at-container-scrolled-parsing.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/at-container-scrolled-serialization.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/at-container-snapped-parsing.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/at-container-snapped-serialization.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/at-container-stuck-parsing.html": {},
@@ -731,36 +853,67 @@
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/container-type-scroll-state-computed.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/container-type-scroll-state-containment.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/container-type-scroll-state-parsing.html": {},
-      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-initially-overflowing.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/multiple-scroll-state-containers-comma-separated-queries.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-initially-scrollable.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-initially-snapped.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-initially-stuck.html": {},
-      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-overflowing-change.html": {},
-      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-overflowing-container-type-change.html": {},
-      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-overflowing-layout-change.html": {},
-      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-overflowing-wm.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-query-with-var.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-axis.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-body-001.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-body-002.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-change.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-container-type-change.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-layout-change-002.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-layout-change.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-pseudo.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-root.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrollable-wm.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-arrow-key-scroll.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-home-end-scroll.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-hv.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-keyboard-scroll-on-body.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-keyboard-scroll-on-root.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-mouse-drag-scroll.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-multiple-scrollers.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-programmatic-absolute-scrolls.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-programmatic-relative-scrolls.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-pu-pd-scroll.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-scrollbar-button-clicks.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-scrollbar-track-clicks.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-spacebar-scroll.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-user-touch-scroll.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-wheel-scroll.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-scrolled-wm.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-both.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-change.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-container-type-change.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-layout-change.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-none.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-pseudo.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-snap-changing.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-snapped-wm.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-stuck-container-type-change.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-stuck-layout-change.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-stuck-pseudo.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-stuck-writing-direction.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scroll-state/scroll-state-target-query-change.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scrollbar-container-units-block.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/scrollbar-container-units-inline.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/sibling-layout-dependency.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/size-container-auto-height.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/size-container-no-principal-box.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/size-container-with-quotes.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/size-container-writing-mode-change.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/size-feature-evaluation.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/size-query-with-var.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/style-change-in-container.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/style-container-for-shadow-dom.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/style-container-invalidation-inheritance.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/style-not-sharing-float.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/style-query-document-element.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/style-query-no-cycle.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/style-query-registered-custom-rem-change.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/style-query-unset-on-root.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/style-query-with-unknown-width.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/svg-foreignobject-child-container.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/svg-foreignobject-no-size-container.html": {},
@@ -775,16 +928,19 @@
       "https://wpt.fyi/results/css/css-conditional/container-queries/transition-style-change-event-002.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/transition-style-change-event.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/unsupported-axis.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/var-evaluation.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/viewport-units-dynamic.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/viewport-units.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/whitespace-update-after-removal.html": {},
       "https://wpt.fyi/results/css/css-conditional/js/CSS-supports-L5.html": {},
+      "https://wpt.fyi/results/css/css-conditional/js/supports-at-rule.html": {},
       "https://wpt.live/css/css-conditional/container-queries/custom-layout-container-001.https.html": {},
       "https://www.w3.org/2001/tag/doc/unsanctioned-tracking/": {},
       "https://www.w3.org/Style/CSS/Test/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2021/WD-css-conditional-5-20211221/": {},
       "https://www.w3.org/TR/2024/WD-css-conditional-5-20240723/": {},
+      "https://www.w3.org/TR/2024/WD-css-conditional-5-20241105/": {},
       "https://www.w3.org/TR/CSS/": {
         "anchors": [
           "future-proofing",
@@ -792,6 +948,7 @@
           "proprietary-extension"
         ]
       },
+      "https://www.w3.org/TR/CSS2/": {},
       "https://www.w3.org/TR/CSS21/conform.html": {
         "anchors": [
           "style-sheet",
@@ -799,7 +956,6 @@
           "ignore"
         ]
       },
-      "https://www.w3.org/TR/CSS22/": {},
       "https://www.w3.org/TR/css-animations-1/": {},
       "https://www.w3.org/TR/css-box-4/": {},
       "https://www.w3.org/TR/css-cascade-4/": {
@@ -824,7 +980,7 @@
           "changes"
         ]
       },
-      "https://www.w3.org/TR/css-display-3/": {},
+      "https://www.w3.org/TR/css-display-4/": {},
       "https://www.w3.org/TR/css-fonts-4/": {
         "anchors": [
           "font-tech-definitions",
@@ -832,8 +988,10 @@
         ]
       },
       "https://www.w3.org/TR/css-fonts-5/": {},
+      "https://www.w3.org/TR/css-namespaces-3/": {},
       "https://www.w3.org/TR/css-overflow-3/": {},
       "https://www.w3.org/TR/css-position-3/": {},
+      "https://www.w3.org/TR/css-position-4/": {},
       "https://www.w3.org/TR/css-pseudo-4/": {},
       "https://www.w3.org/TR/css-pseudo/": {
         "anchors": [
@@ -841,12 +999,18 @@
         ]
       },
       "https://www.w3.org/TR/css-scoping-1/": {},
+      "https://www.w3.org/TR/css-scroll-snap-1/": {},
       "https://www.w3.org/TR/css-scroll-snap-2/": {},
       "https://www.w3.org/TR/css-shadow-parts-1/": {},
       "https://www.w3.org/TR/css-sizing-3/": {},
       "https://www.w3.org/TR/css-syntax-3/": {},
       "https://www.w3.org/TR/css-transitions-1/": {},
       "https://www.w3.org/TR/css-values-4/": {},
+      "https://www.w3.org/TR/css-values-5/": {
+        "anchors": [
+          "tree-counting"
+        ]
+      },
       "https://www.w3.org/TR/css-values/": {
         "anchors": [
           "value-defs",
@@ -883,7 +1047,7 @@
           "sec-Disclosure"
         ]
       },
-      "https://www.w3.org/policies/process/20231103/": {
+      "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
           "recs-and-notes"
         ]
@@ -895,15 +1059,26 @@
           "cascade-dependent-keyword"
         ]
       },
-      "https://drafts.csswg.org/css-position-4/": {
+      "https://drafts.csswg.org/css-extensions-1/": {
         "anchors": [
-          "selectordef-backdrop"
+          "typedef-extension-name"
+        ]
+      },
+      "https://drafts.csswg.org/css-namespaces-3/": {
+        "anchors": [
+          "at-ruledef-namespace"
         ]
       },
       "https://drafts.csswg.org/css-scoping-1/": {
         "anchors": [
           "flat-tree",
-          "selectordef-slotted"
+          "selectordef-slotted",
+          "css-tree-scoped-name"
+        ]
+      },
+      "https://drafts.csswg.org/css-scroll-snap-1/": {
+        "anchors": [
+          "relative-scroll"
         ]
       },
       "https://drafts.csswg.org/css-syntax-3/": {
@@ -911,19 +1086,14 @@
           "typedef-block-contents"
         ]
       },
-      "https://drafts.csswg.org/css2/": {
-        "anchors": [
-          "propdef-line-height"
-        ]
-      },
-      "https://drafts.csswg.org/cssom-view-1/": {
-        "anchors": [
-          "run-snapshot-post-layout-state-steps"
-        ]
-      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "Exposed"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/visudet.html": {
+        "anchors": [
+          "propdef-line-height"
         ]
       },
       "https://www.w3.org/TR/css-animations-1/": {
@@ -945,14 +1115,14 @@
           "css-property",
           "longhand",
           "valdef-all-revert",
-          "valdef-all-revert-layer"
+          "valdef-all-revert-layer",
+          "at-ruledef-import"
         ]
       },
       "https://www.w3.org/TR/css-conditional-3/": {
         "anchors": [
           "supports-queries",
           "at-ruledef-supports",
-          "typedef-supports-decl",
           "conditional-group-rule",
           "at-ruledef-media",
           "css-feature-queries",
@@ -966,7 +1136,6 @@
       },
       "https://www.w3.org/TR/css-contain-2/": {
         "anchors": [
-          "layout-containment",
           "style-containment",
           "size-containment",
           "layout-containment-box"
@@ -977,20 +1146,21 @@
           "inline-size-containment"
         ]
       },
-      "https://www.w3.org/TR/css-display-3/": {
+      "https://www.w3.org/TR/css-display-4/": {
         "anchors": [
-          "principal-box"
+          "principal-box",
+          "independent-formatting-context"
         ]
       },
       "https://www.w3.org/TR/css-fonts-4/": {
         "anchors": [
+          "font-tech-values",
+          "font-format-values",
           "propdef-font-size"
         ]
       },
       "https://www.w3.org/TR/css-fonts-5/": {
         "anchors": [
-          "font-tech-values",
-          "font-format-values",
           "at-font-face-rule"
         ]
       },
@@ -1000,7 +1170,6 @@
           "scrollport",
           "scrollable-overflow-rectangle",
           "valdef-overflow-hidden",
-          "negative-scrollable-overflow-region",
           "scrollable-overflow"
         ]
       },
@@ -1009,6 +1178,11 @@
           "valdef-position-sticky",
           "sticky-view-rectangle",
           "sticky-position"
+        ]
+      },
+      "https://www.w3.org/TR/css-position-4/": {
+        "anchors": [
+          "selectordef-backdrop"
         ]
       },
       "https://www.w3.org/TR/css-pseudo-4/": {
@@ -1021,6 +1195,11 @@
           "fictional-tag-sequence",
           "selectordef-placeholder",
           "selectordef-file-selector-button"
+        ]
+      },
+      "https://www.w3.org/TR/css-scroll-snap-1/": {
+        "anchors": [
+          "scroll-snap-container"
         ]
       },
       "https://www.w3.org/TR/css-scroll-snap-2/": {
@@ -1043,9 +1222,12 @@
       },
       "https://www.w3.org/TR/css-syntax-3/": {
         "anchors": [
-          "typedef-rule-list",
           "at-rule",
-          "declaration"
+          "typedef-at-keyword-token",
+          "at-ruledef-charset",
+          "typedef-rule-list",
+          "declaration",
+          "typedef-declaration-value"
         ]
       },
       "https://www.w3.org/TR/css-transitions-1/": {
@@ -1063,20 +1245,32 @@
           "mult-one-plus",
           "css-css-identifier",
           "mult-comma",
+          "mult-req",
           "mult-zero-plus",
           "relative-length",
           "em",
           "length-value",
           "ratio-value",
+          "number-value",
+          "percentage-value",
+          "angle-value",
+          "time-value",
+          "frequency-value",
+          "resolution-value",
           "css-wide-keywords",
           "small-viewport-size"
         ]
       },
+      "https://www.w3.org/TR/css-values-5/": {
+        "anchors": [
+          "arbitrary-substitution-function"
+        ]
+      },
       "https://www.w3.org/TR/css-variables-1/": {
         "anchors": [
+          "typedef-custom-property-name",
           "custom-property",
-          "funcdef-var",
-          "typedef-custom-property-name"
+          "funcdef-var"
         ]
       },
       "https://www.w3.org/TR/css-writing-modes-4/": {
@@ -1094,11 +1288,13 @@
       "https://www.w3.org/TR/cssom-1/": {
         "anchors": [
           "supported-css-property",
-          "cssomstring"
+          "cssomstring",
+          "cssgroupingrule"
         ]
       },
       "https://www.w3.org/TR/cssom-view-1/": {
         "anchors": [
+          "run-snapshot-post-layout-state-steps",
           "dom-window-matchmedia",
           "mediaquerylist"
         ]
@@ -1110,10 +1306,14 @@
           "typedef-mf-range",
           "media-query",
           "valdef-media-not",
+          "typedef-mf-comparison",
+          "typedef-mf-lt",
+          "typedef-mf-gt",
           "valdef-custom-media-true",
           "valdef-custom-media-false",
           "media-feature",
-          "boolean-context"
+          "boolean-context",
+          "typedef-mf-eq"
         ]
       },
       "https://www.w3.org/TR/selectors-4/": {

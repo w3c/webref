@@ -5,6 +5,29 @@
   },
   "algorithms": [
     {
+      "name": "evaluate a <style-range>",
+      "href": "https://www.w3.org/TR/css-conditional-5/#evaluate-a-style-range",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"evaluate-a-style-range\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">evaluate a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-conditional-5/#typedef-style-range\" id=\"ref-for-typedef-style-range③\">&lt;style-range&gt;</a></dfn>,\n\t\tthe following steps needs to be performed:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-conditional-5/#typedef-style-range-value\" id=\"ref-for-typedef-style-range-value⑨\">&lt;style-range-value&gt;</a> is a <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-variables-1/#typedef-custom-property-name\" id=\"ref-for-typedef-custom-property-name②\">&lt;custom-property-name&gt;</a>,\nit needs to be substituted\nas if the <span class=\"production\" id=\"ref-for-typedef-custom-property-name③\">&lt;custom-property-name&gt;</span> was wrapped inside a <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-variables-1/#funcdef-var\" id=\"ref-for-funcdef-var①\">var()</a>.</p>"
+        },
+        {
+          "html": "<p>Substitute <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-5/#arbitrary-substitution-function\" id=\"ref-for-arbitrary-substitution-function\">arbitrary substitution function</a> within <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-conditional-5/#typedef-style-range-value\" id=\"ref-for-typedef-style-range-value①⓪\">&lt;style-range-value&gt;</a>.</p>"
+        },
+        {
+          "html": "<p>Parse <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-conditional-5/#typedef-style-range-value\" id=\"ref-for-typedef-style-range-value①①\">&lt;style-range-value&gt;</a> to <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#number-value\" id=\"ref-for-number-value\">&lt;number&gt;</a>, <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#percentage-value\" id=\"ref-for-percentage-value\">&lt;percentage&gt;</a>, <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#length-value\" id=\"ref-for-length-value④\" title=\"Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | lvb | lvh | lvi | lvmax | lvmin | lvw | mm | pc | pt | px | rcap | rch | rem | rex | ric | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw\">&lt;length&gt;</a>, <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#angle-value\" id=\"ref-for-angle-value\" title=\"Expands to: deg | grad | rad | turn\">&lt;angle&gt;</a>, <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#time-value\" id=\"ref-for-time-value\" title=\"Expands to: ms | s\">&lt;time&gt;</a>, <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#frequency-value\" id=\"ref-for-frequency-value\">&lt;frequency&gt;</a> or <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#resolution-value\" id=\"ref-for-resolution-value\" title=\"Expands to: dpcm | dpi | dppx | x\">&lt;resolution&gt;</a>.\nIf this cannot be done, evaluate to false.</p>"
+        },
+        {
+          "html": "<p>If each <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-conditional-5/#typedef-style-range-value\" id=\"ref-for-typedef-style-range-value①②\">&lt;style-range-value&gt;</a> from the range have the same type,\ncompute each and evaluate the comparison;\na unitless zero must be treated as being a zero-<a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-values-4/#length-value\" id=\"ref-for-length-value⑤\" title=\"Expands to: advance measure | cap | ch | cm | dvb | dvh | dvi | dvmax | dvmin | dvw | em | ex | ic | in | lh | lvb | lvh | lvi | lvmax | lvmin | lvw | mm | pc | pt | px | rcap | rch | rem | rex | ric | rlh | svb | svh | svi | svmax | svmin | svw | vb | vh | vi | vmax | vmin | vw\">&lt;length&gt;</a> when compared against a <span class=\"production\" id=\"ref-for-length-value⑥\">&lt;length&gt;</span> .</p>"
+        },
+        {
+          "html": "<p>Otherwise evaluate to false.</p>"
+        }
+      ]
+    },
+    {
       "html": "The <code class=\"highlight\">conditionText</code> attribute (defined on the <code class=\"highlight\">CSSConditionRule</code> parent rule),\n\t\t\ton getting, must return a value as follows:",
       "rationale": ".switch",
       "steps": [
@@ -32,7 +55,7 @@
           "steps": [
             {
               "case": "The @container rule has an associated <container-name>",
-              "html": "The result of serializing that <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-conditional-5/#typedef-container-name\" id=\"ref-for-typedef-container-name⑤\">&lt;container-name&gt;</a>."
+              "html": "The result of serializing that <a class=\"production css\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-conditional-5/#typedef-container-name\" id=\"ref-for-typedef-container-name⑥\">&lt;container-name&gt;</a>."
             },
             {
               "case": "Otherwise",
