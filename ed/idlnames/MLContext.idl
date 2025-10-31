@@ -16,5 +16,6 @@ interface MLContext {
 
   undefined destroy();
 
+  readonly attribute boolean accelerated;
   readonly attribute Promise<MLContextLostInfo> lost;
 };

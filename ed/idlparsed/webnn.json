@@ -96,7 +96,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#enumdef-mlpowerpreference"
       },
       "MLContextOptions": {
-        "fragment": "dictionary MLContextOptions {\n  MLPowerPreference powerPreference = \"default\";\n};",
+        "fragment": "dictionary MLContextOptions {\n  MLPowerPreference powerPreference = \"default\";\n  boolean accelerated = true;\n};",
         "type": "dictionary",
         "name": "MLContextOptions",
         "inheritance": null,
@@ -119,6 +119,25 @@
             },
             "required": false,
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontextoptions-powerpreference"
+          },
+          {
+            "type": "field",
+            "name": "accelerated",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": true
+            },
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontextoptions-accelerated"
           }
         ],
         "extAttrs": [],
@@ -305,7 +324,7 @@
         "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlcontextlostinfo"
       },
       "MLContext": {
-        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLContext {\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n  Promise<MLTensor> createConstantTensor(\n    MLOperandDescriptor descriptor, AllowSharedBufferSource inputData);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n\n  undefined destroy();\n\n  readonly attribute Promise<MLContextLostInfo> lost;\n};",
+        "fragment": "[SecureContext, Exposed=(Window, Worker)]\ninterface MLContext {\n  undefined dispatch(MLGraph graph, MLNamedTensors inputs, MLNamedTensors outputs);\n\n  Promise<MLTensor> createTensor(MLTensorDescriptor descriptor);\n  Promise<MLTensor> createConstantTensor(\n    MLOperandDescriptor descriptor, AllowSharedBufferSource inputData);\n\n  Promise<ArrayBuffer> readTensor(MLTensor tensor);\n  Promise<undefined> readTensor(MLTensor tensor, AllowSharedBufferSource outputData);\n\n  undefined writeTensor(MLTensor tensor, AllowSharedBufferSource inputData);\n\n  MLOpSupportLimits opSupportLimits();\n\n  undefined destroy();\n\n  readonly attribute boolean accelerated;\n  readonly attribute Promise<MLContextLostInfo> lost;\n};",
         "type": "interface",
         "name": "MLContext",
         "inheritance": null,
@@ -655,6 +674,22 @@
             "extAttrs": [],
             "special": "",
             "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-destroy"
+          },
+          {
+            "type": "attribute",
+            "name": "accelerated",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webmachinelearning.github.io/webnn/#dom-mlcontext-accelerated"
           },
           {
             "type": "attribute",
