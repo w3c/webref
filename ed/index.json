@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-11-01T12:49:36.578Z",
+  "date": "2025-11-01T18:42:41.323Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -748,7 +748,7 @@
   },
   "stats": {
     "crawled": 716,
-    "errors": 2
+    "errors": 3
   },
   "crawler": "reffy-20.0.1",
   "results": [
@@ -22497,7 +22497,8 @@
       "dfns": "dfns/css-lists-3.json",
       "headings": "headings/css-lists-3.json",
       "ids": "ids/css-lists-3.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.csswg.org/css-lists-3/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 389)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-logical-1/",
@@ -25979,7 +25980,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-variables-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 01 Nov 2025 00:40:27 GMT"
+        "lastModified": "Sat, 01 Nov 2025 00:40:28 GMT"
       },
       "generator": "bikeshed",
       "date": "5 May 2025",
