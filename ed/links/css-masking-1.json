@@ -65,7 +65,6 @@
       "https://drafts.csswg.org/css-color-4/": {},
       "https://drafts.csswg.org/css-display/": {},
       "https://drafts.csswg.org/css-fonts-4/": {},
-      "https://drafts.csswg.org/css-fonts-5/": {},
       "https://drafts.csswg.org/css-images-3/": {},
       "https://drafts.csswg.org/css-images-4/": {},
       "https://drafts.csswg.org/css-inline-3/": {},
@@ -101,7 +100,6 @@
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://svgwg.org/specs/animations/": {},
-      "https://svgwg.org/specs/paths/": {},
       "https://svgwg.org/svg2-draft/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.w3.org/TR/2011/REC-SVG11-20110816/coords.html": {
@@ -224,7 +222,7 @@
           "animation-type"
         ]
       },
-      "https://www.w3.org/policies/process/20231103/": {}
+      "https://www.w3.org/policies/process/20250818/": {}
     },
     "autolinks": {
       "https://drafts.csswg.org/css-backgrounds-3/": {
@@ -233,22 +231,22 @@
           "background-positioning-area",
           "border-image-area",
           "propdef-border-radius",
-          "propdef-background-origin",
-          "typedef-bg-size",
-          "propdef-background-size",
           "propdef-border-image",
           "propdef-border-image-slice",
           "propdef-border-image-width",
           "propdef-border-width",
-          "propdef-border-image-repeat",
-          "propdef-background"
+          "propdef-border-image-repeat"
         ]
       },
       "https://drafts.csswg.org/css-backgrounds-4/": {
         "anchors": [
           "typedef-repeat-style",
           "propdef-background-repeat",
-          "propdef-background-position"
+          "propdef-background-position",
+          "propdef-background-origin",
+          "typedef-bg-size",
+          "propdef-background-size",
+          "propdef-background"
         ]
       },
       "https://drafts.csswg.org/css-box-4/": {
@@ -284,15 +282,11 @@
           "propdef-font",
           "propdef-font-family",
           "propdef-font-size",
+          "propdef-font-size-adjust",
           "propdef-font-stretch",
           "propdef-font-style",
           "propdef-font-variant",
           "propdef-font-weight"
-        ]
-      },
-      "https://drafts.csswg.org/css-fonts-5/": {
-        "anchors": [
-          "propdef-font-size-adjust"
         ]
       },
       "https://drafts.csswg.org/css-images-3/": {
@@ -405,11 +399,6 @@
           "elementdef-set"
         ]
       },
-      "https://svgwg.org/specs/paths/": {
-        "anchors": [
-          "elementdef-path"
-        ]
-      },
       "https://svgwg.org/svg2-draft/coords.html": {
         "anchors": [
           "TermObjectBoundingBox",
@@ -456,6 +445,11 @@
           "StrokeWidthProperty",
           "TextRenderingProperty",
           "elementdef-marker"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/paths.html": {
+        "anchors": [
+          "elementdef-path"
         ]
       },
       "https://svgwg.org/svg2-draft/pservers.html": {
@@ -526,6 +520,35 @@
       "https://www.w3.org/TR/CSS2/visuren.html": {
         "anchors": [
           "x43"
+        ]
+      },
+      "https://www.w3.org/TR/SVG11/color.html": {
+        "anchors": [
+          "ColorProfileProperty",
+          "ColorProfileElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG11/filters.html": {
+        "anchors": [
+          "EnableBackgroundProperty"
+        ]
+      },
+      "https://www.w3.org/TR/SVG11/fonts.html": {
+        "anchors": [
+          "FontElement",
+          "FontFaceElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG11/interact.html": {
+        "anchors": [
+          "CursorElement"
+        ]
+      },
+      "https://www.w3.org/TR/SVG11/text.html": {
+        "anchors": [
+          "GlyphOrientationHorizontalProperty",
+          "KerningProperty",
+          "AltGlyphDefElement"
         ]
       },
       "https://www.w3.org/TR/SVG2/painting.html": {
