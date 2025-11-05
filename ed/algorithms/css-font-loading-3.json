@@ -87,7 +87,7 @@
           "html": "Otherwise,\n\t\t\tset <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-font-loading-3/#dom-fontface-status\" id=\"ref-for-dom-fontface-status⑧\">status</a></code> attribute to \"loading\",\n\t\t\treturn <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-font-loading-3/#dom-fontface-fontstatuspromise-slot\" id=\"ref-for-dom-fontface-fontstatuspromise-slot⑥\">[[FontStatusPromise]]</a></code>,\n\t\t\tand continue executing the rest of this algorithm asynchronously."
         },
         {
-          "html": "Using the value of <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-font-loading-3/#dom-fontface-urls-slot\" id=\"ref-for-dom-fontface-urls-slot②\">[[Urls]]</a></code> slot,\n\t\t\tattempt to load a font as defined in <a data-link-type=\"biblio\" href=\"https://drafts.csswg.org/css-font-loading-3/#biblio-css-fonts-3\" title=\"CSS Fonts Module Level 3\">[CSS-FONTS-3]</a>,\n\t\t\tas if it was the value of a <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-5/#at-font-face-rule\" id=\"ref-for-at-font-face-rule⑨\">@font-face</a> rule’s <a class=\"property css\" data-link-type=\"property\">src</a> descriptor."
+          "html": "Using the value of <var>font face’s</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-font-loading-3/#dom-fontface-urls-slot\" id=\"ref-for-dom-fontface-urls-slot②\">[[Urls]]</a></code> slot,\n\t\t\tattempt to load a font as defined in <a data-link-type=\"biblio\" href=\"https://drafts.csswg.org/css-font-loading-3/#biblio-css-fonts-3\" title=\"CSS Fonts Module Level 3\">[CSS-FONTS-3]</a>,\n\t\t\tas if it was the value of a <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-5/#at-font-face-rule\" id=\"ref-for-at-font-face-rule⑨\">@font-face</a> rule’s <a class=\"css property\" data-link-type=\"property\">src</a> descriptor."
         },
         {
           "html": "When the load operation completes,\n\t\t\tsuccessfully or not,\n\t\t\tqueue a task to run the following steps synchronously:",
@@ -160,7 +160,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>font</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-font-loading-3/#css-connected\" id=\"ref-for-css-connected⑦\">CSS-connected</a>,\nreturn <code class=\"lang-javascript highlight\"><c- kc=\"\">false</c-></code>\nand exit this algorithm immediately.</p>"
+          "html": "<p>If <var>font</var> is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-font-loading-3/#css-connected\" id=\"ref-for-css-connected⑦\">CSS-connected</a>,\nreturn <code class=\"highlight lang-javascript\"><c- kc=\"\">false</c-></code>\nand exit this algorithm immediately.</p>"
         },
         {
           "html": "<p>Let <var>deleted</var> be the result of removing <var>font</var> from the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-font-loading-3/#fontfaceset\" id=\"ref-for-fontfaceset②⑥\">FontFaceSet</a></code>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-font-loading-3/#fontfaceset-set-entries\" id=\"ref-for-fontfaceset-set-entries②\">set entries</a>.</p>"
@@ -270,7 +270,7 @@
       "rationale": "parse",
       "steps": [
         {
-          "html": "Parse <var>font</var>\n\t\t\tusing the CSS value syntax of the <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font\" id=\"ref-for-propdef-font\">font</a> property.\n\t\t\tIf a syntax error occurs,\n\t\t\treturn a syntax error.\n\n\n     <p>If the parsed value is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#css-wide-keywords\" id=\"ref-for-css-wide-keywords\">CSS-wide keyword</a>,\n\t\t\treturn a syntax error.</p>\n     <p>Absolutize all relative lengths against the initial values of the corresponding properties.\n\t\t\t(For example, a relative font weight like <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-bolder\" id=\"ref-for-valdef-font-weight-bolder\">bolder</a> is evaluated against the initial value <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-normal\" id=\"ref-for-valdef-font-weight-normal\">normal</a>.)</p>"
+          "html": "Parse <var>font</var>\n\t\t\tusing the CSS value syntax of the <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-fonts-4/#propdef-font\" id=\"ref-for-propdef-font\">font</a> property.\n\t\t\tIf a syntax error occurs,\n\t\t\treturn a syntax error.\n\n\n     <p>If the parsed value is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#css-wide-keywords\" id=\"ref-for-css-wide-keywords\">CSS-wide keyword</a>,\n\t\t\treturn a syntax error.</p>\n     <p>Absolutize all relative lengths against the initial values of the corresponding properties.\n\t\t\t(For example, a relative font weight like <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-bolder\" id=\"ref-for-valdef-font-weight-bolder\">bolder</a> is evaluated against the initial value <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-normal\" id=\"ref-for-valdef-font-weight-normal\">normal</a>.)</p>"
         },
         {
           "html": "If <var>text</var> was not explicitly provided,\n\t\t\tlet it be a string containing a single space character (U+0020 SPACE)."
@@ -291,7 +291,7 @@
           "html": "If <var>matched font faces</var> is empty,\n\t\t\tset the <var>found faces</var> flag to false.\n\t\t\tOtherwise, set it to true."
         },
         {
-          "html": "For each font face in <var>matched font faces</var>,\n\t\t\tif its defined <a class=\"property css\" data-link-type=\"descriptor\" href=\"https://drafts.csswg.org/css-fonts-4/#descdef-font-face-unicode-range\" id=\"ref-for-descdef-font-face-unicode-range\">unicode-range</a> does not include the codepoint of at least one character in <var>text</var>,\n\t\t\tremove it from the list."
+          "html": "For each font face in <var>matched font faces</var>,\n\t\t\tif its defined <a class=\"css property\" data-link-type=\"descriptor\" href=\"https://drafts.csswg.org/css-fonts-4/#descdef-font-face-unicode-range\" id=\"ref-for-descdef-font-face-unicode-range\">unicode-range</a> does not include the codepoint of at least one character in <var>text</var>,\n\t\t\tremove it from the list."
         },
         {
           "html": "Return <var>matched font faces</var> and the <var>found faces</var> flag."

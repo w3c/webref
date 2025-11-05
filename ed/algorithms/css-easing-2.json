@@ -48,13 +48,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>s</var> be the serialization,\nas a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value③\">&lt;number&gt;</a>,\nof the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point①⑤\">control point’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#easing-function-output-progress-value\" id=\"ref-for-easing-function-output-progress-value⑥\">output progress value</a>.</p>"
+          "html": "<p>Let <var>s</var> be the serialization,\nas a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value③\">&lt;number&gt;</a>,\nof the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point①⑤\">control point’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#easing-function-output-progress-value\" id=\"ref-for-easing-function-output-progress-value⑥\">output progress value</a>.</p>"
         },
         {
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point①⑥\">control point</a> originally lacked an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#easing-function-input-progress-value\" id=\"ref-for-easing-function-input-progress-value②⓪\">input progress value</a>,\nreturn <var>s</var>.</p>"
         },
         {
-          "html": "<p>Otherwise, append \" \" (U+0020 SPACE) to <var>s</var>,\nthen serialize the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point①⑦\">control point’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#easing-function-input-progress-value\" id=\"ref-for-easing-function-input-progress-value②①\">input progress value</a>\nas a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#percentage-value\" id=\"ref-for-percentage-value⑤\">&lt;percentage&gt;</a>\nand append it to <var>s</var>.</p>"
+          "html": "<p>Otherwise, append \" \" (U+0020 SPACE) to <var>s</var>,\nthen serialize the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#linear-control-point\" id=\"ref-for-linear-control-point①⑦\">control point’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-easing-2/#easing-function-input-progress-value\" id=\"ref-for-easing-function-input-progress-value②①\">input progress value</a>\nas a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#percentage-value\" id=\"ref-for-percentage-value⑤\">&lt;percentage&gt;</a>\nand append it to <var>s</var>.</p>"
         },
         {
           "html": "<p>Return <var>s</var>.</p>"
@@ -109,7 +109,7 @@
           "html": "<p>Let <var>s</var> be the string \"cubic-bezier(\".</p>"
         },
         {
-          "html": "<p>Serialize the function’s four arguments as <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value⑥\">&lt;number&gt;</a>s,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate①\">concatenate</a> the results using the separator \", \",\nand append the result to <var>s</var>.</p>"
+          "html": "<p>Serialize the function’s four arguments as <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value⑥\">&lt;number&gt;</a>s,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-concatenate\" id=\"ref-for-string-concatenate①\">concatenate</a> the results using the separator \", \",\nand append the result to <var>s</var>.</p>"
         },
         {
           "html": "<p>Append \")\" to <var>s</var>, and return it.</p>"

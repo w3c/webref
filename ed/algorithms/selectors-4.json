@@ -11,10 +11,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-a-comma-separated-list-according-to-a-css-grammar\" id=\"ref-for-css-parse-a-comma-separated-list-according-to-a-css-grammar\">Parse a list</a> of <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/selectors-4/#typedef-complex-real-selector\" id=\"ref-for-typedef-complex-real-selector②\">&lt;complex-real-selector&gt;</a>s from <var>input</var>,\nand let <var>selector list</var> be the result.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-a-comma-separated-list-according-to-a-css-grammar\" id=\"ref-for-css-parse-a-comma-separated-list-according-to-a-css-grammar\">Parse a list</a> of <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/selectors-4/#typedef-complex-real-selector\" id=\"ref-for-typedef-complex-real-selector②\">&lt;complex-real-selector&gt;</a>s from <var>input</var>,\nand let <var>selector list</var> be the result.</p>"
         },
         {
-          "html": "<p>Remove all failure items from <var>selector list</var>,\nand all items that are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#invalid-selector\" id=\"ref-for-invalid-selector④\">invalid selectors</a>,\nthen return a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/selectors-4/#typedef-selector-list\" id=\"ref-for-typedef-selector-list\">&lt;selector-list&gt;</a>\nrepresenting the remaining items in <var>selector list</var>.\n(This might be empty.)</p>"
+          "html": "<p>Remove all failure items from <var>selector list</var>,\nand all items that are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#invalid-selector\" id=\"ref-for-invalid-selector④\">invalid selectors</a>,\nthen return a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/selectors-4/#typedef-selector-list\" id=\"ref-for-typedef-selector-list\">&lt;selector-list&gt;</a>\nrepresenting the remaining items in <var>selector list</var>.\n(This might be empty.)</p>"
         }
       ]
     },
@@ -25,7 +25,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>selector</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar①\">parsing</a> <var>source</var> as a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/selectors-4/#typedef-selector-list\" id=\"ref-for-typedef-selector-list①\">&lt;selector-list&gt;</a>.\n\t\t\tIf this returns failure,\n\t\t\tit’s an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#invalid-selector\" id=\"ref-for-invalid-selector⑥\">invalid selector</a>;\n\t\t\treturn failure."
+          "html": "Let <var>selector</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar①\">parsing</a> <var>source</var> as a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/selectors-4/#typedef-selector-list\" id=\"ref-for-typedef-selector-list①\">&lt;selector-list&gt;</a>.\n\t\t\tIf this returns failure,\n\t\t\tit’s an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#invalid-selector\" id=\"ref-for-invalid-selector⑥\">invalid selector</a>;\n\t\t\treturn failure."
         },
         {
           "html": "If <var>selector</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#invalid-selector\" id=\"ref-for-invalid-selector⑦\">invalid selector</a> for any other reason\n\t\t\t(such as, for example, containing an undeclared namespace prefix),\n\t\t\treturn failure."
@@ -42,7 +42,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>selector</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar②\">parsing</a> <var>source</var> as a <a class=\"production css\" data-link-type=\"type\" href=\"https://drafts.csswg.org/selectors-4/#typedef-relative-selector-list\" id=\"ref-for-typedef-relative-selector-list③\">&lt;relative-selector-list&gt;</a>.\n\t\t\tIf this returns failure,\n\t\t\tit’s an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#invalid-selector\" id=\"ref-for-invalid-selector⑧\">invalid selector</a>;\n\t\t\treturn failure."
+          "html": "Let <var>selector</var> be the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar\" id=\"ref-for-css-parse-something-according-to-a-css-grammar②\">parsing</a> <var>source</var> as a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/selectors-4/#typedef-relative-selector-list\" id=\"ref-for-typedef-relative-selector-list③\">&lt;relative-selector-list&gt;</a>.\n\t\t\tIf this returns failure,\n\t\t\tit’s an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#invalid-selector\" id=\"ref-for-invalid-selector⑧\">invalid selector</a>;\n\t\t\treturn failure."
         },
         {
           "html": "If <var>selector</var> is an <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#invalid-selector\" id=\"ref-for-invalid-selector⑨\">invalid selector</a> for any other reason\n\t\t\t(such as, for example, containing an undeclared namespace prefix),\n\t\t\treturn failure."

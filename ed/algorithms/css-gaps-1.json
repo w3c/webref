@@ -11,7 +11,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>pairs</var> be an empty list.\n\t\t\t\tLet <var>endpoints</var> be the list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap-intersection-point\" id=\"ref-for-gap-intersection-point①③\">gap intersection points</a> that fall along the centerline of <var>gap</var>,\n\t\t\t\tordered from start to end along <var>gap</var>’s axis.\n\t\t\t\tLet <var>break</var> be the used value of either <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-break\" id=\"ref-for-propdef-column-rule-break④\">column-rule-break</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-break\" id=\"ref-for-propdef-row-rule-break③\">row-rule-break</a>,\n\t\t\t\twhichever applies to <var>gap</var>."
+          "html": "Let <var>pairs</var> be an empty list.\n\t\t\t\tLet <var>endpoints</var> be the list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap-intersection-point\" id=\"ref-for-gap-intersection-point①③\">gap intersection points</a> that fall along the centerline of <var>gap</var>,\n\t\t\t\tordered from start to end along <var>gap</var>’s axis.\n\t\t\t\tLet <var>break</var> be the used value of either <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-break\" id=\"ref-for-propdef-column-rule-break④\">column-rule-break</a> or <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-break\" id=\"ref-for-propdef-row-rule-break③\">row-rule-break</a>,\n\t\t\t\twhichever applies to <var>gap</var>."
         },
         {
           "html": "If <var>endpoints</var> contains fewer than 2 items, return <var>pairs</var>."
@@ -55,7 +55,7 @@
           "html": "Let <var>width</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#crossing-gap-width\" id=\"ref-for-crossing-gap-width④\">crossing gap width</a> for <var>point</var>."
         },
         {
-          "html": "Let <var>outset</var> be the computed value of either <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-outset\" id=\"ref-for-propdef-column-rule-outset④\">column-rule-outset</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-outset\" id=\"ref-for-propdef-row-rule-outset③\">row-rule-outset</a>,\n\t\t\t\twhichever applies to <var>gap</var>.\n\t\t\t\tResolve any percentages in <var>outset</var> against <var>width</var>."
+          "html": "Let <var>outset</var> be the computed value of either <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-outset\" id=\"ref-for-propdef-column-rule-outset④\">column-rule-outset</a> or <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-outset\" id=\"ref-for-propdef-row-rule-outset③\">row-rule-outset</a>,\n\t\t\t\twhichever applies to <var>gap</var>.\n\t\t\t\tResolve any percentages in <var>outset</var> against <var>width</var>."
         },
         {
           "html": "Let <var>result</var> be <var>width</var> multiplied by 50%.\n\t\t\t\tSubtract <var>outset</var> from <var>result</var>."
