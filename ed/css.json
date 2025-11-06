@@ -2289,7 +2289,7 @@
         "webkitAlignItems"
       ],
       "extended": [],
-      "syntax": "normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ] | anchor-center | dialog"
+      "syntax": "normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-center"
     },
     {
       "name": "-webkit-align-self",
@@ -2301,7 +2301,7 @@
         "webkitAlignSelf"
       ],
       "extended": [],
-      "syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-center | dialog"
+      "syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-center"
     },
     {
       "name": "-webkit-animation",
@@ -3177,7 +3177,7 @@
         "align-items",
         "alignItems"
       ],
-      "syntax": "normal | stretch | <baseline-position> | [ <overflow-position>? <self-position> ] | anchor-center | dialog",
+      "syntax": "normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-center",
       "extended": [
         "https://drafts.csswg.org/css-anchor-position-1/"
       ]
@@ -3196,7 +3196,7 @@
         "align-self",
         "alignSelf"
       ],
-      "syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-center | dialog",
+      "syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-center",
       "extended": [
         "https://drafts.csswg.org/css-anchor-position-1/"
       ]
@@ -9322,7 +9322,7 @@
         "justify-items",
         "justifyItems"
       ],
-      "syntax": "normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | legacy | legacy && [ left | right | center ] | anchor-center | dialog",
+      "syntax": "normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | legacy | legacy && [ left | right | center ] | anchor-center",
       "extended": [
         "https://drafts.csswg.org/css-anchor-position-1/"
       ]
@@ -9341,7 +9341,7 @@
         "justify-self",
         "justifySelf"
       ],
-      "syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | anchor-center | dialog",
+      "syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | anchor-center",
       "extended": [
         "https://drafts.csswg.org/css-anchor-position-1/"
       ]
@@ -19317,7 +19317,7 @@
       ],
       "name": "try-tactic",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-position-try-fallbacks-try-tactic",
-      "syntax": "flip-block || flip-inline || flip-start",
+      "syntax": "flip-block || flip-inline || flip-start || flip-x || flip-y",
       "extended": []
     },
     {
