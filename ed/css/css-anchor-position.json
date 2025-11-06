@@ -169,21 +169,14 @@
     },
     {
       "name": "justify-self",
-      "newValues": "anchor-center | dialog",
+      "newValues": "anchor-center",
       "values": [
         {
           "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis. Additionally:",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
-        },
-        {
-          "name": "dialog",
-          "prose": "The new dialog value allows this behavior to be specified: if the box is absolutely positioned and its position-area value is not none, it is aligned as per normal (see § 4.1 Area-specific Default Alignment); otherwise, it is aligned as per center.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-dialog",
-          "type": "value",
-          "value": "dialog"
         }
       ],
       "styleDeclaration": [
@@ -193,21 +186,14 @@
     },
     {
       "name": "align-self",
-      "newValues": "anchor-center | dialog",
+      "newValues": "anchor-center",
       "values": [
         {
           "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis. Additionally:",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
-        },
-        {
-          "name": "dialog",
-          "prose": "The new dialog value allows this behavior to be specified: if the box is absolutely positioned and its position-area value is not none, it is aligned as per normal (see § 4.1 Area-specific Default Alignment); otherwise, it is aligned as per center.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-dialog",
-          "type": "value",
-          "value": "dialog"
         }
       ],
       "styleDeclaration": [
@@ -217,21 +203,14 @@
     },
     {
       "name": "justify-items",
-      "newValues": "anchor-center | dialog",
+      "newValues": "anchor-center",
       "values": [
         {
           "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis. Additionally:",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
-        },
-        {
-          "name": "dialog",
-          "prose": "The new dialog value allows this behavior to be specified: if the box is absolutely positioned and its position-area value is not none, it is aligned as per normal (see § 4.1 Area-specific Default Alignment); otherwise, it is aligned as per center.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-dialog",
-          "type": "value",
-          "value": "dialog"
         }
       ],
       "styleDeclaration": [
@@ -241,21 +220,14 @@
     },
     {
       "name": "align-items",
-      "newValues": "anchor-center | dialog",
+      "newValues": "anchor-center",
       "values": [
         {
           "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis. Additionally:",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
-        },
-        {
-          "name": "dialog",
-          "prose": "The new dialog value allows this behavior to be specified: if the box is absolutely positioned and its position-area value is not none, it is aligned as per normal (see § 4.1 Area-specific Default Alignment); otherwise, it is aligned as per center.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-justify-self-dialog",
-          "type": "value",
-          "value": "dialog"
         }
       ],
       "styleDeclaration": [
@@ -369,7 +341,7 @@
         },
         {
           "name": "<try-tactic>",
-          "value": "flip-block || flip-inline || flip-start",
+          "value": "flip-block || flip-inline || flip-start || flip-x || flip-y",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-try-tactic",
           "type": "value"
         },
@@ -377,7 +349,7 @@
           "name": "<try-tactic>",
           "href": "https://drafts.csswg.org/css-anchor-position-1/#typedef-position-try-fallbacks-try-tactic",
           "type": "type",
-          "value": "flip-block || flip-inline || flip-start"
+          "value": "flip-block || flip-inline || flip-start || flip-x || flip-y"
         },
         {
           "name": "flip-block",
@@ -392,6 +364,20 @@
           "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-flip-inline",
           "type": "value",
           "value": "flip-inline"
+        },
+        {
+          "name": "flip-x",
+          "prose": "swaps the values in the horizontal axis (between, for example, margin-left and margin-right), essentially mirroring across a vertical-axis line.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-flip-x",
+          "type": "value",
+          "value": "flip-x"
+        },
+        {
+          "name": "flip-y",
+          "prose": "swaps the values in the vertical axis, essentially mirroring across a horizontal-axis line.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-try-fallbacks-flip-y",
+          "type": "value",
+          "value": "flip-y"
         },
         {
           "name": "flip-start",
