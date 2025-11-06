@@ -258,6 +258,20 @@
           "href": "https://drafts.csswg.org/css-backgrounds-4/#valdef-background-repeat-repeat-y",
           "type": "value",
           "value": "repeat-y"
+        },
+        {
+          "name": "repeat-block",
+          "prose": "Computes to repeat in the block axis and no-repeat in the inline axis.",
+          "href": "https://drafts.csswg.org/css-backgrounds-4/#valdef-background-repeat-repeat-block",
+          "type": "value",
+          "value": "repeat-block"
+        },
+        {
+          "name": "repeat-inline",
+          "prose": "Computes to repeat in the inline axis and no-repeat in the block axis.",
+          "href": "https://drafts.csswg.org/css-backgrounds-4/#valdef-background-repeat-repeat-inline",
+          "type": "value",
+          "value": "repeat-inline"
         }
       ],
       "styleDeclaration": [
@@ -591,7 +605,7 @@
       "name": "<repeat-style>",
       "href": "https://drafts.csswg.org/css-backgrounds-4/#typedef-repeat-style",
       "type": "type",
-      "value": "repeat-x | repeat-y | <repetition>{1,2}"
+      "value": "repeat-x | repeat-y | repeat-block | repeat-inline | <repetition>{1,2}"
     },
     {
       "name": "<attachment>",
