@@ -664,7 +664,7 @@
               "html": "<p>Let <var>sourceToValidate</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript②\">TrustedScript</a></code> object created in <var>realm</var>\n  whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript-data\" id=\"ref-for-trustedscript-data②\">data</a> is set to <var>codeString</var> if <var>isTrusted</var> is <code>true</code>, and\n  <var>codeString</var> otherwise.</p>"
             },
             {
-              "html": "<p>Let <var>sourceString</var> be the result of executing the <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-get-trusted-type-compliant-string\" id=\"ref-for-abstract-opdef-get-trusted-type-compliant-string\">Get Trusted Type compliant string</a> algorithm, with\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript③\">TrustedScript</a></code>, <var>realm</var>, <var>sourceToValidate</var>, <var>compilationSink</var>, and <code>'script'</code>.</p>"
+              "html": "<p>Let <var>sourceString</var> be the result of executing the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#get-trusted-type-compliant-string\" id=\"ref-for-get-trusted-type-compliant-string\">get trusted type compliant string</a> algorithm, with\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/trusted-types/#trustedscript\" id=\"ref-for-trustedscript③\">TrustedScript</a></code>, <var>realm</var>, <var>sourceToValidate</var>, <var>compilationSink</var>, and <code>'script'</code>.</p>"
             },
             {
               "html": "<p>If the algorithm throws an error, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-evalerror\" id=\"ref-for-exceptiondef-evalerror\">EvalError</a></code>.</p>"
@@ -695,7 +695,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>trustedTypesRequired</var> be the result of executing <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/trusted-types/#abstract-opdef-does-sink-type-require-trusted-types\" id=\"ref-for-abstract-opdef-does-sink-type-require-trusted-types\">Does sink type require trusted types?</a>, with\n  <var>realm</var>, <code>'script'</code>, and <code>false</code>.</p>"
+                  "html": "<p>Let <var>trustedTypesRequired</var> be the result of executing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#does-sink-type-require-trusted-types\" id=\"ref-for-does-sink-type-require-trusted-types\">does sink type require trusted types?</a>, with\n  <var>realm</var>, <code>'script'</code>, and <code>false</code>.</p>"
                 },
                 {
                   "html": "<p>If <var>trustedTypesRequired</var> is <code>true</code> and <var>source-list</var> contains a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-expression\" id=\"ref-for-source-expression②\">source expression</a> which is an\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①\">ASCII case-insensitive</a> match for the string \"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/CSP3/#grammardef-trusted-types-eval\" id=\"ref-for-grammardef-trusted-types-eval\"><code>'trusted-types-eval'</code></a>\", then skip the\n  following steps.</p>"
@@ -2238,6 +2238,15 @@
               "rationale": "if",
               "steps": [
                 {
+                  "html": "If <var>expression</var> is the \"<a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/CSP3/#grammardef-strict-dynamic\" id=\"ref-for-grammardef-strict-dynamic⑤\"><code>'strict-dynamic'</code></a>\" <a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/CSP3/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source⑦\">keyword-source</a>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>type</var> is \"<code>script</code>\", and <var>element</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#parser-inserted\" id=\"ref-for-parser-inserted③\">parser-inserted</a>, return \"<code>Matches</code>\".</p>"
+                    }
+                  ]
+                },
+                {
                   "html": "If <var>expression</var> matches the <a data-link-type=\"grammar\" href=\"https://www.w3.org/TR/CSP3/#grammardef-hash-source\" id=\"ref-for-grammardef-hash-source⑦\"><code>hash-source</code></a> grammar:",
                   "rationale": "let",
                   "steps": [
@@ -2273,13 +2282,7 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①⓪\">Element</a></code> <var>element</var>, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#source-lists\" id=\"ref-for-source-lists②③\">source list</a> <var>list</var>, a string\n  <var>type</var>, and a string <var>source</var>, this algorithm returns \"<code>Matches</code>\" or\n  \"<code>Does Not Match</code>\".",
-      "rationale": "return",
-      "steps": [
+        },
         {
           "html": "<p>Return \"<code>Does Not Match</code>\".</p>"
         }
