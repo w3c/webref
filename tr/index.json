@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-11-08T01:36:12.864Z",
+  "date": "2025-11-09T01:37:34.999Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -740,7 +740,7 @@
   },
   "stats": {
     "crawled": 397,
-    "errors": 0
+    "errors": 2
   },
   "crawler": "reffy-20.0.1",
   "results": [
@@ -788,7 +788,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "8 November 2025",
+      "date": "9 November 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -10769,11 +10769,11 @@
       ],
       "crawled": "https://www.w3.org/TR/digital-credentials/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 11 Oct 2025 07:34:17 GMT"
+        "lastModified": "Sat, 08 Nov 2025 22:51:31 GMT"
       },
       "generator": "respec",
-      "date": "11 October 2025",
-      "revision": "5de949ce9872f8bd6348d4416343802bd0444be9",
+      "date": "08 November 2025",
+      "revision": "cb6b3e9604c372956717f95c66f1103a93b18ccd",
       "algorithms": "algorithms/digital-credentials.json",
       "links": "links/digital-credentials.json",
       "refs": "refs/digital-credentials.json",
@@ -23600,7 +23600,8 @@
       "dfns": "dfns/webcodecs-opus-codec-registration.json",
       "headings": "headings/webcodecs-opus-codec-registration.json",
       "ids": "ids/webcodecs-opus-codec-registration.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/webcodecs-opus-codec-registration/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 357)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/webcodecs-pcm-codec-registration/",
@@ -23656,7 +23657,8 @@
       "refs": "refs/webcodecs-pcm-codec-registration.json",
       "headings": "headings/webcodecs-pcm-codec-registration.json",
       "ids": "ids/webcodecs-pcm-codec-registration.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/webcodecs-pcm-codec-registration/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 358)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/webcodecs-ulaw-codec-registration/",
