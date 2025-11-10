@@ -286,7 +286,7 @@
           "html": "<p>Let <var>session response</var> be null. If <var>challenge</var> or <var>authorization</var> is\n non-null, let <var>session response</var> be the result of creating a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#dbsc-proof\" id=\"ref-for-dbsc-proof①\">DBSC proof</a>\n for <var>challenge</var> and <var>authorization</var>.</p>"
         },
         {
-          "html": "<p>If <var>key pair</var> and <var>session response</var> are non-null, sign <var>session response</var>\n with <var>key pair</var>.</p>"
+          "html": "<p>If <var>key pair</var> and <var>session response</var> are non-null, sign <var>session response</var>\n with <var>key pair</var>. The user agent MAY reuse cached results from a previous signing\n if all inputs are the same instead of resigning.</p>"
         },
         {
           "html": "<p>Create a <var>request</var> for use in <a href=\"https://fetch.spec.whatwg.org/#http-fetch\">HTTP fetch</a>.</p>"
