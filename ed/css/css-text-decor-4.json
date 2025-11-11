@@ -253,8 +253,8 @@
       ]
     },
     {
-      "name": "text-decoration-trim",
-      "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration-trim",
+      "name": "text-decoration-inset",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration-inset",
       "value": "<length>{1,2} | auto",
       "initial": "0",
       "appliesTo": "all elements",
@@ -263,9 +263,25 @@
       "computedValue": "specified keyword or absolute length",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "values": [
+        {
+          "name": "<length>",
+          "prose": "Adjusts the start or end endpoint of the affected line decorations. Positive values move the endpoint inward (trimming), negative values move it outward (extending). The following example offsets an extra thick underline 1em endwards with respect to the text h1 { text-decoration: underline 0.3em rgba(36,148,187,0.25); text-decoration-inset: 1em -1em; }",
+          "href": "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-inset-length",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
+          "name": "auto",
+          "prose": "The UA chooses an inset amount that ensures that if two identical underlined elements appear side-by-side they do not appear to have a single underline. (This is important in Chinese, where underlining is a form of punctuation.) text-decoration-inset: auto for <u>石井</u><u>艾俐俐</u>",
+          "href": "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-inset-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
       "styleDeclaration": [
-        "text-decoration-trim",
-        "textDecorationTrim"
+        "text-decoration-inset",
+        "textDecorationInset"
       ]
     },
     {
@@ -282,14 +298,14 @@
       "values": [
         {
           "name": "none",
-          "prose": "The text-decoration-skip property and its sub-properties (text-decoration-skip-self, text-decoration-skip-box, text-decoration-skip-inset, text-decoration-skip-spaces, text-decoration-skip-ink) control interruptions in line decorations for which the element or an ancestor is the decorating box. The none value sets all sub-properties to none, and the auto value sets all sub-properties to their initial values.",
+          "prose": "The text-decoration-skip property and its sub-properties (text-decoration-skip-self, text-decoration-skip-box, text-decoration-skip-spaces, text-decoration-skip-ink) control interruptions in line decorations for which the element or an ancestor is the decorating box. The none value sets all sub-properties to none, and the auto value sets all sub-properties to their initial values.",
           "href": "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-skip-none",
           "type": "value",
           "value": "none"
         },
         {
           "name": "auto",
-          "prose": "The text-decoration-skip property and its sub-properties (text-decoration-skip-self, text-decoration-skip-box, text-decoration-skip-inset, text-decoration-skip-spaces, text-decoration-skip-ink) control interruptions in line decorations for which the element or an ancestor is the decorating box. The none value sets all sub-properties to none, and the auto value sets all sub-properties to their initial values.",
+          "prose": "The text-decoration-skip property and its sub-properties (text-decoration-skip-self, text-decoration-skip-box, text-decoration-skip-spaces, text-decoration-skip-ink) control interruptions in line decorations for which the element or an ancestor is the decorating box. The none value sets all sub-properties to none, and the auto value sets all sub-properties to their initial values.",
           "href": "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-skip-auto",
           "type": "value",
           "value": "auto"
@@ -696,24 +712,6 @@
   "selectors": [],
   "values": [],
   "warnings": [
-    {
-      "msg": "Dangling value",
-      "name": "<length>",
-      "prose": "Inset (positive) or outset (negative) the start/end of the affected line decorations. The following example offsets an extra thick underline 1em endwards with respect to the text h1 { text-decoration: underline 0.3em rgba(36,148,187,0.25); text-decoration-trim: 1em -1em; }",
-      "href": "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-skip-inset-length",
-      "type": "value",
-      "value": "<length>",
-      "for": "text-decoration-skip-inset"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "auto",
-      "prose": "The UA chooses a trim amount that ensures that if two identical underlined elements appear side-by-side they do not appear to have a single underline. (This is important in Chinese, where underlining is a form of punctuation.) text-decoration-skip-inset: auto for <u>石井</u><u>艾俐俐</u>",
-      "href": "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-skip-inset-auto",
-      "type": "value",
-      "value": "auto",
-      "for": "text-decoration-skip-inset"
-    },
     {
       "msg": "Dangling value",
       "name": "open",
