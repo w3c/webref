@@ -1541,7 +1541,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>itemB</var>[\"namespace\"] is not null, return true.</p>"
+              "html": "<p>If <var>itemB</var>[\"namespace\"] is not null, then return true.</p>"
             }
           ]
         },
@@ -1550,15 +1550,18 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>itemB</var>[\"namespace\"] is null, return false.</p>"
+              "html": "<p>If <var>itemB</var>[\"namespace\"] is null, then return false.</p>"
             },
             {
-              "html": "<p>If <var>itemA</var>[\"namespace\"] is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit-less-than\" id=\"ref-for-code-unit-less-than\">code unit less than</a> <var>itemB</var>[\"namespace\"], return true.</p>"
+              "html": "<p>If <var>itemA</var>[\"namespace\"] is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit-less-than\" id=\"ref-for-code-unit-less-than\">code unit less than</a> <var>itemB</var>[\"namespace\"], then return true.</p>"
+            },
+            {
+              "html": "<p>If <var>itemA</var>[\"namespace\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is①③\">is</a> not <var>itemB</var>[\"namespace\"], then return false.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return <var>itemA</var>[\"name\"] is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit-less-than\" id=\"ref-for-code-unit-less-than①\">code unit less than</a><var>itemB</var>[\"name\"].</p>"
+          "html": "<p>Return <var>itemA</var>[\"name\"] is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit-less-than\" id=\"ref-for-code-unit-less-than①\">code unit less than</a> <var>itemB</var>[\"name\"].</p>"
         }
       ]
     },
