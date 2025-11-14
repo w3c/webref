@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Service Workers",
+    "title": "Service Workers Nightly",
     "url": "https://www.w3.org/TR/service-workers/"
   },
   "dfns": [
@@ -556,6 +556,94 @@
       "href": "https://www.w3.org/TR/service-workers/#service-worker-timing-info-fetch-event-dispatch-time",
       "linkingText": [
         "fetch event dispatch time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker timing info"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "service-worker-timing",
+        "href": "https://www.w3.org/TR/service-workers/#service-worker-timing",
+        "title": "Service Worker Timing",
+        "number": "2.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "service-worker-timing-info-worker-router-evaluation-start",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-timing-info-worker-router-evaluation-start",
+      "linkingText": [
+        "worker router evaluation start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker timing info"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "service-worker-timing",
+        "href": "https://www.w3.org/TR/service-workers/#service-worker-timing",
+        "title": "Service Worker Timing",
+        "number": "2.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "service-worker-timing-info-worker-cache-lookup-start",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-timing-info-worker-cache-lookup-start",
+      "linkingText": [
+        "worker cache lookup start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker timing info"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "service-worker-timing",
+        "href": "https://www.w3.org/TR/service-workers/#service-worker-timing",
+        "title": "Service Worker Timing",
+        "number": "2.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "service-worker-timing-info-worker-matched-router-source",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-timing-info-worker-matched-router-source",
+      "linkingText": [
+        "worker matched router source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "service worker timing info"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "service-worker-timing",
+        "href": "https://www.w3.org/TR/service-workers/#service-worker-timing",
+        "title": "Service Worker Timing",
+        "number": "2.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "service-worker-timing-info-worker-final-router-source",
+      "href": "https://www.w3.org/TR/service-workers/#service-worker-timing-info-worker-final-router-source",
+      "linkingText": [
+        "worker final router source"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -5928,8 +6016,8 @@
       "links": []
     },
     {
-      "id": "dfn-relevant-name-to-cache-map",
-      "href": "https://www.w3.org/TR/service-workers/#dfn-relevant-name-to-cache-map",
+      "id": "relevant-name-to-cache-map",
+      "href": "https://www.w3.org/TR/service-workers/#relevant-name-to-cache-map",
       "linkingText": [
         "relevant name to cache map"
       ],
@@ -6794,28 +6882,6 @@
       "links": []
     },
     {
-      "id": "cachestorage-global-object",
-      "href": "https://www.w3.org/TR/service-workers/#cachestorage-global-object",
-      "linkingText": [
-        "global object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "CacheStorage"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "cachestorage-interface",
-        "href": "https://www.w3.org/TR/service-workers/#cachestorage-interface",
-        "title": "CacheStorage",
-        "number": "5.5"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
       "id": "dom-cachestorage-match",
       "href": "https://www.w3.org/TR/service-workers/#dom-cachestorage-match",
       "linkingText": [
@@ -7322,6 +7388,70 @@
       "type": "dfn",
       "for": [],
       "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithms",
+        "href": "https://www.w3.org/TR/service-workers/#algorithms",
+        "title": "Algorithms",
+        "number": "A"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-race-result",
+      "href": "https://www.w3.org/TR/service-workers/#dfn-race-result",
+      "linkingText": [
+        "race result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithms",
+        "href": "https://www.w3.org/TR/service-workers/#algorithms",
+        "title": "Algorithms",
+        "number": "A"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "race-result-routed-response",
+      "href": "https://www.w3.org/TR/service-workers/#race-result-routed-response",
+      "linkingText": [
+        "routed response"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "race result"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algorithms",
+        "href": "https://www.w3.org/TR/service-workers/#algorithms",
+        "title": "Algorithms",
+        "number": "A"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "race-result-used-route",
+      "href": "https://www.w3.org/TR/service-workers/#race-result-used-route",
+      "linkingText": [
+        "used route"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "race result"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "algorithms",
