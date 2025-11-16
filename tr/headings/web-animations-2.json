@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Web Animations Level 2",
+    "title": "Web Animations Module Level 2",
     "url": "https://www.w3.org/TR/web-animations-2/"
   },
   "headings": [
@@ -8,7 +8,7 @@
       "id": "title",
       "href": "https://www.w3.org/TR/web-animations-2/#title",
       "level": 1,
-      "title": "Web Animations Level 2"
+      "title": "Web Animations Module Level 2"
     },
     {
       "id": "abstract",
@@ -39,529 +39,662 @@
       "number": "1"
     },
     {
-      "id": "changes-since-level-1",
-      "href": "https://www.w3.org/TR/web-animations-2/#changes-since-level-1",
-      "level": 2,
-      "title": "Changes since level 1",
-      "number": "2"
-    },
-    {
       "id": "timing-model",
       "href": "https://www.w3.org/TR/web-animations-2/#timing-model",
       "level": 2,
       "title": "Timing model",
-      "number": "3"
+      "number": "2"
     },
     {
       "id": "timing-model-overview",
       "href": "https://www.w3.org/TR/web-animations-2/#timing-model-overview",
       "level": 3,
       "title": "Timing model overview",
-      "number": "3.1"
+      "number": "2.1"
     },
     {
       "id": "hierarchical",
       "href": "https://www.w3.org/TR/web-animations-2/#hierarchical",
       "level": 4,
       "title": "Hierarchical",
-      "number": "3.1.1"
+      "number": "2.1.1"
     },
     {
       "id": "timelines",
       "href": "https://www.w3.org/TR/web-animations-2/#timelines",
       "level": 3,
       "title": "Timelines",
-      "number": "3.2"
+      "number": "2.2"
+    },
+    {
+      "id": "animation-frame-loop",
+      "href": "https://www.w3.org/TR/web-animations-2/#animation-frame-loop",
+      "level": 3,
+      "title": "Animation Frames",
+      "number": "2.3"
     },
     {
       "id": "animations",
       "href": "https://www.w3.org/TR/web-animations-2/#animations",
       "level": 3,
       "title": "Animations",
-      "number": "3.3"
+      "number": "2.4"
     },
     {
       "id": "setting-the-timeline",
       "href": "https://www.w3.org/TR/web-animations-2/#setting-the-timeline",
       "level": 4,
       "title": "Setting the timeline of an animation",
-      "number": "3.3.1"
+      "number": "2.4.1"
     },
     {
       "id": "setting-the-target-effect",
       "href": "https://www.w3.org/TR/web-animations-2/#setting-the-target-effect",
       "level": 4,
       "title": "Setting the target effect of an animation",
-      "number": "3.3.2"
+      "number": "2.4.2"
     },
     {
       "id": "waiting-for-the-associated-effect",
       "href": "https://www.w3.org/TR/web-animations-2/#waiting-for-the-associated-effect",
       "level": 4,
       "title": "Waiting for the associated effect",
-      "number": "3.3.3"
+      "number": "2.4.3"
     },
     {
       "id": "validating-a-css-numberish-time",
       "href": "https://www.w3.org/TR/web-animations-2/#validating-a-css-numberish-time",
       "level": 4,
       "title": "Validating a CSSNumberish time",
-      "number": "3.3.4"
+      "number": "2.4.4"
     },
     {
       "id": "setting-the-current-time-of-an-animation",
       "href": "https://www.w3.org/TR/web-animations-2/#setting-the-current-time-of-an-animation",
       "level": 4,
       "title": "Setting the current time of an Animation",
-      "number": "3.3.5"
+      "number": "2.4.5"
     },
     {
       "id": "setting-the-start-time-of-an-animation",
       "href": "https://www.w3.org/TR/web-animations-2/#setting-the-start-time-of-an-animation",
       "level": 4,
       "title": "Setting the start time of an Animation",
-      "number": "3.3.6"
+      "number": "2.4.6"
     },
     {
       "id": "playing-an-animation-section",
       "href": "https://www.w3.org/TR/web-animations-2/#playing-an-animation-section",
       "level": 4,
       "title": "Playing an animation",
-      "number": "3.3.7"
+      "number": "2.4.7"
+    },
+    {
+      "id": "auto-aligning-start-time",
+      "href": "https://www.w3.org/TR/web-animations-2/#auto-aligning-start-time",
+      "level": 5,
+      "title": "Auto-aligning the start time",
+      "number": "2.4.7.1"
     },
     {
       "id": "pausing-an-animation-section",
       "href": "https://www.w3.org/TR/web-animations-2/#pausing-an-animation-section",
       "level": 4,
       "title": "Pausing an animation",
-      "number": "3.3.8"
+      "number": "2.4.8"
     },
     {
       "id": "canceling-an-animation-section",
       "href": "https://www.w3.org/TR/web-animations-2/#canceling-an-animation-section",
       "level": 4,
       "title": "Canceling an animation",
-      "number": "3.3.9"
+      "number": "2.4.9"
     },
     {
       "id": "speed-control",
       "href": "https://www.w3.org/TR/web-animations-2/#speed-control",
       "level": 4,
       "title": "Speed control",
-      "number": "3.3.10"
+      "number": "2.4.10"
+    },
+    {
+      "id": "the-overall-progress-of-an-animation",
+      "href": "https://www.w3.org/TR/web-animations-2/#the-overall-progress-of-an-animation",
+      "level": 4,
+      "title": "Calculating the overall progress of an animation",
+      "number": "2.4.11"
     },
     {
       "id": "animation-effects",
       "href": "https://www.w3.org/TR/web-animations-2/#animation-effects",
       "level": 3,
       "title": "Animation effects",
-      "number": "3.4"
+      "number": "2.5"
     },
     {
       "id": "types-of-animation-effects",
       "href": "https://www.w3.org/TR/web-animations-2/#types-of-animation-effects",
       "level": 4,
       "title": "Types of animation effects",
-      "number": "3.4.1"
+      "number": "2.5.1"
     },
     {
       "id": "the-active-interval",
       "href": "https://www.w3.org/TR/web-animations-2/#the-active-interval",
       "level": 4,
       "title": "The active interval",
-      "number": "3.4.2"
+      "number": "2.5.2"
     },
     {
       "id": "local-time-and-inherited-time",
       "href": "https://www.w3.org/TR/web-animations-2/#local-time-and-inherited-time",
       "level": 4,
       "title": "Local time and inherited time",
-      "number": "3.4.3"
+      "number": "2.5.3"
     },
     {
       "id": "animation-effect-phases-and-states",
       "href": "https://www.w3.org/TR/web-animations-2/#animation-effect-phases-and-states",
       "level": 4,
       "title": "Animation effect phases and states",
-      "number": "3.4.4"
+      "number": "2.5.4"
     },
     {
       "id": "fill-modes",
       "href": "https://www.w3.org/TR/web-animations-2/#fill-modes",
       "level": 4,
       "title": "Fill modes",
-      "number": "3.4.5"
+      "number": "2.5.5"
     },
     {
       "id": "repeating",
       "href": "https://www.w3.org/TR/web-animations-2/#repeating",
       "level": 3,
       "title": "Repeating",
-      "number": "3.5"
+      "number": "2.6"
     },
     {
       "id": "iteration-intervals",
       "href": "https://www.w3.org/TR/web-animations-2/#iteration-intervals",
       "level": 4,
       "title": "Iteration intervals",
-      "number": "3.5.1"
+      "number": "2.6.1"
     },
     {
       "id": "iteration-time-space",
       "href": "https://www.w3.org/TR/web-animations-2/#iteration-time-space",
       "level": 4,
       "title": "Iteration time space",
-      "number": "3.5.2"
+      "number": "2.6.2"
     },
     {
       "id": "interval-timing",
       "href": "https://www.w3.org/TR/web-animations-2/#interval-timing",
       "level": 4,
       "title": "Interval timing",
-      "number": "3.5.3"
+      "number": "2.6.3"
     },
     {
       "id": "animation-effect-speed-control",
       "href": "https://www.w3.org/TR/web-animations-2/#animation-effect-speed-control",
       "level": 3,
       "title": "Animation effect speed control",
-      "number": "3.6"
+      "number": "2.7"
     },
     {
       "id": "core-animation-effect-calculations",
       "href": "https://www.w3.org/TR/web-animations-2/#core-animation-effect-calculations",
       "level": 3,
       "title": "Core animation effect calculations",
-      "number": "3.7"
+      "number": "2.8"
     },
     {
       "id": "animation-effect-calculations-overview",
       "href": "https://www.w3.org/TR/web-animations-2/#animation-effect-calculations-overview",
       "level": 4,
       "title": "Overview",
-      "number": "3.7.1"
+      "number": "2.8.1"
     },
     {
       "id": "calculating-the-active-duration",
       "href": "https://www.w3.org/TR/web-animations-2/#calculating-the-active-duration",
       "level": 4,
       "title": "Calculating the active duration",
-      "number": "3.7.2"
+      "number": "2.8.2"
     },
     {
       "id": "transforming-the-local-time",
       "href": "https://www.w3.org/TR/web-animations-2/#transforming-the-local-time",
       "level": 4,
       "title": "Transforming the local time",
-      "number": "3.7.3"
+      "number": "2.8.3"
     },
     {
       "id": "calculating-the-active-time",
       "href": "https://www.w3.org/TR/web-animations-2/#calculating-the-active-time",
       "level": 5,
       "title": "Calculating the active time",
-      "number": "3.7.3.1"
+      "number": "2.8.3.1"
     },
     {
       "id": "calculating-the-overall-progress",
       "href": "https://www.w3.org/TR/web-animations-2/#calculating-the-overall-progress",
       "level": 5,
       "title": "Calculating the overall progress",
-      "number": "3.7.3.2"
+      "number": "2.8.3.2"
     },
     {
       "id": "time-transformations",
       "href": "https://www.w3.org/TR/web-animations-2/#time-transformations",
       "level": 3,
       "title": "Time transformations",
-      "number": "3.8"
+      "number": "2.9"
     },
     {
       "id": "calculating-the-transformed-progress",
       "href": "https://www.w3.org/TR/web-animations-2/#calculating-the-transformed-progress",
       "level": 4,
       "title": "Calculating the transformed progress",
-      "number": "3.8.1"
+      "number": "2.9.1"
     },
     {
       "id": "calculating-the-transformed-time",
       "href": "https://www.w3.org/TR/web-animations-2/#calculating-the-transformed-time",
       "level": 4,
       "title": "Calculating the transformed time",
-      "number": "3.8.2"
+      "number": "2.9.2"
     },
     {
       "id": "grouping-and-synchronization",
       "href": "https://www.w3.org/TR/web-animations-2/#grouping-and-synchronization",
       "level": 3,
       "title": "Grouping and synchronization",
-      "number": "3.9"
+      "number": "2.10"
     },
     {
       "id": "relationship-of-group-time-to-child-time",
       "href": "https://www.w3.org/TR/web-animations-2/#relationship-of-group-time-to-child-time",
       "level": 4,
       "title": "Relationship of group time to child time",
-      "number": "3.9.1"
+      "number": "2.10.1"
     },
     {
       "id": "the-start-time-of-children-of-a-group-effect",
       "href": "https://www.w3.org/TR/web-animations-2/#the-start-time-of-children-of-a-group-effect",
       "level": 4,
       "title": "The start time of children of a group effect",
-      "number": "3.9.2"
+      "number": "2.10.2"
     },
     {
       "id": "the-intrinsic-iteration-duration-of-a-group-effect",
       "href": "https://www.w3.org/TR/web-animations-2/#the-intrinsic-iteration-duration-of-a-group-effect",
       "level": 4,
       "title": "The intrinsic iteration duration of a group effect",
-      "number": "3.9.3"
+      "number": "2.10.3"
     },
     {
       "id": "sequence-effects",
       "href": "https://www.w3.org/TR/web-animations-2/#sequence-effects",
       "level": 4,
       "title": "Sequence effects",
-      "number": "3.9.4"
+      "number": "2.10.4"
     },
     {
       "id": "the-start-time-of-children-of-a-sequence-effect",
       "href": "https://www.w3.org/TR/web-animations-2/#the-start-time-of-children-of-a-sequence-effect",
       "level": 5,
       "title": "The start time of children of a sequence effect",
-      "number": "3.9.4.1"
+      "number": "2.10.4.1"
     },
     {
       "id": "the-intrinsic-iteration-duration-of-a-sequence-effect",
       "href": "https://www.w3.org/TR/web-animations-2/#the-intrinsic-iteration-duration-of-a-sequence-effect",
       "level": 5,
       "title": "The intrinsic iteration duration of a sequence effect",
-      "number": "3.9.4.2"
+      "number": "2.10.4.2"
     },
     {
       "id": "animation-model",
       "href": "https://www.w3.org/TR/web-animations-2/#animation-model",
       "level": 2,
       "title": "Animation model",
-      "number": "4"
+      "number": "3"
     },
     {
       "id": "animation-types",
       "href": "https://www.w3.org/TR/web-animations-2/#animation-types",
       "level": 3,
       "title": "Animation types",
-      "number": "4.1"
+      "number": "3.1"
     },
     {
       "id": "not-animatable-section",
       "href": "https://www.w3.org/TR/web-animations-2/#not-animatable-section",
       "level": 4,
       "title": "Not animatable",
-      "number": "4.1.1"
+      "number": "3.1.1"
     },
     {
       "id": "keyframe-effects",
       "href": "https://www.w3.org/TR/web-animations-2/#keyframe-effects",
       "level": 3,
       "title": "Keyframe Effects",
-      "number": "4.2"
+      "number": "3.2"
     },
     {
       "id": "the-effect-value-of-a-keyframe-animation-effect",
       "href": "https://www.w3.org/TR/web-animations-2/#the-effect-value-of-a-keyframe-animation-effect",
       "level": 4,
       "title": "The effect value of a keyframe effect",
-      "number": "4.2.1"
+      "number": "3.2.1"
     },
     {
       "id": "combining-effects",
       "href": "https://www.w3.org/TR/web-animations-2/#combining-effects",
       "level": 3,
       "title": "Combining effects",
-      "number": "4.3"
+      "number": "3.3"
     },
     {
       "id": "the-effect-stack",
       "href": "https://www.w3.org/TR/web-animations-2/#the-effect-stack",
       "level": 4,
       "title": "The effect stack",
-      "number": "4.3.1"
+      "number": "3.3.1"
     },
     {
       "id": "effect-accumulation-section",
       "href": "https://www.w3.org/TR/web-animations-2/#effect-accumulation-section",
       "level": 3,
       "title": "Effect accumulation",
-      "number": "4.4"
+      "number": "3.4"
     },
     {
       "id": "custom-effects",
       "href": "https://www.w3.org/TR/web-animations-2/#custom-effects",
       "level": 3,
       "title": "Custom effects",
-      "number": "4.5"
+      "number": "3.5"
     },
     {
       "id": "updating-custom-effects",
       "href": "https://www.w3.org/TR/web-animations-2/#updating-custom-effects",
       "level": 4,
       "title": "Sampling custom effects",
-      "number": "4.5.1"
+      "number": "3.5.1"
     },
     {
       "id": "execution-order-of-custom-effects",
       "href": "https://www.w3.org/TR/web-animations-2/#execution-order-of-custom-effects",
       "level": 4,
       "title": "Execution order of custom effects",
-      "number": "4.5.2"
+      "number": "3.5.2"
+    },
+    {
+      "id": "triggers",
+      "href": "https://www.w3.org/TR/web-animations-2/#triggers",
+      "level": 3,
+      "title": "Animation Triggers",
+      "number": "3.6"
+    },
+    {
+      "id": "triggers-overview",
+      "href": "https://www.w3.org/TR/web-animations-2/#triggers-overview",
+      "level": 4,
+      "title": "Overview",
+      "number": "3.6.1"
+    },
+    {
+      "id": "trigger-state",
+      "href": "https://www.w3.org/TR/web-animations-2/#trigger-state",
+      "level": 4,
+      "title": "Animation Trigger Internal State",
+      "number": "3.6.2"
+    },
+    {
+      "id": "trigger-behaviors",
+      "href": "https://www.w3.org/TR/web-animations-2/#trigger-behaviors",
+      "level": 4,
+      "title": "Animation Trigger Behavior",
+      "number": "3.6.3"
+    },
+    {
+      "id": "trigger-active-interval",
+      "href": "https://www.w3.org/TR/web-animations-2/#trigger-active-interval",
+      "level": 4,
+      "title": "Animation Trigger Active Interval",
+      "number": "3.6.4"
+    },
+    {
+      "id": "trigger-ranges",
+      "href": "https://www.w3.org/TR/web-animations-2/#trigger-ranges",
+      "level": 4,
+      "title": "Animation Trigger Ranges",
+      "number": "3.6.5"
+    },
+    {
+      "id": "setting-animation-trigger",
+      "href": "https://www.w3.org/TR/web-animations-2/#setting-animation-trigger",
+      "level": 4,
+      "title": "Setting a Trigger of an Animation",
+      "number": "3.6.6"
+    },
+    {
+      "id": "setting-trigger-timeline",
+      "href": "https://www.w3.org/TR/web-animations-2/#setting-trigger-timeline",
+      "level": 4,
+      "title": "Setting the timeline of an Animation Trigger",
+      "number": "3.6.7"
+    },
+    {
+      "id": "updating-trigger-state",
+      "href": "https://www.w3.org/TR/web-animations-2/#updating-trigger-state",
+      "level": 4,
+      "title": "Updating Animation Trigger State",
+      "number": "3.6.8"
     },
     {
       "id": "programming-interface",
       "href": "https://www.w3.org/TR/web-animations-2/#programming-interface",
       "level": 2,
       "title": "Programming interface",
-      "number": "5"
+      "number": "4"
     },
     {
       "id": "the-animationtimeline-interface",
       "href": "https://www.w3.org/TR/web-animations-2/#the-animationtimeline-interface",
       "level": 3,
       "title": "The AnimationTimeline interface",
-      "number": "5.1"
+      "number": "4.1"
     },
     {
       "id": "the-animation-interface",
       "href": "https://www.w3.org/TR/web-animations-2/#the-animation-interface",
       "level": 3,
       "title": "The Animation interface",
-      "number": "5.2"
+      "number": "4.2"
     },
     {
       "id": "the-animationeffect-interface",
       "href": "https://www.w3.org/TR/web-animations-2/#the-animationeffect-interface",
       "level": 3,
       "title": "The AnimationEffect interface",
-      "number": "5.3"
+      "number": "4.3"
     },
     {
       "id": "the-effecttiming-dictionaries",
       "href": "https://www.w3.org/TR/web-animations-2/#the-effecttiming-dictionaries",
       "level": 3,
       "title": "The EffectTiming and OptionalEffectTiming dictionaries",
-      "number": "5.4"
+      "number": "4.4"
     },
     {
       "id": "updating-animationeffect-timing",
       "href": "https://www.w3.org/TR/web-animations-2/#updating-animationeffect-timing",
       "level": 3,
       "title": "Updating the timing of an AnimationEffect",
-      "number": "5.5"
+      "number": "4.5"
     },
     {
       "id": "the-computedeffecttiming-dictionary",
       "href": "https://www.w3.org/TR/web-animations-2/#the-computedeffecttiming-dictionary",
       "level": 3,
       "title": "The ComputedEffectTiming dictionary",
-      "number": "5.6"
+      "number": "4.6"
     },
     {
       "id": "the-fillmode-enumeration",
       "href": "https://www.w3.org/TR/web-animations-2/#the-fillmode-enumeration",
       "level": 4,
       "title": "The FillMode enumeration",
-      "number": "5.6.1"
+      "number": "4.6.1"
     },
     {
       "id": "the-groupeffect-interface",
       "href": "https://www.w3.org/TR/web-animations-2/#the-groupeffect-interface",
       "level": 3,
       "title": "The GroupEffect interface",
-      "number": "5.7"
+      "number": "4.7"
     },
     {
       "id": "processing-a-timing-argument",
       "href": "https://www.w3.org/TR/web-animations-2/#processing-a-timing-argument",
       "level": 4,
       "title": "Processing a timing argument",
-      "number": "5.7.1"
+      "number": "4.7.1"
     },
     {
       "id": "definitions-for-manipulating-hierarchies",
       "href": "https://www.w3.org/TR/web-animations-2/#definitions-for-manipulating-hierarchies",
       "level": 4,
       "title": "Definitions for manipulating hierarchies",
-      "number": "5.7.2"
+      "number": "4.7.2"
     },
     {
       "id": "the-animationnodelist-interface",
       "href": "https://www.w3.org/TR/web-animations-2/#the-animationnodelist-interface",
       "level": 3,
       "title": "The AnimationNodeList interface",
-      "number": "5.8"
+      "number": "4.8"
     },
     {
       "id": "the-sequenceeffect-interface",
       "href": "https://www.w3.org/TR/web-animations-2/#the-sequenceeffect-interface",
       "level": 3,
       "title": "The SequenceEffect interfaces",
-      "number": "5.9"
+      "number": "4.9"
     },
     {
       "id": "the-keyframeeffect-interface",
       "href": "https://www.w3.org/TR/web-animations-2/#the-keyframeeffect-interface",
       "level": 3,
       "title": "The KeyframeEffect interfaces",
-      "number": "5.10"
+      "number": "4.10"
     },
     {
       "id": "creating-a-new-keyframeeffect-object",
       "href": "https://www.w3.org/TR/web-animations-2/#creating-a-new-keyframeeffect-object",
       "level": 4,
       "title": "Creating a new KeyframeEffect object",
-      "number": "5.10.1"
+      "number": "4.10.1"
+    },
+    {
+      "id": "keyframe-offset-type",
+      "href": "https://www.w3.org/TR/web-animations-2/#keyframe-offset-type",
+      "level": 4,
+      "title": "Modification to the *Keyframe dictionaries",
+      "number": "4.10.2"
     },
     {
       "id": "the-keyframeeffectoptions-dictionary",
       "href": "https://www.w3.org/TR/web-animations-2/#the-keyframeeffectoptions-dictionary",
       "level": 4,
       "title": "The KeyframeEffectOptions dictionary",
-      "number": "5.10.2"
+      "number": "4.10.3"
     },
     {
       "id": "the-iterationcompositeoperation-enumeration",
       "href": "https://www.w3.org/TR/web-animations-2/#the-iterationcompositeoperation-enumeration",
       "level": 3,
       "title": "The IterationCompositeOperation enumeration",
-      "number": "5.11"
+      "number": "4.11"
     },
     {
       "id": "the-effectcallback-callback-function",
       "href": "https://www.w3.org/TR/web-animations-2/#the-effectcallback-callback-function",
       "level": 3,
       "title": "The EffectCallback callback function",
-      "number": "5.12"
+      "number": "4.12"
     },
     {
       "id": "the-animatable-interface",
       "href": "https://www.w3.org/TR/web-animations-2/#the-animatable-interface",
       "level": 3,
       "title": "The Animatable interface",
-      "number": "5.13"
+      "number": "4.13"
+    },
+    {
+      "id": "the-animatable-interface-mixin",
+      "href": "https://www.w3.org/TR/web-animations-2/#the-animatable-interface-mixin",
+      "level": 3,
+      "title": "The Animatable interface mixin",
+      "number": "4.14"
     },
     {
       "id": "the-animationplaybackevent-interface",
       "href": "https://www.w3.org/TR/web-animations-2/#the-animationplaybackevent-interface",
       "level": 3,
       "title": "The AnimationPlaybackEvent interface",
-      "number": "5.14"
+      "number": "4.15"
+    },
+    {
+      "id": "the-animationtrigger-interface",
+      "href": "https://www.w3.org/TR/web-animations-2/#the-animationtrigger-interface",
+      "level": 3,
+      "title": "The AnimationTrigger interface",
+      "number": "4.16"
+    },
+    {
+      "id": "the-animationtriggeroptions-dictionary",
+      "href": "https://www.w3.org/TR/web-animations-2/#the-animationtriggeroptions-dictionary",
+      "level": 3,
+      "title": "The AnimationTriggerOptions dictionary",
+      "number": "4.17"
+    },
+    {
+      "id": "the-animationtriggerbehavior-enumeration",
+      "href": "https://www.w3.org/TR/web-animations-2/#the-animationtriggerbehavior-enumeration",
+      "level": 3,
+      "title": "The AnimationTriggerBehavior enumeration",
+      "number": "4.18"
     },
     {
       "id": "model-liveness",
       "href": "https://www.w3.org/TR/web-animations-2/#model-liveness",
       "level": 3,
       "title": "Model liveness",
-      "number": "5.15"
+      "number": "4.19"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/web-animations-2/#changes",
+      "level": 2,
+      "title": "Changes",
+      "number": "5"
+    },
+    {
+      "id": "changes-since-level-1",
+      "href": "https://www.w3.org/TR/web-animations-2/#changes-since-level-1",
+      "level": 3,
+      "title": "Changes since level 1",
+      "number": "5.1"
+    },
+    {
+      "id": "changes-20230221",
+      "href": "https://www.w3.org/TR/web-animations-2/#changes-20230221",
+      "level": 3,
+      "title": "Changes since the First Public Working Draft of 21 February 2023",
+      "number": "5.2"
     },
     {
       "id": "priv",
@@ -642,12 +775,6 @@
       "href": "https://www.w3.org/TR/web-animations-2/#normative",
       "level": 3,
       "title": "Normative References"
-    },
-    {
-      "id": "informative",
-      "href": "https://www.w3.org/TR/web-animations-2/#informative",
-      "level": 3,
-      "title": "Informative References"
     },
     {
       "id": "idl-index",
