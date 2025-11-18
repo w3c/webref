@@ -2481,7 +2481,7 @@
         "webkitBorderBottomLeftRadius"
       ],
       "extended": [],
-      "syntax": "<length-percentage [0,∞]>{1,2}"
+      "syntax": "<border-radius>"
     },
     {
       "name": "-webkit-border-bottom-right-radius",
@@ -2493,7 +2493,7 @@
         "webkitBorderBottomRightRadius"
       ],
       "extended": [],
-      "syntax": "<length-percentage [0,∞]>{1,2}"
+      "syntax": "<border-radius>"
     },
     {
       "name": "-webkit-border-radius",
@@ -2517,7 +2517,7 @@
         "webkitBorderTopLeftRadius"
       ],
       "extended": [],
-      "syntax": "<length-percentage [0,∞]>{1,2}"
+      "syntax": "<border-radius>"
     },
     {
       "name": "-webkit-border-top-right-radius",
@@ -2529,7 +2529,7 @@
         "webkitBorderTopRightRadius"
       ],
       "extended": [],
-      "syntax": "<length-percentage [0,∞]>{1,2}"
+      "syntax": "<border-radius>"
     },
     {
       "name": "-webkit-box-align",
@@ -4506,7 +4506,7 @@
         "border-bottom-left-radius",
         "borderBottomLeftRadius"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2}",
+      "syntax": "<border-radius>",
       "extended": []
     },
     {
@@ -4541,7 +4541,7 @@
         "border-bottom-right-radius",
         "borderBottomRightRadius"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2}",
+      "syntax": "<border-radius>",
       "extended": []
     },
     {
@@ -4663,7 +4663,7 @@
         "border-end-end-radius",
         "borderEndEndRadius"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2}",
+      "syntax": "<border-radius>",
       "extended": []
     },
     {
@@ -4681,7 +4681,7 @@
         "border-end-start-radius",
         "borderEndStartRadius"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2}",
+      "syntax": "<border-radius>",
       "extended": []
     },
     {
@@ -5357,7 +5357,7 @@
         "border-start-end-radius",
         "borderStartEndRadius"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2}",
+      "syntax": "<border-radius>",
       "extended": []
     },
     {
@@ -5375,7 +5375,7 @@
         "border-start-start-radius",
         "borderStartStartRadius"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2}",
+      "syntax": "<border-radius>",
       "extended": []
     },
     {
@@ -5462,7 +5462,7 @@
         "border-top-left-radius",
         "borderTopLeftRadius"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2}",
+      "syntax": "<border-radius>",
       "extended": []
     },
     {
@@ -5497,7 +5497,7 @@
         "border-top-right-radius",
         "borderTopRightRadius"
       ],
-      "syntax": "<length-percentage [0,∞]>{1,2}",
+      "syntax": "<border-radius>",
       "extended": []
     },
     {
@@ -6174,7 +6174,7 @@
       "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "list of absolute lengths, snapped as a border width, or 0 under conditions described below",
+      "computedValue": "list of absolute lengths, snapped as a border width",
       "canonicalOrder": "per grammar",
       "animationType": "repeatable list, see § 3.4.1 Interpolation behavior.",
       "styleDeclaration": [
@@ -10855,7 +10855,7 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "absolute length, snapped as a border width; 0 if the outline style is none.",
+      "computedValue": "absolute length, snapped as a border width",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "styleDeclaration": [
@@ -12196,7 +12196,7 @@
       "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "list of absolute lengths, snapped as a border width, or 0 under conditions described below",
+      "computedValue": "list of absolute lengths, snapped as a border width",
       "canonicalOrder": "per grammar",
       "animationType": "repeatable list, see § 3.4.1 Interpolation behavior.",
       "styleDeclaration": [
@@ -13899,6 +13899,23 @@
       "extended": []
     },
     {
+      "name": "text-decoration-inset",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration-inset",
+      "initial": "0",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword or absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "text-decoration-inset",
+        "textDecorationInset"
+      ],
+      "syntax": "<length>{1,2} | auto",
+      "extended": []
+    },
+    {
       "name": "text-decoration-line",
       "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration-line",
       "initial": "none",
@@ -14032,23 +14049,6 @@
         "textDecorationThickness"
       ],
       "syntax": "auto | from-font | <length-percentage>",
-      "extended": []
-    },
-    {
-      "name": "text-decoration-trim",
-      "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration-trim",
-      "initial": "0",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "computedValue": "specified keyword or absolute length",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value",
-      "styleDeclaration": [
-        "text-decoration-trim",
-        "textDecorationTrim"
-      ],
-      "syntax": "<length>{1,2} | auto",
       "extended": []
     },
     {
@@ -16876,6 +16876,12 @@
       "extended": []
     },
     {
+      "name": "border-radius",
+      "href": "https://drafts.csswg.org/css-borders-4/#typedef-border-radius",
+      "syntax": "<slash-separated-border-radius-syntax> | <legacy-border-radius-syntax>",
+      "extended": []
+    },
+    {
       "name": "border-style",
       "prose": "The border style properties specify the line style of a box’s border (solid, double, dashed, etc.). The properties defined in this section refer to the <border-style> value type, which may take one of the following values:",
       "href": "https://drafts.csswg.org/css2/#value-def-border-style",
@@ -17951,6 +17957,12 @@
       "extended": []
     },
     {
+      "name": "legacy-border-radius-syntax",
+      "href": "https://drafts.csswg.org/css-borders-4/#typedef-legacy-border-radius-syntax",
+      "syntax": "<length-percentage [0,∞]>{1,2}",
+      "extended": []
+    },
+    {
       "name": "legacy-device-cmyk-syntax",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-legacy-device-cmyk-syntax",
       "syntax": "device-cmyk( <number>#{4} )",
@@ -18964,6 +18976,12 @@
       "name": "size-keyword",
       "prose": "The <size-keyword> production matches any sizing keywords allowed in the context. For example, in width, it matches auto, min-content, stretch, etc.",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-size-keyword",
+      "extended": []
+    },
+    {
+      "name": "slash-separated-border-radius-syntax",
+      "href": "https://drafts.csswg.org/css-borders-4/#typedef-slash-separated-border-radius-syntax",
+      "syntax": "<length-percentage [0,∞]> [ / <length-percentage [0,∞]> ]?",
       "extended": []
     },
     {
