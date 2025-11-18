@@ -829,7 +829,7 @@
     {
       "name": "border-top-left-radius",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-top-left-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -846,7 +846,7 @@
     {
       "name": "border-top-right-radius",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-top-right-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -863,7 +863,7 @@
     {
       "name": "border-bottom-right-radius",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-right-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -880,7 +880,7 @@
     {
       "name": "border-bottom-left-radius",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-left-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -897,7 +897,7 @@
     {
       "name": "border-start-start-radius",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-start-start-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -914,7 +914,7 @@
     {
       "name": "border-start-end-radius",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-start-end-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -931,7 +931,7 @@
     {
       "name": "border-end-start-radius",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-end-start-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -948,7 +948,7 @@
     {
       "name": "border-end-end-radius",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-end-end-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -2375,6 +2375,24 @@
           "value": "thick"
         }
       ]
+    },
+    {
+      "name": "<border-radius>",
+      "href": "https://drafts.csswg.org/css-borders-4/#typedef-border-radius",
+      "type": "type",
+      "value": "<slash-separated-border-radius-syntax> | <legacy-border-radius-syntax>"
+    },
+    {
+      "name": "<slash-separated-border-radius-syntax>",
+      "href": "https://drafts.csswg.org/css-borders-4/#typedef-slash-separated-border-radius-syntax",
+      "type": "type",
+      "value": "<length-percentage [0,∞]> [ / <length-percentage [0,∞]> ]?"
+    },
+    {
+      "name": "<legacy-border-radius-syntax>",
+      "href": "https://drafts.csswg.org/css-borders-4/#typedef-legacy-border-radius-syntax",
+      "type": "type",
+      "value": "<length-percentage [0,∞]>{1,2}"
     },
     {
       "name": "<corner-shape-value>",
