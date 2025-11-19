@@ -36,7 +36,7 @@
         "href": "https://w3c.github.io/attribution/#enumdef-attributionaggregationprotocol"
       },
       "AttributionAggregationService": {
-        "fragment": "dictionary AttributionAggregationService {\n  required DOMString protocol;\n};",
+        "fragment": "dictionary AttributionAggregationService {\n  required AttributionAggregationProtocol protocol;\n};",
         "type": "dictionary",
         "name": "AttributionAggregationService",
         "inheritance": null,
@@ -51,7 +51,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "AttributionAggregationProtocol"
             },
             "default": null,
             "required": true,
@@ -754,7 +754,9 @@
       "Navigator": [
         "Attribution"
       ],
-      "AttributionAggregationService": [],
+      "AttributionAggregationService": [
+        "AttributionAggregationProtocol"
+      ],
       "AttributionAggregationServices": [
         "AttributionAggregationService"
       ],

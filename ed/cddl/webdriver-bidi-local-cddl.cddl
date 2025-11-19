@@ -1415,7 +1415,7 @@ session.UserPromptHandlerType = "accept" / "dismiss" / "ignore";
 
 session.Subscription = text
 
-session.SubscriptionRequest = {
+session.SubscribeParameters = {
   events: [+text],
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
@@ -1450,7 +1450,7 @@ session.End = (
 
 session.Subscribe = (
   method: "session.subscribe",
-  params: session.SubscriptionRequest
+  params: session.SubscribeParameters
 )
 
 session.Unsubscribe = (
