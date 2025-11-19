@@ -1,0 +1,767 @@
+{
+  "spec": {
+    "title": "Verifiable Credential Rendering Methods v1.0",
+    "url": "https://w3c.github.io/vc-render-method/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-claims",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-claims",
+      "linkingText": [
+        "claims",
+        "claim"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-credential",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-credential",
+      "linkingText": [
+        "credential",
+        "credentials"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-data-minimization",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-data-minimization",
+      "linkingText": [
+        "data minimization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-decentralized-identifiers",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-decentralized-identifiers",
+      "linkingText": [
+        "decentralized identifiers",
+        "DID",
+        "DIDs",
+        "decentralized identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-decentralized-identifier-documents",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-decentralized-identifier-documents",
+      "linkingText": [
+        "decentralized identifier documents",
+        "DID document",
+        "DID documents",
+        "decentralized identifier document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-default-graph",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-default-graph",
+      "linkingText": [
+        "default graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-predicates",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-predicates",
+      "linkingText": [
+        "predicates",
+        "derived predicates",
+        "derived predicate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-digital-signature",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-digital-signature",
+      "linkingText": [
+        "digital signature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-entities",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-entities",
+      "linkingText": [
+        "entities",
+        "entity's",
+        "entity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-graphs",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-graphs",
+      "linkingText": [
+        "graphs",
+        "graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-holders",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-holders",
+      "linkingText": [
+        "holders",
+        "holder's",
+        "holders'",
+        "holder"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-identities",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-identities",
+      "linkingText": [
+        "identities",
+        "identity's",
+        "identity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-identity-providers",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-identity-providers",
+      "linkingText": [
+        "identity providers",
+        "idp",
+        "identity provider"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-issuers",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-issuers",
+      "linkingText": [
+        "issuers",
+        "issuer's",
+        "issuer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-named-graphs",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-named-graphs",
+      "linkingText": [
+        "named graphs",
+        "named graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-presentations",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-presentations",
+      "linkingText": [
+        "presentations",
+        "presentation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-credential-repositories",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-credential-repositories",
+      "linkingText": [
+        "credential repositories",
+        "credential repository"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-selective-disclosure",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-selective-disclosure",
+      "linkingText": [
+        "selective disclosure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-subjects",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-subjects",
+      "linkingText": [
+        "subjects",
+        "subject's",
+        "subject"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-user-agent",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-claim-validation",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-claim-validation",
+      "linkingText": [
+        "claim validation",
+        "validation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-verifiable-credential",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-verifiable-credential",
+      "linkingText": [
+        "verifiable credential",
+        "verifiable credentials",
+        "vc",
+        "vcs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-verifiable-data-registries",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-verifiable-data-registries",
+      "linkingText": [
+        "verifiable data registries",
+        "verifiable data registry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-verifiable-presentation",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-verifiable-presentation",
+      "linkingText": [
+        "verifiable presentation",
+        "verifiable presentations",
+        "vp",
+        "vps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-verify",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-verify",
+      "linkingText": [
+        "verify",
+        "verified",
+        "verifying",
+        "verifiable",
+        "verifiability",
+        "verification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-verifier",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-verifier",
+      "linkingText": [
+        "verifier",
+        "verifiers",
+        "verifier's",
+        "credential verifiers",
+        "credential verifier's"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-relying-parties",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-relying-parties",
+      "linkingText": [
+        "relying parties",
+        "relying party"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-verification-material",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-verification-material",
+      "linkingText": [
+        "verification material"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-url",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-url",
+      "linkingText": [
+        "URL",
+        "URLs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-render-method/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x1-1-terminology"
+        ],
+        "number": "1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-conforming-render-method",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-conforming-render-method",
+      "linkingText": [
+        "conforming render method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/vc-render-method/#conformance",
+        "title": "Conformance",
+        "alternateIds": [
+          "x1-2-conformance"
+        ],
+        "number": "1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-conforming-processor",
+      "href": "https://w3c.github.io/vc-render-method/#dfn-conforming-processor",
+      "linkingText": [
+        "conforming processor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/vc-render-method/#conformance",
+        "title": "Conformance",
+        "alternateIds": [
+          "x1-2-conformance"
+        ],
+        "number": "1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}

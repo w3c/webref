@@ -1,0 +1,381 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 Profiling",
+    "url": "https://w3c.github.io/data-shapes/shacl12-profiling/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#title",
+      "level": 1,
+      "title": "SHACL 1.2 Profiling"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "specifications",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#specifications",
+      "level": 2,
+      "title": "SHACL Specifications",
+      "alternateIds": [
+        "shacl-specifications"
+      ]
+    },
+    {
+      "id": "document-outline",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#document-outline",
+      "level": 2,
+      "title": "Document Outline",
+      "alternateIds": [
+        "document-outline-0"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "what-is",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#what-is",
+      "level": 3,
+      "title": "What is profiling?",
+      "alternateIds": [
+        "x1-1-what-is-profiling"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "scope",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#scope",
+      "level": 3,
+      "title": "Scope",
+      "alternateIds": [
+        "x1-2-scope"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "alternateIds": [
+        "x1-3-terminology"
+      ],
+      "number": "1.3"
+    },
+    {
+      "id": "conventions",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#conventions",
+      "level": 3,
+      "title": "Document Conventions",
+      "alternateIds": [
+        "x1-4-document-conventions"
+      ],
+      "number": "1.4"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-5-conformance"
+      ],
+      "number": "1.5"
+    },
+    {
+      "id": "packaging",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#packaging",
+      "level": 2,
+      "title": "Packaging SHACL",
+      "alternateIds": [
+        "x2-packaging-shacl"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "packaging-motivation",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#packaging-motivation",
+      "level": 3,
+      "title": "Motivation",
+      "alternateIds": [
+        "x2-1-motivation"
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "packaging-recommendations",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#packaging-recommendations",
+      "level": 3,
+      "title": "Recommendations Summary",
+      "alternateIds": [
+        "x2-2-recommendations-summary"
+      ],
+      "number": "2.2"
+    },
+    {
+      "id": "rec-id",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#rec-id",
+      "level": 3,
+      "title": "Identifying groups of SHACL Elements",
+      "alternateIds": [
+        "x2-3-identifying-groups-of-shacl-elements"
+      ],
+      "number": "2.3"
+    },
+    {
+      "id": "rec-defined",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#rec-defined",
+      "level": 3,
+      "title": "Indicating Element definition",
+      "alternateIds": [
+        "x2-4-indicating-element-definition"
+      ],
+      "number": "2.4"
+    },
+    {
+      "id": "rec-member",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#rec-member",
+      "level": 3,
+      "title": "Indicating Element use",
+      "alternateIds": [
+        "x2-5-indicating-element-use"
+      ],
+      "number": "2.5"
+    },
+    {
+      "id": "rec-imports",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#rec-imports",
+      "level": 3,
+      "title": "Indicating group dependence",
+      "alternateIds": [
+        "x2-6-indicating-group-dependence"
+      ],
+      "number": "2.6"
+    },
+    {
+      "id": "dependencies",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#dependencies",
+      "level": 3,
+      "title": "Calculating Dependencies",
+      "alternateIds": [
+        "x2-7-calculating-dependencies"
+      ],
+      "number": "2.7"
+    },
+    {
+      "id": "profiles",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#profiles",
+      "level": 2,
+      "title": "Profiles of SHACL",
+      "alternateIds": [
+        "x3-profiles-of-shacl"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "specification-profiles",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#specification-profiles",
+      "level": 3,
+      "title": "Specification Profiles",
+      "alternateIds": [
+        "x3-1-specification-profiles"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "union-profile",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#union-profile",
+      "level": 3,
+      "title": "Union Profile",
+      "alternateIds": [
+        "x3-2-union-profile"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "creating-profiles",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#creating-profiles",
+      "level": 3,
+      "title": "Creating other Profiles",
+      "alternateIds": [
+        "x3-3-creating-other-profiles"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "profiling",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#profiling",
+      "level": 2,
+      "title": "Profiling with SHACL",
+      "alternateIds": [
+        "x4-profiling-with-shacl"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "profile-parts",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#profile-parts",
+      "level": 3,
+      "title": "Profile Part Roles",
+      "alternateIds": [
+        "x4-1-profile-part-roles"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "hierarchies",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#hierarchies",
+      "level": 3,
+      "title": "Profile Hierarchies",
+      "alternateIds": [
+        "x4-2-profile-hierarchies"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "null-profiles",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#null-profiles",
+      "level": 3,
+      "title": "Creating Null Profiles",
+      "alternateIds": [
+        "x4-3-creating-null-profiles"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "syntax-rules",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#syntax-rules",
+      "level": 2,
+      "title": "Summary of Syntax Rules from this Specification",
+      "alternateIds": [
+        "a-summary-of-syntax-rules-from-this-specification"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "security",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#security",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "alternateIds": [
+        "b-security-and-privacy-considerations"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "ack",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "c-acknowledgements"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "internationalization",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#internationalization",
+      "level": 2,
+      "title": "Internationalization Considerations",
+      "alternateIds": [
+        "d-internationalization-considerations"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#index",
+      "level": 2,
+      "title": "Index",
+      "alternateIds": [
+        "e-index"
+      ],
+      "number": "E"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "alternateIds": [
+        "e-1-terms-defined-by-this-specification"
+      ],
+      "number": "E.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "alternateIds": [
+        "e-2-terms-defined-by-reference"
+      ],
+      "number": "E.2"
+    },
+    {
+      "id": "issue-summary",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#issue-summary",
+      "level": 2,
+      "title": "Issue summary",
+      "alternateIds": [
+        "f-issue-summary"
+      ],
+      "number": "F"
+    },
+    {
+      "id": "specification-profiles-listing",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#specification-profiles-listing",
+      "level": 2,
+      "title": "Specification Profiles Listing",
+      "alternateIds": [
+        "g-specification-profiles-listing"
+      ],
+      "number": "G"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "h-references"
+      ],
+      "number": "H"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "h-1-normative-references"
+      ],
+      "number": "H.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "h-2-informative-references"
+      ],
+      "number": "H.2"
+    }
+  ]
+}

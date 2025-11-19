@@ -1,0 +1,372 @@
+{
+  "spec": {
+    "title": "PDF Accessibility API Mappings 1.0",
+    "url": "https://w3c.github.io/pdf-aam/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/pdf-aam/#title",
+      "level": 1,
+      "title": "PDF Accessibility API Mappings 1.0"
+    },
+    {
+      "id": "status-of-this-document",
+      "href": "https://w3c.github.io/pdf-aam/#status-of-this-document",
+      "level": 3,
+      "title": "Status of This Document",
+      "alternateIds": [
+        "status-of-this-document-0"
+      ]
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/pdf-aam/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "Introduction",
+      "href": "https://w3c.github.io/pdf-aam/#Introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "glossary",
+      "href": "https://w3c.github.io/pdf-aam/#glossary",
+      "level": 2,
+      "title": "PDF-specific Terms & Definitions",
+      "alternateIds": [
+        "x2-pdf-specific-terms-definitions"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/pdf-aam/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "x3-conformance"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "mapping-pdf-object-to-be-named",
+      "href": "https://w3c.github.io/pdf-aam/#mapping-pdf-object-to-be-named",
+      "level": 2,
+      "title": "Mapping PDF-object to be named to Accessibility APIs",
+      "alternateIds": [
+        "x4-mapping-pdf-object-to-be-named-to-accessibility-apis"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "general-rules-for-exposing-pdf-semantics-via-html-or-wai-aria-semantics",
+      "href": "https://w3c.github.io/pdf-aam/#general-rules-for-exposing-pdf-semantics-via-html-or-wai-aria-semantics",
+      "level": 3,
+      "title": "General Rules for Exposing PDF Semantics via HTML or WAI-ARIA Semantics",
+      "alternateIds": [
+        "x4-1-general-rules-for-exposing-pdf-semantics-via-html-or-wai-aria-semantics"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "exposing-pdf-object-to-be-named-that-do-not-directly-map-to-accessibility-apis",
+      "href": "https://w3c.github.io/pdf-aam/#exposing-pdf-object-to-be-named-that-do-not-directly-map-to-accessibility-apis",
+      "level": 3,
+      "title": "Exposing PDF-object to be named That Do Not Directly Map to Accessibility APIs",
+      "alternateIds": [
+        "x4-2-exposing-pdf-object-to-be-named-that-do-not-directly-map-to-accessibility-apis"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "exposing-pdf-object-to-be-named-that-require-a-minimum-role",
+      "href": "https://w3c.github.io/pdf-aam/#exposing-pdf-object-to-be-named-that-require-a-minimum-role",
+      "level": 3,
+      "title": "Exposing PDF-object to be named That Require a Minimum Role",
+      "alternateIds": [
+        "x4-3-exposing-pdf-object-to-be-named-that-require-a-minimum-role"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "pdf-element-role-mappings",
+      "href": "https://w3c.github.io/pdf-aam/#pdf-element-role-mappings",
+      "level": 3,
+      "title": "PDF Element Role Mappings",
+      "alternateIds": [
+        "x4-4-pdf-element-role-mappings"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "mapping",
+      "href": "https://w3c.github.io/pdf-aam/#mapping",
+      "level": 2,
+      "title": "Mapping WAI-ARIA to Accessibility APIs",
+      "alternateIds": [
+        "x5-mapping-wai-aria-to-accessibility-apis"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "mapping_role",
+      "href": "https://w3c.github.io/pdf-aam/#mapping_role",
+      "level": 3,
+      "title": "Role mapping",
+      "alternateIds": [
+        "x5-1-role-mapping"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "roleMappingGeneralRules",
+      "href": "https://w3c.github.io/pdf-aam/#roleMappingGeneralRules",
+      "level": 4,
+      "title": "General rules",
+      "alternateIds": [
+        "x5-1-1-general-rules"
+      ],
+      "number": "5.1.1"
+    },
+    {
+      "id": "mapping_role_table",
+      "href": "https://w3c.github.io/pdf-aam/#mapping_role_table",
+      "level": 4,
+      "title": "Role Mapping Tables",
+      "alternateIds": [
+        "x5-1-2-role-mapping-tables"
+      ],
+      "number": "5.1.2"
+    },
+    {
+      "id": "document-child-of-structure-tree-root",
+      "href": "https://w3c.github.io/pdf-aam/#document-child-of-structure-tree-root",
+      "level": 5,
+      "title": "Document (Child of Structure tree root)",
+      "alternateIds": [
+        "role-document"
+      ],
+      "number": "5.1.2.1"
+    },
+    {
+      "id": "document-logical-document-within-a-parent-document",
+      "href": "https://w3c.github.io/pdf-aam/#document-logical-document-within-a-parent-document",
+      "level": 5,
+      "title": "Document (Logical document within a parent document)",
+      "alternateIds": [
+        "role-document-child"
+      ],
+      "number": "5.1.2.2"
+    },
+    {
+      "id": "sect",
+      "href": "https://w3c.github.io/pdf-aam/#sect",
+      "level": 5,
+      "title": "Sect",
+      "alternateIds": [
+        "role-sect"
+      ],
+      "number": "5.1.2.3"
+    },
+    {
+      "id": "p",
+      "href": "https://w3c.github.io/pdf-aam/#p",
+      "level": 5,
+      "title": "P",
+      "alternateIds": [
+        "role-P"
+      ],
+      "number": "5.1.2.4"
+    },
+    {
+      "id": "hn-h1-thru-h6",
+      "href": "https://w3c.github.io/pdf-aam/#hn-h1-thru-h6",
+      "level": 5,
+      "title": "Hn (H1 thru H6)",
+      "alternateIds": [
+        "role-h-hn"
+      ],
+      "number": "5.1.2.5"
+    },
+    {
+      "id": "lbl-associated-with-a-form-element",
+      "href": "https://w3c.github.io/pdf-aam/#lbl-associated-with-a-form-element",
+      "level": 5,
+      "title": "Lbl (associated with a Form element)",
+      "alternateIds": [
+        "role-lbl-forms"
+      ],
+      "number": "5.1.2.6"
+    },
+    {
+      "id": "lbl-not-associated-with-a-form-element",
+      "href": "https://w3c.github.io/pdf-aam/#lbl-not-associated-with-a-form-element",
+      "level": 5,
+      "title": "Lbl (Not associated with a Form element)",
+      "alternateIds": [
+        "role-lbl"
+      ],
+      "number": "5.1.2.7"
+    },
+    {
+      "id": "lbl-listnumbering-description-new-listnumbering-in-pdf-2-0",
+      "href": "https://w3c.github.io/pdf-aam/#lbl-listnumbering-description-new-listnumbering-in-pdf-2-0",
+      "level": 5,
+      "title": "Lbl (ListNumbering, Description, New ListNumbering in PDF 2.0)",
+      "alternateIds": [
+        "role-lbl-2.0"
+      ],
+      "number": "5.1.2.8"
+    },
+    {
+      "id": "link",
+      "href": "https://w3c.github.io/pdf-aam/#link",
+      "level": 5,
+      "title": "Link",
+      "alternateIds": [
+        "role-link"
+      ],
+      "number": "5.1.2.9"
+    },
+    {
+      "id": "link-does-not-contain-an-annotation-or-contains-an-annotation-that-doesn-t-go-anywhere",
+      "href": "https://w3c.github.io/pdf-aam/#link-does-not-contain-an-annotation-or-contains-an-annotation-that-doesn-t-go-anywhere",
+      "level": 5,
+      "title": "Link (Does not contain an annotation OR contains an annotation that doesn't go anywhere)",
+      "alternateIds": [
+        "role-link-no-dest"
+      ],
+      "number": "5.1.2.10"
+    },
+    {
+      "id": "attribute-textdecorationtype-underline",
+      "href": "https://w3c.github.io/pdf-aam/#attribute-textdecorationtype-underline",
+      "level": 5,
+      "title": "Attribute (TextDecorationType Underline)",
+      "alternateIds": [
+        "role-attribute-textdecorationtype-underline"
+      ],
+      "number": "5.1.2.11"
+    },
+    {
+      "id": "mapping_additional",
+      "href": "https://w3c.github.io/pdf-aam/#mapping_additional",
+      "level": 3,
+      "title": "Special Processing Requiring Additional Computation",
+      "alternateIds": [
+        "x5-2-special-processing-requiring-additional-computation"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "mapping_actions",
+      "href": "https://w3c.github.io/pdf-aam/#mapping_actions",
+      "level": 3,
+      "title": "Actions",
+      "alternateIds": [
+        "x5-3-actions"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/pdf-aam/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy considerations",
+      "alternateIds": [
+        "x6-privacy-considerations"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/pdf-aam/#security-considerations",
+      "level": 2,
+      "title": "Security considerations",
+      "alternateIds": [
+        "x7-security-considerations"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "changelog",
+      "href": "https://w3c.github.io/pdf-aam/#changelog",
+      "level": 2,
+      "title": "Change Log",
+      "alternateIds": [
+        "a-change-log"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/pdf-aam/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgments",
+      "alternateIds": [
+        "b-acknowledgments"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "ack_group",
+      "href": "https://w3c.github.io/pdf-aam/#ack_group",
+      "level": 3,
+      "title": "Participants active in the ARIA WG at the time of publication",
+      "alternateIds": [
+        "b-1-participants-active-in-the-aria-wg-at-the-time-of-publication"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "ack_funders",
+      "href": "https://w3c.github.io/pdf-aam/#ack_funders",
+      "level": 3,
+      "title": "Enabling funders",
+      "alternateIds": [
+        "b-2-enabling-funders"
+      ],
+      "number": "B.2"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/pdf-aam/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "c-references"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/pdf-aam/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "c-1-normative-references"
+      ],
+      "number": "C.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/pdf-aam/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "c-2-informative-references"
+      ],
+      "number": "C.2"
+    }
+  ]
+}
