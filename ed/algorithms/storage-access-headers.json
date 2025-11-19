@@ -1,0 +1,318 @@
+{
+  "spec": {
+    "title": "Storage Access Headers",
+    "url": "https://privacycg.github.io/storage-access-headers/"
+  },
+  "algorithms": [
+    {
+      "name": "request cache mode",
+      "href": "https://privacycg.github.io/storage-access-headers/#request-cache-mode",
+      "html": "This document redefines a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③\">request</a>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"request\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"request-cache-mode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cache mode</dfn> as the cache mode returned by running the following steps, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④\">request</a> <var>request</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#request-single-hop-cache-mode\" id=\"ref-for-request-single-hop-cache-mode\">single-hop cache mode</a> is not null, return <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#request-single-hop-cache-mode\" id=\"ref-for-request-single-hop-cache-mode①\">single-hop cache mode</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#request-internal-cache-mode\" id=\"ref-for-request-internal-cache-mode\">internal cache mode</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "request/storage access status",
+      "href": "https://privacycg.github.io/storage-access-headers/#request-storage-access-status",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"request\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"request-storage-access-status\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">storage access status</dfn> of a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤\">request</a> <var>request</var> is the <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#storage-access-status\" id=\"ref-for-storage-access-status\">storage access status</a>-or-null returned by running the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If the user agent’s cookie store would attach cookies with the <code>SameSite=Strict</code> attribute to <var>request</var>, then return null. <a data-link-type=\"biblio\" href=\"https://privacycg.github.io/storage-access-headers/#biblio-cookies\" title=\"HTTP State Management Mechanism\">[COOKIES]</a></p>"
+        },
+        {
+          "html": "<p>Let <var>allowed</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean\">boolean</a>, initially set to the result of <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#determine-whether-the-user-agents-cookie-store-allows-unpartitioned-cookies-to-be-accessed\" id=\"ref-for-determine-whether-the-user-agents-cookie-store-allows-unpartitioned-cookies-to-be-accessed\">determining whether the user agent’s cookie store allows unpartitioned cookies to be accessed</a> given <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">url</a>, <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a>, and <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#request-eligible-for-storage-access\" id=\"ref-for-request-eligible-for-storage-access\">eligible for storage-access</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>allowed</var> is true, then return \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#storage-access-status-active\" id=\"ref-for-storage-access-status-active\">active</a></code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#request-eligible-for-storage-access\" id=\"ref-for-request-eligible-for-storage-access①\">eligible for storage-access</a> is \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#storage-access-eligibility-eligible\" id=\"ref-for-storage-access-eligibility-eligible\">eligible</a></code>\", then return \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#storage-access-status-none\" id=\"ref-for-storage-access-status-none\">none</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>featureIsAllowed</var> the result of running <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-permissions-policy/#should-request-be-allowed-to-use-feature\" id=\"ref-for-should-request-be-allowed-to-use-feature\">Should request be allowed to use feature?</a> given \"<code>storage-access</code>\" and <var>request</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>featureIsAllowed</var> is false, then return \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#storage-access-status-none\" id=\"ref-for-storage-access-status-none①\">none</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Set <var>allowed</var> to the result of <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#determine-whether-the-user-agents-cookie-store-allows-unpartitioned-cookies-to-be-accessed\" id=\"ref-for-determine-whether-the-user-agents-cookie-store-allows-unpartitioned-cookies-to-be-accessed①\">determining whether the user agent’s cookie store allows unpartitioned cookies to be accessed</a> given <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url①\">url</a>, <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①\">client</a>, and \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#storage-access-eligibility-eligible\" id=\"ref-for-storage-access-eligibility-eligible①\">eligible</a></code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>allowed</var> is true, then return \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#storage-access-status-inactive\" id=\"ref-for-storage-access-status-inactive\">inactive</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Return \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#storage-access-status-none\" id=\"ref-for-storage-access-status-none②\">none</a></code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "determine whether the user agent’s cookie store allows unpartitioned cookies to be accessed",
+      "href": "https://privacycg.github.io/storage-access-headers/#determine-whether-the-user-agents-cookie-store-allows-unpartitioned-cookies-to-be-accessed",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"determine-whether-the-user-agents-cookie-store-allows-unpartitioned-cookies-to-be-accessed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine whether the user agent’s cookie store allows unpartitioned cookies to be accessed</dfn>, given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">url</a> <var>url</var>, an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>environment</var>, and a <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#storage-access-eligibility\" id=\"ref-for-storage-access-eligibility\">storage access eligibility</a> <var>storage access eligibility</var>, run the following steps (which return a boolean):",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>top level site</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site②\">obtaining a site</a> from <var>environment</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin①\">top-level origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>destination site</var> be the the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#obtain-a-site\" id=\"ref-for-obtain-a-site③\">obtaining a site</a> from <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>key</var> be <code>(<var>top level site</var>, <var>destination site</var>)</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>allowed</var> be the result of <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#determine-whether-the-user-agent-explicitly-allows-unpartitioned-cookie-access\" id=\"ref-for-determine-whether-the-user-agent-explicitly-allows-unpartitioned-cookie-access\">determining whether the user agent explicitly allows unpartitioned cookie access</a> given <var>key</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>allowed</var> is true, then return true.</p>"
+        },
+        {
+          "html": "<p>If <var>storage access eligibility</var> is not \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#storage-access-eligibility-eligible\" id=\"ref-for-storage-access-eligibility-eligible②\">eligible</a></code>\", then return false.</p>"
+        },
+        {
+          "html": "<p>Let <var>entry</var> be the result of  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-get-a-permission-store-entry\" id=\"ref-for-dfn-get-a-permission-store-entry①\">getting a permission store entry</a> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissiondescriptor\" id=\"ref-for-dom-permissiondescriptor①\">PermissionDescriptor</a></code> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissiondescriptor-name\" id=\"ref-for-dom-permissiondescriptor-name①\">name</a></code> initialized to \"<code>storage-access</code>\" and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-permission-key\" id=\"ref-for-dfn-permission-key①\">permission key</a> of <var>key</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-state\" id=\"ref-for-dfn-state①\">state</a> is not \"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-granted\" id=\"ref-for-dfn-granted\">granted</a></code>\", then return false.</p>"
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "set-storage-access",
+      "href": "https://privacycg.github.io/storage-access-headers/#set-storage-access",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-lt=\"set-storage-access\" data-noexport=\"\" id=\"set-storage-access\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the <code>Sec-Fetch-Storage-Access</code> header</dfn> for a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⓪\">request</a> <var>request</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url③\">url</a> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url\">potentially trustworthy URL</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a> is not \"<code>include</code>\", abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>access</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#request-storage-access-status\" id=\"ref-for-request-storage-access-status\">storage access status</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>access</var> is null, abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>value</var> be a <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc9651#\" id=\"ref-for-something①\">Structured Field</a> value whose value is a <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc9651#name-tokens\" id=\"ref-for-name-tokens①\">token</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>’s value to <var>access</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-set-structured-header\" id=\"ref-for-concept-header-list-set-structured-header\">Set a structured field value</a> given (\"<code>Sec-Fetch-Storage-Access</code>\", <var>value</var>) in <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list\">header list</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "perform a storage access retry check",
+      "href": "https://privacycg.github.io/storage-access-headers/#perform-a-storage-access-retry-check",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"perform-a-storage-access-retry-check\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">perform a storage access retry check</dfn> for a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①①\">request</a> <var>request</var> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>response</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode①\">credentials mode</a> is not \"<code>include</code>\", return failure.</p>"
+        },
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#request-eligible-for-storage-access\" id=\"ref-for-request-eligible-for-storage-access③\">eligible for storage-access</a> is \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#storage-access-eligibility-eligible\" id=\"ref-for-storage-access-eligibility-eligible③\">eligible</a></code>\", return failure.</p>"
+        },
+        {
+          "html": "<p>Let <var>storageAccessStatus</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#request-storage-access-status\" id=\"ref-for-request-storage-access-status①\">storage access status</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>storageAccessStatus</var> is not \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#storage-access-status-inactive\" id=\"ref-for-storage-access-status-inactive②\">inactive</a></code>\", return failure.</p>"
+        },
+        {
+          "html": "<p>Let <var>parsedHeader</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header\">getting a structured field value</a> given \"<code>Activate-Storage-Access</code>\" and \"<code>item</code>\" from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parsedHeader</var> is null, return failure.</p>"
+        },
+        {
+          "html": "<p>Let (<var>value</var>, <var>params</var>) be <var>parsedHeader</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc9651#name-tokens\" id=\"ref-for-name-tokens③\">token</a>, return failure.</p>"
+        },
+        {
+          "html": "<p>If <var>value</var>’s value <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is\">is</a> not \"<code>retry</code>\", return failure.</p>"
+        },
+        {
+          "html": "<p>If <var>params</var>[\"allowed-origin\"] does not exist, return failure.</p>"
+        },
+        {
+          "html": "<p>Let <var>allowedOrigin</var> be <var>params</var>[\"allowed-origin\"].</p>"
+        },
+        {
+          "html": "<p>If <var>allowedOrigin</var> is a <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc9651#name-tokens\" id=\"ref-for-name-tokens④\">token</a> whose value is \"<code>*</code>\", return success.</p>"
+        },
+        {
+          "html": "<p>If <var>allowedOrigin</var> is not a <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc9651#name-strings\" id=\"ref-for-name-strings①\">string</a>, return failure.</p>"
+        },
+        {
+          "html": "<p>If the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#byte-serializing-a-request-origin\" id=\"ref-for-byte-serializing-a-request-origin\">byte-serializing a request origin</a> with <var>request</var> is not <var>allowedOrigin</var>’s value, then return failure.</p>"
+        },
+        {
+          "html": "<p>Return success.</p>"
+        }
+      ]
+    },
+    {
+      "name": "perform a storage access load check",
+      "href": "https://privacycg.github.io/storage-access-headers/#perform-a-storage-access-load-check",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"perform-a-storage-access-load-check\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">perform a storage access load check</dfn> for a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①②\">request</a> <var>request</var> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a> <var>response</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>storageAccessStatus</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#request-storage-access-status\" id=\"ref-for-request-storage-access-status②\">storage access status</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>storageAccessStatus</var> is not one of \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#storage-access-status-inactive\" id=\"ref-for-storage-access-status-inactive③\">inactive</a></code>\" or \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#storage-access-status-active\" id=\"ref-for-storage-access-status-active②\">active</a></code>\", return failure.</p>"
+        },
+        {
+          "html": "<p>Let <var>parsedHeader</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header①\">getting a structured field value</a> given \"<code>Activate-Storage-Access</code>\" and \"<code>item</code>\" from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>parsedHeader</var> is null, return failure.</p>"
+        },
+        {
+          "html": "<p>Let (<var>value</var>, <var>params</var>) be <var>parsedHeader</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://datatracker.ietf.org/doc/html/rfc9651#name-tokens\" id=\"ref-for-name-tokens⑤\">token</a>, return failure.</p>"
+        },
+        {
+          "html": "<p>If <var>value</var>’s value <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is①\">is</a> not \"<code>load</code>\", return failure.</p>"
+        },
+        {
+          "html": "<p>Return success.</p>"
+        }
+      ]
+    },
+    {
+      "name": "append the Sec-Fetch-Storage-Access header",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#set-storage-access\" id=\"ref-for-set-storage-access\">Set the <code>Sec-Fetch-Storage-Access</code> header</a> for <var>r</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "modified append a request Origin header",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If at least one of the following conditions is true:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get\" id=\"ref-for-concept-header-list-get\">getting</a> `<code><a data-link-type=\"http-header\" href=\"https://privacycg.github.io/storage-access-headers/#http-headerdef-sec-fetch-storage-access\" id=\"ref-for-http-headerdef-sec-fetch-storage-access②\">Sec-Fetch-Storage-Access</a></code>` from <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list①\">header list</a> is \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#storage-access-status-inactive\" id=\"ref-for-storage-access-status-inactive④\">inactive</a></code>\"</p>\n       </li><li data-md=\"\">\n        <p><var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method\">method</a> is neither `<code>GET</code>` nor `<code>HEAD</code>`</p>\n      </li></ul>\n      <p>Then:</p>"
+        }
+      ]
+    },
+    {
+      "name": "modified HTTP-fetch",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If the result of <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#perform-a-storage-access-retry-check\" id=\"ref-for-perform-a-storage-access-retry-check\">performing a storage access retry check</a> for <var>request</var> is success, then return the result of running <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#http-storage-access-retry-fetch\" id=\"ref-for-http-storage-access-retry-fetch\">HTTP-storage-access-retry-fetch</a> given <var>fetchParams</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "modified HTTP-fetch 2",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#request-single-hop-cache-mode\" id=\"ref-for-request-single-hop-cache-mode②\">single-hop cache mode</a> to null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTTP-storage-access-retry-fetch",
+      "href": "https://privacycg.github.io/storage-access-headers/#http-storage-access-retry-fetch",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"http-storage-access-retry-fetch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTTP-storage-access-retry-fetch</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-params\" id=\"ref-for-fetch-params\">fetch params</a> <var>fetchParams</var>, run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>request</var> be <var>fetchParams</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①③\">request</a>.</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#request-storage-access-status\" id=\"ref-for-request-storage-access-status③\">storage access status</a> is \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#storage-access-status-inactive\" id=\"ref-for-storage-access-status-inactive⑤\">inactive</a></code>\".</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#request-eligible-for-storage-access\" id=\"ref-for-request-eligible-for-storage-access④\">eligible for storage-access</a> is not \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#storage-access-eligibility-eligible\" id=\"ref-for-storage-access-eligibility-eligible④\">eligible</a></code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-count\" id=\"ref-for-concept-request-redirect-count\">redirect count</a> is 20, then return a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a>.</p>"
+        },
+        {
+          "html": "<p>Increase <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-count\" id=\"ref-for-concept-request-redirect-count①\">redirect count</a> by 1.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url④\">url</a> to <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url-list\" id=\"ref-for-concept-request-url-list\">URL list</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#request-single-hop-cache-mode\" id=\"ref-for-request-single-hop-cache-mode③\">single-hop cache mode</a> to \"<code>reload</code>\".</p>"
+        },
+        {
+          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#request-eligible-for-storage-access\" id=\"ref-for-request-eligible-for-storage-access⑤\">eligible for storage-access</a> to \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#storage-access-eligibility-eligible\" id=\"ref-for-storage-access-eligibility-eligible⑤\">eligible</a></code>\".</p>"
+        },
+        {
+          "html": "<p class=\"assertion\">Assert: <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#request-storage-access-status\" id=\"ref-for-request-storage-access-status④\">storage access status</a> is \"<code><a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#storage-access-status-active\" id=\"ref-for-storage-access-status-active③\">active</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>recursive</var> be true.</p>"
+        },
+        {
+          "html": "<p>Return the result of running <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-main-fetch\" id=\"ref-for-concept-main-fetch\">main fetch</a> given <var>fetchParams</var> and <var>recursive</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "modified create navigation params by fetching",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>compute has storage access</var> be an algorithm with the following steps, which return a boolean:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>response</var> is not null and the result of <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access-headers/#perform-a-storage-access-load-check\" id=\"ref-for-perform-a-storage-access-load-check\">performing a storage access load check</a> given <var>request</var> and <var>response</var> is success, return true.</p>"
+            },
+            {
+              "html": "<p>If <var>sourceSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#source-snapsnot-params-environment-id\" id=\"ref-for-source-snapsnot-params-environment-id\">environment id</a> does not equal <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-id\" id=\"ref-for-concept-environment-id\">id</a>, return false.</p>"
+            },
+            {
+              "html": "<p>If <var>originalURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin②\">origin</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin\" id=\"ref-for-same-origin\">same origin</a> with <var>currentURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin③\">origin</a>, return false.</p>"
+            },
+            {
+              "html": "<p>If <var>response</var> is not null and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#response-has-cross-origin-redirects\" id=\"ref-for-response-has-cross-origin-redirects\">has-cross-origin-redirects</a> is true, return false.</p>"
+            },
+            {
+              "html": "<p>Return true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-reserved-client\" id=\"ref-for-concept-request-reserved-client①\">reserved client</a>’s <a data-link-type=\"dfn\" href=\"https://privacycg.github.io/storage-access/#environment-has-storage-access\" id=\"ref-for-environment-has-storage-access\">has storage access</a> to the result of executing <var>compute has storage access</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

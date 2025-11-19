@@ -1,0 +1,297 @@
+{
+  "spec": {
+    "title": "The Idempotency-Key HTTP Header Field",
+    "url": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#title",
+      "level": 1,
+      "title": "The Idempotency-Key HTTP Header Field"
+    },
+    {
+      "id": "section-abstract",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-abstract",
+      "level": 2,
+      "title": "Abstract",
+      "alternateIds": [
+        "abstract"
+      ]
+    },
+    {
+      "id": "section-note.1",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-note.1",
+      "level": 2,
+      "title": "About This Document",
+      "alternateIds": [
+        "name-about-this-document"
+      ]
+    },
+    {
+      "id": "section-boilerplate.1",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-boilerplate.1",
+      "level": 2,
+      "title": "Status of This Memo",
+      "alternateIds": [
+        "name-status-of-this-memo"
+      ]
+    },
+    {
+      "id": "section-boilerplate.2",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-boilerplate.2",
+      "level": 2,
+      "title": "Copyright Notice",
+      "alternateIds": [
+        "name-copyright-notice"
+      ]
+    },
+    {
+      "id": "section-toc.1",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-toc.1",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "name-table-of-contents"
+      ]
+    },
+    {
+      "id": "section-1",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-1",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "name-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "section-1.1",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-1.1",
+      "level": 3,
+      "title": "Notational Conventions",
+      "alternateIds": [
+        "name-notational-conventions"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "section-2",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-2",
+      "level": 2,
+      "title": "The Idempotency-Key HTTP Request Header Field",
+      "alternateIds": [
+        "name-the-idempotency-key-http-re"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "section-2.1",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-2.1",
+      "level": 3,
+      "title": "Syntax",
+      "alternateIds": [
+        "name-syntax"
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "section-2.2",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-2.2",
+      "level": 3,
+      "title": "Uniqueness of Idempotency Key",
+      "alternateIds": [
+        "name-uniqueness-of-idempotency-k"
+      ],
+      "number": "2.2"
+    },
+    {
+      "id": "section-2.3",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-2.3",
+      "level": 3,
+      "title": "Idempotency Key Validity and Expiry",
+      "alternateIds": [
+        "name-idempotency-key-validity-an"
+      ],
+      "number": "2.3"
+    },
+    {
+      "id": "section-2.4",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-2.4",
+      "level": 3,
+      "title": "Idempotency Fingerprint",
+      "alternateIds": [
+        "name-idempotency-fingerprint"
+      ],
+      "number": "2.4"
+    },
+    {
+      "id": "section-2.5",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-2.5",
+      "level": 3,
+      "title": "Responsibilities",
+      "alternateIds": [
+        "name-responsibilities"
+      ],
+      "number": "2.5"
+    },
+    {
+      "id": "section-2.5.1",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-2.5.1",
+      "level": 4,
+      "title": "Client",
+      "alternateIds": [
+        "name-client"
+      ],
+      "number": "2.5.1"
+    },
+    {
+      "id": "section-2.5.2",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-2.5.2",
+      "level": 4,
+      "title": "Resource",
+      "alternateIds": [
+        "name-resource"
+      ],
+      "number": "2.5.2"
+    },
+    {
+      "id": "section-2.6",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-2.6",
+      "level": 3,
+      "title": "Idempotency Enforcement",
+      "alternateIds": [
+        "name-idempotency-enforcement"
+      ],
+      "number": "2.6"
+    },
+    {
+      "id": "section-2.7",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-2.7",
+      "level": 3,
+      "title": "Error Handling",
+      "alternateIds": [
+        "name-error-handling"
+      ],
+      "number": "2.7"
+    },
+    {
+      "id": "section-3",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-3",
+      "level": 2,
+      "title": "IANA Considerations",
+      "alternateIds": [
+        "name-iana-considerations"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "section-3.1",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-3.1",
+      "level": 3,
+      "title": "The Idempotency-Key HTTP Request Header Field",
+      "alternateIds": [
+        "name-the-idempotency-key-http-req"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "section-4",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-4",
+      "level": 2,
+      "title": "Implementation Status",
+      "alternateIds": [
+        "name-implementation-status"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "section-4.1",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-4.1",
+      "level": 3,
+      "title": "Implementing the Concept",
+      "alternateIds": [
+        "name-implementing-the-concept"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "section-5",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-5",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "name-security-considerations"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "section-6",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-6",
+      "level": 2,
+      "title": "Examples",
+      "alternateIds": [
+        "name-examples"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "section-7",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-7",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "name-references"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "section-7.1",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-7.1",
+      "level": 3,
+      "title": "Normative References",
+      "alternateIds": [
+        "name-normative-references"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "section-7.2",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#section-7.2",
+      "level": 3,
+      "title": "Informative References",
+      "alternateIds": [
+        "name-informative-references"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "appendix-A",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#appendix-A",
+      "level": 2,
+      "title": "Changes from Draft-06",
+      "alternateIds": [
+        "name-changes-from-draft-06"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "appendix-B",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#appendix-B",
+      "level": 2,
+      "title": "Acknowledgments",
+      "alternateIds": [
+        "name-acknowledgments"
+      ]
+    },
+    {
+      "id": "appendix-C",
+      "href": "https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-07.html#appendix-C",
+      "level": 2,
+      "title": "Authors' Addresses",
+      "alternateIds": [
+        "name-authors-addresses"
+      ]
+    }
+  ]
+}

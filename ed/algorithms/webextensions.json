@@ -1,0 +1,128 @@
+{
+  "spec": {
+    "title": "Web Extensions",
+    "url": "https://w3c.github.io/webextensions/specification/index.html"
+  },
+  "algorithms": [
+    {
+      "html": "To determine the URL to use for matching a document, given the document, <code>match_origin_as_fallback</code> and <code>match_about_blank</code>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>url</var> be the document’s URL.</p>"
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme\">scheme</a> of <var>url</var> is <code>http</code>, <code>https</code> or <code>file</code>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return <var>url</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme①\">scheme</a> of <var>url</var> is <code>blob</code>, <code>data</code> or <code>filesystem</code>, or if <var>url</var> is <code>about:blank</code> or <code>about:srcdoc</code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <code>match_origin_as_fallback</code> is set to <code>true</code>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If the document’s origin is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-tuple\" id=\"ref-for-concept-origin-tuple\">tuple origin</a>:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>document-origin</var> be the <a href=\"https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin\">serialization</a> of the document’s origin.</p>"
+                    },
+                    {
+                      "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme②\">scheme</a> of <var>document-origin</var> is <code>http</code>, <code>https</code> or <code>file</code>:",
+                      "rationale": "return",
+                      "steps": [
+                        {
+                          "html": "<p>Return <var>document-origin</var>.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>Else, return null.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>precursor-origin</var> be the <a href=\"https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin\">serialization</a> of the document’s precursor origin, if any.</p>"
+                    },
+                    {
+                      "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme③\">scheme</a> of <var>precursor-origin</var> is <code>http</code>, <code>https</code> or <code>file</code>:",
+                      "rationale": "return",
+                      "steps": [
+                        {
+                          "html": "<p>Return <var>precursor-origin</var>.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>Else, return null.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "Else, if <code>match_about_blank</code> is set to <code>true</code>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>url</var> is <code>about:blank</code> or <code>about:srcdoc</code>:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>opener</var> be the active document of document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#opener-browsing-context\" id=\"ref-for-opener-browsing-context\">opener browsing context</a>.</p>"
+                    },
+                    {
+                      "html": "<p>If all of the following conditions are true:</p>\n           <ul>\n            <li data-md=\"\">\n             <p><var>opener</var> is not null</p>\n            </li><li data-md=\"\">\n             <p><var>opener</var>’s origin is still the same as the document’s <u class=\"link-error\" data-lt=\"opener origin at creation\" title=\"LINK ERROR: No 'dfn' refs found for 'opener origin at creation' that are marked for export.\n  (Possible specs this could be from: html)\">opener origin at creation</u></p>\n            </li><li data-md=\"\">\n             <p>The algorithm has not been repeated for <var>opener</var> yet.</p>\n           </li></ul>\n           <p>Then repeat the algorithm for <var>opener</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To determine if a content script should be injected in a document:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>url</var> be the result of running <a href=\"https://w3c.github.io/webextensions/specification/index.html#determine-the-url-for-matching-a-document\">§ 18.1 Determine the URL for matching a document</a>.</p>"
+        },
+        {
+          "html": "<p>If the extension does not have access to <var>url</var>, return.</p>"
+        },
+        {
+          "html": "<p>If <var>url</var> is not matched by a match pattern in <code>matches</code>, return.</p>"
+        },
+        {
+          "html": "<p>If <code>include_globs</code> is present and <var>url</var> is not matched by any glob pattern, return.</p>"
+        },
+        {
+          "html": "<p>If <var>url</var> matches an entry in <code>exclude_matches</code> or <code>exclude_globs</code>, return.</p>"
+        },
+        {
+          "html": "<p>If this is a child frame, and <code>all_frames</code> is not <code>true</code>, return.</p>"
+        },
+        {
+          "html": "<p>Otherwise, inject the content script. This should be done based on the <code>run_at</code> setting.</p>"
+        }
+      ]
+    }
+  ]
+}

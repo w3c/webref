@@ -16670,6 +16670,35 @@
       "extended": []
     },
     {
+      "for": [
+        "shape()"
+      ],
+      "name": "arc-command",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-arc-command",
+      "syntax": "arc <command-end-point> [ [ of <length-percentage>{1,2} ] && <arc-sweep>? && <arc-size>? && [rotate <angle>]? ]",
+      "extended": []
+    },
+    {
+      "for": [
+        "shape()"
+      ],
+      "name": "arc-size",
+      "prose": "<arc-size> can be large or small, indicating that the larger or smaller, respectively, of the two possible arcs must be chosen. If omitted, this defaults to small.",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-arc-size",
+      "syntax": "large | small",
+      "extended": []
+    },
+    {
+      "for": [
+        "shape()"
+      ],
+      "name": "arc-sweep",
+      "prose": "<arc-sweep> can be cw or ccw, indicating that the arc that is traced around the ellipse clockwise or counter-clockwise from the center, respectively, must be chosen. If omitted, this defaults to ccw.",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-arc-sweep",
+      "syntax": "cw | ccw",
+      "extended": []
+    },
+    {
       "name": "at-keyword-token",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <unicode-range-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-at-keyword-token",
@@ -17064,6 +17093,15 @@
       "extended": []
     },
     {
+      "for": [
+        "shape()"
+      ],
+      "name": "command-end-point",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-command-end-point",
+      "syntax": "[ to <position> | by <coordinate-pair> ]",
+      "extended": []
+    },
+    {
       "name": "common-lig-values",
       "href": "https://drafts.csswg.org/css-fonts-4/#common-lig-values",
       "syntax": "[ common-ligatures | no-common-ligatures ]",
@@ -17215,9 +17253,27 @@
       "extended": []
     },
     {
+      "for": [
+        "shape()"
+      ],
+      "name": "control-point",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-control-point",
+      "syntax": "[ <position> | <relative-control-point> ]",
+      "extended": []
+    },
+    {
       "name": "coord-box",
       "href": "https://drafts.csswg.org/css-box-4/#typedef-coord-box",
       "syntax": "<paint-box> | view-box",
+      "extended": []
+    },
+    {
+      "for": [
+        "shape()"
+      ],
+      "name": "coordinate-pair",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-coordinate-pair",
+      "syntax": "<length-percentage>{2}",
       "extended": []
     },
     {
@@ -17284,6 +17340,15 @@
       "name": "cursor-predefined",
       "href": "https://drafts.csswg.org/css-ui-4/#typedef-cursor-predefined",
       "syntax": "auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | grab | grabbing | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out",
+      "extended": []
+    },
+    {
+      "for": [
+        "shape()"
+      ],
+      "name": "curve-command",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-curve-command",
+      "syntax": "curve [ [ to <position> with <control-point> [ / <control-point> ]? ] | [ by <coordinate-pair> with <relative-control-point> [ / <relative-control-point> ]? ] ]",
       "extended": []
     },
     {
@@ -17752,6 +17817,15 @@
       "extended": []
     },
     {
+      "for": [
+        "shape()"
+      ],
+      "name": "horizontal-line-command",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-horizontal-line-command",
+      "syntax": "hline [ to [ <length-percentage> | left | center | right | x-start | x-end ] | by <length-percentage> ]",
+      "extended": []
+    },
+    {
       "name": "hue",
       "href": "https://drafts.csswg.org/css-color-4/#typedef-hue",
       "syntax": "<number> | <angle>",
@@ -18029,6 +18103,15 @@
       "extended": []
     },
     {
+      "for": [
+        "shape()"
+      ],
+      "name": "line-command",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-line-command",
+      "syntax": "line <command-end-point>",
+      "extended": []
+    },
+    {
       "name": "line-name-list",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-line-name-list",
       "syntax": "[ <line-names> | <name-repeat> ]+",
@@ -18281,6 +18364,15 @@
       "extended": []
     },
     {
+      "for": [
+        "shape()"
+      ],
+      "name": "move-command",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-move-command",
+      "syntax": "move <command-end-point>",
+      "extended": []
+    },
+    {
       "name": "mq-boolean",
       "href": "https://drafts.csswg.org/mediaqueries-4/#typedef-mq-boolean",
       "syntax": "<integer [0,1]>",
@@ -18416,6 +18508,15 @@
       "name": "page-selector-list",
       "href": "https://drafts.csswg.org/css-page-3/#typedef-page-selector-list",
       "syntax": "<page-selector>#",
+      "extended": []
+    },
+    {
+      "for": [
+        "size"
+      ],
+      "name": "page-size",
+      "prose": "A page size can be specified using one of the following media names. This is the equivalent of specifying size using length values. The definition of the media names comes from Media Standardized Names [PWGMSN].",
+      "href": "https://drafts.csswg.org/css-page-3/#typedef-page-size-page-size",
       "extended": []
     },
     {
@@ -18680,6 +18781,15 @@
       "name": "referrer-policy-modifier",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrer-policy-modifier",
       "syntax": "referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+      "extended": []
+    },
+    {
+      "for": [
+        "shape()"
+      ],
+      "name": "relative-control-point",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-relative-control-point",
+      "syntax": "<coordinate-pair> [ from [ start | end | origin ] ]?",
       "extended": []
     },
     {
@@ -18982,6 +19092,15 @@
       "name": "slash-separated-border-radius-syntax",
       "href": "https://drafts.csswg.org/css-borders-4/#typedef-slash-separated-border-radius-syntax",
       "syntax": "<length-percentage [0,∞]> [ / <length-percentage [0,∞]> ]?",
+      "extended": []
+    },
+    {
+      "for": [
+        "shape()"
+      ],
+      "name": "smooth-command",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-smooth-command",
+      "syntax": "smooth [ [ to <position> [ with <control-point> ]? ] | [ by <coordinate-pair> [ with <relative-control-point> ]? ] ]",
       "extended": []
     },
     {
@@ -19393,6 +19512,15 @@
       "name": "var-args",
       "href": "https://drafts.csswg.org/css-variables-2/#typedef-var-args",
       "syntax": "var( <declaration-value> , <declaration-value>? )",
+      "extended": []
+    },
+    {
+      "for": [
+        "shape()"
+      ],
+      "name": "vertical-line-command",
+      "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-vertical-line-command",
+      "syntax": "vline [ to [ <length-percentage> | top | center | bottom | y-start | y-end ] | by <length-percentage> ]",
       "extended": []
     },
     {

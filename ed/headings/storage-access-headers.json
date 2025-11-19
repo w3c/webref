@@ -1,0 +1,268 @@
+{
+  "spec": {
+    "title": "Storage Access Headers",
+    "url": "https://privacycg.github.io/storage-access-headers/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://privacycg.github.io/storage-access-headers/#title",
+      "level": 1,
+      "title": "Storage Access Headers"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://privacycg.github.io/storage-access-headers/#subtitle",
+      "level": 2,
+      "title": "Draft Community Group Report, 2 November 2025"
+    },
+    {
+      "id": "abstract",
+      "href": "https://privacycg.github.io/storage-access-headers/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://privacycg.github.io/storage-access-headers/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://privacycg.github.io/storage-access-headers/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://privacycg.github.io/storage-access-headers/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "infra",
+      "href": "https://privacycg.github.io/storage-access-headers/#infra",
+      "level": 2,
+      "title": "Infra",
+      "number": "2"
+    },
+    {
+      "id": "request-infrastructure",
+      "href": "https://privacycg.github.io/storage-access-headers/#request-infrastructure",
+      "level": 2,
+      "title": "Storage-Access Request Infrastructure",
+      "number": "3"
+    },
+    {
+      "id": "headers",
+      "href": "https://privacycg.github.io/storage-access-headers/#headers",
+      "level": 2,
+      "title": "Storage-Access Headers",
+      "number": "4"
+    },
+    {
+      "id": "sec-fetch-storage-access-header",
+      "href": "https://privacycg.github.io/storage-access-headers/#sec-fetch-storage-access-header",
+      "level": 3,
+      "title": "The Sec-Fetch-Storage-Access HTTP Request Header",
+      "number": "4.1"
+    },
+    {
+      "id": "activate-storage-access-header",
+      "href": "https://privacycg.github.io/storage-access-headers/#activate-storage-access-header",
+      "level": 3,
+      "title": "The Activate-Storage-Access HTTP Response Header",
+      "number": "4.2"
+    },
+    {
+      "id": "fetch-metadata-integration",
+      "href": "https://privacycg.github.io/storage-access-headers/#fetch-metadata-integration",
+      "level": 2,
+      "title": "Integration with Fetch Metadata",
+      "number": "5"
+    },
+    {
+      "id": "fetch-integration",
+      "href": "https://privacycg.github.io/storage-access-headers/#fetch-integration",
+      "level": 2,
+      "title": "Integration with Fetch",
+      "number": "6"
+    },
+    {
+      "id": "origin-header-integration",
+      "href": "https://privacycg.github.io/storage-access-headers/#origin-header-integration",
+      "level": 3,
+      "title": "Origin header",
+      "number": "6.1"
+    },
+    {
+      "id": "http-fetch",
+      "href": "https://privacycg.github.io/storage-access-headers/#http-fetch",
+      "level": 3,
+      "title": "HTTP-fetch",
+      "number": "6.2"
+    },
+    {
+      "id": "html-integration",
+      "href": "https://privacycg.github.io/storage-access-headers/#html-integration",
+      "level": 2,
+      "title": "Integration with HTML",
+      "number": "7"
+    },
+    {
+      "id": "navigation-integration",
+      "href": "https://privacycg.github.io/storage-access-headers/#navigation-integration",
+      "level": 3,
+      "title": "Changes to navigation",
+      "number": "7.1"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://privacycg.github.io/storage-access-headers/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "8"
+    },
+    {
+      "id": "security-opt-in",
+      "href": "https://privacycg.github.io/storage-access-headers/#security-opt-in",
+      "level": 3,
+      "title": "Opt-In signal",
+      "number": "8.1"
+    },
+    {
+      "id": "forbidden-header-name",
+      "href": "https://privacycg.github.io/storage-access-headers/#forbidden-header-name",
+      "level": 3,
+      "title": "Forbidden header name",
+      "number": "8.2"
+    },
+    {
+      "id": "deeper-cors-integration",
+      "href": "https://privacycg.github.io/storage-access-headers/#deeper-cors-integration",
+      "level": 3,
+      "title": "Deeper CORS Integration",
+      "number": "8.3"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://privacycg.github.io/storage-access-headers/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "9"
+    },
+    {
+      "id": "deployment-considerations",
+      "href": "https://privacycg.github.io/storage-access-headers/#deployment-considerations",
+      "level": 2,
+      "title": "10. Deployment Considerations"
+    },
+    {
+      "id": "vary",
+      "href": "https://privacycg.github.io/storage-access-headers/#vary",
+      "level": 3,
+      "title": "Vary",
+      "number": "10.1"
+    },
+    {
+      "id": "origin-header-interop",
+      "href": "https://privacycg.github.io/storage-access-headers/#origin-header-interop",
+      "level": 3,
+      "title": "Origin Header Interoperability",
+      "number": "10.2"
+    },
+    {
+      "id": "sec-prefix",
+      "href": "https://privacycg.github.io/storage-access-headers/#sec-prefix",
+      "level": 3,
+      "title": "Sec- Prefix",
+      "number": "10.3"
+    },
+    {
+      "id": "header-compression",
+      "href": "https://privacycg.github.io/storage-access-headers/#header-compression",
+      "level": 3,
+      "title": "Header Compression",
+      "number": "10.4"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://privacycg.github.io/storage-access-headers/#iana-considerations",
+      "level": 2,
+      "title": "11. IANA Considerations"
+    },
+    {
+      "id": "sec-fetch-storage-access-reg",
+      "href": "https://privacycg.github.io/storage-access-headers/#sec-fetch-storage-access-reg",
+      "level": 3,
+      "title": "Sec-Fetch-Storage-Access Registration",
+      "number": "11.1"
+    },
+    {
+      "id": "activate-storage-access-reg",
+      "href": "https://privacycg.github.io/storage-access-headers/#activate-storage-access-reg",
+      "level": 3,
+      "title": "Activate-Storage-Access Registration",
+      "number": "11.2"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://privacycg.github.io/storage-access-headers/#acknowledgements",
+      "level": 2,
+      "title": "12. Acknowledgements"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://privacycg.github.io/storage-access-headers/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://privacycg.github.io/storage-access-headers/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "index",
+      "href": "https://privacycg.github.io/storage-access-headers/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://privacycg.github.io/storage-access-headers/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://privacycg.github.io/storage-access-headers/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://privacycg.github.io/storage-access-headers/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://privacycg.github.io/storage-access-headers/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://privacycg.github.io/storage-access-headers/#informative",
+      "level": 3,
+      "title": "Informative References"
+    }
+  ]
+}
