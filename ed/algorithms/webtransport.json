@@ -524,16 +524,16 @@
           "html": "<p>Let <var>baseURL</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#api-base-url\" id=\"ref-for-api-base-url\">API base URL</a>.</p>"
         },
         {
-          "html": "<p>Let <var>parsedURL</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL record</a> resulting from <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">parsing</a>\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-webtransport-url-options-url\" id=\"ref-for-dom-webtransport-webtransport-url-options-url\">url</a></code> with <var>baseURL</var>.</p>"
+          "html": "<p>Let <var>url</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL record</a> resulting from <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">parsing</a>\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-webtransport-url-options-url\" id=\"ref-for-dom-webtransport-webtransport-url-options-url\">url</a></code> with <var>baseURL</var>.</p>"
         },
         {
-          "html": "<p>If <var>parsedURL</var> is a failure, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">SyntaxError</a></code> exception.</p>"
+          "html": "<p>If <var>url</var> is failure, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">SyntaxError</a></code> exception.</p>"
         },
         {
-          "html": "<p>If <var>parsedURL</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is not <code>https</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror①\">SyntaxError</a></code> exception.</p>"
+          "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is not <code>https</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror①\">SyntaxError</a></code> exception.</p>"
         },
         {
-          "html": "<p>If <var>parsedURL</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment\">fragment</a> is not null, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror②\">SyntaxError</a></code> exception.</p>"
+          "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment\">fragment</a> is not null, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑧\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror②\">SyntaxError</a></code> exception.</p>"
         },
         {
           "html": "<p>Let <var>allowPooling</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-webtransport-url-options-options\" id=\"ref-for-dom-webtransport-webtransport-url-options-options\">options</a></code>’s\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportoptions-allowpooling\" id=\"ref-for-dom-webtransportoptions-allowpooling\">allowPooling</a></code>.</p>"
@@ -546,6 +546,9 @@
         },
         {
           "html": "<p>If <var>dedicated</var> is false and <var>serverCertificateHashes</var> is non-null, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">throw</a> a\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror\">NotSupportedError</a></code> exception.</p>"
+        },
+        {
+          "html": "<p>Let <var>newConnection</var> be \"<code>no</code>\" if <var>dedicated</var> is false; otherwise \"<code>yes-and-dedicated</code>\".</p>"
         },
         {
           "html": "<p>Let <var>requireUnreliable</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-webtransport-url-options-options\" id=\"ref-for-dom-webtransport-webtransport-url-options-options②\">options</a></code>’s\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportoptions-requireunreliable\" id=\"ref-for-dom-webtransportoptions-requireunreliable\">requireUnreliable</a></code>.</p>"
@@ -578,7 +581,7 @@
           "html": "<p>Let <var>datagrams</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransportdatagramduplexstream-create\" id=\"ref-for-webtransportdatagramduplexstream-create\">creating</a> a\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportdatagramduplexstream\" id=\"ref-for-webtransportdatagramduplexstream⑥\">WebTransportDatagramDuplexStream</a></code>, its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransportdatagramduplexstream-create-readable\" id=\"ref-for-webtransportdatagramduplexstream-create-readable\">readable</a> set to\n <var>incomingDatagrams</var> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransportdatagramduplexstream-create-readablemode\" id=\"ref-for-webtransportdatagramduplexstream-create-readablemode\">readableMode</a> set to <var>datagramsReadableMode</var>.</p>"
         },
         {
-          "html": "<p>Let <var>transport</var> be a newly constructed <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport①④\">WebTransport</a></code> object, with:</p>\n      <dl>\n       <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-sendstreams-slot\" id=\"ref-for-dom-webtransport-sendstreams-slot\">[[SendStreams]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④\">ordered set</a></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-receivestreams-slot\" id=\"ref-for-dom-webtransport-receivestreams-slot\">[[ReceiveStreams]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤\">ordered set</a></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-incomingbidirectionalstreams-slot\" id=\"ref-for-dom-webtransport-incomingbidirectionalstreams-slot\">[[IncomingBidirectionalStreams]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream⑧\">ReadableStream</a></code></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-incomingunidirectionalstreams-slot\" id=\"ref-for-dom-webtransport-incomingunidirectionalstreams-slot\">[[IncomingUnidirectionalStreams]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream⑨\">ReadableStream</a></code></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot⑦\">[[State]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><code>\"connecting\"</code></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-ready-slot\" id=\"ref-for-dom-webtransport-ready-slot\">[[Ready]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>a new promise</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-reliability-slot\" id=\"ref-for-dom-webtransport-reliability-slot\">[[Reliability]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>\"pending\"</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-congestioncontrol-slot\" id=\"ref-for-dom-webtransport-congestioncontrol-slot\">[[CongestionControl]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>congestionControl</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-anticipatedconcurrentincomingunidirectionalstreams-slot\" id=\"ref-for-dom-webtransport-anticipatedconcurrentincomingunidirectionalstreams-slot\">[[AnticipatedConcurrentIncomingUnidirectionalStreams]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>anticipatedConcurrentIncomingUnidirectionalStreams</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-anticipatedconcurrentincomingbidirectionalstreams-slot\" id=\"ref-for-dom-webtransport-anticipatedconcurrentincomingbidirectionalstreams-slot\">[[AnticipatedConcurrentIncomingBidirectionalStreams]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>anticipatedConcurrentIncomingBidirectionalStreams</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-protocol-slot\" id=\"ref-for-dom-webtransport-protocol-slot\">[[Protocol]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>an empty string</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-closed-slot\" id=\"ref-for-dom-webtransport-closed-slot\">[[Closed]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>a new promise</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-draining-slot\" id=\"ref-for-dom-webtransport-draining-slot\">[[Draining]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>a new promise</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-datagrams-slot\" id=\"ref-for-dom-webtransport-datagrams-slot⑤\">[[Datagrams]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>datagrams</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-session-slot\" id=\"ref-for-dom-webtransport-session-slot②\">[[Session]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>null</p>\n      </dd></dl>"
+          "html": "<p>Let <var>transport</var> be a newly constructed <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport①④\">WebTransport</a></code> object, with:</p>\n      <dl>\n       <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-sendstreams-slot\" id=\"ref-for-dom-webtransport-sendstreams-slot\">[[SendStreams]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④\">ordered set</a></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-receivestreams-slot\" id=\"ref-for-dom-webtransport-receivestreams-slot\">[[ReceiveStreams]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤\">ordered set</a></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-incomingbidirectionalstreams-slot\" id=\"ref-for-dom-webtransport-incomingbidirectionalstreams-slot\">[[IncomingBidirectionalStreams]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream⑧\">ReadableStream</a></code></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-incomingunidirectionalstreams-slot\" id=\"ref-for-dom-webtransport-incomingunidirectionalstreams-slot\">[[IncomingUnidirectionalStreams]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream⑨\">ReadableStream</a></code></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot⑦\">[[State]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><code>\"connecting\"</code></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-ready-slot\" id=\"ref-for-dom-webtransport-ready-slot\">[[Ready]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>a new promise</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-reliability-slot\" id=\"ref-for-dom-webtransport-reliability-slot\">[[Reliability]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>\"pending\"</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-congestioncontrol-slot\" id=\"ref-for-dom-webtransport-congestioncontrol-slot\">[[CongestionControl]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>congestionControl</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-anticipatedconcurrentincomingunidirectionalstreams-slot\" id=\"ref-for-dom-webtransport-anticipatedconcurrentincomingunidirectionalstreams-slot\">[[AnticipatedConcurrentIncomingUnidirectionalStreams]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>anticipatedConcurrentIncomingUnidirectionalStreams</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-anticipatedconcurrentincomingbidirectionalstreams-slot\" id=\"ref-for-dom-webtransport-anticipatedconcurrentincomingbidirectionalstreams-slot\">[[AnticipatedConcurrentIncomingBidirectionalStreams]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>anticipatedConcurrentIncomingBidirectionalStreams</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-protocol-slot\" id=\"ref-for-dom-webtransport-protocol-slot\">[[Protocol]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>an empty string</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-closed-slot\" id=\"ref-for-dom-webtransport-closed-slot\">[[Closed]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>a new promise</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-draining-slot\" id=\"ref-for-dom-webtransport-draining-slot\">[[Draining]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>a new promise</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-datagrams-slot\" id=\"ref-for-dom-webtransport-datagrams-slot⑤\">[[Datagrams]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>datagrams</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-session-slot\" id=\"ref-for-dom-webtransport-session-slot②\">[[Session]]</a></code>\n       </dt><dd data-md=\"\">\n        <p>null</p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-newconnection-slot\" id=\"ref-for-dom-webtransport-newconnection-slot\">[[NewConnection]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>newConnection</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-requireunreliable-slot\" id=\"ref-for-dom-webtransport-requireunreliable-slot\">[[RequireUnreliable]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>requireUnreliable</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-servercertificatehashes-slot\" id=\"ref-for-dom-webtransport-servercertificatehashes-slot\">[[ServerCertificateHashes]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>serverCertificateHashes</var></p>\n      </dd></dl>"
         },
         {
           "html": "<p>Let <var>pullDatagramsAlgorithm</var> be an action that runs <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#pulldatagrams\" id=\"ref-for-pulldatagrams①\">pullDatagrams</a> with <var>transport</var>.</p>"
@@ -599,7 +602,22 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up\" id=\"ref-for-readablestream-set-up②\">Set up</a> <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-incomingunidirectionalstreams-slot\" id=\"ref-for-dom-webtransport-incomingunidirectionalstreams-slot①\">[[IncomingUnidirectionalStreams]]</a></code> with\n <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-pullalgorithm\" id=\"ref-for-readablestream-set-up-pullalgorithm②\">pullAlgorithm</a> set to <var>pullUnidirectionalStreamAlgorithm</var>, and\n <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-highwatermark\" id=\"ref-for-readablestream-set-up-highwatermark②\">highWaterMark</a> set to 0.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#initialize-webtransport-over-http\" id=\"ref-for-initialize-webtransport-over-http\">Initialize WebTransport over HTTP</a> with <var>transport</var>, <var>parsedURL</var>, <var>dedicated</var>,\n <var>requireUnreliable</var>, <var>congestionControl</var>, <var>protocols</var>, and <var>serverCertificateHashes</var>.</p>"
+          "html": "<p>Let <var>client</var> be <var>transport</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>origin</var> be <var>client</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a> is <var>url</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is\n <var>client</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-service-workers-mode\" id=\"ref-for-request-service-workers-mode\">service-workers mode</a> is \"<code>none</code>\",\n <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer\">referrer</a> is \"<code>no-referrer</code>\", <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a> is \"<code>webtransport</code>\",\n <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a> is \"<code>omit</code>\", <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode\">cache mode</a> is \"<code>no-store</code>\",\n <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container\">policy container</a> is <var>client</var>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container\">policy container</a>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">destination</a> is \"\",\n <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a> is <var>origin</var> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode\">redirect mode</a> is \"error\".</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch\">Fetch</a> <var>request</var>, with <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-useparallelqueue\" id=\"ref-for-fetch-useparallelqueue\">useParallelQueue</a> set to true, and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#process-response\" id=\"ref-for-process-response\">processResponse</a>\n set to the following steps given a <var>response</var>:",
+          "rationale": "process",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#process-a-webtransport-fetch-response\" id=\"ref-for-process-a-webtransport-fetch-response\">Process a WebTransport fetch response</a> with <var>response</var>, <var>origin</var>, <var>protocols</var>, and <var>congestionControl</var>.</p>"
+            }
+          ]
         },
         {
           "html": "<p>Return <var>transport</var>.</p>"
@@ -607,25 +625,39 @@
       ]
     },
     {
-      "name": "initialize WebTransport over HTTP",
-      "href": "https://w3c.github.io/webtransport/#initialize-webtransport-over-http",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-webtransport-over-http\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize WebTransport over HTTP</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport①⑤\">WebTransport</a></code> object\n<var>transport</var>, a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL record</a> <var>url</var>, a boolean <var>dedicated</var>, a boolean\n<var>requireUnreliable</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#enumdef-webtransportcongestioncontrol\" id=\"ref-for-enumdef-webtransportcongestioncontrol②\">WebTransportCongestionControl</a></code> <var>congestionControl</var>,\na <var>protocols</var> array, and a\nsequence&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dictdef-webtransporthash\" id=\"ref-for-dictdef-webtransporthash\">WebTransportHash</a></code>&gt; <var>serverCertificateHashes</var>, run these steps.",
+      "name": "obtain a WebTransport connection",
+      "href": "https://w3c.github.io/webtransport/#obtain-a-webtransport-connection",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"obtain-a-webtransport-connection\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a WebTransport connection</dfn>, given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#network-partition-key\" id=\"ref-for-network-partition-key\">network partition key</a>\n<var>networkPartitionKey</var>, and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch-record-request\" id=\"ref-for-concept-fetch-record-request\">request</a> <var>request</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>client</var> be <var>transport</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>transport</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport①⑤\">WebTransport</a></code> object associated with <var>request</var>.</p>"
         },
         {
-          "html": "<p>Let <var>origin</var> be <var>client</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>.</p>"
+          "html": "<p>Let <var>url</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url\">current URL</a>.</p>"
         },
         {
-          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> whose <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a> is <var>url</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is\n <var>client</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container\">policy container</a> is <var>client</var>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container\" id=\"ref-for-concept-settings-object-policy-container\">policy container</a>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">destination</a> is an empty string,\n <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a> is <var>origin</var> and <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-redirect-mode\" id=\"ref-for-concept-request-redirect-mode\">redirect mode</a> is \"error\".</p>"
+          "html": "<p>Let <var>newConnection</var> be <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-newconnection-slot\" id=\"ref-for-dom-webtransport-newconnection-slot①\">[[NewConnection]]</a></code>.</p>"
         },
         {
-          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#report-for-request\" id=\"ref-for-report-for-request\">report Content Security Policy violations for <var>request</var></a>.</p>"
+          "html": "<p>Let <var>requireUnreliable</var> be <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-requireunreliable-slot\" id=\"ref-for-dom-webtransport-requireunreliable-slot①\">[[RequireUnreliable]]</a></code>.</p>"
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#should-block-request\" id=\"ref-for-should-block-request\">should request be blocked by Content Security Policy?</a> with <var>request</var> returns\n <b>\"Blocked\"</b>, or if <var>request</var> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#block-bad-port\" id=\"ref-for-block-bad-port\">should be blocked due to a bad port</a>\n returns <b>blocked</b>, then abort the remaining steps and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task④\">queue a network task</a> with <var>transport</var>\n to run these steps:",
+          "html": "<p>Let <var>serverCertificateHashes</var> be the values in <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-servercertificatehashes-slot\" id=\"ref-for-dom-webtransport-servercertificatehashes-slot①\">[[ServerCertificateHashes]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection-obtain\" id=\"ref-for-concept-connection-obtain\">obtaining a connection</a> with\n <var>networkPartitionKey</var>, <var>url</var>, false, <var>newConnection</var>, and <var>requireUnreliable</var>.\n When obtaining a connection, if\n <var>serverCertificateHashes</var> is specified, instead of using the default certificate verification\n algorithm, consider the certificate valid if it meets the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#custom-certificate-requirements\" id=\"ref-for-custom-certificate-requirements\">custom certificate requirements</a> and if <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#verify-a-certificate-hash\" id=\"ref-for-verify-a-certificate-hash\">verifying the certificate hash</a> against\n <var>serverCertificateHashes</var> returns true. If either condition is not met, fail with a\n <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error\">network error</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "process a WebTransport fetch response",
+      "href": "https://w3c.github.io/webtransport/#process-a-webtransport-fetch-response",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-a-webtransport-fetch-response\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a WebTransport fetch response</dfn>, given a <var>response</var>, <var>origin</var>, <var>protocols</var>, and <var>congestionControl</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>response</var> is <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-network-error\" id=\"ref-for-concept-network-error①\">network error</a>, then abort the remaining steps and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task④\">queue a network task</a> with\n <var>transport</var> to run these steps:",
           "rationale": "if",
           "steps": [
             {
@@ -640,110 +672,86 @@
           ]
         },
         {
-          "html": "<p>Let <var>networkPartitionKey</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#determine-the-network-partition-key\" id=\"ref-for-determine-the-network-partition-key\">determining the network partition key</a> with\n <var>transport</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>connection</var> be the underlying connection associated with <var>response</var>.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when\">abort when</a> <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot⑨\">[[State]]</a></code> becomes <code>\"closed\"</code> or <code>\"failed\"</code>:",
-          "rationale": "let",
+          "html": "<p>Wait for <var>connection</var> to receive the first SETTINGS frame, and let <var>settings</var> be a dictionary that\n represents the SETTINGS frame.</p>"
+        },
+        {
+          "html": "If <var>settings</var> doesn’t contain SETTINGS_ENABLE_WEBTRANPORT with a value of 1, or it doesn’t\n contain H3_DATAGRAM with a value of 1, then abort the remaining steps and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑤\">queue a network task</a> with <var>transport</var> to run these steps:",
+          "rationale": "if",
           "steps": [
             {
-              "html": "<p>Let <var>newConnection</var> be \"<code>no</code>\" if <var>dedicated</var> is false; otherwise \"<code>yes-and-dedicated</code>\".</p>"
+              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot⑨\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, then abort these steps.</p>"
             },
             {
-              "html": "<p>Let <var>connection</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection-obtain\" id=\"ref-for-concept-connection-obtain\">obtaining a connection</a> with\n <var>networkPartitionKey</var>, <var>url</var>, false, <var>newConnection</var>, and <var>requireUnreliable</var>. If the user agent\n supports more than one congestion control algorithm, choose one appropriate for\n <var>congestionControl</var> for sending of data on this <var>connection</var>. When obtaining a connection, if\n <var>serverCertificateHashes</var> is specified, instead of using the default certificate verification\n algorithm, consider the certificate valid if it meets the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#custom-certificate-requirements\" id=\"ref-for-custom-certificate-requirements\">custom certificate requirements</a> and if <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#verify-a-certificate-hash\" id=\"ref-for-verify-a-certificate-hash\">verifying the certificate hash</a> against\n <var>serverCertificateHashes</var> returns true. If either condition is not met, let <var>connection</var> be\n failure.</p>"
+              "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception①\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror①\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source①\">source</a></code> is <code>\"session\"</code>.</p>"
             },
             {
-              "html": "If <var>connection</var> is failure, then abort the remaining steps and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑤\">queue a network task</a> with\n <var>transport</var> to run these steps:",
-              "rationale": "if",
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup①\">Cleanup</a> <var>transport</var> with <var>error</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#session-establish\" id=\"ref-for-session-establish②\">Establish</a> a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#protocol-webtransport-session\" id=\"ref-for-protocol-webtransport-session①①\">WebTransport session</a> with <var>origin</var> and <var>protocols</var> on <var>connection</var>.</p>"
+        },
+        {
+          "html": "If the previous step fails, abort the remaining steps and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑥\">queue a network task</a> with\n <var>transport</var> to run these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⓪\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, then abort these steps.</p>"
+            },
+            {
+              "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception②\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror②\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source②\">source</a></code> is <code>\"session\"</code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup②\">Cleanup</a> <var>transport</var> with <var>error</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>session</var> be the established <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#protocol-webtransport-session\" id=\"ref-for-protocol-webtransport-session①②\">WebTransport session</a>.</p>"
+        },
+        {
+          "html": "<p>If the user agent supports more than one congestion control algorithm, choose one\n appropriate for <var>congestionControl</var> for sending of data on this <var>connection</var>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑦\">Queue a network task</a> with <var>transport</var> to run these steps:",
+          "rationale": "assert",
+          "steps": [
+            {
+              "html": "<p class=\"assertion\">Assert: <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-datagrams-slot\" id=\"ref-for-dom-webtransport-datagrams-slot⑥\">[[Datagrams]]</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-outgoingmaxdatagramsize-slot\" id=\"ref-for-dom-webtransportdatagramduplexstream-outgoingmaxdatagramsize-slot⑤\">[[OutgoingMaxDatagramSize]]</a></code> is an integer.</p>"
+            },
+            {
+              "html": "If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①①\">[[State]]</a></code> is not <code>\"connecting\"</code>:",
+              "rationale": "in parallel",
               "steps": [
                 {
-                  "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⓪\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, then abort these steps.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">In parallel</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#session-terminate\" id=\"ref-for-session-terminate\">terminate</a> <var>session</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception①\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror①\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source①\">source</a></code> is <code>\"session\"</code>.</p>"
-                },
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup①\">Cleanup</a> <var>transport</var> with <var>error</var>.</p>"
+                  "html": "<p>Abort these steps.</p>"
                 }
               ]
             },
             {
-              "html": "<p>Wait for <var>connection</var> to receive the first SETTINGS frame, and let <var>settings</var> be a dictionary that\n represents the SETTINGS frame.</p>"
+              "html": "<p>Set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①②\">[[State]]</a></code> to <code>\"connected\"</code>.</p>"
             },
             {
-              "html": "If <var>settings</var> doesn’t contain SETTINGS_ENABLE_WEBTRANPORT with a value of 1, or it doesn’t\n contain H3_DATAGRAM with a value of 1, then abort the remaining steps and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑥\">queue a network task</a> with <var>transport</var> to run these steps:",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①①\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, then abort these steps.</p>"
-                },
-                {
-                  "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception②\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror②\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source②\">source</a></code> is <code>\"session\"</code>.</p>"
-                },
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup②\">Cleanup</a> <var>transport</var> with <var>error</var>.</p>"
-                }
-              ]
+              "html": "<p>Set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-session-slot\" id=\"ref-for-dom-webtransport-session-slot③\">[[Session]]</a></code> to <var>session</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#session-establish\" id=\"ref-for-session-establish②\">Establish</a> a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#protocol-webtransport-session\" id=\"ref-for-protocol-webtransport-session①①\">WebTransport session</a> with <var>origin</var> and <var>protocols</var> on <var>connection</var>.</p>"
+              "html": "<p>Set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-protocol-slot\" id=\"ref-for-dom-webtransport-protocol-slot①\">[[Protocol]]</a></code> to either the string value of the negotiated application\n protocol if present, following <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-web-transport-overview\" title=\"WebTransport Protocol Framework\">[WEB-TRANSPORT-OVERVIEW]</a>\n <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview-09/#section-3.1\">Section 3.1</a>,\n or <code>\"\"</code> if not present.</p>"
             },
             {
-              "html": "If the previous step fails, abort the remaining steps and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑦\">queue a network task</a> with\n <var>transport</var> to run these steps:",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①②\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, then abort these steps.</p>"
-                },
-                {
-                  "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception③\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror③\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source③\">source</a></code> is <code>\"session\"</code>.</p>"
-                },
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup③\">Cleanup</a> <var>transport</var> with <var>error</var>.</p>"
-                }
-              ]
+              "html": "<p>If the connection is an HTTP/3 connection, set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-reliability-slot\" id=\"ref-for-dom-webtransport-reliability-slot①\">[[Reliability]]</a></code> to <code>\"supports-unreliable\"</code>.</p>"
             },
             {
-              "html": "<p>Let <var>session</var> be the established <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#protocol-webtransport-session\" id=\"ref-for-protocol-webtransport-session①②\">WebTransport session</a>.</p>"
+              "html": "<p>If the connection is an HTTP/2 connection <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-web-transport-http2\" title=\"WebTransport over HTTP/2\">[WEB-TRANSPORT-HTTP2]</a>, set <var>transport</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-reliability-slot\" id=\"ref-for-dom-webtransport-reliability-slot②\">[[Reliability]]</a></code> to <code>\"reliable-only\"</code>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑧\">Queue a network task</a> with <var>transport</var> to run these steps:",
-              "rationale": "assert",
-              "steps": [
-                {
-                  "html": "<p class=\"assertion\">Assert: <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-datagrams-slot\" id=\"ref-for-dom-webtransport-datagrams-slot⑥\">[[Datagrams]]</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-outgoingmaxdatagramsize-slot\" id=\"ref-for-dom-webtransportdatagramduplexstream-outgoingmaxdatagramsize-slot⑤\">[[OutgoingMaxDatagramSize]]</a></code> is an integer.</p>"
-                },
-                {
-                  "html": "If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①③\">[[State]]</a></code> is not <code>\"connecting\"</code>:",
-                  "rationale": "in parallel",
-                  "steps": [
-                    {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">In parallel</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#session-terminate\" id=\"ref-for-session-terminate\">terminate</a> <var>session</var>.</p>"
-                    },
-                    {
-                      "html": "<p>Abort these steps.</p>"
-                    }
-                  ]
-                },
-                {
-                  "html": "<p>Set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①④\">[[State]]</a></code> to <code>\"connected\"</code>.</p>"
-                },
-                {
-                  "html": "<p>Set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-session-slot\" id=\"ref-for-dom-webtransport-session-slot③\">[[Session]]</a></code> to <var>session</var>.</p>"
-                },
-                {
-                  "html": "<p>Set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-protocol-slot\" id=\"ref-for-dom-webtransport-protocol-slot①\">[[Protocol]]</a></code> to either the string value of the negotiated application\n protocol if present, following <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-web-transport-overview\" title=\"WebTransport Protocol Framework\">[WEB-TRANSPORT-OVERVIEW]</a>\n <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview-09/#section-3.1\">Section 3.1</a>,\n or <code>\"\"</code> if not present.</p>"
-                },
-                {
-                  "html": "<p>If the connection is an HTTP/3 connection, set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-reliability-slot\" id=\"ref-for-dom-webtransport-reliability-slot①\">[[Reliability]]</a></code> to <code>\"supports-unreliable\"</code>.</p>"
-                },
-                {
-                  "html": "<p>If the connection is an HTTP/2 connection <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-web-transport-http2\" title=\"WebTransport over HTTP/2\">[WEB-TRANSPORT-HTTP2]</a>, set <var>transport</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-reliability-slot\" id=\"ref-for-dom-webtransport-reliability-slot②\">[[Reliability]]</a></code> to <code>\"reliable-only\"</code>.</p>"
-                },
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects④\">Resolve</a> <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-ready-slot\" id=\"ref-for-dom-webtransport-ready-slot①\">[[Ready]]</a></code> with undefined.</p>"
-                }
-              ]
+              "html": "<p><a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects④\">Resolve</a> <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-ready-slot\" id=\"ref-for-dom-webtransport-ready-slot①\">[[Ready]]</a></code> with undefined.</p>"
             }
           ]
         }
@@ -756,7 +764,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⑤\">[[State]]</a></code> is <code>\"connecting\"</code>, then return the result of performing the\n following steps <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment\">upon fulfillment</a> of <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-ready-slot\" id=\"ref-for-dom-webtransport-ready-slot②\">[[Ready]]</a></code>:",
+          "html": "If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①③\">[[State]]</a></code> is <code>\"connecting\"</code>, then return the result of performing the\n following steps <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment\">upon fulfillment</a> of <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-ready-slot\" id=\"ref-for-dom-webtransport-ready-slot②\">[[Ready]]</a></code>:",
           "rationale": "return",
           "steps": [
             {
@@ -765,7 +773,7 @@
           ]
         },
         {
-          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⑥\">[[State]]</a></code> is not <code>\"connected\"</code>, then return a new <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects⑤\">rejected</a> promise with\n an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>.</p>"
+          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①④\">[[State]]</a></code> is not <code>\"connected\"</code>, then return a new <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects⑤\">rejected</a> promise with\n an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>session</var> be <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-session-slot\" id=\"ref-for-dom-webtransport-session-slot④\">[[Session]]</a></code>.</p>"
@@ -774,7 +782,7 @@
           "html": "<p>Let <var>p</var> be a new promise.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
           "rationale": "wait",
           "steps": [
             {
@@ -784,7 +792,7 @@
               "html": "<p>Let <var>internalStream</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#session-receive-a-bidirectional-stream\" id=\"ref-for-session-receive-a-bidirectional-stream①\">receiving a bidirectional stream</a> from <var>session</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑨\">Queue a network task</a> with <var>transport</var> to run these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑧\">Queue a network task</a> with <var>transport</var> to run these steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -812,7 +820,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⑦\">[[State]]</a></code> is <code>\"connecting\"</code>, then return the result of performing the\n following steps <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment①\">upon fulfillment</a> of <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-ready-slot\" id=\"ref-for-dom-webtransport-ready-slot③\">[[Ready]]</a></code>:",
+          "html": "If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⑤\">[[State]]</a></code> is <code>\"connecting\"</code>, then return the result of performing the\n following steps <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment①\">upon fulfillment</a> of <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-ready-slot\" id=\"ref-for-dom-webtransport-ready-slot③\">[[Ready]]</a></code>:",
           "rationale": "return",
           "steps": [
             {
@@ -821,7 +829,7 @@
           ]
         },
         {
-          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⑧\">[[State]]</a></code> is not <code>\"connected\"</code>, then return a new <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects⑦\">rejected</a> promise with\n an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>.</p>"
+          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⑥\">[[State]]</a></code> is not <code>\"connected\"</code>, then return a new <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects⑦\">rejected</a> promise with\n an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>session</var> be <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-session-slot\" id=\"ref-for-dom-webtransport-session-slot⑤\">[[Session]]</a></code>.</p>"
@@ -830,7 +838,7 @@
           "html": "<p>Let <var>p</var> be a new promise.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
           "rationale": "wait",
           "steps": [
             {
@@ -840,7 +848,7 @@
               "html": "<p>Let <var>internalStream</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#session-receive-an-incoming-unidirectional-stream\" id=\"ref-for-session-receive-an-incoming-unidirectional-stream①\">receiving an incoming unidirectional stream</a> from <var>session</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①⓪\">Queue a network task</a> with <var>transport</var> to run these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task⑨\">Queue a network task</a> with <var>transport</var> to run these steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -904,17 +912,17 @@
           "html": "<p>Let <var>transport</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>.</p>"
         },
         {
-          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⑨\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, then abort these steps.</p>"
+          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⑦\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, then abort these steps.</p>"
         },
         {
-          "html": "If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②⓪\">[[State]]</a></code> is <code>\"connecting\"</code>:",
+          "html": "If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⑧\">[[State]]</a></code> is <code>\"connecting\"</code>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception④\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror④\">WebTransportError</a></code> whose\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source④\">source</a></code> is <code>\"session\"</code>.</p>"
+              "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception③\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror③\">WebTransportError</a></code> whose\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source③\">source</a></code> is <code>\"session\"</code>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup④\">Cleanup</a> <var>transport</var> with <var>error</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup③\">Cleanup</a> <var>transport</var> with <var>error</var>.</p>"
             },
             {
               "html": "<p>Abort these steps.</p>"
@@ -934,10 +942,10 @@
           "html": "<p>Let <var>reason</var> be <var>reasonString</var>, <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode①\">UTF-8 encoded</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">In parallel</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#session-terminate\" id=\"ref-for-session-terminate①\">terminate</a> <var>session</var> with <var>code</var> and <var>reason</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">In parallel</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#session-terminate\" id=\"ref-for-session-terminate①\">terminate</a> <var>session</var> with <var>code</var> and <var>reason</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup⑤\">Cleanup</a> <var>transport</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror\">AbortError</a></code> and <var>closeInfo</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup④\">Cleanup</a> <var>transport</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror\">AbortError</a></code> and <var>closeInfo</var>.</p>"
         }
       ]
     },
@@ -954,26 +962,26 @@
           "html": "<p>Let <var>p</var> be a new promise.</p>"
         },
         {
-          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②①\">[[State]]</a></code> is <code>\"failed\"</code>, <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects⑨\">reject</a> <var>p</var> with an\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot①⑨\">[[State]]</a></code> is <code>\"failed\"</code>, <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects⑨\">reject</a> <var>p</var> with an\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑥\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②②\">[[State]]</a></code> is <code>\"connecting\"</code>, wait until it changes.</p>"
+              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②⓪\">[[State]]</a></code> is <code>\"connecting\"</code>, wait until it changes.</p>"
             },
             {
-              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②③\">[[State]]</a></code> is <code>\"failed\"</code>, abort these steps after\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①①\">queueing a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⓪\">reject</a> <var>p</var> with an\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code>.</p>"
+              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②①\">[[State]]</a></code> is <code>\"failed\"</code>, abort these steps after\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①⓪\">queueing a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⓪\">reject</a> <var>p</var> with an\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code>.</p>"
             },
             {
-              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②④\">[[State]]</a></code> is <code>\"closed\"</code>, abort these steps after\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①②\">queueing a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①①\">resolve</a> <var>p</var> with\n  the most recent stats available for the connection. The exact point\n  at which those stats are collected is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑤\">implementation-defined</a>.</p>"
+              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②②\">[[State]]</a></code> is <code>\"closed\"</code>, abort these steps after\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①①\">queueing a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①①\">resolve</a> <var>p</var> with\n  the most recent stats available for the connection. The exact point\n  at which those stats are collected is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑤\">implementation-defined</a>.</p>"
             },
             {
               "html": "<p>Gather the stats from the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#underlying-connection\" id=\"ref-for-underlying-connection①\">underlying connection</a>, including stats on datagrams.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①③\">Queue a network task</a> with <var>transport</var> to run the following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①②\">Queue a network task</a> with <var>transport</var> to run the following steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -1019,14 +1027,14 @@
           "html": "<p>Let <var>p</var> be a new promise.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑦\">in parallel</a>, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when①\">abort when</a> <var>transport</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②⑤\">[[State]]</a></code> becomes <code>\"closed\"</code> or <code>\"failed\"</code>, and instead\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①④\">queue a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①③\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑥\">InvalidStateError</a></code>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑥\">in parallel</a>, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when\">abort when</a> <var>transport</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②③\">[[State]]</a></code> becomes <code>\"closed\"</code> or <code>\"failed\"</code>, and instead\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①③\">queue a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①③\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑥\">InvalidStateError</a></code>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>keyingMaterial</var> be the result of exporting TLS keying material, as defined\n  in <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-web-transport-overview\" title=\"WebTransport Protocol Framework\">[WEB-TRANSPORT-OVERVIEW]</a> <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview#section-4.1\">Section 4.1</a>,\n  with <var>labelLength</var>, <var>label</var>, <var>contextLength</var>, and if present, <var>context</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①⑤\">Queue a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①④\">resolve</a> <var>p</var> with <var>keyingMaterial</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①④\">Queue a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①④\">resolve</a> <var>p</var> with <var>keyingMaterial</var>.</p>"
             }
           ]
         },
@@ -1045,7 +1053,7 @@
           "html": "<p>Let <var>transport</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>.</p>"
         },
         {
-          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②⑥\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>,\n  return a new <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⑤\">rejected</a> promise with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑦\">InvalidStateError</a></code>.</p>"
+          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②④\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>,\n  return a new <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⑤\">rejected</a> promise with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑦\">InvalidStateError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>sendGroup</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-createbidirectionalstream-options-options\" id=\"ref-for-dom-webtransport-createbidirectionalstream-options-options\">options</a></code>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendoptions-sendgroup\" id=\"ref-for-dom-webtransportsendoptions-sendgroup①\">sendGroup</a></code>.</p>"
@@ -1060,21 +1068,21 @@
           "html": "<p>Let <var>p</var> be a new promise.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑧\">in parallel</a>, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when②\">abort when</a> <var>transport</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②⑦\">[[State]]</a></code> becomes <code>\"closed\"</code> or <code>\"failed\"</code>, and instead\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①⑥\">queue a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⑥\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑧\">InvalidStateError</a></code>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑦\">in parallel</a>, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when①\">abort when</a> <var>transport</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②⑤\">[[State]]</a></code> becomes <code>\"closed\"</code> or <code>\"failed\"</code>, and instead\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①⑤\">queue a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⑥\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑧\">InvalidStateError</a></code>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>streamId</var> be a new stream ID that is valid and unique for\n <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-session-slot\" id=\"ref-for-dom-webtransport-session-slot⑦\">[[Session]]</a></code>, as defined in <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-quic\" title=\"QUIC: A UDP-Based Multiplexed and Secure Transport\">[QUIC]</a>\n <a href=\"https://www.rfc-editor.org/rfc/rfc9000#section-19.11\">Section 19.11</a>. If one is not\n immediately available due to exhaustion, either wait for it to become\n available if <var>waitUntilAvailable</var> is true, or if <var>waitUntilAvailable</var> is false,\n abort these steps after <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①⑦\">queueing a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⑦\">reject</a> <var>p</var>\n with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror\" id=\"ref-for-quotaexceedederror\">QuotaExceededError</a></code>.</p>"
+              "html": "<p>Let <var>streamId</var> be a new stream ID that is valid and unique for\n <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-session-slot\" id=\"ref-for-dom-webtransport-session-slot⑦\">[[Session]]</a></code>, as defined in <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-quic\" title=\"QUIC: A UDP-Based Multiplexed and Secure Transport\">[QUIC]</a>\n <a href=\"https://www.rfc-editor.org/rfc/rfc9000#section-19.11\">Section 19.11</a>. If one is not\n immediately available due to exhaustion, either wait for it to become\n available if <var>waitUntilAvailable</var> is true, or if <var>waitUntilAvailable</var> is false,\n abort these steps after <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①⑥\">queueing a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⑦\">reject</a> <var>p</var>\n with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror\" id=\"ref-for-quotaexceedederror\">QuotaExceededError</a></code>.</p>"
             },
             {
               "html": "<p>Let <var>internalStream</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#session-create-a-bidirectional-stream\" id=\"ref-for-session-create-a-bidirectional-stream\">creating a bidirectional stream</a> with\n   <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-session-slot\" id=\"ref-for-dom-webtransport-session-slot⑧\">[[Session]]</a></code> and <var>streamId</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①⑧\">Queue a network task</a> with <var>transport</var> to run the following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①⑦\">Queue a network task</a> with <var>transport</var> to run the following steps:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②⑧\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>,\n <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⑧\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑨\">InvalidStateError</a></code> and abort these steps.</p>"
+                  "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②⑥\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>,\n <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①⑧\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑨\">InvalidStateError</a></code> and abort these steps.</p>"
                 },
                 {
                   "html": "<p>Let <var>stream</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#bidirectionalstream-create\" id=\"ref-for-bidirectionalstream-create①\">creating</a> a\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportbidirectionalstream\" id=\"ref-for-webtransportbidirectionalstream⑤\">WebTransportBidirectionalStream</a></code> with <var>internalStream</var>, <var>transport</var>, <var>sendGroup</var>, and <var>sendOrder</var>.</p>"
@@ -1101,7 +1109,7 @@
           "html": "<p>Let <var>transport</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>.</p>"
         },
         {
-          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②⑨\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>,\n  return a new <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects②⓪\">rejected</a> promise with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⓪\">InvalidStateError</a></code>.</p>"
+          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②⑦\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>,\n  return a new <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects②⓪\">rejected</a> promise with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⓪\">InvalidStateError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>sendGroup</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-createunidirectionalstream-options-options\" id=\"ref-for-dom-webtransport-createunidirectionalstream-options-options\">options</a></code>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendoptions-sendgroup\" id=\"ref-for-dom-webtransportsendoptions-sendgroup②\">sendGroup</a></code>.</p>"
@@ -1116,21 +1124,21 @@
           "html": "<p>Let <var>p</var> be a new promise.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑨\">in parallel</a>, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when③\">abort when</a> <var>transport</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③⓪\">[[State]]</a></code> becomes <code>\"closed\"</code> or <code>\"failed\"</code>, and instead\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①⑨\">queue a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects②①\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①①\">InvalidStateError</a></code>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑧\">in parallel</a>, but <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#abort-when\" id=\"ref-for-abort-when②\">abort when</a> <var>transport</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②⑧\">[[State]]</a></code> becomes <code>\"closed\"</code> or <code>\"failed\"</code>, and instead\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①⑧\">queue a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects②①\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①①\">InvalidStateError</a></code>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>streamId</var> be a new stream ID that is valid and unique for\n <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-session-slot\" id=\"ref-for-dom-webtransport-session-slot⑨\">[[Session]]</a></code>, as defined in <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-quic\" title=\"QUIC: A UDP-Based Multiplexed and Secure Transport\">[QUIC]</a>\n <a href=\"https://www.rfc-editor.org/rfc/rfc9000#section-19.11\">Section 19.11</a>. If one is not\n immediately available due to exhaustion, either wait for it to become\n available if <var>waitUntilAvailable</var> is true, or if <var>waitUntilAvailable</var> is false,\n abort these steps after <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⓪\">queueing a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects②②\">reject</a> <var>p</var>\n with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror\" id=\"ref-for-quotaexceedederror①\">QuotaExceededError</a></code>.</p>"
+              "html": "<p>Let <var>streamId</var> be a new stream ID that is valid and unique for\n <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-session-slot\" id=\"ref-for-dom-webtransport-session-slot⑨\">[[Session]]</a></code>, as defined in <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-quic\" title=\"QUIC: A UDP-Based Multiplexed and Secure Transport\">[QUIC]</a>\n <a href=\"https://www.rfc-editor.org/rfc/rfc9000#section-19.11\">Section 19.11</a>. If one is not\n immediately available due to exhaustion, either wait for it to become\n available if <var>waitUntilAvailable</var> is true, or if <var>waitUntilAvailable</var> is false,\n abort these steps after <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①⑨\">queueing a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects②②\">reject</a> <var>p</var>\n with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror\" id=\"ref-for-quotaexceedederror①\">QuotaExceededError</a></code>.</p>"
             },
             {
               "html": "<p>Let <var>internalStream</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#session-create-an-outgoing-unidirectional-stream\" id=\"ref-for-session-create-an-outgoing-unidirectional-stream\">creating an outgoing unidirectional stream</a> with\n <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-session-slot\" id=\"ref-for-dom-webtransport-session-slot①⓪\">[[Session]]</a></code> and <var>streamId</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②①\">Queue a network task</a> with <var>transport</var> to run the following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⓪\">Queue a network task</a> with <var>transport</var> to run the following steps:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③①\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>,\n <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects②③\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①②\">InvalidStateError</a></code> and abort these steps.</p>"
+                  "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot②⑨\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>,\n <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects②③\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①②\">InvalidStateError</a></code> and abort these steps.</p>"
                 },
                 {
                   "html": "<p>Let <var>stream</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransportsendstream-create\" id=\"ref-for-webtransportsendstream-create\">creating</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream③\">WebTransportSendStream</a></code> with\n <var>internalStream</var>, <var>transport</var>, <var>sendGroup</var>, and <var>sendOrder</var>.</p>"
@@ -1157,7 +1165,7 @@
           "html": "<p>Let <var>transport</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a>.</p>"
         },
         {
-          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③②\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>,\n  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①①\">throw</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①③\">InvalidStateError</a></code>.</p>"
+          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③⓪\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>,\n  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①①\">throw</a> an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①③\">InvalidStateError</a></code>.</p>"
         },
         {
           "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransportsendgroup-create\" id=\"ref-for-webtransportsendgroup-create\">creating</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportsendgroup\" id=\"ref-for-webtransportsendgroup⑤\">WebTransportSendGroup</a></code> with <var>transport</var>.</p>"
@@ -1207,7 +1215,7 @@
           "html": "<p>Set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-datagrams-slot\" id=\"ref-for-dom-webtransport-datagrams-slot①①\">[[Datagrams]]</a></code>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-incomingdatagramsqueue-slot\" id=\"ref-for-dom-webtransportdatagramduplexstream-incomingdatagramsqueue-slot③\">[[IncomingDatagramsQueue]]</a></code>\n to an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#queue\" id=\"ref-for-queue①\">queue</a>.</p>"
         },
         {
-          "html": "<p>If <var>closeInfo</var> is given, then set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③③\">[[State]]</a></code> to <code>\"closed\"</code>.\n Otherwise, set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③④\">[[State]]</a></code> to <code>\"failed\"</code>.</p>"
+          "html": "<p>If <var>closeInfo</var> is given, then set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③①\">[[State]]</a></code> to <code>\"closed\"</code>.\n Otherwise, set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③②\">[[State]]</a></code> to <code>\"failed\"</code>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>stream</var> in <var>sendStreams</var>, run the following steps:",
@@ -1297,14 +1305,14 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②②\">Queue a network task</a> with <var>transport</var> to run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②①\">Queue a network task</a> with <var>transport</var> to run these steps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③⑤\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, abort these steps.</p>"
+              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③③\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, abort these steps.</p>"
             },
             {
-              "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑤\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror⑤\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source⑤\">source</a></code> is <code>\"session\"</code>.</p>"
+              "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception④\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror④\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source④\">source</a></code> is <code>\"session\"</code>.</p>"
             },
             {
               "html": "<p>Let <var>closeInfo</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new④\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dictdef-webtransportcloseinfo\" id=\"ref-for-dictdef-webtransportcloseinfo③\">WebTransportCloseInfo</a></code>.</p>"
@@ -1316,7 +1324,7 @@
               "html": "<p>If <var>reasonBytes</var> is given, set <var>closeInfo</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportcloseinfo-reason\" id=\"ref-for-dom-webtransportcloseinfo-reason①\">reason</a></code> to <var>reasonBytes</var>,\n <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode\" id=\"ref-for-utf-8-decode\">UTF-8 decoded</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup⑥\">Cleanup</a> <var>transport</var> with <var>error</var> and <var>closeInfo</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup⑤\">Cleanup</a> <var>transport</var> with <var>error</var> and <var>closeInfo</var>.</p>"
             }
           ]
         }
@@ -1328,17 +1336,17 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②③\">Queue a network task</a> with <var>transport</var> to run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②②\">Queue a network task</a> with <var>transport</var> to run these steps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③⑥\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, abort these steps.</p>"
+              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③④\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, abort these steps.</p>"
             },
             {
-              "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑥\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror⑥\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source⑥\">source</a></code> is <code>\"session\"</code>.</p>"
+              "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑤\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror⑤\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source⑤\">source</a></code> is <code>\"session\"</code>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup⑦\">Cleanup</a> <var>transport</var> with <var>error</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup⑥\">Cleanup</a> <var>transport</var> with <var>error</var>.</p>"
             }
           ]
         }
@@ -1347,35 +1355,35 @@
     {
       "name": "context cleanup steps",
       "href": "https://w3c.github.io/webtransport/#context-cleanup-steps",
-      "html": "This specification defines <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"context-cleanup-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">context cleanup steps</dfn> as the following steps, given\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport②④\">WebTransport</a></code> <var>transport</var>:",
+      "html": "This specification defines <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"context-cleanup-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">context cleanup steps</dfn> as the following steps, given\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport②④\">WebTransport</a></code> <var>transport</var>:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③⑦\">[[State]]</a></code> is <code>\"connected\"</code>, then:",
+          "html": "If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③⑤\">[[State]]</a></code> is <code>\"connected\"</code>, then:",
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③⑧\">[[State]]</a></code> to <code>\"failed\"</code>.</p>"
+              "html": "<p>Set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③⑥\">[[State]]</a></code> to <code>\"failed\"</code>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⓪\">In parallel</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#session-terminate\" id=\"ref-for-session-terminate②\">terminate</a> <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-session-slot\" id=\"ref-for-dom-webtransport-session-slot①①\">[[Session]]</a></code>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑨\">In parallel</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#session-terminate\" id=\"ref-for-session-terminate②\">terminate</a> <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-session-slot\" id=\"ref-for-dom-webtransport-session-slot①①\">[[Session]]</a></code>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②④\">Queue a network task</a> with <var>transport</var> to run the following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②③\">Queue a network task</a> with <var>transport</var> to run the following steps:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑦\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror⑦\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source⑦\">source</a></code> is <code>\"session\"</code>.</p>"
+                  "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑥\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror⑥\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source⑥\">source</a></code> is <code>\"session\"</code>.</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup⑧\">Cleanup</a> <var>transport</var> with <var>error</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-cleanup\" id=\"ref-for-webtransport-cleanup⑦\">Cleanup</a> <var>transport</var> with <var>error</var>.</p>"
                 }
               ]
             }
           ]
         },
         {
-          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③⑨\">[[State]]</a></code> is <code>\"connecting\"</code>, set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot④⓪\">[[State]]</a></code> to\n <code>\"failed\"</code>.</p>"
+          "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③⑦\">[[State]]</a></code> is <code>\"connecting\"</code>, set <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot③⑧\">[[State]]</a></code> to\n <code>\"failed\"</code>.</p>"
         }
       ]
     },
@@ -1482,7 +1490,7 @@
           "html": "<p>Let <var>p</var> be a new promise.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①①\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⓪\">in parallel</a>:",
           "rationale": "gather",
           "steps": [
             {
@@ -1492,7 +1500,7 @@
               "html": "<p>Wait for the stats to be ready.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⑤\">Queue a network task</a> with <var>transport</var> to run the following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②④\">Queue a network task</a> with <var>transport</var> to run the following steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -1594,11 +1602,11 @@
           "html": "<p>Let <var>atomic</var> be true if <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-stream\" id=\"ref-for-concept-body-stream\">stream</a>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-atomicwriterequests-slot\" id=\"ref-for-dom-webtransportsendstream-atomicwriterequests-slot①\">[[AtomicWriteRequests]]</a></code>\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> <var>inFlightWriteRequest</var>, otherwise false.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①②\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①①\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>atomic</var> is true and the current <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-signal-flow-control\" id=\"ref-for-stream-signal-flow-control①\">flow control</a> window is too small for <var>bytes</var> to be sent\n in its entirety, then abort the remaining steps and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⑥\">queue a network task</a> with <var>transport</var>\n to run these sub-steps:",
+              "html": "If <var>atomic</var> is true and the current <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-signal-flow-control\" id=\"ref-for-stream-signal-flow-control①\">flow control</a> window is too small for <var>bytes</var> to be sent\n in its entirety, then abort the remaining steps and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⑤\">queue a network task</a> with <var>transport</var>\n to run these sub-steps:",
               "rationale": "set",
               "steps": [
                 {
@@ -1610,13 +1618,13 @@
               ]
             },
             {
-              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-send\" id=\"ref-for-stream-send\">send</a> <var>bytes</var> on <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-internalstream-slot\" id=\"ref-for-dom-webtransportsendstream-internalstream-slot①\">[[InternalStream]]</a></code>\n and wait for the operation to complete.\n This sending MAY be interleaved with sending of previously queued streams and datagrams,\n as well as streams and datagrams yet to be queued to be sent over this transport.</p>\n        <p>The user-agent MAY have a buffer to improve the transfer performance. Such a buffer\n SHOULD have a fixed upper limit, to carry the backpressure information to the user of the\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream①⑤\">WebTransportSendStream</a></code>.</p>\n        <p>This sending MUST starve\n until all bytes queued for sending on streams with the\n same <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-sendgroup-slot\" id=\"ref-for-dom-webtransportsendstream-sendgroup-slot③\">[[SendGroup]]</a></code> and a higher\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-sendorder-slot\" id=\"ref-for-dom-webtransportsendstream-sendorder-slot③\">[[SendOrder]]</a></code>, that are neither\n <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-error\" id=\"ref-for-writablestream-error③\"> errored</a> nor blocked by <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-signal-flow-control\" id=\"ref-for-stream-signal-flow-control②\">flow control</a>, have been\n sent.</p>\n        <p>We access <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-sendorder-slot\" id=\"ref-for-dom-webtransportsendstream-sendorder-slot④\">[[SendOrder]]</a></code> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①③\">in parallel</a> here.\n User agents SHOULD respond to live updates of these values during sending, though\n the details are <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑨\">implementation-defined</a>.</p>\n        \n        <p>This sending MUST NOT starve otherwise,\n except for <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-signal-flow-control\" id=\"ref-for-stream-signal-flow-control③\">flow control</a> reasons or <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-error\" id=\"ref-for-writablestream-error④\"> error</a>.</p>\n        <p>The user agent SHOULD divide bandwidth fairly between all streams that aren’t starved.</p>"
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-send\" id=\"ref-for-stream-send\">send</a> <var>bytes</var> on <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-internalstream-slot\" id=\"ref-for-dom-webtransportsendstream-internalstream-slot①\">[[InternalStream]]</a></code>\n and wait for the operation to complete.\n This sending MAY be interleaved with sending of previously queued streams and datagrams,\n as well as streams and datagrams yet to be queued to be sent over this transport.</p>\n        <p>The user-agent MAY have a buffer to improve the transfer performance. Such a buffer\n SHOULD have a fixed upper limit, to carry the backpressure information to the user of the\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream①⑤\">WebTransportSendStream</a></code>.</p>\n        <p>This sending MUST starve\n until all bytes queued for sending on streams with the\n same <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-sendgroup-slot\" id=\"ref-for-dom-webtransportsendstream-sendgroup-slot③\">[[SendGroup]]</a></code> and a higher\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-sendorder-slot\" id=\"ref-for-dom-webtransportsendstream-sendorder-slot③\">[[SendOrder]]</a></code>, that are neither\n <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-error\" id=\"ref-for-writablestream-error③\"> errored</a> nor blocked by <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-signal-flow-control\" id=\"ref-for-stream-signal-flow-control②\">flow control</a>, have been\n sent.</p>\n        <p>We access <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-sendorder-slot\" id=\"ref-for-dom-webtransportsendstream-sendorder-slot④\">[[SendOrder]]</a></code> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①②\">in parallel</a> here.\n User agents SHOULD respond to live updates of these values during sending, though\n the details are <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑨\">implementation-defined</a>.</p>\n        \n        <p>This sending MUST NOT starve otherwise,\n except for <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-signal-flow-control\" id=\"ref-for-stream-signal-flow-control③\">flow control</a> reasons or <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-error\" id=\"ref-for-writablestream-error④\"> error</a>.</p>\n        <p>The user agent SHOULD divide bandwidth fairly between all streams that aren’t starved.</p>"
             },
             {
               "html": "<p>If the previous step failed due to a network error, abort the remaining steps.</p>"
             },
             {
-              "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⑦\">queue a network task</a> with <var>transport</var>\n to run these steps:",
+              "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⑥\">queue a network task</a> with <var>transport</var>\n to run these steps:",
               "rationale": "set",
               "steps": [
                 {
@@ -1659,7 +1667,7 @@
           "html": "<p>Set <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-pendingoperation-slot\" id=\"ref-for-dom-webtransportsendstream-pendingoperation-slot⑨\">[[PendingOperation]]</a></code> to <var>promise</var>.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①④\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①③\">in parallel</a>:",
           "rationale": "send",
           "steps": [
             {
@@ -1669,7 +1677,7 @@
               "html": "<p>Wait for <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-internalstream-slot\" id=\"ref-for-dom-webtransportsendstream-internalstream-slot③\">[[InternalStream]]</a></code> to enter the \"all data committed\" state. <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webtransport/#biblio-quic\" title=\"QUIC: A UDP-Based Multiplexed and Secure Transport\">[QUIC]</a></p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⑧\">Queue a network task</a> with <var>transport</var> to run these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⑦\">Queue a network task</a> with <var>transport</var> to run these steps:",
               "rationale": "set",
               "steps": [
                 {
@@ -1706,7 +1714,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove②\">Remove</a> <var>stream</var> from <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-sendstreams-slot\" id=\"ref-for-dom-webtransport-sendstreams-slot⑥\">[[SendStreams]]</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>reason</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror⑧\">WebTransportError</a></code> and <var>reason</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterror-streamerrorcode-slot\" id=\"ref-for-dom-webtransporterror-streamerrorcode-slot\">[[StreamErrorCode]]</a></code> is not\n null, then set <var>code</var> to <var>reason</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterror-streamerrorcode-slot\" id=\"ref-for-dom-webtransporterror-streamerrorcode-slot①\">[[StreamErrorCode]]</a></code>.</p>"
+          "html": "<p>If <var>reason</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror⑦\">WebTransportError</a></code> and <var>reason</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterror-streamerrorcode-slot\" id=\"ref-for-dom-webtransporterror-streamerrorcode-slot\">[[StreamErrorCode]]</a></code> is not\n null, then set <var>code</var> to <var>reason</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterror-streamerrorcode-slot\" id=\"ref-for-dom-webtransporterror-streamerrorcode-slot①\">[[StreamErrorCode]]</a></code>.</p>"
         },
         {
           "html": "<p>If <var>code</var> &lt; 0, then set <var>code</var> to 0.</p>"
@@ -1718,14 +1726,14 @@
           "html": "<p>Let <var>committedOffset</var> be <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-committedoffset-slot\" id=\"ref-for-dom-webtransportsendstream-committedoffset-slot①\">[[CommittedOffset]]</a></code>.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑤\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①④\">in parallel</a>:",
           "rationale": "abort",
           "steps": [
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-abort-sending\" id=\"ref-for-stream-abort-sending②\">Abort sending</a> on <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-internalstream-slot\" id=\"ref-for-dom-webtransportsendstream-internalstream-slot④\">[[InternalStream]]</a></code> with <var>code</var> and <var>committedOffset</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⑨\">Queue a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects③⑥\">resolve</a> <var>promise</var> with undefined.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⑧\">Queue a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects③⑥\">resolve</a> <var>promise</var> with undefined.</p>"
             }
           ]
         },
@@ -1756,7 +1764,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>promise</var> in <var>requestsToAbort</var>, <a data-link-type=\"dfn\" data-refhint-key=\"c597a1f1\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects③⑦\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#aborterror\" id=\"ref-for-aborterror②\">AbortError</a></code>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑥\">In parallel</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">for each</a> <var>promise</var> in <var>requestsToAbort</var>, abort the\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-send\" id=\"ref-for-stream-send②\">sending</a> of bytes associated with <var>promise</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑤\">In parallel</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">for each</a> <var>promise</var> in <var>requestsToAbort</var>, abort the\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-send\" id=\"ref-for-stream-send②\">sending</a> of bytes associated with <var>promise</var>.</p>"
         }
       ]
     },
@@ -1772,17 +1780,17 @@
           "html": "<p>Let <var>code</var> be the application protocol error code attached to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-signal-receiving-aborted\" id=\"ref-for-stream-signal-receiving-aborted①\">receiving aborted</a> signal.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③⓪\">Queue a network task</a> with <var>transport</var> to run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task②⑨\">Queue a network task</a> with <var>transport</var> to run these steps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot④④\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, abort these steps.</p>"
+              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot④②\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, abort these steps.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove③\">Remove</a> <var>stream</var> from <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-sendstreams-slot\" id=\"ref-for-dom-webtransport-sendstreams-slot⑦\">[[SendStreams]]</a></code>.</p>"
             },
             {
-              "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑧\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror⑨\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source⑧\">source</a></code> is <code>\"stream\"</code> and\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-streamerrorcode\" id=\"ref-for-dom-webtransporterroroptions-streamerrorcode\">streamErrorCode</a></code> is <var>code</var>.</p>"
+              "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑦\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror⑧\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source⑦\">source</a></code> is <code>\"stream\"</code> and\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-streamerrorcode\" id=\"ref-for-dom-webtransporterroroptions-streamerrorcode\">streamErrorCode</a></code> is <var>code</var>.</p>"
             },
             {
               "html": "<p>If <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-pendingoperation-slot\" id=\"ref-for-dom-webtransportsendstream-pendingoperation-slot①①\">[[PendingOperation]]</a></code> is not null, reject <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-pendingoperation-slot\" id=\"ref-for-dom-webtransportsendstream-pendingoperation-slot①②\">[[PendingOperation]]</a></code>\n with <var>error</var>.</p>"
@@ -1807,14 +1815,14 @@
           "html": "<p>Let <var>streams</var> be all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream②⑧\">WebTransportSendStream</a></code>s whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransportsendstream-sendgroup-slot\" id=\"ref-for-dom-webtransportsendstream-sendgroup-slot④\">[[SendGroup]]</a></code> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④④\">this</a>.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑦\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑥\">in parallel</a>:",
           "rationale": "gather",
           "steps": [
             {
               "html": "<p>Gather stream statistics from all streams in <var>streams</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③①\">Queue a network task</a> with <var>transport</var> to run the following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③⓪\">Queue a network task</a> with <var>transport</var> to run the following steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -1856,14 +1864,14 @@
           "html": "<p>Let <var>p</var> be a new promise.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑧\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑦\">in parallel</a>:",
           "rationale": "gather",
           "steps": [
             {
               "html": "<p>Gather the stats specific to this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransportreceivestream\" id=\"ref-for-webtransportreceivestream①②\">WebTransportReceiveStream</a></code>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③②\">Queue a network task</a> with <var>transport</var> to run the following steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③①\">Queue a network task</a> with <var>transport</var> to run the following steps:",
               "rationale": "let",
               "steps": [
                 {
@@ -1956,7 +1964,7 @@
           ]
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑨\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑧\">in parallel</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -1966,7 +1974,7 @@
               "html": "<p>If the previous step failed, abort the remaining steps.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③③\">Queue a network task</a> with <var>transport</var> to run these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③②\">Queue a network task</a> with <var>transport</var> to run these steps:",
               "rationale": "if",
               "steps": [
                 {
@@ -2024,7 +2032,7 @@
           "html": "<p>Let <var>code</var> be 0.</p>"
         },
         {
-          "html": "<p>If <var>reason</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror①⓪\">WebTransportError</a></code> and <var>reason</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterror-streamerrorcode-slot\" id=\"ref-for-dom-webtransporterror-streamerrorcode-slot②\">[[StreamErrorCode]]</a></code> is not\n null, then set <var>code</var> to <var>reason</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterror-streamerrorcode-slot\" id=\"ref-for-dom-webtransporterror-streamerrorcode-slot③\">[[StreamErrorCode]]</a></code>.</p>"
+          "html": "<p>If <var>reason</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror⑨\">WebTransportError</a></code> and <var>reason</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterror-streamerrorcode-slot\" id=\"ref-for-dom-webtransporterror-streamerrorcode-slot②\">[[StreamErrorCode]]</a></code> is not\n null, then set <var>code</var> to <var>reason</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterror-streamerrorcode-slot\" id=\"ref-for-dom-webtransporterror-streamerrorcode-slot③\">[[StreamErrorCode]]</a></code>.</p>"
         },
         {
           "html": "<p>If <var>code</var> &lt; 0, then set <var>code</var> to 0.</p>"
@@ -2036,14 +2044,14 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑤\">Remove</a> <var>stream</var> from <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-sendstreams-slot\" id=\"ref-for-dom-webtransport-sendstreams-slot⑧\">[[SendStreams]]</a></code>.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②⓪\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①⑨\">in parallel</a>:",
           "rationale": "abort",
           "steps": [
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-abort-receiving\" id=\"ref-for-stream-abort-receiving①\">Abort receiving</a> on <var>internalStream</var> with <var>code</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③④\">Queue a network task</a> with <var>transport</var> to run these steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③③\">Queue a network task</a> with <var>transport</var> to run these steps:",
               "rationale": "remove",
               "steps": [
                 {
@@ -2073,17 +2081,17 @@
           "html": "<p>Let <var>code</var> be the application protocol error code attached to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#stream-signal-sending-aborted\" id=\"ref-for-stream-signal-sending-aborted①\">sending aborted</a> signal.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③⑤\">Queue a network task</a> with <var>transport</var> to run these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task③④\">Queue a network task</a> with <var>transport</var> to run these steps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot④⑤\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, abort these steps.</p>"
+              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-state-slot\" id=\"ref-for-dom-webtransport-state-slot④③\">[[State]]</a></code> is <code>\"closed\"</code> or <code>\"failed\"</code>, abort these steps.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑦\">Remove</a> <var>stream</var> from <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-receivestreams-slot\" id=\"ref-for-dom-webtransport-receivestreams-slot⑦\">[[ReceiveStreams]]</a></code>.</p>"
             },
             {
-              "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑨\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror①①\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source⑨\">source</a></code> is <code>\"stream\"</code> and\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-streamerrorcode\" id=\"ref-for-dom-webtransporterroroptions-streamerrorcode①\">streamErrorCode</a></code> is <var>code</var>.</p>"
+              "html": "<p>Let <var>error</var> be a newly <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#dfn-create-exception\" id=\"ref-for-dfn-create-exception⑧\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror①⓪\">WebTransportError</a></code> whose\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source⑧\">source</a></code> is <code>\"stream\"</code> and\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-streamerrorcode\" id=\"ref-for-dom-webtransporterroroptions-streamerrorcode①\">streamErrorCode</a></code> is <var>code</var>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error⑤\">Error</a> <var>stream</var> with <var>error</var>.</p>"
@@ -2185,12 +2193,12 @@
           "html": "<p>Set <var>this</var>’s <a data-link-type=\"dfn\" href=\"https://heycam.github.io/webidl/#domexception-message\" id=\"ref-for-domexception-message\">message</a> to <var>message</var>.</p>"
         },
         {
-          "html": "<p>Set <var>this</var>’s internal slots as follows:</p>\n      <dl>\n       <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterror-source-slot\" id=\"ref-for-dom-webtransporterror-source-slot\">[[Source]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source①⓪\">source</a></code></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterror-streamerrorcode-slot\" id=\"ref-for-dom-webtransporterror-streamerrorcode-slot④\">[[StreamErrorCode]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-streamerrorcode\" id=\"ref-for-dom-webtransporterroroptions-streamerrorcode②\">streamErrorCode</a></code></p>\n      </dd></dl>"
+          "html": "<p>Set <var>this</var>’s internal slots as follows:</p>\n      <dl>\n       <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterror-source-slot\" id=\"ref-for-dom-webtransporterror-source-slot\">[[Source]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-source\" id=\"ref-for-dom-webtransporterroroptions-source⑨\">source</a></code></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterror-streamerrorcode-slot\" id=\"ref-for-dom-webtransporterror-streamerrorcode-slot④\">[[StreamErrorCode]]</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransporterroroptions-streamerrorcode\" id=\"ref-for-dom-webtransporterroroptions-streamerrorcode②\">streamErrorCode</a></code></p>\n      </dd></dl>"
         }
       ]
     },
     {
-      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror①④\">WebTransportError</a></code> objects are <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects\" id=\"ref-for-serializable-objects\">serializable objects</a>.\nTheir <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps\">serialization steps</a>, given <var>value</var> and <var>serialized</var>, are:",
+      "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransporterror\" id=\"ref-for-webtransporterror①③\">WebTransportError</a></code> objects are <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects\" id=\"ref-for-serializable-objects\">serializable objects</a>.\nTheir <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps\">serialization steps</a>, given <var>value</var> and <var>serialized</var>, are:",
       "rationale": "run",
       "steps": [
         {
