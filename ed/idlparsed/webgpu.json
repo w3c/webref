@@ -149,7 +149,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuobjectdescriptorbase"
       },
       "GPUSupportedLimits": {
-        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxBindGroupsPlusVertexBuffers;\n    readonly attribute unsigned long maxBindingsPerBindGroup;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long long maxUniformBufferBindingSize;\n    readonly attribute unsigned long long maxStorageBufferBindingSize;\n    readonly attribute unsigned long minUniformBufferOffsetAlignment;\n    readonly attribute unsigned long minStorageBufferOffsetAlignment;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long long maxBufferSize;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n    readonly attribute unsigned long maxInterStageShaderVariables;\n    readonly attribute unsigned long maxColorAttachments;\n    readonly attribute unsigned long maxColorAttachmentBytesPerSample;\n    readonly attribute unsigned long maxComputeWorkgroupStorageSize;\n    readonly attribute unsigned long maxComputeInvocationsPerWorkgroup;\n    readonly attribute unsigned long maxComputeWorkgroupSizeX;\n    readonly attribute unsigned long maxComputeWorkgroupSizeY;\n    readonly attribute unsigned long maxComputeWorkgroupSizeZ;\n    readonly attribute unsigned long maxComputeWorkgroupsPerDimension;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxBindGroupsPlusVertexBuffers;\n    readonly attribute unsigned long maxBindingsPerBindGroup;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersInVertexStage;\n    readonly attribute unsigned long maxStorageBuffersInFragmentStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesInVertexStage;\n    readonly attribute unsigned long maxStorageTexturesInFragmentStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long long maxUniformBufferBindingSize;\n    readonly attribute unsigned long long maxStorageBufferBindingSize;\n    readonly attribute unsigned long minUniformBufferOffsetAlignment;\n    readonly attribute unsigned long minStorageBufferOffsetAlignment;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long long maxBufferSize;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n    readonly attribute unsigned long maxInterStageShaderVariables;\n    readonly attribute unsigned long maxColorAttachments;\n    readonly attribute unsigned long maxColorAttachmentBytesPerSample;\n    readonly attribute unsigned long maxComputeWorkgroupStorageSize;\n    readonly attribute unsigned long maxComputeInvocationsPerWorkgroup;\n    readonly attribute unsigned long maxComputeWorkgroupSizeX;\n    readonly attribute unsigned long maxComputeWorkgroupSizeY;\n    readonly attribute unsigned long maxComputeWorkgroupSizeZ;\n    readonly attribute unsigned long maxComputeWorkgroupsPerDimension;\n};",
         "type": "interface",
         "name": "GPUSupportedLimits",
         "inheritance": null,
@@ -348,6 +348,38 @@
           },
           {
             "type": "attribute",
+            "name": "maxStorageBuffersInVertexStage",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxstoragebuffersinvertexstage"
+          },
+          {
+            "type": "attribute",
+            "name": "maxStorageBuffersInFragmentStage",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxstoragebuffersinfragmentstage"
+          },
+          {
+            "type": "attribute",
             "name": "maxStorageTexturesPerShaderStage",
             "idlType": {
               "type": "attribute-type",
@@ -361,6 +393,38 @@
             "special": "",
             "readonly": true,
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxstoragetexturespershaderstage"
+          },
+          {
+            "type": "attribute",
+            "name": "maxStorageTexturesInVertexStage",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxstoragetexturesinvertexstage"
+          },
+          {
+            "type": "attribute",
+            "name": "maxStorageTexturesInFragmentStage",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxstoragetexturesinfragmentstage"
           },
           {
             "type": "attribute",
@@ -2878,7 +2942,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#namespacedef-gpumapmode"
       },
       "GPUTexture": {
-        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n\n    readonly attribute GPUIntegerCoordinateOut width;\n    readonly attribute GPUIntegerCoordinateOut height;\n    readonly attribute GPUIntegerCoordinateOut depthOrArrayLayers;\n    readonly attribute GPUIntegerCoordinateOut mipLevelCount;\n    readonly attribute GPUSize32Out sampleCount;\n    readonly attribute GPUTextureDimension dimension;\n    readonly attribute GPUTextureFormat format;\n    readonly attribute GPUFlagsConstant usage;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n\n    readonly attribute GPUIntegerCoordinateOut width;\n    readonly attribute GPUIntegerCoordinateOut height;\n    readonly attribute GPUIntegerCoordinateOut depthOrArrayLayers;\n    readonly attribute GPUIntegerCoordinateOut mipLevelCount;\n    readonly attribute GPUSize32Out sampleCount;\n    readonly attribute GPUTextureDimension dimension;\n    readonly attribute GPUTextureFormat format;\n    readonly attribute GPUFlagsConstant usage;\n    readonly attribute (GPUTextureViewDimension or undefined) textureBindingViewDimension;\n};",
         "type": "interface",
         "name": "GPUTexture",
         "inheritance": null,
@@ -3061,6 +3125,39 @@
             "special": "",
             "readonly": true,
             "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-usage"
+          },
+          {
+            "type": "attribute",
+            "name": "textureBindingViewDimension",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUTextureViewDimension"
+                },
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputexture-texturebindingviewdimension"
           }
         ],
         "extAttrs": [
@@ -3091,7 +3188,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gputexture"
       },
       "GPUTextureDescriptor": {
-        "fragment": "dictionary GPUTextureDescriptor\n         : GPUObjectDescriptorBase {\n    required GPUExtent3D size;\n    GPUIntegerCoordinate mipLevelCount = 1;\n    GPUSize32 sampleCount = 1;\n    GPUTextureDimension dimension = \"2d\";\n    required GPUTextureFormat format;\n    required GPUTextureUsageFlags usage;\n    sequence<GPUTextureFormat> viewFormats = [];\n};",
+        "fragment": "dictionary GPUTextureDescriptor\n         : GPUObjectDescriptorBase {\n    required GPUExtent3D size;\n    GPUIntegerCoordinate mipLevelCount = 1;\n    GPUSize32 sampleCount = 1;\n    GPUTextureDimension dimension = \"2d\";\n    required GPUTextureFormat format;\n    required GPUTextureUsageFlags usage;\n    sequence<GPUTextureFormat> viewFormats = [];\n    GPUTextureViewDimension textureBindingViewDimension;\n};",
         "type": "dictionary",
         "name": "GPUTextureDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -3228,6 +3325,22 @@
             },
             "required": false,
             "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-viewformats"
+          },
+          {
+            "type": "field",
+            "name": "textureBindingViewDimension",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureViewDimension"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gputexturedescriptor-texturebindingviewdimension"
           }
         ],
         "extAttrs": [],
@@ -13948,6 +14061,7 @@
         "GPUTextureDimension",
         "GPUTextureFormat",
         "GPUFlagsConstant",
+        "GPUTextureViewDimension",
         "GPUObjectBase"
       ],
       "GPUTextureDescriptor": [
@@ -13957,7 +14071,8 @@
         "GPUSize32",
         "GPUTextureDimension",
         "GPUTextureFormat",
-        "GPUTextureUsageFlags"
+        "GPUTextureUsageFlags",
+        "GPUTextureViewDimension"
       ],
       "GPUTextureUsage": [],
       "GPUTextureView": [
