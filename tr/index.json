@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-11-19T01:37:47.313Z",
+  "date": "2025-11-20T01:48:26.800Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -20,13 +20,13 @@
       "cookiestore",
       "partitioned-cookies",
       "client-hint-reliability",
+      "idempotency-key-header",
       "layered-cookies",
       "no-vary-search",
       "rfc6265bis",
       "dom",
       "css-typed-om-2",
       "font-metrics-api-1",
-      "css-anchor-position-2",
       "css-backgrounds-4",
       "css-color-6",
       "css-conditional-values-1",
@@ -65,6 +65,7 @@
       "private-click-measurement",
       "requestStorageAccessFor",
       "saa-non-cookie-storage",
+      "storage-access-headers",
       "storage-access",
       "quirks",
       "glTF",
@@ -148,7 +149,9 @@
       "at-driver",
       "shacl12-cs",
       "shacl12-node-expr",
+      "shacl12-profiling",
       "shacl12-rules",
+      "shacl12-ui",
       "execCommand",
       "element-timing",
       "gamepad-extensions",
@@ -158,6 +161,7 @@
       "mediacapture-automation",
       "mediacapture-handle-actions",
       "mediacapture-surface-control",
+      "pdf-aam",
       "permissions-registry",
       "network-reporting",
       "sparql12-concepts",
@@ -167,6 +171,7 @@
       "tracestate-ids-registry",
       "web-nfc",
       "web-share-target",
+      "webextensions",
       "webrtc-ice",
       "wot-binding-registry",
       "wasm-core-2-fork-branch-hinting",
@@ -349,6 +354,7 @@
       "css-2025",
       "css-align-3",
       "css-anchor-position-1",
+      "css-anchor-position-2",
       "css-animation-worklet-1",
       "css-animations-1",
       "css-animations-2",
@@ -636,6 +642,7 @@
       "upgrade-insecure-requests",
       "user-timing",
       "vc-bitstring-status-list",
+      "vc-confidence-method",
       "vc-data-integrity",
       "vc-data-model-2.0",
       "vc-di-bbs",
@@ -643,6 +650,7 @@
       "vc-di-eddsa",
       "vc-jose-cose",
       "vc-json-schema",
+      "vc-render-method",
       "vibration",
       "virtual-keyboard",
       "vocab-dcat-3",
@@ -739,10 +747,10 @@
     ]
   },
   "stats": {
-    "crawled": 397,
+    "crawled": 400,
     "errors": 0
   },
-  "crawler": "reffy-20.0.1",
+  "crawler": "reffy-20.0.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -788,7 +796,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "19 November 2025",
+      "date": "20 November 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -2803,6 +2811,74 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/css-anchor-position-2/",
+      "seriesComposition": "delta",
+      "shortname": "css-anchor-position-2",
+      "series": {
+        "shortname": "css-anchor-position",
+        "currentSpecification": "css-anchor-position-1",
+        "title": "CSS Anchor Positioning",
+        "shortTitle": "CSS Anchor Positioning",
+        "releaseUrl": "https://www.w3.org/TR/css-anchor-position/",
+        "nightlyUrl": "https://drafts.csswg.org/css-anchor-position/"
+      },
+      "seriesVersion": "2",
+      "seriesPrevious": "css-anchor-position-1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/groups/wg/css/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-anchor-position-2/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-anchor-position-2/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-anchor-position-2/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-anchor-position-2/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Anchor Positioning Module Level 2",
+      "source": "w3c",
+      "shortTitle": "CSS Anchor Positioning 2",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-anchor-position"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/css-anchor-position-2/",
+        "https://drafts.csswg.org/css-anchor-position-2/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-anchor-position-2/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 17 Oct 2025 14:52:26 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "21 October 2025",
+      "revision": "136029aef2adb78a57abe2e288dd38917d13f566",
+      "links": "links/css-anchor-position-2.json",
+      "refs": "refs/css-anchor-position-2.json",
+      "css": "css/css-anchor-position-2.json",
+      "dfns": "dfns/css-anchor-position-2.json",
+      "headings": "headings/css-anchor-position-2.json",
+      "ids": "ids/css-anchor-position-2.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/css-animation-worklet-1/",
       "seriesComposition": "full",
       "shortname": "css-animation-worklet-1",
@@ -4691,7 +4767,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-display-4/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -10708,11 +10784,11 @@
       ],
       "crawled": "https://www.w3.org/TR/did-resolution/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 16 Oct 2025 13:51:36 GMT"
+        "lastModified": "Thu, 20 Nov 2025 01:32:15 GMT"
       },
       "generator": "respec",
-      "date": "16 October 2025",
-      "revision": "a0da1e3084f02c2b1ca41a59389a727b54d28b8c",
+      "date": "20 November 2025",
+      "revision": "d696e7318124250f1b4d1bfd6c2cd1346a768603",
       "algorithms": "algorithms/did-resolution.json",
       "links": "links/did-resolution.json",
       "refs": "refs/did-resolution.json",
@@ -13349,7 +13425,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/IFT/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -16272,11 +16348,11 @@
       ],
       "crawled": "https://www.w3.org/TR/paint-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 20 Oct 2025 12:22:17 GMT"
+        "lastModified": "Wed, 19 Nov 2025 10:46:05 GMT"
       },
       "generator": "bikeshed",
-      "date": "20 October 2025",
-      "revision": "8ab378a84d96bfc78102b853dd5411ec3b20acc6",
+      "date": "19 November 2025",
+      "revision": "401de50d1daec81a530ab9af81930269bfaa47a4",
       "algorithms": "algorithms/paint-timing.json",
       "links": "links/paint-timing.json",
       "refs": "refs/paint-timing.json",
@@ -16963,7 +17039,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/pointerevents3/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -19161,7 +19237,7 @@
       },
       "title": "Service Workers Nightly",
       "source": "w3c",
-      "shortTitle": "Service Workers",
+      "shortTitle": "Service Workers Nightly",
       "categories": [
         "browser"
       ],
@@ -19294,11 +19370,11 @@
       ],
       "crawled": "https://www.w3.org/TR/shacl12-sparql/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 29 Oct 2025 22:32:31 GMT"
+        "lastModified": "Thu, 20 Nov 2025 00:15:05 GMT"
       },
       "generator": "respec",
-      "date": "29 October 2025",
-      "revision": "57c85327f248f07e5becc76f8c318100a561788e",
+      "date": "20 November 2025",
+      "revision": "d7ba636521c0ad7de63c8996cc8b007ae7994d94",
       "algorithms": "algorithms/shacl12-sparql.json",
       "links": "links/shacl12-sparql.json",
       "refs": "refs/shacl12-sparql.json",
@@ -21311,6 +21387,60 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/vc-confidence-method/",
+      "seriesComposition": "full",
+      "shortname": "vc-confidence-method",
+      "series": {
+        "shortname": "vc-confidence-method",
+        "currentSpecification": "vc-confidence-method",
+        "title": "Confidence Method v1.0",
+        "shortTitle": "Confidence Method v1.0",
+        "releaseUrl": "https://www.w3.org/TR/vc-confidence-method/",
+        "nightlyUrl": "https://w3c.github.io/vc-confidence-method/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-confidence-method/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-confidence-method/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-confidence-method",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Confidence Method v1.0",
+      "source": "w3c",
+      "shortTitle": "Confidence Method v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-confidence-method/",
+        "https://w3c.github.io/vc-confidence-method/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-confidence-method/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 20 Oct 2025 04:02:57 GMT"
+      },
+      "generator": "respec",
+      "date": "30 October 2025",
+      "links": "links/vc-confidence-method.json",
+      "refs": "refs/vc-confidence-method.json",
+      "dfns": "dfns/vc-confidence-method.json",
+      "headings": "headings/vc-confidence-method.json",
+      "ids": "ids/vc-confidence-method.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/vc-data-integrity/",
       "seriesComposition": "full",
       "shortname": "vc-data-integrity",
@@ -21695,6 +21825,61 @@
       "dfns": "dfns/vc-json-schema.json",
       "headings": "headings/vc-json-schema.json",
       "ids": "ids/vc-json-schema.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vc-render-method/",
+      "seriesComposition": "full",
+      "shortname": "vc-render-method",
+      "series": {
+        "shortname": "vc-render-method",
+        "currentSpecification": "vc-render-method",
+        "title": "Verifiable Credential Rendering Methods v1.0",
+        "shortTitle": "Verifiable Credential Rendering Methods v1.0",
+        "releaseUrl": "https://www.w3.org/TR/vc-render-method/",
+        "nightlyUrl": "https://w3c.github.io/vc-render-method/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-render-method/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-render-method/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-render-method",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Verifiable Credential Rendering Methods v1.0",
+      "source": "w3c",
+      "shortTitle": "Verifiable Credential Rendering Methods v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-render-method/",
+        "https://w3c.github.io/vc-render-method/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-render-method/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 30 Oct 2025 12:56:17 GMT"
+      },
+      "generator": "respec",
+      "date": "30 October 2025",
+      "algorithms": "algorithms/vc-render-method.json",
+      "links": "links/vc-render-method.json",
+      "refs": "refs/vc-render-method.json",
+      "dfns": "dfns/vc-render-method.json",
+      "headings": "headings/vc-render-method.json",
+      "ids": "ids/vc-render-method.json",
       "cddl": []
     },
     {
@@ -22418,11 +22603,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wasm-js-api-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 18 Nov 2025 16:46:27 GMT"
+        "lastModified": "Wed, 19 Nov 2025 13:33:37 GMT"
       },
       "generator": "bikeshed",
-      "date": "18 November 2025",
-      "revision": "6d81d8c32717848073be7e7d49d4c491c0b49b8c",
+      "date": "19 November 2025",
+      "revision": "6f3007c97dc5c20925fa2981c2a62c0705c4eaf3",
       "algorithms": "algorithms/wasm-js-api-2.json",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
@@ -22484,11 +22669,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wasm-web-api-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 18 Nov 2025 16:48:19 GMT"
+        "lastModified": "Wed, 19 Nov 2025 13:33:18 GMT"
       },
       "generator": "bikeshed",
-      "date": "18 November 2025",
-      "revision": "6d81d8c32717848073be7e7d49d4c491c0b49b8c",
+      "date": "19 November 2025",
+      "revision": "6f3007c97dc5c20925fa2981c2a62c0705c4eaf3",
       "algorithms": "algorithms/wasm-web-api-2.json",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
@@ -22705,7 +22890,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/web-animations-2/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -23992,11 +24177,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 27 Oct 2025 22:06:59 GMT"
+        "lastModified": "Wed, 19 Nov 2025 22:31:45 GMT"
       },
       "generator": "bikeshed",
-      "date": "27 October 2025",
-      "revision": "0d173fe87971171359dac8c593ad489b6de5aeae",
+      "date": "19 November 2025",
+      "revision": "66a81b293d654e6b50e9a07efbb04379012c6f25",
       "algorithms": "algorithms/webcodecs.json",
       "links": "links/webcodecs.json",
       "refs": "refs/webcodecs.json",
@@ -24120,11 +24305,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webdriver-bidi/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 06 Nov 2025 16:04:25 GMT"
+        "lastModified": "Wed, 19 Nov 2025 13:12:23 GMT"
       },
       "generator": "bikeshed",
-      "date": "6 November 2025",
-      "revision": "5ce7a32158960625e80e17e5dc24dbb8e17a4995",
+      "date": "19 November 2025",
+      "revision": "280f2ccccc137ebc26ac01fc239a385558c5af6c",
       "algorithms": "algorithms/webdriver-bidi.json",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",
@@ -24263,11 +24448,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 28 Oct 2025 04:48:21 GMT"
+        "lastModified": "Wed, 19 Nov 2025 21:26:05 GMT"
       },
       "generator": "bikeshed",
-      "date": "28 October 2025",
-      "revision": "aa12664889243815b0d4a81f857b61b0dbdf2047",
+      "date": "19 November 2025",
+      "revision": "6eae31ebb74b4877d91ddce47865ba89bf1ae1a5",
       "algorithms": "algorithms/webgpu.json",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",

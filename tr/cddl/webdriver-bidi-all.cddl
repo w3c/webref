@@ -199,7 +199,7 @@ session.UserPromptHandlerType = "accept" / "dismiss" / "ignore";
 
 session.Subscription = text
 
-session.SubscriptionRequest = {
+session.SubscribeParameters = {
   events: [+text],
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
@@ -257,7 +257,7 @@ session.EndResult = EmptyResult
 
 session.Subscribe = (
   method: "session.subscribe",
-  params: session.SubscriptionRequest
+  params: session.SubscribeParameters
 )
 
 session.SubscribeResult = {
@@ -958,6 +958,8 @@ emulation.NetworkConditions = emulation.NetworkConditionsOffline
 emulation.NetworkConditionsOffline = {
   type: "offline"
 }
+
+emulation.SetNetworkConditionsResult = EmptyResult
 
 emulation.SetScreenOrientationOverride = (
   method: "emulation.setScreenOrientationOverride",
@@ -2511,7 +2513,7 @@ session.UserPromptHandlerType = "accept" / "dismiss" / "ignore";
 
 session.Subscription = text
 
-session.SubscriptionRequest = {
+session.SubscribeParameters = {
   events: [+text],
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
@@ -2546,7 +2548,7 @@ session.End = (
 
 session.Subscribe = (
   method: "session.subscribe",
-  params: session.SubscriptionRequest
+  params: session.SubscribeParameters
 )
 
 session.Unsubscribe = (
@@ -4562,6 +4564,8 @@ emulation.SetForcedColorsModeThemeOverrideResult = EmptyResult
 emulation.SetGeolocationOverrideResult = EmptyResult
 
 emulation.SetLocaleOverrideResult = EmptyResult
+
+emulation.SetNetworkConditionsResult = EmptyResult
 
 emulation.SetScreenOrientationOverrideResult = EmptyResult
 

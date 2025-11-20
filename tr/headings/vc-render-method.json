@@ -1,0 +1,223 @@
+{
+  "spec": {
+    "title": "Verifiable Credential Rendering Methods v1.0",
+    "url": "https://www.w3.org/TR/vc-render-method/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/vc-render-method/#title",
+      "level": 1,
+      "title": "Verifiable Credential Rendering Methods v1.0"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/vc-render-method/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/vc-render-method/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/vc-render-method/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "alternateIds": [
+        "x1-1-terminology"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/vc-render-method/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-2-conformance"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "data-model",
+      "href": "https://www.w3.org/TR/vc-render-method/#data-model",
+      "level": 2,
+      "title": "Data Model",
+      "alternateIds": [
+        "x2-data-model"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "the-rendermethod-property",
+      "href": "https://www.w3.org/TR/vc-render-method/#the-rendermethod-property",
+      "level": 3,
+      "title": "The renderMethod Property",
+      "alternateIds": [
+        "x2-1-the-rendermethod-property"
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "templaterendermethod",
+      "href": "https://www.w3.org/TR/vc-render-method/#templaterendermethod",
+      "level": 3,
+      "title": "TemplateRenderMethod",
+      "alternateIds": [
+        "x2-2-templaterendermethod"
+      ],
+      "number": "2.2"
+    },
+    {
+      "id": "the-svg-mustache-render-suite",
+      "href": "https://www.w3.org/TR/vc-render-method/#the-svg-mustache-render-suite",
+      "level": 4,
+      "title": "The svg-mustache Render Suite",
+      "alternateIds": [
+        "x2-2-1-the-svg-mustache-render-suite"
+      ],
+      "number": "2.2.1"
+    },
+    {
+      "id": "the-pdf-mustache-render-suite",
+      "href": "https://www.w3.org/TR/vc-render-method/#the-pdf-mustache-render-suite",
+      "level": 4,
+      "title": "The pdf-mustache Render Suite",
+      "alternateIds": [
+        "x2-2-2-the-pdf-mustache-render-suite"
+      ],
+      "number": "2.2.2"
+    },
+    {
+      "id": "the-nfc-render-suite",
+      "href": "https://www.w3.org/TR/vc-render-method/#the-nfc-render-suite",
+      "level": 4,
+      "title": "The nfc Render Suite",
+      "alternateIds": [
+        "x2-2-3-the-nfc-render-suite"
+      ],
+      "number": "2.2.3"
+    },
+    {
+      "id": "openattestationembeddedrenderer",
+      "href": "https://www.w3.org/TR/vc-render-method/#openattestationembeddedrenderer",
+      "level": 3,
+      "title": "OpenAttestationEmbeddedRenderer",
+      "alternateIds": [
+        "x2-3-openattestationembeddedrenderer"
+      ],
+      "number": "2.3"
+    },
+    {
+      "id": "action-api",
+      "href": "https://www.w3.org/TR/vc-render-method/#action-api",
+      "level": 4,
+      "title": "Action API",
+      "alternateIds": [
+        "x2-3-1-action-api"
+      ],
+      "number": "2.3.1"
+    },
+    {
+      "id": "host-to-frame-actions",
+      "href": "https://www.w3.org/TR/vc-render-method/#host-to-frame-actions",
+      "level": 5,
+      "title": "Host-to-Frame Actions",
+      "alternateIds": [
+        "x2-3-1-1-host-to-frame-actions"
+      ],
+      "number": "2.3.1.1"
+    },
+    {
+      "id": "frame-to-host-actions",
+      "href": "https://www.w3.org/TR/vc-render-method/#frame-to-host-actions",
+      "level": 5,
+      "title": "Frame-to-Host Actions",
+      "alternateIds": [
+        "x2-3-1-2-frame-to-host-actions"
+      ],
+      "number": "2.3.1.2"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://www.w3.org/TR/vc-render-method/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "alternateIds": [
+        "x3-algorithms"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "render-templaterendermethod",
+      "href": "https://www.w3.org/TR/vc-render-method/#render-templaterendermethod",
+      "level": 3,
+      "title": "Render (TemplateRenderMethod)",
+      "alternateIds": [
+        "x3-1-render-templaterendermethod"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/vc-render-method/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "x4-security-considerations"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/vc-render-method/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "x5-privacy-considerations"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "internationalization-considerations",
+      "href": "https://www.w3.org/TR/vc-render-method/#internationalization-considerations",
+      "level": 2,
+      "title": "Internationalization Considerations",
+      "alternateIds": [
+        "x6-internationalization-considerations"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/vc-render-method/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "a-references"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/vc-render-method/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "a-1-normative-references"
+      ],
+      "number": "A.1"
+    }
+  ]
+}

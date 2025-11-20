@@ -68,7 +68,10 @@
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/WGSL/": {
         "anchors": [
-          "alignment-and-size"
+          "alignment-and-size",
+          "dpdxFine-builtin",
+          "dpdyFine-builtin",
+          "fwidthFine-builtin"
         ]
       },
       "https://www.w3.org/TR/css-color-4/": {},
@@ -136,12 +139,18 @@
           "built-in-values-sample_mask",
           "shader-stage-output",
           "built-in-values-frag_depth",
+          "shader-stage-input",
+          "built-in-values-sample_index",
+          "interpolation",
+          "interpolation-type-linear",
+          "interpolation-type-flat",
           "built-in-values-clip_distances",
           "input-output-locations",
-          "interpolation",
           "built-in-values",
           "use-dual-source-blending",
           "scalar-types",
+          "built-in-values-vertex_index",
+          "built-in-values-instance_index",
           "indeterminate-values",
           "differences-from-ieee754",
           "invalid-memory-reference",
@@ -154,13 +163,10 @@
           "sync-builtin-functions",
           "shader-execution-end",
           "channel-formats",
-          "interpolation-type-flat",
-          "interpolation-type-linear",
           "interpolation-type-perspective",
           "built-in-output-value",
           "interpolation-type",
           "interpolate-attr",
-          "shader-stage-input",
           "f16",
           "extension-f16",
           "extension-clip_distances",
@@ -378,7 +384,9 @@
       },
       "https://www.w3.org/TR/WGSL/": {
         "anchors": [
-          "interpolation-sampling"
+          "interpolation-sampling",
+          "interpolation-sampling-either",
+          "interpolation-sampling-sample"
         ]
       },
       "https://www.w3.org/TR/css-color-4/": {

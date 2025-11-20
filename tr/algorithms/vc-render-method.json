@@ -1,0 +1,41 @@
+{
+  "spec": {
+    "title": "Verifiable Credential Rendering Methods v1.0",
+    "url": "https://www.w3.org/TR/vc-render-method/"
+  },
+  "algorithms": [
+    {
+      "html": "All actions follow the same structure. They are composed of <code>type</code> and\n                <code>payload</code>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<code>type</code> indicates the kind of action being executed, for instance,\n                    <code>RENDER_DOCUMENT</code> means rendering a document. The type of an action is\n                    mandatory."
+        },
+        {
+          "html": "<code>payload</code> indicates optional data associated to the type, for instance,\n                    the content of the document to render."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm is used to transform the SVG image template into the\nfinal SVG image that is displayed. The inputs to the algorithm are the\n<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/vc-render-method/#dfn-verifiable-credential\" class=\"internalDFN\" id=\"ref-for-dfn-verifiable-credential-37\">verifiable credential</a> (<code>verifiableCredential</code>) and the SVG image\nsource code (<code>svgImage</code>). The output is a SVG image.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Generate a map, <code>replacementMap</code>, by finding all strings in <code>svgImage</code> that\nstart with <code>{{</code> (double open braces) and end with <code>}}</code>\n(double close braces). For each string, <code>templateKey</code>, that is found:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Generate another string, <code>templateValue</code>, by evaluating the value of\n<code>templateKey</code> (without the opening or closing braces) using the JSON\nPointer [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-render-method/#bib-rfc6901\" title=\"JavaScript Object Notation (JSON) Pointer\">RFC6901</a></cite>] algorithm with the <code>verifiableCredential</code> as input to the\nalgorithm. If the evaluation is <code>null</code>, set <code>templateValue</code> to the empty string."
+            },
+            {
+              "html": "Set a key in <code>replacementMap</code> by using <code>templateKey</code> and associate it with\n<code>templateValue</code>."
+            }
+          ]
+        },
+        {
+          "html": "For every key in <code>replacementMap</code>, replace each corresponding\nstring in <code>svgImage</code> that matches the key with the associated value in the\n<code>replacementMap</code>."
+        }
+      ]
+    }
+  ]
+}
