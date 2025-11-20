@@ -762,30 +762,6 @@
         "partial": false,
         "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcencodedframemetadata"
       },
-      "RTCEncodedVideoFrameType": {
-        "fragment": "// New enum for video frame types. Will eventually re-use the equivalent defined\n// by WebCodecs.\nenum RTCEncodedVideoFrameType {\n    \"empty\",\n    \"key\",\n    \"delta\",\n};",
-        "type": "enum",
-        "name": "RTCEncodedVideoFrameType",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "empty",
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframetype-empty"
-          },
-          {
-            "type": "enum-value",
-            "value": "key",
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframetype-key"
-          },
-          {
-            "type": "enum-value",
-            "value": "delta",
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframetype-delta"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-rtcencodedvideoframetype"
-      },
       "RTCEncodedVideoFrameMetadata": {
         "fragment": "dictionary RTCEncodedVideoFrameMetadata : RTCEncodedFrameMetadata {\n    unsigned long long frameId;\n    sequence<unsigned long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    unsigned long spatialIndex;\n    unsigned long temporalIndex;\n    long long timestamp;    // microseconds\n};",
         "type": "dictionary",
@@ -946,7 +922,7 @@
         "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcencodedvideoframeoptions"
       },
       "RTCEncodedVideoFrame": {
-        "fragment": "// New interfaces to define encoded video and audio frames. Will eventually\n// re-use or extend the equivalent defined in WebCodecs.\n[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedVideoFrame {\n    constructor(RTCEncodedVideoFrame originalFrame, optional RTCEncodedVideoFrameOptions options = {});\n    readonly attribute RTCEncodedVideoFrameType type;\n    attribute ArrayBuffer data;\n    RTCEncodedVideoFrameMetadata getMetadata();\n};",
+        "fragment": "// New interfaces to define RTC specific encoded video and audio frames used by RTCRtpScriptTransform.\n[Exposed=(Window,DedicatedWorker), Serializable]\ninterface RTCEncodedVideoFrame {\n    constructor(RTCEncodedVideoFrame originalFrame, optional RTCEncodedVideoFrameOptions options = {});\n    readonly attribute EncodedVideoChunkType type;\n    attribute ArrayBuffer data;\n    RTCEncodedVideoFrameMetadata getMetadata();\n};",
         "type": "interface",
         "name": "RTCEncodedVideoFrame",
         "inheritance": null,
@@ -1001,7 +977,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "RTCEncodedVideoFrameType"
+              "idlType": "EncodedVideoChunkType"
             },
             "extAttrs": [],
             "special": "",
@@ -1800,7 +1776,7 @@
       "RTCEncodedVideoFrame": [
         "RTCEncodedVideoFrame",
         "RTCEncodedVideoFrameOptions",
-        "RTCEncodedVideoFrameType",
+        "EncodedVideoChunkType",
         "ArrayBuffer",
         "RTCEncodedVideoFrameMetadata"
       ],
@@ -1845,6 +1821,7 @@
       "Event",
       "EventInit",
       "DOMHighResTimeStamp",
+      "EncodedVideoChunkType",
       "ArrayBuffer",
       "DedicatedWorkerGlobalScope",
       "ReadableStream",

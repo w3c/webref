@@ -961,6 +961,24 @@ emulation.NetworkConditionsOffline = {
 
 emulation.SetNetworkConditionsResult = EmptyResult
 
+emulation.SetScreenSettingsOverride = (
+  method: "emulation.setScreenSettingsOverride",
+  params: emulation.SetScreenSettingsOverrideParameters
+)
+
+emulation.ScreenArea = {
+  width: js-uint,
+  height: js-uint
+}
+
+emulation.SetScreenSettingsOverrideParameters = {
+  screenArea: emulation.ScreenArea / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.SetScreenSettingsOverrideResult = EmptyResult
+
 emulation.SetScreenOrientationOverride = (
   method: "emulation.setScreenOrientationOverride",
   params: emulation.SetScreenOrientationOverrideParameters
@@ -2994,6 +3012,22 @@ emulation.NetworkConditionsOffline = {
   type: "offline"
 }
 
+emulation.SetScreenSettingsOverride = (
+  method: "emulation.setScreenSettingsOverride",
+  params: emulation.SetScreenSettingsOverrideParameters
+)
+
+emulation.ScreenArea = {
+  width: js-uint,
+  height: js-uint
+}
+
+emulation.SetScreenSettingsOverrideParameters = {
+  screenArea: emulation.ScreenArea / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
 emulation.SetScreenOrientationOverride = (
   method: "emulation.setScreenOrientationOverride",
   params: emulation.SetScreenOrientationOverrideParameters
@@ -4566,6 +4600,8 @@ emulation.SetGeolocationOverrideResult = EmptyResult
 emulation.SetLocaleOverrideResult = EmptyResult
 
 emulation.SetNetworkConditionsResult = EmptyResult
+
+emulation.SetScreenSettingsOverrideResult = EmptyResult
 
 emulation.SetScreenOrientationOverrideResult = EmptyResult
 

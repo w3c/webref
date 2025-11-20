@@ -10,7 +10,7 @@
     },
     "idlNames": {
       "CrashReportBody": {
-        "fragment": "dictionary CrashReportBody : ReportBody {\n  DOMString reason;\n  DOMString stack;\n  boolean is_top_level;\n  DocumentVisibilityState page_visibility;\n};",
+        "fragment": "dictionary CrashReportBody : ReportBody {\n  DOMString reason;\n  DOMString stack;\n  boolean is_top_level;\n  DocumentVisibilityState visibility_state;\n};",
         "type": "dictionary",
         "name": "CrashReportBody",
         "inheritance": "ReportBody",
@@ -62,7 +62,7 @@
           },
           {
             "type": "field",
-            "name": "page_visibility",
+            "name": "visibility_state",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",

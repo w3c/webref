@@ -1,10 +1,9 @@
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
-// New interfaces to define encoded video and audio frames. Will eventually
-// re-use or extend the equivalent defined in WebCodecs.
+// New interfaces to define RTC specific encoded video and audio frames used by RTCRtpScriptTransform.
 [Exposed=(Window,DedicatedWorker), Serializable]
 interface RTCEncodedVideoFrame {
     constructor(RTCEncodedVideoFrame originalFrame, optional RTCEncodedVideoFrameOptions options = {});
-    readonly attribute RTCEncodedVideoFrameType type;
+    readonly attribute EncodedVideoChunkType type;
     attribute ArrayBuffer data;
     RTCEncodedVideoFrameMetadata getMetadata();
 };
