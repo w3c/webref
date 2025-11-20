@@ -1764,7 +1764,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>onFulfilled</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction\">CreateBuiltinFunction</a>(<var>onFulfilledSteps</var>, « »):</p>"
+          "html": "<p>Let <var>onFulfilled</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction\">CreateBuiltinFunction</a>(<var>onFulfilledSteps</var>, 1, \"\", « »):</p>"
         },
         {
           "html": "Let <var>onRejectedSteps</var> be the following steps given argument <var>R</var>:",
@@ -1782,7 +1782,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>onRejected</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①\">CreateBuiltinFunction</a>(<var>onRejectedSteps</var>, « »):</p>"
+          "html": "<p>Let <var>onRejected</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①\">CreateBuiltinFunction</a>(<var>onRejectedSteps</var>, 1, \"\", « »):</p>"
         },
         {
           "html": "<p>Let <var>constructor</var> be <var>promise</var>.[[Promise]].[[Realm]].[[Intrinsics]].[[<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-constructor\" id=\"ref-for-sec-promise-constructor④\">%Promise%</a></code>]].</p>"
@@ -1860,7 +1860,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>rejectionHandler</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②\">CreateBuiltinFunction</a>(<var>rejectionHandlerSteps</var>, « »):</p>"
+          "html": "<p>Let <var>rejectionHandler</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②\">CreateBuiltinFunction</a>(<var>rejectionHandlerSteps</var>, 1, \"\", « »):</p>"
         },
         {
           "html": "<p>Let <var>total</var> be <var>promises</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③\">size</a>.</p>"
@@ -1906,7 +1906,7 @@
               ]
             },
             {
-              "html": "<p>Let <var>fulfillmentHandler</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction③\">CreateBuiltinFunction</a>(<var>fulfillmentHandler</var>, « »):</p>"
+              "html": "<p>Let <var>fulfillmentHandler</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction③\">CreateBuiltinFunction</a>(<var>fulfillmentHandler</var>, 1, \"\", « »):</p>"
             },
             {
               "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromisethen\" id=\"ref-for-sec-performpromisethen①\">PerformPromiseThen</a>(<var>promise</var>, <var>fulfillmentHandler</var>, <var>rejectionHandler</var>).</p>"
@@ -3119,9 +3119,6 @@
           "html": "<p>If <var>I</var> inherits from some other interface <var>P</var>,\nthen set <var>constructorProto</var> to the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-object\" id=\"ref-for-dfn-interface-object①⑦\">interface object</a> of <var>P</var> in <var>realm</var>.</p>"
         },
         {
-          "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction④\">CreateBuiltinFunction</a>(<var>steps</var>, « [[Unforgeables]] »,\n<var>realm</var>, <var>constructorProto</var>).</p>"
-        },
-        {
           "html": "<p>Let <var>unforgeables</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate②\">OrdinaryObjectCreate</a>(<emu-val>null</emu-val>).</p>"
         },
         {
@@ -3132,9 +3129,6 @@
         },
         {
           "html": "<p>Set <var>F</var>.[[Unforgeables]] to <var>unforgeables</var>.</p>"
-        },
-        {
-          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname\" id=\"ref-for-sec-setfunctionname\">SetFunctionName</a>(<var>F</var>, <var>id</var>).</p>"
         },
         {
           "html": "<p>Let <var>length</var> be 0.</p>"
@@ -3152,7 +3146,7 @@
           ]
         },
         {
-          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength\" id=\"ref-for-sec-setfunctionlength\">SetFunctionLength</a>(<var>F</var>, <var>length</var>).</p>"
+          "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction④\">CreateBuiltinFunction</a>(<var>steps</var>, <var>length</var>, <var>id</var>, « [[Unforgeables]] »,\n<var>realm</var>, <var>constructorProto</var>).</p>"
         },
         {
           "html": "<p>Let <var>proto</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#create-an-interface-prototype-object\" id=\"ref-for-create-an-interface-prototype-object\">creating an interface\nprototype object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑦⓪\">interface</a> <var>I</var> in <var>realm</var>.</p>"
@@ -3220,19 +3214,13 @@
           ]
         },
         {
-          "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction⑤\">CreateBuiltinFunction</a>(<var>steps</var>, « », <var>realm</var>).</p>"
-        },
-        {
-          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname\" id=\"ref-for-sec-setfunctionname①\">SetFunctionName</a>(<var>F</var>, <var>id</var>).</p>"
-        },
-        {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#compute-the-effective-overload-set\" id=\"ref-for-compute-the-effective-overload-set④\">Compute the effective overload set</a> for legacy factory functions with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier⑦⓪\">identifier</a> <var>id</var>\non <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑦⑥\">interface</a> <var>I</var> and with argument count 0, and let <var>S</var> be the result.</p>"
         },
         {
           "html": "<p>Let <var>length</var> be the length of the shortest argument list of the entries in <var>S</var>.</p>"
         },
         {
-          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength\" id=\"ref-for-sec-setfunctionlength①\">SetFunctionLength</a>(<var>F</var>, <var>length</var>).</p>"
+          "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction⑤\">CreateBuiltinFunction</a>(<var>steps</var>, <var>length</var>, <var>id</var>, « », <var>realm</var>).</p>"
         },
         {
           "html": "<p>Let <var>proto</var> be the <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface-prototype-object\" id=\"ref-for-dfn-interface-prototype-object①⓪\">interface prototype object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-interface\" id=\"ref-for-dfn-interface①⑦⑦\">interface</a> <var>I</var> in <var>realm</var>.</p>"
@@ -3687,16 +3675,10 @@
           ]
         },
         {
-          "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction⑥\">CreateBuiltinFunction</a>(<var>steps</var>, « », <var>realm</var>).</p>"
-        },
-        {
           "html": "<p>Let <var>name</var> be the string \"<code>get </code>\" prepended to <var>attribute</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier⑦⑦\">identifier</a>.</p>"
         },
         {
-          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname\" id=\"ref-for-sec-setfunctionname②\">SetFunctionName</a>(<var>F</var>, <var>name</var>).</p>"
-        },
-        {
-          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength\" id=\"ref-for-sec-setfunctionlength②\">SetFunctionLength</a>(<var>F</var>, 0).</p>"
+          "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction⑥\">CreateBuiltinFunction</a>(<var>steps</var>, 0, <var>name</var>, « », <var>realm</var>).</p>"
         },
         {
           "html": "<p>Return <var>F</var>.</p>"
@@ -3876,16 +3858,10 @@
           ]
         },
         {
-          "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction⑦\">CreateBuiltinFunction</a>(<var>steps</var>, « », <var>realm</var>).</p>"
-        },
-        {
           "html": "<p>Let <var>name</var> be the string \"<code>set </code>\" prepended to <var>id</var>.</p>"
         },
         {
-          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname\" id=\"ref-for-sec-setfunctionname③\">SetFunctionName</a>(<var>F</var>, <var>name</var>).</p>"
-        },
-        {
-          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength\" id=\"ref-for-sec-setfunctionlength③\">SetFunctionLength</a>(<var>F</var>, 1).</p>"
+          "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction⑦\">CreateBuiltinFunction</a>(<var>steps</var>, 1, <var>name</var>, « », <var>realm</var>).</p>"
         },
         {
           "html": "<p>Return <var>F</var>.</p>"
@@ -4056,19 +4032,13 @@
           ]
         },
         {
-          "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction⑧\">CreateBuiltinFunction</a>(<var>steps</var>, « », <var>realm</var>).</p>"
-        },
-        {
-          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname\" id=\"ref-for-sec-setfunctionname④\">SetFunctionName</a>(<var>F</var>, <var>id</var>).</p>"
-        },
-        {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#compute-the-effective-overload-set\" id=\"ref-for-compute-the-effective-overload-set⑥\">Compute the effective overload set</a>  for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-regular-operation\" id=\"ref-for-dfn-regular-operation③⑨\">regular operations</a> (if <var>op</var> is a regular\noperation) or for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-static-operation\" id=\"ref-for-dfn-static-operation①⑨\">static operations</a> (if <var>op</var> is a static operation) with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-identifier\" id=\"ref-for-dfn-identifier⑧③\">identifier</a>\n<var>id</var> on <var>target</var> and with argument count 0, and let <var>S</var> be the result.</p>"
         },
         {
           "html": "<p>Let <var>length</var> be the length of the shortest argument list in the entries in <var>S</var>.</p>"
         },
         {
-          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength\" id=\"ref-for-sec-setfunctionlength④\">SetFunctionLength</a>(<var>F</var>, <var>length</var>).</p>"
+          "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction⑧\">CreateBuiltinFunction</a>(<var>steps</var>, <var>length</var>, <var>id</var>, « », <var>realm</var>).</p>"
         },
         {
           "html": "<p>Return <var>F</var>.</p>"
@@ -4286,13 +4256,7 @@
                   ]
                 },
                 {
-                  "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction⑨\">CreateBuiltinFunction</a>(<var>steps</var>, « », <var>realm</var>).</p>"
-                },
-                {
-                  "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname\" id=\"ref-for-sec-setfunctionname⑤\">SetFunctionName</a>(<var>F</var>, \"<code>entries</code>\").</p>"
-                },
-                {
-                  "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength\" id=\"ref-for-sec-setfunctionlength⑤\">SetFunctionLength</a>(<var>F</var>, 0).</p>"
+                  "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction⑨\">CreateBuiltinFunction</a>(<var>steps</var>, 0, \"<code>entries</code>\", « », <var>realm</var>).</p>"
                 },
                 {
                   "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-definemethodproperty\" id=\"ref-for-sec-definemethodproperty①\">DefineMethodProperty</a>(<var>target</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-well-known-symbols\" id=\"ref-for-sec-well-known-symbols②⑥\">%Symbol.iterator%</a></code>, <var>F</var>, false).</p>"
@@ -4325,13 +4289,7 @@
                   ]
                 },
                 {
-                  "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①⓪\">CreateBuiltinFunction</a>(<var>steps</var>, « », <var>realm</var>).</p>"
-                },
-                {
-                  "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname\" id=\"ref-for-sec-setfunctionname⑥\">SetFunctionName</a>(<var>F</var>, \"<code>keys</code>\").</p>"
-                },
-                {
-                  "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength\" id=\"ref-for-sec-setfunctionlength⑥\">SetFunctionLength</a>(<var>F</var>, 0).</p>"
+                  "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①⓪\">CreateBuiltinFunction</a>(<var>steps</var>, 0, \"<code>keys</code>\", « », <var>realm</var>).</p>"
                 },
                 {
                   "html": "<p>Perform <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑧⑤\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow\" id=\"ref-for-sec-createdatapropertyorthrow①⓪\">CreateDataPropertyOrThrow</a>(<var>target</var>, \"<code>keys</code>\", <var>F</var>).</p>"
@@ -4361,13 +4319,7 @@
                   ]
                 },
                 {
-                  "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①①\">CreateBuiltinFunction</a>(<var>steps</var>, « », <var>realm</var>).</p>"
-                },
-                {
-                  "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname\" id=\"ref-for-sec-setfunctionname⑦\">SetFunctionName</a>(<var>F</var>, \"<code>values</code>\").</p>"
-                },
-                {
-                  "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength\" id=\"ref-for-sec-setfunctionlength⑦\">SetFunctionLength</a>(<var>F</var>, 0).</p>"
+                  "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①①\">CreateBuiltinFunction</a>(<var>steps</var>, 0, \"<code>values</code>\", « », <var>realm</var>).</p>"
                 },
                 {
                   "html": "<p>Perform <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑧⑦\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow\" id=\"ref-for-sec-createdatapropertyorthrow①①\">CreateDataPropertyOrThrow</a>(<var>target</var>, \"<code>values</code>\", <var>F</var>).</p>"
@@ -4424,13 +4376,7 @@
                   ]
                 },
                 {
-                  "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①②\">CreateBuiltinFunction</a>(<var>steps</var>, « », <var>realm</var>).</p>"
-                },
-                {
-                  "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname\" id=\"ref-for-sec-setfunctionname⑧\">SetFunctionName</a>(<var>F</var>, \"<code>forEach</code>\").</p>"
-                },
-                {
-                  "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength\" id=\"ref-for-sec-setfunctionlength⑧\">SetFunctionLength</a>(<var>F</var>, 1).</p>"
+                  "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①②\">CreateBuiltinFunction</a>(<var>steps</var>, 1, \"<code>forEach</code>\", « », <var>realm</var>).</p>"
                 },
                 {
                   "html": "<p>Perform <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑧⑨\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow\" id=\"ref-for-sec-createdatapropertyorthrow①②\">CreateDataPropertyOrThrow</a>(<var>target</var>, \"<code>forEach</code>\", <var>F</var>).</p>"
@@ -4619,13 +4565,7 @@
               ]
             },
             {
-              "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①③\">CreateBuiltinFunction</a>(<var>steps</var>, « », <var>realm</var>).</p>"
-            },
-            {
-              "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname\" id=\"ref-for-sec-setfunctionname⑨\">SetFunctionName</a>(<var>F</var>, \"<code>entries</code>\").</p>"
-            },
-            {
-              "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength\" id=\"ref-for-sec-setfunctionlength⑨\">SetFunctionLength</a>(<var>F</var>, 0).</p>"
+              "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①③\">CreateBuiltinFunction</a>(<var>steps</var>, 0, \"<code>entries</code>\", « », <var>realm</var>).</p>"
             },
             {
               "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-definemethodproperty\" id=\"ref-for-sec-definemethodproperty②\">DefineMethodProperty</a>(<var>target</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-well-known-symbols\" id=\"ref-for-sec-well-known-symbols②⑧\">%Symbol.asyncIterator%</a></code>, <var>F</var>, false).</p>"
@@ -4670,13 +4610,7 @@
               ]
             },
             {
-              "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①④\">CreateBuiltinFunction</a>(<var>steps</var>, « », <var>realm</var>).</p>"
-            },
-            {
-              "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname\" id=\"ref-for-sec-setfunctionname①⓪\">SetFunctionName</a>(<var>F</var>, \"<code>keys</code>\").</p>"
-            },
-            {
-              "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength\" id=\"ref-for-sec-setfunctionlength①⓪\">SetFunctionLength</a>(<var>F</var>, 0).</p>"
+              "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①④\">CreateBuiltinFunction</a>(<var>steps</var>, 0, \"<code>keys</code>, « », <var>realm</var>).</p>"
             },
             {
               "html": "<p>Perform <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑨⑦\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow\" id=\"ref-for-sec-createdatapropertyorthrow①⑥\">CreateDataPropertyOrThrow</a>(<var>target</var>, \"<code>keys</code>\", <var>F</var>).</p>"
@@ -4718,13 +4652,7 @@
               ]
             },
             {
-              "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①⑤\">CreateBuiltinFunction</a>(<var>steps</var>, « », <var>realm</var>).</p>"
-            },
-            {
-              "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname\" id=\"ref-for-sec-setfunctionname①①\">SetFunctionName</a>(<var>F</var>, \"<code>values</code>\").</p>"
-            },
-            {
-              "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength\" id=\"ref-for-sec-setfunctionlength①①\">SetFunctionLength</a>(<var>F</var>, 0).</p>"
+              "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①⑤\">CreateBuiltinFunction</a>(<var>steps</var>, 0, \"<code>values</code>\", « », <var>realm</var>).</p>"
             },
             {
               "html": "<p>Perform <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands⑨⑨\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow\" id=\"ref-for-sec-createdatapropertyorthrow①⑦\">CreateDataPropertyOrThrow</a>(<var>target</var>, \"<code>values</code>\", <var>F</var>).</p>"
@@ -4907,7 +4835,7 @@
               ]
             },
             {
-              "html": "<p>Let <var>onFulfilled</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①⑥\">CreateBuiltinFunction</a>(<var>fulfillSteps</var>, « »).</p>"
+              "html": "<p>Let <var>onFulfilled</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①⑥\">CreateBuiltinFunction</a>(<var>fulfillSteps</var>, 1, \"\", « »).</p>"
             },
             {
               "html": "Let <var>rejectSteps</var> be the following steps, given <var>reason</var>:",
@@ -4925,7 +4853,7 @@
               ]
             },
             {
-              "html": "<p>Let <var>onRejected</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①⑦\">CreateBuiltinFunction</a>(<var>rejectSteps</var>, « »).</p>"
+              "html": "<p>Let <var>onRejected</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①⑦\">CreateBuiltinFunction</a>(<var>rejectSteps</var>, 1, \"\", « »).</p>"
             },
             {
               "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromisethen\" id=\"ref-for-sec-performpromisethen②\">PerformPromiseThen</a>(<var>nextPromise</var>, <var>onFulfilled</var>, <var>onRejected</var>,\n<var>nextPromiseCapability</var>).</p>"
@@ -4946,7 +4874,7 @@
               "html": "<p>Let <var>afterOngoingPromiseCapability</var> be <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①⓪⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-newpromisecapability\" id=\"ref-for-sec-newpromisecapability⑦\">NewPromiseCapability</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-constructor\" id=\"ref-for-sec-promise-constructor⑨\">%Promise%</a></code>).</p>"
             },
             {
-              "html": "<p>Let <var>onSettled</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①⑧\">CreateBuiltinFunction</a>(<var>nextSteps</var>, « »).</p>"
+              "html": "<p>Let <var>onSettled</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①⑧\">CreateBuiltinFunction</a>(<var>nextSteps</var>, 0, \"\", « »).</p>"
             },
             {
               "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromisethen\" id=\"ref-for-sec-performpromisethen③\">PerformPromiseThen</a>(<var>ongoingPromise</var>, <var>onSettled</var>, <var>onSettled</var>,\n<var>afterOngoingPromiseCapability</var>).</p>"
@@ -5058,7 +4986,7 @@
               "html": "<p>Let <var>afterOngoingPromiseCapability</var> be <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①①②\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-newpromisecapability\" id=\"ref-for-sec-newpromisecapability①⓪\">NewPromiseCapability</a>(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-constructor\" id=\"ref-for-sec-promise-constructor①②\">%Promise%</a></code>).</p>"
             },
             {
-              "html": "<p>Let <var>onSettled</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①⑨\">CreateBuiltinFunction</a>(<var>returnSteps</var>, « »).</p>"
+              "html": "<p>Let <var>onSettled</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction①⑨\">CreateBuiltinFunction</a>(<var>returnSteps</var>, 0, \"\", « »).</p>"
             },
             {
               "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromisethen\" id=\"ref-for-sec-performpromisethen④\">PerformPromiseThen</a>(<var>ongoingPromise</var>, <var>onSettled</var>, <var>onSettled</var>,\n<var>afterOngoingPromiseCapability</var>).</p>"
@@ -5087,7 +5015,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>onFulfilled</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②⓪\">CreateBuiltinFunction</a>(<var>fulfillSteps</var>, « »).</p>"
+          "html": "<p>Let <var>onFulfilled</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②⓪\">CreateBuiltinFunction</a>(<var>fulfillSteps</var>, 1, \"\", « »).</p>"
         },
         {
           "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromisethen\" id=\"ref-for-sec-performpromisethen⑤\">PerformPromiseThen</a>(<var>object</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#default-asynchronous-iterator-object-ongoing-promise\" id=\"ref-for-default-asynchronous-iterator-object-ongoing-promise⑨\">ongoing promise</a>, <var>onFulfilled</var>, <emu-val>undefined</emu-val>, <var>returnPromiseCapability</var>).</p>"
@@ -6370,49 +6298,49 @@
           "html": "<p>Set <var>handler</var>.[[DeleteAlgorithm]] to <var>deleteAlgorithm</var>.</p>"
         },
         {
-          "html": "<p>Let <var>defineProperty</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②①\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-defineProperty\">§ 3.10.1 defineProperty</a>, « », <var>realm</var>).</p>"
+          "html": "<p>Let <var>defineProperty</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②①\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-defineProperty\">§ 3.10.1 defineProperty</a>, 3, \"\", « », <var>realm</var>).</p>"
         },
         {
           "html": "<p>Perform <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①③③\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow\" id=\"ref-for-sec-createdatapropertyorthrow①⑧\">CreateDataPropertyOrThrow</a>(<var>handler</var>, \"<code>defineProperty</code>\", <var>defineProperty</var>).</p>"
         },
         {
-          "html": "<p>Let <var>deleteProperty</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②②\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-deleteProperty\">§ 3.10.2 deleteProperty</a>, « », <var>realm</var>).</p>"
+          "html": "<p>Let <var>deleteProperty</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②②\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-deleteProperty\">§ 3.10.2 deleteProperty</a>, 2, \"\", « », <var>realm</var>).</p>"
         },
         {
           "html": "<p>Perform <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①③④\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow\" id=\"ref-for-sec-createdatapropertyorthrow①⑨\">CreateDataPropertyOrThrow</a>(<var>handler</var>, \"<code>deleteProperty</code>\", <var>deleteProperty</var>).</p>"
         },
         {
-          "html": "<p>Let <var>get</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②③\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-get\">§ 3.10.3 get</a>, « », <var>realm</var>).</p>"
+          "html": "<p>Let <var>get</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②③\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-get\">§ 3.10.3 get</a>, 3, \"\", « », <var>realm</var>).</p>"
         },
         {
           "html": "<p>Perform <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①③⑤\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow\" id=\"ref-for-sec-createdatapropertyorthrow②⓪\">CreateDataPropertyOrThrow</a>(<var>handler</var>, \"<code>get</code>\", <var>get</var>).</p>"
         },
         {
-          "html": "<p>Let <var>getOwnPropertyDescriptor</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②④\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-getOwnPropertyDescriptor\">§ 3.10.4 getOwnPropertyDescriptor</a>, « », <var>realm</var>).</p>"
+          "html": "<p>Let <var>getOwnPropertyDescriptor</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②④\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-getOwnPropertyDescriptor\">§ 3.10.4 getOwnPropertyDescriptor</a>, 2, \"\", « », <var>realm</var>).</p>"
         },
         {
           "html": "<p>Perform <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①③⑥\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow\" id=\"ref-for-sec-createdatapropertyorthrow②①\">CreateDataPropertyOrThrow</a>(<var>handler</var>, \"<code>getOwnPropertyDescriptor</code>\", <var>getOwnPropertyDescriptor</var>).</p>"
         },
         {
-          "html": "<p>Let <var>has</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②⑤\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-has\">§ 3.10.5 has</a>, « », <var>realm</var>).</p>"
+          "html": "<p>Let <var>has</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②⑤\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-has\">§ 3.10.5 has</a>, 2, \"\", « », <var>realm</var>).</p>"
         },
         {
           "html": "<p>Perform <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①③⑦\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow\" id=\"ref-for-sec-createdatapropertyorthrow②②\">CreateDataPropertyOrThrow</a>(<var>handler</var>, \"<code>has</code>\", <var>has</var>).</p>"
         },
         {
-          "html": "<p>Let <var>ownKeys</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②⑥\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-ownKeys\">§ 3.10.6 ownKeys</a>, « », <var>realm</var>).</p>"
+          "html": "<p>Let <var>ownKeys</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②⑥\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-ownKeys\">§ 3.10.6 ownKeys</a>, 1, \"\", « », <var>realm</var>).</p>"
         },
         {
           "html": "<p>Perform <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①③⑧\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow\" id=\"ref-for-sec-createdatapropertyorthrow②③\">CreateDataPropertyOrThrow</a>(<var>handler</var>, \"<code>ownKeys</code>\", <var>ownKeys</var>).</p>"
         },
         {
-          "html": "<p>Let <var>preventExtensions</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②⑦\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-preventExtensions\">§ 3.10.7 preventExtensions</a>, « », <var>realm</var>).</p>"
+          "html": "<p>Let <var>preventExtensions</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②⑦\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-preventExtensions\">§ 3.10.7 preventExtensions</a>, « », 0, \"\", <var>realm</var>).</p>"
         },
         {
           "html": "<p>Perform <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①③⑨\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow\" id=\"ref-for-sec-createdatapropertyorthrow②④\">CreateDataPropertyOrThrow</a>(<var>handler</var>, \"<code>preventExtensions</code>\", <var>preventExtensions</var>).</p>"
         },
         {
-          "html": "<p>Let <var>set</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②⑧\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-set\">§ 3.10.8 set</a>, « », <var>realm</var>).</p>"
+          "html": "<p>Let <var>set</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②⑧\">CreateBuiltinFunction</a>(the steps from <a href=\"https://webidl.spec.whatwg.org/#js-observable-array-set\">§ 3.10.8 set</a>, « », 4, \"\", <var>realm</var>).</p>"
         },
         {
           "html": "<p>Perform <a data-link-type=\"dfn\" data-refhint-key=\"548dbb6b\" href=\"https://tc39.es/ecma262/#sec-returnifabrupt-shorthands\" id=\"ref-for-sec-returnifabrupt-shorthands①④⓪\">!</a> <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow\" id=\"ref-for-sec-createdatapropertyorthrow②⑤\">CreateDataPropertyOrThrow</a>(<var>handler</var>, \"<code>set</code>\", <var>set</var>).</p>"
@@ -6946,13 +6874,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②⑨\">CreateBuiltinFunction</a>(<var>steps</var>, « », <var>realm</var>).</p>"
-        },
-        {
-          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname\" id=\"ref-for-sec-setfunctionname①②\">SetFunctionName</a>(<var>F</var>, <var>id</var>).</p>"
-        },
-        {
-          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength\" id=\"ref-for-sec-setfunctionlength①②\">SetFunctionLength</a>(<var>F</var>, 0).</p>"
+          "html": "<p>Let <var>F</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction\" id=\"ref-for-sec-createbuiltinfunction②⑨\">CreateBuiltinFunction</a>(<var>steps</var>, 0, <var>id</var>, « », <var>realm</var>).</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#define-the-constants\" id=\"ref-for-define-the-constants②\">Define the constants</a> of <var>interface</var> on <var>F</var> given <var>realm</var>.</p>"
