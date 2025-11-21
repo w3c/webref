@@ -39,7 +39,11 @@
       "https://drafts.csswg.org/css-box-4/": {},
       "https://drafts.csswg.org/css-break-4/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
-      "https://drafts.csswg.org/css-display-4/": {},
+      "https://drafts.csswg.org/css-display-4/": {
+        "anchors": [
+          "order-accessibility"
+        ]
+      },
       "https://drafts.csswg.org/css-flexbox/": {},
       "https://drafts.csswg.org/css-gaps-1/": {},
       "https://drafts.csswg.org/css-grid-1/": {
@@ -61,6 +65,7 @@
         ]
       },
       "https://drafts.csswg.org/css-multicol/": {},
+      "https://drafts.csswg.org/css-position-3/": {},
       "https://drafts.csswg.org/css-sizing-3/": {},
       "https://drafts.csswg.org/css-text-4/": {},
       "https://drafts.csswg.org/css-values-3/": {},
@@ -172,10 +177,11 @@
       "https://drafts.csswg.org/css-display-4/": {
         "anchors": [
           "blockify",
+          "propdef-order",
           "propdef-reading-flow",
           "propdef-display",
           "independent-formatting-context",
-          "valdef-display-grid",
+          "order-modified-document-order",
           "containing-block"
         ]
       },
@@ -202,6 +208,7 @@
           "grid-track",
           "definite-grid-position",
           "subgrid",
+          "valdef-display-grid",
           "explicit-grid",
           "implicit-grid",
           "propdef-grid-auto-rows",
@@ -221,6 +228,11 @@
           "propdef-grid-template-rows",
           "valdef-grid-template-rows-none",
           "implicit-grid-track"
+        ]
+      },
+      "https://drafts.csswg.org/css-position-3/": {
+        "anchors": [
+          "propdef-position"
         ]
       },
       "https://drafts.csswg.org/css-sizing-3/": {
