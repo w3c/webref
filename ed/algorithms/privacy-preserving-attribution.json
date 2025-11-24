@@ -247,23 +247,34 @@
     {
       "name": "Attribution/saveImpression(options)",
       "href": "https://w3c.github.io/attribution/#dom-attribution-saveimpression",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Attribution\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-attribution-saveimpression\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>saveImpression(<var>options</var>)</code></dfn> method steps are:\n\n\n    \n    <p class=\"advisement\"><a class=\"idl-code\" data-link-type=\"method\" href=\"https://w3c.github.io/attribution/#dom-attribution-saveimpression\" id=\"ref-for-dom-attribution-saveimpression①⑦\">saveImpression()</a>\ndoes not return a status indicating whether the impression was recorded.\nThis minimizes the ability to detect when the Attribution\nAPI is <a href=\"https://w3c.github.io/attribution/#opt-out\">disabled</a>.\n\n</p>\n    <p class=\"advisement\">Implementations MUST attempt to mitigate <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#side-channels\" id=\"ref-for-side-channels\">side channels</a>\nthat can reveal API state. For example, resolution of the returned promise is\nnot predicated on saving <var>impression</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#impression-store\" id=\"ref-for-impression-store①⑧\">impression store</a> to ensure that\nthe amount of time it takes to resolve is not dependent on the number of\nexisting impressions or whether the API is enabled.\n\n</p>",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Attribution\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-attribution-saveimpression\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>saveImpression(<var>options</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>.</p>"
+          "html": "<p>Let <var>implicitInputs</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#obtain-the-implicit-api-inputs\" id=\"ref-for-obtain-the-implicit-api-inputs\">obtaining the implicit API inputs</a> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>.</p>"
         },
         {
-          "html": "<p>Let <var>window</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>implicitInputs</var> is not null.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>window</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code>.</p>"
+          "html": "<p>Return the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-an-impression\" id=\"ref-for-save-an-impression\">save an impression</a> with <var>options</var> and <var>implicitInputs</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "save an impression",
+      "href": "https://w3c.github.io/attribution/#save-an-impression",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"save-an-impression\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">save an impression</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dictdef-attributionimpressionoptions\" id=\"ref-for-dictdef-attributionimpressionoptions①\">AttributionImpressionOptions</a></code> <var>options</var>\nand <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs\" id=\"ref-for-implicit-api-inputs\">implicit API inputs</a> <var>implicitInputs</var>:\n\n\n    \n    <p class=\"advisement\"><a class=\"idl-code\" data-link-type=\"method\" href=\"https://w3c.github.io/attribution/#dom-attribution-saveimpression\" id=\"ref-for-dom-attribution-saveimpression①⑦\">saveImpression()</a>\ndoes not return a status indicating whether the impression was recorded.\nThis minimizes the ability to detect when the Attribution\nAPI is <a href=\"https://w3c.github.io/attribution/#opt-out\">disabled</a>.\n\n</p>\n    <p class=\"advisement\">Implementations MUST attempt to mitigate <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#side-channels\" id=\"ref-for-side-channels\">side channels</a>\nthat can reveal API state. For example, resolution of the returned promise is\nnot predicated on saving <var>impression</var> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#impression-store\" id=\"ref-for-impression-store①⑧\">impression store</a> to ensure that\nthe amount of time it takes to resolve is not dependent on the number of\nexisting impressions or whether the API is enabled.\n\n</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be <var>implicitInputs</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs-associated-document\" id=\"ref-for-implicit-api-inputs-associated-document\">associated document</a>.</p>"
         },
         {
-          "html": "<p>If <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is not\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①\">policy-controlled feature</a> named\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-permissionpolicy-save-impression\" id=\"ref-for-dom-permissionpolicy-save-impression\">save-impression</a></code>\", return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a>\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> in <var>realm</var>.</p>"
+          "html": "<p>Let <var>realm</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>.</p>"
         },
         {
-          "html": "<p>Let <var>implicitInputs</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#obtain-the-implicit-api-inputs\" id=\"ref-for-obtain-the-implicit-api-inputs\">obtaining the implicit API inputs</a> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>.</p>"
+          "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①\">policy-controlled feature</a> named\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-permissionpolicy-save-impression\" id=\"ref-for-dom-permissionpolicy-save-impression\">save-impression</a></code>\", return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a>\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> in <var>realm</var>.</p>"
         },
         {
           "html": "Validate the page-supplied API inputs:",
@@ -321,11 +332,17 @@
     {
       "name": "obtain the implicit API inputs",
       "href": "https://w3c.github.io/attribution/#obtain-the-implicit-api-inputs",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-the-implicit-api-inputs\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the implicit API inputs</dfn> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-the-implicit-api-inputs\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the implicit API inputs</dfn> from <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm\">realm</a> <var>realm</var> with\noptional <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin④\">origin</a> (default null):",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>settings</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#relevant-settings-object\" id=\"ref-for-relevant-settings-object③\">relevant settings object</a>.</p>"
+          "html": "<p>Let <var>window</var> be <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global\">global object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>window</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code>, return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>settings</var> be <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-settings-object\" id=\"ref-for-concept-realm-settings-object\">settings object</a>.</p>"
         },
         {
           "html": "<p>Let <var>timestamp</var> be <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-eso-current-wall-time\" id=\"ref-for-dfn-eso-current-wall-time\">current wall time</a>.</p>"
@@ -334,7 +351,7 @@
           "html": "<p>Let <var>topLevelOrigin</var> be <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin③\">top-level origin</a>.</p>"
         },
         {
-          "html": "<p>Let <var>origin</var> be <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>.</p>"
+          "html": "<p>If <var>origin</var> is null, set <var>origin</var> to <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>.</p>"
         },
         {
           "html": "<p>Let <var>topLevelSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#obtain-a-site\" id=\"ref-for-obtain-a-site\">obtaining a site</a> from <var>topLevelOrigin</var>.</p>"
@@ -352,7 +369,7 @@
           ]
         },
         {
-          "html": "<p>Return an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs\" id=\"ref-for-implicit-api-inputs\">implicit API inputs</a> with the following fields:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs-top-level-site\" id=\"ref-for-implicit-api-inputs-top-level-site①\">top-level site</a>\n       </dt><dd data-md=\"\">\n        <p><var>topLevelSite</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs-intermediary-site\" id=\"ref-for-implicit-api-inputs-intermediary-site①\">intermediary site</a>\n       </dt><dd data-md=\"\">\n        <p><var>intermediarySite</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs-timestamp\" id=\"ref-for-implicit-api-inputs-timestamp①\">timestamp</a>\n       </dt><dd data-md=\"\">\n        <p><var>timestamp</var></p>\n      </dd></dl>"
+          "html": "<p>Return an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs\" id=\"ref-for-implicit-api-inputs①\">implicit API inputs</a> with the following fields:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs-top-level-site\" id=\"ref-for-implicit-api-inputs-top-level-site①\">top-level site</a>\n       </dt><dd data-md=\"\">\n        <p><var>topLevelSite</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs-intermediary-site\" id=\"ref-for-implicit-api-inputs-intermediary-site①\">intermediary site</a>\n       </dt><dd data-md=\"\">\n        <p><var>intermediarySite</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs-timestamp\" id=\"ref-for-implicit-api-inputs-timestamp①\">timestamp</a>\n       </dt><dd data-md=\"\">\n        <p><var>timestamp</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs-associated-document\" id=\"ref-for-implicit-api-inputs-associated-document①\">associated document</a>:\n       </dt><dd data-md=\"\">\n        <p><var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated document</a></p>\n      </dd></dl>"
         }
       ]
     },
@@ -363,19 +380,19 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a>.</p>"
+          "html": "<p>Let <var>implicitInputs</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#obtain-the-implicit-api-inputs\" id=\"ref-for-obtain-the-implicit-api-inputs①\">obtaining the implicit API inputs</a> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>.</p>"
         },
         {
-          "html": "<p>Let <var>window</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>implicitInputs</var> is not null.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>window</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code>.</p>"
+          "html": "<p>Let <var>document</var> be <var>implicitInputs</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs-associated-document\" id=\"ref-for-implicit-api-inputs-associated-document②\">associated document</a>.</p>"
         },
         {
-          "html": "<p>If <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a> is not\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use①\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②\">policy-controlled feature</a> named\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-permissionpolicy-measure-conversion\" id=\"ref-for-dom-permissionpolicy-measure-conversion\">measure-conversion</a></code>\", return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a>\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> in <var>realm</var>.</p>"
+          "html": "<p>Let <var>realm</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a>.</p>"
         },
         {
-          "html": "<p>Let <var>implicitInputs</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#obtain-the-implicit-api-inputs\" id=\"ref-for-obtain-the-implicit-api-inputs①\">obtaining the implicit API inputs</a> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>.</p>"
+          "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use①\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②\">policy-controlled feature</a> named\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-permissionpolicy-measure-conversion\" id=\"ref-for-dom-permissionpolicy-measure-conversion\">measure-conversion</a></code>\", return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a>\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> in <var>realm</var>.</p>"
         },
         {
           "html": "<p>Let <var>validatedOptions</var> be the result of\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validate-attributionconversionoptions\" id=\"ref-for-validate-attributionconversionoptions\">validating</a> <var>options</var>,\nreturning <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑧\">a promise rejected with</a> any thrown reason.</p>"
@@ -845,7 +862,58 @@
           "html": "<p>If <var>priority</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer⑦\">integer</a> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-signed-integer\" id=\"ref-for-32-bit-signed-integer①\">32-bit signed integer</a> range, return an error.</p>"
         },
         {
-          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dictdef-attributionimpressionoptions\" id=\"ref-for-dictdef-attributionimpressionoptions②\">AttributionImpressionOptions</a></code> with the following items:</p>\n      <dl>\n       <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-histogramindex\" id=\"ref-for-dom-attributionimpressionoptions-histogramindex⑤\">histogramIndex</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>histogramIndex</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-matchvalue\" id=\"ref-for-dom-attributionimpressionoptions-matchvalue⑤\">matchValue</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>matchValue</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-conversionsites\" id=\"ref-for-dom-attributionimpressionoptions-conversionsites④\">conversionSites</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>conversionSites</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-conversioncallers\" id=\"ref-for-dom-attributionimpressionoptions-conversioncallers④\">conversionCallers</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>conversionCallers</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-lifetimedays\" id=\"ref-for-dom-attributionimpressionoptions-lifetimedays⑦\">lifetimeDays</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>lifetimeDays</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-priority\" id=\"ref-for-dom-attributionimpressionoptions-priority③\">priority</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>priority</var></p>\n      </dd></dl>"
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dictdef-attributionimpressionoptions\" id=\"ref-for-dictdef-attributionimpressionoptions③\">AttributionImpressionOptions</a></code> with the following items:</p>\n      <dl>\n       <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-histogramindex\" id=\"ref-for-dom-attributionimpressionoptions-histogramindex⑤\">histogramIndex</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>histogramIndex</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-matchvalue\" id=\"ref-for-dom-attributionimpressionoptions-matchvalue⑤\">matchValue</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>matchValue</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-conversionsites\" id=\"ref-for-dom-attributionimpressionoptions-conversionsites④\">conversionSites</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>conversionSites</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-conversioncallers\" id=\"ref-for-dom-attributionimpressionoptions-conversioncallers④\">conversionCallers</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>conversionCallers</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-lifetimedays\" id=\"ref-for-dom-attributionimpressionoptions-lifetimedays⑦\">lifetimeDays</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>lifetimeDays</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-priority\" id=\"ref-for-dom-attributionimpressionoptions-priority③\">priority</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>priority</var></p>\n      </dd></dl>"
+        }
+      ]
+    },
+    {
+      "name": "handle Attribution headers",
+      "href": "https://w3c.github.io/attribution/#handle-attribution-headers",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-attribution-headers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle Attribution headers</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> <var>request</var>\nand <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>response</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">destination</a> is not one of the following,\nreturn: <code>\"\"</code>, <code>\"audio\"</code>, <code>\"document\"</code>, <code>\"frame\"</code>, <code>\"iframe\"</code>, <code>\"image\"</code>,\n<code>\"script\"</code>, <code>\"track\"</code>, <code>\"video\"</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#secure-context\" id=\"ref-for-secure-context\">secure context</a>, return.</p>"
+        },
+        {
+          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">URL</a> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url\">potentially trustworthy URL</a>, return.</p>"
+        },
+        {
+          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url①\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is not not \"<code>http</code>\" or \"<code>https</code>\", return.</p>"
+        },
+        {
+          "html": "<p>Let <var>implicitInputs</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#obtain-the-implicit-api-inputs\" id=\"ref-for-obtain-the-implicit-api-inputs②\">obtaining the implicit API inputs</a> from <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①\">client</a>\nwith <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url②\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>implicitInputs</var> is null, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>saveImpressionHeader</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get\" id=\"ref-for-concept-header-list-get\">getting</a> <code>`<code><a data-link-type=\"http-header\" href=\"https://w3c.github.io/attribution/#http-headerdef-save-impression\" id=\"ref-for-http-headerdef-save-impression①\">Save-Impression</a></code>`</code> from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>saveImpressionHeader</var> is null, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>impressionOptions</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#parse-a-save-impression-header\" id=\"ref-for-parse-a-save-impression-header\">parsing</a> <var>saveImpressionHeader</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>impressionOptions</var> is an error, return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-an-impression\" id=\"ref-for-save-an-impression①\">Save</a> <var>impressionOptions</var> with <var>implicitInputs</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "fetch-monkey-patch",
+      "html": "add the step",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#handle-attribution-headers\" id=\"ref-for-handle-attribution-headers\">Handle Attribution headers</a> with <var>request</var> and <var>response</var>.</p>"
         }
       ]
     },
