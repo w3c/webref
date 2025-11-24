@@ -27,9 +27,19 @@
       "https://encoding.spec.whatwg.org/": {},
       "https://github.com/w3c/clipboard-apis": {},
       "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "sticky-activation"
+        ]
+      },
       "https://infra.spec.whatwg.org/": {},
       "https://mimesniff.spec.whatwg.org/": {},
       "https://msdn.microsoft.com/en-us/ie/ms537658(v=vs.94)": {},
+      "https://storage.spec.whatwg.org/": {
+        "anchors": [
+          "obtain-a-storage-key-for-non-storage-purposes"
+        ]
+      },
       "https://w3c.github.io/FileAPI/": {},
       "https://w3c.github.io/permissions/": {},
       "https://webidl.spec.whatwg.org/": {},
@@ -57,6 +67,8 @@
           "event",
           "dictdef-eventinit",
           "constructing-events",
+          "document",
+          "concept-event-fire",
           "dom-event-preventdefault",
           "eventtarget",
           "dom-event-istrusted",
@@ -96,6 +108,8 @@
       "https://html.spec.whatwg.org/multipage/interaction.html": {
         "anchors": [
           "editing-host",
+          "sticky-activation",
+          "system-focus",
           "focusable-area",
           "drag-data-store-mode",
           "concept-dnd-ro",
@@ -114,14 +128,16 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
+          "concept-relevant-global",
+          "relevant-settings-object",
           "concept-relevant-realm",
           "queue-a-global-task",
-          "concept-realm-global",
-          "concept-relevant-global"
+          "concept-realm-global"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
+          "list-clone",
           "string-starts-with",
           "list-contain",
           "list-size"
@@ -133,6 +149,11 @@
           "mime-type",
           "serialize-a-mime-type",
           "mime-type-essence"
+        ]
+      },
+      "https://storage.spec.whatwg.org/": {
+        "anchors": [
+          "storage-key"
         ]
       },
       "https://w3c.github.io/FileAPI/": {
@@ -160,12 +181,14 @@
         "anchors": [
           "Exposed",
           "idl-DOMString",
+          "idl-sequence",
+          "idl-bigint",
+          "idl-frozen-array",
+          "this",
           "SecureContext",
           "SameObject",
-          "this",
           "idl-promise",
           "idl-record",
-          "idl-frozen-array",
           "idl-boolean",
           "new",
           "exceptiondef-typeerror",
@@ -175,7 +198,6 @@
           "reject",
           "notfounderror",
           "idl-DOMException",
-          "idl-sequence",
           "idl-undefined",
           "notallowederror"
         ]
