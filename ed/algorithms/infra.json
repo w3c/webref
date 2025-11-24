@@ -201,7 +201,7 @@
           "html": "<p>Let <var>result</var> be the empty string.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range\">the range</a> from\n <var>start</var> to <var>start</var> + <var>length</var>, exclusive: append the <var>i</var>th\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit①⓪\">code unit</a> of <var>string</var> to <var>result</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>i</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range\">the range</a> from\n <var>start</var> to <var>start</var> + <var>length</var>, exclusive: append the <var>i</var>th\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit\" id=\"ref-for-code-unit①⓪\">code unit</a> of <var>string</var> to <var>result</var>.</p>"
         },
         {
           "html": "<p>Return <var>result</var>.</p>"
@@ -224,7 +224,7 @@
           "html": "<p>Let <var>result</var> be the empty string.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>i</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range①\">the range</a> from\n <var>start</var> to <var>start</var> + <var>length</var>, exclusive: append the <var>i</var>th\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point③④\">code point</a> of <var>string</var> to <var>result</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>i</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-exclusive-range\" id=\"ref-for-the-exclusive-range①\">the range</a> from\n <var>start</var> to <var>start</var> + <var>length</var>, exclusive: append the <var>i</var>th\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point③④\">code point</a> of <var>string</var> to <var>result</var>.</p>"
         },
         {
           "html": "<p>Return <var>result</var>.</p>"
@@ -615,7 +615,7 @@
           "html": "<p>If <var>map</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">contain</a> <var>key</var> and <var>default</var>\n is given, then return <var>default</var>.\n\n </p>"
         },
         {
-          "html": "<p>Assert: <var>map</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">contains</a> <var>key</var>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑤\">Assert</a>: <var>map</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">contains</a> <var>key</var>.\n\n </p>"
         },
         {
           "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value\">value</a> of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry①\">entry</a> in <var>map</var> whose\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key①\">key</a> is <var>key</var>.\n</p>"
@@ -714,7 +714,7 @@
           "html": "<p>If <var>result</var> is undefined, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.\n\n  </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①④\">Assert</a>: <var>result</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦①\">string</a>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑥\">Assert</a>: <var>result</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦①\">string</a>.\n\n </p>"
         },
         {
           "html": "<p>Return <var>result</var>.\n</p>"
@@ -896,7 +896,7 @@
           ]
         },
         {
-          "html": "<p>Assert: <var>value</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⓪\">map</a>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑦\">Assert</a>: <var>value</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③⓪\">map</a>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>jsValue</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate\">OrdinaryObjectCreate</a>(null).\n\n </p>"
@@ -906,7 +906,7 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p>Assert: <var>mapKey</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦⑨\">string</a>.\n\n   </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⑧\">Assert</a>: <var>mapKey</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦⑨\">string</a>.\n\n   </p>"
             },
             {
               "html": "<p>Let <var>mapValueJSValue</var> be the result of\n   <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#convert-an-infra-value-to-a-json-compatible-javascript-value\" id=\"ref-for-convert-an-infra-value-to-a-json-compatible-javascript-value②\">converting an Infra value to a JSON-compatible JavaScript value</a>, given <var>mapValue</var>.\n\n   </p>"
