@@ -97,15 +97,24 @@ dictionary UDPSocketOpenInfo {
   MulticastController multicastController;
 };
 
+dictionary MulticastGroupOptions {
+  DOMString sourceAddress;
+};
+
+dictionary MulticastMembership {
+  DOMString groupAddress;
+  DOMString sourceAddress;
+};
+
 [
   Exposed=(Window, DedicatedWorker),
   SecureContext,
   IsolatedContext
 ]
 interface MulticastController {
-  Promise<undefined> joinGroup(DOMString ipAddress);
-  Promise<undefined> leaveGroup(DOMString ipAddress);
-  readonly attribute FrozenArray<DOMString> joinedGroups;
+  Promise<undefined> joinGroup(DOMString groupAddress, optional MulticastGroupOptions options = {});
+  Promise<undefined> leaveGroup(DOMString groupAddress, optional MulticastGroupOptions options = {});
+  readonly attribute FrozenArray<(DOMString or MulticastMembership)> joinedGroups;
 };
 
 [

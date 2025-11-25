@@ -791,14 +791,32 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"MulticastController\" data-xref-for=\"MulticastController\" data-lt=\"joinGroup(ipAddress)\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastcontroller-joingroup\" class=\"internalDFN\" id=\"ref-for-dom-multicastcontroller-joingroup-2\"><code>joinGroup</code></a><code>(<var>ipAddress</var>)</code> method joins the multicast group at the given <code>ipAddress</code> and\n        the <code>localPort</code> it was bound to.",
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"MulticastController\" data-xref-for=\"MulticastController\" data-lt=\"joinGroup(groupAddress, options)\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastcontroller-joingroup\" class=\"internalDFN\" id=\"ref-for-dom-multicastcontroller-joingroup-2\"><code>joinGroup</code></a><code>(<var>groupAddress</var>, <var>options</var>)</code> method joins the multicast group at the given\n        <code>groupAddress</code> and the <code>localPort</code> it was bound to. If <code>options.sourceAddress</code> is provided, this creates a\n        Source-Specific Multicast (SSM) membership that only receives packets from that specific source.\n        If <code>options.sourceAddress</code> is omitted, this creates an Any-Source Multicast (ASM) membership that receives\n        packets from any source.",
       "rationale": "if",
       "steps": [
         {
-          "html": "If <code>ipAddress</code> is not a valid IP address, throw a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+          "html": "If <code>groupAddress</code> is not a valid IP address, throw a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
         },
         {
-          "html": "If the socket has already joined or in the process of joining a multicast group with\n          specified <code>ipAddress</code> throw an \"<code>InvalidStateError</code>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+          "html": "If <code>groupAddress</code> is not a valid multicast address (IPv4: 224.0.0.0/4 or IPv6: ff00::/8),\n          throw a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If <code>options.sourceAddress</code> is present:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <code>options.sourceAddress</code> is not a valid IP address, throw a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+            },
+            {
+              "html": "If <code>options.sourceAddress</code> is a multicast, loopback, or unspecified address, throw a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+            },
+            {
+              "html": "If <code>options.sourceAddress</code> and <code>groupAddress</code> are not the same IP version (both IPv4 or both IPv6),\n              throw a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+            }
+          ]
+        },
+        {
+          "html": "If the socket has already joined or in the process of joining a multicast group with\n          the same <code>groupAddress</code> and <code>options.sourceAddress</code> combination, throw an \"<code>InvalidStateError</code>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
         },
         {
           "html": "If the associated <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"MulticastController\" data-xref-for=\"MulticastController\" data-lt=\"[[socket]]\" href=\"https://wicg.github.io/direct-sockets/#dfn-socket\" class=\"internalDFN\" id=\"ref-for-dfn-socket-1\"><code>[[socket]]</code></a> was closed or aborted, throw an \"<code>InvalidStateError</code>\"\n          <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
@@ -808,10 +826,13 @@
         },
         {
           "html": "Perform the following steps <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
-          "rationale": "invoke",
+          "rationale": "if",
           "steps": [
             {
-              "html": "Invoke the operating system to join the multicast group specified by <code>ipAddress</code>."
+              "html": "If <code>options.sourceAddress</code> is present, invoke the operating system to join the source-specific multicast\n              group specified by <code>groupAddress</code> and <code>options.sourceAddress</code> (e.g., using IP_ADD_SOURCE_MEMBERSHIP or\n              MCAST_JOIN_SOURCE_GROUP on POSIX systems)."
+            },
+            {
+              "html": "Otherwise, invoke the operating system to join the any-source multicast group specified by\n              <code>groupAddress</code> (e.g., using IP_ADD_MEMBERSHIP or IPV6_JOIN_GROUP on POSIX systems)."
             },
             {
               "html": "<a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-global-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the\n               <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/direct-sockets/#dfn-udpsocket-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-udpsocket-task-source-10\">UDPSocket task source</a> to run the following steps:",
@@ -821,7 +842,10 @@
                   "html": "If the operating system returned a failure, <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"reject\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <code>promise</code> with\n                   a \"<code>NetworkError</code>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these steps."
                 },
                 {
-                  "html": "Add <code>ipAddress</code> to <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"MulticastController\" data-xref-for=\"MulticastController\" data-lt=\"[[joinedGroups]]\" href=\"https://wicg.github.io/direct-sockets/#dfn-joinedgroups\" class=\"internalDFN\" id=\"ref-for-dfn-joinedgroups-1\"><code>[[joinedGroups]]</code></a>."
+                  "html": "Let <code>membership</code> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MulticastMembership\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastmembership\" class=\"internalDFN\" id=\"ref-for-dom-multicastmembership-5\"><code>MulticastMembership</code></a> with\n                  <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MulticastMembership\" data-xref-for=\"MulticastMembership\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastmembership-groupaddress\" class=\"internalDFN\" id=\"ref-for-dom-multicastmembership-groupaddress-2\"><code>groupAddress</code></a> set to <code>groupAddress</code> and\n                  <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MulticastMembership\" data-xref-for=\"MulticastMembership\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastmembership-sourceaddress\" class=\"internalDFN\" id=\"ref-for-dom-multicastmembership-sourceaddress-2\"><code>sourceAddress</code></a> set to <code>options.sourceAddress</code> (or undefined if not provided)."
+                },
+                {
+                  "html": "Add <code>membership</code> to <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"MulticastController\" data-xref-for=\"MulticastController\" data-lt=\"[[joinedGroups]]\" href=\"https://wicg.github.io/direct-sockets/#dfn-joinedgroups\" class=\"internalDFN\" id=\"ref-for-dfn-joinedgroups-1\"><code>[[joinedGroups]]</code></a>."
                 },
                 {
                   "html": "<a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"resolve\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <code>promise</code> with <code>undefined</code>."
@@ -836,14 +860,17 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"MulticastController\" data-xref-for=\"MulticastController\" data-lt=\"leaveGroup(ipAddress)\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastcontroller-leavegroup\" class=\"internalDFN\" id=\"ref-for-dom-multicastcontroller-leavegroup-2\"><code>leaveGroup</code></a><code>(<var>ipAddress</var>)</code> method leaves a multicast group previously joined via\n        <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"MulticastController\" data-xref-for=\"MulticastController\" data-lt=\"joinGroup(ipAddress)\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastcontroller-joingroup\" class=\"internalDFN\" id=\"ref-for-dom-multicastcontroller-joingroup-4\"><code>joinGroup</code></a><code>(<var>ipAddress</var>)</code>.",
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"MulticastController\" data-xref-for=\"MulticastController\" data-lt=\"leaveGroup(groupAddress, options)\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastcontroller-leavegroup\" class=\"internalDFN\" id=\"ref-for-dom-multicastcontroller-leavegroup-2\"><code>leaveGroup</code></a><code>(<var>groupAddress</var>, <var>options</var>)</code> method leaves a multicast group previously\n        joined via <a data-link-type=\"idl\" data-xref-type=\"method\" data-link-for=\"MulticastController\" data-xref-for=\"MulticastController\" data-lt=\"joinGroup(groupAddress, options)\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastcontroller-joingroup\" class=\"internalDFN\" id=\"ref-for-dom-multicastcontroller-joingroup-4\"><code>joinGroup</code></a><code>(<var>groupAddress</var>, <var>options</var>)</code>. The <code>groupAddress</code> and <code>options.sourceAddress</code>\n        must match those used when joining the group.",
       "rationale": "if",
       "steps": [
         {
-          "html": "If <code>ipAddress</code> is not a valid IP address, throw a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+          "html": "If <code>groupAddress</code> is not a valid IP address, throw a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
         },
         {
-          "html": "If the socket has never joined the multicast group at the <code>ipAddress</code>, already left it or in the process of\n          leaving it, throw an \"<code>InvalidStateError</code>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+          "html": "If <code>options.sourceAddress</code> is present and is not a valid IP address, throw a <a data-xref-type=\"_IDL_\" data-link-type=\"exception\" data-lt=\"TypeError\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+        },
+        {
+          "html": "If the socket has never joined a multicast group with the specified <code>groupAddress</code> and <code>options.sourceAddress</code>\n          combination, already left it, or is in the process of leaving it, throw an \"<code>InvalidStateError</code>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
         },
         {
           "html": "If the associated <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"MulticastController\" data-xref-for=\"MulticastController\" data-lt=\"[[socket]]\" href=\"https://wicg.github.io/direct-sockets/#dfn-socket\" class=\"internalDFN\" id=\"ref-for-dfn-socket-2\"><code>[[socket]]</code></a> was closed or aborted, throw an \"<code>InvalidStateError</code>\"\n          <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
@@ -853,10 +880,13 @@
         },
         {
           "html": "Perform the following steps <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/infrastructure.html\" data-cite-frag=\"in-parallel\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
-          "rationale": "invoke",
+          "rationale": "if",
           "steps": [
             {
-              "html": "Invoke the operating system to leave the multicast group specified by <code>ipAddress</code>."
+              "html": "If <code>options.sourceAddress</code> is present, invoke the operating system to leave the source-specific multicast\n              group specified by <code>groupAddress</code> and <code>options.sourceAddress</code> (e.g., using IP_DROP_SOURCE_MEMBERSHIP or\n              MCAST_LEAVE_SOURCE_GROUP on POSIX systems)."
+            },
+            {
+              "html": "Otherwise, invoke the operating system to leave the any-source multicast group specified by\n              <code>groupAddress</code> (e.g., using IP_DROP_MEMBERSHIP or IPV6_LEAVE_GROUP on POSIX systems)."
             },
             {
               "html": "<a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-global-task\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> using the\n               <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/direct-sockets/#dfn-udpsocket-task-source\" class=\"internalDFN\" id=\"ref-for-dfn-udpsocket-task-source-11\">UDPSocket task source</a> to run the following steps:",
@@ -866,7 +896,7 @@
                   "html": "If the operating system returned a failure, <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"reject\" href=\"https://webidl.spec.whatwg.org/#reject\">reject</a> <code>promise</code> with\n                   a \"<code>NetworkError</code>\" <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"DOMException\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"idl-DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> and abort these steps."
                 },
                 {
-                  "html": "Remove <code>ipAddress</code> from <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"MulticastController\" data-xref-for=\"MulticastController\" data-lt=\"[[joinedGroups]]\" href=\"https://wicg.github.io/direct-sockets/#dfn-joinedgroups\" class=\"internalDFN\" id=\"ref-for-dfn-joinedgroups-2\"><code>[[joinedGroups]]</code></a>."
+                  "html": "Remove the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MulticastMembership\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastmembership\" class=\"internalDFN\" id=\"ref-for-dom-multicastmembership-6\"><code>MulticastMembership</code></a> with matching <code>groupAddress</code> and <code>options.sourceAddress</code>\n                  from <a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"MulticastController\" data-xref-for=\"MulticastController\" data-lt=\"[[joinedGroups]]\" href=\"https://wicg.github.io/direct-sockets/#dfn-joinedgroups\" class=\"internalDFN\" id=\"ref-for-dfn-joinedgroups-2\"><code>[[joinedGroups]]</code></a>."
                 },
                 {
                   "html": "<a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"resolve\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <code>promise</code> with <code>undefined</code>."
@@ -877,6 +907,45 @@
         },
         {
           "html": "Return <code>promise</code>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MulticastController\" data-xref-for=\"MulticastController\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastcontroller-joinedgroups\" class=\"internalDFN\" id=\"ref-for-dom-multicastcontroller-joinedgroups-2\"><code>joinedGroups</code></a> getter steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>result</var> be a new <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-iterate\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var>membership</var> of <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-xref-type=\"attribute\" data-link-type=\"attribute\" data-link-for=\"MulticastController\" data-xref-for=\"MulticastController\" data-lt=\"[[joinedGroups]]\" href=\"https://wicg.github.io/direct-sockets/#dfn-joinedgroups\" class=\"internalDFN\" id=\"ref-for-dfn-joinedgroups-3\"><code>[[joinedGroups]]</code></a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>membership</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MulticastMembership\" data-xref-for=\"MulticastMembership\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastmembership-sourceaddress\" class=\"internalDFN\" id=\"ref-for-dom-multicastmembership-sourceaddress-3\"><code>sourceAddress</code></a> is undefined:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-append\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var>membership</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MulticastMembership\" data-xref-for=\"MulticastMembership\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastmembership-groupaddress\" class=\"internalDFN\" id=\"ref-for-dom-multicastmembership-groupaddress-3\"><code>groupAddress</code></a> to <var>result</var>."
+                }
+              ]
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>dict</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"MulticastMembership\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastmembership\" class=\"internalDFN\" id=\"ref-for-dom-multicastmembership-8\"><code>MulticastMembership</code></a> with:\n                  <ul>\n                    <li><a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MulticastMembership\" data-xref-for=\"MulticastMembership\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastmembership-groupaddress\" class=\"internalDFN\" id=\"ref-for-dom-multicastmembership-groupaddress-4\"><code>groupAddress</code></a> set to <var>membership</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MulticastMembership\" data-xref-for=\"MulticastMembership\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastmembership-groupaddress\" class=\"internalDFN\" id=\"ref-for-dom-multicastmembership-groupaddress-5\"><code>groupAddress</code></a></li>\n                    <li><a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MulticastMembership\" data-xref-for=\"MulticastMembership\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastmembership-sourceaddress\" class=\"internalDFN\" id=\"ref-for-dom-multicastmembership-sourceaddress-4\"><code>sourceAddress</code></a> set to <var>membership</var>.<a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"MulticastMembership\" data-xref-for=\"MulticastMembership\" href=\"https://wicg.github.io/direct-sockets/#dom-multicastmembership-sourceaddress\" class=\"internalDFN\" id=\"ref-for-dom-multicastmembership-sourceaddress-5\"><code>sourceAddress</code></a></li>\n                  </ul>"
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-append\" href=\"https://infra.spec.whatwg.org/#list-append\">Append</a> <var>dict</var> to <var>result</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var>result</var>."
         }
       ]
     },
