@@ -39,33 +39,6 @@
           "html": "Else use the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-inline-3/#cap-height-baseline\" id=\"ref-for-cap-height-baseline②\">cap-height</a> and <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-inline-3/#alphabetic-baseline\" id=\"ref-for-alphabetic-baseline①②\">alphabetic</a> baselines."
         }
       ]
-    },
-    {
-      "html": "Metrics may be derived from the glyph shapes.\n\t\t\tFor example,",
-      "rationale": "issue",
-      "steps": [
-        {
-          "html": "The center of the minus sign (U+2212)\n\t\t\t\t\tcan be taken as the mathematical baseline."
-        },
-        {
-          "html": "The amount by which the lowercase “o”\n\t\t\t\t\tdescends below the alphabetic baseline\n\t\t\t\t\tcan be subtracted from its highest point\n\t\t\t\t\tto <a href=\"https://drafts.csswg.org/css-values/#ex\">measure the x-height</a>.\n\n\t\t\t\t\t\n       <figure>\n        \n\t\t\t\t\t\t<img alt=\"measuring the x height of the letter o\" src=\"https://drafts.csswg.org/css-inline-3/images/measuring-x-height-o.png\" width=\"240\">\n\t\t\t\t\t\t\n        <figcaption>\n\t\t\t\t\t\t\tMeasuring the x height.\n\t\t\t\t\t\t</figcaption>\n       </figure>"
-        },
-        {
-          "html": "The amount by which the uppercase “O”\n\t\t\t\t\tdescends below the alphabetic baseline\n\t\t\t\t\tcan be subtracted from its highest point\n\t\t\t\t\tto measure the cap-height."
-        },
-        {
-          "html": "The bounding box of 永 (U+6C38) can be used to find\n\t\t\t\t\tthe ideographic character face edges."
-        },
-        {
-          "html": "The top edge of the center of the Hebrew He (U+05D4 “ה”)\n\t\t\t\t\tcan be taken as the Hebrew hanging baseline."
-        },
-        {
-          "html": "The top edge of the center of the letter Ka\n\t\t\t\t\tcan be taken as the hanging baseline.\n\t\t\t\t\tWhich Ka is used should depend on the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-text-4/#content-language\" id=\"ref-for-content-language①\">content language</a>:\n\n\t\t\t\t\t\n       <div class=\"overlarge\"><table class=\"data\">\n        <thead>\n         <tr>\n          <th>Language\n\t\t\t\t\t\t\t\t\n          </th><th>Script\n\t\t\t\t\t\t\t\t\n          </th><th>Letter\n\t\t\t\t\t\t\n        </th></tr></thead><tbody>\n         <tr>\n          <td>\n          </td><td>Devanagari\n\t\t\t\t\t\t\t\t\n          </td><td>क U+0915 KA\n\t\t\t\t\t\t\t\n         </td></tr><tr>\n          <td>\n          </td><td>Bengali\n\t\t\t\t\t\t\t\t\n          </td><td>ক U+0995\n\t\t\t\t\t\t\t\n         </td></tr><tr>\n          <td>\n          </td><td>Gurmukhi\n\t\t\t\t\t\t\t\t\n          </td><td>ਕ U+0A15\n\t\t\t\t\t\t\t\n         </td></tr><tr>\n          <td>\n          </td><td>Tibetan\n\t\t\t\t\t\t\t\t\n          </td><td>ཀ U+0F40\n\t\t\t\t\t\n       </td></tr></tbody></table></div>\n       \n       <figure>\n        \n\t\t\t\t\t\t<img alt=\"finding the position of the hanging baseline of the letter ka\" src=\"https://drafts.csswg.org/css-inline-3/images/measuring-hanging-baseline-ka.png\" width=\"240\">\n\t\t\t\t\t\t\n        <figcaption>\n\t\t\t\t\t\t\tThe hanging baseline is at the top edge of the character ink.\n\t\t\t\t\t\t</figcaption>\n       </figure>"
-        },
-        {
-          "html": "Issue: Add more notes here?"
-        }
-      ]
     }
   ]
 }
