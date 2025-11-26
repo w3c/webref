@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-11-25T01:36:47.392Z",
+  "date": "2025-11-26T01:39:56.409Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -748,7 +748,7 @@
   },
   "stats": {
     "crawled": 400,
-    "errors": 0
+    "errors": 1
   },
   "crawler": "reffy-20.0.2",
   "results": [
@@ -796,7 +796,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "25 November 2025",
+      "date": "26 November 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -12832,11 +12832,11 @@
       ],
       "crawled": "https://www.w3.org/TR/gpc/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 21 Nov 2025 23:47:07 GMT"
+        "lastModified": "Tue, 25 Nov 2025 15:26:32 GMT"
       },
       "generator": "respec",
-      "date": "21 November 2025",
-      "revision": "f4017a510656309a68227f8cb4e4865646aef4a2",
+      "date": "25 November 2025",
+      "revision": "9a6e01529710c5eb8b1ed2a228a00122e1a16566",
       "algorithms": "algorithms/gpc.json",
       "links": "links/gpc.json",
       "refs": "refs/gpc.json",
@@ -14324,7 +14324,8 @@
       "elements": "elements/mathml-core.json",
       "headings": "headings/mathml-core.json",
       "ids": "ids/mathml-core.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/mathml-core/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 207)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/mathml4/",
@@ -14434,11 +14435,11 @@
       ],
       "crawled": "https://www.w3.org/TR/media-capabilities/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 25 Aug 2025 15:36:31 GMT"
+        "lastModified": "Tue, 25 Nov 2025 22:09:26 GMT"
       },
       "generator": "bikeshed",
-      "date": "25 August 2025",
-      "revision": "b9d2f30c00c534ac44179f546bc60f421ce78070",
+      "date": "25 November 2025",
+      "revision": "ddf48226b487cc1366f50bb0728b0b07a055375f",
       "algorithms": "algorithms/media-capabilities.json",
       "links": "links/media-capabilities.json",
       "refs": "refs/media-capabilities.json",
@@ -17571,11 +17572,11 @@
       ],
       "crawled": "https://www.w3.org/TR/push-api/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 24 Nov 2025 15:06:48 GMT"
+        "lastModified": "Tue, 25 Nov 2025 16:57:15 GMT"
       },
       "generator": "respec",
-      "date": "24 November 2025",
-      "revision": "ebd170f2a59c894d701757d4aa11ed4a42581e62",
+      "date": "25 November 2025",
+      "revision": "30cb024a264897cc58a9f9f524bbc7a72252c08f",
       "algorithms": "algorithms/push-api.json",
       "links": "links/push-api.json",
       "refs": "refs/push-api.json",
@@ -19254,11 +19255,11 @@
       ],
       "crawled": "https://www.w3.org/TR/service-workers/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 13 Nov 2025 22:43:16 GMT"
+        "lastModified": "Wed, 26 Nov 2025 01:06:01 GMT"
       },
       "generator": "bikeshed",
-      "date": "13 November 2025",
-      "revision": "d3e4e3b2a34f8a7cf83a2a4f7d57cf3607f61438",
+      "date": "26 November 2025",
+      "revision": "a6ed7c8861225fa0b66d5c99e9c124fec7d32031",
       "algorithms": "algorithms/service-workers.json",
       "links": "links/service-workers.json",
       "refs": "refs/service-workers.json",
@@ -19313,11 +19314,11 @@
       ],
       "crawled": "https://www.w3.org/TR/shacl12-core/",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 23 Nov 2025 19:23:06 GMT"
+        "lastModified": "Tue, 25 Nov 2025 03:50:31 GMT"
       },
       "generator": "respec",
-      "date": "23 November 2025",
-      "revision": "8d24ed362741a26ed50b8914d582ce94d4ad3213",
+      "date": "25 November 2025",
+      "revision": "e410f30cf0878cd79a03307bdc86b5c122a5cda8",
       "algorithms": "algorithms/shacl12-core.json",
       "links": "links/shacl12-core.json",
       "refs": "refs/shacl12-core.json",
@@ -19370,11 +19371,11 @@
       ],
       "crawled": "https://www.w3.org/TR/shacl12-sparql/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 20 Nov 2025 00:15:05 GMT"
+        "lastModified": "Tue, 25 Nov 2025 03:50:15 GMT"
       },
       "generator": "respec",
-      "date": "20 November 2025",
-      "revision": "d7ba636521c0ad7de63c8996cc8b007ae7994d94",
+      "date": "25 November 2025",
+      "revision": "e410f30cf0878cd79a03307bdc86b5c122a5cda8",
       "algorithms": "algorithms/shacl12-sparql.json",
       "links": "links/shacl12-sparql.json",
       "refs": "refs/shacl12-sparql.json",
