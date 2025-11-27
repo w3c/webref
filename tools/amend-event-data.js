@@ -65,6 +65,13 @@ const patches = {
       change: { interface: "Event" }
     }
   ],
+  'CSP3': [
+    {
+      pattern: { type: 'securitypolicyviolation' },
+      matched: 1,
+      change: { bubbles: true }
+    }
+  ],
   // Bubbles heuristic in Reffy is not smart enough to trap:
   // "bubbles and cancelable attributes set to false"
   // and incorrectly thinks occurence of "bubbles" means that the event bubbles.
@@ -75,16 +82,22 @@ const patches = {
       change: { bubbles: false }
     }
   ],
-  // pending https://github.com/w3c/clipboard-apis/pull/181
-  // see also https://github.com/w3c/clipboard-apis/issues/74
+  // see https://github.com/w3c/clipboard-apis/issues/74
   'clipboard-apis': [
     {
-      pattern: { type: /^(cut|clipboardchange|paste|copy)$/ },
-      matched: 4,
+      pattern: { type: /^(cut|paste|copy)$/ },
+      matched: 3,
       change: {
         interface: "ClipboardEvent",
         targets: ["GlobalEventHandlers"],
         bubbles: true
+      }
+    },
+    {
+      pattern: { type: 'clipboardchange' },
+      matched: 1,
+      change: {
+        targets: ["Window"]
       }
     }
   ],
@@ -182,6 +195,13 @@ const patches = {
       pattern: {  type: /^fullscreen(change|error)$/ },
       matched: 2,
       change: { bubbles: true, interface: "Event"}
+    }
+  ],
+  'gamepad': [
+    {
+      pattern: { type: /^gamepad(dis)?connected$/ },
+      matched: 2,
+      change: { targets: ["Window"] }
     }
   ],
   'html': [
