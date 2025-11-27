@@ -1,0 +1,173 @@
+{
+  "spec": {
+    "title": "CSS Route Matching",
+    "url": "https://drafts.csswg.org/css-navigation-1/"
+  },
+  "properties": [],
+  "atrules": [
+    {
+      "name": "@route",
+      "prose": "The @route rule is an at-rule that associates a name with a URL pattern. This name can be referenced in @navigation rules and in :link-to() pseudo-classes.",
+      "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-route",
+      "descriptors": [],
+      "value": "@route <dashed-ident> { [ <pattern-descriptors> | <init-descriptors> ] }"
+    },
+    {
+      "name": "@navigation",
+      "prose": "The @navigation rule is a conditional group rule whose condition tests characteristics of the current URL or of the state of navigation between two URLs. These queries are called navigation queries.",
+      "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-navigation",
+      "descriptors": [],
+      "value": "@navigation <navigation-condition> { <rule-list> }"
+    }
+  ],
+  "selectors": [
+    {
+      "name": ":link-to()",
+      "prose": "This specification defines a new :link-to() functional pseudo-class that matches link elements that link to a certain URL.",
+      "href": "https://drafts.csswg.org/css-navigation-1/#link-to-pseudo"
+    }
+  ],
+  "values": [
+    {
+      "name": "<pattern-descriptors>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-pattern-descriptors",
+      "type": "type",
+      "value": ";* <pattern-descriptor> ;*"
+    },
+    {
+      "name": "<pattern-descriptor>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-pattern-descriptor",
+      "type": "type",
+      "value": "pattern : <url-pattern()>"
+    },
+    {
+      "name": "<init-descriptors>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-init-descriptors",
+      "type": "type",
+      "value": ";* <init-descriptor> [ ;+ <init-descriptor> ]* ;*"
+    },
+    {
+      "name": "<init-descriptor>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-init-descriptor",
+      "type": "type",
+      "value": "<init-descriptor-name> : <string>"
+    },
+    {
+      "name": "<init-descriptor-name>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-init-descriptor-name",
+      "type": "type",
+      "value": "protocol | username | password | hostname | port pathname | search | hash | baseURL"
+    },
+    {
+      "name": "<navigation-condition>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-condition",
+      "type": "type",
+      "value": "not <navigation-in-parens> | <navigation-in-parens> [ and <navigation-in-parens> ]* | <navigation-in-parens> [ or <navigation-in-parens> ]*"
+    },
+    {
+      "name": "<navigation-in-parens>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-in-parens",
+      "type": "type",
+      "value": "( <navigation-condition> ) | ( <navigation-test> ) | <general-enclosed>"
+    },
+    {
+      "name": "<navigation-test>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-test",
+      "type": "type",
+      "value": "<navigation-location> | <navigation-keyword> : <navigation-location>"
+    },
+    {
+      "name": "<navigation-keyword>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-keyword",
+      "type": "type",
+      "value": "at | from | to"
+    },
+    {
+      "name": "<navigation-location>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location",
+      "type": "type",
+      "value": "<route-name> | <url-pattern()>"
+    },
+    {
+      "name": "<route-name>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-name",
+      "type": "type",
+      "value": "<dashed-ident>"
+    },
+    {
+      "name": "<link-condition>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-link-condition",
+      "type": "type",
+      "value": "<link-condition-base> [ with <navigation-param-expression> ]?"
+    },
+    {
+      "name": "<link-condition-base>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-link-condition-base",
+      "type": "type",
+      "value": "<navigation-location>"
+    },
+    {
+      "name": "<navigation-param-expression>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-expression",
+      "type": "type",
+      "value": "( <navigation-param-and> ) | ( <navigation-param-or> ) | <navigation-param>"
+    },
+    {
+      "name": "<navigation-param-and>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-and",
+      "type": "type",
+      "value": "<navigation-param-expression> [ \"and\" <navigation-param-expression> ]*"
+    },
+    {
+      "name": "<navigation-param-or>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-or",
+      "type": "type",
+      "value": "<navigation-param-expression> [ \"or\" <navigation-param-expression> ]*"
+    },
+    {
+      "name": "<navigation-param>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param",
+      "type": "type",
+      "value": "<navigation-param-key-value> | <navigation-param-function>"
+    },
+    {
+      "name": "<navigation-param-key-value>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-key-value",
+      "type": "type",
+      "value": "( <ident> : <string> )"
+    },
+    {
+      "name": "<navigation-param-function>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-function",
+      "type": "type",
+      "value": "navigation-param( <ident> )"
+    },
+    {
+      "name": "url-pattern()",
+      "prose": "The url-pattern() function represents a URL pattern, which can be used to match URLs.",
+      "href": "https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern",
+      "type": "function",
+      "value": "url-pattern( <string> )"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "navigation()",
+      "value": "navigation( <navigation-condition> )",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-navigation-1/#funcdef-when-navigation",
+      "type": "function",
+      "for": "@when"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "navigation()",
+      "value": "navigation( <navigation-condition> )",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-navigation-1/#funcdef-if-navigation",
+      "type": "function",
+      "for": "if()"
+    }
+  ]
+}

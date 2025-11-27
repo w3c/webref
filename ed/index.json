@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-11-27T06:49:49.924Z",
+  "date": "2025-11-27T08:54:53.240Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -33,6 +33,7 @@
       "css-gcpm-4",
       "css-images-5",
       "css-link-params-1",
+      "css-navigation-1",
       "css-page-4",
       "css-shapes-2",
       "css-size-adjust-1",
@@ -51,9 +52,8 @@
       "anchors",
       "body-tracking",
       "model-element",
-      "raw-camera-access",
       "webxr-plane-detection",
-      "webxr-meshing",
+      "raw-camera-access",
       "real-world-meshing",
       "infra",
       "mimesniff",
@@ -134,6 +134,7 @@
       "tc39-intl-duration-format",
       "tc39-intl-locale-info",
       "tc39-iterator-sequencing",
+      "tc39-joint-iteration",
       "tc39-json-parse-with-source",
       "tc39-math-sum",
       "tc39-nonextensible-applies-to-private",
@@ -172,7 +173,6 @@
       "web-share-target",
       "webextensions",
       "webrtc-ice",
-      "wot-binding-registry",
       "wasm-core-2-fork-branch-hinting",
       "wasm-js-api-2-fork-content-security-policy",
       "wasm-js-api-2-fork-esm-integration",
@@ -716,8 +716,10 @@
       "WOFF",
       "WOFF2",
       "wot-architecture11",
+      "wot-binding-registry",
       "wot-discovery",
       "wot-profile",
+      "wot-thing-description-2.0",
       "wot-thing-description11",
       "xml-entity-names",
       "xhr",
@@ -755,10 +757,10 @@
     ]
   },
   "stats": {
-    "crawled": 724,
-    "errors": 4
+    "crawled": 726,
+    "errors": 2
   },
-  "crawler": "reffy-20.0.2",
+  "crawler": "reffy-20.0.3",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -2225,6 +2227,62 @@
       "cddl": []
     },
     {
+      "url": "https://drafts.csswg.org/css-navigation-1/",
+      "seriesComposition": "full",
+      "shortname": "css-navigation-1",
+      "series": {
+        "shortname": "css-navigation",
+        "currentSpecification": "css-navigation-1",
+        "title": "CSS Route Matching",
+        "shortTitle": "CSS Route Matching",
+        "nightlyUrl": "https://drafts.csswg.org/css-navigation/"
+      },
+      "seriesVersion": "1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/groups/wg/css/"
+        }
+      ],
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-navigation-1/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-navigation-1/",
+          "https://w3c.github.io/csswg-drafts/css-navigation/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-navigation-1/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Route Matching",
+      "source": "spec",
+      "shortTitle": "CSS Route Matching",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://drafts.csswg.org/css-navigation-1/"
+      ],
+      "crawled": "https://drafts.csswg.org/css-navigation-1/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 26 Nov 2025 21:45:34 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "26 November 2025",
+      "revision": "fdc08f79a22f0b6cda2ac823b1c7a2f8b1004445",
+      "algorithms": "algorithms/css-navigation-1.json",
+      "links": "links/css-navigation-1.json",
+      "refs": "refs/css-navigation-1.json",
+      "css": "css/css-navigation.json",
+      "dfns": "dfns/css-navigation-1.json",
+      "headings": "headings/css-navigation-1.json",
+      "ids": "ids/css-navigation-1.json",
+      "cddl": []
+    },
+    {
       "url": "https://drafts.csswg.org/css-page-4/",
       "seriesComposition": "delta",
       "shortname": "css-page-4",
@@ -3352,6 +3410,57 @@
       "cddl": []
     },
     {
+      "url": "https://immersive-web.github.io/plane-detection/",
+      "seriesComposition": "full",
+      "shortname": "webxr-plane-detection",
+      "series": {
+        "shortname": "webxr-plane-detection",
+        "currentSpecification": "webxr-plane-detection",
+        "title": "WebXR Plane Detection",
+        "shortTitle": "WebXR Plane Detection",
+        "nightlyUrl": "https://immersive-web.github.io/plane-detection/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Immersive Web Community Group",
+          "url": "https://www.w3.org/community/immersive-web/"
+        }
+      ],
+      "nightly": {
+        "url": "https://immersive-web.github.io/plane-detection/",
+        "status": "Draft Community Group Report",
+        "alternateUrls": [],
+        "repository": "https://github.com/immersive-web/plane-detection",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "WebXR Plane Detection Module",
+      "source": "spec",
+      "shortTitle": "WebXR Plane Detection",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://immersive-web.github.io/plane-detection/"
+      ],
+      "crawled": "https://immersive-web.github.io/plane-detection/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 26 Nov 2025 20:59:06 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "26 November 2025",
+      "algorithms": "algorithms/webxr-plane-detection.json",
+      "links": "links/webxr-plane-detection.json",
+      "refs": "refs/webxr-plane-detection.json",
+      "idl": "idl/webxr-plane-detection.idl",
+      "dfns": "dfns/webxr-plane-detection.json",
+      "headings": "headings/webxr-plane-detection.json",
+      "ids": "ids/webxr-plane-detection.json",
+      "cddl": []
+    },
+    {
       "url": "https://immersive-web.github.io/raw-camera-access/",
       "seriesComposition": "full",
       "shortname": "raw-camera-access",
@@ -3403,109 +3512,6 @@
       "cddl": []
     },
     {
-      "url": "https://immersive-web.github.io/real-world-geometry/plane-detection.html",
-      "seriesComposition": "full",
-      "shortname": "webxr-plane-detection",
-      "series": {
-        "shortname": "webxr-plane-detection",
-        "currentSpecification": "webxr-plane-detection",
-        "title": "WebXR Plane Detection",
-        "shortTitle": "WebXR Plane Detection",
-        "nightlyUrl": "https://immersive-web.github.io/real-world-geometry/plane-detection.html"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Immersive Web Community Group",
-          "url": "https://www.w3.org/community/immersive-web/"
-        }
-      ],
-      "nightly": {
-        "url": "https://immersive-web.github.io/real-world-geometry/plane-detection.html",
-        "status": "Draft Community Group Report",
-        "alternateUrls": [],
-        "repository": "https://github.com/immersive-web/real-world-geometry",
-        "sourcePath": "plane-detection.bs",
-        "filename": "plane-detection.html"
-      },
-      "title": "WebXR Plane Detection Module",
-      "source": "spec",
-      "shortTitle": "WebXR Plane Detection",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://immersive-web.github.io/real-world-geometry/plane-detection.html"
-      ],
-      "crawled": "https://immersive-web.github.io/real-world-geometry/plane-detection.html",
-      "crawlCacheInfo": {
-        "lastModified": "Wed, 21 May 2025 22:57:39 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "21 May 2025",
-      "algorithms": "algorithms/webxr-plane-detection.json",
-      "links": "links/webxr-plane-detection.json",
-      "refs": "refs/webxr-plane-detection.json",
-      "idl": "idl/webxr-plane-detection.idl",
-      "dfns": "dfns/webxr-plane-detection.json",
-      "headings": "headings/webxr-plane-detection.json",
-      "ids": "ids/webxr-plane-detection.json",
-      "cddl": [],
-      "error": "Error: Loading https://immersive-web.github.io/real-world-geometry/plane-detection.html triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
-    },
-    {
-      "url": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-      "seriesComposition": "full",
-      "shortname": "webxr-meshing",
-      "series": {
-        "shortname": "webxr-meshing",
-        "currentSpecification": "webxr-meshing",
-        "title": "WebXR Meshing API",
-        "shortTitle": "WebXR Meshing API",
-        "nightlyUrl": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Immersive Web Community Group",
-          "url": "https://www.w3.org/community/immersive-web/"
-        }
-      ],
-      "nightly": {
-        "url": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-        "status": "A Collection of Interesting Ideas",
-        "alternateUrls": [],
-        "repository": "https://github.com/immersive-web/real-world-geometry",
-        "sourcePath": "webxrmeshing-1.bs",
-        "filename": "webxrmeshing-1.html"
-      },
-      "title": "WebXR Meshing API Level 1",
-      "source": "spec",
-      "shortTitle": "WebXR Meshing API 1",
-      "categories": [
-        "browser"
-      ],
-      "standing": "pending",
-      "versions": [
-        "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html"
-      ],
-      "crawled": "https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html",
-      "crawlCacheInfo": {
-        "lastModified": "Wed, 21 May 2025 22:57:39 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "21 May 2025",
-      "links": "links/webxr-meshing.json",
-      "refs": "refs/webxr-meshing.json",
-      "idl": "idl/webxr-meshing.idl",
-      "dfns": "dfns/webxr-meshing.json",
-      "headings": "headings/webxr-meshing.json",
-      "ids": "ids/webxr-meshing.json",
-      "cddl": [],
-      "error": "Error: Loading https://immersive-web.github.io/real-world-geometry/webxrmeshing-1.html triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
-    },
-    {
       "url": "https://immersive-web.github.io/real-world-meshing/",
       "seriesComposition": "full",
       "shortname": "real-world-meshing",
@@ -3516,6 +3522,9 @@
         "shortTitle": "WebXR Mesh Detection",
         "nightlyUrl": "https://immersive-web.github.io/real-world-meshing/"
       },
+      "formerNames": [
+        "webxr-meshing"
+      ],
       "organization": "W3C",
       "groups": [
         {
@@ -6975,7 +6984,7 @@
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 26 Nov 2025 16:36:47 GMT"
+        "lastModified": "Wed, 26 Nov 2025 16:36:46 GMT"
       },
       "date": "26 November 2025",
       "links": "links/ecmascript.json",
@@ -7642,6 +7651,52 @@
       "links": "links/tc39-iterator-sequencing.json",
       "headings": "headings/tc39-iterator-sequencing.json",
       "ids": "ids/tc39-iterator-sequencing.json",
+      "cddl": []
+    },
+    {
+      "url": "https://tc39.es/proposal-joint-iteration/",
+      "seriesComposition": "full",
+      "shortname": "tc39-joint-iteration",
+      "series": {
+        "shortname": "tc39-joint-iteration",
+        "currentSpecification": "tc39-joint-iteration",
+        "title": "Joint Iteration",
+        "shortTitle": "Joint Iteration",
+        "nightlyUrl": "https://tc39.es/proposal-joint-iteration/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-joint-iteration/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-joint-iteration",
+        "sourcePath": "spec.emu",
+        "filename": "index.html"
+      },
+      "title": "Joint Iteration",
+      "source": "spec",
+      "shortTitle": "Joint Iteration",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/proposal-joint-iteration/"
+      ],
+      "crawled": "https://tc39.es/proposal-joint-iteration/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 04 Nov 2025 18:10:40 GMT"
+      },
+      "date": "4 November 2025",
+      "links": "links/tc39-joint-iteration.json",
+      "headings": "headings/tc39-joint-iteration.json",
+      "ids": "ids/tc39-joint-iteration.json",
       "cddl": []
     },
     {
@@ -9462,7 +9517,7 @@
       "cddl": []
     },
     {
-      "url": "https://w3c.github.io/webextensions/specification/index.html",
+      "url": "https://w3c.github.io/webextensions/specification/",
       "seriesComposition": "full",
       "shortname": "webextensions",
       "series": {
@@ -9470,10 +9525,10 @@
         "currentSpecification": "webextensions",
         "title": "Web Extensions",
         "shortTitle": "Web Extensions",
-        "nightlyUrl": "https://w3c.github.io/webextensions/specification/index.html"
+        "nightlyUrl": "https://w3c.github.io/webextensions/specification/"
       },
       "nightly": {
-        "url": "https://w3c.github.io/webextensions/specification/index.html",
+        "url": "https://w3c.github.io/webextensions/specification/",
         "status": "Draft Community Group Report",
         "sourcePath": "specification/index.bs",
         "alternateUrls": [],
@@ -9494,10 +9549,16 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "web-extensions"
+        ]
+      },
       "versions": [
-        "https://w3c.github.io/webextensions/specification/index.html"
+        "https://w3c.github.io/webextensions/specification/"
       ],
-      "crawled": "https://w3c.github.io/webextensions/specification/index.html",
+      "crawled": "https://w3c.github.io/webextensions/specification/",
       "crawlCacheInfo": {
         "lastModified": "Wed, 26 Nov 2025 00:04:12 GMT"
       },
@@ -9569,56 +9630,6 @@
       "dfns": "dfns/webrtc-ice.json",
       "headings": "headings/webrtc-ice.json",
       "ids": "ids/webrtc-ice.json",
-      "cddl": []
-    },
-    {
-      "url": "https://w3c.github.io/wot-binding-registry/",
-      "seriesComposition": "full",
-      "shortname": "wot-binding-registry",
-      "series": {
-        "shortname": "wot-binding-registry",
-        "currentSpecification": "wot-binding-registry",
-        "title": "Web of Things (WoT) Binding Registry",
-        "shortTitle": "WoT Bindings Registry",
-        "nightlyUrl": "https://w3c.github.io/wot-binding-registry/"
-      },
-      "shortTitle": "WoT Bindings Registry",
-      "formerNames": [
-        "wot-bindings-registry"
-      ],
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web of Things Working Group",
-          "url": "https://www.w3.org/WoT/wg/"
-        }
-      ],
-      "nightly": {
-        "url": "https://w3c.github.io/wot-binding-registry/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/wot-binding-registry",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "Web of Things (WoT) Binding Registry",
-      "source": "spec",
-      "categories": [],
-      "standing": "good",
-      "versions": [
-        "https://w3c.github.io/wot-binding-registry/"
-      ],
-      "crawled": "https://w3c.github.io/wot-binding-registry/",
-      "crawlCacheInfo": {
-        "lastModified": "Thu, 09 Oct 2025 13:58:08 GMT"
-      },
-      "generator": "respec",
-      "date": "09 October 2025",
-      "links": "links/wot-binding-registry.json",
-      "refs": "refs/wot-binding-registry.json",
-      "dfns": "dfns/wot-binding-registry.json",
-      "headings": "headings/wot-binding-registry.json",
-      "ids": "ids/wot-binding-registry.json",
       "cddl": []
     },
     {
@@ -14912,7 +14923,7 @@
       ],
       "crawled": "https://wicg.github.io/web-otp/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 04 Feb 2025 17:18:17 GMT"
+        "lastModified": "Tue, 04 Feb 2025 17:18:16 GMT"
       },
       "generator": "bikeshed",
       "date": "13 April 2021",
@@ -15876,9 +15887,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6455",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 21 Nov 2025 05:38:29 GMT"
+        "lastModified": "Thu, 20 Nov 2025 22:25:41 GMT"
       },
-      "date": "21 November 2025",
+      "date": "20 November 2025",
       "links": "links/rfc6455.json",
       "headings": "headings/rfc6455.json",
       "ids": "ids/rfc6455.json",
@@ -17607,7 +17618,7 @@
       ],
       "crawled": "https://w3c.github.io/accname/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 23 Oct 2025 18:57:11 GMT"
+        "lastModified": "Thu, 23 Oct 2025 18:57:10 GMT"
       },
       "generator": "respec",
       "date": "23 October 2025",
@@ -28836,7 +28847,7 @@
       ],
       "crawled": "https://w3c.github.io/webappsec-fetch-metadata/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Apr 2025 06:19:12 GMT"
+        "lastModified": "Tue, 01 Apr 2025 06:19:11 GMT"
       },
       "generator": "bikeshed",
       "date": "1 April 2025",
@@ -32247,7 +32258,7 @@
       ],
       "crawled": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jul 2024 08:09:25 GMT"
+        "lastModified": "Tue, 23 Jul 2024 08:09:24 GMT"
       },
       "generator": "respec",
       "date": "23 July 2024",
@@ -34187,7 +34198,7 @@
       ],
       "crawled": "https://w3c.github.io/push-api/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 25 Nov 2025 16:56:33 GMT"
+        "lastModified": "Tue, 25 Nov 2025 16:56:32 GMT"
       },
       "generator": "respec",
       "date": "25 November 2025",
@@ -38692,7 +38703,7 @@
       ],
       "crawled": "https://w3c.github.io/sdw/time-aggregates/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 01 Sep 2025 09:14:52 GMT"
+        "lastModified": "Mon, 01 Sep 2025 09:14:51 GMT"
       },
       "generator": "respec",
       "date": "01 September 2025",
@@ -42578,7 +42589,7 @@
       ],
       "crawled": "https://w3c.github.io/wot-architecture/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 05 Jun 2024 12:29:40 GMT"
+        "lastModified": "Wed, 05 Jun 2024 12:29:39 GMT"
       },
       "generator": "respec",
       "date": "05 June 2024",
@@ -42587,6 +42598,63 @@
       "dfns": "dfns/wot-architecture11.json",
       "headings": "headings/wot-architecture11.json",
       "ids": "ids/wot-architecture11.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/wot-binding-registry/",
+      "seriesComposition": "full",
+      "shortname": "wot-binding-registry",
+      "series": {
+        "shortname": "wot-binding-registry",
+        "currentSpecification": "wot-binding-registry",
+        "title": "Web of Things (WoT) Binding Registry",
+        "shortTitle": "WoT Bindings Registry",
+        "releaseUrl": "https://www.w3.org/TR/wot-binding-registry/",
+        "nightlyUrl": "https://w3c.github.io/wot-binding-registry/"
+      },
+      "shortTitle": "WoT Bindings Registry",
+      "formerNames": [
+        "wot-bindings-registry"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web of Things Working Group",
+          "url": "https://www.w3.org/WoT/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/wot-binding-registry/",
+        "status": "Draft Registry",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/wot-binding-registry/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/wot-binding-registry",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Web of Things (WoT) Binding Registry",
+      "source": "w3c",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/wot-binding-registry/",
+        "https://w3c.github.io/wot-binding-registry/"
+      ],
+      "crawled": "https://w3c.github.io/wot-binding-registry/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 09 Oct 2025 13:58:08 GMT"
+      },
+      "generator": "respec",
+      "date": "09 October 2025",
+      "links": "links/wot-binding-registry.json",
+      "refs": "refs/wot-binding-registry.json",
+      "dfns": "dfns/wot-binding-registry.json",
+      "headings": "headings/wot-binding-registry.json",
+      "ids": "ids/wot-binding-registry.json",
       "cddl": []
     },
     {
@@ -42699,6 +42767,63 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/wot-thing-description-2.0/",
+      "seriesComposition": "full",
+      "shortname": "wot-thing-description-2.0",
+      "series": {
+        "shortname": "wot-thing-description",
+        "currentSpecification": "wot-thing-description11",
+        "title": "Web of Things (WoT) Thing Description",
+        "shortTitle": "WoT",
+        "releaseUrl": "https://www.w3.org/TR/wot-thing-description/",
+        "nightlyUrl": "https://w3c.github.io/wot-thing-description/"
+      },
+      "seriesVersion": "2.0",
+      "seriesPrevious": "wot-thing-description11",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web of Things Working Group",
+          "url": "https://www.w3.org/WoT/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/wot-thing-description-2.0/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/wot-thing-description/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/wot-thing-description",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Web of Things (WoT) Thing Description 2.0",
+      "source": "w3c",
+      "shortTitle": "WoT 2.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/wot-thing-description-2.0/",
+        "https://w3c.github.io/wot-thing-description/"
+      ],
+      "crawled": "https://w3c.github.io/wot-thing-description/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 10 Nov 2025 02:58:06 GMT"
+      },
+      "generator": "respec",
+      "date": "10 November 2025",
+      "algorithms": "algorithms/wot-thing-description-2.0.json",
+      "links": "links/wot-thing-description-2.0.json",
+      "refs": "refs/wot-thing-description-2.0.json",
+      "dfns": "dfns/wot-thing-description-2.0.json",
+      "headings": "headings/wot-thing-description-2.0.json",
+      "ids": "ids/wot-thing-description-2.0.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/wot-thing-description11/",
       "seriesComposition": "full",
       "shortname": "wot-thing-description11",
@@ -42711,6 +42836,7 @@
         "nightlyUrl": "https://w3c.github.io/wot-thing-description/"
       },
       "seriesVersion": "1.1",
+      "seriesNext": "wot-thing-description-2.0",
       "organization": "W3C",
       "groups": [
         {
