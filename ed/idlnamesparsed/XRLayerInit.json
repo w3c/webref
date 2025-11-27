@@ -6,7 +6,7 @@
       "title": "WebXR Layers API Level 1",
       "url": "https://www.w3.org/TR/webxrlayers-1/"
     },
-    "fragment": "dictionary XRLayerInit {\n  required XRSpace space;\n  GLenum colorFormat = 0x1908; // RGBA\n  GLenum? depthFormat;\n  unsigned long mipLevels = 1;\n  required unsigned long viewPixelWidth;\n  required unsigned long viewPixelHeight;\n  XRLayerLayout layout = \"mono\";\n  boolean isStatic = false;\n  boolean clearOnAccess = true;\n};",
+    "fragment": "dictionary XRLayerInit {\n  required XRSpace space;\n  XRTextureType textureType = \"texture\";\n  GLenum colorFormat = 0x1908; // RGBA\n  GLenum? depthFormat;\n  unsigned long mipLevels = 1;\n  required unsigned long viewPixelWidth;\n  required unsigned long viewPixelHeight;\n  XRLayerLayout layout = \"mono\";\n  boolean isStatic = false;\n  boolean clearOnAccess = true;\n};",
     "href": "https://immersive-web.github.io/layers/#dictdef-xrlayerinit"
   },
   "extended": [],

@@ -874,6 +874,14 @@
       "extended": []
     },
     {
+      "name": "@navigation",
+      "prose": "The @navigation rule is a conditional group rule whose condition tests characteristics of the current URL or of the state of navigation between two URLs. These queries are called navigation queries.",
+      "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-navigation",
+      "descriptors": [],
+      "syntax": "@navigation <navigation-condition> { <rule-list> }",
+      "extended": []
+    },
+    {
       "descriptors": [],
       "name": "@ornaments",
       "href": "https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values-ornaments",
@@ -980,6 +988,14 @@
       "href": "https://drafts.csswg.org/css-page-3/#at-ruledef-right-top",
       "descriptors": [],
       "syntax": "@right-top { <declaration-list> };",
+      "extended": []
+    },
+    {
+      "name": "@route",
+      "prose": "The @route rule is an at-rule that associates a name with a URL pattern. This name can be referenced in @navigation rules and in :link-to() pseudo-classes.",
+      "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-route",
+      "descriptors": [],
+      "syntax": "@route <dashed-ident> { [ <pattern-descriptors> | <init-descriptors> ] }",
       "extended": []
     },
     {
@@ -2101,7 +2117,7 @@
     {
       "name": "superellipse()",
       "href": "https://drafts.csswg.org/css-borders-4/#funcdef-superellipse",
-      "syntax": "superellipse(<number [-∞,∞]> | infinity | -infinity)",
+      "syntax": "superellipse(<number> | infinity | -infinity)",
       "extended": []
     },
     {
@@ -2225,6 +2241,13 @@
       "name": "type()",
       "href": "https://drafts.csswg.org/css-images-4/#funcdef-image-set-type",
       "syntax": "type( <string> )",
+      "extended": []
+    },
+    {
+      "name": "url-pattern()",
+      "prose": "The url-pattern() function represents a URL pattern, which can be used to match URLs.",
+      "href": "https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern",
+      "syntax": "url-pattern( <string> )",
       "extended": []
     },
     {
@@ -4192,7 +4215,7 @@
         "border-block-clip",
         "borderBlockClip"
       ],
-      "syntax": "<border-top-clip>",
+      "syntax": "<'border-top-clip'>",
       "extended": []
     },
     {
@@ -4232,11 +4255,11 @@
     {
       "name": "border-block-end-clip",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-block-end-clip",
-      "initial": "normal",
+      "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "refer to length of border-edge side",
-      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "logicalPropertyGroup": "border-clip",
@@ -4244,7 +4267,7 @@
         "border-block-end-clip",
         "borderBlockEndClip"
       ],
-      "syntax": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "syntax": "none | [ <length-percentage [0,∞]> | <flex> ]+",
       "extended": []
     },
     {
@@ -4338,11 +4361,11 @@
     {
       "name": "border-block-start-clip",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-block-start-clip",
-      "initial": "normal",
+      "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "refer to length of border-edge side",
-      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "logicalPropertyGroup": "border-clip",
@@ -4350,7 +4373,7 @@
         "border-block-start-clip",
         "borderBlockStartClip"
       ],
-      "syntax": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "syntax": "none | [ <length-percentage [0,∞]> | <flex> ]+",
       "extended": []
     },
     {
@@ -4478,11 +4501,11 @@
     {
       "name": "border-bottom-clip",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-bottom-clip",
-      "initial": "normal",
+      "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "refer to length of border-edge side",
-      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "logicalPropertyGroup": "border-clip",
@@ -4490,7 +4513,7 @@
         "border-bottom-clip",
         "borderBottomClip"
       ],
-      "syntax": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "syntax": "none | [ <length-percentage [0,∞]> | <flex> ]+",
       "extended": []
     },
     {
@@ -4631,7 +4654,7 @@
         "border-clip",
         "borderClip"
       ],
-      "syntax": "<border-top-clip>",
+      "syntax": "<'border-top-clip'>",
       "extended": []
     },
     {
@@ -4837,7 +4860,7 @@
         "border-inline-clip",
         "borderInlineClip"
       ],
-      "syntax": "<border-top-clip>",
+      "syntax": "<'border-top-clip'>",
       "extended": []
     },
     {
@@ -4877,11 +4900,11 @@
     {
       "name": "border-inline-end-clip",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-inline-end-clip",
-      "initial": "normal",
+      "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "refer to length of border-edge side",
-      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "logicalPropertyGroup": "border-clip",
@@ -4889,7 +4912,7 @@
         "border-inline-end-clip",
         "borderInlineEndClip"
       ],
-      "syntax": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "syntax": "none | [ <length-percentage [0,∞]> | <flex> ]+",
       "extended": []
     },
     {
@@ -4983,11 +5006,11 @@
     {
       "name": "border-inline-start-clip",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-inline-start-clip",
-      "initial": "normal",
+      "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "refer to length of border-edge side",
-      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "logicalPropertyGroup": "border-clip",
@@ -4995,7 +5018,7 @@
         "border-inline-start-clip",
         "borderInlineStartClip"
       ],
-      "syntax": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "syntax": "none | [ <length-percentage [0,∞]> | <flex> ]+",
       "extended": []
     },
     {
@@ -5123,11 +5146,11 @@
     {
       "name": "border-left-clip",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-left-clip",
-      "initial": "normal",
+      "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "refer to length of border-edge side",
-      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "logicalPropertyGroup": "border-clip",
@@ -5135,7 +5158,7 @@
         "border-left-clip",
         "borderLeftClip"
       ],
-      "syntax": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "syntax": "none | [ <length-percentage [0,∞]> | <flex> ]+",
       "extended": []
     },
     {
@@ -5263,11 +5286,11 @@
     {
       "name": "border-right-clip",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-right-clip",
-      "initial": "normal",
+      "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "refer to length of border-edge side",
-      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "logicalPropertyGroup": "border-clip",
@@ -5275,7 +5298,7 @@
         "border-right-clip",
         "borderRightClip"
       ],
-      "syntax": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "syntax": "none | [ <length-percentage [0,∞]> | <flex> ]+",
       "extended": []
     },
     {
@@ -5456,11 +5479,11 @@
     {
       "name": "border-top-clip",
       "href": "https://drafts.csswg.org/css-borders-4/#propdef-border-top-clip",
-      "initial": "normal",
+      "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "refer to length of border-edge side",
-      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
       "logicalPropertyGroup": "border-clip",
@@ -5468,7 +5491,7 @@
         "border-top-clip",
         "borderTopClip"
       ],
-      "syntax": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
+      "syntax": "none | [ <length-percentage [0,∞]> | <flex> ]+",
       "extended": []
     },
     {
@@ -5696,7 +5719,7 @@
         "box-shadow-offset",
         "boxShadowOffset"
       ],
-      "syntax": "[ none | <length>{2} ]#",
+      "syntax": "[ none | <length>{1,2} ]#",
       "extended": []
     },
     {
@@ -6328,7 +6351,7 @@
         "contain-intrinsic-block-size",
         "containIntrinsicBlockSize"
       ],
-      "syntax": "auto? [ none | <length [0,∞]> ]",
+      "syntax": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
       "extended": []
     },
     {
@@ -6346,7 +6369,7 @@
         "contain-intrinsic-height",
         "containIntrinsicHeight"
       ],
-      "syntax": "auto? [ none | <length [0,∞]> ]",
+      "syntax": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
       "extended": []
     },
     {
@@ -6364,7 +6387,7 @@
         "contain-intrinsic-inline-size",
         "containIntrinsicInlineSize"
       ],
-      "syntax": "auto? [ none | <length [0,∞]> ]",
+      "syntax": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
       "extended": []
     },
     {
@@ -6381,7 +6404,7 @@
         "contain-intrinsic-size",
         "containIntrinsicSize"
       ],
-      "syntax": "[ auto? [ none | <length> ] ]{1,2}",
+      "syntax": "[ [ auto | from-element ]? [ none | <length [0,∞]> ] ]{1,2}",
       "extended": []
     },
     {
@@ -6399,7 +6422,7 @@
         "contain-intrinsic-width",
         "containIntrinsicWidth"
       ],
-      "syntax": "auto? [ none | <length [0,∞]> ]",
+      "syntax": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
       "extended": []
     },
     {
@@ -16173,6 +16196,12 @@
       "extended": []
     },
     {
+      "name": ":link-to()",
+      "prose": "This specification defines a new :link-to() functional pseudo-class that matches link elements that link to a certain URL.",
+      "href": "https://drafts.csswg.org/css-navigation-1/#link-to-pseudo",
+      "extended": []
+    },
+    {
       "name": ":local-link",
       "prose": "The :local-link pseudo-class allows authors to style hyperlinks based on the users current location within a site and to differentiate site-internal versus site-external links.",
       "href": "https://drafts.csswg.org/selectors-5/#local-link-pseudo",
@@ -17994,6 +18023,24 @@
       "extended": []
     },
     {
+      "name": "init-descriptor",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-init-descriptor",
+      "syntax": "<init-descriptor-name> : <string>",
+      "extended": []
+    },
+    {
+      "name": "init-descriptor-name",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-init-descriptor-name",
+      "syntax": "protocol | username | password | hostname | port pathname | search | hash | baseURL",
+      "extended": []
+    },
+    {
+      "name": "init-descriptors",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-init-descriptors",
+      "syntax": ";* <init-descriptor> [ ;+ <init-descriptor> ]* ;*",
+      "extended": []
+    },
+    {
       "for": [
         "calc-interpolate()",
         "calc-interpolate()",
@@ -18226,6 +18273,18 @@
       "extended": []
     },
     {
+      "name": "link-condition",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-link-condition",
+      "syntax": "<link-condition-base> [ with <navigation-param-expression> ]?",
+      "extended": []
+    },
+    {
+      "name": "link-condition-base",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-link-condition-base",
+      "syntax": "<navigation-location>",
+      "extended": []
+    },
+    {
       "name": "margin-width",
       "prose": "The properties defined in this section refer to the <margin-width> value type, which may take one of the following values:",
       "href": "https://drafts.csswg.org/css2/#value-def-margin-width",
@@ -18444,6 +18503,72 @@
       "extended": []
     },
     {
+      "name": "navigation-condition",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-condition",
+      "syntax": "not <navigation-in-parens> | <navigation-in-parens> [ and <navigation-in-parens> ]* | <navigation-in-parens> [ or <navigation-in-parens> ]*",
+      "extended": []
+    },
+    {
+      "name": "navigation-in-parens",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-in-parens",
+      "syntax": "( <navigation-condition> ) | ( <navigation-test> ) | <general-enclosed>",
+      "extended": []
+    },
+    {
+      "name": "navigation-keyword",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-keyword",
+      "syntax": "at | from | to",
+      "extended": []
+    },
+    {
+      "name": "navigation-location",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location",
+      "syntax": "<route-name> | <url-pattern()>",
+      "extended": []
+    },
+    {
+      "name": "navigation-param",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param",
+      "syntax": "<navigation-param-key-value> | <navigation-param-function>",
+      "extended": []
+    },
+    {
+      "name": "navigation-param-and",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-and",
+      "syntax": "<navigation-param-expression> [ \"and\" <navigation-param-expression> ]*",
+      "extended": []
+    },
+    {
+      "name": "navigation-param-expression",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-expression",
+      "syntax": "( <navigation-param-and> ) | ( <navigation-param-or> ) | <navigation-param>",
+      "extended": []
+    },
+    {
+      "name": "navigation-param-function",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-function",
+      "syntax": "navigation-param( <ident> )",
+      "extended": []
+    },
+    {
+      "name": "navigation-param-key-value",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-key-value",
+      "syntax": "( <ident> : <string> )",
+      "extended": []
+    },
+    {
+      "name": "navigation-param-or",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-or",
+      "syntax": "<navigation-param-expression> [ \"or\" <navigation-param-expression> ]*",
+      "extended": []
+    },
+    {
+      "name": "navigation-test",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-test",
+      "syntax": "<navigation-location> | <navigation-keyword> : <navigation-location>",
+      "extended": []
+    },
+    {
       "name": "ndash-dimension",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-ndash-dimension",
       "extended": []
@@ -18589,6 +18714,18 @@
       "name": "palette-mix()",
       "prose": "This value defines a position in the interpolation between two palette values, identified by <palette-identifier>, by the palette keywords normal, light, dark, or by another <palette-mix()> value. The glyphs of the font must be rendered with a palette that is created by interpolating for each palette color index between the matching color indices of the first and second palette specified as arguments, recursively resolving <palette-mix()> functions if needed. For each palette color, the interpolation follows the rules of the <color-mix()> function. Percentages are normalized according to CSS Color 5 § 3.2 Percentage Normalization.",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-mix",
+      "extended": []
+    },
+    {
+      "name": "pattern-descriptor",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-pattern-descriptor",
+      "syntax": "pattern : <url-pattern()>",
+      "extended": []
+    },
+    {
+      "name": "pattern-descriptors",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-pattern-descriptors",
+      "syntax": ";* <pattern-descriptor> ;*",
       "extended": []
     },
     {
@@ -18926,6 +19063,12 @@
       "extended": []
     },
     {
+      "name": "route-name",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-name",
+      "syntax": "<dashed-ident>",
+      "extended": []
+    },
+    {
       "name": "rule-list",
       "prose": "<rule-list>: qualified rules and at-rules are allowed; declarations are automatically invalid.",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-rule-list",
@@ -19172,7 +19315,7 @@
     {
       "name": "spread-shadow",
       "href": "https://drafts.csswg.org/css-borders-4/#typedef-spread-shadow",
-      "syntax": "<'box-shadow-color'>? && [ <'box-shadow-offset'> [ <'box-shadow-blur'> <'box-shadow-spread'>? ]? ] && <'box-shadow-position'>?",
+      "syntax": "<'box-shadow-color'>? && [ [ none | <length>{2} ] [ <'box-shadow-blur'> <'box-shadow-spread'>? ]? ] && <'box-shadow-position'>?",
       "extended": []
     },
     {

@@ -1,0 +1,29 @@
+{
+  "name": "ClipboardChangeEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Clipboard API and events",
+      "url": "https://www.w3.org/TR/clipboard-apis/"
+    },
+    "fragment": "dictionary ClipboardChangeEventInit : EventInit {\n  sequence<DOMString> types = [];\n  bigint changeId = 0;\n};",
+    "href": "https://w3c.github.io/clipboard-apis/#dictdef-clipboardchangeeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

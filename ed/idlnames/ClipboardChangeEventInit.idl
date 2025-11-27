@@ -1,0 +1,5 @@
+// Source: Clipboard API and events (https://www.w3.org/TR/clipboard-apis/)
+dictionary ClipboardChangeEventInit : EventInit {
+  sequence<DOMString> types = [];
+  bigint changeId = 0;
+};

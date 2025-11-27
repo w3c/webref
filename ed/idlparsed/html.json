@@ -24111,7 +24111,7 @@
         "href": "https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvasrenderingcontext2d"
       },
       "PredefinedColorSpace": {
-        "fragment": "enum PredefinedColorSpace { \"srgb\", \"display-p3\" };",
+        "fragment": "enum PredefinedColorSpace { \"srgb\", \"srgb-linear\", \"display-p3\", \"display-p3-linear\" };",
         "type": "enum",
         "name": "PredefinedColorSpace",
         "values": [
@@ -24122,8 +24122,18 @@
           },
           {
             "type": "enum-value",
+            "value": "srgb-linear",
+            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-predefinedcolorspace-srgb-linear"
+          },
+          {
+            "type": "enum-value",
             "value": "display-p3",
             "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-predefinedcolorspace-display-p3"
+          },
+          {
+            "type": "enum-value",
+            "value": "display-p3-linear",
+            "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-predefinedcolorspace-display-p3-linear"
           }
         ],
         "extAttrs": [],

@@ -230,7 +230,7 @@
     {
       "name": "contain-intrinsic-width",
       "href": "https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-width",
-      "value": "auto? [ none | <length [0,∞]> ]",
+      "value": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
       "initial": "none",
       "appliesTo": "elements with size containment",
       "inherited": "no",
@@ -241,18 +241,32 @@
       "logicalPropertyGroup": "contain-intrinsic-size",
       "values": [
         {
+          "name": "none",
+          "prose": "If no other contain-intrinsic-size value (such as auto) is providing an explicit intrinsic inner size, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<length>",
+          "prose": "If no other contain-intrinsic-size value (such as auto) is providing an explicit intrinsic inner size, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-length",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
           "name": "auto",
-          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis. Otherwise, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis.",
           "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-auto",
           "type": "value",
           "value": "auto"
         },
         {
-          "name": "none",
-          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis. Otherwise, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
-          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-none",
+          "name": "from-element",
+          "prose": "If from-element is specified and the element is a replaced element with an internal layout intrinsic size, its explicit intrinsic inner size in the corresponding axis is that size. Should this apply even when contain:layout isn’t specified? The name needs further discussion.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-from-element",
           "type": "value",
-          "value": "none"
+          "value": "from-element"
         }
       ],
       "styleDeclaration": [
@@ -263,7 +277,7 @@
     {
       "name": "contain-intrinsic-height",
       "href": "https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-height",
-      "value": "auto? [ none | <length [0,∞]> ]",
+      "value": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
       "initial": "none",
       "appliesTo": "elements with size containment",
       "inherited": "no",
@@ -274,18 +288,32 @@
       "logicalPropertyGroup": "contain-intrinsic-size",
       "values": [
         {
+          "name": "none",
+          "prose": "If no other contain-intrinsic-size value (such as auto) is providing an explicit intrinsic inner size, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<length>",
+          "prose": "If no other contain-intrinsic-size value (such as auto) is providing an explicit intrinsic inner size, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-length",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
           "name": "auto",
-          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis. Otherwise, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis.",
           "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-auto",
           "type": "value",
           "value": "auto"
         },
         {
-          "name": "none",
-          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis. Otherwise, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
-          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-none",
+          "name": "from-element",
+          "prose": "If from-element is specified and the element is a replaced element with an internal layout intrinsic size, its explicit intrinsic inner size in the corresponding axis is that size. Should this apply even when contain:layout isn’t specified? The name needs further discussion.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-from-element",
           "type": "value",
-          "value": "none"
+          "value": "from-element"
         }
       ],
       "styleDeclaration": [
@@ -296,7 +324,7 @@
     {
       "name": "contain-intrinsic-block-size",
       "href": "https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-block-size",
-      "value": "auto? [ none | <length [0,∞]> ]",
+      "value": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
       "initial": "none",
       "appliesTo": "elements with size containment",
       "inherited": "no",
@@ -307,18 +335,32 @@
       "logicalPropertyGroup": "contain-intrinsic-size",
       "values": [
         {
+          "name": "none",
+          "prose": "If no other contain-intrinsic-size value (such as auto) is providing an explicit intrinsic inner size, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<length>",
+          "prose": "If no other contain-intrinsic-size value (such as auto) is providing an explicit intrinsic inner size, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-length",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
           "name": "auto",
-          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis. Otherwise, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis.",
           "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-auto",
           "type": "value",
           "value": "auto"
         },
         {
-          "name": "none",
-          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis. Otherwise, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
-          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-none",
+          "name": "from-element",
+          "prose": "If from-element is specified and the element is a replaced element with an internal layout intrinsic size, its explicit intrinsic inner size in the corresponding axis is that size. Should this apply even when contain:layout isn’t specified? The name needs further discussion.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-from-element",
           "type": "value",
-          "value": "none"
+          "value": "from-element"
         }
       ],
       "styleDeclaration": [
@@ -329,7 +371,7 @@
     {
       "name": "contain-intrinsic-inline-size",
       "href": "https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-inline-size",
-      "value": "auto? [ none | <length [0,∞]> ]",
+      "value": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
       "initial": "none",
       "appliesTo": "elements with size containment",
       "inherited": "no",
@@ -340,18 +382,32 @@
       "logicalPropertyGroup": "contain-intrinsic-size",
       "values": [
         {
+          "name": "none",
+          "prose": "If no other contain-intrinsic-size value (such as auto) is providing an explicit intrinsic inner size, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<length>",
+          "prose": "If no other contain-intrinsic-size value (such as auto) is providing an explicit intrinsic inner size, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-length",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
           "name": "auto",
-          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis. Otherwise, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis.",
           "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-auto",
           "type": "value",
           "value": "auto"
         },
         {
-          "name": "none",
-          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis. Otherwise, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
-          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-none",
+          "name": "from-element",
+          "prose": "If from-element is specified and the element is a replaced element with an internal layout intrinsic size, its explicit intrinsic inner size in the corresponding axis is that size. Should this apply even when contain:layout isn’t specified? The name needs further discussion.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-from-element",
           "type": "value",
-          "value": "none"
+          "value": "from-element"
         }
       ],
       "styleDeclaration": [
@@ -362,7 +418,7 @@
     {
       "name": "contain-intrinsic-size",
       "href": "https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-size",
-      "value": "[ auto? [ none | <length> ] ]{1,2}",
+      "value": "[ [ auto | from-element ]? [ none | <length [0,∞]> ] ]{1,2}",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -372,18 +428,32 @@
       "canonicalOrder": "per grammar",
       "values": [
         {
+          "name": "none",
+          "prose": "If no other contain-intrinsic-size value (such as auto) is providing an explicit intrinsic inner size, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "<length>",
+          "prose": "If no other contain-intrinsic-size value (such as auto) is providing an explicit intrinsic inner size, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-length",
+          "type": "value",
+          "value": "<length>"
+        },
+        {
           "name": "auto",
-          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis. Otherwise, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
+          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis.",
           "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-auto",
           "type": "value",
           "value": "auto"
         },
         {
-          "name": "none",
-          "prose": "If auto is specified and the element has a last remembered size and is currently skipping its contents, its explicit intrinsic inner size in the corresponding axis is the last remembered size in that axis. Otherwise, the corresponding axis either doesn’t have an explicit intrinsic inner size (if none is specified) or has an explicit intrinsic inner size of the specified <length>.",
-          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-none",
+          "name": "from-element",
+          "prose": "If from-element is specified and the element is a replaced element with an internal layout intrinsic size, its explicit intrinsic inner size in the corresponding axis is that size. Should this apply even when contain:layout isn’t specified? The name needs further discussion.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-from-element",
           "type": "value",
-          "value": "none"
+          "value": "from-element"
         }
       ],
       "styleDeclaration": [

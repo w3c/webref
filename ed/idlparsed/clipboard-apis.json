@@ -8,6 +8,7 @@
       "constructors": {
         "Window": [
           "ClipboardEvent",
+          "ClipboardChangeEvent",
           "ClipboardItem"
         ]
       },
@@ -124,6 +125,167 @@
         ],
         "partial": false,
         "href": "https://w3c.github.io/clipboard-apis/#clipboardevent"
+      },
+      "ClipboardChangeEventInit": {
+        "fragment": "dictionary ClipboardChangeEventInit : EventInit {\n  sequence<DOMString> types = [];\n  bigint changeId = 0;\n};",
+        "type": "dictionary",
+        "name": "ClipboardChangeEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "types",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false,
+            "href": "https://w3c.github.io/clipboard-apis/#dom-clipboardchangeeventinit-types"
+          },
+          {
+            "type": "field",
+            "name": "changeId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "bigint"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/clipboard-apis/#dom-clipboardchangeeventinit-changeid"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/clipboard-apis/#dictdef-clipboardchangeeventinit"
+      },
+      "ClipboardChangeEvent": {
+        "fragment": "[Exposed=Window]\ninterface ClipboardChangeEvent : Event {\n  constructor(DOMString type, optional ClipboardChangeEventInit eventInitDict = {});\n  readonly attribute FrozenArray<DOMString> types;\n  readonly attribute bigint changeId;\n};",
+        "type": "interface",
+        "name": "ClipboardChangeEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ClipboardChangeEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://w3c.github.io/clipboard-apis/#dom-clipboardchangeevent-clipboardchangeevent"
+          },
+          {
+            "type": "attribute",
+            "name": "types",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/clipboard-apis/#dom-clipboardchangeevent-types"
+          },
+          {
+            "type": "attribute",
+            "name": "changeId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "bigint"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/clipboard-apis/#dom-clipboardchangeevent-changeid"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/clipboard-apis/#clipboardchangeevent"
       },
       "ClipboardItemData": {
         "fragment": "typedef Promise<(DOMString or Blob)> ClipboardItemData;",
@@ -739,6 +901,7 @@
     "exposed": {
       "Window": [
         "ClipboardEvent",
+        "ClipboardChangeEvent",
         "ClipboardItem",
         "Clipboard"
       ]
@@ -752,6 +915,13 @@
         "Event",
         "ClipboardEventInit",
         "DataTransfer"
+      ],
+      "ClipboardChangeEventInit": [
+        "EventInit"
+      ],
+      "ClipboardChangeEvent": [
+        "Event",
+        "ClipboardChangeEventInit"
       ],
       "Navigator": [
         "Clipboard"

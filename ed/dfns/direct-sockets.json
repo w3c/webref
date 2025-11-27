@@ -1794,6 +1794,52 @@
       "links": []
     },
     {
+      "id": "dom-multicastgroupoptions",
+      "href": "https://wicg.github.io/direct-sockets/#dom-multicastgroupoptions",
+      "linkingText": [
+        "MulticastGroupOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "multicastcontroller-interface",
+        "href": "https://wicg.github.io/direct-sockets/#multicastcontroller-interface",
+        "title": "MulticastController interface",
+        "alternateIds": [
+          "x3-multicastcontroller-interface"
+        ],
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-multicastmembership",
+      "href": "https://wicg.github.io/direct-sockets/#dom-multicastmembership",
+      "linkingText": [
+        "MulticastMembership"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "multicastcontroller-interface",
+        "href": "https://wicg.github.io/direct-sockets/#multicastcontroller-interface",
+        "title": "MulticastController interface",
+        "alternateIds": [
+          "x3-multicastcontroller-interface"
+        ],
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
       "id": "dom-multicastcontroller",
       "href": "https://wicg.github.io/direct-sockets/#dom-multicastcontroller",
       "linkingText": [
@@ -1814,6 +1860,81 @@
         "number": "3"
       },
       "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-multicastgroupoptions-sourceaddress",
+      "href": "https://wicg.github.io/direct-sockets/#dom-multicastgroupoptions-sourceaddress",
+      "linkingText": [
+        "sourceAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MulticastGroupOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "multicastgroupoptions-dictionary",
+        "href": "https://wicg.github.io/direct-sockets/#multicastgroupoptions-dictionary",
+        "title": "MulticastGroupOptions dictionary",
+        "alternateIds": [
+          "x3-1-multicastgroupoptions-dictionary"
+        ],
+        "number": "3.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-multicastmembership-groupaddress",
+      "href": "https://wicg.github.io/direct-sockets/#dom-multicastmembership-groupaddress",
+      "linkingText": [
+        "groupAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MulticastMembership"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "multicastmembership-dictionary",
+        "href": "https://wicg.github.io/direct-sockets/#multicastmembership-dictionary",
+        "title": "MulticastMembership dictionary",
+        "alternateIds": [
+          "x3-2-multicastmembership-dictionary"
+        ],
+        "number": "3.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-multicastmembership-sourceaddress",
+      "href": "https://wicg.github.io/direct-sockets/#dom-multicastmembership-sourceaddress",
+      "linkingText": [
+        "sourceAddress"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MulticastMembership"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "multicastmembership-dictionary",
+        "href": "https://wicg.github.io/direct-sockets/#multicastmembership-dictionary",
+        "title": "MulticastMembership dictionary",
+        "alternateIds": [
+          "x3-2-multicastmembership-dictionary"
+        ],
+        "number": "3.2"
+      },
+      "definedIn": "dt",
       "links": []
     },
     {
@@ -1871,7 +1992,8 @@
       "href": "https://wicg.github.io/direct-sockets/#dom-multicastcontroller-joingroup",
       "linkingText": [
         "joinGroup()",
-        "joinGroup(ipAddress)"
+        "joinGroup(groupAddress)",
+        "joinGroup(groupAddress, options)"
       ],
       "localLinkingText": [
         "MulticastController.joinGroup",
@@ -1889,9 +2011,9 @@
         "href": "https://wicg.github.io/direct-sockets/#joingroup-method",
         "title": "joinGroup() method",
         "alternateIds": [
-          "x3-1-joingroup-method"
+          "x3-3-joingroup-method"
         ],
-        "number": "3.1"
+        "number": "3.3"
       },
       "definedIn": "heading",
       "links": []
@@ -1901,7 +2023,8 @@
       "href": "https://wicg.github.io/direct-sockets/#dom-multicastcontroller-leavegroup",
       "linkingText": [
         "leaveGroup()",
-        "leaveGroup(ipAddress)"
+        "leaveGroup(groupAddress)",
+        "leaveGroup(groupAddress, options)"
       ],
       "localLinkingText": [
         "MulticastController.leaveGroup",
@@ -1919,9 +2042,9 @@
         "href": "https://wicg.github.io/direct-sockets/#leavegroup-method",
         "title": "leaveGroup() method",
         "alternateIds": [
-          "x3-2-leavegroup-method"
+          "x3-4-leavegroup-method"
         ],
-        "number": "3.2"
+        "number": "3.4"
       },
       "definedIn": "heading",
       "links": []
@@ -1946,9 +2069,9 @@
         "href": "https://wicg.github.io/direct-sockets/#joinedgroups-attribute",
         "title": "joinedGroups attribute",
         "alternateIds": [
-          "x3-3-joinedgroups-attribute"
+          "x3-5-joinedgroups-attribute"
         ],
-        "number": "3.3"
+        "number": "3.5"
       },
       "definedIn": "heading",
       "links": []

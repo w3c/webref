@@ -688,6 +688,10 @@
     "targets": [
       {
         "target": "Window"
+      },
+      {
+        "target": "HTMLElement",
+        "bubbles": false
       }
     ],
     "interface": "Event"
@@ -1204,42 +1208,18 @@
     ]
   },
   {
+    "src": {
+      "format": "fire an event phrasing",
+      "href": "https://w3c.github.io/clipboard-apis/#ref-for-concept-event-fire"
+    },
+    "href": "https://w3c.github.io/clipboard-apis/#eventdef-globaleventhandlers-clipboardchange",
     "type": "clipboardchange",
     "targets": [
       {
-        "target": "HTMLElement",
-        "bubbles": true,
-        "bubblingPath": [
-          "Node",
-          "Document",
-          "Window"
-        ]
-      },
-      {
-        "target": "MathMLElement",
-        "bubbles": true,
-        "bubblingPath": [
-          "Node",
-          "Document",
-          "Window"
-        ]
-      },
-      {
-        "target": "SVGElement",
-        "bubbles": true,
-        "bubblingPath": [
-          "Node",
-          "Document",
-          "Window"
-        ]
+        "target": "Window"
       }
     ],
-    "src": {
-      "format": "dfn",
-      "href": "https://w3c.github.io/clipboard-apis/#eventdef-globaleventhandlers-clipboardchange"
-    },
-    "href": "https://w3c.github.io/clipboard-apis/#eventdef-globaleventhandlers-clipboardchange",
-    "interface": "ClipboardEvent"
+    "interface": "ClipboardChangeEvent"
   },
   {
     "src": {
@@ -2748,6 +2728,10 @@
       },
       {
         "target": "ServiceWorker"
+      },
+      {
+        "target": "HTMLElement",
+        "bubbles": false
       }
     ],
     "interface": "Event",
@@ -3109,6 +3093,10 @@
     "targets": [
       {
         "target": "Window"
+      },
+      {
+        "target": "HTMLElement",
+        "bubbles": false
       }
     ],
     "interface": "Event"
@@ -3770,6 +3758,10 @@
     "targets": [
       {
         "target": "Window"
+      },
+      {
+        "target": "HTMLElement",
+        "bubbles": false
       }
     ],
     "interface": "Event",
@@ -5932,10 +5924,34 @@
     "type": "securitypolicyviolation",
     "targets": [
       {
-        "target": "Window"
+        "target": "WorkerGlobalScope"
       },
       {
-        "target": "WorkerGlobalScope"
+        "target": "HTMLElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      },
+      {
+        "target": "MathMLElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      },
+      {
+        "target": "SVGElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
       }
     ],
     "interface": "SecurityPolicyViolationEvent"

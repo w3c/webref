@@ -1,0 +1,133 @@
+{
+  "spec": {
+    "title": "CSS Route Matching",
+    "url": "https://drafts.csswg.org/css-navigation-1/"
+  },
+  "algorithms": [
+    {
+      "name": "document’s navigation API",
+      "href": "https://drafts.csswg.org/css-navigation-1/#documents-navigation-api",
+      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"documents-navigation-api\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">document’s navigation API</dfn> is\nthe result of the following steps on <var>document</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>window</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is <var>document</var>, or null if there is no such <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window①\">Window</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>window</var> is null, return null.</p>"
+        },
+        {
+          "html": "<p>Return <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigation-api\" id=\"ref-for-window-navigation-api\">navigation API</a>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "A <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param\" id=\"ref-for-typedef-navigation-param③\">&lt;navigation-param&gt;</a> matches the URL <var>input</var> (with a URL Pattern <var>urlPattern</var> as context)\nif the following steps return true:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>matchResult</var> be the result of\n<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" id=\"ref-for-url-pattern-match④\">match a URL pattern</a>\ngiven <var>urlPattern</var> and <var>input</var>.\nthe <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern⑥\">URL pattern</a>\nrepresented by the <a class=\"css production\" data-link-type=\"function\" href=\"https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern\" id=\"ref-for-funcdef-url-pattern⑦\">&lt;url-pattern()&gt;</a> function in the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-link-condition-base\" id=\"ref-for-typedef-link-condition-base⑦\">&lt;link-condition-base&gt;</a>\n(see <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#create-a-url-pattern-for-url-pattern\" id=\"ref-for-create-a-url-pattern-for-url-pattern②\">create a URL pattern for url-pattern()</a>)</p>"
+        },
+        {
+          "html": "<p>If <var>matchResult</var> is null, return false.</p>"
+        },
+        {
+          "html": "For each property <var>prop</var> of <var>matchResult</var> (a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatternresult\" id=\"ref-for-dictdef-urlpatternresult\">URLPatternResult</a></code>)\nthat is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatterncomponentresult\" id=\"ref-for-dictdef-urlpatterncomponentresult\">URLPatternComponentResult</a></code>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "For each <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry\">entry</a> <var>entry</var> in its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterncomponentresult-groups\" id=\"ref-for-dom-urlpatterncomponentresult-groups\">groups</a></code>,\nthen:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param\" id=\"ref-for-typedef-navigation-param④\">&lt;navigation-param&gt;</a> is a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-key-value\" id=\"ref-for-typedef-navigation-param-key-value②\">&lt;navigation-param-key-value&gt;</a>,\nreturn true if\n<var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key\">key</a> is the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#typedef-ident\" id=\"ref-for-typedef-ident③\">&lt;ident&gt;</a>\nand <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value\">value</a> is the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#string-value\" id=\"ref-for-string-value②\">&lt;string&gt;</a>.</p>"
+                },
+                {
+                  "html": "If <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param\" id=\"ref-for-typedef-navigation-param⑤\">&lt;navigation-param&gt;</a> is a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-function\" id=\"ref-for-typedef-navigation-param-function②\">&lt;navigation-param-function&gt;</a>,\nand <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key①\">key</a> is the function’s <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#typedef-ident\" id=\"ref-for-typedef-ident④\">&lt;ident&gt;</a>,\nthen for each <var>navigationUrl</var> of the\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#current-to-url\" id=\"ref-for-current-to-url①\">current to URL</a>\nand <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#current-from-url\" id=\"ref-for-current-from-url①\">current from URL</a>:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>navigationMatchResult</var> be the result of\n<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" id=\"ref-for-url-pattern-match⑤\">match a URL pattern</a>\ngiven <var>urlPattern</var> and <var>navigationUrl</var>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>navigationMatchResult</var> is null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+                    },
+                    {
+                      "html": "<p>Return true if <var>navigationMatchResult</var>’s\nproperty <var>prop</var>\nhas an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry①\">entry</a>\nwhose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key②\">key</a> is the same as <var>entry</var>’s key\nand whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value①\">value</a> is the same as <var>entry</var>’s value.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "current from URL",
+      "href": "https://drafts.csswg.org/css-navigation-1/#current-from-url",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"current-from-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current from URL</dfn> of a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">document</a> is a URL or null.\nIt is defined as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#documents-navigation-api\" id=\"ref-for-documents-navigation-api\">document’s navigation API</a> of the document is non-null and\nits <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigation-transition\" id=\"ref-for-concept-navigation-transition\">transition</a> is non-null,\nits <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigationtransition-from\" id=\"ref-for-concept-navigationtransition-from\">from entry</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-url\" id=\"ref-for-dom-navigationhistoryentry-url\">url</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#documents-navigation-api\" id=\"ref-for-documents-navigation-api①\">document’s navigation API</a> of the document is non-null and\nits <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-activation\" id=\"ref-for-navigation-activation\">activation</a> is non-null,\nthe document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#has-been-revealed\" id=\"ref-for-has-been-revealed\">has been revealed</a> is false or\nwas false at the start of the current <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task\">task</a>,\nthe activation’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-from\" id=\"ref-for-dom-navigationactivation-from\">from</a></code>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-url\" id=\"ref-for-dom-navigationhistoryentry-url①\">url</a></code>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "current to URL",
+      "href": "https://drafts.csswg.org/css-navigation-1/#current-to-url",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"current-to-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current to URL</dfn> of a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①\">document</a> is a URL or null.\nIt is defined as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#documents-navigation-api\" id=\"ref-for-documents-navigation-api②\">document’s navigation API</a> of the document is non-null and\nits <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigate-event\" id=\"ref-for-ongoing-navigate-event\">ongoing navigate event</a> is non-null:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>if the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/indices.html#event-pageswap\" id=\"ref-for-event-pageswap\">pageswap</a></code> event has fired since that navigation began,\nand its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-pageswapevent-activation\" id=\"ref-for-dom-pageswapevent-activation\">activation</a></code> was non-null,\nand that <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-pageswapevent-activation\" id=\"ref-for-dom-pageswapevent-activation①\">activation</a></code>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-entry\" id=\"ref-for-dom-navigationactivation-entry\">entry</a></code>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-url\" id=\"ref-for-dom-navigationhistoryentry-url②\">url</a></code> is non-null,\nthen that\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-url\" id=\"ref-for-dom-navigationhistoryentry-url③\">url</a></code>.</p>"
+            },
+            {
+              "html": "<p>otherwise, the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#ongoing-navigate-event\" id=\"ref-for-ongoing-navigate-event①\">ongoing navigate event</a>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigateevent-destination\" id=\"ref-for-dom-navigateevent-destination\">destination</a></code>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationdestination-url\" id=\"ref-for-dom-navigationdestination-url\">url</a></code></p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#documents-navigation-api\" id=\"ref-for-documents-navigation-api③\">document’s navigation API</a> of the document is non-null and\nits <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-activation\" id=\"ref-for-navigation-activation①\">activation</a> is non-null,\nthe document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#has-been-revealed\" id=\"ref-for-has-been-revealed①\">has been revealed</a> is false or\nwas false at the start of the current <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task①\">task</a>,\nand the activation’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-entry\" id=\"ref-for-dom-navigationactivation-entry①\">entry</a></code>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-url\" id=\"ref-for-dom-navigationhistoryentry-url④\">url</a></code>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a URL pattern for url-pattern()",
+      "href": "https://drafts.csswg.org/css-navigation-1/#create-a-url-pattern-for-url-pattern",
+      "html": "This function represents a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern⑧\">URL pattern</a> that can be created\nusing the steps of the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-url-pattern-for-url-pattern\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a URL pattern for url-pattern()</dfn> algorithm:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>arg</var> be the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#string-value\" id=\"ref-for-string-value④\">&lt;string&gt;</a> argument to the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern\" id=\"ref-for-funcdef-url-pattern①⓪\">url-pattern()</a> function.</p>"
+        },
+        {
+          "html": "<p>Let <var>baseURL</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#style-resource-base-url\" id=\"ref-for-style-resource-base-url①\">style resource base URL</a> of\nthe rule or declaration block containing the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern\" id=\"ref-for-funcdef-url-pattern①①\">url-pattern()</a> function.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-create\" id=\"ref-for-url-pattern-create①\">create a URL pattern</a> given\n<var>arg</var>, <var>baseURL</var>, and an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "serialize a url-pattern() function",
+      "href": "https://drafts.csswg.org/css-navigation-1/#serialize-a-url-pattern-function",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-url-pattern-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern\" id=\"ref-for-funcdef-url-pattern①⑤\">url-pattern()</a> function</dfn> <var>f</var>,\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-serialize-a-function\" id=\"ref-for-css-serialize-a-function\">serialize a function</a> <var>f</var>,\nusing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-string\" id=\"ref-for-serialize-a-string\">serialize a string</a> on the single argument\nto serialize <var>f</var>’s contents.",
+      "rationale": "To <dfn>"
+    }
+  ]
+}

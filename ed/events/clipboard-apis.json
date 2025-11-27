@@ -5,17 +5,16 @@
   },
   "events": [
     {
-      "type": "clipboardchange",
-      "targets": [
-        "GlobalEventHandlers"
-      ],
       "src": {
-        "format": "dfn",
-        "href": "https://w3c.github.io/clipboard-apis/#eventdef-globaleventhandlers-clipboardchange"
+        "format": "fire an event phrasing",
+        "href": "https://w3c.github.io/clipboard-apis/#ref-for-concept-event-fire"
       },
       "href": "https://w3c.github.io/clipboard-apis/#eventdef-globaleventhandlers-clipboardchange",
-      "interface": "ClipboardEvent",
-      "bubbles": true
+      "type": "clipboardchange",
+      "targets": [
+        "Window"
+      ],
+      "interface": "ClipboardChangeEvent"
     },
     {
       "type": "copy",
