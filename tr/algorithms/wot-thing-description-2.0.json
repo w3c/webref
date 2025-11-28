@@ -1,0 +1,26 @@
+{
+  "spec": {
+    "title": "Web of Things (WoT) Thing Description 2.0",
+    "url": "https://www.w3.org/TR/wot-thing-description-2.0/"
+  },
+  "algorithms": [
+    {
+      "html": "Protocol Binding Specifications contain vocabularies\n          that extend the vocabulary found in the [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/wot-thing-description-2.0/#bib-wot-thing-description\" title=\"Web of Things (WoT) Thing Description\">WOT-THING-DESCRIPTION</a></cite>].\n          This means that the way a TD is consumed and how the\n          interactions happen with the Thing are adapted to such\n          vocabularies. The steps below explain how this process\n          typically looks like.",
+      "rationale": "choose",
+      "steps": [
+        {
+          "html": "<b>Detect the protocol:</b> Upon the activation of a\n              form to execute the operation, the <a href=\"https://www.w3.org/TR/wot-thing-description-2.0/#dfn-consumer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-consumer-21\">Consumer</a>\n              <em class=\"rfc2119\">SHOULD</em> look at the\n              <code>href</code> member and the <code>base</code>\n              (if exists) and identify the protocol."
+        },
+        {
+          "html": "<b>Choose the correct protocol stack:</b> The\n              <a href=\"https://www.w3.org/TR/wot-thing-description-2.0/#dfn-consumer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-consumer-22\">Consumer</a> <em class=\"rfc2119\">SHOULD</em> choose the correct protocol\n              from its protocol software stacks."
+        },
+        {
+          "html": "<b>Validate the forms part of the TD</b>: Using the\n              JSON Schema instances provided in the respective\n              binding specification or through programmatically\n              checking key value pairs, the <a href=\"https://www.w3.org/TR/wot-thing-description-2.0/#dfn-consumer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-consumer-23\">Consumer</a> <em class=\"rfc2119\">MAY</em> validate the respective form terms\n              in order to verify they are correctly specified in\n              the TD instance."
+        },
+        {
+          "html": "<b>Start communication:</b> The <a href=\"https://www.w3.org/TR/wot-thing-description-2.0/#dfn-consumer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-consumer-24\">Consumer</a>\n              <em class=\"rfc2119\">SHOULD</em> send requests for the\n              chosen operation as specified by the form and\n              additional behavior that is expected. These are\n              specified using the different form terms such as\n              <code>subprotocol</code> or other vocabulary terms\n              introduced by the protocol binding. The interaction\n              affordance data exchanged with the Thing <em class=\"rfc2119\">SHOULD</em> be according to the <a href=\"https://www.w3.org/TR/wot-thing-description-2.0/#dfn-data-schema\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-data-schema-3\">Data Schema</a> and\n              <a href=\"https://www.w3.org/TR/wot-thing-description-2.0/#dfn-content-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-content-type-1\">Content Type</a> present\n              in the TD. The Data Schema corresponding to the\n              operation can be found in the Table <a href=\"https://www.w3.org/TR/wot-thing-description-2.0/#table-mapping-op-values-to-data-schemas\" data-matched-text=\"[[[#table-mapping-op-values-to-data-schemas]]]\" class=\"table-ref\" title=\"Mapping op Values to Data Schemas\">Table <bdi class=\"\">28</bdi></a>."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "spec": {
+    "title": "Web of Things (WoT) Binding Registry",
+    "url": "https://www.w3.org/TR/wot-binding-registry/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#title",
+      "level": 1,
+      "title": "Web of Things (WoT) Binding Registry"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "x2-conformance"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "alternateIds": [
+        "x3-terminology"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "registry-definition",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#registry-definition",
+      "level": 2,
+      "title": "Registry Definition",
+      "alternateIds": [
+        "x4-registry-definition"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "entry-format",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#entry-format",
+      "level": 3,
+      "title": "Entry format",
+      "alternateIds": [
+        "x4-1-entry-format"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "lifecycle",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#lifecycle",
+      "level": 3,
+      "title": "Lifecycle",
+      "alternateIds": [
+        "x4-2-lifecycle"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "life-subm",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#life-subm",
+      "level": 4,
+      "title": "Technical submission mechanism",
+      "alternateIds": [
+        "x4-2-1-technical-submission-mechanism"
+      ],
+      "number": "4.2.1"
+    },
+    {
+      "id": "life-stat",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#life-stat",
+      "level": 4,
+      "title": "Status",
+      "alternateIds": [
+        "x4-2-2-status"
+      ],
+      "number": "4.2.2"
+    },
+    {
+      "id": "life-tran",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#life-tran",
+      "level": 4,
+      "title": "Transitioning",
+      "alternateIds": [
+        "x4-2-3-transitioning"
+      ],
+      "number": "4.2.3"
+    },
+    {
+      "id": "life-ver",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#life-ver",
+      "level": 4,
+      "title": "Versioning",
+      "alternateIds": [
+        "x4-2-4-versioning"
+      ],
+      "number": "4.2.4"
+    },
+    {
+      "id": "life-deldep",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#life-deldep",
+      "level": 4,
+      "title": "Deletion and deprecation",
+      "alternateIds": [
+        "x4-2-5-deletion-and-deprecation"
+      ],
+      "number": "4.2.5"
+    },
+    {
+      "id": "ownership",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#ownership",
+      "level": 3,
+      "title": "Ownership",
+      "alternateIds": [
+        "x4-3-ownership"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "own-cust",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#own-cust",
+      "level": 4,
+      "title": "Custodian",
+      "alternateIds": [
+        "x4-3-1-custodian"
+      ],
+      "number": "4.3.1"
+    },
+    {
+      "id": "own-rev",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#own-rev",
+      "level": 4,
+      "title": "Reviewer",
+      "alternateIds": [
+        "x4-3-2-reviewer"
+      ],
+      "number": "4.3.2"
+    },
+    {
+      "id": "submission-requirements",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#submission-requirements",
+      "level": 3,
+      "title": "Submission Requirements",
+      "alternateIds": [
+        "x4-4-submission-requirements"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "req-opmap",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-opmap",
+      "level": 4,
+      "title": "WoT operation",
+      "alternateIds": [
+        "x4-4-1-wot-operation"
+      ],
+      "number": "4.4.1"
+    },
+    {
+      "id": "req-contmap",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-contmap",
+      "level": 4,
+      "title": "ContentType",
+      "alternateIds": [
+        "x4-4-2-contenttype"
+      ],
+      "number": "4.4.2"
+    },
+    {
+      "id": "req-traninit",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-traninit",
+      "level": 4,
+      "title": "Initial entry",
+      "alternateIds": [
+        "x4-4-3-initial-entry"
+      ],
+      "number": "4.4.3"
+    },
+    {
+      "id": "req-changelog",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-changelog",
+      "level": 4,
+      "title": "Changelog",
+      "alternateIds": [
+        "x4-4-4-changelog"
+      ],
+      "number": "4.4.4"
+    },
+    {
+      "id": "req-docsec",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-docsec",
+      "level": 4,
+      "title": "Document Section",
+      "alternateIds": [
+        "x4-4-5-document-section"
+      ],
+      "number": "4.4.5"
+    },
+    {
+      "id": "req-copy",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-copy",
+      "level": 4,
+      "title": "Copyright",
+      "alternateIds": [
+        "x4-4-6-copyright"
+      ],
+      "number": "4.4.6"
+    },
+    {
+      "id": "req-openread",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-openread",
+      "level": 4,
+      "title": "Open to read",
+      "alternateIds": [
+        "x4-4-7-open-to-read"
+      ],
+      "number": "4.4.7"
+    },
+    {
+      "id": "req-openrev",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-openrev",
+      "level": 4,
+      "title": "Reviewer Access",
+      "alternateIds": [
+        "x4-4-8-reviewer-access"
+      ],
+      "number": "4.4.8"
+    },
+    {
+      "id": "req-summ",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-summ",
+      "level": 4,
+      "title": "Summary Document",
+      "alternateIds": [
+        "x4-4-9-summary-document"
+      ],
+      "number": "4.4.9"
+    },
+    {
+      "id": "req-trancurr",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-trancurr",
+      "level": 4,
+      "title": "Transition",
+      "alternateIds": [
+        "x4-4-10-transition"
+      ],
+      "number": "4.4.10"
+    },
+    {
+      "id": "req-content",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-content",
+      "level": 4,
+      "title": "Content",
+      "alternateIds": [
+        "x4-4-11-content"
+      ],
+      "number": "4.4.11"
+    },
+    {
+      "id": "req-docs",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-docs",
+      "level": 4,
+      "title": "Documents",
+      "alternateIds": [
+        "x4-4-12-documents"
+      ],
+      "number": "4.4.12"
+    },
+    {
+      "id": "req-confl",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-confl",
+      "level": 4,
+      "title": "Conflict",
+      "alternateIds": [
+        "x4-4-13-conflict"
+      ],
+      "number": "4.4.13"
+    },
+    {
+      "id": "req-redef",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-redef",
+      "level": 4,
+      "title": "Redefinition",
+      "alternateIds": [
+        "x4-4-14-redefinition"
+      ],
+      "number": "4.4.14"
+    },
+    {
+      "id": "req-deps",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#req-deps",
+      "level": 4,
+      "title": "Dependency",
+      "alternateIds": [
+        "x4-4-15-dependency"
+      ],
+      "number": "4.4.15"
+    },
+    {
+      "id": "registry",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#registry",
+      "level": 2,
+      "title": "Registry",
+      "alternateIds": [
+        "x5-registry"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "a-references"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "a-1-normative-references"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/wot-binding-registry/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "a-2-informative-references"
+      ],
+      "number": "A.2"
+    }
+  ]
+}

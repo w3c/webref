@@ -1,0 +1,1459 @@
+{
+  "spec": {
+    "title": "Web of Things (WoT) Thing Description 2.0",
+    "url": "https://www.w3.org/TR/wot-thing-description-2.0/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#title",
+      "level": 1,
+      "title": "Web of Things (WoT) Thing Description 2.0"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "introduction-td",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#introduction-td",
+      "level": 3,
+      "title": "Thing Description",
+      "alternateIds": [
+        "x1-1-thing-description"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "introduction-tm",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#introduction-tm",
+      "level": 3,
+      "title": "Thing Model",
+      "alternateIds": [
+        "x1-2-thing-model"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "x2-conformance"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "alternateIds": [
+        "x3-terminology"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "namespaces",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#namespaces",
+      "level": 2,
+      "title": "Namespaces",
+      "alternateIds": [
+        "x4-namespaces"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "sec-vocabulary-definition",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-vocabulary-definition",
+      "level": 2,
+      "title": "TD Information Model",
+      "alternateIds": [
+        "x5-td-information-model"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "overview",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#overview",
+      "level": 3,
+      "title": "Overview",
+      "alternateIds": [
+        "x5-1-overview"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "preliminary-definitions",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#preliminary-definitions",
+      "level": 3,
+      "title": "Preliminaries",
+      "alternateIds": [
+        "x5-2-preliminaries"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "class-definitions",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#class-definitions",
+      "level": 3,
+      "title": "Class Definitions",
+      "alternateIds": [
+        "x5-3-class-definitions"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "sec-core-vocabulary-definition",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-core-vocabulary-definition",
+      "level": 4,
+      "title": "Core Vocabulary Definitions",
+      "alternateIds": [
+        "x5-3-1-core-vocabulary-definitions"
+      ],
+      "number": "5.3.1"
+    },
+    {
+      "id": "thing",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#thing",
+      "level": 5,
+      "title": "Thing",
+      "alternateIds": [
+        "x5-3-1-1-thing"
+      ],
+      "number": "5.3.1.1"
+    },
+    {
+      "id": "interactionaffordance",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#interactionaffordance",
+      "level": 5,
+      "title": "InteractionAffordance",
+      "alternateIds": [
+        "x5-3-1-2-interactionaffordance"
+      ],
+      "number": "5.3.1.2"
+    },
+    {
+      "id": "propertyaffordance",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#propertyaffordance",
+      "level": 5,
+      "title": "PropertyAffordance",
+      "alternateIds": [
+        "x5-3-1-3-propertyaffordance"
+      ],
+      "number": "5.3.1.3"
+    },
+    {
+      "id": "actionaffordance",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#actionaffordance",
+      "level": 5,
+      "title": "ActionAffordance",
+      "alternateIds": [
+        "x5-3-1-4-actionaffordance"
+      ],
+      "number": "5.3.1.4"
+    },
+    {
+      "id": "eventaffordance",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#eventaffordance",
+      "level": 5,
+      "title": "EventAffordance",
+      "alternateIds": [
+        "x5-3-1-5-eventaffordance"
+      ],
+      "number": "5.3.1.5"
+    },
+    {
+      "id": "versioninfo",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#versioninfo",
+      "level": 5,
+      "title": "VersionInfo",
+      "alternateIds": [
+        "x5-3-1-6-versioninfo"
+      ],
+      "number": "5.3.1.6"
+    },
+    {
+      "id": "multilanguage",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#multilanguage",
+      "level": 5,
+      "title": "MultiLanguage",
+      "alternateIds": [
+        "x5-3-1-7-multilanguage"
+      ],
+      "number": "5.3.1.7"
+    },
+    {
+      "id": "sec-data-schema-vocabulary-definition",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-data-schema-vocabulary-definition",
+      "level": 4,
+      "title": "Data Schema Vocabulary Definitions",
+      "alternateIds": [
+        "x5-3-2-data-schema-vocabulary-definitions"
+      ],
+      "number": "5.3.2"
+    },
+    {
+      "id": "dataschema",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#dataschema",
+      "level": 5,
+      "title": "DataSchema",
+      "alternateIds": [
+        "x5-3-2-1-dataschema"
+      ],
+      "number": "5.3.2.1"
+    },
+    {
+      "id": "arrayschema",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#arrayschema",
+      "level": 5,
+      "title": "ArraySchema",
+      "alternateIds": [
+        "x5-3-2-2-arrayschema"
+      ],
+      "number": "5.3.2.2"
+    },
+    {
+      "id": "booleanschema",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#booleanschema",
+      "level": 5,
+      "title": "BooleanSchema",
+      "alternateIds": [
+        "x5-3-2-3-booleanschema"
+      ],
+      "number": "5.3.2.3"
+    },
+    {
+      "id": "numberschema",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#numberschema",
+      "level": 5,
+      "title": "NumberSchema",
+      "alternateIds": [
+        "x5-3-2-4-numberschema"
+      ],
+      "number": "5.3.2.4"
+    },
+    {
+      "id": "integerschema",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#integerschema",
+      "level": 5,
+      "title": "IntegerSchema",
+      "alternateIds": [
+        "x5-3-2-5-integerschema"
+      ],
+      "number": "5.3.2.5"
+    },
+    {
+      "id": "objectschema",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#objectschema",
+      "level": 5,
+      "title": "ObjectSchema",
+      "alternateIds": [
+        "x5-3-2-6-objectschema"
+      ],
+      "number": "5.3.2.6"
+    },
+    {
+      "id": "stringschema",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#stringschema",
+      "level": 5,
+      "title": "StringSchema",
+      "alternateIds": [
+        "x5-3-2-7-stringschema"
+      ],
+      "number": "5.3.2.7"
+    },
+    {
+      "id": "nullschema",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#nullschema",
+      "level": 5,
+      "title": "NullSchema",
+      "alternateIds": [
+        "x5-3-2-8-nullschema"
+      ],
+      "number": "5.3.2.8"
+    },
+    {
+      "id": "sec-security-vocabulary-definition",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-security-vocabulary-definition",
+      "level": 4,
+      "title": "Security Vocabulary Definitions",
+      "alternateIds": [
+        "x5-3-3-security-vocabulary-definitions"
+      ],
+      "number": "5.3.3"
+    },
+    {
+      "id": "securityscheme",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#securityscheme",
+      "level": 5,
+      "title": "SecurityScheme",
+      "alternateIds": [
+        "x5-3-3-1-securityscheme"
+      ],
+      "number": "5.3.3.1"
+    },
+    {
+      "id": "nosecurityscheme",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#nosecurityscheme",
+      "level": 5,
+      "title": "NoSecurityScheme",
+      "alternateIds": [
+        "x5-3-3-2-nosecurityscheme"
+      ],
+      "number": "5.3.3.2"
+    },
+    {
+      "id": "autosecurityscheme",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#autosecurityscheme",
+      "level": 5,
+      "title": "AutoSecurityScheme",
+      "alternateIds": [
+        "x5-3-3-3-autosecurityscheme"
+      ],
+      "number": "5.3.3.3"
+    },
+    {
+      "id": "combosecurityscheme",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#combosecurityscheme",
+      "level": 5,
+      "title": "ComboSecurityScheme",
+      "alternateIds": [
+        "x5-3-3-4-combosecurityscheme"
+      ],
+      "number": "5.3.3.4"
+    },
+    {
+      "id": "basicsecurityscheme",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#basicsecurityscheme",
+      "level": 5,
+      "title": "BasicSecurityScheme",
+      "alternateIds": [
+        "x5-3-3-5-basicsecurityscheme"
+      ],
+      "number": "5.3.3.5"
+    },
+    {
+      "id": "digestsecurityscheme",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#digestsecurityscheme",
+      "level": 5,
+      "title": "DigestSecurityScheme",
+      "alternateIds": [
+        "x5-3-3-6-digestsecurityscheme"
+      ],
+      "number": "5.3.3.6"
+    },
+    {
+      "id": "apikeysecurityscheme",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#apikeysecurityscheme",
+      "level": 5,
+      "title": "APIKeySecurityScheme",
+      "alternateIds": [
+        "x5-3-3-7-apikeysecurityscheme"
+      ],
+      "number": "5.3.3.7"
+    },
+    {
+      "id": "bearersecurityscheme",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#bearersecurityscheme",
+      "level": 5,
+      "title": "BearerSecurityScheme",
+      "alternateIds": [
+        "x5-3-3-8-bearersecurityscheme"
+      ],
+      "number": "5.3.3.8"
+    },
+    {
+      "id": "psksecurityscheme",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#psksecurityscheme",
+      "level": 5,
+      "title": "PSKSecurityScheme",
+      "alternateIds": [
+        "x5-3-3-9-psksecurityscheme"
+      ],
+      "number": "5.3.3.9"
+    },
+    {
+      "id": "oauth2securityscheme",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#oauth2securityscheme",
+      "level": 5,
+      "title": "OAuth2SecurityScheme",
+      "alternateIds": [
+        "x5-3-3-10-oauth2securityscheme"
+      ],
+      "number": "5.3.3.10"
+    },
+    {
+      "id": "sec-hypermedia-vocabulary-definition",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-hypermedia-vocabulary-definition",
+      "level": 4,
+      "title": "Hypermedia Controls Vocabulary Definitions",
+      "alternateIds": [
+        "x5-3-4-hypermedia-controls-vocabulary-definitions"
+      ],
+      "number": "5.3.4"
+    },
+    {
+      "id": "link",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#link",
+      "level": 5,
+      "title": "Link",
+      "alternateIds": [
+        "x5-3-4-1-link"
+      ],
+      "number": "5.3.4.1"
+    },
+    {
+      "id": "form",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#form",
+      "level": 5,
+      "title": "Form",
+      "alternateIds": [
+        "x5-3-4-2-form"
+      ],
+      "number": "5.3.4.2"
+    },
+    {
+      "id": "sec-op-data-schema-mapping",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-op-data-schema-mapping",
+      "level": 6,
+      "title": "Mapping op Values to Data Schemas",
+      "alternateIds": [
+        "x5-3-4-2-1-mapping-op-values-to-data-schemas"
+      ],
+      "number": "5.3.4.2.1"
+    },
+    {
+      "id": "sec-response-usage",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-response-usage",
+      "level": 6,
+      "title": "Response-related Terms Usage",
+      "alternateIds": [
+        "x5-3-4-2-2-response-related-terms-usage"
+      ],
+      "number": "5.3.4.2.2"
+    },
+    {
+      "id": "expectedresponse",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#expectedresponse",
+      "level": 5,
+      "title": "ExpectedResponse",
+      "alternateIds": [
+        "x5-3-4-3-expectedresponse"
+      ],
+      "number": "5.3.4.3"
+    },
+    {
+      "id": "additionalexpectedresponse",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#additionalexpectedresponse",
+      "level": 5,
+      "title": "AdditionalExpectedResponse",
+      "alternateIds": [
+        "x5-3-4-4-additionalexpectedresponse"
+      ],
+      "number": "5.3.4.4"
+    },
+    {
+      "id": "sec-default-values",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-default-values",
+      "level": 3,
+      "title": "Default Value Definitions",
+      "alternateIds": [
+        "x5-4-default-value-definitions"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "sec-td-serialization",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-td-serialization",
+      "level": 2,
+      "title": "TD Representation Format",
+      "alternateIds": [
+        "x6-td-representation-format"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "td-basic-types-mapping",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#td-basic-types-mapping",
+      "level": 3,
+      "title": "Mapping to JSON Types",
+      "alternateIds": [
+        "x6-1-mapping-to-json-types"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "omitting-default-values",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#omitting-default-values",
+      "level": 3,
+      "title": "Omitting Default Values",
+      "alternateIds": [
+        "x6-2-omitting-default-values"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "td-class-serialization",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#td-class-serialization",
+      "level": 3,
+      "title": "Information Model Serialization",
+      "alternateIds": [
+        "x6-3-information-model-serialization"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "sec-thing-as-a-whole-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-thing-as-a-whole-json",
+      "level": 4,
+      "title": "Thing Root Object",
+      "alternateIds": [
+        "x6-3-1-thing-root-object"
+      ],
+      "number": "6.3.1"
+    },
+    {
+      "id": "titles-descriptions-serialization-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#titles-descriptions-serialization-json",
+      "level": 4,
+      "title": "Human-Readable Metadata",
+      "alternateIds": [
+        "x6-3-2-human-readable-metadata"
+      ],
+      "number": "6.3.2"
+    },
+    {
+      "id": "version-serialization-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#version-serialization-json",
+      "level": 4,
+      "title": "version",
+      "alternateIds": [
+        "x6-3-3-version"
+      ],
+      "number": "6.3.3"
+    },
+    {
+      "id": "security-serialization-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#security-serialization-json",
+      "level": 4,
+      "title": "securityDefinitions and security",
+      "alternateIds": [
+        "x6-3-4-securitydefinitions-and-security"
+      ],
+      "number": "6.3.4"
+    },
+    {
+      "id": "security-multiple",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#security-multiple",
+      "level": 5,
+      "title": "Multiple Security Definitions",
+      "alternateIds": [
+        "x6-3-4-1-multiple-security-definitions"
+      ],
+      "number": "6.3.4.1"
+    },
+    {
+      "id": "security-security-forms",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#security-security-forms",
+      "level": 5,
+      "title": "security in Forms",
+      "alternateIds": [
+        "x6-3-4-2-security-in-forms"
+      ],
+      "number": "6.3.4.2"
+    },
+    {
+      "id": "security-comboSecurityScheme",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#security-comboSecurityScheme",
+      "level": 5,
+      "title": "ComboSecurityScheme",
+      "alternateIds": [
+        "x6-3-4-3-combosecurityscheme"
+      ],
+      "number": "6.3.4.3"
+    },
+    {
+      "id": "security-oauth2",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#security-oauth2",
+      "level": 5,
+      "title": "OAuth 2.0 usage",
+      "alternateIds": [
+        "x6-3-4-4-oauth-2-0-usage"
+      ],
+      "number": "6.3.4.4"
+    },
+    {
+      "id": "security-apikey",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#security-apikey",
+      "level": 5,
+      "title": "API key usage",
+      "alternateIds": [
+        "x6-3-4-5-api-key-usage"
+      ],
+      "number": "6.3.4.5"
+    },
+    {
+      "id": "property-serialization-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#property-serialization-json",
+      "level": 4,
+      "title": "properties",
+      "alternateIds": [
+        "x6-3-5-properties"
+      ],
+      "number": "6.3.5"
+    },
+    {
+      "id": "action-serialization-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#action-serialization-json",
+      "level": 4,
+      "title": "actions",
+      "alternateIds": [
+        "x6-3-6-actions"
+      ],
+      "number": "6.3.6"
+    },
+    {
+      "id": "event-serialization-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#event-serialization-json",
+      "level": 4,
+      "title": "events",
+      "alternateIds": [
+        "x6-3-7-events"
+      ],
+      "number": "6.3.7"
+    },
+    {
+      "id": "link-serialization-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#link-serialization-json",
+      "level": 4,
+      "title": "links",
+      "alternateIds": [
+        "x6-3-8-links"
+      ],
+      "number": "6.3.8"
+    },
+    {
+      "id": "form-serialization-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#form-serialization-json",
+      "level": 4,
+      "title": "forms",
+      "alternateIds": [
+        "x6-3-9-forms"
+      ],
+      "number": "6.3.9"
+    },
+    {
+      "id": "form-uriVariables",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#form-uriVariables",
+      "level": 5,
+      "title": "uriVariables",
+      "alternateIds": [
+        "x6-3-9-1-urivariables"
+      ],
+      "number": "6.3.9.1"
+    },
+    {
+      "id": "form-contentType",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#form-contentType",
+      "level": 5,
+      "title": "contentType",
+      "alternateIds": [
+        "x6-3-9-2-contenttype"
+      ],
+      "number": "6.3.9.2"
+    },
+    {
+      "id": "form-response",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#form-response",
+      "level": 5,
+      "title": "response",
+      "alternateIds": [
+        "x6-3-9-3-response"
+      ],
+      "number": "6.3.9.3"
+    },
+    {
+      "id": "form-additionalResponses",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#form-additionalResponses",
+      "level": 5,
+      "title": "additionalResponses",
+      "alternateIds": [
+        "x6-3-9-4-additionalresponses"
+      ],
+      "number": "6.3.9.4"
+    },
+    {
+      "id": "form-contentMediaType-contentEncoding",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#form-contentMediaType-contentEncoding",
+      "level": 5,
+      "title": "contentMediaType and contentEncoding",
+      "alternateIds": [
+        "x6-3-9-5-contentmediatype-and-contentencoding"
+      ],
+      "number": "6.3.9.5"
+    },
+    {
+      "id": "form-top-level",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#form-top-level",
+      "level": 5,
+      "title": "Top level forms",
+      "alternateIds": [
+        "x6-3-9-6-top-level-forms"
+      ],
+      "number": "6.3.9.6"
+    },
+    {
+      "id": "data-schema-serialization-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#data-schema-serialization-json",
+      "level": 4,
+      "title": "Data Schemas",
+      "alternateIds": [
+        "x6-3-10-data-schemas"
+      ],
+      "number": "6.3.10"
+    },
+    {
+      "id": "identification-serialization-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#identification-serialization-json",
+      "level": 3,
+      "title": "Identification",
+      "alternateIds": [
+        "x6-4-identification"
+      ],
+      "number": "6.4"
+    },
+    {
+      "id": "validation-serialization-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#validation-serialization-json",
+      "level": 3,
+      "title": "Validation",
+      "alternateIds": [
+        "x6-5-validation"
+      ],
+      "number": "6.5"
+    },
+    {
+      "id": "minimal-validation-serialization-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#minimal-validation-serialization-json",
+      "level": 4,
+      "title": "Minimal Validation",
+      "alternateIds": [
+        "x6-5-1-minimal-validation"
+      ],
+      "number": "6.5.1"
+    },
+    {
+      "id": "basic-validation-serialization-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#basic-validation-serialization-json",
+      "level": 4,
+      "title": "Basic Validation",
+      "alternateIds": [
+        "x6-5-2-basic-validation"
+      ],
+      "number": "6.5.2"
+    },
+    {
+      "id": "full-validation-serialization-json",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#full-validation-serialization-json",
+      "level": 4,
+      "title": "Full Validation",
+      "alternateIds": [
+        "x6-5-3-full-validation"
+      ],
+      "number": "6.5.3"
+    },
+    {
+      "id": "sec-context-extensions",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-context-extensions",
+      "level": 2,
+      "title": "TD Context Extensions",
+      "alternateIds": [
+        "x7-td-context-extensions"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "semantic-annotations",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#semantic-annotations",
+      "level": 3,
+      "title": "Semantic Annotations",
+      "alternateIds": [
+        "x7-1-semantic-annotations"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "semantic-annotations-example-version-units",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#semantic-annotations-example-version-units",
+      "level": 4,
+      "title": "Example I: Additional Basic Metadata",
+      "alternateIds": [
+        "x7-1-1-example-i-additional-basic-metadata"
+      ],
+      "number": "7.1.1"
+    },
+    {
+      "id": "semantic-annotations-example-state",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#semantic-annotations-example-state",
+      "level": 4,
+      "title": "Example II: State Annotations",
+      "alternateIds": [
+        "x7-1-2-example-ii-state-annotations"
+      ],
+      "number": "7.1.2"
+    },
+    {
+      "id": "semantic-annotations-example-geoloc",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#semantic-annotations-example-geoloc",
+      "level": 4,
+      "title": "Example III: Geolocation Annotations",
+      "alternateIds": [
+        "x7-1-3-example-iii-geolocation-annotations"
+      ],
+      "number": "7.1.3"
+    },
+    {
+      "id": "adding-bindings",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#adding-bindings",
+      "level": 3,
+      "title": "Adding Bindings",
+      "alternateIds": [
+        "x7-2-adding-bindings"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "adding-security-schemes",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#adding-security-schemes",
+      "level": 3,
+      "title": "Adding Security Schemes",
+      "alternateIds": [
+        "x7-3-adding-security-schemes"
+      ],
+      "number": "7.3"
+    },
+    {
+      "id": "bindings",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#bindings",
+      "level": 2,
+      "title": "Bindings",
+      "alternateIds": [
+        "x8-bindings"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "binding-mechanisms",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#binding-mechanisms",
+      "level": 3,
+      "title": "Binding Mechanisms",
+      "alternateIds": [
+        "x8-1-binding-mechanisms"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "protocol-bindings",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#protocol-bindings",
+      "level": 4,
+      "title": "Protocol Bindings",
+      "alternateIds": [
+        "x8-1-1-protocol-bindings"
+      ],
+      "number": "8.1.1"
+    },
+    {
+      "id": "subprotocols",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#subprotocols",
+      "level": 5,
+      "title": "Subprotocols",
+      "alternateIds": [
+        "x8-1-1-1-subprotocols"
+      ],
+      "number": "8.1.1.1"
+    },
+    {
+      "id": "using-a-thing-description-with-a-protocol-binding",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#using-a-thing-description-with-a-protocol-binding",
+      "level": 5,
+      "title": "Using a Thing Description with a Protocol Binding",
+      "alternateIds": [
+        "x8-1-1-2-using-a-thing-description-with-a-protocol-binding"
+      ],
+      "number": "8.1.1.2"
+    },
+    {
+      "id": "payload-bindings",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#payload-bindings",
+      "level": 4,
+      "title": "Payload Bindings",
+      "alternateIds": [
+        "x8-1-2-payload-bindings"
+      ],
+      "number": "8.1.2"
+    },
+    {
+      "id": "payload-bindings-contentType",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#payload-bindings-contentType",
+      "level": 5,
+      "title": "Content Types",
+      "alternateIds": [
+        "x8-1-2-1-content-types"
+      ],
+      "number": "8.1.2.1"
+    },
+    {
+      "id": "payload-bindings-dataschema",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#payload-bindings-dataschema",
+      "level": 5,
+      "title": "Data Schemas",
+      "alternateIds": [
+        "x8-1-2-2-data-schemas"
+      ],
+      "number": "8.1.2.2"
+    },
+    {
+      "id": "bindings-combinations",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#bindings-combinations",
+      "level": 4,
+      "title": "Protocol and Payload Bindings",
+      "alternateIds": [
+        "x8-1-3-protocol-and-payload-bindings"
+      ],
+      "number": "8.1.3"
+    },
+    {
+      "id": "profile-relationship",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#profile-relationship",
+      "level": 3,
+      "title": "Relationship to Profiles",
+      "alternateIds": [
+        "x8-2-relationship-to-profiles"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "behavior",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#behavior",
+      "level": 2,
+      "title": "Behavioral Assertions",
+      "alternateIds": [
+        "x9-behavioral-assertions"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "behavior-security",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#behavior-security",
+      "level": 3,
+      "title": "Security Configurations",
+      "alternateIds": [
+        "x9-1-security-configurations"
+      ],
+      "number": "9.1"
+    },
+    {
+      "id": "behavior-data",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#behavior-data",
+      "level": 3,
+      "title": "Data Schemas",
+      "alternateIds": [
+        "x9-2-data-schemas"
+      ],
+      "number": "9.2"
+    },
+    {
+      "id": "thing-model",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#thing-model",
+      "level": 2,
+      "title": "10. Thing Model",
+      "alternateIds": [
+        "x10-thing-model"
+      ]
+    },
+    {
+      "id": "thing-model-concept",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#thing-model-concept",
+      "level": 3,
+      "title": "Basic Concept",
+      "alternateIds": [
+        "x10-1-basic-concept"
+      ],
+      "number": "10.1"
+    },
+    {
+      "id": "thing-model-declaration",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#thing-model-declaration",
+      "level": 3,
+      "title": "Thing Model Declaration",
+      "alternateIds": [
+        "x10-2-thing-model-declaration"
+      ],
+      "number": "10.2"
+    },
+    {
+      "id": "thing-model-tools",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#thing-model-tools",
+      "level": 3,
+      "title": "Modeling Tools",
+      "alternateIds": [
+        "x10-3-modeling-tools"
+      ],
+      "number": "10.3"
+    },
+    {
+      "id": "thing-model-versioning",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#thing-model-versioning",
+      "level": 4,
+      "title": "Versioning",
+      "alternateIds": [
+        "x10-3-1-versioning"
+      ],
+      "number": "10.3.1"
+    },
+    {
+      "id": "thing-model-extension-import",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#thing-model-extension-import",
+      "level": 4,
+      "title": "Extension and Import",
+      "alternateIds": [
+        "x10-3-2-extension-and-import"
+      ],
+      "number": "10.3.2"
+    },
+    {
+      "id": "thing-model-composition",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#thing-model-composition",
+      "level": 4,
+      "title": "Composition",
+      "alternateIds": [
+        "x10-3-3-composition"
+      ],
+      "number": "10.3.3"
+    },
+    {
+      "id": "thing-model-td-optional",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#thing-model-td-optional",
+      "level": 4,
+      "title": "tm:optional",
+      "alternateIds": [
+        "x10-3-4-tm-optional"
+      ],
+      "number": "10.3.4"
+    },
+    {
+      "id": "thing-model-td-placeholder",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#thing-model-td-placeholder",
+      "level": 4,
+      "title": "Placeholder",
+      "alternateIds": [
+        "x10-3-5-placeholder"
+      ],
+      "number": "10.3.5"
+    },
+    {
+      "id": "thing-model-td-generation",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#thing-model-td-generation",
+      "level": 3,
+      "title": "Derivation of Thing Description Instances",
+      "alternateIds": [
+        "x10-4-derivation-of-thing-description-instances"
+      ],
+      "number": "10.4"
+    },
+    {
+      "id": "thing-model-td-generation-examples",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#thing-model-td-generation-examples",
+      "level": 3,
+      "title": "Examples",
+      "alternateIds": [
+        "x10-5-examples"
+      ],
+      "number": "10.5"
+    },
+    {
+      "id": "sec-security-consideration",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-security-consideration",
+      "level": 2,
+      "title": "11. Security Considerations",
+      "alternateIds": [
+        "x11-security-considerations"
+      ]
+    },
+    {
+      "id": "sec-security-consideration-TD-tampering",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-security-consideration-TD-tampering",
+      "level": 3,
+      "title": "TD Interception and Tampering",
+      "alternateIds": [
+        "x11-1-td-interception-and-tampering"
+      ],
+      "number": "11.1"
+    },
+    {
+      "id": "sec-security-consideration-context-tampering",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-security-consideration-context-tampering",
+      "level": 3,
+      "title": "Context Interception and Tampering",
+      "alternateIds": [
+        "x11-2-context-interception-and-tampering"
+      ],
+      "number": "11.2"
+    },
+    {
+      "id": "security-consideration-access-duration",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#security-consideration-access-duration",
+      "level": 3,
+      "title": "Limited Duration Accesses",
+      "alternateIds": [
+        "x11-3-limited-duration-accesses"
+      ],
+      "number": "11.3"
+    },
+    {
+      "id": "sec-security-consideration-vulnerability-auditing",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-security-consideration-vulnerability-auditing",
+      "level": 3,
+      "title": "Vulnerability Auditing",
+      "alternateIds": [
+        "x11-4-vulnerability-auditing"
+      ],
+      "number": "11.4"
+    },
+    {
+      "id": "sec-security-consideration-script-injection",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-security-consideration-script-injection",
+      "level": 3,
+      "title": "Script Injection",
+      "alternateIds": [
+        "x11-5-script-injection"
+      ],
+      "number": "11.5"
+    },
+    {
+      "id": "sec-security-consideration-execution",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-security-consideration-execution",
+      "level": 3,
+      "title": "JSON Parsing",
+      "alternateIds": [
+        "x11-6-json-parsing"
+      ],
+      "number": "11.6"
+    },
+    {
+      "id": "sec-security-consideration-jsonld-expansion",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-security-consideration-jsonld-expansion",
+      "level": 3,
+      "title": "JSON-LD Expansion",
+      "alternateIds": [
+        "x11-7-json-ld-expansion"
+      ],
+      "number": "11.7"
+    },
+    {
+      "id": "sec-privacy-consideration",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-privacy-consideration",
+      "level": 2,
+      "title": "12. Privacy Considerations",
+      "alternateIds": [
+        "x12-privacy-considerations"
+      ]
+    },
+    {
+      "id": "sec-privacy-consideration-context",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-privacy-consideration-context",
+      "level": 3,
+      "title": "Context Fetching",
+      "alternateIds": [
+        "x12-1-context-fetching"
+      ],
+      "number": "12.1"
+    },
+    {
+      "id": "sec-privacy-consideration-id",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-privacy-consideration-id",
+      "level": 3,
+      "title": "Immutable Identifiers",
+      "alternateIds": [
+        "x12-2-immutable-identifiers"
+      ],
+      "number": "12.2"
+    },
+    {
+      "id": "sec-privacy-consideration-fingerprint",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-privacy-consideration-fingerprint",
+      "level": 3,
+      "title": "Fingerprinting",
+      "alternateIds": [
+        "x12-3-fingerprinting"
+      ],
+      "number": "12.3"
+    },
+    {
+      "id": "sec-privacy-consideration-id-metadata",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-privacy-consideration-id-metadata",
+      "level": 3,
+      "title": "ID Metadata",
+      "alternateIds": [
+        "x12-4-id-metadata"
+      ],
+      "number": "12.4"
+    },
+    {
+      "id": "sec-privacy-consideration-global-id-risk",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-privacy-consideration-global-id-risk",
+      "level": 3,
+      "title": "Globally Unique Identifiers",
+      "alternateIds": [
+        "x12-5-globally-unique-identifiers"
+      ],
+      "number": "12.5"
+    },
+    {
+      "id": "sec-privacy-consideration-inferencing",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-privacy-consideration-inferencing",
+      "level": 3,
+      "title": "Inferencing of Personally Identifiable Information",
+      "alternateIds": [
+        "x12-6-inferencing-of-personally-identifiable-information"
+      ],
+      "number": "12.6"
+    },
+    {
+      "id": "iana-section",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#iana-section",
+      "level": 2,
+      "title": "13. IANA Considerations",
+      "alternateIds": [
+        "x13-iana-considerations"
+      ]
+    },
+    {
+      "id": "media-type-section",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#media-type-section",
+      "level": 3,
+      "title": "application/td+json Media Type Registration",
+      "alternateIds": [
+        "x13-1-application-td-json-media-type-registration"
+      ],
+      "number": "13.1"
+    },
+    {
+      "id": "media-type-section-tm",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#media-type-section-tm",
+      "level": 3,
+      "title": "application/tm+json Media Type Registration",
+      "alternateIds": [
+        "x13-2-application-tm-json-media-type-registration"
+      ],
+      "number": "13.2"
+    },
+    {
+      "id": "content-format-section",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#content-format-section",
+      "level": 3,
+      "title": "CoAP Content-Format Registration",
+      "alternateIds": [
+        "x13-3-coap-content-format-registration"
+      ],
+      "number": "13.3"
+    },
+    {
+      "id": "wot-thing-description",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#wot-thing-description",
+      "level": 4,
+      "title": "WoT Thing Description",
+      "alternateIds": [
+        "x13-3-1-wot-thing-description"
+      ],
+      "number": "13.3.1"
+    },
+    {
+      "id": "wot-thing-model",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#wot-thing-model",
+      "level": 4,
+      "title": "WoT Thing Model",
+      "alternateIds": [
+        "x13-3-2-wot-thing-model"
+      ],
+      "number": "13.3.2"
+    },
+    {
+      "id": "example-tds-bindings",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#example-tds-bindings",
+      "level": 2,
+      "title": "Example Thing Description Instances with Protocol Bindings",
+      "alternateIds": [
+        "a-example-thing-description-instances-with-protocol-bindings"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "myLampThing-example-coap",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#myLampThing-example-coap",
+      "level": 3,
+      "title": "MyLampThing Example with CoAP Protocol Binding",
+      "alternateIds": [
+        "a-1-mylampthing-example-with-coap-protocol-binding"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "myLightSensor-example-mqtt",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#myLightSensor-example-mqtt",
+      "level": 3,
+      "title": "MyIlluminanceSensor Example with MQTT Protocol Binding",
+      "alternateIds": [
+        "a-2-myilluminancesensor-example-with-mqtt-protocol-binding"
+      ],
+      "number": "A.2"
+    },
+    {
+      "id": "sensor-example-webhook",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sensor-example-webhook",
+      "level": 3,
+      "title": "Webhook Event Example",
+      "alternateIds": [
+        "a-3-webhook-event-example"
+      ],
+      "number": "A.3"
+    },
+    {
+      "id": "lamp-example-multiprotocol-simple",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#lamp-example-multiprotocol-simple",
+      "level": 3,
+      "title": "Lamp Thing with HTTP, CoAP, and MQTT Protocol Bindings",
+      "alternateIds": [
+        "a-4-lamp-thing-with-http-coap-and-mqtt-protocol-bindings"
+      ],
+      "number": "A.4"
+    },
+    {
+      "id": "lamp-example-multiprotocol-complex",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#lamp-example-multiprotocol-complex",
+      "level": 3,
+      "title": "Lamp Thing with mixture of HTTP, CoAP, and MQTT Protocol Bindings",
+      "alternateIds": [
+        "a-5-lamp-thing-with-mixture-of-http-coap-and-mqtt-protocol-bindings"
+      ],
+      "number": "A.5"
+    },
+    {
+      "id": "json-schema-for-validation",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#json-schema-for-validation",
+      "level": 2,
+      "title": "JSON Schema for TD Instance Validation",
+      "alternateIds": [
+        "b-json-schema-for-td-instance-validation"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "contentType-usage",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#contentType-usage",
+      "level": 2,
+      "title": "contentType usage in Thing Descriptions",
+      "alternateIds": [
+        "c-contenttype-usage-in-thing-descriptions"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "json-ld-ctx-usage",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#json-ld-ctx-usage",
+      "level": 2,
+      "title": "JSON-LD Context Usage",
+      "alternateIds": [
+        "d-json-ld-context-usage"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "sec-payload-examples",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#sec-payload-examples",
+      "level": 2,
+      "title": "Examples of Payloads and Data Schemas from IoT Platforms and Standards",
+      "alternateIds": [
+        "e-examples-of-payloads-and-data-schemas-from-iot-platforms-and-standards"
+      ],
+      "number": "E"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#changes",
+      "level": 2,
+      "title": "Recent Specification Changes",
+      "alternateIds": [
+        "f-recent-specification-changes"
+      ],
+      "number": "F"
+    },
+    {
+      "id": "changes-from-the-recommendation-05-december-2023",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#changes-from-the-recommendation-05-december-2023",
+      "level": 3,
+      "title": "Changes from the Recommendation 05 December 2023",
+      "alternateIds": [
+        "changes-from-rec-2023"
+      ],
+      "number": "F.1"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "g-acknowledgements"
+      ],
+      "number": "G"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "h-references"
+      ],
+      "number": "H"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "h-1-normative-references"
+      ],
+      "number": "H.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/wot-thing-description-2.0/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "h-2-informative-references"
+      ],
+      "number": "H.2"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-11-27T01:36:40.923Z",
+  "date": "2025-11-28T01:55:08.877Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -34,6 +34,7 @@
       "css-gcpm-4",
       "css-images-5",
       "css-link-params-1",
+      "css-navigation-1",
       "css-page-4",
       "css-shapes-2",
       "css-size-adjust-1",
@@ -52,9 +53,8 @@
       "anchors",
       "body-tracking",
       "model-element",
-      "raw-camera-access",
       "webxr-plane-detection",
-      "webxr-meshing",
+      "raw-camera-access",
       "real-world-meshing",
       "infra",
       "mimesniff",
@@ -135,6 +135,7 @@
       "tc39-intl-duration-format",
       "tc39-intl-locale-info",
       "tc39-iterator-sequencing",
+      "tc39-joint-iteration",
       "tc39-json-parse-with-source",
       "tc39-math-sum",
       "tc39-nonextensible-applies-to-private",
@@ -173,7 +174,6 @@
       "web-share-target",
       "webextensions",
       "webrtc-ice",
-      "wot-binding-registry",
       "wasm-core-2-fork-branch-hinting",
       "wasm-js-api-2-fork-content-security-policy",
       "wasm-js-api-2-fork-esm-integration",
@@ -717,8 +717,10 @@
       "WOFF",
       "WOFF2",
       "wot-architecture11",
+      "wot-binding-registry",
       "wot-discovery",
       "wot-profile",
+      "wot-thing-description-2.0",
       "wot-thing-description11",
       "xml-entity-names",
       "xhr"
@@ -747,10 +749,10 @@
     ]
   },
   "stats": {
-    "crawled": 400,
-    "errors": 0
+    "crawled": 402,
+    "errors": 8
   },
-  "crawler": "reffy-20.0.2",
+  "crawler": "reffy-20.0.3",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -796,7 +798,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "27 November 2025",
+      "date": "28 November 2025",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -916,7 +918,8 @@
       "dfns": "dfns/accelerometer.json",
       "headings": "headings/accelerometer.json",
       "ids": "ids/accelerometer.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/accelerometer/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 2)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/accname-1.2/",
@@ -981,7 +984,8 @@
       "dfns": "dfns/accname-1.2.json",
       "headings": "headings/accname-1.2.json",
       "ids": "ids/accname-1.2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/accname-1.2/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 3)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/act-rules-format-1.1/",
@@ -1155,11 +1159,11 @@
       ],
       "crawled": "https://www.w3.org/TR/appmanifest/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 03 Sep 2025 00:46:52 GMT"
+        "lastModified": "Thu, 27 Nov 2025 11:05:23 GMT"
       },
       "generator": "respec",
-      "date": "03 September 2025",
-      "revision": "2d457e2c92df0ff33bd65dc24c5aa55d5a744e91",
+      "date": "27 November 2025",
+      "revision": "6d104beb1e1f1c8d55203ce22b3821b02edd8efc",
       "algorithms": "algorithms/appmanifest.json",
       "links": "links/appmanifest.json",
       "refs": "refs/appmanifest.json",
@@ -1291,7 +1295,8 @@
       "dfns": "dfns/audio-session.json",
       "headings": "headings/audio-session.json",
       "ids": "ids/audio-session.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/audio-session/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 8)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/audiobooks/",
@@ -1476,7 +1481,8 @@
       "dfns": "dfns/badging.json",
       "headings": "headings/badging.json",
       "ids": "ids/badging.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/badging/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 11)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/baggage/",
@@ -1529,7 +1535,8 @@
       "refs": "refs/baggage.json",
       "headings": "headings/baggage.json",
       "ids": "ids/baggage.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/baggage/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 12)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/battery-status/",
@@ -1833,7 +1840,8 @@
       "dfns": "dfns/cid-1.0.json",
       "headings": "headings/cid-1.0.json",
       "ids": "ids/cid-1.0.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/cid-1.0/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 17)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/clear-site-data/",
@@ -2222,7 +2230,8 @@
       "dfns": "dfns/core-aam-1.2.json",
       "headings": "headings/core-aam-1.2.json",
       "ids": "ids/core-aam-1.2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/core-aam-1.2/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 23)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/credential-management-1/",
@@ -2737,7 +2746,8 @@
       "dfns": "dfns/css-align-3.json",
       "headings": "headings/css-align-3.json",
       "ids": "ids/css-align-3.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/css-align-3/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 31)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-anchor-position-1/",
@@ -10845,11 +10855,11 @@
       ],
       "crawled": "https://www.w3.org/TR/digital-credentials/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 08 Nov 2025 22:51:31 GMT"
+        "lastModified": "Thu, 27 Nov 2025 12:31:13 GMT"
       },
       "generator": "respec",
-      "date": "08 November 2025",
-      "revision": "cb6b3e9604c372956717f95c66f1103a93b18ccd",
+      "date": "27 November 2025",
+      "revision": "f8da72b08c6fdee4374ca813edf4a59faa986b45",
       "algorithms": "algorithms/digital-credentials.json",
       "links": "links/digital-credentials.json",
       "refs": "refs/digital-credentials.json",
@@ -26004,6 +26014,63 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/wot-binding-registry/",
+      "seriesComposition": "full",
+      "shortname": "wot-binding-registry",
+      "series": {
+        "shortname": "wot-binding-registry",
+        "currentSpecification": "wot-binding-registry",
+        "title": "Web of Things (WoT) Binding Registry",
+        "shortTitle": "WoT Bindings Registry",
+        "releaseUrl": "https://www.w3.org/TR/wot-binding-registry/",
+        "nightlyUrl": "https://w3c.github.io/wot-binding-registry/"
+      },
+      "shortTitle": "WoT Bindings Registry",
+      "formerNames": [
+        "wot-bindings-registry"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web of Things Working Group",
+          "url": "https://www.w3.org/WoT/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/wot-binding-registry/",
+        "status": "Draft Registry",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/wot-binding-registry/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/wot-binding-registry",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Web of Things (WoT) Binding Registry",
+      "source": "w3c",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/wot-binding-registry/",
+        "https://w3c.github.io/wot-binding-registry/"
+      ],
+      "crawled": "https://www.w3.org/TR/wot-binding-registry/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 03 Nov 2025 11:03:55 GMT"
+      },
+      "generator": "respec",
+      "date": "04 November 2025",
+      "links": "links/wot-binding-registry.json",
+      "refs": "refs/wot-binding-registry.json",
+      "dfns": "dfns/wot-binding-registry.json",
+      "headings": "headings/wot-binding-registry.json",
+      "ids": "ids/wot-binding-registry.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/wot-discovery/",
       "seriesComposition": "full",
       "shortname": "wot-discovery",
@@ -26109,6 +26176,61 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/wot-thing-description-2.0/",
+      "seriesComposition": "full",
+      "shortname": "wot-thing-description-2.0",
+      "series": {
+        "shortname": "wot-thing-description",
+        "currentSpecification": "wot-thing-description11",
+        "title": "Web of Things (WoT) Thing Description",
+        "shortTitle": "WoT",
+        "releaseUrl": "https://www.w3.org/TR/wot-thing-description/",
+        "nightlyUrl": "https://w3c.github.io/wot-thing-description/"
+      },
+      "seriesVersion": "2.0",
+      "seriesPrevious": "wot-thing-description11",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web of Things Working Group",
+          "url": "https://www.w3.org/WoT/wg/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/wot-thing-description-2.0/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/wot-thing-description/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/wot-thing-description",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Web of Things (WoT) Thing Description 2.0",
+      "source": "w3c",
+      "shortTitle": "WoT 2.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/wot-thing-description-2.0/",
+        "https://w3c.github.io/wot-thing-description/"
+      ],
+      "crawled": "https://www.w3.org/TR/wot-thing-description-2.0/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 03 Nov 2025 08:39:47 GMT"
+      },
+      "date": "04 November 2025",
+      "algorithms": "algorithms/wot-thing-description-2.0.json",
+      "links": "links/wot-thing-description-2.0.json",
+      "dfns": "dfns/wot-thing-description-2.0.json",
+      "headings": "headings/wot-thing-description-2.0.json",
+      "ids": "ids/wot-thing-description-2.0.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/wot-thing-description11/",
       "seriesComposition": "full",
       "shortname": "wot-thing-description11",
@@ -26121,6 +26243,7 @@
         "nightlyUrl": "https://w3c.github.io/wot-thing-description/"
       },
       "seriesVersion": "1.1",
+      "seriesNext": "wot-thing-description-2.0",
       "organization": "W3C",
       "groups": [
         {
