@@ -535,6 +535,7 @@
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://svgwg.org/svg2-draft/": {},
       "https://w3c.github.io/uievents/": {},
+      "https://w3c.github.io/webdriver-bidi/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://wicg.github.io/overscroll-scrollend-events/": {},
       "https://wpt.fyi/results/css/cssom-view/CaretPosition-001.html": {},
@@ -997,8 +998,8 @@
         "anchors": [
           "concept-document-window",
           "window",
-          "windowproxy",
           "window-bc",
+          "windowproxy",
           "dom-open",
           "dom-document-defaultview"
         ]
@@ -1042,8 +1043,15 @@
           "mouseevent"
         ]
       },
+      "https://w3c.github.io/webdriver-bidi/": {
+        "anchors": [
+          "webdriver-bidi-emulated-total-screen-area",
+          "webdriver-bidi-emulated-available-screen-area"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
+          "this",
           "idl-promise",
           "idl-unrestricted-double",
           "NewObject",
@@ -1052,7 +1060,6 @@
           "idl-undefined",
           "idl-long",
           "idl-double",
-          "this",
           "dfn-convert-ecmascript-to-idl-value",
           "Exposed",
           "idl-boolean",
