@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-11-28T18:47:57.161Z",
+  "date": "2025-11-29T00:55:36.978Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -32,7 +32,7 @@
   },
   "stats": {
     "crawled": 726,
-    "errors": 2
+    "errors": 3
   },
   "crawler": "reffy-20.0.3",
   "results": [
@@ -37059,7 +37059,8 @@
       "dfns": "dfns/ttml-imsc1.2.json",
       "headings": "headings/ttml-imsc1.2.json",
       "ids": "ids/ttml-imsc1.2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://www.w3.org/TR/ttml-imsc1.2/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 626)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/ttml-imsc1.3/",
