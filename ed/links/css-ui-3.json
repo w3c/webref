@@ -80,6 +80,7 @@
       "http://wpt.live/css/css-ui/outline-auto-dynamic-change.html": {},
       "http://wpt.live/css/css-ui/outline-auto-width-001.html": {},
       "http://wpt.live/css/css-ui/outline-color-001.html": {},
+      "http://wpt.live/css/css-ui/outline-dynamic.html": {},
       "http://wpt.live/css/css-ui/outline-negative-offset-composited-scroll.html": {},
       "http://wpt.live/css/css-ui/outline-offset-001.html": {},
       "http://wpt.live/css/css-ui/outline-offset-table-001.html": {},
@@ -190,11 +191,14 @@
           "feat=css-resize",
           "feat=text-overflow",
           "feat=css3-cursors",
+          "feat=css3-cursors-grab",
           "feat=css3-cursors-newer",
           "feat=css-caret-color"
         ]
       },
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/appearance": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/cursor": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/ime-mode": {},
@@ -203,7 +207,9 @@
       "https://developer.mozilla.org/en-US/docs/Web/CSS/outline-offset": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/outline-style": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/outline-width": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/resize": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/user-select": {},
       "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/cursor": {},
       "https://drafts.csswg.org/css-backgrounds-3/": {
         "anchors": [
@@ -424,6 +430,7 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/outline-auto-dynamic-change.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/outline-auto-width-001.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/outline-color-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/outline-dynamic.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/outline-negative-offset-composited-scroll.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/outline-offset-001.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/outline-offset-table-001.html": {},
@@ -632,6 +639,7 @@
       "https://wpt.fyi/results/css/css-ui/outline-auto-dynamic-change.html": {},
       "https://wpt.fyi/results/css/css-ui/outline-auto-width-001.html": {},
       "https://wpt.fyi/results/css/css-ui/outline-color-001.html": {},
+      "https://wpt.fyi/results/css/css-ui/outline-dynamic.html": {},
       "https://wpt.fyi/results/css/css-ui/outline-negative-offset-composited-scroll.html": {},
       "https://wpt.fyi/results/css/css-ui/outline-offset-001.html": {},
       "https://wpt.fyi/results/css/css-ui/outline-offset-table-001.html": {},
@@ -819,9 +827,16 @@
     "autolinks": {
       "https://drafts.csswg.org/css-backgrounds-3/": {
         "anchors": [
+          "propdef-border-left-width",
+          "propdef-border-right-width",
+          "propdef-border-top-width",
+          "propdef-border-bottom-width",
           "typedef-line-width",
           "valdef-line-style-none",
-          "propdef-border-radius"
+          "propdef-border-style",
+          "propdef-border-radius",
+          "propdef-border-width",
+          "propdef-background-image"
         ]
       },
       "https://drafts.csswg.org/css-color-4/": {
@@ -847,7 +862,10 @@
       },
       "https://drafts.csswg.org/css-overflow-3/": {
         "anchors": [
-          "scroll-container"
+          "scroll-container",
+          "propdef-overflow",
+          "valdef-overflow-visible",
+          "valdef-overflow-clip"
         ]
       },
       "https://drafts.csswg.org/css-pseudo-4/": {
@@ -888,22 +906,15 @@
           "propdef-min-width",
           "propdef-padding-left",
           "propdef-padding-right",
-          "propdef-border-left-width",
-          "propdef-border-right-width",
           "propdef-max-width",
           "propdef-min-height",
           "propdef-padding-top",
           "propdef-padding-bottom",
-          "propdef-border-top-width",
-          "propdef-border-bottom-width",
           "propdef-max-height",
           "content-width",
           "propdef-margin-left",
           "content-height",
           "propdef-margin-top",
-          "propdef-border-style",
-          "propdef-border-width",
-          "propdef-background-image",
           "propdef-display",
           "propdef-visibility"
         ]
@@ -943,11 +954,6 @@
       "https://www.w3.org/TR/CSS2/visudet.html": {
         "anchors": [
           "the-width-property"
-        ]
-      },
-      "https://www.w3.org/TR/CSS2/visufx.html": {
-        "anchors": [
-          "propdef-overflow"
         ]
       },
       "https://www.w3.org/TR/CSS2/visuren.html": {

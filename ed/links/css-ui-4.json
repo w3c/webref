@@ -881,6 +881,7 @@
       "http://wpt.live/css/css-ui/cursor-calc-hotspot.html": {},
       "http://wpt.live/css/css-ui/inert-attribute-overriding.html": {},
       "http://wpt.live/css/css-ui/inheritance.html": {},
+      "http://wpt.live/css/css-ui/interactivity-inert-all.html": {},
       "http://wpt.live/css/css-ui/interactivity-inert-animated.html": {},
       "http://wpt.live/css/css-ui/interactivity-inert-click.html": {},
       "http://wpt.live/css/css-ui/interactivity-inert-find.html": {},
@@ -924,6 +925,7 @@
       "http://wpt.live/css/css-ui/outline-color-002.html": {},
       "http://wpt.live/css/css-ui/outline-color-003.html": {},
       "http://wpt.live/css/css-ui/outline-color-004.html": {},
+      "http://wpt.live/css/css-ui/outline-dynamic.html": {},
       "http://wpt.live/css/css-ui/outline-negative-offset-composited-scroll.html": {},
       "http://wpt.live/css/css-ui/outline-offset-001.html": {},
       "http://wpt.live/css/css-ui/outline-offset-table-001.html": {},
@@ -1055,6 +1057,7 @@
           "border-radius"
         ]
       },
+      "https://drafts.csswg.org/css-backgrounds-4/": {},
       "https://drafts.csswg.org/css-backgrounds/": {},
       "https://drafts.csswg.org/css-borders-4/": {},
       "https://drafts.csswg.org/css-box-4/": {},
@@ -2113,6 +2116,7 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/cursor-x-y-003-manual.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/inert-attribute-overriding.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/inheritance.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/interactivity-inert-all.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/interactivity-inert-animated.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/interactivity-inert-click.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/interactivity-inert-find.html": {},
@@ -2239,6 +2243,7 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/outline-color-002.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/outline-color-003.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/outline-color-004.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/outline-dynamic.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/outline-negative-offset-composited-scroll.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/outline-offset-001.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/outline-offset-table-001.html": {},
@@ -3244,6 +3249,7 @@
       "https://wpt.fyi/results/css/css-ui/cursor-calc-hotspot.html": {},
       "https://wpt.fyi/results/css/css-ui/inert-attribute-overriding.html": {},
       "https://wpt.fyi/results/css/css-ui/inheritance.html": {},
+      "https://wpt.fyi/results/css/css-ui/interactivity-inert-all.html": {},
       "https://wpt.fyi/results/css/css-ui/interactivity-inert-animated.html": {},
       "https://wpt.fyi/results/css/css-ui/interactivity-inert-click.html": {},
       "https://wpt.fyi/results/css/css-ui/interactivity-inert-find.html": {},
@@ -3287,6 +3293,7 @@
       "https://wpt.fyi/results/css/css-ui/outline-color-002.html": {},
       "https://wpt.fyi/results/css/css-ui/outline-color-003.html": {},
       "https://wpt.fyi/results/css/css-ui/outline-color-004.html": {},
+      "https://wpt.fyi/results/css/css-ui/outline-dynamic.html": {},
       "https://wpt.fyi/results/css/css-ui/outline-negative-offset-composited-scroll.html": {},
       "https://wpt.fyi/results/css/css-ui/outline-offset-001.html": {},
       "https://wpt.fyi/results/css/css-ui/outline-offset-table-001.html": {},
@@ -3459,32 +3466,29 @@
       },
       "https://drafts.csswg.org/css-backgrounds-3/": {
         "anchors": [
-          "propdef-border-radius",
-          "typedef-line-width",
-          "propdef-border-width",
-          "typedef-line-style",
-          "propdef-background-image",
           "propdef-background-color",
-          "propdef-border",
           "propdef-background-attachment",
           "propdef-background-position",
           "propdef-background-clip",
           "propdef-background-origin",
-          "propdef-background-size",
-          "propdef-border-image-source",
-          "propdef-border-image-slice",
-          "propdef-border-image-width",
-          "propdef-border-image-outset",
-          "propdef-border-image-repeat",
-          "valdef-line-style-none",
-          "valdef-line-style-hidden"
+          "propdef-background-size"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds-4/": {
+        "anchors": [
+          "propdef-background-image"
         ]
       },
       "https://drafts.csswg.org/css-borders-4/": {
         "anchors": [
+          "propdef-border-radius",
           "propdef-corner-shape",
+          "typedef-line-width",
+          "propdef-border-width",
+          "typedef-line-style",
           "propdef-border-top-color",
           "propdef-box-shadow",
+          "propdef-border",
           "propdef-border-top-style",
           "propdef-border-top-width",
           "propdef-border-right-color",
@@ -3508,6 +3512,11 @@
           "propdef-border-block-end-width",
           "propdef-border-inline-start-width",
           "propdef-border-inline-end-width",
+          "propdef-border-image-source",
+          "propdef-border-image-slice",
+          "propdef-border-image-width",
+          "propdef-border-image-outset",
+          "propdef-border-image-repeat",
           "propdef-border-top-left-radius",
           "propdef-border-top-right-radius",
           "propdef-border-bottom-right-radius",
@@ -3515,7 +3524,9 @@
           "propdef-border-start-start-radius",
           "propdef-border-start-end-radius",
           "propdef-border-end-start-radius",
-          "propdef-border-end-end-radius"
+          "propdef-border-end-end-radius",
+          "valdef-line-style-none",
+          "valdef-line-style-hidden"
         ]
       },
       "https://drafts.csswg.org/css-box-4/": {
@@ -3674,7 +3685,6 @@
       },
       "https://drafts.csswg.org/css2/": {
         "anchors": [
-          "selectordef-active",
           "propdef-right",
           "propdef-bottom",
           "propdef-min-width",
@@ -3687,6 +3697,7 @@
       "https://drafts.csswg.org/selectors-4/": {
         "anchors": [
           "focus-visible-pseudo",
+          "active-pseudo",
           "focus-pseudo",
           "host-language",
           "checked-pseudo",
