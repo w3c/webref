@@ -402,23 +402,29 @@
     {
       "name": "PushManager/permissionState()",
       "href": "https://www.w3.org/TR/push-api/#dom-pushmanager-permissionstate",
-      "html": "The <dfn data-dfn-for=\"PushManager\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-pushmanager-permissionstate\" data-idl=\"operation\" data-title=\"permissionState()\" data-type=\"Promise\" data-lt=\"permissionState()|permissionState(options)\" data-local-lt=\"PushManager.permissionState|PushManager.permissionState()|permissionState\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>permissionState()</code></dfn> method when invoked <em class=\"rfc2119\">MUST</em> run\n        the following steps:",
+      "html": "The <dfn data-dfn-for=\"PushManager\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-pushmanager-permissionstate\" data-idl=\"operation\" data-title=\"permissionState()\" data-type=\"Promise\" data-lt=\"permissionState()|permissionState(options)\" data-local-lt=\"PushManager.permissionState|PushManager.permissionState()|permissionState\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>permissionState()</code></dfn> method steps are:",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+          "html": "<p>\n            Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>.\n          </p>"
         },
         {
-          "html": "Return <var>promise</var> and continue the following steps asynchronously."
+          "html": "<p>\n            Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>.\n          </p>"
         },
         {
-          "html": "Let <var>descriptor</var> be a new <a data-link-type=\"dictionary\" data-lt=\"PermissionDescriptor\" href=\"https://www.w3.org/TR/permissions/#dom-permissiondescriptor\"><code>PermissionDescriptor</code></a> with the\n        <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/permissions/#dom-permissiondescriptor-name\"><code>name</code></a> initialized to \"push\"."
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">In parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>\n                Let <var>state</var> be \"<code>push</code>\"'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-state\">permission state</a>.\n              </p>"
+            },
+            {
+              "html": "<p>\n                <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#networking-task-source\">networking task source</a> with <var>global</var> to resolve\n                <var>promise</var> with <var>state</var>.\n              </p>"
+            }
+          ]
         },
         {
-          "html": "let <var>state</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions/#dfn-permission-state\">permission state</a> of <var>descriptor</var> and the result."
-        },
-        {
-          "html": "Resolve <var>promise</var> with <var>state</var>."
+          "html": "<p>\n            Return <var>promise</var>.\n          </p>"
         }
       ]
     },
