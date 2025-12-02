@@ -50,6 +50,12 @@
           "html": "<p>\n              Let <var>sharedKey</var> be the result of performing the import key operation specified by\n              <var>normalizedSharedKeyAlgorithm</var> using \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-4\"><code>raw-secret</code></a>\" as\n              <var>format</var>, the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-EncapsulatedBits-sharedKey\" class=\"internalDFN\" id=\"ref-for-dfn-EncapsulatedBits-sharedKey-1\"><code>sharedKey</code></a> field of\n              <var>encapsulatedBits</var> as <var>keyData</var>, <var>sharedKeyAlgorithm</var> as\n              <var>algorithm</var> and using\n              <var>extractable</var> and <var>usages</var>.\n            </p>"
         },
         {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal\n              slot of <var>sharedKey</var> to <var>extractable</var>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n              <var>sharedKey</var> to the <a href=\"https://www.w3.org/TR/webcrypto-2/#concept-normalized-usages\">normalized value</a>\n              of <var>usages</var>.\n            </p>"
+        },
+        {
           "html": "<p>\n              Let <var>encapsulatedKey</var> be a new <a data-link-type=\"idl\" data-lt=\"EncapsulatedKey\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-EncapsulatedKey\" class=\"internalDFN\" id=\"ref-for-dfn-EncapsulatedKey-3\"><code>EncapsulatedKey</code></a> dictionary\n              with <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-EncapsulatedKey-sharedKey\" class=\"internalDFN\" id=\"ref-for-dfn-EncapsulatedKey-sharedKey-1\"><code>sharedKey</code></a> set to <var>sharedKey</var>\n              and <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-EncapsulatedKey-ciphertext\" class=\"internalDFN\" id=\"ref-for-dfn-EncapsulatedKey-ciphertext-1\"><code>ciphertext</code></a> set to the\n              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-EncapsulatedBits-ciphertext\" class=\"internalDFN\" id=\"ref-for-dfn-EncapsulatedBits-ciphertext-1\"><code>ciphertext</code></a> field of <var>encapsulatedBits</var>.\n            </p>"
         },
         {
@@ -157,6 +163,12 @@
         },
         {
           "html": "<p>\n              Let <var>sharedKey</var> be the result of performing the import key operation specified by\n              <var>normalizedSharedKeyAlgorithm</var> using \"<a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-keyformat-raw-secret\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-raw-secret-5\"><code>raw-secret</code></a>\" as\n              <var>format</var>, the <var>decapsulatedBits</var> as <var>keyData</var>, <var>sharedKeyAlgorithm</var> as\n              <var>algorithm</var> and using\n              <var>extractable</var> and <var>usages</var>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal\n              slot of <var>sharedKey</var> to <var>extractable</var>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n              <var>sharedKey</var> to the <a href=\"https://www.w3.org/TR/webcrypto-2/#concept-normalized-usages\">normalized value</a>\n              of <var>usages</var>.\n            </p>"
         },
         {
           "html": "<p>\n              <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\">Queue a global task</a> on the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-crypto-task-source\">crypto task source</a>,\n              given <var>realm</var>'s global object, to perform the remaining steps.\n            </p>"
@@ -608,10 +620,7 @@
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": ""
-                    },
-                    {
-                      "html": "<p>\n                        If <var>usages</var> contains an entry which is not\n                        \"<code>encapsulateKey</code>\" or \"<code>encapsulateBits</code>\"\n                        then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                        <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n                      </p>"
+                      "html": "<p>\n                      If <var>usages</var> contains an entry which is not\n                      \"<code>encapsulateKey</code>\" or \"<code>encapsulateBits</code>\"\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n                    </p>"
                     },
                     {
                       "html": "<p>\n                      Let <var>spki</var> be the result of running the\n                      <a href=\"https://www.w3.org/TR/webcrypto-2/#concept-parse-a-spki\">parse a subjectPublicKeyInfo</a>\n                      algorithm over <var>keyData</var>.\n                    </p>"
@@ -669,12 +678,6 @@
                     },
                     {
                       "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-algorithm\"><code>[[algorithm]]</code></a>\n                      internal slot of <var>key</var> to <var>algorithm</var>.\n                    </p>"
-                    },
-                    {
-                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal\n                      slot of <var>key</var> to <var>extractable</var>.\n                    </p>"
-                    },
-                    {
-                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n                      <var>key</var> to <var>usages</var>.\n                    </p>"
                     }
                   ]
                 },
@@ -684,10 +687,7 @@
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": ""
-                    },
-                    {
-                      "html": "<p>\n                        If <var>usages</var> contains an entry which is not\n                        \"<code>encapsulateKey</code>\" or \"<code>encapsulateBits</code>\"\n                        then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                        <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n                      </p>"
+                      "html": "<p>\n                      If <var>usages</var> contains an entry which is not\n                      \"<code>decapsulateKey</code>\" or \"<code>decapsulateBits</code>\"\n                      then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n                      <a data-link-type=\"exception\" data-lt=\"SyntaxError\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>.\n                    </p>"
                     },
                     {
                       "html": "<p>\n                      Let <var>privateKeyInfo</var> be the result of running the\n                      <a href=\"https://www.w3.org/TR/webcrypto-2/#concept-parse-a-privateKeyInfo\">parse a privateKeyInfo</a>\n                      algorithm over <var>keyData</var>.\n                    </p>"
@@ -748,12 +748,6 @@
                     },
                     {
                       "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-algorithm\"><code>[[algorithm]]</code></a>\n                      internal slot of <var>key</var> to <var>algorithm</var>.\n                    </p>"
-                    },
-                    {
-                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal\n                      slot of <var>key</var> to <var>extractable</var>.\n                    </p>"
-                    },
-                    {
-                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n                      <var>key</var> to <var>usages</var>.\n                    </p>"
                     }
                   ]
                 },
@@ -883,7 +877,7 @@
                                   "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              ML-KEM private key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-5\"><code>priv</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded seed.\n                            </p>"
                                 },
                                 {
-                                  "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>Key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\".\n                            </p>"
+                                  "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\".\n                            </p>"
                                 },
                                 {
                                   "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-1\"><code>pub</code></a> attribute of <var>jwk</var>\n                              does not contain the base64url encoded public key\n                              representing the ML-KEM public key\n                              corresponding to <var>key</var>,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
@@ -902,7 +896,7 @@
                                   "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              ML-KEM public key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-3\"><code>pub</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded public key.\n                            </p>"
                                 },
                                 {
-                                  "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>Key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\".\n                            </p>"
+                                  "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\".\n                            </p>"
                                 }
                               ]
                             }
@@ -1323,12 +1317,6 @@
                     },
                     {
                       "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-algorithm\"><code>[[algorithm]]</code></a>\n                      internal slot of <var>key</var> to <var>algorithm</var>.\n                    </p>"
-                    },
-                    {
-                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal\n                      slot of <var>key</var> to <var>extractable</var>.\n                    </p>"
-                    },
-                    {
-                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n                      <var>key</var> to <var>usages</var>.\n                    </p>"
                     }
                   ]
                 },
@@ -1399,12 +1387,6 @@
                     },
                     {
                       "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-algorithm\"><code>[[algorithm]]</code></a>\n                      internal slot of <var>key</var> to <var>algorithm</var>.\n                    </p>"
-                    },
-                    {
-                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal\n                      slot of <var>key</var> to <var>extractable</var>.\n                    </p>"
-                    },
-                    {
-                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n                      <var>key</var> to <var>usages</var>.\n                    </p>"
                     }
                   ]
                 },
@@ -1528,7 +1510,7 @@
                                   "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              ML-DSA private key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-11\"><code>priv</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded seed.\n                            </p>"
                                 },
                                 {
-                                  "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>Key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\".\n                            </p>"
+                                  "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\".\n                            </p>"
                                 },
                                 {
                                   "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-5\"><code>pub</code></a> attribute of <var>jwk</var>\n                              does not contain the base64url encoded public key\n                              representing the ML-DSA public key\n                              corresponding to <var>key</var>,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
@@ -1547,7 +1529,7 @@
                                   "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              ML-DSA public key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-7\"><code>pub</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded public key.\n                            </p>"
                                 },
                                 {
-                                  "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>Key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\".\n                            </p>"
+                                  "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\".\n                            </p>"
                                 }
                               ]
                             }
@@ -2007,12 +1989,6 @@
                     },
                     {
                       "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-algorithm\"><code>[[algorithm]]</code></a>\n                      internal slot of <var>key</var> to <var>algorithm</var>.\n                    </p>"
-                    },
-                    {
-                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal\n                      slot of <var>key</var> to <var>extractable</var>.\n                    </p>"
-                    },
-                    {
-                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n                      <var>key</var> to <var>usages</var>.\n                    </p>"
                     }
                   ]
                 },
@@ -2119,12 +2095,6 @@
                     },
                     {
                       "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-algorithm\"><code>[[algorithm]]</code></a>\n                      internal slot of <var>key</var> to <var>algorithm</var>.\n                    </p>"
-                    },
-                    {
-                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal\n                      slot of <var>key</var> to <var>extractable</var>.\n                    </p>"
-                    },
-                    {
-                      "html": "<p>\n                      Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-usages\"><code>[[usages]]</code></a> internal slot of\n                      <var>key</var> to <var>usages</var>.\n                    </p>"
                     }
                   ]
                 },
@@ -2245,7 +2215,7 @@
                                   "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              SLH-DSA private key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-priv\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-priv-17\"><code>priv</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded private key.\n                            </p>"
                                 },
                                 {
-                                  "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>Key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\".\n                            </p>"
+                                  "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-private\"><code>private</code></a>\".\n                            </p>"
                                 },
                                 {
                                   "html": "<p>\n                              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-9\"><code>pub</code></a> attribute of <var>jwk</var>\n                              does not contain the base64url encoded public key\n                              representing the SLH-DSA public key\n                              corresponding to <var>key</var>,\n                              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-link-type=\"exception\" data-lt=\"DataError\" href=\"https://webidl.spec.whatwg.org/#dataerror\"><code>DataError</code></a>.\n                            </p>"
@@ -2264,7 +2234,7 @@
                                   "html": "<p>\n                              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object that represents the\n                              SLH-DSA public key identified by interpreting the\n                              <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dom-jsonwebkey-pub\" class=\"internalDFN\" id=\"ref-for-dom-jsonwebkey-pub-11\"><code>pub</code></a> attribute of <var>jwk</var>\n                              as a base64url encoded public key.\n                            </p>"
                                 },
                                 {
-                                  "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>Key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\".\n                            </p>"
+                                  "html": "<p>\n                              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a>\n                              internal slot of <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-public\"><code>public</code></a>\".\n                            </p>"
                                 }
                               ]
                             }
@@ -2670,6 +2640,9 @@
           "html": "<p>\n              Let <var>key</var> be a new\n              <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object representing the\n              generated AES key.\n            </p>"
         },
         {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot of\n              <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-secret\"><code>secret</code></a>\".\n            </p>"
+        },
+        {
           "html": "<p>\n              Let <var>algorithm</var> be a new\n              <a data-link-type=\"dictionary\" data-lt=\"AesKeyAlgorithm\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-AesKeyAlgorithm\"><code>AesKeyAlgorithm</code></a>.\n            </p>"
         },
         {
@@ -2890,7 +2863,7 @@
                       "html": "<p>\n                      Set the <code>ext</code> attribute of <var>jwk</var> to equal the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal slot\n                      of <var>key</var>.\n                    </p>"
                     },
                     {
-                      "html": "<p>\n                      Let <var>result</var> be the result of converting <var>jwk</var>\n                      to an ECMAScript Object, as defined by [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-webidl\" title=\"Web IDL Standard\">WebIDL</a></cite>].\n                    </p>"
+                      "html": "<p>\n                      Let <var>result</var> be <var>jwk</var>.\n                    </p>"
                     }
                   ]
                 },
@@ -2991,6 +2964,9 @@
         },
         {
           "html": "<p>\n              Let <var>key</var> be a new\n              <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object representing the\n              generated key.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot of\n              <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-secret\"><code>secret</code></a>\".\n            </p>"
         },
         {
           "html": "<p>\n              Let <var>algorithm</var> be a new\n              <a data-link-type=\"dictionary\" data-lt=\"KeyAlgorithm\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-KeyAlgorithm\"><code>KeyAlgorithm</code></a>.\n            </p>"
@@ -3100,6 +3076,9 @@
           "html": "<p>\n              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a>\n              object representing a key with value <var>data</var>.\n            </p>"
         },
         {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot of\n              <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-secret\"><code>secret</code></a>\".\n            </p>"
+        },
+        {
           "html": "<p>\n              Let <var>algorithm</var> be a new\n              <a data-link-type=\"dictionary\" data-lt=\"KeyAlgorithm\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-KeyAlgorithm\"><code>KeyAlgorithm</code></a>.\n            </p>"
         },
         {
@@ -3163,7 +3142,7 @@
                       "html": "<p>\n                      Set the <code>ext</code> attribute of <var>jwk</var> to equal the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal slot\n                      of <var>key</var>.\n                    </p>"
                     },
                     {
-                      "html": "<p>\n                      Let <var>result</var> be the result of converting <var>jwk</var>\n                      to an ECMAScript Object, as defined by [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-webidl\" title=\"Web IDL Standard\">WebIDL</a></cite>].\n                    </p>"
+                      "html": "<p>\n                      Let <var>result</var> be <var>jwk</var>.\n                    </p>"
                     }
                   ]
                 },
@@ -3229,10 +3208,10 @@
           "html": "<p>\n              Let <var>length</var> be the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-CShakeParams-length\" class=\"internalDFN\" id=\"ref-for-dfn-CShakeParams-length-2\"><code>length</code></a> member of\n              <var>normalizedAlgorithm</var>.\n            </p>"
         },
         {
-          "html": "<p>\n              Let <var>functionName</var> be the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-CShakeParams-functionName\" class=\"internalDFN\" id=\"ref-for-dfn-CShakeParams-functionName-2\"><code>functionName</code></a> member of\n              <var>normalizedAlgorithm</var> if present or the empty octet\n              string otherwise.\n            </p>"
+          "html": "<p>\n              Let <var>functionName</var> be the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-CShakeParams-functionName\" class=\"internalDFN\" id=\"ref-for-dfn-CShakeParams-functionName-3\"><code>functionName</code></a> member of\n              <var>normalizedAlgorithm</var> if present or the empty octet\n              string otherwise.\n            </p>"
         },
         {
-          "html": "<p>\n              Let <var>customization</var> be the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-CShakeParams-customization\" class=\"internalDFN\" id=\"ref-for-dfn-CShakeParams-customization-2\"><code>customization</code></a> member of\n              <var>normalizedAlgorithm</var> if present or the empty octet\n              string otherwise.\n            </p>"
+          "html": "<p>\n              Let <var>customization</var> be the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-CShakeParams-customization\" class=\"internalDFN\" id=\"ref-for-dfn-CShakeParams-customization-3\"><code>customization</code></a> member of\n              <var>normalizedAlgorithm</var> if present or the empty octet\n              string otherwise.\n            </p>"
         },
         {
           "html": "<dl class=\"switch\">\n              <dt>\n                If the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of\n                <var>normalizedAlgorithm</var> is a case-sensitive string match for\n                \"<code>cSHAKE128</code>\":\n              </dt>\n              <dd>\n                Let <var>result</var> be the result of performing the cSHAKE128 function\n                defined in Section 3 of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-nist-sp800-185\" title=\"NIST Special Publication 800-185: SHA-3 Derived Functions: cSHAKE, KMAC, TupleHash and ParallelHash\">NIST-SP800-185</a></cite>] using\n                <var>message</var> as the <var>X</var> input parameter,\n                <var>length</var> as the <var>L</var> input parameter,\n                <var>functionName</var> as the <var>N</var> input parameter, and\n                <var>customization</var> as the <var>S</var> input parameter.\n              </dd>\n              <dt>\n                If the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of\n                <var>normalizedAlgorithm</var> is a case-sensitive string match for\n                \"<code>cSHAKE256</code>\":\n              </dt>\n              <dd>\n                Let <var>result</var> be the result of performing the cSHAKE256 function\n                defined in Section 3 of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-nist-sp800-185\" title=\"NIST Special Publication 800-185: SHA-3 Derived Functions: cSHAKE, KMAC, TupleHash and ParallelHash\">NIST-SP800-185</a></cite>] using\n                <var>message</var> as the <var>X</var> input parameter,\n                <var>length</var> as the <var>L</var> input parameter,\n                <var>functionName</var> as the <var>N</var> input parameter, and\n                <var>customization</var> as the <var>S</var> input parameter.\n              </dd>\n            </dl>",
@@ -3369,10 +3348,13 @@
           "html": "<p>\n              Let <var>key</var> be a new\n              <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a> object representing the\n              generated key.\n            </p>"
         },
         {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot of\n              <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-secret\"><code>secret</code></a>\".\n            </p>"
+        },
+        {
           "html": "<p>\n              Let <var>algorithm</var> be a new\n              <a data-link-type=\"idl\" data-lt=\"KmacKeyAlgorithm\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacKeyAlgorithm\" class=\"internalDFN\" id=\"ref-for-dfn-KmacKeyAlgorithm-2\"><code>KmacKeyAlgorithm</code></a>.\n            </p>"
         },
         {
-          "html": "<p>\n              Set the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keyalgorithm-name\"><code>name</code></a> attribute of\n              <var>algorithm</var> to \"<code>KMAC</code>\".\n            </p>"
+          "html": "<p>\n              Set the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keyalgorithm-name\"><code>name</code></a> attribute of\n              <var>algorithm</var> to the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of <var>normalizedAlgorithm</var>.\n            </p>"
         },
         {
           "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-algorithm\"><code>[[algorithm]]</code></a> internal\n              slot of <var>key</var> to <var>algorithm</var>.\n            </p>"
@@ -3530,10 +3512,13 @@
           "html": "<p>\n              Let <var>key</var> be a new <a data-link-type=\"interface\" data-lt=\"CryptoKey\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey\"><code>CryptoKey</code></a>\n              object representing an KMAC key with the first <var>length</var>\n              bits of <var>data</var>.\n            </p>"
         },
         {
+          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot of\n              <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-secret\"><code>secret</code></a>\".\n            </p>"
+        },
+        {
           "html": "<p>\n              Let <var>algorithm</var> be a new\n              <a data-link-type=\"idl\" data-lt=\"KmacKeyAlgorithm\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacKeyAlgorithm\" class=\"internalDFN\" id=\"ref-for-dfn-KmacKeyAlgorithm-3\"><code>KmacKeyAlgorithm</code></a>.\n            </p>"
         },
         {
-          "html": "<p>\n              Set the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keyalgorithm-name\"><code>name</code></a> attribute of\n              <var>algorithm</var> to \"<code>KMAC</code>\".\n            </p>"
+          "html": "<p>\n              Set the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keyalgorithm-name\"><code>name</code></a> attribute of\n              <var>algorithm</var> to the <a data-link-type=\"dict-member\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-algorithm-name\"><code>name</code></a> member of <var>normalizedAlgorithm</var>.\n            </p>"
         },
         {
           "html": "<p>\n              Set the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacKeyAlgorithm-length\" class=\"internalDFN\" id=\"ref-for-dfn-KmacKeyAlgorithm-length-2\"><code>length</code></a> attribute of\n              <var>algorithm</var> to <var>length</var>.\n            </p>"
@@ -3618,7 +3603,7 @@
                       "html": "<p>\n                      Set the <code>ext</code> attribute of <var>jwk</var> to equal the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal slot\n                      of <var>key</var>.\n                    </p>"
                     },
                     {
-                      "html": "<p>\n                      Let <var>result</var> be the result of converting <var>jwk</var>\n                      to an ECMAScript Object, as defined by [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/webcrypto-modern-algos/#bib-webidl\" title=\"Web IDL Standard\">WebIDL</a></cite>].\n                    </p>"
+                      "html": "<p>\n                      Let <var>result</var> be <var>jwk</var>.\n                    </p>"
                     }
                   ]
                 },
@@ -3744,9 +3729,6 @@
         },
         {
           "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-type\"><code>[[type]]</code></a> internal slot of\n              <var>key</var> to \"<a data-link-type=\"enum-value\" href=\"https://www.w3.org/TR/webcrypto-2/#dom-keytype-secret\"><code>secret</code></a>\".\n            </p>"
-        },
-        {
-          "html": "<p>\n              Set the <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-CryptoKey-slot-extractable\"><code>[[extractable]]</code></a> internal slot of\n              <var>key</var> to <code>false</code>.\n            </p>"
         },
         {
           "html": "<p>\n              Let <var>algorithm</var> be a new <a data-link-type=\"dictionary\" data-lt=\"KeyAlgorithm\" href=\"https://www.w3.org/TR/webcrypto-2/#dfn-KeyAlgorithm\"><code>KeyAlgorithm</code></a>\n              object.\n            </p>"
