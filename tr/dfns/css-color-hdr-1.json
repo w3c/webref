@@ -25,6 +25,26 @@
       "links": []
     },
     {
+      "id": "hdr-reference-white",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#hdr-reference-white",
+      "linkingText": [
+        "HDR reference white"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "defining-dynamic-range",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#defining-dynamic-range",
+        "title": "Defining Dynamic Range",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "standard-dynamic-range",
       "href": "https://www.w3.org/TR/css-color-hdr-1/#standard-dynamic-range",
       "linkingText": [
@@ -49,6 +69,26 @@
       "href": "https://www.w3.org/TR/css-color-hdr-1/#high-dynamic-range",
       "linkingText": [
         "High Dynamic Range"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "defining-dynamic-range",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#defining-dynamic-range",
+        "title": "Defining Dynamic Range",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "color-re-rendering",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#color-re-rendering",
+      "linkingText": [
+        "color re-rendering"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -99,7 +139,7 @@
         "id": "the-dynamic-range-limit-property",
         "href": "https://www.w3.org/TR/css-color-hdr-1/#the-dynamic-range-limit-property",
         "title": "The dynamic-range-limit property",
-        "number": "2.3"
+        "number": "3.1"
       },
       "definedIn": "table",
       "links": []
@@ -121,16 +161,16 @@
         "id": "the-dynamic-range-limit-property",
         "href": "https://www.w3.org/TR/css-color-hdr-1/#the-dynamic-range-limit-property",
         "title": "The dynamic-range-limit property",
-        "number": "2.3"
+        "number": "3.1"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "valdef-dynamic-range-limit-high",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-high",
+      "id": "valdef-dynamic-range-limit-no-limit",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-no-limit",
       "linkingText": [
-        "high"
+        "no-limit"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -143,16 +183,16 @@
         "id": "the-dynamic-range-limit-property",
         "href": "https://www.w3.org/TR/css-color-hdr-1/#the-dynamic-range-limit-property",
         "title": "The dynamic-range-limit property",
-        "number": "2.3"
+        "number": "3.1"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "valdef-dynamic-range-limit-constrained-high",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-constrained-high",
+      "id": "valdef-dynamic-range-limit-constrained",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-constrained",
       "linkingText": [
-        "constrained-high"
+        "constrained"
       ],
       "localLinkingText": [],
       "type": "value",
@@ -165,7 +205,7 @@
         "id": "the-dynamic-range-limit-property",
         "href": "https://www.w3.org/TR/css-color-hdr-1/#the-dynamic-range-limit-property",
         "title": "The dynamic-range-limit property",
-        "number": "2.3"
+        "number": "3.1"
       },
       "definedIn": "dt",
       "links": []
@@ -185,16 +225,36 @@
         "id": "dynamic-range-limit-mix",
         "href": "https://www.w3.org/TR/css-color-hdr-1/#dynamic-range-limit-mix",
         "title": "Mixing Dynamic Range Limits: the dynamic-range-limit-mix() function",
-        "number": "2.4"
+        "number": "3.2"
       },
       "definedIn": "pre",
       "links": []
     },
     {
-      "id": "funcdef-color",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#funcdef-color",
+      "id": "typedef-color-function",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-color-function",
       "linkingText": [
-        "color()"
+        "<color-function>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-syntax",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#color-syntax",
+        "title": "The <color> syntax",
+        "number": "4"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "funcdef-ictcp",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#funcdef-ictcp",
+      "linkingText": [
+        "ictcp()"
       ],
       "localLinkingText": [],
       "type": "function",
@@ -202,112 +262,416 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "color-function",
-        "href": "https://www.w3.org/TR/css-color-hdr-1/#color-function",
-        "title": "Specifying Predefined and Custom Color Spaces: the color() Function",
-        "number": "3"
+        "id": "color-syntax",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#color-syntax",
+        "title": "The <color> syntax",
+        "number": "4"
       },
       "definedIn": "pre",
       "links": []
     },
     {
-      "id": "typedef-colorspace-params",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-colorspace-params",
+      "id": "funcdef-jzazbz",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#funcdef-jzazbz",
       "linkingText": [
-        "<colorspace-params>"
+        "jzazbz()"
       ],
       "localLinkingText": [],
-      "type": "type",
+      "type": "function",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "color-function",
-        "href": "https://www.w3.org/TR/css-color-hdr-1/#color-function",
-        "title": "Specifying Predefined and Custom Color Spaces: the color() Function",
-        "number": "3"
+        "id": "color-syntax",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#color-syntax",
+        "title": "The <color> syntax",
+        "number": "4"
       },
       "definedIn": "pre",
       "links": []
     },
     {
-      "id": "typedef-custom-params",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-custom-params",
+      "id": "funcdef-jzczhz",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#funcdef-jzczhz",
       "linkingText": [
-        "<custom-params>"
+        "jzczhz()"
       ],
       "localLinkingText": [],
-      "type": "type",
+      "type": "function",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "color-function",
-        "href": "https://www.w3.org/TR/css-color-hdr-1/#color-function",
-        "title": "Specifying Predefined and Custom Color Spaces: the color() Function",
-        "number": "3"
+        "id": "color-syntax",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#color-syntax",
+        "title": "The <color> syntax",
+        "number": "4"
       },
       "definedIn": "pre",
       "links": []
     },
     {
-      "id": "typedef-predefined-rgb-params",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-predefined-rgb-params",
+      "id": "funcdef-hdr-color",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#funcdef-hdr-color",
       "linkingText": [
-        "<predefined-rgb-params>"
+        "hdr-color()"
       ],
       "localLinkingText": [],
-      "type": "type",
+      "type": "function",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "color-function",
-        "href": "https://www.w3.org/TR/css-color-hdr-1/#color-function",
-        "title": "Specifying Predefined and Custom Color Spaces: the color() Function",
-        "number": "3"
+        "id": "hdr-color-function",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#hdr-color-function",
+        "title": "HDR colors parameterized by headroom: the hdr-color() function",
+        "number": "5"
       },
       "definedIn": "pre",
       "links": []
     },
     {
-      "id": "typedef-predefined-polar-params",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-predefined-polar-params",
+      "id": "absolute-d65-cie-xyz",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#absolute-d65-cie-xyz",
       "linkingText": [
-        "<predefined-polar-params>"
+        "Absolute D65 CIE XYZ"
       ],
       "localLinkingText": [],
-      "type": "type",
+      "type": "dfn",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "color-function",
-        "href": "https://www.w3.org/TR/css-color-hdr-1/#color-function",
-        "title": "Specifying Predefined and Custom Color Spaces: the color() Function",
-        "number": "3"
+        "id": "hdr-color-function",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#hdr-color-function",
+        "title": "HDR colors parameterized by headroom: the hdr-color() function",
+        "number": "5"
       },
-      "definedIn": "pre",
+      "definedIn": "prose",
       "links": []
     },
     {
-      "id": "typedef-predefined-rectangular-params",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-predefined-rectangular-params",
+      "id": "ictcp",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#ictcp",
       "linkingText": [
-        "<predefined-rectangular-params>"
+        "ICtCp"
       ],
       "localLinkingText": [],
-      "type": "type",
+      "type": "dfn",
       "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "color-function",
-        "href": "https://www.w3.org/TR/css-color-hdr-1/#color-function",
-        "title": "Specifying Predefined and Custom Color Spaces: the color() Function",
-        "number": "3"
+        "id": "ICtCp",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#ICtCp",
+        "title": "ICtCp",
+        "number": "6.3"
       },
-      "definedIn": "pre",
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "valdef-ictcp-i",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-ictcp-i",
+      "linkingText": [
+        "i"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ictcp()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ICtCp",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#ICtCp",
+        "title": "ICtCp",
+        "number": "6.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-ictcp-ct",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-ictcp-ct",
+      "linkingText": [
+        "ct"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ictcp()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ICtCp",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#ICtCp",
+        "title": "ICtCp",
+        "number": "6.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-ictcp-cp",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-ictcp-cp",
+      "linkingText": [
+        "cp"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ictcp()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ICtCp",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#ICtCp",
+        "title": "ICtCp",
+        "number": "6.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-ictcp-alpha",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-ictcp-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "ictcp()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ICtCp",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#ICtCp",
+        "title": "ICtCp",
+        "number": "6.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "jzazbz",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#jzazbz",
+      "linkingText": [
+        "Jzazbz"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "Jzazbz",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#Jzazbz",
+        "title": "Jzazbz",
+        "number": "6.4"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "valdef-jzazbz-j",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzazbz-j",
+      "linkingText": [
+        "j"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "jzazbz()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "Jzazbz",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#Jzazbz",
+        "title": "Jzazbz",
+        "number": "6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-jzazbz-a",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzazbz-a",
+      "linkingText": [
+        "a"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "jzazbz()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "Jzazbz",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#Jzazbz",
+        "title": "Jzazbz",
+        "number": "6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-jzazbz-b",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzazbz-b",
+      "linkingText": [
+        "b"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "jzazbz()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "Jzazbz",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#Jzazbz",
+        "title": "Jzazbz",
+        "number": "6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-jzazbz-alpha",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzazbz-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "jzazbz()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "Jzazbz",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#Jzazbz",
+        "title": "Jzazbz",
+        "number": "6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "jzczhz",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#jzczhz",
+      "linkingText": [
+        "JzCzhz"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "JzCzhz",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#JzCzhz",
+        "title": "JzCzhz",
+        "number": "6.5"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "valdef-jzczhz-j",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzczhz-j",
+      "linkingText": [
+        "j"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "jzczhz()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "JzCzhz",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#JzCzhz",
+        "title": "JzCzhz",
+        "number": "6.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-jzczhz-c",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzczhz-c",
+      "linkingText": [
+        "c"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "jzczhz()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "JzCzhz",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#JzCzhz",
+        "title": "JzCzhz",
+        "number": "6.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-jzczhz-h",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzczhz-h",
+      "linkingText": [
+        "h"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "jzczhz()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "JzCzhz",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#JzCzhz",
+        "title": "JzCzhz",
+        "number": "6.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-jzczhz-alpha",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzczhz-alpha",
+      "linkingText": [
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "jzczhz()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "JzCzhz",
+        "href": "https://www.w3.org/TR/css-color-hdr-1/#JzCzhz",
+        "title": "JzCzhz",
+        "number": "6.5"
+      },
+      "definedIn": "prose",
       "links": []
     },
     {
@@ -325,67 +689,7 @@
         "id": "color-function",
         "href": "https://www.w3.org/TR/css-color-hdr-1/#color-function",
         "title": "Specifying Predefined and Custom Color Spaces: the color() Function",
-        "number": "3"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "typedef-predefined-rectangular",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-predefined-rectangular",
-      "linkingText": [
-        "<predefined-rectangular>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "color-function",
-        "href": "https://www.w3.org/TR/css-color-hdr-1/#color-function",
-        "title": "Specifying Predefined and Custom Color Spaces: the color() Function",
-        "number": "3"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "typedef-xyz-params",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-xyz-params",
-      "linkingText": [
-        "<xyz-params>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "color-function",
-        "href": "https://www.w3.org/TR/css-color-hdr-1/#color-function",
-        "title": "Specifying Predefined and Custom Color Spaces: the color() Function",
-        "number": "3"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "typedef-xyz",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-xyz",
-      "linkingText": [
-        "<xyz>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "color-function",
-        "href": "https://www.w3.org/TR/css-color-hdr-1/#color-function",
-        "title": "Specifying Predefined and Custom Color Spaces: the color() Function",
-        "number": "3"
+        "number": "7"
       },
       "definedIn": "pre",
       "links": []
@@ -405,7 +709,7 @@
         "id": "valdef-color-rec2100-pq",
         "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-color-rec2100-pq",
         "title": "rec2100-pq",
-        "number": "4.1"
+        "number": "8.1"
       },
       "definedIn": "heading",
       "links": []
@@ -425,7 +729,7 @@
         "id": "valdef-color-rec2100-hlg",
         "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-color-rec2100-hlg",
         "title": "rec2100-hlg",
-        "number": "4.2"
+        "number": "8.2"
       },
       "definedIn": "heading",
       "links": []
@@ -445,67 +749,7 @@
         "id": "valdef-color-rec2100-linear",
         "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-color-rec2100-linear",
         "title": "rec2100-linear",
-        "number": "4.3"
-      },
-      "definedIn": "heading",
-      "links": []
-    },
-    {
-      "id": "jzazbz",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#jzazbz",
-      "linkingText": [
-        "Jzazbz"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "Jzazbz",
-        "href": "https://www.w3.org/TR/css-color-hdr-1/#Jzazbz",
-        "title": "Jzazbz",
-        "number": "4.4"
-      },
-      "definedIn": "heading",
-      "links": []
-    },
-    {
-      "id": "jzczhz",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#jzczhz",
-      "linkingText": [
-        "JzCzHz"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "JzCzHz",
-        "href": "https://www.w3.org/TR/css-color-hdr-1/#JzCzHz",
-        "title": "JzCzHz",
-        "number": "4.5"
-      },
-      "definedIn": "heading",
-      "links": []
-    },
-    {
-      "id": "ictcp",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#ictcp",
-      "linkingText": [
-        "ICtCp"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "ICtCp",
-        "href": "https://www.w3.org/TR/css-color-hdr-1/#ICtCp",
-        "title": "ICtCp",
-        "number": "4.6"
+        "number": "8.3"
       },
       "definedIn": "heading",
       "links": []

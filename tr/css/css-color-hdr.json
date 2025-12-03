@@ -7,8 +7,8 @@
     {
       "name": "dynamic-range-limit",
       "href": "https://www.w3.org/TR/css-color-hdr-1/#propdef-dynamic-range-limit",
-      "value": "standard | high | constrained-high | <dynamic-range-limit-mix()>",
-      "initial": "high",
+      "value": "standard | no-limit | constrained | <dynamic-range-limit-mix()>",
+      "initial": "no-limit",
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "n/a",
@@ -18,24 +18,24 @@
       "values": [
         {
           "name": "standard",
-          "prose": "The highest luminance color that is displayed is the same as media white, i.e. the CSS color white.",
+          "prose": "The highest luminance color that is displayed is the same as HDR reference white, i.e. the CSS color white.",
           "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-standard",
           "type": "value",
           "value": "standard"
         },
         {
-          "name": "high",
-          "prose": "The highest peak luminance that is displayed is much greater than media white, i.e. the CSS color white; the precise level is not specified.",
-          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-high",
+          "name": "no-limit",
+          "prose": "The highest peak luminance that is displayed is much greater than HDR reference white, i.e. the CSS color white; the precise level is not specified.",
+          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-no-limit",
           "type": "value",
-          "value": "high"
+          "value": "no-limit"
         },
         {
-          "name": "constrained-high",
-          "prose": "The highest peak luminance that is displayed is somewhat greater than media white, i.e. the CSS color white, such that a mix of SDR and HDR content can be comfortably viewed together.",
-          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-constrained-high",
+          "name": "constrained",
+          "prose": "The highest peak luminance that is displayed is somewhat greater than HDR reference white, i.e. the CSS color white, such that a mix of SDR and HDR content can be comfortably viewed together.",
+          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-constrained",
           "type": "value",
-          "value": "constrained-high"
+          "value": "constrained"
         }
       ],
       "styleDeclaration": [
@@ -49,69 +49,135 @@
   "values": [
     {
       "name": "dynamic-range-limit-mix()",
-      "value": "dynamic-range-limit-mix( [ <ident> && <percentage [0,100]> ]#)",
+      "value": "dynamic-range-limit-mix( [ <'dynamic-range-limit'> && <percentage [0,100]> ]#{2,} )",
       "href": "https://www.w3.org/TR/css-color-hdr-1/#funcdef-dynamic-range-limit-mix",
       "type": "function"
     },
     {
-      "name": "color()",
-      "value": "color( [from <color>]? <colorspace-params> [ / [ <alpha-value> | none ] ]? )",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#funcdef-color",
+      "name": "<color-function>",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-color-function",
+      "type": "type",
+      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <ictcp()> | <jzazbz()> | <jzczhz()> | <alpha()> | <color()>"
+    },
+    {
+      "name": "ictcp()",
+      "value": "ictcp([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#funcdef-ictcp",
+      "type": "function",
+      "values": [
+        {
+          "name": "i",
+          "prose": "i is a <number> that corresponds to the origin color’s I (Lightness) after conversion, if required, to ictcp. 1.0 is equivalent to 100%.",
+          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-ictcp-i",
+          "type": "value",
+          "value": "i"
+        },
+        {
+          "name": "ct",
+          "prose": "ct and cp are <number>s that correspond to the origin color’s ct and cp axes after conversion, if required, to ictcp. 0.5 is equivalent to 100%, while -0.5 is equivalent to -100%.",
+          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-ictcp-ct",
+          "type": "value",
+          "value": "ct"
+        },
+        {
+          "name": "cp",
+          "prose": "ct and cp are <number>s that correspond to the origin color’s ct and cp axes after conversion, if required, to ictcp. 0.5 is equivalent to 100%, while -0.5 is equivalent to -100%.",
+          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-ictcp-cp",
+          "type": "value",
+          "value": "cp"
+        },
+        {
+          "name": "alpha",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-ictcp-alpha",
+          "type": "value",
+          "value": "alpha"
+        }
+      ]
+    },
+    {
+      "name": "jzazbz()",
+      "value": "jzazbz([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<percentage> | <number> | none] [ / [<alpha-value> | none] ]? )",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#funcdef-jzazbz",
+      "type": "function",
+      "values": [
+        {
+          "name": "j",
+          "prose": "j is a <number> that corresponds to the origin color’s Jz (Lightness) after conversion, if required, to jzazbz. 1.0 is equivalent to 100%.",
+          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzazbz-j",
+          "type": "value",
+          "value": "j"
+        },
+        {
+          "name": "a",
+          "prose": "a and b are <number>s that correspond to the origin color’s az and bz axes after conversion, if required, to jzazbz. 0.21 is equivalent to 100%, while -0.21 is equivalent to -100%.",
+          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzazbz-a",
+          "type": "value",
+          "value": "a"
+        },
+        {
+          "name": "b",
+          "prose": "a and b are <number>s that correspond to the origin color’s az and bz axes after conversion, if required, to jzazbz. 0.21 is equivalent to 100%, while -0.21 is equivalent to -100%.",
+          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzazbz-b",
+          "type": "value",
+          "value": "b"
+        },
+        {
+          "name": "alpha",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzazbz-alpha",
+          "type": "value",
+          "value": "alpha"
+        }
+      ]
+    },
+    {
+      "name": "jzczhz()",
+      "value": "jzczhz([from <color>]? [<percentage> | <number> | none] [<percentage> | <number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#funcdef-jzczhz",
+      "type": "function",
+      "values": [
+        {
+          "name": "j",
+          "prose": "j is a <number> that corresponds to the origin color’s Jz (Lightness) after conversion, if required, to jzczhz. 100 is equivalent to 100%.",
+          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzczhz-j",
+          "type": "value",
+          "value": "j"
+        },
+        {
+          "name": "c",
+          "prose": "c is a <number> that corresponds to the origin color’s Cz (chroma) after conversion, if required, to jzczhz. 0.26 is equivalent to 100%.",
+          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzczhz-c",
+          "type": "value",
+          "value": "c"
+        },
+        {
+          "name": "h",
+          "prose": "h is a <number> that corresponds to the origin color’s hz (hue), in degrees, after conversion, if required, to jzczhz, normalized to a [0, 360] range. 90 is equivalent to 90deg.",
+          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzczhz-h",
+          "type": "value",
+          "value": "h"
+        },
+        {
+          "name": "alpha",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "href": "https://www.w3.org/TR/css-color-hdr-1/#valdef-jzczhz-alpha",
+          "type": "value",
+          "value": "alpha"
+        }
+      ]
+    },
+    {
+      "name": "hdr-color()",
+      "value": "color-hdr([ <color> && <number [0,∞]>? ]#{2})",
+      "href": "https://www.w3.org/TR/css-color-hdr-1/#funcdef-hdr-color",
       "type": "function"
-    },
-    {
-      "name": "<colorspace-params>",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-colorspace-params",
-      "type": "type",
-      "value": "[<custom-params> | <predefined-rgb-params> | <predefined-polar-params> | <predefined-rectangular-params> | <xyz-params>]"
-    },
-    {
-      "name": "<custom-params>",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-custom-params",
-      "type": "type",
-      "value": "<dashed-ident> [ <number> | <percentage> | none ]+"
-    },
-    {
-      "name": "<predefined-rgb-params>",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-predefined-rgb-params",
-      "type": "type",
-      "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}"
-    },
-    {
-      "name": "<predefined-polar-params>",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-predefined-polar-params",
-      "type": "type",
-      "value": "jzczhz [ <number> | <percentage> | none ]{2} [ <hue> | none]"
-    },
-    {
-      "name": "<predefined-rectangular-params>",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-predefined-rectangular-params",
-      "type": "type",
-      "value": "<predefined-rectangular> [ <number> | <percentage> | none ]{3}"
     },
     {
       "name": "<predefined-rgb>",
       "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-predefined-rgb",
       "type": "type",
-      "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | rec2100-pq | rec2100-hlg | rec2100-linear"
-    },
-    {
-      "name": "<predefined-rectangular>",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-predefined-rectangular",
-      "type": "type",
-      "value": "jzazbz | ictcp"
-    },
-    {
-      "name": "<xyz-params>",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-xyz-params",
-      "type": "type",
-      "value": "<xyz> [ <number> | <percentage> | none ]{3}"
-    },
-    {
-      "name": "<xyz>",
-      "href": "https://www.w3.org/TR/css-color-hdr-1/#typedef-xyz",
-      "type": "type",
-      "value": "xyz | xyz-d50 | xyz-d65"
+      "value": "srgb | srgb-linear | display-p3 | display-p3-linear | a98-rgb | prophoto-rgb | rec2020 | rec2100-pq | rec2100-hlg | rec2100-linear"
     }
   ]
 }

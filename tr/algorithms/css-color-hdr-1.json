@@ -15,16 +15,43 @@
           "html": "<p>Let <var>p1</var>, ..., <var>pN</var> be the mixing percentages, normalized to sum to 100%.</p>"
         },
         {
-          "html": "<p>Define the contributing percentages as:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>Let <var>p1_standard</var>,...,<var>pN_standard</var> be the percentages for <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-standard\" id=\"ref-for-valdef-dynamic-range-limit-standard①\">standard</a> in <var>v1</var>,...,<var>vN</var></p>\n      </li><li data-md=\"\">\n       <p>Let <var>p1_constrained_high</var>,...,<var>pN_constrained_high</var> be the percentages for <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-constrained-high\" id=\"ref-for-valdef-dynamic-range-limit-constrained-high①\">constrained-high</a> in <var>v1</var>,...,<var>vN</var></p>\n      </li><li data-md=\"\">\n       <p>Let <var>p1_high</var>,...,<var>pN_high</var> be the percentages for <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-high\" id=\"ref-for-valdef-dynamic-range-limit-high①\">high</a> in <var>v1</var>,...,<var>vN</var></p>\n     </li></ul>"
+          "html": "<p>Define the contributing percentages as:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>Let <var>p1_standard</var>,...,<var>pN_standard</var> be the percentages for <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-standard\" id=\"ref-for-valdef-dynamic-range-limit-standard①\">standard</a> in <var>v1</var>,...,<var>vN</var></p>\n      </li><li data-md=\"\">\n       <p>Let <var>p1_constrained_high</var>,...,<var>pN_constrained_high</var> be the percentages for <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-constrained\" id=\"ref-for-valdef-dynamic-range-limit-constrained①\">constrained</a> in <var>v1</var>,...,<var>vN</var></p>\n      </li><li data-md=\"\">\n       <p>Let <var>p1_no_limit</var>,...,<var>pN_no_limit</var> be the percentages for <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-no-limit\" id=\"ref-for-valdef-dynamic-range-limit-no-limit①\">no-limit</a> in <var>v1</var>,...,<var>vN</var></p>\n     </li></ul>"
         },
         {
-          "html": "<p>Compute the weighted sums as:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><var>p_standard</var>=(<var>p1_standard</var>*<var>p1</var>+...+<var>pN_standard</var>*<var>pN</var>)/100.</p>\n      </li><li data-md=\"\">\n       <p><var>p_constrained_high</var>=(<var>p1_constrained_high</var>*<var>p1</var>+...+<var>pN_constrained_high</var>*<var>pN</var>)/100.</p>\n      </li><li data-md=\"\">\n       <p><var>p_high</var>=(<var>p1_high</var>*<var>p1</var>+...+<var>pN_high</var>*<var>pN</var>)/100.</p>\n     </li></ul>"
+          "html": "<p>Compute the weighted sums as:</p>\n     <ul>\n      <li data-md=\"\">\n       <p><var>p_standard</var>=(<var>p1_standard</var>*<var>p1</var>+...+<var>pN_standard</var>*<var>pN</var>)/100.</p>\n      </li><li data-md=\"\">\n       <p><var>p_constrained_high</var>=(<var>p1_constrained_high</var>*<var>p1</var>+...+<var>pN_constrained_high</var>*<var>pN</var>)/100.</p>\n      </li><li data-md=\"\">\n       <p><var>p_no_limit</var>=(<var>p1_no_limit</var>*<var>p1</var>+...+<var>pN_no_limit</var>*<var>pN</var>)/100.</p>\n     </li></ul>"
         },
         {
-          "html": "<p>If <var>p_standard</var>, <var>p_constrained_high</var>, or <var>p_high</var> equals 100%, then the computed value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-standard\" id=\"ref-for-valdef-dynamic-range-limit-standard②\">standard</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-constrained-high\" id=\"ref-for-valdef-dynamic-range-limit-constrained-high②\">constrained-high</a>, or <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-high\" id=\"ref-for-valdef-dynamic-range-limit-high②\">high</a>, respectively.</p>"
+          "html": "<p>If <var>p_standard</var>, <var>p_constrained_high</var>, or <var>p_no_limit</var> equals 100%, then the computed value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-standard\" id=\"ref-for-valdef-dynamic-range-limit-standard②\">standard</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-constrained\" id=\"ref-for-valdef-dynamic-range-limit-constrained②\">constrained</a>, or <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-no-limit\" id=\"ref-for-valdef-dynamic-range-limit-no-limit②\">no-limit</a>, respectively.</p>"
         },
         {
-          "html": "<p>Otherwise, the computed value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#funcdef-dynamic-range-limit-mix\" id=\"ref-for-funcdef-dynamic-range-limit-mix④\">dynamic-range-limit-mix()</a>, with parameters <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-standard\" id=\"ref-for-valdef-dynamic-range-limit-standard③\">standard</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-constrained-high\" id=\"ref-for-valdef-dynamic-range-limit-constrained-high③\">constrained-high</a>, and <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-high\" id=\"ref-for-valdef-dynamic-range-limit-high③\">high</a>, in that order, and percentages <var>p_standard</var>, <var>p_constrained_high</var>, and <var>p_high</var>, omitting parameters with a percentage equal to 0%.</p>"
+          "html": "<p>Otherwise, the computed value is <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#funcdef-dynamic-range-limit-mix\" id=\"ref-for-funcdef-dynamic-range-limit-mix④\">dynamic-range-limit-mix()</a>, with parameters <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-standard\" id=\"ref-for-valdef-dynamic-range-limit-standard③\">standard</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-constrained\" id=\"ref-for-valdef-dynamic-range-limit-constrained③\">constrained</a>, and <a class=\"css\" data-link-type=\"maybe\" href=\"https://www.w3.org/TR/css-color-hdr-1/#valdef-dynamic-range-limit-no-limit\" id=\"ref-for-valdef-dynamic-range-limit-no-limit③\">no-limit</a>, in that order, and percentages <var>p_standard</var>, <var>p_constrained_high</var>, and <var>p_no_limit</var>, omitting parameters with a percentage equal to 0%. If <em>all</em> parameters are thereby omitted, the computed value is the initial value.</p>"
+        }
+      ]
+    },
+    {
+      "html": "To interpolate between a color <var>c1</var> at headroom <var>H1</var> and a color <var>c2</var> at headroom <var>H2</var>,\n\tgiving result color <var>cxyz</var>,\n\twhen the target headroom is <var>H</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>c1xyz</var> be <var>c1</var> converted to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-hdr-1/#absolute-d65-cie-xyz\" id=\"ref-for-absolute-d65-cie-xyz\">Absolute D65 CIE XYZ</a></p>"
+        },
+        {
+          "html": "<p>Let <var>c2xyz</var> be <var>c2</var> converted to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-hdr-1/#absolute-d65-cie-xyz\" id=\"ref-for-absolute-d65-cie-xyz①\">Absolute D65 CIE XYZ</a></p>"
+        },
+        {
+          "html": "<p>Let <var> w1</var> = clamp((<var>H</var> - <var>H2</var>) / (<var>H1</var> - <var>H2</var>), 0, 1)</p>"
+        },
+        {
+          "html": "<p>Let <var> w2</var> = clamp((<var>H</var> - <var>H1</var>) / (<var>H2</var> - <var>H1</var>), 0, 1)\nNote that <var> w2</var> = 1 - <var> w1</var></p>"
+        },
+        {
+          "html": "<p>Let <var>eps</var> = 0.001</p>"
+        },
+        {
+          "html": "<p>Let <var>cxyz</var> = Array(3)</p>"
+        },
+        {
+          "html": "<p>For i from 0 to 2:\nLet <var>cxyz</var>[i] = pow(<var>c1xyz</var>[i] + <var>eps</var>, <var>w1</var> ) * pow(<var>c2xyz</var>[i] + <var>eps</var>, <var>w2</var> ) - <var>eps</var></p>"
         }
       ]
     }
