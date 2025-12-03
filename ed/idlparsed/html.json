@@ -29142,7 +29142,7 @@
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationhistoryentry"
       },
       "NavigationTransition": {
-        "fragment": "[Exposed=Window]\ninterface NavigationTransition {\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationHistoryEntry from;\n  readonly attribute Promise<undefined> committed;\n  readonly attribute Promise<undefined> finished;\n};",
+        "fragment": "[Exposed=Window]\ninterface NavigationTransition {\n  readonly attribute NavigationType navigationType;\n  readonly attribute NavigationHistoryEntry from;\n  readonly attribute NavigationDestination to;\n  readonly attribute Promise<undefined> committed;\n  readonly attribute Promise<undefined> finished;\n};",
         "type": "interface",
         "name": "NavigationTransition",
         "inheritance": null,
@@ -29178,6 +29178,22 @@
             "special": "",
             "readonly": true,
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtransition-from"
+          },
+          {
+            "type": "attribute",
+            "name": "to",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "NavigationDestination"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtransition-to"
           },
           {
             "type": "attribute",
@@ -47304,7 +47320,8 @@
       ],
       "NavigationTransition": [
         "NavigationType",
-        "NavigationHistoryEntry"
+        "NavigationHistoryEntry",
+        "NavigationDestination"
       ],
       "NavigationActivation": [
         "NavigationHistoryEntry",
