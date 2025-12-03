@@ -2,7 +2,7 @@
 dictionary WebTransportOptions {
   boolean allowPooling = false;
   boolean requireUnreliable = false;
-  sequence<WebTransportHash> serverCertificateHashes;
+  sequence<WebTransportHash> serverCertificateHashes = [];
   WebTransportCongestionControl congestionControl = "default";
   [EnforceRange] unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams = null;
   [EnforceRange] unsigned short? anticipatedConcurrentIncomingBidirectionalStreams = null;
