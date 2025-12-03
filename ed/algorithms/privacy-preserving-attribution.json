@@ -823,46 +823,91 @@
           "html": "<p>If parsing failed, return an error.</p>"
         },
         {
-          "html": "<p>If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-impression-histogram-index\" id=\"ref-for-save-impression-histogram-index\">histogram-index</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exist</a> or\nis not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer④\">integer</a> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer⑧\">32-bit unsigned integer</a> range, return an error.</p>"
+          "html": "<p>Let <var>histogramIndex</var> be <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-impression-histogram-index\" id=\"ref-for-save-impression-histogram-index\">histogram-index</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"ref-for-map-with-default\">with default</a> <code>undefined</code>.</p>"
         },
         {
-          "html": "<p>Let <var>histogramIndex</var> be <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-impression-histogram-index\" id=\"ref-for-save-impression-histogram-index①\">histogram-index</a></code>\"].</p>"
+          "html": "<p>If <var>histogramIndex</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer④\">integer</a> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer⑧\">32-bit unsigned integer</a> range, return an error.</p>"
         },
         {
-          "html": "<p>Let <var>conversionSites</var> be <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-impression-conversion-sites\" id=\"ref-for-save-impression-conversion-sites\">conversion-sites</a></code>\"]\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"ref-for-map-with-default\">with default</a> an empty <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#inner-list\" id=\"ref-for-inner-list②\">inner list</a>.</p>"
+          "html": "<p>Let <var>opts</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dictdef-attributionimpressionoptions\" id=\"ref-for-dictdef-attributionimpressionoptions④\">AttributionImpressionOptions</a></code> with the following items:</p>\n      <dl>\n       <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-histogramindex\" id=\"ref-for-dom-attributionimpressionoptions-histogramindex⑤\">histogramIndex</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>histogramIndex</var></p>\n      </dd></dl>"
         },
         {
-          "html": "<p>If <var>conversionSites</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#inner-list\" id=\"ref-for-inner-list③\">inner list</a>, or if any of <var>conversionSites</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑦\">items</a> is not a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#string\" id=\"ref-for-string④\">string</a>, return an error.</p>"
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-impression-conversion-sites\" id=\"ref-for-save-impression-conversion-sites\">conversion-sites</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>conversionSites</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>conversionSites</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#inner-list\" id=\"ref-for-inner-list②\">inner list</a>, or if any of\n <var>conversionSites</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑦\">items</a> is not a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#string\" id=\"ref-for-string④\">string</a>,\n return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-conversionsites\" id=\"ref-for-dom-attributionimpressionoptions-conversionsites④\">conversionSites</a></code> to <var>conversionSites</var>.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>Let <var>conversionCallers</var> be <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-impression-conversion-callers\" id=\"ref-for-save-impression-conversion-callers\">conversion-callers</a></code>\"]\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"ref-for-map-with-default①\">with default</a> an empty <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#inner-list\" id=\"ref-for-inner-list④\">inner list</a>.</p>"
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-impression-conversion-callers\" id=\"ref-for-save-impression-conversion-callers\">conversion-callers</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>conversionCallers</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value①\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>conversionCallers</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#inner-list\" id=\"ref-for-inner-list③\">inner list</a>, or if any of\n <var>conversionCallers</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑧\">items</a> is not a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#string\" id=\"ref-for-string⑤\">string</a>,\n return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-conversioncallers\" id=\"ref-for-dom-attributionimpressionoptions-conversioncallers④\">conversionCallers</a></code> to <var>conversionCallers</var>.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>If <var>conversionCallers</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#inner-list\" id=\"ref-for-inner-list⑤\">inner list</a>, or if any of <var>conversionCallers</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑧\">items</a> is not a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#string\" id=\"ref-for-string⑤\">string</a>, return an error.</p>"
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-impression-match-value\" id=\"ref-for-save-impression-match-value\">match-value</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>matchValue</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value②\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>matchValue</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer⑤\">integer</a> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer⑨\">32-bit unsigned integer</a> range, return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-matchvalue\" id=\"ref-for-dom-attributionimpressionoptions-matchvalue⑤\">matchValue</a></code> to <var>matchValue</var>.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>Let <var>matchValue</var> be <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-impression-match-value\" id=\"ref-for-save-impression-match-value\">match-value</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"ref-for-map-with-default②\">with default</a> 0.</p>"
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-impression-lifetime-days\" id=\"ref-for-save-impression-lifetime-days\">lifetime-days</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>lifetimeDays</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value③\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>lifetimeDays</var> is not a positive <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer⑥\">integer</a>, return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-lifetimedays\" id=\"ref-for-dom-attributionimpressionoptions-lifetimedays⑦\">lifetimeDays</a></code> to <var>lifetimeDays</var>.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>If <var>matchValue</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer⑤\">integer</a> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer⑨\">32-bit unsigned integer</a> range, return an error.</p>"
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-impression-priority\" id=\"ref-for-save-impression-priority\">priority</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>priority</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value④\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>priority</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer⑦\">integer</a> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-signed-integer\" id=\"ref-for-32-bit-signed-integer①\">32-bit signed integer</a> range, return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-priority\" id=\"ref-for-dom-attributionimpressionoptions-priority③\">priority</a></code> to <var>priority</var>.</p>"
+            }
+          ]
         },
         {
-          "html": "<p>Let <var>lifetimeDays</var> be <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-impression-lifetime-days\" id=\"ref-for-save-impression-lifetime-days\">lifetime-days</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"ref-for-map-with-default③\">with default</a> 30.</p>"
-        },
-        {
-          "html": "<p>If <var>lifetimeDays</var> is not a positive <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer⑥\">integer</a>, return an error.</p>"
-        },
-        {
-          "html": "<p>Clamp <var>lifetimeDays</var> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer①⓪\">32-bit unsigned integer</a> range.</p>"
-        },
-        {
-          "html": "<p>Let <var>priority</var> be <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#save-impression-priority\" id=\"ref-for-save-impression-priority\">priority</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"ref-for-map-with-default④\">with default</a> 0.</p>"
-        },
-        {
-          "html": "<p>If <var>priority</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer⑦\">integer</a> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-signed-integer\" id=\"ref-for-32-bit-signed-integer①\">32-bit signed integer</a> range, return an error.</p>"
-        },
-        {
-          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dictdef-attributionimpressionoptions\" id=\"ref-for-dictdef-attributionimpressionoptions③\">AttributionImpressionOptions</a></code> with the following items:</p>\n      <dl>\n       <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-histogramindex\" id=\"ref-for-dom-attributionimpressionoptions-histogramindex⑤\">histogramIndex</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>histogramIndex</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-matchvalue\" id=\"ref-for-dom-attributionimpressionoptions-matchvalue⑤\">matchValue</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>matchValue</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-conversionsites\" id=\"ref-for-dom-attributionimpressionoptions-conversionsites④\">conversionSites</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>conversionSites</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-conversioncallers\" id=\"ref-for-dom-attributionimpressionoptions-conversioncallers④\">conversionCallers</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>conversionCallers</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-lifetimedays\" id=\"ref-for-dom-attributionimpressionoptions-lifetimedays⑦\">lifetimeDays</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>lifetimeDays</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-attributionimpressionoptions-priority\" id=\"ref-for-dom-attributionimpressionoptions-priority③\">priority</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>priority</var></p>\n      </dd></dl>"
+          "html": "<p>Return <var>opts</var>.</p>"
         }
       ]
     },
@@ -961,7 +1006,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>scaledEpsilon</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer①①\">32-bit unsigned integer</a>\nthat is <var>options</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validated-conversion-options-epsilon\" id=\"ref-for-validated-conversion-options-epsilon③\">epsilon</a>,\nmultiplied by 1,000,000, then rounded toward positive Infinity.</p>"
+              "html": "<p>Let <var>scaledEpsilon</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer①⓪\">32-bit unsigned integer</a>\nthat is <var>options</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validated-conversion-options-epsilon\" id=\"ref-for-validated-conversion-options-epsilon③\">epsilon</a>,\nmultiplied by 1,000,000, then rounded toward positive Infinity.</p>"
             },
             {
               "html": "<p>Let <var>encodedEpsilon</var> be the result of invoking\n<a href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-numerictorawbytes\"><code>NumericToRawBytes</code></a>\nwith <a href=\"https://tc39.es/ecma262/multipage/indexed-collections.html#table-the-typedarray-constructors\">UINT32</a>, <var>scaledEpsilon</var>, and <code>false</code> (for <code>isLittleEndian</code>).</p>"
