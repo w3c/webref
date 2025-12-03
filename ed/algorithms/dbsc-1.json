@@ -439,7 +439,7 @@
               "html": "<p>Otherwise, let <var>well known URL</var> be a copy of <var>destination</var>, with the\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host⑧\">host</a> replaced with <var>destination domain</var>, and the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path③\">path</a>\n replaced with \"/.well-known/device-bound-sessions\".</p>"
             },
             {
-              "html": "<p>Let <var>well known response</var> be the result of fetching <var>well known URL</var>.</p>"
+              "html": "<p>Let <var>well known response</var> be the result of fetching <var>well known URL</var> with\n <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a> set to <code>omit</code>.</p>"
             },
             {
               "html": "<p><var>well known response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status⑤\">status</a> must be 200.</p>"
@@ -665,7 +665,7 @@
               "html": "<p>Let <var>provider well known URL</var> be a copy of <var>provider URL</var>, with the\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path④\">path</a> replaced with \"/.well-known/device-bound-sessions\".</p>"
             },
             {
-              "html": "<p>Let <var>provider well known response</var> be the result of fetching <var>provider\n well known URL</var>. If any of the following hold, return \"failure\":</p>",
+              "html": "<p>Let <var>provider well known response</var> be the result of fetching <var>provider\n well known URL</var> with <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode①\">credentials mode</a> set to <code>omit</code>. If any\n of the following hold, return \"failure\":</p>",
               "ignored": [
                 "provider well known response’s status is not 200. provider well known response’s body is not a JSON-encoded dictionary. provider well known response’s body contains the key \"provider_origin\". provider well known response’s body does not include the key \"relying_origins\". The value of the key \"relying_origins\" does not include the origin of registration URL."
               ]
@@ -674,7 +674,7 @@
               "html": "<p>User agents SHOULD place an upper limit on the number of\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-dbsc/#registrable-origin-label\" id=\"ref-for-registrable-origin-label①\">registrable origin labels</a> in \"relying_origins\" to prevent\n abuse.</p>"
             },
             {
-              "html": "<p>Let <var>relying well known URL</var> be a copy of <var>registration URL</var>, with the\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path⑤\">path</a> replaced with \"/.well-known/device-bound-sessions\".</p>"
+              "html": "<p>Let <var>relying well known URL</var> be a copy of <var>registration URL</var>, with the\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path⑤\">path</a> replaced with \"/.well-known/device-bound-sessions\" with\n <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode②\">credentials mode</a> set to <code>omit</code>.</p>"
             },
             {
               "html": "<p>Let <var>relying well known response</var> be the result of fetching <var>relying well\n known URL</var>. If any of the following hold, return \"failure\":</p>",
