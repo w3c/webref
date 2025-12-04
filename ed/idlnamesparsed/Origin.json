@@ -1,0 +1,15 @@
+{
+  "name": "Origin",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=*]\ninterface Origin {\n  constructor();\n\n  static Origin from(any value);\n\n  readonly attribute boolean opaque;\n\n  boolean isSameOrigin(Origin other);\n  boolean isSameSite(Origin other);\n};",
+    "href": "https://html.spec.whatwg.org/multipage/browsers.html#dom-origin-interface"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

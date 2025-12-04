@@ -1807,6 +1807,18 @@ interface mixin PopoverTargetAttributes {
   [CEReactions] attribute DOMString popoverTargetAction;
 };
 
+[Exposed=*]
+interface Origin {
+  constructor();
+
+  static Origin from(any value);
+
+  readonly attribute boolean opaque;
+
+  boolean isSameOrigin(Origin other);
+  boolean isSameSite(Origin other);
+};
+
 [Global=Window,
  Exposed=Window,
  LegacyUnenumerableNamedProperties]
