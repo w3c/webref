@@ -19,6 +19,7 @@
           "security"
         ]
       },
+      "https://infra.spec.whatwg.org/": {},
       "https://w3c.github.io/hr-time/": {},
       "https://webidl.spec.whatwg.org/": {}
     },
@@ -39,19 +40,26 @@
           "capable-of-supporting",
           "inline-xr-device",
           "xrsession-list-of-frame-updates",
-          "xrspace",
+          "xrspace-interface",
           "xrspace-native-origin",
           "xrsystem",
           "dom-xrframe-getpose",
-          "xrframe",
+          "xrframe-interface",
           "xrframe-active",
-          "xrsession",
+          "xrsession-interface",
           "xrsession-xr-device",
+          "dom-xrsession-enabledfeatures",
+          "xrsession-mode",
           "dom-xrframe-session",
           "xrframe-time",
           "xrspace-session",
           "rounding",
           "quantization"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "list-contain"
         ]
       },
       "https://w3c.github.io/hr-time/": {
@@ -67,7 +75,9 @@
           "idl-DOMString",
           "invalidstateerror",
           "idl-promise",
-          "idl-undefined"
+          "idl-undefined",
+          "dfn-throw",
+          "notsupportederror"
         ]
       }
     }
