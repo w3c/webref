@@ -19,9 +19,9 @@
       ]
     },
     {
-      "name": "intialization of a composition layer",
-      "href": "https://www.w3.org/TR/webxrlayers-1/#intialize-a-composition-layer",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"intialize-a-composition-layer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">intialize a composition layer</dfn> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①\">XRSession</a></code> <var>session</var> and an optional instance of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#WebGLRenderingContext\" id=\"ref-for-WebGLRenderingContext\">WebGLRenderingContext</a></code>\nor a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/2.0/#WebGL2RenderingContext\" id=\"ref-for-WebGL2RenderingContext\">WebGL2RenderingContext</a></code> <var>context</var>, the user agent MUST run the following steps:",
+      "name": "initialization of a composition layer",
+      "href": "https://www.w3.org/TR/webxrlayers-1/#initialize-a-composition-layer",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-a-composition-layer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize a composition layer</dfn> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①\">XRSession</a></code> <var>session</var> and an optional instance of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#WebGLRenderingContext\" id=\"ref-for-WebGLRenderingContext\">WebGLRenderingContext</a></code>\nor a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/2.0/#WebGL2RenderingContext\" id=\"ref-for-WebGL2RenderingContext\">WebGL2RenderingContext</a></code> <var>context</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -898,7 +898,7 @@
           "html": "<p>If <var>context</var> is lost, throw <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑨\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#intialize-a-composition-layer\" id=\"ref-for-intialize-a-composition-layer\">intialize a composition layer</a> on <var>layer</var> with <var>session</var> and <var>context</var>.</p>"
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#initialize-a-composition-layer\" id=\"ref-for-initialize-a-composition-layer\">initialize a composition layer</a> on <var>layer</var> with <var>session</var> and <var>context</var>.</p>"
         },
         {
           "html": "<p>Initialize <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrcompositionlayer-isstatic\" id=\"ref-for-xrcompositionlayer-isstatic④\">isStatic</a> to <code>false</code>.</p>"
@@ -1023,7 +1023,7 @@
           "html": "<p>Let <var>layer</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new④③\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrquadlayer\" id=\"ref-for-xrquadlayer①⓪\">XRQuadLayer</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm④③\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>.</p>"
         },
         {
-          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#intialize-a-composition-layer\" id=\"ref-for-intialize-a-composition-layer①\">intialize a composition layer</a> on <var>layer</var> with <var>session</var> and <var>context</var>.</p>"
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#initialize-a-composition-layer\" id=\"ref-for-initialize-a-composition-layer①\">initialize a composition layer</a> on <var>layer</var> with <var>session</var> and <var>context</var>.</p>"
         },
         {
           "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#initialize-a-quad-layer\" id=\"ref-for-initialize-a-quad-layer\">initialize a quad layer</a> with <var>layer</var> and <var>init</var>.</p>"
@@ -1082,7 +1082,7 @@
           "html": "<p>Let <var>layer</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new④⑤\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrcylinderlayer\" id=\"ref-for-xrcylinderlayer⑨\">XRCylinderLayer</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm④⑤\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>.</p>"
         },
         {
-          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#intialize-a-composition-layer\" id=\"ref-for-intialize-a-composition-layer②\">intialize a composition layer</a> on <var>layer</var> with <var>session</var> and <var>context</var>.</p>"
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#initialize-a-composition-layer\" id=\"ref-for-initialize-a-composition-layer②\">initialize a composition layer</a> on <var>layer</var> with <var>session</var> and <var>context</var>.</p>"
         },
         {
           "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#initialize-a-cylinder-layer\" id=\"ref-for-initialize-a-cylinder-layer\">initialize a cylinder layer</a> with <var>layer</var> and <var>init</var>.</p>"
@@ -1147,7 +1147,7 @@
           "html": "<p>Let <var>layer</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new④⑦\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrequirectlayer\" id=\"ref-for-xrequirectlayer⑨\">XREquirectLayer</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm④⑦\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>.</p>"
         },
         {
-          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#intialize-a-composition-layer\" id=\"ref-for-intialize-a-composition-layer③\">intialize a composition layer</a> on <var>layer</var> with <var>session</var> and <var>context</var>.</p>"
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#initialize-a-composition-layer\" id=\"ref-for-initialize-a-composition-layer③\">initialize a composition layer</a> on <var>layer</var> with <var>session</var> and <var>context</var>.</p>"
         },
         {
           "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#initialize-a-equirect-layer\" id=\"ref-for-initialize-a-equirect-layer\">initialize a equirect layer</a> with <var>layer</var> and <var>init</var>.</p>"
@@ -1212,7 +1212,7 @@
           "html": "<p>Let <var>layer</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new④⑨\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrcubelayer\" id=\"ref-for-xrcubelayer⑨\">XRCubeLayer</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm④⑨\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>.</p>"
         },
         {
-          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#intialize-a-composition-layer\" id=\"ref-for-intialize-a-composition-layer④\">intialize a composition layer</a> on <var>layer</var> with <var>session</var> and <var>context</var>.</p>"
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#initialize-a-composition-layer\" id=\"ref-for-initialize-a-composition-layer④\">initialize a composition layer</a> on <var>layer</var> with <var>session</var> and <var>context</var>.</p>"
         },
         {
           "html": "<p>Let <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#dom-xrcubelayer-space\" id=\"ref-for-dom-xrcubelayer-space④\">space</a></code> be the <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#dom-xrlayerinit-space\" id=\"ref-for-dom-xrlayerinit-space①②\">space</a></code>.</p>"
@@ -1885,7 +1885,7 @@
           "html": "<p>Let <var>layer</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑥⑦\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrquadlayer\" id=\"ref-for-xrquadlayer①④\">XRQuadLayer</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑥⑦\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>.</p>"
         },
         {
-          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#intialize-a-composition-layer\" id=\"ref-for-intialize-a-composition-layer⑤\">intialize a composition layer</a> on <var>layer</var> with <var>session</var>.</p>"
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#initialize-a-composition-layer\" id=\"ref-for-initialize-a-composition-layer⑤\">initialize a composition layer</a> on <var>layer</var> with <var>session</var>.</p>"
         },
         {
           "html": "<p>Initialize <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrcompositionlayer-media\" id=\"ref-for-xrcompositionlayer-media①\">media</a> to <var>video</var>.</p>"
@@ -1938,7 +1938,7 @@
           "html": "<p>Let <var>layer</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑥⑧\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrcylinderlayer\" id=\"ref-for-xrcylinderlayer①③\">XRCylinderLayer</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑥⑧\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>.</p>"
         },
         {
-          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#intialize-a-composition-layer\" id=\"ref-for-intialize-a-composition-layer⑥\">intialize a composition layer</a> on <var>layer</var> with <var>session</var>.</p>"
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#initialize-a-composition-layer\" id=\"ref-for-initialize-a-composition-layer⑥\">initialize a composition layer</a> on <var>layer</var> with <var>session</var>.</p>"
         },
         {
           "html": "<p>Initialize <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrcompositionlayer-media\" id=\"ref-for-xrcompositionlayer-media②\">media</a> to <var>video</var>.</p>"
@@ -1991,7 +1991,7 @@
           "html": "<p>Let <var>layer</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑥⑨\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrequirectlayer\" id=\"ref-for-xrequirectlayer①③\">XREquirectLayer</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm⑥⑨\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a>.</p>"
         },
         {
-          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#intialize-a-composition-layer\" id=\"ref-for-intialize-a-composition-layer⑦\">intialize a composition layer</a> on <var>layer</var> with <var>session</var>.</p>"
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#initialize-a-composition-layer\" id=\"ref-for-initialize-a-composition-layer⑦\">initialize a composition layer</a> on <var>layer</var> with <var>session</var>.</p>"
         },
         {
           "html": "<p>Initialize <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrcompositionlayer-media\" id=\"ref-for-xrcompositionlayer-media③\">media</a> to <var>video</var>.</p>"

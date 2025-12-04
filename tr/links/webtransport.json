@@ -12,6 +12,11 @@
           "section-9"
         ]
       },
+      "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-http2/": {
+        "anchors": [
+          "section-3.1"
+        ]
+      },
       "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-http3": {
         "anchors": [
           "section-4.1",
@@ -21,11 +26,13 @@
       },
       "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-http3/": {
         "anchors": [
+          "section-3.1",
           "section-4.3"
         ]
       },
       "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview": {
         "anchors": [
+          "section-4.1-2.2.1",
           "section-4.1",
           "section-6"
         ]
@@ -49,8 +56,7 @@
       },
       "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview-09": {
         "anchors": [
-          "section-4.1-2.2.1",
-          "section-3.1"
+          "section-4.1-2.2.1"
         ]
       },
       "https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview-09.html": {
@@ -68,6 +74,11 @@
         ]
       },
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://datatracker.ietf.org/doc/html/rfc8441": {
+        "anchors": [
+          "section-3"
+        ]
+      },
       "https://datatracker.ietf.org/doc/html/rfc9221": {
         "anchors": [
           "section-3"
@@ -87,13 +98,19 @@
       },
       "https://github.com/w3c/webtransport/": {},
       "https://github.com/w3c/webtransport/issues": {},
-      "https://github.com/whatwg/fetch/issues/1808": {},
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "http-structured-header-list"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/interaction.html": {
         "anchors": [
           "focus"
         ]
       },
+      "https://httpwg.org/specs/rfc8441.html": {},
+      "https://httpwg.org/specs/rfc9220.html": {},
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "tracking-vector"
@@ -152,6 +169,11 @@
           "section-6.1"
         ]
       },
+      "https://www.rfc-editor.org/rfc/rfc9220.html": {
+        "anchors": [
+          "section-3"
+        ]
+      },
       "https://www.rfc-editor.org/rfc/rfc9221": {},
       "https://www.rfc-editor.org/rfc/rfc9308": {},
       "https://www.rfc-editor.org/rfc/rfc9525": {},
@@ -204,8 +226,6 @@
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-connection",
-          "http-origin",
-          "credentials",
           "concept-request",
           "concept-request-url",
           "concept-request-client",
@@ -218,6 +238,9 @@
           "concept-request-destination",
           "concept-request-origin",
           "concept-request-redirect-mode",
+          "concept-request-method",
+          "concept-header-list-set-structured-header",
+          "concept-request-header-list",
           "concept-fetch",
           "fetch-useparallelqueue",
           "process-response",
@@ -226,7 +249,8 @@
           "concept-request-current-url",
           "concept-connection-obtain",
           "concept-network-error",
-          "concept-body-stream"
+          "concept-body-stream",
+          "http-origin"
         ]
       },
       "https://heycam.github.io/webidl/": {
@@ -234,12 +258,6 @@
           "dfn-create-exception",
           "domexception-name",
           "domexception-message"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/browsers.html": {
-        "anchors": [
-          "concept-origin",
-          "ascii-serialisation-of-an-origin"
         ]
       },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -272,7 +290,6 @@
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "isomorphic-encode",
           "byte-sequence",
           "implementation-defined",
           "ordered-set",
@@ -280,8 +297,12 @@
           "queue-enqueue",
           "iteration-break",
           "list",
+          "list-is-empty",
+          "isomorphic-encode",
           "code-unit-prefix",
           "byte-sequence-length",
+          "map-set",
+          "map-entry",
           "abort-when",
           "queue",
           "list-iterate",
@@ -379,6 +400,7 @@
           "notsupportederror",
           "upon-fulfillment",
           "aborterror",
+          "dfn-dictionary-member",
           "quotaexceedederror",
           "idl-sequence",
           "idl-unsigned-long-long",
