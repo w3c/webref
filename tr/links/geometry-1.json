@@ -5,20 +5,44 @@
   },
   "links": {
     "rawlinks": {
-      "http://test.csswg.org/harness/results/geometry-1_dev/grouped/": {},
+      "http://wpt.live/css/geometry/DOMMatrix-001.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-002.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-003.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-a-f-alias.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-attributes.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-css-string.worker.js": {},
+      "http://wpt.live/css/geometry/DOMMatrix-invert-invertible.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-invert-non-invertible.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-invert-preserves-2d.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-invertSelf.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-newobject.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-stringifier.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix2DInit-validate-fixup.html": {},
+      "http://wpt.live/css/geometry/DOMMatrixInit-validate-fixup.html": {},
+      "http://wpt.live/css/geometry/DOMPoint-001.html": {},
+      "http://wpt.live/css/geometry/DOMPoint-002.html": {},
+      "http://wpt.live/css/geometry/DOMQuad-001.html": {},
+      "http://wpt.live/css/geometry/DOMQuad-002.html": {},
+      "http://wpt.live/css/geometry/DOMQuad-nan.html": {},
+      "http://wpt.live/css/geometry/DOMRect-001.html": {},
+      "http://wpt.live/css/geometry/DOMRect-002.html": {},
+      "http://wpt.live/css/geometry/DOMRect-nan.html": {},
+      "http://wpt.live/css/geometry/DOMRectList.html": {},
+      "http://wpt.live/css/geometry/WebKitCSSMatrix.html": {},
+      "http://wpt.live/css/geometry/WebKitCSSMatrix.worker.js": {},
+      "http://wpt.live/css/geometry/historical.html": {},
+      "http://wpt.live/css/geometry/idlharness.any.js": {},
+      "http://wpt.live/css/geometry/spec-examples.html": {},
+      "http://wpt.live/css/geometry/structured-serialization.html": {},
       "https://caniuse.com/": {
         "anchors": [
           "feat=dommatrix"
         ]
       },
-      "https://drafts.csswg.org/css-syntax-3/": {
-        "anchors": [
-          "css-parse-something-according-to-a-css-grammar"
-        ]
-      },
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://drafts.csswg.org/css-syntax/": {
         "anchors": [
-          "priv-sec"
+          "security"
         ]
       },
       "https://drafts.csswg.org/css-transforms-1/": {
@@ -29,90 +53,85 @@
           "ScaleDefined",
           "RotateDefined",
           "SkewXDefined",
-          "SkewYDefined",
-          "funcdef-transform-matrix"
-        ]
-      },
-      "https://drafts.csswg.org/css-transforms-2/": {
-        "anchors": [
-          "funcdef-matrix3d"
+          "SkewYDefined"
         ]
       },
       "https://github.com/w3c/csswg-drafts/issues": {},
-      "https://github.com/w3c/fxtf-drafts/issues/new": {},
-      "https://heycam.github.io/webidl/": {
-        "anchors": [
-          "idl-DOMException",
-          "idl-DOMString",
-          "Default",
-          "Exposed",
-          "idl-Float32Array",
-          "idl-Float64Array",
-          "indexsizeerror",
-          "invalidstateerror",
-          "LegacyWindowAlias",
-          "NewObject",
-          "SameObject",
-          "syntaxerror",
-          "exceptiondef-typeerror",
-          "idl-boolean",
-          "idl-object",
-          "idl-unrestricted-double",
-          "idl-unsigned-long"
-        ]
-      },
+      "https://github.com/w3c/fxtf-drafts/issues/222": {},
+      "https://github.com/w3c/fxtf-drafts/issues/294": {},
+      "https://github.com/w3c/fxtf-drafts/issues/350": {},
+      "https://github.com/w3c/fxtf-drafts/issues/359": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-a-f-alias.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-attributes.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-css-string.worker.js": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-invert-invertible.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-invert-non-invertible.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-invert-preserves-2d.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-invertSelf.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-newobject.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-stringifier.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix2DInit-validate-fixup.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrixInit-validate-fixup.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMPoint-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMPoint-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMQuad-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMQuad-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMQuad-nan.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMRect-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMRect-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMRect-nan.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMRectList.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/WebKitCSSMatrix.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/WebKitCSSMatrix.worker.js": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/historical.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/idlharness.any.js": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/spec-examples.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/structured-serialization.html": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://html.spec.whatwg.org/multipage/structured-data.html": {
-        "anchors": [
-          "serializable",
-          "deserialization-steps",
-          "serializable-objects",
-          "serialization-steps",
-          "sub-deserialization",
-          "sub-serialization"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/webappapis.html": {
-        "anchors": [
-          "current-global-object"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/window-object.html": {
-        "anchors": [
-          "window"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/workers.html": {
-        "anchors": [
-          "worker"
-        ]
-      },
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
-      "https://tc39.github.io/ecma262/": {
-        "anchors": [
-          "sec-algorithm-conventions",
-          "sec-samevaluezero",
-          "sec-tostring"
-        ]
-      },
-      "https://tools.ietf.org/html/rfc2119": {},
-      "https://www.w3.org/2004/01/pp-impl/32061/status": {},
-      "https://www.w3.org/2018/Process-20180201/": {},
-      "https://www.w3.org/Consortium/Patent-Policy/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://webidl.spec.whatwg.org/": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-001.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-002.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-003.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-a-f-alias.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-attributes.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-css-string.worker.js": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-invert-invertible.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-invert-non-invertible.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-invert-preserves-2d.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-invertSelf.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-newobject.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-stringifier.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix2DInit-validate-fixup.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrixInit-validate-fixup.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMPoint-001.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMPoint-002.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMQuad-001.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMQuad-002.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMQuad-nan.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMRect-001.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMRect-002.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMRect-nan.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMRectList.html": {},
+      "https://wpt.fyi/results/css/geometry/WebKitCSSMatrix.html": {},
+      "https://wpt.fyi/results/css/geometry/WebKitCSSMatrix.worker.js": {},
+      "https://wpt.fyi/results/css/geometry/historical.html": {},
+      "https://wpt.fyi/results/css/geometry/idlharness.any.js": {},
+      "https://wpt.fyi/results/css/geometry/spec-examples.html": {},
+      "https://wpt.fyi/results/css/geometry/structured-serialization.html": {},
       "https://www.w3.org/Style/CSS/Test/": {},
-      "https://www.w3.org/Style/CSS/members": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2014/CR-geometry-1-20141125/": {},
       "https://www.w3.org/TR/2014/WD-geometry-1-20140522/": {},
       "https://www.w3.org/TR/2014/WD-geometry-1-20140626/": {},
       "https://www.w3.org/TR/2014/WD-geometry-1-20140918/": {},
+      "https://www.w3.org/TR/2018/CR-geometry-1-20181204/": {},
       "https://www.w3.org/TR/CSS/": {
         "anchors": [
           "future-proofing",
@@ -120,7 +139,7 @@
           "proprietary-extension"
         ]
       },
-      "https://www.w3.org/TR/CSS2/conform.html": {
+      "https://www.w3.org/TR/CSS21/conform.html": {
         "anchors": [
           "style-sheet",
           "user-agent",
@@ -129,66 +148,28 @@
       },
       "https://www.w3.org/TR/SVG11/": {},
       "https://www.w3.org/TR/css-syntax-3/": {},
-      "https://www.w3.org/TR/css-transforms-1/": {
-        "anchors": [
-          "typedef-transform-function",
-          "typedef-transform-list",
-          "propdef-transform"
-        ]
-      },
-      "https://www.w3.org/TR/css-values-3/": {},
-      "https://www.w3.org/TR/css-values-4/": {
-        "anchors": [
-          "absolute-length"
-        ]
-      },
-      "https://www.w3.org/TR/css3-values/": {
-        "anchors": [
-          "length-value"
-        ]
-      },
+      "https://www.w3.org/TR/css-transforms-1/": {},
+      "https://www.w3.org/TR/css-transforms-2/": {},
+      "https://www.w3.org/TR/css-values-4/": {},
       "https://www.w3.org/TR/cssom-view-1/": {},
-      "https://www.w3.org/TR/cssom-view/": {
+      "https://www.w3.org/groups/wg/css": {},
+      "https://www.w3.org/groups/wg/css/ipr": {},
+      "https://www.w3.org/policies/patent-policy/20200915/": {
         "anchors": [
-          "dom-element-getboundingclientrect"
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20250818/": {
+        "anchors": [
+          "recs-and-notes"
         ]
       }
     },
     "autolinks": {
-      "https://drafts.csswg.org/css-syntax-3/": {
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
-          "css-parse-something-according-to-a-css-grammar"
-        ]
-      },
-      "https://drafts.csswg.org/css-transforms-1/": {
-        "anchors": [
-          "funcdef-transform-matrix"
-        ]
-      },
-      "https://drafts.csswg.org/css-transforms-2/": {
-        "anchors": [
-          "funcdef-matrix3d"
-        ]
-      },
-      "https://heycam.github.io/webidl/": {
-        "anchors": [
-          "idl-unrestricted-double",
-          "Exposed",
-          "NewObject",
-          "Default",
-          "idl-object",
-          "LegacyWindowAlias",
-          "idl-unsigned-long",
-          "SameObject",
-          "idl-DOMString",
-          "idl-Float32Array",
-          "idl-Float64Array",
-          "idl-boolean",
-          "exceptiondef-typeerror",
-          "syntaxerror",
-          "idl-DOMException",
-          "invalidstateerror",
-          "indexsizeerror"
+          "window"
         ]
       },
       "https://html.spec.whatwg.org/multipage/structured-data.html": {
@@ -206,11 +187,6 @@
           "current-global-object"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/window-object.html": {
-        "anchors": [
-          "window"
-        ]
-      },
       "https://html.spec.whatwg.org/multipage/workers.html": {
         "anchors": [
           "worker"
@@ -223,29 +199,55 @@
           "sec-tostring"
         ]
       },
-      "https://www.w3.org/TR/CSS/": {
+      "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "vendor-prefix"
+          "Exposed",
+          "idl-unrestricted-double",
+          "NewObject",
+          "Default",
+          "idl-object",
+          "LegacyWindowAlias",
+          "idl-unsigned-long",
+          "SameObject",
+          "idl-DOMString",
+          "idl-sequence",
+          "idl-Float32Array",
+          "idl-Float64Array",
+          "idl-boolean",
+          "exceptiondef-typeerror",
+          "syntaxerror",
+          "idl-DOMException",
+          "invalidstateerror",
+          "indexsizeerror"
+        ]
+      },
+      "https://www.w3.org/TR/css-syntax-3/": {
+        "anchors": [
+          "css-parse-something-according-to-a-css-grammar"
         ]
       },
       "https://www.w3.org/TR/css-transforms-1/": {
         "anchors": [
           "propdef-transform",
           "typedef-transform-list",
-          "typedef-transform-function"
+          "funcdef-transform-matrix"
+        ]
+      },
+      "https://www.w3.org/TR/css-transforms-2/": {
+        "anchors": [
+          "typedef-transform-function",
+          "funcdef-matrix3d"
         ]
       },
       "https://www.w3.org/TR/css-values-4/": {
         "anchors": [
-          "absolute-length"
+          "valdef-calc-nan",
+          "length-value",
+          "absolute-length",
+          "valdef-calc-infinity"
         ]
       },
-      "https://www.w3.org/TR/css3-values/": {
-        "anchors": [
-          "length-value"
-        ]
-      },
-      "https://www.w3.org/TR/cssom-view/": {
+      "https://www.w3.org/TR/cssom-view-1/": {
         "anchors": [
           "dom-element-getboundingclientrect"
         ]

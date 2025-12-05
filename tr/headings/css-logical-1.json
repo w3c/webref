@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "CSS Logical Properties and Values Level 1",
+    "title": "CSS Logical Properties and Values Module Level 1",
     "url": "https://www.w3.org/TR/css-logical-1/"
   },
   "headings": [
@@ -8,13 +8,7 @@
       "id": "title",
       "href": "https://www.w3.org/TR/css-logical-1/#title",
       "level": 1,
-      "title": "CSS Logical Properties and Values Level 1"
-    },
-    {
-      "id": "subtitle",
-      "href": "https://www.w3.org/TR/css-logical-1/#subtitle",
-      "level": 2,
-      "title": "W3C Working Draft, 27 August 2018"
+      "title": "CSS Logical Properties and Values Module Level 1"
     },
     {
       "id": "abstract",
@@ -23,8 +17,8 @@
       "title": "Abstract"
     },
     {
-      "id": "status",
-      "href": "https://www.w3.org/TR/css-logical-1/#status",
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/css-logical-1/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
@@ -43,6 +37,13 @@
       "level": 2,
       "title": "Introduction",
       "number": "1"
+    },
+    {
+      "id": "values",
+      "href": "https://www.w3.org/TR/css-logical-1/#values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "1.1"
     },
     {
       "id": "directional-keywords",
@@ -73,13 +74,6 @@
       "number": "2.3"
     },
     {
-      "id": "resize",
-      "href": "https://www.w3.org/TR/css-logical-1/#resize",
-      "level": 3,
-      "title": "Flow-Relative Values for the resize Property",
-      "number": "2.4"
-    },
-    {
       "id": "page",
       "href": "https://www.w3.org/TR/css-logical-1/#page",
       "level": 2,
@@ -97,70 +91,70 @@
       "id": "dimension-properties",
       "href": "https://www.w3.org/TR/css-logical-1/#dimension-properties",
       "level": 3,
-      "title": "Logical Height and Logical Width: the block-size and inline-size properties",
+      "title": "Logical Height and Logical Width: the block-size/inline-size, min-block-size/min-inline-size, and max-block-size/max-inline-size properties",
       "number": "4.1"
     },
     {
       "id": "margin-properties",
       "href": "https://www.w3.org/TR/css-logical-1/#margin-properties",
       "level": 3,
-      "title": "Flow-relative Margins: the margin-block-start, margin-block-end, margin-inline-start, margin-inline-end properties and margin-block and margin-inline shorthands",
+      "title": "Flow-Relative Margins: the margin-block-start, margin-block-end, margin-inline-start, margin-inline-end properties and margin-block and margin-inline shorthands",
       "number": "4.2"
     },
     {
-      "id": "inset-properties",
-      "href": "https://www.w3.org/TR/css-logical-1/#inset-properties",
+      "id": "position-properties",
+      "href": "https://www.w3.org/TR/css-logical-1/#position-properties",
       "level": 3,
-      "title": "Flow-relative Offsets: the inset-block-start, inset-block-end, inset-inline-start, inset-inline-end properties and inset-block, inset-inline, and inset shorthands",
+      "title": "Flow-Relative Offsets: the inset-block-start, inset-block-end, inset-inline-start, inset-inline-end properties and inset-block, inset-inline, and inset shorthands",
       "number": "4.3"
     },
     {
       "id": "padding-properties",
       "href": "https://www.w3.org/TR/css-logical-1/#padding-properties",
       "level": 3,
-      "title": "Flow-relative Padding: the padding-block-start, padding-block-end, padding-inline-start, padding-inline-end properties and padding-block and padding-inline shorthands",
+      "title": "Flow-Relative Padding: the padding-block-start, padding-block-end, padding-inline-start, padding-inline-end properties and padding-block and padding-inline shorthands",
       "number": "4.4"
     },
     {
       "id": "border-properties",
       "href": "https://www.w3.org/TR/css-logical-1/#border-properties",
       "level": 3,
-      "title": "Flow-relative Borders",
+      "title": "Flow-Relative Borders",
       "number": "4.5"
     },
     {
       "id": "border-width",
       "href": "https://www.w3.org/TR/css-logical-1/#border-width",
       "level": 4,
-      "title": "Flow-relative Border Widths: the border-block-start-width, border-block-end-width, border-inline-start-width, border-inline-end-width properties and border-block-width and border-inline-width shorthands",
+      "title": "Flow-Relative Border Widths: the border-block-start-width, border-block-end-width, border-inline-start-width, border-inline-end-width properties and border-block-width and border-inline-width shorthands",
       "number": "4.5.1"
     },
     {
       "id": "border-style",
       "href": "https://www.w3.org/TR/css-logical-1/#border-style",
       "level": 4,
-      "title": "Flow-relative Border Styles: the border-block-start-style, border-block-end-style, border-inline-start-style, border-inline-end-style properties and border-block-style and border-inline-style shorthands",
+      "title": "Flow-Relative Border Styles: the border-block-start-style, border-block-end-style, border-inline-start-style, border-inline-end-style properties and border-block-style and border-inline-style shorthands",
       "number": "4.5.2"
     },
     {
       "id": "border-color",
       "href": "https://www.w3.org/TR/css-logical-1/#border-color",
       "level": 4,
-      "title": "Flow-relative Border Colors: the border-block-start-color, border-block-end-color, border-inline-start-color, border-inline-end-color properties and border-block-color and border-inline-color shorthands",
+      "title": "Flow-Relative Border Colors: the border-block-start-color, border-block-end-color, border-inline-start-color, border-inline-end-color properties and border-block-color and border-inline-color shorthands",
       "number": "4.5.3"
     },
     {
       "id": "border-shorthands",
       "href": "https://www.w3.org/TR/css-logical-1/#border-shorthands",
       "level": 4,
-      "title": "Flow-relative Border Shorthands: the border-block-start, border-block-end, border-inline-start, border-inline-end properties and border-block and border-inline shorthands",
+      "title": "Flow-Relative Border Shorthands: the border-block-start, border-block-end, border-inline-start, border-inline-end properties and border-block and border-inline shorthands",
       "number": "4.5.4"
     },
     {
-      "id": "border-radius-shorthands",
-      "href": "https://www.w3.org/TR/css-logical-1/#border-radius-shorthands",
+      "id": "border-radius-properties",
+      "href": "https://www.w3.org/TR/css-logical-1/#border-radius-properties",
       "level": 3,
-      "title": "Flow-relative Corner Rounding: the border-start-start-radius, border-start-end-radius, border-end-start-radius, border-end-end-radius properties",
+      "title": "Flow-Relative Corner Rounding: the border-start-start-radius, border-start-end-radius, border-end-start-radius, border-end-end-radius properties",
       "number": "4.6"
     },
     {
@@ -185,46 +179,52 @@
       "number": "6"
     },
     {
-      "id": "conformance",
-      "href": "https://www.w3.org/TR/css-logical-1/#conformance",
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/css-logical-1/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/css-logical-1/#security",
+      "level": 2,
+      "title": "Security Considerations"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/css-logical-1/#w3c-conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
-      "id": "document-conventions",
-      "href": "https://www.w3.org/TR/css-logical-1/#document-conventions",
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/css-logical-1/#w3c-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
-      "id": "conform-classes",
-      "href": "https://www.w3.org/TR/css-logical-1/#conform-classes",
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/css-logical-1/#w3c-conformance-classes",
       "level": 3,
       "title": "Conformance classes"
     },
     {
-      "id": "conform-responsible",
-      "href": "https://www.w3.org/TR/css-logical-1/#conform-responsible",
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/css-logical-1/#w3c-partial",
       "level": 3,
-      "title": "Requirements for Responsible Implementation of CSS"
+      "title": "Partial implementations"
     },
     {
-      "id": "conform-partial",
-      "href": "https://www.w3.org/TR/css-logical-1/#conform-partial",
-      "level": 4,
-      "title": "Partial Implementations"
-    },
-    {
-      "id": "conform-future-proofing",
-      "href": "https://www.w3.org/TR/css-logical-1/#conform-future-proofing",
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/css-logical-1/#w3c-conform-future-proofing",
       "level": 4,
       "title": "Implementations of Unstable and Proprietary Features"
     },
     {
-      "id": "conform-testing",
-      "href": "https://www.w3.org/TR/css-logical-1/#conform-testing",
-      "level": 4,
-      "title": "Implementations of CR-level Features"
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/css-logical-1/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
     },
     {
       "id": "index",
