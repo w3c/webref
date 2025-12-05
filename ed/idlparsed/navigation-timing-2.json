@@ -9,6 +9,7 @@
       "functions": {
         "Window": [
           "PerformanceNavigationTiming",
+          "PerformanceTimingConfidence",
           "PerformanceTiming",
           "PerformanceNavigation",
           "Performance"
@@ -17,7 +18,7 @@
     },
     "idlNames": {
       "PerformanceNavigationTiming": {
-        "fragment": "[Exposed=Window]\ninterface PerformanceNavigationTiming : PerformanceResourceTiming {\n    readonly        attribute DOMHighResTimeStamp  unloadEventStart;\n    readonly        attribute DOMHighResTimeStamp  unloadEventEnd;\n    readonly        attribute DOMHighResTimeStamp  domInteractive;\n    readonly        attribute DOMHighResTimeStamp  domContentLoadedEventStart;\n    readonly        attribute DOMHighResTimeStamp  domContentLoadedEventEnd;\n    readonly        attribute DOMHighResTimeStamp  domComplete;\n    readonly        attribute DOMHighResTimeStamp  loadEventStart;\n    readonly        attribute DOMHighResTimeStamp  loadEventEnd;\n    readonly        attribute NavigationTimingType type;\n    readonly        attribute unsigned short       redirectCount;\n    readonly        attribute DOMHighResTimeStamp  criticalCHRestart;\n    readonly        attribute NotRestoredReasons?  notRestoredReasons;\n    [Default] object toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface PerformanceNavigationTiming : PerformanceResourceTiming {\n    readonly        attribute DOMHighResTimeStamp  unloadEventStart;\n    readonly        attribute DOMHighResTimeStamp  unloadEventEnd;\n    readonly        attribute DOMHighResTimeStamp  domInteractive;\n    readonly        attribute DOMHighResTimeStamp  domContentLoadedEventStart;\n    readonly        attribute DOMHighResTimeStamp  domContentLoadedEventEnd;\n    readonly        attribute DOMHighResTimeStamp  domComplete;\n    readonly        attribute DOMHighResTimeStamp  loadEventStart;\n    readonly        attribute DOMHighResTimeStamp  loadEventEnd;\n    readonly        attribute NavigationTimingType type;\n    readonly        attribute unsigned short       redirectCount;\n    readonly        attribute DOMHighResTimeStamp  criticalCHRestart;\n    readonly        attribute NotRestoredReasons?  notRestoredReasons;\n    readonly        attribute PerformanceTimingConfidence confidence;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformanceNavigationTiming",
         "inheritance": "PerformanceResourceTiming",
@@ -215,6 +216,22 @@
             "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-notrestoredreasons"
           },
           {
+            "type": "attribute",
+            "name": "confidence",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PerformanceTimingConfidence"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-confidence"
+          },
+          {
             "type": "operation",
             "name": "toJSON",
             "idlType": {
@@ -275,6 +292,94 @@
         ],
         "extAttrs": [],
         "href": "https://w3c.github.io/navigation-timing/#dom-navigationtimingtype"
+      },
+      "PerformanceTimingConfidence": {
+        "fragment": "[Exposed=Window]\ninterface PerformanceTimingConfidence {\n    readonly attribute double randomizedTriggerRate;\n    readonly attribute PerformanceTimingConfidenceValue value;\n    object toJSON();\n};",
+        "type": "interface",
+        "name": "PerformanceTimingConfidence",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "randomizedTriggerRate",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/navigation-timing/#dom-performancetimingconfidence-randomizedtriggerrate"
+          },
+          {
+            "type": "attribute",
+            "name": "value",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PerformanceTimingConfidenceValue"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/navigation-timing/#dom-performancetimingconfidence-value"
+          },
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://w3c.github.io/navigation-timing/#dom-performancetimingconfidence-tojson"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetimingconfidence"
+      },
+      "PerformanceTimingConfidenceValue": {
+        "fragment": "enum PerformanceTimingConfidenceValue {\n  \"high\",\n  \"low\"\n};",
+        "type": "enum",
+        "name": "PerformanceTimingConfidenceValue",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "high",
+            "href": "https://w3c.github.io/navigation-timing/#dom-performancetimingconfidencevalue-high"
+          },
+          {
+            "type": "enum-value",
+            "value": "low",
+            "href": "https://w3c.github.io/navigation-timing/#dom-performancetimingconfidencevalue-low"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/navigation-timing/#dom-performancetimingconfidencevalue"
       },
       "PerformanceTiming": {
         "fragment": "[Exposed=Window]\ninterface PerformanceTiming {\n  readonly attribute unsigned long long navigationStart;\n  readonly attribute unsigned long long unloadEventStart;\n  readonly attribute unsigned long long unloadEventEnd;\n  readonly attribute unsigned long long redirectStart;\n  readonly attribute unsigned long long redirectEnd;\n  readonly attribute unsigned long long fetchStart;\n  readonly attribute unsigned long long domainLookupStart;\n  readonly attribute unsigned long long domainLookupEnd;\n  readonly attribute unsigned long long connectStart;\n  readonly attribute unsigned long long connectEnd;\n  readonly attribute unsigned long long secureConnectionStart;\n  readonly attribute unsigned long long requestStart;\n  readonly attribute unsigned long long responseStart;\n  readonly attribute unsigned long long responseEnd;\n  readonly attribute unsigned long long domLoading;\n  readonly attribute unsigned long long domInteractive;\n  readonly attribute unsigned long long domContentLoadedEventStart;\n  readonly attribute unsigned long long domContentLoadedEventEnd;\n  readonly attribute unsigned long long domComplete;\n  readonly attribute unsigned long long loadEventStart;\n  readonly attribute unsigned long long loadEventEnd;\n  [Default] object toJSON();\n};",
@@ -879,6 +984,7 @@
     "exposed": {
       "Window": [
         "PerformanceNavigationTiming",
+        "PerformanceTimingConfidence",
         "PerformanceTiming",
         "PerformanceNavigation",
         "Performance"
@@ -889,7 +995,11 @@
         "PerformanceResourceTiming",
         "DOMHighResTimeStamp",
         "NavigationTimingType",
-        "NotRestoredReasons"
+        "NotRestoredReasons",
+        "PerformanceTimingConfidence"
+      ],
+      "PerformanceTimingConfidence": [
+        "PerformanceTimingConfidenceValue"
       ],
       "PerformanceTiming": [],
       "PerformanceNavigation": [],

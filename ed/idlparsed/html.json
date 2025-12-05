@@ -24141,7 +24141,7 @@
         "href": "https://html.spec.whatwg.org/multipage/canvas.html#predefinedcolorspace"
       },
       "CustomElementRegistry": {
-        "fragment": "[Exposed=Window]\ninterface CustomElementRegistry {\n  constructor();\n\n  [CEReactions] undefined define(DOMString name, CustomElementConstructor constructor, optional ElementDefinitionOptions options = {});\n  (CustomElementConstructor or undefined) get(DOMString name);\n  DOMString? getName(CustomElementConstructor constructor);\n  Promise<CustomElementConstructor> whenDefined(DOMString name);\n  [CEReactions] undefined upgrade(Node root);\n  undefined initialize(Node root);\n};",
+        "fragment": "[Exposed=Window]\ninterface CustomElementRegistry {\n  constructor();\n\n  [CEReactions] undefined define(DOMString name, CustomElementConstructor constructor, optional ElementDefinitionOptions options = {});\n  (CustomElementConstructor or undefined) get(DOMString name);\n  DOMString? getName(CustomElementConstructor constructor);\n  Promise<CustomElementConstructor> whenDefined(DOMString name);\n  [CEReactions] undefined upgrade(Node root);\n  [CEReactions] undefined initialize(Node root);\n};",
         "type": "interface",
         "name": "CustomElementRegistry",
         "inheritance": null,
@@ -24419,7 +24419,14 @@
                 "variadic": false
               }
             ],
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "href": "https://html.spec.whatwg.org/multipage/custom-elements.html#dom-customelementregistry-initialize"
           }
