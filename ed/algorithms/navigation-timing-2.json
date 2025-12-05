@@ -59,6 +59,62 @@
       ]
     },
     {
+      "name": "PerformanceNavigationTiming/confidence",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-confidence",
+      "html": "The <dfn data-export=\"\" data-dfn-type=\"attribute\" id=\"dom-performancenavigationtiming-confidence\" data-idl=\"attribute\" data-title=\"confidence\" data-dfn-for=\"PerformanceNavigationTiming\" data-type=\"PerformanceTimingConfidence\" data-lt=\"confidence\" data-local-lt=\"PerformanceNavigationTiming.confidence\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>confidence</code></dfn> getter steps are to run these steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>this</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/navigation-timing/#dfn-document-load-timing\" class=\"internalDFN\" id=\"ref-for-dfn-document-load-timing-8\">document load timing</a>'s\n          <a data-link-type=\"dfn\" data-link-for=\"document load timing info\" data-xref-for=\"document load timing info\" data-cite=\"html\" data-cite-path=\"/dom.html\" data-cite-frag=\"dom-interactive-time\" href=\"https://html.spec.whatwg.org/multipage/dom.html#dom-interactive-time\">DOM interactive time</a> is 0, return null."
+        },
+        {
+          "html": "If <var>this</var>'s <a data-for=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dfn-confidence-value\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-confidence-value-2\">confidence value</a> is not null,\n          return it."
+        },
+        {
+          "html": "Let <var>confidence</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"PerformanceTimingConfidence\" href=\"https://w3c.github.io/navigation-timing/#dom-performancetimingconfidence\" class=\"internalDFN\" id=\"ref-for-dom-performancetimingconfidence-3\"><code>PerformanceTimingConfidence</code></a> object created in\n          <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"relevant-settings-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\">relevant settings object</a>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-realm\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\">relevant realm</a>."
+        },
+        {
+          "html": "Set <var>confidence</var>'s <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceTimingConfidence\" data-xref-for=\"PerformanceTimingConfidence\" href=\"https://w3c.github.io/navigation-timing/#dom-performancetimingconfidence-randomizedtriggerrate\" class=\"internalDFN\" id=\"ref-for-dom-performancetimingconfidence-randomizedtriggerrate-1\"><code>randomizedTriggerRate</code></a> to\n          <var>this</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/navigation-timing/#dfn-randomized-trigger-rate\" class=\"internalDFN\" id=\"ref-for-dfn-randomized-trigger-rate-2\">randomized trigger rate</a>."
+        },
+        {
+          "html": "Set <var>confidence</var>'s <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceTimingConfidence\" data-xref-for=\"PerformanceTimingConfidence\" href=\"https://w3c.github.io/navigation-timing/#dom-performancetimingconfidence-value\" class=\"internalDFN\" id=\"ref-for-dom-performancetimingconfidence-value-1\"><code>value</code></a> as determined by the following algorithm:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var>p</var> be <var>confidence</var>'s <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceTimingConfidence\" data-xref-for=\"PerformanceTimingConfidence\" href=\"https://w3c.github.io/navigation-timing/#dom-performancetimingconfidence-randomizedtriggerrate\" class=\"internalDFN\" id=\"ref-for-dom-performancetimingconfidence-randomizedtriggerrate-2\"><code>randomizedTriggerRate</code></a>."
+            },
+            {
+              "html": "Let <var>underlying</var> be <a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/navigation-timing/#dfn-underlying-confidence-value\" class=\"internalDFN\" id=\"ref-for-dfn-underlying-confidence-value-2\">underlying confidence value</a>, a\n              <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"PerformanceTimingConfidenceValue\" href=\"https://w3c.github.io/navigation-timing/#dom-performancetimingconfidencevalue\" class=\"internalDFN\" id=\"ref-for-dom-performancetimingconfidencevalue-2\"><code>PerformanceTimingConfidenceValue</code></a>."
+            },
+            {
+              "html": "Let <var>r</var> be a real number drawn uniformly at random from the interval [0, 1)."
+            },
+            {
+              "html": "If <var>r</var> &gt; or equal <var>p</var>, return <var>underlying</var>."
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "Let <var>s</var> be an integer drawn uniformly at random from the set {0, 1}."
+                },
+                {
+                  "html": "If <var>s</var> equals 0, return <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceTimingConfidenceValue\" data-xref-for=\"PerformanceTimingConfidenceValue\" href=\"https://w3c.github.io/navigation-timing/#dom-performancetimingconfidencevalue-high\" class=\"internalDFN\" id=\"ref-for-dom-performancetimingconfidencevalue-high-1\"><code>high</code></a>."
+                },
+                {
+                  "html": "Otherwise, return <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceTimingConfidenceValue\" data-xref-for=\"PerformanceTimingConfidenceValue\" href=\"https://w3c.github.io/navigation-timing/#dom-performancetimingconfidencevalue-low\" class=\"internalDFN\" id=\"ref-for-dom-performancetimingconfidencevalue-low-1\"><code>low</code></a>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Return <var>confidence</var>."
+        }
+      ]
+    },
+    {
       "name": "create the navigation timing entry",
       "href": "https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry",
       "html": "To <dfn data-export=\"\" id=\"dfn-create-the-navigation-timing-entry\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">create the navigation timing entry</dfn> for <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"Document\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"document\" href=\"https://dom.spec.whatwg.org/#document\"><code>Document</code></a> <var>document</var>,\n      given a <a data-link-type=\"dfn\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"fetch-timing-info\" href=\"https://fetch.spec.whatwg.org/#fetch-timing-info\">fetch timing info</a> <var>fetchTiming</var>, a number <var>redirectCount</var>, a\n      <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"NavigationTimingType\" href=\"https://w3c.github.io/navigation-timing/#dom-navigationtimingtype\" class=\"internalDFN\" id=\"ref-for-dom-navigationtimingtype-4\"><code>NavigationTimingType</code></a> <var>navigationType</var>, a null or <a data-link-type=\"dfn\" data-cite=\"service-workers\" data-cite-path=\"\" data-cite-frag=\"service-worker-timing-info\" href=\"https://www.w3.org/TR/service-workers/#service-worker-timing-info\">service worker timing info</a> <var>serviceWorkerTiming</var>,\n      a DOMString <var>cacheMode</var>, a <a data-xref-type=\"_IDL_\" data-link-type=\"typedef\" data-lt=\"DOMHighResTimeStamp\" data-cite=\"hr-time\" data-cite-path=\"\" data-cite-frag=\"dom-domhighrestimestamp\" href=\"https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp\"><code>DOMHighResTimeStamp</code></a> <var>criticalCHRestart</var>, and a <a data-link-type=\"dfn\" data-cite=\"fetch\" data-cite-path=\"\" data-cite-frag=\"response-body-info\" href=\"https://fetch.spec.whatwg.org/#response-body-info\">response body info</a> <var>bodyInfo</var>, do the following:",
@@ -68,13 +124,13 @@
           "html": "Let <var>global</var> be <var>document</var>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>."
         },
         {
-          "html": "Let <var>navigationTimingEntry</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming\" class=\"internalDFN\" id=\"ref-for-dom-performancenavigationtiming-18\"><code>PerformanceNavigationTiming</code></a> object in <var>global</var>'s\n        <a data-link-type=\"dfn\" data-link-for=\"global object\" data-xref-for=\"global object\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-global-object-realm\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\">realm</a>."
+          "html": "Let <var>navigationTimingEntry</var> be a new <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming\" class=\"internalDFN\" id=\"ref-for-dom-performancenavigationtiming-21\"><code>PerformanceNavigationTiming</code></a> object in <var>global</var>'s\n        <a data-link-type=\"dfn\" data-link-for=\"global object\" data-xref-for=\"global object\" data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-global-object-realm\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\">realm</a>."
         },
         {
           "html": "<a data-cite=\"RESOURCE-TIMING-2#dfn-setup-the-resource-timing-entry\" href=\"https://www.w3.org/TR/resource-timing/#dfn-setup-the-resource-timing-entry\">Setup the resource\n        timing entry</a> for <var>navigationTimingEntry</var> given \"<code>navigation</code>\", <var>document</var>'s\n        <a data-link-type=\"attribute\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"dom-document-url\" href=\"https://dom.spec.whatwg.org/#dom-document-url\"><code>URL</code></a>, <var>fetchTiming</var>, <var>cacheMode</var>, and <var>bodyInfo</var>."
         },
         {
-          "html": "Set <var>navigationTimingEntry</var>'s <a data-for=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dfn-document-load-timing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-document-load-timing-8\">document load\n        timing</a> to <var>document</var>'s <a data-link-type=\"dfn\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/dom.html\" data-cite-frag=\"load-timing-info\" href=\"https://html.spec.whatwg.org/multipage/dom.html#load-timing-info\">load timing info</a>"
+          "html": "Set <var>navigationTimingEntry</var>'s <a data-for=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dfn-document-load-timing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-document-load-timing-9\">document load\n        timing</a> to <var>document</var>'s <a data-link-type=\"dfn\" data-link-for=\"Document\" data-xref-for=\"Document\" data-cite=\"html\" data-cite-path=\"/dom.html\" data-cite-frag=\"load-timing-info\" href=\"https://html.spec.whatwg.org/multipage/dom.html#load-timing-info\">load timing info</a>"
         },
         {
           "html": "Set <var>navigationTimingEntry</var>'s <a data-for=\"PerformanceNavigationTiming\" href=\"https://w3c.github.io/navigation-timing/#dfn-previous-document-unload-timing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-previous-document-unload-timing-4\">previous\n        document unload timing</a> to <var>document</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"Document\" data-xref-for=\"Document\" href=\"https://w3c.github.io/navigation-timing/#dfn-previous-document-unload-timing\" class=\"internalDFN\" id=\"ref-for-dfn-previous-document-unload-timing-5\">previous document unload timing</a>."
