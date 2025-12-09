@@ -5,6 +5,29 @@
   },
   "properties": [
     {
+      "name": "display",
+      "newValues": "grid-lanes | inline-grid-lanes",
+      "values": [
+        {
+          "name": "grid-lanes",
+          "prose": "This value causes an element to generate a block-level masonry container box.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-display-grid-lanes",
+          "type": "value",
+          "value": "grid-lanes"
+        },
+        {
+          "name": "inline-grid-lanes",
+          "prose": "This value causes an element to generate an inline-level masonry container box.",
+          "href": "https://drafts.csswg.org/css-grid-3/#valdef-display-inline-grid-lanes",
+          "type": "value",
+          "value": "inline-grid-lanes"
+        }
+      ],
+      "styleDeclaration": [
+        "display"
+      ]
+    },
+    {
       "name": "item-tolerance",
       "href": "https://drafts.csswg.org/css-grid-3/#propdef-item-tolerance",
       "value": "normal | <length-percentage> | infinite",
@@ -306,15 +329,6 @@
   "selectors": [],
   "values": [],
   "warnings": [
-    {
-      "msg": "Dangling value",
-      "name": "something",
-      "prose": "This value causes an element to generate a masonry container box.",
-      "href": "https://drafts.csswg.org/css-grid-3/#valdef-display-something",
-      "type": "value",
-      "value": "something",
-      "for": "display"
-    },
     {
       "msg": "Dangling value",
       "name": "auto-areas",

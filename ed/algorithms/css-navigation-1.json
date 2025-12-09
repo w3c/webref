@@ -73,7 +73,7 @@
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#documents-navigation-api\" id=\"ref-for-documents-navigation-api\">document’s navigation API</a> of the document is non-null and\nits <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigation-transition\" id=\"ref-for-concept-navigation-transition\">transition</a> is non-null,\nits <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigationtransition-from\" id=\"ref-for-concept-navigationtransition-from\">from entry</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-url\" id=\"ref-for-dom-navigationhistoryentry-url\">url</a></code>.</p>"
         },
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#documents-navigation-api\" id=\"ref-for-documents-navigation-api①\">document’s navigation API</a> of the document is non-null and\nits <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-activation\" id=\"ref-for-navigation-activation\">activation</a> is non-null,\nthe document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#has-been-revealed\" id=\"ref-for-has-been-revealed\">has been revealed</a> is false or\nwas false at the start of the current <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task\">task</a>,\nthe activation’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-from\" id=\"ref-for-dom-navigationactivation-from\">from</a></code>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-url\" id=\"ref-for-dom-navigationhistoryentry-url①\">url</a></code>.</p>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#documents-navigation-api\" id=\"ref-for-documents-navigation-api①\">document’s navigation API</a> of the document is non-null,\nits <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-activation\" id=\"ref-for-navigation-activation\">activation</a> is non-null,\nthe activation’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-from\" id=\"ref-for-dom-navigationactivation-from\">from</a></code> is non-null, and\nthe document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#has-been-revealed\" id=\"ref-for-has-been-revealed\">has been revealed</a> is false or\nwas false at the start of the current <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task\">task</a>,\nthe activation’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-from\" id=\"ref-for-dom-navigationactivation-from①\">from</a></code>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-url\" id=\"ref-for-dom-navigationhistoryentry-url①\">url</a></code>.</p>"
         },
         {
           "html": "<p>Otherwise, null.</p>"
@@ -100,6 +100,58 @@
         },
         {
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#documents-navigation-api\" id=\"ref-for-documents-navigation-api③\">document’s navigation API</a> of the document is non-null and\nits <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-activation\" id=\"ref-for-navigation-activation①\">activation</a> is non-null,\nthe document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#has-been-revealed\" id=\"ref-for-has-been-revealed①\">has been revealed</a> is false or\nwas false at the start of the current <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task①\">task</a>,\nand the activation’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-entry\" id=\"ref-for-dom-navigationactivation-entry①\">entry</a></code>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-url\" id=\"ref-for-dom-navigationhistoryentry-url④\">url</a></code>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "current navigation type",
+      "href": "https://drafts.csswg.org/css-navigation-1/#current-navigation-type",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"current-navigation-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current navigation type</dfn> of a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">document</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationtype\" id=\"ref-for-navigationtype\">NavigationType</a></code> or null.\nIt is defined as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#documents-navigation-api\" id=\"ref-for-documents-navigation-api④\">document’s navigation API</a> of the document is non-null and\nits <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigation-transition\" id=\"ref-for-concept-navigation-transition②\">transition</a> is non-null,\nthe transition’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtransition-navigationtype\" id=\"ref-for-dom-navigationtransition-navigationtype\">navigationType</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#documents-navigation-api\" id=\"ref-for-documents-navigation-api⑤\">document’s navigation API</a> of the document is non-null and\nits <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-activation\" id=\"ref-for-navigation-activation②\">activation</a> is non-null,\nthe document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#has-been-revealed\" id=\"ref-for-has-been-revealed②\">has been revealed</a> is false or\nwas false at the start of the current <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task②\">task</a>,\nthe activation’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-navigationtype\" id=\"ref-for-dom-navigationactivation-navigationtype\">navigationType</a></code>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "current navigation delta",
+      "href": "https://drafts.csswg.org/css-navigation-1/#current-navigation-delta",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"current-navigation-delta\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current navigation delta</dfn> of a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document③\">document</a> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationtype\" id=\"ref-for-navigationtype①\">NavigationType</a></code> or null.\nIt is defined as follows:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#documents-navigation-api\" id=\"ref-for-documents-navigation-api⑥\">document’s navigation API</a> of the document is non-null and\nits <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-navigation-transition\" id=\"ref-for-concept-navigation-transition③\">transition</a> is non-null,",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the transition’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtransition-navigationtype\" id=\"ref-for-dom-navigationtransition-navigationtype①\">navigationType</a></code> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtype-traverse\" id=\"ref-for-dom-navigationtype-traverse③\">traverse</a></code>, null.</p>"
+            },
+            {
+              "html": "<p>Otherwise,\nthe transition’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtransition-to\" id=\"ref-for-dom-navigationtransition-to\">to</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationdestination-index\" id=\"ref-for-dom-navigationdestination-index\">index</a></code>\nminus\nthe transition’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtransition-from\" id=\"ref-for-dom-navigationtransition-from\">from</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-index\" id=\"ref-for-dom-navigationhistoryentry-index\">index</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#documents-navigation-api\" id=\"ref-for-documents-navigation-api⑦\">document’s navigation API</a> of the document is non-null,\nits <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigation-activation\" id=\"ref-for-navigation-activation③\">activation</a> is non-null,\nthe activation’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-from\" id=\"ref-for-dom-navigationactivation-from③\">from</a></code> is non-null, and\nthe document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#has-been-revealed\" id=\"ref-for-has-been-revealed③\">has been revealed</a> is false or\nwas false at the start of the current <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task③\">task</a>,",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If the activation’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-navigationtype\" id=\"ref-for-dom-navigationactivation-navigationtype①\">navigationType</a></code> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationtype-traverse\" id=\"ref-for-dom-navigationtype-traverse④\">traverse</a></code>, null.</p>"
+            },
+            {
+              "html": "<p>Otherwise,\nthe activation’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-entry\" id=\"ref-for-dom-navigationactivation-entry②\">entry</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-index\" id=\"ref-for-dom-navigationhistoryentry-index①\">index</a></code>\nminus\nthe activation’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationactivation-from\" id=\"ref-for-dom-navigationactivation-from④\">from</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationhistoryentry-index\" id=\"ref-for-dom-navigationhistoryentry-index②\">index</a></code>.</p>"
+            }
+          ]
         },
         {
           "html": "<p>Otherwise, null.</p>"
