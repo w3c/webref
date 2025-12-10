@@ -269,22 +269,22 @@
       "number": "4.2.2"
     },
     {
-      "id": "UnionExpression",
-      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#UnionExpression",
+      "id": "ConcatExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#ConcatExpression",
       "level": 4,
-      "title": "Union Expressions",
+      "title": "Concat Expressions",
       "alternateIds": [
-        "x4-2-3-union-expressions"
+        "x4-2-3-concat-expressions"
       ],
       "number": "4.2.3"
     },
     {
-      "id": "MinusExpression",
-      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#MinusExpression",
+      "id": "RemoveExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#RemoveExpression",
       "level": 4,
-      "title": "Minus Expressions",
+      "title": "Remove Expressions",
       "alternateIds": [
-        "x4-2-4-minus-expressions"
+        "x4-2-4-remove-expressions"
       ],
       "number": "4.2.4"
     },
@@ -329,14 +329,54 @@
       "number": "4.2.8"
     },
     {
+      "id": "library-advanced-sequence",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#library-advanced-sequence",
+      "level": 3,
+      "title": "Advanced Sequence Operations",
+      "alternateIds": [
+        "x4-3-advanced-sequence-operations"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "FlatMapExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#FlatMapExpression",
+      "level": 4,
+      "title": "FlatMap Expressions",
+      "alternateIds": [
+        "x4-3-1-flatmap-expressions"
+      ],
+      "number": "4.3.1"
+    },
+    {
+      "id": "FindFirstExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#FindFirstExpression",
+      "level": 4,
+      "title": "FindFirst Expressions",
+      "alternateIds": [
+        "x4-3-2-findfirst-expressions"
+      ],
+      "number": "4.3.2"
+    },
+    {
+      "id": "MatchAllExpression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#MatchAllExpression",
+      "level": 4,
+      "title": "MatchAll Expressions",
+      "alternateIds": [
+        "x4-3-3-matchall-expressions"
+      ],
+      "number": "4.3.3"
+    },
+    {
       "id": "library-aggregation",
       "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#library-aggregation",
       "level": 3,
       "title": "Aggregation Expressions",
       "alternateIds": [
-        "x4-3-aggregation-expressions"
+        "x4-4-aggregation-expressions"
       ],
-      "number": "4.3"
+      "number": "4.4"
     },
     {
       "id": "CountExpression",
@@ -344,9 +384,9 @@
       "level": 4,
       "title": "Count Expressions",
       "alternateIds": [
-        "x4-3-1-count-expressions"
+        "x4-4-1-count-expressions"
       ],
-      "number": "4.3.1"
+      "number": "4.4.1"
     },
     {
       "id": "MinExpression",
@@ -354,9 +394,9 @@
       "level": 4,
       "title": "Min Expressions",
       "alternateIds": [
-        "x4-3-2-min-expressions"
+        "x4-4-2-min-expressions"
       ],
-      "number": "4.3.2"
+      "number": "4.4.2"
     },
     {
       "id": "MaxExpression",
@@ -364,9 +404,9 @@
       "level": 4,
       "title": "Max Expressions",
       "alternateIds": [
-        "x4-3-3-max-expressions"
+        "x4-4-3-max-expressions"
       ],
-      "number": "4.3.3"
+      "number": "4.4.3"
     },
     {
       "id": "SumExpression",
@@ -374,9 +414,9 @@
       "level": 4,
       "title": "Sum Expressions",
       "alternateIds": [
-        "x4-3-4-sum-expressions"
+        "x4-4-4-sum-expressions"
       ],
-      "number": "4.3.4"
+      "number": "4.4.4"
     },
     {
       "id": "misc",
@@ -384,9 +424,9 @@
       "level": 3,
       "title": "Miscellaneous Node Expressions",
       "alternateIds": [
-        "x4-4-miscellaneous-node-expressions"
+        "x4-5-miscellaneous-node-expressions"
       ],
-      "number": "4.4"
+      "number": "4.5"
     },
     {
       "id": "InstancesOfExpression",
@@ -394,9 +434,9 @@
       "level": 4,
       "title": "InstancesOf Expressions",
       "alternateIds": [
-        "x4-4-1-instancesof-expressions"
+        "x4-5-1-instancesof-expressions"
       ],
-      "number": "4.4.1"
+      "number": "4.5.1"
     },
     {
       "id": "NodesMatchingExpression",
@@ -404,9 +444,9 @@
       "level": 4,
       "title": "Nodes Matching Expressions",
       "alternateIds": [
-        "x4-4-2-nodes-matching-expressions"
+        "x4-5-2-nodes-matching-expressions"
       ],
-      "number": "4.4.2"
+      "number": "4.5.2"
     },
     {
       "id": "sparql-functions",
@@ -484,9 +524,8 @@
       "level": 3,
       "title": "sh:nodeByExpression",
       "alternateIds": [
-        "x7-2-sh-nodebyexpression"
-      ],
-      "number": "7.2"
+        "sh-nodebyexpression"
+      ]
     },
     {
       "id": "dynamic-shacl",
@@ -494,29 +533,20 @@
       "level": 2,
       "title": "Dynamic SHACL",
       "alternateIds": [
-        "x8-dynamic-shacl"
-      ],
-      "number": "8"
+        "dynamic-shacl-0"
+      ]
     },
     {
       "id": "example-dynamic-minimum-age-of-presidents",
       "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#example-dynamic-minimum-age-of-presidents",
       "level": 3,
-      "title": "Example: Dynamic Minimum Age of Presidents",
-      "alternateIds": [
-        "x8-1-example-dynamic-minimum-age-of-presidents"
-      ],
-      "number": "8.1"
+      "title": "Example: Dynamic Minimum Age of Presidents"
     },
     {
       "id": "example-dynamic-enumerations",
       "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#example-dynamic-enumerations",
       "level": 3,
-      "title": "Example: Dynamic Enumerations",
-      "alternateIds": [
-        "x8-2-example-dynamic-enumerations"
-      ],
-      "number": "8.2"
+      "title": "Example: Dynamic Enumerations"
     },
     {
       "id": "security",
@@ -524,17 +554,16 @@
       "level": 2,
       "title": "Security Considerations",
       "alternateIds": [
-        "x9-security-considerations"
-      ],
-      "number": "9"
+        "security-considerations"
+      ]
     },
     {
       "id": "privacy",
       "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#privacy",
       "level": 2,
-      "title": "10. Privacy Considerations",
+      "title": "Privacy Considerations",
       "alternateIds": [
-        "x10-privacy-considerations"
+        "privacy-considerations"
       ]
     },
     {
@@ -543,9 +572,8 @@
       "level": 2,
       "title": "Acknowledgements",
       "alternateIds": [
-        "a-acknowledgements"
-      ],
-      "number": "A"
+        "acknowledgements"
+      ]
     },
     {
       "id": "internationalization",
@@ -553,9 +581,8 @@
       "level": 2,
       "title": "Internationalization Considerations",
       "alternateIds": [
-        "b-internationalization-considerations"
-      ],
-      "number": "B"
+        "internationalization-considerations"
+      ]
     },
     {
       "id": "index",
@@ -563,9 +590,8 @@
       "level": 2,
       "title": "Index",
       "alternateIds": [
-        "c-index"
-      ],
-      "number": "C"
+        "index-0"
+      ]
     },
     {
       "id": "index-defined-here",
@@ -573,9 +599,8 @@
       "level": 3,
       "title": "Terms defined by this specification",
       "alternateIds": [
-        "c-1-terms-defined-by-this-specification"
-      ],
-      "number": "C.1"
+        "terms-defined-by-this-specification"
+      ]
     },
     {
       "id": "index-defined-elsewhere",
@@ -583,9 +608,8 @@
       "level": 3,
       "title": "Terms defined by reference",
       "alternateIds": [
-        "c-2-terms-defined-by-reference"
-      ],
-      "number": "C.2"
+        "terms-defined-by-reference"
+      ]
     },
     {
       "id": "issue-summary",
@@ -593,9 +617,8 @@
       "level": 2,
       "title": "Issue summary",
       "alternateIds": [
-        "d-issue-summary"
-      ],
-      "number": "D"
+        "issue-summary-0"
+      ]
     },
     {
       "id": "references",
@@ -603,9 +626,9 @@
       "level": 2,
       "title": "References",
       "alternateIds": [
-        "e-references"
+        "a-references"
       ],
-      "number": "E"
+      "number": "A"
     },
     {
       "id": "normative-references",
@@ -613,9 +636,9 @@
       "level": 3,
       "title": "Normative references",
       "alternateIds": [
-        "e-1-normative-references"
+        "a-1-normative-references"
       ],
-      "number": "E.1"
+      "number": "A.1"
     }
   ]
 }

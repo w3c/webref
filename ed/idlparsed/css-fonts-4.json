@@ -295,7 +295,7 @@
         "href": "https://drafts.csswg.org/css-fonts-4/#cssfontfeaturevaluesmap"
       },
       "CSSFontPaletteValuesRule": {
-        "fragment": "[Exposed=Window]interface CSSFontPaletteValuesRule : CSSRule {\n  readonly attribute CSSOMString name;\n  readonly attribute CSSOMString fontFamily;\n  readonly attribute CSSOMString basePalette;\n  readonly attribute CSSOMString overrideColors;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSFontPaletteValuesRule : CSSRule {\n  readonly attribute CSSOMString name;\n  readonly attribute CSSOMString fontFamily;\n  readonly attribute CSSOMString basePalette;\n  readonly attribute CSSOMString overrideColors;\n};",
         "type": "interface",
         "name": "CSSFontPaletteValuesRule",
         "inheritance": "CSSRule",
@@ -383,7 +383,7 @@
     "idlExtendedNames": {
       "CSSRule": [
         {
-          "fragment": "partial interface CSSRule {  const unsigned short FONT_FEATURE_VALUES_RULE = 14;\n};",
+          "fragment": "partial interface CSSRule {\n  const unsigned short FONT_FEATURE_VALUES_RULE = 14;\n};",
           "type": "interface",
           "name": "CSSRule",
           "inheritance": null,

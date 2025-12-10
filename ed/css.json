@@ -3202,7 +3202,7 @@
       ],
       "syntax": "normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-center",
       "extended": [
-        "https://drafts.csswg.org/css-anchor-position-1/"
+        "https://drafts.csswg.org/css-anchor-position-1/#propdef-align-items"
       ]
     },
     {
@@ -3221,7 +3221,7 @@
       ],
       "syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-center",
       "extended": [
-        "https://drafts.csswg.org/css-anchor-position-1/"
+        "https://drafts.csswg.org/css-anchor-position-1/#propdef-align-self"
       ]
     },
     {
@@ -7321,8 +7321,9 @@
       "styleDeclaration": [
         "display"
       ],
-      "syntax": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy> | <display-outside> || [ <display-inside> | math ]",
+      "syntax": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy> | grid-lanes | inline-grid-lanes | <display-outside> || [ <display-inside> | math ]",
       "extended": [
+        "https://drafts.csswg.org/css-grid-3/",
         "https://w3c.github.io/mathml-core/"
       ]
     },
@@ -9389,7 +9390,7 @@
       ],
       "syntax": "normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | legacy | legacy && [ left | right | center ] | anchor-center",
       "extended": [
-        "https://drafts.csswg.org/css-anchor-position-1/"
+        "https://drafts.csswg.org/css-anchor-position-1/#propdef-justify-items"
       ]
     },
     {
@@ -9408,7 +9409,7 @@
       ],
       "syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | anchor-center",
       "extended": [
-        "https://drafts.csswg.org/css-anchor-position-1/"
+        "https://drafts.csswg.org/css-anchor-position-1/#propdef-justify-self"
       ]
     },
     {
@@ -14768,7 +14769,7 @@
       "name": "transition-behavior",
       "href": "https://drafts.csswg.org/css-transitions-2/#propdef-transition-behavior",
       "initial": "normal",
-      "appliesTo": "all elements",
+      "appliesTo": "All elements",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified",
@@ -18515,15 +18516,21 @@
       "extended": []
     },
     {
-      "name": "navigation-keyword",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-keyword",
+      "name": "navigation-location",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location",
+      "syntax": "<route-name> | <url-pattern()>",
+      "extended": []
+    },
+    {
+      "name": "navigation-location-keyword",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-keyword",
       "syntax": "at | from | to",
       "extended": []
     },
     {
-      "name": "navigation-location",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location",
-      "syntax": "<route-name> | <url-pattern()>",
+      "name": "navigation-location-test",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-test",
+      "syntax": "<navigation-location-keyword> : <navigation-location>",
       "extended": []
     },
     {
@@ -18565,7 +18572,19 @@
     {
       "name": "navigation-test",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-test",
-      "syntax": "<navigation-location> | <navigation-keyword> : <navigation-location>",
+      "syntax": "<navigation-location-test> | <navigation-type-test>",
+      "extended": []
+    },
+    {
+      "name": "navigation-type-keyword",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-type-keyword",
+      "syntax": "traverse | back | forward | reload",
+      "extended": []
+    },
+    {
+      "name": "navigation-type-test",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-type-test",
+      "syntax": "history : <navigation-type-keyword>",
       "extended": []
     },
     {
