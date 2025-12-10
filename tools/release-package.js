@@ -157,6 +157,11 @@ if (!GH_TOKEN) {
   process.exit(1);
 }
 
+// An NPM token is needed to run the script from a local machine.
+// Authentication from a GitHub workflow rather relies on OpenID Connect
+// and the release workflow must be added as a trusted publisher for each
+// npm package that can be released, see:
+// https://docs.npmjs.com/trusted-publishers
 const NPM_TOKEN = config?.NPM_TOKEN ?? process.env.NPM_TOKEN;
 
 // Note: npm-publish has a bug and needs an "INPUT_TOKEN" env variable:
