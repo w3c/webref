@@ -1551,7 +1551,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>user context</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#user-context\" id=\"ref-for-user-context①②\">user context</a>.</p>"
+          "html": "<p>Let <var>user context</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#user-context\" id=\"ref-for-user-context②①\">user context</a>.</p>"
         },
         {
           "html": "If <var>command parameters</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">contain</a> \"<code>acceptInsecureCerts</code>\":",
@@ -1579,7 +1579,7 @@
               "html": "<p>Let <var>proxy configuration</var> be <var>command parameters</var>[\"<code>proxy</code>\"].</p>"
             },
             {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends②③\">remote end</a> is unable to configure proxy settings per <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#user-context\" id=\"ref-for-user-context①③\">user context</a>,\n   or is unable to configure the proxy with <var>proxy configuration</var>, return  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors②⓪\">error</a> with\n   <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation⑤\">unsupported operation</a>.</p>"
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-remote-ends\" id=\"ref-for-dfn-remote-ends②③\">remote end</a> is unable to configure proxy settings per <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#user-context\" id=\"ref-for-user-context②②\">user context</a>,\n   or is unable to configure the proxy with <var>proxy configuration</var>, return  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#errors\" id=\"ref-for-errors②⓪\">error</a> with\n   <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⑨\">error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-unsupported-operation\" id=\"ref-for-dfn-unsupported-operation⑤\">unsupported operation</a>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">Set</a> <var>session</var>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#user-context-to-proxy-configuration-map\" id=\"ref-for-user-context-to-proxy-configuration-map①\">user context to proxy configuration map</a>[<var>user context</var>]\n  to <var>proxy configuration</var>.</p>"
@@ -5100,14 +5100,14 @@
           ]
         },
         {
-          "html": "If <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-user-contexts\" id=\"ref-for-network-collector-user-contexts②①\">user contexts</a> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty⑨\">empty</a>:",
+          "html": "If <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-user-contexts\" id=\"ref-for-network-collector-user-contexts\">user contexts</a> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty⑨\">empty</a>:",
           "rationale": "let",
           "steps": [
             {
               "html": "<p>Let <var>user context</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context③③\">associated user context</a>.</p>"
             },
             {
-              "html": "<p>If <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-user-contexts\" id=\"ref-for-network-collector-user-contexts②②\">user contexts</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①②\">contains</a> <var>user context</var>’s\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#user-context-user-context-id\" id=\"ref-for-user-context-user-context-id⑨\">user context id</a>, return true.</p>"
+              "html": "<p>If <var>collector</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-user-contexts\" id=\"ref-for-network-collector-user-contexts①\">user contexts</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①②\">contains</a> <var>user context</var>’s\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#user-context-user-context-id\" id=\"ref-for-user-context-user-context-id⑨\">user context id</a>, return true.</p>"
             },
             {
               "html": "<p>Otherwise, return false.</p>"
@@ -6947,7 +6947,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>collector</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector\" id=\"ref-for-network-collector④\">collector</a> with\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-max-encoded-item-size\" id=\"ref-for-network-collector-max-encoded-item-size④\">max encoded item size</a> field set to <var>max encoded item size</var>,\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-data-types\" id=\"ref-for-network-collector-data-types①\">data types</a> field set to <var>data types</var>,\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-collector\" id=\"ref-for-network-collector-collector②\">collector</a> field set to <var>collector id</var>,\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-collector-type\" id=\"ref-for-network-collector-collector-type\">collector type</a> field set to <var>collector type</var>,\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-contexts\" id=\"ref-for-network-collector-contexts②\">contexts</a> field set to <var>input context ids</var>,\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-user-contexts\" id=\"ref-for-network-collector-user-contexts②③\">user contexts</a> field set to <var>input user context ids</var>.</p>"
+          "html": "<p>Let <var>collector</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector\" id=\"ref-for-network-collector④\">collector</a> with\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-max-encoded-item-size\" id=\"ref-for-network-collector-max-encoded-item-size④\">max encoded item size</a> field set to <var>max encoded item size</var>,\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-data-types\" id=\"ref-for-network-collector-data-types①\">data types</a> field set to <var>data types</var>,\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-collector\" id=\"ref-for-network-collector-collector②\">collector</a> field set to <var>collector id</var>,\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-collector-type\" id=\"ref-for-network-collector-collector-type\">collector type</a> field set to <var>collector type</var>,\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-contexts\" id=\"ref-for-network-collector-contexts②\">contexts</a> field set to <var>input context ids</var>,\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collector-user-contexts\" id=\"ref-for-network-collector-user-contexts②\">user contexts</a> field set to <var>input user context ids</var>.</p>"
         },
         {
           "html": "<p>Set <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver-bidi/#network-collectors\" id=\"ref-for-network-collectors④\">network collectors</a>[<var>collector id</var>] to <var>collector</var>.</p>"
