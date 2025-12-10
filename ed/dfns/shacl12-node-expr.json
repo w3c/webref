@@ -350,10 +350,10 @@
       "links": []
     },
     {
-      "id": "dfn-union-expression",
-      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-union-expression",
+      "id": "dfn-concat-expression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-concat-expression",
       "linkingText": [
-        "union expression"
+        "concat expression"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -361,11 +361,11 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "UnionExpression",
-        "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#UnionExpression",
-        "title": "Union Expressions",
+        "id": "ConcatExpression",
+        "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#ConcatExpression",
+        "title": "Concat Expressions",
         "alternateIds": [
-          "x4-2-3-union-expressions"
+          "x4-2-3-concat-expressions"
         ],
         "number": "4.2.3"
       },
@@ -373,10 +373,10 @@
       "links": []
     },
     {
-      "id": "dfn-minus-expression",
-      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-minus-expression",
+      "id": "dfn-remove-expression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-remove-expression",
       "linkingText": [
-        "minus expression"
+        "remove expression"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -384,11 +384,11 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "MinusExpression",
-        "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#MinusExpression",
-        "title": "Minus Expressions",
+        "id": "RemoveExpression",
+        "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#RemoveExpression",
+        "title": "Remove Expressions",
         "alternateIds": [
-          "x4-2-4-minus-expressions"
+          "x4-2-4-remove-expressions"
         ],
         "number": "4.2.4"
       },
@@ -465,6 +465,75 @@
       "links": []
     },
     {
+      "id": "dfn-flat-map-expression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-flat-map-expression",
+      "linkingText": [
+        "flat map expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "FlatMapExpression",
+        "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#FlatMapExpression",
+        "title": "FlatMap Expressions",
+        "alternateIds": [
+          "x4-3-1-flatmap-expressions"
+        ],
+        "number": "4.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-find-first-expression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-find-first-expression",
+      "linkingText": [
+        "find first expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "FindFirstExpression",
+        "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#FindFirstExpression",
+        "title": "FindFirst Expressions",
+        "alternateIds": [
+          "x4-3-2-findfirst-expressions"
+        ],
+        "number": "4.3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-match-all-expression",
+      "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-match-all-expression",
+      "linkingText": [
+        "match all expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "MatchAllExpression",
+        "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#MatchAllExpression",
+        "title": "MatchAll Expressions",
+        "alternateIds": [
+          "x4-3-3-matchall-expressions"
+        ],
+        "number": "4.3.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "dfn-count-expression",
       "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#dfn-count-expression",
       "linkingText": [
@@ -480,9 +549,9 @@
         "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#CountExpression",
         "title": "Count Expressions",
         "alternateIds": [
-          "x4-3-1-count-expressions"
+          "x4-4-1-count-expressions"
         ],
-        "number": "4.3.1"
+        "number": "4.4.1"
       },
       "definedIn": "prose",
       "links": []
@@ -503,9 +572,9 @@
         "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#MinExpression",
         "title": "Min Expressions",
         "alternateIds": [
-          "x4-3-2-min-expressions"
+          "x4-4-2-min-expressions"
         ],
-        "number": "4.3.2"
+        "number": "4.4.2"
       },
       "definedIn": "prose",
       "links": []
@@ -526,9 +595,9 @@
         "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#MaxExpression",
         "title": "Max Expressions",
         "alternateIds": [
-          "x4-3-3-max-expressions"
+          "x4-4-3-max-expressions"
         ],
-        "number": "4.3.3"
+        "number": "4.4.3"
       },
       "definedIn": "prose",
       "links": []
@@ -549,9 +618,9 @@
         "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#SumExpression",
         "title": "Sum Expressions",
         "alternateIds": [
-          "x4-3-4-sum-expressions"
+          "x4-4-4-sum-expressions"
         ],
-        "number": "4.3.4"
+        "number": "4.4.4"
       },
       "definedIn": "prose",
       "links": []
@@ -572,9 +641,9 @@
         "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#InstancesOfExpression",
         "title": "InstancesOf Expressions",
         "alternateIds": [
-          "x4-4-1-instancesof-expressions"
+          "x4-5-1-instancesof-expressions"
         ],
-        "number": "4.4.1"
+        "number": "4.5.1"
       },
       "definedIn": "prose",
       "links": []
@@ -595,9 +664,9 @@
         "href": "https://w3c.github.io/data-shapes/shacl12-node-expr/#NodesMatchingExpression",
         "title": "Nodes Matching Expressions",
         "alternateIds": [
-          "x4-4-2-nodes-matching-expressions"
+          "x4-5-2-nodes-matching-expressions"
         ],
-        "number": "4.4.2"
+        "number": "4.5.2"
       },
       "definedIn": "prose",
       "links": []
