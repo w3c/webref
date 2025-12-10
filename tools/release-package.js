@@ -88,11 +88,14 @@ async function releasePackage(prNumber) {
 
     console.log(`- Publish packages/${type} folder to npm`);
     const packageFolder = path.join(installFolder, "packages", type, "package.json");
-    const pubResult = await npmPublish({
-      package: packageFolder,
-      token: NPM_TOKEN
+    const pubOptions = {
+      package: packageFolder
       //, debug: console.debug
-    });
+    };
+    if (NPM_TOKEN) {
+      pubOptions.token = NPM_TOKEN;
+    }
+    const pubResult = await npmPublish(pubOptions);
     console.log(`- Published version was ${pubResult.oldVersion}`);
     console.log(`- Version bump: ${pubResult.type}`);
     console.log(`- Published version is ${pubResult.version}`);
@@ -155,10 +158,6 @@ if (!GH_TOKEN) {
 }
 
 const NPM_TOKEN = config?.NPM_TOKEN ?? process.env.NPM_TOKEN;
-if (!NPM_TOKEN) {
-  console.error("NPM_TOKEN must be set to an npm token as an env variable or in a config.json file");
-  process.exit(1);
-}
 
 // Note: npm-publish has a bug and needs an "INPUT_TOKEN" env variable:
 // https://github.com/JS-DevTools/npm-publish/issues/15
