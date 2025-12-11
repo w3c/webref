@@ -30111,7 +30111,7 @@
         "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationintercepthandler"
       },
       "NavigationPrecommitController": {
-        "fragment": "[Exposed=Window]\ninterface NavigationPrecommitController {\n  undefined redirect(USVString url, optional NavigationNavigateOptions options = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface NavigationPrecommitController {\n  undefined redirect(USVString url, optional NavigationNavigateOptions options = {});\n  undefined addHandler(NavigationInterceptHandler handler);\n};",
         "type": "interface",
         "name": "NavigationPrecommitController",
         "inheritance": null,
@@ -30166,6 +30166,38 @@
             "extAttrs": [],
             "special": "",
             "href": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#dom-navigationprecommitcontroller-redirect"
+          },
+          {
+            "type": "operation",
+            "name": "addHandler",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "handler",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "NavigationInterceptHandler"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
           }
         ],
         "extAttrs": [
@@ -47505,7 +47537,8 @@
         "NavigationScrollBehavior"
       ],
       "NavigationPrecommitController": [
-        "NavigationNavigateOptions"
+        "NavigationNavigateOptions",
+        "NavigationInterceptHandler"
       ],
       "NavigationDestination": [],
       "NavigationCurrentEntryChangeEvent": [

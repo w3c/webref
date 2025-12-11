@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-12-11T12:53:18.098Z",
+  "date": "2025-12-11T18:52:31.004Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -32,7 +32,7 @@
   },
   "stats": {
     "crawled": 726,
-    "errors": 9
+    "errors": 11
   },
   "crawler": "reffy-20.0.3",
   "results": [
@@ -809,7 +809,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 08:29:57 GMT"
+        "lastModified": "Thu, 11 Dec 2025 17:58:37 GMT"
       },
       "date": "11 December 2025",
       "algorithms": "algorithms/layered-cookies.json",
@@ -858,7 +858,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 08:29:57 GMT"
+        "lastModified": "Thu, 11 Dec 2025 17:58:37 GMT"
       },
       "date": "11 December 2025",
       "algorithms": "algorithms/no-vary-search.json",
@@ -907,7 +907,7 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 08:29:57 GMT"
+        "lastModified": "Thu, 11 Dec 2025 17:58:37 GMT"
       },
       "date": "11 December 2025",
       "algorithms": "algorithms/rfc6265bis.json",
@@ -2518,9 +2518,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Dec 2025 06:02:22 GMT"
+        "lastModified": "Thu, 11 Dec 2025 14:16:12 GMT"
       },
-      "date": "8 December 2025",
+      "date": "11 December 2025",
       "algorithms": "algorithms/html.json",
       "links": "links/html.json",
       "refs": "refs/html.json",
@@ -3561,7 +3561,8 @@
       "links": "links/glTF.json",
       "headings": "headings/glTF.json",
       "ids": "ids/glTF.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:14900:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:477:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22) {\n    [cause]: ConnectTimeoutError: Connect Timeout Error (attempted addresses: 174.138.88.143:443, timeout: 10000ms)\n        at onConnectTimeout (node:internal/deps/undici/undici:2718:28)\n        at Immediate._onImmediate (node:internal/deps/undici/undici:2699:11)\n        at process.processImmediate (node:internal/timers:483:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT',\n      [Symbol(undici.error.UND_ERR)]: true,\n      [Symbol(undici.error.UND_ERR_CONNECT_TIMEOUT)]: true\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html",
@@ -6332,7 +6333,7 @@
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 10 Dec 2025 22:21:13 GMT"
+        "lastModified": "Wed, 10 Dec 2025 22:21:14 GMT"
       },
       "date": "10 December 2025",
       "links": "links/ecmascript.json",
@@ -7700,7 +7701,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-cs/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 00:30:42 GMT"
+        "lastModified": "Thu, 11 Dec 2025 15:03:50 GMT"
       },
       "generator": "respec",
       "date": "04 August 2025",
@@ -7747,7 +7748,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-node-expr/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 00:30:42 GMT"
+        "lastModified": "Thu, 11 Dec 2025 15:03:50 GMT"
       },
       "generator": "respec",
       "date": "11 December 2025",
@@ -7796,7 +7797,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-profiling/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 00:30:42 GMT"
+        "lastModified": "Thu, 11 Dec 2025 15:03:50 GMT"
       },
       "generator": "respec",
       "date": "11 December 2025",
@@ -7848,7 +7849,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-rules/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 00:30:43 GMT"
+        "lastModified": "Thu, 11 Dec 2025 15:03:50 GMT"
       },
       "generator": "respec",
       "date": "11 December 2025",
@@ -7896,7 +7897,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-ui/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 00:30:43 GMT"
+        "lastModified": "Thu, 11 Dec 2025 15:03:50 GMT"
       },
       "generator": "respec",
       "date": "11 December 2025",
@@ -21726,7 +21727,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-grid-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 10 Dec 2025 19:31:54 GMT"
+        "lastModified": "Wed, 10 Dec 2025 19:31:55 GMT"
       },
       "generator": "bikeshed",
       "date": "7 December 2025",
@@ -21795,7 +21796,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-grid-3/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 10 Dec 2025 19:31:54 GMT"
+        "lastModified": "Wed, 10 Dec 2025 19:31:55 GMT"
       },
       "generator": "bikeshed",
       "date": "7 December 2025",
@@ -21864,7 +21865,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-highlight-api-1/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 10 Dec 2025 19:31:54 GMT"
+        "lastModified": "Wed, 10 Dec 2025 19:31:55 GMT"
       },
       "generator": "bikeshed",
       "date": "29 November 2025",
@@ -23309,6 +23310,7 @@
       "headings": "headings/css-paint-api-1.json",
       "ids": "ids/css-paint-api-1.json",
       "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 410)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/css-paint-api-1.json"
     },
     {
@@ -24877,7 +24879,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-text-4/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 10 Dec 2025 19:31:54 GMT"
+        "lastModified": "Wed, 10 Dec 2025 19:31:55 GMT"
       },
       "generator": "bikeshed",
       "date": "29 October 2025",
@@ -26928,10 +26930,10 @@
       ],
       "crawled": "https://w3c.github.io/did-resolution/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 20 Nov 2025 01:31:27 GMT"
+        "lastModified": "Thu, 11 Dec 2025 15:26:23 GMT"
       },
       "generator": "respec",
-      "date": "20 November 2025",
+      "date": "11 December 2025",
       "algorithms": "algorithms/did-resolution.json",
       "links": "links/did-resolution.json",
       "refs": "refs/did-resolution.json",
@@ -33501,8 +33503,8 @@
       ],
       "crawled": "https://w3c.github.io/attribution/",
       "generator": "bikeshed",
-      "date": "10 December 2025",
-      "revision": "a0a78f5b239867a10b3f870f0d670d6a2fc5065a",
+      "date": "11 December 2025",
+      "revision": "050e4d212d6fc0217538513b9f723fc07c9d1cdc",
       "algorithms": "algorithms/privacy-preserving-attribution.json",
       "links": "links/privacy-preserving-attribution.json",
       "refs": "refs/privacy-preserving-attribution.json",
@@ -35480,7 +35482,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-core/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 00:30:42 GMT"
+        "lastModified": "Thu, 11 Dec 2025 15:03:50 GMT"
       },
       "generator": "respec",
       "date": "11 December 2025",
@@ -35536,7 +35538,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-sparql/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 00:30:42 GMT"
+        "lastModified": "Thu, 11 Dec 2025 15:03:50 GMT"
       },
       "generator": "respec",
       "date": "11 December 2025",
@@ -35810,10 +35812,10 @@
       ],
       "crawled": "https://w3c.github.io/sparql-query/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 05 Dec 2025 14:00:37 GMT"
+        "lastModified": "Thu, 11 Dec 2025 17:31:41 GMT"
       },
       "generator": "respec",
-      "date": "05 December 2025",
+      "date": "11 December 2025",
       "algorithms": "algorithms/sparql12-query.json",
       "links": "links/sparql12-query.json",
       "refs": "refs/sparql12-query.json",
@@ -42250,10 +42252,10 @@
       ],
       "crawled": "https://w3c.github.io/wot-binding-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 09 Oct 2025 13:58:08 GMT"
+        "lastModified": "Thu, 11 Dec 2025 14:57:40 GMT"
       },
       "generator": "respec",
-      "date": "09 October 2025",
+      "date": "11 December 2025",
       "links": "links/wot-binding-registry.json",
       "refs": "refs/wot-binding-registry.json",
       "dfns": "dfns/wot-binding-registry.json",
@@ -42415,10 +42417,10 @@
       ],
       "crawled": "https://w3c.github.io/wot-thing-description/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 03 Dec 2025 15:51:02 GMT"
+        "lastModified": "Thu, 11 Dec 2025 14:17:28 GMT"
       },
       "generator": "respec",
-      "date": "03 December 2025",
+      "date": "11 December 2025",
       "algorithms": "algorithms/wot-thing-description-2.0.json",
       "links": "links/wot-thing-description-2.0.json",
       "refs": "refs/wot-thing-description-2.0.json",
@@ -42472,10 +42474,10 @@
       ],
       "crawled": "https://w3c.github.io/wot-thing-description/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 03 Dec 2025 15:51:02 GMT"
+        "lastModified": "Thu, 11 Dec 2025 14:17:28 GMT"
       },
       "generator": "respec",
-      "date": "03 December 2025",
+      "date": "11 December 2025",
       "algorithms": "algorithms/wot-thing-description11.json",
       "links": "links/wot-thing-description11.json",
       "refs": "refs/wot-thing-description11.json",

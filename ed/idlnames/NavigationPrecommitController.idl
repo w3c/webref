@@ -2,4 +2,5 @@
 [Exposed=Window]
 interface NavigationPrecommitController {
   undefined redirect(USVString url, optional NavigationNavigateOptions options = {});
+  undefined addHandler(NavigationInterceptHandler handler);
 };
