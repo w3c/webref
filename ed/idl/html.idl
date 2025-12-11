@@ -2065,6 +2065,7 @@ callback NavigationInterceptHandler = Promise<undefined> ();
 [Exposed=Window]
 interface NavigationPrecommitController {
   undefined redirect(USVString url, optional NavigationNavigateOptions options = {});
+  undefined addHandler(NavigationInterceptHandler handler);
 };
 
 callback NavigationPrecommitHandler = Promise<undefined> (NavigationPrecommitController controller);
