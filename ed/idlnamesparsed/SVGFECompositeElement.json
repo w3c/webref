@@ -7,7 +7,7 @@
       "url": "https://www.w3.org/TR/filter-effects-1/"
     },
     "fragment": "[Exposed=Window]\ninterface SVGFECompositeElement : SVGElement {\n\n  // Composite Operators\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_UNKNOWN = 0;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_OVER = 1;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_IN = 2;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_OUT = 3;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_ATOP = 4;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_XOR = 5;\n  const unsigned short SVG_FECOMPOSITE_OPERATOR_ARITHMETIC = 6;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedString in2;\n  readonly attribute SVGAnimatedEnumeration operator;\n  readonly attribute SVGAnimatedNumber k1;\n  readonly attribute SVGAnimatedNumber k2;\n  readonly attribute SVGAnimatedNumber k3;\n  readonly attribute SVGAnimatedNumber k4;\n};",
-    "href": "https://drafts.fxtf.org/filter-effects-1/#svgfecompositeelement"
+    "href": "https://drafts.csswg.org/filter-effects-1/#svgfecompositeelement"
   },
   "extended": [
     {
@@ -503,7 +503,7 @@
           "url": "https://www.w3.org/TR/filter-effects-1/"
         },
         "fragment": "interface mixin SVGFilterPrimitiveStandardAttributes {\n  readonly attribute SVGAnimatedLength x;\n  readonly attribute SVGAnimatedLength y;\n  readonly attribute SVGAnimatedLength width;\n  readonly attribute SVGAnimatedLength height;\n  readonly attribute SVGAnimatedString result;\n};",
-        "href": "https://drafts.fxtf.org/filter-effects-1/#svgfilterprimitivestandardattributes"
+        "href": "https://drafts.csswg.org/filter-effects-1/#svgfilterprimitivestandardattributes"
       },
       "extended": [],
       "inheritance": null,

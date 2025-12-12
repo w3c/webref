@@ -7,7 +7,7 @@
       "url": "https://www.w3.org/TR/filter-effects-1/"
     },
     "fragment": "[Exposed=Window]\ninterface SVGFEBlendElement : SVGElement {\n\n  // Blend Mode Types\n  const unsigned short SVG_FEBLEND_MODE_UNKNOWN = 0;\n  const unsigned short SVG_FEBLEND_MODE_NORMAL = 1;\n  const unsigned short SVG_FEBLEND_MODE_MULTIPLY = 2;\n  const unsigned short SVG_FEBLEND_MODE_SCREEN = 3;\n  const unsigned short SVG_FEBLEND_MODE_DARKEN = 4;\n  const unsigned short SVG_FEBLEND_MODE_LIGHTEN = 5;\n  const unsigned short SVG_FEBLEND_MODE_OVERLAY = 6;\n  const unsigned short SVG_FEBLEND_MODE_COLOR_DODGE = 7;\n  const unsigned short SVG_FEBLEND_MODE_COLOR_BURN = 8;\n  const unsigned short SVG_FEBLEND_MODE_HARD_LIGHT = 9;\n  const unsigned short SVG_FEBLEND_MODE_SOFT_LIGHT = 10;\n  const unsigned short SVG_FEBLEND_MODE_DIFFERENCE = 11;\n  const unsigned short SVG_FEBLEND_MODE_EXCLUSION = 12;\n  const unsigned short SVG_FEBLEND_MODE_HUE = 13;\n  const unsigned short SVG_FEBLEND_MODE_SATURATION = 14;\n  const unsigned short SVG_FEBLEND_MODE_COLOR = 15;\n  const unsigned short SVG_FEBLEND_MODE_LUMINOSITY = 16;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedString in2;\n  readonly attribute SVGAnimatedEnumeration mode;\n};",
-    "href": "https://drafts.fxtf.org/filter-effects-1/#svgfeblendelement"
+    "href": "https://drafts.csswg.org/filter-effects-1/#svgfeblendelement"
   },
   "extended": [
     {
@@ -503,7 +503,7 @@
           "url": "https://www.w3.org/TR/filter-effects-1/"
         },
         "fragment": "interface mixin SVGFilterPrimitiveStandardAttributes {\n  readonly attribute SVGAnimatedLength x;\n  readonly attribute SVGAnimatedLength y;\n  readonly attribute SVGAnimatedLength width;\n  readonly attribute SVGAnimatedLength height;\n  readonly attribute SVGAnimatedString result;\n};",
-        "href": "https://drafts.fxtf.org/filter-effects-1/#svgfilterprimitivestandardattributes"
+        "href": "https://drafts.csswg.org/filter-effects-1/#svgfilterprimitivestandardattributes"
       },
       "extended": [],
       "inheritance": null,

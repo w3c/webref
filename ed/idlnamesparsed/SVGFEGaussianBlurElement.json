@@ -7,7 +7,7 @@
       "url": "https://www.w3.org/TR/filter-effects-1/"
     },
     "fragment": "[Exposed=Window]\ninterface SVGFEGaussianBlurElement : SVGElement {\n\n  // Edge Mode Values\n  const unsigned short SVG_EDGEMODE_UNKNOWN = 0;\n  const unsigned short SVG_EDGEMODE_DUPLICATE = 1;\n  const unsigned short SVG_EDGEMODE_WRAP = 2;\n  const unsigned short SVG_EDGEMODE_NONE = 3;\n\n  readonly attribute SVGAnimatedString in1;\n  readonly attribute SVGAnimatedNumber stdDeviationX;\n  readonly attribute SVGAnimatedNumber stdDeviationY;\n  readonly attribute SVGAnimatedEnumeration edgeMode;\n\n  undefined setStdDeviation(float stdDeviationX, float stdDeviationY);\n};",
-    "href": "https://drafts.fxtf.org/filter-effects-1/#svgfegaussianblurelement"
+    "href": "https://drafts.csswg.org/filter-effects-1/#svgfegaussianblurelement"
   },
   "extended": [
     {
@@ -503,7 +503,7 @@
           "url": "https://www.w3.org/TR/filter-effects-1/"
         },
         "fragment": "interface mixin SVGFilterPrimitiveStandardAttributes {\n  readonly attribute SVGAnimatedLength x;\n  readonly attribute SVGAnimatedLength y;\n  readonly attribute SVGAnimatedLength width;\n  readonly attribute SVGAnimatedLength height;\n  readonly attribute SVGAnimatedString result;\n};",
-        "href": "https://drafts.fxtf.org/filter-effects-1/#svgfilterprimitivestandardattributes"
+        "href": "https://drafts.csswg.org/filter-effects-1/#svgfilterprimitivestandardattributes"
       },
       "extended": [],
       "inheritance": null,

@@ -1,12 +1,12 @@
 {
   "spec": {
     "title": "Filter Effects Module Level 1",
-    "url": "https://drafts.fxtf.org/filter-effects-1/"
+    "url": "https://drafts.csswg.org/filter-effects-1/"
   },
   "properties": [
     {
       "name": "filter",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#propdef-filter",
+      "href": "https://drafts.csswg.org/filter-effects-1/#propdef-filter",
       "value": "none | <filter-value-list>",
       "initial": "none",
       "appliesTo": "All elements. In SVG, it applies to container elements without the defs element, all graphics elements and the use element.",
@@ -20,68 +20,68 @@
         {
           "name": "<url>",
           "prose": "A filter reference to a filter element. For example url(commonfilters.svg#filter). If the filter references a non-existent object or the referenced object is not a filter element, then the whole filter chain is ignored. No filter is applied to the object.",
-          "href": "https://drafts.fxtf.org/filter-effects-1/#typedef-filter-url",
+          "href": "https://drafts.csswg.org/filter-effects-1/#typedef-filter-url",
           "type": "type"
         },
         {
           "name": "blur()",
-          "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-blur",
-          "type": "function",
-          "value": "blur( <length>? )"
+          "value": "blur( <length>? )",
+          "href": "https://drafts.csswg.org/filter-effects-1/#funcdef-filter-blur",
+          "type": "function"
         },
         {
           "name": "brightness()",
-          "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-brightness",
-          "type": "function",
-          "value": "brightness( [ <number> | <percentage> ]? )"
+          "value": "brightness( [ <number> | <percentage> ]? )",
+          "href": "https://drafts.csswg.org/filter-effects-1/#funcdef-filter-brightness",
+          "type": "function"
         },
         {
           "name": "contrast()",
-          "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-contrast",
-          "type": "function",
-          "value": "contrast( [ <number> | <percentage> ]? )"
+          "value": "contrast( [ <number> | <percentage> ]? )",
+          "href": "https://drafts.csswg.org/filter-effects-1/#funcdef-filter-contrast",
+          "type": "function"
         },
         {
           "name": "drop-shadow()",
-          "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-drop-shadow",
-          "type": "function",
-          "value": "drop-shadow( [ <color>? && <length>{2,3} ] )"
+          "value": "drop-shadow( [ <color>? && <length>{2,3} ] )",
+          "href": "https://drafts.csswg.org/filter-effects-1/#funcdef-filter-drop-shadow",
+          "type": "function"
         },
         {
           "name": "grayscale()",
-          "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-grayscale",
-          "type": "function",
-          "value": "grayscale( [ <number> | <percentage> ]? )"
+          "value": "grayscale( [ <number> | <percentage> ]? )",
+          "href": "https://drafts.csswg.org/filter-effects-1/#funcdef-filter-grayscale",
+          "type": "function"
         },
         {
           "name": "hue-rotate()",
-          "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-hue-rotate",
-          "type": "function",
-          "value": "hue-rotate( [ <angle> | <zero> ]? )"
+          "value": "hue-rotate( [ <angle> | <zero> ]? )",
+          "href": "https://drafts.csswg.org/filter-effects-1/#funcdef-filter-hue-rotate",
+          "type": "function"
         },
         {
           "name": "invert()",
-          "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-invert",
-          "type": "function",
-          "value": "invert( [ <number> | <percentage> ]? )"
+          "value": "invert( [ <number> | <percentage> ]? )",
+          "href": "https://drafts.csswg.org/filter-effects-1/#funcdef-filter-invert",
+          "type": "function"
         },
         {
           "name": "opacity()",
-          "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-opacity",
-          "type": "function",
-          "value": "opacity( [ <number> | <percentage> ]? )"
+          "value": "opacity( [ <number> | <percentage> ]? )",
+          "href": "https://drafts.csswg.org/filter-effects-1/#funcdef-filter-opacity",
+          "type": "function"
         },
         {
           "name": "saturate()",
-          "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-saturate",
-          "type": "function",
-          "value": "saturate( [ <number> | <percentage> ]? )"
+          "value": "saturate( [ <number> | <percentage> ]? )",
+          "href": "https://drafts.csswg.org/filter-effects-1/#funcdef-filter-saturate",
+          "type": "function"
         },
         {
           "name": "sepia()",
-          "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter-sepia",
-          "type": "function",
-          "value": "sepia( [ <number> | <percentage> ]? )"
+          "value": "sepia( [ <number> | <percentage> ]? )",
+          "href": "https://drafts.csswg.org/filter-effects-1/#funcdef-filter-sepia",
+          "type": "function"
         }
       ],
       "styleDeclaration": [
@@ -90,7 +90,7 @@
     },
     {
       "name": "flood-color",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#propdef-flood-color",
+      "href": "https://drafts.csswg.org/filter-effects-1/#propdef-flood-color",
       "value": "<color>",
       "initial": "black",
       "appliesTo": "feFlood and feDropShadow elements",
@@ -107,7 +107,7 @@
     },
     {
       "name": "flood-opacity",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#propdef-flood-opacity",
+      "href": "https://drafts.csswg.org/filter-effects-1/#propdef-flood-opacity",
       "value": "<'opacity'>",
       "initial": "1",
       "appliesTo": "feFlood and feDropShadow elements",
@@ -124,7 +124,7 @@
     },
     {
       "name": "color-interpolation-filters",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#propdef-color-interpolation-filters",
+      "href": "https://drafts.csswg.org/filter-effects-1/#propdef-color-interpolation-filters",
       "value": "auto | sRGB | linearRGB",
       "initial": "linearRGB",
       "appliesTo": "All filter primitives",
@@ -138,21 +138,21 @@
         {
           "name": "auto",
           "prose": "Indicates that the user agent can choose either the sRGB or linearRGB spaces for filter effects color operations. This option indicates that the author doesn’t require that color operations occur in a particular color space.",
-          "href": "https://drafts.fxtf.org/filter-effects-1/#valdef-color-interpolation-filters-auto",
+          "href": "https://drafts.csswg.org/filter-effects-1/#valdef-color-interpolation-filters-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "sRGB",
           "prose": "Indicates that filter effects color operations should occur in the gamma-encoded sRGB color space.",
-          "href": "https://drafts.fxtf.org/filter-effects-1/#valdef-color-interpolation-filters-srgb",
+          "href": "https://drafts.csswg.org/filter-effects-1/#valdef-color-interpolation-filters-srgb",
           "type": "value",
           "value": "sRGB"
         },
         {
           "name": "linearRGB",
           "prose": "Indicates that filter effects color operations should occur in the linear-light sRGB color space.",
-          "href": "https://drafts.fxtf.org/filter-effects-1/#valdef-color-interpolation-filters-linearrgb",
+          "href": "https://drafts.csswg.org/filter-effects-1/#valdef-color-interpolation-filters-linearrgb",
           "type": "value",
           "value": "linearRGB"
         }
@@ -164,7 +164,7 @@
     },
     {
       "name": "lighting-color",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#propdef-lighting-color",
+      "href": "https://drafts.csswg.org/filter-effects-1/#propdef-lighting-color",
       "value": "<color>",
       "initial": "white",
       "appliesTo": "feDiffuseLighting and feSpecularLighting elements",
@@ -185,34 +185,34 @@
   "values": [
     {
       "name": "<filter-value-list>",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#typedef-filter-value-list",
+      "href": "https://drafts.csswg.org/filter-effects-1/#typedef-filter-value-list",
       "type": "type",
       "value": "[ <filter-function> | <url> ]+"
     },
     {
       "name": "<filter-function>",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#typedef-filter-function",
+      "href": "https://drafts.csswg.org/filter-effects-1/#typedef-filter-function",
       "type": "type",
       "value": "<blur()> | <brightness()> | <contrast()> | <drop-shadow()> | <grayscale()> | <hue-rotate()> | <invert()> | <opacity()> | <sepia()> | <saturate()>"
     },
     {
       "name": "<number-optional-number>",
       "value": "<number> <number>?",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#typedef-number-optional-number",
+      "href": "https://drafts.csswg.org/filter-effects-1/#typedef-number-optional-number",
       "type": "type"
     },
     {
       "name": "filter()",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#funcdef-filter",
-      "type": "function",
-      "value": "filter( [ <image> | <string> ], <filter-value-list> )"
+      "value": "filter( [ <image> | <string> ], <filter-value-list> )",
+      "href": "https://drafts.csswg.org/filter-effects-1/#funcdef-filter",
+      "type": "function"
     }
   ],
   "warnings": [
     {
       "msg": "Dangling value",
       "name": "<filter-primitive-reference>",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#typedef-result-filter-primitive-reference",
+      "href": "https://drafts.csswg.org/filter-effects-1/#typedef-result-filter-primitive-reference",
       "type": "type",
       "for": "result"
     }

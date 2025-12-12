@@ -7,7 +7,7 @@
       "url": "https://www.w3.org/TR/filter-effects-1/"
     },
     "fragment": "[Exposed=Window]\ninterface SVGFETurbulenceElement : SVGElement {\n\n  // Turbulence Types\n  const unsigned short SVG_TURBULENCE_TYPE_UNKNOWN = 0;\n  const unsigned short SVG_TURBULENCE_TYPE_FRACTALNOISE = 1;\n  const unsigned short SVG_TURBULENCE_TYPE_TURBULENCE = 2;\n\n  // Stitch Options\n  const unsigned short SVG_STITCHTYPE_UNKNOWN = 0;\n  const unsigned short SVG_STITCHTYPE_STITCH = 1;\n  const unsigned short SVG_STITCHTYPE_NOSTITCH = 2;\n\n  readonly attribute SVGAnimatedNumber baseFrequencyX;\n  readonly attribute SVGAnimatedNumber baseFrequencyY;\n  readonly attribute SVGAnimatedInteger numOctaves;\n  readonly attribute SVGAnimatedNumber seed;\n  readonly attribute SVGAnimatedEnumeration stitchTiles;\n  readonly attribute SVGAnimatedEnumeration type;\n};",
-    "href": "https://drafts.fxtf.org/filter-effects-1/#svgfeturbulenceelement"
+    "href": "https://drafts.csswg.org/filter-effects-1/#svgfeturbulenceelement"
   },
   "extended": [
     {
@@ -503,7 +503,7 @@
           "url": "https://www.w3.org/TR/filter-effects-1/"
         },
         "fragment": "interface mixin SVGFilterPrimitiveStandardAttributes {\n  readonly attribute SVGAnimatedLength x;\n  readonly attribute SVGAnimatedLength y;\n  readonly attribute SVGAnimatedLength width;\n  readonly attribute SVGAnimatedLength height;\n  readonly attribute SVGAnimatedString result;\n};",
-        "href": "https://drafts.fxtf.org/filter-effects-1/#svgfilterprimitivestandardattributes"
+        "href": "https://drafts.csswg.org/filter-effects-1/#svgfilterprimitivestandardattributes"
       },
       "extended": [],
       "inheritance": null,

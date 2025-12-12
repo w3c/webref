@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "Filter Effects Module Level 1",
-    "url": "https://drafts.fxtf.org/filter-effects-1/"
+    "url": "https://drafts.csswg.org/filter-effects-1/"
   },
   "links": {
     "rawlinks": {
@@ -145,15 +145,14 @@
       "https://drafts.csswg.org/css-backgrounds/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
       "https://drafts.csswg.org/css-color-3/": {},
+      "https://drafts.csswg.org/css-color-4/": {},
       "https://drafts.csswg.org/css-color-5/": {},
-      "https://drafts.csswg.org/css-color/": {},
       "https://drafts.csswg.org/css-display-4/": {},
       "https://drafts.csswg.org/css-display/": {},
       "https://drafts.csswg.org/css-fonts-4/": {},
       "https://drafts.csswg.org/css-fonts-5/": {},
       "https://drafts.csswg.org/css-images-3/": {},
       "https://drafts.csswg.org/css-overflow-3/": {},
-      "https://drafts.csswg.org/css-position-4/": {},
       "https://drafts.csswg.org/css-text-4/": {},
       "https://drafts.csswg.org/css-text-decor-4/": {},
       "https://drafts.csswg.org/css-transforms/": {},
@@ -199,13 +198,6 @@
       "https://webidl.spec.whatwg.org/": {},
       "https://webstore.iec.ch/publication/6169": {},
       "https://wiki.mozilla.org/User:Bjacob/ArithmeticTimingDifferences": {},
-      "https://www.w3.org/2023/Process-20231103/": {},
-      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
       "https://www.w3.org/Style/": {},
       "https://www.w3.org/TR/2011/REC-SVG11-20110816/intro.html": {
         "anchors": [
@@ -250,6 +242,11 @@
           "Units_viewport_percentage"
         ]
       },
+      "https://www.w3.org/TR/SVG11/filters.html": {
+        "anchors": [
+          "EnableBackgroundProperty"
+        ]
+      },
       "https://www.w3.org/TR/SVG11/render.html": {
         "anchors": [
           "Introduction"
@@ -280,7 +277,14 @@
         ]
       },
       "https://www.w3.org/groups/wg/css": {},
-      "https://www.w3.org/groups/wg/css/ipr": {}
+      "https://www.w3.org/groups/wg/css/ipr": {},
+      "https://www.w3.org/policies/patent-policy/20200915/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20250818/": {}
     },
     "autolinks": {
       "http://www.w3.org/TR/2008/REC-SVGTiny12-20081222/intro.html": {
@@ -313,6 +317,9 @@
       "https://drafts.csswg.org/css-color-5/": {
         "anchors": [
           "typedef-color",
+          "valdef-color-r",
+          "valdef-color-g",
+          "valdef-color-b",
           "valdef-lab-a"
         ]
       },
@@ -349,12 +356,8 @@
         "anchors": [
           "ink-overflow-region",
           "ink-overflow-rectangle",
-          "propdef-overflow"
-        ]
-      },
-      "https://drafts.csswg.org/css-position-4/": {
-        "anchors": [
-          "propdef-overlay"
+          "propdef-overflow",
+          "valdef-overflow-overlay"
         ]
       },
       "https://drafts.csswg.org/css-text-4/": {
@@ -429,14 +432,28 @@
       },
       "https://drafts.fxtf.org/compositing-1/": {
         "anchors": [
-          "valdef-blend-mode-normal"
+          "valdef-blend-mode-normal",
+          "valdef-blend-mode-screen",
+          "valdef-blend-mode-saturation",
+          "valdef-blend-mode-color"
         ]
       },
       "https://drafts.fxtf.org/compositing-2/": {
         "anchors": [
           "propdef-isolation",
           "ltblendmodegt",
-          "backdrop"
+          "backdrop",
+          "valdef-blend-mode-multiply",
+          "valdef-blend-mode-darken",
+          "valdef-blend-mode-lighten",
+          "valdef-blend-mode-color-dodge",
+          "valdef-blend-mode-color-burn",
+          "valdef-blend-mode-hard-light",
+          "valdef-blend-mode-soft-light",
+          "valdef-blend-mode-difference",
+          "valdef-blend-mode-exclusion",
+          "valdef-blend-mode-hue",
+          "valdef-blend-mode-luminosity"
         ]
       },
       "https://drafts.fxtf.org/css-masking-1/": {
@@ -479,11 +496,6 @@
       "https://svgwg.org/svg2-draft/embedded.html": {
         "anchors": [
           "elementdef-image"
-        ]
-      },
-      "https://svgwg.org/svg2-draft/geometry.html": {
-        "anchors": [
-          "RProperty"
         ]
       },
       "https://svgwg.org/svg2-draft/interact.html": {
@@ -564,7 +576,7 @@
           "idl-float"
         ]
       },
-      "https://www.w3.org/TR/CSS21/visuren.html": {
+      "https://www.w3.org/TR/CSS2/visuren.html": {
         "anchors": [
           "x43"
         ]
