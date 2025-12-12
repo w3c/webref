@@ -7,20 +7,20 @@
     {
       "name": "get a platform sensor’s sampling bounds",
       "href": "https://www.w3.org/TR/generic-sensor/#get-a-platform-sensors-sampling-bounds",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-a-platform-sensors-sampling-bounds\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a platform sensor’s sampling bounds</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#concept-platform-sensor\" id=\"ref-for-concept-platform-sensor②④\">platform sensor</a> <var>platformSensor</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-a-platform-sensors-sampling-bounds\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get a platform sensor’s sampling bounds</dfn> given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#concept-platform-sensor\" id=\"ref-for-concept-platform-sensor②④\">platform sensor</a>\n<var>platformSensor</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>minimumFrequency</var> be <var>platformSensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sensor-type\" id=\"ref-for-sensor-type②⑥\">sensor type</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sensor-type-minimum-sampling-frequency\" id=\"ref-for-sensor-type-minimum-sampling-frequency②\">minimum sampling\n  frequency</a>.</p>"
+          "html": "<p>Let <var>minimumFrequency</var> be <var>platformSensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sensor-type\" id=\"ref-for-sensor-type②⑥\">sensor type</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sensor-type-minimum-sampling-frequency\" id=\"ref-for-sensor-type-minimum-sampling-frequency②\">minimum sampling frequency</a>.</p>"
         },
         {
-          "html": "<p>If <var>platformSensor</var>’s connected <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#concept-device-sensor\" id=\"ref-for-concept-device-sensor③③\">device sensor</a> has a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#device-sensor-minimum-sampling-frequency\" id=\"ref-for-device-sensor-minimum-sampling-frequency②\">minimum sampling\n  frequency</a>, set <var>minimumFrequency</var> to the maximum of <var>minimumFrequency</var> and this value.</p>"
+          "html": "<p>If <var>platformSensor</var>’s connected <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#concept-device-sensor\" id=\"ref-for-concept-device-sensor③③\">device sensor</a> has a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#device-sensor-minimum-sampling-frequency\" id=\"ref-for-device-sensor-minimum-sampling-frequency②\">minimum sampling frequency</a>, set <var>minimumFrequency</var> to the maximum of <var>minimumFrequency</var> and this value.</p>"
         },
         {
-          "html": "<p>Let <var>maximumFrequency</var> be <var>platformSensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sensor-type\" id=\"ref-for-sensor-type②⑦\">sensor type</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sensor-type-maximum-sampling-frequency\" id=\"ref-for-sensor-type-maximum-sampling-frequency④\">maximum sampling\n  frequency</a>.</p>"
+          "html": "<p>Let <var>maximumFrequency</var> be <var>platformSensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sensor-type\" id=\"ref-for-sensor-type②⑦\">sensor type</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sensor-type-maximum-sampling-frequency\" id=\"ref-for-sensor-type-maximum-sampling-frequency④\">maximum sampling frequency</a>.</p>"
         },
         {
-          "html": "<p>If <var>platformSensor</var>’s connected <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#concept-device-sensor\" id=\"ref-for-concept-device-sensor③④\">device sensor</a> has a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#device-sensor-maximum-sampling-frequency\" id=\"ref-for-device-sensor-maximum-sampling-frequency③\">maximum sampling\n  frequency</a>, set <var>maximumFrequency</var> to the minimum of <var>maximumFrequency</var> and this value.</p>"
+          "html": "<p>If <var>platformSensor</var>’s connected <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#concept-device-sensor\" id=\"ref-for-concept-device-sensor③④\">device sensor</a> has a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#device-sensor-maximum-sampling-frequency\" id=\"ref-for-device-sensor-maximum-sampling-frequency③\">maximum sampling frequency</a>, set <var>maximumFrequency</var> to the minimum of <var>maximumFrequency</var> and this value.</p>"
         },
         {
           "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple\">tuple</a> (<var>minimumFrequency</var>, <var>maximumFrequency</var>).</p>"
@@ -62,10 +62,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
+          "html": "<p>Let <var>global</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
         },
         {
-          "html": "<p>Let <var>unsafeTimestamp</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#get-value-from-latest-reading\" id=\"ref-for-get-value-from-latest-reading②\">get value from latest reading</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a> and \"timestamp\" as arguments.</p>"
+          "html": "<p>Let <var>unsafeTimestamp</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#get-value-from-latest-reading\" id=\"ref-for-get-value-from-latest-reading②\">get value from latest reading</a> with\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a> and \"timestamp\" as arguments.</p>"
         },
         {
           "html": "<p>If <var>unsafeTimestamp</var> is null, return null.</p>"
@@ -91,14 +91,14 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>permissionState</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#request-sensor-access\" id=\"ref-for-request-sensor-access①\">request sensor access</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a> as argument.</p>"
+              "html": "<p>Let <var>permissionState</var> be the result of invoking\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#request-sensor-access\" id=\"ref-for-request-sensor-access①\">request sensor access</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a> as argument.</p>"
             },
             {
               "html": "If <var>permissionState</var> is \"denied\", then:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>e</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception\">creating</a> a \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+                  "html": "<p>Let <var>e</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception\">creating</a>\n  a \"<code class=\"idl\"><a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
                 },
                 {
                   "html": "<p>Queue a task to run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#notify-error\" id=\"ref-for-notify-error\">notify error</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a> and <var>e</var> as arguments.</p>"
@@ -109,7 +109,7 @@
               ]
             },
             {
-              "html": "<p>Let <var>connected</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#connect-to-sensor\" id=\"ref-for-connect-to-sensor\">connect to sensor</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a> and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> as argument.</p>"
+              "html": "<p>Let <var>connected</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#connect-to-sensor\" id=\"ref-for-connect-to-sensor\">connect to sensor</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a> and\n  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a> as argument.</p>"
             },
             {
               "html": "If <var>connected</var> is false, then",
@@ -199,7 +199,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document③\">active document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use②\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②\">policy-controlled feature</a> named <var>feature_name</var>, then:",
+              "html": "If <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document③\">active document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use②\">allowed to use</a> the\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②\">policy-controlled feature</a> named <var>feature_name</var>, then:",
               "rationale": "return",
               "steps": [
                 {
@@ -229,7 +229,7 @@
           "html": "<p>Let <var>virtualSensorType</var> be <var>sensor</var>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-type\" id=\"ref-for-virtual-sensor-type①\">virtual sensor type</a>, or null if it is not set.</p>"
         },
         {
-          "html": "<p>Let <var>topLevelTraversable</var> be <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable\">navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top\">top-level\n  traversable</a>.</p>"
+          "html": "<p>Let <var>topLevelTraversable</var> be <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-navigable\" id=\"ref-for-window-navigable\">navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top\">top-level traversable</a>.</p>"
         },
         {
           "html": "If <var>virtualSensorType</var> is not null and <var>topLevelTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping\">virtual sensor mapping</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">contains</a> <var>virtualSensorType</var>:",
@@ -239,7 +239,7 @@
               "html": "<p>Let <var>virtualSensor</var> be <var>topLevelTraversable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping①\">virtual sensor mapping</a>[<var>virtualSensorType</var>].</p>"
             },
             {
-              "html": "<p>If <var>virtualSensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-can-provide-readings-flag\" id=\"ref-for-virtual-sensor-can-provide-readings-flag\">can provide readings flag</a> is true, set <var>platformSensor</var> to a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#concept-platform-sensor\" id=\"ref-for-concept-platform-sensor③④\">platform sensor</a> corresponding to <var>virtualSensor</var>.</p>"
+              "html": "<p>If <var>virtualSensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-can-provide-readings-flag\" id=\"ref-for-virtual-sensor-can-provide-readings-flag\">can provide readings flag</a> is true, set <var>platformSensor</var>\n to a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#concept-platform-sensor\" id=\"ref-for-concept-platform-sensor③④\">platform sensor</a> corresponding to <var>virtualSensor</var>.</p>"
             }
           ]
         },
@@ -277,7 +277,7 @@
           "html": "<p>If <var>platformSensor</var> is null, return false.</p>"
         },
         {
-          "html": "<p>Let <var>bounds</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#get-a-platform-sensors-sampling-bounds\" id=\"ref-for-get-a-platform-sensors-sampling-bounds①\">get a platform sensor’s sampling bounds</a> with <var>platformSensor</var>.</p>"
+          "html": "<p>Let <var>bounds</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#get-a-platform-sensors-sampling-bounds\" id=\"ref-for-get-a-platform-sensors-sampling-bounds①\">get a platform sensor’s sampling bounds</a> with\n  <var>platformSensor</var>.</p>"
         },
         {
           "html": "<p>If <var>sensor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/generic-sensor/#dom-sensor-frequency-slot\" id=\"ref-for-dom-sensor-frequency-slot⑤\">[[frequency]]</a></code> is null, set it to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> value\n  dependent on <var>type</var>.</p>"
@@ -308,7 +308,7 @@
           "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#set-sensor-settings\" id=\"ref-for-set-sensor-settings\">set sensor settings</a> with <var>sensor</var> as argument.</p>"
         },
         {
-          "html": "<p>Queue a task to run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#notify-activated-state\" id=\"ref-for-notify-activated-state\">notify activated state</a> with <var>sensor_instance</var> as an argument.</p>"
+          "html": "<p>Queue a task to run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#notify-activated-state\" id=\"ref-for-notify-activated-state\">notify activated state</a> with <var>sensor_instance</var>\n  as an argument.</p>"
         }
       ]
     },
@@ -356,14 +356,14 @@
               "html": "<p>If <var>sensor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/generic-sensor/#dom-sensor-state-slot\" id=\"ref-for-dom-sensor-state-slot⑨\">[[state]]</a></code> is \"idle\", then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
             },
             {
-              "html": "If <var>sensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sensor-type\" id=\"ref-for-sensor-type③②\">sensor type</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sensor-permission-names\" id=\"ref-for-sensor-permission-names\">sensor permission names</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contains</a> <var>permissionName</var>:",
+              "html": "If <var>sensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sensor-type\" id=\"ref-for-sensor-type③②\">sensor type</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sensor-permission-names\" id=\"ref-for-sensor-permission-names\">sensor permission names</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contains</a>\n  <var>permissionName</var>:",
               "rationale": "invoke",
               "steps": [
                 {
                   "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#deactivate-a-sensor-object\" id=\"ref-for-deactivate-a-sensor-object②\">deactivate a sensor object</a> with <var>sensor</var>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>exception</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception②\">creating</a> a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code>.</p>"
+                  "html": "<p>Let <var>exception</var> be the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-exception\" id=\"ref-for-dfn-create-exception②\">creating</a>\n a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code>.</p>"
                 },
                 {
                   "html": "<p>Queue a task to run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#notify-error\" id=\"ref-for-notify-error②\">notify error</a> with <var>sensor</var> and <var>exception</var>.</p>"
@@ -404,13 +404,13 @@
           ]
         },
         {
-          "html": "<p>Set <var>platformSensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sampling-frequency\" id=\"ref-for-sampling-frequency①②\">sampling frequency</a> to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑥\">implementation-defined</a> value based\n  on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/generic-sensor/#dom-sensor-frequency-slot\" id=\"ref-for-dom-sensor-frequency-slot⑧\">[[frequency]]</a></code> values of the items in its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#activated-sensor-objects\" id=\"ref-for-activated-sensor-objects⑦\">activated sensor objects</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④\">set</a>.</p>"
+          "html": "<p>Set <var>platformSensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sampling-frequency\" id=\"ref-for-sampling-frequency①②\">sampling frequency</a> to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑥\">implementation-defined</a> value based\n  on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/generic-sensor/#dom-sensor-frequency-slot\" id=\"ref-for-dom-sensor-frequency-slot⑧\">[[frequency]]</a></code> values of the items in its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#activated-sensor-objects\" id=\"ref-for-activated-sensor-objects⑦\">activated sensor objects</a>\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④\">set</a>.</p>"
         },
         {
-          "html": "<p>Let <var>bounds</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#get-a-platform-sensors-sampling-bounds\" id=\"ref-for-get-a-platform-sensors-sampling-bounds②\">get a platform sensor’s sampling bounds</a> with <var>platformSensor</var>.</p>"
+          "html": "<p>Let <var>bounds</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#get-a-platform-sensors-sampling-bounds\" id=\"ref-for-get-a-platform-sensors-sampling-bounds②\">get a platform sensor’s sampling bounds</a> with\n  <var>platformSensor</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>platformSensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sampling-frequency\" id=\"ref-for-sampling-frequency①③\">sampling frequency</a> is greater than or equal to <var>bounds</var>[0] and less than or equal to <var>bounds</var>[1].</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>platformSensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#sampling-frequency\" id=\"ref-for-sampling-frequency①③\">sampling frequency</a> is greater than or equal to\n  <var>bounds</var>[0] and less than or equal to <var>bounds</var>[1].</p>"
         }
       ]
     },
@@ -427,7 +427,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>result</var> be the result of invoking <var>type</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#threshold-check-algorithm\" id=\"ref-for-threshold-check-algorithm④\">threshold check algorithm</a> with <var>reading</var> and <var>sensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#latest-reading\" id=\"ref-for-latest-reading①①\">latest reading</a>.</p>"
+              "html": "<p>Let <var>result</var> be the result of invoking <var>type</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#threshold-check-algorithm\" id=\"ref-for-threshold-check-algorithm④\">threshold check algorithm</a>\n  with <var>reading</var> and <var>sensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#latest-reading\" id=\"ref-for-latest-reading①①\">latest reading</a>.</p>"
             },
             {
               "html": "<p>If <var>result</var> is false, then abort these steps.</p>"
@@ -439,7 +439,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>reading</var>[\"timestamp\"] to the result of converting its current value in an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑦\">implementation-defined</a> way to an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time①\">unsafe current time</a> using the\n  same <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock\">monotonic clock</a> that is shared by <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-time-origin\" id=\"ref-for-concept-settings-object-time-origin①\">time origins</a>.</p>"
+              "html": "<p>Set <var>reading</var>[\"timestamp\"] to the result of converting its current value in an\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑦\">implementation-defined</a> way to an <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#monotonic-clock-unsafe-current-time\" id=\"ref-for-monotonic-clock-unsafe-current-time①\">unsafe current time</a> using the\n  same <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-monotonic-clock\" id=\"ref-for-dfn-monotonic-clock\">monotonic clock</a> that is shared by <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-time-origin\" id=\"ref-for-concept-settings-object-time-origin①\">time origins</a>.</p>"
             }
           ]
         },
@@ -520,7 +520,7 @@
           "html": "<p>Let <var>timestampDelta</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#latest-reading\" id=\"ref-for-latest-reading①④\">latest reading</a>[\"timestamp\"] - <var>lastReportedTimestamp</var>.</p>"
         },
         {
-          "html": "If <var>timestampDelta</var> is greater than or equal to <var>reportingInterval</var>",
+          "html": "If  <var>timestampDelta</var> is greater than or equal to <var>reportingInterval</var>",
           "rationale": "queue",
           "steps": [
             {
@@ -583,7 +583,7 @@
           "rationale": "queue",
           "steps": [
             {
-              "html": "<p>Queue a task to run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#notify-new-reading\" id=\"ref-for-notify-new-reading③\">notify new reading</a> with <var>sensor_instance</var> as an argument.</p>"
+              "html": "<p>Queue a task to run <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#notify-new-reading\" id=\"ref-for-notify-new-reading③\">notify new reading</a> with <var>sensor_instance</var>\n  as an argument.</p>"
             }
           ]
         }
@@ -598,7 +598,7 @@
           "html": "<p>Set <var>sensor_instance</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/generic-sensor/#dom-sensor-state-slot\" id=\"ref-for-dom-sensor-state-slot①①\">[[state]]</a></code> to \"idle\".</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">Fire an event</a> named \"error\" at <var>sensor_instance</var> using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/generic-sensor/#sensorerrorevent\" id=\"ref-for-sensorerrorevent①\">SensorErrorEvent</a></code> with its <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://www.w3.org/TR/generic-sensor/#dom-sensorerrorevent-error\" id=\"ref-for-dom-sensorerrorevent-error①\">error</a></code> attribute initialized to <var>error</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">Fire an event</a> named \"error\" at <var>sensor_instance</var> using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/generic-sensor/#sensorerrorevent\" id=\"ref-for-sensorerrorevent①\">SensorErrorEvent</a></code>\n  with its <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://www.w3.org/TR/generic-sensor/#dom-sensorerrorevent-error\" id=\"ref-for-dom-sensorerrorevent-error①\">error</a></code> attribute initialized to <var>error</var>.</p>"
         }
       ]
     },
@@ -631,7 +631,7 @@
               "rationale": "remap",
               "steps": [
                 {
-                  "html": "<p>Remap (see <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/generic-sensor/#biblio-coordinates-transformation\" title=\"The Foundations of Celestial Mechanics\">[COORDINATES-TRANSFORMATION]</a>) <var>readings</var> values to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#local-coordinate-system\" id=\"ref-for-local-coordinate-system③\">local coordinate system</a>.</p>"
+                  "html": "<p>Remap (see <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/generic-sensor/#biblio-coordinates-transformation\" title=\"The Foundations of Celestial Mechanics\">[COORDINATES-TRANSFORMATION]</a>) <var>readings</var> values to the\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#local-coordinate-system\" id=\"ref-for-local-coordinate-system③\">local coordinate system</a>.</p>"
                 }
               ]
             },
@@ -685,13 +685,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>origin</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>.</p>"
+          "html": "<p>Let <var>origin</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>.</p>"
         },
         {
-          "html": "<p>Let <var>focusedDocument</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable\">node navigable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①\">top-level traversable</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#currently-focused-area-of-a-top-level-traversable\" id=\"ref-for-currently-focused-area-of-a-top-level-traversable\">currently focused area</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#dom-anchor\" id=\"ref-for-dom-anchor\">DOM anchor</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>.</p>"
+          "html": "<p>Let <var>focusedDocument</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable\">node navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①\">top-level traversable</a>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#currently-focused-area-of-a-top-level-traversable\" id=\"ref-for-currently-focused-area-of-a-top-level-traversable\">currently focused area</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#dom-anchor\" id=\"ref-for-dom-anchor\">DOM anchor</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>.</p>"
         },
         {
-          "html": "<p>Let <var>focusedOrigin</var> be <var>focusedDocument</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>.</p>"
+          "html": "<p>Let <var>focusedOrigin</var> be <var>focusedDocument</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object②\">relevant settings object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin①\">origin</a>.</p>"
         },
         {
           "html": "<p>Return true if <var>origin</var> and <var>focusedOrigin</var> are <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#same-origin-domain\" id=\"ref-for-same-origin-domain\">same origin-domain</a>, and false otherwise.</p>"
@@ -707,16 +707,16 @@
           "html": "<p>Let <var>virtualSensorType</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties\">get a property</a> \"<code>type</code>\" from <var>parameters</var>.</p>"
         },
         {
-          "html": "<p>If <var>virtualSensorType</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects\" id=\"ref-for-sec-string-objects①\">String</a></code>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument\">invalid\n  argument</a>.</p>"
+          "html": "<p>If <var>virtualSensorType</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects\" id=\"ref-for-sec-string-objects①\">String</a></code>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#per-type-virtual-sensor-metadata\" id=\"ref-for-per-type-virtual-sensor-metadata\">per-type virtual sensor metadata</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">contain</a> <var>virtualSensorType</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①\">invalid argument</a>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#per-type-virtual-sensor-metadata\" id=\"ref-for-per-type-virtual-sensor-metadata\">per-type virtual sensor metadata</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">contain</a> <var>virtualSensorType</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①\">error</a>\n  with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>Let <var>topLevelVirtualSensorMapping</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context\">current browsing context</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable\">top-level traversable</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping④\">virtual sensor mapping</a>.</p>"
+          "html": "<p>Let <var>topLevelVirtualSensorMapping</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context\">current browsing context</a>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping④\">virtual sensor mapping</a>.</p>"
         },
         {
-          "html": "<p>If <var>topLevelVirtualSensorMapping</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">contains</a> <var>virtualSensorType</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②\">invalid argument</a>.</p>"
+          "html": "<p>If <var>topLevelVirtualSensorMapping</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">contains</a> <var>virtualSensorType</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error②\">error</a> with\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code②\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument②\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>connected</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-getting-the-property-with-default\" id=\"ref-for-dfn-getting-the-property-with-default\">get a property with default</a> with\n  \"<code>connected</code>\" and true from <var>parameters</var>.</p>"
@@ -725,16 +725,16 @@
           "html": "<p>Let <var>maxSamplingFrequency</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-getting-the-property-with-default\" id=\"ref-for-dfn-getting-the-property-with-default①\">get a property with default</a> with\n  \"<code>maxSamplingFrequency</code>\" and an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑨\">implementation-defined</a> value from <var>parameters</var>.</p>"
         },
         {
-          "html": "<p>If <var>maxSamplingFrequency</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects\" id=\"ref-for-sec-number-objects②\">Number</a></code>, or its value is <strong>NaN</strong>, +∞, or −∞, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error③\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code③\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument③\">invalid argument</a>.</p>"
+          "html": "<p>If <var>maxSamplingFrequency</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects\" id=\"ref-for-sec-number-objects②\">Number</a></code>, or its value is <strong>NaN</strong>, +∞, or −∞, return\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error③\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code③\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument③\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>minSamplingFrequency</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-getting-the-property-with-default\" id=\"ref-for-dfn-getting-the-property-with-default②\">get a property with default</a> with\n  \"<code>minSamplingFrequency</code>\" and an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①⓪\">implementation-defined</a> value from <var>parameters</var>.</p>"
         },
         {
-          "html": "<p>If <var>minSamplingFrequency</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects\" id=\"ref-for-sec-number-objects③\">Number</a></code>, or its value is <strong>NaN</strong>, +∞, or −∞, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code④\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument④\">invalid argument</a>.</p>"
+          "html": "<p>If <var>minSamplingFrequency</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects\" id=\"ref-for-sec-number-objects③\">Number</a></code>, or its value is <strong>NaN</strong>, +∞, or −∞, return\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error④\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code④\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument④\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>If <var>minSamplingFrequency</var> is greater than <var>maxSamplingFrequency</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error⑤\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤\">invalid argument</a>.</p>"
+          "html": "<p>If <var>minSamplingFrequency</var> is greater than <var>maxSamplingFrequency</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error⑤\">error</a>\n  with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑤\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑤\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>virtualSensor</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor\" id=\"ref-for-virtual-sensor①④\">virtual sensor</a>.</p>"
@@ -752,7 +752,7 @@
           "html": "<p>Set <var>topLevelVirtualSensorMapping</var>[<var>virtualSensorType</var>] to <var>virtualSensor</var>.</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success\">success</a> with data <code>null</code>.</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#success\" id=\"ref-for-success\">success</a> with data <code>null</code>.</p>"
         }
       ]
     },
@@ -765,10 +765,10 @@
           "html": "<p>Let <var>virtualSensorType</var> be the value of the <code>type</code> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-url-variables\" id=\"ref-for-dfn-url-variables\">url variable</a>.</p>"
         },
         {
-          "html": "<p>Let <var>topLevelVirtualSensorMapping</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context②\">current browsing context</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable①\">top-level traversable</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping⑤\">virtual sensor mapping</a>.</p>"
+          "html": "<p>Let <var>topLevelVirtualSensorMapping</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context②\">current browsing context</a>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable①\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping⑤\">virtual sensor mapping</a>.</p>"
         },
         {
-          "html": "<p>If <var>topLevelVirtualSensorMapping</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">contain</a> <var>virtualSensorType</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error⑥\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑦\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑦\">invalid argument</a>.</p>"
+          "html": "<p>If <var>topLevelVirtualSensorMapping</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">contain</a> <var>virtualSensorType</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error⑥\">error</a> with\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑦\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑦\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>virtualSensor</var> be <var>topLevelVirtualSensorMapping</var>[<var>virtualSensorType</var>].</p>"
@@ -777,10 +777,10 @@
           "html": "<p>Let <var>info</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects\" id=\"ref-for-sec-object-objects②\">Object</a></code>.</p>"
         },
         {
-          "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-set-a-property\" id=\"ref-for-dfn-set-a-property\">set a property</a> on <var>info</var> with \"<code>requestedSamplingFrequency</code>\" and <var>virtualSensor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-requested-sampling-frequency\" id=\"ref-for-virtual-sensor-requested-sampling-frequency⑤\">requested sampling frequency</a>.</p>"
+          "html": "<p>Invoke <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-set-a-property\" id=\"ref-for-dfn-set-a-property\">set a property</a> on <var>info</var> with \"<code>requestedSamplingFrequency</code>\" and <var>virtualSensor</var>’s\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-requested-sampling-frequency\" id=\"ref-for-virtual-sensor-requested-sampling-frequency⑤\">requested sampling frequency</a>.</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success③\">success</a> with data <var>info</var>.</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#success\" id=\"ref-for-success③\">success</a> with data <var>info</var>.</p>"
         }
       ]
     },
@@ -793,37 +793,37 @@
           "html": "<p>Let <var>reading</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-getting-properties\" id=\"ref-for-dfn-getting-properties①\">get a property</a> \"<code>reading</code>\" from <var>parameters</var>.</p>"
         },
         {
-          "html": "<p>If <var>reading</var> is not an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects\" id=\"ref-for-sec-object-objects④\">Object</a></code>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error⑦\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑧\">invalid\n  argument</a>.</p>"
+          "html": "<p>If <var>reading</var> is not an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects\" id=\"ref-for-sec-object-objects④\">Object</a></code>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error⑦\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑧\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑧\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>virtualSensorType</var> be the value of the <code>type</code> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-url-variables\" id=\"ref-for-dfn-url-variables①\">url variable</a>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#per-type-virtual-sensor-metadata\" id=\"ref-for-per-type-virtual-sensor-metadata①\">per-type virtual sensor metadata</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">contain</a> <var>virtualSensorType</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error⑧\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑨\">invalid argument</a>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#per-type-virtual-sensor-metadata\" id=\"ref-for-per-type-virtual-sensor-metadata①\">per-type virtual sensor metadata</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">contain</a> <var>virtualSensorType</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error⑧\">error</a>\n  with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code⑨\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument⑨\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>metadata</var> be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#per-type-virtual-sensor-metadata\" id=\"ref-for-per-type-virtual-sensor-metadata②\">per-type virtual sensor metadata</a>[<var>virtualSensorType</var>].</p>"
         },
         {
-          "html": "<p>Let <var>topLevelVirtualSensorMapping</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context③\">current browsing context</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable②\">top-level traversable</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping⑥\">virtual sensor mapping</a>.</p>"
+          "html": "<p>Let <var>topLevelVirtualSensorMapping</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context③\">current browsing context</a>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable②\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping⑥\">virtual sensor mapping</a>.</p>"
         },
         {
-          "html": "<p>If <var>topLevelVirtualSensorMapping</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">contain</a> <var>virtualSensorType</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error⑨\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⓪\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⓪\">invalid argument</a>.</p>"
+          "html": "<p>If <var>topLevelVirtualSensorMapping</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">contain</a> <var>virtualSensorType</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error⑨\">error</a> with\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①⓪\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①⓪\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>Let <var>virtualSensor</var> be <var>topLevelVirtualSensorMapping</var>[<var>virtualSensorType</var>].</p>"
         },
         {
-          "html": "<p>Let <var>parsedReading</var> be the result of invoking <var>metadata</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-metadata-reading-parsing-algorithm\" id=\"ref-for-virtual-sensor-metadata-reading-parsing-algorithm\">reading\n  parsing algorithm</a> with <var>reading</var>.</p>"
+          "html": "<p>Let <var>parsedReading</var> be the result of invoking <var>metadata</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-metadata-reading-parsing-algorithm\" id=\"ref-for-virtual-sensor-metadata-reading-parsing-algorithm\">reading parsing algorithm</a> with <var>reading</var>.</p>"
         },
         {
-          "html": "<p>If <var>parsedReading</var> is <strong>undefined</strong>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①⓪\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①①\">invalid argument</a>.</p>"
+          "html": "<p>If <var>parsedReading</var> is <strong>undefined</strong>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①⓪\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①①\">WebDriver error code</a>\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①①\">invalid argument</a>.</p>"
         },
         {
           "html": "<p>In an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①②\">implementation-defined</a> way, make <var>parsedReading</var> available so that it can be\n  obtained by <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#concept-platform-sensor\" id=\"ref-for-concept-platform-sensor⑤⓪\">platform sensors</a> connected to <var>virtualSensor</var>.</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success④\">success</a> with data <code>null</code>.</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#success\" id=\"ref-for-success④\">success</a> with data <code>null</code>.</p>"
         }
       ]
     },
@@ -898,16 +898,16 @@
           "html": "<p>Let <var>virtualSensorType</var> be the value of the <code>type</code> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-url-variables\" id=\"ref-for-dfn-url-variables②\">url variable</a>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#per-type-virtual-sensor-metadata\" id=\"ref-for-per-type-virtual-sensor-metadata④\">per-type virtual sensor metadata</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">contain</a> <var>virtualSensorType</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①①\">error</a> with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①②\">invalid argument</a>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#per-type-virtual-sensor-metadata\" id=\"ref-for-per-type-virtual-sensor-metadata④\">per-type virtual sensor metadata</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">contain</a> <var>virtualSensorType</var>, return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error\" id=\"ref-for-dfn-error①①\">error</a>\n  with <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-error-code\" id=\"ref-for-dfn-error-code①②\">WebDriver error code</a> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-invalid-argument\" id=\"ref-for-dfn-invalid-argument①②\">invalid argument</a>.</p>"
         },
         {
-          "html": "<p>Let <var>topLevelVirtualSensorMapping</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context④\">current browsing context</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable③\">top-level traversable</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping⑦\">virtual sensor mapping</a>.</p>"
+          "html": "<p>Let <var>topLevelVirtualSensorMapping</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-current-browsing-context\" id=\"ref-for-dfn-current-browsing-context④\">current browsing context</a>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable③\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/generic-sensor/#virtual-sensor-mapping\" id=\"ref-for-virtual-sensor-mapping⑦\">virtual sensor mapping</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove\">Remove</a> <var>topLevelVirtualSensorMapping</var>[<var>virtualSensorType</var>].</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success⑤\">success</a> with data <code>null</code>.</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#success\" id=\"ref-for-success⑤\">success</a> with data <code>null</code>.</p>"
         }
       ]
     }

@@ -7,7 +7,7 @@
     {
       "name": "create-hit-test-source",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#create-a-hit-test-source",
-      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-hit-test-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a hit test source</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> from <var>session</var>, <var>space</var>, <var>entityTypes</var> and <var>offsetRay</var>, the user agent MUST run the following steps:",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-hit-test-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a hit test source</dfn> from <var>session</var>, <var>space</var>, <var>entityTypes</var> and <var>offsetRay</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -36,21 +36,21 @@
     {
       "name": "cancel-hit-test-source",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#cancel-a-hit-test-source",
-      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#dom-xrhittestsource-cancel\" id=\"ref-for-dom-xrhittestsource-cancel①\">cancel()</a></code> method is invoked, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"cancel-a-hit-test-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cancel a hit test source</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#dom-xrhittestsource-cancel\" id=\"ref-for-dom-xrhittestsource-cancel①\">cancel()</a></code> method is invoked, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"cancel-a-hit-test-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cancel a hit test source</dfn> by running the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If the <var>hitTestSource</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrhittestsource-active\" id=\"ref-for-xrhittestsource-active\">active</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>Remove <var>hitTestSource</var> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrhittestsource-session\" id=\"ref-for-xrhittestsource-session②\">session</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrsession-set-of-active-hit-test-sources\" id=\"ref-for-xrsession-set-of-active-hit-test-sources①\">set of active hit test sources</a>.</p>"
+          "html": "<p>Remove <var>hitTestSource</var> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrhittestsource-session\" id=\"ref-for-xrhittestsource-session②\">session</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrsession-set-of-active-hit-test-sources\" id=\"ref-for-xrsession-set-of-active-hit-test-sources①\">set of active hit test sources</a>.</p>"
         }
       ]
     },
     {
       "name": "create-hit-test-source-transient",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#create-a-hit-test-source-for-transient-input",
-      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-hit-test-source-for-transient-input\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a hit test source for transient input</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> from <var>session</var>, <var>profile</var>, <var>entityTypes</var> and <var>offsetRay</var>, the user agent MUST run the following steps:",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-hit-test-source-for-transient-input\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a hit test source for transient input</dfn> from <var>session</var>, <var>profile</var>, <var>entityTypes</var> and <var>offsetRay</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -76,21 +76,21 @@
     {
       "name": "cancel-hit-test-source-transient",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#cancel-a-hit-test-source-for-transient-input",
-      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#dom-xrtransientinputhittestsource-cancel\" id=\"ref-for-dom-xrtransientinputhittestsource-cancel①\">cancel()</a></code> method is invoked, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"cancel-a-hit-test-source-for-transient-input\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cancel a hit test source for transient input</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> by running the following steps:",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#dom-xrtransientinputhittestsource-cancel\" id=\"ref-for-dom-xrtransientinputhittestsource-cancel①\">cancel()</a></code> method is invoked, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"cancel-a-hit-test-source-for-transient-input\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cancel a hit test source for transient input</dfn> by running the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If the <var>hitTestSource</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrtransientinputhittestsource-active\" id=\"ref-for-xrtransientinputhittestsource-active\">active</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>Remove <var>hitTestSource</var> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrhittestsource-session\" id=\"ref-for-xrhittestsource-session③\">session</a>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrsession-set-of-active-hit-test-sources-for-transient-input\" id=\"ref-for-xrsession-set-of-active-hit-test-sources-for-transient-input①\">set of active hit test sources for transient input</a>.</p>"
+          "html": "<p>Remove <var>hitTestSource</var> from <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrhittestsource-session\" id=\"ref-for-xrhittestsource-session③\">session</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrsession-set-of-active-hit-test-sources-for-transient-input\" id=\"ref-for-xrsession-set-of-active-hit-test-sources-for-transient-input①\">set of active hit test sources for transient input</a>.</p>"
         }
       ]
     },
     {
       "name": "create-hit-test-result",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#create-a-hit-test-result",
-      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-hit-test-result\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a hit test result</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface①\">XRFrame</a></code> <var>frame</var>, array of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#enumdef-xrhittesttrackabletype\" id=\"ref-for-enumdef-xrhittesttrackabletype⑦\">XRHitTestTrackableType</a></code> <var>entityTypes</var>, and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#native-hit-test-result\" id=\"ref-for-native-hit-test-result\">native hit test result</a> <var>nativeResult</var>, the user agent MUST run the following steps:",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-hit-test-result\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a hit test result</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface①\">XRFrame</a></code> <var>frame</var>, array of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#enumdef-xrhittesttrackabletype\" id=\"ref-for-enumdef-xrhittesttrackabletype⑦\">XRHitTestTrackableType</a></code> <var>entityTypes</var>, and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#native-hit-test-result\" id=\"ref-for-native-hit-test-result\">native hit test result</a> <var>nativeResult</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -125,7 +125,7 @@
     {
       "name": "populate-result-pose",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#dom-xrhittestresult-getpose",
-      "html": "When <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRHitTestResult\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrhittestresult-getpose\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getPose(<var>baseSpace</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method is invoked on <var>hitTestResult</var>, the user agent MUST run the following steps:",
+      "html": "When <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRHitTestResult\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrhittestresult-getpose\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getPose(<var>baseSpace</var>)</code></dfn> method is invoked on <var>hitTestResult</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -138,7 +138,7 @@
           "html": "<p>Let <var>pose</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrpose\" id=\"ref-for-xrpose②\">XRPose</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>space</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrspace\" id=\"ref-for-xrspace④\">XRSpace</a></code>, with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-native-origin\" id=\"ref-for-xrspace-native-origin③\">native origin</a> set to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrhittestresult-native-origin\" id=\"ref-for-xrhittestresult-native-origin①\">native origin</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-origin-offset\" id=\"ref-for-xrspace-origin-offset\">origin offset</a> set to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#identity-transform\" id=\"ref-for-identity-transform\">identity transform</a>, and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-session\" id=\"ref-for-xrspace-session\">session</a> set to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrhittestresult-frame\" id=\"ref-for-xrhittestresult-frame③\">frame</a>'s session.</p>"
+          "html": "<p>Let <var>space</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrspace\" id=\"ref-for-xrspace④\">XRSpace</a></code>, with <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-native-origin\" id=\"ref-for-xrspace-native-origin③\">native origin</a> set to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrhittestresult-native-origin\" id=\"ref-for-xrhittestresult-native-origin①\">native origin</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-origin-offset\" id=\"ref-for-xrspace-origin-offset\">origin offset</a> set to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#identity-transform\" id=\"ref-for-identity-transform\">identity transform</a>, and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-session\" id=\"ref-for-xrspace-session\">session</a> set to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrhittestresult-frame\" id=\"ref-for-xrhittestresult-frame③\">frame</a>’s session.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#populate-the-pose\" id=\"ref-for-populate-the-pose\">Populate the pose</a> of <var>space</var> in <var>baseSpace</var> at the time represented by <var>frame</var> into <var>pose</var>.</p>"
@@ -151,7 +151,7 @@
     {
       "name": "create-hit-test-result-for-transient-input",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#create-a-hit-test-result-for-transient-input",
-      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-hit-test-result-for-transient-input\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a hit test result for transient input</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource④\">XRInputSource</a></code> <var>inputSource</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface③\">XRFrame</a></code> <var>frame</var>, array of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#enumdef-xrhittesttrackabletype\" id=\"ref-for-enumdef-xrhittesttrackabletype⑧\">XRHitTestTrackableType</a></code> <var>entityTypes</var>, and array of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#native-hit-test-result\" id=\"ref-for-native-hit-test-result①\">native hit test results</a> <var>nativeResults</var>, the user agent MUST run the following steps:",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-hit-test-result-for-transient-input\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a hit test result for transient input</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource④\">XRInputSource</a></code> <var>inputSource</var>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface③\">XRFrame</a></code> <var>frame</var>, array of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#enumdef-xrhittesttrackabletype\" id=\"ref-for-enumdef-xrhittesttrackabletype⑧\">XRHitTestTrackableType</a></code> <var>entityTypes</var>, and array of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#native-hit-test-result\" id=\"ref-for-native-hit-test-result①\">native hit test results</a> <var>nativeResults</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -192,7 +192,7 @@
     {
       "name": "request-hit-test-source",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#dom-xrsession-requesthittestsource",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrsession-requesthittestsource\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestHitTestSource(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-interface\" id=\"ref-for-xrsession-interface⑥\">XRSession</a></code> <var>session</var>, MUST run the following steps:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrsession-requesthittestsource\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestHitTestSource(<var>options</var>)</code></dfn> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-interface\" id=\"ref-for-xrsession-interface⑥\">XRSession</a></code> <var>session</var>, MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -202,7 +202,7 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#hit-test\" id=\"ref-for-hit-test\">hit-test</a> feature descriptor is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contained</a> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features\" id=\"ref-for-xrsession-list-of-enabled-features\">list of enabled features</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror\">NotSupportedError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\">ended</a> value is <code>true</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-ended\" id=\"ref-for-xrsession-ended\">ended</a></code> value is <code>true</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>The user agent MAY <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code> and abort these steps if there is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#unreasonable-number-of-requests\" id=\"ref-for-unreasonable-number-of-requests\">unreasonable number of requests</a>.</p>"
@@ -227,7 +227,7 @@
     {
       "name": "request-hit-test-source-for-transient-input",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#dom-xrsession-requesthittestsourcefortransientinput",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrsession-requesthittestsourcefortransientinput\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestHitTestSourceForTransientInput(<var>options</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-interface\" id=\"ref-for-xrsession-interface⑦\">XRSession</a></code> <var>session</var>, MUST run the following steps:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrsession-requesthittestsourcefortransientinput\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestHitTestSourceForTransientInput(<var>options</var>)</code></dfn> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-interface\" id=\"ref-for-xrsession-interface⑦\">XRSession</a></code> <var>session</var>, MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -237,7 +237,7 @@
           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#hit-test\" id=\"ref-for-hit-test①\">hit-test</a> feature descriptor is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contained</a> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features\" id=\"ref-for-xrsession-list-of-enabled-features①\">list of enabled features</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①\">NotSupportedError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\">ended</a> value is <code>true</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-ended\" id=\"ref-for-xrsession-ended①\">ended</a></code> value is <code>true</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>The user agent MAY <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">NotAllowedError</a></code> and abort these steps if there is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#unreasonable-number-of-requests\" id=\"ref-for-unreasonable-number-of-requests①\">unreasonable number of requests</a>.</p>"
@@ -262,7 +262,7 @@
     {
       "name": "compute-all-hit-test-results",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#compute-all-hit-test-results",
-      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-all-hit-test-results\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute all hit test results</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface④\">XRFrame</a></code> <var>frame</var>, the user agent MUST perform the following steps:",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-all-hit-test-results\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute all hit test results</dfn> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface④\">XRFrame</a></code> <var>frame</var>, the user agent MUST perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -276,20 +276,20 @@
     {
       "name": "compute-hit-test-results",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#compute-hit-test-results",
-      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-hit-test-results\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute hit test results</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑤\">XRFrame</a></code> <var>frame</var>, for each hit test source, <var>hitTestSource</var>, that is present in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session①\">session</a></code>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrsession-set-of-active-hit-test-sources\" id=\"ref-for-xrsession-set-of-active-hit-test-sources③\">set of active hit test sources</a>, the user agent MUST perform the following steps:",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-hit-test-results\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute hit test results</dfn> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑤\">XRFrame</a></code> <var>frame</var>, for each hit test source, <var>hitTestSource</var>, that is present in <code class=\"idl\"><a data-link-type=\"idl\" data-refhint-key=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session①\">session</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrsession-set-of-active-hit-test-sources\" id=\"ref-for-xrsession-set-of-active-hit-test-sources③\">set of active hit test sources</a>, the user agent MUST perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>entityTypes</var> be the <var>hitTestSource</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrhittestsource-entity-types\" id=\"ref-for-xrhittestsource-entity-types①\">entity types</a>.</p>"
         },
         {
-          "html": "<p>Let <var>session</var> be <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session②\">session</a></code>.</p>"
+          "html": "<p>Let <var>session</var> be <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" data-refhint-key=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session②\">session</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>device</var> be the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①\">XR device</a>.</p>"
+          "html": "<p>Let <var>device</var> be the <var>session</var>’s  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①\">XR device</a>.</p>"
         },
         {
-          "html": "<p>Query the <var>device</var>’s tracking system for <var>hitTestSource</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrhittestsource-native-origin\" id=\"ref-for-xrhittestsource-native-origin①\">native origin</a>'s latest <var>coordinates</var>.</p>"
+          "html": "<p>Query the <var>device</var>’s tracking system for <var>hitTestSource</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrhittestsource-native-origin\" id=\"ref-for-xrhittestsource-native-origin①\">native origin</a>’s latest <var>coordinates</var>.</p>"
         },
         {
           "html": "<p>Interpret <var>hitTestSource</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrhittestsource-offset-ray\" id=\"ref-for-xrhittestsource-offset-ray①\">offset ray</a>, <var>offsetRay</var>, as if expressed relative to <var>coordinates</var> and using that interpretation, perform <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#native-hit-test\" id=\"ref-for-native-hit-test①\">native hit test</a> obtaining <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#native-hit-test-result\" id=\"ref-for-native-hit-test-result②\">native hit test results</a> <var>nativeResults</var>.</p>"
@@ -320,17 +320,17 @@
     {
       "name": "compute-hit-test-results-for-transient-input",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#compute-hit-test-results-for-transient-input",
-      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-hit-test-results-for-transient-input\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute hit test results for transient input</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑥\">XRFrame</a></code> <var>frame</var>, for each hit test source, <var>hitTestSource</var>, that is present in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session③\">session</a></code>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrsession-set-of-active-hit-test-sources-for-transient-input\" id=\"ref-for-xrsession-set-of-active-hit-test-sources-for-transient-input③\">set of active hit test sources for transient input</a>, the user agent MUST perform the following steps:",
+      "html": "In order to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-hit-test-results-for-transient-input\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute hit test results for transient input</dfn> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑥\">XRFrame</a></code> <var>frame</var>, for each hit test source, <var>hitTestSource</var>, that is present in <code class=\"idl\"><a data-link-type=\"idl\" data-refhint-key=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session③\">session</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrsession-set-of-active-hit-test-sources-for-transient-input\" id=\"ref-for-xrsession-set-of-active-hit-test-sources-for-transient-input③\">set of active hit test sources for transient input</a>, the user agent MUST perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>entityTypes</var> be the <var>hitTestSource</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrtransientinputhittestsource-entity-types\" id=\"ref-for-xrtransientinputhittestsource-entity-types①\">entity types</a>.</p>"
         },
         {
-          "html": "<p>Let <var>session</var> be <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session④\">session</a></code>.</p>"
+          "html": "<p>Let <var>session</var> be <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" data-refhint-key=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session④\">session</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>device</var> be the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②\">XR device</a>.</p>"
+          "html": "<p>Let <var>device</var> be the <var>session</var>’s  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②\">XR device</a>.</p>"
         },
         {
           "html": "<p>Let <var>candidateInputSources</var> be a set of all <var>session</var>’s input sources contained in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources\">list of active XR input sources</a> that are considered transient.</p>"
@@ -346,7 +346,7 @@
           "rationale": "query",
           "steps": [
             {
-              "html": "<p>Query the <var>device</var>’s tracking system for <var>inputSource</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsource-targetrayspace\" id=\"ref-for-dom-xrinputsource-targetrayspace\">targetRaySpace</a></code>'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-native-origin\" id=\"ref-for-xrspace-native-origin④\">native origin</a>'s latest <var>coordinates</var>.</p>"
+              "html": "<p>Query the <var>device</var>’s tracking system for <var>inputSource</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsource-targetrayspace\" id=\"ref-for-dom-xrinputsource-targetrayspace\">targetRaySpace</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-native-origin\" id=\"ref-for-xrspace-native-origin④\">native origin</a>’s latest <var>coordinates</var>.</p>"
             },
             {
               "html": "<p>Interpret <var>hitTestSource</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrtransientinputhittestsource-offset-ray\" id=\"ref-for-xrtransientinputhittestsource-offset-ray①\">offset ray</a>, as if expressed relative to <var>coordinates</var> and using that interpretation, perform <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#native-hit-test\" id=\"ref-for-native-hit-test②\">native hit test</a> obtaining <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#native-hit-test-result\" id=\"ref-for-native-hit-test-result③\">native hit test results</a> <var>nativeResults</var>.</p>"
@@ -367,7 +367,7 @@
     {
       "name": "obtain-hit-test-results",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#dom-xrframe-gethittestresults",
-      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-gethittestresults\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getHitTestResults(<var>hitTestSource</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface①①\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-gethittestresults\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getHitTestResults(<var>hitTestSource</var>)</code></dfn> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface①①\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -387,7 +387,7 @@
     {
       "name": "obtain-hit-test-results-for-transient-input",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#dom-xrframe-gethittestresultsfortransientinput",
-      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-gethittestresultsfortransientinput\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getHitTestResultsForTransientInput(<var>hitTestSource</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface①③\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-gethittestresultsfortransientinput\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getHitTestResultsForTransientInput(<var>hitTestSource</var>)</code></dfn> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface①③\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -407,7 +407,7 @@
     {
       "name": "construct-ray-origin-direction",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#dom-xrray-xrray",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRRay\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"XRRay(origin, direction)|constructor(origin, direction)|XRRay(origin)|constructor(origin)|XRRay()|constructor()\" id=\"dom-xrray-xrray\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>XRRay(<var>origin</var>, <var>direction</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor MUST perform the following steps when invoked:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRRay\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"XRRay(origin, direction)|constructor(origin, direction)|XRRay(origin)|constructor(origin)|XRRay()|constructor()\" id=\"dom-xrray-xrray\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>XRRay(<var>origin</var>, <var>direction</var>)</code></dfn> constructor MUST perform the following steps when invoked:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -448,7 +448,7 @@
     {
       "name": "construct-ray-transform",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#dom-xrray-xrray-transform",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRRay\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"XRRay(transform)|constructor(transform)\" id=\"dom-xrray-xrray-transform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>XRRay(<var>transform</var>)</code></dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> constructor MUST perform the following steps when invoked:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRRay\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"XRRay(transform)|constructor(transform)\" id=\"dom-xrray-xrray-transform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>XRRay(<var>transform</var>)</code></dfn> constructor MUST perform the following steps when invoked:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -480,7 +480,7 @@
     {
       "name": "obtain-ray-matrix",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#xrray-obtain-the-matrix",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRRay\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xrray-obtain-the-matrix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the matrix</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrray\" id=\"ref-for-xrray①⑥\">XRRay</a></code> <var>ray</var>",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRRay\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xrray-obtain-the-matrix\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the matrix</dfn> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#xrray\" id=\"ref-for-xrray①⑥\">XRRay</a></code> <var>ray</var>",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -541,7 +541,7 @@
     {
       "name": "convert-native-type-to-trackable-type",
       "href": "https://www.w3.org/TR/webxr-hit-test-1/#convert-from-native-entity-type",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"convert-from-native-entity-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert from native entity type</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> into <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#enumdef-xrhittesttrackabletype\" id=\"ref-for-enumdef-xrhittesttrackabletype⑨\">XRHitTestTrackableType</a></code>, the user agent MUST run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"convert-from-native-entity-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert from native entity type</dfn> into <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr-hit-test-1/#enumdef-xrhittesttrackabletype\" id=\"ref-for-enumdef-xrhittesttrackabletype⑨\">XRHitTestTrackableType</a></code>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {

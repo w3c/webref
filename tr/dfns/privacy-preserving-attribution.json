@@ -1,12 +1,12 @@
 {
   "spec": {
-    "title": "Privacy-Preserving Attribution: Level 1",
+    "title": "Attribution Level 1",
     "url": "https://www.w3.org/TR/privacy-preserving-attribution/"
   },
   "dfns": [
     {
-      "id": "attribution",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#attribution",
+      "id": "concept-attribution",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#concept-attribution",
       "linkingText": [
         "attribution",
         "attributed"
@@ -191,7 +191,10 @@
       "linkingText": [
         "intermediary site"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "intermediary",
+        "intermediaries"
+      ],
       "type": "dfn",
       "for": [],
       "access": "private",
@@ -206,10 +209,10 @@
       "links": []
     },
     {
-      "id": "dom-navigator-privateattribution",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-navigator-privateattribution",
+      "id": "dom-navigator-attribution",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-navigator-attribution",
       "linkingText": [
-        "privateAttribution"
+        "attribution"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -228,15 +231,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattribution-aggregationservices",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattribution-aggregationservices",
+      "id": "dom-attribution-aggregationservices",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attribution-aggregationservices",
       "linkingText": [
         "aggregationServices"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "PrivateAttribution"
+        "Attribution"
       ],
       "access": "public",
       "informative": false,
@@ -250,10 +253,10 @@
       "links": []
     },
     {
-      "id": "dictdef-privateattributionaggregationservice",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dictdef-privateattributionaggregationservice",
+      "id": "dictdef-attributionaggregationservice",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dictdef-attributionaggregationservice",
       "linkingText": [
-        "PrivateAttributionAggregationService"
+        "AttributionAggregationService"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -270,10 +273,10 @@
       "links": []
     },
     {
-      "id": "privateattributionaggregationservices",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#privateattributionaggregationservices",
+      "id": "attributionaggregationservices",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#attributionaggregationservices",
       "linkingText": [
-        "PrivateAttributionAggregationServices"
+        "AttributionAggregationServices"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -290,10 +293,10 @@
       "links": []
     },
     {
-      "id": "privateattribution",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#privateattribution",
+      "id": "attribution",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#attribution",
       "linkingText": [
-        "PrivateAttribution"
+        "Attribution"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -310,15 +313,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionaggregationservice-protocol",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionaggregationservice-protocol",
+      "id": "dom-attributionaggregationservice-protocol",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionaggregationservice-protocol",
       "linkingText": [
         "protocol"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionAggregationService"
+        "AttributionAggregationService"
       ],
       "access": "public",
       "informative": false,
@@ -332,10 +335,10 @@
       "links": []
     },
     {
-      "id": "enumdef-privateattributionprotocol",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#enumdef-privateattributionprotocol",
+      "id": "enumdef-attributionaggregationprotocol",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#enumdef-attributionaggregationprotocol",
       "linkingText": [
-        "PrivateAttributionProtocol"
+        "AttributionAggregationProtocol"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -352,16 +355,16 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionprotocol-dap-12-histogram",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionprotocol-dap-12-histogram",
+      "id": "dom-attributionaggregationprotocol-dap-15-histogram",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionaggregationprotocol-dap-15-histogram",
       "linkingText": [
-        "\"dap-12-histogram\"",
-        "dap-12-histogram"
+        "\"dap-15-histogram\"",
+        "dap-15-histogram"
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "PrivateAttributionProtocol"
+        "AttributionAggregationProtocol"
       ],
       "access": "public",
       "informative": false,
@@ -375,33 +378,10 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionprotocol-tee-00",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionprotocol-tee-00",
+      "id": "dictdef-attributionimpressionoptions",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dictdef-attributionimpressionoptions",
       "linkingText": [
-        "\"tee-00\"",
-        "tee-00"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "PrivateAttributionProtocol"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "find-aggregation-service",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#find-aggregation-service",
-        "title": "Finding a Supported Aggregation Service",
-        "number": "3.3"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "dictdef-privateattributionimpressionoptions",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dictdef-privateattributionimpressionoptions",
-      "linkingText": [
-        "PrivateAttributionImpressionOptions"
+        "AttributionImpressionOptions"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -418,10 +398,10 @@
       "links": []
     },
     {
-      "id": "dictdef-privateattributionimpressionresult",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dictdef-privateattributionimpressionresult",
+      "id": "dictdef-attributionimpressionresult",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dictdef-attributionimpressionresult",
       "linkingText": [
-        "PrivateAttributionImpressionResult"
+        "AttributionImpressionResult"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -438,15 +418,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattribution-saveimpression-options-options",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattribution-saveimpression-options-options",
+      "id": "dom-attribution-saveimpression-options-options",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attribution-saveimpression-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "PrivateAttribution/saveImpression(options)"
+        "Attribution/saveImpression(options)"
       ],
       "access": "public",
       "informative": false,
@@ -460,15 +440,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionimpressionoptions-histogramindex",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionimpressionoptions-histogramindex",
+      "id": "dom-attributionimpressionoptions-histogramindex",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionimpressionoptions-histogramindex",
       "linkingText": [
         "histogramIndex"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionImpressionOptions"
+        "AttributionImpressionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -482,15 +462,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionimpressionoptions-matchvalue",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionimpressionoptions-matchvalue",
+      "id": "dom-attributionimpressionoptions-matchvalue",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionimpressionoptions-matchvalue",
       "linkingText": [
         "matchValue"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionImpressionOptions"
+        "AttributionImpressionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -504,15 +484,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionimpressionoptions-conversionsites",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionimpressionoptions-conversionsites",
+      "id": "dom-attributionimpressionoptions-conversionsites",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionimpressionoptions-conversionsites",
       "linkingText": [
         "conversionSites"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionImpressionOptions"
+        "AttributionImpressionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -526,15 +506,37 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionimpressionoptions-lifetimedays",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionimpressionoptions-lifetimedays",
+      "id": "dom-attributionimpressionoptions-conversioncallers",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionimpressionoptions-conversioncallers",
+      "linkingText": [
+        "conversionCallers"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AttributionImpressionOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "save-impression-api",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-api",
+        "title": "Saving Impressions",
+        "number": "3.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-attributionimpressionoptions-lifetimedays",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionimpressionoptions-lifetimedays",
       "linkingText": [
         "lifetimeDays"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionImpressionOptions"
+        "AttributionImpressionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -548,72 +550,32 @@
       "links": []
     },
     {
-      "id": "dictdef-privateattributionconversionoptions",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dictdef-privateattributionconversionoptions",
+      "id": "dom-attributionimpressionoptions-priority",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionimpressionoptions-priority",
       "linkingText": [
-        "PrivateAttributionConversionOptions"
+        "priority"
       ],
       "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "measure-conversion-api",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-api",
-        "title": "Requesting Attribution for a Conversion",
-        "number": "3.5"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "enumdef-privateattributionlogic",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#enumdef-privateattributionlogic",
-      "linkingText": [
-        "PrivateAttributionLogic"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "measure-conversion-api",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-api",
-        "title": "Requesting Attribution for a Conversion",
-        "number": "3.5"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-privateattributionlogic-last-touch",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionlogic-last-touch",
-      "linkingText": [
-        "\"last-touch\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
+      "type": "dict-member",
       "for": [
-        "PrivateAttributionLogic"
+        "AttributionImpressionOptions"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "measure-conversion-api",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-api",
-        "title": "Requesting Attribution for a Conversion",
-        "number": "3.5"
+        "id": "save-impression-api",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-api",
+        "title": "Saving Impressions",
+        "number": "3.4"
       },
-      "definedIn": "pre",
+      "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dictdef-privateattributionconversionresult",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dictdef-privateattributionconversionresult",
+      "id": "dictdef-attributionconversionoptions",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dictdef-attributionconversionoptions",
       "linkingText": [
-        "PrivateAttributionConversionResult"
+        "AttributionConversionOptions"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -630,15 +592,35 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionconversionresult-report",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionconversionresult-report",
+      "id": "dictdef-attributionconversionresult",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dictdef-attributionconversionresult",
+      "linkingText": [
+        "AttributionConversionResult"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "measure-conversion-api",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-api",
+        "title": "Requesting Attribution for a Conversion",
+        "number": "3.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-attributionconversionresult-report",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionconversionresult-report",
       "linkingText": [
         "report"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionResult"
+        "AttributionConversionResult"
       ],
       "access": "public",
       "informative": false,
@@ -652,15 +634,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattribution-measureconversion-options-options",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattribution-measureconversion-options-options",
+      "id": "dom-attribution-measureconversion-options-options",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attribution-measureconversion-options-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "PrivateAttribution/measureConversion(options)"
+        "Attribution/measureConversion(options)"
       ],
       "access": "public",
       "informative": false,
@@ -674,15 +656,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionconversionoptions-aggregationservice",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionconversionoptions-aggregationservice",
+      "id": "dom-attributionconversionoptions-aggregationservice",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionconversionoptions-aggregationservice",
       "linkingText": [
         "aggregationService"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -696,15 +678,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionconversionoptions-epsilon",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionconversionoptions-epsilon",
+      "id": "dom-attributionconversionoptions-epsilon",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionconversionoptions-epsilon",
       "linkingText": [
         "epsilon"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -718,15 +700,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionconversionoptions-histogramsize",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionconversionoptions-histogramsize",
+      "id": "dom-attributionconversionoptions-histogramsize",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionconversionoptions-histogramsize",
       "linkingText": [
         "histogramSize"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -740,15 +722,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionconversionoptions-lookbackdays",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionconversionoptions-lookbackdays",
+      "id": "dom-attributionconversionoptions-lookbackdays",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionconversionoptions-lookbackdays",
       "linkingText": [
         "lookbackDays"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -762,15 +744,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionconversionoptions-matchvalue",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionconversionoptions-matchvalue",
+      "id": "dom-attributionconversionoptions-matchvalues",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionconversionoptions-matchvalues",
       "linkingText": [
-        "matchValue"
+        "matchValues"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -784,15 +766,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionconversionoptions-impressionsites",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionconversionoptions-impressionsites",
+      "id": "dom-attributionconversionoptions-impressionsites",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionconversionoptions-impressionsites",
       "linkingText": [
         "impressionSites"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -806,15 +788,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionconversionoptions-intermediarysites",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionconversionoptions-intermediarysites",
+      "id": "dom-attributionconversionoptions-impressioncallers",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionconversionoptions-impressioncallers",
       "linkingText": [
-        "intermediarySites"
+        "impressionCallers"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -828,15 +810,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionconversionoptions-logic",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionconversionoptions-logic",
+      "id": "dom-attributionconversionoptions-credit",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionconversionoptions-credit",
       "linkingText": [
-        "logic"
+        "credit"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -850,15 +832,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionconversionoptions-value",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionconversionoptions-value",
+      "id": "dom-attributionconversionoptions-value",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionconversionoptions-value",
       "linkingText": [
         "value"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -872,15 +854,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattributionconversionoptions-maxvalue",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattributionconversionoptions-maxvalue",
+      "id": "dom-attributionconversionoptions-maxvalue",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attributionconversionoptions-maxvalue",
       "linkingText": [
         "maxValue"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PrivateAttributionConversionOptions"
+        "AttributionConversionOptions"
       ],
       "access": "public",
       "informative": false,
@@ -910,7 +892,7 @@
         "id": "permission-policy",
         "href": "https://www.w3.org/TR/privacy-preserving-attribution/#permission-policy",
         "title": "Permissions Policy Integration",
-        "number": "3.6"
+        "number": "3.8"
       },
       "definedIn": "prose",
       "links": []
@@ -932,7 +914,7 @@
         "id": "permission-policy",
         "href": "https://www.w3.org/TR/privacy-preserving-attribution/#permission-policy",
         "title": "Permissions Policy Integration",
-        "number": "3.6"
+        "number": "3.8"
       },
       "definedIn": "prose",
       "links": []
@@ -1046,6 +1028,28 @@
       "links": []
     },
     {
+      "id": "impression-conversion-callers",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#impression-conversion-callers",
+      "linkingText": [
+        "Conversion Callers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "impression"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "impression-store-contents",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#impression-store-contents",
+        "title": "Contents",
+        "number": "4.1.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
       "id": "impression-timestamp",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#impression-timestamp",
       "linkingText": [
@@ -1112,10 +1116,32 @@
       "links": []
     },
     {
-      "id": "clear-impressions-for-a-conversion-site",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#clear-impressions-for-a-conversion-site",
+      "id": "impression-priority",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#impression-priority",
       "linkingText": [
-        "clear impressions for a conversion site"
+        "Priority"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "impression"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "impression-store-contents",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#impression-store-contents",
+        "title": "Contents",
+        "number": "4.1.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "clear-impressions-for-a-site",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#clear-impressions-for-a-site",
+      "linkingText": [
+        "clear impressions for a site"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1189,6 +1215,26 @@
         "number": "4.2.1"
       },
       "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "maximum-epsilon",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#maximum-epsilon",
+      "linkingText": [
+        "maximum epsilon"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "s-privacy-budget-store",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#s-privacy-budget-store",
+        "title": "Privacy Budget Store",
+        "number": "4.2.1"
+      },
+      "definedIn": "note",
       "links": []
     },
     {
@@ -1376,15 +1422,35 @@
       "links": []
     },
     {
-      "id": "dom-privateattribution-saveimpression",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattribution-saveimpression",
+      "id": "clear-browsing-history-for-attribution",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#clear-browsing-history-for-attribution",
+      "linkingText": [
+        "clear browsing history for attribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "last-clear",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#last-clear",
+        "title": "Last Browsing History Clear Time",
+        "number": "4.2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-attribution-saveimpression",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attribution-saveimpression",
       "linkingText": [
         "saveImpression(options)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "PrivateAttribution"
+        "Attribution"
       ],
       "access": "public",
       "informative": false,
@@ -1398,10 +1464,158 @@
       "links": []
     },
     {
-      "id": "private-attribution-task-source",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#private-attribution-task-source",
+      "id": "save-an-impression",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-an-impression",
       "linkingText": [
-        "Private Attribution task source"
+        "save an impression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "save-impression-api-operation",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-api-operation",
+        "title": "Save Impression Algorithm",
+        "number": "4.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "implicit-api-inputs",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#implicit-api-inputs",
+      "linkingText": [
+        "implicit API inputs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "save-impression-api-operation",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-api-operation",
+        "title": "Save Impression Algorithm",
+        "number": "4.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "implicit-api-inputs-top-level-site",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#implicit-api-inputs-top-level-site",
+      "linkingText": [
+        "Top-Level Site"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "implicit API inputs"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "save-impression-api-operation",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-api-operation",
+        "title": "Save Impression Algorithm",
+        "number": "4.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "implicit-api-inputs-intermediary-site",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#implicit-api-inputs-intermediary-site",
+      "linkingText": [
+        "Intermediary Site"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "implicit API inputs"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "save-impression-api-operation",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-api-operation",
+        "title": "Save Impression Algorithm",
+        "number": "4.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "implicit-api-inputs-timestamp",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#implicit-api-inputs-timestamp",
+      "linkingText": [
+        "Timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "implicit API inputs"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "save-impression-api-operation",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-api-operation",
+        "title": "Save Impression Algorithm",
+        "number": "4.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "implicit-api-inputs-associated-document",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#implicit-api-inputs-associated-document",
+      "linkingText": [
+        "Associated Document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "implicit API inputs"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "save-impression-api-operation",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-api-operation",
+        "title": "Save Impression Algorithm",
+        "number": "4.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "obtain-the-implicit-api-inputs",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#obtain-the-implicit-api-inputs",
+      "linkingText": [
+        "obtain the implicit API inputs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "save-impression-api-operation",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-api-operation",
+        "title": "Save Impression Algorithm",
+        "number": "4.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "attribution-task-source",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#attribution-task-source",
+      "linkingText": [
+        "Attribution task source"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1418,15 +1632,15 @@
       "links": []
     },
     {
-      "id": "dom-privateattribution-measureconversion",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-privateattribution-measureconversion",
+      "id": "dom-attribution-measureconversion",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#dom-attribution-measureconversion",
       "linkingText": [
         "measureConversion(options)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "PrivateAttribution"
+        "Attribution"
       ],
       "access": "public",
       "informative": false,
@@ -1548,10 +1762,10 @@
       "links": []
     },
     {
-      "id": "validated-conversion-options-match-value",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#validated-conversion-options-match-value",
+      "id": "validated-conversion-options-match-values",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#validated-conversion-options-match-values",
       "linkingText": [
-        "Match Value"
+        "Match Values"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1592,10 +1806,10 @@
       "links": []
     },
     {
-      "id": "validated-conversion-options-intermediary-sites",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#validated-conversion-options-intermediary-sites",
+      "id": "validated-conversion-options-impression-callers",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#validated-conversion-options-impression-callers",
       "linkingText": [
-        "Intermediary Sites"
+        "Impression Callers"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1614,10 +1828,10 @@
       "links": []
     },
     {
-      "id": "validated-conversion-options-logic",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#validated-conversion-options-logic",
+      "id": "validated-conversion-options-credit",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#validated-conversion-options-credit",
       "linkingText": [
-        "Logic"
+        "Credit"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1680,10 +1894,30 @@
       "links": []
     },
     {
-      "id": "validate-privateattributionconversionoptions",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#validate-privateattributionconversionoptions",
+      "id": "validate-attributionconversionoptions",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#validate-attributionconversionoptions",
       "linkingText": [
-        "validate PrivateAttributionConversionOptions"
+        "validate AttributionConversionOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "measure-conversion-api-operation",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-api-operation",
+        "title": "Measure Conversion Algorithm",
+        "number": "4.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "maximum-histogram-size",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#maximum-histogram-size",
+      "linkingText": [
+        "maximum histogram size"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1703,7 +1937,7 @@
       "id": "attribution-logic",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#attribution-logic",
       "linkingText": [
-        "attribution logic"
+        "Attribution logic"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1780,10 +2014,10 @@
       "links": []
     },
     {
-      "id": "fill-a-histogram-with-last-touch-attribution",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#fill-a-histogram-with-last-touch-attribution",
+      "id": "fairly-allocate-credit",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#fairly-allocate-credit",
       "linkingText": [
-        "fill a histogram with last-touch attribution"
+        "fairly allocate credit"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1791,10 +2025,50 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "last-touch-attribution",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#last-touch-attribution",
-        "title": "Last-Touch Attribution",
+        "id": "last-n-touch-attribution",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#last-n-touch-attribution",
+        "title": "Last-N-Touch Attribution",
         "number": "4.4.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "fill-a-histogram-with-last-n-touch-attribution",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#fill-a-histogram-with-last-n-touch-attribution",
+      "linkingText": [
+        "fill a histogram with last-n-touch attribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "last-n-touch-attribution",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#last-n-touch-attribution",
+        "title": "Last-N-Touch Attribution",
+        "number": "4.4.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "maximum-lookback",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#maximum-lookback",
+      "linkingText": [
+        "maximum lookback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "impl-def",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#impl-def",
+        "title": "Setting Implementation-Defined Values",
+        "number": "4.5"
       },
       "definedIn": "prose",
       "links": []
@@ -1842,10 +2116,54 @@
       "links": []
     },
     {
+      "id": "save-impression-conversion-callers",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-conversion-callers",
+      "linkingText": [
+        "conversion-callers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "save-impression"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api",
+        "title": "HTTP API",
+        "number": "5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "save-impression-histogram-index",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-histogram-index",
       "linkingText": [
         "histogram-index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "save-impression"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api",
+        "title": "HTTP API",
+        "number": "5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "save-impression-priority",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#save-impression-priority",
+      "linkingText": [
+        "priority"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1928,6 +2246,26 @@
       "links": []
     },
     {
+      "id": "handle-attribution-headers",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#handle-attribution-headers",
+      "linkingText": [
+        "handle Attribution headers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api",
+        "title": "HTTP API",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "aggregation-service",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#aggregation-service",
       "linkingText": [
@@ -1988,10 +2326,10 @@
       "links": []
     },
     {
-      "id": "tee",
-      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#tee",
+      "id": "construct-a-dap-report",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#construct-a-dap-report",
       "linkingText": [
-        "TEE"
+        "construct a DAP report"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1999,10 +2337,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "s-tee",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#s-tee",
-        "title": "Trusted Execution Environments",
-        "number": "7.2"
+        "id": "encrypt-dap",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#encrypt-dap",
+        "title": "Report Encryption For DAP",
+        "number": "7.1.3"
       },
       "definedIn": "prose",
       "links": []

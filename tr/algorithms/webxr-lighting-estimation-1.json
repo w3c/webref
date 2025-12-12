@@ -7,7 +7,7 @@
     {
       "name": "request-light-probe",
       "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#dom-xrsession-requestlightprobe",
-      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"XRSession\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestLightProbe(options)|requestLightProbe()\" id=\"dom-xrsession-requestlightprobe\"><code>requestLightProbe(<var>options</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-interface\" id=\"ref-for-xrsession-interface⑤\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRSession\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"requestLightProbe(options)|requestLightProbe()\" id=\"dom-xrsession-requestlightprobe\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestLightProbe(<var>options</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-interface\" id=\"ref-for-xrsession-interface⑤\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -17,7 +17,7 @@
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-lighting-estimation-1/#feature-descriptor-light-estimation\" id=\"ref-for-feature-descriptor-light-estimation①\">light-estimation</a> feature descriptor is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contained</a> in the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features\" id=\"ref-for-xrsession-list-of-enabled-features\">list of enabled features</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror\">NotSupportedError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ended\" id=\"ref-for-ended\">ended</a> value is <code>true</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> and abort these steps.",
+          "html": "If <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-ended\" id=\"ref-for-xrsession-ended\">ended</a></code> value is <code>true</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> and abort these steps.",
           "rationale": ".switch",
           "steps": [
             {
@@ -61,7 +61,7 @@
     {
       "name": "get-light-estimate",
       "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#dom-xrframe-getlightestimate",
-      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-getlightestimate\"><code>getLightEstimate(<var>lightProbe</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑤\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-getlightestimate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getLightEstimate(<var>lightProbe</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe-interface\" id=\"ref-for-xrframe-interface⑤\">XRFrame</a></code> <var>frame</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -154,7 +154,7 @@
     {
       "name": "get-reflection-cubemap",
       "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#dom-xrwebglbinding-getreflectioncubemap",
-      "html": "When the <dfn class=\"dfn-paneled idl-code\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrwebglbinding-getreflectioncubemap\"><code>getReflectionCubeMap(<var>lightProbe</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrwebglbinding\" id=\"ref-for-xrwebglbinding③\">XRWebGLBinding</a></code> <var>binding</var>, the user agent MUST run the following steps:",
+      "html": "When the <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRWebGLBinding\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrwebglbinding-getreflectioncubemap\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getReflectionCubeMap(<var>lightProbe</var>)</code></dfn> method is invoked on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxrlayers-1/#xrwebglbinding\" id=\"ref-for-xrwebglbinding③\">XRWebGLBinding</a></code> <var>binding</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -164,7 +164,7 @@
           "html": "<p>Let <var>session</var> be <var>binding</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxrlayers-1/#session\" id=\"ref-for-session\">session</a>.</p>"
         },
         {
-          "html": "<p>If <var>session</var> is ended, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-ended\" id=\"ref-for-xrsession-ended①\">ended</a></code> value is <code>true</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>If <var>session</var> does not match <var>lightProbe</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr-lighting-estimation-1/#xrlightprobe-session\" id=\"ref-for-xrlightprobe-session②\">session</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code> and abort these steps.</p>"

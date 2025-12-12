@@ -1,33 +1,65 @@
 {
   "spec": {
-    "title": "Privacy-Preserving Attribution: Level 1",
+    "title": "Attribution Level 1",
     "url": "https://www.w3.org/TR/privacy-preserving-attribution/"
   },
   "links": {
     "rawlinks": {
       "https://arxiv.org/abs/2405.16719": {},
       "https://crypto.stanford.edu/prio/paper.pdf": {},
-      "https://datatracker.ietf.org/doc/draft-irtf-cfrg-vdaf/": {},
-      "https://datatracker.ietf.org/doc/draft-thomson-ppm-dap-dp-ext/": {
+      "https://datatracker.ietf.org/doc/draft-thomson-ppm-l1-bound-sum/": {},
+      "https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15": {
         "anchors": [
-          "name-late-task-binding",
-          "name-requester-website-identity",
-          "name-privacy-budget-consumption"
+          "section-4.5.2",
+          "section-4.5.1"
         ]
       },
-      "https://datatracker.ietf.org/doc/draft-thomson-ppm-l1-bound-sum/": {},
-      "https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-12": {},
+      "https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf": {
+        "anchors": [
+          "section-4.1"
+        ]
+      },
+      "https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf-15": {
+        "anchors": [
+          "section-6.1.3",
+          "section-4.1"
+        ]
+      },
+      "https://datatracker.ietf.org/doc/html/draft-thomson-ppm-dap-dp-ext-02": {
+        "anchors": [
+          "name-late-task-binding",
+          "name-privacy-budget-consumption",
+          "name-requester-website-identity"
+        ]
+      },
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://doi.org/10.1016/B978-0-12-385514-5.00006-9": {},
       "https://doi.org/10.1561/0400000042": {},
+      "https://dom.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {},
-      "https://github.com/w3c/ppa/issues": {},
+      "https://github.com/w3c/attribution/issues": {},
+      "https://hpkewg.github.io/hpke/draft-ietf-hpke-hpke.html": {
+        "anchors": [
+          "section-6.1"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/": {},
       "https://httpwg.org/specs/rfc6265.html": {},
       "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-patwg/": {},
       "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4430334": {},
       "https://storage.spec.whatwg.org/": {},
+      "https://tc39.es/ecma262/multipage/": {},
+      "https://tc39.es/ecma262/multipage/indexed-collections.html": {
+        "anchors": [
+          "table-the-typedarray-constructors"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/structured-data.html": {
+        "anchors": [
+          "sec-numerictorawbytes"
+        ]
+      },
       "https://url.spec.whatwg.org/": {},
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
@@ -37,7 +69,9 @@
       "https://www.bea.gov/research/papers/2017/measuring-free-digital-economy-within-gdp-and-productivity-accounts": {},
       "https://www.europarl.europa.eu/thinktank/en/document/IPOL_STU(2021)662913": {},
       "https://www.rfc-editor.org/rfc/rfc3492": {},
+      "https://www.rfc-editor.org/rfc/rfc4086": {},
       "https://www.rfc-editor.org/rfc/rfc5890": {},
+      "https://www.rfc-editor.org/rfc/rfc9180": {},
       "https://www.w3.org/2001/tag/doc/unsanctioned-tracking/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/clear-site-data/": {
@@ -46,10 +80,12 @@
           "clear-response"
         ]
       },
-      "https://www.w3.org/TR/css-2024/": {},
+      "https://www.w3.org/TR/css-2025/": {},
+      "https://www.w3.org/TR/css-values-4/": {},
       "https://www.w3.org/TR/fedcm-1/": {},
       "https://www.w3.org/TR/hr-time-3/": {},
       "https://www.w3.org/TR/permissions-policy-1/": {},
+      "https://www.w3.org/TR/secure-contexts/": {},
       "https://www.w3.org/groups/wg/pat": {},
       "https://www.w3.org/groups/wg/pat/ipr/": {},
       "https://www.w3.org/policies/patent-policy/": {
@@ -58,16 +94,29 @@
           "sec-Disclosure"
         ]
       },
-      "https://www.w3.org/policies/process/20231103/": {
+      "https://www.w3.org/policies/process/20250818/": {
         "anchors": [
           "recs-and-notes"
         ]
       }
     },
     "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "document"
+        ]
+      },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
-          "header-value"
+          "header-value",
+          "concept-request",
+          "concept-response",
+          "concept-request-destination",
+          "concept-request-client",
+          "concept-response-url",
+          "concept-header-list-get",
+          "concept-response-header-list",
+          "concept-http-network-fetch"
         ]
       },
       "https://html.spec.whatwg.org/": {
@@ -78,9 +127,9 @@
           "child-navigable",
           "concept-origin",
           "same-site",
-          "concept-origin-scheme",
           "concept-origin-host",
           "scheme-and-host",
+          "concept-origin-scheme",
           "obtain-a-site"
         ]
       },
@@ -106,6 +155,7 @@
       },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
+          "window",
           "concept-document-window"
         ]
       },
@@ -117,10 +167,13 @@
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "concept-relevant-realm",
-          "concept-relevant-global",
+          "concept-realm-global",
+          "concept-realm-settings-object",
+          "concept-environment-top-level-origin",
           "concept-settings-object-origin",
           "task-source",
-          "queue-a-task"
+          "queue-a-task",
+          "secure-context"
         ]
       },
       "https://httpwg.org/specs/rfc9651": {
@@ -135,13 +188,13 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "user-agent",
-          "implementation-defined",
           "sets",
+          "list",
           "list-contain",
           "list-iterate",
           "list-remove",
           "iteration-continue",
-          "list-size",
+          "list-is-empty",
           "string",
           "ordered-map",
           "32-bit-unsigned-integer",
@@ -149,17 +202,31 @@
           "map-exists",
           "map-set",
           "map-get",
+          "boolean",
+          "assert",
+          "the-range",
+          "list-empty",
+          "map-clear",
+          "map-getting-the-keys",
+          "map-remove",
+          "implementation-defined",
+          "list-size",
           "struct",
           "map-entry",
           "map-key",
-          "set-create",
-          "list-is-empty",
-          "set-extend",
-          "list",
           "list-item",
+          "set-create",
+          "set-extend",
           "set-append",
-          "assert",
-          "map-with-default"
+          "list-append",
+          "list-get-the-indices",
+          "list-sort-in-descending-order",
+          "32-bit-signed-integer",
+          "map-with-default",
+          "map-value",
+          "byte-sequence",
+          "isomorphic-encode",
+          "16-bit-unsigned-integer"
         ]
       },
       "https://storage.spec.whatwg.org/": {
@@ -167,31 +234,37 @@
           "storage-key"
         ]
       },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "realm"
+        ]
+      },
       "https://url.spec.whatwg.org/": {
         "anchors": [
           "host-registrable-domain",
           "concept-host-parser",
           "domain-label",
-          "concept-url"
+          "concept-url-scheme",
+          "concept-url-origin"
         ]
       },
       "https://w3ctag.github.io/privacy-principles/": {
         "anchors": [
-          "cross-context-recognition",
+          "dfn-cross-context-recognition",
           "collective-privacy",
-          "cross-site-recognition",
-          "same-site-recognition"
+          "dfn-cross-site-recognition",
+          "dfn-same-site-recognition"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "SecureContext",
           "SameObject",
-          "idl-DOMString",
           "Exposed",
           "idl-USVString",
           "idl-unsigned-long",
           "idl-sequence",
+          "idl-long",
           "idl-promise",
           "idl-double",
           "idl-Uint8Array",
@@ -212,9 +285,14 @@
           "http-headerdef-clear-site-data"
         ]
       },
-      "https://www.w3.org/TR/css-2024/": {
+      "https://www.w3.org/TR/css-2025/": {
         "anchors": [
           "user"
+        ]
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "integer"
         ]
       },
       "https://www.w3.org/TR/fingerprinting-guidance/": {
@@ -229,6 +307,7 @@
           "dfn-wall-clock",
           "dfn-current-wall-time",
           "dfn-eso-current-wall-time",
+          "dfn-unix-epoch",
           "dfn-monotonic-clock"
         ]
       },
@@ -237,6 +316,11 @@
           "policy-controlled-feature",
           "policy-controlled-feature-default-allowlist",
           "default-allowlist"
+        ]
+      },
+      "https://www.w3.org/TR/secure-contexts/": {
+        "anchors": [
+          "potentially-trustworthy-url"
         ]
       },
       "https://www.w3.org/policies/patent-policy/": {}
