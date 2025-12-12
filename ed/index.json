@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2025-12-12T00:59:33.191Z",
+  "date": "2025-12-12T09:20:08.689Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -3554,7 +3554,8 @@
       "links": "links/glTF.json",
       "headings": "headings/glTF.json",
       "ids": "ids/glTF.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:14900:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:477:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22) {\n    [cause]: ConnectTimeoutError: Connect Timeout Error (attempted addresses: 174.138.88.143:443, timeout: 10000ms)\n        at onConnectTimeout (node:internal/deps/undici/undici:2718:28)\n        at Immediate._onImmediate (node:internal/deps/undici/undici:2699:11)\n        at process.processImmediate (node:internal/timers:483:21) {\n      code: 'UND_ERR_CONNECT_TIMEOUT',\n      [Symbol(undici.error.UND_ERR)]: true,\n      [Symbol(undici.error.UND_ERR_CONNECT_TIMEOUT)]: true\n    }\n  }\n}"
     },
     {
       "url": "https://registry.khronos.org/OpenGL/specs/es/3.2/GLSL_ES_Specification_3.20.html",
@@ -14967,9 +14968,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 05 Dec 2025 03:28:56 GMT"
+        "lastModified": "Fri, 12 Dec 2025 03:30:12 GMT"
       },
-      "date": "5 December 2025",
+      "date": "12 December 2025",
       "links": "links/rfc2397.json",
       "headings": "headings/rfc2397.json",
       "ids": "ids/rfc2397.json",
@@ -15544,9 +15545,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 05 Dec 2025 03:30:34 GMT"
+        "lastModified": "Fri, 12 Dec 2025 05:39:23 GMT"
       },
-      "date": "5 December 2025",
+      "date": "12 December 2025",
       "links": "links/rfc7578.json",
       "headings": "headings/rfc7578.json",
       "ids": "ids/rfc7578.json",
@@ -24724,7 +24725,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-tables-3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 23:51:23 GMT"
+        "lastModified": "Thu, 11 Dec 2025 23:51:24 GMT"
       },
       "generator": "bikeshed",
       "date": "26 November 2025",
@@ -28456,12 +28457,10 @@
         "https://www.w3.org/TR/fill-stroke-3/",
         "https://drafts.fxtf.org/fill-stroke-3/"
       ],
-      "crawled": "https://drafts.fxtf.org/fill-stroke-3/",
-      "crawlCacheInfo": {
-        "lastModified": "Wed, 3 Dec 2025 19:52:49 GMT"
-      },
+      "crawled": "https://drafts.csswg.org/fill-stroke/",
       "generator": "bikeshed",
-      "date": "4 April 2017",
+      "date": "15 November 2025",
+      "revision": "6bb8ba3932ba7fa6e997949338d9e66361efdff7",
       "algorithms": "algorithms/fill-stroke-3.json",
       "links": "links/fill-stroke-3.json",
       "refs": "refs/fill-stroke-3.json",
@@ -28469,8 +28468,7 @@
       "dfns": "dfns/fill-stroke-3.json",
       "headings": "headings/fill-stroke-3.json",
       "ids": "ids/fill-stroke-3.json",
-      "cddl": [],
-      "error": "Error: Loading https://drafts.fxtf.org/fill-stroke-3/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 489)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "cddl": []
     },
     {
       "url": "https://www.w3.org/TR/filter-effects-1/",
@@ -31607,7 +31605,7 @@
       "headings": "headings/motion-1.json",
       "ids": "ids/motion-1.json",
       "cddl": [],
-      "error": "Error: Loading https://drafts.fxtf.org/motion-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 539)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: CSS server issue detected\n    at evaluate (evaluate at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:597:20), <anonymous>:6:22)\n    at #evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:388:19)\n    at async ExecutionContext.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:274:16)\n    at async IsolatedWorld.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/IsolatedWorld.js:97:16)\n    at async CdpFrame.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Frame.js:359:20)\n    at async CdpPage.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Page.js:814:20)\n    at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:597:9)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://www.w3.org/TR/mse-byte-stream-format-isobmff/",
@@ -33484,8 +33482,8 @@
       ],
       "crawled": "https://w3c.github.io/attribution/",
       "generator": "bikeshed",
-      "date": "11 December 2025",
-      "revision": "050e4d212d6fc0217538513b9f723fc07c9d1cdc",
+      "date": "12 December 2025",
+      "revision": "4a221a05ee49851d21fdedfb6313a2424e74b85b",
       "algorithms": "algorithms/privacy-preserving-attribution.json",
       "links": "links/privacy-preserving-attribution.json",
       "refs": "refs/privacy-preserving-attribution.json",
@@ -35403,11 +35401,11 @@
       ],
       "crawled": "https://w3c.github.io/ServiceWorker/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 26 Nov 2025 01:06:20 GMT"
+        "lastModified": "Fri, 12 Dec 2025 02:52:02 GMT"
       },
       "generator": "bikeshed",
-      "date": "26 November 2025",
-      "revision": "a6ed7c8861225fa0b66d5c99e9c124fec7d32031",
+      "date": "12 December 2025",
+      "revision": "3ff30ad9341f1062ed7d6eb916307b7d6c7c7c67",
       "algorithms": "algorithms/service-workers.json",
       "links": "links/service-workers.json",
       "refs": "refs/service-workers.json",
@@ -40738,11 +40736,11 @@
       ],
       "crawled": "https://webmachinelearning.github.io/webnn/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 03 Dec 2025 05:30:02 GMT"
+        "lastModified": "Fri, 12 Dec 2025 04:45:04 GMT"
       },
       "generator": "bikeshed",
-      "date": "3 December 2025",
-      "revision": "a1e0adf6835b6a0c74ad39338fe34a18f0114861",
+      "date": "12 December 2025",
+      "revision": "94bcacb2ec72c17e7f35e67e5ba4abe6a4724c2f",
       "algorithms": "algorithms/webnn.json",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
