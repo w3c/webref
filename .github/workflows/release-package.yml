@@ -4,6 +4,17 @@
 
 name: "Publish @webref package if needed"
 
+permissions:
+  # Required to create/update references (release tags),
+  # includes "read", which is needed to retrieve a PR:
+  # https://docs.github.com/en/rest/git/refs#create-a-reference--fine-grained-access-tokens
+  # https://docs.github.com/en/rest/pulls/pulls#get-a-pull-request--fine-grained-access-tokens
+  contents: write
+
+  # Required for Open ID Connect (OIDC) authentication for npm publication:
+  # https://docs.npmjs.com/trusted-publishers#github-actions-configuration
+  id-token: write
+
 on:
   pull_request:
     branches:
