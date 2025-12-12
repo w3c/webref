@@ -1,70 +1,45 @@
 {
   "spec": {
     "title": "Geometry Interfaces Module Level 1",
-    "url": "https://drafts.fxtf.org/geometry-1/"
+    "url": "https://drafts.csswg.org/geometry/"
   },
   "links": {
     "rawlinks": {
-      "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
-      "http://lists.w3.org/Archives/Public/public-fx/": {},
-      "http://www.w3.org/Style/CSS/Test/": {},
-      "http://www.w3.org/TR/CSS/": {
-        "anchors": [
-          "future-proofing",
-          "unstable",
-          "proprietary-extension"
-        ]
-      },
-      "http://www.w3.org/TR/CSS21/conform.html": {
-        "anchors": [
-          "style-sheet",
-          "user-agent",
-          "ignore"
-        ]
-      },
+      "http://wpt.live/css/geometry/DOMMatrix-001.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-002.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-003.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-a-f-alias.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-attributes.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-css-string.worker.js": {},
+      "http://wpt.live/css/geometry/DOMMatrix-invert-invertible.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-invert-non-invertible.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-invert-preserves-2d.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-invertSelf.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-newobject.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix-stringifier.html": {},
+      "http://wpt.live/css/geometry/DOMMatrix2DInit-validate-fixup.html": {},
+      "http://wpt.live/css/geometry/DOMMatrixInit-validate-fixup.html": {},
+      "http://wpt.live/css/geometry/DOMPoint-001.html": {},
+      "http://wpt.live/css/geometry/DOMPoint-002.html": {},
+      "http://wpt.live/css/geometry/DOMQuad-001.html": {},
+      "http://wpt.live/css/geometry/DOMQuad-002.html": {},
+      "http://wpt.live/css/geometry/DOMQuad-nan.html": {},
+      "http://wpt.live/css/geometry/DOMRect-001.html": {},
+      "http://wpt.live/css/geometry/DOMRect-002.html": {},
+      "http://wpt.live/css/geometry/DOMRect-nan.html": {},
+      "http://wpt.live/css/geometry/DOMRectList.html": {},
+      "http://wpt.live/css/geometry/WebKitCSSMatrix.html": {},
+      "http://wpt.live/css/geometry/WebKitCSSMatrix.worker.js": {},
+      "http://wpt.live/css/geometry/historical.html": {},
+      "http://wpt.live/css/geometry/idlharness.any.js": {},
+      "http://wpt.live/css/geometry/spec-examples.html": {},
+      "http://wpt.live/css/geometry/structured-serialization.html": {},
       "https://caniuse.com/": {
         "anchors": [
           "feat=dommatrix"
         ]
       },
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrix": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrix/DOMMatrix": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/DOMMatrixReadOnly": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/flipX": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/scale": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMMatrixReadOnly/translate": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/DOMPoint": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/fromPoint_static": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/w": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/x": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/y": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPoint/z": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/DOMPointReadOnly": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/fromPoint_static": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/toJSON": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/w": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/x": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/y": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMPointReadOnly/z": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMQuad": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRect": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRect/DOMRect": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/DOMRectReadOnly": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/bottom": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/fromRect_static": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/height": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/left": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/right": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/top": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/width": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/x": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/DOMRectReadOnly/y": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/SVGRect": {},
       "https://drafts.csswg.org/css-syntax/": {
         "anchors": [
           "security"
@@ -81,27 +56,102 @@
           "SkewYDefined"
         ]
       },
-      "https://drafts.csswg.org/css-transforms-2/": {},
-      "https://drafts.csswg.org/css-transforms/": {},
-      "https://drafts.csswg.org/css-values-4/": {},
-      "https://drafts.csswg.org/cssom-view/": {},
-      "https://github.com/w3c/fxtf-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues": {},
       "https://github.com/w3c/fxtf-drafts/issues/222": {},
       "https://github.com/w3c/fxtf-drafts/issues/294": {},
       "https://github.com/w3c/fxtf-drafts/issues/350": {},
       "https://github.com/w3c/fxtf-drafts/issues/359": {},
-      "https://github.com/w3c/fxtf-drafts/issues/new": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-a-f-alias.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-attributes.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-css-string.worker.js": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-invert-invertible.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-invert-non-invertible.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-invert-preserves-2d.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-invertSelf.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-newobject.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix-stringifier.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrix2DInit-validate-fixup.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMMatrixInit-validate-fixup.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMPoint-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMPoint-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMQuad-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMQuad-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMQuad-nan.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMRect-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMRect-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMRect-nan.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/DOMRectList.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/WebKitCSSMatrix.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/WebKitCSSMatrix.worker.js": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/historical.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/idlharness.any.js": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/spec-examples.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/geometry/structured-serialization.html": {},
       "https://html.spec.whatwg.org/multipage/": {},
-      "https://lists.w3.org/Archives/Public/public-fxtf-archive/": {},
+      "https://lists.w3.org/Archives/Public/public-css-archive/": {},
+      "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://tc39.es/ecma262/multipage/": {},
       "https://webidl.spec.whatwg.org/": {},
-      "https://www.w3.org/Style/": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-001.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-002.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-003.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-a-f-alias.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-attributes.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-css-string.worker.js": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-invert-invertible.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-invert-non-invertible.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-invert-preserves-2d.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-invertSelf.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-newobject.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix-stringifier.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrix2DInit-validate-fixup.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMMatrixInit-validate-fixup.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMPoint-001.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMPoint-002.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMQuad-001.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMQuad-002.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMQuad-nan.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMRect-001.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMRect-002.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMRect-nan.html": {},
+      "https://wpt.fyi/results/css/geometry/DOMRectList.html": {},
+      "https://wpt.fyi/results/css/geometry/WebKitCSSMatrix.html": {},
+      "https://wpt.fyi/results/css/geometry/WebKitCSSMatrix.worker.js": {},
+      "https://wpt.fyi/results/css/geometry/historical.html": {},
+      "https://wpt.fyi/results/css/geometry/idlharness.any.js": {},
+      "https://wpt.fyi/results/css/geometry/spec-examples.html": {},
+      "https://wpt.fyi/results/css/geometry/structured-serialization.html": {},
+      "https://www.w3.org/Style/CSS/Test/": {},
+      "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2014/CR-geometry-1-20141125/": {},
       "https://www.w3.org/TR/2014/WD-geometry-1-20140522/": {},
       "https://www.w3.org/TR/2014/WD-geometry-1-20140626/": {},
       "https://www.w3.org/TR/2014/WD-geometry-1-20140918/": {},
       "https://www.w3.org/TR/2018/CR-geometry-1-20181204/": {},
+      "https://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
       "https://www.w3.org/TR/SVG11/": {},
+      "https://www.w3.org/TR/css-syntax-3/": {},
+      "https://www.w3.org/TR/css-transforms-1/": {},
+      "https://www.w3.org/TR/css-transforms-2/": {},
+      "https://www.w3.org/TR/css-values-4/": {},
+      "https://www.w3.org/TR/cssom-view-1/": {},
       "https://www.w3.org/groups/wg/css": {},
       "https://www.w3.org/groups/wg/css/ipr": {},
       "https://www.w3.org/policies/patent-policy/20200915/": {
@@ -110,40 +160,13 @@
           "sec-Disclosure"
         ]
       },
-      "https://www.w3.org/policies/process/20250818/": {}
+      "https://www.w3.org/policies/process/20250818/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      }
     },
     "autolinks": {
-      "https://drafts.csswg.org/css-syntax-3/": {
-        "anchors": [
-          "css-parse-something-according-to-a-css-grammar"
-        ]
-      },
-      "https://drafts.csswg.org/css-transforms-1/": {
-        "anchors": [
-          "propdef-transform",
-          "typedef-transform-list",
-          "funcdef-transform-matrix"
-        ]
-      },
-      "https://drafts.csswg.org/css-transforms-2/": {
-        "anchors": [
-          "typedef-transform-function",
-          "funcdef-matrix3d"
-        ]
-      },
-      "https://drafts.csswg.org/css-values-4/": {
-        "anchors": [
-          "valdef-calc-nan",
-          "length-value",
-          "absolute-length",
-          "valdef-calc-infinity"
-        ]
-      },
-      "https://drafts.csswg.org/cssom-view-1/": {
-        "anchors": [
-          "dom-element-getboundingclientrect"
-        ]
-      },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
           "window"
@@ -169,12 +192,6 @@
           "worker"
         ]
       },
-      "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
-        "anchors": [
-          "sec-native-error-types-used-in-this-standard-typeerror",
-          "sec-native-error-types-used-in-this-standard-syntaxerror"
-        ]
-      },
       "https://tc39.github.io/ecma262/": {
         "anchors": [
           "sec-samevaluezero",
@@ -197,9 +214,42 @@
           "idl-Float32Array",
           "idl-Float64Array",
           "idl-boolean",
+          "exceptiondef-typeerror",
+          "syntaxerror",
           "idl-DOMException",
           "invalidstateerror",
           "indexsizeerror"
+        ]
+      },
+      "https://www.w3.org/TR/css-syntax-3/": {
+        "anchors": [
+          "css-parse-something-according-to-a-css-grammar"
+        ]
+      },
+      "https://www.w3.org/TR/css-transforms-1/": {
+        "anchors": [
+          "propdef-transform",
+          "typedef-transform-list",
+          "funcdef-transform-matrix"
+        ]
+      },
+      "https://www.w3.org/TR/css-transforms-2/": {
+        "anchors": [
+          "typedef-transform-function",
+          "funcdef-matrix3d"
+        ]
+      },
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "valdef-calc-nan",
+          "length-value",
+          "absolute-length",
+          "valdef-calc-infinity"
+        ]
+      },
+      "https://www.w3.org/TR/cssom-view-1/": {
+        "anchors": [
+          "dom-element-getboundingclientrect"
         ]
       }
     }

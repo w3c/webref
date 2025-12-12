@@ -1,30 +1,30 @@
 {
   "spec": {
     "title": "Filter Effects Module Level 1",
-    "url": "https://drafts.fxtf.org/filter-effects-1/"
+    "url": "https://drafts.csswg.org/filter-effects-1/"
   },
   "headings": [
     {
       "id": "title",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#title",
+      "href": "https://drafts.csswg.org/filter-effects-1/#title",
       "level": 1,
       "title": "Filter Effects Module Level 1"
     },
     {
       "id": "abstract",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#abstract",
+      "href": "https://drafts.csswg.org/filter-effects-1/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
       "id": "sotd",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#sotd",
+      "href": "https://drafts.csswg.org/filter-effects-1/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
     {
       "id": "toc",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#toc",
+      "href": "https://drafts.csswg.org/filter-effects-1/#toc",
       "level": 2,
       "title": "Table of Contents",
       "alternateIds": [
@@ -33,609 +33,783 @@
     },
     {
       "id": "intro",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#intro",
+      "href": "https://drafts.csswg.org/filter-effects-1/#intro",
       "level": 2,
       "title": "Introduction",
       "number": "1"
     },
     {
       "id": "placement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#placement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#placement",
       "level": 2,
       "title": "Module interactions",
       "number": "2"
     },
     {
       "id": "values",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#values",
+      "href": "https://drafts.csswg.org/filter-effects-1/#values",
       "level": 2,
       "title": "Values",
       "number": "3"
     },
     {
       "id": "definitions",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#definitions",
+      "href": "https://drafts.csswg.org/filter-effects-1/#definitions",
       "level": 2,
       "title": "Terminology",
       "number": "4"
     },
     {
       "id": "FilterProperty",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#FilterProperty",
+      "href": "https://drafts.csswg.org/filter-effects-1/#FilterProperty",
       "level": 2,
       "title": "Graphic filters: the filter property",
       "number": "5"
     },
     {
       "id": "filter-functions",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#filter-functions",
+      "href": "https://drafts.csswg.org/filter-effects-1/#filter-functions",
       "level": 2,
       "title": "Filter Functions",
       "number": "6"
     },
     {
       "id": "supported-filter-functions",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#supported-filter-functions",
+      "href": "https://drafts.csswg.org/filter-effects-1/#supported-filter-functions",
       "level": 3,
       "title": "Supported Filter Functions",
       "number": "6.1"
     },
     {
       "id": "computed-values-of-filter-functions",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#computed-values-of-filter-functions",
+      "href": "https://drafts.csswg.org/filter-effects-1/#computed-values-of-filter-functions",
       "level": 3,
       "title": "Computed Values of Filter Functions",
       "number": "6.2"
     },
     {
       "id": "serialization-of-filter-functions",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#serialization-of-filter-functions",
+      "href": "https://drafts.csswg.org/filter-effects-1/#serialization-of-filter-functions",
       "level": 3,
       "title": "Serialization of Filter Functions",
       "number": "6.3"
     },
     {
       "id": "interpolation-of-filter-functions",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#interpolation-of-filter-functions",
+      "href": "https://drafts.csswg.org/filter-effects-1/#interpolation-of-filter-functions",
       "level": 3,
       "title": "Interpolation of Filter Functions",
       "number": "6.4"
     },
     {
       "id": "FilterElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#FilterElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#FilterElement",
       "level": 2,
       "title": "SVG Filter Sources: the filter element",
       "number": "7"
     },
     {
       "id": "FilterEffectsRegion",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#FilterEffectsRegion",
+      "href": "https://drafts.csswg.org/filter-effects-1/#FilterEffectsRegion",
       "level": 2,
       "title": "Filter Region",
       "number": "8"
     },
     {
       "id": "FilterPrimitivesOverview",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#FilterPrimitivesOverview",
+      "href": "https://drafts.csswg.org/filter-effects-1/#FilterPrimitivesOverview",
       "level": 2,
       "title": "Filter primitives",
       "number": "9"
     },
     {
       "id": "FilterPrimitivesOverviewIntro",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#FilterPrimitivesOverviewIntro",
+      "href": "https://drafts.csswg.org/filter-effects-1/#FilterPrimitivesOverviewIntro",
       "level": 3,
       "title": "Overview",
       "number": "9.1"
     },
     {
       "id": "CommonAttributes",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#CommonAttributes",
+      "href": "https://drafts.csswg.org/filter-effects-1/#CommonAttributes",
       "level": 3,
       "title": "Common filter primitive attributes",
       "number": "9.2"
     },
     {
       "id": "FilterPrimitiveTree",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#FilterPrimitiveTree",
+      "href": "https://drafts.csswg.org/filter-effects-1/#FilterPrimitiveTree",
       "level": 3,
       "title": "Filter primitive tree",
       "number": "9.3"
     },
     {
       "id": "FilterPrimitiveSubRegion",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#FilterPrimitiveSubRegion",
+      "href": "https://drafts.csswg.org/filter-effects-1/#FilterPrimitiveSubRegion",
       "level": 3,
       "title": "Filter primitive subregion",
       "number": "9.4"
     },
     {
       "id": "feBlendElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feBlendElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feBlendElement",
       "level": 3,
       "title": "Filter primitive feBlend",
       "number": "9.5"
     },
     {
       "id": "feColorMatrixElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feColorMatrixElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feColorMatrixElement",
       "level": 3,
       "title": "Filter primitive feColorMatrix",
       "number": "9.6"
     },
     {
       "id": "feComponentTransferElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feComponentTransferElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feComponentTransferElement",
       "level": 3,
       "title": "Filter primitive feComponentTransfer",
       "number": "9.7"
     },
     {
       "id": "feFuncRElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feFuncRElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feFuncRElement",
       "level": 4,
       "title": "Transfer function feFuncR",
       "number": "9.7.1"
     },
     {
       "id": "feFuncGElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feFuncGElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feFuncGElement",
       "level": 4,
       "title": "Transfer function feFuncG",
       "number": "9.7.2"
     },
     {
       "id": "feFuncBElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feFuncBElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feFuncBElement",
       "level": 4,
       "title": "Transfer function feFuncB",
       "number": "9.7.3"
     },
     {
       "id": "feFuncAElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feFuncAElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feFuncAElement",
       "level": 4,
       "title": "Transfer function feFuncA",
       "number": "9.7.4"
     },
     {
       "id": "feCompositeElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feCompositeElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feCompositeElement",
       "level": 3,
       "title": "Filter primitive feComposite",
       "number": "9.8"
     },
     {
       "id": "feConvolveMatrixElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feConvolveMatrixElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feConvolveMatrixElement",
       "level": 3,
       "title": "Filter primitive feConvolveMatrix",
       "number": "9.9"
     },
     {
       "id": "feDiffuseLightingElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feDiffuseLightingElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feDiffuseLightingElement",
       "level": 3,
       "title": "Filter primitive feDiffuseLighting",
       "number": "9.10"
     },
     {
       "id": "feDisplacementMapElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feDisplacementMapElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feDisplacementMapElement",
       "level": 3,
       "title": "Filter primitive feDisplacementMap",
       "number": "9.11"
     },
     {
       "id": "feDropShadowElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feDropShadowElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feDropShadowElement",
       "level": 3,
       "title": "Filter primitive feDropShadow",
       "number": "9.12"
     },
     {
       "id": "feFloodElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feFloodElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feFloodElement",
       "level": 3,
       "title": "Filter primitive feFlood",
       "number": "9.13"
     },
     {
       "id": "FloodColorProperty",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#FloodColorProperty",
+      "href": "https://drafts.csswg.org/filter-effects-1/#FloodColorProperty",
       "level": 4,
       "title": "The flood-color property",
       "number": "9.13.1"
     },
     {
       "id": "FloodOpacityProperty",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#FloodOpacityProperty",
+      "href": "https://drafts.csswg.org/filter-effects-1/#FloodOpacityProperty",
       "level": 4,
       "title": "The flood-opacity property",
       "number": "9.13.2"
     },
     {
       "id": "feGaussianBlurElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feGaussianBlurElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feGaussianBlurElement",
       "level": 3,
       "title": "Filter primitive feGaussianBlur",
       "number": "9.14"
     },
     {
       "id": "feImageElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feImageElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feImageElement",
       "level": 3,
       "title": "Filter primitive feImage",
       "number": "9.15"
     },
     {
       "id": "feMergeElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feMergeElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feMergeElement",
       "level": 3,
       "title": "Filter primitive feMerge",
       "number": "9.16"
     },
     {
       "id": "feMergeNodeElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feMergeNodeElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feMergeNodeElement",
       "level": 4,
       "title": "Merge node feMergeNode",
       "number": "9.16.1"
     },
     {
       "id": "feMorphologyElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feMorphologyElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feMorphologyElement",
       "level": 3,
       "title": "Filter primitive feMorphology",
       "number": "9.17"
     },
     {
       "id": "feOffsetElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feOffsetElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feOffsetElement",
       "level": 3,
       "title": "Filter primitive feOffset",
       "number": "9.18"
     },
     {
       "id": "feSpecularLightingElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feSpecularLightingElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feSpecularLightingElement",
       "level": 3,
       "title": "Filter primitive feSpecularLighting",
       "number": "9.19"
     },
     {
       "id": "feTileElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feTileElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feTileElement",
       "level": 3,
       "title": "Filter primitive feTile",
       "number": "9.20"
     },
     {
       "id": "feTurbulenceElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feTurbulenceElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feTurbulenceElement",
       "level": 3,
       "title": "Filter primitive feTurbulence",
       "number": "9.21"
     },
     {
       "id": "ColorInterpolationFiltersProperty",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#ColorInterpolationFiltersProperty",
+      "href": "https://drafts.csswg.org/filter-effects-1/#ColorInterpolationFiltersProperty",
       "level": 2,
       "title": "10. The color-interpolation-filters property"
     },
     {
       "id": "LightSourceDefinitions",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#LightSourceDefinitions",
+      "href": "https://drafts.csswg.org/filter-effects-1/#LightSourceDefinitions",
       "level": 2,
       "title": "11. Light source elements and properties"
     },
     {
       "id": "LightSourceIntro",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#LightSourceIntro",
+      "href": "https://drafts.csswg.org/filter-effects-1/#LightSourceIntro",
       "level": 3,
       "title": "Introduction",
       "number": "11.1"
     },
     {
       "id": "feDistantLightElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feDistantLightElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feDistantLightElement",
       "level": 3,
       "title": "Light source feDistantLight",
       "number": "11.2"
     },
     {
       "id": "fePointLightElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#fePointLightElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#fePointLightElement",
       "level": 3,
       "title": "Light source fePointLight",
       "number": "11.3"
     },
     {
       "id": "feSpotLightElement",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#feSpotLightElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#feSpotLightElement",
       "level": 3,
       "title": "Light source feSpotLight",
       "number": "11.4"
     },
     {
       "id": "LightingColorProperty",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#LightingColorProperty",
+      "href": "https://drafts.csswg.org/filter-effects-1/#LightingColorProperty",
       "level": 3,
       "title": "The lighting-color property",
       "number": "11.5"
     },
     {
       "id": "FilterCSSImageValue",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#FilterCSSImageValue",
+      "href": "https://drafts.csswg.org/filter-effects-1/#FilterCSSImageValue",
       "level": 2,
       "title": "12. Filter CSS <image> values"
     },
     {
       "id": "interpolating-filter-image",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#interpolating-filter-image",
+      "href": "https://drafts.csswg.org/filter-effects-1/#interpolating-filter-image",
       "level": 3,
       "title": "Interpolating filter()",
       "number": "12.1"
     },
     {
       "id": "ShorthandEquivalents",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#ShorthandEquivalents",
+      "href": "https://drafts.csswg.org/filter-effects-1/#ShorthandEquivalents",
       "level": 2,
       "title": "13. Shorthands defined in terms of the filter element"
     },
     {
       "id": "FilterPrimitiveRepresentation",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#FilterPrimitiveRepresentation",
+      "href": "https://drafts.csswg.org/filter-effects-1/#FilterPrimitiveRepresentation",
       "level": 3,
       "title": "Filter primitive representation",
       "number": "13.1"
     },
     {
       "id": "grayscaleEquivalent",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#grayscaleEquivalent",
+      "href": "https://drafts.csswg.org/filter-effects-1/#grayscaleEquivalent",
       "level": 4,
       "title": "grayscale",
       "number": "13.1.1"
     },
     {
       "id": "sepiaEquivalent",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#sepiaEquivalent",
+      "href": "https://drafts.csswg.org/filter-effects-1/#sepiaEquivalent",
       "level": 4,
       "title": "sepia",
       "number": "13.1.2"
     },
     {
       "id": "saturateEquivalent",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#saturateEquivalent",
+      "href": "https://drafts.csswg.org/filter-effects-1/#saturateEquivalent",
       "level": 4,
       "title": "saturate",
       "number": "13.1.3"
     },
     {
       "id": "huerotateEquivalent",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#huerotateEquivalent",
+      "href": "https://drafts.csswg.org/filter-effects-1/#huerotateEquivalent",
       "level": 4,
       "title": "hue-rotate",
       "number": "13.1.4"
     },
     {
       "id": "invertEquivalent",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#invertEquivalent",
+      "href": "https://drafts.csswg.org/filter-effects-1/#invertEquivalent",
       "level": 4,
       "title": "invert",
       "number": "13.1.5"
     },
     {
       "id": "opacityEquivalent",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#opacityEquivalent",
+      "href": "https://drafts.csswg.org/filter-effects-1/#opacityEquivalent",
       "level": 4,
       "title": "opacity",
       "number": "13.1.6"
     },
     {
       "id": "brightnessEquivalent",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#brightnessEquivalent",
+      "href": "https://drafts.csswg.org/filter-effects-1/#brightnessEquivalent",
       "level": 4,
       "title": "brightness",
       "number": "13.1.7"
     },
     {
       "id": "contrastEquivalent",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#contrastEquivalent",
+      "href": "https://drafts.csswg.org/filter-effects-1/#contrastEquivalent",
       "level": 4,
       "title": "contrast",
       "number": "13.1.8"
     },
     {
       "id": "blurEquivalent",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#blurEquivalent",
+      "href": "https://drafts.csswg.org/filter-effects-1/#blurEquivalent",
       "level": 4,
       "title": "blur",
       "number": "13.1.9"
     },
     {
       "id": "dropshadowEquivalent",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#dropshadowEquivalent",
+      "href": "https://drafts.csswg.org/filter-effects-1/#dropshadowEquivalent",
       "level": 4,
       "title": "drop-shadow",
       "number": "13.1.10"
     },
     {
       "id": "filter-region-for-shorthands",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#filter-region-for-shorthands",
+      "href": "https://drafts.csswg.org/filter-effects-1/#filter-region-for-shorthands",
       "level": 3,
       "title": "Filter region for shorthands",
       "number": "13.2"
     },
     {
       "id": "animation-of-filters",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#animation-of-filters",
+      "href": "https://drafts.csswg.org/filter-effects-1/#animation-of-filters",
       "level": 2,
       "title": "14. Animation of Filters"
     },
     {
       "id": "interpolation-of-filters",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#interpolation-of-filters",
+      "href": "https://drafts.csswg.org/filter-effects-1/#interpolation-of-filters",
       "level": 3,
       "title": "Interpolation of Filter Function Lists",
       "number": "14.1"
     },
     {
       "id": "addition",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#addition",
+      "href": "https://drafts.csswg.org/filter-effects-1/#addition",
       "level": 3,
       "title": "Addition",
       "number": "14.2"
     },
     {
       "id": "accumulation",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#accumulation",
+      "href": "https://drafts.csswg.org/filter-effects-1/#accumulation",
       "level": 3,
       "title": "Accumulation",
       "number": "14.3"
     },
     {
       "id": "priv-sec",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#priv-sec",
+      "href": "https://drafts.csswg.org/filter-effects-1/#priv-sec",
       "level": 2,
       "title": "15. Privacy and Security Considerations"
     },
     {
       "id": "tainted-filter-primitives",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#tainted-filter-primitives",
+      "href": "https://drafts.csswg.org/filter-effects-1/#tainted-filter-primitives",
       "level": 3,
       "title": "Tainted Filter Primitives",
       "number": "15.1"
     },
     {
       "id": "fedisplacemnentmap-restrictions",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#fedisplacemnentmap-restrictions",
+      "href": "https://drafts.csswg.org/filter-effects-1/#fedisplacemnentmap-restrictions",
       "level": 3,
       "title": "feDisplacementMap Restrictions",
       "number": "15.2"
     },
     {
       "id": "origin-restrictions",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#origin-restrictions",
+      "href": "https://drafts.csswg.org/filter-effects-1/#origin-restrictions",
       "level": 3,
       "title": "Origin Restrictions",
       "number": "15.3"
     },
     {
       "id": "timing-attack",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#timing-attack",
+      "href": "https://drafts.csswg.org/filter-effects-1/#timing-attack",
       "level": 3,
       "title": "Timing Attacks",
       "number": "15.4"
     },
     {
       "id": "AccessBackgroundImage",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#AccessBackgroundImage",
+      "href": "https://drafts.csswg.org/filter-effects-1/#AccessBackgroundImage",
       "level": 2,
       "title": "The deprecated enable-background property",
       "number": "A"
     },
     {
       "id": "DOMInterfaces",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#DOMInterfaces",
+      "href": "https://drafts.csswg.org/filter-effects-1/#DOMInterfaces",
       "level": 2,
       "title": "DOM interfaces",
       "number": "B"
     },
     {
+      "id": "InterfaceSVGFilterElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFilterElement",
+      "level": 3,
+      "title": "Interface SVGFilterElement"
+    },
+    {
+      "id": "InterfaceSVGFilterPrimitiveStandardAttributes",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFilterPrimitiveStandardAttributes",
+      "level": 3,
+      "title": "Interface SVGFilterPrimitiveStandardAttributes"
+    },
+    {
+      "id": "InterfaceSVGFEBlendElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEBlendElement",
+      "level": 3,
+      "title": "Interface SVGFEBlendElement"
+    },
+    {
+      "id": "InterfaceSVGFEColorMatrixElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEColorMatrixElement",
+      "level": 3,
+      "title": "Interface SVGFEColorMatrixElement"
+    },
+    {
+      "id": "InterfaceSVGFEComponentTransferElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEComponentTransferElement",
+      "level": 3,
+      "title": "Interface SVGFEComponentTransferElement"
+    },
+    {
+      "id": "InterfaceSVGComponentTransferFunctionElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGComponentTransferFunctionElement",
+      "level": 3,
+      "title": "Interface SVGComponentTransferFunctionElement"
+    },
+    {
+      "id": "InterfaceSVGFEFuncRElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEFuncRElement",
+      "level": 3,
+      "title": "Interface SVGFEFuncRElement"
+    },
+    {
+      "id": "InterfaceSVGFEFuncGElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEFuncGElement",
+      "level": 3,
+      "title": "Interface SVGFEFuncGElement"
+    },
+    {
+      "id": "InterfaceSVGFEFuncBElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEFuncBElement",
+      "level": 3,
+      "title": "Interface SVGFEFuncBElement"
+    },
+    {
+      "id": "InterfaceSVGFEFuncAElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEFuncAElement",
+      "level": 3,
+      "title": "Interface SVGFEFuncAElement"
+    },
+    {
+      "id": "InterfaceSVGFECompositeElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFECompositeElement",
+      "level": 3,
+      "title": "Interface SVGFECompositeElement"
+    },
+    {
+      "id": "InterfaceSVGFEConvolveMatrixElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEConvolveMatrixElement",
+      "level": 3,
+      "title": "Interface SVGFEConvolveMatrixElement"
+    },
+    {
+      "id": "InterfaceSVGFEDiffuseLightingElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEDiffuseLightingElement",
+      "level": 3,
+      "title": "Interface SVGFEDiffuseLightingElement"
+    },
+    {
+      "id": "InterfaceSVGFEDistantLightElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEDistantLightElement",
+      "level": 3,
+      "title": "Interface SVGFEDistantLightElement"
+    },
+    {
+      "id": "InterfaceSVGFEPointLightElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEPointLightElement",
+      "level": 3,
+      "title": "Interface SVGFEPointLightElement"
+    },
+    {
+      "id": "InterfaceSVGFESpotLightElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFESpotLightElement",
+      "level": 3,
+      "title": "Interface SVGFESpotLightElement"
+    },
+    {
+      "id": "InterfaceSVGFEDisplacementMapElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEDisplacementMapElement",
+      "level": 3,
+      "title": "Interface SVGFEDisplacementMapElement"
+    },
+    {
+      "id": "InterfaceSVGFEDropShadowElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEDropShadowElement",
+      "level": 3,
+      "title": "Interface SVGFEDropShadowElement"
+    },
+    {
+      "id": "InterfaceSVGFEFloodElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEFloodElement",
+      "level": 3,
+      "title": "Interface SVGFEFloodElement"
+    },
+    {
+      "id": "InterfaceSVGFEGaussianBlurElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEGaussianBlurElement",
+      "level": 3,
+      "title": "Interface SVGFEGaussianBlurElement"
+    },
+    {
+      "id": "InterfaceSVGFEImageElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEImageElement",
+      "level": 3,
+      "title": "Interface SVGFEImageElement"
+    },
+    {
+      "id": "InterfaceSVGFEMergeElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEMergeElement",
+      "level": 3,
+      "title": "Interface SVGFEMergeElement"
+    },
+    {
+      "id": "InterfaceSVGFEMergeNodeElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEMergeNodeElement",
+      "level": 3,
+      "title": "Interface SVGFEMergeNodeElement"
+    },
+    {
+      "id": "InterfaceSVGFEMorphologyElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEMorphologyElement",
+      "level": 3,
+      "title": "Interface SVGFEMorphologyElement"
+    },
+    {
+      "id": "InterfaceSVGFEOffsetElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFEOffsetElement",
+      "level": 3,
+      "title": "Interface SVGFEOffsetElement"
+    },
+    {
+      "id": "InterfaceSVGFESpecularLightingElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFESpecularLightingElement",
+      "level": 3,
+      "title": "Interface SVGFESpecularLightingElement"
+    },
+    {
+      "id": "InterfaceSVGFETileElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFETileElement",
+      "level": 3,
+      "title": "Interface SVGFETileElement"
+    },
+    {
+      "id": "InterfaceSVGFETurbulenceElement",
+      "href": "https://drafts.csswg.org/filter-effects-1/#InterfaceSVGFETurbulenceElement",
+      "level": 3,
+      "title": "Interface SVGFETurbulenceElement"
+    },
+    {
       "id": "changes",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#changes",
+      "href": "https://drafts.csswg.org/filter-effects-1/#changes",
       "level": 2,
       "title": "Changes"
     },
     {
       "id": "acknowledgments",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#acknowledgments",
+      "href": "https://drafts.csswg.org/filter-effects-1/#acknowledgments",
       "level": 2,
       "title": "Acknowledgments"
     },
     {
       "id": "w3c-conformance",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#w3c-conformance",
+      "href": "https://drafts.csswg.org/filter-effects-1/#w3c-conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
       "id": "w3c-conventions",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#w3c-conventions",
+      "href": "https://drafts.csswg.org/filter-effects-1/#w3c-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
       "id": "w3c-conformance-classes",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/filter-effects-1/#w3c-conformance-classes",
       "level": 3,
       "title": "Conformance classes"
     },
     {
       "id": "w3c-partial",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#w3c-partial",
+      "href": "https://drafts.csswg.org/filter-effects-1/#w3c-partial",
       "level": 3,
       "title": "Partial implementations"
     },
     {
       "id": "w3c-conform-future-proofing",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/filter-effects-1/#w3c-conform-future-proofing",
       "level": 4,
       "title": "Implementations of Unstable and Proprietary Features"
     },
     {
       "id": "w3c-testing",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#w3c-testing",
+      "href": "https://drafts.csswg.org/filter-effects-1/#w3c-testing",
       "level": 3,
       "title": "Non-experimental implementations"
     },
     {
       "id": "index",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#index",
+      "href": "https://drafts.csswg.org/filter-effects-1/#index",
       "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#index-defined-here",
+      "href": "https://drafts.csswg.org/filter-effects-1/#index-defined-here",
       "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/filter-effects-1/#index-defined-elsewhere",
       "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#references",
+      "href": "https://drafts.csswg.org/filter-effects-1/#references",
       "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#normative",
+      "href": "https://drafts.csswg.org/filter-effects-1/#normative",
       "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#informative",
+      "href": "https://drafts.csswg.org/filter-effects-1/#informative",
       "level": 3,
       "title": "Informative References"
     },
     {
       "id": "property-index",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#property-index",
+      "href": "https://drafts.csswg.org/filter-effects-1/#property-index",
       "level": 2,
       "title": "Property Index"
     },
     {
+      "id": "idl-index",
+      "href": "https://drafts.csswg.org/filter-effects-1/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
       "id": "issues-index",
-      "href": "https://drafts.fxtf.org/filter-effects-1/#issues-index",
+      "href": "https://drafts.csswg.org/filter-effects-1/#issues-index",
       "level": 2,
       "title": "Issues Index"
     }
