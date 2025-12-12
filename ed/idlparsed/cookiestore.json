@@ -511,7 +511,7 @@
         "href": "https://cookiestore.spec.whatwg.org/#enumdef-cookiesamesite"
       },
       "CookieInit": {
-        "fragment": "dictionary CookieInit {\n  required USVString name;\n  required USVString value;\n  DOMHighResTimeStamp? expires = null;\n  USVString? domain = null;\n  USVString path = \"/\";\n  CookieSameSite sameSite = \"strict\";\n  boolean partitioned = false;\n};",
+        "fragment": "dictionary CookieInit {\n  required USVString name;\n  required USVString value;\n  DOMHighResTimeStamp? expires = null;\n  USVString? domain = null;\n  USVString path = \"/\";\n  CookieSameSite sameSite = \"strict\";\n  boolean partitioned = false;\n  long long? maxAge = null;\n};",
         "type": "dictionary",
         "name": "CookieInit",
         "inheritance": null,
@@ -640,6 +640,24 @@
             },
             "required": false,
             "href": "https://cookiestore.spec.whatwg.org/#dom-cookieinit-partitioned"
+          },
+          {
+            "type": "field",
+            "name": "maxAge",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "long long"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false,
+            "href": "https://cookiestore.spec.whatwg.org/#dom-cookieinit-maxage"
           }
         ],
         "extAttrs": [],

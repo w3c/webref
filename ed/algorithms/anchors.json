@@ -66,7 +66,7 @@
           "html": "<p>Let <var>uuid</var> be the empty string.</p>"
         },
         {
-          "html": "<p>Generate a UUID <a data-link-type=\"biblio\" href=\"https://immersive-web.github.io/anchors/#biblio-rfc4122\" title=\"Universally Unique IDentifiers (UUIDs)\">[RFC4122]</a> as a string and append it to <var>uuid</var>.</p>"
+          "html": "<p>Generate a UUID <a data-link-type=\"biblio\" href=\"https://immersive-web.github.io/anchors/#biblio-rfc9562\" title=\"Universally Unique IDentifiers (UUIDs)\">[RFC9562]</a> as a string and append it to <var>uuid</var>.</p>"
         },
         {
           "html": "<p>Add <var>uuid</var> and <var>anchor</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors②\">map of persistent anchors</a>.</p>"
@@ -131,7 +131,7 @@
           "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors④\">map of persistent anchors</a> does not contain a mapping from <var>uuid</var> to an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#xranchor\" id=\"ref-for-xranchor①②\">XRAnchor</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-writing-modes-4/#css-end\" id=\"ref-for-css-end\">ended</a> value is `true`, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
+          "html": "<p>If <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession-ended\" id=\"ref-for-xrsession-ended\">ended</a></code> value is `true`, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>anchor</var> be the value of mapping from <var>uuid</var> on <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors⑤\">map of persistent anchors</a>.</p>"

@@ -1800,7 +1800,7 @@
         "clip"
       ],
       "name": "rect()",
-      "href": "https://drafts.fxtf.org/css-masking-1/#funcdef-clip-rect",
+      "href": "https://drafts.csswg.org/css-masking-1/#funcdef-clip-rect",
       "syntax": "rect( <top>, <right>, <bottom>, <left> )",
       "extended": []
     },
@@ -3599,7 +3599,7 @@
     },
     {
       "name": "backdrop-filter",
-      "href": "https://drafts.fxtf.org/filter-effects-2/#propdef-backdrop-filter",
+      "href": "https://drafts.csswg.org/filter-effects-2/#propdef-backdrop-filter",
       "initial": "none",
       "appliesTo": "All elements. In SVG, it applies to container elements without the defs element and all graphics elements",
       "inherited": "no",
@@ -3667,20 +3667,20 @@
     },
     {
       "name": "background-blend-mode",
-      "href": "https://drafts.fxtf.org/compositing-2/#propdef-background-blend-mode",
+      "href": "https://drafts.csswg.org/compositing-2/#propdef-background-blend-mode",
       "initial": "normal",
       "appliesTo": "All HTML elements",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "media": "visual",
-      "animatable": "no",
       "styleDeclaration": [
         "background-blend-mode",
         "backgroundBlendMode"
       ],
-      "syntax": "<mix-blend-mode>#",
+      "syntax": "<'mix-blend-mode'>#",
       "extended": []
     },
     {
@@ -5943,7 +5943,7 @@
     },
     {
       "name": "clip",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-clip",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-clip",
       "initial": "auto",
       "appliesTo": "Absolutely positioned elements. In SVG, it applies to elements which establish a new viewport, pattern elements and mask elements.",
       "inherited": "no",
@@ -5960,7 +5960,7 @@
     },
     {
       "name": "clip-path",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-clip-path",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-clip-path",
       "initial": "none",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -5978,7 +5978,7 @@
     },
     {
       "name": "clip-rule",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-clip-rule",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-clip-rule",
       "initial": "nonzero",
       "appliesTo": "Applies to SVG graphics elements",
       "inherited": "yes",
@@ -9223,15 +9223,15 @@
     },
     {
       "name": "isolation",
-      "href": "https://drafts.fxtf.org/compositing-2/#propdef-isolation",
+      "href": "https://drafts.csswg.org/compositing-2/#propdef-isolation",
       "initial": "auto",
       "appliesTo": "All elements. In SVG, it applies to container elements, graphics elements and graphics referencing elements. [SVG11]",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "media": "visual",
-      "animatable": "no",
       "styleDeclaration": [
         "isolation"
       ],
@@ -10009,7 +10009,7 @@
     },
     {
       "name": "mask",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask",
       "initial": "see individual properties",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -10026,7 +10026,7 @@
     },
     {
       "name": "mask-border",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-border",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-border",
       "initial": "See individual properties",
       "appliesTo": "See individual properties",
       "inherited": "no",
@@ -10044,7 +10044,7 @@
     },
     {
       "name": "mask-border-mode",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-border-mode",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-border-mode",
       "initial": "alpha",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -10062,7 +10062,7 @@
     },
     {
       "name": "mask-border-outset",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-border-outset",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-border-outset",
       "initial": "0",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -10080,7 +10080,7 @@
     },
     {
       "name": "mask-border-repeat",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-border-repeat",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-border-repeat",
       "initial": "stretch",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -10098,7 +10098,7 @@
     },
     {
       "name": "mask-border-slice",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-border-slice",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-border-slice",
       "initial": "0",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -10116,7 +10116,7 @@
     },
     {
       "name": "mask-border-source",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-border-source",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-border-source",
       "initial": "none",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -10134,7 +10134,7 @@
     },
     {
       "name": "mask-border-width",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-border-width",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-border-width",
       "initial": "auto",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -10152,7 +10152,7 @@
     },
     {
       "name": "mask-clip",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-clip",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-clip",
       "initial": "border-box",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -10170,7 +10170,7 @@
     },
     {
       "name": "mask-composite",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-composite",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-composite",
       "initial": "add",
       "appliesTo": "All elements. In SVG, it applies to container elements without the defs element and all graphics elements",
       "inherited": "no",
@@ -10188,7 +10188,7 @@
     },
     {
       "name": "mask-image",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-image",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-image",
       "initial": "none",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -10206,7 +10206,7 @@
     },
     {
       "name": "mask-mode",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-mode",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-mode",
       "initial": "match-source",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -10224,7 +10224,7 @@
     },
     {
       "name": "mask-origin",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-origin",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-origin",
       "initial": "border-box",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -10242,7 +10242,7 @@
     },
     {
       "name": "mask-position",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-position",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-position",
       "initial": "0% 0%",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -10260,7 +10260,7 @@
     },
     {
       "name": "mask-repeat",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-repeat",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-repeat",
       "initial": "repeat",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -10278,7 +10278,7 @@
     },
     {
       "name": "mask-size",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-size",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-size",
       "initial": "auto",
       "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
@@ -10296,7 +10296,7 @@
     },
     {
       "name": "mask-type",
-      "href": "https://drafts.fxtf.org/css-masking-1/#propdef-mask-type",
+      "href": "https://drafts.csswg.org/css-masking-1/#propdef-mask-type",
       "initial": "luminance",
       "appliesTo": "mask elements",
       "inherited": "no",
@@ -10558,20 +10558,20 @@
     },
     {
       "name": "mix-blend-mode",
-      "href": "https://drafts.fxtf.org/compositing-2/#propdef-mix-blend-mode",
+      "href": "https://drafts.csswg.org/compositing-2/#propdef-mix-blend-mode",
       "initial": "normal",
       "appliesTo": "All elements. In SVG, it applies to container elements, graphics elements and graphics referencing elements. [SVG11]",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "media": "visual",
-      "animatable": "no",
       "styleDeclaration": [
         "mix-blend-mode",
         "mixBlendMode"
       ],
-      "syntax": "<blend-mode> | plus-darker | plus-lighter",
+      "syntax": "<blend-mode> | plus-lighter",
       "extended": []
     },
     {
@@ -16850,8 +16850,8 @@
     },
     {
       "name": "auto-repeat",
-      "href": "https://drafts.csswg.org/css-grid-2/#typedef-auto-repeat",
-      "syntax": "repeat( [ auto-fill | auto-fit ] , [ <line-names>? <fixed-size> ]+ <line-names>? )",
+      "href": "https://drafts.csswg.org/css-grid-3/#typedef-auto-repeat",
+      "syntax": "repeat( [ auto-fill | auto-fit ] , [ <line-names>? <track-size> ]+ <line-names>? )",
       "extended": []
     },
     {
@@ -16953,8 +16953,8 @@
     },
     {
       "name": "blend-mode",
-      "href": "https://drafts.fxtf.org/compositing-2/#ltblendmodegt",
-      "syntax": "normal | multiply | screen | overlay | darken | lighten | color-dodge |color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity",
+      "href": "https://drafts.csswg.org/compositing-2/#ltblendmodegt",
+      "syntax": "normal | darken | multiply | color-burn | lighten | screen | color-dodge | overlay | soft-light | hard-light | difference | exclusion | hue | saturation | color | luminosity",
       "extended": []
     },
     {
@@ -17062,7 +17062,7 @@
     },
     {
       "name": "clip-source",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-clip-source",
+      "href": "https://drafts.csswg.org/css-masking-1/#typedef-clip-source",
       "syntax": "<url>",
       "extended": []
     },
@@ -17229,13 +17229,13 @@
     },
     {
       "name": "composite-mode",
-      "href": "https://drafts.fxtf.org/compositing-2/#compositemode",
+      "href": "https://drafts.csswg.org/compositing-2/#compositemode",
       "syntax": "clear | copy | source-over | destination-over | source-in | destination-in | source-out | destination-out | source-atop | destination-atop | xor | lighter | plus-darker | plus-lighter",
       "extended": []
     },
     {
       "name": "compositing-operator",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-compositing-operator",
+      "href": "https://drafts.csswg.org/css-masking-1/#typedef-compositing-operator",
       "syntax": "add | subtract | intersect | exclude",
       "extended": []
     },
@@ -17848,7 +17848,7 @@
     },
     {
       "name": "geometry-box",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-geometry-box",
+      "href": "https://drafts.csswg.org/css-masking-1/#typedef-geometry-box",
       "syntax": "<shape-box> | fill-box | stroke-box | view-box",
       "extended": []
     },
@@ -18074,7 +18074,7 @@
     },
     {
       "name": "isolation-mode",
-      "href": "https://drafts.fxtf.org/compositing-2/#isolated-propid",
+      "href": "https://drafts.csswg.org/compositing-2/#isolated-propid",
       "syntax": "auto | isolate",
       "extended": []
     },
@@ -18299,25 +18299,25 @@
     },
     {
       "name": "mask-layer",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-mask-layer",
+      "href": "https://drafts.csswg.org/css-masking-1/#typedef-mask-layer",
       "syntax": "<mask-reference> || <position> [ / <bg-size> ]? || <repeat-style> || <geometry-box> || [ <geometry-box> | no-clip ] || <compositing-operator> || <masking-mode>",
       "extended": []
     },
     {
       "name": "mask-reference",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-mask-reference",
+      "href": "https://drafts.csswg.org/css-masking-1/#typedef-mask-reference",
       "syntax": "none | <image> | <mask-source>",
       "extended": []
     },
     {
       "name": "mask-source",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-mask-source",
+      "href": "https://drafts.csswg.org/css-masking-1/#typedef-mask-source",
       "syntax": "<url>",
       "extended": []
     },
     {
       "name": "masking-mode",
-      "href": "https://drafts.fxtf.org/css-masking-1/#typedef-masking-mode",
+      "href": "https://drafts.csswg.org/css-masking-1/#typedef-masking-mode",
       "syntax": "alpha | luminance | match-source",
       "extended": []
     },

@@ -6,7 +6,7 @@
       "title": "Cookie Store API Standard",
       "url": "https://cookiestore.spec.whatwg.org/"
     },
-    "fragment": "dictionary CookieInit {\n  required USVString name;\n  required USVString value;\n  DOMHighResTimeStamp? expires = null;\n  USVString? domain = null;\n  USVString path = \"/\";\n  CookieSameSite sameSite = \"strict\";\n  boolean partitioned = false;\n};",
+    "fragment": "dictionary CookieInit {\n  required USVString name;\n  required USVString value;\n  DOMHighResTimeStamp? expires = null;\n  USVString? domain = null;\n  USVString path = \"/\";\n  CookieSameSite sameSite = \"strict\";\n  boolean partitioned = false;\n  long long? maxAge = null;\n};",
     "href": "https://cookiestore.spec.whatwg.org/#dictdef-cookieinit"
   },
   "extended": [],

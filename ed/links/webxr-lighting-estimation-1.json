@@ -6,12 +6,6 @@
   "links": {
     "rawlinks": {
       "http://lists.w3.org/Archives/Public/public-immersive-web-wg/": {},
-      "http://www.w3.org/Consortium/Patent-Policy-20170801/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
       "http://www.w3.org/TR/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRFrame/getLightEstimate": {},
@@ -26,20 +20,27 @@
       "https://developer.mozilla.org/en-US/docs/Web/API/XRSession/requestLightProbe": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/XRWebGLBinding/getReflectionCubeMap": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://drafts.fxtf.org/geometry/": {},
       "https://github.com/immersive-web/lighting-estimation/issues": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://immersive-web.github.io/layers/": {},
       "https://immersive-web.github.io/webxr-ar-module/": {},
+      "https://immersive-web.github.io/webxr/": {},
       "https://infra.spec.whatwg.org/": {},
+      "https://w3c.github.io/ambient-light/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.khronos.org/registry/webgl/specs/latest/2.0/": {},
-      "https://www.w3.org/2021/Process-20211102/": {},
       "https://www.w3.org/TR/2021/WD-webxr-lighting-estimation-1-20210909/": {},
-      "https://www.w3.org/TR/ambient-light/": {},
-      "https://www.w3.org/TR/geometry-1/": {},
       "https://www.w3.org/TR/webxr/": {},
       "https://www.w3.org/groups/wg/immersive-web": {},
-      "https://www.w3.org/groups/wg/immersive-web/ipr": {}
+      "https://www.w3.org/groups/wg/immersive-web/ipr": {},
+      "https://www.w3.org/policies/patent-policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20250818/": {}
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
@@ -68,7 +69,6 @@
       "https://immersive-web.github.io/webxr/": {
         "anchors": [
           "xrspace",
-          "feature-descriptor",
           "dom-xrframe-session"
         ]
       },
@@ -106,9 +106,10 @@
           "xrspace-native-origin",
           "xrframe-interface",
           "xrsession-interface",
+          "feature-descriptor",
           "xrsession-xr-device",
           "xrsession-list-of-enabled-features",
-          "ended",
+          "xrsession-ended",
           "xrframe-active",
           "xr-task-source"
         ]
