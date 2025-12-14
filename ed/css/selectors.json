@@ -66,12 +66,6 @@
       "value": ":visited"
     },
     {
-      "name": ":local-link",
-      "prose": "The :local-link pseudo-class allows authors to style hyperlinks based on the users current location within a site. It represents an element that is the source anchor of a hyperlink whose target’s absolute URL matches the element’s own document URL. If the hyperlink’s target includes a fragment URL, then the fragment URL of the current URL must also match; if it does not, then the fragment URL portion of the current URL is not taken into account in the comparison.",
-      "href": "https://drafts.csswg.org/selectors-4/#local-link-pseudo",
-      "value": ":local-link"
-    },
-    {
       "name": ":target",
       "prose": "The :target pseudo-class matches the document’s target elements. If the document’s URL has no fragment identifier, then the document has no target elements.",
       "href": "https://drafts.csswg.org/selectors-4/#target-pseudo",
@@ -112,41 +106,6 @@
       "prose": "The :focus-within pseudo-class applies to any element (or pseudo-element) for which the :focus pseudo-class applies, as well as to an element (or pseudo-element) whose descendant in the flat tree (including non-element nodes, such as text nodes) matches the conditions for matching :focus.",
       "href": "https://drafts.csswg.org/selectors-4/#focus-within-pseudo",
       "value": ":focus-within"
-    },
-    {
-      "name": ":interest-source",
-      "prose": "The :interest-source pseudo-class applies to an interest source element that the user is currently \"showing interest\" in, and the :interest-target pseudo-class applies to the associated interest target of an element matching :interest-source.",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-interest-source",
-      "value": ":interest-source"
-    },
-    {
-      "name": ":interest-target",
-      "prose": "The :interest-source pseudo-class applies to an interest source element that the user is currently \"showing interest\" in, and the :interest-target pseudo-class applies to the associated interest target of an element matching :interest-source.",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-interest-target",
-      "value": ":interest-target"
-    },
-    {
-      "name": ":current",
-      "prose": "The :current pseudo-class represents the element, or an ancestor of the element, that is currently being displayed.",
-      "href": "https://drafts.csswg.org/selectors-4/#current-pseudo",
-      "value": ":current"
-    },
-    {
-      "name": ":current()",
-      "prose": "Its alternate form :current() takes a list of compound selectors as its argument: it represents the :current element that matches the argument or, if that does not match, the innermost ancestor of the :current element that does. (If neither the :current element nor its ancestors match the argument, then the selector does not represent anything.)",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-current"
-    },
-    {
-      "name": ":past",
-      "prose": "The :past pseudo-class represents any element that is defined to occur entirely prior to a :current element. For example, the WebVTT spec defines the :past pseudo-class relative to the current playback position of a media element. If a time-based order of elements is not defined by the document language, then this represents any element that is a (possibly indirect) previous sibling of a :current element.",
-      "href": "https://drafts.csswg.org/selectors-4/#past-pseudo",
-      "value": ":past"
-    },
-    {
-      "name": ":future",
-      "prose": "The :future pseudo-class represents any element that is defined to occur entirely after a :current element. For example, the WebVTT spec defines the :future pseudo-class relative to the current playback position of a media element. If a time-based order of elements is not defined by the document language, then this represents any element that is a (possibly indirect) next sibling of a :current element.",
-      "href": "https://drafts.csswg.org/selectors-4/#future-pseudo",
-      "value": ":future"
     },
     {
       "name": ":playing",
@@ -281,12 +240,6 @@
       "value": ":indeterminate"
     },
     {
-      "name": ":blank",
-      "prose": "The :blank pseudo-class applies to user-input elements whose input value is empty (consists of the empty string or otherwise null input).",
-      "href": "https://drafts.csswg.org/selectors-4/#blank-pseudo",
-      "value": ":blank"
-    },
-    {
       "name": ":valid",
       "prose": "An element is :valid or :invalid when its contents or value is, respectively, valid or invalid with respect to data validity semantics defined by the document language (e.g. [XFORMS11] or [HTML5]). An element which lacks data validity semantics is neither :valid nor :invalid.",
       "href": "https://drafts.csswg.org/selectors-4/#valid-pseudo",
@@ -419,22 +372,6 @@
       "prose": "The subsequent-sibling combinator is made of the \"tilde\" (U+007E, ~) code point that separates two compound selectors. The elements represented by the two compound selectors share the same parent in the document tree and the element represented by the first compound selector precedes (not necessarily immediately) the element represented by the second one.",
       "href": "https://drafts.csswg.org/selectors-4/#selectordef-sibling",
       "value": "'~'"
-    },
-    {
-      "name": "||",
-      "prose": "The column combinator, which consists of two pipes (||) represents the relationship of a column element to a cell element belonging to the column it represents. Column membership is determined based on the semantics of the document language only: whether and how the elements are presented is not considered. If a cell element belongs to more than one column, it is represented by a selector indicating membership in any of those columns.",
-      "href": "https://drafts.csswg.org/selectors-4/#selectordef-column",
-      "value": "'|' '|'"
-    },
-    {
-      "name": ":nth-col()",
-      "value": ":nth-col(An+B)",
-      "href": "https://drafts.csswg.org/selectors-4/#nth-col-pseudo"
-    },
-    {
-      "name": ":nth-last-col()",
-      "value": ":nth-last-col(An+B)",
-      "href": "https://drafts.csswg.org/selectors-4/#nth-last-col-pseudo"
     }
   ],
   "values": [
