@@ -1,5 +1,6 @@
 // Source: Fetch Standard (https://fetch.spec.whatwg.org/)
-[Exposed=(Window,Worker)]interface Response {
+[Exposed=(Window,Worker)]
+interface Response {
   constructor(optional BodyInit? body = null, optional ResponseInit init = {});
 
   [NewObject] static Response error();
