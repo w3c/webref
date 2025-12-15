@@ -24,19 +24,19 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport%E2%91%A0\" id=\"ref-for-viewport①②\">Viewport</a></code>’s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document\">Document</a></code> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, return null.</p>"
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport\" id=\"ref-for-viewport②\">Viewport</a></code>’s associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document\">Document</a></code> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, return null.</p>"
         },
         {
           "html": "<p>Let <var>topLevelTraversable</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable\">navigable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable\">top-level traversable</a>.</p>"
         },
         {
-          "html": "<p>If <var>topLevelTraversable</var>.<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#top-level-traversable-displayfeaturesoverride\" id=\"ref-for-top-level-traversable-displayfeaturesoverride\">[[DisplayFeaturesOverride]]</a> is non-null, return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport%E2%91%A0\" id=\"ref-for-viewport①③\">Viewport</a></code>’s <a href=\"https://drafts.csswg.org/css-env-1/#viewport-segments\">segments</a> array calculated from <var>topLevelTraversable</var>.<span id=\"ref-for-top-level-traversable-displayfeaturesoverride①\">[[DisplayFeaturesOverride]]</span>.</p>"
+          "html": "<p>If <var>topLevelTraversable</var>.<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#top-level-traversable-displayfeaturesoverride\" id=\"ref-for-top-level-traversable-displayfeaturesoverride\">[[DisplayFeaturesOverride]]</a> is non-null, return <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport\" id=\"ref-for-viewport③\">Viewport</a></code>’s <a href=\"https://drafts.csswg.org/css-env-1/#viewport-segments\">segments</a> array calculated from <var>topLevelTraversable</var>.<span id=\"ref-for-top-level-traversable-displayfeaturesoverride①\">[[DisplayFeaturesOverride]]</span>.</p>"
         },
         {
-          "html": "<p>If there is only a single viewport segment (typically the size of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport%E2%91%A0\" id=\"ref-for-viewport①④\">Viewport</a></code>) return an array with that single segment.</p>"
+          "html": "<p>If there is only a single viewport segment (typically the size of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport\" id=\"ref-for-viewport④\">Viewport</a></code>) return an array with that single segment.</p>"
         },
         {
-          "html": "<p>Otherwise, return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport%E2%91%A0\" id=\"ref-for-viewport①⑤\">Viewport</a></code>’s <a href=\"https://drafts.csswg.org/css-env-1/#viewport-segments\">segments</a> array calculated from the hardware features.</p>"
+          "html": "<p>Otherwise, return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-viewport/#viewport\" id=\"ref-for-viewport⑤\">Viewport</a></code>’s <a href=\"https://drafts.csswg.org/css-env-1/#viewport-segments\">segments</a> array calculated from the hardware features.</p>"
         }
       ]
     },
@@ -111,7 +111,7 @@
           "html": "Set <var>topLevelTraversable</var>.<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#top-level-traversable-displayfeaturesoverride\" id=\"ref-for-top-level-traversable-displayfeaturesoverride③\">[[DisplayFeaturesOverride]]</a> to <var>parsedFeatures</var>."
         },
         {
-          "html": "Return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#success\" id=\"ref-for-success\">success</a> with data <code>null</code>."
+          "html": "Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success\">success</a> with data <code>null</code>."
         }
       ]
     },
@@ -126,7 +126,7 @@
           "html": "Set <var>topLevelTraversable</var>. <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-viewport/#top-level-traversable-displayfeaturesoverride\" id=\"ref-for-top-level-traversable-displayfeaturesoverride④\">[[DisplayFeaturesOverride]]</a> to <code>null</code>."
         },
         {
-          "html": "Return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#success\" id=\"ref-for-success①\">success</a> with data <code>null</code>."
+          "html": "Return <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webdriver/#dfn-success\" id=\"ref-for-dfn-success①\">success</a> with data <code>null</code>."
         }
       ]
     }
