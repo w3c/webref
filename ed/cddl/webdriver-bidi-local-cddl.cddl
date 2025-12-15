@@ -608,10 +608,8 @@ network.FetchTimingInfo = {
     connectStart: float,
     connectEnd: float,
     tlsStart: float,
-
     requestStart: float,
     responseStart: float,
-
     responseEnd: float,
 }
 
@@ -966,14 +964,12 @@ script.RemoteReference = (
 
 script.SharedReference = {
    sharedId: script.SharedId
-
    ? handle: script.Handle,
    Extensible
 }
 
 script.RemoteObjectReference = {
    handle: script.Handle,
-
    ? sharedId: script.SharedId
    Extensible
 }
@@ -2387,14 +2383,12 @@ script.RemoteReference = (
 
 script.SharedReference = {
    sharedId: script.SharedId
-
    ? handle: script.Handle,
    Extensible
 }
 
 script.RemoteObjectReference = {
    handle: script.Handle,
-
    ? sharedId: script.SharedId
    Extensible
 }
@@ -3589,10 +3583,8 @@ network.FetchTimingInfo = {
     connectStart: float,
     connectEnd: float,
     tlsStart: float,
-
     requestStart: float,
     responseStart: float,
-
     responseEnd: float,
 }
 
@@ -3947,14 +3939,12 @@ script.RemoteReference = (
 
 script.SharedReference = {
    sharedId: script.SharedId
-
    ? handle: script.Handle,
    Extensible
 }
 
 script.RemoteObjectReference = {
    handle: script.Handle,
-
    ? sharedId: script.SharedId
    Extensible
 }
