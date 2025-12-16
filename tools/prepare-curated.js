@@ -27,6 +27,7 @@ import {
   getTargetedExtracts } from './utils.js';
 import { applyPatches } from './apply-patches.js';
 import { dropCSSPropertyDuplicates } from './drop-css-property-duplicates.js';
+import { amendCssSyntaxes } from './amend-css-syntaxes.js';
 import { curateEvents } from './amend-event-data.js';
 import { crawlSpecs } from 'reffy';
 
@@ -118,6 +119,11 @@ async function prepareCurated(rawFolder, curatedFolder) {
   console.log();
   console.log('Drop duplicate CSS property definitions when possible');
   await dropCSSPropertyDuplicates(curatedFolder);
+  console.log('- done');
+
+  console.log();
+  console.log('Amend CSS syntaxes as needed');
+  await amendCssSyntaxes(curatedFolder);
   console.log('- done');
 
   console.log();
