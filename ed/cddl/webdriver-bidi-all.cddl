@@ -872,6 +872,7 @@ EmulationCommand = (
   emulation.SetScreenSettingsOverride //
   emulation.SetScriptingEnabled //
   emulation.SetTimezoneOverride //
+  emulation.SetTouchOverride //
   emulation.SetUserAgentOverride
 )
 
@@ -882,6 +883,7 @@ EmulationResult = (
   emulation.SetScreenOrientationOverrideResult /
   emulation.SetScriptingEnabledResult /
   emulation.SetTimezoneOverrideResult /
+  emulation.SetTouchOverrideResult /
   emulation.SetUserAgentOverrideResult
 )
 
@@ -1039,6 +1041,19 @@ emulation.SetTimezoneOverrideParameters = {
 }
 
 emulation.SetTimezoneOverrideResult = EmptyResult
+
+emulation.SetTouchOverride = (
+  method: "emulation.setTouchOverride",
+  params: emulation.SetTouchOverrideParameters
+)
+
+emulation.SetTouchOverrideParameters = {
+  maxTouchPoints: (js-uint .ge 1) / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.SetTouchOverrideResult = EmptyResult
 
 NetworkCommand = (
   network.AddDataCollector //
@@ -2942,6 +2957,7 @@ EmulationCommand = (
   emulation.SetScreenSettingsOverride //
   emulation.SetScriptingEnabled //
   emulation.SetTimezoneOverride //
+  emulation.SetTouchOverride //
   emulation.SetUserAgentOverride
 )
 
@@ -3078,6 +3094,17 @@ emulation.SetTimezoneOverride = (
 
 emulation.SetTimezoneOverrideParameters = {
   timezone: text / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+emulation.SetTouchOverride = (
+  method: "emulation.setTouchOverride",
+  params: emulation.SetTouchOverrideParameters
+)
+
+emulation.SetTouchOverrideParameters = {
+  maxTouchPoints: (js-uint .ge 1) / null,
   ? contexts: [+browsingContext.BrowsingContext],
   ? userContexts: [+browser.UserContext],
 }
@@ -4592,6 +4619,7 @@ EmulationResult = (
   emulation.SetScreenOrientationOverrideResult /
   emulation.SetScriptingEnabledResult /
   emulation.SetTimezoneOverrideResult /
+  emulation.SetTouchOverrideResult /
   emulation.SetUserAgentOverrideResult
 )
 
@@ -4612,6 +4640,8 @@ emulation.SetUserAgentOverrideResult = EmptyResult
 emulation.SetScriptingEnabledResult = EmptyResult
 
 emulation.SetTimezoneOverrideResult = EmptyResult
+
+emulation.SetTouchOverrideResult = EmptyResult
 
 NetworkResult = (
   network.AddDataCollectorResult /
