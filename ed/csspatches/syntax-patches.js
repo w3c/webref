@@ -143,7 +143,7 @@ export default {
       <rotate3d()> <rotate()> | <rotateX()> | <rotateY()> | <rotateZ()> |
       <skew()> | <skewX()> | <skewY()> |
       <matrix3d()> | <matrix()> | <perspective()>
-    `,
+    `
   },
 
   // https://drafts.csswg.org/css-ui-4/#propdef--webkit-user-select
