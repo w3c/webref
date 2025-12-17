@@ -13342,6 +13342,7 @@
         "stop-color",
         "stopColor"
       ],
+      "syntax": "<'color'>",
       "extended": []
     },
     {
@@ -13351,6 +13352,7 @@
         "stop-opacity",
         "stopOpacity"
       ],
+      "syntax": "<'opacity'>",
       "extended": []
     },
     {
@@ -16637,6 +16639,7 @@
     {
       "name": "absolute-size",
       "href": "https://drafts.csswg.org/css2/#value-def-absolute-size",
+      "syntax": "xx-small | x-small | small | medium | large | x-large | xx-large",
       "extended": []
     },
     {
@@ -16912,6 +16915,7 @@
       "name": "basic-shape",
       "prose": "The <basic-shape> type can be specified using basic shape functions. When using this syntax to define shapes, the reference box is defined by each property that uses <basic-shape> values. The coordinate system for the shape has its origin on the top-left corner of the reference box with the x-axis running to the right and the y-axis running downwards. All the lengths expressed in percentages are resolved from the used dimensions of the reference box.",
       "href": "https://drafts.csswg.org/css-shapes-1/#typedef-basic-shape",
+      "syntax": "<basic-shape-rect> | <circle()> | <ellipse()> | <polygon()> | <path()> | <shape()>",
       "extended": []
     },
     {
@@ -17364,6 +17368,7 @@
       "name": "counter-name",
       "prose": "Counters are referred to in CSS syntax using the <counter-name> type, which represents their name as a <custom-ident>. A <counter-name> name cannot match the keyword none; such an identifier is invalid as a <counter-name>.",
       "href": "https://drafts.csswg.org/css-lists-3/#typedef-counter-name",
+      "syntax": "<custom-ident>",
       "extended": []
     },
     {
@@ -17376,6 +17381,7 @@
       "name": "counter-style-name",
       "prose": "<counter-style-name> is a <custom-ident> that is not an ASCII case-insensitive match for none. When used here, to define a counter style, it also cannot be any of the non-overridable counter-style names (in other uses that merely reference a counter style, such as the extend system, these are allowed). The <counter-style-name> is a tree-scoped name.",
       "href": "https://drafts.csswg.org/css-counter-styles-3/#typedef-counter-style-name",
+      "syntax": "<custom-ident>",
       "extended": []
     },
     {
@@ -17480,6 +17486,7 @@
     {
       "name": "dashndashdigit-ident",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-dashndashdigit-ident",
+      "syntax": "<ident-token>",
       "extended": []
     },
     {
@@ -17525,6 +17532,7 @@
       "name": "deprecated-color",
       "prose": "The deprecated system colors are represented as the <deprecated-color> sub-type, and are defined as:",
       "href": "https://drafts.csswg.org/css-color-4/#typedef-deprecated-color",
+      "syntax": "ActiveBorder | ActiveCaption | AppWorkspace | Background | ButtonHighlight | ButtonShadow | CaptionText | InactiveBorder | InactiveCaption | InactiveCaptionText | InfoBackground | InfoText | Menu | MenuText | Scrollbar | ThreeDDarkShadow | ThreeDFace | ThreeDHighlight | ThreeDLightShadow | ThreeDShadow | Window | WindowFrame | WindowText",
       "extended": []
     },
     {
@@ -18061,6 +18069,7 @@
       "name": "integer",
       "prose": "Integer values are denoted by <integer>.",
       "href": "https://drafts.csswg.org/css-values-4/#integer-value",
+      "syntax": "<number-token>",
       "extended": []
     },
     {
@@ -18483,6 +18492,7 @@
     {
       "name": "n-dimension",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-n-dimension",
+      "syntax": "<dimension-token>",
       "extended": []
     },
     {
@@ -18495,6 +18505,7 @@
       "name": "named-color",
       "prose": "CSS defines a large set of named colors, so that common colors can be written and read more easily. A <named-color> is written as an <ident>, accepted anywhere a <color> is. As usual for CSS-defined <ident>s, all of these keywords are ASCII case-insensitive.",
       "href": "https://drafts.csswg.org/css-color-4/#typedef-named-color",
+      "syntax": "aliceblue | antiquewhite | aqua | aquamarine | azure | beige | bisque | black | blanchedalmond | blue | blueviolet | brown | burlywood | cadetblue | chartreuse | chocolate | coral | cornflowerblue | cornsilk | crimson | cyan | darkblue | darkcyan | darkgoldenrod | darkgray | darkgreen | darkgrey | darkkhaki | darkmagenta | darkolivegreen | darkorange | darkorchid | darkred | darksalmon | darkseagreen | darkslateblue | darkslategray | darkslategrey | darkturquoise | darkviolet | deeppink | deepskyblue | dimgray | dimgrey | dodgerblue | firebrick | floralwhite | forestgreen | fuchsia | gainsboro | ghostwhite | gold | goldenrod | gray | green | greenyellow | grey | honeydew | hotpink | indianred | indigo | ivory | khaki | lavender | lavenderblush | lawngreen | lemonchiffon | lightblue | lightcoral | lightcyan | lightgoldenrodyellow | lightgray | lightgreen | lightgrey | lightpink | lightsalmon | lightseagreen | lightskyblue | lightslategray | lightslategrey | lightsteelblue | lightyellow | lime | limegreen | linen | magenta | maroon | mediumaquamarine | mediumblue | mediumorchid | mediumpurple | mediumseagreen | mediumslateblue | mediumspringgreen | mediumturquoise | mediumvioletred | midnightblue | mintcream | mistyrose | moccasin | navajowhite | navy | oldlace | olive | olivedrab | orange | orangered | orchid | palegoldenrod | palegreen | paleturquoise | palevioletred | papayawhip | peachpuff | peru | pink | plum | powderblue | purple | rebeccapurple | red | rosybrown | royalblue | saddlebrown | salmon | sandybrown | seagreen | seashell | sienna | silver | skyblue | slateblue | slategray | slategrey | snow | springgreen | steelblue | tan | teal | thistle | tomato | turquoise | violet | wheat | white | whitesmoke | yellow | yellowgreen | transparent",
       "extended": []
     },
     {
@@ -18590,16 +18601,19 @@
     {
       "name": "ndash-dimension",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-ndash-dimension",
+      "syntax": "<dimension-token>",
       "extended": []
     },
     {
       "name": "ndashdigit-dimension",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-ndashdigit-dimension",
+      "syntax": "<dimension-token>",
       "extended": []
     },
     {
       "name": "ndashdigit-ident",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-ndashdigit-ident",
+      "syntax": "<ident-token>",
       "extended": []
     },
     {
@@ -18670,6 +18684,7 @@
       "name": "outline-line-style",
       "prose": "<outline-line-style> accepts the same values as <line-style> (CSS Backgrounds 3 § 3.2 Line Patterns: the border-style properties) with the same meaning, except that hidden is not a legal outline style. In addition, the outline-style property accepts the value auto.",
       "href": "https://drafts.csswg.org/css-ui-4/#typedef-outline-line-style",
+      "syntax": "none | auto | dotted | dashed | solid | double | groove | ridge | inset | outset",
       "extended": []
     },
     {
@@ -18703,6 +18718,7 @@
       "name": "page-size",
       "prose": "A page size can be specified using one of the following media names. This is the equivalent of specifying size using length values. The definition of the media names comes from Media Standardized Names [PWGMSN].",
       "href": "https://drafts.csswg.org/css-page-3/#typedef-page-size-page-size",
+      "syntax": "A5 | A4 | A3 | B5 | B4 | JIS-B5 | JIS-B4 | letter | legal | ledger",
       "extended": []
     },
     {
@@ -18724,6 +18740,7 @@
       "name": "palette-identifier",
       "prose": "This value identifies an CSS-defined palette to use. Users can define a palette by using the @font-palette-values rule. If no applicable @font-palette-values rule is present, this value behaves as normal. <palette-identifier> is parsed as a <dashed-ident>.",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-identifier",
+      "syntax": "<dashed-ident>",
       "extended": []
     },
     {
@@ -19017,6 +19034,7 @@
     {
       "name": "relative-size",
       "href": "https://drafts.csswg.org/css2/#value-def-relative-size",
+      "syntax": "larger | smaller",
       "extended": []
     },
     {
@@ -19097,18 +19115,21 @@
       "name": "scope-end",
       "prose": "<scope-end> is a <selector-list> selector used to identify any scoping limits.",
       "href": "https://drafts.csswg.org/css-cascade-6/#typedef-scope-end",
+      "syntax": "<selector-list>",
       "extended": []
     },
     {
       "name": "scope-start",
       "prose": "<scope-start> is a <selector-list> selector used to identify the scoping root(s).",
       "href": "https://drafts.csswg.org/css-cascade-6/#typedef-scope-start",
+      "syntax": "<selector-list>",
       "extended": []
     },
     {
       "name": "scroll-button-direction",
       "prose": "The four ::scroll-button() pseudo-elements are individually selected by the selector’s argument. A * arguments selects all four ::scroll-button()s; otherwise the selected pseudo-element is determined by the <scroll-button-direction> value:",
       "href": "https://drafts.csswg.org/css-overflow-5/#typedef-scroll-button-direction",
+      "syntax": "up | down | left | right | block-start | block-end | inline-start | inline-end | prev | next",
       "extended": []
     },
     {
@@ -19183,6 +19204,7 @@
       "name": "shape",
       "prose": "In CSS 2, the only valid <shape> value is: rect(<top>, <right>, <bottom>, <left>) where <top> and <bottom> specify offsets from the top border edge of the box, and <right>, and <left> specify offsets from the left border edge of the box. Authors should separate offset values with commas. User agents must support separation with commas, but may also support separation without commas (but not a combination), because a previous revision of this specification was ambiguous in this respect. <top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box). When coordinates are rounded to pixel coordinates, care should be taken that no pixels remain visible when <left> and <right> have the same value (or <top> and <bottom> have the same value), and conversely that no pixels within the element’s border box remain hidden when these values are auto.",
       "href": "https://drafts.csswg.org/css2/#value-def-shape",
+      "syntax": "rect(<top>, <right>, <bottom>, <left>)",
       "extended": []
     },
     {
@@ -19207,11 +19229,13 @@
     {
       "name": "signed-integer",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-signed-integer",
+      "syntax": "<number-token>",
       "extended": []
     },
     {
       "name": "signless-integer",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-signless-integer",
+      "syntax": "<number-token>",
       "extended": []
     },
     {
@@ -19539,6 +19563,7 @@
       "name": "system-color",
       "prose": "However, in forced colors mode, most colors on the page are forced into a restricted, user-chosen palette. The <system-color> keywords expose these user-chosen colors so that the rest of the page can integrate with this restricted palette.",
       "href": "https://drafts.csswg.org/css-color-4/#typedef-system-color",
+      "syntax": "AccentColor | AccentColorText | ActiveText | ButtonBorder | ButtonFace | ButtonText | Canvas | CanvasText | Field | FieldText | GrayText | Highlight | HighlightText | LinkText | Mark | MarkText | SelectedItem | SelectedItemText | VisitedText | <deprecated-color>",
       "extended": []
     },
     {
@@ -19632,6 +19657,7 @@
       "name": "transform-function",
       "prose": "The value of the transform property is a list of <transform-function>. The set of allowed transform functions is given below. Wherever <angle> is used in this specification, a <number> that is equal to zero is also allowed, which is treated the same as an angle of zero degrees. A percentage for horizontal translations is relative to the width of the reference box. A percentage for vertical translations is relative to the height of the reference box. A percentage in a scale function is equivalent to a number, and serializes as a number in specified values. For example, scale3d(50%, 100%, 150%) serializes as scale3d(0.5, 1, 1.5).",
       "href": "https://drafts.csswg.org/css-transforms-2/#typedef-transform-function",
+      "syntax": "<scale()> | <scaleX()> | <scaleY()> | <scaleZ()> | <translate3d()> | <translate()> | <translateX()> | <translateY()> | <translateZ()> | <rotate3d()> <rotate()> | <rotateX()> | <rotateY()> | <rotateZ()> | <skew()> | <skewX()> | <skewY()> | <matrix3d()> | <matrix()> | <perspective()>",
       "extended": []
     },
     {

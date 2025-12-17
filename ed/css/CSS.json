@@ -486,7 +486,8 @@
       "name": "<shape>",
       "prose": "In CSS 2, the only valid <shape> value is: rect(<top>, <right>, <bottom>, <left>) where <top> and <bottom> specify offsets from the top border edge of the box, and <right>, and <left> specify offsets from the left border edge of the box. Authors should separate offset values with commas. User agents must support separation with commas, but may also support separation without commas (but not a combination), because a previous revision of this specification was ambiguous in this respect. <top>, <right>, <bottom>, and <left> may either have a <length> value or auto. Negative lengths are permitted. The value auto means that a given edge of the clipping region will be the same as the edge of the element’s generated border box (i.e., auto means the same as 0 for <top> and <left>, the same as the used value of the height plus the sum of vertical padding and border widths for <bottom>, and the same as the used value of the width plus the sum of the horizontal padding and border widths for <right>, such that four auto values result in the clipping region being the same as the element’s border box). When coordinates are rounded to pixel coordinates, care should be taken that no pixels remain visible when <left> and <right> have the same value (or <top> and <bottom> have the same value), and conversely that no pixels within the element’s border box remain hidden when these values are auto.",
       "href": "https://drafts.csswg.org/css2/#value-def-shape",
-      "type": "type"
+      "type": "type",
+      "value": "rect(<top>, <right>, <bottom>, <left>)"
     },
     {
       "name": "<top>",
@@ -551,12 +552,14 @@
     {
       "name": "<absolute-size>",
       "href": "https://drafts.csswg.org/css2/#value-def-absolute-size",
-      "type": "type"
+      "type": "type",
+      "value": "xx-small | x-small | small | medium | large | x-large | xx-large"
     },
     {
       "name": "<relative-size>",
       "href": "https://drafts.csswg.org/css2/#value-def-relative-size",
-      "type": "type"
+      "type": "type",
+      "value": "larger | smaller"
     }
   ]
 }
