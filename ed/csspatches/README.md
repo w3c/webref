@@ -1,5 +1,8 @@
 # CSS patches
 
-These are patches applied to the CSS extracts scraped from specs to produce the `@webref/css` package. These patches can break as specs are updated and thus need ongoing maintenance.
+The folder contains two types of patches applied to the CSS extracts scraped from specs during curation to produce the `@webref/css` package:
 
-For details on how to create and update patches, please see the [Web IDL patches documentation](../idlpatches/README.md)
+- The [`syntax-patches.js`](./syntax-patches.js) file contains a list of syntaxes for situations where that syntax cannot be automatically extracted from the underlying spec because it is defined in non-machine-readable prose. These patches are usually permanent in that they cover situations where it is unlikely that the underlying spec will be updated to make the syntax more explicit.
+- The `*.json.patch` files contains extract file patches applied to CSS extracts. These patches are intended to be temporary while the spec gets fixed, and are typically associated with an issue or pull request raised against the underlying spec. These patches typically break as specs get updated. For details on how to create and update file patches, please see the [Web IDL patches documentation](../idlpatches/README.md).
+
+On top of these patches, note that curation also drops duplicate definitions through the [`tools/drop-css-property-duplicates.js`](../../tools/drop-css-property-duplicates.js) script which handles situations where definitions in one spec override definitions in another spec (for example, definitions in CSS modules overrride definitions in CSS 2).
