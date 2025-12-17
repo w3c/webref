@@ -809,10 +809,10 @@
       "links": []
     },
     {
-      "id": "dom-webtransportdatagramduplexstream-readablemode-slot",
-      "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-readablemode-slot",
+      "id": "dom-webtransportdatagramduplexstream-readabletype-slot",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-readabletype-slot",
       "linkingText": [
-        "[[ReadableMode]]"
+        "[[ReadableType]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2673,48 +2673,6 @@
       "links": []
     },
     {
-      "id": "enumdef-datagramsreadablemode",
-      "href": "https://w3c.github.io/webtransport/#enumdef-datagramsreadablemode",
-      "linkingText": [
-        "DatagramsReadableMode"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "web-transport-configuration",
-        "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
-        "title": "Configuration",
-        "number": "6.9"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-datagramsreadablemode-bytes",
-      "href": "https://w3c.github.io/webtransport/#dom-datagramsreadablemode-bytes",
-      "linkingText": [
-        "\"bytes\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "DatagramsReadableMode"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "web-transport-configuration",
-        "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
-        "title": "Configuration",
-        "number": "6.9"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
       "id": "dictdef-webtransportoptions",
       "href": "https://w3c.github.io/webtransport/#dictdef-webtransportoptions",
       "linkingText": [
@@ -2909,10 +2867,10 @@
       "links": []
     },
     {
-      "id": "dom-webtransportoptions-datagramsreadablemode",
-      "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-datagramsreadablemode",
+      "id": "dom-webtransportoptions-datagramsreadabletype",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-datagramsreadabletype",
       "linkingText": [
-        "datagramsReadableMode"
+        "datagramsReadableType"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -3247,6 +3205,50 @@
       "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-bytessent",
       "linkingText": [
         "bytesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportConnectionStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-connection-stats",
+        "href": "https://w3c.github.io/webtransport/#web-transport-connection-stats",
+        "title": "WebTransportConnectionStats Dictionary",
+        "number": "6.13"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-webtransportconnectionstats-bytessentoverhead",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-bytessentoverhead",
+      "linkingText": [
+        "bytesSentOverhead"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportConnectionStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-connection-stats",
+        "href": "https://w3c.github.io/webtransport/#web-transport-connection-stats",
+        "title": "WebTransportConnectionStats Dictionary",
+        "number": "6.13"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-webtransportconnectionstats-bytesacknowledged",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-bytesacknowledged",
+      "linkingText": [
+        "bytesAcknowledged"
       ],
       "localLinkingText": [],
       "type": "dict-member",

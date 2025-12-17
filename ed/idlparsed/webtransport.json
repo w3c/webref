@@ -880,7 +880,7 @@
         "href": "https://w3c.github.io/webtransport/#dictdef-webtransporthash"
       },
       "WebTransportOptions": {
-        "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling = false;\n  boolean requireUnreliable = false;\n  sequence<WebTransportHash> serverCertificateHashes = [];\n  WebTransportCongestionControl congestionControl = \"default\";\n  [EnforceRange] unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams = null;\n  [EnforceRange] unsigned short? anticipatedConcurrentIncomingBidirectionalStreams = null;\n  sequence<DOMString> protocols = [];\n  DatagramsReadableMode datagramsReadableMode;\n};",
+        "fragment": "dictionary WebTransportOptions {\n  boolean allowPooling = false;\n  boolean requireUnreliable = false;\n  sequence<WebTransportHash> serverCertificateHashes = [];\n  WebTransportCongestionControl congestionControl = \"default\";\n  [EnforceRange] unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams = null;\n  [EnforceRange] unsigned short? anticipatedConcurrentIncomingBidirectionalStreams = null;\n  sequence<DOMString> protocols = [];\n  ReadableStreamType datagramsReadableType;\n};",
         "type": "dictionary",
         "name": "WebTransportOptions",
         "inheritance": null,
@@ -1050,7 +1050,7 @@
           },
           {
             "type": "field",
-            "name": "datagramsReadableMode",
+            "name": "datagramsReadableType",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -1058,11 +1058,11 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DatagramsReadableMode"
+              "idlType": "ReadableStreamType"
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-datagramsreadablemode"
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportoptions-datagramsreadabletype"
           }
         ],
         "extAttrs": [],
@@ -1092,20 +1092,6 @@
         ],
         "extAttrs": [],
         "href": "https://w3c.github.io/webtransport/#enumdef-webtransportcongestioncontrol"
-      },
-      "DatagramsReadableMode": {
-        "fragment": "enum DatagramsReadableMode { \"bytes\" };",
-        "type": "enum",
-        "name": "DatagramsReadableMode",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "bytes",
-            "href": "https://w3c.github.io/webtransport/#dom-datagramsreadablemode-bytes"
-          }
-        ],
-        "extAttrs": [],
-        "href": "https://w3c.github.io/webtransport/#enumdef-datagramsreadablemode"
       },
       "WebTransportCloseInfo": {
         "fragment": "dictionary WebTransportCloseInfo {\n  unsigned long closeCode = 0;\n  USVString reason = \"\";\n};",
@@ -1235,7 +1221,7 @@
         "href": "https://w3c.github.io/webtransport/#dictdef-webtransportsendstreamoptions"
       },
       "WebTransportConnectionStats": {
-        "fragment": "dictionary WebTransportConnectionStats {\n  unsigned long long bytesSent;\n  unsigned long long packetsSent;\n  unsigned long long bytesLost;\n  unsigned long long packetsLost;\n  unsigned long long bytesReceived;\n  unsigned long long packetsReceived;\n  DOMHighResTimeStamp smoothedRtt;\n  DOMHighResTimeStamp rttVariation;\n  DOMHighResTimeStamp minRtt;\n  required WebTransportDatagramStats datagrams;\n  unsigned long long? estimatedSendRate = null;\n  boolean atSendCapacity = false;\n};",
+        "fragment": "dictionary WebTransportConnectionStats {\n  unsigned long long bytesSent;\n  unsigned long long bytesSentOverhead;\n  unsigned long long bytesAcknowledged;\n  unsigned long long packetsSent;\n  unsigned long long bytesLost;\n  unsigned long long packetsLost;\n  unsigned long long bytesReceived;\n  unsigned long long packetsReceived;\n  DOMHighResTimeStamp smoothedRtt;\n  DOMHighResTimeStamp rttVariation;\n  DOMHighResTimeStamp minRtt;\n  required WebTransportDatagramStats datagrams;\n  unsigned long long? estimatedSendRate = null;\n  boolean atSendCapacity = false;\n};",
         "type": "dictionary",
         "name": "WebTransportConnectionStats",
         "inheritance": null,
@@ -1255,6 +1241,38 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-bytessent"
+          },
+          {
+            "type": "field",
+            "name": "bytesSentOverhead",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-bytessentoverhead"
+          },
+          {
+            "type": "field",
+            "name": "bytesAcknowledged",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportconnectionstats-bytesacknowledged"
           },
           {
             "type": "field",
@@ -2256,7 +2274,7 @@
       "WebTransportOptions": [
         "WebTransportHash",
         "WebTransportCongestionControl",
-        "DatagramsReadableMode"
+        "ReadableStreamType"
       ],
       "WebTransportCloseInfo": [],
       "WebTransportSendOptions": [
@@ -2306,6 +2324,7 @@
       "ReadableStream",
       "ArrayBuffer",
       "BufferSource",
+      "ReadableStreamType",
       "DOMHighResTimeStamp",
       "WritableStreamDefaultWriter",
       "DOMException"

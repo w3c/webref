@@ -1,6 +1,8 @@
 // Source: WebTransport (https://www.w3.org/TR/webtransport/)
 dictionary WebTransportConnectionStats {
   unsigned long long bytesSent;
+  unsigned long long bytesSentOverhead;
+  unsigned long long bytesAcknowledged;
   unsigned long long packetsSent;
   unsigned long long bytesLost;
   unsigned long long packetsLost;
