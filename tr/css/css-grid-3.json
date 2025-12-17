@@ -5,13 +5,36 @@
   },
   "properties": [
     {
+      "name": "display",
+      "newValues": "grid-lanes | inline-grid-lanes",
+      "values": [
+        {
+          "name": "grid-lanes",
+          "prose": "This value causes an element to generate a block-level grid lanes container box.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-display-grid-lanes",
+          "type": "value",
+          "value": "grid-lanes"
+        },
+        {
+          "name": "inline-grid-lanes",
+          "prose": "This value causes an element to generate an inline-level grid lanes container box.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-display-inline-grid-lanes",
+          "type": "value",
+          "value": "inline-grid-lanes"
+        }
+      ],
+      "styleDeclaration": [
+        "display"
+      ]
+    },
+    {
       "name": "item-tolerance",
       "href": "https://www.w3.org/TR/css-grid-3/#propdef-item-tolerance",
       "value": "normal | <length-percentage> | infinite",
       "initial": "normal",
-      "appliesTo": "masonry containers",
+      "appliesTo": "grid lanes containers",
       "inherited": "no",
-      "percentages": "relative to the grid-axis content box size of the masonry container",
+      "percentages": "relative to the grid-axis content box size of the grid lanes container",
       "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "as length",
@@ -25,7 +48,7 @@
       "href": "https://www.w3.org/TR/css-grid-3/#propdef-item-direction",
       "value": "auto | row | column | row-reverse | column-reverse",
       "initial": "auto",
-      "appliesTo": "flex containers, grid containers, masonry containers",
+      "appliesTo": "flex containers, grid containers, grid lanes containers",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified",
@@ -34,21 +57,21 @@
       "values": [
         {
           "name": "auto",
-          "prose": "Computes to either row or column depending on the layout mode: On flex containers and grid containers, computes to row. On masonry containers, if grid-template-rows is not none and grid-template-columns is none, computes to the value representing row tracks; otherwise computes to the value representing column tracks.",
+          "prose": "Computes to either row or column depending on the layout mode: On flex containers and grid containers, computes to row. On grid lanes containers, if grid-template-rows is not none and grid-template-columns is none, computes to the value representing row tracks; otherwise computes to the value representing column tracks.",
           "href": "https://www.w3.org/TR/css-grid-3/#valdef-item-direction-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "row",
-          "prose": "Track-oriented Option Represents placement into rows, i.e. tracks or lines parallel to the inline axis. Items fill those rows in start-to-end order. Flow-oriented Option Represents row-primary item placement, i.e. placing items start-to-end in the inline axis, producing flex row lines in flex layout, and column grid tracks in masonry layout.",
+          "prose": "Track-oriented Option Represents placement into rows, i.e. tracks or lines parallel to the inline axis. Items fill those rows in start-to-end order. Flow-oriented Option Represents row-primary item placement, i.e. placing items start-to-end in the inline axis, producing flex row lines in flex layout, and column grid tracks in grid lanes layout.",
           "href": "https://www.w3.org/TR/css-grid-3/#valdef-item-direction-row",
           "type": "value",
           "value": "row"
         },
         {
           "name": "column",
-          "prose": "Track-oriented Option Represents placement into columns, i.e. tracks or lines parallel to the block axis. Items fill those columns in start-to-end order. Flow-oriented Option Represents column-primary item placement, i.e. placing items start-to-end in the block axis, producing flex column lines in flex layout, and row grid tracks in masonry layout.",
+          "prose": "Track-oriented Option Represents placement into columns, i.e. tracks or lines parallel to the block axis. Items fill those columns in start-to-end order. Flow-oriented Option Represents column-primary item placement, i.e. placing items start-to-end in the block axis, producing flex column lines in flex layout, and row grid tracks in grid lanes layout.",
           "href": "https://www.w3.org/TR/css-grid-3/#valdef-item-direction-column",
           "type": "value",
           "value": "column"
@@ -78,7 +101,7 @@
       "href": "https://www.w3.org/TR/css-grid-3/#propdef-item-track",
       "value": "auto | row | column | row-reverse | column-reverse",
       "initial": "auto",
-      "appliesTo": "flex containers, grid containers, masonry containers",
+      "appliesTo": "flex containers, grid containers, grid lanes containers",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified",
@@ -87,21 +110,21 @@
       "values": [
         {
           "name": "auto",
-          "prose": "Computes to either row or column depending on the layout mode: On flex containers and grid containers, computes to row. On masonry containers, if grid-template-rows is not none and grid-template-columns is none, computes to the value representing row tracks; otherwise computes to the value representing column tracks.",
+          "prose": "Computes to either row or column depending on the layout mode: On flex containers and grid containers, computes to row. On grid lanes containers, if grid-template-rows is not none and grid-template-columns is none, computes to the value representing row tracks; otherwise computes to the value representing column tracks.",
           "href": "https://www.w3.org/TR/css-grid-3/#valdef-item-direction-auto",
           "type": "value",
           "value": "auto"
         },
         {
           "name": "row",
-          "prose": "Track-oriented Option Represents placement into rows, i.e. tracks or lines parallel to the inline axis. Items fill those rows in start-to-end order. Flow-oriented Option Represents row-primary item placement, i.e. placing items start-to-end in the inline axis, producing flex row lines in flex layout, and column grid tracks in masonry layout.",
+          "prose": "Track-oriented Option Represents placement into rows, i.e. tracks or lines parallel to the inline axis. Items fill those rows in start-to-end order. Flow-oriented Option Represents row-primary item placement, i.e. placing items start-to-end in the inline axis, producing flex row lines in flex layout, and column grid tracks in grid lanes layout.",
           "href": "https://www.w3.org/TR/css-grid-3/#valdef-item-direction-row",
           "type": "value",
           "value": "row"
         },
         {
           "name": "column",
-          "prose": "Track-oriented Option Represents placement into columns, i.e. tracks or lines parallel to the block axis. Items fill those columns in start-to-end order. Flow-oriented Option Represents column-primary item placement, i.e. placing items start-to-end in the block axis, producing flex column lines in flex layout, and row grid tracks in masonry layout.",
+          "prose": "Track-oriented Option Represents placement into columns, i.e. tracks or lines parallel to the block axis. Items fill those columns in start-to-end order. Flow-oriented Option Represents column-primary item placement, i.e. placing items start-to-end in the block axis, producing flex column lines in flex layout, and row grid tracks in grid lanes layout.",
           "href": "https://www.w3.org/TR/css-grid-3/#valdef-item-direction-column",
           "type": "value",
           "value": "column"
@@ -131,7 +154,7 @@
       "href": "https://www.w3.org/TR/css-grid-3/#propdef-item-wrap",
       "value": "[ auto | nowrap | wrap ] || [ normal | reverse ] | wrap-reverse",
       "initial": "auto",
-      "appliesTo": "flex containers, grid containers, masonry containers",
+      "appliesTo": "flex containers, grid containers, grid lanes containers",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified",
@@ -161,7 +184,7 @@
         },
         {
           "name": "normal",
-          "prose": "Items are placed in start-to-end order in the axis opposite to the primary track axis. In flex layout and grid layout, this controls the direction that new tracks (flex lines or grid tracks) are placed in. In masonry layout, for track-oriented syntax this controls which track is selected when several are tied for equal height; for flow-oriented syntax this controls which direction items fill their track in.",
+          "prose": "Items are placed in start-to-end order in the axis opposite to the primary track axis. In flex layout and grid layout, this controls the direction that new tracks (flex lines or grid tracks) are placed in. In grid lanes layout, for track-oriented syntax this controls which track is selected when several are tied for equal height; for flow-oriented syntax this controls which direction items fill their track in.",
           "href": "https://www.w3.org/TR/css-grid-3/#valdef-item-wrap-normal",
           "type": "value",
           "value": "normal"
@@ -191,7 +214,7 @@
       "href": "https://www.w3.org/TR/css-grid-3/#propdef-item-cross",
       "value": "[ auto | nowrap | wrap ] || [ normal | reverse ] | wrap-reverse",
       "initial": "auto",
-      "appliesTo": "flex containers, grid containers, masonry containers",
+      "appliesTo": "flex containers, grid containers, grid lanes containers",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified",
@@ -221,7 +244,7 @@
         },
         {
           "name": "normal",
-          "prose": "Items are placed in start-to-end order in the axis opposite to the primary track axis. In flex layout and grid layout, this controls the direction that new tracks (flex lines or grid tracks) are placed in. In masonry layout, for track-oriented syntax this controls which track is selected when several are tied for equal height; for flow-oriented syntax this controls which direction items fill their track in.",
+          "prose": "Items are placed in start-to-end order in the axis opposite to the primary track axis. In flex layout and grid layout, this controls the direction that new tracks (flex lines or grid tracks) are placed in. In grid lanes layout, for track-oriented syntax this controls which track is selected when several are tied for equal height; for flow-oriented syntax this controls which direction items fill their track in.",
           "href": "https://www.w3.org/TR/css-grid-3/#valdef-item-wrap-normal",
           "type": "value",
           "value": "normal"
@@ -251,7 +274,7 @@
       "href": "https://www.w3.org/TR/css-grid-3/#propdef-item-pack",
       "value": "normal | dense || balance",
       "initial": "normal",
-      "appliesTo": "flex containers, grid containers, masonry containers",
+      "appliesTo": "flex containers, grid containers, grid lanes containers",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "as specified",
@@ -304,30 +327,19 @@
   ],
   "atrules": [],
   "selectors": [],
-  "values": [],
+  "values": [
+    {
+      "name": "<auto-repeat>",
+      "href": "https://www.w3.org/TR/css-grid-3/#typedef-auto-repeat",
+      "type": "type",
+      "value": "repeat( [ auto-fill | auto-fit ] , [ <line-names>? <track-size> ]+ <line-names>? )"
+    }
+  ],
   "warnings": [
     {
       "msg": "Dangling value",
-      "name": "something",
-      "prose": "This value causes an element to generate a masonry container box.",
-      "href": "https://www.w3.org/TR/css-grid-3/#valdef-display-something",
-      "type": "value",
-      "value": "something",
-      "for": "display"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "auto-areas",
-      "prose": "The new auto-areas value for the repeat() notation represents the number of repetitions necessary for the total number of explicit tracks to match the grid-template-areas value in effect in the corresponding axis. If multiple tracks are listed for the repetition, the final repetition is truncated as necessary to produce the correct number of tracks.",
-      "href": "https://www.w3.org/TR/css-grid-3/#valdef-repeat-auto-areas",
-      "type": "value",
-      "value": "auto-areas",
-      "for": "repeat()"
-    },
-    {
-      "msg": "Dangling value",
       "name": "<length-percentage>",
-      "prose": "Specifies the tie threshold for the masonry container. Placement positions are considered to be equally good (“tied”) if they are within the specified distance from the shortest position.",
+      "prose": "Specifies the tie threshold for the grid lanes container. Placement positions are considered to be equally good (“tied”) if they are within the specified distance from the shortest position.",
       "href": "https://www.w3.org/TR/css-grid-3/#valdef-item-slack-length-percentage",
       "type": "value",
       "value": "<length-percentage>",
@@ -336,7 +348,7 @@
     {
       "msg": "Dangling value",
       "name": "normal",
-      "prose": "Resolves to a used value of 1em in masonry layout and a used value of 0 in all other layout modes.",
+      "prose": "Resolves to a used value of 1em in grid lanes layout and a used value of 0 in all other layout modes.",
       "href": "https://www.w3.org/TR/css-grid-3/#valdef-item-slack-normal",
       "type": "value",
       "value": "normal",

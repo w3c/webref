@@ -357,6 +357,94 @@
       ]
     },
     {
+      "name": "border-style",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-style",
+      "value": "<'border-top-style'>{1,4}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "values": [
+        {
+          "name": "none",
+          "prose": "No border. Color and width are ignored (i.e., the border has width 0). Note this means that the initial value of border-image-width will also resolve to zero.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "hidden",
+          "prose": "Same as none, but has different behavior in the border conflict resolution rules for border-collapsed tables [CSS2].",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-hidden",
+          "type": "value",
+          "value": "hidden"
+        },
+        {
+          "name": "dotted",
+          "prose": "A series of round dots.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-dotted",
+          "type": "value",
+          "value": "dotted"
+        },
+        {
+          "name": "dashed",
+          "prose": "A series of square-ended dashes.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-dashed",
+          "type": "value",
+          "value": "dashed"
+        },
+        {
+          "name": "solid",
+          "prose": "A single line segment.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-solid",
+          "type": "value",
+          "value": "solid"
+        },
+        {
+          "name": "double",
+          "prose": "Two parallel solid lines with some space between them. (The thickness of the lines is not specified, but the sum of the lines and the space must equal border-width.)",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-double",
+          "type": "value",
+          "value": "double"
+        },
+        {
+          "name": "groove",
+          "prose": "Looks as if it were carved in the canvas. (This is typically achieved by creating a “shadow” from two colors that are slightly lighter and darker than the specified border-color.)",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-groove",
+          "type": "value",
+          "value": "groove"
+        },
+        {
+          "name": "ridge",
+          "prose": "Looks as if it were coming out of the canvas.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-ridge",
+          "type": "value",
+          "value": "ridge"
+        },
+        {
+          "name": "inset",
+          "prose": "Looks as if the content on the inside of the border is sunken into the canvas. Treated as ridge in the collapsing border model. [CSS2]",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-inset",
+          "type": "value",
+          "value": "inset"
+        },
+        {
+          "name": "outset",
+          "prose": "Looks as if the content on the inside of the border is raised out of the canvas. Treated as groove in the collapsing border model. [CSS2]",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-outset",
+          "type": "value",
+          "value": "outset"
+        }
+      ],
+      "styleDeclaration": [
+        "border-style",
+        "borderStyle"
+      ]
+    },
+    {
       "name": "border-top-width",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-top-width",
       "value": "<line-width>",
@@ -525,6 +613,45 @@
       ]
     },
     {
+      "name": "border-width",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-width",
+      "value": "<'border-top-width'>{1,4}",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "values": [
+        {
+          "name": "thin",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-width-thin",
+          "type": "value",
+          "value": "thin"
+        },
+        {
+          "name": "medium",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-width-medium",
+          "type": "value",
+          "value": "medium"
+        },
+        {
+          "name": "thick",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-width-thick",
+          "type": "value",
+          "value": "thick"
+        }
+      ],
+      "styleDeclaration": [
+        "border-width",
+        "borderWidth"
+      ]
+    },
+    {
       "name": "border-top",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-top",
       "value": "<line-width> || <line-style> || <color>",
@@ -685,9 +812,24 @@
       ]
     },
     {
+      "name": "border",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border",
+      "value": "<line-width> || <line-style> || <color>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border"
+      ]
+    },
+    {
       "name": "border-top-left-radius",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-top-left-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -704,7 +846,7 @@
     {
       "name": "border-top-right-radius",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-top-right-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -721,7 +863,7 @@
     {
       "name": "border-bottom-right-radius",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-bottom-right-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -738,7 +880,7 @@
     {
       "name": "border-bottom-left-radius",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-bottom-left-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -755,7 +897,7 @@
     {
       "name": "border-start-start-radius",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-start-start-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -772,7 +914,7 @@
     {
       "name": "border-start-end-radius",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-start-end-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -789,7 +931,7 @@
     {
       "name": "border-end-start-radius",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-end-start-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -806,7 +948,7 @@
     {
       "name": "border-end-end-radius",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-end-end-radius",
-      "value": "<length-percentage [0,∞]>{1,2}",
+      "value": "<border-radius>",
       "initial": "0",
       "appliesTo": "all elements (but see prose)",
       "inherited": "no",
@@ -829,8 +971,8 @@
       "inherited": "no",
       "percentages": "Refer to corresponding dimension of the border box.",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "border-top-radius",
         "borderTopRadius"
@@ -845,8 +987,8 @@
       "inherited": "no",
       "percentages": "Refer to corresponding dimension of the border box.",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "border-right-radius",
         "borderRightRadius"
@@ -861,8 +1003,8 @@
       "inherited": "no",
       "percentages": "Refer to corresponding dimension of the border box.",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "border-bottom-radius",
         "borderBottomRadius"
@@ -877,8 +1019,8 @@
       "inherited": "no",
       "percentages": "Refer to corresponding dimension of the border box.",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "border-left-radius",
         "borderLeftRadius"
@@ -893,8 +1035,8 @@
       "inherited": "no",
       "percentages": "Refer to corresponding dimension of the border box.",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "border-block-start-radius",
         "borderBlockStartRadius"
@@ -909,8 +1051,8 @@
       "inherited": "no",
       "percentages": "Refer to corresponding dimension of the border box.",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "border-block-end-radius",
         "borderBlockEndRadius"
@@ -925,8 +1067,8 @@
       "inherited": "no",
       "percentages": "Refer to corresponding dimension of the border box.",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "border-inline-start-radius",
         "borderInlineStartRadius"
@@ -941,8 +1083,8 @@
       "inherited": "no",
       "percentages": "Refer to corresponding dimension of the border box.",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
       "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "border-inline-end-radius",
         "borderInlineEndRadius"
@@ -952,32 +1094,16 @@
       "name": "border-radius",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-radius",
       "value": "<length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?",
-      "initial": "0",
-      "appliesTo": "all elements, except table element when border-collapse is collapse",
-      "inherited": "no",
-      "percentages": "n/a",
-      "computedValue": "as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "see individual properties",
-      "styleDeclaration": [
-        "border-radius",
-        "borderRadius"
-      ]
-    },
-    {
-      "name": "corner-shape",
-      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-shape",
-      "value": "<corner-shape-value>{1,4}",
-      "initial": "round",
-      "appliesTo": "all elements where border-radius can apply",
-      "inherited": "no",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
       "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
-        "corner-shape",
-        "cornerShape"
+        "border-radius",
+        "borderRadius"
       ]
     },
     {
@@ -1119,7 +1245,7 @@
     {
       "name": "corner-top-shape",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-top-shape",
-      "value": "<corner-shape-value>{1,2}",
+      "value": "<'corner-top-left-shape'>{1,2}",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -1135,7 +1261,7 @@
     {
       "name": "corner-right-shape",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-right-shape",
-      "value": "<corner-shape-value>{1,2}",
+      "value": "<'corner-top-left-shape'>{1,2}",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -1151,7 +1277,7 @@
     {
       "name": "corner-bottom-shape",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-bottom-shape",
-      "value": "<corner-shape-value>{1,2}",
+      "value": "<'corner-top-left-shape'>{1,2}",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -1167,7 +1293,7 @@
     {
       "name": "corner-left-shape",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-left-shape",
-      "value": "<corner-shape-value>{1,2}",
+      "value": "<'corner-top-left-shape'>{1,2}",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -1183,7 +1309,7 @@
     {
       "name": "corner-block-start-shape",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-block-start-shape",
-      "value": "<corner-shape-value>{1,2}",
+      "value": "<'corner-top-left-shape'>{1,2}",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -1199,7 +1325,7 @@
     {
       "name": "corner-block-end-shape",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-block-end-shape",
-      "value": "<corner-shape-value>{1,2}",
+      "value": "<'corner-top-left-shape'>{1,2}",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -1215,7 +1341,7 @@
     {
       "name": "corner-inline-start-shape",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-inline-start-shape",
-      "value": "<corner-shape-value>{1,2}",
+      "value": "<'corner-top-left-shape'>{1,2}",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -1231,7 +1357,7 @@
     {
       "name": "corner-inline-end-shape",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-inline-end-shape",
-      "value": "<corner-shape-value>{1,2}",
+      "value": "<'corner-top-left-shape'>{1,2}",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -1242,6 +1368,515 @@
       "styleDeclaration": [
         "corner-inline-end-shape",
         "cornerInlineEndShape"
+      ]
+    },
+    {
+      "name": "corner-shape",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-shape",
+      "value": "<'corner-top-left-shape'>{1,4}",
+      "initial": "round",
+      "appliesTo": "all elements where border-radius can apply",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "values": [
+        {
+          "name": "round",
+          "prose": "The corner shape is a quarter of a convex ellipse. Equivalent to superellipse(1).",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-corner-shape-value-round",
+          "type": "value",
+          "value": "round"
+        },
+        {
+          "name": "squircle",
+          "prose": "The corner shape is a quarter of a \"squircle\", a convex curve between round and square. Equivalent to superellipse(2).",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-corner-shape-value-squircle",
+          "type": "value",
+          "value": "squircle"
+        },
+        {
+          "name": "square",
+          "prose": "The corner shape is a convex 90deg angle. Equivalent to superellipse(infinity).",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-corner-shape-value-square",
+          "type": "value",
+          "value": "square"
+        },
+        {
+          "name": "bevel",
+          "prose": "The corner shape is a straight diagonal line, neither convex nor concave. Equivalent to superellipse(0).",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-corner-shape-value-bevel",
+          "type": "value",
+          "value": "bevel"
+        },
+        {
+          "name": "scoop",
+          "prose": "The corner shape is a concave quarter-ellipse. Equivalent to superellipse(-1).",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-corner-shape-value-scoop",
+          "type": "value",
+          "value": "scoop"
+        },
+        {
+          "name": "notch",
+          "prose": "The corner shape is a concave 90deg angle. Equivalent to superellipse(-infinity).",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-corner-shape-value-notch",
+          "type": "value",
+          "value": "notch"
+        },
+        {
+          "name": "superellipse()",
+          "value": "superellipse()",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-corner-shape-value-superellipse-k",
+          "type": "value"
+        }
+      ],
+      "styleDeclaration": [
+        "corner-shape",
+        "cornerShape"
+      ]
+    },
+    {
+      "name": "corner-top-left",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-top-left",
+      "value": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-top-left",
+        "cornerTopLeft"
+      ]
+    },
+    {
+      "name": "corner-top-right",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-top-right",
+      "value": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-top-right",
+        "cornerTopRight"
+      ]
+    },
+    {
+      "name": "corner-bottom-left",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-bottom-left",
+      "value": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-bottom-left",
+        "cornerBottomLeft"
+      ]
+    },
+    {
+      "name": "corner-bottom-right",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-bottom-right",
+      "value": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-bottom-right",
+        "cornerBottomRight"
+      ]
+    },
+    {
+      "name": "corner-start-start",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-start-start",
+      "value": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-start-start",
+        "cornerStartStart"
+      ]
+    },
+    {
+      "name": "corner-start-end",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-start-end",
+      "value": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-start-end",
+        "cornerStartEnd"
+      ]
+    },
+    {
+      "name": "corner-end-start",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-end-start",
+      "value": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-end-start",
+        "cornerEndStart"
+      ]
+    },
+    {
+      "name": "corner-end-end",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-end-end",
+      "value": "<'border-top-left-radius'> || <'corner-top-left-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner-end-end",
+        "cornerEndEnd"
+      ]
+    },
+    {
+      "name": "corner-top",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-top",
+      "value": "<'border-top-radius'> || <'corner-top-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "corner-top",
+        "cornerTop"
+      ]
+    },
+    {
+      "name": "corner-right",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-right",
+      "value": "<'border-top-radius'> || <'corner-top-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "corner-right",
+        "cornerRight"
+      ]
+    },
+    {
+      "name": "corner-bottom",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-bottom",
+      "value": "<'border-top-radius'> || <'corner-top-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "corner-bottom",
+        "cornerBottom"
+      ]
+    },
+    {
+      "name": "corner-left",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-left",
+      "value": "<'border-top-radius'> || <'corner-top-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "corner-left",
+        "cornerLeft"
+      ]
+    },
+    {
+      "name": "corner-block-start",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-block-start",
+      "value": "<'border-top-radius'> || <'corner-top-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "corner-block-start",
+        "cornerBlockStart"
+      ]
+    },
+    {
+      "name": "corner-block-end",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-block-end",
+      "value": "<'border-top-radius'> || <'corner-top-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "corner-block-end",
+        "cornerBlockEnd"
+      ]
+    },
+    {
+      "name": "corner-inline-start",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-inline-start",
+      "value": "<'border-top-radius'> || <'corner-top-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "corner-inline-start",
+        "cornerInlineStart"
+      ]
+    },
+    {
+      "name": "corner-inline-end",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner-inline-end",
+      "value": "<'border-top-radius'> || <'corner-top-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "corner-inline-end",
+        "cornerInlineEnd"
+      ]
+    },
+    {
+      "name": "corner",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-corner",
+      "value": "<'border-radius'> || <'corner-shape'>",
+      "initial": "0",
+      "appliesTo": "all elements (but see prose)",
+      "inherited": "no",
+      "percentages": "Refer to corresponding dimension of the border box.",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "styleDeclaration": [
+        "corner"
+      ]
+    },
+    {
+      "name": "border-image-source",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-image-source",
+      "value": "none | <image>",
+      "initial": "none",
+      "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the keyword none or the computed <image>",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "border-image-source",
+        "borderImageSource"
+      ]
+    },
+    {
+      "name": "border-image-slice",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-image-slice",
+      "value": "[<number [0,∞]> | <percentage [0,∞]>]{1,4} && fill?",
+      "initial": "100%",
+      "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
+      "inherited": "no",
+      "percentages": "refer to size of the border image",
+      "computedValue": "four values, each either a number or percentage; plus a fill keyword if specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "values": [
+        {
+          "name": "<percentage [0,∞]>",
+          "prose": "Percentages are relative to the size of the image: the width of the image for the horizontal offsets, the height for vertical offsets.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-border-image-slice-percentage-0",
+          "type": "value",
+          "value": "<percentage [0,∞]>"
+        },
+        {
+          "name": "<number [0,∞]>",
+          "prose": "Numbers represent pixels in the image (if the image is a raster image) or vector coordinates (if the image is a vector image).",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-border-image-slice-number-0",
+          "type": "value",
+          "value": "<number [0,∞]>"
+        },
+        {
+          "name": "fill",
+          "prose": "The fill keyword, if present, causes the middle part of the border-image to be preserved. (By default it is discarded, i.e., treated as empty.)",
+          "href": "https://www.w3.org/TR/css-borders-4/#border-image-slice-fill",
+          "type": "value",
+          "value": "fill"
+        }
+      ],
+      "styleDeclaration": [
+        "border-image-slice",
+        "borderImageSlice"
+      ]
+    },
+    {
+      "name": "border-image-width",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-image-width",
+      "value": "[ <length-percentage [0,∞]> | <number [0,∞]> | auto ]{1,4}",
+      "initial": "1",
+      "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
+      "inherited": "no",
+      "percentages": "Relative to width/height of the border image area",
+      "computedValue": "four values, each either a number, the keyword auto, or a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "values": [
+        {
+          "name": "<length-percentage [0,∞]>",
+          "prose": "Percentages refer to the size of the border image area: the width of the area for horizontal offsets, the height for vertical offsets.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-border-image-width-length-percentage-0",
+          "type": "value",
+          "value": "<length-percentage [0,∞]>"
+        },
+        {
+          "name": "<number [0,∞]>",
+          "prose": "Numbers represent multiples of the corresponding computed border-width.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-border-image-width-number-0",
+          "type": "value",
+          "value": "<number [0,∞]>"
+        },
+        {
+          "name": "auto",
+          "prose": "If auto is specified then the used border-image-width is the natural width or height (whichever is applicable) of the corresponding image slice (see border-image-slice). If the image does not have the required natural dimension then the corresponding computed border-width is used instead.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-border-image-width-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ],
+      "styleDeclaration": [
+        "border-image-width",
+        "borderImageWidth"
+      ]
+    },
+    {
+      "name": "border-image-outset",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-image-outset",
+      "value": "[ <length [0,∞]> | <number [0,∞]> ]{1,4}",
+      "initial": "0",
+      "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "four values, each a number or absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "border-image-outset",
+        "borderImageOutset"
+      ]
+    },
+    {
+      "name": "border-image-repeat",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-image-repeat",
+      "value": "[ stretch | repeat | round | space ]{1,2}",
+      "initial": "stretch",
+      "appliesTo": "All elements, except internal table elements when border-collapse is collapse",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "two keywords, one per axis",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "stretch",
+          "prose": "The image is stretched to fill its corresponding region.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-border-image-repeat-stretch",
+          "type": "value",
+          "value": "stretch"
+        },
+        {
+          "name": "repeat",
+          "prose": "The image is tiled (repeated) to fill its corresponding region.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-border-image-repeat-repeat",
+          "type": "value",
+          "value": "repeat"
+        },
+        {
+          "name": "round",
+          "prose": "The image is tiled (repeated) to fill its corresponding region. If it does not fill the area with a whole number of tiles, the image is rescaled so that it does.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-border-image-repeat-round",
+          "type": "value",
+          "value": "round"
+        },
+        {
+          "name": "space",
+          "prose": "The image is tiled (repeated) to fill its corresponding region. If it does not fill the region with a whole number of tiles, the extra space is distributed around the tiles.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-border-image-repeat-space",
+          "type": "value",
+          "value": "space"
+        }
+      ],
+      "styleDeclaration": [
+        "border-image-repeat",
+        "borderImageRepeat"
+      ]
+    },
+    {
+      "name": "border-image",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-image",
+      "value": "<'border-image-source'> || <'border-image-slice'> [ / <'border-image-width'> | / <'border-image-width'>? / <'border-image-outset'> ]? || <'border-image-repeat'>",
+      "initial": "See individual properties",
+      "appliesTo": "See individual properties",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "See individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "See individual properties",
+      "styleDeclaration": [
+        "border-image",
+        "borderImage"
       ]
     },
     {
@@ -1312,83 +1947,187 @@
       ]
     },
     {
-      "name": "border-clip",
-      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-clip",
-      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
-      "initial": "normal",
+      "name": "border-top-clip",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-top-clip",
+      "value": "none | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "refer to length of border-edge side",
-      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
+      "logicalPropertyGroup": "border-clip",
+      "styleDeclaration": [
+        "border-top-clip",
+        "borderTopClip"
+      ]
+    },
+    {
+      "name": "border-right-clip",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-right-clip",
+      "value": "none | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-clip",
+      "styleDeclaration": [
+        "border-right-clip",
+        "borderRightClip"
+      ]
+    },
+    {
+      "name": "border-bottom-clip",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-bottom-clip",
+      "value": "none | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-clip",
+      "styleDeclaration": [
+        "border-bottom-clip",
+        "borderBottomClip"
+      ]
+    },
+    {
+      "name": "border-left-clip",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-left-clip",
+      "value": "none | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-clip",
+      "styleDeclaration": [
+        "border-left-clip",
+        "borderLeftClip"
+      ]
+    },
+    {
+      "name": "border-block-start-clip",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-block-start-clip",
+      "value": "none | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-clip",
+      "styleDeclaration": [
+        "border-block-start-clip",
+        "borderBlockStartClip"
+      ]
+    },
+    {
+      "name": "border-block-end-clip",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-block-end-clip",
+      "value": "none | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-clip",
+      "styleDeclaration": [
+        "border-block-end-clip",
+        "borderBlockEndClip"
+      ]
+    },
+    {
+      "name": "border-inline-start-clip",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-inline-start-clip",
+      "value": "none | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-clip",
+      "styleDeclaration": [
+        "border-inline-start-clip",
+        "borderInlineStartClip"
+      ]
+    },
+    {
+      "name": "border-inline-end-clip",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-inline-end-clip",
+      "value": "none | [ <length-percentage [0,∞]> | <flex> ]+",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "refer to length of border-edge side",
+      "computedValue": "none, or a list consisting of absolute lengths, or percentages as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "logicalPropertyGroup": "border-clip",
+      "styleDeclaration": [
+        "border-inline-end-clip",
+        "borderInlineEndClip"
+      ]
+    },
+    {
+      "name": "border-block-clip",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-block-clip",
+      "value": "<'border-top-clip'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-block-clip",
+        "borderBlockClip"
+      ]
+    },
+    {
+      "name": "border-inline-clip",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-inline-clip",
+      "value": "<'border-top-clip'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "border-inline-clip",
+        "borderInlineClip"
+      ]
+    },
+    {
+      "name": "border-clip",
+      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-clip",
+      "value": "<'border-top-clip'>",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "border-clip",
         "borderClip"
-      ]
-    },
-    {
-      "name": "border-clip-top",
-      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-clip-top",
-      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
-      "initial": "normal",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "refer to length of border-edge side",
-      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value",
-      "styleDeclaration": [
-        "border-clip-top",
-        "borderClipTop"
-      ]
-    },
-    {
-      "name": "border-clip-right",
-      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-clip-right",
-      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
-      "initial": "normal",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "refer to length of border-edge side",
-      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value",
-      "styleDeclaration": [
-        "border-clip-right",
-        "borderClipRight"
-      ]
-    },
-    {
-      "name": "border-clip-bottom",
-      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-clip-bottom",
-      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
-      "initial": "normal",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "refer to length of border-edge side",
-      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value",
-      "styleDeclaration": [
-        "border-clip-bottom",
-        "borderClipBottom"
-      ]
-    },
-    {
-      "name": "border-clip-left",
-      "href": "https://www.w3.org/TR/css-borders-4/#propdef-border-clip-left",
-      "value": "normal | [ <length-percentage [0,∞]> | <flex> ]+",
-      "initial": "normal",
-      "appliesTo": "all elements",
-      "inherited": "no",
-      "percentages": "refer to length of border-edge side",
-      "computedValue": "normal, or a list consisting of absolute lengths, or percentages as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value",
-      "styleDeclaration": [
-        "border-clip-left",
-        "borderClipLeft"
       ]
     },
     {
@@ -1410,7 +2149,7 @@
     {
       "name": "box-shadow-offset",
       "href": "https://www.w3.org/TR/css-borders-4/#propdef-box-shadow-offset",
-      "value": "[ none | <length>{2} ]#",
+      "value": "[ none | <length>{1,2} ]#",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -1428,7 +2167,7 @@
         },
         {
           "name": "1st <length>",
-          "prose": "Specifies the horizontal offset of the shadow. A positive value draws a shadow that is offset to the right of the box, a negative length to the left.",
+          "prose": "Specifies the horizontal offset of the shadow. A positive value draws a shadow that is offset to the right of the box, a negative length to the left. If only one <length> value is specified, it sets both the horizontal and vertical offsets to that value.",
           "href": "https://www.w3.org/TR/css-borders-4/#shadow-offset-x",
           "type": "value",
           "value": "1st <length>"
@@ -1557,7 +2296,7 @@
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
-      "percentages": "relative to the given <geometry-box>, or to border box if not given.",
+      "percentages": "see prose",
       "computedValue": "list, each item a computed color",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value",
@@ -1570,6 +2309,131 @@
   "atrules": [],
   "selectors": [],
   "values": [
+    {
+      "name": "<line-style>",
+      "href": "https://www.w3.org/TR/css-borders-4/#typedef-line-style",
+      "type": "type",
+      "value": "none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset",
+      "values": [
+        {
+          "name": "none",
+          "prose": "No border. Color and width are ignored (i.e., the border has width 0). Note this means that the initial value of border-image-width will also resolve to zero.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "hidden",
+          "prose": "Same as none, but has different behavior in the border conflict resolution rules for border-collapsed tables [CSS2].",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-hidden",
+          "type": "value",
+          "value": "hidden"
+        },
+        {
+          "name": "dotted",
+          "prose": "A series of round dots.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-dotted",
+          "type": "value",
+          "value": "dotted"
+        },
+        {
+          "name": "dashed",
+          "prose": "A series of square-ended dashes.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-dashed",
+          "type": "value",
+          "value": "dashed"
+        },
+        {
+          "name": "solid",
+          "prose": "A single line segment.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-solid",
+          "type": "value",
+          "value": "solid"
+        },
+        {
+          "name": "double",
+          "prose": "Two parallel solid lines with some space between them. (The thickness of the lines is not specified, but the sum of the lines and the space must equal border-width.)",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-double",
+          "type": "value",
+          "value": "double"
+        },
+        {
+          "name": "groove",
+          "prose": "Looks as if it were carved in the canvas. (This is typically achieved by creating a “shadow” from two colors that are slightly lighter and darker than the specified border-color.)",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-groove",
+          "type": "value",
+          "value": "groove"
+        },
+        {
+          "name": "ridge",
+          "prose": "Looks as if it were coming out of the canvas.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-ridge",
+          "type": "value",
+          "value": "ridge"
+        },
+        {
+          "name": "inset",
+          "prose": "Looks as if the content on the inside of the border is sunken into the canvas. Treated as ridge in the collapsing border model. [CSS2]",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-inset",
+          "type": "value",
+          "value": "inset"
+        },
+        {
+          "name": "outset",
+          "prose": "Looks as if the content on the inside of the border is raised out of the canvas. Treated as groove in the collapsing border model. [CSS2]",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-style-outset",
+          "type": "value",
+          "value": "outset"
+        }
+      ]
+    },
+    {
+      "name": "<line-width>",
+      "href": "https://www.w3.org/TR/css-borders-4/#typedef-line-width",
+      "type": "type",
+      "value": "<length [0,∞]> | thin | medium | thick",
+      "values": [
+        {
+          "name": "thin",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-width-thin",
+          "type": "value",
+          "value": "thin"
+        },
+        {
+          "name": "medium",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-width-medium",
+          "type": "value",
+          "value": "medium"
+        },
+        {
+          "name": "thick",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "href": "https://www.w3.org/TR/css-borders-4/#valdef-line-width-thick",
+          "type": "value",
+          "value": "thick"
+        }
+      ]
+    },
+    {
+      "name": "<border-radius>",
+      "href": "https://www.w3.org/TR/css-borders-4/#typedef-border-radius",
+      "type": "type",
+      "value": "<slash-separated-border-radius-syntax> | <legacy-border-radius-syntax>"
+    },
+    {
+      "name": "<slash-separated-border-radius-syntax>",
+      "href": "https://www.w3.org/TR/css-borders-4/#typedef-slash-separated-border-radius-syntax",
+      "type": "type",
+      "value": "<length-percentage [0,∞]> [ / <length-percentage [0,∞]> ]?"
+    },
+    {
+      "name": "<legacy-border-radius-syntax>",
+      "href": "https://www.w3.org/TR/css-borders-4/#typedef-legacy-border-radius-syntax",
+      "type": "type",
+      "value": "<length-percentage [0,∞]>{1,2}"
+    },
     {
       "name": "<corner-shape-value>",
       "href": "https://www.w3.org/TR/css-borders-4/#typedef-corner-shape-value",
@@ -1628,7 +2492,7 @@
     },
     {
       "name": "superellipse()",
-      "value": "superellipse(<number [-∞,∞]> | infinity | -infinity)",
+      "value": "superellipse(<number> | infinity | -infinity)",
       "href": "https://www.w3.org/TR/css-borders-4/#funcdef-superellipse",
       "type": "function"
     },
@@ -1636,7 +2500,7 @@
       "name": "<spread-shadow>",
       "href": "https://www.w3.org/TR/css-borders-4/#typedef-spread-shadow",
       "type": "type",
-      "value": "<'box-shadow-color'>? && [ <'box-shadow-offset'> [ <'box-shadow-blur'> <'box-shadow-spread'>? ]? ] && <'box-shadow-position'>?"
+      "value": "<'box-shadow-color'>? && [ [ none | <length>{2} ] [ <'box-shadow-blur'> <'box-shadow-spread'>? ]? ] && <'box-shadow-position'>?"
     }
   ]
 }

@@ -39,7 +39,7 @@
     {
       "name": "border-spacing",
       "href": "https://www.w3.org/TR/css-tables-3/#propdef-border-spacing",
-      "value": "<​length​>{1,2}",
+      "value": "<length>{1,2}",
       "initial": "0px 0px",
       "appliesTo": "table grid boxes when border-collapse is separate",
       "inherited": "yes",
@@ -63,6 +63,22 @@
       "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "top",
+          "prose": "Positions the caption box above the table grid box.",
+          "href": "https://www.w3.org/TR/css-tables-3/#valdef-caption-side-top",
+          "type": "value",
+          "value": "top"
+        },
+        {
+          "name": "bottom",
+          "prose": "Positions the caption box below the table grid box.",
+          "href": "https://www.w3.org/TR/css-tables-3/#valdef-caption-side-bottom",
+          "type": "value",
+          "value": "bottom"
+        }
+      ],
       "styleDeclaration": [
         "caption-side",
         "captionSide"

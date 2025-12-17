@@ -38,6 +38,23 @@
       ]
     },
     {
+      "name": "Navigator/maxTouchPoints",
+      "href": "https://www.w3.org/TR/pointerevents4/#dom-navigator-maxtouchpoints",
+      "html": "The getter steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Let <var>emulated maxTouchPoints</var> be the result of\n                          <a href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-emulated-max-touch-points\">WebDriver BiDi emulated max touch points</a>\n                          [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/pointerevents4/#bib-webdriver-bidi\" title=\"WebDriver BiDi\">WEBDRIVER-BIDI</a></cite>]."
+        },
+        {
+          "html": "If <var>emulated maxTouchPoints</var> is not null, return\n                            <var>emulated maxTouchPoints</var>."
+        },
+        {
+          "html": "<p>Return the maximum number of simultaneous touch contacts supported by\n                            the device. In the case of devices with multiple digitizers (e.g.\n                            multiple touchscreens), the value <em class=\"rfc2119\">MUST</em> be the maximum of the set of\n                            maximum supported contacts by each individual digitizer.</p>\n                            <p>For example, suppose a device has 3 touchscreens, which support 2, 5,\n                                and 10 simultaneous touch contacts, respectively. The value of\n                                <code>maxTouchPoints</code> should be <code>10</code>.</p>"
+        }
+      ]
+    },
+    {
       "html": "Pointer capture is set on an <var>element</var> of type <a data-link-type=\"interface\" data-lt=\"Element\" href=\"https://dom.spec.whatwg.org/#element\"><code>Element</code></a> by calling the <code>element.setPointerCapture(pointerId)</code> method.\n                When this method is invoked, the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\">user agent</a> <em class=\"rfc2119\">MUST</em> run the following steps:",
       "rationale": "if",
       "steps": [

@@ -1,53 +1,169 @@
 {
   "spec": {
-    "title": "CSS Shadow Parts",
+    "title": "CSS Shadow Parts Module Level 1",
     "url": "https://www.w3.org/TR/css-shadow-parts-1/"
   },
   "links": {
     "rawlinks": {
-      "https://dom.spec.whatwg.org/": {
-        "anchors": [
-          "domtokenlist",
-          "element",
-          "concept-shadow-root",
-          "dom-domtokenlist-value"
-        ]
-      },
+      "http://wpt.live/css/css-shadow-parts/all-hosts.html": {},
+      "http://wpt.live/css/css-shadow-parts/animation-part.html": {},
+      "http://wpt.live/css/css-shadow-parts/both-part-and-exportparts.html": {},
+      "http://wpt.live/css/css-shadow-parts/chaining-invalid-selector.html": {},
+      "http://wpt.live/css/css-shadow-parts/complex-matching.html": {},
+      "http://wpt.live/css/css-shadow-parts/complex-non-matching.html": {},
+      "http://wpt.live/css/css-shadow-parts/different-host.html": {},
+      "http://wpt.live/css/css-shadow-parts/double-forward.html": {},
+      "http://wpt.live/css/css-shadow-parts/exportparts-different-scope.html": {},
+      "http://wpt.live/css/css-shadow-parts/exportparts-layered.html": {},
+      "http://wpt.live/css/css-shadow-parts/exportparts-multiple.html": {},
+      "http://wpt.live/css/css-shadow-parts/grouping-with-checked.html": {},
+      "http://wpt.live/css/css-shadow-parts/grouping-with-disabled.html": {},
+      "http://wpt.live/css/css-shadow-parts/host-part-001.html": {},
+      "http://wpt.live/css/css-shadow-parts/host-part-002.html": {},
+      "http://wpt.live/css/css-shadow-parts/host-part-003.html": {},
+      "http://wpt.live/css/css-shadow-parts/host-part-nesting.html": {},
+      "http://wpt.live/css/css-shadow-parts/host-stylesheet.html": {},
+      "http://wpt.live/css/css-shadow-parts/idlharness.html": {},
+      "http://wpt.live/css/css-shadow-parts/inner-host.html": {},
+      "http://wpt.live/css/css-shadow-parts/interaction-with-nested-pseudo-class.html": {},
+      "http://wpt.live/css/css-shadow-parts/interaction-with-placeholder.html": {},
+      "http://wpt.live/css/css-shadow-parts/interaction-with-pseudo-elements.html": {},
+      "http://wpt.live/css/css-shadow-parts/invalidation-change-exportparts-forward.html": {},
+      "http://wpt.live/css/css-shadow-parts/invalidation-change-part-name-forward.html": {},
+      "http://wpt.live/css/css-shadow-parts/invalidation-change-part-name-idl-domtokenlist.html": {},
+      "http://wpt.live/css/css-shadow-parts/invalidation-change-part-name-idl-setter.html": {},
+      "http://wpt.live/css/css-shadow-parts/invalidation-change-part-name.html": {},
+      "http://wpt.live/css/css-shadow-parts/invalidation-complex-selector-forward.html": {},
+      "http://wpt.live/css/css-shadow-parts/invalidation-complex-selector.html": {},
+      "http://wpt.live/css/css-shadow-parts/invalidation-part-pseudo.html": {},
+      "http://wpt.live/css/css-shadow-parts/multiple-parts.html": {},
+      "http://wpt.live/css/css-shadow-parts/multiple-scopes.html": {},
+      "http://wpt.live/css/css-shadow-parts/part-after-combinator-invalidation.html": {},
+      "http://wpt.live/css/css-shadow-parts/part-mutation-pseudo.html": {},
+      "http://wpt.live/css/css-shadow-parts/part-name-idl.html": {},
+      "http://wpt.live/css/css-shadow-parts/part-nested-pseudo.html": {},
+      "http://wpt.live/css/css-shadow-parts/precedence-part-vs-part.html": {},
+      "http://wpt.live/css/css-shadow-parts/pseudo-classes-after-part.html": {},
+      "http://wpt.live/css/css-shadow-parts/pseudo-elements-after-part.html": {},
+      "http://wpt.live/css/css-shadow-parts/serialization.html": {},
+      "http://wpt.live/css/css-shadow-parts/simple-forward-shorthand.html": {},
+      "http://wpt.live/css/css-shadow-parts/simple-forward.html": {},
+      "http://wpt.live/css/css-shadow-parts/simple-important-important.html": {},
+      "http://wpt.live/css/css-shadow-parts/simple-important-inline.html": {},
+      "http://wpt.live/css/css-shadow-parts/simple-important.html": {},
+      "http://wpt.live/css/css-shadow-parts/simple-inline.html": {},
+      "http://wpt.live/css/css-shadow-parts/simple.html": {},
+      "http://wpt.live/css/css-shadow-parts/style-sharing.html": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://dom.spec.whatwg.org/": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
-      "https://github.com/w3c/csswg-drafts/issues/2411": {},
-      "https://github.com/w3c/csswg-drafts/issues/2414": {},
-      "https://heycam.github.io/webidl/": {
-        "anchors": [
-          "PutForwards",
-          "SameObject"
-        ]
-      },
-      "https://infra.spec.whatwg.org/": {
-        "anchors": [
-          "collect-a-sequence-of-code-points",
-          "map-exists",
-          "list",
-          "ordered-map",
-          "ordered-set",
-          "pair",
-          "string"
-        ]
-      },
+      "https://github.com/w3c/csswg-drafts/issues/3424": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/all-hosts.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/animation-part.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/both-part-and-exportparts.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/chaining-invalid-selector.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/complex-matching.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/complex-non-matching.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/different-host.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/double-forward.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/exportparts-different-scope.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/exportparts-layered.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/exportparts-multiple.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/grouping-with-checked.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/grouping-with-disabled.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/host-part-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/host-part-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/host-part-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/host-part-nesting.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/host-stylesheet.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/idlharness.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/inner-host.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/interaction-with-nested-pseudo-class.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/interaction-with-placeholder.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/interaction-with-pseudo-elements.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/invalidation-change-exportparts-forward.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/invalidation-change-part-name-forward.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/invalidation-change-part-name-idl-domtokenlist.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/invalidation-change-part-name-idl-setter.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/invalidation-change-part-name.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/invalidation-complex-selector-forward.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/invalidation-complex-selector.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/invalidation-part-pseudo.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/multiple-parts.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/multiple-scopes.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/part-after-combinator-invalidation.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/part-mutation-pseudo.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/part-name-idl.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/part-nested-pseudo.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/precedence-part-vs-part.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/pseudo-classes-after-part.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/pseudo-elements-after-part.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/serialization.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/simple-forward-shorthand.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/simple-forward.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/simple-important-important.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/simple-important-inline.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/simple-important.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/simple-inline.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/simple.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-shadow-parts/style-sharing.html": {},
+      "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
-      "https://tools.ietf.org/html/rfc2119": {},
-      "https://www.w3.org/2004/01/pp-impl/32061/status": {},
-      "https://www.w3.org/2018/Process-20180201/": {},
-      "https://www.w3.org/Consortium/Patent-Policy/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
+      "https://webidl.spec.whatwg.org/": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/all-hosts.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/animation-part.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/both-part-and-exportparts.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/chaining-invalid-selector.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/complex-matching.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/complex-non-matching.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/different-host.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/double-forward.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/exportparts-different-scope.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/exportparts-layered.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/exportparts-multiple.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/grouping-with-checked.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/grouping-with-disabled.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/host-part-001.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/host-part-002.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/host-part-003.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/host-part-nesting.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/host-stylesheet.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/idlharness.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/inner-host.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/interaction-with-nested-pseudo-class.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/interaction-with-placeholder.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/interaction-with-pseudo-elements.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/invalidation-change-exportparts-forward.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/invalidation-change-part-name-forward.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/invalidation-change-part-name-idl-domtokenlist.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/invalidation-change-part-name-idl-setter.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/invalidation-change-part-name.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/invalidation-complex-selector-forward.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/invalidation-complex-selector.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/invalidation-part-pseudo.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/multiple-parts.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/multiple-scopes.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/part-after-combinator-invalidation.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/part-mutation-pseudo.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/part-name-idl.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/part-nested-pseudo.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/precedence-part-vs-part.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/pseudo-classes-after-part.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/pseudo-elements-after-part.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/serialization.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/simple-forward-shorthand.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/simple-forward.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/simple-important-important.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/simple-important-inline.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/simple-important.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/simple-inline.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/simple.html": {},
+      "https://wpt.fyi/results/css/css-shadow-parts/style-sharing.html": {},
       "https://www.w3.org/Style/CSS/Test/": {},
-      "https://www.w3.org/Style/CSS/members": {},
       "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/2018/WD-css-shadow-parts-1-20181115/": {},
       "https://www.w3.org/TR/CSS/": {
         "anchors": [
           "future-proofing",
@@ -55,84 +171,70 @@
           "proprietary-extension"
         ]
       },
-      "https://www.w3.org/TR/CSS2/conform.html": {
+      "https://www.w3.org/TR/CSS21/conform.html": {
         "anchors": [
           "style-sheet",
           "user-agent",
           "ignore"
         ]
       },
-      "https://www.w3.org/TR/css-scoping-1/": {
-        "anchors": [
-          "shadow-host",
-          "shadow-tree"
-        ]
-      },
-      "https://www.w3.org/TR/css-values-4/": {
-        "anchors": [
-          "typedef-ident"
-        ]
-      },
-      "https://www.w3.org/TR/css-variables-1/": {
-        "anchors": [
-          "custom-property"
-        ]
-      },
+      "https://www.w3.org/TR/css-pseudo-4/": {},
+      "https://www.w3.org/TR/css-values-4/": {},
+      "https://www.w3.org/TR/css-variables-1/": {},
       "https://www.w3.org/TR/selectors-4/": {},
-      "https://www.w3.org/TR/selectors4/": {
+      "https://www.w3.org/groups/wg/css": {},
+      "https://www.w3.org/groups/wg/css/ipr": {},
+      "https://www.w3.org/policies/patent-policy/20200915/": {
         "anchors": [
-          "hover-pseudo",
-          "live-profile",
-          "originating-element",
-          "structural-pseudo-classes"
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20250818/": {
+        "anchors": [
+          "recs-and-notes"
         ]
       }
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
+          "element-shadow-host",
+          "concept-shadow-tree",
           "concept-shadow-root",
+          "concept-tree-descendant",
           "element",
           "dom-domtokenlist-value",
           "domtokenlist"
         ]
       },
-      "https://drafts.csswg.org/css-shadow-parts/": {
+      "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "part"
+          "ordered-set",
+          "list",
+          "tuple",
+          "string",
+          "list-append",
+          "map-exists",
+          "collect-a-sequence-of-code-points",
+          "split-on-commas"
         ]
       },
-      "https://heycam.github.io/webidl/": {
+      "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "SameObject",
           "PutForwards"
         ]
       },
-      "https://infra.spec.whatwg.org/": {
+      "https://www.w3.org/TR/css-pseudo-4/": {
         "anchors": [
-          "ordered-set",
-          "ordered-map",
-          "string",
-          "map-exists",
-          "pair",
-          "collect-a-sequence-of-code-points",
-          "list"
-        ]
-      },
-      "https://www.w3.org/TR/CSS/": {
-        "anchors": [
-          "vendor-prefix"
-        ]
-      },
-      "https://www.w3.org/TR/css-scoping-1/": {
-        "anchors": [
-          "shadow-host",
-          "shadow-tree"
+          "fully-styleable"
         ]
       },
       "https://www.w3.org/TR/css-values-4/": {
         "anchors": [
-          "typedef-ident"
+          "typedef-ident",
+          "mult-one-plus"
         ]
       },
       "https://www.w3.org/TR/css-variables-1/": {
@@ -140,12 +242,10 @@
           "custom-property"
         ]
       },
-      "https://www.w3.org/TR/selectors4/": {
+      "https://www.w3.org/TR/selectors-4/": {
         "anchors": [
-          "live-profile",
           "hover-pseudo",
-          "originating-element",
-          "structural-pseudo-classes"
+          "originating-element"
         ]
       }
     }
