@@ -1,0 +1,48 @@
+name: CSS syntax patch
+description: Use this template to suggest a correction to the syntax of a CSS construct
+labels: ["css extracts", "patch"]
+title: "Add CSS syntax patch for: `@@`"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!Important]
+        Please replace `@@` in the title with the name of the CSS at-rule, property, selector, function, type or descriptor to patch. The name should typically appear in a CSS extract in [`ed/css`](https://github.com/w3c/webref/tree/main/ed/css).
+        Function names should end with `()`. Types should be enclosed in `<>`. You may provide additional context if there's some ambiguity, using a `/`-based path.
+        For example: `rgb()`, `<palette-identifier>`, `stop-color`, or `@page/page/<page-size>`
+
+  - type: input
+    id: url
+    attributes:
+      label: Link to the definition in the spec
+      description: |
+        Where is the CSS construct and its syntax defined?
+        This URL should be a link to the relevant version of the spec and include a fragment.
+        For example: `https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-identifier`
+      value: "https://"
+    validations:
+      required: true
+
+  - type: textarea
+    id: syntax
+    attributes:
+      label: Syntax of the CSS construct
+      description: |
+        What should the syntax this CSS construct be?
+        Leave the field blank if you're not sure.
+        Note Webref captures what specs define. The syntax should not contain historical tokens that are no longer in the spec or proprietary extensions.
+      render: code
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: |
+        Anything else we should know about the construct and syntax?
+        For example, did it exist in [`mdn/data`](https://github.com/mdn/data) or some other source?
+        Would it be worth making the syntax more explicit in the spec?
+        Is the syntax defined in one spec and extended elsewhere?
+    validations:
+      required: false
