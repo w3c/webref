@@ -48,17 +48,17 @@
     {
       "name": "compute the offset",
       "href": "https://drafts.csswg.org/css-gaps-1/#compute-the-offset",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-offset\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the offset</dfn> for a given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap-intersection-point\" id=\"ref-for-gap-intersection-point①⑨\">gap intersection point</a> <var>point</var> within a given <var>gap</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-the-offset\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute the offset</dfn> for a given <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap-intersection-point\" id=\"ref-for-gap-intersection-point②②\">gap intersection point</a> <var>point</var> within a given <var>gap</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>width</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#crossing-gap-width\" id=\"ref-for-crossing-gap-width④\">crossing gap width</a> for <var>point</var>."
+          "html": "Let <var>width</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#crossing-gap-width\" id=\"ref-for-crossing-gap-width⑤\">crossing gap width</a> for <var>point</var>."
         },
         {
-          "html": "Let <var>outset</var> be the computed value of either <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-outset\" id=\"ref-for-propdef-column-rule-outset④\">column-rule-outset</a> or <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-outset\" id=\"ref-for-propdef-row-rule-outset③\">row-rule-outset</a>,\n\t\t\t\twhichever applies to <var>gap</var>.\n\t\t\t\tResolve any percentages in <var>outset</var> against <var>width</var>."
+          "html": "Let <var>inset</var> be the computed value of either <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset\" id=\"ref-for-propdef-column-rule-inset③\">column-rule-inset</a> or <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset\" id=\"ref-for-propdef-row-rule-inset②\">row-rule-inset</a>,\n\t\t\t\twhichever applies to <var>gap</var>.\n\t\t\t\tResolve any percentages in <var>inset</var> against <var>width</var>."
         },
         {
-          "html": "Let <var>result</var> be <var>width</var> multiplied by 50%.\n\t\t\t\tSubtract <var>outset</var> from <var>result</var>."
+          "html": "Let <var>result</var> be <var>width</var> multiplied by 50%.\n\t\t\t\tAdd <var>inset</var> to <var>result</var>."
         },
         {
           "html": "Return <var>result</var>."
