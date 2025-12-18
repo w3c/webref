@@ -1,0 +1,313 @@
+{
+  "spec": {
+    "title": "CSS Backgrounds Module Level 4",
+    "url": "https://www.w3.org/TR/css-backgrounds-4/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#title",
+      "level": 1,
+      "title": "CSS Backgrounds Module Level 4"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "placement",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#placement",
+      "level": 3,
+      "title": "Module Interactions",
+      "number": "1.1"
+    },
+    {
+      "id": "values",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "1.2"
+    },
+    {
+      "id": "backgrounds",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#backgrounds",
+      "level": 2,
+      "title": "Defining Backgrounds",
+      "number": "2"
+    },
+    {
+      "id": "background-color",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#background-color",
+      "level": 3,
+      "title": "Base Color: the background-color property",
+      "number": "2.1"
+    },
+    {
+      "id": "background-image",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#background-image",
+      "level": 3,
+      "title": "Image Sources: the background-image property",
+      "number": "2.2"
+    },
+    {
+      "id": "background-repeat-longhands",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#background-repeat-longhands",
+      "level": 3,
+      "title": "Tiling Images: the background-repeat-x, background-repeat-y, background-repeat-block, and background-repeat-inline properties",
+      "number": "2.3"
+    },
+    {
+      "id": "background-repeat",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#background-repeat",
+      "level": 3,
+      "title": "Tiling Images Shorthand: the background-repeat property",
+      "number": "2.4"
+    },
+    {
+      "id": "background-attachment",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#background-attachment",
+      "level": 3,
+      "title": "Affixing Images: the background-attachment property",
+      "number": "2.5"
+    },
+    {
+      "id": "background-position-longhands",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#background-position-longhands",
+      "level": 3,
+      "title": "Background Positioning: the background-position-x, background-position-y, background-position-inline, and background-position-block properties",
+      "number": "2.6"
+    },
+    {
+      "id": "background-position",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#background-position",
+      "level": 3,
+      "title": "Background Positioning Shorthand: the background-position shorthand property",
+      "number": "2.7"
+    },
+    {
+      "id": "bg-position-serialization",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#bg-position-serialization",
+      "level": 4,
+      "title": "Serialization of background-position values",
+      "number": "2.7.1"
+    },
+    {
+      "id": "background-clip",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#background-clip",
+      "level": 3,
+      "title": "Painting Area: the background-clip property",
+      "number": "2.8"
+    },
+    {
+      "id": "background-origin",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#background-origin",
+      "level": 3,
+      "title": "Positioning Area: the background-origin property",
+      "number": "2.9"
+    },
+    {
+      "id": "background-size",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#background-size",
+      "level": 3,
+      "title": "Sizing Images: the background-size property",
+      "number": "2.10"
+    },
+    {
+      "id": "bg-size-serialization",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#bg-size-serialization",
+      "level": 4,
+      "title": "Serialization of background-size values",
+      "number": "2.10.1"
+    },
+    {
+      "id": "background-layers",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#background-layers",
+      "level": 3,
+      "title": "Background Image Layers: the background-tbd shorthand property",
+      "number": "2.11"
+    },
+    {
+      "id": "background",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#background",
+      "level": 3,
+      "title": "Backgrounds Shorthand: the background property",
+      "number": "2.12"
+    },
+    {
+      "id": "layering",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#layering",
+      "level": 2,
+      "title": "Layering Multiple Background Images",
+      "number": "3"
+    },
+    {
+      "id": "special-backgrounds",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#special-backgrounds",
+      "level": 2,
+      "title": "Backgrounds of Special Elements",
+      "number": "4"
+    },
+    {
+      "id": "root-background",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#root-background",
+      "level": 3,
+      "title": "The Canvas Background and the Root Element",
+      "number": "4.1"
+    },
+    {
+      "id": "body-background",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#body-background",
+      "level": 3,
+      "title": "The Canvas Background and the HTML <body> Element",
+      "number": "4.2"
+    },
+    {
+      "id": "first-line-background",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#first-line-background",
+      "level": 3,
+      "title": "The ::first-line Pseudo-element‘s Background",
+      "number": "4.3"
+    },
+    {
+      "id": "changes",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#changes",
+      "level": 2,
+      "title": "Changes",
+      "number": "5"
+    },
+    {
+      "id": "level-changes",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#level-changes",
+      "level": 3,
+      "title": "Additions since [CSS3BG]",
+      "number": "5.1"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "6"
+    },
+    {
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#security",
+      "level": 2,
+      "title": "Security Considerations"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://www.w3.org/TR/css-backgrounds-4/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

@@ -765,6 +765,28 @@
       "links": []
     },
     {
+      "id": "dom-webtransportdatagramduplexstream-transport-slot",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-transport-slot",
+      "linkingText": [
+        "[[Transport]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportDatagramDuplexStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "datagram-duplex-stream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
       "id": "dom-webtransportdatagramduplexstream-readable-slot",
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-readable-slot",
       "linkingText": [
@@ -787,10 +809,10 @@
       "links": []
     },
     {
-      "id": "dom-webtransportdatagramduplexstream-readablemode-slot",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-readablemode-slot",
+      "id": "dom-webtransportdatagramduplexstream-readabletype-slot",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-readabletype-slot",
       "linkingText": [
-        "[[ReadableMode]]"
+        "[[ReadableType]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -995,50 +1017,6 @@
       "type": "dfn",
       "for": [
         "WebTransportDatagramDuplexStream"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "datagram-duplex-stream-internal-slots",
-        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-internal-slots",
-        "title": "Internal slots",
-        "number": "5.1"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "webtransportdatagramduplexstream-create-readable",
-      "href": "https://www.w3.org/TR/webtransport/#webtransportdatagramduplexstream-create-readable",
-      "linkingText": [
-        "readable"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "WebTransportDatagramDuplexStream/create"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "datagram-duplex-stream-internal-slots",
-        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-internal-slots",
-        "title": "Internal slots",
-        "number": "5.1"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "webtransportdatagramduplexstream-create-readablemode",
-      "href": "https://www.w3.org/TR/webtransport/#webtransportdatagramduplexstream-create-readablemode",
-      "linkingText": [
-        "readableMode"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "WebTransportDatagramDuplexStream/create"
       ],
       "access": "public",
       "informative": false,
@@ -2695,48 +2673,6 @@
       "links": []
     },
     {
-      "id": "enumdef-datagramsreadablemode",
-      "href": "https://www.w3.org/TR/webtransport/#enumdef-datagramsreadablemode",
-      "linkingText": [
-        "DatagramsReadableMode"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "web-transport-configuration",
-        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
-        "title": "Configuration",
-        "number": "6.9"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "dom-datagramsreadablemode-bytes",
-      "href": "https://www.w3.org/TR/webtransport/#dom-datagramsreadablemode-bytes",
-      "linkingText": [
-        "\"bytes\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "DatagramsReadableMode"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "web-transport-configuration",
-        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
-        "title": "Configuration",
-        "number": "6.9"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
       "id": "dictdef-webtransportoptions",
       "href": "https://www.w3.org/TR/webtransport/#dictdef-webtransportoptions",
       "linkingText": [
@@ -2931,10 +2867,10 @@
       "links": []
     },
     {
-      "id": "dom-webtransportoptions-datagramsreadablemode",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportoptions-datagramsreadablemode",
+      "id": "dom-webtransportoptions-datagramsreadabletype",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportoptions-datagramsreadabletype",
       "linkingText": [
-        "datagramsReadableMode"
+        "datagramsReadableType"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -3269,6 +3205,50 @@
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransportconnectionstats-bytessent",
       "linkingText": [
         "bytesSent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportConnectionStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-connection-stats",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-connection-stats",
+        "title": "WebTransportConnectionStats Dictionary",
+        "number": "6.13"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-webtransportconnectionstats-bytessentoverhead",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportconnectionstats-bytessentoverhead",
+      "linkingText": [
+        "bytesSentOverhead"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportConnectionStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-connection-stats",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-connection-stats",
+        "title": "WebTransportConnectionStats Dictionary",
+        "number": "6.13"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-webtransportconnectionstats-bytesacknowledged",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportconnectionstats-bytesacknowledged",
+      "linkingText": [
+        "bytesAcknowledged"
       ],
       "localLinkingText": [],
       "type": "dict-member",
