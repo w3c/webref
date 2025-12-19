@@ -1939,46 +1939,52 @@
               "html": "<p>If <var>target</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑧\">Document</a></code>, and <var>type</var> is <code>\"scroll\"</code> or <code>\"scrollend\"</code>,\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">fire an event</a> named <var>type</var> that bubbles at <var>target</var>.</p>"
             },
             {
-              "html": "<p>Otherwise, if <var>type</var> is <code>\"scrollsnapchange\"</code>, then:</p>"
+              "html": "Otherwise, if <var>type</var> is <code>\"scrollsnapchange\"</code>, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>blockTarget</var> and <var>inlineTarget</var> be null initially.</p>"
+                },
+                {
+                  "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetblock\" id=\"ref-for-scrollsnapchangetargetblock\">scrollsnapchangeTargetBlock</a> associated with <var>target</var> is a pseudo-element,\n  set <var>blockTarget</var> to the owning element of that <span id=\"ref-for-scrollsnapchangetargetblock①\">scrollsnapchangeTargetBlock</span>.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, set <var>blockTarget</var> to that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetblock\" id=\"ref-for-scrollsnapchangetargetblock②\">scrollsnapchangeTargetBlock</a>.</p>"
+                },
+                {
+                  "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetinline\" id=\"ref-for-scrollsnapchangetargetinline\">scrollsnapchangeTargetInline</a> associated with <var>target</var> is a pseudo-element,\n  set <var>inlineTarget</var> to the owning element of that <span id=\"ref-for-scrollsnapchangetargetinline①\">scrollsnapchangeTargetInline</span>.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, Set <var>inlineTarget</var> to that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetinline\" id=\"ref-for-scrollsnapchangetargetinline②\">scrollsnapchangeTargetInline</a>.</p>"
+                },
+                {
+                  "html": "<p>Fire a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snapevent\" id=\"ref-for-snapevent\">SnapEvent</a></code>, <var>snapevent</var>, named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#eventdef-snapevent-scrollsnapchange\" id=\"ref-for-eventdef-snapevent-scrollsnapchange\">scrollsnapchange</a></code> at <var>target</var>\n  and let <var>snapevent</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargetblock\" id=\"ref-for-dom-snapevent-snaptargetblock\">snapTargetBlock</a></code> and\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargetinline\" id=\"ref-for-dom-snapevent-snaptargetinline\">snapTargetInline</a></code> attributes be <var>blockTarget</var> and <var>inlineTarget</var> respectively.</p>"
+                }
+              ]
             },
             {
-              "html": "<p>Let <var>blockTarget</var> and <var>inlineTarget</var> be null initially.</p>"
-            },
-            {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetblock\" id=\"ref-for-scrollsnapchangetargetblock\">scrollsnapchangeTargetBlock</a> associated with <var>target</var> is a pseudo-element,\nset <var>blockTarget</var> to the owning element of that <span id=\"ref-for-scrollsnapchangetargetblock①\">scrollsnapchangeTargetBlock</span>.</p>"
-            },
-            {
-              "html": "<p>Otherwise, set <var>blockTarget</var> to that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetblock\" id=\"ref-for-scrollsnapchangetargetblock②\">scrollsnapchangeTargetBlock</a>.</p>"
-            },
-            {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetinline\" id=\"ref-for-scrollsnapchangetargetinline\">scrollsnapchangeTargetInline</a> associated with <var>target</var> is a pseudo-element,\nset <var>inlineTarget</var> to the owning element of that <span id=\"ref-for-scrollsnapchangetargetinline①\">scrollsnapchangeTargetInline</span>.</p>"
-            },
-            {
-              "html": "<p>Otherwise, Set <var>inlineTarget</var> to that <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#scrollsnapchangetargetinline\" id=\"ref-for-scrollsnapchangetargetinline②\">scrollsnapchangeTargetInline</a>.</p>"
-            },
-            {
-              "html": "<p>Fire a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snapevent\" id=\"ref-for-snapevent\">SnapEvent</a></code>, <var>snapevent</var>, named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#eventdef-snapevent-scrollsnapchange\" id=\"ref-for-eventdef-snapevent-scrollsnapchange\">scrollsnapchange</a></code> at <var>target</var>\nand let <var>snapevent</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargetblock\" id=\"ref-for-dom-snapevent-snaptargetblock\">snapTargetBlock</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargetinline\" id=\"ref-for-dom-snapevent-snaptargetinline\">snapTargetInline</a></code> attributes be <var>blockTarget</var> and <var>inlineTarget</var> respectively.</p>"
-            },
-            {
-              "html": "<p>Otherwise, if <var>type</var> is <code>\"scrollsnapchanging\"</code>, then:</p>"
-            },
-            {
-              "html": "<p>Let <var>blockTarget</var> and <var>inlineTarget</var> be null initially.</p>"
-            },
-            {
-              "html": "<p>If the <u class=\"link-error\" data-lt=\"scrollsnapchanging block-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging block-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging block-axis target</u> associated with <var>target</var> is a pseudo-element,\nset <var>blockTarget</var> to the owning element of that <u class=\"link-error\" data-lt=\"scrollsnapchanging block-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging block-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging block-axis target</u>.</p>"
-            },
-            {
-              "html": "<p>Otherwise, set <var>blockTarget</var> to that <u class=\"link-error\" data-lt=\"scrollsnapchanging block-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging block-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging block-axis target</u>.</p>"
-            },
-            {
-              "html": "<p>If the <u class=\"link-error\" data-lt=\"scrollsnapchanging inline-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging inline-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging inline-axis target</u> associated with <var>target</var> is a pseudo-element,\nset <var>inlineTarget</var> to the owning element of that <u class=\"link-error\" data-lt=\"scrollsnapchanging inline-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging inline-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging inline-axis target</u>.</p>"
-            },
-            {
-              "html": "<p>Otherwise, set <var>inlineTarget</var> to that <u class=\"link-error\" data-lt=\"scrollsnapchanging inline-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging inline-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging inline-axis target</u>.</p>"
-            },
-            {
-              "html": "<p>Fire a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snapevent\" id=\"ref-for-snapevent①\">SnapEvent</a></code>, <var>snapevent</var>, named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#eventdef-snapevent-scrollsnapchanging\" id=\"ref-for-eventdef-snapevent-scrollsnapchanging\">scrollsnapchanging</a></code> at <var>target</var>\nand let <var>snapevent</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargetblock\" id=\"ref-for-dom-snapevent-snaptargetblock①\">snapTargetBlock</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargetinline\" id=\"ref-for-dom-snapevent-snaptargetinline①\">snapTargetInline</a></code> attributes be <var>blockTarget</var> and <var>inlineTarget</var>, respectively.</p>"
+              "html": "Otherwise, if <var>type</var> is <code>\"scrollsnapchanging\"</code>, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>blockTarget</var> and <var>inlineTarget</var> be null initially.</p>"
+                },
+                {
+                  "html": "<p>If the <u class=\"link-error\" data-lt=\"scrollsnapchanging block-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging block-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging block-axis target</u> associated with <var>target</var> is a pseudo-element,\n  set <var>blockTarget</var> to the owning element of that <u class=\"link-error\" data-lt=\"scrollsnapchanging block-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging block-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging block-axis target</u>.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, set <var>blockTarget</var> to that <u class=\"link-error\" data-lt=\"scrollsnapchanging block-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging block-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging block-axis target</u>.</p>"
+                },
+                {
+                  "html": "<p>If the <u class=\"link-error\" data-lt=\"scrollsnapchanging inline-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging inline-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging inline-axis target</u> associated with <var>target</var> is a pseudo-element,\n  set <var>inlineTarget</var> to the owning element of that <u class=\"link-error\" data-lt=\"scrollsnapchanging inline-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging inline-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging inline-axis target</u>.</p>"
+                },
+                {
+                  "html": "<p>Otherwise, set <var>inlineTarget</var> to that <u class=\"link-error\" data-lt=\"scrollsnapchanging inline-axis target\" title=\"LINK ERROR: No 'dfn' refs found for 'scrollsnapchanging inline-axis target' that are marked for export.\n  (Possible specs this could be from: css-scroll-snap-2)\">scrollsnapchanging inline-axis target</u>.</p>"
+                },
+                {
+                  "html": "<p>Fire a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#snapevent\" id=\"ref-for-snapevent①\">SnapEvent</a></code>, <var>snapevent</var>, named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#eventdef-snapevent-scrollsnapchanging\" id=\"ref-for-eventdef-snapevent-scrollsnapchanging\">scrollsnapchanging</a></code> at <var>target</var>\n  and let <var>snapevent</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargetblock\" id=\"ref-for-dom-snapevent-snaptargetblock①\">snapTargetBlock</a></code> and\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#dom-snapevent-snaptargetinline\" id=\"ref-for-dom-snapevent-snaptargetinline①\">snapTargetInline</a></code> attributes be <var>blockTarget</var> and <var>inlineTarget</var>, respectively.</p>"
+                }
+              ]
             },
             {
               "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire④\">fire an event</a> named <var>type</var> at <var>target</var>.</p>"
