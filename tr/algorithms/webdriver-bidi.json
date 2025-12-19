@@ -3175,11 +3175,11 @@
     {
       "name": "set viewport",
       "href": "https://www.w3.org/TR/webdriver-bidi/#set-viewport",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-viewport\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set viewport</dfn> given <var>navigable</var> and <var>viewport</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-viewport\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set viewport</dfn> given given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②⓪\">navigable</a> <var>navigable</var> and\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-configuration-viewport\" id=\"ref-for-viewport-configuration-viewport\">viewport</a> <var>viewport</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>viewport</var> is not null, set the width of <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#layout-viewport\" id=\"ref-for-layout-viewport\">layout viewport</a> to be the <code>width</code> of <var>viewport</var> in CSS pixels and\n set the height of the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#layout-viewport\" id=\"ref-for-layout-viewport①\">layout viewport</a> to be the\n <code>height</code> of <var>viewport</var> in CSS pixels.</p>"
+          "html": "<p>If <var>viewport</var> is not null, set the width of <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#layout-viewport\" id=\"ref-for-layout-viewport\">layout viewport</a>\n to be the <var>viewport</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-dimensions-width\" id=\"ref-for-viewport-dimensions-width\">width</a> in CSS pixels and\n set the height of the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#layout-viewport\" id=\"ref-for-layout-viewport①\">layout viewport</a> to be the\n <var>viewport</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-dimensions-height\" id=\"ref-for-viewport-dimensions-height\">height</a> in CSS pixels.</p>"
         },
         {
           "html": "<p>Otherwise, set the <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view/#layout-viewport\" id=\"ref-for-layout-viewport②\">layout viewport</a> to the\n implementation-defined default.</p>"
@@ -3223,20 +3223,20 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable③⑦\">top-level traversable</a> and the <code>viewport</code> field of\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map①\">viewport overrides map</a>[<var>user context</var>] is not null:",
+              "html": "If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\" id=\"ref-for-top-level-traversable③⑦\">top-level traversable</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map①\">viewport overrides map</a>[<var>user context</var>]'s\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-configuration-viewport\" id=\"ref-for-viewport-configuration-viewport①\">viewport</a> is not null:",
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-viewport\" id=\"ref-for-set-viewport\">Set viewport</a> with <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map②\">viewport overrides map</a>[<var>user context</var>][\"<code>viewport</code>\"].</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-viewport\" id=\"ref-for-set-viewport\">Set viewport</a> with <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map②\">viewport overrides map</a>[<var>user context</var>]'s\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-configuration-viewport\" id=\"ref-for-viewport-configuration-viewport②\">viewport</a>.</p>"
                 }
               ]
             },
             {
-              "html": "If the <code>devicePixelRatio</code> field of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map③\">viewport overrides map</a>[<var>user context</var>] is not null:",
+              "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map③\">viewport overrides map</a>[<var>user context</var>]'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-configuration-devicepixelratio\" id=\"ref-for-viewport-configuration-devicepixelratio\">devicePixelRatio</a> is not null:",
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-device-pixel-ratio-override\" id=\"ref-for-set-device-pixel-ratio-override\">Set device pixel ratio override</a> with <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map④\">viewport overrides map</a>[<var>user context</var>][\"<code>devicePixelRatio</code>\"\"].</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#set-device-pixel-ratio-override\" id=\"ref-for-set-device-pixel-ratio-override\">Set device pixel ratio override</a> with <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map④\">viewport overrides map</a>[<var>user context</var>]'s\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-configuration-devicepixelratio\" id=\"ref-for-viewport-configuration-devicepixelratio①\">devicePixelRatio</a>.</p>"
                 }
               ]
             }
@@ -3295,7 +3295,7 @@
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map⑥\">viewport overrides map</a>[<var>user context</var>][\"<code>viewport</code>\"]\n  to <var>command parameters</var>[\"<code>viewport</code>\"].</p>"
+                      "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map⑥\">viewport overrides map</a>[<var>user context</var>]'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-configuration-viewport\" id=\"ref-for-viewport-configuration-viewport③\">viewport</a>\n  to <var>command parameters</var>[\"<code>viewport</code>\"].</p>"
                     }
                   ]
                 },
@@ -3304,7 +3304,7 @@
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map⑦\">viewport overrides map</a>[<var>user context</var>][\"<code>devicePixelRatio</code>\"]\n  to <var>command parameters</var>[\"<code>devicePixelRatio</code>\"].</p>"
+                      "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-overrides-map\" id=\"ref-for-viewport-overrides-map⑦\">viewport overrides map</a>[<var>user context</var>]'s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#viewport-configuration-devicepixelratio\" id=\"ref-for-viewport-configuration-devicepixelratio②\">devicePixelRatio</a>\n  to <var>command parameters</var>[\"<code>devicePixelRatio</code>\"].</p>"
                     }
                   ]
                 },
@@ -3500,7 +3500,7 @@
     {
       "name": "remote end event trigger for browsingContext.contextCreated",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigable-created",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger\">remote end event trigger</a> is\nthe <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-navigable-created\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi navigable created</dfn> steps given\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②①\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②②\">navigable</a> <var>opener navigable</var>:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger\">remote end event trigger</a> is\nthe <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-navigable-created\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi navigable created</dfn> steps given\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②②\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②③\">navigable</a> <var>opener navigable</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3539,7 +3539,7 @@
     {
       "name": "remote end event trigger for browsingContext.contextDestroyed",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigable-destroyed",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger②\">remote end event trigger</a> is\nthe <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-navigable-destroyed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi navigable destroyed</dfn> steps given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②③\">navigable</a> <var>navigable</var>:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger②\">remote end event trigger</a> is\nthe <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-navigable-destroyed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi navigable destroyed</dfn> steps given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②④\">navigable</a> <var>navigable</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3595,7 +3595,7 @@
     {
       "name": "WebDriver BiDi navigation started",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-started",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger③\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-navigation-started\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi navigation started</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②④\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status③\">navigation status</a>\n<var>navigation status</var>:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger③\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-navigation-started\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi navigation started</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②⑤\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status③\">navigation status</a>\n<var>navigation status</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3627,7 +3627,7 @@
     {
       "name": "WebDriver BiDi fragment navigated",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-fragment-navigated",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger④\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-fragment-navigated\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi fragment navigated</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②⑤\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status④\">navigation status</a>\n<var>navigation status</var>:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger④\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-fragment-navigated\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi fragment navigated</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②⑥\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status④\">navigation status</a>\n<var>navigation status</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3659,7 +3659,7 @@
     {
       "name": "WebDriver BiDi history updated",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-history-updated",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger⑤\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-history-updated\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi history updated</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②⑥\">navigable</a> <var>navigable</var>:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger⑤\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-history-updated\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi history updated</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②⑦\">navigable</a> <var>navigable</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3691,7 +3691,7 @@
     {
       "name": "WebDriver BiDi DOM content loaded",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-dom-content-loaded",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger⑥\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-dom-content-loaded\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi DOM content loaded</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②⑦\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status⑤\">navigation status</a>\n<var>navigation status</var>:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger⑥\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-dom-content-loaded\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi DOM content loaded</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②⑧\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status⑤\">navigation status</a>\n<var>navigation status</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3723,7 +3723,7 @@
     {
       "name": "WebDriver BiDi load complete",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-load-complete",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger⑦\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-load-complete\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi load complete</dfn> steps given\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②⑧\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status⑥\">navigation status</a>\n<var>navigation status</var>:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger⑦\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-load-complete\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi load complete</dfn> steps given\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②⑨\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status⑥\">navigation status</a>\n<var>navigation status</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3755,7 +3755,7 @@
     {
       "name": "WebDriver BiDi download will begin",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-download-will-begin",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger⑧\">remote end event trigger</a> is the\n<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-download-will-begin\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi download will begin</dfn> steps given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables②⑨\">navigable</a> <var>navigable</var> and\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status⑦\">navigation status</a> <var>navigation status</var>:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger⑧\">remote end event trigger</a> is the\n<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-download-will-begin\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi download will begin</dfn> steps given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③⓪\">navigable</a> <var>navigable</var> and\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status⑦\">navigation status</a> <var>navigation status</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3796,7 +3796,7 @@
     {
       "name": "WebDriver BiDi download started",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-download-started",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger⑨\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-download-started\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi download started</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③⓪\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status⑧\">navigation status</a>\n<var>navigation status</var>:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger⑨\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-download-started\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi download started</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③①\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status⑧\">navigation status</a>\n<var>navigation status</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3831,7 +3831,7 @@
     {
       "name": "WebDriver BiDi download end",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-download-end",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger①⓪\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-download-end\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi download end</dfn> steps given\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③①\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status⑨\">navigation status</a>\n<var>navigation status</var>:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger①⓪\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-download-end\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi download end</dfn> steps given\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③②\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status⑨\">navigation status</a>\n<var>navigation status</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3866,7 +3866,7 @@
     {
       "name": "WebDriver BiDi navigation aborted",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-aborted",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger①①\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-navigation-aborted\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi navigation aborted</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③②\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status①⓪\">navigation status</a>\n<var>navigation status</var>:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger①①\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-navigation-aborted\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi navigation aborted</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③③\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status①⓪\">navigation status</a>\n<var>navigation status</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3898,7 +3898,7 @@
     {
       "name": "WebDriver BiDi navigation committed",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-committed",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger①②\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-navigation-committed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi navigation committed</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③③\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status①①\">navigation status</a>\n<var>navigation status</var>:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger①②\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-navigation-committed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi navigation committed</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③④\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status①①\">navigation status</a>\n<var>navigation status</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -3930,7 +3930,7 @@
     {
       "name": "WebDriver BiDi navigation failed",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-failed",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger①③\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-navigation-failed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi navigation failed</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③④\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status①②\">navigation status</a>\n<var>navigation status</var>:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#event-remote-end-event-trigger\" id=\"ref-for-event-remote-end-event-trigger①③\">remote end event trigger</a> is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-navigation-failed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi navigation failed</dfn> steps\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③⑤\">navigable</a> <var>navigable</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-navigation-status\" id=\"ref-for-webdriver-bidi-navigation-status①②\">navigation status</a>\n<var>navigation status</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -4472,7 +4472,7 @@
     {
       "name": "WebDriver BiDi emulated available screen area",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-emulated-available-screen-area",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-emulated-available-screen-area\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi emulated available screen area</dfn> steps given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③⑦\">navigable</a> <var>navigable</var>:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-emulated-available-screen-area\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi emulated available screen area</dfn> steps given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③⑧\">navigable</a> <var>navigable</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -4495,7 +4495,7 @@
     {
       "name": "WebDriver BiDi emulated total screen area",
       "href": "https://www.w3.org/TR/webdriver-bidi/#webdriver-bidi-emulated-total-screen-area",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-emulated-total-screen-area\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi emulated total screen area</dfn> steps given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③⑧\">navigable</a> <var>navigable</var>:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"webdriver-bidi-emulated-total-screen-area\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">WebDriver BiDi emulated total screen area</dfn> steps given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables③⑨\">navigable</a> <var>navigable</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -5195,7 +5195,7 @@
               "html": "<p>Let <var>environment settings</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①\">client</a></p>"
             },
             {
-              "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables④⓪\">navigable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①\">active window</a> is <var>environment\n  settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a>, set <var>navigable</var>\n  to be that navigable.</p>"
+              "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables④①\">navigable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window①\">active window</a> is <var>environment\n  settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a>, set <var>navigable</var>\n  to be that navigable.</p>"
             }
           ]
         },
@@ -5901,7 +5901,7 @@
               "html": "<p>Let <var>environment settings</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client③\">client</a>.</p>"
             },
             {
-              "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables④①\">navigable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window②\">active window</a> is <var>environment\n settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global①\">global object</a>, set <var>navigable id</var>\n to that navigable’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑦\">navigable id</a>, and set <var>top-level navigable id</var> to\n that navigable’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①⑤\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑧\">navigable id</a>.</p>"
+              "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables④②\">navigable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window②\">active window</a> is <var>environment\n settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global①\">global object</a>, set <var>navigable id</var>\n to that navigable’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑦\">navigable id</a>, and set <var>top-level navigable id</var> to\n that navigable’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①⑤\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id①⑧\">navigable id</a>.</p>"
             }
           ]
         },
@@ -7621,7 +7621,7 @@
               "html": "<p>Let <var>environment settings</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client⑦\">client</a>.</p>"
             },
             {
-              "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables④②\">navigable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window③\">active window</a> is <var>environment\n settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global②\">global object</a>, set <var>navigable</var>\n to that navigable’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①⑥\">top-level traversable</a>.</p>"
+              "html": "<p>If there is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables④③\">navigable</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-window\" id=\"ref-for-nav-window③\">active window</a> is <var>environment\n settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global②\">global object</a>, set <var>navigable</var>\n to that navigable’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top①⑥\">top-level traversable</a>.</p>"
             }
           ]
         },
@@ -8368,7 +8368,7 @@
           "html": "<p>Let <var>document</var> be <var>environment settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window④\">associated <code>Document</code></a>.</p>"
         },
         {
-          "html": "<p>Let <var>navigable</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables④③\">navigable</a>.</p>"
+          "html": "<p>Let <var>navigable</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables④④\">navigable</a>.</p>"
         },
         {
           "html": "<p>Let <var>user context</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#associated-user-context\" id=\"ref-for-associated-user-context③⑧\">associated user context</a>.</p>"
@@ -10354,7 +10354,7 @@
           "html": "<p>Let <var>related navigables</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑥⑤\">set</a>.</p>"
         },
         {
-          "html": "<p>Append <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables④⑥\">navigable</a> to <var>related navigables</var>.</p>"
+          "html": "<p>Append <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables④⑦\">navigable</a> to <var>related navigables</var>.</p>"
         },
         {
           "html": "For each <var>worklet global scope</var> in <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#concept-document-worklet-global-scopes\" id=\"ref-for-concept-document-worklet-global-scopes\">worklet global scopes</a>:",
@@ -11114,7 +11114,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>navigable</var> be the <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document②\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables④⑦\">navigable</a>.</p>"
+          "html": "<p>Let <var>navigable</var> be the <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document②\">node document</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigables\" id=\"ref-for-navigables④⑧\">navigable</a>.</p>"
         },
         {
           "html": "<p>Let <var>navigable id</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#navigable-id\" id=\"ref-for-navigable-id②⑥\">navigable id</a>.</p>"
