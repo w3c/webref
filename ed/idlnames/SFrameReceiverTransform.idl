@@ -1,8 +1,8 @@
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
 [Exposed=Window]
-interface SFrameTransform : EventTarget {
+interface SFrameReceiverTransform : EventTarget {
     constructor(optional SFrameTransformOptions options = {});
 };
 
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
-SFrameTransform includes SFrameKeyManagement;
+SFrameReceiverTransform includes SFrameDecrypterManager;

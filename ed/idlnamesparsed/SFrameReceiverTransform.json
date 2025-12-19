@@ -1,13 +1,13 @@
 {
-  "name": "SFrameTransform",
+  "name": "SFrameReceiverTransform",
   "type": "interface",
   "defined": {
     "spec": {
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "[Exposed=Window]\ninterface SFrameTransform : EventTarget {\n    constructor(optional SFrameTransformOptions options = {});\n};",
-    "href": "https://w3c.github.io/webrtc-encoded-transform/#sframetransform"
+    "fragment": "[Exposed=Window]\ninterface SFrameReceiverTransform : EventTarget {\n    constructor(optional SFrameTransformOptions options = {});\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#sframereceivertransform"
   },
   "extended": [
     {
@@ -15,7 +15,7 @@
         "title": "WebRTC Encoded Transform",
         "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
       },
-      "fragment": "SFrameTransform includes SFrameKeyManagement;"
+      "fragment": "SFrameReceiverTransform includes SFrameDecrypterManager;"
     }
   ],
   "inheritance": {
@@ -43,15 +43,15 @@
   },
   "includes": [
     {
-      "name": "SFrameKeyManagement",
+      "name": "SFrameDecrypterManager",
       "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "WebRTC Encoded Transform",
           "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
         },
-        "fragment": "interface mixin SFrameKeyManagement {\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional CryptoKeyID keyID);\n    attribute EventHandler onerror;\n};",
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframekeymanagement"
+        "fragment": "interface mixin SFrameDecrypterManager {\n    Promise<undefined> addDecryptionKey(CryptoKey key, CryptoKeyID keyId);\n    Promise<undefined> removeDecryptionKey(CryptoKeyID keyId);\n    attribute EventHandler onerror;\n};",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframedecryptermanager"
       },
       "extended": [],
       "inheritance": null,

@@ -9639,6 +9639,11 @@
     "parsed": "idlnamesparsed/RTCRtpReceiver.json",
     "type": "interface"
   },
+  "RTCRtpReceiverTransform": {
+    "fragment": "idlnames/RTCRtpReceiverTransform.idl",
+    "parsed": "idlnamesparsed/RTCRtpReceiverTransform.json",
+    "type": "typedef"
+  },
   "RTCRtpScriptTransform": {
     "fragment": "idlnames/RTCRtpScriptTransform.idl",
     "parsed": "idlnamesparsed/RTCRtpScriptTransform.json",
@@ -9658,6 +9663,11 @@
     "fragment": "idlnames/RTCRtpSender.idl",
     "parsed": "idlnamesparsed/RTCRtpSender.json",
     "type": "interface"
+  },
+  "RTCRtpSenderTransform": {
+    "fragment": "idlnames/RTCRtpSenderTransform.idl",
+    "parsed": "idlnamesparsed/RTCRtpSenderTransform.json",
+    "type": "typedef"
   },
   "RTCRtpStreamStats": {
     "fragment": "idlnames/RTCRtpStreamStats.idl",
@@ -9683,11 +9693,6 @@
     "fragment": "idlnames/RTCRtpTransceiverInit.idl",
     "parsed": "idlnamesparsed/RTCRtpTransceiverInit.json",
     "type": "dictionary"
-  },
-  "RTCRtpTransform": {
-    "fragment": "idlnames/RTCRtpTransform.idl",
-    "parsed": "idlnamesparsed/RTCRtpTransform.json",
-    "type": "typedef"
   },
   "RTCSctpTransport": {
     "fragment": "idlnames/RTCSctpTransport.idl",
@@ -10279,24 +10284,34 @@
     "parsed": "idlnamesparsed/SFrameCipherSuite.json",
     "type": "enum"
   },
+  "SFrameDecrypterManager": {
+    "fragment": "idlnames/SFrameDecrypterManager.idl",
+    "parsed": "idlnamesparsed/SFrameDecrypterManager.json",
+    "type": "interface mixin"
+  },
   "SFrameDecrypterStream": {
     "fragment": "idlnames/SFrameDecrypterStream.idl",
     "parsed": "idlnamesparsed/SFrameDecrypterStream.json",
     "type": "interface"
+  },
+  "SFrameEncrypterManager": {
+    "fragment": "idlnames/SFrameEncrypterManager.idl",
+    "parsed": "idlnamesparsed/SFrameEncrypterManager.json",
+    "type": "interface mixin"
   },
   "SFrameEncrypterStream": {
     "fragment": "idlnames/SFrameEncrypterStream.idl",
     "parsed": "idlnamesparsed/SFrameEncrypterStream.json",
     "type": "interface"
   },
-  "SFrameKeyManagement": {
-    "fragment": "idlnames/SFrameKeyManagement.idl",
-    "parsed": "idlnamesparsed/SFrameKeyManagement.json",
-    "type": "interface mixin"
+  "SFrameReceiverTransform": {
+    "fragment": "idlnames/SFrameReceiverTransform.idl",
+    "parsed": "idlnamesparsed/SFrameReceiverTransform.json",
+    "type": "interface"
   },
-  "SFrameTransform": {
-    "fragment": "idlnames/SFrameTransform.idl",
-    "parsed": "idlnamesparsed/SFrameTransform.json",
+  "SFrameSenderTransform": {
+    "fragment": "idlnames/SFrameSenderTransform.idl",
+    "parsed": "idlnamesparsed/SFrameSenderTransform.json",
     "type": "interface"
   },
   "SFrameTransformErrorEvent": {

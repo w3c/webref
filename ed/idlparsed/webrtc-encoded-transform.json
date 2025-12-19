@@ -7,7 +7,8 @@
     "jsNames": {
       "constructors": {
         "Window": [
-          "SFrameTransform",
+          "SFrameSenderTransform",
+          "SFrameReceiverTransform",
           "SFrameEncrypterStream",
           "SFrameDecrypterStream",
           "SFrameTransformErrorEvent",
@@ -26,16 +27,16 @@
       },
       "functions": {
         "DedicatedWorker": [
-          "RTCTransformEvent",
-          "RTCRtpScriptTransformer"
+          "RTCRtpScriptTransformer",
+          "RTCTransformEvent"
         ]
       }
     },
     "idlNames": {
-      "RTCRtpTransform": {
-        "fragment": "typedef (SFrameTransform or RTCRtpScriptTransform) RTCRtpTransform;",
+      "RTCRtpSenderTransform": {
+        "fragment": "typedef (SFrameSenderTransform or RTCRtpScriptTransform) RTCRtpSenderTransform;",
         "type": "typedef",
-        "name": "RTCRtpTransform",
+        "name": "RTCRtpSenderTransform",
         "idlType": {
           "type": "typedef-type",
           "extAttrs": [],
@@ -49,7 +50,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "SFrameTransform"
+              "idlType": "SFrameSenderTransform"
             },
             {
               "type": "typedef-type",
@@ -62,7 +63,39 @@
           ]
         },
         "extAttrs": [],
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#typedefdef-rtcrtptransform"
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#typedefdef-rtcrtpsendertransform"
+      },
+      "RTCRtpReceiverTransform": {
+        "fragment": "typedef (SFrameReceiverTransform or RTCRtpScriptTransform) RTCRtpReceiverTransform;",
+        "type": "typedef",
+        "name": "RTCRtpReceiverTransform",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SFrameReceiverTransform"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RTCRtpScriptTransform"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#typedefdef-rtcrtpreceivertransform"
       },
       "SFrameCipherSuite": {
         "fragment": "// List of supported cipher suites, as defined in [[RFC9605]] section 4.5.\nenum SFrameCipherSuite {\n     \"AES_128_CTR_HMAC_SHA256_80\",\n     \"AES_128_CTR_HMAC_SHA256_64\",\n     \"AES_128_CTR_HMAC_SHA256_32\",\n     \"AES_128_GCM_SHA256_128\",\n     \"AES_256_GCM_SHA512_128\"\n};",
@@ -179,10 +212,10 @@
         "extAttrs": [],
         "href": "https://w3c.github.io/webrtc-encoded-transform/#typedefdef-cryptokeyid"
       },
-      "SFrameKeyManagement": {
-        "fragment": "interface mixin SFrameKeyManagement {\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional CryptoKeyID keyID);\n    attribute EventHandler onerror;\n};",
+      "SFrameEncrypterManager": {
+        "fragment": "interface mixin SFrameEncrypterManager {\n    Promise<undefined> setEncryptionKey(CryptoKey key, CryptoKeyID keyId);\n    attribute EventHandler onerror;\n};",
         "type": "interface mixin",
-        "name": "SFrameKeyManagement",
+        "name": "SFrameEncrypterManager",
         "inheritance": null,
         "members": [
           {
@@ -224,7 +257,7 @@
               },
               {
                 "type": "argument",
-                "name": "keyID",
+                "name": "keyId",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -235,13 +268,13 @@
                   "idlType": "CryptoKeyID"
                 },
                 "default": null,
-                "optional": true,
+                "optional": false,
                 "variadic": false
               }
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframekeymanagement-setencryptionkey"
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeencryptermanager-setencryptionkey"
           },
           {
             "type": "attribute",
@@ -257,17 +290,190 @@
             "extAttrs": [],
             "special": "",
             "readonly": false,
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframekeymanagement-onerror"
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeencryptermanager-onerror"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframekeymanagement"
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframeencryptermanager"
       },
-      "SFrameTransform": {
-        "fragment": "[Exposed=Window]\ninterface SFrameTransform : EventTarget {\n    constructor(optional SFrameTransformOptions options = {});\n};",
+      "SFrameDecrypterManager": {
+        "fragment": "interface mixin SFrameDecrypterManager {\n    Promise<undefined> addDecryptionKey(CryptoKey key, CryptoKeyID keyId);\n    Promise<undefined> removeDecryptionKey(CryptoKeyID keyId);\n    attribute EventHandler onerror;\n};",
+        "type": "interface mixin",
+        "name": "SFrameDecrypterManager",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "addDecryptionKey",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "key",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKey"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "keyId",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKeyID"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecryptermanager-adddecryptionkey"
+          },
+          {
+            "type": "operation",
+            "name": "removeDecryptionKey",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "keyId",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CryptoKeyID"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecryptermanager-removedecryptionkey"
+          },
+          {
+            "type": "attribute",
+            "name": "onerror",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecryptermanager-onerror"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframedecryptermanager"
+      },
+      "SFrameSenderTransform": {
+        "fragment": "[Exposed=Window]\ninterface SFrameSenderTransform {\n    constructor(optional SFrameTransformOptions options = {});\n};",
         "type": "interface",
-        "name": "SFrameTransform",
+        "name": "SFrameSenderTransform",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SFrameTransformOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframesendertransform-sframesendertransform"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframesendertransform"
+      },
+      "SFrameReceiverTransform": {
+        "fragment": "[Exposed=Window]\ninterface SFrameReceiverTransform : EventTarget {\n    constructor(optional SFrameTransformOptions options = {});\n};",
+        "type": "interface",
+        "name": "SFrameReceiverTransform",
         "inheritance": "EventTarget",
         "members": [
           {
@@ -293,7 +499,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransform-sframetransform"
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframereceivertransform-sframereceivertransform"
           }
         ],
         "extAttrs": [
@@ -308,7 +514,7 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframetransform"
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframereceivertransform"
       },
       "SFrameEncrypterStream": {
         "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameEncrypterStream : EventTarget {\n    constructor(optional SFrameTransformOptions options = {});\n};",
@@ -1221,27 +1427,75 @@
         "partial": false,
         "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedaudioframe"
       },
-      "RTCTransformEvent": {
-        "fragment": "[Exposed=DedicatedWorker]\ninterface RTCTransformEvent : Event {\n    readonly attribute RTCRtpScriptTransformer transformer;\n};",
+      "RTCRtpScriptTransform": {
+        "fragment": "[Exposed=Window]\ninterface RTCRtpScriptTransform {\n    constructor(Worker worker, optional any options, optional sequence<object> transfer);\n};",
         "type": "interface",
-        "name": "RTCTransformEvent",
-        "inheritance": "Event",
+        "name": "RTCRtpScriptTransform",
+        "inheritance": null,
         "members": [
           {
-            "type": "attribute",
-            "name": "transformer",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "RTCRtpScriptTransformer"
-            },
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "worker",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Worker"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "transfer",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "object"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
             "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtctransformevent-transformer"
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-rtcrtpscripttransform"
           }
         ],
         "extAttrs": [
@@ -1250,13 +1504,13 @@
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
-              "value": "DedicatedWorker"
+              "value": "Window"
             },
             "arguments": []
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtctransformevent"
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpscripttransform"
       },
       "RTCRtpScriptTransformer": {
         "fragment": "[Exposed=DedicatedWorker]\ninterface RTCRtpScriptTransformer : EventTarget {\n    // Attributes and methods related to the transformer source\n    readonly attribute ReadableStream readable;\n    Promise<undefined> generateKeyFrame(optional DOMString rid);\n    Promise<undefined> sendKeyFrameRequest();\n    // Attributes and methods related to the transformer sink\n    readonly attribute WritableStream writable;\n    attribute EventHandler onkeyframerequest;\n    // Attributes for configuring the Javascript code\n    readonly attribute any options;\n};",
@@ -1410,75 +1664,27 @@
         "partial": false,
         "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpscripttransformer"
       },
-      "RTCRtpScriptTransform": {
-        "fragment": "[Exposed=Window]\ninterface RTCRtpScriptTransform {\n    constructor(Worker worker, optional any options, optional sequence<object> transfer);\n};",
+      "RTCTransformEvent": {
+        "fragment": "[Exposed=DedicatedWorker]\ninterface RTCTransformEvent : Event {\n    readonly attribute RTCRtpScriptTransformer transformer;\n};",
         "type": "interface",
-        "name": "RTCRtpScriptTransform",
-        "inheritance": null,
+        "name": "RTCTransformEvent",
+        "inheritance": "Event",
         "members": [
           {
-            "type": "constructor",
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "worker",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Worker"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "any"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "transfer",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "sequence",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": [
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "object"
-                    }
-                  ]
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ],
+            "type": "attribute",
+            "name": "transformer",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RTCRtpScriptTransformer"
+            },
             "extAttrs": [],
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-rtcrtpscripttransform"
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtctransformevent-transformer"
           }
         ],
         "extAttrs": [
@@ -1487,13 +1693,13 @@
             "name": "Exposed",
             "rhs": {
               "type": "identifier",
-              "value": "Window"
+              "value": "DedicatedWorker"
             },
             "arguments": []
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpscripttransform"
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtctransformevent"
       },
       "KeyFrameRequestEvent": {
         "fragment": "[Exposed=DedicatedWorker]\ninterface KeyFrameRequestEvent : Event {\n  constructor(DOMString type, optional DOMString rid);\n  readonly attribute DOMString? rid;\n};",
@@ -1575,7 +1781,7 @@
     "idlExtendedNames": {
       "RTCRtpSender": [
         {
-          "fragment": "// New methods for RTCRtpSender and RTCRtpReceiver\npartial interface RTCRtpSender {\n    attribute RTCRtpTransform? transform;\n};",
+          "fragment": "// New methods for RTCRtpSender and RTCRtpReceiver\npartial interface RTCRtpSender {\n    attribute RTCRtpSenderTransform? transform;\n};",
           "type": "interface",
           "name": "RTCRtpSender",
           "inheritance": null,
@@ -1589,7 +1795,7 @@
                 "generic": "",
                 "nullable": true,
                 "union": false,
-                "idlType": "RTCRtpTransform"
+                "idlType": "RTCRtpSenderTransform"
               },
               "extAttrs": [],
               "special": "",
@@ -1603,7 +1809,7 @@
       ],
       "RTCRtpReceiver": [
         {
-          "fragment": "partial interface RTCRtpReceiver {\n    attribute RTCRtpTransform? transform;\n};",
+          "fragment": "partial interface RTCRtpReceiver {\n    attribute RTCRtpReceiverTransform? transform;\n};",
           "type": "interface",
           "name": "RTCRtpReceiver",
           "inheritance": null,
@@ -1617,7 +1823,7 @@
                 "generic": "",
                 "nullable": true,
                 "union": false,
-                "idlType": "RTCRtpTransform"
+                "idlType": "RTCRtpReceiverTransform"
               },
               "extAttrs": [],
               "special": "",
@@ -1629,13 +1835,22 @@
           "partial": true
         }
       ],
-      "SFrameTransform": [
+      "SFrameSenderTransform": [
         {
-          "fragment": "SFrameTransform includes SFrameKeyManagement;",
+          "fragment": "SFrameSenderTransform includes SFrameEncrypterManager;",
           "type": "includes",
           "extAttrs": [],
-          "target": "SFrameTransform",
-          "includes": "SFrameKeyManagement"
+          "target": "SFrameSenderTransform",
+          "includes": "SFrameEncrypterManager"
+        }
+      ],
+      "SFrameReceiverTransform": [
+        {
+          "fragment": "SFrameReceiverTransform includes SFrameDecrypterManager;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "SFrameReceiverTransform",
+          "includes": "SFrameDecrypterManager"
         }
       ],
       "SFrameEncrypterStream": [
@@ -1647,11 +1862,11 @@
           "includes": "GenericTransformStream"
         },
         {
-          "fragment": "SFrameEncrypterStream includes SFrameKeyManagement;",
+          "fragment": "SFrameEncrypterStream includes SFrameEncrypterManager;",
           "type": "includes",
           "extAttrs": [],
           "target": "SFrameEncrypterStream",
-          "includes": "SFrameKeyManagement"
+          "includes": "SFrameEncrypterManager"
         }
       ],
       "SFrameDecrypterStream": [
@@ -1663,11 +1878,11 @@
           "includes": "GenericTransformStream"
         },
         {
-          "fragment": "SFrameDecrypterStream includes SFrameKeyManagement;",
+          "fragment": "SFrameDecrypterStream includes SFrameDecrypterManager;",
           "type": "includes",
           "extAttrs": [],
           "target": "SFrameDecrypterStream",
-          "includes": "SFrameKeyManagement"
+          "includes": "SFrameDecrypterManager"
         }
       ],
       "DedicatedWorkerGlobalScope": [
@@ -1702,7 +1917,8 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "SFrameTransform",
+        "SFrameSenderTransform",
+        "SFrameReceiverTransform",
         "SFrameEncrypterStream",
         "SFrameDecrypterStream",
         "SFrameTransformErrorEvent",
@@ -1716,42 +1932,51 @@
         "SFrameTransformErrorEvent",
         "RTCEncodedVideoFrame",
         "RTCEncodedAudioFrame",
-        "RTCTransformEvent",
         "RTCRtpScriptTransformer",
+        "RTCTransformEvent",
         "KeyFrameRequestEvent"
       ]
     },
     "dependencies": {
       "RTCRtpSender": [
-        "RTCRtpTransform"
+        "RTCRtpSenderTransform"
       ],
       "RTCRtpReceiver": [
-        "RTCRtpTransform"
+        "RTCRtpReceiverTransform"
       ],
       "SFrameTransformOptions": [
         "SFrameCipherSuite"
       ],
-      "SFrameKeyManagement": [
+      "SFrameEncrypterManager": [
         "CryptoKey",
         "CryptoKeyID",
         "EventHandler"
       ],
-      "SFrameTransform": [
+      "SFrameDecrypterManager": [
+        "CryptoKey",
+        "CryptoKeyID",
+        "EventHandler"
+      ],
+      "SFrameSenderTransform": [
+        "SFrameTransformOptions",
+        "SFrameEncrypterManager"
+      ],
+      "SFrameReceiverTransform": [
         "EventTarget",
         "SFrameTransformOptions",
-        "SFrameKeyManagement"
+        "SFrameDecrypterManager"
       ],
       "SFrameEncrypterStream": [
         "EventTarget",
         "SFrameTransformOptions",
         "GenericTransformStream",
-        "SFrameKeyManagement"
+        "SFrameEncrypterManager"
       ],
       "SFrameDecrypterStream": [
         "EventTarget",
         "SFrameTransformOptions",
         "GenericTransformStream",
-        "SFrameKeyManagement"
+        "SFrameDecrypterManager"
       ],
       "SFrameTransformErrorEvent": [
         "Event",
@@ -1792,12 +2017,8 @@
         "ArrayBuffer",
         "RTCEncodedAudioFrameMetadata"
       ],
-      "RTCTransformEvent": [
-        "Event",
-        "RTCRtpScriptTransformer"
-      ],
-      "DedicatedWorkerGlobalScope": [
-        "EventHandler"
+      "RTCRtpScriptTransform": [
+        "Worker"
       ],
       "RTCRtpScriptTransformer": [
         "EventTarget",
@@ -1805,8 +2026,12 @@
         "WritableStream",
         "EventHandler"
       ],
-      "RTCRtpScriptTransform": [
-        "Worker"
+      "RTCTransformEvent": [
+        "Event",
+        "RTCRtpScriptTransformer"
+      ],
+      "DedicatedWorkerGlobalScope": [
+        "EventHandler"
       ],
       "KeyFrameRequestEvent": [
         "Event"
@@ -1823,10 +2048,10 @@
       "DOMHighResTimeStamp",
       "EncodedVideoChunkType",
       "ArrayBuffer",
-      "DedicatedWorkerGlobalScope",
+      "Worker",
       "ReadableStream",
       "WritableStream",
-      "Worker"
+      "DedicatedWorkerGlobalScope"
     ],
     "hasObsoleteIdl": false
   }

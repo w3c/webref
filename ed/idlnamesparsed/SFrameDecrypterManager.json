@@ -1,0 +1,15 @@
+{
+  "name": "SFrameDecrypterManager",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "WebRTC Encoded Transform",
+      "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+    },
+    "fragment": "interface mixin SFrameDecrypterManager {\n    Promise<undefined> addDecryptionKey(CryptoKey key, CryptoKeyID keyId);\n    Promise<undefined> removeDecryptionKey(CryptoKeyID keyId);\n    attribute EventHandler onerror;\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#sframedecryptermanager"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

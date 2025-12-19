@@ -1,0 +1,39 @@
+{
+  "name": "SFrameSenderTransform",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC Encoded Transform",
+      "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+    },
+    "fragment": "[Exposed=Window]\ninterface SFrameSenderTransform {\n    constructor(optional SFrameTransformOptions options = {});\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#sframesendertransform"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebRTC Encoded Transform",
+        "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+      },
+      "fragment": "SFrameSenderTransform includes SFrameEncrypterManager;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "SFrameEncrypterManager",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebRTC Encoded Transform",
+          "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+        },
+        "fragment": "interface mixin SFrameEncrypterManager {\n    Promise<undefined> setEncryptionKey(CryptoKey key, CryptoKeyID keyId);\n    attribute EventHandler onerror;\n};",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframeencryptermanager"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}
