@@ -5,6 +5,50 @@
   },
   "properties": [
     {
+      "name": "display",
+      "newValues": "ruby | ruby-base | ruby-text | ruby-base-container | ruby-text-container",
+      "values": [
+        {
+          "name": "ruby",
+          "prose": "Specifies that an element generates a ruby container box. (Corresponds to HTML/XHTML <ruby> elements.)",
+          "href": "https://drafts.csswg.org/css-ruby-1/#valdef-display-ruby",
+          "type": "value",
+          "value": "ruby"
+        },
+        {
+          "name": "ruby-base",
+          "prose": "Specifies that an element generates a ruby base box. (Corresponds to HTML/XHTML <rb> elements.)",
+          "href": "https://drafts.csswg.org/css-ruby-1/#valdef-display-ruby-base",
+          "type": "value",
+          "value": "ruby-base"
+        },
+        {
+          "name": "ruby-text",
+          "prose": "Specifies that an element generates a ruby annotation box. (Corresponds to HTML/XHTML <rt> elements.)",
+          "href": "https://drafts.csswg.org/css-ruby-1/#valdef-display-ruby-text",
+          "type": "value",
+          "value": "ruby-text"
+        },
+        {
+          "name": "ruby-base-container",
+          "prose": "Specifies that an element generates a ruby base container box. (Corresponds to XHTML <rbc> elements; generated as an anonymous box in HTML.)",
+          "href": "https://drafts.csswg.org/css-ruby-1/#valdef-display-ruby-base-container",
+          "type": "value",
+          "value": "ruby-base-container"
+        },
+        {
+          "name": "ruby-text-container",
+          "prose": "Specifies that an element generates a ruby annotation container box. (Corresponds to HTML/XHTML <rtc> elements.)",
+          "href": "https://drafts.csswg.org/css-ruby-1/#valdef-display-ruby-text-container",
+          "type": "value",
+          "value": "ruby-text-container"
+        }
+      ],
+      "styleDeclaration": [
+        "display"
+      ]
+    },
+    {
       "name": "ruby-position",
       "href": "https://drafts.csswg.org/css-ruby-1/#propdef-ruby-position",
       "value": "[ alternate || [ over | under ] ] | inter-character",
@@ -170,52 +214,5 @@
   ],
   "atrules": [],
   "selectors": [],
-  "values": [],
-  "warnings": [
-    {
-      "msg": "Dangling value",
-      "name": "ruby",
-      "prose": "Specifies that an element generates a ruby container box. (Corresponds to HTML/XHTML <ruby> elements.)",
-      "href": "https://drafts.csswg.org/css-ruby-1/#valdef-display-ruby",
-      "type": "value",
-      "value": "ruby",
-      "for": "display"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "ruby-base",
-      "prose": "Specifies that an element generates a ruby base box. (Corresponds to HTML/XHTML <rb> elements.)",
-      "href": "https://drafts.csswg.org/css-ruby-1/#valdef-display-ruby-base",
-      "type": "value",
-      "value": "ruby-base",
-      "for": "display"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "ruby-text",
-      "prose": "Specifies that an element generates a ruby annotation box. (Corresponds to HTML/XHTML <rt> elements.)",
-      "href": "https://drafts.csswg.org/css-ruby-1/#valdef-display-ruby-text",
-      "type": "value",
-      "value": "ruby-text",
-      "for": "display"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "ruby-base-container",
-      "prose": "Specifies that an element generates a ruby base container box. (Corresponds to XHTML <rbc> elements; generated as an anonymous box in HTML.)",
-      "href": "https://drafts.csswg.org/css-ruby-1/#valdef-display-ruby-base-container",
-      "type": "value",
-      "value": "ruby-base-container",
-      "for": "display"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "ruby-text-container",
-      "prose": "Specifies that an element generates a ruby annotation container box. (Corresponds to HTML/XHTML <rtc> elements.)",
-      "href": "https://drafts.csswg.org/css-ruby-1/#valdef-display-ruby-text-container",
-      "type": "value",
-      "value": "ruby-text-container",
-      "for": "display"
-    }
-  ]
+  "values": []
 }

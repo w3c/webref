@@ -7457,9 +7457,10 @@
       "styleDeclaration": [
         "display"
       ],
-      "syntax": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy> | grid-lanes | inline-grid-lanes | <display-outside> || [ <display-inside> | math ]",
+      "syntax": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy> | grid-lanes | inline-grid-lanes | ruby | ruby-base | ruby-text | ruby-base-container | ruby-text-container | <display-outside> || [ <display-inside> | math ]",
       "extended": [
         "https://drafts.csswg.org/css-grid-3/",
+        "https://drafts.csswg.org/css-ruby-1/",
         "https://w3c.github.io/mathml-core/"
       ]
     },
@@ -11992,7 +11993,7 @@
     {
       "name": "position-anchor",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-anchor",
-      "initial": "auto",
+      "initial": "none",
       "appliesTo": "absolutely positioned boxes",
       "inherited": "no",
       "percentages": "n/a",
@@ -12003,7 +12004,7 @@
         "position-anchor",
         "positionAnchor"
       ],
-      "syntax": "auto | <anchor-name>",
+      "syntax": "none | auto | <anchor-name>",
       "extended": []
     },
     {
@@ -15206,6 +15207,23 @@
         "translate"
       ],
       "syntax": "none | <length-percentage> [ <length-percentage> <length>? ]?",
+      "extended": []
+    },
+    {
+      "name": "trigger-scope",
+      "href": "https://drafts.csswg.org/css-animations-2/#propdef-trigger-scope",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "trigger-scope",
+        "triggerScope"
+      ],
+      "syntax": "none | all | <dashed-ident>#",
       "extended": []
     },
     {
