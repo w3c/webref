@@ -7325,6 +7325,7 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "see individual properties",
+      "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "cue"
@@ -7341,6 +7342,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "cue-after",
         "cueAfter"
@@ -7357,6 +7359,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "cue-before",
         "cueBefore"
@@ -11781,6 +11784,7 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "see individual properties",
+      "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "pause"
@@ -11797,6 +11801,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "pause-after",
         "pauseAfter"
@@ -11813,6 +11818,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "pause-before",
         "pauseBefore"
@@ -12216,6 +12222,7 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "see individual properties",
+      "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "rest"
@@ -12232,6 +12239,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "rest-after",
         "restAfter"
@@ -12248,6 +12256,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "rest-before",
         "restBefore"
@@ -13654,6 +13663,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "styleDeclaration": [
         "speak"
       ],
@@ -13669,6 +13679,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "styleDeclaration": [
         "speak-as",
         "speakAs"
@@ -15439,6 +15450,7 @@
       "percentages": "N/A",
       "computedValue": "the specified value resolved to a <number> between -100 and 100 (inclusive)",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "voice-balance",
         "voiceBalance"
@@ -15455,6 +15467,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "voice-duration",
         "voiceDuration"
@@ -15471,11 +15484,12 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "styleDeclaration": [
         "voice-family",
         "voiceFamily"
       ],
-      "syntax": "[[<family-name> | <generic-voice>],]* [<family-name> | <generic-voice>] | preserve",
+      "syntax": "[ <voice-family-name> | <generic-voice> ]# | preserve",
       "extended": []
     },
     {
@@ -15487,11 +15501,12 @@
       "percentages": "refer to inherited value",
       "computedValue": "one of the predefined pitch keywords if only the keyword is specified by itself, otherwise an absolute frequency calculated by converting the keyword value (if any) to a fixed frequency based on the current voice-family and by applying the specified relative offset (if any)",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "voice-pitch",
         "voicePitch"
       ],
-      "syntax": "<frequency [0Hz,∞]> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
+      "syntax": "<frequency [0Hz,∞]> && absolute | [ [ x-low | low | medium | high | x-high ] || [ <frequency [0Hz,∞]> | <semitones> | <percentage> ] ]",
       "extended": []
     },
     {
@@ -15503,11 +15518,12 @@
       "percentages": "refer to inherited value",
       "computedValue": "one of the predefined pitch keywords if only the keyword is specified by itself, otherwise an absolute frequency calculated by converting the keyword value (if any) to a fixed frequency based on the current voice-family and by applying the specified relative offset (if any)",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "voice-range",
         "voiceRange"
       ],
-      "syntax": "<frequency [0Hz,∞]> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
+      "syntax": "<frequency [0Hz,∞]> && absolute | [ [ x-low | low | medium | high | x-high ] || [ <frequency [0Hz,∞]> | <semitones> | <percentage> ] ]",
       "extended": []
     },
     {
@@ -15519,11 +15535,12 @@
       "percentages": "refer to default value",
       "computedValue": "a keyword value, and optionally also a percentage relative to the keyword (if not 100%)",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "voice-rate",
         "voiceRate"
       ],
-      "syntax": "[normal | x-slow | slow | medium | fast | x-fast] || <percentage [0,∞]>",
+      "syntax": "[ normal | x-slow | slow | medium | fast | x-fast ] || <percentage [0,∞]>",
       "extended": []
     },
     {
@@ -15535,6 +15552,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "styleDeclaration": [
         "voice-stress",
         "voiceStress"
@@ -15551,11 +15569,12 @@
       "percentages": "N/A",
       "computedValue": "silent, or a keyword value and optionally also a decibel offset (if not zero)",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "voice-volume",
         "voiceVolume"
       ],
-      "syntax": "silent | [[x-soft | soft | medium | loud | x-loud] || <decibel>]",
+      "syntax": "silent | [ [ x-soft | soft | medium | loud | x-loud ] || <decibel> ]",
       "extended": []
     },
     {
@@ -18209,7 +18228,7 @@
     {
       "name": "generic-voice",
       "href": "https://drafts.csswg.org/css-speech-1/#typedef-generic-voice",
-      "syntax": "[<age>? <gender> <integer>?]",
+      "syntax": "<age>? <gender> <integer>?",
       "extended": []
     },
     {
@@ -20115,6 +20134,15 @@
       "name": "visual-box",
       "href": "https://drafts.csswg.org/css-box-4/#typedef-visual-box",
       "syntax": "content-box | padding-box | border-box",
+      "extended": []
+    },
+    {
+      "for": [
+        "voice-family"
+      ],
+      "name": "voice-family-name",
+      "prose": "Values are specific voice instances (e.g., Mike, comedian, mary, carlos2, \"valley girl\"). Like font-family names, voice names must either be given quoted as strings, or unquoted as a sequence of one or more CSS identifiers. If a sequence of identifiers is given as a voice name, the computed value is the name converted to a string by joining all the identifiers in the sequence by single spaces. Voice names that happen to be the same as the gender keywords (male, female and neutral) or that happen to match the CSS-wide keywords or preserve must be quoted to disambiguate with these keywords. The keyword default is reserved for future use and must also be quoted when used as voice names. It is recommended to quote voice names that contain white space, digits, or punctuation characters other than hyphens—​even if these voice names are valid in unquoted form—​in order to improve code clarity. For example: voice-family: \"john doe\", \"Henry the-8th\";",
+      "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-voice-family-name",
       "extended": []
     },
     {

@@ -7,13 +7,14 @@
     {
       "name": "voice-volume",
       "href": "https://drafts.csswg.org/css-speech-1/#propdef-voice-volume",
-      "value": "silent | [[x-soft | soft | medium | loud | x-loud] || <decibel>]",
+      "value": "silent | [ [ x-soft | soft | medium | loud | x-loud ] || <decibel> ]",
       "initial": "medium",
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "silent, or a keyword value and optionally also a decibel offset (if not zero)",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "values": [
         {
           "name": "silent",
@@ -86,6 +87,7 @@
       "percentages": "N/A",
       "computedValue": "the specified value resolved to a <number> between -100 and 100 (inclusive)",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "values": [
         {
           "name": "<number>",
@@ -145,6 +147,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "values": [
         {
           "name": "auto",
@@ -182,6 +185,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "values": [
         {
           "name": "normal",
@@ -234,6 +238,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "values": [
         {
           "name": "<time [0s,∞]>",
@@ -300,6 +305,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "values": [
         {
           "name": "<time [0s,∞]>",
@@ -365,6 +371,7 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "see individual properties",
+      "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "pause"
@@ -380,6 +387,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "values": [
         {
           "name": "<time [0s,∞]>",
@@ -446,6 +454,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "values": [
         {
           "name": "<time [0s,∞]>",
@@ -511,6 +520,7 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "see individual properties",
+      "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "rest"
@@ -526,6 +536,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "values": [
         {
           "name": "<uri>",
@@ -550,6 +561,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "values": [
         {
           "name": "<uri>",
@@ -573,6 +585,7 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "see individual properties",
+      "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "cue"
@@ -581,20 +594,20 @@
     {
       "name": "voice-family",
       "href": "https://drafts.csswg.org/css-speech-1/#propdef-voice-family",
-      "value": "[[<family-name> | <generic-voice>],]* [<family-name> | <generic-voice>] | preserve",
+      "value": "[ <voice-family-name> | <generic-voice> ]# | preserve",
       "initial": "implementation-dependent",
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "values": [
         {
-          "name": "<family-name>",
+          "name": "<voice-family-name>",
           "prose": "Values are specific voice instances (e.g., Mike, comedian, mary, carlos2, \"valley girl\"). Like font-family names, voice names must either be given quoted as strings, or unquoted as a sequence of one or more CSS identifiers. If a sequence of identifiers is given as a voice name, the computed value is the name converted to a string by joining all the identifiers in the sequence by single spaces. Voice names that happen to be the same as the gender keywords (male, female and neutral) or that happen to match the CSS-wide keywords or preserve must be quoted to disambiguate with these keywords. The keyword default is reserved for future use and must also be quoted when used as voice names. It is recommended to quote voice names that contain white space, digits, or punctuation characters other than hyphens—​even if these voice names are valid in unquoted form—​in order to improve code clarity. For example: voice-family: \"john doe\", \"Henry the-8th\";",
-          "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-family-family-name",
-          "type": "value",
-          "value": "<family-name>"
+          "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-voice-family-name",
+          "type": "type"
         },
         {
           "name": "<age>",
@@ -667,13 +680,14 @@
     {
       "name": "voice-rate",
       "href": "https://drafts.csswg.org/css-speech-1/#propdef-voice-rate",
-      "value": "[normal | x-slow | slow | medium | fast | x-fast] || <percentage [0,∞]>",
+      "value": "[ normal | x-slow | slow | medium | fast | x-fast ] || <percentage [0,∞]>",
       "initial": "normal",
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "refer to default value",
       "computedValue": "a keyword value, and optionally also a percentage relative to the keyword (if not 100%)",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "values": [
         {
           "name": "normal",
@@ -733,20 +747,21 @@
     {
       "name": "voice-pitch",
       "href": "https://drafts.csswg.org/css-speech-1/#propdef-voice-pitch",
-      "value": "<frequency [0Hz,∞]> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
+      "value": "<frequency [0Hz,∞]> && absolute | [ [ x-low | low | medium | high | x-high ] || [ <frequency [0Hz,∞]> | <semitones> | <percentage> ] ]",
       "initial": "medium",
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "refer to inherited value",
       "computedValue": "one of the predefined pitch keywords if only the keyword is specified by itself, otherwise an absolute frequency calculated by converting the keyword value (if any) to a fixed frequency based on the current voice-family and by applying the specified relative offset (if any)",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "values": [
         {
-          "name": "<frequency>",
+          "name": "<frequency [0Hz,∞]>",
           "prose": "A value in frequency units (Hertz or kiloHertz, e.g. 100Hz, +2kHz). Values are restricted to positive numbers when the absolute keyword is specified. Otherwise (when the absolute keyword is not specified), a negative value represents a decrement, and a positive value represents an increment, relative to the inherited value. For example, 2kHz is a positive offset (strictly equivalent to +2kHz), and +2kHz absolute is an absolute frequency (strictly equivalent to 2kHz absolute).",
-          "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-pitch-frequency",
+          "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-pitch-frequency-0hz",
           "type": "value",
-          "value": "<frequency>"
+          "value": "<frequency [0Hz,∞]>"
         },
         {
           "name": "absolute",
@@ -818,14 +833,22 @@
     {
       "name": "voice-range",
       "href": "https://drafts.csswg.org/css-speech-1/#propdef-voice-range",
-      "value": "<frequency [0Hz,∞]> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
+      "value": "<frequency [0Hz,∞]> && absolute | [ [ x-low | low | medium | high | x-high ] || [ <frequency [0Hz,∞]> | <semitones> | <percentage> ] ]",
       "initial": "medium",
       "appliesTo": "all elements",
       "inherited": "yes",
       "percentages": "refer to inherited value",
       "computedValue": "one of the predefined pitch keywords if only the keyword is specified by itself, otherwise an absolute frequency calculated by converting the keyword value (if any) to a fixed frequency based on the current voice-family and by applying the specified relative offset (if any)",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "values": [
+        {
+          "name": "<frequency [0Hz,∞]>",
+          "prose": "A value in frequency units (Hertz or kiloHertz, e.g. 100Hz, +2kHz). Values are restricted to positive numbers when the absolute keyword is specified. Otherwise (when the absolute keyword is not specified), a negative value represents a decrement, and a positive value represents an increment, relative to the inherited value. For example, 2kHz is a positive offset (strictly equivalent to +2kHz), and +2kHz absolute is an absolute frequency (strictly equivalent to 2kHz absolute).",
+          "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-range-frequency-0hz",
+          "type": "value",
+          "value": "<frequency [0Hz,∞]>"
+        },
         {
           "name": "absolute",
           "prose": "If specified, this keyword indicates that the specified frequency represents an absolute value. If a negative frequency is specified, the computed frequency will be zero.",
@@ -898,6 +921,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "values": [
         {
           "name": "normal",
@@ -950,6 +974,7 @@
       "percentages": "N/A",
       "computedValue": "specified value",
       "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
       "values": [
         {
           "name": "auto",
@@ -977,7 +1002,7 @@
   "values": [
     {
       "name": "<generic-voice>",
-      "value": "[<age>? <gender> <integer>?]",
+      "value": "<age>? <gender> <integer>?",
       "href": "https://drafts.csswg.org/css-speech-1/#typedef-generic-voice",
       "type": "type"
     }

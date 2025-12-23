@@ -65,6 +65,28 @@
       "links": []
     },
     {
+      "id": "anchor-box",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-box",
+      "linkingText": [
+        "anchor box"
+      ],
+      "localLinkingText": [
+        "anchor"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "determining",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#determining",
+        "title": "Determining the Anchor",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "propdef-anchor-name",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-anchor-name",
       "linkingText": [
@@ -166,48 +188,6 @@
         "number": "2.1"
       },
       "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "implicit-anchor-element",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#implicit-anchor-element",
-      "linkingText": [
-        "implicit anchor element"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "implicit",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#implicit",
-        "title": "Implicit Anchor Elements",
-        "number": "2.1.1"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "anchor-box",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-box",
-      "linkingText": [
-        "anchor box"
-      ],
-      "localLinkingText": [
-        "anchor"
-      ],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "anchor-position-size",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#anchor-position-size",
-        "title": "The Anchor Box",
-        "number": "2.1.2"
-      },
-      "definedIn": "prose",
       "links": []
     },
     {
@@ -456,6 +436,26 @@
         "href": "https://drafts.csswg.org/css-anchor-position-1/#position-anchor",
         "title": "Default Anchors: the position-anchor property",
         "number": "2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "implicit-anchor-element",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#implicit-anchor-element",
+      "linkingText": [
+        "implicit anchor element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "implicit",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#implicit",
+        "title": "Implicit Anchor Elements",
+        "number": "2.4.1"
       },
       "definedIn": "prose",
       "links": []
@@ -2968,10 +2968,10 @@
       "links": []
     },
     {
-      "id": "apply-a-position-option",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#apply-a-position-option",
+      "id": "fallback-sensitive-changes",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-sensitive-changes",
       "linkingText": [
-        "apply a position option"
+        "fallback-sensitive changes"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2979,19 +2979,19 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "fallback-apply",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-apply",
-        "title": "Applying Position Fallback",
-        "number": "6.5"
+        "id": "statefulness",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#statefulness",
+        "title": "Maintaining and Clearing Fallback Choices",
+        "number": "6.5.1"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "remember-or-forget-the-last-successful-position-option",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#remember-or-forget-the-last-successful-position-option",
+      "id": "record-the-last-successful-position-option",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#record-the-last-successful-position-option",
       "linkingText": [
-        "remember or forget the last successful position option"
+        "record the last successful position option"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2999,10 +2999,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "fallback-apply",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-apply",
-        "title": "Applying Position Fallback",
-        "number": "6.5"
+        "id": "last-successful-recording",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#last-successful-recording",
+        "title": "Recording the last successful position option",
+        "number": "6.5.1.1"
       },
       "definedIn": "prose",
       "links": []
@@ -3019,19 +3019,19 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "fallback-apply",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-apply",
-        "title": "Applying Position Fallback",
-        "number": "6.5"
+        "id": "last-successful-recording",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#last-successful-recording",
+        "title": "Recording the last successful position option",
+        "number": "6.5.1.1"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "apply-a-try-tactic",
-      "href": "https://drafts.csswg.org/css-anchor-position-1/#apply-a-try-tactic",
+      "id": "apply-a-position-option",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#apply-a-position-option",
       "linkingText": [
-        "apply a try-tactic"
+        "apply a position option"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3039,10 +3039,30 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "fallback-apply",
-        "href": "https://drafts.csswg.org/css-anchor-position-1/#fallback-apply",
-        "title": "Applying Position Fallback",
-        "number": "6.5"
+        "id": "applying-options",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#applying-options",
+        "title": "Applying Position Options",
+        "number": "6.5.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "execute-a-try-tactic",
+      "href": "https://drafts.csswg.org/css-anchor-position-1/#execute-a-try-tactic",
+      "linkingText": [
+        "execute a try-tactic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "applying-options",
+        "href": "https://drafts.csswg.org/css-anchor-position-1/#applying-options",
+        "title": "Applying Position Options",
+        "number": "6.5.2"
       },
       "definedIn": "prose",
       "links": []
