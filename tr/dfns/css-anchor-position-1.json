@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "CSS Anchor Positioning",
+    "title": "CSS Anchor Positioning Module Level 1",
     "url": "https://www.w3.org/TR/css-anchor-position-1/"
   },
   "dfns": [
@@ -60,6 +60,28 @@
         "href": "https://www.w3.org/TR/css-anchor-position-1/#intro",
         "title": "Introduction",
         "number": "1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "anchor-box",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#anchor-box",
+      "linkingText": [
+        "anchor box"
+      ],
+      "localLinkingText": [
+        "anchor"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "determining",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#determining",
+        "title": "Determining the Anchor",
+        "number": "2"
       },
       "definedIn": "prose",
       "links": []
@@ -166,48 +188,6 @@
         "number": "2.1"
       },
       "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "implicit-anchor-element",
-      "href": "https://www.w3.org/TR/css-anchor-position-1/#implicit-anchor-element",
-      "linkingText": [
-        "implicit anchor element"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "implicit",
-        "href": "https://www.w3.org/TR/css-anchor-position-1/#implicit",
-        "title": "Implicit Anchor Elements",
-        "number": "2.1.1"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "anchor-box",
-      "href": "https://www.w3.org/TR/css-anchor-position-1/#anchor-box",
-      "linkingText": [
-        "anchor box"
-      ],
-      "localLinkingText": [
-        "anchor"
-      ],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "anchor-position-size",
-        "href": "https://www.w3.org/TR/css-anchor-position-1/#anchor-position-size",
-        "title": "The Anchor Box",
-        "number": "2.1.2"
-      },
-      "definedIn": "prose",
       "links": []
     },
     {
@@ -375,6 +355,28 @@
       "links": []
     },
     {
+      "id": "valdef-position-anchor-none",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-anchor-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position-anchor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-anchor",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#position-anchor",
+        "title": "Default Anchors: the position-anchor property",
+        "number": "2.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "valdef-position-anchor-auto",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-anchor-auto",
       "linkingText": [
@@ -434,6 +436,26 @@
         "href": "https://www.w3.org/TR/css-anchor-position-1/#position-anchor",
         "title": "Default Anchors: the position-anchor property",
         "number": "2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "implicit-anchor-element",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#implicit-anchor-element",
+      "linkingText": [
+        "implicit anchor element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "implicit",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#implicit",
+        "title": "Implicit Anchor Elements",
+        "number": "2.4.1"
       },
       "definedIn": "prose",
       "links": []
@@ -2096,6 +2118,86 @@
       "links": []
     },
     {
+      "id": "propdef-justify-self",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-justify-self",
+      "linkingText": [
+        "justify-self"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "anchor-center",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#anchor-center",
+        "title": "Centering on the Anchor: the anchor-center alignment value",
+        "number": "4.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "propdef-align-self",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-align-self",
+      "linkingText": [
+        "align-self"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "anchor-center",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#anchor-center",
+        "title": "Centering on the Anchor: the anchor-center alignment value",
+        "number": "4.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "propdef-justify-items",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-justify-items",
+      "linkingText": [
+        "justify-items"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "anchor-center",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#anchor-center",
+        "title": "Centering on the Anchor: the anchor-center alignment value",
+        "number": "4.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "propdef-align-items",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-align-items",
+      "linkingText": [
+        "align-items"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "anchor-center",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#anchor-center",
+        "title": "Centering on the Anchor: the anchor-center alignment value",
+        "number": "4.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
       "id": "valdef-justify-self-anchor-center",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-justify-self-anchor-center",
       "linkingText": [
@@ -2116,31 +2218,6 @@
         "href": "https://www.w3.org/TR/css-anchor-position-1/#anchor-center",
         "title": "Centering on the Anchor: the anchor-center alignment value",
         "number": "4.2"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "valdef-justify-self-dialog",
-      "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-justify-self-dialog",
-      "linkingText": [
-        "dialog"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "justify-self",
-        "align-self",
-        "justify-items",
-        "align-items"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "conditional-centering",
-        "href": "https://www.w3.org/TR/css-anchor-position-1/#conditional-centering",
-        "title": "Conditional Centering: the dialog alignment value",
-        "number": "4.3"
       },
       "definedIn": "prose",
       "links": []
@@ -2379,6 +2456,28 @@
       "links": []
     },
     {
+      "id": "fallback-base-styles",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#fallback-base-styles",
+      "linkingText": [
+        "fallback base styles"
+      ],
+      "localLinkingText": [
+        "base style"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-try-fallbacks",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#position-try-fallbacks",
+        "title": "Giving Fallback Options: the position-try-fallbacks property",
+        "number": "6.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "valdef-position-try-fallbacks-none",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-try-fallbacks-none",
       "linkingText": [
@@ -2489,6 +2588,50 @@
       "links": []
     },
     {
+      "id": "valdef-position-try-fallbacks-flip-x",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-try-fallbacks-flip-x",
+      "linkingText": [
+        "flip-x"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position-try-fallbacks"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-try-fallbacks",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#position-try-fallbacks",
+        "title": "Giving Fallback Options: the position-try-fallbacks property",
+        "number": "6.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-position-try-fallbacks-flip-y",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-try-fallbacks-flip-y",
+      "linkingText": [
+        "flip-y"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "position-try-fallbacks"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-try-fallbacks",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#position-try-fallbacks",
+        "title": "Giving Fallback Options: the position-try-fallbacks property",
+        "number": "6.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "valdef-position-try-fallbacks-flip-start",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-try-fallbacks-flip-start",
       "linkingText": [
@@ -2552,26 +2695,6 @@
         "number": "6.1"
       },
       "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "swap-due-to-a-try-tactic",
-      "href": "https://www.w3.org/TR/css-anchor-position-1/#swap-due-to-a-try-tactic",
-      "linkingText": [
-        "swap due to a try-tactic"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "position-try-fallbacks",
-        "href": "https://www.w3.org/TR/css-anchor-position-1/#position-try-fallbacks",
-        "title": "Giving Fallback Options: the position-try-fallbacks property",
-        "number": "6.1"
-      },
-      "definedIn": "prose",
       "links": []
     },
     {
@@ -2825,26 +2948,6 @@
       "links": []
     },
     {
-      "id": "apply-a-position-option",
-      "href": "https://www.w3.org/TR/css-anchor-position-1/#apply-a-position-option",
-      "linkingText": [
-        "apply a position option"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "fallback-apply",
-        "href": "https://www.w3.org/TR/css-anchor-position-1/#fallback-apply",
-        "title": "Applying Position Fallback",
-        "number": "6.5"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
       "id": "determine-position-fallback-styles",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#determine-position-fallback-styles",
       "linkingText": [
@@ -2865,6 +2968,46 @@
       "links": []
     },
     {
+      "id": "fallback-sensitive-changes",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#fallback-sensitive-changes",
+      "linkingText": [
+        "fallback-sensitive changes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "statefulness",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#statefulness",
+        "title": "Maintaining and Clearing Fallback Choices",
+        "number": "6.5.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "record-the-last-successful-position-option",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#record-the-last-successful-position-option",
+      "linkingText": [
+        "record the last successful position option"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "statefulness",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#statefulness",
+        "title": "Maintaining and Clearing Fallback Choices",
+        "number": "6.5.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "last-successful-position-option",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#last-successful-position-option",
       "linkingText": [
@@ -2876,10 +3019,50 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "fallback-apply",
-        "href": "https://www.w3.org/TR/css-anchor-position-1/#fallback-apply",
-        "title": "Applying Position Fallback",
-        "number": "6.5"
+        "id": "statefulness",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#statefulness",
+        "title": "Maintaining and Clearing Fallback Choices",
+        "number": "6.5.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "apply-a-position-option",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#apply-a-position-option",
+      "linkingText": [
+        "apply a position option"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "applying-options",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#applying-options",
+        "title": "Applying Position Options",
+        "number": "6.5.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "execute-a-try-tactic",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#execute-a-try-tactic",
+      "linkingText": [
+        "execute a try-tactic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "applying-options",
+        "href": "https://www.w3.org/TR/css-anchor-position-1/#applying-options",
+        "title": "Applying Position Options",
+        "number": "6.5.2"
       },
       "definedIn": "prose",
       "links": []

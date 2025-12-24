@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "CSS Anchor Positioning",
+    "title": "CSS Anchor Positioning Module Level 1",
     "url": "https://www.w3.org/TR/css-anchor-position-1/"
   },
   "properties": [
@@ -78,8 +78,8 @@
     {
       "name": "position-anchor",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-position-anchor",
-      "value": "auto | <anchor-name>",
-      "initial": "auto",
+      "value": "none | auto | <anchor-name>",
+      "initial": "none",
       "appliesTo": "absolutely positioned boxes",
       "inherited": "no",
       "percentages": "n/a",
@@ -87,6 +87,13 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "values": [
+        {
+          "name": "none",
+          "prose": "The box has no default anchor element.",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-anchor-none",
+          "type": "value",
+          "value": "none"
+        },
         {
           "name": "auto",
           "prose": "Use the implicit anchor element if it exists; otherwise the box has no default anchor element.",
@@ -169,21 +176,15 @@
     },
     {
       "name": "justify-self",
-      "newValues": "anchor-center | dialog",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-justify-self",
+      "newValues": "anchor-center",
       "values": [
         {
           "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis. Additionally:",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
-        },
-        {
-          "name": "dialog",
-          "prose": "The new dialog value allows this behavior to be specified: if the box is absolutely positioned and its position-area value is not none, it is aligned as per normal (see § 4.1 Area-specific Default Alignment); otherwise, it is aligned as per center.",
-          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-justify-self-dialog",
-          "type": "value",
-          "value": "dialog"
         }
       ],
       "styleDeclaration": [
@@ -193,21 +194,15 @@
     },
     {
       "name": "align-self",
-      "newValues": "anchor-center | dialog",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-align-self",
+      "newValues": "anchor-center",
       "values": [
         {
           "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis. Additionally:",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
-        },
-        {
-          "name": "dialog",
-          "prose": "The new dialog value allows this behavior to be specified: if the box is absolutely positioned and its position-area value is not none, it is aligned as per normal (see § 4.1 Area-specific Default Alignment); otherwise, it is aligned as per center.",
-          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-justify-self-dialog",
-          "type": "value",
-          "value": "dialog"
         }
       ],
       "styleDeclaration": [
@@ -217,21 +212,15 @@
     },
     {
       "name": "justify-items",
-      "newValues": "anchor-center | dialog",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-justify-items",
+      "newValues": "anchor-center",
       "values": [
         {
           "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis. Additionally:",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
-        },
-        {
-          "name": "dialog",
-          "prose": "The new dialog value allows this behavior to be specified: if the box is absolutely positioned and its position-area value is not none, it is aligned as per normal (see § 4.1 Area-specific Default Alignment); otherwise, it is aligned as per center.",
-          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-justify-self-dialog",
-          "type": "value",
-          "value": "dialog"
         }
       ],
       "styleDeclaration": [
@@ -241,21 +230,15 @@
     },
     {
       "name": "align-items",
-      "newValues": "anchor-center | dialog",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-align-items",
+      "newValues": "anchor-center",
       "values": [
         {
           "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis.",
+          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis. Additionally:",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-justify-self-anchor-center",
           "type": "value",
           "value": "anchor-center"
-        },
-        {
-          "name": "dialog",
-          "prose": "The new dialog value allows this behavior to be specified: if the box is absolutely positioned and its position-area value is not none, it is aligned as per normal (see § 4.1 Area-specific Default Alignment); otherwise, it is aligned as per center.",
-          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-justify-self-dialog",
-          "type": "value",
-          "value": "dialog"
         }
       ],
       "styleDeclaration": [
@@ -369,7 +352,7 @@
         },
         {
           "name": "<try-tactic>",
-          "value": "flip-block || flip-inline || flip-start",
+          "value": "flip-block || flip-inline || flip-start || flip-x || flip-y",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-try-fallbacks-try-tactic",
           "type": "value"
         },
@@ -377,7 +360,7 @@
           "name": "<try-tactic>",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#typedef-position-try-fallbacks-try-tactic",
           "type": "type",
-          "value": "flip-block || flip-inline || flip-start"
+          "value": "flip-block || flip-inline || flip-start || flip-x || flip-y"
         },
         {
           "name": "flip-block",
@@ -392,6 +375,20 @@
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-try-fallbacks-flip-inline",
           "type": "value",
           "value": "flip-inline"
+        },
+        {
+          "name": "flip-x",
+          "prose": "swaps the values in the horizontal axis (between, for example, margin-left and margin-right), essentially mirroring across a vertical-axis line.",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-try-fallbacks-flip-x",
+          "type": "value",
+          "value": "flip-x"
+        },
+        {
+          "name": "flip-y",
+          "prose": "swaps the values in the vertical axis, essentially mirroring across a horizontal-axis line.",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-try-fallbacks-flip-y",
+          "type": "value",
+          "value": "flip-y"
         },
         {
           "name": "flip-start",
@@ -441,28 +438,28 @@
         },
         {
           "name": "most-width",
-          "prose": "For each entry in the position options list, apply that position option to the box, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
+          "prose": "For each entry in the position options list, apply that position option to the box, and find the inset-modified containing block size that results from those styles (treating auto inset values as zero). Stably sort the position options list according to this size, with the largest coming first. Logical directions are resolved against the writing mode of the containing block.",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-try-order-most-width",
           "type": "value",
           "value": "most-width"
         },
         {
           "name": "most-height",
-          "prose": "For each entry in the position options list, apply that position option to the box, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
+          "prose": "For each entry in the position options list, apply that position option to the box, and find the inset-modified containing block size that results from those styles (treating auto inset values as zero). Stably sort the position options list according to this size, with the largest coming first. Logical directions are resolved against the writing mode of the containing block.",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-try-order-most-height",
           "type": "value",
           "value": "most-height"
         },
         {
           "name": "most-block-size",
-          "prose": "For each entry in the position options list, apply that position option to the box, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
+          "prose": "For each entry in the position options list, apply that position option to the box, and find the inset-modified containing block size that results from those styles (treating auto inset values as zero). Stably sort the position options list according to this size, with the largest coming first. Logical directions are resolved against the writing mode of the containing block.",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-try-order-most-block-size",
           "type": "value",
           "value": "most-block-size"
         },
         {
           "name": "most-inline-size",
-          "prose": "For each entry in the position options list, apply that position option to the box, and find the specified inset-modified containing block size that results from those styles. Stably sort the position options list according to this size, with the largest coming first.",
+          "prose": "For each entry in the position options list, apply that position option to the box, and find the inset-modified containing block size that results from those styles (treating auto inset values as zero). Stably sort the position options list according to this size, with the largest coming first. Logical directions are resolved against the writing mode of the containing block.",
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-try-order-most-inline-size",
           "type": "value",
           "value": "most-inline-size"
