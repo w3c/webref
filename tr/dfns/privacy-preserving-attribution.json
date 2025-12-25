@@ -1676,6 +1676,26 @@
       "links": []
     },
     {
+      "id": "measure-a-conversion",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-a-conversion",
+      "linkingText": [
+        "measure a conversion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "measure-conversion-api-operation",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-api-operation",
+        "title": "Measure Conversion Algorithm",
+        "number": "4.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "validated-conversion-options",
       "href": "https://www.w3.org/TR/privacy-preserving-attribution/#validated-conversion-options",
       "linkingText": [
@@ -2107,10 +2127,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "http-api",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api",
-        "title": "HTTP API",
-        "number": "5"
+        "id": "http-api-impressions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-impressions",
+        "title": "Saving impressions",
+        "number": "5.1"
       },
       "definedIn": "prose",
       "links": []
@@ -2129,10 +2149,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "http-api",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api",
-        "title": "HTTP API",
-        "number": "5"
+        "id": "http-api-impressions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-impressions",
+        "title": "Saving impressions",
+        "number": "5.1"
       },
       "definedIn": "dt",
       "links": []
@@ -2151,10 +2171,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "http-api",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api",
-        "title": "HTTP API",
-        "number": "5"
+        "id": "http-api-impressions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-impressions",
+        "title": "Saving impressions",
+        "number": "5.1"
       },
       "definedIn": "dt",
       "links": []
@@ -2173,10 +2193,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "http-api",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api",
-        "title": "HTTP API",
-        "number": "5"
+        "id": "http-api-impressions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-impressions",
+        "title": "Saving impressions",
+        "number": "5.1"
       },
       "definedIn": "dt",
       "links": []
@@ -2195,10 +2215,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "http-api",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api",
-        "title": "HTTP API",
-        "number": "5"
+        "id": "http-api-impressions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-impressions",
+        "title": "Saving impressions",
+        "number": "5.1"
       },
       "definedIn": "dt",
       "links": []
@@ -2217,10 +2237,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "http-api",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api",
-        "title": "HTTP API",
-        "number": "5"
+        "id": "http-api-impressions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-impressions",
+        "title": "Saving impressions",
+        "number": "5.1"
       },
       "definedIn": "dt",
       "links": []
@@ -2239,10 +2259,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "http-api",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api",
-        "title": "HTTP API",
-        "number": "5"
+        "id": "http-api-impressions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-impressions",
+        "title": "Saving impressions",
+        "number": "5.1"
       },
       "definedIn": "dt",
       "links": []
@@ -2259,10 +2279,312 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "http-api",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api",
-        "title": "HTTP API",
-        "number": "5"
+        "id": "http-api-impressions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-impressions",
+        "title": "Saving impressions",
+        "number": "5.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "http-headerdef-measure-conversion",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-headerdef-measure-conversion",
+      "linkingText": [
+        "Measure-Conversion"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "http-api-conversions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-conversions",
+        "title": "Measuring Conversions",
+        "number": "5.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "measure-conversion-aggregation-service",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-aggregation-service",
+      "linkingText": [
+        "aggregation-service"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "measure-conversion"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api-conversions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-conversions",
+        "title": "Measuring Conversions",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "measure-conversion-epsilon",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-epsilon",
+      "linkingText": [
+        "epsilon"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "measure-conversion"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api-conversions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-conversions",
+        "title": "Measuring Conversions",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "measure-conversion-histogram-size",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-histogram-size",
+      "linkingText": [
+        "histogram-size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "measure-conversion"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api-conversions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-conversions",
+        "title": "Measuring Conversions",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "measure-conversion-lookback-days",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-lookback-days",
+      "linkingText": [
+        "lookback-days"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "measure-conversion"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api-conversions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-conversions",
+        "title": "Measuring Conversions",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "measure-conversion-match-values",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-match-values",
+      "linkingText": [
+        "match-values"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "measure-conversion"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api-conversions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-conversions",
+        "title": "Measuring Conversions",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "measure-conversion-impression-sites",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-impression-sites",
+      "linkingText": [
+        "impression-sites"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "measure-conversion"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api-conversions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-conversions",
+        "title": "Measuring Conversions",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "measure-conversion-impression-callers",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-impression-callers",
+      "linkingText": [
+        "impression-callers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "measure-conversion"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api-conversions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-conversions",
+        "title": "Measuring Conversions",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "measure-conversion-credit",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-credit",
+      "linkingText": [
+        "credit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "measure-conversion"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api-conversions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-conversions",
+        "title": "Measuring Conversions",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "measure-conversion-value",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "measure-conversion"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api-conversions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-conversions",
+        "title": "Measuring Conversions",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "measure-conversion-max-value",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-max-value",
+      "linkingText": [
+        "max-value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "measure-conversion"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api-conversions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-conversions",
+        "title": "Measuring Conversions",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "measure-conversion-report-url",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#measure-conversion-report-url",
+      "linkingText": [
+        "report-url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "measure-conversion"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api-conversions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-conversions",
+        "title": "Measuring Conversions",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "parse-a-measure-conversion-header",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#parse-a-measure-conversion-header",
+      "linkingText": [
+        "parse a Measure-Conversion header"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api-conversions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-conversions",
+        "title": "Measuring Conversions",
+        "number": "5.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "send-a-report",
+      "href": "https://www.w3.org/TR/privacy-preserving-attribution/#send-a-report",
+      "linkingText": [
+        "send a report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "http-api-conversions",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api-conversions",
+        "title": "Measuring Conversions",
+        "number": "5.2"
       },
       "definedIn": "prose",
       "links": []
@@ -2279,10 +2601,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "http-api",
-        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#http-api",
-        "title": "HTTP API",
-        "number": "5"
+        "id": "fetch-monkey-patches",
+        "href": "https://www.w3.org/TR/privacy-preserving-attribution/#fetch-monkey-patches",
+        "title": "Fetch monkey patches",
+        "number": "5.3"
       },
       "definedIn": "prose",
       "links": []

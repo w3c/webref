@@ -49,16 +49,13 @@
       "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-webrtc/": {},
       "https://storage.googleapis.com/downloads.webmproject.org/docs/vp9/vp9-bitstream-specification-v0.6-20160331-draft.pdf": {},
-      "https://streams.spec.whatwg.org/": {
-        "anchors": [
-          "readable-stream-pipe-to"
-        ]
-      },
+      "https://streams.spec.whatwg.org/": {},
       "https://tc39.es/ecma262/": {
         "anchors": [
           "sec-clonearraybuffer"
         ]
       },
+      "https://tc39.es/ecma262/multipage/": {},
       "https://w3c.github.io/webrtc-svc/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.iana.org/assignments/media-types/": {},
@@ -114,11 +111,6 @@
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
-          "abortcontroller",
-          "abortcontroller-signal",
-          "abortsignal-add",
-          "abortcontroller-signal-abort",
-          "abortsignal-aborted",
           "eventtarget",
           "event",
           "dictdef-eventinit",
@@ -147,20 +139,28 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
-          "queue-a-task",
           "concept-relevant-realm",
           "eventhandler",
-          "task-source"
+          "queue-a-task",
+          "queue-a-global-task",
+          "task-source",
+          "concept-relevant-global"
         ]
       },
       "https://html.spec.whatwg.org/multipage/workers.html": {
         "anchors": [
-          "dedicatedworkerglobalscope",
-          "worker"
+          "worker",
+          "workerglobalscope",
+          "dedicatedworkerglobalscope"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
+          "queue",
+          "queue-enqueue",
+          "map-set",
+          "map-remove",
+          "queue-dequeue",
           "list",
           "list-remove",
           "list-contain",
@@ -169,21 +169,23 @@
       },
       "https://streams.spec.whatwg.org/": {
         "anchors": [
-          "readablestream",
+          "readablestream-enqueue",
+          "generictransformstream",
+          "transformstream",
           "readablestream-set-up",
+          "transformstream-set-up-transformalgorithm",
+          "readablestream-cancel",
+          "writablestream-abort",
+          "readablestream",
           "writablestream",
           "writablestream-set-up",
           "writablestream-set-up-writealgorithm",
-          "writablestream-set-up-highwatermark",
-          "readablestream-enqueue",
-          "identity-transform-stream",
-          "readablestream-get-a-reader",
-          "writablestream-get-a-writer",
-          "readablestreamdefaultreader-release",
-          "writablestreamdefaultwriter-release",
-          "generictransformstream",
-          "transformstream",
-          "transformstream-set-up-transformalgorithm"
+          "writablestream-set-up-highwatermark"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
+        "anchors": [
+          "sec-object-objects"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -215,6 +217,7 @@
           "idl-short",
           "idl-double",
           "idl-object",
+          "new",
           "exceptiondef-typeerror",
           "notfounderror"
         ]
@@ -234,7 +237,8 @@
       "https://www.w3.org/TR/webcodecs/": {
         "anchors": [
           "dom-videoframe-timestamp",
-          "enumdef-encodedvideochunktype"
+          "enumdef-encodedvideochunktype",
+          "dom-encodedvideochunktype-key"
         ]
       },
       "https://www.w3.org/TR/webcrypto-2/": {
@@ -244,7 +248,7 @@
       },
       "https://www.w3.org/TR/webrtc-encoded-transform/": {
         "anchors": [
-          "dom-rtcencodedvideoframetype-key"
+          "dom-sframekeymanagement-onerror"
         ]
       },
       "https://www.w3.org/TR/webrtc/": {
@@ -252,7 +256,6 @@
           "dom-rtcpeerconnection",
           "dom-rtcrtpsender",
           "dom-rtcrtpreceiver",
-          "dom-rtcconfiguration",
           "dom-rtcrtpencodingparameters-active"
         ]
       }
