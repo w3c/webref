@@ -50,11 +50,51 @@ function findCssConstruct(key, currentRoot) {
 }
 
 /**
+ * More generic version for findCssConstruct that looks for the construct
+ * across all given specs.
+ */
+function findCssConstructAcrossSpecs(key, specs) {
+  for (const spec of specs) {
+    if (spec.css) {
+      const construct = findCssConstruct(key, spec.css);
+      if (construct) {
+        return construct;
+      }
+    }
+  }
+  return null;
+}
+
+/**
+ * Go through all CSS properties defined in the specs that are flagged as
+ * legacy aliases of another CSS property and set their syntax to that of
+ * the newer property.
+ */
+function setLegacyPropertySyntaxes(specs) {
+  for (const spec of specs) {
+    if (!spec.css) {
+      continue;
+    }
+    for (const legacyProperty of spec.css.properties) {
+      if (legacyProperty.legacyAliasOf && !legacyProperty.value) {
+        const property = findCssConstructAcrossSpecs(legacyProperty.legacyAliasOf, specs);
+        if (!property || !property.value) {
+          continue;
+        }
+        console.log(`- set syntax of legacy property ${legacyProperty.name} to that of ${property.name}`);
+        legacyProperty.value = property.value;
+        spec.needsSaving = true;
+      }
+    }
+  }
+}
+
+/**
  * Apply patches that apply to the given spec.
  *
  * The function returns a list of errors, an empty array if all went fine.
  */
-function applyCssSyntaxPatches(spec) {
+function applyCssSyntaxPatches(spec, specs) {
   let errors = [];
   console.log(`- applying CSS syntax patches for ${spec.shortname}`);
   for (let [key, patch] of Object.entries(patches[spec.shortname])) {
@@ -107,7 +147,7 @@ function applyCssSyntaxPatches(spec) {
       construct.value = construct.values.map(v => v.value).join(' | ');
     }
     else if (patch.sameAs) {
-      const sameConstruct = findCssConstruct(patch.sameAs, spec.css);
+      const sameConstruct = findCssConstructAcrossSpecs(patch.sameAs, specs);
       if (!sameConstruct) {
         errors.push(`The CSS syntax patch for ${key} in ${spec.shortname} cannot be applied: could not find "sameAs" target ${patch.sameAs}`);
         continue;
@@ -116,6 +156,7 @@ function applyCssSyntaxPatches(spec) {
         errors.push(`The CSS syntax patch for ${key} in ${spec.shortname} cannot be applied: "sameAs" target ${patch.sameAs} has no syntax`);
         continue;
       }
+      construct.value = sameConstruct.value;
     }
     else {
       construct.value = trimSyntax(patch.value);
@@ -166,6 +207,7 @@ async function amendCssSyntaxes(folder) {
   const rawIndex = await loadJSON(path.join(folder, 'index.json'));
   const index = JSON.parse(JSON.stringify(rawIndex));
   await expandCrawlResult(index, folder, ['css']);
+  setLegacyPropertySyntaxes(index.results);
 
   let errors = [];
   for (const specShortname of Object.keys(patches)) {
@@ -178,7 +220,7 @@ async function amendCssSyntaxes(folder) {
       errors.push(`Could not find any CSS in spec with shortname ${specShortname} for CSS syntax patching`);
       continue;
     }
-    errors = errors.concat(applyCssSyntaxPatches(spec));
+    errors = errors.concat(applyCssSyntaxPatches(spec, index.results));
   }
 
   for (const spec of index.results) {
