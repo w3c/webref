@@ -39,6 +39,7 @@
       "https://developer.mozilla.org/en-US/docs/Web/CSS/@layer": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/revert-layer": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-2025/": {},
       "https://drafts.csswg.org/css-align/": {},
       "https://drafts.csswg.org/css-animations-2/": {},
       "https://drafts.csswg.org/css-animations/": {},
@@ -61,7 +62,6 @@
       "https://drafts.csswg.org/css-flexbox/": {},
       "https://drafts.csswg.org/css-fonts-4/": {},
       "https://drafts.csswg.org/css-fonts-5/": {},
-      "https://drafts.csswg.org/css-forms-1/": {},
       "https://drafts.csswg.org/css-inline-3/": {},
       "https://drafts.csswg.org/css-lists-3/": {},
       "https://drafts.csswg.org/css-logical-1/": {},
@@ -214,6 +214,11 @@
           "concept-light-tree"
         ]
       },
+      "https://drafts.csswg.org/css-2025/": {
+        "anchors": [
+          "vendor-prefix"
+        ]
+      },
       "https://drafts.csswg.org/css-align-3/": {
         "anchors": [
           "valdef-align-self-auto"
@@ -274,7 +279,8 @@
           "typedef-supports-condition",
           "conditional-group-rule",
           "at-ruledef-media",
-          "at-ruledef-supports"
+          "at-ruledef-supports",
+          "supports-queries"
         ]
       },
       "https://drafts.csswg.org/css-conditional-5/": {
@@ -318,19 +324,14 @@
           "propdef-font-weight",
           "propdef-font-family",
           "valdef-font-weight-bolder",
+          "propdef-font-size-adjust",
           "valdef-font-style-italic",
           "valdef-font-family-sans-serif"
         ]
       },
       "https://drafts.csswg.org/css-fonts-5/": {
         "anchors": [
-          "propdef-font-size-adjust",
           "at-font-face-rule"
-        ]
-      },
-      "https://drafts.csswg.org/css-forms-1/": {
-        "anchors": [
-          "valdef-appearance-base"
         ]
       },
       "https://drafts.csswg.org/css-inline-3/": {
@@ -358,7 +359,8 @@
         "anchors": [
           "selectordef-before",
           "selectordef-after",
-          "selectordef-first-line"
+          "selectordef-first-line",
+          "tree-abiding"
         ]
       },
       "https://drafts.csswg.org/css-scoping-1/": {
@@ -454,6 +456,7 @@
         "anchors": [
           "cssstyledeclaration-declarations",
           "dom-window-getcomputedstyle",
+          "documentorshadowroot-final-css-style-sheets",
           "cssgroupingrule",
           "cssomstring",
           "cssrule"
