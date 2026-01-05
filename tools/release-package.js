@@ -92,6 +92,12 @@ async function releasePackage(prNumber) {
       package: packageFolder
       //, debug: console.debug
     };
+    if (type.match(/\d+$/)) {
+      // A previous version is being published and we do not want it to
+      // replace the "latest" tag. Let's link it to a separate tag.
+      const pinnedVersion = type.match(/\d+$/)[0];
+      pubOptions.tag = `v${pinnedVersion}`;
+    }
     if (NPM_TOKEN) {
       pubOptions.token = NPM_TOKEN;
     }
