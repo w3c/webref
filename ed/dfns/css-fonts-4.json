@@ -1812,6 +1812,72 @@
       "links": []
     },
     {
+      "id": "format()",
+      "href": "https://drafts.csswg.org/css-fonts-4/#format()",
+      "linkingText": [
+        "format( <font-format> )"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@font-face/src"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-face-src-parsing",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-face-src-parsing",
+        "title": "Parsing the src descriptor",
+        "number": "4.3.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "tech()",
+      "href": "https://drafts.csswg.org/css-fonts-4/#tech()",
+      "linkingText": [
+        "tech( <font-tech># )"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@font-face/src"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-face-src-parsing",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-face-src-parsing",
+        "title": "Parsing the src descriptor",
+        "number": "4.3.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "local()",
+      "href": "https://drafts.csswg.org/css-fonts-4/#local()",
+      "linkingText": [
+        "local( <family-name> )"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@font-face/src"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-face-src-parsing",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-face-src-parsing",
+        "title": "Parsing the src descriptor",
+        "number": "4.3.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
       "id": "font-format-values",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-format-values",
       "linkingText": [
@@ -1958,17 +2024,17 @@
       "links": []
     },
     {
-      "id": "font-face-font-stretch",
-      "href": "https://drafts.csswg.org/css-fonts-4/#font-face-font-stretch",
+      "id": "descdef-font-face-font-stretch",
+      "href": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-stretch",
       "linkingText": [
         "font-stretch"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "descriptor",
       "for": [
         "@font-face"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "font-stretch-desc",
@@ -3434,6 +3500,26 @@
       "links": []
     },
     {
+      "id": "feature-index-value",
+      "href": "https://drafts.csswg.org/css-fonts-4/#feature-index-value",
+      "linkingText": [
+        "<feature-index>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-variant-alternates-prop",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-variant-alternates-prop",
+        "title": "Alternates and swashes: the font-variant-alternates property",
+        "number": "6.8"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
       "id": "feature-value-name-value",
       "href": "https://drafts.csswg.org/css-fonts-4/#feature-value-name-value",
       "linkingText": [
@@ -3670,13 +3756,13 @@
       "links": []
     },
     {
-      "id": "font-feature-values-font-feature-value-type",
-      "href": "https://drafts.csswg.org/css-fonts-4/#font-feature-values-font-feature-value-type",
+      "id": "typedef-font-feature-values-font-feature-value-type",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-feature-values-font-feature-value-type",
       "linkingText": [
-        "font-feature-value-type"
+        "<font-feature-value-type>"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "type",
       "for": [
         "@font-feature-values"
       ],
@@ -4258,7 +4344,7 @@
         "<feature-tag-value>"
       ],
       "localLinkingText": [],
-      "type": "value",
+      "type": "type",
       "for": [
         "font-feature-settings"
       ],
@@ -4291,6 +4377,50 @@
         "number": "6.12"
       },
       "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "feature-tag-value-on",
+      "href": "https://drafts.csswg.org/css-fonts-4/#feature-tag-value-on",
+      "linkingText": [
+        "on"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<feature-tag-value>"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-feature-settings-prop",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-feature-settings-prop",
+        "title": "Low-level font feature settings control: the font-feature-settings property",
+        "number": "6.12"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "feature-tag-value-off",
+      "href": "https://drafts.csswg.org/css-fonts-4/#feature-tag-value-off",
+      "linkingText": [
+        "off"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<feature-tag-value>"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-feature-settings-prop",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-feature-settings-prop",
+        "title": "Low-level font feature settings control: the font-feature-settings property",
+        "number": "6.12"
+      },
+      "definedIn": "prose",
       "links": []
     },
     {
@@ -4678,28 +4808,6 @@
       "links": []
     },
     {
-      "id": "typedef-base-palette-integer",
-      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-base-palette-integer",
-      "linkingText": [
-        "<integer>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [
-        "base-palette"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "base-palette-desc",
-        "href": "https://drafts.csswg.org/css-fonts-4/#base-palette-desc",
-        "title": "Specifying the base palette: the base-palette descriptor",
-        "number": "9.2.2"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
       "id": "descdef-font-palette-values-override-colors",
       "href": "https://drafts.csswg.org/css-fonts-4/#descdef-font-palette-values-override-colors",
       "linkingText": [
@@ -4847,6 +4955,248 @@
         "number": "9.3"
       },
       "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "font-features-tech-features-opentype",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-features-tech-features-opentype",
+      "linkingText": [
+        "features-opentype"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<font-features-tech>"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-tech-definitions",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-definitions",
+        "title": "Font tech",
+        "number": "11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "font-features-tech-features-aat",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-features-tech-features-aat",
+      "linkingText": [
+        "features-aat"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<font-features-tech>"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-tech-definitions",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-definitions",
+        "title": "Font tech",
+        "number": "11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "font-features-tech-features-graphite",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-features-tech-features-graphite",
+      "linkingText": [
+        "features-graphite"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<font-features-tech>"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-tech-definitions",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-definitions",
+        "title": "Font tech",
+        "number": "11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "font-tech-variations",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-variations",
+      "linkingText": [
+        "variations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<font-tech>"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-tech-definitions",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-definitions",
+        "title": "Font tech",
+        "number": "11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "color-font-tech-color-colrv0",
+      "href": "https://drafts.csswg.org/css-fonts-4/#color-font-tech-color-colrv0",
+      "linkingText": [
+        "color-colrv0"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<color-font-tech>"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-tech-definitions",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-definitions",
+        "title": "Font tech",
+        "number": "11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "color-font-tech-color-colrv1",
+      "href": "https://drafts.csswg.org/css-fonts-4/#color-font-tech-color-colrv1",
+      "linkingText": [
+        "color-colrv1"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<color-font-tech>"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-tech-definitions",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-definitions",
+        "title": "Font tech",
+        "number": "11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "color-font-tech-color-svg",
+      "href": "https://drafts.csswg.org/css-fonts-4/#color-font-tech-color-svg",
+      "linkingText": [
+        "color-svg"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<color-font-tech>"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-tech-definitions",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-definitions",
+        "title": "Font tech",
+        "number": "11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "color-font-tech-color-sbix",
+      "href": "https://drafts.csswg.org/css-fonts-4/#color-font-tech-color-sbix",
+      "linkingText": [
+        "color-sbix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<color-font-tech>"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-tech-definitions",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-definitions",
+        "title": "Font tech",
+        "number": "11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "color-font-tech-color-cbdt",
+      "href": "https://drafts.csswg.org/css-fonts-4/#color-font-tech-color-cbdt",
+      "linkingText": [
+        "color-cbdt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<color-font-tech>"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-tech-definitions",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-definitions",
+        "title": "Font tech",
+        "number": "11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "font-tech-palettes",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-palettes",
+      "linkingText": [
+        "palettes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<font-tech>"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-tech-definitions",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-definitions",
+        "title": "Font tech",
+        "number": "11.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "font-tech-incremental",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-incremental",
+      "linkingText": [
+        "incremental"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "<font-tech>"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-tech-definitions",
+        "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-definitions",
+        "title": "Font tech",
+        "number": "11.1"
+      },
+      "definedIn": "prose",
       "links": []
     },
     {

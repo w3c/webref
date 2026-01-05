@@ -162,7 +162,7 @@
       "percentages": "n/a",
       "computedValue": "the keyword specified, plus angle in degrees if specified",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type;normal animates as oblique 0deg",
+      "animationType": "by computed value type; normal animates as oblique 0deg",
       "values": [
         {
           "name": "normal",
@@ -977,14 +977,14 @@
       "values": [
         {
           "name": "normal",
-          "prose": "The value normal resets all subproperties of font-variant to their initial value. The none value sets font-variant-ligatures to none and resets all other font feature properties to their initial value. Like other shorthands, using font-variant resets unspecified font-variant subproperties to their initial values.",
+          "prose": "The value normal resets all subproperties of font-variant to their initial value. The none value sets font-variant-ligatures to 'font-variant-ligatures/none' and resets all other font feature properties to their initial value. Like other shorthands, using font-variant resets unspecified font-variant subproperties to their initial values.",
           "href": "https://drafts.csswg.org/css-fonts-4/#font-variant-normal-value",
           "type": "value",
           "value": "normal"
         },
         {
           "name": "none",
-          "prose": "The value normal resets all subproperties of font-variant to their initial value. The none value sets font-variant-ligatures to none and resets all other font feature properties to their initial value. Like other shorthands, using font-variant resets unspecified font-variant subproperties to their initial values.",
+          "prose": "The value normal resets all subproperties of font-variant to their initial value. The none value sets font-variant-ligatures to 'font-variant-ligatures/none' and resets all other font feature properties to their initial value. Like other shorthands, using font-variant resets unspecified font-variant subproperties to their initial values.",
           "href": "https://drafts.csswg.org/css-fonts-4/#font-variant-none-value",
           "type": "value",
           "value": "none"
@@ -1017,7 +1017,7 @@
         {
           "name": "<feature-tag-value>",
           "href": "https://drafts.csswg.org/css-fonts-4/#feature-tag-value",
-          "type": "value",
+          "type": "type",
           "value": "<opentype-tag> [ <integer [0,∞]> | on | off ]?"
         }
       ],
@@ -1164,28 +1164,28 @@
       "values": [
         {
           "name": "normal",
-          "prose": "User agents can choose to draw a Presentation Participating Code Point in either emoji style or text style. User agents typically follow platform conventions when performing this decision.",
+          "prose": "User agents can choose to draw a Emoji Presentation Participating Code Point in either emoji style or text style. User agents typically follow platform conventions when performing this decision.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-variant-emoji-normal",
           "type": "value",
           "value": "normal"
         },
         {
           "name": "text",
-          "prose": "Code points are rendered as if U+FE0E VARIATION SELECTOR-15 was appended to every Presentation Participating Code Point.",
+          "prose": "Code points are rendered as if U+FE0E VARIATION SELECTOR-15 was appended to every Emoji Presentation Participating Code Point.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-variant-emoji-text",
           "type": "value",
           "value": "text"
         },
         {
           "name": "emoji",
-          "prose": "Code points are rendered as if U+FE0F VARIATION SELECTOR-16 was appended to every Presentation Participating Code Point.",
+          "prose": "Code points are rendered as if U+FE0F VARIATION SELECTOR-16 was appended to every Emoji Presentation Participating Code Point.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-variant-emoji-emoji",
           "type": "value",
           "value": "emoji"
         },
         {
           "name": "unicode",
-          "prose": "Code points are rendered in accordance with [UTS51] as either emoji-default, text-default, or text-only, depending on the values of the Emoji and Emoji_Presentation properties for each Presentation Participating Code Point. If present, FE0E VARIATION SELECTOR-15 and U+FE0F VARIATION SELECTOR-16 will override the default presentation of individual Presentation Participating Code Points.",
+          "prose": "Code points are rendered in accordance with [UTS51] as either emoji-default, text-default, or text-only, depending on the values of the Emoji and Emoji_Presentation properties for each Emoji Presentation Participating Code Point. If present, FE0E VARIATION SELECTOR-15 and U+FE0F VARIATION SELECTOR-16 will override the default presentation of individual Emoji Presentation Participating Code Points.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-variant-emoji-unicode",
           "type": "value",
           "value": "unicode"
@@ -1223,7 +1223,27 @@
           "href": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-src",
           "for": "@font-face",
           "value": "<font-src-list>",
-          "initial": "N/A"
+          "initial": "N/A",
+          "values": [
+            {
+              "name": "format()",
+              "value": "format()",
+              "href": "https://drafts.csswg.org/css-fonts-4/#format()",
+              "type": "value"
+            },
+            {
+              "name": "tech()",
+              "value": "tech()",
+              "href": "https://drafts.csswg.org/css-fonts-4/#tech()",
+              "type": "value"
+            },
+            {
+              "name": "local()",
+              "value": "local()",
+              "href": "https://drafts.csswg.org/css-fonts-4/#local()",
+              "type": "value"
+            }
+          ]
         },
         {
           "name": "font-style",
@@ -1410,7 +1430,15 @@
           "value": "@annotation { <declaration-list> }"
         }
       ],
-      "value": "@font-feature-values <family-name># { <declaration-rule-list> }"
+      "value": "@font-feature-values <family-name># { <declaration-rule-list> }",
+      "values": [
+        {
+          "name": "<font-feature-value-type>",
+          "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-feature-values-font-feature-value-type",
+          "type": "type",
+          "value": "<@stylistic> | <@historical-forms> | <@styleset> | <@character-variant> | <@swash> | <@ornaments> | <@annotation>"
+        }
+      ]
     },
     {
       "name": "@font-palette-values",
@@ -1446,10 +1474,11 @@
               "value": "dark"
             },
             {
-              "name": "<integer>",
+              "name": "<integer [0,∞]>",
               "prose": "Identifies a (zero-based) numerical palette index within the font.",
-              "href": "https://drafts.csswg.org/css-fonts-4/#typedef-base-palette-integer",
-              "type": "type"
+              "href": "https://drafts.csswg.org/css-fonts-4/#valdef-base-palette-integer-0",
+              "type": "value",
+              "value": "<integer [0,∞]>"
             }
           ]
         },
@@ -1611,7 +1640,7 @@
       "name": "<font-weight-absolute>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-weight-absolute-values",
       "type": "type",
-      "value": "[normal | bold | <number [1,1000]>]"
+      "value": "[ normal | bold | <number [1,1000]> ]"
     },
     {
       "name": "<font-variant-css2>",
@@ -1635,31 +1664,31 @@
       "name": "<font-src>",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-src",
       "type": "type",
-      "value": "<url> [ format(<font-format>)]? [ tech( <font-tech>#)]? | local(<family-name>)"
+      "value": "<url> [ format( <font-format> ) ]? [ tech( <font-tech># ) ]? | local( <family-name> )"
     },
     {
       "name": "<font-format>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-format-values",
       "type": "type",
-      "value": "[<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]"
+      "value": "[ <string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]"
     },
     {
       "name": "<font-tech>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-values",
       "type": "type",
-      "value": "[<font-features-tech> | <color-font-tech> | variations | palettes | incremental ]"
+      "value": "[ <font-features-tech> | <color-font-tech> | variations | palettes | incremental ]"
     },
     {
       "name": "<font-features-tech>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-features-tech-values",
       "type": "type",
-      "value": "[features-opentype | features-aat | features-graphite]"
+      "value": "[ features-opentype | features-aat | features-graphite ]"
     },
     {
       "name": "<color-font-tech>",
       "href": "https://drafts.csswg.org/css-fonts-4/#color-font-tech-values",
       "type": "type",
-      "value": "[color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]"
+      "value": "[ color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]"
     },
     {
       "name": "<common-lig-values>",
@@ -1704,6 +1733,12 @@
       "value": "[ diagonal-fractions | stacked-fractions ]"
     },
     {
+      "name": "<feature-index>",
+      "href": "https://drafts.csswg.org/css-fonts-4/#feature-index-value",
+      "type": "type",
+      "value": "<integer [0,∞]>"
+    },
+    {
       "name": "<feature-value-name>",
       "href": "https://drafts.csswg.org/css-fonts-4/#feature-value-name-value",
       "type": "type",
@@ -1736,11 +1771,6 @@
     }
   ],
   "warnings": [
-    {
-      "msg": "Missing definition",
-      "name": "font-feature-value-type",
-      "value": "<@stylistic> | <@historical-forms> | <@styleset> | <@character-variant> | <@swash> | <@ornaments> | <@annotation>"
-    },
     {
       "msg": "Dangling value",
       "name": "normal",
