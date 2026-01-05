@@ -94,9 +94,11 @@ async function releasePackage(prNumber) {
     };
     if (type.match(/\d+$/)) {
       // A previous version is being published and we do not want it to
-      // replace the "latest" tag. Let's link it to a separate tag.
+      // replace the "latest" tag. Let's link it to a separate tag. Note the
+      // tag name cannot just be the version:
+      // https://docs.npmjs.com/cli/v9/commands/npm-dist-tag#caveats
       const pinnedVersion = type.match(/\d+$/)[0];
-      pubOptions.tag = `v${pinnedVersion}`;
+      pubOptions.tag = `previous-v${pinnedVersion}`;
     }
     if (NPM_TOKEN) {
       pubOptions.token = NPM_TOKEN;
