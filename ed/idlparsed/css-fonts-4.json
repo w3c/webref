@@ -165,7 +165,7 @@
         "href": "https://drafts.csswg.org/css-fonts-4/#cssfontfeaturevaluesrule"
       },
       "CSSFontFeatureValuesMap": {
-        "fragment": "[Exposed=Window]\ninterface CSSFontFeatureValuesMap {\n  maplike<CSSOMString, sequence<unsigned long>>;\n  undefined set(CSSOMString featureValueName,\n         (unsigned long or sequence<unsigned long>) values);\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSFontFeatureValuesMap {\n  maplike<CSSOMString, sequence<unsigned long>>;\n  undefined set(CSSOMString featureValueName,\n    (unsigned long or sequence<unsigned long>) values);\n};",
         "type": "interface",
         "name": "CSSFontFeatureValuesMap",
         "inheritance": null,
@@ -295,7 +295,7 @@
         "href": "https://drafts.csswg.org/css-fonts-4/#cssfontfeaturevaluesmap"
       },
       "CSSFontPaletteValuesRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSFontPaletteValuesRule : CSSRule {\n  readonly attribute CSSOMString name;\n  readonly attribute CSSOMString fontFamily;\n  readonly attribute CSSOMString basePalette;\n  readonly attribute CSSOMString overrideColors;\n};",
+        "fragment": "[Exposed=Window]\n  interface CSSFontPaletteValuesRule : CSSRule {\n    readonly attribute CSSOMString name;\n    readonly attribute CSSOMString fontFamily;\n    readonly attribute CSSOMString basePalette;\n    readonly attribute CSSOMString overrideColors;\n  };",
         "type": "interface",
         "name": "CSSFontPaletteValuesRule",
         "inheritance": "CSSRule",
@@ -383,7 +383,7 @@
     "idlExtendedNames": {
       "CSSRule": [
         {
-          "fragment": "partial interface CSSRule {\n  const unsigned short FONT_FEATURE_VALUES_RULE = 14;\n};",
+          "fragment": "partial interface CSSRule {\n    const unsigned short FONT_FEATURE_VALUES_RULE = 14;\n  };",
           "type": "interface",
           "name": "CSSRule",
           "inheritance": null,

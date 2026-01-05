@@ -8210,7 +8210,7 @@
       "percentages": "n/a",
       "computedValue": "the keyword specified, plus angle in degrees if specified",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type;normal animates as oblique 0deg",
+      "animationType": "by computed value type; normal animates as oblique 0deg",
       "styleDeclaration": [
         "font-style",
         "fontStyle"
@@ -18020,6 +18020,21 @@
       "extended": []
     },
     {
+      "name": "feature-index",
+      "href": "https://drafts.csswg.org/css-fonts-4/#feature-index-value",
+      "syntax": "<integer [0,∞]>",
+      "extended": []
+    },
+    {
+      "for": [
+        "font-feature-settings"
+      ],
+      "name": "feature-tag-value",
+      "href": "https://drafts.csswg.org/css-fonts-4/#feature-tag-value",
+      "syntax": "<opentype-tag> [ <integer [0,∞]> | on | off ]?",
+      "extended": []
+    },
+    {
       "name": "feature-value-name",
       "href": "https://drafts.csswg.org/css-fonts-4/#feature-value-name-value",
       "syntax": "<ident>",
@@ -18028,7 +18043,7 @@
     {
       "name": "filter-function",
       "href": "https://drafts.csswg.org/filter-effects-1/#typedef-filter-function",
-      "syntax": "<blur()> | <brightness()> | <contrast()> | <drop-shadow()> | <grayscale()> | <hue-rotate()> | <invert()> | <opacity()> | <sepia()> | <saturate()>",
+      "syntax": "blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | sepia() | saturate()",
       "extended": []
     },
     {
@@ -18068,6 +18083,14 @@
       "extended": []
     },
     {
+      "for": [
+        "@font-feature-values"
+      ],
+      "name": "font-feature-value-type",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-feature-values-font-feature-value-type",
+      "extended": []
+    },
+    {
       "name": "font-features-tech",
       "href": "https://drafts.csswg.org/css-fonts-5/#font-features-tech-values",
       "syntax": "[features-opentype | features-aat | features-graphite]",
@@ -18082,7 +18105,7 @@
     {
       "name": "font-src",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-src",
-      "syntax": "<url> [ format(<font-format>)]? [ tech( <font-tech>#)]? | local(<family-name>)",
+      "syntax": "<url> [ format( <font-format> ) ]? [ tech( <font-tech># ) ]? | local( <family-name> )",
       "extended": []
     },
     {
@@ -18106,7 +18129,7 @@
     {
       "name": "font-weight-absolute",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-weight-absolute-values",
-      "syntax": "[normal | bold | <number [1,1000]>]",
+      "syntax": "[ normal | bold | <number [1,1000]> ]",
       "extended": []
     },
     {
