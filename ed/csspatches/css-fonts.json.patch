@@ -1,0 +1,32 @@
+From 7b889062708e624edcfff2e0288784fbf466dc3c Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 5 Jan 2026 09:25:21 +0100
+Subject: [PATCH] Drop `<font-feature-value-type>` type syntax
+
+The syntax is valid but references to at-rules are not supported by CSSTree
+yet. This should be the same problem as that noted in:
+https://github.com/csstree/csstree/issues/345
+
+The type itself does not appear anywhere, so dropping the syntax shouldn't be
+a big deal in the meantime.
+---
+ ed/css/css-fonts.json | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/ed/css/css-fonts.json b/ed/css/css-fonts.json
+index d8a0033300..d52e95fb58 100644
+--- a/ed/css/css-fonts.json
++++ b/ed/css/css-fonts.json
+@@ -1435,8 +1435,7 @@
+         {
+           "name": "<font-feature-value-type>",
+           "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-feature-values-font-feature-value-type",
+-          "type": "type",
+-          "value": "<@stylistic> | <@historical-forms> | <@styleset> | <@character-variant> | <@swash> | <@ornaments> | <@annotation>"
++          "type": "type"
+         }
+       ]
+     },
+-- 
+2.52.0
+
