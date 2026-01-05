@@ -1,6 +1,6 @@
-From fc74e7bccf07a6fdd62c8d9559e77f389a9ce92d Mon Sep 17 00:00:00 2001
+From 4de26487377913639b78778d935d0ee2fb291b5e Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Wed, 10 Dec 2025 11:29:20 +0100
+Date: Mon, 5 Jan 2026 08:56:58 +0100
 Subject: [PATCH] Drop interfaces redefined in css-fonts-5
 
 The `CSSFontFaceDescriptors` and `CSSFontFaceRule` interfaces get redefined in
@@ -11,7 +11,7 @@ CSS Fonts Level 5 becomes a full spec.
  1 file changed, 38 deletions(-)
 
 diff --git a/ed/idl/css-fonts.idl b/ed/idl/css-fonts.idl
-index bc4962005b..9ff371e6e4 100644
+index c1e1a62880..3d90de6ab5 100644
 --- a/ed/idl/css-fonts.idl
 +++ b/ed/idl/css-fonts.idl
 @@ -3,44 +3,6 @@
@@ -57,8 +57,8 @@ index bc4962005b..9ff371e6e4 100644
 -};
 -
  partial interface CSSRule {
-   const unsigned short FONT_FEATURE_VALUES_RULE = 14;
- };
+     const unsigned short FONT_FEATURE_VALUES_RULE = 14;
+   };
 -- 
 2.52.0
 
