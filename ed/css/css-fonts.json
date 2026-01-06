@@ -1018,7 +1018,23 @@
           "name": "<feature-tag-value>",
           "href": "https://drafts.csswg.org/css-fonts-4/#feature-tag-value",
           "type": "type",
-          "value": "<opentype-tag> [ <integer [0,∞]> | on | off ]?"
+          "value": "<opentype-tag> [ <integer [0,∞]> | on | off ]?",
+          "values": [
+            {
+              "name": "on",
+              "prose": "If present, a value indicates an index used for glyph selection. An <integer> value must be 0 or greater. A value of 0 indicates that the feature is disabled. For boolean features, a value of 1 enables the feature. For non-boolean features, a value of 1 or greater enables the feature and indicates the feature selection index. A value of on is synonymous with 1 and off is synonymous with 0. If the value is omitted, a value of 1 is assumed.",
+              "href": "https://drafts.csswg.org/css-fonts-4/#valdef-feature-tag-value-on",
+              "type": "value",
+              "value": "on"
+            },
+            {
+              "name": "off",
+              "prose": "If present, a value indicates an index used for glyph selection. An <integer> value must be 0 or greater. A value of 0 indicates that the feature is disabled. For boolean features, a value of 1 enables the feature. For non-boolean features, a value of 1 or greater enables the feature and indicates the feature selection index. A value of on is synonymous with 1 and off is synonymous with 0. If the value is omitted, a value of 1 is assumed.",
+              "href": "https://drafts.csswg.org/css-fonts-4/#valdef-feature-tag-value-off",
+              "type": "value",
+              "value": "off"
+            }
+          ]
         }
       ],
       "styleDeclaration": [
@@ -1677,19 +1693,102 @@
       "name": "<font-tech>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-tech-values",
       "type": "type",
-      "value": "[ <font-features-tech> | <color-font-tech> | variations | palettes | incremental ]"
+      "value": "[ <font-features-tech> | <color-font-tech> | variations | palettes | incremental ]",
+      "values": [
+        {
+          "name": "variations",
+          "prose": "The variations tech refers to the support of font variations, commonly implemented in [OPENTYPE] with the avar, cvar, fvar, gvar, HVAR, MVAR, STAT, and VVAR tables, as well as in [AAT-FEATURES] using the avar, cvar, fvar, gvar tables. The section on § 2 Basic Font Properties as well as the section on § 8 Font Variation Properties describe properties that interact with these facilities.",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-tech-variations",
+          "type": "value",
+          "value": "variations"
+        },
+        {
+          "name": "palettes",
+          "prose": "The palettes tech refers to support for font palettes, commonly implemented in the [OPENTYPE] and [AAT-FEATURES] with the CPAL table. The section on § 9 Color Font Support describes properties that interact with these facilities.",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-tech-palettes",
+          "type": "value",
+          "value": "palettes"
+        },
+        {
+          "name": "incremental",
+          "prose": "The incremental tech refers to client support for incremental font transfer [IFT].",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-tech-incremental",
+          "type": "value",
+          "value": "incremental"
+        }
+      ]
     },
     {
       "name": "<font-features-tech>",
       "href": "https://drafts.csswg.org/css-fonts-4/#font-features-tech-values",
       "type": "type",
-      "value": "[ features-opentype | features-aat | features-graphite ]"
+      "value": "[ features-opentype | features-aat | features-graphite ]",
+      "values": [
+        {
+          "name": "features-opentype",
+          "prose": "The features-opentype, features-aat and features-graphite techs refer to support for font features, commonly implemented in [OPENTYPE] with the GSUB and the GPOS tables, as well as in [AAT-FEATURES] using the morx and kerx tables and [GRAPHITE] with the Silf, Glat , Gloc , Feat and Sill tables as documented in the Graphite Table Format. The section on § 6 Font Feature Properties describes properties that interact with these facilities.",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-features-tech-features-opentype",
+          "type": "value",
+          "value": "features-opentype"
+        },
+        {
+          "name": "features-aat",
+          "prose": "The features-opentype, features-aat and features-graphite techs refer to support for font features, commonly implemented in [OPENTYPE] with the GSUB and the GPOS tables, as well as in [AAT-FEATURES] using the morx and kerx tables and [GRAPHITE] with the Silf, Glat , Gloc , Feat and Sill tables as documented in the Graphite Table Format. The section on § 6 Font Feature Properties describes properties that interact with these facilities.",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-features-tech-features-aat",
+          "type": "value",
+          "value": "features-aat"
+        },
+        {
+          "name": "features-graphite",
+          "prose": "The features-opentype, features-aat and features-graphite techs refer to support for font features, commonly implemented in [OPENTYPE] with the GSUB and the GPOS tables, as well as in [AAT-FEATURES] using the morx and kerx tables and [GRAPHITE] with the Silf, Glat , Gloc , Feat and Sill tables as documented in the Graphite Table Format. The section on § 6 Font Feature Properties describes properties that interact with these facilities.",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-features-tech-features-graphite",
+          "type": "value",
+          "value": "features-graphite"
+        }
+      ]
     },
     {
       "name": "<color-font-tech>",
       "href": "https://drafts.csswg.org/css-fonts-4/#color-font-tech-values",
       "type": "type",
-      "value": "[ color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]"
+      "value": "[ color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]",
+      "values": [
+        {
+          "name": "color-colrv0",
+          "prose": "The color-colrv0, color-colrv1, color-svg, color-sbix and color-cbdt technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-color-font-tech-color-colrv0",
+          "type": "value",
+          "value": "color-colrv0"
+        },
+        {
+          "name": "color-colrv1",
+          "prose": "The color-colrv0, color-colrv1, color-svg, color-sbix and color-cbdt technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-color-font-tech-color-colrv1",
+          "type": "value",
+          "value": "color-colrv1"
+        },
+        {
+          "name": "color-svg",
+          "prose": "The color-colrv0, color-colrv1, color-svg, color-sbix and color-cbdt technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-color-font-tech-color-svg",
+          "type": "value",
+          "value": "color-svg"
+        },
+        {
+          "name": "color-sbix",
+          "prose": "The color-colrv0, color-colrv1, color-svg, color-sbix and color-cbdt technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-color-font-tech-color-sbix",
+          "type": "value",
+          "value": "color-sbix"
+        },
+        {
+          "name": "color-cbdt",
+          "prose": "The color-colrv0, color-colrv1, color-svg, color-sbix and color-cbdt technologies refers to various types of color font file technologies. Each one represents a table (COLR, SVG, sbix or CBDT) inside [OPENTYPE] or [AAT-FEATURES] fonts which must be supported to satisfy this requirement.",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-color-font-tech-color-cbdt",
+          "type": "value",
+          "value": "color-cbdt"
+        }
+      ]
     },
     {
       "name": "<common-lig-values>",
