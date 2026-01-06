@@ -11,12 +11,24 @@
       "title": "Network Error Logging"
     },
     {
+      "id": "abstract",
+      "href": "https://w3c.github.io/network-error-logging/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/network-error-logging/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
       "id": "toc",
       "href": "https://w3c.github.io/network-error-logging/#toc",
       "level": 2,
       "title": "Table of Contents",
       "alternateIds": [
-        "table-of-contents"
+        "contents"
       ]
     },
     {
@@ -24,9 +36,6 @@
       "href": "https://w3c.github.io/network-error-logging/#introduction",
       "level": 2,
       "title": "Introduction",
-      "alternateIds": [
-        "x1-introduction"
-      ],
       "number": "1"
     },
     {
@@ -34,9 +43,6 @@
       "href": "https://w3c.github.io/network-error-logging/#conformance",
       "level": 2,
       "title": "Conformance",
-      "alternateIds": [
-        "x2-conformance"
-      ],
       "number": "2"
     },
     {
@@ -44,9 +50,6 @@
       "href": "https://w3c.github.io/network-error-logging/#concepts",
       "level": 2,
       "title": "Concepts",
-      "alternateIds": [
-        "x3-concepts"
-      ],
       "number": "3"
     },
     {
@@ -54,39 +57,27 @@
       "href": "https://w3c.github.io/network-error-logging/#network-requests",
       "level": 3,
       "title": "Network requests",
-      "alternateIds": [
-        "x3-1-network-requests"
-      ],
       "number": "3.1"
     },
     {
-      "id": "network-errors",
-      "href": "https://w3c.github.io/network-error-logging/#network-errors",
+      "id": "concept-network-errors",
+      "href": "https://w3c.github.io/network-error-logging/#concept-network-errors",
       "level": 3,
       "title": "Network errors",
-      "alternateIds": [
-        "x3-2-network-errors"
-      ],
       "number": "3.2"
     },
     {
-      "id": "network-error-reports",
-      "href": "https://w3c.github.io/network-error-logging/#network-error-reports",
+      "id": "concept-network-error-reports",
+      "href": "https://w3c.github.io/network-error-logging/#concept-network-error-reports",
       "level": 3,
       "title": "Network error reports",
-      "alternateIds": [
-        "x3-3-network-error-reports"
-      ],
       "number": "3.3"
     },
     {
-      "id": "nel-policies",
-      "href": "https://w3c.github.io/network-error-logging/#nel-policies",
+      "id": "concept-nel-policies",
+      "href": "https://w3c.github.io/network-error-logging/#concept-nel-policies",
       "level": 3,
       "title": "NEL policies",
-      "alternateIds": [
-        "x3-4-nel-policies"
-      ],
       "number": "3.4"
     },
     {
@@ -94,19 +85,13 @@
       "href": "https://w3c.github.io/network-error-logging/#sampling-rates",
       "level": 3,
       "title": "Sampling rates",
-      "alternateIds": [
-        "x3-5-sampling-rates"
-      ],
       "number": "3.5"
     },
     {
-      "id": "policy-cache",
-      "href": "https://w3c.github.io/network-error-logging/#policy-cache",
+      "id": "concept-policy-cache",
+      "href": "https://w3c.github.io/network-error-logging/#concept-policy-cache",
       "level": 3,
       "title": "Policy cache",
-      "alternateIds": [
-        "x3-6-policy-cache"
-      ],
       "number": "3.6"
     },
     {
@@ -114,9 +99,6 @@
       "href": "https://w3c.github.io/network-error-logging/#policy-delivery",
       "level": 2,
       "title": "Policy delivery",
-      "alternateIds": [
-        "x4-policy-delivery"
-      ],
       "number": "4"
     },
     {
@@ -124,59 +106,41 @@
       "href": "https://w3c.github.io/network-error-logging/#nel-response-header",
       "level": 3,
       "title": "NEL response header",
-      "alternateIds": [
-        "x4-1-nel-response-header"
-      ],
       "number": "4.1"
     },
     {
-      "id": "the-report_to-member",
-      "href": "https://w3c.github.io/network-error-logging/#the-report_to-member",
+      "id": "report-to-member",
+      "href": "https://w3c.github.io/network-error-logging/#report-to-member",
       "level": 4,
       "title": "The report_to member",
-      "alternateIds": [
-        "x4-1-1-the-report_to-member"
-      ],
       "number": "4.1.1"
     },
     {
-      "id": "the-max_age-member",
-      "href": "https://w3c.github.io/network-error-logging/#the-max_age-member",
+      "id": "max-age-member",
+      "href": "https://w3c.github.io/network-error-logging/#max-age-member",
       "level": 4,
       "title": "The max_age member",
-      "alternateIds": [
-        "x4-1-2-the-max_age-member"
-      ],
       "number": "4.1.2"
     },
     {
-      "id": "the-include_subdomains-member",
-      "href": "https://w3c.github.io/network-error-logging/#the-include_subdomains-member",
+      "id": "include-subdomains-member",
+      "href": "https://w3c.github.io/network-error-logging/#include-subdomains-member",
       "level": 4,
       "title": "The include_subdomains member",
-      "alternateIds": [
-        "x4-1-3-the-include_subdomains-member"
-      ],
       "number": "4.1.3"
     },
     {
-      "id": "the-success_fraction-member",
-      "href": "https://w3c.github.io/network-error-logging/#the-success_fraction-member",
+      "id": "success-fraction-member",
+      "href": "https://w3c.github.io/network-error-logging/#success-fraction-member",
       "level": 4,
       "title": "The success_fraction member",
-      "alternateIds": [
-        "x4-1-4-the-success_fraction-member"
-      ],
       "number": "4.1.4"
     },
     {
-      "id": "the-failure_fraction-member",
-      "href": "https://w3c.github.io/network-error-logging/#the-failure_fraction-member",
+      "id": "failure-fraction-member",
+      "href": "https://w3c.github.io/network-error-logging/#failure-fraction-member",
       "level": 4,
       "title": "The failure_fraction member",
-      "alternateIds": [
-        "x4-1-5-the-failure_fraction-member"
-      ],
       "number": "4.1.5"
     },
     {
@@ -184,9 +148,6 @@
       "href": "https://w3c.github.io/network-error-logging/#process-policy-headers",
       "level": 3,
       "title": "Process policy headers",
-      "alternateIds": [
-        "x4-2-process-policy-headers"
-      ],
       "number": "4.2"
     },
     {
@@ -194,9 +155,6 @@
       "href": "https://w3c.github.io/network-error-logging/#report-delivery",
       "level": 2,
       "title": "Report delivery",
-      "alternateIds": [
-        "x5-report-delivery"
-      ],
       "number": "5"
     },
     {
@@ -204,29 +162,20 @@
       "href": "https://w3c.github.io/network-error-logging/#choose-a-policy-for-a-request",
       "level": 3,
       "title": "Choose a policy for a request",
-      "alternateIds": [
-        "x5-1-choose-a-policy-for-a-request"
-      ],
       "number": "5.1"
     },
     {
-      "id": "generate-a-network-error-report-0",
-      "href": "https://w3c.github.io/network-error-logging/#generate-a-network-error-report-0",
+      "id": "generate-a-network-error-report",
+      "href": "https://w3c.github.io/network-error-logging/#generate-a-network-error-report",
       "level": 3,
       "title": "Generate a network error report",
-      "alternateIds": [
-        "generate-a-network-error-report"
-      ],
       "number": "5.2"
     },
     {
-      "id": "deliver-a-network-report-0",
-      "href": "https://w3c.github.io/network-error-logging/#deliver-a-network-report-0",
+      "id": "deliver-a-network-report",
+      "href": "https://w3c.github.io/network-error-logging/#deliver-a-network-report",
       "level": 3,
       "title": "Deliver a network report",
-      "alternateIds": [
-        "deliver-a-network-report"
-      ],
       "number": "5.3"
     },
     {
@@ -234,9 +183,6 @@
       "href": "https://w3c.github.io/network-error-logging/#predefined-network-error-types",
       "level": 2,
       "title": "Predefined network error types",
-      "alternateIds": [
-        "x6-predefined-network-error-types"
-      ],
       "number": "6"
     },
     {
@@ -244,9 +190,6 @@
       "href": "https://w3c.github.io/network-error-logging/#dns-resolution-errors",
       "level": 3,
       "title": "DNS resolution errors",
-      "alternateIds": [
-        "x6-1-dns-resolution-errors"
-      ],
       "number": "6.1"
     },
     {
@@ -254,19 +197,13 @@
       "href": "https://w3c.github.io/network-error-logging/#secure-connection-establishment-errors",
       "level": 3,
       "title": "Secure connection establishment errors",
-      "alternateIds": [
-        "x6-2-secure-connection-establishment-errors"
-      ],
       "number": "6.2"
     },
     {
-      "id": "transmission-of-request-and-response-errors",
-      "href": "https://w3c.github.io/network-error-logging/#transmission-of-request-and-response-errors",
+      "id": "transmission-errors",
+      "href": "https://w3c.github.io/network-error-logging/#transmission-errors",
       "level": 3,
       "title": "Transmission of request and response errors",
-      "alternateIds": [
-        "x6-3-transmission-of-request-and-response-errors"
-      ],
       "number": "6.3"
     },
     {
@@ -274,9 +211,6 @@
       "href": "https://w3c.github.io/network-error-logging/#examples",
       "level": 2,
       "title": "Examples",
-      "alternateIds": [
-        "x7-examples"
-      ],
       "number": "7"
     },
     {
@@ -284,9 +218,6 @@
       "href": "https://w3c.github.io/network-error-logging/#sample-policy-definitions",
       "level": 3,
       "title": "Sample Policy Definitions",
-      "alternateIds": [
-        "x7-1-sample-policy-definitions"
-      ],
       "number": "7.1"
     },
     {
@@ -294,9 +225,6 @@
       "href": "https://w3c.github.io/network-error-logging/#sample-network-error-reports",
       "level": 3,
       "title": "Sample Network Error Reports",
-      "alternateIds": [
-        "x7-2-sample-network-error-reports"
-      ],
       "number": "7.2"
     },
     {
@@ -304,9 +232,6 @@
       "href": "https://w3c.github.io/network-error-logging/#dns-misconfiguration",
       "level": 3,
       "title": "DNS misconfiguration",
-      "alternateIds": [
-        "x7-3-dns-misconfiguration"
-      ],
       "number": "7.3"
     },
     {
@@ -314,9 +239,6 @@
       "href": "https://w3c.github.io/network-error-logging/#origins-with-multiple-ip-addresses",
       "level": 3,
       "title": "Origins with multiple IP addresses",
-      "alternateIds": [
-        "x7-4-origins-with-multiple-ip-addresses"
-      ],
       "number": "7.4"
     },
     {
@@ -324,39 +246,27 @@
       "href": "https://w3c.github.io/network-error-logging/#use-cases",
       "level": 2,
       "title": "Use cases",
-      "alternateIds": [
-        "x8-use-cases"
-      ],
       "number": "8"
     },
     {
-      "id": "reporting-of-navigation-failures",
-      "href": "https://w3c.github.io/network-error-logging/#reporting-of-navigation-failures",
+      "id": "reporting-navigation-failures",
+      "href": "https://w3c.github.io/network-error-logging/#reporting-navigation-failures",
       "level": 3,
       "title": "Reporting of Navigation Failures",
-      "alternateIds": [
-        "x8-1-reporting-of-navigation-failures"
-      ],
       "number": "8.1"
     },
     {
-      "id": "reporting-of-first-party-subresource-fetch-failures",
-      "href": "https://w3c.github.io/network-error-logging/#reporting-of-first-party-subresource-fetch-failures",
+      "id": "reporting-first-party-subresource-failures",
+      "href": "https://w3c.github.io/network-error-logging/#reporting-first-party-subresource-failures",
       "level": 3,
       "title": "Reporting of First-party Subresource Fetch Failures",
-      "alternateIds": [
-        "x8-2-reporting-of-first-party-subresource-fetch-failures"
-      ],
       "number": "8.2"
     },
     {
-      "id": "reporting-of-third-party-subresource-fetch-failures",
-      "href": "https://w3c.github.io/network-error-logging/#reporting-of-third-party-subresource-fetch-failures",
+      "id": "reporting-third-party-subresource-failures",
+      "href": "https://w3c.github.io/network-error-logging/#reporting-third-party-subresource-failures",
       "level": 3,
       "title": "Reporting of Third-party Subresource Fetch Failures",
-      "alternateIds": [
-        "x8-3-reporting-of-third-party-subresource-fetch-failures"
-      ],
       "number": "8.3"
     },
     {
@@ -364,89 +274,86 @@
       "href": "https://w3c.github.io/network-error-logging/#privacy-considerations",
       "level": 2,
       "title": "Privacy Considerations",
-      "alternateIds": [
-        "x9-privacy-considerations"
-      ],
       "number": "9"
     },
     {
       "id": "iana-considerations",
       "href": "https://w3c.github.io/network-error-logging/#iana-considerations",
       "level": 2,
-      "title": "10. IANA Considerations",
-      "alternateIds": [
-        "x10-iana-considerations"
-      ]
+      "title": "10. IANA Considerations"
     },
     {
-      "id": "nel",
-      "href": "https://w3c.github.io/network-error-logging/#nel",
+      "id": "iana-nel",
+      "href": "https://w3c.github.io/network-error-logging/#iana-nel",
       "level": 3,
       "title": "NEL",
-      "alternateIds": [
-        "x10-1-nel"
-      ],
       "number": "10.1"
-    },
-    {
-      "id": "index",
-      "href": "https://w3c.github.io/network-error-logging/#index",
-      "level": 2,
-      "title": "Index",
-      "alternateIds": [
-        "a-index"
-      ],
-      "number": "A"
-    },
-    {
-      "id": "index-defined-here",
-      "href": "https://w3c.github.io/network-error-logging/#index-defined-here",
-      "level": 3,
-      "title": "Terms defined by this specification",
-      "alternateIds": [
-        "a-1-terms-defined-by-this-specification"
-      ],
-      "number": "A.1"
-    },
-    {
-      "id": "index-defined-elsewhere",
-      "href": "https://w3c.github.io/network-error-logging/#index-defined-elsewhere",
-      "level": 3,
-      "title": "Terms defined by reference",
-      "alternateIds": [
-        "a-2-terms-defined-by-reference"
-      ],
-      "number": "A.2"
     },
     {
       "id": "acknowledgments",
       "href": "https://w3c.github.io/network-error-logging/#acknowledgments",
       "level": 2,
-      "title": "Acknowledgments",
-      "alternateIds": [
-        "b-acknowledgments"
-      ],
-      "number": "B"
+      "title": "11. Acknowledgments"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/network-error-logging/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/network-error-logging/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/network-error-logging/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/network-error-logging/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/network-error-logging/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/network-error-logging/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
     },
     {
       "id": "references",
       "href": "https://w3c.github.io/network-error-logging/#references",
       "level": 2,
-      "title": "References",
-      "alternateIds": [
-        "c-references"
-      ],
-      "number": "C"
+      "title": "References"
     },
     {
-      "id": "normative-references",
-      "href": "https://w3c.github.io/network-error-logging/#normative-references",
+      "id": "normative",
+      "href": "https://w3c.github.io/network-error-logging/#normative",
       "level": 3,
-      "title": "Normative references",
-      "alternateIds": [
-        "c-1-normative-references"
-      ],
-      "number": "C.1"
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/network-error-logging/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://w3c.github.io/network-error-logging/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
     }
   ]
 }
