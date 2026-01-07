@@ -31,59 +31,59 @@
           "value": "none"
         },
         {
-          "name": "<content-replacement>",
-          "value": "<image>",
-          "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-replacement",
-          "type": "type"
-        },
-        {
-          "name": "<content-list>",
-          "prose": "Replaces the element’s contents with one or more anonymous inline boxes corresponding to the specified values, in the order specified. Its normal contents are suppressed and do not generate boxes, as if they were display: none. Each value contributes an inline box to the element’s contents. For <image>, this is an inline anonymous replaced element; for the others, it’s an anonymous inline run of text. If an <image> represents an invalid image, the user agent must do one of the following: \"Skip\" the <image>, generating nothing for it. Display some indication that the image can’t be displayed in place of the <image>, such as a \"broken image\" icon. This specification intentionally does not define which behavior a user agent must use, but it must use one or the other consistently.",
-          "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-list",
-          "type": "type",
-          "value": "[ <string> | <image> | <attr()> | contents | <quote> | <leader()> | <target> | <string()> | <content()> | <counter> ]+",
-          "values": [
-            {
-              "name": "<string>",
-              "prose": "Represents an anonymous inline box filled with the specified text.",
-              "href": "https://drafts.csswg.org/css-content-3/#valdef-content-string",
-              "type": "value",
-              "value": "<string>"
-            },
-            {
-              "name": "attr()",
-              "href": "https://drafts.csswg.org/css-content-3/#valdef-content-attr",
-              "type": "value",
-              "value": "attr()"
-            },
-            {
-              "name": "<image>",
-              "prose": "Represents an anonymous inline replaced element filled with the specified <image>. If the <image> represents an invalid image, this value instead represents nothing. (No inline content is added to the element, as if this value were \"skipped\".)",
-              "href": "https://drafts.csswg.org/css-content-3/#valdef-content-list-image",
-              "type": "value",
-              "value": "<image>"
-            },
-            {
-              "name": "contents",
-              "prose": "The element’s descendants. Since this can only be used once per element (you can’t duplicate the children if, e.g., one is a plugin or form control), it is handled as follows:",
-              "href": "https://drafts.csswg.org/css-content-3/#valdef-content-contents",
-              "type": "value",
-              "value": "contents"
-            },
-            {
-              "name": "leader()",
-              "value": "leader( <leader-type> )",
-              "href": "https://drafts.csswg.org/css-content-3/#funcdef-content-leader",
-              "type": "function"
-            }
-          ]
-        },
-        {
           "name": "/ [ <string> | <counter> | <attr()> ]+",
           "prose": "Specifies the \"alt text\" for the element. See § 1.2 Alternative Text for Accessibility for details. If omitted, the element has no \"alt text\".",
           "href": "https://drafts.csswg.org/css-content-3/#valdef-content---string--counter--attr",
           "type": "value",
           "value": "/ [ <string> | <counter> | <attr()> ]+"
+        },
+        {
+          "name": "<string>",
+          "prose": "Represents an anonymous inline box filled with the specified text.",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-string",
+          "type": "value",
+          "value": "<string>"
+        },
+        {
+          "name": "attr()",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-attr",
+          "type": "value",
+          "value": "attr()"
+        },
+        {
+          "name": "contents",
+          "prose": "The element’s descendants. Since this can only be used once per element (you can’t duplicate the children if, e.g., one is a plugin or form control), it is handled as follows:",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-contents",
+          "type": "value",
+          "value": "contents"
+        },
+        {
+          "name": "open-quote",
+          "prose": "These values are replaced by the appropriate string as defined by the quotes property, and increments (for open-quote) or decrements (for close-quote) the level of nesting for quotes.",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-open-quote",
+          "type": "value",
+          "value": "open-quote"
+        },
+        {
+          "name": "close-quote",
+          "prose": "These values are replaced by the appropriate string as defined by the quotes property, and increments (for open-quote) or decrements (for close-quote) the level of nesting for quotes.",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-close-quote",
+          "type": "value",
+          "value": "close-quote"
+        },
+        {
+          "name": "no-open-quote",
+          "prose": "Inserts nothing (as in none), but increments (for no-open-quote) or decrements (for no-close-quote) the level of nesting for quotes.",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-no-open-quote",
+          "type": "value",
+          "value": "no-open-quote"
+        },
+        {
+          "name": "no-close-quote",
+          "prose": "Inserts nothing (as in none), but increments (for no-open-quote) or decrements (for no-close-quote) the level of nesting for quotes.",
+          "href": "https://drafts.csswg.org/css-content-3/#valdef-content-no-close-quote",
+          "type": "value",
+          "value": "no-close-quote"
         }
       ],
       "styleDeclaration": [
@@ -230,12 +230,6 @@
               "href": "https://drafts.csswg.org/css-content-3/#valdef-content-contents",
               "type": "value",
               "value": "contents"
-            },
-            {
-              "name": "leader()",
-              "value": "leader( <leader-type> )",
-              "href": "https://drafts.csswg.org/css-content-3/#funcdef-content-leader",
-              "type": "function"
             }
           ]
         }

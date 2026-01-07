@@ -1,0 +1,20 @@
+{
+  "spec": {
+    "title": "RFC 7240 - Prefer Header for HTTP",
+    "url": "https://httpwg.org/specs/rfc7240.html"
+  },
+  "algorithms": [
+    {
+      "html": "Currently, HTTP offers no explicitly defined means of expressing the client's preferences regarding the optional aspects of handling of a given request. While HTTP does provide the Expect header -- which can be used to identify mandatory expectations for the processing of a request -- use of the field to communicate optional preferences is problematic:",
+      "rationale": "reject",
+      "steps": [
+        {
+          "html": "The semantics of the Expect header field are such that intermediaries and servers are required to reject any request that states unrecognized or unsupported expectations."
+        },
+        {
+          "html": "While the Expect header field is end to end, the HTTP specification requires that the header be processed hop by hop. That is, every interceding intermediary that handles a request between the client and the origin server is required to process an expectation and determine whether it is capable of appropriately handling it."
+        }
+      ]
+    }
+  ]
+}

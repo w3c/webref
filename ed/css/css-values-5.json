@@ -97,12 +97,6 @@
       "value": "<cross-origin-modifier> | <integrity-modifier> | <referrer-policy-modifier>",
       "values": [
         {
-          "name": "<cross-origin-modifier>",
-          "value": "cross-origin(anonymous | use-credentials)",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-cross-origin-modifier",
-          "type": "type"
-        },
-        {
           "name": "cross-origin()",
           "prose": "<cross-origin-modifier> = cross-origin(anonymous | use-credentials)",
           "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-cross-origin",
@@ -123,22 +117,10 @@
           "value": "use-credentials"
         },
         {
-          "name": "<integrity-modifier>",
-          "value": "integrity(<string>)",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-integrity-modifier",
-          "type": "type"
-        },
-        {
           "name": "integrity()",
           "prose": "<integrity-modifier> = integrity(<string>)",
           "href": "https://drafts.csswg.org/css-values-5/#funcdef-request-url-modifier-integrity",
           "type": "function"
-        },
-        {
-          "name": "<referrer-policy-modifier>",
-          "value": "referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-request-url-modifier-referrer-policy-modifier",
-          "type": "type"
         },
         {
           "name": "referrer-policy()",
@@ -402,28 +384,11 @@
           "value": "by"
         },
         {
-          "name": "<input-position>",
-          "value": "<percentage> | <number> | <dimension>",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
-          "type": "type"
-        },
-        {
-          "name": "<output-value>",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
-          "type": "type"
-        },
-        {
           "name": "<easing-function>",
           "prose": "When appearing in the first argument, specifies the “default” easing function to be used between each stop. When appearing between stops, specifies the easing function to be used between the two surrounding stops, overriding any default provided by a global <easing-function> argument. (It is analogous to animation-timing-function.) If omitted, defaults to linear. The input progress value to this easing function is the segment interpolation progress—​how far the interpolation progress is between the input positions of the nearest stops preceding and following it. For example, in color-interpolate(20%, 0%: red, ease-in-out, 80%: green, 100%: blue), the 20% interpolation progress becomes a 25% segment interpolation progress, as 20% is 25% of the way between 0% and 80%, the surrounding input positions.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-interpolate-easing-function",
           "type": "value",
           "value": "<easing-function>"
-        },
-        {
-          "name": "<segment-options>",
-          "prose": "When appearing in the first argument, provides any type-specific interpolation options that apply to every segment in the interpolation map. (For example, color-interpolate() allows <color-interpolation-method>.) When appearing between stops, provides any type-specific interpolation options that apply to the interpolation segment between the stops on either side of this argument, overriding any default provided by a corresponding global <segment-options> argument.",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options",
-          "type": "type"
         }
       ]
     },
@@ -442,28 +407,11 @@
           "value": "by"
         },
         {
-          "name": "<input-position>",
-          "value": "<percentage> | <number> | <dimension>",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
-          "type": "type"
-        },
-        {
-          "name": "<output-value>",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
-          "type": "type"
-        },
-        {
           "name": "<easing-function>",
           "prose": "When appearing in the first argument, specifies the “default” easing function to be used between each stop. When appearing between stops, specifies the easing function to be used between the two surrounding stops, overriding any default provided by a global <easing-function> argument. (It is analogous to animation-timing-function.) If omitted, defaults to linear. The input progress value to this easing function is the segment interpolation progress—​how far the interpolation progress is between the input positions of the nearest stops preceding and following it. For example, in color-interpolate(20%, 0%: red, ease-in-out, 80%: green, 100%: blue), the 20% interpolation progress becomes a 25% segment interpolation progress, as 20% is 25% of the way between 0% and 80%, the surrounding input positions.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-interpolate-easing-function",
           "type": "value",
           "value": "<easing-function>"
-        },
-        {
-          "name": "<segment-options>",
-          "prose": "When appearing in the first argument, provides any type-specific interpolation options that apply to every segment in the interpolation map. (For example, color-interpolate() allows <color-interpolation-method>.) When appearing between stops, provides any type-specific interpolation options that apply to the interpolation segment between the stops on either side of this argument, overriding any default provided by a corresponding global <segment-options> argument.",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options",
-          "type": "type"
         }
       ]
     },
@@ -482,28 +430,11 @@
           "value": "by"
         },
         {
-          "name": "<input-position>",
-          "value": "<percentage> | <number> | <dimension>",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
-          "type": "type"
-        },
-        {
-          "name": "<output-value>",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
-          "type": "type"
-        },
-        {
           "name": "<easing-function>",
           "prose": "When appearing in the first argument, specifies the “default” easing function to be used between each stop. When appearing between stops, specifies the easing function to be used between the two surrounding stops, overriding any default provided by a global <easing-function> argument. (It is analogous to animation-timing-function.) If omitted, defaults to linear. The input progress value to this easing function is the segment interpolation progress—​how far the interpolation progress is between the input positions of the nearest stops preceding and following it. For example, in color-interpolate(20%, 0%: red, ease-in-out, 80%: green, 100%: blue), the 20% interpolation progress becomes a 25% segment interpolation progress, as 20% is 25% of the way between 0% and 80%, the surrounding input positions.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-interpolate-easing-function",
           "type": "value",
           "value": "<easing-function>"
-        },
-        {
-          "name": "<segment-options>",
-          "prose": "When appearing in the first argument, provides any type-specific interpolation options that apply to every segment in the interpolation map. (For example, color-interpolate() allows <color-interpolation-method>.) When appearing between stops, provides any type-specific interpolation options that apply to the interpolation segment between the stops on either side of this argument, overriding any default provided by a corresponding global <segment-options> argument.",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options",
-          "type": "type"
         }
       ]
     },
@@ -522,28 +453,11 @@
           "value": "by"
         },
         {
-          "name": "<input-position>",
-          "value": "<percentage> | <number> | <dimension>",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
-          "type": "type"
-        },
-        {
-          "name": "<output-value>",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
-          "type": "type"
-        },
-        {
           "name": "<easing-function>",
           "prose": "When appearing in the first argument, specifies the “default” easing function to be used between each stop. When appearing between stops, specifies the easing function to be used between the two surrounding stops, overriding any default provided by a global <easing-function> argument. (It is analogous to animation-timing-function.) If omitted, defaults to linear. The input progress value to this easing function is the segment interpolation progress—​how far the interpolation progress is between the input positions of the nearest stops preceding and following it. For example, in color-interpolate(20%, 0%: red, ease-in-out, 80%: green, 100%: blue), the 20% interpolation progress becomes a 25% segment interpolation progress, as 20% is 25% of the way between 0% and 80%, the surrounding input positions.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-calc-interpolate-easing-function",
           "type": "value",
           "value": "<easing-function>"
-        },
-        {
-          "name": "<segment-options>",
-          "prose": "When appearing in the first argument, provides any type-specific interpolation options that apply to every segment in the interpolation map. (For example, color-interpolate() allows <color-interpolation-method>.) When appearing between stops, provides any type-specific interpolation options that apply to the interpolation segment between the stops on either side of this argument, overriding any default provided by a corresponding global <segment-options> argument.",
-          "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-segment-options",
-          "type": "type"
         }
       ]
     },
@@ -630,15 +544,7 @@
       "prose": "The attr() function substitutes the value of an attribute on an element into a property, similar to how the var() function substitutes a custom property value into a function.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-attr",
       "type": "function",
-      "value": "attr( <attr-name> <attr-type>? , <declaration-value>?)",
-      "values": [
-        {
-          "name": "type()",
-          "value": "type( <syntax> )",
-          "href": "https://drafts.csswg.org/css-values-5/#funcdef-attr-type",
-          "type": "function"
-        }
-      ]
+      "value": "attr( <attr-name> <attr-type>? , <declaration-value>?)"
     },
     {
       "name": "<attr-name>",
@@ -788,6 +694,21 @@
     },
     {
       "msg": "Missing definition",
+      "name": "<cross-origin-modifier>",
+      "value": "cross-origin(anonymous | use-credentials)"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "<integrity-modifier>",
+      "value": "integrity(<string>)"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "<referrer-policy-modifier>",
+      "value": "referrer-policy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)"
+    },
+    {
+      "msg": "Missing definition",
       "name": "*mix()",
       "value": "*mix( options? , [ value && <percentage>? ]# )"
     },
@@ -800,6 +721,11 @@
       "msg": "Missing definition",
       "name": "interpolate-function()",
       "value": "interpolate-function( [ <progress-source> && [ by <easing-function> ]? && <easing-function>? && <segment-options>? ] , <input-position>{1,2} : <output-value> , [ [ <easing-function> || <segment-options> ]? , <input-position>{1,2} : <output-value> ]#? )"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "<input-position>",
+      "value": "<percentage> | <number> | <dimension>"
     }
   ]
 }

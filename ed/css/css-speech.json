@@ -64,12 +64,6 @@
           "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-volume-decibel",
           "type": "value",
           "value": "<decibel>"
-        },
-        {
-          "name": "<decibel>",
-          "prose": "The <decibel> type denotes a dimension with a \"dB\" (decibel unit) unit identifier. Decibels represent the ratio of the squares of the new signal amplitude a1 and the current amplitude a0, as per the following logarithmic equation: volume(dB) = 20 × log10(a1 / a0).",
-          "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-volume-decibel",
-          "type": "type"
         }
       ],
       "styleDeclaration": [
@@ -604,18 +598,6 @@
       "animationType": "discrete",
       "values": [
         {
-          "name": "<voice-family-name>",
-          "prose": "Values are specific voice instances (e.g., Mike, comedian, mary, carlos2, \"valley girl\"). Like font-family names, voice names must either be given quoted as strings, or unquoted as a sequence of one or more CSS identifiers. If a sequence of identifiers is given as a voice name, the computed value is the name converted to a string by joining all the identifiers in the sequence by single spaces. Voice names that happen to be the same as the gender keywords (male, female and neutral) or that happen to match the CSS-wide keywords or preserve must be quoted to disambiguate with these keywords. The keyword default is reserved for future use and must also be quoted when used as voice names. It is recommended to quote voice names that contain white space, digits, or punctuation characters other than hyphens—​even if these voice names are valid in unquoted form—​in order to improve code clarity. For example: voice-family: \"john doe\", \"Henry the-8th\";",
-          "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-voice-family-name",
-          "type": "type"
-        },
-        {
-          "name": "<age>",
-          "prose": "Possible values are child, young and old, indicating the preferred age category to match during voice selection.",
-          "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-age",
-          "type": "type"
-        },
-        {
           "name": "child",
           "value": "child",
           "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-family-child",
@@ -632,12 +614,6 @@
           "value": "old",
           "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-family-old",
           "type": "value"
-        },
-        {
-          "name": "<gender>",
-          "prose": "One of the keywords male, female, or neutral, specifying a male, female, or neutral voice, respectively.",
-          "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-family-gender",
-          "type": "type"
         },
         {
           "name": "male",
@@ -776,11 +752,6 @@
           "href": "https://drafts.csswg.org/css-speech-1/#valdef-voice-pitch-semitones",
           "type": "value",
           "value": "<semitones>"
-        },
-        {
-          "name": "<semitones>",
-          "href": "https://drafts.csswg.org/css-speech-1/#typedef-voice-pitch-semitones",
-          "type": "type"
         },
         {
           "name": "<percentage>",

@@ -1,16 +1,19 @@
 {
   "spec": {
     "title": "Motion Path Module Level 1",
-    "url": "https://drafts.fxtf.org/motion-1/"
+    "url": "https://drafts.csswg.org/motion-1/"
   },
   "links": {
     "rawlinks": {
+      "http://lists.w3.org/Archives/Public/public-css-testsuite": {},
+      "http://lists.w3.org/Archives/Public/public-fx/": {},
       "http://wpt.live/css/motion/animation/offset-anchor-composition.html": {},
       "http://wpt.live/css/motion/animation/offset-anchor-interpolation.html": {},
       "http://wpt.live/css/motion/animation/offset-distance-composition.html": {},
       "http://wpt.live/css/motion/animation/offset-distance-interpolation.html": {},
       "http://wpt.live/css/motion/animation/offset-interpolation.html": {},
       "http://wpt.live/css/motion/animation/offset-path-composition.html": {},
+      "http://wpt.live/css/motion/animation/offset-path-coord-box-interpolation.html": {},
       "http://wpt.live/css/motion/animation/offset-path-interpolation-001.html": {},
       "http://wpt.live/css/motion/animation/offset-path-interpolation-002.html": {},
       "http://wpt.live/css/motion/animation/offset-path-interpolation-003.html": {},
@@ -147,18 +150,62 @@
       "http://wpt.live/css/motion/parsing/offset-rotate-parsing-invalid.html": {},
       "http://wpt.live/css/motion/parsing/offset-rotate-parsing-valid.html": {},
       "http://wpt.live/css/motion/parsing/offset-shorthand.html": {},
+      "http://www.w3.org/Style/CSS/Test/": {},
+      "http://www.w3.org/TR/CSS/": {
+        "anchors": [
+          "future-proofing",
+          "unstable",
+          "proprietary-extension"
+        ]
+      },
+      "http://www.w3.org/TR/CSS21/conform.html": {
+        "anchors": [
+          "style-sheet",
+          "user-agent",
+          "ignore"
+        ]
+      },
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/offset": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/offset-anchor": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/offset-distance": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/offset-path": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/offset-position": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/offset-rotate": {},
+      "https://developer.mozilla.org/en-US/docs/Web/CSS/ray": {},
+      "https://drafts.csswg.org/css-backgrounds/": {},
+      "https://drafts.csswg.org/css-box-3/": {},
+      "https://drafts.csswg.org/css-box-4/": {},
       "https://drafts.csswg.org/css-cascade-4/": {
         "anchors": [
           "valdef-all-initial",
           "valdef-all-inherit"
         ]
       },
+      "https://drafts.csswg.org/css-cascade-5/": {},
+      "https://drafts.csswg.org/css-contain-2/": {},
+      "https://drafts.csswg.org/css-display-4/": {},
+      "https://drafts.csswg.org/css-images-4/": {},
+      "https://drafts.csswg.org/css-masking-1/": {},
+      "https://drafts.csswg.org/css-position-3/": {},
+      "https://drafts.csswg.org/css-round-display/": {},
+      "https://drafts.csswg.org/css-shapes/": {},
       "https://drafts.csswg.org/css-transforms-1/": {
         "anchors": [
+          "transform-rendering",
           "transformable-element"
         ]
       },
+      "https://drafts.csswg.org/css-transforms-2/": {
+        "anchors": [
+          "ctm"
+        ]
+      },
+      "https://drafts.csswg.org/css-transforms/": {},
+      "https://drafts.csswg.org/css-values-3/": {},
+      "https://drafts.csswg.org/css-values-4/": {},
+      "https://drafts.csswg.org/css-values-5/": {},
+      "https://drafts.csswg.org/css2/": {},
       "https://github.com/w3c/fxtf-drafts/issues": {},
       "https://github.com/w3c/fxtf-drafts/issues/209": {},
       "https://github.com/w3c/fxtf-drafts/issues/339": {},
@@ -180,6 +227,7 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/motion/animation/offset-distance-interpolation.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/motion/animation/offset-interpolation.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/motion/animation/offset-path-composition.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/motion/animation/offset-path-coord-box-interpolation.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/motion/animation/offset-path-interpolation-001.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/motion/animation/offset-path-interpolation-002.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/motion/animation/offset-path-interpolation-003.html": {},
@@ -316,15 +364,20 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/motion/parsing/offset-rotate-parsing-invalid.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/motion/parsing/offset-rotate-parsing-valid.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/motion/parsing/offset-shorthand.html": {},
-      "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
-      "https://lists.w3.org/Archives/Public/public-fx/": {},
       "https://lists.w3.org/Archives/Public/public-fxtf-archive/": {},
+      "https://svgwg.org/svg2-draft/": {},
+      "https://svgwg.org/svg2-draft/paths.html": {
+        "anchors": [
+          "PathDirectionality"
+        ]
+      },
       "https://wpt.fyi/results/css/motion/animation/offset-anchor-composition.html": {},
       "https://wpt.fyi/results/css/motion/animation/offset-anchor-interpolation.html": {},
       "https://wpt.fyi/results/css/motion/animation/offset-distance-composition.html": {},
       "https://wpt.fyi/results/css/motion/animation/offset-distance-interpolation.html": {},
       "https://wpt.fyi/results/css/motion/animation/offset-interpolation.html": {},
       "https://wpt.fyi/results/css/motion/animation/offset-path-composition.html": {},
+      "https://wpt.fyi/results/css/motion/animation/offset-path-coord-box-interpolation.html": {},
       "https://wpt.fyi/results/css/motion/animation/offset-path-interpolation-001.html": {},
       "https://wpt.fyi/results/css/motion/animation/offset-path-interpolation-002.html": {},
       "https://wpt.fyi/results/css/motion/animation/offset-path-interpolation-003.html": {},
@@ -462,8 +515,6 @@
       "https://wpt.fyi/results/css/motion/parsing/offset-rotate-parsing-valid.html": {},
       "https://wpt.fyi/results/css/motion/parsing/offset-shorthand.html": {},
       "https://www.w3.org/Style/": {},
-      "https://www.w3.org/Style/CSS/Test/": {},
-      "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2015/WD-motion-1-20150409/": {
         "anchors": [
           "motion-path-property",
@@ -481,36 +532,12 @@
         ]
       },
       "https://www.w3.org/TR/2018/WD-motion-1-20181218/": {},
-      "https://www.w3.org/TR/CSS/": {
-        "anchors": [
-          "future-proofing",
-          "unstable",
-          "proprietary-extension"
-        ]
-      },
-      "https://www.w3.org/TR/CSS2/": {},
       "https://www.w3.org/TR/CSS21/about.html": {
         "anchors": [
           "property-defs"
         ]
       },
-      "https://www.w3.org/TR/CSS21/conform.html": {
-        "anchors": [
-          "style-sheet",
-          "user-agent",
-          "ignore"
-        ]
-      },
       "https://www.w3.org/TR/SVG11/": {},
-      "https://www.w3.org/TR/SVG2/": {},
-      "https://www.w3.org/TR/SVG2/paths.html": {
-        "anchors": [
-          "PathDirectionality"
-        ]
-      },
-      "https://www.w3.org/TR/css-backgrounds-3/": {},
-      "https://www.w3.org/TR/css-box-3/": {},
-      "https://www.w3.org/TR/css-box-4/": {},
       "https://www.w3.org/TR/css-cascade/": {
         "anchors": [
           "initial-values",
@@ -519,25 +546,6 @@
           "computed"
         ]
       },
-      "https://www.w3.org/TR/css-contain-2/": {},
-      "https://www.w3.org/TR/css-display-4/": {},
-      "https://www.w3.org/TR/css-images-4/": {},
-      "https://www.w3.org/TR/css-masking-1/": {},
-      "https://www.w3.org/TR/css-round-display-1/": {},
-      "https://www.w3.org/TR/css-shapes-1/": {},
-      "https://www.w3.org/TR/css-transforms-1/": {
-        "anchors": [
-          "transform-rendering"
-        ]
-      },
-      "https://www.w3.org/TR/css-transforms-2/": {
-        "anchors": [
-          "ctm"
-        ]
-      },
-      "https://www.w3.org/TR/css-values-3/": {},
-      "https://www.w3.org/TR/css-values-4/": {},
-      "https://www.w3.org/TR/css-values-5/": {},
       "https://www.w3.org/TR/css-values/": {
         "anchors": [
           "value-defs",
@@ -562,90 +570,67 @@
           "sec-Disclosure"
         ]
       },
-      "https://www.w3.org/policies/process/20231103/": {}
+      "https://www.w3.org/policies/process/20250818/": {}
     },
     "autolinks": {
-      "https://drafts.csswg.org/css-shapes-1/": {
-        "anchors": [
-          "funcdef-basic-shape-shape"
-        ]
-      },
-      "https://drafts.csswg.org/css2/": {
-        "anchors": [
-          "comb-one",
-          "comb-any",
-          "comb-all",
-          "mult-opt",
-          "valdef-position-static"
-        ]
-      },
-      "https://www.w3.org/TR/CSS2/cascade.html": {
-        "anchors": [
-          "computed-value"
-        ]
-      },
-      "https://www.w3.org/TR/CSS2/visuren.html": {
-        "anchors": [
-          "x43",
-          "containing-block",
-          "propdef-left",
-          "propdef-top",
-          "propdef-position"
-        ]
-      },
-      "https://www.w3.org/TR/SVG2/paths.html": {
-        "anchors": [
-          "TermEquivalentPath",
-          "TermPathDirection",
-          "TermSegment-CompletingClosePath"
-        ]
-      },
-      "https://www.w3.org/TR/SVG2/shapes.html": {
-        "anchors": [
-          "TermShapeElement"
-        ]
-      },
-      "https://www.w3.org/TR/css-backgrounds-3/": {
+      "https://drafts.csswg.org/css-backgrounds-3/": {
         "anchors": [
           "propdef-border-radius"
         ]
       },
-      "https://www.w3.org/TR/css-box-4/": {
+      "https://drafts.csswg.org/css-box-4/": {
         "anchors": [
-          "typedef-coord-box"
+          "typedef-coord-box",
+          "valdef-box-border-box",
+          "valdef-box-view-box"
         ]
       },
-      "https://www.w3.org/TR/css-contain-2/": {
+      "https://drafts.csswg.org/css-cascade-5/": {
+        "anchors": [
+          "computed-value"
+        ]
+      },
+      "https://drafts.csswg.org/css-contain-2/": {
         "anchors": [
           "propdef-contain"
         ]
       },
-      "https://www.w3.org/TR/css-display-4/": {
+      "https://drafts.csswg.org/css-display-4/": {
         "anchors": [
-          "box"
+          "box",
+          "containing-block"
         ]
       },
-      "https://www.w3.org/TR/css-images-4/": {
+      "https://drafts.csswg.org/css-images-4/": {
         "anchors": [
           "gradient-function"
         ]
       },
-      "https://www.w3.org/TR/css-masking-1/": {
+      "https://drafts.csswg.org/css-masking-1/": {
         "anchors": [
           "typedef-geometry-box"
         ]
       },
-      "https://www.w3.org/TR/css-shapes-1/": {
+      "https://drafts.csswg.org/css-position-3/": {
+        "anchors": [
+          "propdef-left",
+          "propdef-top",
+          "propdef-position",
+          "valdef-position-static"
+        ]
+      },
+      "https://drafts.csswg.org/css-shapes-1/": {
         "anchors": [
           "typedef-basic-shape",
           "basic-shape-reference-box",
           "funcdef-basic-shape-path",
+          "funcdef-basic-shape-shape",
           "funcdef-basic-shape-circle",
           "funcdef-basic-shape-ellipse",
           "funcdef-basic-shape-polygon"
         ]
       },
-      "https://www.w3.org/TR/css-transforms-1/": {
+      "https://drafts.csswg.org/css-transforms-1/": {
         "anchors": [
           "propdef-transform",
           "funcdef-transform-translate",
@@ -653,24 +638,45 @@
           "propdef-transform-origin"
         ]
       },
-      "https://www.w3.org/TR/css-transforms-2/": {
+      "https://drafts.csswg.org/css-transforms-2/": {
         "anchors": [
           "propdef-translate",
           "propdef-rotate",
           "propdef-scale"
         ]
       },
-      "https://www.w3.org/TR/css-values-4/": {
+      "https://drafts.csswg.org/css-values-4/": {
         "anchors": [
+          "comb-one",
+          "comb-any",
           "url-value",
           "angle-value",
+          "comb-all",
+          "mult-opt",
           "typedef-length-percentage",
           "mult-req"
         ]
       },
-      "https://www.w3.org/TR/css-values-5/": {
+      "https://drafts.csswg.org/css-values-5/": {
         "anchors": [
           "typedef-position"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/paths.html": {
+        "anchors": [
+          "TermEquivalentPath",
+          "TermPathDirection",
+          "TermSegment-CompletingClosePath"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/shapes.html": {
+        "anchors": [
+          "TermShapeElement"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/visuren.html": {
+        "anchors": [
+          "x43"
         ]
       }
     }

@@ -1,253 +1,193 @@
 {
   "spec": {
-    "title": "RFC 8942: HTTP Client Hints",
-    "url": "https://www.rfc-editor.org/rfc/rfc8942"
+    "title": "RFC 8942 - HTTP Client Hints",
+    "url": "https://httpwg.org/specs/rfc8942.html"
   },
   "headings": [
     {
-      "id": "rfcnum",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#rfcnum",
-      "level": 1,
-      "title": "RFC 8942"
-    },
-    {
-      "id": "title",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#title",
-      "level": 1,
-      "title": "HTTP Client Hints"
-    },
-    {
-      "id": "section-abstract",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-abstract",
+      "id": "rfc.abstract",
+      "href": "https://httpwg.org/specs/rfc8942.html#rfc.abstract",
       "level": 2,
-      "title": "Abstract",
-      "alternateIds": [
-        "abstract"
-      ]
+      "title": "Abstract"
     },
     {
-      "id": "section-boilerplate.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-boilerplate.1",
-      "level": 2,
-      "title": "Status of This Memo",
-      "alternateIds": [
-        "name-status-of-this-memo"
-      ]
-    },
-    {
-      "id": "section-boilerplate.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-boilerplate.2",
-      "level": 2,
-      "title": "Copyright Notice",
-      "alternateIds": [
-        "name-copyright-notice"
-      ]
-    },
-    {
-      "id": "section-toc.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-toc.1",
-      "level": 2,
-      "title": "Table of Contents",
-      "alternateIds": [
-        "name-table-of-contents"
-      ]
-    },
-    {
-      "id": "section-1",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-1",
+      "id": "introduction",
+      "href": "https://httpwg.org/specs/rfc8942.html#introduction",
       "level": 2,
       "title": "Introduction",
       "alternateIds": [
-        "name-introduction"
+        "rfc.section.1"
       ],
       "number": "1"
     },
     {
-      "id": "section-1.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-1.1",
+      "id": "notational-conventions",
+      "href": "https://httpwg.org/specs/rfc8942.html#notational-conventions",
       "level": 3,
       "title": "Notational Conventions",
       "alternateIds": [
-        "name-notational-conventions"
+        "rfc.section.1.1"
       ],
       "number": "1.1"
     },
     {
-      "id": "section-2",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-2",
+      "id": "client-hint-request-header-fields",
+      "href": "https://httpwg.org/specs/rfc8942.html#client-hint-request-header-fields",
       "level": 2,
       "title": "Client Hints Request Header Fields",
       "alternateIds": [
-        "name-client-hints-request-header"
+        "rfc.section.2"
       ],
       "number": "2"
     },
     {
-      "id": "section-2.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-2.1",
+      "id": "sending-client-hints",
+      "href": "https://httpwg.org/specs/rfc8942.html#sending-client-hints",
       "level": 3,
       "title": "Sending Client Hints",
       "alternateIds": [
-        "name-sending-client-hints"
+        "rfc.section.2.1"
       ],
       "number": "2.1"
     },
     {
-      "id": "section-2.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-2.2",
+      "id": "server-processing-of-client-hints",
+      "href": "https://httpwg.org/specs/rfc8942.html#server-processing-of-client-hints",
       "level": 3,
       "title": "Server Processing of Client Hints",
       "alternateIds": [
-        "name-server-processing-of-client"
+        "rfc.section.2.2"
       ],
       "number": "2.2"
     },
     {
-      "id": "section-3",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-3",
+      "id": "advertising-server-support",
+      "href": "https://httpwg.org/specs/rfc8942.html#advertising-server-support",
       "level": 2,
       "title": "Advertising Server Support",
       "alternateIds": [
-        "name-advertising-server-support"
+        "rfc.section.3"
       ],
       "number": "3"
     },
     {
-      "id": "section-3.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-3.1",
+      "id": "accept-ch",
+      "href": "https://httpwg.org/specs/rfc8942.html#accept-ch",
       "level": 3,
       "title": "The Accept-CH Response Header Field",
       "alternateIds": [
-        "name-the-accept-ch-response-head"
+        "rfc.section.3.1"
       ],
       "number": "3.1"
     },
     {
-      "id": "section-3.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-3.2",
+      "id": "interaction-with-caches",
+      "href": "https://httpwg.org/specs/rfc8942.html#interaction-with-caches",
       "level": 3,
       "title": "Interaction with Caches",
       "alternateIds": [
-        "name-interaction-with-caches"
+        "rfc.section.3.2"
       ],
       "number": "3.2"
     },
     {
-      "id": "section-4",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-4",
+      "id": "security-considerations",
+      "href": "https://httpwg.org/specs/rfc8942.html#security-considerations",
       "level": 2,
       "title": "Security Considerations",
       "alternateIds": [
-        "name-security-considerations"
+        "rfc.section.4"
       ],
       "number": "4"
     },
     {
-      "id": "section-4.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-4.1",
+      "id": "information-exposure",
+      "href": "https://httpwg.org/specs/rfc8942.html#information-exposure",
       "level": 3,
       "title": "Information Exposure",
       "alternateIds": [
-        "name-information-exposure"
+        "rfc.section.4.1"
       ],
       "number": "4.1"
     },
     {
-      "id": "section-4.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-4.2",
+      "id": "deployment-and-security-risks",
+      "href": "https://httpwg.org/specs/rfc8942.html#deployment-and-security-risks",
       "level": 3,
       "title": "Deployment and Security Risks",
       "alternateIds": [
-        "name-deployment-and-security-ris"
+        "rfc.section.4.2"
       ],
       "number": "4.2"
     },
     {
-      "id": "section-4.3",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-4.3",
+      "id": "abuse-detection",
+      "href": "https://httpwg.org/specs/rfc8942.html#abuse-detection",
       "level": 3,
       "title": "Abuse Detection",
       "alternateIds": [
-        "name-abuse-detection"
+        "rfc.section.4.3"
       ],
       "number": "4.3"
     },
     {
-      "id": "section-5",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-5",
+      "id": "cost-of-sending-hints",
+      "href": "https://httpwg.org/specs/rfc8942.html#cost-of-sending-hints",
       "level": 2,
       "title": "Cost of Sending Hints",
       "alternateIds": [
-        "name-cost-of-sending-hints"
+        "rfc.section.5"
       ],
       "number": "5"
     },
     {
-      "id": "section-6",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-6",
+      "id": "iana-considerations",
+      "href": "https://httpwg.org/specs/rfc8942.html#iana-considerations",
       "level": 2,
       "title": "IANA Considerations",
       "alternateIds": [
-        "name-iana-considerations"
+        "rfc.section.6"
       ],
       "number": "6"
     },
     {
-      "id": "section-6.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-6.1",
+      "id": "iana-accept-ch",
+      "href": "https://httpwg.org/specs/rfc8942.html#iana-accept-ch",
       "level": 3,
       "title": "Accept-CH",
       "alternateIds": [
-        "name-accept-ch"
+        "rfc.section.6.1"
       ],
       "number": "6.1"
     },
     {
-      "id": "section-7",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-7",
+      "id": "rfc.section.7",
+      "href": "https://httpwg.org/specs/rfc8942.html#rfc.section.7",
       "level": 2,
       "title": "References",
-      "alternateIds": [
-        "name-references"
-      ],
       "number": "7"
     },
     {
-      "id": "section-7.1",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-7.1",
+      "id": "rfc.section.7.1",
+      "href": "https://httpwg.org/specs/rfc8942.html#rfc.section.7.1",
       "level": 3,
       "title": "Normative References",
-      "alternateIds": [
-        "name-normative-references"
-      ],
       "number": "7.1"
     },
     {
-      "id": "section-7.2",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-7.2",
+      "id": "rfc.section.7.2",
+      "href": "https://httpwg.org/specs/rfc8942.html#rfc.section.7.2",
       "level": 3,
       "title": "Informative References",
-      "alternateIds": [
-        "name-informative-references"
-      ],
       "number": "7.2"
     },
     {
-      "id": "section-appendix.a",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-appendix.a",
+      "id": "acknowledgements",
+      "href": "https://httpwg.org/specs/rfc8942.html#acknowledgements",
       "level": 2,
       "title": "Acknowledgements",
       "alternateIds": [
-        "name-acknowledgements"
-      ]
-    },
-    {
-      "id": "section-appendix.b",
-      "href": "https://www.rfc-editor.org/rfc/rfc8942#section-appendix.b",
-      "level": 2,
-      "title": "Authors' Addresses",
-      "alternateIds": [
-        "name-authors-addresses"
+        "rfc.section.unnumbered-4"
       ]
     }
   ]
