@@ -6,7 +6,7 @@
 [Exposed=Window]
 interface HTMLModelElement : HTMLElement {
 
-  readonly attribute Promise ready;
+  readonly attribute Promise<HTMLModelElement> ready;
   readonly attribute DOMPointReadOnly boundingBoxCenter;
   readonly attribute DOMPointReadOnly boundingBoxExtents;
   attribute DOMMatrixReadOnly entityTransform;
