@@ -1110,19 +1110,6 @@
           "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-palette-dark",
           "type": "value",
           "value": "dark"
-        },
-        {
-          "name": "<palette-identifier>",
-          "prose": "This value identifies an CSS-defined palette to use. Users can define a palette by using the @font-palette-values rule. If no applicable @font-palette-values rule is present, this value behaves as normal. <palette-identifier> is parsed as a <dashed-ident>.",
-          "href": "https://www.w3.org/TR/css-fonts-4/#typedef-font-palette-palette-identifier",
-          "type": "type"
-        },
-        {
-          "name": "<palette-mix()>",
-          "prose": "This value defines a position in the interpolation between two palette values, identified by <palette-identifier>, by the palette keywords normal, light, dark, or by another <palette-mix()> value. The glyphs of the font must be rendered with a palette that is created by interpolating for each palette color index between the matching color indices of the first and second palette specified as arguments, recursively resolving <palette-mix()> functions if needed. For each palette color, the interpolation follows the rules of the <color-mix()> function. Percentages are normalized according to CSS Color 5 § 2.1 Percentage Normalization.",
-          "href": "https://www.w3.org/TR/css-fonts-4/#typedef-font-palette-palette-mix",
-          "type": "type",
-          "value": "palette-mix(<color-interpolation-method> , [ [normal | light | dark | <palette-identifier> | <palette-mix()> ] && <percentage [0,100]>? ]#{2})"
         }
       ],
       "styleDeclaration": [
@@ -1424,12 +1411,6 @@
               "href": "https://www.w3.org/TR/css-fonts-4/#valdef-base-palette-dark",
               "type": "value",
               "value": "dark"
-            },
-            {
-              "name": "<integer>",
-              "prose": "Identifies a (zero-based) numerical palette index within the font.",
-              "href": "https://www.w3.org/TR/css-fonts-4/#typedef-base-palette-integer",
-              "type": "type"
             }
           ]
         },
@@ -1690,6 +1671,11 @@
       "msg": "Missing definition",
       "name": "font-feature-value-type",
       "value": "<@stylistic> | <@historical-forms> | <@styleset> | <@character-variant> | <@swash> | <@ornaments> | <@annotation>"
+    },
+    {
+      "msg": "Missing definition",
+      "name": "<palette-mix()>",
+      "value": "palette-mix(<color-interpolation-method> , [ [normal | light | dark | <palette-identifier> | <palette-mix()> ] && <percentage [0,100]>? ]#{2})"
     },
     {
       "msg": "Dangling value",

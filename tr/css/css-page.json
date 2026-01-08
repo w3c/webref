@@ -61,84 +61,6 @@
               "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-length",
               "type": "value",
               "value": "<length>"
-            },
-            {
-              "name": "<page-size>",
-              "prose": "A page size can be specified using one of the following media names. This is the equivalent of specifying size using length values. The definition of the media names comes from Media Standardized Names [PWGMSN].",
-              "href": "https://www.w3.org/TR/css-page-3/#typedef-page-size-page-size",
-              "type": "type",
-              "values": [
-                {
-                  "name": "A5",
-                  "prose": "Equivalent to the size of ISO A5 media: 148mm wide and 210 mm high.",
-                  "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-a5",
-                  "type": "value",
-                  "value": "A5"
-                },
-                {
-                  "name": "A4",
-                  "prose": "Equivalent to the size of ISO A4 media: 210 mm wide and 297 mm high.",
-                  "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-a4",
-                  "type": "value",
-                  "value": "A4"
-                },
-                {
-                  "name": "A3",
-                  "prose": "Equivalent to the size of ISO A3 media: 297mm wide and 420mm high.",
-                  "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-a3",
-                  "type": "value",
-                  "value": "A3"
-                },
-                {
-                  "name": "B5",
-                  "prose": "Equivalent to the size of ISO B5 media: 176mm wide by 250mm high.",
-                  "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-b5",
-                  "type": "value",
-                  "value": "B5"
-                },
-                {
-                  "name": "B4",
-                  "prose": "Equivalent to the size of ISO B4 media: 250mm wide by 353mm high.",
-                  "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-b4",
-                  "type": "value",
-                  "value": "B4"
-                },
-                {
-                  "name": "JIS-B5",
-                  "prose": "Equivalent to the size of JIS B5 media: 182mm wide by 257mm high.",
-                  "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-jis-b5",
-                  "type": "value",
-                  "value": "JIS-B5"
-                },
-                {
-                  "name": "JIS-B4",
-                  "prose": "Equivalent to the size of JIS B4 media: 257mm wide by 364mm high.",
-                  "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-jis-b4",
-                  "type": "value",
-                  "value": "JIS-B4"
-                },
-                {
-                  "name": "letter",
-                  "prose": "Equivalent to the size of North American letter media: 8.5 inches wide and 11 inches high",
-                  "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-letter",
-                  "type": "value",
-                  "value": "letter"
-                },
-                {
-                  "name": "legal",
-                  "prose": "Equivalent to the size of North American legal: 8.5 inches wide by 14 inches high.",
-                  "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-legal",
-                  "type": "value",
-                  "value": "legal"
-                },
-                {
-                  "name": "ledger",
-                  "prose": "Equivalent to the size of North American ledger: 11 inches wide by 17 inches high.",
-                  "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-ledger",
-                  "type": "value",
-                  "value": "ledger"
-                }
-              ]
             }
           ]
         },
@@ -377,6 +299,98 @@
       "href": "https://www.w3.org/TR/css-page-3/#typedef-pseudo-page",
       "type": "type",
       "value": "':' [ left | right | first | blank ]"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Dangling value",
+      "name": "A5",
+      "prose": "Equivalent to the size of ISO A5 media: 148mm wide and 210 mm high.",
+      "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-a5",
+      "type": "value",
+      "value": "A5",
+      "for": "<page-size>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "A4",
+      "prose": "Equivalent to the size of ISO A4 media: 210 mm wide and 297 mm high.",
+      "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-a4",
+      "type": "value",
+      "value": "A4",
+      "for": "<page-size>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "A3",
+      "prose": "Equivalent to the size of ISO A3 media: 297mm wide and 420mm high.",
+      "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-a3",
+      "type": "value",
+      "value": "A3",
+      "for": "<page-size>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "B5",
+      "prose": "Equivalent to the size of ISO B5 media: 176mm wide by 250mm high.",
+      "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-b5",
+      "type": "value",
+      "value": "B5",
+      "for": "<page-size>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "B4",
+      "prose": "Equivalent to the size of ISO B4 media: 250mm wide by 353mm high.",
+      "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-b4",
+      "type": "value",
+      "value": "B4",
+      "for": "<page-size>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "JIS-B5",
+      "prose": "Equivalent to the size of JIS B5 media: 182mm wide by 257mm high.",
+      "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-jis-b5",
+      "type": "value",
+      "value": "JIS-B5",
+      "for": "<page-size>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "JIS-B4",
+      "prose": "Equivalent to the size of JIS B4 media: 257mm wide by 364mm high.",
+      "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-jis-b4",
+      "type": "value",
+      "value": "JIS-B4",
+      "for": "<page-size>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "letter",
+      "prose": "Equivalent to the size of North American letter media: 8.5 inches wide and 11 inches high",
+      "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-letter",
+      "type": "value",
+      "value": "letter",
+      "for": "<page-size>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "legal",
+      "prose": "Equivalent to the size of North American legal: 8.5 inches wide by 14 inches high.",
+      "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-legal",
+      "type": "value",
+      "value": "legal",
+      "for": "<page-size>"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "ledger",
+      "prose": "Equivalent to the size of North American ledger: 11 inches wide by 17 inches high.",
+      "href": "https://www.w3.org/TR/css-page-3/#valdef-page-size-ledger",
+      "type": "value",
+      "value": "ledger",
+      "for": "<page-size>"
     }
   ]
 }

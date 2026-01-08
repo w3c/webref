@@ -80,15 +80,7 @@
       "name": "::picker()",
       "prose": "The ::picker() pseudo-element represents the part of the form control that pops out of the page.",
       "href": "https://www.w3.org/TR/css-forms-1/#selectordef-picker",
-      "value": "::picker( <form-control-identifier>+ )",
-      "values": [
-        {
-          "name": "<form-control-identifier>",
-          "href": "https://www.w3.org/TR/css-forms-1/#typedef-picker-form-control-identifier",
-          "type": "type",
-          "value": "select"
-        }
-      ]
+      "value": "::picker( <form-control-identifier>+ )"
     },
     {
       "name": "::picker-icon",
@@ -212,6 +204,13 @@
       "href": "https://www.w3.org/TR/css-forms-1/#typedef-type",
       "type": "type",
       "value": "'<' [ number | string ] '>'"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "<form-control-identifier>",
+      "value": "select"
     }
   ]
 }

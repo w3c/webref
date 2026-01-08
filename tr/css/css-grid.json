@@ -83,12 +83,6 @@
           "href": "https://www.w3.org/TR/css-grid-2/#valdef-grid-template-columns-min-content",
           "type": "value",
           "value": "min-content"
-        },
-        {
-          "name": "fit-content()",
-          "value": "fit-content( <length-percentage> )",
-          "href": "https://www.w3.org/TR/css-grid-2/#funcdef-grid-template-columns-fit-content",
-          "type": "function"
         }
       ],
       "styleDeclaration": [
@@ -175,12 +169,6 @@
           "href": "https://www.w3.org/TR/css-grid-2/#valdef-grid-template-columns-min-content",
           "type": "value",
           "value": "min-content"
-        },
-        {
-          "name": "fit-content()",
-          "value": "fit-content( <length-percentage> )",
-          "href": "https://www.w3.org/TR/css-grid-2/#funcdef-grid-template-columns-fit-content",
-          "type": "function"
         }
       ],
       "styleDeclaration": [
@@ -372,44 +360,6 @@
       "computedValue": "specified keyword, identifier, and/or integer",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
-      "values": [
-        {
-          "name": "<grid-line>",
-          "href": "https://www.w3.org/TR/css-grid-2/#typedef-grid-row-start-grid-line",
-          "type": "type",
-          "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
-          "values": [
-            {
-              "name": "<custom-ident>",
-              "prose": "First attempt to match the grid area’s edge to a named grid area: if there is a grid line whose line name is <custom-ident>-start (for grid-*-start) / <custom-ident>-end (for grid-*-end), contributes the first such line to the grid item’s placement. Otherwise, treat this as if the integer 1 had been specified along with the <custom-ident>.",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-slot",
-              "type": "value",
-              "value": "<custom-ident>"
-            },
-            {
-              "name": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
-              "prose": "Contributes the Nth grid line to the grid item’s placement. If a negative integer is given, it instead counts in reverse, starting from the end edge of the explicit grid. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position. An <integer> value of zero makes the declaration invalid.",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-int",
-              "type": "value",
-              "value": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?"
-            },
-            {
-              "name": "span && [ <integer [1,∞]> || <custom-ident> ]",
-              "prose": "Contributes a grid span to the grid item’s placement such that the corresponding edge of the grid item’s grid area is N lines from its opposite edge in the corresponding direction. For example, grid-column-end: span 2 indicates the second grid line in the endward direction from the grid-column-start line. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span. For example, given the following declarations: .grid { grid-template-columns: 100px; } .griditem { grid-column: span foo / 4; } The grid container has an explicit grid with two grid lines, numbered 1 and 2. The grid item’s column-end edge is specified to be at line 4, so two lines are generated in the endward side of the implicit grid. Its column-start edge must be the first \"foo\" line it can find startward of that. There is no \"foo\" line in the grid, though, so the only possibility is a line in the implicit grid. Line 3 is not a candidate, because it’s on the endward side of the explicit grid, while the grid-column-start span forces it to search startward. So, the only option is for the implicit grid to generate a line on the startward side of the explicit grid. An illustration of the result. If the <integer> is omitted, it defaults to 1. Negative integers or zero are invalid.",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-span-int",
-              "type": "value",
-              "value": "span && [ <integer [1,∞]> || <custom-ident> ]"
-            },
-            {
-              "name": "auto",
-              "prose": "The property contributes nothing to the grid item’s placement, indicating auto-placement or a default span of one. (See § 8 Placing Grid Items, above.)",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-auto",
-              "type": "value",
-              "value": "auto"
-            }
-          ]
-        }
-      ],
       "styleDeclaration": [
         "grid-row-start",
         "gridRowStart"
@@ -426,44 +376,6 @@
       "computedValue": "specified keyword, identifier, and/or integer",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
-      "values": [
-        {
-          "name": "<grid-line>",
-          "href": "https://www.w3.org/TR/css-grid-2/#typedef-grid-row-start-grid-line",
-          "type": "type",
-          "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
-          "values": [
-            {
-              "name": "<custom-ident>",
-              "prose": "First attempt to match the grid area’s edge to a named grid area: if there is a grid line whose line name is <custom-ident>-start (for grid-*-start) / <custom-ident>-end (for grid-*-end), contributes the first such line to the grid item’s placement. Otherwise, treat this as if the integer 1 had been specified along with the <custom-ident>.",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-slot",
-              "type": "value",
-              "value": "<custom-ident>"
-            },
-            {
-              "name": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
-              "prose": "Contributes the Nth grid line to the grid item’s placement. If a negative integer is given, it instead counts in reverse, starting from the end edge of the explicit grid. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position. An <integer> value of zero makes the declaration invalid.",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-int",
-              "type": "value",
-              "value": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?"
-            },
-            {
-              "name": "span && [ <integer [1,∞]> || <custom-ident> ]",
-              "prose": "Contributes a grid span to the grid item’s placement such that the corresponding edge of the grid item’s grid area is N lines from its opposite edge in the corresponding direction. For example, grid-column-end: span 2 indicates the second grid line in the endward direction from the grid-column-start line. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span. For example, given the following declarations: .grid { grid-template-columns: 100px; } .griditem { grid-column: span foo / 4; } The grid container has an explicit grid with two grid lines, numbered 1 and 2. The grid item’s column-end edge is specified to be at line 4, so two lines are generated in the endward side of the implicit grid. Its column-start edge must be the first \"foo\" line it can find startward of that. There is no \"foo\" line in the grid, though, so the only possibility is a line in the implicit grid. Line 3 is not a candidate, because it’s on the endward side of the explicit grid, while the grid-column-start span forces it to search startward. So, the only option is for the implicit grid to generate a line on the startward side of the explicit grid. An illustration of the result. If the <integer> is omitted, it defaults to 1. Negative integers or zero are invalid.",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-span-int",
-              "type": "value",
-              "value": "span && [ <integer [1,∞]> || <custom-ident> ]"
-            },
-            {
-              "name": "auto",
-              "prose": "The property contributes nothing to the grid item’s placement, indicating auto-placement or a default span of one. (See § 8 Placing Grid Items, above.)",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-auto",
-              "type": "value",
-              "value": "auto"
-            }
-          ]
-        }
-      ],
       "styleDeclaration": [
         "grid-column-start",
         "gridColumnStart"
@@ -480,44 +392,6 @@
       "computedValue": "specified keyword, identifier, and/or integer",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
-      "values": [
-        {
-          "name": "<grid-line>",
-          "href": "https://www.w3.org/TR/css-grid-2/#typedef-grid-row-start-grid-line",
-          "type": "type",
-          "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
-          "values": [
-            {
-              "name": "<custom-ident>",
-              "prose": "First attempt to match the grid area’s edge to a named grid area: if there is a grid line whose line name is <custom-ident>-start (for grid-*-start) / <custom-ident>-end (for grid-*-end), contributes the first such line to the grid item’s placement. Otherwise, treat this as if the integer 1 had been specified along with the <custom-ident>.",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-slot",
-              "type": "value",
-              "value": "<custom-ident>"
-            },
-            {
-              "name": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
-              "prose": "Contributes the Nth grid line to the grid item’s placement. If a negative integer is given, it instead counts in reverse, starting from the end edge of the explicit grid. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position. An <integer> value of zero makes the declaration invalid.",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-int",
-              "type": "value",
-              "value": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?"
-            },
-            {
-              "name": "span && [ <integer [1,∞]> || <custom-ident> ]",
-              "prose": "Contributes a grid span to the grid item’s placement such that the corresponding edge of the grid item’s grid area is N lines from its opposite edge in the corresponding direction. For example, grid-column-end: span 2 indicates the second grid line in the endward direction from the grid-column-start line. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span. For example, given the following declarations: .grid { grid-template-columns: 100px; } .griditem { grid-column: span foo / 4; } The grid container has an explicit grid with two grid lines, numbered 1 and 2. The grid item’s column-end edge is specified to be at line 4, so two lines are generated in the endward side of the implicit grid. Its column-start edge must be the first \"foo\" line it can find startward of that. There is no \"foo\" line in the grid, though, so the only possibility is a line in the implicit grid. Line 3 is not a candidate, because it’s on the endward side of the explicit grid, while the grid-column-start span forces it to search startward. So, the only option is for the implicit grid to generate a line on the startward side of the explicit grid. An illustration of the result. If the <integer> is omitted, it defaults to 1. Negative integers or zero are invalid.",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-span-int",
-              "type": "value",
-              "value": "span && [ <integer [1,∞]> || <custom-ident> ]"
-            },
-            {
-              "name": "auto",
-              "prose": "The property contributes nothing to the grid item’s placement, indicating auto-placement or a default span of one. (See § 8 Placing Grid Items, above.)",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-auto",
-              "type": "value",
-              "value": "auto"
-            }
-          ]
-        }
-      ],
       "styleDeclaration": [
         "grid-row-end",
         "gridRowEnd"
@@ -534,44 +408,6 @@
       "computedValue": "specified keyword, identifier, and/or integer",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
-      "values": [
-        {
-          "name": "<grid-line>",
-          "href": "https://www.w3.org/TR/css-grid-2/#typedef-grid-row-start-grid-line",
-          "type": "type",
-          "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
-          "values": [
-            {
-              "name": "<custom-ident>",
-              "prose": "First attempt to match the grid area’s edge to a named grid area: if there is a grid line whose line name is <custom-ident>-start (for grid-*-start) / <custom-ident>-end (for grid-*-end), contributes the first such line to the grid item’s placement. Otherwise, treat this as if the integer 1 had been specified along with the <custom-ident>.",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-slot",
-              "type": "value",
-              "value": "<custom-ident>"
-            },
-            {
-              "name": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
-              "prose": "Contributes the Nth grid line to the grid item’s placement. If a negative integer is given, it instead counts in reverse, starting from the end edge of the explicit grid. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position. An <integer> value of zero makes the declaration invalid.",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-int",
-              "type": "value",
-              "value": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?"
-            },
-            {
-              "name": "span && [ <integer [1,∞]> || <custom-ident> ]",
-              "prose": "Contributes a grid span to the grid item’s placement such that the corresponding edge of the grid item’s grid area is N lines from its opposite edge in the corresponding direction. For example, grid-column-end: span 2 indicates the second grid line in the endward direction from the grid-column-start line. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span. For example, given the following declarations: .grid { grid-template-columns: 100px; } .griditem { grid-column: span foo / 4; } The grid container has an explicit grid with two grid lines, numbered 1 and 2. The grid item’s column-end edge is specified to be at line 4, so two lines are generated in the endward side of the implicit grid. Its column-start edge must be the first \"foo\" line it can find startward of that. There is no \"foo\" line in the grid, though, so the only possibility is a line in the implicit grid. Line 3 is not a candidate, because it’s on the endward side of the explicit grid, while the grid-column-start span forces it to search startward. So, the only option is for the implicit grid to generate a line on the startward side of the explicit grid. An illustration of the result. If the <integer> is omitted, it defaults to 1. Negative integers or zero are invalid.",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-span-int",
-              "type": "value",
-              "value": "span && [ <integer [1,∞]> || <custom-ident> ]"
-            },
-            {
-              "name": "auto",
-              "prose": "The property contributes nothing to the grid item’s placement, indicating auto-placement or a default span of one. (See § 8 Placing Grid Items, above.)",
-              "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-auto",
-              "type": "value",
-              "value": "auto"
-            }
-          ]
-        }
-      ],
       "styleDeclaration": [
         "grid-column-end",
         "gridColumnEnd"
@@ -809,6 +645,41 @@
     }
   ],
   "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "<grid-line>",
+      "value": "auto | <custom-ident> | [ [ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>? ] | [ span && [ <integer [1,∞]> || <custom-ident> ] ]",
+      "values": [
+        {
+          "name": "<custom-ident>",
+          "prose": "First attempt to match the grid area’s edge to a named grid area: if there is a grid line whose line name is <custom-ident>-start (for grid-*-start) / <custom-ident>-end (for grid-*-end), contributes the first such line to the grid item’s placement. Otherwise, treat this as if the integer 1 had been specified along with the <custom-ident>.",
+          "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-slot",
+          "type": "value",
+          "value": "<custom-ident>"
+        },
+        {
+          "name": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?",
+          "prose": "Contributes the Nth grid line to the grid item’s placement. If a negative integer is given, it instead counts in reverse, starting from the end edge of the explicit grid. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position. An <integer> value of zero makes the declaration invalid.",
+          "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-int",
+          "type": "value",
+          "value": "[ <integer [-∞,-1]> | <integer [1,∞]> ] && <custom-ident>?"
+        },
+        {
+          "name": "span && [ <integer [1,∞]> || <custom-ident> ]",
+          "prose": "Contributes a grid span to the grid item’s placement such that the corresponding edge of the grid item’s grid area is N lines from its opposite edge in the corresponding direction. For example, grid-column-end: span 2 indicates the second grid line in the endward direction from the grid-column-start line. If a name is given as a <custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span. For example, given the following declarations: .grid { grid-template-columns: 100px; } .griditem { grid-column: span foo / 4; } The grid container has an explicit grid with two grid lines, numbered 1 and 2. The grid item’s column-end edge is specified to be at line 4, so two lines are generated in the endward side of the implicit grid. Its column-start edge must be the first \"foo\" line it can find startward of that. There is no \"foo\" line in the grid, though, so the only possibility is a line in the implicit grid. Line 3 is not a candidate, because it’s on the endward side of the explicit grid, while the grid-column-start span forces it to search startward. So, the only option is for the implicit grid to generate a line on the startward side of the explicit grid. An illustration of the result. If the <integer> is omitted, it defaults to 1. Negative integers or zero are invalid.",
+          "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-span-int",
+          "type": "value",
+          "value": "span && [ <integer [1,∞]> || <custom-ident> ]"
+        },
+        {
+          "name": "auto",
+          "prose": "The property contributes nothing to the grid item’s placement, indicating auto-placement or a default span of one. (See § 8 Placing Grid Items, above.)",
+          "href": "https://www.w3.org/TR/css-grid-2/#grid-placement-auto",
+          "type": "value",
+          "value": "auto"
+        }
+      ]
+    },
     {
       "msg": "Dangling value",
       "name": "grid",

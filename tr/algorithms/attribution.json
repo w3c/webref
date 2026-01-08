@@ -1,0 +1,1298 @@
+{
+  "spec": {
+    "title": "Attribution Level 1",
+    "url": "https://www.w3.org/TR/attribution/"
+  },
+  "algorithms": [
+    {
+      "name": "clear impressions for a site",
+      "href": "https://www.w3.org/TR/attribution/#clear-impressions-for-a-site",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clear-impressions-for-a-site\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clear impressions for a site</dfn>,\ngiven an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin③\">origin</a> <var>origin</var>,\nrun these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>origin</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-tuple\" id=\"ref-for-concept-origin-tuple\">tuple origin</a>, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>site</var> be the value returned\nby invoking <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-registrable-domain\" id=\"ref-for-host-registrable-domain\">obtain a registrable domain</a>,\npassing <var>origin</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin-host\" id=\"ref-for-concept-origin-host\">host</a> part.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression\" id=\"ref-for-impression④④\">impression</a> <var>impression</var> of\nthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-store\" id=\"ref-for-impression-store⑤\">impression store</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-intermediary-site\" id=\"ref-for-impression-intermediary-site\">Intermediary Site</a> is <code>undefined</code> and\nits <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-impression-site\" id=\"ref-for-impression-impression-site\">Impression Site</a> is equal to <var>site</var>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">remove</a> <var>impression</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-store\" id=\"ref-for-impression-store⑥\">impression store</a> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>impression</var> has an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-intermediary-site\" id=\"ref-for-impression-intermediary-site①\">Intermediary Site</a> equal to <var>site</var>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">remove</a> <var>impression</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-store\" id=\"ref-for-impression-store⑦\">impression store</a> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+            },
+            {
+              "html": "If <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-conversion-sites\" id=\"ref-for-impression-conversion-sites①\">Conversion Sites</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contains</a> <var>site</var>:",
+              "rationale": "remove",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove②\">Remove</a> <var>site</var> from <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-conversion-sites\" id=\"ref-for-impression-conversion-sites②\">Conversion Sites</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-conversion-sites\" id=\"ref-for-impression-conversion-sites③\">Conversion Sites</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is empty</a>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove③\">remove</a> <var>impression</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-store\" id=\"ref-for-impression-store⑧\">impression store</a> and\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "If <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-conversion-callers\" id=\"ref-for-impression-conversion-callers①\">Conversion Callers</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contains</a> <var>site</var>:",
+              "rationale": "remove",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove④\">Remove</a> <var>site</var> from <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-conversion-callers\" id=\"ref-for-impression-conversion-callers②\">Conversion Callers</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-conversion-callers\" id=\"ref-for-impression-conversion-callers③\">Conversion Callers</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①\">is empty</a>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑤\">remove</a> <var>impression</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-store\" id=\"ref-for-impression-store⑨\">impression store</a> and\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue③\">continue</a>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "parse a site",
+      "href": "https://www.w3.org/TR/attribution/#parse-a-site",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-site\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a site</dfn>,\nreturning either <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site⑨\">site</a> or failure,\ngiven a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a> <var>input</var>,\nrun these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>host</var> be the value returned by invoking <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host-parser\" id=\"ref-for-concept-host-parser\">host parser</a>,\npassing <var>input</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>host</var> is failure, return failure.</p>"
+        },
+        {
+          "html": "<p>Let <var>site</var> be the value returned by <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-registrable-domain\" id=\"ref-for-host-registrable-domain①\">obtain a registrable domain</a>,\npassing <var>host</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>site</var> is null, return failure.</p>"
+        },
+        {
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#scheme-and-host\" id=\"ref-for-scheme-and-host①\">scheme-and-host</a> tuple of (\"<code>https</code>\", <var>site</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "deduct privacy budget",
+      "href": "https://www.w3.org/TR/attribution/#deduct-privacy-budget",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"deduct-privacy-budget\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">deduct privacy budget</dfn>\ngiven a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-key\" id=\"ref-for-privacy-budget-key①\">privacy budget key</a> <var>key</var>,\n<a href=\"https://webidl.spec.whatwg.org/#idl-double\" id=\"a38011ce0\">double</a> <var>epsilon</var>,\ninteger <var>value</var>,\ninteger <var>maxValue</var>, and\nnullable integer <var>l1Norm</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-store\" id=\"ref-for-privacy-budget-store④\">privacy budget store</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">contain</a> <var>key</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">set</a>\nits value of <var>key</var> to be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑨\">user agent</a>-defined value,\nplus 1000.</p>"
+        },
+        {
+          "html": "<p>Let <var>currentValue</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get\">getting the value</a> of <var>key</var>\nin the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-store\" id=\"ref-for-privacy-budget-store⑤\">privacy budget store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>sensitivity</var> be <var>l1Norm</var> if <var>l1Norm</var> is non-null, 2 * <var>value</var> otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>noiseScale</var> be 2 * <var>maxValue</var> / <var>epsilon</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>deductionFp</var> be <var>sensitivity</var> / <var>noiseScale</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>deductionFp</var> is negative or greater than <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#maximum-epsilon\" id=\"ref-for-maximum-epsilon\">maximum epsilon</a>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set①\">set</a> the value of <var>key</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-store\" id=\"ref-for-privacy-budget-store⑥\">privacy budget store</a> to 0\nand return false.</p>"
+        },
+        {
+          "html": "<p>Let <var>deduction</var> be <var>deductionFp</var> * 1000000, rounded towards positive Infinity.</p>"
+        },
+        {
+          "html": "<p>If <var>deduction</var> is greater than <var>currentValue</var>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">set</a> the value of <var>key</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-store\" id=\"ref-for-privacy-budget-store⑦\">privacy budget store</a> to 0\nand return false.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set③\">Set</a> the value of <var>key</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-store\" id=\"ref-for-privacy-budget-store⑧\">privacy budget store</a>\nto <var>currentValue</var> − <var>deduction</var>\nand return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get the current epoch",
+      "href": "https://www.w3.org/TR/attribution/#get-the-current-epoch",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-current-epoch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the current epoch</dfn>\ngiven a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site①⑦\">site</a> <var>site</var>,\nand <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" id=\"ref-for-dfn-moment⑤\">moment</a> <var>t</var>,\nreturning an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#epoch-index\" id=\"ref-for-epoch-index⑥\">epoch index</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>period</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" id=\"ref-for-dfn-duration②\">duration</a> of one <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-epoch\" id=\"ref-for-privacy-budget-epoch①②\">epoch</a>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#epoch-start-store\" id=\"ref-for-epoch-start-store③\">epoch start store</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">contain</a> <var>site</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set④\">set</a>\nits value to <var>t</var>, minus a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" id=\"ref-for-dfn-duration③\">duration</a>\nthat is randomly selected\nfrom between 0 (inclusive) and <var>period</var> (exclusive).</p>"
+        },
+        {
+          "html": "<p>Let <var>start</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get①\">getting the value</a> of <var>site</var>\nfrom the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#epoch-start-store\" id=\"ref-for-epoch-start-store④\">epoch start store</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>elapsed</var> be (<var>t</var> − <var>start</var>) / <var>period</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>elapsed</var> as an integer, rounded towards negative Infinity.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get the starting epoch for attribution",
+      "href": "https://www.w3.org/TR/attribution/#get-the-starting-epoch-for-attribution",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-starting-epoch-for-attribution\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the starting epoch for attribution</dfn>\ngiven <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site②④\">site</a> <var>site</var> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" id=\"ref-for-dfn-moment⑦\">moment</a> <var>now</var>,\nreturning an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#epoch-index\" id=\"ref-for-epoch-index⑧\">epoch index</a>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>earliestEpochIndex</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#get-the-current-epoch\" id=\"ref-for-get-the-current-epoch③\">get the current epoch</a>\nwith <var>site</var> and <var>now</var> − the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#maximum-lookback\" id=\"ref-for-maximum-lookback①\">maximum lookback</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#day\" id=\"ref-for-day①\">days</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>startEpoch</var> be <var>earliestEpochIndex</var>.</p>"
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#last-browsing-history-clear\" id=\"ref-for-last-browsing-history-clear④\">last browsing history clear</a> is set,\nperform the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>clearEpoch</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#get-the-current-epoch\" id=\"ref-for-get-the-current-epoch④\">get the current epoch</a>\nwith <var>site</var> and the value of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#last-browsing-history-clear\" id=\"ref-for-last-browsing-history-clear⑤\">last browsing history clear</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>clearEpoch</var> to <var>clearEpoch</var> + 2.</p>"
+            },
+            {
+              "html": "<p>If <var>clearEpoch</var> is greater than <var>startEpoch</var>,\nreturn <var>clearEpoch</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>startEpoch</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "clear browsing history for attribution",
+      "href": "https://www.w3.org/TR/attribution/#clear-browsing-history-for-attribution",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clear-browsing-history-for-attribution\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clear browsing history for attribution</dfn>,\ngiven a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets⑧\">set</a> of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site②⑤\">sites</a> <var>sites</var>,\na <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean\">boolean</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"clear browsing history for attribution\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clear-browsing-history-for-attribution-forgetvisits\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>forgetVisits</var></dfn>,\nand a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" id=\"ref-for-dfn-moment⑧\">moment</a> <var>now</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>forgetVisits</var> is false:",
+          "rationale": "assert",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>sites</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②\">is not empty</a>.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>site</var> in <var>sites</var>:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>startingEpoch</var> be the result of\ninvoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#get-the-starting-epoch-for-attribution\" id=\"ref-for-get-the-starting-epoch-for-attribution\">get the starting epoch for attribution</a>\ngiven <var>site</var> and <var>now</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>currentEpoch</var> be the result of\ninvoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#get-the-current-epoch\" id=\"ref-for-get-the-current-epoch⑥\">get the current epoch</a>\ngiven <var>site</var> and <var>now</var>.</p>"
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>epoch</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range\">the inclusive range</a>\nfrom <var>startingEpoch</var> to <var>currentEpoch</var>:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>key</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-key\" id=\"ref-for-privacy-budget-key③\">privacy budget key</a> formed\nfrom <var>site</var> and <var>epoch</var>.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set⑥\">Set</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-store\" id=\"ref-for-privacy-budget-store①⓪\">privacy budget store</a>[<var>key</var>] to 0.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Return.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>sites</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③\">is empty</a>:",
+          "rationale": "clear",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">Clear</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-store\" id=\"ref-for-impression-store①④\">impression store</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-clear\" id=\"ref-for-map-clear\">Clear</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-store\" id=\"ref-for-privacy-budget-store①①\">privacy budget store</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-clear\" id=\"ref-for-map-clear①\">Clear</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#epoch-start-store\" id=\"ref-for-epoch-start-store⑧\">epoch start store</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>sites</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty④\">is not empty</a>:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>impression</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-store\" id=\"ref-for-impression-store①⑤\">impression store</a>,\nif <var>sites</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contains</a> <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-impression-site\" id=\"ref-for-impression-impression-site②\">impression site</a>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑥\">remove</a> <var>impression</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-store\" id=\"ref-for-impression-store①⑥\">impression store</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>key</var> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-keys\" id=\"ref-for-map-getting-the-keys\">keys</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-store\" id=\"ref-for-privacy-budget-store①②\">privacy budget store</a>,\nif <var>sites</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contains</a> the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site②⑥\">site</a> component of <var>key</var>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove\">remove</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-store\" id=\"ref-for-privacy-budget-store①③\">privacy budget store</a>[<var>key</var>].</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>key</var> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-keys\" id=\"ref-for-map-getting-the-keys①\">keys</a> of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#epoch-start-store\" id=\"ref-for-epoch-start-store⑨\">epoch start store</a>,\nif <var>sites</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑤\">contains</a> <var>key</var>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove①\">remove</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#epoch-start-store\" id=\"ref-for-epoch-start-store①⓪\">epoch start store</a>[<var>key</var>].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#last-browsing-history-clear\" id=\"ref-for-last-browsing-history-clear⑥\">last browsing history clear</a> to <var>now</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Attribution/saveImpression(options)",
+      "href": "https://www.w3.org/TR/attribution/#dom-attribution-saveimpression",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Attribution\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-attribution-saveimpression\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>saveImpression(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>implicitInputs</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#obtain-the-implicit-api-inputs\" id=\"ref-for-obtain-the-implicit-api-inputs\">obtaining the implicit API inputs</a> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>implicitInputs</var> is not null.</p>"
+        },
+        {
+          "html": "<p>Return the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#save-an-impression\" id=\"ref-for-save-an-impression\">save an impression</a> with <var>options</var> and <var>implicitInputs</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "save an impression",
+      "href": "https://www.w3.org/TR/attribution/#save-an-impression",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"save-an-impression\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">save an impression</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dictdef-attributionimpressionoptions\" id=\"ref-for-dictdef-attributionimpressionoptions①\">AttributionImpressionOptions</a></code> <var>options</var>\nand <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs\" id=\"ref-for-implicit-api-inputs\">implicit API inputs</a> <var>implicitInputs</var>:\n\n\n    \n    <p class=\"advisement\"><a class=\"idl-code\" data-link-type=\"method\" href=\"https://www.w3.org/TR/attribution/#dom-attribution-saveimpression\" id=\"ref-for-dom-attribution-saveimpression①⑦\">saveImpression()</a>\ndoes not return a status indicating whether the impression was recorded.\nThis minimizes the ability to detect when the Attribution\nAPI is <a href=\"https://www.w3.org/TR/attribution/#opt-out\">disabled</a>.\n\n</p>\n    <p class=\"advisement\">Implementations MUST attempt to mitigate <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#side-channels\" id=\"ref-for-side-channels\">side channels</a>\nthat can reveal API state. For example, resolution of the returned promise is\nnot predicated on saving <var>impression</var> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-store\" id=\"ref-for-impression-store①⑧\">impression store</a> to ensure that\nthe amount of time it takes to resolve is not dependent on the number of\nexisting impressions or whether the API is enabled.\n\n</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be <var>implicitInputs</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs-associated-document\" id=\"ref-for-implicit-api-inputs-associated-document\">associated document</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>realm</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature①\">policy-controlled feature</a> named\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-permissionpolicy-save-impression\" id=\"ref-for-dom-permissionpolicy-save-impression\">save-impression</a></code>\", return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a>\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> in <var>realm</var>.</p>"
+        },
+        {
+          "html": "Validate the page-supplied API inputs:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-histogramindex\" id=\"ref-for-dom-attributionimpressionoptions-histogramindex②\">histogramIndex</a></code> is\ngreater than or equal to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#maximum-histogram-size\" id=\"ref-for-maximum-histogram-size\">maximum histogram size</a>,\nreturn <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror\">RangeError</a></code> in <var>realm</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-lifetimedays\" id=\"ref-for-dom-attributionimpressionoptions-lifetimedays②\">lifetimeDays</a></code> is 0,\nreturn <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with②\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①\">RangeError</a></code> in <var>realm</var>.</p>"
+            },
+            {
+              "html": "<p>Clamp <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-lifetimedays\" id=\"ref-for-dom-attributionimpressionoptions-lifetimedays③\">lifetimeDays</a></code> to\nthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#maximum-lookback\" id=\"ref-for-maximum-lookback②\">maximum lookback</a>.</p>"
+            },
+            {
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> of\n<var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-conversionsites\" id=\"ref-for-dom-attributionimpressionoptions-conversionsites①\">conversionSites</a></code> is\ngreater than an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> maximum value, return\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with③\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror②\">RangeError</a></code> in <var>realm</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>conversionSites</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets⑨\">set</a> that is the result\nof invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#parse-a-site\" id=\"ref-for-parse-a-site\">parse a site</a>\nfor each value in <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-conversionsites\" id=\"ref-for-dom-attributionimpressionoptions-conversionsites②\">conversionSites</a></code>.</p>"
+            },
+            {
+              "html": "<p>If any result in <var>conversionSites</var> is failure, return\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with④\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">\"SyntaxError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> in <var>realm</var>.</p>"
+            },
+            {
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> of\n<var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-conversioncallers\" id=\"ref-for-dom-attributionimpressionoptions-conversioncallers①\">conversionCallers</a></code> is\ngreater than an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a> maximum value, return\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑤\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror③\">RangeError</a></code> in <var>realm</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>conversionCallers</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets①⓪\">set</a> that is the result\nof invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#parse-a-site\" id=\"ref-for-parse-a-site①\">parse a site</a>\nfor each value in <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-conversioncallers\" id=\"ref-for-dom-attributionimpressionoptions-conversioncallers②\">conversionCallers</a></code>.</p>"
+            },
+            {
+              "html": "<p>If any result in <var>conversionCallers</var> is failure, return\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑥\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror①\">\"SyntaxError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> in <var>realm</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>Construct <var>impression</var> as a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression\" id=\"ref-for-impression④⑥\">saved impression</a> comprising:</p>\n        <dl>\n         <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-match-value\" id=\"ref-for-impression-match-value①\">Match Value</a>\n         </dt><dd data-md=\"\">\n          <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-matchvalue\" id=\"ref-for-dom-attributionimpressionoptions-matchvalue③\">matchValue</a></code></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-impression-site\" id=\"ref-for-impression-impression-site③\">Impression Site</a>\n         </dt><dd data-md=\"\">\n          <p><var>implicitInputs</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs-top-level-site\" id=\"ref-for-implicit-api-inputs-top-level-site\">top-level site</a></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-intermediary-site\" id=\"ref-for-impression-intermediary-site③\">Intermediary Site</a>\n         </dt><dd data-md=\"\">\n          <p><var>implicitInputs</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs-intermediary-site\" id=\"ref-for-implicit-api-inputs-intermediary-site\">intermediary site</a></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-conversion-sites\" id=\"ref-for-impression-conversion-sites⑥\">Conversion Sites</a>\n         </dt><dd data-md=\"\">\n          <p><var>conversionSites</var></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-conversion-callers\" id=\"ref-for-impression-conversion-callers④\">Conversion Callers</a>\n         </dt><dd data-md=\"\">\n          <p><var>conversionCallers</var></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-timestamp\" id=\"ref-for-impression-timestamp①\">Timestamp</a>\n         </dt><dd data-md=\"\">\n          <p><var>implicitInputs</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs-timestamp\" id=\"ref-for-implicit-api-inputs-timestamp\">timestamp</a></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-lifetime\" id=\"ref-for-impression-lifetime①\">Lifetime</a>\n         </dt><dd data-md=\"\">\n          <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-lifetimedays\" id=\"ref-for-dom-attributionimpressionoptions-lifetimedays④\">lifetimeDays</a></code> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#day\" id=\"ref-for-day②\">days</a></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-histogram-index\" id=\"ref-for-impression-histogram-index①\">Histogram Index</a>\n         </dt><dd data-md=\"\">\n          <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-histogramindex\" id=\"ref-for-dom-attributionimpressionoptions-histogramindex③\">histogramIndex</a></code></p>\n         </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-priority\" id=\"ref-for-impression-priority\">Priority</a>\n         </dt><dd data-md=\"\">\n          <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-priority\" id=\"ref-for-dom-attributionimpressionoptions-priority①\">priority</a></code></p>\n        </dd></dl>"
+            },
+            {
+              "html": "<p>If the Attribution API is <a href=\"https://www.w3.org/TR/attribution/#opt-out\">enabled</a>,\n save <var>impression</var> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-store\" id=\"ref-for-impression-store①⑦\">impression store</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>result</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dictdef-attributionimpressionresult\" id=\"ref-for-dictdef-attributionimpressionresult①\">AttributionImpressionResult</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a> <var>result</var> in <var>realm</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "obtain the implicit API inputs",
+      "href": "https://www.w3.org/TR/attribution/#obtain-the-implicit-api-inputs",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"obtain-the-implicit-api-inputs\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain the implicit API inputs</dfn> from <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#realm\" id=\"ref-for-realm\">realm</a> <var>realm</var> with\noptional <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin④\">origin</a> (default null):",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>window</var> be <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global\">global object</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>window</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code>, return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>settings</var> be <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-settings-object\" id=\"ref-for-concept-realm-settings-object\">settings object</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>timestamp</var> be <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-eso-current-wall-time\" id=\"ref-for-dfn-eso-current-wall-time\">current wall time</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>topLevelOrigin</var> be <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-environment-top-level-origin\" id=\"ref-for-concept-environment-top-level-origin③\">top-level origin</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>origin</var> is null, set <var>origin</var> to <var>settings</var>’ <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-origin\" id=\"ref-for-concept-settings-object-origin\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>topLevelSite</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#obtain-a-site\" id=\"ref-for-obtain-a-site\">obtaining a site</a> from <var>topLevelOrigin</var>.</p>"
+        },
+        {
+          "html": "Let <var>intermediarySite</var> be:",
+          "rationale": "/^otherwise(\\,| )/i",
+          "steps": [
+            {
+              "html": "<p>a value of <code>undefined</code> if <var>origin</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#same-site\" id=\"ref-for-same-site②\">same site</a> with <var>topLevelOrigin</var>,</p>"
+            },
+            {
+              "html": "<p>otherwise, the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#obtain-a-site\" id=\"ref-for-obtain-a-site①\">obtaining a site</a> from <var>origin</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs\" id=\"ref-for-implicit-api-inputs①\">implicit API inputs</a> with the following fields:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs-top-level-site\" id=\"ref-for-implicit-api-inputs-top-level-site①\">top-level site</a>\n       </dt><dd data-md=\"\">\n        <p><var>topLevelSite</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs-intermediary-site\" id=\"ref-for-implicit-api-inputs-intermediary-site①\">intermediary site</a>\n       </dt><dd data-md=\"\">\n        <p><var>intermediarySite</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs-timestamp\" id=\"ref-for-implicit-api-inputs-timestamp①\">timestamp</a>\n       </dt><dd data-md=\"\">\n        <p><var>timestamp</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs-associated-document\" id=\"ref-for-implicit-api-inputs-associated-document①\">associated document</a>:\n       </dt><dd data-md=\"\">\n        <p><var>window</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated document</a></p>\n      </dd></dl>"
+        }
+      ]
+    },
+    {
+      "name": "Attribution/measureConversion(options)",
+      "href": "https://www.w3.org/TR/attribution/#dom-attribution-measureconversion",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Attribution\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-attribution-measureconversion\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>measureConversion(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>implicitInputs</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#obtain-the-implicit-api-inputs\" id=\"ref-for-obtain-the-implicit-api-inputs①\">obtaining the implicit API inputs</a> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>implicitInputs</var> is not null.</p>"
+        },
+        {
+          "html": "<p>Return the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#measure-a-conversion\" id=\"ref-for-measure-a-conversion\">measure a conversion</a> with <var>options</var> and <var>implicitInputs</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "measure a conversion",
+      "href": "https://www.w3.org/TR/attribution/#measure-a-conversion",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"measure-a-conversion\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">measure a conversion</dfn> given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dictdef-attributionconversionoptions\" id=\"ref-for-dictdef-attributionconversionoptions②\">AttributionConversionOptions</a></code> <var>options</var>\nand <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs\" id=\"ref-for-implicit-api-inputs②\">implicit API inputs</a> <var>implicitInputs</var>:\n\n\n    \n    <p class=\"advisement\">Implementations MUST attempt to mitigate <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#side-channels\" id=\"ref-for-side-channels①\">side channels</a>\nthat can reveal API state. For example, ideally the amount of time it takes to\nresolve the returned promise would not depend on the number of stored or matched\nimpressions or whether the API is enabled.\n\n</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>document</var> be <var>implicitInputs</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs-associated-document\" id=\"ref-for-implicit-api-inputs-associated-document②\">associated document</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>realm</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use①\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②\">policy-controlled feature</a> named\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-permissionpolicy-measure-conversion\" id=\"ref-for-dom-permissionpolicy-measure-conversion\">measure-conversion</a></code>\", return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a>\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> in <var>realm</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>validatedOptions</var> be the result of\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validate-attributionconversionoptions\" id=\"ref-for-validate-attributionconversionoptions\">validating</a> <var>options</var>,\nreturning <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑧\">a promise rejected with</a> any thrown reason.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> in <var>realm</var>.</p>"
+        },
+        {
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>report</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram\">create an all-zero histogram</a> with\n <var>validatedOptions</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-histogram-size\" id=\"ref-for-validated-conversion-options-histogram-size\">histogram size</a>.</p>"
+            },
+            {
+              "html": "<p>If the Attribution API is <a href=\"https://www.w3.org/TR/attribution/#opt-out\">enabled</a>, set <var>report</var> to the\n result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#do-attribution-and-fill-a-histogram\" id=\"ref-for-do-attribution-and-fill-a-histogram\">do attribution and fill a histogram</a> with <var>validatedOptions</var>,\n <var>implicitInputs</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs-top-level-site\" id=\"ref-for-implicit-api-inputs-top-level-site②\">top-level site</a>,\n <var>implicitInputs</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs-intermediary-site\" id=\"ref-for-implicit-api-inputs-intermediary-site②\">intermediary site</a>, and\n <var>implicitInputs</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs-timestamp\" id=\"ref-for-implicit-api-inputs-timestamp②\">timestamp</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>aggregationService</var> be <var>validatedOptions</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-aggregation-service\" id=\"ref-for-validated-conversion-options-aggregation-service\">aggregation service</a>.</p>"
+            },
+            {
+              "html": "Switch on the value of <var>aggregationService</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionaggregationservice-protocol\" id=\"ref-for-dom-attributionaggregationservice-protocol①\">protocol</a></code>:",
+              "rationale": ".switch",
+              "steps": [
+                {
+                  "operation": "switch",
+                  "steps": [
+                    {
+                      "case": "dap-15-histogram",
+                      "html": "Perform the following steps:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>Let <var>encryptedReport</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#construct-a-dap-report\" id=\"ref-for-construct-a-dap-report\">construct a DAP report</a>,\ngiven <var>validatedOptions</var>,\n<var>implicitInputs</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs-top-level-site\" id=\"ref-for-implicit-api-inputs-top-level-site③\">top-level site</a>,\n<var>implicitInputs</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#implicit-api-inputs-timestamp\" id=\"ref-for-implicit-api-inputs-timestamp③\">timestamp</a>, and <var>report</var>.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>result</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dictdef-attributionconversionresult\" id=\"ref-for-dictdef-attributionconversionresult①\">AttributionConversionResult</a></code> with the following items:</p>\n        <dl>\n         <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionresult-report\" id=\"ref-for-dom-attributionconversionresult-report\">report</a></code>\n         </dt><dd data-md=\"\">\n          <p><var>encryptedReport</var></p>\n        </dd></dl>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#attribution-task-source\" id=\"ref-for-attribution-task-source\">Attribution task source</a> to\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>promise</var> with <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "validate AttributionConversionOptions",
+      "href": "https://www.w3.org/TR/attribution/#validate-attributionconversionoptions",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"validate-attributionconversionoptions\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">validate <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dictdef-attributionconversionoptions\" id=\"ref-for-dictdef-attributionconversionoptions③\">AttributionConversionOptions</a></code></dfn> <var>options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://www.w3.org/TR/attribution/#dom-attribution-aggregationservices\" id=\"ref-for-dom-attribution-aggregationservices⑤\">aggregationServices</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">contain</a>\nan <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry\">entry</a> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key\">key</a> of <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-aggregationservice\" id=\"ref-for-dom-attributionconversionoptions-aggregationservice③\">aggregationService</a></code>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-referenceerror\" id=\"ref-for-exceptiondef-referenceerror\">ReferenceError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>aggregationService</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get②\">getting the value</a>\nfrom <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#attributionaggregationservices\" id=\"ref-for-attributionaggregationservices①\">AttributionAggregationServices</a></code>,\ngiven <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-aggregationservice\" id=\"ref-for-dom-attributionconversionoptions-aggregationservice④\">aggregationService</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-epsilon\" id=\"ref-for-dom-attributionconversionoptions-epsilon①\">epsilon</a></code>\nis less than or equal to 0 or is greater than <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#maximum-epsilon\" id=\"ref-for-maximum-epsilon①\">maximum epsilon</a>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror④\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-histogramsize\" id=\"ref-for-dom-attributionconversionoptions-histogramsize①\">histogramSize</a></code>\nis 0 or greater than the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined③\">implementation-defined</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"maximum-histogram-size\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">maximum histogram size</dfn>,\nor is greater than the <dfn data-var-ignore=\"\">maximum aggregation-service histogram size</dfn>,\nif any, for <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-aggregationservice\" id=\"ref-for-dom-attributionconversionoptions-aggregationservice⑤\">aggregationService</a></code>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror⑤\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-value\" id=\"ref-for-dom-attributionconversionoptions-value①\">value</a></code> is 0,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror⑥\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-value\" id=\"ref-for-dom-attributionconversionoptions-value②\">value</a></code>\nis greater than <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-maxvalue\" id=\"ref-for-dom-attributionconversionoptions-maxvalue①\">maxValue</a></code>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror⑦\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>credit</var> be <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-credit\" id=\"ref-for-dom-attributionconversionoptions-credit①\">credit</a></code> if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>, «1» otherwise.</p>"
+        },
+        {
+          "html": "<p>If <var>credit</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑥\">is empty</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror⑧\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If any of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">items</a> of <var>credit</var> are less than or equal to 0, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror⑨\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a> of <var>credit</var> exceeds an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> maximum, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①⓪\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>lookback</var> be <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-lookbackdays\" id=\"ref-for-dom-attributionconversionoptions-lookbackdays②\">lookbackDays</a></code> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#day\" id=\"ref-for-day③\">days</a>\nif it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a>, the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#maximum-lookback\" id=\"ref-for-maximum-lookback③\">maximum lookback</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#day\" id=\"ref-for-day④\">days</a> otherwise.</p>"
+        },
+        {
+          "html": "<p>Set <var>lookback</var> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#maximum-lookback\" id=\"ref-for-maximum-lookback④\">maximum lookback</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#day\" id=\"ref-for-day⑤\">days</a>\nif it is larger than that maximum.</p>"
+        },
+        {
+          "html": "<p>If <var>lookback</var> is 0 <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#day\" id=\"ref-for-day⑥\">days</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①①\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③\">size</a> of\n<var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-matchvalues\" id=\"ref-for-dom-attributionconversionoptions-matchvalues②\">matchValues</a></code> is\ngreater than an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑤\">implementation-defined</a> maximum value, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①②\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>matchValues</var> be the result of running <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-create\" id=\"ref-for-set-create\">creating a set</a> with\n<var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-matchvalues\" id=\"ref-for-dom-attributionconversionoptions-matchvalues③\">matchValues</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size④\">size</a> of\n<var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-impressionsites\" id=\"ref-for-dom-attributionconversionoptions-impressionsites②\">impressionSites</a></code> is\ngreater than an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑥\">implementation-defined</a> maximum value, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①③\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>impressionSites</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets①④\">set</a> that is the result\nof invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#parse-a-site\" id=\"ref-for-parse-a-site②\">parse a site</a>\nfor each value in <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-impressionsites\" id=\"ref-for-dom-attributionconversionoptions-impressionsites③\">impressionSites</a></code>.</p>"
+        },
+        {
+          "html": "<p>If any result in <var>impressionSites</var> is failure, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror②\">\"SyntaxError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑤\">size</a> of\n<var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-impressioncallers\" id=\"ref-for-dom-attributionconversionoptions-impressioncallers②\">impressionCallers</a></code> is\ngreater than an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑦\">implementation-defined</a> maximum value, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①④\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>impressionCallers</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets①⑤\">set</a> that is the result\nof invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#parse-a-site\" id=\"ref-for-parse-a-site③\">parse a site</a>\nfor each value in <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-impressioncallers\" id=\"ref-for-dom-attributionconversionoptions-impressioncallers③\">impressionCallers</a></code>.</p>"
+        },
+        {
+          "html": "<p>If any result in <var>impressionCallers</var> is failure, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror③\">\"SyntaxError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options\" id=\"ref-for-validated-conversion-options\">validated conversion options</a> with the following fields:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-aggregation-service\" id=\"ref-for-validated-conversion-options-aggregation-service①\">Aggregation Service</a>\n       </dt><dd data-md=\"\">\n        <p><var>aggregationService</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-epsilon\" id=\"ref-for-validated-conversion-options-epsilon\">Epsilon</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-epsilon\" id=\"ref-for-dom-attributionconversionoptions-epsilon②\">epsilon</a></code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-histogram-size\" id=\"ref-for-validated-conversion-options-histogram-size①\">Histogram Size</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-histogramsize\" id=\"ref-for-dom-attributionconversionoptions-histogramsize②\">histogramSize</a></code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-lookback\" id=\"ref-for-validated-conversion-options-lookback\">Lookback</a>\n       </dt><dd data-md=\"\">\n        <p><var>lookback</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-match-values\" id=\"ref-for-validated-conversion-options-match-values①\">Match Values</a>\n       </dt><dd data-md=\"\">\n        <p><var>matchValues</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-impression-sites\" id=\"ref-for-validated-conversion-options-impression-sites①\">Impression Sites</a>\n       </dt><dd data-md=\"\">\n        <p><var>impressionSites</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-impression-callers\" id=\"ref-for-validated-conversion-options-impression-callers①\">Impression Callers</a>\n       </dt><dd data-md=\"\">\n        <p><var>impressionCallers</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-credit\" id=\"ref-for-validated-conversion-options-credit\">Credit</a>\n       </dt><dd data-md=\"\">\n        <p><var>credit</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-value\" id=\"ref-for-validated-conversion-options-value①\">Value</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-value\" id=\"ref-for-dom-attributionconversionoptions-value③\">value</a></code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-max-value\" id=\"ref-for-validated-conversion-options-max-value\">Max Value</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-maxvalue\" id=\"ref-for-dom-attributionconversionoptions-maxvalue②\">maxValue</a></code></p>\n      </dd></dl>"
+        }
+      ]
+    },
+    {
+      "name": "do attribution and fill a histogram",
+      "href": "https://www.w3.org/TR/attribution/#do-attribution-and-fill-a-histogram",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"do-attribution-and-fill-a-histogram\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">do attribution and fill a histogram</dfn>, given\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options\" id=\"ref-for-validated-conversion-options①\">validated conversion options</a> <var>options</var>,\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site③①\">site</a> <var>topLevelSite</var>,\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site③②\">site</a> or <code>undefined</code> <var>intermediarySite</var>,\n  and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" id=\"ref-for-dfn-moment①⓪\">moment</a> <var>now</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>matchedImpressions</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑦\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets①⑥\">set</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>currentEpoch</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#get-the-current-epoch\" id=\"ref-for-get-the-current-epoch⑦\">get the current epoch</a>\nwith <var>topLevelSite</var> and <var>now</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>startEpoch</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#get-the-starting-epoch-for-attribution\" id=\"ref-for-get-the-starting-epoch-for-attribution①\">get the starting epoch for attribution</a>\nwith <var>topLevelSite</var> and <var>now</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>earliestEpoch</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#get-the-current-epoch\" id=\"ref-for-get-the-current-epoch⑧\">get the current epoch</a>,\npassing <var>topLevelSite</var> and (<var>now</var> − <var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-lookback\" id=\"ref-for-validated-conversion-options-lookback①\">lookback</a>).</p>"
+        },
+        {
+          "html": "<p>Let <var>singleEpoch</var> be true if <var>currentEpoch</var> is equal to <var>earliestEpoch</var>, false otherwise.</p>"
+        },
+        {
+          "html": "If <var>singleEpoch</var> is true:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>matchedImpressions</var> to the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#common-matching-logic\" id=\"ref-for-common-matching-logic④\">common matching logic</a>\nwith <var>options</var>, <var>topLevelSite</var>, <var>intermediarySite</var>, <var>currentEpoch</var>, and <var>now</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>singleEpoch</var> is false:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "For each <var>epoch</var> from <var>startEpoch</var> to <var>currentEpoch</var>, inclusive:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>impressions</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#common-matching-logic\" id=\"ref-for-common-matching-logic⑤\">common matching logic</a>\nwith <var>options</var>, <var>topLevelSite</var>, <var>intermediarySite</var>, <var>epoch</var>, and <var>now</var>.</p>"
+                },
+                {
+                  "html": "If <var>impressions</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑧\">is not empty</a>:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>key</var> be a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-key\" id=\"ref-for-privacy-budget-key④\">privacy budget key</a> whose items are <var>epoch</var> and <var>topLevelSite</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Let <var>budgetOk</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#deduct-privacy-budget\" id=\"ref-for-deduct-privacy-budget①\">deduct privacy budget</a>\nwith <var>key</var>, <var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-epsilon\" id=\"ref-for-validated-conversion-options-epsilon①\">epsilon</a>,\n<var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-value\" id=\"ref-for-validated-conversion-options-value②\">value</a>,\n<var>options</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-max-value\" id=\"ref-for-validated-conversion-options-max-value①\">max value</a>,\nand null.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>budgetOk</var> is true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-extend\" id=\"ref-for-set-extend\">extend</a> <var>matchedImpressions</var> with <var>impressions</var>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>matchedImpressions</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑨\">is empty</a>, return the result of invoking\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram①\">create an all-zero histogram</a> with\n<var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-histogram-size\" id=\"ref-for-validated-conversion-options-histogram-size②\">histogram size</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>histogram</var> to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#fill-a-histogram-with-last-n-touch-attribution\" id=\"ref-for-fill-a-histogram-with-last-n-touch-attribution\">fill a histogram with last-n-touch attribution</a> with <var>matchedImpressions</var>,\n<var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-histogram-size\" id=\"ref-for-validated-conversion-options-histogram-size③\">histogram size</a>,\n<var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-value\" id=\"ref-for-validated-conversion-options-value③\">value</a>, and\n<var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-credit\" id=\"ref-for-validated-conversion-options-credit①\">credit</a>.</p>"
+        },
+        {
+          "html": "If <var>singleEpoch</var> is true:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>l1Norm</var> be the sum of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①\">items</a> in <var>histogram</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>l1Norm</var> is less than or equal to <var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-value\" id=\"ref-for-validated-conversion-options-value④\">value</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>key</var> be a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#privacy-budget-key\" id=\"ref-for-privacy-budget-key⑤\">privacy budget key</a> whose items are <var>currentEpoch</var> and <var>topLevelSite</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>budgetOk</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#deduct-privacy-budget\" id=\"ref-for-deduct-privacy-budget②\">deduct privacy budget</a>\nwith <var>key</var>, <var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-epsilon\" id=\"ref-for-validated-conversion-options-epsilon②\">epsilon</a>,\n<var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-value\" id=\"ref-for-validated-conversion-options-value⑤\">value</a>\n<var>options</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-max-value\" id=\"ref-for-validated-conversion-options-max-value②\">max value</a>,\nand <var>l1Norm</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>budgetOk</var> is false, set <var>histogram</var> to the result of invoking\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram②\">create an all-zero histogram</a> with <var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-histogram-size\" id=\"ref-for-validated-conversion-options-histogram-size④\">histogram size</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>histogram</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create an all-zero histogram",
+      "href": "https://www.w3.org/TR/attribution/#create-an-all-zero-histogram",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-all-zero-histogram\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an all-zero histogram</dfn>, given an integer <var>size</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑥\">size</a> <var>size</var>, whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item②\">items</a> are all 0.</p>"
+        }
+      ]
+    },
+    {
+      "name": "common matching logic",
+      "href": "https://www.w3.org/TR/attribution/#common-matching-logic",
+      "html": "To perform <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"common-matching-logic\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">common matching logic</dfn>, given\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options\" id=\"ref-for-validated-conversion-options②\">validated conversion options</a> <var>options</var>,\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site③③\">site</a> <var>topLevelSite</var>,\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site③④\">site</a> or <code>undefined</code> <var>intermediarySite</var>,\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#epoch-index\" id=\"ref-for-epoch-index⑨\">epoch index</a> <var>epoch</var>, and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" id=\"ref-for-dfn-moment①①\">moment</a> <var>now</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>matching</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⓪\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets①⑦\">set</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>impression</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-store\" id=\"ref-for-impression-store①⑨\">impression store</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>impressionEpoch</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#get-the-current-epoch\" id=\"ref-for-get-the-current-epoch⑨\">get the current epoch</a>,\npassing <var>topLevelSite</var> and <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-timestamp\" id=\"ref-for-impression-timestamp②\">timestamp</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>impressionEpoch</var> is not equal to <var>epoch</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>now</var> is after <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-timestamp\" id=\"ref-for-impression-timestamp③\">timestamp</a>\nplus <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-lifetime\" id=\"ref-for-impression-lifetime②\">lifetime</a>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑤\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>now</var> is after <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-timestamp\" id=\"ref-for-impression-timestamp④\">timestamp</a> plus <var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-lookback\" id=\"ref-for-validated-conversion-options-lookback②\">lookback</a>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-conversion-sites\" id=\"ref-for-impression-conversion-sites⑦\">conversion sites</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①①\">is not empty</a>\nand <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">does not contain</a> <var>topLevelSite</var>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑦\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>conversionCaller</var> be <var>intermediarySite</var> if it is not <code>undefined</code>,\n<var>topLevelSite</var> otherwise.</p>"
+            },
+            {
+              "html": "<p>If <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-conversion-callers\" id=\"ref-for-impression-conversion-callers⑤\">conversion callers</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①②\">is not empty</a>\nand <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑦\">does not contain</a> <var>conversionCaller</var>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑧\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-match-values\" id=\"ref-for-validated-conversion-options-match-values②\">match values</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①③\">is not empty</a>\nand <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑧\">does not contain</a> <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-match-value\" id=\"ref-for-impression-match-value②\">match value</a>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑨\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-impression-sites\" id=\"ref-for-validated-conversion-options-impression-sites②\">impression sites</a>\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①④\">is not empty</a> and\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑨\">does not contain</a> <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-impression-site\" id=\"ref-for-impression-impression-site④\">impression site</a>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⓪\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>impressionCaller</var> be <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-intermediary-site\" id=\"ref-for-impression-intermediary-site④\">intermediary site</a>\nif it is not <code>undefined</code>, <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-impression-site\" id=\"ref-for-impression-impression-site⑤\">impression site</a> otherwise.</p>"
+            },
+            {
+              "html": "<p>If <var>options</var>’ <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-impression-callers\" id=\"ref-for-validated-conversion-options-impression-callers②\">impression callers</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑤\">is not empty</a>\nand <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①⓪\">does not contain</a> <var>impressionCaller</var>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①①\">continue</a>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>impression</var> to <var>matching</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>matching</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "fairly allocate credit",
+      "href": "https://www.w3.org/TR/attribution/#fairly-allocate-credit",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fairly-allocate-credit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fairly allocate credit</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a> of doubles <var>credit</var> and an integer <var>value</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>credit</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑥\">empty</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>sumCredit</var> be the sum of <var>credit</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item③\">items</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>roundedCredit</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>item</var> of <var>credit</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>normalizedCredit</var> be <var>value</var> * <var>item</var> / <var>sumCredit</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>normalizedCredit</var> to <var>roundedCredit</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>idx1</var> be 0.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>n</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices\">get the indices</a> of <var>roundedCredit</var>, removing the first <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item④\">item</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>idx2</var> be <var>n</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>frac1</var> be <var>roundedCredit</var>[<var>idx1</var>] − floor(<var>roundedCredit</var>[<var>idx1</var>]).</p>"
+            },
+            {
+              "html": "<p>Let <var>frac2</var> be <var>roundedCredit</var>[<var>idx2</var>] − floor(<var>roundedCredit</var>[<var>idx2</var>]).</p>"
+            },
+            {
+              "html": "<p>If <var>frac1</var> and <var>frac2</var> are both equal to zero, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①②\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>frac1</var> + <var>frac2</var> is greater than 1, let <var>incr1</var> be 1 − <var>frac1</var> and <var>incr2</var> be 1 − <var>frac2</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, let <var>incr1</var> be −<var>frac1</var> and <var>incr2</var> be −<var>frac2</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>p1</var> be <var>incr2</var> / (<var>incr1</var> + <var>incr2</var>).</p>"
+            },
+            {
+              "html": "<p>Let <var>r</var> be a random double between 0 and 1 (inclusive).</p>"
+            },
+            {
+              "html": "<p>If <var>r</var> is less than <var>p1</var>, let <var>incr</var> be <var>incr1</var> and swap the values of <var>idx1</var> and <var>idx2</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, let <var>incr</var> be <var>incr2</var>.</p>"
+            },
+            {
+              "html": "<p>Increment <var>roundedCredit</var>[<var>idx2</var>] by <var>incr</var>.</p>"
+            },
+            {
+              "html": "<p>Decrement <var>roundedCredit</var>[<var>idx1</var>] by <var>incr</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>integerCredit</var> be the result of converting <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">every</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑥\">item</a> from <var>roundedCredit</var> into an integer by rounding to the nearest integer,\nand rounding halfway cases away from zero.</p>"
+        },
+        {
+          "html": "<p>Return <var>integerCredit</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "fill a histogram with last-n-touch attribution",
+      "href": "https://www.w3.org/TR/attribution/#fill-a-histogram-with-last-n-touch-attribution",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fill-a-histogram-with-last-n-touch-attribution\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fill a histogram with last-n-touch attribution</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#sets\" id=\"ref-for-sets①⑧\">set</a> of\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression\" id=\"ref-for-impression④⑦\">impressions</a> <var>matchedImpressions</var>, an integer <var>histogramSize</var>, an integer <var>value</var>, and\n  a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a> of doubles <var>credit</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>matchedImpressions</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑦\">not empty</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>sortedImpressions</var> be <var>matchedImpressions</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-descending-order\" id=\"ref-for-list-sort-in-descending-order\">sorted in descending order</a>\nby <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-priority\" id=\"ref-for-impression-priority①\">priority</a>, then by <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-timestamp\" id=\"ref-for-impression-timestamp⑤\">timestamp</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>N</var> be the minimum of the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑦\">size</a> of <var>credit</var>, and the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑧\">size</a> of <var>sortedImpressions</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>lastNImpressions</var> be the first <var>N</var> entries of <var>sortedImpressions</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑦\">Remove</a> all but the first <var>N</var> entries of <var>credit</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>normalizedCredit</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#fairly-allocate-credit\" id=\"ref-for-fairly-allocate-credit\">fairly allocating credit</a> with <var>credit</var> and <var>value</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>histogram</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#create-an-all-zero-histogram\" id=\"ref-for-create-an-all-zero-histogram③\">create an all-zero histogram</a>\nwith <var>histogramSize</var>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>i</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices①\">the indices</a> of <var>lastNImpressions</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>impression</var> be <var>lastNImpressions</var>[<var>i</var>].</p>"
+            },
+            {
+              "html": "<p>Let <var>value</var> be <var>normalizedCredit</var>[<var>i</var>].</p>"
+            },
+            {
+              "html": "<p>Let <var>index</var> be <var>impression</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#impression-histogram-index\" id=\"ref-for-impression-histogram-index②\">histogram index</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>index</var> is less than <var>histogram</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑨\">size</a>, increment <var>histogram</var>[<var>index</var>] by <var>value</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>histogram</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse a Save-Impression header",
+      "href": "https://www.w3.org/TR/attribution/#parse-a-save-impression-header",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-save-impression-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a <code>Save-Impression</code> header</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value\">header value</a>\n<var>input</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>dict</var> be the result of <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#text-parse\" id=\"ref-for-text-parse\">parsing structured fields</a>\nwith <var>input_bytes</var> set to <var>input</var> and\n<var>field_type</var> set to \"<code>dictionary</code>\".</p>"
+        },
+        {
+          "html": "<p>If parsing failed, return an error.</p>"
+        },
+        {
+          "html": "<p>Let <var>histogramIndex</var> be <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#save-impression-histogram-index\" id=\"ref-for-save-impression-histogram-index\">histogram-index</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"ref-for-map-with-default\">with default</a> <code>undefined</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>histogramIndex</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer④\">integer</a> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer⑧\">32-bit unsigned integer</a> range, return an error.</p>"
+        },
+        {
+          "html": "<p>Let <var>opts</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dictdef-attributionimpressionoptions\" id=\"ref-for-dictdef-attributionimpressionoptions④\">AttributionImpressionOptions</a></code> with the following items:</p>\n      <dl>\n       <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-histogramindex\" id=\"ref-for-dom-attributionimpressionoptions-histogramindex⑤\">histogramIndex</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>histogramIndex</var></p>\n      </dd></dl>"
+        },
+        {
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#save-impression-conversion-sites\" id=\"ref-for-save-impression-conversion-sites\">conversion-sites</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>conversionSites</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>conversionSites</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#inner-list\" id=\"ref-for-inner-list②\">inner list</a>, or if any of\n <var>conversionSites</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑦\">items</a> is not a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#string\" id=\"ref-for-string④\">string</a>,\n return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-conversionsites\" id=\"ref-for-dom-attributionimpressionoptions-conversionsites④\">conversionSites</a></code> to <var>conversionSites</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#save-impression-conversion-callers\" id=\"ref-for-save-impression-conversion-callers\">conversion-callers</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>conversionCallers</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value①\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>conversionCallers</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#inner-list\" id=\"ref-for-inner-list③\">inner list</a>, or if any of\n <var>conversionCallers</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑧\">items</a> is not a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#string\" id=\"ref-for-string⑤\">string</a>,\n return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-conversioncallers\" id=\"ref-for-dom-attributionimpressionoptions-conversioncallers④\">conversionCallers</a></code> to <var>conversionCallers</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#save-impression-match-value\" id=\"ref-for-save-impression-match-value\">match-value</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>matchValue</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value②\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>matchValue</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer⑤\">integer</a> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer⑨\">32-bit unsigned integer</a> range, return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-matchvalue\" id=\"ref-for-dom-attributionimpressionoptions-matchvalue⑤\">matchValue</a></code> to <var>matchValue</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#save-impression-lifetime-days\" id=\"ref-for-save-impression-lifetime-days\">lifetime-days</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>lifetimeDays</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value③\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>lifetimeDays</var> is not a positive <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer⑥\">integer</a>, return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-lifetimedays\" id=\"ref-for-dom-attributionimpressionoptions-lifetimedays⑦\">lifetimeDays</a></code> to <var>lifetimeDays</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#save-impression-priority\" id=\"ref-for-save-impression-priority\">priority</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>priority</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value④\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>priority</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer⑦\">integer</a> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-signed-integer\" id=\"ref-for-32-bit-signed-integer①\">32-bit signed integer</a> range, return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionimpressionoptions-priority\" id=\"ref-for-dom-attributionimpressionoptions-priority③\">priority</a></code> to <var>priority</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>opts</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse a Measure-Conversion header",
+      "href": "https://www.w3.org/TR/attribution/#parse-a-measure-conversion-header",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-measure-conversion-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a <code>Measure-Conversion</code> header</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value①\">header value</a>\n<var>input</var> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL</a> <var>baseUrl</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>dict</var> be the result of <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#text-parse\" id=\"ref-for-text-parse①\">parsing structured fields</a>\nwith <var>input_bytes</var> set to <var>input</var> and\n<var>field_type</var> set to \"<code>dictionary</code>\".</p>"
+        },
+        {
+          "html": "<p>If parsing failed, return an error.</p>"
+        },
+        {
+          "html": "<p>Let <var>aggregationService</var> be <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#measure-conversion-aggregation-service\" id=\"ref-for-measure-conversion-aggregation-service\">aggregation-service</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"ref-for-map-with-default①\">with default</a> <code>undefined</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>aggregationService</var> is not a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#string\" id=\"ref-for-string①⓪\">string</a>, return an error.</p>"
+        },
+        {
+          "html": "<p>Let <var>histogramSize</var> be <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#measure-conversion-histogram-size\" id=\"ref-for-measure-conversion-histogram-size\">histogram-size</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"ref-for-map-with-default②\">with default</a> <code>undefined</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>histogramSize</var> is not a positive <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer①⑤\">integer</a> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer①⓪\">32-bit unsigned integer</a> range, return an error.</p>"
+        },
+        {
+          "html": "<p>Let <var>reportUrlString</var> be <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#measure-conversion-report-url\" id=\"ref-for-measure-conversion-report-url\">report-url</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-with-default\" id=\"ref-for-map-with-default③\">with default</a> <code>undefined</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>reportUrlString</var> is not a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#string\" id=\"ref-for-string①①\">string</a>, return an error.</p>"
+        },
+        {
+          "html": "<p>Let <var>reportUrl</var> be the result of applying the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL parser</a> to <var>reportUrlString</var>, with <var>baseUrl</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>reportUrl</var> is failure, return an error.</p>"
+        },
+        {
+          "html": "<p>If <var>reportUrl</var> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url①\">potentially trustworthy URL</a>, return an error.</p>"
+        },
+        {
+          "html": "<p>If <var>reportUrl</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is not \"<code>https</code>\", return an error.</p>"
+        },
+        {
+          "html": "<p>Let <var>opts</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dictdef-attributionconversionoptions\" id=\"ref-for-dictdef-attributionconversionoptions⑥\">AttributionConversionOptions</a></code> with the following items:</p>\n      <dl>\n       <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-aggregationservice\" id=\"ref-for-dom-attributionconversionoptions-aggregationservice⑦\">aggregationService</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>aggregationService</var></p>\n       </dd><dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-histogramsize\" id=\"ref-for-dom-attributionconversionoptions-histogramsize④\">histogramSize</a></code>\n       </dt><dd data-md=\"\">\n        <p><var>histogramSize</var></p>\n      </dd></dl>"
+        },
+        {
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#measure-conversion-epsilon\" id=\"ref-for-measure-conversion-epsilon\">epsilon</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>epsilon</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value⑤\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>epsilon</var> is not a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#decimal\" id=\"ref-for-decimal②\">decimal</a> or <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer①⑥\">integer</a>, return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-epsilon\" id=\"ref-for-dom-attributionconversionoptions-epsilon④\">epsilon</a></code> to <var>epsilon</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#measure-conversion-lookback-days\" id=\"ref-for-measure-conversion-lookback-days\">lookback-days</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>lookbackDays</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value⑥\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>lookbackDays</var> is not a positive <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer①⑦\">integer</a>, return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-lookbackdays\" id=\"ref-for-dom-attributionconversionoptions-lookbackdays⑤\">lookbackDays</a></code> to <var>lookbackDays</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#measure-conversion-match-values\" id=\"ref-for-measure-conversion-match-values\">match-values</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>matchValues</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value⑦\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>matchValues</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#inner-list\" id=\"ref-for-inner-list⑧\">inner list</a>, or if any of\n <var>matchValues</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑨\">items</a> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer①⑧\">integer</a> in\n the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer①①\">32-bit unsigned integer</a> range, return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-matchvalues\" id=\"ref-for-dom-attributionconversionoptions-matchvalues⑤\">matchValues</a></code> to <var>matchValues</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#measure-conversion-impression-sites\" id=\"ref-for-measure-conversion-impression-sites\">impression-sites</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>impressionSites</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value⑧\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>impressionSites</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#inner-list\" id=\"ref-for-inner-list⑨\">inner list</a>, or if any of\n <var>impressionSites</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①⓪\">items</a> is not a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#string\" id=\"ref-for-string①②\">string</a>,\n return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-impressionsites\" id=\"ref-for-dom-attributionconversionoptions-impressionsites⑤\">impressionSites</a></code> to <var>impressionSites</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#measure-conversion-impression-callers\" id=\"ref-for-measure-conversion-impression-callers\">impression-callers</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>impressionCallers</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value⑨\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>impressionCallers</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#inner-list\" id=\"ref-for-inner-list①⓪\">inner list</a>, or if any of\n <var>impressionCallers</var>’ <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①①\">items</a> is not a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#string\" id=\"ref-for-string①③\">string</a>,\n return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-impressioncallers\" id=\"ref-for-dom-attributionconversionoptions-impressioncallers⑤\">impressionCallers</a></code> to <var>impressionCallers</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#measure-conversion-credit\" id=\"ref-for-measure-conversion-credit\">credit</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>credit</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value①⓪\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>credit</var> is not an <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#inner-list\" id=\"ref-for-inner-list①①\">inner list</a>, or if any of\n <var>credit</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①②\">items</a> is not a <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#decimal\" id=\"ref-for-decimal③\">decimal</a> or\n <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer①⑨\">integer</a>, return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-credit\" id=\"ref-for-dom-attributionconversionoptions-credit③\">credit</a></code> to <var>credit</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#measure-conversion-value\" id=\"ref-for-measure-conversion-value\">value</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑥\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>value</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value①①\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>value</var> is not a positive <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer②⓪\">integer</a> in the\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer①②\">32-bit unsigned integer</a> range, return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-value\" id=\"ref-for-dom-attributionconversionoptions-value⑤\">value</a></code> to <var>value</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>dict</var>[\"<code><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#measure-conversion-max-value\" id=\"ref-for-measure-conversion-max-value\">max-value</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑦\">exists</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>maxValue</var> be its <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-value\" id=\"ref-for-map-value①②\">value</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>maxValue</var> is not a positive <a data-link-type=\"dfn\" href=\"https://httpwg.org/specs/rfc9651#integer\" id=\"ref-for-integer②①\">integer</a> in the\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer①③\">32-bit unsigned integer</a> range, return an error.</p>"
+            },
+            {
+              "html": "<p>Set <var>opts</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionoptions-maxvalue\" id=\"ref-for-dom-attributionconversionoptions-maxvalue④\">maxValue</a></code> to <var>maxValue</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return (<var>opts</var>, <var>reportUrl</var>).</p>"
+        }
+      ]
+    },
+    {
+      "name": "send a report",
+      "href": "https://www.w3.org/TR/attribution/#send-a-report",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"send-a-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">send a report</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence\">byte sequence</a> <var>report</var>,\na <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL</a> <var>url</var>, and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-object\" id=\"ref-for-environment-settings-object\">environment settings object</a> <var>settings</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>url</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url②\">potentially trustworthy URL</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme③\">scheme</a> is \"<code>https</code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>headers</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list\">header list</a> containing a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header\">header</a> named\n<code>\"Content-Type\"</code> whose value is\n\"<code><a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#name-application-dap-report-medi\">application/dap-report</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> with the following properties:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method\">method</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>POST</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a>\n       </dt><dd data-md=\"\">\n        <p><var>url</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list\">header list</a>\n       </dt><dd data-md=\"\">\n        <p><var>headers</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body\">body</a>\n       </dt><dd data-md=\"\">\n        <p><var>report</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a>\n       </dt><dd data-md=\"\">\n        <p><var>settings</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>cors</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode\">cache mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-store</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-keepalive-flag\" id=\"ref-for-request-keepalive-flag\">keepalive</a>\n       </dt><dd data-md=\"\">\n        <p>true</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>omit</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer\">referrer</a>\n       </dt><dd data-md=\"\">\n        <p><var>url</var></p>\n      </dd></dl>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-fetch\" id=\"ref-for-concept-fetch\">Fetch</a> <var>request</var>, optionally retrying in the event of an error.</p>"
+        }
+      ]
+    },
+    {
+      "name": "handle Attribution headers",
+      "href": "https://www.w3.org/TR/attribution/#handle-attribution-headers",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-attribution-headers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle Attribution headers</dfn> given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a> <var>request</var>\nand <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> <var>response</var>, run these steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-destination\" id=\"ref-for-concept-request-destination\">destination</a> is not one of the following,\nreturn: <code>\"\"</code>, <code>\"audio\"</code>, <code>\"image\"</code>, <code>\"script\"</code>, <code>\"track\"</code>, <code>\"video\"</code>.</p>"
+        },
+        {
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①\">client</a> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#secure-context\" id=\"ref-for-secure-context\">secure context</a>, return.</p>"
+        },
+        {
+          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">URL</a> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url③\">potentially trustworthy URL</a>, return.</p>"
+        },
+        {
+          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url①\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme④\">scheme</a> is not \"<code>https</code>\", return.</p>"
+        },
+        {
+          "html": "<p>Let <var>implicitInputs</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#obtain-the-implicit-api-inputs\" id=\"ref-for-obtain-the-implicit-api-inputs②\">obtaining the implicit API inputs</a> from <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client②\">client</a>\nwith <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url②\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>implicitInputs</var> is null, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>saveImpressionHeader</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get\" id=\"ref-for-concept-header-list-get\">getting</a> <code>`<code><a data-link-type=\"http-header\" href=\"https://www.w3.org/TR/attribution/#http-headerdef-save-impression\" id=\"ref-for-http-headerdef-save-impression①\">Save-Impression</a></code>`</code> from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
+        },
+        {
+          "html": "If <var>saveImpressionHeader</var> is not null:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>impressionOptions</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#parse-a-save-impression-header\" id=\"ref-for-parse-a-save-impression-header\">parsing</a> <var>saveImpressionHeader</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>impressionOptions</var> is not an error, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#save-an-impression\" id=\"ref-for-save-an-impression①\">Save</a> <var>impressionOptions</var> with <var>implicitInputs</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>measureConversionHeader</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get\" id=\"ref-for-concept-header-list-get①\">getting</a> <code>`<code><a data-link-type=\"http-header\" href=\"https://www.w3.org/TR/attribution/#http-headerdef-measure-conversion\" id=\"ref-for-http-headerdef-measure-conversion\">Measure-Conversion</a></code>`</code> from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a>.</p>"
+        },
+        {
+          "html": "If <var>measureConversionHeader</var> is not null:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>parseConversionResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#parse-a-measure-conversion-header\" id=\"ref-for-parse-a-measure-conversion-header\">parsing</a> <var>measureConversionHeader</var>.</p>"
+            },
+            {
+              "html": "If <var>parseConversionResult</var> is not an error:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let (<var>conversionOptions</var>, <var>reportUrl</var>) be <var>parseConversionResult</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>reportPromise</var> be the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#measure-a-conversion\" id=\"ref-for-measure-a-conversion①\">measure a conversion</a> with <var>conversionOptions</var> and <var>implicitInputs</var>.</p>"
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">In parallel</a>:",
+                  "rationale": "send",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#upon-fulfillment\" id=\"ref-for-upon-fulfillment\">Upon fulfillment</a> of <var>reportPromise</var>, let <var>result</var> be the fulfilled value.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#send-a-report\" id=\"ref-for-send-a-report\">Send a report</a> with <var>result</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/attribution/#dom-attributionconversionresult-report\" id=\"ref-for-dom-attributionconversionresult-report①\">report</a></code>, <var>reportUrl</var>, and\n<var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client③\">client</a>.</p>"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "fetch-monkey-patch",
+      "html": "add the step",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#handle-attribution-headers\" id=\"ref-for-handle-attribution-headers\">Handle Attribution headers</a> with <var>request</var> and <var>response</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "construct a DAP report",
+      "href": "https://www.w3.org/TR/attribution/#construct-a-dap-report",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"construct-a-dap-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">construct a DAP report</dfn>,\nproducing a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①\">byte sequence</a> <var>report</var>,\ngiven <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options\" id=\"ref-for-validated-conversion-options③\">validated conversion options</a> <var>options</var>,\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site③⑤\">site</a> <var>topLevelSite</var>,\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" id=\"ref-for-dfn-moment①②\">moment</a> <var>now</var>,\nand a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a> of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#integer\" id=\"ref-for-integer②②\">integers</a> <var>histogram</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>field</var> be Field128,\nas defined in <a href=\"https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf-15#section-6.1.3\">Section 6.1.3</a>\nof <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/attribution/#biblio-vdaf\" title=\"Verifiable Distributed Aggregation Functions\">[VDAF]</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⓪\">size</a> of <var>histogram</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>bits</var> be the base-2 logarithm\nof <var>options</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-max-value\" id=\"ref-for-validated-conversion-options-max-value③\">max value</a>,\nrounded toward positive Infinity.</p>"
+        },
+        {
+          "html": "<p>Let <var>chunkLength</var> be the square root of (<var>bits</var> + 1) * <var>length</var>,\nrounded to the nearest integer.</p>"
+        },
+        {
+          "html": "<p>Let <var>vdaf</var> be a new PrioL1BoundSum VDAF <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/attribution/#biblio-prio-l1\" title=\"A Prio Instantiation for Vector Sums with an L1 Norm Bound on Contributions\">[PRIO-L1]</a> instance,\npassing <var>field</var>, <var>length</var>, <var>bits</var>, and <var>chunkLength</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>taskID</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②\">byte sequence</a>\nfrom the hex string <code>b13e8440f1cdb4da51eed3967e0a2652d27f5005bc35f751daf188b4b746708b</code>\n<a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/attribution/#biblio-dap-ext\" title=\"Distributed Aggregation Protocol (DAP) Report Binding Extensions\">[DAP-EXT]</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>ctx</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence③\">byte sequence</a> formed by concatenating\nthe <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-encode\" id=\"ref-for-isomorphic-encode\">encoded</a> string <code>dap-15</code>\nand <var>taskID</var>,\nas defined in <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\">Section 4.5.2</a>\nof <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/attribution/#biblio-dap\" title=\"Distributed Aggregation Protocol for Privacy Preserving Measurement\">[DAP]</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>reportID</var> be 16 bytes sampled from a cryptographically-secure random source <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/attribution/#biblio-rfc4086\" title=\"Randomness Requirements for Security\">[RFC4086]</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>rand</var> be 128 bytes sampled from a cryptographically-secure random source <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/attribution/#biblio-rfc4086\" title=\"Randomness Requirements for Security\">[RFC4086]</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>publicShare</var>, <var>inputShares</var> be the result of invoking <var>vdaf</var>.<a href=\"https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf#section-4.1\"><code>shard()</code></a>,\nas defined in <a href=\"https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf-15#section-4.1\">Section 4.1</a>\nof <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/attribution/#biblio-vdaf\" title=\"Verifiable Distributed Aggregation Functions\">[VDAF]</a>,\nwith <var>ctx</var>, <var>histogram</var>, <var>reportID</var> (as the VDAF \"nonce\" parameter), and <var>rand</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>time</var> be <var>now</var> as a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" id=\"ref-for-dfn-duration⑤\">duration</a> since the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-unix-epoch\" id=\"ref-for-dfn-unix-epoch\">Unix epoch</a>,\ndivided by a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" id=\"ref-for-dfn-duration⑥\">duration</a> of 5 seconds.</p>"
+        },
+        {
+          "html": "The extension codepoint for <a href=\"https://datatracker.ietf.org/doc/html/draft-thomson-ppm-dap-dp-ext-02#name-privacy-budget-consumption\">privacy budget</a>,\nmapped to the value of <var>encodedEpsilon</var>, derived as follows:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>scaledEpsilon</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer①④\">32-bit unsigned integer</a>\nthat is <var>options</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-epsilon\" id=\"ref-for-validated-conversion-options-epsilon③\">epsilon</a>,\nmultiplied by 1,000,000, then rounded toward positive Infinity.</p>"
+            },
+            {
+              "html": "<p>Let <var>encodedEpsilon</var> be the result of invoking\n<a href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-numerictorawbytes\"><code>NumericToRawBytes</code></a>\nwith <a href=\"https://tc39.es/ecma262/multipage/indexed-collections.html#table-the-typedarray-constructors\">UINT32</a>, <var>scaledEpsilon</var>, and <code>false</code> (for <code>isLittleEndian</code>).</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>reportMetadata</var> be encoded DAP <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\"><code>ReportMetadata</code></a>\ngenerated from <var>reportID</var>, <var>time</var>, and <var>extensions</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>encryptedInputShares</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑨\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>share</var> of <var>inputShares</var>,\nfollow the method for encrypting shares\ndescribed in <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\">Section 4.5.2</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>pkR</var> be the public key of the corresponding role from\nthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#aggregation-service\" id=\"ref-for-aggregation-service①⓪\">aggregation service</a> <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.1\">HPKE configuration</a>\nobtained for the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#aggregation-service\" id=\"ref-for-aggregation-service①①\">aggregation service</a>\nindicated by <var>options</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#validated-conversion-options-aggregation-service\" id=\"ref-for-validated-conversion-options-aggregation-service②\">Aggregation Service</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>serverRole</var> be 2 for the first item (the Leader)\nand 3 for the second (the Helper role).</p>"
+            },
+            {
+              "html": "<p>Let <var>info</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑥\">byte sequence</a> formed by concatenating:\nthe <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-encode\" id=\"ref-for-isomorphic-encode②\">encoded</a> value of the string <code>dap-15 input share</code>,\na byte with the value 0x01, and <var>serverRole</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>inputShareAAD</var> be constructed from\n<var>taskID</var>, <var>reportMetadata</var>, and <var>publicShare</var>,\nfollowing the structure for <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\"><code>InputShareAad</code></a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>hpke</var> be an HPKE <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/attribution/#biblio-rfc9180\" title=\"Hybrid Public Key Encryption\">[RFC9180]</a> configuration\nthat is based on the same <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.1\">HPKE configuration</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>encryptedShare</var> be the result of invoking <var>hpke</var>.<a href=\"https://hpkewg.github.io/hpke/draft-ietf-hpke-hpke.html#section-6.1\"><code>Seal&lt;mode_base&gt;()</code></a>,\npassing <var>pkR</var>, <var>info</var>, <var>inputShareAAD</var>, and <var>share</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>encryptedShare</var> to <var>encryptedInputShares</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>report</var> be an encoded DAP <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\"><code>Report</code></a>\ngenerated from <var>reportMetadata</var>, <var>publicShare</var>, <var>encryptedInputShares</var>\n(the two values being the leader and helper encrypted input shares respectively),\nand <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/attribution/#aggregation-service\" id=\"ref-for-aggregation-service①②\">aggregation service</a> <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.1\">HPKE configuration</a>\nobtained from the DAP aggregators.</p>"
+        },
+        {
+          "html": "<p>Return <var>report</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

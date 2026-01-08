@@ -1,0 +1,642 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 Rules",
+    "url": "https://www.w3.org/TR/shacl12-rules/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-expression",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-expression",
+      "linkingText": [
+        "expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-data-block",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-data-block",
+      "linkingText": [
+        "data-block",
+        "data block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-triple-template",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-triple-template",
+      "linkingText": [
+        "triple template"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-triple-pattern",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-triple-pattern",
+      "linkingText": [
+        "triple pattern"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-condition-expression",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-condition-expression",
+      "linkingText": [
+        "condition expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-negation-element",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-negation-element",
+      "linkingText": [
+        "negation element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-assignment",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-assignment",
+      "linkingText": [
+        "assignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-assignment-variable",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-assignment-variable",
+      "linkingText": [
+        "assignment variable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-assignment-expression",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-assignment-expression",
+      "linkingText": [
+        "assignment expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-aggregation-element",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-aggregation-element",
+      "linkingText": [
+        "aggregation element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-rule-body-element",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-rule-body-element",
+      "linkingText": [
+        "rule body element",
+        "rule element",
+        "element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-rule-head",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-rule-head",
+      "linkingText": [
+        "rule head",
+        "head"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-rule-body",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-rule-body",
+      "linkingText": [
+        "rule body",
+        "body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-rule",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-rule",
+      "linkingText": [
+        "rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-rule-set",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-rule-set",
+      "linkingText": [
+        "rule set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-abstract-syntax",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-abstract-syntax",
+        "title": "Shape Rules Abstract Syntax",
+        "alternateIds": [
+          "x3-shape-rules-abstract-syntax"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-stratification-layer",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-stratification-layer",
+      "linkingText": [
+        "stratification layer",
+        "layer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "stratification",
+        "href": "https://www.w3.org/TR/shacl12-rules/#stratification",
+        "title": "Stratification",
+        "alternateIds": [
+          "x3-1-stratification"
+        ],
+        "number": "3.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-rule-element-dependency",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-rule-element-dependency",
+      "linkingText": [
+        "rule element dependency",
+        "element dependency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "stratification",
+        "href": "https://www.w3.org/TR/shacl12-rules/#stratification",
+        "title": "Stratification",
+        "alternateIds": [
+          "x3-1-stratification"
+        ],
+        "number": "3.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-rule-dependency",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-rule-dependency",
+      "linkingText": [
+        "rule dependency",
+        "dependency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "stratification",
+        "href": "https://www.w3.org/TR/shacl12-rules/#stratification",
+        "title": "Stratification",
+        "alternateIds": [
+          "x3-1-stratification"
+        ],
+        "number": "3.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-well-formed-rule",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-well-formed-rule",
+      "linkingText": [
+        "well-formed rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "wellformed",
+        "href": "https://www.w3.org/TR/shacl12-rules/#wellformed",
+        "title": "Well-formedness Conditions",
+        "alternateIds": [
+          "x3-2-well-formedness-conditions"
+        ],
+        "number": "3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-solution",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-solution",
+      "linkingText": [
+        "solution",
+        "sparql12-query#defn_sparqlSolutionMapping",
+        "solution mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-eval-definitions",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rule-eval-definitions",
+        "title": "Evaluation Definitions",
+        "alternateIds": [
+          "x5-1-evaluation-definitions"
+        ],
+        "number": "5.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-substitution",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-substitution",
+      "linkingText": [
+        "substitution",
+        "substitution function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-eval-definitions",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rule-eval-definitions",
+        "title": "Evaluation Definitions",
+        "alternateIds": [
+          "x5-1-evaluation-definitions"
+        ],
+        "number": "5.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-base-graph",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-base-graph",
+      "linkingText": [
+        "base graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-eval-definitions",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rule-eval-definitions",
+        "title": "Evaluation Definitions",
+        "alternateIds": [
+          "x5-1-evaluation-definitions"
+        ],
+        "number": "5.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-evaluation-graph",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-evaluation-graph",
+      "linkingText": [
+        "evaluation graph"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-eval-definitions",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rule-eval-definitions",
+        "title": "Evaluation Definitions",
+        "alternateIds": [
+          "x5-1-evaluation-definitions"
+        ],
+        "number": "5.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-graph-match",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-graph-match",
+      "linkingText": [
+        "graph match"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-eval-definitions",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rule-eval-definitions",
+        "title": "Evaluation Definitions",
+        "alternateIds": [
+          "x5-1-evaluation-definitions"
+        ],
+        "number": "5.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-compatible",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-compatible",
+      "linkingText": [
+        "compatible",
+        "solution compatible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-eval-definitions",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rule-eval-definitions",
+        "title": "Evaluation Definitions",
+        "alternateIds": [
+          "x5-1-evaluation-definitions"
+        ],
+        "number": "5.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-solution-sequence",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-solution-sequence",
+      "linkingText": [
+        "solution sequence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-eval-definitions",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rule-eval-definitions",
+        "title": "Evaluation Definitions",
+        "alternateIds": [
+          "x5-1-evaluation-definitions"
+        ],
+        "number": "5.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-merge",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-merge",
+      "linkingText": [
+        "merge",
+        "solution merge"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-eval-definitions",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rule-eval-definitions",
+        "title": "Evaluation Definitions",
+        "alternateIds": [
+          "x5-1-evaluation-definitions"
+        ],
+        "number": "5.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    }
+  ]
+}

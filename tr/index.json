@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-01-07T01:36:57.358Z",
+  "date": "2026-01-08T01:46:53.614Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -27,6 +27,7 @@
       "dom",
       "css-typed-om-2",
       "font-metrics-api-1",
+      "compositing-2",
       "css-color-6",
       "css-conditional-values-1",
       "css-extensions-1",
@@ -38,10 +39,9 @@
       "css-shapes-2",
       "css-size-adjust-1",
       "css-variables-2",
+      "filter-effects-2",
       "pointer-animations-1",
       "selectors-5",
-      "compositing-2",
-      "filter-effects-2",
       "encoding",
       "fetch",
       "fido-client-to-authenticator-protocol-v2.1",
@@ -150,7 +150,6 @@
       "shacl12-cs",
       "shacl12-node-expr",
       "shacl12-profiling",
-      "shacl12-rules",
       "shacl12-ui",
       "execCommand",
       "element-timing",
@@ -293,6 +292,7 @@
       "rfc6797",
       "rfc7034",
       "rfc7239",
+      "rfc7240",
       "rfc7469",
       "rfc7578",
       "rfc7616",
@@ -327,6 +327,7 @@
       "act-rules-format-1.1",
       "ambient-light",
       "appmanifest",
+      "attribution",
       "audio-output",
       "audio-session",
       "audiobooks",
@@ -576,7 +577,6 @@
       "pointerevents4",
       "pointerlock-2",
       "presentation-api",
-      "privacy-preserving-attribution",
       "privacy-principles",
       "proximity",
       "pub-manifest",
@@ -609,6 +609,7 @@
       "server-timing",
       "service-workers",
       "shacl12-core",
+      "shacl12-rules",
       "shacl12-sparql",
       "sparql12-entailment",
       "sparql12-federated-query",
@@ -749,10 +750,10 @@
     ]
   },
   "stats": {
-    "crawled": 403,
+    "crawled": 404,
     "errors": 0
   },
-  "crawler": "reffy-20.0.4",
+  "crawler": "reffy-20.0.5",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -798,7 +799,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "7 January 2026",
+      "date": "8 January 2026",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -1168,6 +1169,69 @@
       "dfns": "dfns/appmanifest.json",
       "headings": "headings/appmanifest.json",
       "ids": "ids/appmanifest.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/attribution/",
+      "seriesComposition": "full",
+      "shortname": "attribution",
+      "series": {
+        "shortname": "attribution",
+        "currentSpecification": "attribution",
+        "title": "Attribution",
+        "shortTitle": "Attribution",
+        "releaseUrl": "https://www.w3.org/TR/attribution/",
+        "nightlyUrl": "https://w3c.github.io/attribution/"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/attribution/",
+        "status": "Editor's Draft",
+        "sourcePath": "api.bs",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/attribution",
+        "filename": "index.html"
+      },
+      "formerNames": [
+        "ppa",
+        "privacy-preserving-attribution"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Private Advertising Technology Working Group",
+          "url": "https://www.w3.org/groups/wg/pat/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/attribution/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "title": "Attribution Level 1",
+      "source": "w3c",
+      "shortTitle": "Attribution 1",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/attribution/",
+        "https://w3c.github.io/attribution/"
+      ],
+      "crawled": "https://www.w3.org/TR/attribution/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 07 Jan 2026 14:29:26 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "7 January 2026",
+      "revision": "b4dba3a72101fd30c58b64878d039c75d6ca0da1",
+      "algorithms": "algorithms/attribution.json",
+      "links": "links/attribution.json",
+      "refs": "refs/attribution.json",
+      "idl": "idl/attribution.idl",
+      "dfns": "dfns/attribution.json",
+      "headings": "headings/attribution.json",
+      "ids": "ids/attribution.json",
       "cddl": []
     },
     {
@@ -1976,7 +2040,7 @@
         "currentSpecification": "compositing-2",
         "title": "Compositing and Blending",
         "shortTitle": "Compositing",
-        "nightlyUrl": "https://drafts.fxtf.org/compositing/",
+        "nightlyUrl": "https://drafts.csswg.org/compositing/",
         "releaseUrl": "https://www.w3.org/TR/compositing/"
       },
       "seriesVersion": "1",
@@ -1995,10 +2059,12 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://drafts.fxtf.org/compositing-1/",
+        "url": "https://drafts.csswg.org/compositing-1/",
         "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/fxtf-drafts",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/compositing-1/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
         "sourcePath": "compositing-1/Overview.bs",
         "filename": "Overview.html"
       },
@@ -2008,15 +2074,9 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "css/compositing"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/compositing-1/",
-        "https://drafts.fxtf.org/compositing-1/",
+        "https://drafts.csswg.org/compositing-1/",
         "https://www.w3.org/TR/compositing/"
       ],
       "crawled": "https://www.w3.org/TR/compositing-1/",
@@ -2780,7 +2840,7 @@
       },
       "title": "CSS Anchor Positioning Module Level 1",
       "source": "w3c",
-      "shortTitle": "CSS Anchor Positioning",
+      "shortTitle": "CSS Anchor Positioning 1",
       "categories": [
         "browser"
       ],
@@ -3246,7 +3306,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-borders-4/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -4068,7 +4128,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-color-adjust-1/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -6329,7 +6389,7 @@
         "title": "CSS Masking",
         "shortTitle": "CSS Masking",
         "releaseUrl": "https://www.w3.org/TR/css-masking/",
-        "nightlyUrl": "https://drafts.fxtf.org/css-masking/"
+        "nightlyUrl": "https://drafts.csswg.org/css-masking/"
       },
       "seriesVersion": "1",
       "organization": "W3C",
@@ -6345,10 +6405,13 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://drafts.fxtf.org/css-masking-1/",
+        "url": "https://drafts.csswg.org/css-masking-1/",
         "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/fxtf-drafts",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-masking-1/",
+          "https://w3c.github.io/csswg-drafts/css-masking/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
         "sourcePath": "css-masking-1/Overview.bs",
         "filename": "Overview.html"
       },
@@ -6359,15 +6422,9 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "css/css-masking"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/css-masking-1/",
-        "https://drafts.fxtf.org/css-masking-1/"
+        "https://drafts.csswg.org/css-masking-1/"
       ],
       "crawled": "https://www.w3.org/TR/css-masking-1/",
       "crawlCacheInfo": {
@@ -8168,7 +8225,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-shadow-parts-1/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -8184,7 +8241,7 @@
       },
       "title": "CSS Shadow Parts Module Level 1",
       "source": "w3c",
-      "shortTitle": "CSS Shadow Parts",
+      "shortTitle": "CSS Shadow Parts 1",
       "categories": [
         "browser"
       ],
@@ -10473,7 +10530,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/dapt/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -10659,7 +10716,7 @@
       },
       "title": "Device Memory API",
       "source": "w3c",
-      "shortTitle": "Device Memory",
+      "shortTitle": "Device Memory API",
       "categories": [
         "browser"
       ],
@@ -10854,11 +10911,11 @@
       ],
       "crawled": "https://www.w3.org/TR/did-resolution/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 05 Jan 2026 14:50:58 GMT"
+        "lastModified": "Wed, 07 Jan 2026 13:30:45 GMT"
       },
       "generator": "respec",
-      "date": "05 January 2026",
-      "revision": "5d4b1789aeda58373ea34281e98204b61a6aaec7",
+      "date": "07 January 2026",
+      "revision": "35cf3ed767bdb48ea7e7e8b31f07eb23737a5e08",
       "algorithms": "algorithms/did-resolution.json",
       "links": "links/did-resolution.json",
       "refs": "refs/did-resolution.json",
@@ -12351,7 +12408,7 @@
         "title": "CSS Fill and Stroke",
         "shortTitle": "CSS Fill and Stroke",
         "releaseUrl": "https://www.w3.org/TR/fill-stroke/",
-        "nightlyUrl": "https://drafts.fxtf.org/fill-stroke/"
+        "nightlyUrl": "https://drafts.csswg.org/fill-stroke/"
       },
       "seriesVersion": "3",
       "organization": "W3C",
@@ -12371,11 +12428,14 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://drafts.fxtf.org/fill-stroke-3/",
+        "url": "https://drafts.csswg.org/fill-stroke-3/",
         "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/fxtf-drafts",
-        "sourcePath": "fill-stroke/Overview.bs",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/fill-stroke-3/",
+          "https://w3c.github.io/csswg-drafts/fill-stroke/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "fill-stroke-3/Overview.bs",
         "filename": "Overview.html"
       },
       "title": "CSS Fill and Stroke Module Level 3",
@@ -12385,15 +12445,9 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "css/fill-stroke"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/fill-stroke-3/",
-        "https://drafts.fxtf.org/fill-stroke-3/"
+        "https://drafts.csswg.org/fill-stroke-3/"
       ],
       "crawled": "https://www.w3.org/TR/fill-stroke-3/",
       "crawlCacheInfo": {
@@ -12420,7 +12474,7 @@
         "title": "Filter Effects",
         "shortTitle": "Filter Effects",
         "releaseUrl": "https://www.w3.org/TR/filter-effects/",
-        "nightlyUrl": "https://drafts.fxtf.org/filter-effects/"
+        "nightlyUrl": "https://drafts.csswg.org/filter-effects/"
       },
       "seriesVersion": "1",
       "seriesNext": "filter-effects-2",
@@ -12437,10 +12491,13 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://drafts.fxtf.org/filter-effects-1/",
+        "url": "https://drafts.csswg.org/filter-effects-1/",
         "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/fxtf-drafts",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/filter-effects-1/",
+          "https://w3c.github.io/csswg-drafts/filter-effects/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
         "sourcePath": "filter-effects-1/Overview.bs",
         "filename": "Overview.html"
       },
@@ -12451,15 +12508,9 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "css/filter-effects"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/filter-effects-1/",
-        "https://drafts.fxtf.org/filter-effects-1/"
+        "https://drafts.csswg.org/filter-effects-1/"
       ],
       "crawled": "https://www.w3.org/TR/filter-effects-1/",
       "crawlCacheInfo": {
@@ -12801,7 +12852,7 @@
         "title": "Geometry Interfaces",
         "shortTitle": "Geometry Interfaces",
         "releaseUrl": "https://www.w3.org/TR/geometry/",
-        "nightlyUrl": "https://drafts.fxtf.org/geometry/"
+        "nightlyUrl": "https://drafts.csswg.org/geometry/"
       },
       "seriesVersion": "1",
       "organization": "W3C",
@@ -12813,15 +12864,18 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/geometry-1/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://drafts.fxtf.org/geometry-1/",
+        "url": "https://drafts.csswg.org/geometry-1/",
         "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/fxtf-drafts",
-        "sourcePath": "geometry/Overview.bs",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/geometry-1/",
+          "https://w3c.github.io/csswg-drafts/geometry/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "geometry-1/Overview.bs",
         "filename": "Overview.html"
       },
       "title": "Geometry Interfaces Module Level 1",
@@ -12831,15 +12885,9 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "css/geometry"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/geometry-1/",
-        "https://drafts.fxtf.org/geometry-1/",
+        "https://drafts.csswg.org/geometry-1/",
         "https://drafts.fxtf.org/geometry/"
       ],
       "crawled": "https://www.w3.org/TR/geometry-1/",
@@ -15476,7 +15524,7 @@
         "title": "Motion Path",
         "shortTitle": "Motion Path",
         "releaseUrl": "https://www.w3.org/TR/motion/",
-        "nightlyUrl": "https://drafts.fxtf.org/motion/"
+        "nightlyUrl": "https://drafts.csswg.org/motion/"
       },
       "seriesVersion": "1",
       "organization": "W3C",
@@ -15492,10 +15540,13 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://drafts.fxtf.org/motion-1/",
+        "url": "https://drafts.csswg.org/motion-1/",
         "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/fxtf-drafts",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/motion-1/",
+          "https://w3c.github.io/csswg-drafts/motion/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
         "sourcePath": "motion-1/Overview.bs",
         "filename": "Overview.html"
       },
@@ -15506,15 +15557,9 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "css/motion"
-        ]
-      },
       "versions": [
         "https://www.w3.org/TR/motion-1/",
-        "https://drafts.fxtf.org/motion-1/"
+        "https://drafts.csswg.org/motion-1/"
       ],
       "crawled": "https://www.w3.org/TR/motion-1/",
       "crawlCacheInfo": {
@@ -16422,11 +16467,11 @@
       ],
       "crawled": "https://www.w3.org/TR/paint-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 19 Nov 2025 10:46:05 GMT"
+        "lastModified": "Wed, 07 Jan 2026 17:38:14 GMT"
       },
       "generator": "bikeshed",
-      "date": "19 November 2025",
-      "revision": "401de50d1daec81a530ab9af81930269bfaa47a4",
+      "date": "7 January 2026",
+      "revision": "83857e54bc869f0aff300f856f7fdefdc2f86303",
       "algorithms": "algorithms/paint-timing.json",
       "links": "links/paint-timing.json",
       "refs": "refs/paint-timing.json",
@@ -17356,68 +17401,6 @@
       "dfns": "dfns/presentation-api.json",
       "headings": "headings/presentation-api.json",
       "ids": "ids/presentation-api.json",
-      "cddl": []
-    },
-    {
-      "url": "https://www.w3.org/TR/privacy-preserving-attribution/",
-      "seriesComposition": "full",
-      "shortname": "privacy-preserving-attribution",
-      "series": {
-        "shortname": "privacy-preserving-attribution",
-        "currentSpecification": "privacy-preserving-attribution",
-        "title": "Privacy-Preserving Attribution",
-        "shortTitle": "Privacy-Preserving Attribution",
-        "releaseUrl": "https://www.w3.org/TR/privacy-preserving-attribution/",
-        "nightlyUrl": "https://w3c.github.io/ppa/"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/ppa/",
-        "status": "Editor's Draft",
-        "sourcePath": "api.bs",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/ppa",
-        "filename": "index.html"
-      },
-      "formerNames": [
-        "ppa"
-      ],
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Private Advertising Technology Working Group",
-          "url": "https://www.w3.org/groups/wg/pat/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/privacy-preserving-attribution/",
-        "status": "Working Draft",
-        "filename": "Overview.html"
-      },
-      "title": "Attribution Level 1",
-      "source": "w3c",
-      "shortTitle": "Privacy-Preserving Attribution 1",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://www.w3.org/TR/privacy-preserving-attribution/",
-        "https://w3c.github.io/ppa/"
-      ],
-      "crawled": "https://www.w3.org/TR/privacy-preserving-attribution/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 06 Jan 2026 18:50:15 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "6 January 2026",
-      "revision": "b8a666b423eb5ceb583ceab67f312b0a3954a022",
-      "algorithms": "algorithms/privacy-preserving-attribution.json",
-      "links": "links/privacy-preserving-attribution.json",
-      "refs": "refs/privacy-preserving-attribution.json",
-      "idl": "idl/privacy-preserving-attribution.idl",
-      "dfns": "dfns/privacy-preserving-attribution.json",
-      "headings": "headings/privacy-preserving-attribution.json",
-      "ids": "ids/privacy-preserving-attribution.json",
       "cddl": []
     },
     {
@@ -19401,6 +19384,64 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/shacl12-rules/",
+      "seriesComposition": "full",
+      "shortname": "shacl12-rules",
+      "series": {
+        "shortname": "shacl-rules",
+        "currentSpecification": "shacl12-rules",
+        "title": "SHACL Rules",
+        "shortTitle": "SHACL Rules",
+        "releaseUrl": "https://www.w3.org/TR/shacl-rules/",
+        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-rules/"
+      },
+      "seriesVersion": "1.2",
+      "formerNames": [
+        "shacl12-inf-rules"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Data Shapes Working Group",
+          "url": "https://www.w3.org/groups/wg/data-shapes/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/shacl12-rules/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/data-shapes/shacl12-rules/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/data-shapes",
+        "sourcePath": "shacl12-rules/index.html",
+        "filename": "index.html"
+      },
+      "title": "SHACL 1.2 Rules",
+      "source": "w3c",
+      "shortTitle": "SHACL 1.2 Rules",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/shacl12-rules/",
+        "https://w3c.github.io/data-shapes/shacl12-rules/"
+      ],
+      "crawled": "https://www.w3.org/TR/shacl12-rules/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 04 Dec 2025 11:16:29 GMT"
+      },
+      "generator": "respec",
+      "date": "09 December 2025",
+      "links": "links/shacl12-rules.json",
+      "refs": "refs/shacl12-rules.json",
+      "dfns": "dfns/shacl12-rules.json",
+      "headings": "headings/shacl12-rules.json",
+      "ids": "ids/shacl12-rules.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/shacl12-sparql/",
       "seriesComposition": "full",
       "shortname": "shacl12-sparql",
@@ -20938,8 +20979,8 @@
       "series": {
         "shortname": "ttml-imsc",
         "currentSpecification": "ttml-imsc1.2",
-        "title": "TTML Profiles for Internet Media Subtitles and Captions",
-        "shortTitle": "TTML Profiles for Internet Media Subtitles and Captions",
+        "title": "IMSC Text Profile",
+        "shortTitle": "IMSC Text Profile",
         "releaseUrl": "https://www.w3.org/TR/ttml-imsc/",
         "nightlyUrl": "https://www.w3.org/TR/ttml-imsc/"
       },
@@ -20993,8 +21034,8 @@
       "series": {
         "shortname": "ttml-imsc",
         "currentSpecification": "ttml-imsc1.2",
-        "title": "TTML Profiles for Internet Media Subtitles and Captions",
-        "shortTitle": "TTML Profiles for Internet Media Subtitles and Captions",
+        "title": "IMSC Text Profile",
+        "shortTitle": "IMSC Text Profile",
         "releaseUrl": "https://www.w3.org/TR/ttml-imsc/",
         "nightlyUrl": "https://www.w3.org/TR/ttml-imsc/"
       },
@@ -21018,7 +21059,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/ttml-imsc1.3/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "title": "IMSC Text Profile 1.3",
@@ -24522,11 +24563,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 06 Jan 2026 03:12:24 GMT"
+        "lastModified": "Wed, 07 Jan 2026 19:15:38 GMT"
       },
       "generator": "bikeshed",
-      "date": "6 January 2026",
-      "revision": "808609a868c752cfa4e0e298714c81e99b05b203",
+      "date": "7 January 2026",
+      "revision": "78dfad2eb1c8dcbd00430562e147eb3a052a5e3e",
       "algorithms": "algorithms/webgpu.json",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
@@ -25684,7 +25725,8 @@
           "webxr/gamepads-module",
           "webxr/hand-input",
           "webxr/hit-test",
-          "webxr/layers"
+          "webxr/layers",
+          "webxr/plane-detection"
         ]
       },
       "versions": [

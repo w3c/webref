@@ -39,14 +39,14 @@
           ]
         },
         {
-          "html": "Obtain the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-58\">DID document</a> for the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-36\">DID</a></var> by executing the\n\t\t\t<a href=\"https://www.w3.org/TR/did-core/#method-operations\">Read</a> operation against the\n\t\t\t<var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-37\">DID</a>'s</var> <a href=\"https://www.w3.org/TR/did-resolution/#dfn-verifiable-data-registry\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-verifiable-data-registry-8\">verifiable data registry</a>, as defined by the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-method-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-method-s-30\">DID method</a></var>:",
+          "html": "Obtain the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-58\">DID document</a> for the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-36\">DID</a></var> by executing the\n\t\t\t<a href=\"https://www.w3.org/TR/did-core/#method-operations\">Read</a> operation, as defined by the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-method-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-method-s-30\">DID method</a></var>:",
           "rationale": ".algorithm",
           "steps": [
             {
-              "html": "Besides the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-38\">DID</a></var>, all additional <var>resolution options</var> of\n\t\t\t\tthis algorithm <em class=\"rfc2119\">MUST</em> be passed to the\n\t\t\t\t<a href=\"https://www.w3.org/TR/did-core/#method-operations\">Read</a> operation of the\n\t\t\t\t<var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-method-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-method-s-31\">DID method</a></var>."
+              "html": "Besides the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-37\">DID</a></var>, all additional <var>resolution options</var> of\n\t\t\t\tthis algorithm <em class=\"rfc2119\">MUST</em> be passed to the\n\t\t\t\t<a href=\"https://www.w3.org/TR/did-core/#method-operations\">Read</a> operation of the\n\t\t\t\t<var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-method-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-method-s-31\">DID method</a></var>."
             },
             {
-              "html": "If the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-39\">DID</a></var> does not exist, return the following result:",
+              "html": "If the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-38\">DID</a></var> does not exist, return the following result:",
               "rationale": ".algorithm",
               "steps": [
                 {
@@ -61,7 +61,7 @@
               ]
             },
             {
-              "html": "If the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-40\">DID</a></var> has been deactivated, return the following result:",
+              "html": "If the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-39\">DID</a></var> has been deactivated, return the following result:",
               "rationale": ".algorithm",
               "steps": [
                 {
@@ -139,10 +139,10 @@
           ]
         },
         {
-          "html": "Obtain the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-64\">DID document</a> for the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-42\">DID</a></var> by executing the\n\t\t\t\t\t<a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-24\">DID resolution</a> algorithm as defined in <a href=\"https://www.w3.org/TR/did-resolution/#resolving\" class=\"sec-ref\"><bdi class=\"secno\">4. </bdi>DID Resolution</a>. All\n\t\t\t\t\t<var>dereferencing options</var> and all\n\t\t\t\t\t<a href=\"https://www.w3.org/TR/did-core/#did-parameters\">\n\t\t\t\t\t\tDID parameters</a> of the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-27\">DID URL</a></var> <em class=\"rfc2119\">MUST</em> be passed as <var>resolution options</var> to the\n\t\t\t\t\t\t<a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-25\">DID Resolution</a> algorithm."
+          "html": "Obtain the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-64\">DID document</a> for the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-41\">DID</a></var> by executing the\n\t\t\t\t\t<a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-24\">DID resolution</a> algorithm as defined in <a href=\"https://www.w3.org/TR/did-resolution/#resolving\" class=\"sec-ref\"><bdi class=\"secno\">4. </bdi>DID Resolution</a>. All\n\t\t\t\t\t<var>dereferencing options</var> and all\n\t\t\t\t\t<a href=\"https://www.w3.org/TR/did-core/#did-parameters\">\n\t\t\t\t\t\tDID parameters</a> of the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-urls\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-urls-27\">DID URL</a></var> <em class=\"rfc2119\">MUST</em> be passed as <var>resolution options</var> to the\n\t\t\t\t\t\t<a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-25\">DID Resolution</a> algorithm."
         },
         {
-          "html": "If the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-43\">DID</a></var> does not exist in the VDR, the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencers-7\">DID URL dereferencer</a>\n\t\t\t\t\t\t<em class=\"rfc2119\">MUST</em> return the following result:",
+          "html": "If the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-42\">DID</a></var> does not exist in the VDR, the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencers-7\">DID URL dereferencer</a>\n\t\t\t\t\t\t<em class=\"rfc2119\">MUST</em> return the following result:",
           "rationale": ".algorithm",
           "steps": [
             {
@@ -386,7 +386,7 @@
           "rationale": ".algorithm",
           "steps": [
             {
-              "html": "Append the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-47\">DID</a></var> to the <var>request HTTP(S) URL</var>."
+              "html": "Append the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-46\">DID</a></var> to the <var>request HTTP(S) URL</var>."
             },
             {
               "html": "Set the <code>Accept</code> <var>HTTP request header</var> to <code>application/did-resolution</code>\n\t\t\t\t\t\tto request a complete <a href=\"https://www.w3.org/TR/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">8. </bdi>DID Resolution Result</a>, OR"
@@ -420,7 +420,7 @@
               "rationale": ".algorithm",
               "steps": [
                 {
-                  "html": "The <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-48\">DID</a></var> <em class=\"rfc2119\">MUST</em> be URL-encoded (as specified in <a href=\"https://www.rfc-editor.org/rfc/rfc3986#section-2.1\">RFC3986 Section 2.1</a>)."
+                  "html": "The <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-47\">DID</a></var> <em class=\"rfc2119\">MUST</em> be URL-encoded (as specified in <a href=\"https://www.rfc-editor.org/rfc/rfc3986#section-2.1\">RFC3986 Section 2.1</a>)."
                 },
                 {
                   "html": "Encode all <var>resolution options</var> except <b>accept</b> as\n                                query parameters in the <var>request HTTP(S) URL</var>."
