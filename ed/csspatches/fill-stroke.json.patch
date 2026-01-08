@@ -1,6 +1,6 @@
-From 000fc256d1db41f533618670b1afee4ba03849b6 Mon Sep 17 00:00:00 2001
+From 0b5332af24561447abcae39e30619e4f3b40dc5b Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Fri, 12 Dec 2025 10:13:12 +0100
+Date: Thu, 8 Jan 2026 09:16:53 +0100
 Subject: [PATCH] Patch not-yet-up-to-date fill-stroke spec properties
 
 The "<'background'> with modifications" value for the `fill` and `stroke`
@@ -17,7 +17,7 @@ https://github.com/w3c/csswg-drafts/issues/3057
  1 file changed, 3 insertions(+), 35 deletions(-)
 
 diff --git a/ed/css/fill-stroke.json b/ed/css/fill-stroke.json
-index f231cf2ca3..9999d684e2 100644
+index 65170b0551..018ec597a1 100644
 --- a/ed/css/fill-stroke.json
 +++ b/ed/css/fill-stroke.json
 @@ -200,22 +200,6 @@
@@ -26,7 +26,7 @@ index f231cf2ca3..9999d684e2 100644
      },
 -    {
 -      "name": "fill",
--      "href": "https://drafts.csswg.org/fill-stroke/#propdef-fill",
+-      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-fill",
 -      "value": "<'background'> with modifications",
 -      "initial": "See individual properties",
 -      "appliesTo": "See individual properties",
@@ -42,11 +42,11 @@ index f231cf2ca3..9999d684e2 100644
 -    },
      {
        "name": "fill-opacity",
-       "href": "https://drafts.csswg.org/fill-stroke/#propdef-fill-opacity",
+       "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-fill-opacity",
 @@ -236,7 +220,7 @@
      {
        "name": "stroke-width",
-       "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-width",
+       "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-width",
 -      "value": "<length-percentage>#",
 +      "value": "[<length-percentage> | <number>]#",
        "initial": "1px",
@@ -55,7 +55,7 @@ index f231cf2ca3..9999d684e2 100644
 @@ -437,7 +421,7 @@
      {
        "name": "stroke-dasharray",
-       "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-dasharray",
+       "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-dasharray",
 -      "value": "none | <length-percentage>+#",
 +      "value": "none | [<length-percentage> | <number>]+#",
        "initial": "none",
@@ -64,7 +64,7 @@ index f231cf2ca3..9999d684e2 100644
 @@ -470,7 +454,7 @@
      {
        "name": "stroke-dashoffset",
-       "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-dashoffset",
+       "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-dashoffset",
 -      "value": "<length-percentage>",
 +      "value": "<length-percentage> | <number>",
        "initial": "0",
@@ -76,7 +76,7 @@ index f231cf2ca3..9999d684e2 100644
      },
 -    {
 -      "name": "stroke",
--      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke",
+-      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke",
 -      "value": "<'background'> with modifications",
 -      "initial": "See individual properties",
 -      "appliesTo": "See individual properties",
@@ -92,7 +92,7 @@ index f231cf2ca3..9999d684e2 100644
 -    },
      {
        "name": "stroke-opacity",
-       "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-opacity",
+       "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-opacity",
 -- 
 2.52.0
 
