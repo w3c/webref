@@ -1401,15 +1401,6 @@
       "extended": []
     },
     {
-      "for": [
-        "text-overflow"
-      ],
-      "name": "fade()",
-      "href": "https://drafts.csswg.org/css-overflow-4/#funcdef-text-overflow-fade",
-      "syntax": "fade( [ <length-percentage> ] )",
-      "extended": []
-    },
-    {
       "name": "filter()",
       "href": "https://drafts.csswg.org/filter-effects-1/#funcdef-filter",
       "syntax": "filter( [ <image> | <string> ], <filter-value-list> )",
@@ -1420,30 +1411,6 @@
       "prose": "The first-valid() functional notation inlines the fallback behavior intrinsic to parsing declarations. Unlike most notations, it can accept any valid or invalid syntax in its arguments, and represents the first value among its arguments that is supported (parsed as valid) by the UA as the whole value of the property it’s used in.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-first-valid",
       "syntax": "first-valid( <declaration-value># )",
-      "extended": []
-    },
-    {
-      "for": [
-        "grid-template-columns",
-        "grid-template-rows"
-      ],
-      "name": "fit-content()",
-      "href": "https://drafts.csswg.org/css-grid-2/#funcdef-grid-template-columns-fit-content",
-      "syntax": "fit-content( <length-percentage> )",
-      "extended": []
-    },
-    {
-      "for": [
-        "height",
-        "max-height",
-        "max-width",
-        "min-height",
-        "min-width",
-        "width"
-      ],
-      "name": "fit-content()",
-      "href": "https://drafts.csswg.org/css-sizing-3/#funcdef-width-fit-content",
-      "syntax": "fit-content(<length-percentage [0,∞]>)",
       "extended": []
     },
     {
@@ -1782,7 +1749,7 @@
     },
     {
       "name": "ray()",
-      "href": "https://drafts.fxtf.org/motion-1/#funcdef-ray",
+      "href": "https://drafts.csswg.org/motion-1/#funcdef-ray",
       "syntax": "ray( <angle> && <ray-size>? && contain? && [at <position>]? )",
       "extended": []
     },
@@ -2223,24 +2190,6 @@
       "name": "type()",
       "href": "https://drafts.csswg.org/css-mixins-1/#funcdef-function-type",
       "syntax": "type( <syntax> )",
-      "extended": []
-    },
-    {
-      "for": [
-        "attr()"
-      ],
-      "name": "type()",
-      "href": "https://drafts.csswg.org/css-values-5/#funcdef-attr-type",
-      "syntax": "type( <syntax> )",
-      "extended": []
-    },
-    {
-      "for": [
-        "image-set()"
-      ],
-      "name": "type()",
-      "href": "https://drafts.csswg.org/css-images-4/#funcdef-image-set-type",
-      "syntax": "type( <string> )",
       "extended": []
     },
     {
@@ -7605,7 +7554,7 @@
     },
     {
       "name": "fill-break",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-fill-break",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-fill-break",
       "initial": "bounding-box",
       "appliesTo": "all elements",
       "inherited": "yes?",
@@ -7623,7 +7572,7 @@
     },
     {
       "name": "fill-color",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-fill-color",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-fill-color",
       "initial": "currentcolor",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -7641,7 +7590,7 @@
     },
     {
       "name": "fill-image",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-fill-image",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-fill-image",
       "initial": "none",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -7659,7 +7608,7 @@
     },
     {
       "name": "fill-opacity",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-fill-opacity",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-fill-opacity",
       "initial": "1",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -7677,7 +7626,7 @@
     },
     {
       "name": "fill-origin",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-fill-origin",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-fill-origin",
       "initial": "match-parent",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -7695,7 +7644,7 @@
     },
     {
       "name": "fill-position",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-fill-position",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-fill-position",
       "initial": "0% 0%",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -7713,7 +7662,7 @@
     },
     {
       "name": "fill-repeat",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-fill-repeat",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-fill-repeat",
       "initial": "repeat",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -7731,7 +7680,7 @@
     },
     {
       "name": "fill-rule",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-fill-rule",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-fill-rule",
       "initial": "nonzero",
       "appliesTo": "SVG shapes",
       "inherited": "yes",
@@ -7749,7 +7698,7 @@
     },
     {
       "name": "fill-size",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-fill-size",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-fill-size",
       "initial": "auto",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -8037,6 +7986,23 @@
         "flowInto"
       ],
       "syntax": "none | <custom-ident> [element | content]?",
+      "extended": []
+    },
+    {
+      "name": "flow-tolerance",
+      "href": "https://drafts.csswg.org/css-grid-3/#propdef-flow-tolerance",
+      "initial": "normal",
+      "appliesTo": "grid lanes containers",
+      "inherited": "no",
+      "percentages": "relative to the grid-axis content box size of the grid lanes container",
+      "computedValue": "a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "as length",
+      "styleDeclaration": [
+        "flow-tolerance",
+        "flowTolerance"
+      ],
+      "syntax": "normal | <length-percentage> | infinite",
       "extended": []
     },
     {
@@ -9427,7 +9393,7 @@
         "item-flow",
         "itemFlow"
       ],
-      "syntax": "<'item-direction'> || <'item-wrap'> || <'item-pack'> || <'item-tolerance'>",
+      "syntax": "<'item-direction'> || <'item-wrap'> || <'item-pack'> || <'flow-tolerance'>",
       "extended": []
     },
     {
@@ -9445,23 +9411,6 @@
         "itemPack"
       ],
       "syntax": "normal | dense || balance",
-      "extended": []
-    },
-    {
-      "name": "item-tolerance",
-      "href": "https://drafts.csswg.org/css-grid-3/#propdef-item-tolerance",
-      "initial": "normal",
-      "appliesTo": "grid lanes containers",
-      "inherited": "no",
-      "percentages": "relative to the grid-axis content box size of the grid lanes container",
-      "computedValue": "a computed <length-percentage> value",
-      "canonicalOrder": "per grammar",
-      "animationType": "as length",
-      "styleDeclaration": [
-        "item-tolerance",
-        "itemTolerance"
-      ],
-      "syntax": "normal | <length-percentage> | infinite",
       "extended": []
     },
     {
@@ -10836,7 +10785,7 @@
     },
     {
       "name": "offset",
-      "href": "https://drafts.fxtf.org/motion-1/#propdef-offset",
+      "href": "https://drafts.csswg.org/motion-1/#propdef-offset",
       "initial": "see individual properties",
       "appliesTo": "transformable elements",
       "inherited": "see individual properties",
@@ -10852,7 +10801,7 @@
     },
     {
       "name": "offset-anchor",
-      "href": "https://drafts.fxtf.org/motion-1/#propdef-offset-anchor",
+      "href": "https://drafts.csswg.org/motion-1/#propdef-offset-anchor",
       "initial": "auto",
       "appliesTo": "transformable elements",
       "inherited": "no",
@@ -10870,7 +10819,7 @@
     },
     {
       "name": "offset-distance",
-      "href": "https://drafts.fxtf.org/motion-1/#propdef-offset-distance",
+      "href": "https://drafts.csswg.org/motion-1/#propdef-offset-distance",
       "initial": "0",
       "appliesTo": "transformable elements",
       "inherited": "no",
@@ -10888,7 +10837,7 @@
     },
     {
       "name": "offset-path",
-      "href": "https://drafts.fxtf.org/motion-1/#propdef-offset-path",
+      "href": "https://drafts.csswg.org/motion-1/#propdef-offset-path",
       "initial": "none",
       "appliesTo": "transformable elements",
       "inherited": "no",
@@ -10906,7 +10855,7 @@
     },
     {
       "name": "offset-position",
-      "href": "https://drafts.fxtf.org/motion-1/#propdef-offset-position",
+      "href": "https://drafts.csswg.org/motion-1/#propdef-offset-position",
       "initial": "normal",
       "appliesTo": "transformable elements",
       "inherited": "no",
@@ -10924,7 +10873,7 @@
     },
     {
       "name": "offset-rotate",
-      "href": "https://drafts.fxtf.org/motion-1/#propdef-offset-rotate",
+      "href": "https://drafts.csswg.org/motion-1/#propdef-offset-rotate",
       "initial": "auto",
       "appliesTo": "transformable elements",
       "inherited": "no",
@@ -13746,7 +13695,7 @@
     },
     {
       "name": "stroke-align",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-align",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-align",
       "initial": "center",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -13781,7 +13730,7 @@
     },
     {
       "name": "stroke-break",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-break",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-break",
       "initial": "bounding-box",
       "appliesTo": "all elements",
       "inherited": "?",
@@ -13799,7 +13748,7 @@
     },
     {
       "name": "stroke-color",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-color",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-color",
       "initial": "transparent",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -13817,7 +13766,7 @@
     },
     {
       "name": "stroke-dash-corner",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-dash-corner",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-dash-corner",
       "initial": "none",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -13835,7 +13784,7 @@
     },
     {
       "name": "stroke-dash-justify",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-dash-justify",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-dash-justify",
       "initial": "none",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -13870,7 +13819,7 @@
     },
     {
       "name": "stroke-dasharray",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-dasharray",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-dasharray",
       "initial": "none",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -13905,7 +13854,7 @@
     },
     {
       "name": "stroke-dashoffset",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-dashoffset",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-dashoffset",
       "initial": "0",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -13923,7 +13872,7 @@
     },
     {
       "name": "stroke-image",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-image",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-image",
       "initial": "none",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -13941,7 +13890,7 @@
     },
     {
       "name": "stroke-linecap",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-linecap",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-linecap",
       "initial": "butt",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -13959,7 +13908,7 @@
     },
     {
       "name": "stroke-linejoin",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-linejoin",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-linejoin",
       "initial": "miter",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -13977,7 +13926,7 @@
     },
     {
       "name": "stroke-miterlimit",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-miterlimit",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-miterlimit",
       "initial": "4",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -13995,7 +13944,7 @@
     },
     {
       "name": "stroke-opacity",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-opacity",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-opacity",
       "initial": "1",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -14013,7 +13962,7 @@
     },
     {
       "name": "stroke-origin",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-origin",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-origin",
       "initial": "match-parent",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -14031,7 +13980,7 @@
     },
     {
       "name": "stroke-position",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-position",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-position",
       "initial": "0% 0%",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -14049,7 +13998,7 @@
     },
     {
       "name": "stroke-repeat",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-repeat",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-repeat",
       "initial": "repeat",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -14067,7 +14016,7 @@
     },
     {
       "name": "stroke-size",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-size",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-size",
       "initial": "auto",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -14085,7 +14034,7 @@
     },
     {
       "name": "stroke-width",
-      "href": "https://drafts.csswg.org/fill-stroke/#propdef-stroke-width",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#propdef-stroke-width",
       "initial": "1px",
       "appliesTo": "text and SVG shapes",
       "inherited": "yes",
@@ -19065,7 +19014,7 @@
     },
     {
       "name": "offset-path",
-      "href": "https://drafts.fxtf.org/motion-1/#typedef-offset-path",
+      "href": "https://drafts.csswg.org/motion-1/#typedef-offset-path",
       "syntax": "<ray()> | <url> | <basic-shape>",
       "extended": []
     },
@@ -19128,7 +19077,7 @@
     },
     {
       "name": "paint",
-      "href": "https://drafts.csswg.org/fill-stroke/#typedef-paint",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#typedef-paint",
       "syntax": "none | <image> | <svg-paint>",
       "extended": []
     },
@@ -19146,15 +19095,6 @@
       "prose": "This value identifies an CSS-defined palette to use. Users can define a palette by using the @font-palette-values rule. If no applicable @font-palette-values rule is present, this value behaves as normal. <palette-identifier> is parsed as a <dashed-ident>.",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-identifier",
       "syntax": "<dashed-ident>",
-      "extended": []
-    },
-    {
-      "for": [
-        "font-palette"
-      ],
-      "name": "palette-mix()",
-      "prose": "This value defines a position in the interpolation between two palette values, identified by <palette-identifier>, by the palette keywords normal, light, dark, or by another <palette-mix()> value. The glyphs of the font must be rendered with a palette that is created by interpolating for each palette color index between the matching color indices of the first and second palette specified as arguments, recursively resolving <palette-mix()> functions if needed. For each palette color, the interpolation follows the rules of the <color-mix()> function. Percentages are normalized according to CSS Color 5 § 3.2 Percentage Normalization.",
-      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-palette-palette-mix",
       "extended": []
     },
     {
@@ -19384,7 +19324,7 @@
     },
     {
       "name": "ray-size",
-      "href": "https://drafts.fxtf.org/motion-1/#typedef-ray-size",
+      "href": "https://drafts.csswg.org/motion-1/#typedef-ray-size",
       "syntax": "closest-side | closest-corner | farthest-side | farthest-corner | sides",
       "extended": []
     },
@@ -19906,7 +19846,7 @@
     },
     {
       "name": "svg-paint",
-      "href": "https://drafts.csswg.org/fill-stroke/#typedef-svg-paint",
+      "href": "https://drafts.csswg.org/fill-stroke-3/#typedef-svg-paint",
       "syntax": "child | child( <integer> )",
       "extended": []
     },

@@ -186,6 +186,11 @@ partial interface Navigator {
   [SameObject] readonly attribute WindowControlsOverlay windowControlsOverlay;
 };
 
+// Source: Attribution Level 1 (https://www.w3.org/TR/attribution/)
+partial interface Navigator {
+  [SecureContext, SameObject] readonly attribute Attribution attribution;
+};
+
 // Source: Audio Session (https://www.w3.org/TR/audio-session/)
 [Exposed=Window]
 partial interface Navigator {
@@ -304,11 +309,6 @@ partial interface Navigator {
 // Source: Presentation API (https://www.w3.org/TR/presentation-api/)
 partial interface Navigator {
   [SecureContext, SameObject] readonly attribute Presentation presentation;
-};
-
-// Source: Attribution Level 1 (https://www.w3.org/TR/privacy-preserving-attribution/)
-partial interface Navigator {
-  [SecureContext, SameObject] readonly attribute Attribution attribution;
 };
 
 // Source: Screen Wake Lock API (https://www.w3.org/TR/screen-wake-lock/)

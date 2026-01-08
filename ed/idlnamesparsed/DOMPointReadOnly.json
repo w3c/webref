@@ -7,7 +7,7 @@
       "url": "https://www.w3.org/TR/geometry-1/"
     },
     "fragment": "[Exposed=(Window,Worker),\n Serializable]\ninterface DOMPointReadOnly {\n    constructor(optional unrestricted double x = 0, optional unrestricted double y = 0,\n            optional unrestricted double z = 0, optional unrestricted double w = 1);\n\n    [NewObject] static DOMPointReadOnly fromPoint(optional DOMPointInit other = {});\n\n    readonly attribute unrestricted double x;\n    readonly attribute unrestricted double y;\n    readonly attribute unrestricted double z;\n    readonly attribute unrestricted double w;\n\n    [NewObject] DOMPoint matrixTransform(optional DOMMatrixInit matrix = {});\n\n    [Default] object toJSON();\n};",
-    "href": "https://drafts.csswg.org/geometry/#dompointreadonly"
+    "href": "https://drafts.csswg.org/geometry-1/#dompointreadonly"
   },
   "extended": [],
   "inheritance": null,

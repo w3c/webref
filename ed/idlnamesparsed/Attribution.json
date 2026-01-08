@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "Attribution Level 1",
-      "url": "https://www.w3.org/TR/privacy-preserving-attribution/"
+      "url": "https://www.w3.org/TR/attribution/"
     },
     "fragment": "[SecureContext, Exposed=Window]\ninterface Attribution {\n  readonly attribute AttributionAggregationServices aggregationServices;\n};",
     "href": "https://w3c.github.io/attribution/#attribution"
@@ -13,14 +13,14 @@
     {
       "spec": {
         "title": "Attribution Level 1",
-        "url": "https://www.w3.org/TR/privacy-preserving-attribution/"
+        "url": "https://www.w3.org/TR/attribution/"
       },
       "fragment": "[SecureContext, Exposed=Window]\npartial interface Attribution {\n  Promise<AttributionImpressionResult> saveImpression(AttributionImpressionOptions options);\n};"
     },
     {
       "spec": {
         "title": "Attribution Level 1",
-        "url": "https://www.w3.org/TR/privacy-preserving-attribution/"
+        "url": "https://www.w3.org/TR/attribution/"
       },
       "fragment": "[SecureContext, Exposed=Window]\npartial interface Attribution {\n  Promise<AttributionConversionResult> measureConversion(AttributionConversionOptions options);\n};"
     }

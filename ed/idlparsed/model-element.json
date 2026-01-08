@@ -14,11 +14,85 @@
     },
     "idlNames": {
       "HTMLModelElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLModelElement : HTMLElement {\n\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLModelElement : HTMLElement {\n\n  readonly attribute Promise<HTMLModelElement> ready;\n  readonly attribute DOMPointReadOnly boundingBoxCenter;\n  readonly attribute DOMPointReadOnly boundingBoxExtents;\n  attribute DOMMatrixReadOnly entityTransform;\n\n};",
         "type": "interface",
         "name": "HTMLModelElement",
         "inheritance": "HTMLElement",
-        "members": [],
+        "members": [
+          {
+            "type": "attribute",
+            "name": "ready",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "HTMLModelElement"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/model-element/#dom-htmlmodelelement-ready"
+          },
+          {
+            "type": "attribute",
+            "name": "boundingBoxCenter",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMPointReadOnly"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/model-element/#dom-htmlmodelelement-boundingboxcenter"
+          },
+          {
+            "type": "attribute",
+            "name": "boundingBoxExtents",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMPointReadOnly"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://immersive-web.github.io/model-element/#dom-htmlmodelelement-boundingboxextents"
+          },
+          {
+            "type": "attribute",
+            "name": "entityTransform",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMMatrixReadOnly"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://immersive-web.github.io/model-element/#dom-htmlmodelelement-entitytransform"
+          }
+        ],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -43,11 +117,16 @@
     },
     "dependencies": {
       "HTMLModelElement": [
-        "HTMLElement"
+        "HTMLElement",
+        "HTMLModelElement",
+        "DOMPointReadOnly",
+        "DOMMatrixReadOnly"
       ]
     },
     "externalDependencies": [
-      "HTMLElement"
+      "HTMLElement",
+      "DOMPointReadOnly",
+      "DOMMatrixReadOnly"
     ],
     "hasObsoleteIdl": false
   }

@@ -2179,6 +2179,28 @@
       "links": []
     },
     {
+      "id": "dom-audiocontext-playback-stats-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-playback-stats-slot",
+      "linkingText": [
+        "[[playback stats]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioContext",
+        "title": "The AudioContext Interface",
+        "number": "1.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "dom-audiocontext-audiocontext",
       "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-audiocontext",
       "linkingText": [
@@ -2377,6 +2399,28 @@
         "number": "1.2.2"
       },
       "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-audiocontext-playbackstats",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-playbackstats",
+      "linkingText": [
+        "playbackStats"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioContext-attributes",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioContext-attributes",
+        "title": "Attributes",
+        "number": "1.2.2"
+      },
+      "definedIn": "dt",
       "links": []
     },
     {
@@ -17151,6 +17195,440 @@
       "links": []
     },
     {
+      "id": "AudioPlaybackStats",
+      "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+      "linkingText": [
+        "AudioPlaybackStats"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "underrun-frame",
+      "href": "https://webaudio.github.io/web-audio-api/#underrun-frame",
+      "linkingText": [
+        "underrun frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "underrun-event",
+      "href": "https://webaudio.github.io/web-audio-api/#underrun-event",
+      "linkingText": [
+        "underrun event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-tojson",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-audio-context-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-audio-context-slot",
+      "linkingText": [
+        "[[audio context]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-underrun-duration-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-underrun-duration-slot",
+      "linkingText": [
+        "[[underrun duration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-underrun-events-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-underrun-events-slot",
+      "linkingText": [
+        "[[underrun events]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-total-duration-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-total-duration-slot",
+      "linkingText": [
+        "[[total duration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-average-latency-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-average-latency-slot",
+      "linkingText": [
+        "[[average latency]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-minimum-latency-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-minimum-latency-slot",
+      "linkingText": [
+        "[[minimum latency]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-maximum-latency-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-maximum-latency-slot",
+      "linkingText": [
+        "[[maximum latency]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-latency-reset-time-slot",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-latency-reset-time-slot",
+      "linkingText": [
+        "[[latency reset time]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-currently-tracked-interval",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-currently-tracked-interval",
+      "linkingText": [
+        "currently tracked interval"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats",
+        "title": "The AudioPlaybackStats Interface",
+        "number": "1.33"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-underrunduration",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-underrunduration",
+      "linkingText": [
+        "underrunDuration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats-attributes",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats-attributes",
+        "title": "Attributes",
+        "number": "1.33.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-underrunevents",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-underrunevents",
+      "linkingText": [
+        "underrunEvents"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats-attributes",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats-attributes",
+        "title": "Attributes",
+        "number": "1.33.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-totalduration",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-totalduration",
+      "linkingText": [
+        "totalDuration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats-attributes",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats-attributes",
+        "title": "Attributes",
+        "number": "1.33.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-averagelatency",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-averagelatency",
+      "linkingText": [
+        "averageLatency"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats-attributes",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats-attributes",
+        "title": "Attributes",
+        "number": "1.33.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-minimumlatency",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-minimumlatency",
+      "linkingText": [
+        "minimumLatency"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats-attributes",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats-attributes",
+        "title": "Attributes",
+        "number": "1.33.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-maximumlatency",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-maximumlatency",
+      "linkingText": [
+        "maximumLatency"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats-attributes",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats-attributes",
+        "title": "Attributes",
+        "number": "1.33.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-audioplaybackstats-resetlatency",
+      "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-resetlatency",
+      "linkingText": [
+        "resetLatency()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "AudioPlaybackStats"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "AudioPlaybackStats-methods",
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats-methods",
+        "title": "Methods",
+        "number": "1.33.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "control-thread",
       "href": "https://webaudio.github.io/web-audio-api/#control-thread",
       "linkingText": [
@@ -17305,7 +17783,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17325,7 +17803,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17345,7 +17823,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17365,7 +17843,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17385,7 +17863,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17405,7 +17883,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17425,7 +17903,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17447,7 +17925,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17469,7 +17947,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17489,7 +17967,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17509,7 +17987,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17529,7 +18007,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17549,7 +18027,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17569,7 +18047,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17589,7 +18067,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17609,7 +18087,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17629,7 +18107,7 @@
         "id": "rendering-loop",
         "href": "https://webaudio.github.io/web-audio-api/#rendering-loop",
         "title": "Rendering an Audio Graph",
-        "number": "2.4"
+        "number": "2.5"
       },
       "definedIn": "prose",
       "links": []
@@ -17649,7 +18127,7 @@
         "id": "interruption-handling",
         "href": "https://webaudio.github.io/web-audio-api/#interruption-handling",
         "title": "Handling an interruption on the AudioContext",
-        "number": "2.5"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -17671,7 +18149,7 @@
         "id": "interruption-handling",
         "href": "https://webaudio.github.io/web-audio-api/#interruption-handling",
         "title": "Handling an interruption on the AudioContext",
-        "number": "2.5"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []
@@ -17693,7 +18171,7 @@
         "id": "interruption-handling",
         "href": "https://webaudio.github.io/web-audio-api/#interruption-handling",
         "title": "Handling an interruption on the AudioContext",
-        "number": "2.5"
+        "number": "2.6"
       },
       "definedIn": "prose",
       "links": []

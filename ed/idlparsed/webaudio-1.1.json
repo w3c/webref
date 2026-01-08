@@ -49,7 +49,8 @@
           "AudioListener",
           "ScriptProcessorNode",
           "AudioWorklet",
-          "AudioParamMap"
+          "AudioParamMap",
+          "AudioPlaybackStats"
         ],
         "AudioWorklet": [
           "AudioWorkletGlobalScope"
@@ -1021,7 +1022,7 @@
         "href": "https://webaudio.github.io/web-audio-api/#enumdef-audiosinktype"
       },
       "AudioContext": {
-        "fragment": "[Exposed=Window]\ninterface AudioContext : BaseAudioContext {\n    constructor (optional AudioContextOptions contextOptions = {});\n    readonly attribute double baseLatency;\n    readonly attribute double outputLatency;\n    [SecureContext] readonly attribute (DOMString or AudioSinkInfo) sinkId;\n    attribute EventHandler onsinkchange;\n    attribute EventHandler onerror;\n    AudioTimestamp getOutputTimestamp ();\n    Promise<undefined> resume ();\n    Promise<undefined> suspend ();\n    Promise<undefined> close ();\n    [SecureContext] Promise<undefined> setSinkId ((DOMString or AudioSinkOptions) sinkId);\n    MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);\n    MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);\n    MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (\n        MediaStreamTrack mediaStreamTrack);\n    MediaStreamAudioDestinationNode createMediaStreamDestination ();\n};",
+        "fragment": "[Exposed=Window]\ninterface AudioContext : BaseAudioContext {\n    constructor (optional AudioContextOptions contextOptions = {});\n    readonly attribute double baseLatency;\n    readonly attribute double outputLatency;\n    [SecureContext] readonly attribute (DOMString or AudioSinkInfo) sinkId;\n    attribute EventHandler onsinkchange;\n    attribute EventHandler onerror;\n    [SameObject] readonly attribute AudioPlaybackStats playbackStats;\n    AudioTimestamp getOutputTimestamp ();\n    Promise<undefined> resume ();\n    Promise<undefined> suspend ();\n    Promise<undefined> close ();\n    [SecureContext] Promise<undefined> setSinkId ((DOMString or AudioSinkOptions) sinkId);\n    MediaElementAudioSourceNode createMediaElementSource (HTMLMediaElement mediaElement);\n    MediaStreamAudioSourceNode createMediaStreamSource (MediaStream mediaStream);\n    MediaStreamTrackAudioSourceNode createMediaStreamTrackSource (\n        MediaStreamTrack mediaStreamTrack);\n    MediaStreamAudioDestinationNode createMediaStreamDestination ();\n};",
         "type": "interface",
         "name": "AudioContext",
         "inheritance": "BaseAudioContext",
@@ -1154,6 +1155,29 @@
             "special": "",
             "readonly": false,
             "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-onerror"
+          },
+          {
+            "type": "attribute",
+            "name": "playbackStats",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AudioPlaybackStats"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-playbackstats"
           },
           {
             "type": "operation",
@@ -9038,6 +9062,168 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webaudio.github.io/web-audio-api/#AudioParamDescriptor"
+      },
+      "AudioPlaybackStats": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface AudioPlaybackStats {\n    readonly attribute double underrunDuration;\n    readonly attribute unsigned long underrunEvents;\n    readonly attribute double totalDuration;\n    readonly attribute double averageLatency;\n    readonly attribute double minimumLatency;\n    readonly attribute double maximumLatency;\n    undefined resetLatency();\n    [Default] object toJSON();\n};",
+        "type": "interface",
+        "name": "AudioPlaybackStats",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "underrunDuration",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-underrunduration"
+          },
+          {
+            "type": "attribute",
+            "name": "underrunEvents",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-underrunevents"
+          },
+          {
+            "type": "attribute",
+            "name": "totalDuration",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-totalduration"
+          },
+          {
+            "type": "attribute",
+            "name": "averageLatency",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-averagelatency"
+          },
+          {
+            "type": "attribute",
+            "name": "minimumLatency",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-minimumlatency"
+          },
+          {
+            "type": "attribute",
+            "name": "maximumLatency",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-maximumlatency"
+          },
+          {
+            "type": "operation",
+            "name": "resetLatency",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-resetlatency"
+          },
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "href": "https://webaudio.github.io/web-audio-api/#dom-audioplaybackstats-tojson"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats"
       }
     },
     "idlExtendedNames": {},
@@ -9086,7 +9272,8 @@
         "WaveShaperNode",
         "AudioWorklet",
         "AudioParamMap",
-        "AudioWorkletNode"
+        "AudioWorkletNode",
+        "AudioPlaybackStats"
       ],
       "AudioWorklet": [
         "AudioWorkletGlobalScope",
@@ -9129,6 +9316,7 @@
         "AudioContextOptions",
         "AudioSinkInfo",
         "EventHandler",
+        "AudioPlaybackStats",
         "AudioTimestamp",
         "AudioSinkOptions",
         "MediaElementAudioSourceNode",
@@ -9430,7 +9618,8 @@
       ],
       "AudioParamDescriptor": [
         "AutomationRate"
-      ]
+      ],
+      "AudioPlaybackStats": []
     },
     "externalDependencies": [
       "DOMException",

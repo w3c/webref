@@ -1,0 +1,15 @@
+{
+  "name": "AudioPlaybackStats",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API 1.1",
+      "url": "https://www.w3.org/TR/webaudio-1.1/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface AudioPlaybackStats {\n    readonly attribute double underrunDuration;\n    readonly attribute unsigned long underrunEvents;\n    readonly attribute double totalDuration;\n    readonly attribute double averageLatency;\n    readonly attribute double minimumLatency;\n    readonly attribute double maximumLatency;\n    undefined resetLatency();\n    [Default] object toJSON();\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#AudioPlaybackStats"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

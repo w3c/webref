@@ -6,7 +6,7 @@
       "title": "The <model> element",
       "url": "https://immersive-web.github.io/model-element/"
     },
-    "fragment": "[Exposed=Window]\ninterface HTMLModelElement : HTMLElement {\n\n};",
+    "fragment": "[Exposed=Window]\ninterface HTMLModelElement : HTMLElement {\n\n  readonly attribute Promise<HTMLModelElement> ready;\n  readonly attribute DOMPointReadOnly boundingBoxCenter;\n  readonly attribute DOMPointReadOnly boundingBoxExtents;\n  attribute DOMMatrixReadOnly entityTransform;\n\n};",
     "href": "https://immersive-web.github.io/model-element/#dom-htmlmodelelement"
   },
   "extended": [],
