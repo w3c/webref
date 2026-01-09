@@ -1,11 +1,11 @@
 // GENERATED CONTENT - DO NOT EDIT
 // Content was automatically extracted by Reffy into webref
 // (https://github.com/w3c/webref)
-// Source: CSS Transitions (https://www.w3.org/TR/css-transitions-1/)
+// Source: CSS Transitions Module Level 1 (https://www.w3.org/TR/css-transitions-1/)
 
-[Exposed=Window,
- Constructor(CSSOMString type, optional TransitionEventInit transitionEventInitDict)]
+[Exposed=Window]
 interface TransitionEvent : Event {
+  constructor(CSSOMString type, optional TransitionEventInit transitionEventInitDict = {});
   readonly attribute CSSOMString propertyName;
   readonly attribute double elapsedTime;
   readonly attribute CSSOMString pseudoElement;
@@ -17,7 +17,7 @@ dictionary TransitionEventInit : EventInit {
   CSSOMString pseudoElement = "";
 };
 
-partial interface GlobalEventHandlers {
+partial interface mixin GlobalEventHandlers {
   attribute EventHandler ontransitionrun;
   attribute EventHandler ontransitionstart;
   attribute EventHandler ontransitionend;

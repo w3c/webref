@@ -1,66 +1,411 @@
 {
   "spec": {
-    "title": "CSS Transitions",
+    "title": "CSS Transitions Module Level 1",
     "url": "https://www.w3.org/TR/css-transitions-1/"
   },
   "links": {
     "rawlinks": {
+      "http://wpt.live/css/css-transitions/after-change-style-inherited-try-fallback.html": {},
+      "http://wpt.live/css/css-transitions/after-change-style-inherited.html": {},
+      "http://wpt.live/css/css-transitions/allow-discrete-auto-inset.html": {},
+      "http://wpt.live/css/css-transitions/animations/animate-with-color-mix.html": {},
+      "http://wpt.live/css/css-transitions/animations/change-duration-during-transition.html": {},
+      "http://wpt.live/css/css-transitions/animations/color-transition-premultiplied.html": {},
+      "http://wpt.live/css/css-transitions/animations/move-after-transition.html": {},
+      "http://wpt.live/css/css-transitions/animations/text-shadow-composition.html": {},
+      "http://wpt.live/css/css-transitions/animations/text-shadow-interpolation.html": {},
+      "http://wpt.live/css/css-transitions/animations/transition-end-event-shorthands.html": {},
+      "http://wpt.live/css/css-transitions/animations/transition-timing-function.html": {},
+      "http://wpt.live/css/css-transitions/animations/vertical-align-composition.html": {},
+      "http://wpt.live/css/css-transitions/animations/vertical-align-interpolation.html": {},
+      "http://wpt.live/css/css-transitions/animations/z-index-interpolation.html": {},
+      "http://wpt.live/css/css-transitions/before-load-001.html": {},
+      "http://wpt.live/css/css-transitions/changing-while-transition-001.html": {},
+      "http://wpt.live/css/css-transitions/changing-while-transition-002.html": {},
+      "http://wpt.live/css/css-transitions/changing-while-transition-003.html": {},
+      "http://wpt.live/css/css-transitions/changing-while-transition-004.html": {},
+      "http://wpt.live/css/css-transitions/crashtests/delete-image-set.html": {},
+      "http://wpt.live/css/css-transitions/crashtests/size-container-transition-crash.html": {},
+      "http://wpt.live/css/css-transitions/crashtests/transition-during-style-attr-mutation.html": {},
+      "http://wpt.live/css/css-transitions/crashtests/transition-large-word-spacing-001.html": {},
+      "http://wpt.live/css/css-transitions/currentcolor-animation-001.html": {},
+      "http://wpt.live/css/css-transitions/custom-property-and-allow-discrete.html": {},
+      "http://wpt.live/css/css-transitions/disconnected-element-001.html": {},
+      "http://wpt.live/css/css-transitions/display-none-no-animations.html": {},
+      "http://wpt.live/css/css-transitions/dynamic-root-element.html": {},
+      "http://wpt.live/css/css-transitions/events-001.html": {},
+      "http://wpt.live/css/css-transitions/events-002.html": {},
+      "http://wpt.live/css/css-transitions/events-003.html": {},
+      "http://wpt.live/css/css-transitions/events-004.html": {},
+      "http://wpt.live/css/css-transitions/events-005.html": {},
+      "http://wpt.live/css/css-transitions/events-006.html": {},
+      "http://wpt.live/css/css-transitions/events-007.html": {},
+      "http://wpt.live/css/css-transitions/historical.html": {},
+      "http://wpt.live/css/css-transitions/idlharness-2.html": {},
+      "http://wpt.live/css/css-transitions/idlharness.html": {},
+      "http://wpt.live/css/css-transitions/inert-while-transitioning-to-display-none.html": {},
+      "http://wpt.live/css/css-transitions/infinite-duration-crash.html": {},
+      "http://wpt.live/css/css-transitions/inherit-background-color-transition.html": {},
+      "http://wpt.live/css/css-transitions/inherit-height-transition.html": {},
+      "http://wpt.live/css/css-transitions/inheritance.html": {},
+      "http://wpt.live/css/css-transitions/non-rendered-element-001.html": {},
+      "http://wpt.live/css/css-transitions/non-rendered-element-002.html": {},
+      "http://wpt.live/css/css-transitions/parsing/starting-style-parsing.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-behavior.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-computed.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-delay-computed.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-delay-invalid.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-delay-valid.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-duration-computed.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-duration-invalid.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-duration-valid.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-invalid.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-property-computed.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-property-invalid.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-property-valid.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-shorthand.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-timing-function-computed.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-timing-function-invalid.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-timing-function-valid.html": {},
+      "http://wpt.live/css/css-transitions/parsing/transition-valid.html": {},
+      "http://wpt.live/css/css-transitions/properties-value-001.html": {},
+      "http://wpt.live/css/css-transitions/properties-value-002.html": {},
+      "http://wpt.live/css/css-transitions/properties-value-003.html": {},
+      "http://wpt.live/css/css-transitions/properties-value-implicit-001.html": {},
+      "http://wpt.live/css/css-transitions/properties-value-inherit-001.html": {},
+      "http://wpt.live/css/css-transitions/properties-value-inherit-002.html": {},
+      "http://wpt.live/css/css-transitions/properties-value-inherit-003.html": {},
+      "http://wpt.live/css/css-transitions/pseudo-element-transform.html": {},
+      "http://wpt.live/css/css-transitions/pseudo-elements-001.html": {},
+      "http://wpt.live/css/css-transitions/pseudo-elements-002.html": {},
+      "http://wpt.live/css/css-transitions/render-blocking/no-transition-from-ua-to-blocking-stylesheet.html": {},
+      "http://wpt.live/css/css-transitions/retargetted-transition-with-box-sizing.html": {},
+      "http://wpt.live/css/css-transitions/root-color-transition.html": {},
+      "http://wpt.live/css/css-transitions/shadow-root-insertion.html": {},
+      "http://wpt.live/css/css-transitions/starting-of-transitions-001.html": {},
+      "http://wpt.live/css/css-transitions/starting-style-adjustment.html": {},
+      "http://wpt.live/css/css-transitions/starting-style-cascade.html": {},
+      "http://wpt.live/css/css-transitions/starting-style-first-letter-crash.html": {},
+      "http://wpt.live/css/css-transitions/starting-style-name-defining-rules.html": {},
+      "http://wpt.live/css/css-transitions/starting-style-rule-basic.html": {},
+      "http://wpt.live/css/css-transitions/starting-style-rule-none.html": {},
+      "http://wpt.live/css/css-transitions/starting-style-rule-pseudo-elements.html": {},
+      "http://wpt.live/css/css-transitions/starting-style-size-container.html": {},
+      "http://wpt.live/css/css-transitions/transition-001.html": {},
+      "http://wpt.live/css/css-transitions/transition-after-animation-001.html": {},
+      "http://wpt.live/css/css-transitions/transition-background-position-with-edge-offset.html": {},
+      "http://wpt.live/css/css-transitions/transition-base-response-001.html": {},
+      "http://wpt.live/css/css-transitions/transition-base-response-002.html": {},
+      "http://wpt.live/css/css-transitions/transition-base-response-003.html": {},
+      "http://wpt.live/css/css-transitions/transition-behavior-events.html": {},
+      "http://wpt.live/css/css-transitions/transition-behavior.html": {},
+      "http://wpt.live/css/css-transitions/transition-delay-001.html": {},
+      "http://wpt.live/css/css-transitions/transition-duration-001.html": {},
+      "http://wpt.live/css/css-transitions/transition-duration-shorthand.html": {},
+      "http://wpt.live/css/css-transitions/transition-events-with-document-change.html": {},
+      "http://wpt.live/css/css-transitions/transition-important.html": {},
+      "http://wpt.live/css/css-transitions/transition-in-iframe-001.html": {},
+      "http://wpt.live/css/css-transitions/transition-property-001.html": {},
+      "http://wpt.live/css/css-transitions/transition-property-002.html": {},
+      "http://wpt.live/css/css-transitions/transition-remove-and-change-immediate.html": {},
+      "http://wpt.live/css/css-transitions/transition-reparented.html": {},
+      "http://wpt.live/css/css-transitions/transition-test.html": {},
+      "http://wpt.live/css/css-transitions/transition-zero-duration-with-delay.html": {},
+      "http://wpt.live/css/css-transitions/transitioncancel-001.html": {},
+      "http://wpt.live/css/css-transitions/transitioncancel-002.html": {},
+      "http://wpt.live/css/css-transitions/transitioncancel-003.html": {},
+      "http://wpt.live/css/css-transitions/transitionevent-interface.html": {},
+      "http://wpt.live/css/css-transitions/transitions-retarget.html": {},
+      "http://wpt.live/css/css-transitions/zero-duration-multiple-transition.html": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://dom.spec.whatwg.org/": {},
-      "https://drafts.csswg.org/css-cascade/": {
-        "anchors": [
-          "initial-values",
-          "inherited-property",
-          "computed"
-        ]
-      },
-      "https://drafts.csswg.org/css-pseudo/": {
-        "anchors": [
-          "generated-content"
-        ]
-      },
-      "https://drafts.csswg.org/css-transitions/": {
-        "anchors": [
-          "animatable-properties"
-        ]
-      },
-      "https://drafts.csswg.org/css-values-4/": {
-        "anchors": [
-          "combining-values"
-        ]
-      },
-      "https://drafts.csswg.org/css-values/": {
-        "anchors": [
-          "value-defs",
-          "percentages"
-        ]
-      },
-      "https://drafts.csswg.org/web-animations-1/": {
-        "anchors": [
-          "animating-properties"
-        ]
-      },
-      "https://github.com/w3c/csswg-drafts/commits/master/css-transitions-1/Overview.bs": {},
+      "https://github.com/w3c/csswg-drafts/commits/main/css-transitions-1/Overview.bs": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
-      "https://heycam.github.io/webidl/": {},
-      "https://hg.csswg.org/drafts/log/tip/css-transitions/Overview.bs": {},
-      "https://hg.csswg.org/drafts/log/tip/css-transitions/Overview.src.html": {},
-      "https://hg.csswg.org/drafts/log/tip/css3-transitions/Overview.src.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/after-change-style-inherited-try-fallback.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/after-change-style-inherited.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/allow-discrete-auto-inset.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/animations/animate-with-color-mix.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/animations/change-duration-during-transition.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/animations/color-transition-premultiplied.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/animations/move-after-transition.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/animations/text-shadow-composition.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/animations/text-shadow-interpolation.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/animations/transition-end-event-shorthands.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/animations/transition-timing-function.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/animations/vertical-align-composition.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/animations/vertical-align-interpolation.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/animations/z-index-interpolation.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/before-load-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/changing-while-transition-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/changing-while-transition-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/changing-while-transition-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/changing-while-transition-004.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/crashtests/delete-image-set.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/crashtests/size-container-transition-crash.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/crashtests/transition-during-style-attr-mutation.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/crashtests/transition-large-word-spacing-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/currentcolor-animation-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/custom-property-and-allow-discrete.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/disconnected-element-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/display-none-no-animations.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/dynamic-root-element.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/events-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/events-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/events-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/events-004.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/events-005.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/events-006.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/events-007.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/historical.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/idlharness-2.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/idlharness.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/inert-while-transitioning-to-display-none.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/infinite-duration-crash.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/inherit-background-color-transition.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/inherit-height-transition.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/inheritance.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/non-rendered-element-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/non-rendered-element-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/starting-style-parsing.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-behavior.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-computed.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-delay-computed.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-delay-invalid.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-delay-valid.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-duration-computed.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-duration-invalid.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-duration-valid.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-invalid.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-property-computed.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-property-invalid.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-property-valid.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-shorthand.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-timing-function-computed.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-timing-function-invalid.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-timing-function-valid.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/parsing/transition-valid.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/properties-value-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/properties-value-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/properties-value-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/properties-value-implicit-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/properties-value-inherit-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/properties-value-inherit-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/properties-value-inherit-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/pseudo-element-transform.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/pseudo-elements-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/pseudo-elements-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/render-blocking/no-transition-from-ua-to-blocking-stylesheet.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/retargetted-transition-with-box-sizing.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/root-color-transition.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/shadow-root-insertion.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/starting-of-transitions-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/starting-style-adjustment.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/starting-style-cascade.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/starting-style-first-letter-crash.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/starting-style-name-defining-rules.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/starting-style-rule-basic.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/starting-style-rule-none.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/starting-style-rule-pseudo-elements.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/starting-style-size-container.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-after-animation-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-background-position-with-edge-offset.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-base-response-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-base-response-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-base-response-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-behavior-events.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-behavior.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-delay-000-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-delay-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-delay-002-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-delay-003-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-duration-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-duration-002-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-duration-003-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-duration-004-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-duration-shorthand.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-events-with-document-change.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-important.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-in-iframe-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-003-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-004-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-005-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-006-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-007-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-008-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-009-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-010-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-011-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-012-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-013-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-014-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-015-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-016-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-017-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-018-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-019-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-020-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-021-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-022-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-023-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-024-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-025-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-026-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-027-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-028-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-029-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-030-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-031-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-032-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-033-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-034-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-035-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-036-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-037-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-038-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-039-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-040-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-041-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-042-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-043-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-044-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-property-045-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-remove-and-change-immediate.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-reparented.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-test.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-timing-function-002-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-timing-function-003-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-timing-function-004-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-timing-function-005-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-timing-function-006-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-timing-function-010-manual.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-zero-duration-with-delay.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transitioncancel-001.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transitioncancel-002.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transitioncancel-003.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transitionevent-interface.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transitions-retarget.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/zero-duration-multiple-transition.html": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/public-css-testsuite": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
-      "https://tools.ietf.org/html/rfc2119": {},
-      "https://www.w3.org/2004/01/pp-impl/32061/status": {},
-      "https://www.w3.org/2018/Process-20180201/": {},
-      "https://www.w3.org/Consortium/Patent-Policy/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
-      "https://www.w3.org/Style/": {},
+      "https://webidl.spec.whatwg.org/": {},
+      "https://wpt.fyi/results/css/css-transitions/after-change-style-inherited-try-fallback.html": {},
+      "https://wpt.fyi/results/css/css-transitions/after-change-style-inherited.html": {},
+      "https://wpt.fyi/results/css/css-transitions/allow-discrete-auto-inset.html": {},
+      "https://wpt.fyi/results/css/css-transitions/animations/animate-with-color-mix.html": {},
+      "https://wpt.fyi/results/css/css-transitions/animations/change-duration-during-transition.html": {},
+      "https://wpt.fyi/results/css/css-transitions/animations/color-transition-premultiplied.html": {},
+      "https://wpt.fyi/results/css/css-transitions/animations/move-after-transition.html": {},
+      "https://wpt.fyi/results/css/css-transitions/animations/text-shadow-composition.html": {},
+      "https://wpt.fyi/results/css/css-transitions/animations/text-shadow-interpolation.html": {},
+      "https://wpt.fyi/results/css/css-transitions/animations/transition-end-event-shorthands.html": {},
+      "https://wpt.fyi/results/css/css-transitions/animations/transition-timing-function.html": {},
+      "https://wpt.fyi/results/css/css-transitions/animations/vertical-align-composition.html": {},
+      "https://wpt.fyi/results/css/css-transitions/animations/vertical-align-interpolation.html": {},
+      "https://wpt.fyi/results/css/css-transitions/animations/z-index-interpolation.html": {},
+      "https://wpt.fyi/results/css/css-transitions/before-load-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/changing-while-transition-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/changing-while-transition-002.html": {},
+      "https://wpt.fyi/results/css/css-transitions/changing-while-transition-003.html": {},
+      "https://wpt.fyi/results/css/css-transitions/changing-while-transition-004.html": {},
+      "https://wpt.fyi/results/css/css-transitions/crashtests/delete-image-set.html": {},
+      "https://wpt.fyi/results/css/css-transitions/crashtests/size-container-transition-crash.html": {},
+      "https://wpt.fyi/results/css/css-transitions/crashtests/transition-during-style-attr-mutation.html": {},
+      "https://wpt.fyi/results/css/css-transitions/crashtests/transition-large-word-spacing-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/currentcolor-animation-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/custom-property-and-allow-discrete.html": {},
+      "https://wpt.fyi/results/css/css-transitions/disconnected-element-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/display-none-no-animations.html": {},
+      "https://wpt.fyi/results/css/css-transitions/dynamic-root-element.html": {},
+      "https://wpt.fyi/results/css/css-transitions/events-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/events-002.html": {},
+      "https://wpt.fyi/results/css/css-transitions/events-003.html": {},
+      "https://wpt.fyi/results/css/css-transitions/events-004.html": {},
+      "https://wpt.fyi/results/css/css-transitions/events-005.html": {},
+      "https://wpt.fyi/results/css/css-transitions/events-006.html": {},
+      "https://wpt.fyi/results/css/css-transitions/events-007.html": {},
+      "https://wpt.fyi/results/css/css-transitions/historical.html": {},
+      "https://wpt.fyi/results/css/css-transitions/idlharness-2.html": {},
+      "https://wpt.fyi/results/css/css-transitions/idlharness.html": {},
+      "https://wpt.fyi/results/css/css-transitions/inert-while-transitioning-to-display-none.html": {},
+      "https://wpt.fyi/results/css/css-transitions/infinite-duration-crash.html": {},
+      "https://wpt.fyi/results/css/css-transitions/inherit-background-color-transition.html": {},
+      "https://wpt.fyi/results/css/css-transitions/inherit-height-transition.html": {},
+      "https://wpt.fyi/results/css/css-transitions/inheritance.html": {},
+      "https://wpt.fyi/results/css/css-transitions/non-rendered-element-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/non-rendered-element-002.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/starting-style-parsing.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-behavior.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-computed.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-delay-computed.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-delay-invalid.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-delay-valid.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-duration-computed.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-duration-invalid.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-duration-valid.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-invalid.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-property-computed.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-property-invalid.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-property-valid.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-shorthand.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-timing-function-computed.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-timing-function-invalid.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-timing-function-valid.html": {},
+      "https://wpt.fyi/results/css/css-transitions/parsing/transition-valid.html": {},
+      "https://wpt.fyi/results/css/css-transitions/properties-value-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/properties-value-002.html": {},
+      "https://wpt.fyi/results/css/css-transitions/properties-value-003.html": {},
+      "https://wpt.fyi/results/css/css-transitions/properties-value-implicit-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/properties-value-inherit-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/properties-value-inherit-002.html": {},
+      "https://wpt.fyi/results/css/css-transitions/properties-value-inherit-003.html": {},
+      "https://wpt.fyi/results/css/css-transitions/pseudo-element-transform.html": {},
+      "https://wpt.fyi/results/css/css-transitions/pseudo-elements-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/pseudo-elements-002.html": {},
+      "https://wpt.fyi/results/css/css-transitions/render-blocking/no-transition-from-ua-to-blocking-stylesheet.html": {},
+      "https://wpt.fyi/results/css/css-transitions/retargetted-transition-with-box-sizing.html": {},
+      "https://wpt.fyi/results/css/css-transitions/root-color-transition.html": {},
+      "https://wpt.fyi/results/css/css-transitions/shadow-root-insertion.html": {},
+      "https://wpt.fyi/results/css/css-transitions/starting-of-transitions-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/starting-style-adjustment.html": {},
+      "https://wpt.fyi/results/css/css-transitions/starting-style-cascade.html": {},
+      "https://wpt.fyi/results/css/css-transitions/starting-style-first-letter-crash.html": {},
+      "https://wpt.fyi/results/css/css-transitions/starting-style-name-defining-rules.html": {},
+      "https://wpt.fyi/results/css/css-transitions/starting-style-rule-basic.html": {},
+      "https://wpt.fyi/results/css/css-transitions/starting-style-rule-none.html": {},
+      "https://wpt.fyi/results/css/css-transitions/starting-style-rule-pseudo-elements.html": {},
+      "https://wpt.fyi/results/css/css-transitions/starting-style-size-container.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-after-animation-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-background-position-with-edge-offset.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-base-response-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-base-response-002.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-base-response-003.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-behavior-events.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-behavior.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-delay-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-duration-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-duration-shorthand.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-events-with-document-change.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-important.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-in-iframe-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-property-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-property-002.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-remove-and-change-immediate.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-reparented.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-test.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transition-zero-duration-with-delay.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transitioncancel-001.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transitioncancel-002.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transitioncancel-003.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transitionevent-interface.html": {},
+      "https://wpt.fyi/results/css/css-transitions/transitions-retarget.html": {},
+      "https://wpt.fyi/results/css/css-transitions/zero-duration-multiple-transition.html": {},
       "https://www.w3.org/Style/CSS/Test/": {},
-      "https://www.w3.org/Style/CSS/members": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2013/WD-css3-transitions-20130212/ChangeLog": {},
       "https://www.w3.org/TR/2013/WD-css3-transitions-20131119/": {
@@ -73,6 +418,11 @@
           "changes"
         ]
       },
+      "https://www.w3.org/TR/2018/WD-css-transitions-1-20181011/": {
+        "anchors": [
+          "changes"
+        ]
+      },
       "https://www.w3.org/TR/CSS/": {
         "anchors": [
           "future-proofing",
@@ -81,7 +431,12 @@
         ]
       },
       "https://www.w3.org/TR/CSS2/": {},
-      "https://www.w3.org/TR/CSS2/conform.html": {
+      "https://www.w3.org/TR/CSS2/about.html": {
+        "anchors": [
+          "property-defs"
+        ]
+      },
+      "https://www.w3.org/TR/CSS21/conform.html": {
         "anchors": [
           "style-sheet",
           "user-agent",
@@ -97,15 +452,63 @@
       "https://www.w3.org/TR/css-animations-1/": {},
       "https://www.w3.org/TR/css-backgrounds-3/": {},
       "https://www.w3.org/TR/css-cascade-3/": {},
-      "https://www.w3.org/TR/css-cascade-4/": {},
-      "https://www.w3.org/TR/css-color-3/": {},
+      "https://www.w3.org/TR/css-cascade-5/": {},
+      "https://www.w3.org/TR/css-cascade-6/": {},
+      "https://www.w3.org/TR/css-cascade/": {
+        "anchors": [
+          "initial-values",
+          "applies-to",
+          "inherited-property",
+          "computed"
+        ]
+      },
+      "https://www.w3.org/TR/css-color-4/": {},
       "https://www.w3.org/TR/css-easing-1/": {},
+      "https://www.w3.org/TR/css-easing-2/": {},
+      "https://www.w3.org/TR/css-pseudo/": {
+        "anchors": [
+          "generated-content"
+        ]
+      },
       "https://www.w3.org/TR/css-transforms-1/": {},
-      "https://www.w3.org/TR/css-values-3/": {},
+      "https://www.w3.org/TR/css-values-3/": {
+        "anchors": [
+          "value-defs"
+        ]
+      },
       "https://www.w3.org/TR/css-values-4/": {},
+      "https://www.w3.org/TR/css-values/": {
+        "anchors": [
+          "value-defs",
+          "percentages"
+        ]
+      },
       "https://www.w3.org/TR/cssom-1/": {},
+      "https://www.w3.org/TR/cssom/": {
+        "anchors": [
+          "serializing-css-values"
+        ]
+      },
       "https://www.w3.org/TR/smil-animation/": {},
-      "https://www.w3.org/TR/web-animations-1/": {}
+      "https://www.w3.org/TR/web-animations-1/": {},
+      "https://www.w3.org/TR/web-animations/": {
+        "anchors": [
+          "animation-type"
+        ]
+      },
+      "https://www.w3.org/groups/wg/css": {},
+      "https://www.w3.org/groups/wg/css/ipr": {},
+      "https://www.w3.org/policies/patent-policy/20200915/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20250818/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      }
     },
     "autolinks": {
       "http://w3c.github.io/dom/": {
@@ -119,30 +522,6 @@
           "dictdef-eventinit"
         ]
       },
-      "https://drafts.csswg.org/css-values-4/": {
-        "anchors": [
-          "interpolation"
-        ]
-      },
-      "https://drafts.csswg.org/cssom-1/": {
-        "anchors": [
-          "cssomstring"
-        ]
-      },
-      "https://drafts.csswg.org/web-animations-1/": {
-        "anchors": [
-          "animation-type",
-          "not-animatable",
-          "discrete",
-          "combining-shadow-lists"
-        ]
-      },
-      "https://heycam.github.io/webidl/": {
-        "anchors": [
-          "Exposed",
-          "idl-double"
-        ]
-      },
       "https://html.spec.whatwg.org/": {
         "anchors": [
           "document"
@@ -152,6 +531,11 @@
         "anchors": [
           "concept-event-dispatch",
           "html-elements"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "window"
         ]
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -164,46 +548,64 @@
           "eventhandler"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/window-object.html": {
+      "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "window"
+          "Exposed",
+          "idl-double"
         ]
       },
-      "https://www.w3.org/TR/CSS/": {
-        "anchors": [
-          "vendor-prefix"
-        ]
-      },
-      "https://www.w3.org/TR/CSS21/colors.html": {
+      "https://www.w3.org/TR/CSS2/colors.html": {
         "anchors": [
           "propdef-background-color"
         ]
       },
-      "https://www.w3.org/TR/CSS21/visudet.html": {
+      "https://www.w3.org/TR/CSS2/visudet.html": {
         "anchors": [
           "propdef-width"
         ]
       },
-      "https://www.w3.org/TR/CSS21/visuren.html": {
+      "https://www.w3.org/TR/CSS2/visuren.html": {
         "anchors": [
           "propdef-left",
           "propdef-top"
         ]
       },
-      "https://www.w3.org/TR/css-cascade-4/": {
+      "https://www.w3.org/TR/css-animations-1/": {
+        "anchors": [
+          "dom-animationevent-elapsedtime"
+        ]
+      },
+      "https://www.w3.org/TR/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-background-image",
+          "propdef-box-shadow"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-5/": {
         "anchors": [
           "computed-value",
           "valdef-all-inherit",
           "valdef-all-initial",
-          "propdef-all",
+          "propdef-all"
+        ]
+      },
+      "https://www.w3.org/TR/css-cascade-6/": {
+        "anchors": [
           "cascade"
         ]
       },
-      "https://www.w3.org/TR/css-easing-1/": {
+      "https://www.w3.org/TR/css-color-4/": {
+        "anchors": [
+          "propdef-opacity",
+          "valdef-color-green",
+          "valdef-color-blue"
+        ]
+      },
+      "https://www.w3.org/TR/css-easing-2/": {
         "anchors": [
           "input-progress-value",
           "output-progress-value",
-          "typedef-timing-function"
+          "typedef-easing-function"
         ]
       },
       "https://www.w3.org/TR/css-transforms-1/": {
@@ -211,34 +613,37 @@
           "propdef-transform"
         ]
       },
+      "https://www.w3.org/TR/css-values-3/": {
+        "anchors": [
+          "time-value"
+        ]
+      },
       "https://www.w3.org/TR/css-values-4/": {
         "anchors": [
+          "css-wide-keywords",
           "comb-one",
           "mult-comma",
           "identifier-value",
+          "interpolation",
           "comb-any"
-        ]
-      },
-      "https://www.w3.org/TR/css3-animations/": {
-        "anchors": [
-          "dom-animationevent-elapsedtime"
         ]
       },
       "https://www.w3.org/TR/css3-background/": {
         "anchors": [
-          "propdef-background-image",
-          "propdef-box-shadow",
           "shadow-inset"
         ]
       },
-      "https://www.w3.org/TR/css3-color/": {
+      "https://www.w3.org/TR/cssom-1/": {
         "anchors": [
-          "opacity"
+          "cssomstring"
         ]
       },
-      "https://www.w3.org/TR/css3-values/": {
+      "https://www.w3.org/TR/web-animations-1/": {
         "anchors": [
-          "time-value"
+          "animation-type",
+          "not-animatable",
+          "discrete",
+          "combining-shadow-lists"
         ]
       }
     }

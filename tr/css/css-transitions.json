@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "CSS Transitions",
+    "title": "CSS Transitions Module Level 1",
     "url": "https://www.w3.org/TR/css-transitions-1/"
   },
   "properties": [
@@ -39,7 +39,7 @@
     {
       "name": "transition-duration",
       "href": "https://www.w3.org/TR/css-transitions-1/#propdef-transition-duration",
-      "value": "<time>#",
+      "value": "<time [0s,∞]>#",
       "initial": "0s",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -55,7 +55,7 @@
     {
       "name": "transition-timing-function",
       "href": "https://www.w3.org/TR/css-transitions-1/#propdef-transition-timing-function",
-      "value": "<timing-function>#",
+      "value": "<easing-function>#",
       "initial": "ease",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -93,9 +93,8 @@
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "animatable": "no",
       "animationType": "not animatable",
+      "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "transition"
       ]
@@ -106,13 +105,13 @@
   "values": [
     {
       "name": "<single-transition-property>",
-      "value": "all | <custom-ident>;",
+      "value": "all | <custom-ident>",
       "href": "https://www.w3.org/TR/css-transitions-1/#single-transition-property",
       "type": "type"
     },
     {
       "name": "<single-transition>",
-      "value": "[ none | <single-transition-property> ] || <time> || <timing-function> || <time>",
+      "value": "[ none | <single-transition-property> ] || <time> || <easing-function> || <time>",
       "href": "https://www.w3.org/TR/css-transitions-1/#single-transition",
       "type": "type"
     }

@@ -1,9 +1,29 @@
 {
   "spec": {
-    "title": "CSS Transitions",
+    "title": "CSS Transitions Module Level 1",
     "url": "https://www.w3.org/TR/css-transitions-1/"
   },
   "dfns": [
+    {
+      "id": "transitions",
+      "href": "https://www.w3.org/TR/css-transitions-1/#transitions",
+      "linkingText": [
+        "Transitions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transitions",
+        "href": "https://www.w3.org/TR/css-transitions-1/#transitions",
+        "title": "Transitions",
+        "number": "2"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
     {
       "id": "propdef-transition-property",
       "href": "https://www.w3.org/TR/css-transitions-1/#propdef-transition-property",
@@ -607,6 +627,26 @@
       "links": []
     },
     {
+      "id": "transitionevent",
+      "href": "https://www.w3.org/TR/css-transitions-1/#transitionevent",
+      "linkingText": [
+        "TransitionEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-transitionevent-idl",
+        "href": "https://www.w3.org/TR/css-transitions-1/#interface-transitionevent-idl",
+        "title": "IDL Definition",
+        "number": "6.1.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
       "id": "dom-transitionevent-transitionevent-type-transitioneventinitdict-type",
       "href": "https://www.w3.org/TR/css-transitions-1/#dom-transitionevent-transitionevent-type-transitioneventinitdict-type",
       "linkingText": [
@@ -615,7 +655,10 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "TransitionEvent/TransitionEvent(type, transitionEventInitDict)"
+        "TransitionEvent/TransitionEvent(type, transitionEventInitDict)",
+        "TransitionEvent/constructor(type, transitionEventInitDict)",
+        "TransitionEvent/TransitionEvent(type)",
+        "TransitionEvent/constructor(type)"
       ],
       "access": "public",
       "informative": false,
@@ -637,28 +680,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "TransitionEvent/TransitionEvent(type, transitionEventInitDict)"
+        "TransitionEvent/TransitionEvent(type, transitionEventInitDict)",
+        "TransitionEvent/constructor(type, transitionEventInitDict)",
+        "TransitionEvent/TransitionEvent(type)",
+        "TransitionEvent/constructor(type)"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "interface-transitionevent-idl",
-        "href": "https://www.w3.org/TR/css-transitions-1/#interface-transitionevent-idl",
-        "title": "IDL Definition",
-        "number": "6.1.1"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "transitionevent",
-      "href": "https://www.w3.org/TR/css-transitions-1/#transitionevent",
-      "linkingText": [
-        "TransitionEvent"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -826,7 +852,10 @@
       "id": "dom-transitionevent-transitionevent",
       "href": "https://www.w3.org/TR/css-transitions-1/#dom-transitionevent-transitionevent",
       "linkingText": [
-        "TransitionEvent(type, transitionEventInitDict)"
+        "TransitionEvent(type, transitionEventInitDict)",
+        "constructor(type, transitionEventInitDict)",
+        "TransitionEvent(type)",
+        "constructor(type)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -853,7 +882,7 @@
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "transitionevent"
+        "GlobalEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -875,7 +904,7 @@
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "transitionevent"
+        "GlobalEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -897,7 +926,7 @@
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "transitionevent"
+        "GlobalEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -919,7 +948,7 @@
       "localLinkingText": [],
       "type": "event",
       "for": [
-        "transitionevent"
+        "GlobalEventHandlers"
       ],
       "access": "public",
       "informative": false,

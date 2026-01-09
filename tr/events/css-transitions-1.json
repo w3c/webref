@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "CSS Transitions",
+    "title": "CSS Transitions Module Level 1",
     "url": "https://www.w3.org/TR/css-transitions-1/"
   },
   "events": [
@@ -9,46 +9,9 @@
       "targets": [
         "GlobalEventHandlers"
       ],
-      "src": {
-        "format": "IDL eventHandler"
-      }
-    },
-    {
-      "type": "transitionstart",
-      "targets": [
-        "GlobalEventHandlers"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      }
-    },
-    {
-      "type": "transitionend",
-      "targets": [
-        "GlobalEventHandlers"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      }
-    },
-    {
-      "type": "transitioncancel",
-      "targets": [
-        "GlobalEventHandlers"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      }
-    },
-    {
-      "type": "transitionrun",
       "interface": "TransitionEvent",
-      "targets": [
-        "transitionevent"
-      ],
       "src": {
-        "format": "dfn",
-        "href": "https://www.w3.org/TR/css-transitions-1/#transitionrun"
+        "format": "IDL eventHandler"
       },
       "href": "https://www.w3.org/TR/css-transitions-1/#transitionrun",
       "bubbles": true,
@@ -56,13 +19,12 @@
     },
     {
       "type": "transitionstart",
-      "interface": "TransitionEvent",
       "targets": [
-        "transitionevent"
+        "GlobalEventHandlers"
       ],
+      "interface": "TransitionEvent",
       "src": {
-        "format": "dfn",
-        "href": "https://www.w3.org/TR/css-transitions-1/#transitionstart"
+        "format": "IDL eventHandler"
       },
       "href": "https://www.w3.org/TR/css-transitions-1/#transitionstart",
       "bubbles": true,
@@ -70,13 +32,12 @@
     },
     {
       "type": "transitionend",
-      "interface": "TransitionEvent",
       "targets": [
-        "transitionevent"
+        "GlobalEventHandlers"
       ],
+      "interface": "TransitionEvent",
       "src": {
-        "format": "dfn",
-        "href": "https://www.w3.org/TR/css-transitions-1/#transitionend"
+        "format": "IDL eventHandler"
       },
       "href": "https://www.w3.org/TR/css-transitions-1/#transitionend",
       "bubbles": true,
@@ -84,13 +45,12 @@
     },
     {
       "type": "transitioncancel",
-      "interface": "TransitionEvent",
       "targets": [
-        "transitionevent"
+        "GlobalEventHandlers"
       ],
+      "interface": "TransitionEvent",
       "src": {
-        "format": "dfn",
-        "href": "https://www.w3.org/TR/css-transitions-1/#transitioncancel"
+        "format": "IDL eventHandler"
       },
       "href": "https://www.w3.org/TR/css-transitions-1/#transitioncancel",
       "bubbles": true,

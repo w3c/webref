@@ -96,6 +96,12 @@
       "value": "<crossorigin-modifier> | <integrity-modifier> | <referrerpolicy-modifier>",
       "values": [
         {
+          "name": "<crossorigin-modifier>",
+          "value": "crossorigin(anonymous | use-credentials)",
+          "href": "https://www.w3.org/TR/css-values-5/#typedef-request-url-modifier-crossorigin-modifier",
+          "type": "type"
+        },
+        {
           "name": "crossorigin()",
           "prose": "<crossorigin-modifier> = crossorigin(anonymous | use-credentials)",
           "href": "https://www.w3.org/TR/css-values-5/#funcdef-request-url-modifier-crossorigin",
@@ -116,10 +122,22 @@
           "value": "use-credentials"
         },
         {
+          "name": "<integrity-modifier>",
+          "value": "integrity(<string>)",
+          "href": "https://www.w3.org/TR/css-values-5/#typedef-request-url-modifier-integrity-modifier",
+          "type": "type"
+        },
+        {
           "name": "integrity()",
           "prose": "<integrity-modifier> = integrity(<string>)",
           "href": "https://www.w3.org/TR/css-values-5/#funcdef-request-url-modifier-integrity",
           "type": "function"
+        },
+        {
+          "name": "<referrerpolicy-modifier>",
+          "value": "referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)",
+          "href": "https://www.w3.org/TR/css-values-5/#typedef-request-url-modifier-referrerpolicy-modifier",
+          "type": "type"
         },
         {
           "name": "referrerpolicy()",
@@ -583,21 +601,6 @@
       "msg": "Missing definition",
       "name": "<boolean-expr-group>",
       "value": "<test> | ( <boolean-expr[ <test> ]> ) | <general-enclosed>"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "<crossorigin-modifier>",
-      "value": "crossorigin(anonymous | use-credentials)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "<integrity-modifier>",
-      "value": "integrity(<string>)"
-    },
-    {
-      "msg": "Missing definition",
-      "name": "<referrerpolicy-modifier>",
-      "value": "referrerpolicy(no-referrer | no-referrer-when-downgrade | same-origin | origin | strict-origin | origin-when-cross-origin | strict-origin-when-cross-origin | unsafe-url)"
     },
     {
       "msg": "Missing definition",

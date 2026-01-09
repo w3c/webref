@@ -63,6 +63,12 @@
           "href": "https://www.w3.org/TR/css-speech-1/#valdef-voice-volume-decibel",
           "type": "value",
           "value": "<decibel>"
+        },
+        {
+          "name": "<decibel>",
+          "prose": "The <decibel> type denotes a dimension with a \"dB\" (decibel unit) unit identifier. Decibels represent the ratio of the squares of the new signal amplitude a1 and the current amplitude a0, as per the following logarithmic equation: volume(dB) = 20 × log10(a1 / a0).",
+          "href": "https://www.w3.org/TR/css-speech-1/#typedef-voice-volume-decibel",
+          "type": "type"
         }
       ],
       "styleDeclaration": [
@@ -591,6 +597,12 @@
           "value": "<family-name>"
         },
         {
+          "name": "<age>",
+          "prose": "Possible values are child, young and old, indicating the preferred age category to match during voice selection.",
+          "href": "https://www.w3.org/TR/css-speech-1/#typedef-voice-family-age",
+          "type": "type"
+        },
+        {
           "name": "child",
           "value": "child",
           "href": "https://www.w3.org/TR/css-speech-1/#valdef-voice-family-child",
@@ -607,6 +619,12 @@
           "value": "old",
           "href": "https://www.w3.org/TR/css-speech-1/#valdef-voice-family-old",
           "type": "value"
+        },
+        {
+          "name": "<gender>",
+          "prose": "One of the keywords male, female, or neutral, specifying a male, female, or neutral voice, respectively.",
+          "href": "https://www.w3.org/TR/css-speech-1/#typedef-voice-family-gender",
+          "type": "type"
         },
         {
           "name": "male",
@@ -743,6 +761,11 @@
           "href": "https://www.w3.org/TR/css-speech-1/#valdef-voice-pitch-semitones",
           "type": "value",
           "value": "<semitones>"
+        },
+        {
+          "name": "<semitones>",
+          "href": "https://www.w3.org/TR/css-speech-1/#typedef-voice-pitch-semitones",
+          "type": "type"
         },
         {
           "name": "<percentage>",
