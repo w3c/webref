@@ -138,9 +138,9 @@ export default {
   // https://drafts.csswg.org/css-transforms-2/#transform-functions
   "css-transforms-2": {
     "<transform-function>": `
-      <scale()> | <scaleX()> | <scaleY()> | <scaleZ()> |
+      <scale3d()> | <scale()> | <scaleX()> | <scaleY()> | <scaleZ()> |
       <translate3d()> | <translate()> | <translateX()> | <translateY()> | <translateZ()> |
-      <rotate3d()> <rotate()> | <rotateX()> | <rotateY()> | <rotateZ()> |
+      <rotate3d()> | <rotate()> | <rotateX()> | <rotateY()> | <rotateZ()> |
       <skew()> | <skewX()> | <skewY()> |
       <matrix3d()> | <matrix()> | <perspective()>
     `
