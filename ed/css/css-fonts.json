@@ -218,18 +218,6 @@
       "animationType": "by computed value type",
       "values": [
         {
-          "name": "<absolute-size>",
-          "value": "<absolute-size>",
-          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-size-absolute-size",
-          "type": "value"
-        },
-        {
-          "name": "<relative-size>",
-          "value": "<relative-size>",
-          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-size-relative-size",
-          "type": "value"
-        },
-        {
           "name": "<length-percentage [0,∞]>",
           "prose": "A length value specifies an absolute font size (independent of the user agent’s font table). Negative lengths are invalid. A percentage value specifies an absolute font size relative to the parent element’s computed font-size. Negative percentages are invalid.",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-size-length-percentage-0",
@@ -1651,6 +1639,18 @@
       "href": "https://drafts.csswg.org/css-fonts-4/#font-weight-absolute-values",
       "type": "type",
       "value": "[ normal | bold | <number [1,1000]> ]"
+    },
+    {
+      "name": "<absolute-size>",
+      "value": "[ xx-small | x-small | small | medium | large | x-large | xx-large | xxx-large ]",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-absolute-size",
+      "type": "type"
+    },
+    {
+      "name": "<relative-size>",
+      "value": "[ larger | smaller ]",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-relative-size",
+      "type": "type"
     },
     {
       "name": "<font-variant-css2>",
