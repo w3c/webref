@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-01-10T12:53:16.770Z",
+  "date": "2026-01-10T18:49:18.528Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -759,7 +759,7 @@
   },
   "stats": {
     "crawled": 727,
-    "errors": 2
+    "errors": 8
   },
   "crawler": "reffy-20.0.6",
   "results": [
@@ -1761,7 +1761,8 @@
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
       "ids": "ids/css-typed-om-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:14900:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:477:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22) {\n    [cause]: AggregateError [ECONNREFUSED]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at afterConnectMultiple (node:net:1689:7) {\n      code: 'ECONNREFUSED',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -1812,7 +1813,8 @@
       "dfns": "dfns/font-metrics-api-1.json",
       "headings": "headings/font-metrics-api-1.json",
       "ids": "ids/font-metrics-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 19)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:14900:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:477:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22) {\n    [cause]: AggregateError [ECONNREFUSED]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at afterConnectMultiple (node:net:1689:7) {\n      code: 'ECONNREFUSED',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://drafts.csswg.org/compositing-2/",
@@ -1870,7 +1872,8 @@
       "dfns": "dfns/compositing-2.json",
       "headings": "headings/compositing-2.json",
       "ids": "ids/compositing-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.csswg.org/compositing-2/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 20)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:14900:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:477:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22) {\n    [cause]: AggregateError [ECONNREFUSED]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at afterConnectMultiple (node:net:1689:7) {\n      code: 'ECONNREFUSED',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://drafts.csswg.org/css-color-6/",
@@ -1932,7 +1935,8 @@
       "dfns": "dfns/css-color-6.json",
       "headings": "headings/css-color-6.json",
       "ids": "ids/css-color-6.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.csswg.org/css-color-6/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 21)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:14900:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:477:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22) {\n    [cause]: AggregateError [ECONNREFUSED]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at afterConnectMultiple (node:net:1689:7) {\n      code: 'ECONNREFUSED',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://drafts.csswg.org/css-conditional-values-1/",
@@ -1987,7 +1991,8 @@
       "dfns": "dfns/css-conditional-values-1.json",
       "headings": "headings/css-conditional-values-1.json",
       "ids": "ids/css-conditional-values-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.csswg.org/css-conditional-values-1/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 22)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:14900:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:477:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22) {\n    [cause]: AggregateError [ECONNREFUSED]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at afterConnectMultiple (node:net:1689:7) {\n      code: 'ECONNREFUSED',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://drafts.csswg.org/css-extensions-1/",
@@ -2042,7 +2047,8 @@
       "dfns": "dfns/css-extensions-1.json",
       "headings": "headings/css-extensions-1.json",
       "ids": "ids/css-extensions-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.csswg.org/css-extensions-1/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:483:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 23)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21) {\n  [cause]: TypeError: fetch failed\n      at node:internal/deps/undici/undici:14900:13\n      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:491:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async fetchWithRetry (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:497:16)\n      at async conditionalFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:501:20)\n      at async cacheFetch (/home/runner/work/webref/webref/node_modules/fetch-filecache-for-crawling/fetch-filecache.js:531:24)\n      at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:477:24)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22) {\n    [cause]: AggregateError [ECONNREFUSED]: \n        at internalConnectMultiple (node:net:1122:18)\n        at internalConnectMultiple (node:net:1190:5)\n        at afterConnectMultiple (node:net:1689:7) {\n      code: 'ECONNREFUSED',\n      [errors]: [Array]\n    }\n  }\n}"
     },
     {
       "url": "https://drafts.csswg.org/css-gcpm-4/",
@@ -8060,11 +8066,11 @@
       ],
       "crawled": "https://url.spec.whatwg.org/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 30 Oct 2025 07:39:06 GMT"
+        "lastModified": "Sat, 10 Jan 2026 16:53:07 GMT"
       },
       "generator": "bikeshed",
-      "date": "30 October 2025",
-      "revision": "52526653e848c5a56598c84aa4bc8ac9025fb66b",
+      "date": "10 January 2026",
+      "revision": "e69e0a8b634fea179abc7104ea244353a3911bca",
       "algorithms": "algorithms/url.json",
       "links": "links/url.json",
       "refs": "refs/url.json",
@@ -18666,7 +18672,7 @@
       ],
       "crawled": "https://drafts.csswg.org/compositing-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 10 Jan 2026 07:22:21 GMT"
+        "lastModified": "Sat, 10 Jan 2026 07:22:22 GMT"
       },
       "generator": "bikeshed",
       "date": "12 December 2025",
@@ -22132,7 +22138,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-gaps-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 10 Jan 2026 07:22:21 GMT"
+        "lastModified": "Sat, 10 Jan 2026 07:22:22 GMT"
       },
       "generator": "bikeshed",
       "date": "7 January 2026",
@@ -23016,7 +23022,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 10 Jan 2026 07:22:21 GMT"
+        "lastModified": "Sat, 10 Jan 2026 07:22:22 GMT"
       },
       "generator": "bikeshed",
       "date": "12 December 2025",
@@ -24930,7 +24936,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-shapes-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 10 Jan 2026 07:22:21 GMT"
+        "lastModified": "Sat, 10 Jan 2026 07:22:22 GMT"
       },
       "generator": "bikeshed",
       "date": "16 October 2025",
@@ -25476,7 +25482,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-text-4/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 10 Jan 2026 07:22:21 GMT"
+        "lastModified": "Sat, 10 Jan 2026 07:22:22 GMT"
       },
       "generator": "bikeshed",
       "date": "29 October 2025",
@@ -25683,7 +25689,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transforms-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 10 Jan 2026 07:22:21 GMT"
+        "lastModified": "Sat, 10 Jan 2026 07:22:22 GMT"
       },
       "generator": "bikeshed",
       "date": "30 November 2025",
@@ -25822,7 +25828,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-transitions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 10 Jan 2026 07:22:21 GMT"
+        "lastModified": "Sat, 10 Jan 2026 07:22:22 GMT"
       },
       "generator": "bikeshed",
       "date": "6 January 2026",
@@ -26169,7 +26175,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-3/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 10 Jan 2026 07:22:21 GMT"
+        "lastModified": "Sat, 10 Jan 2026 07:22:22 GMT"
       },
       "generator": "bikeshed",
       "date": "7 December 2025",
@@ -26307,7 +26313,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-5/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 10 Jan 2026 07:22:21 GMT"
+        "lastModified": "Sat, 10 Jan 2026 07:22:22 GMT"
       },
       "generator": "bikeshed",
       "date": "7 December 2025",
@@ -35414,7 +35420,7 @@
       ],
       "crawled": "https://drafts.csswg.org/scroll-animations-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 10 Jan 2026 07:22:21 GMT"
+        "lastModified": "Sat, 10 Jan 2026 07:22:22 GMT"
       },
       "generator": "bikeshed",
       "date": "7 January 2026",
