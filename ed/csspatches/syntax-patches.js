@@ -164,15 +164,8 @@ export default {
     "<integer>": "<number-token>"
   },
 
-  // https://drafts.csswg.org/css2/#value-def-absolute-size
-  // https://drafts.csswg.org/css2/#value-def-relative-size
   // https://drafts.csswg.org/css2/#value-def-shape
   "CSS2": {
-    "<absolute-size>": `
-      xx-small | x-small | small | medium |
-      large | x-large | xx-large
-    `,
-    "<relative-size>": "larger | smaller",
     "<shape>": "rect(<top>, <right>, <bottom>, <left>)"
   },
 
