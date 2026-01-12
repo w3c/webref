@@ -549,7 +549,13 @@
                           "html": "<p>Let <var>number</var> be <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c①⑤\">c</a> interpreted as decimal number.\n\n         </p>"
                         },
                         {
-                          "html": "<p>If <var>ipv4Piece</var> is null, then set <var>ipv4Piece</var> to <var>number</var>.\n\n          </p>\n              <p>Otherwise, if <var>ipv4Piece</var> is 0, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-invalid-code-point\" id=\"ref-for-ipv4-in-ipv6-invalid-code-point③\">IPv4-in-IPv6-invalid-code-point</a>\n          <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⓪\">validation error</a>, return failure.\n\n          </p>\n              <p>Otherwise, set <var>ipv4Piece</var> to <var>ipv4Piece</var> × 10 +\n          <var>number</var>.\n\n         </p>"
+                          "html": "<p>If <var>ipv4Piece</var> is null, then set <var>ipv4Piece</var> to <var>number</var>.\n\n         </p>"
+                        },
+                        {
+                          "html": "<p>Otherwise, if <var>ipv4Piece</var> is 0, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-invalid-code-point\" id=\"ref-for-ipv4-in-ipv6-invalid-code-point③\">IPv4-in-IPv6-invalid-code-point</a>\n         <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⓪\">validation error</a>, return failure.\n\n         </p>"
+                        },
+                        {
+                          "html": "<p>Otherwise, set <var>ipv4Piece</var> to <var>ipv4Piece</var> × 10 +\n         <var>number</var>.\n\n         </p>"
                         },
                         {
                           "html": "<p>If <var>ipv4Piece</var> is greater than 255, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-out-of-range-part\" id=\"ref-for-ipv4-in-ipv6-out-of-range-part\">IPv4-in-IPv6-out-of-range-part</a>\n         <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②①\">validation error</a>, return failure.\n\n         </p>"

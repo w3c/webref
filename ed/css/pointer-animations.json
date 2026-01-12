@@ -220,7 +220,23 @@
       "name": "<timeline-range-center-subject>",
       "prose": "The animation range center subject is the element whose principal box is the range relative to which the center of the active range is calculated, and is represented by the <timeline-range-center-subject> value type, which indicates a CSS identifier representing one of the following:",
       "href": "https://drafts.csswg.org/pointer-animations-1/#typedef-timeline-range-center-subject",
-      "type": "type"
+      "type": "type",
+      "values": [
+        {
+          "name": "source",
+          "prose": "The element whose pointer offset drives the progress of the timeline.",
+          "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-timeline-range-center-subject-source",
+          "type": "value",
+          "value": "source"
+        },
+        {
+          "name": "target",
+          "prose": "The element to which the animation is applied.",
+          "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-timeline-range-center-subject-target",
+          "type": "value",
+          "value": "target"
+        }
+      ]
     }
   ],
   "warnings": [
@@ -259,24 +275,6 @@
       "type": "value",
       "value": "contain",
       "for": "animation-timeline-range"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "source",
-      "prose": "The element whose pointer offset drives the progress of the timeline.",
-      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-timeline-range-center-subject-source",
-      "type": "value",
-      "value": "source",
-      "for": "timeline-range-center-subject"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "target",
-      "prose": "The element to which the animation is applied.",
-      "href": "https://drafts.csswg.org/pointer-animations-1/#valdef-timeline-range-center-subject-target",
-      "type": "value",
-      "value": "target",
-      "for": "timeline-range-center-subject"
     }
   ]
 }
