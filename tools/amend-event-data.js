@@ -355,6 +355,27 @@ const patches = {
       change: { interface: "PeriodicSyncEvent" }
     }
   ],
+  // Custom dispatch algorithms are not identified by crawler, and not
+  // correctly written for now:
+  // https://github.com/WICG/PEPC/issues/83
+  'permission-elements': [
+    {
+      pattern: { type: /^validationstatuschange|prompt(action|dismiss)$/ },
+      matched: 3,
+      change: {
+        interface: "Event",
+        bubbles: true,
+        cancelable: true
+      }
+    },
+    {
+      pattern: { type: "location" },
+      matched: 1,
+      change: {
+        interface: "Event"
+      }
+    }
+  ],
   'pointerlock-2': [
     {
       pattern: { type: /^pointerlock(change|error)$/ },
