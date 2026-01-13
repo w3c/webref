@@ -2125,7 +2125,7 @@
           "html": "<p>If <var>parsedURL</var> is failure, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-initialize\" id=\"ref-for-url-initialize\">Initialize</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> with <var>parsedURL</var>.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-initialize\" id=\"ref-for-url-initialize\">Initialize</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a> with <var>parsedURL</var>.\n</p>"
         }
       ]
     },
@@ -2142,7 +2142,7 @@
           "html": "<p>If <var>parsedURL</var> is failure, then return null.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>url</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url⑦\">URL</a></code> object.\n\n </p>"
+          "html": "<p>Let <var>url</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url⑧\">URL</a></code> object.\n\n </p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-initialize\" id=\"ref-for-url-initialize①\">Initialize</a> <var>url</var> with <var>parsedURL</var>.\n\n </p>"
@@ -2181,16 +2181,16 @@
           "html": "<p>If <var>parsedURL</var> is failure, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.\n\n </p>"
         },
         {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②\">URL</a> to <var>parsedURL</var>.\n\n </p>"
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③\">URL</a> to <var>parsedURL</var>.\n\n </p>"
         },
         {
-          "html": "<p>Empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query-object\" id=\"ref-for-concept-url-query-object③\">query object</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list\">list</a>.\n\n </p>"
+          "html": "<p>Empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query-object\" id=\"ref-for-concept-url-query-object③\">query object</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list\">list</a>.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>query</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query②⓪\">query</a>.\n\n </p>"
+          "html": "<p>Let <var>query</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url④\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query②⓪\">query</a>.\n\n </p>"
         },
         {
-          "html": "<p>If <var>query</var> is non-null, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query-object\" id=\"ref-for-concept-url-query-object④\">query object</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①\">list</a> to the result of\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlencoded-string-parser\" id=\"ref-for-concept-urlencoded-string-parser\">parsing</a> <var>query</var>.\n</p>"
+          "html": "<p>If <var>query</var> is non-null, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query-object\" id=\"ref-for-concept-url-query-object④\">query object</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①\">list</a> to the result of\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlencoded-string-parser\" id=\"ref-for-concept-urlencoded-string-parser\">parsing</a> <var>query</var>.\n</p>"
         }
       ]
     },
@@ -2200,10 +2200,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url⑧\">URL</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#cannot-have-a-username-password-port\" id=\"ref-for-cannot-have-a-username-password-port\">cannot have a username/password/port</a>, then\n return.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url⑨\">URL</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#cannot-have-a-username-password-port\" id=\"ref-for-cannot-have-a-username-password-port\">cannot have a username/password/port</a>, then\n return.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#set-the-username\" id=\"ref-for-set-the-username\">Set the username</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url⑨\">URL</a> and the given value.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#set-the-username\" id=\"ref-for-set-the-username\">Set the username</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①⓪\">URL</a> and the given value.\n</p>"
         }
       ]
     },
@@ -2213,10 +2213,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①①\">URL</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#cannot-have-a-username-password-port\" id=\"ref-for-cannot-have-a-username-password-port①\">cannot have a username/password/port</a>, then\n return.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①②\">URL</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#cannot-have-a-username-password-port\" id=\"ref-for-cannot-have-a-username-password-port①\">cannot have a username/password/port</a>, then\n return.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#set-the-password\" id=\"ref-for-set-the-password\">Set the password</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①②\">URL</a> and the given value.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#set-the-password\" id=\"ref-for-set-the-password\">Set the password</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①③\">URL</a> and the given value.\n</p>"
         }
       ]
     },
@@ -2227,7 +2227,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>url</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①③\">URL</a>.\n\n </p>"
+          "html": "<p>Let <var>url</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①④\">URL</a>.\n\n </p>"
         },
         {
           "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host③②\">host</a> is null, then return the empty string.\n\n </p>"
@@ -2246,10 +2246,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①④\">URL</a> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path⑨\">opaque path</a>, then return.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①⑤\">URL</a> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path⑨\">opaque path</a>, then return.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser⑨\">Basic URL parse</a> the given value with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①⑤\">URL</a> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url①\"><i>url</i></a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-state\" id=\"ref-for-host-state①\">host state</a> as\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override①\"><i>state override</i></a>.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser⑨\">Basic URL parse</a> the given value with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①⑥\">URL</a> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url①\"><i>url</i></a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-state\" id=\"ref-for-host-state①\">host state</a> as\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override①\"><i>state override</i></a>.\n</p>"
         }
       ]
     },
@@ -2260,10 +2260,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①⑦\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host③⑤\">host</a> is null, then return the empty\n string.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①⑧\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host③⑤\">host</a> is null, then return the empty\n string.\n\n </p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①⑧\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host③⑥\">host</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host-serializer\" id=\"ref-for-concept-host-serializer⑦\">serialized</a>.\n</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①⑨\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host③⑥\">host</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host-serializer\" id=\"ref-for-concept-host-serializer⑦\">serialized</a>.\n</p>"
         }
       ]
     },
@@ -2273,10 +2273,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①⑨\">URL</a> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path①⓪\">opaque path</a>, then return.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⓪\">URL</a> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path①⓪\">opaque path</a>, then return.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①⓪\">Basic URL parse</a> the given value with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⓪\">URL</a> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url②\"><i>url</i></a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#hostname-state\" id=\"ref-for-hostname-state①\">hostname state</a> as\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override②\"><i>state override</i></a>.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①⓪\">Basic URL parse</a> the given value with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②①\">URL</a> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url②\"><i>url</i></a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#hostname-state\" id=\"ref-for-hostname-state①\">hostname state</a> as\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override②\"><i>state override</i></a>.\n</p>"
         }
       ]
     },
@@ -2287,10 +2287,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②①\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port①⑥\">port</a> is null, then return the empty\n string.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②②\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port①⑥\">port</a> is null, then return the empty\n string.\n\n </p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②②\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port①⑦\">port</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#serialize-an-integer\" id=\"ref-for-serialize-an-integer③\">serialized</a>.\n</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②③\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port①⑦\">port</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#serialize-an-integer\" id=\"ref-for-serialize-an-integer③\">serialized</a>.\n</p>"
         }
       ]
     },
@@ -2300,13 +2300,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②③\">URL</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#cannot-have-a-username-password-port\" id=\"ref-for-cannot-have-a-username-password-port②\">cannot have a username/password/port</a>, then\n return.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②④\">URL</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#cannot-have-a-username-password-port\" id=\"ref-for-cannot-have-a-username-password-port②\">cannot have a username/password/port</a>, then\n return.\n\n </p>"
         },
         {
-          "html": "<p>If the given value is the empty string, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②④\">URL</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port①⑧\">port</a> to null.</p>"
+          "html": "<p>If the given value is the empty string, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⑤\">URL</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port①⑧\">port</a> to null.</p>"
         },
         {
-          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①①\">basic URL parse</a> the given value with\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⑤\">URL</a> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url③\"><i>url</i></a> and\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#port-state\" id=\"ref-for-port-state①\">port state</a> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override③\"><i>state override</i></a>.\n</p>"
+          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①①\">basic URL parse</a> the given value with\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⑥\">URL</a> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url③\"><i>url</i></a> and\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#port-state\" id=\"ref-for-port-state①\">port state</a> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override③\"><i>state override</i></a>.\n</p>"
         }
       ]
     },
@@ -2316,13 +2316,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⑦\">URL</a> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path①①\">opaque path</a>, then return.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⑧\">URL</a> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path①①\">opaque path</a>, then return.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">Empty</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⑧\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path③②\">path</a>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">Empty</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⑨\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path③②\">path</a>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①②\">Basic URL parse</a> the given value with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⑨\">URL</a> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url④\"><i>url</i></a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#path-start-state\" id=\"ref-for-path-start-state④\">path start state</a> as\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override④\"><i>state override</i></a>.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①②\">Basic URL parse</a> the given value with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③⓪\">URL</a> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url④\"><i>url</i></a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#path-start-state\" id=\"ref-for-path-start-state④\">path start state</a> as\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override④\"><i>state override</i></a>.\n</p>"
         }
       ]
     },
@@ -2333,10 +2333,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③⓪\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query②①\">query</a> is either null or the empty\n string, then return the empty string.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③①\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query②①\">query</a> is either null or the empty\n string, then return the empty string.\n\n </p>"
         },
         {
-          "html": "<p>Return U+003F (?), followed by <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③①\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query②②\">query</a>.\n</p>"
+          "html": "<p>Return U+003F (?), followed by <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③②\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query②②\">query</a>.\n</p>"
         }
       ]
     },
@@ -2346,10 +2346,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>url</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③②\">URL</a>.\n\n </p>"
+          "html": "<p>Let <var>url</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③③\">URL</a>.\n\n </p>"
         },
         {
-          "html": "<p>If the given value is the empty string, then set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query②③\">query</a> to\n null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①\">empty</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query-object\" id=\"ref-for-concept-url-query-object⑤\">query object</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list②\">list</a>, and return.\n\n </p>"
+          "html": "<p>If the given value is the empty string, then set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query②③\">query</a> to\n null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①\">empty</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query-object\" id=\"ref-for-concept-url-query-object⑤\">query object</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list②\">list</a>, and return.\n\n </p>"
         },
         {
           "html": "<p>Let <var>input</var> be the given value with a single leading U+003F (?) removed, if any.\n\n </p>"
@@ -2361,7 +2361,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①③\">Basic URL parse</a> <var>input</var> with <var>url</var> as\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url⑤\"><i>url</i></a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#query-state\" id=\"ref-for-query-state⑤\">query state</a> as\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override⑤\"><i>state override</i></a>.\n\n </p>"
         },
         {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query-object\" id=\"ref-for-concept-url-query-object⑥\">query object</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list③\">list</a> to the\n result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlencoded-string-parser\" id=\"ref-for-concept-urlencoded-string-parser①\">parsing</a> <var>input</var>.\n</p>"
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query-object\" id=\"ref-for-concept-url-query-object⑥\">query object</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list③\">list</a> to the\n result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlencoded-string-parser\" id=\"ref-for-concept-urlencoded-string-parser①\">parsing</a> <var>input</var>.\n</p>"
         }
       ]
     },
@@ -2372,10 +2372,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③③\">URL</a>’s  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment①②\">fragment</a> is either null or the empty\n string, then return the empty string.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③④\">URL</a>’s  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment①②\">fragment</a> is either null or the empty\n string, then return the empty string.\n\n </p>"
         },
         {
-          "html": "<p>Return U+0023 (#), followed by <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③④\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment①③\">fragment</a>.\n</p>"
+          "html": "<p>Return U+0023 (#), followed by <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③⑤\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment①③\">fragment</a>.\n</p>"
         }
       ]
     },
@@ -2385,16 +2385,16 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If the given value is the empty string, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③⑤\">URL</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment①④\">fragment</a> to null and return.\n\n </p>"
+          "html": "<p>If the given value is the empty string, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③⑥\">URL</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment①④\">fragment</a> to null and return.\n\n </p>"
         },
         {
           "html": "<p>Let <var>input</var> be the given value with a single leading U+0023 (#) removed, if any.\n\n </p>"
         },
         {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③⑥\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment①⑤\">fragment</a> to the empty string.\n\n </p>"
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③⑦\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment①⑤\">fragment</a> to the empty string.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①④\">Basic URL parse</a> <var>input</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④②\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③⑦\">URL</a> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url⑥\"><i>url</i></a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#fragment-state\" id=\"ref-for-fragment-state⑦\">fragment state</a> as\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override⑥\"><i>state override</i></a>.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①④\">Basic URL parse</a> <var>input</var> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④③\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③⑧\">URL</a> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url⑥\"><i>url</i></a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#fragment-state\" id=\"ref-for-fragment-state⑦\">fragment state</a> as\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override⑥\"><i>state override</i></a>.\n</p>"
         }
       ]
     },
@@ -2449,7 +2449,7 @@
           "html": "<p>If <var>serializedQuery</var> is the empty string, then set <var>serializedQuery</var> to\n null.\n\n </p>"
         },
         {
-          "html": "<p>Set <var>query</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-url-object\" id=\"ref-for-concept-urlsearchparams-url-object②\">URL object</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③⑧\">URL</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query②⑥\">query</a> to <var>serializedQuery</var>.\n</p>"
+          "html": "<p>Set <var>query</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-url-object\" id=\"ref-for-concept-urlsearchparams-url-object②\">URL object</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url③⑨\">URL</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query②⑥\">query</a> to <var>serializedQuery</var>.\n</p>"
         }
       ]
     },
@@ -2463,7 +2463,7 @@
           "html": "<p>If <var>init</var> is a string and starts with U+003F (?), then remove the first code point\n from <var>init</var>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#urlsearchparams-initialize\" id=\"ref-for-urlsearchparams-initialize①\">Initialize</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④③\">this</a> with <var>init</var>.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#urlsearchparams-initialize\" id=\"ref-for-urlsearchparams-initialize①\">Initialize</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④④\">this</a> with <var>init</var>.\n</p>"
         }
       ]
     },
@@ -2474,10 +2474,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑨\">Append</a> (<var>name</var>, <var>value</var>) to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑤\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list⑨\">list</a>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑨\">Append</a> (<var>name</var>, <var>value</var>) to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑥\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list⑨\">list</a>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-update\" id=\"ref-for-concept-urlsearchparams-update\">Update</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑥\">this</a>.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-update\" id=\"ref-for-concept-urlsearchparams-update\">Update</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑦\">this</a>.\n</p>"
         }
       ]
     },
@@ -2488,13 +2488,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>value</var> is given, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove④\">remove</a> all <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple③\">tuples</a> whose name\n is <var>name</var> and value is <var>value</var> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑦\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①⓪\">list</a>.\n\n </p>"
+          "html": "<p>If <var>value</var> is given, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove④\">remove</a> all <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple③\">tuples</a> whose name\n is <var>name</var> and value is <var>value</var> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑧\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①⓪\">list</a>.\n\n </p>"
         },
         {
-          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑤\">remove</a> all <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple④\">tuples</a> whose name is <var>name</var> from\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①①\">list</a>.\n\n </p>"
+          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑤\">remove</a> all <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple④\">tuples</a> whose name is <var>name</var> from\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①①\">list</a>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-update\" id=\"ref-for-concept-urlsearchparams-update①\">Update</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④⑨\">this</a>.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-update\" id=\"ref-for-concept-urlsearchparams-update①\">Update</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⓪\">this</a>.\n</p>"
         }
       ]
     },
@@ -2505,10 +2505,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>value</var> is given and there is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple⑧\">tuple</a> whose name is <var>name</var>\n and value is <var>value</var> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①④\">list</a>, then return true.\n\n </p>"
+          "html": "<p>If <var>value</var> is given and there is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple⑧\">tuple</a> whose name is <var>name</var>\n and value is <var>value</var> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①④\">list</a>, then return true.\n\n </p>"
         },
         {
-          "html": "<p>If <var>value</var> is not given and there is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple⑨\">tuple</a> whose name is\n <var>name</var> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①⑤\">list</a>, then return true.\n\n </p>"
+          "html": "<p>If <var>value</var> is not given and there is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple⑨\">tuple</a> whose name is\n <var>name</var> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①⑤\">list</a>, then return true.\n\n </p>"
         },
         {
           "html": "<p>Return false.\n</p>"
@@ -2522,13 +2522,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①⑥\">list</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> any\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple①⓪\">tuples</a> whose name is <var>name</var>, then set the value of the first such\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple①①\">tuple</a> to <var>value</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑥\">remove</a> the others.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①⑥\">list</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> any\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple①⓪\">tuples</a> whose name is <var>name</var>, then set the value of the first such\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#tuple\" id=\"ref-for-tuple①①\">tuple</a> to <var>value</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑥\">remove</a> the others.\n\n </p>"
         },
         {
-          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⓪\">append</a> (<var>name</var>, <var>value</var>) to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑤\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①⑦\">list</a>.\n\n </p>"
+          "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⓪\">append</a> (<var>name</var>, <var>value</var>) to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑥\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①⑦\">list</a>.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-update\" id=\"ref-for-concept-urlsearchparams-update②\">Update</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑥\">this</a>.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-update\" id=\"ref-for-concept-urlsearchparams-update②\">Update</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑦\">this</a>.\n</p>"
         }
       ]
     },
@@ -2539,10 +2539,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①⑧\">list</a> to the result of\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"ref-for-list-sort-in-ascending-order\">sorting in ascending order</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①⑨\">list</a>,\n with <var>a</var> being less than <var>b</var> if <var>a</var>’s name is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit-less-than\" id=\"ref-for-code-unit-less-than\">code unit less than</a> <var>b</var>’s name.\n\n </p>"
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①⑧\">list</a> to the result of\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"ref-for-list-sort-in-ascending-order\">sorting in ascending order</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-list\" id=\"ref-for-concept-urlsearchparams-list①⑨\">list</a>,\n with <var>a</var> being less than <var>b</var> if <var>a</var>’s name is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit-less-than\" id=\"ref-for-code-unit-less-than\">code unit less than</a> <var>b</var>’s name.\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-update\" id=\"ref-for-concept-urlsearchparams-update③\">Update</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑨\">this</a>.\n</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-urlsearchparams-update\" id=\"ref-for-concept-urlsearchparams-update③\">Update</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥⓪\">this</a>.\n</p>"
         }
       ]
     }
