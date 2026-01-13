@@ -1,0 +1,536 @@
+{
+  "spec": {
+    "title": "CSS Shadow Module Level 1",
+    "url": "https://drafts.csswg.org/css-shadow-1/"
+  },
+  "dfns": [
+    {
+      "id": "dom-window-defaultelementstylesmap-slot",
+      "href": "https://drafts.csswg.org/css-shadow-1/#dom-window-defaultelementstylesmap-slot",
+      "linkingText": [
+        "[[defaultElementStylesMap]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "default-element-styles",
+        "href": "https://drafts.csswg.org/css-shadow-1/#default-element-styles",
+        "title": "Default Styles for Custom Elements",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "tree-context",
+      "href": "https://drafts.csswg.org/css-shadow-1/#tree-context",
+      "linkingText": [
+        "tree context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "selectors-data-model",
+        "href": "https://drafts.csswg.org/css-shadow-1/#selectors-data-model",
+        "title": "Matching Selectors Against Shadow Trees",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "in-the-context-of-a-shadow-tree",
+      "href": "https://drafts.csswg.org/css-shadow-1/#in-the-context-of-a-shadow-tree",
+      "linkingText": [
+        "in the context of a shadow tree",
+        "in the context of the shadow tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "selectors-data-model",
+        "href": "https://drafts.csswg.org/css-shadow-1/#selectors-data-model",
+        "title": "Matching Selectors Against Shadow Trees",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "selectordef-host",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-host",
+      "linkingText": [
+        ":host"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "host-selector",
+        "href": "https://drafts.csswg.org/css-shadow-1/#host-selector",
+        "title": "Selecting Into the Light: the :host, :host(), and :host-context() pseudo-classes",
+        "number": "3.2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "selectordef-host-function",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-host-function",
+      "linkingText": [
+        ":host()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "host-selector",
+        "href": "https://drafts.csswg.org/css-shadow-1/#host-selector",
+        "title": "Selecting Into the Light: the :host, :host(), and :host-context() pseudo-classes",
+        "number": "3.2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "selectordef-host-context",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-host-context",
+      "linkingText": [
+        ":host-context()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "host-selector",
+        "href": "https://drafts.csswg.org/css-shadow-1/#host-selector",
+        "title": "Selecting Into the Light: the :host, :host(), and :host-context() pseudo-classes",
+        "number": "3.2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "selectordef-slotted",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-slotted",
+      "linkingText": [
+        "::slotted()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "slotted-pseudo",
+        "href": "https://drafts.csswg.org/css-shadow-1/#slotted-pseudo",
+        "title": "Selecting Slot-Assigned Content: the ::slotted() pseudo-element",
+        "number": "3.2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "selectordef-has-slotted",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-has-slotted",
+      "linkingText": [
+        ":has-slotted"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-has-slotted-pseudo",
+        "href": "https://drafts.csswg.org/css-shadow-1/#the-has-slotted-pseudo",
+        "title": "Matching on the Presence of Slot-Assigned Nodes: the :has-slotted pseudo-class",
+        "number": "3.2.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "flat-tree",
+      "href": "https://drafts.csswg.org/css-shadow-1/#flat-tree",
+      "linkingText": [
+        "flat tree",
+        "flattened element tree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flattening",
+        "href": "https://drafts.csswg.org/css-shadow-1/#flattening",
+        "title": "Flattening the DOM into an Element Tree",
+        "number": "4.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "css-tree-scoped-name",
+      "href": "https://drafts.csswg.org/css-shadow-1/#css-tree-scoped-name",
+      "linkingText": [
+        "tree-scoped name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shadow-names",
+        "href": "https://drafts.csswg.org/css-shadow-1/#shadow-names",
+        "title": "Name-Defining Constructs and Inheritance",
+        "number": "4.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "tree-scoped-name-loosely-matched",
+      "href": "https://drafts.csswg.org/css-shadow-1/#tree-scoped-name-loosely-matched",
+      "linkingText": [
+        "loosely matched"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "tree-scoped name"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shadow-names",
+        "href": "https://drafts.csswg.org/css-shadow-1/#shadow-names",
+        "title": "Name-Defining Constructs and Inheritance",
+        "number": "4.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "tree-scoped-name-strictly-matched",
+      "href": "https://drafts.csswg.org/css-shadow-1/#tree-scoped-name-strictly-matched",
+      "linkingText": [
+        "strictly matched"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "tree-scoped name"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shadow-names",
+        "href": "https://drafts.csswg.org/css-shadow-1/#shadow-names",
+        "title": "Name-Defining Constructs and Inheritance",
+        "number": "4.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "css-tree-scoped-reference",
+      "href": "https://drafts.csswg.org/css-shadow-1/#css-tree-scoped-reference",
+      "linkingText": [
+        "tree-scoped reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shadow-names",
+        "href": "https://drafts.csswg.org/css-shadow-1/#shadow-names",
+        "title": "Name-Defining Constructs and Inheritance",
+        "number": "4.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "tree-scoped-name-global",
+      "href": "https://drafts.csswg.org/css-shadow-1/#tree-scoped-name-global",
+      "linkingText": [
+        "global"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "tree-scoped name"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shadow-names",
+        "href": "https://drafts.csswg.org/css-shadow-1/#shadow-names",
+        "title": "Name-Defining Constructs and Inheritance",
+        "number": "4.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "tree-scoped-name-local",
+      "href": "https://drafts.csswg.org/css-shadow-1/#tree-scoped-name-local",
+      "linkingText": [
+        "local"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "tree-scoped name"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shadow-names",
+        "href": "https://drafts.csswg.org/css-shadow-1/#shadow-names",
+        "title": "Name-Defining Constructs and Inheritance",
+        "number": "4.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "element-part-name-list",
+      "href": "https://drafts.csswg.org/css-shadow-1/#element-part-name-list",
+      "linkingText": [
+        "part name list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing",
+        "href": "https://drafts.csswg.org/css-shadow-1/#exposing",
+        "title": "Exposing a Shadow Element",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "element-forwarded-part-name-list",
+      "href": "https://drafts.csswg.org/css-shadow-1/#element-forwarded-part-name-list",
+      "linkingText": [
+        "forwarded part name list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing",
+        "href": "https://drafts.csswg.org/css-shadow-1/#exposing",
+        "title": "Exposing a Shadow Element",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "shadow-root-part-element-map",
+      "href": "https://drafts.csswg.org/css-shadow-1/#shadow-root-part-element-map",
+      "linkingText": [
+        "part element map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "shadow root"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exposing",
+        "href": "https://drafts.csswg.org/css-shadow-1/#exposing",
+        "title": "Exposing a Shadow Element",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "calculate-the-part-element-map",
+      "href": "https://drafts.csswg.org/css-shadow-1/#calculate-the-part-element-map",
+      "linkingText": [
+        "calculate the part element map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "exposing",
+        "href": "https://drafts.csswg.org/css-shadow-1/#exposing",
+        "title": "Exposing a Shadow Element",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "element-attrdef-html-global-part",
+      "href": "https://drafts.csswg.org/css-shadow-1/#element-attrdef-html-global-part",
+      "linkingText": [
+        "part"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "html-global"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "part-attr",
+        "href": "https://drafts.csswg.org/css-shadow-1/#part-attr",
+        "title": "Naming a Shadow Element: the part attribute",
+        "number": "5.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "element-attrdef-html-global-exportparts",
+      "href": "https://drafts.csswg.org/css-shadow-1/#element-attrdef-html-global-exportparts",
+      "linkingText": [
+        "exportparts"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "html-global"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "exportparts-attr",
+        "href": "https://drafts.csswg.org/css-shadow-1/#exportparts-attr",
+        "title": "Forwarding a Shadow Element: the exportparts attribute",
+        "number": "5.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "selectordef-part",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-part",
+      "linkingText": [
+        "::part()"
+      ],
+      "localLinkingText": [],
+      "type": "selector",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "part",
+        "href": "https://drafts.csswg.org/css-shadow-1/#part",
+        "title": "Selecting a Shadow Element: the ::part() pseudo-element",
+        "number": "5.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-element-part",
+      "href": "https://drafts.csswg.org/css-shadow-1/#dom-element-part",
+      "linkingText": [
+        "part"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "idl",
+        "href": "https://drafts.csswg.org/css-shadow-1/#idl",
+        "title": "Extensions to the Element Interface",
+        "number": "5.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "valid-part-mapping",
+      "href": "https://drafts.csswg.org/css-shadow-1/#valid-part-mapping",
+      "linkingText": [
+        "valid part mapping"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parsing-mapping",
+        "href": "https://drafts.csswg.org/css-shadow-1/#parsing-mapping",
+        "title": "Rules for parsing part mappings",
+        "number": "5.6.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valid-list-of-part-mappings",
+      "href": "https://drafts.csswg.org/css-shadow-1/#valid-list-of-part-mappings",
+      "linkingText": [
+        "valid list of part mappings"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parsing-mapping-list",
+        "href": "https://drafts.csswg.org/css-shadow-1/#parsing-mapping-list",
+        "title": "Rules for parsing a list of part mappings",
+        "number": "5.6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}

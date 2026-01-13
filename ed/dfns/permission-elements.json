@@ -1,0 +1,1656 @@
+{
+  "spec": {
+    "title": "The HTML Permission Elements",
+    "url": "https://wicg.github.io/PEPC/permission-elements.html"
+  },
+  "dfns": [
+    {
+      "id": "inpagepermissionmixin",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin",
+      "linkingText": [
+        "InPagePermissionMixin"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission-mixin",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-mixin",
+        "title": "Common Behaviours Of The HTML Permission Elements: InPagePermissionMixin",
+        "number": "2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixin-onpromptaction",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-onpromptaction",
+      "linkingText": [
+        "onpromptaction"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission-mixin",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-mixin",
+        "title": "Common Behaviours Of The HTML Permission Elements: InPagePermissionMixin",
+        "number": "2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixin-onpromptdismiss",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-onpromptdismiss",
+      "linkingText": [
+        "onpromptdismiss"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission-mixin",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-mixin",
+        "title": "Common Behaviours Of The HTML Permission Elements: InPagePermissionMixin",
+        "number": "2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixin-onvalidationstatuschange",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-onvalidationstatuschange",
+      "linkingText": [
+        "onvalidationstatuschange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission-mixin",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-mixin",
+        "title": "Common Behaviours Of The HTML Permission Elements: InPagePermissionMixin",
+        "number": "2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "permission-elements-attributes",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-elements-attributes",
+      "linkingText": [
+        "permission elements attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permission-mixin",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-mixin",
+        "title": "Common Behaviours Of The HTML Permission Elements: InPagePermissionMixin",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixin-features-slot",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot",
+      "linkingText": [
+        "[[Features]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-internal-state",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-internal-state",
+        "title": "Mixin internal state",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixin-initialpermissionstatus-slot",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-initialpermissionstatus-slot",
+      "linkingText": [
+        "[[InitialPermissionStatus]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-internal-state",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-internal-state",
+        "title": "Mixin internal state",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixin-blockerlist-slot",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-blockerlist-slot",
+      "linkingText": [
+        "[[BlockerList]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-internal-state",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-internal-state",
+        "title": "Mixin internal state",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-blocker-timestamp",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker-timestamp",
+      "linkingText": [
+        "blocker timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-internal-state",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-internal-state",
+        "title": "Mixin internal state",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-blocker-reason",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker-reason",
+      "linkingText": [
+        "blocker reason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-internal-state",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-internal-state",
+        "title": "Mixin internal state",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixin-intersectionobserver-slot",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-intersectionobserver-slot",
+      "linkingText": [
+        "[[IntersectionObserver]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-internal-state",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-internal-state",
+        "title": "Mixin internal state",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixin-intersectionrect-slot",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-intersectionrect-slot",
+      "linkingText": [
+        "[[IntersectionRect]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-internal-state",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-internal-state",
+        "title": "Mixin internal state",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixin-lastnotifiedvalidstate-slot",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-lastnotifiedvalidstate-slot",
+      "linkingText": [
+        "[[LastNotifiedValidState]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-internal-state",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-internal-state",
+        "title": "Mixin internal state",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixin-lastnotifiedinvalidreason-slot",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-lastnotifiedinvalidreason-slot",
+      "linkingText": [
+        "[[LastNotifiedInvalidReason]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-internal-state",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-internal-state",
+        "title": "Mixin internal state",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-navigable-permissionelements-slot",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-navigable-permissionelements-slot",
+      "linkingText": [
+        "[[PermissionElements]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "navigable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-navigable-state",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-navigable-state",
+        "title": "Mixin-supporting state at the navigable",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "enumdef-inpagepermissionmixinblockerreason",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#enumdef-inpagepermissionmixinblockerreason",
+      "linkingText": [
+        "InPagePermissionMixinBlockerReason"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixinblockerreason",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason",
+      "linkingText": [
+        "\"\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "InPagePermissionMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixinblockerreason-illegal_subframe",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-illegal_subframe",
+      "linkingText": [
+        "\"illegal_subframe\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "InPagePermissionMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixinblockerreason-unsuccesful_registration",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-unsuccesful_registration",
+      "linkingText": [
+        "\"unsuccesful_registration\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "InPagePermissionMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixinblockerreason-recently_attached",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-recently_attached",
+      "linkingText": [
+        "\"recently_attached\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "InPagePermissionMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixinblockerreason-intersection_changed",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-intersection_changed",
+      "linkingText": [
+        "\"intersection_changed\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "InPagePermissionMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixinblockerreason-intersection_out_of_viewport_or_clipped",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-intersection_out_of_viewport_or_clipped",
+      "linkingText": [
+        "\"intersection_out_of_viewport_or_clipped\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "InPagePermissionMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixinblockerreason-intersection_occluded_or_distorted",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-intersection_occluded_or_distorted",
+      "linkingText": [
+        "\"intersection_occluded_or_distorted\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "InPagePermissionMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixinblockerreason-style_invalid",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-style_invalid",
+      "linkingText": [
+        "\"style_invalid\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "InPagePermissionMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixinblockerreason-type_invalid",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-type_invalid",
+      "linkingText": [
+        "\"type_invalid\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "InPagePermissionMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "permanent-blocker",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#permanent-blocker",
+      "linkingText": [
+        "Permanent blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "temporary-blocker",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#temporary-blocker",
+      "linkingText": [
+        "Temporary blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "expiring-blocker",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#expiring-blocker",
+      "linkingText": [
+        "Expiring blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "blocker-reason-table",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#blocker-reason-table",
+      "linkingText": [
+        "blocker reason table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-add-a-blocker",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-blocker",
+      "linkingText": [
+        "add a blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-blocker-delay",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker-delay",
+      "linkingText": [
+        "blocker delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-add-an-expiring-blocker",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-an-expiring-blocker",
+      "linkingText": [
+        "add an expiring blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-add-a-temporary-blocker",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-temporary-blocker",
+      "linkingText": [
+        "add a temporary blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-add-a-permanent-blocker",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-permanent-blocker",
+      "linkingText": [
+        "add a permanent blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-remove-blockers",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-remove-blockers",
+      "linkingText": [
+        "remove blockers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-blocker",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker",
+      "linkingText": [
+        "blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-blocker-ordering",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker-ordering",
+      "linkingText": [
+        "blocker ordering"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-blocking",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocking",
+      "linkingText": [
+        "blocking"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-activation",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+        "title": "Mixin activation and activation blockers",
+        "number": "2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixin-isvalid",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-isvalid",
+      "linkingText": [
+        "isValid"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-algorithms",
+        "title": "Mixin algorithms",
+        "number": "2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixin-invalidreason",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-invalidreason",
+      "linkingText": [
+        "invalidReason"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-algorithms",
+        "title": "Mixin algorithms",
+        "number": "2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixin-initialpermissionstatus",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-initialpermissionstatus",
+      "linkingText": [
+        "initialPermissionStatus"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-algorithms",
+        "title": "Mixin algorithms",
+        "number": "2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-inpagepermissionmixin-permissionstatus",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-permissionstatus",
+      "linkingText": [
+        "permissionStatus"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-algorithms",
+        "title": "Mixin algorithms",
+        "number": "2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-get-the-current-permission-state",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-get-the-current-permission-state",
+      "linkingText": [
+        "get the current permission state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-algorithms",
+        "title": "Mixin algorithms",
+        "number": "2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-maybe-dispatch-onvalidstatechange",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-maybe-dispatch-onvalidstatechange",
+      "linkingText": [
+        "maybe dispatch onvalidstatechange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-event-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-event-algorithms",
+        "title": "Mixin event algorithms",
+        "number": "2.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-dispatch-onpromptaction",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-dispatch-onpromptaction",
+      "linkingText": [
+        "dispatch onpromptaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-event-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-event-algorithms",
+        "title": "Mixin event algorithms",
+        "number": "2.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inpagepermissionmixin-dispatch-onpromptdismiss",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-dispatch-onpromptdismiss",
+      "linkingText": [
+        "dispatch onpromptdismiss"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "InPagePermissionMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-event-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-event-algorithms",
+        "title": "Mixin event algorithms",
+        "number": "2.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "elementdef-permission",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#elementdef-permission",
+      "linkingText": [
+        "permission"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-permission-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#the-permission-element",
+        "title": "The permission Element",
+        "number": "4"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "element-attrdef-permission-type",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#element-attrdef-permission-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "permission"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-permission-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#the-permission-element",
+        "title": "The permission Element",
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "element-attrdef-permission-lang",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#element-attrdef-permission-lang",
+      "linkingText": [
+        "lang"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "permission"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-permission-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#the-permission-element",
+        "title": "The permission Element",
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlpermissionelement",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement",
+      "linkingText": [
+        "HTMLPermissionElement"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-permission-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#the-permission-element",
+        "title": "The permission Element",
+        "number": "4"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-htmlpermissionelement-type",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlpermissionelement-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLPermissionElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-permission-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#the-permission-element",
+        "title": "The permission Element",
+        "number": "4"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-htmlpermissionelement-istypesupported",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlpermissionelement-istypesupported",
+      "linkingText": [
+        "isTypeSupported(type)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "HTMLPermissionElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-permission-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#the-permission-element",
+        "title": "The permission Element",
+        "number": "4"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-htmlpermissionelement-istypesupported-type-type",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlpermissionelement-istypesupported-type-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "HTMLPermissionElement/isTypeSupported(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-permission-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#the-permission-element",
+        "title": "The permission Element",
+        "number": "4"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "parse-a-type-string",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#parse-a-type-string",
+      "linkingText": [
+        "parse a type string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permission-element-type-property",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-element-type-property",
+        "title": "The type property",
+        "number": "4.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlpermissionelement-constructor",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlpermissionelement-constructor",
+      "linkingText": [
+        "HTMLPermissionElement()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "HTMLPermissionElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission-element-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-element-algorithms",
+        "title": "permission element algorithms",
+        "number": "4.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlpermissionelement-build-a-permission-descriptor",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-build-a-permission-descriptor",
+      "linkingText": [
+        "build a permission descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLPermissionElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permission-element-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-element-algorithms",
+        "title": "permission element algorithms",
+        "number": "4.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlpermissionelement-intersectionobserver-callback",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-intersectionobserver-callback",
+      "linkingText": [
+        "IntersectionObserver callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLPermissionElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permission-element-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-element-algorithms",
+        "title": "permission element algorithms",
+        "number": "4.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlpermissionelement-type-permissible",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-type-permissible",
+      "linkingText": [
+        "type permissible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLPermissionElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permission-element-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-element-algorithms",
+        "title": "permission element algorithms",
+        "number": "4.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlpermissionelement-recheck-type-permissibility",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-recheck-type-permissibility",
+      "linkingText": [
+        "recheck type permissibility"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLPermissionElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permission-element-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-element-algorithms",
+        "title": "permission element algorithms",
+        "number": "4.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlpermissionelement-get-the-current-permission-state",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-get-the-current-permission-state",
+      "linkingText": [
+        "get the current permission state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLPermissionElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "permission-element-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-element-algorithms",
+        "title": "permission element algorithms",
+        "number": "4.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "elementdef-geolocation",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#elementdef-geolocation",
+      "linkingText": [
+        "geolocation"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "5"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "element-attrdef-geolocation-autolocate",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#element-attrdef-geolocation-autolocate",
+      "linkingText": [
+        "autolocate"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "geolocation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "element-attrdef-geolocation-watch",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#element-attrdef-geolocation-watch",
+      "linkingText": [
+        "watch"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "geolocation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlgeolocationelement",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlgeolocationelement",
+      "linkingText": [
+        "HTMLGeolocationElement"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-position",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-position",
+      "linkingText": [
+        "position"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-error",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-autolocate",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-autolocate",
+      "linkingText": [
+        "autolocate"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-watch",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-watch",
+      "linkingText": [
+        "watch"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-onlocation",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-onlocation",
+      "linkingText": [
+        "onlocation"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-watchids-slot",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-watchids-slot",
+      "linkingText": [
+        "[[watchIDs]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element-internal-state",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element-internal-state",
+        "title": "geolocation element internal state",
+        "number": "5.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-position-slot",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-position-slot",
+      "linkingText": [
+        "[[position]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element-internal-state",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element-internal-state",
+        "title": "geolocation element internal state",
+        "number": "5.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-positionerror-slot",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-positionerror-slot",
+      "linkingText": [
+        "[[positionError]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element-internal-state",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element-internal-state",
+        "title": "geolocation element internal state",
+        "number": "5.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-constructor",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-constructor",
+      "linkingText": [
+        "HTMLGeolocationElement()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-algorithms",
+        "title": "geolocation element algorithms",
+        "number": "5.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlgeolocationelement-maybe-autolocate",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlgeolocationelement-maybe-autolocate",
+      "linkingText": [
+        "maybe autolocate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-algorithms",
+        "title": "geolocation element algorithms",
+        "number": "5.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlgeolocationelement-fetch-location",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlgeolocationelement-fetch-location",
+      "linkingText": [
+        "fetch location"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-algorithms",
+        "title": "geolocation element algorithms",
+        "number": "5.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dispatch-onlocation",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dispatch-onlocation",
+      "linkingText": [
+        "dispatch onlocation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-event-algorithms",
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-event-algorithms",
+        "title": "geolocation element event algorithms",
+        "number": "5.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}

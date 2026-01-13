@@ -1,0 +1,453 @@
+{
+  "spec": {
+    "title": "The HTML Permission Elements",
+    "url": "https://wicg.github.io/PEPC/permission-elements.html"
+  },
+  "links": {
+    "rawlinks": {
+      "http://www.w3.org/community/": {},
+      "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-align/": {},
+      "https://drafts.csswg.org/css-anchor-position-1/": {},
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "border-shorthands"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds/": {},
+      "https://drafts.csswg.org/css-borders-4/": {},
+      "https://drafts.csswg.org/css-break/": {},
+      "https://drafts.csswg.org/css-color-adjust-1/": {},
+      "https://drafts.csswg.org/css-conditional-5/": {},
+      "https://drafts.csswg.org/css-display-4/": {},
+      "https://drafts.csswg.org/css-flexbox/": {},
+      "https://drafts.csswg.org/css-fonts-4/": {},
+      "https://drafts.csswg.org/css-lists-3/": {},
+      "https://drafts.csswg.org/css-overscroll-1/": {
+        "anchors": [
+          "overscroll-behavior-longhands-physical"
+        ]
+      },
+      "https://drafts.csswg.org/css-page-3/": {},
+      "https://drafts.csswg.org/css-position-3/": {},
+      "https://drafts.csswg.org/css-ruby-1/": {},
+      "https://drafts.csswg.org/css-scroll-anchoring/": {},
+      "https://drafts.csswg.org/css-scroll-snap-1/": {
+        "anchors": [
+          "longhands"
+        ]
+      },
+      "https://drafts.csswg.org/css-sizing-3/": {},
+      "https://drafts.csswg.org/css-sizing-4/": {},
+      "https://drafts.csswg.org/css-text-4/": {},
+      "https://drafts.csswg.org/css-ui-4/": {
+        "anchors": [
+          "outline"
+        ]
+      },
+      "https://drafts.csswg.org/css-will-change/": {},
+      "https://drafts.csswg.org/css2/": {},
+      "https://drafts.csswg.org/geometry/": {},
+      "https://drafts.csswg.org/mediaqueries-5/": {},
+      "https://drafts.fxtf.org/compositing-2/": {},
+      "https://github.com/WICG/PEPC/blob/main/explainer.md": {
+        "anchors": [
+          "security",
+          "privacy"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "default-value"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {},
+      "https://svgwg.org/svg2-draft/": {},
+      "https://w3c.github.io/IntersectionObserver/": {},
+      "https://w3c.github.io/geolocation/": {},
+      "https://w3c.github.io/hr-time/": {},
+      "https://w3c.github.io/manifest-app-info/": {},
+      "https://w3c.github.io/permissions/": {},
+      "https://webidl.spec.whatwg.org/": {},
+      "https://wicg.github.io/fenced-frame/": {},
+      "https://www.w3.org/community/about/agreements/cla/": {},
+      "https://www.w3.org/community/wicg/": {}
+    },
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "dom-event-istrusted",
+          "event",
+          "concept-event-initialize",
+          "dom-event-initevent-type-bubbles-cancelable-type",
+          "dom-event-initevent-type-bubbles-cancelable-bubbles",
+          "dom-event-initevent-type-bubbles-cancelable-cancelable",
+          "concept-event-dispatch",
+          "concept-node-insert-ext",
+          "concept-node-remove-ext",
+          "eventtarget-activation-behavior",
+          "concept-document",
+          "dom-event-type"
+        ]
+      },
+      "https://drafts.csswg.org/compositing-2/": {
+        "anchors": [
+          "propdef-isolation"
+        ]
+      },
+      "https://drafts.csswg.org/css-align-3/": {
+        "anchors": [
+          "propdef-align-self",
+          "propdef-justify-self"
+        ]
+      },
+      "https://drafts.csswg.org/css-anchor-position-1/": {
+        "anchors": [
+          "propdef-anchor-name",
+          "propdef-position-anchor"
+        ]
+      },
+      "https://drafts.csswg.org/css-backgrounds-3/": {
+        "anchors": [
+          "propdef-border"
+        ]
+      },
+      "https://drafts.csswg.org/css-borders-4/": {
+        "anchors": [
+          "propdef-border-top",
+          "propdef-border-right",
+          "propdef-border-bottom",
+          "propdef-border-left"
+        ]
+      },
+      "https://drafts.csswg.org/css-break-3/": {
+        "anchors": [
+          "propdef-orphans"
+        ]
+      },
+      "https://drafts.csswg.org/css-color-adjust-1/": {
+        "anchors": [
+          "propdef-forced-color-adjust",
+          "propdef-color-scheme"
+        ]
+      },
+      "https://drafts.csswg.org/css-conditional-5/": {
+        "anchors": [
+          "propdef-container-name",
+          "propdef-container-type"
+        ]
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "anchors": [
+          "propdef-order",
+          "propdef-visibility"
+        ]
+      },
+      "https://drafts.csswg.org/css-flexbox-1/": {
+        "anchors": [
+          "propdef-flex",
+          "propdef-flex-grow",
+          "propdef-flex-shrink",
+          "propdef-flex-basis"
+        ]
+      },
+      "https://drafts.csswg.org/css-fonts-4/": {
+        "anchors": [
+          "typedef-relative-size",
+          "propdef-font-kerning",
+          "propdef-font-optical-sizing",
+          "propdef-font-stretch",
+          "propdef-font-synthesis-weight",
+          "propdef-font-synthesis-style",
+          "propdef-font-synthesis-small-caps",
+          "propdef-font-feature-settings"
+        ]
+      },
+      "https://drafts.csswg.org/css-lists-3/": {
+        "anchors": [
+          "propdef-counter-reset",
+          "propdef-counter-increment",
+          "propdef-counter-set"
+        ]
+      },
+      "https://drafts.csswg.org/css-overscroll-1/": {
+        "anchors": [
+          "propdef-overscroll-behavior",
+          "propdef-overscroll-behavior-inline",
+          "propdef-overscroll-behavior-block",
+          "propdef-overscroll-behavior-x",
+          "propdef-overscroll-behavior-y"
+        ]
+      },
+      "https://drafts.csswg.org/css-page-3/": {
+        "anchors": [
+          "propdef-page"
+        ]
+      },
+      "https://drafts.csswg.org/css-position-3/": {
+        "anchors": [
+          "propdef-left",
+          "propdef-position",
+          "propdef-right",
+          "propdef-top"
+        ]
+      },
+      "https://drafts.csswg.org/css-ruby-1/": {
+        "anchors": [
+          "propdef-ruby-position"
+        ]
+      },
+      "https://drafts.csswg.org/css-scroll-anchoring-1/": {
+        "anchors": [
+          "propdef-overflow-anchor"
+        ]
+      },
+      "https://drafts.csswg.org/css-scroll-snap-1/": {
+        "anchors": [
+          "propdef-scroll-margin",
+          "propdef-scroll-margin-top",
+          "propdef-scroll-margin-right",
+          "propdef-scroll-margin-left",
+          "propdef-scroll-padding",
+          "propdef-scroll-padding-top",
+          "propdef-scroll-padding-right",
+          "propdef-scroll-padding-bottom",
+          "propdef-scroll-padding-left",
+          "propdef-scroll-padding-inline-start",
+          "propdef-scroll-padding-block-start",
+          "propdef-scroll-padding-inline-end",
+          "propdef-scroll-padding-block-end"
+        ]
+      },
+      "https://drafts.csswg.org/css-sizing-3/": {
+        "anchors": [
+          "propdef-height",
+          "propdef-width"
+        ]
+      },
+      "https://drafts.csswg.org/css-sizing-4/": {
+        "anchors": [
+          "propdef-aspect-ratio",
+          "propdef-contain-intrinsic-width",
+          "propdef-contain-intrinsic-height"
+        ]
+      },
+      "https://drafts.csswg.org/css-text-4/": {
+        "anchors": [
+          "propdef-text-spacing-trim",
+          "propdef-text-transform"
+        ]
+      },
+      "https://drafts.csswg.org/css-ui-4/": {
+        "anchors": [
+          "non-devolvable",
+          "propdef-outline",
+          "propdef-outline-color",
+          "propdef-outline-style",
+          "propdef-outline-offset",
+          "propdef-user-select"
+        ]
+      },
+      "https://drafts.csswg.org/css-will-change-1/": {
+        "anchors": [
+          "propdef-will-change"
+        ]
+      },
+      "https://drafts.csswg.org/css2/": {
+        "anchors": [
+          "viewport%E2%91%A0",
+          "valdef-font-size-small",
+          "valdef-font-size-xx-large",
+          "propdef-clear",
+          "propdef-float",
+          "propdef-z-index"
+        ]
+      },
+      "https://drafts.csswg.org/geometry-1/": {
+        "anchors": [
+          "domrectreadonly"
+        ]
+      },
+      "https://drafts.csswg.org/mediaqueries-5/": {
+        "anchors": [
+          "contrast-ratio"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "xattr-reflect",
+          "reflect"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
+        "anchors": [
+          "enumerated-attribute",
+          "missing-value-default",
+          "invalid-value-default"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/custom-elements.html": {
+        "anchors": [
+          "cereactions"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "navigable",
+          "node-navigable",
+          "nav-traversable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/dom.html": {
+        "anchors": [
+          "concept-element-attributes",
+          "concept-element-accessibility-considerations",
+          "concept-element-dom",
+          "dom-lang",
+          "represents",
+          "attr-lang",
+          "fallback-content",
+          "language",
+          "htmlunknownelement",
+          "flow-content-2",
+          "phrasing-content-2",
+          "interactive-content-2",
+          "palpable-content-2",
+          "concept-element-contexts",
+          "concept-element-content-model",
+          "global-attributes",
+          "htmlelement",
+          "htmlconstructor"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/form-elements.html": {
+        "anchors": [
+          "the-button-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "attr-tabindex"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "eventhandler",
+          "event-handlers",
+          "event-handler-event-type",
+          "concept-relevant-global"
+        ]
+      },
+      "https://infra.spec.whatwg.org/": {
+        "anchors": [
+          "user-agent",
+          "ordered-set",
+          "boolean",
+          "string",
+          "assert",
+          "list-append",
+          "list-iterate",
+          "string-is",
+          "list-remove",
+          "list-sort-in-ascending-order",
+          "list-empty",
+          "list-contain",
+          "implementation-defined",
+          "set-append",
+          "list-is-empty",
+          "list",
+          "list-item",
+          "iteration-break",
+          "set-equal"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/geometry.html": {
+        "anchors": [
+          "XProperty",
+          "YProperty"
+        ]
+      },
+      "https://svgwg.org/svg2-draft/painting.html": {
+        "anchors": [
+          "TextRenderingProperty"
+        ]
+      },
+      "https://w3c.github.io/IntersectionObserver/": {
+        "anchors": [
+          "intersectionobserver",
+          "dom-intersectionobserverinit-rootmargin",
+          "callbackdef-intersectionobservercallback",
+          "dom-intersectionobserver-root",
+          "intersectionobserverentry",
+          "dom-intersectionobserverentry-isvisible",
+          "dom-intersectionobserverentry-intersectionratio",
+          "dom-intersectionobserverentry-intersectionrect"
+        ]
+      },
+      "https://w3c.github.io/geolocation/": {
+        "anchors": [
+          "dom-positionoptions-enablehighaccuracy",
+          "dfn-geolocation",
+          "dom-geolocationposition",
+          "dom-geolocationpositionerror",
+          "dom-positioncallback",
+          "dom-positionerrorcallback",
+          "dom-geolocation-watchposition",
+          "dom-geolocation",
+          "dom-geolocation-getcurrentposition",
+          "dfn-request-a-position"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dfn-current-high-resolution-time"
+        ]
+      },
+      "https://w3c.github.io/manifest-app-info/": {
+        "anchors": [
+          "dfn-categories"
+        ]
+      },
+      "https://w3c.github.io/permissions/": {
+        "anchors": [
+          "dfn-powerful-feature",
+          "dfn-permission",
+          "dom-permissionstate",
+          "dfn-prompt-the-user-to-choose",
+          "dfn-permission-state",
+          "dom-permissionstate-granted",
+          "dom-permissionstate-denied",
+          "dfn-name",
+          "dfn-request-permission-to-use",
+          "dom-permissiondescriptor",
+          "dom-permissionstate-prompt",
+          "dfn-getting-the-current-permission-state"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-boolean",
+          "Exposed",
+          "idl-DOMString",
+          "dfn-static-operation",
+          "this",
+          "idl-unsigned-long"
+        ]
+      },
+      "https://wicg.github.io/fenced-frame/": {
+        "anchors": [
+          "elementdef-fencedframe",
+          "fenced-navigable-container-fenced-navigable"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/cascade.html": {
+        "anchors": [
+          "specified-value",
+          "computed-value",
+          "value-def-inherit"
+        ]
+      }
+    }
+  }
+}

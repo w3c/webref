@@ -1,0 +1,840 @@
+{
+  "spec": {
+    "title": "The HTML Permission Elements",
+    "url": "https://wicg.github.io/PEPC/permission-elements.html"
+  },
+  "algorithms": [
+    {
+      "name": "InPagePermissionMixin/add a blocker",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-blocker",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"inpagepermissionmixin-add-a-blocker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add a blocker</dfn> with a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#enumdef-inpagepermissionmixinblockerreason\" id=\"ref-for-enumdef-inpagepermissionmixinblockerreason③\">InPagePermissionMixinBlockerReason</a></code> <var>reason</var> and an optional flag <var>expires</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>reason</var> is not <code>\"\"</code>.\n(The empty string in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#enumdef-inpagepermissionmixinblockerreason\" id=\"ref-for-enumdef-inpagepermissionmixinblockerreason④\">InPagePermissionMixinBlockerReason</a></code> signals no blocker\nis present. Why would you add a non-blocking blockern empty string?)</p>"
+        },
+        {
+          "html": "<p>Let <var>timestamp</var> be None.</p>"
+        },
+        {
+          "html": "<p>If <var>expires</var>, then let <var>timestamp</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time\">current high resolution time</a>\nplus the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker-delay\" id=\"ref-for-inpagepermissionmixin-blocker-delay\">blocker delay</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> an entry to the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-blockerlist-slot\" id=\"ref-for-dom-inpagepermissionmixin-blockerlist-slot①\">[[BlockerList]]</a></code> with <var>reason</var>\nand <var>timestamp</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "InPagePermissionMixin/add an expiring blocker",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-an-expiring-blocker",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"inpagepermissionmixin-add-an-expiring-blocker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add an expiring blocker</dfn> with a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#enumdef-inpagepermissionmixinblockerreason\" id=\"ref-for-enumdef-inpagepermissionmixinblockerreason⑤\">InPagePermissionMixinBlockerReason</a></code> <var>reason</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>reason</var> is listed as \"expiring\" in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#blocker-reason-table\" id=\"ref-for-blocker-reason-table\">blocker reason table</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-blocker\" id=\"ref-for-inpagepermissionmixin-add-a-blocker\">Add a blocker</a> with <var>reason</var> and true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "InPagePermissionMixin/add a temporary blocker",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-temporary-blocker",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"inpagepermissionmixin-add-a-temporary-blocker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add a temporary blocker</dfn> with a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#enumdef-inpagepermissionmixinblockerreason\" id=\"ref-for-enumdef-inpagepermissionmixinblockerreason⑥\">InPagePermissionMixinBlockerReason</a></code> <var>reason</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>reason</var> is listed as \"temporary\" in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#blocker-reason-table\" id=\"ref-for-blocker-reason-table①\">blocker reason table</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-blocker\" id=\"ref-for-inpagepermissionmixin-add-a-blocker①\">Add a blocker</a> with <var>reason</var> and false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "InPagePermissionMixin/add a permanent blocker",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-permanent-blocker",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"inpagepermissionmixin-add-a-permanent-blocker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add a permanent blocker</dfn> with a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#enumdef-inpagepermissionmixinblockerreason\" id=\"ref-for-enumdef-inpagepermissionmixinblockerreason⑦\">InPagePermissionMixinBlockerReason</a></code> <var>reason</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>reason</var> is listed as \"permanent\" in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#blocker-reason-table\" id=\"ref-for-blocker-reason-table②\">blocker reason table</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-blocker\" id=\"ref-for-inpagepermissionmixin-add-a-blocker②\">Add a blocker</a> with <var>reason</var> and false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "InPagePermissionMixin/remove blockers",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-remove-blockers",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"inpagepermissionmixin-remove-blockers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove blockers</dfn> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#enumdef-inpagepermissionmixinblockerreason\" id=\"ref-for-enumdef-inpagepermissionmixinblockerreason⑧\">InPagePermissionMixinBlockerReason</a></code> <var>reason</var> from an <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>reason</var> is listed as \"temporary\" in the\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#blocker-reason-table\" id=\"ref-for-blocker-reason-table③\">blocker reason table</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>entry</var> in <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-blockerlist-slot\" id=\"ref-for-dom-inpagepermissionmixin-blockerlist-slot②\">[[BlockerList]]</a></code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>entry</var>’s reason <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is\">equals</a> <var>reason</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">remove</a>\n<var>entry</var> from <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-blockerlist-slot\" id=\"ref-for-dom-inpagepermissionmixin-blockerlist-slot③\">[[BlockerList]]</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-blocker\" id=\"ref-for-inpagepermissionmixin-add-a-blocker③\">Add a blocker</a> with <var>reason</var> and true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "InPagePermissionMixin/blocker",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker",
+      "html": "To determine a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin\" id=\"ref-for-inpagepermissionmixin⑧\">InPagePermissionMixin</a></code> <var>element</var>’s\n<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"inpagepermissionmixin-blocker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">blocker</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>blockers</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"ref-for-list-sort-in-ascending-order\">sorting</a> <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-blockerlist-slot\" id=\"ref-for-dom-inpagepermissionmixin-blockerlist-slot④\">[[BlockerList]]</a></code>\nwith the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker-ordering\" id=\"ref-for-inpagepermissionmixin-blocker-ordering\">blocker ordering</a> algorithm.</p>"
+        },
+        {
+          "html": "<p>If <var>blockers</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a> and <var>blockers</var>[0] is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocking\" id=\"ref-for-inpagepermissionmixin-blocking\">blocking</a>, then return <var>blockers</var>[0].</p>"
+        },
+        {
+          "html": "<p>Return nothing.</p>"
+        }
+      ]
+    },
+    {
+      "name": "InPagePermissionMixin/blocker ordering",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker-ordering",
+      "html": "To determine <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"inpagepermissionmixin-blocker-ordering\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">blocker ordering</dfn> for\ntwo blockers <var>a</var> and <var>b</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>really large number</var> be 99.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: No order hint in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#blocker-reason-table\" id=\"ref-for-blocker-reason-table④\">blocker reason table</a> is equal to or\ngreater than <var>really large number</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>a</var> is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocking\" id=\"ref-for-inpagepermissionmixin-blocking①\">blocking</a>, then let <var>a hint</var> be the\norder hint of <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker-reason\" id=\"ref-for-inpagepermissionmixin-blocker-reason①\">reason</a> in the\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#blocker-reason-table\" id=\"ref-for-blocker-reason-table⑤\">blocker reason table</a>, otherwise let <var>a hint</var> be <var>really large number</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>b</var> is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocking\" id=\"ref-for-inpagepermissionmixin-blocking②\">blocking</a>, then let <var>b hint</var> be the\norder hint of <var>b</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker-reason\" id=\"ref-for-inpagepermissionmixin-blocker-reason②\">reason</a> in the\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#blocker-reason-table\" id=\"ref-for-blocker-reason-table⑥\">blocker reason table</a>, otherwise let <var>b hint</var> be <var>really large number</var>.</p>"
+        },
+        {
+          "html": "<p>Return whether <var>a hint</var> is less than or equal to <var>b hint</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "InPagePermissionMixin/blocking",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocking",
+      "html": "An <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin\" id=\"ref-for-inpagepermissionmixin⑨\">InPagePermissionMixin</a></code>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker\" id=\"ref-for-inpagepermissionmixin-blocker①\">blocker</a> list’s <var>entry</var> is\n<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"inpagepermissionmixin-blocking\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">blocking</dfn> if:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><var>entry</var> has no <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker-timestamp\" id=\"ref-for-inpagepermissionmixin-blocker-timestamp\">blocker timestamp</a>,</p>"
+        },
+        {
+          "html": "<p>or <var>entry</var> has a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker-timestamp\" id=\"ref-for-inpagepermissionmixin-blocker-timestamp①\">blocker timestamp</a>, and the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker-timestamp\" id=\"ref-for-inpagepermissionmixin-blocker-timestamp②\">blocker timestamp</a> is\ngreater or equal to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time①\">current high resolution time</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "InPagePermissionMixin/isValid",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-isvalid",
+      "html": "An <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin\" id=\"ref-for-inpagepermissionmixin①①\">InPagePermissionMixin</a></code> <var>element</var>’s <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-inpagepermissionmixin-isvalid\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>isValid</code></dfn> getter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return whether <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker\" id=\"ref-for-inpagepermissionmixin-blocker②\">blocker</a> is Nothing.</p>"
+        }
+      ]
+    },
+    {
+      "name": "InPagePermissionMixin/invalidReason",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-invalidreason",
+      "html": "An <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin\" id=\"ref-for-inpagepermissionmixin①②\">InPagePermissionMixin</a></code> <var>element</var>’s <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-inpagepermissionmixin-invalidreason\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>invalidReason</code></dfn> getter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker\" id=\"ref-for-inpagepermissionmixin-blocker③\">blocker</a> is Nothing, return <code>\"\"</code>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker\" id=\"ref-for-inpagepermissionmixin-blocker④\">blocker</a>’s reason string.</p>"
+        }
+      ]
+    },
+    {
+      "name": "InPagePermissionMixin/initialPermissionStatus",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-initialpermissionstatus",
+      "html": "An <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin\" id=\"ref-for-inpagepermissionmixin①③\">InPagePermissionMixin</a></code> <var>element</var>’s\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-inpagepermissionmixin-initialpermissionstatus\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>initialPermissionStatus</code></dfn>\ngetter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return <var>element</var>’s internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-initialpermissionstatus-slot\" id=\"ref-for-dom-inpagepermissionmixin-initialpermissionstatus-slot\">[[InitialPermissionStatus]]</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "InPagePermissionMixin/permissionStatus",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-permissionstatus",
+      "html": "An <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin\" id=\"ref-for-inpagepermissionmixin①④\">InPagePermissionMixin</a></code> <var>element</var>’s\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-inpagepermissionmixin-permissionstatus\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>permissionStatus</code></dfn>\ngetter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-get-the-current-permission-state\" id=\"ref-for-inpagepermissionmixin-get-the-current-permission-state\">get the current permission state</a> for\n<var>element</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "InPagePermissionMixin/maybe dispatch onvalidstatechange",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-maybe-dispatch-onvalidstatechange",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"inpagepermissionmixin-maybe-dispatch-onvalidstatechange\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">maybe dispatch onvalidstatechange</dfn> for <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>oldState</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-lastnotifiedvalidstate-slot\" id=\"ref-for-dom-inpagepermissionmixin-lastnotifiedvalidstate-slot①\">[[LastNotifiedValidState]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>newState</var> be whether <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-blocker\" id=\"ref-for-inpagepermissionmixin-blocker⑤\">blocker</a> is Nothing.</p>"
+        },
+        {
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-lastnotifiedvalidstate-slot\" id=\"ref-for-dom-inpagepermissionmixin-lastnotifiedvalidstate-slot②\">[[LastNotifiedValidState]]</a></code> to <var>newState</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>oldReason</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-lastnotifiedinvalidreason-slot\" id=\"ref-for-dom-inpagepermissionmixin-lastnotifiedinvalidreason-slot①\">[[LastNotifiedInvalidReason]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>newReason</var> be whether <var>element</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-invalidreason\" id=\"ref-for-dom-inpagepermissionmixin-invalidreason④\">invalidReason</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-lastnotifiedinvalidreason-slot\" id=\"ref-for-dom-inpagepermissionmixin-lastnotifiedinvalidreason-slot②\">[[LastNotifiedInvalidReason]]</a></code> to <var>newReason</var>.</p>"
+        },
+        {
+          "html": "If <var>oldState</var> != <var>newState</var> or <var>oldReason</var> != <var>newReason</var>, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>event</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event\">Event</a></code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-initialize\" id=\"ref-for-concept-event-initialize\">Initialize</a> <var>event</var> with\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-type\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-type\">type</a>\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-onvalidationstatuschange\" id=\"ref-for-dom-inpagepermissionmixin-onvalidationstatuschange②\">onvalidationstatuschange</a></code>\",\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-bubbles\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-bubbles\">bubbles</a>\ntrue, and\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-cancelable\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-cancelable\">cancelable</a>\ntrue.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-dispatch\" id=\"ref-for-concept-event-dispatch\">Dispatch</a> <var>event</var> to <var>element</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "InPagePermissionMixin/dispatch onpromptaction",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-dispatch-onpromptaction",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"inpagepermissionmixin-dispatch-onpromptaction\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch onpromptaction</dfn> for <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>event</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event①\">Event</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-initialize\" id=\"ref-for-concept-event-initialize①\">Initialize</a> <var>event</var> with\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-type\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-type①\">type</a>\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-onpromptaction\" id=\"ref-for-dom-inpagepermissionmixin-onpromptaction①\">onpromptaction</a></code>\",\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-bubbles\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-bubbles①\">bubbles</a>\ntrue, and\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-cancelable\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-cancelable①\">cancelable</a>\ntrue.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-dispatch\" id=\"ref-for-concept-event-dispatch①\">Dispatch</a> <var>event</var> to <var>element</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "InPagePermissionMixin/dispatch onpromptdismiss",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-dispatch-onpromptdismiss",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"InPagePermissionMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"inpagepermissionmixin-dispatch-onpromptdismiss\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch onpromptdismiss</dfn> for <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>event</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event②\">Event</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-initialize\" id=\"ref-for-concept-event-initialize②\">Initialize</a> <var>event</var> with\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-type\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-type②\">type</a>\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-onpromptdismiss\" id=\"ref-for-dom-inpagepermissionmixin-onpromptdismiss①\">onpromptdismiss</a></code>\",\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-bubbles\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-bubbles②\">bubbles</a>\ntrue, and\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-cancelable\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-cancelable②\">cancelable</a>\ntrue.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-dispatch\" id=\"ref-for-concept-event-dispatch②\">Dispatch</a> <var>event</var> to <var>element</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "Permission elements constrain the styling that can be applied to them.\nThese constraints come in three flavours:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the condition isn’t met, the element is deactivated.</p>"
+        },
+        {
+          "html": "<p>A user-agent defined stylesheet enforces certain styling.</p>"
+        },
+        {
+          "html": "<p>The user-agent enforces bounds on additional styles, where the bounds\ncannot be easily expressed in CSS. For example, if the style bounds are\nexpressed relative to the computed style of the element.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLPermissionElement/types getter",
+      "html": "The HTMLPermissionElement’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-htmlpermissionelement-type\" id=\"ref-for-dom-htmlpermissionelement-type④\">type</a></code> getter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot③\">[[Features]]</a></code> is null: Return <code>\"\"</code>.</p>"
+        },
+        {
+          "html": "<p>Return a string, containing the concatenation of all <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-powerful-feature\" id=\"ref-for-dfn-powerful-feature①⑤\">powerful feature</a>\nnames in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot④\">[[Features]]</a></code>, seperated by \" \".</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLPermissionElement/types setter",
+      "html": "The HTMLPermissionElement’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-htmlpermissionelement-type\" id=\"ref-for-dom-htmlpermissionelement-type⑤\">type</a></code> setter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot⑤\">[[Features]]</a></code> is not null: Return.</p>"
+        },
+        {
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot⑥\">[[Features]]</a></code> to «».</p>"
+        },
+        {
+          "html": "<p>Let <var>features</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#parse-a-type-string\" id=\"ref-for-parse-a-type-string\">parse a type string</a> with the\ninput string.</p>"
+        },
+        {
+          "html": "<p>If <var>features</var> is None, return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> each <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-powerful-feature\" id=\"ref-for-dfn-powerful-feature①⑥\">powerful feature</a> name to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot⑦\">[[Features]]</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③\">ordered set</a>.</p>"
+        },
+        {
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-initialpermissionstatus-slot\" id=\"ref-for-dom-inpagepermissionmixin-initialpermissionstatus-slot①\">[[InitialPermissionStatus]]</a></code> to the result of\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-get-the-current-permission-state\" id=\"ref-for-htmlpermissionelement-get-the-current-permission-state\">get the current permission state</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLPermissionElement/isTypeSupported()",
+      "html": "HTMLPermissionElement’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-htmlpermissionelement-istypesupported\" id=\"ref-for-dom-htmlpermissionelement-istypesupported①\">isTypeSupported()</a></code> method\nsteps with argument with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString③\">DOMString</a></code> <var>type</var>are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>features</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#parse-a-type-string\" id=\"ref-for-parse-a-type-string①\">parse a type string</a> with <var>type</var>.</p>"
+        },
+        {
+          "html": "<p>Return whether <var>features</var> is not None.</p>"
+        }
+      ]
+    },
+    {
+      "name": "parse a type string",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#parse-a-type-string",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"parse-a-type-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">parse a type string</dfn> a given string <var>type</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>list</var> be the result of parsing <var>type</var> as a string of\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-powerful-feature\" id=\"ref-for-dfn-powerful-feature①⑧\">powerful feature</a> names, seperated by whitespace.</p>"
+        },
+        {
+          "html": "<p>If any errors occured, return None.</p>"
+        },
+        {
+          "html": "<p>Check if the set of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-powerful-feature\" id=\"ref-for-dfn-powerful-feature①⑨\">powerful features</a> is supported for the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement\" id=\"ref-for-htmlpermissionelement②\">HTMLPermissionElement</a></code> by the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑤\">user agent</a>. If not, return None.</p>"
+        },
+        {
+          "html": "<p>Return <var>list</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLPermissionElement/constructor()",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlpermissionelement-constructor",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement\" id=\"ref-for-htmlpermissionelement③\">HTMLPermissionElement</a></code> <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"HTMLPermissionElement\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"HTMLPermissionElement()|constructor()\" id=\"dom-htmlpermissionelement-constructor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>constructor()</code></dfn> steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot⑧\">[[Features]]</a></code> slot to null.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-blockerlist-slot\" id=\"ref-for-dom-inpagepermissionmixin-blockerlist-slot⑦\">[[BlockerList]]</a></code> to «».</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-lastnotifiedvalidstate-slot\" id=\"ref-for-dom-inpagepermissionmixin-lastnotifiedvalidstate-slot③\">[[LastNotifiedValidState]]</a></code> with false.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-lastnotifiedinvalidreason-slot\" id=\"ref-for-dom-inpagepermissionmixin-lastnotifiedinvalidreason-slot③\">[[LastNotifiedInvalidReason]]</a></code> with the empty\nstring.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-initialpermissionstatus-slot\" id=\"ref-for-dom-inpagepermissionmixin-initialpermissionstatus-slot②\">[[InitialPermissionStatus]]</a></code> to\nthe result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-get-the-current-permission-state\" id=\"ref-for-htmlpermissionelement-get-the-current-permission-state①\">get the current permission state</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLPermissionElement/insertion steps",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement\" id=\"ref-for-htmlpermissionelement④\">HTMLPermissionElement</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-insert-ext\" id=\"ref-for-concept-node-insert-ext\">insertion steps</a> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot⑨\">[[Features]]</a></code> is null, set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot①⓪\">[[Features]]</a></code> to «».</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-blockerlist-slot\" id=\"ref-for-dom-inpagepermissionmixin-blockerlist-slot⑧\">[[BlockerList]]</a></code> to «».</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> to <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable\">node navigable</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-navigable-permissionelements-slot\" id=\"ref-for-dom-navigable-permissionelements-slot\">[[PermissionElements]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-intersectionrect-slot\" id=\"ref-for-dom-inpagepermissionmixin-intersectionrect-slot\">[[IntersectionRect]]</a></code> with undefined.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-intersectionobserver-slot\" id=\"ref-for-dom-inpagepermissionmixin-intersectionobserver-slot\">[[IntersectionObserver]]</a></code> with the result of\nconstructing a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#intersectionobserver\" id=\"ref-for-intersectionobserver①\">IntersectionObserver</a></code> with\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-intersectionobserver-callback\" id=\"ref-for-htmlpermissionelement-intersectionobserver-callback\">IntersectionObserver callback</a> and\n«[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverinit-rootmargin\" id=\"ref-for-dom-intersectionobserverinit-rootmargin\">rootMargin</a></code>\" → <code>\"-4px\"</code> ]».</p>"
+        },
+        {
+          "html": "<p>Call <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-intersectionobserver-slot\" id=\"ref-for-dom-inpagepermissionmixin-intersectionobserver-slot①\">[[IntersectionObserver]]</a></code>.observe(<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>).</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot①①\">[[Features]]</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is empty</a>, then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-permanent-blocker\" id=\"ref-for-inpagepermissionmixin-add-a-permanent-blocker\">add a permanent blocker</a>\nwith reason <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-type_invalid\" id=\"ref-for-dom-inpagepermissionmixinblockerreason-type_invalid③\">type_invalid</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a> is not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-type-permissible\" id=\"ref-for-htmlpermissionelement-type-permissible\">type permissible</a>, then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-temporary-blocker\" id=\"ref-for-inpagepermissionmixin-add-a-temporary-blocker①\">add a temporary blocker</a>\nwith <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-unsuccesful_registration\" id=\"ref-for-dom-inpagepermissionmixinblockerreason-unsuccesful_registration②\">unsuccesful_registration</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-an-expiring-blocker\" id=\"ref-for-inpagepermissionmixin-add-an-expiring-blocker\">Add an expiring blocker</a> with reason\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-recently_attached\" id=\"ref-for-dom-inpagepermissionmixinblockerreason-recently_attached①\">recently_attached</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-traversable\" id=\"ref-for-nav-traversable\">traversable navigable</a> of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable①\">node navigable</a> of\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>\nis a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-navigable-container-fenced-navigable\" id=\"ref-for-fenced-navigable-container-fenced-navigable\">fenced navigable</a>, then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-permanent-blocker\" id=\"ref-for-inpagepermissionmixin-add-a-permanent-blocker①\">add a permanent blocker</a>\nwith <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-illegal_subframe\" id=\"ref-for-dom-inpagepermissionmixinblockerreason-illegal_subframe①\">illegal_subframe</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-maybe-dispatch-onvalidstatechange\" id=\"ref-for-inpagepermissionmixin-maybe-dispatch-onvalidstatechange\">Maybe dispatch onvalidstatechange</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLPermissionElement/removing steps",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement\" id=\"ref-for-htmlpermissionelement⑤\">HTMLPermissionElement</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-remove-ext\" id=\"ref-for-concept-node-remove-ext\">removing steps</a> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">Remove</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a> from <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable②\">node navigable</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-navigable-permissionelements-slot\" id=\"ref-for-dom-navigable-permissionelements-slot①\">[[PermissionElements]]</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-recheck-type-permissibility\" id=\"ref-for-htmlpermissionelement-recheck-type-permissibility\">Recheck type permissibility</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable③\">node navigable</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-maybe-dispatch-onvalidstatechange\" id=\"ref-for-inpagepermissionmixin-maybe-dispatch-onvalidstatechange①\">Maybe dispatch onvalidstatechange</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "activation",
+      "html": "A <code><a data-link-type=\"element\" href=\"https://wicg.github.io/PEPC/permission-elements.html#elementdef-permission\" id=\"ref-for-elementdef-permission②⓪\">permission</a></code> <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#eventtarget-activation-behavior\" id=\"ref-for-eventtarget-activation-behavior\">activation behavior</a> given <var>event</var> is:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot①②\">[[Features]]</a></code> is not null.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot①③\">[[Features]]</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①\">is empty</a>, then return.</p>"
+        },
+        {
+          "html": "<p>If <var>event</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-istrusted\" id=\"ref-for-dom-event-istrusted①\">isTrusted</a></code> is false, then return.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-isvalid\" id=\"ref-for-dom-inpagepermissionmixin-isvalid④\">isValid</a></code> is false, then return.</p>"
+        },
+        {
+          "html": "<p>Let <var>descriptor</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-build-a-permission-descriptor\" id=\"ref-for-htmlpermissionelement-build-a-permission-descriptor\">build a permission descriptor</a> for\n<var>element</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use\">Request permission to use</a> the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-powerful-feature\" id=\"ref-for-dfn-powerful-feature②⓪\">powerful features</a> described by\n<var>descriptor</var>.</p>"
+        },
+        {
+          "html": "<p>If the previous step was cancelled or dismissed by the user, then\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-dispatch-onpromptdismiss\" id=\"ref-for-inpagepermissionmixin-dispatch-onpromptdismiss\">dispatch onpromptdismiss</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a> and return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-dispatch-onpromptaction\" id=\"ref-for-inpagepermissionmixin-dispatch-onpromptaction\">Dispatch onpromptaction</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLPermissionElement/build a permission descriptor",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-build-a-permission-descriptor",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"HTMLPermissionElement\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"htmlpermissionelement-build-a-permission-descriptor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">build a permission descriptor</dfn> for an\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement\" id=\"ref-for-htmlpermissionelement⑥\">HTMLPermissionElement</a></code> <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissiondescriptor\" id=\"ref-for-dom-permissiondescriptor\">PermissionDescriptor</a></code>.</p>"
+        },
+        {
+          "html": "<p>Fill in <var>result</var>:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Include the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-powerful-feature\" id=\"ref-for-dfn-powerful-feature②①\">powerful feature</a> names contained in\n<var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot①④\">[[Features]]</a></code>.</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLPermissionElement/IntersectionObserver callback",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-intersectionobserver-callback",
+      "html": "The HTMLPermissionElement’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"HTMLPermissionElement\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"htmlpermissionelement-intersectionobserver-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IntersectionObserver callback</dfn> implements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#callbackdef-intersectionobservercallback\" id=\"ref-for-callbackdef-intersectionobservercallback\">IntersectionObserverCallback</a></code> and runs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#intersectionobserver\" id=\"ref-for-intersectionobserver②\">IntersectionObserver</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-root\" id=\"ref-for-dom-intersectionobserver-root\">root</a></code>\nis the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">document</a></p>"
+        },
+        {
+          "html": "<p>Let <var>entries</var> be the value of the first callback parameter, the\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#intersectionobserverentry\" id=\"ref-for-intersectionobserverentry\">intersection observer entries</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: <var>entries</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②\">empty</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>entry</var> be <var>entries</var>’s last <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">item</a>.</p>"
+        },
+        {
+          "html": "If <var>entry</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-isvisible\" id=\"ref-for-dom-intersectionobserverentry-isvisible\">isVisible</a></code>, then:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-remove-blockers\" id=\"ref-for-inpagepermissionmixin-remove-blockers\">Remove blockers</a> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-intersection_occluded_or_distorted\" id=\"ref-for-dom-inpagepermissionmixinblockerreason-intersection_occluded_or_distorted①\">intersection_occluded_or_distorted</a></code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-remove-blockers\" id=\"ref-for-inpagepermissionmixin-remove-blockers①\">Remove blockers</a> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-intersection_out_of_viewport_or_clipped\" id=\"ref-for-dom-inpagepermissionmixinblockerreason-intersection_out_of_viewport_or_clipped①\">intersection_out_of_viewport_or_clipped</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>entry</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-intersectionratio\" id=\"ref-for-dom-intersectionobserverentry-intersectionratio\">intersectionRatio</a></code> &gt;= 1, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>reason</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-intersection_occluded_or_distorted\" id=\"ref-for-dom-inpagepermissionmixinblockerreason-intersection_occluded_or_distorted②\">intersection_occluded_or_distorted</a></code>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>reason</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-intersection_out_of_viewport_or_clipped\" id=\"ref-for-dom-inpagepermissionmixinblockerreason-intersection_out_of_viewport_or_clipped②\">intersection_out_of_viewport_or_clipped</a></code>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-temporary-blocker\" id=\"ref-for-inpagepermissionmixin-add-a-temporary-blocker②\">Add a temporary blocker</a> with <var>reason</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-intersectionrect-slot\" id=\"ref-for-dom-inpagepermissionmixin-intersectionrect-slot①\">[[IntersectionRect]]</a></code> does not equal\n<var>entry</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-intersectionrect\" id=\"ref-for-dom-intersectionobserverentry-intersectionrect\">intersectionRect</a></code> then\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-an-expiring-blocker\" id=\"ref-for-inpagepermissionmixin-add-an-expiring-blocker①\">add an expiring blocker</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-intersection_changed\" id=\"ref-for-dom-inpagepermissionmixinblockerreason-intersection_changed①\">intersection_changed</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-intersectionrect-slot\" id=\"ref-for-dom-inpagepermissionmixin-intersectionrect-slot②\">[[IntersectionRect]]</a></code> to\n<var>entry</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-intersectionrect\" id=\"ref-for-dom-intersectionobserverentry-intersectionrect①\">intersectionRect</a></code></p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-maybe-dispatch-onvalidstatechange\" id=\"ref-for-inpagepermissionmixin-maybe-dispatch-onvalidstatechange②\">Maybe dispatch onvalidstatechange</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLPermissionElement/type permissible",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-type-permissible",
+      "html": "To determine whether an <var>element</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"HTMLPermissionElement\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"htmlpermissionelement-type-permissible\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">type permissible</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a>: <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable④\">node navigable</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-navigable-permissionelements-slot\" id=\"ref-for-dom-navigable-permissionelements-slot②\">[[PermissionElements]]</a></code>\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contains</a> <var>element</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>count</var> be 0.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>current</var> in\n<var>element</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑤\">node navigable</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-navigable-permissionelements-slot\" id=\"ref-for-dom-navigable-permissionelements-slot③\">[[PermissionElements]]</a></code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>current</var> is <var>element</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">break</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>element</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot①⑤\">[[Features]]</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-equal\" id=\"ref-for-set-equal\">equals</a> <var>current</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot①⑥\">[[Features]]</a></code>\nthen increment <var>count</var> by 1.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return whether <var>count</var> is less than 3.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLPermissionElement/recheck type permissibility",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-recheck-type-permissibility",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"HTMLPermissionElement\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"htmlpermissionelement-recheck-type-permissibility\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">recheck type permissibility</dfn> for a\n<var>document</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>current</var> in <var>document</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-navigable-permissionelements-slot\" id=\"ref-for-dom-navigable-permissionelements-slot④\">[[PermissionElements]]</a></code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>current</var> is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-type-permissible\" id=\"ref-for-htmlpermissionelement-type-permissible①\">type permissible</a>, then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-remove-blockers\" id=\"ref-for-inpagepermissionmixin-remove-blockers②\">remove blockers</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-unsuccesful_registration\" id=\"ref-for-dom-inpagepermissionmixinblockerreason-unsuccesful_registration③\">unsuccesful_registration</a></code> from\n<var>current</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HTMLPermissionElement/get the current permission state",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-get-the-current-permission-state",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"HTMLPermissionElement\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"htmlpermissionelement-get-the-current-permission-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the current permission state</dfn> for\nan <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement\" id=\"ref-for-htmlpermissionelement⑦\">HTMLPermissionElement</a></code> <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>types</var> be <var>element</var>’s internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot①⑦\">[[Features]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>types</var> is null or <var>types</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①\">empty</a>,\nreturn <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-prompt\" id=\"ref-for-dom-permissionstate-prompt\">prompt</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>current</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted①\">granted</a></code>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>type</var> of <var>types</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>state</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-getting-the-current-permission-state\" id=\"ref-for-dfn-getting-the-current-permission-state\">get the current permission state</a> for\n<var>type</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>current</var> be the smaller of <var>current</var> and <var>state</var>, assuming the\nfollowing ordering:\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted②\">granted</a></code> &gt;\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-prompt\" id=\"ref-for-dom-permissionstate-prompt①\">prompt</a></code> &gt;\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied①\">denied</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>current</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLGeolocationElement/constructor()",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-constructor",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlgeolocationelement\" id=\"ref-for-htmlgeolocationelement③\">HTMLGeolocationElement</a></code> <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"HTMLGeolocationElement\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"HTMLGeolocationElement()|constructor()\" id=\"dom-htmlgeolocationelement-constructor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>constructor()</code></dfn> steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot①⑧\">[[Features]]</a></code> slot to « <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/geolocation/#dfn-geolocation\" id=\"ref-for-dfn-geolocation②\">\"geolocation\"</a> »</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-blockerlist-slot\" id=\"ref-for-dom-inpagepermissionmixin-blockerlist-slot⑨\">[[BlockerList]]</a></code> to «».</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-lastnotifiedvalidstate-slot\" id=\"ref-for-dom-inpagepermissionmixin-lastnotifiedvalidstate-slot④\">[[LastNotifiedValidState]]</a></code> with false.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-lastnotifiedinvalidreason-slot\" id=\"ref-for-dom-inpagepermissionmixin-lastnotifiedinvalidreason-slot④\">[[LastNotifiedInvalidReason]]</a></code> with the empty\nstring.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-initialpermissionstatus-slot\" id=\"ref-for-dom-inpagepermissionmixin-initialpermissionstatus-slot③\">[[InitialPermissionStatus]]</a></code> to\nthe result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-get-the-current-permission-state\" id=\"ref-for-htmlpermissionelement-get-the-current-permission-state②\">get the current permission state</a>.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-watchids-slot\" id=\"ref-for-dom-htmlgeolocationelement-watchids-slot\">[[watchIDs]]</a></code> to « <var>watchID</var> », where\n<var>watchID</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long\">unsigned long</a></code> that is\ngreater than zero.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-position-slot\" id=\"ref-for-dom-htmlgeolocationelement-position-slot\">[[position]]</a></code> to null.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-positionerror-slot\" id=\"ref-for-dom-htmlgeolocationelement-positionerror-slot\">[[positionError]]</a></code> to null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLGeolocationElement/insertion steps",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlgeolocationelement\" id=\"ref-for-htmlgeolocationelement④\">HTMLGeolocationElement</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-insert-ext\" id=\"ref-for-concept-node-insert-ext①\">insertion steps</a> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-blockerlist-slot\" id=\"ref-for-dom-inpagepermissionmixin-blockerlist-slot①⓪\">[[BlockerList]]</a></code> to «».</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a> to <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑥\">node navigable</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-navigable-permissionelements-slot\" id=\"ref-for-dom-navigable-permissionelements-slot⑤\">[[PermissionElements]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-intersectionrect-slot\" id=\"ref-for-dom-inpagepermissionmixin-intersectionrect-slot③\">[[IntersectionRect]]</a></code> with undefined.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-intersectionobserver-slot\" id=\"ref-for-dom-inpagepermissionmixin-intersectionobserver-slot②\">[[IntersectionObserver]]</a></code> with the result of\nconstructing a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#intersectionobserver\" id=\"ref-for-intersectionobserver③\">IntersectionObserver</a></code> with\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-intersectionobserver-callback\" id=\"ref-for-htmlpermissionelement-intersectionobserver-callback①\">IntersectionObserver callback</a> and\n«[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverinit-rootmargin\" id=\"ref-for-dom-intersectionobserverinit-rootmargin①\">rootMargin</a></code>\" → <code>\"-4px\"</code> ]».</p>"
+        },
+        {
+          "html": "<p>Call <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-intersectionobserver-slot\" id=\"ref-for-dom-inpagepermissionmixin-intersectionobserver-slot③\">[[IntersectionObserver]]</a></code>.observe(<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>).</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot①⑨\">[[Features]]</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty③\">is empty</a>, then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-permanent-blocker\" id=\"ref-for-inpagepermissionmixin-add-a-permanent-blocker②\">add a permanent blocker</a>\nwith reason <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-type_invalid\" id=\"ref-for-dom-inpagepermissionmixinblockerreason-type_invalid④\">type_invalid</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a> is not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-type-permissible\" id=\"ref-for-htmlpermissionelement-type-permissible②\">type permissible</a>, then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-temporary-blocker\" id=\"ref-for-inpagepermissionmixin-add-a-temporary-blocker③\">add a temporary blocker</a>\nwith <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-unsuccesful_registration\" id=\"ref-for-dom-inpagepermissionmixinblockerreason-unsuccesful_registration④\">unsuccesful_registration</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-an-expiring-blocker\" id=\"ref-for-inpagepermissionmixin-add-an-expiring-blocker②\">Add an expiring blocker</a> with reason\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-recently_attached\" id=\"ref-for-dom-inpagepermissionmixinblockerreason-recently_attached②\">recently_attached</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-traversable\" id=\"ref-for-nav-traversable①\">traversable navigable</a> of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑦\">node navigable</a> of\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>\nis a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-navigable-container-fenced-navigable\" id=\"ref-for-fenced-navigable-container-fenced-navigable①\">fenced navigable</a>, then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-add-a-permanent-blocker\" id=\"ref-for-inpagepermissionmixin-add-a-permanent-blocker③\">add a permanent blocker</a>\nwith <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-illegal_subframe\" id=\"ref-for-dom-inpagepermissionmixinblockerreason-illegal_subframe②\">illegal_subframe</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-maybe-dispatch-onvalidstatechange\" id=\"ref-for-inpagepermissionmixin-maybe-dispatch-onvalidstatechange③\">Maybe dispatch onvalidstatechange</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlgeolocationelement-maybe-autolocate\" id=\"ref-for-htmlgeolocationelement-maybe-autolocate\">Maybe autolocate</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLGeolocationElement/removing steps",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlgeolocationelement\" id=\"ref-for-htmlgeolocationelement⑤\">HTMLGeolocationElement</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-remove-ext\" id=\"ref-for-concept-node-remove-ext①\">removing steps</a> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove②\">Remove</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a> from <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑧\">node navigable</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-navigable-permissionelements-slot\" id=\"ref-for-dom-navigable-permissionelements-slot⑥\">[[PermissionElements]]</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-recheck-type-permissibility\" id=\"ref-for-htmlpermissionelement-recheck-type-permissibility①\">Recheck type permissibility</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑨\">node navigable</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-maybe-dispatch-onvalidstatechange\" id=\"ref-for-inpagepermissionmixin-maybe-dispatch-onvalidstatechange④\">Maybe dispatch onvalidstatechange</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLGeolocationElement/activation",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlgeolocationelement\" id=\"ref-for-htmlgeolocationelement⑥\">HTMLGeolocationElement</a></code> <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#eventtarget-activation-behavior\" id=\"ref-for-eventtarget-activation-behavior①\">activation behavior</a> given <var>event</var> is:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⓪\">Assert</a>: <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot②⓪\">[[Features]]</a></code> is not null.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-features-slot\" id=\"ref-for-dom-inpagepermissionmixin-features-slot②①\">[[Features]]</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty④\">is empty</a>, then return.</p>"
+        },
+        {
+          "html": "<p>If <var>event</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-istrusted\" id=\"ref-for-dom-event-istrusted②\">isTrusted</a></code> is false, then return.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-isvalid\" id=\"ref-for-dom-inpagepermissionmixin-isvalid⑥\">isValid</a></code> is false, then return.</p>"
+        },
+        {
+          "html": "<p>Let <var>descriptor</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement-build-a-permission-descriptor\" id=\"ref-for-htmlpermissionelement-build-a-permission-descriptor①\">build a permission descriptor</a> for\n<var>element</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use②\">Request permission to use</a> the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-powerful-feature\" id=\"ref-for-dfn-powerful-feature②②\">powerful features</a> described by\n<var>descriptor</var>.</p>"
+        },
+        {
+          "html": "<p>If the previous step was cancelled or dismissed by the user, then\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-dispatch-onpromptdismiss\" id=\"ref-for-inpagepermissionmixin-dispatch-onpromptdismiss①\">dispatch onpromptdismiss</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a> and return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-dispatch-onpromptaction\" id=\"ref-for-inpagepermissionmixin-dispatch-onpromptaction①\">Dispatch onpromptaction</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlgeolocationelement-fetch-location\" id=\"ref-for-htmlgeolocationelement-fetch-location\">Fetch location</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLGeolocationElement/maybe autolocate",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlgeolocationelement-maybe-autolocate",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"HTMLGeolocationElement\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"htmlgeolocationelement-maybe-autolocate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">maybe autolocate</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin-get-the-current-permission-state\" id=\"ref-for-inpagepermissionmixin-get-the-current-permission-state①\">get the current permission state</a> is not\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted③\">granted</a></code>, then return.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-autolocate\" id=\"ref-for-dom-htmlgeolocationelement-autolocate①\">autolocate</a></code> is not true, then return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#htmlgeolocationelement-fetch-location\" id=\"ref-for-htmlgeolocationelement-fetch-location①\">Fetch location</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLGeolocationElement/fetch location",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlgeolocationelement-fetch-location",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"HTMLGeolocationElement\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"htmlgeolocationelement-fetch-location\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch location</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>positionCallback</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-positioncallback\" id=\"ref-for-dom-positioncallback②\">PositionCallback</a></code> that performs the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②①\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-positionerror-slot\" id=\"ref-for-dom-htmlgeolocationelement-positionerror-slot②\">[[positionError]]</a></code> to undefined.</p>"
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-position-slot\" id=\"ref-for-dom-htmlgeolocationelement-position-slot②\">[[position]]</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-positioncallback\" id=\"ref-for-dom-positioncallback③\">PositionCallback</a></code>’s position\nargument.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dispatch-onlocation\" id=\"ref-for-dispatch-onlocation\">Dispatch onlocation</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Let <var>errorCallback</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-positionerrorcallback\" id=\"ref-for-dom-positionerrorcallback②\">PositionErrorCallback</a></code> that performs the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②④\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-position-slot\" id=\"ref-for-dom-htmlgeolocationelement-position-slot③\">[[position]]</a></code> to undefined.</p>"
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-positionerror-slot\" id=\"ref-for-dom-htmlgeolocationelement-positionerror-slot③\">[[positionError]]</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-positioncallback\" id=\"ref-for-dom-positioncallback④\">PositionCallback</a></code>’s\npositionError argument.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dispatch-onlocation\" id=\"ref-for-dispatch-onlocation①\">Dispatch onlocation</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥\">this</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>positionOptions</var> be «[]»</p>"
+        },
+        {
+          "html": "<p>Let <var>geolocation</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-geolocation\" id=\"ref-for-dom-geolocation①\">Geolocation</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-watch\" id=\"ref-for-dom-htmlgeolocationelement-watch②\">watch</a></code> is true:</p>",
+          "ignored": [
+            "Request a position with geolocation, positionCallback, errorCallback, positionOptions, and this’s [[watchIDs]]."
+          ]
+        },
+        {
+          "html": "<p>Otherwise:</p>",
+          "ignored": [
+            "Request a position with geolocation, positionCallback, errorCallback, positionOptions."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dispatch onlocation",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#dispatch-onlocation",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"dispatch-onlocation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch onlocation</dfn> for <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>event</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event④\">Event</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-initialize\" id=\"ref-for-concept-event-initialize③\">Initialize</a> <var>event</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-type\" id=\"ref-for-dom-event-type\">type</a></code>\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-onlocation\" id=\"ref-for-dom-htmlgeolocationelement-onlocation②\">onlocation</a></code>\".</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-dispatch\" id=\"ref-for-concept-event-dispatch④\">Dispatch</a> <var>event</var> to <var>element</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

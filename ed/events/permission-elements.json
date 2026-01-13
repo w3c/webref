@@ -1,0 +1,44 @@
+{
+  "spec": {
+    "title": "The HTML Permission Elements",
+    "url": "https://wicg.github.io/PEPC/permission-elements.html"
+  },
+  "events": [
+    {
+      "type": "promptaction",
+      "targets": [
+        "InPagePermissionMixin"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      }
+    },
+    {
+      "type": "promptdismiss",
+      "targets": [
+        "InPagePermissionMixin"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      }
+    },
+    {
+      "type": "validationstatuschange",
+      "targets": [
+        "InPagePermissionMixin"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      }
+    },
+    {
+      "type": "location",
+      "targets": [
+        "HTMLGeolocationElement"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      }
+    }
+  ]
+}

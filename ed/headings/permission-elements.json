@@ -1,0 +1,245 @@
+{
+  "spec": {
+    "title": "The HTML Permission Elements",
+    "url": "https://wicg.github.io/PEPC/permission-elements.html"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#title",
+      "level": 1,
+      "title": "The HTML Permission Elements"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "permission-mixin",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-mixin",
+      "level": 2,
+      "title": "Common Behaviours Of The HTML Permission Elements: InPagePermissionMixin",
+      "number": "2"
+    },
+    {
+      "id": "mixin-internal-state",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-internal-state",
+      "level": 3,
+      "title": "Mixin internal state",
+      "number": "2.1"
+    },
+    {
+      "id": "mixin-navigable-state",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-navigable-state",
+      "level": 3,
+      "title": "Mixin-supporting state at the navigable",
+      "number": "2.2"
+    },
+    {
+      "id": "mixin-activation",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-activation",
+      "level": 3,
+      "title": "Mixin activation and activation blockers",
+      "number": "2.3"
+    },
+    {
+      "id": "mixin-algorithms",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-algorithms",
+      "level": 3,
+      "title": "Mixin algorithms",
+      "number": "2.4"
+    },
+    {
+      "id": "mixin-event-algorithms",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#mixin-event-algorithms",
+      "level": 3,
+      "title": "Mixin event algorithms",
+      "number": "2.5"
+    },
+    {
+      "id": "rendering",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#rendering",
+      "level": 2,
+      "title": "Common Rendering, and Styling Restrictions",
+      "number": "3"
+    },
+    {
+      "id": "presentation",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#presentation",
+      "level": 3,
+      "title": "Presentation",
+      "number": "3.1"
+    },
+    {
+      "id": "style",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#style",
+      "level": 3,
+      "title": "Styling",
+      "number": "3.2"
+    },
+    {
+      "id": "style-blockers",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#style-blockers",
+      "level": 4,
+      "title": "Conditions that Deactivate the Element",
+      "number": "3.2.1"
+    },
+    {
+      "id": "style-stylesheet",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#style-stylesheet",
+      "level": 4,
+      "title": "User-Agent Defined Stylesheet",
+      "number": "3.2.2"
+    },
+    {
+      "id": "style-style-bounds",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#style-style-bounds",
+      "level": 4,
+      "title": "Additional User-Agent Defined Style Bounds",
+      "number": "3.2.3"
+    },
+    {
+      "id": "fallback",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#fallback",
+      "level": 3,
+      "title": "Falling Back",
+      "number": "3.3"
+    },
+    {
+      "id": "the-permission-element",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#the-permission-element",
+      "level": 2,
+      "title": "The permission Element",
+      "number": "4"
+    },
+    {
+      "id": "permission-element-internal-state",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-element-internal-state",
+      "level": 3,
+      "title": "permission element internal state",
+      "number": "4.1"
+    },
+    {
+      "id": "permission-element-very-interesting",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-element-very-interesting",
+      "level": 3,
+      "title": "permission element interesting behaviours",
+      "number": "4.2"
+    },
+    {
+      "id": "permission-element-type-property",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-element-type-property",
+      "level": 4,
+      "title": "The type property",
+      "number": "4.2.1"
+    },
+    {
+      "id": "permission-element-algorithms",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#permission-element-algorithms",
+      "level": 3,
+      "title": "permission element algorithms",
+      "number": "4.3"
+    },
+    {
+      "id": "geolocation-element",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element",
+      "level": 2,
+      "title": "The geolocation Element",
+      "number": "5"
+    },
+    {
+      "id": "geolocation-element-internal-state",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-element-internal-state",
+      "level": 3,
+      "title": "geolocation element internal state",
+      "number": "5.1"
+    },
+    {
+      "id": "geolocation-algorithms",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-algorithms",
+      "level": 3,
+      "title": "geolocation element algorithms",
+      "number": "5.2"
+    },
+    {
+      "id": "geolocation-event-algorithms",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#geolocation-event-algorithms",
+      "level": 3,
+      "title": "geolocation element event algorithms",
+      "number": "5.3"
+    },
+    {
+      "id": "secpriv",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#secpriv",
+      "level": 2,
+      "title": "Security & Privacy Considerations",
+      "number": "6"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://wicg.github.io/PEPC/permission-elements.html#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}
