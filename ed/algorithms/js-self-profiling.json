@@ -151,7 +151,19 @@
           "html": "If <var>options</var>' <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"ProfilerInitOptions\" data-xref-for=\"ProfilerInitOptions\" href=\"https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions-sampleinterval\" class=\"internalDFN\" id=\"ref-for-dom-profilerinitoptions-sampleinterval-1\"><code>sampleInterval</code></a> is less than 0, throw a <code>RangeError</code>."
         },
         {
-          "html": "<a href=\"https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value\">Get the policy value</a> for <code>\"js-profiling\"</code> in the <a data-cite=\"!HTML5#document\" href=\"https://www.w3.org/TR/html5/#document\">Document</a>. If the result is false, throw a <code>\"NotAllowedError\"</code> DOMException."
+          "html": "<a href=\"https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value\">Get the policy value</a> for <code>\"js-profiling-mode\"</code> in the <a data-cite=\"!HTML5#document\" href=\"https://www.w3.org/TR/html5/#document\">Document</a>. Let <var>profilingMode</var> be the result."
+        },
+        {
+          "html": "If <var>profilingMode</var> is not <code>\"eager\"</code> or <code>\"lazy\"</code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<a href=\"https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value\">Get the policy value</a> for <code>\"js-profiling\"</code> in the <a data-cite=\"!HTML5#document\" href=\"https://www.w3.org/TR/html5/#document\">Document</a>. Let <var data-type=\"boolean\">jsProfilingEnabled</var> be the result."
+            },
+            {
+              "html": "If <var data-type=\"boolean\">jsProfilingEnabled</var> is false, throw a <code>\"NotAllowedError\"</code> DOMException."
+            }
+          ]
         },
         {
           "html": "Create a new <a href=\"https://wicg.github.io/js-self-profiling/#dfn-profiling-session\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-profiling-session-6\">profiling session</a> where:"
