@@ -1,0 +1,11 @@
+// Source: The HTML Permission Elements (https://wicg.github.io/PEPC/permission-elements.html)
+interface mixin InPagePermissionMixin {
+  readonly attribute boolean isValid;
+  readonly attribute InPagePermissionMixinBlockerReason invalidReason;
+  readonly attribute PermissionState initialPermissionStatus;
+  readonly attribute PermissionState permissionStatus;
+
+  attribute EventHandler onpromptaction;
+  attribute EventHandler onpromptdismiss;
+  attribute EventHandler onvalidationstatuschange;
+};

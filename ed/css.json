@@ -16075,6 +16075,13 @@
       "extended": []
     },
     {
+      "name": "::part()",
+      "prose": "The ::part() pseudo-element allows you to select elements that have been exposed via a part attribute. The syntax is:",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-part",
+      "syntax": "::part( <ident>+ )",
+      "extended": []
+    },
+    {
       "name": "::picker-icon",
       "prose": "The ::picker-icon pseudo-element represents the part of the control that represents the icon denoting the presence of the picker. It is only generated when the originating element has basic appearance and if it opens a picker. It is a fully styleable pseudo-element and inherits from its originating element.",
       "href": "https://drafts.csswg.org/css-forms-1/#selectordef-picker-icon",
@@ -16155,6 +16162,12 @@
       "prose": "The ::slider-track pseudo-element represents the portion containing both the progressed and unprogressed portions of the control.",
       "href": "https://drafts.csswg.org/css-forms-1/#selectordef-slider-track",
       "syntax": "::slider-track",
+      "extended": []
+    },
+    {
+      "name": "::slotted()",
+      "prose": "The ::slotted() pseudo-element represents the elements assigned, after flattening, to a slot. This pseudo-element only exists on slots.",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-slotted",
       "extended": []
     },
     {
@@ -16426,6 +16439,13 @@
       "extended": []
     },
     {
+      "name": ":has-slotted",
+      "prose": "The :has-slotted pseudo-class matches slot elements which have a non-empty list of flattened slotted nodes.",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-has-slotted",
+      "syntax": ":has-slotted",
+      "extended": []
+    },
+    {
       "name": ":has()",
       "prose": "The relational pseudo-class, :has(), is a functional pseudo-class taking a <relative-selector-list> as an argument. It represents an element if any of the relative selectors would match at least one element when anchored against this element.",
       "href": "https://drafts.csswg.org/selectors-4/#has-pseudo",
@@ -16450,6 +16470,25 @@
       "prose": "The :high-value pseudo-class matches on a meter element when its value is over the value specified by the high HTML attribute.",
       "href": "https://drafts.csswg.org/css-forms-1/#selectordef-high-value",
       "syntax": ":high-value",
+      "extended": []
+    },
+    {
+      "name": ":host",
+      "prose": "The :host pseudo-class, when evaluated in the context of a shadow tree, matches the shadow tree’s shadow host. In any other context, it matches nothing.",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-host",
+      "syntax": ":host",
+      "extended": []
+    },
+    {
+      "name": ":host-context()",
+      "prose": "The :host-context() functional pseudo-class tests whether there is an ancestor, outside the shadow tree, which matches a particular selector. Its syntax is:",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-host-context",
+      "extended": []
+    },
+    {
+      "name": ":host()",
+      "prose": "The :host() function pseudo-class has the syntax:",
+      "href": "https://drafts.csswg.org/css-shadow-1/#selectordef-host-function",
       "extended": []
     },
     {

@@ -1,0 +1,14 @@
+// Source: The HTML Permission Elements (https://wicg.github.io/PEPC/permission-elements.html)
+enum InPagePermissionMixinBlockerReason {
+  // No blocker reason.
+  "",
+
+  // Blocker reasons supported by all InPagePermissionMixin users.
+  "illegal_subframe", "unsuccesful_registration",
+  "recently_attached", "intersection_changed",
+  "intersection_out_of_viewport_or_clipped",
+  "intersection_occluded_or_distorted", "style_invalid",
+
+  // Blocker reason specific to HTMLPermissionElement.
+  "type_invalid",
+};

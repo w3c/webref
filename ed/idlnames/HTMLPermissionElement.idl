@@ -1,0 +1,10 @@
+// Source: The HTML Permission Elements (https://wicg.github.io/PEPC/permission-elements.html)
+[Exposed=Window]
+interface HTMLPermissionElement : HTMLElement {
+  [HTMLConstructor] constructor();
+  [CEReactions, Reflect] attribute DOMString type;
+  static boolean isTypeSupported(DOMString type);
+};
+
+// Source: The HTML Permission Elements (https://wicg.github.io/PEPC/permission-elements.html)
+HTMLPermissionElement includes InPagePermissionMixin;

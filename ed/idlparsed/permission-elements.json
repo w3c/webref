@@ -1,0 +1,485 @@
+{
+  "spec": {
+    "title": "The HTML Permission Elements",
+    "url": "https://wicg.github.io/PEPC/permission-elements.html"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "HTMLPermissionElement",
+          "HTMLGeolocationElement"
+        ]
+      },
+      "functions": {}
+    },
+    "idlNames": {
+      "InPagePermissionMixin": {
+        "fragment": "interface mixin InPagePermissionMixin {\n  readonly attribute boolean isValid;\n  readonly attribute InPagePermissionMixinBlockerReason invalidReason;\n  readonly attribute PermissionState initialPermissionStatus;\n  readonly attribute PermissionState permissionStatus;\n\n  attribute EventHandler onpromptaction;\n  attribute EventHandler onpromptdismiss;\n  attribute EventHandler onvalidationstatuschange;\n};",
+        "type": "interface mixin",
+        "name": "InPagePermissionMixin",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "isValid",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-isvalid"
+          },
+          {
+            "type": "attribute",
+            "name": "invalidReason",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "InPagePermissionMixinBlockerReason"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-invalidreason"
+          },
+          {
+            "type": "attribute",
+            "name": "initialPermissionStatus",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PermissionState"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-initialpermissionstatus"
+          },
+          {
+            "type": "attribute",
+            "name": "permissionStatus",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PermissionState"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-permissionstatus"
+          },
+          {
+            "type": "attribute",
+            "name": "onpromptaction",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-onpromptaction"
+          },
+          {
+            "type": "attribute",
+            "name": "onpromptdismiss",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-onpromptdismiss"
+          },
+          {
+            "type": "attribute",
+            "name": "onvalidationstatuschange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixin-onvalidationstatuschange"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin"
+      },
+      "InPagePermissionMixinBlockerReason": {
+        "fragment": "enum InPagePermissionMixinBlockerReason {\n  // No blocker reason.\n  \"\",\n\n  // Blocker reasons supported by all InPagePermissionMixin users.\n  \"illegal_subframe\", \"unsuccesful_registration\",\n  \"recently_attached\", \"intersection_changed\",\n  \"intersection_out_of_viewport_or_clipped\",\n  \"intersection_occluded_or_distorted\", \"style_invalid\",\n\n  // Blocker reason specific to HTMLPermissionElement.\n  \"type_invalid\",\n};",
+        "type": "enum",
+        "name": "InPagePermissionMixinBlockerReason",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "",
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason"
+          },
+          {
+            "type": "enum-value",
+            "value": "illegal_subframe",
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-illegal_subframe"
+          },
+          {
+            "type": "enum-value",
+            "value": "unsuccesful_registration",
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-unsuccesful_registration"
+          },
+          {
+            "type": "enum-value",
+            "value": "recently_attached",
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-recently_attached"
+          },
+          {
+            "type": "enum-value",
+            "value": "intersection_changed",
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-intersection_changed"
+          },
+          {
+            "type": "enum-value",
+            "value": "intersection_out_of_viewport_or_clipped",
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-intersection_out_of_viewport_or_clipped"
+          },
+          {
+            "type": "enum-value",
+            "value": "intersection_occluded_or_distorted",
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-intersection_occluded_or_distorted"
+          },
+          {
+            "type": "enum-value",
+            "value": "style_invalid",
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-style_invalid"
+          },
+          {
+            "type": "enum-value",
+            "value": "type_invalid",
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-inpagepermissionmixinblockerreason-type_invalid"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#enumdef-inpagepermissionmixinblockerreason"
+      },
+      "HTMLPermissionElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLPermissionElement : HTMLElement {\n  [HTMLConstructor] constructor();\n  [CEReactions, Reflect] attribute DOMString type;\n  static boolean isTypeSupported(DOMString type);\n};",
+        "type": "interface",
+        "name": "HTMLPermissionElement",
+        "inheritance": "HTMLElement",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "HTMLConstructor",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlpermissionelement-constructor"
+          },
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlpermissionelement-type"
+          },
+          {
+            "type": "operation",
+            "name": "isTypeSupported",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "static",
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlpermissionelement-istypesupported"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlpermissionelement"
+      },
+      "HTMLGeolocationElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLGeolocationElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute GeolocationPosition? position;\n  readonly attribute GeolocationPositionError? error;\n  [CEReactions, Reflect] attribute boolean autolocate;\n  [CEReactions, Reflect] attribute boolean watch;\n\n  attribute EventHandler onlocation;\n};",
+        "type": "interface",
+        "name": "HTMLGeolocationElement",
+        "inheritance": "HTMLElement",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "HTMLConstructor",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-constructor"
+          },
+          {
+            "type": "attribute",
+            "name": "position",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "GeolocationPosition"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-position"
+          },
+          {
+            "type": "attribute",
+            "name": "error",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "GeolocationPositionError"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-error"
+          },
+          {
+            "type": "attribute",
+            "name": "autolocate",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-autolocate"
+          },
+          {
+            "type": "attribute",
+            "name": "watch",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-watch"
+          },
+          {
+            "type": "attribute",
+            "name": "onlocation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://wicg.github.io/PEPC/permission-elements.html#dom-htmlgeolocationelement-onlocation"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlgeolocationelement"
+      }
+    },
+    "idlExtendedNames": {
+      "HTMLPermissionElement": [
+        {
+          "fragment": "HTMLPermissionElement includes InPagePermissionMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLPermissionElement",
+          "includes": "InPagePermissionMixin"
+        }
+      ],
+      "HTMLGeolocationElement": [
+        {
+          "fragment": "HTMLGeolocationElement includes InPagePermissionMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLGeolocationElement",
+          "includes": "InPagePermissionMixin"
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "HTMLPermissionElement",
+        "HTMLGeolocationElement"
+      ]
+    },
+    "dependencies": {
+      "InPagePermissionMixin": [
+        "InPagePermissionMixinBlockerReason",
+        "PermissionState",
+        "EventHandler"
+      ],
+      "HTMLPermissionElement": [
+        "HTMLElement",
+        "InPagePermissionMixin"
+      ],
+      "HTMLGeolocationElement": [
+        "HTMLElement",
+        "GeolocationPosition",
+        "GeolocationPositionError",
+        "EventHandler",
+        "InPagePermissionMixin"
+      ]
+    },
+    "externalDependencies": [
+      "PermissionState",
+      "EventHandler",
+      "HTMLElement",
+      "GeolocationPosition",
+      "GeolocationPositionError"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

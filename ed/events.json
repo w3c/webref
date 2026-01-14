@@ -3995,6 +3995,19 @@
     "interface": "ProgressEvent"
   },
   {
+    "type": "location",
+    "targets": [
+      {
+        "target": "HTMLGeolocationElement",
+        "bubbles": false
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "Event"
+  },
+  {
     "href": "https://w3c.github.io/pointerevents/#dfn-lostpointercapture",
     "src": {
       "format": "summary table",
@@ -5416,6 +5429,62 @@
       }
     ],
     "interface": "ProgressEvent"
+  },
+  {
+    "type": "promptaction",
+    "targets": [
+      {
+        "target": "HTMLPermissionElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      },
+      {
+        "target": "HTMLGeolocationElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "Event",
+    "cancelable": true
+  },
+  {
+    "type": "promptdismiss",
+    "targets": [
+      {
+        "target": "HTMLPermissionElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      },
+      {
+        "target": "HTMLGeolocationElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "Event",
+    "cancelable": true
   },
   {
     "src": {
@@ -7265,6 +7334,34 @@
     },
     "href": "https://w3c.github.io/IndexedDB/#eventdef-idbopendbrequest-upgradeneeded",
     "interface": "IDBVersionChangeEvent"
+  },
+  {
+    "type": "validationstatuschange",
+    "targets": [
+      {
+        "target": "HTMLPermissionElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      },
+      {
+        "target": "HTMLGeolocationElement",
+        "bubbles": true,
+        "bubblingPath": [
+          "Node",
+          "Document",
+          "Window"
+        ]
+      }
+    ],
+    "src": {
+      "format": "IDL eventHandler"
+    },
+    "interface": "Event",
+    "cancelable": true
   },
   {
     "type": "versionchange",

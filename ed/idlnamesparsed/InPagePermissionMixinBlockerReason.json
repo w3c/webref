@@ -1,0 +1,14 @@
+{
+  "name": "InPagePermissionMixinBlockerReason",
+  "type": "enum",
+  "defined": {
+    "spec": {
+      "title": "The HTML Permission Elements",
+      "url": "https://wicg.github.io/PEPC/permission-elements.html"
+    },
+    "fragment": "enum InPagePermissionMixinBlockerReason {\n  // No blocker reason.\n  \"\",\n\n  // Blocker reasons supported by all InPagePermissionMixin users.\n  \"illegal_subframe\", \"unsuccesful_registration\",\n  \"recently_attached\", \"intersection_changed\",\n  \"intersection_out_of_viewport_or_clipped\",\n  \"intersection_occluded_or_distorted\", \"style_invalid\",\n\n  // Blocker reason specific to HTMLPermissionElement.\n  \"type_invalid\",\n};",
+    "href": "https://wicg.github.io/PEPC/permission-elements.html#enumdef-inpagepermissionmixinblockerreason"
+  },
+  "extended": [],
+  "includes": []
+}

@@ -1,0 +1,15 @@
+// Source: The HTML Permission Elements (https://wicg.github.io/PEPC/permission-elements.html)
+[Exposed=Window]
+interface HTMLGeolocationElement : HTMLElement {
+  [HTMLConstructor] constructor();
+
+  readonly attribute GeolocationPosition? position;
+  readonly attribute GeolocationPositionError? error;
+  [CEReactions, Reflect] attribute boolean autolocate;
+  [CEReactions, Reflect] attribute boolean watch;
+
+  attribute EventHandler onlocation;
+};
+
+// Source: The HTML Permission Elements (https://wicg.github.io/PEPC/permission-elements.html)
+HTMLGeolocationElement includes InPagePermissionMixin;
