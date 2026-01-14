@@ -84,11 +84,11 @@
       "name": "<color-function>",
       "href": "https://www.w3.org/TR/css-color-5/#typedef-color-function",
       "type": "type",
-      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <color()>"
+      "value": "<rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <oklab()> | <oklch()> | <alpha()> | <color()>"
     },
     {
       "name": "color-mix()",
-      "value": "color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})",
+      "value": "color-mix( <color-interpolation-method>? , [ <color> && <percentage [0,100]>? ]#)",
       "href": "https://www.w3.org/TR/css-color-5/#funcdef-color-mix",
       "type": "function"
     },
@@ -268,21 +268,21 @@
       "values": [
         {
           "name": "l",
-          "prose": "l is a <number> that corresponds to the origin color’s Oklab Lightness after conversion, if required, to OKLCh. 1.0 is equivalent to 100%.",
+          "prose": "l is a <number> that corresponds to the origin color’s Oklab Lightness after conversion, if required, to OkLCh. 1.0 is equivalent to 100%.",
           "href": "https://www.w3.org/TR/css-color-5/#valdef-oklch-l",
           "type": "value",
           "value": "l"
         },
         {
           "name": "c",
-          "prose": "c is a <number> that corresponds to the origin color’s OKLCh chroma after conversion, if required, to OKLCh. 0.4 is equivalent to 100%.",
+          "prose": "c is a <number> that corresponds to the origin color’s OkLCh chroma after conversion, if required, to OkLCh. 0.4 is equivalent to 100%.",
           "href": "https://www.w3.org/TR/css-color-5/#valdef-oklch-c",
           "type": "value",
           "value": "c"
         },
         {
           "name": "h",
-          "prose": "h is a <number> that corresponds to the origin color’s OKLCh hue, in degrees, after conversion, if required, to OKLCh, normalized to a [0, 360] range. 90 is equivalent to 90deg.",
+          "prose": "h is a <number> that corresponds to the origin color’s OkLCh hue, in degrees, after conversion, if required, to OkLCh, normalized to a [0, 360] range. 90 is equivalent to 90deg.",
           "href": "https://www.w3.org/TR/css-color-5/#valdef-oklch-h",
           "type": "value",
           "value": "h"
@@ -291,6 +291,21 @@
           "name": "alpha",
           "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
           "href": "https://www.w3.org/TR/css-color-5/#valdef-oklch-alpha",
+          "type": "value",
+          "value": "alpha"
+        }
+      ]
+    },
+    {
+      "name": "alpha()",
+      "value": "alpha([from <color>] [ / [<alpha-value> | none] ]? )",
+      "href": "https://www.w3.org/TR/css-color-5/#funcdef-alpha",
+      "type": "function",
+      "values": [
+        {
+          "name": "alpha",
+          "prose": "alpha is a <number> that corresponds to the origin color’s alpha transparency. 1.0 is equivalent to 100%.",
+          "href": "https://www.w3.org/TR/css-color-5/#valdef-alpha-alpha",
           "type": "value",
           "value": "alpha"
         }
@@ -381,13 +396,7 @@
       "name": "<xyz-params>",
       "href": "https://www.w3.org/TR/css-color-5/#typedef-xyz-params",
       "type": "type",
-      "value": "<xyz> [ <number> | <percentage> | none ]{3}"
-    },
-    {
-      "name": "<xyz>",
-      "href": "https://www.w3.org/TR/css-color-5/#typedef-xyz",
-      "type": "type",
-      "value": "xyz | xyz-d50 | xyz-d65"
+      "value": "<xyz-space> [ <number> | <percentage> | none ]{3}"
     },
     {
       "name": "device-cmyk()",
@@ -435,7 +444,7 @@
       "name": "<rectangular-color-space>",
       "href": "https://www.w3.org/TR/css-color-5/#typedef-rectangular-color-space",
       "type": "type",
-      "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | xyz | xyz-d50 | xyz-d65"
+      "value": "srgb | srgb-linear | display-p3 | display-p3-linear | a98-rgb | prophoto-rgb | rec2020 | lab | oklab | <xyz-space>"
     },
     {
       "name": "<polar-color-space>",

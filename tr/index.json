@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-01-13T01:46:55.290Z",
+  "date": "2026-01-14T01:47:16.410Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -36,6 +36,7 @@
       "css-link-params-1",
       "css-navigation-1",
       "css-page-4",
+      "css-shadow-1",
       "css-shapes-2",
       "css-size-adjust-1",
       "css-variables-2",
@@ -243,6 +244,7 @@
       "overscroll-scrollend-events",
       "page-lifecycle",
       "paymentlink",
+      "permission-elements",
       "performance-measure-memory",
       "periodic-background-sync",
       "permissions-request",
@@ -427,12 +429,10 @@
       "css-rhythm-1",
       "css-round-display-1",
       "css-ruby-1",
-      "css-scoping-1",
       "css-scroll-anchoring-1",
       "css-scroll-snap-1",
       "css-scroll-snap-2",
       "css-scrollbars-1",
-      "css-shadow-parts-1",
       "css-shapes-1",
       "css-sizing-3",
       "css-sizing-4",
@@ -750,10 +750,10 @@
     ]
   },
   "stats": {
-    "crawled": 404,
+    "crawled": 402,
     "errors": 0
   },
-  "crawler": "reffy-20.0.7",
+  "crawler": "reffy-20.0.8",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -799,7 +799,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "13 January 2026",
+      "date": "14 January 2026",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -4091,11 +4091,11 @@
       ],
       "crawled": "https://www.w3.org/TR/css-color-5/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 17 Mar 2025 13:59:09 GMT"
+        "lastModified": "Wed, 07 Jan 2026 17:16:30 GMT"
       },
       "generator": "bikeshed",
-      "date": "18 March 2025",
-      "revision": "2e37f85c673df18fb79998c96124aab9d87e321f",
+      "date": "13 January 2026",
+      "revision": "0a3be9af035ee3f451e78fdc377b9a8f16d1d052",
       "algorithms": "algorithms/css-color-5.json",
       "links": "links/css-color-5.json",
       "refs": "refs/css-color-5.json",
@@ -7862,71 +7862,6 @@
       "cddl": []
     },
     {
-      "url": "https://www.w3.org/TR/css-scoping-1/",
-      "seriesComposition": "full",
-      "shortname": "css-scoping-1",
-      "series": {
-        "shortname": "css-scoping",
-        "currentSpecification": "css-scoping-1",
-        "title": "CSS Scoping",
-        "shortTitle": "CSS Scoping",
-        "releaseUrl": "https://www.w3.org/TR/css-scoping/",
-        "nightlyUrl": "https://drafts.csswg.org/css-scoping/"
-      },
-      "seriesVersion": "1",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/groups/wg/css/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/css-scoping-1/",
-        "status": "First Public Working Draft",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-scoping-1/",
-        "status": "Editor's Draft",
-        "alternateUrls": [
-          "https://w3c.github.io/csswg-drafts/css-scoping-1/",
-          "https://w3c.github.io/csswg-drafts/css-scoping/"
-        ],
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-scoping-1/Overview.bs",
-        "filename": "index.html"
-      },
-      "title": "CSS Scoping Module Level 1",
-      "source": "w3c",
-      "shortTitle": "CSS Scoping 1",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "css/css-scoping"
-        ]
-      },
-      "versions": [
-        "https://www.w3.org/TR/css-scoping-1/",
-        "https://drafts.csswg.org/css-scoping-1/"
-      ],
-      "crawled": "https://www.w3.org/TR/css-scoping-1/",
-      "crawlCacheInfo": {
-        "lastModified": "Mon, 02 Oct 2017 11:17:13 GMT"
-      },
-      "date": "3 April 2014",
-      "links": "links/css-scoping-1.json",
-      "css": "css/css-scoping.json",
-      "dfns": "dfns/css-scoping-1.json",
-      "headings": "headings/css-scoping-1.json",
-      "ids": "ids/css-scoping-1.json",
-      "cddl": []
-    },
-    {
       "url": "https://www.w3.org/TR/css-scroll-anchoring-1/",
       "seriesComposition": "full",
       "shortname": "css-scroll-anchoring-1",
@@ -8201,76 +8136,6 @@
       "dfns": "dfns/css-scrollbars-1.json",
       "headings": "headings/css-scrollbars-1.json",
       "ids": "ids/css-scrollbars-1.json",
-      "cddl": []
-    },
-    {
-      "url": "https://www.w3.org/TR/css-shadow-parts-1/",
-      "seriesComposition": "full",
-      "shortname": "css-shadow-parts-1",
-      "series": {
-        "shortname": "css-shadow-parts",
-        "currentSpecification": "css-shadow-parts-1",
-        "title": "CSS Shadow Parts",
-        "shortTitle": "CSS Shadow Parts",
-        "releaseUrl": "https://www.w3.org/TR/css-shadow-parts/",
-        "nightlyUrl": "https://drafts.csswg.org/css-shadow-parts/"
-      },
-      "seriesVersion": "1",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/groups/wg/css/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/css-shadow-parts-1/",
-        "status": "Working Draft",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-shadow-parts-1/",
-        "status": "Editor's Draft",
-        "alternateUrls": [
-          "https://w3c.github.io/csswg-drafts/css-shadow-parts-1/",
-          "https://w3c.github.io/csswg-drafts/css-shadow-parts/"
-        ],
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-shadow-parts-1/Overview.bs",
-        "filename": "index.html"
-      },
-      "title": "CSS Shadow Parts Module Level 1",
-      "source": "w3c",
-      "shortTitle": "CSS Shadow Parts 1",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "css/css-shadow-parts"
-        ]
-      },
-      "versions": [
-        "https://www.w3.org/TR/css-shadow-parts-1/",
-        "https://drafts.csswg.org/css-shadow-parts-1/"
-      ],
-      "crawled": "https://www.w3.org/TR/css-shadow-parts-1/",
-      "crawlCacheInfo": {
-        "lastModified": "Fri, 12 Dec 2025 18:30:13 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "16 December 2025",
-      "revision": "a47c08b9ed970bd62a334b77bc974fd9b67951f1",
-      "algorithms": "algorithms/css-shadow-parts-1.json",
-      "links": "links/css-shadow-parts-1.json",
-      "refs": "refs/css-shadow-parts-1.json",
-      "idl": "idl/css-shadow-parts.idl",
-      "css": "css/css-shadow-parts.json",
-      "dfns": "dfns/css-shadow-parts-1.json",
-      "headings": "headings/css-shadow-parts-1.json",
-      "ids": "ids/css-shadow-parts-1.json",
       "cddl": []
     },
     {
@@ -9203,7 +9068,7 @@
       },
       "title": "CSS Transitions Module Level 1",
       "source": "w3c",
-      "shortTitle": "CSS Transitions",
+      "shortTitle": "CSS Transitions 1",
       "categories": [
         "browser"
       ],
@@ -10911,11 +10776,11 @@
       ],
       "crawled": "https://www.w3.org/TR/did-resolution/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Jan 2026 16:47:10 GMT"
+        "lastModified": "Tue, 13 Jan 2026 16:25:13 GMT"
       },
       "generator": "respec",
-      "date": "12 January 2026",
-      "revision": "fd50db4a6a8852c43019c69e1463b3034ade5d1b",
+      "date": "13 January 2026",
+      "revision": "dfc9019b3c5fc4ec18c78b3d7ce1144ce77c1c6c",
       "algorithms": "algorithms/did-resolution.json",
       "links": "links/did-resolution.json",
       "refs": "refs/did-resolution.json",
@@ -10972,11 +10837,11 @@
       ],
       "crawled": "https://www.w3.org/TR/digital-credentials/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 13 Jan 2026 00:37:57 GMT"
+        "lastModified": "Tue, 13 Jan 2026 21:52:16 GMT"
       },
       "generator": "respec",
       "date": "13 January 2026",
-      "revision": "625c5b968ceb1c0b07b98a05626b9834c63606ae",
+      "revision": "088018b0b774bf01746381d9029cc82272d1855a",
       "algorithms": "algorithms/digital-credentials.json",
       "links": "links/digital-credentials.json",
       "refs": "refs/digital-credentials.json",
@@ -11845,10 +11710,10 @@
       ],
       "crawled": "https://www.w3.org/TR/epub-33/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 18 Mar 2025 07:14:36 GMT"
+        "lastModified": "Fri, 09 Jan 2026 04:39:41 GMT"
       },
       "generator": "respec",
-      "date": "27 March 2025",
+      "date": "13 January 2026",
       "algorithms": "algorithms/epub-33.json",
       "links": "links/epub-33.json",
       "refs": "refs/epub-33.json",
@@ -16077,7 +15942,7 @@
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/network-error-logging",
-        "sourcePath": "index.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Network Error Logging",
@@ -19370,11 +19235,11 @@
       ],
       "crawled": "https://www.w3.org/TR/shacl12-core/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 12 Jan 2026 22:36:28 GMT"
+        "lastModified": "Tue, 13 Jan 2026 23:37:03 GMT"
       },
       "generator": "respec",
-      "date": "12 January 2026",
-      "revision": "b295e96170371614fb8eb65e73e99d373b85b33c",
+      "date": "13 January 2026",
+      "revision": "19842961d8fc71a0cf6951c6aa0c097fc755fd41",
       "algorithms": "algorithms/shacl12-core.json",
       "links": "links/shacl12-core.json",
       "refs": "refs/shacl12-core.json",
@@ -23341,7 +23206,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/webauthn-3/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -23370,11 +23235,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webauthn-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 27 Jan 2025 13:16:36 GMT"
+        "lastModified": "Mon, 12 Jan 2026 14:22:47 GMT"
       },
       "generator": "bikeshed",
-      "date": "27 January 2025",
-      "revision": "34d93ac0391ccb9ef37f9d4c0af399171153fe23",
+      "date": "13 January 2026",
+      "revision": "3cf21432001065489e5e6ad904467b3c44741f04",
       "algorithms": "algorithms/webauthn-3.json",
       "links": "links/webauthn-3.json",
       "refs": "refs/webauthn-3.json",
@@ -25862,11 +25727,11 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 10 Jan 2026 20:10:34 GMT"
+        "lastModified": "Tue, 13 Jan 2026 15:01:30 GMT"
       },
       "generator": "bikeshed",
-      "date": "10 January 2026",
-      "revision": "5d98aa662a0048fa976dbb591bc3f04af5db9205",
+      "date": "13 January 2026",
+      "revision": "a9a4b848915659a771fa8e6c71be979db1993a24",
       "algorithms": "algorithms/WGSL.json",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",

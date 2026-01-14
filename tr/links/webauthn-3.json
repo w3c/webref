@@ -82,7 +82,6 @@
       "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-webauthn/": {},
       "https://pages.nist.gov/800-63-3/sp800-63-3.html": {},
-      "https://patcg-individual-drafts.github.io/private-aggregation-api/": {},
       "https://refeds.org/eduperson": {},
       "https://source.android.com/security/keystore/attestation": {},
       "https://tc39.es/ecma262/": {
@@ -108,6 +107,7 @@
         ]
       },
       "https://www.iana.org/assignments/webauthn/": {},
+      "https://www.iana.org/assignments/well-known-uris/": {},
       "https://www.rfc-editor.org/rfc/rfc3279": {},
       "https://www.rfc-editor.org/rfc/rfc3986": {},
       "https://www.rfc-editor.org/rfc/rfc4648": {},
@@ -132,6 +132,7 @@
       "https://www.rfc-editor.org/rfc/rfc8949": {},
       "https://www.rfc-editor.org/rfc/rfc9052": {},
       "https://www.rfc-editor.org/rfc/rfc9053": {},
+      "https://www.rfc-editor.org/rfc/rfc9864": {},
       "https://www.trustedcomputinggroup.org/wp-content/uploads/TPM-Rev-2.0-Part-1-Architecture-01.38.pdf": {},
       "https://www.trustedcomputinggroup.org/wp-content/uploads/TPM-Rev-2.0-Part-2-Structures-01.38.pdf": {},
       "https://www.trustedcomputinggroup.org/wp-content/uploads/TPM-Rev-2.0-Part-3-Commands-01.38.pdf": {},
@@ -140,21 +141,21 @@
           "errors"
         ]
       },
-      "https://www.w3.org/2004/01/pp-impl/87227/status": {},
-      "https://www.w3.org/Consortium/Patent-Policy/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/2021/REC-webauthn-2-20210408/": {
         "anchors": [
-          "clientdatajson-serialization"
+          "clientdatajson-serialization",
+          "sctn-strings-langdir"
+        ]
+      },
+      "https://www.w3.org/TR/2025/WD-webauthn-3-20250127/": {
+        "anchors": [
+          "sctn-isUserVerifyingPlatformAuthenticatorAvailable",
+          "sctn-getClientCapabilities",
+          "sctn-sample-registration"
         ]
       },
       "https://www.w3.org/TR/CSP2/": {},
-      "https://www.w3.org/TR/CSS21/": {},
       "https://www.w3.org/TR/WCAG21/": {
         "anchors": [
           "enough-time"
@@ -174,14 +175,22 @@
         ]
       },
       "https://www.w3.org/TR/webauthn-1/": {},
-      "https://www.w3.org/TR/webauthn-3/": {},
       "https://www.w3.org/TR/webdriver1/": {},
       "https://www.w3.org/TR/webdriver2/": {},
       "https://www.w3.org/Webauthn/": {},
-      "https://www.w3.org/groups/wg/webauthn": {},
-      "https://www.w3.org/policies/process/20231103/": {
+      "https://www.w3.org/groups/wg/webauthn/": {},
+      "https://www.w3.org/groups/wg/webauthn/ipr": {},
+      "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
-          "recs-and-notes"
+          "sec-Requirements",
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20250818/": {
+        "anchors": [
+          "recs-and-notes",
+          "dfn-wide-review"
         ]
       }
     },
@@ -245,11 +254,6 @@
           "same-site"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-        "anchors": [
-          "browsing-context"
-        ]
-      },
       "https://html.spec.whatwg.org/multipage/dom.html": {
         "anchors": [
           "concept-document-permissions-policy"
@@ -287,13 +291,7 @@
       "https://html.spec.whatwg.org/multipage/interaction.html": {
         "anchors": [
           "transient-activation",
-          "consume-user-activation",
-          "visibility-state"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-        "anchors": [
-          "window"
+          "consume-user-activation"
         ]
       },
       "https://html.spec.whatwg.org/multipage/origin.html": {
@@ -350,11 +348,6 @@
         "anchors": [
           "af",
           "sf"
-        ]
-      },
-      "https://patcg-individual-drafts.github.io/private-aggregation-api/": {
-        "anchors": [
-          "remote-end-steps"
         ]
       },
       "https://tc39.github.io/ecma262/": {
@@ -485,11 +478,6 @@
           "syntaxerror"
         ]
       },
-      "https://www.w3.org/TR/CSS21/ui.html": {
-        "anchors": [
-          "x8"
-        ]
-      },
       "https://www.w3.org/TR/credential-management-1/": {
         "anchors": [
           "dom-credentialscontainer-create",
@@ -522,8 +510,7 @@
       },
       "https://www.w3.org/TR/i18n-glossary/": {
         "anchors": [
-          "dfn-grapheme-cluster",
-          "dfn-language-tag"
+          "dfn-grapheme-cluster"
         ]
       },
       "https://www.w3.org/TR/permissions-policy-1/": {
@@ -532,15 +519,11 @@
           "policy-controlled-feature-default-allowlist"
         ]
       },
-      "https://www.w3.org/TR/webauthn-3/": {
-        "anchors": [
-          "dom-publickeycredential-collectfromcredentialstore-slot"
-        ]
-      },
       "https://www.w3.org/TR/webdriver2/": {
         "anchors": [
           "dfn-extension-commands",
           "dfn-invalid-argument",
+          "dfn-remote-end-steps",
           "dfn-success"
         ]
       }
