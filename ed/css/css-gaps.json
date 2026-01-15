@@ -699,13 +699,13 @@
       "name": "<line-color-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-color-list",
       "type": "type",
-      "value": "[ <line-color-or-repeat> ]+"
+      "value": "<line-color-or-repeat>#"
     },
     {
       "name": "<auto-line-color-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-line-color-list",
       "type": "type",
-      "value": "[ <line-color-or-repeat> ]* <auto-repeat-line-color> [ <line-color-or-repeat> ]*"
+      "value": "[<line-color-or-repeat># , ]? <auto-repeat-line-color> [ , <line-color-or-repeat># ]?"
     },
     {
       "name": "<line-color-or-repeat>",
@@ -717,7 +717,7 @@
       "name": "<repeat-line-color>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-repeat-line-color",
       "type": "type",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <color> ]+ )",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <color> ]# )",
       "values": [
         {
           "name": "repeat()",
@@ -731,7 +731,7 @@
       "name": "<auto-repeat-line-color>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-repeat-line-color",
       "type": "type",
-      "value": "repeat( auto , [ <color> ]+ )",
+      "value": "repeat( auto , [ <color> ]# )",
       "values": [
         {
           "name": "repeat()",
@@ -745,13 +745,13 @@
       "name": "<line-style-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-style-list",
       "type": "type",
-      "value": "[ <line-style-or-repeat> ]+"
+      "value": "<line-style-or-repeat>#"
     },
     {
       "name": "<auto-line-style-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-line-style-list",
       "type": "type",
-      "value": "[ <line-style-or-repeat> ]* <auto-repeat-line-style> [ <line-style-or-repeat> ]*"
+      "value": "[<line-style-or-repeat># , ]? <auto-repeat-line-style> [ , <line-style-or-repeat># ]?"
     },
     {
       "name": "<line-style-or-repeat>",
@@ -763,7 +763,7 @@
       "name": "<repeat-line-style>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-repeat-line-style",
       "type": "type",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <line-style> ]+ )",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-style> ]# )",
       "values": [
         {
           "name": "repeat()",
@@ -777,7 +777,7 @@
       "name": "<auto-repeat-line-style>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-repeat-line-style",
       "type": "type",
-      "value": "repeat( auto , [ <line-style> ]+ )",
+      "value": "repeat( auto , [ <line-style> ]# )",
       "values": [
         {
           "name": "repeat()",
@@ -791,13 +791,13 @@
       "name": "<line-width-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-width-list",
       "type": "type",
-      "value": "[ <line-width-or-repeat> ]+"
+      "value": "<line-width-or-repeat>#"
     },
     {
       "name": "<auto-line-width-list>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-line-width-list",
       "type": "type",
-      "value": "[ <line-width-or-repeat> ]* <auto-repeat-line-width> [ <line-width-or-repeat> ]*"
+      "value": "[<line-width-or-repeat># , ]? <auto-repeat-line-width> [ , <line-width-or-repeat># ]?"
     },
     {
       "name": "<line-width-or-repeat>",
@@ -809,7 +809,7 @@
       "name": "<repeat-line-width>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-repeat-line-width",
       "type": "type",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <line-width> ]+ )",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-width> ]# )",
       "values": [
         {
           "name": "repeat()",
@@ -823,7 +823,7 @@
       "name": "<auto-repeat-line-width>",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-repeat-line-width",
       "type": "type",
-      "value": "repeat( auto , [ <line-width> ]+ )",
+      "value": "repeat( auto , [ <line-width> ]# )",
       "values": [
         {
           "name": "repeat()",

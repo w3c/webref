@@ -148,6 +148,32 @@
           "html": "When both <var>from</var> and <var>to</var> contain auto-repeaters, and the length of their segments match as described above,\n\t\t\t\t\tapply <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/web-animations-1/#repeatable-list\" id=\"ref-for-repeatable-list①\">repeatable list</a> interpolation to the lists of values in each <var>auto values</var>."
         }
       ]
+    },
+    {
+      "name": "repeater aligned",
+      "href": "https://drafts.csswg.org/css-gaps-1/#repeater-aligned",
+      "html": "The longhands are <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"repeater-aligned\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">repeater aligned</dfn>\n\tif and only if all of the following are true:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "<var>W</var>, <var>S</var> and <var>C</var> have the same number of items."
+        },
+        {
+          "html": "For each item index <var>i</var>, <var>W</var>[<var>i</var>], <var>S</var>[<var>i</var>] and <var>C</var>[<var>i</var>] all have the same shape:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "they are either all non-repeat values, all <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#integer-repeater\" id=\"ref-for-integer-repeater③\">integer repeaters</a>, or all <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#auto-repeater\" id=\"ref-for-auto-repeater①②\">auto repeaters</a>."
+            },
+            {
+              "html": "If they are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#integer-repeater\" id=\"ref-for-integer-repeater④\">integer repeaters</a>, the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#integer-value\" id=\"ref-for-integer-value⑥\">&lt;integer&gt;</a> values are equal."
+            },
+            {
+              "html": "Each <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat\" id=\"ref-for-funcdef-repeat-line-color-repeat②\">repeat()</a> notation contains the same number of values."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
