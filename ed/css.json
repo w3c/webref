@@ -19868,7 +19868,7 @@
     {
       "name": "supports-feature",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-feature",
-      "syntax": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-at-rule-fn> | <supports-decl>",
+      "syntax": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-at-rule-fn> | <supports-named-feature-fn> | <supports-decl>",
       "extended": []
     },
     {
@@ -19887,6 +19887,12 @@
       "name": "supports-in-parens",
       "href": "https://drafts.csswg.org/css-conditional-3/#typedef-supports-in-parens",
       "syntax": "( <supports-condition> ) | <supports-feature> | <general-enclosed>",
+      "extended": []
+    },
+    {
+      "name": "supports-named-feature-fn",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-named-feature-fn",
+      "syntax": "named-feature( <ident> )",
       "extended": []
     },
     {

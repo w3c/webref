@@ -43,6 +43,7 @@
       "http://wpt.live/css/css-conditional/container-queries/container-name-tree-scoped.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-nested.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-parsing.html": {},
+      "http://wpt.live/css/css-conditional/container-queries/container-rule-cssom.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-selection-unknown-features.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-selection.html": {},
       "http://wpt.live/css/css-conditional/container-queries/container-size-invalidation-after-load.html": {},
@@ -293,6 +294,7 @@
       "http://wpt.live/css/css-conditional/js/supports-at-rule.html": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://drafts.csswg.org/css-extensions-1/": {},
+      "https://drafts.csswg.org/css-shadow-1/": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
       "https://github.com/w3c/csswg-drafts/issues/10433": {},
       "https://github.com/w3c/csswg-drafts/issues/10784": {
@@ -349,6 +351,7 @@
           "issuecomment-1789850349"
         ]
       },
+      "https://github.com/w3c/csswg-drafts/issues/9875": {},
       "https://github.com/w3c/csswg-drafts/pull/10544": {},
       "https://github.com/w3c/csswg-drafts/pull/10874": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/at-supports-selector-details-content-before.html": {},
@@ -389,6 +392,7 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-name-tree-scoped.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-nested.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-parsing.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-rule-cssom.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-selection-unknown-features.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-selection.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-conditional/container-queries/container-size-invalidation-after-load.html": {},
@@ -685,6 +689,7 @@
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-name-tree-scoped.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-nested.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-parsing.html": {},
+      "https://wpt.fyi/results/css/css-conditional/container-queries/container-rule-cssom.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-selection-unknown-features.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-selection.html": {},
       "https://wpt.fyi/results/css/css-conditional/container-queries/container-size-invalidation-after-load.html": {},
@@ -1000,7 +1005,6 @@
       },
       "https://www.w3.org/TR/css-scroll-snap-1/": {},
       "https://www.w3.org/TR/css-scroll-snap-2/": {},
-      "https://www.w3.org/TR/css-shadow-parts-1/": {},
       "https://www.w3.org/TR/css-sizing-3/": {},
       "https://www.w3.org/TR/css-syntax-3/": {},
       "https://www.w3.org/TR/css-transitions-1/": {},
@@ -1071,6 +1075,14 @@
       "https://drafts.csswg.org/css-scroll-snap-1/": {
         "anchors": [
           "relative-scroll"
+        ]
+      },
+      "https://drafts.csswg.org/css-shadow-1/": {
+        "anchors": [
+          "flat-tree",
+          "selectordef-part",
+          "selectordef-slotted",
+          "css-tree-scoped-name"
         ]
       },
       "https://drafts.csswg.org/css-syntax-3/": {
@@ -1201,11 +1213,6 @@
           "eventdef-snapevent-scrollsnapchanging"
         ]
       },
-      "https://www.w3.org/TR/css-shadow-parts-1/": {
-        "anchors": [
-          "selectordef-part"
-        ]
-      },
       "https://www.w3.org/TR/css-sizing-3/": {
         "anchors": [
           "width",
@@ -1231,6 +1238,7 @@
       "https://www.w3.org/TR/css-values-4/": {
         "anchors": [
           "comb-one",
+          "typedef-ident",
           "string-value",
           "mult-opt",
           "comb-any",
