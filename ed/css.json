@@ -17218,19 +17218,19 @@
     {
       "name": "auto-line-color-list",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-line-color-list",
-      "syntax": "[ <line-color-or-repeat> ]* <auto-repeat-line-color> [ <line-color-or-repeat> ]*",
+      "syntax": "[<line-color-or-repeat># , ]? <auto-repeat-line-color> [ , <line-color-or-repeat># ]?",
       "extended": []
     },
     {
       "name": "auto-line-style-list",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-line-style-list",
-      "syntax": "[ <line-style-or-repeat> ]* <auto-repeat-line-style> [ <line-style-or-repeat> ]*",
+      "syntax": "[<line-style-or-repeat># , ]? <auto-repeat-line-style> [ , <line-style-or-repeat># ]?",
       "extended": []
     },
     {
       "name": "auto-line-width-list",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-line-width-list",
-      "syntax": "[ <line-width-or-repeat> ]* <auto-repeat-line-width> [ <line-width-or-repeat> ]*",
+      "syntax": "[<line-width-or-repeat># , ]? <auto-repeat-line-width> [ , <line-width-or-repeat># ]?",
       "extended": []
     },
     {
@@ -17242,19 +17242,19 @@
     {
       "name": "auto-repeat-line-color",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-repeat-line-color",
-      "syntax": "repeat( auto , [ <color> ]+ )",
+      "syntax": "repeat( auto , [ <color> ]# )",
       "extended": []
     },
     {
       "name": "auto-repeat-line-style",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-repeat-line-style",
-      "syntax": "repeat( auto , [ <line-style> ]+ )",
+      "syntax": "repeat( auto , [ <line-style> ]# )",
       "extended": []
     },
     {
       "name": "auto-repeat-line-width",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-auto-repeat-line-width",
-      "syntax": "repeat( auto , [ <line-width> ]+ )",
+      "syntax": "repeat( auto , [ <line-width> ]# )",
       "extended": []
     },
     {
@@ -18597,7 +18597,7 @@
     {
       "name": "line-color-list",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-color-list",
-      "syntax": "[ <line-color-or-repeat> ]+",
+      "syntax": "<line-color-or-repeat>#",
       "extended": []
     },
     {
@@ -18636,7 +18636,7 @@
     {
       "name": "line-style-list",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-style-list",
-      "syntax": "[ <line-style-or-repeat> ]+",
+      "syntax": "<line-style-or-repeat>#",
       "extended": []
     },
     {
@@ -18654,7 +18654,7 @@
     {
       "name": "line-width-list",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-line-width-list",
-      "syntax": "[ <line-width-or-repeat> ]+",
+      "syntax": "<line-width-or-repeat>#",
       "extended": []
     },
     {
@@ -19436,19 +19436,19 @@
     {
       "name": "repeat-line-color",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-repeat-line-color",
-      "syntax": "repeat( [ <integer [1,∞]> ] , [ <color> ]+ )",
+      "syntax": "repeat( [ <integer [1,∞]> ] , [ <color> ]# )",
       "extended": []
     },
     {
       "name": "repeat-line-style",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-repeat-line-style",
-      "syntax": "repeat( [ <integer [1,∞]> ] , [ <line-style> ]+ )",
+      "syntax": "repeat( [ <integer [1,∞]> ] , [ <line-style> ]# )",
       "extended": []
     },
     {
       "name": "repeat-line-width",
       "href": "https://drafts.csswg.org/css-gaps-1/#typedef-repeat-line-width",
-      "syntax": "repeat( [ <integer [1,∞]> ] , [ <line-width> ]+ )",
+      "syntax": "repeat( [ <integer [1,∞]> ] , [ <line-width> ]# )",
       "extended": []
     },
     {

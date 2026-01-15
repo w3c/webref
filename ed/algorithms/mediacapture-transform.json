@@ -9,7 +9,19 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessorinit-track\" id=\"ref-for-dom-mediastreamtrackprocessorinit-track\">track</a></code> is not a valid <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack⑧\">MediaStreamTrack</a></code>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessorinit-track\" id=\"ref-for-dom-mediastreamtrackprocessorinit-track\">track</a></code> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack⑨\">MediaStreamTrack</a></code> that is not valid,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
+        },
+        {
+          "html": "If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessorinit-track\" id=\"ref-for-dom-mediastreamtrackprocessorinit-track①\">track</a></code> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#mediastreamtrackhandle\" id=\"ref-for-mediastreamtrackhandle①\">MediaStreamTrackHandle</a></code>, run the following substeps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessorinit-track\" id=\"ref-for-dom-mediastreamtrackprocessorinit-track②\">track</a></code>.<code>[[transferable]]</code> is false, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
+            },
+            {
+              "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessorinit-track\" id=\"ref-for-dom-mediastreamtrackprocessorinit-track③\">track</a></code>.<code>[[track]]</code> is referencing a non valid <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack①⓪\">MediaStreamTrack</a></code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
+            }
+          ]
         },
         {
           "html": "<p>Let <var>maxBufferSize</var> be 1.</p>"
@@ -30,7 +42,7 @@
           "html": "<p>Let <var>processor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#mediastreamtrackprocessor\" id=\"ref-for-mediastreamtrackprocessor①①\">MediaStreamTrackProcessor</a></code> object.</p>"
         },
         {
-          "html": "<p>Set <var>processor</var>.<code>[[track]]</code> to <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessorinit-track\" id=\"ref-for-dom-mediastreamtrackprocessorinit-track①\">track</a></code>.</p>"
+          "html": "<p>Set <var>processor</var>.<code>[[track]]</code> to <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessorinit-track\" id=\"ref-for-dom-mediastreamtrackprocessorinit-track④\">track</a></code>.</p>"
         },
         {
           "html": "<p>Set <var>processor</var>.<code>[[maxBufferSize]]</code> to <var>maxBufferSize</var>.</p>"
@@ -52,7 +64,7 @@
     {
       "name": "MediaStreamTrackProcessor/readable",
       "href": "https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-readable",
-      "html": "Allows reading the frames delivered by the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack⑨\">MediaStreamTrack</a></code> stored\nin the <code>[[track]]</code> internal slot. This attribute is created the first time it is invoked\naccording to the following steps:",
+      "html": "Allows reading the frames delivered by the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack①①\">MediaStreamTrack</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#mediastreamtrackhandle\" id=\"ref-for-mediastreamtrackhandle②\">MediaStreamTrackHandle</a></code> stored\nin the <code>[[track]]</code> internal slot. This attribute is created the first time it is invoked\naccording to the following steps:",
       "rationale": "initialize",
       "steps": [
         {
@@ -76,7 +88,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> to run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/mediacapture-transform/#maybereadframe\" id=\"ref-for-maybereadframe\">maybeReadFrame</a> algorithm with <var>processor</var> as parameter.</p>"
         },
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a> undefined.</p>"
+          "html": "<p>Return  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\" id=\"ref-for-a-promise-resolved-with\">a promise resolved with</a> undefined.</p>"
         }
       ]
     },
@@ -130,7 +142,10 @@
           "html": "<p>If <var>processor</var>.<code>[[isClosed]]</code> is true, abort these steps.</p>"
         },
         {
-          "html": "<p>Disconnect <var>processor</var> from <var>processor</var>.<code>[[track]]</code>. The mechanism to do this is UA specific and the result is that <var>processor</var> is no longer a sink of <var>processor</var>.<code>[[track]]</code>.</p>"
+          "html": "<p>Disconnect <var>processor</var> from <var>processor</var>.<code>[[track]]</code>. The mechanism to do this is UA specific and the result is that <var>processor</var> is no longer a sink of <var>processor</var>.<code>[[track]]</code>, or the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack①②\">MediaStreamTrack</a></code> referenced by it.</p>"
+        },
+        {
+          "html": "<p>Set <var>processor</var>.<code>[[track]]</code> to null.</p>"
         },
         {
           "html": "<p><a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#readable-stream-default-controller-close\" id=\"ref-for-readable-stream-default-controller-close\">Close</a> <var>processor</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-readable\" id=\"ref-for-dom-mediastreamtrackprocessor-readable④\">readable</a></code>.<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-controller\" id=\"ref-for-readablestream-controller\">[[controller]]</a>.</p>"
@@ -170,6 +185,51 @@
       ]
     },
     {
+      "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#mediastreamtrackhandle\" id=\"ref-for-mediastreamtrackhandle④\">MediaStreamTrackHandle</a></code> has the following slots:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>handle</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#mediastreamtrackhandle\" id=\"ref-for-mediastreamtrackhandle⑤\">MediaStreamTrackHandle</a></code> object.</p>"
+        },
+        {
+          "html": "<p>Set <var>handle</var>.<code>[[transferable]]</code> to true.</p>"
+        },
+        {
+          "html": "<p>Set <var>handle</var>.<code>[[track]]</code> to an internal reference to <var>track</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>handle</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#mediastreamtrackhandle\" id=\"ref-for-mediastreamtrackhandle⑥\">MediaStreamTrackHandle</a></code> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#transfer-steps\" id=\"ref-for-transfer-steps\">transfer steps</a>, given <var>value</var> and <var>dataHolder</var>, are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>value</var>.<code>[[transferable]]</code> is false, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror\">DataCloneError</a></code> DOMException.</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>.<code>[[transferable]]</code> to false.</p>"
+        },
+        {
+          "html": "<p>Set <var>dataHolder</var>.<code>[[track]]</code> to <var>handle</var>.<code>[[track]]</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>value</var>.<code>[[track]]</code> to null.</p>"
+        }
+      ]
+    },
+    {
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#mediastreamtrackhandle\" id=\"ref-for-mediastreamtrackhandle⑦\">MediaStreamTrackHandle</a></code> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#transfer-receiving-steps\" id=\"ref-for-transfer-receiving-steps\">transfer-receiving steps</a>, given <var>dataHolder</var> and <var>handle</var>, are:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "<p>Set <var>handle</var>.<code>[[track]]</code> to <var>dataHolder</var>.<code>[[track]]</code>.</p>"
+        }
+      ]
+    },
+    {
       "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#writablestream\" id=\"ref-for-writablestream①\">WritableStream</a></code> accepts <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④\">VideoFrame</a></code> objects.\nWhen a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑤\">VideoFrame</a></code> is written to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-writable\" id=\"ref-for-dom-videotrackgenerator-writable②\">writable</a></code>,\nthe frame’s <code>close()</code> method is automatically invoked, so that its internal\nresources are no longer accessible from JavaScript.",
       "rationale": "let",
       "steps": [
@@ -177,7 +237,7 @@
           "html": "<p>Let <var>generator</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#videotrackgenerator\" id=\"ref-for-videotrackgenerator③\">VideoTrackGenerator</a></code> object.</p>"
         },
         {
-          "html": "<p>Let <var>track</var> be a newly <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/mediacapture-main/#dfn-create-a-mediastreamtrack\" id=\"ref-for-dfn-create-a-mediastreamtrack\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack①⑤\">MediaStreamTrack</a></code> with <var>source</var> set to <var>generator</var> and <var>tieSourceToContext</var> set to <code>false</code>.</p>"
+          "html": "<p>Let <var>track</var> be a newly <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/mediacapture-main/#dfn-create-a-mediastreamtrack\" id=\"ref-for-dfn-create-a-mediastreamtrack\">created</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack\" id=\"ref-for-dom-mediastreamtrack②④\">MediaStreamTrack</a></code> with <var>source</var> set to <var>generator</var> and <var>tieSourceToContext</var> set to <code>false</code>.</p>"
         },
         {
           "html": "<p>Initialize <var>generator</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-track\" id=\"ref-for-dom-videotrackgenerator-track④\">track</a></code> to <var>track</var>.</p>"
@@ -208,10 +268,10 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>frame</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥\">VideoFrame</a></code> object, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>frame</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe⑥\">VideoFrame</a></code> object, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code>.</p>"
         },
         {
-          "html": "<p>If the value of <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#detached\" id=\"ref-for-detached\">[[Detached]]</a></code> internal slot is true, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
+          "html": "<p>If the value of <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#detached\" id=\"ref-for-detached\">[[Detached]]</a></code> internal slot is true, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code>.</p>"
         },
         {
           "html": "If <var>generator</var>.<code>[[isMuted]]</code> is false, for each live track sourced from <var>generator</var>, named <var>track</var>, run the following steps:",
@@ -250,7 +310,7 @@
     {
       "name": "VideoTrackGenerator/muted",
       "href": "https://w3c.github.io/mediacapture-transform/#dom-videotrackgenerator-muted",
-      "html": "Mutes the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#videotrackgenerator\" id=\"ref-for-videotrackgenerator⑤\">VideoTrackGenerator</a></code>. The getter steps are to return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>.<code>[[isMuted]]</code>. The setter steps, given a value <var>newValue</var>, are as follows:",
+      "html": "Mutes the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#videotrackgenerator\" id=\"ref-for-videotrackgenerator⑤\">VideoTrackGenerator</a></code>. The getter steps are to return\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>.<code>[[isMuted]]</code>. The setter steps, given a value <var>newValue</var>, are as follows:",
       "rationale": "if",
       "steps": [
         {

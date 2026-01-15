@@ -6,7 +6,11 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {
+        "Window": [
+          "MediaStreamTrackHandle"
+        ],
         "DedicatedWorker": [
+          "MediaStreamTrackHandle",
           "MediaStreamTrackProcessor",
           "VideoTrackGenerator"
         ]
@@ -14,6 +18,63 @@
       "functions": {}
     },
     "idlNames": {
+      "MediaStreamTrackHandle": {
+        "fragment": "[Exposed=(Window,DedicatedWorker), Transferable]\ninterface MediaStreamTrackHandle {\n   constructor(MediaStreamTrack track);\n};",
+        "type": "interface",
+        "name": "MediaStreamTrackHandle",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "track",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "MediaStreamTrack"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackhandle-mediastreamtrackhandle"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Transferable",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://w3c.github.io/mediacapture-transform/#mediastreamtrackhandle"
+      },
       "MediaStreamTrackProcessor": {
         "fragment": "[Exposed=DedicatedWorker]\ninterface MediaStreamTrackProcessor {\n    constructor(MediaStreamTrackProcessorInit init);\n    readonly attribute ReadableStream readable;\n};",
         "type": "interface",
@@ -74,8 +135,40 @@
         "partial": false,
         "href": "https://w3c.github.io/mediacapture-transform/#mediastreamtrackprocessor"
       },
+      "MediaStreamTrackOrHandle": {
+        "fragment": "typedef (MediaStreamTrack or MediaStreamTrackHandle) MediaStreamTrackOrHandle;",
+        "type": "typedef",
+        "name": "MediaStreamTrackOrHandle",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaStreamTrack"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MediaStreamTrackHandle"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://w3c.github.io/mediacapture-transform/#typedefdef-mediastreamtrackorhandle"
+      },
       "MediaStreamTrackProcessorInit": {
-        "fragment": "dictionary MediaStreamTrackProcessorInit {\n  required MediaStreamTrack track;\n  [EnforceRange] unsigned short maxBufferSize;\n};",
+        "fragment": "dictionary MediaStreamTrackProcessorInit {\n  required MediaStreamTrackOrHandle track;\n  [EnforceRange] unsigned short maxBufferSize;\n};",
         "type": "dictionary",
         "name": "MediaStreamTrackProcessorInit",
         "inheritance": null,
@@ -90,7 +183,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MediaStreamTrack"
+              "idlType": "MediaStreamTrackOrHandle"
             },
             "default": null,
             "required": true,
@@ -203,18 +296,25 @@
     "idlExtendedNames": {},
     "globals": {},
     "exposed": {
+      "Window": [
+        "MediaStreamTrackHandle"
+      ],
       "DedicatedWorker": [
+        "MediaStreamTrackHandle",
         "MediaStreamTrackProcessor",
         "VideoTrackGenerator"
       ]
     },
     "dependencies": {
+      "MediaStreamTrackHandle": [
+        "MediaStreamTrack"
+      ],
       "MediaStreamTrackProcessor": [
         "MediaStreamTrackProcessorInit",
         "ReadableStream"
       ],
       "MediaStreamTrackProcessorInit": [
-        "MediaStreamTrack"
+        "MediaStreamTrackOrHandle"
       ],
       "VideoTrackGenerator": [
         "WritableStream",
@@ -222,8 +322,8 @@
       ]
     },
     "externalDependencies": [
-      "ReadableStream",
       "MediaStreamTrack",
+      "ReadableStream",
       "WritableStream"
     ],
     "hasObsoleteIdl": false
