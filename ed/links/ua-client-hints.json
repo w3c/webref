@@ -52,10 +52,13 @@
       "https://w3c.github.io/device-memory/": {},
       "https://w3c.github.io/fingerprinting-guidance/": {},
       "https://w3c.github.io/webappsec-permissions-policy/": {},
+      "https://w3c.github.io/webdriver-bidi/": {},
+      "https://w3c.github.io/webdriver/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://wicg.github.io/client-hints-infrastructure/": {},
       "https://wicg.github.io/savedata/": {},
       "https://www.rfc-editor.org/rfc/rfc3864": {},
+      "https://www.rfc-editor.org/rfc/rfc8610": {},
       "https://www.rfc-editor.org/rfc/rfc8942": {},
       "https://www.rfc-editor.org/rfc/rfc9651": {},
       "https://www.w3.org/community/about/agreements/cla/": {},
@@ -65,6 +68,12 @@
       "https://compat.spec.whatwg.org/": {
         "anchors": [
           "devicecompat"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "navigable",
+          "nav-top"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -89,6 +98,7 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
+          "environment-settings-object",
           "windoworworkerglobalscope",
           "concept-relevant-global",
           "queue-a-task"
@@ -118,7 +128,12 @@
           "list-is-empty",
           "stack-pop",
           "strip-leading-and-trailing-ascii-whitespace",
-          "list-contain"
+          "list-contain",
+          "struct",
+          "struct-item",
+          "map-exists",
+          "map-remove",
+          "map-set"
         ]
       },
       "https://tc39.es/ecma262/": {
@@ -152,6 +167,25 @@
           "policy-controlled-feature-default-allowlist"
         ]
       },
+      "https://w3c.github.io/webdriver-bidi/": {
+        "anchors": [
+          "user-context",
+          "get-related-navigables",
+          "associated-user-context",
+          "error",
+          "get-valid-top-level-traversables-by-ids",
+          "get-valid-user-contexts"
+        ]
+      },
+      "https://w3c.github.io/webdriver/": {
+        "anchors": [
+          "dfn-remote-end-steps",
+          "dfn-error-code",
+          "dfn-invalid-argument",
+          "dfn-try",
+          "dfn-success"
+        ]
+      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "idl-DOMString",
@@ -175,6 +209,11 @@
           "client-hints-token",
           "high-entropy-client-hint",
           "abstract-opdef-append-client-hints-to-request"
+        ]
+      },
+      "https://www.rfc-editor.org/rfc/rfc8610": {
+        "anchors": [
+          "appendix-D"
         ]
       }
     }

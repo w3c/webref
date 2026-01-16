@@ -1,0 +1,37 @@
+; GENERATED CONTENT - DO NOT EDIT
+; Content was automatically extracted by Reffy into webref
+; (https://github.com/w3c/webref)
+; Source: User-Agent Client Hints (https://wicg.github.io/ua-client-hints/)
+
+UserAgentClientHintsCommand = (
+  emulation.SetClientHintsOverrideCommand
+)
+
+emulation.SetClientHintsOverrideCommand = {
+    method: "emulation.setClientHintsOverride",
+    params: {
+        clientHints: emulation.ClientHintsMetadata / null,
+        ? contexts: [+text],
+        ? userContexts: [+text],
+    }
+}
+
+emulation.ClientHintsMetadata = {
+    ? brands: [* emulation.BrandVersion],
+    ? fullVersionList: [* emulation.BrandVersion],
+    ? platform: text,
+    ? platformVersion: text,
+    ? architecture: text,
+    ? model: text,
+    ? mobile: bool,
+    ? bitness: text,
+    ? wow64: bool,
+    ? formFactors: [* text];
+}
+
+emulation.BrandVersion = {
+    brand: text,
+    version: text
+}
+
+emulation.SetClientHintsOverrideResult = {}
