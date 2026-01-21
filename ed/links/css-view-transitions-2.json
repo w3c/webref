@@ -48,6 +48,7 @@
       "https://drafts.csswg.org/css-conditional-3/": {},
       "https://drafts.csswg.org/css-contain-2/": {},
       "https://drafts.csswg.org/css-display-4/": {},
+      "https://drafts.csswg.org/css-display/": {},
       "https://drafts.csswg.org/css-images-3/": {},
       "https://drafts.csswg.org/css-images-4/": {},
       "https://drafts.csswg.org/css-masking-1/": {},
@@ -181,7 +182,9 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "concept-document",
+          "document",
           "element",
+          "document-element",
           "concept-node-document",
           "concept-tree-root",
           "concept-tree",
@@ -190,8 +193,6 @@
           "concept-tree-parent",
           "concept-tree-sibling",
           "concept-tree-child",
-          "document-element",
-          "document",
           "concept-tree-inclusive-descendant",
           "concept-class",
           "concept-id",
@@ -268,20 +269,27 @@
       },
       "https://drafts.csswg.org/css-contain-2/": {
         "anchors": [
+          "layout-containment",
           "skips-its-contents",
           "propdef-contain",
-          "layout-containment",
           "element-contents"
+        ]
+      },
+      "https://drafts.csswg.org/css-display-3/": {
+        "anchors": [
+          "internal-ruby-box",
+          "atomic-inline",
+          "inline-level"
         ]
       },
       "https://drafts.csswg.org/css-display-4/": {
         "anchors": [
+          "root-element",
           "principal-box",
           "containing-block",
           "replaced-element",
           "initial-containing-block",
-          "propdef-visibility",
-          "root-element"
+          "propdef-visibility"
         ]
       },
       "https://drafts.csswg.org/css-images-3/": {
@@ -364,8 +372,8 @@
       },
       "https://drafts.csswg.org/css-values-4/": {
         "anchors": [
-          "comb-one",
           "identifier-value",
+          "comb-one",
           "mult-comma",
           "mult-one-plus",
           "mult-opt"
@@ -489,8 +497,8 @@
       "https://html.spec.whatwg.org/multipage/indices.html": {
         "anchors": [
           "event-pageswap",
-          "event-pagereveal",
-          "event-unhandledrejection"
+          "event-unhandledrejection",
+          "event-pagereveal"
         ]
       },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -512,6 +520,7 @@
         "anchors": [
           "navigateevent",
           "dom-navigateevent-signal",
+          "concept-document-window",
           "dom-navigationtype-traverse",
           "pageswapevent",
           "dom-pageswapevent-viewtransition",
@@ -520,8 +529,7 @@
           "navigationtype",
           "dom-navigationtype-push",
           "dom-navigationtype-replace",
-          "dom-navigationtype-reload",
-          "concept-document-window"
+          "dom-navigationtype-reload"
         ]
       },
       "https://html.spec.whatwg.org/multipage/scripting.html": {
@@ -537,9 +545,9 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
-          "rendering-opportunity",
           "concept-relevant-global",
           "concept-relevant-realm",
+          "rendering-opportunity",
           "queue-a-global-task",
           "dom-manipulation-task-source",
           "concept-task",
@@ -554,12 +562,12 @@
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "tuple",
-          "list",
-          "list-contain",
           "list-clone",
           "ordered-set",
           "ordered-map",
+          "tuple",
+          "list",
+          "list-contain",
           "struct",
           "struct-item",
           "list-iterate",
@@ -591,9 +599,6 @@
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "Exposed",
-          "SameObject",
-          "idl-frozen-array",
           "idl-promise",
           "idl-any",
           "idl-sequence",
@@ -603,10 +608,13 @@
           "invalidstateerror",
           "idl-DOMException",
           "aborterror",
+          "Exposed",
           "idl-undefined",
+          "SameObject",
           "a-new-promise",
           "mark-a-promise-as-handled",
           "getter-steps",
+          "idl-frozen-array",
           "idl-unrestricted-double",
           "resolve",
           "a-promise-resolved-with",

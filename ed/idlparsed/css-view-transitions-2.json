@@ -8,82 +8,13 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "CSSViewTransitionRule",
           "ViewTransition",
-          "ViewTransitionTypeSet"
+          "ViewTransitionTypeSet",
+          "CSSViewTransitionRule"
         ]
       }
     },
     "idlNames": {
-      "CSSViewTransitionRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSViewTransitionRule : CSSRule {\n  readonly attribute CSSOMString navigation;\n  [SameObject] readonly attribute FrozenArray<CSSOMString> types;\n};",
-        "type": "interface",
-        "name": "CSSViewTransitionRule",
-        "inheritance": "CSSRule",
-        "members": [
-          {
-            "type": "attribute",
-            "name": "navigation",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CSSOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true,
-            "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-cssviewtransitionrule-navigation"
-          },
-          {
-            "type": "attribute",
-            "name": "types",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "FrozenArray",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CSSOMString"
-                }
-              ]
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true,
-            "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-cssviewtransitionrule-types"
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://drafts.csswg.org/css-view-transitions-2/#cssviewtransitionrule"
-      },
       "ViewTransitionUpdateCallback": {
         "fragment": "callback ViewTransitionUpdateCallback = Promise<any> ();",
         "type": "callback",
@@ -395,6 +326,75 @@
         ],
         "partial": false,
         "href": "https://drafts.csswg.org/css-view-transitions-2/#viewtransitiontypeset"
+      },
+      "CSSViewTransitionRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSViewTransitionRule : CSSRule {\n  readonly attribute CSSOMString navigation;\n  [SameObject] readonly attribute FrozenArray<CSSOMString> types;\n};",
+        "type": "interface",
+        "name": "CSSViewTransitionRule",
+        "inheritance": "CSSRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "navigation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-cssviewtransitionrule-navigation"
+          },
+          {
+            "type": "attribute",
+            "name": "types",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSOMString"
+                }
+              ]
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-cssviewtransitionrule-types"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-view-transitions-2/#cssviewtransitionrule"
       }
     },
     "idlExtendedNames": {
@@ -562,16 +562,12 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "CSSViewTransitionRule",
         "ViewTransition",
-        "ViewTransitionTypeSet"
+        "ViewTransitionTypeSet",
+        "CSSViewTransitionRule"
       ]
     },
     "dependencies": {
-      "CSSViewTransitionRule": [
-        "CSSRule",
-        "CSSOMString"
-      ],
       "Document": [
         "ViewTransition",
         "ViewTransitionUpdateCallback",
@@ -589,13 +585,17 @@
         "ViewTransitionTypeSet",
         "Element"
       ],
-      "ViewTransitionTypeSet": []
+      "ViewTransitionTypeSet": [],
+      "CSSViewTransitionRule": [
+        "CSSRule",
+        "CSSOMString"
+      ]
     },
     "externalDependencies": [
-      "CSSRule",
-      "CSSOMString",
       "Document",
-      "Element"
+      "Element",
+      "CSSRule",
+      "CSSOMString"
     ],
     "hasObsoleteIdl": false
   }
