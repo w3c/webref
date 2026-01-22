@@ -28,8 +28,8 @@
       ]
     },
     {
-      "name": "item-tolerance",
-      "href": "https://www.w3.org/TR/css-grid-3/#propdef-item-tolerance",
+      "name": "flow-tolerance",
+      "href": "https://www.w3.org/TR/css-grid-3/#propdef-flow-tolerance",
       "value": "normal | <length-percentage> | infinite",
       "initial": "normal",
       "appliesTo": "grid lanes containers",
@@ -38,9 +38,32 @@
       "computedValue": "a computed <length-percentage> value",
       "canonicalOrder": "per grammar",
       "animationType": "as length",
+      "values": [
+        {
+          "name": "<length-percentage>",
+          "prose": "Specifies the tie threshold for the grid lanes container. Placement positions are considered to be equally good (“tied”) if they are within the specified distance from the shortest position.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-flow-tolerance-length-percentage",
+          "type": "value",
+          "value": "<length-percentage>"
+        },
+        {
+          "name": "normal",
+          "prose": "Resolves to a used value of 1em in grid lanes layout and a used value of 0 in all other layout modes.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-flow-tolerance-normal",
+          "type": "value",
+          "value": "normal"
+        },
+        {
+          "name": "infinite",
+          "prose": "Specifies an infinite tie threshold. This makes items distribute themselves strictly in order, without considering the length of the tracks at all.",
+          "href": "https://www.w3.org/TR/css-grid-3/#valdef-flow-tolerance-infinite",
+          "type": "value",
+          "value": "infinite"
+        }
+      ],
       "styleDeclaration": [
-        "item-tolerance",
-        "itemTolerance"
+        "flow-tolerance",
+        "flowTolerance"
       ]
     },
     {
@@ -311,7 +334,7 @@
     {
       "name": "item-flow",
       "href": "https://www.w3.org/TR/css-grid-3/#propdef-item-flow",
-      "value": "<'item-direction'> || <'item-wrap'> || <'item-pack'> || <'item-tolerance'>",
+      "value": "<'item-direction'> || <'item-wrap'> || <'item-pack'> || <'flow-tolerance'>",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -344,33 +367,6 @@
       "type": "value",
       "value": "normal",
       "for": "grid-auto-flow"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "<length-percentage>",
-      "prose": "Specifies the tie threshold for the grid lanes container. Placement positions are considered to be equally good (“tied”) if they are within the specified distance from the shortest position.",
-      "href": "https://www.w3.org/TR/css-grid-3/#valdef-item-slack-length-percentage",
-      "type": "value",
-      "value": "<length-percentage>",
-      "for": "item-slack"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "normal",
-      "prose": "Resolves to a used value of 1em in grid lanes layout and a used value of 0 in all other layout modes.",
-      "href": "https://www.w3.org/TR/css-grid-3/#valdef-item-slack-normal",
-      "type": "value",
-      "value": "normal",
-      "for": "item-slack"
-    },
-    {
-      "msg": "Dangling value",
-      "name": "infinite",
-      "prose": "Specifies an infinite tie threshold. This makes items distribute themselves strictly in order, without considering the length of the tracks at all.",
-      "href": "https://www.w3.org/TR/css-grid-3/#valdef-item-slack-infinite",
-      "type": "value",
-      "value": "infinite",
-      "for": "item-slack"
     }
   ]
 }
