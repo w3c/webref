@@ -22,7 +22,8 @@
           "XRCubeLayer",
           "XRSubImage",
           "XRWebGLSubImage",
-          "XRRenderState"
+          "XRRenderState",
+          "XRSession"
         ]
       }
     },
@@ -2718,6 +2719,50 @@
           ],
           "partial": true
         }
+      ],
+      "XRSession": [
+        {
+          "fragment": "[SecureContext, Exposed=Window] partial interface XRSession {\n  readonly attribute unsigned long maxRenderLayers;\n};",
+          "type": "interface",
+          "name": "XRSession",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "maxRenderLayers",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "unsigned long"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true,
+              "href": "https://immersive-web.github.io/layers/#dom-xrsession-maxrenderlayers"
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            },
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -2734,7 +2779,8 @@
         "XRWebGLBinding",
         "XRMediaBinding",
         "XRLayerEvent",
-        "XRRenderState"
+        "XRRenderState",
+        "XRSession"
       ]
     },
     "dependencies": {
@@ -2861,7 +2907,8 @@
       ],
       "XRRenderState": [
         "XRLayer"
-      ]
+      ],
+      "XRSession": []
     },
     "externalDependencies": [
       "XRLayer",

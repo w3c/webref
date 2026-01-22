@@ -85,3 +85,8 @@ partial interface XRSession {
   Promise<XRLightProbe> requestLightProbe(optional XRLightProbeInit options = {});
   readonly attribute XRReflectionFormat preferredReflectionFormat;
 };
+
+// Source: WebXR Layers API Level 1 (https://www.w3.org/TR/webxrlayers-1/)
+[SecureContext, Exposed=Window] partial interface XRSession {
+  readonly attribute unsigned long maxRenderLayers;
+};
