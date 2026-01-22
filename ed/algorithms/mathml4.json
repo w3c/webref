@@ -20,27 +20,6 @@
       ]
     },
     {
-      "html": "A simple algorithm by which a MathML renderer can perform the\n alignment specified in this section is given here. Since the alignment\n specification is deterministic (except for the definition of the left\n and right edges of a character), any correct MathML alignment\n algorithm will have the same behavior as this one. Each\n <code class=\"element\">mtable</code> column (alignment scope) can be treated\n independently; the algorithm given here applies to one\n <code class=\"element\">mtable</code> column, and takes into account the\n alignment elements and the <code class=\"attribute\">columnalign</code> attribute described\n under <code class=\"element\">mtable</code> (<a href=\"https://w3c.github.io/mathml/#presm_mtable\" class=\"sec-ref\"><bdi class=\"secno\">3.5.1 </bdi>Table or Matrix\n   <span><code class=\"defn starttag\">&lt;mtable&gt;</code></span></a>).\n In an RTL context, switch left and right edges in the algorithm.",
-      "rationale": "for",
-      "steps": [
-        {
-          "html": "A rendering is computed for the contents of each table cell\n    in the column, using zero width for all\n    <code class=\"element\">maligngroup</code> and <code class=\"element\">malignmark</code>\n    elements. The final rendering will be identical except for horizontal\n    shifts applied to each alignment group and/or table cell."
-        },
-        {
-          "html": "For each alignment group, the horizontal positions of the left\n    edge, alignment point (if specified by <code class=\"element\">malignmark</code>, otherwise the left edge),\n    and right edge are noted, allowing the width of\n    the group on each side of the alignment point (left and right) to be\n    determined. The sum of these two <q>side-widths</q>, i.e. the sum of the\n    widths to the left and right of the alignment point, will equal the\n    width of the alignment group."
-        },
-        {
-          "html": "Each column of alignment groups is\n    scanned. The <i class=\"var\">i</i>th scan covers the <i class=\"var\">i</i>th\n    alignment group in each table cell containing any alignment\n    groups. Table cells with no alignment groups, or with fewer than\n    <i class=\"var\">i</i> alignment groups, are ignored. Each scan computes two\n    maximums over the alignment groups scanned: the maximum width to the\n    left of the alignment point, and the maximum width to the right of the\n    alignment point, of any alignment group scanned."
-        },
-        {
-          "html": "The sum of all the maximum widths computed (two for each column of\n    alignment groups) gives one total width, which will be the width of\n    each table cell containing alignment groups. Call the maximum number\n    of alignment groups in one cell <i class=\"var\">n</i>; each such cell\n    is divided into 2<i class=\"var\">n</i> horizontally adjacent sections, called\n    L(<i class=\"var\">i</i>) and R(<i class=\"var\">i</i>) for <i class=\"var\">i</i> from 1 to\n    <i class=\"var\">n</i>, using the 2<i class=\"var\">n</i> maximum side-widths computed\n    above; for each <i class=\"var\">i</i>, the width of all sections called\n    L(<i class=\"var\">i</i>) is the maximum width of any cell's <i class=\"var\">i</i>th\n    alignment group to the left of its alignment point, and the width of\n    all sections called R(<i class=\"var\">i</i>) is the maximum width of any\n    cell's <i class=\"var\">i</i>th alignment group to the right of its alignment\n    point."
-        },
-        {
-          "html": "Each alignment group is then shifted horizontally as a block\n    to <span>a</span> unique position that places: in the section called L(<i class=\"var\">i</i>) that part\n    of the <i class=\"var\">i</i>th group to the left of its alignment point;\n    in the section called R(<i class=\"var\">i</i>) that part of the <i class=\"var\">i</i>th group\n    to the right of its alignment point. This results in the\n    alignment point of each <i class=\"var\">i</i>th group being on the boundary\n    between adjacent sections L(<i class=\"var\">i</i>) and R(<i class=\"var\">i</i>), so\n    that all alignment points of <i class=\"var\">i</i>th groups have the same\n    horizontal position."
-        }
-      ]
-    },
-    {
       "rationale": "if",
       "steps": [
         {
