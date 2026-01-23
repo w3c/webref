@@ -39,6 +39,36 @@
           ]
         },
         {
+          "html": "Determine whether the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#did-resolution-options\">DID resolution options</a></var>\n\t\t\t\tare supported by the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-28\">DID resolver</a> that implements this algorithm. If not, the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-29\">DID resolver</a>\n\t\t\t\t<em class=\"rfc2119\">MUST</em> return the following result:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "<b>didResolutionMetadata</b>: <var>error object</var> with type set to <a href=\"https://www.w3.org/TR/did-resolution/#FEATURE_NOT_SUPPORTED\">FEATURE_NOT_SUPPORTED</a>"
+            },
+            {
+              "html": "<b>didDocument</b>: <code>null</code>"
+            },
+            {
+              "html": "<b>didDocumentMetadata</b>: <code>«[ ]»</code>"
+            }
+          ]
+        },
+        {
+          "html": "Determine whether the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#did-resolution-options\">DID resolution options</a></var>\n\t\t\t\tare valid. If not, the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-30\">DID resolver</a> <em class=\"rfc2119\">MUST</em> return the following result:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "<b>didResolutionMetadata</b>: <var>error object</var> with type set to <a href=\"https://www.w3.org/TR/did-resolution/#INVALID_OPTIONS\">INVALID_OPTIONS</a>"
+            },
+            {
+              "html": "<b>didDocument</b>: <code>null</code>"
+            },
+            {
+              "html": "<b>didDocumentMetadata</b>: <code>«[ ]»</code>"
+            }
+          ]
+        },
+        {
           "html": "Obtain the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-57\">DID document</a> for the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-decentralized-identifiers\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decentralized-identifiers-36\">DID</a></var> by executing the\n\t\t\t<a href=\"https://www.w3.org/TR/did-core/#method-operations\">Read</a> operation, as defined by the <var>input <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-method-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-method-s-30\">DID method</a></var>:",
           "rationale": ".algorithm",
           "steps": [
@@ -112,6 +142,21 @@
               "html": "<b>didDocumentMetadata</b>: <code>«[ \"contentType\" → </code><var>output DID document media type</var><code>, ... ]»</code>"
             }
           ]
+        }
+      ]
+    },
+    {
+      "html": "If the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-31\">DID resolver</a> encounters any unexpected errors during the execution of the DID Resolution algorithm,\n\t\t\tit <em class=\"rfc2119\">MUST</em> return the following result:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<b>didResolutionMetadata</b>: <var>error object</var> with type set to <a href=\"https://www.w3.org/TR/did-resolution/#INTERNAL_ERROR\">INTERNAL_ERROR</a>"
+        },
+        {
+          "html": "<b>didDocument</b>: <code>null</code>"
+        },
+        {
+          "html": "<b>didDocumentMetadata</b>: <code>«[ ]»</code>"
         }
       ]
     },
@@ -213,7 +258,7 @@
                   ]
                 },
                 {
-                  "html": "Resolving a <a href=\"https://www.w3.org/TR/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-8\">service endpoint</a> — particularly one that is a DID — might\n\t\t\t\t\t\t\t\t\t\t\tresult in a <dfn id=\"dfn-resolution-cycle\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">resolution cycle</dfn>, which is a set of steps that result in\n\t\t\t\t\t\t\t\t\t\t\tan infinite loop. For example, a <a href=\"https://www.w3.org/TR/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-9\">service endpoint</a> might indirectly point\n\t\t\t\t\t\t\t\t\t\t\tback through a sequence of resolutions to a previously dereferenced identifier.\n\t\t\t\t\t\t\t\t\t\t\tA <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-29\">DID resolver</a> recursively resolving a <a href=\"https://www.w3.org/TR/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-10\">service endpoint</a> is advised\n\t\t\t\t\t\t\t\t\t\t\tto detect and handle such a cycle to prevent an infinite loop or resolution failure.\n\t\t\t\t\t\t\t\t\t\t\tFor further guidance, see Section <a href=\"https://www.w3.org/TR/did-resolution/#security-cycles-resolution\">Resolution Cycles</a>.",
+                  "html": "Resolving a <a href=\"https://www.w3.org/TR/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-8\">service endpoint</a> — particularly one that is a DID — might\n\t\t\t\t\t\t\t\t\t\t\tresult in a <dfn id=\"dfn-resolution-cycle\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">resolution cycle</dfn>, which is a set of steps that result in\n\t\t\t\t\t\t\t\t\t\t\tan infinite loop. For example, a <a href=\"https://www.w3.org/TR/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-9\">service endpoint</a> might indirectly point\n\t\t\t\t\t\t\t\t\t\t\tback through a sequence of resolutions to a previously dereferenced identifier.\n\t\t\t\t\t\t\t\t\t\t\tA <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-33\">DID resolver</a> recursively resolving a <a href=\"https://www.w3.org/TR/did-resolution/#dfn-service-endpoints\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-service-endpoints-10\">service endpoint</a> is advised\n\t\t\t\t\t\t\t\t\t\t\tto detect and handle such a cycle to prevent an infinite loop or resolution failure.\n\t\t\t\t\t\t\t\t\t\t\tFor further guidance, see Section <a href=\"https://www.w3.org/TR/did-resolution/#security-cycles-resolution\">Resolution Cycles</a>.",
                   "rationale": ".algorithm",
                   "steps": [
                     {
@@ -230,7 +275,7 @@
               ]
             },
             {
-              "html": "If the <b>accept</b> <var>input <a href=\"https://www.w3.org/TR/did-resolution/#did-url-dereferencing-options\">DID dereferencing option</a></var>\n\t\t\t\t\t\t\tis missing, or if its value is the Media Type of a <a href=\"https://www.w3.org/TR/did-resolution/#dfn-representations\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-representations-10\">representation</a> of a <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-67\">DID document</a>:",
+              "html": "If the <b>accept</b> <var>input <a href=\"https://www.w3.org/TR/did-resolution/#did-url-dereferencing-options\">DID dereferencing option</a></var>\n\t\t\t\t\t\t\tis missing, or if its value is the Media Type of a <a href=\"https://www.w3.org/TR/did-resolution/#dfn-representations\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-representations-9\">representation</a> of a <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-documents\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-documents-67\">DID document</a>:",
               "rationale": ".algorithm",
               "steps": [
                 {
@@ -372,14 +417,14 @@
       ]
     },
     {
-      "html": "Using this binding, the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-45\">DID resolution</a> function (see\n\t\t\t<a href=\"https://www.w3.org/TR/did-resolution/#resolving\" class=\"sec-ref\"><bdi class=\"secno\">4. </bdi>DID Resolution</a>) and/or <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-38\">DID URL dereferencing</a> function (see <a href=\"https://www.w3.org/TR/did-resolution/#dereferencing\" class=\"sec-ref\"><bdi class=\"secno\">5. </bdi>DID URL Dereferencing</a>)\n\t\t\tcan be executed as follows:",
+      "html": "Using this binding, the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-41\">DID resolution</a> function (see\n\t\t\t<a href=\"https://www.w3.org/TR/did-resolution/#resolving\" class=\"sec-ref\"><bdi class=\"secno\">4. </bdi>DID Resolution</a>) and/or <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-34\">DID URL dereferencing</a> function (see <a href=\"https://www.w3.org/TR/did-resolution/#dereferencing\" class=\"sec-ref\"><bdi class=\"secno\">5. </bdi>DID URL Dereferencing</a>)\n\t\t\tcan be executed as follows:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Initialize a <var>request HTTP(S) URL</var> with the <var><a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-75\">DID resolver</a> HTTP(S) endpoint</var>."
+          "html": "Initialize a <var>request HTTP(S) URL</var> with the <var><a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-79\">DID resolver</a> HTTP(S) endpoint</var>."
         },
         {
-          "html": "For the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-46\">DID resolution</a> function:",
+          "html": "For the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-42\">DID resolution</a> function:",
           "rationale": ".algorithm",
           "steps": [
             {
@@ -394,7 +439,7 @@
           ]
         },
         {
-          "html": "For the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-39\">DID URL dereferencing</a> function:",
+          "html": "For the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-35\">DID URL dereferencing</a> function:",
           "rationale": ".algorithm",
           "steps": [
             {
@@ -425,7 +470,7 @@
               ]
             },
             {
-              "html": "Execute an HTTP <code>GET</code> request on the <var>request HTTP(S) URL</var>. This invokes the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-47\">DID resolution</a> or\n                        <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-40\">DID URL dereferencing</a> function at the remote <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-76\">DID resolver</a>."
+              "html": "Execute an HTTP <code>GET</code> request on the <var>request HTTP(S) URL</var>. This invokes the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-43\">DID resolution</a> or\n                        <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-36\">DID URL dereferencing</a> function at the remote <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-80\">DID resolver</a>."
             }
           ]
         },
@@ -443,15 +488,15 @@
               ]
             },
             {
-              "html": "Execute an HTTP <code>POST</code> request on the <var>request HTTP(S) URL</var>. This invokes the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-48\">DID resolution</a> or\n                    <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-41\">DID URL dereferencing</a> function at the remote <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-77\">DID resolver</a>."
+              "html": "Execute an HTTP <code>POST</code> request on the <var>request HTTP(S) URL</var>. This invokes the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-44\">DID resolution</a> or\n                    <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-37\">DID URL dereferencing</a> function at the remote <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolver-s\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolver-s-81\">DID resolver</a>."
             }
           ]
         },
         {
-          "html": "If the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-49\">DID resolution</a> or <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-42\">DID URL dereferencing</a> function returns an <b>error</b> metadata property in the\n\t\t\t\t<b>didResolutionMetadata</b> or <b>dereferencingMetadata</b>,\n\t\t\t\tthen the HTTP response status code <em class=\"rfc2119\">MUST</em> correspond to the value of the <b>error</b> metadata property,\n\t\t\t\taccording to the following table:\n\t\t\t\t<table class=\"simple\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<th>\n\t\t\t\t\t\t\terror\n\t\t\t\t\t\t</th>\n\t\t\t\t\t\t<th>\n\t\t\t\t\t\t\tHTTP status code\n\t\t\t\t\t\t</th>\n\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>INVALID_DID</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>400</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>INVALID_DID_URL</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>400</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n          <tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>INVALID_OPTIONS</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>400</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>NOT_FOUND</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>404</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>REPRESENTATION_NOT_SUPPORTED</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>406</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n          <tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>INVALID_DID_DOCUMENT</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>METHOD_NOT_SUPPORTED</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>501</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n          <tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>INVALID_PUBLIC_KEY</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n          <tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>INVALID_PUBLIC_KEY_LENGTH</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n          <tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>INVALID_PUBLIC_KEY_TYPE</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n          <tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>UNSUPPORTED_PUBLIC_KEY_TYPE</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>501</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>INTERNAL_ERROR</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t(any other value)\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>"
+          "html": "If the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-45\">DID resolution</a> or <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-38\">DID URL dereferencing</a> function returns an <b>error</b> metadata property in the\n\t\t\t\t<b>didResolutionMetadata</b> or <b>dereferencingMetadata</b>,\n\t\t\t\tthen the HTTP response status code <em class=\"rfc2119\">MUST</em> correspond to the value of the <b>error</b> metadata property,\n\t\t\t\taccording to the following table:\n\t\t\t\t<table class=\"simple\">\n\t\t\t\t\t<thead>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<th>\n\t\t\t\t\t\t\terror\n\t\t\t\t\t\t</th>\n\t\t\t\t\t\t<th>\n\t\t\t\t\t\t\tHTTP status code\n\t\t\t\t\t\t</th>\n\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>INVALID_DID</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>400</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>INVALID_DID_URL</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>400</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n          <tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>INVALID_OPTIONS</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>400</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>NOT_FOUND</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>404</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>REPRESENTATION_NOT_SUPPORTED</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>406</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n          <tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>INVALID_DID_DOCUMENT</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>METHOD_NOT_SUPPORTED</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>501</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>FEATURE_NOT_SUPPORTED</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>501</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>INTERNAL_ERROR</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t(any other value)\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<code>500</code>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>"
         },
         {
-          "html": "If the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-50\">DID resolution</a> or <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-43\">DID URL dereferencing</a> function returns a <b>deactivated</b> metadata property with\n\t\t\t\tthe value <code>true</code> in the <b>didDocumentMetadata</b> or <b>contentMetadata</b>:",
+          "html": "If the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-46\">DID resolution</a> or <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-39\">DID URL dereferencing</a> function returns a <b>deactivated</b> metadata property with\n\t\t\t\tthe value <code>true</code> in the <b>didDocumentMetadata</b> or <b>contentMetadata</b>:",
           "rationale": ".algorithm",
           "steps": [
             {
@@ -460,7 +505,7 @@
           ]
         },
         {
-          "html": "For the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-51\">DID resolution</a> function:",
+          "html": "For the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-47\">DID resolution</a> function:",
           "rationale": ".algorithm",
           "steps": [
             {
@@ -468,7 +513,7 @@
               "rationale": ".algorithm",
               "steps": [
                 {
-                  "html": "The <var>HTTP body</var> <em class=\"rfc2119\">MUST</em> contain a <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution-result\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-result-2\">DID resolution result</a> (see <a href=\"https://www.w3.org/TR/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">8. </bdi>DID Resolution Result</a>) that\n\t\t\t\t\t\t\t\tis the result of the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-52\">DID resolution</a> function."
+                  "html": "The <var>HTTP body</var> <em class=\"rfc2119\">MUST</em> contain a <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution-result\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-result-2\">DID resolution result</a> (see <a href=\"https://www.w3.org/TR/did-resolution/#did-resolution-result\" class=\"sec-ref\"><bdi class=\"secno\">8. </bdi>DID Resolution Result</a>) that\n\t\t\t\t\t\t\t\tis the result of the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-48\">DID resolution</a> function."
                 }
               ]
             },
@@ -483,14 +528,14 @@
                   "html": "The HTTP response <em class=\"rfc2119\">MUST</em> contain a <code>Content-Type</code> <var>HTTP response header</var>. Its value <em class=\"rfc2119\">MUST</em> be the value of the\n\t\t\t\t\t\t\t\t<b>contentType</b> metadata property in the <b>didResolutionMetadata</b> (see <a href=\"https://www.w3.org/TR/did-resolution/#did-resolution-metadata\" class=\"sec-ref\"><bdi class=\"secno\">4.2 </bdi>DID Resolution Metadata</a>)."
                 },
                 {
-                  "html": "The HTTP response body <em class=\"rfc2119\">MUST</em> contain the <b>didDocument</b> that is the result of the\n\t\t\t\t\t\t\t\t<a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-53\">DID resolution</a> function, in the representation corresponding to the <code>Content-Type</code> <var>HTTP response header</var>."
+                  "html": "The HTTP response body <em class=\"rfc2119\">MUST</em> contain the <b>didDocument</b> that is the result of the\n\t\t\t\t\t\t\t\t<a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-resolution-49\">DID resolution</a> function, in the representation corresponding to the <code>Content-Type</code> <var>HTTP response header</var>."
                 }
               ]
             }
           ]
         },
         {
-          "html": "For the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-44\">DID URL dereferencing</a> function:",
+          "html": "For the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-40\">DID URL dereferencing</a> function:",
           "rationale": ".algorithm",
           "steps": [
             {
@@ -498,7 +543,7 @@
               "rationale": ".algorithm",
               "steps": [
                 {
-                  "html": "The <var>HTTP body</var> <em class=\"rfc2119\">MUST</em> contain a <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing-result\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-result-2\">DID URL dereferencing result</a> (see <a href=\"https://www.w3.org/TR/did-resolution/#did-url-dereferencing-result\" class=\"sec-ref\"><bdi class=\"secno\">8.2 </bdi>DID URL Dereferencing Result</a>) that\n\t\t\t\t\t\t\t\tis the result of the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-45\">DID URL dereferencing</a> function."
+                  "html": "The <var>HTTP body</var> <em class=\"rfc2119\">MUST</em> contain a <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing-result\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-result-2\">DID URL dereferencing result</a> (see <a href=\"https://www.w3.org/TR/did-resolution/#did-url-dereferencing-result\" class=\"sec-ref\"><bdi class=\"secno\">8.2 </bdi>DID URL Dereferencing Result</a>) that\n\t\t\t\t\t\t\t\tis the result of the <a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-41\">DID URL dereferencing</a> function."
                 }
               ]
             },
@@ -528,7 +573,7 @@
                   "html": "The HTTP response <em class=\"rfc2119\">MUST</em> contain a <code>Content-Type</code> <var>HTTP response header</var>. Its value <em class=\"rfc2119\">MUST</em> be the value of the\n\t\t\t\t\t\t\t\t<b>contentType</b> metadata property in the <b>dereferencingMetadata</b> (see <a href=\"https://www.w3.org/TR/did-resolution/#did-url-dereferencing-metadata\" class=\"sec-ref\"><bdi class=\"secno\">5.2 </bdi>DID URL Dereferencing Metadata</a>)."
                 },
                 {
-                  "html": "The HTTP response body <em class=\"rfc2119\">MUST</em> contain the <b>contentStream</b> that is the result of the\n\t\t\t\t\t\t\t\t<a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-46\">DID URL dereferencing</a> function, in the representation corresponding to the <code>Content-Type</code> <var>HTTP response header</var>."
+                  "html": "The HTTP response body <em class=\"rfc2119\">MUST</em> contain the <b>contentStream</b> that is the result of the\n\t\t\t\t\t\t\t\t<a href=\"https://www.w3.org/TR/did-resolution/#dfn-did-url-dereferencing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-did-url-dereferencing-42\">DID URL dereferencing</a> function, in the representation corresponding to the <code>Content-Type</code> <var>HTTP response header</var>."
                 }
               ]
             }
