@@ -6468,10 +6468,8 @@
       "styleDeclaration": [
         "contain"
       ],
-      "syntax": "none | strict | content | [ [size | inline-size] || layout || style || paint ] | view-transition",
-      "extended": [
-        "https://drafts.csswg.org/css-view-transitions-2/"
-      ]
+      "syntax": "none | strict | content | [ [size | inline-size] || layout || style || paint ]",
+      "extended": []
     },
     {
       "name": "contain-intrinsic-block-size",
@@ -15426,6 +15424,23 @@
         "viewTransitionName"
       ],
       "syntax": "none | <custom-ident>",
+      "extended": []
+    },
+    {
+      "name": "view-transition-scope",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#propdef-view-transition-scope",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "view-transition-scope",
+        "viewTransitionScope"
+      ],
+      "syntax": "none | auto",
       "extended": []
     },
     {
