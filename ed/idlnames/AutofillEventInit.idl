@@ -1,0 +1,5 @@
+// Source: Autofill Event (https://wicg.github.io/autofill-event/)
+dictionary AutofillEventInit : EventInit {
+  sequence<AutofillValueEntry> autofillValues = [];
+  boolean allowRefill = true;
+};

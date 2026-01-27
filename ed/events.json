@@ -424,6 +424,23 @@
     "interface": "Event"
   },
   {
+    "interface": "AutofillEvent",
+    "type": "autofill",
+    "cancelable": false,
+    "targets": [
+      {
+        "target": "Document",
+        "bubbles": true,
+        "bubblingPath": [
+          "Window"
+        ]
+      }
+    ],
+    "src": {
+      "href": "https://wicg.github.io/autofill-event/#fire-an-autofill-event"
+    }
+  },
+  {
     "href": "https://w3c.github.io/uievents/#auxclick",
     "src": {
       "format": "summary table",

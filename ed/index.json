@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-01-27T07:56:02.369Z",
+  "date": "2026-01-27T15:28:34.999Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -31,10 +31,10 @@
     ]
   },
   "stats": {
-    "crawled": 727,
-    "errors": 4
+    "crawled": 724,
+    "errors": 2
   },
-  "crawler": "reffy-20.0.8",
+  "crawler": "reffy-20.0.9",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -1090,7 +1090,6 @@
       "headings": "headings/font-metrics-api-1.json",
       "ids": "ids/font-metrics-api-1.json",
       "cddl": [],
-      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 19)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/font-metrics-api-1.json"
     },
     {
@@ -1371,7 +1370,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-gcpm-4/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -1433,7 +1432,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-images-5/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
       },
       "generator": "bikeshed",
       "date": "22 December 2025",
@@ -1659,6 +1658,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-shadow"
+        ]
+      },
       "versions": [
         "https://drafts.csswg.org/css-shadow-1/"
       ],
@@ -1910,7 +1915,7 @@
       ],
       "crawled": "https://drafts.csswg.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "23 January 2026",
@@ -2788,7 +2793,7 @@
       ],
       "crawled": "https://immersive-web.github.io/raw-camera-access/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 23:07:06 GMT"
+        "lastModified": "Thu, 11 Dec 2025 23:07:05 GMT"
       },
       "generator": "bikeshed",
       "date": "11 December 2025",
@@ -6386,7 +6391,7 @@
       ],
       "crawled": "https://tc39.es/ecma402/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 23 Jan 2026 18:54:52 GMT"
+        "lastModified": "Fri, 23 Jan 2026 18:54:51 GMT"
       },
       "date": "23 January 2026",
       "links": "links/ecma-402.json",
@@ -6437,107 +6442,14 @@
       ],
       "crawled": "https://tc39.es/ecma426/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 23 Jan 2026 13:35:29 GMT"
+        "lastModified": "Tue, 27 Jan 2026 12:37:28 GMT"
       },
-      "date": "23 January 2026",
+      "date": "27 January 2026",
       "links": "links/ecma-426.json",
       "refs": "refs/ecma-426.json",
       "dfns": "dfns/ecma-426.json",
       "headings": "headings/ecma-426.json",
       "ids": "ids/ecma-426.json",
-      "cddl": []
-    },
-    {
-      "url": "https://tc39.es/proposal-array-from-async/",
-      "seriesComposition": "full",
-      "shortname": "tc39-array-from-async",
-      "series": {
-        "shortname": "tc39-array-from-async",
-        "currentSpecification": "tc39-array-from-async",
-        "title": "ES Array.fromAsync",
-        "shortTitle": "ES Array.fromAsync",
-        "nightlyUrl": "https://tc39.es/proposal-array-from-async/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-array-from-async/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-array-from-async",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "ES Array.fromAsync",
-      "source": "spec",
-      "shortTitle": "ES Array.fromAsync",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-array-from-async/"
-      ],
-      "crawled": "https://tc39.es/proposal-array-from-async/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 29 Jul 2025 04:22:11 GMT"
-      },
-      "date": "29 July 2025",
-      "links": "links/tc39-array-from-async.json",
-      "headings": "headings/tc39-array-from-async.json",
-      "ids": "ids/tc39-array-from-async.json",
-      "cddl": []
-    },
-    {
-      "url": "https://tc39.es/proposal-arraybuffer-base64/spec/",
-      "seriesComposition": "full",
-      "shortname": "tc39-arraybuffer-base64",
-      "series": {
-        "shortname": "tc39-arraybuffer-base64",
-        "currentSpecification": "tc39-arraybuffer-base64",
-        "title": "Uint8Array to/from base64",
-        "shortTitle": "Uint8Array to/from base64",
-        "nightlyUrl": "https://tc39.es/proposal-arraybuffer-base64/spec/"
-      },
-      "nightly": {
-        "url": "https://tc39.es/proposal-arraybuffer-base64/spec/",
-        "status": "Editor's Draft",
-        "sourcePath": "spec.html",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-arraybuffer-base64",
-        "filename": "index.html"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "title": "Uint8Array to/from base64",
-      "source": "spec",
-      "shortTitle": "Uint8Array to/from base64",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-arraybuffer-base64/spec/"
-      ],
-      "crawled": "https://tc39.es/proposal-arraybuffer-base64/spec/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 28 Oct 2025 03:05:52 GMT"
-      },
-      "date": "28 October 2025",
-      "links": "links/tc39-arraybuffer-base64.json",
-      "dfns": "dfns/tc39-arraybuffer-base64.json",
-      "headings": "headings/tc39-arraybuffer-base64.json",
-      "ids": "ids/tc39-arraybuffer-base64.json",
       "cddl": []
     },
     {
@@ -6910,6 +6822,54 @@
       "cddl": []
     },
     {
+      "url": "https://tc39.es/proposal-intl-era-monthcode/",
+      "seriesComposition": "full",
+      "shortname": "tc39-intl-era-monthcode",
+      "series": {
+        "shortname": "tc39-intl-era-monthcode",
+        "currentSpecification": "tc39-intl-era-monthcode",
+        "title": "Intl era and monthCode Proposal",
+        "shortTitle": "Intl era and monthCode",
+        "nightlyUrl": "https://tc39.es/proposal-intl-era-monthcode/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-intl-era-monthcode/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-intl-era-monthcode",
+        "sourcePath": "spec.emu",
+        "filename": "index.html"
+      },
+      "title": "Intl era and monthCode Proposal",
+      "source": "spec",
+      "shortTitle": "Intl era and monthCode",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/proposal-intl-era-monthcode/"
+      ],
+      "crawled": "https://tc39.es/proposal-intl-era-monthcode/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 21 Jan 2026 18:18:24 GMT"
+      },
+      "date": "21 January 2026",
+      "links": "links/tc39-intl-era-monthcode.json",
+      "refs": "refs/tc39-intl-era-monthcode.json",
+      "dfns": "dfns/tc39-intl-era-monthcode.json",
+      "headings": "headings/tc39-intl-era-monthcode.json",
+      "ids": "ids/tc39-intl-era-monthcode.json",
+      "cddl": []
+    },
+    {
       "url": "https://tc39.es/proposal-intl-locale-info/",
       "seriesComposition": "full",
       "shortname": "tc39-intl-locale-info",
@@ -6956,52 +6916,6 @@
       "cddl": []
     },
     {
-      "url": "https://tc39.es/proposal-iterator-sequencing/",
-      "seriesComposition": "full",
-      "shortname": "tc39-iterator-sequencing",
-      "series": {
-        "shortname": "tc39-iterator-sequencing",
-        "currentSpecification": "tc39-iterator-sequencing",
-        "title": "Iterator Sequencing",
-        "shortTitle": "Iterator Sequencing",
-        "nightlyUrl": "https://tc39.es/proposal-iterator-sequencing/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-iterator-sequencing/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-iterator-sequencing",
-        "sourcePath": "spec.emu",
-        "filename": "index.html"
-      },
-      "title": "Iterator Sequencing",
-      "source": "spec",
-      "shortTitle": "Iterator Sequencing",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-iterator-sequencing/"
-      ],
-      "crawled": "https://tc39.es/proposal-iterator-sequencing/",
-      "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Dec 2025 18:05:41 GMT"
-      },
-      "date": "8 December 2025",
-      "links": "links/tc39-iterator-sequencing.json",
-      "headings": "headings/tc39-iterator-sequencing.json",
-      "ids": "ids/tc39-iterator-sequencing.json",
-      "cddl": []
-    },
-    {
       "url": "https://tc39.es/proposal-joint-iteration/",
       "seriesComposition": "full",
       "shortname": "tc39-joint-iteration",
@@ -7045,98 +6959,6 @@
       "links": "links/tc39-joint-iteration.json",
       "headings": "headings/tc39-joint-iteration.json",
       "ids": "ids/tc39-joint-iteration.json",
-      "cddl": []
-    },
-    {
-      "url": "https://tc39.es/proposal-json-parse-with-source/",
-      "seriesComposition": "full",
-      "shortname": "tc39-json-parse-with-source",
-      "series": {
-        "shortname": "tc39-json-parse-with-source",
-        "currentSpecification": "tc39-json-parse-with-source",
-        "title": "JSON.parse source text access",
-        "shortTitle": "JSON.parse source text access",
-        "nightlyUrl": "https://tc39.es/proposal-json-parse-with-source/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-json-parse-with-source/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-json-parse-with-source",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "JSON.parse source text access",
-      "source": "spec",
-      "shortTitle": "JSON.parse source text access",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-json-parse-with-source/"
-      ],
-      "crawled": "https://tc39.es/proposal-json-parse-with-source/",
-      "crawlCacheInfo": {
-        "lastModified": "Sun, 23 Nov 2025 22:13:47 GMT"
-      },
-      "date": "23 November 2025",
-      "links": "links/tc39-json-parse-with-source.json",
-      "headings": "headings/tc39-json-parse-with-source.json",
-      "ids": "ids/tc39-json-parse-with-source.json",
-      "cddl": []
-    },
-    {
-      "url": "https://tc39.es/proposal-math-sum/",
-      "seriesComposition": "full",
-      "shortname": "tc39-math-sum",
-      "series": {
-        "shortname": "tc39-math-sum",
-        "currentSpecification": "tc39-math-sum",
-        "title": "Math.sumPrecise",
-        "shortTitle": "Math.sumPrecise",
-        "nightlyUrl": "https://tc39.es/proposal-math-sum/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-math-sum/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-math-sum",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "Math.sumPrecise",
-      "source": "spec",
-      "shortTitle": "Math.sumPrecise",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-math-sum/"
-      ],
-      "crawled": "https://tc39.es/proposal-math-sum/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 28 Oct 2025 03:10:04 GMT"
-      },
-      "date": "28 October 2025",
-      "links": "links/tc39-math-sum.json",
-      "headings": "headings/tc39-math-sum.json",
-      "ids": "ids/tc39-math-sum.json",
       "cddl": []
     },
     {
@@ -7317,59 +7139,13 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 17:29:37 GMT"
+        "lastModified": "Tue, 27 Jan 2026 09:43:46 GMT"
       },
-      "date": "26 January 2026",
+      "date": "27 January 2026",
       "links": "links/tc39-temporal.json",
       "dfns": "dfns/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
       "ids": "ids/tc39-temporal.json",
-      "cddl": []
-    },
-    {
-      "url": "https://tc39.es/proposal-upsert/",
-      "seriesComposition": "full",
-      "shortname": "tc39-upsert",
-      "series": {
-        "shortname": "tc39-upsert",
-        "currentSpecification": "tc39-upsert",
-        "title": "Upsert",
-        "shortTitle": "Upsert",
-        "nightlyUrl": "https://tc39.es/proposal-upsert/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-upsert/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/tc39/proposal-upsert",
-        "sourcePath": "spec.emu",
-        "filename": "index.html"
-      },
-      "title": "Upsert",
-      "source": "spec",
-      "shortTitle": "Upsert",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "versions": [
-        "https://tc39.es/proposal-upsert/"
-      ],
-      "crawled": "https://tc39.es/proposal-upsert/",
-      "crawlCacheInfo": {
-        "lastModified": "Thu, 02 Oct 2025 18:30:45 GMT"
-      },
-      "date": "2 October 2025",
-      "links": "links/tc39-upsert.json",
-      "headings": "headings/tc39-upsert.json",
-      "ids": "ids/tc39-upsert.json",
       "cddl": []
     },
     {
@@ -7700,7 +7476,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-cs/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 27 Jan 2026 02:28:47 GMT"
+        "lastModified": "Tue, 27 Jan 2026 09:07:12 GMT"
       },
       "generator": "respec",
       "date": "04 August 2025",
@@ -7708,55 +7484,6 @@
       "refs": "refs/shacl12-cs.json",
       "headings": "headings/shacl12-cs.json",
       "ids": "ids/shacl12-cs.json",
-      "cddl": []
-    },
-    {
-      "url": "https://w3c.github.io/data-shapes/shacl12-node-expr/",
-      "seriesComposition": "full",
-      "shortname": "shacl12-node-expr",
-      "series": {
-        "shortname": "shacl-node-expr",
-        "currentSpecification": "shacl12-node-expr",
-        "title": "SHACL 1.2 Node Expressions",
-        "shortTitle": "SHACL 1.2 Node Expressions",
-        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-node-expr/"
-      },
-      "seriesVersion": "1.2",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Data Shapes Working Group",
-          "url": "https://www.w3.org/groups/wg/data-shapes/"
-        }
-      ],
-      "nightly": {
-        "url": "https://w3c.github.io/data-shapes/shacl12-node-expr/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/data-shapes",
-        "sourcePath": "shacl12-node-expr/index.html",
-        "filename": "index.html"
-      },
-      "title": "SHACL 1.2 Node Expressions",
-      "source": "spec",
-      "shortTitle": "SHACL 1.2 Node Expressions",
-      "categories": [],
-      "standing": "good",
-      "versions": [
-        "https://w3c.github.io/data-shapes/shacl12-node-expr/"
-      ],
-      "crawled": "https://w3c.github.io/data-shapes/shacl12-node-expr/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 27 Jan 2026 02:28:47 GMT"
-      },
-      "generator": "respec",
-      "date": "27 January 2026",
-      "algorithms": "algorithms/shacl12-node-expr.json",
-      "links": "links/shacl12-node-expr.json",
-      "refs": "refs/shacl12-node-expr.json",
-      "dfns": "dfns/shacl12-node-expr.json",
-      "headings": "headings/shacl12-node-expr.json",
-      "ids": "ids/shacl12-node-expr.json",
       "cddl": []
     },
     {
@@ -7796,7 +7523,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-profiling/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 27 Jan 2026 02:28:47 GMT"
+        "lastModified": "Tue, 27 Jan 2026 09:07:12 GMT"
       },
       "generator": "respec",
       "date": "27 January 2026",
@@ -7845,7 +7572,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-ui/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 27 Jan 2026 02:28:47 GMT"
+        "lastModified": "Tue, 27 Jan 2026 09:07:12 GMT"
       },
       "generator": "respec",
       "date": "27 January 2026",
@@ -8995,6 +8722,54 @@
       "refs": "refs/wasm-core-2-fork-branch-hinting.json",
       "headings": "headings/wasm-core-2-fork-branch-hinting.json",
       "ids": "ids/wasm-core-2-fork-branch-hinting.json",
+      "cddl": []
+    },
+    {
+      "url": "https://webassembly.github.io/compact-import-section/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-core-2-fork-compact-import-section",
+      "series": {
+        "shortname": "wasm-core",
+        "currentSpecification": "wasm-core-2",
+        "title": "WebAssembly Core",
+        "shortTitle": "WebAssembly Core",
+        "releaseUrl": "https://www.w3.org/TR/wasm-core/",
+        "nightlyUrl": "https://webassembly.github.io/spec/core/bikeshed/"
+      },
+      "seriesVersion": "2",
+      "forkOf": "wasm-core-2",
+      "title": "WebAssembly Specifications",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/compact-import-section/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/compact-import-section",
+        "sourcePath": "document/core/index.bs",
+        "filename": "index.html"
+      },
+      "source": "spec",
+      "shortTitle": "WebAssembly Core: Compact Import Section",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/compact-import-section/"
+      ],
+      "crawled": "https://webassembly.github.io/compact-import-section/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 08 Dec 2025 17:20:59 GMT"
+      },
+      "date": "8 December 2025",
+      "links": "links/wasm-core-2-fork-compact-import-section.json",
+      "ids": "ids/wasm-core-2-fork-compact-import-section.json",
       "cddl": []
     },
     {
@@ -10347,7 +10122,7 @@
       ],
       "crawled": "https://wicg.github.io/attribution-reporting-api/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 08 Dec 2025 13:54:29 GMT"
+        "lastModified": "Mon, 08 Dec 2025 13:54:28 GMT"
       },
       "generator": "bikeshed",
       "date": "8 December 2025",
@@ -10410,6 +10185,60 @@
       "headings": "headings/audio-context-playout-stats.json",
       "ids": "ids/audio-context-playout-stats.json",
       "cddl": []
+    },
+    {
+      "url": "https://wicg.github.io/autofill-event/",
+      "seriesComposition": "full",
+      "shortname": "autofill-event",
+      "series": {
+        "shortname": "autofill-event",
+        "currentSpecification": "autofill-event",
+        "title": "Autofill Event",
+        "shortTitle": "Autofill Event",
+        "nightlyUrl": "https://wicg.github.io/autofill-event/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/autofill-event/",
+        "status": "Draft Community Group Report",
+        "alternateUrls": [],
+        "repository": "https://github.com/WICG/autofill-event",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Autofill Event",
+      "source": "spec",
+      "shortTitle": "Autofill Event",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://wicg.github.io/autofill-event/"
+      ],
+      "crawled": "https://wicg.github.io/autofill-event/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 20 Jan 2026 17:17:58 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "20 January 2026",
+      "revision": "29a59989f87822854863a9a87fce5da40b59e971",
+      "algorithms": "algorithms/autofill-event.json",
+      "links": "links/autofill-event.json",
+      "refs": "refs/autofill-event.json",
+      "idl": "idl/autofill-event.idl",
+      "dfns": "dfns/autofill-event.json",
+      "headings": "headings/autofill-event.json",
+      "ids": "ids/autofill-event.json",
+      "cddl": [],
+      "events": "events/autofill-event.json",
+      "idlparsed": "idlparsed/autofill-event.json"
     },
     {
       "url": "https://wicg.github.io/background-fetch/",
@@ -15427,9 +15256,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 24 Jan 2026 12:44:01 GMT"
+        "lastModified": "Tue, 20 Jan 2026 18:43:36 GMT"
       },
-      "date": "24 January 2026",
+      "date": "20 January 2026",
       "links": "links/rfc7034.json",
       "headings": "headings/rfc7034.json",
       "ids": "ids/rfc7034.json",
@@ -15474,9 +15303,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 23 Jan 2026 01:05:56 GMT"
+        "lastModified": "Wed, 21 Jan 2026 00:49:27 GMT"
       },
-      "date": "23 January 2026",
+      "date": "21 January 2026",
       "links": "links/rfc7239.json",
       "headings": "headings/rfc7239.json",
       "ids": "ids/rfc7239.json",
@@ -15871,9 +15700,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7932",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 22 Jan 2026 06:43:21 GMT"
+        "lastModified": "Mon, 26 Jan 2026 13:12:20 GMT"
       },
-      "date": "22 January 2026",
+      "date": "26 January 2026",
       "links": "links/rfc7932.json",
       "headings": "headings/rfc7932.json",
       "ids": "ids/rfc7932.json",
@@ -18692,7 +18521,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2022/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
       },
       "generator": "bikeshed",
       "date": "21 November 2025",
@@ -18816,7 +18645,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2024/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
       },
       "generator": "bikeshed",
       "date": "21 November 2025",
@@ -19162,7 +18991,6 @@
       "headings": "headings/css-animation-worklet-1.json",
       "ids": "ids/css-animation-worklet-1.json",
       "cddl": [],
-      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 350)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/css-animation-worklet-1.json"
     },
     {
@@ -20050,7 +19878,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-6/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
       },
       "generator": "bikeshed",
       "date": "16 January 2026",
@@ -20187,7 +20015,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-4/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "25 January 2026",
@@ -21650,7 +21478,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-forms-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "16 January 2026",
@@ -22135,7 +21963,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-images-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2025",
@@ -23001,7 +22829,7 @@
       },
       "title": "CSS Nesting Module Level 1",
       "source": "w3c",
-      "shortTitle": "CSS Nesting",
+      "shortTitle": "CSS Nesting 1",
       "categories": [
         "browser"
       ],
@@ -23018,7 +22846,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-nesting-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
       },
       "generator": "bikeshed",
       "date": "20 January 2026",
@@ -23295,7 +23123,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-overscroll-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "1 September 2025",
@@ -23834,7 +23662,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-regions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
       },
       "generator": "bikeshed",
       "date": "18 January 2026",
@@ -24040,7 +23868,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-ruby-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
       },
       "generator": "bikeshed",
       "date": "26 December 2025",
@@ -24526,7 +24354,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-sizing-4/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
       },
       "generator": "bikeshed",
       "date": "22 December 2025",
@@ -24865,7 +24693,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-text-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "6 November 2025",
@@ -25490,7 +25318,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-ui-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
       },
       "generator": "bikeshed",
       "date": "1 December 2025",
@@ -28393,7 +28221,7 @@
       ],
       "crawled": "https://w3c.github.io/webappsec-fetch-metadata/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Apr 2025 06:19:12 GMT"
+        "lastModified": "Tue, 01 Apr 2025 06:19:11 GMT"
       },
       "generator": "bikeshed",
       "date": "1 April 2025",
@@ -29516,8 +29344,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "HTML Working Group",
-          "url": "https://www.w3.org/groups/wg/htmlwg/"
+          "name": "Internationalization Working Group",
+          "url": "https://www.w3.org/International/i18n-activity/i18n-wg/"
         }
       ],
       "release": {
@@ -31829,7 +31657,7 @@
       ],
       "crawled": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jul 2024 08:09:25 GMT"
+        "lastModified": "Tue, 23 Jul 2024 08:09:24 GMT"
       },
       "generator": "respec",
       "date": "23 July 2024",
@@ -32600,7 +32428,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/passkey-endpoints-1/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -32652,7 +32480,7 @@
       "groups": [
         {
           "name": "Web Payments Working Group",
-          "url": "https://www.w3.org/Payments/WG/"
+          "url": "https://www.w3.org/groups/wg/payments/"
         }
       ],
       "release": {
@@ -32718,7 +32546,7 @@
       "groups": [
         {
           "name": "Web Payments Working Group",
-          "url": "https://www.w3.org/Payments/WG/"
+          "url": "https://www.w3.org/groups/wg/payments/"
         }
       ],
       "release": {
@@ -32781,7 +32609,7 @@
       "groups": [
         {
           "name": "Web Payments Working Group",
-          "url": "https://www.w3.org/Payments/WG/"
+          "url": "https://www.w3.org/groups/wg/payments/"
         }
       ],
       "release": {
@@ -32841,7 +32669,7 @@
       "groups": [
         {
           "name": "Web Payments Working Group",
-          "url": "https://www.w3.org/Payments/WG/"
+          "url": "https://www.w3.org/groups/wg/payments/"
         }
       ],
       "release": {
@@ -32876,10 +32704,10 @@
       ],
       "crawled": "https://w3c.github.io/payment-request/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 30 Sep 2025 04:39:07 GMT"
+        "lastModified": "Tue, 27 Jan 2026 06:51:25 GMT"
       },
       "generator": "respec",
-      "date": "30 September 2025",
+      "date": "27 January 2026",
       "algorithms": "algorithms/payment-request.json",
       "links": "links/payment-request.json",
       "refs": "refs/payment-request.json",
@@ -33254,7 +33082,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/pointerevents3/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -33950,7 +33778,7 @@
       ],
       "crawled": "https://w3c.github.io/rdf-n-quads/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 22 Dec 2025 09:33:27 GMT"
+        "lastModified": "Mon, 22 Dec 2025 09:33:26 GMT"
       },
       "generator": "respec",
       "date": "22 December 2025",
@@ -35039,7 +34867,7 @@
       "groups": [
         {
           "name": "Web Payments Working Group",
-          "url": "https://www.w3.org/Payments/WG/"
+          "url": "https://www.w3.org/groups/wg/payments/"
         }
       ],
       "release": {
@@ -35467,7 +35295,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-core/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 27 Jan 2026 02:28:47 GMT"
+        "lastModified": "Tue, 27 Jan 2026 09:07:12 GMT"
       },
       "generator": "respec",
       "date": "27 January 2026",
@@ -35477,6 +35305,62 @@
       "dfns": "dfns/shacl12-core.json",
       "headings": "headings/shacl12-core.json",
       "ids": "ids/shacl12-core.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/shacl12-node-expr/",
+      "seriesComposition": "full",
+      "shortname": "shacl12-node-expr",
+      "series": {
+        "shortname": "shacl-node-expr",
+        "currentSpecification": "shacl12-node-expr",
+        "title": "SHACL Node Expressions",
+        "shortTitle": "SHACL Node Expressions",
+        "releaseUrl": "https://www.w3.org/TR/shacl-node-expr/",
+        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-node-expr/"
+      },
+      "seriesVersion": "1.2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Data Shapes Working Group",
+          "url": "https://www.w3.org/groups/wg/data-shapes/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/shacl12-node-expr/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/data-shapes/shacl12-node-expr/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/data-shapes",
+        "sourcePath": "shacl12-node-expr/index.html",
+        "filename": "index.html"
+      },
+      "title": "SHACL 1.2 Node Expressions",
+      "source": "w3c",
+      "shortTitle": "SHACL 1.2 Node Expressions",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/shacl12-node-expr/",
+        "https://w3c.github.io/data-shapes/shacl12-node-expr/"
+      ],
+      "crawled": "https://w3c.github.io/data-shapes/shacl12-node-expr/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 27 Jan 2026 09:07:12 GMT"
+      },
+      "generator": "respec",
+      "date": "27 January 2026",
+      "algorithms": "algorithms/shacl12-node-expr.json",
+      "links": "links/shacl12-node-expr.json",
+      "refs": "refs/shacl12-node-expr.json",
+      "dfns": "dfns/shacl12-node-expr.json",
+      "headings": "headings/shacl12-node-expr.json",
+      "ids": "ids/shacl12-node-expr.json",
       "cddl": []
     },
     {
@@ -35526,7 +35410,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-rules/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 27 Jan 2026 02:28:47 GMT"
+        "lastModified": "Tue, 27 Jan 2026 09:07:12 GMT"
       },
       "generator": "respec",
       "date": "27 January 2026",
@@ -35581,7 +35465,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-sparql/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 27 Jan 2026 02:28:47 GMT"
+        "lastModified": "Tue, 27 Jan 2026 09:07:12 GMT"
       },
       "generator": "respec",
       "date": "27 January 2026",
@@ -35855,7 +35739,7 @@
       ],
       "crawled": "https://w3c.github.io/sparql-query/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 23 Jan 2026 20:44:10 GMT"
+        "lastModified": "Fri, 23 Jan 2026 20:44:09 GMT"
       },
       "generator": "respec",
       "date": "23 January 2026",
@@ -38703,6 +38587,7 @@
       },
       "forks": [
         "wasm-core-2-fork-branch-hinting",
+        "wasm-core-2-fork-compact-import-section",
         "wasm-core-2-fork-extended-const",
         "wasm-core-2-fork-function-references",
         "wasm-core-2-fork-gc",
@@ -40674,7 +40559,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 27 Jan 2026 03:42:15 GMT"
+        "lastModified": "Tue, 27 Jan 2026 09:07:08 GMT"
       },
       "generator": "bikeshed",
       "date": "27 January 2026",
@@ -41991,7 +41876,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 27 Jan 2026 03:42:15 GMT"
+        "lastModified": "Tue, 27 Jan 2026 09:07:08 GMT"
       },
       "generator": "bikeshed",
       "date": "27 January 2026",

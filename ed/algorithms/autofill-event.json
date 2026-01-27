@@ -1,0 +1,102 @@
+{
+  "spec": {
+    "title": "Autofill Event",
+    "url": "https://wicg.github.io/autofill-event/"
+  },
+  "algorithms": [
+    {
+      "name": "fire an autofill event",
+      "href": "https://wicg.github.io/autofill-event/#fire-an-autofill-event",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"fire-an-autofill-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fire an autofill event</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">document</a> <var>document</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/autofill-event/#autofill-value-entry\" id=\"ref-for-autofill-value-entry③\">autofill value entries</a> <var>entries</var>, and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean②\">boolean</a> <var>allowRefill</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>event</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-create\" id=\"ref-for-concept-event-create\">creating an event</a> using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/autofill-event/#autofillevent\" id=\"ref-for-autofillevent⑥\">AutofillEvent</a></code>.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-type\" id=\"ref-for-dom-event-type\">type</a></code> attribute to \"<code>autofill</code>\".</p>"
+        },
+        {
+          "html": "<p>Initialize <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\" id=\"ref-for-dom-event-bubbles\">bubbles</a></code> attribute to true.</p>"
+        },
+        {
+          "html": "<p>Initialize <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-cancelable\" id=\"ref-for-dom-event-cancelable\">cancelable</a></code> attribute to false.</p>"
+        },
+        {
+          "html": "<p>Set <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/autofill-event/#autofillevent-autofill-values-list\" id=\"ref-for-autofillevent-autofill-values-list\">autofill values list</a> to <var>entries</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/autofill-event/#autofillevent-allow-refill-flag\" id=\"ref-for-autofillevent-allow-refill-flag\">allow refill flag</a> to <var>allowRefill</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/autofill-event/#autofillevent-dispatch-timestamp\" id=\"ref-for-autofillevent-dispatch-timestamp\">dispatch timestamp</a> to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time\">current high resolution time</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-dispatch\" id=\"ref-for-concept-event-dispatch①\">Dispatch</a> <var>event</var> at <var>document</var>.</p>"
+        },
+        {
+          "html": "<p>Perform the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill\" id=\"ref-for-autofill③\">autofill</a> operation on <var>document</var> with <var>entries</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "process a refill request",
+      "href": "https://wicg.github.io/autofill-event/#process-a-refill-request",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"process-a-refill-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a refill request</dfn> given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/autofill-event/#autofillevent\" id=\"ref-for-autofillevent⑦\">AutofillEvent</a></code> <var>event</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>now</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time①\">current high resolution time</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>elapsed</var> be <var>now</var> minus <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/autofill-event/#autofillevent-dispatch-timestamp\" id=\"ref-for-autofillevent-dispatch-timestamp①\">dispatch timestamp</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>refillTimeout</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a> duration.</p>"
+        },
+        {
+          "html": "<p>If <var>elapsed</var> is greater than <var>refillTimeout</var>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/autofill-event/#autofillevent-allow-refill-flag\" id=\"ref-for-autofillevent-allow-refill-flag①\">allow refill flag</a> is false, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/autofill-event/#autofillevent-refill-pending-flag\" id=\"ref-for-autofillevent-refill-pending-flag\">refill pending flag</a> is true, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with②\">a promise rejected with</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/autofill-event/#autofillevent-refill-pending-flag\" id=\"ref-for-autofillevent-refill-pending-flag①\">refill pending flag</a> to true.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>document</var> be <var>event</var>’s relevant <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①\">document</a>.</p>"
+        },
+        {
+          "html": "Return <var>promise</var> and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>entries</var> be the updated <a data-link-type=\"dfn\" href=\"https://wicg.github.io/autofill-event/#autofill-value-entry\" id=\"ref-for-autofill-value-entry④\">autofill value entries</a> (re-matching the user’s autofill data against the modified form).</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> to:",
+              "rationale": "fire",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/autofill-event/#fire-an-autofill-event\" id=\"ref-for-fire-an-autofill-event\">Fire an autofill event</a> with <var>document</var>, <var>entries</var>, and false.</p>"
+                },
+                {
+                  "html": "<p>Perform the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#autofill\" id=\"ref-for-autofill④\">autofill</a> operation on <var>document</var> with <var>entries</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>promise</var> with undefined.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

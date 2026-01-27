@@ -1,0 +1,267 @@
+{
+  "spec": {
+    "title": "Intl era and monthCode Proposal",
+    "url": "https://tc39.es/proposal-intl-era-monthcode/"
+  },
+  "headings": [
+    {
+      "id": "ecma402-locales-currencies-tz",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#ecma402-locales-currencies-tz",
+      "title": "Identification of Locales, Currencies, Time Zones, Measurement Units, Numbering Systems, Collations, and Calendars",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "sec-ecma402-calendar-types",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-ecma402-calendar-types",
+      "title": "Calendar Types",
+      "level": 2,
+      "number": "1.1"
+    },
+    {
+      "id": "sup-availablecalendars",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sup-availablecalendars",
+      "title": "AvailableCalendars ( )",
+      "level": 3,
+      "number": "1.1.1"
+    },
+    {
+      "id": "locale-and-parameter-negotiation",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#locale-and-parameter-negotiation",
+      "title": "Locale and Parameter Negotiation",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "sec-internal-slots",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-internal-slots",
+      "title": "Internal slots of Service Constructors",
+      "level": 2,
+      "number": "2.1"
+    },
+    {
+      "id": "ecma402-datetimeformat-objects",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#ecma402-datetimeformat-objects",
+      "title": "DateTimeFormat Objects",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "sec-ecma402-intl-datetimeformat-constructor",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-ecma402-intl-datetimeformat-constructor",
+      "title": "The Intl.DateTimeFormat Constructor",
+      "level": 2,
+      "number": "3.1"
+    },
+    {
+      "id": "sec-createdatetimeformat",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-createdatetimeformat",
+      "title": "CreateDateTimeFormat ( newTarget, locales, options, required, defaults )",
+      "level": 3,
+      "number": "3.1.1"
+    },
+    {
+      "id": "sec-ecma402-properties-of-intl-datetimeformat-constructor",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-ecma402-properties-of-intl-datetimeformat-constructor",
+      "title": "Properties of the Intl.DateTimeFormat Constructor",
+      "level": 2,
+      "number": "3.2"
+    },
+    {
+      "id": "sec-ecma402-intl.datetimeformat-internal-slots",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-ecma402-intl.datetimeformat-internal-slots",
+      "title": "Internal slots",
+      "level": 3,
+      "number": "3.2.1"
+    },
+    {
+      "id": "ecma402-locale-sensitive-functions",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#ecma402-locale-sensitive-functions",
+      "title": "Locale Sensitive Functions of the ECMAScript Language Specification",
+      "level": 1,
+      "number": "4"
+    },
+    {
+      "id": "sec-calendar-abstract-ops",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-calendar-abstract-ops",
+      "title": "Abstract Operations for Calendar Calculations",
+      "level": 2,
+      "number": "4.1"
+    },
+    {
+      "id": "sec-temporal-calendarsupportsera",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-calendarsupportsera",
+      "title": "CalendarSupportsEra ( calendar )",
+      "level": 3,
+      "number": "4.1.1"
+    },
+    {
+      "id": "sec-temporal-canonicalizeeraincalendar",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-canonicalizeeraincalendar",
+      "title": "CanonicalizeEraInCalendar ( calendar, era )",
+      "level": 3,
+      "number": "4.1.2"
+    },
+    {
+      "id": "sec-temporal-calendarhasmidyeareras",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-calendarhasmidyeareras",
+      "title": "CalendarHasMidYearEras ( calendar )",
+      "level": 3,
+      "number": "4.1.3"
+    },
+    {
+      "id": "sec-temporal-isvalidmonthcodeforcalendar",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-isvalidmonthcodeforcalendar",
+      "title": "IsValidMonthCodeForCalendar ( calendar, monthCode )",
+      "level": 3,
+      "number": "4.1.4"
+    },
+    {
+      "id": "sec-temporal-yearcontainsmonthcode",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-yearcontainsmonthcode",
+      "title": "YearContainsMonthCode ( calendar, arithmeticYear, monthCode )",
+      "level": 3,
+      "number": "4.1.5"
+    },
+    {
+      "id": "sec-temporal-constrainmonthcode",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-constrainmonthcode",
+      "title": "ConstrainMonthCode ( calendar, arithmeticYear, monthCode, overflow )",
+      "level": 3,
+      "number": "4.1.6"
+    },
+    {
+      "id": "sec-temporal-monthcodetoordinal",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-monthcodetoordinal",
+      "title": "MonthCodeToOrdinal ( calendar, arithmeticYear, monthCode )",
+      "level": 3,
+      "number": "4.1.7"
+    },
+    {
+      "id": "sec-temporal-calendardaysinmonth",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-calendardaysinmonth",
+      "title": "CalendarDaysInMonth ( calendar, arithmeticYear, ordinalMonth )",
+      "level": 3,
+      "number": "4.1.8"
+    },
+    {
+      "id": "sec-temporal-calendardateera",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-calendardateera",
+      "title": "CalendarDateEra ( calendar, date )",
+      "level": 3,
+      "number": "4.1.9"
+    },
+    {
+      "id": "sec-temporal-calendardateerayear",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-calendardateerayear",
+      "title": "CalendarDateEraYear ( calendar, date )",
+      "level": 3,
+      "number": "4.1.10"
+    },
+    {
+      "id": "sec-temporal-calendardatearithmeticyear",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-calendardatearithmeticyear",
+      "title": "CalendarDateArithmeticYear ( calendar, date )",
+      "level": 3,
+      "number": "4.1.11"
+    },
+    {
+      "id": "sec-temporal-calendardatearithmeticyearforerayear",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-calendardatearithmeticyearforerayear",
+      "title": "CalendarDateArithmeticYearForEraYear ( calendar, era, eraYear )",
+      "level": 3,
+      "number": "4.1.12"
+    },
+    {
+      "id": "sec-temporal-calendarintegerstoiso",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-calendarintegerstoiso",
+      "title": "CalendarIntegersToISO ( calendar, arithmeticYear, ordinalMonth, day )",
+      "level": 3,
+      "number": "4.1.13"
+    },
+    {
+      "id": "sup-temporal-calendar-date-records",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sup-temporal-calendar-date-records",
+      "title": "Calendar Date Records",
+      "level": 3,
+      "number": "4.1.14"
+    },
+    {
+      "id": "sec-temporal-calendarmonthsinyear",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-calendarmonthsinyear",
+      "title": "CalendarMonthsInYear ( calendar, arithmeticYear )",
+      "level": 3,
+      "number": "4.1.15"
+    },
+    {
+      "id": "sec-temporal-balancenonisodate",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-balancenonisodate",
+      "title": "BalanceNonISODate ( calendar, arithmeticYear, ordinalMonth, day )",
+      "level": 3,
+      "number": "4.1.16"
+    },
+    {
+      "id": "sec-temporal-nonisodatesurpasses",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sec-temporal-nonisodatesurpasses",
+      "title": "NonISODateSurpasses ( calendar, sign, fromIsoDate, toIsoDate, years, months, weeks, days )",
+      "level": 3,
+      "number": "4.1.17"
+    },
+    {
+      "id": "sup-temporal-nonisodateadd",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sup-temporal-nonisodateadd",
+      "title": "NonISODateAdd ( calendar, isoDate, duration, overflow )",
+      "level": 3,
+      "number": "4.1.18"
+    },
+    {
+      "id": "sup-temporal-nonisodateuntil",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sup-temporal-nonisodateuntil",
+      "title": "NonISODateUntil ( calendar, one, two, largestUnit )",
+      "level": 3,
+      "number": "4.1.19"
+    },
+    {
+      "id": "sup-temporal-nonisocalendardatetoiso",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sup-temporal-nonisocalendardatetoiso",
+      "title": "NonISOCalendarDateToISO ( calendar, fields, overflow )",
+      "level": 3,
+      "number": "4.1.20"
+    },
+    {
+      "id": "sup-temporal-nonisomonthdaytoisoreferencedate",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sup-temporal-nonisomonthdaytoisoreferencedate",
+      "title": "NonISOMonthDayToISOReferenceDate ( calendar, fields, overflow )",
+      "level": 3,
+      "number": "4.1.21"
+    },
+    {
+      "id": "sup-temporal-calendarextrafields",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sup-temporal-calendarextrafields",
+      "title": "CalendarExtraFields ( calendar, fields )",
+      "level": 3,
+      "number": "4.1.22"
+    },
+    {
+      "id": "sup-temporal-nonisofieldkeystoignore",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sup-temporal-nonisofieldkeystoignore",
+      "title": "NonISOFieldKeysToIgnore ( calendar, keys )",
+      "level": 3,
+      "number": "4.1.23"
+    },
+    {
+      "id": "sup-temporal-nonisoresolvefields",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#sup-temporal-nonisoresolvefields",
+      "title": "NonISOResolveFields ( calendar, fields, type )",
+      "level": 3,
+      "number": "4.1.24"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://tc39.es/proposal-intl-era-monthcode/#normative-references",
+      "title": "Normative References",
+      "level": 1,
+      "number": "5"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+// Source: Autofill Event (https://wicg.github.io/autofill-event/)
+[Exposed=Window]
+interface AutofillEvent : Event {
+  constructor(DOMString type, optional AutofillEventInit eventInitDict = {});
+  readonly attribute FrozenArray<AutofillValueEntry> autofillValues;
+  readonly attribute RefillCallback? refill;
+};
