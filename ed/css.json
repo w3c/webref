@@ -300,13 +300,6 @@
       "extended": []
     },
     {
-      "name": "@env",
-      "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-env",
-      "descriptors": [],
-      "syntax": "@env <custom-property-name> <css-type>? : <declaration-value>? ;",
-      "extended": []
-    },
-    {
       "name": "@font-face",
       "href": "https://drafts.csswg.org/css-fonts-4/#at-font-face-rule",
       "descriptors": [
@@ -862,7 +855,7 @@
       "name": "@mixin",
       "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-mixin",
       "descriptors": [],
-      "syntax": "@mixin <function-token> <function-parameter>#? , [@contents]? ) { <declaration-rule-list> }",
+      "syntax": "@mixin <function-token> <function-parameter>#? ) { <declaration-rule-list> }",
       "extended": []
     },
     {
@@ -967,6 +960,13 @@
         }
       ],
       "syntax": "@property <custom-property-name> { <declaration-list> }",
+      "extended": []
+    },
+    {
+      "name": "@result",
+      "href": "https://drafts.csswg.org/css-mixins-1/#result-rule",
+      "descriptors": [],
+      "syntax": "@result { <declaration-rule-list> }",
       "extended": []
     },
     {
