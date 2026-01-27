@@ -45,6 +45,22 @@ const patches = {
       change: { interface: 'Event' }
     }
   ],
+  // The "autofill" event does not have an event dfn for now, and is defined
+  // through "create an event". Crawler misses it as a result. Also, the spec
+  // does not yet extend Document and Window to add `onautofill` attributes:
+  // https://github.com/WICG/autofill-event/issues/29
+  'autofill-event': [
+    {
+      add: {
+        interface: 'AutofillEvent',
+        type: 'autofill',
+        bubbles: true,
+        cancelable: false,
+        targets: ['Document'],
+        src: { href: 'https://wicg.github.io/autofill-event/#fire-an-autofill-event' }
+      }
+    }
+  ],
   'background-fetch': [
     {
       pattern: { type: /^backgroundfetch(success|fail)$/ },
