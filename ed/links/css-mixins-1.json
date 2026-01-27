@@ -70,6 +70,7 @@
       },
       "https://drafts.csswg.org/css-animations/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
+      "https://drafts.csswg.org/css-cascade-6/": {},
       "https://drafts.csswg.org/css-color-5/": {},
       "https://drafts.csswg.org/css-conditional-3/": {
         "anchors": [
@@ -77,8 +78,7 @@
         ]
       },
       "https://drafts.csswg.org/css-conditional-5/": {},
-      "https://drafts.csswg.org/css-env-1/": {},
-      "https://drafts.csswg.org/css-fonts-4/": {},
+      "https://drafts.csswg.org/css-mixins/": {},
       "https://drafts.csswg.org/css-nesting/": {},
       "https://drafts.csswg.org/css-shadow-1/": {},
       "https://drafts.csswg.org/css-syntax/": {},
@@ -88,6 +88,7 @@
       "https://drafts.csswg.org/cssom/": {},
       "https://drafts.csswg.org/selectors/": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues/12927": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-mixins/apply-nested-declarations.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-mixins/apply-top-level.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-mixins/apply-within-mixin.html": {},
@@ -128,7 +129,6 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-mixins/mixin-media-query-invalidation.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-mixins/mixin-parsing.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-mixins/mixin-shadow-dom.html": {},
-      "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://webidl.spec.whatwg.org/": {},
@@ -182,8 +182,7 @@
           "syntax-definition",
           "equivalent-token-sequence",
           "custom-property-registration",
-          "universal-syntax-definition",
-          "registered-custom-property"
+          "universal-syntax-definition"
         ]
       },
       "https://drafts.csswg.org/css-animations-1/": {
@@ -198,6 +197,13 @@
           "computed-value",
           "specified-value",
           "inherited-value"
+        ]
+      },
+      "https://drafts.csswg.org/css-cascade-6/": {
+        "anchors": [
+          "scoped-style-rules",
+          "at-ruledef-scope",
+          "scoping-limit"
         ]
       },
       "https://drafts.csswg.org/css-color-5/": {
@@ -217,15 +223,9 @@
           "at-ruledef-container"
         ]
       },
-      "https://drafts.csswg.org/css-env-1/": {
+      "https://drafts.csswg.org/css-mixins-1/": {
         "anchors": [
-          "funcdef-env",
-          "css-environment-variable"
-        ]
-      },
-      "https://drafts.csswg.org/css-fonts-4/": {
-        "anchors": [
-          "propdef-font-size"
+          "scoped-environment-variables"
         ]
       },
       "https://drafts.csswg.org/css-nesting-1/": {
@@ -249,7 +249,6 @@
           "typedef-declaration-value",
           "css-parse-something-according-to-a-css-grammar",
           "style-rule",
-          "typedef-at-keyword-token",
           "typedef-declaration-list",
           "declaration"
         ]
@@ -263,7 +262,6 @@
           "functional-notation",
           "mult-zero-plus",
           "css-wide-keywords",
-          "comb-comma",
           "em"
         ]
       },
@@ -282,7 +280,7 @@
           "funcdef-inherit",
           "property-replacement",
           "funcdef-attr",
-          "replace-an-arbitrary-substitution-function"
+          "funcdef-if"
         ]
       },
       "https://drafts.csswg.org/css-variables-2/": {
@@ -290,7 +288,8 @@
           "custom-property",
           "funcdef-var",
           "typedef-custom-property-name",
-          "guaranteed-invalid-value"
+          "guaranteed-invalid-value",
+          "variable-unit-reference"
         ]
       },
       "https://drafts.csswg.org/cssom-1/": {
@@ -314,12 +313,9 @@
       },
       "https://drafts.csswg.org/selectors-4/": {
         "anchors": [
-          "featureless"
-        ]
-      },
-      "https://infra.spec.whatwg.org/": {
-        "anchors": [
-          "user-agent"
+          "featureless",
+          "scoping-root",
+          "pseudo-element"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
