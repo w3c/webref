@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-01-27T15:28:34.999Z",
+  "date": "2026-01-27T18:56:48.234Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -32,7 +32,7 @@
   },
   "stats": {
     "crawled": 724,
-    "errors": 2
+    "errors": 9
   },
   "crawler": "reffy-20.0.9",
   "results": [
@@ -274,11 +274,11 @@
       ],
       "crawled": "https://aomediacodec.github.io/av1-mpeg2-ts/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 30 Apr 2025 00:24:30 GMT"
+        "lastModified": "Tue, 27 Jan 2026 18:29:28 GMT"
       },
       "generator": "bikeshed",
       "date": "4 October 2021",
-      "revision": "8def60e931dc2683f89406592080af9ee5752251",
+      "revision": "8d007bcb03760962c8db39c80acd3b1f04ea1326",
       "links": "links/av1-mpeg2-ts.json",
       "refs": "refs/av1-mpeg2-ts.json",
       "headings": "headings/av1-mpeg2-ts.json",
@@ -1038,7 +1038,8 @@
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
       "ids": "ids/css-typed-om-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -1090,6 +1091,7 @@
       "headings": "headings/font-metrics-api-1.json",
       "ids": "ids/font-metrics-api-1.json",
       "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 19)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/font-metrics-api-1.json"
     },
     {
@@ -1370,7 +1372,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-gcpm-4/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -1432,7 +1434,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-images-5/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "22 December 2025",
@@ -6442,7 +6444,7 @@
       ],
       "crawled": "https://tc39.es/ecma426/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 27 Jan 2026 12:37:28 GMT"
+        "lastModified": "Tue, 27 Jan 2026 17:59:11 GMT"
       },
       "date": "27 January 2026",
       "links": "links/ecma-426.json",
@@ -8101,10 +8103,10 @@
       ],
       "crawled": "https://w3c.github.io/pdf-aam/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 21 Jan 2026 17:43:19 GMT"
+        "lastModified": "Tue, 27 Jan 2026 17:54:15 GMT"
       },
       "generator": "respec",
-      "date": "21 January 2026",
+      "date": "27 January 2026",
       "links": "links/pdf-aam.json",
       "refs": "refs/pdf-aam.json",
       "dfns": "dfns/pdf-aam.json",
@@ -15256,9 +15258,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 20 Jan 2026 18:43:36 GMT"
+        "lastModified": "Tue, 27 Jan 2026 18:43:45 GMT"
       },
-      "date": "20 January 2026",
+      "date": "27 January 2026",
       "links": "links/rfc7034.json",
       "headings": "headings/rfc7034.json",
       "ids": "ids/rfc7034.json",
@@ -16517,9 +16519,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9649",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 20 Jan 2026 18:15:54 GMT"
+        "lastModified": "Tue, 27 Jan 2026 18:43:48 GMT"
       },
-      "date": "20 January 2026",
+      "date": "27 January 2026",
       "algorithms": "algorithms/rfc9649.json",
       "links": "links/rfc9649.json",
       "refs": "refs/rfc9649.json",
@@ -18521,7 +18523,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2022/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "21 November 2025",
@@ -18583,7 +18585,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2023/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "21 November 2025",
@@ -18645,7 +18647,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2024/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "21 November 2025",
@@ -18991,6 +18993,7 @@
       "headings": "headings/css-animation-worklet-1.json",
       "ids": "ids/css-animation-worklet-1.json",
       "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 346)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/css-animation-worklet-1.json"
     },
     {
@@ -21963,7 +21966,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-images-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "15 December 2025",
@@ -22183,6 +22186,7 @@
       "headings": "headings/css-layout-api-1.json",
       "ids": "ids/css-layout-api-1.json",
       "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 392)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/css-layout-api-1.json"
     },
     {
@@ -22846,7 +22850,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-nesting-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "20 January 2026",
@@ -23334,6 +23338,7 @@
       "headings": "headings/css-paint-api-1.json",
       "ids": "ids/css-paint-api-1.json",
       "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered HTTP status 504\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 409)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/css-paint-api-1.json"
     },
     {
@@ -23540,6 +23545,7 @@
       "headings": "headings/css-properties-values-api-1.json",
       "ids": "ids/css-properties-values-api-1.json",
       "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-properties-values-api-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 412)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/css-properties-values-api-1.json"
     },
     {
@@ -23662,7 +23668,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-regions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "18 January 2026",
@@ -23868,7 +23874,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-ruby-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "26 December 2025",
@@ -24354,7 +24360,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-sizing-4/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "22 December 2025",
@@ -25261,6 +25267,7 @@
       "headings": "headings/css-typed-om-1.json",
       "ids": "ids/css-typed-om-1.json",
       "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 437)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)",
       "idlparsed": "idlparsed/css-typed-om-1.json"
     },
     {
@@ -25318,7 +25325,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-ui-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 26 Jan 2026 21:49:54 GMT"
+        "lastModified": "Mon, 26 Jan 2026 21:49:55 GMT"
       },
       "generator": "bikeshed",
       "date": "1 December 2025",
@@ -26513,11 +26520,11 @@
       ],
       "crawled": "https://w3c.github.io/webappsec-dbsc/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 03 Dec 2025 15:18:18 GMT"
+        "lastModified": "Tue, 27 Jan 2026 14:43:43 GMT"
       },
       "generator": "bikeshed",
-      "date": "3 December 2025",
-      "revision": "e02ffbbe803c75c01b90ebb0d2cd839291994997",
+      "date": "27 January 2026",
+      "revision": "b411f4de29135e88abbcf8f5aadaf672451fdf15",
       "algorithms": "algorithms/dbsc-1.json",
       "links": "links/dbsc-1.json",
       "refs": "refs/dbsc-1.json",
@@ -35739,7 +35746,7 @@
       ],
       "crawled": "https://w3c.github.io/sparql-query/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 23 Jan 2026 20:44:09 GMT"
+        "lastModified": "Fri, 23 Jan 2026 20:44:10 GMT"
       },
       "generator": "respec",
       "date": "23 January 2026",
