@@ -1,0 +1,441 @@
+{
+  "spec": {
+    "title": "Autofill Event",
+    "url": "https://wicg.github.io/autofill-event/"
+  },
+  "dfns": [
+    {
+      "id": "autofill-value-entry",
+      "href": "https://wicg.github.io/autofill-event/#autofill-value-entry",
+      "linkingText": [
+        "autofill value entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "autofill-values-concept",
+        "href": "https://wicg.github.io/autofill-event/#autofill-values-concept",
+        "title": "Autofill Value Entries",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "refill-operation",
+      "href": "https://wicg.github.io/autofill-event/#refill-operation",
+      "linkingText": [
+        "refill operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "refill-concept",
+        "href": "https://wicg.github.io/autofill-event/#refill-concept",
+        "title": "Refill Operation",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "autofillevent",
+      "href": "https://wicg.github.io/autofill-event/#autofillevent",
+      "linkingText": [
+        "AutofillEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-interface",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-interface",
+        "title": "The AutofillEvent Interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-autofillevent-autofillevent",
+      "href": "https://wicg.github.io/autofill-event/#dom-autofillevent-autofillevent",
+      "linkingText": [
+        "AutofillEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "AutofillEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "AutofillEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-interface",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-interface",
+        "title": "The AutofillEvent Interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-autofillevent-autofillevent-type-eventinitdict-type",
+      "href": "https://wicg.github.io/autofill-event/#dom-autofillevent-autofillevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AutofillEvent/AutofillEvent(type, eventInitDict)",
+        "AutofillEvent/constructor(type, eventInitDict)",
+        "AutofillEvent/AutofillEvent(type)",
+        "AutofillEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-interface",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-interface",
+        "title": "The AutofillEvent Interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-autofillevent-autofillevent-type-eventinitdict-eventinitdict",
+      "href": "https://wicg.github.io/autofill-event/#dom-autofillevent-autofillevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AutofillEvent/AutofillEvent(type, eventInitDict)",
+        "AutofillEvent/constructor(type, eventInitDict)",
+        "AutofillEvent/AutofillEvent(type)",
+        "AutofillEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-interface",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-interface",
+        "title": "The AutofillEvent Interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "callbackdef-refillcallback",
+      "href": "https://wicg.github.io/autofill-event/#callbackdef-refillcallback",
+      "linkingText": [
+        "RefillCallback"
+      ],
+      "localLinkingText": [],
+      "type": "callback",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-interface",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-interface",
+        "title": "The AutofillEvent Interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dictdef-autofilleventinit",
+      "href": "https://wicg.github.io/autofill-event/#dictdef-autofilleventinit",
+      "linkingText": [
+        "AutofillEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-interface",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-interface",
+        "title": "The AutofillEvent Interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-autofilleventinit-autofillvalues",
+      "href": "https://wicg.github.io/autofill-event/#dom-autofilleventinit-autofillvalues",
+      "linkingText": [
+        "autofillValues"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AutofillEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-interface",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-interface",
+        "title": "The AutofillEvent Interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-autofilleventinit-allowrefill",
+      "href": "https://wicg.github.io/autofill-event/#dom-autofilleventinit-allowrefill",
+      "linkingText": [
+        "allowRefill"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AutofillEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-interface",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-interface",
+        "title": "The AutofillEvent Interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "typedefdef-autofillvalueentry",
+      "href": "https://wicg.github.io/autofill-event/#typedefdef-autofillvalueentry",
+      "linkingText": [
+        "AutofillValueEntry"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-interface",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-interface",
+        "title": "The AutofillEvent Interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-autofillevent-autofillvalues",
+      "href": "https://wicg.github.io/autofill-event/#dom-autofillevent-autofillvalues",
+      "linkingText": [
+        "autofillValues"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AutofillEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-attributes",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-attributes",
+        "title": "Attributes",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-autofillevent-refill",
+      "href": "https://wicg.github.io/autofill-event/#dom-autofillevent-refill",
+      "linkingText": [
+        "refill"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AutofillEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-attributes",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-attributes",
+        "title": "Attributes",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "autofillevent-autofill-values-list",
+      "href": "https://wicg.github.io/autofill-event/#autofillevent-autofill-values-list",
+      "linkingText": [
+        "autofill values list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AutofillEvent"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-attributes",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-attributes",
+        "title": "Attributes",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "autofillevent-allow-refill-flag",
+      "href": "https://wicg.github.io/autofill-event/#autofillevent-allow-refill-flag",
+      "linkingText": [
+        "allow refill flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AutofillEvent"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-attributes",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-attributes",
+        "title": "Attributes",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "autofillevent-dispatch-timestamp",
+      "href": "https://wicg.github.io/autofill-event/#autofillevent-dispatch-timestamp",
+      "linkingText": [
+        "dispatch timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AutofillEvent"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-attributes",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-attributes",
+        "title": "Attributes",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "autofillevent-refill-pending-flag",
+      "href": "https://wicg.github.io/autofill-event/#autofillevent-refill-pending-flag",
+      "linkingText": [
+        "refill pending flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AutofillEvent"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "autofill-event-attributes",
+        "href": "https://wicg.github.io/autofill-event/#autofill-event-attributes",
+        "title": "Attributes",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "fire-an-autofill-event",
+      "href": "https://wicg.github.io/autofill-event/#fire-an-autofill-event",
+      "linkingText": [
+        "fire an autofill event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "firing-autofill-event",
+        "href": "https://wicg.github.io/autofill-event/#firing-autofill-event",
+        "title": "Firing the Autofill Event",
+        "number": "4.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "process-a-refill-request",
+      "href": "https://wicg.github.io/autofill-event/#process-a-refill-request",
+      "linkingText": [
+        "process a refill request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "processing-refill",
+        "href": "https://wicg.github.io/autofill-event/#processing-refill",
+        "title": "Processing a Refill Request",
+        "number": "4.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "attr-valuedef-autocomplete-full-address",
+      "href": "https://wicg.github.io/autofill-event/#attr-valuedef-autocomplete-full-address",
+      "linkingText": [
+        "full-address"
+      ],
+      "localLinkingText": [],
+      "type": "attr-value",
+      "for": [
+        "autocomplete"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "full-address",
+        "href": "https://wicg.github.io/autofill-event/#full-address",
+        "title": "The \"full-address\" Autocomplete Token",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}
