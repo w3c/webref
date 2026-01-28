@@ -168,6 +168,129 @@
           "html": "<p>Otherwise,\nreturn the concatenation of the following:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>The string <code class=\"highlight\"><c- s=\"\">\"type(\"</c-></code>,\ni.e. <code class=\"highlight\"><c- s=\"\">\"type\"</c-></code>\nfollowed by a single LEFT PARENTHESIS (U+0028).</p>\n       </li><li data-md=\"\">\n        <p>The corresponding <a href=\"https://drafts.css-houdini.org/css-properties-values-api-1/#syntax-strings\">syntax string</a>.</p>\n       </li><li data-md=\"\">\n        <p>The string <code class=\"highlight\"><c- s=\"\">\")\"</c-></code>,\ni.e. a single RIGHT PARENTHESIS (U+0029).</p>\n      </li></ul>"
         }
       ]
+    },
+    {
+      "name": "serialize a CSSMixinRule",
+      "href": "https://drafts.csswg.org/css-mixins-1/#serialize-a-cssmixinrule",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-cssmixinrule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a CSSMixinRule</dfn>,\nreturn the concatenation of the following:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>The string <code class=\"highlight\"><c- s=\"\">\"@mixin\"</c-></code> followed by a single SPACE (U+0020).</p>"
+        },
+        {
+          "html": "<p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier③\">serialize an identifier</a>\non the name of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#mixin\" id=\"ref-for-mixin③⑧\">mixin</a>,\nfollowed by a single LEFT PARENTHESIS (U+0028).</p>"
+        },
+        {
+          "html": "<p>The result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-a-function-parameter\" id=\"ref-for-serialize-a-function-parameter①\">serialize a function parameter</a>\non each of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#mixin\" id=\"ref-for-mixin③⑨\">mixin’s</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#function-parameter\" id=\"ref-for-function-parameter②⑥\">parameters</a>,\nall joined by <code class=\"highlight\"><c- s=\"\">\", \"</c-></code>\n(COMMA U+002C, followed by a single SPACE U+0020).</p>"
+        },
+        {
+          "html": "<p>A single RIGHT PARENTHESIS (U+0029).</p>"
+        },
+        {
+          "html": "<p>A single LEFT CURLY BRACKET (U+007B),\nfollowed by a SPACE (U+0020).</p>"
+        },
+        {
+          "html": "<p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-rule\" id=\"ref-for-serialize-a-css-rule③\">serialize a CSS rule</a>\non each rule in cssRules,\nfiltering out empty strings,\nall joined by a single SPACE (U+0020).</p>"
+        },
+        {
+          "html": "<p>A single SPACE (U+0020),\nfollowed by a single RIGHT CURLY BRACKET (U+007D).</p>"
+        }
+      ]
+    },
+    {
+      "name": "serialize a CSSApplyBlockRule",
+      "href": "https://drafts.csswg.org/css-mixins-1/#serialize-a-cssapplyblockrule",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-cssapplyblockrule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a CSSApplyBlockRule</dfn>,\nreturn the concatenation of the following:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>The string <code class=\"highlight\"><c- s=\"\">\"@apply\"</c-></code> followed by a single SPACE (U+0020).</p>"
+        },
+        {
+          "html": "<p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-an-apply-prelude\" id=\"ref-for-serialize-an-apply-prelude\">serialize an @apply prelude</a>\non the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-mixins-1/#at-ruledef-apply\" id=\"ref-for-at-ruledef-apply②⑤\">@apply</a> rule.</p>"
+        },
+        {
+          "html": "<p>A single SPACE (U+0020).</p>"
+        },
+        {
+          "html": "<p>A single LEFT CURLY BRACKET (U+007B),\nfollowed by a SPACE (U+0020).</p>"
+        },
+        {
+          "html": "<p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-rule\" id=\"ref-for-serialize-a-css-rule④\">serialize a CSS rule</a>\non each rule in cssRules,\nfiltering out empty strings,\nall joined by a single SPACE (U+0020).</p>"
+        },
+        {
+          "html": "<p>A single SPACE (U+0020),\n\t\tfollowed by a RIGHT CURLY BRACKET (U+007D).</p>"
+        }
+      ]
+    },
+    {
+      "name": "serialize an @apply prelude",
+      "href": "https://drafts.csswg.org/css-mixins-1/#serialize-an-apply-prelude",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-an-apply-prelude\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize an @apply prelude</dfn>,\ngiven an <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-mixins-1/#at-ruledef-apply\" id=\"ref-for-at-ruledef-apply②⑥\">@apply</a> rule,\nreturn the concatenation of the following:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-mixins-1/#dom-cssapplyblockrule-name\" id=\"ref-for-dom-cssapplyblockrule-name①\">name</a></code> of the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-mixins-1/#at-ruledef-apply\" id=\"ref-for-at-ruledef-apply②⑦\">@apply</a> rule.</p>"
+        },
+        {
+          "html": "<p>If the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-mixins-1/#at-ruledef-apply\" id=\"ref-for-at-ruledef-apply②⑧\">@apply</a> rule has at least one argument,\nthe concatenation of:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>A single LEFT PARENTHESIS (U+0028).</p>\n       </li><li data-md=\"\">\n        <p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-a-function-argument\" id=\"ref-for-serialize-a-function-argument\">serialize a function argument</a>\non each argument,\nall joined by <code class=\"highlight\"><c- s=\"\">\", \"</c-></code>.</p>\n       </li><li data-md=\"\">\n        <p>A single RIGHT PARENTHESIS (U+0029).</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "serialize a function argument",
+      "href": "https://drafts.csswg.org/css-mixins-1/#serialize-a-function-argument",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-function-argument\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a function argument</dfn>,\ngiven a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value\" id=\"ref-for-typedef-declaration-value③\">&lt;declaration-value&gt;</a> <var>argument</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a href=\"https://drafts.csswg.org/css-variables-1/#serializing-custom-props\">Serialize</a> <var>argument</var>\n\tas if it had been the specified value of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-variables-2/#custom-property\" id=\"ref-for-custom-property③④\">custom property</a>,\n\tand let <var>serialized argument</var> be the result.</p>"
+        },
+        {
+          "html": "<p>If <var>serialized argument</var> does not contain any top-level <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#typedef-comma-token\" id=\"ref-for-typedef-comma-token\">&lt;comma-token&gt;</a>s,\nnor any top-level <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-syntax-3/#tokendef-open-curly\" id=\"ref-for-tokendef-open-curly\">&lt;{-token&gt;</a>s,\nreturn <var>serialized argument</var>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, return the concatenation of the following:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>A single LEFT CURLY BRACKET (U+007B),\n\tfollowed by a SPACE (U+0020).</p>\n       </li><li data-md=\"\">\n        <p>The value of <var>serialized argument</var>.</p>\n       </li><li data-md=\"\">\n        <p>A single SPACE (U+0020),\n\tfollowed by a RIGHT CURLY BRACKET (U+007D).</p>\n      </li></ul>"
+        }
+      ]
+    },
+    {
+      "name": "serialize a CSSApplyStatementRule",
+      "href": "https://drafts.csswg.org/css-mixins-1/#serialize-a-cssapplystatementrule",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-cssapplystatementrule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a CSSApplyStatementRule</dfn>,\nreturn the concatenation of the following:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>The string <code class=\"highlight\"><c- s=\"\">\"@apply\"</c-></code> followed by a single SPACE (U+0020).</p>"
+        },
+        {
+          "html": "<p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-mixins-1/#serialize-an-apply-prelude\" id=\"ref-for-serialize-an-apply-prelude①\">serialize an @apply prelude</a>\non the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-mixins-1/#at-ruledef-apply\" id=\"ref-for-at-ruledef-apply③⓪\">@apply</a> rule.</p>"
+        },
+        {
+          "html": "<p>A single SEMICOLON (U+003B).</p>"
+        }
+      ]
+    },
+    {
+      "name": "serialize a CSSContentsBlockRule",
+      "href": "https://drafts.csswg.org/css-mixins-1/#serialize-a-csscontentsblockrule",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-csscontentsblockrule\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a CSSContentsBlockRule</dfn>,\nreturn the concatenation of the following:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>The string <code class=\"highlight\"><c- s=\"\">\"@contents\"</c-></code> followed by a single SPACE (U+0020).</p>"
+        },
+        {
+          "html": "<p>A single LEFT CURLY BRACKET (U+007B),\nfollowed by a SPACE (U+0020).</p>"
+        },
+        {
+          "html": "<p>The result of performing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-css-rule\" id=\"ref-for-serialize-a-css-rule⑤\">serialize a CSS rule</a>\non each rule in cssRules,\nfiltering out empty strings,\nall joined by a single SPACE (U+0020).</p>"
+        },
+        {
+          "html": "<p>A single SPACE (U+0020),\n\t\tfollowed by a RIGHT CURLY BRACKET (U+007D).</p>"
+        }
+      ]
     }
   ]
 }
