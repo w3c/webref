@@ -10,7 +10,12 @@
         "Window": [
           "CSSFunctionRule",
           "CSSFunctionDescriptors",
-          "CSSFunctionDeclarations"
+          "CSSFunctionDeclarations",
+          "CSSMixinRule",
+          "CSSApplyBlockRule",
+          "CSSApplyStatementRule",
+          "CSSContentsBlockRule",
+          "CSSContentsStatementRule"
         ]
       }
     },
@@ -248,6 +253,248 @@
         ],
         "partial": false,
         "href": "https://drafts.csswg.org/css-mixins-1/#cssfunctiondeclarations"
+      },
+      "CSSMixinRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSMixinRule : CSSGroupingRule {\n  readonly attribute CSSOMString name;\n  sequence<FunctionParameter> getParameters();\n  readonly attribute boolean contents;\n};",
+        "type": "interface",
+        "name": "CSSMixinRule",
+        "inheritance": "CSSGroupingRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-cssmixinrule-name"
+          },
+          {
+            "type": "operation",
+            "name": "getParameters",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "FunctionParameter"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-cssmixinrule-getparameters"
+          },
+          {
+            "type": "attribute",
+            "name": "contents",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-cssmixinrule-contents"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-mixins-1/#cssmixinrule"
+      },
+      "CSSApplyBlockRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSApplyBlockRule : CSSGroupingRule {\n  readonly attribute CSSOMString name;\n  sequence<CSSOMString> getArguments();\n};",
+        "type": "interface",
+        "name": "CSSApplyBlockRule",
+        "inheritance": "CSSGroupingRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-cssapplyblockrule-name"
+          },
+          {
+            "type": "operation",
+            "name": "getArguments",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSOMString"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-cssapplyblockrule-getarguments"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-mixins-1/#cssapplyblockrule"
+      },
+      "CSSApplyStatementRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSApplyStatementRule : CSSRule {\n\n  readonly attribute CSSOMString name;\n  sequence<CSSOMString> getArguments();\n};",
+        "type": "interface",
+        "name": "CSSApplyStatementRule",
+        "inheritance": "CSSRule",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-cssapplystatementrule-name"
+          },
+          {
+            "type": "operation",
+            "name": "getArguments",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSOMString"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://drafts.csswg.org/css-mixins-1/#dom-cssapplystatementrule-getarguments"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-mixins-1/#cssapplystatementrule"
+      },
+      "CSSContentsBlockRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSContentsBlockRule : CSSGroupingRule { };",
+        "type": "interface",
+        "name": "CSSContentsBlockRule",
+        "inheritance": "CSSGroupingRule",
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-mixins-1/#csscontentsblockrule"
+      },
+      "CSSContentsStatementRule": {
+        "fragment": "[Exposed=Window]\ninterface CSSContentsStatementRule : CSSRule { };",
+        "type": "interface",
+        "name": "CSSContentsStatementRule",
+        "inheritance": "CSSRule",
+        "members": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-mixins-1/#csscontentsstatementrule"
       }
     },
     "idlExtendedNames": {},
@@ -256,7 +503,12 @@
       "Window": [
         "CSSFunctionRule",
         "CSSFunctionDescriptors",
-        "CSSFunctionDeclarations"
+        "CSSFunctionDeclarations",
+        "CSSMixinRule",
+        "CSSApplyBlockRule",
+        "CSSApplyStatementRule",
+        "CSSContentsBlockRule",
+        "CSSContentsStatementRule"
       ]
     },
     "dependencies": {
@@ -275,6 +527,25 @@
       "CSSFunctionDeclarations": [
         "CSSRule",
         "CSSFunctionDescriptors"
+      ],
+      "CSSMixinRule": [
+        "CSSGroupingRule",
+        "CSSOMString",
+        "FunctionParameter"
+      ],
+      "CSSApplyBlockRule": [
+        "CSSGroupingRule",
+        "CSSOMString"
+      ],
+      "CSSApplyStatementRule": [
+        "CSSRule",
+        "CSSOMString"
+      ],
+      "CSSContentsBlockRule": [
+        "CSSGroupingRule"
+      ],
+      "CSSContentsStatementRule": [
+        "CSSRule"
       ]
     },
     "externalDependencies": [

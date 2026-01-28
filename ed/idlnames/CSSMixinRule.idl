@@ -1,0 +1,7 @@
+// Source: CSS Custom Functions and Mixins Module Level 1 (https://www.w3.org/TR/css-mixins-1/)
+[Exposed=Window]
+interface CSSMixinRule : CSSGroupingRule {
+  readonly attribute CSSOMString name;
+  sequence<FunctionParameter> getParameters();
+  readonly attribute boolean contents;
+};
