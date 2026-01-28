@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-01-27T01:37:25.381Z",
+  "date": "2026-01-28T01:47:19.898Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -123,8 +123,6 @@
       "ecmascript",
       "ecma-402",
       "ecma-426",
-      "tc39-array-from-async",
-      "tc39-arraybuffer-base64",
       "tc39-async-explicit-resource-management",
       "tc39-atomics-microwait",
       "tc39-canonical-tz",
@@ -133,23 +131,19 @@
       "tc39-dynamic-code-brand-checks",
       "tc39-explicit-resource-management",
       "tc39-intl-duration-format",
+      "tc39-intl-era-monthcode",
       "tc39-intl-locale-info",
-      "tc39-iterator-sequencing",
       "tc39-joint-iteration",
-      "tc39-json-parse-with-source",
-      "tc39-math-sum",
       "tc39-nonextensible-applies-to-private",
       "tc39-shadowrealm",
       "tc39-source-phase-imports",
       "tc39-temporal",
-      "tc39-upsert",
       "testutils",
       "url",
       "urlpattern",
       "login-status",
       "at-driver",
       "shacl12-cs",
-      "shacl12-node-expr",
       "shacl12-profiling",
       "shacl12-ui",
       "execCommand",
@@ -174,6 +168,7 @@
       "webextensions",
       "webrtc-ice",
       "wasm-core-2-fork-branch-hinting",
+      "wasm-core-2-fork-compact-import-section",
       "wasm-js-api-2-fork-content-security-policy",
       "wasm-js-api-2-fork-esm-integration",
       "wasm-js-api-2-fork-exception-handling",
@@ -200,6 +195,7 @@
       "aom",
       "attribution-reporting-api",
       "audio-context-playout-stats",
+      "autofill-event",
       "background-fetch",
       "background-sync",
       "capability-delegation",
@@ -609,6 +605,7 @@
       "server-timing",
       "service-workers",
       "shacl12-core",
+      "shacl12-node-expr",
       "shacl12-rules",
       "shacl12-sparql",
       "sparql12-entailment",
@@ -750,10 +747,10 @@
     ]
   },
   "stats": {
-    "crawled": 402,
+    "crawled": 403,
     "errors": 0
   },
-  "crawler": "reffy-20.0.8",
+  "crawler": "reffy-20.0.9",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -799,7 +796,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "27 January 2026",
+      "date": "28 January 2026",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -1220,11 +1217,11 @@
       ],
       "crawled": "https://www.w3.org/TR/attribution/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 23 Jan 2026 11:52:22 GMT"
+        "lastModified": "Tue, 27 Jan 2026 23:25:28 GMT"
       },
       "generator": "bikeshed",
-      "date": "23 January 2026",
-      "revision": "9c2f837e92e69fb2a0d36abfe273d51052258de4",
+      "date": "27 January 2026",
+      "revision": "468365548a1cdd9ce13aa97b2ea9faa32ff70986",
       "algorithms": "algorithms/attribution.json",
       "links": "links/attribution.json",
       "refs": "refs/attribution.json",
@@ -6816,7 +6813,7 @@
       },
       "title": "CSS Nesting Module Level 1",
       "source": "w3c",
-      "shortTitle": "CSS Nesting",
+      "shortTitle": "CSS Nesting 1",
       "categories": [
         "browser"
       ],
@@ -10838,11 +10835,11 @@
       ],
       "crawled": "https://www.w3.org/TR/digital-credentials/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 20 Jan 2026 14:05:53 GMT"
+        "lastModified": "Wed, 28 Jan 2026 01:24:54 GMT"
       },
       "generator": "respec",
-      "date": "20 January 2026",
-      "revision": "7ad0be89502c2e39ddd2f0d70ad8969862417942",
+      "date": "28 January 2026",
+      "revision": "32c606728578734ff236605678eeaeb23b90a266",
       "algorithms": "algorithms/digital-credentials.json",
       "links": "links/digital-credentials.json",
       "refs": "refs/digital-credentials.json",
@@ -13302,8 +13299,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "HTML Working Group",
-          "url": "https://www.w3.org/groups/wg/htmlwg/"
+          "name": "Internationalization Working Group",
+          "url": "https://www.w3.org/International/i18n-activity/i18n-wg/"
         }
       ],
       "release": {
@@ -16372,7 +16369,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/passkey-endpoints-1/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -16424,7 +16421,7 @@
       "groups": [
         {
           "name": "Web Payments Working Group",
-          "url": "https://www.w3.org/Payments/WG/"
+          "url": "https://www.w3.org/groups/wg/payments/"
         }
       ],
       "release": {
@@ -16490,7 +16487,7 @@
       "groups": [
         {
           "name": "Web Payments Working Group",
-          "url": "https://www.w3.org/Payments/WG/"
+          "url": "https://www.w3.org/groups/wg/payments/"
         }
       ],
       "release": {
@@ -16553,7 +16550,7 @@
       "groups": [
         {
           "name": "Web Payments Working Group",
-          "url": "https://www.w3.org/Payments/WG/"
+          "url": "https://www.w3.org/groups/wg/payments/"
         }
       ],
       "release": {
@@ -16614,7 +16611,7 @@
       "groups": [
         {
           "name": "Web Payments Working Group",
-          "url": "https://www.w3.org/Payments/WG/"
+          "url": "https://www.w3.org/groups/wg/payments/"
         }
       ],
       "release": {
@@ -16649,11 +16646,11 @@
       ],
       "crawled": "https://www.w3.org/TR/payment-request/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 30 Sep 2025 04:40:07 GMT"
+        "lastModified": "Tue, 27 Jan 2026 06:48:02 GMT"
       },
       "generator": "respec",
-      "date": "30 September 2025",
-      "revision": "07c63ac43cf39fb299f88ef05531c5d98b666078",
+      "date": "27 January 2026",
+      "revision": "ebf2c098c7125a264a8351eb647a1930e6915495",
       "algorithms": "algorithms/payment-request.json",
       "links": "links/payment-request.json",
       "refs": "refs/payment-request.json",
@@ -17024,7 +17021,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/pointerevents3/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -18812,7 +18809,7 @@
       "groups": [
         {
           "name": "Web Payments Working Group",
-          "url": "https://www.w3.org/Payments/WG/"
+          "url": "https://www.w3.org/groups/wg/payments/"
         }
       ],
       "release": {
@@ -19248,6 +19245,62 @@
       "dfns": "dfns/shacl12-core.json",
       "headings": "headings/shacl12-core.json",
       "ids": "ids/shacl12-core.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/shacl12-node-expr/",
+      "seriesComposition": "full",
+      "shortname": "shacl12-node-expr",
+      "series": {
+        "shortname": "shacl-node-expr",
+        "currentSpecification": "shacl12-node-expr",
+        "title": "SHACL Node Expressions",
+        "shortTitle": "SHACL Node Expressions",
+        "releaseUrl": "https://www.w3.org/TR/shacl-node-expr/",
+        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-node-expr/"
+      },
+      "seriesVersion": "1.2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Data Shapes Working Group",
+          "url": "https://www.w3.org/groups/wg/data-shapes/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/shacl12-node-expr/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/data-shapes/shacl12-node-expr/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/data-shapes",
+        "sourcePath": "shacl12-node-expr/index.html",
+        "filename": "index.html"
+      },
+      "title": "SHACL 1.2 Node Expressions",
+      "source": "w3c",
+      "shortTitle": "SHACL 1.2 Node Expressions",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/shacl12-node-expr/",
+        "https://w3c.github.io/data-shapes/shacl12-node-expr/"
+      ],
+      "crawled": "https://www.w3.org/TR/shacl12-node-expr/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 05 Jan 2026 11:20:16 GMT"
+      },
+      "generator": "respec",
+      "date": "08 January 2026",
+      "algorithms": "algorithms/shacl12-node-expr.json",
+      "links": "links/shacl12-node-expr.json",
+      "refs": "refs/shacl12-node-expr.json",
+      "dfns": "dfns/shacl12-node-expr.json",
+      "headings": "headings/shacl12-node-expr.json",
+      "ids": "ids/shacl12-node-expr.json",
       "cddl": []
     },
     {
@@ -22478,6 +22531,7 @@
       },
       "forks": [
         "wasm-core-2-fork-branch-hinting",
+        "wasm-core-2-fork-compact-import-section",
         "wasm-core-2-fork-extended-const",
         "wasm-core-2-fork-function-references",
         "wasm-core-2-fork-gc",

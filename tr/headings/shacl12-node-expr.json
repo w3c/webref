@@ -1,0 +1,661 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 Node Expressions",
+    "url": "https://www.w3.org/TR/shacl12-node-expr/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#title",
+      "level": 1,
+      "title": "SHACL 1.2 Node Expressions"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "specifications",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#specifications",
+      "level": 2,
+      "title": "SHACL Specifications",
+      "alternateIds": [
+        "shacl-specifications"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "terminolgy",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#terminolgy",
+      "level": 3,
+      "title": "Terminology",
+      "alternateIds": [
+        "x1-1-terminology"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "document-conventions",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#document-conventions",
+      "level": 3,
+      "title": "Document Conventions",
+      "alternateIds": [
+        "x1-2-document-conventions"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-3-conformance"
+      ],
+      "number": "1.3"
+    },
+    {
+      "id": "getting-started",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#getting-started",
+      "level": 2,
+      "title": "Getting started with Node Expressions",
+      "alternateIds": [
+        "x2-getting-started-with-node-expressions"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "syntax",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#syntax",
+      "level": 2,
+      "title": "Node Expression Syntax",
+      "alternateIds": [
+        "x3-node-expression-syntax"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "ConstantNodeExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#ConstantNodeExpression",
+      "level": 3,
+      "title": "Constant Node Expressions",
+      "alternateIds": [
+        "x3-1-constant-node-expressions"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "IRIExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#IRIExpression",
+      "level": 4,
+      "title": "IRI Expressions",
+      "alternateIds": [
+        "x3-1-1-iri-expressions"
+      ],
+      "number": "3.1.1"
+    },
+    {
+      "id": "LiteralExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#LiteralExpression",
+      "level": 4,
+      "title": "Literal Expressions",
+      "alternateIds": [
+        "x3-1-2-literal-expressions"
+      ],
+      "number": "3.1.2"
+    },
+    {
+      "id": "blank-node-functions",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#blank-node-functions",
+      "level": 3,
+      "title": "Node Expressions based on Blank Nodes",
+      "alternateIds": [
+        "x3-2-node-expressions-based-on-blank-nodes"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "NamedParameterFunctions",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#NamedParameterFunctions",
+      "level": 4,
+      "title": "Named Parameter Functions",
+      "alternateIds": [
+        "x3-2-1-named-parameter-functions"
+      ],
+      "number": "3.2.1"
+    },
+    {
+      "id": "ListParameterFunction",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#ListParameterFunction",
+      "level": 4,
+      "title": "List Parameter Functions",
+      "alternateIds": [
+        "x3-2-2-list-parameter-functions"
+      ],
+      "number": "3.2.2"
+    },
+    {
+      "id": "failure-handling",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#failure-handling",
+      "level": 3,
+      "title": "Handling of Failures",
+      "alternateIds": [
+        "x3-3-handling-of-failures"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "library",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#library",
+      "level": 2,
+      "title": "Node Expressions Library",
+      "alternateIds": [
+        "x4-node-expressions-library"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "library-basic",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#library-basic",
+      "level": 3,
+      "title": "Basic Node Expressions",
+      "alternateIds": [
+        "x4-1-basic-node-expressions"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "EmptyExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#EmptyExpression",
+      "level": 4,
+      "title": "Empty Expressions",
+      "alternateIds": [
+        "x4-1-1-empty-expressions"
+      ],
+      "number": "4.1.1"
+    },
+    {
+      "id": "VarExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#VarExpression",
+      "level": 4,
+      "title": "Var Expressions",
+      "alternateIds": [
+        "x4-1-2-var-expressions"
+      ],
+      "number": "4.1.2"
+    },
+    {
+      "id": "ListExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#ListExpression",
+      "level": 4,
+      "title": "List Expressions",
+      "alternateIds": [
+        "x4-1-3-list-expressions"
+      ],
+      "number": "4.1.3"
+    },
+    {
+      "id": "PathValuesExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#PathValuesExpression",
+      "level": 4,
+      "title": "Path Values Expressions",
+      "alternateIds": [
+        "x4-1-4-path-values-expressions"
+      ],
+      "number": "4.1.4"
+    },
+    {
+      "id": "ExistsExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#ExistsExpression",
+      "level": 4,
+      "title": "Exists Expressions",
+      "alternateIds": [
+        "x4-1-5-exists-expressions"
+      ],
+      "number": "4.1.5"
+    },
+    {
+      "id": "IfExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#IfExpression",
+      "level": 4,
+      "title": "If Expressions",
+      "alternateIds": [
+        "x4-1-6-if-expressions"
+      ],
+      "number": "4.1.6"
+    },
+    {
+      "id": "library-list-operators",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#library-list-operators",
+      "level": 3,
+      "title": "List Operator Expressions",
+      "alternateIds": [
+        "x4-2-list-operator-expressions"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "DistinctExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#DistinctExpression",
+      "level": 4,
+      "title": "Distinct Expressions",
+      "alternateIds": [
+        "x4-2-1-distinct-expressions"
+      ],
+      "number": "4.2.1"
+    },
+    {
+      "id": "IntersectionExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#IntersectionExpression",
+      "level": 4,
+      "title": "Intersection Expressions",
+      "alternateIds": [
+        "x4-2-2-intersection-expressions"
+      ],
+      "number": "4.2.2"
+    },
+    {
+      "id": "ConcatExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#ConcatExpression",
+      "level": 4,
+      "title": "Concat Expressions",
+      "alternateIds": [
+        "x4-2-3-concat-expressions"
+      ],
+      "number": "4.2.3"
+    },
+    {
+      "id": "RemoveExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#RemoveExpression",
+      "level": 4,
+      "title": "Remove Expressions",
+      "alternateIds": [
+        "x4-2-4-remove-expressions"
+      ],
+      "number": "4.2.4"
+    },
+    {
+      "id": "FilterShapeExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#FilterShapeExpression",
+      "level": 4,
+      "title": "Filter Shape Expressions",
+      "alternateIds": [
+        "x4-2-5-filter-shape-expressions"
+      ],
+      "number": "4.2.5"
+    },
+    {
+      "id": "LimitExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#LimitExpression",
+      "level": 4,
+      "title": "Limit Expressions",
+      "alternateIds": [
+        "x4-2-6-limit-expressions"
+      ],
+      "number": "4.2.6"
+    },
+    {
+      "id": "OffsetExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#OffsetExpression",
+      "level": 4,
+      "title": "Offset Expressions",
+      "alternateIds": [
+        "x4-2-7-offset-expressions"
+      ],
+      "number": "4.2.7"
+    },
+    {
+      "id": "OrderByExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#OrderByExpression",
+      "level": 4,
+      "title": "OrderBy Expressions",
+      "alternateIds": [
+        "x4-2-8-orderby-expressions"
+      ],
+      "number": "4.2.8"
+    },
+    {
+      "id": "library-advanced-sequence",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#library-advanced-sequence",
+      "level": 3,
+      "title": "Advanced Sequence Operations",
+      "alternateIds": [
+        "x4-3-advanced-sequence-operations"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "FlatMapExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#FlatMapExpression",
+      "level": 4,
+      "title": "FlatMap Expressions",
+      "alternateIds": [
+        "x4-3-1-flatmap-expressions"
+      ],
+      "number": "4.3.1"
+    },
+    {
+      "id": "FindFirstExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#FindFirstExpression",
+      "level": 4,
+      "title": "FindFirst Expressions",
+      "alternateIds": [
+        "x4-3-2-findfirst-expressions"
+      ],
+      "number": "4.3.2"
+    },
+    {
+      "id": "MatchAllExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#MatchAllExpression",
+      "level": 4,
+      "title": "MatchAll Expressions",
+      "alternateIds": [
+        "x4-3-3-matchall-expressions"
+      ],
+      "number": "4.3.3"
+    },
+    {
+      "id": "library-aggregation",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#library-aggregation",
+      "level": 3,
+      "title": "Aggregation Expressions",
+      "alternateIds": [
+        "x4-4-aggregation-expressions"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "CountExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#CountExpression",
+      "level": 4,
+      "title": "Count Expressions",
+      "alternateIds": [
+        "x4-4-1-count-expressions"
+      ],
+      "number": "4.4.1"
+    },
+    {
+      "id": "MinExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#MinExpression",
+      "level": 4,
+      "title": "Min Expressions",
+      "alternateIds": [
+        "x4-4-2-min-expressions"
+      ],
+      "number": "4.4.2"
+    },
+    {
+      "id": "MaxExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#MaxExpression",
+      "level": 4,
+      "title": "Max Expressions",
+      "alternateIds": [
+        "x4-4-3-max-expressions"
+      ],
+      "number": "4.4.3"
+    },
+    {
+      "id": "SumExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#SumExpression",
+      "level": 4,
+      "title": "Sum Expressions",
+      "alternateIds": [
+        "x4-4-4-sum-expressions"
+      ],
+      "number": "4.4.4"
+    },
+    {
+      "id": "misc",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#misc",
+      "level": 3,
+      "title": "Miscellaneous Node Expressions",
+      "alternateIds": [
+        "x4-5-miscellaneous-node-expressions"
+      ],
+      "number": "4.5"
+    },
+    {
+      "id": "InstancesOfExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#InstancesOfExpression",
+      "level": 4,
+      "title": "InstancesOf Expressions",
+      "alternateIds": [
+        "x4-5-1-instancesof-expressions"
+      ],
+      "number": "4.5.1"
+    },
+    {
+      "id": "NodesMatchingExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#NodesMatchingExpression",
+      "level": 4,
+      "title": "Nodes Matching Expressions",
+      "alternateIds": [
+        "x4-5-2-nodes-matching-expressions"
+      ],
+      "number": "4.5.2"
+    },
+    {
+      "id": "sparql-functions",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#sparql-functions",
+      "level": 2,
+      "title": "SPARQL Functions",
+      "alternateIds": [
+        "x5-sparql-functions"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "custom-node-expressions",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#custom-node-expressions",
+      "level": 2,
+      "title": "Custom Node Expressions",
+      "alternateIds": [
+        "x6-custom-node-expressions"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "custom-named-parameter-functions",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#custom-named-parameter-functions",
+      "level": 3,
+      "title": "Custom Named Parameter Functions",
+      "alternateIds": [
+        "x6-1-custom-named-parameter-functions"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "custom-list-parameter-functions",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#custom-list-parameter-functions",
+      "level": 3,
+      "title": "Custom List Parameter Functions",
+      "alternateIds": [
+        "x6-2-custom-list-parameter-functions"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "ArgExpression",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#ArgExpression",
+      "level": 3,
+      "title": "Arg Expressions",
+      "alternateIds": [
+        "x6-3-arg-expressions"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "constraint-components",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#constraint-components",
+      "level": 2,
+      "title": "Constraint Components",
+      "alternateIds": [
+        "x7-constraint-components"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "ExpressionConstraintComponent",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#ExpressionConstraintComponent",
+      "level": 3,
+      "title": "sh:expression",
+      "alternateIds": [
+        "x7-1-sh-expression"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "NodeByExpressionConstraintComponent",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#NodeByExpressionConstraintComponent",
+      "level": 3,
+      "title": "sh:nodeByExpression",
+      "alternateIds": [
+        "x7-2-sh-nodebyexpression"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "dynamic-shacl",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#dynamic-shacl",
+      "level": 2,
+      "title": "Dynamic SHACL",
+      "alternateIds": [
+        "x8-dynamic-shacl"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "example-dynamic-minimum-age-of-presidents",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#example-dynamic-minimum-age-of-presidents",
+      "level": 3,
+      "title": "Example: Dynamic Minimum Age of Presidents",
+      "alternateIds": [
+        "x8-1-example-dynamic-minimum-age-of-presidents"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "example-dynamic-enumerations",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#example-dynamic-enumerations",
+      "level": 3,
+      "title": "Example: Dynamic Enumerations",
+      "alternateIds": [
+        "x8-2-example-dynamic-enumerations"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "x9-security-considerations"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#privacy",
+      "level": 2,
+      "title": "10. Privacy Considerations",
+      "alternateIds": [
+        "x10-privacy-considerations"
+      ]
+    },
+    {
+      "id": "ack",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "a-acknowledgements"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "internationalization",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#internationalization",
+      "level": 2,
+      "title": "Internationalization Considerations",
+      "alternateIds": [
+        "b-internationalization-considerations"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#index",
+      "level": 2,
+      "title": "Index",
+      "alternateIds": [
+        "c-index"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "alternateIds": [
+        "c-1-terms-defined-by-this-specification"
+      ],
+      "number": "C.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "alternateIds": [
+        "c-2-terms-defined-by-reference"
+      ],
+      "number": "C.2"
+    },
+    {
+      "id": "issue-summary",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#issue-summary",
+      "level": 2,
+      "title": "Issue summary",
+      "alternateIds": [
+        "d-issue-summary"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "e-references"
+      ],
+      "number": "E"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "e-1-normative-references"
+      ],
+      "number": "E.1"
+    }
+  ]
+}

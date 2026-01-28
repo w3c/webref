@@ -1,0 +1,52 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 Node Expressions",
+    "url": "https://www.w3.org/TR/shacl12-node-expr/"
+  },
+  "algorithms": [
+    {
+      "name": "list parameter function",
+      "href": "https://www.w3.org/TR/shacl12-node-expr/#dfn-list-parameter-function",
+      "html": "A <dfn data-plurals=\"list parameter functions\" id=\"dfn-list-parameter-function\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">list parameter function</dfn> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-node-expression-function\" id=\"ref-for-index-term-node-expression-function-6\">node expression function</a>\n\t\t\t\t\t\tthat is represented by a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-blank-node\" id=\"ref-for-index-term-blank-node-6\">blank node</a> that is the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-subject\" id=\"ref-for-index-term-subject-3\">subject</a> of a single\n\t\t\t\t\t\t<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-rdf-triple\" id=\"ref-for-index-term-rdf-triple-3\">triple</a> where the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-object\" id=\"ref-for-index-term-object-type-2\">object</a> <code>o</code> is conforming to one of the following syntax rules, in order:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>o</code> is the empty <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-shacl-list\" id=\"ref-for-index-term-shacl-list-2\">SHACL list</a> <code>rdf:nil</code> (written as <code>()</code> in Turtle)\n\t\t\t\t\t\t\tthen the arguments are the empty list.<br>\n\t\t\t\t\t\t\tExample: <code>[ sparql:now () ]</code>"
+        },
+        {
+          "html": "If <code>o</code> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/rdf12-concepts/#dfn-blank-node\" id=\"ref-for-index-term-blank-node-7\">blank node</a> that is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-well-formed\" id=\"ref-for-index-term-well-formed-4\">well-formed</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-shacl-list\" id=\"ref-for-index-term-shacl-list-3\">SHACL list</a> where all\n\t\t\t\t\t\t\t<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-members\" id=\"ref-for-index-term-members-2\">members</a> are <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-well-formed\" id=\"ref-for-index-term-well-formed-5\">well-formed</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-node-expression\" id=\"ref-for-index-term-node-expression-10\">node expressions</a>,\n\t\t\t\t\t\t\tthen the arguments are the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-members\" id=\"ref-for-index-term-members-3\">members</a> of that list.<br>\n\t\t\t\t\t\t\tExamples: <code>[ sparql:plus ( 38 4 ) ]</code> and <code>[ sparql:abs ( -42 ) ]</code>"
+        },
+        {
+          "html": "If the function call has one argument,\n\t\t\t\t\t\t\tand the argument is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-well-formed\" id=\"ref-for-index-term-well-formed-6\">well-formed</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-node-expression\" id=\"ref-for-index-term-node-expression-11\">node expression</a>,\n\t\t\t\t\t\t\tthen the argument can be given without the list.\n\t\t\t\t\t\t\tIt is equivalent to a function call with a list of one element.<br>\n\t\t\t\t\t\t\tExample: <code>[ sparql:abs -42 ]</code>, which is equivalent to\n\t\t\t\t\t\t\t<code>[ sparql:abs ( -42 ) ]</code>."
+        }
+      ]
+    },
+    {
+      "html": "Let <code>var</code> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-value\" id=\"ref-for-index-term-value-2\">value</a> of <code>shnex:var</code> in the <a href=\"https://www.w3.org/TR/shacl12-node-expr/#dfn-var-expression\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-var-expression-1\">var expression</a>.\n\t\t\t\t\t\t\tThe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-output-nodes\" id=\"ref-for-index-term-output-nodes-15\">output nodes</a> of the <a href=\"https://www.w3.org/TR/shacl12-node-expr/#dfn-var-expression\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-var-expression-2\">var expression</a> are computed as follows, in order:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "if <code>var</code> is <code>\"focusNode\"</code> then <code>evalExpr(expr, focusGraph, focusNode, scope) -&gt; [focusNode]</code>"
+        },
+        {
+          "html": "if <code>var</code> is in the <code>scope</code> then <code>evalExpr(expr, focusGraph, focusNode, scope) -&gt; [ scope[var] ]</code>"
+        },
+        {
+          "html": "otherwise <code>evalExpr(expr, focusGraph, focusNode, scope) -&gt; []</code>"
+        }
+      ]
+    },
+    {
+      "html": "Let <code>arg</code> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-value\" id=\"ref-for-index-term-value-41\">value</a> of <code>shnex:arg</code> in the <a href=\"https://www.w3.org/TR/shacl12-node-expr/#dfn-arg-expression\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-arg-expression-3\">arg expression</a>.\n\t\t\t\t\t\tThe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/shacl12-core/#dfn-output-nodes\" id=\"ref-for-index-term-output-nodes-60\">output nodes</a> of the <a href=\"https://www.w3.org/TR/shacl12-node-expr/#dfn-var-expression\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-var-expression-4\">var expression</a> are computed as follows, in order:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "if <code>arg</code> is in the <code>scope</code> and has the value <code>a</code> then\n\t\t\t\t\t\t\t<code>evalExpr(expr, focusGraph, focusNode, scope) -&gt; evalExpr(a, focusGraph, focusNode, {})</code>"
+        },
+        {
+          "html": "otherwise <code>evalExpr(expr, focusGraph, focusNode, scope) -&gt; []</code>"
+        }
+      ]
+    }
+  ]
+}
