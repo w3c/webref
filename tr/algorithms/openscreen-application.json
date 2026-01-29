@@ -5,7 +5,7 @@
   },
   "algorithms": [
     {
-      "html": "For additional terms and idioms specific to the <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/openscreen-application/#biblio-presentation-api\" title=\"Presentation API\">Presentation API</a> or <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/openscreen-application/#biblio-remote-playback\" title=\"Remote Playback API\">Remote Playback API</a>,\nplease consult the respective specifications.",
+      "html": "For additional terms and idioms specific to the\n<a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/openscreen-application/#biblio-presentation-api\" title=\"Presentation API\">Presentation API</a> or <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/openscreen-application/#biblio-remote-playback\" title=\"Remote Playback API\">Remote Playback API</a>,\nplease consult the respective specifications.",
       "rationale": "if",
       "steps": [
         {
@@ -30,13 +30,13 @@
           "html": "<p>If a message cannot be delivered, then the controller must be\nable to signal the receiver (or vice versa) that the connection should be\nclosed with reason <code>error</code>.</p>"
         },
         {
-          "html": "<p>The controller and presentation must be able to send and receive <code>DOMString</code> messages (represented as <code>string</code> type in ECMAScript).</p>"
+          "html": "<p>The controller and presentation must be able to send and receive <code>DOMString</code>\nmessages (represented as <code>string</code> type in ECMAScript).</p>"
         },
         {
-          "html": "<p>The controller and presentation must be able to send and receive binary\nmessages (represented as <code>Blob</code> objects in HTML5, or <code>ArrayBuffer</code> or <code>ArrayBufferView</code> types in ECMAScript).</p>"
+          "html": "<p>The controller and presentation must be able to send and receive binary\nmessages (represented as <code>Blob</code> objects in HTML5, or <code>ArrayBuffer</code> or\n<code>ArrayBufferView</code> types in ECMAScript).</p>"
         },
         {
-          "html": "<p>The controller must be able to signal to the receiver to\nterminate a presentation, given its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/presentation-api/#dfn-presentation-request-url\" id=\"ref-for-dfn-presentation-request-url③\">presentation request URL</a> and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/presentation-api/#dfn-presentation-identifier\" id=\"ref-for-dfn-presentation-identifier②\">presentation identifier</a>.</p>"
+          "html": "<p>The controller must be able to signal to the receiver to\nterminate a presentation, given its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/presentation-api/#dfn-presentation-request-url\" id=\"ref-for-dfn-presentation-request-url③\">presentation request URL</a> and\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/presentation-api/#dfn-presentation-identifier\" id=\"ref-for-dfn-presentation-identifier②\">presentation identifier</a>.</p>"
         },
         {
           "html": "<p>The receiver must be able to signal all connected controllers\nwhen a presentation is terminated.</p>"
