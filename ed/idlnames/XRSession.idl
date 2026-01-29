@@ -41,6 +41,11 @@ partial interface XRSession {
   Promise<undefined> deletePersistentAnchor(DOMString uuid);
 };
 
+// Source: WebXR Plane Detection Module (https://immersive-web.github.io/plane-detection/)
+partial interface XRSession {
+  Promise<undefined> initiateRoomCapture();
+};
+
 // Source: WebXR Augmented Reality Module - Level 1 (https://www.w3.org/TR/webxr-ar-module-1/)
 partial interface XRSession {
   // Attributes

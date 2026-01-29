@@ -1,0 +1,10 @@
+// Source: WebXR Plane Detection Module (https://immersive-web.github.io/plane-detection/)
+[Exposed=Window]
+interface XRPlane {
+    [SameObject] readonly attribute XRSpace planeSpace;
+
+    readonly attribute FrozenArray<DOMPointReadOnly> polygon;
+    readonly attribute XRPlaneOrientation? orientation;
+    readonly attribute DOMHighResTimeStamp lastChangedTime;
+    readonly attribute DOMString? semanticLabel;
+};
