@@ -60,7 +60,7 @@
           "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty: use the <a href=\"https://www.w3.org/TR/accname-1.2/#mapping_additional_nd_te\">text equivalent computation</a> of\n              the associated <code>label</code> element's subtree - if more than one <code>label</code> is associated; concatenate their subtrees by DOM order, delimited by spaces.\n              <p>\n                If the control is encapsulated by its <code>label</code> element, and the control has an <code>alt</code> attribute, then exclude the attribute's value from the control's computed\n                <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a>.\n              </p>"
         },
         {
-          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty: use the value of the control's <code>alt</code> attribute if present and its value is not the empty\n              string."
+          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty: use the value of the control's <code>alt</code> attribute if present and its value, when trimmed of\n              <a data-link-type=\"dfn\" data-lt=\"ascii whitespace\" href=\"https://infra.spec.whatwg.org/#ascii-whitespace\">whitespace</a>, is not the empty string."
         },
         {
           "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty: use the value of the control's <code>title</code> attribute if present and its value is not the empty\n              string."
@@ -186,7 +186,7 @@
           "html": "If the <code>img</code> element has an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-label\"><code>aria-label</code></a> or an <a href=\"https://www.w3.org/TR/wai-aria-1.2/#aria-labelledby\"><code>aria-labelledby</code></a> attribute the\n              <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is to be calculated using the algorithm defined in\n              <a href=\"https://w3c.github.io/accname/\" class=\"accname\">Accessible Name and Description: Computation and <abbr title=\"application programming interface\">API</abbr> Mappings</a>."
         },
         {
-          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty: use <code>alt</code> attribute, even if its value is the empty string."
+          "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty: use <code>alt</code> attribute, even if its value, when trimmed of <a data-link-type=\"dfn\" data-lt=\"ascii whitespace\" href=\"https://infra.spec.whatwg.org/#ascii-whitespace\">whitespace</a>, is the\n              empty string."
         },
         {
           "html": "If the <a href=\"https://www.w3.org/TR/accname-1.2/#dfn-accessible-name\">accessible name</a> is still empty and there is no <code>alt</code> attribute, use the <code>title</code> attribute."
