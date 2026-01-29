@@ -20,6 +20,26 @@
           "html": "Otherwise, t[x/y] = t."
         }
       ]
+    },
+    {
+      "name": "RDF dataset merge",
+      "href": "https://w3c.github.io/rdf-semantics/spec/#dfn-rdf-dataset-merge-0",
+      "html": "Given two or more RDF datasets, their <dfn id=\"dfn-rdf-dataset-merge-0\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">RDF dataset merge</dfn> \n            is defined by the following procedure:<br>",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "Force any blank nodes shared between the datasets to be unique in each dataset."
+        },
+        {
+          "html": "Label each triple in the datasets (a) with the name (a URI or a blank node) of the graph that includes it, \n              and (b) with a special label \"default\" if it is included in a default graph."
+        },
+        {
+          "html": "Let the default graph of the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/rdf-semantics/spec/#dfn-rdf-dataset-merge-0\" class=\"internalDFN\" id=\"ref-for-dfn-rdf-dataset-merge-0-1\">RDF dataset merge</a> to be the set of triples with the label \"default\"."
+        },
+        {
+          "html": "For each label except the label \"default\", let the name of named graph of the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/rdf-semantics/spec/#dfn-rdf-dataset-merge-0\" class=\"internalDFN\" id=\"ref-for-dfn-rdf-dataset-merge-0-2\">RDF dataset merge</a> to be that label, and the graph be the set of triples with that label."
+        }
+      ]
     }
   ]
 }
