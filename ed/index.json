@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-01-30T12:54:13.020Z",
+  "date": "2026-01-30T18:53:22.281Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -32,7 +32,7 @@
   },
   "stats": {
     "crawled": 724,
-    "errors": 2
+    "errors": 3
   },
   "crawler": "reffy-20.0.9",
   "results": [
@@ -1796,7 +1796,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-size-adjust-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 20:06:24 GMT"
+        "lastModified": "Thu, 29 Jan 2026 20:06:25 GMT"
       },
       "generator": "bikeshed",
       "date": "14 January 2026",
@@ -2517,9 +2517,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 15:21:07 GMT"
+        "lastModified": "Fri, 30 Jan 2026 14:24:56 GMT"
       },
-      "date": "29 January 2026",
+      "date": "30 January 2026",
       "algorithms": "algorithms/html.json",
       "links": "links/html.json",
       "refs": "refs/html.json",
@@ -15860,7 +15860,8 @@
       "refs": "refs/rfc8297.json",
       "headings": "headings/rfc8297.json",
       "ids": "ids/rfc8297.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://httpwg.org/specs/rfc8297.html triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 293)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.rfc-editor.org/rfc/rfc8470",
@@ -19602,7 +19603,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-break-4/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 20:06:24 GMT"
+        "lastModified": "Thu, 29 Jan 2026 20:06:25 GMT"
       },
       "generator": "bikeshed",
       "date": "22 October 2025",
@@ -20156,7 +20157,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-adjust-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 20:06:24 GMT"
+        "lastModified": "Thu, 29 Jan 2026 20:06:25 GMT"
       },
       "generator": "bikeshed",
       "date": "11 December 2025",
@@ -21823,7 +21824,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-grid-3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 20:06:24 GMT"
+        "lastModified": "Thu, 29 Jan 2026 20:06:25 GMT"
       },
       "generator": "bikeshed",
       "date": "21 January 2026",
@@ -22433,7 +22434,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 20:06:24 GMT"
+        "lastModified": "Thu, 29 Jan 2026 20:06:25 GMT"
       },
       "generator": "bikeshed",
       "date": "12 December 2025",
@@ -23732,7 +23733,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-rhythm-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 20:06:24 GMT"
+        "lastModified": "Thu, 29 Jan 2026 20:06:25 GMT"
       },
       "generator": "bikeshed",
       "date": "30 December 2025",
@@ -24007,7 +24008,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scroll-snap-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 20:06:24 GMT"
+        "lastModified": "Thu, 29 Jan 2026 20:06:25 GMT"
       },
       "generator": "bikeshed",
       "date": "26 December 2025",
@@ -25527,7 +25528,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-4/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 20:06:24 GMT"
+        "lastModified": "Thu, 29 Jan 2026 20:06:25 GMT"
       },
       "generator": "bikeshed",
       "date": "7 December 2025",
@@ -25803,7 +25804,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-view-transitions-2/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 20:06:24 GMT"
+        "lastModified": "Thu, 29 Jan 2026 20:06:25 GMT"
       },
       "generator": "bikeshed",
       "date": "29 January 2026",
@@ -26184,7 +26185,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css2/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 20:06:24 GMT"
+        "lastModified": "Thu, 29 Jan 2026 20:06:25 GMT"
       },
       "generator": "bikeshed",
       "date": "30 December 2025",
@@ -32982,7 +32983,7 @@
       ],
       "crawled": "https://w3c.github.io/picture-in-picture/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 30 Jan 2026 09:36:04 GMT"
+        "lastModified": "Fri, 30 Jan 2026 09:36:05 GMT"
       },
       "generator": "bikeshed",
       "date": "30 January 2026",
@@ -42631,7 +42632,7 @@
       ],
       "crawled": "https://drafts.csswg.org/selectors-nonelement-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 20:06:24 GMT"
+        "lastModified": "Thu, 29 Jan 2026 20:06:25 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
