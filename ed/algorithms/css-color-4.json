@@ -377,7 +377,7 @@
           "html": "if <var>tnear</var> &lt; 0\n\t\t\t\n        <ul>\n         <li>let <var>tnear</var> be <var>tfar</var>\n\t\t\t\t\t<a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-7\"><sup>7</sup></a>\n\t\t\t\t\n        </li></ul>"
         },
         {
-          "html": "if <var>tnear</var> is infinite (or matches the initial very large value)\n\t\t\t\n        <ul>\n         <li>return INTERSECTION NOT FOUND\n        </li></ul>"
+          "html": "if (<var>tnear</var> &gt; 10)\n\t\t\t\n        <ul>\n         <li>return INTERSECTION NOT FOUND\n        </li></ul>"
         },
         {
           "html": "for (i =0; i &lt; 3; i++):\n\t\t\t\n        <ul>\n         <li>let <var>result</var><i>[i]</i> be <var>start</var><i>[i]</i> + <var>direction</var><i>[i]</i> * <var>tnear</var>\n        </li></ul>"
