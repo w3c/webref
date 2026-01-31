@@ -2323,7 +2323,7 @@
         "WebkitAlignSelf",
         "webkitAlignSelf"
       ],
-      "syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position>",
+      "syntax": "auto | <overflow-position>? [ normal | <self-position> ]| stretch | <baseline-position>",
       "extended": []
     },
     {
@@ -3220,7 +3220,7 @@
         "align-self",
         "alignSelf"
       ],
-      "syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-center",
+      "syntax": "auto | <overflow-position>? [ normal | <self-position> ]| stretch | <baseline-position> | anchor-center",
       "extended": [
         "https://drafts.csswg.org/css-anchor-position-1/#propdef-align-self"
       ]
@@ -3272,7 +3272,7 @@
         "anchor-name",
         "anchorName"
       ],
-      "syntax": "none | <dashed-ident>#",
+      "syntax": "none | <anchor-name>#",
       "extended": []
     },
     {
@@ -3289,7 +3289,7 @@
         "anchor-scope",
         "anchorScope"
       ],
-      "syntax": "none | all | <dashed-ident>#",
+      "syntax": "none | all | <anchor-name>#",
       "extended": []
     },
     {
@@ -9546,7 +9546,7 @@
         "justify-self",
         "justifySelf"
       ],
-      "syntax": "auto | normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | anchor-center",
+      "syntax": "auto | <overflow-position>? [ normal | <self-position> | left | right ] | stretch | <baseline-position> | anchor-center",
       "extended": [
         "https://drafts.csswg.org/css-anchor-position-1/#propdef-justify-self"
       ]
@@ -12001,7 +12001,7 @@
     {
       "name": "position-anchor",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-anchor",
-      "initial": "none",
+      "initial": "normal",
       "appliesTo": "absolutely positioned boxes",
       "inherited": "no",
       "percentages": "n/a",
@@ -12012,7 +12012,7 @@
         "position-anchor",
         "positionAnchor"
       ],
-      "syntax": "none | auto | <anchor-name>",
+      "syntax": "normal | none | auto | <anchor-name>",
       "extended": []
     },
     {
