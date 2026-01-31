@@ -7,7 +7,7 @@
     {
       "name": "anchor-name",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-anchor-name",
-      "value": "none | <dashed-ident>#",
+      "value": "none | <anchor-name>#",
       "initial": "none",
       "appliesTo": "all elements that generate a principal box",
       "inherited": "no",
@@ -24,11 +24,11 @@
           "value": "none"
         },
         {
-          "name": "<dashed-ident>#",
+          "name": "<anchor-name>#",
           "prose": "If the element generates a principal box, the element is an anchor element, with a list of anchor names as specified. Each anchor name is a loosely matched tree-scoped name. Otherwise, the property has no effect.",
-          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-anchor-name-dashed-ident",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-anchor-name-anchor-name",
           "type": "value",
-          "value": "<dashed-ident>#"
+          "value": "<anchor-name>#"
         }
       ],
       "styleDeclaration": [
@@ -39,7 +39,7 @@
     {
       "name": "anchor-scope",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-anchor-scope",
-      "value": "none | all | <dashed-ident>#",
+      "value": "none | all | <anchor-name>#",
       "initial": "none",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -63,11 +63,11 @@
           "value": "all"
         },
         {
-          "name": "<dashed-ident>",
-          "prose": "Specifies that a matching anchor name defined by this element or its descendants—​whose scope is not already limited by a descendant using anchor-scope—​to be in scope only for this element’s descendants; and limits descendants to only match these anchor names to anchor elements within this subtree. The <dashed-ident> represents a strictly matched tree-scoped name, i.e. it can only match against anchor names in the same shadow tree.[CSS-SCOPING-1]",
-          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-anchor-scope-dashed-ident",
+          "name": "<anchor-name>",
+          "prose": "Specifies that a matching anchor name defined by this element or its descendants—​whose scope is not already limited by a descendant using anchor-scope—​to be in scope only for this element’s descendants; and limits descendants to only match these anchor names to anchor elements within this subtree. The <anchor-name> represents a strictly matched tree-scoped name, i.e. it can only match against anchor names in the same shadow tree.[CSS-SCOPING-1]",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-anchor-scope-anchor-name",
           "type": "value",
-          "value": "<dashed-ident>"
+          "value": "<anchor-name>"
         }
       ],
       "styleDeclaration": [
@@ -78,8 +78,8 @@
     {
       "name": "position-anchor",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-position-anchor",
-      "value": "none | auto | <anchor-name>",
-      "initial": "none",
+      "value": "normal | none | auto | <anchor-name>",
+      "initial": "normal",
       "appliesTo": "absolutely positioned boxes",
       "inherited": "no",
       "percentages": "n/a",
@@ -87,6 +87,13 @@
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "values": [
+        {
+          "name": "normal",
+          "prose": "If position-area is none, behaves as none. Otherwise, behaves as auto.",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-anchor-normal",
+          "type": "value",
+          "value": "normal"
+        },
         {
           "name": "none",
           "prose": "The box has no default anchor element.",
@@ -545,6 +552,12 @@
   "selectors": [],
   "values": [
     {
+      "name": "<anchor-name>",
+      "href": "https://www.w3.org/TR/css-anchor-position-1/#typedef-anchor-name",
+      "type": "type",
+      "value": "<dashed-ident>"
+    },
+    {
       "name": "<position-area>",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#typedef-position-area",
       "type": "type",
@@ -1001,12 +1014,6 @@
           "value": "center"
         }
       ]
-    },
-    {
-      "name": "<anchor-name>",
-      "href": "https://www.w3.org/TR/css-anchor-position-1/#typedef-anchor-name",
-      "type": "type",
-      "value": "<dashed-ident>"
     },
     {
       "name": "<anchor-side>",
