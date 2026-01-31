@@ -87,7 +87,7 @@
     {
       "name": "justify-self",
       "href": "https://drafts.csswg.org/css-align-3/#propdef-justify-self",
-      "value": "auto | normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ]",
+      "value": "auto | <overflow-position>? [ normal | <self-position> | left | right ] | stretch | <baseline-position>",
       "initial": "auto",
       "appliesTo": "block-level boxes, absolutely-positioned boxes, and grid items",
       "inherited": "no",
@@ -140,7 +140,7 @@
     {
       "name": "align-self",
       "href": "https://drafts.csswg.org/css-align-3/#propdef-align-self",
-      "value": "auto | normal | stretch | <baseline-position> | <overflow-position>? <self-position>",
+      "value": "auto | <overflow-position>? [ normal | <self-position> ]| stretch | <baseline-position>",
       "initial": "auto",
       "appliesTo": "flex items, grid items, and absolutely-positioned boxes",
       "inherited": "no",
@@ -555,7 +555,7 @@
       "values": [
         {
           "name": "safe",
-          "prose": "If the size of the alignment subject overflows the alignment container, the alignment subject is instead aligned as if the alignment mode were start.",
+          "prose": "If the size of the alignment subject overflows the alignment container, the alignment subject is instead aligned as if the alignment mode were flex-start.",
           "href": "https://drafts.csswg.org/css-align-3/#valdef-overflow-position-safe",
           "type": "value",
           "value": "safe"
