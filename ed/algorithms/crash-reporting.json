@@ -1,0 +1,145 @@
+{
+  "spec": {
+    "title": "Crash Reporting",
+    "url": "https://wicg.github.io/crash-reporting/"
+  },
+  "algorithms": [
+    {
+      "name": "Window/crashReport",
+      "href": "https://wicg.github.io/crash-reporting/#dom-window-crashreport",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-window-crashreport\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>crashReport</code></dfn> getter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, then return null.</p>"
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#window-crashreport\" id=\"ref-for-window-crashreport\">crashReport</a> object.</p>"
+        }
+      ]
+    },
+    {
+      "name": "CrashReportContext/initialize(length)",
+      "href": "https://wicg.github.io/crash-reporting/#dom-crashreportcontext-initialize",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"CrashReportContext\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-crashreportcontext-initialize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>initialize(<var>length</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active①\">fully active</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-backing-buffer-id\" id=\"ref-for-crashreportcontext-backing-buffer-id②\">backing buffer ID</a> is non-null, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①\">new</a>\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>length</var> is &gt; than 5 * 1024 * 1024, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new②\">new</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\"\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-buffer-length\" id=\"ref-for-crashreportcontext-buffer-length\">buffer length</a> to <var>length</var>.</p>"
+        },
+        {
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-backing-buffer-id\" id=\"ref-for-crashreportcontext-backing-buffer-id③\">backing buffer ID</a> to the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/C#new-unique-internal-value\" id=\"ref-for-new-unique-internal-value\">creating a new unique internal value</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>cachedThis</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a>.</p>"
+        },
+        {
+          "html": "Run these steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>backing buffer ID</var> be <var>cachedThis</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-backing-buffer-id\" id=\"ref-for-crashreportcontext-backing-buffer-id④\">backing buffer ID</a>.</p>"
+            },
+            {
+              "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> steps to create and initialize a backing memory store of\n  <var>length</var> bytes.</p>"
+            },
+            {
+              "html": "If such a buffer was created, then:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent③\">user agent</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#user-agent-crash-report-buffers\" id=\"ref-for-user-agent-crash-report-buffers②\">crash report buffers</a>[<var>backing buffer ID</var>] to the\n buffer.</p>"
+                },
+                {
+                  "html": "<p>Set <var>cachedThis</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-is-buffer-initialized\" id=\"ref-for-crashreportcontext-is-buffer-initialized\">is buffer initialized</a> to true.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#dom-manipulation-task-source\" id=\"ref-for-dom-manipulation-task-source\">DOM manipulation task source</a> given <var>cachedThis</var>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-undefined\" id=\"ref-for-idl-undefined③\">undefined</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "CrashReportContext/set(key, value)",
+      "href": "https://wicg.github.io/crash-reporting/#dom-crashreportcontext-set",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"CrashReportContext\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-crashreportcontext-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>set(<var>key</var>, <var>value</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window②\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active②\">fully active</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new③\">new</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-is-buffer-initialized\" id=\"ref-for-crashreportcontext-is-buffer-initialized①\">is buffer initialized</a> is false, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new④\">new</a>\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-internal-map\" id=\"ref-for-crashreportcontext-internal-map④\">internal map</a>[<var>key</var>] to <var>value</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>serialization</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#serialize-a-javascript-value-to-json-bytes\" id=\"ref-for-serialize-a-javascript-value-to-json-bytes\">serializing a JavaScript value to JSON bytes</a>, given\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-internal-map\" id=\"ref-for-crashreportcontext-internal-map⑤\">internal map</a>.</p>"
+        },
+        {
+          "html": "If <var>serialization</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is &gt; <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-buffer-length\" id=\"ref-for-crashreportcontext-buffer-length①\">buffer length</a>, then:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove\">Remove</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-internal-map\" id=\"ref-for-crashreportcontext-internal-map⑥\">internal map</a>[<var>key</var>].</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">Throw</a> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑤\">new</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>backing buffer ID</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-backing-buffer-id\" id=\"ref-for-crashreportcontext-backing-buffer-id⑥\">backing buffer ID</a>.</p>"
+        },
+        {
+          "html": "<p>Write <var>serialization</var> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent④\">user agent</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#user-agent-crash-report-buffers\" id=\"ref-for-user-agent-crash-report-buffers③\">crash report buffers</a>[<var>backing buffer ID</var>].</p>"
+        }
+      ]
+    },
+    {
+      "name": "CrashReportContext/delete(key)",
+      "href": "https://wicg.github.io/crash-reporting/#dom-crashreportcontext-delete",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"CrashReportContext\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-crashreportcontext-delete\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>delete(<var>key</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window③\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active③\">fully active</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑥\">new</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-is-buffer-initialized\" id=\"ref-for-crashreportcontext-is-buffer-initialized②\">is buffer initialized</a> is false, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new⑦\">new</a>\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove①\">Remove</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-internal-map\" id=\"ref-for-crashreportcontext-internal-map⑦\">internal map</a>[<var>key</var>].</p>"
+        },
+        {
+          "html": "<p>Let <var>serialization</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#serialize-a-javascript-value-to-json-bytes\" id=\"ref-for-serialize-a-javascript-value-to-json-bytes①\">serializing a JavaScript value to JSON bytes</a>, given\n <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-internal-map\" id=\"ref-for-crashreportcontext-internal-map⑧\">internal map</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>backing buffer ID</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#crashreportcontext-backing-buffer-id\" id=\"ref-for-crashreportcontext-backing-buffer-id⑦\">backing buffer ID</a>.</p>"
+        },
+        {
+          "html": "<p>Write <var>serialization</var> to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#user-agent\" id=\"ref-for-user-agent⑤\">user agent</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/crash-reporting/#user-agent-crash-report-buffers\" id=\"ref-for-user-agent-crash-report-buffers④\">crash report buffers</a>[<var>backing buffer ID</var>].</p>"
+        }
+      ]
+    }
+  ]
+}
