@@ -71,6 +71,14 @@ describe(`The curated view of CSS extracts`, async () => {
     assert.equal(results.length, 0, writeAnomalies(results));
   });
 
+  // Collect all property names across all specs for longhands validation
+  const allPropertyNames = new Set();
+  for (const data of Object.values(all)) {
+    for (const prop of data.properties) {
+      allPropertyNames.add(prop.name);
+    }
+  }
+
   for (const [shortname, data] of Object.entries(all)) {
     describe(`The CSS extract for ${shortname} in the curated view`, () => {
       it('contains a link to the underlying spec', async () => {
@@ -118,6 +126,20 @@ describe(`The curated view of CSS extracts`, async () => {
                 }, `Invalid definition value: ${value.value}`);
               });
             }
+          }
+        }
+      }
+
+      // Validate that all longhands in shorthand properties exist
+      for (const prop of data.properties) {
+        if (prop.longhands && Array.isArray(prop.longhands)) {
+          for (const longhand of prop.longhands) {
+            it(`has valid longhand "${longhand}" for shorthand "${prop.name}"`, () => {
+              assert(
+                allPropertyNames.has(longhand),
+                `Longhand "${longhand}" for shorthand "${prop.name}" does not exist in any CSS extract`
+              );
+            });
           }
         }
       }
