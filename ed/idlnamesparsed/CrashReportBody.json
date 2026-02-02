@@ -6,7 +6,7 @@
       "title": "Crash Reporting",
       "url": "https://wicg.github.io/crash-reporting/"
     },
-    "fragment": "dictionary CrashReportBody : ReportBody {\n  DOMString reason;\n  DOMString stack;\n  boolean is_top_level;\n  DocumentVisibilityState visibility_state;\n};"
+    "fragment": "dictionary CrashReportBody : ReportBody {\n  DOMString reason;\n  DOMString stack;\n  boolean is_top_level;\n  DocumentVisibilityState visibility_state;\n  object crash_report_api;\n};"
   },
   "extended": [],
   "inheritance": {

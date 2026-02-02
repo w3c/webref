@@ -1,0 +1,7 @@
+// Source: Crash Reporting (https://wicg.github.io/crash-reporting/)
+[Exposed=Window]
+interface CrashReportContext {
+    Promise<undefined> initialize(unsigned long long length);
+    undefined set(DOMString key, DOMString value);
+    undefined delete(DOMString key);
+};

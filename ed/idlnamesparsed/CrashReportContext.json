@@ -1,0 +1,15 @@
+{
+  "name": "CrashReportContext",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Crash Reporting",
+      "url": "https://wicg.github.io/crash-reporting/"
+    },
+    "fragment": "[Exposed=Window]\ninterface CrashReportContext {\n    Promise<undefined> initialize(unsigned long long length);\n    undefined set(DOMString key, DOMString value);\n    undefined delete(DOMString key);\n};",
+    "href": "https://wicg.github.io/crash-reporting/#crashreportcontext"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

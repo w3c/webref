@@ -15,7 +15,7 @@
     },
     "idlNames": {
       "XRMesh": {
-        "fragment": "[Exposed=Window] interface XRMesh {\n    [SameObject] readonly attribute XRSpace meshSpace;\n\n    readonly attribute FrozenArray<Float32Array> vertices;\n    readonly attribute Uint32Array indices;\n    readonly attribute DOMHighResTimeStamp lastChangedTime;\n    readonly attribute DOMString? semanticLabel;\n};",
+        "fragment": "[Exposed=Window] interface XRMesh {\n    [SameObject] readonly attribute XRSpace meshSpace;\n\n    readonly attribute Float32Array vertices;\n    readonly attribute Uint32Array indices;\n    readonly attribute DOMHighResTimeStamp lastChangedTime;\n    readonly attribute DOMString? semanticLabel;\n};",
         "type": "interface",
         "name": "XRMesh",
         "inheritance": null,
@@ -49,19 +49,10 @@
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
-              "generic": "FrozenArray",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Float32Array"
-                }
-              ]
+              "idlType": "Float32Array"
             },
             "extAttrs": [],
             "special": "",

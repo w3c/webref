@@ -115,6 +115,11 @@ partial interface Window {
   readonly attribute boolean credentialless;
 };
 
+// Source: Crash Reporting (https://wicg.github.io/crash-reporting/)
+partial interface Window {
+  readonly attribute CrashReportContext crashReport;
+};
+
 // Source: Digital Goods API (https://wicg.github.io/digital-goods/)
 partial interface Window {
   [SecureContext] Promise<DigitalGoodsService> getDigitalGoodsService(
