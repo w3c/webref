@@ -5,14 +5,14 @@
   },
   "algorithms": [
     {
-      "html": "This registry maintains a mapping between <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#codec-string\" id=\"ref-for-codec-string\">codec strings</a> and registration\nspecifications as described below.",
+      "html": "The Media Working Group might seek expertise from outside the\nWorking Group as part of its evaluation, e.g., from the codec specification\neditors or relevant standards group. If the codec specification is not\npublicly available, it must be made available to the Working Group for\nevaluation. For the entry to be included, there needs\nto be interest from at least one implementer in the Working Group. If the Working Group \nreaches consensus to accept the candidate entry, send a pull request (either by editors\nor by the party requesting the candidate registration) that meets the following requirements:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>Each entry must include a unique <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#codec-string\" id=\"ref-for-codec-string①\">codec string</a>, a common name string, and a\nlink to the codec’s specification.</p>"
+          "html": "<p>A unique <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#codec-string\" id=\"ref-for-codec-string①\">codec string</a>, a common name string, and a\nlink to the codec’s public <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"registration-specification\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">registration specification</dfn>.</p>"
         },
         {
-          "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#codec-string\" id=\"ref-for-codec-string②\">codec string</a> must be crafted as follows:",
+          "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#codec-string\" id=\"ref-for-codec-string②\">codec string</a> requirements are as follows:",
           "rationale": "if",
           "steps": [
             {
@@ -29,17 +29,11 @@
         {
           "html": "<p>Each registration’s specification must include a sequence of sections\ndescribing:</p>",
           "ignored": [
-            "Recognized codec strings EncodedAudioChunk or EncodedVideoChunk internal data AudioDecoderConfig or VideoDecoderConfig description bytes Expectations for EncodedAudioChunk or EncodedVideoChunk [[type]]"
+            "Recognized codec strings. EncodedAudioChunk or EncodedVideoChunk internal data. AudioDecoderConfig or VideoDecoderConfig description bytes. Expectations for EncodedAudioChunk or EncodedVideoChunk [[type]]."
           ]
         },
         {
-          "html": "<p>Where applicable, a registration specification may include a section\ndescribing extensions to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-videoencoderconfig\" id=\"ref-for-dictdef-videoencoderconfig\">VideoEncoderConfig</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-audioencoderconfig\" id=\"ref-for-dictdef-audioencoderconfig\">AudioEncoderConfig</a></code> dictionaries.</p>"
-        },
-        {
-          "html": "<p>Candidate entries must be announced by filing an issue in the <a href=\"https://github.com/w3c/webcodecs/issues/\">WebCodecs GitHub issue tracker</a> so they can be discussed and evaluated for compliance before being added to\nthe registry. The Media Working Group may seek expertise from outside the\nWorking Group as part of its evaluation, e.g., from the codec specification\neditors or relevant standards group. If the codec specification is not\npublicly available, it must be made available to the Working Group for\nevaluation. If the Working Group reaches consensus to accept the candidate,\na pull request should be drafted (either by editors or by the party\nrequesting the candidate registration) to register the candidate.\nThe registry editors will review and merge the pull request.</p>"
-        },
-        {
-          "html": "<p>Existing entries cannot be deleted or deprecated. They may be changed after\nbeing published through the same process as candidate entries. Possible\nchanges include expansion of the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#codec-string\" id=\"ref-for-codec-string④\">codec string</a> to better qualify the codec,\nadjustments to the codec name string, and modification of the link to the\ncodec’s specification.</p>"
+          "html": "<p>Where applicable, a registration specification may include a section describing <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-partial-dictionary\" id=\"ref-for-dfn-partial-dictionary\">extensions to the dictionaries</a> used in the <code>configure()</code>, <code>decode()</code> and <code>encode()</code> methods of the decoder and encoder interfaces (e.g., <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-audiodecoderconfig\" id=\"ref-for-dictdef-audiodecoderconfig①\">AudioDecoderConfig</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-videodecoderconfig\" id=\"ref-for-dictdef-videodecoderconfig①\">VideoDecoderConfig</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-audioencoderconfig\" id=\"ref-for-dictdef-audioencoderconfig\">AudioEncoderConfig</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-videoencoderconfig\" id=\"ref-for-dictdef-videoencoderconfig\">VideoEncoderConfig</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-videoencoderencodeoptions\" id=\"ref-for-dictdef-videoencoderencodeoptions\">VideoEncoderEncodeOptions</a></code>).</p>"
         }
       ]
     }
