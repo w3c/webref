@@ -101,8 +101,8 @@
     {
       "name": "column-rule-edge-inset-start",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-edge-inset-start",
-      "value": "auto | <length-percentage>",
-      "initial": "auto",
+      "value": "<length-percentage>",
+      "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "refer to the crossing gap width",
@@ -117,8 +117,8 @@
     {
       "name": "column-rule-edge-inset-end",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-edge-inset-end",
-      "value": "auto | <length-percentage>",
-      "initial": "auto",
+      "value": "<length-percentage>",
+      "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "refer to the crossing gap width",
@@ -133,8 +133,8 @@
     {
       "name": "row-rule-edge-inset-start",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-edge-inset-start",
-      "value": "auto | <length-percentage>",
-      "initial": "auto",
+      "value": "<length-percentage>",
+      "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "refer to the crossing gap width",
@@ -149,8 +149,8 @@
     {
       "name": "row-rule-edge-inset-end",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-edge-inset-end",
-      "value": "auto | <length-percentage>",
-      "initial": "auto",
+      "value": "<length-percentage>",
+      "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "refer to the crossing gap width",
@@ -165,8 +165,8 @@
     {
       "name": "column-rule-interior-inset-start",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-interior-inset-start",
-      "value": "auto | <length-percentage>",
-      "initial": "auto",
+      "value": "<length-percentage>",
+      "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "refer to the crossing gap width",
@@ -181,8 +181,8 @@
     {
       "name": "column-rule-interior-inset-end",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-interior-inset-end",
-      "value": "auto | <length-percentage>",
-      "initial": "auto",
+      "value": "<length-percentage>",
+      "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "refer to the crossing gap width",
@@ -197,8 +197,8 @@
     {
       "name": "row-rule-interior-inset-start",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-interior-inset-start",
-      "value": "auto | <length-percentage>",
-      "initial": "auto",
+      "value": "<length-percentage>",
+      "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "refer to the crossing gap width",
@@ -213,8 +213,8 @@
     {
       "name": "row-rule-interior-inset-end",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-interior-inset-end",
-      "value": "auto | <length-percentage>",
-      "initial": "auto",
+      "value": "<length-percentage>",
+      "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "refer to the crossing gap width",
@@ -365,15 +365,6 @@
       "computedValue": "see individual properties",
       "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
-      "values": [
-        {
-          "name": "auto",
-          "prose": "The used value of auto is 0 for edge properties and -50% for interior properties.",
-          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-rule-inset-auto",
-          "type": "value",
-          "value": "auto"
-        }
-      ],
       "styleDeclaration": [
         "rule-inset",
         "ruleInset"
@@ -382,7 +373,7 @@
     {
       "name": "column-rule-inset-start",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-start",
-      "value": "auto | <length-percentage>",
+      "value": "<length-percentage>",
       "initial": "see individual properties",
       "appliesTo": "column-rule-edge-inset-start and column-rule-interior-inset-start for column-rule-inset-start, row-rule-edge-inset-start and row-rule-interior-inset-start for row-rule-inset-start",
       "inherited": "see individual properties",
@@ -398,7 +389,7 @@
     {
       "name": "row-rule-inset-start",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-start",
-      "value": "auto | <length-percentage>",
+      "value": "<length-percentage>",
       "initial": "see individual properties",
       "appliesTo": "column-rule-edge-inset-start and column-rule-interior-inset-start for column-rule-inset-start, row-rule-edge-inset-start and row-rule-interior-inset-start for row-rule-inset-start",
       "inherited": "see individual properties",
@@ -414,7 +405,7 @@
     {
       "name": "column-rule-inset-end",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-end",
-      "value": "auto | <length-percentage>",
+      "value": "<length-percentage>",
       "initial": "see individual properties",
       "appliesTo": "column-rule-edge-inset-end and column-rule-interior-inset-end for column-rule-inset-end, row-rule-edge-inset-end and row-rule-interior-inset-end for row-rule-inset-end",
       "inherited": "see individual properties",
@@ -430,7 +421,7 @@
     {
       "name": "row-rule-inset-end",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-end",
-      "value": "auto | <length-percentage>",
+      "value": "<length-percentage>",
       "initial": "see individual properties",
       "appliesTo": "column-rule-edge-inset-end and column-rule-interior-inset-end for column-rule-inset-end, row-rule-edge-inset-end and row-rule-interior-inset-end for row-rule-inset-end",
       "inherited": "see individual properties",
