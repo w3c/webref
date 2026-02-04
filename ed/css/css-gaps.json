@@ -467,6 +467,100 @@
       ]
     },
     {
+      "name": "column-rule-visibility-items",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-visibility-items",
+      "value": "all | around | between",
+      "initial": "all",
+      "appliesTo": "grid containers, and multicol containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "all",
+          "prose": "Paint decorations in all gap segments, regardless of whether adjacent items are present.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-visibility-items-all",
+          "type": "value",
+          "value": "all"
+        },
+        {
+          "name": "around",
+          "prose": "Paint decorations in a gap segment if at least one of the two adjacent areas is occupied by an item.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-visibility-items-around",
+          "type": "value",
+          "value": "around"
+        },
+        {
+          "name": "between",
+          "prose": "Paint decorations in a gap segment if both adjacent areas are occupied by items.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-visibility-items-between",
+          "type": "value",
+          "value": "between"
+        }
+      ],
+      "styleDeclaration": [
+        "column-rule-visibility-items",
+        "columnRuleVisibilityItems"
+      ]
+    },
+    {
+      "name": "row-rule-visibility-items",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-visibility-items",
+      "value": "all | around | between",
+      "initial": "all",
+      "appliesTo": "grid containers, and multicol containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "all",
+          "prose": "Paint decorations in all gap segments, regardless of whether adjacent items are present.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-visibility-items-all",
+          "type": "value",
+          "value": "all"
+        },
+        {
+          "name": "around",
+          "prose": "Paint decorations in a gap segment if at least one of the two adjacent areas is occupied by an item.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-visibility-items-around",
+          "type": "value",
+          "value": "around"
+        },
+        {
+          "name": "between",
+          "prose": "Paint decorations in a gap segment if both adjacent areas are occupied by items.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-visibility-items-between",
+          "type": "value",
+          "value": "between"
+        }
+      ],
+      "styleDeclaration": [
+        "row-rule-visibility-items",
+        "rowRuleVisibilityItems"
+      ]
+    },
+    {
+      "name": "rule-visibility-items",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-visibility-items",
+      "value": "<'column-rule-visibility-items'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-visibility-items and row-rule-visibility-items",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-visibility-items",
+        "ruleVisibilityItems"
+      ]
+    },
+    {
       "name": "rule-overlap",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-overlap",
       "value": "row-over-column | column-over-row",
