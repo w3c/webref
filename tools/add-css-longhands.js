@@ -393,10 +393,6 @@ function extractPropertyRefs(syntax) {
  * or have other issues.
  */
 const NOT_SHORTHANDS = new Set([
-  // scroll-initial-target has computedValue: "see individual properties" but is a longhand.
-  // This was fixed upstream in https://github.com/w3c/csswg-drafts/issues/13425
-  // TODO: Remove this entry once the fix is published and webref data is updated.
-  'scroll-initial-target',
   // background-tbd is a placeholder property
   'background-tbd'
 ]);
