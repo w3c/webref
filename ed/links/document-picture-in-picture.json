@@ -10,6 +10,7 @@
       "https://dom.spec.whatwg.org/": {},
       "https://drafts.csswg.org/cssom-view/": {},
       "https://drafts.csswg.org/mediaqueries-5/": {},
+      "https://fullscreen.spec.whatwg.org/": {},
       "https://github.com/whatwg/html/issues/421": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://html.spec.whatwg.org/multipage/interaction.html": {
@@ -55,16 +56,23 @@
           "valdef-media-display-mode-picture-in-picture"
         ]
       },
+      "https://fullscreen.spec.whatwg.org/": {
+        "anchors": [
+          "dom-element-requestfullscreen",
+          "fullscreen-is-supported"
+        ]
+      },
       "https://html.spec.whatwg.org/": {
         "anchors": [
           "close-a-top-level-traversable",
           "creating-a-new-top-level-traversable",
+          "definitely-close-a-top-level-traversable",
           "checking-if-unloading-is-user-canceled",
           "top-level-traversable-set",
           "destroying-documents",
           "navigate",
           "navigation-and-traversal-task-source",
-          "abort-a-document"
+          "abort-a-document-and-its-descendants"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -159,7 +167,8 @@
           "notsupportederror",
           "idl-DOMException",
           "notallowederror",
-          "exceptiondef-rangeerror"
+          "exceptiondef-rangeerror",
+          "a-promise-resolved-with"
         ]
       }
     }
