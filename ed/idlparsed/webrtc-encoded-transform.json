@@ -213,7 +213,7 @@
         "href": "https://w3c.github.io/webrtc-encoded-transform/#typedefdef-cryptokeyid"
       },
       "SFrameEncrypterManager": {
-        "fragment": "interface mixin SFrameEncrypterManager {\n    Promise<undefined> setEncryptionKey(CryptoKey key, CryptoKeyID keyId);\n    attribute EventHandler onerror;\n};",
+        "fragment": "interface mixin SFrameEncrypterManager {\n    Promise<undefined> setEncryptionKey(CryptoKey key, CryptoKeyID keyId);\n};",
         "type": "interface mixin",
         "name": "SFrameEncrypterManager",
         "inheritance": null,
@@ -275,22 +275,6 @@
             "extAttrs": [],
             "special": "",
             "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeencryptermanager-setencryptionkey"
-          },
-          {
-            "type": "attribute",
-            "name": "onerror",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeencryptermanager-onerror"
           }
         ],
         "extAttrs": [],
@@ -1949,8 +1933,7 @@
       ],
       "SFrameEncrypterManager": [
         "CryptoKey",
-        "CryptoKeyID",
-        "EventHandler"
+        "CryptoKeyID"
       ],
       "SFrameDecrypterManager": [
         "CryptoKey",
