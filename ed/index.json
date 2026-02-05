@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-02-05T06:53:29.948Z",
+  "date": "2026-02-05T12:52:43.411Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -756,7 +756,7 @@
   },
   "stats": {
     "crawled": 724,
-    "errors": 2
+    "errors": 4
   },
   "crawler": "reffy-20.0.9",
   "results": [
@@ -1758,7 +1758,8 @@
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
       "ids": "ids/css-typed-om-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -3231,9 +3232,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 31 Jan 2026 10:48:20 GMT"
+        "lastModified": "Thu, 05 Feb 2026 08:22:07 GMT"
       },
-      "date": "31 January 2026",
+      "date": "5 February 2026",
       "algorithms": "algorithms/html.json",
       "links": "links/html.json",
       "refs": "refs/html.json",
@@ -7790,9 +7791,9 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 04 Feb 2026 10:24:23 GMT"
+        "lastModified": "Thu, 05 Feb 2026 10:40:00 GMT"
       },
-      "date": "4 February 2026",
+      "date": "5 February 2026",
       "links": "links/tc39-temporal.json",
       "dfns": "dfns/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
@@ -8123,7 +8124,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-cs/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 03 Feb 2026 16:24:39 GMT"
+        "lastModified": "Thu, 05 Feb 2026 12:10:34 GMT"
       },
       "generator": "respec",
       "date": "04 August 2025",
@@ -8170,10 +8171,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-profiling/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 03 Feb 2026 16:24:39 GMT"
+        "lastModified": "Thu, 05 Feb 2026 12:10:34 GMT"
       },
       "generator": "respec",
-      "date": "03 February 2026",
+      "date": "05 February 2026",
       "algorithms": "algorithms/shacl12-profiling.json",
       "links": "links/shacl12-profiling.json",
       "refs": "refs/shacl12-profiling.json",
@@ -8219,10 +8220,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-ui/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 03 Feb 2026 16:24:39 GMT"
+        "lastModified": "Thu, 05 Feb 2026 12:10:34 GMT"
       },
       "generator": "respec",
-      "date": "03 February 2026",
+      "date": "05 February 2026",
       "links": "links/shacl12-ui.json",
       "refs": "refs/shacl12-ui.json",
       "dfns": "dfns/shacl12-ui.json",
@@ -19259,7 +19260,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2025/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 04 Feb 2026 21:36:14 GMT"
+        "lastModified": "Wed, 04 Feb 2026 21:36:15 GMT"
       },
       "generator": "bikeshed",
       "date": "21 November 2025",
@@ -19948,7 +19949,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-box-3/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 04 Feb 2026 21:36:14 GMT"
+        "lastModified": "Wed, 04 Feb 2026 21:36:15 GMT"
       },
       "generator": "bikeshed",
       "date": "24 October 2025",
@@ -20151,7 +20152,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-break-4/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 04 Feb 2026 21:36:14 GMT"
+        "lastModified": "Wed, 04 Feb 2026 21:36:15 GMT"
       },
       "generator": "bikeshed",
       "date": "22 October 2025",
@@ -20357,7 +20358,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-5/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 04 Feb 2026 21:36:14 GMT"
+        "lastModified": "Wed, 04 Feb 2026 21:36:15 GMT"
       },
       "generator": "bikeshed",
       "date": "27 December 2025",
@@ -23866,7 +23867,8 @@
       "dfns": "dfns/css-paint-api-1.json",
       "headings": "headings/css-paint-api-1.json",
       "ids": "ids/css-paint-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-paint-api-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 409)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-position-3/",
@@ -25017,7 +25019,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-style-attr/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 04 Feb 2026 21:36:14 GMT"
+        "lastModified": "Wed, 04 Feb 2026 21:36:15 GMT"
       },
       "date": "10 April 2015",
       "links": "links/css-style-attr.json",
@@ -25222,7 +25224,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-text-3/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 04 Feb 2026 21:36:14 GMT"
+        "lastModified": "Wed, 04 Feb 2026 21:36:15 GMT"
       },
       "generator": "bikeshed",
       "date": "6 November 2025",
@@ -35748,10 +35750,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-core/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 03 Feb 2026 16:24:39 GMT"
+        "lastModified": "Thu, 05 Feb 2026 12:10:34 GMT"
       },
       "generator": "respec",
-      "date": "03 February 2026",
+      "date": "05 February 2026",
       "algorithms": "algorithms/shacl12-core.json",
       "links": "links/shacl12-core.json",
       "refs": "refs/shacl12-core.json",
@@ -35804,10 +35806,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-node-expr/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 03 Feb 2026 16:24:39 GMT"
+        "lastModified": "Thu, 05 Feb 2026 12:10:34 GMT"
       },
       "generator": "respec",
-      "date": "03 February 2026",
+      "date": "05 February 2026",
       "algorithms": "algorithms/shacl12-node-expr.json",
       "links": "links/shacl12-node-expr.json",
       "refs": "refs/shacl12-node-expr.json",
@@ -35863,10 +35865,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-rules/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 03 Feb 2026 16:24:39 GMT"
+        "lastModified": "Thu, 05 Feb 2026 12:10:34 GMT"
       },
       "generator": "respec",
-      "date": "03 February 2026",
+      "date": "05 February 2026",
       "links": "links/shacl12-rules.json",
       "refs": "refs/shacl12-rules.json",
       "dfns": "dfns/shacl12-rules.json",
@@ -35918,10 +35920,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-sparql/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 03 Feb 2026 16:24:39 GMT"
+        "lastModified": "Thu, 05 Feb 2026 12:10:34 GMT"
       },
       "generator": "respec",
-      "date": "03 February 2026",
+      "date": "05 February 2026",
       "algorithms": "algorithms/shacl12-sparql.json",
       "links": "links/shacl12-sparql.json",
       "refs": "refs/shacl12-sparql.json",
