@@ -1,11 +1,11 @@
 {
   "spec": {
-    "title": "CSS Transitions Level 2",
+    "title": "CSS Transitions Module Level 2",
     "url": "https://www.w3.org/TR/css-transitions-2/"
   },
   "algorithms": [
     {
-      "html": "Within the set of CSS Transitions, two animations <var>A</var> and <var>B</var> are sorted in composite order (first to last) as follows:",
+      "html": "Within the set of CSS Transitions, two animations <var>A</var> and <var>B</var>\nare sorted in composite order (first to last) as follows:",
       "rationale": "if",
       "steps": [
         {
@@ -15,10 +15,10 @@
           "html": "<p>Otherwise, if  only one of <var>A</var> or <var>B</var> has an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-transitions-2/#owning-element\" id=\"ref-for-owning-element⑥\">owning\nelement</a>, let the animation <em>with</em> an <span id=\"ref-for-owning-element⑦\">owning element</span> sort\nfirst.</p>"
         },
         {
-          "html": "<p>Otherwise, if the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-transitions-2/#owning-element\" id=\"ref-for-owning-element⑧\">owning element</a> of <var>A</var> and <var>B</var> differs, sort <var>A</var> and <var>B</var> by <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order\">tree order</a> of their corresponding <span id=\"ref-for-owning-element⑨\">owning elements</span>.\nWith regard to pseudo-elements, the sort order is as follows:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>element</p>\n      </li><li data-md=\"\">\n       <p>::marker</p>\n      </li><li data-md=\"\">\n       <p>::before</p>\n      </li><li data-md=\"\">\n       <p>any other pseudo-elements not mentioned specifically in this list,\nsorted in ascending order by the Unicode codepoints that make up each selector</p>\n      </li><li data-md=\"\">\n       <p>::after</p>\n      </li><li data-md=\"\">\n       <p>element children</p>\n     </li></ul>"
+          "html": "<p>Otherwise, if the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-transitions-2/#owning-element\" id=\"ref-for-owning-element⑧\">owning element</a> of <var>A</var> and <var>B</var>\ndiffers, sort <var>A</var> and <var>B</var> by <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-order\" id=\"ref-for-concept-tree-order\">tree order</a>\nof their corresponding <span id=\"ref-for-owning-element⑨\">owning elements</span>.\nWith regard to pseudo-elements, the sort order is as follows:</p>\n     <ul>\n      <li data-md=\"\">\n       <p>element</p>\n      </li><li data-md=\"\">\n       <p>::marker</p>\n      </li><li data-md=\"\">\n       <p>::before</p>\n      </li><li data-md=\"\">\n       <p>any other pseudo-elements not mentioned specifically in this list,\nsorted in ascending order by the Unicode codepoints that make up each selector</p>\n      </li><li data-md=\"\">\n       <p>::after</p>\n      </li><li data-md=\"\">\n       <p>element children</p>\n     </li></ul>"
         },
         {
-          "html": "<p>Otherwise, if <var>A</var> and <var>B</var> have different <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-transitions-2/#transition-generation\" id=\"ref-for-transition-generation\">transition\ngeneration</a> values, sort by their corresponding <span id=\"ref-for-transition-generation①\">transition generation</span> in ascending order.</p>"
+          "html": "<p>Otherwise, if <var>A</var> and <var>B</var> have different <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-transitions-2/#transition-generation\" id=\"ref-for-transition-generation\">transition\ngeneration</a> values, sort by their corresponding\n<span id=\"ref-for-transition-generation①\">transition generation</span> in ascending order.</p>"
         },
         {
           "html": "<p>Otherwise, sort <var>A</var> and <var>B</var> in ascending order by the\nUnicode codepoints that make up the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-transitions-2/#expanded-transition-property-name\" id=\"ref-for-expanded-transition-property-name\">expanded transition property\nname</a> of each transition (i.e. without attempting case conversion and\nsuch that ‘-moz-column-width’ sorts before\n‘column-width’).</p>"
@@ -28,7 +28,7 @@
     {
       "name": "transition phase",
       "href": "https://www.w3.org/TR/css-transitions-2/#transition-phase",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"transition-phase\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">transition phase</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> of a transition is initially ‘idle’\nand is updated on each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#animation-frame\" id=\"ref-for-animation-frame①\">animation frame</a> according to\nthe first matching condition from below:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"transition-phase\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">transition phase</dfn> of a transition is initially ‘idle’\nand is updated on each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#animation-frame\" id=\"ref-for-animation-frame①\">animation frame</a> according to\nthe first matching condition from below:",
       "rationale": ".switch",
       "steps": [
         {
@@ -64,7 +64,7 @@
             },
             {
               "case": "Otherwise,",
-              "html": "The transition phase is the <a href=\"https://www.w3.org/TR/web-animations-1/#animation-effect-phases-and-states\">phase</a> of its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#animation-associated-effect\" id=\"ref-for-animation-associated-effect①\">associated effect</a>."
+              "html": "The transition phase is the\n       <a href=\"https://www.w3.org/TR/web-animations-1/#animation-effect-phases-and-states\">phase</a> of its\n       <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/web-animations-1/#animation-associated-effect\" id=\"ref-for-animation-associated-effect①\">associated effect</a>."
             }
           ]
         }
