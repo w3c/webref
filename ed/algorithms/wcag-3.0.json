@@ -5,44 +5,2039 @@
   },
   "algorithms": [
     {
-      "html": "For each word of text:",
-      "rationale": "fail",
+      "html": "For each non-decorative image:",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Is the text purely <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-decorative\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-decorative-2\">decorative</a> or, is it not readable by anybody?\n<ul>\n<li>Yes, Pass</li>\n<li>No, Continue</li>\n</ul>"
+          "html": "Check the code to see if it has been marked up in a way that makes it detectable; or"
         },
         {
-          "html": "Does the default/authored presentation meet minimum <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-requirement\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-requirement-3\">requirements</a>?",
+          "html": "For technologies where the code cannot be checked, use a screen reader to test that the image is detectable."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check for any images that add no information to the content."
+        },
+        {
+          "html": "Check that the image has no accessible name."
+        }
+      ]
+    },
+    {
+      "html": "For any image that adds no information to the content:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that <code>title</code>, <code>aria-label</code>, <code>aria-labelledby</code> etc. is either absent or empty."
+        },
+        {
+          "html": "Check that an <code>alt</code> attribute is present and empty."
+        }
+      ]
+    },
+    {
+      "html": "For each non-decorative image:",
+      "rationale": "replace",
+      "steps": [
+        {
+          "html": "Remove, hide, or mask the image."
+        },
+        {
+          "html": "Replace it with the text alternative."
+        },
+        {
+          "html": "Check that the meaningful content in the image is described by the text alternative."
+        },
+        {
+          "html": "If the image includes words that are important to understanding the content, check that those words are included in the text alternative."
+        }
+      ]
+    },
+    {
+      "html": "For each image:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check if the image is not a link, a button, any other interactive element nor purely decorative."
+        },
+        {
+          "html": "Check that the image type is described by the text alternative."
+        }
+      ]
+    },
+    {
+      "html": "For each instance of audio or video:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that a transcript is available."
+        }
+      ]
+    },
+    {
+      "html": "For each instance of audio or video content:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that a media alternative is available for that content."
+        },
+        {
+          "html": "Check that the content of the media alternative is equivalent to the meaningful information in the media content."
+        }
+      ]
+    },
+    {
+      "html": "For each instance of audio or video:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that a text description or link to a text description is provided for each audio or video."
+        }
+      ]
+    },
+    {
+      "html": "For each media alternative:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that each speaker in the audio or video is consistently identified."
+        }
+      ]
+    },
+    {
+      "html": "For each transcript that includes multiple languages:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that part(s) using a language different from the original language is programmatically determined in the media alternatives."
+        }
+      ]
+    },
+    {
+      "html": "For all audio content:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Identify meaningful non-verbal audio (sounds)."
+        },
+        {
+          "html": "Check that captions include a description of the meaningful non-verbal audio."
+        }
+      ]
+    },
+    {
+      "html": "For each transcript:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the transcript includes a description of any visual information needed to understand the content of the audio or video."
+        },
+        {
+          "html": "Check that the audio description includes a description of any visual information needed to understand the content of the audio or video."
+        }
+      ]
+    },
+    {
+      "html": "For each instance of audio content that includes nonverbal cues:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the media alternatives explain audio nonverbal cues, such as tone of voice, facial expressions, body gestures, or music with emotional meaning."
+        }
+      ]
+    },
+    {
+      "html": "For each instance of prerecorded audio content:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that a sign language translation is available."
+        },
+        {
+          "html": "Check that the sign language translation conveys all the auditory information needed to understand the full context and meaning in the pre-recorded audio content."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "Examine the source code of the HTML document to identify all non-decorative <code>img</code> elements."
+        },
+        {
+          "html": "Each img element has an <code>alt</code> attribute."
+        },
+        {
+          "html": "The <code>alt</code> attribute provides a text alternative which conveys meaning or content that is displayed visually."
+        },
+        {
+          "html": "If the image includes words that are important to understanding the content, the words are included in the text alternative."
+        }
+      ]
+    },
+    {
+      "html": "For each caption:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the appearance of captions and associated visual indicators is adaptable including font size, font weight, font style, font color, background color, background transparency, and placement"
+        }
+      ]
+    },
+    {
+      "html": "For each pre-recorded media asset:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the captions format is closed captions:\n<ul>\n<li>Turn on the closed caption feature of the media player</li>\n<li>View the synchronized media content</li>\n<li>Check that captions (of all dialogue and important sounds) are visible and in the human language of the video</li>\n</ul>"
+        },
+        {
+          "html": "If the captions format is open captions:\n<ul>\n<li>Check that captions (of all dialogue and important sounds) are visible and in the human language of the video</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "html": "For all live audio content:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that captions are provided"
+        }
+      ]
+    },
+    {
+      "html": "For each caption:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check if caption doesn’t hide visual information needed to understand the video content"
+        }
+      ]
+    },
+    {
+      "html": "For each caption:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check if it is in sync with video content"
+        }
+      ]
+    },
+    {
+      "html": "For each media asset with audio content that provides enhanced features to allow users to interact with captions:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Play the media with captions on."
+        },
+        {
+          "html": "Check that a mechanism is available so that users can interact with the captions using all relative input methods."
+        }
+      ]
+    },
+    {
+      "html": "For each media asset with audio content:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Play the media with captions on."
+        },
+        {
+          "html": "Check that the captions are presented consistently throughout the audio content."
+        }
+      ]
+    },
+    {
+      "html": "For each caption in 360-degree environments:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that captions remain directly in front of the user."
+        }
+      ]
+    },
+    {
+      "html": "For each caption:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that content with captions provides a mechanism to turn on and off the captions.\n<b>Expected results</b>"
+        }
+      ]
+    },
+    {
+      "html": "For each instance of audio that is heard from outside the current view in a 360-degree digital environment:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the captions indicate the direction of a sound or speech."
+        }
+      ]
+    },
+    {
+      "html": "For prerecorded video:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that audio description is available for visual content needed to understand the media"
+        }
+      ]
+    },
+    {
+      "html": "For synchronized media with audio description:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that audio description is in sync with video content in synchronized media."
+        },
+        {
+          "html": "Check that audio description doesn’t overlap with dialogue and meaningful audio content."
+        }
+      ]
+    },
+    {
+      "html": "For each live media broadcast",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that a secondary audio option exists that provides live audio description of the broadcast."
+        }
+      ]
+    },
+    {
+      "html": "For each media asset with visual content:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Play the media with the extended audio description on."
+        },
+        {
+          "html": "Check that the extended audio description provides all of the information that is important and cannot be understood from the main soundtrack alone."
+        }
+      ]
+    },
+    {
+      "html": "For each media asset with visual content:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Play the media with audio description on."
+        },
+        {
+          "html": "Check that the media player provides users with control of the audio description volume separately from the main audio track."
+        }
+      ]
+    },
+    {
+      "html": "For each media asset with audio content:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that a version of the media has audio description available in alternative languages."
+        },
+        {
+          "html": "Alternatively, check that alternative versions of the media exist that have audio description available in alternative languages."
+        }
+      ]
+    },
+    {
+      "html": "For each instance where information is conveyed by hue:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each instance identified in #1, identify the instances where the hue conveys information."
+        },
+        {
+          "html": "For each instance identified in #2, confirm that at least one * additional visual indicator is present that conveys the same information."
+        }
+      ]
+    },
+    {
+      "html": "For each instance where information is conveyed by visual depth:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each instance identified in #1, identify the instances where the visual depth conveys information."
+        },
+        {
+          "html": "For each instance identified in #2, confirm that at least one additional visual indicator is present that conveys the same information."
+        }
+      ]
+    },
+    {
+      "html": "For each instance where information is conveyed by sound:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each instance identified in #1, identify the instances where the sound conveys information."
+        },
+        {
+          "html": "For each instance identified in #2, confirm the information is conveyed in a way that does not use sound, for instance with a visual, text, or haptic indicator."
+        }
+      ]
+    },
+    {
+      "html": "For each instance where information is conveyed by spatial audio:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each instance identified in #1, identify the instances where the sound conveys information."
+        },
+        {
+          "html": "For each instance identified in #2, confirm the information is conveyed in a way that does not use sound, for instance with a visual text, or haptic indicator."
+        }
+      ]
+    },
+    {
+      "html": "For each block of text:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the attributes of the block of text are within the attributes in the table for the closest language."
+        }
+      ]
+    },
+    {
+      "html": "For each block of text:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the attributes of the block of text are within the attributes in the table for the closest language."
+        }
+      ]
+    },
+    {
+      "html": "For each foreground and background combination of text:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Identify the foreground color."
+        },
+        {
+          "html": "Identify the background color."
+        },
+        {
+          "html": "Check the contrast of text meets the [TBD algorithm]."
+        }
+      ]
+    },
+    {
+      "html": "For each block of text:",
+      "rationale": "apply",
+      "steps": [
+        {
+          "html": "Apply the highest level of change of each attribute from the table, for that language/script."
+        },
+        {
+          "html": "Check that the text is changed by the override."
+        }
+      ]
+    },
+    {
+      "html": "For each block of text:",
+      "rationale": "apply",
+      "steps": [
+        {
+          "html": "Apply the highest level of change of each attribute from the table, for the closest language."
+        },
+        {
+          "html": "Check that the text is changed by the override."
+        }
+      ]
+    },
+    {
+      "html": "For each block of text:",
+      "rationale": "use",
+      "steps": [
+        {
+          "html": "Use each platform mechanism for increasing text size."
+        },
+        {
+          "html": "Check that at least one mechanism can achieve a 200% text-size increase."
+        }
+      ]
+    },
+    {
+      "html": "For each block of text:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Adjust the foreground and background color to a high-contrast light-on-dark theme."
+        },
+        {
+          "html": "Check that content and functionality is not lost."
+        },
+        {
+          "html": "Adjust the foreground and background color to a high-contrast dark-on-light theme."
+        },
+        {
+          "html": "Check that content and functionality is not lost."
+        }
+      ]
+    },
+    {
+      "html": "For each foreground and background combination of text:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Identify the foreground color."
+        },
+        {
+          "html": "Identify the background color."
+        },
+        {
+          "html": "Check the contrast of text meets the [TBD algorithm]."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Customize a page/view by adjusting aspects of the text appearance, such as size, style, and color."
+        },
+        {
+          "html": "Export, save, and print the content."
+        },
+        {
+          "html": "Check that the customizations remain intact in the exported/saved/printed version. If there are multiple export options, check that at least one preserves the customizations."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "Identify all visible text."
+        },
+        {
+          "html": "For text that is embedded in an image, check if text has a <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-text-alternative\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-text-alternative-3\">text alternative</a> or can be accurately read using the <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-accessibility-support-set\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-accessibility-support-set-1\">accessibility support set</a>."
+        },
+        {
+          "html": "For text content, check that the text is not hidden using code such as the <code>aria-hidden</code> attribute."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "establish",
+      "steps": [
+        {
+          "html": "Establish which languages are used in the view."
+        },
+        {
+          "html": "Check that the content’s language is identified in the HTML code with a lang attribute."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Identify any instances of text styling, weight, size, or other text characteristics conveying meaning that is not just emphasis."
+        },
+        {
+          "html": "Check that an additional indicator of that meaning is available."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Identify any dates, temperatures, times, and Roman numerals that are presented visually."
+        },
+        {
+          "html": "Check that it uses an unambiguous format."
+        },
+        {
+          "html": "Check that it provides an alternative in an unambiguous format within the same page/view."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check for any abbreviations in the content."
+        },
+        {
+          "html": "Check that an explanation is available for the first use of the abbreviation."
+        },
+        {
+          "html": "For an abbreviation that has no explanation available, check that it is included in a dictionary intended for the general public."
+        }
+      ]
+    },
+    {
+      "html": "For each phrase of <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-non-literal-language\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-non-literal-language-2\">non-literal language</a> in <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-text-content\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-text-content-3\">text content</a>:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that access is provided to an unambiguous alternative or to an explanation of the non-literal text."
+        },
+        {
+          "html": "Check that the non-literal text is presented in a way that is available to <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-user-agent\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-agent-1\">user agents</a>, including <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-assistive-technology\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-assistive-technology-1\">assistive technologies</a> (AT)."
+        },
+        {
+          "html": "Check that the <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-accessibility-support-set\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-accessibility-support-set-2\">accessibility support set</a> meets ‘Non-literal language explained’."
+        }
+      ]
+    },
+    {
+      "html": "For <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-long-form-text-content\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-long-form-text-content-2\">long-form text content</a> that has 300 or more words:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that a summary is present."
+        },
+        {
+          "html": "Check that the summary can be identified visually and programmatically."
+        },
+        {
+          "html": "Check that the summary explains uncommon words and uses concise sentences."
+        }
+      ]
+    },
+    {
+      "html": "For each word:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the word appears in the 1,500 most common words in a <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-high-frequency-corpus\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-high-frequency-corpus-2\">high-frequency corpus</a> for the language used."
+        },
+        {
+          "html": "If the word is not in the list of the 1,500 most common words, check that it has a definition available within the page/view."
+        },
+        {
+          "html": "Check that a technology in the <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-accessibility-support-set\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-accessibility-support-set-3\">accessibility support set</a> meets ‘Common words used.’"
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check for content that has missing diacritics."
+        },
+        {
+          "html": "Check that an alternative version is provided that includes diacritics needed to identify the correct meaning of each word."
+        },
+        {
+          "html": "Check that the <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-accessibility-support-set\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-accessibility-support-set-4\">accessibility support set</a> meets ‘Diacritics available’."
+        }
+      ]
+    },
+    {
+      "html": "For each sentence:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "<p>Identify all nested clauses in the sentence (introduced by nesting conjunctions such as ‘because’, ‘although’, ‘if’, ‘that’, ‘which’, ‘who’, ‘when’, and ‘where’).</p>"
+        },
+        {
+          "html": "<p>Check that each initial nested clause does not contain other nested clauses within it.</p>"
+        },
+        {
+          "html": "<p>Check that a technology in the <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-accessibility-support-set\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-accessibility-support-set-5\">accessibility support set</a> meets ‘No nested clauses’.</p>"
+        }
+      ]
+    },
+    {
+      "html": "For each sentence:",
+      "rationale": "remove",
+      "steps": [
+        {
+          "html": "Identify any words that may be unnecessary."
+        },
+        {
+          "html": "Remove or replace the phrase with a simpler alternative."
+        },
+        {
+          "html": "Check that no meaning is lost."
+        },
+        {
+          "html": "Check that a technology in the <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-accessibility-support-set\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-accessibility-support-set-6\">accessibility support set</a> meets ‘No unnecessary words.’"
+        }
+      ]
+    },
+    {
+      "html": "<strong>Procedure</strong>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check for any complex numerical information in the content."
+        },
+        {
+          "html": "Check that an alternative is available that is not presented as complex numerical information."
+        }
+      ]
+    },
+    {
+      "html": "For user agents that allow the customization of focus indicators:",
+      "rationale": "use",
+      "steps": [
+        {
+          "html": "Use the keyboard to move focus onto the item."
+        },
+        {
+          "html": "Check that the focus indicator is the user agent’s default indicator."
+        },
+        {
+          "html": "For platform display changes, check that the focus indicator’s color is correct for the type of element."
+        }
+      ]
+    },
+    {
+      "html": "For each element able to attain focus:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Using a keyboard, tab to the component."
+        },
+        {
+          "html": "Check that the focus indicator contrast meets the minimum contrast ratio test."
+        }
+      ]
+    },
+    {
+      "html": "For each custom focus indicator:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the focus indicator is at least as large as the area of a 2 CSS pixel thick perimeter of the unfocused component or sub-component, and"
+        },
+        {
+          "html": "Check that the focus indicator has a contrast ratio of at least 3:1 between the same pixels in the focused and unfocused states."
+        }
+      ]
+    },
+    {
+      "html": "Where the platform does not use a visible pointer indicator:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each interactive element, check that there is an indicator of activation."
+        }
+      ]
+    },
+    {
+      "html": "<strong>Procedure</strong>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check the settings of the OS or product for the ability to have an always-visible pointer indicator."
+        }
+      ]
+    },
+    {
+      "html": "For each custom pointer:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Identify which visual information defines the boundaries of the interactive area."
+        },
+        {
+          "html": "Check if the visual information meets the minimum contrast ratio test."
+        },
+        {
+          "html": "For each possible state, repeat step 1 and 2."
+        }
+      ]
+    },
+    {
+      "html": "<strong>Procedure</strong>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the pointer uses the standard platform indicator."
+        },
+        {
+          "html": "If it does not, check for a setting that the user can enable to use the standard platform indicator."
+        }
+      ]
+    },
+    {
+      "html": "With appropriate user-settings enabled:",
+      "rationale": "move",
+      "steps": [
+        {
+          "html": "Move the pointer (mouse, eye tracker, hand gesture in VR space, …) and verify if there is some form of indication of where the user is pointing to."
+        }
+      ]
+    },
+    {
+      "html": "If the pointer is ever not visible:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check whether it meets one of the exceptions."
+        }
+      ]
+    },
+    {
+      "html": "<strong>Procedure</strong>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check for a setting that increases the visibility."
+        },
+        {
+          "html": "Check that it works in the conformance scope of web pages/views."
+        }
+      ]
+    },
+    {
+      "html": "<strong>Procedure</strong>",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "Identify components that receive focus."
+        },
+        {
+          "html": "For groups of repeated interactive elements (for example, a site-wide navigation bar on a website), check that a method of skipping them is available."
+        },
+        {
+          "html": "Check that hidden interactive elements do not receive focus"
+        },
+        {
+          "html": "Check that static elements do not receive focus."
+        }
+      ]
+    },
+    {
+      "html": "For each situation where the keyboard focus is removed:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "verify that the keyboard focus moves to its previous location, or, if that no longer exists, to another meaningful location."
+        }
+      ]
+    },
+    {
+      "html": "<strong>Procedure</strong>",
+      "rationale": "determine",
+      "steps": [
+        {
+          "html": "Determine the logical order of the interactive elements."
+        },
+        {
+          "html": "Starting with the first focusable element in the page/view, tab through the interactive elements in the content."
+        },
+        {
+          "html": "Check that the focus order of the interactive elements in the content is the same as the logical order in #1."
+        }
+      ]
+    },
+    {
+      "html": "For each interactive element:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Identify which visual information defines the boundaries of the interactive area."
+        },
+        {
+          "html": "Check if the visual information meets the minimum contrast ratio test."
+        },
+        {
+          "html": "For each possible state, repeat step 1 and 2."
+        }
+      ]
+    },
+    {
+      "html": "For each interactive element:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify the interactive elements’ programmatic name."
+        },
+        {
+          "html": "Identify the interactive element’s visual name."
+        },
+        {
+          "html": "Verify that #1 includes all of #2."
+        }
+      ]
+    },
+    {
+      "html": "For each interactive element:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that it is an be operated using only the keyboard and keyboard actions in the <a href=\"https://github.com/w3c/wcag3/wiki/Standard-Keyboard-Navigation-&amp;-Operation-Keys-and-Techniques\">Standard Keyboard Navigation &amp; Operation Keys and Techniques</a> or described on the page where it is required or on a page earlier in the process where it is required."
+        }
+      ]
+    },
+    {
+      "html": "<strong>Procedure</strong>\nFor each interactive element:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that when tabbing forwards, you can navigate to the interactive element and then to the next interactive element."
+        },
+        {
+          "html": "Check that when tabbing backwards, you can navigate to the interactive element and then to the previous interactive element."
+        }
+      ]
+    },
+    {
+      "html": "For each non-standard (custom) keyboard command that works on a page/view:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Verify that documentation of keyboard commands exists."
+        },
+        {
+          "html": "Verify that the documentation is available from the page/view."
+        }
+      ]
+    },
+    {
+      "html": "For each author generated keyboard command:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that it does not conflict against the standard platform keyboard commands."
+        },
+        {
+          "html": "Check that it can be remapped."
+        }
+      ]
+    },
+    {
+      "html": "For each breakpoint defined by the author and at minimum width:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that all keyboard input tests work."
+        }
+      ]
+    },
+    {
+      "html": "For each situation where elements that have or contain keyboard focus are removed:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the keyboard focus moves to its previous location, or, if that no longer exists, to another meaningful location."
+        }
+      ]
+    },
+    {
+      "html": "For each interface element:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that you can exit from it in a forward or backward direction."
+        }
+      ]
+    },
+    {
+      "html": "For each time the keyboard focus changes:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that one of the following is true”\n<ul>\n<li>The focus was moved under direct user control</li>\n<li>A new page / view such as a dialog is introduced and the focus is moved to it</li>\n<li>The user is informed of the potential move and given the chance to avoid the move</li>\n<li>The keyboard focus moves to the next item in keyboard navigation order</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "html": "For any interactive element:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that keyboard focus does not disappear into content that is not visible."
+        },
+        {
+          "html": "Check that hidden element does not automatically expand (become visible) when the keyboard focus is on it (unless it is a visually hidden element specifically added to aid keyboard navigation) (e.g. skip to main content)."
+        }
+      ]
+    },
+    {
+      "html": "For each keyboard command needed to operate functionality:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that it is in the list of common keyboard navigation technique."
+        },
+        {
+          "html": "Check that it is described on the page / view where it is required or on a page / view earlier in the process where it is used."
+        }
+      ]
+    },
+    {
+      "html": "For each element that can be activated with a simple pointer:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the down-event of the pointer is not used to execute any part of the function."
+        },
+        {
+          "html": "Check that completion of the function is on the up-event, and a mechanism is available to abort the function before completion or to undo the function after completion."
+        },
+        {
+          "html": "Check that the up-event reverses any outcome of the preceding down-event."
+        },
+        {
+          "html": "Check that completing the function on the down-event is essential."
+        }
+      ]
+    },
+    {
+      "html": "For each functionality that uses pointer input other than simple pointer input:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that it can also be operated by a simple pointer input or a sequence of simple pointer inputs that do not require timing."
+        }
+      ]
+    },
+    {
+      "html": "For each instance of interactive content:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that pointer pressure is not the only way to achieve any functionality."
+        }
+      ]
+    },
+    {
+      "html": "For each instance of functionality that uses a pointer:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that pointer speed is not the only way to achieve any functionality."
+        }
+      ]
+    },
+    {
+      "html": "For each functionality or content that is accessed using speech input:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that there is another way to complete the functionality."
+        }
+      ]
+    },
+    {
+      "html": "For each places where speech is used for communication (with human or AI):",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that there is an alternative way to achieve the same function using real-time text."
+        }
+      ]
+    },
+    {
+      "html": "For additional content that appears on hover:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the content can be closed without moving the pointer way from the trigger. Either by pressing Esc, by pressing another documented keyboard shortcut, or by activating the trigger."
+        }
+      ]
+    },
+    {
+      "html": "For additional content that appears on focus:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the content can be closed without moving the focus way from the trigger. Either by pressing Esc, by pressing another other documented keyboard shortcut, or by activating the trigger."
+        }
+      ]
+    },
+    {
+      "html": "For additional content that appears on hover:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that he pointer can be moved over the additional content without the additional content disappearing."
+        }
+      ]
+    },
+    {
+      "html": "For additional content or focus that appears on hover:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the additional content stays visible and does not automatically close after a time."
+        }
+      ]
+    },
+    {
+      "html": "For each path-based gesture:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the functionality is available without a path-based gesture."
+        }
+      ]
+    },
+    {
+      "html": "For each input:",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set up multiple input types (pointer, keyboard, voice, gesture, etc)"
+        },
+        {
+          "html": "Check that you can switch between inputs and complete functionality"
+        }
+      ]
+    },
+    {
+      "html": "For each instance of functionality that uses body movement:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the body movement is not the only way to achieve any functionality."
+        }
+      ]
+    },
+    {
+      "html": "For platforms that use eye-tracking for pointer use:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that alternative, such as using a switch control, is available."
+        }
+      ]
+    },
+    {
+      "html": "For every interactive element that allows pointer selection (including click events on non-interactive elements):",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the keyboard focus moves when the pointer selects the element."
+        }
+      ]
+    },
+    {
+      "html": "For each method of user authentication:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Verify that there is at least one other method of non-biometric authentication."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>\nFor each method of user authentication:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Verify that there is at least one other method of authentication (biometric or non-biometric)."
+        }
+      ]
+    },
+    {
+      "html": "<strong>Procedure</strong>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Locate any places where voice is used for identification."
+        },
+        {
+          "html": "Check that there is an alternative way to achieve authentication."
+        }
+      ]
+    },
+    {
+      "html": "For each page/view:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "Trigger errors."
+        },
+        {
+          "html": "For each error, verify that the nature of the problem is identified and described."
+        }
+      ]
+    },
+    {
+      "html": "For each error message:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Verify it is an error that needs correction by the user."
+        },
+        {
+          "html": "Verify that the error message includes suggestions for how to fix the error."
+        }
+      ]
+    },
+    {
+      "html": "For each validation error:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Verify that it meets at least two of the listed indicators (symbol, color or text)."
+        }
+      ]
+    },
+    {
+      "html": "For each error messages:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Verify that the error message persists until the user fixes the error or dismisses the message."
+        }
+      ]
+    },
+    {
+      "html": "For each validation error:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Verify that validation error is indicated visually."
+        },
+        {
+          "html": "Verify that validation error is indicated programmatically."
+        }
+      ]
+    },
+    {
+      "html": "For each page/view:",
+      "rationale": "make",
+      "steps": [
+        {
+          "html": "Zoom in 400%"
+        },
+        {
+          "html": "Trigger errors"
+        },
+        {
+          "html": "Make sure the error is visible next to the trigger or that the focus moves to the error."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify all data entry points."
+        },
+        {
+          "html": "Verify that users can return at any point in the process to correct data they entered."
+        },
+        {
+          "html": "If it’s not possible to go back and correct the data during the process, verify that the information being submitted can be reviewed and corrected before submission, or that it’s validated and can be fixed before submission."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Submit data."
+        },
+        {
+          "html": "Verify that the user is notified about the submission immediately afterwards."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Verify that no validation has not occurred before data entry."
+        },
+        {
+          "html": "Enter data."
+        },
+        {
+          "html": "Verify that validation is provided immediately after data entry or occurs before submission."
+        }
+      ]
+    },
+    {
+      "html": "For each page/view:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "Identify if content includes flashing."
+        },
+        {
+          "html": "For each instance of flashing, identify if the flashing is essential."
+        }
+      ]
+    },
+    {
+      "html": "For each page/view:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "Identify if content includes visual motion or pseudo-motion."
+        },
+        {
+          "html": "For each instance, identify if the visual motion or pseudo-motion is essential."
+        }
+      ]
+    },
+    {
+      "html": "For each trigger:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check if a warning is provided before the user encounters the trigger."
+        },
+        {
+          "html": "Check that the same information is available without triggers."
+        }
+      ]
+    },
+    {
+      "html": "For audio shifting caused by the digital content (vs. the operating system or user agent):",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that there is a setting to pause or turn off the audio shifting."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Examine the source code of the HTML document and check that the first <code>title</code> element is not-empty."
+        },
+        {
+          "html": "Check that the title element describes the document."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "process",
+      "steps": [
+        {
+          "html": "Examine the source code of the HTML document."
+        },
+        {
+          "html": "Process navigation steps are included."
+        },
+        {
+          "html": "Current process step is identified using <code>aria-current=\"step\"</code>."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "process",
+      "steps": [
+        {
+          "html": "Visually examine the content."
+        },
+        {
+          "html": "Process navigation steps are viewable."
+        },
+        {
+          "html": "The current process step is visually distinguishable from other steps."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "activate",
+      "steps": [
+        {
+          "html": "Activate a link in the product that should open a new page/view."
+        },
+        {
+          "html": "Verify that the change is conveyed in the view."
+        },
+        {
+          "html": "Verify that the change is conveyed programmatically using the assistive technology in the accessibility support set."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Select and view a website’s page other than the homepage."
+        },
+        {
+          "html": "Examine the source code of the HTML document."
+        },
+        {
+          "html": "Verify that there is a link that points to the website’s starting point."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "determine",
+      "steps": [
+        {
+          "html": "Determine the contextual hierarchy of the content either visually or through the meaning of the content."
+        },
+        {
+          "html": "Examine the source code of the HTML document to identify each hierarchical section."
+        },
+        {
+          "html": "Check that each section uses an appropriate semantic HTML element that reflects its position in the hierarchy."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify all input fields within the unit of conformance through visual and code inspection."
+        },
+        {
+          "html": "Verify that each <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> and <code>&lt;textarea&gt;</code> in the source code has a programmatically associated <code>&lt;label&gt;</code> using <code>for</code> and <code>id</code> attributes."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify all lists within the unit of conformance through visual and code inspection."
+        },
+        {
+          "html": "Verify that each list consists of a <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> or <code>&lt;dl&gt;</code>."
+        },
+        {
+          "html": "Verify that each list item within the list is contained within an <code>&lt;li&gt;</code> element (for <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>) or <code>&lt;dt&gt;</code>/<code>&lt;dd&gt;</code> pair (for <code>&lt;dl&gt;</code>)."
+        },
+        {
+          "html": "Verify that the immediate child element of the list is an <code>&lt;li&gt;</code> element (for <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>) or <code>&lt;dt&gt;</code>/<code>&lt;dd&gt;</code> pair (for <code>&lt;dl&gt;</code>)."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify all nested lists within the unit of conformance through visual and code inspection."
+        },
+        {
+          "html": "Verify that all child lists are contained within a <code>&lt;li&gt;</code> of the parent list."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "use",
+      "steps": [
+        {
+          "html": "Identify meaningful blocks of content in the page/view."
+        },
+        {
+          "html": "Examine the source code to validate that an appropriate role is being used for the meaningful blocks of content."
+        },
+        {
+          "html": "Use assistive technology to validate that an appropriate role is being used for the meaningful blocks of content."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "use",
+      "steps": [
+        {
+          "html": "Review content and identify meaningful blocks of content."
+        },
+        {
+          "html": "Examine the source code to validate that an appropriate role is being used for the meaningful blocks of content."
+        },
+        {
+          "html": "Use assistive technology to validate that an appropriate role is being used for the meaningful blocks of content."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify elements that open a modal dialog when interacted with."
+        },
+        {
+          "html": "Open the dialog."
+        },
+        {
+          "html": "Verify that the dialog includes a mechanism to allow the dialog to be dismissed."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify instances of infinite scrolling."
+        },
+        {
+          "html": "Open the dialog."
+        },
+        {
+          "html": "Verify that the dialog includes a mechanism to allow the dialog to be dismissed"
+        }
+      ]
+    },
+    {
+      "html": "For each variation of the product in scope:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify common structural components across multiple pages/views."
+        },
+        {
+          "html": "Verify that components are presented in the same order within each page/view."
+        }
+      ]
+    },
+    {
+      "html": "For each repeated blocks of navigation across multiple pages/views of the product or process:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Verify that the navigation items within each block of navigation have the same relative order across all pages/views of the product or process."
+        }
+      ]
+    },
+    {
+      "html": "For each repeated block of navigation across multiple pages/views of the product or process:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Verify that the navigation items within each block of navigation have the same names across all pages/views of the product or process."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "ensure",
+      "steps": [
+        {
+          "html": "Ensure there is a test identity set up in the browser."
+        },
+        {
+          "html": "Navigate to a form requiring the input of personal information."
+        },
+        {
+          "html": "Use browser tools to automatically populate personal information into the form."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "navigate",
+      "steps": [
+        {
+          "html": "Navigate to a form requiring the completion of a complex test, such as a puzzle, image identification, gesture reproduction, math question, or character recognition/entry."
+        },
+        {
+          "html": "Verify that there is an alternative provided that does not require completion of a cognitive function test."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify the presence of a time limit."
+        },
+        {
+          "html": "Verify if there is a way to disable it."
+        },
+        {
+          "html": "Wait for the timeout."
+        },
+        {
+          "html": "Verify that before the timeout, an option is given to extend the time limit."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "Identify time limits in the page/view."
+        },
+        {
+          "html": "For each time limit, verify that it does not restart or reset immediately."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify the presence of a time limit."
+        },
+        {
+          "html": "Verify that a notification is provided to the user at the start of a process that the time limit exists, its length and that it can be adjusted."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "Identify all options that affect finance, privacy and safety."
+        },
+        {
+          "html": "For all identified in Step 1, verify that these are visible when completing a process."
+        },
+        {
+          "html": "For all identified in Step 1, verify that they are programmatically available before completing the process."
+        }
+      ]
+    },
+    {
+      "html": "For each time limit:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Verify that it does not restart or reset immediately."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify any multi-step processes."
+        },
+        {
+          "html": "Verify that the user is prompted to review and confirm data."
+        },
+        {
+          "html": "Verify that the user is allowed to return to previous steps to review and change the data."
+        },
+        {
+          "html": "Verify that if a summary of all data input by the user is provided before the transaction is committed, and that a method is provided to correct errors, if necessary."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Identify any processes that require the user to enter information."
+        },
+        {
+          "html": "Check whether the information has already been requested ion a previous step of the process."
+        },
+        {
+          "html": "Verify that the information entered previously is prepopulated in the respective field(s) or is displayed on the page for copying."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify any processes that require the user to enter information."
+        },
+        {
+          "html": "Log in, if needed, and begin the timed activity."
+        },
+        {
+          "html": "Allow the session to time out."
+        },
+        {
+          "html": "Submit or save the data."
+        },
+        {
+          "html": "Log out if logged in."
+        },
+        {
+          "html": "Re-authenticate and log back in."
+        },
+        {
+          "html": "Verify that the process can continue from where you left off and be completed without loss of data, including the original data and any changes made after re-authentication."
+        },
+        {
+          "html": "Verify that the process used to save the information submitted in step 3 is not stored on the server. (Note: This requires knowledge of the technology and features used to implement the technique.)"
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "try",
+      "steps": [
+        {
+          "html": "Identify any parts of the process that cannot be completed without the user doing a required action."
+        },
+        {
+          "html": "Enter in all the information except for the required action(s)."
+        },
+        {
+          "html": "Try to complete the process."
+        },
+        {
+          "html": "Verify that there is a notification that explains what the user needs to do before the process can be completed."
+        }
+      ]
+    },
+    {
+      "html": "At the start of each process:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "Identify any multi-step processes."
+        },
+        {
+          "html": "If it can be determined in advance, check that the number of steps it will take to complete the process is provided at the start of the process."
+        },
+        {
+          "html": "Verify that the details of any information and resources that are needed to perform the task are provided at the start of the process."
+        },
+        {
+          "html": "Verify that an overview of the process and next steps are provided at the start of the process."
+        }
+      ]
+    },
+    {
+      "html": "For each multi-step process:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify any multi-step processes."
+        },
+        {
+          "html": "Verify that the steps and instructions needed to complete a multi-step process are provided."
+        },
+        {
+          "html": "Verify that any breadcrumb navigation correctly communicates the current step in the process."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify information that is personal or sensitive."
+        },
+        {
+          "html": "Verify that personal or sensitive information is visually hidden by default."
+        },
+        {
+          "html": "Verify that the personal or sensitive  information is programmatically hidden by default."
+        },
+        {
+          "html": "Verify that the use of AT, accessibility settings and accessibility-related modifications does not expose any personal or sensitive information."
+        },
+        {
+          "html": "Check whether any accessible alternative versions or modifications of the digital content exist."
+        },
+        {
+          "html": "Verify that the accessible alternative or modification of the digital content does not include additional risk beyond what’s in the inaccessible alternative."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify any choices being made by the user."
+        },
+        {
+          "html": "Identify any potential legal, financial, privacy and security consequences to the user as a result of the choice."
+        },
+        {
+          "html": "Verify that the consequences are provided when the user  makes the choice."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Identify any agreements being made by the user."
+        },
+        {
+          "html": "Identify any potential legal, financial, privacy and security consequences to the user as a result of the agreement."
+        },
+        {
+          "html": "Verify that the consequences are provided before the user enters into the agreement."
+        }
+      ]
+    },
+    {
+      "html": "For each help item in a  page / view:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that it is labeled consistently"
+        },
+        {
+          "html": "Check that it remains in the same relative visual and programmatic location."
+        }
+      ]
+    },
+    {
+      "html": "For each form field that has input formatting requirements:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check for other potentially confusing or difficult interactive elements."
+        },
+        {
+          "html": "For any element identified in #1 or #2, check for context-sensitive help that is helpful to the user."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that a conversational support mechanism is available."
+        }
+      ]
+    },
+    {
+      "html": "For each visible disabled control:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that instructions are available that explain how to enable them."
+        }
+      ]
+    },
+    {
+      "html": "For each reference to shape, size, or position of an object:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the reference includes additional information that allows the item to be located and identified without any knowledge of its shape, size, or relative position."
+        }
+      ]
+    },
+    {
+      "html": "<strong>Procedure</strong>",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that a feedback mechanism exists."
+        },
+        {
+          "html": "Check that the feedback is sent to authors."
+        }
+      ]
+    },
+    {
+      "html": "For each setting:",
+      "rationale": "change",
+      "steps": [
+        {
+          "html": "Change an accessibility-related setting in a platform or user agent in the <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-accessibility-support-set\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-accessibility-support-set-7\">accessibility support set</a>."
+        },
+        {
+          "html": "Check content to see that the setting has been applied."
+        }
+      ]
+    },
+    {
+      "html": "For each setting:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Access content and interactions by using mechanisms that convey alternative points of regard or focus"
+        },
+        {
+          "html": "Check that content is readable and interactions are operable."
+        }
+      ]
+    },
+    {
+      "html": "For each notifications:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "check that settings allow the timing or location to be changed."
+        }
+      ]
+    },
+    {
+      "html": "For platforms which have a default orientation:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Open the content."
+        },
+        {
+          "html": "Check that the orientation aligns with the platform default."
+        }
+      ]
+    },
+    {
+      "html": "For platforms which do not have a default orientation:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Open the content"
+        },
+        {
+          "html": "Check that the orientation can align with both portrait and landscape orientations."
+        }
+      ]
+    },
+    {
+      "html": "For platforms which do not have a default orientation:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Open the content"
+        },
+        {
+          "html": "Check that the orientation can align with both portrait and landscape orientations."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set the viewport at 320 CSS pixels in the direction of text."
+        },
+        {
+          "html": "Identify all the blocks of text within the scope."
+        },
+        {
+          "html": "Verify that each block of text does not require scrolling into two dimensions."
+        },
+        {
+          "html": "Verify that the text in each block of text is legible."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set the viewport at 320px in the direction of text."
+        },
+        {
+          "html": "Verify that each section of content fits within 320 CSS pixels."
+        }
+      ]
+    },
+    {
+      "html": "<b>Procedure</b>",
+      "rationale": "load",
+      "steps": [
+        {
+          "html": "Load a page / view."
+        },
+        {
+          "html": "Check for audio that starts automatically."
+        },
+        {
+          "html": "For audio content in a media player, check that the media player has controls that can pause, stop, or adjust the audio volume."
+        },
+        {
+          "html": "For audio content set at an application level, check that there is a central setting that enables or disables audio across the application."
+        },
+        {
+          "html": "Check that one of these are present:\na. There is a mechanism within the first three elements in the page / view for the user to pause, stop, or adjust the audio volume;\nb. There are keyboard controls that can pause, stop, or adjust the audio volume."
+        }
+      ]
+    },
+    {
+      "html": "For each instance of media with captions and / or transcripts:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that a mechanism to search the captions or transcripts is available."
+        },
+        {
+          "html": "Check that a mechanism to search and look up terms in transcripts is available. This can be:",
           "ignored": [
-            "Yes, the default/authored presentation meets Readable Blocks of Text (foundational) and Readable Text Style (foundational), Continue No, Fail"
+            "copying and pasting content from the transcript into a dictionary; or allowing a platform or application dictionary to show a definition of the term. Example: VoiceOver on MacOS includes a feature to look up terms for what is under a ‘mouse cursor point’"
           ]
+        }
+      ]
+    },
+    {
+      "html": "For each media asset with audio content:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that a mechanism is available so that users can turn on and off the closed captions."
         },
         {
-          "html": "Can the text appearance be adjusted by the user?",
-          "rationale": "fail",
-          "steps": [
-            {
-              "html": "Yes, text must be <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-user-manipulable-text\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-manipulable-text-1\">user-manipulable text</a> and:",
-              "ignored": [
-                "The accessibility support set meets: Adjustable blocks of text Adjustable text style Content and functional are not lost with text adjustment Pass"
-              ]
-            },
-            {
-              "html": "Yes, via produce-provided themes:",
-              "ignored": [
-                "Adjustable blocks of text Adjustable text style Content and functional are not lost with text adjustment Pass"
-              ]
-            },
-            {
-              "html": "No, and the <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-product\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-product-1\">product</a> does not provide its own themes:",
-              "rationale": "fail",
-              "steps": [
-                {
-                  "html": "Fail."
-                }
-              ]
-            }
-          ]
+          "html": "Check that a mechanism is available so that users can change the audio track from a non-audio-described one to an audio-described."
+        }
+      ]
+    },
+    {
+      "html": "For media that lasts five minutes or more:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Play the media"
+        },
+        {
+          "html": "Check that the media is divided up using chapters"
+        },
+        {
+          "html": "Check that the chapter titles have descriptive names which are suitable for their content."
+        }
+      ]
+    },
+    {
+      "html": "For each meaningful change of visual content:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the change is conveyed programmatically using the assistive technology in the accessibility support set."
+        }
+      ]
+    },
+    {
+      "html": "For each instance of focus being changed by the content:",
+      "rationale": "verify",
+      "steps": [
+        {
+          "html": "Verify that the change is conveyed visually and programmatically using the assistive technology in the accessibility support set."
+        }
+      ]
+    },
+    {
+      "html": "For each instance where the content triggers a change of device or user agent change:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the change is conveyed before the chance occurs."
         }
       ]
     }
