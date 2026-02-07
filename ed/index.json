@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-02-06T18:55:21.055Z",
+  "date": "2026-02-07T00:56:29.045Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -756,7 +756,7 @@
   },
   "stats": {
     "crawled": 724,
-    "errors": 2
+    "errors": 3
   },
   "crawler": "reffy-20.0.9",
   "results": [
@@ -1809,7 +1809,8 @@
       "dfns": "dfns/font-metrics-api-1.json",
       "headings": "headings/font-metrics-api-1.json",
       "ids": "ids/font-metrics-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 19)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://drafts.csswg.org/compositing-2/",
@@ -16269,9 +16270,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7932",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 03 Feb 2026 18:45:55 GMT"
+        "lastModified": "Fri, 06 Feb 2026 22:41:55 GMT"
       },
-      "date": "3 February 2026",
+      "date": "6 February 2026",
       "links": "links/rfc7932.json",
       "headings": "headings/rfc7932.json",
       "ids": "ids/rfc7932.json",
@@ -30591,10 +30592,10 @@
       ],
       "crawled": "https://w3c.github.io/largest-contentful-paint/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Sep 2025 09:04:24 GMT"
+        "lastModified": "Fri, 06 Feb 2026 19:41:08 GMT"
       },
       "generator": "bikeshed",
-      "date": "11 September 2025",
+      "date": "6 February 2026",
       "algorithms": "algorithms/largest-contentful-paint.json",
       "links": "links/largest-contentful-paint.json",
       "refs": "refs/largest-contentful-paint.json",

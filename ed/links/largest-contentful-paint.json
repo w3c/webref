@@ -13,9 +13,10 @@
       "https://drafts.csswg.org/css-color-4/": {},
       "https://drafts.csswg.org/css-images-3/": {},
       "https://drafts.csswg.org/css-text-decor-4/": {},
+      "https://drafts.csswg.org/css-values-4/": {},
       "https://drafts.csswg.org/cssom-view/": {},
-      "https://drafts.fxtf.org/fill-stroke/": {},
-      "https://drafts.fxtf.org/geometry/": {},
+      "https://drafts.csswg.org/fill-stroke/": {},
+      "https://drafts.csswg.org/geometry/": {},
       "https://fetch.spec.whatwg.org/": {},
       "https://github.com/w3c/largest-contentful-paint/issues": {},
       "https://html.spec.whatwg.org/multipage/": {},
@@ -40,7 +41,7 @@
           "dom-event-type",
           "dom-event-istrusted",
           "text",
-          "boundary-point-node",
+          "concept-node",
           "concept-document",
           "dom-element-id"
         ]
@@ -79,6 +80,11 @@
           "propdef-text-shadow"
         ]
       },
+      "https://drafts.csswg.org/css-values-4/": {
+        "anchors": [
+          "number"
+        ]
+      },
       "https://drafts.csswg.org/cssom-view-1/": {
         "anchors": [
           "eventdef-document-scroll"
@@ -89,13 +95,13 @@
           "visual-viewport"
         ]
       },
-      "https://drafts.fxtf.org/fill-stroke-3/": {
+      "https://drafts.csswg.org/fill-stroke-3/": {
         "anchors": [
           "propdef-stroke-color",
           "propdef-stroke-image"
         ]
       },
-      "https://drafts.fxtf.org/geometry-1/": {
+      "https://drafts.csswg.org/geometry-1/": {
         "anchors": [
           "domrectreadonly",
           "dom-domrectreadonly-width",
@@ -105,8 +111,8 @@
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-request",
-          "concept-response",
           "request",
+          "concept-response",
           "dom-request-url"
         ]
       },
@@ -132,11 +138,7 @@
         "anchors": [
           "struct",
           "ordered-set",
-          "tuple",
-          "list-iterate",
-          "list-contain",
-          "set-append",
-          "ordered-map"
+          "list-iterate"
         ]
       },
       "https://streams.spec.whatwg.org/": {
@@ -157,6 +159,7 @@
           "paint-timing-info",
           "exposed-for-paint-timing",
           "pending-image-record",
+          "mark-paint-timing",
           "pending-image-record-element",
           "pending-image-record-request",
           "pending-image-record-loadtime",
@@ -165,12 +168,12 @@
       },
       "https://w3c.github.io/performance-timeline/": {
         "anchors": [
+          "supportedentrytypes-attribute",
           "the-performanceentry-interface",
           "dom-performanceentry-entrytype",
           "dom-performanceentry-name",
           "dom-performanceentry-starttime",
           "dom-performanceentry-duration",
-          "supportedentrytypes-attribute",
           "dfn-queue-a-performanceentry"
         ]
       },
