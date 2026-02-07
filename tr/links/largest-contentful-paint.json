@@ -21,6 +21,7 @@
       "https://www.w3.org/TR/css-color-4/": {},
       "https://www.w3.org/TR/css-images-3/": {},
       "https://www.w3.org/TR/css-text-decor-4/": {},
+      "https://www.w3.org/TR/css-values-4/": {},
       "https://www.w3.org/TR/cssom-view-1/": {},
       "https://www.w3.org/TR/event-timing/": {},
       "https://www.w3.org/TR/fill-stroke-3/": {},
@@ -53,7 +54,7 @@
           "dom-event-type",
           "dom-event-istrusted",
           "text",
-          "boundary-point-node",
+          "concept-node",
           "concept-document",
           "dom-element-id"
         ]
@@ -71,8 +72,8 @@
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-request",
-          "concept-response",
           "request",
+          "concept-response",
           "dom-request-url"
         ]
       },
@@ -98,11 +99,7 @@
         "anchors": [
           "struct",
           "ordered-set",
-          "tuple",
-          "list-iterate",
-          "list-contain",
-          "set-append",
-          "ordered-map"
+          "list-iterate"
         ]
       },
       "https://streams.spec.whatwg.org/": {
@@ -131,12 +128,12 @@
       },
       "https://w3c.github.io/performance-timeline/": {
         "anchors": [
+          "supportedentrytypes-attribute",
           "the-performanceentry-interface",
           "dom-performanceentry-entrytype",
           "dom-performanceentry-name",
           "dom-performanceentry-starttime",
           "dom-performanceentry-duration",
-          "supportedentrytypes-attribute",
           "dfn-queue-a-performanceentry"
         ]
       },
@@ -188,6 +185,11 @@
           "propdef-text-shadow"
         ]
       },
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "number"
+        ]
+      },
       "https://www.w3.org/TR/cssom-view-1/": {
         "anchors": [
           "eventdef-document-scroll"
@@ -204,6 +206,11 @@
           "domrectreadonly",
           "dom-domrectreadonly-width",
           "dom-domrectreadonly-height"
+        ]
+      },
+      "https://www.w3.org/TR/paint-timing/": {
+        "anchors": [
+          "mark-paint-timing"
         ]
       }
     }

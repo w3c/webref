@@ -3135,13 +3135,22 @@
       ]
     },
     {
-      "name": "Exception/getArg(index)",
+      "name": "Exception/getArg(exceptionTag, index)",
       "href": "https://www.w3.org/TR/wasm-js-api-2/#dom-exception-getarg",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Exception\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-exception-getarg\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getArg(<var>index</var>)</code></dfn> method steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Exception\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-exception-getarg\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getArg(<var>exceptionTag</var>, <var>index</var>)</code></dfn> method steps are:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>store</var> be the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent④⑥\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/wasm-js-api-2/#associated-store\" id=\"ref-for-associated-store③⑧\">associated store</a>.</p>"
+        },
+        {
+          "html": "If <strong>this</strong>.[[Type]] is not equal to <var>exceptionTag</var>.[[Address]],",
+          "rationale": "throw",
+          "steps": [
+            {
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②④\">TypeError</a></code>.</p>"
+            }
+          ]
         },
         {
           "html": "<p>Let <var>tagaddr</var> be <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-exn-tag\" id=\"ref-for-embed-exn-tag②\">exn_tag</a>(<var>store</var>, <strong>this</strong>.[[Address]]).</p>"
@@ -3169,7 +3178,7 @@
           "rationale": "throw",
           "steps": [
             {
-              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②④\">TypeError</a></code>.</p>"
+              "html": "<p>Throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②⑤\">TypeError</a></code>.</p>"
             }
           ]
         },

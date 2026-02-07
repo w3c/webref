@@ -20,9 +20,21 @@
     {
       "name": "report largest contentful paint",
       "href": "https://www.w3.org/TR/largest-contentful-paint/#report-largest-contentful-paint",
-      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"report-largest-contentful-paint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report largest contentful paint</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②\">Document</a></code> <var>document</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#paint-timing-info\" id=\"ref-for-paint-timing-info①\">paint timing info</a> <var>paintTimingInfo</var>, an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">ordered set</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record\" id=\"ref-for-pending-image-record\">pending image records</a> <var>paintedImages</var>, and an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③\">ordered set</a> of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#concept-element\" id=\"ref-for-concept-element①\">elements</a> <var>paintedTextNodes</var>, perform the following steps:",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"report-largest-contentful-paint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">report largest contentful paint</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②\">Document</a></code> <var>document</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#paint-timing-info\" id=\"ref-for-paint-timing-info①\">paint timing info</a> <var>paintTimingInfo</var>, an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set\">ordered set</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record\" id=\"ref-for-pending-image-record\">pending image records</a> <var>paintedImages</var>, and an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">ordered set</a> of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#concept-element\" id=\"ref-for-concept-element①\">elements</a> <var>paintedTextNodes</var>, perform the following steps:",
       "rationale": ".algorithm",
       "steps": [
+        {
+          "html": "<p>Let <var>window</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p>If either of <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#has-dispatched-scroll-event\" id=\"ref-for-has-dispatched-scroll-event①\">has dispatched scroll event</a> or <a data-link-type=\"dfn\" href=\"https://wicg.github.io/event-timing#has-dispatched-input-event\" id=\"ref-for-has-dispatched-input-event\">has dispatched input event</a> is true, return.</p>"
+        },
+        {
+          "html": "<p>Let <var>newCandidateSize</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-size\" id=\"ref-for-largest-contentful-paint-size\">largest contentful paint size</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>newCandidate</var> be null.</p>"
+        },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>record</var> of <var>paintedImages</var>:",
           "rationale": "let",
@@ -34,16 +46,19 @@
               "html": "<p>If <var>imageElement</var> is not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#exposed-for-paint-timing\" id=\"ref-for-exposed-for-paint-timing①\">exposed for paint timing</a>, given <var>document</var>, continue.</p>"
             },
             {
-              "html": "<p>Let <var>request</var> be <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-request\" id=\"ref-for-pending-image-record-request\">request</a>.</p>"
-            },
-            {
-              "html": "<p>Let <var>candidate</var> be (<var>imageElement</var>, <var>request</var>)</p>"
-            },
-            {
               "html": "<p>Let <var>intersectionRect</var> be the value returned by the intersection rect algorithm using <var>imageElement</var> as the target and viewport as the root.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#potentially-add-a-largestcontentfulpaint-entry\" id=\"ref-for-potentially-add-a-largestcontentfulpaint-entry\">Potentially add a LargestContentfulPaint entry</a> with <var>candidate</var>, <var>intersectionRect</var>, <var>paintTimingInfo</var>, <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-loadtime\" id=\"ref-for-pending-image-record-loadtime\">loadTime</a> and <var>document</var>.</p>"
+              "html": "<p>Let <var>size</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#effective-visual-size\" id=\"ref-for-effective-visual-size\">effective visual size</a> of <var>imageElement</var> given <var>intersectionRect</var> and <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-request\" id=\"ref-for-pending-image-record-request\">request</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>size</var> is less than or equal to <var>newCandidateSize</var>, continue.</p>"
+            },
+            {
+              "html": "<p>Set <var>newCandidateSize</var> to <var>size</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>newCandidate</var> to be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate\" id=\"ref-for-largest-contentful-paint-candidate\">largest contentful paint candidate</a> with its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-element\" id=\"ref-for-largest-contentful-paint-candidate-element\">element</a> set to <var>imageElement</var>, its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-size\" id=\"ref-for-largest-contentful-paint-candidate-size\">size</a> set to <var>size</var>, its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-request\" id=\"ref-for-largest-contentful-paint-candidate-request\">request</a> set to <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-request\" id=\"ref-for-pending-image-record-request①\">request</a>, and its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-loadtime\" id=\"ref-for-largest-contentful-paint-candidate-loadtime\">loadTime</a> set to <var>record</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#pending-image-record-loadtime\" id=\"ref-for-pending-image-record-loadtime\">loadTime</a>.</p>"
             }
           ]
         },
@@ -59,27 +74,33 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>textNode</var>’s <a class=\"css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-text-decor-4/#propdef-text-shadow\" id=\"ref-for-propdef-text-shadow\">text-shadow</a> value is none, <var>textNode</var>’s <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/fill-stroke-3/#propdef-stroke-color\" id=\"ref-for-propdef-stroke-color\">stroke-color</a> value is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-3/#transparent\" id=\"ref-for-transparent\">transparent</a> and <var>textNode</var>’s <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/fill-stroke-3/#propdef-stroke-image\" id=\"ref-for-propdef-stroke-image\">stroke-image</a> value is none, continue.</p>"
+                  "html": "<p>If <var>textNode</var>’s <a class=\"css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-text-decor-4/#propdef-text-shadow\" id=\"ref-for-propdef-text-shadow\">text-shadow</a> value is none, <var>textNode</var>’s <a class=\"css property\" data-link-type=\"property\" href=\"https://www.w3.org/TR/fill-stroke-3/#propdef-stroke-color\" id=\"ref-for-propdef-stroke-color\">stroke-color</a> value is <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-3/#transparent\" id=\"ref-for-transparent\">transparent</a> and <var>textNode</var>’s <a class=\"css property\" data-link-type=\"property\" href=\"https://www.w3.org/TR/fill-stroke-3/#propdef-stroke-image\" id=\"ref-for-propdef-stroke-image\">stroke-image</a> value is none, continue.</p>"
                 }
               ]
             },
             {
-              "html": "<p>Let <var>candidate</var> be (<var>textNode</var>, null)</p>"
+              "html": "<p>Let <var>intersectionRect</var> be the union of the border boxes of all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node\">nodes</a> in <var>textNode</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#set-of-owned-text-nodes\" id=\"ref-for-set-of-owned-text-nodes\">set of owned text nodes</a>, intersected with the visual viewport.</p>"
             },
             {
-              "html": "<p>Let <var>intersectionRect</var> be an empty rectangle.</p>"
+              "html": "<p>Let <var>size</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#effective-visual-size\" id=\"ref-for-effective-visual-size①\">effective visual size</a> of <var>textNode</var> given <var>intersectionRect</var> and null.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#boundary-point-node\" id=\"ref-for-boundary-point-node\">node</a> <var>text</var> of <var>textNode</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#set-of-owned-text-nodes\" id=\"ref-for-set-of-owned-text-nodes\">set of owned text nodes</a>:</p>",
-              "ignored": [
-                "Augment intersectionRect to be smallest rectangle containing the border box of text and intersectionRect."
-              ]
+              "html": "<p>If <var>size</var> is less than or equal to <var>newCandidateSize</var>, continue.</p>"
             },
             {
-              "html": "<p>Intersect <var>intersectionRect</var> with the visual viewport.</p>"
+              "html": "<p>Set <var>newCandidateSize</var> to <var>size</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#potentially-add-a-largestcontentfulpaint-entry\" id=\"ref-for-potentially-add-a-largestcontentfulpaint-entry①\">Potentially add a LargestContentfulPaint entry</a> with <var>candidate</var>, <var>intersectionRect</var>, <var>paintTimingInfo</var>, 0, and <var>document</var>.</p>"
+              "html": "<p>Set <var>newCandidate</var> to be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate\" id=\"ref-for-largest-contentful-paint-candidate①\">largest contentful paint candidate</a> with its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-element\" id=\"ref-for-largest-contentful-paint-candidate-element①\">element</a> set to <var>textNode</var>, its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-size\" id=\"ref-for-largest-contentful-paint-candidate-size①\">size</a> set to <var>size</var>, its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-request\" id=\"ref-for-largest-contentful-paint-candidate-request①\">request</a> set to null, and its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-loadtime\" id=\"ref-for-largest-contentful-paint-candidate-loadtime①\">loadTime</a> set to 0.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>newCandidate</var> is not null:",
+          "rationale": "create",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#create-a-largestcontentfulpaint-entry\" id=\"ref-for-create-a-largestcontentfulpaint-entry\">Create a LargestContentfulPaint entry</a> with <var>newCandidate</var>, <var>paintTimingInfo</var>, and <var>document</var>.</p>"
             }
           ]
         }
@@ -112,17 +133,17 @@
           "html": "<p>If <var>size</var> is equal to <var>rootWidth</var> times <var>rootHeight</var>, return null.</p>"
         },
         {
-          "html": "<p>If <var>imageRequest</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#eligible-to-be-largest-contentful-paint\" id=\"ref-for-eligible-to-be-largest-contentful-paint\">eligible to be largest contentful paint</a>, return null.</p>"
-        },
-        {
           "html": "If <var>imageRequest</var> is not null, run the following steps to adjust for image position and upscaling:",
-          "rationale": "let",
+          "rationale": "if",
           "steps": [
+            {
+              "html": "<p>If <var>imageRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a>’s content length in bytes is less than <var>size</var> * 0.004, then return null.</p>"
+            },
             {
               "html": "<p>Let <var>concreteDimensions</var> be <var>imageRequest</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-images-3/#concrete-object-size\" id=\"ref-for-concrete-object-size\">concrete object size</a> within <var>element</var>.</p>"
             },
             {
-              "html": "<p>Let <var>visibleDimensions</var> be <var>concreteDimensions</var>, adjusted for positioning by <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-images-3/#propdef-object-position\" id=\"ref-for-propdef-object-position\">object-position</a> or <a class=\"property css\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-backgrounds-3/#propdef-background-position\" id=\"ref-for-propdef-background-position\">background-position</a> and <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#content-box\" id=\"ref-for-content-box\">content box</a>.</p>"
+              "html": "<p>Let <var>visibleDimensions</var> be <var>concreteDimensions</var>, adjusted for positioning by <a class=\"css property\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-images-3/#propdef-object-position\" id=\"ref-for-propdef-object-position\">object-position</a> or <a class=\"css property\" data-link-type=\"property\" href=\"https://www.w3.org/TR/css-backgrounds-3/#propdef-background-position\" id=\"ref-for-propdef-background-position\">background-position</a> and <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-box-4/#content-box\" id=\"ref-for-content-box\">content box</a>.</p>"
             }
           ],
           "additional": [
@@ -170,55 +191,21 @@
       ]
     },
     {
-      "name": "LargestContentfulPaint potentially-add-entry",
-      "html": "None",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#content-set\" id=\"ref-for-content-set②\">content set</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> <var>candidate</var>, return.</p>"
-        },
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>candidate</var> to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#content-set\" id=\"ref-for-content-set③\">content set</a></p>"
-        },
-        {
-          "html": "<p>Let <var>window</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>.</p>"
-        },
-        {
-          "html": "<p>If either of <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#has-dispatched-scroll-event\" id=\"ref-for-has-dispatched-scroll-event①\">has dispatched scroll event</a> or <a data-link-type=\"dfn\" href=\"https://wicg.github.io/event-timing#has-dispatched-input-event\" id=\"ref-for-has-dispatched-input-event\">has dispatched input event</a> is true, return.</p>"
-        },
-        {
-          "html": "<p>Let <var>size</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#effective-visual-size\" id=\"ref-for-effective-visual-size①\">effective visual size</a> of <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org#concept-element\" id=\"ref-for-concept-element④\">element</a> given <var>intersectionRect</var>.</p>"
-        },
-        {
-          "html": "<p>If <var>size</var> is less than or equal to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-size\" id=\"ref-for-largest-contentful-paint-size\">largest contentful paint size</a>, return.</p>"
-        },
-        {
-          "html": "<p>Let <var>url</var> be the empty string.</p>"
-        },
-        {
-          "html": "<p>If <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-request\" id=\"ref-for-largest-contentful-paint-candidate-request①\">request</a> is not null, set <var>url</var> to be <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-request\" id=\"ref-for-largest-contentful-paint-candidate-request②\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#dom-request-url\" id=\"ref-for-dom-request-url\">request URL</a>.</p>"
-        },
-        {
-          "html": "<p>Let <var>id</var> be <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-element\" id=\"ref-for-largest-contentful-paint-candidate-element③\">element</a>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://dom.spec.whatwg.org#dom-element-id\" id=\"ref-for-dom-element-id\">element id</a>.</p>"
-        },
-        {
-          "html": "<p>Let <var>contentInfo</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a> with <var>contentInfo</var>[\"size\"] = <var>size</var>, <var>contentInfo</var>[\"url\"] = <var>url</var>, <var>contentInfo</var>[\"id\"] = <var>id</var>, <var>contentInfo</var>[\"loadTime\"] = <var>loadTime</var>, and contentInfo[\"element\"] = <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-element\" id=\"ref-for-largest-contentful-paint-candidate-element④\">element</a>.</p>"
-        },
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#create-a-largestcontentfulpaint-entry\" id=\"ref-for-create-a-largestcontentfulpaint-entry\">Create a LargestContentfulPaint entry</a> with <var>contentInfo</var>, <var>paintTimingInfo</var>, and <var>document</var> as inputs.</p>"
-        }
-      ]
-    },
-    {
       "name": "LargestContentfulPaint create-entry",
       "html": "None",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-size\" id=\"ref-for-largest-contentful-paint-size①\">largest contentful paint size</a> to <var>contentInfo</var>[\"size\"].</p>"
+          "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-size\" id=\"ref-for-largest-contentful-paint-size①\">largest contentful paint size</a> to <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-size\" id=\"ref-for-largest-contentful-paint-candidate-size②\">size</a>.</p>"
         },
         {
-          "html": "<p>Let <var>entry</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largestcontentfulpaint\" id=\"ref-for-largestcontentfulpaint⑤\">LargestContentfulPaint</a></code> entry with <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>, whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#paint-timing-info\" id=\"ref-for-paint-timing-info④\">paint timing info</a> is <var>paintTimingInfo</var>, with its</p>\n        <ul>\n         <li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/largest-contentful-paint/#dom-largestcontentfulpaint-size\" id=\"ref-for-dom-largestcontentfulpaint-size①\">size</a></code> set to <var>contentInfo</var>[\"size\"],</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/largest-contentful-paint/#dom-largestcontentfulpaint-url\" id=\"ref-for-dom-largestcontentfulpaint-url①\">url</a></code> set to <var>contentInfo</var>[\"url\"],</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/largest-contentful-paint/#dom-largestcontentfulpaint-id\" id=\"ref-for-dom-largestcontentfulpaint-id①\">id</a></code> set to <var>contentInfo</var>[\"id\"],</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/largest-contentful-paint/#dom-largestcontentfulpaint-loadtime\" id=\"ref-for-dom-largestcontentfulpaint-loadtime①\">loadTime</a></code> set to <var>contentInfo</var>[\"loadTime\"],</p>\n         </li><li data-md=\"\">\n          <p>and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/largest-contentful-paint/#dom-largestcontentfulpaint-element\" id=\"ref-for-dom-largestcontentfulpaint-element②\">element</a></code> set to <var>contentInfo</var>[\"element\"].</p>\n        </li></ul>"
+          "html": "<p>Let <var>url</var> be the empty string.</p>"
+        },
+        {
+          "html": "<p>If <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-request\" id=\"ref-for-largest-contentful-paint-candidate-request②\">request</a> is not null, set <var>url</var> to be <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-request\" id=\"ref-for-largest-contentful-paint-candidate-request③\">request</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#dom-request-url\" id=\"ref-for-dom-request-url\">request URL</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>entry</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largestcontentfulpaint\" id=\"ref-for-largestcontentfulpaint④\">LargestContentfulPaint</a></code> entry with <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>, whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#paint-timing-info\" id=\"ref-for-paint-timing-info③\">paint timing info</a> is <var>paintTimingInfo</var>, with its</p>\n        <ul>\n         <li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/largest-contentful-paint/#dom-largestcontentfulpaint-size\" id=\"ref-for-dom-largestcontentfulpaint-size①\">size</a></code> set to <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-size\" id=\"ref-for-largest-contentful-paint-candidate-size③\">size</a>,</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/largest-contentful-paint/#dom-largestcontentfulpaint-url\" id=\"ref-for-dom-largestcontentfulpaint-url①\">url</a></code> set to <var>url</var>,</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/largest-contentful-paint/#dom-largestcontentfulpaint-id\" id=\"ref-for-dom-largestcontentfulpaint-id①\">id</a></code> set to <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-element\" id=\"ref-for-largest-contentful-paint-candidate-element②\">element</a>’s <a class=\"idl-code\" data-link-type=\"attribute\" href=\"https://dom.spec.whatwg.org#dom-element-id\" id=\"ref-for-dom-element-id\">element id</a>,</p>\n         </li><li data-md=\"\">\n          <p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/largest-contentful-paint/#dom-largestcontentfulpaint-loadtime\" id=\"ref-for-dom-largestcontentfulpaint-loadtime①\">loadTime</a></code> set to <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-loadtime\" id=\"ref-for-largest-contentful-paint-candidate-loadtime②\">loadTime</a>,</p>\n         </li><li data-md=\"\">\n          <p>and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/largest-contentful-paint/#dom-largestcontentfulpaint-element\" id=\"ref-for-dom-largestcontentfulpaint-element②\">element</a></code> set to <var>candidate</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/largest-contentful-paint/#largest-contentful-paint-candidate-element\" id=\"ref-for-largest-contentful-paint-candidate-element③\">element</a>.</p>\n        </li></ul>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry\" id=\"ref-for-dfn-queue-a-performanceentry\">Queue the PerformanceEntry</a> <var>entry</var>.</p>"
