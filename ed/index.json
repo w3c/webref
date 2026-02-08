@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-02-08T06:51:51.158Z",
+  "date": "2026-02-08T12:51:04.893Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -756,7 +756,7 @@
   },
   "stats": {
     "crawled": 724,
-    "errors": 2
+    "errors": 3
   },
   "crawler": "reffy-20.0.9",
   "results": [
@@ -19542,7 +19542,8 @@
       "dfns": "dfns/css-animation-worklet-1.json",
       "headings": "headings/css-animation-worklet-1.json",
       "ids": "ids/css-animation-worklet-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 346)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-animations-1/",
@@ -25152,7 +25153,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-tables-3/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 07 Feb 2026 16:29:14 GMT"
+        "lastModified": "Sat, 07 Feb 2026 16:29:15 GMT"
       },
       "generator": "bikeshed",
       "date": "12 December 2025",
@@ -26846,7 +26847,7 @@
       ],
       "crawled": "https://drafts.csswg.org/cssom-1/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 07 Feb 2026 16:29:14 GMT"
+        "lastModified": "Sat, 07 Feb 2026 16:29:15 GMT"
       },
       "generator": "bikeshed",
       "date": "27 January 2026",
@@ -35560,7 +35561,7 @@
       ],
       "crawled": "https://drafts.csswg.org/selectors-4/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 07 Feb 2026 16:29:14 GMT"
+        "lastModified": "Sat, 07 Feb 2026 16:29:15 GMT"
       },
       "generator": "bikeshed",
       "date": "5 February 2026",
@@ -39457,7 +39458,7 @@
       ],
       "crawled": "https://drafts.csswg.org/web-animations-2/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 07 Feb 2026 16:29:14 GMT"
+        "lastModified": "Sat, 07 Feb 2026 16:29:15 GMT"
       },
       "generator": "bikeshed",
       "date": "24 November 2025",
