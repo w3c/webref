@@ -82,7 +82,7 @@ const MANUAL_EXPANSIONS = {
   'grid-column': ['grid-column-start', 'grid-column-end'],
 
   // Multi-column
-  'columns': ['column-width', 'column-count'],
+  'columns': ['column-width', 'column-count', 'column-height'],
   'column-rule': ['column-rule-width', 'column-rule-style', 'column-rule-color'],
 
   // Lists and UI
@@ -90,7 +90,7 @@ const MANUAL_EXPANSIONS = {
   'outline': ['outline-width', 'outline-style', 'outline-color'],
 
   // Text decoration
-  'text-decoration': ['text-decoration-line', 'text-decoration-style', 'text-decoration-color'],
+  'text-decoration': ['text-decoration-line', 'text-decoration-thickness', 'text-decoration-style', 'text-decoration-color'],
   'text-emphasis': ['text-emphasis-style', 'text-emphasis-color'],
 
   // Background
@@ -144,7 +144,8 @@ const MANUAL_EXPANSIONS = {
     'transition-property',
     'transition-duration',
     'transition-timing-function',
-    'transition-delay'
+    'transition-delay',
+    'transition-behavior'
   ],
 
   // Border shorthands
@@ -266,9 +267,8 @@ const MANUAL_EXPANSIONS = {
   // SVG marker shorthand
   'marker': ['marker-start', 'marker-mid', 'marker-end'],
 
-  // CSS Overflow 4 (line-clamp and -webkit-line-clamp)
+  // CSS Overflow 4
   'line-clamp': ['max-lines', 'block-ellipsis', 'continue'],
-  '-webkit-line-clamp': ['max-lines', 'block-ellipsis', 'continue'],
 
   // CSS Gap Decorations (row-rule is like column-rule)
   'row-rule': ['row-rule-width', 'row-rule-style', 'row-rule-color'],
@@ -399,12 +399,41 @@ const NOT_SHORTHANDS = new Set([
 
 
 /**
+ * Return alias target property name when available.
+ *
+ * Legacy aliases are primarily captured through `legacyAliasOf`. The
+ * `-webkit-` fallback keeps behavior stable when raw data has not yet
+ * propagated the alias relationship.
+ */
+function getAliasTargetName(prop, propertiesByName) {
+  if (prop.legacyAliasOf && propertiesByName.has(prop.legacyAliasOf)) {
+    return prop.legacyAliasOf;
+  }
+
+  if (prop.name.startsWith('-webkit-')) {
+    const unprefixedName = prop.name.slice('-webkit-'.length);
+    if (propertiesByName.has(unprefixedName)) {
+      return unprefixedName;
+    }
+  }
+
+  return null;
+}
+
+
+/**
  * Check if a property is a shorthand based on its definition.
  * A property is a shorthand if it has "see individual properties" in computedValue,
  * initial, or animationType (case-insensitive).
  * Note: percentages alone doesn't indicate a shorthand.
  */
-function isShorthand(prop) {
+function isShorthand(prop, propertiesByName, visited = new Set()) {
+  if (visited.has(prop.name)) {
+    return false;
+  }
+  const nextVisited = new Set(visited);
+  nextVisited.add(prop.name);
+
   // Skip known false positives
   if (NOT_SHORTHANDS.has(prop.name)) return false;
 
@@ -419,6 +448,15 @@ function isShorthand(prop) {
   if (POSITIONAL_ORDERINGS[prop.name]) return true;
   if (CORNER_ORDERINGS[prop.name]) return true;
 
+  // Legacy aliases of shorthand properties are shorthand properties too.
+  const aliasTargetName = getAliasTargetName(prop, propertiesByName);
+  if (aliasTargetName) {
+    const aliasTarget = propertiesByName.get(aliasTargetName);
+    if (aliasTarget) {
+      return isShorthand(aliasTarget, propertiesByName, nextVisited);
+    }
+  }
+
   return false;
 }
 
@@ -428,12 +466,37 @@ function isShorthand(prop) {
  * Returns an array of longhand names, or null if no longhands could be determined.
  * The `all` property is skipped (returns 'SKIP') as consumers need dedicated logic for it.
  */
-function getLonghands(prop, allProperties) {
+function getLonghands(prop, allProperties, propertiesByName, visited = new Set()) {
   const name = prop.name;
+  if (visited.has(name)) {
+    return null;
+  }
+  const nextVisited = new Set(visited);
+  nextVisited.add(name);
 
   // Skip the `all` property - consumers need dedicated logic for it
   if (name === 'all') {
     return 'SKIP';
+  }
+
+  // Preserve existing longhands data when present.
+  if (Array.isArray(prop.longhands) && prop.longhands.length > 0) {
+    return prop.longhands;
+  }
+
+  // Legacy aliases inherit longhands from the target property.
+  const aliasTargetName = getAliasTargetName(prop, propertiesByName);
+  if (aliasTargetName) {
+    const aliasTarget = propertiesByName.get(aliasTargetName);
+    if (aliasTarget) {
+      const aliasLonghands = getLonghands(aliasTarget, allProperties, propertiesByName, nextVisited);
+      if (aliasLonghands === 'SKIP') {
+        return 'SKIP';
+      }
+      if (aliasLonghands && aliasLonghands.length > 0) {
+        return aliasLonghands;
+      }
+    }
   }
 
   // Check manual expansions first
@@ -482,6 +545,7 @@ async function addCssLonghands(folder) {
 
   // First pass: collect all property names
   const allProperties = new Set();
+  const propertiesByName = new Map();
   const specData = new Map();
 
   for (const file of files) {
@@ -493,6 +557,13 @@ async function addCssLonghands(folder) {
     if (data.properties) {
       for (const prop of data.properties) {
         allProperties.add(prop.name);
+
+        // Keep the richest definition when the same property appears in
+        // multiple specs so shorthand and alias detection has enough context.
+        const knownProp = propertiesByName.get(prop.name);
+        if (!knownProp || Object.keys(prop).length > Object.keys(knownProp).length) {
+          propertiesByName.set(prop.name, prop);
+        }
       }
     }
   }
@@ -514,7 +585,7 @@ async function addCssLonghands(folder) {
     let modified = false;
 
     for (const prop of data.properties) {
-      if (!isShorthand(prop)) {
+      if (!isShorthand(prop, propertiesByName)) {
         continue;
       }
       if (prop.longhands) {
@@ -524,7 +595,7 @@ async function addCssLonghands(folder) {
 
       shorthands++;
 
-      const longhands = getLonghands(prop, allProperties);
+      const longhands = getLonghands(prop, allProperties, propertiesByName);
       if (longhands === 'SKIP') {
         // Special case (e.g., `all` property) - skip without error
         skipped++;
