@@ -269,6 +269,7 @@ const MANUAL_EXPANSIONS = {
 
   // CSS Overflow 4
   'line-clamp': ['max-lines', 'block-ellipsis', 'continue'],
+  '-webkit-line-clamp': ['max-lines', 'block-ellipsis', 'continue'],
 
   // CSS Gap Decorations (row-rule is like column-rule)
   'row-rule': ['row-rule-width', 'row-rule-style', 'row-rule-color'],
@@ -399,25 +400,10 @@ const NOT_SHORTHANDS = new Set([
 
 
 /**
- * Return alias target property name when available.
- *
- * Legacy aliases are primarily captured through `legacyAliasOf`. The
- * `-webkit-` fallback keeps behavior stable when raw data has not yet
- * propagated the alias relationship.
+ * Return alias target property when available.
  */
-function getAliasTargetName(prop, propertiesByName) {
-  if (prop.legacyAliasOf && propertiesByName.has(prop.legacyAliasOf)) {
-    return prop.legacyAliasOf;
-  }
-
-  if (prop.name.startsWith('-webkit-')) {
-    const unprefixedName = prop.name.slice('-webkit-'.length);
-    if (propertiesByName.has(unprefixedName)) {
-      return unprefixedName;
-    }
-  }
-
-  return null;
+function getAliasTarget(prop, propertiesByName) {
+  return prop.legacyAliasOf ? (propertiesByName.get(prop.legacyAliasOf) ?? null) : null;
 }
 
 
@@ -449,12 +435,9 @@ function isShorthand(prop, propertiesByName, visited = new Set()) {
   if (CORNER_ORDERINGS[prop.name]) return true;
 
   // Legacy aliases of shorthand properties are shorthand properties too.
-  const aliasTargetName = getAliasTargetName(prop, propertiesByName);
-  if (aliasTargetName) {
-    const aliasTarget = propertiesByName.get(aliasTargetName);
-    if (aliasTarget) {
-      return isShorthand(aliasTarget, propertiesByName, nextVisited);
-    }
+  const aliasTarget = getAliasTarget(prop, propertiesByName);
+  if (aliasTarget) {
+    return isShorthand(aliasTarget, propertiesByName, nextVisited);
   }
 
   return false;
@@ -485,17 +468,14 @@ function getLonghands(prop, allProperties, propertiesByName, visited = new Set()
   }
 
   // Legacy aliases inherit longhands from the target property.
-  const aliasTargetName = getAliasTargetName(prop, propertiesByName);
-  if (aliasTargetName) {
-    const aliasTarget = propertiesByName.get(aliasTargetName);
-    if (aliasTarget) {
-      const aliasLonghands = getLonghands(aliasTarget, allProperties, propertiesByName, nextVisited);
-      if (aliasLonghands === 'SKIP') {
-        return 'SKIP';
-      }
-      if (aliasLonghands && aliasLonghands.length > 0) {
-        return aliasLonghands;
-      }
+  const aliasTarget = getAliasTarget(prop, propertiesByName);
+  if (aliasTarget) {
+    const aliasLonghands = getLonghands(aliasTarget, allProperties, propertiesByName, nextVisited);
+    if (aliasLonghands === 'SKIP') {
+      return 'SKIP';
+    }
+    if (aliasLonghands && aliasLonghands.length > 0) {
+      return aliasLonghands;
     }
   }
 
