@@ -1698,7 +1698,7 @@
         "href": "https://webassembly.github.io/spec/js-api/#dictdef-exceptionoptions"
       },
       "Exception": {
-        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Exception {\n  constructor(Tag exceptionTag, sequence<any> payload, optional ExceptionOptions options = {});\n  any getArg([EnforceRange] unsigned long index);\n  boolean is(Tag exceptionTag);\n  readonly attribute (DOMString or undefined) stack;\n};",
+        "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Exception {\n  constructor(Tag exceptionTag, sequence<any> payload, optional ExceptionOptions options = {});\n  any getArg(Tag exceptionTag, [EnforceRange] unsigned long index);\n  boolean is(Tag exceptionTag);\n  readonly attribute (DOMString or undefined) stack;\n};",
         "type": "interface",
         "name": "Exception",
         "inheritance": null,
@@ -1781,6 +1781,22 @@
               "idlType": "any"
             },
             "arguments": [
+              {
+                "type": "argument",
+                "name": "exceptionTag",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Tag"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
               {
                 "type": "argument",
                 "name": "index",

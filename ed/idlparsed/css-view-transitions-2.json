@@ -97,7 +97,7 @@
         "href": "https://drafts.csswg.org/css-view-transitions-2/#dictdef-startviewtransitionoptions"
       },
       "ViewTransition": {
-        "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  readonly attribute Promise<undefined> updateCallbackDone;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> finished;\n  undefined skipTransition();\n  [SameObject] attribute ViewTransitionTypeSet types;\n  readonly attribute Element transitionRoot;\n  undefined waitUntil(Promise<any> promise);\n};",
+        "fragment": "[Exposed=Window]\ninterface ViewTransition {\n  readonly attribute Promise<undefined> updateCallbackDone;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<undefined> finished;\n  undefined skipTransition();\n  [SameObject] readonly attribute ViewTransitionTypeSet types;\n  readonly attribute Element transitionRoot;\n  undefined waitUntil(Promise<any> promise);\n};",
         "type": "interface",
         "name": "ViewTransition",
         "inheritance": null,
@@ -213,7 +213,7 @@
               }
             ],
             "special": "",
-            "readonly": false,
+            "readonly": true,
             "href": "https://drafts.csswg.org/css-view-transitions-2/#dom-viewtransition-types"
           },
           {

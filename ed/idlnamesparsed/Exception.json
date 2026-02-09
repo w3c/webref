@@ -6,7 +6,7 @@
       "title": "WebAssembly JavaScript Interface",
       "url": "https://www.w3.org/TR/wasm-js-api-2/"
     },
-    "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Exception {\n  constructor(Tag exceptionTag, sequence<any> payload, optional ExceptionOptions options = {});\n  any getArg([EnforceRange] unsigned long index);\n  boolean is(Tag exceptionTag);\n  readonly attribute (DOMString or undefined) stack;\n};",
+    "fragment": "[LegacyNamespace=WebAssembly, Exposed=(Window,Worker,Worklet)]\ninterface Exception {\n  constructor(Tag exceptionTag, sequence<any> payload, optional ExceptionOptions options = {});\n  any getArg(Tag exceptionTag, [EnforceRange] unsigned long index);\n  boolean is(Tag exceptionTag);\n  readonly attribute (DOMString or undefined) stack;\n};",
     "href": "https://webassembly.github.io/spec/js-api/#exception"
   },
   "extended": [],
