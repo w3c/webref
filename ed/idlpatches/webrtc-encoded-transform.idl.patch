@@ -1,0 +1,62 @@
+From 810c05fef76d063c1f56195b128187209d733438 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 9 Feb 2026 15:23:31 +0100
+Subject: [PATCH] Rollback Web IDL to previous version
+
+Renamed dictionary `SFrameTransformOptions` is still used in a couple of
+places. Pending resolution of:
+https://github.com/w3c/webrtc-encoded-transform/issues/296
+---
+ ed/idl/webrtc-encoded-transform.idl | 18 +++++++++---------
+ 1 file changed, 9 insertions(+), 9 deletions(-)
+
+diff --git a/ed/idl/webrtc-encoded-transform.idl b/ed/idl/webrtc-encoded-transform.idl
+index f53cd8357e..5ca80581ec 100644
+--- a/ed/idl/webrtc-encoded-transform.idl
++++ b/ed/idl/webrtc-encoded-transform.idl
+@@ -3,8 +3,8 @@
+ // (https://github.com/w3c/webref)
+ // Source: WebRTC Encoded Transform (https://w3c.github.io/webrtc-encoded-transform/)
+ 
+-typedef (RTCSFrameSenderTransform or RTCRtpScriptTransform) RTCRtpSenderTransform;
+-typedef (RTCSFrameReceiverTransform or RTCRtpScriptTransform) RTCRtpReceiverTransform;
++typedef (SFrameSenderTransform or RTCRtpScriptTransform) RTCRtpSenderTransform;
++typedef (SFrameReceiverTransform or RTCRtpScriptTransform) RTCRtpReceiverTransform;
+ 
+ // New methods for RTCRtpSender and RTCRtpReceiver
+ partial interface RTCRtpSender {
+@@ -24,7 +24,7 @@ enum SFrameCipherSuite {
+      "AES_256_GCM_SHA512_128"
+ };
+ 
+-dictionary RTCSFrameTransformOptions {
++dictionary SFrameTransformOptions {
+     required SFrameCipherSuite cipherSuite;
+ };
+ 
+@@ -42,16 +42,16 @@ interface mixin SFrameDecrypterManager {
+ };
+ 
+ [Exposed=Window]
+-interface RTCSFrameSenderTransform {
+-    constructor(optional RTCSFrameTransformOptions options = {});
++interface SFrameSenderTransform {
++    constructor(optional SFrameTransformOptions options = {});
+ };
+-RTCSFrameSenderTransform includes SFrameEncrypterManager;
++SFrameSenderTransform includes SFrameEncrypterManager;
+ 
+ [Exposed=Window]
+-interface RTCSFrameReceiverTransform : EventTarget {
+-    constructor(optional RTCSFrameTransformOptions options = {});
++interface SFrameReceiverTransform : EventTarget {
++    constructor(optional SFrameTransformOptions options = {});
+ };
+-RTCSFrameReceiverTransform includes SFrameDecrypterManager;
++SFrameReceiverTransform includes SFrameDecrypterManager;
+ 
+ [Exposed=(Window,DedicatedWorker)]
+ interface SFrameEncrypterStream : EventTarget {
+-- 
+2.52.0
+
