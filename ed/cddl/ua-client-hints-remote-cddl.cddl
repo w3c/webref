@@ -4,21 +4,21 @@
 ; Source: User-Agent Client Hints (https://wicg.github.io/ua-client-hints/)
 
 UserAgentClientHintsCommand = (
-  emulation.SetClientHintsOverrideCommand
+  userAgentClientHints.SetClientHintsOverrideCommand
 )
 
-emulation.SetClientHintsOverrideCommand = {
-    method: "emulation.setClientHintsOverride",
+userAgentClientHints.SetClientHintsOverrideCommand = {
+    method: "userAgentClientHints.setClientHintsOverride",
     params: {
-        clientHints: emulation.ClientHintsMetadata / null,
+        clientHints: userAgentClientHints.ClientHintsMetadata / null,
         ? contexts: [+text],
         ? userContexts: [+text],
     }
 }
 
-emulation.ClientHintsMetadata = {
-    ? brands: [* emulation.BrandVersion],
-    ? fullVersionList: [* emulation.BrandVersion],
+userAgentClientHints.ClientHintsMetadata = {
+    ? brands: [* userAgentClientHints.BrandVersion],
+    ? fullVersionList: [* userAgentClientHints.BrandVersion],
     ? platform: text,
     ? platformVersion: text,
     ? architecture: text,
@@ -29,7 +29,7 @@ emulation.ClientHintsMetadata = {
     ? formFactors: [* text];
 }
 
-emulation.BrandVersion = {
+userAgentClientHints.BrandVersion = {
     brand: text,
     version: text
 }
