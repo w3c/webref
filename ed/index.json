@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-02-12T12:52:27.725Z",
+  "date": "2026-02-12T18:53:02.206Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -756,7 +756,7 @@
   },
   "stats": {
     "crawled": 724,
-    "errors": 2
+    "errors": 3
   },
   "crawler": "reffy-20.0.9",
   "results": [
@@ -7239,7 +7239,8 @@
       "links": "links/tc39-canonical-tz.json",
       "headings": "headings/tc39-canonical-tz.json",
       "ids": "ids/tc39-canonical-tz.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://tc39.es/proposal-canonical-tz/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://tc39.es/proposal-decorators/",
@@ -9236,11 +9237,11 @@
       ],
       "crawled": "https://w3c.github.io/webextensions/specification/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 26 Nov 2025 00:04:12 GMT"
+        "lastModified": "Thu, 12 Feb 2026 16:47:25 GMT"
       },
       "generator": "bikeshed",
-      "date": "26 November 2025",
-      "revision": "f28113279c9e2c29112b1af6adf217e250a96eeb",
+      "date": "12 February 2026",
+      "revision": "a10f8734acd56758bc3fa446a1b21f140b21615c",
       "algorithms": "algorithms/webextensions.json",
       "links": "links/webextensions.json",
       "refs": "refs/webextensions.json",
@@ -21331,7 +21332,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-counter-styles-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Feb 2026 20:33:22 GMT"
+        "lastModified": "Tue, 10 Feb 2026 20:33:23 GMT"
       },
       "generator": "bikeshed",
       "date": "13 December 2025",
@@ -22971,7 +22972,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-masking-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Feb 2026 20:33:22 GMT"
+        "lastModified": "Tue, 10 Feb 2026 20:33:23 GMT"
       },
       "generator": "bikeshed",
       "date": "12 December 2025",
@@ -24952,7 +24953,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-speech-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Feb 2026 20:33:22 GMT"
+        "lastModified": "Tue, 10 Feb 2026 20:33:23 GMT"
       },
       "generator": "bikeshed",
       "date": "22 December 2025",
@@ -28266,7 +28267,7 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/core/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Feb 2026 02:08:09 GMT"
+        "lastModified": "Thu, 12 Feb 2026 15:43:48 GMT"
       },
       "generator": "respec",
       "date": "12 February 2026",
@@ -28324,7 +28325,7 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/authoring/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Feb 2026 02:08:09 GMT"
+        "lastModified": "Thu, 12 Feb 2026 15:43:48 GMT"
       },
       "generator": "respec",
       "date": "12 February 2026",
@@ -28384,7 +28385,7 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/a11y/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Feb 2026 02:08:09 GMT"
+        "lastModified": "Thu, 12 Feb 2026 15:43:48 GMT"
       },
       "generator": "respec",
       "date": "12 February 2026",
@@ -28440,7 +28441,7 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Feb 2026 02:08:09 GMT"
+        "lastModified": "Thu, 12 Feb 2026 15:43:48 GMT"
       },
       "generator": "respec",
       "date": "12 February 2026",
@@ -28497,7 +28498,7 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Feb 2026 02:08:09 GMT"
+        "lastModified": "Thu, 12 Feb 2026 15:43:48 GMT"
       },
       "generator": "respec",
       "date": "12 February 2026",
@@ -31477,7 +31478,7 @@
       ],
       "crawled": "https://drafts.csswg.org/mediaqueries-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Feb 2026 20:33:22 GMT"
+        "lastModified": "Tue, 10 Feb 2026 20:33:23 GMT"
       },
       "generator": "bikeshed",
       "date": "23 January 2026",
@@ -37495,10 +37496,10 @@
       ],
       "crawled": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Feb 2026 19:00:11 GMT"
+        "lastModified": "Thu, 12 Feb 2026 18:21:41 GMT"
       },
       "generator": "respec",
-      "date": "10 February 2026",
+      "date": "12 February 2026",
       "links": "links/ttml-imsc1.3.json",
       "refs": "refs/ttml-imsc1.3.json",
       "dfns": "dfns/ttml-imsc1.3.json",
@@ -40986,10 +40987,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 19:46:26 GMT"
+        "lastModified": "Thu, 12 Feb 2026 16:58:01 GMT"
       },
       "generator": "bikeshed",
-      "date": "29 January 2026",
+      "date": "12 February 2026",
       "algorithms": "algorithms/webgpu.json",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
@@ -42283,10 +42284,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 19:46:26 GMT"
+        "lastModified": "Thu, 12 Feb 2026 16:58:01 GMT"
       },
       "generator": "bikeshed",
-      "date": "29 January 2026",
+      "date": "12 February 2026",
       "algorithms": "algorithms/WGSL.json",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
@@ -42587,10 +42588,10 @@
       ],
       "crawled": "https://w3c.github.io/wot-binding-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 15 Jan 2026 14:17:28 GMT"
+        "lastModified": "Thu, 12 Feb 2026 14:13:26 GMT"
       },
       "generator": "respec",
-      "date": "15 January 2026",
+      "date": "12 February 2026",
       "links": "links/wot-binding-registry.json",
       "refs": "refs/wot-binding-registry.json",
       "dfns": "dfns/wot-binding-registry.json",
@@ -42752,10 +42753,10 @@
       ],
       "crawled": "https://w3c.github.io/wot-thing-description/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 05 Feb 2026 14:11:17 GMT"
+        "lastModified": "Thu, 12 Feb 2026 14:10:33 GMT"
       },
       "generator": "respec",
-      "date": "05 February 2026",
+      "date": "12 February 2026",
       "algorithms": "algorithms/wot-thing-description-2.0.json",
       "links": "links/wot-thing-description-2.0.json",
       "refs": "refs/wot-thing-description-2.0.json",
@@ -42809,10 +42810,10 @@
       ],
       "crawled": "https://w3c.github.io/wot-thing-description/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 05 Feb 2026 14:11:17 GMT"
+        "lastModified": "Thu, 12 Feb 2026 14:10:33 GMT"
       },
       "generator": "respec",
-      "date": "05 February 2026",
+      "date": "12 February 2026",
       "algorithms": "algorithms/wot-thing-description11.json",
       "links": "links/wot-thing-description11.json",
       "refs": "refs/wot-thing-description11.json",
