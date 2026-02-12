@@ -1,0 +1,58 @@
+{
+  "spec": {
+    "title": "Core Accessibility API Mappings 1.2",
+    "url": "https://w3c.github.io/core-aam/"
+  },
+  "algorithms": [
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>mapped_priority</var> be <code>NotificationProcessing_ImportantAll</code> if <var>priority</var> is \"high\", otherwise <code>NotificationProcessing_All</code>.</p>"
+        },
+        {
+          "html": "<p>\n                    Call <code>UiaRaiseNotificationEvent</code> with <var>node</var>, <code>NotificationKind_ActionCompleted</code>, <var>mapped_priority</var>, <var>announcement</var>, and the empty\n                    string.\n                  </p>"
+        }
+      ]
+    },
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>mapped_priority</var> be <code>Atk.Live.ATK_LIVE_ASSERTIVE</code> if <var>priority</var> is \"high\", otherwise <code>Atk.Live.ATK_LIVE_POLITE</code>.</p>"
+        },
+        {
+          "html": "<p>Call <code>g_signal_emit_by_name</code> with <var>node</var>, <code>\"notification\"</code>, <var>announcement</var>, and <var>mapped_priority</var>.</p>"
+        }
+      ]
+    },
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>mapped_priority</var> be <code>ATSPI_LIVE_ASSERTIVE</code> if <var>priority</var> is \"high\", otherwise <code>ATSPI_LIVE_POLITE</code>.</p>"
+        },
+        {
+          "html": "<p>Send a DBUS signal <code>ATSPI_DBUS_INTERFACE_EVENT_OBJECT</code> with <var>node</var>, <code>\"announcement\"</code>, <var>announcement</var>, and <var>mapped_priority</var>.</p>"
+        }
+      ]
+    },
+    {
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>mapped_priority</var> be <code>NSAccessibilityPriorityHigh</code> if <var>priority</var> is \"high\", otherwise <code>NSAccessibilityPriorityMedium</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>userInfo</var> be a <code>NSDictionary</code> with the following keys:</p>",
+          "ignored": [
+            "NSAccessibilityAnnouncementKey as announcement NSAccessibilityPriorityKey as mapped_priority"
+          ]
+        },
+        {
+          "html": "<p>Call <code>NSAccessibilityPostNotificationWithUserInfo</code> with <var>node</var>, <var>NSAccessibilityAnnouncementRequestedNotification</var>, and <var>userInfo</var>.</p>"
+        }
+      ]
+    }
+  ]
+}
