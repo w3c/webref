@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-02-13T12:52:14.334Z",
+  "date": "2026-02-13T18:51:06.461Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -756,7 +756,7 @@
   },
   "stats": {
     "crawled": 724,
-    "errors": 2
+    "errors": 3
   },
   "crawler": "reffy-20.0.9",
   "results": [
@@ -15389,9 +15389,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Feb 2026 17:31:59 GMT"
+        "lastModified": "Fri, 13 Feb 2026 00:45:56 GMT"
       },
-      "date": "10 February 2026",
+      "date": "13 February 2026",
       "links": "links/rfc2397.json",
       "headings": "headings/rfc2397.json",
       "ids": "ids/rfc2397.json",
@@ -19543,7 +19543,8 @@
       "dfns": "dfns/css-animation-worklet-1.json",
       "headings": "headings/css-animation-worklet-1.json",
       "ids": "ids/css-animation-worklet-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 346)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-animations-1/",
@@ -20985,7 +20986,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-conditional-5/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Feb 2026 21:35:28 GMT"
+        "lastModified": "Thu, 12 Feb 2026 21:35:29 GMT"
       },
       "generator": "bikeshed",
       "date": "14 January 2026",
@@ -23925,7 +23926,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-position-3/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Feb 2026 21:35:28 GMT"
+        "lastModified": "Thu, 12 Feb 2026 21:35:29 GMT"
       },
       "generator": "bikeshed",
       "date": "9 February 2026",
@@ -24193,7 +24194,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-regions-1/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Feb 2026 21:35:28 GMT"
+        "lastModified": "Thu, 12 Feb 2026 21:35:29 GMT"
       },
       "generator": "bikeshed",
       "date": "18 January 2026",
@@ -39066,11 +39067,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 13 Feb 2026 11:57:09 GMT"
+        "lastModified": "Fri, 13 Feb 2026 16:33:37 GMT"
       },
       "generator": "bikeshed",
       "date": "13 February 2026",
-      "revision": "fa840176b1d67e07403699b44b97f2ba62e73221",
+      "revision": "62f535cba00beafa08bc50b3f29dcbcc92bdfd8a",
       "algorithms": "algorithms/wasm-core-2.json",
       "links": "links/wasm-core-2.json",
       "refs": "refs/wasm-core-2.json",
@@ -39139,11 +39140,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 13 Feb 2026 11:57:09 GMT"
+        "lastModified": "Fri, 13 Feb 2026 16:33:37 GMT"
       },
       "generator": "bikeshed",
       "date": "13 February 2026",
-      "revision": "fa840176b1d67e07403699b44b97f2ba62e73221",
+      "revision": "62f535cba00beafa08bc50b3f29dcbcc92bdfd8a",
       "algorithms": "algorithms/wasm-js-api-2.json",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
@@ -39205,11 +39206,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 13 Feb 2026 11:57:09 GMT"
+        "lastModified": "Fri, 13 Feb 2026 16:33:37 GMT"
       },
       "generator": "bikeshed",
       "date": "13 February 2026",
-      "revision": "fa840176b1d67e07403699b44b97f2ba62e73221",
+      "revision": "62f535cba00beafa08bc50b3f29dcbcc92bdfd8a",
       "algorithms": "algorithms/wasm-web-api-2.json",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
@@ -39264,10 +39265,10 @@
       ],
       "crawled": "https://w3c.github.io/wcag3/guidelines/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Feb 2026 10:28:25 GMT"
+        "lastModified": "Fri, 13 Feb 2026 15:28:29 GMT"
       },
       "generator": "respec",
-      "date": "12 February 2026",
+      "date": "13 February 2026",
       "algorithms": "algorithms/wcag-3.0.json",
       "links": "links/wcag-3.0.json",
       "refs": "refs/wcag-3.0.json",
@@ -39657,11 +39658,11 @@
       ],
       "crawled": "https://webaudio.github.io/web-audio-api/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 23:45:17 GMT"
+        "lastModified": "Fri, 13 Feb 2026 15:44:45 GMT"
       },
       "generator": "bikeshed",
-      "date": "29 January 2026",
-      "revision": "f63ce7af11972a35a096b133428e71d81678c31e",
+      "date": "13 February 2026",
+      "revision": "1203a54e3b979391db80a6790ed45e055684f9ea",
       "algorithms": "algorithms/webaudio-1.0.json",
       "links": "links/webaudio-1.0.json",
       "refs": "refs/webaudio-1.0.json",
@@ -39724,11 +39725,11 @@
       ],
       "crawled": "https://webaudio.github.io/web-audio-api/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 29 Jan 2026 23:45:17 GMT"
+        "lastModified": "Fri, 13 Feb 2026 15:44:45 GMT"
       },
       "generator": "bikeshed",
-      "date": "29 January 2026",
-      "revision": "f63ce7af11972a35a096b133428e71d81678c31e",
+      "date": "13 February 2026",
+      "revision": "1203a54e3b979391db80a6790ed45e055684f9ea",
       "algorithms": "algorithms/webaudio-1.1.json",
       "links": "links/webaudio-1.1.json",
       "refs": "refs/webaudio-1.1.json",
