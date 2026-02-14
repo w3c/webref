@@ -7,8 +7,8 @@
     {
       "name": "column-rule-break",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-break",
-      "value": "none | spanning-item | intersection",
-      "initial": "spanning-item",
+      "value": "none | normal | intersection",
+      "initial": "normal",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "n/a",
@@ -24,11 +24,11 @@
           "value": "none"
         },
         {
-          "name": "spanning-item",
-          "prose": "Gap decorations start and end at visible \"T\" intersections but continue through visible \"cross\" intersections.",
-          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-spanning-item",
+          "name": "normal",
+          "prose": "Behavior depends on the type of container.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-normal",
           "type": "value",
-          "value": "spanning-item"
+          "value": "normal"
         },
         {
           "name": "intersection",
@@ -46,8 +46,8 @@
     {
       "name": "row-rule-break",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-break",
-      "value": "none | spanning-item | intersection",
-      "initial": "spanning-item",
+      "value": "none | normal | intersection",
+      "initial": "normal",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "n/a",
@@ -63,11 +63,11 @@
           "value": "none"
         },
         {
-          "name": "spanning-item",
-          "prose": "Gap decorations start and end at visible \"T\" intersections but continue through visible \"cross\" intersections.",
-          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-spanning-item",
+          "name": "normal",
+          "prose": "Behavior depends on the type of container.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-normal",
           "type": "value",
-          "value": "spanning-item"
+          "value": "normal"
         },
         {
           "name": "intersection",

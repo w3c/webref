@@ -11,13 +11,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Let <var>pairs</var> be an empty list.\n\t\t\t\tLet <var>endpoints</var> be the list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap-intersection-point\" id=\"ref-for-gap-intersection-point①③\">gap intersection points</a> that fall along the centerline of <var>gap</var>,\n\t\t\t\tordered from start to end along <var>gap</var>’s axis.\n\t\t\t\tLet <var>break</var> be the used value of either <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-break\" id=\"ref-for-propdef-column-rule-break④\">column-rule-break</a> or <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-break\" id=\"ref-for-propdef-row-rule-break③\">row-rule-break</a>,\n\t\t\t\twhichever applies to <var>gap</var>."
+          "html": "Let <var>pairs</var> be an empty list.\n\t\t\t\tLet <var>endpoints</var> be the list of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#gap-intersection-point\" id=\"ref-for-gap-intersection-point①③\">gap intersection points</a> that fall along the centerline of <var>gap</var>,\n\t\t\t\tordered from start to end along <var>gap</var>’s axis.\n\t\t\t\tLet <var>break</var> be the used value of either <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-break\" id=\"ref-for-propdef-column-rule-break⑤\">column-rule-break</a> or <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-break\" id=\"ref-for-propdef-row-rule-break④\">row-rule-break</a>,\n\t\t\t\twhichever applies to <var>gap</var>."
         },
         {
           "html": "If <var>endpoints</var> contains fewer than 2 items, return <var>pairs</var>."
         },
         {
-          "html": "If <var>break</var> is other than <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-none\" id=\"ref-for-valdef-column-rule-break-none①\">none</a>,\n\t\t\t\tand the first two items in <var>endpoints</var> are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#discontiguous\" id=\"ref-for-discontiguous①\">discontiguous</a>,\n\t\t\t\tremove the first item from <var>endpoints</var>, then go back to step 2."
+          "html": "If <var>break</var> is other than <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-break-none\" id=\"ref-for-valdef-column-rule-break-none③\">none</a>,\n\t\t\t\tand the first two items in <var>endpoints</var> are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-gaps-1/#discontiguous\" id=\"ref-for-discontiguous①\">discontiguous</a>,\n\t\t\t\tremove the first item from <var>endpoints</var>, then go back to step 2."
         },
         {
           "html": "Remove the first item from <var>endpoints</var>.\n\t\t\t\tLet <var>start</var> be equal to that item."
@@ -28,7 +28,7 @@
         {
           "html": "If <var>endpoints</var> is non-empty, and any of the following conditions are true...\n\t\t\t\t\n      \n      \n\t\t\t\t...then go back to step 5.",
           "ignored": [
-            "break is none. break is spanning-item, and start is not discontiguous with the first item in endpoints. break is intersection, and start is not discontiguous with the first item in endpoints, and the intersection is flanked by spanning items on opposing sides."
+            "break is none. break is normal, and start is not discontiguous with the first item in endpoints. break is intersection, and start is not discontiguous with the first item in endpoints, and the intersection is flanked by spanning items on opposing sides."
           ]
         },
         {
