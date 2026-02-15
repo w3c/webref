@@ -3296,7 +3296,7 @@
           ]
         },
         {
-          "html": "<p>\n              Return <var>mac</var>.\n            </p>"
+          "html": "<p>\n              Return a <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-byte-sequence-containing\">byte sequence containing</a> <var>mac</var>.\n            </p>"
         }
       ]
     },
@@ -3324,6 +3324,9 @@
               ]
             }
           ]
+        },
+        {
+          "html": "<p>\n              Let <var>mac</var> be a <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-byte-sequence-containing\">byte sequence containing</a> <var>mac</var>.\n            </p>"
         },
         {
           "html": "<p>\n              Return true if <var>mac</var> is equal to <var>signature</var> and false\n              otherwise.\n            </p>"
@@ -3685,7 +3688,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>\n              If <var>length</var> is null, or is less than 32 (4*8), then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
+          "html": "<p>\n              If <var>length</var> is null, or is less than 32 (4*8), or is not a multiple of 8,\n              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
         },
         {
           "html": "<p>\n              If the <a data-link-type=\"idl\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-Argon2Params-version\" class=\"internalDFN\" id=\"ref-for-dfn-Argon2Params-version-2\"><code>version</code></a> member\n              of <var>normalizedAlgorithm</var> is present and is not 19 (0x13),\n              then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n              <a data-link-type=\"exception\" data-lt=\"OperationError\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>.\n            </p>"
