@@ -6,7 +6,7 @@
 import fs from "node:fs";
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import core from '@actions/core';
+import * as core from '@actions/core';
 import Octokit from "./octokit.js";
 import { loadJSON } from "./utils.js";
 const scriptPath = path.dirname(fileURLToPath(import.meta.url));
