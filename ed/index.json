@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-02-17T06:52:55.969Z",
+  "date": "2026-02-17T13:01:27.893Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -133,6 +133,7 @@
       "tc39-intl-era-monthcode",
       "tc39-intl-locale-info",
       "tc39-joint-iteration",
+      "tc39-json-parse-with-source",
       "tc39-nonextensible-applies-to-private",
       "tc39-shadowrealm",
       "tc39-source-phase-imports",
@@ -169,6 +170,7 @@
       "wasm-core-2-fork-branch-hinting",
       "wasm-core-2-fork-compact-import-section",
       "wasm-js-api-2-fork-content-security-policy",
+      "wasm-core-2-fork-custom-descriptors",
       "wasm-js-api-2-fork-esm-integration",
       "wasm-js-api-2-fork-exception-handling",
       "wasm-core-2-fork-extended-const",
@@ -313,6 +315,7 @@
       "rfc9218",
       "rfc9530",
       "rfc9649",
+      "rfc9659",
       "rfc9842",
       "promises-guide",
       "GIF",
@@ -497,7 +500,6 @@
       "fingerprinting-guidance",
       "gamepad",
       "generic-sensor",
-      "geolocation-sensor",
       "geolocation",
       "geometry-1",
       "gpc",
@@ -755,10 +757,10 @@
     ]
   },
   "stats": {
-    "crawled": 724,
-    "errors": 3
+    "crawled": 726,
+    "errors": 6
   },
-  "crawler": "reffy-20.0.9",
+  "crawler": "reffy-20.0.10",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -1758,8 +1760,7 @@
       "refs": "refs/css-typed-om-2.json",
       "headings": "headings/css-typed-om-2.json",
       "ids": "ids/css-typed-om-2.json",
-      "cddl": [],
-      "error": "Error: Loading https://drafts.css-houdini.org/css-typed-om-2/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+      "cddl": []
     },
     {
       "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
@@ -1810,7 +1811,8 @@
       "dfns": "dfns/font-metrics-api-1.json",
       "headings": "headings/font-metrics-api-1.json",
       "ids": "ids/font-metrics-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/font-metrics-api-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://drafts.csswg.org/compositing-2/",
@@ -2153,7 +2155,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-images-5/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
       },
       "generator": "bikeshed",
       "date": "22 December 2025",
@@ -2937,7 +2939,7 @@
       "dfns": "dfns/fido-v2.1.json",
       "headings": "headings/fido-v2.1.json",
       "ids": "ids/fido-v2.1.json",
-      "error": "Error: Switch option without <dd> found: authorized, the authenticator sets the minPinLength return value to the current minimum PIN length value.\n        \nhttps://fidoalliance.org/specs/fido-v2.1-ps-20210615/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-algorithms.mjs:550:19\nArray.map (<anonymous>)\nserializeSteps (https://fidoalliance.org/specs/fido-v2.1-ps-20210615/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-algorithms.mjs:544:53)\n    at evaluate (evaluate at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:663:36), <anonymous>:6:28)\n    at #evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:388:19)\n    at async ExecutionContext.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:274:16)\n    at async IsolatedWorld.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/IsolatedWorld.js:97:16)\n    at async CdpFrame.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Frame.js:359:20)\n    at async CdpPage.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Page.js:822:20)\n    at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:663:25)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+      "error": "Error: Switch option without <dd> found: authorized, the authenticator sets the minPinLength return value to the current minimum PIN length value.\n        \nhttps://fidoalliance.org/specs/fido-v2.1-ps-20210615/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-algorithms.mjs:550:19\nArray.map (<anonymous>)\nserializeSteps (https://fidoalliance.org/specs/fido-v2.1-ps-20210615/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-algorithms.mjs:544:53)\n    at evaluate (evaluate at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:663:36), <anonymous>:6:28)\n    at #evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:388:19)\n    at async ExecutionContext.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:274:16)\n    at async IsolatedWorld.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/IsolatedWorld.js:97:16)\n    at async CdpFrame.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Frame.js:359:20)\n    at async CdpPage.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Page.js:826:20)\n    at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:663:25)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html",
@@ -2975,7 +2977,7 @@
       "versions": [
         "https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html"
       ],
-      "error": "Error: Switch option without <dd> found: authorized, the authenticator sets the minPinLength return value to the current minimum PIN length value.\n        \nhttps://fidoalliance.org/specs/fido-v2.2-ps-20250714/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-algorithms.mjs:550:19\nArray.map (<anonymous>)\nserializeSteps (https://fidoalliance.org/specs/fido-v2.2-ps-20250714/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-algorithms.mjs:544:53)\n    at evaluate (evaluate at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:663:36), <anonymous>:6:28)\n    at #evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:388:19)\n    at async ExecutionContext.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:274:16)\n    at async IsolatedWorld.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/IsolatedWorld.js:97:16)\n    at async CdpFrame.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Frame.js:359:20)\n    at async CdpPage.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Page.js:822:20)\n    at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:663:25)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+      "error": "Error: Switch option without <dd> found: authorized, the authenticator sets the minPinLength return value to the current minimum PIN length value.\n        \nhttps://fidoalliance.org/specs/fido-v2.2-ps-20250714/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-algorithms.mjs:550:19\nArray.map (<anonymous>)\nserializeSteps (https://fidoalliance.org/specs/fido-v2.2-ps-20250714/reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/extract-algorithms.mjs:544:53)\n    at evaluate (evaluate at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:663:36), <anonymous>:6:28)\n    at #evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:388:19)\n    at async ExecutionContext.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:274:16)\n    at async IsolatedWorld.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/IsolatedWorld.js:97:16)\n    at async CdpFrame.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Frame.js:359:20)\n    at async CdpPage.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Page.js:826:20)\n    at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:663:25)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://fs.spec.whatwg.org/",
@@ -3395,7 +3397,7 @@
       ],
       "crawled": "https://immersive-web.github.io/model-element/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 08 Jan 2026 00:03:32 GMT"
+        "lastModified": "Thu, 08 Jan 2026 00:03:31 GMT"
       },
       "generator": "respec",
       "date": "08 January 2026",
@@ -3428,7 +3430,7 @@
       ],
       "nightly": {
         "url": "https://immersive-web.github.io/plane-detection/",
-        "status": "Draft Community Group Report",
+        "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/immersive-web/plane-detection",
         "sourcePath": "index.bs",
@@ -7614,6 +7616,52 @@
       "cddl": []
     },
     {
+      "url": "https://tc39.es/proposal-json-parse-with-source/",
+      "seriesComposition": "full",
+      "shortname": "tc39-json-parse-with-source",
+      "series": {
+        "shortname": "tc39-json-parse-with-source",
+        "currentSpecification": "tc39-json-parse-with-source",
+        "title": "JSON.parse source text access",
+        "shortTitle": "JSON.parse source text access",
+        "nightlyUrl": "https://tc39.es/proposal-json-parse-with-source/"
+      },
+      "standing": "good",
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-json-parse-with-source/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-json-parse-with-source",
+        "sourcePath": "spec.html",
+        "filename": "index.html"
+      },
+      "title": "JSON.parse source text access",
+      "source": "spec",
+      "shortTitle": "JSON.parse source text access",
+      "categories": [
+        "browser"
+      ],
+      "versions": [
+        "https://tc39.es/proposal-json-parse-with-source/"
+      ],
+      "crawled": "https://tc39.es/proposal-json-parse-with-source/",
+      "crawlCacheInfo": {
+        "lastModified": "Sun, 23 Nov 2025 22:13:47 GMT"
+      },
+      "date": "23 November 2025",
+      "links": "links/tc39-json-parse-with-source.json",
+      "headings": "headings/tc39-json-parse-with-source.json",
+      "ids": "ids/tc39-json-parse-with-source.json",
+      "cddl": []
+    },
+    {
       "url": "https://tc39.es/proposal-nonextensible-applies-to-private/",
       "seriesComposition": "full",
       "shortname": "tc39-nonextensible-applies-to-private",
@@ -9237,7 +9285,7 @@
       ],
       "crawled": "https://w3c.github.io/webextensions/specification/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 12 Feb 2026 16:47:26 GMT"
+        "lastModified": "Thu, 12 Feb 2026 16:47:25 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2026",
@@ -9462,6 +9510,54 @@
       "dfns": "dfns/wasm-js-api-2-fork-content-security-policy.json",
       "headings": "headings/wasm-js-api-2-fork-content-security-policy.json",
       "ids": "ids/wasm-js-api-2-fork-content-security-policy.json",
+      "cddl": []
+    },
+    {
+      "url": "https://webassembly.github.io/custom-descriptors/",
+      "seriesComposition": "fork",
+      "shortname": "wasm-core-2-fork-custom-descriptors",
+      "series": {
+        "shortname": "wasm-core",
+        "currentSpecification": "wasm-core-2",
+        "title": "WebAssembly Core",
+        "shortTitle": "WebAssembly Core",
+        "releaseUrl": "https://www.w3.org/TR/wasm-core/",
+        "nightlyUrl": "https://webassembly.github.io/spec/core/bikeshed/"
+      },
+      "seriesVersion": "2",
+      "forkOf": "wasm-core-2",
+      "title": "WebAssembly Specifications",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "WebAssembly Community Group",
+          "url": "https://www.w3.org/community/webassembly/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webassembly.github.io/custom-descriptors/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/WebAssembly/custom-descriptors",
+        "sourcePath": "document/core/index.bs",
+        "filename": "index.html"
+      },
+      "source": "spec",
+      "shortTitle": "WebAssembly Core: Custom Descriptors and JS Interop",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webassembly.github.io/custom-descriptors/"
+      ],
+      "crawled": "https://webassembly.github.io/custom-descriptors/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 02 Feb 2026 16:52:21 GMT"
+      },
+      "date": "2 February 2026",
+      "links": "links/wasm-core-2-fork-custom-descriptors.json",
+      "ids": "ids/wasm-core-2-fork-custom-descriptors.json",
       "cddl": []
     },
     {
@@ -11904,7 +12000,8 @@
       "elements": "elements/fenced-frame.json",
       "headings": "headings/fenced-frame.json",
       "ids": "ids/fenced-frame.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://wicg.github.io/fenced-frame/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:539:21)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 209)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21) {\n  [cause]: TimeoutError: Navigation timeout of 120000 ms exceeded\n      at new Deferred (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/util/Deferred.js:57:34)\n      at Deferred.create (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/util/Deferred.js:18:16)\n      at new LifecycleWatcher (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/LifecycleWatcher.js:70:46)\n      at CdpFrame.goto (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/Frame.js:145:29)\n      at CdpFrame.<anonymous> (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/util/decorators.js:101:27)\n      at CdpPage.goto (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Page.js:576:43)\n      at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:537:35)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n      at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n      at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n}"
     },
     {
       "url": "https://wicg.github.io/file-system-access/",
@@ -12221,7 +12318,7 @@
       ],
       "crawled": "https://wicg.github.io/ink-enhancement/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Sep 2024 07:54:59 GMT"
+        "lastModified": "Mon, 16 Sep 2024 07:54:58 GMT"
       },
       "generator": "bikeshed",
       "date": "16 September 2024",
@@ -13318,7 +13415,7 @@
       ],
       "crawled": "https://wicg.github.io/PEPC/permission-elements.html",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 14:20:18 GMT"
+        "lastModified": "Tue, 17 Feb 2026 09:08:01 GMT"
       },
       "generator": "bikeshed",
       "date": "13 January 2026",
@@ -16019,9 +16116,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 14 Feb 2026 12:48:07 GMT"
+        "lastModified": "Thu, 12 Feb 2026 20:59:50 GMT"
       },
-      "date": "14 February 2026",
+      "date": "12 February 2026",
       "links": "links/rfc7578.json",
       "headings": "headings/rfc7578.json",
       "ids": "ids/rfc7578.json",
@@ -17098,6 +17195,54 @@
       "cddl": []
     },
     {
+      "url": "https://www.rfc-editor.org/rfc/rfc9659",
+      "seriesComposition": "full",
+      "shortname": "rfc9659",
+      "series": {
+        "shortname": "rfc9659",
+        "currentSpecification": "rfc9659",
+        "title": "Window Sizing for Zstandard Content Encoding",
+        "shortTitle": "Window Sizing for Zstandard Content Encoding",
+        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc9659"
+      },
+      "organization": "IETF",
+      "groups": [
+        {
+          "name": "HTTP Working Group",
+          "url": "https://datatracker.ietf.org/wg/httpbis/"
+        }
+      ],
+      "nightly": {
+        "url": "https://www.rfc-editor.org/rfc/rfc9659",
+        "status": "Informational",
+        "alternateUrls": [
+          "https://datatracker.ietf.org/doc/html/rfc9659",
+          "https://tools.ietf.org/html/rfc9659"
+        ],
+        "filename": "rfc9659.html"
+      },
+      "title": "RFC 9659: Window Sizing for Zstandard Content Encoding",
+      "source": "ietf",
+      "shortTitle": "Window Sizing for Zstandard Content Encoding",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.rfc-editor.org/rfc/rfc9659"
+      ],
+      "crawled": "https://www.rfc-editor.org/rfc/rfc9659",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 17 Feb 2026 11:00:28 GMT"
+      },
+      "date": "17 February 2026",
+      "links": "links/rfc9659.json",
+      "refs": "refs/rfc9659.json",
+      "headings": "headings/rfc9659.json",
+      "ids": "ids/rfc9659.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.rfc-editor.org/rfc/rfc9842",
       "seriesComposition": "full",
       "shortname": "rfc9842",
@@ -17561,7 +17706,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/act-rules-format-1.1/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Recommendation",
         "filename": "Overview.html"
       },
       "title": "Accessibility Conformance Testing (ACT) Rules Format 1.1",
@@ -20290,7 +20435,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-4/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
       },
       "generator": "bikeshed",
       "date": "27 December 2025",
@@ -20428,7 +20573,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-6/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
       },
       "generator": "bikeshed",
       "date": "16 January 2026",
@@ -20647,7 +20792,8 @@
       "dfns": "dfns/css-color-5.json",
       "headings": "headings/css-color-5.json",
       "ids": "ids/css-color-5.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.csswg.org/css-color-5/ triggered network error\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:539:21)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 365)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21) {\n  [cause]: TimeoutError: Navigation timeout of 120000 ms exceeded\n      at new Deferred (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/util/Deferred.js:57:34)\n      at Deferred.create (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/util/Deferred.js:18:16)\n      at new LifecycleWatcher (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/LifecycleWatcher.js:70:46)\n      at CdpFrame.goto (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/Frame.js:145:29)\n      at CdpFrame.<anonymous> (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/util/decorators.js:101:27)\n      at CdpPage.goto (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Page.js:576:43)\n      at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:537:35)\n      at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n      at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n      at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n}"
     },
     {
       "url": "https://www.w3.org/TR/css-color-adjust-1/",
@@ -21403,7 +21549,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-display-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
       },
       "generator": "bikeshed",
       "date": "5 November 2025",
@@ -21470,7 +21616,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-display-4/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
       },
       "generator": "bikeshed",
       "date": "18 January 2025",
@@ -22644,7 +22790,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-inline-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
       },
       "generator": "bikeshed",
       "date": "2 December 2025",
@@ -22841,7 +22987,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-lists-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
       },
       "generator": "bikeshed",
       "date": "13 December 2025",
@@ -23249,7 +23395,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-namespaces-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
       },
       "generator": "bikeshed",
       "date": "25 October 2024",
@@ -23382,7 +23528,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-nesting-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
       },
       "generator": "bikeshed",
       "date": "5 February 2026",
@@ -24399,7 +24545,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-ruby-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
       },
       "generator": "bikeshed",
       "date": "26 December 2025",
@@ -25154,7 +25300,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-tables-3/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
       },
       "generator": "bikeshed",
       "date": "12 December 2025",
@@ -25293,7 +25439,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-text-4/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
       },
       "generator": "bikeshed",
       "date": "29 October 2025",
@@ -25678,7 +25824,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-transitions-2/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -26124,7 +26270,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-values-5/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
       },
       "generator": "bikeshed",
       "date": "27 January 2026",
@@ -26610,7 +26756,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-writing-modes-4/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
       },
       "generator": "bikeshed",
       "date": "20 January 2026",
@@ -26955,7 +27101,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/dapt/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -27345,7 +27491,8 @@
       "dfns": "dfns/did-resolution.json",
       "headings": "headings/did-resolution.json",
       "ids": "ids/did-resolution.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Respec generation took too long\nisReady (pptr:evaluate;processSpecification%20(file%3A%2F%2F%2Fhome%2Frunner%2Fwork%2Fwebref%2Fwebref%2Fnode_modules%2Freffy%2Fsrc%2Flib%2Futil.js%3A597%3A20):25:31)\n    at isReady (evaluate at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:597:20), <anonymous>:24:30)\n    at #evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:388:19)\n    at async ExecutionContext.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/ExecutionContext.js:274:16)\n    at async IsolatedWorld.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/cdp/IsolatedWorld.js:97:16)\n    at async CdpFrame.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Frame.js:359:20)\n    at async CdpPage.evaluate (file:///home/runner/work/webref/webref/node_modules/puppeteer-core/lib/esm/puppeteer/api/Page.js:826:20)\n    at async processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:597:9)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://www.w3.org/TR/digital-credentials/",
@@ -28933,7 +29080,7 @@
       ],
       "crawled": "https://drafts.csswg.org/filter-effects-1/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
       },
       "generator": "bikeshed",
       "date": "3 February 2026",
@@ -29137,71 +29284,6 @@
       "cddl": []
     },
     {
-      "url": "https://www.w3.org/TR/geolocation-sensor/",
-      "seriesComposition": "full",
-      "shortname": "geolocation-sensor",
-      "series": {
-        "shortname": "geolocation-sensor",
-        "currentSpecification": "geolocation-sensor",
-        "title": "Geolocation Sensor",
-        "shortTitle": "Geolocation Sensor",
-        "releaseUrl": "https://www.w3.org/TR/geolocation-sensor/",
-        "nightlyUrl": "https://w3c.github.io/geolocation-sensor/"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Devices and Sensors Working Group",
-          "url": "https://www.w3.org/das/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/geolocation-sensor/",
-        "status": "Working Draft",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/geolocation-sensor/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/geolocation-sensor",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "title": "Geolocation Sensor",
-      "source": "w3c",
-      "shortTitle": "Geolocation Sensor",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "geolocation-sensor"
-        ]
-      },
-      "versions": [
-        "https://www.w3.org/TR/geolocation-sensor/",
-        "https://w3c.github.io/geolocation-sensor/"
-      ],
-      "crawled": "https://w3c.github.io/geolocation-sensor/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 03 Feb 2026 18:30:23 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "3 February 2026",
-      "revision": "06cd403a006298cbbaf77ed5084498e0c87f3bf7",
-      "algorithms": "algorithms/geolocation-sensor.json",
-      "links": "links/geolocation-sensor.json",
-      "refs": "refs/geolocation-sensor.json",
-      "idl": "idl/geolocation-sensor.idl",
-      "dfns": "dfns/geolocation-sensor.json",
-      "headings": "headings/geolocation-sensor.json",
-      "ids": "ids/geolocation-sensor.json",
-      "cddl": []
-    },
-    {
       "url": "https://www.w3.org/TR/geolocation/",
       "seriesComposition": "full",
       "shortname": "geolocation",
@@ -29372,7 +29454,7 @@
       ],
       "crawled": "https://w3c.github.io/gpc/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 03 Feb 2026 14:43:37 GMT"
+        "lastModified": "Tue, 03 Feb 2026 14:43:36 GMT"
       },
       "generator": "respec",
       "date": "03 February 2026",
@@ -33456,7 +33538,7 @@
       ],
       "crawled": "https://w3c.github.io/picture-in-picture/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 30 Jan 2026 09:36:05 GMT"
+        "lastModified": "Fri, 30 Jan 2026 09:36:04 GMT"
       },
       "generator": "bikeshed",
       "date": "30 January 2026",
@@ -33559,11 +33641,9 @@
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/pointerevents/",
+        "url": "https://www.w3.org/TR/pointerevents3/",
         "status": "Editor's Draft",
         "alternateUrls": [],
-        "repository": "https://github.com/w3c/pointerevents",
-        "sourcePath": "index.html",
         "filename": "index.html"
       },
       "title": "Pointer Events",
@@ -33573,22 +33653,16 @@
         "browser"
       ],
       "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "pointerevents"
-        ]
-      },
       "versions": [
-        "https://www.w3.org/TR/pointerevents3/",
-        "https://w3c.github.io/pointerevents/"
+        "https://www.w3.org/TR/pointerevents3/"
       ],
-      "crawled": "https://w3c.github.io/pointerevents/",
+      "crawled": "https://www.w3.org/TR/pointerevents3/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 11 Feb 2026 15:14:47 GMT"
+        "lastModified": "Fri, 13 Feb 2026 10:39:38 GMT"
       },
       "generator": "respec",
-      "date": "11 February 2026",
+      "date": "13 February 2026",
+      "revision": "e7350a2394acdbc41e2718ce748be7aa2c41c3d9",
       "algorithms": "algorithms/pointerevents3.json",
       "links": "links/pointerevents3.json",
       "refs": "refs/pointerevents3.json",
@@ -34023,7 +34097,7 @@
       ],
       "crawled": "https://w3c.github.io/push-api/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 01 Dec 2025 16:02:42 GMT"
+        "lastModified": "Mon, 01 Dec 2025 16:02:41 GMT"
       },
       "generator": "respec",
       "date": "01 December 2025",
@@ -34246,7 +34320,7 @@
       ],
       "crawled": "https://w3c.github.io/rdf-n-quads/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 22 Dec 2025 09:33:27 GMT"
+        "lastModified": "Mon, 22 Dec 2025 09:33:26 GMT"
       },
       "generator": "respec",
       "date": "22 December 2025",
@@ -34967,10 +35041,10 @@
       ],
       "crawled": "https://w3c.github.io/resource-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 09 Dec 2025 06:28:22 GMT"
+        "lastModified": "Tue, 17 Feb 2026 10:24:03 GMT"
       },
       "generator": "respec",
-      "date": "09 December 2025",
+      "date": "17 February 2026",
       "algorithms": "algorithms/resource-timing.json",
       "links": "links/resource-timing.json",
       "refs": "refs/resource-timing.json",
@@ -35562,7 +35636,7 @@
       ],
       "crawled": "https://drafts.csswg.org/selectors-4/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Feb 2026 08:06:49 GMT"
+        "lastModified": "Mon, 16 Feb 2026 08:06:48 GMT"
       },
       "generator": "bikeshed",
       "date": "16 February 2026",
@@ -35843,7 +35917,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/shacl12-rules/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -36791,10 +36865,17 @@
         "nightlyUrl": "https://svgwg.org/svg2-draft/"
       },
       "seriesVersion": "1.1",
-      "nightly": {
+      "seriesNext": "SVG2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "SVG Working Group",
+          "url": "https://www.w3.org/groups/wg/svg/"
+        }
+      ],
+      "release": {
         "url": "https://www.w3.org/TR/SVG11/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
+        "status": "Recommendation",
         "pages": [
           "https://www.w3.org/TR/SVG11/expanded-toc.html",
           "https://www.w3.org/TR/SVG11/intro.html",
@@ -36840,17 +36921,10 @@
         ],
         "filename": "Overview.html"
       },
-      "seriesNext": "SVG2",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "SVG Working Group",
-          "url": "https://www.w3.org/groups/wg/svg/"
-        }
-      ],
-      "release": {
+      "nightly": {
         "url": "https://www.w3.org/TR/SVG11/",
-        "status": "Recommendation",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
         "pages": [
           "https://www.w3.org/TR/SVG11/expanded-toc.html",
           "https://www.w3.org/TR/SVG11/intro.html",
@@ -37058,12 +37132,6 @@
         "releaseUrl": "https://www.w3.org/TR/test-methodology/",
         "nightlyUrl": "https://www.w3.org/TR/test-methodology/"
       },
-      "nightly": {
-        "url": "https://www.w3.org/TR/test-methodology/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "filename": "Overview.html"
-      },
       "categories": [],
       "organization": "W3C",
       "groups": [
@@ -37075,6 +37143,12 @@
       "release": {
         "url": "https://www.w3.org/TR/test-methodology/",
         "status": "Note",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://www.w3.org/TR/test-methodology/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
         "filename": "Overview.html"
       },
       "title": "A Method for Writing Testable Conformance Requirements",
@@ -39033,6 +39107,7 @@
       "forks": [
         "wasm-core-2-fork-branch-hinting",
         "wasm-core-2-fork-compact-import-section",
+        "wasm-core-2-fork-custom-descriptors",
         "wasm-core-2-fork-extended-const",
         "wasm-core-2-fork-function-references",
         "wasm-core-2-fork-gc",
@@ -42224,7 +42299,7 @@
       ],
       "crawled": "https://immersive-web.github.io/layers/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 22 Jan 2026 03:45:00 GMT"
+        "lastModified": "Thu, 22 Jan 2026 03:44:59 GMT"
       },
       "generator": "bikeshed",
       "date": "22 January 2026",
@@ -42945,12 +43020,6 @@
         "releaseUrl": "https://www.w3.org/TR/DOM-Style/",
         "nightlyUrl": "https://www.w3.org/TR/DOM-Style/"
       },
-      "nightly": {
-        "url": "https://www.w3.org/TR/DOM-Level-2-Style/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "filename": "Overview.html"
-      },
       "obsoletedBy": [
         "cssom-1"
       ],
@@ -42961,6 +43030,12 @@
           "url": "https://www.w3.org/DOM/Group/"
         }
       ],
+      "nightly": {
+        "url": "https://www.w3.org/TR/DOM-Level-2-Style/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "filename": "Overview.html"
+      },
       "release": {
         "url": "https://www.w3.org/TR/DOM-Level-2-Style/",
         "status": "Discontinued Draft",
