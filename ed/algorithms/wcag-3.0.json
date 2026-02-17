@@ -302,7 +302,7 @@
       ]
     },
     {
-      "html": "For each live media broadcast",
+      "html": "For each live media broadcast:",
       "rationale": "check",
       "steps": [
         {
@@ -318,7 +318,7 @@
           "html": "Play the media with the extended audio description on."
         },
         {
-          "html": "Check that the extended audio description provides all of the information that is important and cannot be understood from the main soundtrack alone."
+          "html": "Check that the extended audio description includes all  important visual information that cannot be understood from the main soundtrack alone."
         }
       ]
     },
@@ -330,7 +330,7 @@
           "html": "Play the media with audio description on."
         },
         {
-          "html": "Check that the media player provides users with control of the audio description volume separately from the main audio track."
+          "html": "Check that the volume of the audio description can be controlled separately from the main audio track of the media using all relevant inputs."
         }
       ]
     },
@@ -339,7 +339,7 @@
       "rationale": "check",
       "steps": [
         {
-          "html": "Check that a version of the media has audio description available in alternative languages."
+          "html": "Check that a version of the media has audio description available in alternative languages and the language of audio description can be changed by the user."
         },
         {
           "html": "Alternatively, check that alternative versions of the media exist that have audio description available in alternative languages."
@@ -348,49 +348,46 @@
     },
     {
       "html": "For each instance where information is conveyed by hue:",
-      "rationale": "for",
+      "rationale": "check",
       "steps": [
         {
-          "html": "For each instance identified in #1, identify the instances where the hue conveys information."
-        },
+          "html": "Check that at least one additional visual indicator is present that conveys the same information."
+        }
+      ]
+    },
+    {
+      "html": "For each part of a graphical object that conveys information:",
+      "rationale": "check",
+      "steps": [
         {
-          "html": "For each instance identified in #2, confirm that at least one * additional visual indicator is present that conveys the same information."
+          "html": "Check that these parts meet the minimum contrast ratio with adjacent colors."
         }
       ]
     },
     {
       "html": "For each instance where information is conveyed by visual depth:",
-      "rationale": "for",
+      "rationale": "check",
       "steps": [
         {
-          "html": "For each instance identified in #1, identify the instances where the visual depth conveys information."
-        },
-        {
-          "html": "For each instance identified in #2, confirm that at least one additional visual indicator is present that conveys the same information."
+          "html": "Check that at least one additional visual indicator is present that conveys the same information."
         }
       ]
     },
     {
       "html": "For each instance where information is conveyed by sound:",
-      "rationale": "for",
+      "rationale": "check",
       "steps": [
         {
-          "html": "For each instance identified in #1, identify the instances where the sound conveys information."
-        },
-        {
-          "html": "For each instance identified in #2, confirm the information is conveyed in a way that does not use sound, for instance with a visual, text, or haptic indicator."
+          "html": "Check that the information is also conveyed in a way that does not use sound, for instance with a visual, text, or haptic indicator."
         }
       ]
     },
     {
       "html": "For each instance where information is conveyed by spatial audio:",
-      "rationale": "for",
+      "rationale": "check",
       "steps": [
         {
-          "html": "For each instance identified in #1, identify the instances where the sound conveys information."
-        },
-        {
-          "html": "For each instance identified in #2, confirm the information is conveyed in a way that does not use sound, for instance with a visual text, or haptic indicator."
+          "html": "Check that the information is also conveyed in a way that does not use sound, for instance with a visual text, or haptic indicator."
         }
       ]
     },
@@ -497,41 +494,26 @@
       ]
     },
     {
-      "html": "<b>Procedure</b>",
+      "html": "For each page/view:",
       "rationale": "check",
       "steps": [
         {
-          "html": "Customize a page/view by adjusting aspects of the text appearance, such as size, style, and color."
+          "html": "Adjust aspects of the text appearance, such as size, style, and color."
         },
         {
           "html": "Export, save, and print the content."
         },
         {
-          "html": "Check that the customizations remain intact in the exported/saved/printed version. If there are multiple export options, check that at least one preserves the customizations."
+          "html": "Check that the customizations in #1 remain intact in the exported/saved/printed version. If there are multiple export options, check that at least one preserves the customizations."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "for",
-      "steps": [
-        {
-          "html": "Identify all visible text."
-        },
-        {
-          "html": "For text that is embedded in an image, check if text has a <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-text-alternative\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-text-alternative-3\">text alternative</a> or can be accurately read using the <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-accessibility-support-set\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-accessibility-support-set-1\">accessibility support set</a>."
-        },
-        {
-          "html": "For text content, check that the text is not hidden using code such as the <code>aria-hidden</code> attribute."
-        }
-      ]
-    },
-    {
-      "html": "<b>Procedure</b>",
+      "html": "For text content:",
       "rationale": "establish",
       "steps": [
         {
-          "html": "Establish which languages are used in the view."
+          "html": "Establish which language is used."
         },
         {
           "html": "Check that the content’s language is identified in the HTML code with a lang attribute."
@@ -539,24 +521,18 @@
       ]
     },
     {
-      "html": "<b>Procedure</b>",
+      "html": "For each instance of text styling, weight, size, or other text characteristics that conveys meaning that is not just emphasis:",
       "rationale": "check",
       "steps": [
-        {
-          "html": "Identify any instances of text styling, weight, size, or other text characteristics conveying meaning that is not just emphasis."
-        },
         {
           "html": "Check that an additional indicator of that meaning is available."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
+      "html": "For each date, temperature, time, or Roman numeral presented visually:",
       "rationale": "check",
       "steps": [
-        {
-          "html": "Identify any dates, temperatures, times, and Roman numerals that are presented visually."
-        },
         {
           "html": "Check that it uses an unambiguous format."
         },
@@ -566,12 +542,9 @@
       ]
     },
     {
-      "html": "<b>Procedure</b>",
+      "html": "For any abbreviation in the content:",
       "rationale": "check",
       "steps": [
-        {
-          "html": "Check for any abbreviations in the content."
-        },
         {
           "html": "Check that an explanation is available for the first use of the abbreviation."
         },
@@ -626,14 +599,14 @@
       ]
     },
     {
-      "html": "<b>Procedure</b>",
+      "html": "For all text content:",
       "rationale": "check",
       "steps": [
         {
           "html": "Check for content that has missing diacritics."
         },
         {
-          "html": "Check that an alternative version is provided that includes diacritics needed to identify the correct meaning of each word."
+          "html": "Check that an alternative version to text identified in #1 is provided that includes diacritics needed to identify the correct meaning of each word."
         },
         {
           "html": "Check that the <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-accessibility-support-set\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-accessibility-support-set-4\">accessibility support set</a> meets ‘Diacritics available’."
@@ -641,17 +614,14 @@
       ]
     },
     {
-      "html": "For each sentence:",
+      "html": "For each sentence:\nFor all nested clauses in the sentence (introduced by nesting conjunctions such as ‘because’, ‘although’, ‘if’, ‘that’, ‘which’, ‘who’, ‘when’, and ‘where’).",
       "rationale": "check",
       "steps": [
         {
-          "html": "<p>Identify all nested clauses in the sentence (introduced by nesting conjunctions such as ‘because’, ‘although’, ‘if’, ‘that’, ‘which’, ‘who’, ‘when’, and ‘where’).</p>"
+          "html": "Check that each initial nested clause does not contain other nested clauses within it."
         },
         {
-          "html": "<p>Check that each initial nested clause does not contain other nested clauses within it.</p>"
-        },
-        {
-          "html": "<p>Check that a technology in the <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-accessibility-support-set\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-accessibility-support-set-5\">accessibility support set</a> meets ‘No nested clauses’.</p>"
+          "html": "Check that a technology in the <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-accessibility-support-set\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-accessibility-support-set-5\">accessibility support set</a> meets ‘No nested clauses’."
         }
       ]
     },
@@ -674,12 +644,9 @@
       ]
     },
     {
-      "html": "<strong>Procedure</strong>",
+      "html": "For any complex numerical information in the content:",
       "rationale": "check",
       "steps": [
-        {
-          "html": "Check for any complex numerical information in the content."
-        },
         {
           "html": "Check that an alternative is available that is not presented as complex numerical information."
         }
@@ -725,16 +692,16 @@
       ]
     },
     {
-      "html": "Where the platform does not use a visible pointer indicator:",
-      "rationale": "for",
+      "html": "Where the platform does not use a visible pointer indicator, for each interactive element:",
+      "rationale": "check",
       "steps": [
         {
-          "html": "For each interactive element, check that there is an indicator of activation."
+          "html": "Check that there is an indicator of activation."
         }
       ]
     },
     {
-      "html": "<strong>Procedure</strong>",
+      "html": "For each pointer indicator:",
       "rationale": "check",
       "steps": [
         {
@@ -743,7 +710,7 @@
       ]
     },
     {
-      "html": "For each custom pointer:",
+      "html": "For each custom pointer indicator:",
       "rationale": "check",
       "steps": [
         {
@@ -758,14 +725,14 @@
       ]
     },
     {
-      "html": "<strong>Procedure</strong>",
+      "html": "For each pointer indicator:",
       "rationale": "check",
       "steps": [
         {
           "html": "Check that the pointer uses the standard platform indicator."
         },
         {
-          "html": "If it does not, check for a setting that the user can enable to use the standard platform indicator."
+          "html": "Check for a setting that the user can enable to use the standard platform indicator."
         }
       ]
     },
@@ -774,7 +741,10 @@
       "rationale": "move",
       "steps": [
         {
-          "html": "Move the pointer (mouse, eye tracker, hand gesture in VR space, …) and verify if there is some form of indication of where the user is pointing to."
+          "html": "Move the pointer (mouse, eye tracker, hand gesture in VR space, …)."
+        },
+        {
+          "html": "Check that there is some form of indication of where the user is pointing to."
         }
       ]
     },
@@ -783,12 +753,12 @@
       "rationale": "check",
       "steps": [
         {
-          "html": "Check whether it meets one of the exceptions."
+          "html": "Check that it meets one of the exceptions."
         }
       ]
     },
     {
-      "html": "<strong>Procedure</strong>",
+      "html": "For each pointer indicator:",
       "rationale": "check",
       "steps": [
         {
@@ -800,17 +770,14 @@
       ]
     },
     {
-      "html": "<strong>Procedure</strong>",
-      "rationale": "for",
+      "html": "For groups of repeated interactive elements (for example, a site-wide navigation bar on a website):",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Identify components that receive focus."
+          "html": "Check that a method of skipping them is available."
         },
         {
-          "html": "For groups of repeated interactive elements (for example, a site-wide navigation bar on a website), check that a method of skipping them is available."
-        },
-        {
-          "html": "Check that hidden interactive elements do not receive focus"
+          "html": "Check that hidden interactive elements do not receive focus."
         },
         {
           "html": "Check that static elements do not receive focus."
@@ -819,15 +786,15 @@
     },
     {
       "html": "For each situation where the keyboard focus is removed:",
-      "rationale": "verify",
+      "rationale": "check",
       "steps": [
         {
-          "html": "verify that the keyboard focus moves to its previous location, or, if that no longer exists, to another meaningful location."
+          "html": "Check that the keyboard focus moves to its previous location, or, if that no longer exists, to another meaningful location."
         }
       ]
     },
     {
-      "html": "<strong>Procedure</strong>",
+      "html": "For each page/view:",
       "rationale": "determine",
       "steps": [
         {
@@ -842,6 +809,15 @@
       ]
     },
     {
+      "html": "For each interactive component in a set of pages/views:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that components appear in the same relative visual position across pages/views, except when exceptions apply."
+        }
+      ]
+    },
+    {
       "html": "For each interactive element:",
       "rationale": "check",
       "steps": [
@@ -858,7 +834,7 @@
     },
     {
       "html": "For each interactive element:",
-      "rationale": "verify",
+      "rationale": "check",
       "steps": [
         {
           "html": "Identify the interactive elements’ programmatic name."
@@ -867,7 +843,7 @@
           "html": "Identify the interactive element’s visual name."
         },
         {
-          "html": "Verify that #1 includes all of #2."
+          "html": "Check that #1 includes all of #2."
         }
       ]
     },
@@ -881,7 +857,19 @@
       ]
     },
     {
-      "html": "<strong>Procedure</strong>\nFor each interactive element:",
+      "html": "<strong>Procedure</strong>\nFor all content on the <a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-page\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-page-6\">page</a>/<a href=\"https://w3c.github.io/wcag3/guidelines/#dfn-view\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-view-8\">view</a>:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the content can be viewed using the keyboard and keyboard actions in the <a href=\"https://github.com/w3c/wcag3/wiki/Standard-Keyboard-Navigation-&amp;-Operation-Keys-and-Techniques\">Standard Keyboard Navigation &amp; Operation Keys and Techniques</a>;"
+        },
+        {
+          "html": "Check that the content can be viewed using keyboard actions described on the page where it is required or on a page earlier in the process where it is required."
+        }
+      ]
+    },
+    {
+      "html": "For each interactive element:",
       "rationale": "check",
       "steps": [
         {
@@ -894,13 +882,13 @@
     },
     {
       "html": "For each non-standard (custom) keyboard command that works on a page/view:",
-      "rationale": "verify",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Verify that documentation of keyboard commands exists."
+          "html": "Check that documentation of keyboard commands exists."
         },
         {
-          "html": "Verify that the documentation is available from the page/view."
+          "html": "Check that the documentation is available from the page/view."
         }
       ]
     },
@@ -948,7 +936,7 @@
       "rationale": "check",
       "steps": [
         {
-          "html": "Check that one of the following is true”\n<ul>\n<li>The focus was moved under direct user control</li>\n<li>A new page / view such as a dialog is introduced and the focus is moved to it</li>\n<li>The user is informed of the potential move and given the chance to avoid the move</li>\n<li>The keyboard focus moves to the next item in keyboard navigation order</li>\n</ul>"
+          "html": "Check that one of the following is true:\n<ul>\n<li>The focus was moved under direct user control</li>\n<li>A new page / view such as a dialog is introduced and the focus is moved to it</li>\n<li>The user is informed of the potential move and given the chance to avoid the move</li>\n<li>The keyboard focus moves to the next item in keyboard navigation order</li>\n</ul>"
         }
       ]
     },
@@ -977,6 +965,15 @@
       ]
     },
     {
+      "html": "For set of adjacent links that go to the same destination:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that only one of the links is in the focus and reading order."
+        }
+      ]
+    },
+    {
       "html": "For each element that can be activated with a simple pointer:",
       "rationale": "check",
       "steps": [
@@ -1000,6 +997,15 @@
       "steps": [
         {
           "html": "Check that it can also be operated by a simple pointer input or a sequence of simple pointer inputs that do not require timing."
+        }
+      ]
+    },
+    {
+      "html": "For each type of pointer interaction:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that it can be cancelled with a consistent interaction."
         }
       ]
     },
@@ -1053,7 +1059,7 @@
       "rationale": "check",
       "steps": [
         {
-          "html": "Check that the content can be closed without moving the focus way from the trigger. Either by pressing Esc, by pressing another other documented keyboard shortcut, or by activating the trigger."
+          "html": "Check that the content can be closed without moving the focus away from the trigger. Either by pressing Esc, by pressing another other documented keyboard shortcut, or by activating the trigger."
         }
       ]
     },
@@ -1062,7 +1068,7 @@
       "rationale": "check",
       "steps": [
         {
-          "html": "Check that he pointer can be moved over the additional content without the additional content disappearing."
+          "html": "Check that the pointer can be moved over the additional content without the additional content disappearing."
         }
       ]
     },
@@ -1089,7 +1095,7 @@
       "rationale": "set",
       "steps": [
         {
-          "html": "Set up multiple input types (pointer, keyboard, voice, gesture, etc)"
+          "html": "Set up multiple input types (pointer, keyboard, voice, gesture, etc.)"
         },
         {
           "html": "Check that you can switch between inputs and complete functionality"
@@ -1124,30 +1130,27 @@
       ]
     },
     {
-      "html": "For each method of user authentication:",
-      "rationale": "verify",
-      "steps": [
-        {
-          "html": "Verify that there is at least one other method of non-biometric authentication."
-        }
-      ]
-    },
-    {
-      "html": "<b>Procedure</b>\nFor each method of user authentication:",
-      "rationale": "verify",
-      "steps": [
-        {
-          "html": "Verify that there is at least one other method of authentication (biometric or non-biometric)."
-        }
-      ]
-    },
-    {
-      "html": "<strong>Procedure</strong>",
+      "html": "For each method of biometric user authentication:",
       "rationale": "check",
       "steps": [
         {
-          "html": "Locate any places where voice is used for identification."
-        },
+          "html": "Check that there is at least one other method of non-biometric authentication."
+        }
+      ]
+    },
+    {
+      "html": "For each method of user authentication:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that there is at least one other method of authentication (biometric or non-biometric)."
+        }
+      ]
+    },
+    {
+      "html": "For each place where voice is used for identification:",
+      "rationale": "check",
+      "steps": [
         {
           "html": "Check that there is an alternative way to achieve authentication."
         }
@@ -1161,55 +1164,55 @@
           "html": "Trigger errors."
         },
         {
-          "html": "For each error, verify that the nature of the problem is identified and described."
+          "html": "For each error, check that the nature of the problem is identified and described."
         }
       ]
     },
     {
       "html": "For each error message:",
-      "rationale": "verify",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Verify it is an error that needs correction by the user."
+          "html": "Check that the error needs correction by the user."
         },
         {
-          "html": "Verify that the error message includes suggestions for how to fix the error."
+          "html": "Check that the error message includes suggestions for how to fix the error."
         }
       ]
     },
     {
       "html": "For each validation error:",
-      "rationale": "verify",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Verify that it meets at least two of the listed indicators (symbol, color or text)."
+          "html": "Check that it meets at least two of the listed indicators (symbol, color or text)."
         }
       ]
     },
     {
       "html": "For each error messages:",
-      "rationale": "verify",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Verify that the error message persists until the user fixes the error or dismisses the message."
+          "html": "Check that the error message persists until the user fixes the error or dismisses the message."
         }
       ]
     },
     {
       "html": "For each validation error:",
-      "rationale": "verify",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Verify that validation error is indicated visually."
+          "html": "Check that validation error is indicated visually."
         },
         {
-          "html": "Verify that validation error is indicated programmatically."
+          "html": "Check that validation error is indicated programmatically."
         }
       ]
     },
     {
       "html": "For each page/view:",
-      "rationale": "make",
+      "rationale": "check",
       "steps": [
         {
           "html": "Zoom in 400%"
@@ -1218,73 +1221,85 @@
           "html": "Trigger errors"
         },
         {
-          "html": "Make sure the error is visible next to the trigger or that the focus moves to the error."
+          "html": "Check that the error is visible next to the trigger or that the focus moves to the error."
+        }
+      ]
+    },
+    {
+      "html": "For each data entry point:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that users can return at any point in the process to correct data they entered."
+        },
+        {
+          "html": "If it’s not possible to go back and correct the data during the process, check that the information being submitted can be reviewed and corrected before submission, or that it’s validated and can be fixed before submission."
+        }
+      ]
+    },
+    {
+      "html": "For each data submission:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the user is notified about the submission immediately afterwards."
         }
       ]
     },
     {
       "html": "<b>Procedure</b>",
-      "rationale": "verify",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Identify all data entry points."
-        },
-        {
-          "html": "Verify that users can return at any point in the process to correct data they entered."
-        },
-        {
-          "html": "If it’s not possible to go back and correct the data during the process, verify that the information being submitted can be reviewed and corrected before submission, or that it’s validated and can be fixed before submission."
-        }
-      ]
-    },
-    {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
-      "steps": [
-        {
-          "html": "Submit data."
-        },
-        {
-          "html": "Verify that the user is notified about the submission immediately afterwards."
-        }
-      ]
-    },
-    {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
-      "steps": [
-        {
-          "html": "Verify that no validation has not occurred before data entry."
+          "html": "Check that no validation has not occurred before data entry."
         },
         {
           "html": "Enter data."
         },
         {
-          "html": "Verify that validation is provided immediately after data entry or occurs before submission."
+          "html": "Check that validation is provided immediately after data entry or occurs before submission."
         }
       ]
     },
     {
       "html": "For each page/view:",
-      "rationale": "for",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Identify if content includes flashing."
+          "html": "Check if content includes flashing."
         },
         {
-          "html": "For each instance of flashing, identify if the flashing is essential."
+          "html": "For each instance of flashing, check that the flashing is essential."
         }
       ]
     },
     {
       "html": "For each page/view:",
-      "rationale": "for",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Identify if content includes visual motion or pseudo-motion."
+          "html": "Check if content includes flashing."
+        }
+      ]
+    },
+    {
+      "html": "For each page/view:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check if content includes visual motion or pseudo-motion."
         },
         {
-          "html": "For each instance, identify if the visual motion or pseudo-motion is essential."
+          "html": "For each instance, check that the visual motion or pseudo-motion is essential."
+        }
+      ]
+    },
+    {
+      "html": "For each page/view:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check if content includes visual motion or pseudo-motion."
         }
       ]
     },
@@ -1301,6 +1316,15 @@
       ]
     },
     {
+      "html": "For haptic feedback caused by the digital content (vs. the operating system or user agent).",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check if there is a setting that allows for reducing or turning off the haptic feedback."
+        }
+      ]
+    },
+    {
       "html": "For audio shifting caused by the digital content (vs. the operating system or user agent):",
       "rationale": "check",
       "steps": [
@@ -1310,7 +1334,7 @@
       ]
     },
     {
-      "html": "<b>Procedure</b>",
+      "html": "For each page/view:",
       "rationale": "check",
       "steps": [
         {
@@ -1322,7 +1346,7 @@
       ]
     },
     {
-      "html": "<b>Procedure</b>",
+      "html": "For each multi-step process:",
       "rationale": "process",
       "steps": [
         {
@@ -1337,7 +1361,7 @@
       ]
     },
     {
-      "html": "<b>Procedure</b>",
+      "html": "For each multi-step process:",
       "rationale": "process",
       "steps": [
         {
@@ -1352,32 +1376,23 @@
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "activate",
+      "html": "For each change of page/view triggered by content:",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Activate a link in the product that should open a new page/view."
+          "html": "Check that the change is conveyed in the view."
         },
         {
-          "html": "Verify that the change is conveyed in the view."
-        },
-        {
-          "html": "Verify that the change is conveyed programmatically using the assistive technology in the accessibility support set."
+          "html": "Check that the change is conveyed programmatically using the assistive technology in the accessibility support set."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
+      "html": "For each page/view that is not the website’s home page:",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Select and view a website’s page other than the homepage."
-        },
-        {
-          "html": "Examine the source code of the HTML document."
-        },
-        {
-          "html": "Verify that there is a link that points to the website’s starting point."
+          "html": "Check that there is a link that points to the website’s home page."
         }
       ]
     },
@@ -1397,139 +1412,136 @@
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
+      "html": "<b>Procedure</b>\nFor each input field within the unit of conformance:",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Identify all input fields within the unit of conformance through visual and code inspection."
-        },
-        {
-          "html": "Verify that each <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> and <code>&lt;textarea&gt;</code> in the source code has a programmatically associated <code>&lt;label&gt;</code> using <code>for</code> and <code>id</code> attributes."
+          "html": "Check that each <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> and <code>&lt;textarea&gt;</code> in the source code has a programmatically associated <code>&lt;label&gt;</code> using <code>for</code> and <code>id</code> attributes."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
+      "html": "For each list within the unit of conformance:",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Identify all lists within the unit of conformance through visual and code inspection."
+          "html": "Check that each list consists of a <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> or <code>&lt;dl&gt;</code>."
         },
         {
-          "html": "Verify that each list consists of a <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code> or <code>&lt;dl&gt;</code>."
+          "html": "Check that each list item within the list is contained within an <code>&lt;li&gt;</code> element (for <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>) or <code>&lt;dt&gt;</code>/<code>&lt;dd&gt;</code> pair (for <code>&lt;dl&gt;</code>)."
         },
         {
-          "html": "Verify that each list item within the list is contained within an <code>&lt;li&gt;</code> element (for <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>) or <code>&lt;dt&gt;</code>/<code>&lt;dd&gt;</code> pair (for <code>&lt;dl&gt;</code>)."
-        },
-        {
-          "html": "Verify that the immediate child element of the list is an <code>&lt;li&gt;</code> element (for <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>) or <code>&lt;dt&gt;</code>/<code>&lt;dd&gt;</code> pair (for <code>&lt;dl&gt;</code>)."
+          "html": "Check that the immediate child element of the list is an <code>&lt;li&gt;</code> element (for <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>) or <code>&lt;dt&gt;</code>/<code>&lt;dd&gt;</code> pair (for <code>&lt;dl&gt;</code>)."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
+      "html": "For each nested list within the unit of conformance:",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Identify all nested lists within the unit of conformance through visual and code inspection."
-        },
-        {
-          "html": "Verify that all child lists are contained within a <code>&lt;li&gt;</code> of the parent list."
+          "html": "Check that all child lists are contained within a <code>&lt;li&gt;</code> of the parent list."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "use",
+      "html": "For each meaningful blocks of content in the page/view:",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Identify meaningful blocks of content in the page/view."
+          "html": "Check that an appropriate role is being used for the meaningful blocks of content in the source code."
         },
         {
-          "html": "Examine the source code to validate that an appropriate role is being used for the meaningful blocks of content."
-        },
-        {
-          "html": "Use assistive technology to validate that an appropriate role is being used for the meaningful blocks of content."
+          "html": "Check using assistive technology that an appropriate role is being used for the meaningful blocks of content."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "use",
+      "html": "For the hierarchy of headings:",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Review content and identify meaningful blocks of content."
+          "html": "Check that headings for sibling content blocks have the same heading level."
         },
         {
-          "html": "Examine the source code to validate that an appropriate role is being used for the meaningful blocks of content."
-        },
-        {
-          "html": "Use assistive technology to validate that an appropriate role is being used for the meaningful blocks of content."
+          "html": "Check that headings for immediate child content blocks should be at most one level higher than parent content blocks."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
+      "html": "For each ordered process:",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Identify elements that open a modal dialog when interacted with."
-        },
+          "html": "Check that each step in the process includes an indicator of its position within the process."
+        }
+      ]
+    },
+    {
+      "html": "For each meaningful block of content in the page/view:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that each meaningful block of content is grouped by one or more of the following characteristics:\n<ul>\n<li>Color or lightness — the same color scheme is used (Note that this should also meet requirements for ‘Color alone’ and ‘Contrast’)</li>\n<li>Borders — blocks are contained within the same borders</li>\n<li>Spacing — blocks are grouped based on their proximity to others within the same area, while spacing is used to separate different sections of content</li>\n<li>Font — blocks are presented with similar font families</li>\n<li>Position — blocks are located in the same area of the page/view (for example, header, navigation, footer)</li>\n<li>Repeated visual feature — blocks contain a consistent visual feature (for example, bullets in a list, checkbox)</li>\n</ul>"
+        }
+      ]
+    },
+    {
+      "html": "For each element that opens a modal dialog when interacted with:",
+      "rationale": "check",
+      "steps": [
         {
           "html": "Open the dialog."
         },
         {
-          "html": "Verify that the dialog includes a mechanism to allow the dialog to be dismissed."
+          "html": "Check that the dialog includes a mechanism to allow the dialog to be dismissed."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
+      "html": "For each instance of infinite scrolling:",
+      "rationale": "check",
       "steps": [
-        {
-          "html": "Identify instances of infinite scrolling."
-        },
         {
           "html": "Open the dialog."
         },
         {
-          "html": "Verify that the dialog includes a mechanism to allow the dialog to be dismissed"
+          "html": "Check that the dialog includes a mechanism to allow the dialog to be dismissed"
         }
       ]
     },
     {
       "html": "For each variation of the product in scope:",
-      "rationale": "verify",
+      "rationale": "check",
       "steps": [
         {
           "html": "Identify common structural components across multiple pages/views."
         },
         {
-          "html": "Verify that components are presented in the same order within each page/view."
+          "html": "Check that components are presented in the same order within each page/view."
         }
       ]
     },
     {
       "html": "For each repeated blocks of navigation across multiple pages/views of the product or process:",
-      "rationale": "verify",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Verify that the navigation items within each block of navigation have the same relative order across all pages/views of the product or process."
+          "html": "Check that the navigation items within each block of navigation have the same relative order across all pages/views of the product or process."
         }
       ]
     },
     {
       "html": "For each repeated block of navigation across multiple pages/views of the product or process:",
-      "rationale": "verify",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Verify that the navigation items within each block of navigation have the same names across all pages/views of the product or process."
+          "html": "Check that the navigation items within each block of navigation have the same names across all pages/views of the product or process."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
+      "html": "For each form that requests personal information:",
       "rationale": "ensure",
       "steps": [
         {
@@ -1539,128 +1551,104 @@
           "html": "Navigate to a form requiring the input of personal information."
         },
         {
-          "html": "Use browser tools to automatically populate personal information into the form."
+          "html": "Check that the browser tools automatically populate personal information into the form."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "navigate",
+      "html": "For each form requiring the completion of a complex test, such as a puzzle, image identification, gesture reproduction, math question, or character recognition/entry:",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Navigate to a form requiring the completion of a complex test, such as a puzzle, image identification, gesture reproduction, math question, or character recognition/entry."
-        },
-        {
-          "html": "Verify that there is an alternative provided that does not require completion of a cognitive function test."
-        }
-      ]
-    },
-    {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
-      "steps": [
-        {
-          "html": "Identify the presence of a time limit."
-        },
-        {
-          "html": "Verify if there is a way to disable it."
-        },
-        {
-          "html": "Wait for the timeout."
-        },
-        {
-          "html": "Verify that before the timeout, an option is given to extend the time limit."
-        }
-      ]
-    },
-    {
-      "html": "<b>Procedure</b>",
-      "rationale": "for",
-      "steps": [
-        {
-          "html": "Identify time limits in the page/view."
-        },
-        {
-          "html": "For each time limit, verify that it does not restart or reset immediately."
-        }
-      ]
-    },
-    {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
-      "steps": [
-        {
-          "html": "Identify the presence of a time limit."
-        },
-        {
-          "html": "Verify that a notification is provided to the user at the start of a process that the time limit exists, its length and that it can be adjusted."
-        }
-      ]
-    },
-    {
-      "html": "<b>Procedure</b>",
-      "rationale": "for",
-      "steps": [
-        {
-          "html": "Identify all options that affect finance, privacy and safety."
-        },
-        {
-          "html": "For all identified in Step 1, verify that these are visible when completing a process."
-        },
-        {
-          "html": "For all identified in Step 1, verify that they are programmatically available before completing the process."
+          "html": "Check that there is an alternative provided that does not require completion of a cognitive function test."
         }
       ]
     },
     {
       "html": "For each time limit:",
-      "rationale": "verify",
-      "steps": [
-        {
-          "html": "Verify that it does not restart or reset immediately."
-        }
-      ]
-    },
-    {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
-      "steps": [
-        {
-          "html": "Identify any multi-step processes."
-        },
-        {
-          "html": "Verify that the user is prompted to review and confirm data."
-        },
-        {
-          "html": "Verify that the user is allowed to return to previous steps to review and change the data."
-        },
-        {
-          "html": "Verify that if a summary of all data input by the user is provided before the transaction is committed, and that a method is provided to correct errors, if necessary."
-        }
-      ]
-    },
-    {
-      "html": "<b>Procedure</b>",
       "rationale": "check",
       "steps": [
         {
-          "html": "Identify any processes that require the user to enter information."
+          "html": "Check if there is a way to disable it."
         },
+        {
+          "html": "Wait for the timeout."
+        },
+        {
+          "html": "Check that before the timeout, an option is given to extend the time limit."
+        }
+      ]
+    },
+    {
+      "html": "For each page/view:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check if content includes time limits."
+        }
+      ]
+    },
+    {
+      "html": "For each time limit:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that a notification is provided to the user at the start of a process that the time limit exists, its length and that it can be adjusted."
+        }
+      ]
+    },
+    {
+      "html": "For all options that affect finance, privacy and safety”",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the options are visible when completing a process."
+        },
+        {
+          "html": "Check that that they are programmatically available before completing the process."
+        }
+      ]
+    },
+    {
+      "html": "For each time limit:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that it does not restart or reset immediately."
+        }
+      ]
+    },
+    {
+      "html": "For multi-step processes:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that the user is prompted to review and confirm data."
+        },
+        {
+          "html": "Check that the user is allowed to return to previous steps to review and change the data."
+        },
+        {
+          "html": "Check that if a summary of all data input by the user is provided before the transaction is committed, and that a method is provided to correct errors, if necessary."
+        }
+      ]
+    },
+    {
+      "html": "For any process that requires the user to enter information:",
+      "rationale": "check",
+      "steps": [
         {
           "html": "Check whether the information has already been requested ion a previous step of the process."
         },
         {
-          "html": "Verify that the information entered previously is prepopulated in the respective field(s) or is displayed on the page for copying."
+          "html": "Check that the information entered previously is prepopulated in the respective field(s) or is displayed on the page for copying."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
+      "html": "For any processes that require the user to enter information:",
+      "rationale": "check",
       "steps": [
-        {
-          "html": "Identify any processes that require the user to enter information."
-        },
         {
           "html": "Log in, if needed, and begin the timed activity."
         },
@@ -1677,20 +1665,17 @@
           "html": "Re-authenticate and log back in."
         },
         {
-          "html": "Verify that the process can continue from where you left off and be completed without loss of data, including the original data and any changes made after re-authentication."
+          "html": "Check that the process can continue from where you left off and be completed without loss of data, including the original data and any changes made after re-authentication."
         },
         {
-          "html": "Verify that the process used to save the information submitted in step 3 is not stored on the server. (Note: This requires knowledge of the technology and features used to implement the technique.)"
+          "html": "Check that the process used to save the information submitted in step 3 is not stored on the server. (Note: This requires knowledge of the technology and features used to implement the technique.)"
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
+      "html": "For any parts of a process that cannot be completed without the user doing a required action:",
       "rationale": "try",
       "steps": [
-        {
-          "html": "Identify any parts of the process that cannot be completed without the user doing a required action."
-        },
         {
           "html": "Enter in all the information except for the required action(s)."
         },
@@ -1698,7 +1683,7 @@
           "html": "Try to complete the process."
         },
         {
-          "html": "Verify that there is a notification that explains what the user needs to do before the process can be completed."
+          "html": "Check that there is a notification that explains what the user needs to do before the process can be completed."
         }
       ]
     },
@@ -1713,79 +1698,67 @@
           "html": "If it can be determined in advance, check that the number of steps it will take to complete the process is provided at the start of the process."
         },
         {
-          "html": "Verify that the details of any information and resources that are needed to perform the task are provided at the start of the process."
+          "html": "Check that the details of any information and resources that are needed to perform the task are provided at the start of the process."
         },
         {
-          "html": "Verify that an overview of the process and next steps are provided at the start of the process."
+          "html": "Check that an overview of the process and next steps are provided at the start of the process."
         }
       ]
     },
     {
       "html": "For each multi-step process:",
-      "rationale": "verify",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Identify any multi-step processes."
+          "html": "Check that the steps and instructions needed to complete a multi-step process are provided."
         },
         {
-          "html": "Verify that the steps and instructions needed to complete a multi-step process are provided."
-        },
-        {
-          "html": "Verify that any breadcrumb navigation correctly communicates the current step in the process."
+          "html": "Check that any breadcrumb navigation correctly communicates the current step in the process."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
+      "html": "For information that is personal or sensitive:",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Identify information that is personal or sensitive."
+          "html": "Check that personal or sensitive information is visually hidden by default."
         },
         {
-          "html": "Verify that personal or sensitive information is visually hidden by default."
+          "html": "Check that the personal or sensitive  information is programmatically hidden by default."
         },
         {
-          "html": "Verify that the personal or sensitive  information is programmatically hidden by default."
-        },
-        {
-          "html": "Verify that the use of AT, accessibility settings and accessibility-related modifications does not expose any personal or sensitive information."
+          "html": "Check that the use of AT, accessibility settings and accessibility-related modifications does not expose any personal or sensitive information."
         },
         {
           "html": "Check whether any accessible alternative versions or modifications of the digital content exist."
         },
         {
-          "html": "Verify that the accessible alternative or modification of the digital content does not include additional risk beyond what’s in the inaccessible alternative."
+          "html": "Check that the accessible alternative or modification of the digital content does not include additional risk beyond what’s in the inaccessible alternative."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
+      "html": "For any choices being made by the user:",
+      "rationale": "check",
       "steps": [
-        {
-          "html": "Identify any choices being made by the user."
-        },
         {
           "html": "Identify any potential legal, financial, privacy and security consequences to the user as a result of the choice."
         },
         {
-          "html": "Verify that the consequences are provided when the user  makes the choice."
+          "html": "Check that the consequences are provided when the user makes the choice."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "verify",
+      "html": "For any agreements being made by the user:",
+      "rationale": "check",
       "steps": [
-        {
-          "html": "Identify any agreements being made by the user."
-        },
         {
           "html": "Identify any potential legal, financial, privacy and security consequences to the user as a result of the agreement."
         },
         {
-          "html": "Verify that the consequences are provided before the user enters into the agreement."
+          "html": "Check that the consequences are provided before the user enters into the agreement."
         }
       ]
     },
@@ -1802,14 +1775,14 @@
       ]
     },
     {
-      "html": "For each form field that has input formatting requirements:",
+      "html": "For each interactive element:",
       "rationale": "check",
       "steps": [
         {
-          "html": "Check for other potentially confusing or difficult interactive elements."
+          "html": "Check for potentially confusing or difficult interactions such as formatting restrictions or interdependencies."
         },
         {
-          "html": "For any element identified in #1 or #2, check for context-sensitive help that is helpful to the user."
+          "html": "For any element identified in #1, check that context-sensitive help is available."
         }
       ]
     },
@@ -1827,7 +1800,7 @@
       "rationale": "check",
       "steps": [
         {
-          "html": "Check that instructions are available that explain how to enable them."
+          "html": "Check that instructions are available that explain how to enable it."
         }
       ]
     },
@@ -1841,7 +1814,7 @@
       ]
     },
     {
-      "html": "<strong>Procedure</strong>",
+      "html": "For each product:",
       "rationale": "check",
       "steps": [
         {
@@ -1849,6 +1822,18 @@
         },
         {
           "html": "Check that the feedback is sent to authors."
+        }
+      ]
+    },
+    {
+      "html": "For each page view:",
+      "rationale": "check",
+      "steps": [
+        {
+          "html": "Check that each control can be operated using assistive technology and that operating the controls achieves the same results with and without assistive technology."
+        },
+        {
+          "html": "Check that reading or experiencing non-interactive content produces the same results with and without assistive technology."
         }
       ]
     },
@@ -1877,11 +1862,11 @@
       ]
     },
     {
-      "html": "For each notifications:",
+      "html": "For each notification:",
       "rationale": "check",
       "steps": [
         {
-          "html": "check that settings allow the timing or location to be changed."
+          "html": "Check that settings allow the timing or location to be changed."
         }
       ]
     },
@@ -1922,7 +1907,7 @@
       ]
     },
     {
-      "html": "<b>Procedure</b>",
+      "html": "For each page/view:",
       "rationale": "set",
       "steps": [
         {
@@ -1932,10 +1917,10 @@
           "html": "Identify all the blocks of text within the scope."
         },
         {
-          "html": "Verify that each block of text does not require scrolling into two dimensions."
+          "html": "Check that each block of text does not require scrolling into two dimensions."
         },
         {
-          "html": "Verify that the text in each block of text is legible."
+          "html": "Check that the text in each block of text is legible."
         }
       ]
     },
@@ -1947,17 +1932,14 @@
           "html": "Set the viewport at 320px in the direction of text."
         },
         {
-          "html": "Verify that each section of content fits within 320 CSS pixels."
+          "html": "Check that each section of content fits within 320 CSS pixels."
         }
       ]
     },
     {
-      "html": "<b>Procedure</b>",
-      "rationale": "load",
+      "html": "For each page / view:",
+      "rationale": "check",
       "steps": [
-        {
-          "html": "Load a page / view."
-        },
         {
           "html": "Check for audio that starts automatically."
         },
@@ -2025,10 +2007,10 @@
     },
     {
       "html": "For each instance of focus being changed by the content:",
-      "rationale": "verify",
+      "rationale": "check",
       "steps": [
         {
-          "html": "Verify that the change is conveyed visually and programmatically using the assistive technology in the accessibility support set."
+          "html": "Check that the change is conveyed visually and programmatically using the assistive technology in the accessibility support set."
         }
       ]
     },
