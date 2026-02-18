@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-02-18T06:53:41.286Z",
+  "date": "2026-02-18T12:59:26.692Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -190,6 +190,7 @@
       "web-bluetooth-scanning",
       "webidl",
       "translation-api",
+      "webmcp",
       "writing-assistance-apis",
       "websockets",
       "anonymous-iframe",
@@ -561,7 +562,6 @@
       "owl-time",
       "paint-timing",
       "passkey-endpoints-1",
-      "payment-handler",
       "payment-method-id",
       "payment-method-manifest",
       "payment-request",
@@ -667,6 +667,7 @@
       "WCAG22",
       "web-animations-1",
       "web-animations-2",
+      "web-based-payment-handler",
       "web-locks",
       "web-share",
       "webaudio-1.0",
@@ -757,10 +758,10 @@
     ]
   },
   "stats": {
-    "crawled": 726,
-    "errors": 3
+    "crawled": 727,
+    "errors": 2
   },
-  "crawler": "reffy-20.0.10",
+  "crawler": "reffy-20.0.11",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -3504,7 +3505,7 @@
       ],
       "crawled": "https://immersive-web.github.io/raw-camera-access/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 23:07:06 GMT"
+        "lastModified": "Thu, 11 Dec 2025 23:07:05 GMT"
       },
       "generator": "bikeshed",
       "date": "11 December 2025",
@@ -7044,7 +7045,7 @@
       ],
       "crawled": "https://tc39.es/ecma402/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 23 Jan 2026 18:54:52 GMT"
+        "lastModified": "Fri, 23 Jan 2026 18:54:51 GMT"
       },
       "date": "23 January 2026",
       "links": "links/ecma-402.json",
@@ -10598,6 +10599,58 @@
       "cddl": []
     },
     {
+      "url": "https://webmachinelearning.github.io/webmcp/",
+      "seriesComposition": "full",
+      "shortname": "webmcp",
+      "series": {
+        "shortname": "webmcp",
+        "currentSpecification": "webmcp",
+        "title": "WebMCP",
+        "shortTitle": "WebMCP",
+        "nightlyUrl": "https://webmachinelearning.github.io/webmcp/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Machine Learning Community Group",
+          "url": "https://www.w3.org/community/webmachinelearning/"
+        }
+      ],
+      "nightly": {
+        "url": "https://webmachinelearning.github.io/webmcp/",
+        "status": "Draft Community Group Report",
+        "alternateUrls": [],
+        "repository": "https://github.com/webmachinelearning/webmcp",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "WebMCP",
+      "source": "spec",
+      "shortTitle": "WebMCP",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://webmachinelearning.github.io/webmcp/"
+      ],
+      "crawled": "https://webmachinelearning.github.io/webmcp/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 12 Feb 2026 13:29:55 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "12 February 2026",
+      "revision": "971aa24aea2afd865ca8607ba79a486fc7429360",
+      "algorithms": "algorithms/webmcp.json",
+      "links": "links/webmcp.json",
+      "refs": "refs/webmcp.json",
+      "idl": "idl/webmcp.idl",
+      "dfns": "dfns/webmcp.json",
+      "headings": "headings/webmcp.json",
+      "ids": "ids/webmcp.json",
+      "cddl": []
+    },
+    {
       "url": "https://webmachinelearning.github.io/writing-assistance-apis/",
       "seriesComposition": "full",
       "shortname": "writing-assistance-apis",
@@ -12316,7 +12369,7 @@
       ],
       "crawled": "https://wicg.github.io/ink-enhancement/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 16 Sep 2024 07:54:59 GMT"
+        "lastModified": "Mon, 16 Sep 2024 07:54:58 GMT"
       },
       "generator": "bikeshed",
       "date": "16 September 2024",
@@ -14863,7 +14916,7 @@
       ],
       "crawled": "https://wicg.github.io/web-otp/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 04 Feb 2025 17:18:17 GMT"
+        "lastModified": "Tue, 04 Feb 2025 17:18:16 GMT"
       },
       "generator": "bikeshed",
       "date": "13 April 2021",
@@ -16114,9 +16167,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 14 Feb 2026 12:48:07 GMT"
+        "lastModified": "Thu, 12 Feb 2026 20:59:50 GMT"
       },
-      "date": "14 February 2026",
+      "date": "12 February 2026",
       "links": "links/rfc7578.json",
       "headings": "headings/rfc7578.json",
       "ids": "ids/rfc7578.json",
@@ -24373,7 +24426,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-rhythm-1/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -24389,7 +24442,7 @@
       },
       "title": "CSS Rhythmic Sizing Module Level 1",
       "source": "w3c",
-      "shortTitle": "CSS Rhythmic Sizing",
+      "shortTitle": "CSS Rhythmic Sizing 1",
       "categories": [
         "browser"
       ],
@@ -28880,7 +28933,7 @@
       ],
       "crawled": "https://w3c.github.io/webappsec-fetch-metadata/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 01 Apr 2025 06:19:12 GMT"
+        "lastModified": "Tue, 01 Apr 2025 06:19:11 GMT"
       },
       "generator": "bikeshed",
       "date": "1 April 2025",
@@ -32219,7 +32272,7 @@
       ],
       "crawled": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jul 2024 08:09:25 GMT"
+        "lastModified": "Tue, 23 Jul 2024 08:09:24 GMT"
       },
       "generator": "respec",
       "date": "23 July 2024",
@@ -33022,72 +33075,6 @@
       "cddl": []
     },
     {
-      "url": "https://www.w3.org/TR/payment-handler/",
-      "seriesComposition": "full",
-      "shortname": "payment-handler",
-      "series": {
-        "shortname": "payment-handler",
-        "currentSpecification": "payment-handler",
-        "title": "Payment Handler API",
-        "shortTitle": "Payment Handler API",
-        "releaseUrl": "https://www.w3.org/TR/payment-handler/",
-        "nightlyUrl": "https://w3c.github.io/payment-handler/"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web Payments Working Group",
-          "url": "https://www.w3.org/groups/wg/payments/"
-        }
-      ],
-      "release": {
-        "url": "https://www.w3.org/TR/payment-handler/",
-        "status": "Working Draft",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/payment-handler/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/payment-handler",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "Payment Handler API",
-      "source": "w3c",
-      "shortTitle": "Payment Handler API",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "payment-handler"
-        ]
-      },
-      "versions": [
-        "https://www.w3.org/TR/payment-handler/",
-        "https://w3c.github.io/payment-handler/"
-      ],
-      "crawled": "https://w3c.github.io/payment-handler/",
-      "crawlCacheInfo": {
-        "lastModified": "Sat, 27 Sep 2025 11:47:38 GMT"
-      },
-      "generator": "respec",
-      "date": "27 September 2025",
-      "algorithms": "algorithms/payment-handler.json",
-      "links": "links/payment-handler.json",
-      "refs": "refs/payment-handler.json",
-      "events": "events/payment-handler.json",
-      "idl": "idl/payment-handler.idl",
-      "dfns": "dfns/payment-handler.json",
-      "headings": "headings/payment-handler.json",
-      "ids": "ids/payment-handler.json",
-      "cddl": [],
-      "error": "Error: Loading https://w3c.github.io/payment-handler/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 555)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
-    },
-    {
       "url": "https://www.w3.org/TR/payment-method-id/",
       "seriesComposition": "full",
       "shortname": "payment-method-id",
@@ -33535,7 +33522,7 @@
       ],
       "crawled": "https://w3c.github.io/picture-in-picture/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 30 Jan 2026 09:36:04 GMT"
+        "lastModified": "Fri, 30 Jan 2026 09:36:05 GMT"
       },
       "generator": "bikeshed",
       "date": "30 January 2026",
@@ -35016,7 +35003,7 @@
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/resource-timing",
-        "sourcePath": "index.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Resource Timing",
@@ -36633,8 +36620,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "SVG Working Group",
-          "url": "https://www.w3.org/groups/wg/svg/"
+          "name": "Accessible Rich Internet Applications Working Group",
+          "url": "https://www.w3.org/WAI/about/groups/ariawg/"
         }
       ],
       "release": {
@@ -38997,7 +38984,7 @@
       ],
       "crawled": "https://w3c.github.io/aria/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 11 Feb 2026 18:58:13 GMT"
+        "lastModified": "Wed, 11 Feb 2026 18:58:12 GMT"
       },
       "generator": "respec",
       "date": "11 February 2026",
@@ -39062,7 +39049,7 @@
       ],
       "crawled": "https://w3c.github.io/aria/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 11 Feb 2026 18:58:13 GMT"
+        "lastModified": "Wed, 11 Feb 2026 18:58:12 GMT"
       },
       "generator": "respec",
       "date": "11 February 2026",
@@ -39544,6 +39531,68 @@
       "dfns": "dfns/web-animations-2.json",
       "headings": "headings/web-animations-2.json",
       "ids": "ids/web-animations-2.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/web-based-payment-handler/",
+      "seriesComposition": "full",
+      "shortname": "web-based-payment-handler",
+      "series": {
+        "shortname": "web-based-payment-handler",
+        "currentSpecification": "web-based-payment-handler",
+        "title": "Web-based Payment Handler API",
+        "shortTitle": "Web-based Payment Handler API",
+        "releaseUrl": "https://www.w3.org/TR/web-based-payment-handler/",
+        "nightlyUrl": "https://w3c.github.io/web-based-payment-handler/"
+      },
+      "formerNames": [
+        "payment-handler"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Payments Working Group",
+          "url": "https://www.w3.org/groups/wg/payments/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/web-based-payment-handler/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/web-based-payment-handler/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/web-based-payment-handler",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Web-based Payment Handler API",
+      "source": "w3c",
+      "shortTitle": "Web-based Payment Handler API",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/web-based-payment-handler/",
+        "https://w3c.github.io/web-based-payment-handler/"
+      ],
+      "crawled": "https://w3c.github.io/web-based-payment-handler/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 17 Feb 2026 18:04:14 GMT"
+      },
+      "generator": "respec",
+      "date": "17 February 2026",
+      "algorithms": "algorithms/web-based-payment-handler.json",
+      "links": "links/web-based-payment-handler.json",
+      "refs": "refs/web-based-payment-handler.json",
+      "events": "events/web-based-payment-handler.json",
+      "idl": "idl/web-based-payment-handler.idl",
+      "dfns": "dfns/web-based-payment-handler.json",
+      "headings": "headings/web-based-payment-handler.json",
+      "ids": "ids/web-based-payment-handler.json",
       "cddl": []
     },
     {

@@ -5,404 +5,6 @@
   },
   "events": [
     {
-      "type": "load",
-      "interface": "UIEvent if generated from a user interface, Event otherwise.",
-      "bubbles": false,
-      "targets": [
-        "Window",
-        "Document",
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "unload",
-      "interface": "UIEvent if generated from a user interface, Event otherwise.",
-      "bubbles": false,
-      "targets": [
-        "Window",
-        "Document",
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "abort",
-      "interface": "UIEvent if generated from a user interface, Event otherwise.",
-      "bubbles": false,
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "error",
-      "interface": "UIEvent if generated from a user interface, Event otherwise.",
-      "bubbles": false,
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "select",
-      "interface": "UIEvent if generated from a user interface, Event otherwise.",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "blur",
-      "interface": "FocusEvent",
-      "bubbles": false,
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "focus",
-      "interface": "FocusEvent",
-      "bubbles": false,
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "focusin",
-      "interface": "FocusEvent",
-      "bubbles": true,
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "focusout",
-      "interface": "FocusEvent",
-      "bubbles": true,
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "auxclick",
-      "interface": "PointerEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "click",
-      "interface": "PointerEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "contextmenu",
-      "interface": "PointerEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "dblclick",
-      "interface": "MouseEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "mousedown",
-      "interface": "MouseEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "mouseenter",
-      "interface": "MouseEvent",
-      "bubbles": false,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "mouseleave",
-      "interface": "MouseEvent",
-      "bubbles": false,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "mousemove",
-      "interface": "MouseEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "mouseout",
-      "interface": "MouseEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "mouseover",
-      "interface": "MouseEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "mouseup",
-      "interface": "MouseEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "wheel",
-      "interface": "WheelEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "beforeinput",
-      "interface": "InputEvent",
-      "bubbles": true,
-      "targets": [
-        "Element (specifically: control types such as HTMLInputElement",
-        "etc.) or any Element with contenteditable attribute enabled"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "input",
-      "interface": "InputEvent",
-      "bubbles": true,
-      "targets": [
-        "Element (specifically: control types such as HTMLInputElement",
-        "etc.) or any Element with contenteditable attribute enabled"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "keydown",
-      "interface": "KeyboardEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "keyup",
-      "interface": "KeyboardEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "compositionstart",
-      "interface": "CompositionEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "compositionupdate",
-      "interface": "CompositionEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "compositionend",
-      "interface": "CompositionEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "DOMActivate",
-      "interface": "UIEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "DOMFocusIn",
-      "interface": "FocusEvent",
-      "bubbles": true,
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "DOMFocusOut",
-      "interface": "FocusEvent",
-      "bubbles": true,
-      "targets": [
-        "Window",
-        "Element"
-      ],
-      "cancelable": false,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
-      "type": "keypress",
-      "interface": "KeyboardEvent",
-      "bubbles": true,
-      "targets": [
-        "Element"
-      ],
-      "cancelable": true,
-      "src": {
-        "format": "event table"
-      }
-    },
-    {
       "href": "https://w3c.github.io/uievents/#abort",
       "src": {
         "format": "summary table",
@@ -410,8 +12,8 @@
       },
       "type": "abort",
       "targets": [
-        "Window",
-        "Element"
+        "Element",
+        "Window"
       ],
       "bubbles": false,
       "cancelable": false,
@@ -453,8 +55,8 @@
       },
       "type": "blur",
       "targets": [
-        "Window",
-        "Element"
+        "Element",
+        "Window"
       ],
       "bubbles": false,
       "cancelable": false,
@@ -552,8 +154,8 @@
       },
       "type": "error",
       "targets": [
-        "Window",
-        "Element"
+        "Element",
+        "Window"
       ],
       "bubbles": false,
       "cancelable": false,
@@ -567,8 +169,8 @@
       },
       "type": "focus",
       "targets": [
-        "Window",
-        "Element"
+        "Element",
+        "Window"
       ],
       "bubbles": false,
       "cancelable": false,
@@ -582,8 +184,8 @@
       },
       "type": "focusin",
       "targets": [
-        "Window",
-        "Element"
+        "Element",
+        "Window"
       ],
       "bubbles": true,
       "cancelable": false,
@@ -597,8 +199,8 @@
       },
       "type": "focusout",
       "targets": [
-        "Window",
-        "Element"
+        "Element",
+        "Window"
       ],
       "bubbles": true,
       "cancelable": false,
@@ -654,9 +256,9 @@
       },
       "type": "load",
       "targets": [
-        "Window",
         "Document",
-        "Element"
+        "Element",
+        "Window"
       ],
       "bubbles": false,
       "cancelable": false,
@@ -782,9 +384,9 @@
       },
       "type": "unload",
       "targets": [
-        "Window",
         "Document",
-        "Element"
+        "Element",
+        "Window"
       ],
       "bubbles": false,
       "cancelable": false,
@@ -826,8 +428,8 @@
       },
       "type": "DOMFocusIn",
       "targets": [
-        "Window",
-        "Element"
+        "Element",
+        "Window"
       ],
       "bubbles": true,
       "cancelable": false,
@@ -841,8 +443,8 @@
       },
       "type": "DOMFocusOut",
       "targets": [
-        "Window",
-        "Element"
+        "Element",
+        "Window"
       ],
       "bubbles": true,
       "cancelable": false,
