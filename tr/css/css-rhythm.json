@@ -1,38 +1,20 @@
 {
   "spec": {
-    "title": "CSS Rhythmic Sizing",
+    "title": "CSS Rhythmic Sizing Module Level 1",
     "url": "https://www.w3.org/TR/css-rhythm-1/"
   },
   "properties": [
     {
-      "name": "line-height-step",
-      "href": "https://www.w3.org/TR/css-rhythm-1/#propdef-line-height-step",
-      "value": "none | <length>",
-      "initial": "none",
-      "appliesTo": "block containers",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "the absolute length, 0 for none",
-      "canonicalOrder": "per grammar",
-      "animatable": "no",
-      "styleDeclaration": [
-        "line-height-step",
-        "lineHeightStep"
-      ]
-    },
-    {
       "name": "block-step-size",
       "href": "https://www.w3.org/TR/css-rhythm-1/#propdef-block-step-size",
-      "value": "none | <length>",
+      "value": "none | <length [0,∞]>",
       "initial": "none",
       "appliesTo": "block-level boxes",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "keyword or absolute length",
+      "computedValue": "specified keyword or absolute length",
       "canonicalOrder": "per grammar",
-      "animatable": "???",
+      "animationType": "by computed value type",
       "styleDeclaration": [
         "block-step-size",
         "blockStepSize"
@@ -41,29 +23,35 @@
     {
       "name": "block-step-insert",
       "href": "https://www.w3.org/TR/css-rhythm-1/#propdef-block-step-insert",
-      "value": "margin | padding",
-      "initial": "margin",
+      "value": "margin-box | padding-box | content-box",
+      "initial": "margin-box",
       "appliesTo": "block-level boxes",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animatable": "no",
+      "animationType": "discrete",
       "values": [
         {
-          "name": "margin",
+          "name": "margin-box",
           "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted outside the box’s border, as extra margin.",
-          "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-insert-margin",
+          "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-insert-margin-box",
           "type": "value",
-          "value": "margin"
+          "value": "margin-box"
         },
         {
-          "name": "padding",
+          "name": "padding-box",
           "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted inside the box’s border, as extra padding.",
-          "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-insert-padding",
+          "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-insert-padding-box",
           "type": "value",
-          "value": "padding"
+          "value": "padding-box"
+        },
+        {
+          "name": "content-box",
+          "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted inside the box’s border by increasing the height of the content area.",
+          "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-insert-content-box",
+          "type": "value",
+          "value": "content-box"
         }
       ],
       "styleDeclaration": [
@@ -79,14 +67,13 @@
       "appliesTo": "block-level boxes",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animatable": "no",
+      "animationType": "discrete",
       "values": [
         {
           "name": "auto",
-          "prose": "If block-step-insert is margin: if align-self is start, end, or center, treat as that value, otherwise treat as center.",
+          "prose": "If block-step-insert is margin-box: if align-self is start, end, or center, treat as that value, otherwise treat as center.",
           "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-align-auto",
           "type": "value",
           "value": "auto"
@@ -100,14 +87,14 @@
         },
         {
           "name": "start",
-          "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted on the start side of the box.",
+          "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted on the end side of the box.",
           "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-align-start",
           "type": "value",
           "value": "start"
         },
         {
           "name": "end",
-          "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted on the end side of the box.",
+          "prose": "Any extra space resulting from a block-step-size-induced adjustment is inserted on the start side of the box.",
           "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-align-end",
           "type": "value",
           "value": "end"
@@ -128,7 +115,7 @@
         },
         {
           "name": "nearest",
-          "prose": "The outer size of the box is either increased (as for up) or decreased (as for down—whichever results in the smallest absolute change—to fulfill the block-step-size constraint. If both options would result in the same amount of change, the size is increased.",
+          "prose": "The outer size of the box is either increased (as for up) or decreased (as for down—​whichever results in the smallest absolute change—​to fulfill the block-step-size constraint. If both options would result in the same amount of change, the size is increased.",
           "href": "https://www.w3.org/TR/css-rhythm-1/#valdef-block-step-align-nearest",
           "type": "value",
           "value": "nearest"
@@ -147,10 +134,9 @@
       "appliesTo": "block-level boxes",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "as specified",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animatable": "no",
+      "animationType": "discrete",
       "styleDeclaration": [
         "block-step-round",
         "blockStepRound"
@@ -159,18 +145,33 @@
     {
       "name": "block-step",
       "href": "https://www.w3.org/TR/css-rhythm-1/#propdef-block-step",
-      "value": "<block-step-size> || <block-step-insert> || <block-step-align> || <block-step-round>",
-      "initial": "See individual properties",
+      "value": "<'block-step-size'> || <'block-step-insert'> || <'block-step-align'> || <'block-step-round'>",
+      "initial": "see individual properties",
       "appliesTo": "block-level boxes",
       "inherited": "no",
       "percentages": "N/A",
-      "media": "visual",
-      "computedValue": "See individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
-      "animatable": "See individual properties",
       "styleDeclaration": [
         "block-step",
         "blockStep"
+      ]
+    },
+    {
+      "name": "line-height-step",
+      "href": "https://www.w3.org/TR/css-rhythm-1/#propdef-line-height-step",
+      "value": "<length [0,∞]>",
+      "initial": "0",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "line-height-step",
+        "lineHeightStep"
       ]
     }
   ],

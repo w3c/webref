@@ -521,6 +521,7 @@ browsingContext.BaseNavigationInfo = (
   navigation: browsingContext.Navigation / null,
   timestamp: js-uint,
   url: text,
+  ? userContext: browser.UserContext,
 )
 
 browsingContext.NavigationInfo = {
@@ -608,7 +609,8 @@ browsingContext.CreateParameters = {
 }
 
 browsingContext.CreateResult = {
-  context: browsingContext.BrowsingContext
+  context: browsingContext.BrowsingContext,
+  ? userContext: browser.UserContext
 }
 
 browsingContext.GetTree = (
@@ -777,7 +779,8 @@ browsingContext.HistoryUpdated = (
 browsingContext.HistoryUpdatedParameters = {
   context: browsingContext.BrowsingContext,
   timestamp: js-uint,
-  url: text
+  url: text,
+  ? userContext: browser.UserContext
 }
 
 browsingContext.DomContentLoaded = (
@@ -847,6 +850,7 @@ browsingContext.UserPromptClosedParameters = {
   context: browsingContext.BrowsingContext,
   accepted: bool,
   type: browsingContext.UserPromptType,
+  ? userContext: browser.UserContext,
   ? userText: text
 }
 
@@ -860,6 +864,7 @@ browsingContext.UserPromptOpenedParameters = {
   handler: session.UserPromptHandlerType,
   message: text,
   type: browsingContext.UserPromptType,
+  ? userContext: browser.UserContext,
   ? defaultValue: text
 }
 
@@ -1113,6 +1118,7 @@ network.BaseParameters = (
     redirectCount: js-uint,
     request: network.RequestData,
     timestamp: js-uint,
+    ? userContext: browser.UserContext / null,
     ? intercepts: [+network.Intercept]
 )
 
@@ -1671,6 +1677,7 @@ script.WindowRealmInfo = {
   script.BaseRealmInfo,
   type: "window",
   context: browsingContext.BrowsingContext,
+  ? userContext: browser.UserContext,
   ? sandbox: text
 }
 
@@ -1926,7 +1933,8 @@ script.StackTrace = {
 
 script.Source = {
   realm: script.Realm,
-  ? context: browsingContext.BrowsingContext
+  ? context: browsingContext.BrowsingContext,
+  ? userContext: browser.UserContext
 }
 
 script.RealmTarget = {
@@ -2380,6 +2388,7 @@ input.FileDialogOpened = (
 
 input.FileDialogInfo = {
    context: browsingContext.BrowsingContext,
+   ? userContext: browser.UserContext,
    ? element: script.SharedReference,
    multiple: bool,
 }
@@ -4068,6 +4077,7 @@ input.FileDialogOpened = (
 
 input.FileDialogInfo = {
    context: browsingContext.BrowsingContext,
+   ? userContext: browser.UserContext,
    ? element: script.SharedReference,
    multiple: bool,
 }
@@ -4453,6 +4463,7 @@ browsingContext.BaseNavigationInfo = (
   navigation: browsingContext.Navigation / null,
   timestamp: js-uint,
   url: text,
+  ? userContext: browser.UserContext,
 )
 
 browsingContext.NavigationInfo = {
@@ -4470,7 +4481,8 @@ browsingContext.CaptureScreenshotResult = {
 browsingContext.CloseResult = EmptyResult
 
 browsingContext.CreateResult = {
-  context: browsingContext.BrowsingContext
+  context: browsingContext.BrowsingContext,
+  ? userContext: browser.UserContext
 }
 
 browsingContext.GetTreeResult = {
@@ -4526,7 +4538,8 @@ browsingContext.HistoryUpdated = (
 browsingContext.HistoryUpdatedParameters = {
   context: browsingContext.BrowsingContext,
   timestamp: js-uint,
-  url: text
+  url: text,
+  ? userContext: browser.UserContext
 }
 
 browsingContext.DomContentLoaded = (
@@ -4596,6 +4609,7 @@ browsingContext.UserPromptClosedParameters = {
   context: browsingContext.BrowsingContext,
   accepted: bool,
   type: browsingContext.UserPromptType,
+  ? userContext: browser.UserContext,
   ? userText: text
 }
 
@@ -4609,6 +4623,7 @@ browsingContext.UserPromptOpenedParameters = {
   handler: session.UserPromptHandlerType,
   message: text,
   type: browsingContext.UserPromptType,
+  ? userContext: browser.UserContext,
   ? defaultValue: text
 }
 
@@ -4679,6 +4694,7 @@ network.BaseParameters = (
     redirectCount: js-uint,
     request: network.RequestData,
     timestamp: js-uint,
+    ? userContext: browser.UserContext / null,
     ? intercepts: [+network.Intercept]
 )
 
@@ -5033,6 +5049,7 @@ script.WindowRealmInfo = {
   script.BaseRealmInfo,
   type: "window",
   context: browsingContext.BrowsingContext,
+  ? userContext: browser.UserContext,
   ? sandbox: text
 }
 
@@ -5288,7 +5305,8 @@ script.StackTrace = {
 
 script.Source = {
   realm: script.Realm,
-  ? context: browsingContext.BrowsingContext
+  ? context: browsingContext.BrowsingContext,
+  ? userContext: browser.UserContext
 }
 
 script.AddPreloadScriptResult = {
@@ -5414,6 +5432,7 @@ input.FileDialogOpened = (
 
 input.FileDialogInfo = {
    context: browsingContext.BrowsingContext,
+   ? userContext: browser.UserContext,
    ? element: script.SharedReference,
    multiple: bool,
 }
