@@ -442,6 +442,19 @@ const patches = {
       change: { interface: "Event", bubbles: false }
     }
   ],
+  // Pending https://github.com/w3c/ServiceWorker/pull/1816
+  'service-workers': [
+    {
+      pattern: { type: "canmakepayment" },
+      matched: 1,
+      change: { href: "https://w3c.github.io/web-based-payment-handler/#handling-a-canmakepaymentevent" }
+    },
+    {
+      pattern: { type: "paymentrequest" },
+      matched: 1,
+      change: { href: "https://w3c.github.io/web-based-payment-handler/#handling-a-paymentrequestevent" }
+    }
+  ],
   'speech-api': [
     {
       pattern: {
