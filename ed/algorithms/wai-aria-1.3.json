@@ -117,6 +117,29 @@
           "html": "Otherwise, pass the value to the user without translation."
         }
       ]
+    },
+    {
+      "name": "ARIANotifyMixin/ariaNotify()",
+      "href": "https://w3c.github.io/aria/#dom-arianotifymixin-arianotify",
+      "html": "The User Agent processing steps for the\n          <code><dfn data-df-type=\"method\" data-dfn-for=\"ARIANotifyMixin\" data-export=\"\" data-dfn-type=\"method\" id=\"dom-arianotifymixin-arianotify\" data-idl=\"operation\" data-title=\"ariaNotify\" data-type=\"undefined\" data-lt=\"ariaNotify()|ariaNotify(announcement)|ariaNotify(announcement, options)\" data-local-lt=\"ARIANotifyMixin.ariaNotify|ARIANotifyMixin.ariaNotify()|ariaNotify\" tabindex=\"0\" aria-haspopup=\"dialog\">ariaNotify</dfn>(<var>announcement</var>, <var>options</var>)</code>\n          method are:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the document is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\">allowed to use</a> the feature identified by <a href=\"https://w3c.github.io/aria/#dfn-aria-notify\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-aria-notify-1\"><code>\"aria-notify\"</code></a> abort these steps.</p>"
+        },
+        {
+          "html": "<p>Let <var>node</var> be <code>this</code>.</p>"
+        },
+        {
+          "html": "<p>\n              Let <var>priority</var> be <var>options</var>[\"<code><a href=\"https://w3c.github.io/aria/#dom-arianotificationoptions-priority\" id=\"ref-for-dom-arianotificationoptions-priority-1\">priority</a></code>\"].\n            </p>"
+        },
+        {
+          "html": "<p>If <var>node</var> is <a href=\"https://w3c.github.io/aria/#tree_exclusion\">excluded from the accessibility tree</a>, then abort these steps.</p>"
+        },
+        {
+          "html": "<p>Run the <a href=\"https://www.w3.org/TR/core-aam-1.2/#arianotify\">aria notify steps</a> given <var>node</var>, <var>announcement</var>, and <var>priority</var>.</p>"
+        }
+      ]
     }
   ]
 }

@@ -1,4 +1,4 @@
-// Source: UI Events (https://www.w3.org/TR/uievents/)
+// Source: Pointer Events (https://www.w3.org/TR/pointerevents4/)
 [Exposed=Window]
 interface MouseEvent : UIEvent {
   constructor(DOMString type, optional MouseEventInit eventInitDict = {});
@@ -32,13 +32,7 @@ partial interface MouseEvent {
   readonly attribute double offsetY;
 };
 
-// Source: Pointer Lock 2.0 (https://www.w3.org/TR/pointerlock-2/)
-partial interface MouseEvent {
-  readonly attribute double movementX;
-  readonly attribute double movementY;
-};
-
-// Source: UI Events (https://www.w3.org/TR/uievents/)
+// Source: Pointer Events (https://www.w3.org/TR/pointerevents4/)
 partial interface MouseEvent {
   // Deprecated in this specification
   undefined initMouseEvent(DOMString typeArg,
@@ -56,4 +50,10 @@ partial interface MouseEvent {
     optional boolean metaKeyArg = false,
     optional short buttonArg = 0,
     optional EventTarget? relatedTargetArg = null);
+};
+
+// Source: Pointer Lock 2.0 (https://www.w3.org/TR/pointerlock-2/)
+partial interface MouseEvent {
+  readonly attribute double movementX;
+  readonly attribute double movementY;
 };

@@ -314,14 +314,14 @@
         "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-AeadParams"
       },
       "CShakeParams": {
-        "fragment": "dictionary CShakeParams : Algorithm {\n  required [EnforceRange] unsigned long length;\n  BufferSource functionName;\n  BufferSource customization;\n};",
+        "fragment": "dictionary CShakeParams : Algorithm {\n  required [EnforceRange] unsigned long outputLength;\n  BufferSource functionName;\n  BufferSource customization;\n};",
         "type": "dictionary",
         "name": "CShakeParams",
         "inheritance": "Algorithm",
         "members": [
           {
             "type": "field",
-            "name": "length",
+            "name": "outputLength",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -340,7 +340,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-CShakeParams-length"
+            "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-CShakeParams-outputLength"
           },
           {
             "type": "field",
@@ -475,14 +475,14 @@
         "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacKeyAlgorithm"
       },
       "KmacParams": {
-        "fragment": "dictionary KmacParams : Algorithm {\n  required [EnforceRange] unsigned long length;\n  BufferSource customization;\n};",
+        "fragment": "dictionary KmacParams : Algorithm {\n  required [EnforceRange] unsigned long outputLength;\n  BufferSource customization;\n};",
         "type": "dictionary",
         "name": "KmacParams",
         "inheritance": "Algorithm",
         "members": [
           {
             "type": "field",
-            "name": "length",
+            "name": "outputLength",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -501,7 +501,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacParams-length"
+            "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KmacParams-outputLength"
           },
           {
             "type": "field",

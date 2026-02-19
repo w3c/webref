@@ -1,0 +1,8 @@
+// Source: WebMCP (https://webmachinelearning.github.io/webmcp/)
+[Exposed=Window, SecureContext]
+interface ModelContext {
+  undefined provideContext(optional ModelContextOptions options = {});
+  undefined clearContext();
+  undefined registerTool(ModelContextTool tool);
+  undefined unregisterTool(DOMString name);
+};

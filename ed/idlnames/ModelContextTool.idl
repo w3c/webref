@@ -1,0 +1,8 @@
+// Source: WebMCP (https://webmachinelearning.github.io/webmcp/)
+dictionary ModelContextTool {
+  required DOMString name;
+  required DOMString description;
+  object inputSchema;
+  required ToolExecuteCallback execute;
+  ToolAnnotations annotations;
+};

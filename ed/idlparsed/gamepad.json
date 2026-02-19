@@ -689,7 +689,7 @@
         "href": "https://w3c.github.io/gamepad/#dom-gamepadeffectparameters"
       },
       "GamepadEvent": {
-        "fragment": "[Exposed=Window]\n\ninterface GamepadEvent: Event {\n  constructor(DOMString type, GamepadEventInit eventInitDict);\n  [SameObject] readonly attribute Gamepad gamepad;\n};",
+        "fragment": "[Exposed=Window]\n\ninterface GamepadEvent: Event {\n  constructor(DOMString type, optional GamepadEventInit eventInitDict = {});\n  [SameObject] readonly attribute Gamepad gamepad;\n};",
         "type": "interface",
         "name": "GamepadEvent",
         "inheritance": "Event",
@@ -725,8 +725,10 @@
                   "union": false,
                   "idlType": "GamepadEventInit"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -772,7 +774,7 @@
         "href": "https://w3c.github.io/gamepad/#dom-gamepadevent"
       },
       "GamepadEventInit": {
-        "fragment": "dictionary GamepadEventInit : EventInit {\n  required Gamepad gamepad;\n};",
+        "fragment": "dictionary GamepadEventInit : EventInit {\n  Gamepad? gamepad = null;\n};",
         "type": "dictionary",
         "name": "GamepadEventInit",
         "inheritance": "EventInit",
@@ -785,12 +787,14 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "Gamepad"
             },
-            "default": null,
-            "required": true,
+            "default": {
+              "type": "null"
+            },
+            "required": false,
             "href": "https://w3c.github.io/gamepad/#dom-gamepadeventinit-gamepad"
           }
         ],

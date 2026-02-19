@@ -54,24 +54,24 @@
     },
     {
       "spec": {
-        "title": "Payment Handler API",
-        "url": "https://www.w3.org/TR/payment-handler/"
+        "title": "Push API",
+        "url": "https://www.w3.org/TR/push-api/"
+      },
+      "fragment": "[Exposed=ServiceWorker, SecureContext]\npartial interface ServiceWorkerGlobalScope {\n  attribute EventHandler onpush;\n  attribute EventHandler onpushsubscriptionchange;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web-based Payment Handler API",
+        "url": "https://www.w3.org/TR/web-based-payment-handler/"
       },
       "fragment": "partial interface ServiceWorkerGlobalScope {\n  attribute EventHandler oncanmakepayment;\n};"
     },
     {
       "spec": {
-        "title": "Payment Handler API",
-        "url": "https://www.w3.org/TR/payment-handler/"
+        "title": "Web-based Payment Handler API",
+        "url": "https://www.w3.org/TR/web-based-payment-handler/"
       },
       "fragment": "partial interface ServiceWorkerGlobalScope {\n  attribute EventHandler onpaymentrequest;\n};"
-    },
-    {
-      "spec": {
-        "title": "Push API",
-        "url": "https://www.w3.org/TR/push-api/"
-      },
-      "fragment": "[Exposed=ServiceWorker, SecureContext]\npartial interface ServiceWorkerGlobalScope {\n  attribute EventHandler onpush;\n  attribute EventHandler onpushsubscriptionchange;\n};"
     }
   ],
   "inheritance": {

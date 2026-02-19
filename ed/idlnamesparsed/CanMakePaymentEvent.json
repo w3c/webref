@@ -3,11 +3,11 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Payment Handler API",
-      "url": "https://www.w3.org/TR/payment-handler/"
+      "title": "Web-based Payment Handler API",
+      "url": "https://www.w3.org/TR/web-based-payment-handler/"
     },
     "fragment": "[Exposed=ServiceWorker]\ninterface CanMakePaymentEvent : ExtendableEvent {\n  constructor(DOMString type);\n  undefined respondWith(Promise<boolean> canMakePaymentResponse);\n};",
-    "href": "https://w3c.github.io/payment-handler/#dom-canmakepaymentevent"
+    "href": "https://w3c.github.io/web-based-payment-handler/#dom-canmakepaymentevent"
   },
   "extended": [],
   "inheritance": {

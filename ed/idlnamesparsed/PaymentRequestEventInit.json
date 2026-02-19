@@ -3,11 +3,11 @@
   "type": "dictionary",
   "defined": {
     "spec": {
-      "title": "Payment Handler API",
-      "url": "https://www.w3.org/TR/payment-handler/"
+      "title": "Web-based Payment Handler API",
+      "url": "https://www.w3.org/TR/web-based-payment-handler/"
     },
     "fragment": "dictionary PaymentRequestEventInit : ExtendableEventInit {\n  USVString topOrigin;\n  USVString paymentRequestOrigin;\n  DOMString paymentRequestId;\n  sequence<PaymentMethodData> methodData;\n  PaymentCurrencyAmount total;\n  sequence<PaymentDetailsModifier> modifiers;\n  PaymentOptions paymentOptions;\n  sequence<PaymentShippingOption> shippingOptions;\n};",
-    "href": "https://w3c.github.io/payment-handler/#dom-paymentrequesteventinit"
+    "href": "https://w3c.github.io/web-based-payment-handler/#dom-paymentrequesteventinit"
   },
   "extended": [],
   "inheritance": {

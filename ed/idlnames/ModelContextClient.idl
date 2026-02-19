@@ -1,0 +1,5 @@
+// Source: WebMCP (https://webmachinelearning.github.io/webmcp/)
+[Exposed=Window, SecureContext]
+interface ModelContextClient {
+  Promise<any> requestUserInteraction(UserInteractionCallback callback);
+};

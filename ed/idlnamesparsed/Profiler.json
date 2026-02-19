@@ -6,7 +6,7 @@
       "title": "JS Self-Profiling API",
       "url": "https://wicg.github.io/js-self-profiling/"
     },
-    "fragment": "[Exposed=Window]\ninterface Profiler : EventTarget {\n  readonly attribute DOMHighResTimeStamp sampleInterval;\n  readonly attribute boolean stopped;\n\n  constructor(ProfilerInitOptions options);\n  Promise<ProfilerTrace> stop();\n};",
+    "fragment": "[Exposed=(Window, Worker)]\ninterface Profiler : EventTarget {\n  readonly attribute DOMHighResTimeStamp sampleInterval;\n  readonly attribute boolean stopped;\n\n  constructor(ProfilerInitOptions options);\n  Promise<ProfilerTrace> stop();\n};",
     "href": "https://wicg.github.io/js-self-profiling/#dom-profiler"
   },
   "extended": [],

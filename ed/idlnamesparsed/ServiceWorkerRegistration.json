@@ -54,17 +54,17 @@
     },
     {
       "spec": {
-        "title": "Payment Handler API",
-        "url": "https://www.w3.org/TR/payment-handler/"
-      },
-      "fragment": "partial interface ServiceWorkerRegistration {\n  [SameObject] readonly attribute PaymentManager paymentManager;\n};"
-    },
-    {
-      "spec": {
         "title": "Push API",
         "url": "https://www.w3.org/TR/push-api/"
       },
       "fragment": "ServiceWorkerRegistration includes PushManagerAttribute;"
+    },
+    {
+      "spec": {
+        "title": "Web-based Payment Handler API",
+        "url": "https://www.w3.org/TR/web-based-payment-handler/"
+      },
+      "fragment": "partial interface ServiceWorkerRegistration {\n  [SameObject] readonly attribute PaymentManager paymentManager;\n};"
     }
   ],
   "inheritance": {

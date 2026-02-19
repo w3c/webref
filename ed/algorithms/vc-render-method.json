@@ -5,6 +5,117 @@
   },
   "algorithms": [
     {
+      "html": "The <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-17\">host page</a> <em class=\"rfc2119\">MUST</em> create an <code>iframe</code> element to host the HTML template. The\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-18\">host page</a> <em class=\"rfc2119\">MUST</em> set the <code>sandbox</code> attribute on the <code>iframe</code> to\n<code>allow-scripts</code> to prevent navigation and top-level access.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <code>vc</code> be the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-verifiable-credential\" class=\"internalDFN\" id=\"ref-for-dfn-verifiable-credential-40\">verifiable credential</a> to be rendered."
+        },
+        {
+          "html": "Let <code>renderMethod</code> be the chosen <code>renderMethod</code> property in <code>vc</code> where\n<code>renderMethod.type</code> is <code>TemplateRenderMethod</code> and\n<code>renderMethod.renderSuite</code> is <code>html</code>."
+        },
+        {
+          "html": "If <code>renderMethod.template</code> is a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, then let <code>template</code> be the value of\n<code>renderMethod.template</code>."
+        },
+        {
+          "html": "If <code>renderMethod.template</code> is a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>, then let <code>template</code> be the result of\nfetching the URL in <code>renderMethod.template.id</code>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-20\">host page</a> <em class=\"rfc2119\">MUST</em> create the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-wrapper-code\" class=\"internalDFN\" id=\"ref-for-dfn-wrapper-code-12\">wrapper code</a> by embedding the filtered\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-verifiable-credential\" class=\"internalDFN\" id=\"ref-for-dfn-verifiable-credential-43\">verifiable credential</a> and the HTML template into the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-wrapper-code\" class=\"internalDFN\" id=\"ref-for-dfn-wrapper-code-13\">wrapper code</a> template\ndefined above.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <code>wrapperCode</code> be an HTML Document with <code>&lt;meta http-equiv=\"Content-Security-Policy\"\ncontent=\"default-src data: 'unsafe-inline'\"&gt;</code> in the <code>&lt;head&gt;</code>."
+        },
+        {
+          "html": "Let <code>datablock</code> be an HTML Data Block with a <code>type</code> of <code>application/vc</code>."
+        },
+        {
+          "html": "Set the contents of <code>datablock</code> to be the filtered <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-verifiable-credential\" class=\"internalDFN\" id=\"ref-for-dfn-verifiable-credential-44\">verifiable credential</a>\nin stringified JSON format."
+        },
+        {
+          "html": "Insert <code>datablock</code> into the <code>&lt;head&gt;</code> of <code>wrapperCode</code>."
+        },
+        {
+          "html": "Insert the value of <code>template</code> into the <code>&lt;body&gt;</code> of <code>wrapperCode</code>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-21\">host page</a> <em class=\"rfc2119\">MUST</em> set the <code>srcdoc</code> attribute of the <code>iframe</code>\nto the resulting <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-wrapper-code\" class=\"internalDFN\" id=\"ref-for-dfn-wrapper-code-14\">wrapper code</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set the <code>srcdoc</code> attribute of the <code>iframe</code> to the stringified HTML of\n<code>wrapperCode</code>."
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-22\">host page</a> <em class=\"rfc2119\">MUST</em> setup a communication channel with the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-wrapper-code\" class=\"internalDFN\" id=\"ref-for-dfn-wrapper-code-15\">wrapper code</a> to\nreceive <code>ready</code> and <code>error</code> messages as described above.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <code>renderPromise</code> be a new <code>Promise</code> that:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "On <code>resolve</code>, can be used to display the <code>iframe</code> to the user."
+            },
+            {
+              "html": "On <code>reject</code>, display the error message to the user."
+            }
+          ]
+        },
+        {
+          "html": "In the <code>onload</code> event of the <code>iframe</code>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Let <code>channel</code> be a new <code>MessageChannel</code>."
+            },
+            {
+              "html": "Create and start a new <code>port1</code> listener on <code>channel</code> that listens for a <code>ready</code>\n  message from the code in <code>template</code> now injected into the <code>iframe</code> via\n  <code>wrapperCode</code>."
+            },
+            {
+              "html": "In the <code>port1</code> listener, if a <code>ready</code> message is received, resolve <code>renderPromise</code>.\n  If an <code>error</code> message is received, reject <code>renderPromise</code> with the error\n  message."
+            },
+            {
+              "html": "Use <code>postMessage</code> to send <code>port2</code> of <code>channel</code> to the <code>iframe</code> content window."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "The <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-wrapper-code\" class=\"internalDFN\" id=\"ref-for-dfn-wrapper-code-16\">wrapper code</a> <em class=\"rfc2119\">MUST</em> setup to receive communication from the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-24\">host page</a> via the\n<code>MessageChannel</code> and provide the <code>window.renderMethodReady</code> method for use by\nthe <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-template-code\" class=\"internalDFN\" id=\"ref-for-dfn-template-code-6\">template code</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "In the <code>window.onload</code> event...",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Let <code>port</code> be the <code>MessagePort</code> received from the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-25\">host page</a> via the\n<code>message</code> event."
+            },
+            {
+              "html": "Create <code>window.renderMethodReady</code> function that...",
+              "rationale": ".algorithm",
+              "steps": [
+                {
+                  "html": "If called with no arguments, sends a <code>ready</code> message to the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-26\">host page</a> via\n<code>port</code>."
+                },
+                {
+                  "html": "If called with an <code>Error</code> argument, sends an <code>error</code> message to the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-host-page\" class=\"internalDFN\" id=\"ref-for-dfn-host-page-27\">host page</a>\nvia <code>port</code> with the error message."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "html": "All actions follow the same structure. They are composed of <code>type</code> and\n                <code>payload</code>:",
       "rationale": ".algorithm",
       "steps": [
@@ -17,7 +128,7 @@
       ]
     },
     {
-      "html": "The following algorithm is used to transform the SVG image template into the\nfinal SVG image that is displayed. The inputs to the algorithm are the\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-verifiable-credential\" class=\"internalDFN\" id=\"ref-for-dfn-verifiable-credential-37\">verifiable credential</a> (<code>verifiableCredential</code>) and the SVG image\nsource code (<code>svgImage</code>). The output is a SVG image.",
+      "html": "The following algorithm is used to transform the SVG image template into the\nfinal SVG image that is displayed. The inputs to the algorithm are the\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-render-method/#dfn-verifiable-credential\" class=\"internalDFN\" id=\"ref-for-dfn-verifiable-credential-49\">verifiable credential</a> (<code>verifiableCredential</code>) and the SVG image\nsource code (<code>svgImage</code>). The output is a SVG image.",
       "rationale": ".algorithm",
       "steps": [
         {

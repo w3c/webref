@@ -51,19 +51,19 @@ partial interface ServiceWorkerGlobalScope {
     attribute EventHandler onperiodicsync;
 };
 
-// Source: Payment Handler API (https://www.w3.org/TR/payment-handler/)
-partial interface ServiceWorkerGlobalScope {
-  attribute EventHandler oncanmakepayment;
-};
-
-// Source: Payment Handler API (https://www.w3.org/TR/payment-handler/)
-partial interface ServiceWorkerGlobalScope {
-  attribute EventHandler onpaymentrequest;
-};
-
 // Source: Push API (https://www.w3.org/TR/push-api/)
 [Exposed=ServiceWorker, SecureContext]
 partial interface ServiceWorkerGlobalScope {
   attribute EventHandler onpush;
   attribute EventHandler onpushsubscriptionchange;
+};
+
+// Source: Web-based Payment Handler API (https://www.w3.org/TR/web-based-payment-handler/)
+partial interface ServiceWorkerGlobalScope {
+  attribute EventHandler oncanmakepayment;
+};
+
+// Source: Web-based Payment Handler API (https://www.w3.org/TR/web-based-payment-handler/)
+partial interface ServiceWorkerGlobalScope {
+  attribute EventHandler onpaymentrequest;
 };

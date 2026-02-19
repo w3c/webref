@@ -3,11 +3,11 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "Payment Handler API",
-      "url": "https://www.w3.org/TR/payment-handler/"
+      "title": "Web-based Payment Handler API",
+      "url": "https://www.w3.org/TR/web-based-payment-handler/"
     },
     "fragment": "[Exposed=ServiceWorker]\ninterface PaymentRequestEvent : ExtendableEvent {\n  constructor(DOMString type, optional PaymentRequestEventInit eventInitDict = {});\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute DOMString paymentRequestId;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  readonly attribute object total;\n  readonly attribute FrozenArray<PaymentDetailsModifier> modifiers;\n  readonly attribute object? paymentOptions;\n  readonly attribute FrozenArray<PaymentShippingOption>? shippingOptions;\n  Promise<WindowClient?> openWindow(USVString url);\n  Promise<PaymentRequestDetailsUpdate?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);\n  Promise<PaymentRequestDetailsUpdate?> changeShippingAddress(optional AddressInit shippingAddress = {});\n  Promise<PaymentRequestDetailsUpdate?> changeShippingOption(DOMString shippingOption);\n  undefined respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);\n};",
-    "href": "https://w3c.github.io/payment-handler/#dom-paymentrequestevent"
+    "href": "https://w3c.github.io/web-based-payment-handler/#dom-paymentrequestevent"
   },
   "extended": [],
   "inheritance": {

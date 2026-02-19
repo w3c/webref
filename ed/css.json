@@ -3239,7 +3239,7 @@
         "alignment-baseline",
         "alignmentBaseline"
       ],
-      "syntax": "baseline | text-bottom | alphabetic | ideographic | middle | central | mathematical | text-top",
+      "syntax": "baseline | <baseline-metric>",
       "extended": []
     },
     {
@@ -6168,7 +6168,7 @@
     {
       "name": "column-rule-break",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-break",
-      "initial": "spanning-item",
+      "initial": "normal",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "n/a",
@@ -6179,7 +6179,7 @@
         "column-rule-break",
         "columnRuleBreak"
       ],
-      "syntax": "none | spanning-item | intersection",
+      "syntax": "none | normal | intersection",
       "extended": []
     },
     {
@@ -6191,7 +6191,7 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animationType": "repeatable list, see § 3.4.1 Interpolation behavior.",
+      "animationType": "repeatable list, see § 4.4.1 Interpolation behavior.",
       "styleDeclaration": [
         "column-rule-color",
         "columnRuleColor"
@@ -6395,7 +6395,7 @@
       "percentages": "n/a",
       "computedValue": "list of absolute lengths, snapped as a border width",
       "canonicalOrder": "per grammar",
-      "animationType": "repeatable list, see § 3.4.1 Interpolation behavior.",
+      "animationType": "repeatable list, see § 4.4.1 Interpolation behavior.",
       "styleDeclaration": [
         "column-rule-width",
         "columnRuleWidth"
@@ -7497,7 +7497,7 @@
         "dominant-baseline",
         "dominantBaseline"
       ],
-      "syntax": "auto | text-bottom | alphabetic | ideographic | middle | central | mathematical | hanging | text-top",
+      "syntax": "auto | <baseline-metric>",
       "extended": []
     },
     {
@@ -12253,7 +12253,7 @@
     {
       "name": "row-rule-break",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-break",
-      "initial": "spanning-item",
+      "initial": "normal",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "n/a",
@@ -12264,7 +12264,7 @@
         "row-rule-break",
         "rowRuleBreak"
       ],
-      "syntax": "none | spanning-item | intersection",
+      "syntax": "none | normal | intersection",
       "extended": []
     },
     {
@@ -12276,7 +12276,7 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animationType": "repeatable list, see § 3.4.1 Interpolation behavior.",
+      "animationType": "repeatable list, see § 4.4.1 Interpolation behavior.",
       "styleDeclaration": [
         "row-rule-color",
         "rowRuleColor"
@@ -12480,7 +12480,7 @@
       "percentages": "n/a",
       "computedValue": "list of absolute lengths, snapped as a border width",
       "canonicalOrder": "per grammar",
-      "animationType": "repeatable list, see § 3.4.1 Interpolation behavior.",
+      "animationType": "repeatable list, see § 4.4.1 Interpolation behavior.",
       "styleDeclaration": [
         "row-rule-width",
         "rowRuleWidth"
@@ -17249,6 +17249,13 @@
       "name": "bad-url-token",
       "prose": "The output of tokenization step is a stream of zero or more of the following tokens: <ident-token>, <function-token>, <at-keyword-token>, <hash-token>, <string-token>, <bad-string-token>, <url-token>, <bad-url-token>, <delim-token>, <number-token>, <percentage-token>, <dimension-token>, <unicode-range-token>, <whitespace-token>, <CDO-token>, <CDC-token>, <colon-token>, <semicolon-token>, <comma-token>, <[-token>, <]-token>, <(-token>, <)-token>, <{-token>, and <}-token>.",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-bad-url-token",
+      "extended": []
+    },
+    {
+      "name": "baseline-metric",
+      "prose": "The <baseline-metric> value, which identifies specific baseline metrics, expands to",
+      "href": "https://drafts.csswg.org/css-inline-3/#typedef-baseline-metric",
+      "syntax": "text-bottom | alphabetic | ideographic | middle | central | mathematical | hanging | text-top",
       "extended": []
     },
     {

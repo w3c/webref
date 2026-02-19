@@ -1,0 +1,15 @@
+{
+  "name": "ModelContext",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebMCP",
+      "url": "https://webmachinelearning.github.io/webmcp/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext {\n  undefined provideContext(optional ModelContextOptions options = {});\n  undefined clearContext();\n  undefined registerTool(ModelContextTool tool);\n  undefined unregisterTool(DOMString name);\n};",
+    "href": "https://webmachinelearning.github.io/webmcp/#modelcontext"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

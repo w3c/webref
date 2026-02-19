@@ -244,6 +244,9 @@ partial interface Document {
   readonly attribute SVGSVGElement? rootElement;
 };
 
+// Source: Accessible Rich Internet Applications (WAI-ARIA) 1.3 (https://www.w3.org/TR/wai-aria-1.3/)
+Document includes ARIANotifyMixin;
+
 // Source: Web Animations Module Level 1 (https://www.w3.org/TR/web-animations-1/)
 partial interface Document {
     readonly attribute DocumentTimeline timeline;

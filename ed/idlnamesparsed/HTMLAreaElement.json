@@ -227,6 +227,13 @@
         },
         {
           "spec": {
+            "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.3",
+            "url": "https://www.w3.org/TR/wai-aria-1.3/"
+          },
+          "fragment": "Element includes ARIANotifyMixin;"
+        },
+        {
+          "spec": {
             "title": "Web Animations Module Level 1",
             "url": "https://www.w3.org/TR/web-animations-1/"
           },
@@ -371,6 +378,21 @@
             },
             "fragment": "interface mixin ARIAMixin {\n[CEReactions, Reflect] attribute DOMString? role;\n[CEReactions, Reflect=\"aria-activedescendant\"] attribute Element? ariaActiveDescendantElement;\n[CEReactions, Reflect=\"aria-atomic\"] attribute DOMString? ariaAtomic;\n[CEReactions, Reflect=\"aria-autocomplete\"] attribute DOMString? ariaAutoComplete;\n[CEReactions, Reflect=\"aria-braillelabel\"] attribute DOMString? ariaBrailleLabel;\n[CEReactions, Reflect=\"aria-brailleroledescription\"] attribute DOMString? ariaBrailleRoleDescription;\n[CEReactions, Reflect=\"aria-busy\"] attribute DOMString? ariaBusy;\n[CEReactions, Reflect=\"aria-checked\"] attribute DOMString? ariaChecked;\n[CEReactions, Reflect=\"aria-colcount\"] attribute DOMString? ariaColCount;\n[CEReactions, Reflect=\"aria-colindex\"] attribute DOMString? ariaColIndex;\n[CEReactions, Reflect=\"aria-colindextext\"] attribute DOMString? ariaColIndexText;\n[CEReactions, Reflect=\"aria-colspan\"] attribute DOMString? ariaColSpan;\n[CEReactions, Reflect=\"aria-controls\"] attribute FrozenArray<Element>? ariaControlsElements;\n[CEReactions, Reflect=\"aria-current\"] attribute DOMString? ariaCurrent;\n[CEReactions, Reflect=\"aria-describedby\"] attribute FrozenArray<Element>? ariaDescribedByElements;\n[CEReactions, Reflect=\"aria-description\"] attribute DOMString? ariaDescription;\n[CEReactions, Reflect=\"aria-details\"] attribute FrozenArray<Element>? ariaDetailsElements;\n[CEReactions, Reflect=\"aria-disabled\"] attribute DOMString? ariaDisabled;\n[CEReactions, Reflect=\"aria-errormessage\"] attribute FrozenArray<Element>? ariaErrorMessageElements;\n[CEReactions, Reflect=\"aria-expanded\"] attribute DOMString? ariaExpanded;\n[CEReactions, Reflect=\"aria-flowto\"] attribute FrozenArray<Element>? ariaFlowToElements;\n[CEReactions, Reflect=\"aria-haspopup\"] attribute DOMString? ariaHasPopup;\n[CEReactions, Reflect=\"aria-hidden\"] attribute DOMString? ariaHidden;\n[CEReactions, Reflect=\"aria-invalid\"] attribute DOMString? ariaInvalid;\n[CEReactions, Reflect=\"aria-keyshortcuts\"] attribute DOMString? ariaKeyShortcuts;\n[CEReactions, Reflect=\"aria-label\"] attribute DOMString? ariaLabel;\n[CEReactions, Reflect=\"aria-labelledby\"] attribute FrozenArray<Element>? ariaLabelledByElements;\n[CEReactions, Reflect=\"aria-level\"] attribute DOMString? ariaLevel;\n[CEReactions, Reflect=\"aria-live\"] attribute DOMString? ariaLive;\n[CEReactions, Reflect=\"aria-modal\"] attribute DOMString? ariaModal;\n[CEReactions, Reflect=\"aria-multiline\"] attribute DOMString? ariaMultiLine;\n[CEReactions, Reflect=\"aria-multiselectable\"] attribute DOMString? ariaMultiSelectable;\n[CEReactions, Reflect=\"aria-orientation\"] attribute DOMString? ariaOrientation;\n[CEReactions, Reflect=\"aria-owns\"] attribute FrozenArray<Element>? ariaOwnsElements;\n[CEReactions, Reflect=\"aria-placeholder\"] attribute DOMString? ariaPlaceholder;\n[CEReactions, Reflect=\"aria-posinset\"] attribute DOMString? ariaPosInSet;\n[CEReactions, Reflect=\"aria-pressed\"] attribute DOMString? ariaPressed;\n[CEReactions, Reflect=\"aria-readonly\"] attribute DOMString? ariaReadOnly;\n[CEReactions, Reflect=\"aria-relevant\"] attribute DOMString? ariaRelevant;\n[CEReactions, Reflect=\"aria-required\"] attribute DOMString? ariaRequired;\n[CEReactions, Reflect=\"aria-roledescription\"] attribute DOMString? ariaRoleDescription;\n[CEReactions, Reflect=\"aria-rowcount\"] attribute DOMString? ariaRowCount;\n[CEReactions, Reflect=\"aria-rowindex\"] attribute DOMString? ariaRowIndex;\n[CEReactions, Reflect=\"aria-rowindextext\"] attribute DOMString? ariaRowIndexText;\n[CEReactions, Reflect=\"aria-rowspan\"] attribute DOMString? ariaRowSpan;\n[CEReactions, Reflect=\"aria-selected\"] attribute DOMString? ariaSelected;\n[CEReactions, Reflect=\"aria-setsize\"] attribute DOMString? ariaSetSize;\n[CEReactions, Reflect=\"aria-sort\"] attribute DOMString? ariaSort;\n[CEReactions, Reflect=\"aria-valuemax\"] attribute DOMString? ariaValueMax;\n[CEReactions, Reflect=\"aria-valuemin\"] attribute DOMString? ariaValueMin;\n[CEReactions, Reflect=\"aria-valuenow\"] attribute DOMString? ariaValueNow;\n[CEReactions, Reflect=\"aria-valuetext\"] attribute DOMString? ariaValueText;\n  };",
             "href": "https://w3c.github.io/aria/#dom-ariamixin"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
+        },
+        {
+          "name": "ARIANotifyMixin",
+          "type": "interface mixin",
+          "defined": {
+            "spec": {
+              "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.3",
+              "url": "https://www.w3.org/TR/wai-aria-1.3/"
+            },
+            "fragment": "interface mixin ARIANotifyMixin {\n  undefined ariaNotify(DOMString announcement, optional AriaNotificationOptions options = {});\n};",
+            "href": "https://w3c.github.io/aria/#dom-arianotifymixin"
           },
           "extended": [],
           "inheritance": null,

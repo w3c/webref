@@ -1,6 +1,6 @@
 // Source: Modern Algorithms in the Web Cryptography API (https://wicg.github.io/webcrypto-modern-algos/)
 dictionary CShakeParams : Algorithm {
-  required [EnforceRange] unsigned long length;
+  required [EnforceRange] unsigned long outputLength;
   BufferSource functionName;
   BufferSource customization;
 };

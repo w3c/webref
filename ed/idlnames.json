@@ -9,6 +9,11 @@
     "parsed": "idlnamesparsed/ARIAMixin.json",
     "type": "interface mixin"
   },
+  "ARIANotifyMixin": {
+    "fragment": "idlnames/ARIANotifyMixin.idl",
+    "parsed": "idlnamesparsed/ARIANotifyMixin.json",
+    "type": "interface mixin"
+  },
   "AacBitstreamFormat": {
     "fragment": "idlnames/AacBitstreamFormat.idl",
     "parsed": "idlnamesparsed/AacBitstreamFormat.json",
@@ -303,6 +308,16 @@
     "fragment": "idlnames/Argon2Params.idl",
     "parsed": "idlnamesparsed/Argon2Params.json",
     "type": "dictionary"
+  },
+  "AriaNotificationOptions": {
+    "fragment": "idlnames/AriaNotificationOptions.idl",
+    "parsed": "idlnamesparsed/AriaNotificationOptions.json",
+    "type": "dictionary"
+  },
+  "AriaNotifyPriority": {
+    "fragment": "idlnames/AriaNotifyPriority.idl",
+    "parsed": "idlnamesparsed/AriaNotifyPriority.json",
+    "type": "enum"
   },
   "ArrayBufferView": {
     "fragment": "idlnames/ArrayBufferView.idl",
@@ -2624,6 +2639,11 @@
     "parsed": "idlnamesparsed/CredentialRequestOptions.json",
     "type": "dictionary"
   },
+  "CredentialUiMode": {
+    "fragment": "idlnames/CredentialUiMode.idl",
+    "parsed": "idlnamesparsed/CredentialUiMode.json",
+    "type": "enum"
+  },
   "CredentialUserData": {
     "fragment": "idlnames/CredentialUserData.idl",
     "parsed": "idlnamesparsed/CredentialUserData.json",
@@ -4918,21 +4938,6 @@
     "fragment": "idlnames/GeolocationPositionError.idl",
     "parsed": "idlnamesparsed/GeolocationPositionError.json",
     "type": "interface"
-  },
-  "GeolocationSensor": {
-    "fragment": "idlnames/GeolocationSensor.idl",
-    "parsed": "idlnamesparsed/GeolocationSensor.json",
-    "type": "interface"
-  },
-  "GeolocationSensorOptions": {
-    "fragment": "idlnames/GeolocationSensorOptions.idl",
-    "parsed": "idlnamesparsed/GeolocationSensorOptions.json",
-    "type": "dictionary"
-  },
-  "GeolocationSensorReading": {
-    "fragment": "idlnames/GeolocationSensorReading.idl",
-    "parsed": "idlnamesparsed/GeolocationSensorReading.json",
-    "type": "dictionary"
   },
   "GeometryNode": {
     "fragment": "idlnames/GeometryNode.idl",
@@ -7509,6 +7514,26 @@
     "parsed": "idlnamesparsed/MockMicrophoneConfiguration.json",
     "type": "dictionary"
   },
+  "ModelContext": {
+    "fragment": "idlnames/ModelContext.idl",
+    "parsed": "idlnamesparsed/ModelContext.json",
+    "type": "interface"
+  },
+  "ModelContextClient": {
+    "fragment": "idlnames/ModelContextClient.idl",
+    "parsed": "idlnamesparsed/ModelContextClient.json",
+    "type": "interface"
+  },
+  "ModelContextOptions": {
+    "fragment": "idlnames/ModelContextOptions.idl",
+    "parsed": "idlnamesparsed/ModelContextOptions.json",
+    "type": "dictionary"
+  },
+  "ModelContextTool": {
+    "fragment": "idlnames/ModelContextTool.idl",
+    "parsed": "idlnamesparsed/ModelContextTool.json",
+    "type": "dictionary"
+  },
   "Module": {
     "fragment": "idlnames/Module.idl",
     "parsed": "idlnamesparsed/Module.json",
@@ -9894,11 +9919,6 @@
     "parsed": "idlnamesparsed/RdfTriple.json",
     "type": "interface"
   },
-  "ReadOptions": {
-    "fragment": "idlnames/ReadOptions.idl",
-    "parsed": "idlnamesparsed/ReadOptions.json",
-    "type": "dictionary"
-  },
   "ReadableByteStreamController": {
     "fragment": "idlnames/ReadableByteStreamController.idl",
     "parsed": "idlnamesparsed/ReadableByteStreamController.json",
@@ -12024,6 +12044,16 @@
     "parsed": "idlnamesparsed/TokenVersion.json",
     "type": "enum"
   },
+  "ToolAnnotations": {
+    "fragment": "idlnames/ToolAnnotations.idl",
+    "parsed": "idlnamesparsed/ToolAnnotations.json",
+    "type": "dictionary"
+  },
+  "ToolExecuteCallback": {
+    "fragment": "idlnames/ToolExecuteCallback.idl",
+    "parsed": "idlnamesparsed/ToolExecuteCallback.json",
+    "type": "callback"
+  },
   "TopLevelStorageAccessPermissionDescriptor": {
     "fragment": "idlnames/TopLevelStorageAccessPermissionDescriptor.idl",
     "parsed": "idlnamesparsed/TopLevelStorageAccessPermissionDescriptor.json",
@@ -12468,6 +12498,11 @@
     "fragment": "idlnames/UserIdleState.idl",
     "parsed": "idlnamesparsed/UserIdleState.json",
     "type": "enum"
+  },
+  "UserInteractionCallback": {
+    "fragment": "idlnames/UserInteractionCallback.idl",
+    "parsed": "idlnamesparsed/UserInteractionCallback.json",
+    "type": "callback"
   },
   "UserVerificationRequirement": {
     "fragment": "idlnames/UserVerificationRequirement.idl",

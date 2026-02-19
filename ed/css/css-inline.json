@@ -7,7 +7,7 @@
     {
       "name": "dominant-baseline",
       "href": "https://drafts.csswg.org/css-inline-3/#propdef-dominant-baseline",
-      "value": "auto | text-bottom | alphabetic | ideographic | middle | central | mathematical | hanging | text-top",
+      "value": "auto | <baseline-metric>",
       "initial": "auto",
       "appliesTo": "block containers, inline boxes, table rows, grid containers, flex containers, and SVG text content elements",
       "inherited": "yes",
@@ -119,62 +119,6 @@
           "value": "last"
         },
         {
-          "name": "baseline",
-          "prose": "Use the dominant baseline choice of the parent.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-baseline",
-          "type": "value",
-          "value": "baseline"
-        },
-        {
-          "name": "text-bottom",
-          "prose": "Use the text-under baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-text-bottom",
-          "type": "value",
-          "value": "text-bottom"
-        },
-        {
-          "name": "alphabetic",
-          "prose": "Use the alphabetic baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-alphabetic",
-          "type": "value",
-          "value": "alphabetic"
-        },
-        {
-          "name": "ideographic",
-          "prose": "Use the ideographic-under baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-ideographic",
-          "type": "value",
-          "value": "ideographic"
-        },
-        {
-          "name": "middle",
-          "prose": "In general, use the x-middle baselines; except under text-orientation: upright (where the alphabetic and x-height baselines are essentially meaningless) use the central baseline instead.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-middle",
-          "type": "value",
-          "value": "middle"
-        },
-        {
-          "name": "central",
-          "prose": "Use the central baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-central",
-          "type": "value",
-          "value": "central"
-        },
-        {
-          "name": "mathematical",
-          "prose": "Use the math baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-mathematical",
-          "type": "value",
-          "value": "mathematical"
-        },
-        {
-          "name": "text-top",
-          "prose": "Use the text-over baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-text-top",
-          "type": "value",
-          "value": "text-top"
-        },
-        {
           "name": "<length>",
           "prose": "Raise (positive value) or lower (negative value) by the specified length.",
           "href": "https://drafts.csswg.org/css-inline-3/#valdef-baseline-shift-length",
@@ -271,7 +215,7 @@
     {
       "name": "alignment-baseline",
       "href": "https://drafts.csswg.org/css-inline-3/#propdef-alignment-baseline",
-      "value": "baseline | text-bottom | alphabetic | ideographic | middle | central | mathematical | text-top",
+      "value": "baseline | <baseline-metric>",
       "initial": "baseline",
       "appliesTo": "inline-level boxes, flex items, grid items, table cells, and SVG text content elements",
       "inherited": "no",
@@ -282,59 +226,10 @@
       "values": [
         {
           "name": "baseline",
-          "prose": "Use the dominant baseline choice of the parent.",
+          "prose": "This property specifies the box’s alignment baseline: the baseline used to align the box prior to applying its post-alignment shift (if applicable). Values have the same meanings as for dominant-baseline; the baseline keyword uses the dominant baseline choice of the parent.",
           "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-baseline",
           "type": "value",
           "value": "baseline"
-        },
-        {
-          "name": "text-bottom",
-          "prose": "Use the text-under baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-text-bottom",
-          "type": "value",
-          "value": "text-bottom"
-        },
-        {
-          "name": "alphabetic",
-          "prose": "Use the alphabetic baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-alphabetic",
-          "type": "value",
-          "value": "alphabetic"
-        },
-        {
-          "name": "ideographic",
-          "prose": "Use the ideographic-under baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-ideographic",
-          "type": "value",
-          "value": "ideographic"
-        },
-        {
-          "name": "middle",
-          "prose": "In general, use the x-middle baselines; except under text-orientation: upright (where the alphabetic and x-height baselines are essentially meaningless) use the central baseline instead.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-middle",
-          "type": "value",
-          "value": "middle"
-        },
-        {
-          "name": "central",
-          "prose": "Use the central baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-central",
-          "type": "value",
-          "value": "central"
-        },
-        {
-          "name": "mathematical",
-          "prose": "Use the math baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-mathematical",
-          "type": "value",
-          "value": "mathematical"
-        },
-        {
-          "name": "text-top",
-          "prose": "Use the text-over baseline.",
-          "href": "https://drafts.csswg.org/css-inline-3/#valdef-alignment-baseline-text-top",
-          "type": "value",
-          "value": "text-top"
         },
         {
           "name": "text-before-edge",
@@ -841,6 +736,78 @@
   "atrules": [],
   "selectors": [],
   "values": [
+    {
+      "name": "<baseline-metric>",
+      "prose": "The <baseline-metric> value, which identifies specific baseline metrics, expands to",
+      "href": "https://drafts.csswg.org/css-inline-3/#typedef-baseline-metric",
+      "type": "type",
+      "value": "text-bottom | alphabetic | ideographic | middle | central | mathematical | hanging | text-top",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "Equivalent to alphabetic in horizontal writing modes and in vertical writing modes when text-orientation is sideways. Equivalent to central in vertical writing modes when text-orientation is mixed or upright. However, in SVG text, the origin point of glyphs (used for coordinate-based glyph positioning) is always handled as for central in vertical writing modes.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-auto",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "text-bottom",
+          "prose": "Use the text-under baselines.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-text-bottom",
+          "type": "value",
+          "value": "text-bottom"
+        },
+        {
+          "name": "alphabetic",
+          "prose": "Use the alphabetic baselines.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-alphabetic",
+          "type": "value",
+          "value": "alphabetic"
+        },
+        {
+          "name": "ideographic",
+          "prose": "Use the ideographic-under baselines.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-ideographic",
+          "type": "value",
+          "value": "ideographic"
+        },
+        {
+          "name": "middle",
+          "prose": "Use the x-middle baselines; except under text-orientation: upright (where the alphabetic and x-height baselines are essentially meaningless) use the central baseline.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-middle",
+          "type": "value",
+          "value": "middle"
+        },
+        {
+          "name": "central",
+          "prose": "Use the central baselines.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-central",
+          "type": "value",
+          "value": "central"
+        },
+        {
+          "name": "mathematical",
+          "prose": "Use the math baselines.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-mathematical",
+          "type": "value",
+          "value": "mathematical"
+        },
+        {
+          "name": "hanging",
+          "prose": "Use the hanging baselines.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-hanging",
+          "type": "value",
+          "value": "hanging"
+        },
+        {
+          "name": "text-top",
+          "prose": "Use the text-over baselines.",
+          "href": "https://drafts.csswg.org/css-inline-3/#valdef-dominant-baseline-text-top",
+          "type": "value",
+          "value": "text-top"
+        }
+      ]
+    },
     {
       "name": "<text-edge>",
       "prose": "The <text-edge> value, which identifies specific font metrics, expands to",

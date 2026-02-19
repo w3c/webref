@@ -3,11 +3,11 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "UI Events",
-      "url": "https://www.w3.org/TR/uievents/"
+      "title": "Pointer Events",
+      "url": "https://www.w3.org/TR/pointerevents4/"
     },
     "fragment": "[Exposed=Window]\ninterface WheelEvent : MouseEvent {\n  constructor(DOMString type, optional WheelEventInit eventInitDict = {});\n  // DeltaModeCode\n  const unsigned long DOM_DELTA_PIXEL = 0x00;\n  const unsigned long DOM_DELTA_LINE  = 0x01;\n  const unsigned long DOM_DELTA_PAGE  = 0x02;\n\n  readonly attribute double deltaX;\n  readonly attribute double deltaY;\n  readonly attribute double deltaZ;\n  readonly attribute unsigned long deltaMode;\n};",
-    "href": "https://w3c.github.io/uievents/#wheelevent"
+    "href": "https://w3c.github.io/pointerevents/#dom-wheelevent"
   },
   "extended": [],
   "inheritance": {
@@ -15,11 +15,11 @@
     "type": "interface",
     "defined": {
       "spec": {
-        "title": "UI Events",
-        "url": "https://www.w3.org/TR/uievents/"
+        "title": "Pointer Events",
+        "url": "https://www.w3.org/TR/pointerevents4/"
       },
       "fragment": "[Exposed=Window]\ninterface MouseEvent : UIEvent {\n  constructor(DOMString type, optional MouseEventInit eventInitDict = {});\n  readonly attribute long screenX;\n  readonly attribute long screenY;\n  readonly attribute long clientX;\n  readonly attribute long clientY;\n  readonly attribute long layerX;\n  readonly attribute long layerY;\n\n  readonly attribute boolean ctrlKey;\n  readonly attribute boolean shiftKey;\n  readonly attribute boolean altKey;\n  readonly attribute boolean metaKey;\n\n  readonly attribute short button;\n  readonly attribute unsigned short buttons;\n\n  readonly attribute EventTarget? relatedTarget;\n\n  boolean getModifierState(DOMString keyArg);\n};",
-      "href": "https://w3c.github.io/uievents/#mouseevent"
+      "href": "https://w3c.github.io/pointerevents/#dom-mouseevent"
     },
     "extended": [
       {
@@ -31,17 +31,17 @@
       },
       {
         "spec": {
+          "title": "Pointer Events",
+          "url": "https://www.w3.org/TR/pointerevents4/"
+        },
+        "fragment": "partial interface MouseEvent {\n  // Deprecated in this specification\n  undefined initMouseEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Window? viewArg = null,\n    optional long detailArg = 0,\n    optional long screenXArg = 0,\n    optional long screenYArg = 0,\n    optional long clientXArg = 0,\n    optional long clientYArg = 0,\n    optional boolean ctrlKeyArg = false,\n    optional boolean altKeyArg = false,\n    optional boolean shiftKeyArg = false,\n    optional boolean metaKeyArg = false,\n    optional short buttonArg = 0,\n    optional EventTarget? relatedTargetArg = null);\n};"
+      },
+      {
+        "spec": {
           "title": "Pointer Lock 2.0",
           "url": "https://www.w3.org/TR/pointerlock-2/"
         },
         "fragment": "partial interface MouseEvent {\n  readonly attribute double movementX;\n  readonly attribute double movementY;\n};"
-      },
-      {
-        "spec": {
-          "title": "UI Events",
-          "url": "https://www.w3.org/TR/uievents/"
-        },
-        "fragment": "partial interface MouseEvent {\n  // Deprecated in this specification\n  undefined initMouseEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Window? viewArg = null,\n    optional long detailArg = 0,\n    optional long screenXArg = 0,\n    optional long screenYArg = 0,\n    optional long clientXArg = 0,\n    optional long clientYArg = 0,\n    optional boolean ctrlKeyArg = false,\n    optional boolean altKeyArg = false,\n    optional boolean shiftKeyArg = false,\n    optional boolean metaKeyArg = false,\n    optional short buttonArg = 0,\n    optional EventTarget? relatedTargetArg = null);\n};"
       }
     ],
     "inheritance": {

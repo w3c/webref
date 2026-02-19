@@ -1743,6 +1743,117 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://w3c.github.io/aria/#dom-ariamixin"
+      },
+      "AriaNotifyPriority": {
+        "fragment": "enum AriaNotifyPriority { \"normal\", \"high\" };",
+        "type": "enum",
+        "name": "AriaNotifyPriority",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "normal",
+            "href": "https://w3c.github.io/aria/#dom-arianotifypriority-normal"
+          },
+          {
+            "type": "enum-value",
+            "value": "high",
+            "href": "https://w3c.github.io/aria/#dom-arianotifypriority-high"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/aria/#dom-arianotifypriority"
+      },
+      "AriaNotificationOptions": {
+        "fragment": "dictionary AriaNotificationOptions {\n  AriaNotifyPriority priority = \"normal\";\n};",
+        "type": "dictionary",
+        "name": "AriaNotificationOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "priority",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AriaNotifyPriority"
+            },
+            "default": {
+              "type": "string",
+              "value": "normal"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/aria/#dom-arianotificationoptions-priority"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/aria/#dom-arianotificationoptions"
+      },
+      "ARIANotifyMixin": {
+        "fragment": "interface mixin ARIANotifyMixin {\n  undefined ariaNotify(DOMString announcement, optional AriaNotificationOptions options = {});\n};",
+        "type": "interface mixin",
+        "name": "ARIANotifyMixin",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "ariaNotify",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "announcement",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AriaNotificationOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://w3c.github.io/aria/#dom-arianotifymixin-arianotify"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/aria/#dom-arianotifymixin"
       }
     },
     "idlExtendedNames": {
@@ -1753,6 +1864,22 @@
           "extAttrs": [],
           "target": "Element",
           "includes": "ARIAMixin"
+        },
+        {
+          "fragment": "Element includes ARIANotifyMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Element",
+          "includes": "ARIANotifyMixin"
+        }
+      ],
+      "Document": [
+        {
+          "fragment": "Document includes ARIANotifyMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "Document",
+          "includes": "ARIANotifyMixin"
         }
       ]
     },
@@ -1763,7 +1890,17 @@
         "Element"
       ],
       "Element": [
-        "ARIAMixin"
+        "ARIAMixin",
+        "ARIANotifyMixin"
+      ],
+      "AriaNotificationOptions": [
+        "AriaNotifyPriority"
+      ],
+      "ARIANotifyMixin": [
+        "AriaNotificationOptions"
+      ],
+      "Document": [
+        "ARIANotifyMixin"
       ]
     },
     "externalDependencies": [
