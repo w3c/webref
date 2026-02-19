@@ -8,13 +8,13 @@ Payment Request re-introduced most of the missing interfaces, except the
 underlying problem, see:
 https://github.com/w3c/payment-handler/issues/412
 ---
- ed/idl/payment-handler.idl | 13 +++++++++++++
+ ed/idl/web-based-payment-handler.idl | 13 +++++++++++++
  1 file changed, 13 insertions(+)
 
-diff --git a/ed/idl/payment-handler.idl b/ed/idl/payment-handler.idl
+diff --git a/ed/idl/web-based-payment-handler.idl b/ed/idl/web-based-payment-handler.idl
 index 1f6eaae2b..8aa55e9e9 100644
---- a/ed/idl/payment-handler.idl
-+++ b/ed/idl/payment-handler.idl
+--- a/ed/idl/web-based-payment-handler.idl
++++ b/ed/idl/web-based-payment-handler.idl
 @@ -81,3 +81,16 @@ DOMString? payerPhone;
  AddressInit shippingAddress;
  DOMString? shippingOption;
