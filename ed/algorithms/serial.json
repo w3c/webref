@@ -343,6 +343,9 @@
               "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://wicg.github.io/serial/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-4\"><code>[[readable]]</code></a>'s\n              <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-current-byob-request-view\">current BYOB request view</a> is non-null, then\n              set <var>desiredSize</var> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://wicg.github.io/serial/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-5\"><code>[[readable]]</code></a>'s\n              <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-current-byob-request-view\">current BYOB request view</a>'s\n              <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-byte-length\">byte length</a>."
             },
             {
+              "html": "Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\">a new promise</a>."
+            },
+            {
               "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\">in parallel</a>:",
               "rationale": "invoke",
               "steps": [
@@ -365,6 +368,9 @@
                         },
                         {
                           "html": "<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-enqueue\">Enqueue</a> <var>view</var> into\n                          <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.<a data-link-type=\"attribute\" data-lt=\"[[readable]]\" href=\"https://wicg.github.io/serial/#dfn-readable\" class=\"internalDFN\" id=\"ref-for-dfn-readable-9\"><code>[[readable]]</code></a>."
+                        },
+                        {
+                          "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\">Resolve</a> <var>promise</var> with <code>undefined</code>."
                         }
                       ]
                     },
@@ -403,7 +409,7 @@
               ]
             },
             {
-              "html": "Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-resolved-with\">a promise resolved with</a> <code>undefined</code>."
+              "html": "Return <var>promise</var>."
             }
           ]
         },

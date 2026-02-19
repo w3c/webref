@@ -151,25 +151,37 @@
           "html": "If <var>options</var>' <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"ProfilerInitOptions\" data-xref-for=\"ProfilerInitOptions\" href=\"https://wicg.github.io/js-self-profiling/#dom-profilerinitoptions-sampleinterval\" class=\"internalDFN\" id=\"ref-for-dom-profilerinitoptions-sampleinterval-1\"><code>sampleInterval</code></a> is less than 0, throw a <code>RangeError</code>."
         },
         {
-          "html": "<a href=\"https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value\">Get the policy value</a> for <code>\"js-profiling-mode\"</code> in the <a data-cite=\"!HTML5#document\" href=\"https://www.w3.org/TR/html5/#document\">Document</a>. Let <var>profilingMode</var> be the result."
+          "html": "Let <var>globalObject</var> be the <dfn data-cite=\"!HTML5#current-global-object\" id=\"dfn-current-global-object\" class=\"externalDFN\" data-no-export=\"\" data-dfn-type=\"dfn\"><a href=\"https://www.w3.org/TR/html5/#current-global-object\" data-cite=\"HTML5\" data-cite-path=\"\" data-cite-frag=\"#current-global-object\">current global object</a></dfn>."
         },
         {
-          "html": "If <var>profilingMode</var> is not <code>\"eager\"</code> or <code>\"lazy\"</code>:",
+          "html": "If <var>globalObject</var> is a <dfn data-cite=\"!HTML5#window\" id=\"dfn-window\" class=\"externalDFN\" data-no-export=\"\" data-dfn-type=\"dfn\"><a href=\"https://www.w3.org/TR/html5/#window\" data-cite=\"HTML5\" data-cite-path=\"\" data-cite-frag=\"#window\">Window</a></dfn> or a <dfn data-cite=\"!HTML5#the-workerglobalscope-common-interface\" id=\"dfn-workerglobalscope\" class=\"externalDFN\" data-no-export=\"\" data-dfn-type=\"dfn\"><a href=\"https://www.w3.org/TR/html5/#the-workerglobalscope-common-interface\" data-cite=\"HTML5\" data-cite-path=\"\" data-cite-frag=\"#the-workerglobalscope-common-interface\">WorkerGlobalScope</a></dfn>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<a href=\"https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value\">Get the policy value</a> for <code>\"js-profiling\"</code> in the <a data-cite=\"!HTML5#document\" href=\"https://www.w3.org/TR/html5/#document\">Document</a>. Let <var data-type=\"boolean\">jsProfilingEnabled</var> be the result."
+              "html": "<a href=\"https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value\">Get the policy value</a> for <code>\"js-profiling-mode\"</code> from <var>globalObject</var>. Let <var>profilingMode</var> be the result."
             },
             {
-              "html": "If <var data-type=\"boolean\">jsProfilingEnabled</var> is false, throw a <code>\"NotAllowedError\"</code> DOMException."
+              "html": "If <var>profilingMode</var> is not <code>\"eager\"</code> or <code>\"lazy\"</code>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<a href=\"https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value\">Get the policy value</a> for <code>\"js-profiling\"</code> from <var>globalObject</var>. Let <var>jsProfilingEnabled</var> be the result."
+                },
+                {
+                  "html": "If <var>jsProfilingEnabled</var> is false, throw a <code>\"NotAllowedError\"</code> DOMException."
+                }
+              ]
             }
           ]
+        },
+        {
+          "html": "Otherwise, throw a <code>\"NotAllowedError\"</code> DOMException."
         },
         {
           "html": "Create a new <a href=\"https://wicg.github.io/js-self-profiling/#dfn-profiling-session\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-profiling-session-6\">profiling session</a> where:"
         },
         {
-          "html": "Return a new <a href=\"https://wicg.github.io/js-self-profiling/#dom-profiler\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profiler-5\"><code>Profiler</code></a> associated with the newly created <a href=\"https://wicg.github.io/js-self-profiling/#dfn-profiling-session\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-profiling-session-7\">profiling session</a>."
+          "html": "Return a new <a href=\"https://wicg.github.io/js-self-profiling/#dom-profiler\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-profiler-4\"><code>Profiler</code></a> associated with the newly created <a href=\"https://wicg.github.io/js-self-profiling/#dfn-profiling-session\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-profiling-session-7\">profiling session</a>."
         }
       ]
     },
