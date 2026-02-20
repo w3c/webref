@@ -103,9 +103,9 @@
       "number": "6.2"
     },
     {
-      "id": "sec-isstructurallyvalidlanguagetag",
-      "href": "https://tc39.es/ecma402/#sec-isstructurallyvalidlanguagetag",
-      "title": "IsStructurallyValidLanguageTag ( locale )",
+      "id": "sec-iswellformedlanguagetag",
+      "href": "https://tc39.es/ecma402/#sec-iswellformedlanguagetag",
+      "title": "IsWellFormedLanguageTag ( locale )",
       "level": 3,
       "number": "6.2.1"
     },
@@ -1496,81 +1496,137 @@
       "number": "15.3.5"
     },
     {
+      "id": "sec-Intl.Locale.prototype.firstDayOfWeek",
+      "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.firstDayOfWeek",
+      "title": "get Intl.Locale.prototype.firstDayOfWeek",
+      "level": 3,
+      "number": "15.3.6"
+    },
+    {
       "id": "sec-Intl.Locale.prototype.hourCycle",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.hourCycle",
       "title": "get Intl.Locale.prototype.hourCycle",
       "level": 3,
-      "number": "15.3.6"
+      "number": "15.3.7"
     },
     {
       "id": "sec-Intl.Locale.prototype.language",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.language",
       "title": "get Intl.Locale.prototype.language",
       "level": 3,
-      "number": "15.3.7"
+      "number": "15.3.8"
     },
     {
       "id": "sec-Intl.Locale.prototype.maximize",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.maximize",
       "title": "Intl.Locale.prototype.maximize ( )",
       "level": 3,
-      "number": "15.3.8"
+      "number": "15.3.9"
     },
     {
       "id": "sec-Intl.Locale.prototype.minimize",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.minimize",
       "title": "Intl.Locale.prototype.minimize ( )",
       "level": 3,
-      "number": "15.3.9"
+      "number": "15.3.10"
     },
     {
       "id": "sec-Intl.Locale.prototype.numberingSystem",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numberingSystem",
       "title": "get Intl.Locale.prototype.numberingSystem",
       "level": 3,
-      "number": "15.3.10"
+      "number": "15.3.11"
     },
     {
       "id": "sec-Intl.Locale.prototype.numeric",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.numeric",
       "title": "get Intl.Locale.prototype.numeric",
       "level": 3,
-      "number": "15.3.11"
+      "number": "15.3.12"
     },
     {
       "id": "sec-Intl.Locale.prototype.region",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.region",
       "title": "get Intl.Locale.prototype.region",
       "level": 3,
-      "number": "15.3.12"
+      "number": "15.3.13"
     },
     {
       "id": "sec-Intl.Locale.prototype.script",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.script",
       "title": "get Intl.Locale.prototype.script",
       "level": 3,
-      "number": "15.3.13"
+      "number": "15.3.14"
     },
     {
       "id": "sec-Intl.Locale.prototype.toString",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.toString",
       "title": "Intl.Locale.prototype.toString ( )",
       "level": 3,
-      "number": "15.3.14"
+      "number": "15.3.15"
+    },
+    {
+      "id": "sec-Intl.Locale.prototype.getCalendars",
+      "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.getCalendars",
+      "title": "Intl.Locale.prototype.getCalendars ( )",
+      "level": 3,
+      "number": "15.3.16"
+    },
+    {
+      "id": "sec-Intl.Locale.prototype.getCollations",
+      "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.getCollations",
+      "title": "Intl.Locale.prototype.getCollations ( )",
+      "level": 3,
+      "number": "15.3.17"
+    },
+    {
+      "id": "sec-Intl.Locale.prototype.getHourCycles",
+      "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.getHourCycles",
+      "title": "Intl.Locale.prototype.getHourCycles ( )",
+      "level": 3,
+      "number": "15.3.18"
+    },
+    {
+      "id": "sec-Intl.Locale.prototype.getNumberingSystems",
+      "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.getNumberingSystems",
+      "title": "Intl.Locale.prototype.getNumberingSystems ( )",
+      "level": 3,
+      "number": "15.3.19"
+    },
+    {
+      "id": "sec-Intl.Locale.prototype.getTimeZones",
+      "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.getTimeZones",
+      "title": "Intl.Locale.prototype.getTimeZones ( )",
+      "level": 3,
+      "number": "15.3.20"
+    },
+    {
+      "id": "sec-Intl.Locale.prototype.getTextInfo",
+      "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.getTextInfo",
+      "title": "Intl.Locale.prototype.getTextInfo ( )",
+      "level": 3,
+      "number": "15.3.21"
+    },
+    {
+      "id": "sec-Intl.Locale.prototype.getWeekInfo",
+      "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.getWeekInfo",
+      "title": "Intl.Locale.prototype.getWeekInfo ( )",
+      "level": 3,
+      "number": "15.3.22"
     },
     {
       "id": "sec-Intl.Locale.prototype.variants",
       "href": "https://tc39.es/ecma402/#sec-Intl.Locale.prototype.variants",
       "title": "get Intl.Locale.prototype.variants",
       "level": 3,
-      "number": "15.3.15"
+      "number": "15.3.23"
     },
     {
       "id": "sec-intl.locale.prototype-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma402/#sec-intl.locale.prototype-%25symbol.tostringtag%25",
       "title": "Intl.Locale.prototype [ %Symbol.toStringTag% ]",
       "level": 3,
-      "number": "15.3.16"
+      "number": "15.3.24"
     },
     {
       "id": "sec-properties-of-intl-locale-instances",
@@ -1620,6 +1676,90 @@
       "title": "GetLocaleVariants ( locale )",
       "level": 3,
       "number": "15.5.5"
+    },
+    {
+      "id": "sec-unicodeextensionvalue",
+      "href": "https://tc39.es/ecma402/#sec-unicodeextensionvalue",
+      "title": "UnicodeExtensionValue ( locale, key )",
+      "level": 3,
+      "number": "15.5.6"
+    },
+    {
+      "id": "sec-canonicalunicodesubdivision",
+      "href": "https://tc39.es/ecma402/#sec-canonicalunicodesubdivision",
+      "title": "CanonicalUnicodeSubdivision ( locale, key )",
+      "level": 3,
+      "number": "15.5.7"
+    },
+    {
+      "id": "sec-regionpreference",
+      "href": "https://tc39.es/ecma402/#sec-regionpreference",
+      "title": "RegionPreference ( locale )",
+      "level": 3,
+      "number": "15.5.8"
+    },
+    {
+      "id": "sec-calendarsoflocale",
+      "href": "https://tc39.es/ecma402/#sec-calendarsoflocale",
+      "title": "CalendarsOfLocale ( loc )",
+      "level": 3,
+      "number": "15.5.9"
+    },
+    {
+      "id": "sec-collationsoflocale",
+      "href": "https://tc39.es/ecma402/#sec-collationsoflocale",
+      "title": "CollationsOfLocale ( loc )",
+      "level": 3,
+      "number": "15.5.10"
+    },
+    {
+      "id": "sec-hourcyclesoflocale",
+      "href": "https://tc39.es/ecma402/#sec-hourcyclesoflocale",
+      "title": "HourCyclesOfLocale ( loc )",
+      "level": 3,
+      "number": "15.5.11"
+    },
+    {
+      "id": "sec-numberingsystemsoflocale",
+      "href": "https://tc39.es/ecma402/#sec-numberingsystemsoflocale",
+      "title": "NumberingSystemsOfLocale ( loc )",
+      "level": 3,
+      "number": "15.5.12"
+    },
+    {
+      "id": "sec-timezonesoflocale",
+      "href": "https://tc39.es/ecma402/#sec-timezonesoflocale",
+      "title": "TimeZonesOfLocale ( loc )",
+      "level": 3,
+      "number": "15.5.13"
+    },
+    {
+      "id": "sec-textdirectionoflocale",
+      "href": "https://tc39.es/ecma402/#sec-textdirectionoflocale",
+      "title": "TextDirectionOfLocale ( loc )",
+      "level": 3,
+      "number": "15.5.14"
+    },
+    {
+      "id": "sec-weekdaytouvalue",
+      "href": "https://tc39.es/ecma402/#sec-weekdaytouvalue",
+      "title": "WeekdayToUValue ( fw )",
+      "level": 3,
+      "number": "15.5.15"
+    },
+    {
+      "id": "sec-weekdayuvaluetonumber",
+      "href": "https://tc39.es/ecma402/#sec-weekdayuvaluetonumber",
+      "title": "WeekdayUValueToNumber ( fw )",
+      "level": 3,
+      "number": "15.5.16"
+    },
+    {
+      "id": "sec-weekinfooflocale",
+      "href": "https://tc39.es/ecma402/#sec-weekinfooflocale",
+      "title": "WeekInfoOfLocale ( loc )",
+      "level": 3,
+      "number": "15.5.17"
     },
     {
       "id": "numberformat-objects",
