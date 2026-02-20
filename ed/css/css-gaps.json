@@ -131,38 +131,6 @@
       ]
     },
     {
-      "name": "row-rule-edge-inset-start",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-edge-inset-start",
-      "value": "<length-percentage>",
-      "initial": "0",
-      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
-      "inherited": "no",
-      "percentages": "refer to the crossing gap width",
-      "computedValue": "as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
-      "styleDeclaration": [
-        "row-rule-edge-inset-start",
-        "rowRuleEdgeInsetStart"
-      ]
-    },
-    {
-      "name": "row-rule-edge-inset-end",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-edge-inset-end",
-      "value": "<length-percentage>",
-      "initial": "0",
-      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
-      "inherited": "no",
-      "percentages": "refer to the crossing gap width",
-      "computedValue": "as specified",
-      "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
-      "styleDeclaration": [
-        "row-rule-edge-inset-end",
-        "rowRuleEdgeInsetEnd"
-      ]
-    },
-    {
       "name": "column-rule-interior-inset-start",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-interior-inset-start",
       "value": "<length-percentage>",
@@ -192,6 +160,38 @@
       "styleDeclaration": [
         "column-rule-interior-inset-end",
         "columnRuleInteriorInsetEnd"
+      ]
+    },
+    {
+      "name": "row-rule-edge-inset-start",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-edge-inset-start",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
+      "inherited": "no",
+      "percentages": "refer to the crossing gap width",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "row-rule-edge-inset-start",
+        "rowRuleEdgeInsetStart"
+      ]
+    },
+    {
+      "name": "row-rule-edge-inset-end",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-edge-inset-end",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
+      "inherited": "no",
+      "percentages": "refer to the crossing gap width",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "row-rule-edge-inset-end",
+        "rowRuleEdgeInsetEnd"
       ]
     },
     {
@@ -227,11 +227,107 @@
       ]
     },
     {
+      "name": "column-rule-inset-start",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-start",
+      "value": "<length-percentage>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "column-rule-inset-start",
+        "columnRuleInsetStart"
+      ]
+    },
+    {
+      "name": "column-rule-inset-end",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-end",
+      "value": "<length-percentage>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "column-rule-inset-end",
+        "columnRuleInsetEnd"
+      ]
+    },
+    {
+      "name": "row-rule-inset-start",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-start",
+      "value": "<length-percentage>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "row-rule-inset-start",
+        "rowRuleInsetStart"
+      ]
+    },
+    {
+      "name": "row-rule-inset-end",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-end",
+      "value": "<length-percentage>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "row-rule-inset-end",
+        "rowRuleInsetEnd"
+      ]
+    },
+    {
+      "name": "rule-inset-start",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-inset-start",
+      "value": "<'column-rule-inset-start'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-inset-start and row-rule-inset-start",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-inset-start",
+        "ruleInsetStart"
+      ]
+    },
+    {
+      "name": "rule-inset-end",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-inset-end",
+      "value": "<'column-rule-inset-end'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-inset-end and row-rule-inset-end",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-inset-end",
+        "ruleInsetEnd"
+      ]
+    },
+    {
       "name": "column-rule-edge-inset",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-edge-inset",
       "value": "<length-percentage> [ <length-percentage> ]?",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -243,27 +339,11 @@
       ]
     },
     {
-      "name": "row-rule-edge-inset",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-edge-inset",
-      "value": "<length-percentage> [ <length-percentage> ]?",
-      "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "row-rule-edge-inset",
-        "rowRuleEdgeInset"
-      ]
-    },
-    {
       "name": "column-rule-interior-inset",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-interior-inset",
       "value": "<length-percentage> [ <length-percentage> ]?",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -275,11 +355,27 @@
       ]
     },
     {
+      "name": "row-rule-edge-inset",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-edge-inset",
+      "value": "<length-percentage> [ <length-percentage> ]?",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "row-rule-edge-inset",
+        "rowRuleEdgeInset"
+      ]
+    },
+    {
       "name": "row-rule-interior-inset",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-interior-inset",
       "value": "<length-percentage> [ <length-percentage> ]?",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -325,7 +421,7 @@
     {
       "name": "column-rule-inset",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset",
-      "value": "<length-percentage> <length-percentage>? [/ <length-percentage> <length-percentage>?]?",
+      "value": "<'column-rule-edge-inset'> [ / <'column-rule-interior-inset'> ]?",
       "initial": "see individual properties",
       "appliesTo": "Same as column-rule-edge-inset, column-rule-interior-inset, row-rule-edge-inset, and row-rule-interior-inset",
       "inherited": "see individual properties",
@@ -341,7 +437,7 @@
     {
       "name": "row-rule-inset",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset",
-      "value": "<length-percentage> <length-percentage>? [/ <length-percentage> <length-percentage>?]?",
+      "value": "<'column-rule-edge-inset'> [ / <'column-rule-interior-inset'> ]?",
       "initial": "see individual properties",
       "appliesTo": "Same as column-rule-edge-inset, column-rule-interior-inset, row-rule-edge-inset, and row-rule-interior-inset",
       "inherited": "see individual properties",
@@ -368,102 +464,6 @@
       "styleDeclaration": [
         "rule-inset",
         "ruleInset"
-      ]
-    },
-    {
-      "name": "column-rule-inset-start",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-start",
-      "value": "<length-percentage>",
-      "initial": "see individual properties",
-      "appliesTo": "column-rule-edge-inset-start and column-rule-interior-inset-start for column-rule-inset-start, row-rule-edge-inset-start and row-rule-interior-inset-start for row-rule-inset-start",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "column-rule-inset-start",
-        "columnRuleInsetStart"
-      ]
-    },
-    {
-      "name": "row-rule-inset-start",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-start",
-      "value": "<length-percentage>",
-      "initial": "see individual properties",
-      "appliesTo": "column-rule-edge-inset-start and column-rule-interior-inset-start for column-rule-inset-start, row-rule-edge-inset-start and row-rule-interior-inset-start for row-rule-inset-start",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "row-rule-inset-start",
-        "rowRuleInsetStart"
-      ]
-    },
-    {
-      "name": "column-rule-inset-end",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-end",
-      "value": "<length-percentage>",
-      "initial": "see individual properties",
-      "appliesTo": "column-rule-edge-inset-end and column-rule-interior-inset-end for column-rule-inset-end, row-rule-edge-inset-end and row-rule-interior-inset-end for row-rule-inset-end",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "column-rule-inset-end",
-        "columnRuleInsetEnd"
-      ]
-    },
-    {
-      "name": "row-rule-inset-end",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-end",
-      "value": "<length-percentage>",
-      "initial": "see individual properties",
-      "appliesTo": "column-rule-edge-inset-end and column-rule-interior-inset-end for column-rule-inset-end, row-rule-edge-inset-end and row-rule-interior-inset-end for row-rule-inset-end",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "row-rule-inset-end",
-        "rowRuleInsetEnd"
-      ]
-    },
-    {
-      "name": "rule-inset-start",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-inset-start",
-      "value": "<'column-rule-inset-start'>",
-      "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-inset-start and row-rule-inset-start",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "rule-inset-start",
-        "ruleInsetStart"
-      ]
-    },
-    {
-      "name": "rule-inset-end",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-inset-end",
-      "value": "<'column-rule-inset-end'>",
-      "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-inset-end and row-rule-inset-end",
-      "inherited": "see individual properties",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "rule-inset-end",
-        "ruleInsetEnd"
       ]
     },
     {
@@ -571,6 +571,22 @@
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "row-over-column",
+          "prose": "Row-direction decorations are painted above column-direction decorations.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-rule-overlap-row-over-column",
+          "type": "value",
+          "value": "row-over-column"
+        },
+        {
+          "name": "column-over-row",
+          "prose": "Column-direction decorations are painted above row-direction decorations.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-rule-overlap-column-over-row",
+          "type": "value",
+          "value": "column-over-row"
+        }
+      ],
       "styleDeclaration": [
         "rule-overlap",
         "ruleOverlap"
@@ -586,16 +602,7 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animationType": "repeatable list, see § 4.4.1 Interpolation behavior.",
-      "values": [
-        {
-          "name": "<color>",
-          "prose": "Sets the color of gap decorations.",
-          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-color-color",
-          "type": "value",
-          "value": "<color>"
-        }
-      ],
+      "animationType": "repeatable list, see § 4.6 Interpolation of list values.",
       "styleDeclaration": [
         "column-rule-color",
         "columnRuleColor"
@@ -611,10 +618,26 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animationType": "repeatable list, see § 4.4.1 Interpolation behavior.",
+      "animationType": "repeatable list, see § 4.6 Interpolation of list values.",
       "styleDeclaration": [
         "row-rule-color",
         "rowRuleColor"
+      ]
+    },
+    {
+      "name": "rule-color",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-color",
+      "value": "<'column-rule-color'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-color and row-rule-color",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-color",
+        "ruleColor"
       ]
     },
     {
@@ -650,6 +673,22 @@
       ]
     },
     {
+      "name": "rule-style",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-style",
+      "value": "<'column-rule-style'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-style and row-rule-style",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-style",
+        "ruleStyle"
+      ]
+    },
+    {
       "name": "column-rule-width",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-width",
       "value": "<line-width-list> | <auto-line-width-list>",
@@ -659,7 +698,7 @@
       "percentages": "n/a",
       "computedValue": "list of absolute lengths, snapped as a border width",
       "canonicalOrder": "per grammar",
-      "animationType": "repeatable list, see § 4.4.1 Interpolation behavior.",
+      "animationType": "repeatable list, see § 4.6 Interpolation of list values.",
       "styleDeclaration": [
         "column-rule-width",
         "columnRuleWidth"
@@ -675,10 +714,26 @@
       "percentages": "n/a",
       "computedValue": "list of absolute lengths, snapped as a border width",
       "canonicalOrder": "per grammar",
-      "animationType": "repeatable list, see § 4.4.1 Interpolation behavior.",
+      "animationType": "repeatable list, see § 4.6 Interpolation of list values.",
       "styleDeclaration": [
         "row-rule-width",
         "rowRuleWidth"
+      ]
+    },
+    {
+      "name": "rule-width",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-width",
+      "value": "<'column-rule-width'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-width and row-rule-width",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-width",
+        "ruleWidth"
       ]
     },
     {
@@ -711,54 +766,6 @@
       "styleDeclaration": [
         "row-rule",
         "rowRule"
-      ]
-    },
-    {
-      "name": "rule-color",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-color",
-      "value": "<'column-rule-color'>",
-      "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-color and row-rule-color",
-      "inherited": "no",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "rule-color",
-        "ruleColor"
-      ]
-    },
-    {
-      "name": "rule-style",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-style",
-      "value": "<'column-rule-style'>",
-      "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-style and row-rule-style",
-      "inherited": "no",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "rule-style",
-        "ruleStyle"
-      ]
-    },
-    {
-      "name": "rule-width",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-width",
-      "value": "<'column-rule-width'>",
-      "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-width and row-rule-width",
-      "inherited": "no",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "rule-width",
-        "ruleWidth"
       ]
     },
     {
@@ -808,7 +815,16 @@
           "name": "repeat()",
           "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
-          "type": "function"
+          "type": "function",
+          "values": [
+            {
+              "name": "auto",
+              "prose": "Specfies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "href": "https://drafts.csswg.org/css-gaps-1/#valdef-repeat-auto",
+              "type": "value",
+              "value": "auto"
+            }
+          ]
         }
       ]
     },
@@ -822,7 +838,16 @@
           "name": "repeat()",
           "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
-          "type": "function"
+          "type": "function",
+          "values": [
+            {
+              "name": "auto",
+              "prose": "Specfies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "href": "https://drafts.csswg.org/css-gaps-1/#valdef-repeat-auto",
+              "type": "value",
+              "value": "auto"
+            }
+          ]
         }
       ]
     },
@@ -854,7 +879,16 @@
           "name": "repeat()",
           "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
-          "type": "function"
+          "type": "function",
+          "values": [
+            {
+              "name": "auto",
+              "prose": "Specfies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "href": "https://drafts.csswg.org/css-gaps-1/#valdef-repeat-auto",
+              "type": "value",
+              "value": "auto"
+            }
+          ]
         }
       ]
     },
@@ -868,7 +902,16 @@
           "name": "repeat()",
           "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
-          "type": "function"
+          "type": "function",
+          "values": [
+            {
+              "name": "auto",
+              "prose": "Specfies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "href": "https://drafts.csswg.org/css-gaps-1/#valdef-repeat-auto",
+              "type": "value",
+              "value": "auto"
+            }
+          ]
         }
       ]
     },
@@ -900,7 +943,16 @@
           "name": "repeat()",
           "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
-          "type": "function"
+          "type": "function",
+          "values": [
+            {
+              "name": "auto",
+              "prose": "Specfies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "href": "https://drafts.csswg.org/css-gaps-1/#valdef-repeat-auto",
+              "type": "value",
+              "value": "auto"
+            }
+          ]
         }
       ]
     },
@@ -914,7 +966,16 @@
           "name": "repeat()",
           "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://drafts.csswg.org/css-gaps-1/#funcdef-repeat-line-color-repeat",
-          "type": "function"
+          "type": "function",
+          "values": [
+            {
+              "name": "auto",
+              "prose": "Specfies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "href": "https://drafts.csswg.org/css-gaps-1/#valdef-repeat-auto",
+              "type": "value",
+              "value": "auto"
+            }
+          ]
         }
       ]
     },

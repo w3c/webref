@@ -6191,7 +6191,7 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animationType": "repeatable list, see § 4.4.1 Interpolation behavior.",
+      "animationType": "repeatable list, see § 4.6 Interpolation of list values.",
       "styleDeclaration": [
         "column-rule-color",
         "columnRuleColor"
@@ -6203,7 +6203,7 @@
       "name": "column-rule-edge-inset",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-edge-inset",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -6264,14 +6264,14 @@
         "column-rule-inset",
         "columnRuleInset"
       ],
-      "syntax": "<length-percentage> <length-percentage>? [/ <length-percentage> <length-percentage>?]?",
+      "syntax": "<'column-rule-edge-inset'> [ / <'column-rule-interior-inset'> ]?",
       "extended": []
     },
     {
       "name": "column-rule-inset-end",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-end",
       "initial": "see individual properties",
-      "appliesTo": "column-rule-edge-inset-end and column-rule-interior-inset-end for column-rule-inset-end, row-rule-edge-inset-end and row-rule-interior-inset-end for row-rule-inset-end",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -6288,7 +6288,7 @@
       "name": "column-rule-inset-start",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-start",
       "initial": "see individual properties",
-      "appliesTo": "column-rule-edge-inset-start and column-rule-interior-inset-start for column-rule-inset-start, row-rule-edge-inset-start and row-rule-interior-inset-start for row-rule-inset-start",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -6305,7 +6305,7 @@
       "name": "column-rule-interior-inset",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-interior-inset",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -6395,7 +6395,7 @@
       "percentages": "n/a",
       "computedValue": "list of absolute lengths, snapped as a border width",
       "canonicalOrder": "per grammar",
-      "animationType": "repeatable list, see § 4.4.1 Interpolation behavior.",
+      "animationType": "repeatable list, see § 4.6 Interpolation of list values.",
       "styleDeclaration": [
         "column-rule-width",
         "columnRuleWidth"
@@ -12276,7 +12276,7 @@
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animationType": "repeatable list, see § 4.4.1 Interpolation behavior.",
+      "animationType": "repeatable list, see § 4.6 Interpolation of list values.",
       "styleDeclaration": [
         "row-rule-color",
         "rowRuleColor"
@@ -12288,7 +12288,7 @@
       "name": "row-rule-edge-inset",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-edge-inset",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -12349,14 +12349,14 @@
         "row-rule-inset",
         "rowRuleInset"
       ],
-      "syntax": "<length-percentage> <length-percentage>? [/ <length-percentage> <length-percentage>?]?",
+      "syntax": "<'column-rule-edge-inset'> [ / <'column-rule-interior-inset'> ]?",
       "extended": []
     },
     {
       "name": "row-rule-inset-end",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-end",
       "initial": "see individual properties",
-      "appliesTo": "column-rule-edge-inset-end and column-rule-interior-inset-end for column-rule-inset-end, row-rule-edge-inset-end and row-rule-interior-inset-end for row-rule-inset-end",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -12373,7 +12373,7 @@
       "name": "row-rule-inset-start",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-start",
       "initial": "see individual properties",
-      "appliesTo": "column-rule-edge-inset-start and column-rule-interior-inset-start for column-rule-inset-start, row-rule-edge-inset-start and row-rule-interior-inset-start for row-rule-inset-start",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -12390,7 +12390,7 @@
       "name": "row-rule-interior-inset",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-interior-inset",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -12480,7 +12480,7 @@
       "percentages": "n/a",
       "computedValue": "list of absolute lengths, snapped as a border width",
       "canonicalOrder": "per grammar",
-      "animationType": "repeatable list, see § 4.4.1 Interpolation behavior.",
+      "animationType": "repeatable list, see § 4.6 Interpolation of list values.",
       "styleDeclaration": [
         "row-rule-width",
         "rowRuleWidth"
