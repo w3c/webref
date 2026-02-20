@@ -145,8 +145,45 @@
           "name": "display-mode",
           "href": "https://www.w3.org/TR/mediaqueries-5/#descdef-media-display-mode",
           "for": "@media",
-          "value": "fullscreen | standalone | minimal-ui | browser",
-          "type": "discrete"
+          "value": "fullscreen | standalone | minimal-ui | browser | picture-in-picture",
+          "type": "discrete",
+          "values": [
+            {
+              "name": "fullscreen",
+              "prose": "The browsing context is displayed with browser UI elements hidden and takes up the entirety of the available display area. The fullscreen context may have been caused by the fullscreen display mode in the application manifest, by the requestFullscreen() method of the Fullscreen API, or through some other means (such as the user manually activating fullscreen mode using the user agent’s built-in controls). Corresponds to the fullscreen display mode.",
+              "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-display-mode-fullscreen",
+              "type": "value",
+              "value": "fullscreen"
+            },
+            {
+              "name": "standalone",
+              "prose": "The standalone display mode is in use. Only applicable in an application context.",
+              "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-display-mode-standalone",
+              "type": "value",
+              "value": "standalone"
+            },
+            {
+              "name": "minimal-ui",
+              "prose": "The minimal-ui display mode is in use. Only applicable in an application context.",
+              "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-display-mode-minimal-ui",
+              "type": "value",
+              "value": "minimal-ui"
+            },
+            {
+              "name": "browser",
+              "prose": "The browsing context is displayed using the platform-specific convention for opening hyperlinks in the user agent (e.g., in a browser tab or web browser window with controls such as an address bar). This should be used for non-application contexts where no other display mode is appropriate. Corresponds to the browser display mode.",
+              "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-display-mode-browser",
+              "type": "value",
+              "value": "browser"
+            },
+            {
+              "name": "picture-in-picture",
+              "prose": "This mode allows users to continue consuming media while they interact with other sites or applications on their device. The browsing context is displayed in a floating and always-on-top window. A user agent may include other platform specific UI elements, such as \"back-to-tab\" and \"site information\" buttons or whatever is customary on the platform and user agent.",
+              "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-display-mode-picture-in-picture",
+              "type": "value",
+              "value": "picture-in-picture"
+            }
+          ]
         },
         {
           "name": "resolution",
@@ -291,7 +328,7 @@
             },
             {
               "name": "p3",
-              "prose": "The UA and output device can support approximately the gamut specified by the DCI P3 Color Space or more.",
+              "prose": "The UA and output device can support approximately the gamut specified by the Display P3 [Display-P3] Color Space or more.",
               "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-color-gamut-p3",
               "type": "value",
               "value": "p3"
@@ -344,7 +381,7 @@
             },
             {
               "name": "inverted",
-              "prose": "All pixels within the displayed area have been inverted. This value must not match if the user agent has done some kind of content aware inversion such as one that preserves the images (except through its UA style sheet, see below).",
+              "prose": "All pixels within the displayed area have been inverted. This value must not match if the user agent has done some kind of content aware inversion such as one that preserves the images.",
               "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-inverted-colors-inverted",
               "type": "value",
               "value": "inverted"
@@ -427,14 +464,14 @@
           "values": [
             {
               "name": "none",
-              "prose": "The user agent does not have any obviously discoverable navigation controls, and in particular none that cause the user agent to move back one page in the joint session history.",
+              "prose": "The user agent does not have any obviously discoverable navigation controls, and in particular none that cause the user agent to move back to the page’s previous session history entry.",
               "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-nav-controls-none",
               "type": "value",
               "value": "none"
             },
             {
               "name": "back",
-              "prose": "The user agent provides navigation controls, including at least an obviously discoverable control causing the user agent to move back one page in the joint session history (typically, a “back” button).",
+              "prose": "The user agent provides navigation controls, including at least an obviously discoverable control causing the user agent to move back to the page’s previous session history entry (typically, a “back” button).",
               "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-nav-controls-back",
               "type": "value",
               "value": "back"
@@ -501,7 +538,7 @@
             },
             {
               "name": "reduce",
-              "prose": "Indicates that user has notified the system that they prefer an interface that minimizes the amount of movement or animation, preferably to the point where all non-essential movement is removed.",
+              "prose": "Indicates that user has notified the system that they prefer an interface that removes or replaces the types of motion-based animation that either trigger discomfort for those with vestibular motion sensitivity, or distraction for those with attention deficits.",
               "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-prefers-reduced-motion-reduce",
               "type": "value",
               "value": "reduce"
@@ -561,7 +598,7 @@
             },
             {
               "name": "custom",
-              "prose": "Indicates that the user has indicated wanting a specific set of colors to be used, but the contrast implied by these particular colors is such that neither more nor less match. A user calling for cyan text over a rust background is not—at least in terms of luminosity—expressing a need for particularly high or low contrast, but this is not a lack of a preference either.",
+              "prose": "Indicates that the user has indicated wanting a specific set of colors to be used, but the contrast implied by these particular colors is such that neither more nor less match. A user calling for cyan text over a rust background is not—​at least in terms of luminosity—​expressing a need for particularly high or low contrast, but this is not a lack of a preference either.",
               "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-prefers-contrast-custom",
               "type": "value",
               "value": "custom"
@@ -577,7 +614,7 @@
           "values": [
             {
               "name": "active",
-              "prose": "Indicates that forced colors mode is active: the user agent enforces a user-chosen limited color palette on the page, The UA will provide the color palette to authors through the CSS system color keywords. See CSS Color Adjust § 3 Forced Color Palettes for details. This does not necessarily indicate a preference for more contrast. The colors have been forcibly adjusted to match the preference of the user, but that preference can be for less or more contrast, or some other arrangement that is neither particularly low or high contrast. In addition to forced-colors: active, the user agent must also match one of prefers-contrast: more or prefers-contrast: less if it can determine that the forced color palette chosen by the user has a particularly high or low contrast, and must make prefers-contrast: custom match otherwise. Similarly, if the forced color palette chosen by the user fits within one of the color schemes described by prefers-color-scheme, the corresponding value must also match.",
+              "prose": "Indicates that forced colors mode is active: the user agent enforces a user-chosen limited color palette on the page, The UA will provide the color palette to authors through the CSS system color keywords. See CSS Color Adjustment 1 § 3 Forced Color Palettes for details. This does not necessarily indicate a preference for more contrast. The colors have been forcibly adjusted to match the preference of the user, but that preference can be for less or more contrast, or some other arrangement that is neither particularly low or high contrast. In addition to forced-colors: active, the user agent must also match one of prefers-contrast: more or prefers-contrast: less if it can determine that the forced color palette chosen by the user has a particularly high or low contrast, and must make prefers-contrast: custom match otherwise. Similarly, if the forced color palette chosen by the user fits within one of the color schemes described by prefers-color-scheme, the corresponding value must also match.",
               "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-forced-colors-active",
               "type": "value",
               "value": "active"
@@ -866,7 +903,7 @@
       "name": "<general-enclosed>",
       "href": "https://www.w3.org/TR/mediaqueries-5/#typedef-general-enclosed",
       "type": "type",
-      "value": "[ <function-token> <any-value> ) ] | ( <ident> <any-value> )"
+      "value": "[ <function-token> <any-value>? ) ] | [ ( <any-value>? ) ]"
     },
     {
       "name": "<mq-boolean>",

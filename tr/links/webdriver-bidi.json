@@ -10,6 +10,7 @@
       "https://dom.spec.whatwg.org/": {},
       "https://drafts.css-houdini.org/css-paint-api-1/": {},
       "https://drafts.csswg.org/css-color-adjust-1/": {},
+      "https://drafts.csswg.org/css-overflow-3/": {},
       "https://drafts.csswg.org/css-values-3/": {},
       "https://drafts.csswg.org/css2/": {},
       "https://drafts.csswg.org/cssom-view-1/": {
@@ -173,6 +174,12 @@
           "set-emulated-forced-colors-theme-data",
           "forced-colors-mode",
           "enumdef-forcedcolorsmodeautomationtheme"
+        ]
+      },
+      "https://drafts.csswg.org/css-overflow-3/": {
+        "anchors": [
+          "classic-scrollbars",
+          "overlay-scrollbars"
         ]
       },
       "https://drafts.csswg.org/css-values-3/": {
@@ -345,10 +352,10 @@
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
-          "top-level-traversable",
-          "node-navigable",
           "navigables",
           "nav-top",
+          "top-level-traversable",
+          "node-navigable",
           "nav-window",
           "child-navigable",
           "nav-parent",
@@ -489,31 +496,31 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "ordered-map",
-          "list",
-          "ordered-set",
           "struct",
+          "struct-item",
+          "map-exists",
+          "ordered-set",
+          "set-append",
+          "list-iterate",
+          "list-append",
+          "list",
           "list-contain",
           "iteration-continue",
-          "list-iterate",
           "set-intersection",
           "list-empty",
-          "set-append",
           "iteration-break",
           "implementation-defined",
           "assert",
           "scalar-value-string",
           "parse-a-json-string-to-an-infra-value",
-          "map-exists",
           "serialize-an-infra-value-to-json-bytes",
           "list-remove",
           "map-getting-the-values",
-          "struct-item",
           "map-remove",
           "map-clear",
           "convert-a-json-derived-javascript-value-to-an-infra-value",
           "set-union",
           "set-create",
-          "list-append",
           "set-difference",
           "map-sort-in-ascending-order",
           "list-clone",
@@ -559,8 +566,8 @@
           "sec-code-realms",
           "sec-time-values-and-time-range",
           "sec-undefined-value",
-          "current-realm",
           "sec-systemtimezoneidentifier",
+          "current-realm",
           "sec-istimezoneoffsetstring",
           "sec-availablenamedtimezoneidentifiers",
           "sec-null-value",
@@ -601,7 +608,6 @@
       },
       "https://tc39.es/ecma402/": {
         "anchors": [
-          "sec-defaultlocale",
           "sec-isstructurallyvalidlanguagetag"
         ]
       },
@@ -637,21 +643,21 @@
       },
       "https://w3c.github.io/webdriver/": {
         "anchors": [
+          "errors",
+          "dfn-error-code",
+          "dfn-invalid-argument",
+          "dfn-try",
           "dfn-local-ends",
           "dfn-remote-ends",
           "dfn-sessions",
           "dfn-active-sessions",
           "dfn-remote-end-steps",
-          "dfn-error-code",
           "dfn-success",
-          "errors",
-          "dfn-invalid-argument",
           "dfn-session-id",
           "dfn-intermediary-nodes",
           "dfn-endpoint-node",
           "dfn-invalid-session-id",
           "dfn-unknown-command",
-          "dfn-try",
           "dfn-webdriver-new-session-algorithms",
           "dfn-getting-properties",
           "dfn-set-a-property",

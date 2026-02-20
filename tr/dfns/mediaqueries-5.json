@@ -1263,35 +1263,15 @@
       "links": []
     },
     {
-      "id": "display-mode",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#display-mode",
-      "linkingText": [
-        "display mode"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "display-modes",
-        "href": "https://www.w3.org/TR/mediaqueries-5/#display-modes",
-        "title": "Display Modes: the display-mode media feature",
-        "number": "4.9"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "display-mode-fullscreen",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#display-mode-fullscreen",
+      "id": "valdef-media-display-mode-fullscreen",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-display-mode-fullscreen",
       "linkingText": [
         "fullscreen"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "value",
       "for": [
-        "display mode"
+        "@media/display-mode"
       ],
       "access": "public",
       "informative": false,
@@ -1305,15 +1285,15 @@
       "links": []
     },
     {
-      "id": "display-mode-standalone",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#display-mode-standalone",
+      "id": "valdef-media-display-mode-standalone",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-display-mode-standalone",
       "linkingText": [
         "standalone"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "value",
       "for": [
-        "display mode"
+        "@media/display-mode"
       ],
       "access": "public",
       "informative": false,
@@ -1327,15 +1307,15 @@
       "links": []
     },
     {
-      "id": "display-mode-minimal-ui",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#display-mode-minimal-ui",
+      "id": "valdef-media-display-mode-minimal-ui",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-display-mode-minimal-ui",
       "linkingText": [
         "minimal-ui"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "value",
       "for": [
-        "display mode"
+        "@media/display-mode"
       ],
       "access": "public",
       "informative": false,
@@ -1349,15 +1329,37 @@
       "links": []
     },
     {
-      "id": "display-mode-browser",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#display-mode-browser",
+      "id": "valdef-media-display-mode-browser",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-display-mode-browser",
       "linkingText": [
         "browser"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "value",
       "for": [
-        "display mode"
+        "@media/display-mode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "display-modes",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#display-modes",
+        "title": "Display Modes: the display-mode media feature",
+        "number": "4.9"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-media-display-mode-picture-in-picture",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#valdef-media-display-mode-picture-in-picture",
+      "linkingText": [
+        "picture-in-picture"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@media/display-mode"
       ],
       "access": "public",
       "informative": false,
@@ -2565,6 +2567,86 @@
       "links": []
     },
     {
+      "id": "typedefdef-custommediaquery",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#typedefdef-custommediaquery",
+      "linkingText": [
+        "CustomMediaQuery"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "custom-mq-cssom",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#custom-mq-cssom",
+        "title": "11. CSSOM"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "csscustommediarule",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#csscustommediarule",
+      "linkingText": [
+        "CSSCustomMediaRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "custom-mq-cssom",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#custom-mq-cssom",
+        "title": "11. CSSOM"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-csscustommediarule-name",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-csscustommediarule-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSCustomMediaRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "custom-mq-cssom",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#custom-mq-cssom",
+        "title": "11. CSSOM"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-csscustommediarule-query",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-csscustommediarule-query",
+      "linkingText": [
+        "query"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSCustomMediaRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "custom-mq-cssom",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#custom-mq-cssom",
+        "title": "11. CSSOM"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "descdef-media-prefers-reduced-motion",
       "href": "https://www.w3.org/TR/mediaqueries-5/#descdef-media-prefers-reduced-motion",
       "linkingText": [
@@ -2581,7 +2663,7 @@
         "id": "prefers-reduced-motion",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-motion",
         "title": "Detecting the desire for less motion on the page: the prefers-reduced-motion feature",
-        "number": "11.1"
+        "number": "12.1"
       },
       "definedIn": "table",
       "links": []
@@ -2603,7 +2685,7 @@
         "id": "prefers-reduced-motion",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-motion",
         "title": "Detecting the desire for less motion on the page: the prefers-reduced-motion feature",
-        "number": "11.1"
+        "number": "12.1"
       },
       "definedIn": "dt",
       "links": []
@@ -2625,7 +2707,7 @@
         "id": "prefers-reduced-motion",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-motion",
         "title": "Detecting the desire for less motion on the page: the prefers-reduced-motion feature",
-        "number": "11.1"
+        "number": "12.1"
       },
       "definedIn": "dt",
       "links": []
@@ -2647,7 +2729,7 @@
         "id": "prefers-reduced-transparency",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-transparency",
         "title": "Detecting the desire for reduced transparency on the page: the prefers-reduced-transparency feature",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "table",
       "links": []
@@ -2669,7 +2751,7 @@
         "id": "prefers-reduced-transparency",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-transparency",
         "title": "Detecting the desire for reduced transparency on the page: the prefers-reduced-transparency feature",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "dt",
       "links": []
@@ -2691,7 +2773,7 @@
         "id": "prefers-reduced-transparency",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-transparency",
         "title": "Detecting the desire for reduced transparency on the page: the prefers-reduced-transparency feature",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "dt",
       "links": []
@@ -2713,7 +2795,7 @@
         "id": "prefers-contrast",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-contrast",
         "title": "Detecting the desire for increased or decreased color contrast from elements on the page: the prefers-contrast feature",
-        "number": "11.3"
+        "number": "12.3"
       },
       "definedIn": "table",
       "links": []
@@ -2735,7 +2817,7 @@
         "id": "prefers-contrast",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-contrast",
         "title": "Detecting the desire for increased or decreased color contrast from elements on the page: the prefers-contrast feature",
-        "number": "11.3"
+        "number": "12.3"
       },
       "definedIn": "dt",
       "links": []
@@ -2757,7 +2839,7 @@
         "id": "prefers-contrast",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-contrast",
         "title": "Detecting the desire for increased or decreased color contrast from elements on the page: the prefers-contrast feature",
-        "number": "11.3"
+        "number": "12.3"
       },
       "definedIn": "dt",
       "links": []
@@ -2779,7 +2861,7 @@
         "id": "prefers-contrast",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-contrast",
         "title": "Detecting the desire for increased or decreased color contrast from elements on the page: the prefers-contrast feature",
-        "number": "11.3"
+        "number": "12.3"
       },
       "definedIn": "dt",
       "links": []
@@ -2801,7 +2883,7 @@
         "id": "prefers-contrast",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-contrast",
         "title": "Detecting the desire for increased or decreased color contrast from elements on the page: the prefers-contrast feature",
-        "number": "11.3"
+        "number": "12.3"
       },
       "definedIn": "dt",
       "links": []
@@ -2823,7 +2905,7 @@
         "id": "forced-colors",
         "href": "https://www.w3.org/TR/mediaqueries-5/#forced-colors",
         "title": "Detecting Forced Colors Mode: the forced-colors feature",
-        "number": "11.4"
+        "number": "12.4"
       },
       "definedIn": "table",
       "links": []
@@ -2845,7 +2927,7 @@
         "id": "forced-colors",
         "href": "https://www.w3.org/TR/mediaqueries-5/#forced-colors",
         "title": "Detecting Forced Colors Mode: the forced-colors feature",
-        "number": "11.4"
+        "number": "12.4"
       },
       "definedIn": "dt",
       "links": []
@@ -2867,7 +2949,7 @@
         "id": "forced-colors",
         "href": "https://www.w3.org/TR/mediaqueries-5/#forced-colors",
         "title": "Detecting Forced Colors Mode: the forced-colors feature",
-        "number": "11.4"
+        "number": "12.4"
       },
       "definedIn": "dt",
       "links": []
@@ -2889,7 +2971,7 @@
         "id": "prefers-color-scheme",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-color-scheme",
         "title": "Detecting the desire for light or dark color schemes: the prefers-color-scheme feature",
-        "number": "11.5"
+        "number": "12.5"
       },
       "definedIn": "table",
       "links": []
@@ -2911,7 +2993,7 @@
         "id": "prefers-color-scheme",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-color-scheme",
         "title": "Detecting the desire for light or dark color schemes: the prefers-color-scheme feature",
-        "number": "11.5"
+        "number": "12.5"
       },
       "definedIn": "dt",
       "links": []
@@ -2933,7 +3015,7 @@
         "id": "prefers-color-scheme",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-color-scheme",
         "title": "Detecting the desire for light or dark color schemes: the prefers-color-scheme feature",
-        "number": "11.5"
+        "number": "12.5"
       },
       "definedIn": "dt",
       "links": []
@@ -2955,7 +3037,7 @@
         "id": "prefers-reduced-data",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-data",
         "title": "Detecting the desire for reduced data usage when loading a page: the prefers-reduced-data feature",
-        "number": "11.6"
+        "number": "12.6"
       },
       "definedIn": "table",
       "links": []
@@ -2977,7 +3059,7 @@
         "id": "prefers-reduced-data",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-data",
         "title": "Detecting the desire for reduced data usage when loading a page: the prefers-reduced-data feature",
-        "number": "11.6"
+        "number": "12.6"
       },
       "definedIn": "dt",
       "links": []
@@ -2999,9 +3081,479 @@
         "id": "prefers-reduced-data",
         "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-data",
         "title": "Detecting the desire for reduced data usage when loading a page: the prefers-reduced-data feature",
-        "number": "11.6"
+        "number": "12.6"
       },
       "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-navigator-preferences",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-navigator-preferences",
+      "linkingText": [
+        "preferences"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "navigator-interface",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#navigator-interface",
+        "title": "Extensions to the Navigator interface",
+        "number": "13.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "preferencemanager",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#preferencemanager",
+      "linkingText": [
+        "PreferenceManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preference-manager",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#preference-manager",
+        "title": "PreferenceManager interface",
+        "number": "13.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-preferencemanager-colorscheme",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-preferencemanager-colorscheme",
+      "linkingText": [
+        "colorScheme"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preference-manager",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#preference-manager",
+        "title": "PreferenceManager interface",
+        "number": "13.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-preferencemanager-contrast",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-preferencemanager-contrast",
+      "linkingText": [
+        "contrast"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preference-manager",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#preference-manager",
+        "title": "PreferenceManager interface",
+        "number": "13.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-preferencemanager-reducedmotion",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-preferencemanager-reducedmotion",
+      "linkingText": [
+        "reducedMotion"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preference-manager",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#preference-manager",
+        "title": "PreferenceManager interface",
+        "number": "13.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-preferencemanager-reducedtransparency",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-preferencemanager-reducedtransparency",
+      "linkingText": [
+        "reducedTransparency"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preference-manager",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#preference-manager",
+        "title": "PreferenceManager interface",
+        "number": "13.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-preferencemanager-reduceddata",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-preferencemanager-reduceddata",
+      "linkingText": [
+        "reducedData"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preference-manager",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#preference-manager",
+        "title": "PreferenceManager interface",
+        "number": "13.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "get-valid-values-for-colorscheme",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#get-valid-values-for-colorscheme",
+      "linkingText": [
+        "get valid values for colorScheme"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "color-scheme-attribute",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#color-scheme-attribute",
+        "title": "colorScheme attribute",
+        "number": "13.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "get-valid-values-for-contrast",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#get-valid-values-for-contrast",
+      "linkingText": [
+        "get valid values for contrast"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "contrast-attribute",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#contrast-attribute",
+        "title": "contrast attribute",
+        "number": "13.1.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "get-valid-values-for-reducedmotion",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#get-valid-values-for-reducedmotion",
+      "linkingText": [
+        "get valid values for reducedMotion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reduced-motion-attribute",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#reduced-motion-attribute",
+        "title": "reducedMotion attribute",
+        "number": "13.1.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "get-valid-values-for-reducedtransparency",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#get-valid-values-for-reducedtransparency",
+      "linkingText": [
+        "get valid values for reducedTransparency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reduced-transparency-attribute",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#reduced-transparency-attribute",
+        "title": "reducedTransparency attribute",
+        "number": "13.1.6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "get-valid-values-for-reduceddata",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#get-valid-values-for-reduceddata",
+      "linkingText": [
+        "get valid values for reducedData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reduced-data-attribute",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#reduced-data-attribute",
+        "title": "reducedData attribute",
+        "number": "13.1.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "preferenceobject",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#preferenceobject",
+      "linkingText": [
+        "PreferenceObject"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preference-object-interface",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#preference-object-interface",
+        "title": "PreferenceObject interface",
+        "number": "13.1.8"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-preferenceobject-requestoverride-value-value",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-preferenceobject-requestoverride-value-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "PreferenceObject/requestOverride(value)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preference-object-interface",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#preference-object-interface",
+        "title": "PreferenceObject interface",
+        "number": "13.1.8"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-preferenceobject-override",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-preferenceobject-override",
+      "linkingText": [
+        "override"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceObject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "override-attribute",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#override-attribute",
+        "title": "override attribute",
+        "number": "13.1.8.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-preferenceobject-value",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-preferenceobject-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceObject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "preference-value-attribute",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#preference-value-attribute",
+        "title": "value attribute",
+        "number": "13.1.8.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-preferenceobject-validvalues",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-preferenceobject-validvalues",
+      "linkingText": [
+        "validValues"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceObject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "valid-values-attribute",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#valid-values-attribute",
+        "title": "validValues attribute",
+        "number": "13.1.8.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-preferenceobject-onchange",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-preferenceobject-onchange",
+      "linkingText": [
+        "onchange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PreferenceObject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "onchange-attribute",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#onchange-attribute",
+        "title": "onchange event handler attribute",
+        "number": "13.1.8.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "preferenceobject-change",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#preferenceobject-change",
+      "linkingText": [
+        "change"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PreferenceObject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "onchange-attribute",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#onchange-attribute",
+        "title": "onchange event handler attribute",
+        "number": "13.1.8.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "preferenceobject-preferenceobject-update-steps",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#preferenceobject-preferenceobject-update-steps",
+      "linkingText": [
+        "PreferenceObject update steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PreferenceObject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "onchange-attribute",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#onchange-attribute",
+        "title": "onchange event handler attribute",
+        "number": "13.1.8.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-preferenceobject-requestoverride",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-preferenceobject-requestoverride",
+      "linkingText": [
+        "requestOverride(value)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PreferenceObject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "request-override-method",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#request-override-method",
+        "title": "requestOverride() method",
+        "number": "13.1.8.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-preferenceobject-clearoverride",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#dom-preferenceobject-clearoverride",
+      "linkingText": [
+        "clearOverride()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PreferenceObject"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "clear-override-method",
+        "href": "https://www.w3.org/TR/mediaqueries-5/#clear-override-method",
+        "title": "clearOverride() method",
+        "number": "13.1.8.6"
+      },
+      "definedIn": "prose",
       "links": []
     },
     {
