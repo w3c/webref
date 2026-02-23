@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-02-22T12:51:46.203Z",
+  "date": "2026-02-23T01:01:26.754Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -759,7 +759,7 @@
   },
   "stats": {
     "crawled": 727,
-    "errors": 3
+    "errors": 4
   },
   "crawler": "reffy-20.0.11",
   "results": [
@@ -17078,9 +17078,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc9163",
       "crawlCacheInfo": {
-        "lastModified": "Sun, 15 Feb 2026 19:44:43 GMT"
+        "lastModified": "Sun, 22 Feb 2026 22:05:03 GMT"
       },
-      "date": "15 February 2026",
+      "date": "22 February 2026",
       "algorithms": "algorithms/rfc9163.json",
       "links": "links/rfc9163.json",
       "refs": "refs/rfc9163.json",
@@ -20694,7 +20694,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-3/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 21 Feb 2026 01:13:38 GMT"
+        "lastModified": "Sat, 21 Feb 2026 01:13:39 GMT"
       },
       "date": "18 January 2022",
       "links": "links/css-color-3.json",
@@ -21460,7 +21460,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-content-3/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 21 Feb 2026 01:13:38 GMT"
+        "lastModified": "Sat, 21 Feb 2026 01:13:39 GMT"
       },
       "generator": "bikeshed",
       "date": "9 January 2026",
@@ -22919,7 +22919,8 @@
       "dfns": "dfns/css-layout-api-1.json",
       "headings": "headings/css-layout-api-1.json",
       "ids": "ids/css-layout-api-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 396)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-line-grid-1/",
