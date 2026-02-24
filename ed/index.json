@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-02-24T01:02:05.891Z",
+  "date": "2026-02-24T06:53:50.395Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -759,7 +759,7 @@
   },
   "stats": {
     "crawled": 727,
-    "errors": 4
+    "errors": 3
   },
   "crawler": "reffy-20.0.11",
   "results": [
@@ -1533,9 +1533,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-layered-cookies.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 19 Feb 2026 01:23:54 GMT"
+        "lastModified": "Tue, 24 Feb 2026 01:21:48 GMT"
       },
-      "date": "19 February 2026",
+      "date": "24 February 2026",
       "algorithms": "algorithms/layered-cookies.json",
       "links": "links/layered-cookies.json",
       "refs": "refs/layered-cookies.json",
@@ -1582,9 +1582,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-no-vary-search.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 19 Feb 2026 01:23:54 GMT"
+        "lastModified": "Tue, 24 Feb 2026 01:21:48 GMT"
       },
-      "date": "19 February 2026",
+      "date": "24 February 2026",
       "algorithms": "algorithms/no-vary-search.json",
       "links": "links/no-vary-search.json",
       "refs": "refs/no-vary-search.json",
@@ -1631,9 +1631,9 @@
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 19 Feb 2026 01:23:54 GMT"
+        "lastModified": "Tue, 24 Feb 2026 01:21:48 GMT"
       },
-      "date": "19 February 2026",
+      "date": "24 February 2026",
       "algorithms": "algorithms/rfc6265bis.json",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
@@ -7839,9 +7839,9 @@
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 23 Feb 2026 21:44:59 GMT"
+        "lastModified": "Tue, 24 Feb 2026 03:13:31 GMT"
       },
-      "date": "23 February 2026",
+      "date": "24 February 2026",
       "links": "links/tc39-temporal.json",
       "dfns": "dfns/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
@@ -8172,7 +8172,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-cs/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 20 Feb 2026 18:39:35 GMT"
+        "lastModified": "Tue, 24 Feb 2026 03:15:57 GMT"
       },
       "generator": "respec",
       "date": "04 August 2025",
@@ -8219,10 +8219,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-profiling/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 20 Feb 2026 18:39:35 GMT"
+        "lastModified": "Tue, 24 Feb 2026 03:15:57 GMT"
       },
       "generator": "respec",
-      "date": "20 February 2026",
+      "date": "24 February 2026",
       "algorithms": "algorithms/shacl12-profiling.json",
       "links": "links/shacl12-profiling.json",
       "refs": "refs/shacl12-profiling.json",
@@ -8268,10 +8268,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-ui/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 20 Feb 2026 18:39:36 GMT"
+        "lastModified": "Tue, 24 Feb 2026 03:15:57 GMT"
       },
       "generator": "respec",
-      "date": "20 February 2026",
+      "date": "24 February 2026",
       "links": "links/shacl12-ui.json",
       "refs": "refs/shacl12-ui.json",
       "dfns": "dfns/shacl12-ui.json",
@@ -16719,9 +16719,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8878",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 17 Feb 2026 23:40:23 GMT"
+        "lastModified": "Mon, 23 Feb 2026 10:12:42 GMT"
       },
-      "date": "17 February 2026",
+      "date": "23 February 2026",
       "links": "links/rfc8878.json",
       "refs": "refs/rfc8878.json",
       "headings": "headings/rfc8878.json",
@@ -19740,7 +19740,8 @@
       "dfns": "dfns/css-animation-worklet-1.json",
       "headings": "headings/css-animation-worklet-1.json",
       "ids": "ids/css-animation-worklet-1.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.css-houdini.org/css-animationworklet-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 350)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-animations-1/",
@@ -22918,8 +22919,7 @@
       "dfns": "dfns/css-layout-api-1.json",
       "headings": "headings/css-layout-api-1.json",
       "ids": "ids/css-layout-api-1.json",
-      "cddl": [],
-      "error": "Error: Loading https://drafts.css-houdini.org/css-layout-api-1/ triggered HTTP status 500\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 396)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "cddl": []
     },
     {
       "url": "https://www.w3.org/TR/css-line-grid-1/",
@@ -32051,8 +32051,7 @@
       "dfns": "dfns/mixed-content.json",
       "headings": "headings/mixed-content.json",
       "ids": "ids/mixed-content.json",
-      "cddl": [],
-      "error": "Error: Loading https://w3c.github.io/webappsec-mixed-content/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 538)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "cddl": []
     },
     {
       "url": "https://www.w3.org/TR/motion-1/",
@@ -35811,10 +35810,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-core/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 20 Feb 2026 18:39:34 GMT"
+        "lastModified": "Tue, 24 Feb 2026 03:15:57 GMT"
       },
       "generator": "respec",
-      "date": "20 February 2026",
+      "date": "24 February 2026",
       "algorithms": "algorithms/shacl12-core.json",
       "links": "links/shacl12-core.json",
       "refs": "refs/shacl12-core.json",
@@ -35867,10 +35866,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-node-expr/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 20 Feb 2026 18:39:36 GMT"
+        "lastModified": "Tue, 24 Feb 2026 03:15:57 GMT"
       },
       "generator": "respec",
-      "date": "20 February 2026",
+      "date": "24 February 2026",
       "algorithms": "algorithms/shacl12-node-expr.json",
       "links": "links/shacl12-node-expr.json",
       "refs": "refs/shacl12-node-expr.json",
@@ -35926,10 +35925,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-rules/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 20 Feb 2026 18:39:36 GMT"
+        "lastModified": "Tue, 24 Feb 2026 03:15:57 GMT"
       },
       "generator": "respec",
-      "date": "20 February 2026",
+      "date": "24 February 2026",
       "links": "links/shacl12-rules.json",
       "refs": "refs/shacl12-rules.json",
       "dfns": "dfns/shacl12-rules.json",
@@ -35981,10 +35980,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-sparql/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 20 Feb 2026 18:39:34 GMT"
+        "lastModified": "Tue, 24 Feb 2026 03:15:57 GMT"
       },
       "generator": "respec",
-      "date": "20 February 2026",
+      "date": "24 February 2026",
       "algorithms": "algorithms/shacl12-sparql.json",
       "links": "links/shacl12-sparql.json",
       "refs": "refs/shacl12-sparql.json",
