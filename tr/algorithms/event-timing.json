@@ -205,7 +205,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>event</var> is not an instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/uievents/#inputevent\" id=\"ref-for-inputevent\">InputEvent</a></code>, return 0.\nNote: this check is done to exclude <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event⑦\">Events</a></code> for which the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-type\" id=\"ref-for-dom-event-type⑧\">type</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-input\" id=\"ref-for-event-type-input③\">input</a></code> but that are not about modified text content.</p>"
+              "html": "<p>If <var>event</var> is not an instance of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/uievents/#inputevent\" id=\"ref-for-inputevent\">InputEvent</a></code>, return 0.\nNote: This check is done to exclude <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event⑦\">Events</a></code> for which the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-type\" id=\"ref-for-dom-event-type⑧\">type</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/uievents/#event-type-input\" id=\"ref-for-event-type-input③\">input</a></code> but that are not about modified text content.</p>"
             },
             {
               "html": "<p>If <var>event</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/uievents/#dom-inputevent-iscomposing\" id=\"ref-for-dom-inputevent-iscomposing\">isComposing</a></code> attribute value is false, return 0.</p>"
@@ -352,7 +352,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>timingEntry</var> is null, return.</p>"
+          "html": "<p>If <var>timingEntry</var> is null, then return.</p>"
         },
         {
           "html": "<p>Let <var>relevantGlobal</var> be <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>.</p>"
@@ -367,7 +367,7 @@
           "html": "<p>Assert that <var>target</var> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#implements\" id=\"ref-for-implements①\">implements</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#node\" id=\"ref-for-node③\">Node</a></code>.</p>"
         },
         {
-          "html": "<p>Set <var>timingEntry</var>’s associated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/event-timing/#eventtarget\" id=\"ref-for-eventtarget②\">eventTarget</a> to <var>target</var>.</p>"
+          "html": "<p>Set <var>timingEntry</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/event-timing/#eventtarget\" id=\"ref-for-eventtarget②\">eventTarget</a> to <var>target</var>.</p>"
         },
         {
           "html": "<p>Set <var>timingEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/event-timing/#dom-performanceeventtiming-targetselector\" id=\"ref-for-dom-performanceeventtiming-targetselector②\">targetSelector</a></code> to the result of running the algorithm to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/event-timing/#generate-a-css-selector\" id=\"ref-for-generate-a-css-selector\">generate a CSS selector</a> with <var>target</var> as input.</p>"
@@ -398,7 +398,7 @@
               "html": "<p>Set <var>pendingPointerDowns</var>[<var>pointerId</var>] to <var>timingEntry</var>.</p>"
             },
             {
-              "html": "<p>Set <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/event-timing/#is-contextmenu-triggered\" id=\"ref-for-is-contextmenu-triggered③\">is contextmenu triggered</a> to false.</p>"
+              "html": "<p>Set <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/event-timing/#is-contextmenu-triggered\" id=\"ref-for-is-contextmenu-triggered③\">is contextmenu triggered</a> to false.</p>"
             }
           ]
         },
@@ -436,15 +436,15 @@
                   "rationale": "increase",
                   "steps": [
                     {
-                      "html": "<p>Increase <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value①⓪\">user interaction value</a> value by a small number chosen by the user agent.</p>"
+                      "html": "<p>Increase <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value①⓪\">user interaction value</a> value by a small number chosen by the user agent.</p>"
                     },
                     {
-                      "html": "<p>Set <var>previousKeyDownEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/event-timing/#dom-performanceeventtiming-interactionid\" id=\"ref-for-dom-performanceeventtiming-interactionid①①\">interactionId</a></code> to <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value①①\">user interaction value</a>.</p>"
+                      "html": "<p>Set <var>previousKeyDownEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/event-timing/#dom-performanceeventtiming-interactionid\" id=\"ref-for-dom-performanceeventtiming-interactionid①①\">interactionId</a></code> to <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/event-timing/#user-interaction-value\" id=\"ref-for-user-interaction-value①①\">user interaction value</a>.</p>"
                     }
                   ]
                 },
                 {
-                  "html": "<p>Add <var>previousKeyDownEntry</var> to <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/event-timing/#entries-to-be-queued\" id=\"ref-for-entries-to-be-queued⑤\">entries to be queued</a>.</p>"
+                  "html": "<p>Add <var>previousKeyDownEntry</var> to <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/event-timing/#entries-to-be-queued\" id=\"ref-for-entries-to-be-queued⑤\">entries to be queued</a>.</p>"
                 }
               ]
             },
@@ -489,7 +489,7 @@
           ]
         },
         {
-          "html": "<p>Clear <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/event-timing/#entries-to-be-queued\" id=\"ref-for-entries-to-be-queued⑧\">entries to be queued</a>.</p>"
+          "html": "<p>Set <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/event-timing/#entries-to-be-queued\" id=\"ref-for-entries-to-be-queued⑧\">entries to be queued</a> to an empty list.</p>"
         },
         {
           "html": "For each <var>pendingPointerDownEntry</var> in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values①\">values</a> from <var>window</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/event-timing/#pending-pointer-downs\" id=\"ref-for-pending-pointer-downs②\">pending pointer downs</a>:",
