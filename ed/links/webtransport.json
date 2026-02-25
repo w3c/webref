@@ -89,6 +89,7 @@
       "https://encoding.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
+          "forbidden-request-header",
           "network-partition-keys"
         ]
       },
@@ -216,6 +217,7 @@
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-connection",
+          "headers",
           "concept-request",
           "concept-request-url",
           "concept-request-client",
@@ -230,8 +232,13 @@
           "request-webtransport-hash-list",
           "concept-request-redirect-mode",
           "concept-request-method",
-          "concept-header-list-set-structured-header",
+          "concept-headers-fill",
+          "concept-headers-header-list",
           "concept-request-header-list",
+          "concept-headers-guard",
+          "concept-header-name",
+          "concept-headers-append",
+          "concept-header-list-set-structured-header",
           "concept-fetch",
           "fetch-useparallelqueue",
           "process-response",
@@ -239,7 +246,11 @@
           "concept-fetch-record-request",
           "concept-request-current-url",
           "concept-connection-obtain",
+          "concept-response",
           "concept-network-error",
+          "concept-response-header-list",
+          "concept-header-list-delete",
+          "typedefdef-headersinit",
           "concept-body-stream",
           "http-origin"
         ]
@@ -289,6 +300,7 @@
           "iteration-break",
           "list-is-empty",
           "isomorphic-encode",
+          "ascii-lowercase",
           "code-unit-prefix",
           "byte-sequence-length",
           "list",
@@ -397,6 +409,7 @@
           "idl-undefined",
           "EnforceRange",
           "idl-unsigned-short",
+          "SameObject",
           "idl-DOMString",
           "idl-boolean",
           "syntaxerror",

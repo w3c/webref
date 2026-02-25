@@ -31,8 +31,9 @@ interface WebTransport {
   readonly attribute Promise<undefined> ready;
   readonly attribute WebTransportReliabilityMode reliability;
   readonly attribute WebTransportCongestionControl congestionControl;
-  [EnforceRange] attribute unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams;
-  [EnforceRange] attribute unsigned short? anticipatedConcurrentIncomingBidirectionalStreams;
+  attribute [EnforceRange] unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams;
+  attribute [EnforceRange] unsigned short? anticipatedConcurrentIncomingBidirectionalStreams;
+  [SameObject] readonly attribute Headers? responseHeaders;
   readonly attribute DOMString protocol;
 
   readonly attribute Promise<WebTransportCloseInfo> closed;
@@ -69,6 +70,7 @@ dictionary WebTransportHash {
 dictionary WebTransportOptions {
   boolean allowPooling = false;
   boolean requireUnreliable = false;
+  HeadersInit headers = {};
   sequence<WebTransportHash> serverCertificateHashes = [];
   WebTransportCongestionControl congestionControl = "default";
   [EnforceRange] unsigned short? anticipatedConcurrentIncomingUnidirectionalStreams = null;
