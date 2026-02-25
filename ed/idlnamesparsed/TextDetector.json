@@ -6,7 +6,7 @@
       "title": "Accelerated Text Detection in Images",
       "url": "https://wicg.github.io/shape-detection-api/text.html"
     },
-    "fragment": "[\n    Exposed=(Window,Worker),\n    SecureContext\n] interface TextDetector {\n    constructor();\n    Promise<sequence<DetectedText>> detect(ImageBitmapSource image);\n};",
+    "fragment": "[\n    Exposed=(Window,Worker),\n    SecureContext\n] interface TextDetector {\n    constructor();\n    static Promise<Availability> availability(TextDetectorOptions options);\n    static Promise<TextDetector> create(optional TextDetectorCreateOptions options = {});\n    Promise<sequence<DetectedText>> detect(ImageBitmapSource image);\n};",
     "href": "https://wicg.github.io/shape-detection-api/text.html#textdetector"
   },
   "extended": [],

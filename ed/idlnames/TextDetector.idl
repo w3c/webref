@@ -4,5 +4,7 @@
     SecureContext
 ] interface TextDetector {
     constructor();
+    static Promise<Availability> availability(TextDetectorOptions options);
+    static Promise<TextDetector> create(optional TextDetectorCreateOptions options = {});
     Promise<sequence<DetectedText>> detect(ImageBitmapSource image);
 };

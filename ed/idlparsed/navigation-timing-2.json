@@ -267,7 +267,7 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming"
+        "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming"
       },
       "NavigationTimingType": {
         "fragment": "enum NavigationTimingType {\n    \"navigate\",\n    \"reload\",\n    \"back_forward\"\n};",
@@ -291,7 +291,7 @@
           }
         ],
         "extAttrs": [],
-        "href": "https://w3c.github.io/navigation-timing/#dom-navigationtimingtype"
+        "href": "https://w3c.github.io/navigation-timing/#enumdef-navigationtimingtype"
       },
       "PerformanceTimingConfidence": {
         "fragment": "[Exposed=Window]\ninterface PerformanceTimingConfidence {\n    readonly attribute double randomizedTriggerRate;\n    readonly attribute PerformanceTimingConfidenceValue value;\n    object toJSON();\n};",
@@ -360,7 +360,7 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/navigation-timing/#dom-performancetimingconfidence"
+        "href": "https://w3c.github.io/navigation-timing/#performancetimingconfidence"
       },
       "PerformanceTimingConfidenceValue": {
         "fragment": "enum PerformanceTimingConfidenceValue {\n  \"high\",\n  \"low\"\n};",
@@ -379,7 +379,7 @@
           }
         ],
         "extAttrs": [],
-        "href": "https://w3c.github.io/navigation-timing/#dom-performancetimingconfidencevalue"
+        "href": "https://w3c.github.io/navigation-timing/#enumdef-performancetimingconfidencevalue"
       },
       "PerformanceTiming": {
         "fragment": "[Exposed=Window]\ninterface PerformanceTiming {\n  readonly attribute unsigned long long navigationStart;\n  readonly attribute unsigned long long unloadEventStart;\n  readonly attribute unsigned long long unloadEventEnd;\n  readonly attribute unsigned long long redirectStart;\n  readonly attribute unsigned long long redirectEnd;\n  readonly attribute unsigned long long fetchStart;\n  readonly attribute unsigned long long domainLookupStart;\n  readonly attribute unsigned long long domainLookupEnd;\n  readonly attribute unsigned long long connectStart;\n  readonly attribute unsigned long long connectEnd;\n  readonly attribute unsigned long long secureConnectionStart;\n  readonly attribute unsigned long long requestStart;\n  readonly attribute unsigned long long responseStart;\n  readonly attribute unsigned long long responseEnd;\n  readonly attribute unsigned long long domLoading;\n  readonly attribute unsigned long long domInteractive;\n  readonly attribute unsigned long long domContentLoadedEventStart;\n  readonly attribute unsigned long long domContentLoadedEventEnd;\n  readonly attribute unsigned long long domComplete;\n  readonly attribute unsigned long long loadEventStart;\n  readonly attribute unsigned long long loadEventEnd;\n  [Default] object toJSON();\n};",
@@ -759,7 +759,7 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming"
+        "href": "https://w3c.github.io/navigation-timing/#performancetiming"
       },
       "PerformanceNavigation": {
         "fragment": "[Exposed=Window]\ninterface PerformanceNavigation {\n  const unsigned short TYPE_NAVIGATE = 0;\n  const unsigned short TYPE_RELOAD = 1;\n  const unsigned short TYPE_BACK_FORWARD = 2;\n  const unsigned short TYPE_RESERVED = 255;\n  readonly attribute unsigned short type;\n  readonly attribute unsigned short redirectCount;\n  [Default] object toJSON();\n};",
@@ -907,7 +907,7 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation"
+        "href": "https://w3c.github.io/navigation-timing/#performancenavigation"
       }
     },
     "idlExtendedNames": {

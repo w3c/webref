@@ -5,8 +5,8 @@
   },
   "dfns": [
     {
-      "id": "dfn-current-document",
-      "href": "https://w3c.github.io/navigation-timing/#dfn-current-document",
+      "id": "current-document",
+      "href": "https://w3c.github.io/navigation-timing/#current-document",
       "linkingText": [
         "current document"
       ],
@@ -19,17 +19,58 @@
         "id": "terminology",
         "href": "https://w3c.github.io/navigation-timing/#terminology",
         "title": "Terminology",
-        "alternateIds": [
-          "x2-terminology"
-        ],
         "number": "2"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming",
+      "id": "sec-PerformanceNavigationTiming",
+      "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+      "linkingText": [
+        "The PerformanceNavigationTiming interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "performancenavigationtiming-performancenavigationtiming",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-performancenavigationtiming",
+      "linkingText": [
+        "PerformanceNavigationTiming"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "performancenavigationtiming",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming",
       "linkingText": [
         "PerformanceNavigationTiming"
       ],
@@ -42,224 +83,520 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
-      "definedIn": "heading",
+      "definedIn": "pre",
       "links": []
     },
     {
-      "id": "dfn-document-load-timing",
-      "href": "https://w3c.github.io/navigation-timing/#dfn-document-load-timing",
+      "id": "dom-performancenavigationtiming-unloadeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-unloadeventstart",
+      "linkingText": [
+        "unloadEventStart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-performancenavigationtiming-unloadeventend",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-unloadeventend",
+      "linkingText": [
+        "unloadEventEnd"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-performancenavigationtiming-dominteractive",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-dominteractive",
+      "linkingText": [
+        "domInteractive"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-performancenavigationtiming-domcontentloadedeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcontentloadedeventstart",
+      "linkingText": [
+        "domContentLoadedEventStart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-performancenavigationtiming-domcontentloadedeventend",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcontentloadedeventend",
+      "linkingText": [
+        "domContentLoadedEventEnd"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-performancenavigationtiming-domcomplete",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcomplete",
+      "linkingText": [
+        "domComplete"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-performancenavigationtiming-loadeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-loadeventstart",
+      "linkingText": [
+        "loadEventStart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-performancenavigationtiming-loadeventend",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-loadeventend",
+      "linkingText": [
+        "loadEventEnd"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-performancenavigationtiming-type",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-performancenavigationtiming-redirectcount",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-redirectcount",
+      "linkingText": [
+        "redirectCount"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-performancenavigationtiming-criticalchrestart",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-criticalchrestart",
+      "linkingText": [
+        "criticalCHRestart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-performancenavigationtiming-notrestoredreasons",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-notrestoredreasons",
+      "linkingText": [
+        "notRestoredReasons"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-performancenavigationtiming-confidence",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-confidence",
+      "linkingText": [
+        "confidence"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-performancenavigationtiming-tojson",
+      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-PerformanceNavigationTiming",
+        "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
+        "title": "The PerformanceNavigationTiming interface",
+        "number": "3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "performancenavigationtiming-document-load-timing",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-document-load-timing",
       "linkingText": [
         "document load timing"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-previous-document-unload-timing",
-      "href": "https://w3c.github.io/navigation-timing/#dfn-previous-document-unload-timing",
+      "id": "performancenavigationtiming-previous-document-unload-timing",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-previous-document-unload-timing",
       "linkingText": [
         "previous document unload timing"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-redirect-count",
-      "href": "https://w3c.github.io/navigation-timing/#dfn-redirect-count",
+      "id": "performancenavigationtiming-redirect-count",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-redirect-count",
       "linkingText": [
         "redirect count"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-navigation-type",
-      "href": "https://w3c.github.io/navigation-timing/#dfn-navigation-type",
+      "id": "performancenavigationtiming-navigation-type",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-navigation-type",
       "linkingText": [
         "navigation type"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-critical-ch-restart-time",
-      "href": "https://w3c.github.io/navigation-timing/#dfn-critical-ch-restart-time",
+      "id": "performancenavigationtiming-critical-ch-restart-time",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-critical-ch-restart-time",
       "linkingText": [
-        "Critical-CH restart time"
+        "`Critical-CH` restart time"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-not-restored-reasons",
-      "href": "https://w3c.github.io/navigation-timing/#dfn-not-restored-reasons",
+      "id": "performancenavigationtiming-not-restored-reasons",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-not-restored-reasons",
       "linkingText": [
         "not restored reasons"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-confidence-value",
-      "href": "https://w3c.github.io/navigation-timing/#dfn-confidence-value",
+      "id": "performancenavigationtiming-confidence-value",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-confidence-value",
       "linkingText": [
         "confidence value"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-randomized-trigger-rate",
-      "href": "https://w3c.github.io/navigation-timing/#dfn-randomized-trigger-rate",
+      "id": "performancenavigationtiming-randomized-trigger-rate",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-randomized-trigger-rate",
       "linkingText": [
         "randomized trigger rate"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-underlying-confidence-value",
-      "href": "https://w3c.github.io/navigation-timing/#dfn-underlying-confidence-value",
+      "id": "performancenavigationtiming-underlying-confidence-value",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-underlying-confidence-value",
       "linkingText": [
         "underlying confidence value"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "PerformanceNavigationTiming"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-service-worker-timing",
-      "href": "https://w3c.github.io/navigation-timing/#dfn-service-worker-timing",
+      "id": "performancenavigationtiming-service-worker-timing",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-service-worker-timing",
       "linkingText": [
         "service worker timing"
       ],
@@ -274,24 +611,19 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming-unloadeventstart",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-unloadeventstart",
+      "id": "performancenavigationtiming-unloadeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-unloadeventstart",
       "linkingText": [
         "unloadEventStart"
       ],
-      "localLinkingText": [
-        "PerformanceNavigationTiming.unloadEventStart"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "PerformanceNavigationTiming"
       ],
@@ -301,24 +633,19 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming-unloadeventend",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-unloadeventend",
+      "id": "performancenavigationtiming-unloadeventend",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-unloadeventend",
       "linkingText": [
         "unloadEventEnd"
       ],
-      "localLinkingText": [
-        "PerformanceNavigationTiming.unloadEventEnd"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "PerformanceNavigationTiming"
       ],
@@ -328,24 +655,19 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming-dominteractive",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-dominteractive",
+      "id": "performancenavigationtiming-dominteractive",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-dominteractive",
       "linkingText": [
         "domInteractive"
       ],
-      "localLinkingText": [
-        "PerformanceNavigationTiming.domInteractive"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "PerformanceNavigationTiming"
       ],
@@ -355,24 +677,19 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming-domcontentloadedeventstart",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcontentloadedeventstart",
+      "id": "performancenavigationtiming-domcontentloadedeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-domcontentloadedeventstart",
       "linkingText": [
         "domContentLoadedEventStart"
       ],
-      "localLinkingText": [
-        "PerformanceNavigationTiming.domContentLoadedEventStart"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "PerformanceNavigationTiming"
       ],
@@ -382,24 +699,19 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming-domcontentloadedeventend",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcontentloadedeventend",
+      "id": "performancenavigationtiming-domcontentloadedeventend",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-domcontentloadedeventend",
       "linkingText": [
         "domContentLoadedEventEnd"
       ],
-      "localLinkingText": [
-        "PerformanceNavigationTiming.domContentLoadedEventEnd"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "PerformanceNavigationTiming"
       ],
@@ -409,24 +721,19 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming-domcomplete",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-domcomplete",
+      "id": "performancenavigationtiming-domcomplete",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-domcomplete",
       "linkingText": [
         "domComplete"
       ],
-      "localLinkingText": [
-        "PerformanceNavigationTiming.domComplete"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "PerformanceNavigationTiming"
       ],
@@ -436,24 +743,19 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming-loadeventstart",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-loadeventstart",
+      "id": "performancenavigationtiming-loadeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-loadeventstart",
       "linkingText": [
         "loadEventStart"
       ],
-      "localLinkingText": [
-        "PerformanceNavigationTiming.loadEventStart"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "PerformanceNavigationTiming"
       ],
@@ -463,24 +765,19 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming-loadeventend",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-loadeventend",
+      "id": "performancenavigationtiming-loadeventend",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-loadeventend",
       "linkingText": [
         "loadEventEnd"
       ],
-      "localLinkingText": [
-        "PerformanceNavigationTiming.loadEventEnd"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "PerformanceNavigationTiming"
       ],
@@ -490,51 +787,41 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming-type",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-type",
+      "id": "performancenavigationtiming-type",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-type",
       "linkingText": [
         "type"
       ],
-      "localLinkingText": [
-        "PerformanceNavigationTiming.type"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "PerformanceNavigationTiming"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming-redirectcount",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-redirectcount",
+      "id": "performancenavigationtiming-redirectcount",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-redirectcount",
       "linkingText": [
         "redirectCount"
       ],
-      "localLinkingText": [
-        "PerformanceNavigationTiming.redirectCount"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "PerformanceNavigationTiming"
       ],
@@ -544,24 +831,19 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming-criticalchrestart",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-criticalchrestart",
+      "id": "performancenavigationtiming-criticalchrestart",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-criticalchrestart",
       "linkingText": [
         "criticalCHRestart"
       ],
-      "localLinkingText": [
-        "PerformanceNavigationTiming.criticalCHRestart"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "PerformanceNavigationTiming"
       ],
@@ -571,24 +853,19 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming-notrestoredreasons",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-notrestoredreasons",
+      "id": "performancenavigationtiming-notrestoredreasons",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-notrestoredreasons",
       "linkingText": [
         "notRestoredReasons"
       ],
-      "localLinkingText": [
-        "PerformanceNavigationTiming.notRestoredReasons"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "PerformanceNavigationTiming"
       ],
@@ -598,24 +875,19 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming-confidence",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-confidence",
+      "id": "performancenavigationtiming-confidence",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-confidence",
       "linkingText": [
         "confidence"
       ],
-      "localLinkingText": [
-        "PerformanceNavigationTiming.confidence"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "PerformanceNavigationTiming"
       ],
@@ -625,26 +897,19 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancenavigationtiming-tojson",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigationtiming-tojson",
+      "id": "performancenavigationtiming-tojson",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigationtiming-tojson",
       "linkingText": [
         "toJSON()"
       ],
-      "localLinkingText": [
-        "PerformanceNavigationTiming.toJSON",
-        "PerformanceNavigationTiming.toJSON()",
-        "toJSON"
-      ],
-      "type": "method",
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "PerformanceNavigationTiming"
       ],
@@ -654,17 +919,14 @@
         "id": "sec-PerformanceNavigationTiming",
         "href": "https://w3c.github.io/navigation-timing/#sec-PerformanceNavigationTiming",
         "title": "The PerformanceNavigationTiming interface",
-        "alternateIds": [
-          "x3-3-the-performancenavigationtiming-interface"
-        ],
         "number": "3.3"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-navigationtimingtype",
-      "href": "https://w3c.github.io/navigation-timing/#dom-navigationtimingtype",
+      "id": "enumdef-navigationtimingtype",
+      "href": "https://w3c.github.io/navigation-timing/#enumdef-navigationtimingtype",
       "linkingText": [
         "NavigationTimingType"
       ],
@@ -676,20 +938,17 @@
       "heading": {
         "id": "sec-performance-navigation-types",
         "href": "https://w3c.github.io/navigation-timing/#sec-performance-navigation-types",
-        "title": "NavigationTimingType enum",
-        "alternateIds": [
-          "x3-3-1-navigationtimingtype-enum"
-        ],
+        "title": "The NavigationTimingType enum",
         "number": "3.3.1"
       },
-      "definedIn": "heading",
+      "definedIn": "pre",
       "links": []
     },
     {
       "id": "dom-navigationtimingtype-navigate",
       "href": "https://w3c.github.io/navigation-timing/#dom-navigationtimingtype-navigate",
       "linkingText": [
-        "navigate"
+        "\"navigate\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -701,20 +960,17 @@
       "heading": {
         "id": "sec-performance-navigation-types",
         "href": "https://w3c.github.io/navigation-timing/#sec-performance-navigation-types",
-        "title": "NavigationTimingType enum",
-        "alternateIds": [
-          "x3-3-1-navigationtimingtype-enum"
-        ],
+        "title": "The NavigationTimingType enum",
         "number": "3.3.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
       "id": "dom-navigationtimingtype-reload",
       "href": "https://w3c.github.io/navigation-timing/#dom-navigationtimingtype-reload",
       "linkingText": [
-        "reload"
+        "\"reload\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -726,20 +982,17 @@
       "heading": {
         "id": "sec-performance-navigation-types",
         "href": "https://w3c.github.io/navigation-timing/#sec-performance-navigation-types",
-        "title": "NavigationTimingType enum",
-        "alternateIds": [
-          "x3-3-1-navigationtimingtype-enum"
-        ],
+        "title": "The NavigationTimingType enum",
         "number": "3.3.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
       "id": "dom-navigationtimingtype-back_forward",
       "href": "https://w3c.github.io/navigation-timing/#dom-navigationtimingtype-back_forward",
       "linkingText": [
-        "back_forward"
+        "\"back_forward\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -751,18 +1004,81 @@
       "heading": {
         "id": "sec-performance-navigation-types",
         "href": "https://w3c.github.io/navigation-timing/#sec-performance-navigation-types",
-        "title": "NavigationTimingType enum",
-        "alternateIds": [
-          "x3-3-1-navigationtimingtype-enum"
-        ],
+        "title": "The NavigationTimingType enum",
+        "number": "3.3.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "navigationtimingtype-navigate",
+      "href": "https://w3c.github.io/navigation-timing/#navigationtimingtype-navigate",
+      "linkingText": [
+        "navigate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "NavigationTimingType"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-performance-navigation-types",
+        "href": "https://w3c.github.io/navigation-timing/#sec-performance-navigation-types",
+        "title": "The NavigationTimingType enum",
         "number": "3.3.1"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dom-performancetimingconfidence",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancetimingconfidence",
+      "id": "navigationtimingtype-reload",
+      "href": "https://w3c.github.io/navigation-timing/#navigationtimingtype-reload",
+      "linkingText": [
+        "reload"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "NavigationTimingType"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-performance-navigation-types",
+        "href": "https://w3c.github.io/navigation-timing/#sec-performance-navigation-types",
+        "title": "The NavigationTimingType enum",
+        "number": "3.3.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "navigationtimingtype-back_forward",
+      "href": "https://w3c.github.io/navigation-timing/#navigationtimingtype-back_forward",
+      "linkingText": [
+        "back_forward"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "NavigationTimingType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-performance-navigation-types",
+        "href": "https://w3c.github.io/navigation-timing/#sec-performance-navigation-types",
+        "title": "The NavigationTimingType enum",
+        "number": "3.3.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetimingconfidence",
+      "href": "https://w3c.github.io/navigation-timing/#performancetimingconfidence",
       "linkingText": [
         "PerformanceTimingConfidence"
       ],
@@ -774,13 +1090,10 @@
       "heading": {
         "id": "sec-performance-timing-confidence",
         "href": "https://w3c.github.io/navigation-timing/#sec-performance-timing-confidence",
-        "title": "PerformanceTimingConfidence interface",
-        "alternateIds": [
-          "x3-3-2-performancetimingconfidence-interface"
-        ],
+        "title": "The PerformanceTimingConfidence interface",
         "number": "3.3.2"
       },
-      "definedIn": "heading",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -789,9 +1102,7 @@
       "linkingText": [
         "randomizedTriggerRate"
       ],
-      "localLinkingText": [
-        "PerformanceTimingConfidence.randomizedTriggerRate"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTimingConfidence"
@@ -801,13 +1112,10 @@
       "heading": {
         "id": "sec-performance-timing-confidence",
         "href": "https://w3c.github.io/navigation-timing/#sec-performance-timing-confidence",
-        "title": "PerformanceTimingConfidence interface",
-        "alternateIds": [
-          "x3-3-2-performancetimingconfidence-interface"
-        ],
+        "title": "The PerformanceTimingConfidence interface",
         "number": "3.3.2"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -816,9 +1124,7 @@
       "linkingText": [
         "value"
       ],
-      "localLinkingText": [
-        "PerformanceTimingConfidence.value"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTimingConfidence"
@@ -828,13 +1134,10 @@
       "heading": {
         "id": "sec-performance-timing-confidence",
         "href": "https://w3c.github.io/navigation-timing/#sec-performance-timing-confidence",
-        "title": "PerformanceTimingConfidence interface",
-        "alternateIds": [
-          "x3-3-2-performancetimingconfidence-interface"
-        ],
+        "title": "The PerformanceTimingConfidence interface",
         "number": "3.3.2"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -843,11 +1146,7 @@
       "linkingText": [
         "toJSON()"
       ],
-      "localLinkingText": [
-        "PerformanceTimingConfidence.toJSON",
-        "PerformanceTimingConfidence.toJSON()",
-        "toJSON"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "PerformanceTimingConfidence"
@@ -857,18 +1156,81 @@
       "heading": {
         "id": "sec-performance-timing-confidence",
         "href": "https://w3c.github.io/navigation-timing/#sec-performance-timing-confidence",
-        "title": "PerformanceTimingConfidence interface",
-        "alternateIds": [
-          "x3-3-2-performancetimingconfidence-interface"
-        ],
+        "title": "The PerformanceTimingConfidence interface",
+        "number": "3.3.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "performancetimingconfidence-randomizedtriggerrate",
+      "href": "https://w3c.github.io/navigation-timing/#performancetimingconfidence-randomizedtriggerrate",
+      "linkingText": [
+        "randomizedTriggerRate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTimingConfidence"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-performance-timing-confidence",
+        "href": "https://w3c.github.io/navigation-timing/#sec-performance-timing-confidence",
+        "title": "The PerformanceTimingConfidence interface",
         "number": "3.3.2"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dom-performancetimingconfidencevalue",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancetimingconfidencevalue",
+      "id": "performancetimingconfidence-value",
+      "href": "https://w3c.github.io/navigation-timing/#performancetimingconfidence-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTimingConfidence"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-performance-timing-confidence",
+        "href": "https://w3c.github.io/navigation-timing/#sec-performance-timing-confidence",
+        "title": "The PerformanceTimingConfidence interface",
+        "number": "3.3.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetimingconfidence-tojson",
+      "href": "https://w3c.github.io/navigation-timing/#performancetimingconfidence-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTimingConfidence"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-performance-timing-confidence",
+        "href": "https://w3c.github.io/navigation-timing/#sec-performance-timing-confidence",
+        "title": "The PerformanceTimingConfidence interface",
+        "number": "3.3.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "enumdef-performancetimingconfidencevalue",
+      "href": "https://w3c.github.io/navigation-timing/#enumdef-performancetimingconfidencevalue",
       "linkingText": [
         "PerformanceTimingConfidenceValue"
       ],
@@ -880,20 +1242,17 @@
       "heading": {
         "id": "sec-performance-timing-confidence-value",
         "href": "https://w3c.github.io/navigation-timing/#sec-performance-timing-confidence-value",
-        "title": "PerformanceTimingConfidenceValue enum",
-        "alternateIds": [
-          "x3-3-3-performancetimingconfidencevalue-enum"
-        ],
+        "title": "The PerformanceTimingConfidenceValue enum",
         "number": "3.3.3"
       },
-      "definedIn": "heading",
+      "definedIn": "pre",
       "links": []
     },
     {
       "id": "dom-performancetimingconfidencevalue-high",
       "href": "https://w3c.github.io/navigation-timing/#dom-performancetimingconfidencevalue-high",
       "linkingText": [
-        "high"
+        "\"high\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -905,20 +1264,17 @@
       "heading": {
         "id": "sec-performance-timing-confidence-value",
         "href": "https://w3c.github.io/navigation-timing/#sec-performance-timing-confidence-value",
-        "title": "PerformanceTimingConfidenceValue enum",
-        "alternateIds": [
-          "x3-3-3-performancetimingconfidencevalue-enum"
-        ],
+        "title": "The PerformanceTimingConfidenceValue enum",
         "number": "3.3.3"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
       "id": "dom-performancetimingconfidencevalue-low",
       "href": "https://w3c.github.io/navigation-timing/#dom-performancetimingconfidencevalue-low",
       "linkingText": [
-        "low"
+        "\"low\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -930,41 +1286,81 @@
       "heading": {
         "id": "sec-performance-timing-confidence-value",
         "href": "https://w3c.github.io/navigation-timing/#sec-performance-timing-confidence-value",
-        "title": "PerformanceTimingConfidenceValue enum",
-        "alternateIds": [
-          "x3-3-3-performancetimingconfidencevalue-enum"
-        ],
+        "title": "The PerformanceTimingConfidenceValue enum",
+        "number": "3.3.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "performancetimingconfidencevalue-high",
+      "href": "https://w3c.github.io/navigation-timing/#performancetimingconfidencevalue-high",
+      "linkingText": [
+        "high"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTimingConfidenceValue"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-performance-timing-confidence-value",
+        "href": "https://w3c.github.io/navigation-timing/#sec-performance-timing-confidence-value",
+        "title": "The PerformanceTimingConfidenceValue enum",
         "number": "3.3.3"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dfn-navigation-timing-entry",
-      "href": "https://w3c.github.io/navigation-timing/#dfn-navigation-timing-entry",
+      "id": "performancetimingconfidencevalue-low",
+      "href": "https://w3c.github.io/navigation-timing/#performancetimingconfidencevalue-low",
+      "linkingText": [
+        "low"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTimingConfidenceValue"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-performance-timing-confidence-value",
+        "href": "https://w3c.github.io/navigation-timing/#sec-performance-timing-confidence-value",
+        "title": "The PerformanceTimingConfidenceValue enum",
+        "number": "3.3.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "document-navigation-timing-entry",
+      "href": "https://w3c.github.io/navigation-timing/#document-navigation-timing-entry",
       "linkingText": [
         "navigation timing entry"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "Document"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "marking-navigation-timing",
         "href": "https://w3c.github.io/navigation-timing/#marking-navigation-timing",
         "title": "Creating a navigation timing entry",
-        "alternateIds": [
-          "x5-creating-a-navigation-timing-entry"
-        ],
         "number": "5"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-create-the-navigation-timing-entry",
-      "href": "https://w3c.github.io/navigation-timing/#dfn-create-the-navigation-timing-entry",
+      "id": "create-the-navigation-timing-entry",
+      "href": "https://w3c.github.io/navigation-timing/#create-the-navigation-timing-entry",
       "linkingText": [
         "create the navigation timing entry"
       ],
@@ -977,17 +1373,14 @@
         "id": "marking-navigation-timing",
         "href": "https://w3c.github.io/navigation-timing/#marking-navigation-timing",
         "title": "Creating a navigation timing entry",
-        "alternateIds": [
-          "x5-creating-a-navigation-timing-entry"
-        ],
         "number": "5"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dfn-queue-the-navigation-timing-entry",
-      "href": "https://w3c.github.io/navigation-timing/#dfn-queue-the-navigation-timing-entry",
+      "id": "queue-the-navigation-timing-entry",
+      "href": "https://w3c.github.io/navigation-timing/#queue-the-navigation-timing-entry",
       "linkingText": [
         "queue the navigation timing entry"
       ],
@@ -1000,17 +1393,58 @@
         "id": "marking-navigation-timing",
         "href": "https://w3c.github.io/navigation-timing/#marking-navigation-timing",
         "title": "Creating a navigation timing entry",
-        "alternateIds": [
-          "x5-creating-a-navigation-timing-entry"
-        ],
         "number": "5"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "dom-performancetiming",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancetiming",
+      "id": "the-performancetiming-interface",
+      "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+      "linkingText": [
+        "The PerformanceTiming interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "performancetiming-performancetiming",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-performancetiming",
+      "linkingText": [
+        "PerformanceTiming"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "performancetiming",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming",
       "linkingText": [
         "PerformanceTiming"
       ],
@@ -1023,12 +1457,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "heading",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1037,9 +1468,7 @@
       "linkingText": [
         "navigationStart"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.navigationStart"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1050,12 +1479,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1064,9 +1490,7 @@
       "linkingText": [
         "unloadEventStart"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.unloadEventStart"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1077,12 +1501,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1091,9 +1512,7 @@
       "linkingText": [
         "unloadEventEnd"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.unloadEventEnd"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1104,12 +1523,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1118,9 +1534,7 @@
       "linkingText": [
         "redirectStart"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.redirectStart"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1131,12 +1545,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1145,9 +1556,7 @@
       "linkingText": [
         "redirectEnd"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.redirectEnd"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1158,12 +1567,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1172,9 +1578,7 @@
       "linkingText": [
         "fetchStart"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.fetchStart"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1185,12 +1589,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1199,9 +1600,7 @@
       "linkingText": [
         "domainLookupStart"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.domainLookupStart"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1212,12 +1611,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1226,9 +1622,7 @@
       "linkingText": [
         "domainLookupEnd"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.domainLookupEnd"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1239,12 +1633,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1253,9 +1644,7 @@
       "linkingText": [
         "connectStart"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.connectStart"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1266,12 +1655,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1280,9 +1666,7 @@
       "linkingText": [
         "connectEnd"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.connectEnd"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1293,12 +1677,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1307,9 +1688,7 @@
       "linkingText": [
         "secureConnectionStart"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.secureConnectionStart"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1320,12 +1699,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1334,9 +1710,7 @@
       "linkingText": [
         "requestStart"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.requestStart"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1347,12 +1721,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1361,9 +1732,7 @@
       "linkingText": [
         "responseStart"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.responseStart"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1374,12 +1743,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1388,9 +1754,7 @@
       "linkingText": [
         "responseEnd"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.responseEnd"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1401,12 +1765,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1415,9 +1776,7 @@
       "linkingText": [
         "domLoading"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.domLoading"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1428,12 +1787,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1442,9 +1798,7 @@
       "linkingText": [
         "domInteractive"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.domInteractive"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1455,12 +1809,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1469,9 +1820,7 @@
       "linkingText": [
         "domContentLoadedEventStart"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.domContentLoadedEventStart"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1482,12 +1831,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1496,9 +1842,7 @@
       "linkingText": [
         "domContentLoadedEventEnd"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.domContentLoadedEventEnd"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1509,12 +1853,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1523,9 +1864,7 @@
       "linkingText": [
         "domComplete"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.domComplete"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1536,12 +1875,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1550,9 +1886,7 @@
       "linkingText": [
         "loadEventStart"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.loadEventStart"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1563,12 +1897,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1577,9 +1908,7 @@
       "linkingText": [
         "loadEventEnd"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.loadEventEnd"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceTiming"
@@ -1590,12 +1919,9 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
         "number": "8.1"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1604,11 +1930,7 @@
       "linkingText": [
         "toJSON()"
       ],
-      "localLinkingText": [
-        "PerformanceTiming.toJSON",
-        "PerformanceTiming.toJSON()",
-        "toJSON"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "PerformanceTiming"
@@ -1619,17 +1941,542 @@
         "id": "the-performancetiming-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
         "title": "The PerformanceTiming interface",
-        "alternateIds": [
-          "x8-1-the-performancetiming-interface"
-        ],
+        "number": "8.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "performancetiming-navigationstart",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-navigationstart",
+      "linkingText": [
+        "navigationStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
         "number": "8.1"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dom-performancenavigation",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performancenavigation",
+      "id": "performancetiming-unloadeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-unloadeventstart",
+      "linkingText": [
+        "unloadEventStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-unloadeventend",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-unloadeventend",
+      "linkingText": [
+        "unloadEventEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-redirectstart",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-redirectstart",
+      "linkingText": [
+        "redirectStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-redirectend",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-redirectend",
+      "linkingText": [
+        "redirectEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-fetchstart",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-fetchstart",
+      "linkingText": [
+        "fetchStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-domainlookupstart",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-domainlookupstart",
+      "linkingText": [
+        "domainLookupStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-domainlookupend",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-domainlookupend",
+      "linkingText": [
+        "domainLookupEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-connectstart",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-connectstart",
+      "linkingText": [
+        "connectStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-connectend",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-connectend",
+      "linkingText": [
+        "connectEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-secureconnectionstart",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-secureconnectionstart",
+      "linkingText": [
+        "secureConnectionStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-requeststart",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-requeststart",
+      "linkingText": [
+        "requestStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-responsestart",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-responsestart",
+      "linkingText": [
+        "responseStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-responseend",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-responseend",
+      "linkingText": [
+        "responseEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-domloading",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-domloading",
+      "linkingText": [
+        "domLoading"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-dominteractive",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-dominteractive",
+      "linkingText": [
+        "domInteractive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-domcontentloadedeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-domcontentloadedeventstart",
+      "linkingText": [
+        "domContentLoadedEventStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-domcontentloadedeventend",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-domcontentloadedeventend",
+      "linkingText": [
+        "domContentLoadedEventEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-domcomplete",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-domcomplete",
+      "linkingText": [
+        "domComplete"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-loadeventstart",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-loadeventstart",
+      "linkingText": [
+        "loadEventStart"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-loadeventend",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-loadeventend",
+      "linkingText": [
+        "loadEventEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancetiming-tojson",
+      "href": "https://w3c.github.io/navigation-timing/#performancetiming-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancetiming-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancetiming-interface",
+        "title": "The PerformanceTiming interface",
+        "number": "8.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "the-performancenavigation-interface",
+      "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+      "linkingText": [
+        "The PerformanceNavigation interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-performancenavigation-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+        "title": "The PerformanceNavigation interface",
+        "number": "8.2"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "performancenavigation-performancenavigation",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigation-performancenavigation",
+      "linkingText": [
+        "PerformanceNavigation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancenavigation-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+        "title": "The PerformanceNavigation interface",
+        "number": "8.2"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "performancenavigation",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigation",
       "linkingText": [
         "PerformanceNavigation"
       ],
@@ -1642,12 +2489,9 @@
         "id": "the-performancenavigation-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
         "title": "The PerformanceNavigation interface",
-        "alternateIds": [
-          "x8-2-the-performancenavigation-interface"
-        ],
         "number": "8.2"
       },
-      "definedIn": "heading",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1667,12 +2511,9 @@
         "id": "the-performancenavigation-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
         "title": "The PerformanceNavigation interface",
-        "alternateIds": [
-          "x8-2-the-performancenavigation-interface"
-        ],
         "number": "8.2"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1692,12 +2533,9 @@
         "id": "the-performancenavigation-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
         "title": "The PerformanceNavigation interface",
-        "alternateIds": [
-          "x8-2-the-performancenavigation-interface"
-        ],
         "number": "8.2"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1717,12 +2555,9 @@
         "id": "the-performancenavigation-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
         "title": "The PerformanceNavigation interface",
-        "alternateIds": [
-          "x8-2-the-performancenavigation-interface"
-        ],
         "number": "8.2"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1742,12 +2577,9 @@
         "id": "the-performancenavigation-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
         "title": "The PerformanceNavigation interface",
-        "alternateIds": [
-          "x8-2-the-performancenavigation-interface"
-        ],
         "number": "8.2"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1756,9 +2588,7 @@
       "linkingText": [
         "type"
       ],
-      "localLinkingText": [
-        "PerformanceNavigation.type"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceNavigation"
@@ -1769,12 +2599,9 @@
         "id": "the-performancenavigation-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
         "title": "The PerformanceNavigation interface",
-        "alternateIds": [
-          "x8-2-the-performancenavigation-interface"
-        ],
         "number": "8.2"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1783,9 +2610,7 @@
       "linkingText": [
         "redirectCount"
       ],
-      "localLinkingText": [
-        "PerformanceNavigation.redirectCount"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "PerformanceNavigation"
@@ -1796,12 +2621,9 @@
         "id": "the-performancenavigation-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
         "title": "The PerformanceNavigation interface",
-        "alternateIds": [
-          "x8-2-the-performancenavigation-interface"
-        ],
         "number": "8.2"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1810,11 +2632,7 @@
       "linkingText": [
         "toJSON()"
       ],
-      "localLinkingText": [
-        "PerformanceNavigation.toJSON",
-        "PerformanceNavigation.toJSON()",
-        "toJSON"
-      ],
+      "localLinkingText": [],
       "type": "method",
       "for": [
         "PerformanceNavigation"
@@ -1825,35 +2643,185 @@
         "id": "the-performancenavigation-interface",
         "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
         "title": "The PerformanceNavigation interface",
-        "alternateIds": [
-          "x8-2-the-performancenavigation-interface"
-        ],
+        "number": "8.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "performancenavigation-type_navigate",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigation-type_navigate",
+      "linkingText": [
+        "TYPE_NAVIGATE"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancenavigation-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+        "title": "The PerformanceNavigation interface",
         "number": "8.2"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dom-performance",
-      "href": "https://w3c.github.io/navigation-timing/#dom-performance",
+      "id": "performancenavigation-type_reload",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigation-type_reload",
       "linkingText": [
-        "Performance"
+        "TYPE_RELOAD"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancenavigation-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+        "title": "The PerformanceNavigation interface",
+        "number": "8.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancenavigation-type_back_forward",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigation-type_back_forward",
+      "linkingText": [
+        "TYPE_BACK_FORWARD"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancenavigation-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+        "title": "The PerformanceNavigation interface",
+        "number": "8.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancenavigation-type_reserved",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigation-type_reserved",
+      "linkingText": [
+        "TYPE_RESERVED"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancenavigation-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+        "title": "The PerformanceNavigation interface",
+        "number": "8.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancenavigation-type",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigation-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancenavigation-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+        "title": "The PerformanceNavigation interface",
+        "number": "8.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancenavigation-redirectcount",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigation-redirectcount",
+      "linkingText": [
+        "redirectCount"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancenavigation-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+        "title": "The PerformanceNavigation interface",
+        "number": "8.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performancenavigation-tojson",
+      "href": "https://w3c.github.io/navigation-timing/#performancenavigation-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceNavigation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-performancenavigation-interface",
+        "href": "https://w3c.github.io/navigation-timing/#the-performancenavigation-interface",
+        "title": "The PerformanceNavigation interface",
+        "number": "8.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "extensions-to-the-performance-interface",
+      "href": "https://w3c.github.io/navigation-timing/#extensions-to-the-performance-interface",
+      "linkingText": [
+        "Extensions to the Performance interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Performance"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "extensions-to-the-performance-interface",
         "href": "https://w3c.github.io/navigation-timing/#extensions-to-the-performance-interface",
         "title": "Extensions to the Performance interface",
-        "alternateIds": [
-          "x8-3-extensions-to-the-performance-interface"
-        ],
         "number": "8.3"
       },
-      "definedIn": "prose",
+      "definedIn": "heading",
       "links": []
     },
     {
@@ -1862,9 +2830,7 @@
       "linkingText": [
         "timing"
       ],
-      "localLinkingText": [
-        "Performance.timing"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "Performance"
@@ -1875,12 +2841,9 @@
         "id": "extensions-to-the-performance-interface",
         "href": "https://w3c.github.io/navigation-timing/#extensions-to-the-performance-interface",
         "title": "Extensions to the Performance interface",
-        "alternateIds": [
-          "x8-3-extensions-to-the-performance-interface"
-        ],
         "number": "8.3"
       },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -1889,9 +2852,7 @@
       "linkingText": [
         "navigation"
       ],
-      "localLinkingText": [
-        "Performance.navigation"
-      ],
+      "localLinkingText": [],
       "type": "attribute",
       "for": [
         "Performance"
@@ -1902,9 +2863,70 @@
         "id": "extensions-to-the-performance-interface",
         "href": "https://w3c.github.io/navigation-timing/#extensions-to-the-performance-interface",
         "title": "Extensions to the Performance interface",
-        "alternateIds": [
-          "x8-3-extensions-to-the-performance-interface"
-        ],
+        "number": "8.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "performance",
+      "href": "https://w3c.github.io/navigation-timing/#performance",
+      "linkingText": [
+        "Performance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-performance-interface",
+        "href": "https://w3c.github.io/navigation-timing/#extensions-to-the-performance-interface",
+        "title": "Extensions to the Performance interface",
+        "number": "8.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "performance-timing",
+      "href": "https://w3c.github.io/navigation-timing/#performance-timing",
+      "linkingText": [
+        "timing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-performance-interface",
+        "href": "https://w3c.github.io/navigation-timing/#extensions-to-the-performance-interface",
+        "title": "Extensions to the Performance interface",
+        "number": "8.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "performance-navigation",
+      "href": "https://w3c.github.io/navigation-timing/#performance-navigation",
+      "linkingText": [
+        "navigation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-performance-interface",
+        "href": "https://w3c.github.io/navigation-timing/#extensions-to-the-performance-interface",
+        "title": "Extensions to the Performance interface",
         "number": "8.3"
       },
       "definedIn": "dt",

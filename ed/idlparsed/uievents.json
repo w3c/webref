@@ -270,283 +270,6 @@
         "partial": false,
         "href": "https://w3c.github.io/uievents/#dictdef-focuseventinit"
       },
-      "EventModifierInit": {
-        "fragment": "dictionary EventModifierInit : UIEventInit {\n  boolean ctrlKey = false;\n  boolean shiftKey = false;\n  boolean altKey = false;\n  boolean metaKey = false;\n\n  boolean modifierAltGraph = false;\n  boolean modifierCapsLock = false;\n  boolean modifierFn = false;\n  boolean modifierFnLock = false;\n  boolean modifierHyper = false;\n  boolean modifierNumLock = false;\n  boolean modifierScrollLock = false;\n  boolean modifierSuper = false;\n  boolean modifierSymbol = false;\n  boolean modifierSymbolLock = false;\n};",
-        "type": "dictionary",
-        "name": "EventModifierInit",
-        "inheritance": "UIEventInit",
-        "members": [
-          {
-            "type": "field",
-            "name": "ctrlKey",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-ctrlkey"
-          },
-          {
-            "type": "field",
-            "name": "shiftKey",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-shiftkey"
-          },
-          {
-            "type": "field",
-            "name": "altKey",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-altkey"
-          },
-          {
-            "type": "field",
-            "name": "metaKey",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-metakey"
-          },
-          {
-            "type": "field",
-            "name": "modifierAltGraph",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifieraltgraph"
-          },
-          {
-            "type": "field",
-            "name": "modifierCapsLock",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiercapslock"
-          },
-          {
-            "type": "field",
-            "name": "modifierFn",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierfn"
-          },
-          {
-            "type": "field",
-            "name": "modifierFnLock",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierfnlock"
-          },
-          {
-            "type": "field",
-            "name": "modifierHyper",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierhyper"
-          },
-          {
-            "type": "field",
-            "name": "modifierNumLock",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiernumlock"
-          },
-          {
-            "type": "field",
-            "name": "modifierScrollLock",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierscrolllock"
-          },
-          {
-            "type": "field",
-            "name": "modifierSuper",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersuper"
-          },
-          {
-            "type": "field",
-            "name": "modifierSymbol",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersymbol"
-          },
-          {
-            "type": "field",
-            "name": "modifierSymbolLock",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false,
-            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersymbollock"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://w3c.github.io/uievents/#dictdef-eventmodifierinit"
-      },
       "InputEvent": {
         "fragment": "[Exposed=Window]\ninterface InputEvent : UIEvent {\n  constructor(DOMString type, optional InputEventInit eventInitDict = {});\n  readonly attribute USVString? data;\n  readonly attribute boolean isComposing;\n  readonly attribute DOMString inputType;\n};",
         "type": "interface",
@@ -1140,6 +863,283 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://w3c.github.io/uievents/#dictdef-keyboardeventinit"
+      },
+      "EventModifierInit": {
+        "fragment": "dictionary EventModifierInit : UIEventInit {\n  boolean ctrlKey = false;\n  boolean shiftKey = false;\n  boolean altKey = false;\n  boolean metaKey = false;\n\n  boolean modifierAltGraph = false;\n  boolean modifierCapsLock = false;\n  boolean modifierFn = false;\n  boolean modifierFnLock = false;\n  boolean modifierHyper = false;\n  boolean modifierNumLock = false;\n  boolean modifierScrollLock = false;\n  boolean modifierSuper = false;\n  boolean modifierSymbol = false;\n  boolean modifierSymbolLock = false;\n};",
+        "type": "dictionary",
+        "name": "EventModifierInit",
+        "inheritance": "UIEventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "ctrlKey",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-ctrlkey"
+          },
+          {
+            "type": "field",
+            "name": "shiftKey",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-shiftkey"
+          },
+          {
+            "type": "field",
+            "name": "altKey",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-altkey"
+          },
+          {
+            "type": "field",
+            "name": "metaKey",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-metakey"
+          },
+          {
+            "type": "field",
+            "name": "modifierAltGraph",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifieraltgraph"
+          },
+          {
+            "type": "field",
+            "name": "modifierCapsLock",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiercapslock"
+          },
+          {
+            "type": "field",
+            "name": "modifierFn",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierfn"
+          },
+          {
+            "type": "field",
+            "name": "modifierFnLock",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierfnlock"
+          },
+          {
+            "type": "field",
+            "name": "modifierHyper",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierhyper"
+          },
+          {
+            "type": "field",
+            "name": "modifierNumLock",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiernumlock"
+          },
+          {
+            "type": "field",
+            "name": "modifierScrollLock",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifierscrolllock"
+          },
+          {
+            "type": "field",
+            "name": "modifierSuper",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersuper"
+          },
+          {
+            "type": "field",
+            "name": "modifierSymbol",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersymbol"
+          },
+          {
+            "type": "field",
+            "name": "modifierSymbolLock",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/uievents/#dom-eventmodifierinit-modifiersymbollock"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/uievents/#dictdef-eventmodifierinit"
       },
       "CompositionEvent": {
         "fragment": "[Exposed=Window]\ninterface CompositionEvent : UIEvent {\n  constructor(DOMString type, optional CompositionEventInit eventInitDict = {});\n  readonly attribute USVString data;\n};",
@@ -2031,9 +2031,6 @@
         "UIEventInit",
         "EventTarget"
       ],
-      "EventModifierInit": [
-        "UIEventInit"
-      ],
       "InputEvent": [
         "UIEvent",
         "InputEventInit"
@@ -2048,6 +2045,9 @@
       ],
       "KeyboardEventInit": [
         "EventModifierInit"
+      ],
+      "EventModifierInit": [
+        "UIEventInit"
       ],
       "CompositionEvent": [
         "UIEvent",

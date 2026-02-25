@@ -599,7 +599,7 @@
         "href": "https://drafts.csswg.org/cssom-1/#cssstylesheet"
       },
       "CSSStyleSheetInit": {
-        "fragment": "dictionary CSSStyleSheetInit {\n  DOMString baseURL = null;\n  (MediaList or DOMString) media = \"\";\n  boolean disabled = false;\n};",
+        "fragment": "dictionary CSSStyleSheetInit {\n  DOMString? baseURL = null;\n  (MediaList or DOMString) media = \"\";\n  boolean disabled = false;\n};",
         "type": "dictionary",
         "name": "CSSStyleSheetInit",
         "inheritance": null,
@@ -612,7 +612,7 @@
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "DOMString"
             },

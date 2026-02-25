@@ -6,31 +6,90 @@
   "links": {
     "rawlinks": {
       "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.69.7329&rep=rep1&type=pdf": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/domComplete": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/domContentLoadedEventEnd": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/domContentLoadedEventStart": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/domInteractive": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/loadEventEnd": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/loadEventStart": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/redirectCount": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/toJSON": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/type": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/unloadEventEnd": {},
-      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/unloadEventStart": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://fetch.spec.whatwg.org/": {},
+      "https://github.com/w3c/navigation-timing/issues": {},
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
+        "anchors": [
+          "concept-origin",
+          "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "reload",
+          "navigate"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
+        "anchors": [
+          "navigable"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/indices.html": {
+        "anchors": [
+          "event-load"
+        ]
+      },
+      "https://httpwg.org/specs/rfc7234.html": {},
+      "https://infra.spec.whatwg.org/": {},
+      "https://tools.ietf.org/html/rfc7234": {},
+      "https://url.spec.whatwg.org/": {},
+      "https://w3c.github.io/ServiceWorker/": {},
+      "https://w3c.github.io/hr-time/": {},
+      "https://w3c.github.io/performance-timeline/": {},
+      "https://w3c.github.io/resource-timing/": {},
+      "https://webidl.spec.whatwg.org/": {},
+      "https://www.rfc-editor.org/rfc/rfc2616": {},
+      "https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html": {
+        "anchors": [
+          "sec13"
+        ]
+      },
+      "https://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html": {
+        "anchors": [
+          "sec8.1"
+        ]
+      },
+      "https://www.w3.org/TR/navigation-timing-2/": {
+        "anchors": [
+          "dom-performancenavigationtiming-redirectcount"
+        ]
+      },
+      "https://www.w3.org/TR/navigation-timing/": {},
+      "https://www.w3.org/TR/resource-timing/": {
+        "anchors": [
+          "dom-performanceresourcetiming-nexthopprotocol",
+          "dom-performanceresourcetiming-transfersize",
+          "dom-performanceresourcetiming-encodedbodysize",
+          "dom-performanceresourcetiming-decodedbodysize",
+          "dom-performanceresourcetiming-secureconnectionstart"
+        ]
+      },
+      "https://www.w3.org/policies/process/20250818/": {}
+    },
+    "autolinks": {
+      "https://dom.spec.whatwg.org/": {
+        "anchors": [
+          "concept-document",
+          "document",
+          "dom-document-url"
+        ]
+      },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "concept-fetch",
           "redirect-status",
+          "fetch-timing-info",
+          "response-body-info",
           "concept-request-method"
         ]
       },
       "https://html.spec.whatwg.org/multipage/": {
         "anchors": [
-          "concept-origin",
-          "update-the-session-history-with-the-new-page",
-          "same-origin"
+          "update-the-session-history-with-the-new-page"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
@@ -39,19 +98,37 @@
           "history-handling-behavior",
           "hh-default",
           "hh-replace",
-          "reload",
           "apply-the-history-step",
           "prompt-to-unload-a-document",
           "unload-a-document",
           "hh-reload",
-          "hh-entry-update",
-          "navigate"
+          "hh-entry-update"
         ]
       },
       "https://html.spec.whatwg.org/multipage/dom.html": {
         "anchors": [
+          "document-load-timing-info",
+          "document-unload-timing-info",
+          "unload-event-start-time",
+          "unload-event-end-time",
+          "dom-interactive-time",
           "current-document-readiness",
-          "document"
+          "dom-content-loaded-event-start-time",
+          "dom-content-loaded-event-end-time",
+          "dom-complete-time",
+          "load-event-start-time",
+          "load-event-end-time",
+          "load-timing-info",
+          "previous-document-unload-timing"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
+        "anchors": [
+          "concept-document-window",
+          "notrestoredreasons",
+          "create-a-notrestoredreasons-object",
+          "concept-document-nrr",
+          "queue-a-navigation-performanceentry"
         ]
       },
       "https://html.spec.whatwg.org/multipage/origin.html": {
@@ -75,122 +152,6 @@
           "fetching-resources"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/window-object.html": {
-        "anchors": [
-          "window"
-        ]
-      },
-      "https://httpwg.org/specs/rfc7234.html": {},
-      "https://infra.spec.whatwg.org/": {},
-      "https://tools.ietf.org/html/RFC7234": {},
-      "https://url.spec.whatwg.org/": {
-        "anchors": [
-          "concept-url-scheme"
-        ]
-      },
-      "https://webidl.spec.whatwg.org/": {},
-      "https://www.rfc-editor.org/info/bcp14": {},
-      "https://www.rfc-editor.org/rfc/rfc2119": {},
-      "https://www.rfc-editor.org/rfc/rfc2616": {},
-      "https://www.rfc-editor.org/rfc/rfc8174": {},
-      "https://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html": {
-        "anchors": [
-          "sec13"
-        ]
-      },
-      "https://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html": {
-        "anchors": [
-          "sec8.1"
-        ]
-      },
-      "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/hr-time-2/": {},
-      "https://www.w3.org/TR/hr-time-3/": {},
-      "https://www.w3.org/TR/navigation-timing/": {},
-      "https://www.w3.org/TR/performance-timeline/": {
-        "anchors": [
-          "supportedentrytypes-attribute",
-          "dfn-performance-entry-buffer"
-        ]
-      },
-      "https://www.w3.org/TR/resource-timing/": {
-        "anchors": [
-          "dom-performanceresourcetiming-nexthopprotocol",
-          "dom-performanceresourcetiming-transfersize",
-          "dom-performanceresourcetiming-encodedbodysize",
-          "dom-performanceresourcetiming-decodedbodysize",
-          "dom-performanceresourcetiming-secureconnectionstart",
-          "dom-performanceresourcetiming",
-          "dom-performanceresourcetiming-requeststart",
-          "dom-performanceresourcetiming-responsestart",
-          "dom-performanceresourcetiming-responseend",
-          "dfn-setup-the-resource-timing-entry",
-          "dom-performanceresourcetiming-connectstart",
-          "dom-performanceresourcetiming-connectend"
-        ]
-      },
-      "https://www.w3.org/TR/service-workers/": {},
-      "https://www.w3.org/groups/wg/webperf": {},
-      "https://www.w3.org/groups/wg/webperf/ipr": {},
-      "https://www.w3.org/policies/patent-policy/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
-      "https://www.w3.org/policies/process/20250818/": {}
-    },
-    "autolinks": {
-      "https://dom.spec.whatwg.org/": {
-        "anchors": [
-          "concept-document",
-          "document",
-          "dom-document-url"
-        ]
-      },
-      "https://fetch.spec.whatwg.org/": {
-        "anchors": [
-          "fetch-timing-info",
-          "response-body-info"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/browsers.html": {
-        "anchors": [
-          "same-origin"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
-        "anchors": [
-          "navigable"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/dom.html": {
-        "anchors": [
-          "document-load-timing-info",
-          "document-unload-timing-info",
-          "unload-event-start-time",
-          "unload-event-end-time",
-          "dom-interactive-time",
-          "dom-content-loaded-event-start-time",
-          "dom-content-loaded-event-end-time",
-          "dom-complete-time",
-          "load-event-start-time",
-          "load-event-end-time",
-          "load-timing-info"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/indices.html": {
-        "anchors": [
-          "event-load"
-        ]
-      },
-      "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
-        "anchors": [
-          "concept-document-window",
-          "notrestoredreasons",
-          "create-a-notrestoredreasons-object"
-        ]
-      },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "concept-settings-object-time-origin",
@@ -200,9 +161,56 @@
           "concept-global-object-realm"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/window-object.html": {
+        "anchors": [
+          "window"
+        ]
+      },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "implementation-defined"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-scheme"
+        ]
+      },
+      "https://w3c.github.io/ServiceWorker/": {
+        "anchors": [
+          "service-worker-timing-info-start-time",
+          "service-worker-timing-info-fetch-event-dispatch-time",
+          "dfn-service-worker",
+          "fetchevent",
+          "service-worker-timing-info"
+        ]
+      },
+      "https://w3c.github.io/hr-time/": {
+        "anchors": [
+          "dom-domhighrestimestamp",
+          "dom-performance-timeorigin",
+          "dom-performance"
+        ]
+      },
+      "https://w3c.github.io/performance-timeline/": {
+        "anchors": [
+          "dom-performanceentry",
+          "dom-performanceentry-starttime",
+          "dom-performanceentry-duration"
+        ]
+      },
+      "https://w3c.github.io/resource-timing/": {
+        "anchors": [
+          "performanceresourcetiming",
+          "dom-performanceresourcetiming-redirectstart",
+          "dom-performanceresourcetiming-redirectend",
+          "dom-performanceresourcetiming-workerstart",
+          "dom-performanceresourcetiming-fetchstart",
+          "dom-performanceresourcetiming-requeststart",
+          "dom-performanceresourcetiming-responsestart",
+          "dom-performanceresourcetiming-responseend",
+          "dom-performanceresourcetiming-connectstart",
+          "dom-performanceresourcetiming-connectend"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -220,36 +228,15 @@
           "SameObject"
         ]
       },
-      "https://www.w3.org/TR/hr-time-3/": {
-        "anchors": [
-          "dom-domhighrestimestamp",
-          "dom-performance-timeorigin"
-        ]
-      },
       "https://www.w3.org/TR/performance-timeline/": {
         "anchors": [
-          "dom-performanceentry",
-          "dom-performanceentry-starttime",
-          "dom-performanceentry-duration",
-          "dfn-queue-a-navigation-performanceentry"
+          "supportedentrytypes-attribute",
+          "dfn-performance-entry-buffer"
         ]
       },
       "https://www.w3.org/TR/resource-timing/": {
         "anchors": [
-          "dom-performanceresourcetiming-redirectstart",
-          "dom-performanceresourcetiming-redirectend",
-          "dom-performanceresourcetiming-workerstart",
-          "dom-performanceresourcetiming-fetchstart",
-          "dom-performanceresourcetiming"
-        ]
-      },
-      "https://www.w3.org/TR/service-workers/": {
-        "anchors": [
-          "service-worker-timing-info-start-time",
-          "service-worker-timing-info-fetch-event-dispatch-time",
-          "dfn-service-worker",
-          "fetchevent",
-          "service-worker-timing-info"
+          "dfn-setup-the-resource-timing-entry"
         ]
       }
     }
