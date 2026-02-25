@@ -28,6 +28,7 @@ import {
 import { applyPatches } from './apply-patches.js';
 import { dropCSSPropertyDuplicates } from './drop-css-property-duplicates.js';
 import { amendCssSyntaxes } from './amend-css-syntaxes.js';
+import { addCssLonghands } from './add-css-longhands.js';
 import { curateEvents } from './amend-event-data.js';
 import { crawlSpecs } from 'reffy';
 
@@ -124,6 +125,11 @@ async function prepareCurated(rawFolder, curatedFolder) {
   console.log();
   console.log('Amend CSS syntaxes as needed');
   await amendCssSyntaxes(curatedFolder);
+  console.log('- done');
+
+  console.log();
+  console.log('Add longhands to CSS shorthand properties');
+  await addCssLonghands(curatedFolder);
   console.log('- done');
 
   console.log();
