@@ -74,6 +74,10 @@
         "-webkit-text-stroke",
         "WebkitTextStroke",
         "webkitTextStroke"
+      ],
+      "longhands": [
+        "-webkit-text-stroke-width",
+        "-webkit-text-stroke-color"
       ]
     },
     {
@@ -223,7 +227,18 @@
         "WebkitAnimation",
         "webkitAnimation"
       ],
-      "value": "<single-animation>#"
+      "value": "<single-animation>#",
+      "longhands": [
+        "animation-name",
+        "animation-duration",
+        "animation-timing-function",
+        "animation-delay",
+        "animation-iteration-count",
+        "animation-direction",
+        "animation-fill-mode",
+        "animation-play-state",
+        "animation-timeline"
+      ]
     },
     {
       "name": "-webkit-backface-visibility",
@@ -322,7 +337,13 @@
         "WebkitBorderRadius",
         "webkitBorderRadius"
       ],
-      "value": "<length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?"
+      "value": "<length-percentage [0,∞]>{1,4} [ / <length-percentage [0,∞]>{1,4} ]?",
+      "longhands": [
+        "border-top-left-radius",
+        "border-top-right-radius",
+        "border-bottom-right-radius",
+        "border-bottom-left-radius"
+      ]
     },
     {
       "name": "-webkit-box-shadow",
@@ -333,7 +354,14 @@
         "WebkitBoxShadow",
         "webkitBoxShadow"
       ],
-      "value": "<spread-shadow>#"
+      "value": "<spread-shadow>#",
+      "longhands": [
+        "box-shadow-color",
+        "box-shadow-offset",
+        "box-shadow-blur",
+        "box-shadow-spread",
+        "box-shadow-position"
+      ]
     },
     {
       "name": "-webkit-box-sizing",
@@ -355,7 +383,12 @@
         "WebkitFlex",
         "webkitFlex"
       ],
-      "value": "none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]"
+      "value": "none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]",
+      "longhands": [
+        "flex-grow",
+        "flex-shrink",
+        "flex-basis"
+      ]
     },
     {
       "name": "-webkit-flex-basis",
@@ -388,7 +421,11 @@
         "WebkitFlexFlow",
         "webkitFlexFlow"
       ],
-      "value": "<'flex-direction'> || <'flex-wrap'>"
+      "value": "<'flex-direction'> || <'flex-wrap'>",
+      "longhands": [
+        "flex-direction",
+        "flex-wrap"
+      ]
     },
     {
       "name": "-webkit-flex-grow",
@@ -454,7 +491,17 @@
         "WebkitMask",
         "webkitMask"
       ],
-      "value": "<mask-layer>#"
+      "value": "<mask-layer>#",
+      "longhands": [
+        "mask-image",
+        "mask-position",
+        "mask-size",
+        "mask-repeat",
+        "mask-origin",
+        "mask-clip",
+        "mask-composite",
+        "mask-mode"
+      ]
     },
     {
       "name": "-webkit-mask-box-image",
@@ -465,7 +512,15 @@
         "WebkitMaskBoxImage",
         "webkitMaskBoxImage"
       ],
-      "value": "<'mask-border-source'> || <'mask-border-slice'> [ / <'mask-border-width'>? [ / <'mask-border-outset'> ]? ]? || <'mask-border-repeat'> || <'mask-border-mode'>"
+      "value": "<'mask-border-source'> || <'mask-border-slice'> [ / <'mask-border-width'>? [ / <'mask-border-outset'> ]? ]? || <'mask-border-repeat'> || <'mask-border-mode'>",
+      "longhands": [
+        "mask-border-source",
+        "mask-border-slice",
+        "mask-border-width",
+        "mask-border-outset",
+        "mask-border-repeat",
+        "mask-border-mode"
+      ]
     },
     {
       "name": "-webkit-mask-box-image-outset",
@@ -718,7 +773,14 @@
         "WebkitTransition",
         "webkitTransition"
       ],
-      "value": "<single-transition>#"
+      "value": "<single-transition>#",
+      "longhands": [
+        "transition-property",
+        "transition-duration",
+        "transition-timing-function",
+        "transition-delay",
+        "transition-behavior"
+      ]
     },
     {
       "name": "-webkit-text-size-adjust",
