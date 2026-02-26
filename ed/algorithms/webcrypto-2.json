@@ -192,13 +192,13 @@
           "html": "<p>\n                  Let <var>algorithm</var> and <var>key</var> be the\n                  <code>algorithm</code> and <code>key</code> parameters\n                  passed to the <a data-link-type=\"idl\" data-lt=\"encrypt()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-encrypt\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-encrypt-2\"><code>encrypt</code></a><code>()</code> method,\n                  respectively.\n                </p>"
         },
         {
-          "html": "<p>\n                  Let <var>data</var> be the result of\n                  <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>data</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"encrypt()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-encrypt\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-encrypt-3\"><code>encrypt</code></a><code>()</code> method.\n                </p>"
-        },
-        {
           "html": "<p>\n                  Let <var>normalizedAlgorithm</var> be the result of\n                  <a href=\"https://w3c.github.io/webcrypto/#dfn-normalize-an-algorithm\" id=\"ref-for-dfn-normalize-an-algorithm-1\">normalizing an algorithm</a>, with\n                  <code>alg</code> set to <var>algorithm</var> and <code>op</code> set to\n                  \"<code>encrypt</code>\".\n                </p>"
         },
         {
           "html": "<p>\n                  If an error occurred, return a Promise rejected with\n                  <var>normalizedAlgorithm</var>.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Let <var>data</var> be the result of\n                  <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>data</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"encrypt()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-encrypt\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-encrypt-3\"><code>encrypt</code></a><code>()</code> method.\n                </p>"
         },
         {
           "html": "<p>\n                  Let <var>realm</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.\n                </p>"
@@ -242,13 +242,13 @@
           "html": "<p>\n                  Let <var>algorithm</var> and <var>key</var> be the\n                  <code>algorithm</code> and <code>key</code> parameters\n                  passed to the <a data-link-type=\"idl\" data-lt=\"decrypt()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-decrypt\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-decrypt-2\"><code>decrypt</code></a><code>()</code> method,\n                  respectively.\n                </p>"
         },
         {
-          "html": "<p>\n                  Let <var>data</var> be the result of\n                  <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>data</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"decrypt()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-decrypt\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-decrypt-3\"><code>decrypt</code></a><code>()</code> method.\n                </p>"
-        },
-        {
           "html": "<p>\n                  Let <var>normalizedAlgorithm</var> be the result of\n                  <a href=\"https://w3c.github.io/webcrypto/#dfn-normalize-an-algorithm\" id=\"ref-for-dfn-normalize-an-algorithm-2\">normalizing an algorithm</a>, with\n                  <code>alg</code> set to <var>algorithm</var> and <code>op</code> set to\n                  \"<code>decrypt</code>\".\n                </p>"
         },
         {
           "html": "<p>\n                  If an error occurred, return a Promise rejected with\n                  <var>normalizedAlgorithm</var>.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Let <var>data</var> be the result of\n                  <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>data</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"decrypt()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-decrypt\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-decrypt-3\"><code>decrypt</code></a><code>()</code> method.\n                </p>"
         },
         {
           "html": "<p>\n                  Let <var>realm</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.\n                </p>"
@@ -292,13 +292,13 @@
           "html": "<p>\n                  Let <var>algorithm</var> and <var>key</var> be the\n                  <code>algorithm</code> and <code>key</code> parameters\n                  passed to the <a data-link-type=\"idl\" data-lt=\"sign()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-sign\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-sign-2\"><code>sign</code></a><code>()</code> method,\n                  respectively.\n                </p>"
         },
         {
-          "html": "<p>\n                  Let <var>data</var> be the result of\n                  <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>data</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"sign()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-sign\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-sign-3\"><code>sign</code></a><code>()</code> method.\n                </p>"
-        },
-        {
           "html": "<p>\n                  Let <var>normalizedAlgorithm</var> be the result of\n                  <a href=\"https://w3c.github.io/webcrypto/#dfn-normalize-an-algorithm\" id=\"ref-for-dfn-normalize-an-algorithm-3\">normalizing an algorithm</a>, with\n                  <code>alg</code> set to <var>algorithm</var> and <code>op</code> set to\n                  \"<code>sign</code>\".\n                </p>"
         },
         {
           "html": "<p>\n                  If an error occurred, return a Promise rejected with\n                  <var>normalizedAlgorithm</var>.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Let <var>data</var> be the result of\n                  <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>data</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"sign()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-sign\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-sign-3\"><code>sign</code></a><code>()</code> method.\n                </p>"
         },
         {
           "html": "<p>\n                  Let <var>realm</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.\n                </p>"
@@ -342,16 +342,16 @@
           "html": "<p>\n                  Let <var>algorithm</var> and <var>key</var>\n                  be the <code>algorithm</code> and <code>key</code> parameters passed to the\n                  <a data-link-type=\"idl\" data-lt=\"verify()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-verify\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-verify-2\"><code>verify</code></a><code>()</code> method, respectively.\n                </p>"
         },
         {
-          "html": "<p>\n                  Let <var>signature</var> be the result of\n                  <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>signature</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"verify()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-verify\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-verify-3\"><code>verify</code></a><code>()</code> method.\n                </p>"
-        },
-        {
-          "html": "<p>\n                  Let <var>data</var> be the result of\n                  <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>data</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"verify()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-verify\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-verify-4\"><code>verify</code></a><code>()</code> method.\n                </p>"
-        },
-        {
           "html": "<p>\n                  Let <var>normalizedAlgorithm</var> be the result of\n                  <a href=\"https://w3c.github.io/webcrypto/#dfn-normalize-an-algorithm\" id=\"ref-for-dfn-normalize-an-algorithm-4\">normalizing an algorithm</a>, with\n                  <code>alg</code> set to <var>algorithm</var> and <code>op</code> set to\n                  \"<code>verify</code>\".\n                </p>"
         },
         {
           "html": "<p>\n                  If an error occurred, return a Promise rejected with\n                  <var>normalizedAlgorithm</var>.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Let <var>signature</var> be the result of\n                  <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>signature</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"verify()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-verify\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-verify-3\"><code>verify</code></a><code>()</code> method.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Let <var>data</var> be the result of\n                  <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>data</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"verify()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-verify\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-verify-4\"><code>verify</code></a><code>()</code> method.\n                </p>"
         },
         {
           "html": "<p>\n                  Let <var>realm</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.\n                </p>"
@@ -392,13 +392,13 @@
           "html": "<p>\n                  Let <var>algorithm</var> be the <code>algorithm</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"digest()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-digest\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-digest-2\"><code>digest</code></a><code>()</code> method.\n                </p>"
         },
         {
-          "html": "<p>\n                  Let <var>data</var> be the result of\n                  <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>data</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"digest()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-digest\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-digest-3\"><code>digest</code></a><code>()</code> method.\n                </p>"
-        },
-        {
           "html": "<p>\n                  Let <var>normalizedAlgorithm</var> be the result of\n                  <a href=\"https://w3c.github.io/webcrypto/#dfn-normalize-an-algorithm\" id=\"ref-for-dfn-normalize-an-algorithm-5\">normalizing an algorithm</a>, with\n                  <code>alg</code> set to <var>algorithm</var> and <code>op</code> set to\n                  \"<code>digest</code>\".\n                </p>"
         },
         {
           "html": "<p>\n                  If an error occurred, return a Promise rejected with\n                  <var>normalizedAlgorithm</var>.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Let <var>data</var> be the result of\n                  <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>data</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"digest()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-digest\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-digest-3\"><code>digest</code></a><code>()</code> method.\n                </p>"
         },
         {
           "html": "<p>\n                  Let <var>realm</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.\n                </p>"
@@ -617,6 +617,12 @@
           "html": "<p>\n                  Let <var>format</var>, <var>algorithm</var>, <var>extractable</var> and\n                  <var>usages</var>, be the <code>format</code>, <code>algorithm</code>,\n                  <code>extractable</code> and <code>keyUsages</code> parameters passed to the <a data-link-type=\"idl\" data-lt=\"importKey()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-importKey\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-importKey-2\"><code>importKey</code></a><code>()</code> method, respectively.\n                </p>"
         },
         {
+          "html": "<p>\n                  Let <var>normalizedAlgorithm</var> be the result of\n                  <a href=\"https://w3c.github.io/webcrypto/#dfn-normalize-an-algorithm\" id=\"ref-for-dfn-normalize-an-algorithm-11\">normalizing an algorithm</a>, with\n                  <code>alg</code> set to <var>algorithm</var> and <code>op</code> set to\n                  \"<code>importKey</code>\".\n                </p>"
+        },
+        {
+          "html": "<p>\n                  If an error occurred, return a Promise rejected with\n                  <var>normalizedAlgorithm</var>.\n                </p>"
+        },
+        {
           "html": "<dl class=\"switch\">\n                  <dt>\n                    If <var>format</var> is equal to the string \"<a data-link-type=\"idl\" href=\"https://w3c.github.io/webcrypto/#dom-keyformat-jwk\" class=\"internalDFN\" id=\"ref-for-dom-keyformat-jwk-2\"><code>jwk</code></a>\":\n                  </dt>\n                  <dd>\n                    \n                  </dd>\n                  <dt>Otherwise:</dt>\n                  <dd>\n                    \n                  </dd>\n                </dl>",
           "rationale": ".switch",
           "steps": [
@@ -652,12 +658,6 @@
               ]
             }
           ]
-        },
-        {
-          "html": "<p>\n                  Let <var>normalizedAlgorithm</var> be the result of\n                  <a href=\"https://w3c.github.io/webcrypto/#dfn-normalize-an-algorithm\" id=\"ref-for-dfn-normalize-an-algorithm-11\">normalizing an algorithm</a>, with\n                  <code>alg</code> set to <var>algorithm</var> and <code>op</code> set to\n                  \"<code>importKey</code>\".\n                </p>"
-        },
-        {
-          "html": "<p>\n                  If an error occurred, return a Promise rejected with\n                  <var>normalizedAlgorithm</var>.\n                </p>"
         },
         {
           "html": "<p>\n                  Let <var>realm</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.\n                </p>"
@@ -868,9 +868,6 @@
           "html": "<p>\n                  Let <var>format</var>, <var>unwrappingKey</var>,\n                  <var>algorithm</var>, <var>unwrappedKeyAlgorithm</var>,\n                  <var>extractable</var> and <var>usages</var>,\n                  be the <code>format</code>, <code>unwrappingKey</code>,\n                  <code>unwrapAlgorithm</code>, <code>unwrappedKeyAlgorithm</code>,\n                  <code>extractable</code> and <code>keyUsages</code>\n                  parameters passed to the\n                  <a data-link-type=\"idl\" data-lt=\"unwrapKey()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-unwrapKey\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-unwrapKey-2\"><code>unwrapKey</code></a><code>()</code> method,\n                  respectively.\n                </p>"
         },
         {
-          "html": "<p>\n                  Let <var>wrappedKey</var> be the result of\n                  <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the\n                  <code>wrappedKey</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"unwrapKey()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-unwrapKey\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-unwrapKey-3\"><code>unwrapKey</code></a><code>()</code> method.\n                </p>"
-        },
-        {
           "html": "<p>\n                  Let <var>normalizedAlgorithm</var> be the result of\n                  <a href=\"https://w3c.github.io/webcrypto/#dfn-normalize-an-algorithm\" id=\"ref-for-dfn-normalize-an-algorithm-14\">normalizing an algorithm</a>, with\n                  <code>alg</code> set to <var>algorithm</var> and <code>op</code> set to\n                  \"<code>unwrapKey</code>\".\n                </p>"
         },
         {
@@ -884,6 +881,9 @@
         },
         {
           "html": "<p>\n                  If an error occurred, return a Promise rejected with\n                  <var>normalizedKeyAlgorithm</var>.\n                </p>"
+        },
+        {
+          "html": "<p>\n                  Let <var>wrappedKey</var> be the result of\n                  <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the\n                  <code>wrappedKey</code> parameter passed to the\n                  <a data-link-type=\"idl\" data-lt=\"unwrapKey()\" href=\"https://w3c.github.io/webcrypto/#dfn-SubtleCrypto-method-unwrapKey\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-unwrapKey-3\"><code>unwrapKey</code></a><code>()</code> method.\n                </p>"
         },
         {
           "html": "<p>\n                  Let <var>realm</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.\n                </p>"

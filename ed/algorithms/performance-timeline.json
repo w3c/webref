@@ -6,99 +6,99 @@
   "algorithms": [
     {
       "name": "relevant performance entry tuple",
-      "href": "https://w3c.github.io/performance-timeline/#dfn-relevant-performance-entry-tuple",
-      "html": "In order to get the <dfn id=\"dfn-relevant-performance-entry-tuple\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">relevant performance entry tuple</dfn>, given\n    <var>entryType</var> and <var>globalObject</var> as input, run the\n    following steps:",
+      "href": "https://w3c.github.io/performance-timeline/#relevant-performance-entry-tuple",
+      "html": "In order to get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"relevant-performance-entry-tuple\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">relevant performance entry tuple</dfn>, given\n<var>entryType</var> and <var>globalObject</var> as input, run the\nfollowing steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>map</var> be the <a href=\"https://w3c.github.io/performance-timeline/#dfn-performance-entry-buffer-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-performance-entry-buffer-map-1\">performance entry buffer map</a>\n      associated with <var>globalObject</var>."
+          "html": "Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#performance-entry-buffer-map\" id=\"ref-for-performance-entry-buffer-map\">performance entry buffer map</a>\n  associated with <var>globalObject</var>."
         },
         {
-          "html": "Return the result of <a data-cite=\"INFRA#map-get\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\">getting the value of an entry</a> from <var>\n        map</var>, given <var>entryType</var> as the <a data-cite=\"INFRA#map-key\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\">key</a>."
+          "html": "Return the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get\">getting the value of an entry</a> from <var>\n    map</var>, given <var>entryType</var> as the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key①\">key</a>."
         }
       ]
     },
     {
       "name": "initialize a PerformanceEntry",
-      "href": "https://w3c.github.io/performance-timeline/#dfn-initialize-a-performanceentry",
-      "html": "To <dfn class=\"export\" data-export=\"\" id=\"dfn-initialize-a-performanceentry\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">initialize a <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceentry-10\"><code>PerformanceEntry</code></a></dfn> <var>entry</var> given a <a data-xref-type=\"_IDL_\" data-link-type=\"typedef\" data-lt=\"DOMHighResTimeStamp\" data-cite=\"hr-time-3\" data-cite-path=\"\" data-cite-frag=\"dom-domhighrestimestamp\" href=\"https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp\"><code>DOMHighResTimeStamp</code></a> <var>startTime</var>,\n    a <code>DOMString</code> <var>entryType</var>, a <code>DOMString</code> name, and an optional <a data-xref-type=\"_IDL_\" data-link-type=\"typedef\" data-lt=\"DOMHighResTimeStamp\" data-cite=\"hr-time-3\" data-cite-path=\"\" data-cite-frag=\"dom-domhighrestimestamp\" href=\"https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp\"><code>DOMHighResTimeStamp</code></a> <var>endTime</var> (default <code>0</code>):",
+      "href": "https://w3c.github.io/performance-timeline/#initialize-a-performanceentry",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"initialize-a-performanceentry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize a PerformanceEntry</dfn> <var>entry</var> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#typedefdef-domhighrestimestamp\" id=\"ref-for-typedefdef-domhighrestimestamp③\">DOMHighResTimeStamp</a></code> <var>startTime</var>,\na <code>DOMString</code> <var>entryType</var>, a <code>DOMString</code> <var>name</var>, and an optional <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#typedefdef-domhighrestimestamp\" id=\"ref-for-typedefdef-domhighrestimestamp④\">DOMHighResTimeStamp</a></code> <var>endTime</var> (default <code>0</code>):",
       "rationale": "assert",
       "steps": [
         {
-          "html": "Assert: <var>entryType</var> is defined in the <a href=\"https://w3c.github.io/timing-entrytypes-registry/#registry\">entry type registry</a>."
+          "html": "Assert: <var>entryType</var> is defined in the <a data-link-type=\"dfn\" data-refhint-key=\"3510cd6d\" href=\"https://w3c.github.io/timing-entrytypes-registry/#registry\" id=\"ref-for-registry③\">entry type registry</a>."
         },
         {
-          "html": "Initialize <var>entry</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceentry-starttime-3\"><code>startTime</code></a> to <var>startTime</var>."
+          "html": "Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime①\">startTime</a></code> to <var>startTime</var>."
         },
         {
-          "html": "Initialize <var>entry</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceentry-entrytype-2\"><code>entryType</code></a> to <var>entryType</var>."
+          "html": "Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype\">entryType</a></code> to <var>entryType</var>."
         },
         {
-          "html": "Initialize <var>entry</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-name\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceentry-name-2\"><code>name</code></a> to <var>name</var>."
+          "html": "Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-name\" id=\"ref-for-dom-performanceentry-name\">name</a></code> to <var>name</var>."
         },
         {
-          "html": "Initialize <var>entry</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-end-time\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-end-time-3\">end time</a> to <var>endTime</var>."
+          "html": "Initialize <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#end-time\" id=\"ref-for-end-time②\">end time</a> to <var>endTime</var>."
         }
       ]
     },
     {
-      "html": "The <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserver-observe\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserver-observe-4\"><code>observe()</code></a> method instructs the user agent to register\n      the observer and must run these steps:",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserver-observe\" id=\"ref-for-dom-performanceobserver-observe③\">observe()</a></code> method instructs the user agent to register\nthe observer and must run these steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>relevantGlobal</var> be <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant\n        global object</a>."
+          "html": "Let <var>relevantGlobal</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>."
         },
         {
-          "html": "If <var>options</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-entrytypes-1\"><code>entryTypes</code></a> and <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-type-1\"><code>type</code></a> members\n        are both omitted, then <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a \"<a data-link-type=\"exception\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>\"."
+          "html": "If <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" id=\"ref-for-dom-performanceobserverinit-entrytypes\">entryTypes</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" id=\"ref-for-dom-performanceobserverinit-type\">type</a></code> members\n  are both omitted, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">\"TypeError\"</a></code>."
         },
         {
-          "html": "If <var>options</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-entrytypes-2\"><code>entryTypes</code></a> is present and any other\n        member is also present, then <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a \"<a data-link-type=\"exception\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"\" data-cite-frag=\"exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>\"."
+          "html": "If <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" id=\"ref-for-dom-performanceobserverinit-entrytypes①\">entryTypes</a></code> is present and any other\n  member is also present, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">\"TypeError\"</a></code>."
         },
         {
-          "html": "Update or check <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-type-1\">observer type</a> by running these\n        steps:",
+          "html": "Update or check <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-type\" id=\"ref-for-observer-type\">observer type</a> by running these\n  steps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-type-2\">observer type</a> is\n            <code>\"undefined\"</code>:",
+              "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-type\" id=\"ref-for-observer-type①\">observer type</a> is\n      <code>\"undefined\"</code>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>options</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-entrytypes-3\"><code>entryTypes</code></a> member is\n                present, then set <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-type-3\">observer type</a> to\n                <code>\"multiple\"</code>."
+                  "html": "If <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" id=\"ref-for-dom-performanceobserverinit-entrytypes②\">entryTypes</a></code> member is\n          present, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-type\" id=\"ref-for-observer-type②\">observer type</a> to\n          <code>\"multiple\"</code>."
                 },
                 {
-                  "html": "If <var>options</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-type-2\"><code>type</code></a> member is present, then\n                set <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-type-4\">observer type</a> to\n                <code>\"single\"</code>."
+                  "html": "If <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" id=\"ref-for-dom-performanceobserverinit-type①\">type</a></code> member is present, then\n          set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-type\" id=\"ref-for-observer-type③\">observer type</a> to\n          <code>\"single\"</code>."
                 }
               ]
             },
             {
-              "html": "If <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-type-5\">observer type</a> is\n            <code>\"single\"</code> and <var>options</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-entrytypes-4\"><code>entryTypes</code></a>\n            member is present, then <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n            \"<a data-link-type=\"exception\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"\" data-cite-frag=\"invalidmodificationerror\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\"><code>InvalidModificationError</code></a>\"."
+              "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-type\" id=\"ref-for-observer-type④\">observer type</a> is\n      <code>\"single\"</code> and <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" id=\"ref-for-dom-performanceobserverinit-entrytypes③\">entryTypes</a></code>\n      member is present, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> an\n      <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\" id=\"ref-for-invalidmodificationerror\">\"InvalidModificationError\"</a></code>."
             },
             {
-              "html": "If <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-type-6\">observer type</a> is\n            <code>\"multiple\"</code> and <var>options</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-type-3\"><code>type</code></a> member\n            is present, then <a data-link-type=\"dfn\" data-link-for=\"exception\" data-xref-for=\"exception\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n            \"<a data-link-type=\"exception\" data-cite=\"webidl\" data-xref-type=\"exception\" data-cite-path=\"\" data-cite-frag=\"invalidmodificationerror\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\"><code>InvalidModificationError</code></a>\"."
+              "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-type\" id=\"ref-for-observer-type⑤\">observer type</a> is\n      <code>\"multiple\"</code> and <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" id=\"ref-for-dom-performanceobserverinit-type②\">type</a></code> member\n      is present, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> an\n      <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\" id=\"ref-for-invalidmodificationerror①\">\"InvalidModificationError\"</a></code>."
             }
           ]
         },
         {
-          "html": "Set <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-requires-dropped-entries\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-requires-dropped-entries-2\">requires dropped entries</a> to true."
+          "html": "Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#requires-dropped-entries\" id=\"ref-for-requires-dropped-entries①\">requires dropped entries</a> to true."
         },
         {
-          "html": "If <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-type-7\">observer type</a> is\n        <code>\"multiple\"</code>, run the following steps:",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-type\" id=\"ref-for-observer-type⑥\">observer type</a> is\n  <code>\"multiple\"</code>, run the following steps:",
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>entry types</var> be <var>options</var>'s\n            <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-entrytypes-5\"><code>entryTypes</code></a> sequence."
+              "html": "Let <var>entry types</var> be <var>options</var>’s\n      <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" id=\"ref-for-dom-performanceobserverinit-entrytypes④\">entryTypes</a></code> sequence."
             },
             {
-              "html": "Remove all types from <var>entry types</var> that are not\n            contained in <var>relevantGlobal</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-frozen-array-of-supported-entry-types\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-frozen-array-of-supported-entry-types-1\">frozen array of\n            supported entry types</a>. The user agent <em class=\"rfc2119\">SHOULD</em> notify developers\n            if <var>entry types</var> is modified. For example, a console\n            warning listing removed types might be appropriate."
+              "html": "Remove all types from <var>entry types</var> that are not\n      contained in <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#frozen-array-of-supported-entry-types\" id=\"ref-for-frozen-array-of-supported-entry-types\">frozen array of supported entry types</a>. The user agent SHOULD notify developers\n      if <var>entry types</var> is modified. For example, a console\n      warning listing removed types might be appropriate."
             },
             {
-              "html": "If the resulting <var>entry types</var> sequence is an empty\n            sequence, abort these steps. The user agent <em class=\"rfc2119\">SHOULD</em> notify\n            developers when the steps are aborted to notify that registration\n            has been aborted. For example, a console warning might be\n            appropriate."
+              "html": "If the resulting <var>entry types</var> sequence is an empty\n      sequence, abort these steps. The user agent SHOULD notify\n      developers when the steps are aborted to notify that registration\n      has been aborted. For example, a console warning might be\n      appropriate."
             },
             {
-              "html": "If the <a href=\"https://w3c.github.io/performance-timeline/#dfn-list-of-registered-performance-observer-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-registered-performance-observer-objects-1\">list of registered performance observer objects</a>\n            of <var>relevantGlobal</var> contains a <a href=\"https://w3c.github.io/performance-timeline/#dfn-registered-performance-observer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-registered-performance-observer-2\">registered performance\n            observer</a> whose <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-1\">observer</a> is <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>,\n            replace its <a href=\"https://w3c.github.io/performance-timeline/#dfn-options-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-options-list-1\">options list</a> with a list containing\n            <var>options</var> as its only item."
+              "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#list-of-registered-performance-observer-objects\" id=\"ref-for-list-of-registered-performance-observer-objects\">list of registered performance observer objects</a>\n      of <var>relevantGlobal</var> contains a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#registered-performance-observer\" id=\"ref-for-registered-performance-observer\">registered performance observer</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer\" id=\"ref-for-observer\">observer</a> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>,\n      replace its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#options-list\" id=\"ref-for-options-list\">options list</a> with a list containing\n      <var>options</var> as its only item."
             },
             {
-              "html": "Otherwise, create and append a <a href=\"https://w3c.github.io/performance-timeline/#dfn-registered-performance-observer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-registered-performance-observer-3\">registered performance\n            observer</a> object to the <a href=\"https://w3c.github.io/performance-timeline/#dfn-list-of-registered-performance-observer-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-registered-performance-observer-objects-2\">list of registered performance\n            observer objects</a> of <var>relevantGlobal</var>, with\n            <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-2\">observer</a> set to <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and <a href=\"https://w3c.github.io/performance-timeline/#dfn-options-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-options-list-2\">options list</a> set to a\n            list containing <var>options</var> as its only item."
+              "html": "Otherwise, create and append a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#registered-performance-observer\" id=\"ref-for-registered-performance-observer①\">registered performance observer</a> object to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#list-of-registered-performance-observer-objects\" id=\"ref-for-list-of-registered-performance-observer-objects①\">list of registered performance observer objects</a> of <var>relevantGlobal</var>, with\n      <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer\" id=\"ref-for-observer①\">observer</a> set to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#options-list\" id=\"ref-for-options-list①\">options list</a> set to a\n      list containing <var>options</var> as its only item."
             }
           ]
         },
@@ -107,44 +107,44 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "Assert that <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-type-8\">observer type</a> is\n            <code>\"single\"</code>."
+              "html": "Assert that <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-type\" id=\"ref-for-observer-type⑦\">observer type</a> is\n      <code>\"single\"</code>."
             },
             {
-              "html": "If <var>options</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-type-4\"><code>type</code></a> is not contained in the\n            <var>relevantGlobal</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-frozen-array-of-supported-entry-types\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-frozen-array-of-supported-entry-types-2\">frozen array of supported entry\n            types</a>, abort these steps. The user agent <em class=\"rfc2119\">SHOULD</em> notify\n            developers when this happens, for instance via a console warning."
+              "html": "If <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" id=\"ref-for-dom-performanceobserverinit-type③\">type</a></code> is not contained in the\n      <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#frozen-array-of-supported-entry-types\" id=\"ref-for-frozen-array-of-supported-entry-types①\">frozen array of supported entry types</a>, abort these steps. The user agent SHOULD notify\n      developers when this happens, for instance via a console warning."
             },
             {
-              "html": "If the <a href=\"https://w3c.github.io/performance-timeline/#dfn-list-of-registered-performance-observer-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-registered-performance-observer-objects-3\">list of registered performance observer objects</a>\n            of <var>relevantGlobal</var> contains a <a href=\"https://w3c.github.io/performance-timeline/#dfn-registered-performance-observer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-registered-performance-observer-4\">registered performance\n            observer</a> <var>obs</var> whose <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-3\">observer</a> is <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>:",
+              "html": "If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#list-of-registered-performance-observer-objects\" id=\"ref-for-list-of-registered-performance-observer-objects②\">list of registered performance observer objects</a>\n      of <var>relevantGlobal</var> contains a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#registered-performance-observer\" id=\"ref-for-registered-performance-observer②\">registered performance observer</a> <var>obs</var> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer\" id=\"ref-for-observer②\">observer</a> is <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>obs</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-options-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-options-list-3\">options list</a> contains a\n                <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-3\"><code>PerformanceObserverInit</code></a> item <var>currentOptions</var>\n                whose <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-type-5\"><code>type</code></a> is equal to <var>options</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-type-6\"><code>type</code></a>,\n                replace <var>currentOptions</var> with <var>options</var> in\n                <var>obs</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-options-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-options-list-4\">options list</a>."
+                  "html": "If <var>obs</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#options-list\" id=\"ref-for-options-list②\">options list</a> contains a\n          <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dictdef-performanceobserverinit\" id=\"ref-for-dictdef-performanceobserverinit②\">PerformanceObserverInit</a></code> item <var>currentOptions</var>\n          whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" id=\"ref-for-dom-performanceobserverinit-type④\">type</a></code> is equal to <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" id=\"ref-for-dom-performanceobserverinit-type⑤\">type</a></code>,\n          replace <var>currentOptions</var> with <var>options</var> in\n          <var>obs</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#options-list\" id=\"ref-for-options-list③\">options list</a>."
                 },
                 {
-                  "html": "Otherwise, append <var>options</var> to <var>obs</var>'s\n                <a href=\"https://w3c.github.io/performance-timeline/#dfn-options-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-options-list-5\">options list</a>."
+                  "html": "Otherwise, append <var>options</var> to <var>obs</var>’s\n          <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#options-list\" id=\"ref-for-options-list④\">options list</a>."
                 }
               ]
             },
             {
-              "html": "Otherwise, create and append a <a href=\"https://w3c.github.io/performance-timeline/#dfn-registered-performance-observer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-registered-performance-observer-5\">registered performance\n            observer</a> object to the <a href=\"https://w3c.github.io/performance-timeline/#dfn-list-of-registered-performance-observer-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-registered-performance-observer-objects-4\">list of registered performance\n            observer objects</a> of <var>relevantGlobal</var>, with\n            <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-4\">observer</a> set to the <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> and <a href=\"https://w3c.github.io/performance-timeline/#dfn-options-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-options-list-6\">options list</a> set\n            to a list containing <var>options</var> as its only item."
+              "html": "Otherwise, create and append a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#registered-performance-observer\" id=\"ref-for-registered-performance-observer③\">registered performance observer</a> object to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#list-of-registered-performance-observer-objects\" id=\"ref-for-list-of-registered-performance-observer-objects③\">list of registered performance observer objects</a> of <var>relevantGlobal</var>, with\n      <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer\" id=\"ref-for-observer③\">observer</a> set to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#options-list\" id=\"ref-for-options-list⑤\">options list</a> set\n      to a list containing <var>options</var> as its only item."
             },
             {
-              "html": "If <var>options</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-buffered\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-buffered-2\"><code>buffered</code></a> flag is set:",
+              "html": "If <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-buffered\" id=\"ref-for-dom-performanceobserverinit-buffered①\">buffered</a></code> flag is set:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "Let <var>tuple</var> be the <a href=\"https://w3c.github.io/performance-timeline/#dfn-relevant-performance-entry-tuple\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-relevant-performance-entry-tuple-1\">relevant performance entry\n                tuple</a> of <var>options</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-type-7\"><code>type</code></a> and\n                <var>relevantGlobal</var>."
+                  "html": "Let <var>tuple</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#relevant-performance-entry-tuple\" id=\"ref-for-relevant-performance-entry-tuple\">relevant performance entry tuple</a> of <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" id=\"ref-for-dom-performanceobserverinit-type⑥\">type</a></code> and\n          <var>relevantGlobal</var>."
                 },
                 {
-                  "html": "For each <var>entry</var> in <var>tuple</var>'s\n                <a href=\"https://w3c.github.io/performance-timeline/#dfn-performance-entry-buffer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-performance-entry-buffer-1\">performance entry buffer</a>:",
+                  "html": "For each <var>entry</var> in <var>tuple</var>’s\n          <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#performance-entry-buffer\" id=\"ref-for-performance-entry-buffer\">performance entry buffer</a>:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "If <a href=\"https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry\">\n                    should add entry</a> with <var>entry</var> and <var>options</var> as\n                    parameters returns true, <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-append\" href=\"https://infra.spec.whatwg.org/#list-append\">append</a> <var>entry</var> to the\n                    <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer-buffer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-buffer-1\">observer buffer</a>."
+                      "html": "If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry\" id=\"ref-for-dfn-should-add-entry\">should add entry</a> with <var>entry</var> and <var>options</var> as\n              parameters returns true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">append</a> <var>entry</var> to the\n              <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-buffer\" id=\"ref-for-observer-buffer\">observer buffer</a>."
                     }
                   ]
                 },
                 {
-                  "html": "<a href=\"https://w3c.github.io/performance-timeline/#dfn-queue-the-performanceobserver-task\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-queue-the-performanceobserver-task-1\">Queue the PerformanceObserver task</a> with\n                <var>relevantGlobal</var> as input."
+                  "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-queue-the-performanceobserver-task\" id=\"ref-for-dfn-queue-the-performanceobserver-task\">Queue the PerformanceObserver task</a> with\n          <var>relevantGlobal</var> as input."
                 }
               ]
             }
@@ -153,83 +153,81 @@
       ]
     },
     {
-      "html": "The <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserver-disconnect\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserver-disconnect-2\"><code>disconnect()</code></a> method must do the following:",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserver-disconnect\" id=\"ref-for-dom-performanceobserver-disconnect①\">disconnect()</a></code> method must do the following:",
       "rationale": "remove",
       "steps": [
         {
-          "html": "Remove <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> from the <a href=\"https://w3c.github.io/performance-timeline/#dfn-list-of-registered-performance-observer-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-registered-performance-observer-objects-5\">list of registered\n        performance observer objects</a> of <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a>."
+          "html": "Remove <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a> from the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#list-of-registered-performance-observer-objects\" id=\"ref-for-list-of-registered-performance-observer-objects④\">list of registered performance observer objects</a> of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>."
         },
         {
-          "html": "Empty <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer-buffer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-buffer-4\">observer buffer</a>."
+          "html": "Empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-buffer\" id=\"ref-for-observer-buffer③\">observer buffer</a>."
         },
         {
-          "html": "Empty <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-options-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-options-list-7\">options list</a>."
+          "html": "Empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#options-list\" id=\"ref-for-options-list⑥\">options list</a>."
         }
       ]
     },
     {
-      "name": "PerformanceObserver/supportedEntryTypes",
-      "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-supportedentrytypes",
-      "html": "When <dfn data-export=\"\" data-dfn-type=\"attribute\" id=\"dom-performanceobserver-supportedentrytypes\" data-idl=\"attribute\" data-title=\"supportedEntryTypes\" data-dfn-for=\"PerformanceObserver\" data-type=\"FrozenArray\" data-lt=\"supportedEntryTypes\" data-local-lt=\"PerformanceObserver.supportedEntryTypes\" tabindex=\"0\" aria-haspopup=\"dialog\"><code>supportedEntryTypes</code></dfn>'s attribute getter is called, run\n      the following steps:",
+      "html": "When <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserver-supportedentrytypes\" id=\"ref-for-dom-performanceobserver-supportedentrytypes①\">supportedEntryTypes</a></code>’s attribute getter is called, run\nthe following steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>globalObject</var> be the <a data-cite=\"HTML/webappapis.html#concept-settings-object-global\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\">environment\n        settings object's global object</a>."
+          "html": "Let <var>globalObject</var> be the\n  <a href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\">environment\n  settings object’s global object</a>."
         },
         {
-          "html": "Return <var>globalObject</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-frozen-array-of-supported-entry-types\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-frozen-array-of-supported-entry-types-3\">frozen array of supported entry\n        types</a>."
+          "html": "Return <var>globalObject</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#frozen-array-of-supported-entry-types\" id=\"ref-for-frozen-array-of-supported-entry-types②\">frozen array of supported entry types</a>."
         }
       ]
     },
     {
       "name": "queue a PerformanceEntry",
       "href": "https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry",
-      "html": "To <dfn class=\"export\" data-export=\"\" id=\"dfn-queue-a-performanceentry\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">queue a PerformanceEntry</dfn> (<var>newEntry</var>), run\n      these steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-queue-a-performanceentry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">queue a PerformanceEntry</dfn> (<var>newEntry</var>), run\nthese steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>newEntry</var>'s <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceEntry\" data-xref-for=\"PerformanceEntry\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-id\" class=\"internalDFN\" id=\"ref-for-dom-performanceentry-id-1\"><code>id</code></a> is unset:",
+          "html": "If <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-id\" id=\"ref-for-dom-performanceentry-id\">id</a></code> is unset:",
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>id</var> be the result of running <a href=\"https://w3c.github.io/performance-timeline/#dfn-generate-an-id\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-generate-an-id-1\">generate an id</a> for <var>newEntry</var>."
+              "html": "Let <var>id</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#generate-an-id\" id=\"ref-for-generate-an-id\">generate an id</a> for <var>newEntry</var>."
             },
             {
-              "html": "Set <var>newEntry</var>'s <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceEntry\" data-xref-for=\"PerformanceEntry\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-id\" class=\"internalDFN\" id=\"ref-for-dom-performanceentry-id-2\"><code>id</code></a> to <var>id</var>."
+              "html": "Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-id\" id=\"ref-for-dom-performanceentry-id①\">id</a></code> to <var>id</var>."
             }
           ]
         },
         {
-          "html": "Let <var>interested observers</var> be an initially empty set of\n        <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserver\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserver-16\"><code>PerformanceObserver</code></a> objects."
+          "html": "Let <var>interested observers</var> be an initially empty set of\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#performanceobserver\" id=\"ref-for-performanceobserver①⑤\">PerformanceObserver</a></code> objects."
         },
         {
-          "html": "Let <var>entryType</var> be <var>newEntry</var>’s <a data-lt=\"PerformanceEntry.entryType\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceentry-entrytype-3\"><code>entryType</code></a> value."
+          "html": "Let <var>entryType</var> be <var>newEntry</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype①\">entryType</a></code> value."
         },
         {
-          "html": "Let <var>relevantGlobal</var> be <var>newEntry</var>'s <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant\n        global object</a>."
+          "html": "Let <var>relevantGlobal</var> be <var>newEntry</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>."
         },
         {
-          "html": "If <var>relevantGlobal</var> has an <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"concept-document-window\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated document</a>:",
+          "html": "If <var>relevantGlobal</var> has an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated document</a>:",
           "rationale": "set",
           "steps": [
             {
-              "html": "Set <var>newEntry</var>'s <a data-lt=\"PerformanceEntry.navigationId\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-navigationid\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceentry-navigationid-2\"><code>navigationId</code></a> to the value of\n            <var>relevantGlobal</var>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"concept-document-window\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated document</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/performance-timeline/#dfn-most-recent-navigation\" class=\"internalDFN\" id=\"ref-for-dfn-most-recent-navigation-1\">most recent navigation</a>'s <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceEntry\" data-xref-for=\"PerformanceEntry\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-id\" class=\"internalDFN\" id=\"ref-for-dom-performanceentry-id-3\"><code>id</code></a>."
+              "html": "Set <var>newEntry</var>’s\n      <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-navigationid\" id=\"ref-for-dom-performanceentry-navigationid\">navigationId</a></code> to the value of\n      <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated document</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#most-recent-navigation\" id=\"ref-for-most-recent-navigation\">most recent navigation</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-id\" id=\"ref-for-dom-performanceentry-id②\">id</a></code>."
             }
           ]
         },
         {
-          "html": "Otherwise, set <var>newEntry</var>'s <a data-lt=\"PerformanceEntry.navigationId\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-navigationid\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceentry-navigationid-3\"><code>navigationId</code></a> to null."
+          "html": "Otherwise, set <var>newEntry</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-navigationid\" id=\"ref-for-dom-performanceentry-navigationid①\">navigationId</a></code> to null."
         },
         {
-          "html": "For each <a href=\"https://w3c.github.io/performance-timeline/#dfn-registered-performance-observer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-registered-performance-observer-6\">registered performance observer</a> <var>regObs</var> in\n        <var>relevantGlobal</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-list-of-registered-performance-observer-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-registered-performance-observer-objects-6\">list of registered performance observer objects</a>:",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#registered-performance-observer\" id=\"ref-for-registered-performance-observer④\">registered performance observer</a> <var>regObs</var> in\n  <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#list-of-registered-performance-observer-objects\" id=\"ref-for-list-of-registered-performance-observer-objects⑤\">list of registered performance observer objects</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>regObs</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-options-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-options-list-8\">options list</a> contains a\n            <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-6\"><code>PerformanceObserverInit</code></a> <var>options</var> whose <a data-link-for=\"PerformanceObserverInit\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-entrytypes-10\"><code>entryTypes</code></a> member includes\n            <var>entryType</var> or whose <a data-link-for=\"PerformanceObserverInit\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-type-13\"><code>type</code></a> member equals to\n            <var>entryType</var>:",
+              "html": "If <var>regObs</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#options-list\" id=\"ref-for-options-list⑦\">options list</a> contains a\n      <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dictdef-performanceobserverinit\" id=\"ref-for-dictdef-performanceobserverinit⑤\">PerformanceObserverInit</a></code> <var>options</var> whose\n      <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" id=\"ref-for-dom-performanceobserverinit-entrytypes⑧\">entryTypes</a></code> member includes\n      <var>entryType</var> or whose\n      <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" id=\"ref-for-dom-performanceobserverinit-type①①\">type</a></code> member equals to\n      <var>entryType</var>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <a href=\"https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry\">\n                should add entry</a> with <var>newEntry</var> and <var>options</var>\n                returns true, append <var>regObs</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-5\">observer</a> to\n                <var>interested observers</var>."
+                  "html": "If <a data-link-type=\"dfn\" href=\"https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry\" id=\"ref-for-dfn-should-add-entry①\">should add entry</a> with <var>newEntry</var> and <var>options</var>\n          returns true, append <var>regObs</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer\" id=\"ref-for-observer④\">observer</a> to\n          <var>interested observers</var>."
                 }
               ]
             }
@@ -240,141 +238,141 @@
           "rationale": "append",
           "steps": [
             {
-              "html": "Append <var>newEntry</var> to <var>observer</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer-buffer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-buffer-5\">observer\n            buffer</a>."
+              "html": "Append <var>newEntry</var> to <var>observer</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-buffer\" id=\"ref-for-observer-buffer④\">observer buffer</a>."
             }
           ]
         },
         {
-          "html": "Let <var>tuple</var> be the <a href=\"https://w3c.github.io/performance-timeline/#dfn-relevant-performance-entry-tuple\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-relevant-performance-entry-tuple-2\">relevant performance entry tuple</a>\n        of <var>entryType</var> and <var>relevantGlobal</var>."
+          "html": "Let <var>tuple</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#relevant-performance-entry-tuple\" id=\"ref-for-relevant-performance-entry-tuple①\">relevant performance entry tuple</a>\n  of <var>entryType</var> and <var>relevantGlobal</var>."
         },
         {
-          "html": "Let <var>isBufferFull</var> be the return value of the <a href=\"https://w3c.github.io/performance-timeline/#dfn-determine-if-a-performance-entry-buffer-is-full\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-determine-if-a-performance-entry-buffer-is-full-1\">determine if a performance\n        entry buffer is full</a> algorithm with <var>tuple</var> as input."
+          "html": "Let <var>isBufferFull</var> be the return value of the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-determine-if-a-performance-entry-buffer-is-full\" id=\"ref-for-dfn-determine-if-a-performance-entry-buffer-is-full\">determine if a performance entry buffer is full</a> algorithm with <var>tuple</var> as input."
         },
         {
-          "html": "Let <var>shouldAdd</var> be the result of <a href=\"https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry\">should add\n        entry</a> with <var>newEntry</var> as input."
+          "html": "Let <var>shouldAdd</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry\" id=\"ref-for-dfn-should-add-entry②\">should add entry</a> with <var>newEntry</var> as input."
         },
         {
-          "html": "If <var>isBufferFull</var> is false and <var>shouldAdd</var> is true, <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-append\" href=\"https://infra.spec.whatwg.org/#list-append\">append</a>\n        <var>newEntry</var> to <var>tuple</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-performance-entry-buffer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-performance-entry-buffer-2\">performance entry buffer</a>."
+          "html": "If <var>isBufferFull</var> is false and <var>shouldAdd</var> is true, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">append</a>\n  <var>newEntry</var> to <var>tuple</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#performance-entry-buffer\" id=\"ref-for-performance-entry-buffer①\">performance entry buffer</a>."
         },
         {
-          "html": "<a href=\"https://w3c.github.io/performance-timeline/#dfn-queue-the-performanceobserver-task\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-queue-the-performanceobserver-task-2\">Queue the PerformanceObserver task</a> with\n        <var>relevantGlobal</var> as input."
+          "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-queue-the-performanceobserver-task\" id=\"ref-for-dfn-queue-the-performanceobserver-task①\">Queue the PerformanceObserver task</a> with\n  <var>relevantGlobal</var> as input."
         }
       ]
     },
     {
       "name": "queue a navigation PerformanceEntry",
       "href": "https://w3c.github.io/performance-timeline/#dfn-queue-a-navigation-performanceentry",
-      "html": "To <dfn class=\"export\" data-export=\"\" id=\"dfn-queue-a-navigation-performanceentry\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">queue a navigation PerformanceEntry</dfn> (<var>newEntry</var>), run\n      these steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"dfn-queue-a-navigation-performanceentry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">queue a navigation PerformanceEntry</dfn> (<var>newEntry</var>), run\nthese steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>id</var> be the result of running <a href=\"https://w3c.github.io/performance-timeline/#dfn-generate-an-id\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-generate-an-id-2\">generate an id</a> for <var>newEntry</var>."
+          "html": "Let <var>id</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#generate-an-id\" id=\"ref-for-generate-an-id①\">generate an id</a> for <var>newEntry</var>."
         },
         {
-          "html": "Let <var>relevantGlobal</var> be <var>newEntry</var>'s <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant\n        global object</a>."
+          "html": "Let <var>relevantGlobal</var> be <var>newEntry</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a>."
         },
         {
-          "html": "Set <var>newEntry</var>'s <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceEntry\" data-xref-for=\"PerformanceEntry\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-id\" class=\"internalDFN\" id=\"ref-for-dom-performanceentry-id-4\"><code>id</code></a> to <var>id</var>."
+          "html": "Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-id\" id=\"ref-for-dom-performanceentry-id③\">id</a></code> to <var>id</var>."
         },
         {
-          "html": "Set <var>newEntry</var>'s <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"PerformanceEntry\" data-xref-for=\"PerformanceEntry\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-navigationid\" class=\"internalDFN\" id=\"ref-for-dom-performanceentry-navigationid-4\"><code>navigationId</code></a> to <var>id</var>."
+          "html": "Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-navigationid\" id=\"ref-for-dom-performanceentry-navigationid②\">navigationId</a></code> to <var>id</var>."
         },
         {
-          "html": "If <var>relevantGlobal</var> has an <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"concept-document-window\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated document</a>:",
+          "html": "If <var>relevantGlobal</var> has an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window②\">associated document</a>:",
           "rationale": "set",
           "steps": [
             {
-              "html": "Set <var>relevantGlobal</var>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"concept-document-window\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\">associated document</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/performance-timeline/#dfn-most-recent-navigation\" class=\"internalDFN\" id=\"ref-for-dfn-most-recent-navigation-2\">most recent navigation</a> to <var>newEntry</var>."
+              "html": "Set <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window③\">associated document</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#most-recent-navigation\" id=\"ref-for-most-recent-navigation①\">most recent navigation</a> to <var>newEntry</var>."
             }
           ]
         },
         {
-          "html": "<a href=\"https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-queue-a-performanceentry-1\">Queue a PerformanceEntry</a> with <var>newEntry</var> as input."
+          "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry\" id=\"ref-for-dfn-queue-a-performanceentry\">Queue a PerformanceEntry</a> with <var>newEntry</var> as input."
         }
       ]
     },
     {
       "name": "queue the PerformanceObserver task",
       "href": "https://w3c.github.io/performance-timeline/#dfn-queue-the-performanceobserver-task",
-      "html": "When asked to <dfn id=\"dfn-queue-the-performanceobserver-task\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">queue the PerformanceObserver task</dfn>, given\n      <var>relevantGlobal</var> as input, run the following steps:",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"dfn-queue-the-performanceobserver-task\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">queue the PerformanceObserver task</dfn>, given\n<var>relevantGlobal</var> as input, run the following steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>relevantGlobal</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-performance-observer-task-queued-flag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-performance-observer-task-queued-flag-1\">performance observer task queued\n        flag</a> is set, terminate these steps."
+          "html": "If <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#performance-observer-task-queued-flag\" id=\"ref-for-performance-observer-task-queued-flag\">performance observer task queued flag</a> is set, terminate these steps."
         },
         {
-          "html": "Set <var>relevantGlobal</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-performance-observer-task-queued-flag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-performance-observer-task-queued-flag-2\">performance observer task queued\n        flag</a>."
+          "html": "Set <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#performance-observer-task-queued-flag\" id=\"ref-for-performance-observer-task-queued-flag①\">performance observer task queued flag</a>."
         },
         {
-          "html": "<a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"queue-a-task\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> that consists of running the following substeps.\n          The <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"task-source\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#task-source\">task source</a> for the queued task is the <dfn class=\"export\" data-export=\"\" id=\"dfn-performance-timeline-task-source\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">performance\n          timeline task source</dfn>.",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">Queue a task</a> that consists of running the following substeps.\n    The <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#task-source\" id=\"ref-for-task-source\">task source</a> for the queued task is the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"performance timeline task source\" id=\"dfn-performance-timeline-task-source\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">performance\n    timeline task source</dfn>.",
           "rationale": "unset",
           "steps": [
             {
-              "html": "Unset <a href=\"https://w3c.github.io/performance-timeline/#dfn-performance-observer-task-queued-flag\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-performance-observer-task-queued-flag-3\">performance observer task queued flag</a> of\n            <var>relevantGlobal</var>."
+              "html": "Unset <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#performance-observer-task-queued-flag\" id=\"ref-for-performance-observer-task-queued-flag②\">performance observer task queued flag</a> of\n      <var>relevantGlobal</var>."
             },
             {
-              "html": "Let <var>notifyList</var> be a copy of\n            <var>relevantGlobal</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-list-of-registered-performance-observer-objects\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-list-of-registered-performance-observer-objects-7\">list of registered performance\n            observer objects</a>."
+              "html": "Let <var>notifyList</var> be a copy of\n      <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#list-of-registered-performance-observer-objects\" id=\"ref-for-list-of-registered-performance-observer-objects⑥\">list of registered performance observer objects</a>."
             },
             {
-              "html": "For each <a href=\"https://w3c.github.io/performance-timeline/#dfn-registered-performance-observer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-registered-performance-observer-7\">registered performance observer</a> object <var>registeredObserver</var>\n            in <var>notifyList</var>, run these steps:",
+              "html": "For each <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#registered-performance-observer\" id=\"ref-for-registered-performance-observer⑤\">registered performance observer</a> object <var>registeredObserver</var>\n      in <var>notifyList</var>, run these steps:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "Let <var>po</var> be <var>registeredObserver</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-6\">observer</a>."
+                  "html": "Let <var>po</var> be <var>registeredObserver</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer\" id=\"ref-for-observer⑤\">observer</a>."
                 },
                 {
-                  "html": "Let <var>entries</var> be a copy of <var>po</var>’s\n                <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer-buffer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-buffer-6\">observer buffer</a>."
+                  "html": "Let <var>entries</var> be a copy of <var>po</var>’s\n          <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-buffer\" id=\"ref-for-observer-buffer⑤\">observer buffer</a>."
                 },
                 {
                   "html": "If <var>entries</var> is empty, return."
                 },
                 {
-                  "html": "Empty <var>po</var>’s <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer-buffer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-buffer-7\">observer buffer</a>."
+                  "html": "Empty <var>po</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-buffer\" id=\"ref-for-observer-buffer⑥\">observer buffer</a>."
                 },
                 {
-                  "html": "Let <var>observerEntryList</var> be a new\n                <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"PerformanceObserverEntryList\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverentrylist\" class=\"internalDFN\" id=\"ref-for-dom-performanceobserverentrylist-4\"><code>PerformanceObserverEntryList</code></a>, with its <a href=\"https://w3c.github.io/performance-timeline/#dfn-entry-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-entry-list-4\">entry list</a> set\n                to <var>entries</var>."
+                  "html": "Let <var>observerEntryList</var> be a new\n          <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#performanceobserverentrylist\" id=\"ref-for-performanceobserverentrylist③\">PerformanceObserverEntryList</a></code>, with its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#entry-list\" id=\"ref-for-entry-list③\">entry list</a> set\n          to <var>entries</var>."
                 },
                 {
                   "html": "Let <var>droppedEntriesCount</var> be null."
                 },
                 {
-                  "html": "If <var>po</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-requires-dropped-entries\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-requires-dropped-entries-3\">requires dropped entries</a> is set, perform the following\n                steps:",
+                  "html": "If <var>po</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#requires-dropped-entries\" id=\"ref-for-requires-dropped-entries②\">requires dropped entries</a> is set, perform the following\n          steps:",
                   "rationale": "set",
                   "steps": [
                     {
                       "html": "Set <var>droppedEntriesCount</var> to 0."
                     },
                     {
-                      "html": "For each <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-7\"><code>PerformanceObserverInit</code></a> <var>item</var> in\n                    <var>registeredObserver</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-options-list\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-options-list-9\">options list</a>:",
+                      "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dictdef-performanceobserverinit\" id=\"ref-for-dictdef-performanceobserverinit⑥\">PerformanceObserverInit</a></code> <var>item</var> in\n              <var>registeredObserver</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#options-list\" id=\"ref-for-options-list⑧\">options list</a>:",
                       "rationale": "for",
                       "steps": [
                         {
-                          "html": "For each <a data-cite=\"WEBIDL#idl-DOMString\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\">DOMString</a>\n                      <var>entryType</var> that appears either as <var>item</var>'s <a data-link-for=\"PerformanceObserverInit\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-type-14\"><code>type</code></a> or in <var>item</var>'s\n                      <a data-link-for=\"PerformanceObserverInit\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobserverinit-entrytypes-11\"><code>entryTypes</code></a>:",
+                          "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①①\">DOMString</a></code>\n                <var>entryType</var> that appears either as <var>item</var>’s\n                <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" id=\"ref-for-dom-performanceobserverinit-type①②\">type</a></code> or in <var>item</var>’s\n                <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" id=\"ref-for-dom-performanceobserverinit-entrytypes⑨\">entryTypes</a></code>:",
                           "rationale": "let",
                           "steps": [
                             {
-                              "html": "Let <var>map</var> be <var>relevantGlobal</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-performance-entry-buffer-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-performance-entry-buffer-map-2\">performance entry\n                          buffer map</a>."
+                              "html": "Let <var>map</var> be <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#performance-entry-buffer-map\" id=\"ref-for-performance-entry-buffer-map①\">performance entry buffer map</a>."
                             },
                             {
-                              "html": "Let <var>tuple</var> be the result of <a data-cite=\"INFRA#map-get\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\">getting the value of entry</a>\n                          on <var>map</var> given <var>entryType</var> as <a data-cite=\"INFRA#map-key\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\">key</a>."
+                              "html": "Let <var>tuple</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get①\">getting the value of entry</a>\n                    on <var>map</var> given <var>entryType</var> as <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key②\">key</a>."
                             },
                             {
-                              "html": "Increase <var>droppedEntriesCount</var> by <var>tuple</var>'s\n                          <a href=\"https://w3c.github.io/performance-timeline/#dfn-dropped-entries-count\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-dropped-entries-count-1\">dropped entries count</a>."
+                              "html": "Increase <var>droppedEntriesCount</var> by <var>tuple</var>’s\n                    <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dropped-entries-count\" id=\"ref-for-dropped-entries-count\">dropped entries count</a>."
                             }
                           ]
                         }
                       ]
                     },
                     {
-                      "html": "Set <var>po</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-requires-dropped-entries\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-requires-dropped-entries-4\">requires dropped entries</a> to false."
+                      "html": "Set <var>po</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#requires-dropped-entries\" id=\"ref-for-requires-dropped-entries③\">requires dropped entries</a> to false."
                     }
                   ]
                 },
                 {
-                  "html": "Let <var>callbackOptions</var> be a <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceobservercallbackoptions\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobservercallbackoptions-3\"><code>PerformanceObserverCallbackOptions</code></a>\n                with its <a data-link-for=\"PerformanceObserverCallbackOptions\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobservercallbackoptions-droppedentriescount\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceobservercallbackoptions-droppedentriescount-2\"><code>droppedEntriesCount</code></a>\n                set to <var>droppedEntriesCount</var> if <var>droppedEntriesCount</var> is not null,\n                otherwise unset."
+                  "html": "Let <var>callbackOptions</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dictdef-performanceobservercallbackoptions\" id=\"ref-for-dictdef-performanceobservercallbackoptions②\">PerformanceObserverCallbackOptions</a></code>\n          with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobservercallbackoptions-droppedentriescount\" id=\"ref-for-dom-performanceobservercallbackoptions-droppedentriescount\">droppedEntriesCount</a></code>\n          set to <var>droppedEntriesCount</var> if <var>droppedEntriesCount</var> is not null,\n          otherwise unset."
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"invoke-a-callback-function\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\">Invoke</a> <var>po</var>’s <a href=\"https://w3c.github.io/performance-timeline/#dfn-observer-callback\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-observer-callback-2\">observer callback</a> with «\n                <var>observerEntryList</var>, <var>po</var>, <var>callbackOptions</var> », \"<code>report</code>\",\n                and <var>po</var>."
+                  "html": "<a href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\">Invoke</a>\n          <var>po</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#observer-callback\" id=\"ref-for-observer-callback①\">observer callback</a> with «\n          <var>observerEntryList</var>, <var>po</var>, <var>callbackOptions</var> », \"`report`\",\n          and <var>po</var>."
                 }
               ]
             }
@@ -385,41 +383,41 @@
     {
       "name": "filter buffer map by name and type",
       "href": "https://w3c.github.io/performance-timeline/#dfn-filter-buffer-map-by-name-and-type",
-      "html": "When asked to run the <dfn id=\"dfn-filter-buffer-map-by-name-and-type\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">filter buffer map by name and type</dfn>\n      algorithm with optional <var>name</var> and <var>type</var>, run the\n      following steps:",
+      "html": "When asked to run the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"dfn-filter-buffer-map-by-name-and-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">filter buffer map by name and type</dfn>\nalgorithm with optional <var>name</var> and <var>type</var>, run the\nfollowing steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>result</var> be an initially empty <a data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+          "html": "Let <var>result</var> be an initially empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>."
         },
         {
-          "html": "Let <var>map</var> be the <a href=\"https://w3c.github.io/performance-timeline/#dfn-performance-entry-buffer-map\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-performance-entry-buffer-map-3\">performance entry buffer map</a>\n        associated with the <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant global object</a> of <a data-cite=\"webidl\" data-cite-path=\"\" data-cite-frag=\"this\" data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>."
+          "html": "Let <var>map</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#performance-entry-buffer-map\" id=\"ref-for-performance-entry-buffer-map②\">performance entry buffer map</a>\n  associated with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global④\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a>."
         },
         {
-          "html": "Let <var>tuple list</var> be an empty <a data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+          "html": "Let <var>tuple list</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>."
         },
         {
-          "html": "If <var>type</var> is not null, append the result of <a data-cite=\"INFRA#map-get\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\">getting the\n        value of entry</a> on <var>map</var> given <var>type</var> as\n        <a data-cite=\"INFRA#map-key\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\">key</a> to <var>tuple list</var>. Otherwise, assign the result of\n        <a data-cite=\"INFRA/#map-getting-the-values\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\">get the values</a> on\n        <var>map</var> to <var>tuple list</var>."
+          "html": "If <var>type</var> is not null, append the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-get\" id=\"ref-for-map-get②\">getting the\n  value of entry</a> on <var>map</var> given <var>type</var> as\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-key\" id=\"ref-for-map-key③\">key</a> to <var>tuple list</var>. Otherwise, assign the result of\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values\">get the values</a> on\n  <var>map</var> to <var>tuple list</var>."
         },
         {
-          "html": "For each <var>tuple</var> in <var>tuple list</var>, run the\n        following steps:",
+          "html": "For each <var>tuple</var> in <var>tuple list</var>, run the\n  following steps:",
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>buffer</var> be <var>tuple</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-performance-entry-buffer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-performance-entry-buffer-3\">performance\n            entry buffer</a>."
+              "html": "Let <var>buffer</var> be <var>tuple</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#performance-entry-buffer\" id=\"ref-for-performance-entry-buffer②\">performance entry buffer</a>."
             },
             {
-              "html": "If <var>tuple</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-availablefromtimeline\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-availablefromtimeline-1\">availableFromTimeline</a> is false,\n            continue to the next <var>tuple</var>."
+              "html": "If <var>tuple</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#availablefromtimeline\" id=\"ref-for-availablefromtimeline\">availableFromTimeline</a> is false,\n      continue to the next <var>tuple</var>."
             },
             {
-              "html": "Let <var>entries</var> be the result of running <a href=\"https://w3c.github.io/performance-timeline/#dfn-filter-buffer-by-name-and-type\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-filter-buffer-by-name-and-type-4\">filter\n            buffer by name and type</a> with <var>buffer</var>, <var>name</var>\n            and <var>type</var> as inputs."
+              "html": "Let <var>entries</var> be the result of running <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-filter-buffer-by-name-and-type\" id=\"ref-for-dfn-filter-buffer-by-name-and-type③\">filter buffer by name and type</a> with <var>buffer</var>, <var>name</var>\n      and <var>type</var> as inputs."
             },
             {
-              "html": "For each <var>entry</var> in <var>entries</var>,\n            <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-append\" href=\"https://infra.spec.whatwg.org/#list-append\">append</a> <var>entry</var> to <var>result</var>."
+              "html": "For each <var>entry</var> in <var>entries</var>,\n      <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">append</a> <var>entry</var> to <var>result</var>."
             }
           ]
         },
         {
-          "html": "Sort <var>results</var>'s entries in chronological order with\n        respect to <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceentry-starttime-4\"><code>startTime</code></a>"
+          "html": "Sort <var>results</var>’s entries in chronological order with\n  respect to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime②\">startTime</a></code>"
         },
         {
           "html": "Return <var>result</var>."
@@ -429,29 +427,29 @@
     {
       "name": "filter buffer by name and type",
       "href": "https://w3c.github.io/performance-timeline/#dfn-filter-buffer-by-name-and-type",
-      "html": "When asked to run the <dfn id=\"dfn-filter-buffer-by-name-and-type\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">filter buffer by name and type</dfn>\n      algorithm, with <var>buffer</var>, <var>name</var>, and <var>type</var>\n      as inputs, run the following steps:",
+      "html": "When asked to run the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"dfn-filter-buffer-by-name-and-type\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">filter buffer by name and type</dfn>\nalgorithm, with <var>buffer</var>, <var>name</var>, and <var>type</var>\nas inputs, run the following steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>result</var> be an initially empty <a data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+          "html": "Let <var>result</var> be an initially empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>."
         },
         {
-          "html": "For each <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceentry-11\"><code>PerformanceEntry</code></a> <var>entry</var> in\n        <var>buffer</var>, run the following steps:",
+          "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#performanceentry\" id=\"ref-for-performanceentry⑨\">PerformanceEntry</a></code> <var>entry</var> in\n  <var>buffer</var>, run the following steps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>type</var> is not null and if <var>type</var> is not\n            <a data-cite=\"INFRA#string-is\" href=\"https://infra.spec.whatwg.org/#string-is\">identical to</a> <var>entry</var>'s\n            <code>entryType</code> attribute, continue to next <var>entry</var>."
+              "html": "If <var>type</var> is not null and if <var>type</var> is not\n      <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is\">identical to</a> <var>entry</var>’s\n      <code>entryType</code> attribute, continue to next <var>entry</var>."
             },
             {
-              "html": "If <var>name</var> is not null and if <var>name</var> is not\n            <a data-cite=\"INFRA#string-is\" href=\"https://infra.spec.whatwg.org/#string-is\">identical to</a> <var>entry</var>'s\n            <code>name</code> attribute, continue to next <var>entry</var>."
+              "html": "If <var>name</var> is not null and if <var>name</var> is not\n      <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is①\">identical to</a> <var>entry</var>’s\n      <code>name</code> attribute, continue to next <var>entry</var>."
             },
             {
-              "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-append\" href=\"https://infra.spec.whatwg.org/#list-append\">append</a> <var>entry</var> to <var>result</var>."
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">append</a> <var>entry</var> to <var>result</var>."
             }
           ]
         },
         {
-          "html": "Sort <var>results</var>'s entries in chronological order with\n        respect to <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceentry-starttime-5\"><code>startTime</code></a>"
+          "html": "Sort <var>results</var>’s entries in chronological order with\n  respect to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime③\">startTime</a></code>"
         },
         {
           "html": "Return <var>result</var>."
@@ -461,17 +459,17 @@
     {
       "name": "determine if a performance entry buffer is full",
       "href": "https://w3c.github.io/performance-timeline/#dfn-determine-if-a-performance-entry-buffer-is-full",
-      "html": "To <dfn id=\"dfn-determine-if-a-performance-entry-buffer-is-full\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">determine if a performance entry buffer is full</dfn>,\n      with <var>tuple</var> as input, run the following\n      steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"dfn-determine-if-a-performance-entry-buffer-is-full\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine if a performance entry buffer is full</dfn>,\nwith <var>tuple</var> as input, run the following\nsteps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>num current entries</var> be the size of\n        <var>tuple</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-performance-entry-buffer\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-performance-entry-buffer-4\">performance entry buffer</a>."
+          "html": "Let <var>num current entries</var> be the size of\n  <var>tuple</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#performance-entry-buffer\" id=\"ref-for-performance-entry-buffer③\">performance entry buffer</a>."
         },
         {
-          "html": "If <var>num current entries</var> is less than <var>tuples</var>'s\n        <a href=\"https://w3c.github.io/performance-timeline/#dfn-maxbuffersize\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-maxbuffersize-1\">maxBufferSize</a>, return false."
+          "html": "If <var>num current entries</var> is less than <var>tuple</var>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#maxbuffersize\" id=\"ref-for-maxbuffersize\">maxBufferSize</a>, return false."
         },
         {
-          "html": "Increase <var>tuple</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-dropped-entries-count\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-dropped-entries-count-2\">dropped entries count</a> by 1."
+          "html": "Increase <var>tuple</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dropped-entries-count\" id=\"ref-for-dropped-entries-count①\">dropped entries count</a> by 1."
         },
         {
           "html": "Return true."
@@ -480,18 +478,18 @@
     },
     {
       "name": "generate an id",
-      "href": "https://w3c.github.io/performance-timeline/#dfn-generate-an-id",
-      "html": "When asked to <dfn class=\"export\" data-export=\"\" id=\"dfn-generate-an-id\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">generate an id</dfn> for a\n      <a href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performanceentry-12\"><code>PerformanceEntry</code></a> <var>entry, run the following steps:</var>",
+      "href": "https://w3c.github.io/performance-timeline/#generate-an-id",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"generate-an-id\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate an id</dfn> for a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#performanceentry\" id=\"ref-for-performanceentry①⓪\">PerformanceEntry</a></code> <var>entry</var>, run the following steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "Let <var>relevantGlobal</var> be <var>entry</var>'s <a data-cite=\"html\" data-cite-path=\"/webappapis.html\" data-cite-frag=\"concept-relevant-global\" data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\">relevant\n        global object</a>."
+          "html": "Let <var>relevantGlobal</var> be <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>."
         },
         {
-          "html": "Increase <var>relevantGlobal</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-last-performance-entry-id\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-last-performance-entry-id-1\">last performance entry\n        id</a> by a small number chosen by the user agent."
+          "html": "Increase <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#last-performance-entry-id\" id=\"ref-for-last-performance-entry-id\">last performance entry id</a> by a small number chosen by the user agent."
         },
         {
-          "html": "Return <var>relevantGlobal</var>'s <a href=\"https://w3c.github.io/performance-timeline/#dfn-last-performance-entry-id\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-last-performance-entry-id-2\">last performance entry id</a>."
+          "html": "Return <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#last-performance-entry-id\" id=\"ref-for-last-performance-entry-id①\">last performance entry id</a>."
         }
       ]
     }
