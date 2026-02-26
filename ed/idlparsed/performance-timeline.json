@@ -47,7 +47,7 @@
           ]
         },
         "extAttrs": [],
-        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentrylist"
+        "href": "https://w3c.github.io/performance-timeline/#typedefdef-performanceentrylist"
       },
       "PerformanceEntry": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceEntry {\n  readonly    attribute unsigned long long  id;\n  readonly    attribute DOMString           name;\n  readonly    attribute DOMString           entryType;\n  readonly    attribute DOMHighResTimeStamp startTime;\n  readonly    attribute DOMHighResTimeStamp duration;\n  readonly    attribute unsigned long long  navigationId;\n  [Default] object toJSON();\n};",
@@ -194,10 +194,10 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/performance-timeline/#dom-performanceentry"
+        "href": "https://w3c.github.io/performance-timeline/#performanceentry"
       },
       "PerformanceObserverCallback": {
-        "fragment": "callback PerformanceObserverCallback = undefined (PerformanceObserverEntryList entries,\n                                             PerformanceObserver observer,\n                                             optional PerformanceObserverCallbackOptions options = {});",
+        "fragment": "callback PerformanceObserverCallback = undefined (PerformanceObserverEntryList entries,\n                                                 PerformanceObserver observer,\n                                                 optional PerformanceObserverCallbackOptions options = {});",
         "type": "callback",
         "name": "PerformanceObserverCallback",
         "idlType": {
@@ -261,7 +261,7 @@
           }
         ],
         "extAttrs": [],
-        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobservercallback"
+        "href": "https://w3c.github.io/performance-timeline/#callbackdef-performanceobservercallback"
       },
       "PerformanceObserver": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceObserver {\n  constructor(PerformanceObserverCallback callback);\n  undefined observe (optional PerformanceObserverInit options = {});\n  undefined disconnect ();\n  PerformanceEntryList takeRecords();\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedEntryTypes;\n};",
@@ -290,7 +290,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-constructor"
+            "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver-performanceobserver"
           },
           {
             "type": "operation",
@@ -411,7 +411,7 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserver"
+        "href": "https://w3c.github.io/performance-timeline/#performanceobserver"
       },
       "PerformanceObserverCallbackOptions": {
         "fragment": "dictionary PerformanceObserverCallbackOptions {\n  unsigned long long droppedEntriesCount;\n};",
@@ -438,7 +438,7 @@
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobservercallbackoptions"
+        "href": "https://w3c.github.io/performance-timeline/#dictdef-performanceobservercallbackoptions"
       },
       "PerformanceObserverInit": {
         "fragment": "dictionary PerformanceObserverInit {\n  sequence<DOMString> entryTypes;\n  DOMString type;\n  boolean buffered;\n};",
@@ -506,7 +506,7 @@
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverinit"
+        "href": "https://w3c.github.io/performance-timeline/#dictdef-performanceobserverinit"
       },
       "PerformanceObserverEntryList": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceObserverEntryList {\n  PerformanceEntryList getEntries();\n  PerformanceEntryList getEntriesByType (DOMString type);\n  PerformanceEntryList getEntriesByName (DOMString name, optional DOMString type);\n};",
@@ -632,7 +632,7 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/performance-timeline/#dom-performanceobserverentrylist"
+        "href": "https://w3c.github.io/performance-timeline/#performanceobserverentrylist"
       }
     },
     "idlExtendedNames": {

@@ -126,9 +126,6 @@
           "html": "<p>\n              Let <var>decapsulationAlgorithm</var>, <var>decapsulationKey</var>, <var>sharedKeyAlgorithm</var>,\n              <var>extractable</var> and <var>usages</var> be the <code>decapsulationAlgorithm</code>, <code>decapsulationKey</code>, <code>sharedKeyAlgorithm</code>, <code>extractable</code> and <code>keyUsages</code> parameters passed to the\n              <a data-link-type=\"idl\" data-lt=\"decapsulateKey()\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-SubtleCrypto-method-decapsulateKey\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-decapsulateKey-4\"><code>decapsulateKey</code></a><code>()</code> method,\n              respectively.\n            </p>"
         },
         {
-          "html": "<p>\n              Let <var>ciphertext</var> be the result of\n              <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>ciphertext</code> parameter passed to the\n              <a data-link-type=\"idl\" data-lt=\"decapsulateKey()\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-SubtleCrypto-method-decapsulateKey\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-decapsulateKey-5\"><code>decapsulateKey</code></a><code>()</code> method.\n            </p>"
-        },
-        {
           "html": "<p>\n              Let <var>normalizedDecapsulationAlgorithm</var> be the result of\n              <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-normalize-an-algorithm\">normalizing an algorithm</a>, with\n              <code>alg</code> set to <var>decapsulationAlgorithm</var> and <code>op</code> set to\n              \"<code>decapsulate</code>\".\n            </p>"
         },
         {
@@ -139,6 +136,9 @@
         },
         {
           "html": "<p>\n              If an error occurred, return a Promise rejected with\n              <var>normalizedSharedKeyAlgorithm</var>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Let <var>ciphertext</var> be the result of\n              <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>ciphertext</code> parameter passed to the\n              <a data-link-type=\"idl\" data-lt=\"decapsulateKey()\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-SubtleCrypto-method-decapsulateKey\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-decapsulateKey-5\"><code>decapsulateKey</code></a><code>()</code> method.\n            </p>"
         },
         {
           "html": "<p>\n              Let <var>realm</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.\n            </p>"
@@ -191,13 +191,13 @@
           "html": "<p>\n              Let <var>decapsulationAlgorithm</var> and <var>decapsulationKey</var> be the <code>decapsulationAlgorithm</code> and <code>decapsulationKey</code> parameters passed to the\n              <a data-link-type=\"idl\" data-lt=\"decapsulateBits()\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-SubtleCrypto-method-decapsulateBits\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-decapsulateBits-4\"><code>decapsulateBits</code></a><code>()</code> method,\n              respectively.\n            </p>"
         },
         {
-          "html": "<p>\n              Let <var>ciphertext</var> be the result of\n              <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>ciphertext</code> parameter passed to the\n              <a data-link-type=\"idl\" data-lt=\"decapsulateBits()\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-SubtleCrypto-method-decapsulateBits\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-decapsulateBits-5\"><code>decapsulateBits</code></a><code>()</code> method.\n            </p>"
-        },
-        {
           "html": "<p>\n              Let <var>normalizedDecapsulationAlgorithm</var> be the result of\n              <a href=\"https://www.w3.org/TR/webcrypto-2/#dfn-normalize-an-algorithm\">normalizing an algorithm</a>, with\n              <code>alg</code> set to <var>decapsulationAlgorithm</var> and <code>op</code> set to\n              \"<code>decapsulate</code>\".\n            </p>"
         },
         {
           "html": "<p>\n              If an error occurred, return a Promise rejected with\n              <var>normalizedDecapsulationAlgorithm</var>.\n            </p>"
+        },
+        {
+          "html": "<p>\n              Let <var>ciphertext</var> be the result of\n              <a data-link-type=\"dfn\" data-lt=\"get a copy of the buffer source\" href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">getting a copy of the bytes held by</a> the <code>ciphertext</code> parameter passed to the\n              <a data-link-type=\"idl\" data-lt=\"decapsulateBits()\" href=\"https://wicg.github.io/webcrypto-modern-algos/#dfn-SubtleCrypto-method-decapsulateBits\" class=\"internalDFN\" id=\"ref-for-dfn-SubtleCrypto-method-decapsulateBits-5\"><code>decapsulateBits</code></a><code>()</code> method.\n            </p>"
         },
         {
           "html": "<p>\n              Let <var>realm</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\">relevant realm</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>.\n            </p>"
