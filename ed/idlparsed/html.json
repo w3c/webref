@@ -4004,40 +4004,12 @@
         "partial": false,
         "href": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#htmlbrelement"
       },
-      "HTMLHyperlinkElementUtils": {
-        "fragment": "interface mixin HTMLHyperlinkElementUtils {\n  [CEReactions, ReflectSetter] stringifier attribute USVString href;\n  readonly attribute USVString origin;\n  [CEReactions] attribute USVString protocol;\n  [CEReactions] attribute USVString username;\n  [CEReactions] attribute USVString password;\n  [CEReactions] attribute USVString host;\n  [CEReactions] attribute USVString hostname;\n  [CEReactions] attribute USVString port;\n  [CEReactions] attribute USVString pathname;\n  [CEReactions] attribute USVString search;\n  [CEReactions] attribute USVString hash;\n};",
+      "HyperlinkElementUtils": {
+        "fragment": "interface mixin HyperlinkElementUtils {\n  readonly attribute USVString origin;\n  [CEReactions] attribute USVString protocol;\n  [CEReactions] attribute USVString username;\n  [CEReactions] attribute USVString password;\n  [CEReactions] attribute USVString host;\n  [CEReactions] attribute USVString hostname;\n  [CEReactions] attribute USVString port;\n  [CEReactions] attribute USVString pathname;\n  [CEReactions] attribute USVString search;\n  [CEReactions] attribute USVString hash;\n};",
         "type": "interface mixin",
-        "name": "HTMLHyperlinkElementUtils",
+        "name": "HyperlinkElementUtils",
         "inheritance": null,
         "members": [
-          {
-            "type": "attribute",
-            "name": "href",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "USVString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              },
-              {
-                "type": "extended-attribute",
-                "name": "ReflectSetter",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "stringifier",
-            "readonly": false
-          },
           {
             "type": "attribute",
             "name": "origin",
@@ -4260,6 +4232,45 @@
             "special": "",
             "readonly": false,
             "href": "https://html.spec.whatwg.org/multipage/links.html#dom-hyperlink-hash"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/links.html#hyperlinkelementutils"
+      },
+      "HTMLHyperlinkElementUtils": {
+        "fragment": "interface mixin HTMLHyperlinkElementUtils {\n  [CEReactions, ReflectSetter] stringifier attribute USVString href;\n};",
+        "type": "interface mixin",
+        "name": "HTMLHyperlinkElementUtils",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "href",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "ReflectSetter",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "stringifier",
+            "readonly": false
           }
         ],
         "extAttrs": [],
@@ -42458,6 +42469,13 @@
       ],
       "HTMLAnchorElement": [
         {
+          "fragment": "HTMLAnchorElement includes HyperlinkElementUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLAnchorElement",
+          "includes": "HyperlinkElementUtils"
+        },
+        {
           "fragment": "HTMLAnchorElement includes HTMLHyperlinkElementUtils;",
           "type": "includes",
           "extAttrs": [],
@@ -42621,6 +42639,13 @@
         }
       ],
       "HTMLAreaElement": [
+        {
+          "fragment": "HTMLAreaElement includes HyperlinkElementUtils;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "HTMLAreaElement",
+          "includes": "HyperlinkElementUtils"
+        },
         {
           "fragment": "HTMLAreaElement includes HTMLHyperlinkElementUtils;",
           "type": "includes",
@@ -46943,6 +46968,7 @@
       "HTMLAnchorElement": [
         "HTMLElement",
         "DOMTokenList",
+        "HyperlinkElementUtils",
         "HTMLHyperlinkElementUtils"
       ],
       "HTMLDataElement": [
@@ -46957,6 +46983,7 @@
       "HTMLBRElement": [
         "HTMLElement"
       ],
+      "HyperlinkElementUtils": [],
       "HTMLHyperlinkElementUtils": [],
       "HTMLModElement": [
         "HTMLElement"
@@ -47065,6 +47092,7 @@
       "HTMLAreaElement": [
         "HTMLElement",
         "DOMTokenList",
+        "HyperlinkElementUtils",
         "HTMLHyperlinkElementUtils"
       ],
       "HTMLTableElement": [

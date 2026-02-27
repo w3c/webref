@@ -15,6 +15,13 @@
         "title": "HTML Standard",
         "url": "https://html.spec.whatwg.org/multipage/"
       },
+      "fragment": "HTMLAreaElement includes HyperlinkElementUtils;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
       "fragment": "HTMLAreaElement includes HTMLHyperlinkElementUtils;"
     },
     {
@@ -553,6 +560,21 @@
   },
   "includes": [
     {
+      "name": "HyperlinkElementUtils",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin HyperlinkElementUtils {\n  readonly attribute USVString origin;\n  [CEReactions] attribute USVString protocol;\n  [CEReactions] attribute USVString username;\n  [CEReactions] attribute USVString password;\n  [CEReactions] attribute USVString host;\n  [CEReactions] attribute USVString hostname;\n  [CEReactions] attribute USVString port;\n  [CEReactions] attribute USVString pathname;\n  [CEReactions] attribute USVString search;\n  [CEReactions] attribute USVString hash;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/links.html#hyperlinkelementutils"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
       "name": "HTMLHyperlinkElementUtils",
       "type": "interface mixin",
       "defined": {
@@ -560,7 +582,7 @@
           "title": "HTML Standard",
           "url": "https://html.spec.whatwg.org/multipage/"
         },
-        "fragment": "interface mixin HTMLHyperlinkElementUtils {\n  [CEReactions, ReflectSetter] stringifier attribute USVString href;\n  readonly attribute USVString origin;\n  [CEReactions] attribute USVString protocol;\n  [CEReactions] attribute USVString username;\n  [CEReactions] attribute USVString password;\n  [CEReactions] attribute USVString host;\n  [CEReactions] attribute USVString hostname;\n  [CEReactions] attribute USVString port;\n  [CEReactions] attribute USVString pathname;\n  [CEReactions] attribute USVString search;\n  [CEReactions] attribute USVString hash;\n};",
+        "fragment": "interface mixin HTMLHyperlinkElementUtils {\n  [CEReactions, ReflectSetter] stringifier attribute USVString href;\n};",
         "href": "https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils"
       },
       "extended": [],
