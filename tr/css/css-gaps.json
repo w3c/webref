@@ -7,9 +7,9 @@
     {
       "name": "column-rule-break",
       "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-break",
-      "value": "none | spanning-item | intersection",
-      "initial": "spanning-item",
-      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "value": "none | normal | intersection",
+      "initial": "normal",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -24,11 +24,11 @@
           "value": "none"
         },
         {
-          "name": "spanning-item",
-          "prose": "Gap decorations start and end at visible \"T\" intersections but continue through visible \"cross\" intersections.",
-          "href": "https://www.w3.org/TR/css-gaps-1/#valdef-column-rule-break-spanning-item",
+          "name": "normal",
+          "prose": "Behavior depends on the type of container.",
+          "href": "https://www.w3.org/TR/css-gaps-1/#valdef-column-rule-break-normal",
           "type": "value",
-          "value": "spanning-item"
+          "value": "normal"
         },
         {
           "name": "intersection",
@@ -46,9 +46,9 @@
     {
       "name": "row-rule-break",
       "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-break",
-      "value": "none | spanning-item | intersection",
-      "initial": "spanning-item",
-      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "value": "none | normal | intersection",
+      "initial": "normal",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -63,11 +63,11 @@
           "value": "none"
         },
         {
-          "name": "spanning-item",
-          "prose": "Gap decorations start and end at visible \"T\" intersections but continue through visible \"cross\" intersections.",
-          "href": "https://www.w3.org/TR/css-gaps-1/#valdef-column-rule-break-spanning-item",
+          "name": "normal",
+          "prose": "Behavior depends on the type of container.",
+          "href": "https://www.w3.org/TR/css-gaps-1/#valdef-column-rule-break-normal",
           "type": "value",
-          "value": "spanning-item"
+          "value": "normal"
         },
         {
           "name": "intersection",
@@ -99,67 +99,497 @@
       ]
     },
     {
-      "name": "column-rule-outset",
-      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-outset",
+      "name": "column-rule-edge-inset-start",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-edge-inset-start",
       "value": "<length-percentage>",
-      "initial": "50%",
-      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "initial": "0",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "refer to the crossing gap width",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "styleDeclaration": [
-        "column-rule-outset",
-        "columnRuleOutset"
+        "column-rule-edge-inset-start",
+        "columnRuleEdgeInsetStart"
       ]
     },
     {
-      "name": "row-rule-outset",
-      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-outset",
+      "name": "column-rule-edge-inset-end",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-edge-inset-end",
       "value": "<length-percentage>",
-      "initial": "50%",
-      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "initial": "0",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "refer to the crossing gap width",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "styleDeclaration": [
-        "row-rule-outset",
-        "rowRuleOutset"
+        "column-rule-edge-inset-end",
+        "columnRuleEdgeInsetEnd"
       ]
     },
     {
-      "name": "rule-outset",
-      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-outset",
-      "value": "<'column-rule-outset'>",
+      "name": "column-rule-interior-inset-start",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-interior-inset-start",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
+      "inherited": "no",
+      "percentages": "refer to the crossing gap width",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "column-rule-interior-inset-start",
+        "columnRuleInteriorInsetStart"
+      ]
+    },
+    {
+      "name": "column-rule-interior-inset-end",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-interior-inset-end",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
+      "inherited": "no",
+      "percentages": "refer to the crossing gap width",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "column-rule-interior-inset-end",
+        "columnRuleInteriorInsetEnd"
+      ]
+    },
+    {
+      "name": "row-rule-edge-inset-start",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-edge-inset-start",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
+      "inherited": "no",
+      "percentages": "refer to the crossing gap width",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "row-rule-edge-inset-start",
+        "rowRuleEdgeInsetStart"
+      ]
+    },
+    {
+      "name": "row-rule-edge-inset-end",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-edge-inset-end",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
+      "inherited": "no",
+      "percentages": "refer to the crossing gap width",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "row-rule-edge-inset-end",
+        "rowRuleEdgeInsetEnd"
+      ]
+    },
+    {
+      "name": "row-rule-interior-inset-start",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-interior-inset-start",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
+      "inherited": "no",
+      "percentages": "refer to the crossing gap width",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "row-rule-interior-inset-start",
+        "rowRuleInteriorInsetStart"
+      ]
+    },
+    {
+      "name": "row-rule-interior-inset-end",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-interior-inset-end",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
+      "inherited": "no",
+      "percentages": "refer to the crossing gap width",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "row-rule-interior-inset-end",
+        "rowRuleInteriorInsetEnd"
+      ]
+    },
+    {
+      "name": "column-rule-inset-start",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-inset-start",
+      "value": "<length-percentage>",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-outset and row-rule-outset",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
       "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
-        "rule-outset",
-        "ruleOutset"
+        "column-rule-inset-start",
+        "columnRuleInsetStart"
       ]
     },
     {
-      "name": "rule-paint-order",
-      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-paint-order",
-      "value": "row-over-column | column-over-row",
-      "initial": "row-over-column",
-      "appliesTo": "grid containers, flex containers, and masonry containers",
+      "name": "column-rule-inset-end",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-inset-end",
+      "value": "<length-percentage>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "column-rule-inset-end",
+        "columnRuleInsetEnd"
+      ]
+    },
+    {
+      "name": "row-rule-inset-start",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-inset-start",
+      "value": "<length-percentage>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "row-rule-inset-start",
+        "rowRuleInsetStart"
+      ]
+    },
+    {
+      "name": "row-rule-inset-end",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-inset-end",
+      "value": "<length-percentage>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "row-rule-inset-end",
+        "rowRuleInsetEnd"
+      ]
+    },
+    {
+      "name": "rule-inset-start",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-inset-start",
+      "value": "<'column-rule-inset-start'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-inset-start and row-rule-inset-start",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-inset-start",
+        "ruleInsetStart"
+      ]
+    },
+    {
+      "name": "rule-inset-end",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-inset-end",
+      "value": "<'column-rule-inset-end'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-inset-end and row-rule-inset-end",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-inset-end",
+        "ruleInsetEnd"
+      ]
+    },
+    {
+      "name": "column-rule-edge-inset",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-edge-inset",
+      "value": "<length-percentage> [ <length-percentage> ]?",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "column-rule-edge-inset",
+        "columnRuleEdgeInset"
+      ]
+    },
+    {
+      "name": "column-rule-interior-inset",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-interior-inset",
+      "value": "<length-percentage> [ <length-percentage> ]?",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "column-rule-interior-inset",
+        "columnRuleInteriorInset"
+      ]
+    },
+    {
+      "name": "row-rule-edge-inset",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-edge-inset",
+      "value": "<length-percentage> [ <length-percentage> ]?",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "row-rule-edge-inset",
+        "rowRuleEdgeInset"
+      ]
+    },
+    {
+      "name": "row-rule-interior-inset",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-interior-inset",
+      "value": "<length-percentage> [ <length-percentage> ]?",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "row-rule-interior-inset",
+        "rowRuleInteriorInset"
+      ]
+    },
+    {
+      "name": "rule-edge-inset",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-edge-inset",
+      "value": "<'column-rule-edge-inset'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset and row-rule-edge-inset",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-edge-inset",
+        "ruleEdgeInset"
+      ]
+    },
+    {
+      "name": "rule-interior-inset",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-interior-inset",
+      "value": "<'column-rule-interior-inset'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-interior-inset and row-rule-interior-inset",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-interior-inset",
+        "ruleInteriorInset"
+      ]
+    },
+    {
+      "name": "column-rule-inset",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-inset",
+      "value": "<'column-rule-edge-inset'> [ / <'column-rule-interior-inset'> ]?",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset, column-rule-interior-inset, row-rule-edge-inset, and row-rule-interior-inset",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "column-rule-inset",
+        "columnRuleInset"
+      ]
+    },
+    {
+      "name": "row-rule-inset",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-inset",
+      "value": "<'column-rule-edge-inset'> [ / <'column-rule-interior-inset'> ]?",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-edge-inset, column-rule-interior-inset, row-rule-edge-inset, and row-rule-interior-inset",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "row-rule-inset",
+        "rowRuleInset"
+      ]
+    },
+    {
+      "name": "rule-inset",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-inset",
+      "value": "<'column-rule-inset'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-inset and row-rule-inset",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-inset",
+        "ruleInset"
+      ]
+    },
+    {
+      "name": "column-rule-visibility-items",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-visibility-items",
+      "value": "all | around | between",
+      "initial": "all",
+      "appliesTo": "grid containers, and multicol containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "all",
+          "prose": "Paint decorations in all gap segments, regardless of whether adjacent items are present.",
+          "href": "https://www.w3.org/TR/css-gaps-1/#valdef-column-rule-visibility-items-all",
+          "type": "value",
+          "value": "all"
+        },
+        {
+          "name": "around",
+          "prose": "Paint decorations in a gap segment if at least one of the two adjacent areas is occupied by an item.",
+          "href": "https://www.w3.org/TR/css-gaps-1/#valdef-column-rule-visibility-items-around",
+          "type": "value",
+          "value": "around"
+        },
+        {
+          "name": "between",
+          "prose": "Paint decorations in a gap segment if both adjacent areas are occupied by items.",
+          "href": "https://www.w3.org/TR/css-gaps-1/#valdef-column-rule-visibility-items-between",
+          "type": "value",
+          "value": "between"
+        }
+      ],
       "styleDeclaration": [
-        "rule-paint-order",
-        "rulePaintOrder"
+        "column-rule-visibility-items",
+        "columnRuleVisibilityItems"
+      ]
+    },
+    {
+      "name": "row-rule-visibility-items",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-visibility-items",
+      "value": "all | around | between",
+      "initial": "all",
+      "appliesTo": "grid containers, and multicol containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "all",
+          "prose": "Paint decorations in all gap segments, regardless of whether adjacent items are present.",
+          "href": "https://www.w3.org/TR/css-gaps-1/#valdef-column-rule-visibility-items-all",
+          "type": "value",
+          "value": "all"
+        },
+        {
+          "name": "around",
+          "prose": "Paint decorations in a gap segment if at least one of the two adjacent areas is occupied by an item.",
+          "href": "https://www.w3.org/TR/css-gaps-1/#valdef-column-rule-visibility-items-around",
+          "type": "value",
+          "value": "around"
+        },
+        {
+          "name": "between",
+          "prose": "Paint decorations in a gap segment if both adjacent areas are occupied by items.",
+          "href": "https://www.w3.org/TR/css-gaps-1/#valdef-column-rule-visibility-items-between",
+          "type": "value",
+          "value": "between"
+        }
+      ],
+      "styleDeclaration": [
+        "row-rule-visibility-items",
+        "rowRuleVisibilityItems"
+      ]
+    },
+    {
+      "name": "rule-visibility-items",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-visibility-items",
+      "value": "<'column-rule-visibility-items'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-visibility-items and row-rule-visibility-items",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-visibility-items",
+        "ruleVisibilityItems"
+      ]
+    },
+    {
+      "name": "rule-overlap",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-overlap",
+      "value": "row-over-column | column-over-row",
+      "initial": "row-over-column",
+      "appliesTo": "grid containers, flex containers, and grid lanes containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "row-over-column",
+          "prose": "Row-direction decorations are painted above column-direction decorations.",
+          "href": "https://www.w3.org/TR/css-gaps-1/#valdef-rule-overlap-row-over-column",
+          "type": "value",
+          "value": "row-over-column"
+        },
+        {
+          "name": "column-over-row",
+          "prose": "Column-direction decorations are painted above row-direction decorations.",
+          "href": "https://www.w3.org/TR/css-gaps-1/#valdef-rule-overlap-column-over-row",
+          "type": "value",
+          "value": "column-over-row"
+        }
+      ],
+      "styleDeclaration": [
+        "rule-overlap",
+        "ruleOverlap"
       ]
     },
     {
@@ -167,21 +597,12 @@
       "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-color",
       "value": "<line-color-list> | <auto-line-color-list>",
       "initial": "currentcolor",
-      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
-      "values": [
-        {
-          "name": "<color>",
-          "prose": "Sets the color of gap decorations.",
-          "href": "https://www.w3.org/TR/css-gaps-1/#valdef-column-rule-color-color",
-          "type": "value",
-          "value": "<color>"
-        }
-      ],
+      "animationType": "repeatable list, see § 4.7 Interpolation of list values.",
       "styleDeclaration": [
         "column-rule-color",
         "columnRuleColor"
@@ -192,15 +613,31 @@
       "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-color",
       "value": "<line-color-list> | <auto-line-color-list>",
       "initial": "currentcolor",
-      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "repeatable list, see § 4.7 Interpolation of list values.",
       "styleDeclaration": [
         "row-rule-color",
         "rowRuleColor"
+      ]
+    },
+    {
+      "name": "rule-color",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-color",
+      "value": "<'column-rule-color'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-color and row-rule-color",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-color",
+        "ruleColor"
       ]
     },
     {
@@ -208,7 +645,7 @@
       "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-style",
       "value": "<line-style-list> | <auto-line-style-list>",
       "initial": "none",
-      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -224,7 +661,7 @@
       "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-style",
       "value": "<line-style-list> | <auto-line-style-list>",
       "initial": "none",
-      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -236,16 +673,32 @@
       ]
     },
     {
+      "name": "rule-style",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-style",
+      "value": "<'column-rule-style'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-style and row-rule-style",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-style",
+        "ruleStyle"
+      ]
+    },
+    {
       "name": "column-rule-width",
       "href": "https://www.w3.org/TR/css-gaps-1/#propdef-column-rule-width",
       "value": "<line-width-list> | <auto-line-width-list>",
       "initial": "medium",
-      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "list of absolute lengths, snapped as a border width, or 0 under conditions described below",
+      "computedValue": "list of absolute lengths, snapped as a border width",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "repeatable list, see § 4.7 Interpolation of list values.",
       "styleDeclaration": [
         "column-rule-width",
         "columnRuleWidth"
@@ -256,15 +709,31 @@
       "href": "https://www.w3.org/TR/css-gaps-1/#propdef-row-rule-width",
       "value": "<line-width-list> | <auto-line-width-list>",
       "initial": "medium",
-      "appliesTo": "grid containers, flex containers, multicol containers, and masonry containers",
+      "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "list of absolute lengths, snapped as a border width, or 0 under conditions described below",
+      "computedValue": "list of absolute lengths, snapped as a border width",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value type",
+      "animationType": "repeatable list, see § 4.7 Interpolation of list values.",
       "styleDeclaration": [
         "row-rule-width",
         "rowRuleWidth"
+      ]
+    },
+    {
+      "name": "rule-width",
+      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-width",
+      "value": "<'column-rule-width'>",
+      "initial": "see individual properties",
+      "appliesTo": "Same as column-rule-width and row-rule-width",
+      "inherited": "no",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rule-width",
+        "ruleWidth"
       ]
     },
     {
@@ -300,54 +769,6 @@
       ]
     },
     {
-      "name": "rule-color",
-      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-color",
-      "value": "<'column-rule-color'>",
-      "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-color and row-rule-color",
-      "inherited": "no",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "rule-color",
-        "ruleColor"
-      ]
-    },
-    {
-      "name": "rule-style",
-      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-style",
-      "value": "<'column-rule-style'>",
-      "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-style and row-rule-style",
-      "inherited": "no",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "rule-style",
-        "ruleStyle"
-      ]
-    },
-    {
-      "name": "rule-width",
-      "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule-width",
-      "value": "<'column-rule-width'>",
-      "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-width and row-rule-width",
-      "inherited": "no",
-      "percentages": "see individual properties",
-      "computedValue": "see individual properties",
-      "animationType": "see individual properties",
-      "canonicalOrder": "per grammar",
-      "styleDeclaration": [
-        "rule-width",
-        "ruleWidth"
-      ]
-    },
-    {
       "name": "rule",
       "href": "https://www.w3.org/TR/css-gaps-1/#propdef-rule",
       "value": "<'column-rule'>",
@@ -370,13 +791,13 @@
       "name": "<line-color-list>",
       "href": "https://www.w3.org/TR/css-gaps-1/#typedef-line-color-list",
       "type": "type",
-      "value": "[ <line-color-or-repeat> ]+"
+      "value": "<line-color-or-repeat>#"
     },
     {
       "name": "<auto-line-color-list>",
       "href": "https://www.w3.org/TR/css-gaps-1/#typedef-auto-line-color-list",
       "type": "type",
-      "value": "[ <line-color-or-repeat> ]* <auto-repeat-line-color> [ <line-color-or-repeat> ]*"
+      "value": "<line-color-or-repeat>#? , <auto-repeat-line-color> , <line-color-or-repeat>#?"
     },
     {
       "name": "<line-color-or-repeat>",
@@ -388,13 +809,22 @@
       "name": "<repeat-line-color>",
       "href": "https://www.w3.org/TR/css-gaps-1/#typedef-repeat-line-color",
       "type": "type",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <color> ]+ )",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <color> ]# )",
       "values": [
         {
           "name": "repeat()",
           "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://www.w3.org/TR/css-gaps-1/#funcdef-repeat-line-color-repeat",
-          "type": "function"
+          "type": "function",
+          "values": [
+            {
+              "name": "auto",
+              "prose": "Specifies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "href": "https://www.w3.org/TR/css-gaps-1/#valdef-repeat-auto",
+              "type": "value",
+              "value": "auto"
+            }
+          ]
         }
       ]
     },
@@ -402,13 +832,22 @@
       "name": "<auto-repeat-line-color>",
       "href": "https://www.w3.org/TR/css-gaps-1/#typedef-auto-repeat-line-color",
       "type": "type",
-      "value": "repeat( auto , [ <color> ]+ )",
+      "value": "repeat( auto , [ <color> ]# )",
       "values": [
         {
           "name": "repeat()",
           "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://www.w3.org/TR/css-gaps-1/#funcdef-repeat-line-color-repeat",
-          "type": "function"
+          "type": "function",
+          "values": [
+            {
+              "name": "auto",
+              "prose": "Specifies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "href": "https://www.w3.org/TR/css-gaps-1/#valdef-repeat-auto",
+              "type": "value",
+              "value": "auto"
+            }
+          ]
         }
       ]
     },
@@ -416,13 +855,13 @@
       "name": "<line-style-list>",
       "href": "https://www.w3.org/TR/css-gaps-1/#typedef-line-style-list",
       "type": "type",
-      "value": "[ <line-style-or-repeat> ]+"
+      "value": "<line-style-or-repeat>#"
     },
     {
       "name": "<auto-line-style-list>",
       "href": "https://www.w3.org/TR/css-gaps-1/#typedef-auto-line-style-list",
       "type": "type",
-      "value": "[ <line-style-or-repeat> ]* <auto-repeat-line-style> [ <line-style-or-repeat> ]*"
+      "value": "<line-style-or-repeat>#? , <auto-repeat-line-style> , <line-style-or-repeat>#?"
     },
     {
       "name": "<line-style-or-repeat>",
@@ -434,13 +873,22 @@
       "name": "<repeat-line-style>",
       "href": "https://www.w3.org/TR/css-gaps-1/#typedef-repeat-line-style",
       "type": "type",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <line-style> ]+ )",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-style> ]# )",
       "values": [
         {
           "name": "repeat()",
           "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://www.w3.org/TR/css-gaps-1/#funcdef-repeat-line-color-repeat",
-          "type": "function"
+          "type": "function",
+          "values": [
+            {
+              "name": "auto",
+              "prose": "Specifies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "href": "https://www.w3.org/TR/css-gaps-1/#valdef-repeat-auto",
+              "type": "value",
+              "value": "auto"
+            }
+          ]
         }
       ]
     },
@@ -448,13 +896,22 @@
       "name": "<auto-repeat-line-style>",
       "href": "https://www.w3.org/TR/css-gaps-1/#typedef-auto-repeat-line-style",
       "type": "type",
-      "value": "repeat( auto , [ <line-style> ]+ )",
+      "value": "repeat( auto , [ <line-style> ]# )",
       "values": [
         {
           "name": "repeat()",
           "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://www.w3.org/TR/css-gaps-1/#funcdef-repeat-line-color-repeat",
-          "type": "function"
+          "type": "function",
+          "values": [
+            {
+              "name": "auto",
+              "prose": "Specifies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "href": "https://www.w3.org/TR/css-gaps-1/#valdef-repeat-auto",
+              "type": "value",
+              "value": "auto"
+            }
+          ]
         }
       ]
     },
@@ -462,13 +919,13 @@
       "name": "<line-width-list>",
       "href": "https://www.w3.org/TR/css-gaps-1/#typedef-line-width-list",
       "type": "type",
-      "value": "[ <line-width-or-repeat> ]+"
+      "value": "<line-width-or-repeat>#"
     },
     {
       "name": "<auto-line-width-list>",
       "href": "https://www.w3.org/TR/css-gaps-1/#typedef-auto-line-width-list",
       "type": "type",
-      "value": "[ <line-width-or-repeat> ]* <auto-repeat-line-width> [ <line-width-or-repeat> ]*"
+      "value": "<line-width-or-repeat>#? , <auto-repeat-line-width> , <line-width-or-repeat>#?"
     },
     {
       "name": "<line-width-or-repeat>",
@@ -480,13 +937,22 @@
       "name": "<repeat-line-width>",
       "href": "https://www.w3.org/TR/css-gaps-1/#typedef-repeat-line-width",
       "type": "type",
-      "value": "repeat( [ <integer [1,∞]> ] , [ <line-width> ]+ )",
+      "value": "repeat( [ <integer [1,∞]> ] , [ <line-width> ]# )",
       "values": [
         {
           "name": "repeat()",
           "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://www.w3.org/TR/css-gaps-1/#funcdef-repeat-line-color-repeat",
-          "type": "function"
+          "type": "function",
+          "values": [
+            {
+              "name": "auto",
+              "prose": "Specifies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "href": "https://www.w3.org/TR/css-gaps-1/#valdef-repeat-auto",
+              "type": "value",
+              "value": "auto"
+            }
+          ]
         }
       ]
     },
@@ -494,13 +960,22 @@
       "name": "<auto-repeat-line-width>",
       "href": "https://www.w3.org/TR/css-gaps-1/#typedef-auto-repeat-line-width",
       "type": "type",
-      "value": "repeat( auto , [ <line-width> ]+ )",
+      "value": "repeat( auto , [ <line-width> ]# )",
       "values": [
         {
           "name": "repeat()",
           "prose": "Such a list may contain repeat() notations. Similar to CSS Grid Layout 1 § 7.2.3 Repeating Rows and Columns: the repeat() notation, these notations allow a series of gap decorations that exhibit a recurring pattern to be written in a more compact form.",
           "href": "https://www.w3.org/TR/css-gaps-1/#funcdef-repeat-line-color-repeat",
-          "type": "function"
+          "type": "function",
+          "values": [
+            {
+              "name": "auto",
+              "prose": "Specifies an auto repeater. An auto repeater will be used to fill in values for gaps that would not otherwise receive values from other parts of the list. At most one repeat() in a given list of values may be an auto repeater. Continuing from the previous example, if the author does not know how many columns will be in the final layout, they might instead write: column-rule-color: gray, repeat(auto, red, blue), gray; Which will produce a gray decoration in the first and last column gaps, and alternating red and blue decorations in the in-between column gaps.",
+              "href": "https://www.w3.org/TR/css-gaps-1/#valdef-repeat-auto",
+              "type": "value",
+              "value": "auto"
+            }
+          ]
         }
       ]
     },
