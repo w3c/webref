@@ -282,6 +282,52 @@
         "extAttrs": [],
         "href": "https://w3c.github.io/secure-payment-confirmation/#enumdef-securepaymentconfirmationavailability"
       },
+      "SecurePaymentConfirmationCapabilities": {
+        "fragment": "typedef record<DOMString, boolean> SecurePaymentConfirmationCapabilities;",
+        "type": "typedef",
+        "name": "SecurePaymentConfirmationCapabilities",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "record",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://w3c.github.io/secure-payment-confirmation/#typedefdef-securepaymentconfirmationcapabilities"
+      },
+      "SecurePaymentConfirmationCapability": {
+        "fragment": "enum SecurePaymentConfirmationCapability {\n  \"browserBoundKeyHardware\",\n};",
+        "type": "enum",
+        "name": "SecurePaymentConfirmationCapability",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "browserBoundKeyHardware",
+            "href": "https://w3c.github.io/secure-payment-confirmation/#dom-securepaymentconfirmationcapability-browserboundkeyhardware"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/secure-payment-confirmation/#enumdef-securepaymentconfirmationcapability"
+      },
       "AuthenticationExtensionsPaymentInputs": {
         "fragment": "dictionary AuthenticationExtensionsPaymentInputs {\n  boolean isPayment;\n  sequence<PublicKeyCredentialParameters> browserBoundPubKeyCredParams;\n\n  // Only used for authentication.\n  USVString rpId;\n  USVString topOrigin;\n  USVString payeeName;\n  USVString payeeOrigin;\n  sequence<PaymentEntityLogo> paymentEntitiesLogos;\n  PaymentCurrencyAmount total;\n  PaymentCredentialInstrument instrument;\n};",
         "type": "dictionary",
@@ -886,6 +932,41 @@
           ],
           "extAttrs": [],
           "partial": true
+        },
+        {
+          "fragment": "partial interface PaymentRequest {\n    static Promise<SecurePaymentConfirmationCapabilities> getSecurePaymentConfirmationCapabilities();\n};",
+          "type": "interface",
+          "name": "PaymentRequest",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "getSecurePaymentConfirmationCapabilities",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "SecurePaymentConfirmationCapabilities"
+                  }
+                ]
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": "static",
+              "href": "https://w3c.github.io/secure-payment-confirmation/#dom-paymentrequest-getsecurepaymentconfirmationcapabilities"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
         }
       ],
       "AuthenticationExtensionsClientInputs": [
@@ -956,7 +1037,8 @@
         "PublicKeyCredentialParameters"
       ],
       "PaymentRequest": [
-        "SecurePaymentConfirmationAvailability"
+        "SecurePaymentConfirmationAvailability",
+        "SecurePaymentConfirmationCapabilities"
       ],
       "AuthenticationExtensionsClientInputs": [
         "AuthenticationExtensionsPaymentInputs"
