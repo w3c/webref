@@ -70,24 +70,24 @@
       "number": "1.4"
     },
     {
-      "id": "normative",
-      "href": "https://w3c.github.io/svg-aam/#normative",
+      "id": "conformance",
+      "href": "https://w3c.github.io/svg-aam/#conformance",
       "level": 2,
-      "title": "Normative User Agent Implementation Requirements for SVG",
+      "title": "Conformance",
       "alternateIds": [
-        "x2-normative-user-agent-implementation-requirements-for-svg"
+        "x2-conformance"
       ],
       "number": "2"
     },
     {
-      "id": "glossary",
-      "href": "https://w3c.github.io/svg-aam/#glossary",
-      "level": 2,
-      "title": "Important Terms",
+      "id": "normative-user-agent-implementation-requirements-for-svg",
+      "href": "https://w3c.github.io/svg-aam/#normative-user-agent-implementation-requirements-for-svg",
+      "level": 3,
+      "title": "Normative User Agent Implementation Requirements for SVG",
       "alternateIds": [
-        "x3-important-terms"
+        "x2-1-normative-user-agent-implementation-requirements-for-svg"
       ],
-      "number": "3"
+      "number": "2.1"
     },
     {
       "id": "keyboard-focus",
@@ -95,9 +95,9 @@
       "level": 2,
       "title": "Supporting Keyboard Navigation",
       "alternateIds": [
-        "x4-supporting-keyboard-navigation"
+        "x3-supporting-keyboard-navigation"
       ],
-      "number": "4"
+      "number": "3"
     },
     {
       "id": "mapping",
@@ -105,9 +105,9 @@
       "level": 2,
       "title": "Mapping WAI-ARIA to Accessibility APIs",
       "alternateIds": [
-        "x5-mapping-wai-aria-to-accessibility-apis"
+        "x4-mapping-wai-aria-to-accessibility-apis"
       ],
-      "number": "5"
+      "number": "4"
     },
     {
       "id": "mapping_general",
@@ -115,9 +115,9 @@
       "level": 3,
       "title": "General rules for exposing WAI-ARIA semantics",
       "alternateIds": [
-        "x5-1-general-rules-for-exposing-wai-aria-semantics"
+        "x4-1-general-rules-for-exposing-wai-aria-semantics"
       ],
-      "number": "5.1"
+      "number": "4.1"
     },
     {
       "id": "exclude_elements",
@@ -125,9 +125,9 @@
       "level": 4,
       "title": "Excluding Elements from the Accessibility Tree",
       "alternateIds": [
-        "x5-1-1-excluding-elements-from-the-accessibility-tree"
+        "x4-1-1-excluding-elements-from-the-accessibility-tree"
       ],
-      "number": "5.1.1"
+      "number": "4.1.1"
     },
     {
       "id": "include_elements",
@@ -135,9 +135,9 @@
       "level": 4,
       "title": "Including Elements in the Accessibility Tree",
       "alternateIds": [
-        "x5-1-2-including-elements-in-the-accessibility-tree"
+        "x4-1-2-including-elements-in-the-accessibility-tree"
       ],
-      "number": "5.1.2"
+      "number": "4.1.2"
     },
     {
       "id": "mapping_conflicts",
@@ -145,9 +145,9 @@
       "level": 3,
       "title": "Conflicts between native markup semantics and WAI-ARIA",
       "alternateIds": [
-        "x5-2-conflicts-between-native-markup-semantics-and-wai-aria"
+        "x4-2-conflicts-between-native-markup-semantics-and-wai-aria"
       ],
-      "number": "5.2"
+      "number": "4.2"
     },
     {
       "id": "mapping_nodirect",
@@ -155,9 +155,9 @@
       "level": 3,
       "title": "Exposing attributes that do not directly map to accessibility API properties",
       "alternateIds": [
-        "x5-3-exposing-attributes-that-do-not-directly-map-to-accessibility-api-properties"
+        "x4-3-exposing-attributes-that-do-not-directly-map-to-accessibility-api-properties"
       ],
-      "number": "5.3"
+      "number": "4.3"
     },
     {
       "id": "mapping_role",
@@ -165,9 +165,9 @@
       "level": 2,
       "title": "Role mapping",
       "alternateIds": [
-        "x6-role-mapping"
+        "x5-role-mapping"
       ],
-      "number": "6"
+      "number": "5"
     },
     {
       "id": "roleMappingGeneralRules",
@@ -175,19 +175,709 @@
       "level": 3,
       "title": "General Rules",
       "alternateIds": [
-        "x6-1-general-rules"
+        "x5-1-general-rules"
       ],
-      "number": "6.1"
+      "number": "5.1"
     },
     {
       "id": "mapping_role_table",
       "href": "https://w3c.github.io/svg-aam/#mapping_role_table",
       "level": 3,
-      "title": "SVG Element Mapping Table",
+      "title": "SVG Element Mapping Tables",
       "alternateIds": [
-        "x6-2-svg-element-mapping-table"
+        "x5-2-svg-element-mapping-tables"
       ],
-      "number": "6.2"
+      "number": "5.2"
+    },
+    {
+      "id": "a",
+      "href": "https://w3c.github.io/svg-aam/#a",
+      "level": 4,
+      "title": "a",
+      "alternateIds": [
+        "role-map-a"
+      ],
+      "number": "5.2.1"
+    },
+    {
+      "id": "animate",
+      "href": "https://w3c.github.io/svg-aam/#animate",
+      "level": 4,
+      "title": "animate",
+      "alternateIds": [
+        "role-map-animate"
+      ],
+      "number": "5.2.2"
+    },
+    {
+      "id": "animatemotion",
+      "href": "https://w3c.github.io/svg-aam/#animatemotion",
+      "level": 4,
+      "title": "animateMotion",
+      "alternateIds": [
+        "role-map-animatemotion"
+      ],
+      "number": "5.2.3"
+    },
+    {
+      "id": "animatetransform",
+      "href": "https://w3c.github.io/svg-aam/#animatetransform",
+      "level": 4,
+      "title": "animateTransform",
+      "alternateIds": [
+        "role-map-animatetransform"
+      ],
+      "number": "5.2.4"
+    },
+    {
+      "id": "audio",
+      "href": "https://w3c.github.io/svg-aam/#audio",
+      "level": 4,
+      "title": "audio",
+      "alternateIds": [
+        "role-map-audio"
+      ],
+      "number": "5.2.5"
+    },
+    {
+      "id": "canvas",
+      "href": "https://w3c.github.io/svg-aam/#canvas",
+      "level": 4,
+      "title": "canvas",
+      "alternateIds": [
+        "role-map-canvas"
+      ],
+      "number": "5.2.6"
+    },
+    {
+      "id": "circle",
+      "href": "https://w3c.github.io/svg-aam/#circle",
+      "level": 4,
+      "title": "circle",
+      "alternateIds": [
+        "role-map-circle"
+      ],
+      "number": "5.2.7"
+    },
+    {
+      "id": "clippath",
+      "href": "https://w3c.github.io/svg-aam/#clippath",
+      "level": 4,
+      "title": "clipPath",
+      "alternateIds": [
+        "role-clippath"
+      ],
+      "number": "5.2.8"
+    },
+    {
+      "id": "defs",
+      "href": "https://w3c.github.io/svg-aam/#defs",
+      "level": 4,
+      "title": "defs",
+      "alternateIds": [
+        "role-map-defs"
+      ],
+      "number": "5.2.9"
+    },
+    {
+      "id": "desc",
+      "href": "https://w3c.github.io/svg-aam/#desc",
+      "level": 4,
+      "title": "desc",
+      "alternateIds": [
+        "role-map-desc"
+      ],
+      "number": "5.2.10"
+    },
+    {
+      "id": "ellipse",
+      "href": "https://w3c.github.io/svg-aam/#ellipse",
+      "level": 4,
+      "title": "ellipse",
+      "alternateIds": [
+        "role-map-ellipse"
+      ],
+      "number": "5.2.11"
+    },
+    {
+      "id": "feblend",
+      "href": "https://w3c.github.io/svg-aam/#feblend",
+      "level": 4,
+      "title": "feBlend",
+      "alternateIds": [
+        "role-map-feblend"
+      ],
+      "number": "5.2.12"
+    },
+    {
+      "id": "fecolormatrix",
+      "href": "https://w3c.github.io/svg-aam/#fecolormatrix",
+      "level": 4,
+      "title": "feColorMatrix",
+      "alternateIds": [
+        "role-map-feColorMatrix"
+      ],
+      "number": "5.2.13"
+    },
+    {
+      "id": "fecomponenttransfer",
+      "href": "https://w3c.github.io/svg-aam/#fecomponenttransfer",
+      "level": 4,
+      "title": "feComponentTransfer",
+      "alternateIds": [
+        "role-map-feComponentTransfer"
+      ],
+      "number": "5.2.14"
+    },
+    {
+      "id": "fecomposite",
+      "href": "https://w3c.github.io/svg-aam/#fecomposite",
+      "level": 4,
+      "title": "feComposite",
+      "alternateIds": [
+        "role-map-feComposite"
+      ],
+      "number": "5.2.15"
+    },
+    {
+      "id": "feconvolvematrix",
+      "href": "https://w3c.github.io/svg-aam/#feconvolvematrix",
+      "level": 4,
+      "title": "feConvolveMatrix",
+      "alternateIds": [
+        "role-map-feConvolveMatrix"
+      ],
+      "number": "5.2.16"
+    },
+    {
+      "id": "fediffuselighting",
+      "href": "https://w3c.github.io/svg-aam/#fediffuselighting",
+      "level": 4,
+      "title": "feDiffuseLighting",
+      "alternateIds": [
+        "role-map-fediffuselighting"
+      ],
+      "number": "5.2.17"
+    },
+    {
+      "id": "fedisplacementmap",
+      "href": "https://w3c.github.io/svg-aam/#fedisplacementmap",
+      "level": 4,
+      "title": "feDisplacementMap",
+      "alternateIds": [
+        "role-map-fedisplacementmap"
+      ],
+      "number": "5.2.18"
+    },
+    {
+      "id": "fedistantlight",
+      "href": "https://w3c.github.io/svg-aam/#fedistantlight",
+      "level": 4,
+      "title": "feDistantLight",
+      "alternateIds": [
+        "role-map-fedistantlight"
+      ],
+      "number": "5.2.19"
+    },
+    {
+      "id": "fedropshadow",
+      "href": "https://w3c.github.io/svg-aam/#fedropshadow",
+      "level": 4,
+      "title": "feDropShadow",
+      "alternateIds": [
+        "role-map-fedropshadow"
+      ],
+      "number": "5.2.20"
+    },
+    {
+      "id": "feflood",
+      "href": "https://w3c.github.io/svg-aam/#feflood",
+      "level": 4,
+      "title": "feFlood",
+      "alternateIds": [
+        "role-map-feflood"
+      ],
+      "number": "5.2.21"
+    },
+    {
+      "id": "fefunca",
+      "href": "https://w3c.github.io/svg-aam/#fefunca",
+      "level": 4,
+      "title": "feFuncA",
+      "alternateIds": [
+        "role-map-fefunca"
+      ],
+      "number": "5.2.22"
+    },
+    {
+      "id": "fefuncb",
+      "href": "https://w3c.github.io/svg-aam/#fefuncb",
+      "level": 4,
+      "title": "feFuncB",
+      "alternateIds": [
+        "role-map-fefuncb"
+      ],
+      "number": "5.2.23"
+    },
+    {
+      "id": "fefuncg",
+      "href": "https://w3c.github.io/svg-aam/#fefuncg",
+      "level": 4,
+      "title": "feFuncG",
+      "alternateIds": [
+        "role-map-fefuncg"
+      ],
+      "number": "5.2.24"
+    },
+    {
+      "id": "fefuncr",
+      "href": "https://w3c.github.io/svg-aam/#fefuncr",
+      "level": 4,
+      "title": "feFuncR",
+      "alternateIds": [
+        "role-map-fefuncr"
+      ],
+      "number": "5.2.25"
+    },
+    {
+      "id": "fegaussianblur",
+      "href": "https://w3c.github.io/svg-aam/#fegaussianblur",
+      "level": 4,
+      "title": "feGaussianBlur",
+      "alternateIds": [
+        "role-map-fegaussianblur"
+      ],
+      "number": "5.2.26"
+    },
+    {
+      "id": "feimage",
+      "href": "https://w3c.github.io/svg-aam/#feimage",
+      "level": 4,
+      "title": "feImage",
+      "alternateIds": [
+        "role-map-feimage"
+      ],
+      "number": "5.2.27"
+    },
+    {
+      "id": "femerge",
+      "href": "https://w3c.github.io/svg-aam/#femerge",
+      "level": 4,
+      "title": "feMerge",
+      "alternateIds": [
+        "role-map-femerge"
+      ],
+      "number": "5.2.28"
+    },
+    {
+      "id": "femergenode",
+      "href": "https://w3c.github.io/svg-aam/#femergenode",
+      "level": 4,
+      "title": "feMergeNode",
+      "alternateIds": [
+        "role-map-femergeNode"
+      ],
+      "number": "5.2.29"
+    },
+    {
+      "id": "femorphology",
+      "href": "https://w3c.github.io/svg-aam/#femorphology",
+      "level": 4,
+      "title": "feMorphology",
+      "alternateIds": [
+        "role-map-femorphology"
+      ],
+      "number": "5.2.30"
+    },
+    {
+      "id": "feoffset",
+      "href": "https://w3c.github.io/svg-aam/#feoffset",
+      "level": 4,
+      "title": "feOffset",
+      "alternateIds": [
+        "role-map-feoffset"
+      ],
+      "number": "5.2.31"
+    },
+    {
+      "id": "fepointlight",
+      "href": "https://w3c.github.io/svg-aam/#fepointlight",
+      "level": 4,
+      "title": "fePointLight",
+      "alternateIds": [
+        "role-map-fepointlight"
+      ],
+      "number": "5.2.32"
+    },
+    {
+      "id": "fespecularlighting",
+      "href": "https://w3c.github.io/svg-aam/#fespecularlighting",
+      "level": 4,
+      "title": "feSpecularLighting",
+      "alternateIds": [
+        "role-map-fespecularlighting"
+      ],
+      "number": "5.2.33"
+    },
+    {
+      "id": "fespotlight",
+      "href": "https://w3c.github.io/svg-aam/#fespotlight",
+      "level": 4,
+      "title": "feSpotLight",
+      "alternateIds": [
+        "role-map-fespotlight"
+      ],
+      "number": "5.2.34"
+    },
+    {
+      "id": "fetile",
+      "href": "https://w3c.github.io/svg-aam/#fetile",
+      "level": 4,
+      "title": "feTile",
+      "alternateIds": [
+        "role-map-fetile"
+      ],
+      "number": "5.2.35"
+    },
+    {
+      "id": "feturbulence",
+      "href": "https://w3c.github.io/svg-aam/#feturbulence",
+      "level": 4,
+      "title": "feTurbulence",
+      "alternateIds": [
+        "role-map-feturbulence"
+      ],
+      "number": "5.2.36"
+    },
+    {
+      "id": "filter",
+      "href": "https://w3c.github.io/svg-aam/#filter",
+      "level": 4,
+      "title": "filter",
+      "alternateIds": [
+        "role-map-filter"
+      ],
+      "number": "5.2.37"
+    },
+    {
+      "id": "foreignobject",
+      "href": "https://w3c.github.io/svg-aam/#foreignobject",
+      "level": 4,
+      "title": "foreignObject",
+      "alternateIds": [
+        "role-map-foreignobject"
+      ],
+      "number": "5.2.38"
+    },
+    {
+      "id": "g",
+      "href": "https://w3c.github.io/svg-aam/#g",
+      "level": 4,
+      "title": "g",
+      "alternateIds": [
+        "role-map-g"
+      ],
+      "number": "5.2.39"
+    },
+    {
+      "id": "iframe",
+      "href": "https://w3c.github.io/svg-aam/#iframe",
+      "level": 4,
+      "title": "iframe",
+      "alternateIds": [
+        "role-map-iframe"
+      ],
+      "number": "5.2.40"
+    },
+    {
+      "id": "image",
+      "href": "https://w3c.github.io/svg-aam/#image",
+      "level": 4,
+      "title": "image",
+      "alternateIds": [
+        "role-map-image"
+      ],
+      "number": "5.2.41"
+    },
+    {
+      "id": "line",
+      "href": "https://w3c.github.io/svg-aam/#line",
+      "level": 4,
+      "title": "line",
+      "alternateIds": [
+        "role-map-line"
+      ],
+      "number": "5.2.42"
+    },
+    {
+      "id": "lineargradient",
+      "href": "https://w3c.github.io/svg-aam/#lineargradient",
+      "level": 4,
+      "title": "linearGradient",
+      "alternateIds": [
+        "role-map-lineargradient"
+      ],
+      "number": "5.2.43"
+    },
+    {
+      "id": "marker",
+      "href": "https://w3c.github.io/svg-aam/#marker",
+      "level": 4,
+      "title": "marker",
+      "alternateIds": [
+        "role-map-marker"
+      ],
+      "number": "5.2.44"
+    },
+    {
+      "id": "mask",
+      "href": "https://w3c.github.io/svg-aam/#mask",
+      "level": 4,
+      "title": "mask",
+      "alternateIds": [
+        "role-map-mask"
+      ],
+      "number": "5.2.45"
+    },
+    {
+      "id": "metadata",
+      "href": "https://w3c.github.io/svg-aam/#metadata",
+      "level": 4,
+      "title": "metadata",
+      "alternateIds": [
+        "role-map-metadata"
+      ],
+      "number": "5.2.46"
+    },
+    {
+      "id": "mpath",
+      "href": "https://w3c.github.io/svg-aam/#mpath",
+      "level": 4,
+      "title": "mpath",
+      "alternateIds": [
+        "role-map-mpath"
+      ],
+      "number": "5.2.47"
+    },
+    {
+      "id": "path",
+      "href": "https://w3c.github.io/svg-aam/#path",
+      "level": 4,
+      "title": "path",
+      "alternateIds": [
+        "role-map-path"
+      ],
+      "number": "5.2.48"
+    },
+    {
+      "id": "pattern",
+      "href": "https://w3c.github.io/svg-aam/#pattern",
+      "level": 4,
+      "title": "pattern",
+      "alternateIds": [
+        "role-map-pattern"
+      ],
+      "number": "5.2.49"
+    },
+    {
+      "id": "polygon",
+      "href": "https://w3c.github.io/svg-aam/#polygon",
+      "level": 4,
+      "title": "polygon",
+      "alternateIds": [
+        "role-map-polygon"
+      ],
+      "number": "5.2.50"
+    },
+    {
+      "id": "polyline",
+      "href": "https://w3c.github.io/svg-aam/#polyline",
+      "level": 4,
+      "title": "polyline",
+      "alternateIds": [
+        "role-map-polyline"
+      ],
+      "number": "5.2.51"
+    },
+    {
+      "id": "radialgradient",
+      "href": "https://w3c.github.io/svg-aam/#radialgradient",
+      "level": 4,
+      "title": "radialGradient",
+      "alternateIds": [
+        "role-map-radialgradient"
+      ],
+      "number": "5.2.52"
+    },
+    {
+      "id": "rect",
+      "href": "https://w3c.github.io/svg-aam/#rect",
+      "level": 4,
+      "title": "rect",
+      "alternateIds": [
+        "role-map-rect"
+      ],
+      "number": "5.2.53"
+    },
+    {
+      "id": "script",
+      "href": "https://w3c.github.io/svg-aam/#script",
+      "level": 4,
+      "title": "script",
+      "alternateIds": [
+        "role-map-script"
+      ],
+      "number": "5.2.54"
+    },
+    {
+      "id": "set",
+      "href": "https://w3c.github.io/svg-aam/#set",
+      "level": 4,
+      "title": "set",
+      "alternateIds": [
+        "role-map-set"
+      ],
+      "number": "5.2.55"
+    },
+    {
+      "id": "source",
+      "href": "https://w3c.github.io/svg-aam/#source",
+      "level": 4,
+      "title": "source",
+      "alternateIds": [
+        "role-map-source"
+      ],
+      "number": "5.2.56"
+    },
+    {
+      "id": "stop",
+      "href": "https://w3c.github.io/svg-aam/#stop",
+      "level": 4,
+      "title": "stop",
+      "alternateIds": [
+        "role-map-stop"
+      ],
+      "number": "5.2.57"
+    },
+    {
+      "id": "style",
+      "href": "https://w3c.github.io/svg-aam/#style",
+      "level": 4,
+      "title": "style",
+      "alternateIds": [
+        "role-map-style"
+      ],
+      "number": "5.2.58"
+    },
+    {
+      "id": "svg",
+      "href": "https://w3c.github.io/svg-aam/#svg",
+      "level": 4,
+      "title": "svg",
+      "alternateIds": [
+        "role-map-svg"
+      ],
+      "number": "5.2.59"
+    },
+    {
+      "id": "switch",
+      "href": "https://w3c.github.io/svg-aam/#switch",
+      "level": 4,
+      "title": "switch",
+      "alternateIds": [
+        "role-map-switch"
+      ],
+      "number": "5.2.60"
+    },
+    {
+      "id": "symbol",
+      "href": "https://w3c.github.io/svg-aam/#symbol",
+      "level": 4,
+      "title": "symbol",
+      "alternateIds": [
+        "role-map-symbol"
+      ],
+      "number": "5.2.61"
+    },
+    {
+      "id": "text",
+      "href": "https://w3c.github.io/svg-aam/#text",
+      "level": 4,
+      "title": "text",
+      "alternateIds": [
+        "role-map-text"
+      ],
+      "number": "5.2.62"
+    },
+    {
+      "id": "textpath",
+      "href": "https://w3c.github.io/svg-aam/#textpath",
+      "level": 4,
+      "title": "textPath",
+      "alternateIds": [
+        "role-map-textpath"
+      ],
+      "number": "5.2.63"
+    },
+    {
+      "id": "title-0",
+      "href": "https://w3c.github.io/svg-aam/#title-0",
+      "level": 4,
+      "title": "title",
+      "alternateIds": [
+        "role-map-title"
+      ],
+      "number": "5.2.64"
+    },
+    {
+      "id": "track",
+      "href": "https://w3c.github.io/svg-aam/#track",
+      "level": 4,
+      "title": "track",
+      "alternateIds": [
+        "role-map-track"
+      ],
+      "number": "5.2.65"
+    },
+    {
+      "id": "tspan",
+      "href": "https://w3c.github.io/svg-aam/#tspan",
+      "level": 4,
+      "title": "tspan",
+      "alternateIds": [
+        "role-map-tspan"
+      ],
+      "number": "5.2.66"
+    },
+    {
+      "id": "use",
+      "href": "https://w3c.github.io/svg-aam/#use",
+      "level": 4,
+      "title": "use",
+      "alternateIds": [
+        "role-map-use"
+      ],
+      "number": "5.2.67"
+    },
+    {
+      "id": "video",
+      "href": "https://w3c.github.io/svg-aam/#video",
+      "level": 4,
+      "title": "video",
+      "alternateIds": [
+        "role-map-video"
+      ],
+      "number": "5.2.68"
+    },
+    {
+      "id": "view",
+      "href": "https://w3c.github.io/svg-aam/#view",
+      "level": 4,
+      "title": "view",
+      "alternateIds": [
+        "role-map-view"
+      ],
+      "number": "5.2.69"
     },
     {
       "id": "mapping_state-property",
@@ -195,9 +885,9 @@
       "level": 2,
       "title": "State and Property Mapping",
       "alternateIds": [
-        "x7-state-and-property-mapping"
+        "x6-state-and-property-mapping"
       ],
-      "number": "7"
+      "number": "6"
     },
     {
       "id": "mapping_additional",
@@ -205,9 +895,9 @@
       "level": 2,
       "title": "Special Processing Requiring Additional Computation",
       "alternateIds": [
-        "x8-special-processing-requiring-additional-computation"
+        "x7-special-processing-requiring-additional-computation"
       ],
-      "number": "8"
+      "number": "7"
     },
     {
       "id": "mapping_additional_nd",
@@ -215,9 +905,9 @@
       "level": 3,
       "title": "Name and Description",
       "alternateIds": [
-        "x8-1-name-and-description"
+        "x7-1-name-and-description"
       ],
-      "number": "8.1"
+      "number": "7.1"
     },
     {
       "id": "mapping_additional_widget-value",
@@ -225,9 +915,9 @@
       "level": 3,
       "title": "Widget Values",
       "alternateIds": [
-        "x8-2-widget-values"
+        "x7-2-widget-values"
       ],
-      "number": "8.2"
+      "number": "7.2"
     },
     {
       "id": "mapping_additional_relations",
@@ -235,9 +925,9 @@
       "level": 3,
       "title": "Relations",
       "alternateIds": [
-        "x8-3-relations"
+        "x7-3-relations"
       ],
-      "number": "8.3"
+      "number": "7.3"
     },
     {
       "id": "mapping_additional_position",
@@ -245,9 +935,9 @@
       "level": 3,
       "title": "Group Position",
       "alternateIds": [
-        "x8-4-group-position"
+        "x7-4-group-position"
       ],
-      "number": "8.4"
+      "number": "7.4"
     },
     {
       "id": "mapping_use_shadow_tree",
@@ -255,9 +945,9 @@
       "level": 3,
       "title": "Use-Element Shadow Trees",
       "alternateIds": [
-        "x8-5-use-element-shadow-trees"
+        "x7-5-use-element-shadow-trees"
       ],
-      "number": "8.5"
+      "number": "7.5"
     },
     {
       "id": "mapping_view",
@@ -265,9 +955,9 @@
       "level": 3,
       "title": "SVG Views",
       "alternateIds": [
-        "x8-6-svg-views"
+        "x7-6-svg-views"
       ],
-      "number": "8.6"
+      "number": "7.6"
     },
     {
       "id": "mapping_animation",
@@ -275,9 +965,9 @@
       "level": 3,
       "title": "Declarative Animation",
       "alternateIds": [
-        "x8-7-declarative-animation"
+        "x7-7-declarative-animation"
       ],
-      "number": "8.7"
+      "number": "7.7"
     },
     {
       "id": "mapping_actions",
@@ -285,35 +975,36 @@
       "level": 2,
       "title": "Actions",
       "alternateIds": [
-        "x9-actions"
+        "x8-actions"
       ],
-      "number": "9"
+      "number": "8"
     },
     {
       "id": "mapping_events",
       "href": "https://w3c.github.io/svg-aam/#mapping_events",
       "level": 2,
-      "title": "10. Events",
+      "title": "Events",
       "alternateIds": [
-        "x10-events"
-      ]
+        "x9-events"
+      ],
+      "number": "9"
     },
     {
       "id": "document-handling",
       "href": "https://w3c.github.io/svg-aam/#document-handling",
       "level": 2,
-      "title": "11. Special Document Handling Procedures",
+      "title": "10. Special Document Handling Procedures",
       "alternateIds": [
-        "x11-special-document-handling-procedures"
+        "x10-special-document-handling-procedures"
       ]
     },
     {
       "id": "security-privacy",
       "href": "https://w3c.github.io/svg-aam/#security-privacy",
       "level": 2,
-      "title": "12. Security and Privacy Considerations",
+      "title": "11. Security and Privacy Considerations",
       "alternateIds": [
-        "x12-security-and-privacy-considerations"
+        "x11-security-and-privacy-considerations"
       ]
     },
     {
@@ -340,11 +1031,21 @@
       "id": "ack_group",
       "href": "https://w3c.github.io/svg-aam/#ack_group",
       "level": 4,
-      "title": "Past participants in the SVG Accessibility Task Force",
+      "title": "ARIA WG Participants at the time of publication",
       "alternateIds": [
-        "a-1-1-past-participants-in-the-svg-accessibility-task-force"
+        "a-1-1-aria-wg-participants-at-the-time-of-publication"
       ],
       "number": "A.1.1"
+    },
+    {
+      "id": "ack_taskforce",
+      "href": "https://w3c.github.io/svg-aam/#ack_taskforce",
+      "level": 4,
+      "title": "Past participants in the SVG Accessibility Task Force",
+      "alternateIds": [
+        "a-1-2-past-participants-in-the-svg-accessibility-task-force"
+      ],
+      "number": "A.1.2"
     },
     {
       "id": "ack_funders",
@@ -352,15 +1053,15 @@
       "level": 4,
       "title": "Enabling funders",
       "alternateIds": [
-        "a-1-2-enabling-funders"
+        "a-1-3-enabling-funders"
       ],
-      "number": "A.1.2"
+      "number": "A.1.3"
     },
     {
       "id": "issue-summary",
       "href": "https://w3c.github.io/svg-aam/#issue-summary",
       "level": 3,
-      "title": "Issue Summary",
+      "title": "Issue summary",
       "alternateIds": [
         "a-2-issue-summary"
       ],
