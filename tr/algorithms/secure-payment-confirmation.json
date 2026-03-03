@@ -59,7 +59,7 @@
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-steps-to-validate-payment-method-data\" id=\"ref-for-dfn-steps-to-validate-payment-method-data\">steps to validate payment method data</a> for this payment method, for an\ninput <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" id=\"ref-for-dom-paymentrequest③\">PaymentRequest</a></code> <var>request</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dictdef-securepaymentconfirmationrequest\" id=\"ref-for-dictdef-securepaymentconfirmationrequest③\">SecurePaymentConfirmationRequest</a></code> <var>data</var>, are:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-steps-to-validate-payment-method-data\" id=\"ref-for-dfn-steps-to-validate-payment-method-data\">steps to validate payment method data</a> for this payment method, for an\ninput <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" id=\"ref-for-dom-paymentrequest⑤\">PaymentRequest</a></code> <var>request</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dictdef-securepaymentconfirmationrequest\" id=\"ref-for-dictdef-securepaymentconfirmationrequest③\">SecurePaymentConfirmationRequest</a></code> <var>data</var>, are:",
       "rationale": "if",
       "steps": [
         {
@@ -135,7 +135,7 @@
           ]
         },
         {
-          "html": "If <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-locale\" id=\"ref-for-dom-securepaymentconfirmationrequest-locale①\">locale</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a> and\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is not empty</a>",
+          "html": "If <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-locale\" id=\"ref-for-dom-securepaymentconfirmationrequest-locale①\">locale</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a> and\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is not empty</a>",
           "rationale": "for",
           "steps": [
             {
@@ -234,7 +234,7 @@
           "steps": [
             {
               "case": "The user wishes to proceed with the payment, using an SPC Credential to authenticate,",
-              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-user-accepts-the-payment-request-algorithm\" id=\"ref-for-dfn-user-accepts-the-payment-request-algorithm\">user accepts the payment request algorithm</a> on the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" id=\"ref-for-dom-paymentrequest④\">PaymentRequest</a></code> the user is interacting with.</p>"
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-user-accepts-the-payment-request-algorithm\" id=\"ref-for-dfn-user-accepts-the-payment-request-algorithm\">user accepts the payment request algorithm</a> on the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" id=\"ref-for-dom-paymentrequest⑥\">PaymentRequest</a></code> the user is interacting with.</p>"
             },
             {
               "case": "The user wishes to proceed with the payment, but either cannot (if data[\"credentialIds\"] is empty) or does not wish to use an SPC Credential,",
@@ -245,24 +245,24 @@
                   "html": "<p>Set <var>data</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dom-securepaymentconfirmationrequest-credentialids\" id=\"ref-for-dom-securepaymentconfirmationrequest-credentialids⑦\">credentialIds</a></code>\"] to an\nempty list.</p>"
                 },
                 {
-                  "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-user-accepts-the-payment-request-algorithm\" id=\"ref-for-dfn-user-accepts-the-payment-request-algorithm①\">user accepts the payment request algorithm</a> on the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" id=\"ref-for-dom-paymentrequest⑤\">PaymentRequest</a></code> the user is interacting with.</p>"
+                  "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-user-accepts-the-payment-request-algorithm\" id=\"ref-for-dfn-user-accepts-the-payment-request-algorithm①\">user accepts the payment request algorithm</a> on the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" id=\"ref-for-dom-paymentrequest⑦\">PaymentRequest</a></code> the user is interacting with.</p>"
                 }
               ]
             },
             {
               "case": "The user does not wish to proceed with the payment,",
-              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-user-aborts-the-payment-request\" id=\"ref-for-dfn-user-aborts-the-payment-request\">user aborts the payment request algorithm</a> on the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" id=\"ref-for-dom-paymentrequest⑥\">PaymentRequest</a></code> the user is interacting with.</p>"
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-user-aborts-the-payment-request\" id=\"ref-for-dfn-user-aborts-the-payment-request\">user aborts the payment request algorithm</a> on the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" id=\"ref-for-dom-paymentrequest⑧\">PaymentRequest</a></code> the user is interacting with.</p>"
             },
             {
               "case": "The user wishes to opt out of the process for the given relying party,",
-              "html": "<p>Reject the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest-show\" id=\"ref-for-dom-paymentrequest-show④\">PaymentRequest.show()</a></code> with an\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#optouterror\" id=\"ref-for-optouterror\">OptOutError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>. See <a href=\"https://www.w3.org/TR/secure-payment-confirmation/#sctn-user-opt-out\">§ 12.6 User opt out</a>.</p>"
+              "html": "<p>Reject the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest-show\" id=\"ref-for-dom-paymentrequest-show④\">PaymentRequest.show()</a></code> with an\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#optouterror\" id=\"ref-for-optouterror\">OptOutError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>. See <a href=\"https://www.w3.org/TR/secure-payment-confirmation/#sctn-user-opt-out\">§ 12.7 User opt out</a>.</p>"
             }
           ]
         }
       ]
     },
     {
-      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-steps-to-respond-to-a-payment-request\" id=\"ref-for-dfn-steps-to-respond-to-a-payment-request\">steps to respond to a payment request</a> for this payment method, for a\ngiven <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" id=\"ref-for-dom-paymentrequest⑦\">PaymentRequest</a></code> <var>request</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dictdef-securepaymentconfirmationrequest\" id=\"ref-for-dictdef-securepaymentconfirmationrequest⑤\">SecurePaymentConfirmationRequest</a></code>\n<var>data</var>, are as follows.",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/payment-request/#dfn-steps-to-respond-to-a-payment-request\" id=\"ref-for-dfn-steps-to-respond-to-a-payment-request\">steps to respond to a payment request</a> for this payment method, for a\ngiven <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" id=\"ref-for-dom-paymentrequest⑨\">PaymentRequest</a></code> <var>request</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#dictdef-securepaymentconfirmationrequest\" id=\"ref-for-dictdef-securepaymentconfirmationrequest⑤\">SecurePaymentConfirmationRequest</a></code>\n<var>data</var>, are as follows.",
       "rationale": "if",
       "steps": [
         {
@@ -488,7 +488,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#browser_bound_map\" id=\"ref-for-browser_bound_map②\">browser_bound_map</a>[<var>credential_id</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#browser_bound_map\" id=\"ref-for-browser_bound_map②\">browser_bound_map</a>[<var>credential_id</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>",
           "rationale": "let",
           "steps": [
             {
@@ -500,7 +500,7 @@
           ]
         },
         {
-          "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#browser_bound_map\" id=\"ref-for-browser_bound_map④\">browser_bound_map</a>[<var>credential_id</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exist</a>",
+          "html": "If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-payment-confirmation/#browser_bound_map\" id=\"ref-for-browser_bound_map④\">browser_bound_map</a>[<var>credential_id</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exist</a>",
           "rationale": "let",
           "steps": [
             {

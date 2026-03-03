@@ -5,12 +5,37 @@
   },
   "links": {
     "rawlinks": {
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Performance": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Performance/clearResourceTimings": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Performance/resourcetimingbufferfull_event": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/Performance/setResourceTimingBufferSize": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/connectEnd": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/connectStart": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/decodedBodySize": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/domainLookupEnd": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/domainLookupStart": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/encodedBodySize": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/fetchStart": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/initiatorType": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/nextHopProtocol": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/redirectEnd": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/redirectStart": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/renderBlockingStatus": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/requestStart": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/responseEnd": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/responseStart": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/responseStatus": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/secureConnectionStart": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/toJSON": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/transferSize": {},
+      "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceResourceTiming/workerStart": {},
+      "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Timing-Allow-Origin": {},
       "https://dom.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
-          "concept-fetch",
           "concept-status",
-          "record-connection-timing-info",
           "dom-requestmode-no-cors",
           "concept-filtered-response-opaque",
           "concept-tao-check",
@@ -20,15 +45,35 @@
           "tao-check"
         ]
       },
+      "https://github.com/w3c/resource-timing/issues": {},
       "https://github.com/w3c/resource-timing/issues/221": {},
       "https://github.com/w3c/resource-timing/issues/222": {},
       "https://github.com/w3c/resource-timing/issues/223": {},
       "https://github.com/w3c/resource-timing/issues/238": {},
-      "https://html.spec.whatwg.org/multipage/": {
+      "https://html.spec.whatwg.org/multipage/": {},
+      "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
-          "concept-script",
-          "cors-cross-origin",
           "same-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/input.html": {
+        "anchors": [
+          "image-button-state-(type=image)"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/semantics.html": {
+        "anchors": [
+          "link-type-stylesheet"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
+        "anchors": [
+          "cors-cross-origin"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/webappapis.html": {
+        "anchors": [
+          "concept-script"
         ]
       },
       "https://httpwg.org/specs/rfc8297.html": {},
@@ -49,21 +94,13 @@
           "section-4.3.4"
         ]
       },
-      "https://w3c.github.io/performance-timeline/": {
-        "anchors": [
-          "dfn-performance-timeline-task-source"
-        ]
-      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "es-environment"
         ]
       },
-      "https://www.rfc-editor.org/info/bcp14": {},
-      "https://www.rfc-editor.org/rfc/rfc2119": {},
       "https://www.rfc-editor.org/rfc/rfc2397": {},
       "https://www.rfc-editor.org/rfc/rfc5234": {},
-      "https://www.rfc-editor.org/rfc/rfc8174": {},
       "https://www.w3.org/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/IFT/": {},
@@ -80,7 +117,11 @@
         ]
       },
       "https://www.w3.org/TR/beacon/": {},
-      "https://www.w3.org/TR/css-values-4/": {},
+      "https://www.w3.org/TR/css-values-4/": {
+        "anchors": [
+          "funcdef-url"
+        ]
+      },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
           "dom-performance"
@@ -91,13 +132,7 @@
           "performanceentry"
         ]
       },
-      "https://www.w3.org/TR/performance-timeline/": {
-        "anchors": [
-          "performance-timeline",
-          "dfn-performance-entry-buffer",
-          "dfn-queue-a-performanceentry"
-        ]
-      },
+      "https://www.w3.org/TR/performance-timeline/": {},
       "https://www.w3.org/TR/service-workers/": {},
       "https://www.w3.org/groups/wg/webperf": {},
       "https://www.w3.org/groups/wg/webperf/ipr": {},
@@ -138,6 +173,7 @@
           "fetch-timing-info-post-redirect-start-time",
           "fetch-timing-info-final-connection-timing-info",
           "connection-timing-info-domain-lookup-start-time",
+          "record-connection-timing-info",
           "connection-timing-info-domain-lookup-end-time",
           "connection-timing-info-connection-start-time",
           "connection-timing-info-connection-end-time",
@@ -177,13 +213,11 @@
       "https://html.spec.whatwg.org/multipage/input.html": {
         "anchors": [
           "the-input-element",
-          "attr-input-type",
-          "attr-input-type-image-keyword"
+          "attr-input-type"
         ]
       },
       "https://html.spec.whatwg.org/multipage/links.html": {
         "anchors": [
-          "link-type-stylesheet",
           "ping"
         ]
       },
@@ -269,21 +303,21 @@
           "dom-navigator-sendbeacon"
         ]
       },
-      "https://www.w3.org/TR/css-values-4/": {
-        "anchors": [
-          "funcdef-url"
-        ]
-      },
       "https://www.w3.org/TR/hr-time-3/": {
         "anchors": [
           "dom-domhighrestimestamp",
+          "dom-performance",
           "dfn-relative-high-resolution-coarse-time"
         ]
       },
       "https://www.w3.org/TR/performance-timeline/": {
         "anchors": [
+          "performance-timeline",
           "dom-performanceentry",
           "dom-performanceobserver-supportedentrytypes",
+          "dfn-performance-entry-buffer",
+          "dfn-performance-timeline-task-source",
+          "dfn-queue-a-performanceentry",
           "dfn-initialize-a-performanceentry"
         ]
       },
