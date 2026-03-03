@@ -228,6 +228,37 @@
               "value": "<length>"
             }
           ]
+        },
+        {
+          "name": "page-margin-safety",
+          "href": "https://drafts.csswg.org/css-page-3/#descdef-page-page-margin-safety",
+          "for": "@page",
+          "value": "none | clamp | add",
+          "initial": "auto",
+          "computedValue": "as specified",
+          "values": [
+            {
+              "name": "none",
+              "prose": "Margins are not affected by unprintable regions",
+              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-page-margin-safety-none",
+              "type": "value",
+              "value": "none"
+            },
+            {
+              "name": "clamp",
+              "prose": "The used margin values will be the maximum of the resolved value, and <safe-printable-inset> for the given side.",
+              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-page-margin-safety-clamp",
+              "type": "value",
+              "value": "clamp"
+            },
+            {
+              "name": "add",
+              "prose": "The used margin values will be the resolved value, plus <safe-printable-inset> for the given side.",
+              "href": "https://drafts.csswg.org/css-page-3/#valdef-page-page-margin-safety-add",
+              "type": "value",
+              "value": "add"
+            }
+          ]
         }
       ],
       "value": "@page <page-selector-list>? { <declaration-rule-list> }",
@@ -378,6 +409,12 @@
       "href": "https://drafts.csswg.org/css-page-3/#typedef-pseudo-page",
       "type": "type",
       "value": ": [ left | right | first | blank ]"
+    },
+    {
+      "name": "<safe-printable-inset>",
+      "prose": "Let this value be <safe-printable-inset>, which is a <length>.",
+      "href": "https://drafts.csswg.org/css-page-3/#typedef-safe-printable-inset",
+      "type": "type"
     }
   ]
 }

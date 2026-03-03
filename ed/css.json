@@ -906,6 +906,14 @@
           "syntax": "none | [ crop || cross ]"
         },
         {
+          "name": "page-margin-safety",
+          "href": "https://drafts.csswg.org/css-page-3/#descdef-page-page-margin-safety",
+          "for": "@page",
+          "initial": "auto",
+          "computedValue": "as specified",
+          "syntax": "none | clamp | add"
+        },
+        {
           "name": "page-orientation",
           "href": "https://drafts.csswg.org/css-page-3/#descdef-page-page-orientation",
           "for": "@page",
@@ -20005,6 +20013,12 @@
       "name": "rule-list",
       "prose": "<rule-list>: qualified rules and at-rules are allowed; declarations are automatically invalid.",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-rule-list",
+      "extended": []
+    },
+    {
+      "name": "safe-printable-inset",
+      "prose": "Let this value be <safe-printable-inset>, which is a <length>.",
+      "href": "https://drafts.csswg.org/css-page-3/#typedef-safe-printable-inset",
       "extended": []
     },
     {
