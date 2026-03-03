@@ -76,7 +76,7 @@
           "html": "<p>Let <var>num</var> be 0.</p>"
         },
         {
-          "html": "<p>Let <var>first</var> be true.</p>"
+          "html": "<p>Let <var>lastNonZeroIncrementNegated</var> be 0.</p>"
         },
         {
           "html": "For each element or pseudo-element <var>el</var> that increments or\nsets the same counter in the same <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-lists-3/#counter-scope\" id=\"ref-for-counter-scope①\">scope</a>:",
@@ -86,7 +86,7 @@
               "html": "<p>Let <var>incrementNegated</var> be <var>el</var>’s <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-lists-3/#propdef-counter-increment\" id=\"ref-for-propdef-counter-increment⑧\">counter-increment</a> integer value for this counter,\nmultiplied by -1.</p>"
             },
             {
-              "html": "<p>If <var>first</var> is true,\nthen add <var>incrementNegated</var> to <var>num</var> and\nset <var>first</var> to false.</p>"
+              "html": "<p>If <var>incrementNegated</var> is not zero,\nthen set <var>lastNonZeroIncrementNegated</var> to <var>incrementNegated</var>.</p>"
             },
             {
               "html": "<p>If <var>el</var> sets this counter with <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-lists-3/#propdef-counter-set\" id=\"ref-for-propdef-counter-set⑧\">counter-set</a>,\nthen add that integer value to <var>num</var> and\nbreak this loop.</p>"
@@ -95,6 +95,9 @@
               "html": "<p>Add <var>incrementNegated</var> to <var>num</var>.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>Add <var>lastNonZeroIncrementNegated</var> to <var>num</var>.</p>"
         },
         {
           "html": "<p>Return <var>num</var>.</p>"
