@@ -6,7 +6,7 @@
       "title": "Writing Assistance APIs",
       "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
     },
-    "fragment": "dictionary SummarizerCreateCoreOptions {\n  SummarizerType type = \"key-points\";\n  SummarizerFormat format = \"markdown\";\n  SummarizerLength length = \"short\";\n\n  sequence<DOMString> expectedInputLanguages;\n  sequence<DOMString> expectedContextLanguages;\n  DOMString outputLanguage;\n};",
+    "fragment": "dictionary SummarizerCreateCoreOptions {\n  SummarizerType type = \"key-points\";\n  SummarizerFormat format = \"markdown\";\n  SummarizerLength length = \"short\";\n  PerformancePreference preference = \"auto\";\n\n  sequence<DOMString> expectedInputLanguages;\n  sequence<DOMString> expectedContextLanguages;\n  DOMString outputLanguage;\n};",
     "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dictdef-summarizercreatecoreoptions"
   },
   "extended": [],

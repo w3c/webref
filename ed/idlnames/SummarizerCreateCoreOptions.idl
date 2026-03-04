@@ -3,6 +3,7 @@ dictionary SummarizerCreateCoreOptions {
   SummarizerType type = "key-points";
   SummarizerFormat format = "markdown";
   SummarizerLength length = "short";
+  PerformancePreference preference = "auto";
 
   sequence<DOMString> expectedInputLanguages;
   sequence<DOMString> expectedContextLanguages;

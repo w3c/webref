@@ -17,6 +17,7 @@ interface Summarizer {
   readonly attribute SummarizerType type;
   readonly attribute SummarizerFormat format;
   readonly attribute SummarizerLength length;
+  readonly attribute PerformancePreference preference;
 
   readonly attribute FrozenArray<DOMString>? expectedInputLanguages;
   readonly attribute FrozenArray<DOMString>? expectedContextLanguages;

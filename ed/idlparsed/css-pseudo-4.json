@@ -14,10 +14,10 @@
     },
     "idlNames": {
       "CSSPseudoElement": {
-        "fragment": "[Exposed=Window]\ninterface CSSPseudoElement : EventTarget {\n    readonly attribute CSSOMString type;\n    readonly attribute Element element;\n    readonly attribute (Element or CSSPseudoElement) parent;\n    CSSPseudoElement? pseudo(CSSOMString type);\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSPseudoElement {\n    readonly attribute CSSOMString type;\n    readonly attribute Element element;\n    readonly attribute (Element or CSSPseudoElement) parent;\n    readonly attribute CSSOMString selectorText;\n    CSSPseudoElement? pseudo(CSSOMString type);\n};",
         "type": "interface",
         "name": "CSSPseudoElement",
-        "inheritance": "EventTarget",
+        "inheritance": null,
         "members": [
           {
             "type": "attribute",
@@ -83,6 +83,22 @@
             "special": "",
             "readonly": true,
             "href": "https://drafts.csswg.org/css-pseudo-4/#dom-csspseudoelement-parent"
+          },
+          {
+            "type": "attribute",
+            "name": "selectorText",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-pseudo-4/#dom-csspseudoelement-selectortext"
           },
           {
             "type": "operation",
@@ -188,7 +204,6 @@
     },
     "dependencies": {
       "CSSPseudoElement": [
-        "EventTarget",
         "CSSOMString",
         "Element",
         "CSSPseudoElement"
@@ -199,7 +214,6 @@
       ]
     },
     "externalDependencies": [
-      "EventTarget",
       "CSSOMString",
       "Element"
     ],

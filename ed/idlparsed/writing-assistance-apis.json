@@ -17,7 +17,7 @@
     },
     "idlNames": {
       "Summarizer": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface Summarizer {\n  static Promise<Summarizer> create(optional SummarizerCreateOptions options = {});\n  static Promise<Availability> availability(optional SummarizerCreateCoreOptions options = {});\n\n  Promise<DOMString> summarize(\n    DOMString input,\n    optional SummarizerSummarizeOptions options = {}\n  );\n  ReadableStream summarizeStreaming(\n    DOMString input,\n    optional SummarizerSummarizeOptions options = {}\n  );\n\n  readonly attribute DOMString sharedContext;\n  readonly attribute SummarizerType type;\n  readonly attribute SummarizerFormat format;\n  readonly attribute SummarizerLength length;\n\n  readonly attribute FrozenArray<DOMString>? expectedInputLanguages;\n  readonly attribute FrozenArray<DOMString>? expectedContextLanguages;\n  readonly attribute DOMString? outputLanguage;\n\n  Promise<double> measureInputUsage(\n    DOMString input,\n    optional SummarizerSummarizeOptions options = {}\n  );\n  readonly attribute unrestricted double inputQuota;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface Summarizer {\n  static Promise<Summarizer> create(optional SummarizerCreateOptions options = {});\n  static Promise<Availability> availability(optional SummarizerCreateCoreOptions options = {});\n\n  Promise<DOMString> summarize(\n    DOMString input,\n    optional SummarizerSummarizeOptions options = {}\n  );\n  ReadableStream summarizeStreaming(\n    DOMString input,\n    optional SummarizerSummarizeOptions options = {}\n  );\n\n  readonly attribute DOMString sharedContext;\n  readonly attribute SummarizerType type;\n  readonly attribute SummarizerFormat format;\n  readonly attribute SummarizerLength length;\n  readonly attribute PerformancePreference preference;\n\n  readonly attribute FrozenArray<DOMString>? expectedInputLanguages;\n  readonly attribute FrozenArray<DOMString>? expectedContextLanguages;\n  readonly attribute DOMString? outputLanguage;\n\n  Promise<double> measureInputUsage(\n    DOMString input,\n    optional SummarizerSummarizeOptions options = {}\n  );\n  readonly attribute unrestricted double inputQuota;\n};",
         "type": "interface",
         "name": "Summarizer",
         "inheritance": null,
@@ -287,6 +287,22 @@
           },
           {
             "type": "attribute",
+            "name": "preference",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PerformancePreference"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizer-preference"
+          },
+          {
+            "type": "attribute",
             "name": "expectedInputLanguages",
             "idlType": {
               "type": "attribute-type",
@@ -449,7 +465,7 @@
         "href": "https://webmachinelearning.github.io/writing-assistance-apis/#summarizer"
       },
       "SummarizerCreateCoreOptions": {
-        "fragment": "dictionary SummarizerCreateCoreOptions {\n  SummarizerType type = \"key-points\";\n  SummarizerFormat format = \"markdown\";\n  SummarizerLength length = \"short\";\n\n  sequence<DOMString> expectedInputLanguages;\n  sequence<DOMString> expectedContextLanguages;\n  DOMString outputLanguage;\n};",
+        "fragment": "dictionary SummarizerCreateCoreOptions {\n  SummarizerType type = \"key-points\";\n  SummarizerFormat format = \"markdown\";\n  SummarizerLength length = \"short\";\n  PerformancePreference preference = \"auto\";\n\n  sequence<DOMString> expectedInputLanguages;\n  sequence<DOMString> expectedContextLanguages;\n  DOMString outputLanguage;\n};",
         "type": "dictionary",
         "name": "SummarizerCreateCoreOptions",
         "inheritance": null,
@@ -510,6 +526,25 @@
             },
             "required": false,
             "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizercreatecoreoptions-length"
+          },
+          {
+            "type": "field",
+            "name": "preference",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PerformancePreference"
+            },
+            "default": {
+              "type": "string",
+              "value": "auto"
+            },
+            "required": false,
+            "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dom-summarizercreatecoreoptions-preference"
           },
           {
             "type": "field",
@@ -755,6 +790,30 @@
         ],
         "extAttrs": [],
         "href": "https://webmachinelearning.github.io/writing-assistance-apis/#enumdef-summarizerlength"
+      },
+      "PerformancePreference": {
+        "fragment": "enum PerformancePreference { \"auto\", \"speed\", \"capability\" };",
+        "type": "enum",
+        "name": "PerformancePreference",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "auto",
+            "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dom-performancepreference-auto"
+          },
+          {
+            "type": "enum-value",
+            "value": "speed",
+            "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dom-performancepreference-speed"
+          },
+          {
+            "type": "enum-value",
+            "value": "capability",
+            "href": "https://webmachinelearning.github.io/writing-assistance-apis/#dom-performancepreference-capability"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/writing-assistance-apis/#enumdef-performancepreference"
       },
       "Writer": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface Writer {\n  static Promise<Writer> create(optional WriterCreateOptions options = {});\n  static Promise<Availability> availability(optional WriterCreateCoreOptions options = {});\n\n  Promise<DOMString> write(\n    DOMString input,\n    optional WriterWriteOptions options = {}\n  );\n  ReadableStream writeStreaming(\n    DOMString input,\n    optional WriterWriteOptions options = {}\n  );\n\n  readonly attribute DOMString sharedContext;\n  readonly attribute WriterTone tone;\n  readonly attribute WriterFormat format;\n  readonly attribute WriterLength length;\n\n  readonly attribute FrozenArray<DOMString>? expectedInputLanguages;\n  readonly attribute FrozenArray<DOMString>? expectedContextLanguages;\n  readonly attribute DOMString? outputLanguage;\n\n  Promise<double> measureInputUsage(\n    DOMString input,\n    optional WriterWriteOptions options = {}\n  );\n  readonly attribute unrestricted double inputQuota;\n};",
@@ -2413,12 +2472,14 @@
         "SummarizerType",
         "SummarizerFormat",
         "SummarizerLength",
+        "PerformancePreference",
         "DestroyableModel"
       ],
       "SummarizerCreateCoreOptions": [
         "SummarizerType",
         "SummarizerFormat",
-        "SummarizerLength"
+        "SummarizerLength",
+        "PerformancePreference"
       ],
       "SummarizerCreateOptions": [
         "SummarizerCreateCoreOptions",
