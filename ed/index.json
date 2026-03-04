@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-03-04T01:02:26.031Z",
+  "date": "2026-03-04T06:52:21.276Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -32,7 +32,7 @@
   },
   "stats": {
     "crawled": 727,
-    "errors": 8
+    "errors": 9
   },
   "crawler": "reffy-20.0.11",
   "results": [
@@ -1929,7 +1929,8 @@
       "dfns": "dfns/filter-effects-2.json",
       "headings": "headings/filter-effects-2.json",
       "ids": "ids/filter-effects-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.csswg.org/filter-effects-2/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 33)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://drafts.csswg.org/pointer-animations-1/",
@@ -6444,9 +6445,9 @@
       ],
       "crawled": "https://tc39.es/ecma426/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 03 Mar 2026 22:04:12 GMT"
+        "lastModified": "Wed, 04 Mar 2026 06:11:03 GMT"
       },
-      "date": "3 March 2026",
+      "date": "4 March 2026",
       "links": "links/ecma-426.json",
       "refs": "refs/ecma-426.json",
       "dfns": "dfns/ecma-426.json",
@@ -15218,9 +15219,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6386",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 25 Feb 2026 03:05:28 GMT"
+        "lastModified": "Wed, 04 Mar 2026 05:20:43 GMT"
       },
-      "date": "25 February 2026",
+      "date": "4 March 2026",
       "links": "links/rfc6386.json",
       "headings": "headings/rfc6386.json",
       "ids": "ids/rfc6386.json",
@@ -15599,9 +15600,9 @@
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 25 Feb 2026 05:26:20 GMT"
+        "lastModified": "Mon, 02 Mar 2026 05:41:44 GMT"
       },
-      "date": "25 February 2026",
+      "date": "2 March 2026",
       "links": "links/rfc7578.json",
       "headings": "headings/rfc7578.json",
       "ids": "ids/rfc7578.json",
