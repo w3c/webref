@@ -1086,7 +1086,66 @@
       ]
     },
     {
-      "html": "In the case where a timeout occurs, or the user manually aborts, or\n          the <a href=\"https://www.w3.org/TR/payment-request/#dfn-payment-handler\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payment-handler-14\">payment handler</a> decides to abort this particular payment,\n          the user agent <em class=\"rfc2119\">MUST</em> run the <a href=\"https://www.w3.org/TR/payment-request/#dfn-user-aborts-the-payment-request\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-aborts-the-payment-request-7\">user aborts the payment request\n          algorithm</a>.",
+      "name": "payment handler indicates an internal error algorithm",
+      "href": "https://www.w3.org/TR/payment-request/#dfn-payment-handler-indicates-an-internal-error-algorithm",
+      "html": "The <dfn id=\"dfn-payment-handler-indicates-an-internal-error-algorithm\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">payment handler indicates an internal error algorithm</dfn>\n          runs when the <a href=\"https://www.w3.org/TR/payment-request/#dfn-payment-handler\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payment-handler-14\">payment handler</a> that the user has selected\n          encounters an internal error that prevents it from completing the\n          payment. This can occur due to reasons such as the operating system\n          terminating the payment handler (e.g., due to memory pressure), or\n          the payment handler itself encountering an unrecoverable error.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#user-interaction-task-source\">user interaction task source</a> to\n            perform the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "Let <var data-type=\"PaymentRequest\">request</var> be the <a data-link-type=\"idl\" data-lt=\"PaymentRequest\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" class=\"internalDFN\" id=\"ref-for-dom-paymentrequest-53\"><code>PaymentRequest</code></a> object\n              that the user is interacting with."
+            },
+            {
+              "html": "If <var data-type=\"PaymentRequest\">request</var>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-21\"><code>[[state]]</code></a> is not\n              \"<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/payment-request/#dfn-interactive\" class=\"internalDFN\" id=\"ref-for-dfn-interactive-12\">interactive</a>\", then terminate this algorithm\n              and take no further action."
+            },
+            {
+              "html": "Let <var>error</var> be an \"<a data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#operationerror\"><code>OperationError</code></a>\" <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a>."
+            },
+            {
+              "html": "Set <var data-type=\"PaymentRequest\">request</var>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-22\"><code>[[state]]</code></a> to\n              \"<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/payment-request/#dfn-closed\" class=\"internalDFN\" id=\"ref-for-dfn-closed-10\">closed</a>\"."
+            },
+            {
+              "html": "Set <var data-type=\"PaymentRequest\">request</var>'s <a href=\"https://www.w3.org/TR/payment-request/#dfn-payment-relevant-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payment-relevant-browsing-context-11\">payment-relevant browsing context</a>'s\n              <a href=\"https://www.w3.org/TR/payment-request/#dfn-payment-request-is-showing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payment-request-is-showing-13\">payment request is showing</a> boolean to false."
+            },
+            {
+              "html": "Let <var data-type=\"PaymentResponse\">response</var> be\n              <var data-type=\"PaymentRequest\">request</var>.<a data-link-type=\"attribute\" data-lt=\"[[response]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-response\" class=\"internalDFN\" id=\"ref-for-dfn-response-10\"><code>[[response]]</code></a>."
+            },
+            {
+              "html": "If <var data-type=\"PaymentResponse\">response</var> is not null:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var data-type=\"PaymentResponse\">response</var>.<a data-link-type=\"attribute\" data-lt=\"[[complete]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-complete\" class=\"internalDFN\" id=\"ref-for-dfn-complete-6\"><code>[[complete]]</code></a> to true."
+                },
+                {
+                  "html": "<a href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var data-type=\"PaymentResponse\">response</var>.<a data-link-type=\"attribute\" data-lt=\"[[retryPromise]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-retrypromise\" class=\"internalDFN\" id=\"ref-for-dfn-retrypromise-11\"><code>[[retryPromise]]</code></a>\n                  is not null."
+                },
+                {
+                  "html": "Reject <var data-type=\"PaymentResponse\">response</var>.<a data-link-type=\"attribute\" data-lt=\"[[retryPromise]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-retrypromise\" class=\"internalDFN\" id=\"ref-for-dfn-retrypromise-12\"><code>[[retryPromise]]</code></a>\n                  with <var>error</var>."
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, reject\n              <var data-type=\"PaymentRequest\">request</var>.<a data-link-type=\"attribute\" data-lt=\"[[acceptPromise]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-acceptpromise\" class=\"internalDFN\" id=\"ref-for-dfn-acceptpromise-7\"><code>[[acceptPromise]]</code></a> with <var>error</var>."
+            },
+            {
+              "html": "Optionally, show a generic error message to the user\n              indicating that the payment could not be completed."
+            },
+            {
+              "html": "Optionally, log detailed error information to the developer\n              console for debugging purposes."
+            },
+            {
+              "html": "Abort the current user interaction and close down any\n              remaining user interface."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "In the case where a timeout occurs, or the user manually aborts, or\n          the <a href=\"https://www.w3.org/TR/payment-request/#dfn-payment-handler\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payment-handler-15\">payment handler</a> decides to abort this particular payment,\n          the user agent <em class=\"rfc2119\">MUST</em> run the <a href=\"https://www.w3.org/TR/payment-request/#dfn-user-aborts-the-payment-request\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-user-aborts-the-payment-request-7\">user aborts the payment request\n          algorithm</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1233,12 +1292,12 @@
                   "html": "If conversion results in a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a> <var>error</var>, <a href=\"https://www.w3.org/TR/payment-request/#dfn-abort-the-update\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-abort-the-update-12\">\n                    abort the update</a> with <var>error</var>."
                 },
                 {
-                  "html": "The <a href=\"https://www.w3.org/TR/payment-request/#dfn-payment-handler\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payment-handler-15\">payment handler</a> <em class=\"rfc2119\">SHOULD</em> display an error for\n                  each relevant erroneous field of\n                  <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentdetailsupdate-paymentmethoderrors\" class=\"internalDFN\" id=\"ref-for-dom-paymentdetailsupdate-paymentmethoderrors-4\"><code>paymentMethodErrors</code></a>."
+                  "html": "The <a href=\"https://www.w3.org/TR/payment-request/#dfn-payment-handler\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payment-handler-16\">payment handler</a> <em class=\"rfc2119\">SHOULD</em> display an error for\n                  each relevant erroneous field of\n                  <a data-link-type=\"idl\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentdetailsupdate-paymentmethoderrors\" class=\"internalDFN\" id=\"ref-for-dom-paymentdetailsupdate-paymentmethoderrors-4\"><code>paymentMethodErrors</code></a>."
                 }
               ]
             },
             {
-              "html": "Update the <a data-link-type=\"idl\" data-lt=\"PaymentRequest\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" class=\"internalDFN\" id=\"ref-for-dom-paymentrequest-54\"><code>PaymentRequest</code></a> using the new details:",
+              "html": "Update the <a data-link-type=\"idl\" data-lt=\"PaymentRequest\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" class=\"internalDFN\" id=\"ref-for-dom-paymentrequest-55\"><code>PaymentRequest</code></a> using the new details:",
               "rationale": "if",
               "steps": [
                 {
@@ -1301,11 +1360,11 @@
     {
       "name": "abort the update",
       "href": "https://www.w3.org/TR/payment-request/#dfn-abort-the-update",
-      "html": "To <dfn data-export=\"\" id=\"dfn-abort-the-update\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">abort the update</dfn> with a\n            <a data-link-type=\"idl\" data-lt=\"PaymentRequest\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" class=\"internalDFN\" id=\"ref-for-dom-paymentrequest-55\"><code>PaymentRequest</code></a> <var>request</var> and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a> <var>exception</var>:",
+      "html": "To <dfn data-export=\"\" id=\"dfn-abort-the-update\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">abort the update</dfn> with a\n            <a data-link-type=\"idl\" data-lt=\"PaymentRequest\" href=\"https://www.w3.org/TR/payment-request/#dom-paymentrequest\" class=\"internalDFN\" id=\"ref-for-dom-paymentrequest-56\"><code>PaymentRequest</code></a> <var>request</var> and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-exception\">exception</a> <var>exception</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Optionally, show an error message to the user when letting them\n            know an error has occurred."
+          "html": "Optionally, inform the developer via the console that an error\n            occurred while updating the payment request."
         },
         {
           "html": "Abort the current user interaction and close down any remaining\n            user interface."
@@ -1315,31 +1374,31 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "Set <var>request</var>'s <a href=\"https://www.w3.org/TR/payment-request/#dfn-payment-relevant-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payment-relevant-browsing-context-11\">payment-relevant browsing context</a>'s\n                <a href=\"https://www.w3.org/TR/payment-request/#dfn-payment-request-is-showing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payment-request-is-showing-13\">payment request is showing</a> boolean to false."
+              "html": "Set <var>request</var>'s <a href=\"https://www.w3.org/TR/payment-request/#dfn-payment-relevant-browsing-context\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payment-relevant-browsing-context-12\">payment-relevant browsing context</a>'s\n                <a href=\"https://www.w3.org/TR/payment-request/#dfn-payment-request-is-showing\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-payment-request-is-showing-14\">payment request is showing</a> boolean to false."
             },
             {
-              "html": "Set <var>request</var>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-21\"><code>[[state]]</code></a> to\n                \"<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/payment-request/#dfn-closed\" class=\"internalDFN\" id=\"ref-for-dfn-closed-10\">closed</a>\"."
+              "html": "Set <var>request</var>.<a data-link-type=\"attribute\" data-lt=\"[[state]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-state\" class=\"internalDFN\" id=\"ref-for-dfn-state-23\"><code>[[state]]</code></a> to\n                \"<a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/payment-request/#dfn-closed\" class=\"internalDFN\" id=\"ref-for-dfn-closed-11\">closed</a>\"."
             },
             {
-              "html": "Let <var data-type=\"PaymentResponse\">response</var> be\n                <var>request</var>.<a data-link-type=\"attribute\" data-lt=\"[[response]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-response\" class=\"internalDFN\" id=\"ref-for-dfn-response-10\"><code>[[response]]</code></a>."
+              "html": "Let <var data-type=\"PaymentResponse\">response</var> be\n                <var>request</var>.<a data-link-type=\"attribute\" data-lt=\"[[response]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-response\" class=\"internalDFN\" id=\"ref-for-dfn-response-11\"><code>[[response]]</code></a>."
             },
             {
               "html": "If <var data-type=\"PaymentResponse\">response</var> is not null, then:",
               "rationale": "set",
               "steps": [
                 {
-                  "html": "Set <var data-type=\"PaymentResponse\">response</var>.<a data-link-type=\"attribute\" data-lt=\"[[complete]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-complete\" class=\"internalDFN\" id=\"ref-for-dfn-complete-6\"><code>[[complete]]</code></a> to\n                    true."
+                  "html": "Set <var data-type=\"PaymentResponse\">response</var>.<a data-link-type=\"attribute\" data-lt=\"[[complete]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-complete\" class=\"internalDFN\" id=\"ref-for-dfn-complete-7\"><code>[[complete]]</code></a> to\n                    true."
                 },
                 {
-                  "html": "<a href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var data-type=\"PaymentResponse\">response</var>.<a data-link-type=\"attribute\" data-lt=\"[[retryPromise]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-retrypromise\" class=\"internalDFN\" id=\"ref-for-dfn-retrypromise-11\"><code>[[retryPromise]]</code></a>\n                    is not null."
+                  "html": "<a href=\"https://infra.spec.whatwg.org/#assert\">Assert</a>: <var data-type=\"PaymentResponse\">response</var>.<a data-link-type=\"attribute\" data-lt=\"[[retryPromise]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-retrypromise\" class=\"internalDFN\" id=\"ref-for-dfn-retrypromise-13\"><code>[[retryPromise]]</code></a>\n                    is not null."
                 },
                 {
-                  "html": "Reject <var data-type=\"PaymentResponse\">response</var>.<a data-link-type=\"attribute\" data-lt=\"[[retryPromise]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-retrypromise\" class=\"internalDFN\" id=\"ref-for-dfn-retrypromise-12\"><code>[[retryPromise]]</code></a>\n                    with <var>exception</var>."
+                  "html": "Reject <var data-type=\"PaymentResponse\">response</var>.<a data-link-type=\"attribute\" data-lt=\"[[retryPromise]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-retrypromise\" class=\"internalDFN\" id=\"ref-for-dfn-retrypromise-14\"><code>[[retryPromise]]</code></a>\n                    with <var>exception</var>."
                 }
               ]
             },
             {
-              "html": "Otherwise, reject\n                <var>request</var>.<a data-link-type=\"attribute\" data-lt=\"[[acceptPromise]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-acceptpromise\" class=\"internalDFN\" id=\"ref-for-dfn-acceptpromise-7\"><code>[[acceptPromise]]</code></a> with\n                <var>exception</var>."
+              "html": "Otherwise, reject\n                <var>request</var>.<a data-link-type=\"attribute\" data-lt=\"[[acceptPromise]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-acceptpromise\" class=\"internalDFN\" id=\"ref-for-dfn-acceptpromise-8\"><code>[[acceptPromise]]</code></a> with\n                <var>exception</var>."
             },
             {
               "html": "Set <var>request</var>.<a data-link-type=\"attribute\" data-lt=\"[[updating]]\" href=\"https://www.w3.org/TR/payment-request/#dfn-updating\" class=\"internalDFN\" id=\"ref-for-dfn-updating-9\"><code>[[updating]]</code></a> to false."
