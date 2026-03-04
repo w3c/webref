@@ -374,7 +374,7 @@ const patches = {
   // Custom dispatch algorithms are not identified by crawler, and not
   // correctly written for now:
   // https://github.com/WICG/PEPC/issues/83
-  'permission-elements': [
+  'geolocation-element': [
     {
       pattern: { type: /^validationstatuschange|prompt(action|dismiss)$/ },
       matched: 3,
