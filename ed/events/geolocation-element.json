@@ -1,22 +1,13 @@
 {
   "spec": {
-    "title": "The HTML Permission Elements",
-    "url": "https://wicg.github.io/PEPC/permission-elements.html"
+    "title": "The HTML Geolocation Element",
+    "url": "https://wicg.github.io/PEPC/geolocation-element.html"
   },
   "events": [
     {
-      "type": "promptaction",
+      "type": "location",
       "targets": [
-        "InPagePermissionMixin"
-      ],
-      "src": {
-        "format": "IDL eventHandler"
-      }
-    },
-    {
-      "type": "promptdismiss",
-      "targets": [
-        "InPagePermissionMixin"
+        "HTMLGeolocationElement"
       ],
       "src": {
         "format": "IDL eventHandler"
@@ -25,16 +16,25 @@
     {
       "type": "validationstatuschange",
       "targets": [
-        "InPagePermissionMixin"
+        "ActivationBlockersMixin"
       ],
       "src": {
         "format": "IDL eventHandler"
       }
     },
     {
-      "type": "location",
+      "type": "promptaction",
       "targets": [
-        "HTMLGeolocationElement"
+        "PowerfulFeatureObserver"
+      ],
+      "src": {
+        "format": "IDL eventHandler"
+      }
+    },
+    {
+      "type": "promptdismiss",
+      "targets": [
+        "PowerfulFeatureObserver"
       ],
       "src": {
         "format": "IDL eventHandler"

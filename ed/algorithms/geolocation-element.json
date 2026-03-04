@@ -1,0 +1,685 @@
+{
+  "spec": {
+    "title": "The HTML Geolocation Element",
+    "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+  },
+  "algorithms": [
+    {
+      "name": "HTMLGeolocationElement/constructor()",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-constructor",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement\" id=\"ref-for-htmlgeolocationelement⑤\">HTMLGeolocationElement</a></code> <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"HTMLGeolocationElement\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"HTMLGeolocationElement()|constructor()\" id=\"dom-htmlgeolocationelement-constructor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>constructor()</code></dfn> steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-features-slot\" id=\"ref-for-dom-powerfulfeatureobserver-features-slot\">[[Features]]</a></code> to\n« <a class=\"idl-code\" data-link-type=\"permission\" href=\"https://w3c.github.io/geolocation/#dfn-geolocation\" id=\"ref-for-dfn-geolocation②\">\"geolocation\"</a> ».</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-blockerlist-slot\" id=\"ref-for-dom-activationblockersmixin-blockerlist-slot\">[[BlockerList]]</a></code> to «».</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-lastnotifiedvalidstate-slot\" id=\"ref-for-dom-activationblockersmixin-lastnotifiedvalidstate-slot\">[[LastNotifiedValidState]]</a></code> with false.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-lastnotifiedinvalidreason-slot\" id=\"ref-for-dom-activationblockersmixin-lastnotifiedinvalidreason-slot\">[[LastNotifiedInvalidReason]]</a></code> with the empty\nstring.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-watchids-slot\" id=\"ref-for-dom-htmlgeolocationelement-watchids-slot\">[[watchIDs]]</a></code> to « <var>watchID</var> », where\n<var>watchID</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long\">unsigned long</a></code> that is\ngreater than zero.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-position-slot\" id=\"ref-for-dom-htmlgeolocationelement-position-slot\">[[position]]</a></code> to null.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-positionerror-slot\" id=\"ref-for-dom-htmlgeolocationelement-positionerror-slot\">[[positionError]]</a></code> to null.</p>"
+        },
+        {
+          "html": "<p>Run <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver\" id=\"ref-for-powerfulfeatureobserver②\">PowerfulFeatureObserver</a></code>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-initialization-steps\" id=\"ref-for-powerfulfeatureobserver-initialization-steps\">initialization steps</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLGeolocationElement/insertion steps",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-insertion-steps",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement\" id=\"ref-for-htmlgeolocationelement⑥\">HTMLGeolocationElement</a></code>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"HTMLGeolocationElement\" data-dfn-type=\"dfn\" data-export=\"\" id=\"htmlgeolocationelement-insertion-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">insertion steps</dfn> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-blockerlist-slot\" id=\"ref-for-dom-activationblockersmixin-blockerlist-slot①\">[[BlockerList]]</a></code> to «».</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> to <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable\">node navigable</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-navigable-activationblockableelements-slot\" id=\"ref-for-dom-navigable-activationblockableelements-slot\">[[ActivationBlockableElements]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-intersectionrect-slot\" id=\"ref-for-dom-activationblockersmixin-intersectionrect-slot\">[[IntersectionRect]]</a></code> with undefined.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-intersectionobserver-slot\" id=\"ref-for-dom-activationblockersmixin-intersectionobserver-slot\">[[IntersectionObserver]]</a></code> with the result of\nconstructing a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#intersectionobserver\" id=\"ref-for-intersectionobserver\">IntersectionObserver</a></code> with\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-intersectionobserver-callback\" id=\"ref-for-activationblockersmixin-intersectionobserver-callback\">IntersectionObserver callback</a> and\n«[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverinit-rootmargin\" id=\"ref-for-dom-intersectionobserverinit-rootmargin\">rootMargin</a></code>\" → <code>\"-4px\"</code> ]».</p>"
+        },
+        {
+          "html": "<p>Call <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-intersectionobserver-slot\" id=\"ref-for-dom-activationblockersmixin-intersectionobserver-slot①\">[[IntersectionObserver]]</a></code>.observe(<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>).</p>"
+        },
+        {
+          "html": "<p>Run <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver\" id=\"ref-for-powerfulfeatureobserver③\">PowerfulFeatureObserver</a></code>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-insertion-steps\" id=\"ref-for-powerfulfeatureobserver-insertion-steps\">insertion steps</a>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a> is not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-type-permissible\" id=\"ref-for-htmlgeolocationelement-type-permissible\">type permissible</a>, then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-a-temporary-blocker\" id=\"ref-for-activationblockersmixin-add-a-temporary-blocker\">add a temporary blocker</a>\nwith <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-unsuccessful_registration\" id=\"ref-for-dom-activationblockersmixinblockerreason-unsuccessful_registration①\">unsuccessful_registration</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-an-expiring-blocker\" id=\"ref-for-activationblockersmixin-add-an-expiring-blocker\">Add an expiring blocker</a> with reason\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-recently_attached\" id=\"ref-for-dom-activationblockersmixinblockerreason-recently_attached\">recently_attached</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-traversable\" id=\"ref-for-nav-traversable\">traversable navigable</a> of the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable①\">node navigable</a> of\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>\nis a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/fenced-frame/#fenced-navigable-container-fenced-navigable\" id=\"ref-for-fenced-navigable-container-fenced-navigable\">fenced navigable</a>, then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-a-permanent-blocker\" id=\"ref-for-activationblockersmixin-add-a-permanent-blocker\">add a permanent blocker</a>\nwith <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-illegal_subframe\" id=\"ref-for-dom-activationblockersmixinblockerreason-illegal_subframe\">illegal_subframe</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-maybe-dispatch-onvalidstatechange\" id=\"ref-for-activationblockersmixin-maybe-dispatch-onvalidstatechange\">Maybe dispatch onvalidstatechange</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-maybe-autolocate\" id=\"ref-for-htmlgeolocationelement-maybe-autolocate\">Maybe autolocate</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLGeolocationElement/removing steps",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement\" id=\"ref-for-htmlgeolocationelement⑦\">HTMLGeolocationElement</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-remove-ext\" id=\"ref-for-concept-node-remove-ext\">removing steps</a> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a> from <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable②\">node navigable</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-navigable-activationblockableelements-slot\" id=\"ref-for-dom-navigable-activationblockableelements-slot①\">[[ActivationBlockableElements]]</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-recheck-type-permissibility\" id=\"ref-for-htmlgeolocationelement-recheck-type-permissibility\">Recheck type permissibility</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable③\">node navigable</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-maybe-dispatch-onvalidstatechange\" id=\"ref-for-activationblockersmixin-maybe-dispatch-onvalidstatechange①\">Maybe dispatch onvalidstatechange</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLGeolocationElement/activation",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement\" id=\"ref-for-htmlgeolocationelement⑧\">HTMLGeolocationElement</a></code> <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#eventtarget-activation-behavior\" id=\"ref-for-eventtarget-activation-behavior\">activation behavior</a> given <var>event</var> is:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-features-slot\" id=\"ref-for-dom-powerfulfeatureobserver-features-slot①\">[[Features]]</a></code> is not null.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-features-slot\" id=\"ref-for-dom-powerfulfeatureobserver-features-slot②\">[[Features]]</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is empty</a>, then return.</p>"
+        },
+        {
+          "html": "<p>If <var>event</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-istrusted\" id=\"ref-for-dom-event-istrusted\">isTrusted</a></code> is false, then return.</p>"
+        },
+        {
+          "html": "<p>If <var>element</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-isvalid\" id=\"ref-for-dom-activationblockersmixin-isvalid①\">isValid</a></code> is false, then return.</p>"
+        },
+        {
+          "html": "<p>Let <var>descriptor</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-build-a-permission-descriptor\" id=\"ref-for-powerfulfeatureobserver-build-a-permission-descriptor\">build a permission descriptor</a> for\n<var>element</var>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-request-permission-to-use\" id=\"ref-for-dfn-request-permission-to-use\">Request permission to use</a> the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-powerful-feature\" id=\"ref-for-dfn-powerful-feature②\">powerful features</a> described by\n<var>descriptor</var>.</p>"
+        },
+        {
+          "html": "<p>If the previous step was cancelled or dismissed by the user, then\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-dispatch-onpromptdismiss\" id=\"ref-for-powerfulfeatureobserver-dispatch-onpromptdismiss\">dispatch onpromptdismiss</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a> and return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-dispatch-onpromptaction\" id=\"ref-for-powerfulfeatureobserver-dispatch-onpromptaction\">Dispatch onpromptaction</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-fetch-location\" id=\"ref-for-htmlgeolocationelement-fetch-location\">Fetch location</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLGeolocationElement/maybe autolocate",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-maybe-autolocate",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"HTMLGeolocationElement\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"htmlgeolocationelement-maybe-autolocate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">maybe autolocate</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-get-the-current-permission-state\" id=\"ref-for-powerfulfeatureobserver-get-the-current-permission-state\">get the current permission state</a> is not\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted\">granted</a></code>, then return.</p>"
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-autolocate\" id=\"ref-for-dom-htmlgeolocationelement-autolocate①\">autolocate</a></code> is not true, then return.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-fetch-location\" id=\"ref-for-htmlgeolocationelement-fetch-location①\">Fetch location</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLGeolocationElement/fetch location",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-fetch-location",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"HTMLGeolocationElement\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"htmlgeolocationelement-fetch-location\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">fetch location</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>positionCallback</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-positioncallback\" id=\"ref-for-dom-positioncallback②\">PositionCallback</a></code> that performs the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-positionerror-slot\" id=\"ref-for-dom-htmlgeolocationelement-positionerror-slot②\">[[positionError]]</a></code> to undefined.</p>"
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-position-slot\" id=\"ref-for-dom-htmlgeolocationelement-position-slot②\">[[position]]</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-positioncallback\" id=\"ref-for-dom-positioncallback③\">PositionCallback</a></code>’s position\nargument.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dispatch-onlocation\" id=\"ref-for-dispatch-onlocation\">Dispatch onlocation</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Let <var>errorCallback</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-positionerrorcallback\" id=\"ref-for-dom-positionerrorcallback②\">PositionErrorCallback</a></code> that performs the following steps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-position-slot\" id=\"ref-for-dom-htmlgeolocationelement-position-slot③\">[[position]]</a></code> to undefined.</p>"
+            },
+            {
+              "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-positionerror-slot\" id=\"ref-for-dom-htmlgeolocationelement-positionerror-slot③\">[[positionError]]</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-positioncallback\" id=\"ref-for-dom-positioncallback④\">PositionCallback</a></code>’s\npositionError argument.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dispatch-onlocation\" id=\"ref-for-dispatch-onlocation①\">Dispatch onlocation</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>positionOptions</var> be «[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-positionoptions-enablehighaccuracy\" id=\"ref-for-dom-positionoptions-enablehighaccuracy\">enableHighAccuracy</a></code>\" → true ]».</p>"
+        },
+        {
+          "html": "<p>Let <var>geolocation</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/geolocation/#dom-geolocation\" id=\"ref-for-dom-geolocation③\">Geolocation</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-watch\" id=\"ref-for-dom-htmlgeolocationelement-watch②\">watch</a></code> is true:</p>",
+          "ignored": [
+            "Request a position with geolocation, positionCallback, errorCallback, positionOptions, and this’s [[watchIDs]]."
+          ]
+        },
+        {
+          "html": "<p>Otherwise:</p>",
+          "ignored": [
+            "Request a position with geolocation, positionCallback, errorCallback, positionOptions."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HTMLGeolocationElement/type permissible",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-type-permissible",
+      "html": "To determine whether an <var>element</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"HTMLGeolocationElement\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"htmlgeolocationelement-type-permissible\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">type permissible</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable④\">node navigable</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-navigable-activationblockableelements-slot\" id=\"ref-for-dom-navigable-activationblockableelements-slot②\">[[ActivationBlockableElements]]</a></code>\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> <var>element</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>count</var> be 0.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>current</var> in\n<var>element</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable⑤\">node navigable</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-navigable-activationblockableelements-slot\" id=\"ref-for-dom-navigable-activationblockableelements-slot③\">[[ActivationBlockableElements]]</a></code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>current</var> is <var>element</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">break</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>element</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-features-slot\" id=\"ref-for-dom-powerfulfeatureobserver-features-slot③\">[[Features]]</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-equal\" id=\"ref-for-set-equal\">equals</a> <var>current</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-features-slot\" id=\"ref-for-dom-powerfulfeatureobserver-features-slot④\">[[Features]]</a></code>\nthen increment <var>count</var> by 1.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return whether <var>count</var> is less than 3.</p>"
+        }
+      ]
+    },
+    {
+      "name": "HTMLGeolocationElement/recheck type permissibility",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-recheck-type-permissibility",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"HTMLGeolocationElement\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"htmlgeolocationelement-recheck-type-permissibility\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">recheck type permissibility</dfn> for a\n<var>document</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>current</var> in <var>document</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-navigable-activationblockableelements-slot\" id=\"ref-for-dom-navigable-activationblockableelements-slot④\">[[ActivationBlockableElements]]</a></code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>current</var> is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-type-permissible\" id=\"ref-for-htmlgeolocationelement-type-permissible①\">type permissible</a>, then <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-remove-blockers\" id=\"ref-for-activationblockersmixin-remove-blockers\">remove blockers</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-unsuccessful_registration\" id=\"ref-for-dom-activationblockersmixinblockerreason-unsuccessful_registration②\">unsuccessful_registration</a></code> from\n<var>current</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dispatch onlocation",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dispatch-onlocation",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"dispatch-onlocation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch onlocation</dfn> for <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>event</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event①\">Event</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-initialize\" id=\"ref-for-concept-event-initialize\">Initialize</a> <var>event</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-type\" id=\"ref-for-dom-event-type\">type</a></code>\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-onlocation\" id=\"ref-for-dom-htmlgeolocationelement-onlocation②\">onlocation</a></code>\".</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-dispatch\" id=\"ref-for-concept-event-dispatch①\">Dispatch</a> <var>event</var> to <var>element</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ActivationBlockersMixin/add a blocker",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-a-blocker",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"ActivationBlockersMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activationblockersmixin-add-a-blocker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add a blocker</dfn> with a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#enumdef-activationblockersmixinblockerreason\" id=\"ref-for-enumdef-activationblockersmixinblockerreason③\">ActivationBlockersMixinBlockerReason</a></code> <var>reason</var> and an optional flag <var>expires</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>reason</var> is not <code>\"\"</code>.\n(The empty string in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#enumdef-activationblockersmixinblockerreason\" id=\"ref-for-enumdef-activationblockersmixinblockerreason④\">ActivationBlockersMixinBlockerReason</a></code> signals no blocker\nis present. Why would you add a non-blocking empty string blocker?)</p>"
+        },
+        {
+          "html": "<p>Let <var>timestamp</var> be None.</p>"
+        },
+        {
+          "html": "<p>If <var>expires</var>, then let <var>timestamp</var> be <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#current-high-resolution-time\" id=\"ref-for-current-high-resolution-time\">current high resolution time</a>\nplus the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker-delay\" id=\"ref-for-activationblockersmixin-blocker-delay\">blocker delay</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> an entry to the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-blockerlist-slot\" id=\"ref-for-dom-activationblockersmixin-blockerlist-slot②\">[[BlockerList]]</a></code>\nwith <var>reason</var> and <var>timestamp</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ActivationBlockersMixin/add an expiring blocker",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-an-expiring-blocker",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"ActivationBlockersMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activationblockersmixin-add-an-expiring-blocker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add an expiring blocker</dfn> with a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#enumdef-activationblockersmixinblockerreason\" id=\"ref-for-enumdef-activationblockersmixinblockerreason⑤\">ActivationBlockersMixinBlockerReason</a></code> <var>reason</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>reason</var> is listed as \"expiring\" in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#blocker-reason-table\" id=\"ref-for-blocker-reason-table\">blocker reason table</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-a-blocker\" id=\"ref-for-activationblockersmixin-add-a-blocker\">Add a blocker</a> with <var>reason</var> and true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ActivationBlockersMixin/add a temporary blocker",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-a-temporary-blocker",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"ActivationBlockersMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activationblockersmixin-add-a-temporary-blocker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add a temporary blocker</dfn> with a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#enumdef-activationblockersmixinblockerreason\" id=\"ref-for-enumdef-activationblockersmixinblockerreason⑥\">ActivationBlockersMixinBlockerReason</a></code> <var>reason</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>reason</var> is listed as \"temporary\" in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#blocker-reason-table\" id=\"ref-for-blocker-reason-table①\">blocker reason table</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-a-blocker\" id=\"ref-for-activationblockersmixin-add-a-blocker①\">Add a blocker</a> with <var>reason</var> and false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ActivationBlockersMixin/add a permanent blocker",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-a-permanent-blocker",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"ActivationBlockersMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activationblockersmixin-add-a-permanent-blocker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">add a permanent blocker</dfn> with a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#enumdef-activationblockersmixinblockerreason\" id=\"ref-for-enumdef-activationblockersmixinblockerreason⑦\">ActivationBlockersMixinBlockerReason</a></code> <var>reason</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>reason</var> is listed as \"permanent\" in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#blocker-reason-table\" id=\"ref-for-blocker-reason-table②\">blocker reason table</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-a-blocker\" id=\"ref-for-activationblockersmixin-add-a-blocker②\">Add a blocker</a> with <var>reason</var> and false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ActivationBlockersMixin/remove blockers",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-remove-blockers",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"ActivationBlockersMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activationblockersmixin-remove-blockers\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove blockers</dfn> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#enumdef-activationblockersmixinblockerreason\" id=\"ref-for-enumdef-activationblockersmixinblockerreason⑧\">ActivationBlockersMixinBlockerReason</a></code> <var>reason</var> from an <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>reason</var> is listed as \"temporary\" in the\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#blocker-reason-table\" id=\"ref-for-blocker-reason-table③\">blocker reason table</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> <var>entry</var> in <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-blockerlist-slot\" id=\"ref-for-dom-activationblockersmixin-blockerlist-slot③\">[[BlockerList]]</a></code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>entry</var>’s reason <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is\">equals</a> <var>reason</var>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">remove</a>\n<var>entry</var> from <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-blockerlist-slot\" id=\"ref-for-dom-activationblockersmixin-blockerlist-slot④\">[[BlockerList]]</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-a-blocker\" id=\"ref-for-activationblockersmixin-add-a-blocker③\">Add a blocker</a> with <var>reason</var> and true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ActivationBlockersMixin/blocker",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker",
+      "html": "To determine a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin\" id=\"ref-for-activationblockersmixin⑦\">ActivationBlockersMixin</a></code> <var>element</var>’s\n<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"ActivationBlockersMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activationblockersmixin-blocker\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">blocker</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>blockers</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-sort-in-ascending-order\" id=\"ref-for-list-sort-in-ascending-order\">sorting</a> <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-blockerlist-slot\" id=\"ref-for-dom-activationblockersmixin-blockerlist-slot⑤\">[[BlockerList]]</a></code>\nwith the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker-ordering\" id=\"ref-for-activationblockersmixin-blocker-ordering\">blocker ordering</a> algorithm.</p>"
+        },
+        {
+          "html": "<p>If <var>blockers</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">empty</a> and <var>blockers</var>[0] is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocking\" id=\"ref-for-activationblockersmixin-blocking\">blocking</a>, then return <var>blockers</var>[0].</p>"
+        },
+        {
+          "html": "<p>Return nothing.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ActivationBlockersMixin/blocker ordering",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker-ordering",
+      "html": "To determine <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"ActivationBlockersMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activationblockersmixin-blocker-ordering\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">blocker ordering</dfn> for\ntwo blockers <var>a</var> and <var>b</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>really large number</var> be 99.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: No order hint in the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#blocker-reason-table\" id=\"ref-for-blocker-reason-table④\">blocker reason table</a> is equal to or\ngreater than <var>really large number</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>a</var> is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocking\" id=\"ref-for-activationblockersmixin-blocking①\">blocking</a>, then let <var>a hint</var> be the\norder hint of <var>a</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker-reason\" id=\"ref-for-activationblockersmixin-blocker-reason①\">reason</a> in the\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#blocker-reason-table\" id=\"ref-for-blocker-reason-table⑤\">blocker reason table</a>, otherwise let <var>a hint</var> be <var>really large number</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>b</var> is <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocking\" id=\"ref-for-activationblockersmixin-blocking②\">blocking</a>, then let <var>b hint</var> be the\norder hint of <var>b</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker-reason\" id=\"ref-for-activationblockersmixin-blocker-reason②\">reason</a> in the\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#blocker-reason-table\" id=\"ref-for-blocker-reason-table⑥\">blocker reason table</a>, otherwise let <var>b hint</var> be <var>really large number</var>.</p>"
+        },
+        {
+          "html": "<p>Return whether <var>a hint</var> is less than or equal to <var>b hint</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ActivationBlockersMixin/blocking",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocking",
+      "html": "An <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin\" id=\"ref-for-activationblockersmixin⑧\">ActivationBlockersMixin</a></code>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker\" id=\"ref-for-activationblockersmixin-blocker①\">blocker</a> list’s <var>entry</var> is\n<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"ActivationBlockersMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activationblockersmixin-blocking\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">blocking</dfn> if:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><var>entry</var> has no <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker-timestamp\" id=\"ref-for-activationblockersmixin-blocker-timestamp\">blocker timestamp</a>,</p>"
+        },
+        {
+          "html": "<p>or <var>entry</var> has a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker-timestamp\" id=\"ref-for-activationblockersmixin-blocker-timestamp①\">blocker timestamp</a>, and the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker-timestamp\" id=\"ref-for-activationblockersmixin-blocker-timestamp②\">blocker timestamp</a> is\ngreater or equal to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/hr-time/#current-high-resolution-time\" id=\"ref-for-current-high-resolution-time①\">current high resolution time</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ActivationBlockersMixin/isValid",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-isvalid",
+      "html": "An <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin\" id=\"ref-for-activationblockersmixin⑨\">ActivationBlockersMixin</a></code> <var>element</var>’s <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ActivationBlockersMixin\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-activationblockersmixin-isvalid\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>isValid</code></dfn> getter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return whether <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker\" id=\"ref-for-activationblockersmixin-blocker②\">blocker</a> is Nothing.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ActivationBlockersMixin/invalidReason",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-invalidreason",
+      "html": "An <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin\" id=\"ref-for-activationblockersmixin①⓪\">ActivationBlockersMixin</a></code> <var>element</var>’s <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"ActivationBlockersMixin\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-activationblockersmixin-invalidreason\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>invalidReason</code></dfn> getter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker\" id=\"ref-for-activationblockersmixin-blocker③\">blocker</a> is Nothing, return <code>\"\"</code>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker\" id=\"ref-for-activationblockersmixin-blocker④\">blocker</a>’s reason string.</p>"
+        }
+      ]
+    },
+    {
+      "name": "ActivationBlockersMixin/maybe dispatch onvalidstatechange",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-maybe-dispatch-onvalidstatechange",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"ActivationBlockersMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activationblockersmixin-maybe-dispatch-onvalidstatechange\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">maybe dispatch onvalidstatechange</dfn> for <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>oldState</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-lastnotifiedvalidstate-slot\" id=\"ref-for-dom-activationblockersmixin-lastnotifiedvalidstate-slot②\">[[LastNotifiedValidState]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>newState</var> be whether <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker\" id=\"ref-for-activationblockersmixin-blocker⑤\">blocker</a> is Nothing.</p>"
+        },
+        {
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-lastnotifiedvalidstate-slot\" id=\"ref-for-dom-activationblockersmixin-lastnotifiedvalidstate-slot③\">[[LastNotifiedValidState]]</a></code> to <var>newState</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>oldReason</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-lastnotifiedinvalidreason-slot\" id=\"ref-for-dom-activationblockersmixin-lastnotifiedinvalidreason-slot②\">[[LastNotifiedInvalidReason]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>newReason</var> be whether <var>element</var>’s\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-invalidreason\" id=\"ref-for-dom-activationblockersmixin-invalidreason⑥\">invalidReason</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-lastnotifiedinvalidreason-slot\" id=\"ref-for-dom-activationblockersmixin-lastnotifiedinvalidreason-slot③\">[[LastNotifiedInvalidReason]]</a></code> to <var>newReason</var>.</p>"
+        },
+        {
+          "html": "If <var>oldState</var> != <var>newState</var> or <var>oldReason</var> != <var>newReason</var>, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>event</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event②\">Event</a></code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-initialize\" id=\"ref-for-concept-event-initialize①\">Initialize</a> <var>event</var> with\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-type\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-type\">type</a>\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-onvalidationstatuschange\" id=\"ref-for-dom-activationblockersmixin-onvalidationstatuschange④\">onvalidationstatuschange</a></code>\",\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-bubbles\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-bubbles\">bubbles</a>\ntrue, and\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-cancelable\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-cancelable\">cancelable</a>\ntrue.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-dispatch\" id=\"ref-for-concept-event-dispatch②\">Dispatch</a> <var>event</var> to <var>element</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ActivationBlockersMixin/IntersectionObserver callback",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-intersectionobserver-callback",
+      "html": "An <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin\" id=\"ref-for-activationblockersmixin①①\">ActivationBlockersMixin</a></code>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"ActivationBlockersMixin\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"activationblockersmixin-intersectionobserver-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IntersectionObserver callback</dfn> implements <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#callbackdef-intersectionobservercallback\" id=\"ref-for-callbackdef-intersectionobservercallback\">IntersectionObserverCallback</a></code> and runs the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#intersectionobserver\" id=\"ref-for-intersectionobserver②\">IntersectionObserver</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-root\" id=\"ref-for-dom-intersectionobserver-root\">root</a></code>\nis the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">document</a></p>"
+        },
+        {
+          "html": "<p>Let <var>entries</var> be the value of the first callback parameter, the\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#intersectionobserverentry\" id=\"ref-for-intersectionobserverentry\">intersection observer entries</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a>: <var>entries</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①\">empty</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>entry</var> be <var>entries</var>’s last <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">item</a>.</p>"
+        },
+        {
+          "html": "If <var>entry</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-isvisible\" id=\"ref-for-dom-intersectionobserverentry-isvisible\">isVisible</a></code>, then:",
+          "rationale": "remove",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-remove-blockers\" id=\"ref-for-activationblockersmixin-remove-blockers①\">Remove blockers</a> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-intersection_occluded_or_distorted\" id=\"ref-for-dom-activationblockersmixinblockerreason-intersection_occluded_or_distorted①\">intersection_occluded_or_distorted</a></code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-remove-blockers\" id=\"ref-for-activationblockersmixin-remove-blockers②\">Remove blockers</a> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-intersection_out_of_viewport_or_clipped\" id=\"ref-for-dom-activationblockersmixinblockerreason-intersection_out_of_viewport_or_clipped①\">intersection_out_of_viewport_or_clipped</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>entry</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-intersectionratio\" id=\"ref-for-dom-intersectionobserverentry-intersectionratio\">intersectionRatio</a></code> &gt;= 1, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>reason</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-intersection_occluded_or_distorted\" id=\"ref-for-dom-activationblockersmixinblockerreason-intersection_occluded_or_distorted②\">intersection_occluded_or_distorted</a></code>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>reason</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-intersection_out_of_viewport_or_clipped\" id=\"ref-for-dom-activationblockersmixinblockerreason-intersection_out_of_viewport_or_clipped②\">intersection_out_of_viewport_or_clipped</a></code>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-a-temporary-blocker\" id=\"ref-for-activationblockersmixin-add-a-temporary-blocker①\">Add a temporary blocker</a> with <var>reason</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-intersectionrect-slot\" id=\"ref-for-dom-activationblockersmixin-intersectionrect-slot①\">[[IntersectionRect]]</a></code> does not equal\n<var>entry</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-intersectionrect\" id=\"ref-for-dom-intersectionobserverentry-intersectionrect\">intersectionRect</a></code> then\n<a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-an-expiring-blocker\" id=\"ref-for-activationblockersmixin-add-an-expiring-blocker①\">add an expiring blocker</a> with\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-intersection_changed\" id=\"ref-for-dom-activationblockersmixinblockerreason-intersection_changed①\">intersection_changed</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-intersectionrect-slot\" id=\"ref-for-dom-activationblockersmixin-intersectionrect-slot②\">[[IntersectionRect]]</a></code> to\n<var>entry</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-intersectionrect\" id=\"ref-for-dom-intersectionobserverentry-intersectionrect①\">intersectionRect</a></code></p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-maybe-dispatch-onvalidstatechange\" id=\"ref-for-activationblockersmixin-maybe-dispatch-onvalidstatechange②\">Maybe dispatch onvalidstatechange</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "PowerfulFeatureObserver/initialization steps",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-initialization-steps",
+      "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver\" id=\"ref-for-powerfulfeatureobserver⑧\">PowerfulFeatureObserver</a></code>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"PowerfulFeatureObserver\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"powerfulfeatureobserver-initialization-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialization steps</dfn> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⓪\">Assert</a>: The internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-features-slot\" id=\"ref-for-dom-powerfulfeatureobserver-features-slot⑥\">[[Features]]</a></code> slot has been\ninitialized. The including element must define and initialize this.</p>"
+        },
+        {
+          "html": "<p>Initialize the internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-initialpermissionstatus-slot\" id=\"ref-for-dom-powerfulfeatureobserver-initialpermissionstatus-slot\">[[InitialPermissionStatus]]</a></code> to\nthe result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-get-the-current-permission-state\" id=\"ref-for-powerfulfeatureobserver-get-the-current-permission-state①\">get the current permission state</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "PowerfulFeatureObserver/insertion steps",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-insertion-steps",
+      "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver\" id=\"ref-for-powerfulfeatureobserver⑨\">PowerfulFeatureObserver</a></code>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"PowerfulFeatureObserver\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"powerfulfeatureobserver-insertion-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">insertion steps</dfn> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-features-slot\" id=\"ref-for-dom-powerfulfeatureobserver-features-slot⑦\">[[Features]]</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②\">is empty</a> or is null,\nthen <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-a-permanent-blocker\" id=\"ref-for-activationblockersmixin-add-a-permanent-blocker①\">add a permanent blocker</a>\nwith reason <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-type_invalid\" id=\"ref-for-dom-activationblockersmixinblockerreason-type_invalid①\">type_invalid</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "PowerfulFeatureObserver/initialPermissionStatus",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-initialpermissionstatus",
+      "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver\" id=\"ref-for-powerfulfeatureobserver①⓪\">PowerfulFeatureObserver</a></code> <var>element</var>’s\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PowerfulFeatureObserver\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-powerfulfeatureobserver-initialpermissionstatus\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>initialPermissionStatus</code></dfn>\ngetter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return <var>element</var>’s internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-initialpermissionstatus-slot\" id=\"ref-for-dom-powerfulfeatureobserver-initialpermissionstatus-slot①\">[[InitialPermissionStatus]]</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "PowerfulFeatureObserver/permissionStatus",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-permissionstatus",
+      "html": "A <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver\" id=\"ref-for-powerfulfeatureobserver①①\">PowerfulFeatureObserver</a></code> <var>element</var>’s\n<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"PowerfulFeatureObserver\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-powerfulfeatureobserver-permissionstatus\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>permissionStatus</code></dfn>\ngetter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-get-the-current-permission-state\" id=\"ref-for-powerfulfeatureobserver-get-the-current-permission-state②\">get the current permission state</a> for\n<var>element</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "PowerfulFeatureObserver/get the current permission state",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-get-the-current-permission-state",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"PowerfulFeatureObserver\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"powerfulfeatureobserver-get-the-current-permission-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the current permission state</dfn> for\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver\" id=\"ref-for-powerfulfeatureobserver①②\">PowerfulFeatureObserver</a></code> <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>features</var> be <var>element</var>’s internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-features-slot\" id=\"ref-for-dom-powerfulfeatureobserver-features-slot⑧\">[[Features]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>features</var> is null or <var>features</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty①\">empty</a>,\nreturn \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-prompt\" id=\"ref-for-dom-permissionstate-prompt\">prompt</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Let <var>current</var> be \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted①\">granted</a></code>\".</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>feature</var> of <var>features</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>state</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-getting-the-current-permission-state\" id=\"ref-for-dfn-getting-the-current-permission-state\">get the current permission state</a> for\n<var>feature</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>current</var> be the smaller of <var>current</var> and <var>state</var>, assuming the\nfollowing ordering:<br>\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted②\">granted</a></code>\" &gt;\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-prompt\" id=\"ref-for-dom-permissionstate-prompt①\">prompt</a></code>\" &gt;\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied\">denied</a></code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>current</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "PowerfulFeatureObserver/dispatch onpromptaction",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-dispatch-onpromptaction",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"PowerfulFeatureObserver\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"powerfulfeatureobserver-dispatch-onpromptaction\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch onpromptaction</dfn> for <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>event</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event③\">Event</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-initialize\" id=\"ref-for-concept-event-initialize②\">Initialize</a> <var>event</var> with\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-type\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-type①\">type</a>\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-onpromptaction\" id=\"ref-for-dom-powerfulfeatureobserver-onpromptaction②\">onpromptaction</a></code>\",\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-bubbles\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-bubbles①\">bubbles</a>\ntrue, and\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-cancelable\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-cancelable①\">cancelable</a>\ntrue.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-dispatch\" id=\"ref-for-concept-event-dispatch③\">Dispatch</a> <var>event</var> to <var>element</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "PowerfulFeatureObserver/dispatch onpromptdismiss",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-dispatch-onpromptdismiss",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"PowerfulFeatureObserver\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"powerfulfeatureobserver-dispatch-onpromptdismiss\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">dispatch onpromptdismiss</dfn> for <var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>event</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#event\" id=\"ref-for-event④\">Event</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-initialize\" id=\"ref-for-concept-event-initialize③\">Initialize</a> <var>event</var> with\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-type\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-type②\">type</a>\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-onpromptdismiss\" id=\"ref-for-dom-powerfulfeatureobserver-onpromptdismiss②\">onpromptdismiss</a></code>\",\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-bubbles\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-bubbles②\">bubbles</a>\ntrue, and\n<a class=\"idl-code\" data-link-type=\"argument\" href=\"https://dom.spec.whatwg.org/#dom-event-initevent-type-bubbles-cancelable-cancelable\" id=\"ref-for-dom-event-initevent-type-bubbles-cancelable-cancelable②\">cancelable</a>\ntrue.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-dispatch\" id=\"ref-for-concept-event-dispatch④\">Dispatch</a> <var>event</var> to <var>element</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "PowerfulFeatureObserver/build a permission descriptor",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-build-a-permission-descriptor",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"PowerfulFeatureObserver\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"powerfulfeatureobserver-build-a-permission-descriptor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">build a permission descriptor</dfn> for an\n<var>element</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/permissions/#dom-permissiondescriptor\" id=\"ref-for-dom-permissiondescriptor\">PermissionDescriptor</a></code>.</p>"
+        },
+        {
+          "html": "<p>Fill in <var>result</var>, by including the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#dfn-powerful-feature\" id=\"ref-for-dfn-powerful-feature⑦\">powerful feature</a> names contained in\n<var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-features-slot\" id=\"ref-for-dom-powerfulfeatureobserver-features-slot⑨\">[[Features]]</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "<code><a data-link-type=\"element\" href=\"https://wicg.github.io/PEPC/geolocation-element.html#elementdef-geolocation\" id=\"ref-for-elementdef-geolocation①④\">geolocation</a></code> elements constrain the styling that can be applied to them.\nThese constraints come in three flavours:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the condition isn’t met, the element is deactivated.</p>"
+        },
+        {
+          "html": "<p>A user-agent defined stylesheet enforces certain styling.</p>"
+        },
+        {
+          "html": "<p>The user-agent enforces bounds on additional styles, where the bounds\ncannot be easily expressed in CSS. For example, if the style bounds are\nexpressed relative to the computed style of the element.</p>"
+        }
+      ]
+    }
+  ]
+}
