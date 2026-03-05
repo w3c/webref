@@ -137,7 +137,7 @@
         "href": "https://wicg.github.io/sanitizer-api/#dictdef-sethtmlunsafeoptions"
       },
       "Sanitizer": {
-        "fragment": "[Exposed=Window]\ninterface Sanitizer {\n  constructor(optional (SanitizerConfig or SanitizerPresets) configuration = \"default\");\n\n  // Query configuration:\n  SanitizerConfig get();\n\n  // Modify a Sanitizer’s lists and fields:\n  boolean allowElement(SanitizerElementWithAttributes element);\n  boolean removeElement(SanitizerElement element);\n  boolean replaceElementWithChildren(SanitizerElement element);\n  boolean allowAttribute(SanitizerAttribute attribute);\n  boolean removeAttribute(SanitizerAttribute attribute);\n  boolean setComments(boolean allow);\n  boolean setDataAttributes(boolean allow);\n\n  // Remove markup that executes script.\n  boolean removeUnsafe();\n};",
+        "fragment": "[Exposed=Window]\ninterface Sanitizer {\n  constructor(optional (SanitizerConfig or SanitizerPresets) configuration = \"default\");\n\n  // Query configuration:\n  SanitizerConfig get();\n\n  // Modify a Sanitizer's lists and fields:\n  boolean allowElement(SanitizerElementWithAttributes element);\n  boolean removeElement(SanitizerElement element);\n  boolean replaceElementWithChildren(SanitizerElement element);\n  boolean allowAttribute(SanitizerAttribute attribute);\n  boolean removeAttribute(SanitizerAttribute attribute);\n  boolean setComments(boolean allow);\n  boolean setDataAttributes(boolean allow);\n\n  // Remove markup that executes script.\n  boolean removeUnsafe();\n};",
         "type": "interface",
         "name": "Sanitizer",
         "inheritance": null,
