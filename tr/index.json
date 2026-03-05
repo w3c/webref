@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-03-04T01:38:34.071Z",
+  "date": "2026-03-05T01:48:43.305Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -24,14 +24,17 @@
       "layered-cookies",
       "no-vary-search",
       "rfc6265bis",
+      "unencoded-digest",
       "dom",
       "css-typed-om-2",
       "font-metrics-api-1",
+      "animation-triggers-1",
       "compositing-2",
       "css-color-6",
       "css-conditional-values-1",
       "css-extensions-1",
       "css-gcpm-4",
+      "css-image-animation-1",
       "css-images-5",
       "css-link-params-1",
       "css-navigation-1",
@@ -42,7 +45,6 @@
       "css-variables-2",
       "filter-effects-2",
       "pointer-animations-1",
-      "selectors-5",
       "encoding",
       "fetch",
       "fido-client-to-authenticator-protocol-v2.1",
@@ -243,7 +245,7 @@
       "overscroll-scrollend-events",
       "page-lifecycle",
       "paymentlink",
-      "permission-elements",
+      "geolocation-element",
       "performance-measure-memory",
       "periodic-background-sync",
       "permissions-request",
@@ -315,6 +317,7 @@
       "rfc9114",
       "rfc9163",
       "rfc9218",
+      "rfc9421",
       "rfc9530",
       "rfc9649",
       "rfc9659",
@@ -604,6 +607,7 @@
       "selection-api",
       "selectors-3",
       "selectors-4",
+      "selectors-5",
       "server-timing",
       "service-workers",
       "shacl12-core",
@@ -750,10 +754,10 @@
     ]
   },
   "stats": {
-    "crawled": 402,
+    "crawled": 403,
     "errors": 0
   },
-  "crawler": "reffy-20.0.11",
+  "crawler": "reffy-20.0.12",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -799,7 +803,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "4 March 2026",
+      "date": "5 March 2026",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -1220,11 +1224,11 @@
       ],
       "crawled": "https://www.w3.org/TR/attribution/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 03 Mar 2026 00:36:29 GMT"
+        "lastModified": "Wed, 04 Mar 2026 15:29:11 GMT"
       },
       "generator": "bikeshed",
-      "date": "3 March 2026",
-      "revision": "d310d234d3534515d9ae583712707fe255e483f4",
+      "date": "4 March 2026",
+      "revision": "f48bb7ded5ca6897be1121c5141d70f071043261",
       "algorithms": "algorithms/attribution.json",
       "links": "links/attribution.json",
       "refs": "refs/attribution.json",
@@ -5515,7 +5519,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/css-gaps-1/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -12994,7 +12998,7 @@
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/hr-time",
-        "sourcePath": "index.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "High Resolution Time",
@@ -15819,7 +15823,7 @@
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/navigation-timing",
-        "sourcePath": "index.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Navigation Timing Level 2",
@@ -16569,7 +16573,7 @@
         "status": "Editor's Draft",
         "alternateUrls": [],
         "repository": "https://github.com/w3c/performance-timeline",
-        "sourcePath": "index.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Performance Timeline",
@@ -17587,11 +17591,11 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-n-quads/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 22 Dec 2025 09:33:48 GMT"
+        "lastModified": "Wed, 04 Mar 2026 20:57:09 GMT"
       },
       "generator": "respec",
-      "date": "22 December 2025",
-      "revision": "842df3e1e7c182233cb3b138ed05b39e28e557a9",
+      "date": "04 March 2026",
+      "revision": "238901920a17f3bc9646462c8d705ee30dad2614",
       "links": "links/rdf12-n-quads.json",
       "refs": "refs/rdf12-n-quads.json",
       "dfns": "dfns/rdf12-n-quads.json",
@@ -18931,6 +18935,74 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/selectors-5/",
+      "seriesComposition": "delta",
+      "shortname": "selectors-5",
+      "series": {
+        "shortname": "selectors",
+        "currentSpecification": "selectors-4",
+        "title": "Selectors",
+        "shortTitle": "Selectors",
+        "releaseUrl": "https://www.w3.org/TR/selectors/",
+        "nightlyUrl": "https://drafts.csswg.org/selectors/"
+      },
+      "seriesVersion": "5",
+      "seriesPrevious": "selectors-4",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/groups/wg/css/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/selectors-5/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/selectors-5/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/selectors-5/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "selectors-5/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "Selectors Level 5",
+      "source": "w3c",
+      "shortTitle": "Selectors 5",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/selectors"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/selectors-5/",
+        "https://drafts.csswg.org/selectors-5/"
+      ],
+      "crawled": "https://www.w3.org/TR/selectors-5/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 17 Feb 2026 05:06:12 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "17 February 2026",
+      "revision": "aeb01368e528fad2cd6f708300ab31cb7eacf434",
+      "links": "links/selectors-5.json",
+      "refs": "refs/selectors-5.json",
+      "css": "css/selectors-5.json",
+      "dfns": "dfns/selectors-5.json",
+      "headings": "headings/selectors-5.json",
+      "ids": "ids/selectors-5.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/server-timing/",
       "seriesComposition": "full",
       "shortname": "server-timing",
@@ -19220,11 +19292,11 @@
       ],
       "crawled": "https://www.w3.org/TR/shacl12-rules/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 26 Feb 2026 21:42:39 GMT"
+        "lastModified": "Wed, 04 Mar 2026 09:21:39 GMT"
       },
       "generator": "respec",
-      "date": "26 February 2026",
-      "revision": "e0a201282c16829e32c488e1ab34f9528bf047dd",
+      "date": "04 March 2026",
+      "revision": "90926ced0f872da79eef089447427b389693b491",
       "links": "links/shacl12-rules.json",
       "refs": "refs/shacl12-rules.json",
       "dfns": "dfns/shacl12-rules.json",
@@ -22886,6 +22958,12 @@
         "browser"
       ],
       "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "web-based-payment-handler"
+        ]
+      },
       "versions": [
         "https://www.w3.org/TR/web-based-payment-handler/",
         "https://w3c.github.io/web-based-payment-handler/"
