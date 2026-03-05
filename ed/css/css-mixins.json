@@ -31,7 +31,7 @@
       "name": "@mixin",
       "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-mixin",
       "descriptors": [],
-      "value": "@mixin <function-token> <function-parameter>#? ) { <declaration-rule-list> }"
+      "value": "@mixin <function-token> <function-parameter>#? ) { <declaration-rule-list> } | @mixin <dashed-ident> { <declaration-rule-list> }"
     },
     {
       "name": "@result",
@@ -44,6 +44,11 @@
       "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-contents",
       "descriptors": [],
       "value": "@contents [ { <declaration-list> } ]?"
+    },
+    {
+      "name": "@macro",
+      "href": "https://drafts.csswg.org/css-mixins-1/#macro-rule",
+      "descriptors": []
     },
     {
       "name": "@apply",
