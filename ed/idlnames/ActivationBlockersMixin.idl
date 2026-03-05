@@ -1,0 +1,6 @@
+// Source: The HTML Geolocation Element (https://wicg.github.io/PEPC/geolocation-element.html)
+interface mixin ActivationBlockersMixin {
+  readonly attribute boolean isValid;
+  readonly attribute ActivationBlockersMixinBlockerReason invalidReason;
+  attribute EventHandler onvalidationstatuschange;
+};

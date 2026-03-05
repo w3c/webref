@@ -1,0 +1,230 @@
+{
+  "spec": {
+    "title": "The HTML Geolocation Element",
+    "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#title",
+      "level": 1,
+      "title": "The HTML Geolocation Element"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#intro",
+      "level": 2,
+      "title": "Introduction and Background",
+      "number": "1"
+    },
+    {
+      "id": "geolocation-element",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-element",
+      "level": 2,
+      "title": "The geolocation Element",
+      "number": "2"
+    },
+    {
+      "id": "geolocation-element-internal-state",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-element-internal-state",
+      "level": 3,
+      "title": "geolocation element internal state",
+      "number": "2.1"
+    },
+    {
+      "id": "mixin-navigable-state",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-navigable-state",
+      "level": 4,
+      "title": "Mixin-supporting state at the navigable",
+      "number": "2.1.1"
+    },
+    {
+      "id": "geolocation-algorithms",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-algorithms",
+      "level": 3,
+      "title": "geolocation element algorithms",
+      "number": "2.2"
+    },
+    {
+      "id": "geolocation-rendering",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-rendering",
+      "level": 3,
+      "title": "geolocation element rendering",
+      "number": "2.3"
+    },
+    {
+      "id": "all-the-mixins",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#all-the-mixins",
+      "level": 2,
+      "title": "Mixins and Infrastructure",
+      "number": "3"
+    },
+    {
+      "id": "mixin-blockers",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers",
+      "level": 3,
+      "title": "Activation Blockers",
+      "number": "3.1"
+    },
+    {
+      "id": "mixin-blocker-internal-state",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blocker-internal-state",
+      "level": 4,
+      "title": "Internal state",
+      "number": "3.1.1"
+    },
+    {
+      "id": "mixin-blockers-reason",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+      "level": 4,
+      "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+      "number": "3.1.2"
+    },
+    {
+      "id": "mixin-blockers-algorithms",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-algorithms",
+      "level": 4,
+      "title": "Algorithms",
+      "number": "3.1.3"
+    },
+    {
+      "id": "mixin-permissions",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions",
+      "level": 3,
+      "title": "Powerful Features, aka Permissions",
+      "number": "3.2"
+    },
+    {
+      "id": "mixin-permissions-internal-state",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions-internal-state",
+      "level": 4,
+      "title": "Internal state",
+      "number": "3.2.1"
+    },
+    {
+      "id": "mixin-permissions-algorithms",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions-algorithms",
+      "level": 4,
+      "title": "Algorithms",
+      "number": "3.2.2"
+    },
+    {
+      "id": "mixin-permissions-presentation",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions-presentation",
+      "level": 4,
+      "title": "Presentation",
+      "number": "3.2.3"
+    },
+    {
+      "id": "fallback",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#fallback",
+      "level": 3,
+      "title": "Falling Back",
+      "number": "3.3"
+    },
+    {
+      "id": "rendering",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#rendering",
+      "level": 3,
+      "title": "Styling, and Styling Restrictions",
+      "number": "3.4"
+    },
+    {
+      "id": "style-blockers",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#style-blockers",
+      "level": 4,
+      "title": "Conditions that Deactivate the Element",
+      "number": "3.4.1"
+    },
+    {
+      "id": "style-stylesheet",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#style-stylesheet",
+      "level": 4,
+      "title": "User-Agent Defined Stylesheet",
+      "number": "3.4.2"
+    },
+    {
+      "id": "style-style-bounds",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#style-style-bounds",
+      "level": 4,
+      "title": "Additional User-Agent Defined Style Bounds",
+      "number": "3.4.3"
+    },
+    {
+      "id": "secpriv",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#secpriv",
+      "level": 2,
+      "title": "Security & Privacy Considerations",
+      "number": "4"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

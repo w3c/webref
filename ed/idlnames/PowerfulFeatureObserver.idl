@@ -1,0 +1,7 @@
+// Source: The HTML Geolocation Element (https://wicg.github.io/PEPC/geolocation-element.html)
+interface mixin PowerfulFeatureObserver {
+  readonly attribute PermissionState initialPermissionStatus;
+  readonly attribute PermissionState permissionStatus;
+  attribute EventHandler onpromptaction;
+  attribute EventHandler onpromptdismiss;
+};

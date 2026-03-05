@@ -662,24 +662,31 @@
       "values": [
         {
           "name": "thin",
-          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively. The hairline keyword is a UA-defined length, less than or equal to 1px and equal to an integer number of device pixels at the default page zoom, which represents a \"just visible\" line. (While it can be as large as 1px, on many devices it will be approximately 0.3px to 0.5px.)",
           "href": "https://drafts.csswg.org/css-borders-4/#valdef-line-width-thin",
           "type": "value",
           "value": "thin"
         },
         {
           "name": "medium",
-          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively. The hairline keyword is a UA-defined length, less than or equal to 1px and equal to an integer number of device pixels at the default page zoom, which represents a \"just visible\" line. (While it can be as large as 1px, on many devices it will be approximately 0.3px to 0.5px.)",
           "href": "https://drafts.csswg.org/css-borders-4/#valdef-line-width-medium",
           "type": "value",
           "value": "medium"
         },
         {
           "name": "thick",
-          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively. The hairline keyword is a UA-defined length, less than or equal to 1px and equal to an integer number of device pixels at the default page zoom, which represents a \"just visible\" line. (While it can be as large as 1px, on many devices it will be approximately 0.3px to 0.5px.)",
           "href": "https://drafts.csswg.org/css-borders-4/#valdef-line-width-thick",
           "type": "value",
           "value": "thick"
+        },
+        {
+          "name": "hairline",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively. The hairline keyword is a UA-defined length, less than or equal to 1px and equal to an integer number of device pixels at the default page zoom, which represents a \"just visible\" line. (While it can be as large as 1px, on many devices it will be approximately 0.3px to 0.5px.)",
+          "href": "https://drafts.csswg.org/css-borders-4/#valdef-line-width-hairline",
+          "type": "value",
+          "value": "hairline"
         }
       ],
       "styleDeclaration": [
@@ -2658,28 +2665,35 @@
       "name": "<line-width>",
       "href": "https://drafts.csswg.org/css-borders-4/#typedef-line-width",
       "type": "type",
-      "value": "<length [0,∞]> | thin | medium | thick",
+      "value": "<length [0,∞]> | hairline | thin | medium | thick",
       "values": [
         {
           "name": "thin",
-          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively. The hairline keyword is a UA-defined length, less than or equal to 1px and equal to an integer number of device pixels at the default page zoom, which represents a \"just visible\" line. (While it can be as large as 1px, on many devices it will be approximately 0.3px to 0.5px.)",
           "href": "https://drafts.csswg.org/css-borders-4/#valdef-line-width-thin",
           "type": "value",
           "value": "thin"
         },
         {
           "name": "medium",
-          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively. The hairline keyword is a UA-defined length, less than or equal to 1px and equal to an integer number of device pixels at the default page zoom, which represents a \"just visible\" line. (While it can be as large as 1px, on many devices it will be approximately 0.3px to 0.5px.)",
           "href": "https://drafts.csswg.org/css-borders-4/#valdef-line-width-medium",
           "type": "value",
           "value": "medium"
         },
         {
           "name": "thick",
-          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively.",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively. The hairline keyword is a UA-defined length, less than or equal to 1px and equal to an integer number of device pixels at the default page zoom, which represents a \"just visible\" line. (While it can be as large as 1px, on many devices it will be approximately 0.3px to 0.5px.)",
           "href": "https://drafts.csswg.org/css-borders-4/#valdef-line-width-thick",
           "type": "value",
           "value": "thick"
+        },
+        {
+          "name": "hairline",
+          "prose": "Negative values are invalid. The thin, medium, and thick keywords are equivalent to 1px, 3px, and 5px, respectively. The hairline keyword is a UA-defined length, less than or equal to 1px and equal to an integer number of device pixels at the default page zoom, which represents a \"just visible\" line. (While it can be as large as 1px, on many devices it will be approximately 0.3px to 0.5px.)",
+          "href": "https://drafts.csswg.org/css-borders-4/#valdef-line-width-hairline",
+          "type": "value",
+          "value": "hairline"
         }
       ]
     },

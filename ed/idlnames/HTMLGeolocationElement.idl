@@ -1,4 +1,4 @@
-// Source: The HTML Permission Elements (https://wicg.github.io/PEPC/permission-elements.html)
+// Source: The HTML Geolocation Element (https://wicg.github.io/PEPC/geolocation-element.html)
 [Exposed=Window]
 interface HTMLGeolocationElement : HTMLElement {
   [HTMLConstructor] constructor();
@@ -11,5 +11,8 @@ interface HTMLGeolocationElement : HTMLElement {
   attribute EventHandler onlocation;
 };
 
-// Source: The HTML Permission Elements (https://wicg.github.io/PEPC/permission-elements.html)
-HTMLGeolocationElement includes InPagePermissionMixin;
+// Source: The HTML Geolocation Element (https://wicg.github.io/PEPC/geolocation-element.html)
+HTMLGeolocationElement includes ActivationBlockersMixin;
+
+// Source: The HTML Geolocation Element (https://wicg.github.io/PEPC/geolocation-element.html)
+HTMLGeolocationElement includes PowerfulFeatureObserver;

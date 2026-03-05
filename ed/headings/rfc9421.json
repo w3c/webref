@@ -1,0 +1,1184 @@
+{
+  "spec": {
+    "title": "RFC 9421 - HTTP Message Signatures",
+    "url": "https://httpwg.org/specs/rfc9421.html"
+  },
+  "headings": [
+    {
+      "id": "rfc.abstract",
+      "href": "https://httpwg.org/specs/rfc9421.html#rfc.abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "intro",
+      "href": "https://httpwg.org/specs/rfc9421.html#intro",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "rfc.section.1"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "definitions",
+      "href": "https://httpwg.org/specs/rfc9421.html#definitions",
+      "level": 3,
+      "title": "Conventions and Terminology",
+      "alternateIds": [
+        "rfc.section.1.1"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "requirements",
+      "href": "https://httpwg.org/specs/rfc9421.html#requirements",
+      "level": 3,
+      "title": "Requirements",
+      "alternateIds": [
+        "rfc.section.1.2"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "transforms",
+      "href": "https://httpwg.org/specs/rfc9421.html#transforms",
+      "level": 3,
+      "title": "HTTP Message Transformations",
+      "alternateIds": [
+        "rfc.section.1.3"
+      ],
+      "number": "1.3"
+    },
+    {
+      "id": "application",
+      "href": "https://httpwg.org/specs/rfc9421.html#application",
+      "level": 3,
+      "title": "Application of HTTP Message Signatures",
+      "alternateIds": [
+        "rfc.section.1.4"
+      ],
+      "number": "1.4"
+    },
+    {
+      "id": "covered-components",
+      "href": "https://httpwg.org/specs/rfc9421.html#covered-components",
+      "level": 2,
+      "title": "HTTP Message Components",
+      "alternateIds": [
+        "rfc.section.2"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "http-fields",
+      "href": "https://httpwg.org/specs/rfc9421.html#http-fields",
+      "level": 3,
+      "title": "HTTP Fields",
+      "alternateIds": [
+        "rfc.section.2.1"
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "http-field-structured",
+      "href": "https://httpwg.org/specs/rfc9421.html#http-field-structured",
+      "level": 4,
+      "title": "Strict Serialization of HTTP Structured Fields",
+      "alternateIds": [
+        "rfc.section.2.1.1"
+      ],
+      "number": "2.1.1"
+    },
+    {
+      "id": "http-field-dictionary",
+      "href": "https://httpwg.org/specs/rfc9421.html#http-field-dictionary",
+      "level": 4,
+      "title": "Dictionary Structured Field Members",
+      "alternateIds": [
+        "rfc.section.2.1.2"
+      ],
+      "number": "2.1.2"
+    },
+    {
+      "id": "http-field-byte-sequence",
+      "href": "https://httpwg.org/specs/rfc9421.html#http-field-byte-sequence",
+      "level": 4,
+      "title": "Binary-Wrapped HTTP Fields",
+      "alternateIds": [
+        "rfc.section.2.1.3"
+      ],
+      "number": "2.1.3"
+    },
+    {
+      "id": "http-trailer",
+      "href": "https://httpwg.org/specs/rfc9421.html#http-trailer",
+      "level": 4,
+      "title": "Trailer Fields",
+      "alternateIds": [
+        "rfc.section.2.1.4"
+      ],
+      "number": "2.1.4"
+    },
+    {
+      "id": "derived-components",
+      "href": "https://httpwg.org/specs/rfc9421.html#derived-components",
+      "level": 3,
+      "title": "Derived Components",
+      "alternateIds": [
+        "rfc.section.2.2"
+      ],
+      "number": "2.2"
+    },
+    {
+      "id": "content-request-method",
+      "href": "https://httpwg.org/specs/rfc9421.html#content-request-method",
+      "level": 4,
+      "title": "Method",
+      "alternateIds": [
+        "rfc.section.2.2.1"
+      ],
+      "number": "2.2.1"
+    },
+    {
+      "id": "content-target-uri",
+      "href": "https://httpwg.org/specs/rfc9421.html#content-target-uri",
+      "level": 4,
+      "title": "Target URI",
+      "alternateIds": [
+        "rfc.section.2.2.2"
+      ],
+      "number": "2.2.2"
+    },
+    {
+      "id": "content-request-authority",
+      "href": "https://httpwg.org/specs/rfc9421.html#content-request-authority",
+      "level": 4,
+      "title": "Authority",
+      "alternateIds": [
+        "rfc.section.2.2.3"
+      ],
+      "number": "2.2.3"
+    },
+    {
+      "id": "content-request-scheme",
+      "href": "https://httpwg.org/specs/rfc9421.html#content-request-scheme",
+      "level": 4,
+      "title": "Scheme",
+      "alternateIds": [
+        "rfc.section.2.2.4"
+      ],
+      "number": "2.2.4"
+    },
+    {
+      "id": "content-request-target",
+      "href": "https://httpwg.org/specs/rfc9421.html#content-request-target",
+      "level": 4,
+      "title": "Request Target",
+      "alternateIds": [
+        "rfc.section.2.2.5"
+      ],
+      "number": "2.2.5"
+    },
+    {
+      "id": "content-request-path",
+      "href": "https://httpwg.org/specs/rfc9421.html#content-request-path",
+      "level": 4,
+      "title": "Path",
+      "alternateIds": [
+        "rfc.section.2.2.6"
+      ],
+      "number": "2.2.6"
+    },
+    {
+      "id": "content-request-query",
+      "href": "https://httpwg.org/specs/rfc9421.html#content-request-query",
+      "level": 4,
+      "title": "Query",
+      "alternateIds": [
+        "rfc.section.2.2.7"
+      ],
+      "number": "2.2.7"
+    },
+    {
+      "id": "content-request-query-param",
+      "href": "https://httpwg.org/specs/rfc9421.html#content-request-query-param",
+      "level": 4,
+      "title": "Query Parameters",
+      "alternateIds": [
+        "rfc.section.2.2.8"
+      ],
+      "number": "2.2.8"
+    },
+    {
+      "id": "content-status-code",
+      "href": "https://httpwg.org/specs/rfc9421.html#content-status-code",
+      "level": 4,
+      "title": "Status Code",
+      "alternateIds": [
+        "rfc.section.2.2.9"
+      ],
+      "number": "2.2.9"
+    },
+    {
+      "id": "signature-params",
+      "href": "https://httpwg.org/specs/rfc9421.html#signature-params",
+      "level": 3,
+      "title": "Signature Parameters",
+      "alternateIds": [
+        "rfc.section.2.3"
+      ],
+      "number": "2.3"
+    },
+    {
+      "id": "content-request-response",
+      "href": "https://httpwg.org/specs/rfc9421.html#content-request-response",
+      "level": 3,
+      "title": "Signing Request Components in a Response Message",
+      "alternateIds": [
+        "rfc.section.2.4"
+      ],
+      "number": "2.4"
+    },
+    {
+      "id": "create-sig-input",
+      "href": "https://httpwg.org/specs/rfc9421.html#create-sig-input",
+      "level": 3,
+      "title": "Creating the Signature Base",
+      "alternateIds": [
+        "rfc.section.2.5"
+      ],
+      "number": "2.5"
+    },
+    {
+      "id": "message-signatures",
+      "href": "https://httpwg.org/specs/rfc9421.html#message-signatures",
+      "level": 2,
+      "title": "HTTP Message Signatures",
+      "alternateIds": [
+        "rfc.section.3"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "sign",
+      "href": "https://httpwg.org/specs/rfc9421.html#sign",
+      "level": 3,
+      "title": "Creating a Signature",
+      "alternateIds": [
+        "rfc.section.3.1"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "verify",
+      "href": "https://httpwg.org/specs/rfc9421.html#verify",
+      "level": 3,
+      "title": "Verifying a Signature",
+      "alternateIds": [
+        "rfc.section.3.2"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "verify-requirements",
+      "href": "https://httpwg.org/specs/rfc9421.html#verify-requirements",
+      "level": 4,
+      "title": "Enforcing Application Requirements",
+      "alternateIds": [
+        "rfc.section.3.2.1"
+      ],
+      "number": "3.2.1"
+    },
+    {
+      "id": "signature-methods",
+      "href": "https://httpwg.org/specs/rfc9421.html#signature-methods",
+      "level": 3,
+      "title": "Signature Algorithms",
+      "alternateIds": [
+        "rfc.section.3.3"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "method-rsa-pss-sha512",
+      "href": "https://httpwg.org/specs/rfc9421.html#method-rsa-pss-sha512",
+      "level": 4,
+      "title": "RSASSA-PSS Using SHA-512",
+      "alternateIds": [
+        "rfc.section.3.3.1"
+      ],
+      "number": "3.3.1"
+    },
+    {
+      "id": "method-rsa-v1_5-sha256",
+      "href": "https://httpwg.org/specs/rfc9421.html#method-rsa-v1_5-sha256",
+      "level": 4,
+      "title": "RSASSA-PKCS1-v1_5 Using SHA-256",
+      "alternateIds": [
+        "rfc.section.3.3.2"
+      ],
+      "number": "3.3.2"
+    },
+    {
+      "id": "method-hmac-sha256",
+      "href": "https://httpwg.org/specs/rfc9421.html#method-hmac-sha256",
+      "level": 4,
+      "title": "HMAC Using SHA-256",
+      "alternateIds": [
+        "rfc.section.3.3.3"
+      ],
+      "number": "3.3.3"
+    },
+    {
+      "id": "method-ecdsa-p256-sha256",
+      "href": "https://httpwg.org/specs/rfc9421.html#method-ecdsa-p256-sha256",
+      "level": 4,
+      "title": "ECDSA Using Curve P-256 DSS and SHA-256",
+      "alternateIds": [
+        "rfc.section.3.3.4"
+      ],
+      "number": "3.3.4"
+    },
+    {
+      "id": "method-ecdsa-p384-sha384",
+      "href": "https://httpwg.org/specs/rfc9421.html#method-ecdsa-p384-sha384",
+      "level": 4,
+      "title": "ECDSA Using Curve P-384 DSS and SHA-384",
+      "alternateIds": [
+        "rfc.section.3.3.5"
+      ],
+      "number": "3.3.5"
+    },
+    {
+      "id": "method-ed25519",
+      "href": "https://httpwg.org/specs/rfc9421.html#method-ed25519",
+      "level": 4,
+      "title": "EdDSA Using Curve edwards25519",
+      "alternateIds": [
+        "rfc.section.3.3.6"
+      ],
+      "number": "3.3.6"
+    },
+    {
+      "id": "method-jose",
+      "href": "https://httpwg.org/specs/rfc9421.html#method-jose",
+      "level": 4,
+      "title": "JSON Web Signature (JWS) Algorithms",
+      "alternateIds": [
+        "rfc.section.3.3.7"
+      ],
+      "number": "3.3.7"
+    },
+    {
+      "id": "attach-signature",
+      "href": "https://httpwg.org/specs/rfc9421.html#attach-signature",
+      "level": 2,
+      "title": "Including a Message Signature in a Message",
+      "alternateIds": [
+        "rfc.section.4"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "signature-input-header",
+      "href": "https://httpwg.org/specs/rfc9421.html#signature-input-header",
+      "level": 3,
+      "title": "The Signature-Input HTTP Field",
+      "alternateIds": [
+        "rfc.section.4.1"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "signature-header",
+      "href": "https://httpwg.org/specs/rfc9421.html#signature-header",
+      "level": 3,
+      "title": "The Signature HTTP Field",
+      "alternateIds": [
+        "rfc.section.4.2"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "signature-multiple",
+      "href": "https://httpwg.org/specs/rfc9421.html#signature-multiple",
+      "level": 3,
+      "title": "Multiple Signatures",
+      "alternateIds": [
+        "rfc.section.4.3"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "request-signature",
+      "href": "https://httpwg.org/specs/rfc9421.html#request-signature",
+      "level": 2,
+      "title": "Requesting Signatures",
+      "alternateIds": [
+        "rfc.section.5"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "accept-signature-header",
+      "href": "https://httpwg.org/specs/rfc9421.html#accept-signature-header",
+      "level": 3,
+      "title": "The Accept-Signature Field",
+      "alternateIds": [
+        "rfc.section.5.1"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "processing-an-accept-signature",
+      "href": "https://httpwg.org/specs/rfc9421.html#processing-an-accept-signature",
+      "level": 3,
+      "title": "Processing an Accept-Signature",
+      "alternateIds": [
+        "rfc.section.5.2"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "iana",
+      "href": "https://httpwg.org/specs/rfc9421.html#iana",
+      "level": 2,
+      "title": "IANA Considerations",
+      "alternateIds": [
+        "rfc.section.6"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "http-field-name-registration",
+      "href": "https://httpwg.org/specs/rfc9421.html#http-field-name-registration",
+      "level": 3,
+      "title": "HTTP Field Name Registration",
+      "alternateIds": [
+        "rfc.section.6.1"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "hsa-registry",
+      "href": "https://httpwg.org/specs/rfc9421.html#hsa-registry",
+      "level": 3,
+      "title": "HTTP Signature Algorithms Registry",
+      "alternateIds": [
+        "rfc.section.6.2"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "iana-hsa-template",
+      "href": "https://httpwg.org/specs/rfc9421.html#iana-hsa-template",
+      "level": 4,
+      "title": "Registration Template",
+      "alternateIds": [
+        "rfc.section.6.2.1"
+      ],
+      "number": "6.2.1"
+    },
+    {
+      "id": "iana-hsa-contents",
+      "href": "https://httpwg.org/specs/rfc9421.html#iana-hsa-contents",
+      "level": 4,
+      "title": "Initial Contents",
+      "alternateIds": [
+        "rfc.section.6.2.2"
+      ],
+      "number": "6.2.2"
+    },
+    {
+      "id": "param-registry",
+      "href": "https://httpwg.org/specs/rfc9421.html#param-registry",
+      "level": 3,
+      "title": "HTTP Signature Metadata Parameters Registry",
+      "alternateIds": [
+        "rfc.section.6.3"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "iana-param-template",
+      "href": "https://httpwg.org/specs/rfc9421.html#iana-param-template",
+      "level": 4,
+      "title": "Registration Template",
+      "alternateIds": [
+        "rfc.section.6.3.1"
+      ],
+      "number": "6.3.1"
+    },
+    {
+      "id": "iana-param-contents",
+      "href": "https://httpwg.org/specs/rfc9421.html#iana-param-contents",
+      "level": 4,
+      "title": "Initial Contents",
+      "alternateIds": [
+        "rfc.section.6.3.2"
+      ],
+      "number": "6.3.2"
+    },
+    {
+      "id": "content-registry",
+      "href": "https://httpwg.org/specs/rfc9421.html#content-registry",
+      "level": 3,
+      "title": "HTTP Signature Derived Component Names Registry",
+      "alternateIds": [
+        "rfc.section.6.4"
+      ],
+      "number": "6.4"
+    },
+    {
+      "id": "iana-content-template",
+      "href": "https://httpwg.org/specs/rfc9421.html#iana-content-template",
+      "level": 4,
+      "title": "Registration Template",
+      "alternateIds": [
+        "rfc.section.6.4.1"
+      ],
+      "number": "6.4.1"
+    },
+    {
+      "id": "iana-content-contents",
+      "href": "https://httpwg.org/specs/rfc9421.html#iana-content-contents",
+      "level": 4,
+      "title": "Initial Contents",
+      "alternateIds": [
+        "rfc.section.6.4.2"
+      ],
+      "number": "6.4.2"
+    },
+    {
+      "id": "component-param-registry",
+      "href": "https://httpwg.org/specs/rfc9421.html#component-param-registry",
+      "level": 3,
+      "title": "HTTP Signature Component Parameters Registry",
+      "alternateIds": [
+        "rfc.section.6.5"
+      ],
+      "number": "6.5"
+    },
+    {
+      "id": "iana-component-param-template",
+      "href": "https://httpwg.org/specs/rfc9421.html#iana-component-param-template",
+      "level": 4,
+      "title": "Registration Template",
+      "alternateIds": [
+        "rfc.section.6.5.1"
+      ],
+      "number": "6.5.1"
+    },
+    {
+      "id": "iana-component-param-contents",
+      "href": "https://httpwg.org/specs/rfc9421.html#iana-component-param-contents",
+      "level": 4,
+      "title": "Initial Contents",
+      "alternateIds": [
+        "rfc.section.6.5.2"
+      ],
+      "number": "6.5.2"
+    },
+    {
+      "id": "security",
+      "href": "https://httpwg.org/specs/rfc9421.html#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "rfc.section.7"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "general-considerations",
+      "href": "https://httpwg.org/specs/rfc9421.html#general-considerations",
+      "level": 3,
+      "title": "General Considerations",
+      "alternateIds": [
+        "rfc.section.7.1"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "security-ignore",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-ignore",
+      "level": 4,
+      "title": "Skipping Signature Verification",
+      "alternateIds": [
+        "rfc.section.7.1.1"
+      ],
+      "number": "7.1.1"
+    },
+    {
+      "id": "security-tls",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-tls",
+      "level": 4,
+      "title": "Use of TLS",
+      "alternateIds": [
+        "rfc.section.7.1.2"
+      ],
+      "number": "7.1.2"
+    },
+    {
+      "id": "message-processing-and-selection",
+      "href": "https://httpwg.org/specs/rfc9421.html#message-processing-and-selection",
+      "level": 3,
+      "title": "Message Processing and Selection",
+      "alternateIds": [
+        "rfc.section.7.2"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "security-coverage",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-coverage",
+      "level": 4,
+      "title": "Insufficient Coverage",
+      "alternateIds": [
+        "rfc.section.7.2.1"
+      ],
+      "number": "7.2.1"
+    },
+    {
+      "id": "security-replay",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-replay",
+      "level": 4,
+      "title": "Signature Replay",
+      "alternateIds": [
+        "rfc.section.7.2.2"
+      ],
+      "number": "7.2.2"
+    },
+    {
+      "id": "security-components",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-components",
+      "level": 4,
+      "title": "Choosing Message Components",
+      "alternateIds": [
+        "rfc.section.7.2.3"
+      ],
+      "number": "7.2.3"
+    },
+    {
+      "id": "security-not-fields",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-not-fields",
+      "level": 4,
+      "title": "Choosing Signature Parameters and Derived Components over HTTP Fields",
+      "alternateIds": [
+        "rfc.section.7.2.4"
+      ],
+      "number": "7.2.4"
+    },
+    {
+      "id": "security-labels",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-labels",
+      "level": 4,
+      "title": "Signature Labels",
+      "alternateIds": [
+        "rfc.section.7.2.5"
+      ],
+      "number": "7.2.5"
+    },
+    {
+      "id": "security-multiple",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-multiple",
+      "level": 4,
+      "title": "Multiple Signature Confusion",
+      "alternateIds": [
+        "rfc.section.7.2.6"
+      ],
+      "number": "7.2.6"
+    },
+    {
+      "id": "security-signature-tag",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-signature-tag",
+      "level": 4,
+      "title": "Collision of Application-Specific Signature Tag",
+      "alternateIds": [
+        "rfc.section.7.2.7"
+      ],
+      "number": "7.2.7"
+    },
+    {
+      "id": "security-message-content",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-message-content",
+      "level": 4,
+      "title": "Message Content",
+      "alternateIds": [
+        "rfc.section.7.2.8"
+      ],
+      "number": "7.2.8"
+    },
+    {
+      "id": "cryptographic-considerations",
+      "href": "https://httpwg.org/specs/rfc9421.html#cryptographic-considerations",
+      "level": 3,
+      "title": "Cryptographic Considerations",
+      "alternateIds": [
+        "rfc.section.7.3"
+      ],
+      "number": "7.3"
+    },
+    {
+      "id": "security-collision",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-collision",
+      "level": 4,
+      "title": "Cryptography and Signature Collision",
+      "alternateIds": [
+        "rfc.section.7.3.1"
+      ],
+      "number": "7.3.1"
+    },
+    {
+      "id": "security-keys",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-keys",
+      "level": 4,
+      "title": "Key Theft",
+      "alternateIds": [
+        "rfc.section.7.3.2"
+      ],
+      "number": "7.3.2"
+    },
+    {
+      "id": "security-symmetric",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-symmetric",
+      "level": 4,
+      "title": "Symmetric Cryptography",
+      "alternateIds": [
+        "rfc.section.7.3.3"
+      ],
+      "number": "7.3.3"
+    },
+    {
+      "id": "security-keymixup",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-keymixup",
+      "level": 4,
+      "title": "Key Specification Mixup",
+      "alternateIds": [
+        "rfc.section.7.3.4"
+      ],
+      "number": "7.3.4"
+    },
+    {
+      "id": "security-nondeterministic",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-nondeterministic",
+      "level": 4,
+      "title": "Non-deterministic Signature Primitives",
+      "alternateIds": [
+        "rfc.section.7.3.5"
+      ],
+      "number": "7.3.5"
+    },
+    {
+      "id": "security-keydowngrade",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-keydowngrade",
+      "level": 4,
+      "title": "Key and Algorithm Specification Downgrades",
+      "alternateIds": [
+        "rfc.section.7.3.6"
+      ],
+      "number": "7.3.6"
+    },
+    {
+      "id": "security-sign-signature",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-sign-signature",
+      "level": 4,
+      "title": "Signing Signature Values",
+      "alternateIds": [
+        "rfc.section.7.3.7"
+      ],
+      "number": "7.3.7"
+    },
+    {
+      "id": "matching-covered-components-to-message",
+      "href": "https://httpwg.org/specs/rfc9421.html#matching-covered-components-to-message",
+      "level": 3,
+      "title": "Matching Signature Parameters to the Target Message",
+      "alternateIds": [
+        "rfc.section.7.4"
+      ],
+      "number": "7.4"
+    },
+    {
+      "id": "security-modify",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-modify",
+      "level": 4,
+      "title": "Modification of Required Message Parameters",
+      "alternateIds": [
+        "rfc.section.7.4.1"
+      ],
+      "number": "7.4.1"
+    },
+    {
+      "id": "security-mismatch",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-mismatch",
+      "level": 4,
+      "title": "Matching Values of Covered Components to Values in the Target Message",
+      "alternateIds": [
+        "rfc.section.7.4.2"
+      ],
+      "number": "7.4.2"
+    },
+    {
+      "id": "security-message-component-context",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-message-component-context",
+      "level": 4,
+      "title": "Message Component Source and Context",
+      "alternateIds": [
+        "rfc.section.7.4.3"
+      ],
+      "number": "7.4.3"
+    },
+    {
+      "id": "security-context-multiple-signatures",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-context-multiple-signatures",
+      "level": 4,
+      "title": "Multiple Message Component Contexts",
+      "alternateIds": [
+        "rfc.section.7.4.4"
+      ],
+      "number": "7.4.4"
+    },
+    {
+      "id": "http-processing",
+      "href": "https://httpwg.org/specs/rfc9421.html#http-processing",
+      "level": 3,
+      "title": "HTTP Processing",
+      "alternateIds": [
+        "rfc.section.7.5"
+      ],
+      "number": "7.5"
+    },
+    {
+      "id": "security-lazy-header-parser",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-lazy-header-parser",
+      "level": 4,
+      "title": "Processing Invalid HTTP Field Names as Derived Component Names",
+      "alternateIds": [
+        "rfc.section.7.5.1"
+      ],
+      "number": "7.5.1"
+    },
+    {
+      "id": "security-field-values",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-field-values",
+      "level": 4,
+      "title": "Semantically Equivalent Field Values",
+      "alternateIds": [
+        "rfc.section.7.5.2"
+      ],
+      "number": "7.5.2"
+    },
+    {
+      "id": "security-structured",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-structured",
+      "level": 4,
+      "title": "Parsing Structured Field Values",
+      "alternateIds": [
+        "rfc.section.7.5.3"
+      ],
+      "number": "7.5.3"
+    },
+    {
+      "id": "security-versions",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-versions",
+      "level": 4,
+      "title": "HTTP Versions and Component Ambiguity",
+      "alternateIds": [
+        "rfc.section.7.5.4"
+      ],
+      "number": "7.5.4"
+    },
+    {
+      "id": "security-canonicalization",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-canonicalization",
+      "level": 4,
+      "title": "Canonicalization Attacks",
+      "alternateIds": [
+        "rfc.section.7.5.5"
+      ],
+      "number": "7.5.5"
+    },
+    {
+      "id": "security-non-list",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-non-list",
+      "level": 4,
+      "title": "Non-List Field Values",
+      "alternateIds": [
+        "rfc.section.7.5.6"
+      ],
+      "number": "7.5.6"
+    },
+    {
+      "id": "security-multiple-fields",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-multiple-fields",
+      "level": 4,
+      "title": "Padding Attacks with Multiple Field Values",
+      "alternateIds": [
+        "rfc.section.7.5.7"
+      ],
+      "number": "7.5.7"
+    },
+    {
+      "id": "security-query-elements",
+      "href": "https://httpwg.org/specs/rfc9421.html#security-query-elements",
+      "level": 4,
+      "title": "Ambiguous Handling of Query Elements",
+      "alternateIds": [
+        "rfc.section.7.5.8"
+      ],
+      "number": "7.5.8"
+    },
+    {
+      "id": "privacy",
+      "href": "https://httpwg.org/specs/rfc9421.html#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "rfc.section.8"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "privacy-identify-keys",
+      "href": "https://httpwg.org/specs/rfc9421.html#privacy-identify-keys",
+      "level": 3,
+      "title": "Identification through Keys",
+      "alternateIds": [
+        "rfc.section.8.1"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "privacy-confidentiality",
+      "href": "https://httpwg.org/specs/rfc9421.html#privacy-confidentiality",
+      "level": 3,
+      "title": "Signatures do not provide confidentiality",
+      "alternateIds": [
+        "rfc.section.8.2"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "privacy-oracle",
+      "href": "https://httpwg.org/specs/rfc9421.html#privacy-oracle",
+      "level": 3,
+      "title": "Oracles",
+      "alternateIds": [
+        "rfc.section.8.3"
+      ],
+      "number": "8.3"
+    },
+    {
+      "id": "privacy-required",
+      "href": "https://httpwg.org/specs/rfc9421.html#privacy-required",
+      "level": 3,
+      "title": "Required Content",
+      "alternateIds": [
+        "rfc.section.8.4"
+      ],
+      "number": "8.4"
+    },
+    {
+      "id": "rfc.section.9",
+      "href": "https://httpwg.org/specs/rfc9421.html#rfc.section.9",
+      "level": 2,
+      "title": "References",
+      "number": "9"
+    },
+    {
+      "id": "rfc.section.9.1",
+      "href": "https://httpwg.org/specs/rfc9421.html#rfc.section.9.1",
+      "level": 3,
+      "title": "Normative References",
+      "number": "9.1"
+    },
+    {
+      "id": "rfc.section.9.2",
+      "href": "https://httpwg.org/specs/rfc9421.html#rfc.section.9.2",
+      "level": 3,
+      "title": "Informative References",
+      "number": "9.2"
+    },
+    {
+      "id": "detection",
+      "href": "https://httpwg.org/specs/rfc9421.html#detection",
+      "level": 2,
+      "title": "Detecting HTTP Message Signatures",
+      "alternateIds": [
+        "rfc.section.A"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "examples",
+      "href": "https://httpwg.org/specs/rfc9421.html#examples",
+      "level": 2,
+      "title": "Examples",
+      "alternateIds": [
+        "rfc.section.B"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "example-keys",
+      "href": "https://httpwg.org/specs/rfc9421.html#example-keys",
+      "level": 3,
+      "title": "Example Keys",
+      "alternateIds": [
+        "rfc.section.B.1"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "example-key-rsa-test",
+      "href": "https://httpwg.org/specs/rfc9421.html#example-key-rsa-test",
+      "level": 4,
+      "title": "Example RSA Key",
+      "alternateIds": [
+        "rfc.section.B.1.1"
+      ],
+      "number": "B.1.1"
+    },
+    {
+      "id": "example-key-rsa-pss-test",
+      "href": "https://httpwg.org/specs/rfc9421.html#example-key-rsa-pss-test",
+      "level": 4,
+      "title": "Example RSA-PSS Key",
+      "alternateIds": [
+        "rfc.section.B.1.2"
+      ],
+      "number": "B.1.2"
+    },
+    {
+      "id": "example-key-ecc-p256",
+      "href": "https://httpwg.org/specs/rfc9421.html#example-key-ecc-p256",
+      "level": 4,
+      "title": "Example ECC P-256 Test Key",
+      "alternateIds": [
+        "rfc.section.B.1.3"
+      ],
+      "number": "B.1.3"
+    },
+    {
+      "id": "example-key-ed25519",
+      "href": "https://httpwg.org/specs/rfc9421.html#example-key-ed25519",
+      "level": 4,
+      "title": "Example Ed25519 Test Key",
+      "alternateIds": [
+        "rfc.section.B.1.4"
+      ],
+      "number": "B.1.4"
+    },
+    {
+      "id": "example-shared-secret",
+      "href": "https://httpwg.org/specs/rfc9421.html#example-shared-secret",
+      "level": 4,
+      "title": "Example Shared Secret",
+      "alternateIds": [
+        "rfc.section.B.1.5"
+      ],
+      "number": "B.1.5"
+    },
+    {
+      "id": "test-cases",
+      "href": "https://httpwg.org/specs/rfc9421.html#test-cases",
+      "level": 3,
+      "title": "Test Cases",
+      "alternateIds": [
+        "rfc.section.B.2"
+      ],
+      "number": "B.2"
+    },
+    {
+      "id": "minimal-signature-using-rsa-pss-sha512",
+      "href": "https://httpwg.org/specs/rfc9421.html#minimal-signature-using-rsa-pss-sha512",
+      "level": 4,
+      "title": "Minimal Signature Using rsa-pss-sha512",
+      "alternateIds": [
+        "rfc.section.B.2.1"
+      ],
+      "number": "B.2.1"
+    },
+    {
+      "id": "selective-covered-components-using-rsa-pss-sha512",
+      "href": "https://httpwg.org/specs/rfc9421.html#selective-covered-components-using-rsa-pss-sha512",
+      "level": 4,
+      "title": "Selective Covered Components Using rsa-pss-sha512",
+      "alternateIds": [
+        "rfc.section.B.2.2"
+      ],
+      "number": "B.2.2"
+    },
+    {
+      "id": "full-coverage-using-rsa-pss-sha512",
+      "href": "https://httpwg.org/specs/rfc9421.html#full-coverage-using-rsa-pss-sha512",
+      "level": 4,
+      "title": "Full Coverage Using rsa-pss-sha512",
+      "alternateIds": [
+        "rfc.section.B.2.3"
+      ],
+      "number": "B.2.3"
+    },
+    {
+      "id": "signing-a-response-using-ecdsa-p256-sha256",
+      "href": "https://httpwg.org/specs/rfc9421.html#signing-a-response-using-ecdsa-p256-sha256",
+      "level": 4,
+      "title": "Signing a Response Using ecdsa-p256-sha256",
+      "alternateIds": [
+        "rfc.section.B.2.4"
+      ],
+      "number": "B.2.4"
+    },
+    {
+      "id": "signing-a-request-using-hmac-sha256",
+      "href": "https://httpwg.org/specs/rfc9421.html#signing-a-request-using-hmac-sha256",
+      "level": 4,
+      "title": "Signing a Request Using hmac-sha256",
+      "alternateIds": [
+        "rfc.section.B.2.5"
+      ],
+      "number": "B.2.5"
+    },
+    {
+      "id": "signing-a-request-using-ed25519",
+      "href": "https://httpwg.org/specs/rfc9421.html#signing-a-request-using-ed25519",
+      "level": 4,
+      "title": "Signing a Request Using ed25519",
+      "alternateIds": [
+        "rfc.section.B.2.6"
+      ],
+      "number": "B.2.6"
+    },
+    {
+      "id": "tls-terminating-proxies",
+      "href": "https://httpwg.org/specs/rfc9421.html#tls-terminating-proxies",
+      "level": 3,
+      "title": "TLS-Terminating Proxies",
+      "alternateIds": [
+        "rfc.section.B.3"
+      ],
+      "number": "B.3"
+    },
+    {
+      "id": "example-transform",
+      "href": "https://httpwg.org/specs/rfc9421.html#example-transform",
+      "level": 3,
+      "title": "HTTP Message Transformations",
+      "alternateIds": [
+        "rfc.section.B.4"
+      ],
+      "number": "B.4"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://httpwg.org/specs/rfc9421.html#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "rfc.section.unnumbered-4"
+      ]
+    }
+  ]
+}

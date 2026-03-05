@@ -28,7 +28,7 @@ dictionary ModelContextTool {
 };
 
 dictionary ToolAnnotations {
-  boolean readOnlyHint;
+  boolean readOnlyHint = false;
 };
 
 callback ToolExecuteCallback = Promise<any> (object input, ModelContextClient client);

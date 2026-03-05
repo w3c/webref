@@ -3854,10 +3854,13 @@
           "html": "<p>If <var>module</var> is <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-error\" id=\"ref-for-embed-error①⑨\">error</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webassembly.github.io/esm-integration/js-api/#exceptiondef-compileerror\" id=\"ref-for-exceptiondef-compileerror⑥\">CompileError</a></code> exception.</p>"
         },
         {
-          "html": ""
+          "html": "<p>Let <var>builtinSetNames</var> be « \"js-string\" ».</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#construct-a-webassembly-module-object\" id=\"ref-for-construct-a-webassembly-module-object①\">Construct a WebAssembly module object</a> from <var>module</var> and <var>bytes</var>, and let <var>module</var> be the result.</p>"
+          "html": "<p>Let <var>importedStringModule</var> be \"wasm:js/string-constants\".</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#construct-a-webassembly-module-object\" id=\"ref-for-construct-a-webassembly-module-object①\">Construct a WebAssembly module object</a> from <var>module</var>, <var>bytes</var>, <var>builtinSetNames</var> and <var>importedStringModule</var>, and let <var>module</var> be the result.</p>"
         },
         {
           "html": "<p>Let <var>requestedModules</var> be a set.</p>"
@@ -4037,9 +4040,6 @@
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> (<var>importedModuleName</var>, <var>name</var>, <var>importtype</var>) in <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/core/appendix/embedding.html#embed-module-imports\" id=\"ref-for-embed-module-imports⑤\">module_imports</a>(<var>module</var>),",
           "rationale": "if",
           "steps": [
-            {
-              "html": ""
-            },
             {
               "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webassembly.github.io/esm-integration/js-api/#find-a-builtin\" id=\"ref-for-find-a-builtin③\">Find a builtin</a> with (<var>importedModuleName</var>, <var>name</var>) and builtins <var>module</var>.[[BuiltinSets]] is not null, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑥\">continue</a>.</p>"
             },

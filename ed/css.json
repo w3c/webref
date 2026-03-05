@@ -563,6 +563,12 @@
       "extended": []
     },
     {
+      "name": "@macro",
+      "href": "https://drafts.csswg.org/css-mixins-1/#macro-rule",
+      "descriptors": [],
+      "extended": []
+    },
+    {
       "name": "@media",
       "prose": "The @media rule is a conditional group rule whose condition is a media query. Its syntax is:",
       "href": "https://drafts.csswg.org/css-conditional-3/#at-ruledef-media",
@@ -855,7 +861,7 @@
       "name": "@mixin",
       "href": "https://drafts.csswg.org/css-mixins-1/#at-ruledef-mixin",
       "descriptors": [],
-      "syntax": "@mixin <function-token> <function-parameter>#? ) { <declaration-rule-list> }",
+      "syntax": "@mixin <function-token> <function-parameter>#? ) { <declaration-rule-list> } | @mixin <dashed-ident> { <declaration-rule-list> }",
       "extended": []
     },
     {
@@ -3637,6 +3643,23 @@
       "extended": []
     },
     {
+      "name": "animation-trigger",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-animation-trigger",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "animation-trigger",
+        "animationTrigger"
+      ],
+      "syntax": "[ none | [ <dashed-ident> <animation-action>+ ]+ ]#",
+      "extended": []
+    },
+    {
       "name": "appearance",
       "href": "https://drafts.csswg.org/css-ui-4/#propdef-appearance",
       "initial": "none",
@@ -6390,7 +6413,7 @@
         "column-gap",
         "columnGap"
       ],
-      "syntax": "normal | <length-percentage [0,∞]>",
+      "syntax": "normal | <length-percentage [0,∞]> | <line-width>",
       "extended": []
     },
     {
@@ -7947,6 +7970,57 @@
       "extended": []
     },
     {
+      "name": "event-trigger",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-event-trigger",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "animationType": "not animatable",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "event-trigger",
+        "eventTrigger"
+      ],
+      "syntax": "none | [ <'event-trigger-name'> <'event-trigger-source'> ]#",
+      "extended": []
+    },
+    {
+      "name": "event-trigger-name",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-event-trigger-name",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "event-trigger-name",
+        "eventTriggerName"
+      ],
+      "syntax": "none | <dashed-ident>#",
+      "extended": []
+    },
+    {
+      "name": "event-trigger-source",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-event-trigger-source",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "event-trigger-source",
+        "eventTriggerSource"
+      ],
+      "syntax": "[ none | <event-trigger-event>+ [ / <event-trigger-event>+ ]? ]#",
+      "extended": []
+    },
+    {
       "name": "field-sizing",
       "href": "https://drafts.csswg.org/css-forms-1/#propdef-field-sizing",
       "initial": "fixed",
@@ -9150,7 +9224,7 @@
         "grid-column-gap",
         "gridColumnGap"
       ],
-      "syntax": "normal | <length-percentage [0,∞]>",
+      "syntax": "normal | <length-percentage [0,∞]> | <line-width>",
       "extended": []
     },
     {
@@ -9231,7 +9305,7 @@
         "grid-row-gap",
         "gridRowGap"
       ],
-      "syntax": "normal | <length-percentage [0,∞]>",
+      "syntax": "normal | <length-percentage [0,∞]> | <line-width>",
       "extended": []
     },
     {
@@ -9460,6 +9534,23 @@
         "hyphens"
       ],
       "syntax": "none | manual | auto",
+      "extended": []
+    },
+    {
+      "name": "image-animation",
+      "href": "https://drafts.csswg.org/css-image-animation-1/#propdef-image-animation",
+      "initial": "normal",
+      "appliesTo": "content images and elements with decorative images",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "image-animation",
+        "imageAnimation"
+      ],
+      "syntax": "normal | paused | running",
       "extended": []
     },
     {
@@ -12799,7 +12890,7 @@
         "row-gap",
         "rowGap"
       ],
-      "syntax": "normal | <length-percentage [0,∞]>",
+      "syntax": "normal | <length-percentage [0,∞]> | <line-width>",
       "extended": []
     },
     {
@@ -15106,7 +15197,7 @@
         "text-decoration-thickness",
         "textDecorationThickness"
       ],
-      "syntax": "auto | from-font | <length-percentage>",
+      "syntax": "auto | from-font | <length-percentage> | <line-width>",
       "extended": []
     },
     {
@@ -15496,6 +15587,173 @@
       "extended": []
     },
     {
+      "name": "timeline-trigger",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-timeline-trigger",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "timeline-trigger",
+        "timelineTrigger"
+      ],
+      "longhands": [
+        "timeline-trigger-name",
+        "timeline-trigger-source",
+        "timeline-trigger-activation-range",
+        "timeline-trigger-active-range"
+      ],
+      "syntax": "none | [ <'timeline-trigger-name'> <'timeline-trigger-source'> <'timeline-trigger-activation-range'> [ '/' <'timeline-trigger-active-range'> ]? ]#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-activation-range",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-timeline-trigger-activation-range",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "timeline-trigger-activation-range",
+        "timelineTriggerActivationRange"
+      ],
+      "longhands": [
+        "timeline-trigger-activation-range-start",
+        "timeline-trigger-activation-range-end"
+      ],
+      "syntax": "[ <'timeline-trigger-activation-range-start'> <'timeline-trigger-activation-range-end'>? ]#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-activation-range-end",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-timeline-trigger-activation-range-end",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
+      "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "timeline-trigger-activation-range-end",
+        "timelineTriggerActivationRangeEnd"
+      ],
+      "syntax": "[ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-activation-range-start",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-timeline-trigger-activation-range-start",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
+      "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "timeline-trigger-activation-range-start",
+        "timelineTriggerActivationRangeStart"
+      ],
+      "syntax": "[ normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-active-range",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-timeline-trigger-active-range",
+      "initial": "see individual properties",
+      "appliesTo": "see individual properties",
+      "inherited": "see individual properties",
+      "percentages": "see individual properties",
+      "computedValue": "see individual properties",
+      "animationType": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "timeline-trigger-active-range",
+        "timelineTriggerActiveRange"
+      ],
+      "longhands": [
+        "timeline-trigger-active-range-start",
+        "timeline-trigger-active-range-end"
+      ],
+      "syntax": "[ <'timeline-trigger-active-range-start'> <'timeline-trigger-active-range-end'>? ]#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-active-range-end",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-timeline-trigger-active-range-end",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
+      "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "timeline-trigger-active-range-end",
+        "timelineTriggerActiveRangeEnd"
+      ],
+      "syntax": "[ auto | normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-active-range-start",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-timeline-trigger-active-range-start",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "relative to the specified named timeline range if one was specified, else to the entire timeline",
+      "computedValue": "list, each item either the keyword normal or a timeline range and progress percentage",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "timeline-trigger-active-range-start",
+        "timelineTriggerActiveRangeStart"
+      ],
+      "syntax": "[ auto | normal | <length-percentage> | <timeline-range-name> <length-percentage>? ]#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-name",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-timeline-trigger-name",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "timeline-trigger-name",
+        "timelineTriggerName"
+      ],
+      "syntax": "none | <dashed-ident>#",
+      "extended": []
+    },
+    {
+      "name": "timeline-trigger-source",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-timeline-trigger-source",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "list, each item either the keyword none, the keyword auto, a case-sensitive css identifier, a computed scroll() function, or a computed view() function",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "timeline-trigger-source",
+        "timelineTriggerSource"
+      ],
+      "syntax": "<single-animation-timeline>#",
+      "extended": []
+    },
+    {
       "name": "top",
       "href": "https://drafts.csswg.org/css-position-3/#propdef-top",
       "initial": "auto",
@@ -15722,6 +15980,23 @@
         "translate"
       ],
       "syntax": "none | <length-percentage> [ <length-percentage> <length>? ]?",
+      "extended": []
+    },
+    {
+      "name": "trigger-scope",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#propdef-trigger-scope",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "not animatable",
+      "styleDeclaration": [
+        "trigger-scope",
+        "triggerScope"
+      ],
+      "syntax": "none | all | <dashed-ident>#",
       "extended": []
     },
     {
@@ -16782,6 +17057,13 @@
       "extended": []
     },
     {
+      "name": ":animated-image",
+      "prose": "The :animated-image pseudo-class represents content image elements where a animated image has been loaded. For the animated-image pseudo-class to match, the image must not only be in a format that is capable of animation, but must also be an actually animated image.",
+      "href": "https://drafts.csswg.org/css-image-animation-1/#selectordef-animated-image",
+      "syntax": ":animated-image",
+      "extended": []
+    },
+    {
       "name": ":any-link",
       "prose": "The :any-link pseudo-class represents an element that acts as the source anchor of a hyperlink. For example, in [HTML5], any a or area elements with an href attribute are hyperlinks, and thus match :any-link. It matches an element if the element would match either :link or :visited, and is equivalent to :is(:link, :visited).",
       "href": "https://drafts.csswg.org/selectors-4/#any-link-pseudo",
@@ -17625,6 +17907,12 @@
       "name": "animateable-feature",
       "href": "https://drafts.csswg.org/css-will-change-1/#typedef-animateable-feature",
       "syntax": "scroll-position | contents | <custom-ident>",
+      "extended": []
+    },
+    {
+      "name": "animation-action",
+      "prose": "The possible <animation-action> values, and what effect they have in each animation state:",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#typedef-animation-action",
       "extended": []
     },
     {
@@ -18510,6 +18798,12 @@
       "extended": []
     },
     {
+      "name": "event-trigger-event",
+      "href": "https://drafts.csswg.org/animation-triggers-1/#typedef-event-trigger-event",
+      "syntax": "activate | interest | click | touch | dblclick | keypress(<string>) | ...",
+      "extended": []
+    },
+    {
       "name": "explicit-track-list",
       "href": "https://drafts.csswg.org/css-grid-2/#typedef-explicit-track-list",
       "syntax": "[ <line-names>? <track-size> ]+ <line-names>?",
@@ -19156,7 +19450,7 @@
     {
       "name": "line-width",
       "href": "https://drafts.csswg.org/css-borders-4/#typedef-line-width",
-      "syntax": "<length [0,∞]> | thin | medium | thick",
+      "syntax": "<length [0,∞]> | hairline | thin | medium | thick",
       "extended": []
     },
     {

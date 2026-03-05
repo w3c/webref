@@ -115,7 +115,7 @@
     {
       "name": "text-decoration-thickness",
       "href": "https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration-thickness",
-      "value": "auto | from-font | <length-percentage>",
+      "value": "auto | from-font | <length-percentage> | <line-width>",
       "initial": "auto",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -144,6 +144,13 @@
           "href": "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-thickness-length-percentage",
           "type": "value",
           "value": "<length-percentage>"
+        },
+        {
+          "name": "<line-width>",
+          "prose": "A length value specifies the thickness of text decoration lines as a fixed length. A percentage value specifies the thickness of text decoration lines as a percentage of 1em. The UA should round the actual value to the nearest integer device pixel, and ensure it is at least one device pixel.",
+          "href": "https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-thickness-line-width",
+          "type": "value",
+          "value": "<line-width>"
         }
       ],
       "styleDeclaration": [

@@ -1,0 +1,57 @@
+{
+  "spec": {
+    "title": "CSS Image Animation",
+    "url": "https://drafts.csswg.org/css-image-animation-1/"
+  },
+  "properties": [
+    {
+      "name": "image-animation",
+      "href": "https://drafts.csswg.org/css-image-animation-1/#propdef-image-animation",
+      "value": "normal | paused | running",
+      "initial": "normal",
+      "appliesTo": "content images and elements with decorative images",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "The animation of animated images is run normally, as determined by the image format and the host language. Further, all animated images with the same absolute URL, the same image data, and with an image-animation computed value of normal' must be rendered synchronized to the same timeline as a group, with the timeline starting at the time of the least recent addition to the group.",
+          "href": "https://drafts.csswg.org/css-image-animation-1/#valdef-image-animation-normal",
+          "type": "value",
+          "value": "normal"
+        },
+        {
+          "name": "paused",
+          "prose": "Animated images are rendered as if they were static images: the user agent must not run any animation it contains.",
+          "href": "https://drafts.csswg.org/css-image-animation-1/#valdef-image-animation-paused",
+          "type": "value",
+          "value": "paused"
+        },
+        {
+          "name": "running",
+          "prose": "Like normal, the animation of animated images is run normally, as determined by the image format and the host language, However, animation timelines are scoped per element: among the content image and decorative images of a single element, any animated images with the same absolute URL, the same image data, and with an image-animation computed value of running must be rendered synchronized to the same timeline as a group, distinct from the timeline of images in other elements, with the timeline starting at the time of the least recent addition to the group.",
+          "href": "https://drafts.csswg.org/css-image-animation-1/#valdef-image-animation-running",
+          "type": "value",
+          "value": "running"
+        }
+      ],
+      "styleDeclaration": [
+        "image-animation",
+        "imageAnimation"
+      ]
+    }
+  ],
+  "atrules": [],
+  "selectors": [
+    {
+      "name": ":animated-image",
+      "prose": "The :animated-image pseudo-class represents content image elements where a animated image has been loaded. For the animated-image pseudo-class to match, the image must not only be in a format that is capable of animation, but must also be an actually animated image.",
+      "href": "https://drafts.csswg.org/css-image-animation-1/#selectordef-animated-image",
+      "value": ":animated-image"
+    }
+  ],
+  "values": []
+}

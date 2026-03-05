@@ -3,19 +3,26 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "The HTML Permission Elements",
-      "url": "https://wicg.github.io/PEPC/permission-elements.html"
+      "title": "The HTML Geolocation Element",
+      "url": "https://wicg.github.io/PEPC/geolocation-element.html"
     },
     "fragment": "[Exposed=Window]\ninterface HTMLGeolocationElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute GeolocationPosition? position;\n  readonly attribute GeolocationPositionError? error;\n  [CEReactions, Reflect] attribute boolean autolocate;\n  [CEReactions, Reflect] attribute boolean watch;\n\n  attribute EventHandler onlocation;\n};",
-    "href": "https://wicg.github.io/PEPC/permission-elements.html#htmlgeolocationelement"
+    "href": "https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement"
   },
   "extended": [
     {
       "spec": {
-        "title": "The HTML Permission Elements",
-        "url": "https://wicg.github.io/PEPC/permission-elements.html"
+        "title": "The HTML Geolocation Element",
+        "url": "https://wicg.github.io/PEPC/geolocation-element.html"
       },
-      "fragment": "HTMLGeolocationElement includes InPagePermissionMixin;"
+      "fragment": "HTMLGeolocationElement includes ActivationBlockersMixin;"
+    },
+    {
+      "spec": {
+        "title": "The HTML Geolocation Element",
+        "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+      },
+      "fragment": "HTMLGeolocationElement includes PowerfulFeatureObserver;"
     }
   ],
   "inheritance": {
@@ -539,15 +546,30 @@
   },
   "includes": [
     {
-      "name": "InPagePermissionMixin",
+      "name": "ActivationBlockersMixin",
       "type": "interface mixin",
       "defined": {
         "spec": {
-          "title": "The HTML Permission Elements",
-          "url": "https://wicg.github.io/PEPC/permission-elements.html"
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
         },
-        "fragment": "interface mixin InPagePermissionMixin {\n  readonly attribute boolean isValid;\n  readonly attribute InPagePermissionMixinBlockerReason invalidReason;\n  readonly attribute PermissionState initialPermissionStatus;\n  readonly attribute PermissionState permissionStatus;\n\n  attribute EventHandler onpromptaction;\n  attribute EventHandler onpromptdismiss;\n  attribute EventHandler onvalidationstatuschange;\n};",
-        "href": "https://wicg.github.io/PEPC/permission-elements.html#inpagepermissionmixin"
+        "fragment": "interface mixin ActivationBlockersMixin {\n  readonly attribute boolean isValid;\n  readonly attribute ActivationBlockersMixinBlockerReason invalidReason;\n  attribute EventHandler onvalidationstatuschange;\n};",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "PowerfulFeatureObserver",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "The HTML Geolocation Element",
+          "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+        },
+        "fragment": "interface mixin PowerfulFeatureObserver {\n  readonly attribute PermissionState initialPermissionStatus;\n  readonly attribute PermissionState permissionStatus;\n  attribute EventHandler onpromptaction;\n  attribute EventHandler onpromptdismiss;\n};",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver"
       },
       "extended": [],
       "inheritance": null,

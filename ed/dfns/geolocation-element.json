@@ -1,0 +1,1551 @@
+{
+  "spec": {
+    "title": "The HTML Geolocation Element",
+    "url": "https://wicg.github.io/PEPC/geolocation-element.html"
+  },
+  "dfns": [
+    {
+      "id": "elementdef-geolocation",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#elementdef-geolocation",
+      "linkingText": [
+        "geolocation"
+      ],
+      "localLinkingText": [],
+      "type": "element",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "2"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "element-attrdef-geolocation-autolocate",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#element-attrdef-geolocation-autolocate",
+      "linkingText": [
+        "autolocate"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "geolocation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "element-attrdef-geolocation-watch",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#element-attrdef-geolocation-watch",
+      "linkingText": [
+        "watch"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "geolocation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlgeolocationelement",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement",
+      "linkingText": [
+        "HTMLGeolocationElement"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-position",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-position",
+      "linkingText": [
+        "position"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-error",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-autolocate",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-autolocate",
+      "linkingText": [
+        "autolocate"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-watch",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-watch",
+      "linkingText": [
+        "watch"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-onlocation",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-onlocation",
+      "linkingText": [
+        "onlocation"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-element",
+        "title": "The geolocation Element",
+        "number": "2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-watchids-slot",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-watchids-slot",
+      "linkingText": [
+        "[[watchIDs]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element-internal-state",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-element-internal-state",
+        "title": "geolocation element internal state",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-position-slot",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-position-slot",
+      "linkingText": [
+        "[[position]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element-internal-state",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-element-internal-state",
+        "title": "geolocation element internal state",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-positionerror-slot",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-positionerror-slot",
+      "linkingText": [
+        "[[positionError]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-element-internal-state",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-element-internal-state",
+        "title": "geolocation element internal state",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-navigable-activationblockableelements-slot",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-navigable-activationblockableelements-slot",
+      "linkingText": [
+        "[[ActivationBlockableElements]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "navigable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-navigable-state",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-navigable-state",
+        "title": "Mixin-supporting state at the navigable",
+        "number": "2.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-htmlgeolocationelement-constructor",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-htmlgeolocationelement-constructor",
+      "linkingText": [
+        "HTMLGeolocationElement()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-algorithms",
+        "title": "geolocation element algorithms",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlgeolocationelement-insertion-steps",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-insertion-steps",
+      "linkingText": [
+        "insertion steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-algorithms",
+        "title": "geolocation element algorithms",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlgeolocationelement-maybe-autolocate",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-maybe-autolocate",
+      "linkingText": [
+        "maybe autolocate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-algorithms",
+        "title": "geolocation element algorithms",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlgeolocationelement-fetch-location",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-fetch-location",
+      "linkingText": [
+        "fetch location"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-algorithms",
+        "title": "geolocation element algorithms",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlgeolocationelement-type-permissible",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-type-permissible",
+      "linkingText": [
+        "type permissible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-algorithms",
+        "title": "geolocation element algorithms",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "htmlgeolocationelement-recheck-type-permissibility",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#htmlgeolocationelement-recheck-type-permissibility",
+      "linkingText": [
+        "recheck type permissibility"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLGeolocationElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-algorithms",
+        "title": "geolocation element algorithms",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dispatch-onlocation",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dispatch-onlocation",
+      "linkingText": [
+        "dispatch onlocation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "geolocation-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#geolocation-algorithms",
+        "title": "geolocation element algorithms",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin",
+      "linkingText": [
+        "ActivationBlockersMixin"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers",
+        "title": "Activation Blockers",
+        "number": "3.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixin-onvalidationstatuschange",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-onvalidationstatuschange",
+      "linkingText": [
+        "onvalidationstatuschange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers",
+        "title": "Activation Blockers",
+        "number": "3.1"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin-activationblockersmixin-attributes",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-activationblockersmixin-attributes",
+      "linkingText": [
+        "ActivationBlockersMixin attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers",
+        "title": "Activation Blockers",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixin-blockerlist-slot",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-blockerlist-slot",
+      "linkingText": [
+        "[[BlockerList]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blocker-internal-state",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blocker-internal-state",
+        "title": "Internal state",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin-blocker-timestamp",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker-timestamp",
+      "linkingText": [
+        "blocker timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blocker-internal-state",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blocker-internal-state",
+        "title": "Internal state",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin-blocker-reason",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker-reason",
+      "linkingText": [
+        "blocker reason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blocker-internal-state",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blocker-internal-state",
+        "title": "Internal state",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixin-lastnotifiedvalidstate-slot",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-lastnotifiedvalidstate-slot",
+      "linkingText": [
+        "[[LastNotifiedValidState]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blocker-internal-state",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blocker-internal-state",
+        "title": "Internal state",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixin-lastnotifiedinvalidreason-slot",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-lastnotifiedinvalidreason-slot",
+      "linkingText": [
+        "[[LastNotifiedInvalidReason]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blocker-internal-state",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blocker-internal-state",
+        "title": "Internal state",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixin-intersectionobserver-slot",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-intersectionobserver-slot",
+      "linkingText": [
+        "[[IntersectionObserver]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blocker-internal-state",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blocker-internal-state",
+        "title": "Internal state",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixin-intersectionrect-slot",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-intersectionrect-slot",
+      "linkingText": [
+        "[[IntersectionRect]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blocker-internal-state",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blocker-internal-state",
+        "title": "Internal state",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "enumdef-activationblockersmixinblockerreason",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#enumdef-activationblockersmixinblockerreason",
+      "linkingText": [
+        "ActivationBlockersMixinBlockerReason"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-reason",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+        "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixinblockerreason",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason",
+      "linkingText": [
+        "\"\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ActivationBlockersMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-reason",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+        "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixinblockerreason-illegal_subframe",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-illegal_subframe",
+      "linkingText": [
+        "\"illegal_subframe\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ActivationBlockersMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-reason",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+        "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixinblockerreason-unsuccessful_registration",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-unsuccessful_registration",
+      "linkingText": [
+        "\"unsuccessful_registration\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ActivationBlockersMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-reason",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+        "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixinblockerreason-recently_attached",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-recently_attached",
+      "linkingText": [
+        "\"recently_attached\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ActivationBlockersMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-reason",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+        "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixinblockerreason-intersection_changed",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-intersection_changed",
+      "linkingText": [
+        "\"intersection_changed\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ActivationBlockersMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-reason",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+        "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixinblockerreason-intersection_out_of_viewport_or_clipped",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-intersection_out_of_viewport_or_clipped",
+      "linkingText": [
+        "\"intersection_out_of_viewport_or_clipped\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ActivationBlockersMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-reason",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+        "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixinblockerreason-intersection_occluded_or_distorted",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-intersection_occluded_or_distorted",
+      "linkingText": [
+        "\"intersection_occluded_or_distorted\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ActivationBlockersMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-reason",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+        "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixinblockerreason-style_invalid",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-style_invalid",
+      "linkingText": [
+        "\"style_invalid\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ActivationBlockersMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-reason",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+        "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixinblockerreason-type_invalid",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixinblockerreason-type_invalid",
+      "linkingText": [
+        "\"type_invalid\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ActivationBlockersMixinBlockerReason"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-reason",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+        "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+        "number": "3.1.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "permanent-blocker",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#permanent-blocker",
+      "linkingText": [
+        "Permanent blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-reason",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+        "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "temporary-blocker",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#temporary-blocker",
+      "linkingText": [
+        "Temporary blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-reason",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+        "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "expiring-blocker",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#expiring-blocker",
+      "linkingText": [
+        "Expiring blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-reason",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+        "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+        "number": "3.1.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "blocker-reason-table",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#blocker-reason-table",
+      "linkingText": [
+        "blocker reason table"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-reason",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-reason",
+        "title": "Action Blockers, Blocker Reasons, and Blocker Lifetimes",
+        "number": "3.1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin-add-a-blocker",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-a-blocker",
+      "linkingText": [
+        "add a blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-algorithms",
+        "title": "Algorithms",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin-blocker-delay",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker-delay",
+      "linkingText": [
+        "blocker delay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-algorithms",
+        "title": "Algorithms",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin-add-an-expiring-blocker",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-an-expiring-blocker",
+      "linkingText": [
+        "add an expiring blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-algorithms",
+        "title": "Algorithms",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin-add-a-temporary-blocker",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-a-temporary-blocker",
+      "linkingText": [
+        "add a temporary blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-algorithms",
+        "title": "Algorithms",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin-add-a-permanent-blocker",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-add-a-permanent-blocker",
+      "linkingText": [
+        "add a permanent blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-algorithms",
+        "title": "Algorithms",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin-remove-blockers",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-remove-blockers",
+      "linkingText": [
+        "remove blockers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-algorithms",
+        "title": "Algorithms",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin-blocker",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker",
+      "linkingText": [
+        "blocker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-algorithms",
+        "title": "Algorithms",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin-blocker-ordering",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocker-ordering",
+      "linkingText": [
+        "blocker ordering"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-algorithms",
+        "title": "Algorithms",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin-blocking",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-blocking",
+      "linkingText": [
+        "blocking"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-algorithms",
+        "title": "Algorithms",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixin-isvalid",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-isvalid",
+      "linkingText": [
+        "isValid"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-algorithms",
+        "title": "Algorithms",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-activationblockersmixin-invalidreason",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-activationblockersmixin-invalidreason",
+      "linkingText": [
+        "invalidReason"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-algorithms",
+        "title": "Algorithms",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin-maybe-dispatch-onvalidstatechange",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-maybe-dispatch-onvalidstatechange",
+      "linkingText": [
+        "maybe dispatch onvalidstatechange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-algorithms",
+        "title": "Algorithms",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "activationblockersmixin-intersectionobserver-callback",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#activationblockersmixin-intersectionobserver-callback",
+      "linkingText": [
+        "IntersectionObserver callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ActivationBlockersMixin"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-blockers-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-blockers-algorithms",
+        "title": "Algorithms",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "powerfulfeatureobserver",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver",
+      "linkingText": [
+        "PowerfulFeatureObserver"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-permissions",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions",
+        "title": "Powerful Features, aka Permissions",
+        "number": "3.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-powerfulfeatureobserver-onpromptaction",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-onpromptaction",
+      "linkingText": [
+        "onpromptaction"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PowerfulFeatureObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-permissions",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions",
+        "title": "Powerful Features, aka Permissions",
+        "number": "3.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-powerfulfeatureobserver-onpromptdismiss",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-onpromptdismiss",
+      "linkingText": [
+        "onpromptdismiss"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PowerfulFeatureObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-permissions",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions",
+        "title": "Powerful Features, aka Permissions",
+        "number": "3.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "powerfulfeatureobserver-powerfulfeatureobserver-attributes",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-powerfulfeatureobserver-attributes",
+      "linkingText": [
+        "PowerfulFeatureObserver attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PowerfulFeatureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-permissions",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions",
+        "title": "Powerful Features, aka Permissions",
+        "number": "3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-powerfulfeatureobserver-features-slot",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-features-slot",
+      "linkingText": [
+        "[[Features]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PowerfulFeatureObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-permissions-internal-state",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions-internal-state",
+        "title": "Internal state",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-powerfulfeatureobserver-initialpermissionstatus-slot",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-initialpermissionstatus-slot",
+      "linkingText": [
+        "[[InitialPermissionStatus]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PowerfulFeatureObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-permissions-internal-state",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions-internal-state",
+        "title": "Internal state",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "powerfulfeatureobserver-initialization-steps",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-initialization-steps",
+      "linkingText": [
+        "initialization steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PowerfulFeatureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-permissions-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions-algorithms",
+        "title": "Algorithms",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "powerfulfeatureobserver-insertion-steps",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-insertion-steps",
+      "linkingText": [
+        "insertion steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PowerfulFeatureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-permissions-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions-algorithms",
+        "title": "Algorithms",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-powerfulfeatureobserver-initialpermissionstatus",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-initialpermissionstatus",
+      "linkingText": [
+        "initialPermissionStatus"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PowerfulFeatureObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-permissions-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions-algorithms",
+        "title": "Algorithms",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-powerfulfeatureobserver-permissionstatus",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#dom-powerfulfeatureobserver-permissionstatus",
+      "linkingText": [
+        "permissionStatus"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PowerfulFeatureObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mixin-permissions-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions-algorithms",
+        "title": "Algorithms",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "powerfulfeatureobserver-get-the-current-permission-state",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-get-the-current-permission-state",
+      "linkingText": [
+        "get the current permission state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PowerfulFeatureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-permissions-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions-algorithms",
+        "title": "Algorithms",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "powerfulfeatureobserver-dispatch-onpromptaction",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-dispatch-onpromptaction",
+      "linkingText": [
+        "dispatch onpromptaction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PowerfulFeatureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-permissions-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions-algorithms",
+        "title": "Algorithms",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "powerfulfeatureobserver-dispatch-onpromptdismiss",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-dispatch-onpromptdismiss",
+      "linkingText": [
+        "dispatch onpromptdismiss"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PowerfulFeatureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-permissions-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions-algorithms",
+        "title": "Algorithms",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "powerfulfeatureobserver-build-a-permission-descriptor",
+      "href": "https://wicg.github.io/PEPC/geolocation-element.html#powerfulfeatureobserver-build-a-permission-descriptor",
+      "linkingText": [
+        "build a permission descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PowerfulFeatureObserver"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mixin-permissions-algorithms",
+        "href": "https://wicg.github.io/PEPC/geolocation-element.html#mixin-permissions-algorithms",
+        "title": "Algorithms",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}

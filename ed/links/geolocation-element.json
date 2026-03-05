@@ -1,7 +1,7 @@
 {
   "spec": {
-    "title": "The HTML Permission Elements",
-    "url": "https://wicg.github.io/PEPC/permission-elements.html"
+    "title": "The HTML Geolocation Element",
+    "url": "https://wicg.github.io/PEPC/geolocation-element.html"
   },
   "links": {
     "rawlinks": {
@@ -65,30 +65,31 @@
       "https://infra.spec.whatwg.org/": {},
       "https://svgwg.org/svg2-draft/": {},
       "https://w3c.github.io/IntersectionObserver/": {},
+      "https://w3c.github.io/aria/": {},
       "https://w3c.github.io/geolocation/": {},
       "https://w3c.github.io/hr-time/": {},
       "https://w3c.github.io/manifest-app-info/": {},
       "https://w3c.github.io/permissions/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://wicg.github.io/fenced-frame/": {},
+      "https://www.w3.org/TR/wai-aria/": {},
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/wicg/": {}
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
-          "dom-event-istrusted",
           "event",
+          "concept-event-dispatch",
+          "concept-node-remove-ext",
+          "eventtarget-activation-behavior",
+          "dom-event-istrusted",
           "concept-event-initialize",
+          "dom-event-type",
           "dom-event-initevent-type-bubbles-cancelable-type",
           "dom-event-initevent-type-bubbles-cancelable-bubbles",
           "dom-event-initevent-type-bubbles-cancelable-cancelable",
-          "concept-event-dispatch",
-          "concept-node-insert-ext",
-          "concept-node-remove-ext",
-          "eventtarget-activation-behavior",
-          "concept-document",
-          "dom-event-type"
+          "concept-document"
         ]
       },
       "https://drafts.csswg.org/compositing-2/": {
@@ -108,13 +109,9 @@
           "propdef-position-anchor"
         ]
       },
-      "https://drafts.csswg.org/css-backgrounds-3/": {
-        "anchors": [
-          "propdef-border"
-        ]
-      },
       "https://drafts.csswg.org/css-borders-4/": {
         "anchors": [
+          "propdef-border",
           "propdef-border-top",
           "propdef-border-right",
           "propdef-border-bottom",
@@ -276,15 +273,12 @@
       },
       "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
         "anchors": [
-          "xattr-reflect",
-          "reflect"
+          "xattr-reflect"
         ]
       },
       "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
         "anchors": [
-          "enumerated-attribute",
-          "missing-value-default",
-          "invalid-value-default"
+          "enumerated-attribute"
         ]
       },
       "https://html.spec.whatwg.org/multipage/custom-elements.html": {
@@ -301,24 +295,24 @@
       },
       "https://html.spec.whatwg.org/multipage/dom.html": {
         "anchors": [
-          "concept-element-attributes",
-          "dom-lang",
-          "represents",
-          "attr-lang",
-          "fallback-content",
-          "language",
-          "htmlunknownelement",
           "flow-content-2",
           "phrasing-content-2",
           "interactive-content-2",
           "palpable-content-2",
           "concept-element-contexts",
           "concept-element-content-model",
+          "concept-element-attributes",
           "global-attributes",
           "concept-element-accessibility-considerations",
           "concept-element-dom",
+          "dom-lang",
           "htmlelement",
-          "htmlconstructor"
+          "htmlconstructor",
+          "attr-lang",
+          "fallback-content",
+          "represents",
+          "language",
+          "htmlunknownelement"
         ]
       },
       "https://html.spec.whatwg.org/multipage/form-elements.html": {
@@ -334,32 +328,32 @@
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "eventhandler",
+          "concept-relevant-global",
           "event-handlers",
-          "event-handler-event-type",
-          "concept-relevant-global"
+          "event-handler-event-type"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "user-agent",
-          "ordered-set",
           "boolean",
-          "string",
-          "assert",
-          "list-append",
-          "list-iterate",
-          "string-is",
-          "list-remove",
-          "list-sort-in-ascending-order",
-          "list-empty",
-          "list-contain",
+          "ordered-set",
           "implementation-defined",
           "set-append",
+          "list-remove",
+          "assert",
           "list-is-empty",
-          "list",
-          "list-item",
+          "list-contain",
+          "list-iterate",
           "iteration-break",
-          "set-equal"
+          "set-equal",
+          "string",
+          "list-append",
+          "string-is",
+          "list-sort-in-ascending-order",
+          "list-empty",
+          "list",
+          "list-item"
         ]
       },
       "https://svgwg.org/svg2-draft/geometry.html": {
@@ -385,23 +379,28 @@
           "dom-intersectionobserverentry-intersectionrect"
         ]
       },
+      "https://w3c.github.io/aria/": {
+        "anchors": [
+          "dfn-role"
+        ]
+      },
       "https://w3c.github.io/geolocation/": {
         "anchors": [
-          "dom-positionoptions-enablehighaccuracy",
+          "dom-geolocation",
           "dfn-geolocation",
           "dom-geolocationposition",
           "dom-geolocationpositionerror",
           "dom-positioncallback",
           "dom-positionerrorcallback",
           "dom-geolocation-watchposition",
-          "dom-geolocation",
           "dom-geolocation-getcurrentposition",
-          "dfn-request-a-position"
+          "dfn-request-a-position",
+          "dom-positionoptions-enablehighaccuracy"
         ]
       },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
-          "dfn-current-high-resolution-time"
+          "current-high-resolution-time"
         ]
       },
       "https://w3c.github.io/manifest-app-info/": {
@@ -413,32 +412,29 @@
         "anchors": [
           "dfn-powerful-feature",
           "dfn-permission",
-          "dom-permissionstate",
-          "dfn-prompt-the-user-to-choose",
-          "dfn-permission-state",
-          "dom-permissionstate-granted",
-          "dom-permissionstate-denied",
-          "dfn-name",
           "dfn-request-permission-to-use",
-          "dom-permissiondescriptor",
+          "dom-permissionstate-granted",
+          "dom-permissionstate",
           "dom-permissionstate-prompt",
-          "dfn-getting-the-current-permission-state"
+          "dfn-getting-the-current-permission-state",
+          "dom-permissionstate-denied",
+          "dom-permissiondescriptor",
+          "dfn-prompt-the-user-to-choose",
+          "dfn-permission-state"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "idl-boolean",
           "Exposed",
-          "idl-DOMString",
-          "dfn-static-operation",
-          "this",
-          "idl-unsigned-long"
+          "idl-boolean",
+          "idl-unsigned-long",
+          "this"
         ]
       },
       "https://wicg.github.io/fenced-frame/": {
         "anchors": [
-          "elementdef-fencedframe",
-          "fenced-navigable-container-fenced-navigable"
+          "fenced-navigable-container-fenced-navigable",
+          "elementdef-fencedframe"
         ]
       },
       "https://www.w3.org/TR/CSS2/cascade.html": {

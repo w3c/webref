@@ -128,7 +128,7 @@
     {
       "name": "determine the type of a calculation",
       "href": "https://drafts.csswg.org/css-values-4/#determine-the-type-of-a-calculation",
-      "html": "Anything else is a terminal value,\nwhose <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⓪\">type</a> is determined based on its CSS type.\n(Unless otherwise specified,\nthe type’s associated <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint\" id=\"ref-for-cssnumericvalue-percent-hint\">percent hint</a> is null.)",
+      "html": "Anything else is a terminal value,\nwhose <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①①\">type</a> is determined based on its CSS type.\n(Unless otherwise specified,\nthe type’s associated <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint\" id=\"ref-for-cssnumericvalue-percent-hint\">percent hint</a> is null.)",
       "rationale": ".switch",
       "steps": [
         {
@@ -136,43 +136,43 @@
           "steps": [
             {
               "case": "<number>",
-              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①①\">type</a> is «[ ]» (empty map)</p>"
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①②\">type</a> is «[ ]» (empty map)</p>"
             },
             {
               "case": "<integer>",
-              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①①\">type</a> is «[ ]» (empty map)</p>"
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①②\">type</a> is «[ ]» (empty map)</p>"
             },
             {
               "case": "<length>",
-              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①②\">type</a> is «[ \"length\" → 1 ]»</p>"
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①③\">type</a> is «[ \"length\" → 1 ]»</p>"
             },
             {
               "case": "<angle>",
-              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①③\">type</a> is «[ \"angle\" → 1 ]»</p>"
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①④\">type</a> is «[ \"angle\" → 1 ]»</p>"
             },
             {
               "case": "<time>",
-              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①④\">type</a> is «[ \"time\" → 1 ]»</p>"
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑤\">type</a> is «[ \"time\" → 1 ]»</p>"
             },
             {
               "case": "<frequency>",
-              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑤\">type</a> is «[ \"frequency\" → 1 ]»</p>"
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑥\">type</a> is «[ \"frequency\" → 1 ]»</p>"
             },
             {
               "case": "<resolution>",
-              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑥\">type</a> is «[ \"resolution\" → 1 ]»</p>"
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑦\">type</a> is «[ \"resolution\" → 1 ]»</p>"
             },
             {
               "case": "<flex>",
-              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑦\">type</a> is «[ \"flex\" → 1 ]»</p>"
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑧\">type</a> is «[ \"flex\" → 1 ]»</p>"
             },
             {
               "case": "<calc-keyword>",
-              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑧\">type</a> is as defined by the keyword</p>"
+              "html": "<p>the <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑨\">type</a> is as defined by the keyword</p>"
             },
             {
               "case": "<percentage>",
-              "html": "<p>If, in the context in which the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#math-function\" id=\"ref-for-math-function①⑥\">math function</a>\ncontaining this <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation④⓪\">calculation</a> is placed,\n<a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#percentage-value\" id=\"ref-for-percentage-value③③\">&lt;percentage&gt;</a>s are resolved relative to another type of value\n(such as in <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-width\" id=\"ref-for-propdef-width①⓪\">width</a>, where <span class=\"production\" id=\"ref-for-percentage-value③④\">&lt;percentage&gt;</span> is resolved against a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#length-value\" id=\"ref-for-length-value③⑥\">&lt;length&gt;</a>),\nand that other type is <em>not</em> <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value④③\">&lt;number&gt;</a>,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①⑨\">type</a> is determined as the other type,\nbut with a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint\" id=\"ref-for-cssnumericvalue-percent-hint①\">percent hint</a> set to that other type.</p>\n        <p>Otherwise,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type②⓪\">type</a> is «[ \"percent\" → 1 ]»,\nwith a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint\" id=\"ref-for-cssnumericvalue-percent-hint②\">percent hint</a> of \"percent\".</p>"
+              "html": "<p>If, in the context in which the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#math-function\" id=\"ref-for-math-function①⑥\">math function</a>\ncontaining this <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#calc-calculation\" id=\"ref-for-calc-calculation④⓪\">calculation</a> is placed,\n<a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#percentage-value\" id=\"ref-for-percentage-value③③\">&lt;percentage&gt;</a>s are resolved relative to another type of value\n(such as in <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-sizing-3/#propdef-width\" id=\"ref-for-propdef-width①⓪\">width</a>, where <span class=\"production\" id=\"ref-for-percentage-value③④\">&lt;percentage&gt;</span> is resolved against a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#length-value\" id=\"ref-for-length-value③⑦\">&lt;length&gt;</a>),\nand that other type is <em>not</em> <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value④③\">&lt;number&gt;</a>,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type②⓪\">type</a> is determined as the other type,\nbut with a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint\" id=\"ref-for-cssnumericvalue-percent-hint①\">percent hint</a> set to that other type.</p>\n        <p>Otherwise,\nthe <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type②①\">type</a> is «[ \"percent\" → 1 ]»,\nwith a <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint\" id=\"ref-for-cssnumericvalue-percent-hint②\">percent hint</a> of \"percent\".</p>"
             },
             {
               "case": "anything else",
@@ -416,7 +416,7 @@
               "html": "<p>Serialize the keyword <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-4/#valdef-calc-infinity\" id=\"ref-for-valdef-calc-infinity③\">infinity</a>, <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-4/#valdef-calc--infinity\" id=\"ref-for-valdef-calc--infinity②\">-infinity</a>, or <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-4/#valdef-calc-nan\" id=\"ref-for-valdef-calc-nan③\">NaN</a>,\nas appropriate to represent the value,\nand append it to <var>s</var>.</p>"
             },
             {
-              "html": "<p>If <var>fn</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type②⑥\">type</a> is anything other than «[ ]»\n(empty, representing a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value⑤④\">&lt;number&gt;</a>),\nappend \" * \" to <var>s</var>.\nCreate a numeric value\nin the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#canonical-unit\" id=\"ref-for-canonical-unit①⑤\">canonical unit</a> for <var>fn</var>’s <span id=\"ref-for-cssnumericvalue-type②⑦\">type</span>\n(such as <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-4/#px\" id=\"ref-for-px①③\">px</a> for <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#length-value\" id=\"ref-for-length-value④③\">&lt;length&gt;</a>),\nwith a value of 1.\nSerialize this numeric value\nand append it to <var>s</var>.</p>"
+              "html": "<p>If <var>fn</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type②⑦\">type</a> is anything other than «[ ]»\n(empty, representing a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#number-value\" id=\"ref-for-number-value⑤④\">&lt;number&gt;</a>),\nappend \" * \" to <var>s</var>.\nCreate a numeric value\nin the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#canonical-unit\" id=\"ref-for-canonical-unit①⑤\">canonical unit</a> for <var>fn</var>’s <span id=\"ref-for-cssnumericvalue-type②⑧\">type</span>\n(such as <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-4/#px\" id=\"ref-for-px①③\">px</a> for <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#length-value\" id=\"ref-for-length-value④④\">&lt;length&gt;</a>),\nwith a value of 1.\nSerialize this numeric value\nand append it to <var>s</var>.</p>"
             },
             {
               "html": "<p>Append \")\" to <var>s</var>, then return it.</p>"
