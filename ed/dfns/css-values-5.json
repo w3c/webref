@@ -2109,10 +2109,10 @@
       "links": []
     },
     {
-      "id": "typedef-random-value-sharing",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-value-sharing",
+      "id": "typedef-random-cache-key",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-cache-key",
       "linkingText": [
-        "<random-value-sharing>"
+        "<random-cache-key>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -2129,17 +2129,14 @@
       "links": []
     },
     {
-      "id": "valdef-random-auto",
-      "href": "https://drafts.csswg.org/css-values-5/#valdef-random-auto",
+      "id": "typedef-random-name",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-name",
       "linkingText": [
-        "auto"
+        "<random-name>"
       ],
       "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "random()",
-        "<random-value-sharing>"
-      ],
+      "type": "type",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2148,54 +2145,7 @@
         "title": "Generating a Random Numeric Value: the random() function",
         "number": "9.1"
       },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "valdef-random-element-shared",
-      "href": "https://drafts.csswg.org/css-values-5/#valdef-random-element-shared",
-      "linkingText": [
-        "element-shared"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "random()",
-        "<random-value-sharing>"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "random",
-        "href": "https://drafts.csswg.org/css-values-5/#random",
-        "title": "Generating a Random Numeric Value: the random() function",
-        "number": "9.1"
-      },
-      "definedIn": "dt",
-      "links": []
-    },
-    {
-      "id": "valdef-random-fixed",
-      "href": "https://drafts.csswg.org/css-values-5/#valdef-random-fixed",
-      "linkingText": [
-        "fixed",
-        "<number>"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "random()",
-        "<random-value-sharing>"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "random",
-        "href": "https://drafts.csswg.org/css-values-5/#random",
-        "title": "Generating a Random Numeric Value: the random() function",
-        "number": "9.1"
-      },
-      "definedIn": "dt",
+      "definedIn": "pre",
       "links": []
     },
     {
@@ -2281,6 +2231,152 @@
       "links": []
     },
     {
+      "id": "valdef-random-auto",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-random-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "random()",
+        "random-item()",
+        "<random-cache-key>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "random-caching",
+        "href": "https://drafts.csswg.org/css-values-5/#random-caching",
+        "title": "Sharing (Or Not) Random Values: the <random-cache-key> value",
+        "number": "9.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-random-random-name",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-random-random-name",
+      "linkingText": [
+        "<random-name>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "random()",
+        "random-item()",
+        "<random-cache-key>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "random-caching",
+        "href": "https://drafts.csswg.org/css-values-5/#random-caching",
+        "title": "Sharing (Or Not) Random Values: the <random-cache-key> value",
+        "number": "9.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-random-element",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-random-element",
+      "linkingText": [
+        "element"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "random()",
+        "random-item()",
+        "<random-cache-key>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "random-caching",
+        "href": "https://drafts.csswg.org/css-values-5/#random-caching",
+        "title": "Sharing (Or Not) Random Values: the <random-cache-key> value",
+        "number": "9.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-random-property",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-random-property",
+      "linkingText": [
+        "property"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "random()",
+        "random-item()",
+        "<random-cache-key>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "random-caching",
+        "href": "https://drafts.csswg.org/css-values-5/#random-caching",
+        "title": "Sharing (Or Not) Random Values: the <random-cache-key> value",
+        "number": "9.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-random-index",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-random-index",
+      "linkingText": [
+        "index",
+        "property index"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "random()",
+        "random-item()",
+        "<random-cache-key>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "random-caching",
+        "href": "https://drafts.csswg.org/css-values-5/#random-caching",
+        "title": "Sharing (Or Not) Random Values: the <random-cache-key> value",
+        "number": "9.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-random-fixed",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-random-fixed",
+      "linkingText": [
+        "fixed",
+        "<number>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "random()",
+        "random-item()",
+        "<random-cache-key>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "random-caching",
+        "href": "https://drafts.csswg.org/css-values-5/#random-caching",
+        "title": "Sharing (Or Not) Random Values: the <random-cache-key> value",
+        "number": "9.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "random-base-value",
       "href": "https://drafts.csswg.org/css-values-5/#random-base-value",
       "linkingText": [
@@ -2294,17 +2390,17 @@
       "heading": {
         "id": "random-caching",
         "href": "https://drafts.csswg.org/css-values-5/#random-caching",
-        "title": "Caching Random Values: the <random-value-sharing> value",
+        "title": "Sharing (Or Not) Random Values: the <random-cache-key> value",
         "number": "9.4"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "random-caching-key",
-      "href": "https://drafts.csswg.org/css-values-5/#random-caching-key",
+      "id": "random-cache-key",
+      "href": "https://drafts.csswg.org/css-values-5/#random-cache-key",
       "linkingText": [
-        "random caching key"
+        "random cache key"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2314,7 +2410,7 @@
       "heading": {
         "id": "random-caching",
         "href": "https://drafts.csswg.org/css-values-5/#random-caching",
-        "title": "Caching Random Values: the <random-value-sharing> value",
+        "title": "Sharing (Or Not) Random Values: the <random-cache-key> value",
         "number": "9.4"
       },
       "definedIn": "prose",
