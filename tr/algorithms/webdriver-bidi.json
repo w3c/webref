@@ -1583,7 +1583,16 @@
           ]
         },
         {
-          "html": "<p>Switch on the value of <var>state</var>:</p>\n      <dl>\n       <dt>\"<code>fullscreen</code>\"\n  \n       </dt><dd>\n        \n       </dd><dt>\"<code>normal</code>\"\n  \n       </dt><dd>1. <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#restore-the-client-window\" id=\"ref-for-restore-the-client-window\">Restore the client window</a> <var>window</var>.\n\n  \n       </dd><dt>\"<code>maximize</code>\"\n  \n       </dt><dd>1. <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#maximize-the-client-window\" id=\"ref-for-maximize-the-client-window\">Maximize the client window</a> <var>window</var>.\n\n  \n       </dd><dt>\"<code>minimize</code>\"\n  \n       </dt><dd>1. <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#minimize-the-client-window\" id=\"ref-for-minimize-the-client-window\">Minimize the client window</a> <var>window</var>.\n\n\n      </dd></dl>",
+          "html": "If <var>current state</var> is \"<code>maximized</code>\" or \"<code>minimized</code>\":",
+          "rationale": "restore",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#restore-the-client-window\" id=\"ref-for-restore-the-client-window\">Restore the client window</a> <var>window</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Switch on the value of <var>state</var>:</p>\n      <dl>\n       <dt>\"<code>fullscreen</code>\"\n  \n       </dt><dd>\n        \n       </dd><dt>\"<code>maximize</code>\"\n  \n       </dt><dd>1. <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#maximize-the-client-window\" id=\"ref-for-maximize-the-client-window\">Maximize the client window</a> <var>window</var>.\n\n  \n       </dd><dt>\"<code>minimize</code>\"\n  \n       </dt><dd>1. <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webdriver-bidi/#minimize-the-client-window\" id=\"ref-for-minimize-the-client-window\">Minimize the client window</a> <var>window</var>.\n\n\n      </dd></dl>",
           "rationale": "for",
           "steps": [
             {
