@@ -15,62 +15,11 @@
     },
     "idlNames": {
       "ModelContext": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext {\n  undefined provideContext(optional ModelContextOptions options = {});\n  undefined clearContext();\n  undefined registerTool(ModelContextTool tool);\n  undefined unregisterTool(DOMString name);\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext {\n  undefined registerTool(ModelContextTool tool);\n  undefined unregisterTool(DOMString name);\n};",
         "type": "interface",
         "name": "ModelContext",
         "inheritance": null,
         "members": [
-          {
-            "type": "operation",
-            "name": "provideContext",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ModelContextOptions"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-providecontext"
-          },
-          {
-            "type": "operation",
-            "name": "clearContext",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-clearcontext"
-          },
           {
             "type": "operation",
             "name": "registerTool",
@@ -157,45 +106,6 @@
         ],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webmcp/#modelcontext"
-      },
-      "ModelContextOptions": {
-        "fragment": "dictionary ModelContextOptions {\n  sequence<ModelContextTool> tools = [];\n};",
-        "type": "dictionary",
-        "name": "ModelContextOptions",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "tools",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ModelContextTool"
-                }
-              ]
-            },
-            "default": {
-              "type": "sequence",
-              "value": []
-            },
-            "required": false,
-            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontextoptions-tools"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://webmachinelearning.github.io/webmcp/#dictdef-modelcontextoptions"
       },
       "ModelContextTool": {
         "fragment": "dictionary ModelContextTool {\n  required DOMString name;\n  required DOMString description;\n  object inputSchema;\n  required ToolExecuteCallback execute;\n  ToolAnnotations annotations;\n};",
@@ -526,10 +436,6 @@
         "ModelContext"
       ],
       "ModelContext": [
-        "ModelContextOptions",
-        "ModelContextTool"
-      ],
-      "ModelContextOptions": [
         "ModelContextTool"
       ],
       "ModelContextTool": [
