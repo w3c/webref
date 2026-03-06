@@ -1785,14 +1785,14 @@
       "name": "random-item()",
       "prose": "The random-item() function resolves to a random item from among its list of items.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-random-item",
-      "syntax": "random-item( <random-value-sharing> , [ <declaration-value>? ]# )",
+      "syntax": "random-item( <random-cache-key> , [ <declaration-value>? ]# )",
       "extended": []
     },
     {
       "name": "random()",
       "prose": "The random() function is a math function that represents a random value between a minimum and maximum value, drawn from a uniform distribution, optionally limiting the possible values to a step between those limits:",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-random",
-      "syntax": "random( <random-value-sharing>? , <calc-sum>, <calc-sum>, <calc-sum>? )",
+      "syntax": "random( <random-cache-key>? , <calc-sum>, <calc-sum>, <calc-sum>? )",
       "extended": []
     },
     {
@@ -20158,15 +20158,21 @@
       "extended": []
     },
     {
+      "name": "random-cache-key",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-cache-key",
+      "syntax": "auto | <random-name> | fixed <number [0,1]>",
+      "extended": []
+    },
+    {
       "name": "random-item-args",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-random-item-args",
       "syntax": "random-item( <declaration-value>, [ <declaration-value>? ]# )",
       "extended": []
     },
     {
-      "name": "random-value-sharing",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-value-sharing",
-      "syntax": "[ [ auto | <dashed-ident> ] || element-shared ] | fixed <number [0,1]>",
+      "name": "random-name",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-name",
+      "syntax": "<dashed-ident> [ element | property index? ]?",
       "extended": []
     },
     {
