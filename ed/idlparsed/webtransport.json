@@ -111,7 +111,7 @@
         "href": "https://w3c.github.io/webtransport/#webtransportdatagramswritable"
       },
       "WebTransportDatagramDuplexStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportDatagramDuplexStream {\n  WebTransportDatagramsWritable createWritable(\n      optional WebTransportSendOptions options = {});\n  readonly attribute ReadableStream readable;\n\n  readonly attribute unsigned long maxDatagramSize;\n  attribute unrestricted double? incomingMaxAge;\n  attribute unrestricted double? outgoingMaxAge;\n  attribute unrestricted double incomingHighWaterMark;\n  attribute unrestricted double outgoingHighWaterMark;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportDatagramDuplexStream {\n  WebTransportDatagramsWritable createWritable(\n      optional WebTransportSendOptions options = {});\n  readonly attribute ReadableStream readable;\n\n  readonly attribute unsigned long maxDatagramSize;\n  attribute unrestricted double? incomingMaxAge;\n  attribute unrestricted double? outgoingMaxAge;\n  attribute unsigned long incomingMaxBufferedDatagrams;\n  attribute unsigned long outgoingMaxBufferedDatagrams;\n};",
         "type": "interface",
         "name": "WebTransportDatagramDuplexStream",
         "inheritance": null,
@@ -217,35 +217,35 @@
           },
           {
             "type": "attribute",
-            "name": "incomingHighWaterMark",
+            "name": "incomingMaxBufferedDatagrams",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unrestricted double"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
             "readonly": false,
-            "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-incominghighwatermark"
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-incomingmaxbuffereddatagrams"
           },
           {
             "type": "attribute",
-            "name": "outgoingHighWaterMark",
+            "name": "outgoingMaxBufferedDatagrams",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unrestricted double"
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
             "readonly": false,
-            "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-outgoinghighwatermark"
+            "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-outgoingmaxbuffereddatagrams"
           }
         ],
         "extAttrs": [
