@@ -38333,7 +38333,7 @@
         "href": "https://html.spec.whatwg.org/multipage/workers.html#workertype"
       },
       "SharedWorker": {
-        "fragment": "[Exposed=Window]\ninterface SharedWorker : EventTarget {\n  constructor((TrustedScriptURL or USVString) scriptURL, optional (DOMString or WorkerOptions) options = {});\n\n  readonly attribute MessagePort port;\n};",
+        "fragment": "[Exposed=Window]\ninterface SharedWorker : EventTarget {\n  constructor((TrustedScriptURL or USVString) scriptURL, optional (DOMString or SharedWorkerOptions) options = {});\n\n  readonly attribute MessagePort port;\n};",
         "type": "interface",
         "name": "SharedWorker",
         "inheritance": "EventTarget",
@@ -38399,7 +38399,7 @@
                       "generic": "",
                       "nullable": false,
                       "union": false,
-                      "idlType": "WorkerOptions"
+                      "idlType": "SharedWorkerOptions"
                     }
                   ]
                 },
@@ -38442,6 +38442,36 @@
         ],
         "partial": false,
         "href": "https://html.spec.whatwg.org/multipage/workers.html#sharedworker"
+      },
+      "SharedWorkerOptions": {
+        "fragment": "dictionary SharedWorkerOptions : WorkerOptions {\n  boolean extendedLifetime = false;\n};",
+        "type": "dictionary",
+        "name": "SharedWorkerOptions",
+        "inheritance": "WorkerOptions",
+        "members": [
+          {
+            "type": "field",
+            "name": "extendedLifetime",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/workers.html#dom-sharedworkeroptions-extendedlifetime"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#sharedworkeroptions"
       },
       "NavigatorConcurrentHardware": {
         "fragment": "interface mixin NavigatorConcurrentHardware {\n  readonly attribute unsigned long long hardwareConcurrency;\n};",
@@ -47789,9 +47819,12 @@
       "SharedWorker": [
         "EventTarget",
         "TrustedScriptURL",
-        "WorkerOptions",
+        "SharedWorkerOptions",
         "MessagePort",
         "AbstractWorker"
+      ],
+      "SharedWorkerOptions": [
+        "WorkerOptions"
       ],
       "NavigatorConcurrentHardware": [],
       "WorkerNavigator": [

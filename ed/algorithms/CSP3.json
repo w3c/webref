@@ -317,7 +317,7 @@
               "rationale": "execute",
               "steps": [
                 {
-                  "html": "<p>Execute <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-initialization\" id=\"ref-for-directive-initialization\">initialization</a>\n  algorithm on <var>document</var>, and assert: its returned value is\n  \"<code>Allowed</code>\".</p>"
+                  "html": "<p>Execute <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-initialization\" id=\"ref-for-directive-initialization\">initialization</a>\n  algorithm on <var>document</var> and <var>policy</var>, and assert: its returned\n  value is \"<code>Allowed</code>\".</p>"
                 }
               ]
             }
@@ -441,7 +441,7 @@
                       "html": "<p>Let <var>directive-name</var> be the result of executing\n  <a href=\"https://w3c.github.io/webappsec-csp/#effective-directive-for-inline-check\">§ 6.8.2 Get the effective directive for inline checks</a> on \"<code>navigation</code>\".</p>"
                     },
                     {
-                      "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-inline-check\" id=\"ref-for-directive-inline-check①\">inline check</a>\n  returns \"<code>Allowed</code>\" when executed upon null,\n  \"<code>navigation</code>\" and <var>navigation request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url②\">current URL</a>,\n  skip to the next <var>directive</var>.</p>"
+                      "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-inline-check\" id=\"ref-for-directive-inline-check①\">inline check</a>\n  returns \"<code>Allowed</code>\" when executed upon null,\n  \"<code>navigation</code>\", <var>policy</var>, and <var>navigation request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-current-url\" id=\"ref-for-concept-request-current-url②\">current URL</a>,\n  skip to the next <var>directive</var>.</p>"
                     },
                     {
                       "html": "<p>Otherwise, let <var>violation</var> be the result of executing\n  <a href=\"https://w3c.github.io/webappsec-csp/#create-violation-for-global\">§ 2.4.1 Create a violation object for global, policy, and directive</a> on <var>navigation request</var>’s\n  <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client③\">client</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global③\">global object</a>,\n  <var>policy</var>, and <var>directive-name</var>.</p>"
@@ -548,7 +548,7 @@
               "rationale": "execute",
               "steps": [
                 {
-                  "html": "<p>Execute <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-initialization\" id=\"ref-for-directive-initialization①\">initialization</a> algorithm on\n <var>global</var>. If its returned value is \"<code>Blocked</code>\", then set <var>result</var> to\n \"<code>Blocked</code>\".</p>"
+                  "html": "<p>Execute <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-initialization\" id=\"ref-for-directive-initialization①\">initialization</a> algorithm on\n <var>global</var> and <var>policy</var>. If its returned value is \"<code>Blocked</code>\", then set <var>result</var> to\n \"<code>Blocked</code>\".</p>"
                 }
               ]
             }
@@ -575,7 +575,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-webrtc-pre-connect-check\" id=\"ref-for-directive-webrtc-pre-connect-check\">webrtc pre-connect check</a>\n  returns \"<code>Allowed</code>\", <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
+                  "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-webrtc-pre-connect-check\" id=\"ref-for-directive-webrtc-pre-connect-check\">webrtc pre-connect check</a>\n  returns \"<code>Allowed</code>\" when executed upon <var>policy</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a>.</p>"
                 },
                 {
                   "html": "<p>Otherwise, let <var>violation</var> be the result of executing\n  <a href=\"https://w3c.github.io/webappsec-csp/#create-violation-for-global\">§ 2.4.1 Create a violation object for global, policy, and directive</a> on <var>global</var>, <var>policy</var>, and\n  <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name⑥\">name</a>.</p>"

@@ -379,6 +379,113 @@
         "partial": false,
         "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-CShakeParams"
       },
+      "TurboShakeParams": {
+        "fragment": "dictionary TurboShakeParams : Algorithm {\n  required [EnforceRange] unsigned long outputLength;\n  [EnforceRange] octet domainSeparation;\n};",
+        "type": "dictionary",
+        "name": "TurboShakeParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "outputLength",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-TurboShakeParams-outputLength"
+          },
+          {
+            "type": "field",
+            "name": "domainSeparation",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "octet"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-TurboShakeParams-domainSeparation"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-TurboShakeParams"
+      },
+      "KangarooTwelveParams": {
+        "fragment": "dictionary KangarooTwelveParams : Algorithm {\n  required [EnforceRange] unsigned long outputLength;\n  BufferSource customization;\n};",
+        "type": "dictionary",
+        "name": "KangarooTwelveParams",
+        "inheritance": "Algorithm",
+        "members": [
+          {
+            "type": "field",
+            "name": "outputLength",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KangarooTwelveParams-outputLength"
+          },
+          {
+            "type": "field",
+            "name": "customization",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BufferSource"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KangarooTwelveParams-customization"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://wicg.github.io/webcrypto-modern-algos/#dfn-KangarooTwelveParams"
+      },
       "KmacKeyGenParams": {
         "fragment": "dictionary KmacKeyGenParams : Algorithm {\n  [EnforceRange] unsigned long length;\n};",
         "type": "dictionary",
@@ -1370,6 +1477,13 @@
         "BufferSource"
       ],
       "CShakeParams": [
+        "Algorithm",
+        "BufferSource"
+      ],
+      "TurboShakeParams": [
+        "Algorithm"
+      ],
+      "KangarooTwelveParams": [
         "Algorithm",
         "BufferSource"
       ],

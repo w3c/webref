@@ -1,4 +1,9 @@
-// Source: Extending Storage Access API (SAA) to non-cookie storage (https://privacycg.github.io/saa-non-cookie-storage/)
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 dictionary SharedWorkerOptions : WorkerOptions {
+  boolean extendedLifetime = false;
+};
+
+// Source: Extending Storage Access API (SAA) to non-cookie storage (https://privacycg.github.io/saa-non-cookie-storage/)
+partial dictionary SharedWorkerOptions {
   SameSiteCookiesType sameSiteCookies;
 };

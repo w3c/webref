@@ -423,6 +423,7 @@ BrowsingContextCommand = (
   browsingContext.Navigate //
   browsingContext.Print //
   browsingContext.Reload //
+  browsingContext.SetBypassCSP //
   browsingContext.SetViewport //
   browsingContext.TraverseHistory
 )
@@ -438,6 +439,7 @@ BrowsingContextResult = (
   browsingContext.NavigateResult /
   browsingContext.PrintResult /
   browsingContext.ReloadResult /
+  browsingContext.SetBypassCSPResult /
   browsingContext.SetViewportResult /
   browsingContext.TraverseHistoryResult
 )
@@ -719,6 +721,19 @@ browsingContext.ReloadParameters = {
 }
 
 browsingContext.ReloadResult = browsingContext.NavigateResult
+
+browsingContext.SetBypassCSP = (
+  method: "browsingContext.setBypassCSP",
+  params: browsingContext.SetBypassCSPParameters
+)
+
+browsingContext.SetBypassCSPParameters = {
+  bypass: true / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
+}
+
+browsingContext.SetBypassCSPResult = EmptyResult
 
 browsingContext.SetViewport = (
   method: "browsingContext.setViewport",
@@ -2742,6 +2757,7 @@ BrowsingContextCommand = (
   browsingContext.Navigate //
   browsingContext.Print //
   browsingContext.Reload //
+  browsingContext.SetBypassCSP //
   browsingContext.SetViewport //
   browsingContext.TraverseHistory
 )
@@ -2947,6 +2963,17 @@ browsingContext.ReloadParameters = {
   context: browsingContext.BrowsingContext,
   ? ignoreCache: bool,
   ? wait: browsingContext.ReadinessState,
+}
+
+browsingContext.SetBypassCSP = (
+  method: "browsingContext.setBypassCSP",
+  params: browsingContext.SetBypassCSPParameters
+)
+
+browsingContext.SetBypassCSPParameters = {
+  bypass: true / null,
+  ? contexts: [+browsingContext.BrowsingContext],
+  ? userContexts: [+browser.UserContext],
 }
 
 browsingContext.SetViewport = (
@@ -4413,6 +4440,7 @@ BrowsingContextResult = (
   browsingContext.NavigateResult /
   browsingContext.PrintResult /
   browsingContext.ReloadResult /
+  browsingContext.SetBypassCSPResult /
   browsingContext.SetViewportResult /
   browsingContext.TraverseHistoryResult
 )
@@ -4538,6 +4566,8 @@ browsingContext.PrintResult = {
 }
 
 browsingContext.ReloadResult = browsingContext.NavigateResult
+
+browsingContext.SetBypassCSPResult = EmptyResult
 
 browsingContext.SetViewportResult = EmptyResult
 

@@ -624,33 +624,6 @@
         ],
         "extAttrs": [],
         "href": "https://privacycg.github.io/saa-non-cookie-storage/#enumdef-samesitecookiestype"
-      },
-      "SharedWorkerOptions": {
-        "fragment": "dictionary SharedWorkerOptions : WorkerOptions {\n  SameSiteCookiesType sameSiteCookies;\n};",
-        "type": "dictionary",
-        "name": "SharedWorkerOptions",
-        "inheritance": "WorkerOptions",
-        "members": [
-          {
-            "type": "field",
-            "name": "sameSiteCookies",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "SameSiteCookiesType"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-sharedworkeroptions-samesitecookies"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://privacycg.github.io/saa-non-cookie-storage/#dictdef-sharedworkeroptions"
       }
     },
     "idlExtendedNames": {
@@ -690,6 +663,34 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "SharedWorkerOptions": [
+        {
+          "fragment": "partial dictionary SharedWorkerOptions {\n  SameSiteCookiesType sameSiteCookies;\n};",
+          "type": "dictionary",
+          "name": "SharedWorkerOptions",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "sameSiteCookies",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "SameSiteCookiesType"
+              },
+              "default": null,
+              "required": false,
+              "href": "https://privacycg.github.io/saa-non-cookie-storage/#dom-sharedworkeroptions-samesitecookies"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
       ]
     },
     "globals": {},
@@ -715,7 +716,6 @@
       ],
       "Document": [],
       "SharedWorkerOptions": [
-        "WorkerOptions",
         "SameSiteCookiesType"
       ]
     },
@@ -730,8 +730,8 @@
       "MediaSource",
       "BroadcastChannel",
       "SharedWorker",
-      "Document",
-      "WorkerOptions"
+      "SharedWorkerOptions",
+      "Document"
     ],
     "hasObsoleteIdl": false
   }
