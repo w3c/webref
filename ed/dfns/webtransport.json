@@ -897,10 +897,10 @@
       "links": []
     },
     {
-      "id": "dom-webtransportdatagramduplexstream-incomingdatagramshighwatermark-slot",
-      "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-incomingdatagramshighwatermark-slot",
+      "id": "dom-webtransportdatagramduplexstream-incomingmaxbuffereddatagrams-slot",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-incomingmaxbuffereddatagrams-slot",
       "linkingText": [
-        "[[IncomingDatagramsHighWaterMark]]"
+        "[[IncomingMaxBufferedDatagrams]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -941,10 +941,10 @@
       "links": []
     },
     {
-      "id": "dom-webtransportdatagramduplexstream-outgoingdatagramshighwatermark-slot",
-      "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-outgoingdatagramshighwatermark-slot",
+      "id": "dom-webtransportdatagramduplexstream-outgoingmaxbuffereddatagrams-slot",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-outgoingmaxbuffereddatagrams-slot",
       "linkingText": [
-        "[[OutgoingDatagramsHighWaterMark]]"
+        "[[OutgoingMaxBufferedDatagrams]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1141,10 +1141,10 @@
       "links": []
     },
     {
-      "id": "dom-webtransportdatagramduplexstream-incominghighwatermark",
-      "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-incominghighwatermark",
+      "id": "dom-webtransportdatagramduplexstream-incomingmaxbuffereddatagrams",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-incomingmaxbuffereddatagrams",
       "linkingText": [
-        "incomingHighWaterMark"
+        "incomingMaxBufferedDatagrams"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1163,10 +1163,10 @@
       "links": []
     },
     {
-      "id": "dom-webtransportdatagramduplexstream-outgoinghighwatermark",
-      "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-outgoinghighwatermark",
+      "id": "dom-webtransportdatagramduplexstream-outgoingmaxbuffereddatagrams",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportdatagramduplexstream-outgoingmaxbuffereddatagrams",
       "linkingText": [
-        "outgoingHighWaterMark"
+        "outgoingMaxBufferedDatagrams"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -3879,6 +3879,28 @@
       "links": []
     },
     {
+      "id": "dom-webtransportsendstream-insidesynchronousatomicwrite-slot",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransportsendstream-insidesynchronousatomicwrite-slot",
+      "linkingText": [
+        "[[InsideSynchronousAtomicWrite]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportSendStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "send-stream-internal-slots",
+        "href": "https://w3c.github.io/webtransport/#send-stream-internal-slots",
+        "title": "Internal Slots",
+        "number": "7.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
       "id": "dom-webtransportsendstream-byteswritten-slot",
       "href": "https://w3c.github.io/webtransport/#dom-webtransportsendstream-byteswritten-slot",
       "linkingText": [
@@ -4124,6 +4146,26 @@
       "href": "https://w3c.github.io/webtransport/#grouped",
       "linkingText": [
         "grouped"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sendGroup",
+        "href": "https://w3c.github.io/webtransport/#sendGroup",
+        "title": "Interface WebTransportSendGroup",
+        "number": "8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "null-sendgroup",
+      "href": "https://w3c.github.io/webtransport/#null-sendgroup",
+      "linkingText": [
+        "null sendGroup"
       ],
       "localLinkingText": [],
       "type": "dfn",
