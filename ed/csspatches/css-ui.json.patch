@@ -1,44 +1,19 @@
-From 758207db2a489415f00c4241cd08897d47a9c4ae Mon Sep 17 00:00:00 2001
+From ac27d332d8632a409bdbfc41b5b9863000b8b67a Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Thu, 10 Jul 2025 11:54:01 +0200
-Subject: [PATCH] Drop pointer-events dfn, adjust cursor-image syntax
+Date: Tue, 10 Mar 2026 17:30:21 +0100
+Subject: [PATCH] Drop pointer-events dfn
 
 The definition of `pointer-events` is not yet as complete as that in the SVG
 spec. Tracking issue at:
 https://github.com/w3c/csswg-drafts/issues/4438
-
-Syntax of `<cursor-image>` is valid but stacking of `{2}` and `?` is not
-supported by the CSSTree parser. Tracking issue at:
-https://github.com/csstree/csstree/issues/346
-
-(Why the spec defines the type both as a `value` and a `type`, I do not know,
-but this should not have any impact though, so left for another day...)
 ---
- ed/css/css-ui.json | 36 ++----------------------------------
- 1 file changed, 2 insertions(+), 34 deletions(-)
+ ed/css/css-ui.json | 32 --------------------------------
+ 1 file changed, 32 deletions(-)
 
 diff --git a/ed/css/css-ui.json b/ed/css/css-ui.json
-index e65d3cfd00..1aa20eb8b1 100644
+index 17c801fec1..66056d8d30 100644
 --- a/ed/css/css-ui.json
 +++ b/ed/css/css-ui.json
-@@ -121,7 +121,7 @@
-       "values": [
-         {
-           "name": "<cursor-image>",
--          "value": "[ <url> | <url-set> ] <number>{2}?",
-+          "value": "[ <url> | <url-set> ] [<number>{2}]?",
-           "href": "https://drafts.csswg.org/css-ui-4/#valdef-cursor-cursor-image",
-           "type": "value"
-         },
-@@ -129,7 +129,7 @@
-           "name": "<cursor-image>",
-           "href": "https://drafts.csswg.org/css-ui-4/#typedef-cursor-cursor-image",
-           "type": "type",
--          "value": "[ <url> | <url-set> ] <number>{2}?"
-+          "value": "[ <url> | <url-set> ] [<number>{2}]?"
-         },
-         {
-           "name": "<url-set>",
 @@ -627,38 +627,6 @@
          "userSelect"
        ]
@@ -79,5 +54,5 @@ index e65d3cfd00..1aa20eb8b1 100644
        "name": "interactivity",
        "href": "https://drafts.csswg.org/css-ui-4/#propdef-interactivity",
 -- 
-2.37.1.windows.1
+2.53.0
 
