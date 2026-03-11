@@ -3451,7 +3451,16 @@
           "html": "<p>Let <var>visibleRect</var> be <var>defaultVisibleRect</var>.</p>"
         },
         {
-          "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-visiblerect\" id=\"ref-for-dom-videoframeinit-visiblerect⑧\">visibleRect</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②②\">exists</a>, assign it to\n<var>visibleRect</var>.</p>"
+          "html": "If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-visiblerect\" id=\"ref-for-dom-videoframeinit-visiblerect⑧\">visibleRect</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②②\">exists</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If any attribute of <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-visiblerect\" id=\"ref-for-dom-videoframeinit-visiblerect⑨\">visibleRect</a></code> is negative or\nnot finite, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⓪\">TypeError</a></code>.</p>"
+            },
+            {
+              "html": "<p>Assign <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframeinit-visiblerect\" id=\"ref-for-dom-videoframeinit-visiblerect①⓪\">visibleRect</a></code> to <var>visibleRect</var>.</p>"
+            }
+          ]
         },
         {
           "html": "<p>Assign <var>visibleRect</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-x\" id=\"ref-for-dom-domrect-x\">x</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-y\" id=\"ref-for-dom-domrect-y\">y</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-width\" id=\"ref-for-dom-domrect-width\">width</a></code>,\nand <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrect-height\" id=\"ref-for-dom-domrect-height\">height</a></code>, to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-left-slot\" id=\"ref-for-dom-videoframe-visible-left-slot④\">[[visible left]]</a></code>,\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-top-slot\" id=\"ref-for-dom-videoframe-visible-top-slot④\">[[visible top]]</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-width-slot\" id=\"ref-for-dom-videoframe-visible-width-slot⑦\">[[visible width]]</a></code>, and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-height-slot\" id=\"ref-for-dom-videoframe-visible-height-slot⑦\">[[visible height]]</a></code> respectively.</p>"
@@ -3721,13 +3730,16 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If either of <var>overrideRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectinit-width\" id=\"ref-for-dom-domrectinit-width④\">width</a></code> or\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectinit-height\" id=\"ref-for-dom-domrectinit-height④\">height</a></code> is <code>0</code>, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⓪\">TypeError</a></code>.</p>"
+              "html": "<p>If any attribute of <var>overrideRect</var> is negative or not finite, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②①\">TypeError</a></code>.</p>"
             },
             {
-              "html": "<p>If the sum of <var>overrideRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectinit-x\" id=\"ref-for-dom-domrectinit-x②\">x</a></code> and\n<var>overrideRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectinit-width\" id=\"ref-for-dom-domrectinit-width⑤\">width</a></code> is greater than\n<var>codedWidth</var>, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②①\">TypeError</a></code>.</p>"
+              "html": "<p>If either of <var>overrideRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectinit-width\" id=\"ref-for-dom-domrectinit-width④\">width</a></code> or\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectinit-height\" id=\"ref-for-dom-domrectinit-height④\">height</a></code> is <code>0</code>, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②②\">TypeError</a></code>.</p>"
             },
             {
-              "html": "<p>If the sum of <var>overrideRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectinit-y\" id=\"ref-for-dom-domrectinit-y②\">y</a></code> and\n<var>overrideRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectinit-height\" id=\"ref-for-dom-domrectinit-height⑤\">height</a></code> is greater than\n<var>codedHeight</var>, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②②\">TypeError</a></code>.</p>"
+              "html": "<p>If the sum of <var>overrideRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectinit-x\" id=\"ref-for-dom-domrectinit-x②\">x</a></code> and\n<var>overrideRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectinit-width\" id=\"ref-for-dom-domrectinit-width⑤\">width</a></code> is greater than\n<var>codedWidth</var>, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②③\">TypeError</a></code>.</p>"
+            },
+            {
+              "html": "<p>If the sum of <var>overrideRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectinit-y\" id=\"ref-for-dom-domrectinit-y②\">y</a></code> and\n<var>overrideRect</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/geometry-1/#dom-domrectinit-height\" id=\"ref-for-dom-domrectinit-height⑤\">height</a></code> is greater than\n<var>codedHeight</var>, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②④\">TypeError</a></code>.</p>"
             },
             {
               "html": "<p>Assign <var>overrideRect</var> to <var>sourceRect</var>.</p>"
@@ -3738,7 +3750,7 @@
           "html": "<p>Let <var>validAlignment</var> be the result of running the\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#videoframe-verify-rect-offset-alignment\" id=\"ref-for-videoframe-verify-rect-offset-alignment①\">Verify Rect Offset Alignment</a> algorithm with <var>format</var> and\n<var>sourceRect</var>.</p>"
         },
         {
-          "html": "<p>If <var>validAlignment</var> is <code>false</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②③\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>validAlignment</var> is <code>false</code>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑤\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Return <var>sourceRect</var>.</p>"
@@ -3755,7 +3767,7 @@
           "html": "<p>Let <var>numPlanes</var> be the number of planes as defined by <var>format</var>.</p>"
         },
         {
-          "html": "<p>If <var>layout</var> is not <code>undefined</code> and its length does not equal <var>numPlanes</var>,\n throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②④\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>layout</var> is not <code>undefined</code> and its length does not equal <var>numPlanes</var>,\n throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑥\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>minAllocationSize</var> be <code>0</code>.</p>"
@@ -3808,7 +3820,7 @@
                   "html": "<p>Let <var>planeLayout</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dictdef-planelayout\" id=\"ref-for-dictdef-planelayout③\">PlaneLayout</a></code> in <var>layout</var> at position\n<var>planeIndex</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>planeLayout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-planelayout-stride\" id=\"ref-for-dom-planelayout-stride①\">stride</a></code> is less than\n<var>computedLayout</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#computed-plane-layout-sourcewidthbytes\" id=\"ref-for-computed-plane-layout-sourcewidthbytes②\">sourceWidthBytes</a>,\nreturn a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑤\">TypeError</a></code>.</p>"
+                  "html": "<p>If <var>planeLayout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-planelayout-stride\" id=\"ref-for-dom-planelayout-stride①\">stride</a></code> is less than\n<var>computedLayout</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#computed-plane-layout-sourcewidthbytes\" id=\"ref-for-computed-plane-layout-sourcewidthbytes②\">sourceWidthBytes</a>,\nreturn a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑦\">TypeError</a></code>.</p>"
                 },
                 {
                   "html": "<p>Assign <var>planeLayout</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-planelayout-offset\" id=\"ref-for-dom-planelayout-offset①\">offset</a></code> to <var>computedLayout</var>’s\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#computed-plane-layout-destinationoffset\" id=\"ref-for-computed-plane-layout-destinationoffset①\">destinationOffset</a>.</p>"
@@ -3837,7 +3849,7 @@
               "html": "<p>Let <var>planeEnd</var> be the sum of <var>planeSize</var> and <var>computedLayout</var>’s\n    <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#computed-plane-layout-destinationoffset\" id=\"ref-for-computed-plane-layout-destinationoffset③\">destinationOffset</a>.</p>"
             },
             {
-              "html": "<p>If <var>planeSize</var> or <var>planeEnd</var> is greater than maximum range of\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long⑦③\">unsigned long</a></code>, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑥\">TypeError</a></code>.</p>"
+              "html": "<p>If <var>planeSize</var> or <var>planeEnd</var> is greater than maximum range of\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-long\" id=\"ref-for-idl-unsigned-long⑦③\">unsigned long</a></code>, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑧\">TypeError</a></code>.</p>"
             },
             {
               "html": "<p>Append <var>planeEnd</var> to <var>endOffsets</var>.</p>"
@@ -3859,7 +3871,7 @@
                   "html": "<p>If <code>endOffsets[planeIndex]</code> is less than or equal to\n<var>earlierLayout</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#computed-plane-layout-destinationoffset\" id=\"ref-for-computed-plane-layout-destinationoffset④\">destinationOffset</a> or\nif <code>endOffsets[earlierPlaneIndex]</code> is less than or equal to\n<var>computedLayout</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#computed-plane-layout-destinationoffset\" id=\"ref-for-computed-plane-layout-destinationoffset⑤\">destinationOffset</a>,\ncontinue.</p>"
                 },
                 {
-                  "html": "<p>Otherwise, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑦\">TypeError</a></code>.</p>"
+                  "html": "<p>Otherwise, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑨\">TypeError</a></code>.</p>"
                 },
                 {
                   "html": "<p>Increment <var>earlierPlaneIndex</var> by <code>1</code>.</p>"
@@ -4063,7 +4075,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>init</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#valid-imagedecoderinit\" id=\"ref-for-valid-imagedecoderinit\">valid ImageDecoderInit</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑧\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>init</var> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#valid-imagedecoderinit\" id=\"ref-for-valid-imagedecoderinit\">valid ImageDecoderInit</a>, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③⓪\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>If <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webcodecs/#dom-imagedecoderinit-transfer\" id=\"ref-for-dom-imagedecoderinit-transfer\">transfer</a></code> contains more than one reference\nto the same <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-idl-ArrayBuffer①②\">ArrayBuffer</a></code>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror①⑥\">DataCloneError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④③\">DOMException</a></code>.</p>"
@@ -4322,7 +4334,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>type</var> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#valid-image-mime-type\" id=\"ref-for-valid-image-mime-type\">valid image MIME type</a>, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①⑥\">Promise</a></code>\nrejected with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②⑨\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>type</var> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webcodecs/#valid-image-mime-type\" id=\"ref-for-valid-image-mime-type\">valid image MIME type</a>, return a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①⑥\">Promise</a></code>\nrejected with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③①\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①⑦\">Promise</a></code>.</p>"
