@@ -62,11 +62,11 @@
       "rationale": "To <dfn>"
     },
     {
-      "html": "This algorithm returns a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤\">Content Security Policy objects</a>. If the policies cannot\n  be parsed, the returned list will be empty.",
+      "html": "This algorithm returns a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list\" id=\"ref-for-csp-list①\">CSP list</a>. If the policies cannot be parsed, the\n  returned list will have empty <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies①\">policies</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>policies</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a>.</p>"
+          "html": "<p>Let <var>policies</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>token</var> returned by <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#extract-header-list-values\" id=\"ref-for-extract-header-list-values\">extracting header list values</a> given\n  <code>Content-Security-Policy</code> and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>:",
@@ -93,21 +93,12 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>policy</var> of <var>policies</var>:",
-          "rationale": "set",
-          "steps": [
-            {
-              "html": "<p>Set <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-self-origin\" id=\"ref-for-policy-self-origin\">self-origin</a> to <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">url</a>’s\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>.</p>"
-            }
-          ]
-        },
-        {
-          "html": "<p>Return <var>policies</var>.</p>"
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list\" id=\"ref-for-csp-list②\">CSP list</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies②\">policies</a> is <var>policies</var> and\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-self-origin\" id=\"ref-for-csp-list-self-origin\">self-origin</a> is <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>.</p>"
         }
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object③\">global object</a> <var>global</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object①⑧\">policy</a> <var>policy</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>directive</var>, the following algorithm creates a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation\" id=\"ref-for-violation①⑧\">violation</a>\n  object, and populates it with an initial set of data:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object③\">global object</a> <var>global</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object①⑦\">policy</a> <var>policy</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>directive</var>, the following algorithm creates a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation\" id=\"ref-for-violation①⑧\">violation</a>\n  object, and populates it with an initial set of data:",
       "rationale": "let",
       "steps": [
         {
@@ -128,7 +119,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object①⑨\">policy</a> <var>policy</var>,\n  the following algorithm creates a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation\" id=\"ref-for-violation②⓪\">violation</a> object,\n  and populates it with an initial set of data:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object①⑧\">policy</a> <var>policy</var>,\n  the following algorithm creates a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation\" id=\"ref-for-violation②⓪\">violation</a> object,\n  and populates it with an initial set of data:",
       "rationale": "let",
       "steps": [
         {
@@ -153,14 +144,14 @@
           "html": "<p>Let <var>CSP list</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container①\">policy container</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list①\">CSP list</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>policy</var> of <var>CSP list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>policy</var> of <var>CSP list</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies③\">policies</a>:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition⑤\">disposition</a> is \"<code>enforce</code>\",\n  then skip to the next <var>policy</var>.</p>"
             },
             {
-              "html": "<p>Let <var>violates</var> be the result of executing\n  <a href=\"https://w3c.github.io/webappsec-csp/#does-request-violate-policy\">§ 6.7.2.1 Does request violate policy?</a> on <var>request</var> and <var>policy</var>.</p>"
+              "html": "<p>Let <var>violates</var> be the result of executing\n  <a href=\"https://w3c.github.io/webappsec-csp/#does-request-violate-policy\">§ 6.7.2.1 Does request violate policy?</a> on <var>request</var>, <var>policy</var>, and <var>CSP\n  list</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-self-origin\" id=\"ref-for-csp-list-self-origin①\">self-origin</a>.</p>"
             },
             {
               "html": "<p>If <var>violates</var> is not \"<code>Does Not Violate</code>\", then execute\n  <a href=\"https://w3c.github.io/webappsec-csp/#report-violation\">§ 5.5 Report a violation</a> on the result of executing\n  <a href=\"https://w3c.github.io/webappsec-csp/#create-violation-for-request\">§ 2.4.2 Create a violation object for request, and policy.</a> on <var>request</var>, and <var>policy</var>.</p>"
@@ -180,14 +171,14 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>policy</var> of <var>CSP list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>policy</var> of <var>CSP list</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies④\">policies</a>:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-disposition\" id=\"ref-for-policy-disposition⑥\">disposition</a> is \"<code>report</code>\",\n  then skip to the next <var>policy</var>.</p>"
             },
             {
-              "html": "<p>Let <var>violates</var> be the result of executing\n  <a href=\"https://w3c.github.io/webappsec-csp/#does-request-violate-policy\">§ 6.7.2.1 Does request violate policy?</a> on <var>request</var> and <var>policy</var>.</p>"
+              "html": "<p>Let <var>violates</var> be the result of executing\n  <a href=\"https://w3c.github.io/webappsec-csp/#does-request-violate-policy\">§ 6.7.2.1 Does request violate policy?</a> on <var>request</var>, <var>policy</var>, and <var>CSP\n  list</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-self-origin\" id=\"ref-for-csp-list-self-origin②\">self-origin</a>.</p>"
             },
             {
               "html": "If <var>violates</var> is not \"<code>Does Not Violate</code>\", then:",
@@ -219,15 +210,15 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>policy</var> of <var>CSP list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>policy</var> of <var>CSP list</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies⑤\">policies</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>directive</var> of <var>policy</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>directive</var> of <var>policy</var>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If the result of executing <var>directive</var>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-post-request-check\" id=\"ref-for-directive-post-request-check①\">post-request check</a> is \"<code>Blocked</code>\", then:",
+                  "html": "If the result of executing <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-post-request-check\" id=\"ref-for-directive-post-request-check①\">post-request check</a> on <var>request</var>, <var>response</var>,\n  <var>policy</var>, and <var>CSP list</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-self-origin\" id=\"ref-for-csp-list-self-origin③\">self-origin</a> is\n  \"<code>Blocked</code>\", then:",
                   "rationale": "execute",
                   "steps": [
                     {
@@ -248,7 +239,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑥\">response</a> <var>response</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①①\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives⑧\">directive</a> <var>directive</var> and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object②②\">content security policy object</a> <var>policy</var>, run the following steps:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑥\">response</a> <var>response</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①①\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives⑧\">directive</a> <var>directive</var> and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object②①\">content security policy object</a> <var>policy</var>, run the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -309,11 +300,11 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>policy</var> of <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-policy-container\" id=\"ref-for-concept-document-policy-container\">policy container</a>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list⑦\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>policy</var> of <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/dom.html#concept-document-policy-container\" id=\"ref-for-concept-document-policy-container\">policy container</a>’s\n <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list⑦\">CSP list</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>directive</var> of <var>policy</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>directive</var> of <var>policy</var>:",
               "rationale": "execute",
               "steps": [
                 {
@@ -351,11 +342,11 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>policy</var> of <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑥\">Document</a></code>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object⑨\">global object</a>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list③\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>policy</var> of <var>element</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document⑥\">Document</a></code>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object⑨\">global object</a>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list③\">CSP list</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies⑥\">policies</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>directive</var> of <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set⑨\">directive set</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>directive</var> of <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set⑨\">directive set</a>:",
               "rationale": "if",
               "steps": [
                 {
@@ -399,15 +390,18 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>policy</var> of <var>navigation request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container⑥\">policy container</a>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list①⓪\">CSP list</a>:",
+          "html": "<p>Let <var>CSP list</var> be <var>navigation request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container⑥\">policy\n  container</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list①⓪\">CSP list</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies⑦\">policies</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>policy</var> of <var>CSP list</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies⑧\">policies</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">For each</a> <var>directive</var> of <var>policy</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>directive</var> of <var>policy</var>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-pre-navigation-check\" id=\"ref-for-directive-pre-navigation-check\">pre-navigation check</a>\n  returns \"<code>Allowed</code>\" when executed upon <var>navigation request</var>,\n  <var>type</var>, and <var>policy</var> skip to the next <var>directive</var>.</p>"
+                  "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-pre-navigation-check\" id=\"ref-for-directive-pre-navigation-check\">pre-navigation check</a>\n  returns \"<code>Allowed</code>\" when executed upon <var>navigation request</var>,\n  <var>type</var>, <var>policy</var>, and <var>CSP list</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-self-origin\" id=\"ref-for-csp-list-self-origin④\">self-origin</a> skip\n  to the next <var>directive</var>.</p>"
                 },
                 {
                   "html": "<p>Otherwise, let <var>violation</var> be the result of executing\n  <a href=\"https://w3c.github.io/webappsec-csp/#create-violation-for-global\">§ 2.4.1 Create a violation object for global, policy, and directive</a> on <var>navigation request</var>’s\n  <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client②\">client</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global②\">global object</a>,\n  <var>policy</var>, and <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name③\">name</a>.</p>"
@@ -430,11 +424,11 @@
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <var>policy</var> of <var>navigation request</var>’s\n  <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container⑦\">policy container</a>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list①①\">CSP list</a>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">For each</a> <var>policy</var> of <var>navigation request</var>’s\n  <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container⑦\">policy container</a>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list①①\">CSP list</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies⑨\">policies</a>:",
               "rationale": "for",
               "steps": [
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>directive</var> of <var>policy</var>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <var>directive</var> of <var>policy</var>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -467,22 +461,22 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①④\">request</a> <var>navigation request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑨\">response</a> <var>navigation\n  response</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list\" id=\"ref-for-csp-list①\">CSP list</a> <var>response CSP list</var>, a string <var>type</var> (either\n  \"<code>form-submission</code>\" or \"<code>other</code>\"), and a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#navigable\" id=\"ref-for-navigable①\">navigable</a> <var>target</var>, this algorithm\n  returns \"<code>Blocked</code>\" if the active policy blocks the navigation, and \"<code>Allowed</code>\"\n  otherwise:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①④\">request</a> <var>navigation request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑨\">response</a> <var>navigation\n  response</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list\" id=\"ref-for-csp-list③\">CSP list</a> <var>response CSP list</var>, a string <var>type</var> (either\n  \"<code>form-submission</code>\" or \"<code>other</code>\"), and a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#navigable\" id=\"ref-for-navigable①\">navigable</a> <var>target</var>, this algorithm\n  returns \"<code>Blocked</code>\" if the active policy blocks the navigation, and \"<code>Allowed</code>\"\n  otherwise:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> <var>policy</var> of <var>response CSP list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>policy</var> of <var>response CSP list</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies①⓪\">policies</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> <var>directive</var> of <var>policy</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> <var>directive</var> of <var>policy</var>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-navigation-response-check\" id=\"ref-for-directive-navigation-response-check\">navigation response check</a>\n  returns \"<code>Allowed</code>\" when executed upon <var>navigation request</var>, <var>type</var>,\n  <var>navigation response</var>, <var>target</var>, \"<code>response</code>\", and <var>policy</var>\n  skip to the next <var>directive</var>.</p>"
+                  "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-navigation-response-check\" id=\"ref-for-directive-navigation-response-check\">navigation response check</a>\n  returns \"<code>Allowed</code>\" when executed upon <var>navigation request</var>, <var>type</var>,\n  <var>navigation response</var>, <var>target</var>, \"<code>response</code>\", <var>policy</var>, and\n  <var>response CSP list</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-self-origin\" id=\"ref-for-csp-list-self-origin⑤\">self-origin</a>,\n  skip to the next <var>directive</var>.</p>"
                 },
                 {
                   "html": "<p>Otherwise, let <var>violation</var> be the result of executing\n  <a href=\"https://w3c.github.io/webappsec-csp/#create-violation-for-global\">§ 2.4.1 Create a violation object for global, policy, and directive</a> on null, <var>policy</var>, and\n  <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name④\">name</a>.</p>"
@@ -501,15 +495,15 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For each</a> <var>policy</var> of <var>navigation request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container⑧\">policy container</a>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list①②\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> <var>policy</var> of <var>navigation request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container⑧\">policy container</a>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list①②\">CSP list</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies①①\">policies</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For each</a> <var>directive</var> of <var>policy</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For each</a> <var>directive</var> of <var>policy</var>:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-navigation-response-check\" id=\"ref-for-directive-navigation-response-check①\">navigation response check</a>\n  returns \"<code>Allowed</code>\" when executed upon <var>navigation request</var>, <var>type</var>,\n  <var>navigation response</var>, <var>target</var>, \"<code>source</code>\", and <var>policy</var>\n  skip to the next <var>directive</var>.</p>"
+                  "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-navigation-response-check\" id=\"ref-for-directive-navigation-response-check①\">navigation response check</a>\n  returns \"<code>Allowed</code>\" when executed upon <var>navigation request</var>, <var>type</var>,\n  <var>navigation response</var>, <var>target</var>, \"<code>source</code>\", <var>policy</var>, and\n  <var>response CSP list</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-self-origin\" id=\"ref-for-csp-list-self-origin⑥\">self-origin</a>,\n  skip to the next <var>directive</var>.</p>"
                 },
                 {
                   "html": "<p>Otherwise, let <var>violation</var> be the result of executing\n  <a href=\"https://w3c.github.io/webappsec-csp/#create-violation-for-global\">§ 2.4.1 Create a violation object for global, policy, and directive</a> on <var>navigation request</var>’s\n  <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client④\">client</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global④\">global object</a>,\n  <var>policy</var>, and <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name⑤\">name</a>.</p>"
@@ -540,11 +534,11 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list④\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list④\">CSP list</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies①②\">policies</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>directive</var> of <var>policy</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> <var>directive</var> of <var>policy</var>:",
               "rationale": "execute",
               "steps": [
                 {
@@ -567,11 +561,11 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list⑤\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list⑤\">CSP list</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies①③\">policies</a>:",
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>directive</var> of <var>policy</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>directive</var> of <var>policy</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -638,7 +632,7 @@
                   "html": "<p class=\"assertion\">Assert: <var>parameterArgs</var>’ [list/size=] is equal to [parameterStrings]' <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a>.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>index</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range\">the range</a> 0 to |parameterArgs]' [list/size=]:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>index</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range\">the range</a> 0 to |parameterArgs]' [list/size=]:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -681,7 +675,7 @@
           "html": "<p>Let <var>global</var> be <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global\">global object</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑤\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list⑦\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list⑦\">CSP list</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies①④\">policies</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -738,7 +732,7 @@
           "html": "<p>Let <var>result</var> be \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list⑨\">CSP list</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑤\">For each</a> <var>policy</var> of <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list⑨\">CSP list</a>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies①⑤\">policies</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -878,7 +872,7 @@
                   "html": "<p>If <var>violation</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#violation-policy\" id=\"ref-for-violation-policy⑦\">policy</a>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-directive-set\" id=\"ref-for-policy-directive-set①①\">directive set</a> contains a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives①⑧\">directive</a> named\n  \"<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#report-to\" id=\"ref-for-report-to①\"><code>report-to</code></a>\", skip the remaining substeps.</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>token</var> of <var>directive</var>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value①③\">value</a>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">For each</a> <var>token</var> of <var>directive</var>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value①③\">value</a>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -917,7 +911,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⑨\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object②⑨\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①⑨\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object②⑧\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin⑤\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -927,12 +921,12 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>child-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>Return the result of executing the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-pre-request-check\" id=\"ref-for-directive-pre-request-check②\">pre-request\n  check</a> for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives②①\">directive</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name①①\">name</a>\n  is <var>name</var> on <var>request</var> and <var>policy</var>, using this directive’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value①⑤\">value</a> for the comparison.</p>"
+          "html": "<p>Return the result of executing the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-pre-request-check\" id=\"ref-for-directive-pre-request-check②\">pre-request\n  check</a> for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives②①\">directive</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name①①\">name</a> is\n  <var>name</var> on <var>request</var>, <var>policy</var>, and <var>self-origin</var> using this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value①⑤\">value</a> for the comparison.</p>"
         }
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②⓪\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①⓪\">response</a> <var>response</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③⓪\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②⓪\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①⓪\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object②⑨\">policy</a> <var>policy</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin⑥\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -942,12 +936,12 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>child-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>Return the result of executing the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-post-request-check\" id=\"ref-for-directive-post-request-check③\">post-request\n  check</a> for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives②②\">directive</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name①②\">name</a>\n  is <var>name</var> on <var>request</var>, <var>response</var>, and <var>policy</var>, using this directive’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value①⑥\">value</a> for the comparison.</p>"
+          "html": "<p>Return the result of executing the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-post-request-check\" id=\"ref-for-directive-post-request-check③\">post-request\n  check</a> for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives②②\">directive</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name①②\">name</a> is\n  <var>name</var> on <var>request</var>, <var>response</var>, <var>policy</var>, and <var>self-origin</var>, using this\n  directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value①⑥\">value</a> for the comparison.</p>"
         }
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②②\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③①\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②②\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③⓪\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin⑦\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -972,7 +966,7 @@
           ]
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, <var>source list</var>, and <var>policy</var>, is \"<code>Matches</code>\", return\n  \"<code>Allowed</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on <var>request</var>,\n  <var>source list</var>, and <var>self-origin</var>, is \"<code>Matches</code>\", return\n  \"<code>Allowed</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Blocked</code>\".</p>"
@@ -980,7 +974,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②③\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①①\">response</a> <var>response</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③②\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②③\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①①\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③①\">policy</a> <var>policy</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin⑧\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1005,7 +999,7 @@
           ]
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, <var>source list</var>, and <var>policy</var>, is \"<code>Matches</code>\",\n  return \"<code>Allowed</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, <var>source list</var>, and <var>self-origin</var>, is\n  \"<code>Matches</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Blocked</code>\".</p>"
@@ -1013,7 +1007,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②④\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③③\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②④\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③②\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin⑨\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1023,12 +1017,12 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>default-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>Return the result of executing the\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-pre-request-check\" id=\"ref-for-directive-pre-request-check⑤\">pre-request check</a> for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives②③\">directive</a> whose\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name①③\">name</a> is <var>name</var> on <var>request</var> and <var>policy</var>, using\n  this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value①⑨\">value</a> for the comparison.</p>"
+          "html": "<p>Return the result of executing the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-pre-request-check\" id=\"ref-for-directive-pre-request-check⑤\">pre-request\n  check</a> for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives②③\">directive</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name①③\">name</a> is\n  <var>name</var> on <var>request</var>, <var>policy</var>, and <var>self-origin</var>, using this directive’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value①⑨\">value</a> for the comparison.</p>"
         }
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②⑤\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①②\">response</a> <var>response</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③④\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②⑤\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①②\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③③\">policy</a> <var>policy</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin①⓪\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1038,12 +1032,12 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>default-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>Return the result of executing the\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-post-request-check\" id=\"ref-for-directive-post-request-check⑥\">post-request check</a> for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives②④\">directive</a> whose\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name①④\">name</a> is <var>name</var> on <var>request</var>, <var>response</var>, and\n  <var>policy</var>, using this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②⓪\">value</a> for the\n  comparison.</p>"
+          "html": "<p>Return the result of executing the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-post-request-check\" id=\"ref-for-directive-post-request-check⑥\">post-request\n  check</a> for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives②④\">directive</a> whose <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name①④\">name</a> is\n  <var>name</var> on <var>request</var>, <var>response</var>, <var>policy</var>, and <var>self-origin</var>, using this\n  directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②⓪\">value</a> for the comparison.</p>"
         }
       ]
     },
     {
-      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element②\">Element</a></code> <var>element</var>, a string <var>type</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③⑤\">policy</a>\n  <var>policy</var> and a string <var>source</var>:",
+      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element②\">Element</a></code> <var>element</var>, a string <var>type</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③④\">policy</a>\n  <var>policy</var> and a string <var>source</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1058,7 +1052,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②⑥\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③⑥\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②⑥\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③⑤\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin①①\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1068,7 +1062,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>font-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②②\">value</a>, and\n  <var>policy</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on <var>request</var>,\n  this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②②\">value</a>, and <var>self-origin</var>, is\n  \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1076,7 +1070,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②⑦\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①③\">response</a> <var>response</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③⑦\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②⑦\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①③\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③⑥\">policy</a> <var>policy</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin①②\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1086,7 +1080,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>font-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②③\">value</a>,\n  and <var>policy</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②③\">value</a>,\n  and <var>self-origin</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1094,7 +1088,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②⑧\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③⑧\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②⑧\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③⑦\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin①③\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1104,7 +1098,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>frame-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②④\">value</a>, and\n  <var>policy</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on <var>request</var>,\n  this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②④\">value</a>, and <var>self-origin</var>, is\n  \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1112,7 +1106,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②⑨\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①④\">response</a> <var>response</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③⑨\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②⑨\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①④\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③⑧\">policy</a> <var>policy</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin①④\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1122,7 +1116,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>frame-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②⑤\">value</a>,\n  and <var>policy</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②⑤\">value</a>,\n  and <var>self-origin</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1130,7 +1124,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③②\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④⓪\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③②\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③⑨\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin①⑤\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1140,7 +1134,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>img-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②⑥\">value</a>, and <var>policy</var>,\n  is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on <var>request</var>,\n  this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②⑥\">value</a>, and <var>self-origin</var>, is\n  \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1148,7 +1142,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③③\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①⑤\">response</a> <var>response</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④①\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③③\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①⑤\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④⓪\">policy</a> <var>policy</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin①⑥\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1158,7 +1152,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>img-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②⑦\">value</a>,\n  and <var>policy</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②⑦\">value</a>,\n  and <var>self-origin</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1166,7 +1160,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③④\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④②\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③④\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④①\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin①⑦\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1176,7 +1170,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>manifest-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②⑧\">value</a>, and <var>policy</var>,\n  is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on <var>request</var>,\n  this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②⑧\">value</a>, and <var>self-origin</var>, is\n  \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1184,7 +1178,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③⑤\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①⑥\">response</a> <var>response</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④③\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③⑤\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①⑥\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④②\">policy</a> <var>policy</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin①⑧\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1194,7 +1188,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>manifest-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②⑨\">value</a>,\n  and <var>policy</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②⑨\">value</a>,\n  and <var>self-origin</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1202,7 +1196,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③⑥\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④④\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③⑥\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④③\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin①⑨\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1212,7 +1206,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>media-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③⓪\">value</a>, and <var>policy</var>,\n  is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on <var>request</var>,\n  this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③⓪\">value</a>, and <var>self-origin</var>, is\n  \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1220,7 +1214,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③⑦\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①⑦\">response</a> <var>response</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④⑤\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③⑦\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①⑦\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④④\">policy</a> <var>policy</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin②⓪\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1230,7 +1224,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>media-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③①\">value</a>,\n  and <var>policy</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③①\">value</a>,\n  and <var>self-origin</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1238,7 +1232,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③⑧\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④⑦\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③⑧\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④⑥\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin②①\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1248,7 +1242,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>object-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③②\">value</a>, and <var>policy</var>,\n  is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on <var>request</var>,\n  this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③②\">value</a>, and <var>self-origin</var>, is\n  \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1256,7 +1250,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③⑨\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①⑧\">response</a> <var>response</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④⑧\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request③⑨\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①⑧\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④⑦\">policy</a> <var>policy</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin②②\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1266,7 +1260,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>object-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③③\">value</a>,\n  and <var>policy</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③③\">value</a>,\n  and <var>self-origin</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1274,7 +1268,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④①\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④⑨\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④①\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④⑧\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin②③\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1284,12 +1278,12 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>script-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>Return the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#script-pre-request\">§ 6.7.1.1 Script directives pre-request check</a> on <var>request</var>,\n  this directive, and <var>policy</var>.</p>"
+          "html": "<p>Return the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#script-pre-request\">§ 6.7.1.1 Script directives pre-request check</a> on <var>request</var>,\n  this directive, <var>policy</var>, and <var>self-origin</var>.</p>"
         }
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④②\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②⓪\">response</a> <var>response</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤⓪\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④②\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②⓪\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④⑨\">policy</a> <var>policy</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin②④\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1299,12 +1293,12 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>script-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>Return the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#script-post-request\">§ 6.7.1.2 Script directives post-request check</a> on <var>request</var>,\n  <var>response</var>, this directive, and <var>policy</var>.</p>"
+          "html": "<p>Return the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#script-post-request\">§ 6.7.1.2 Script directives post-request check</a> on <var>request</var>,\n  <var>response</var>, this directive, <var>policy</var>, and <var>self-origin</var>.</p>"
         }
       ]
     },
     {
-      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element③\">Element</a></code> <var>element</var>, a string <var>type</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤①\">policy</a>\n  <var>policy</var> and a string <var>source</var>:",
+      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element③\">Element</a></code> <var>element</var>, a string <var>type</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤⓪\">policy</a>\n  <var>policy</var> and a string <var>source</var>:",
       "rationale": "assert",
       "steps": [
         {
@@ -1325,7 +1319,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④③\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤②\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④③\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤①\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin②⑤\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1335,12 +1329,12 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>script-src-elem</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>Return the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#script-pre-request\">§ 6.7.1.1 Script directives pre-request check</a> on <var>request</var>,\n  this directive, and <var>policy</var>.</p>"
+          "html": "<p>Return the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#script-pre-request\">§ 6.7.1.1 Script directives pre-request check</a> on <var>request</var>,\n  this directive, <var>policy</var>, and <var>self-origin</var>.</p>"
         }
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④④\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②①\">response</a> <var>response</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤③\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④④\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②①\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤②\">policy</a> <var>policy</var> and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin②⑥\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1350,12 +1344,12 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>script-src-elem</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>Return the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#script-post-request\">§ 6.7.1.2 Script directives post-request check</a> on <var>request</var>,\n  <var>response</var>, this directive, and <var>policy</var>.</p>"
+          "html": "<p>Return the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#script-post-request\">§ 6.7.1.2 Script directives post-request check</a> on <var>request</var>,\n  <var>response</var>, this directive, <var>policy</var>, and <var>self-origin</var>.</p>"
         }
       ]
     },
     {
-      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element④\">Element</a></code> <var>element</var>, a string <var>type</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤④\">policy</a>\n  <var>policy</var> and a string <var>source</var>:",
+      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element④\">Element</a></code> <var>element</var>, a string <var>type</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤③\">policy</a>\n  <var>policy</var> and a string <var>source</var>:",
       "rationale": "assert",
       "steps": [
         {
@@ -1376,7 +1370,7 @@
       ]
     },
     {
-      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑤\">Element</a></code> <var>element</var>, a string <var>type</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤⑤\">policy</a>\n  <var>policy</var> and a string <var>source</var>:",
+      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑤\">Element</a></code> <var>element</var>, a string <var>type</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤④\">policy</a>\n  <var>policy</var> and a string <var>source</var>:",
       "rationale": "assert",
       "steps": [
         {
@@ -1433,7 +1427,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④⑥\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤⑥\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④⑥\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤⑤\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin②⑦\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1446,7 +1440,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-nonce-to-source-list\">§ 6.7.2.3 Does nonce match source list?</a> on\n  <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-nonce-metadata\" id=\"ref-for-concept-request-nonce-metadata①\">cryptographic nonce metadata</a> and this\n  directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③⑧\">value</a> is \"<code>Matches</code>\", return\n  \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③⑨\">value</a>, and <var>policy</var>,\n  is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on <var>request</var>,\n  this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value③⑨\">value</a>, and <var>self-origin</var>, is\n  \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1454,7 +1448,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④⑦\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②③\">response</a> <var>response</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤⑦\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④⑦\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②③\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤⑥\">policy</a> <var>policy</var>, and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin②⑧\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1467,7 +1461,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-nonce-to-source-list\">§ 6.7.2.3 Does nonce match source list?</a> on\n  <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-nonce-metadata\" id=\"ref-for-concept-request-nonce-metadata②\">cryptographic nonce metadata</a> and this\n  directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value④⓪\">value</a> is \"<code>Matches</code>\", return\n  \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value④①\">value</a>,\n  and <var>policy</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value④①\">value</a>,\n  and <var>self-origin</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1475,7 +1469,7 @@
       ]
     },
     {
-      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑥\">Element</a></code> <var>element</var>, a string <var>type</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤⑧\">policy</a>\n  <var>policy</var> and a string <var>source</var>:",
+      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑥\">Element</a></code> <var>element</var>, a string <var>type</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤⑦\">policy</a>\n  <var>policy</var> and a string <var>source</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1493,7 +1487,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④⑧\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤⑨\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④⑧\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤⑧\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin②⑨\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1506,7 +1500,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-nonce-to-source-list\">§ 6.7.2.3 Does nonce match source list?</a> on\n  <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-nonce-metadata\" id=\"ref-for-concept-request-nonce-metadata③\">cryptographic nonce metadata</a> and this\n  directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value④③\">value</a> is \"<code>Matches</code>\", return\n  \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value④④\">value</a>, and <var>policy</var>,\n  is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on <var>request</var>,\n  this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value④④\">value</a>, and <var>self-origin</var>, is\n  \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1514,7 +1508,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④⑨\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②④\">response</a> <var>response</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥⓪\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④⑨\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②④\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤⑨\">policy</a> <var>policy</var>, and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin③⓪\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1527,7 +1521,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-nonce-to-source-list\">§ 6.7.2.3 Does nonce match source list?</a> on\n  <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-nonce-metadata\" id=\"ref-for-concept-request-nonce-metadata④\">cryptographic nonce metadata</a> and this\n  directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value④⑤\">value</a> is \"<code>Matches</code>\", return\n  \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value④⑥\">value</a>,\n  and <var>policy</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value④⑥\">value</a>,\n  and <var>self-origin</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1535,7 +1529,7 @@
       ]
     },
     {
-      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑦\">Element</a></code> <var>element</var>, a string <var>type</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥①\">policy</a>\n  <var>policy</var> and a string <var>source</var>:",
+      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑦\">Element</a></code> <var>element</var>, a string <var>type</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥⓪\">policy</a>\n  <var>policy</var> and a string <var>source</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1553,7 +1547,7 @@
       ]
     },
     {
-      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑧\">Element</a></code> <var>element</var>, a string <var>type</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥②\">policy</a>\n  <var>policy</var> and a string <var>source</var>:",
+      "html": "Given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element⑧\">Element</a></code> <var>element</var>, a string <var>type</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥①\">policy</a>\n  <var>policy</var> and a string <var>source</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1583,7 +1577,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⓪\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥③\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⓪\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥②\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin③①\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1593,7 +1587,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>worker-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑤⓪\">value</a>, and <var>policy</var>,\n  is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on <var>request</var>,\n  this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑤⓪\">value</a>, and <var>self-origin</var>, is\n  \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1601,7 +1595,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤①\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②⑤\">response</a> <var>response</var>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥④\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤①\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②⑤\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥③\">policy</a> <var>policy</var>, and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin③②\">origin</a> <var>self-origin</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -1611,7 +1605,7 @@
           "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#should-directive-execute\">§ 6.8.4 Should fetch directive execute</a> on <var>name</var>,\n  <code>worker-src</code> and <var>policy</var> is \"<code>No</code>\", return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑤①\">value</a>,\n  and <var>policy</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+          "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑤①\">value</a>,\n  and <var>self-origin</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Allowed</code>\".</p>"
@@ -1620,10 +1614,13 @@
     },
     {
       "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url⑥\">URL</a></code> <var>base</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①①\">Document</a></code> <var>document</var>, this algorithm\n  returns \"<code>Allowed</code>\" if <var>base</var> may be used as the value of a <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#the-base-element\" id=\"ref-for-the-base-element②\">base</a></code>\n  element’s <code><a data-link-type=\"element-sub\" href=\"https://html.spec.whatwg.org/multipage/semantics.html#attr-base-href\" id=\"ref-for-attr-base-href①\">href</a></code> attribute, and \"<code>Blocked</code>\" otherwise:",
-      "rationale": "for",
+      "rationale": "let",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <var>policy</var> of <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①②\">global object</a>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list①⓪\">csp list</a>:",
+          "html": "<p>Let <var>CSP list</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①②\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#global-object-csp-list\" id=\"ref-for-global-object-csp-list①⓪\">csp list</a></p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>policy</var> of <var>CSP list</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-policies\" id=\"ref-for-csp-list-policies①⑥\">policies</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -1636,7 +1633,7 @@
               "html": "<p>If <var>source list</var> is null, skip to the next <var>policy</var>.</p>"
             },
             {
-              "html": "If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-url-to-source-list\">§ 6.7.2.7 Does url match source list in origin with redirect count?</a> on <var>base</var>, <var>source list</var>,\n  <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-self-origin\" id=\"ref-for-policy-self-origin①\">self-origin</a>, and <code>0</code> is \"<code>Does Not Match</code>\":",
+              "html": "If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-url-to-source-list\">§ 6.7.2.7 Does url match source list in origin with redirect count?</a> on <var>base</var>,\n  <var>source list</var>, <var>CSP list</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list-self-origin\" id=\"ref-for-csp-list-self-origin⑦\">self-origin</a>, and <code>0</code> is\n  \"<code>Does Not Match</code>\":",
               "rationale": "let",
               "steps": [
                 {
@@ -1661,7 +1658,7 @@
       ]
     },
     {
-      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①③\">Document</a></code> or <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①④\">global object</a> <var>context</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥⑤\">policy</a>\n  <var>policy</var>:",
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①③\">Document</a></code> or <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①④\">global object</a> <var>context</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥④\">policy</a>\n  <var>policy</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -1682,7 +1679,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤②\">request</a> <var>request</var>, a string <var>navigation type</var> (\"<code>form-submission</code>\" or\n  \"<code>other</code>\"), and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥⑥\">policy</a> <var>policy</var> this algorithm returns \"<code>Blocked</code>\" if a form\n  submission violates the <code>form-action</code> directive’s constraints, and \"<code>Allowed</code>\"\n  otherwise. This constitutes the <code>form-action</code> directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-pre-navigation-check\" id=\"ref-for-directive-pre-navigation-check①\">pre-navigation check</a>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤②\">request</a> <var>request</var>, a string <var>navigation type</var>\n  (\"<code>form-submission</code>\" or \"<code>other</code>\"), a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥⑤\">policy</a> <var>policy</var>, and an\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin③③\">origin</a> <var>self-origin</var>, this algorithm returns \"<code>Blocked</code>\" if a form\n  submission violates the <code>form-action</code> directive’s constraints, and \"<code>Allowed</code>\"\n  otherwise. This constitutes the <code>form-action</code> directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-pre-navigation-check\" id=\"ref-for-directive-pre-navigation-check①\">pre-navigation\n  check</a>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1693,7 +1690,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑤④\">value</a>, and a\n  <var>policy</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+              "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑤④\">value</a>,\n  and <var>self-origin</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
             }
           ]
         },
@@ -1703,7 +1700,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤③\">request</a> <var>request</var>, a string <var>navigation type</var>\n  (\"<code>form-submission</code>\" or \"<code>other</code>\"), a\n  <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②⑥\">response</a> <var>navigation response</var>, a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#navigable\" id=\"ref-for-navigable③\">navigable</a> <var>target</var>,\n  a string <var>check type</var> (\"<code>source</code>\" or \"<code>response</code>\"), and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥⑦\">policy</a> <var>policy</var> this algorithm returns \"<code>Blocked</code>\" if one or\n  more of the ancestors of <var>target</var> violate the <code>frame-ancestors</code> directive\n  delivered with the response, and \"<code>Allowed</code>\" otherwise. This constitutes the\n  <code>frame-ancestors</code> directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-navigation-response-check\" id=\"ref-for-directive-navigation-response-check②\">navigation response check</a>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤③\">request</a> <var>request</var>, a string <var>navigation type</var>\n  (\"<code>form-submission</code>\" or \"<code>other</code>\"), a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②⑥\">response</a> <var>navigation response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#navigable\" id=\"ref-for-navigable③\">navigable</a> <var>target</var>, a string <var>check type</var> (\"<code>source</code>\" or \"<code>response</code>\"),\n  a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥⑥\">policy</a> <var>policy</var>, and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin③④\">origin</a>\n  <var>self-origin</var>, this algorithm returns \"<code>Blocked</code>\" if one or more of the\n  ancestors of <var>target</var> violate the <code>frame-ancestors</code> directive delivered with\n  the response, and \"<code>Allowed</code>\" otherwise. This constitutes the\n  <code>frame-ancestors</code> directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-navigation-response-check\" id=\"ref-for-directive-navigation-response-check②\">navigation response check</a>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1732,7 +1729,7 @@
               "html": "<p>Let <var>origin</var> be the result of executing the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser①\">URL parser</a> on the\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">ASCII serialization</a>\n  of <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document-origin\" id=\"ref-for-concept-document-origin\">origin</a>.</p>"
             },
             {
-              "html": "<p>If <a href=\"https://w3c.github.io/webappsec-csp/#match-url-to-source-list\">§ 6.7.2.7 Does url match source list in origin with redirect count?</a> returns <code>Does Not Match</code> when\n  executed upon <var>origin</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑤⑤\">value</a>,\n  <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#policy-self-origin\" id=\"ref-for-policy-self-origin②\">self-origin</a>, and <code>0</code>, return \"<code>Blocked</code>\".</p>"
+              "html": "<p>If <a href=\"https://w3c.github.io/webappsec-csp/#match-url-to-source-list\">§ 6.7.2.7 Does url match source list in origin with redirect count?</a> returns <code>Does Not Match</code> when\n  executed upon <var>origin</var>, this directive’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑤⑤\">value</a>,\n  <var>self-origin</var>, and <code>0</code>, return \"<code>Blocked</code>\".</p>"
             },
             {
               "html": "<p>Set <var>current</var> to <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable\">node navigable</a>.</p>"
@@ -1745,7 +1742,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤④\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives③①\">directive</a> <var>directive</var>,\n  and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥⑨\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤④\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives③①\">directive</a> <var>directive</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥⑧\">policy</a> <var>policy</var>, and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin③⑤\">origin</a>\n  <var>self-origin</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -1768,7 +1765,7 @@
               ]
             },
             {
-              "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑤⑨\">value</a>, and <var>policy</var>,\n  is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+              "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑤⑨\">value</a>, and\n  <var>self-origin</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
             }
           ]
         },
@@ -1778,7 +1775,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⑤\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②⑦\">response</a> <var>response</var>,\n  a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives③②\">directive</a> <var>directive</var>, and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑦⓪\">policy</a> <var>policy</var>:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⑤\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response②⑦\">response</a> <var>response</var>, a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives③②\">directive</a> <var>directive</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥⑨\">policy</a> <var>policy</var>, and an\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin③⑥\">origin</a> <var>self-origin</var>:",
       "rationale": "if",
       "steps": [
         {
@@ -1804,7 +1801,7 @@
               ]
             },
             {
-              "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑥③\">value</a>,\n  and <var>policy</var>, is \"<code>Does Not Match</code>\", return \"<code>Blocked</code>\".</p>"
+              "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-response-to-source-list\">§ 6.7.2.6 Does response to request match source list?</a> on\n  <var>response</var>, <var>request</var>, <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑥③\">value</a>,\n  and <var>self-origin</var>, is \"<code>Does Not Match</code>\", return\n  \"<code>Blocked</code>\".</p>"
             }
           ]
         },
@@ -1814,21 +1811,21 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⑥\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑦①\">policy</a> <var>policy</var>, this\n  algorithm returns the violated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives③③\">directive</a> if the request violates the\n  policy, and \"<code>Does Not Violate</code>\" otherwise.",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⑥\">request</a> <var>request</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑦⓪\">policy</a> <var>policy</var>,\n  and an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin③⑦\">origin</a> <var>self-origin</var>, this algorithm returns the violated\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives③③\">directive</a> if the request violates the policy, and \"<code>Does Not Violate</code>\"\n  otherwise.",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-initiator\" id=\"ref-for-concept-request-initiator①\">initiator</a> is \"<code>prefetch</code>\", then return the result of executing\n  <a href=\"https://w3c.github.io/webappsec-csp/#does-resource-hint-violate-policy\">§ 6.7.2.2 Does resource hint request violate policy?</a> on <var>request</var> and <var>policy</var>.</p>"
+          "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-initiator\" id=\"ref-for-concept-request-initiator①\">initiator</a> is \"<code>prefetch</code>\", then return the\n  result of executing <a href=\"https://w3c.github.io/webappsec-csp/#does-resource-hint-violate-policy\">§ 6.7.2.2 Does resource hint request violate policy?</a> on <var>request</var>,\n  <var>policy</var>, and <var>self-origin</var>.</p>"
         },
         {
           "html": "<p>Let <var>violates</var> be \"<code>Does Not Violate</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑨\">For each</a> <var>directive</var> of <var>policy</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <var>directive</var> of <var>policy</var>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>result</var> be the result of executing <var>directive</var>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-pre-request-check\" id=\"ref-for-directive-pre-request-check①⑧\">pre-request check</a> on <var>request</var> and <var>policy</var>.</p>"
+              "html": "<p>Let <var>result</var> be the result of executing <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-pre-request-check\" id=\"ref-for-directive-pre-request-check①⑧\">pre-request check</a> on <var>request</var>, <var>policy</var>, and\n  <var>self-origin</var>.</p>"
             },
             {
               "html": "<p>If <var>result</var> is \"<code>Blocked</code>\", then let <var>violates</var> be <var>directive</var>.</p>"
@@ -1841,7 +1838,7 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⑦\">request</a> <var>request</var> and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑦②\">policy</a> <var>policy</var>, this\n  algorithm returns the default <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives③④\">directive</a> if the resource-hint request violates all the\n  policies, and \"<code>Does Not Violate</code>\" otherwise.",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request⑤⑦\">request</a> <var>request</var>,a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑦①\">policy</a> <var>policy</var>, and\n  an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin③⑧\">origin</a> <var>self-origin</var>, this algorithm returns the default\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives③④\">directive</a> if the resource-hint request violates all the policies, and\n  \"<code>Does Not Violate</code>\" otherwise.",
       "rationale": "let",
       "steps": [
         {
@@ -1851,7 +1848,7 @@
           "html": "<p>If <var>defaultDirective</var> does not exist, return \"<code>Does Not Violate</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⓪\">For each</a> <var>directive</var> of <var>policy</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑨\">For each</a> <var>directive</var> of <var>policy</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1861,7 +1858,7 @@
               "html": "<p class=\"assertion\">Assert: <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑥④\">value</a> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-lists\" id=\"ref-for-source-lists①②\">source list</a>.</p>"
             },
             {
-              "html": "<p>Let <var>result</var> be the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on\n  <var>request</var>, <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑥⑤\">value</a>, and\n  <var>policy</var>.</p>"
+              "html": "<p>Let <var>result</var> be the result of executing\n <a href=\"https://w3c.github.io/webappsec-csp/#match-request-to-source-list\">§ 6.7.2.5 Does request match source list?</a> on <var>request</var>, <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value⑥⑤\">value</a>, and <var>self-origin</var>.</p>"
             },
             {
               "html": "<p>If <var>result</var> is \"<code>Allowed</code>\", then return \"<code>Does Not Violate</code>\".</p>"
@@ -1884,7 +1881,7 @@
           "html": "<p>If <var>nonce</var> is the empty string, return \"<code>Does Not Match</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③①\">For each</a> <var>expression</var> of <var>source list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⓪\">For each</a> <var>expression</var> of <var>source list</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1917,7 +1914,7 @@
           "html": "<p>If <var>integrity sources</var> is \"<code>no metadata</code>\" or an empty set, return \"<code>Does       Not Match</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③②\">For each</a> <var>source</var> of <var>integrity sources</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③①\">For each</a> <var>source</var> of <var>integrity sources</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1931,7 +1928,7 @@
       ]
     },
     {
-      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url⑨\">URL</a></code> <var>url</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-lists\" id=\"ref-for-source-lists①⑦\">source list</a> <var>source list</var>, an\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin①\">origin</a> <var>origin</var>, and a number <var>redirect count</var>, this\n  algorithm returns \"<code>Matches</code>\" if the URL matches one or more source\n  expressions in <var>source list</var>, or \"<code>Does Not Match</code>\" otherwise:",
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url⑨\">URL</a></code> <var>url</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-lists\" id=\"ref-for-source-lists①⑦\">source list</a> <var>source list</var>, an\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin④①\">origin</a> <var>origin</var>, and a number <var>redirect count</var>, this\n  algorithm returns \"<code>Matches</code>\" if the URL matches one or more source\n  expressions in <var>source list</var>, or \"<code>Does Not Match</code>\" otherwise:",
       "rationale": "assert",
       "steps": [
         {
@@ -1944,7 +1941,7 @@
           "html": "<p>If <var>source list</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> is 1, and <var>source list</var>[0] is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive①①\">ASCII\n  case-insensitive</a> match for the string \"<code>'none'</code>\", return \"<code>Does Not       Match</code>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③③\">For each</a> <var>expression</var> of <var>source list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③②\">For each</a> <var>expression</var> of <var>source list</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1958,7 +1955,7 @@
       ]
     },
     {
-      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url①⓪\">URL</a></code> <var>url</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression①②\">source expression</a> <var>expression</var>, an\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin②\">origin</a> <var>origin</var>, and a number <var>redirect count</var>, this algorithm\n  returns \"<code>Matches</code>\" if <var>url</var> matches <var>expression</var>, and \"<code>Does Not Match</code>\"\n  otherwise.",
+      "html": "Given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://url.spec.whatwg.org/#url\" id=\"ref-for-url①⓪\">URL</a></code> <var>url</var>, a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression①②\">source expression</a> <var>expression</var>, an\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-origin\" id=\"ref-for-concept-origin④②\">origin</a> <var>origin</var>, and a number <var>redirect count</var>, this algorithm\n  returns \"<code>Matches</code>\" if <var>url</var> matches <var>expression</var>, and \"<code>Does Not Match</code>\"\n  otherwise.",
       "rationale": "if",
       "steps": [
         {
@@ -2146,7 +2143,7 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③④\">For each</a> <var>piece A</var> of <var>path list A</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③③\">For each</a> <var>piece A</var> of <var>path list A</var>:",
           "rationale": "let",
           "steps": [
             {
@@ -2176,7 +2173,7 @@
           "html": "<p>If <var>element</var> does not have an attribute named \"<code>nonce</code>\", return \"<code>Not       Nonceable</code>\".</p>"
         },
         {
-          "html": "If <var>element</var> is a <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#script\" id=\"ref-for-script⑥\">script</a></code> element, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑤\">for each</a> <var>attribute</var> of\n  <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute\">attribute list</a>:",
+          "html": "If <var>element</var> is a <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/scripting.html#script\" id=\"ref-for-script⑥\">script</a></code> element, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③④\">for each</a> <var>attribute</var> of\n  <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute\">attribute list</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -2203,7 +2200,7 @@
           "html": "<p>Let <var>allow all inline</var> be <code>false</code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑥\">For each</a> <var>expression</var> of <var>list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑤\">For each</a> <var>expression</var> of <var>list</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -2234,7 +2231,7 @@
           "rationale": "for",
           "steps": [
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑦\">For each</a> <var>expression</var> of <var>list</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑥\">For each</a> <var>expression</var> of <var>list</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -2248,7 +2245,7 @@
           "html": "<p>Let <var>unsafe-hashes flag</var> be <code>false</code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑧\">For each</a> <var>expression</var> of <var>list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑦\">For each</a> <var>expression</var> of <var>list</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -2264,7 +2261,7 @@
               "html": "<p>Set <var>source</var> to the result of executing <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encode</a>\n  on the result of executing <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#javascript-string-convert\" id=\"ref-for-javascript-string-convert\">JavaScript string converting</a>\n  on <var>source</var>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑨\">For each</a> <var>expression</var> of <var>list</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑧\">For each</a> <var>expression</var> of <var>list</var>:",
               "rationale": "if",
               "steps": [
                 {
@@ -2609,14 +2606,14 @@
       ]
     },
     {
-      "html": "Given a string <var>effective directive name</var>, a string <var>directive name</var> and\n  a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑦⑤\">policy</a> <var>policy</var>:",
+      "html": "Given a string <var>effective directive name</var>, a string <var>directive name</var> and\n  a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑦②\">policy</a> <var>policy</var>:",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>directive fallback list</var> be the result of executing <a href=\"https://w3c.github.io/webappsec-csp/#directive-fallback-list\">§ 6.8.3 Get fetch directive fallback list</a>\n  on <var>effective directive name</var>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④⓪\">For each</a> <var>fallback directive</var> of <var>directive fallback list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③⑨\">For each</a> <var>fallback directive</var> of <var>directive fallback list</var>:",
           "rationale": "if",
           "steps": [
             {

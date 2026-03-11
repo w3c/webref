@@ -5,17 +5,17 @@
   },
   "algorithms": [
     {
-      "html": "Stores a timestamp with the associated name (a \"mark\"). It <em class=\"rfc2119\">MUST</em> run these steps:",
+      "html": "Stores a timestamp with the associated name (a \"mark\"). It MUST run these steps:",
       "rationale": "run",
       "steps": [
         {
-          "html": "Run the <a href=\"https://w3c.github.io/user-timing/#dfn-performancemark-constructor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-performancemark-constructor-1\">PerformanceMark constructor</a> and let <var>entry</var> be the newly created object."
+          "html": "Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#dom-performancemark-constructor\" id=\"ref-for-dom-performancemark-constructor\">PerformanceMark constructor</a> and let <var>entry</var> be the newly created object."
         },
         {
-          "html": "<a data-cite=\"PERFORMANCE-TIMELINE-2#dfn-queue-a-performanceentry\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-queue-a-performanceentry\">Queue</a> <var>entry</var>."
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-queue-a-performanceentry\" id=\"ref-for-dfn-queue-a-performanceentry\">Queue a PerformanceEntry</a> <var>entry</var>."
         },
         {
-          "html": "Add <var>entry</var> to the <a data-cite=\"PERFORMANCE-TIMELINE-2#dfn-performance-entry-buffer\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\">performance entry buffer</a>."
+          "html": "<a class=\"self-link\" href=\"https://w3c.github.io/user-timing/#stored_mark\"></a>Add <var>entry</var> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\" id=\"ref-for-dfn-performance-entry-buffer\">performance entry buffer</a>."
         },
         {
           "html": "Return <var>entry</var>."
@@ -23,14 +23,14 @@
       ]
     },
     {
-      "html": "Removes the stored timestamp with the associated name. It <em class=\"rfc2119\">MUST</em> run these steps:",
+      "html": "Removes the stored timestamp with the associated name. It MUST run these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>markName</var> is omitted, remove all <a href=\"https://w3c.github.io/user-timing/#dom-performancemark\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemark-3\"><code>PerformanceMark</code></a> objects from the <a data-cite=\"PERFORMANCE-TIMELINE-2#dfn-performance-entry-buffer\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\">performance entry buffer</a>."
+          "html": "If <var>markName</var> is omitted, remove all <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemark-performancemark\" id=\"ref-for-performancemark-performancemark①\">PerformanceMark</a> objects from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\" id=\"ref-for-dfn-performance-entry-buffer①\">performance entry buffer</a>."
         },
         {
-          "html": "Otherwise, remove all <a href=\"https://w3c.github.io/user-timing/#dom-performancemark\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemark-4\"><code>PerformanceMark</code></a> objects listed in the <a data-cite=\"PERFORMANCE-TIMELINE-2#dfn-performance-entry-buffer\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\">performance entry buffer</a> whose <var>name</var> <a data-link-type=\"dfn\" data-link-for=\"string\" data-xref-for=\"string\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string-is\" href=\"https://infra.spec.whatwg.org/#string-is\">is</a> <var>markName</var>."
+          "html": "Otherwise, remove all <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemark-performancemark\" id=\"ref-for-performancemark-performancemark②\">PerformanceMark</a> objects listed in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\" id=\"ref-for-dfn-performance-entry-buffer②\">performance entry buffer</a> whose <var>name</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is\">is</a> <var>markName</var>."
         },
         {
           "html": "Return <strong>undefined</strong>."
@@ -38,21 +38,21 @@
       ]
     },
     {
-      "html": "Stores the <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMHighResTimeStamp\" data-cite=\"hr-time-2#dom-domhighrestimestamp\" href=\"https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp\"><code>DOMHighResTimeStamp</code></a> duration between two marks along with the associated name (a \"measure\"). It <em class=\"rfc2119\">MUST</em> run these steps:",
+      "html": "Stores the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#typedefdef-domhighrestimestamp\" id=\"ref-for-typedefdef-domhighrestimestamp⑤\">DOMHighResTimeStamp</a></code> duration between two marks along with the associated name (a \"measure\"). It MUST run these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>startOrMeasureOptions</var> is a <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-3\"><code>PerformanceMeasureOptions</code></a> object and at least one of <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-start\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-start-2\"><code>start</code></a>, <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-end\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-end-2\"><code>end</code></a>, <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-duration\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-duration-2\"><code>duration</code></a>, and <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-detail\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-detail-2\"><code>detail</code></a> <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, run the following checks:",
+          "html": "If <var>startOrMeasureOptions</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-performancemeasureoptions\" id=\"ref-for-performancemeasureoptions-performancemeasureoptions\">PerformanceMeasureOptions</a> object and at least one of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-start\" id=\"ref-for-performancemeasureoptions-start\">start</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-end\" id=\"ref-for-performancemeasureoptions-end\">end</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-duration\" id=\"ref-for-performancemeasureoptions-duration\">duration</a>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-detail\" id=\"ref-for-performancemeasureoptions-detail\">detail</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exist</a>, run the following checks:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>endMark</var> is given, <a data-cite=\"WEBIDL#dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-cite=\"WEBIDL#exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+              "html": "If <var>endMark</var> is given, <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>."
             },
             {
-              "html": "If <var>startOrMeasureOptions</var>'s <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-start\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-start-3\"><code>start</code></a> and <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-end\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-end-3\"><code>end</code></a> members are both omitted, <a data-cite=\"WEBIDL#dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-cite=\"WEBIDL#exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+              "html": "If <var>startOrMeasureOptions</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-start\" id=\"ref-for-performancemeasureoptions-start①\">start</a> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-end\" id=\"ref-for-performancemeasureoptions-end①\">end</a> members are both omitted, <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>."
             },
             {
-              "html": "If <var>startOrMeasureOptions</var>'s <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-start\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-start-4\"><code>start</code></a>, <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-duration\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-duration-3\"><code>duration</code></a>, and <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-end\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-end-4\"><code>end</code></a> members all <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, <a data-cite=\"WEBIDL#dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-cite=\"WEBIDL#exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+              "html": "If <var>startOrMeasureOptions</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-start\" id=\"ref-for-performancemeasureoptions-start②\">start</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-duration\" id=\"ref-for-performancemeasureoptions-duration①\">duration</a>, and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-end\" id=\"ref-for-performancemeasureoptions-end②\">end</a> members all <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exist</a>, <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>."
             }
           ]
         },
@@ -61,20 +61,20 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>endMark</var> is given, let <var>end time</var> be the value returned by running the <a href=\"https://w3c.github.io/user-timing/#dfn-convert-a-mark-to-a-timestamp\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-convert-a-mark-to-a-timestamp-1\">convert a mark to a timestamp</a> algorithm passing in <var>endMark</var>."
+              "html": "If <var>endMark</var> is given, let <var>end time</var> be the value returned by running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#convert-a-mark-to-a-timestamp\" id=\"ref-for-convert-a-mark-to-a-timestamp\">convert a mark to a timestamp</a> algorithm passing in <var>endMark</var>."
             },
             {
-              "html": "Otherwise, if <var>startOrMeasureOptions</var> is a <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-4\"><code>PerformanceMeasureOptions</code></a> object, and if its <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-end\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-end-5\"><code>end</code></a> member <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, let <var>end time</var> be the value returned by running the <a href=\"https://w3c.github.io/user-timing/#dfn-convert-a-mark-to-a-timestamp\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-convert-a-mark-to-a-timestamp-2\">convert a mark to a timestamp</a> algorithm passing in <var>startOrMeasureOptions</var>'s <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-end\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-end-6\"><code>end</code></a>."
+              "html": "Otherwise, if <var>startOrMeasureOptions</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-performancemeasureoptions\" id=\"ref-for-performancemeasureoptions-performancemeasureoptions①\">PerformanceMeasureOptions</a> object, and if its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-end\" id=\"ref-for-performancemeasureoptions-end③\">end</a> member <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>, let <var>end time</var> be the value returned by running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#convert-a-mark-to-a-timestamp\" id=\"ref-for-convert-a-mark-to-a-timestamp①\">convert a mark to a timestamp</a> algorithm passing in <var>startOrMeasureOptions</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-end\" id=\"ref-for-performancemeasureoptions-end④\">end</a>."
             },
             {
-              "html": "Otherwise, if <var>startOrMeasureOptions</var> is a <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-5\"><code>PerformanceMeasureOptions</code></a> object, and if its <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-start\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-start-5\"><code>start</code></a> and <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-duration\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-duration-4\"><code>duration</code></a> members both <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>:",
+              "html": "Otherwise, if <var>startOrMeasureOptions</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-performancemeasureoptions\" id=\"ref-for-performancemeasureoptions-performancemeasureoptions②\">PerformanceMeasureOptions</a> object, and if its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-start\" id=\"ref-for-performancemeasureoptions-start③\">start</a> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-duration\" id=\"ref-for-performancemeasureoptions-duration②\">duration</a> members both <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exist</a>:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "Let <var>start</var> be the value returned by running the <a href=\"https://w3c.github.io/user-timing/#dfn-convert-a-mark-to-a-timestamp\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-convert-a-mark-to-a-timestamp-3\">convert a mark to a timestamp</a> algorithm passing in <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-start\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-start-6\"><code>start</code></a>."
+                  "html": "Let <var>start</var> be the value returned by running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#convert-a-mark-to-a-timestamp\" id=\"ref-for-convert-a-mark-to-a-timestamp②\">convert a mark to a timestamp</a> algorithm passing in <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-start\" id=\"ref-for-performancemeasureoptions-start④\">start</a>."
                 },
                 {
-                  "html": "Let <var>duration</var> be the value returned by running the <a href=\"https://w3c.github.io/user-timing/#dfn-convert-a-mark-to-a-timestamp\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-convert-a-mark-to-a-timestamp-4\">convert a mark to a timestamp</a> algorithm passing in <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-duration\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-duration-5\"><code>duration</code></a>."
+                  "html": "Let <var>duration</var> be the value returned by running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#convert-a-mark-to-a-timestamp\" id=\"ref-for-convert-a-mark-to-a-timestamp③\">convert a mark to a timestamp</a> algorithm passing in <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-duration\" id=\"ref-for-performancemeasureoptions-duration③\">duration</a>."
                 },
                 {
                   "html": "Let <var>end time</var> be <var>start</var> plus <var>duration</var>."
@@ -82,7 +82,7 @@
               ]
             },
             {
-              "html": "Otherwise, let <var>end time</var> be the value that would be returned by the <code>Performance</code> object's <a data-cite=\"HR-TIME-2#dom-performance-now\" href=\"https://www.w3.org/TR/hr-time-2/#dom-performance-now\"><code>now()</code></a> method."
+              "html": "Otherwise, let <var>end time</var> be the value that would be returned by the <code>Performance</code> object’s <a href=\"https://www.w3.org/TR/hr-time-2/#dom-performance-now\"><code>now()</code></a> method."
             }
           ]
         },
@@ -91,17 +91,17 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>startOrMeasureOptions</var> is a <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-6\"><code>PerformanceMeasureOptions</code></a> object, and if its <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-start\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-start-7\"><code>start</code></a> member <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, let <var>start time</var> be the value returned by running the <a href=\"https://w3c.github.io/user-timing/#dfn-convert-a-mark-to-a-timestamp\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-convert-a-mark-to-a-timestamp-5\">convert a mark to a timestamp</a> algorithm passing in <var>startOrMeasureOptions</var>'s <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-start\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-start-8\"><code>start</code></a>."
+              "html": "If <var>startOrMeasureOptions</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-performancemeasureoptions\" id=\"ref-for-performancemeasureoptions-performancemeasureoptions③\">PerformanceMeasureOptions</a> object, and if its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-start\" id=\"ref-for-performancemeasureoptions-start⑤\">start</a> member <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a>, let <var>start time</var> be the value returned by running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#convert-a-mark-to-a-timestamp\" id=\"ref-for-convert-a-mark-to-a-timestamp④\">convert a mark to a timestamp</a> algorithm passing in <var>startOrMeasureOptions</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-start\" id=\"ref-for-performancemeasureoptions-start⑥\">start</a>."
             },
             {
-              "html": "Otherwise, if <var>startOrMeasureOptions</var> is a <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-7\"><code>PerformanceMeasureOptions</code></a> object, and if its <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-duration\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-duration-6\"><code>duration</code></a> and <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-end\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-end-7\"><code>end</code></a> members both <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>:",
+              "html": "Otherwise, if <var>startOrMeasureOptions</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-performancemeasureoptions\" id=\"ref-for-performancemeasureoptions-performancemeasureoptions④\">PerformanceMeasureOptions</a> object, and if its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-duration\" id=\"ref-for-performancemeasureoptions-duration④\">duration</a> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-end\" id=\"ref-for-performancemeasureoptions-end⑤\">end</a> members both <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exist</a>:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "Let <var>duration</var> be the value returned by running the <a href=\"https://w3c.github.io/user-timing/#dfn-convert-a-mark-to-a-timestamp\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-convert-a-mark-to-a-timestamp-6\">convert a mark to a timestamp</a> algorithm passing in <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-duration\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-duration-7\"><code>duration</code></a>."
+                  "html": "Let <var>duration</var> be the value returned by running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#convert-a-mark-to-a-timestamp\" id=\"ref-for-convert-a-mark-to-a-timestamp⑤\">convert a mark to a timestamp</a> algorithm passing in <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-duration\" id=\"ref-for-performancemeasureoptions-duration⑤\">duration</a>."
                 },
                 {
-                  "html": "Let <var>end</var> be the value returned by running the <a href=\"https://w3c.github.io/user-timing/#dfn-convert-a-mark-to-a-timestamp\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-convert-a-mark-to-a-timestamp-7\">convert a mark to a timestamp</a> algorithm passing in <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-end\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-end-8\"><code>end</code></a>."
+                  "html": "Let <var>end</var> be the value returned by running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#convert-a-mark-to-a-timestamp\" id=\"ref-for-convert-a-mark-to-a-timestamp⑥\">convert a mark to a timestamp</a> algorithm passing in <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-end\" id=\"ref-for-performancemeasureoptions-end⑥\">end</a>."
                 },
                 {
                   "html": "Let <var>start time</var> be <var>end</var> minus <var>duration</var>."
@@ -109,7 +109,7 @@
               ]
             },
             {
-              "html": "Otherwise, if <var>startOrMeasureOptions</var> is a <code>DOMString</code>, let <var>start time</var> be the value returned by running the <a href=\"https://w3c.github.io/user-timing/#dfn-convert-a-mark-to-a-timestamp\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-convert-a-mark-to-a-timestamp-8\">convert a mark to a timestamp</a> algorithm passing in <var>startOrMeasureOptions</var>."
+              "html": "Otherwise, if <var>startOrMeasureOptions</var> is a <code>DOMString</code>, let <var>start time</var> be the value returned by running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#convert-a-mark-to-a-timestamp\" id=\"ref-for-convert-a-mark-to-a-timestamp⑦\">convert a mark to a timestamp</a> algorithm passing in <var>startOrMeasureOptions</var>."
             },
             {
               "html": "Otherwise, let <var>start time</var> be <code>0</code>."
@@ -117,33 +117,33 @@
           ]
         },
         {
-          "html": "Create a new <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasure\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasure-3\"><code>PerformanceMeasure</code></a> object (<var>entry</var>) with <a data-cite=\"WEBIDL#this\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-cite=\"HTML/webappapis.html#concept-relevant-realm\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\">relevant realm</a>."
+          "html": "Create a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasure-performancemeasure\" id=\"ref-for-performancemeasure-performancemeasure①\">PerformanceMeasure</a> object (<var>entry</var>) with <a href=\"https://webidl.spec.whatwg.org/#this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>."
         },
         {
-          "html": "Set <var>entry</var>'s <code>name</code> attribute to <var>measureName</var>."
+          "html": "Set <var>entry</var>’s <code>name</code> attribute to <var>measureName</var>."
         },
         {
-          "html": "Set <var>entry</var>'s <code>entryType</code> attribute to <code>DOMString \"measure\"</code>."
+          "html": "Set <var>entry</var>’s <code>entryType</code> attribute to <code>DOMString \"measure\"</code>."
         },
         {
-          "html": "Set <var>entry</var>'s <code>startTime</code> attribute to <var>start time</var>."
+          "html": "Set <var>entry</var>’s <code>startTime</code> attribute to <var>start time</var>."
         },
         {
-          "html": "Set <var>entry</var>'s <code>duration</code> attribute to the duration from <var>start time</var> to <var>end time</var>. The resulting duration value <em class=\"rfc2119\">MAY</em> be negative."
+          "html": "Set <var>entry</var>’s <code>duration</code> attribute to the duration from <var>start time</var> to <var>end time</var>. The resulting duration value MAY be negative."
         },
         {
-          "html": "Set <var>entry</var>'s <code>detail</code> attribute as follows:",
+          "html": "Set <var>entry</var>’s <code>detail</code> attribute as follows:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>startOrMeasureOptions</var> is a <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-8\"><code>PerformanceMeasureOptions</code></a> object and <var>startOrMeasureOptions</var>'s <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-detail\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-detail-3\"><code>detail</code></a> member <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>:",
+              "html": "If <var>startOrMeasureOptions</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-performancemeasureoptions\" id=\"ref-for-performancemeasureoptions-performancemeasureoptions⑤\">PerformanceMeasureOptions</a> object and <var>startOrMeasureOptions</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-detail\" id=\"ref-for-performancemeasureoptions-detail①\">detail</a> member <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exists</a>:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "Let <var>record</var> be the result of calling the <a data-cite=\"HTML/infrastructure.html#structuredserialize\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#structuredserialize\">StructuredSerialize</a> algorithm on <var>startOrMeasureOptions</var>'s <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasureoptions-detail\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasureoptions-detail-4\"><code>detail</code></a>."
+                  "html": "Let <var>record</var> be the result of calling the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#structuredserialize\" id=\"ref-for-structuredserialize\">StructuredSerialize</a> algorithm on <var>startOrMeasureOptions</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasureoptions-detail\" id=\"ref-for-performancemeasureoptions-detail②\">detail</a>."
                 },
                 {
-                  "html": "Set <var>entry</var>'s <a data-link-for=\"PerformanceMeasure\" href=\"https://w3c.github.io/user-timing/#dom-performancemeasure-detail\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasure-detail-1\"><code>detail</code></a> to the result of calling the <a data-cite=\"HTML/infrastructure.html#structureddeserialize\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#structureddeserialize\">StructuredDeserialize</a> algorithm on <var>record</var> and the <a data-cite=\"HTML/webappapis.html#concept-current-everything\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-current-everything\">current realm</a>."
+                  "html": "Set <var>entry</var>’s <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasure-detail\" id=\"ref-for-dom-performancemeasure-detail\">detail</a> to the result of calling the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#structureddeserialize\" id=\"ref-for-structureddeserialize\">StructuredDeserialize</a> algorithm on <var>record</var> and the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-current-everything\" id=\"ref-for-concept-current-everything\">current realm</a>."
                 }
               ]
             },
@@ -153,10 +153,10 @@
           ]
         },
         {
-          "html": "<a data-cite=\"PERFORMANCE-TIMELINE-2#dfn-queue-a-performanceentry\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-queue-a-performanceentry\">Queue</a> <var>entry</var>."
+          "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-queue-a-performanceentry\" id=\"ref-for-dfn-queue-a-performanceentry①\">Queue a PerformanceEntry</a> <var>entry</var>."
         },
         {
-          "html": "Add <var>entry</var> to the <a data-cite=\"PERFORMANCE-TIMELINE-2#dfn-performance-entry-buffer\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\">performance entry buffer</a>."
+          "html": "<a class=\"self-link\" href=\"https://w3c.github.io/user-timing/#stored_measure\"></a>Add <var>entry</var> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\" id=\"ref-for-dfn-performance-entry-buffer③\">performance entry buffer</a>."
         },
         {
           "html": "Return <var>entry</var>."
@@ -164,14 +164,14 @@
       ]
     },
     {
-      "html": "Removes stored timestamp with the associated name. It <em class=\"rfc2119\">MUST</em> run these steps:",
+      "html": "Removes stored timestamp with the associated name. It MUST run these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>measureName</var> is omitted, remove all <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasure\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasure-4\"><code>PerformanceMeasure</code></a> objects in the <a data-cite=\"PERFORMANCE-TIMELINE-2#dfn-performance-entry-buffer\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\">performance entry buffer</a>."
+          "html": "If <var>measureName</var> is omitted, remove all <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasure-performancemeasure\" id=\"ref-for-performancemeasure-performancemeasure②\">PerformanceMeasure</a> objects in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\" id=\"ref-for-dfn-performance-entry-buffer④\">performance entry buffer</a>."
         },
         {
-          "html": "Otherwise remove all <a href=\"https://w3c.github.io/user-timing/#dom-performancemeasure\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemeasure-5\"><code>PerformanceMeasure</code></a> objects listed in the <a data-cite=\"PERFORMANCE-TIMELINE-2#dfn-performance-entry-buffer\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\">performance entry buffer</a> whose <code>name</code> <a data-link-type=\"dfn\" data-link-for=\"string\" data-xref-for=\"string\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string-is\" href=\"https://infra.spec.whatwg.org/#string-is\">is</a> <var>measureName</var>."
+          "html": "Otherwise remove all <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemeasure-performancemeasure\" id=\"ref-for-performancemeasure-performancemeasure③\">PerformanceMeasure</a> objects listed in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\" id=\"ref-for-dfn-performance-entry-buffer⑤\">performance entry buffer</a> whose <code>name</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is①\">is</a> <var>measureName</var>."
         },
         {
           "html": "Return <strong>undefined</strong>."
@@ -179,57 +179,57 @@
       ]
     },
     {
-      "html": "The <a href=\"https://w3c.github.io/user-timing/#dfn-performancemark-constructor\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-performancemark-constructor-2\">PerformanceMark constructor</a> must run the following steps:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#dom-performancemark-constructor\" id=\"ref-for-dom-performancemark-constructor①\">PerformanceMark constructor</a> must run the following steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If the <a data-cite=\"HTML/webappapis.html#current-global-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\">current global object</a> is a <code>Window</code> object and <var>markName</var> uses the same name as a <a data-cite=\"WEBIDL#dfn-read-only\" href=\"https://webidl.spec.whatwg.org/#dfn-read-only\">read only attribute</a> in the <code><a data-cite=\"NAVIGATION-TIMING#performancetiming\" href=\"https://www.w3.org/TR/navigation-timing/#performancetiming\">PerformanceTiming</a></code> interface, <a data-cite=\"WEBIDL#dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-cite=\"WEBIDL#syntaxerror\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>."
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object\">current global object</a> is a <code>Window</code> object and <var>markName</var> uses the same name as a <a href=\"https://webidl.spec.whatwg.org/#dfn-read-only\">read only attribute</a> in the <code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/navigation-timing/#performancetiming-performancetiming\" id=\"ref-for-performancetiming-performancetiming\">PerformanceTiming</a></code> interface, <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>."
         },
         {
-          "html": "Create a new <a href=\"https://w3c.github.io/user-timing/#dom-performancemark\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemark-10\"><code>PerformanceMark</code></a> object (<var>entry</var>) with the <a data-cite=\"HTML/webappapis.html#current-global-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\">current global object</a>'s <a data-cite=\"HTML/webappapis.html#concept-global-object-realm\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\">realm</a>."
+          "html": "Create a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemark-performancemark\" id=\"ref-for-performancemark-performancemark⑦\">PerformanceMark</a> object (<var>entry</var>) with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#current-global-object\" id=\"ref-for-current-global-object①\">current global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-global-object-realm\" id=\"ref-for-concept-global-object-realm\">realm</a>."
         },
         {
-          "html": "Set <var>entry</var>'s <code>name</code> attribute to <var>markName</var>."
+          "html": "Set <var>entry</var>’s <code>name</code> attribute to <var>markName</var>."
         },
         {
-          "html": "Set <var>entry</var>'s <code>entryType</code> attribute to <code>DOMString \"mark\"</code>."
+          "html": "Set <var>entry</var>’s <code>entryType</code> attribute to <code>DOMString \"mark\"</code>."
         },
         {
-          "html": "Set <var>entry</var>'s <code>startTime</code> attribute as follows:",
+          "html": "Set <var>entry</var>’s <code>startTime</code> attribute as follows:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>markOptions</var>'s <a href=\"https://w3c.github.io/user-timing/#dom-performancemarkoptions-starttime\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemarkoptions-starttime-2\"><code>startTime</code></a> member <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>, then:",
+              "html": "If <var>markOptions</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemarkoptions-starttime\" id=\"ref-for-performancemarkoptions-starttime\">startTime</a> member <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">exists</a>, then:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>markOptions</var>'s <a href=\"https://w3c.github.io/user-timing/#dom-performancemarkoptions-starttime\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemarkoptions-starttime-3\"><code>startTime</code></a> is negative, throw a <a data-cite=\"WEBIDL#exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+                  "html": "If <var>markOptions</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemarkoptions-starttime\" id=\"ref-for-performancemarkoptions-starttime①\">startTime</a> is negative, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code>."
                 },
                 {
-                  "html": "Otherwise, set <var>entry</var>'s <code>startTime</code> to the value of <var>markOptions</var>'s <a href=\"https://w3c.github.io/user-timing/#dom-performancemarkoptions-starttime\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemarkoptions-starttime-4\"><code>startTime</code></a>."
+                  "html": "Otherwise, set <var>entry</var>’s <code>startTime</code> to the value of <var>markOptions</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemarkoptions-starttime\" id=\"ref-for-performancemarkoptions-starttime②\">startTime</a>."
                 }
               ]
             },
             {
-              "html": "Otherwise, set it to the value that would be returned by the <code>Performance</code> object's <a data-cite=\"HR-TIME-2#dom-performance-now\" href=\"https://www.w3.org/TR/hr-time-2/#dom-performance-now\"><code>now()</code></a> method."
+              "html": "Otherwise, set it to the value that would be returned by the <code>Performance</code> object’s <a href=\"https://www.w3.org/TR/hr-time-2/#dom-performance-now\"><code>now()</code></a> method."
             }
           ]
         },
         {
-          "html": "Set <var>entry</var>'s <code>duration</code> attribute to <code>0</code>."
+          "html": "Set <var>entry</var>’s <code>duration</code> attribute to <code>0</code>."
         },
         {
-          "html": "If <var>markOptions</var>'s <a href=\"https://w3c.github.io/user-timing/#dom-performancemarkoptions-detail\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemarkoptions-detail-2\"><code>detail</code></a> is null, set <var>entry</var>'s <a data-link-for=\"PerformanceMark\" href=\"https://w3c.github.io/user-timing/#dom-performancemark-detail\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemark-detail-2\"><code>detail</code></a> to null."
+          "html": "If <var>markOptions</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemarkoptions-detail\" id=\"ref-for-performancemarkoptions-detail\">detail</a> is null, set <var>entry</var>’s <a href=\"https://w3c.github.io/user-timing/#dom-performancemark-detail\" id=\"ref-for-dom-performancemark-detail\">detail</a> to null."
         },
         {
           "html": "Otherwise:",
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>record</var> be the result of calling the <a data-cite=\"HTML/infrastructure.html#structuredserialize\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#structuredserialize\">StructuredSerialize</a> algorithm on <var>markOptions</var>'s <a href=\"https://w3c.github.io/user-timing/#dom-performancemarkoptions-detail\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemarkoptions-detail-3\"><code>detail</code></a>."
+              "html": "Let <var>record</var> be the result of calling the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#structuredserialize\" id=\"ref-for-structuredserialize①\">StructuredSerialize</a> algorithm on <var>markOptions</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemarkoptions-detail\" id=\"ref-for-performancemarkoptions-detail①\">detail</a>."
             },
             {
-              "html": "Set <var>entry</var>'s <a data-link-for=\"PerformanceMark\" href=\"https://w3c.github.io/user-timing/#dom-performancemark-detail\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemark-detail-3\"><code>detail</code></a> to the result of calling the <a data-cite=\"HTML/infrastructure.html#structureddeserialize\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#structureddeserialize\">StructuredDeserialize</a> algorithm on <var>record</var> and the <a data-cite=\"HTML/webappapis.html#concept-current-everything\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-current-everything\">current realm</a>."
+              "html": "Set <var>entry</var>’s <a href=\"https://w3c.github.io/user-timing/#dom-performancemark-detail\" id=\"ref-for-dom-performancemark-detail①\">detail</a> to the result of calling the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#structureddeserialize\" id=\"ref-for-structureddeserialize①\">StructuredDeserialize</a> algorithm on <var>record</var> and the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-current-everything\" id=\"ref-for-concept-current-everything①\">current realm</a>."
             }
           ]
         }
@@ -237,22 +237,22 @@
     },
     {
       "name": "convert a mark to a timestamp",
-      "href": "https://w3c.github.io/user-timing/#dfn-convert-a-mark-to-a-timestamp",
-      "html": "To <dfn id=\"dfn-convert-a-mark-to-a-timestamp\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">convert a mark to a timestamp</dfn>, given a <var>mark</var> that is a <code>DOMString</code> or <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMHighResTimeStamp\" data-cite=\"hr-time-2#dom-domhighrestimestamp\" href=\"https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp\"><code>DOMHighResTimeStamp</code></a> run these steps:",
+      "href": "https://w3c.github.io/user-timing/#convert-a-mark-to-a-timestamp",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"convert-a-mark-to-a-timestamp\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert a mark to a timestamp</dfn>, given a <var>mark</var> that is a <code>DOMString</code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#typedefdef-domhighrestimestamp\" id=\"ref-for-typedefdef-domhighrestimestamp①⓪\">DOMHighResTimeStamp</a></code> run these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If <var>mark</var> is a <code>DOMString</code> and it has the same name as a <a data-cite=\"WEBIDL#dfn-read-only\" href=\"https://webidl.spec.whatwg.org/#dfn-read-only\">read only attribute</a> in the <code><a data-cite=\"NAVIGATION-TIMING#performancetiming\" href=\"https://www.w3.org/TR/navigation-timing/#performancetiming\">PerformanceTiming</a></code> interface, let <var>end time</var> be the value returned by running the <a href=\"https://w3c.github.io/user-timing/#dfn-convert-a-name-to-a-timestamp\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-convert-a-name-to-a-timestamp-1\">convert a name to a timestamp</a> algorithm with <var>name</var> set to the value of <var>mark</var>."
+          "html": "If <var>mark</var> is a <code>DOMString</code> and it has the same name as a <a href=\"https://webidl.spec.whatwg.org/#dfn-read-only\">read only attribute</a> in the <code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/navigation-timing/#performancetiming-performancetiming\" id=\"ref-for-performancetiming-performancetiming①\">PerformanceTiming</a></code> interface, let <var>end time</var> be the value returned by running the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#convert-a-name-to-a-timestamp\" id=\"ref-for-convert-a-name-to-a-timestamp\">convert a name to a timestamp</a> algorithm with <var>name</var> set to the value of <var>mark</var>."
         },
         {
-          "html": "Otherwise, if <var>mark</var> is a <code>DOMString</code>, let <var>end time</var> be the value of the <code>startTime</code> attribute from the most recent occurrence of a <a href=\"https://w3c.github.io/user-timing/#dom-performancemark\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-performancemark-11\"><code>PerformanceMark</code></a> object in the <a data-cite=\"PERFORMANCE-TIMELINE-2#dfn-performance-entry-buffer\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\">performance entry buffer</a> whose <code>name</code> <a data-link-type=\"dfn\" data-link-for=\"string\" data-xref-for=\"string\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string-is\" href=\"https://infra.spec.whatwg.org/#string-is\">is</a> <var>mark</var>. If no matching entry is found, <a data-cite=\"WEBIDL#dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-cite=\"WEBIDL#syntaxerror\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>."
+          "html": "Otherwise, if <var>mark</var> is a <code>DOMString</code>, let <var>end time</var> be the value of the <code>startTime</code> attribute from the most recent occurrence of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/user-timing/#performancemark-performancemark\" id=\"ref-for-performancemark-performancemark⑧\">PerformanceMark</a> object in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/performance-timeline/#dfn-performance-entry-buffer\" id=\"ref-for-dfn-performance-entry-buffer⑥\">performance entry buffer</a> whose <code>name</code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-is\" id=\"ref-for-string-is②\">is</a> <var>mark</var>. If no matching entry is found, <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#syntaxerror\"><code>SyntaxError</code></a>."
         },
         {
-          "html": "Otherwise, if <var>mark</var> is a <a data-xref-type=\"_IDL_\" data-link-type=\"idl\" data-lt=\"DOMHighResTimeStamp\" data-cite=\"hr-time-2#dom-domhighrestimestamp\" href=\"https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp\"><code>DOMHighResTimeStamp</code></a>:",
+          "html": "Otherwise, if <var>mark</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#typedefdef-domhighrestimestamp\" id=\"ref-for-typedefdef-domhighrestimestamp①①\">DOMHighResTimeStamp</a></code>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>mark</var> is negative, throw a <a data-cite=\"WEBIDL#exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+              "html": "If <var>mark</var> is negative, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code>."
             },
             {
               "html": "Otherwise, let <var>end time</var> be <var>mark</var>."
@@ -262,23 +262,25 @@
       ]
     },
     {
-      "html": "",
+      "name": "convert a name to a timestamp",
+      "href": "https://w3c.github.io/user-timing/#convert-a-name-to-a-timestamp",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"convert-a-name-to-a-timestamp\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert a name to a timestamp</dfn> given a <var>name</var> that is a <a href=\"https://webidl.spec.whatwg.org/#dfn-read-only\">read only attribute</a> in the <code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/navigation-timing/#performancetiming-performancetiming\" id=\"ref-for-performancetiming-performancetiming②\">PerformanceTiming</a></code> interface, run these steps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "If the <a data-cite=\"HTML/webappapis.html#global-object\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\">global object</a> is not a <code>Window</code> object, <a data-cite=\"WEBIDL#dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a data-cite=\"WEBIDL#exceptiondef-typeerror\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\"><code>TypeError</code></a>."
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object\">global object</a> is not a <code>Window</code> object, <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror⑤\">TypeError</a></code>."
         },
         {
           "html": "If <var>name</var> is <code>navigationStart</code>, return <code>0</code>."
         },
         {
-          "html": "Let <var>startTime</var> be the value of <code>navigationStart</code> in the <code><a data-cite=\"NAVIGATION-TIMING#performancetiming\" href=\"https://www.w3.org/TR/navigation-timing/#performancetiming\">PerformanceTiming</a></code> interface."
+          "html": "Let <var>startTime</var> be the value of <code>navigationStart</code> in the <code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/navigation-timing/#performancetiming-performancetiming\" id=\"ref-for-performancetiming-performancetiming③\">PerformanceTiming</a></code> interface."
         },
         {
-          "html": "Let <var>endTime</var> be the value of <var>name</var> in the <code><a data-cite=\"NAVIGATION-TIMING#performancetiming\" href=\"https://www.w3.org/TR/navigation-timing/#performancetiming\">PerformanceTiming</a></code> interface."
+          "html": "Let <var>endTime</var> be the value of <var>name</var> in the <code><a data-link-type=\"dfn\" href=\"https://w3c.github.io/navigation-timing/#performancetiming-performancetiming\" id=\"ref-for-performancetiming-performancetiming④\">PerformanceTiming</a></code> interface."
         },
         {
-          "html": "If <var>endTime</var> is <code>0</code>, <a data-cite=\"WEBIDL#dfn-throw\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a data-cite=\"WEBIDL#invalidaccesserror\" href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\"><code>InvalidAccessError</code></a>."
+          "html": "If <var>endTime</var> is <code>0</code>, <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a href=\"https://webidl.spec.whatwg.org/#invalidaccesserror\"><code>InvalidAccessError</code></a>."
         },
         {
           "html": "Return result of subtracting <var>startTime</var> from <var>endTime</var>."
