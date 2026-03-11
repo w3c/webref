@@ -28,18 +28,18 @@
       ]
     },
     {
-      "html": "What follows is a sketch of a potential solution:",
-      "rationale": "set",
+      "html": "Update <a data-link-type=\"biblio\" href=\"https://wicg.github.io/local-network-access/#biblio-fetch\" title=\"Fetch Standard\">[FETCH]</a> as follows:",
+      "rationale": "add",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection\" id=\"ref-for-concept-connection\">Connection</a> objects are given a new <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"connection\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"IP address space\" id=\"connection-ip-address-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IP\n  address space</dfn> property, initially null. This applies to WebSocket\n  connections too.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection\" id=\"ref-for-concept-connection\">Connection</a> objects are given a new <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"connection\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"IP address space\" id=\"connection-ip-address-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IP\n  address space</dfn> property, initially null.</p>"
         },
         {
-          "html": "A new step is added to the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection-obtain\" id=\"ref-for-concept-connection-obtain①\">obtain a connection</a> algorithm immediately\n  before appending <var>connection</var> to the user agent’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-connection-pool\" id=\"ref-for-concept-connection-pool\">connection pool</a>:",
-          "rationale": "set",
+          "html": "Add a new step to the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#create-a-connection\" id=\"ref-for-create-a-connection\">create a connection</a> algorithm immediately after establishing the new connection (between Steps 2 and 3).",
+          "rationale": "if",
           "steps": [
             {
-              "html": "<p>Set <var>connection</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#connection-ip-address-space\" id=\"ref-for-connection-ip-address-space\">IP address space</a> to\n  the result of running the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#determine-the-ip-address-space\" id=\"ref-for-determine-the-ip-address-space\">determine the IP address space</a> algorithm\n  on the IP address of <var>connection</var>’s remote endpoint.</p>"
+              "html": "<p>If <var>host</var> is an IP address, set <var>connection</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#connection-ip-address-space\" id=\"ref-for-connection-ip-address-space\">IP address space</a> to\n  the result of running the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/local-network-access/#determine-the-ip-address-space\" id=\"ref-for-determine-the-ip-address-space\">determine the IP address space</a> algorithm on <var>host</var>.</p>"
             }
           ]
         },
@@ -133,9 +133,6 @@
                   "html": "<p>If <var>request</var>’s URL’s host’s public suffix is <code>\"local\"</code>, then set\n <var>request</var>’s target IP address space property to <code>\"local\"</code>.</p>"
                 }
               ]
-            },
-            {
-              "html": "<p>If <var>request</var>’s target IP address space is public, then return a network error.</p>\n       <p>OPEN QUESTION: Do we need this? Under what conditions can this get set to \"public\"?</p>"
             }
           ]
         },

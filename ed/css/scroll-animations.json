@@ -336,7 +336,7 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "the keyword none or a list of CSS identifiers",
+      "computedValue": "the keyword none, the keyword all, or a list of CSS identifiers",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "values": [
@@ -349,14 +349,14 @@
         },
         {
           "name": "all",
-          "prose": "Declares the names of all timelines defined by descendants—​whose scope is not already explicitly declared by a descendant using timeline-scope—​to be in scope for this element and its descendants.",
+          "prose": "Specifies that all timeline names defined by this element or its flat tree descendants—​whose scope is not already limited by a descendant using timeline-scope—​to be in scope only for this element’s flat tree descendants; and limits descendants to only match timeline names to elements within this subtree.",
           "href": "https://drafts.csswg.org/scroll-animations-1/#valdef-timeline-scope-all",
           "type": "value",
           "value": "all"
         },
         {
           "name": "<dashed-ident>",
-          "prose": "Declares the name of a matching named timeline defined by a descendant—​whose scope is not already explicitly declared by a descendant using timeline-scope—​to be in scope for this element and its descendants. If no such timeline exists, or if more than one such timeline exists, instead declares an inactive timeline with the specified name.",
+          "prose": "Specifies that a matching timeline name defined by this element or its flat tree descendants—​whose scope is not already limited by a descendant using timeline-scope—​to be in scope only for this element’s flat tree descendants; and limits descendants to only match timeline names to elements within this subtree.",
           "href": "https://drafts.csswg.org/scroll-animations-1/#valdef-timeline-scope-dashed-ident",
           "type": "value",
           "value": "<dashed-ident>"
