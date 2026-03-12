@@ -624,10 +624,10 @@
           "html": "Let <var>freq</var> be the value given by <var>sample-rate</var>\n  in the table sample-rate."
         },
         {
-          "html": "Let <var>final-layer</var> be the result of 4 -\n  (<var>sequence</var>[<var>s</var> + 1])."
+          "html": "Let <var>final-layer</var> be the result of 4 - ((<var>sequence</var>[<var>s</var> + 1] &amp; 0x06) &gt;&gt; 1)."
         },
         {
-          "html": "If <var>final-layer</var> &amp; 0x06 &gt;&gt; 1 is not 3, return\n  false."
+          "html": "If <var>final-layer</var> is not 3, return false."
         },
         {
           "html": "Return true."
@@ -677,6 +677,12 @@
         },
         {
           "html": "Let <var>samplerate</var> be the value given by <var>samplerate-index</var> in the\n <var>sample-rate</var> table."
+        },
+        {
+          "html": "If <var>version</var> is 2, let <var>samplerate</var> be the result of <var>samplerate</var> / 2."
+        },
+        {
+          "html": "If <var>version</var> is 0, let <var>samplerate</var> be the result of <var>samplerate</var> / 4."
         },
         {
           "html": "Let <var>pad</var> be <var>sequence</var>[<var>s</var> + 2] &amp; 0x02 &gt;&gt; 1."
