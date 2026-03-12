@@ -897,10 +897,10 @@
       "links": []
     },
     {
-      "id": "dom-webtransportdatagramduplexstream-incomingdatagramshighwatermark-slot",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-incomingdatagramshighwatermark-slot",
+      "id": "dom-webtransportdatagramduplexstream-incomingmaxbuffereddatagrams-slot",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-incomingmaxbuffereddatagrams-slot",
       "linkingText": [
-        "[[IncomingDatagramsHighWaterMark]]"
+        "[[IncomingMaxBufferedDatagrams]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -941,10 +941,10 @@
       "links": []
     },
     {
-      "id": "dom-webtransportdatagramduplexstream-outgoingdatagramshighwatermark-slot",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-outgoingdatagramshighwatermark-slot",
+      "id": "dom-webtransportdatagramduplexstream-outgoingmaxbuffereddatagrams-slot",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-outgoingmaxbuffereddatagrams-slot",
       "linkingText": [
-        "[[OutgoingDatagramsHighWaterMark]]"
+        "[[OutgoingMaxBufferedDatagrams]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1141,10 +1141,10 @@
       "links": []
     },
     {
-      "id": "dom-webtransportdatagramduplexstream-incominghighwatermark",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-incominghighwatermark",
+      "id": "dom-webtransportdatagramduplexstream-incomingmaxbuffereddatagrams",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-incomingmaxbuffereddatagrams",
       "linkingText": [
-        "incomingHighWaterMark"
+        "incomingMaxBufferedDatagrams"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1163,10 +1163,10 @@
       "links": []
     },
     {
-      "id": "dom-webtransportdatagramduplexstream-outgoinghighwatermark",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-outgoinghighwatermark",
+      "id": "dom-webtransportdatagramduplexstream-outgoingmaxbuffereddatagrams",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-outgoingmaxbuffereddatagrams",
       "linkingText": [
-        "outgoingHighWaterMark"
+        "outgoingMaxBufferedDatagrams"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1741,6 +1741,28 @@
       "links": []
     },
     {
+      "id": "dom-webtransport-responseheaders-slot",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-responseheaders-slot",
+      "linkingText": [
+        "[[ResponseHeaders]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#webtransport-internal-slots",
+        "title": "Internal slots",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
       "id": "dom-webtransport-protocol-slot",
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-protocol-slot",
       "linkingText": [
@@ -2279,6 +2301,28 @@
       "links": []
     },
     {
+      "id": "dom-webtransport-responseheaders",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-responseheaders",
+      "linkingText": [
+        "responseHeaders"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#webtransport-attributes",
+        "title": "Attributes",
+        "number": "6.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "dom-webtransport-protocol",
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-protocol",
       "linkingText": [
@@ -2697,6 +2741,28 @@
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransportoptions-requireunreliable",
       "linkingText": [
         "requireUnreliable"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-configuration",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
+        "title": "Configuration",
+        "number": "6.9"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dom-webtransportoptions-headers",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportoptions-headers",
+      "linkingText": [
+        "headers"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -3813,6 +3879,28 @@
       "links": []
     },
     {
+      "id": "dom-webtransportsendstream-insidesynchronousatomicwrite-slot",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportsendstream-insidesynchronousatomicwrite-slot",
+      "linkingText": [
+        "[[InsideSynchronousAtomicWrite]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportSendStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "send-stream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#send-stream-internal-slots",
+        "title": "Internal Slots",
+        "number": "7.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
       "id": "dom-webtransportsendstream-byteswritten-slot",
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransportsendstream-byteswritten-slot",
       "linkingText": [
@@ -4058,6 +4146,26 @@
       "href": "https://www.w3.org/TR/webtransport/#grouped",
       "linkingText": [
         "grouped"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sendGroup",
+        "href": "https://www.w3.org/TR/webtransport/#sendGroup",
+        "title": "Interface WebTransportSendGroup",
+        "number": "8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "null-sendgroup",
+      "href": "https://www.w3.org/TR/webtransport/#null-sendgroup",
+      "linkingText": [
+        "null sendGroup"
       ],
       "localLinkingText": [],
       "type": "dfn",
