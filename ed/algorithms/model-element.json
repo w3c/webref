@@ -1,0 +1,40 @@
+{
+  "spec": {
+    "title": "The <model> element",
+    "url": "https://immersive-web.github.io/model-element/"
+  },
+  "algorithms": [
+    {
+      "name": "orbit fit algorithm",
+      "href": "https://immersive-web.github.io/model-element/#dfn-orbit-fit-algorithm",
+      "html": "The orbit fit algorithm is triggered when the model's <code>stagemode</code> is set to <code>orbit</code>. The <dfn id=\"dfn-orbit-fit-algorithm\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\" class=\"respec-offending-element\" title=\"Found definition for &quot;orbit fit algorithm&quot;, but nothing links to it. This is usually a spec bug!\">orbit fit algorithm</dfn> consists of the following steps.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Retrieve the bounds of the smallest axis-aligned box that contains the geometry of the object.</p>"
+        },
+        {
+          "html": "<p>Let <var>extents</var> be the <code data-x=\"dom-model-boundingboxextents\">boundingBoxExtents</code> of the resource.</p>"
+        },
+        {
+          "html": "<p>Let <var>center</var> be the <code data-x=\"dom-model-boundingboxcenter\">boundingBoxCenter</code> of the resource.</p>"
+        },
+        {
+          "html": "<p>Let <var>length</var> be the *length* of the extents of <var>extents</var>.</p>"
+        },
+        {
+          "html": "<p>Divide <var>length</var> by the model's <code data-x=\"attr-model-width\">width</code> in the viewport. This is the X-scale. </p>"
+        },
+        {
+          "html": "<p>Divide <var>length</var> by the model's <code data-x=\"attr-model-height\">height</code> in the viewport. This is the Y-scale. </p>"
+        },
+        {
+          "html": "<p>scale the <code data-x=\"dom-model-entitytransform\">entityTransform</code> to be the minimum of the X-scale and Y-scale.</p>"
+        },
+        {
+          "html": "<p>Set the <code data-x=\"dom-model-entitytransform\">entityTransform</code> to be centered on <var>center.x</var>, <var>center.y </var>and set back from <var>center.z</var> by <var>extents.z / 2</var>, so that the full extents are visible and set directly behind the viewport, and will remain in view at any orientation.</p>"
+        }
+      ]
+    }
+  ]
+}

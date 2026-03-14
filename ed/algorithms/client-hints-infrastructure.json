@@ -7,7 +7,7 @@
     {
       "name": "update the client hints set from cache",
       "href": "https://wicg.github.io/client-hints-infrastructure/#update-the-client-hints-set-from-cache",
-      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-client-hints-set-from-cache\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the client hints set from cache</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <var>settingsObject</var>:",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-client-hints-set-from-cache\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the client hints set from cache</dfn> given a <var>settingsObject</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -33,14 +33,14 @@
     {
       "name": "create or override the cached client hints set",
       "href": "https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-create-or-override-the-cached-client-hints-set",
-      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-create-or-override-the-cached-client-hints-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create or override the cached client hints set</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> given a <var>settingsObject</var> and <var>response</var>:",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-create-or-override-the-cached-client-hints-set\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create or override the cached client hints set</dfn> given a <var>settingsObject</var> and <var>response</var>:",
       "rationale": "if",
       "steps": [
         {
           "html": "If <var>settingsObject</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#non-secure-context\" id=\"ref-for-non-secure-context\">non-secure context</a>, abort these steps."
         },
         {
-          "html": "Let <var>browsingContext</var> be <var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-bc\" id=\"ref-for-window-bc\">browsing context</a>."
+          "html": "Let <var>browsingContext</var> be <var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-bc\" id=\"ref-for-window-bc\">browsing context</a>."
         },
         {
           "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context\">top-level browsing context</a> does not equal <var>browsingContext</var>, abort these steps."
@@ -71,14 +71,14 @@
     {
       "name": "should restart loading the page for critical client hints",
       "href": "https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-should-restart-loading-the-page-for-critical-client-hints",
-      "html": "When asked if the user agent <dfn data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-should-restart-loading-the-page-for-critical-client-hints\">should restart loading the page for critical client hints<a class=\"self-link\" href=\"https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-should-restart-loading-the-page-for-critical-client-hints\"></a></dfn> given a <var>settingsObject</var> and <var>response</var>:",
+      "html": "When asked if the user agent <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-should-restart-loading-the-page-for-critical-client-hints\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">should restart loading the page for critical client hints</dfn> given a <var>settingsObject</var> and <var>response</var>:",
       "rationale": "if",
       "steps": [
         {
           "html": "If <var>settingsObject</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#non-secure-context\" id=\"ref-for-non-secure-context①\">non-secure context</a>, abort these steps."
         },
         {
-          "html": "Let <var>browsingContext</var> be <var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global①\">global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-bc\" id=\"ref-for-window-bc①\">browsing context</a>."
+          "html": "Let <var>browsingContext</var> be <var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global①\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-bc\" id=\"ref-for-window-bc①\">browsing context</a>."
         },
         {
           "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context①\">top-level browsing context</a> does not equal <var>browsingContext</var>, abort these steps."
@@ -150,7 +150,7 @@
           "html": "If <var>settingsObject</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#non-secure-context\" id=\"ref-for-non-secure-context②\">non-secure context</a>, abort these steps."
         },
         {
-          "html": "Let <var>browsingContext</var> be <var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global②\">global object</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-bc\" id=\"ref-for-window-bc②\">browsing context</a>."
+          "html": "Let <var>browsingContext</var> be <var>settingsObject</var>’s  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-global\" id=\"ref-for-concept-settings-object-global②\">global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-bc\" id=\"ref-for-window-bc②\">browsing context</a>."
         },
         {
           "html": "If the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\" id=\"ref-for-top-level-browsing-context②\">top-level browsing context</a> does not equal <var>browsingContext</var>, abort these steps."
@@ -205,7 +205,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var>shouldRestartForCriticalClientHints</var> be the result of running <a data-link-type=\"abstract-op\">should restart page for critical client hints</a> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a> and <var>response</var>."
+              "html": "Let <var>shouldRestartForCriticalClientHints</var> be the result of running <u class=\"link-error\" data-lt=\"should restart page for critical client hints\" title=\"LINK ERROR: No 'abstract-op' refs found for 'should restart page for critical client hints'.\">should restart page for critical client hints</u> with the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object①\">relevant settings object</a> and <var>response</var>."
             }
           ]
         },
@@ -236,7 +236,7 @@
       ]
     },
     {
-      "html": "At <a data-link-type=\"dfn\">navigation params</a>, append the following:",
+      "html": "At <u class=\"link-error\" data-lt=\"navigation params\" title=\"LINK ERROR: No 'dfn' refs found for 'navigation params' that are marked for export.\n  (Possible specs this could be from: html)\">navigation params</u>, append the following:",
       "rationale": "if",
       "steps": [
         {
@@ -247,7 +247,7 @@
     {
       "name": "append client hints to request",
       "href": "https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-append-client-hints-to-request",
-      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-append-client-hints-to-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append client hints to request</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with <var>settingsObject</var> and <var>request</var> as input, run the\nfollowing steps:",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-append-client-hints-to-request\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append client hints to request</dfn> with <var>settingsObject</var> and <var>request</var> as input, run the\nfollowing steps:",
       "rationale": "if",
       "steps": [
         {
@@ -263,7 +263,7 @@
           "html": "For each <a data-link-type=\"dfn\" href=\"https://wicg.github.io/client-hints-infrastructure/#client-hints-token\" id=\"ref-for-client-hints-token⑤\">client hints token</a> <var>lowEntropyHint</var> in the registry’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/client-hints-infrastructure/#low-entropy-hint-table\" id=\"ref-for-low-entropy-hint-table\">low entropy hint table</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append⑥\">append</a> <var>lowEntropyHint</var> to <var>hintSet</var>."
         },
         {
-          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①\">client</a> is not null, then for each <a data-link-type=\"dfn\" href=\"https://wicg.github.io/client-hints-infrastructure/#client-hints-token\" id=\"ref-for-client-hints-token⑥\">client hints token</a> <var>requestHint</var> in <var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/client-hints-infrastructure/#environment-settings-object-client-hints-set\" id=\"ref-for-environment-settings-object-client-hints-set⑤\">client hints set</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append⑦\">append</a> <var>requestHint</var> to <var>hintSet</var>."
+          "html": "If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client①\">client</a> is not null, then for each <a data-link-type=\"dfn\" href=\"https://wicg.github.io/client-hints-infrastructure/#client-hints-token\" id=\"ref-for-client-hints-token⑥\">client hints token</a> <var>requestHint</var> in\n<var>settingsObject</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/client-hints-infrastructure/#environment-settings-object-client-hints-set\" id=\"ref-for-environment-settings-object-client-hints-set⑤\">client hints set</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append⑦\">append</a> <var>requestHint</var> to\n<var>hintSet</var>."
         },
         {
           "html": "For each <var>hintName</var> in <var>hintSet</var>:",
@@ -274,7 +274,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "Let <var>requestPermitsHint</var> be the result of running <a href=\"https://w3c.github.io/webappsec-permissions-policy/#algo-should-request-be-allowed-to-use-feature\"><cite>Permissions Policy</cite> § 9.13 Should request be allowed to use feature?</a> given <var>request</var> and <var>hintName</var>’s associated feature in <a href=\"https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features\">§ 7.2 Policy-controlled features</a>."
+                  "html": "Let <var>requestPermitsHint</var> be the result of running <a href=\"https://w3c.github.io/webappsec-permissions-policy/#algo-should-request-be-allowed-to-use-feature\"><cite>Permissions Policy</cite> § 9.15 Should request be allowed to use feature?</a> given <var>request</var> and <var>hintName</var>’s associated feature in <a href=\"https://wicg.github.io/client-hints-infrastructure/#policy-controlled-features\">§ 7.2 Policy-controlled features</a>."
                 },
                 {
                   "html": "If <var>requestPermitsHint</var> is <code>false</code>, then continue to next <var>hintName</var>."
@@ -300,7 +300,7 @@
     {
       "name": "remove client hints from redirect if needed",
       "href": "https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-remove-client-hints-from-redirect-if-needed",
-      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-remove-client-hints-from-redirect-if-needed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove client hints from redirect if needed</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span> with <var>request</var> as input, run the following steps:",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-remove-client-hints-from-redirect-if-needed\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove client hints from redirect if needed</dfn> with <var>request</var> as input, run the following steps:",
       "rationale": "for",
       "steps": [
         {
@@ -308,7 +308,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list②\">header list</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains\">contains</a> <var>hintToken</var>, then remove <var>hintToken</var> from <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list③\">header list</a>. </p>"
+              "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list②\">header list</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-list-contains\" id=\"ref-for-header-list-contains\">contains</a>\n  <var>hintToken</var>, then remove <var>hintToken</var> from <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list③\">header list</a>.\n </p>"
             }
           ]
         }
@@ -317,7 +317,7 @@
     {
       "name": "find client hint value",
       "href": "https://wicg.github.io/client-hints-infrastructure/#find-client-hint-value",
-      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-client-hint-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find client hint value</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <var>hint</var> as input, switch on <var>hint</var> and return the result:",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-client-hint-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find client hint value</dfn>, given <var>hint</var> as input, switch on <var>hint</var> and return the result:",
       "rationale": ".switch",
       "steps": [
         {
