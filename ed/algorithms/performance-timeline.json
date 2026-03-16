@@ -21,20 +21,20 @@
     {
       "name": "initialize a PerformanceEntry",
       "href": "https://w3c.github.io/performance-timeline/#initialize-a-performanceentry",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"initialize-a-performanceentry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize a PerformanceEntry</dfn> <var>entry</var> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#typedefdef-domhighrestimestamp\" id=\"ref-for-typedefdef-domhighrestimestamp③\">DOMHighResTimeStamp</a></code> <var>startTime</var>,\na <code>DOMString</code> <var>entryType</var>, a <code>DOMString</code> <var>name</var>, and an optional <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#typedefdef-domhighrestimestamp\" id=\"ref-for-typedefdef-domhighrestimestamp④\">DOMHighResTimeStamp</a></code> <var>endTime</var> (default <code>0</code>):",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"initialize-a-performanceentry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize a PerformanceEntry</dfn> <var>entry</var> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#typedefdef-domhighrestimestamp\" id=\"ref-for-typedefdef-domhighrestimestamp⑤\">DOMHighResTimeStamp</a></code> <var>startTime</var>,\na <code>DOMString</code> <var>entryType</var>, a <code>DOMString</code> <var>name</var>, and an optional <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/hr-time/#typedefdef-domhighrestimestamp\" id=\"ref-for-typedefdef-domhighrestimestamp⑥\">DOMHighResTimeStamp</a></code> <var>endTime</var> (default <code>0</code>):",
       "rationale": "assert",
       "steps": [
         {
           "html": "Assert: <var>entryType</var> is defined in the <a data-link-type=\"dfn\" data-refhint-key=\"3510cd6d\" href=\"https://w3c.github.io/timing-entrytypes-registry/#registry\" id=\"ref-for-registry③\">entry type registry</a>."
         },
         {
-          "html": "Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime①\">startTime</a></code> to <var>startTime</var>."
+          "html": "Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime②\">startTime</a></code> to <var>startTime</var>."
         },
         {
-          "html": "Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype\">entryType</a></code> to <var>entryType</var>."
+          "html": "Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype①\">entryType</a></code> to <var>entryType</var>."
         },
         {
-          "html": "Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-name\" id=\"ref-for-dom-performanceentry-name\">name</a></code> to <var>name</var>."
+          "html": "Initialize <var>entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-name\" id=\"ref-for-dom-performanceentry-name①\">name</a></code> to <var>name</var>."
         },
         {
           "html": "Initialize <var>entry</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#end-time\" id=\"ref-for-end-time②\">end time</a> to <var>endTime</var>."
@@ -201,7 +201,7 @@
           "html": "Let <var>interested observers</var> be an initially empty set of\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#performanceobserver\" id=\"ref-for-performanceobserver①⑤\">PerformanceObserver</a></code> objects."
         },
         {
-          "html": "Let <var>entryType</var> be <var>newEntry</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype①\">entryType</a></code> value."
+          "html": "Let <var>entryType</var> be <var>newEntry</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-entrytype\" id=\"ref-for-dom-performanceentry-entrytype②\">entryType</a></code> value."
         },
         {
           "html": "Let <var>relevantGlobal</var> be <var>newEntry</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a>."
@@ -211,12 +211,12 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "Set <var>newEntry</var>’s\n      <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-navigationid\" id=\"ref-for-dom-performanceentry-navigationid\">navigationId</a></code> to the value of\n      <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated document</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#most-recent-navigation\" id=\"ref-for-most-recent-navigation\">most recent navigation</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-id\" id=\"ref-for-dom-performanceentry-id②\">id</a></code>."
+              "html": "Set <var>newEntry</var>’s\n      <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-navigationid\" id=\"ref-for-dom-performanceentry-navigationid①\">navigationId</a></code> to the value of\n      <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window①\">associated document</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#most-recent-navigation\" id=\"ref-for-most-recent-navigation\">most recent navigation</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-id\" id=\"ref-for-dom-performanceentry-id②\">id</a></code>."
             }
           ]
         },
         {
-          "html": "Otherwise, set <var>newEntry</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-navigationid\" id=\"ref-for-dom-performanceentry-navigationid①\">navigationId</a></code> to null."
+          "html": "Otherwise, set <var>newEntry</var>’s\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-navigationid\" id=\"ref-for-dom-performanceentry-navigationid②\">navigationId</a></code> to null."
         },
         {
           "html": "For each <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#registered-performance-observer\" id=\"ref-for-registered-performance-observer④\">registered performance observer</a> <var>regObs</var> in\n  <var>relevantGlobal</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#list-of-registered-performance-observer-objects\" id=\"ref-for-list-of-registered-performance-observer-objects⑤\">list of registered performance observer objects</a>:",
@@ -275,7 +275,7 @@
           "html": "Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-id\" id=\"ref-for-dom-performanceentry-id③\">id</a></code> to <var>id</var>."
         },
         {
-          "html": "Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-navigationid\" id=\"ref-for-dom-performanceentry-navigationid②\">navigationId</a></code> to <var>id</var>."
+          "html": "Set <var>newEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-navigationid\" id=\"ref-for-dom-performanceentry-navigationid③\">navigationId</a></code> to <var>id</var>."
         },
         {
           "html": "If <var>relevantGlobal</var> has an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window②\">associated document</a>:",
@@ -347,7 +347,7 @@
                       "rationale": "for",
                       "steps": [
                         {
-                          "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①①\">DOMString</a></code>\n                <var>entryType</var> that appears either as <var>item</var>’s\n                <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" id=\"ref-for-dom-performanceobserverinit-type①②\">type</a></code> or in <var>item</var>’s\n                <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" id=\"ref-for-dom-performanceobserverinit-entrytypes⑨\">entryTypes</a></code>:",
+                          "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①③\">DOMString</a></code>\n                <var>entryType</var> that appears either as <var>item</var>’s\n                <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-type\" id=\"ref-for-dom-performanceobserverinit-type①②\">type</a></code> or in <var>item</var>’s\n                <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceobserverinit-entrytypes\" id=\"ref-for-dom-performanceobserverinit-entrytypes⑨\">entryTypes</a></code>:",
                           "rationale": "let",
                           "steps": [
                             {
@@ -417,7 +417,7 @@
           ]
         },
         {
-          "html": "Sort <var>results</var>’s entries in chronological order with\n  respect to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime②\">startTime</a></code>"
+          "html": "Sort <var>results</var>’s entries in chronological order with\n  respect to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime③\">startTime</a></code>"
         },
         {
           "html": "Return <var>result</var>."
@@ -449,7 +449,7 @@
           ]
         },
         {
-          "html": "Sort <var>results</var>’s entries in chronological order with\n  respect to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime③\">startTime</a></code>"
+          "html": "Sort <var>results</var>’s entries in chronological order with\n  respect to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime④\">startTime</a></code>"
         },
         {
           "html": "Return <var>result</var>."

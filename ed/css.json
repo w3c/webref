@@ -9551,7 +9551,7 @@
         "image-animation",
         "imageAnimation"
       ],
-      "syntax": "normal | paused | running",
+      "syntax": "normal | paused | stopped | running",
       "extended": []
     },
     {
@@ -16760,6 +16760,32 @@
       "prose": "The ::column pseudo-element represents the individual columns in a multi-column container. It only exists on multi-column containers.",
       "href": "https://drafts.csswg.org/css-multicol-2/#selectordef-column",
       "syntax": "::column",
+      "extended": []
+    },
+    {
+      "name": "::cue",
+      "prose": "The ::cue pseudo-element (with no argument) matches any list of WebVTT Node Objects constructed for the matched element, with the exception that the properties corresponding to the background shorthand must be applied to the WebVTT cue background box rather than the list of WebVTT Node Objects.",
+      "href": "https://w3c.github.io/webvtt/#selectordef-cue",
+      "syntax": "::cue",
+      "extended": []
+    },
+    {
+      "name": "::cue-region",
+      "prose": "The ::cue-region pseudo-element (with no argument) matches any list of WebVTT region objects constructed for the matched element.",
+      "href": "https://w3c.github.io/webvtt/#selectordef-cue-region",
+      "syntax": "::cue-region",
+      "extended": []
+    },
+    {
+      "name": "::cue-region()",
+      "href": "https://w3c.github.io/webvtt/#selectordef-cue-region-selector",
+      "syntax": "::cue-region(selector)",
+      "extended": []
+    },
+    {
+      "name": "::cue()",
+      "href": "https://w3c.github.io/webvtt/#selectordef-cue-selector",
+      "syntax": "::cue(selector)",
       "extended": []
     },
     {
