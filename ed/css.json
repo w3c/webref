@@ -2361,6 +2361,10 @@
         "animation-play-state",
         "animation-timeline"
       ],
+      "resetLonghands": [
+        "animation-range",
+        "animation-trigger"
+      ],
       "syntax": "<single-animation>#",
       "extended": []
     },
@@ -2825,6 +2829,9 @@
         "mask-clip",
         "mask-composite",
         "mask-mode"
+      ],
+      "resetLonghands": [
+        "mask-border"
       ],
       "syntax": "<mask-layer>#",
       "extended": []
@@ -3398,6 +3405,10 @@
         "animation-play-state",
         "animation-timeline"
       ],
+      "resetLonghands": [
+        "animation-range",
+        "animation-trigger"
+      ],
       "syntax": "<single-animation>#",
       "extended": []
     },
@@ -3752,6 +3763,9 @@
         "background-origin",
         "background-clip",
         "background-color"
+      ],
+      "resetLonghands": [
+        "background-blend-mode"
       ],
       "syntax": "<bg-layer>#? , <final-bg-layer>",
       "extended": []
@@ -4303,6 +4317,9 @@
         "border-width",
         "border-style",
         "border-color"
+      ],
+      "resetLonghands": [
+        "border-image"
       ],
       "syntax": "<line-width> || <line-style> || <color>",
       "extended": []
@@ -8538,6 +8555,14 @@
         "line-height",
         "font-family"
       ],
+      "resetLonghands": [
+        "font-feature-settings",
+        "font-kerning",
+        "font-language-override",
+        "font-optical-sizing",
+        "font-size-adjust",
+        "font-variation-settings"
+      ],
       "syntax": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-width-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'># ] | <system-family-name>",
       "extended": []
     },
@@ -10651,6 +10676,9 @@
         "mask-clip",
         "mask-composite",
         "mask-mode"
+      ],
+      "resetLonghands": [
+        "mask-border"
       ],
       "syntax": "<mask-layer>#",
       "extended": []
