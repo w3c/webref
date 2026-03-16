@@ -376,6 +376,41 @@ const MANUAL_EXPANSIONS = {
 
 
 /**
+ * List of reset only sub-properties for shorthands. URLs in comments link to
+ * the spec sections that make that relationship explicit.
+ */
+const RESET_LONGHANDS = {
+  // https://drafts.csswg.org/scroll-animations-1/#named-range-animation-declaration
+  // https://drafts.csswg.org/animation-triggers-1/#propdef-animation-trigger
+  'animation': ['animation-range', 'animation-trigger'],
+
+  // https://drafts.csswg.org/compositing-2/#propdef-background-blend-mode
+  'background': ['background-blend-mode'],
+
+  // https://drafts.csswg.org/css-borders-4/#propdef-border
+  'border': ['border-image'],
+
+  // https://drafts.csswg.org/css-fonts-4/#propdef-font
+  // Note the spec splits `font-variant` into its longhands because the `font`
+  // shorthand can only set a couple of values for `font-variant` in practice.
+  // We still consider that `font` is a shorthand for `font-variant` (which is
+  // also according to the spec). No need to reset `font-variant-*` properties
+  // as a result.
+  'font': [
+    'font-feature-settings',
+    'font-kerning',
+    'font-language-override',
+    'font-optical-sizing',
+    'font-size-adjust',
+    'font-variation-settings'
+  ],
+
+  // https://drafts.csswg.org/css-masking-1/#propdef-mask
+  'mask': ['mask-border']
+};
+
+
+/**
  * Extract property references from CSS value syntax.
  * Looks for patterns like <'property-name'>.
  */
@@ -508,6 +543,36 @@ function getLonghands(prop, allProperties, propertiesByName, visited = new Set()
 
 
 /**
+ * Get reset-only sub-properties for a shorthand property.
+ * Returns an array of longhand names, or null if no longhands could be determined.
+ */
+function getResetLonghands(prop, allProperties, propertiesByName, visited = new Set()) {
+  const name = prop.name;
+  if (visited.has(name)) {
+    return null;
+  }
+  const nextVisited = new Set(visited);
+  nextVisited.add(name);
+
+  // Preserve existing data when present.
+  if (Array.isArray(prop.resetLonghands) && prop.resetLonghands.length > 0) {
+    return prop.resetLonghands;
+  }
+
+  // Legacy aliases inherit reset-only sub-properties from the target property.
+  const aliasTarget = getAliasTarget(prop, propertiesByName);
+  if (aliasTarget) {
+    const aliasReset = getResetLonghands(aliasTarget, allProperties, propertiesByName, nextVisited);
+    if (aliasReset && aliasReset.length > 0) {
+      return aliasReset;
+    }
+  }
+
+  return RESET_LONGHANDS[name];
+}
+
+
+/**
  * Add longhands field to CSS shorthand properties in the given folder.
  *
  * The function reads individual CSS spec files from the css subfolder,
@@ -553,6 +618,7 @@ async function addCssLonghands(folder) {
   // Second pass: add longhands to shorthands
   let shorthands = 0;
   let withLonghands = 0;
+  let withResetLonghands = 0;
   let skipped = 0;
   let withoutLonghands = [];
   let modifiedFiles = [];
@@ -595,6 +661,16 @@ async function addCssLonghands(folder) {
       else {
         withoutLonghands.push(prop.name);
       }
+
+      const resetLonghands = getResetLonghands(prop, allProperties, propertiesByName);
+      if (resetLonghands && resetLonghands.length > 0) {
+        const validResetLonghands = resetLonghands.filter(lh => allProperties.has(lh));
+        if (validResetLonghands.length > 0) {
+          prop.resetLonghands = validResetLonghands;
+          modified = true;
+          withResetLonghands++;
+        }
+      }
     }
 
     if (modified) {
@@ -608,6 +684,7 @@ async function addCssLonghands(folder) {
   console.log();
   console.log(`Shorthands found: ${shorthands}`);
   console.log(`With longhands: ${withLonghands}`);
+  console.log(`With reset-only sub-properties: ${withResetLonghands}`);
   console.log(`Skipped (e.g., all): ${skipped}`);
   console.log(`Without longhands: ${withoutLonghands.length}`);
   console.log(`Files modified: ${modifiedFiles.length}`);
