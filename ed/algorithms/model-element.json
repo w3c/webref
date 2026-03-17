@@ -5,6 +5,67 @@
   },
   "algorithms": [
     {
+      "name": "bounding box calculation algorithm",
+      "href": "https://immersive-web.github.io/model-element/#dfn-bounding-box-calculation-algorithm",
+      "html": "The <dfn id=\"dfn-bounding-box-calculation-algorithm\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\" class=\"respec-offending-element\" title=\"Found definition for &quot;bounding box calculation algorithm&quot;, but nothing links to it. This is usually a spec bug!\">bounding box calculation algorithm</dfn> consists of the following steps.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>With the model scene loaded, set the animation to the first frame if present.</p>"
+        },
+        {
+          "html": "<p>let <var>max</var> be a new <code>DOMPoint</code> with values of <code>-Infinity</code>.</p>"
+        },
+        {
+          "html": "<p>let <var>min</var> be a new <code>DOMPoint</code> with values of <code>Infinity</code>.</p>"
+        },
+        {
+          "html": "<p>let <var>queue</var> be an empty list of elements.</p>"
+        },
+        {
+          "html": "<p>Add the model's root object to <var>queue</var>.</p>"
+        },
+        {
+          "html": "<p>While <var>queue</var> is not empty:</p>"
+        },
+        {
+          "html": "<p>Set the values of <var>boundingBoxCenter</var> to be the mean of each values of <var>min</var> and <var>max</var>.</p>"
+        },
+        {
+          "html": "<p>Set the values of <var>boundingBoxExtents</var> to be each value of<var>min</var> subtracted from <var>max</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "model fit algorithm",
+      "href": "https://immersive-web.github.io/model-element/#dfn-model-fit-algorithm",
+      "html": "The initial <dfn id=\"dfn-model-fit-algorithm\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\" class=\"respec-offending-element\" title=\"Found definition for &quot;model fit algorithm&quot;, but nothing links to it. This is usually a spec bug!\">model fit algorithm</dfn> consists of the following steps.",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Retrieve the bounds of the smallest axis-aligned box that contains the geometry of the object using the <dfn id=\"dfn-bounding-box-calculation-algorithm-0\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\" class=\"respec-offending-element\" title=\"Found definition for &quot;bounding box calculation algorithm.&quot;, but nothing links to it. This is usually a spec bug!\">bounding box calculation algorithm.</dfn></p>"
+        },
+        {
+          "html": "<p>Let <var>extents</var> be the <code data-x=\"dom-model-boundingboxextents\">boundingBoxExtents</code> of the resource.</p>"
+        },
+        {
+          "html": "<p>Let <var>center</var> be the <code data-x=\"dom-model-boundingboxcenter\">boundingBoxCenter</code> of the resource.</p>"
+        },
+        {
+          "html": "<p>Divide <var>extents.x</var> by the model's <code data-x=\"attr-model-width\">width</code> in the viewport. This is the X-scale. </p>"
+        },
+        {
+          "html": "<p>Divide <var>extents.y</var> by the model's <code data-x=\"attr-model-height\">height</code> in the viewport. This is the Y-scale.</p>"
+        },
+        {
+          "html": "<p>scale the <code data-x=\"dom-model-entitytransform\">entityTransform</code> to be the minimum of the X-scale and Y-scale.</p>"
+        },
+        {
+          "html": "<p>Set the <code data-x=\"dom-model-entitytransform\">entityTransform</code> to be centered on <var>center.x</var>, <var>center.y </var>and set back from <var>center.z</var> by <var>extents.z / 2</var>, so that the full extents are visible and set directly behind the viewport.</p>"
+        }
+      ]
+    },
+    {
       "name": "orbit fit algorithm",
       "href": "https://immersive-web.github.io/model-element/#dfn-orbit-fit-algorithm",
       "html": "The orbit fit algorithm is triggered when the model's <code>stagemode</code> is set to <code>orbit</code>. The <dfn id=\"dfn-orbit-fit-algorithm\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\" class=\"respec-offending-element\" title=\"Found definition for &quot;orbit fit algorithm&quot;, but nothing links to it. This is usually a spec bug!\">orbit fit algorithm</dfn> consists of the following steps.",
