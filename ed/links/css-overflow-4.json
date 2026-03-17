@@ -223,6 +223,8 @@
       "http://wpt.live/css/css-overflow/parsing/webkit-box-computed.html": {},
       "http://wpt.live/css/css-overflow/parsing/webkit-line-clamp-invalid.html": {},
       "http://wpt.live/css/css-overflow/parsing/webkit-line-clamp-valid.html": {},
+      "http://wpt.live/css/css-ui/text-overflow-string-006.html": {},
+      "http://wpt.live/css/css-ui/text-overflow-string-007.html": {},
       "http://www.w3.org/Style/CSS/Test/": {},
       "http://www.w3.org/TR/CSS/": {
         "anchors": [
@@ -282,6 +284,7 @@
       },
       "https://drafts.csswg.org/css-overflow-4/": {},
       "https://drafts.csswg.org/css-page-3/": {},
+      "https://drafts.csswg.org/css-page-floats/": {},
       "https://drafts.csswg.org/css-position-3/": {},
       "https://drafts.csswg.org/css-pseudo-4/": {},
       "https://drafts.csswg.org/css-regions/": {},
@@ -303,6 +306,7 @@
       "https://github.com/w3c/csswg-drafts/issues": {},
       "https://github.com/w3c/csswg-drafts/issues/10323": {},
       "https://github.com/w3c/csswg-drafts/issues/10324": {},
+      "https://github.com/w3c/csswg-drafts/issues/12041": {},
       "https://github.com/w3c/csswg-drafts/issues/2970": {},
       "https://github.com/w3c/csswg-drafts/issues/2971": {},
       "https://github.com/w3c/csswg-drafts/issues/7058": {},
@@ -526,6 +530,8 @@
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-overflow/parsing/webkit-box-computed.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-overflow/parsing/webkit-line-clamp-invalid.html": {},
       "https://github.com/web-platform-tests/wpt/blob/master/css/css-overflow/parsing/webkit-line-clamp-valid.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/text-overflow-string-006.html": {},
+      "https://github.com/web-platform-tests/wpt/blob/master/css/css-ui/text-overflow-string-007.html": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://lists.w3.org/Archives/Public/www-style/2018Jul/0030.html": {},
@@ -746,6 +752,8 @@
       "https://wpt.fyi/results/css/css-overflow/parsing/webkit-box-computed.html": {},
       "https://wpt.fyi/results/css/css-overflow/parsing/webkit-line-clamp-invalid.html": {},
       "https://wpt.fyi/results/css/css-overflow/parsing/webkit-line-clamp-valid.html": {},
+      "https://wpt.fyi/results/css/css-ui/text-overflow-string-006.html": {},
+      "https://wpt.fyi/results/css/css-ui/text-overflow-string-007.html": {},
       "https://www.unicode.org/reports/tr29/tr29-47.html": {},
       "https://www.w3.org/TR/2017/WD-css-overflow-4-20170613/": {},
       "https://www.w3.org/TR/CSS/": {},
@@ -830,7 +838,8 @@
         "anchors": [
           "typedef-visual-box",
           "propdef-margin",
-          "border-edge"
+          "border-edge",
+          "content-edge"
         ]
       },
       "https://drafts.csswg.org/css-break-3/": {
@@ -876,12 +885,12 @@
           "valdef-display-flow-root",
           "bfc",
           "valdef-display-inline-block",
+          "out-of-flow",
           "block-level",
           "block-formatting-context-root",
           "invisible-box",
           "containing-block-chain",
-          "propdef-visibility",
-          "out-of-flow"
+          "propdef-visibility"
         ]
       },
       "https://drafts.csswg.org/css-flexbox-1/": {
@@ -922,6 +931,7 @@
           "valdef-overflow-clip",
           "scrollable-overflow",
           "ink-overflow",
+          "scrollable-overflow-region",
           "propdef-scrollbar-gutter",
           "overlay-scrollbars",
           "scrollbar-gutter",
@@ -931,6 +941,11 @@
           "scroll-container",
           "valdef-scrollbar-gutter-auto",
           "valdef-scrollbar-gutter-stable"
+        ]
+      },
+      "https://drafts.csswg.org/css-page-floats-3/": {
+        "anchors": [
+          "float"
         ]
       },
       "https://drafts.csswg.org/css-position-3/": {
@@ -985,9 +1000,9 @@
       },
       "https://drafts.csswg.org/css-writing-modes-3/": {
         "anchors": [
+          "propdef-unicode-bidi",
           "propdef-direction",
-          "physical-left",
-          "propdef-unicode-bidi"
+          "physical-left"
         ]
       },
       "https://drafts.csswg.org/css-writing-modes-4/": {
