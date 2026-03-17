@@ -688,7 +688,7 @@
                       "html": "<p>Add <var>inputSource</var> to <var>added primary sources</var>.</p>"
                     },
                     {
-                      "case": "Otherwise:",
+                      "case": "Otherwise, if \"tracked-sources\" is included in session’s set of granted features:",
                       "html": "<p>Add <var>inputSource</var> to <var>added tracked sources</var>.</p>"
                     }
                   ]
@@ -708,7 +708,7 @@
               "html": "<p>If <var>added primary sources</var> is not empty, fire an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsourceschangeevent\" id=\"ref-for-xrinputsourceschangeevent①\">XRInputSourcesChangeEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-inputsourceschange\" id=\"ref-for-eventdef-xrsession-inputsourceschange②\">inputsourceschange</a></code> on <var>session</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-added\" id=\"ref-for-dom-xrinputsourceschangeevent-added①\">added</a></code> set to <var>added primary sources</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend①\">Extend</a> <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-tracked-sources\" id=\"ref-for-list-of-active-xr-tracked-sources①\">list of active XR tracked sources</a> with <var>added tracked sources</var>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend①\">Extend</a> <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-tracked-sources\" id=\"ref-for-list-of-active-xr-tracked-sources②\">list of active XR tracked sources</a> with <var>added tracked sources</var>.</p>"
             },
             {
               "html": "<p>If <var>added tracked sources</var> is not empty, fire an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsourceschangeevent\" id=\"ref-for-xrinputsourceschangeevent②\">XRInputSourcesChangeEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-trackedsourceschange\" id=\"ref-for-eventdef-xrsession-trackedsourceschange\">trackedsourceschange</a></code> on <var>session</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-added\" id=\"ref-for-dom-xrinputsourceschangeevent-added②\">added</a></code> set to <var>added tracked sources</var>.</p>"
@@ -748,7 +748,7 @@
                       "html": "<p>Add <var>inputSource</var> to <var>removed primary sources</var>.</p>"
                     },
                     {
-                      "case": "Otherwise:",
+                      "case": "Otherwise, if \"tracked-sources\" is included in session’s set of granted features:",
                       "html": "<p>Add <var>inputSource</var> to <var>removed tracked sources</var>.</p>"
                     }
                   ]
@@ -768,7 +768,7 @@
               "html": "<p>If <var>removed primary sources</var> is not empty, fire an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsourceschangeevent\" id=\"ref-for-xrinputsourceschangeevent③\">XRInputSourcesChangeEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-inputsourceschange\" id=\"ref-for-eventdef-xrsession-inputsourceschange③\">inputsourceschange</a></code> on <var>session</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-removed\" id=\"ref-for-dom-xrinputsourceschangeevent-removed\">removed</a></code> set to <var>removed primary sources</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">Remove</a> each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource⑤\">XRInputSource</a></code> in <var>removed tracked sources</var> from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-tracked-sources\" id=\"ref-for-list-of-active-xr-tracked-sources②\">list of active XR tracked sources</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">Remove</a> each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource⑤\">XRInputSource</a></code> in <var>removed tracked sources</var> from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-tracked-sources\" id=\"ref-for-list-of-active-xr-tracked-sources③\">list of active XR tracked sources</a>.</p>"
             },
             {
               "html": "<p>If <var>removed tracked sources</var> is not empty, fire an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsourceschangeevent\" id=\"ref-for-xrinputsourceschangeevent④\">XRInputSourcesChangeEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-trackedsourceschange\" id=\"ref-for-eventdef-xrsession-trackedsourceschange①\">trackedsourceschange</a></code> on <var>session</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-removed\" id=\"ref-for-dom-xrinputsourceschangeevent-removed①\">removed</a></code> set to <var>removed tracked sources</var>.</p>"
@@ -814,7 +814,7 @@
                       "html": "<p>Add <var>oldInputSource</var> to <var>removed primary sources</var>.</p>"
                     },
                     {
-                      "case": "Otherwise:",
+                      "case": "Otherwise, if \"tracked-sources\" is included in session’s set of granted features:",
                       "html": "<p>Add <var>oldInputSource</var> to <var>removed tracked sources</var>.</p>"
                     }
                   ]
@@ -833,7 +833,7 @@
                       "html": "<p>Add <var>newInputSource</var> to <var>added primary sources</var>.</p>"
                     },
                     {
-                      "case": "Otherwise:",
+                      "case": "Otherwise, if \"tracked-sources\" is included in session’s set of granted features:",
                       "html": "<p>Add <var>newInputSource</var> to <var>added tracked sources</var>.</p>"
                     }
                   ]
@@ -856,7 +856,7 @@
               "html": "<p>If <var>added primary sources</var> or <var>removed primary sources</var> are not empty, fire an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsourceschangeevent\" id=\"ref-for-xrinputsourceschangeevent⑤\">XRInputSourcesChangeEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-inputsourceschange\" id=\"ref-for-eventdef-xrsession-inputsourceschange④\">inputsourceschange</a></code> on <var>session</var> with<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-added\" id=\"ref-for-dom-xrinputsourceschangeevent-added③\">added</a></code> set to <var>added primary sources</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrinputsourceschangeevent-removed\" id=\"ref-for-dom-xrinputsourceschangeevent-removed②\">removed</a></code> set to <var>removed primary sources</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove③\">Remove</a> each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource⑨\">XRInputSource</a></code> in <var>removed tracked sources</var> from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-tracked-sources\" id=\"ref-for-list-of-active-xr-tracked-sources③\">list of active XR tracked sources</a>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove③\">Remove</a> each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrinputsource\" id=\"ref-for-xrinputsource⑨\">XRInputSource</a></code> in <var>removed tracked sources</var> from <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-tracked-sources\" id=\"ref-for-list-of-active-xr-tracked-sources④\">list of active XR tracked sources</a>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-extend\" id=\"ref-for-list-extend③\">Extend</a> <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources\" id=\"ref-for-list-of-active-xr-input-sources⑧\">list of active XR input sources</a> with <var>added tracked sources</var>.</p>"
@@ -1268,7 +1268,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>type</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contained</a> in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-set-of-granted-features\" id=\"ref-for-xrsession-set-of-granted-features②\">set of granted features</a>, return <code>false</code>.</p>"
+          "html": "<p>If <var>type</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contained</a> in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-set-of-granted-features\" id=\"ref-for-xrsession-set-of-granted-features⑦\">set of granted features</a>, return <code>false</code>.</p>"
         },
         {
           "html": "<p>If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-viewer\" id=\"ref-for-dom-xrreferencespacetype-viewer⑤\">viewer</a></code>, return <code>true</code>.</p>"

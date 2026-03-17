@@ -1491,12 +1491,6 @@ InputCommand = (
   input.SetFiles
 )
 
-InputResult = (
-  input.PerformActionsResult /
-  input.ReleaseActionsResult /
-  input.SetFilesResult
-)
-
 input.ElementOrigin = {
   type: "element",
   element: script.SharedReference
@@ -3195,12 +3189,6 @@ InputCommand = (
   input.SetFiles
 )
 
-InputResult = (
-  input.PerformActionsResult /
-  input.ReleaseActionsResult /
-  input.SetFilesResult
-)
-
 input.ElementOrigin = {
   type: "element",
   element: script.SharedReference
@@ -4706,6 +4694,12 @@ log.JavascriptLogEntry = {
 log.EntryAdded = (
  method: "log.entryAdded",
  params: log.Entry,
+)
+
+InputResult = (
+  input.PerformActionsResult /
+  input.ReleaseActionsResult /
+  input.SetFilesResult
 )
 
 InputEvent = (
