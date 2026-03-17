@@ -39,12 +39,12 @@
     {
       "name": "scroll-marker-group",
       "href": "https://drafts.csswg.org/css-overflow-5/#propdef-scroll-marker-group",
-      "value": "none | before | after",
+      "value": "none | [ [ before | after ] || [ links | tabs ] ]",
       "initial": "none",
       "appliesTo": "scroll containers",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "specified value",
+      "computedValue": "specified keyword(s)",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "values": [
@@ -68,6 +68,20 @@
           "href": "https://drafts.csswg.org/css-overflow-5/#valdef-scroll-marker-group-after",
           "type": "value",
           "value": "after"
+        },
+        {
+          "name": "links",
+          "prose": "The generated ::scroll-marker-group operates in \"links\" mode, functioning like a navigation list. This is the default mode if omitted.",
+          "href": "https://drafts.csswg.org/css-overflow-5/#valdef-scroll-marker-group-links",
+          "type": "value",
+          "value": "links"
+        },
+        {
+          "name": "tabs",
+          "prose": "The generated ::scroll-marker-group operates in \"tabs\" mode, functioning like a tablist.",
+          "href": "https://drafts.csswg.org/css-overflow-5/#valdef-scroll-marker-group-tabs",
+          "type": "value",
+          "value": "tabs"
         }
       ],
       "styleDeclaration": [
