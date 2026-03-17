@@ -1643,18 +1643,6 @@ input.SetFilesParameters = {
   files: [*text]
 }
 
-input.FileDialogOpened = (
-   method: "input.fileDialogOpened",
-   params: input.FileDialogInfo
-)
-
-input.FileDialogInfo = {
-   context: browsingContext.BrowsingContext,
-   ? userContext: browser.UserContext,
-   ? element: script.SharedReference,
-   multiple: bool,
-}
-
 WebExtensionCommand = (
   webExtension.Install //
   webExtension.Uninstall
@@ -3339,18 +3327,6 @@ input.SetFilesParameters = {
   context: browsingContext.BrowsingContext,
   element: script.SharedReference,
   files: [*text]
-}
-
-input.FileDialogOpened = (
-   method: "input.fileDialogOpened",
-   params: input.FileDialogInfo
-)
-
-input.FileDialogInfo = {
-   context: browsingContext.BrowsingContext,
-   ? userContext: browser.UserContext,
-   ? element: script.SharedReference,
-   multiple: bool,
 }
 
 WebExtensionCommand = (
