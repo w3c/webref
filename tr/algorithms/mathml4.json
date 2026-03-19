@@ -65,12 +65,12 @@
           "html": "<p>For larger amounts of data, applications may use the\n    <code class=\"element\">semantics</code> element, as described in\n    <a href=\"https://www.w3.org/TR/mathml4/#mixing\" class=\"sec-ref\"><bdi class=\"secno\">6. </bdi>Annotating MathML: semantics</a>.</p>"
         },
         {
-          "html": "<p>For authoring tools and other applications that need to\n    associate particular actions with presentation MathML subtrees,\n    e.g. to mark an incomplete expression to be filled in by an author,\n    the <code class=\"element\">maction</code> element may be used, as described in\n    <a href=\"https://www.w3.org/TR/mathml4/#presm_maction\" class=\"sec-ref\"><bdi class=\"secno\">3.7.1 </bdi>Bind Action to Sub-Expression</a>.</p>"
+          "html": "<p>For authoring tools and other applications that need to\n    associate particular actions with presentation MathML subtrees,\n    e.g., to mark an incomplete expression to be filled in by an author,\n    the <code class=\"element\">maction</code> element may be used, as described in\n    <a href=\"https://www.w3.org/TR/mathml4/#presm_maction\" class=\"sec-ref\"><bdi class=\"secno\">3.7.1 </bdi>Bind Action to Sub-Expression</a>.</p>"
         }
       ]
     },
     {
-      "html": "To transform an arbitrary content MathML expression into\n   Strict Content MathML, apply each of the following rules in turn\n   to the input expression until all instances of the target\n   constructs have been eliminated:",
+      "html": "To transform an arbitrary content MathML expression into\n   Strict Content MathML, apply each of the following rules in turn\n   to the input expression until all target\n   constructs have been eliminated:",
       "rationale": "apply",
       "steps": [
         {
@@ -79,13 +79,13 @@
         {
           "html": "<p><em>Apply special case rules for idiomatic uses of qualifiers</em>:\n     </p>",
           "ignored": [
-            "Rewrite derivatives with rules Rewrite: diff, Rewrite: nthdiff, and Rewrite: partialdiffdegree to explicate the binding status of the variables involved. Rewrite integrals with the rules Rewrite: int, Rewrite: defint and Rewrite: defint limits to disambiguate the status of bound and free variables and of the orientation of the range of integration if it is given as a lowlimit/uplimit pair. Rewrite limits as described in Rewrite: tendsto and Rewrite: limits condition. Rewrite sums and products as described in 4.3.5.2 N-ary Sum <sum/> and 4.3.5.3 N-ary Product <product/>. Rewrite roots as described in F.2.5 Roots. Rewrite logarithms as described in F.2.6 Logarithms. Rewrite moments as described in F.2.7 Moments."
+            "Rewrite derivatives with rules Rewrite: diff, Rewrite: nthdiff, and Rewrite: partialdiffdegree to make the binding status of the variables involved explicit. Rewrite integrals with the rules Rewrite: int, Rewrite: defint and Rewrite: defint limits to disambiguate the status of bound and free variables and of the orientation of the range of integration if it is given as a lowlimit/uplimit pair. Rewrite limits as described in Rewrite: tendsto and Rewrite: limits condition. Rewrite sums and products as described in 4.3.5.2 N-ary Sum <sum/> and 4.3.5.3 N-ary Product <product/>. Rewrite roots as described in F.2.5 Roots. Rewrite logarithms as described in F.2.6 Logarithms. Rewrite moments as described in F.2.7 Moments."
           ]
         },
         {
           "html": "<p><em>Rewrite Qualifiers to <code class=\"element\">domainofapplication</code></em>:\n     These rules rewrite all <code class=\"element\">apply</code> constructions using <code class=\"element\">bvar</code> and\n     qualifiers to those using only the general <code class=\"element\">domainofapplication</code> qualifier.\n     </p>",
           "ignored": [
-            "Intervals: Rewrite qualifiers given as interval and lowlimit/uplimit to intervals of integers via Rewrite: interval qualifier. Multiple conditions: Rewrite multiple condition qualifiers to a single one by taking their conjunction. The resulting compound condition is then rewritten to domainofapplication according to rule Rewrite: condition. Multiple domainofapplications: Rewrite multiple domainofapplication qualifiers to a single one by taking the intersection of the specified domains."
+            "Intervals: Rewrite qualifiers given as interval and lowlimit/uplimit to intervals of integers via Rewrite: interval qualifier. Multiple conditions: Rewrite multiple condition qualifiers to a single one by taking their conjunction. The resulting compound condition is then rewritten to domainofapplication according to rule Rewrite: condition. Multiple domainofapplications: Rewrite multiple domainofapplication qualifiers to a single one by taking the intersection of these domains."
           ]
         },
         {
