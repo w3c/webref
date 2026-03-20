@@ -24,7 +24,7 @@ enum SFrameCipherSuite {
      "AES_256_GCM_SHA512_128"
 };
 
-dictionary RTCSFrameTransformOptions {
+dictionary SFrameTransformOptions {
     required SFrameCipherSuite cipherSuite;
 };
 
@@ -43,13 +43,13 @@ interface mixin SFrameDecrypterManager {
 
 [Exposed=Window]
 interface RTCSFrameSenderTransform {
-    constructor(optional RTCSFrameTransformOptions options = {});
+    constructor(optional SFrameTransformOptions options = {});
 };
 RTCSFrameSenderTransform includes SFrameEncrypterManager;
 
 [Exposed=Window]
 interface RTCSFrameReceiverTransform : EventTarget {
-    constructor(optional RTCSFrameTransformOptions options = {});
+    constructor(optional SFrameTransformOptions options = {});
 };
 RTCSFrameReceiverTransform includes SFrameDecrypterManager;
 
