@@ -1,0 +1,754 @@
+{
+  "spec": {
+    "title": "Container Timing API",
+    "url": "https://wicg.github.io/container-timing/"
+  },
+  "dfns": [
+    {
+      "id": "container-root",
+      "href": "https://wicg.github.io/container-timing/#container-root",
+      "linkingText": [
+        "container root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://wicg.github.io/container-timing/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "ignored-subtree",
+      "href": "https://wicg.github.io/container-timing/#ignored-subtree",
+      "linkingText": [
+        "ignored subtree"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://wicg.github.io/container-timing/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "painted-region",
+      "href": "https://wicg.github.io/container-timing/#painted-region",
+      "linkingText": [
+        "painted region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://wicg.github.io/container-timing/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "container-timing-api",
+      "href": "https://wicg.github.io/container-timing/#container-timing-api",
+      "linkingText": [
+        "container timing API"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://wicg.github.io/container-timing/#terminology",
+        "title": "Terminology",
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "performancecontainertiming",
+      "href": "https://wicg.github.io/container-timing/#performancecontainertiming",
+      "linkingText": [
+        "PerformanceContainerTiming"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performance-container-timing",
+        "href": "https://wicg.github.io/container-timing/#performance-container-timing",
+        "title": "The PerformanceContainerTiming Interface",
+        "number": "5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "containertiming-identifier",
+      "href": "https://wicg.github.io/container-timing/#containertiming-identifier",
+      "linkingText": [
+        "identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ContainerTiming"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "performance-container-timing",
+        "href": "https://wicg.github.io/container-timing/#performance-container-timing",
+        "title": "The PerformanceContainerTiming Interface",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "containertiming-intersectionrect",
+      "href": "https://wicg.github.io/container-timing/#containertiming-intersectionrect",
+      "linkingText": [
+        "intersectionRect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ContainerTiming"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "performance-container-timing",
+        "href": "https://wicg.github.io/container-timing/#performance-container-timing",
+        "title": "The PerformanceContainerTiming Interface",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "containertiming-size",
+      "href": "https://wicg.github.io/container-timing/#containertiming-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ContainerTiming"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "performance-container-timing",
+        "href": "https://wicg.github.io/container-timing/#performance-container-timing",
+        "title": "The PerformanceContainerTiming Interface",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "containertiming-firstrendertime",
+      "href": "https://wicg.github.io/container-timing/#containertiming-firstrendertime",
+      "linkingText": [
+        "firstRenderTime"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ContainerTiming"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "performance-container-timing",
+        "href": "https://wicg.github.io/container-timing/#performance-container-timing",
+        "title": "The PerformanceContainerTiming Interface",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "containertiming-rendertime",
+      "href": "https://wicg.github.io/container-timing/#containertiming-rendertime",
+      "linkingText": [
+        "renderTime"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ContainerTiming"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "performance-container-timing",
+        "href": "https://wicg.github.io/container-timing/#performance-container-timing",
+        "title": "The PerformanceContainerTiming Interface",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "containertiming-lastpaintedelement",
+      "href": "https://wicg.github.io/container-timing/#containertiming-lastpaintedelement",
+      "linkingText": [
+        "lastPaintedElement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ContainerTiming"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "performance-container-timing",
+        "href": "https://wicg.github.io/container-timing/#performance-container-timing",
+        "title": "The PerformanceContainerTiming Interface",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "containertiming-rootelement",
+      "href": "https://wicg.github.io/container-timing/#containertiming-rootelement",
+      "linkingText": [
+        "rootElement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ContainerTiming"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "performance-container-timing",
+        "href": "https://wicg.github.io/container-timing/#performance-container-timing",
+        "title": "The PerformanceContainerTiming Interface",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-performancecontainertiming-identifier",
+      "href": "https://wicg.github.io/container-timing/#dom-performancecontainertiming-identifier",
+      "linkingText": [
+        "identifier"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceContainerTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performance-container-timing",
+        "href": "https://wicg.github.io/container-timing/#performance-container-timing",
+        "title": "The PerformanceContainerTiming Interface",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-performancecontainertiming-intersectionrect",
+      "href": "https://wicg.github.io/container-timing/#dom-performancecontainertiming-intersectionrect",
+      "linkingText": [
+        "intersectionRect"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceContainerTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performance-container-timing",
+        "href": "https://wicg.github.io/container-timing/#performance-container-timing",
+        "title": "The PerformanceContainerTiming Interface",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-performancecontainertiming-size",
+      "href": "https://wicg.github.io/container-timing/#dom-performancecontainertiming-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceContainerTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performance-container-timing",
+        "href": "https://wicg.github.io/container-timing/#performance-container-timing",
+        "title": "The PerformanceContainerTiming Interface",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-performancecontainertiming-firstrendertime",
+      "href": "https://wicg.github.io/container-timing/#dom-performancecontainertiming-firstrendertime",
+      "linkingText": [
+        "firstRenderTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceContainerTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performance-container-timing",
+        "href": "https://wicg.github.io/container-timing/#performance-container-timing",
+        "title": "The PerformanceContainerTiming Interface",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-performancecontainertiming-lastpaintedelement",
+      "href": "https://wicg.github.io/container-timing/#dom-performancecontainertiming-lastpaintedelement",
+      "linkingText": [
+        "lastPaintedElement"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceContainerTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performance-container-timing",
+        "href": "https://wicg.github.io/container-timing/#performance-container-timing",
+        "title": "The PerformanceContainerTiming Interface",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-performancecontainertiming-rootelement",
+      "href": "https://wicg.github.io/container-timing/#dom-performancecontainertiming-rootelement",
+      "linkingText": [
+        "rootElement"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceContainerTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performance-container-timing",
+        "href": "https://wicg.github.io/container-timing/#performance-container-timing",
+        "title": "The PerformanceContainerTiming Interface",
+        "number": "5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "container-root-records-map",
+      "href": "https://wicg.github.io/container-timing/#container-root-records-map",
+      "linkingText": [
+        "container root records map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "per-document-state",
+        "href": "https://wicg.github.io/container-timing/#per-document-state",
+        "title": "Per-Document State",
+        "number": "6.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-element-containertimingignore",
+      "href": "https://wicg.github.io/container-timing/#dom-element-containertimingignore",
+      "linkingText": [
+        "containertimingIgnore"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-element",
+        "href": "https://wicg.github.io/container-timing/#extensions-to-element",
+        "title": "Extensions to the Element Interface",
+        "number": "6.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-element-containertiming",
+      "href": "https://wicg.github.io/container-timing/#dom-element-containertiming",
+      "linkingText": [
+        "containertiming"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-element",
+        "href": "https://wicg.github.io/container-timing/#extensions-to-element",
+        "title": "Extensions to the Element Interface",
+        "number": "6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-element-containertiming-ignore",
+      "href": "https://wicg.github.io/container-timing/#dom-element-containertiming-ignore",
+      "linkingText": [
+        "containertiming-ignore"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-element",
+        "href": "https://wicg.github.io/container-timing/#extensions-to-element",
+        "title": "Extensions to the Element Interface",
+        "number": "6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "container-timing-record-container-timing-record",
+      "href": "https://wicg.github.io/container-timing/#container-timing-record-container-timing-record",
+      "linkingText": [
+        "Container Timing Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Container Timing Record"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "container-timing-record",
+        "href": "https://wicg.github.io/container-timing/#container-timing-record",
+        "title": "Container Timing Record",
+        "number": "6.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "container-timing-record-painttiminginfo",
+      "href": "https://wicg.github.io/container-timing/#container-timing-record-painttiminginfo",
+      "linkingText": [
+        "paintTimingInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Container Timing Record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "container-timing-record",
+        "href": "https://wicg.github.io/container-timing/#container-timing-record",
+        "title": "Container Timing Record",
+        "number": "6.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "container-timing-record-identifier",
+      "href": "https://wicg.github.io/container-timing/#container-timing-record-identifier",
+      "linkingText": [
+        "identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Container Timing Record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "container-timing-record",
+        "href": "https://wicg.github.io/container-timing/#container-timing-record",
+        "title": "Container Timing Record",
+        "number": "6.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "container-timing-record-paintedregion",
+      "href": "https://wicg.github.io/container-timing/#container-timing-record-paintedregion",
+      "linkingText": [
+        "paintedRegion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Container Timing Record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "container-timing-record",
+        "href": "https://wicg.github.io/container-timing/#container-timing-record",
+        "title": "Container Timing Record",
+        "number": "6.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "container-timing-record-lastnewpaintedareapainttiminginfo",
+      "href": "https://wicg.github.io/container-timing/#container-timing-record-lastnewpaintedareapainttiminginfo",
+      "linkingText": [
+        "lastNewPaintedAreaPaintTimingInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Container Timing Record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "container-timing-record",
+        "href": "https://wicg.github.io/container-timing/#container-timing-record",
+        "title": "Container Timing Record",
+        "number": "6.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "container-timing-record-lastnewpaintedareaelement",
+      "href": "https://wicg.github.io/container-timing/#container-timing-record-lastnewpaintedareaelement",
+      "linkingText": [
+        "lastNewPaintedAreaElement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Container Timing Record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "container-timing-record",
+        "href": "https://wicg.github.io/container-timing/#container-timing-record",
+        "title": "Container Timing Record",
+        "number": "6.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "container-timing-record-haspendingchanges",
+      "href": "https://wicg.github.io/container-timing/#container-timing-record-haspendingchanges",
+      "linkingText": [
+        "hasPendingChanges"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Container Timing Record"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "container-timing-record",
+        "href": "https://wicg.github.io/container-timing/#container-timing-record",
+        "title": "Container Timing Record",
+        "number": "6.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "create-a-container-timing-record",
+      "href": "https://wicg.github.io/container-timing/#create-a-container-timing-record",
+      "linkingText": [
+        "create a Container Timing Record"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "container-timing-record",
+        "href": "https://wicg.github.io/container-timing/#container-timing-record",
+        "title": "Container Timing Record",
+        "number": "6.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "get-the-parent-container-root-element",
+      "href": "https://wicg.github.io/container-timing/#get-the-parent-container-root-element",
+      "linkingText": [
+        "get the parent container root element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getting-parent-container-root-element",
+        "href": "https://wicg.github.io/container-timing/#getting-parent-container-root-element",
+        "title": "Getting the parent container root Element",
+        "number": "6.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "contribute-to-container-timing",
+      "href": "https://wicg.github.io/container-timing/#contribute-to-container-timing",
+      "linkingText": [
+        "Contribute to container timing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contributes-to-container-timing",
+        "href": "https://wicg.github.io/container-timing/#contributes-to-container-timing",
+        "title": "Contributes to Container Timing",
+        "number": "6.8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "get-the-container-root-element",
+      "href": "https://wicg.github.io/container-timing/#get-the-container-root-element",
+      "linkingText": [
+        "get the container root element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "getting-container-root-element",
+        "href": "https://wicg.github.io/container-timing/#getting-container-root-element",
+        "title": "Getting the container root Element",
+        "number": "6.9"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "maybe-update-the-last-new-painted-area",
+      "href": "https://wicg.github.io/container-timing/#maybe-update-the-last-new-painted-area",
+      "linkingText": [
+        "maybe update the last new painted area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "maybe-update-last-new-painted-area",
+        "href": "https://wicg.github.io/container-timing/#maybe-update-last-new-painted-area",
+        "title": "Maybe Update Last New Painted Area",
+        "number": "6.10"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "create-a-container-timing-entry",
+      "href": "https://wicg.github.io/container-timing/#create-a-container-timing-entry",
+      "linkingText": [
+        "create a Container Timing entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "create-container-timing-entry",
+        "href": "https://wicg.github.io/container-timing/#create-container-timing-entry",
+        "title": "Create a Container Timing Entry",
+        "number": "6.11"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}
