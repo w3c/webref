@@ -1,0 +1,13 @@
+// Source: Container Timing API (https://wicg.github.io/container-timing/)
+[Exposed=Window]
+interface PerformanceContainerTiming : PerformanceEntry {
+    readonly attribute DOMString identifier;
+    readonly attribute DOMRectReadOnly intersectionRect;
+    readonly attribute unsigned long long size;
+    readonly attribute DOMHighResTimeStamp firstRenderTime;
+    readonly attribute Element? lastPaintedElement;
+    readonly attribute Element? rootElement;
+};
+
+// Source: Container Timing API (https://wicg.github.io/container-timing/)
+PerformanceContainerTiming includes PaintTimingMixin;

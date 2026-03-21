@@ -87,6 +87,12 @@ partial interface Element {
     [CEReactions, Reflect] attribute DOMString elementTiming;
 };
 
+// Source: Container Timing API (https://wicg.github.io/container-timing/)
+partial interface Element {
+    [CEReactions] attribute DOMString containertiming;
+    [CEReactions] attribute DOMString? containertimingIgnore;
+};
+
 // Source: CSS Spatial Navigation Module Level 1 (https://www.w3.org/TR/css-nav-1/)
 partial interface Element {
     Node getSpatialNavigationContainer();

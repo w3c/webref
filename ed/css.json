@@ -520,9 +520,9 @@
     {
       "name": "@import",
       "prose": "The @import rule allows users to import style rules from other style sheets. If an @import rule refers to a valid stylesheet, user agents must treat the contents of the stylesheet as if they were written in place of the @import rule, with two exceptions:",
-      "href": "https://drafts.csswg.org/css-cascade-5/#at-ruledef-import",
+      "href": "https://drafts.csswg.org/css-cascade-6/#at-ruledef-import",
       "descriptors": [],
-      "syntax": "@import [ <url> | <string> ] [ layer | layer(<layer-name>) ]? <import-conditions> ;",
+      "syntax": "@import [ <url> | <string> ] [[ layer | layer(<layer-name>) ] || [ scope | scope( <scope-start> | <scope-boundaries> ) ] || <supports-import-condition>]? <media-import-condition>?;",
       "extended": []
     },
     {
@@ -1018,7 +1018,7 @@
       "prose": "Scoped styles are described in CSS using the @scope block at-rule, which declares a scoping root and optional scoping limits associated with a set of style rules.",
       "href": "https://drafts.csswg.org/css-cascade-6/#at-ruledef-scope",
       "descriptors": [],
-      "syntax": "@scope [(<scope-start>)]? [to (<scope-end>)]? { <block-contents> }",
+      "syntax": "@scope <scope-boundaries>? { <block-contents> }",
       "extended": []
     },
     {
@@ -19597,6 +19597,12 @@
       "extended": []
     },
     {
+      "name": "media-import-condition",
+      "href": "https://drafts.csswg.org/css-cascade-6/#typedef-media-import-condition",
+      "syntax": "<media-query-list>",
+      "extended": []
+    },
+    {
       "name": "media-in-parens",
       "href": "https://drafts.csswg.org/mediaqueries-5/#typedef-media-in-parens",
       "syntax": "( <media-condition> ) | <media-feature> | <general-enclosed>",
@@ -20357,6 +20363,12 @@
       "extended": []
     },
     {
+      "name": "scope-boundaries",
+      "href": "https://drafts.csswg.org/css-cascade-6/#typedef-scope-boundaries",
+      "syntax": "[ ( <scope-start> ) ]? [ to ( <scope-end> ) ]?",
+      "extended": []
+    },
+    {
       "name": "scope-end",
       "prose": "<scope-end> is a <selector-list> selector used to identify any scoping limits.",
       "href": "https://drafts.csswg.org/css-cascade-6/#typedef-scope-end",
@@ -20730,6 +20742,12 @@
       "name": "supports-font-tech-fn",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-font-tech-fn",
       "syntax": "font-tech( <font-tech> )",
+      "extended": []
+    },
+    {
+      "name": "supports-import-condition",
+      "href": "https://drafts.csswg.org/css-cascade-6/#typedef-supports-import-condition",
+      "syntax": "[ supports( [ <supports-condition> | <declaration> ] ) ]",
       "extended": []
     },
     {

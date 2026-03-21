@@ -572,14 +572,14 @@
           "html": "<p>Let <var>index</var> be 1.</p>"
         },
         {
-          "html": "While <var>index</var> is less than <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p\">Get</a>(<var>execResult</var>, \"<code>length</code>\"):",
+          "html": "While <var>index</var> is less than or equal to <var>component</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component-group-name-list\" id=\"ref-for-component-group-name-list①\">group name list</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>name</var> be <var>component</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component-group-name-list\" id=\"ref-for-component-group-name-list①\">group name list</a>[<var>index</var> − 1].</p>"
+              "html": "<p>Let <var>name</var> be <var>component</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#component-group-name-list\" id=\"ref-for-component-group-name-list②\">group name list</a>[<var>index</var> − 1].</p>"
             },
             {
-              "html": "<p>Let <var>value</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p①\">Get</a>(<var>execResult</var>, <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tostring\" id=\"ref-for-sec-tostring\">ToString</a>(<var>index</var>)).</p>"
+              "html": "<p>Let <var>value</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p\" id=\"ref-for-sec-get-o-p\">Get</a>(<var>execResult</var>, <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tostring\" id=\"ref-for-sec-tostring\">ToString</a>(<var>index</var>)).</p>"
             },
             {
               "html": "<p>Set <var>groups</var>[<var>name</var>] to <var>value</var>.</p>"
@@ -673,7 +673,7 @@
           "html": "<p>Let <var>parser</var> be a new <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser\" id=\"ref-for-constructor-string-parser①⓪\">constructor string parser</a> whose <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-input\" id=\"ref-for-constructor-string-parser-input\">input</a> is <var>input</var> and <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list\">token list</a> is the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize\" id=\"ref-for-tokenize\">tokenize</a> given <var>input</var> and \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy-lenient\" id=\"ref-for-tokenize-policy-lenient\"><code>lenient</code></a>\".</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-while\" id=\"ref-for-iteration-while\">While</a> <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-index\" id=\"ref-for-constructor-string-parser-token-index\">token index</a> is less than <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list①\">token list</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-while\" id=\"ref-for-iteration-while\">While</a> <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-index\" id=\"ref-for-constructor-string-parser-token-index\">token index</a> is less than <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list①\">token list</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a>:",
           "rationale": "set",
           "steps": [
             {
@@ -1060,13 +1060,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>index</var> is less than <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list③\">token list</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a>, then return <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list④\">token list</a>[<var>index</var>].</p>"
+          "html": "<p>If <var>index</var> is less than <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list③\">token list</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a>, then return <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list④\">token list</a>[<var>index</var>].</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list⑤\">token list</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a> is greater than or equal to 1.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list⑤\">token list</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③\">size</a> is greater than or equal to 1.</p>"
         },
         {
-          "html": "<p>Let <var>last index</var> be <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list⑥\">token list</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size③\">size</a> − 1.</p>"
+          "html": "<p>Let <var>last index</var> be <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list⑥\">token list</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size④\">size</a> − 1.</p>"
         },
         {
           "html": "<p>Let <var>token</var> be <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list⑦\">token list</a>[<var>last index</var>].</p>"
@@ -1268,7 +1268,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-index\" id=\"ref-for-constructor-string-parser-token-index②⑥\">token index</a> is less than <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list①①\">token list</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size④\">size</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-index\" id=\"ref-for-constructor-string-parser-token-index②⑥\">token index</a> is less than <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list①①\">token list</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑤\">size</a>.</p>"
         },
         {
           "html": "<p>Let <var>token</var> be <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-list\" id=\"ref-for-constructor-string-parser-token-list①②\">token list</a>[<var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#constructor-string-parser-token-index\" id=\"ref-for-constructor-string-parser-token-index②⑦\">token index</a>].</p>"
@@ -1801,7 +1801,7 @@
           "html": "<p>Set <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-token-list\" id=\"ref-for-pattern-parser-token-list\">token list</a> to the result of running <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize\" id=\"ref-for-tokenize②\">tokenize</a> given <var>input</var> and \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#tokenize-policy-strict\" id=\"ref-for-tokenize-policy-strict②\"><code>strict</code></a>\".</p>"
         },
         {
-          "html": "While <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-index\" id=\"ref-for-pattern-parser-index\">index</a> is less than <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-token-list\" id=\"ref-for-pattern-parser-token-list①\">token list</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑤\">size</a>:",
+          "html": "While <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-index\" id=\"ref-for-pattern-parser-index\">index</a> is less than <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-token-list\" id=\"ref-for-pattern-parser-token-list①\">token list</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑥\">size</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -1940,7 +1940,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-index\" id=\"ref-for-pattern-parser-index①\">index</a> is less than <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-token-list\" id=\"ref-for-pattern-parser-token-list②\">token list</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑥\">size</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-index\" id=\"ref-for-pattern-parser-index①\">index</a> is less than <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-token-list\" id=\"ref-for-pattern-parser-token-list②\">token list</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑦\">size</a>.</p>"
         },
         {
           "html": "<p>Let <var>next token</var> be <var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-token-list\" id=\"ref-for-pattern-parser-token-list③\">token list</a>[<var>parser</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#pattern-parser-index\" id=\"ref-for-pattern-parser-index②\">index</a>].</p>"
@@ -2480,7 +2480,7 @@
               "html": "<p>Let <var>previous part</var> be <var>part list</var>[<var>index</var> - 1] if <var>index</var> is greater than 0, otherwise let it be null.</p>"
             },
             {
-              "html": "<p>Let <var>next part</var> be <var>part list</var>[<var>index</var> + 1] if <var>index</var> is less than <var>index list</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑦\">size</a> - 1, otherwise let it be null.</p>"
+              "html": "<p>Let <var>next part</var> be <var>part list</var>[<var>index</var> + 1] if <var>index</var> is less than <var>index list</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑧\">size</a> - 1, otherwise let it be null.</p>"
             },
             {
               "html": "If <var>part</var>’s <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type\" id=\"ref-for-part-type⑧\">type</a> is \"<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#part-type-fixed-text\" id=\"ref-for-part-type-fixed-text⑤\"><code>fixed-text</code></a>\" then:",
