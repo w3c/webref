@@ -522,7 +522,7 @@
       "prose": "The @import rule allows users to import style rules from other style sheets. If an @import rule refers to a valid stylesheet, user agents must treat the contents of the stylesheet as if they were written in place of the @import rule, with two exceptions:",
       "href": "https://drafts.csswg.org/css-cascade-6/#at-ruledef-import",
       "descriptors": [],
-      "syntax": "@import [ <url> | <string> ] [[ layer | layer(<layer-name>) ] || [ scope | scope( <scope-start> | <scope-boundaries> ) ] || <supports-import-condition>]? <media-import-condition>?;",
+      "syntax": "@import [ <url> | <string> ] [[ layer | layer( <layer-name> ) ] || [ scope | scope( <scope-start> | <scope-boundaries> ) ] || <supports-import-condition>]? <media-import-condition> ;",
       "extended": []
     },
     {
@@ -1018,7 +1018,7 @@
       "prose": "Scoped styles are described in CSS using the @scope block at-rule, which declares a scoping root and optional scoping limits associated with a set of style rules.",
       "href": "https://drafts.csswg.org/css-cascade-6/#at-ruledef-scope",
       "descriptors": [],
-      "syntax": "@scope <scope-boundaries>? { <block-contents> }",
+      "syntax": "@scope <scope-boundaries> { <block-contents> }",
       "extended": []
     },
     {
@@ -20747,7 +20747,7 @@
     {
       "name": "supports-import-condition",
       "href": "https://drafts.csswg.org/css-cascade-6/#typedef-supports-import-condition",
-      "syntax": "[ supports( [ <supports-condition> | <declaration> ] ) ]",
+      "syntax": "supports( [ <supports-condition> | <declaration> ] )",
       "extended": []
     },
     {
