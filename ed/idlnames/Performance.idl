@@ -35,10 +35,11 @@ partial interface Performance {
 };
 
 // Source: Resource Timing (https://www.w3.org/TR/resource-timing/)
-partial interface Performance {  undefined clearResourceTimings ();
-  undefined setResourceTimingBufferSize (unsigned long maxSize);
-  attribute EventHandler onresourcetimingbufferfull;
-};
+partial interface Performance {
+      undefined clearResourceTimings ();
+      undefined setResourceTimingBufferSize (unsigned long maxSize);
+      attribute EventHandler onresourcetimingbufferfull;
+    };
 
 // Source: User Timing (https://www.w3.org/TR/user-timing/)
 partial interface Performance {
