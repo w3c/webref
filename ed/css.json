@@ -1616,7 +1616,7 @@
     {
       "name": "light-dark()",
       "href": "https://drafts.csswg.org/css-color-5/#funcdef-light-dark",
-      "syntax": "light-dark( [<color>, <color>] | [<image>, <image>])",
+      "syntax": "<light-dark-color> | <light-dark-image>",
       "extended": []
     },
     {
@@ -18299,7 +18299,7 @@
       "name": "color",
       "prose": "Colors in CSS are represented by the <color> type:",
       "href": "https://drafts.csswg.org/css-color-5/#typedef-color",
-      "syntax": "<color-base> | currentColor | <system-color> | <contrast-color()> | <device-cmyk()> | <light-dark()>",
+      "syntax": "<color-base> | currentColor | <system-color> | <contrast-color()> | <device-cmyk()> | <light-dark-color>",
       "extended": []
     },
     {
@@ -19429,6 +19429,18 @@
       "name": "level",
       "prose": "where <level> is a <number-token> with its type flag set to \"integer\".",
       "href": "https://drafts.csswg.org/selectors-5/#typedef-level",
+      "extended": []
+    },
+    {
+      "name": "light-dark-color",
+      "href": "https://drafts.csswg.org/css-color-5/#typedef-light-dark-color",
+      "syntax": "light-dark(<color>, <color>)",
+      "extended": []
+    },
+    {
+      "name": "light-dark-image",
+      "href": "https://drafts.csswg.org/css-color-5/#typedef-light-dark-image",
+      "syntax": "light-dark(<image>, <image>)",
       "extended": []
     },
     {
