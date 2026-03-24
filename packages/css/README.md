@@ -35,7 +35,7 @@ const { atrules, functions, properties, selectors, types } = await css.index();
 const abs = functions['abs()'];
 ```
 
-Features returned by `index()` are indexed by their feature name, but there are exceptional cases where a given feature is defined differently (with a different syntax) for different scopes. In such cases the feature is indexed by its name completed with ` for ` and the name of the first scoping feature to which the definition applies. For example, `type() for @function`, `type() for attr()`. As of June 2025, this affects a handful of functions and types. See also the description of the [`for`](`#for`) key.
+Features returned by `index()` are indexed by their feature name, but there are exceptional cases where a given feature is defined differently (with a different syntax) for different scopes. In such cases the feature is indexed by its name completed with ` for ` and the name of the first scoping feature to which the definition applies. For example, `type() for @function`, `type() for attr()`. As of June 2025, this affects a handful of functions and types. See also the description of the [`for`](#for) key.
 
 
 ## CSS features
