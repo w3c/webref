@@ -73,9 +73,11 @@ Data curation brings the following guarantees.
 
 The consolidated `ed/css.json` file, released in the `@webref/css` package, comes with the following guarantees:
 
-- All syntax values (the `value` keys) can be parsed by the version of [CSSTree](https://github.com/csstree/csstree) set in `peerDependencies` in `package.json`.
+- All syntax values (the `syntax` keys) can be parsed by the version of [CSSTree](https://github.com/csstree/csstree) set in `peerDependencies` in `package.json`.
 - Feature names (the `name` keys) are unique per type provided that the `for` key is also taken into account for functions and types.
+- CSS features targeted by `for`, `legacyAliasOf`, `longhands` and `resetLonghands` keys are guaranteed to exist in the package.
 - All features have an `href` key that targets the CSS spec that defines the feature. When the feature is extended across CSS specs, this URL targets the base definition.
+- All URLs (without fragment) that appear in `href` and `extended` keys are guaranteed to exist in the version of [`web-specs`](https://www.npmjs.com/package/web-specs) that was used to identify the specs to extract data from. The exact version that was used is not yet surfaced in the data though. In most cases, it should be the latest published version at the time when the data is released.
 
 The consolidated file is generated from curated extracts in the `ed/css` folder. These extracts, released in the `@webref/css` package until version 7, come with the following guarantees:
 
