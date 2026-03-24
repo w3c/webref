@@ -54,7 +54,7 @@ The following keys are always set for at-rules:
 - [`name`](#name)
 
 Additional keys may be set:
-- [`for`](#syntax)
+- [`for`](#for)
 - [`prose`](#prose)
 - [`syntax`](#syntax)
 
