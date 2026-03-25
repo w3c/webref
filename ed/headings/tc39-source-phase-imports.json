@@ -180,11 +180,18 @@
       "number": "16.1.1.6"
     },
     {
+      "id": "sec-resolveexport",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-resolveexport",
+      "title": "ResolveExport ( exportName [ , resolveSet ] )",
+      "level": 5,
+      "number": "16.1.1.6.1"
+    },
+    {
       "id": "sec-source-text-module-record-initialize-environment",
       "href": "https://tc39.es/proposal-source-phase-imports/#sec-source-text-module-record-initialize-environment",
       "title": "InitializeEnvironment ( )",
       "level": 5,
-      "number": "16.1.1.6.1"
+      "number": "16.1.1.6.2"
     },
     {
       "id": "sec-HostLoadImportedModule",
@@ -201,25 +208,39 @@
       "number": "16.1.1.8"
     },
     {
-      "id": "sec-HostGetModuleSourceModuleRecord",
-      "href": "https://tc39.es/proposal-source-phase-imports/#sec-HostGetModuleSourceModuleRecord",
+      "id": "sec-hostgetmodulesourcemodulerecord",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-hostgetmodulesourcemodulerecord",
       "title": "HostGetModuleSourceModuleRecord ( specifier )",
       "level": 4,
       "number": "16.1.1.9"
+    },
+    {
+      "id": "sec-parsemodule",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-parsemodule",
+      "title": "ParseModule ( sourceText, realm, hostDefined )",
+      "level": 2,
+      "number": "16.2"
     },
     {
       "id": "sec-imports",
       "href": "https://tc39.es/proposal-source-phase-imports/#sec-imports",
       "title": "Imports",
       "level": 2,
-      "number": "16.2"
+      "number": "16.3"
+    },
+    {
+      "id": "sec-imports-static-semantics-boundnames",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-imports-static-semantics-boundnames",
+      "title": "Static Semantics: BoundNames",
+      "level": 3,
+      "number": "16.3.1"
     },
     {
       "id": "sec-static-semantics-importentries",
       "href": "https://tc39.es/proposal-source-phase-imports/#sec-static-semantics-importentries",
       "title": "Static Semantics: ImportEntries ( )",
       "level": 3,
-      "number": "16.2.1"
+      "number": "16.3.2"
     },
     {
       "id": "sec-reflection",
@@ -278,9 +299,9 @@
       "number": "28.1.3.1"
     },
     {
-      "id": "sec-get-%abstractmodulesource%.prototype.@@tostringtag",
-      "href": "https://tc39.es/proposal-source-phase-imports/#sec-get-%25abstractmodulesource%25.prototype.%40%40tostringtag",
-      "title": "get %AbstractModuleSource%.prototype [ @@toStringTag ]",
+      "id": "sec-get-%abstractmodulesource%.prototype-%symbol.tostringtag%",
+      "href": "https://tc39.es/proposal-source-phase-imports/#sec-get-%25abstractmodulesource%25.prototype-%25symbol.tostringtag%25",
+      "title": "get %AbstractModuleSource%.prototype [ %Symbol.toStringTag% ]",
       "level": 4,
       "number": "28.1.3.2"
     }
