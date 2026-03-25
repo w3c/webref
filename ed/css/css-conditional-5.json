@@ -516,7 +516,7 @@
       "name": "<supports-feature>",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-feature",
       "type": "type",
-      "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-at-rule-fn> | <supports-named-feature-fn> | <supports-decl>"
+      "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-at-rule-fn> | <supports-named-feature-fn> | <supports-env-fn> | <supports-decl>"
     },
     {
       "name": "<supports-decl>",
@@ -673,6 +673,20 @@
       "prose": "Where <supports-condition-name> is an <extension-name> that defines the name of the supports query.",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-condition-name",
       "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Missing definition",
+      "name": "<supports-env-fn>",
+      "value": "env( <ident> )"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "env()",
+      "href": "https://drafts.csswg.org/css-conditional-5/#funcdef-supports-env",
+      "type": "function",
+      "for": "@supports"
     }
   ]
 }

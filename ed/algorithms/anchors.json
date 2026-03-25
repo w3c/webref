@@ -140,10 +140,13 @@
           "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors①\">map of new anchors</a> contains a mapping from <var>anchor</var> to <var>promise</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">reject</a> the <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
         },
         {
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors②\">map of new anchors</a> has reached a user agent maximum size, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑥\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
+        },
+        {
           "html": "<p>Add <var>anchor</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-set-of-tracked-anchors\" id=\"ref-for-xrsession-set-of-tracked-anchors①\">set of tracked anchors</a>.</p>"
         },
         {
-          "html": "<p>Add a mapping from <var>anchor</var> to <var>promise</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors②\">map of new anchors</a>.</p>"
+          "html": "<p>Add a mapping from <var>anchor</var> to <var>promise</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors③\">map of new anchors</a>.</p>"
         },
         {
           "html": "<p>Return <var>promise</var>.</p>"
@@ -159,7 +162,7 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise③\">a new Promise</a> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm②\">relevant realm</a> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsystem\" id=\"ref-for-xrsystem③\">XRSystem</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors⑥\">map of persistent anchors</a> does not contain a mapping to <var>anchor</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑥\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors⑥\">map of persistent anchors</a> does not contain a mapping to <var>anchor</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑦\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>anchor</var> be the value of mapping from <var>uuid</var> on <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-persistent-anchors\" id=\"ref-for-xrsession-map-of-persistent-anchors⑦\">map of persistent anchors</a>.</p>"
@@ -187,7 +190,7 @@
           "html": "<p>Let <var>frame</var> be <var>hitTestResult</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/hit-test/#xrhittestresult-frame\" id=\"ref-for-xrhittestresult-frame\">frame</a>.</p>"
         },
         {
-          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active①\">active</a> boolean is <code>false</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑦\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active①\">active</a> boolean is <code>false</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑦\">reject</a> <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑧\">InvalidStateError</a></code>, return <var>promise</var>, and abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>session</var> be <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session①\">session</a>.</p>"
@@ -211,7 +214,7 @@
           "html": "<p>Add <var>anchor</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-set-of-tracked-anchors\" id=\"ref-for-xrsession-set-of-tracked-anchors②\">set of tracked anchors</a>.</p>"
         },
         {
-          "html": "<p>Add a mapping from <var>anchor</var> to <var>promise</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors③\">map of new anchors</a>.</p>"
+          "html": "<p>Add a mapping from <var>anchor</var> to <var>promise</var> to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors④\">map of new anchors</a>.</p>"
         },
         {
           "html": "<p>Return <var>promise</var>.</p>"
@@ -245,7 +248,7 @@
                   "html": "<p>Remove <var>anchor</var> from the <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-set-of-tracked-anchors\" id=\"ref-for-xrsession-set-of-tracked-anchors④\">set of tracked anchors</a>.</p>"
                 },
                 {
-                  "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors④\">map of new anchors</a> contains a mapping from <var>anchor</var> to <var>promise</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑦\">reject</a> the <var>promise</var> and remove the mapping.</p>"
+                  "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors⑤\">map of new anchors</a> contains a mapping from <var>anchor</var> to <var>promise</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑧\">reject</a> the <var>promise</var> and remove the mapping.</p>"
                 },
                 {
                   "html": "<p>Continue to the next entry in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-set-of-tracked-anchors\" id=\"ref-for-xrsession-set-of-tracked-anchors⑤\">set of tracked anchors</a>.</p>"
@@ -256,7 +259,7 @@
               "html": "<p>Add <var>anchor</var> to <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xrframe-trackedanchors\" id=\"ref-for-dom-xrframe-trackedanchors①\">trackedAnchors</a></code> set.</p>"
             },
             {
-              "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors⑤\">map of new anchors</a> contains a mapping from <var>anchor</var> to <var>promise</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">resolve</a> the <var>promise</var> with <var>anchor</var> and remove the mapping.</p>"
+              "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-map-of-new-anchors\" id=\"ref-for-xrsession-map-of-new-anchors⑥\">map of new anchors</a> contains a mapping from <var>anchor</var> to <var>promise</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">resolve</a> the <var>promise</var> with <var>anchor</var> and remove the mapping.</p>"
             }
           ]
         }
