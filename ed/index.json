@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-03-25T06:54:35.276Z",
+  "date": "2026-03-25T12:53:59.266Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -32,7 +32,7 @@
   },
   "stats": {
     "crawled": 733,
-    "errors": 2
+    "errors": 4
   },
   "crawler": "reffy-20.0.14",
   "results": [
@@ -1253,7 +1253,8 @@
       "dfns": "dfns/compositing-2.json",
       "headings": "headings/compositing-2.json",
       "ids": "ids/compositing-2.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://drafts.csswg.org/compositing-2/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 22)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://drafts.csswg.org/css-color-6/",
@@ -1475,7 +1476,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-gcpm-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 22:57:14 GMT"
+        "lastModified": "Tue, 24 Mar 2026 22:57:15 GMT"
       },
       "generator": "bikeshed",
       "date": "24 January 2024",
@@ -2075,7 +2076,7 @@
       ],
       "crawled": "https://drafts.csswg.org/filter-effects-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 22:57:14 GMT"
+        "lastModified": "Tue, 24 Mar 2026 22:57:15 GMT"
       },
       "generator": "bikeshed",
       "date": "23 January 2026",
@@ -2615,9 +2616,9 @@
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 11:08:38 GMT"
+        "lastModified": "Wed, 25 Mar 2026 09:21:46 GMT"
       },
-      "date": "24 March 2026",
+      "date": "25 March 2026",
       "algorithms": "algorithms/html.json",
       "links": "links/html.json",
       "refs": "refs/html.json",
@@ -7667,7 +7668,7 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-cs/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 23:19:41 GMT"
+        "lastModified": "Wed, 25 Mar 2026 08:46:05 GMT"
       },
       "generator": "respec",
       "date": "04 August 2025",
@@ -7714,10 +7715,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-profiling/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 23:19:41 GMT"
+        "lastModified": "Wed, 25 Mar 2026 08:46:05 GMT"
       },
       "generator": "respec",
-      "date": "24 March 2026",
+      "date": "25 March 2026",
       "algorithms": "algorithms/shacl12-profiling.json",
       "links": "links/shacl12-profiling.json",
       "refs": "refs/shacl12-profiling.json",
@@ -7763,10 +7764,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-ui/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 23:19:41 GMT"
+        "lastModified": "Wed, 25 Mar 2026 08:46:05 GMT"
       },
       "generator": "respec",
-      "date": "24 March 2026",
+      "date": "25 March 2026",
       "links": "links/shacl12-ui.json",
       "refs": "refs/shacl12-ui.json",
       "dfns": "dfns/shacl12-ui.json",
@@ -14041,7 +14042,8 @@
       "dfns": "dfns/sms-one-time-codes.json",
       "headings": "headings/sms-one-time-codes.json",
       "ids": "ids/sms-one-time-codes.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://wicg.github.io/sms-one-time-codes/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 257)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://wicg.github.io/soft-navigations/",
@@ -18974,7 +18976,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2022/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 22:57:14 GMT"
+        "lastModified": "Tue, 24 Mar 2026 22:57:15 GMT"
       },
       "generator": "bikeshed",
       "date": "21 November 2025",
@@ -20402,7 +20404,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-color-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 22:57:14 GMT"
+        "lastModified": "Tue, 24 Mar 2026 22:57:15 GMT"
       },
       "date": "18 January 2022",
       "links": "links/css-color-3.json",
@@ -21240,7 +21242,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-counter-styles-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 22:57:14 GMT"
+        "lastModified": "Tue, 24 Mar 2026 22:57:15 GMT"
       },
       "generator": "bikeshed",
       "date": "13 December 2025",
@@ -21516,7 +21518,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-easing-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 22:57:14 GMT"
+        "lastModified": "Tue, 24 Mar 2026 22:57:15 GMT"
       },
       "generator": "bikeshed",
       "date": "23 February 2026",
@@ -24189,7 +24191,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-rhythm-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 22:57:14 GMT"
+        "lastModified": "Tue, 24 Mar 2026 22:57:15 GMT"
       },
       "generator": "bikeshed",
       "date": "12 February 2026",
@@ -24325,7 +24327,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-ruby-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 22:57:14 GMT"
+        "lastModified": "Tue, 24 Mar 2026 22:57:15 GMT"
       },
       "generator": "bikeshed",
       "date": "26 December 2025",
@@ -35690,10 +35692,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-core/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 23:19:41 GMT"
+        "lastModified": "Wed, 25 Mar 2026 08:46:05 GMT"
       },
       "generator": "respec",
-      "date": "24 March 2026",
+      "date": "25 March 2026",
       "algorithms": "algorithms/shacl12-core.json",
       "links": "links/shacl12-core.json",
       "refs": "refs/shacl12-core.json",
@@ -35746,10 +35748,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-node-expr/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 23:19:41 GMT"
+        "lastModified": "Wed, 25 Mar 2026 08:46:05 GMT"
       },
       "generator": "respec",
-      "date": "24 March 2026",
+      "date": "25 March 2026",
       "algorithms": "algorithms/shacl12-node-expr.json",
       "links": "links/shacl12-node-expr.json",
       "refs": "refs/shacl12-node-expr.json",
@@ -35805,10 +35807,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-rules/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 23:19:41 GMT"
+        "lastModified": "Wed, 25 Mar 2026 08:46:05 GMT"
       },
       "generator": "respec",
-      "date": "24 March 2026",
+      "date": "25 March 2026",
       "links": "links/shacl12-rules.json",
       "refs": "refs/shacl12-rules.json",
       "dfns": "dfns/shacl12-rules.json",
@@ -35860,10 +35862,10 @@
       ],
       "crawled": "https://w3c.github.io/data-shapes/shacl12-sparql/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Mar 2026 23:19:41 GMT"
+        "lastModified": "Wed, 25 Mar 2026 08:46:05 GMT"
       },
       "generator": "respec",
-      "date": "24 March 2026",
+      "date": "25 March 2026",
       "algorithms": "algorithms/shacl12-sparql.json",
       "links": "links/shacl12-sparql.json",
       "refs": "refs/shacl12-sparql.json",

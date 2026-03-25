@@ -4,6 +4,15 @@ This package contains a consolidated list of CSS features defined across specs, 
 
 **Important:** If you're migrating from version 6, see the [changelog](https://github.com/w3c/webref/blob/main/packages/css/CHANGELOG.md) for "How to upgrade" considerations.
 
+## Table of Contents
+
+- [Usage](#usage)
+- [CSS features](#css-features)
+- [Feature keys](#feature-keys)
+- [Migrating from `mdn/data`](#migrating-from-mdndata)
+- [Guarantees](#guarantees)
+
+
 ## Usage
 
 Two async methods are exposed: `listAll()` and `index()`. They both resolve with an object that lists CSS features by feature type: `atrules`, `functions`, `properties`, `selectors` and `types`.
@@ -354,7 +363,7 @@ When a property is extended with new values in different specs, the `syntax` key
 The `type` key is only set for properties, when value is not empty. It maps to the [Media feature type](https://www.w3.org/TR/mediaqueries/#mq-ranges) part of a CSS property definition. Value should be one of `discrete` or `range`, but data may contain additional values depending on what specs actually define.
 
 
-### Migrating from `mdn/data`
+## Migrating from `mdn/data`
 
 The structure of the consolidated list of CSS features aligns with CSS data in [`mdn/data`](https://github.com/mdn/data). If you use the `index()` method, the `@webref/css` package can *almost* serve as a drop-in replacement for the `mdn/data` package **for syntaxes**, with the following structural nuances:
 
