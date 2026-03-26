@@ -119,10 +119,10 @@
           "writablestream-writerequests",
           "rs-transfer",
           "writablestreamdefaultwriter-stream",
-          "default-writer-constructor",
           "example-manual-write-dont-await"
         ]
       },
+      "https://tc39.es/ecma262/multipage/": {},
       "https://tc39.github.io/ecma262/": {
         "anchors": [
           "eqn-floor"
@@ -348,14 +348,15 @@
           "readable-byte-stream",
           "readable-stream",
           "dom-readablestreambyobreaderreadoptions-min",
-          "ws-get-writer",
-          "writablestreamdefaultwriter",
           "writablestream-set-up-closealgorithm",
           "writablestream-set-up-abortalgorithm",
           "default-writer-write",
           "byob-reader",
           "default-reader",
           "readablestream-set-up-with-byte-reading-support-cancelalgorithm",
+          "writablestreamdefaultwriter",
+          "writablestreamdefaultwriter-write-a-chunk",
+          "set-up-writable-stream-default-writer",
           "ws-abort",
           "ws-close",
           "default-writer-close",
@@ -363,6 +364,13 @@
           "rs-cancel",
           "generic-reader-cancel",
           "default-reader-read"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
+        "anchors": [
+          "sec-native-error-types-used-in-this-standard-typeerror",
+          "sec-native-error-types-used-in-this-standard-rangeerror",
+          "sec-native-error-types-used-in-this-standard-syntaxerror"
         ]
       },
       "https://url.spec.whatwg.org/": {
@@ -389,11 +397,9 @@
           "invalidstateerror",
           "BufferSource",
           "a-promise-rejected-with",
-          "exceptiondef-typeerror",
           "a-promise-resolved-with",
           "idl-unsigned-long",
           "idl-unrestricted-double",
-          "exceptiondef-rangeerror",
           "buffersource-byte-length",
           "idl-DataView",
           "idl-Uint8Array",
@@ -406,7 +412,6 @@
           "SameObject",
           "idl-DOMString",
           "idl-boolean",
-          "syntaxerror",
           "notsupportederror",
           "upon-fulfillment",
           "aborterror",
