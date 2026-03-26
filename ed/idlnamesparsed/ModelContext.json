@@ -6,7 +6,7 @@
       "title": "WebMCP",
       "url": "https://webmachinelearning.github.io/webmcp/"
     },
-    "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext {\n  undefined registerTool(ModelContextTool tool);\n  undefined unregisterTool(DOMString name);\n};",
+    "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext {\n  undefined registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});\n};",
     "href": "https://webmachinelearning.github.io/webmcp/#modelcontext"
   },
   "extended": [],

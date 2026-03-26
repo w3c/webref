@@ -237,6 +237,28 @@
       "links": []
     },
     {
+      "id": "model-context-unregister-a-tool",
+      "href": "https://webmachinelearning.github.io/webmcp/#model-context-unregister-a-tool",
+      "linkingText": [
+        "unregister a tool"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "model context"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "supporting-concepts",
+        "href": "https://webmachinelearning.github.io/webmcp/#supporting-concepts",
+        "title": "Supporting concepts",
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "navigator-modelcontext",
       "href": "https://webmachinelearning.github.io/webmcp/#navigator-modelcontext",
       "linkingText": [
@@ -282,20 +304,8 @@
         {
           "type": "dev",
           "id": "ref-for-dom-navigator-modelcontext①",
-          "name": "navigator.modelContext.registerTool(tool)",
+          "name": "navigator.modelContext.registerTool(tool, options)",
           "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-navigator-modelcontext%E2%91%A0",
-          "heading": {
-            "id": "model-context-container",
-            "href": "https://webmachinelearning.github.io/webmcp/#model-context-container",
-            "title": "ModelContext Interface",
-            "number": "4.2"
-          }
-        },
-        {
-          "type": "dev",
-          "id": "ref-for-dom-navigator-modelcontext②",
-          "name": "navigator.modelContext.unregisterTool(name)",
-          "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-navigator-modelcontext%E2%91%A1",
           "heading": {
             "id": "model-context-container",
             "href": "https://webmachinelearning.github.io/webmcp/#model-context-container",
@@ -326,14 +336,15 @@
       "links": []
     },
     {
-      "id": "dom-modelcontext-registertool-tool-tool",
-      "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-registertool-tool-tool",
+      "id": "dom-modelcontext-registertool-tool-options-tool",
+      "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-registertool-tool-options-tool",
       "linkingText": [
         "tool"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
+        "ModelContext/registerTool(tool, options)",
         "ModelContext/registerTool(tool)"
       ],
       "access": "public",
@@ -348,15 +359,16 @@
       "links": []
     },
     {
-      "id": "dom-modelcontext-unregistertool-name-name",
-      "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-unregistertool-name-name",
+      "id": "dom-modelcontext-registertool-tool-options-options",
+      "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-registertool-tool-options-options",
       "linkingText": [
-        "name"
+        "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "ModelContext/unregisterTool(name)"
+        "ModelContext/registerTool(tool, options)",
+        "ModelContext/registerTool(tool)"
       ],
       "access": "public",
       "informative": false,
@@ -395,6 +407,7 @@
       "id": "dom-modelcontext-registertool",
       "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-registertool",
       "linkingText": [
+        "registerTool(tool, options)",
         "registerTool(tool)"
       ],
       "localLinkingText": [],
@@ -415,43 +428,8 @@
         {
           "type": "dev",
           "id": "ref-for-dom-modelcontext-registertool②",
-          "name": "navigator.modelContext.registerTool(tool)",
+          "name": "navigator.modelContext.registerTool(tool, options)",
           "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-modelcontext-registertool%E2%91%A1",
-          "heading": {
-            "id": "model-context-container",
-            "href": "https://webmachinelearning.github.io/webmcp/#model-context-container",
-            "title": "ModelContext Interface",
-            "number": "4.2"
-          }
-        }
-      ]
-    },
-    {
-      "id": "dom-modelcontext-unregistertool",
-      "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-unregistertool",
-      "linkingText": [
-        "unregisterTool(name)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "ModelContext"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "model-context-container",
-        "href": "https://webmachinelearning.github.io/webmcp/#model-context-container",
-        "title": "ModelContext Interface",
-        "number": "4.2"
-      },
-      "definedIn": "prose",
-      "links": [
-        {
-          "type": "dev",
-          "id": "ref-for-dom-modelcontext-unregistertool①",
-          "name": "navigator.modelContext.unregisterTool(name)",
-          "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-modelcontext-unregistertool%E2%91%A0",
           "heading": {
             "id": "model-context-container",
             "href": "https://webmachinelearning.github.io/webmcp/#model-context-container",
@@ -504,9 +482,9 @@
       "links": [
         {
           "type": "dev",
-          "id": "ref-for-dom-modelcontexttool-name①",
+          "id": "ref-for-dom-modelcontexttool-name②",
           "name": "tool[\"name\"]",
-          "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-modelcontexttool-name%E2%91%A0",
+          "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-modelcontexttool-name%E2%91%A1",
           "heading": {
             "id": "model-context-tool",
             "href": "https://webmachinelearning.github.io/webmcp/#model-context-tool",
@@ -539,9 +517,9 @@
       "links": [
         {
           "type": "dev",
-          "id": "ref-for-dom-modelcontexttool-description②",
+          "id": "ref-for-dom-modelcontexttool-description③",
           "name": "tool[\"description\"]",
-          "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-modelcontexttool-description%E2%91%A1",
+          "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-modelcontexttool-description%E2%91%A2",
           "heading": {
             "id": "model-context-tool",
             "href": "https://webmachinelearning.github.io/webmcp/#model-context-tool",
@@ -763,6 +741,61 @@
       "links": []
     },
     {
+      "id": "dictdef-modelcontextregistertooloptions",
+      "href": "https://webmachinelearning.github.io/webmcp/#dictdef-modelcontextregistertooloptions",
+      "linkingText": [
+        "ModelContextRegisterToolOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "model-context-register-tool-options",
+        "href": "https://webmachinelearning.github.io/webmcp/#model-context-register-tool-options",
+        "title": "ModelContextRegisterToolOptions Dictionary",
+        "number": "4.2.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-modelcontextregistertooloptions-signal",
+      "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontextregistertooloptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ModelContextRegisterToolOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "model-context-register-tool-options",
+        "href": "https://webmachinelearning.github.io/webmcp/#model-context-register-tool-options",
+        "title": "ModelContextRegisterToolOptions Dictionary",
+        "number": "4.2.2"
+      },
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-modelcontextregistertooloptions-signal①",
+          "name": "tool[\"signal\"]",
+          "href": "https://webmachinelearning.github.io/webmcp/#ref-for-dom-modelcontextregistertooloptions-signal%E2%91%A0",
+          "heading": {
+            "id": "model-context-register-tool-options",
+            "href": "https://webmachinelearning.github.io/webmcp/#model-context-register-tool-options",
+            "title": "ModelContextRegisterToolOptions Dictionary",
+            "number": "4.2.2"
+          }
+        }
+      ]
+    },
+    {
       "id": "modelcontextclient",
       "href": "https://webmachinelearning.github.io/webmcp/#modelcontextclient",
       "linkingText": [
@@ -777,7 +810,7 @@
         "id": "model-context-client",
         "href": "https://webmachinelearning.github.io/webmcp/#model-context-client",
         "title": "ModelContextClient Interface",
-        "number": "4.2.2"
+        "number": "4.2.3"
       },
       "definedIn": "pre",
       "links": []
@@ -799,7 +832,7 @@
         "id": "model-context-client",
         "href": "https://webmachinelearning.github.io/webmcp/#model-context-client",
         "title": "ModelContextClient Interface",
-        "number": "4.2.2"
+        "number": "4.2.3"
       },
       "definedIn": "pre",
       "links": []
@@ -819,7 +852,7 @@
         "id": "model-context-client",
         "href": "https://webmachinelearning.github.io/webmcp/#model-context-client",
         "title": "ModelContextClient Interface",
-        "number": "4.2.2"
+        "number": "4.2.3"
       },
       "definedIn": "pre",
       "links": []
@@ -841,7 +874,7 @@
         "id": "model-context-client",
         "href": "https://webmachinelearning.github.io/webmcp/#model-context-client",
         "title": "ModelContextClient Interface",
-        "number": "4.2.2"
+        "number": "4.2.3"
       },
       "definedIn": "prose",
       "links": [
@@ -854,7 +887,7 @@
             "id": "model-context-client",
             "href": "https://webmachinelearning.github.io/webmcp/#model-context-client",
             "title": "ModelContextClient Interface",
-            "number": "4.2.2"
+            "number": "4.2.3"
           }
         }
       ]

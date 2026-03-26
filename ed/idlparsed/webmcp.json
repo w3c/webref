@@ -15,7 +15,7 @@
     },
     "idlNames": {
       "ModelContext": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext {\n  undefined registerTool(ModelContextTool tool);\n  undefined unregisterTool(DOMString name);\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext {\n  undefined registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});\n};",
         "type": "interface",
         "name": "ModelContext",
         "inheritance": null,
@@ -47,27 +47,10 @@
                 "default": null,
                 "optional": false,
                 "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-registertool"
-          },
-          {
-            "type": "operation",
-            "name": "unregisterTool",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
+              },
               {
                 "type": "argument",
-                "name": "name",
+                "name": "options",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -75,16 +58,18 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "DOMString"
+                  "idlType": "ModelContextRegisterToolOptions"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-unregistertool"
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-registertool"
           }
         ],
         "extAttrs": [
@@ -286,6 +271,33 @@
         "extAttrs": [],
         "href": "https://webmachinelearning.github.io/webmcp/#callbackdef-toolexecutecallback"
       },
+      "ModelContextRegisterToolOptions": {
+        "fragment": "dictionary ModelContextRegisterToolOptions {\n  AbortSignal signal;\n};",
+        "type": "dictionary",
+        "name": "ModelContextRegisterToolOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "signal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AbortSignal"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontextregistertooloptions-signal"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://webmachinelearning.github.io/webmcp/#dictdef-modelcontextregistertooloptions"
+      },
       "ModelContextClient": {
         "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContextClient {\n  Promise<any> requestUserInteraction(UserInteractionCallback callback);\n};",
         "type": "interface",
@@ -436,19 +448,24 @@
         "ModelContext"
       ],
       "ModelContext": [
-        "ModelContextTool"
+        "ModelContextTool",
+        "ModelContextRegisterToolOptions"
       ],
       "ModelContextTool": [
         "ToolExecuteCallback",
         "ToolAnnotations"
       ],
       "ToolAnnotations": [],
+      "ModelContextRegisterToolOptions": [
+        "AbortSignal"
+      ],
       "ModelContextClient": [
         "UserInteractionCallback"
       ]
     },
     "externalDependencies": [
-      "Navigator"
+      "Navigator",
+      "AbortSignal"
     ],
     "hasObsoleteIdl": false
   }

@@ -158,6 +158,55 @@
         "partial": false,
         "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-sframetransformoptions"
       },
+      "SFrameType": {
+        "fragment": "enum SFrameType {\n    \"per-frame\",\n    \"per-packet\"\n};",
+        "type": "enum",
+        "name": "SFrameType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "per-frame",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetype-per-frame"
+          },
+          {
+            "type": "enum-value",
+            "value": "per-packet",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetype-per-packet"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-sframetype"
+      },
+      "RTCSFrameSenderTransformOptions": {
+        "fragment": "dictionary RTCSFrameSenderTransformOptions : SFrameTransformOptions {\n    SFrameType type = \"per-frame\";\n};",
+        "type": "dictionary",
+        "name": "RTCSFrameSenderTransformOptions",
+        "inheritance": "SFrameTransformOptions",
+        "members": [
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SFrameType"
+            },
+            "default": {
+              "type": "string",
+              "value": "per-frame"
+            },
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcsframesendertransformoptions-type"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcsframesendertransformoptions"
+      },
       "SmallCryptoKeyID": {
         "fragment": "typedef [EnforceRange] unsigned long long SmallCryptoKeyID;",
         "type": "typedef",
@@ -409,7 +458,7 @@
         "href": "https://w3c.github.io/webrtc-encoded-transform/#sframedecryptermanager"
       },
       "RTCSFrameSenderTransform": {
-        "fragment": "[Exposed=Window]\ninterface RTCSFrameSenderTransform {\n    constructor(optional SFrameTransformOptions options = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface RTCSFrameSenderTransform {\n    constructor(optional RTCSFrameSenderTransformOptions options = {});\n};",
         "type": "interface",
         "name": "RTCSFrameSenderTransform",
         "inheritance": null,
@@ -427,7 +476,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "SFrameTransformOptions"
+                  "idlType": "RTCSFrameSenderTransformOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -1411,8 +1460,97 @@
         "partial": false,
         "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcencodedaudioframe"
       },
+      "RTCRtpScriptTransformType": {
+        "fragment": "enum RTCRtpScriptTransformType {\n    \"sframe\"\n};",
+        "type": "enum",
+        "name": "RTCRtpScriptTransformType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "sframe",
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformtype-sframe"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-rtcrtpscripttransformtype"
+      },
+      "WorkerAndParameters": {
+        "fragment": "dictionary WorkerAndParameters {\n     required Worker worker;\n     RTCRtpScriptTransformType type;\n};",
+        "type": "dictionary",
+        "name": "WorkerAndParameters",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "worker",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Worker"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-workerandparameters-worker"
+          },
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "RTCRtpScriptTransformType"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-workerandparameters-type"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-workerandparameters"
+      },
+      "WorkerOrWorkerAndParameters": {
+        "fragment": "typedef (Worker or WorkerAndParameters) WorkerOrWorkerAndParameters;",
+        "type": "typedef",
+        "name": "WorkerOrWorkerAndParameters",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Worker"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WorkerAndParameters"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#typedefdef-workerorworkerandparameters"
+      },
       "RTCRtpScriptTransform": {
-        "fragment": "[Exposed=Window]\ninterface RTCRtpScriptTransform {\n    constructor(Worker worker, optional any options, optional sequence<object> transfer);\n};",
+        "fragment": "[Exposed=Window]\ninterface RTCRtpScriptTransform {\n    constructor(WorkerOrWorkerAndParameters workerOrWorkerAndParameters, optional any options, optional sequence<object> transfer);\n};",
         "type": "interface",
         "name": "RTCRtpScriptTransform",
         "inheritance": null,
@@ -1422,7 +1560,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "worker",
+                "name": "workerOrWorkerAndParameters",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -1430,7 +1568,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "Worker"
+                  "idlType": "WorkerOrWorkerAndParameters"
                 },
                 "default": null,
                 "optional": false,
@@ -1931,6 +2069,10 @@
       "SFrameTransformOptions": [
         "SFrameCipherSuite"
       ],
+      "RTCSFrameSenderTransformOptions": [
+        "SFrameTransformOptions",
+        "SFrameType"
+      ],
       "SFrameEncrypterManager": [
         "CryptoKey",
         "CryptoKeyID"
@@ -1941,7 +2083,7 @@
         "EventHandler"
       ],
       "RTCSFrameSenderTransform": [
-        "SFrameTransformOptions",
+        "RTCSFrameSenderTransformOptions",
         "SFrameEncrypterManager"
       ],
       "RTCSFrameReceiverTransform": [
@@ -2000,8 +2142,12 @@
         "ArrayBuffer",
         "RTCEncodedAudioFrameMetadata"
       ],
+      "WorkerAndParameters": [
+        "Worker",
+        "RTCRtpScriptTransformType"
+      ],
       "RTCRtpScriptTransform": [
-        "Worker"
+        "WorkerOrWorkerAndParameters"
       ],
       "RTCRtpScriptTransformer": [
         "EventTarget",

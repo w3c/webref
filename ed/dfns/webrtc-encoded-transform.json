@@ -484,6 +484,112 @@
       "links": []
     },
     {
+      "id": "enumdef-sframetype",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-sframetype",
+      "linkingText": [
+        "SFrameType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrame transforms",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sframetype-per-frame",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetype-per-frame",
+      "linkingText": [
+        "\"per-frame\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SFrameType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrame transforms",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sframetype-per-packet",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframetype-per-packet",
+      "linkingText": [
+        "\"per-packet\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SFrameType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrame transforms",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dictdef-rtcsframesendertransformoptions",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcsframesendertransformoptions",
+      "linkingText": [
+        "RTCSFrameSenderTransformOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrame transforms",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-rtcsframesendertransformoptions-type",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcsframesendertransformoptions-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCSFrameSenderTransformOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sframe",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframe",
+        "title": "SFrame transforms",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
       "id": "typedefdef-smallcryptokeyid",
       "href": "https://w3c.github.io/webrtc-encoded-transform/#typedefdef-smallcryptokeyid",
       "linkingText": [
@@ -2291,20 +2397,35 @@
       "links": []
     },
     {
-      "id": "dom-rtcrtpscripttransform-rtcrtpscripttransform-worker-options-transfer-worker",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-rtcrtpscripttransform-worker-options-transfer-worker",
+      "id": "enumdef-rtcrtpscripttransformtype",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-rtcrtpscripttransformtype",
       "linkingText": [
-        "worker"
+        "RTCRtpScriptTransformType"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "RTCRtpScriptTransform-interface",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#RTCRtpScriptTransform-interface",
+        "title": "RTCRtpScriptTransform interface",
+        "number": "5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpscripttransformtype-sframe",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformtype-sframe",
+      "linkingText": [
+        "\"sframe\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
       "for": [
-        "RTCRtpScriptTransform/RTCRtpScriptTransform(worker, options, transfer)",
-        "RTCRtpScriptTransform/constructor(worker, options, transfer)",
-        "RTCRtpScriptTransform/RTCRtpScriptTransform(worker, options)",
-        "RTCRtpScriptTransform/constructor(worker, options)",
-        "RTCRtpScriptTransform/RTCRtpScriptTransform(worker)",
-        "RTCRtpScriptTransform/constructor(worker)"
+        "RTCRtpScriptTransformType"
       ],
       "access": "public",
       "informative": false,
@@ -2318,20 +2439,131 @@
       "links": []
     },
     {
-      "id": "dom-rtcrtpscripttransform-rtcrtpscripttransform-worker-options-transfer-options",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-rtcrtpscripttransform-worker-options-transfer-options",
+      "id": "dictdef-workerandparameters",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-workerandparameters",
+      "linkingText": [
+        "WorkerAndParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "RTCRtpScriptTransform-interface",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#RTCRtpScriptTransform-interface",
+        "title": "RTCRtpScriptTransform interface",
+        "number": "5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-workerandparameters-worker",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-workerandparameters-worker",
+      "linkingText": [
+        "worker"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WorkerAndParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "RTCRtpScriptTransform-interface",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#RTCRtpScriptTransform-interface",
+        "title": "RTCRtpScriptTransform interface",
+        "number": "5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-workerandparameters-type",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-workerandparameters-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WorkerAndParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "RTCRtpScriptTransform-interface",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#RTCRtpScriptTransform-interface",
+        "title": "RTCRtpScriptTransform interface",
+        "number": "5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "typedefdef-workerorworkerandparameters",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#typedefdef-workerorworkerandparameters",
+      "linkingText": [
+        "WorkerOrWorkerAndParameters"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "RTCRtpScriptTransform-interface",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#RTCRtpScriptTransform-interface",
+        "title": "RTCRtpScriptTransform interface",
+        "number": "5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpscripttransform-rtcrtpscripttransform-workerorworkerandparameters-options-transfer-workerorworkerandparameters",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-rtcrtpscripttransform-workerorworkerandparameters-options-transfer-workerorworkerandparameters",
+      "linkingText": [
+        "workerOrWorkerAndParameters"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "RTCRtpScriptTransform/RTCRtpScriptTransform(workerOrWorkerAndParameters, options, transfer)",
+        "RTCRtpScriptTransform/constructor(workerOrWorkerAndParameters, options, transfer)",
+        "RTCRtpScriptTransform/RTCRtpScriptTransform(workerOrWorkerAndParameters, options)",
+        "RTCRtpScriptTransform/constructor(workerOrWorkerAndParameters, options)",
+        "RTCRtpScriptTransform/RTCRtpScriptTransform(workerOrWorkerAndParameters)",
+        "RTCRtpScriptTransform/constructor(workerOrWorkerAndParameters)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "RTCRtpScriptTransform-interface",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#RTCRtpScriptTransform-interface",
+        "title": "RTCRtpScriptTransform interface",
+        "number": "5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-rtcrtpscripttransform-rtcrtpscripttransform-workerorworkerandparameters-options-transfer-options",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-rtcrtpscripttransform-workerorworkerandparameters-options-transfer-options",
       "linkingText": [
         "options"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "RTCRtpScriptTransform/RTCRtpScriptTransform(worker, options, transfer)",
-        "RTCRtpScriptTransform/constructor(worker, options, transfer)",
-        "RTCRtpScriptTransform/RTCRtpScriptTransform(worker, options)",
-        "RTCRtpScriptTransform/constructor(worker, options)",
-        "RTCRtpScriptTransform/RTCRtpScriptTransform(worker)",
-        "RTCRtpScriptTransform/constructor(worker)"
+        "RTCRtpScriptTransform/RTCRtpScriptTransform(workerOrWorkerAndParameters, options, transfer)",
+        "RTCRtpScriptTransform/constructor(workerOrWorkerAndParameters, options, transfer)",
+        "RTCRtpScriptTransform/RTCRtpScriptTransform(workerOrWorkerAndParameters, options)",
+        "RTCRtpScriptTransform/constructor(workerOrWorkerAndParameters, options)",
+        "RTCRtpScriptTransform/RTCRtpScriptTransform(workerOrWorkerAndParameters)",
+        "RTCRtpScriptTransform/constructor(workerOrWorkerAndParameters)"
       ],
       "access": "public",
       "informative": false,
@@ -2345,20 +2577,20 @@
       "links": []
     },
     {
-      "id": "dom-rtcrtpscripttransform-rtcrtpscripttransform-worker-options-transfer-transfer",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-rtcrtpscripttransform-worker-options-transfer-transfer",
+      "id": "dom-rtcrtpscripttransform-rtcrtpscripttransform-workerorworkerandparameters-options-transfer-transfer",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-rtcrtpscripttransform-workerorworkerandparameters-options-transfer-transfer",
       "linkingText": [
         "transfer"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "RTCRtpScriptTransform/RTCRtpScriptTransform(worker, options, transfer)",
-        "RTCRtpScriptTransform/constructor(worker, options, transfer)",
-        "RTCRtpScriptTransform/RTCRtpScriptTransform(worker, options)",
-        "RTCRtpScriptTransform/constructor(worker, options)",
-        "RTCRtpScriptTransform/RTCRtpScriptTransform(worker)",
-        "RTCRtpScriptTransform/constructor(worker)"
+        "RTCRtpScriptTransform/RTCRtpScriptTransform(workerOrWorkerAndParameters, options, transfer)",
+        "RTCRtpScriptTransform/constructor(workerOrWorkerAndParameters, options, transfer)",
+        "RTCRtpScriptTransform/RTCRtpScriptTransform(workerOrWorkerAndParameters, options)",
+        "RTCRtpScriptTransform/constructor(workerOrWorkerAndParameters, options)",
+        "RTCRtpScriptTransform/RTCRtpScriptTransform(workerOrWorkerAndParameters)",
+        "RTCRtpScriptTransform/constructor(workerOrWorkerAndParameters)"
       ],
       "access": "public",
       "informative": false,
@@ -2397,12 +2629,12 @@
       "id": "dom-rtcrtpscripttransform-rtcrtpscripttransform",
       "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransform-rtcrtpscripttransform",
       "linkingText": [
-        "RTCRtpScriptTransform(worker, options, transfer)",
-        "constructor(worker, options, transfer)",
-        "RTCRtpScriptTransform(worker, options)",
-        "constructor(worker, options)",
-        "RTCRtpScriptTransform(worker)",
-        "constructor(worker)"
+        "RTCRtpScriptTransform(workerOrWorkerAndParameters, options, transfer)",
+        "constructor(workerOrWorkerAndParameters, options, transfer)",
+        "RTCRtpScriptTransform(workerOrWorkerAndParameters, options)",
+        "constructor(workerOrWorkerAndParameters, options)",
+        "RTCRtpScriptTransform(workerOrWorkerAndParameters)",
+        "constructor(workerOrWorkerAndParameters)"
       ],
       "localLinkingText": [],
       "type": "constructor",

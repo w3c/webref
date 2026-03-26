@@ -1,6 +1,5 @@
 // Source: WebMCP (https://webmachinelearning.github.io/webmcp/)
 [Exposed=Window, SecureContext]
 interface ModelContext {
-  undefined registerTool(ModelContextTool tool);
-  undefined unregisterTool(DOMString name);
+  undefined registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});
 };

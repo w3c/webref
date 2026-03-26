@@ -1,0 +1,29 @@
+{
+  "name": "RTCSFrameSenderTransformOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC Encoded Transform",
+      "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+    },
+    "fragment": "dictionary RTCSFrameSenderTransformOptions : SFrameTransformOptions {\n    SFrameType type = \"per-frame\";\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcsframesendertransformoptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "SFrameTransformOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebRTC Encoded Transform",
+        "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+      },
+      "fragment": "dictionary SFrameTransformOptions {\n    required SFrameCipherSuite cipherSuite;\n};",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-sframetransformoptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}
