@@ -144,44 +144,30 @@
             },
             {
               "html": "<p>Let <var>visibleDimensions</var> be <var>concreteDimensions</var>, adjusted for positioning by <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-images-3/#propdef-object-position\" id=\"ref-for-propdef-object-position\">object-position</a> or <a class=\"css property\" data-link-type=\"property\" href=\"https://drafts.csswg.org/css-backgrounds-3/#propdef-background-position\" id=\"ref-for-propdef-background-position\">background-position</a> and <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#content-box\" id=\"ref-for-content-box\">content box</a>.</p>"
-            }
-          ],
-          "additional": [
-            {
-              "html": "If <var>imageRequest</var> is not null, run the following steps to adjust for image position and upscaling:",
-              "rationale": "let",
-              "steps": [
-                {
-                  "html": "<p>Let <var>clientContentRect</var> be the smallest <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly②\">DOMRectReadOnly</a></code> containing <var>visibleDimensions</var> with <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#generictransformstream-transform\" id=\"ref-for-generictransformstream-transform\">transforms</a> applied.</p>"
-                },
-                {
-                  "html": "<p>Let <var>intersectingClientContentRect</var> be the intersection of <var>clientContentRect</var> with <var>intersectionRect</var>.</p>"
-                },
-                {
-                  "html": "<p>Set <var>size</var> to <code class=\"highlight\"><var>intersectingClientContentRect</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrectreadonly-width\" id=\"ref-for-dom-domrectreadonly-width①\">width</a></code> <c- o=\"\">*</c-> <var>intersectingClientContentRect</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrectreadonly-height\" id=\"ref-for-dom-domrectreadonly-height①\">height</a></code></code>.</p>"
-                }
-              ]
             },
             {
-              "html": "If <var>imageRequest</var> is not null, run the following steps to adjust for image position and upscaling:",
-              "rationale": "let",
-              "steps": [
-                {
-                  "html": "<p>Let <var>naturalArea</var> be <code class=\"highlight\"><var>imageRequest</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-3/#natural-width\" id=\"ref-for-natural-width\">natural width</a> <c- o=\"\">*</c-> <var>imageRequest</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-3/#natural-height\" id=\"ref-for-natural-height\">natural height</a></code>.</p>"
-                },
-                {
-                  "html": "<p>If <var>naturalArea</var> is 0, then return null.</p>"
-                },
-                {
-                  "html": "<p>Let <var>boundingClientArea</var> be <code class=\"highlight\"><var>clientContentRect</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrectreadonly-width\" id=\"ref-for-dom-domrectreadonly-width②\">width</a></code> <c- o=\"\">*</c-> <var>clientContentRect</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrectreadonly-height\" id=\"ref-for-dom-domrectreadonly-height②\">height</a></code></code>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>scaleFactor</var> be <code class=\"highlight\"><var>boundingClientArea</var> <c- o=\"\">/</c-> <var>naturalArea</var></code>.</p>"
-                },
-                {
-                  "html": "<p>If <var>scaleFactor</var> is greater than 1, then divide <var>size</var> by <var>scaleFactor</var>.</p>"
-                }
-              ]
+              "html": "<p>Let <var>clientContentRect</var> be the smallest <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrectreadonly\" id=\"ref-for-domrectreadonly②\">DOMRectReadOnly</a></code> containing <var>visibleDimensions</var> with <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#generictransformstream-transform\" id=\"ref-for-generictransformstream-transform\">transforms</a> applied.</p>"
+            },
+            {
+              "html": "<p>Let <var>intersectingClientContentRect</var> be the intersection of <var>clientContentRect</var> with <var>intersectionRect</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>size</var> to <code class=\"highlight\"><var>intersectingClientContentRect</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrectreadonly-width\" id=\"ref-for-dom-domrectreadonly-width①\">width</a></code> <c- o=\"\">*</c-> <var>intersectingClientContentRect</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrectreadonly-height\" id=\"ref-for-dom-domrectreadonly-height①\">height</a></code></code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>naturalArea</var> be <code class=\"highlight\"><var>imageRequest</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-3/#natural-width\" id=\"ref-for-natural-width\">natural width</a> <c- o=\"\">*</c-> <var>imageRequest</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-images-3/#natural-height\" id=\"ref-for-natural-height\">natural height</a></code>.</p>"
+            },
+            {
+              "html": "<p>If <var>naturalArea</var> is 0, then return null.</p>"
+            },
+            {
+              "html": "<p>Let <var>boundingClientArea</var> be <code class=\"highlight\"><var>clientContentRect</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrectreadonly-width\" id=\"ref-for-dom-domrectreadonly-width②\">width</a></code> <c- o=\"\">*</c-> <var>clientContentRect</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrectreadonly-height\" id=\"ref-for-dom-domrectreadonly-height②\">height</a></code></code>.</p>"
+            },
+            {
+              "html": "<p>Let <var>scaleFactor</var> be <code class=\"highlight\"><var>boundingClientArea</var> <c- o=\"\">/</c-> <var>naturalArea</var></code>.</p>"
+            },
+            {
+              "html": "<p>If <var>scaleFactor</var> is greater than 1, then divide <var>size</var> by <var>scaleFactor</var>.</p>"
             }
           ]
         },
