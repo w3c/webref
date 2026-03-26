@@ -6838,7 +6838,7 @@
           "html": "<p>\n                  Let <var>mac</var> be the result of performing the MAC Generation operation\n                  described in Section 4 of [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://w3c.github.io/webcrypto/#bib-fips-198-1\" title=\"The Keyed-Hash Message Authentication Code (HMAC)\">FIPS-198-1</a></cite>] using\n                  the key represented by the <a data-link-type=\"attribute\" data-lt=\"[[handle]]\" href=\"https://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-handle\" class=\"internalDFN\" id=\"ref-for-dfn-CryptoKey-slot-handle-53\"><code>[[handle]]</code></a>\n                  internal slot of <var>key</var>, the hash function identified by the <a data-link-type=\"idl\" href=\"https://w3c.github.io/webcrypto/#dfn-HmacKeyAlgorithm-hash\" class=\"internalDFN\" id=\"ref-for-dfn-HmacKeyAlgorithm-hash-3\"><code>hash</code></a> attribute of the <a data-link-type=\"attribute\" data-lt=\"[[algorithm]]\" href=\"https://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-algorithm\" class=\"internalDFN\" id=\"ref-for-dfn-CryptoKey-slot-algorithm-116\"><code>[[algorithm]]</code></a> internal slot of\n                  <var>key</var> and <var>message</var> as the input data <var>text</var>.\n                </p>"
         },
         {
-          "html": "<p>\n                  Return true if <var>mac</var> is equal to <var>signature</var> and false\n                  otherwise.\n                </p>"
+          "html": "<p>\n                  Return true if <var>mac</var> is equal to <var>signature</var> and false\n                  otherwise.\n                  This comparison must be performed in constant-time.\n                </p>"
         }
       ]
     },

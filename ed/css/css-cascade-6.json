@@ -17,7 +17,7 @@
       "prose": "Scoped styles are described in CSS using the @scope block at-rule, which declares a scoping root and optional scoping limits associated with a set of style rules.",
       "href": "https://drafts.csswg.org/css-cascade-6/#at-ruledef-scope",
       "descriptors": [],
-      "value": "@scope <scope-boundaries> { <block-contents> }"
+      "value": "@scope <scope-boundaries>? { <block-contents> }"
     }
   ],
   "selectors": [],
@@ -38,7 +38,7 @@
       "name": "<scope-boundaries>",
       "href": "https://drafts.csswg.org/css-cascade-6/#typedef-scope-boundaries",
       "type": "type",
-      "value": "[ ( <scope-start> ) ]? [ to ( <scope-end> ) ]?"
+      "value": "[ [ ( <scope-start> ) ]? [ to ( <scope-end> ) ]? ]!"
     },
     {
       "name": "<scope-start>",
