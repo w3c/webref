@@ -28,40 +28,117 @@
       ]
     },
     {
-      "html": "The <code class=\"highlight\">conditionText</code> attribute (defined on the <code class=\"highlight\">CSSConditionRule</code> parent rule),\n\t\t\ton getting, must return a value as follows:",
-      "rationale": ".switch",
+      "name": "CSSContainerRule.conditionText",
+      "html": "",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "operation": "switch",
+          "html": "<p>Let <var>conditions</var> be the result of getting the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-conditions\" id=\"ref-for-dom-csscontainerrule-conditions\">conditions</a></code> attribute.</p>"
+        },
+        {
+          "html": "<p>Let <var>first</var> be <code class=\"highlight\">true</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be the empty string.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> <var>condition</var> in <var>conditions</var>:",
+          "rationale": "if",
           "steps": [
             {
-              "case": "The @container rule has an associated <container-name>",
-              "html": "The result of getting the <code class=\"highlight\">containerName</code> and\n\t\t\t\t\t<code class=\"highlight\">containerQuery</code> attributes, joined by a single whitespace."
+              "html": "<p>If <var>first</var> is <code class=\"highlight\">false</code>, append <code class=\"highlight\"><c- s=\"\">\", \"</c-></code> to <var>result</var>.</p>"
             },
             {
-              "case": "Otherwise",
-              "html": "The result of getting the <code class=\"highlight\">containerQuery</code> attribute."
+              "html": "<p>Set <var>first</var> to <code class=\"highlight\">false</code>.</p>"
+            },
+            {
+              "html": "If <var>condition</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-name\" id=\"ref-for-dom-csscontainercondition-name\">name</a></code> is not empty:",
+              "rationale": "append",
+              "steps": [
+                {
+                  "html": "<p>Append <var>condition</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-name\" id=\"ref-for-dom-csscontainercondition-name①\">name</a></code> to <var>result</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>condition</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-query\" id=\"ref-for-dom-csscontainercondition-query\">query</a></code> is not empty,\n append a single space to <var>result</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Append <var>condition</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-query\" id=\"ref-for-dom-csscontainercondition-query①\">query</a></code> to <var>result</var>.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>Return <var>result</var></p>"
         }
       ]
     },
     {
-      "html": "The <code class=\"highlight\">containerName</code> attribute, on getting, must return a value as follows:",
-      "rationale": ".switch",
+      "name": "CSSContainerRule.containerName",
+      "html": "",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "operation": "switch",
+          "html": "<p>Let <var>conditions</var> be the result of getting the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-conditions\" id=\"ref-for-dom-csscontainerrule-conditions①\">conditions</a></code> attribute.</p>"
+        },
+        {
+          "html": "If the length of <var>conditions</var> is 1:",
+          "rationale": "return",
           "steps": [
             {
-              "case": "The @container rule has an associated <container-name>",
-              "html": "The result of serializing that <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-5/#typedef-container-name\" id=\"ref-for-typedef-container-name⑥\">&lt;container-name&gt;</a>."
-            },
-            {
-              "case": "Otherwise",
-              "html": "An empty string."
+              "html": "<p>Return the only <var>condition</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-name\" id=\"ref-for-dom-csscontainercondition-name②\">name</a></code>.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>return <code class=\"highlight\"><c- s=\"\">\"\"</c-></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "CSSContainerRule.containerQuery",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>conditions</var> be the result of getting the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-conditions\" id=\"ref-for-dom-csscontainerrule-conditions②\">conditions</a></code> attribute.</p>"
+        },
+        {
+          "html": "If the length of <var>conditions</var> is 1:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return the only <var>condition</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-query\" id=\"ref-for-dom-csscontainercondition-query②\">query</a></code>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <code class=\"highlight\"><c- s=\"\">\"\"</c-></code>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "CSSContainerRule.conditions",
+      "html": "",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>result</var> be an empty <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-list-and-record-specification-type\" id=\"ref-for-sec-list-and-record-specification-type\">list</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-5/#typedef-container-condition\" id=\"ref-for-typedef-container-condition⑦\">&lt;container-condition&gt;</a> <var>condition</var> specified in the rule:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>dict</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dictdef-csscontainercondition\" id=\"ref-for-dictdef-csscontainercondition①\">CSSContainerCondition</a></code> with\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-name\" id=\"ref-for-dom-csscontainercondition-name③\">name</a></code> set to the\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/cssom-1/#serialize-an-identifier\" id=\"ref-for-serialize-an-identifier\">serialized</a> <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-5/#typedef-container-name\" id=\"ref-for-typedef-container-name④\">&lt;container-name&gt;</a>\n of <var>condition</var> if specified, or <code class=\"highlight\"><c- s=\"\">\"\"</c-></code> otherwise,\n and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-query\" id=\"ref-for-dom-csscontainercondition-query③\">query</a></code> set to the\n <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-conditional-5/#typedef-container-query\" id=\"ref-for-typedef-container-query⑦\">&lt;container-query&gt;</a> specified in <var>condition</var>\n without any logical simplifications,\n so that the returned query will evaluate to the same result\n as the specified query\n in any conformant implementation of this specification\n (including implementations that implement future extensions\n allowed by the <a class=\"css production\" data-link-type=\"type\" href=\"https://www.w3.org/TR/mediaqueries-5/#typedef-general-enclosed\" id=\"ref-for-typedef-general-enclosed④\">&lt;general-enclosed&gt;</a> extensibility mechanism in this specification).\n In other words,\n token stream simplifications are allowed\n (such as reducing whitespace to a single space\n or omitting it in cases where it is known to be optional),\n but logical simplifications (such as removal of unneeded parentheses,\n or simplification based on evaluating results) are not allowed.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>dict</var> to <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
         }
       ]
     }

@@ -3,4 +3,5 @@
 interface CSSContainerRule : CSSConditionRule {
   readonly attribute CSSOMString containerName;
   readonly attribute CSSOMString containerQuery;
+  readonly attribute FrozenArray<CSSContainerCondition> conditions;
 };

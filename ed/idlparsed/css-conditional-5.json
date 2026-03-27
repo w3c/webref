@@ -14,8 +14,51 @@
       }
     },
     "idlNames": {
+      "CSSContainerCondition": {
+        "fragment": "dictionary CSSContainerCondition {\n  required CSSOMString name;\n  required CSSOMString query;\n};",
+        "type": "dictionary",
+        "name": "CSSContainerCondition",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-name"
+          },
+          {
+            "type": "field",
+            "name": "query",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://drafts.csswg.org/css-conditional-5/#dom-csscontainercondition-query"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://drafts.csswg.org/css-conditional-5/#dictdef-csscontainercondition"
+      },
       "CSSContainerRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSContainerRule : CSSConditionRule {\n  readonly attribute CSSOMString containerName;\n  readonly attribute CSSOMString containerQuery;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSContainerRule : CSSConditionRule {\n  readonly attribute CSSOMString containerName;\n  readonly attribute CSSOMString containerQuery;\n  readonly attribute FrozenArray<CSSContainerCondition> conditions;\n};",
         "type": "interface",
         "name": "CSSContainerRule",
         "inheritance": "CSSConditionRule",
@@ -51,6 +94,31 @@
             "special": "",
             "readonly": true,
             "href": "https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-containerquery"
+          },
+          {
+            "type": "attribute",
+            "name": "conditions",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSContainerCondition"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://drafts.csswg.org/css-conditional-5/#dom-csscontainerrule-conditions"
           }
         ],
         "extAttrs": [
@@ -114,9 +182,13 @@
       ]
     },
     "dependencies": {
+      "CSSContainerCondition": [
+        "CSSOMString"
+      ],
       "CSSContainerRule": [
         "CSSConditionRule",
-        "CSSOMString"
+        "CSSOMString",
+        "CSSContainerCondition"
       ],
       "CSSSupportsConditionRule": [
         "CSSGroupingRule",
@@ -124,8 +196,8 @@
       ]
     },
     "externalDependencies": [
-      "CSSConditionRule",
       "CSSOMString",
+      "CSSConditionRule",
       "CSSGroupingRule"
     ],
     "hasObsoleteIdl": false

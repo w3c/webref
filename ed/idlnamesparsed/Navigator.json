@@ -327,13 +327,6 @@
     },
     {
       "spec": {
-        "title": "Device Memory API",
-        "url": "https://www.w3.org/TR/device-memory-1/"
-      },
-      "fragment": "Navigator includes NavigatorDeviceMemory;"
-    },
-    {
-      "spec": {
         "title": "Device Posture API",
         "url": "https://www.w3.org/TR/device-posture/"
       },
@@ -686,21 +679,6 @@
         },
         "fragment": "[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(\n    optional [EnforceRange] unsigned long long contents\n  );\n  Promise<undefined> clearAppBadge();\n};",
         "href": "https://w3c.github.io/badging/#dom-navigatorbadge"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
-      "name": "NavigatorDeviceMemory",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "Device Memory API",
-          "url": "https://www.w3.org/TR/device-memory-1/"
-        },
-        "fragment": "[\n    SecureContext,\n    Exposed=(Window,Worker)\n] interface mixin NavigatorDeviceMemory {\n    readonly attribute double deviceMemory;\n};",
-        "href": "https://www.w3.org/TR/device-memory/#navigatordevicememory"
       },
       "extended": [],
       "inheritance": null,
