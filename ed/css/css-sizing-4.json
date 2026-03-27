@@ -230,7 +230,7 @@
     {
       "name": "contain-intrinsic-width",
       "href": "https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-width",
-      "value": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
+      "value": "auto? [ none | <length [0,∞]> ]",
       "initial": "none",
       "appliesTo": "elements with size containment",
       "inherited": "no",
@@ -260,13 +260,6 @@
           "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-auto",
           "type": "value",
           "value": "auto"
-        },
-        {
-          "name": "from-element",
-          "prose": "If from-element is specified and the element is a replaced element with an internal layout intrinsic size, its explicit intrinsic inner size in the corresponding axis is that size. Should this apply even when contain:layout isn’t specified? The name needs further discussion.",
-          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-from-element",
-          "type": "value",
-          "value": "from-element"
         }
       ],
       "styleDeclaration": [
@@ -277,7 +270,7 @@
     {
       "name": "contain-intrinsic-height",
       "href": "https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-height",
-      "value": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
+      "value": "auto? [ none | <length [0,∞]> ]",
       "initial": "none",
       "appliesTo": "elements with size containment",
       "inherited": "no",
@@ -307,13 +300,6 @@
           "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-auto",
           "type": "value",
           "value": "auto"
-        },
-        {
-          "name": "from-element",
-          "prose": "If from-element is specified and the element is a replaced element with an internal layout intrinsic size, its explicit intrinsic inner size in the corresponding axis is that size. Should this apply even when contain:layout isn’t specified? The name needs further discussion.",
-          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-from-element",
-          "type": "value",
-          "value": "from-element"
         }
       ],
       "styleDeclaration": [
@@ -324,7 +310,7 @@
     {
       "name": "contain-intrinsic-block-size",
       "href": "https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-block-size",
-      "value": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
+      "value": "auto? [ none | <length [0,∞]> ]",
       "initial": "none",
       "appliesTo": "elements with size containment",
       "inherited": "no",
@@ -354,13 +340,6 @@
           "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-auto",
           "type": "value",
           "value": "auto"
-        },
-        {
-          "name": "from-element",
-          "prose": "If from-element is specified and the element is a replaced element with an internal layout intrinsic size, its explicit intrinsic inner size in the corresponding axis is that size. Should this apply even when contain:layout isn’t specified? The name needs further discussion.",
-          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-from-element",
-          "type": "value",
-          "value": "from-element"
         }
       ],
       "styleDeclaration": [
@@ -371,7 +350,7 @@
     {
       "name": "contain-intrinsic-inline-size",
       "href": "https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-inline-size",
-      "value": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
+      "value": "auto? [ none | <length [0,∞]> ]",
       "initial": "none",
       "appliesTo": "elements with size containment",
       "inherited": "no",
@@ -401,13 +380,6 @@
           "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-auto",
           "type": "value",
           "value": "auto"
-        },
-        {
-          "name": "from-element",
-          "prose": "If from-element is specified and the element is a replaced element with an internal layout intrinsic size, its explicit intrinsic inner size in the corresponding axis is that size. Should this apply even when contain:layout isn’t specified? The name needs further discussion.",
-          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-from-element",
-          "type": "value",
-          "value": "from-element"
         }
       ],
       "styleDeclaration": [
@@ -418,7 +390,7 @@
     {
       "name": "contain-intrinsic-size",
       "href": "https://drafts.csswg.org/css-sizing-4/#propdef-contain-intrinsic-size",
-      "value": "[ [ auto | from-element ]? [ none | <length [0,∞]> ] ]{1,2}",
+      "value": "[ auto? [ none | <length [0,∞]> ] ]{1,2}",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -447,18 +419,27 @@
           "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-auto",
           "type": "value",
           "value": "auto"
-        },
-        {
-          "name": "from-element",
-          "prose": "If from-element is specified and the element is a replaced element with an internal layout intrinsic size, its explicit intrinsic inner size in the corresponding axis is that size. Should this apply even when contain:layout isn’t specified? The name needs further discussion.",
-          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-contain-intrinsic-width-from-element",
-          "type": "value",
-          "value": "from-element"
         }
       ],
       "styleDeclaration": [
         "contain-intrinsic-size",
         "containIntrinsicSize"
+      ]
+    },
+    {
+      "name": "frame-sizing",
+      "href": "https://drafts.csswg.org/css-sizing-4/#propdef-frame-sizing",
+      "value": "auto | content-width | content-height | content-block-size | content-inline-size",
+      "initial": "auto",
+      "appliesTo": "iframe elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "frame-sizing",
+        "frameSizing"
       ]
     },
     {
