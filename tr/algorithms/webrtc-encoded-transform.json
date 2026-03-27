@@ -5,17 +5,38 @@
   },
   "algorithms": [
     {
+      "html": "At construction of each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiver\" id=\"ref-for-dom-rtcrtptransceiver\">RTCRtpTransceiver</a></code>, run the following steps:",
+      "rationale": "initialize",
+      "steps": [
+        {
+          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>.<code>[[useSFrame]]</code> to undefined.</p>"
+        },
+        {
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a> is associated with a media description, initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>.<code>[[useSFrame]]</code> from the media description. If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>.<code>[[useSFrame]]</code> is true, enable SFrame RTP packetization for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>.</p>"
+        },
+        {
+          "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">queue a task</a> to run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>.<code>[[useSFrame]]</code> is undefined, set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>.<code>[[useSFrame]]</code> to false.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "html": "At construction of each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender③\">RTCRtpSender</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver\" id=\"ref-for-dom-rtcrtpreceiver③\">RTCRtpReceiver</a></code>, run the following steps:",
       "rationale": "initialize",
       "steps": [
         {
-          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>.<code>[[transform]]</code> to null.</p>"
+          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>.<code>[[transform]]</code> to null.</p>"
         },
         {
-          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this</a>.<code>[[pipeToController]]</code> to null.</p>"
+          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>.<code>[[pipeToController]]</code> to null.</p>"
         },
         {
-          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>.<code>[[frameSource]]</code> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#encoder\" id=\"ref-for-encoder③\">encoder</a> if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender④\">RTCRtpSender</a></code> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#depacketizer\" id=\"ref-for-depacketizer③\">depacketizer</a> otherwise.</p>"
+          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>.<code>[[frameSource]]</code> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#encoder\" id=\"ref-for-encoder③\">encoder</a> if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtpsender\" id=\"ref-for-dom-rtcrtpsender④\">RTCRtpSender</a></code> or <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#depacketizer\" id=\"ref-for-depacketizer③\">depacketizer</a> otherwise.</p>"
         }
       ]
     },
@@ -92,36 +113,72 @@
     {
       "name": "RTCRtpSender/transform",
       "href": "https://www.w3.org/TR/webrtc-encoded-transform/#dom-rtcrtpsender-transform",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpSender,RTCRtpReceiver\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-rtcrtpsender-transform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>transform</code></dfn> getter steps are to\nreturn <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>.<code>[[transform]]</code>. The setter steps are:",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpSender,RTCRtpReceiver\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-rtcrtpsender-transform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>transform</code></dfn> getter steps are to\nreturn <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>.<code>[[transform]]</code>. The setter steps are:",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>transform</var> be the argument to the setter.</p>"
         },
         {
+          "html": "<p>Let <var>transceiver</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiver\" id=\"ref-for-dom-rtcrtptransceiver④\">RTCRtpTransceiver</a></code> associated to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>.</p>"
+        },
+        {
+          "html": "If <var>transform</var>.<code>[[useSFrame]]</code> is true, run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>transceiver</var>.<code>[[useSFrame]]</code> is false, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\" id=\"ref-for-invalidmodificationerror\">InvalidModificationError</a></code> and abort these steps.</p>"
+            },
+            {
+              "html": "Otherwise, if <var>transceiver</var>.<code>[[useSFrame]]</code> is undefined, run the following steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>transceiver</var>.<code>[[useSFrame]]</code> to true.</p>"
+                },
+                {
+                  "html": "<p>Enable SFrame RTP packetization for <var>transceiver</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, run the following steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>transceiver</var>.<code>[[useSFrame]]</code> is true, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\" id=\"ref-for-invalidmodificationerror①\">InvalidModificationError</a></code> and abort these steps.</p>"
+            },
+            {
+              "html": "<p>Set <var>transceiver</var>.<code>[[useSFrame]]</code> to false.</p>"
+            }
+          ]
+        },
+        {
           "html": "<p>If <var>transform</var> is not null and <var>transform</var>.<code>[[owner]]</code> is not null, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>Set <var>transform</var>.<code>[[owner]]</code> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>.</p>"
+          "html": "<p>Set <var>transform</var>.<code>[[owner]]</code> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>.</p>"
         },
         {
-          "html": "<p>Let <var>oldTransform</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>.<code>[[transform]]</code>.</p>"
+          "html": "<p>Let <var>oldTransform</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>.<code>[[transform]]</code>.</p>"
         },
         {
           "html": "<p>If <var>oldTransform</var> is not null, run <var>oldTransform</var>’s <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#abstract-opdef-rtcrtptransform-disassociation-algorithm\" id=\"ref-for-abstract-opdef-rtcrtptransform-disassociation-algorithm\">disassociation algorithm</a>.</p>"
         },
         {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>.<code>[[transform]]</code> to <var>transform</var>.</p>"
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>.<code>[[transform]]</code> to <var>transform</var>.</p>"
         },
         {
-          "html": "<p>If <var>transform</var> is not null, run <var>transform</var>’s <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#abstract-opdef-rtcrtptransform-association-algorithm\" id=\"ref-for-abstract-opdef-rtcrtptransform-association-algorithm\">association algorithm</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>.</p>"
+          "html": "<p>If <var>transform</var> is not null, run <var>transform</var>’s <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#abstract-opdef-rtcrtptransform-association-algorithm\" id=\"ref-for-abstract-opdef-rtcrtptransform-association-algorithm\">association algorithm</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>.</p>"
         },
         {
           "html": "If <var>transform</var> is null, run the following steps:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>frameSource</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>.<code>[[frameSource]]</code>.</p>"
+              "html": "<p>Let <var>frameSource</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>.<code>[[frameSource]]</code>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">In parallel</a>, set <var>frameSource</var>.<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#transformframealgorithm\" id=\"ref-for-transformframealgorithm②\">[[transformFrameAlgorithm]]</a> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#passthrough-algorithm\" id=\"ref-for-passthrough-algorithm\">passthrough algorithm</a>.</p>"
@@ -144,6 +201,9 @@
         },
         {
           "html": "<p>Set <var>this</var>.<code>[[role]]</code> to 'encrypt'.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code>[[useSFrame]]</code> to true.</p>"
         }
       ]
     },
@@ -161,6 +221,9 @@
         },
         {
           "html": "<p>Set <var>this</var>.<code>[[role]]</code> to 'decrypt'.</p>"
+        },
+        {
+          "html": "<p>Set <var>this</var>.<code>[[useSFrame]]</code> to true.</p>"
         }
       ]
     },
@@ -208,10 +271,22 @@
           "html": "<p>Let <var>transformAlgorithm</var> be an algorithm which takes a <var>frame</var> as input and runs the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#sframe-transform-algorithm\" id=\"ref-for-sframe-transform-algorithm\">SFrame transform algorithm</a> with <var>this</var> and <var>frame</var>.</p>"
         },
         {
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-rtcsframesendertransformoptions-type\" id=\"ref-for-dom-rtcsframesendertransformoptions-type\">type</a></code>\"] is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">present</a>, run these steps:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-rtcsframesendertransformoptions-type\" id=\"ref-for-dom-rtcsframesendertransformoptions-type①\">type</a></code>\"] is 'per-frame', use per-frame sending as defined in <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#biblio-rtp-sframe-payload\" title=\"RTP Payload Format for SFrame\">[RTP-SFRAME-PAYLOAD]</a>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, use per-packet sending as defined in <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#biblio-rtp-sframe-payload\" title=\"RTP Payload Format for SFrame\">[RTP-SFRAME-PAYLOAD]</a>.</p>"
+            }
+          ]
+        },
+        {
           "html": "<p>Set <var>this</var>.<code>[[transform]]</code> to a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#transformstream\" id=\"ref-for-transformstream\">TransformStream</a></code>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up\" id=\"ref-for-readablestream-set-up\">Set up</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>.<code>[[transform]]</code> with <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-set-up-transformalgorithm\" id=\"ref-for-transformstream-set-up-transformalgorithm\">transformAlgorithm</a> set to <var>transformAlgorithm</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up\" id=\"ref-for-readablestream-set-up\">Set up</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>.<code>[[transform]]</code> with <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#transformstream-set-up-transformalgorithm\" id=\"ref-for-transformstream-set-up-transformalgorithm\">transformAlgorithm</a> set to <var>transformAlgorithm</var>.</p>"
         },
         {
           "html": "<p>Set <var>this</var>.<code>[[cipherSuite]]</code> to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-sframetransformoptions-ciphersuite\" id=\"ref-for-dom-sframetransformoptions-ciphersuite\">cipherSuite</a></code>\"].</p>"
@@ -258,7 +333,7 @@
           "html": "<p>Let <var>buffer</var> be the result of running the SFrame algorithm with <var>data</var>, <var>this</var>.<code>[[cipherSuite]]</code>, and <var>role</var> as parameters. This algorithm is defined by <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#biblio-rfc9605\" title=\"Secure Frame (SFrame): Lightweight Authenticated Encryption for Real-Time Media\">[RFC9605]</a> and returns an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-idl-ArrayBuffer\">ArrayBuffer</a></code>.</p>"
         },
         {
-          "html": "If the SFrame algorithm exits abruptly with an error, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task\">queue a task</a> to run the following sub steps:",
+          "html": "If the SFrame algorithm exits abruptly with an error, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">queue a task</a> to run the following sub steps:",
           "rationale": "if",
           "steps": [
             {
@@ -309,10 +384,10 @@
               "html": "<p>Set the SFrame transform encryption algorithm’s key material to <var>key</var> and <var>keyId</var>, as defined by <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#biblio-rfc9605\" title=\"Secure Frame (SFrame): Lightweight Authenticated Encryption for Real-Time Media\">[RFC9605]</a>.</p>"
             },
             {
-              "html": "<p>If setting the key material fails, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">queue a task</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\" id=\"ref-for-invalidmodificationerror\">InvalidModificationError</a></code> exception and abort these steps.</p>"
+              "html": "<p>If setting the key material fails, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②\">queue a task</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>promise</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\" id=\"ref-for-invalidmodificationerror②\">InvalidModificationError</a></code> exception and abort these steps.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>promise</var> with undefined.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>promise</var> with undefined.</p>"
             }
           ]
         },
@@ -344,10 +419,10 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>keyStore</var>[<var>keyId</var>] to <var>key</var>.</p>"
             },
             {
-              "html": "<p>If setting the key material fails, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③\">queue a task</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\" id=\"ref-for-invalidmodificationerror①\">InvalidModificationError</a></code> exception and abort these steps.</p>"
+              "html": "<p>If setting the key material fails, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④\">queue a task</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>promise</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidmodificationerror\" id=\"ref-for-invalidmodificationerror③\">InvalidModificationError</a></code> exception and abort these steps.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>promise</var> with undefined.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑤\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve①\">resolve</a> <var>promise</var> with undefined.</p>"
             }
           ]
         },
@@ -379,7 +454,7 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove\">Remove</a> <var>keyStore</var>[<var>keyId</var>].</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑤\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">resolve</a> <var>promise</var> with undefined.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑥\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve②\">resolve</a> <var>promise</var> with undefined.</p>"
             }
           ]
         },
@@ -498,13 +573,37 @@
       ]
     },
     {
-      "name": "RTCRtpScriptTransform/RTCRtpScriptTransform(worker, options, transfer)",
+      "name": "RTCRtpScriptTransform/RTCRtpScriptTransform(workerOrWorkerAndParameters, options, transfer)",
       "href": "https://www.w3.org/TR/webrtc-encoded-transform/#dom-rtcrtpscripttransform-rtcrtpscripttransform",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpScriptTransform\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"RTCRtpScriptTransform(worker, options, transfer)|constructor(worker, options, transfer)|RTCRtpScriptTransform(worker, options)|constructor(worker, options)|RTCRtpScriptTransform(worker)|constructor(worker)\" id=\"dom-rtcrtpscripttransform-rtcrtpscripttransform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new RTCRtpScriptTransform(<var>worker</var>, <var>options</var>, <var>transfer</var>)</code></dfn> constructor steps are:",
-      "rationale": "initialize",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpScriptTransform\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"RTCRtpScriptTransform(workerOrWorkerAndParameters, options, transfer)|constructor(workerOrWorkerAndParameters, options, transfer)|RTCRtpScriptTransform(workerOrWorkerAndParameters, options)|constructor(workerOrWorkerAndParameters, options)|RTCRtpScriptTransform(workerOrWorkerAndParameters)|constructor(workerOrWorkerAndParameters)\" id=\"dom-rtcrtpscripttransform-rtcrtpscripttransform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new RTCRtpScriptTransform(<var>workerOrWorkerAndParameters</var>, <var>options</var>, <var>transfer</var>)</code></dfn> constructor steps are:",
+      "rationale": "let",
       "steps": [
         {
-          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>’s internal slot as follows:</p>\n     <dl>\n      <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-rtcrtpscripttransform-worker-slot\" id=\"ref-for-dom-rtcrtpscripttransform-worker-slot\">[[worker]]</a></code>\n      </dt><dd data-md=\"\">\n       <p><var>worker</var></p>\n     </dd></dl>"
+          "html": "<p>Let <var>worker</var> be undefined.</p>"
+        },
+        {
+          "html": "<p>Let <var>useSFrame</var> be undefined.</p>"
+        },
+        {
+          "html": "<p>If <var>workerOrWorkerAndParameters</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/workers.html#worker\" id=\"ref-for-worker③\">Worker</a></code> object, set <var>worker</var> to <var>workerOrWorkerAndParameters</var> and <var>useSFrame</var> to false.</p>"
+        },
+        {
+          "html": "Otherwise, run the following substeps:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>worker</var> to <var>workerOrWorkerAndParameters</var>[\"worker\"].</p>"
+            },
+            {
+              "html": "<p>Set <var>useSFrame</var> to true if <var>workerOrWorkerAndParameters</var>[\"type\"] is \"sframe\" and false otherwise.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②①\">this</a>’s internal slot as follows:</p>\n     <dl>\n      <dt data-md=\"\"><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#dom-rtcrtpscripttransform-worker-slot\" id=\"ref-for-dom-rtcrtpscripttransform-worker-slot\">[[worker]]</a></code>\n      </dt><dd data-md=\"\">\n       <p><var>worker</var></p>\n     </dd></dl>"
+        },
+        {
+          "html": "<p>Initialize <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>.<code>[[useSFrame]]</code> to <var>useSFrame</var>.</p>"
         },
         {
           "html": "<p>Let <var>serializedOptions</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#structuredserializewithtransfer\" id=\"ref-for-structuredserializewithtransfer①\">StructuredSerializeWithTransfer</a>(<var>options</var>, <var>transfer</var>).</p>"
@@ -668,7 +767,7 @@
       "rationale": "return",
       "steps": [
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>.<code>[[options]]</code>.</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>.<code>[[options]]</code>.</p>"
         }
       ]
     },
@@ -679,7 +778,7 @@
       "rationale": "return",
       "steps": [
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>.<code>[[readable]]</code>.</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②④\">this</a>.<code>[[readable]]</code>.</p>"
         }
       ]
     },
@@ -690,7 +789,7 @@
       "rationale": "return",
       "steps": [
         {
-          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>.<code>[[writable]]</code>.</p>"
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a>.<code>[[writable]]</code>.</p>"
         }
       ]
     },
@@ -750,7 +849,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>layers</var> is now empty, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑥\">queue a task</a> to reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror\">NotFoundError</a></code> and abort these steps.</p>"
+                  "html": "<p>If <var>layers</var> is now empty, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑦\">queue a task</a> to reject <var>promise</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror\">NotFoundError</a></code> and abort these steps.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove②\">Remove</a> from <var>layers</var> all layers already <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">found</a> in any <code>[[layers]]</code> of any tasks in <var>encoder</var>.<code>[[pendingKeyFrameTasks]]</code>.</p>"
@@ -835,7 +934,7 @@
               "html": "<p>Generate a Full Intra Request (FIR) packet as defined in section 4.3.1 of <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webrtc-encoded-transform/#biblio-rfc5104\" title=\"Codec Control Messages in the RTP Audio-Visual Profile with Feedback (AVPF)\">[RFC5104]</a> and send it through <var>depacketizer</var>’s receiver.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑦\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑤\">resolve</a> <var>promise</var> with undefined.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑧\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve⑤\">resolve</a> <var>promise</var> with undefined.</p>"
             }
           ]
         }
