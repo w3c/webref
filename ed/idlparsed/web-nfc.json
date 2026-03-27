@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "Web NFC",
-    "url": "https://w3c.github.io/web-nfc/"
+    "url": "https://w3c-cg.github.io/web-nfc/"
   },
   "idlparsed": {
     "jsNames": {
@@ -43,7 +43,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefmessage-constructor"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefmessage-constructor"
           },
           {
             "type": "attribute",
@@ -68,7 +68,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefmessage-records"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefmessage-records"
           }
         ],
         "extAttrs": [
@@ -89,7 +89,7 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/web-nfc/#dom-ndefmessage"
+        "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefmessage"
       },
       "NDEFMessageInit": {
         "fragment": "dictionary NDEFMessageInit {\n  required sequence<NDEFRecordInit> records;\n};",
@@ -120,12 +120,12 @@
             },
             "default": null,
             "required": true,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefmessageinit-records"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefmessageinit-records"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/web-nfc/#dom-ndefmessageinit"
+        "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefmessageinit"
       },
       "NDEFRecord": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFRecord {\n  constructor(NDEFRecordInit recordInit);\n\n  readonly attribute USVString recordType;\n  readonly attribute USVString? mediaType;\n  readonly attribute USVString? id;\n  readonly attribute DataView? data;\n\n  readonly attribute USVString? encoding;\n  readonly attribute USVString? lang;\n\n  sequence<NDEFRecord>? toRecords();\n};",
@@ -154,7 +154,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-constructor"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecord-constructor"
           },
           {
             "type": "attribute",
@@ -170,7 +170,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-recordtype"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecord-recordtype"
           },
           {
             "type": "attribute",
@@ -186,7 +186,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-mediatype"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecord-mediatype"
           },
           {
             "type": "attribute",
@@ -202,7 +202,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-id"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecord-id"
           },
           {
             "type": "attribute",
@@ -218,7 +218,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-data"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecord-data"
           },
           {
             "type": "attribute",
@@ -234,7 +234,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-encoding"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecord-encoding"
           },
           {
             "type": "attribute",
@@ -250,7 +250,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-lang"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecord-lang"
           },
           {
             "type": "operation",
@@ -275,7 +275,7 @@
             "arguments": [],
             "extAttrs": [],
             "special": "",
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord-torecords"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecord-torecords"
           }
         ],
         "extAttrs": [
@@ -296,7 +296,7 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord"
+        "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecord"
       },
       "NDEFRecordInit": {
         "fragment": "dictionary NDEFRecordInit {\n  required USVString recordType;\n  USVString mediaType;\n  USVString id;\n\n  USVString encoding;\n  USVString lang;\n\n  any data; // DOMString or BufferSource or NDEFMessageInit\n};",
@@ -318,7 +318,7 @@
             },
             "default": null,
             "required": true,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefrecordinit-recordtype"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecordinit-recordtype"
           },
           {
             "type": "field",
@@ -334,7 +334,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefrecordinit-mediatype"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecordinit-mediatype"
           },
           {
             "type": "field",
@@ -350,7 +350,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefrecordinit-id"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecordinit-id"
           },
           {
             "type": "field",
@@ -366,7 +366,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefrecordinit-encoding"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecordinit-encoding"
           },
           {
             "type": "field",
@@ -382,7 +382,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefrecordinit-lang"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecordinit-lang"
           },
           {
             "type": "field",
@@ -398,12 +398,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefrecordinit-data"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecordinit-data"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/web-nfc/#dom-ndefrecordinit"
+        "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefrecordinit"
       },
       "NDEFMessageSource": {
         "fragment": "typedef (DOMString or BufferSource or NDEFMessageInit) NDEFMessageSource;",
@@ -443,7 +443,7 @@
           ]
         },
         "extAttrs": [],
-        "href": "https://w3c.github.io/web-nfc/#dom-ndefmessagesource"
+        "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefmessagesource"
       },
       "NDEFReader": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFReader : EventTarget {\n  constructor();\n\n  attribute EventHandler onreading;\n  attribute EventHandler onreadingerror;\n\n  Promise<undefined> scan(optional NDEFScanOptions options={});\n  Promise<undefined> write(NDEFMessageSource message,\n                                 optional NDEFWriteOptions options={});\n  Promise<undefined> makeReadOnly(optional NDEFMakeReadOnlyOptions options={});\n};",
@@ -455,7 +455,7 @@
             "type": "constructor",
             "arguments": [],
             "extAttrs": [],
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-constructor"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefreader-constructor"
           },
           {
             "type": "attribute",
@@ -471,7 +471,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": false,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-onreading"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefreader-onreading"
           },
           {
             "type": "attribute",
@@ -487,7 +487,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": false,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-onreadingerror"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefreader-onreadingerror"
           },
           {
             "type": "operation",
@@ -531,7 +531,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-scan"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefreader-scan"
           },
           {
             "type": "operation",
@@ -591,7 +591,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-write"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefreader-write"
           },
           {
             "type": "operation",
@@ -635,7 +635,7 @@
             ],
             "extAttrs": [],
             "special": "",
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-makereadonly"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefreader-makereadonly"
           }
         ],
         "extAttrs": [
@@ -656,7 +656,7 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/web-nfc/#dom-ndefreader"
+        "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefreader"
       },
       "NDEFReadingEvent": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFReadingEvent : Event {\n  constructor(DOMString type, NDEFReadingEventInit readingEventInitDict);\n\n  readonly attribute DOMString serialNumber;\n  [SameObject] readonly attribute NDEFMessage message;\n};",
@@ -701,7 +701,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefreadingevent-constructor"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefreadingevent-constructor"
           },
           {
             "type": "attribute",
@@ -717,7 +717,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefreadingevent-serialnumber"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefreadingevent-serialnumber"
           },
           {
             "type": "attribute",
@@ -740,7 +740,7 @@
             ],
             "special": "",
             "readonly": true,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefreadingevent-message"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefreadingevent-message"
           }
         ],
         "extAttrs": [
@@ -761,7 +761,7 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/web-nfc/#dom-ndefreadingevent"
+        "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefreadingevent"
       },
       "NDEFReadingEventInit": {
         "fragment": "dictionary NDEFReadingEventInit : EventInit {\n  DOMString? serialNumber = \"\";\n  required NDEFMessageInit message;\n};",
@@ -786,7 +786,7 @@
               "value": ""
             },
             "required": false,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefreadingeventinit-serialnumber"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefreadingeventinit-serialnumber"
           },
           {
             "type": "field",
@@ -802,12 +802,12 @@
             },
             "default": null,
             "required": true,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefreadingeventinit-message"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefreadingeventinit-message"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/web-nfc/#dom-ndefreadingeventinit"
+        "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefreadingeventinit"
       },
       "NDEFWriteOptions": {
         "fragment": "dictionary NDEFWriteOptions {\n  boolean overwrite = true;\n  AbortSignal? signal;\n};",
@@ -832,7 +832,7 @@
               "value": true
             },
             "required": false,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefwriteoptions-overwrite"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefwriteoptions-overwrite"
           },
           {
             "type": "field",
@@ -848,12 +848,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefwriteoptions-signal"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefwriteoptions-signal"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/web-nfc/#dom-ndefwriteoptions"
+        "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefwriteoptions"
       },
       "NDEFMakeReadOnlyOptions": {
         "fragment": "dictionary NDEFMakeReadOnlyOptions {\n  AbortSignal? signal;\n};",
@@ -875,12 +875,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefmakereadonlyoptions-signal"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefmakereadonlyoptions-signal"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/web-nfc/#dom-ndefmakereadonlyoptions"
+        "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefmakereadonlyoptions"
       },
       "NDEFScanOptions": {
         "fragment": "dictionary NDEFScanOptions {\n  AbortSignal signal;\n};",
@@ -902,12 +902,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://w3c.github.io/web-nfc/#dom-ndefscanoptions-signal"
+            "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefscanoptions-signal"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/web-nfc/#dom-ndefscanoptions"
+        "href": "https://w3c-cg.github.io/web-nfc/#dom-ndefscanoptions"
       }
     },
     "idlExtendedNames": {},
