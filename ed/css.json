@@ -6838,7 +6838,7 @@
         "contain-intrinsic-block-size",
         "containIntrinsicBlockSize"
       ],
-      "syntax": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
+      "syntax": "auto? [ none | <length [0,∞]> ]",
       "extended": []
     },
     {
@@ -6856,7 +6856,7 @@
         "contain-intrinsic-height",
         "containIntrinsicHeight"
       ],
-      "syntax": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
+      "syntax": "auto? [ none | <length [0,∞]> ]",
       "extended": []
     },
     {
@@ -6874,7 +6874,7 @@
         "contain-intrinsic-inline-size",
         "containIntrinsicInlineSize"
       ],
-      "syntax": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
+      "syntax": "auto? [ none | <length [0,∞]> ]",
       "extended": []
     },
     {
@@ -6895,7 +6895,7 @@
         "contain-intrinsic-width",
         "contain-intrinsic-height"
       ],
-      "syntax": "[ [ auto | from-element ]? [ none | <length [0,∞]> ] ]{1,2}",
+      "syntax": "[ auto? [ none | <length [0,∞]> ] ]{1,2}",
       "extended": []
     },
     {
@@ -6913,7 +6913,7 @@
         "contain-intrinsic-width",
         "containIntrinsicWidth"
       ],
-      "syntax": "[ auto | from-element ]? [ none | <length [0,∞]> ]",
+      "syntax": "auto? [ none | <length [0,∞]> ]",
       "extended": []
     },
     {
@@ -9067,6 +9067,23 @@
         "forcedColorAdjust"
       ],
       "syntax": "auto | none | preserve-parent-color",
+      "extended": []
+    },
+    {
+      "name": "frame-sizing",
+      "href": "https://drafts.csswg.org/css-sizing-4/#propdef-frame-sizing",
+      "initial": "auto",
+      "appliesTo": "iframe elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "frame-sizing",
+        "frameSizing"
+      ],
+      "syntax": "auto | content-width | content-height | content-block-size | content-inline-size",
       "extended": []
     },
     {
@@ -20842,7 +20859,7 @@
     },
     {
       "name": "system-color",
-      "prose": "However, in forced colors mode, most colors on the page are forced into a restricted, user-chosen palette. The <system-color> keywords expose these user-chosen colors so that the rest of the page can integrate with this restricted palette.",
+      "prose": "However, in forced colors mode, most colors on the page are forced into a restricted, user-chosen palette, see CSS Color Adjustment 1 § 5.2 Forced Colors Mode Color Palettes. The <system-color> keywords expose these user-chosen colors so that the rest of the page can integrate with this restricted palette.",
       "href": "https://drafts.csswg.org/css-color-4/#typedef-system-color",
       "syntax": "AccentColor | AccentColorText | ActiveText | ButtonBorder | ButtonFace | ButtonText | Canvas | CanvasText | Field | FieldText | GrayText | Highlight | HighlightText | LinkText | Mark | MarkText | SelectedItem | SelectedItemText | VisitedText | <deprecated-color>",
       "extended": []
