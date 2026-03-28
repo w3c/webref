@@ -3290,10 +3290,8 @@
         "align-items",
         "alignItems"
       ],
-      "syntax": "normal | stretch | <baseline-position> | <overflow-position>? <self-position> | anchor-center",
-      "extended": [
-        "https://drafts.csswg.org/css-anchor-position-1/#propdef-align-items"
-      ]
+      "syntax": "normal | stretch | <baseline-position> | <overflow-position>? <self-position>",
+      "extended": []
     },
     {
       "name": "align-self",
@@ -10022,10 +10020,8 @@
         "justify-items",
         "justifyItems"
       ],
-      "syntax": "normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | legacy | legacy && [ left | right | center ] | anchor-center",
-      "extended": [
-        "https://drafts.csswg.org/css-anchor-position-1/#propdef-justify-items"
-      ]
+      "syntax": "normal | stretch | <baseline-position> | <overflow-position>? [ <self-position> | left | right ] | legacy | legacy && [ left | right | center ]",
+      "extended": []
     },
     {
       "name": "justify-self",
@@ -12625,7 +12621,7 @@
         "position-anchor",
         "positionAnchor"
       ],
-      "syntax": "normal | none | auto | <anchor-name>",
+      "syntax": "normal | none | auto | <anchor-name> | match-parent",
       "extended": []
     },
     {
@@ -12637,7 +12633,7 @@
       "percentages": "n/a",
       "computedValue": "the keyword none or a pair of keywords, see § 3.1.3 Computed Value and Serialization of <position-area>",
       "canonicalOrder": "per grammar",
-      "animationType": "TBD",
+      "animationType": "discrete",
       "styleDeclaration": [
         "position-area",
         "positionArea"
@@ -18729,6 +18725,12 @@
       "extended": []
     },
     {
+      "name": "declaration",
+      "prose": "<declaration> here matches anything that would be successfully parsed by consume a declaration, ignoring the context-validation check at the end of that algorithm. Notably, this includes a trailing !important, which is valid but ignored for the purpose of @supports.",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-declaration",
+      "extended": []
+    },
+    {
       "name": "declaration-list",
       "prose": "<declaration-list>: only declarations are allowed; at-rules and qualified rules are automatically invalid.",
       "href": "https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list",
@@ -20753,6 +20755,12 @@
       "name": "supports-decl",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-decl",
       "syntax": "( [ <declaration> | <supports-condition-name> ] )",
+      "extended": []
+    },
+    {
+      "name": "supports-env-fn",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-env-fn",
+      "syntax": "env( <ident> )",
       "extended": []
     },
     {
