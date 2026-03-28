@@ -549,6 +549,18 @@
       "value": "named-feature( <ident> )"
     },
     {
+      "name": "<supports-env-fn>",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-supports-env-fn",
+      "type": "type",
+      "value": "env( <ident> )"
+    },
+    {
+      "name": "<declaration>",
+      "prose": "<declaration> here matches anything that would be successfully parsed by consume a declaration, ignoring the context-validation check at the end of that algorithm. Notably, this includes a trailing !important, which is valid but ignored for the purpose of @supports.",
+      "href": "https://drafts.csswg.org/css-conditional-5/#typedef-declaration",
+      "type": "type"
+    },
+    {
       "name": "<boolean-condition>",
       "prose": "Where <boolean-condition> is a boolean algebra a la Media Queries 4 § 3 Syntax, but with media() and supports() functions as leaves.",
       "href": "https://drafts.csswg.org/css-conditional-5/#typedef-boolean-condition",
@@ -677,13 +689,46 @@
   ],
   "warnings": [
     {
-      "msg": "Missing definition",
-      "name": "<supports-env-fn>",
-      "value": "env( <ident> )"
+      "msg": "Dangling value",
+      "name": "font-tech()",
+      "value": "font-tech( <font-tech> )",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-conditional-5/#funcdef-supports-font-tech",
+      "type": "function",
+      "for": "@supports"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "font-format()",
+      "value": "font-format( <font-format> )",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-conditional-5/#funcdef-supports-font-format",
+      "type": "function",
+      "for": "@supports"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "at-rule()",
+      "value": "at-rule( <at-keyword-token> )",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-conditional-5/#funcdef-supports-at-rule",
+      "type": "function",
+      "for": "@supports"
+    },
+    {
+      "msg": "Dangling value",
+      "name": "named-feature()",
+      "value": "named-feature( <ident> )",
+      "pureSyntax": false,
+      "href": "https://drafts.csswg.org/css-conditional-5/#funcdef-supports-named-feature",
+      "type": "function",
+      "for": "@supports"
     },
     {
       "msg": "Dangling value",
       "name": "env()",
+      "value": "env( <ident> )",
+      "pureSyntax": false,
       "href": "https://drafts.csswg.org/css-conditional-5/#funcdef-supports-env",
       "type": "function",
       "for": "@supports"
