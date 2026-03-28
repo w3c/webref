@@ -78,7 +78,7 @@
     {
       "name": "position-anchor",
       "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-position-anchor",
-      "value": "normal | none | auto | <anchor-name>",
+      "value": "normal | none | auto | <anchor-name> | match-parent",
       "initial": "normal",
       "appliesTo": "absolutely positioned boxes",
       "inherited": "no",
@@ -114,6 +114,13 @@
           "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-anchor-anchor-name",
           "type": "value",
           "value": "<anchor-name>"
+        },
+        {
+          "name": "match-parent",
+          "prose": "Uses the same default anchor element as the parent—​or originating element, if this is a pseudo-element—​if any, and if that would be an acceptable anchor element. Otherwise, the box has no default anchor element.",
+          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-position-anchor-match-parent",
+          "type": "value",
+          "value": "match-parent"
         }
       ],
       "styleDeclaration": [
@@ -131,7 +138,7 @@
       "percentages": "n/a",
       "computedValue": "the keyword none or a pair of keywords, see § 3.1.3 Computed Value and Serialization of <position-area>",
       "canonicalOrder": "per grammar",
-      "animationType": "TBD",
+      "animationType": "discrete",
       "values": [
         {
           "name": "none",
@@ -215,42 +222,6 @@
       "styleDeclaration": [
         "align-self",
         "alignSelf"
-      ]
-    },
-    {
-      "name": "justify-items",
-      "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-justify-items",
-      "newValues": "anchor-center",
-      "values": [
-        {
-          "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis. Additionally:",
-          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-justify-self-anchor-center",
-          "type": "value",
-          "value": "anchor-center"
-        }
-      ],
-      "styleDeclaration": [
-        "justify-items",
-        "justifyItems"
-      ]
-    },
-    {
-      "name": "align-items",
-      "href": "https://www.w3.org/TR/css-anchor-position-1/#propdef-align-items",
-      "newValues": "anchor-center",
-      "values": [
-        {
-          "name": "anchor-center",
-          "prose": "The new anchor-center value makes this case extremely simple: if the positioned box has a default anchor box, then it is centered (insofar as possible) over the default anchor box in the relevant axis. Additionally:",
-          "href": "https://www.w3.org/TR/css-anchor-position-1/#valdef-justify-self-anchor-center",
-          "type": "value",
-          "value": "anchor-center"
-        }
-      ],
-      "styleDeclaration": [
-        "align-items",
-        "alignItems"
       ]
     },
     {
