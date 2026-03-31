@@ -34334,6 +34334,28 @@
       "links": []
     },
     {
+      "id": "sec-json.israwjson",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.israwjson",
+      "linkingText": [
+        "isRawJSON(O)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "JSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-json.israwjson",
+        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.israwjson",
+        "title": "JSON.isRawJSON ( O )",
+        "number": "25.5.1"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
       "id": "sec-json.parse",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.parse",
       "linkingText": [
@@ -34350,7 +34372,7 @@
         "id": "sec-json.parse",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.parse",
         "title": "JSON.parse ( text [ , reviver ] )",
-        "number": "25.5.1"
+        "number": "25.5.2"
       },
       "definedIn": "heading",
       "links": []
@@ -34371,7 +34393,51 @@
         "id": "sec-ParseJSON",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-ParseJSON",
         "title": "ParseJSON ( text )",
-        "number": "25.5.1.1"
+        "number": "25.5.2.1"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "sec-json-parse-record",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-parse-record",
+      "linkingText": [
+        "JSON Parse Record",
+        "JSON Parse Records"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-json-parse-record",
+        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-parse-record",
+        "title": "JSON Parse Record",
+        "number": "25.5.2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "sec-createjsonparserecord",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-createjsonparserecord",
+      "linkingText": [
+        "CreateJSONParseRecord",
+        "CreateJSONParseRecord(parseNode, key, val)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-createjsonparserecord",
+        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-createjsonparserecord",
+        "title": "CreateJSONParseRecord ( parseNode, key, val )",
+        "number": "25.5.2.3"
       },
       "definedIn": "heading",
       "links": []
@@ -34381,7 +34447,7 @@
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-internalizejsonproperty",
       "linkingText": [
         "InternalizeJSONProperty",
-        "InternalizeJSONProperty(holder, name, reviver)"
+        "InternalizeJSONProperty(holder, name, reviver, parseRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -34391,8 +34457,30 @@
       "heading": {
         "id": "sec-internalizejsonproperty",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-internalizejsonproperty",
-        "title": "InternalizeJSONProperty ( holder, name, reviver )",
-        "number": "25.5.1.2"
+        "title": "InternalizeJSONProperty ( holder, name, reviver, parseRecord )",
+        "number": "25.5.2.4"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "sec-json.rawjson",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.rawjson",
+      "linkingText": [
+        "rawJSON(text)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "JSON"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-json.rawjson",
+        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.rawjson",
+        "title": "JSON.rawJSON ( text )",
+        "number": "25.5.3"
       },
       "definedIn": "heading",
       "links": []
@@ -34414,7 +34502,7 @@
         "id": "sec-json.stringify",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.stringify",
         "title": "JSON.stringify ( value [ , replacer [ , space ] ] )",
-        "number": "25.5.2"
+        "number": "25.5.4"
       },
       "definedIn": "heading",
       "links": []
@@ -34437,7 +34525,7 @@
         "id": "sec-json-serialization-record",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-serialization-record",
         "title": "JSON Serialization Record",
-        "number": "25.5.2.1"
+        "number": "25.5.4.1"
       },
       "definedIn": "prose",
       "links": []
@@ -34458,7 +34546,7 @@
         "id": "sec-serializejsonproperty",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonproperty",
         "title": "SerializeJSONProperty ( state, key, holder )",
-        "number": "25.5.2.2"
+        "number": "25.5.4.2"
       },
       "definedIn": "heading",
       "links": []
@@ -34479,7 +34567,7 @@
         "id": "sec-quotejsonstring",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-quotejsonstring",
         "title": "QuoteJSONString ( value )",
-        "number": "25.5.2.3"
+        "number": "25.5.4.3"
       },
       "definedIn": "heading",
       "links": []
@@ -34500,7 +34588,7 @@
         "id": "sec-unicodeescape",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-unicodeescape",
         "title": "UnicodeEscape ( C )",
-        "number": "25.5.2.4"
+        "number": "25.5.4.4"
       },
       "definedIn": "heading",
       "links": []
@@ -34521,7 +34609,7 @@
         "id": "sec-serializejsonobject",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonobject",
         "title": "SerializeJSONObject ( state, value )",
-        "number": "25.5.2.5"
+        "number": "25.5.4.5"
       },
       "definedIn": "heading",
       "links": []
@@ -34542,7 +34630,7 @@
         "id": "sec-serializejsonarray",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonarray",
         "title": "SerializeJSONArray ( state, value )",
-        "number": "25.5.2.6"
+        "number": "25.5.4.6"
       },
       "definedIn": "heading",
       "links": []
