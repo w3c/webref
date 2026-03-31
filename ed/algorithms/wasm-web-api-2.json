@@ -38,22 +38,22 @@
               "html": "<p>Let <var>mimeType</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get\" id=\"ref-for-concept-header-list-get\">getting</a> <code>`Content-Type`</code> from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a>.</p>"
             },
             {
-              "html": "<p>If <var>mimeType</var> is null, reject <var>returnValue</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①\">TypeError</a></code> and abort these substeps.</p>"
+              "html": "<p>If <var>mimeType</var> is null, reject <var>returnValue</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①\">TypeError</a></code> and abort these substeps.</p>"
             },
             {
               "html": "<p>Remove all <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#http-tab-or-space-byte\" id=\"ref-for-http-tab-or-space-byte\">HTTP tab or space byte</a> from the start and end of <var>mimeType</var>.</p>"
             },
             {
-              "html": "<p>If <var>mimeType</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-case-insensitive\" id=\"ref-for-byte-case-insensitive\">byte-case-insensitive</a> match for <code>`application/wasm`</code>, reject <var>returnValue</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②\">TypeError</a></code> and abort these substeps.</p>"
+              "html": "<p>If <var>mimeType</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-case-insensitive\" id=\"ref-for-byte-case-insensitive\">byte-case-insensitive</a> match for <code>`application/wasm`</code>, reject <var>returnValue</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②\">TypeError</a></code> and abort these substeps.</p>"
             },
             {
-              "html": "<p>If <var>response</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#cors-same-origin\" id=\"ref-for-cors-same-origin①\">CORS-same-origin</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>returnValue</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror③\">TypeError</a></code> and abort these substeps.</p>"
+              "html": "<p>If <var>response</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#cors-same-origin\" id=\"ref-for-cors-same-origin①\">CORS-same-origin</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>returnValue</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror③\">TypeError</a></code> and abort these substeps.</p>"
             },
             {
-              "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status\">status</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status①\">ok status</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>returnValue</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror④\">TypeError</a></code> and abort these substeps.</p>"
+              "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status\">status</a> is not an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#ok-status\" id=\"ref-for-ok-status①\">ok status</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>returnValue</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror④\">TypeError</a></code> and abort these substeps.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-consume-body\" id=\"ref-for-concept-body-consume-body\">Consume</a> <var>response</var>’s body as an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.github.io/ecma262/#sec-arraybuffer-objects\" id=\"ref-for-sec-arraybuffer-objects\">ArrayBuffer</a></code>, and let <var>bodyPromise</var> be the result.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-body-consume-body\" id=\"ref-for-concept-body-consume-body\">Consume</a> <var>response</var>’s body as an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/#sec-arraybuffer-objects\" id=\"ref-for-sec-arraybuffer-objects\">ArrayBuffer</a></code>, and let <var>bodyPromise</var> be the result.</p>"
             },
             {
               "html": "If <var>bodyPromise</var> was fulfilled with value <var>bodyArrayBuffer</var>:",
@@ -107,7 +107,7 @@
           "html": "<p>Set <var>serialized</var>.[[Bytes]] to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#sub-serialization\" id=\"ref-for-sub-serialization\">sub-serialization</a> of <var>value</var>.[[Bytes]].</p>"
         },
         {
-          "html": "<p>Set <var>serialized</var>.[[AgentCluster]] to the <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#current-realm\" id=\"ref-for-current-realm\">current Realm</a>’s corresponding <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-agent-clusters\" id=\"ref-for-sec-agent-clusters\">agent cluster</a>.</p>"
+          "html": "<p>Set <var>serialized</var>.[[AgentCluster]] to the <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#current-realm\" id=\"ref-for-current-realm\">current Realm</a>’s corresponding <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-agent-clusters\" id=\"ref-for-sec-agent-clusters\">agent cluster</a>.</p>"
         }
       ]
     },
@@ -122,7 +122,7 @@
           "html": "<p>Set <var>value</var>.[[Bytes]] to <var>bytes</var>.</p>"
         },
         {
-          "html": "<p>If <var>targetRealm</var>’s corresponding <a data-link-type=\"dfn\" href=\"https://tc39.github.io/ecma262/#sec-agent-clusters\" id=\"ref-for-sec-agent-clusters①\">agent cluster</a> is not <var>serialized</var>.[[AgentCluster]], then throw a \"<a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror①\">DataCloneError</a>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+          "html": "<p>If <var>targetRealm</var>’s corresponding <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/#sec-agent-clusters\" id=\"ref-for-sec-agent-clusters①\">agent cluster</a> is not <var>serialized</var>.[[AgentCluster]], then throw a \"<a class=\"idl-code\" data-link-type=\"exception\" href=\"https://webidl.spec.whatwg.org/#datacloneerror\" id=\"ref-for-datacloneerror①\">DataCloneError</a>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webassembly.github.io/spec/js-api/#compile-a-webassembly-module\" id=\"ref-for-compile-a-webassembly-module\">Compile a WebAssembly module</a> from <var>bytes</var> and set <var>value</var>.[[Module]] to the result.</p>"

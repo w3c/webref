@@ -62,9 +62,15 @@
     {
       "name": "string/percent-encode after encoding",
       "href": "https://url.spec.whatwg.org/#string-percent-encode-after-encoding",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"string\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"string-percent-encode-after-encoding\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">percent-encode after encoding</dfn>, given an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding\">encoding</a>\n<var>encoding</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①\">scalar value string</a> <var>input</var>, a\n<var>percentEncodeSet</var>, and an optional boolean <var>spaceAsPlus</var> (default false):",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"string\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"string-percent-encode-after-encoding\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">percent-encode after encoding</dfn>, given an <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding\">encoding</a>\n<var>encoding</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①\">scalar value string</a> <var>input</var>, and a\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#percent-encode-set\" id=\"ref-for-percent-encode-set⑧\">percent-encode set</a> <var>percentEncodeSet</var>:",
       "rationale": ".algorithm",
       "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>encoding</var> is <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8\">UTF-8</a> or\n <var>percentEncodeSet</var> is <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-query-percent-encode-set\" id=\"ref-for-special-query-percent-encode-set\">special-query percent-encode set</a> or\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#application-x-www-form-urlencoded-percent-encode-set\" id=\"ref-for-application-x-www-form-urlencoded-percent-encode-set①\"><code>application/x-www-form-urlencoded</code> percent-encode set</a>.\n\n </p>"
+        },
+        {
+          "html": "<p>Let <var>spaceAsPlus</var> be true if <var>percentEncodeSet</var> is\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#application-x-www-form-urlencoded-percent-encode-set\" id=\"ref-for-application-x-www-form-urlencoded-percent-encode-set②\"><code>application/x-www-form-urlencoded</code> percent-encode set</a>; otherwise false.\n\n </p>"
+        },
         {
           "html": "<p>Let <var>encoder</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#get-an-encoder\" id=\"ref-for-get-an-encoder\">getting an encoder</a> from <var>encoding</var>.\n\n </p>"
         },
@@ -95,7 +101,7 @@
                   "html": "<p>If <var>spaceAsPlus</var> is true and <var>byte</var> is 0x20 (SP), then append\n     U+002B (+) to <var>output</var> and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.\n\n     </p>"
                 },
                 {
-                  "html": "<p>Let <var>isomorph</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point③\">code point</a> whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point-value\" id=\"ref-for-code-point-value\">value</a>\n     is <var>byte</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-value\" id=\"ref-for-byte-value\">value</a>.\n\n     </p>"
+                  "html": "<p>Let <var>isomorph</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point④\">code point</a> whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point-value\" id=\"ref-for-code-point-value\">value</a>\n     is <var>byte</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-value\" id=\"ref-for-byte-value\">value</a>.\n\n     </p>"
                 },
                 {
                   "html": "<p>Assert: <var>percentEncodeSet</var> includes all non-<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-code-point\" id=\"ref-for-ascii-code-point\">ASCII code points</a>.\n\n     </p>"
@@ -121,7 +127,7 @@
     {
       "name": "string/UTF-8 percent-encode",
       "href": "https://url.spec.whatwg.org/#string-utf-8-percent-encode",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"string\" data-dfn-type=\"dfn\" data-export=\"\" id=\"string-utf-8-percent-encode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">UTF-8 percent-encode</dfn> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string②\">scalar value string</a>\n<var>input</var> using a <var>percentEncodeSet</var>, return the result of running\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-percent-encode-after-encoding\" id=\"ref-for-string-percent-encode-after-encoding①\">percent-encode after encoding</a> with <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8②\">UTF-8</a>, <var>input</var>, and\n<var>percentEncodeSet</var>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"string\" data-dfn-type=\"dfn\" data-export=\"\" id=\"string-utf-8-percent-encode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">UTF-8 percent-encode</dfn> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string②\">scalar value string</a>\n<var>input</var> using a <var>percentEncodeSet</var>, return the result of running\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-percent-encode-after-encoding\" id=\"ref-for-string-percent-encode-after-encoding①\">percent-encode after encoding</a> with <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8③\">UTF-8</a>, <var>input</var>, and\n<var>percentEncodeSet</var>.",
       "rationale": "To <dfn>"
     },
     {
@@ -140,7 +146,7 @@
           "html": "<p>Let <var>publicSuffix</var> be the public suffix determined by running the\n <a href=\"https://github.com/publicsuffix/list/wiki/Format#formal-algorithm\">Public Suffix List algorithm</a>\n with <var>host</var> as domain. <a data-link-type=\"biblio\" href=\"https://url.spec.whatwg.org/#biblio-psl\" title=\"Public Suffix List\">[PSL]</a>\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: <var>publicSuffix</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string③\">ASCII string</a> that\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-ends-with\" id=\"ref-for-string-ends-with①\">ends with</a> <var>trailingDot</var>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>publicSuffix</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string③\">ASCII string</a> that\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-ends-with\" id=\"ref-for-string-ends-with①\">ends with</a> <var>trailingDot</var>.\n\n </p>"
         },
         {
           "html": "<p>Return <var>publicSuffix</var>.\n</p>"
@@ -163,7 +169,7 @@
           "html": "<p>Let <var>registrableDomain</var> be the registrable domain determined by running the\n <a href=\"https://github.com/publicsuffix/list/wiki/Format#formal-algorithm\">Public Suffix List algorithm</a>\n with <var>host</var> as domain. <a data-link-type=\"biblio\" href=\"https://url.spec.whatwg.org/#biblio-psl\" title=\"Public Suffix List\">[PSL]</a>\n\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: <var>registrableDomain</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string④\">ASCII string</a> that\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-ends-with\" id=\"ref-for-string-ends-with③\">ends with</a> <var>trailingDot</var>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>registrableDomain</var> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string④\">ASCII string</a> that\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-ends-with\" id=\"ref-for-string-ends-with③\">ends with</a> <var>trailingDot</var>.\n\n </p>"
         },
         {
           "html": "<p>Return <var>registrableDomain</var>.\n</p>"
@@ -195,7 +201,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>result</var> is not the empty string and does not contain a\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#forbidden-domain-code-point\" id=\"ref-for-forbidden-domain-code-point③\">forbidden domain code point</a>.\n\n  </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>result</var> is not the empty string and does not contain a\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#forbidden-domain-code-point\" id=\"ref-for-forbidden-domain-code-point③\">forbidden domain code point</a>.\n\n  </p>"
         },
         {
           "html": "<p>Return <var>result</var>.\n</p>"
@@ -640,10 +646,10 @@
           "html": "<p>If <var>input</var> contains a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#forbidden-host-code-point\" id=\"ref-for-forbidden-host-code-point③\">forbidden host code point</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-invalid-code-point\" id=\"ref-for-host-invalid-code-point\">host-invalid-code-point</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⑥\">validation error</a>, return failure.\n\n </p>"
         },
         {
-          "html": "<p>If <var>input</var> contains a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑤\">code point</a> that is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-code-points\" id=\"ref-for-url-code-points\">URL code point</a> and not\n U+0025 (%), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⑦\">validation error</a>.\n\n </p>"
+          "html": "<p>If <var>input</var> contains a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑥\">code point</a> that is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-code-points\" id=\"ref-for-url-code-points\">URL code point</a> and not\n U+0025 (%), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⑦\">validation error</a>.\n\n </p>"
         },
         {
-          "html": "<p>If <var>input</var> contains a U+0025 (%) and the two <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑥\">code points</a> following it are\n not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit⑤\">ASCII hex digits</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit①\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⑧\">validation error</a>.\n\n </p>"
+          "html": "<p>If <var>input</var> contains a U+0025 (%) and the two <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑦\">code points</a> following it are\n not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit⑤\">ASCII hex digits</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit①\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⑧\">validation error</a>.\n\n </p>"
         },
         {
           "html": "<p>Return the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-utf-8-percent-encode\" id=\"ref-for-string-utf-8-percent-encode②\">UTF-8 percent-encode</a> on <var>input</var>\n using the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c0-control-percent-encode-set\" id=\"ref-for-c0-control-percent-encode-set②\">C0 control percent-encode set</a>.\n</p>"
@@ -818,7 +824,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>url</var> does not have an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path③\">opaque path</a>.\n\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>url</var> does not have an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path③\">opaque path</a>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>path</var> be <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path④\">path</a>.\n\n </p>"
@@ -859,7 +865,7 @@
     {
       "name": "URL parser",
       "href": "https://url.spec.whatwg.org/#concept-url-parser",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-url-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">URL parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑧\">scalar value string</a> <var>input</var>, with an optional null or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url①①\">base URL</a>\n<var>base</var> (default null) and an optional <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding①\">encoding</a> <var>encoding</var> (default\n<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8④\">UTF-8</a>), and then runs these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-url-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">URL parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑧\">scalar value string</a> <var>input</var>, with an optional null or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url①①\">base URL</a>\n<var>base</var> (default null) and an optional <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding①\">encoding</a> <var>encoding</var> (default\n<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑤\">UTF-8</a>), and then runs these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -882,7 +888,7 @@
     {
       "name": "basic URL parser",
       "href": "https://url.spec.whatwg.org/#concept-basic-url-parser",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-basic-url-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">basic URL parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑨\">scalar value string</a> <var>input</var>, with an optional null or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url①②\">base URL</a>\n<var>base</var> (default null), an optional <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding②\">encoding</a> <var>encoding</var> (default\n<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑤\">UTF-8</a>), an optional <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④①\">URL</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"basic URL parser\" data-dfn-type=\"dfn\" data-export=\"\" id=\"basic-url-parser-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>url</var></dfn>,\nand an optional state override <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"basic URL parser\" data-dfn-type=\"dfn\" data-export=\"\" id=\"basic-url-parser-state-override\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>state override</var></dfn>,\nand then runs these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-basic-url-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">basic URL parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑨\">scalar value string</a> <var>input</var>, with an optional null or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url①②\">base URL</a>\n<var>base</var> (default null), an optional <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding②\">encoding</a> <var>encoding</var> (default\n<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑥\">UTF-8</a>), an optional <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④①\">URL</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"basic URL parser\" data-dfn-type=\"dfn\" data-export=\"\" id=\"basic-url-parser-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>url</var></dfn>,\nand an optional state override <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"basic URL parser\" data-dfn-type=\"dfn\" data-export=\"\" id=\"basic-url-parser-state-override\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>state override</var></dfn>,\nand then runs these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1009,7 +1015,7 @@
                           "rationale": "assert",
                           "steps": [
                             {
-                              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>base</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special③\">is special</a> (and therefore does not have\n         an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path④\">opaque path</a>).\n\n         </p>"
+                              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>base</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special③\">is special</a> (and therefore does not have\n         an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path④\">opaque path</a>).\n\n         </p>"
                             },
                             {
                               "html": "<p>Set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-relative-or-authority-state\" id=\"ref-for-special-relative-or-authority-state\">special relative or authority state</a>.\n        </p>"
@@ -1206,7 +1212,7 @@
                               "html": "<p>If <var>codePoint</var> is U+003A (:) and <var>passwordTokenSeen</var> is false,\n         then set <var>passwordTokenSeen</var> to true and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue④\">continue</a>.\n\n         </p>"
                             },
                             {
-                              "html": "<p>Let <var>encodedCodePoints</var> be the result of running\n         <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#utf-8-percent-encode\" id=\"ref-for-utf-8-percent-encode②\">UTF-8 percent-encode</a> <var>codePoint</var> using the\n         <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#userinfo-percent-encode-set\" id=\"ref-for-userinfo-percent-encode-set⑥\">userinfo percent-encode set</a>.\n\n         </p>"
+                              "html": "<p>Let <var>encodedCodePoints</var> be the result of running\n         <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#utf-8-percent-encode\" id=\"ref-for-utf-8-percent-encode②\">UTF-8 percent-encode</a> <var>codePoint</var> using the\n         <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#userinfo-percent-encode-set\" id=\"ref-for-userinfo-percent-encode-set③\">userinfo percent-encode set</a>.\n\n         </p>"
                             },
                             {
                               "html": "<p>If <var>passwordTokenSeen</var> is true, then append <var>encodedCodePoints</var> to\n         <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-password\" id=\"ref-for-concept-url-password⑦\">password</a>.\n\n         </p>"
@@ -1748,14 +1754,14 @@
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<p>If <var>encoding</var> is not <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑥\">UTF-8</a> and one of the following is true:\n\n      </p>\n          <ul class=\"brief\">\n           <li>\n            <p><var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-not-special\" id=\"ref-for-is-not-special④\">is not special</a>\n       </p>\n           </li><li>\n            <p><var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme③③\">scheme</a> is \"<code>ws</code>\" or \"<code>wss</code>\"\n      </p>\n          </li></ul>\n          <p>then set <var>encoding</var> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑦\">UTF-8</a>.\n\n     </p>"
+                      "html": "<p>If <var>encoding</var> is not <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑦\">UTF-8</a> and one of the following is true:\n\n      </p>\n          <ul class=\"brief\">\n           <li>\n            <p><var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-not-special\" id=\"ref-for-is-not-special④\">is not special</a>\n       </p>\n           </li><li>\n            <p><var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme③③\">scheme</a> is \"<code>ws</code>\" or \"<code>wss</code>\"\n      </p>\n          </li></ul>\n          <p>then set <var>encoding</var> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑧\">UTF-8</a>.\n\n     </p>"
                     },
                     {
                       "html": "then:",
                       "rationale": "let",
                       "steps": [
                         {
-                          "html": "<p>Let <var>queryPercentEncodeSet</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-query-percent-encode-set\" id=\"ref-for-special-query-percent-encode-set\">special-query percent-encode set</a> if\n       <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special①⑥\">is special</a>; otherwise the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#query-percent-encode-set\" id=\"ref-for-query-percent-encode-set③\">query percent-encode set</a>.\n\n       </p>"
+                          "html": "<p>Let <var>queryPercentEncodeSet</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-query-percent-encode-set\" id=\"ref-for-special-query-percent-encode-set③\">special-query percent-encode set</a> if\n       <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special①⑥\">is special</a>; otherwise the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#query-percent-encode-set\" id=\"ref-for-query-percent-encode-set③\">query percent-encode set</a>.\n\n       </p>"
                         },
                         {
                           "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-percent-encode-after-encoding\" id=\"ref-for-string-percent-encode-after-encoding⑤\">Percent-encode after encoding</a>, with <var>encoding</var>,\n        <var>buffer</var>, and <var>queryPercentEncodeSet</var>, and append the result to\n        <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query①⑥\">query</a>.\n\n        </p>"
@@ -1819,13 +1825,13 @@
     {
       "name": "url/set the username",
       "href": "https://url.spec.whatwg.org/#set-the-username",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"url\" data-dfn-type=\"dfn\" data-export=\"\" id=\"set-the-username\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the username</dfn> given a <var>url</var> and\n<var>username</var>, set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-username\" id=\"ref-for-concept-url-username⑧\">username</a> to the result of running\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-utf-8-percent-encode\" id=\"ref-for-string-utf-8-percent-encode③\">UTF-8 percent-encode</a> on <var>username</var> using the\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#userinfo-percent-encode-set\" id=\"ref-for-userinfo-percent-encode-set⑦\">userinfo percent-encode set</a>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"url\" data-dfn-type=\"dfn\" data-export=\"\" id=\"set-the-username\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the username</dfn> given a <var>url</var> and\n<var>username</var>, set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-username\" id=\"ref-for-concept-url-username⑧\">username</a> to the result of running\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-utf-8-percent-encode\" id=\"ref-for-string-utf-8-percent-encode③\">UTF-8 percent-encode</a> on <var>username</var> using the\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#userinfo-percent-encode-set\" id=\"ref-for-userinfo-percent-encode-set④\">userinfo percent-encode set</a>.",
       "rationale": "To <dfn>"
     },
     {
       "name": "url/set the password",
       "href": "https://url.spec.whatwg.org/#set-the-password",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"url\" data-dfn-type=\"dfn\" data-export=\"\" id=\"set-the-password\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the password</dfn> given a <var>url</var> and\n<var>password</var>, set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-password\" id=\"ref-for-concept-url-password⑧\">password</a> to the result of running\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-utf-8-percent-encode\" id=\"ref-for-string-utf-8-percent-encode④\">UTF-8 percent-encode</a> on <var>password</var> using the\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#userinfo-percent-encode-set\" id=\"ref-for-userinfo-percent-encode-set⑧\">userinfo percent-encode set</a>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"url\" data-dfn-type=\"dfn\" data-export=\"\" id=\"set-the-password\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the password</dfn> given a <var>url</var> and\n<var>password</var>, set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-password\" id=\"ref-for-concept-url-password⑧\">password</a> to the result of running\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-utf-8-percent-encode\" id=\"ref-for-string-utf-8-percent-encode④\">UTF-8 percent-encode</a> on <var>password</var> using the\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#userinfo-percent-encode-set\" id=\"ref-for-userinfo-percent-encode-set⑤\">userinfo percent-encode set</a>.",
       "rationale": "To <dfn>"
     },
     {
@@ -2028,7 +2034,7 @@
     {
       "name": "urlencoded serializer",
       "href": "https://url.spec.whatwg.org/#concept-urlencoded-serializer",
-      "html": "The\n<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"urlencoded serializer\" id=\"concept-urlencoded-serializer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>application/x-www-form-urlencoded</code> serializer</dfn>\ntakes a list of name-value tuples <var>tuples</var>, with an optional <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding④\">encoding</a>\n<var>encoding</var> (default <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8①⓪\">UTF-8</a>), and then runs these steps. They return an\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string②③\">ASCII string</a>.",
+      "html": "The\n<dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"urlencoded serializer\" id=\"concept-urlencoded-serializer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>application/x-www-form-urlencoded</code> serializer</dfn>\ntakes a list of name-value tuples <var>tuples</var>, with an optional <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding④\">encoding</a>\n<var>encoding</var> (default <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8①①\">UTF-8</a>), and then runs these steps. They return an\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string②③\">ASCII string</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2042,13 +2048,13 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>tuple</var>’s name and <var>tuple</var>’s value are\n   <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①⓪\">scalar value strings</a>.\n\n   </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>tuple</var>’s name and <var>tuple</var>’s value are\n   <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①⓪\">scalar value strings</a>.\n\n   </p>"
             },
             {
-              "html": "<p>Let <var>name</var> be the result of running\n   <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-percent-encode-after-encoding\" id=\"ref-for-string-percent-encode-after-encoding⑥\">percent-encode after encoding</a> with <var>encoding</var>,\n   <var>tuple</var>’s name, the\n   <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#application-x-www-form-urlencoded-percent-encode-set\" id=\"ref-for-application-x-www-form-urlencoded-percent-encode-set②\"><code>application/x-www-form-urlencoded</code> percent-encode set</a>, and true.\n\n   </p>"
+              "html": "<p>Let <var>name</var> be the result of running\n   <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-percent-encode-after-encoding\" id=\"ref-for-string-percent-encode-after-encoding⑥\">percent-encode after encoding</a> with <var>encoding</var>, <var>tuple</var>’s\n   name, and the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#application-x-www-form-urlencoded-percent-encode-set\" id=\"ref-for-application-x-www-form-urlencoded-percent-encode-set⑤\"><code>application/x-www-form-urlencoded</code> percent-encode set</a>.\n\n   </p>"
             },
             {
-              "html": "<p>Let <var>value</var> be the result of running\n   <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-percent-encode-after-encoding\" id=\"ref-for-string-percent-encode-after-encoding⑦\">percent-encode after encoding</a> with <var>encoding</var>, <var>tuple</var>’s\n   value, the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#application-x-www-form-urlencoded-percent-encode-set\" id=\"ref-for-application-x-www-form-urlencoded-percent-encode-set③\"><code>application/x-www-form-urlencoded</code> percent-encode set</a>, and true.\n\n   </p>"
+              "html": "<p>Let <var>value</var> be the result of running\n   <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-percent-encode-after-encoding\" id=\"ref-for-string-percent-encode-after-encoding⑦\">percent-encode after encoding</a> with <var>encoding</var>, <var>tuple</var>’s\n   value, and the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#application-x-www-form-urlencoded-percent-encode-set\" id=\"ref-for-application-x-www-form-urlencoded-percent-encode-set⑥\"><code>application/x-www-form-urlencoded</code> percent-encode set</a>.\n\n   </p>"
             },
             {
               "html": "<p>If <var>output</var> is not the empty string, then append U+0026 (&amp;) to\n   <var>output</var>.\n\n   </p>"
