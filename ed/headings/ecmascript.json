@@ -4338,25 +4338,32 @@
       "number": "13.2.5.2"
     },
     {
+      "id": "sec-static-semantics-propertydefinitionnodes",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-static-semantics-propertydefinitionnodes",
+      "title": "Static Semantics: PropertyDefinitionNodes",
+      "level": 4,
+      "number": "13.2.5.3"
+    },
+    {
       "id": "sec-static-semantics-propertynamelist",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-static-semantics-propertynamelist",
       "title": "Static Semantics: PropertyNameList",
       "level": 4,
-      "number": "13.2.5.3"
+      "number": "13.2.5.4"
     },
     {
       "id": "sec-object-initializer-runtime-semantics-evaluation",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-object-initializer-runtime-semantics-evaluation",
       "title": "Runtime Semantics: Evaluation",
       "level": 4,
-      "number": "13.2.5.4"
+      "number": "13.2.5.5"
     },
     {
       "id": "sec-runtime-semantics-propertydefinitionevaluation",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-runtime-semantics-propertydefinitionevaluation",
       "title": "Runtime Semantics: PropertyDefinitionEvaluation",
       "level": 4,
-      "number": "13.2.5.5"
+      "number": "13.2.5.6"
     },
     {
       "id": "sec-function-defining-expressions",
@@ -13480,81 +13487,123 @@
       "number": "25.5"
     },
     {
+      "id": "sec-json.israwjson",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.israwjson",
+      "title": "JSON.isRawJSON ( O )",
+      "level": 3,
+      "number": "25.5.1"
+    },
+    {
       "id": "sec-json.parse",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.parse",
       "title": "JSON.parse ( text [ , reviver ] )",
       "level": 3,
-      "number": "25.5.1"
+      "number": "25.5.2"
     },
     {
       "id": "sec-ParseJSON",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-ParseJSON",
       "title": "ParseJSON ( text )",
       "level": 4,
-      "number": "25.5.1.1"
+      "number": "25.5.2.1"
+    },
+    {
+      "id": "sec-json-parse-record",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-parse-record",
+      "title": "JSON Parse Record",
+      "level": 4,
+      "number": "25.5.2.2"
+    },
+    {
+      "id": "sec-createjsonparserecord",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-createjsonparserecord",
+      "title": "CreateJSONParseRecord ( parseNode, key, val )",
+      "level": 4,
+      "number": "25.5.2.3"
     },
     {
       "id": "sec-internalizejsonproperty",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-internalizejsonproperty",
-      "title": "InternalizeJSONProperty ( holder, name, reviver )",
+      "title": "InternalizeJSONProperty ( holder, name, reviver, parseRecord )",
       "level": 4,
-      "number": "25.5.1.2"
+      "number": "25.5.2.4"
+    },
+    {
+      "id": "sec-shallowestcontainedjsonvalue",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-shallowestcontainedjsonvalue",
+      "title": "Static Semantics: ShallowestContainedJSONValue ( root )",
+      "level": 4,
+      "number": "25.5.2.5"
+    },
+    {
+      "id": "sec-static-semantics-jsonarrayliteralcontentnodes",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-static-semantics-jsonarrayliteralcontentnodes",
+      "title": "Static Semantics: JSONArrayLiteralContentNodes",
+      "level": 4,
+      "number": "25.5.2.6"
+    },
+    {
+      "id": "sec-json.rawjson",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.rawjson",
+      "title": "JSON.rawJSON ( text )",
+      "level": 3,
+      "number": "25.5.3"
     },
     {
       "id": "sec-json.stringify",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.stringify",
       "title": "JSON.stringify ( value [ , replacer [ , space ] ] )",
       "level": 3,
-      "number": "25.5.2"
+      "number": "25.5.4"
     },
     {
       "id": "sec-json-serialization-record",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-serialization-record",
       "title": "JSON Serialization Record",
       "level": 4,
-      "number": "25.5.2.1"
+      "number": "25.5.4.1"
     },
     {
       "id": "sec-serializejsonproperty",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonproperty",
       "title": "SerializeJSONProperty ( state, key, holder )",
       "level": 4,
-      "number": "25.5.2.2"
+      "number": "25.5.4.2"
     },
     {
       "id": "sec-quotejsonstring",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-quotejsonstring",
       "title": "QuoteJSONString ( value )",
       "level": 4,
-      "number": "25.5.2.3"
+      "number": "25.5.4.3"
     },
     {
       "id": "sec-unicodeescape",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-unicodeescape",
       "title": "UnicodeEscape ( C )",
       "level": 4,
-      "number": "25.5.2.4"
+      "number": "25.5.4.4"
     },
     {
       "id": "sec-serializejsonobject",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonobject",
       "title": "SerializeJSONObject ( state, value )",
       "level": 4,
-      "number": "25.5.2.5"
+      "number": "25.5.4.5"
     },
     {
       "id": "sec-serializejsonarray",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-serializejsonarray",
       "title": "SerializeJSONArray ( state, value )",
       "level": 4,
-      "number": "25.5.2.6"
+      "number": "25.5.4.6"
     },
     {
       "id": "sec-json-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-%25symbol.tostringtag%25",
       "title": "JSON [ %Symbol.toStringTag% ]",
       "level": 3,
-      "number": "25.5.3"
+      "number": "25.5.5"
     },
     {
       "id": "sec-managing-memory",
