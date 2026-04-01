@@ -17378,7 +17378,7 @@
     },
     {
       "name": ":lang()",
-      "prose": "If the document language specifies how the (human) content language of an element is determined, it is possible to write selectors that represent an element based on its content language. The :lang() pseudo-class, which accepts a comma-separated list of one or more language ranges, represents an element whose content language is one of the languages listed in its argument. Each language range in :lang() must be a valid CSS <ident> or <string>. (Thus language ranges containing asterisks, for example, must be either correctly escaped or quoted as strings, e.g. :lang(\\*-Latn) or :lang(\"*-Latn\").)",
+      "prose": "If the document language specifies how the (human) content language of an element is determined, it is possible to write selectors that represent an element based on its content language. The :lang() pseudo-class, which accepts a comma-separated list of one or more language ranges, represents an element whose content language is one of the languages listed in its argument. Each language range in :lang() is an extended language range, as defined in BCP 47, and must be a valid CSS <ident> or <string>. (Thus language ranges containing asterisks, for example, must be either correctly escaped or quoted as strings, e.g. :lang(\\*-Latn) or :lang(\"*-Latn\").)",
       "href": "https://drafts.csswg.org/selectors-4/#lang-pseudo",
       "extended": []
     },
