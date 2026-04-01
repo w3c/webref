@@ -148,14 +148,30 @@
       ]
     },
     {
-      "html": "To convert a color <var>col1</var> in a source color space <var>src</var>\nwith white point <var>src-white</var>\nto a color <var>col2</var> in destination color space <var>dest</var>\nwith white point <var>dest-white</var>:",
-      "rationale": "if",
+      "name": "prepare a color col1 for conversion",
+      "href": "https://www.w3.org/TR/css-color-4/#prepare-a-color-col1-for-conversion",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"prepare-a-color-col1-for-conversion\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">prepare a color <var>col1</var> for conversion</dfn>:",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-polrect\"></a>If <var>src</var> is in a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color②\">cylindrical polar color</a> representation,\n\tfirst convert <var>col1</var>\n\tto the corresponding <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#rectangular-orthogonal-color\" id=\"ref-for-rectangular-orthogonal-color①\">rectangular orthogonal color</a> representation\n\tand let this be the new <var>col1</var>."
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#powerless-to-missing\"></a>Change any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#powerless-color-component\" id=\"ref-for-powerless-color-component①③\">powerless component</a>s in <var>src</var> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑦\">missing component</a>s"
         },
         {
-          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-missing\"></a>Replace any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑦\">missing component</a> with zero."
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-polrect\"></a>If <var>src</var> is in a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color②\">cylindrical polar color</a> representation,\n\tconvert <var>col1</var>\n\tto the corresponding <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#rectangular-orthogonal-color\" id=\"ref-for-rectangular-orthogonal-color①\">rectangular orthogonal color</a> representation\n\tand let this be the new <var>col1</var>."
+        }
+      ]
+    },
+    {
+      "name": "convert a color",
+      "href": "https://www.w3.org/TR/css-color-4/#convert-a-color",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"convert-a-color\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">convert a color</dfn> <var>col1</var> in a source color space <var>src</var>\nwith white point <var>src-white</var>\nto a color <var>col2</var> in destination color space <var>dest</var>\nwith white point <var>dest-white</var>,\nwhere <var>src</var> and <var>dest</var> are <em>different</em>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "prepare <var>col1</var> for conversion"
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-missing\"></a>Replace any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑧\">missing component</a> with zero."
         },
         {
           "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-tolinear\"></a>If <var>src</var> is not a linear-light representation,\n\tconvert it to linear light (undo gamma-encoding)\n\tand let this be the new <var>col1</var>."
@@ -176,7 +192,37 @@
           "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-display\"></a>If <var>dest</var> is a physical output color space, such as a display,\n\tthen <var>col2</var> must be <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#css-gamut-mapped\" id=\"ref-for-css-gamut-mapped③\">css gamut mapped</a>\n\tso that it <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#can-be-displayed\" id=\"ref-for-can-be-displayed\">can be displayed</a>."
         },
         {
-          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-rectpol\"></a>If <var>dest-rect</var> is not the same as <var>dest</var>,\n\tin other words <var>dest</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color④\">cylindrical polar color</a> representation,\n\tconvert from <var>dest-rect</var> to <var>dest</var>, and let this be <var>col2</var>.\n\tThis may produce <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑧\">missing component</a>s."
+          "html": "<a class=\"self-link\" href=\"https://www.w3.org/TR/css-color-4/#convert-rectpol\"></a>If <var>dest-rect</var> is not the same as <var>dest</var>,\n\tin other words <var>dest</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#cylindrical-polar-color\" id=\"ref-for-cylindrical-polar-color④\">cylindrical polar color</a> representation,\n\tconvert from <var>dest-rect</var> to <var>dest</var>, and let this be <var>col2</var>.\n\tThis may produce <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component⑨\">missing component</a>s."
+        }
+      ]
+    },
+    {
+      "html": "Interpolation between two <a class=\"css production\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-color-4/#typedef-color\" id=\"ref-for-typedef-color①⑧\">&lt;color&gt;</a> values\n\ttakes place by executing the following steps:",
+      "rationale": "prepare",
+      "steps": [
+        {
+          "html": "checking the two colors for <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#analogous-components\" id=\"ref-for-analogous-components\">analogous components</a>\n\t\t\twhich will be <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"carried-forward\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">carried forward</dfn>"
+        },
+        {
+          "html": "prepare both colors for conversion.\n\t\t\tthis changes any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#powerless-color-component\" id=\"ref-for-powerless-color-component①④\">powerless</a> components to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component①⓪\">missing</a> values"
+        },
+        {
+          "html": "converting them both to a given color space\n\t\t\twhich will be referred to as the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"interpolation-color-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">interpolation color space</dfn> below."
+        },
+        {
+          "html": "(if required) re-inserting <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#carried-forward\" id=\"ref-for-carried-forward\">carried forward</a> values in the converted colors"
+        },
+        {
+          "html": "(if required) fixing up the hues, depending on the selected <a class=\"css production\" data-link-type=\"type\" href=\"https://www.w3.org/TR/css-color-4/#typedef-hue-interpolation-method\" id=\"ref-for-typedef-hue-interpolation-method\">&lt;hue-interpolation-method&gt;</a>"
+        },
+        {
+          "html": "changing the color components to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#premultiplied\" id=\"ref-for-premultiplied\">premultiplied</a> form"
+        },
+        {
+          "html": "linearly interpolating each component of the computed value of the color separately"
+        },
+        {
+          "html": "undoing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-color-4/#premultiplied\" id=\"ref-for-premultiplied①\">premultiplication</a>"
         }
       ]
     },
