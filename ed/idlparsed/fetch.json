@@ -1351,7 +1351,7 @@
         "href": "https://fetch.spec.whatwg.org/#requestinit"
       },
       "RequestDestination": {
-        "fragment": "enum RequestDestination { \"\", \"audio\", \"audioworklet\", \"document\", \"embed\", \"font\", \"frame\", \"iframe\", \"image\", \"json\", \"manifest\", \"object\", \"paintworklet\", \"report\", \"script\", \"sharedworker\", \"style\",  \"track\", \"video\", \"worker\", \"xslt\" };",
+        "fragment": "enum RequestDestination { \"\", \"audio\", \"audioworklet\", \"document\", \"embed\", \"font\", \"frame\", \"iframe\", \"image\", \"json\", \"manifest\", \"object\", \"paintworklet\", \"report\", \"script\", \"sharedworker\", \"style\", \"text\", \"track\", \"video\", \"worker\", \"xslt\" };",
         "type": "enum",
         "name": "RequestDestination",
         "values": [
@@ -1439,6 +1439,11 @@
             "type": "enum-value",
             "value": "style",
             "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-style"
+          },
+          {
+            "type": "enum-value",
+            "value": "text",
+            "href": "https://fetch.spec.whatwg.org/#dom-requestdestination-text"
           },
           {
             "type": "enum-value",
