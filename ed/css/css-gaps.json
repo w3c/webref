@@ -469,9 +469,9 @@
     {
       "name": "column-rule-visibility-items",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-visibility-items",
-      "value": "all | around | between",
-      "initial": "all",
-      "appliesTo": "grid containers, and multicol containers",
+      "value": "all | around | between | normal",
+      "initial": "normal",
+      "appliesTo": "grid containers and multicol containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -498,6 +498,13 @@
           "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-visibility-items-between",
           "type": "value",
           "value": "between"
+        },
+        {
+          "name": "normal",
+          "prose": "Behavior depends on the type of container.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-visibility-items-normal",
+          "type": "value",
+          "value": "normal"
         }
       ],
       "styleDeclaration": [
@@ -508,9 +515,9 @@
     {
       "name": "row-rule-visibility-items",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-visibility-items",
-      "value": "all | around | between",
-      "initial": "all",
-      "appliesTo": "grid containers, and multicol containers",
+      "value": "all | around | between | normal",
+      "initial": "normal",
+      "appliesTo": "grid containers and multicol containers",
       "inherited": "no",
       "percentages": "n/a",
       "computedValue": "as specified",
@@ -537,6 +544,13 @@
           "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-visibility-items-between",
           "type": "value",
           "value": "between"
+        },
+        {
+          "name": "normal",
+          "prose": "Behavior depends on the type of container.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-column-rule-visibility-items-normal",
+          "type": "value",
+          "value": "normal"
         }
       ],
       "styleDeclaration": [
