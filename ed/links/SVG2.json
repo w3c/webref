@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "Scalable Vector Graphics (SVG) 2",
-    "url": "https://svgwg.org/svg2-draft/"
+    "url": "https://w3c.github.io/svgwg/svg2-draft/"
   },
   "links": {
     "rawlinks": {
@@ -63,13 +63,6 @@
         ]
       },
       "http://lists.w3.org/Archives/Public/www-svg/": {},
-      "http://svgwg.org/svg2-draft/interact.html": {
-        "anchors": [
-          "OnBeginEventAttribute",
-          "OnEndEventAttribute",
-          "OnRepeatEventAttribute"
-        ]
-      },
       "http://tools.ietf.org/html/bcp47": {
         "anchors": [
           "section-2.1"
@@ -81,6 +74,13 @@
           "dom-selection",
           "dfn-direction",
           "dfn-selection"
+        ]
+      },
+      "http://w3c.github.io/svgwg/svg2-draft/interact.html": {
+        "anchors": [
+          "OnBeginEventAttribute",
+          "OnEndEventAttribute",
+          "OnRepeatEventAttribute"
         ]
       },
       "http://www.color.org/specification/ICC1v43_2010-12.pdf": {},
@@ -216,7 +216,6 @@
       },
       "http://www.w3.org/2012/09/19-svg-minutes.html": {
         "anchors": [
-          "item08",
           "item01"
         ]
       },
@@ -261,9 +260,7 @@
       "http://www.w3.org/2015/02/12-svg-minutes.html": {
         "anchors": [
           "action17",
-          "item05",
-          "item03",
-          "item12"
+          "item05"
         ]
       },
       "http://www.w3.org/2015/06/11-svg-minutes.html": {
@@ -363,6 +360,11 @@
         ]
       },
       "https://drafts.csswg.org/css-overflow-3/": {},
+      "https://drafts.csswg.org/css-pseudo-4/": {
+        "anchors": [
+          "csspseudoelement"
+        ]
+      },
       "https://drafts.csswg.org/css-syntax/": {
         "anchors": [
           "css-ignored"
@@ -577,6 +579,7 @@
       "https://github.com/w3c/csswg-drafts/issues/363": {},
       "https://github.com/w3c/csswg-drafts/issues/919": {},
       "https://github.com/w3c/svgwg/issues/104": {},
+      "https://github.com/w3c/svgwg/issues/1065": {},
       "https://github.com/w3c/svgwg/issues/129": {},
       "https://github.com/w3c/svgwg/issues/196": {},
       "https://github.com/w3c/svgwg/issues/210": {},
@@ -606,10 +609,10 @@
       "https://github.com/w3c/svgwg/issues/545": {},
       "https://github.com/w3c/svgwg/issues/547": {},
       "https://github.com/w3c/svgwg/issues/56": {},
-      "https://github.com/w3c/svgwg/issues/592": {},
       "https://github.com/w3c/svgwg/issues/60": {},
       "https://github.com/w3c/svgwg/issues/647": {},
       "https://github.com/w3c/svgwg/issues/685": {},
+      "https://github.com/w3c/svgwg/issues/828": {},
       "https://github.com/w3c/svgwg/pull/295": {},
       "https://github.com/w3c/svgwg/pull/296": {},
       "https://github.com/w3c/svgwg/pull/301": {},
@@ -640,6 +643,7 @@
       "https://github.com/w3c/svgwg/pull/551": {},
       "https://github.com/w3c/svgwg/pull/552": {},
       "https://github.com/w3c/svgwg/wiki/SVG-2-Security-%26-Privacy-Review": {},
+      "https://github.com/whatwg/html/issues/11936": {},
       "https://heycam.github.io/webidl/": {
         "anchors": [
           "dfn-conforming-set-of-idl-fragments",
@@ -750,6 +754,7 @@
         "anchors": [
           "ping",
           "attr-hyperlink-hreflang",
+          "following-hyperlinks-2",
           "htmlhyperlinkelementutils"
         ]
       },
@@ -808,8 +813,39 @@
           "e519951"
         ]
       },
-      "https://svgwg.org/specs/animations": {},
       "https://svgwg.org/specs/animations/": {
+        "anchors": [
+          "FromAttribute",
+          "ByAttribute",
+          "AdditiveAttribute"
+        ]
+      },
+      "https://tools.ietf.org/html/bcp47": {},
+      "https://tools.ietf.org/html/rfc1951": {},
+      "https://tools.ietf.org/html/rfc1952": {},
+      "https://tools.ietf.org/html/rfc2046": {},
+      "https://tools.ietf.org/html/rfc2119": {},
+      "https://tools.ietf.org/html/rfc2397": {},
+      "https://tools.ietf.org/html/rfc2616": {},
+      "https://tools.ietf.org/html/rfc3986": {},
+      "https://tools.ietf.org/html/rfc3987": {},
+      "https://tools.ietf.org/html/rfc4329": {},
+      "https://tools.ietf.org/html/rfc5234": {},
+      "https://tools.ietf.org/html/rfc7303": {},
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-parser"
+        ]
+      },
+      "https://w3c.github.io/clipboard-apis/": {},
+      "https://w3c.github.io/graphics-aria/": {},
+      "https://w3c.github.io/svg-aam/": {
+        "anchors": [
+          "details-id-69"
+        ]
+      },
+      "https://w3c.github.io/svgwg/specs/animations": {},
+      "https://w3c.github.io/svgwg/specs/animations/": {
         "anchors": [
           "AnimateElement",
           "AnimateMotionElement",
@@ -817,8 +853,8 @@
           "SetElement",
           "TermAnimationElement",
           "MPathElement",
-          "Animatable",
           "FillAttribute",
+          "Animatable",
           "EventValueSyntax",
           "BeginAttribute",
           "EndAttribute",
@@ -852,34 +888,10 @@
           "ValuesAttribute"
         ]
       },
-      "https://svgwg.org/svg2-draft/painting.html": {
+      "https://w3c.github.io/svgwg/svg2-draft/painting.html": {
         "anchors": [
           "StrokeShape",
           "PaintingVectorEffects"
-        ]
-      },
-      "https://tools.ietf.org/html/bcp47": {},
-      "https://tools.ietf.org/html/rfc1951": {},
-      "https://tools.ietf.org/html/rfc1952": {},
-      "https://tools.ietf.org/html/rfc2046": {},
-      "https://tools.ietf.org/html/rfc2119": {},
-      "https://tools.ietf.org/html/rfc2397": {},
-      "https://tools.ietf.org/html/rfc2616": {},
-      "https://tools.ietf.org/html/rfc3986": {},
-      "https://tools.ietf.org/html/rfc3987": {},
-      "https://tools.ietf.org/html/rfc4329": {},
-      "https://tools.ietf.org/html/rfc5234": {},
-      "https://tools.ietf.org/html/rfc7303": {},
-      "https://url.spec.whatwg.org/": {
-        "anchors": [
-          "concept-url-parser"
-        ]
-      },
-      "https://w3c.github.io/clipboard-apis/": {},
-      "https://w3c.github.io/graphics-aria/": {},
-      "https://w3c.github.io/svg-aam/": {
-        "anchors": [
-          "details-id-69"
         ]
       },
       "https://w3c.github.io/uievents/": {},
@@ -894,16 +906,17 @@
       "https://www.microsoft.com/typography/otspec/svg.htm": {},
       "https://www.w3.org/2004/01/pp-impl/19480/status": {},
       "https://www.w3.org/2015/Process-20150901/": {},
-      "https://www.w3.org/2016/02/03-svg-minutes.html": {
-        "anchors": [
-          "item02"
-        ]
-      },
       "https://www.w3.org/2016/04/21-svg-minutes.html": {},
       "https://www.w3.org/2016/04/22-svg-minutes.html": {
         "anchors": [
           "item02",
           "item08"
+        ]
+      },
+      "https://www.w3.org/2026/03/05-svg-minutes.html": {
+        "anchors": [
+          "c364",
+          "514b"
         ]
       },
       "https://www.w3.org/Consortium/Patent-Policy-20040205/": {
@@ -925,7 +938,11 @@
       "https://www.w3.org/Graphics/SVG/svg-2019.html": {},
       "https://www.w3.org/Interaction/": {},
       "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/2001/REC-smil-animation-20010904/": {},
+      "https://www.w3.org/TR/2001/REC-smil-animation-20010904/": {
+        "anchors": [
+          "FromToByAndAdditive"
+        ]
+      },
       "https://www.w3.org/TR/2001/REC-xlink-20010627/": {},
       "https://www.w3.org/TR/2003/REC-MathML2-20031021/": {},
       "https://www.w3.org/TR/2006/REC-xml-names-20060816/": {},
@@ -1080,7 +1097,6 @@
         ]
       },
       "https://www.w3.org/TR/DOM-Level-2-Style/": {},
-      "https://www.w3.org/TR/DOM-Level-2-Style/Overview.html": {},
       "https://www.w3.org/TR/MathML3/": {},
       "https://www.w3.org/TR/PNG": {},
       "https://www.w3.org/TR/REC-smil/smil-content.html": {
@@ -1140,11 +1156,7 @@
           "specified"
         ]
       },
-      "https://www.w3.org/TR/css-cascade-4/": {
-        "anchors": [
-          "importance"
-        ]
-      },
+      "https://www.w3.org/TR/css-cascade-4/": {},
       "https://www.w3.org/TR/css-color-3": {},
       "https://www.w3.org/TR/css-color-3/": {
         "anchors": [

@@ -7,7 +7,7 @@
       "url": "https://www.w3.org/TR/SVG2/"
     },
     "fragment": "[Exposed=Window]\ninterface SVGLineElement : SVGGeometryElement {\n  [SameObject] readonly attribute SVGAnimatedLength x1;\n  [SameObject] readonly attribute SVGAnimatedLength y1;\n  [SameObject] readonly attribute SVGAnimatedLength x2;\n  [SameObject] readonly attribute SVGAnimatedLength y2;\n};",
-    "href": "https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGLineElement"
+    "href": "https://w3c.github.io/svgwg/svg2-draft/shapes.html#InterfaceSVGLineElement"
   },
   "extended": [],
   "inheritance": {
@@ -19,7 +19,7 @@
         "url": "https://www.w3.org/TR/SVG2/"
       },
       "fragment": "[Exposed=Window]\ninterface SVGGeometryElement : SVGGraphicsElement {\n  [SameObject] readonly attribute SVGAnimatedNumber pathLength;\n\n  boolean isPointInFill(optional DOMPointInit point = {});\n  boolean isPointInStroke(optional DOMPointInit point = {});\n  float getTotalLength();\n  DOMPoint getPointAtLength(float distance);\n};",
-      "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGGeometryElement"
+      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGGeometryElement"
     },
     "extended": [],
     "inheritance": {
@@ -31,7 +31,7 @@
           "url": "https://www.w3.org/TR/SVG2/"
         },
         "fragment": "[Exposed=Window]\ninterface SVGGraphicsElement : SVGElement {\n  [SameObject] readonly attribute SVGAnimatedTransformList transform;\n\n  DOMRect getBBox(optional SVGBoundingBoxOptions options = {});\n  DOMMatrix? getCTM();\n  DOMMatrix? getScreenCTM();\n};",
-        "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGGraphicsElement"
+        "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGGraphicsElement"
       },
       "extended": [
         {
@@ -51,7 +51,7 @@
             "url": "https://www.w3.org/TR/SVG2/"
           },
           "fragment": "[Exposed=Window]\ninterface SVGElement : Element {\n\n  [SameObject] readonly attribute SVGAnimatedString className;\n\n  readonly attribute SVGSVGElement? ownerSVGElement;\n  readonly attribute SVGElement? viewportElement;\n};",
-          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGElement"
+          "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGElement"
         },
         "extended": [
           {
@@ -523,7 +523,7 @@
                 "url": "https://www.w3.org/TR/SVG2/"
               },
               "fragment": "interface mixin SVGElementInstance {\n  [SameObject] readonly attribute SVGElement? correspondingElement;\n  [SameObject] readonly attribute SVGUseElement? correspondingUseElement;\n};",
-              "href": "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGElementInstance"
+              "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#InterfaceSVGElementInstance"
             },
             "extended": [],
             "inheritance": null,
@@ -556,7 +556,7 @@
               "url": "https://www.w3.org/TR/SVG2/"
             },
             "fragment": "interface mixin SVGTests {\n  [SameObject] readonly attribute SVGStringList requiredExtensions;\n  [SameObject] readonly attribute SVGStringList systemLanguage;\n};",
-            "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGTests"
+            "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGTests"
           },
           "extended": [],
           "inheritance": null,

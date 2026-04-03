@@ -1,11 +1,11 @@
 // Source: WebAssembly JavaScript Interface (https://www.w3.org/TR/wasm-js-api-2/)
 [Exposed=*]
 namespace WebAssembly {
-    boolean validate(BufferSource bytes, optional WebAssemblyCompileOptions options = {});
-    Promise<Module> compile(BufferSource bytes, optional WebAssemblyCompileOptions options = {});
+    boolean validate([AllowResizable] AllowSharedBufferSource bytes, optional WebAssemblyCompileOptions options = {});
+    Promise<Module> compile([AllowResizable] AllowSharedBufferSource bytes, optional WebAssemblyCompileOptions options = {});
 
     Promise<WebAssemblyInstantiatedSource> instantiate(
-        BufferSource bytes, optional object importObject, optional WebAssemblyCompileOptions options = {});
+        [AllowResizable] AllowSharedBufferSource bytes, optional object importObject, optional WebAssemblyCompileOptions options = {});
 
     Promise<Instance> instantiate(
         Module moduleObject, optional object importObject);

@@ -15,10 +15,15 @@
     },
     "idlNames": {
       "CompressionFormat": {
-        "fragment": "enum CompressionFormat {\n  \"deflate\",\n  \"deflate-raw\",\n  \"gzip\",\n};",
+        "fragment": "enum CompressionFormat {\n  \"brotli\",\n  \"deflate\",\n  \"deflate-raw\",\n  \"gzip\",\n};",
         "type": "enum",
         "name": "CompressionFormat",
         "values": [
+          {
+            "type": "enum-value",
+            "value": "brotli",
+            "href": "https://compression.spec.whatwg.org/#dom-compressionformat-brotli"
+          },
           {
             "type": "enum-value",
             "value": "deflate",

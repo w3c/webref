@@ -7,7 +7,7 @@
       "url": "https://www.w3.org/TR/SVG2/"
     },
     "fragment": "[Exposed=Window]\ninterface SVGSVGElement : SVGGraphicsElement {\n\n  [SameObject] readonly attribute SVGAnimatedLength x;\n  [SameObject] readonly attribute SVGAnimatedLength y;\n  [SameObject] readonly attribute SVGAnimatedLength width;\n  [SameObject] readonly attribute SVGAnimatedLength height;\n\n  attribute float currentScale;\n  [SameObject] readonly attribute DOMPointReadOnly currentTranslate;\n\n  NodeList getIntersectionList(DOMRectReadOnly rect, SVGElement? referenceElement);\n  NodeList getEnclosureList(DOMRectReadOnly rect, SVGElement? referenceElement);\n  boolean checkIntersection(SVGElement element, DOMRectReadOnly rect);\n  boolean checkEnclosure(SVGElement element, DOMRectReadOnly rect);\n\n  undefined deselectAll();\n\n  [NewObject] SVGNumber createSVGNumber();\n  [NewObject] SVGLength createSVGLength();\n  [NewObject] SVGAngle createSVGAngle();\n  [NewObject] DOMPoint createSVGPoint();\n  [NewObject] DOMMatrix createSVGMatrix();\n  [NewObject] DOMRect createSVGRect();\n  [NewObject] SVGTransform createSVGTransform();\n  [NewObject] SVGTransform createSVGTransformFromMatrix(optional DOMMatrix2DInit matrix = {});\n\n  Element? getElementById(DOMString elementId);\n\n  // Deprecated methods that have no effect when called,\n  // but which are kept for compatibility reasons.\n  unsigned long suspendRedraw(unsigned long maxWaitMilliseconds);\n  undefined unsuspendRedraw(unsigned long suspendHandleID);\n  undefined unsuspendRedrawAll();\n  undefined forceRedraw();\n};",
-    "href": "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGSVGElement"
+    "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#InterfaceSVGSVGElement"
   },
   "extended": [
     {
@@ -41,7 +41,7 @@
         "url": "https://www.w3.org/TR/SVG2/"
       },
       "fragment": "[Exposed=Window]\ninterface SVGGraphicsElement : SVGElement {\n  [SameObject] readonly attribute SVGAnimatedTransformList transform;\n\n  DOMRect getBBox(optional SVGBoundingBoxOptions options = {});\n  DOMMatrix? getCTM();\n  DOMMatrix? getScreenCTM();\n};",
-      "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGGraphicsElement"
+      "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGGraphicsElement"
     },
     "extended": [
       {
@@ -61,7 +61,7 @@
           "url": "https://www.w3.org/TR/SVG2/"
         },
         "fragment": "[Exposed=Window]\ninterface SVGElement : Element {\n\n  [SameObject] readonly attribute SVGAnimatedString className;\n\n  readonly attribute SVGSVGElement? ownerSVGElement;\n  readonly attribute SVGElement? viewportElement;\n};",
-        "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGElement"
+        "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGElement"
       },
       "extended": [
         {
@@ -533,7 +533,7 @@
               "url": "https://www.w3.org/TR/SVG2/"
             },
             "fragment": "interface mixin SVGElementInstance {\n  [SameObject] readonly attribute SVGElement? correspondingElement;\n  [SameObject] readonly attribute SVGUseElement? correspondingUseElement;\n};",
-            "href": "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGElementInstance"
+            "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#InterfaceSVGElementInstance"
           },
           "extended": [],
           "inheritance": null,
@@ -566,7 +566,7 @@
             "url": "https://www.w3.org/TR/SVG2/"
           },
           "fragment": "interface mixin SVGTests {\n  [SameObject] readonly attribute SVGStringList requiredExtensions;\n  [SameObject] readonly attribute SVGStringList systemLanguage;\n};",
-          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGTests"
+          "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGTests"
         },
         "extended": [],
         "inheritance": null,
@@ -584,7 +584,7 @@
           "url": "https://www.w3.org/TR/SVG2/"
         },
         "fragment": "interface mixin SVGFitToViewBox {\n  [SameObject] readonly attribute SVGAnimatedRect viewBox;\n  [SameObject] readonly attribute SVGAnimatedPreserveAspectRatio preserveAspectRatio;\n};",
-        "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGFitToViewBox"
+        "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGFitToViewBox"
       },
       "extended": [],
       "inheritance": null,

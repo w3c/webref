@@ -7,7 +7,7 @@
       "url": "https://www.w3.org/TR/SVG2/"
     },
     "fragment": "[Exposed=Window]\ninterface SVGTextPathElement : SVGTextContentElement {\n\n  // textPath Method Types\n  const unsigned short TEXTPATH_METHODTYPE_UNKNOWN = 0;\n  const unsigned short TEXTPATH_METHODTYPE_ALIGN = 1;\n  const unsigned short TEXTPATH_METHODTYPE_STRETCH = 2;\n\n  // textPath Spacing Types\n  const unsigned short TEXTPATH_SPACINGTYPE_UNKNOWN = 0;\n  const unsigned short TEXTPATH_SPACINGTYPE_AUTO = 1;\n  const unsigned short TEXTPATH_SPACINGTYPE_EXACT = 2;\n\n  [SameObject] readonly attribute SVGAnimatedLength startOffset;\n  [SameObject] readonly attribute SVGAnimatedEnumeration method;\n  [SameObject] readonly attribute SVGAnimatedEnumeration spacing;\n};",
-    "href": "https://svgwg.org/svg2-draft/text.html#InterfaceSVGTextPathElement"
+    "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#InterfaceSVGTextPathElement"
   },
   "extended": [
     {
@@ -27,7 +27,7 @@
         "url": "https://www.w3.org/TR/SVG2/"
       },
       "fragment": "[Exposed=Window]\ninterface SVGTextContentElement : SVGGraphicsElement {\n\n  // lengthAdjust Types\n  const unsigned short LENGTHADJUST_UNKNOWN = 0;\n  const unsigned short LENGTHADJUST_SPACING = 1;\n  const unsigned short LENGTHADJUST_SPACINGANDGLYPHS = 2;\n\n  [SameObject] readonly attribute SVGAnimatedLength textLength;\n  [SameObject] readonly attribute SVGAnimatedEnumeration lengthAdjust;\n\n  long getNumberOfChars();\n  float getComputedTextLength();\n  float getSubStringLength(unsigned long charnum, unsigned long nchars);\n  DOMPoint getStartPositionOfChar(unsigned long charnum);\n  DOMPoint getEndPositionOfChar(unsigned long charnum);\n  DOMRect getExtentOfChar(unsigned long charnum);\n  float getRotationOfChar(unsigned long charnum);\n  long getCharNumAtPosition(optional DOMPointInit point = {});\n  undefined selectSubString(unsigned long charnum, unsigned long nchars);\n};",
-      "href": "https://svgwg.org/svg2-draft/text.html#InterfaceSVGTextContentElement"
+      "href": "https://w3c.github.io/svgwg/svg2-draft/text.html#InterfaceSVGTextContentElement"
     },
     "extended": [],
     "inheritance": {
@@ -39,7 +39,7 @@
           "url": "https://www.w3.org/TR/SVG2/"
         },
         "fragment": "[Exposed=Window]\ninterface SVGGraphicsElement : SVGElement {\n  [SameObject] readonly attribute SVGAnimatedTransformList transform;\n\n  DOMRect getBBox(optional SVGBoundingBoxOptions options = {});\n  DOMMatrix? getCTM();\n  DOMMatrix? getScreenCTM();\n};",
-        "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGGraphicsElement"
+        "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGGraphicsElement"
       },
       "extended": [
         {
@@ -59,7 +59,7 @@
             "url": "https://www.w3.org/TR/SVG2/"
           },
           "fragment": "[Exposed=Window]\ninterface SVGElement : Element {\n\n  [SameObject] readonly attribute SVGAnimatedString className;\n\n  readonly attribute SVGSVGElement? ownerSVGElement;\n  readonly attribute SVGElement? viewportElement;\n};",
-          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGElement"
+          "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGElement"
         },
         "extended": [
           {
@@ -531,7 +531,7 @@
                 "url": "https://www.w3.org/TR/SVG2/"
               },
               "fragment": "interface mixin SVGElementInstance {\n  [SameObject] readonly attribute SVGElement? correspondingElement;\n  [SameObject] readonly attribute SVGUseElement? correspondingUseElement;\n};",
-              "href": "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGElementInstance"
+              "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#InterfaceSVGElementInstance"
             },
             "extended": [],
             "inheritance": null,
@@ -564,7 +564,7 @@
               "url": "https://www.w3.org/TR/SVG2/"
             },
             "fragment": "interface mixin SVGTests {\n  [SameObject] readonly attribute SVGStringList requiredExtensions;\n  [SameObject] readonly attribute SVGStringList systemLanguage;\n};",
-            "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGTests"
+            "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGTests"
           },
           "extended": [],
           "inheritance": null,
@@ -584,7 +584,7 @@
           "url": "https://www.w3.org/TR/SVG2/"
         },
         "fragment": "interface mixin SVGURIReference {\n  [SameObject] readonly attribute SVGAnimatedString href;\n};",
-        "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGURIReference"
+        "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGURIReference"
       },
       "extended": [],
       "inheritance": null,

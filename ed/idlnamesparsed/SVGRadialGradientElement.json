@@ -7,7 +7,7 @@
       "url": "https://www.w3.org/TR/SVG2/"
     },
     "fragment": "[Exposed=Window]\ninterface SVGRadialGradientElement : SVGGradientElement {\n  [SameObject] readonly attribute SVGAnimatedLength cx;\n  [SameObject] readonly attribute SVGAnimatedLength cy;\n  [SameObject] readonly attribute SVGAnimatedLength r;\n  [SameObject] readonly attribute SVGAnimatedLength fx;\n  [SameObject] readonly attribute SVGAnimatedLength fy;\n  [SameObject] readonly attribute SVGAnimatedLength fr;\n};",
-    "href": "https://svgwg.org/svg2-draft/pservers.html#InterfaceSVGRadialGradientElement"
+    "href": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#InterfaceSVGRadialGradientElement"
   },
   "extended": [],
   "inheritance": {
@@ -19,7 +19,7 @@
         "url": "https://www.w3.org/TR/SVG2/"
       },
       "fragment": "[Exposed=Window]\ninterface SVGGradientElement : SVGElement {\n\n  // Spread Method Types\n  const unsigned short SVG_SPREADMETHOD_UNKNOWN = 0;\n  const unsigned short SVG_SPREADMETHOD_PAD = 1;\n  const unsigned short SVG_SPREADMETHOD_REFLECT = 2;\n  const unsigned short SVG_SPREADMETHOD_REPEAT = 3;\n\n  [SameObject] readonly attribute SVGAnimatedEnumeration gradientUnits;\n  [SameObject] readonly attribute SVGAnimatedTransformList gradientTransform;\n  [SameObject] readonly attribute SVGAnimatedEnumeration spreadMethod;\n};",
-      "href": "https://svgwg.org/svg2-draft/pservers.html#InterfaceSVGGradientElement"
+      "href": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#InterfaceSVGGradientElement"
     },
     "extended": [
       {
@@ -39,7 +39,7 @@
           "url": "https://www.w3.org/TR/SVG2/"
         },
         "fragment": "[Exposed=Window]\ninterface SVGElement : Element {\n\n  [SameObject] readonly attribute SVGAnimatedString className;\n\n  readonly attribute SVGSVGElement? ownerSVGElement;\n  readonly attribute SVGElement? viewportElement;\n};",
-        "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGElement"
+        "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGElement"
       },
       "extended": [
         {
@@ -511,7 +511,7 @@
               "url": "https://www.w3.org/TR/SVG2/"
             },
             "fragment": "interface mixin SVGElementInstance {\n  [SameObject] readonly attribute SVGElement? correspondingElement;\n  [SameObject] readonly attribute SVGUseElement? correspondingUseElement;\n};",
-            "href": "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGElementInstance"
+            "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#InterfaceSVGElementInstance"
           },
           "extended": [],
           "inheritance": null,
@@ -544,7 +544,7 @@
             "url": "https://www.w3.org/TR/SVG2/"
           },
           "fragment": "interface mixin SVGURIReference {\n  [SameObject] readonly attribute SVGAnimatedString href;\n};",
-          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGURIReference"
+          "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGURIReference"
         },
         "extended": [],
         "inheritance": null,

@@ -11,7 +11,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>format</var> is unsupported in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#compressionstream\" id=\"ref-for-compressionstream②\">CompressionStream</a></code>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>format</var> is unsupported in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#compressionstream\" id=\"ref-for-compressionstream⑥\">CompressionStream</a></code>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#compressionstream-format\" id=\"ref-for-compressionstream-format\">format</a> to <var>format</var>.</p>"
@@ -33,7 +33,7 @@
     {
       "name": "compress and enqueue a chunk",
       "href": "https://compression.spec.whatwg.org/#compress-and-enqueue-a-chunk",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compress-and-enqueue-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compress and enqueue a chunk</dfn> algorithm, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#compressionstream\" id=\"ref-for-compressionstream③\">CompressionStream</a></code> object <var>cs</var> and a <var>chunk</var>, runs these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compress-and-enqueue-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compress and enqueue a chunk</dfn> algorithm, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#compressionstream\" id=\"ref-for-compressionstream⑦\">CompressionStream</a></code> object <var>cs</var> and a <var>chunk</var>, runs these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -56,7 +56,7 @@
     {
       "name": "compress flush and enqueue",
       "href": "https://compression.spec.whatwg.org/#compress-flush-and-enqueue",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compress-flush-and-enqueue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compress flush and enqueue</dfn> algorithm, which handles the end of data from the input <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream①\">ReadableStream</a></code> object, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#compressionstream\" id=\"ref-for-compressionstream④\">CompressionStream</a></code> object <var>cs</var>, runs these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compress-flush-and-enqueue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compress flush and enqueue</dfn> algorithm, which handles the end of data from the input <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream①\">ReadableStream</a></code> object, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#compressionstream\" id=\"ref-for-compressionstream⑧\">CompressionStream</a></code> object <var>cs</var>, runs these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -80,7 +80,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>format</var> is unsupported in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#decompressionstream\" id=\"ref-for-decompressionstream②\">DecompressionStream</a></code>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>format</var> is unsupported in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#decompressionstream\" id=\"ref-for-decompressionstream①①\">DecompressionStream</a></code>, then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://compression.spec.whatwg.org/#decompressionstream-format\" id=\"ref-for-decompressionstream-format\">format</a> to <var>format</var>.</p>"
@@ -102,7 +102,7 @@
     {
       "name": "decompress and enqueue a chunk",
       "href": "https://compression.spec.whatwg.org/#decompress-and-enqueue-a-chunk",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"decompress-and-enqueue-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">decompress and enqueue a chunk</dfn> algorithm, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#decompressionstream\" id=\"ref-for-decompressionstream③\">DecompressionStream</a></code> object <var>ds</var> and a <var>chunk</var>, runs these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"decompress-and-enqueue-a-chunk\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">decompress and enqueue a chunk</dfn> algorithm, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#decompressionstream\" id=\"ref-for-decompressionstream①②\">DecompressionStream</a></code> object <var>ds</var> and a <var>chunk</var>, runs these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -128,7 +128,7 @@
     {
       "name": "decompress flush and enqueue",
       "href": "https://compression.spec.whatwg.org/#decompress-flush-and-enqueue",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"decompress-flush-and-enqueue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">decompress flush and enqueue</dfn> algorithm, which handles the end of data from the input <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream②\">ReadableStream</a></code> object, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#decompressionstream\" id=\"ref-for-decompressionstream④\">DecompressionStream</a></code> object <var>ds</var>, runs these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"decompress-flush-and-enqueue\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">decompress flush and enqueue</dfn> algorithm, which handles the end of data from the input <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream②\">ReadableStream</a></code> object, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://compression.spec.whatwg.org/#decompressionstream\" id=\"ref-for-decompressionstream①③\">DecompressionStream</a></code> object <var>ds</var>, runs these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
