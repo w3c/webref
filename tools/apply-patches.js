@@ -23,7 +23,18 @@ import { createFolderIfNeeded, loadJSON, getTargetedExtracts } from './utils.js'
 const execFile = util.promisify(execCb);
 
 async function applyPatches(rawFolder, outputFolder, type) {
-  type = (type === 'all') ? ['css', 'elements', 'idl'] : [type];
+  let types = (type === 'all') ? ['css', 'elements', 'idl'] : [type];
+
+  // CSS and IDL tests depend on each other. When one is being tested,
+  // the other's patches must be applied as well.
+  const cssIn = types.includes('css');
+  const idlIn = types.includes('idl');
+  if (cssIn && !idlIn) {
+    types.push('idl');
+  }
+  if (idlIn && !cssIn) {
+    types.push('css');
+  }
 
   const packages = [
     {
@@ -63,7 +74,7 @@ async function applyPatches(rawFolder, outputFolder, type) {
   await createFolderIfNeeded(outputFolder);
 
   for (const { name, srcDir, dstDir, patchDir, fileExt } of packages) {
-    if (!type.includes(name)) {
+    if (!types.includes(name)) {
       continue;
     }
 
