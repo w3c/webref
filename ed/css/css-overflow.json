@@ -26,7 +26,7 @@
         },
         {
           "name": "hidden",
-          "prose": "This value indicates that the box’s content is clipped to its padding box and that the UA must not provide any scrolling user interface to view the content outside the clipping region, nor allow scrolling by direct intervention of the user, such as dragging on a touch screen or using the scrolling wheel on a mouse. However, the content must still be scrollable programmatically, for example using the mechanisms defined in [CSSOM-VIEW], and the box is therefore still a scroll container.",
+          "prose": "This value indicates that the box’s content is clipped to its overflow clip edge and that the UA must not provide any scrolling user interface to view the content outside the clipping region, nor allow scrolling by direct intervention of the user, such as dragging on a touch screen or using the scrolling wheel on a mouse. However, the content must still be scrollable programmatically, for example using the mechanisms defined in [CSSOM-VIEW], and the box is therefore still a scroll container.",
           "href": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-hidden",
           "type": "value",
           "value": "hidden"
@@ -40,7 +40,7 @@
         },
         {
           "name": "scroll",
-          "prose": "This value indicates that the content is clipped to the padding box, but can be scrolled into view (and therefore the box is a scroll container). Furthermore, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism should be displayed whether or not any of its content is clipped. This avoids any problem with scrollbars appearing and disappearing in a dynamic environment. When the target medium is print, overflowing content may be printed; it is not defined where it may be printed.",
+          "prose": "This value indicates that the content is clipped to the overflow clip edge, but can be scrolled into view (and therefore the box is a scroll container). Furthermore, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism should be displayed whether or not any of its content is clipped. This avoids any problem with scrollbars appearing and disappearing in a dynamic environment. When the target medium is print, overflowing content may be printed; it is not defined where it may be printed.",
           "href": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-scroll",
           "type": "value",
           "value": "scroll"
@@ -87,7 +87,7 @@
         },
         {
           "name": "hidden",
-          "prose": "This value indicates that the box’s content is clipped to its padding box and that the UA must not provide any scrolling user interface to view the content outside the clipping region, nor allow scrolling by direct intervention of the user, such as dragging on a touch screen or using the scrolling wheel on a mouse. However, the content must still be scrollable programmatically, for example using the mechanisms defined in [CSSOM-VIEW], and the box is therefore still a scroll container.",
+          "prose": "This value indicates that the box’s content is clipped to its overflow clip edge and that the UA must not provide any scrolling user interface to view the content outside the clipping region, nor allow scrolling by direct intervention of the user, such as dragging on a touch screen or using the scrolling wheel on a mouse. However, the content must still be scrollable programmatically, for example using the mechanisms defined in [CSSOM-VIEW], and the box is therefore still a scroll container.",
           "href": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-hidden",
           "type": "value",
           "value": "hidden"
@@ -101,7 +101,7 @@
         },
         {
           "name": "scroll",
-          "prose": "This value indicates that the content is clipped to the padding box, but can be scrolled into view (and therefore the box is a scroll container). Furthermore, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism should be displayed whether or not any of its content is clipped. This avoids any problem with scrollbars appearing and disappearing in a dynamic environment. When the target medium is print, overflowing content may be printed; it is not defined where it may be printed.",
+          "prose": "This value indicates that the content is clipped to the overflow clip edge, but can be scrolled into view (and therefore the box is a scroll container). Furthermore, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism should be displayed whether or not any of its content is clipped. This avoids any problem with scrollbars appearing and disappearing in a dynamic environment. When the target medium is print, overflowing content may be printed; it is not defined where it may be printed.",
           "href": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-scroll",
           "type": "value",
           "value": "scroll"
@@ -199,7 +199,7 @@
         },
         {
           "name": "hidden",
-          "prose": "This value indicates that the box’s content is clipped to its padding box and that the UA must not provide any scrolling user interface to view the content outside the clipping region, nor allow scrolling by direct intervention of the user, such as dragging on a touch screen or using the scrolling wheel on a mouse. However, the content must still be scrollable programmatically, for example using the mechanisms defined in [CSSOM-VIEW], and the box is therefore still a scroll container.",
+          "prose": "This value indicates that the box’s content is clipped to its overflow clip edge and that the UA must not provide any scrolling user interface to view the content outside the clipping region, nor allow scrolling by direct intervention of the user, such as dragging on a touch screen or using the scrolling wheel on a mouse. However, the content must still be scrollable programmatically, for example using the mechanisms defined in [CSSOM-VIEW], and the box is therefore still a scroll container.",
           "href": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-hidden",
           "type": "value",
           "value": "hidden"
@@ -213,7 +213,7 @@
         },
         {
           "name": "scroll",
-          "prose": "This value indicates that the content is clipped to the padding box, but can be scrolled into view (and therefore the box is a scroll container). Furthermore, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism should be displayed whether or not any of its content is clipped. This avoids any problem with scrollbars appearing and disappearing in a dynamic environment. When the target medium is print, overflowing content may be printed; it is not defined where it may be printed.",
+          "prose": "This value indicates that the content is clipped to the overflow clip edge, but can be scrolled into view (and therefore the box is a scroll container). Furthermore, if the user agent uses a scrolling mechanism that is visible on the screen (such as a scroll bar or a panner), that mechanism should be displayed whether or not any of its content is clipped. This avoids any problem with scrollbars appearing and disappearing in a dynamic environment. When the target medium is print, overflowing content may be printed; it is not defined where it may be printed.",
           "href": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-scroll",
           "type": "value",
           "value": "scroll"
@@ -244,7 +244,7 @@
     {
       "name": "overflow-clip-margin",
       "href": "https://drafts.csswg.org/css-overflow-3/#propdef-overflow-clip-margin",
-      "value": "<visual-box> || <length [0,∞]>",
+      "value": "<visual-box> || <length>",
       "initial": "0px",
       "appliesTo": "boxes to which overflow applies",
       "inherited": "no",
@@ -261,11 +261,11 @@
           "value": "<visual-box>"
         },
         {
-          "name": "<length [0,∞]>",
-          "prose": "The specified offset dictates how much the overflow clip edge is expanded from the specified box edge Negative values are invalid. Defaults to zero if omitted.",
-          "href": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-clip-margin-length-0",
+          "name": "<length>",
+          "prose": "The specified offset dictates how much the overflow clip edge is expanded from the specified box edge. Negative values indicate insets, instead. Defaults to zero if omitted.",
+          "href": "https://drafts.csswg.org/css-overflow-3/#valdef-overflow-clip-margin-length",
           "type": "value",
-          "value": "<length [0,∞]>"
+          "value": "<length>"
         }
       ],
       "styleDeclaration": [
