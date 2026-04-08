@@ -1,16 +1,42 @@
-const fs = require('fs').promises;
-const path = require('path');
+import { readdir, readFile } from "node:fs/promises";
+import { readdirSync, readFileSync } from "node:fs";
+import { basename, dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-async function listAll({folder = __dirname} = {}) {
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+function isDataFile(file) {
+  return file.endsWith(".json") && file !== "package.json";
+}
+
+function sortDataFiles(files) {
+  return files.filter(isDataFile).sort();
+}
+
+async function readDefinitionFile(folder, file) {
+  const text = await readFile(join(folder, file), "utf8");
+  return JSON.parse(text);
+}
+
+function readDefinitionFileSync(folder, file) {
+  const text = readFileSync(join(folder, file), "utf8");
+  return JSON.parse(text);
+}
+
+export async function listAll({ folder = __dirname } = {}) {
   const all = {};
-  const files = await fs.readdir(folder);
-  for (const f of files) {
-    if (f.endsWith('.json') && f !== 'package.json') {
-      const text = await fs.readFile(path.join(folder, f), 'utf8');
-      all[path.basename(f, '.json')] = JSON.parse(text);
-    }
+  for (const file of sortDataFiles(await readdir(folder))) {
+    all[basename(file, ".json")] = await readDefinitionFile(folder, file);
   }
   return all;
 }
 
-module.exports = {listAll};
+export function listAllSync({ folder = __dirname } = {}) {
+  const all = {};
+  for (const file of sortDataFiles(readdirSync(folder))) {
+    all[basename(file, ".json")] = readDefinitionFileSync(folder, file);
+  }
+  return all;
+}
+
+export default { listAll, listAllSync };
