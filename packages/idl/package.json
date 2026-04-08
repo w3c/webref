@@ -1,16 +1,29 @@
 {
   "name": "@webref/idl",
-  "description": "Web IDL definitions of the web platform",
   "version": "3.75.2",
+  "license": "MIT",
+  "type": "module",
+  "description": "Web IDL definitions of the web platform",
   "repository": {
     "type": "git",
-    "url": "https://github.com/w3c/webref.git"
+    "url": "https://github.com/w3c/webref.git",
+    "directory": "packages/idl"
   },
   "bugs": {
     "url": "https://github.com/w3c/webref/issues"
   },
-  "license": "MIT",
-  "main": "index.js",
+  "types": "./index.d.ts",
+  "module": "./index.js",
+  "main": "./index.cjs",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "module-sync": "./index.js",
+      "require": "./index.cjs",
+      "default": "./index.js"
+    }
+  },
   "peerDependencies": {
     "webidl2": "^24.5.0"
   }
