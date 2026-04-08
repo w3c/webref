@@ -1,9 +1,5 @@
-import { readFile } from "node:fs/promises";
-import { readFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const { promises: fs, readFileSync } = require("node:fs");
+const path = require("node:path");
 
 function createEmptyCssData() {
   return {
@@ -30,7 +26,6 @@ function createFeatureId(feature, features) {
   if (feature.for) {
     const dupl = features.find((f) => f !== feature && f.name === feature.name);
     if (dupl) {
-      // Scoped definitions with the same name need a stable disambiguator.
       id += ` for ${feature.for[0]}`;
     }
   }
@@ -51,38 +46,37 @@ function createIndex(nonIndexed) {
     const features = nonIndexed[category] ?? [];
     for (const feature of features) {
       const id = createFeatureId(feature, features);
-      indexed[category][id] = feature.descriptors
-        ? {
-          ...feature,
-          descriptors: createDescriptorIndex(feature.descriptors),
-        }
-        : feature;
+      let descriptors = feature.descriptors;
+      descriptors &&= createDescriptorIndex(descriptors);
+      indexed[category][id] = { ...feature, descriptors };
     }
   }
   return indexed;
 }
 
-export async function listAll({ folder = __dirname } = {}) {
-  const json = await readFile(join(folder, "css.json"), "utf8")
+async function listAll({ folder = __dirname } = {}) {
+  const json = await fs.readFile(path.join(folder, "css.json"), "utf8")
     .catch(() => JSON.stringify(createEmptyCssData()));
   return JSON.parse(json);
 }
 
-export function listAllSync({ folder = __dirname } = {}) {
+function listAllSync({ folder = __dirname } = {}) {
   try {
-    const json = readFileSync(join(folder, "css.json"), "utf8", { flag: "a+" });
+    const json = readFileSync(path.join(folder, "css.json"), "utf8", {
+      flag: "a+",
+    });
     return JSON.parse(json || JSON.stringify(createEmptyCssData()));
   } catch {
     return createEmptyCssData();
   }
 }
 
-export async function index(options) {
+async function index(options) {
   return createIndex(await listAll(options));
 }
 
-export function indexSync(options) {
+function indexSync(options) {
   return createIndex(listAllSync(options));
 }
 
-export default { listAll, listAllSync, index, indexSync };
+module.exports = { listAll, listAllSync, index, indexSync };

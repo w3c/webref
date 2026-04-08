@@ -1,16 +1,29 @@
 {
-  "name": "@webref/css",
-  "description": "CSS definitions of the web platform",
+  "name": "@webref/css6",
   "version": "6.25.3",
+  "license": "MIT",
+  "type": "module",
+  "description": "CSS definitions of the web platform",
   "repository": {
     "type": "git",
-    "url": "https://github.com/w3c/webref.git"
+    "url": "https://github.com/w3c/webref.git",
+    "directory": "packages/css6"
   },
   "bugs": {
     "url": "https://github.com/w3c/webref/issues"
   },
-  "license": "MIT",
-  "main": "index.js",
+  "types": "./index.d.ts",
+  "module": "./index.js",
+  "main": "./index.cjs",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "module-sync": "./index.js",
+      "require": "./index.cjs",
+      "default": "./index.js"
+    }
+  },
   "peerDependencies": {
     "css-tree": "^3.2.1"
   }

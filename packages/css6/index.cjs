@@ -1,9 +1,9 @@
-import { readdir, readFile } from "node:fs/promises";
-import { readdirSync, readFileSync } from "node:fs";
-import { basename, dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const {
+  readdirSync,
+  readFileSync,
+  promises: { readdir, readFile },
+} = require("node:fs");
+const { join, basename } = require("node:path");
 
 function isDataFile(file) {
   return file.endsWith(".json") && file !== "package.json";
@@ -23,7 +23,7 @@ function readDefinitionFileSync(folder, file) {
   return JSON.parse(text);
 }
 
-export async function listAll({ folder = __dirname } = {}) {
+async function listAll({ folder = __dirname } = {}) {
   const all = {};
   for (const file of sortDataFiles(await readdir(folder))) {
     all[basename(file, ".json")] = await readDefinitionFile(folder, file);
@@ -31,7 +31,7 @@ export async function listAll({ folder = __dirname } = {}) {
   return all;
 }
 
-export function listAllSync({ folder = __dirname } = {}) {
+function listAllSync({ folder = __dirname } = {}) {
   const all = {};
   for (const file of sortDataFiles(readdirSync(folder))) {
     all[basename(file, ".json")] = readDefinitionFileSync(folder, file);
@@ -39,4 +39,4 @@ export function listAllSync({ folder = __dirname } = {}) {
   return all;
 }
 
-export default { listAll, listAllSync };
+module.exports = { listAll, listAllSync };
