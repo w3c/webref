@@ -63,8 +63,7 @@ async function cleanCrawlOutcome(spec) {
       for (const extractFile of extractFiles) {
         await fs.lstat(path.join(curatedFolder, extractFile));
       }
-    }
-    catch (err) {
+    } catch {
       delete spec[property];
     }
   }
@@ -84,9 +83,7 @@ async function prepareCurated(rawFolder, curatedFolder) {
   console.log('- folder exists');
   try {
     rimraf.sync(`${curatedFolder}/*`, { glob: true });
-  }
-  catch {
-  }
+  } catch { /* ignore */ }
   console.log('- folder is empty');
 
   console.log();
