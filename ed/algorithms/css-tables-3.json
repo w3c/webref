@@ -119,7 +119,10 @@
       "rationale": "define",
       "steps": [
         {
-          "html": "Define the baseline min-content width\n\t\t\t\t\t\t\tas the sum of the max-content widths based on cells of span up to N-1 \n\t\t\t\t\t\t\tof all columns that the cell spans."
+          "html": "Define the baseline min-content width\n\t\t\t\t\t\t\tas the sum of the min-content widths based on cells of span up to N-1\n\t\t\t\t\t\t\tof all columns that the cell spans."
+        },
+        {
+          "html": "Define the baseline max-content width\n\t\t\t\t\t\t\tas the sum of the max-content widths based on cells of span up to N-1\n\t\t\t\t\t\t\tof all columns that the cell spans."
         },
         {
           "html": "Define the baseline border spacing as the sum of the horizontal\n\t\t\t\t\t\t\tborder-spacing for any columns spanned by the cell,\n\t\t\t\t\t\t\tother than the one in which the cell originates."
