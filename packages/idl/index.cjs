@@ -1,20 +1,16 @@
-import { readdir, readFile } from "node:fs/promises";
-import { readdirSync, readFileSync } from "node:fs";
-import { basename, dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
-import { parse as parseWebIDL } from "webidl2";
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const { readdirSync, readFileSync, promises: fs } = require("node:fs");
+const path = require("node:path");
+const WebIDL2 = require("webidl2");
 
 class IDLFile {
   constructor(dir, file) {
     this.filename = file;
-    this.shortname = basename(file, ".idl");
-    this.path = join(dir, file);
+    this.shortname = path.basename(file, ".idl");
+    this.path = path.join(dir, file);
   }
 
   async text() {
-    return readFile(this.path, "utf8");
+    return fs.readFile(this.path, "utf8");
   }
 
   textSync() {
@@ -22,11 +18,11 @@ class IDLFile {
   }
 
   async parse() {
-    return parseWebIDL(await this.text());
+    return WebIDL2.parse(await this.text());
   }
 
   parseSync() {
-    return parseWebIDL(this.textSync());
+    return WebIDL2.parse(this.textSync());
   }
 }
 
@@ -34,16 +30,16 @@ function sortIdlFiles(files) {
   return files.filter((file) => file.endsWith(".idl")).sort();
 }
 
-export async function listAll({ folder = __dirname } = {}) {
+async function listAll({ folder = __dirname } = {}) {
   const all = {};
-  for (const file of sortIdlFiles(await readdir(folder))) {
+  for (const file of sortIdlFiles(await fs.readdir(folder))) {
     const idlFile = new IDLFile(folder, file);
     all[idlFile.shortname] = idlFile;
   }
   return all;
 }
 
-export function listAllSync({ folder = __dirname } = {}) {
+function listAllSync({ folder = __dirname } = {}) {
   const all = {};
   for (const file of sortIdlFiles(readdirSync(folder))) {
     const idlFile = new IDLFile(folder, file);
@@ -52,7 +48,7 @@ export function listAllSync({ folder = __dirname } = {}) {
   return all;
 }
 
-export async function parseAll(options) {
+async function parseAll(options) {
   const all = await listAll(options);
   for (const [key, value] of Object.entries(all)) {
     all[key] = await value.parse();
@@ -60,7 +56,7 @@ export async function parseAll(options) {
   return all;
 }
 
-export function parseAllSync(options) {
+function parseAllSync(options) {
   const all = listAllSync(options);
   for (const [key, value] of Object.entries(all)) {
     all[key] = value.parseSync();
@@ -68,4 +64,4 @@ export function parseAllSync(options) {
   return all;
 }
 
-export default { listAll, listAllSync, parseAll, parseAllSync };
+module.exports = { listAll, listAllSync, parseAll, parseAllSync };
