@@ -182,7 +182,7 @@
     {
       "name": "ruby-overhang",
       "href": "https://drafts.csswg.org/css-ruby-1/#propdef-ruby-overhang",
-      "value": "auto | none",
+      "value": "auto | spaces",
       "initial": "auto",
       "appliesTo": "ruby annotation containers",
       "inherited": "yes",
@@ -199,8 +199,15 @@
           "value": "auto"
         },
         {
+          "name": "spaces",
+          "prose": "When a ruby annotation container is longer than its corresponding ruby base container, the ruby annotation container must not overlap adjacent boxes, except over adjacent spaces. For this purpose, spaces are any of the following: preserved white space other space separators half of the advance measure of fullwidth opening punctuation, on the inline-start side of the character half of the advance measure of fullwidth closing punctuation, on the inline-end side of the character one quarter of the advance measure of fullwidth middle dot punctuation, on both the inline-start and inline-end sides of the character",
+          "href": "https://drafts.csswg.org/css-ruby-1/#valdef-ruby-overhang-spaces",
+          "type": "value",
+          "value": "spaces"
+        },
+        {
           "name": "none",
-          "prose": "A ruby annotation container is never allowed to extend past the ruby annotation container.",
+          "prose": "Additionally, for compatibility reasons, user agents must support an additional value of none for the ruby-overhang property, as a legacy value alias of spaces.",
           "href": "https://drafts.csswg.org/css-ruby-1/#valdef-ruby-overhang-none",
           "type": "value",
           "value": "none"
