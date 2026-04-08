@@ -229,7 +229,7 @@
     },
     {
       "name": "monkey patching HTTP-network-or-cache fetch",
-      "html": "<a href=\"https://fetch.spec.whatwg.org/#http-network-or-cache-fetch\"><cite>Fetch</cite> § 4.5 HTTP-network-or-cache fetch</a> will be updated by injecting the following\nstep between the existing step 13 and 14:",
+      "html": "<a href=\"https://fetch.spec.whatwg.org/#http-network-or-cache-fetch\"><cite>Fetch</cite> § 4.6 HTTP-network-or-cache fetch</a> will be updated by injecting the following\nstep between the existing step 13 and 14:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -348,21 +348,47 @@
     {
       "name": "matching integrity metadata to CSP",
       "href": "https://wicg.github.io/signature-based-sri/#abstract-opdef-perform-server-initiated-integrity-checks",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-verify-unencoded-digest-assertions\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">verify <code>Unencoded-Digest</code> assertions</dfn> given a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence③\">byte sequence</a> (<var>bytes</var>) and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④\">response</a> (<var>response</var>), execute the\nfollowing steps. They return \"<code>verified</code>\" or \"<code>failed</code>\":",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response④\">Response</a> (<var>response</var>) <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-local-lt=\"enforcable digest\" data-lt=\"contains an enforcable Unencoded-Digest header\" data-noexport=\"\" id=\"contains-an-enforcable-unencoded-digest-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">contains an enforcable\n<code>Unencoded-Digest</code> header</dfn> if the following algorithm returns <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#success\" id=\"ref-for-success\">success</a>:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>header</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header\">getting</a>\nthe `<code><a data-link-type=\"http-header\" href=\"https://www.ietf.org/archive/id/draft-ietf-httpbis-unencoded-digest-01.html#name-the-unencoded-digest-field\" id=\"ref-for-name-the-unencoded-digest-field⑧\">Unencoded-Digest</a></code>` header as a \"<a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651#name-dictionary\" id=\"ref-for-name-dictionary②\"><code>dictionary</code></a>\"\nfrom <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a>.</p>"
         },
         {
-          "html": "<p>If <var>header</var> is <code>null</code>, return \"<code>verified</code>\".</p>"
+          "html": "<p>If <var>header</var> is <code>null</code>, return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#failure\" id=\"ref-for-failure\">failure</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate①\">For each</a> <var>alg</var> → <var>digest</var> of <var>header</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate①\">For each</a> <var>alg</var> of <var>header</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-keys\" id=\"ref-for-map-getting-the-keys\">keys</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>alg</var> is not one of \"sha-256\", \"sha-384\", or \"sha-512\", then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
+              "html": "<p>If <var>alg</var> is either \"sha-256\" or \"sha-512\", return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#success\" id=\"ref-for-success①\">success</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#failure\" id=\"ref-for-failure①\">failure</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "matching integrity metadata to CSP",
+      "href": "https://wicg.github.io/signature-based-sri/#abstract-opdef-perform-server-initiated-integrity-checks",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-verify-unencoded-digest-assertions\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">verify <code>Unencoded-Digest</code> assertions</dfn> given a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence③\">byte sequence</a> (<var>bytes</var>) and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑤\">response</a> (<var>response</var>), execute the\nfollowing steps. They return \"<code>verified</code>\" or \"<code>failed</code>\":",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>header</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header①\">getting</a>\nthe `<code><a data-link-type=\"http-header\" href=\"https://www.ietf.org/archive/id/draft-ietf-httpbis-unencoded-digest-01.html#name-the-unencoded-digest-field\" id=\"ref-for-name-the-unencoded-digest-field①⓪\">Unencoded-Digest</a></code>` header as a \"<a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651#name-dictionary\" id=\"ref-for-name-dictionary③\"><code>dictionary</code></a>\"\nfrom <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list②\">header list</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>header</var> is <code>null</code>, return \"<code>verified</code>\".</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate②\">For each</a> <var>alg</var> → <var>digest</var> of <var>header</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>alg</var> is not one of \"sha-256\" or \"sha-512\", then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>.</p>"
             },
             {
               "html": "<p>Let <var>body digest</var> be the result of executing <a href=\"https://w3c.github.io/webappsec-subresource-integrity/#apply-algorithm-to-response\"><cite>SRI</cite> § 3.3.1 Apply algorithm to bytes</a>\non <var>alg</var> and <var>bytes</var>.</p>"
@@ -383,17 +409,20 @@
     {
       "name": "matching integrity metadata to CSP",
       "href": "https://wicg.github.io/signature-based-sri/#abstract-opdef-perform-server-initiated-integrity-checks",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-verify-sri-message-signature-assertions\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">verify <code>SRI</code> Message Signature assertions</dfn> given a\n<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④\">request</a> (<var>request</var>), and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑤\">response</a> (<var>response</var>), execute the\nfollowing steps. They return \"<code>verified</code>\" or \"<code>failed</code>\":",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-verify-sri-message-signature-assertions\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">verify <code>SRI</code> Message Signature assertions</dfn> given a\n<a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request④\">request</a> (<var>request</var>), and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response⑥\">response</a> (<var>response</var>), execute the\nfollowing steps. They return \"<code>verified</code>\" or \"<code>failed</code>\":",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>inputs</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header①\">getting</a>\nthe `<code><a data-link-type=\"http-header\" href=\"https://www.rfc-editor.org/rfc/rfc9421.html#name-the-signature-input-field\" id=\"ref-for-name-the-signature-input-field⑧\">Signature-Input</a></code>` header as a \"<a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651#name-dictionary\" id=\"ref-for-name-dictionary③\"><code>dictionary</code></a>\"\nfrom <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list②\">header list</a>.</p>"
+          "html": "<p>Let <var>inputs</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header②\">getting</a>\nthe `<code><a data-link-type=\"http-header\" href=\"https://www.rfc-editor.org/rfc/rfc9421.html#name-the-signature-input-field\" id=\"ref-for-name-the-signature-input-field⑧\">Signature-Input</a></code>` header as a \"<a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651#name-dictionary\" id=\"ref-for-name-dictionary④\"><code>dictionary</code></a>\"\nfrom <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list③\">header list</a>.</p>"
         },
         {
-          "html": "<p>Let <var>signatures</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header②\">getting</a>\nthe `<code><a data-link-type=\"http-header\" href=\"https://www.rfc-editor.org/rfc/rfc9421.html#name-the-signature-field\" id=\"ref-for-name-the-signature-field③\">Signature</a></code>` header as a \"<a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651#name-dictionary\" id=\"ref-for-name-dictionary④\"><code>dictionary</code></a>\" from\n<var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list③\">header list</a>.</p>"
+          "html": "<p>Let <var>signatures</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get-structured-header\" id=\"ref-for-concept-header-list-get-structured-header③\">getting</a>\nthe `<code><a data-link-type=\"http-header\" href=\"https://www.rfc-editor.org/rfc/rfc9421.html#name-the-signature-field\" id=\"ref-for-name-the-signature-field③\">Signature</a></code>` header as a \"<a data-link-type=\"dfn\" href=\"https://www.rfc-editor.org/rfc/rfc9651#name-dictionary\" id=\"ref-for-name-dictionary⑤\"><code>dictionary</code></a>\" from\n<var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list④\">header list</a>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate②\">For each</a> <var>key</var> → <var>components</var> of <var>inputs</var>:",
+          "html": "<p>If <var>response</var> does not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/signature-based-sri/#contains-an-enforcable-unencoded-digest-header\" id=\"ref-for-contains-an-enforcable-unencoded-digest-header\">contain an enforcable <code>Unencoded-Digest</code> header</a>,\nreturn \"<code>failed</code>\".</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-iterate\" id=\"ref-for-map-iterate③\">For each</a> <var>key</var> → <var>components</var> of <var>inputs</var>:",
           "rationale": "if",
           "steps": [
             {
