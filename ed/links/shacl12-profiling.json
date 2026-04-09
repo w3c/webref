@@ -7,12 +7,8 @@
     "rawlinks": {
       "http://www.opengis.net/def/geosparql/validator": {},
       "http://www.opengis.net/doc/IS/geosparql/1.1": {},
-      "http://www.w3.org/ns/shacl": {
-        "anchors": [
-          "shacl12-core-profile",
-          "shacl12-sparql-profile"
-        ]
-      },
+      "http://www.w3.org/ns/shacl-profiling.ttl": {},
+      "http://www.w3.org/ns/shacl/profile/cd1": {},
       "http://www.w3.org/ns/shacl/profile/core": {},
       "http://www.w3.org/ns/shacl/profile/node-expr": {},
       "http://www.w3.org/ns/shacl/profile/profiling": {},
@@ -28,8 +24,11 @@
       "https://github.com/w3c/data-shapes/issues/764": {},
       "https://github.com/w3c/data-shapes/issues/770": {},
       "https://github.com/w3c/data-shapes/issues/826": {},
+      "https://github.com/w3c/data-shapes/issues/827": {},
+      "https://github.com/w3c/data-shapes/issues/847": {},
       "https://github.com/w3c/data-shapes/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Profiles%22": {},
       "https://github.com/w3c/data-shapes/issues/?q=is%3Aissue+is%3Aopen+label%3A%22UCR%22": {},
+      "https://github.com/w3c/data-shapes/issues/?q=is%3Aissue+is%3Aopen+label%3A%22UI%22": {},
       "https://github.com/w3c/data-shapes/tree/gh-pages/shacl12-test-suite": {},
       "https://github.com/w3c/dx-prof/issues/56": {},
       "https://github.com/w3c/shacl-resources": {},
@@ -43,13 +42,13 @@
         ]
       },
       "https://w3c.github.io/data-shapes/shacl12-profiling/": {},
-      "https://w3c.github.io/data-shapes/shacl12-sparql/": {},
       "https://w3c.github.io/data-shapes/shacl12-ui/": {},
       "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/": {},
       "https://www.ogc.org/": {},
       "https://www.rfc-editor.org/info/bcp14": {},
       "https://www.rfc-editor.org/rfc/rfc2119": {},
       "https://www.rfc-editor.org/rfc/rfc8174": {},
+      "https://www.w3.org/2003/01/geo/": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/dx-prof/": {
         "anchors": [
@@ -57,7 +56,6 @@
           "dfn-specification",
           "Role:specification",
           "Role:validation",
-          "dfn-data-profile",
           "resource-roles-vocab",
           "Role:constraints",
           "Role:mapping"
@@ -70,14 +68,17 @@
       "https://www.w3.org/TR/prov-o/": {},
       "https://www.w3.org/TR/rdf12-concepts/": {
         "anchors": [
-          "dfn-named-graph"
+          "dfn-named-graph",
+          "dfn-iri"
         ]
       },
       "https://www.w3.org/TR/shacl12-core/": {
         "anchors": [
           "shapes-graph",
           "data-graph",
-          "dfn-shapes-graph"
+          "syntactic-variations-of-shapes-and-classes",
+          "dfn-property-shape",
+          "dfn-blank-node"
         ]
       },
       "https://www.w3.org/TR/shacl12-node-expr/": {},
