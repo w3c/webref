@@ -1,6 +1,9 @@
 // Source: WebMCP (https://webmachinelearning.github.io/webmcp/)
 dictionary ModelContextTool {
   required DOMString name;
+  // Because `title` is for display in possibly native UIs, this must be a `USVString`.
+  // See https://w3ctag.github.io/design-principles/#idl-string-types.
+  USVString title;
   required DOMString description;
   object inputSchema;
   required ToolExecuteCallback execute;
