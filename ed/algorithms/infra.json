@@ -523,15 +523,21 @@
       "rationale": "To <dfn>"
     },
     {
+      "name": "list/reverse",
+      "href": "https://infra.spec.whatwg.org/#list-reverse",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"list,stack,queue,set\" data-dfn-type=\"dfn\" data-export=\"\" id=\"list-reverse\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">reverse</dfn> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑥\">list</a> <var>list</var> is to create a new\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑦\">list</a> <var>reversed</var>, of the same designation, and, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">for each</a> <var>item</var> of <var>list</var>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-prepend\" id=\"ref-for-list-prepend①\">prepend</a> <var>item</var> to <var>reversed</var>.",
+      "rationale": "To <dfn>"
+    },
+    {
       "name": "list/sort in ascending order",
       "href": "https://infra.spec.whatwg.org/#list-sort-in-ascending-order",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"list,stack,queue,set\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"sort in ascending order|sorting in ascending order|sort|sorting\" id=\"list-sort-in-ascending-order\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sort in ascending order</dfn>\na <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑥\">list</a> <var>list</var>, with a less than algorithm <var>lessThanAlgo</var>, is to create a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑦\">list</a>\n<var>sorted</var>, containing the same <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①⑥\">items</a> as <var>list</var> but sorted so that according to\n<var>lessThanAlgo</var>, each item is less than the one following it, if any. For items that sort the same\n(i.e., for which <var>lessThanAlgo</var> returns false for both comparisons), their relative order in\n<var>sorted</var> must be the same as it was in <var>list</var>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"list,stack,queue,set\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"sort in ascending order|sorting in ascending order|sort|sorting\" id=\"list-sort-in-ascending-order\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sort in ascending order</dfn>\na <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑧\">list</a> <var>list</var>, with a less than algorithm <var>lessThanAlgo</var>, is to create a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑨\">list</a>\n<var>sorted</var>, containing the same <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①⑥\">items</a> as <var>list</var> but sorted so that according to\n<var>lessThanAlgo</var>, each item is less than the one following it, if any. For items that sort the same\n(i.e., for which <var>lessThanAlgo</var> returns false for both comparisons), their relative order in\n<var>sorted</var> must be the same as it was in <var>list</var>.",
       "rationale": "To <dfn>"
     },
     {
       "name": "list/sort in descending order",
       "href": "https://infra.spec.whatwg.org/#list-sort-in-descending-order",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"list,stack,queue,set\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"sort in descending order|sorting in descending order\" id=\"list-sort-in-descending-order\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sort in descending order</dfn>\na <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑧\">list</a> <var>list</var>, with a less than algorithm <var>lessThanAlgo</var>, is to create a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⑨\">list</a>\n<var>sorted</var>, containing the same <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①⑦\">items</a> as <var>list</var> but sorted so that according to\n<var>lessThanAlgo</var>, each item is less than the one preceding it, if any. For items that sort the same\n(i.e., for which <var>lessThanAlgo</var> returns false for both comparisons), their relative order in\n<var>sorted</var> must be the same as it was in <var>list</var>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"list,stack,queue,set\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"sort in descending order|sorting in descending order\" id=\"list-sort-in-descending-order\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">sort in descending order</dfn>\na <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④⓪\">list</a> <var>list</var>, with a less than algorithm <var>lessThanAlgo</var>, is to create a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④①\">list</a>\n<var>sorted</var>, containing the same <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①⑦\">items</a> as <var>list</var> but sorted so that according to\n<var>lessThanAlgo</var>, each item is less than the one preceding it, if any. For items that sort the same\n(i.e., for which <var>lessThanAlgo</var> returns false for both comparisons), their relative order in\n<var>sorted</var> must be the same as it was in <var>list</var>.",
       "rationale": "To <dfn>"
     },
     {
@@ -567,14 +573,14 @@
     {
       "name": "set/create",
       "href": "https://infra.spec.whatwg.org/#set-create",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"set\" data-dfn-type=\"dfn\" data-export=\"\" id=\"set-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑧\">set</a>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤②\">list</a> <var>input</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"set\" data-dfn-type=\"dfn\" data-export=\"\" id=\"set-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create</dfn> a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑧\">set</a>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤④\">list</a> <var>input</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>result</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑨\">set</a>.\n </p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>item</var> of <var>input</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②\">append</a> <var>item</var> to <var>result</var>.\n </p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>item</var> of <var>input</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②\">append</a> <var>item</var> to <var>result</var>.\n </p>"
         },
         {
           "html": "<p>Return <var>result</var>.\n</p>"
@@ -584,19 +590,19 @@
     {
       "name": "set/append",
       "href": "https://infra.spec.whatwg.org/#set-append",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"set\" data-dfn-type=\"dfn\" data-export=\"\" id=\"set-append\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append</dfn> to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①⓪\">ordered set</a>: if the set <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑤\">contains</a>\nthe given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item②②\">item</a>, then do nothing; otherwise, perform the normal <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤③\">list</a>\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⑧\">append</a> operation.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"set\" data-dfn-type=\"dfn\" data-export=\"\" id=\"set-append\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append</dfn> to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①⓪\">ordered set</a>: if the set <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑤\">contains</a>\nthe given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item②②\">item</a>, then do nothing; otherwise, perform the normal <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤⑤\">list</a>\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①⑧\">append</a> operation.",
       "rationale": "To <dfn>"
     },
     {
       "name": "set/extend",
       "href": "https://infra.spec.whatwg.org/#set-extend",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"set\" data-dfn-type=\"dfn\" data-export=\"\" id=\"set-extend\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">extend</dfn> an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①①\">ordered set</a> <var>A</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤④\">list</a> <var>B</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">for each</a>\n<var>item</var> of <var>B</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append③\">append</a> <var>item</var> to <var>A</var>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"set\" data-dfn-type=\"dfn\" data-export=\"\" id=\"set-extend\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">extend</dfn> an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①①\">ordered set</a> <var>A</var> with a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤⑥\">list</a> <var>B</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">for each</a>\n<var>item</var> of <var>B</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append③\">append</a> <var>item</var> to <var>A</var>.",
       "rationale": "To <dfn>"
     },
     {
       "name": "set/prepend",
       "href": "https://infra.spec.whatwg.org/#set-prepend",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"set\" data-dfn-type=\"dfn\" data-export=\"\" id=\"set-prepend\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">prepend</dfn> to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①②\">ordered set</a>: if the set\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contains</a> the given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item②③\">item</a>, then do nothing; otherwise, perform the\nnormal <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤⑤\">list</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-prepend\" id=\"ref-for-list-prepend③\">prepend</a> operation.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"set\" data-dfn-type=\"dfn\" data-export=\"\" id=\"set-prepend\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">prepend</dfn> to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①②\">ordered set</a>: if the set\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contains</a> the given <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item②③\">item</a>, then do nothing; otherwise, perform the\nnormal <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤⑦\">list</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-prepend\" id=\"ref-for-list-prepend④\">prepend</a> operation.",
       "rationale": "To <dfn>"
     },
     {
@@ -649,7 +655,7 @@
     {
       "name": "map/getting the values",
       "href": "https://infra.spec.whatwg.org/#map-getting-the-values",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"map\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"getting the values|get the values|values\" id=\"map-getting-the-values\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the values</dfn> of an\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④\">ordered map</a>, return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤⑥\">list</a> whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item②⑤\">items</a> are each of the\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values\">values</a> in the map’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry⑦\">entries</a>.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"map\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"getting the values|get the values|values\" id=\"map-getting-the-values\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the values</dfn> of an\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①④\">ordered map</a>, return a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤⑧\">list</a> whose <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item②⑤\">items</a> are each of the\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-getting-the-values\" id=\"ref-for-map-getting-the-values\">values</a> in the map’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\" id=\"ref-for-map-entry⑦\">entries</a>.",
       "rationale": "To <dfn>"
     },
     {
@@ -777,13 +783,13 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>result</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤⑨\">list</a>.\n\n    </p>"
+              "html": "<p>Let <var>result</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥①\">list</a>.\n\n    </p>"
             },
             {
               "html": "<p>Let <var>length</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-tolength\" id=\"ref-for-sec-tolength\">ToLength</a>(! <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-get-o-p\" id=\"ref-for-sec-get-o-p\">Get</a>(<var>jsValue</var>, \"<code>length</code>\")).\n\n    </p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For each</a> <var>index</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①\">the range</a> 0 to <var>length</var> − 1, inclusive:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For each</a> <var>index</var> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#the-range\" id=\"ref-for-the-range①\">the range</a> 0 to <var>length</var> − 1, inclusive:",
               "rationale": "let",
               "steps": [
                 {
@@ -809,7 +815,7 @@
           "html": "<p>Let <var>result</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑦\">ordered map</a>.\n\n </p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For each</a> <var>key</var> of ! <var>jsValue</var>.[[OwnPropertyKeys]]():",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> <var>key</var> of ! <var>jsValue</var>.[[OwnPropertyKeys]]():",
           "rationale": "let",
           "steps": [
             {
@@ -831,7 +837,7 @@
     {
       "name": "serialize an Infra value to a JSON string",
       "href": "https://infra.spec.whatwg.org/#serialize-an-infra-value-to-a-json-string",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-an-infra-value-to-a-json-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize an Infra value to a JSON string</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦④\">string</a>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean③\">boolean</a>, number, null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥⓪\">list</a>, or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦⑤\">string</a>-keyed <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑧\">map</a> <var>value</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-an-infra-value-to-a-json-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize an Infra value to a JSON string</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦④\">string</a>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean③\">boolean</a>, number, null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥②\">list</a>, or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦⑤\">string</a>-keyed <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑧\">map</a> <var>value</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -845,7 +851,7 @@
     {
       "name": "serialize an Infra value to JSON bytes",
       "href": "https://infra.spec.whatwg.org/#serialize-an-infra-value-to-json-bytes",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-an-infra-value-to-json-bytes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize an Infra value to JSON bytes</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦⑥\">string</a>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean④\">boolean</a>, number, null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥①\">list</a>, or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦⑦\">string</a>-keyed <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑨\">map</a> <var>value</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-an-infra-value-to-json-bytes\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize an Infra value to JSON bytes</dfn>, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦⑥\">string</a>,\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean④\">boolean</a>, number, null, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥③\">list</a>, or <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦⑦\">string</a>-keyed <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②⑨\">map</a> <var>value</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -866,7 +872,7 @@
           "html": "<p>If <var>value</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦⑧\">string</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑤\">boolean</a>, number, or null, then return <var>value</var>.\n\n </p>"
         },
         {
-          "html": "If <var>value</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥②\">list</a>:",
+          "html": "If <var>value</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥④\">list</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -876,7 +882,7 @@
               "html": "<p>Let <var>i</var> be 0.\n\n   </p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> <var>listItem</var> of <var>value</var>:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>listItem</var> of <var>value</var>:",
               "rationale": "let",
               "steps": [
                 {
@@ -902,7 +908,7 @@
           "html": "<p>Let <var>jsValue</var> be ! <a data-link-type=\"abstract-op\" href=\"https://tc39.github.io/ecma262/#sec-ordinaryobjectcreate\" id=\"ref-for-sec-ordinaryobjectcreate\">OrdinaryObjectCreate</a>(null).\n\n </p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>mapKey</var> → <var>mapValue</var> of <var>value</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>mapKey</var> → <var>mapValue</var> of <var>value</var>:",
           "rationale": "assert",
           "steps": [
             {
