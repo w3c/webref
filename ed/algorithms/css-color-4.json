@@ -197,14 +197,41 @@
       ]
     },
     {
-      "html": "Interpolation between two <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-4/#typedef-color\" id=\"ref-for-typedef-color①⑧\">&lt;color&gt;</a> values\n\ttakes place by executing the following steps:",
+      "html": "Given two <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-4/#typedef-color\" id=\"ref-for-typedef-color②⓪\">&lt;color&gt;</a> values <var>C1</var> and <var>C2</var>,\n\tthey are <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#equivalent-colors\" id=\"ref-for-equivalent-colors\">equivalent colors</a> if and only if\n\tthe following algorithm returns true:",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each of <var>C1</var> and <var>C2</var>,\n\t\t\tconvert any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#powerless-color-component\" id=\"ref-for-powerless-color-component①④\">powerless component</a>s to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component①⓪\">missing component</a>s."
+        },
+        {
+          "html": "If <var>C1</var> and <var>C2</var> share the same <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-4/#typedef-color-space\" id=\"ref-for-typedef-color-space\">&lt;color-space&gt;</a>:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "Compare their components one by one,\n\t\t\t\t\tincluding the alpha channel.\n\t\t\t\t\tA <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component①①\">missing component</a> is only equal to\n\t\t\t\t\tanother <span id=\"ref-for-missing-color-component①②\">missing component</span>.\n\t\t\t\t\tTwo numeric components are considered equal\n\t\t\t\t\tif they differ by no more than a small\n\t\t\t\t\timplementation-defined ε."
+            },
+            {
+              "html": "Return true if and only if\n\t\t\t\t\tall components compare as equal."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, <var>C1</var> and <var>C2</var> are in different <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-4/#typedef-color-space\" id=\"ref-for-typedef-color-space①\">&lt;color-space&gt;</a>s.\n\t\t\tIf either color has at least one <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component①③\">missing component</a>,\n\t\t\treturn false."
+        },
+        {
+          "html": "Otherwise, neither color has any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component①④\">missing component</a>.\n\t\t\tConvert both <var>C1</var> and <var>C2</var> to <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-oklab-oklab\" id=\"ref-for-valdef-oklab-oklab①\">oklab</a>,\n\t\t\tthen return true if and only if\n\t\t\tall components (including alpha) of the converted colors\n\t\t\tcompare as equal,\n\t\t\tusing an implementation-defined ε as in step 2."
+        }
+      ]
+    },
+    {
+      "html": "Interpolation between two <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-4/#typedef-color\" id=\"ref-for-typedef-color②①\">&lt;color&gt;</a> values\n\ttakes place by executing the following steps:",
       "rationale": "prepare",
       "steps": [
         {
           "html": "checking the two colors for <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#analogous-components\" id=\"ref-for-analogous-components\">analogous components</a>\n\t\t\tand <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#analogous-set\" id=\"ref-for-analogous-set\">analogous sets</a>\n\t\t\twhich will be <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"carried-forward\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">carried forward</dfn>"
         },
         {
-          "html": "prepare both colors for conversion.\n\t\t\tthis changes any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#powerless-color-component\" id=\"ref-for-powerless-color-component①④\">powerless</a> components to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component①⓪\">missing</a> values"
+          "html": "prepare both colors for conversion.\n\t\t\tthis changes any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#powerless-color-component\" id=\"ref-for-powerless-color-component①⑤\">powerless</a> components to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component①⑤\">missing</a> values"
         },
         {
           "html": "converting them both to a given color space\n\t\t\twhich will be referred to as the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"interpolation-color-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">interpolation color space</dfn> below."
@@ -348,7 +375,7 @@
     {
       "name": "to gamut map a color by Ray Tracing",
       "href": "https://drafts.csswg.org/css-color-4/#ray-trace-gamut-map",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"ray-trace-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Ray Trace Gamut Map</dfn> a color <var>origin</var>\n\tin color space <var>origin color space</var>\n\tto be in gamut of an RGB destination color space <var>destination</var>:\n\n\t\n    \n    <div class=\"algorithm\" data-algorithm=\"to cast a ray\">\n     \n\t\tTo <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"cast-a-ray\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cast a ray</dfn> through a linear-light RGB space\n\t\tfrom <var>start</var> to <var>end</var>\n\t\t(in gamut mapping,\n\t\t<var>start</var> is an anchor within the RGB gamut\n\t\tand <var>end</var> is the gamut mapped color, on the cubical gamut surface):\n\n\t\n     \n    </div>\n    <h5 class=\"heading settled\" data-level=\"13.2.6.1\" id=\"raytrace-footnotes\"><span class=\"secno\">13.2.6.1. </span><span class=\"content\">Footnotes for Ray Trace algorithm</span><a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnotes\"></a></h5>",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"ray-trace-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Ray Trace Gamut Map</dfn> a color <var>origin</var>\n\tin color space <var>origin color space</var>\n\tto be in gamut of an RGB destination color space <var>destination</var>:\n\n\t\n    \n    <div class=\"algorithm\" data-algorithm=\"to cast a ray\">\n     \n\t\tTo <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"cast-a-ray\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cast a ray</dfn> through a linear-light RGB space\n\t\tfrom <var>start</var> to <var>end</var>\n\t\t(in gamut mapping,\n\t\t<var>start</var> is an anchor within the RGB gamut\n\t\tand <var>end</var> is the gamut mapped color, on the cubical gamut surface):\n\n\t\n     \n    </div>\n    <h5 class=\"heading settled\" data-level=\"14.2.6.1\" id=\"raytrace-footnotes\"><span class=\"secno\">14.2.6.1. </span><span class=\"content\">Footnotes for Ray Trace algorithm</span><a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnotes\"></a></h5>",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -430,7 +457,7 @@
     {
       "name": "to gamut map a color by Ray Tracing",
       "href": "https://drafts.csswg.org/css-color-4/#ray-trace-gamut-map",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"ray-trace-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Ray Trace Gamut Map</dfn> a color <var>origin</var>\n\tin color space <var>origin color space</var>\n\tto be in gamut of an RGB destination color space <var>destination</var>:\n\n\t\n    \n    <div class=\"algorithm\" data-algorithm=\"to cast a ray\">\n     \n\t\tTo <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"cast-a-ray\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cast a ray</dfn> through a linear-light RGB space\n\t\tfrom <var>start</var> to <var>end</var>\n\t\t(in gamut mapping,\n\t\t<var>start</var> is an anchor within the RGB gamut\n\t\tand <var>end</var> is the gamut mapped color, on the cubical gamut surface):\n\n\t\n     \n    </div>\n    <h5 class=\"heading settled\" data-level=\"13.2.6.1\" id=\"raytrace-footnotes\"><span class=\"secno\">13.2.6.1. </span><span class=\"content\">Footnotes for Ray Trace algorithm</span><a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnotes\"></a></h5>",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"ray-trace-gamut-map\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">Ray Trace Gamut Map</dfn> a color <var>origin</var>\n\tin color space <var>origin color space</var>\n\tto be in gamut of an RGB destination color space <var>destination</var>:\n\n\t\n    \n    <div class=\"algorithm\" data-algorithm=\"to cast a ray\">\n     \n\t\tTo <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"cast-a-ray\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">cast a ray</dfn> through a linear-light RGB space\n\t\tfrom <var>start</var> to <var>end</var>\n\t\t(in gamut mapping,\n\t\t<var>start</var> is an anchor within the RGB gamut\n\t\tand <var>end</var> is the gamut mapped color, on the cubical gamut surface):\n\n\t\n     \n    </div>\n    <h5 class=\"heading settled\" data-level=\"14.2.6.1\" id=\"raytrace-footnotes\"><span class=\"secno\">14.2.6.1. </span><span class=\"content\">Footnotes for Ray Trace algorithm</span><a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnotes\"></a></h5>",
       "rationale": "for",
       "steps": [
         {
