@@ -2698,7 +2698,7 @@
           "html": "<p>Let <var>frame</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videoframe\" id=\"ref-for-videoframe④①\">VideoFrame</a></code>.</p>"
         },
         {
-          "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://svgwg.org/svg2-draft/embedded.html#InterfaceSVGImageElement\" id=\"ref-for-InterfaceSVGImageElement\">SVGImageElement</a></code>",
+          "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/svgwg/svg2-draft/embedded.html#InterfaceSVGImageElement\" id=\"ref-for-InterfaceSVGImageElement\">SVGImageElement</a></code>",
           "rationale": "if",
           "steps": [
             {
@@ -4340,7 +4340,16 @@
           "html": "<p>Let <var>p</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-promise\" id=\"ref-for-idl-promise①⑦\">Promise</a></code>.</p>"
         },
         {
-          "html": "<p>In parallel, resolve <var>p</var> with the result of running the\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-check-type-support\" id=\"ref-for-imagedecoder-check-type-support①\">Check Type Support</a> algorithm with <var>type</var>.</p>"
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>isSupported</var> be the result of running the\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-check-type-support\" id=\"ref-for-imagedecoder-check-type-support①\">Check Type Support</a> algorithm with <var>type</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③⑨\">Queue a task</a> to resolve <var>p</var> with <var>isSupported</var>.</p>"
+            }
+          ]
         },
         {
           "html": "<p>Return <var>p</var>.</p>"
@@ -4361,7 +4370,7 @@
               "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-closed-slot\" id=\"ref-for-dom-imagedecoder-closed-slot②\">[[closed]]</a></code> is <code>true</code>, abort these steps.</p>"
             },
             {
-              "html": "<p>If <var>chunk</var> is not a Uint8Array object, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task③⑨\">queue a task</a> to run\nthe <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-close-imagedecoder\" id=\"ref-for-imagedecoder-close-imagedecoder②\">Close ImageDecoder</a> algorithm with a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dataerror\" id=\"ref-for-dataerror⑤\">DataError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤⓪\">DOMException</a></code> and abort these steps.</p>"
+              "html": "<p>If <var>chunk</var> is not a Uint8Array object, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④⓪\">queue a task</a> to run\nthe <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-close-imagedecoder\" id=\"ref-for-imagedecoder-close-imagedecoder②\">Close ImageDecoder</a> algorithm with a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#dataerror\" id=\"ref-for-dataerror⑤\">DataError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤⓪\">DOMException</a></code> and abort these steps.</p>"
             },
             {
               "html": "<p>Let <var>bytes</var> be the byte sequence represented by the Uint8Array\nobject.</p>"
@@ -4397,7 +4406,7 @@
               "rationale": "queue",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④⓪\">Queue a task</a> to run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-close-imagedecoder\" id=\"ref-for-imagedecoder-close-imagedecoder③\">Close ImageDecoder</a>\nalgorithm with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notreadableerror\" id=\"ref-for-notreadableerror\">NotReadableError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤①\">DOMException</a></code></p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④①\">Queue a task</a> to run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-close-imagedecoder\" id=\"ref-for-imagedecoder-close-imagedecoder③\">Close ImageDecoder</a>\nalgorithm with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notreadableerror\" id=\"ref-for-notreadableerror\">NotReadableError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤①\">DOMException</a></code></p>"
                 }
               ]
             }
@@ -4422,7 +4431,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-complete\" id=\"ref-for-dom-imagedecoder-complete③\">complete</a></code> is <code>true</code>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④①\">queue a task</a> to run the\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-close-imagedecoder\" id=\"ref-for-imagedecoder-close-imagedecoder④\">Close ImageDecoder</a> algorithm with a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②⑧\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤②\">DOMException</a></code>.</p>"
+              "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-complete\" id=\"ref-for-dom-imagedecoder-complete③\">complete</a></code> is <code>true</code>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④②\">queue a task</a> to run the\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-close-imagedecoder\" id=\"ref-for-imagedecoder-close-imagedecoder④\">Close ImageDecoder</a> algorithm with a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②⑧\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤②\">DOMException</a></code>.</p>"
             },
             {
               "html": "<p>Abort these steps.</p>"
@@ -4430,7 +4439,7 @@
           ]
         },
         {
-          "html": "<p>If the number of tracks is found to be <code>0</code>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④②\">queue a task</a> to run the\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-close-imagedecoder\" id=\"ref-for-imagedecoder-close-imagedecoder⑤\">Close ImageDecoder</a> algorithm and abort these steps.</p>"
+          "html": "<p>If the number of tracks is found to be <code>0</code>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④③\">queue a task</a> to run the\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#imagedecoder-close-imagedecoder\" id=\"ref-for-imagedecoder-close-imagedecoder⑤\">Close ImageDecoder</a> algorithm and abort these steps.</p>"
         },
         {
           "html": "<p>Let <var>newTrackList</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑨\">list</a>.</p>"
@@ -4484,7 +4493,7 @@
           "html": "<p>Assign <code>true</code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-tracks-established-slot\" id=\"ref-for-dom-imagedecoder-tracks-established-slot④\">[[tracks established]]</a></code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④③\">Queue a task</a> to perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④④\">Queue a task</a> to perform the following steps:",
           "rationale": "assign",
           "steps": [
             {
@@ -4578,7 +4587,7 @@
           "html": "<p>If <var>tracksChanges</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is empty</a>, abort these steps.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④④\">Queue a task</a> to perform the following steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④⑤\">Queue a task</a> to perform the following steps:",
           "rationale": "for",
           "steps": [
             {
@@ -4815,7 +4824,7 @@
       "rationale": "queue",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④⑤\">Queue a task</a> to perform these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④⑥\">Queue a task</a> to perform these steps:",
           "rationale": "if",
           "steps": [
             {
@@ -4847,7 +4856,7 @@
           "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-imagedecoder-complete\" id=\"ref-for-dom-imagedecoder-complete⑦\">complete</a></code> is <code>true</code>, let <var>exception</var> be a\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror⑤\">RangeError</a></code>. Otherwise, let <var>exception</var> be an\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②⑨\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤③\">DOMException</a></code>.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④⑥\">Queue a task</a> to perform these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④⑦\">Queue a task</a> to perform these steps:",
           "rationale": "if",
           "steps": [
             {
@@ -4873,7 +4882,7 @@
       "rationale": "queue",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④⑦\">Queue a task</a> to perform these steps:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task④⑧\">Queue a task</a> to perform these steps:",
           "rationale": "if",
           "steps": [
             {
