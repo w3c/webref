@@ -7,7 +7,7 @@
     {
       "name": "check soft navigation",
       "href": "https://wicg.github.io/soft-navigations/#check-soft-navigation",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-soft-navigation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check soft navigation</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, with a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">Document</a> <var>document</var>, run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-soft-navigation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check soft navigation</dfn>, with a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#clone-a-node-document\" id=\"ref-for-clone-a-node-document\">Document</a> <var>document</var>, run the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -39,7 +39,7 @@
     {
       "name": "check soft navigation",
       "href": "https://wicg.github.io/soft-navigations/#check-soft-navigation",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-soft-navigation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check soft navigation</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, with a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document\">Document</a> <var>document</var>, run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-soft-navigation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check soft navigation</dfn>, with a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#clone-a-node-document\" id=\"ref-for-clone-a-node-document\">Document</a> <var>document</var>, run the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -71,14 +71,14 @@
     {
       "name": "emit soft navigation entry",
       "href": "https://wicg.github.io/soft-navigations/#emit-soft-navigation-entry",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"emit-soft-navigation-entry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">emit soft navigation entry</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, with a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①\">global object</a> <var>global</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/soft-navigations/#softnavigationentry\" id=\"ref-for-softnavigationentry①\">SoftNavigationEntry</a></code> <var>entry</var>, run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"emit-soft-navigation-entry\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">emit soft navigation entry</dfn>, with a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#global-object\" id=\"ref-for-global-object①\">global object</a> <var>global</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/soft-navigations/#softnavigationentry\" id=\"ref-for-softnavigationentry①\">SoftNavigationEntry</a></code> <var>entry</var>, run the following steps:",
       "rationale": "queue",
       "steps": [
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry\" id=\"ref-for-dfn-queue-a-performanceentry①\">Queue</a> <var>entry</var>.</p>"
         },
         {
-          "html": "<p>Add <var>entry</var> to <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-performance-entry-buffer\" id=\"ref-for-dfn-performance-entry-buffer\">performance entry buffer</a>.</p>"
+          "html": "<p>Add <var>entry</var> to <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#performance-entry-buffer\" id=\"ref-for-performance-entry-buffer\">performance entry buffer</a>.</p>"
         },
         {
           "html": "<p>Set <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/largest-contentful-paint/#has-dispatched-scroll-event\" id=\"ref-for-has-dispatched-scroll-event\">has dispatched scroll event</a> and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#has-dispatched-input-event\" id=\"ref-for-has-dispatched-input-event\">has dispatched input event</a> to false.</p>"
@@ -103,7 +103,7 @@
     {
       "name": "get current interaction data",
       "href": "https://wicg.github.io/soft-navigations/#get-current-interaction-data",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-current-interaction-data\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get current interaction data</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①\">Document</a> <var>document</var>, run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-current-interaction-data\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get current interaction data</dfn>, given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#clone-a-node-document\" id=\"ref-for-clone-a-node-document①\">Document</a> <var>document</var>, run the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -123,7 +123,7 @@
     {
       "name": "handle event callback",
       "href": "https://wicg.github.io/soft-navigations/#handle-event-callback",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-event-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle event callback</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#eventtarget\" id=\"ref-for-eventtarget\">EventTarget</a></code> <var>target</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a> <var>event type</var>, run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"handle-event-callback\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">handle event callback</dfn>, given an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#eventtarget\" id=\"ref-for-eventtarget\">EventTarget</a></code> <var>target</var> and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a> <var>event type</var>, run the following steps:",
       "rationale": "let",
       "steps": [
         {
@@ -136,7 +136,7 @@
           "html": "<p>Let <var>is click</var> be true if <var>event type</var> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-equals\" id=\"ref-for-concept-node-equals\">equals</a> \"click\", and false otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>is keyboard</var> be true if <var>target</var> is an {{HTMLBodyElement} and <var>event type</var> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-equals\" id=\"ref-for-concept-node-equals①\">equals</a> \"keydown\", \"keyup\" or \"keypress\", and false otherwise.</p>"
+          "html": "<p>Let <var>is keyboard</var> be true if <var>target</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/sections.html#htmlbodyelement\" id=\"ref-for-htmlbodyelement\">HTMLBodyElement</a></code> and <var>event type</var> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-equals\" id=\"ref-for-concept-node-equals①\">equals</a> \"keydown\", \"keyup\" or \"keypress\", and false otherwise.</p>"
         },
         {
           "html": "<p>Let <var>is navigation</var> be true if <var>event type</var> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-equals\" id=\"ref-for-concept-node-equals②\">equals</a> \"navigate\", and false otherwise.</p>"
@@ -182,7 +182,7 @@
     {
       "name": "terminate event callback handling",
       "href": "https://wicg.github.io/soft-navigations/#terminate-event-callback-handling",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"terminate-event-callback-handling\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">terminate event callback handling</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">Document</a> <var>document</var> and null or <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interaction-data\" id=\"ref-for-interaction-data①\">interaction data</a> <var>interaction data</var>, run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"terminate-event-callback-handling\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">terminate event callback handling</dfn>, given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#clone-a-node-document\" id=\"ref-for-clone-a-node-document②\">Document</a> <var>document</var> and null or <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interaction-data\" id=\"ref-for-interaction-data①\">interaction data</a> <var>interaction data</var>, run the following steps:",
       "rationale": "set",
       "steps": [
         {
@@ -193,14 +193,14 @@
     {
       "name": "check soft navigation same document commit",
       "href": "https://wicg.github.io/soft-navigations/#check-soft-navigation-same-document-commit",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-soft-navigation-same-document-commit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check soft navigation same document commit</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> <var>url</var>, run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-soft-navigation-same-document-commit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check soft navigation same document commit</dfn>, with <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a> <var>url</var>, run the following steps:",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>interaction data</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#get-current-interaction-data\" id=\"ref-for-get-current-interaction-data①\">get current interaction data</a> with <var>document</var>.</p>"
         },
         {
-          "html": "<p>Let <var>is soft navigation same document commit</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#check-ancestor-set-for-task\" id=\"ref-for-check-ancestor-set-for-task\">Check ancestor set for task</a> given <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#document-potential-soft-navigation-task-ids\" id=\"ref-for-document-potential-soft-navigation-task-ids①\">potential soft navigation task ids</a>.</p>"
+          "html": "<p>Let <var>is soft navigation same document commit</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#check-ancestor-set-for-task\" id=\"ref-for-check-ancestor-set-for-task\">Check ancestor set for task</a> given\n<var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#document-potential-soft-navigation-task-ids\" id=\"ref-for-document-potential-soft-navigation-task-ids①\">potential soft navigation task ids</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set②\">Set</a> <var>interaction data</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interaction-data-same-document-commit\" id=\"ref-for-interaction-data-same-document-commit①\">same document commit</a> to <var>is soft navigation same document commit</var>.</p>"
@@ -216,17 +216,20 @@
     {
       "name": "check soft navigation contentful paint",
       "href": "https://wicg.github.io/soft-navigations/#check-soft-navigation-contentful-paint",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-soft-navigation-contentful-paint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check soft navigation contentful paint</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, with <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element\">Element</a> <var>element</var> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document③\">Document</a> <var>document</var>, run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-soft-navigation-contentful-paint\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check soft navigation contentful paint</dfn>, with <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element\">Element</a> <var>element</var> and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#clone-a-node-document\" id=\"ref-for-clone-a-node-document③\">Document</a> <var>document</var>, run the following steps:",
       "rationale": "let",
       "steps": [
         {
           "html": "<p>Let <var>interaction data</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#get-current-interaction-data\" id=\"ref-for-get-current-interaction-data②\">get current interaction data</a> with <var>document</var>.</p>"
         },
         {
-          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#node-appended-by-soft-navigation\" id=\"ref-for-node-appended-by-soft-navigation\">appended by soft navigation</a> is true, set <var>interaction data</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interaction-data-contentful-paint\" id=\"ref-for-interaction-data-contentful-paint①\">contentful paint</a> to true.</p>"
+          "html": "<p>If <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#node-appended-by-soft-navigation\" id=\"ref-for-node-appended-by-soft-navigation\">appended by soft navigation</a> is true, set <var>interaction data</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interaction-data-contentful-paint\" id=\"ref-for-interaction-data-contentful-paint①\">contentful paint</a> to true.\nOtherwise, if <var>interaction data</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interaction-data-emitted\" id=\"ref-for-interaction-data-emitted①\">emitted</a> is false, return false.</p>"
         },
         {
           "html": "<p>Call <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#check-soft-navigation\" id=\"ref-for-check-soft-navigation①\">check soft navigation</a> with <var>document</var>.</p>"
+        },
+        {
+          "html": "<p>Return true.</p>"
         }
       ]
     },
@@ -262,7 +265,7 @@
           "html": "<p>Let <var>doc</var> be <var>parent</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>.</p>"
         },
         {
-          "html": "<p>Let <var>is soft navigation append</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#check-ancestor-for-task\" id=\"ref-for-check-ancestor-for-task\">Check ancestor for task</a> with the <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#document-potential-soft-navigation-task-ids\" id=\"ref-for-document-potential-soft-navigation-task-ids②\">potential soft navigation task id</a> and the result of calling <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#get-current-task-id\" id=\"ref-for-get-current-task-id②\">get current task ID</a>.</p>"
+          "html": "<p>Let <var>is soft navigation append</var> be the result of running <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#check-ancestor-for-task\" id=\"ref-for-check-ancestor-for-task\">Check ancestor for task</a>\nwith the <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#document-potential-soft-navigation-task-ids\" id=\"ref-for-document-potential-soft-navigation-task-ids②\">potential soft navigation task id</a> and the result of calling <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#get-current-task-id\" id=\"ref-for-get-current-task-id②\">get current task ID</a>.</p>"
         },
         {
           "html": "<p>Set <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#node-appended-by-soft-navigation\" id=\"ref-for-node-appended-by-soft-navigation①\">appended by soft navigation</a> to <var>is soft navigation append</var>.</p>"
@@ -271,17 +274,17 @@
     },
     {
       "html": "At <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-insert\" id=\"ref-for-concept-node-insert\">node insert</a>, add these initial steps:",
-      "rationale": "call",
+      "rationale": "if",
       "steps": [
         {
-          "html": "<p>Call <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#check-soft-navigation-contentful-paint\" id=\"ref-for-check-soft-navigation-contentful-paint\">check soft navigation contentful paint</a> with <var>element</var> and <var>document</var>.</p>"
+          "html": "<p>If the result of calling <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#check-soft-navigation-contentful-paint\" id=\"ref-for-check-soft-navigation-contentful-paint\">check soft navigation contentful paint</a> with <var>element</var> and <var>document</var> is false, return.</p>"
         }
       ]
     },
     {
       "name": "create a task scope",
       "href": "https://wicg.github.io/soft-navigations/#create-a-task-scope",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-task-scope\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a task scope</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given an optional <var>parent task</var>, a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task①\">task</a>, do the following:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-task-scope\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a task scope</dfn>, given an optional <var>parent task</var>, a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task①\">task</a>, do the following:",
       "rationale": "let",
       "steps": [
         {
@@ -300,25 +303,25 @@
           "html": "<p>Set <var>scope</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#task-scope-task\" id=\"ref-for-task-scope-task\">task</a> to <var>task</var>.</p>"
         },
         {
-          "html": "<p>Push <var>scope</var> to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent\" id=\"ref-for-relevant-agent\">relevant agent</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop\" id=\"ref-for-concept-agent-event-loop\">event loop</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#task-scope-stack\" id=\"ref-for-task-scope-stack\">task scope stack</a>.</p>"
+          "html": "<p>Push <var>scope</var> to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent\" id=\"ref-for-relevant-agent\">relevant agent</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop\" id=\"ref-for-concept-agent-event-loop\">event loop</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#task-scope-stack\" id=\"ref-for-task-scope-stack\">task scope stack</a>.</p>"
         }
       ]
     },
     {
       "name": "tear down a task scope",
       "href": "https://wicg.github.io/soft-navigations/#tear-down-a-task-scope",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tear-down-a-task-scope\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tear down a task scope</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, do the following:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tear-down-a-task-scope\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tear down a task scope</dfn>, do the following:",
       "rationale": "pop",
       "steps": [
         {
-          "html": "<p>Pop <var>scope</var> from the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent\" id=\"ref-for-relevant-agent①\">relevant agent</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop\" id=\"ref-for-concept-agent-event-loop①\">event loop</a>'s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#task-scope-stack\" id=\"ref-for-task-scope-stack①\">task scope stack</a></p>"
+          "html": "<p>Pop <var>scope</var> from the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent\" id=\"ref-for-relevant-agent①\">relevant agent</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop\" id=\"ref-for-concept-agent-event-loop①\">event loop</a>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#task-scope-stack\" id=\"ref-for-task-scope-stack①\">task scope stack</a></p>"
         }
       ]
     },
     {
       "name": "tear down a task scope",
       "href": "https://wicg.github.io/soft-navigations/#tear-down-a-task-scope",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tear-down-a-task-scope\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tear down a task scope</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, do the following:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"tear-down-a-task-scope\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">tear down a task scope</dfn>, do the following:",
       "rationale": "let",
       "steps": [
         {
@@ -347,7 +350,7 @@
     {
       "name": "check ancestor set for task",
       "href": "https://wicg.github.io/soft-navigations/#check-ancestor-set-for-task",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"check-ancestor-set-for-task\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check ancestor set for task</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <var>ancestor id set</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#task-task-attribution-id\" id=\"ref-for-task-task-attribution-id⑤\">task attribution ID</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a>, run the following:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"check-ancestor-set-for-task\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check ancestor set for task</dfn>, given <var>ancestor id set</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#task-task-attribution-id\" id=\"ref-for-task-task-attribution-id⑤\">task attribution ID</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a>, run the following:",
       "rationale": "let",
       "steps": [
         {
@@ -376,11 +379,11 @@
     {
       "name": "check ancestor set for task",
       "href": "https://wicg.github.io/soft-navigations/#check-ancestor-set-for-task",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"check-ancestor-set-for-task\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check ancestor set for task</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <var>ancestor id set</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#task-task-attribution-id\" id=\"ref-for-task-task-attribution-id⑤\">task attribution ID</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a>, run the following:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"check-ancestor-set-for-task\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check ancestor set for task</dfn>, given <var>ancestor id set</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#task-task-attribution-id\" id=\"ref-for-task-task-attribution-id⑤\">task attribution ID</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a>, run the following:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>event loop</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent\" id=\"ref-for-relevant-agent②\">relevant agent</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop\" id=\"ref-for-concept-agent-event-loop②\">event loop</a>.</p>"
+          "html": "<p>Let <var>event loop</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-agent\" id=\"ref-for-relevant-agent②\">relevant agent</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop\" id=\"ref-for-concept-agent-event-loop②\">event loop</a>.</p>"
         },
         {
           "html": "<p>Let <var>scope</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#stack-peek\" id=\"ref-for-stack-peek\">peeking</a> into the <var>event loop</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#task-scope-stack\" id=\"ref-for-task-scope-stack②\">task scope stack</a>.</p>"
@@ -393,7 +396,7 @@
     {
       "name": "check ancestor set for task",
       "href": "https://wicg.github.io/soft-navigations/#check-ancestor-set-for-task",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"check-ancestor-set-for-task\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check ancestor set for task</dfn><span style=\"position: relative; height: 0px;\"></span><span style=\"position: relative; height: 0px;\"></span>, given <var>ancestor id set</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#task-task-attribution-id\" id=\"ref-for-task-task-attribution-id⑤\">task attribution ID</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a>, run the following:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"check-ancestor-set-for-task\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check ancestor set for task</dfn>, given <var>ancestor id set</var>, a <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#task-task-attribution-id\" id=\"ref-for-task-task-attribution-id⑤\">task attribution ID</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a>, run the following:",
       "rationale": "let",
       "steps": [
         {
@@ -481,7 +484,7 @@
           "html": "<p>Let <var>task</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#get-current-task\" id=\"ref-for-get-current-task⑥\">getting current task</a>.</p>"
         },
         {
-          "html": "<p>Let <var>callable</var>’s [=callback function/parent task|  be <var>task</var>.</p>"
+          "html": "<p>Let <var>callable</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#callback-function-parent-task\" id=\"ref-for-callback-function-parent-task③\">parent task</a>  be <var>task</var>.</p>"
         }
       ]
     },
@@ -490,7 +493,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>task</var> be <var>callback</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#callback-function-parent-task\" id=\"ref-for-callback-function-parent-task③\">parent task</a>.</p>"
+          "html": "<p>Let <var>task</var> be <var>callback</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#callback-function-parent-task\" id=\"ref-for-callback-function-parent-task④\">parent task</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#create-a-task-scope\" id=\"ref-for-create-a-task-scope⑤\">create a task scope</a> with <var>task</var> if set, and with nothing otherwise.</p>"
@@ -529,7 +532,7 @@
       "rationale": "set",
       "steps": [
         {
-          "html": "<p>Set updateCallback’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#callback-function-parent-task\" id=\"ref-for-callback-function-parent-task④\">parent task</a> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#get-current-task\" id=\"ref-for-get-current-task①①\">getting current task</a>.</p>"
+          "html": "<p>Set updateCallback’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#callback-function-parent-task\" id=\"ref-for-callback-function-parent-task⑤\">parent task</a> to the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#get-current-task\" id=\"ref-for-get-current-task①①\">getting current task</a>.</p>"
         }
       ]
     }
