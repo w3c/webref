@@ -4638,7 +4638,7 @@
         "href": "https://html.spec.whatwg.org/multipage/embedded-content.html#htmlsourceelement"
       },
       "HTMLImageElement": {
-        "fragment": "[Exposed=Window,\n LegacyFactoryFunction=Image(optional unsigned long width, optional unsigned long height)]\ninterface HTMLImageElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, Reflect] attribute DOMString alt;\n  [CEReactions, ReflectURL] attribute USVString src;\n  [CEReactions, Reflect] attribute USVString srcset;\n  [CEReactions, Reflect] attribute DOMString sizes;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions, Reflect] attribute DOMString useMap;\n  [CEReactions, Reflect] attribute boolean isMap;\n  [CEReactions, ReflectSetter] attribute unsigned long width;\n  [CEReactions, ReflectSetter] attribute unsigned long height;\n  readonly attribute unsigned long naturalWidth;\n  readonly attribute unsigned long naturalHeight;\n  readonly attribute boolean complete;\n  readonly attribute USVString currentSrc;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMString decoding;\n  [CEReactions] attribute DOMString loading;\n  [CEReactions] attribute DOMString fetchPriority;\n\n  Promise<undefined> decode();\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window,\n LegacyFactoryFunction=Image(optional unsigned long width, optional unsigned long height)]\ninterface HTMLImageElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, Reflect] attribute DOMString alt;\n  [CEReactions, ReflectURL] attribute USVString src;\n  [CEReactions, Reflect] attribute USVString srcset;\n  [CEReactions, Reflect] attribute DOMString sizes;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions, Reflect] attribute DOMString useMap;\n  [CEReactions, Reflect] attribute boolean isMap;\n  [CEReactions, Reflect] attribute boolean controls;\n  [CEReactions, ReflectSetter] attribute unsigned long width;\n  [CEReactions, ReflectSetter] attribute unsigned long height;\n  readonly attribute unsigned long naturalWidth;\n  readonly attribute unsigned long naturalHeight;\n  readonly attribute boolean complete;\n  readonly attribute USVString currentSrc;\n  [CEReactions] attribute DOMString referrerPolicy;\n  [CEReactions] attribute DOMString decoding;\n  [CEReactions] attribute DOMString loading;\n  [CEReactions] attribute DOMString fetchPriority;\n\n  Promise<undefined> decode();\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLImageElement",
         "inheritance": "HTMLElement",
@@ -4851,6 +4851,35 @@
             "special": "",
             "readonly": false,
             "href": "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-ismap"
+          },
+          {
+            "type": "attribute",
+            "name": "controls",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-controls"
           },
           {
             "type": "attribute",
@@ -17430,7 +17459,7 @@
         "href": "https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement"
       },
       "HTMLTemplateElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLTemplateElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute DocumentFragment content;\n  [CEReactions] attribute DOMString shadowRootMode;\n  [CEReactions, Reflect] attribute boolean shadowRootDelegatesFocus;\n  [CEReactions, Reflect] attribute boolean shadowRootClonable;\n  [CEReactions, Reflect] attribute boolean shadowRootSerializable;\n  [CEReactions, Reflect] attribute DOMString shadowRootCustomElementRegistry;\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLTemplateElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  readonly attribute DocumentFragment content;\n  [CEReactions] attribute DOMString shadowRootMode;\n  [CEReactions, Reflect] attribute boolean shadowRootDelegatesFocus;\n  [CEReactions] attribute DOMString shadowRootSlotAssignment;\n  [CEReactions, Reflect] attribute boolean shadowRootClonable;\n  [CEReactions, Reflect] attribute boolean shadowRootSerializable;\n  [CEReactions, Reflect] attribute DOMString shadowRootCustomElementRegistry;\n};",
         "type": "interface",
         "name": "HTMLTemplateElement",
         "inheritance": "HTMLElement",
@@ -17514,6 +17543,29 @@
             "special": "",
             "readonly": false,
             "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-template-shadowrootdelegatesfocus"
+          },
+          {
+            "type": "attribute",
+            "name": "shadowRootSlotAssignment",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false,
+            "href": "https://html.spec.whatwg.org/multipage/scripting.html#dom-template-shadowrootslotassignment"
           },
           {
             "type": "attribute",
