@@ -7927,10 +7927,9 @@
       "styleDeclaration": [
         "display"
       ],
-      "syntax": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy> | grid-lanes | inline-grid-lanes | ruby | ruby-base | ruby-text | ruby-base-container | ruby-text-container | <display-outside> || [ <display-inside> | math ]",
+      "syntax": "[ <display-outside> || <display-inside> ] | <display-listitem> | <display-internal> | <display-box> | <display-legacy> | grid-lanes | inline-grid-lanes | <display-outside> || [ <display-inside> | math ]",
       "extended": [
         "https://drafts.csswg.org/css-grid-3/",
-        "https://drafts.csswg.org/css-ruby-1/",
         "https://w3c.github.io/mathml-core/"
       ]
     },
@@ -14161,7 +14160,7 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "the keyword none or a list of CSS identifiers",
+      "computedValue": "list, each item either a CSS identifier or the keyword none",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "styleDeclaration": [
@@ -16176,7 +16175,7 @@
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "the keyword none or a list of CSS identifiers",
+      "computedValue": "list, each item either a CSS identifier or the keyword none",
       "canonicalOrder": "per grammar",
       "animationType": "not animatable",
       "styleDeclaration": [
@@ -17646,7 +17645,7 @@
     },
     {
       "name": ":snapped",
-      "prose": "The :snapped pseudo-class matches any scroll snap targets, regardless of axis. The longform physical and logical pseudo-class selectors allow for more finite snapped children styling as they can target an individual axis.",
+      "prose": "The :snapped pseudo-class matches any snap targets, regardless of axis. The longform physical and logical pseudo-class selectors allow for more finite snapped children styling as they can target an individual axis.",
       "href": "https://drafts.csswg.org/css-scroll-snap-2/#selectordef-snapped",
       "syntax": ":snapped",
       "extended": []
@@ -18384,8 +18383,8 @@
     },
     {
       "name": "combinator",
-      "href": "https://drafts.csswg.org/selectors-4/#typedef-combinator",
-      "syntax": "'>' | '+' | '~' | [ '|' '|' ]",
+      "href": "https://drafts.csswg.org/selectors-5/#typedef-combinator",
+      "syntax": "'>' | '+' | '~' | [ '|' '|' ] | [ / <wq-name> / ] White space is forbidden: Between the components of a <combinator>. 11. Changes 11.1. Changes Since Level 4 Additions since Level 4: Reference combinators (deferred from an earlier draft of Selectors 4) The :local-link pseudo-class (deferred from an earlier draft of Selectors 4) and its functional form (deferred from an earlier draft of Selectors 4) The :state() pseudo-class The :heading and :heading() pseudo-classes The :interest-source and :interest-target pseudo-classes The :blank pseudo-class (deferred from an earlier draft of Selectors 4) The grid-structural (column) selectors (deferred from an earlier draft of Selectors 4) The time-dimensional pseudo-classes (deferred from an earlier draft of Selectors 4) 12. Acknowledgements The CSS working group would like to thank everyone who contributed to the previous Selectors specifications over the years, as those specifications formed the basis for this one. In particular, the working group would like to extend special thanks to the following for their specific contributions to Selectors Level 5: Joey Arhar. Privacy Considerations Should be copied from Level 4 when appropriate. Security Considerations Should be copied from Level 4 when appropriate.",
       "extended": []
     },
     {
