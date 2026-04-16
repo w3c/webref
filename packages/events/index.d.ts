@@ -1,38 +1,3 @@
-export interface ListAllOptions {
-  /**
-   * Path to the folder containing an `events.json` file to read from. Defaults
-   * to the path of the `@webref/events` package itself. This is only intended
-   * for testing purposes, and will rarely be used by end-users of the package.
-   *
-   * @default {__dirname}
-   */
-  folder?: string | undefined;
-}
-
-/**
- * Lists all events defined in the `events.json` file of the `@webref/events`
- * package, along with their associated metadata.
- *
- * @param [options] Optional configuration for listing events.
- * @returns a Promise that resolves to an array of event metadata objects, or
- * rejects with an error if there is an issue reading/parsing the JSON file.
- * @see {@linkcode EventDefinition} for the objects returned by this function.
- * @see {@linkcode listAllSync} for the synchronous version of this function.
- */
-export function listAll(options?: ListAllOptions): Promise<EventDefinition[]>;
-
-/**
- * Synchronously lists all events defined in the `events.json` file of the
- * `@webref/events` package, along with their associated metadata.
- *
- * @param [options] Optional configuration for listing events.
- * @returns an array of event metadata objects.
- * @see {@linkcode EventDefinition} for the objects returned by this function.
- * @see {@linkcode listAll} for the asynchronous version of this function.
- * @throws {Error} If there is an error reading/parsing the JSON file.
- */
-export function listAllSync(options?: ListAllOptions): EventDefinition[];
-
 /**
  * Represents the metadata for a single event target as defined in the
  * `events.json` file of the `@webref/events` package.
@@ -134,3 +99,31 @@ export interface EventDefinition {
    */
   readonly extendedIn?: SpecificationReference[] | undefined;
 }
+
+export interface ListAllOptions {
+  /**
+   * Path to the folder containing an `events.json` file to read from. Defaults
+   * to the path of the `@webref/events` package itself. This is only intended
+   * for testing purposes, and will rarely be used by end-users of the package.
+   *
+   * @default {__dirname}
+   */
+  folder?: string | undefined;
+}
+
+/**
+ * Lists all events defined in the `events.json` file of the `@webref/events`
+ * package, along with their associated metadata.
+ *
+ * @param [options] Optional configuration for listing events.
+ * @returns a Promise that resolves to an array of event metadata objects, or
+ * rejects with an error if there is an issue reading/parsing the JSON file.
+ * @see {@linkcode EventDefinition} for the objects returned by this function.
+ */
+export function listAll(options?: ListAllOptions): Promise<EventDefinition[]>;
+
+declare const _default: {
+  listAll: typeof listAll;
+};
+
+export default _default;

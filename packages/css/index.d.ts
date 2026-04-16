@@ -98,9 +98,9 @@ export interface CssAtRuleDefinition extends ScopedCssFeatureDefinition {
 }
 
 /**
- * Indexed variant of a CSS at-rule definition returned by {@linkcode index} and
- * {@linkcode indexSync}. The descriptor array is replaced with an object keyed
- * by descriptor name for direct lookups.
+ * Indexed variant of a CSS at-rule definition returned by {@linkcode index}.
+ * The descriptor array is replaced with an object keyed by descriptor name for
+ * direct lookups.
  */
 export interface IndexedCssAtRuleDefinition
   extends Omit<CssAtRuleDefinition, "descriptors"> {
@@ -202,8 +202,7 @@ export interface CssPropertyDefinition extends CssFeatureDefinition {
 }
 
 /**
- * Shape of the consolidated CSS data returned by {@linkcode listAll} and
- * {@linkcode listAllSync}.
+ * Shape of the consolidated CSS data returned by {@linkcode listAll}.
  */
 export interface CssDefinitions {
   /**
@@ -229,8 +228,7 @@ export interface CssDefinitions {
 }
 
 /**
- * Shape of the indexed CSS data returned by {@linkcode index} and
- * {@linkcode indexSync}.
+ * Shape of the indexed CSS data returned by {@linkcode index}.
  */
 export interface IndexedCssDefinitions {
   /**
@@ -264,19 +262,8 @@ export interface IndexedCssDefinitions {
  *
  * @param [options] Optional configuration for loading the JSON file.
  * @returns a Promise that resolves to the consolidated CSS definitions.
- * @see {@linkcode listAllSync} for the synchronous version of this API.
  */
 export function listAll(options?: ListAllOptions): Promise<CssDefinitions>;
-
-/**
- * Synchronously reads and parses the consolidated `css.json` file from the
- * `@webref/css` package.
- *
- * @param [options] Optional configuration for loading the JSON file.
- * @returns the consolidated CSS definitions.
- * @see {@linkcode listAll} for the asynchronous version of this API.
- */
-export function listAllSync(options?: ListAllOptions): CssDefinitions;
 
 /**
  * Builds an object view of the consolidated CSS definitions keyed by feature
@@ -284,25 +271,12 @@ export function listAllSync(options?: ListAllOptions): CssDefinitions;
  *
  * @param [options] Optional configuration for loading the JSON file.
  * @returns a Promise that resolves to the indexed CSS definitions.
- * @see {@linkcode indexSync} for the synchronous version of this API.
  */
 export function index(options?: ListAllOptions): Promise<IndexedCssDefinitions>;
 
-/**
- * Synchronously builds an object view of the consolidated CSS definitions keyed
- * by feature name for easier direct lookups.
- *
- * @param [options] Optional configuration for loading the JSON file.
- * @returns the indexed CSS definitions.
- * @see {@linkcode index} for the asynchronous version of this API.
- */
-export function indexSync(options?: ListAllOptions): IndexedCssDefinitions;
-
 declare const _default: {
   listAll: typeof listAll;
-  listAllSync: typeof listAllSync;
   index: typeof index;
-  indexSync: typeof indexSync;
 };
 
 export default _default;

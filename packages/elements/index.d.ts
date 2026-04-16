@@ -1,13 +1,3 @@
-export interface ListAllOptions {
-  /**
-   * Path to the folder that contains the element definition JSON files to read
-   * from. Defaults to the path of the `@webref/elements` package itself.
-   *
-   * @default {__dirname}
-   */
-  folder?: string | undefined;
-}
-
 /**
  * Metadata about a specification represented in the `@webref/elements`
  * package.
@@ -69,6 +59,16 @@ export type ElementDefinitionsBySpecification = Record<
   SpecificationElementsDefinition
 >;
 
+export interface ListAllOptions {
+  /**
+   * Path to the folder that contains the element definition JSON files to read
+   * from. Defaults to the path of the `@webref/elements` package itself.
+   *
+   * @default {__dirname}
+   */
+  folder?: string | undefined;
+}
+
 /**
  * Reads and parses all element definition files in the `@webref/elements`
  * package.
@@ -76,27 +76,13 @@ export type ElementDefinitionsBySpecification = Record<
  * @param [options] Optional configuration for locating the JSON files.
  * @returns a Promise that resolves to a map of specification shortnames to
  * element definition data.
- * @see {@linkcode listAllSync} for the synchronous version of this API.
  */
 export function listAll(
   options?: ListAllOptions,
 ): Promise<ElementDefinitionsBySpecification>;
 
-/**
- * Synchronously reads and parses all element definition files in the
- * `@webref/elements` package.
- *
- * @param [options] Optional configuration for locating the JSON files.
- * @returns a map of specification shortnames to element definition data.
- * @see {@linkcode listAll} for the asynchronous version of this API.
- */
-export function listAllSync(
-  options?: ListAllOptions,
-): ElementDefinitionsBySpecification;
-
 declare const _default: {
   listAll: typeof listAll;
-  listAllSync: typeof listAllSync;
 };
 
 export default _default;

@@ -111,8 +111,8 @@ export interface WebIdlDefinition {
 export type WebIdlParseResult = WebIdlDefinition[];
 
 /**
- * File handle returned by {@linkcode listAll} and {@linkcode listAllSync} for a
- * single `.idl` file in the package.
+ * File handle returned by {@linkcode listAll} for a single `.idl` file in the
+ * package.
  */
 export interface IDLFileDefinition {
   /**
@@ -132,17 +132,9 @@ export interface IDLFileDefinition {
    */
   text(): Promise<string>;
   /**
-   * Synchronously reads the raw IDL source text.
-   */
-  textSync(): string;
-  /**
    * Asynchronously parses the IDL source with `webidl2.parse`.
    */
   parse(): Promise<WebIdlParseResult>;
-  /**
-   * Synchronously parses the IDL source with `webidl2.parse`.
-   */
-  parseSync(): WebIdlParseResult;
 }
 
 /**
@@ -162,19 +154,8 @@ export type ParsedIDLMap = Record<string, WebIdlParseResult>;
  * @param [options] Optional configuration for locating the `.idl` files.
  * @returns a Promise that resolves to a map of specification shortnames to file
  * handles.
- * @see {@linkcode listAllSync} for the synchronous version of this API.
  */
 export function listAll(options?: ListAllOptions): Promise<IDLFileMap>;
-
-/**
- * Synchronously reads all `.idl` files in the `@webref/idl` package and
- * returns lazy file handles for them.
- *
- * @param [options] Optional configuration for locating the `.idl` files.
- * @returns a map of specification shortnames to file handles.
- * @see {@linkcode listAll} for the asynchronous version of this API.
- */
-export function listAllSync(options?: ListAllOptions): IDLFileMap;
 
 /**
  * Reads and parses every `.idl` file in the `@webref/idl` package with
@@ -183,25 +164,12 @@ export function listAllSync(options?: ListAllOptions): IDLFileMap;
  * @param [options] Optional configuration for locating the `.idl` files.
  * @returns a Promise that resolves to a map of specification shortnames to
  * parsed ASTs.
- * @see {@linkcode parseAllSync} for the synchronous version of this API.
  */
 export function parseAll(options?: ListAllOptions): Promise<ParsedIDLMap>;
 
-/**
- * Synchronously reads and parses every `.idl` file in the `@webref/idl`
- * package with `webidl2.parse`.
- *
- * @param [options] Optional configuration for locating the `.idl` files.
- * @returns a map of specification shortnames to parsed ASTs.
- * @see {@linkcode parseAll} for the asynchronous version of this API.
- */
-export function parseAllSync(options?: ListAllOptions): ParsedIDLMap;
-
 declare const _default: {
   listAll: typeof listAll;
-  listAllSync: typeof listAllSync;
   parseAll: typeof parseAll;
-  parseAllSync: typeof parseAllSync;
 };
 
 export default _default;

@@ -1,13 +1,3 @@
-export interface ListAllOptions {
-  /**
-   * Path to the folder that contains the per-spec JSON extracts to read from.
-   * Defaults to the path of the `@webref/css6` package itself.
-   *
-   * @default {__dirname}
-   */
-  folder?: string | undefined;
-}
-
 /**
  * Metadata about the specification a raw CSS extract comes from.
  */
@@ -221,6 +211,16 @@ export interface Css6DefinitionFile {
  */
 export type Css6DefinitionsBySpecification = Record<string, Css6DefinitionFile>;
 
+export interface ListAllOptions {
+  /**
+   * Path to the folder that contains the per-spec JSON extracts to read from.
+   * Defaults to the path of the `@webref/css6` package itself.
+   *
+   * @default {__dirname}
+   */
+  folder?: string | undefined;
+}
+
 /**
  * Reads and parses all raw per-spec CSS extract files in the `@webref/css6`
  * package.
@@ -228,27 +228,13 @@ export type Css6DefinitionsBySpecification = Record<string, Css6DefinitionFile>;
  * @param [options] Optional configuration for locating the JSON files.
  * @returns a Promise that resolves to a map of spec shortnames to raw CSS
  * extract data.
- * @see {@linkcode listAllSync} for the synchronous version of this API.
  */
 export function listAll(
   options?: ListAllOptions,
 ): Promise<Css6DefinitionsBySpecification>;
 
-/**
- * Synchronously reads and parses all raw per-spec CSS extract files in the
- * `@webref/css6` package.
- *
- * @param [options] Optional configuration for locating the JSON files.
- * @returns a map of spec shortnames to raw CSS extract data.
- * @see {@linkcode listAll} for the asynchronous version of this API.
- */
-export function listAllSync(
-  options?: ListAllOptions,
-): Css6DefinitionsBySpecification;
-
 declare const _default: {
   listAll: typeof listAll;
-  listAllSync: typeof listAllSync;
 };
 
 export default _default;
