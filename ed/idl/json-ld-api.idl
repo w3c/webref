@@ -86,7 +86,7 @@ dictionary JsonLdOptions {
 
 callback LoadDocumentCallback = Promise<RemoteDocument> (
   USVString url,
-  optional LoadDocumentOptions? options
+  optional LoadDocumentOptions options = {}
 );
 
 dictionary LoadDocumentOptions {
