@@ -4,6 +4,9 @@ dictionary SanitizerConfig {
   sequence<SanitizerElement> removeElements;
   sequence<SanitizerElement> replaceWithChildrenElements;
 
+  sequence<SanitizerPI> processingInstructions;
+  sequence<SanitizerPI> removeProcessingInstructions;
+
   sequence<SanitizerAttribute> attributes;
   sequence<SanitizerAttribute> removeAttributes;
 

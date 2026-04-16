@@ -676,6 +676,50 @@
       "links": []
     },
     {
+      "id": "dom-sanitizer-allowprocessinginstruction-pi-pi",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-allowprocessinginstruction-pi-pi",
+      "linkingText": [
+        "pi"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Sanitizer/allowProcessingInstruction(pi)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "configobject",
+        "href": "https://wicg.github.io/sanitizer-api/#configobject",
+        "title": "SetHTML options and the configuration object.",
+        "number": "2.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizer-removeprocessinginstruction-pi-pi",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-removeprocessinginstruction-pi-pi",
+      "linkingText": [
+        "pi"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Sanitizer/removeProcessingInstruction(pi)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "configobject",
+        "href": "https://wicg.github.io/sanitizer-api/#configobject",
+        "title": "SetHTML options and the configuration object.",
+        "number": "2.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
       "id": "dom-sanitizer-allowattribute-attribute-attribute",
       "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-allowattribute-attribute-attribute",
       "linkingText": [
@@ -881,6 +925,50 @@
       "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-replaceelementwithchildren",
       "linkingText": [
         "replaceElementWithChildren(element)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "configobject",
+        "href": "https://wicg.github.io/sanitizer-api/#configobject",
+        "title": "SetHTML options and the configuration object.",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizer-allowprocessinginstruction",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-allowprocessinginstruction",
+      "linkingText": [
+        "allowProcessingInstruction(pi)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "configobject",
+        "href": "https://wicg.github.io/sanitizer-api/#configobject",
+        "title": "SetHTML options and the configuration object.",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizer-removeprocessinginstruction",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-removeprocessinginstruction",
+      "linkingText": [
+        "removeProcessingInstruction(pi)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -1177,6 +1265,68 @@
       "links": []
     },
     {
+      "id": "dictdef-sanitizerprocessinginstruction",
+      "href": "https://wicg.github.io/sanitizer-api/#dictdef-sanitizerprocessinginstruction",
+      "linkingText": [
+        "SanitizerProcessingInstruction"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "config",
+        "href": "https://wicg.github.io/sanitizer-api/#config",
+        "title": "The Configuration Dictionary",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerprocessinginstruction-target",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerprocessinginstruction-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerProcessingInstruction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "config",
+        "href": "https://wicg.github.io/sanitizer-api/#config",
+        "title": "The Configuration Dictionary",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "typedefdef-sanitizerpi",
+      "href": "https://wicg.github.io/sanitizer-api/#typedefdef-sanitizerpi",
+      "linkingText": [
+        "SanitizerPI"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "config",
+        "href": "https://wicg.github.io/sanitizer-api/#config",
+        "title": "The Configuration Dictionary",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
       "id": "dictdef-sanitizerattributenamespace",
       "href": "https://wicg.github.io/sanitizer-api/#dictdef-sanitizerattributenamespace",
       "linkingText": [
@@ -1329,6 +1479,50 @@
       "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-replacewithchildrenelements",
       "linkingText": [
         "replaceWithChildrenElements"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "config",
+        "href": "https://wicg.github.io/sanitizer-api/#config",
+        "title": "The Configuration Dictionary",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerconfig-processinginstructions",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-processinginstructions",
+      "linkingText": [
+        "processingInstructions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "config",
+        "href": "https://wicg.github.io/sanitizer-api/#config",
+        "title": "The Configuration Dictionary",
+        "number": "2.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerconfig-removeprocessinginstructions",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeprocessinginstructions",
+      "linkingText": [
+        "removeProcessingInstructions"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1729,6 +1923,26 @@
       "links": []
     },
     {
+      "id": "canonicalize-a-sanitizer-processing-instruction",
+      "href": "https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-processing-instruction",
+      "linkingText": [
+        "canonicalize a sanitizer processing instruction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "configuration-canonicalize",
+        "href": "https://wicg.github.io/sanitizer-api/#configuration-canonicalize",
+        "title": "Canonicalize the Configuration",
+        "number": "3.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "canonicalize-a-sanitizer-attribute",
       "href": "https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-attribute",
       "linkingText": [
@@ -1773,6 +1987,28 @@
       "href": "https://wicg.github.io/sanitizer-api/#sanitizerconfig-contains",
       "linkingText": [
         "contains"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SanitizerConfig"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "alg-support",
+        "href": "https://wicg.github.io/sanitizer-api/#alg-support",
+        "title": "Supporting Algorithms",
+        "number": "3.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "sanitizerconfig-contains-a-target",
+      "href": "https://wicg.github.io/sanitizer-api/#sanitizerconfig-contains-a-target",
+      "linkingText": [
+        "contains a target"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1905,6 +2141,28 @@
       "href": "https://wicg.github.io/sanitizer-api/#sanitizerconfig-has-duplicates",
       "linkingText": [
         "has duplicates"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SanitizerConfig"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "alg-support",
+        "href": "https://wicg.github.io/sanitizer-api/#alg-support",
+        "title": "Supporting Algorithms",
+        "number": "3.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "sanitizerconfig-has-duplicate-targets",
+      "href": "https://wicg.github.io/sanitizer-api/#sanitizerconfig-has-duplicate-targets",
+      "linkingText": [
+        "has duplicate targets"
       ],
       "localLinkingText": [],
       "type": "dfn",
