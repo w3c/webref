@@ -91,7 +91,7 @@
           "html": "<p>Set <var>this</var> internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobservation-observedbox\" id=\"ref-for-dom-resizeobservation-observedbox①\">observedBox</a></code> slot to <var>observedBox</var>.</p>"
         },
         {
-          "html": "<p>Set <var>this</var> internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobservation-lastreportedsizes\" id=\"ref-for-dom-resizeobservation-lastreportedsizes①\">lastReportedSizes</a></code> slot to [(0,0)].</p>"
+          "html": "<p>Set <var>this</var> internal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobservation-lastreportedsizes\" id=\"ref-for-dom-resizeobservation-lastreportedsizes①\">lastReportedSizes</a></code> slot to [(-1,-1)].</p>"
         }
       ]
     },
@@ -282,7 +282,7 @@
               ]
             },
             {
-              "html": "<p>Invoke <var>observer</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-callback-slot\" id=\"ref-for-dom-resizeobserver-callback-slot①\">[[callback]]</a></code> with <var>entries</var>.</p>"
+              "html": "<p>Invoke <var>observer</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-callback-slot\" id=\"ref-for-dom-resizeobserver-callback-slot①\">[[callback]]</a></code> with <var>entries</var> as the first argument and <var>observer</var> as the second argument and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-callback-this-value\" id=\"ref-for-dfn-callback-this-value\">callback this value</a>. If this throws an exception, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#report-the-exception\" id=\"ref-for-report-the-exception\">report the exception</a>.</p>"
             },
             {
               "html": "<p>Clear <var>observer</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/resize-observer-1/#dom-resizeobserver-activetargets-slot\" id=\"ref-for-dom-resizeobserver-activetargets-slot⑥\">[[activeTargets]]</a></code>.</p>"

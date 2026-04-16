@@ -20242,7 +20242,13 @@
     {
       "name": "random-name",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-random-name",
-      "syntax": "<dashed-ident> [ element | property index? ]?",
+      "syntax": "<dashed-ident> || element-scoped || [ property-scoped | property-index-scoped | <random-ua-ident> ]",
+      "extended": []
+    },
+    {
+      "name": "random-ua-ident",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-ua-ident",
+      "syntax": "<custom-ident>",
       "extended": []
     },
     {
