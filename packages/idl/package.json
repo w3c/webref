@@ -4,13 +4,21 @@
   "version": "3.75.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/w3c/webref.git"
+    "url": "https://github.com/w3c/webref.git",
+    "directory": "packages/idl"
   },
   "bugs": {
     "url": "https://github.com/w3c/webref/issues"
   },
   "license": "MIT",
+  "types": "index.d.ts",
   "main": "index.js",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
   "peerDependencies": {
     "webidl2": "^24.5.0"
   }
