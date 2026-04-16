@@ -16,11 +16,16 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { execSync } from 'node:child_process';
+import { execFileSync } from 'node:child_process';
 import { loadJSON } from './utils.js';
 const scriptPath = path.dirname(fileURLToPath(import.meta.url));
+const validPackageTypes = ['css', 'css6', 'elements', 'events', 'idl'];
 
 async function checkPackage(type) {
+  if (!validPackageTypes.includes(type)) {
+    throw new Error(`Unknown package type: ${type}`);
+  }
+
   console.log(`Check ${type} package`);
   const packageFile = path.resolve(scriptPath, '..', 'packages', type, 'package.json');
   const packageContents = await loadJSON(packageFile);
@@ -42,8 +47,8 @@ async function checkPackage(type) {
     return;
   }
 
-  const res = execSync(
-    `git ls-files --others --deleted --exclude-standard --directory ed/${type}`,
+  const res = execFileSync('git',
+    ['ls-files', '--others', '--deleted', '--exclude-standard', '--directory', `ed/${type}`],
     { encoding: 'utf8' }).trim();
   if (res) {
     console.log('- new/deleted files found');
