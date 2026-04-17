@@ -252,6 +252,9 @@
           "html": "<p>If <var>target</var> is not an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#auxiliary-browsing-context\" id=\"ref-for-auxiliary-browsing-context\">auxiliary browsing context</a> that was created by a script (as opposed to by an action of the user), then return.</p>"
         },
         {
+          "html": "<p>If <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable\">top-level traversable</a>’s <u class=\"link-error\" data-lt=\"Is Document Picture-in-Picture\" title=\"LINK ERROR: No 'dfn' refs found for 'is document picture-in-picture' that are marked for export.\n  (Possible specs this could be from: document-picture-in-picture)\">Is Document Picture-in-Picture</u> boolean is <code>true</code>, then return.</p>"
+        },
+        {
           "html": "<p>Optionally, clamp <var>x</var> and <var>y</var> in a user-agent-defined manner so that the window does not move outside the available space.</p>"
         },
         {
@@ -273,6 +276,9 @@
         },
         {
           "html": "<p>If <var>target</var> is not an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#auxiliary-browsing-context\" id=\"ref-for-auxiliary-browsing-context①\">auxiliary browsing context</a> that was created by a script (as opposed to by an action of the user), then return.</p>"
+        },
+        {
+          "html": "<p>If <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable①\">top-level traversable</a>’s <u class=\"link-error\" data-lt=\"Is Document Picture-in-Picture\" title=\"LINK ERROR: No 'dfn' refs found for 'is document picture-in-picture' that are marked for export.\n  (Possible specs this could be from: document-picture-in-picture)\">Is Document Picture-in-Picture</u> boolean is <code>true</code>, then return.</p>"
         },
         {
           "html": "<p>Optionally, clamp <var>x</var> and <var>y</var> in a user-agent-defined manner so that the window does not move outside the available space.</p>"
@@ -298,6 +304,18 @@
           "html": "<p>If <var>target</var> is not an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#auxiliary-browsing-context\" id=\"ref-for-auxiliary-browsing-context②\">auxiliary browsing context</a> that was created by a script (as opposed to by an action of the user), then return.</p>"
         },
         {
+          "html": "If <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable②\">top-level traversable</a>’s <u class=\"link-error\" data-lt=\"Is Document Picture-in-Picture\" title=\"LINK ERROR: No 'dfn' refs found for 'is document picture-in-picture' that are marked for export.\n  (Possible specs this could be from: document-picture-in-picture)\">Is Document Picture-in-Picture</u> boolean is <code>true</code>, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a> does not have <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a>, throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\" id=\"ref-for-consume-user-activation\">Consume user activation</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑥\">relevant global object</a>.</p>"
+            }
+          ]
+        },
+        {
           "html": "<p>Optionally, clamp <var>width</var> and <var>height</var> in a user-agent-defined manner so that the window does not get too small or bigger than the available space.</p>"
         },
         {
@@ -318,10 +336,22 @@
           "html": "<p>Optionally, return.</p>"
         },
         {
-          "html": "<p>Let <var>target</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑤\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-bc\" id=\"ref-for-window-bc⑤\">browsing context</a>.</p>"
+          "html": "<p>Let <var>target</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑦\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window-bc\" id=\"ref-for-window-bc⑤\">browsing context</a>.</p>"
         },
         {
           "html": "<p>If <var>target</var> is not an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#auxiliary-browsing-context\" id=\"ref-for-auxiliary-browsing-context③\">auxiliary browsing context</a> that was created by a script (as opposed to by an action of the user), then return.</p>"
+        },
+        {
+          "html": "If <var>target</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#bc-traversable\" id=\"ref-for-bc-traversable③\">top-level traversable</a>’s <u class=\"link-error\" data-lt=\"Is Document Picture-in-Picture\" title=\"LINK ERROR: No 'dfn' refs found for 'is document picture-in-picture' that are marked for export.\n  (Possible specs this could be from: document-picture-in-picture)\">Is Document Picture-in-Picture</u> boolean is <code>true</code>, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑧\">relevant global object</a> does not have <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation①\">transient activation</a>, throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">NotAllowedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#consume-user-activation\" id=\"ref-for-consume-user-activation①\">Consume user activation</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global⑨\">relevant global object</a>.</p>"
+            }
+          ]
         },
         {
           "html": "<p>Optionally, clamp <var>x</var> and <var>y</var> in a user-agent-defined manner so that the window does not get too small or bigger than the available space.</p>"
@@ -608,7 +638,7 @@
       "rationale": "add",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#add-an-event-listener\" id=\"ref-for-add-an-event-listener\">Add an event listener</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>\nand an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\" id=\"ref-for-concept-event-listener\">event listener</a> whose\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-type\" id=\"ref-for-event-listener-type\">type</a> is <code>change</code>,\nand <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-callback\" id=\"ref-for-event-listener-callback\">callback</a> is <var>callback</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#add-an-event-listener\" id=\"ref-for-add-an-event-listener\">Add an event listener</a> with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>\nand an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\" id=\"ref-for-concept-event-listener\">event listener</a> whose\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-type\" id=\"ref-for-event-listener-type\">type</a> is <code>change</code>,\nand <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-callback\" id=\"ref-for-event-listener-callback\">callback</a> is <var>callback</var>.</p>"
         }
       ]
     },
@@ -619,7 +649,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#eventtarget-event-listener-list\" id=\"ref-for-eventtarget-event-listener-list\">event listener list</a>\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\" id=\"ref-for-concept-event-listener①\">event listener</a> whose\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-type\" id=\"ref-for-event-listener-type①\">type</a> is <code>change</code>,\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-callback\" id=\"ref-for-event-listener-callback①\">callback</a> is <var>callback</var>,\nand <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-capture\" id=\"ref-for-event-listener-capture\">capture</a> is false,\nthen <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#remove-an-event-listener\" id=\"ref-for-remove-an-event-listener\">remove an event listener</a> with\n<span id=\"ref-for-this⑨\">this</span> and that <span id=\"ref-for-concept-event-listener②\">event listener</span>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#eventtarget-event-listener-list\" id=\"ref-for-eventtarget-event-listener-list\">event listener list</a>\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contains</a> an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-listener\" id=\"ref-for-concept-event-listener①\">event listener</a> whose\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-type\" id=\"ref-for-event-listener-type①\">type</a> is <code>change</code>,\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-callback\" id=\"ref-for-event-listener-callback①\">callback</a> is <var>callback</var>,\nand <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#event-listener-capture\" id=\"ref-for-event-listener-capture\">capture</a> is false,\nthen <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#remove-an-event-listener\" id=\"ref-for-remove-an-event-listener\">remove an event listener</a> with\n<span id=\"ref-for-this①③\">this</span> and that <span id=\"ref-for-concept-event-listener②\">event listener</span>.</p>"
         }
       ]
     },

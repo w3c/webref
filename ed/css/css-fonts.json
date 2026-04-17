@@ -15,6 +15,15 @@
       "computedValue": "list, each item a string and/or <generic-font-family> keywords",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "math",
+          "prose": "This font family is intended for use with mathematical expressions. Such fonts may include additional data (for example, the OpenType MATH table) to help with the hierarchical process of equation layout. In particular, they may contain stylistic and stretching glyph variants useful in setting mathematical equations.",
+          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-family-math",
+          "type": "value",
+          "value": "math"
+        }
+      ],
       "styleDeclaration": [
         "font-family",
         "fontFamily"
@@ -798,7 +807,7 @@
     {
       "name": "font-variant-alternates",
       "href": "https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-alternates",
-      "value": "normal | [ stylistic(<feature-value-name>) || historical-forms || styleset(<feature-value-name>#) || character-variant(<feature-value-name>#) || swash(<feature-value-name>) || ornaments(<feature-value-name>) || annotation(<feature-value-name>) ]",
+      "value": "normal | [ stylistic(<font-feature-value-name>) || historical-forms || styleset(<font-feature-value-name>#) || character-variant(<font-feature-value-name>#) || swash(<font-feature-value-name>) || ornaments(<font-feature-value-name>) || annotation(<font-feature-value-name>) ]",
       "initial": "normal",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -954,7 +963,7 @@
     {
       "name": "font-variant",
       "href": "https://drafts.csswg.org/css-fonts-4/#propdef-font-variant",
-      "value": "normal | none | [ [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> ] || [ small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps ] || [ stylistic(<feature-value-name>) || historical-forms || styleset(<feature-value-name>#) || character-variant(<feature-value-name>#) || swash(<feature-value-name>) || ornaments(<feature-value-name>) || annotation(<feature-value-name>) ] || [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ] || [ <east-asian-variant-values> || <east-asian-width-values> || ruby ] || [ sub | super ] || [ text | emoji | unicode ] ]",
+      "value": "normal | none | [ [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> ] || [ small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps ] || [ stylistic(<font-feature-value-name>) || historical-forms || styleset(<font-feature-value-name>#) || character-variant(<font-feature-value-name>#) || swash(<font-feature-value-name>) || ornaments(<font-feature-value-name>) || annotation(<font-feature-value-name>) ] || [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ] || [ <east-asian-variant-values> || <east-asian-width-values> || ruby ] || [ sub | super ] || [ text | emoji | unicode ] ]",
       "initial": "normal",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -1428,7 +1437,7 @@
           "value": "@annotation { <declaration-list> }"
         }
       ],
-      "value": "@font-feature-values <family-name># { <declaration-rule-list> }",
+      "value": "@font-feature-values <font-family-name># { <declaration-rule-list> }",
       "values": [
         {
           "name": "<font-feature-value-type>",
@@ -1556,13 +1565,6 @@
           "value": "system-ui"
         },
         {
-          "name": "math",
-          "prose": "This font family is intended for use with mathematical expressions. Such fonts may include additional data (for example, the OpenType MATH table) to help with the hierarchical process of equation layout. In particular, they may contain stylistic and stretching glyph variants useful in setting mathematical equations.",
-          "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-family-math",
-          "type": "value",
-          "value": "math"
-        },
-        {
           "name": "generic()",
           "value": "generic()",
           "href": "https://drafts.csswg.org/css-fonts-4/#valdef-font-family-generic-fangsong",
@@ -1674,7 +1676,7 @@
       "name": "<font-src>",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-src",
       "type": "type",
-      "value": "<url> [ format( <font-format> ) ]? [ tech( <font-tech># ) ]? | local( <family-name> )"
+      "value": "<url> [ format( <font-format> ) ]? [ tech( <font-tech># ) ]? | local( <font-family-name> )"
     },
     {
       "name": "<font-format>",
@@ -1826,14 +1828,14 @@
       "value": "[ diagonal-fractions | stacked-fractions ]"
     },
     {
-      "name": "<feature-index>",
-      "href": "https://drafts.csswg.org/css-fonts-4/#feature-index-value",
+      "name": "<font-feature-index>",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-feature-index-value",
       "type": "type",
-      "value": "<integer [0,∞]>"
+      "value": "<integer>"
     },
     {
-      "name": "<feature-value-name>",
-      "href": "https://drafts.csswg.org/css-fonts-4/#feature-value-name-value",
+      "name": "<font-feature-value-name>",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-feature-value-name-value",
       "type": "type",
       "value": "<ident>"
     },
