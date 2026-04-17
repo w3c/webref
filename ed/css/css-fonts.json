@@ -7,12 +7,12 @@
     {
       "name": "font-family",
       "href": "https://drafts.csswg.org/css-fonts-4/#propdef-font-family",
-      "value": "[ <family-name> | <generic-family> ]#",
+      "value": "[ <font-family-name> | <generic-font-family> ]#",
       "initial": "depends on user agent",
       "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "list, each item a string and/or <generic-family> keywords",
+      "computedValue": "list, each item a string and/or <generic-font-family> keywords",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "styleDeclaration": [
@@ -272,7 +272,7 @@
     {
       "name": "font",
       "href": "https://drafts.csswg.org/css-fonts-4/#propdef-font",
-      "value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-width-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'># ] | <system-family-name>",
+      "value": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-width-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'># ] | <system-font-family-name>",
       "initial": "see individual properties",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -1213,7 +1213,7 @@
           "name": "font-family",
           "href": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-family",
           "for": "@font-face",
-          "value": "<family-name>",
+          "value": "<font-family-name>",
           "initial": "N/A"
         },
         {
@@ -1447,7 +1447,7 @@
           "name": "font-family",
           "href": "https://drafts.csswg.org/css-fonts-4/#descdef-font-palette-values-font-family",
           "for": "@font-palette-values",
-          "value": "<family-name>#",
+          "value": "<font-family-name>#",
           "initial": "N/A"
         },
         {
@@ -1494,24 +1494,24 @@
   "selectors": [],
   "values": [
     {
-      "name": "<family-name>",
+      "name": "<font-family-name>",
       "prose": "The name of a font family, such as Helvetica or Verdana in the previous example. This might be a locally-instaled font, or might be a web font.",
-      "href": "https://drafts.csswg.org/css-fonts-4/#family-name-value",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-family-name-value",
       "type": "type",
       "value": "<string> | <custom-ident>+"
     },
     {
-      "name": "<system-family-name>",
+      "name": "<system-font-family-name>",
       "prose": "A locally installed system font, whose use is subject to certain constraints. In particular, it may not be used with the font-family property, but can be used with the font shorthand. The following values refer to system fonts:",
-      "href": "https://drafts.csswg.org/css-fonts-4/#system-family-name-value",
+      "href": "https://drafts.csswg.org/css-fonts-4/#system-font-family-name-value",
       "type": "type",
       "value": "caption | icon | menu | message-box | small-caption | status-bar"
     },
     {
-      "name": "<generic-family>",
-      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-family",
+      "name": "<generic-font-family>",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-font-family",
       "type": "type",
-      "value": "<generic-script-specific>| <generic-complete> | <generic-incomplete>",
+      "value": "<generic-font-script-specific>| <generic-font-complete> | <generic-font-incomplete>",
       "values": [
         {
           "name": "serif",
@@ -1617,20 +1617,20 @@
       ]
     },
     {
-      "name": "<generic-script-specific>",
-      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-script-specific",
+      "name": "<generic-font-script-specific>",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-font-script-specific",
       "type": "type",
       "value": "generic(fangsong) | generic(kai) | generic(khmer-mul) | generic(nastaliq)"
     },
     {
-      "name": "<generic-complete>",
-      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-complete",
+      "name": "<generic-font-complete>",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-font-complete",
       "type": "type",
       "value": "serif | sans-serif | system-ui | cursive | fantasy | math | monospace"
     },
     {
-      "name": "<generic-incomplete>",
-      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-incomplete",
+      "name": "<generic-font-incomplete>",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-font-incomplete",
       "type": "type",
       "value": "ui-serif | ui-sans-serif | ui-monospace | ui-rounded"
     },
