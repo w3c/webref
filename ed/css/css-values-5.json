@@ -682,52 +682,44 @@
       "prose": "The random() function is a math function that represents a random value between a minimum and maximum value, drawn from a uniform distribution, optionally limiting the possible values to a step between those limits:",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-random",
       "type": "function",
-      "value": "random( <random-cache-key>? , <calc-sum>, <calc-sum>, <calc-sum>? )"
+      "value": "random( <random-key>? , <calc-sum>, <calc-sum>, <calc-sum>? )"
     },
     {
-      "name": "<random-cache-key>",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-cache-key",
+      "name": "random-item()",
+      "prose": "The random-item() function resolves to a random item from among its list of items.",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-random-item",
+      "type": "function",
+      "value": "random-item( <random-key> , [ <declaration-value>? ]# )"
+    },
+    {
+      "name": "<random-item-args>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-item-args",
+      "type": "type",
+      "value": "random-item( <declaration-value>, [ <declaration-value>? ]# )"
+    },
+    {
+      "name": "<random-key>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-key",
       "type": "type",
       "value": "auto | <random-name> | fixed <number [0,1]>",
       "values": [
         {
           "name": "auto",
-          "prose": "The random function is roughly \"as random as possible\": every usage in a property, between different properties, and between different elements will get a different random cache name. This is equivalent to specifying element-scoped property-index-scoped, and simplifies in exactly the same way. If the <random-cache-key> is omitted, it behaves as auto.",
+          "prose": "The random function is roughly “as random as possible”: the random cache name, and thus the result, varies across every random() instance in a multi-component value, across different properties, and across different elements. This is equivalent to specifying element-scoped property-index-scoped, and simplifies in exactly the same way.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-random-auto",
           "type": "value",
           "value": "auto"
         },
         {
-          "name": "<random-name>",
-          "prose": "The <random-name> specifies the random cache name directly, naming the random value and allowing it to be explicitly shared (or not) with other uses of random functions. Every random function using the same random cache name will get the same random value; every one using a different random cache name will get unrelated random values. The random cache name is made of several possible parts, which are all optional and can be specified in any order: The <dashed-ident>, giving the value an explicit name. If omitted, this part of the name is null. element-scoped adds an element-specific identifier to the random cache name, so different elements will get different random values. property-scoped adds the property name the random function is being used on to the random cache name, so different properties will get different random values. property-index-scoped adds the property name and the index of the random function among all the random functions used in the same property value to the random cache name, so multiple uses of a random function in the same property will get different random values. property-scoped and property-index-scoped are mutually exclusive with each other, and also with the <random-ua-ident> value. This value, like fixed below, isn’t intended to be specified by authors, but can show up in computed values. It is a <custom-ident> that must start with the prefix ua-. When generated automatically by the user agent, it will always be ua-PROPERTY or ua-PROPERTY-INDEX, with the PROPERTY and INDEX parts replaced with a property name or integer index, like ua-margin-3.",
-          "href": "https://drafts.csswg.org/css-values-5/#valdef-random-random-name",
+          "name": "<random-cache-key>",
+          "prose": "The <random-cache-key> specifies the random cache name, allowing it to be explicitly shared (or not) with other uses of random functions. Every random function using the same random cache name will get the same random value; every one using a different random cache name will get unrelated random values. The <dashed-ident> gives the value an explicit name. If omitted, this part of the name is null. element-scoped adds an element-specific identifier to the random cache name, so different elements will get different random values. property-scoped adds the property name the random function is being used on to the random cache name, so different properties will get different random values. Note that shorthand declarations will apply the shorthand property’s name. property-index-scoped adds the property name and the index of the random function among all the random functions used in the same property value to the random cache name, so multiple instances of a random function in the same declaration will each get different random cache names. Note this index is assigned before shorthand expansion. See § 9.4.1 Simplification of <random-key> for how these values resolve. The <random-ua-ident> value, like fixed below, isn’t intended to be specified by authors, but can show up in computed values. It is a <custom-ident> that must start with the prefix ua-, or else it is invalid. When generated automatically by the user agent, it will always be ua-PROPERTY or ua-PROPERTY-INDEX, with the PROPERTY and INDEX parts replaced with a property name or integer index, like ua-margin-3.",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-random-random-cache-key",
           "type": "value",
-          "value": "<random-name>"
-        },
-        {
-          "name": "element-scoped",
-          "prose": "element-scoped adds an element-specific identifier to the random cache name, so different elements will get different random values.",
-          "href": "https://drafts.csswg.org/css-values-5/#valdef-random-element-scoped",
-          "type": "value",
-          "value": "element-scoped"
-        },
-        {
-          "name": "property-scoped",
-          "prose": "property-scoped adds the property name the random function is being used on to the random cache name, so different properties will get different random values.",
-          "href": "https://drafts.csswg.org/css-values-5/#valdef-random-property-scoped",
-          "type": "value",
-          "value": "property-scoped"
-        },
-        {
-          "name": "property-index-scoped",
-          "prose": "property-index-scoped adds the property name and the index of the random function among all the random functions used in the same property value to the random cache name, so multiple uses of a random function in the same property will get different random values.",
-          "href": "https://drafts.csswg.org/css-values-5/#valdef-random-property-index-scoped",
-          "type": "value",
-          "value": "property-index-scoped"
+          "value": "<random-cache-key>"
         },
         {
           "name": "<random-ua-ident>",
-          "prose": "property-scoped and property-index-scoped are mutually exclusive with each other, and also with the <random-ua-ident> value. This value, like fixed below, isn’t intended to be specified by authors, but can show up in computed values. It is a <custom-ident> that must start with the prefix ua-. When generated automatically by the user agent, it will always be ua-PROPERTY or ua-PROPERTY-INDEX, with the PROPERTY and INDEX parts replaced with a property name or integer index, like ua-margin-3.",
+          "prose": "The <random-ua-ident> value, like fixed below, isn’t intended to be specified by authors, but can show up in computed values. It is a <custom-ident> that must start with the prefix ua-, or else it is invalid. When generated automatically by the user agent, it will always be ua-PROPERTY or ua-PROPERTY-INDEX, with the PROPERTY and INDEX parts replaced with a property name or integer index, like ua-margin-3.",
           "href": "https://drafts.csswg.org/css-values-5/#valdef-random-random-ua-ident",
           "type": "value",
           "value": "<random-ua-ident>"
@@ -742,29 +734,36 @@
       ]
     },
     {
-      "name": "<random-name>",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-name",
+      "name": "<random-cache-key>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-cache-key",
       "type": "type",
-      "value": "<dashed-ident> || element-scoped || [ property-scoped | property-index-scoped | <random-ua-ident> ]"
+      "value": "<dashed-ident> || element-scoped || [ property-scoped | property-index-scoped | <random-ua-ident> ]",
+      "values": [
+        {
+          "name": "element-scoped",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-random-element-scoped",
+          "type": "value",
+          "value": "element-scoped"
+        },
+        {
+          "name": "property-scoped",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-random-property-scoped",
+          "type": "value",
+          "value": "property-scoped"
+        },
+        {
+          "name": "property-index-scoped",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-random-property-index-scoped",
+          "type": "value",
+          "value": "property-index-scoped"
+        }
+      ]
     },
     {
       "name": "<random-ua-ident>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-random-ua-ident",
       "type": "type",
       "value": "<custom-ident>"
-    },
-    {
-      "name": "random-item()",
-      "prose": "The random-item() function resolves to a random item from among its list of items.",
-      "href": "https://drafts.csswg.org/css-values-5/#funcdef-random-item",
-      "type": "function",
-      "value": "random-item( <random-cache-key> , [ <declaration-value>? ]# )"
-    },
-    {
-      "name": "<random-item-args>",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-item-args",
-      "type": "type",
-      "value": "random-item( <declaration-value>, [ <declaration-value>? ]# )"
     },
     {
       "name": "sibling-count()",
