@@ -49,7 +49,9 @@ export interface ListAllOptions {
  * @returns a Promise that resolves to a map of specification shortnames to
  * file handles.
  */
-export function listAll(options?: ListAllOptions): Promise<Record<string, IDLFile>>;
+export function listAll(
+  options?: ListAllOptions,
+): Promise<Record<string, IDLFile>>;
 
 /**
  * Reads and parses every `.idl` file in the `@webref/idl` package with
@@ -59,7 +61,9 @@ export function listAll(options?: ListAllOptions): Promise<Record<string, IDLFil
  * @returns a Promise that resolves to a map of specification shortnames to
  * parsed ASTs.
  */
-export function parseAll(options?: ListAllOptions): Promise<Record<string, WebIDL2.IDLRootType[]>>;
+export function parseAll(
+  options?: ListAllOptions,
+): Promise<Record<string, WebIDL2.IDLRootType[]>>;
 
 declare const _default: {
   listAll: typeof listAll;
