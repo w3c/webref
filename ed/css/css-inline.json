@@ -332,14 +332,14 @@
       "initial": "normal",
       "appliesTo": "non-replaced inline boxes and SVG text content elements",
       "inherited": "yes",
-      "percentages": "computed relative to 1em",
+      "percentages": "see below",
       "computedValue": "the specified keyword, a number, or a computed <length> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "values": [
         {
           "name": "normal",
-          "prose": "Determine the preferred line height automatically based on font metrics.",
+          "prose": "Determine the preferred line height automatically based on the metrics of the used font.",
           "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-height-normal",
           "type": "value",
           "value": "normal"
@@ -353,14 +353,14 @@
         },
         {
           "name": "<number [0,∞]>",
-          "prose": "The preferred line height is this number multiplied by the element’s computed font-size. Negative values are illegal. The computed value is the same as the specified value.",
+          "prose": "The preferred line height is this number multiplied by the element’s used font-size. Negative values are illegal. The computed value is the same as the specified value.",
           "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-height-number-0",
           "type": "value",
           "value": "<number [0,∞]>"
         },
         {
           "name": "<percentage [0,∞]>",
-          "prose": "The preferred line height and computed value of the property is this percentage of the element’s computed font-size. Negative values are illegal.",
+          "prose": "The preferred line height is this percentage of the element’s used font-size. The computed value of the property is this percentage of the element’s computed font-size. Negative values are illegal.",
           "href": "https://drafts.csswg.org/css-inline-3/#valdef-line-height-percentage-0",
           "type": "value",
           "value": "<percentage [0,∞]>"
