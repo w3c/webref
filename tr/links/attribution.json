@@ -46,6 +46,12 @@
           "section-6.1"
         ]
       },
+      "https://html.spec.whatwg.org/": {
+        "anchors": [
+          "tracking-user-activation",
+          "activation-triggering-input-event"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/": {},
       "https://httpwg.org/specs/rfc6265.html": {},
       "https://infra.spec.whatwg.org/": {},
@@ -171,6 +177,13 @@
           "in-parallel"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/interaction.html": {
+        "anchors": [
+          "activation-consuming-api",
+          "transient-activation",
+          "consume-user-activation"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
           "window",
@@ -185,6 +198,7 @@
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "concept-relevant-realm",
+          "concept-relevant-global",
           "concept-realm-global",
           "concept-realm-settings-object",
           "concept-environment-top-level-origin",
@@ -216,12 +230,13 @@
           "iteration-continue",
           "list-is-empty",
           "string",
+          "tuple",
           "ordered-map",
           "32-bit-unsigned-integer",
-          "tuple",
-          "map-exists",
-          "map-set",
           "map-get",
+          "map-set",
+          "set-append",
+          "map-exists",
           "boolean",
           "assert",
           "the-range",
@@ -237,7 +252,6 @@
           "list-item",
           "set-create",
           "set-extend",
-          "set-append",
           "list-append",
           "list-get-the-indices",
           "list-sort-in-descending-order",
@@ -283,6 +297,7 @@
           "SecureContext",
           "SameObject",
           "Exposed",
+          "dfn-maplike",
           "idl-USVString",
           "idl-unsigned-long",
           "idl-sequence",
@@ -290,10 +305,10 @@
           "idl-promise",
           "idl-double",
           "idl-Uint8Array",
-          "this",
-          "a-promise-rejected-with",
           "notallowederror",
           "idl-DOMException",
+          "this",
+          "a-promise-rejected-with",
           "exceptiondef-rangeerror",
           "syntaxerror",
           "a-promise-resolved-with",
@@ -307,8 +322,7 @@
         "anchors": [
           "x0",
           "x5",
-          "x8",
-          "x1"
+          "x8"
         ]
       },
       "https://www.w3.org/TR/clear-site-data/": {
@@ -336,9 +350,10 @@
           "dfn-duration",
           "dfn-moment",
           "dfn-wall-clock",
+          "dfn-duration-from",
+          "dfn-unix-epoch",
           "dfn-current-wall-time",
           "dfn-eso-current-wall-time",
-          "dfn-unix-epoch",
           "dfn-monotonic-clock"
         ]
       },
