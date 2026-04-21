@@ -5,20 +5,14 @@
   },
   "headings": [
     {
-      "id": "subtitle",
-      "href": "https://w3c.github.io/webappsec-cspee/#subtitle",
-      "level": 2,
-      "title": "Editor’s Draft, 23 March 2021"
-    },
-    {
       "id": "abstract",
       "href": "https://w3c.github.io/webappsec-cspee/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
-      "id": "status",
-      "href": "https://w3c.github.io/webappsec-cspee/#status",
+      "id": "sotd",
+      "href": "https://w3c.github.io/webappsec-cspee/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
@@ -56,7 +50,7 @@
       "id": "csp-attribute",
       "href": "https://w3c.github.io/webappsec-cspee/#csp-attribute",
       "level": 3,
-      "title": "<iframe>'s csp attribute",
+      "title": "<iframe>’s csp attribute",
       "number": "2.1"
     },
     {
@@ -84,7 +78,7 @@
       "id": "required-csp",
       "href": "https://w3c.github.io/webappsec-cspee/#required-csp",
       "level": 4,
-      "title": "Browsing Context’s Required CSP",
+      "title": "Navigable’s Required CSP",
       "number": "2.4.1"
     },
     {
@@ -168,7 +162,7 @@
       "id": "process-response",
       "href": "https://w3c.github.io/webappsec-cspee/#process-response",
       "level": 3,
-      "title": "Is response to request blocked by context’s required CSP?",
+      "title": "Is response to request blocked by navigable’s required CSP?",
       "number": "4.1"
     },
     {
@@ -210,7 +204,7 @@
       "id": "subsume-policy",
       "href": "https://w3c.github.io/webappsec-cspee/#subsume-policy",
       "level": 4,
-      "title": "Does policy A subsume policy B given their respective origins?",
+      "title": "Does content security policy object A subsume content security policy object B given their respective origins?",
       "number": "4.2.5"
     },
     {
@@ -221,10 +215,10 @@
       "number": "4.3"
     },
     {
-      "id": "security-and-privacy-considerations",
-      "href": "https://w3c.github.io/webappsec-cspee/#security-and-privacy-considerations",
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/webappsec-cspee/#security-considerations",
       "level": 2,
-      "title": "Security and Privacy Considerations",
+      "title": "Security Considerations",
       "number": "5"
     },
     {
@@ -235,69 +229,83 @@
       "number": "5.1"
     },
     {
-      "id": "policy-leakage",
-      "href": "https://w3c.github.io/webappsec-cspee/#policy-leakage",
-      "level": 3,
-      "title": "Policy Leakage",
-      "number": "5.2"
-    },
-    {
-      "id": "exfiltration",
-      "href": "https://w3c.github.io/webappsec-cspee/#exfiltration",
-      "level": 3,
-      "title": "Data Exfiltration",
-      "number": "5.3"
-    },
-    {
       "id": "header-injection",
       "href": "https://w3c.github.io/webappsec-cspee/#header-injection",
       "level": 3,
       "title": "Header Injection",
-      "number": "5.4"
+      "number": "5.2"
     },
     {
       "id": "header-reflection",
       "href": "https://w3c.github.io/webappsec-cspee/#header-reflection",
       "level": 3,
       "title": "Header Reflection",
-      "number": "5.5"
+      "number": "5.3"
+    },
+    {
+      "id": "header-length",
+      "href": "https://w3c.github.io/webappsec-cspee/#header-length",
+      "level": 3,
+      "title": "Header Length",
+      "number": "5.4"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/webappsec-cspee/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "6"
+    },
+    {
+      "id": "policy-leakage",
+      "href": "https://w3c.github.io/webappsec-cspee/#policy-leakage",
+      "level": 3,
+      "title": "Policy Leakage",
+      "number": "6.1"
+    },
+    {
+      "id": "exfiltration",
+      "href": "https://w3c.github.io/webappsec-cspee/#exfiltration",
+      "level": 3,
+      "title": "Data Exfiltration",
+      "number": "6.2"
     },
     {
       "id": "authoring-considerations",
       "href": "https://w3c.github.io/webappsec-cspee/#authoring-considerations",
       "level": 2,
       "title": "Authoring Considerations",
-      "number": "6"
+      "number": "7"
     },
     {
       "id": "effect-self",
       "href": "https://w3c.github.io/webappsec-cspee/#effect-self",
       "level": 3,
       "title": "Requiring 'self'",
-      "number": "6.1"
+      "number": "7.1"
     },
     {
       "id": "iana",
       "href": "https://w3c.github.io/webappsec-cspee/#iana",
       "level": 2,
       "title": "IANA Considerations",
-      "number": "7"
+      "number": "8"
     },
     {
-      "id": "conformance",
-      "href": "https://w3c.github.io/webappsec-cspee/#conformance",
+      "id": "w3c-conformance",
+      "href": "https://w3c.github.io/webappsec-cspee/#w3c-conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
-      "id": "conventions",
-      "href": "https://w3c.github.io/webappsec-cspee/#conventions",
+      "id": "w3c-conventions",
+      "href": "https://w3c.github.io/webappsec-cspee/#w3c-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
-      "id": "conformant-algorithms",
-      "href": "https://w3c.github.io/webappsec-cspee/#conformant-algorithms",
+      "id": "w3c-conformant-algorithms",
+      "href": "https://w3c.github.io/webappsec-cspee/#w3c-conformant-algorithms",
       "level": 3,
       "title": "Conformant Algorithms"
     },

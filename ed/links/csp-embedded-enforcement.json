@@ -5,35 +5,22 @@
   },
   "links": {
     "rawlinks": {
-      "https://datatracker.ietf.org/doc/html/rfc3864": {},
-      "https://datatracker.ietf.org/doc/html/rfc5234": {},
+      "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/csp": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-2025/": {},
+      "https://drafts.csswg.org/css-values-4/": {},
       "https://encoding.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {},
-      "https://github.com/w3c/html/issues/584": {},
       "https://github.com/w3c/webappsec": {},
-      "https://heycam.github.io/webidl/": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-webappsec/": {},
-      "https://tools.ietf.org/html/rfc2119": {},
       "https://twitter.com/0x6D6172696F/status/810066803653308416": {},
       "https://url.spec.whatwg.org/": {},
-      "https://www.w3.org/2004/01/pp-impl/49309/status": {},
-      "https://www.w3.org/2011/webappsec/": {},
-      "https://www.w3.org/2020/Process-20200915/": {},
-      "https://www.w3.org/Consortium/Patent-Policy-20170801/": {
-        "anchors": [
-          "def-essential",
-          "sec-Disclosure"
-        ]
-      },
-      "https://www.w3.org/Mail/Request": {},
-      "https://www.w3.org/TR/CSP3/": {
+      "https://w3c.github.io/webappsec-csp/": {
         "anchors": [
           "multiple-policies",
-          "parse-serialized-policy",
           "match-schemes",
           "match-hosts",
           "match-ports",
@@ -41,14 +28,37 @@
           "allow-all-inline"
         ]
       },
-      "https://www.w3.org/TR/css-values-4/": {}
+      "https://w3c.github.io/webappsec-cspee/": {},
+      "https://webidl.spec.whatwg.org/": {},
+      "https://www.rfc-editor.org/rfc/rfc3864": {},
+      "https://www.rfc-editor.org/rfc/rfc5234": {},
+      "https://www.w3.org/Mail/Request": {},
+      "https://www.w3.org/groups/wg/webappsec": {},
+      "https://www.w3.org/groups/wg/webappsec/ipr": {},
+      "https://www.w3.org/policies/patent-policy/": {
+        "anchors": [
+          "def-essential",
+          "sec-Disclosure"
+        ]
+      },
+      "https://www.w3.org/policies/process/20250818/": {},
+      "https://xsleaks.dev/docs/attacks/cache-probing/": {
+        "anchors": [
+          "cache-probing-with-error-events"
+        ]
+      }
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "concept-element",
-          "concept-node-document",
-          "concept-reflect"
+          "concept-attribute",
+          "concept-node-document"
+        ]
+      },
+      "https://drafts.csswg.org/css-2025/": {
+        "anchors": [
+          "source-document"
         ]
       },
       "https://drafts.csswg.org/css-values-4/": {
@@ -65,40 +75,39 @@
         "anchors": [
           "navigation-request",
           "concept-request",
-          "concept-request-client",
           "concept-header-list-append",
           "concept-request-header-list",
           "http-origin",
           "http-new-header-syntax",
           "concept-response",
-          "concept-response-csp-list",
           "concept-request-origin",
           "concept-response-url",
           "local-scheme",
           "concept-response-header-list"
         ]
       },
-      "https://heycam.github.io/webidl/": {
-        "anchors": [
-          "idl-DOMString"
-        ]
-      },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
-          "nested-browsing-context",
-          "concept-document-bc",
-          "browsing-context",
-          "active-document",
-          "browsing-context-container",
-          "parent-browsing-context"
+          "creating-a-policy-container-from-a-fetch-response",
+          "policy-container-csp-list",
+          "concept-origin",
+          "concept-origin-scheme",
+          "ascii-serialisation-of-an-origin",
+          "concept-origin-opaque",
+          "parse-a-sandboxing-directive"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
         "anchors": [
           "navigate",
-          "process-a-navigate-response",
-          "process-a-navigate-fetch",
-          "source-browsing-context"
+          "create-navigation-params-by-fetching",
+          "navigation-params-response",
+          "navigation-params-request"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html": {
+        "anchors": [
+          "reflect"
         ]
       },
       "https://html.spec.whatwg.org/multipage/custom-elements.html": {
@@ -106,9 +115,13 @@
           "cereactions"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/dom.html": {
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
-          "concept-element-attributes"
+          "child-navigable",
+          "node-navigable",
+          "navigable",
+          "nav-document",
+          "nav-container"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -117,23 +130,18 @@
           "htmliframeelement"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/origin.html": {
-        "anchors": [
-          "concept-origin",
-          "concept-origin-scheme",
-          "ascii-serialisation-of-an-origin",
-          "concept-origin-opaque"
-        ]
-      },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "string",
+          "string-length",
           "list-contain",
+          "list-append",
           "iteration-continue",
           "list-is-empty",
           "ordered-set",
           "set-append",
           "ascii-case-insensitive",
+          "string-is",
           "list"
         ]
       },
@@ -147,16 +155,16 @@
         "anchors": [
           "header-content-security-policy",
           "grammardef-serialized-policy",
-          "parse-serialized-policy",
-          "policy-directive-set",
+          "abstract-opdef-parse-a-serialized-csp",
+          "content-security-policy-object-directive-set",
           "report-uri",
           "report-to",
           "serialized-csp",
+          "parse-serialized-csp",
           "grammardef-hash-source",
-          "violation-policy",
-          "csp-list",
           "content-security-policy-object",
-          "policy-disposition",
+          "csp-list",
+          "content-security-policy-object-disposition",
           "directive-name",
           "directive-value",
           "source-lists",
@@ -170,16 +178,28 @@
           "grammardef-self",
           "grammardef-unsafe-inline",
           "grammardef-strict-dynamic",
+          "grammardef-serialized-source-list",
           "grammardef-host-part",
           "grammardef-port-part",
           "grammardef-path-part",
           "source-expression",
           "scheme-part-match",
           "host-part-match",
-          "port-part-match",
+          "port-part-matches",
           "path-part-match",
+          "abstract-opdef-parse-a-responses-content-security-policies",
           "source-list-allows-all-inline-behavior",
           "frame-ancestors"
+        ]
+      },
+      "https://w3c.github.io/webappsec-cspee/": {
+        "anchors": [
+          "policy-subsumed-by"
+        ]
+      },
+      "https://webidl.spec.whatwg.org/": {
+        "anchors": [
+          "idl-DOMString"
         ]
       }
     }
