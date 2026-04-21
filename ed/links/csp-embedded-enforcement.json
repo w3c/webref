@@ -8,7 +8,6 @@
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/csp": {},
       "https://dom.spec.whatwg.org/": {},
-      "https://drafts.csswg.org/css-2025/": {},
       "https://drafts.csswg.org/css-values-4/": {},
       "https://encoding.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {},
@@ -56,11 +55,6 @@
           "concept-node-document"
         ]
       },
-      "https://drafts.csswg.org/css-2025/": {
-        "anchors": [
-          "source-document"
-        ]
-      },
       "https://drafts.csswg.org/css-values-4/": {
         "anchors": [
           "mult-zero-plus"
@@ -74,6 +68,7 @@
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
           "navigation-request",
+          "concept-request-policy-container",
           "concept-request",
           "concept-header-list-append",
           "concept-request-header-list",
@@ -100,7 +95,11 @@
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
         "anchors": [
           "navigate",
+          "target-snapshot-params",
+          "snapshotting-target-snapshot-params",
+          "navigation-params",
           "create-navigation-params-by-fetching",
+          "create-navigation-params-from-a-srcdoc-resource",
           "navigation-params-response",
           "navigation-params-request"
         ]
@@ -118,10 +117,9 @@
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
           "child-navigable",
-          "node-navigable",
           "navigable",
-          "nav-document",
-          "nav-container"
+          "nav-container",
+          "nav-container-document"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -135,6 +133,7 @@
           "string",
           "string-length",
           "list-contain",
+          "struct",
           "list-append",
           "iteration-continue",
           "list-is-empty",

@@ -7,20 +7,17 @@
     {
       "name": "set a request's required-csp header",
       "href": "https://w3c.github.io/webappsec-cspee/#abstract-opdef-set-the-sec-required-csp-header",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"set-required-csp\" id=\"abstract-opdef-set-the-sec-required-csp-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the <code>Sec-Required-CSP</code> header</dfn> for a\n    given <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> (<var>request</var>) and <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable\">navigable</a> (<var>navigable</var>), run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" data-local-lt=\"set-required-csp\" id=\"abstract-opdef-set-the-sec-required-csp-header\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the <code>Sec-Required-CSP</code> header</dfn> for a\n    given <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> (<var>request</var>) and <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#serialized-csp\" id=\"ref-for-serialized-csp\">serialized CSP</a>-or-null (<var>requirement</var>), run the following\n    steps:",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>If <var>request</var> is not a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#navigation-request\" id=\"ref-for-navigation-request②\">navigation request</a>, return.</p>"
         },
         {
-          "html": "<p>Let <var>requirement</var> be <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#navigable-required-csp\" id=\"ref-for-navigable-required-csp②\">required CSP</a>.</p>"
-        },
-        {
           "html": "<p>If <var>requirement</var> is <code>null</code>, return.</p>"
         },
         {
-          "html": "<p class=\"assertion\">Assert: <var>requirement</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#serialized-csp\" id=\"ref-for-serialized-csp\">serialized CSP</a>, matching the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-serialized-policy\" id=\"ref-for-grammardef-serialized-policy③\">serialized-policy</a>\n  grammar defined in <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webappsec-cspee/#biblio-csp\" title=\"Content Security Policy Level 3\">[CSP]</a>.</p>"
+          "html": "<p class=\"assertion\">Assert: <var>requirement</var> is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#serialized-csp\" id=\"ref-for-serialized-csp①\">serialized CSP</a>, matching the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-serialized-policy\" id=\"ref-for-grammardef-serialized-policy③\">serialized-policy</a>\n  grammar defined in <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webappsec-cspee/#biblio-csp\" title=\"Content Security Policy Level 3\">[CSP]</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-append\" id=\"ref-for-concept-header-list-append\">Append</a> a header named \"`<code><a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-cspee/#http-headerdef-sec-required-csp\" id=\"ref-for-http-headerdef-sec-required-csp⑤\">Sec-Required-CSP</a></code>`\" with a value of <var>requirement</var>\n  to <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list\">header list</a>.</p>"
@@ -37,69 +34,78 @@
           "html": "<p><code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element\" id=\"ref-for-the-iframe-element⑧\">iframe</a></code> elements have a <code><a data-link-type=\"element-sub\" href=\"https://w3c.github.io/webappsec-cspee/#element-attrdef-iframe-csp\" id=\"ref-for-element-attrdef-iframe-csp①①\">csp</a></code> attribute, defined in <a href=\"https://w3c.github.io/webappsec-cspee/#csp-attribute\">§ 2.1 &lt;iframe&gt;’s csp attribute</a>.</p>"
         },
         {
-          "html": "<p>Each <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable①\">navigable</a> has a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#navigable-required-csp\" id=\"ref-for-navigable-required-csp③\">required CSP</a>, defined in <a href=\"https://w3c.github.io/webappsec-cspee/#required-csp\">§ 2.4.1 Navigable’s Required CSP</a>.</p>"
+          "html": "<p>Add a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"policy container\" data-dfn-type=\"dfn\" data-export=\"\" id=\"policy-container-required-csp\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">required CSP</dfn> item to the <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container②\">policy container</a>\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct\">struct</a>, which is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#serialized-csp\" id=\"ref-for-serialized-csp②\">serialized CSP</a> or null, and is initially null.</p>"
         },
         {
-          "html": "Add the following step early in HTML’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\" id=\"ref-for-navigate②\">navigate</a> algorithm (e.g. after the step that\n  snapshots source snapshot params):",
+          "html": "<p>Add a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"target snapshot params\" data-dfn-type=\"dfn\" data-export=\"\" id=\"target-snapshot-params-required-csp\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">required CSP</dfn> item to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#target-snapshot-params\" id=\"ref-for-target-snapshot-params\">target snapshot params</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct①\">struct</a>, which is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#serialized-csp\" id=\"ref-for-serialized-csp③\">serialized CSP</a> or null.</p>"
+        },
+        {
+          "html": "<p>Update HTML’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#snapshotting-target-snapshot-params\" id=\"ref-for-snapshotting-target-snapshot-params\">snapshotting target snapshot params</a> algorithm to set the new\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#target-snapshot-params-required-csp\" id=\"ref-for-target-snapshot-params-required-csp\">required CSP</a> item to the result of\n  <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-cspee/#abstract-opdef-determine-the-required-csp\" id=\"ref-for-abstract-opdef-determine-the-required-csp\">determine the required CSP</a> given <var>targetNavigable</var>.</p>"
+        },
+        {
+          "html": "<p>Add a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"navigation params\" data-dfn-type=\"dfn\" data-export=\"\" id=\"navigation-params-required-csp\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">required CSP</dfn> item to the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params\" id=\"ref-for-navigation-params\">navigation params</a>\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct②\">struct</a>, which is a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#serialized-csp\" id=\"ref-for-serialized-csp④\">serialized CSP</a> or null.</p>"
+        },
+        {
+          "html": "<p>Update the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\" id=\"ref-for-navigate②\">navigate</a> algorithm to set the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#navigation-params-required-csp\" id=\"ref-for-navigation-params-required-csp\">required CSP</a> of the\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params\" id=\"ref-for-navigation-params①\">navigation params</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\" id=\"ref-for-struct③\">struct</a> created in step 18.7.7 to\n  <var>targetSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#target-snapshot-params-required-csp\" id=\"ref-for-target-snapshot-params-required-csp①\">required CSP</a>.</p>"
+        },
+        {
+          "html": "Add the following step to HTML’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#create-navigation-params-by-fetching\" id=\"ref-for-create-navigation-params-by-fetching\">create navigation params by fetching</a> algorithm, after\n  <var>request</var> is created:",
           "rationale": "set",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-cspee/#abstract-opdef-set-the-required-csp\" id=\"ref-for-abstract-opdef-set-the-required-csp\">Set the required CSP</a> for\n <var>navigable</var> given <var>sourceDocument</var>.</p>"
+              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-cspee/#abstract-opdef-set-the-sec-required-csp-header\" id=\"ref-for-abstract-opdef-set-the-sec-required-csp-header\">set the Sec-Required-CSP header</a> for <var>request</var> and\n <var>targetSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#target-snapshot-params-required-csp\" id=\"ref-for-target-snapshot-params-required-csp②\">required CSP</a>.</p>"
             }
           ]
         },
         {
-          "html": "Add the following step to HTML’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#create-navigation-params-by-fetching\" id=\"ref-for-create-navigation-params-by-fetching\">create navigation params by fetching</a> algorithm, after\n  <code>request</code> is created:",
-          "rationale": "set",
-          "steps": [
-            {
-              "html": "<p><a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-cspee/#abstract-opdef-set-the-sec-required-csp-header\" id=\"ref-for-abstract-opdef-set-the-sec-required-csp-header\">Set the <code>Sec-Required-CSP</code> header</a> for\n <var>request</var> and <var>navigable</var>.</p>"
-            }
-          ]
+          "html": "<p>Update <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#create-navigation-params-by-fetching\" id=\"ref-for-create-navigation-params-by-fetching①\">create navigation params by fetching</a> to set the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#navigation-params-required-csp\" id=\"ref-for-navigation-params-required-csp①\">required CSP</a>\n  of the returned <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params\" id=\"ref-for-navigation-params②\">navigation params</a> to <var>targetSnapshotParams</var>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#target-snapshot-params-required-csp\" id=\"ref-for-target-snapshot-params-required-csp③\">required CSP</a>.</p>"
         },
         {
-          "html": "<p>Add the following to the list of conditions in HTML’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\" id=\"ref-for-navigate③\">navigate</a> algorithm that cause the\n  navigation to be blocked (e.g. after the <code>X-Frame-Options</code> check):</p>\n      <ul>\n       <li data-md=\"\">\n        <p>The <a href=\"https://w3c.github.io/webappsec-cspee/#process-response\">§ 4.1 Is response to request blocked by navigable’s required CSP?</a> algorithm returns \"<code>Blocked</code>\" when executed upon\n  <code>navigationParams</code>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-response\" id=\"ref-for-navigation-params-response\">response</a>, <code>navigationParams</code>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-request\" id=\"ref-for-navigation-params-request\">request</a>, and <code>navigable</code>.</p>\n      </li></ul>"
+          "html": "<p>Update <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#create-navigation-params-from-a-srcdoc-resource\" id=\"ref-for-create-navigation-params-from-a-srcdoc-resource\">create navigation params from a srcdoc resource</a> to set the\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#navigation-params-required-csp\" id=\"ref-for-navigation-params-required-csp②\">required CSP</a> of the returned <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params\" id=\"ref-for-navigation-params③\">navigation params</a> to\n  <var>targetSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#target-snapshot-params-required-csp\" id=\"ref-for-target-snapshot-params-required-csp④\">required CSP</a>.</p>"
         },
         {
-          "html": "Add the following step to HTML’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#creating-a-policy-container-from-a-fetch-response\" id=\"ref-for-creating-a-policy-container-from-a-fetch-response\">creating a policy container from a fetch response</a>\n  algorithm:",
+          "html": "Add an optional <var>requiredCSP</var> (a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#serialized-csp\" id=\"ref-for-serialized-csp⑤\">serialized CSP</a> or null, defaulting to null) as an\n  argument to HTML’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#creating-a-policy-container-from-a-fetch-response\" id=\"ref-for-creating-a-policy-container-from-a-fetch-response\">creating a policy container from a fetch response</a> algorithm, and\n  add the following steps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>environment</var> is a <span>navigable</span>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>’s <span>relevant settings object</span>, and that\n  <var>navigable</var> has a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#navigable-required-csp\" id=\"ref-for-navigable-required-csp④\">required CSP</a> which is not null:",
+              "html": "If <var>requiredCSP</var> is not null:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>required policy</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#parse-serialized-csp\" id=\"ref-for-parse-serialized-csp\">parsing</a>\n  <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#navigable-required-csp\" id=\"ref-for-navigable-required-csp⑤\">required CSP</a> as \"<code>enforce</code>\".</p>"
+                  "html": "<p>Let <var>required policy</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#parse-serialized-csp\" id=\"ref-for-parse-serialized-csp\">parsing</a>\n  <var>requiredCSP</var> as \"<code>enforce</code>\".</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>required policy</var> to <var>result</var>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list\">CSP list</a>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#policy-container-required-csp\" id=\"ref-for-policy-container-required-csp②\">required CSP</a> to <var>requiredCSP</var>.</p>"
                 }
               ]
             }
           ]
+        },
+        {
+          "html": "<p>Update <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#create-navigation-params-by-fetching\" id=\"ref-for-create-navigation-params-by-fetching②\">create navigation params by fetching</a> to pass\n  <var>targetSnapshotParams</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#target-snapshot-params-required-csp\" id=\"ref-for-target-snapshot-params-required-csp⑤\">required CSP</a> to\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#creating-a-policy-container-from-a-fetch-response\" id=\"ref-for-creating-a-policy-container-from-a-fetch-response①\">creating a policy container from a fetch response</a>.</p>"
+        },
+        {
+          "html": "<p>Add the following to the list of conditions in HTML’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\" id=\"ref-for-navigate③\">navigate</a> algorithm that cause the\n  navigation to be blocked (e.g. after the <code>X-Frame-Options</code> check):</p>\n      <ul>\n       <li data-md=\"\">\n        <p>The <a href=\"https://w3c.github.io/webappsec-cspee/#process-response\">§ 4.1 Is response to request blocked by requiredCSP?</a> algorithm returns \"<code>Blocked</code>\" when executed upon\n  <code>navigationParams</code>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-response\" id=\"ref-for-navigation-params-response\">response</a>, <code>navigationParams</code>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigation-params-request\" id=\"ref-for-navigation-params-request\">request</a>, and <code>navigationParams</code>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#navigation-params-required-csp\" id=\"ref-for-navigation-params-required-csp③\">required CSP</a>.</p>\n      </li></ul>"
         }
       ]
     },
     {
-      "name": "navigable's required CSP",
-      "href": "https://w3c.github.io/webappsec-cspee/#abstract-opdef-set-the-required-csp",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-set-the-required-csp\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the required CSP</dfn> for a given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable④\">navigable</a> (<var>navigable</var>) and\n    <code>Document</code>-or-null (<var>sourceDocument</var>), run the following steps:",
+      "name": "determining the required CSP",
+      "href": "https://w3c.github.io/webappsec-cspee/#abstract-opdef-determine-the-required-csp",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"abstract-op\" data-export=\"\" id=\"abstract-opdef-determine-the-required-csp\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">determine the required CSP</dfn> for a given <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable\">navigable</a> (<var>navigable</var>),\n    run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#child-navigable\" id=\"ref-for-child-navigable①\">child navigable</a>:",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-container\" id=\"ref-for-nav-container\">container</a> has an <code><a data-link-type=\"element-sub\" href=\"https://w3c.github.io/webappsec-cspee/#element-attrdef-iframe-csp\" id=\"ref-for-element-attrdef-iframe-csp①②\">csp</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\" id=\"ref-for-concept-attribute③\">attribute</a> with a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#iframe-csp-valid-attribute-value\" id=\"ref-for-iframe-csp-valid-attribute-value\">valid attribute value</a> (<var>value</var>), set <var>navigable</var>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#navigable-required-csp\" id=\"ref-for-navigable-required-csp⑥\">required CSP</a> to <var>value</var> and return.</p>"
-            },
-            {
-              "html": "<p>If <var>sourceDocument</var> is not null, set <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#navigable-required-csp\" id=\"ref-for-navigable-required-csp⑦\">required CSP</a> to the\n  value of <var>sourceDocument</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable②\">node navigable</a>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#navigable-required-csp\" id=\"ref-for-navigable-required-csp⑧\">required CSP</a> and return.</p>"
-            }
-          ]
+          "html": "<p>If <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#child-navigable\" id=\"ref-for-child-navigable①\">child navigable</a>, return <code>null</code>.</p>"
         },
         {
-          "html": "<p>Set <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#navigable-required-csp\" id=\"ref-for-navigable-required-csp⑨\">required CSP</a> to <code>null</code>.</p>"
+          "html": "<p>If <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-container\" id=\"ref-for-nav-container\">container</a> has an <code><a data-link-type=\"element-sub\" href=\"https://w3c.github.io/webappsec-cspee/#element-attrdef-iframe-csp\" id=\"ref-for-element-attrdef-iframe-csp①②\">csp</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\" id=\"ref-for-concept-attribute③\">attribute</a> with a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#iframe-csp-valid-attribute-value\" id=\"ref-for-iframe-csp-valid-attribute-value\">valid attribute value</a> (<var>value</var>), return <var>value</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>navigable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-container-document\" id=\"ref-for-nav-container-document\">container document</a>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-policy-container\" id=\"ref-for-concept-request-policy-container③\">policy container</a>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#policy-container-required-csp\" id=\"ref-for-policy-container-required-csp③\">required CSP</a>.</p>"
         }
       ]
     },
@@ -613,23 +619,17 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> (<var>response</var>), a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a> (<var>request</var>), and a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable⑤\">navigable</a> (<var>navigable</var>),\n  this algorithm returns \"<code>Allowed</code>\" or \"<code>Blocked</code>\" as appropriate:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> (<var>response</var>), a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a> (<var>request</var>), and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#serialized-csp\" id=\"ref-for-serialized-csp①⓪\">serialized CSP</a>-or-null\n  (<var>requiredCSP</var>), this algorithm returns \"<code>Allowed</code>\" or \"<code>Blocked</code>\" as appropriate:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Return \"<code>Allowed</code>\" if either of the following is true:</p>",
-          "ignored": [
-            "navigable is not a child navigable. navigable’s required CSP is null."
-          ]
+          "html": "<p>Return \"<code>Allowed</code>\" if <var>requiredCSP</var> is <code>null</code>.</p>"
         },
         {
-          "html": "<p>Let <var>required policy</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#parse-serialized-csp\" id=\"ref-for-parse-serialized-csp①\">parsing</a> <var>navigable</var>’s\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#navigable-required-csp\" id=\"ref-for-navigable-required-csp①①\">required CSP</a> as \"<code>enforce</code>\".</p>"
+          "html": "<p>Let <var>required policy</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#parse-serialized-csp\" id=\"ref-for-parse-serialized-csp①\">parsing</a> <var>requiredCSP</var>\n  as \"<code>enforce</code>\".</p>"
         },
         {
           "html": "<p>If the <a href=\"https://w3c.github.io/webappsec-cspee/#origin-allowed\">§ 4.2 Does response allow blanket enforcement of policy from request?</a> algorithm returns \"<code>Allowed</code>\" when executed upon <var>response</var> and\n  <var>request</var>, return \"<code>Allowed</code>\".</p>"
-        },
-        {
-          "html": "<p class=\"assertion\">Assert: <var>navigable</var> is a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#child-navigable\" id=\"ref-for-child-navigable③\">child navigable</a>.</p>"
         },
         {
           "html": "<p>If the <a href=\"https://w3c.github.io/webappsec-cspee/#subsume-policy-list\">§ 4.3 Does subsuming policy subsume policy list given their respective origins?</a> algorithm returns \"<code>Subsumes</code>\" when executed upon\n  <var>required policy</var>, <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a>, the result of\n  <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-responses-content-security-policies\" id=\"ref-for-abstract-opdef-parse-a-responses-content-security-policies\">parsing</a> <var>response</var>’s Content Security\n  Policies, and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>, return \"<code>Allowed</code>\".</p>"
