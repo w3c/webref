@@ -17,7 +17,7 @@
     },
     "idlNames": {
       "Summarizer": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface Summarizer {\n  static Promise<Summarizer> create(optional SummarizerCreateOptions options = {});\n  static Promise<Availability> availability(optional SummarizerCreateCoreOptions options = {});\n\n  Promise<DOMString> summarize(\n    DOMString input,\n    optional SummarizerSummarizeOptions options = {}\n  );\n  ReadableStream summarizeStreaming(\n    DOMString input,\n    optional SummarizerSummarizeOptions options = {}\n  );\n\n  readonly attribute DOMString sharedContext;\n  readonly attribute SummarizerType type;\n  readonly attribute SummarizerFormat format;\n  readonly attribute SummarizerLength length;\n  readonly attribute PerformancePreference preference;\n\n  readonly attribute FrozenArray<DOMString>? expectedInputLanguages;\n  readonly attribute FrozenArray<DOMString>? expectedContextLanguages;\n  readonly attribute DOMString? outputLanguage;\n\n  Promise<double> measureInputUsage(\n    DOMString input,\n    optional SummarizerSummarizeOptions options = {}\n  );\n  readonly attribute unrestricted double inputQuota;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface Summarizer {\n  static Promise<Summarizer> create(optional SummarizerCreateOptions options = {});\n  static Promise<Availability> availability(optional SummarizerCreateCoreOptions options = {});\n\n  Promise<DOMString> summarize(\n    DOMString input,\n    optional SummarizerSummarizeOptions options = {}\n  );\n  ReadableStream summarizeStreaming(\n    DOMString input,\n    optional SummarizerSummarizeOptions options = {}\n  );\n\n  readonly attribute DOMString sharedContext;\n  readonly attribute SummarizerType type;\n  readonly attribute SummarizerFormat format;\n  readonly attribute SummarizerLength length;\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  readonly attribute PerformancePreference preference;\n\n  readonly attribute FrozenArray<DOMString>? expectedInputLanguages;\n  readonly attribute FrozenArray<DOMString>? expectedContextLanguages;\n  readonly attribute DOMString? outputLanguage;\n\n  Promise<double> measureInputUsage(\n    DOMString input,\n    optional SummarizerSummarizeOptions options = {}\n  );\n  readonly attribute unrestricted double inputQuota;\n};",
         "type": "interface",
         "name": "Summarizer",
         "inheritance": null,
@@ -465,7 +465,7 @@
         "href": "https://webmachinelearning.github.io/writing-assistance-apis/#summarizer"
       },
       "SummarizerCreateCoreOptions": {
-        "fragment": "dictionary SummarizerCreateCoreOptions {\n  SummarizerType type = \"key-points\";\n  SummarizerFormat format = \"markdown\";\n  SummarizerLength length = \"short\";\n  PerformancePreference preference = \"auto\";\n\n  sequence<DOMString> expectedInputLanguages;\n  sequence<DOMString> expectedContextLanguages;\n  DOMString outputLanguage;\n};",
+        "fragment": "dictionary SummarizerCreateCoreOptions {\n  SummarizerType type = \"key-points\";\n  SummarizerFormat format = \"markdown\";\n  SummarizerLength length = \"short\";\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  PerformancePreference preference = \"auto\";\n\n  sequence<DOMString> expectedInputLanguages;\n  sequence<DOMString> expectedContextLanguages;\n  DOMString outputLanguage;\n};",
         "type": "dictionary",
         "name": "SummarizerCreateCoreOptions",
         "inheritance": null,

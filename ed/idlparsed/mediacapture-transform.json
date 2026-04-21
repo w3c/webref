@@ -76,7 +76,7 @@
         "href": "https://w3c.github.io/mediacapture-transform/#mediastreamtrackhandle"
       },
       "MediaStreamTrackProcessor": {
-        "fragment": "[Exposed=DedicatedWorker]\ninterface MediaStreamTrackProcessor {\n    constructor(MediaStreamTrackProcessorInit init);\n    readonly attribute ReadableStream readable;\n};",
+        "fragment": "[Exposed=DedicatedWorker]\ninterface MediaStreamTrackProcessor {\n    constructor(MediaStreamTrackProcessorInit init);\n    readonly attribute ReadableStream readable;\n    readonly attribute unsigned long long discardedFrames;\n    readonly attribute unsigned long long totalFrames;\n};",
         "type": "interface",
         "name": "MediaStreamTrackProcessor",
         "inheritance": null,
@@ -119,6 +119,38 @@
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-readable"
+          },
+          {
+            "type": "attribute",
+            "name": "discardedFrames",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-discardedframes"
+          },
+          {
+            "type": "attribute",
+            "name": "totalFrames",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessor-totalframes"
           }
         ],
         "extAttrs": [

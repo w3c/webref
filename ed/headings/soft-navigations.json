@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "Soft Navigations",
+    "title": "Soft Navigations and Interaction Contentful Paint",
     "url": "https://wicg.github.io/soft-navigations/"
   },
   "headings": [
@@ -8,7 +8,7 @@
       "id": "title",
       "href": "https://wicg.github.io/soft-navigations/#title",
       "level": 1,
-      "title": "Soft Navigations"
+      "title": "Soft Navigations and Interaction Contentful Paint"
     },
     {
       "id": "abstract",
@@ -39,228 +39,165 @@
       "number": "1"
     },
     {
-      "id": "sec-task-attribution-intro",
-      "href": "https://wicg.github.io/soft-navigations/#sec-task-attribution-intro",
-      "level": 3,
-      "title": "Task Attribution",
-      "number": "1.1"
-    },
-    {
-      "id": "sec-interface",
-      "href": "https://wicg.github.io/soft-navigations/#sec-interface",
+      "id": "sec-infrastructure",
+      "href": "https://wicg.github.io/soft-navigations/#sec-infrastructure",
       "level": 2,
-      "title": "The SoftNavigationEntry interface",
+      "title": "Interaction Infrastructure",
       "number": "2"
     },
     {
-      "id": "sec-algos",
-      "href": "https://wicg.github.io/soft-navigations/#sec-algos",
-      "level": 2,
-      "title": "Algorithms",
-      "number": "3"
+      "id": "sec-nav-id",
+      "href": "https://wicg.github.io/soft-navigations/#sec-nav-id",
+      "level": 3,
+      "title": "Navigation ID",
+      "number": "2.1"
     },
     {
-      "id": "sec-entry",
-      "href": "https://wicg.github.io/soft-navigations/#sec-entry",
+      "id": "sec-interaction-context-intro",
+      "href": "https://wicg.github.io/soft-navigations/#sec-interaction-context-intro",
       "level": 3,
-      "title": "Soft navigation entry",
-      "number": "3.1"
+      "title": "Interaction Context Intro",
+      "number": "2.2"
     },
     {
       "id": "sec-interaction",
       "href": "https://wicg.github.io/soft-navigations/#sec-interaction",
       "level": 3,
-      "title": "Interaction",
+      "title": "The InteractionContext struct",
+      "number": "2.3"
+    },
+    {
+      "id": "sec-infra-algos",
+      "href": "https://wicg.github.io/soft-navigations/#sec-infra-algos",
+      "level": 3,
+      "title": "Infrastructure Algorithms",
+      "number": "2.4"
+    },
+    {
+      "id": "sec-interaction-contentful-paint",
+      "href": "https://wicg.github.io/soft-navigations/#sec-interaction-contentful-paint",
+      "level": 2,
+      "title": "Interaction Contentful Paints",
+      "number": "3"
+    },
+    {
+      "id": "sec-interaction-contentful-paint-interface",
+      "href": "https://wicg.github.io/soft-navigations/#sec-interaction-contentful-paint-interface",
+      "level": 3,
+      "title": "The InteractionContentfulPaint interface",
+      "number": "3.1"
+    },
+    {
+      "id": "sec-interaction-contentful-paint-algos",
+      "href": "https://wicg.github.io/soft-navigations/#sec-interaction-contentful-paint-algos",
+      "level": 3,
+      "title": "Interaction Contentful Paint Algorithms",
       "number": "3.2"
     },
     {
-      "id": "sec-same-document-commit",
-      "href": "https://wicg.github.io/soft-navigations/#sec-same-document-commit",
-      "level": 3,
-      "title": "Same document commit",
-      "number": "3.3"
+      "id": "sec-soft-navs",
+      "href": "https://wicg.github.io/soft-navigations/#sec-soft-navs",
+      "level": 2,
+      "title": "Soft Navigations",
+      "number": "4"
     },
     {
-      "id": "sec-contentful-paint",
-      "href": "https://wicg.github.io/soft-navigations/#sec-contentful-paint",
+      "id": "sec-interface",
+      "href": "https://wicg.github.io/soft-navigations/#sec-interface",
       "level": 3,
-      "title": "Contentful paint",
-      "number": "3.4"
+      "title": "The SoftNavigationEntry interface",
+      "number": "4.1"
+    },
+    {
+      "id": "sec-soft-nav-algos",
+      "href": "https://wicg.github.io/soft-navigations/#sec-soft-nav-algos",
+      "level": 3,
+      "title": "Soft Navigation Algorithms",
+      "number": "4.2"
+    },
+    {
+      "id": "sec-pe-extension",
+      "href": "https://wicg.github.io/soft-navigations/#sec-pe-extension",
+      "level": 2,
+      "title": "The PerformanceEntry extension",
+      "number": "5"
+    },
+    {
+      "id": "sec-integrations",
+      "href": "https://wicg.github.io/soft-navigations/#sec-integrations",
+      "level": 2,
+      "title": "Specification Integrations",
+      "number": "6"
     },
     {
       "id": "sec-html",
       "href": "https://wicg.github.io/soft-navigations/#sec-html",
-      "level": 2,
+      "level": 3,
       "title": "HTML integration",
-      "number": "4"
+      "number": "6.1"
     },
     {
       "id": "sec-html-document",
       "href": "https://wicg.github.io/soft-navigations/#sec-html-document",
-      "level": 3,
+      "level": 4,
       "title": "Document",
-      "number": "4.1"
+      "number": "6.1.1"
     },
     {
       "id": "sec-html-history",
       "href": "https://wicg.github.io/soft-navigations/#sec-html-history",
-      "level": 3,
+      "level": 4,
       "title": "History",
-      "number": "4.2"
-    },
-    {
-      "id": "sec-html-events",
-      "href": "https://wicg.github.io/soft-navigations/#sec-html-events",
-      "level": 3,
-      "title": "Event dispatch",
-      "number": "4.3"
+      "number": "6.1.2"
     },
     {
       "id": "sec-html-node",
       "href": "https://wicg.github.io/soft-navigations/#sec-html-node",
-      "level": 3,
+      "level": 4,
       "title": "Node",
-      "number": "4.4"
+      "number": "6.1.3"
+    },
+    {
+      "id": "sec-html-hard-nav",
+      "href": "https://wicg.github.io/soft-navigations/#sec-html-hard-nav",
+      "level": 4,
+      "title": "Hard Navigation",
+      "number": "6.1.4"
+    },
+    {
+      "id": "sec-event-timing-integration",
+      "href": "https://wicg.github.io/soft-navigations/#sec-event-timing-integration",
+      "level": 3,
+      "title": "Event Timing integration",
+      "number": "6.2"
     },
     {
       "id": "sec-lcp-integration",
       "href": "https://wicg.github.io/soft-navigations/#sec-lcp-integration",
-      "level": 2,
-      "title": "LCP integration",
-      "number": "5"
-    },
-    {
-      "id": "sec-task-attribution-algorithms",
-      "href": "https://wicg.github.io/soft-navigations/#sec-task-attribution-algorithms",
-      "level": 2,
-      "title": "Task Attibution Algorithms",
-      "number": "6"
-    },
-    {
-      "id": "sec-task-scope",
-      "href": "https://wicg.github.io/soft-navigations/#sec-task-scope",
       "level": 3,
-      "title": "Task scope",
-      "number": "6.1"
-    },
-    {
-      "id": "sec-is-ancestor",
-      "href": "https://wicg.github.io/soft-navigations/#sec-is-ancestor",
-      "level": 3,
-      "title": "Is ancestor",
-      "number": "6.2"
-    },
-    {
-      "id": "sec-is-ancestor-in-set",
-      "href": "https://wicg.github.io/soft-navigations/#sec-is-ancestor-in-set",
-      "level": 3,
-      "title": "Is ancestor in set",
+      "title": "Largest Contentful Paint (LCP) integration",
       "number": "6.3"
     },
     {
-      "id": "sec-current-task",
-      "href": "https://wicg.github.io/soft-navigations/#sec-current-task",
-      "level": 4,
-      "title": "Get current task",
-      "number": "6.3.1"
+      "id": "sec-container-timing-integration",
+      "href": "https://wicg.github.io/soft-navigations/#sec-container-timing-integration",
+      "level": 3,
+      "title": "Container Timing integration",
+      "number": "6.4"
     },
     {
-      "id": "sec-current-task-id",
-      "href": "https://wicg.github.io/soft-navigations/#sec-current-task-id",
-      "level": 4,
-      "title": "Get current task ID",
-      "number": "6.3.2"
+      "id": "sec-performance-timeline-integration",
+      "href": "https://wicg.github.io/soft-navigations/#sec-performance-timeline-integration",
+      "level": 3,
+      "title": "Performance Timeline integration",
+      "number": "6.5"
     },
     {
-      "id": "sec-task-attribution-integration",
-      "href": "https://wicg.github.io/soft-navigations/#sec-task-attribution-integration",
+      "id": "sec-overlapping-interactions",
+      "href": "https://wicg.github.io/soft-navigations/#sec-overlapping-interactions",
       "level": 2,
-      "title": "TaskAttribution integration",
+      "title": "Overlapping Interactions and Race Conditions",
       "number": "7"
-    },
-    {
-      "id": "sec-task",
-      "href": "https://wicg.github.io/soft-navigations/#sec-task",
-      "level": 3,
-      "title": "Task additions",
-      "number": "7.1"
-    },
-    {
-      "id": "sec-event-loop",
-      "href": "https://wicg.github.io/soft-navigations/#sec-event-loop",
-      "level": 3,
-      "title": "Event Loop additions",
-      "number": "7.2"
-    },
-    {
-      "id": "sec-script",
-      "href": "https://wicg.github.io/soft-navigations/#sec-script",
-      "level": 3,
-      "title": "Script execution",
-      "number": "7.3"
-    },
-    {
-      "id": "sec-task-queueing",
-      "href": "https://wicg.github.io/soft-navigations/#sec-task-queueing",
-      "level": 3,
-      "title": "Task queueing",
-      "number": "7.4"
-    },
-    {
-      "id": "sec-timers",
-      "href": "https://wicg.github.io/soft-navigations/#sec-timers",
-      "level": 3,
-      "title": "Timers",
-      "number": "7.5"
-    },
-    {
-      "id": "sec-callbacks",
-      "href": "https://wicg.github.io/soft-navigations/#sec-callbacks",
-      "level": 3,
-      "title": "Callbacks",
-      "number": "7.6"
-    },
-    {
-      "id": "sec-continuations",
-      "href": "https://wicg.github.io/soft-navigations/#sec-continuations",
-      "level": 3,
-      "title": "Continuations",
-      "number": "7.7"
-    },
-    {
-      "id": "sec-hostmakejobcallback",
-      "href": "https://wicg.github.io/soft-navigations/#sec-hostmakejobcallback",
-      "level": 4,
-      "title": "HostMakeJobCallback ##{#sec-hostmakejobcallback}",
-      "number": "7.7.1"
-    },
-    {
-      "id": "sec-hostcalljobcallback",
-      "href": "https://wicg.github.io/soft-navigations/#sec-hostcalljobcallback",
-      "level": 4,
-      "title": "HostCallJobCallback",
-      "number": "7.7.2"
-    },
-    {
-      "id": "sec-messageport",
-      "href": "https://wicg.github.io/soft-navigations/#sec-messageport",
-      "level": 3,
-      "title": "MessagePorts",
-      "number": "7.8"
-    },
-    {
-      "id": "sec-same-document-navigations",
-      "href": "https://wicg.github.io/soft-navigations/#sec-same-document-navigations",
-      "level": 3,
-      "title": "Same-document navigations",
-      "number": "7.9"
-    },
-    {
-      "id": "sec-view-transitions",
-      "href": "https://wicg.github.io/soft-navigations/#sec-view-transitions",
-      "level": 3,
-      "title": "View transitions",
-      "number": "7.10"
     },
     {
       "id": "priv-sec",
@@ -300,16 +237,16 @@
       "title": "Normative References"
     },
     {
+      "id": "informative",
+      "href": "https://wicg.github.io/soft-navigations/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
       "id": "idl-index",
       "href": "https://wicg.github.io/soft-navigations/#idl-index",
       "level": 2,
       "title": "IDL Index"
-    },
-    {
-      "id": "issues-index",
-      "href": "https://wicg.github.io/soft-navigations/#issues-index",
-      "level": 2,
-      "title": "Issues Index"
     }
   ]
 }

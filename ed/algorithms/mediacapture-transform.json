@@ -39,7 +39,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>processor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#mediastreamtrackprocessor\" id=\"ref-for-mediastreamtrackprocessor①①\">MediaStreamTrackProcessor</a></code> object.</p>"
+          "html": "<p>Let <var>processor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#mediastreamtrackprocessor\" id=\"ref-for-mediastreamtrackprocessor①③\">MediaStreamTrackProcessor</a></code> object.</p>"
         },
         {
           "html": "<p>Set <var>processor</var>.<code>[[track]]</code> to <var>init</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/mediacapture-transform/#dom-mediastreamtrackprocessorinit-track\" id=\"ref-for-dom-mediastreamtrackprocessorinit-track④\">track</a></code>.</p>"
@@ -55,6 +55,12 @@
         },
         {
           "html": "<p>Set <var>processor</var>.<code>[[isClosed]]</code> to false.</p>"
+        },
+        {
+          "html": "<p>Set <var>processor</var>.<code>[[numDiscardedFrames]]</code> to 0.</p>"
+        },
+        {
+          "html": "<p>Set <var>processor</var>.<code>[[numTotalFrames]]</code> to 0.</p>"
         },
         {
           "html": "<p>Return <var>processor</var>.</p>"
@@ -173,8 +179,14 @@
             },
             {
               "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webcodecs/#close-videoframe\" id=\"ref-for-close-videoframe\">Close VideoFrame</a> algorithm with <var>droppedFrame</var>.</p>"
+            },
+            {
+              "html": "<p>Increment <var>processor</var>.<code>[[numDiscardedFrames]]</code> by 1.</p>"
             }
           ]
+        },
+        {
+          "html": "<p>Increment <var>processor</var>.<code>[[numTotalFrames]]</code> by 1.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#queue-enqueue\" id=\"ref-for-queue-enqueue\">Enqueue</a> the new frame media data in <var>processor</var>.<code>[[queue]]</code>.</p>"

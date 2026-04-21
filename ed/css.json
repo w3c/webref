@@ -329,7 +329,7 @@
           "href": "https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-family",
           "for": "@font-face",
           "initial": "N/A",
-          "syntax": "<family-name>"
+          "syntax": "<font-family-name>"
         },
         {
           "name": "font-feature-settings",
@@ -459,7 +459,7 @@
           "syntax": "auto | block | swap | fallback | optional"
         }
       ],
-      "syntax": "@font-feature-values <family-name># { <declaration-rule-list> }",
+      "syntax": "@font-feature-values <font-family-name># { <declaration-rule-list> }",
       "extended": []
     },
     {
@@ -479,7 +479,7 @@
           "href": "https://drafts.csswg.org/css-fonts-4/#descdef-font-palette-values-font-family",
           "for": "@font-palette-values",
           "initial": "N/A",
-          "syntax": "<family-name>#"
+          "syntax": "<font-family-name>#"
         },
         {
           "name": "override-colors",
@@ -1785,14 +1785,14 @@
       "name": "random-item()",
       "prose": "The random-item() function resolves to a random item from among its list of items.",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-random-item",
-      "syntax": "random-item( <random-cache-key> , [ <declaration-value>? ]# )",
+      "syntax": "random-item( <random-key> , [ <declaration-value>? ]# )",
       "extended": []
     },
     {
       "name": "random()",
       "prose": "The random() function is a math function that represents a random value between a minimum and maximum value, drawn from a uniform distribution, optionally limiting the possible values to a step between those limits:",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-random",
-      "syntax": "random( <random-cache-key>? , <calc-sum>, <calc-sum>, <calc-sum>? )",
+      "syntax": "random( <random-key>? , <calc-sum>, <calc-sum>, <calc-sum>? )",
       "extended": []
     },
     {
@@ -8560,7 +8560,7 @@
         "font-size-adjust",
         "font-variation-settings"
       ],
-      "syntax": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-width-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'># ] | <system-family-name>",
+      "syntax": "[ [ <'font-style'> || <font-variant-css2> || <'font-weight'> || <font-width-css3> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'># ] | <system-font-family-name>",
       "extended": []
     },
     {
@@ -8570,14 +8570,14 @@
       "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "list, each item a string and/or <generic-family> keywords",
+      "computedValue": "list, each item a string and/or <generic-font-family> keywords",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "styleDeclaration": [
         "font-family",
         "fontFamily"
       ],
-      "syntax": "[ <family-name> | <generic-family> ]#",
+      "syntax": "[ <font-family-name> | <generic-font-family> ]#",
       "extended": []
     },
     {
@@ -8842,7 +8842,7 @@
         "font-variant-position",
         "font-variant-emoji"
       ],
-      "syntax": "normal | none | [ [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> ] || [ small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps ] || [ stylistic(<feature-value-name>) || historical-forms || styleset(<feature-value-name>#) || character-variant(<feature-value-name>#) || swash(<feature-value-name>) || ornaments(<feature-value-name>) || annotation(<feature-value-name>) ] || [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ] || [ <east-asian-variant-values> || <east-asian-width-values> || ruby ] || [ sub | super ] || [ text | emoji | unicode ] ]",
+      "syntax": "normal | none | [ [ <common-lig-values> || <discretionary-lig-values> || <historical-lig-values> || <contextual-alt-values> ] || [ small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps ] || [ stylistic(<font-feature-value-name>) || historical-forms || styleset(<font-feature-value-name>#) || character-variant(<font-feature-value-name>#) || swash(<font-feature-value-name>) || ornaments(<font-feature-value-name>) || annotation(<font-feature-value-name>) ] || [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ] || [ <east-asian-variant-values> || <east-asian-width-values> || ruby ] || [ sub | super ] || [ text | emoji | unicode ] ]",
       "extended": []
     },
     {
@@ -8859,7 +8859,7 @@
         "font-variant-alternates",
         "fontVariantAlternates"
       ],
-      "syntax": "normal | [ stylistic(<feature-value-name>) || historical-forms || styleset(<feature-value-name>#) || character-variant(<feature-value-name>#) || swash(<feature-value-name>) || ornaments(<feature-value-name>) || annotation(<feature-value-name>) ]",
+      "syntax": "normal | [ stylistic(<font-feature-value-name>) || historical-forms || styleset(<font-feature-value-name>#) || character-variant(<font-feature-value-name>#) || swash(<font-feature-value-name>) || ornaments(<font-feature-value-name>) || annotation(<font-feature-value-name>) ]",
       "extended": []
     },
     {
@@ -10066,7 +10066,7 @@
       "initial": "normal",
       "appliesTo": "inline boxes and text",
       "inherited": "yes",
-      "percentages": "relative to computed font-size, i.e. 1em",
+      "percentages": "relative to used font-size",
       "computedValue": "an absolute length and/or a percentage",
       "canonicalOrder": "n/a",
       "animationType": "by computed value type",
@@ -10174,7 +10174,7 @@
       "initial": "normal",
       "appliesTo": "non-replaced inline boxes and SVG text content elements",
       "inherited": "yes",
-      "percentages": "computed relative to 1em",
+      "percentages": "see below",
       "computedValue": "the specified keyword, a number, or a computed <length> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
@@ -15331,6 +15331,23 @@
       "extended": []
     },
     {
+      "name": "text-fit",
+      "href": "https://drafts.csswg.org/css-text-4/#propdef-text-fit",
+      "initial": "none",
+      "appliesTo": "block containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keywords or computed <percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "text-fit",
+        "textFit"
+      ],
+      "syntax": "[ none | grow | shrink ] [consistent | per-line | per-line-all]? <percentage>?",
+      "extended": []
+    },
+    {
       "name": "text-group-align",
       "href": "https://drafts.csswg.org/css-text-4/#propdef-text-group-align",
       "initial": "none",
@@ -16554,7 +16571,7 @@
       "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
-      "percentages": "relative to computed font-size, i.e. 1em",
+      "percentages": "relative to used font-size",
       "computedValue": "an absolute length and/or a percentage",
       "canonicalOrder": "n/a",
       "animationType": "by computed value type",
@@ -18870,15 +18887,8 @@
     },
     {
       "name": "family-name",
-      "prose": "The name of a font family, such as Helvetica or Verdana in the previous example. This might be a locally-instaled font, or might be a web font.",
-      "href": "https://drafts.csswg.org/css-fonts-4/#family-name-value",
-      "syntax": "<string> | <custom-ident>+",
-      "extended": []
-    },
-    {
-      "name": "feature-index",
-      "href": "https://drafts.csswg.org/css-fonts-4/#feature-index-value",
-      "syntax": "<integer [0,∞]>",
+      "prose": "The name of a font family of choice. In the last example, \"Gill\" and \"Helvetica\" are font families.",
+      "href": "https://drafts.csswg.org/css2/#value-def-family-name",
       "extended": []
     },
     {
@@ -18888,12 +18898,6 @@
       "name": "feature-tag-value",
       "href": "https://drafts.csswg.org/css-fonts-4/#feature-tag-value",
       "syntax": "<opentype-tag> [ <integer [0,∞]> | on | off ]?",
-      "extended": []
-    },
-    {
-      "name": "feature-value-name",
-      "href": "https://drafts.csswg.org/css-fonts-4/#feature-value-name-value",
-      "syntax": "<ident>",
       "extended": []
     },
     {
@@ -18939,6 +18943,25 @@
       "extended": []
     },
     {
+      "name": "font-family-name",
+      "prose": "The name of a font family, such as Helvetica or Verdana in the previous example. This might be a locally-instaled font, or might be a web font.",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-family-name-value",
+      "syntax": "<string> | <custom-ident>+",
+      "extended": []
+    },
+    {
+      "name": "font-feature-index",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-feature-index-value",
+      "syntax": "<integer>",
+      "extended": []
+    },
+    {
+      "name": "font-feature-value-name",
+      "href": "https://drafts.csswg.org/css-fonts-4/#font-feature-value-name-value",
+      "syntax": "<ident>",
+      "extended": []
+    },
+    {
       "for": [
         "@font-feature-values"
       ],
@@ -18961,7 +18984,7 @@
     {
       "name": "font-src",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-font-src",
-      "syntax": "<url> [ format( <font-format> ) ]? [ tech( <font-tech># ) ]? | local( <family-name> )",
+      "syntax": "<url> [ format( <font-format> ) ]? [ tech( <font-tech># ) ]? | local( <font-family-name> )",
       "extended": []
     },
     {
@@ -19085,26 +19108,32 @@
       "extended": []
     },
     {
-      "name": "generic-complete",
-      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-complete",
+      "name": "generic-family",
+      "prose": "In the example above, the last value is a generic family name. The following generic families are defined: serif (e.g., Times) sans-serif (e.g., Helvetica) cursive (e.g., Zapf-Chancery) fantasy (e.g., Western) monospace (e.g., Courier) Style sheet designers are encouraged to offer a generic font family as a last alternative. Generic font family names are keywords and must NOT be quoted.",
+      "href": "https://drafts.csswg.org/css2/#value-def-generic-family",
+      "extended": []
+    },
+    {
+      "name": "generic-font-complete",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-font-complete",
       "syntax": "serif | sans-serif | system-ui | cursive | fantasy | math | monospace",
       "extended": []
     },
     {
-      "name": "generic-family",
-      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-family",
-      "syntax": "<generic-script-specific>| <generic-complete> | <generic-incomplete>",
+      "name": "generic-font-family",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-font-family",
+      "syntax": "<generic-font-script-specific>| <generic-font-complete> | <generic-font-incomplete>",
       "extended": []
     },
     {
-      "name": "generic-incomplete",
-      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-incomplete",
+      "name": "generic-font-incomplete",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-font-incomplete",
       "syntax": "ui-serif | ui-sans-serif | ui-monospace | ui-rounded",
       "extended": []
     },
     {
-      "name": "generic-script-specific",
-      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-script-specific",
+      "name": "generic-font-script-specific",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-generic-font-script-specific",
       "syntax": "generic(fangsong) | generic(kai) | generic(khmer-mul) | generic(nastaliq)",
       "extended": []
     },
@@ -19557,13 +19586,13 @@
     {
       "name": "link-condition",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-link-condition",
-      "syntax": "<link-condition-base> [ with <navigation-param-expression> ]?",
+      "syntax": "<link-condition-base> [ with <navigation-match> ]?",
       "extended": []
     },
     {
       "name": "link-condition-base",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-link-condition-base",
-      "syntax": "<navigation-location>",
+      "syntax": "<navigation-location> // Note: <navigation-match> is defining three functions // with identical syntax.",
       "extended": []
     },
     {
@@ -19811,9 +19840,15 @@
       "extended": []
     },
     {
+      "name": "navigation-location-between-test",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-between-test",
+      "syntax": "between : <navigation-location> and <navigation-location>",
+      "extended": []
+    },
+    {
       "name": "navigation-location-keyword",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-keyword",
-      "syntax": "at | from | to",
+      "syntax": "at | other | from | to",
       "extended": []
     },
     {
@@ -19823,45 +19858,21 @@
       "extended": []
     },
     {
-      "name": "navigation-param",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param",
-      "syntax": "<navigation-param-key-value> | <navigation-param-function>",
+      "name": "navigation-match",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-match",
+      "syntax": "<pattern-match-type>( <navigation-match-target> )",
       "extended": []
     },
     {
-      "name": "navigation-param-and",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-and",
-      "syntax": "<navigation-param-expression> [ \"and\" <navigation-param-expression> ]*",
-      "extended": []
-    },
-    {
-      "name": "navigation-param-expression",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-expression",
-      "syntax": "( <navigation-param-and> ) | ( <navigation-param-or> ) | <navigation-param>",
-      "extended": []
-    },
-    {
-      "name": "navigation-param-function",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-function",
-      "syntax": "navigation-param( <ident> )",
-      "extended": []
-    },
-    {
-      "name": "navigation-param-key-value",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-key-value",
-      "syntax": "( <ident> : <string> )",
-      "extended": []
-    },
-    {
-      "name": "navigation-param-or",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-param-or",
-      "syntax": "<navigation-param-expression> [ \"or\" <navigation-param-expression> ]*",
+      "name": "navigation-match-target",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-match-target",
+      "syntax": "navigation-other | navigation-current | navigation-from | navigation-to",
       "extended": []
     },
     {
       "name": "navigation-test",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-test",
-      "syntax": "<navigation-location-test> | <navigation-type-test>",
+      "syntax": "<navigation-location-test> | <navigation-location-between-test> | <navigation-type-test>",
       "extended": []
     },
     {
@@ -20031,6 +20042,12 @@
       "name": "pattern-descriptors",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-pattern-descriptors",
       "syntax": ";* <pattern-descriptor> ;*",
+      "extended": []
+    },
+    {
+      "name": "pattern-match-type",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-pattern-match-type",
+      "syntax": "match-pattern | match-params | match-url",
       "extended": []
     },
     {
@@ -20230,7 +20247,7 @@
     {
       "name": "random-cache-key",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-random-cache-key",
-      "syntax": "auto | <random-name> | fixed <number [0,1]>",
+      "syntax": "<dashed-ident> || element-scoped || [ property-scoped | property-index-scoped | <random-ua-ident> ]",
       "extended": []
     },
     {
@@ -20240,9 +20257,9 @@
       "extended": []
     },
     {
-      "name": "random-name",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-name",
-      "syntax": "<dashed-ident> || element-scoped || [ property-scoped | property-index-scoped | <random-ua-ident> ]",
+      "name": "random-key",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-random-key",
+      "syntax": "auto | <random-name> | fixed <number [0,1]>",
       "extended": []
     },
     {
@@ -20878,9 +20895,9 @@
       "extended": []
     },
     {
-      "name": "system-family-name",
+      "name": "system-font-family-name",
       "prose": "A locally installed system font, whose use is subject to certain constraints. In particular, it may not be used with the font-family property, but can be used with the font shorthand. The following values refer to system fonts:",
-      "href": "https://drafts.csswg.org/css-fonts-4/#system-family-name-value",
+      "href": "https://drafts.csswg.org/css-fonts-4/#system-font-family-name-value",
       "syntax": "caption | icon | menu | message-box | small-caption | status-bar",
       "extended": []
     },
