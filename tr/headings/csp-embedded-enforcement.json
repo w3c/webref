@@ -5,20 +5,14 @@
   },
   "headings": [
     {
-      "id": "subtitle",
-      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#subtitle",
-      "level": 2,
-      "title": "W3C Working Draft, 9 September 2016"
-    },
-    {
       "id": "abstract",
       "href": "https://www.w3.org/TR/csp-embedded-enforcement/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
-      "id": "status",
-      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#status",
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
@@ -53,97 +47,265 @@
       "number": "2"
     },
     {
+      "id": "csp-attribute",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#csp-attribute",
+      "level": 3,
+      "title": "<iframe>’s csp attribute",
+      "number": "2.1"
+    },
+    {
+      "id": "required-csp-header",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#required-csp-header",
+      "level": 3,
+      "title": "The Sec-Required-CSP HTTP Request Header",
+      "number": "2.2"
+    },
+    {
+      "id": "allow-csp-from-header",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#allow-csp-from-header",
+      "level": 3,
+      "title": "The Allow-CSP-From HTTP Response Header",
+      "number": "2.3"
+    },
+    {
       "id": "html-integration",
       "href": "https://www.w3.org/TR/csp-embedded-enforcement/#html-integration",
       "level": 3,
       "title": "Integration with HTML",
-      "number": "2.1"
+      "number": "2.4"
     },
     {
-      "id": "embedding-csp-http-header",
-      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#embedding-csp-http-header",
+      "id": "required-csp",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#required-csp",
+      "level": 4,
+      "title": "Required CSP",
+      "number": "2.4.1"
+    },
+    {
+      "id": "implicit-opt-in",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#implicit-opt-in",
+      "level": 2,
+      "title": "Implicit Policy Acceptance",
+      "number": "3"
+    },
+    {
+      "id": "intersection",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#intersection",
       "level": 3,
-      "title": "The Embedding-CSP HTTP Request Header",
-      "number": "2.2"
+      "title": "Intersection",
+      "number": "3.1"
+    },
+    {
+      "id": "intersection-policy-list",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#intersection-policy-list",
+      "level": 4,
+      "title": "CSP List intersection",
+      "number": "3.1.1"
+    },
+    {
+      "id": "intersection-policy",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#intersection-policy",
+      "level": 4,
+      "title": "Policy Intersection",
+      "number": "3.1.2"
+    },
+    {
+      "id": "intersection-source-list",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#intersection-source-list",
+      "level": 4,
+      "title": "Source List Intersection",
+      "number": "3.1.3"
+    },
+    {
+      "id": "intersection-helpers",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#intersection-helpers",
+      "level": 4,
+      "title": "Intersection Helpers",
+      "number": "3.1.4"
+    },
+    {
+      "id": "effective-directive",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#effective-directive",
+      "level": 5,
+      "title": "Effective Directive Value",
+      "number": "3.1.4.1"
+    },
+    {
+      "id": "the-effective-source-list",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#the-effective-source-list",
+      "level": 5,
+      "title": "Effective Source List",
+      "number": "3.1.4.2"
+    },
+    {
+      "id": "similarity-source-expressions",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#similarity-source-expressions",
+      "level": 5,
+      "title": "Source Expression Similarity",
+      "number": "3.1.4.3"
+    },
+    {
+      "id": "subsumption",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#subsumption",
+      "level": 3,
+      "title": "Subsumption",
+      "number": "3.2"
     },
     {
       "id": "algorithms",
       "href": "https://www.w3.org/TR/csp-embedded-enforcement/#algorithms",
       "level": 2,
       "title": "Algorithms",
-      "number": "3"
+      "number": "4"
     },
     {
       "id": "process-response",
       "href": "https://www.w3.org/TR/csp-embedded-enforcement/#process-response",
       "level": 3,
-      "title": "Is response blocked by context’s required CSP?",
-      "number": "3.1"
+      "title": "Is response to request blocked by requiredCSP?",
+      "number": "4.1"
+    },
+    {
+      "id": "origin-allowed",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#origin-allowed",
+      "level": 3,
+      "title": "Does response allow blanket enforcement of policy from request?",
+      "number": "4.2"
+    },
+    {
+      "id": "intersection-source-expressions",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#intersection-source-expressions",
+      "level": 4,
+      "title": "What is an intersection of two expressions matching scheme-source or host-source grammar A and B?",
+      "number": "4.2.1"
+    },
+    {
+      "id": "rewrite-self",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#rewrite-self",
+      "level": 4,
+      "title": "Rewrite 'self' into a host-source expression for origin.",
+      "number": "4.2.2"
+    },
+    {
+      "id": "subsume-source-expressions",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#subsume-source-expressions",
+      "level": 4,
+      "title": "Does source expression A subsume source expression B?",
+      "number": "4.2.3"
+    },
+    {
+      "id": "subsume-source-list",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#subsume-source-list",
+      "level": 4,
+      "title": "Does source list A subsume source listB given their respective origins and directive names?",
+      "number": "4.2.4"
     },
     {
       "id": "subsume-policy",
       "href": "https://www.w3.org/TR/csp-embedded-enforcement/#subsume-policy",
-      "level": 3,
-      "title": "Is policy list subsumed under subsuming policy?",
-      "number": "3.2"
+      "level": 4,
+      "title": "Does content security policy object A subsume content security policy object B given their respective origins?",
+      "number": "4.2.5"
     },
     {
-      "id": "required-csp-for-context",
-      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#required-csp-for-context",
+      "id": "subsume-policy-list",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#subsume-policy-list",
       "level": 3,
-      "title": "Obtain the required CSP for context.",
-      "number": "3.3"
+      "title": "Does subsuming policy subsume policy list given their respective origins?",
+      "number": "4.3"
     },
     {
-      "id": "security-and-privacy-considerations",
-      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#security-and-privacy-considerations",
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#security-considerations",
       "level": 2,
-      "title": "Security and Privacy Considerations",
-      "number": "4"
+      "title": "Security Considerations",
+      "number": "5"
     },
     {
       "id": "policy-enforcement",
       "href": "https://www.w3.org/TR/csp-embedded-enforcement/#policy-enforcement",
       "level": 3,
       "title": "Policy Enforcement",
-      "number": "4.1"
+      "number": "5.1"
+    },
+    {
+      "id": "header-injection",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#header-injection",
+      "level": 3,
+      "title": "Header Injection",
+      "number": "5.2"
+    },
+    {
+      "id": "header-reflection",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#header-reflection",
+      "level": 3,
+      "title": "Header Reflection",
+      "number": "5.3"
+    },
+    {
+      "id": "header-length",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#header-length",
+      "level": 3,
+      "title": "Header Length",
+      "number": "5.4"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "6"
     },
     {
       "id": "policy-leakage",
       "href": "https://www.w3.org/TR/csp-embedded-enforcement/#policy-leakage",
       "level": 3,
       "title": "Policy Leakage",
-      "number": "4.2"
+      "number": "6.1"
     },
     {
       "id": "exfiltration",
       "href": "https://www.w3.org/TR/csp-embedded-enforcement/#exfiltration",
       "level": 3,
       "title": "Data Exfiltration",
-      "number": "4.3"
+      "number": "6.2"
+    },
+    {
+      "id": "authoring-considerations",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#authoring-considerations",
+      "level": 2,
+      "title": "Authoring Considerations",
+      "number": "7"
+    },
+    {
+      "id": "effect-self",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#effect-self",
+      "level": 3,
+      "title": "Requiring 'self'",
+      "number": "7.1"
     },
     {
       "id": "iana",
       "href": "https://www.w3.org/TR/csp-embedded-enforcement/#iana",
       "level": 2,
       "title": "IANA Considerations",
-      "number": "5"
+      "number": "8"
     },
     {
-      "id": "conformance",
-      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#conformance",
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#w3c-conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
-      "id": "conventions",
-      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#conventions",
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#w3c-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
-      "id": "conformant-algorithms",
-      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#conformant-algorithms",
+      "id": "w3c-conformant-algorithms",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#w3c-conformant-algorithms",
       "level": 3,
       "title": "Conformant Algorithms"
     },

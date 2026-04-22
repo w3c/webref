@@ -18,9 +18,31 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "html-integration",
-        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#html-integration",
-        "title": "Integration with HTML",
+        "id": "csp-attribute",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#csp-attribute",
+        "title": "<iframe>’s csp attribute",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "iframe-csp-valid-attribute-value",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#iframe-csp-valid-attribute-value",
+      "linkingText": [
+        "valid attribute value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "iframe/csp"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "csp-attribute",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#csp-attribute",
+        "title": "<iframe>’s csp attribute",
         "number": "2.1"
       },
       "definedIn": "prose",
@@ -40,39 +62,19 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "html-integration",
-        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#html-integration",
-        "title": "Integration with HTML",
+        "id": "csp-attribute",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#csp-attribute",
+        "title": "<iframe>’s csp attribute",
         "number": "2.1"
       },
       "definedIn": "pre",
       "links": []
     },
     {
-      "id": "required-csp",
-      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#required-csp",
+      "id": "http-headerdef-sec-required-csp",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#http-headerdef-sec-required-csp",
       "linkingText": [
-        "required CSP"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "html-integration",
-        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#html-integration",
-        "title": "Integration with HTML",
-        "number": "2.1"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "http-headerdef-embedding-csp",
-      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#http-headerdef-embedding-csp",
-      "linkingText": [
-        "Embedding-CSP"
+        "Sec-Required-CSP"
       ],
       "localLinkingText": [],
       "type": "http-header",
@@ -80,10 +82,396 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "embedding-csp-http-header",
-        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#embedding-csp-http-header",
-        "title": "The Embedding-CSP HTTP Request Header",
+        "id": "required-csp-header",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#required-csp-header",
+        "title": "The Sec-Required-CSP HTTP Request Header",
         "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "abstract-opdef-set-the-sec-required-csp-header",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#abstract-opdef-set-the-sec-required-csp-header",
+      "linkingText": [
+        "set the Sec-Required-CSP header"
+      ],
+      "localLinkingText": [
+        "set-required-csp"
+      ],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "required-csp-header",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#required-csp-header",
+        "title": "The Sec-Required-CSP HTTP Request Header",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "http-headerdef-allow-csp-from",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#http-headerdef-allow-csp-from",
+      "linkingText": [
+        "Allow-CSP-From"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "allow-csp-from-header",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#allow-csp-from-header",
+        "title": "The Allow-CSP-From HTTP Response Header",
+        "number": "2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "policy-container-required-csp",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#policy-container-required-csp",
+      "linkingText": [
+        "required CSP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy container"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-integration",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#html-integration",
+        "title": "Integration with HTML",
+        "number": "2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "target-snapshot-params-required-csp",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#target-snapshot-params-required-csp",
+      "linkingText": [
+        "required CSP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "target snapshot params"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-integration",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#html-integration",
+        "title": "Integration with HTML",
+        "number": "2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "navigation-params-required-csp",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#navigation-params-required-csp",
+      "linkingText": [
+        "required CSP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "navigation params"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-integration",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#html-integration",
+        "title": "Integration with HTML",
+        "number": "2.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "abstract-opdef-determine-the-required-csp",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#abstract-opdef-determine-the-required-csp",
+      "linkingText": [
+        "determine the required CSP"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "required-csp",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#required-csp",
+        "title": "Required CSP",
+        "number": "2.4.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "content-security-policy-object-subsume",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#content-security-policy-object-subsume",
+      "linkingText": [
+        "subsume"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "content security policy object"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "implicit-opt-in",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#implicit-opt-in",
+        "title": "Implicit Policy Acceptance",
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "content-security-policy-object-subsumed-by",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#content-security-policy-object-subsumed-by",
+      "linkingText": [
+        "subsumed by"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "content security policy object"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "implicit-opt-in",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#implicit-opt-in",
+        "title": "Implicit Policy Acceptance",
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "csp-list-intersection",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#csp-list-intersection",
+      "linkingText": [
+        "intersection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSP list"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "intersection-policy-list",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#intersection-policy-list",
+        "title": "CSP List intersection",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "content-security-policy-object-intersection",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#content-security-policy-object-intersection",
+      "linkingText": [
+        "intersection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "content security policy object"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intersection-policy",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#intersection-policy",
+        "title": "Policy Intersection",
+        "number": "3.1.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "source-list-intersection",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#source-list-intersection",
+      "linkingText": [
+        "intersection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "source list"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intersection-source-list",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#intersection-source-list",
+        "title": "Source List Intersection",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "effective-directive-value",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#effective-directive-value",
+      "linkingText": [
+        "effective directive value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "effective-directive",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#effective-directive",
+        "title": "Effective Directive Value",
+        "number": "3.1.4.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "effective-source-list",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#effective-source-list",
+      "linkingText": [
+        "effective source list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-effective-source-list",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#the-effective-source-list",
+        "title": "Effective Source List",
+        "number": "3.1.4.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "source-expression-similar",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#source-expression-similar",
+      "linkingText": [
+        "source-expression similar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "similarity-source-expressions",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#similarity-source-expressions",
+        "title": "Source Expression Similarity",
+        "number": "3.1.4.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "source-expression-wildcard-host",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#source-expression-wildcard-host",
+      "linkingText": [
+        "wildcard host"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "source expression"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "similarity-source-expressions",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#similarity-source-expressions",
+        "title": "Source Expression Similarity",
+        "number": "3.1.4.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "source-expression-wildcard-port",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#source-expression-wildcard-port",
+      "linkingText": [
+        "wildcard port"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "source expression"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "similarity-source-expressions",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#similarity-source-expressions",
+        "title": "Source Expression Similarity",
+        "number": "3.1.4.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "source-expression-intersection",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#source-expression-intersection",
+      "linkingText": [
+        "intersection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "source expression"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intersection-source-expressions",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#intersection-source-expressions",
+        "title": "What is an intersection of two expressions matching scheme-source or host-source grammar A and B?",
+        "number": "4.2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "directive-contains",
+      "href": "https://www.w3.org/TR/csp-embedded-enforcement/#directive-contains",
+      "linkingText": [
+        "contains"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "directive"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subsume-source-list",
+        "href": "https://www.w3.org/TR/csp-embedded-enforcement/#subsume-source-list",
+        "title": "Does source list A subsume source listB given their respective origins and directive names?",
+        "number": "4.2.4"
       },
       "definedIn": "prose",
       "links": []

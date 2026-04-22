@@ -4,5 +4,5 @@
 // Source: Content Security Policy: Embedded Enforcement (https://www.w3.org/TR/csp-embedded-enforcement/)
 
 partial interface HTMLIFrameElement {
-  attribute DOMString csp;
+  [CEReactions] attribute DOMString csp;
 };
