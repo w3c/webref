@@ -112,11 +112,11 @@
     {
       "name": "CSP list/intersection",
       "href": "https://w3c.github.io/webappsec-cspee/#csp-list-intersection",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"CSP list\" data-dfn-type=\"dfn\" data-export=\"\" id=\"csp-list-intersection\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">intersection</dfn> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list\" id=\"ref-for-csp-list②\">CSP list</a> (<var>list</var>) for an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a>\n  (<var>origin</var>) is a single <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③\">Content Security Policy object</a> representing their net effect, produced\n  by the following algorithm:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"CSP list\" data-dfn-type=\"dfn\" data-export=\"\" id=\"csp-list-intersection\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">intersection</dfn> of a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#csp-list\" id=\"ref-for-csp-list③\">CSP list</a> (<var>list</var>) for an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a>\n  (<var>origin</var>) is a single <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object①\">Content Security Policy object</a> representing their net effect, produced\n  by the following algorithm:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④\">content security policy object</a> with an empty\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set①\">directive set</a>\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-disposition\" id=\"ref-for-content-security-policy-object-disposition\">disposition</a> of \"<code>enforce</code>\".</p>"
+          "html": "<p>Let <var>result</var> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object②\">content security policy object</a> with an empty\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set①\">directive set</a>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-disposition\" id=\"ref-for-content-security-policy-object-disposition\">disposition</a> of \"<code>enforce</code>\".</p>"
         },
         {
           "html": "For each <var>policy</var> in <var>list</var>:",
@@ -138,7 +138,7 @@
     {
       "name": "content security policy object/intersection",
       "href": "https://w3c.github.io/webappsec-cspee/#content-security-policy-object-intersection",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"content security policy object\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"content-security-policy-object-intersection\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">intersection</dfn> of two\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤\">Content Security Policy objects</a> (<var>A</var> and <var>B</var>) for an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①\">origin</a> (<var>origin</var>) is a single\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥\">Content Security Policy object</a> representing their combined effect, produced by the following\n  algorithm:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"content security policy object\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"content-security-policy-object-intersection\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">intersection</dfn> of two\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object③\">Content Security Policy objects</a> (<var>A</var> and <var>B</var>) for an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin①\">origin</a> (<var>origin</var>) is a single\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object④\">Content Security Policy object</a> representing their combined effect, produced by the following\n  algorithm:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -151,7 +151,7 @@
           "html": "<p>If <var>B</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set③\">directive set</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①\">is empty</a>, return <var>A</var>.</p>"
         },
         {
-          "html": "<p>Let <var>policy</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑦\">content security policy object</a> with an empty\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set④\">directive set</a>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-disposition\" id=\"ref-for-content-security-policy-object-disposition③\">disposition</a> \"<code>enforce</code>\".</p>"
+          "html": "<p>Let <var>policy</var> be a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑤\">content security policy object</a> with an empty\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set④\">directive set</a>, and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-disposition\" id=\"ref-for-content-security-policy-object-disposition③\">disposition</a> \"<code>enforce</code>\".</p>"
         },
         {
           "html": "<p>Let <var>directive names</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set\">set</a>.</p>"
@@ -320,7 +320,7 @@
                   "html": "<p>If <var>expression B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part\"><code>scheme-part</code></a> matches one of the elements in\n  <var>schemes</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑦\">continue</a> to the next <var>expression B</var>.</p>"
                 },
                 {
-                  "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-cspee/#intersection-source-expressions\">§ 4.2.1 What is an intersection of two expressions matching scheme-source or\n    host-source grammar A and B?</a> is not <code>null</code> given\n  <var>expression A</var> and <var>expression B</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append⑨\">append</a> the result to <var>intersection</var>.</p>"
+                  "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#source-expression-intersection\" id=\"ref-for-source-expression-intersection\">intersection</a> of <var>expression A</var> and <var>expression B</var> is\n  not <code>null</code>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append⑨\">append</a> the result to <var>intersection</var>.</p>"
                 }
               ]
             }
@@ -332,9 +332,115 @@
       ]
     },
     {
+      "name": "intersect scheme-source and host-source",
+      "html": "Given two <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression①\">source expressions</a> matching the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source⑤\"><code>scheme-source</code></a> or\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-source\" id=\"ref-for-grammardef-host-source②\"><code>host-source</code></a> grammar (<var>A</var> and <var>B</var>), \n  return their<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#source-expression-intersection\" id=\"ref-for-source-expression-intersection②\">intersection</a> if <var>A</var> is\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#source-expression-similar\" id=\"ref-for-source-expression-similar\">source-expression similar</a> to <var>B</var>. Otherwise, return <code>null</code>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>A</var> is not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#source-expression-similar\" id=\"ref-for-source-expression-similar①\">source-expression similar</a> to <var>B</var>, return <code>null</code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>source</var> be an empty string.</p>"
+        },
+        {
+          "html": "<p>Let <var>scheme A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part②\"><code>scheme-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>scheme B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part③\"><code>scheme-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>more secure scheme B</var> be <code>true</code> if <var>scheme A</var> does not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#scheme-part-match\" id=\"ref-for-scheme-part-match\"><code>scheme-part</code> match</a>\n  <var>scheme B</var>, and <code>false</code> otherwise.</p>"
+        },
+        {
+          "html": "<p>Append <var>scheme A</var> and \":\" to <var>source</var> if <var>scheme A</var> is not <code>null</code> and <var>more secure scheme B</var>\n  is <code>false</code>. Otherwise, append <var>scheme B</var> and \":\" to <var>source</var> if <var>scheme B</var> is not <code>null</code>.</p>"
+        },
+        {
+          "html": "<p>If both <var>A</var> and <var>B</var> match the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source⑥\"><code>scheme-source</code></a> grammar, return <var>source</var>.</p>"
+        },
+        {
+          "html": "<p>Append \"//\" to <var>source</var> if it is not empty.</p>"
+        },
+        {
+          "html": "<p>Let <var>host A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-part\" id=\"ref-for-grammardef-host-part①\"><code>host-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>host B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-part\" id=\"ref-for-grammardef-host-part②\"><code>host-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+        },
+        {
+          "html": "If <var>host A</var> is not <code>null</code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>host B</var> is <code>null</code>, append <var>host A</var> to <var>source</var>. Continue to the next step in the main\n   algorithm.</p>"
+            },
+            {
+              "html": "<p>If <var>A</var> doesn’t match the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source⑦\"><code>scheme-source</code></a> grammar and doesn’t have a\n   <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#source-expression-wildcard-host\" id=\"ref-for-source-expression-wildcard-host\">wildcard host</a>, append <var>host A</var> to <var>source</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, append <var>host B</var> to <var>source</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>host A</var> is <code>null</code>, append <var>host B</var> to <var>source</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>port A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part①\"><code>port-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>port B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part②\"><code>port-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+        },
+        {
+          "html": "<p>If <var>port A</var> is <code>null</code>, append \":\" and <var>port B</var> to <var>source</var> if it is not <code>null</code>.</p>"
+        },
+        {
+          "html": "If <var>port A</var> is not <code>null</code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>port B</var> is <code>null</code>, append \":\" and <var>port A</var> to <var>source</var>. Continue to the next step in\n   the main algorithm.</p>"
+            },
+            {
+              "html": "<p>If <var>A</var> doesn’t have a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#source-expression-wildcard-port\" id=\"ref-for-source-expression-wildcard-port\">wildcard port</a> and <var>more secure scheme B</var> is\n   <code>false</code>, append \":\" and <var>port A</var> to <var>source</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, append \":\" and <var>port B</var> to <var>source</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>path A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-path-part\" id=\"ref-for-grammardef-path-part①\"><code>path-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+        },
+        {
+          "html": "<p>Let <var>path B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-path-part\" id=\"ref-for-grammardef-path-part②\"><code>path-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+        },
+        {
+          "html": "<p>If <var>path A</var> is <code>null</code>, append <var>path B</var> to <var>source</var> if it is not <code>null</code>.</p>"
+        },
+        {
+          "html": "If <var>path A</var> is not <code>null</code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>path B</var> is <code>null</code>, return the result of appending <var>path A</var> to <var>source</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>path A</var> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#path-part-match\" id=\"ref-for-path-part-match\"><code>path-part</code> matches</a> <var>path B</var>, append <var>path A</var> to <var>source</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, append <var>path B</var> to <var>source</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>source</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "effective directive",
       "href": "https://w3c.github.io/webappsec-cspee/#effective-directive-value",
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a> (<var>name</var>) and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑧\">content security policy object</a> (<var>policy</var>), the\n    <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"effective directive value\" id=\"effective-directive-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">effective directive value for <var>name</var> and\n    <var>policy</var></dfn> is the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value①⓪\">value</a> resulting from running the following steps:",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a> (<var>name</var>) and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑥\">content security policy object</a> (<var>policy</var>), the\n    <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"effective directive value\" id=\"effective-directive-value\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">effective directive value for <var>name</var> and\n    <var>policy</var></dfn> is the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value①⓪\">value</a> resulting from running the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -485,7 +591,7 @@
               "rationale": "append",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①⓪\">Append</a> the result of executing <a href=\"https://w3c.github.io/webappsec-cspee/#rewrite-self\">§ 4.2.2 Rewrite 'self' into a host-source expression for origin.</a> given <var>origin</var> to <var>result</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①⓪\">Append</a> the result of executing <a href=\"https://w3c.github.io/webappsec-cspee/#rewrite-self\">§ 4.2.1 Rewrite 'self' into a host-source expression for origin.</a> given <var>origin</var> to <var>result</var>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑧\">Continue</a>.</p>"
@@ -496,7 +602,7 @@
               "html": "<p>If <var>expression</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source①\"><code>keyword-source</code></a> grammar, and <var>name</var> is not\n  \"<code>script-src</code>\" or \"<code>style-src</code>\", <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue⑨\">continue</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⓪\">Continue</a> if any of the following statements are true:</p>\n         <ul>\n          <li data-md=\"\">\n           <p><var>expression</var> is \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-none\" id=\"ref-for-grammardef-none③\"><code>'none'</code></a>\"</p>\n          </li><li data-md=\"\">\n           <p><var>expression</var> is \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-strict-dynamic\" id=\"ref-for-grammardef-strict-dynamic\"><code>'strict-dynamic'</code></a>\" and <var>name</var> is not \"<code>script-src</code>\"</p>\n          </li><li data-md=\"\">\n           <p><var>expression</var> matches either the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-nonce-source\" id=\"ref-for-grammardef-nonce-source②\"><code>nonce-source</code></a> or\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-source\" id=\"ref-for-grammardef-hash-source③\"><code>hash-source</code></a> grammar, and <var>name</var> is not \"<code>script-src</code>\" or\n  \"<code>style-src</code>\"</p>\n          </li><li data-md=\"\">\n           <p><var>expression</var> is \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-unsafe-inline\" id=\"ref-for-grammardef-unsafe-inline①\"><code>'unsafe-inline'</code></a>\", <var>name</var> is \"<code>script-src</code>, and\n  <var>list</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②①\">contains</a> one or more tokens that match one of the\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-nonce-source\" id=\"ref-for-grammardef-nonce-source③\"><code>nonce-source</code></a> grammar, the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-source\" id=\"ref-for-grammardef-hash-source④\"><code>hash-source</code></a> grammar, or\n  \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-strict-dynamic\" id=\"ref-for-grammardef-strict-dynamic①\"><code>'strict-dynamic'</code></a>\"</p>\n          </li><li data-md=\"\">\n           <p><var>expression</var> matches either the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-source\" id=\"ref-for-grammardef-host-source①\"><code>host-source</code></a> or\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source④\"><code>scheme-source</code></a> grammar, <var>name</var> is \"<code>script-src</code>\", amd <var>list</var>\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②②\">contains</a> the token \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-strict-dynamic\" id=\"ref-for-grammardef-strict-dynamic②\"><code>'strict-dynamic'</code></a>\"</p>\n          </li><li data-md=\"\">\n           <p><var>name</var> is \"<code>plugin-types</code>\", and <var>expression</var> does not match the\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-serialized-source-list\" id=\"ref-for-grammardef-serialized-source-list\"><code>serialized-source-list</code></a> grammar</p>\n         </li></ul>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⓪\">Continue</a> if any of the following statements are true:</p>\n         <ul>\n          <li data-md=\"\">\n           <p><var>expression</var> is \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-none\" id=\"ref-for-grammardef-none③\"><code>'none'</code></a>\"</p>\n          </li><li data-md=\"\">\n           <p><var>expression</var> is \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-strict-dynamic\" id=\"ref-for-grammardef-strict-dynamic\"><code>'strict-dynamic'</code></a>\" and <var>name</var> is not \"<code>script-src</code>\"</p>\n          </li><li data-md=\"\">\n           <p><var>expression</var> matches either the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-nonce-source\" id=\"ref-for-grammardef-nonce-source②\"><code>nonce-source</code></a> or\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-source\" id=\"ref-for-grammardef-hash-source③\"><code>hash-source</code></a> grammar, and <var>name</var> is not \"<code>script-src</code>\" or\n  \"<code>style-src</code>\"</p>\n          </li><li data-md=\"\">\n           <p><var>expression</var> is \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-unsafe-inline\" id=\"ref-for-grammardef-unsafe-inline①\"><code>'unsafe-inline'</code></a>\", <var>name</var> is \"<code>script-src</code>, and\n  <var>list</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②①\">contains</a> one or more tokens that match one of the\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-nonce-source\" id=\"ref-for-grammardef-nonce-source③\"><code>nonce-source</code></a> grammar, the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-source\" id=\"ref-for-grammardef-hash-source④\"><code>hash-source</code></a> grammar, or\n  \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-strict-dynamic\" id=\"ref-for-grammardef-strict-dynamic①\"><code>'strict-dynamic'</code></a>\"</p>\n          </li><li data-md=\"\">\n           <p><var>expression</var> matches either the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-source\" id=\"ref-for-grammardef-host-source③\"><code>host-source</code></a> or\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source⑧\"><code>scheme-source</code></a> grammar, <var>name</var> is \"<code>script-src</code>\", amd <var>list</var>\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②②\">contains</a> the token \"<a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-strict-dynamic\" id=\"ref-for-grammardef-strict-dynamic②\"><code>'strict-dynamic'</code></a>\"</p>\n          </li><li data-md=\"\">\n           <p><var>name</var> is \"<code>plugin-types</code>\", and <var>expression</var> does not match the\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-serialized-source-list\" id=\"ref-for-grammardef-serialized-source-list\"><code>serialized-source-list</code></a> grammar</p>\n         </li></ul>"
             },
             {
               "html": "If <var>expression</var> is the U+002A ASTERISK character (<code>*</code>):",
@@ -520,7 +626,7 @@
               ]
             },
             {
-              "html": "If <var>expression</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source⑤\">scheme-source</a> grammar:",
+              "html": "If <var>expression</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source⑨\">scheme-source</a> grammar:",
               "rationale": "if",
               "steps": [
                 {
@@ -532,14 +638,14 @@
               ]
             },
             {
-              "html": "If <var>expression</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-source\" id=\"ref-for-grammardef-host-source②\">host-source</a> grammar:",
+              "html": "If <var>expression</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-source\" id=\"ref-for-grammardef-host-source④\">host-source</a> grammar:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part①\">scheme-part</a> is \"http\", append the result of\n  concatenating \"https://\", <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-part\" id=\"ref-for-grammardef-host-part\">host-part</a>, <var>expression</var>’s\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part\">port-part</a>, and <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-path-part\" id=\"ref-for-grammardef-path-part\">path-part</a> to <var>result</var>.</p>"
+                  "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part④\">scheme-part</a> is \"http\", append the result of\n  concatenating \"https://\", <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-part\" id=\"ref-for-grammardef-host-part③\">host-part</a>, <var>expression</var>’s\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part③\">port-part</a>, and <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-path-part\" id=\"ref-for-grammardef-path-part③\">path-part</a> to <var>result</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part②\">scheme-part</a> is \"ws\", append the result of\n  concatenating \"wss://\", <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-part\" id=\"ref-for-grammardef-host-part①\">host-part</a>, <var>expression</var>’s\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part①\">port-part</a>, and <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-path-part\" id=\"ref-for-grammardef-path-part①\">path-part</a> to <var>result</var>.</p>"
+                  "html": "<p>If <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part⑤\">scheme-part</a> is \"ws\", append the result of\n  concatenating \"wss://\", <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-part\" id=\"ref-for-grammardef-host-part④\">host-part</a>, <var>expression</var>’s\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part④\">port-part</a>, and <var>expression</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-path-part\" id=\"ref-for-grammardef-path-part④\">path-part</a> to <var>result</var>.</p>"
                 }
               ]
             },
@@ -559,7 +665,7 @@
     {
       "name": "source expression/wildcard port",
       "href": "https://w3c.github.io/webappsec-cspee/#source-expression-wildcard-port",
-      "html": "A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression④\">source expression</a> has a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"source expression\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"source-expression-wildcard-port\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">wildcard port</dfn> if the\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part②\"><code>port-part</code></a> of the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression⑤\">source expression</a> is an U+002A ASTERISK character (<code>*</code>).",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression⑥\">source expression</a> has a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"source expression\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"source-expression-wildcard-port\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">wildcard port</dfn> if the\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part⑤\"><code>port-part</code></a> of the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression⑦\">source expression</a> is an U+002A ASTERISK character (<code>*</code>).",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -578,34 +684,34 @@
           ]
         },
         {
-          "html": "<p>Let <var>scheme A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part④\"><code>scheme-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+          "html": "<p>Let <var>scheme A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part⑦\"><code>scheme-part</code></a>, if present, and <code>null</code> otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>scheme B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part⑤\"><code>scheme-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+          "html": "<p>Let <var>scheme B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part⑧\"><code>scheme-part</code></a>, if present, and <code>null</code> otherwise.</p>"
         },
         {
-          "html": "<p>If the <var>scheme A</var> does not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#scheme-part-match\" id=\"ref-for-scheme-part-match①\">scheme-part match</a> <var>scheme B</var>, and <var>scheme B</var> does not\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#scheme-part-match\" id=\"ref-for-scheme-part-match②\">scheme-part match</a> <var>scheme A</var>, return \"<code>Not Similar</code>\".</p>"
+          "html": "<p>If the <var>scheme A</var> does not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#scheme-part-match\" id=\"ref-for-scheme-part-match②\">scheme-part match</a> <var>scheme B</var>, and <var>scheme B</var> does not\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#scheme-part-match\" id=\"ref-for-scheme-part-match③\">scheme-part match</a> <var>scheme A</var>, return \"<code>Not Similar</code>\".</p>"
         },
         {
-          "html": "<p>If <var>A</var> or <var>B</var> matches <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source⑦\"><code>scheme-source</code></a> grammar, return \"<code>Similar</code>\".</p>"
+          "html": "<p>If <var>A</var> or <var>B</var> matches <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①①\"><code>scheme-source</code></a> grammar, return \"<code>Similar</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>host A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-part\" id=\"ref-for-grammardef-host-part③\"><code>host-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+          "html": "<p>Let <var>host A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-part\" id=\"ref-for-grammardef-host-part⑥\"><code>host-part</code></a>, if present, and <code>null</code> otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>host B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-part\" id=\"ref-for-grammardef-host-part④\"><code>host-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+          "html": "<p>Let <var>host B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-part\" id=\"ref-for-grammardef-host-part⑦\"><code>host-part</code></a>, if present, and <code>null</code> otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>port A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part③\"><code>port-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+          "html": "<p>Let <var>port A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part⑥\"><code>port-part</code></a>, if present, and <code>null</code> otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>port B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part④\"><code>port-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+          "html": "<p>Let <var>port B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part⑦\"><code>port-part</code></a>, if present, and <code>null</code> otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>path A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-path-part\" id=\"ref-for-grammardef-path-part②\"><code>path-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+          "html": "<p>Let <var>path A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-path-part\" id=\"ref-for-grammardef-path-part⑤\"><code>path-part</code></a>, if present, and <code>null</code> otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>path B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-path-part\" id=\"ref-for-grammardef-path-part③\"><code>path-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+          "html": "<p>Let <var>path B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-path-part\" id=\"ref-for-grammardef-path-part⑥\"><code>path-part</code></a>, if present, and <code>null</code> otherwise.</p>"
         },
         {
           "html": "<p>Return \"<code>Not Similar</code>\" if any of the following is true:</p>",
@@ -619,187 +725,297 @@
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> (<var>response</var>), a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a> (<var>request</var>), and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#serialized-csp\" id=\"ref-for-serialized-csp①⓪\">serialized CSP</a>-or-null\n  (<var>requiredCSP</var>), this algorithm returns \"<code>Allowed</code>\" or \"<code>Blocked</code>\" as appropriate:",
+      "name": "subsume csp list",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑦\">content security policy object</a> <var>subsuming policy</var> with an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin④\">origin</a>\n  (<var>subsuming origin</var>) and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑧\">content security policy object</a> objects <var>policy list</var>\n  with an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑤\">origin</a> (<var>origin</var>), this algorithm returns \"<code>Subsumes</code>\" if\n  <var>subsuming policy</var> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#content-security-policy-object-subsume\" id=\"ref-for-content-security-policy-object-subsume⑦\">subsumes</a> <var>policy list</var>, and returns \"<code>Does   Not Subsume</code>\" otherwise.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Return \"<code>Allowed</code>\" if <var>requiredCSP</var> is <code>null</code>.</p>"
+          "html": "<p>If <var>subsuming policy</var> is <code>null</code>, return \"<code>Subsumes</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>required policy</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#parse-serialized-csp\" id=\"ref-for-parse-serialized-csp①\">parsing</a> <var>requiredCSP</var>\n  as \"<code>enforce</code>\".</p>"
+          "html": "<p>If <var>subsuming policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-disposition\" id=\"ref-for-content-security-policy-object-disposition④\">disposition</a> is \"<code>report</code>\", return\n  \"<code>Subsumes</code>\".</p>"
         },
         {
-          "html": "<p>If the <a href=\"https://w3c.github.io/webappsec-cspee/#origin-allowed\">§ 4.2 Does response allow blanket enforcement of policy from request?</a> algorithm returns \"<code>Allowed</code>\" when executed upon <var>response</var> and\n  <var>request</var>, return \"<code>Allowed</code>\".</p>"
+          "html": "<p>If <var>subsuming policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set②④\">directive set</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty④\">is empty</a>,\n  return \"<code>Subsumes</code>\".</p>"
         },
         {
-          "html": "<p>If the <a href=\"https://w3c.github.io/webappsec-cspee/#subsume-policy-list\">§ 4.3 Does subsuming policy subsume policy list given their respective origins?</a> algorithm returns \"<code>Subsumes</code>\" when executed upon\n  <var>required policy</var>, <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a>, the result of\n  <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-responses-content-security-policies\" id=\"ref-for-abstract-opdef-parse-a-responses-content-security-policies\">parsing</a> <var>response</var>’s Content Security\n  Policies, and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>, return \"<code>Allowed</code>\".</p>"
+          "html": "<p>If <var>policy list</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑤\">is empty</a> or <code>null</code>, return \"<code>Does Not Subsume</code>\".</p>"
         },
         {
-          "html": "<p>Return \"<code>Blocked</code>\".</p>"
+          "html": "<p>Let <var>effective policy</var> the result of executing <a href=\"https://w3c.github.io/webappsec-cspee/#intersection-policy-list\">§ 3.1.1 CSP List intersectioni</a> given\n  <var>policy list</var> and <var>origin</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of executing <a href=\"https://w3c.github.io/webappsec-cspee/#subsume-policy\">§ 3.2.2 Policy Subsumption</a> given <var>subsuming policy</var>,\n  <var>subsuming origin</var>, <var>effective policy</var>, and <var>origin</var>.</p>"
         }
       ]
     },
     {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a> (<var>response</var>), and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②\">request</a> (<var>request</var>), this algorithm returns\n  \"<code>Allowed</code>\" if the former allows the latter to enforce arbitrary policy, and \"<code>Not Allowed</code>\"\n  otherwise:",
-      "rationale": "if",
+      "name": "policy subsumption",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object⑨\">content security policy object</a> <var>A</var> with an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin\">origin</a> (<var>origin A</var>) and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object①⓪\">content security policy object</a> <var>B</var> with an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin①\">origin</a> (<var>origin B</var>), this algorithm\n  returns \"<code>Subsumes</code>\" if <var>A</var> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#content-security-policy-object-subsume\" id=\"ref-for-content-security-policy-object-subsume⑧\">subsumes</a> <var>B</var>, and returns \"<code>Does   Not Subsume</code>\" otherwise.",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url①\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#local-scheme\" id=\"ref-for-local-scheme\">local scheme</a>, return \"<code>Allowed</code>\".</p>"
+          "html": "<p>If <var>A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set②⑤\">directive set</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑥\">is empty</a>, return\n  \"<code>Subsumes</code>\".</p>"
         },
         {
-          "html": "If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a> has a header named `<code><a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-cspee/#http-headerdef-allow-csp-from\" id=\"ref-for-http-headerdef-allow-csp-from⑥\">Allow-CSP-From</a></code>` (<var>header</var>):",
-          "rationale": "if",
+          "html": "For each <var>directive A</var> in <var>A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set②⑥\">directive set</a>:",
+          "rationale": "let",
           "steps": [
             {
-              "html": "<p>If <var>header</var>’s value is \"<code>*</code>\", return \"<code>Allowed</code>\".</p>"
+              "html": "<p>Let <var>directive name</var> be <var>directive A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name②②\">name</a>.</p>"
             },
             {
-              "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin①\">origin</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">serialized</a> and\n  <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encoded</a> is <var>header</var>’s value, return \"<code>Allowed</code>\".</p>"
+              "html": "<p>If <var>directive name</var> is \"<code>default-src</code>\", \"<code>report-uri</code>\", \"<code>report-to</code>\",\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①②\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>effective directive A</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#effective-directive-value\" id=\"ref-for-effective-directive-value②\">effective directive value</a> for <var>directive name</var> and\n  <var>A</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>effective directive B</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#effective-directive-value\" id=\"ref-for-effective-directive-value③\">effective directive value</a> for <var>directive name</var> and\n  <var>B</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>effective directive A</var> is <code>null</code>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①③\">continue</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>effective directive B</var> is <code>null</code>, return \"<code>Does Not Subsume</code>\".</p>"
+            },
+            {
+              "html": "If <var>directive A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name②③\">name</a> is \"<code>frame-ancestors</code>\":",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>effective directive B</var> is « \"<code>'none'</code>\" », <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①④\">continue</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>effective directive A</var> is « \"<code>'none'</code>\" », return \"<code>Does Not Subsume</code>\".</p>"
+                },
+                {
+                  "html": "For each <var>expression B</var> in <var>effective directive B</var>:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>found match</var> be <code>false</code>.</p>"
+                    },
+                    {
+                      "html": "For each <var>expression A</var> in <var>effective directive A</var>:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "<p>If <a href=\"https://w3c.github.io/webappsec-cspee/#subsume-source-expressions\">§ 3.2.4 Source expression subsumption</a> returns \"<code>Subsumes</code>\" given <var>expression A</var>\n  and <var>expression B</var>, set <var>found match</var> to <code>true</code>. Break out of this inner loop.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>If <var>found match</var> is <code>false</code>, return \"<code>Does Not Subsume</code>\".</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "If <var>directive A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name②④\">name</a> is \"<code>plugin-types</code>\":",
+              "rationale": "for",
+              "steps": [
+                {
+                  "html": "For each <var>type B</var> in <var>effective directive B</var>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>effective directive A</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②③\">contain</a> <var>type B</var>, return \"<code>Does Not                   Subsume</code>\".</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "If <var>directive A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name②⑤\">name</a> is \"<code>sandbox</code>\":",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>flags A</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#parse-a-sandboxing-directive\" id=\"ref-for-parse-a-sandboxing-directive\">parsing a sandboxing directive</a> given\n  <var>effective directive A</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>flags B</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#parse-a-sandboxing-directive\" id=\"ref-for-parse-a-sandboxing-directive①\">parsing a sandboxing directive</a> given\n  <var>effective directive B</var>.</p>"
+                },
+                {
+                  "html": "For each <var>flag</var> in <var>flags A</var>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>flags B</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②④\">contain</a> <var>flag</var>, return \"<code>Does Not Subsume</code>\".</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>directive A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name②⑥\">name</a> is \"<code>disown-opener</code>\", <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⑤\">continue</a>.</p>"
+            },
+            {
+              "html": "Otherwise:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-cspee/#subsume-source-list\">§ 3.2.3 Source List Subsumption</a> is \"<code>Does Not Subsume</code>\" given\n  <var>effective directive A</var>, <var>origin A</var>, <var>directive name</var>, <var>effective directive B</var>,\n  <var>origin B</var>, and <var>directive name</var>, return \"<code>Does Not Subsume</code>\".</p>"
+                }
+              ]
             }
           ]
         },
         {
-          "html": "<p>Return \"<code>Not Allowed</code>\".</p>"
+          "html": "<p>Return \"<code>Subsumes</code>\".</p>"
         }
       ]
     },
     {
-      "html": "Given two expressions matching the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①⓪\"><code>scheme-source</code></a> or <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-source\" id=\"ref-for-grammardef-host-source⑤\"><code>host-source</code></a>\n  grammar (<var>A</var> and <var>B</var>), return their <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#source-expression-intersection\" id=\"ref-for-source-expression-intersection②\">intersection</a> if <var>A</var> is\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#source-expression-similar\" id=\"ref-for-source-expression-similar②\">source-expression similar</a> to <var>B</var>. Otherwise, return <code>null</code>.",
-      "rationale": "if",
+      "name": "source list subsumption",
+      "href": "https://w3c.github.io/webappsec-cspee/#directive-contains",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives③⑤\">directive</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"directive\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"directive-contains\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">contains</dfn> a given <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression⑧\">source expression</a> if the\n  expression is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②⑤\">contained</a> by its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②⑦\">value</a>.",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>A</var> is not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#source-expression-similar\" id=\"ref-for-source-expression-similar③\">source-expression similar</a> to <var>B</var>, return <code>null</code>.</p>"
+          "html": "<p>If <var>directive A</var> is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②\">ASCII case-insensitive</a> match to <var>directive B</var>, return \"<code>Does       Not Subsume</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>source</var> be an empty string.</p>"
+          "html": "<p>If <var>A</var> is empty or <var>B</var> is <code>none</code>, return \"<code>Subsumes</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>scheme A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part⑦\"><code>scheme-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+          "html": "<p>If <var>B</var> is empty or <var>A</var> is <code>none</code>, return \"<code>Does Not Subsume</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>scheme B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part⑧\"><code>scheme-part</code></a>, if present, and <code>null</code> otherwise.</p>"
+          "html": "<p>If <var>directive B</var> is \"<code>script-src</code>\" and <var>B</var> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#directive-contains\" id=\"ref-for-directive-contains\">contains</a> a\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source③\"><code>keyword-source</code></a> expression \"<code>strict-dynamic</code>\" but <var>A</var> does not contain it,\n  return \"<code>Does Not Subsume</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>more secure scheme B</var> be <code>true</code> if <var>scheme A</var> does not <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#scheme-part-match\" id=\"ref-for-scheme-part-match③\"><code>scheme-part</code> match</a>\n  <var>scheme B</var>, and <code>false</code> otherwise.</p>"
-        },
-        {
-          "html": "<p>Append <var>scheme A</var> and \":\" to <var>source</var> if <var>scheme A</var> is not <code>null</code> and <var>more secure scheme B</var>\n  is <code>false</code>. Otherwise, append <var>scheme B</var> and \":\" to <var>source</var> if <var>scheme B</var> is not <code>null</code>.</p>"
-        },
-        {
-          "html": "<p>If both <var>A</var> and <var>B</var> match the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①①\"><code>scheme-source</code></a> grammar, return <var>source</var>.</p>"
-        },
-        {
-          "html": "<p>Append \"//\" to <var>source</var> if it is not empty.</p>"
-        },
-        {
-          "html": "<p>Let <var>host A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-part\" id=\"ref-for-grammardef-host-part⑥\"><code>host-part</code></a>, if present, and <code>null</code> otherwise.</p>"
-        },
-        {
-          "html": "<p>Let <var>host B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-part\" id=\"ref-for-grammardef-host-part⑦\"><code>host-part</code></a>, if present, and <code>null</code> otherwise.</p>"
-        },
-        {
-          "html": "If <var>host A</var> is not <code>null</code>:",
+          "html": "If <var>directive B</var> is \"<code>script-src</code>\" or \"<code>style-src</code>\":",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>host B</var> is <code>null</code>, append <var>host A</var> to <var>source</var>. Continue to the next step in the main\n   algorithm.</p>"
+              "html": "<p>If <var>B</var> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#directive-contains\" id=\"ref-for-directive-contains①\">contains</a> a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source④\"><code>keyword-source</code></a> expression \"<code>unsafe-eval</code>\"\n  but <var>A</var> does not contain it, return \"<code>Does Not Subsume</code>\".</p>"
             },
             {
-              "html": "<p>If <var>A</var> doesn’t match the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①②\"><code>scheme-source</code></a> grammar and doesn’t have a\n   <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#source-expression-wildcard-host\" id=\"ref-for-source-expression-wildcard-host③\">wildcard host</a>, append <var>host A</var> to <var>source</var>.</p>"
+              "html": "<p>If <var>B</var> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#directive-contains\" id=\"ref-for-directive-contains②\">contains</a> a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source⑤\"><code>keyword-source</code></a> expression\n  \"<code>unsafe-hashed-attributes</code>\" but <var>A</var> does not contain it, return \"<code>Does Not Subsume</code>\".</p>"
             },
             {
-              "html": "<p>Otherwise, append <var>host B</var> to <var>source</var>.</p>"
+              "html": "<p>Let <var>type B</var> be \"<code>script</code>\" if <var>directive B</var> is \"<code>script-src</code>\" and \"<code>style</code>\" otherwise.\n  Similarly, let <var>type A</var> be \"<code>script</code>\" if <var>directive A</var> is \"<code>script-src</code>\" and \"<code>style</code>\"\n  otherwise.</p>"
+            },
+            {
+              "html": "<p>If <a href=\"https://w3c.github.io/webappsec-csp/#allow-all-inline\"><cite>Content Security Policy 3</cite> § 6.7.3.2 Does a source list allow all inline behavior for type?</a> returns \"<code>Allows</code>\" given <var>B</var> with <var>type B</var>, but returns\n  \"<code>Does Not Allow</code>\" given <var>A</var> with <var>type A</var>, return \"<code>Does Not Subsume</code>\".</p>"
             }
           ]
         },
         {
-          "html": "<p>If <var>host A</var> is <code>null</code>, append <var>host B</var> to <var>source</var>.</p>"
+          "html": "<p>Let <var>list A</var> and <var>list B</var> be empty lists.</p>"
         },
         {
-          "html": "<p>Let <var>port A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part⑥\"><code>port-part</code></a>, if present, and <code>null</code> otherwise.</p>"
-        },
-        {
-          "html": "<p>Let <var>port B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-port-part\" id=\"ref-for-grammardef-port-part⑦\"><code>port-part</code></a>, if present, and <code>null</code> otherwise.</p>"
-        },
-        {
-          "html": "<p>If <var>port A</var> is <code>null</code>, append \":\" and <var>port B</var> to <var>source</var> if it is not <code>null</code>.</p>"
-        },
-        {
-          "html": "If <var>port A</var> is not <code>null</code>:",
+          "html": "For each <var>expression A</var> in <var>A</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>port B</var> is <code>null</code>, append \":\" and <var>port A</var> to <var>source</var>. Continue to the next step in\n   the main algorithm.</p>"
+              "html": "<p>If <var>expression A</var> is \"<code>self</code>\", append a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-source\" id=\"ref-for-grammardef-host-source⑤\"><code>host-source</code></a>, returned by\n  <a href=\"https://w3c.github.io/webappsec-cspee/#rewrite-self\">§ 4.2.1 Rewrite 'self' into a host-source expression for origin.</a> given <var>origin A</var> to <var>list A</var>.</p>"
             },
             {
-              "html": "<p>If <var>A</var> doesn’t have a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#source-expression-wildcard-port\" id=\"ref-for-source-expression-wildcard-port①\">wildcard port</a> and <var>more secure scheme B</var> is\n   <code>false</code>, append \":\" and <var>port A</var> to <var>source</var>.</p>"
+              "html": "If <var>expression A</var> matches the U+002A ASTERISK character (<code>*</code>), append to <var>list A</var> the\n  following <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①②\"><code>scheme-source</code></a> expressions: \"<code>ftp:</code>\", \"<code>http:</code>\", \"<code>https:</code>\",\n  \"<code>ws:</code>\", \"<code>wss:</code>\", and <var>origin A</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme①\">scheme</a>.",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>directive A</var> is either \"<code>img-src</code>\" or \"<code>media-src</code>\", append a\n   <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①③\"><code>scheme-source</code></a> expression \"<code>data:</code>\" to <var>list A</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>directive A</var> is \"<code>media-src</code>\", append a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①④\"><code>scheme-source</code></a> expression\n   \"<code>blob:</code>\" to <var>list A</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⑥\">Continue</a> to the next <var>expression A</var>.</p>"
+                }
+              ]
             },
             {
-              "html": "<p>Otherwise, append \":\" and <var>port B</var> to <var>source</var>.</p>"
+              "html": "<p>If <var>expression A</var> does not match <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source⑥\"><code>keyword-source</code></a> grammar, append\n   <var>expression A</var> to <var>list A</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Let <var>path A</var> be <var>A</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-path-part\" id=\"ref-for-grammardef-path-part⑤\"><code>path-part</code></a>, if present, and <code>null</code> otherwise.</p>"
-        },
-        {
-          "html": "<p>Let <var>path B</var> be <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-path-part\" id=\"ref-for-grammardef-path-part⑥\"><code>path-part</code></a>, if present, and <code>null</code> otherwise.</p>"
-        },
-        {
-          "html": "<p>If <var>path A</var> is <code>null</code>, append <var>path B</var> to <var>source</var> if it is not <code>null</code>.</p>"
-        },
-        {
-          "html": "If <var>path A</var> is not <code>null</code>:",
+          "html": "For each <var>expression B</var> in <var>B</var>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>path B</var> is <code>null</code>, return the result of appending <var>path A</var> to <var>source</var>.</p>"
+              "html": "<p>If <var>expression B</var> is \"<code>self</code>\", append a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-source\" id=\"ref-for-grammardef-host-source⑥\"><code>host-source</code></a>, returned by\n  <a href=\"https://w3c.github.io/webappsec-cspee/#rewrite-self\">§ 4.2.1 Rewrite 'self' into a host-source expression for origin.</a> given <var>origin B</var> to <var>list B</var>.</p>"
             },
             {
-              "html": "<p>If <var>path A</var> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#path-part-match\" id=\"ref-for-path-part-match②\"><code>path-part</code> matches</a> <var>path B</var>, append <var>path A</var> to <var>source</var>.</p>"
+              "html": "If <var>expression B</var> matches the U+002A ASTERISK character (<code>*</code>), append to <var>list B</var> the\n  following <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①⑤\"><code>scheme-source</code></a> expressions: \"<code>ftp:</code>\", \"<code>http:</code>\", \"<code>https:</code>\",\n  \"<code>ws:</code>\", \"<code>wss:</code>\", and <var>origin B</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme②\">scheme</a>.",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>directive B</var> is either \"<code>img-src</code>\" or \"<code>media-src</code>\", append a\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①⑥\"><code>scheme-source</code></a> expression \"<code>data:</code>\" to <var>list B</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>directive B</var> is \"<code>media-src</code>\", append a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①⑦\"><code>scheme-source</code></a> expression\n  \"<code>blob:</code>\" to <var>list B</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⑦\">Continue</a> to the next <var>expression B</var>.</p>"
+                }
+              ]
             },
             {
-              "html": "<p>Otherwise, append <var>path B</var> to <var>source</var>.</p>"
+              "html": "<p>If <var>expression B</var> does not match <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source⑦\"><code>keyword-source</code></a> grammar, append\n  <var>expression B</var> to <var>list B</var>.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return <var>source</var>.</p>"
+          "html": "<p>If <var>list B</var> is empty, return \"<code>Subsumes</code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>list A</var> is empty, return \"<code>Does Not Subsume</code>\".</p>"
+        },
+        {
+          "html": "For each <var>expression B</var> in <var>list B</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>expression B</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-source\" id=\"ref-for-grammardef-hash-source⑦\"><code>hash-source</code></a> gramar, or\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-nonce-source\" id=\"ref-for-grammardef-nonce-source⑥\"><code>nonce-source</code></a> grammar, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⑧\">continue</a> to the next expression\n  unless <var>directive A</var> is \"<code>script-src</code>\" or \"<code>style-src</code>\".</p>"
+            },
+            {
+              "html": "<p>Let <var>found match</var> be <code>false</code>.</p>"
+            },
+            {
+              "html": "For each <var>expression A</var> in <var>list A</var>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <a href=\"https://w3c.github.io/webappsec-cspee/#subsume-source-expressions\">§ 3.2.4 Source expression subsumption</a> returns \"<code>Subsumes</code>\" given <var>expression A</var> and\n  <var>expression B</var>, set <var>found match</var> to <code>true</code>. Break out of this inner loop.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>found match</var> is <code>false</code>, return \"<code>Does Not Subsume</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Subsumes</code>\".</p>"
         }
       ]
     },
     {
-      "html": "Given an origin (<var>origin</var>), this algorithm returns a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-source\" id=\"ref-for-grammardef-host-source⑥\"><code>host-source</code></a> expression that\n  has the same effect as <code>'self'</code> for that origin:",
-      "rationale": "if",
+      "name": "source expression subsumption",
+      "html": "Given two <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression⑨\">source expressions</a> <var>A</var> and <var>B</var>, this algorithm returns \"<code>Subsumes</code>\" if <var>A</var>\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#content-security-policy-object-subsume\" id=\"ref-for-content-security-policy-object-subsume①④\">subsumes</a> <var>B</var>, and returns \"<code>Does Not Subsume</code>\" otherwise.",
+      "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>origin</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque\">opaque origin</a>, return the empty string.</p>"
+          "html": "<p class=\"assertion\">Assert: Neither <var>A</var> nor <var>B</var> match the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source⑧\"><code>keyword-source</code></a> grammar.</p>"
         },
         {
-          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin①\">ASCII serialization</a> of <var>origin</var>.</p>"
-        }
-      ]
-    },
-    {
-      "html": "Given two <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression⑦\">source expressions</a> <var>A</var> and <var>B</var>, this algorithm returns \"<code>Subsumes</code>\" if <var>A</var>\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#content-security-policy-object-subsume\" id=\"ref-for-content-security-policy-object-subsume④\">subsumes</a> <var>B</var>, and returns \"<code>Does Not Subsume</code>\" otherwise.",
-      "rationale": "assert",
-      "steps": [
-        {
-          "html": "<p class=\"assertion\">Assert: Neither <var>A</var> nor <var>B</var> match the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source③\"><code>keyword-source</code></a> grammar.</p>"
-        },
-        {
-          "html": "If both <var>A</var> and <var>B</var> match either <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-source\" id=\"ref-for-grammardef-host-source⑦\"><code>host-source</code></a> or\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①③\"><code>scheme-source</code></a> grammar:",
+          "html": "If both <var>A</var> and <var>B</var> match either <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-source\" id=\"ref-for-grammardef-host-source⑦\"><code>host-source</code></a> or\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①⑧\"><code>scheme-source</code></a> grammar:",
           "rationale": "if",
           "steps": [
             {
               "html": "<p>If <a href=\"https://w3c.github.io/webappsec-csp/#match-schemes\"><cite>Content Security Policy 3</cite> § 6.7.2.9 scheme-part matching</a> returns \"<code>Does Not Match</code>\" given <var>A</var>’s\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part⑨\"><code>scheme-part</code></a> (or <code>null</code> if <var>A</var> does not contain a\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part①⓪\"><code>scheme-part</code></a>) and <var>B</var>’s <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part①①\"><code>scheme-part</code></a> (or <code>null</code> if <var>B</var>\n  does not contain a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-part\" id=\"ref-for-grammardef-scheme-part①②\"><code>scheme-part</code></a>), return \"<code>Does Not Subsume</code>\".</p>"
             },
             {
-              "html": "If <var>A</var> or <var>B</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①④\"><code>scheme-source</code></a> grammar:",
+              "html": "If <var>A</var> or <var>B</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①⑨\"><code>scheme-source</code></a> grammar:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>A</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①⑤\"><code>scheme-source</code></a> grammar, return \"<code>Subsumes</code>\".\n  Otherwise, return \"<code>Does Not Subsume</code>\".</p>"
+                  "html": "<p>If <var>A</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source②⓪\"><code>scheme-source</code></a> grammar, return \"<code>Subsumes</code>\".\n  Otherwise, return \"<code>Does Not Subsume</code>\".</p>"
                 }
               ]
             },
@@ -836,7 +1052,7 @@
           ]
         },
         {
-          "html": "If both <var>A</var> and <var>B</var> match the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-source\" id=\"ref-for-grammardef-hash-source⑦\"><code>hash-source</code></a> grammar:",
+          "html": "If both <var>A</var> and <var>B</var> match the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-source\" id=\"ref-for-grammardef-hash-source⑨\"><code>hash-source</code></a> grammar:",
           "rationale": "if",
           "steps": [
             {
@@ -845,299 +1061,73 @@
           ]
         },
         {
-          "html": "If both <var>A</var> and <var>B</var> match the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-nonce-source\" id=\"ref-for-grammardef-nonce-source⑥\"><code>nonce-source</code></a> grammar:",
+          "html": "If both <var>A</var> and <var>B</var> match the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-nonce-source\" id=\"ref-for-grammardef-nonce-source⑦\"><code>nonce-source</code></a> grammar:",
           "rationale": "return",
           "steps": [
             {
               "html": "<p>Return \"<code>Subsumes</code>\".</p>"
             }
           ]
-        }
-      ]
-    },
-    {
-      "html": "Given two <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression⑦\">source expressions</a> <var>A</var> and <var>B</var>, this algorithm returns \"<code>Subsumes</code>\" if <var>A</var>\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#content-security-policy-object-subsume\" id=\"ref-for-content-security-policy-object-subsume④\">subsumes</a> <var>B</var>, and returns \"<code>Does Not Subsume</code>\" otherwise.",
-      "rationale": "return",
-      "steps": [
+        },
         {
           "html": "<p>Return \"<code>Does Not Subsume</code>\".</p>"
         }
       ]
     },
     {
-      "name": "directive/contains",
-      "href": "https://w3c.github.io/webappsec-cspee/#directive-contains",
-      "html": "A <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directives\" id=\"ref-for-directives③⑤\">directive</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"directive\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"directive-contains\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">contains</dfn> a given <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#source-expression\" id=\"ref-for-source-expression⑧\">source expression</a> if the\n  expression is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②③\">contained</a> by its <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-value\" id=\"ref-for-directive-value②⑦\">value</a>.",
-      "rationale": "if",
-      "steps": [
-        {
-          "html": "<p>If <var>directive A</var> is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\" id=\"ref-for-ascii-case-insensitive②\">ASCII case-insensitive</a> match to <var>directive B</var>, return \"<code>Does       Not Subsume</code>\".</p>"
-        },
-        {
-          "html": "<p>If <var>A</var> is empty or <var>B</var> is <code>none</code>, return \"<code>Subsumes</code>\".</p>"
-        },
-        {
-          "html": "<p>If <var>B</var> is empty or <var>A</var> is <code>none</code>, return \"<code>Does Not Subsume</code>\".</p>"
-        },
-        {
-          "html": "<p>If <var>directive B</var> is \"<code>script-src</code>\" and <var>B</var> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#directive-contains\" id=\"ref-for-directive-contains\">contains</a> a\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source④\"><code>keyword-source</code></a> expression \"<code>strict-dynamic</code>\" but <var>A</var> does not contain it,\n  return \"<code>Does Not Subsume</code>\".</p>"
-        },
-        {
-          "html": "If <var>directive B</var> is \"<code>script-src</code>\" or \"<code>style-src</code>\":",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>B</var> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#directive-contains\" id=\"ref-for-directive-contains①\">contains</a> a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source⑤\"><code>keyword-source</code></a> expression \"<code>unsafe-eval</code>\"\n  but <var>A</var> does not contain it, return \"<code>Does Not Subsume</code>\".</p>"
-            },
-            {
-              "html": "<p>If <var>B</var> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#directive-contains\" id=\"ref-for-directive-contains②\">contains</a> a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source⑥\"><code>keyword-source</code></a> expression\n  \"<code>unsafe-hashed-attributes</code>\" but <var>A</var> does not contain it, return \"<code>Does Not Subsume</code>\".</p>"
-            },
-            {
-              "html": "<p>Let <var>type B</var> be \"<code>script</code>\" if <var>directive B</var> is \"<code>script-src</code>\" and \"<code>style</code>\" otherwise.\n  Similarly, let <var>type A</var> be \"<code>script</code>\" if <var>directive A</var> is \"<code>script-src</code>\" and \"<code>style</code>\"\n  otherwise.</p>"
-            },
-            {
-              "html": "<p>If <a href=\"https://w3c.github.io/webappsec-csp/#allow-all-inline\"><cite>Content Security Policy 3</cite> § 6.7.3.2 Does a source list allow all inline behavior for type?</a> returns \"<code>Allows</code>\" given <var>B</var> with <var>type B</var>, but returns\n  \"<code>Does Not Allow</code>\" given <var>A</var> with <var>type A</var>, return \"<code>Does Not Subsume</code>\".</p>"
-            }
-          ]
-        },
-        {
-          "html": "<p>Let <var>list A</var> and <var>list B</var> be empty lists.</p>"
-        },
-        {
-          "html": "For each <var>expression A</var> in <var>A</var>:",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>expression A</var> is \"<code>self</code>\", append a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-source\" id=\"ref-for-grammardef-host-source⑧\"><code>host-source</code></a>, returned by\n  <a href=\"https://w3c.github.io/webappsec-cspee/#rewrite-self\">§ 4.2.2 Rewrite 'self' into a host-source expression for origin.</a> given <var>origin A</var> to <var>list A</var>.</p>"
-            },
-            {
-              "html": "If <var>expression A</var> matches the U+002A ASTERISK character (<code>*</code>), append to <var>list A</var> the\n  following <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①⑥\"><code>scheme-source</code></a> expressions: \"<code>ftp:</code>\", \"<code>http:</code>\", \"<code>https:</code>\",\n  \"<code>ws:</code>\", \"<code>wss:</code>\", and <var>origin A</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme①\">scheme</a>.",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "<p>If <var>directive A</var> is either \"<code>img-src</code>\" or \"<code>media-src</code>\", append a\n   <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①⑦\"><code>scheme-source</code></a> expression \"<code>data:</code>\" to <var>list A</var>.</p>"
-                },
-                {
-                  "html": "<p>If <var>directive A</var> is \"<code>media-src</code>\", append a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①⑧\"><code>scheme-source</code></a> expression\n   \"<code>blob:</code>\" to <var>list A</var>.</p>"
-                },
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①②\">Continue</a> to the next <var>expression A</var>.</p>"
-                }
-              ]
-            },
-            {
-              "html": "<p>If <var>expression A</var> does not match <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source⑦\"><code>keyword-source</code></a> grammar, append\n   <var>expression A</var> to <var>list A</var>.</p>"
-            }
-          ]
-        },
-        {
-          "html": "For each <var>expression B</var> in <var>B</var>:",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>expression B</var> is \"<code>self</code>\", append a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-source\" id=\"ref-for-grammardef-host-source⑨\"><code>host-source</code></a>, returned by\n  <a href=\"https://w3c.github.io/webappsec-cspee/#rewrite-self\">§ 4.2.2 Rewrite 'self' into a host-source expression for origin.</a> given <var>origin B</var> to <var>list B</var>.</p>"
-            },
-            {
-              "html": "If <var>expression B</var> matches the U+002A ASTERISK character (<code>*</code>), append to <var>list B</var> the\n  following <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source①⑨\"><code>scheme-source</code></a> expressions: \"<code>ftp:</code>\", \"<code>http:</code>\", \"<code>https:</code>\",\n  \"<code>ws:</code>\", \"<code>wss:</code>\", and <var>origin B</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-scheme\" id=\"ref-for-concept-origin-scheme②\">scheme</a>.",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "<p>If <var>directive B</var> is either \"<code>img-src</code>\" or \"<code>media-src</code>\", append a\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source②⓪\"><code>scheme-source</code></a> expression \"<code>data:</code>\" to <var>list B</var>.</p>"
-                },
-                {
-                  "html": "<p>If <var>directive B</var> is \"<code>media-src</code>\", append a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-scheme-source\" id=\"ref-for-grammardef-scheme-source②①\"><code>scheme-source</code></a> expression\n  \"<code>blob:</code>\" to <var>list B</var>.</p>"
-                },
-                {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①③\">Continue</a> to the next <var>expression B</var>.</p>"
-                }
-              ]
-            },
-            {
-              "html": "<p>If <var>expression B</var> does not match <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-keyword-source\" id=\"ref-for-grammardef-keyword-source⑧\"><code>keyword-source</code></a> grammar, append\n  <var>expression B</var> to <var>list B</var>.</p>"
-            }
-          ]
-        },
-        {
-          "html": "<p>If <var>list B</var> is empty, return \"<code>Subsumes</code>\".</p>"
-        },
-        {
-          "html": "<p>If <var>list A</var> is empty, return \"<code>Does Not Subsume</code>\".</p>"
-        },
-        {
-          "html": "For each <var>expression B</var> in <var>list B</var>:",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>expression B</var> matches the <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-hash-source\" id=\"ref-for-grammardef-hash-source⑧\"><code>hash-source</code></a> gramar, or\n  <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-nonce-source\" id=\"ref-for-grammardef-nonce-source⑦\"><code>nonce-source</code></a> grammar, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①④\">continue</a> to the next expression\n  unless <var>directive A</var> is \"<code>script-src</code>\" or \"<code>style-src</code>\".</p>"
-            },
-            {
-              "html": "<p>Let <var>found match</var> be <code>false</code>.</p>"
-            },
-            {
-              "html": "For each <var>expression A</var> in <var>list A</var>:",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "<p>If <a href=\"https://w3c.github.io/webappsec-cspee/#subsume-source-expressions\">§ 4.2.3 Does source expression A subsume source expression B?</a> returns \"<code>Subsumes</code>\" given <var>expression A</var> and\n  <var>expression B</var>, set <var>found match</var> to <code>true</code>. Break out of this inner loop.</p>"
-                }
-              ]
-            },
-            {
-              "html": "<p>If <var>found match</var> is <code>false</code>, return \"<code>Does Not Subsume</code>\".</p>"
-            }
-          ]
-        },
-        {
-          "html": "<p>Return \"<code>Subsumes</code>\".</p>"
-        }
-      ]
-    },
-    {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object①①\">content security policy object</a> <var>A</var> with an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin⑥\">origin</a> (<var>origin A</var>) and a\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object①②\">content security policy object</a> <var>B</var> with an <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin⑦\">origin</a> (<var>origin B</var>), this algorithm\n  returns \"<code>Subsumes</code>\" if <var>A</var> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#content-security-policy-object-subsume\" id=\"ref-for-content-security-policy-object-subsume①⓪\">subsumes</a> <var>B</var>, and returns \"<code>Does   Not Subsume</code>\" otherwise.",
-      "rationale": "if",
-      "steps": [
-        {
-          "html": "<p>If <var>A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set②④\">directive set</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty④\">is empty</a>, return\n  \"<code>Subsumes</code>\".</p>"
-        },
-        {
-          "html": "For each <var>directive A</var> in <var>A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set②⑤\">directive set</a>:",
-          "rationale": "let",
-          "steps": [
-            {
-              "html": "<p>Let <var>directive name</var> be <var>directive A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name②②\">name</a>.</p>"
-            },
-            {
-              "html": "<p>If <var>directive name</var> is \"<code>default-src</code>\", \"<code>report-uri</code>\", \"<code>report-to</code>\",\n  <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⑤\">continue</a>.</p>"
-            },
-            {
-              "html": "<p>Let <var>effective directive A</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#effective-directive-value\" id=\"ref-for-effective-directive-value②\">effective directive value</a> for <var>directive name</var> and\n  <var>A</var>.</p>"
-            },
-            {
-              "html": "<p>Let <var>effective directive B</var> be the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#effective-directive-value\" id=\"ref-for-effective-directive-value③\">effective directive value</a> for <var>directive name</var> and\n  <var>B</var>.</p>"
-            },
-            {
-              "html": "<p>If <var>effective directive A</var> is <code>null</code>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⑥\">continue</a>.</p>"
-            },
-            {
-              "html": "<p>If <var>effective directive B</var> is <code>null</code>, return \"<code>Does Not Subsume</code>\".</p>"
-            },
-            {
-              "html": "If <var>directive A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name②③\">name</a> is \"<code>frame-ancestors</code>\":",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "<p>If <var>effective directive B</var> is « \"<code>'none'</code>\" », <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⑦\">continue</a>.</p>"
-                },
-                {
-                  "html": "<p>If <var>effective directive A</var> is « \"<code>'none'</code>\" », return \"<code>Does Not Subsume</code>\".</p>"
-                },
-                {
-                  "html": "For each <var>expression B</var> in <var>effective directive B</var>:",
-                  "rationale": "let",
-                  "steps": [
-                    {
-                      "html": "<p>Let <var>found match</var> be <code>false</code>.</p>"
-                    },
-                    {
-                      "html": "For each <var>expression A</var> in <var>effective directive A</var>:",
-                      "rationale": "if",
-                      "steps": [
-                        {
-                          "html": "<p>If <a href=\"https://w3c.github.io/webappsec-cspee/#subsume-source-expressions\">§ 4.2.3 Does source expression A subsume source expression B?</a> returns \"<code>Subsumes</code>\" given <var>expression A</var>\n  and <var>expression B</var>, set <var>found match</var> to <code>true</code>. Break out of this inner loop.</p>"
-                        }
-                      ]
-                    },
-                    {
-                      "html": "<p>If <var>found match</var> is <code>false</code>, return \"<code>Does Not Subsume</code>\".</p>"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "html": "If <var>directive A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name②④\">name</a> is \"<code>plugin-types</code>\":",
-              "rationale": "for",
-              "steps": [
-                {
-                  "html": "For each <var>type B</var> in <var>effective directive B</var>:",
-                  "rationale": "if",
-                  "steps": [
-                    {
-                      "html": "<p>If <var>effective directive A</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②④\">contain</a> <var>type B</var>, return \"<code>Does Not                   Subsume</code>\".</p>"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "html": "If <var>directive A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name②⑤\">name</a> is \"<code>sandbox</code>\":",
-              "rationale": "let",
-              "steps": [
-                {
-                  "html": "<p>Let <var>flags A</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#parse-a-sandboxing-directive\" id=\"ref-for-parse-a-sandboxing-directive\">parsing a sandboxing directive</a> given\n  <var>effective directive A</var>.</p>"
-                },
-                {
-                  "html": "<p>Let <var>flags B</var> be the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#parse-a-sandboxing-directive\" id=\"ref-for-parse-a-sandboxing-directive①\">parsing a sandboxing directive</a> given\n  <var>effective directive B</var>.</p>"
-                },
-                {
-                  "html": "For each <var>flag</var> in <var>flags A</var>:",
-                  "rationale": "if",
-                  "steps": [
-                    {
-                      "html": "<p>If <var>flags B</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②⑤\">contain</a> <var>flag</var>, return \"<code>Does Not Subsume</code>\".</p>"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "html": "<p>If <var>directive A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#directive-name\" id=\"ref-for-directive-name②⑥\">name</a> is \"<code>disown-opener</code>\", <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①⑧\">continue</a>.</p>"
-            },
-            {
-              "html": "Otherwise:",
-              "rationale": "if",
-              "steps": [
-                {
-                  "html": "<p>If the result of executing <a href=\"https://w3c.github.io/webappsec-cspee/#subsume-source-list\">§ 4.2.4 Does source list A subsume source listB given their respective origins\n    and directive names?</a> is \"<code>Does Not Subsume</code>\" given\n  <var>effective directive A</var>, <var>origin A</var>, <var>directive name</var>, <var>effective directive B</var>,\n  <var>origin B</var>, and <var>directive name</var>, return \"<code>Does Not Subsume</code>\".</p>"
-                }
-              ]
-            }
-          ],
-          "additional": [
-            {
-              "html": "For each <var>directive A</var> in <var>A</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set②⑤\">directive set</a>:",
-              "rationale": "return",
-              "steps": [
-                {
-                  "html": "<p>Return \"<code>Subsumes</code>\".</p>"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "html": "Given a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object①③\">content security policy object</a> <var>subsuming policy</var> with an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑤\">origin</a>\n  (<var>subsuming origin</var>) and a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object\" id=\"ref-for-content-security-policy-object①④\">content security policy object</a> objects <var>policy list</var>\n  with an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin\" id=\"ref-for-concept-origin⑥\">origin</a> (<var>origin</var>), this algorithm returns \"<code>Subsumes</code>\" if\n  <var>subsuming policy</var> <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-cspee/#content-security-policy-object-subsume\" id=\"ref-for-content-security-policy-object-subsume①①\">subsumes</a> <var>policy list</var>, and returns \"<code>Does   Not Subsume</code>\" otherwise.",
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response\">response</a> (<var>response</var>), a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request①\">request</a> (<var>request</var>), and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#serialized-csp\" id=\"ref-for-serialized-csp①⓪\">serialized CSP</a>-or-null\n  (<var>requiredCSP</var>), this algorithm returns \"<code>Allowed</code>\" or \"<code>Blocked</code>\" as appropriate:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>subsuming policy</var> is <code>null</code>, return \"<code>Subsumes</code>\".</p>"
+          "html": "<p>Return \"<code>Allowed</code>\" if <var>requiredCSP</var> is <code>null</code>.</p>"
         },
         {
-          "html": "<p>If <var>subsuming policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-disposition\" id=\"ref-for-content-security-policy-object-disposition④\">disposition</a> is \"<code>report</code>\", return\n  \"<code>Subsumes</code>\".</p>"
+          "html": "<p>Let <var>required policy</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#parse-serialized-csp\" id=\"ref-for-parse-serialized-csp①\">parsing</a> <var>requiredCSP</var>\n  as \"<code>enforce</code>\".</p>"
         },
         {
-          "html": "<p>If <var>subsuming policy</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set②⑥\">directive set</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑤\">is empty</a>,\n  return \"<code>Subsumes</code>\".</p>"
+          "html": "<p>If the <a href=\"https://w3c.github.io/webappsec-cspee/#origin-allowed\">§ 4.2 Does response allow blanket enforcement of policy from request?</a> algorithm returns \"<code>Allowed</code>\" when executed upon <var>response</var> and\n  <var>request</var>, return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If <var>policy list</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑥\">is empty</a> or <code>null</code>, return \"<code>Does Not Subsume</code>\".</p>"
+          "html": "<p>If the <a href=\"https://w3c.github.io/webappsec-cspee/#subsume-csp-list\">§ 3.2.1 CSP List Subsumption</a> algorithm returns \"<code>Subsumes</code>\" when executed upon\n  <var>required policy</var>, <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin④\">origin</a>, the result of\n  <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-csp/#abstract-opdef-parse-a-responses-content-security-policies\" id=\"ref-for-abstract-opdef-parse-a-responses-content-security-policies\">parsing</a> <var>response</var>’s Content Security\n  Policies, and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>, return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>effective policy</var> the result of executing <a href=\"https://w3c.github.io/webappsec-cspee/#intersection-policy-list\">§ 3.1.1 CSP List intersection</a> given\n  <var>policy list</var> and <var>origin</var>.</p>"
+          "html": "<p>Return \"<code>Blocked</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "html": "Given a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response\" id=\"ref-for-concept-response①\">response</a> (<var>response</var>), and a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request②\">request</a> (<var>request</var>), this algorithm returns\n  \"<code>Allowed</code>\" if the former allows the latter to enforce arbitrary policy, and \"<code>Not Allowed</code>\"\n  otherwise:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url①\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#local-scheme\" id=\"ref-for-local-scheme\">local scheme</a>, return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>Return the result of executing <a href=\"https://w3c.github.io/webappsec-cspee/#subsume-policy\">§ 4.2.5 Does content security policy object A subsume content security policy object B given\n    their respective origins?</a> given <var>subsuming policy</var>,\n  <var>subsuming origin</var>, <var>effective policy</var>, and <var>origin</var>.</p>"
+          "html": "If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a> has a header named `<code><a data-link-type=\"http-header\" href=\"https://w3c.github.io/webappsec-cspee/#http-headerdef-allow-csp-from\" id=\"ref-for-http-headerdef-allow-csp-from⑥\">Allow-CSP-From</a></code>` (<var>header</var>):",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>header</var>’s value is \"<code>*</code>\", return \"<code>Allowed</code>\".</p>"
+            },
+            {
+              "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin⑤\">origin</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">serialized</a> and\n  <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encoded</a> is <var>header</var>’s value, return \"<code>Allowed</code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return \"<code>Not Allowed</code>\".</p>"
+        }
+      ]
+    },
+    {
+      "html": "Given an origin (<var>origin</var>), this algorithm returns a <a data-link-type=\"grammar\" href=\"https://w3c.github.io/webappsec-csp/#grammardef-host-source\" id=\"ref-for-grammardef-host-source⑧\"><code>host-source</code></a> expression that\n  has the same effect as <code>'self'</code> for that origin:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>origin</var> is an <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#concept-origin-opaque\" id=\"ref-for-concept-origin-opaque\">opaque origin</a>, return the empty string.</p>"
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin①\">ASCII serialization</a> of <var>origin</var>.</p>"
         }
       ]
     }

@@ -99,7 +99,7 @@
       "id": "intersection-policy-list",
       "href": "https://w3c.github.io/webappsec-cspee/#intersection-policy-list",
       "level": 4,
-      "title": "CSP List intersection",
+      "title": "CSP List intersectioni",
       "number": "3.1.1"
     },
     {
@@ -117,32 +117,46 @@
       "number": "3.1.3"
     },
     {
+      "id": "intersection-source-expression",
+      "href": "https://w3c.github.io/webappsec-cspee/#intersection-source-expression",
+      "level": 4,
+      "title": "Source Expression Intersection",
+      "number": "3.1.4"
+    },
+    {
+      "id": "intersection-source-expression-scheme-and-host",
+      "href": "https://w3c.github.io/webappsec-cspee/#intersection-source-expression-scheme-and-host",
+      "level": 5,
+      "title": "scheme-source and host-source intersections",
+      "number": "3.1.4.1"
+    },
+    {
       "id": "intersection-helpers",
       "href": "https://w3c.github.io/webappsec-cspee/#intersection-helpers",
       "level": 4,
       "title": "Intersection Helpers",
-      "number": "3.1.4"
+      "number": "3.1.5"
     },
     {
       "id": "effective-directive",
       "href": "https://w3c.github.io/webappsec-cspee/#effective-directive",
       "level": 5,
       "title": "Effective Directive Value",
-      "number": "3.1.4.1"
+      "number": "3.1.5.1"
     },
     {
       "id": "the-effective-source-list",
       "href": "https://w3c.github.io/webappsec-cspee/#the-effective-source-list",
       "level": 5,
       "title": "Effective Source List",
-      "number": "3.1.4.2"
+      "number": "3.1.5.2"
     },
     {
       "id": "similarity-source-expressions",
       "href": "https://w3c.github.io/webappsec-cspee/#similarity-source-expressions",
       "level": 5,
       "title": "Source Expression Similarity",
-      "number": "3.1.4.3"
+      "number": "3.1.5.3"
     },
     {
       "id": "subsumption",
@@ -150,6 +164,34 @@
       "level": 3,
       "title": "Subsumption",
       "number": "3.2"
+    },
+    {
+      "id": "subsume-csp-list",
+      "href": "https://w3c.github.io/webappsec-cspee/#subsume-csp-list",
+      "level": 4,
+      "title": "CSP List Subsumption",
+      "number": "3.2.1"
+    },
+    {
+      "id": "subsume-policy",
+      "href": "https://w3c.github.io/webappsec-cspee/#subsume-policy",
+      "level": 4,
+      "title": "Policy Subsumption",
+      "number": "3.2.2"
+    },
+    {
+      "id": "subsume-source-list",
+      "href": "https://w3c.github.io/webappsec-cspee/#subsume-source-list",
+      "level": 4,
+      "title": "Source List Subsumption",
+      "number": "3.2.3"
+    },
+    {
+      "id": "subsume-source-expressions",
+      "href": "https://w3c.github.io/webappsec-cspee/#subsume-source-expressions",
+      "level": 4,
+      "title": "Source expression subsumption",
+      "number": "3.2.4"
     },
     {
       "id": "algorithms",
@@ -173,46 +215,11 @@
       "number": "4.2"
     },
     {
-      "id": "intersection-source-expressions",
-      "href": "https://w3c.github.io/webappsec-cspee/#intersection-source-expressions",
-      "level": 4,
-      "title": "What is an intersection of two expressions matching scheme-source or host-source grammar A and B?",
-      "number": "4.2.1"
-    },
-    {
       "id": "rewrite-self",
       "href": "https://w3c.github.io/webappsec-cspee/#rewrite-self",
       "level": 4,
       "title": "Rewrite 'self' into a host-source expression for origin.",
-      "number": "4.2.2"
-    },
-    {
-      "id": "subsume-source-expressions",
-      "href": "https://w3c.github.io/webappsec-cspee/#subsume-source-expressions",
-      "level": 4,
-      "title": "Does source expression A subsume source expression B?",
-      "number": "4.2.3"
-    },
-    {
-      "id": "subsume-source-list",
-      "href": "https://w3c.github.io/webappsec-cspee/#subsume-source-list",
-      "level": 4,
-      "title": "Does source list A subsume source listB given their respective origins and directive names?",
-      "number": "4.2.4"
-    },
-    {
-      "id": "subsume-policy",
-      "href": "https://w3c.github.io/webappsec-cspee/#subsume-policy",
-      "level": 4,
-      "title": "Does content security policy object A subsume content security policy object B given their respective origins?",
-      "number": "4.2.5"
-    },
-    {
-      "id": "subsume-policy-list",
-      "href": "https://w3c.github.io/webappsec-cspee/#subsume-policy-list",
-      "level": 3,
-      "title": "Does subsuming policy subsume policy list given their respective origins?",
-      "number": "4.3"
+      "number": "4.2.1"
     },
     {
       "id": "security-considerations",
@@ -222,22 +229,22 @@
       "number": "5"
     },
     {
+      "id": "threat-model",
+      "href": "https://w3c.github.io/webappsec-cspee/#threat-model",
+      "level": 3,
+      "title": "Threat Model",
+      "number": "5.1"
+    },
+    {
       "id": "policy-enforcement",
       "href": "https://w3c.github.io/webappsec-cspee/#policy-enforcement",
       "level": 3,
       "title": "Policy Enforcement",
-      "number": "5.1"
-    },
-    {
-      "id": "header-injection",
-      "href": "https://w3c.github.io/webappsec-cspee/#header-injection",
-      "level": 3,
-      "title": "Header Injection",
       "number": "5.2"
     },
     {
-      "id": "header-reflection",
-      "href": "https://w3c.github.io/webappsec-cspee/#header-reflection",
+      "id": "header-reflection-and-injection",
+      "href": "https://w3c.github.io/webappsec-cspee/#header-reflection-and-injection",
       "level": 3,
       "title": "Header Reflection",
       "number": "5.3"
