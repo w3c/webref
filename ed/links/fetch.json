@@ -129,6 +129,7 @@
       "https://w3c.github.io/webappsec-secure-contexts/": {},
       "https://w3c.github.io/webappsec-subresource-integrity/": {},
       "https://w3c.github.io/webappsec-upgrade-insecure-requests/": {},
+      "https://w3c.github.io/webcrypto/": {},
       "https://w3c.github.io/webdriver-bidi/": {},
       "https://w3c.github.io/webtransport/": {},
       "https://webidl.spec.whatwg.org/": {},
@@ -619,11 +620,22 @@
           "upgrade-request"
         ]
       },
+      "https://w3c.github.io/webcrypto/": {
+        "anchors": [
+          "dfn-generate-a-random-uuid"
+        ]
+      },
       "https://w3c.github.io/webdriver-bidi/": {
         "anchors": [
           "webdriver-bidi-network-is-offline",
           "webdriver-bidi-emulated-user-agent",
-          "webdriver-bidi-emulated-language"
+          "webdriver-bidi-clone-network-request-body",
+          "webdriver-bidi-emulated-language",
+          "webdriver-bidi-fetch-error",
+          "webdriver-bidi-response-completed",
+          "webdriver-bidi-response-started",
+          "webdriver-bidi-before-request-sent",
+          "webdriver-bidi-clone-network-response-body"
         ]
       },
       "https://w3c.github.io/webtransport/": {
@@ -653,6 +665,7 @@
           "Exposed",
           "idl-undefined",
           "idl-boolean",
+          "dfn-iterable",
           "dfn-throw",
           "this",
           "dfn-value-pairs-to-iterate-over",
