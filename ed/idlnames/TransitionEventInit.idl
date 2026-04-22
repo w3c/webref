@@ -4,3 +4,8 @@ dictionary TransitionEventInit : EventInit {
   double elapsedTime = 0.0;
   CSSOMString pseudoElement = "";
 };
+
+// Source: CSS Transitions Module Level 2 (https://www.w3.org/TR/css-transitions-2/)
+partial dictionary TransitionEventInit {
+  CSSTransition? animation = null;
+};

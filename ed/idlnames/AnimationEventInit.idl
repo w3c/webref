@@ -4,3 +4,8 @@ dictionary AnimationEventInit : EventInit {
   double elapsedTime = 0.0;
   CSSOMString pseudoElement = "";
 };
+
+// Source: CSS Animations Module Level 2 (https://www.w3.org/TR/css-animations-2/)
+partial dictionary AnimationEventInit {
+  CSSAnimation? animation = null;
+};

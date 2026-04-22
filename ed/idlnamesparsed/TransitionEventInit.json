@@ -9,7 +9,15 @@
     "fragment": "dictionary TransitionEventInit : EventInit {\n  CSSOMString propertyName = \"\";\n  double elapsedTime = 0.0;\n  CSSOMString pseudoElement = \"\";\n};",
     "href": "https://drafts.csswg.org/css-transitions-1/#dictdef-transitioneventinit"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "CSS Transitions Module Level 2",
+        "url": "https://www.w3.org/TR/css-transitions-2/"
+      },
+      "fragment": "partial dictionary TransitionEventInit {\n  CSSTransition? animation = null;\n};"
+    }
+  ],
   "inheritance": {
     "name": "EventInit",
     "type": "dictionary",

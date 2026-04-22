@@ -8,6 +8,7 @@
       "constructors": {},
       "functions": {
         "Window": [
+          "AnimationEvent",
           "CSSAnimation"
         ]
       }
@@ -51,20 +52,98 @@
         "href": "https://drafts.csswg.org/css-animations-2/#cssanimation"
       }
     },
-    "idlExtendedNames": {},
+    "idlExtendedNames": {
+      "AnimationEvent": [
+        {
+          "fragment": "[Exposed=Window]\npartial interface AnimationEvent {\n  readonly attribute CSSAnimation? animation;\n};",
+          "type": "interface",
+          "name": "AnimationEvent",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "animation",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "CSSAnimation"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true,
+              "href": "https://drafts.csswg.org/css-animations-2/#dom-animationevent-animation"
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
+      ],
+      "AnimationEventInit": [
+        {
+          "fragment": "partial dictionary AnimationEventInit {\n  CSSAnimation? animation = null;\n};",
+          "type": "dictionary",
+          "name": "AnimationEventInit",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "animation",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "CSSAnimation"
+              },
+              "default": {
+                "type": "null"
+              },
+              "required": false,
+              "href": "https://drafts.csswg.org/css-animations-2/#dom-animationeventinit-animation"
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
     "globals": {},
     "exposed": {
       "Window": [
+        "AnimationEvent",
         "CSSAnimation"
       ]
     },
     "dependencies": {
+      "AnimationEvent": [
+        "CSSAnimation"
+      ],
+      "AnimationEventInit": [
+        "CSSAnimation"
+      ],
       "CSSAnimation": [
         "Animation",
         "CSSOMString"
       ]
     },
     "externalDependencies": [
+      "AnimationEvent",
+      "AnimationEventInit",
       "Animation",
       "CSSOMString"
     ],
