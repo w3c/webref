@@ -1699,6 +1699,39 @@
       ]
     },
     {
+      "html": "<strong>To evaluate the\n<span class=\"attr-name\">‘systemLanguage’</span>\nattribute</strong> with value <var>V</var>:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>tags</var> be the result of parsing <var>V</var> as a\n  <a href=\"https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#set-of-comma-separated-tokens\">set of comma-separated tokens</a>\n  <span class=\"syntax\">[<a href=\"https://w3c.github.io/svgwg/svg2-draft/refs.html#ref-html\">HTML</a>]</span>.</p>"
+        },
+        {
+          "html": "<p>Remove from <var>tags</var> any token that is the empty string.</p>"
+        },
+        {
+          "html": "<p>If <var>tags</var> is empty, return false.</p>"
+        },
+        {
+          "html": "<p>Let <var>user languages</var> be the user's ordered list of preferred languages.</p>"
+        },
+        {
+          "html": "For each <var>tag</var> in <var>tags</var>, for each <var>user-lang</var> in <var>user languages</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>tag</var> is an\n      <a href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\">ASCII case-insensitive</a>\n      match for <var>user-lang</var>, return true.</p>"
+            },
+            {
+              "html": "<p>If <var>user-lang</var> is an\n      <a href=\"https://infra.spec.whatwg.org/#ascii-case-insensitive\">ASCII case-insensitive</a>\n      prefix of <var>tag</var> and the code point in <var>tag</var> immediately\n      following the prefix is U+002D HYPHEN-MINUS (-), return true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return false.</p>"
+        }
+      ]
+    },
+    {
       "html": "On getting <a href=\"https://w3c.github.io/svgwg/svg2-draft/struct.html#__svg__SVGSVGElement__currentScale\">currentScale</a>,\nthe following steps are run:",
       "rationale": ".algorithm",
       "steps": [
