@@ -13,7 +13,6 @@
       "https://html.spec.whatwg.org/multipage/": {},
       "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-webappsec/": {},
-      "https://twitter.com/0x6D6172696F/status/810066803653308416": {},
       "https://url.spec.whatwg.org/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.rfc-editor.org/rfc/rfc3864": {},
@@ -23,14 +22,13 @@
       "https://www.w3.org/TR/CSP3/": {
         "anchors": [
           "multiple-policies",
+          "allow-all-inline",
           "match-schemes",
           "match-hosts",
           "match-ports",
-          "match-paths",
-          "allow-all-inline"
+          "match-paths"
         ]
       },
-      "https://www.w3.org/TR/csp-embedded-enforcement/": {},
       "https://www.w3.org/TR/css-values-4/": {},
       "https://www.w3.org/groups/wg/webappsec": {},
       "https://www.w3.org/groups/wg/webappsec/ipr": {},
@@ -73,8 +71,8 @@
           "concept-request-header-list",
           "http-origin",
           "http-new-header-syntax",
-          "concept-response",
           "concept-request-origin",
+          "concept-response",
           "concept-response-url",
           "local-scheme",
           "concept-response-header-list"
@@ -86,9 +84,9 @@
           "policy-container-csp-list",
           "concept-origin",
           "concept-origin-scheme",
+          "parse-a-sandboxing-directive",
           "ascii-serialisation-of-an-origin",
-          "concept-origin-opaque",
-          "parse-a-sandboxing-directive"
+          "concept-origin-opaque"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
@@ -156,11 +154,6 @@
           "content-security-policy-object-disposition"
         ]
       },
-      "https://w3c.github.io/webappsec-cspee/": {
-        "anchors": [
-          "policy-subsumed-by"
-        ]
-      },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
           "idl-DOMString"
@@ -187,20 +180,20 @@
           "grammardef-keyword-source",
           "grammardef-nonce-source",
           "grammardef-scheme-part",
+          "source-expression",
+          "grammardef-host-part",
+          "grammardef-port-part",
+          "grammardef-path-part",
+          "scheme-part-match",
+          "path-part-match",
           "grammardef-self",
           "grammardef-unsafe-inline",
           "grammardef-strict-dynamic",
           "grammardef-serialized-source-list",
-          "grammardef-host-part",
-          "grammardef-port-part",
-          "grammardef-path-part",
-          "source-expression",
-          "scheme-part-match",
           "host-part-match",
           "port-part-matches",
-          "path-part-match",
-          "abstract-opdef-parse-a-responses-content-security-policies",
           "source-list-allows-all-inline-behavior",
+          "abstract-opdef-parse-a-responses-content-security-policies",
           "frame-ancestors"
         ]
       },
