@@ -3989,63 +3989,6 @@
         "partial": false,
         "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#InterfaceSVGUseElementShadowRoot"
       },
-      "SVGElementInstance": {
-        "fragment": "interface mixin SVGElementInstance {\n  [SameObject] readonly attribute SVGElement? correspondingElement;\n  [SameObject] readonly attribute SVGUseElement? correspondingUseElement;\n};",
-        "type": "interface mixin",
-        "name": "SVGElementInstance",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "correspondingElement",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "SVGElement"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#__svg__SVGElementInstance__correspondingElement"
-          },
-          {
-            "type": "attribute",
-            "name": "correspondingUseElement",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "SVGUseElement"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#__svg__SVGElementInstance__correspondingUseElement"
-          }
-        ],
-        "extAttrs": [],
-        "partial": false,
-        "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#InterfaceSVGElementInstance"
-      },
       "ShadowAnimation": {
         "fragment": "[Exposed=Window]\ninterface ShadowAnimation : Animation {\n  constructor(Animation source, (Element or CSSPseudoElement) newTarget);\n  [SameObject] readonly attribute Animation sourceAnimation;\n};",
         "type": "interface",
@@ -8806,13 +8749,6 @@
           "includes": "GlobalEventHandlers"
         },
         {
-          "fragment": "SVGElement includes SVGElementInstance;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "SVGElement",
-          "includes": "SVGElementInstance"
-        },
-        {
           "fragment": "SVGElement includes HTMLOrSVGElement;",
           "type": "includes",
           "extAttrs": [],
@@ -9292,7 +9228,6 @@
         "SVGSVGElement",
         "SVGElement",
         "GlobalEventHandlers",
-        "SVGElementInstance",
         "HTMLOrSVGElement"
       ],
       "SVGBoundingBoxOptions": [],
@@ -9403,10 +9338,6 @@
       ],
       "SVGUseElementShadowRoot": [
         "ShadowRoot"
-      ],
-      "SVGElementInstance": [
-        "SVGElement",
-        "SVGUseElement"
       ],
       "ShadowAnimation": [
         "Animation",
