@@ -200,7 +200,7 @@
         "href": "https://webmachinelearning.github.io/webmcp/#dictdef-modelcontexttool"
       },
       "ToolAnnotations": {
-        "fragment": "dictionary ToolAnnotations {\n  boolean readOnlyHint = false;\n};",
+        "fragment": "dictionary ToolAnnotations {\n  boolean readOnlyHint = false;\n  boolean untrustedContentHint = false;\n};",
         "type": "dictionary",
         "name": "ToolAnnotations",
         "inheritance": null,
@@ -223,6 +223,25 @@
             },
             "required": false,
             "href": "https://webmachinelearning.github.io/webmcp/#dom-toolannotations-readonlyhint"
+          },
+          {
+            "type": "field",
+            "name": "untrustedContentHint",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-toolannotations-untrustedcontenthint"
           }
         ],
         "extAttrs": [],
