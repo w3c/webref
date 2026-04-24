@@ -1708,7 +1708,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-ispropertyreference",
       "linkingText": [
         "IsPropertyReference",
-        "IsPropertyReference(V)"
+        "IsPropertyReference(referenceRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -1718,7 +1718,7 @@
       "heading": {
         "id": "sec-ispropertyreference",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-ispropertyreference",
-        "title": "IsPropertyReference ( V )",
+        "title": "IsPropertyReference ( referenceRecord )",
         "number": "6.2.5.1"
       },
       "definedIn": "heading",
@@ -1729,7 +1729,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isunresolvablereference",
       "linkingText": [
         "IsUnresolvableReference",
-        "IsUnresolvableReference(V)"
+        "IsUnresolvableReference(referenceRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -1739,7 +1739,7 @@
       "heading": {
         "id": "sec-isunresolvablereference",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isunresolvablereference",
-        "title": "IsUnresolvableReference ( V )",
+        "title": "IsUnresolvableReference ( referenceRecord )",
         "number": "6.2.5.2"
       },
       "definedIn": "heading",
@@ -1750,7 +1750,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-issuperreference",
       "linkingText": [
         "IsSuperReference",
-        "IsSuperReference(V)"
+        "IsSuperReference(referenceRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -1760,7 +1760,7 @@
       "heading": {
         "id": "sec-issuperreference",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-issuperreference",
-        "title": "IsSuperReference ( V )",
+        "title": "IsSuperReference ( referenceRecord )",
         "number": "6.2.5.3"
       },
       "definedIn": "heading",
@@ -1771,7 +1771,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isprivatereference",
       "linkingText": [
         "IsPrivateReference",
-        "IsPrivateReference(V)"
+        "IsPrivateReference(referenceRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -1781,7 +1781,7 @@
       "heading": {
         "id": "sec-isprivatereference",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isprivatereference",
-        "title": "IsPrivateReference ( V )",
+        "title": "IsPrivateReference ( referenceRecord )",
         "number": "6.2.5.4"
       },
       "definedIn": "heading",
@@ -1792,7 +1792,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-getvalue",
       "linkingText": [
         "GetValue",
-        "GetValue(V)"
+        "GetValue(referenceRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -1802,7 +1802,7 @@
       "heading": {
         "id": "sec-getvalue",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-getvalue",
-        "title": "GetValue ( V )",
+        "title": "GetValue ( referenceRecord )",
         "number": "6.2.5.5"
       },
       "definedIn": "heading",
@@ -1813,7 +1813,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-putvalue",
       "linkingText": [
         "PutValue",
-        "PutValue(V, W)"
+        "PutValue(referenceRecord, value)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -1823,7 +1823,7 @@
       "heading": {
         "id": "sec-putvalue",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-putvalue",
-        "title": "PutValue ( V, W )",
+        "title": "PutValue ( referenceRecord, value )",
         "number": "6.2.5.6"
       },
       "definedIn": "heading",
@@ -1834,7 +1834,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-getthisvalue",
       "linkingText": [
         "GetThisValue",
-        "GetThisValue(V)"
+        "GetThisValue(referenceRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -1844,7 +1844,7 @@
       "heading": {
         "id": "sec-getthisvalue",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-getthisvalue",
-        "title": "GetThisValue ( V )",
+        "title": "GetThisValue ( referenceRecord )",
         "number": "6.2.5.7"
       },
       "definedIn": "heading",
@@ -1855,7 +1855,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-initializereferencedbinding",
       "linkingText": [
         "InitializeReferencedBinding",
-        "InitializeReferencedBinding(V, W)"
+        "InitializeReferencedBinding(referenceRecord, value)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -1865,7 +1865,7 @@
       "heading": {
         "id": "sec-initializereferencedbinding",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-initializereferencedbinding",
-        "title": "InitializeReferencedBinding ( V, W )",
+        "title": "InitializeReferencedBinding ( referenceRecord, value )",
         "number": "6.2.5.8"
       },
       "definedIn": "heading",
@@ -1942,7 +1942,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isaccessordescriptor",
       "linkingText": [
         "IsAccessorDescriptor",
-        "IsAccessorDescriptor(Desc)"
+        "IsAccessorDescriptor(desc)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -1952,7 +1952,7 @@
       "heading": {
         "id": "sec-isaccessordescriptor",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isaccessordescriptor",
-        "title": "IsAccessorDescriptor ( Desc )",
+        "title": "IsAccessorDescriptor ( desc )",
         "number": "6.2.6.1"
       },
       "definedIn": "heading",
@@ -1963,7 +1963,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isdatadescriptor",
       "linkingText": [
         "IsDataDescriptor",
-        "IsDataDescriptor(Desc)"
+        "IsDataDescriptor(desc)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -1973,7 +1973,7 @@
       "heading": {
         "id": "sec-isdatadescriptor",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isdatadescriptor",
-        "title": "IsDataDescriptor ( Desc )",
+        "title": "IsDataDescriptor ( desc )",
         "number": "6.2.6.2"
       },
       "definedIn": "heading",
@@ -1984,7 +1984,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isgenericdescriptor",
       "linkingText": [
         "IsGenericDescriptor",
-        "IsGenericDescriptor(Desc)"
+        "IsGenericDescriptor(desc)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -1994,7 +1994,7 @@
       "heading": {
         "id": "sec-isgenericdescriptor",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isgenericdescriptor",
-        "title": "IsGenericDescriptor ( Desc )",
+        "title": "IsGenericDescriptor ( desc )",
         "number": "6.2.6.3"
       },
       "definedIn": "heading",
@@ -2005,7 +2005,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-frompropertydescriptor",
       "linkingText": [
         "FromPropertyDescriptor",
-        "FromPropertyDescriptor(Desc)"
+        "FromPropertyDescriptor(desc)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -2015,7 +2015,7 @@
       "heading": {
         "id": "sec-frompropertydescriptor",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-frompropertydescriptor",
-        "title": "FromPropertyDescriptor ( Desc )",
+        "title": "FromPropertyDescriptor ( desc )",
         "number": "6.2.6.4"
       },
       "definedIn": "heading",
@@ -2026,7 +2026,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-topropertydescriptor",
       "linkingText": [
         "ToPropertyDescriptor",
-        "ToPropertyDescriptor(Obj)"
+        "ToPropertyDescriptor(obj)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -2036,7 +2036,7 @@
       "heading": {
         "id": "sec-topropertydescriptor",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-topropertydescriptor",
-        "title": "ToPropertyDescriptor ( Obj )",
+        "title": "ToPropertyDescriptor ( obj )",
         "number": "6.2.6.5"
       },
       "definedIn": "heading",
@@ -2047,7 +2047,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-completepropertydescriptor",
       "linkingText": [
         "CompletePropertyDescriptor",
-        "CompletePropertyDescriptor(Desc)"
+        "CompletePropertyDescriptor(desc)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -2057,7 +2057,7 @@
       "heading": {
         "id": "sec-completepropertydescriptor",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-completepropertydescriptor",
-        "title": "CompletePropertyDescriptor ( Desc )",
+        "title": "CompletePropertyDescriptor ( desc )",
         "number": "6.2.6.6"
       },
       "definedIn": "heading",
@@ -2336,7 +2336,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-ordinarytoprimitive",
       "linkingText": [
         "OrdinaryToPrimitive",
-        "OrdinaryToPrimitive(O, hint)"
+        "OrdinaryToPrimitive(obj, hint)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -2346,7 +2346,7 @@
       "heading": {
         "id": "sec-ordinarytoprimitive",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-ordinarytoprimitive",
-        "title": "OrdinaryToPrimitive ( O, hint )",
+        "title": "OrdinaryToPrimitive ( obj, hint )",
         "number": "7.1.1.1"
       },
       "definedIn": "heading",
@@ -3107,7 +3107,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-isextensible-o",
       "linkingText": [
         "IsExtensible",
-        "IsExtensible(O)"
+        "IsExtensible(obj)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3117,7 +3117,7 @@
       "heading": {
         "id": "sec-isextensible-o",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-isextensible-o",
-        "title": "IsExtensible ( O )",
+        "title": "IsExtensible ( obj )",
         "number": "7.2.5"
       },
       "definedIn": "heading",
@@ -3233,7 +3233,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-islessthan",
       "linkingText": [
         "IsLessThan",
-        "IsLessThan(x, y, LeftFirst)"
+        "IsLessThan(x, y, leftFirst)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3243,7 +3243,7 @@
       "heading": {
         "id": "sec-islessthan",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-islessthan",
-        "title": "IsLessThan ( x, y, LeftFirst )",
+        "title": "IsLessThan ( x, y, leftFirst )",
         "number": "7.2.12"
       },
       "definedIn": "heading",
@@ -3317,7 +3317,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p",
       "linkingText": [
         "Get",
-        "Get(O, P)"
+        "Get(obj, propertyKey)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3327,7 +3327,7 @@
       "heading": {
         "id": "sec-get-o-p",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-get-o-p",
-        "title": "Get ( O, P )",
+        "title": "Get ( obj, propertyKey )",
         "number": "7.3.2"
       },
       "definedIn": "heading",
@@ -3338,7 +3338,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getv",
       "linkingText": [
         "GetV",
-        "GetV(V, P)"
+        "GetV(value, propertyKey)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3348,7 +3348,7 @@
       "heading": {
         "id": "sec-getv",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getv",
-        "title": "GetV ( V, P )",
+        "title": "GetV ( value, propertyKey )",
         "number": "7.3.3"
       },
       "definedIn": "heading",
@@ -3359,7 +3359,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-set-o-p-v-throw",
       "linkingText": [
         "Set",
-        "Set(O, P, V, Throw)"
+        "Set(obj, propertyKey, value, throw)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3369,7 +3369,7 @@
       "heading": {
         "id": "sec-set-o-p-v-throw",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-set-o-p-v-throw",
-        "title": "Set ( O, P, V, Throw )",
+        "title": "Set ( obj, propertyKey, value, throw )",
         "number": "7.3.4"
       },
       "definedIn": "heading",
@@ -3380,7 +3380,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdataproperty",
       "linkingText": [
         "CreateDataProperty",
-        "CreateDataProperty(O, P, V)"
+        "CreateDataProperty(obj, propertyKey, value)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3390,7 +3390,7 @@
       "heading": {
         "id": "sec-createdataproperty",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdataproperty",
-        "title": "CreateDataProperty ( O, P, V )",
+        "title": "CreateDataProperty ( obj, propertyKey, value )",
         "number": "7.3.5"
       },
       "definedIn": "heading",
@@ -3401,7 +3401,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow",
       "linkingText": [
         "CreateDataPropertyOrThrow",
-        "CreateDataPropertyOrThrow(O, P, V)"
+        "CreateDataPropertyOrThrow(obj, propertyKey, value)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3411,7 +3411,7 @@
       "heading": {
         "id": "sec-createdatapropertyorthrow",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdatapropertyorthrow",
-        "title": "CreateDataPropertyOrThrow ( O, P, V )",
+        "title": "CreateDataPropertyOrThrow ( obj, propertyKey, value )",
         "number": "7.3.6"
       },
       "definedIn": "heading",
@@ -3422,7 +3422,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createnonenumerabledatapropertyorthrow",
       "linkingText": [
         "CreateNonEnumerableDataPropertyOrThrow",
-        "CreateNonEnumerableDataPropertyOrThrow(O, P, V)"
+        "CreateNonEnumerableDataPropertyOrThrow(obj, propertyKey, value)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3432,7 +3432,7 @@
       "heading": {
         "id": "sec-createnonenumerabledatapropertyorthrow",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createnonenumerabledatapropertyorthrow",
-        "title": "CreateNonEnumerableDataPropertyOrThrow ( O, P, V )",
+        "title": "CreateNonEnumerableDataPropertyOrThrow ( obj, propertyKey, value )",
         "number": "7.3.7"
       },
       "definedIn": "heading",
@@ -3443,7 +3443,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-definepropertyorthrow",
       "linkingText": [
         "DefinePropertyOrThrow",
-        "DefinePropertyOrThrow(O, P, desc)"
+        "DefinePropertyOrThrow(obj, propertyKey, desc)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3453,7 +3453,7 @@
       "heading": {
         "id": "sec-definepropertyorthrow",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-definepropertyorthrow",
-        "title": "DefinePropertyOrThrow ( O, P, desc )",
+        "title": "DefinePropertyOrThrow ( obj, propertyKey, desc )",
         "number": "7.3.8"
       },
       "definedIn": "heading",
@@ -3464,7 +3464,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-deletepropertyorthrow",
       "linkingText": [
         "DeletePropertyOrThrow",
-        "DeletePropertyOrThrow(O, P)"
+        "DeletePropertyOrThrow(obj, propertyKey)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3474,7 +3474,7 @@
       "heading": {
         "id": "sec-deletepropertyorthrow",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-deletepropertyorthrow",
-        "title": "DeletePropertyOrThrow ( O, P )",
+        "title": "DeletePropertyOrThrow ( obj, propertyKey )",
         "number": "7.3.9"
       },
       "definedIn": "heading",
@@ -3485,7 +3485,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getmethod",
       "linkingText": [
         "GetMethod",
-        "GetMethod(V, P)"
+        "GetMethod(value, propertyKey)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3495,7 +3495,7 @@
       "heading": {
         "id": "sec-getmethod",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getmethod",
-        "title": "GetMethod ( V, P )",
+        "title": "GetMethod ( value, propertyKey )",
         "number": "7.3.10"
       },
       "definedIn": "heading",
@@ -3506,7 +3506,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hasproperty",
       "linkingText": [
         "HasProperty",
-        "HasProperty(O, P)"
+        "HasProperty(obj, propertyKey)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3516,7 +3516,7 @@
       "heading": {
         "id": "sec-hasproperty",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hasproperty",
-        "title": "HasProperty ( O, P )",
+        "title": "HasProperty ( obj, propertyKey )",
         "number": "7.3.11"
       },
       "definedIn": "heading",
@@ -3527,7 +3527,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hasownproperty",
       "linkingText": [
         "HasOwnProperty",
-        "HasOwnProperty(O, P)"
+        "HasOwnProperty(obj, propertyKey)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3537,7 +3537,7 @@
       "heading": {
         "id": "sec-hasownproperty",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hasownproperty",
-        "title": "HasOwnProperty ( O, P )",
+        "title": "HasOwnProperty ( obj, propertyKey )",
         "number": "7.3.12"
       },
       "definedIn": "heading",
@@ -3548,7 +3548,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call",
       "linkingText": [
         "Call",
-        "Call(F, V, argumentsList)"
+        "Call(func, thisValue, argumentsList)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3558,7 +3558,7 @@
       "heading": {
         "id": "sec-call",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call",
-        "title": "Call ( F, V [ , argumentsList ] )",
+        "title": "Call ( func, thisValue [ , argumentsList ] )",
         "number": "7.3.13"
       },
       "definedIn": "heading",
@@ -3569,7 +3569,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-construct",
       "linkingText": [
         "Construct",
-        "Construct(F, argumentsList, newTarget)"
+        "Construct(constructor, argumentsList, newTarget)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3579,7 +3579,7 @@
       "heading": {
         "id": "sec-construct",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-construct",
-        "title": "Construct ( F [ , argumentsList [ , newTarget ] ] )",
+        "title": "Construct ( constructor [ , argumentsList [ , newTarget ] ] )",
         "number": "7.3.14"
       },
       "definedIn": "heading",
@@ -3590,7 +3590,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-setintegritylevel",
       "linkingText": [
         "SetIntegrityLevel",
-        "SetIntegrityLevel(O, level)"
+        "SetIntegrityLevel(obj, level)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3600,7 +3600,7 @@
       "heading": {
         "id": "sec-setintegritylevel",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-setintegritylevel",
-        "title": "SetIntegrityLevel ( O, level )",
+        "title": "SetIntegrityLevel ( obj, level )",
         "number": "7.3.15"
       },
       "definedIn": "heading",
@@ -3611,7 +3611,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-testintegritylevel",
       "linkingText": [
         "TestIntegrityLevel",
-        "TestIntegrityLevel(O, level)"
+        "TestIntegrityLevel(obj, level)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3621,7 +3621,7 @@
       "heading": {
         "id": "sec-testintegritylevel",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-testintegritylevel",
-        "title": "TestIntegrityLevel ( O, level )",
+        "title": "TestIntegrityLevel ( obj, level )",
         "number": "7.3.16"
       },
       "definedIn": "heading",
@@ -3718,7 +3718,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-invoke",
       "linkingText": [
         "Invoke",
-        "Invoke(V, P, argumentsList)"
+        "Invoke(value, propertyKey, argumentsList)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3728,7 +3728,7 @@
       "heading": {
         "id": "sec-invoke",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-invoke",
-        "title": "Invoke ( V, P [ , argumentsList ] )",
+        "title": "Invoke ( value, propertyKey [ , argumentsList ] )",
         "number": "7.3.20"
       },
       "definedIn": "heading",
@@ -3739,7 +3739,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-ordinaryhasinstance",
       "linkingText": [
         "OrdinaryHasInstance",
-        "OrdinaryHasInstance(C, O)"
+        "OrdinaryHasInstance(constructor, instance)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3749,7 +3749,7 @@
       "heading": {
         "id": "sec-ordinaryhasinstance",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-ordinaryhasinstance",
-        "title": "OrdinaryHasInstance ( C, O )",
+        "title": "OrdinaryHasInstance ( constructor, instance )",
         "number": "7.3.21"
       },
       "definedIn": "heading",
@@ -3760,7 +3760,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-speciesconstructor",
       "linkingText": [
         "SpeciesConstructor",
-        "SpeciesConstructor(O, defaultConstructor)"
+        "SpeciesConstructor(obj, defaultConstructor)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3770,7 +3770,7 @@
       "heading": {
         "id": "sec-speciesconstructor",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-speciesconstructor",
-        "title": "SpeciesConstructor ( O, defaultConstructor )",
+        "title": "SpeciesConstructor ( obj, defaultConstructor )",
         "number": "7.3.22"
       },
       "definedIn": "heading",
@@ -3781,7 +3781,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-enumerableownproperties",
       "linkingText": [
         "EnumerableOwnProperties",
-        "EnumerableOwnProperties(O, kind)"
+        "EnumerableOwnProperties(obj, kind)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3791,7 +3791,7 @@
       "heading": {
         "id": "sec-enumerableownproperties",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-enumerableownproperties",
-        "title": "EnumerableOwnProperties ( O, kind )",
+        "title": "EnumerableOwnProperties ( obj, kind )",
         "number": "7.3.23"
       },
       "definedIn": "heading",
@@ -3802,7 +3802,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getfunctionrealm",
       "linkingText": [
         "GetFunctionRealm",
-        "GetFunctionRealm(obj)"
+        "GetFunctionRealm(func)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3812,7 +3812,7 @@
       "heading": {
         "id": "sec-getfunctionrealm",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getfunctionrealm",
-        "title": "GetFunctionRealm ( obj )",
+        "title": "GetFunctionRealm ( func )",
         "number": "7.3.24"
       },
       "definedIn": "heading",
@@ -3844,7 +3844,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privateelementfind",
       "linkingText": [
         "PrivateElementFind",
-        "PrivateElementFind(O, P)"
+        "PrivateElementFind(obj, privateName)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3854,7 +3854,7 @@
       "heading": {
         "id": "sec-privateelementfind",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privateelementfind",
-        "title": "PrivateElementFind ( O, P )",
+        "title": "PrivateElementFind ( obj, privateName )",
         "number": "7.3.26"
       },
       "definedIn": "heading",
@@ -3865,7 +3865,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privatefieldadd",
       "linkingText": [
         "PrivateFieldAdd",
-        "PrivateFieldAdd(O, P, value)"
+        "PrivateFieldAdd(obj, privateName, value)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3875,7 +3875,7 @@
       "heading": {
         "id": "sec-privatefieldadd",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privatefieldadd",
-        "title": "PrivateFieldAdd ( O, P, value )",
+        "title": "PrivateFieldAdd ( obj, privateName, value )",
         "number": "7.3.27"
       },
       "definedIn": "heading",
@@ -3886,7 +3886,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privatemethodoraccessoradd",
       "linkingText": [
         "PrivateMethodOrAccessorAdd",
-        "PrivateMethodOrAccessorAdd(O, method)"
+        "PrivateMethodOrAccessorAdd(obj, method)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3896,7 +3896,7 @@
       "heading": {
         "id": "sec-privatemethodoraccessoradd",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privatemethodoraccessoradd",
-        "title": "PrivateMethodOrAccessorAdd ( O, method )",
+        "title": "PrivateMethodOrAccessorAdd ( obj, method )",
         "number": "7.3.28"
       },
       "definedIn": "heading",
@@ -3907,7 +3907,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hostensurecanaddprivateelement",
       "linkingText": [
         "HostEnsureCanAddPrivateElement",
-        "HostEnsureCanAddPrivateElement(O)"
+        "HostEnsureCanAddPrivateElement(obj)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3917,7 +3917,7 @@
       "heading": {
         "id": "sec-hostensurecanaddprivateelement",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-hostensurecanaddprivateelement",
-        "title": "HostEnsureCanAddPrivateElement ( O )",
+        "title": "HostEnsureCanAddPrivateElement ( obj )",
         "number": "7.3.29"
       },
       "definedIn": "heading",
@@ -3928,7 +3928,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privateget",
       "linkingText": [
         "PrivateGet",
-        "PrivateGet(O, P)"
+        "PrivateGet(obj, privateName)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3938,7 +3938,7 @@
       "heading": {
         "id": "sec-privateget",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privateget",
-        "title": "PrivateGet ( O, P )",
+        "title": "PrivateGet ( obj, privateName )",
         "number": "7.3.30"
       },
       "definedIn": "heading",
@@ -3949,7 +3949,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privateset",
       "linkingText": [
         "PrivateSet",
-        "PrivateSet(O, P, value)"
+        "PrivateSet(obj, privateName, value)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -3959,7 +3959,7 @@
       "heading": {
         "id": "sec-privateset",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-privateset",
-        "title": "PrivateSet ( O, P, value )",
+        "title": "PrivateSet ( obj, privateName, value )",
         "number": "7.3.31"
       },
       "definedIn": "heading",
@@ -3991,7 +3991,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-initializeinstanceelements",
       "linkingText": [
         "InitializeInstanceElements",
-        "InitializeInstanceElements(O, constructor)"
+        "InitializeInstanceElements(obj, constructor)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4001,7 +4001,7 @@
       "heading": {
         "id": "sec-initializeinstanceelements",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-initializeinstanceelements",
-        "title": "InitializeInstanceElements ( O, constructor )",
+        "title": "InitializeInstanceElements ( obj, constructor )",
         "number": "7.3.33"
       },
       "definedIn": "heading",
@@ -4075,7 +4075,7 @@
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-SetterThatIgnoresPrototypeProperties",
       "linkingText": [
         "SetterThatIgnoresPrototypeProperties",
-        "SetterThatIgnoresPrototypeProperties(thisValue, home, p, v)"
+        "SetterThatIgnoresPrototypeProperties(thisValue, home, propertyKey, value)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4085,7 +4085,7 @@
       "heading": {
         "id": "sec-SetterThatIgnoresPrototypeProperties",
         "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-SetterThatIgnoresPrototypeProperties",
-        "title": "SetterThatIgnoresPrototypeProperties ( thisValue, home, p, v )",
+        "title": "SetterThatIgnoresPrototypeProperties ( thisValue, home, propertyKey, value )",
         "number": "7.3.37"
       },
       "definedIn": "heading",
@@ -4542,7 +4542,7 @@
       "id": "sec-declarative-environment-records-hasbinding-n",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-hasbinding-n",
       "linkingText": [
-        "HasBinding(N)"
+        "HasBinding(name)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4554,7 +4554,7 @@
       "heading": {
         "id": "sec-declarative-environment-records-hasbinding-n",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-hasbinding-n",
-        "title": "HasBinding ( N )",
+        "title": "HasBinding ( name )",
         "number": "9.1.1.1.1"
       },
       "definedIn": "heading",
@@ -4564,7 +4564,7 @@
       "id": "sec-declarative-environment-records-createmutablebinding-n-d",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-createmutablebinding-n-d",
       "linkingText": [
-        "CreateMutableBinding(N, D)"
+        "CreateMutableBinding(name, deletable)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4576,7 +4576,7 @@
       "heading": {
         "id": "sec-declarative-environment-records-createmutablebinding-n-d",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-createmutablebinding-n-d",
-        "title": "CreateMutableBinding ( N, D )",
+        "title": "CreateMutableBinding ( name, deletable )",
         "number": "9.1.1.1.2"
       },
       "definedIn": "heading",
@@ -4586,7 +4586,7 @@
       "id": "sec-declarative-environment-records-createimmutablebinding-n-s",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-createimmutablebinding-n-s",
       "linkingText": [
-        "CreateImmutableBinding(N, S)"
+        "CreateImmutableBinding(name, strict)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4598,7 +4598,7 @@
       "heading": {
         "id": "sec-declarative-environment-records-createimmutablebinding-n-s",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-createimmutablebinding-n-s",
-        "title": "CreateImmutableBinding ( N, S )",
+        "title": "CreateImmutableBinding ( name, strict )",
         "number": "9.1.1.1.3"
       },
       "definedIn": "heading",
@@ -4608,7 +4608,7 @@
       "id": "sec-declarative-environment-records-initializebinding-n-v",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-initializebinding-n-v",
       "linkingText": [
-        "InitializeBinding(N, V)"
+        "InitializeBinding(name, value)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4620,7 +4620,7 @@
       "heading": {
         "id": "sec-declarative-environment-records-initializebinding-n-v",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-initializebinding-n-v",
-        "title": "InitializeBinding ( N, V )",
+        "title": "InitializeBinding ( name, value )",
         "number": "9.1.1.1.4"
       },
       "definedIn": "heading",
@@ -4630,7 +4630,7 @@
       "id": "sec-declarative-environment-records-setmutablebinding-n-v-s",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-setmutablebinding-n-v-s",
       "linkingText": [
-        "SetMutableBinding(N, V, S)"
+        "SetMutableBinding(name, value, strict)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4642,7 +4642,7 @@
       "heading": {
         "id": "sec-declarative-environment-records-setmutablebinding-n-v-s",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-setmutablebinding-n-v-s",
-        "title": "SetMutableBinding ( N, V, S )",
+        "title": "SetMutableBinding ( name, value, strict )",
         "number": "9.1.1.1.5"
       },
       "definedIn": "heading",
@@ -4652,7 +4652,7 @@
       "id": "sec-declarative-environment-records-getbindingvalue-n-s",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-getbindingvalue-n-s",
       "linkingText": [
-        "GetBindingValue(N, S)"
+        "GetBindingValue(name, strict)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4664,7 +4664,7 @@
       "heading": {
         "id": "sec-declarative-environment-records-getbindingvalue-n-s",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-getbindingvalue-n-s",
-        "title": "GetBindingValue ( N, S )",
+        "title": "GetBindingValue ( name, strict )",
         "number": "9.1.1.1.6"
       },
       "definedIn": "heading",
@@ -4674,7 +4674,7 @@
       "id": "sec-declarative-environment-records-deletebinding-n",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-deletebinding-n",
       "linkingText": [
-        "DeleteBinding(N)"
+        "DeleteBinding(name)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4686,7 +4686,7 @@
       "heading": {
         "id": "sec-declarative-environment-records-deletebinding-n",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-declarative-environment-records-deletebinding-n",
-        "title": "DeleteBinding ( N )",
+        "title": "DeleteBinding ( name )",
         "number": "9.1.1.1.7"
       },
       "definedIn": "heading",
@@ -4807,7 +4807,7 @@
       "id": "sec-object-environment-records-hasbinding-n",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-hasbinding-n",
       "linkingText": [
-        "HasBinding(N)"
+        "HasBinding(name)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4819,7 +4819,7 @@
       "heading": {
         "id": "sec-object-environment-records-hasbinding-n",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-hasbinding-n",
-        "title": "HasBinding ( N )",
+        "title": "HasBinding ( name )",
         "number": "9.1.1.2.1"
       },
       "definedIn": "heading",
@@ -4829,7 +4829,7 @@
       "id": "sec-object-environment-records-createmutablebinding-n-d",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-createmutablebinding-n-d",
       "linkingText": [
-        "CreateMutableBinding(N, D)"
+        "CreateMutableBinding(name, deletable)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4841,7 +4841,7 @@
       "heading": {
         "id": "sec-object-environment-records-createmutablebinding-n-d",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-createmutablebinding-n-d",
-        "title": "CreateMutableBinding ( N, D )",
+        "title": "CreateMutableBinding ( name, deletable )",
         "number": "9.1.1.2.2"
       },
       "definedIn": "heading",
@@ -4851,7 +4851,7 @@
       "id": "sec-object-environment-records-createimmutablebinding-n-s",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-createimmutablebinding-n-s",
       "linkingText": [
-        "CreateImmutableBinding(N, S)"
+        "CreateImmutableBinding(name, strict)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4863,7 +4863,7 @@
       "heading": {
         "id": "sec-object-environment-records-createimmutablebinding-n-s",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-createimmutablebinding-n-s",
-        "title": "CreateImmutableBinding ( N, S )",
+        "title": "CreateImmutableBinding ( name, strict )",
         "number": "9.1.1.2.3"
       },
       "definedIn": "heading",
@@ -4873,7 +4873,7 @@
       "id": "sec-object-environment-records-initializebinding-n-v",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-initializebinding-n-v",
       "linkingText": [
-        "InitializeBinding(N, V)"
+        "InitializeBinding(name, value)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4885,7 +4885,7 @@
       "heading": {
         "id": "sec-object-environment-records-initializebinding-n-v",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-initializebinding-n-v",
-        "title": "InitializeBinding ( N, V )",
+        "title": "InitializeBinding ( name, value )",
         "number": "9.1.1.2.4"
       },
       "definedIn": "heading",
@@ -4895,7 +4895,7 @@
       "id": "sec-object-environment-records-setmutablebinding-n-v-s",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-setmutablebinding-n-v-s",
       "linkingText": [
-        "SetMutableBinding(N, V, S)"
+        "SetMutableBinding(name, value, strict)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4907,7 +4907,7 @@
       "heading": {
         "id": "sec-object-environment-records-setmutablebinding-n-v-s",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-setmutablebinding-n-v-s",
-        "title": "SetMutableBinding ( N, V, S )",
+        "title": "SetMutableBinding ( name, value, strict )",
         "number": "9.1.1.2.5"
       },
       "definedIn": "heading",
@@ -4917,7 +4917,7 @@
       "id": "sec-object-environment-records-getbindingvalue-n-s",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-getbindingvalue-n-s",
       "linkingText": [
-        "GetBindingValue(N, S)"
+        "GetBindingValue(name, strict)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4929,7 +4929,7 @@
       "heading": {
         "id": "sec-object-environment-records-getbindingvalue-n-s",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-getbindingvalue-n-s",
-        "title": "GetBindingValue ( N, S )",
+        "title": "GetBindingValue ( name, strict )",
         "number": "9.1.1.2.6"
       },
       "definedIn": "heading",
@@ -4939,7 +4939,7 @@
       "id": "sec-object-environment-records-deletebinding-n",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-deletebinding-n",
       "linkingText": [
-        "DeleteBinding(N)"
+        "DeleteBinding(name)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4951,7 +4951,7 @@
       "heading": {
         "id": "sec-object-environment-records-deletebinding-n",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-object-environment-records-deletebinding-n",
-        "title": "DeleteBinding ( N )",
+        "title": "DeleteBinding ( name )",
         "number": "9.1.1.2.7"
       },
       "definedIn": "heading",
@@ -5073,7 +5073,7 @@
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-bindthisvalue",
       "linkingText": [
         "BindThisValue",
-        "BindThisValue(envRec, V)"
+        "BindThisValue(envRec, value)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5083,7 +5083,7 @@
       "heading": {
         "id": "sec-bindthisvalue",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-bindthisvalue",
-        "title": "BindThisValue ( envRec, V )",
+        "title": "BindThisValue ( envRec, value )",
         "number": "9.1.1.3.1"
       },
       "definedIn": "heading",
@@ -5203,7 +5203,7 @@
       "id": "sec-global-environment-records-hasbinding-n",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-hasbinding-n",
       "linkingText": [
-        "HasBinding(N)"
+        "HasBinding(name)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5215,7 +5215,7 @@
       "heading": {
         "id": "sec-global-environment-records-hasbinding-n",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-hasbinding-n",
-        "title": "HasBinding ( N )",
+        "title": "HasBinding ( name )",
         "number": "9.1.1.4.1"
       },
       "definedIn": "heading",
@@ -5225,7 +5225,7 @@
       "id": "sec-global-environment-records-createmutablebinding-n-d",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-createmutablebinding-n-d",
       "linkingText": [
-        "CreateMutableBinding(N, D)"
+        "CreateMutableBinding(name, deletable)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5237,7 +5237,7 @@
       "heading": {
         "id": "sec-global-environment-records-createmutablebinding-n-d",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-createmutablebinding-n-d",
-        "title": "CreateMutableBinding ( N, D )",
+        "title": "CreateMutableBinding ( name, deletable )",
         "number": "9.1.1.4.2"
       },
       "definedIn": "heading",
@@ -5247,7 +5247,7 @@
       "id": "sec-global-environment-records-createimmutablebinding-n-s",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-createimmutablebinding-n-s",
       "linkingText": [
-        "CreateImmutableBinding(N, S)"
+        "CreateImmutableBinding(name, strict)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5259,7 +5259,7 @@
       "heading": {
         "id": "sec-global-environment-records-createimmutablebinding-n-s",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-createimmutablebinding-n-s",
-        "title": "CreateImmutableBinding ( N, S )",
+        "title": "CreateImmutableBinding ( name, strict )",
         "number": "9.1.1.4.3"
       },
       "definedIn": "heading",
@@ -5269,7 +5269,7 @@
       "id": "sec-global-environment-records-initializebinding-n-v",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-initializebinding-n-v",
       "linkingText": [
-        "InitializeBinding(N, V)"
+        "InitializeBinding(name, value)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5281,7 +5281,7 @@
       "heading": {
         "id": "sec-global-environment-records-initializebinding-n-v",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-initializebinding-n-v",
-        "title": "InitializeBinding ( N, V )",
+        "title": "InitializeBinding ( name, value )",
         "number": "9.1.1.4.4"
       },
       "definedIn": "heading",
@@ -5291,7 +5291,7 @@
       "id": "sec-global-environment-records-setmutablebinding-n-v-s",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-setmutablebinding-n-v-s",
       "linkingText": [
-        "SetMutableBinding(N, V, S)"
+        "SetMutableBinding(name, value, strict)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5303,7 +5303,7 @@
       "heading": {
         "id": "sec-global-environment-records-setmutablebinding-n-v-s",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-setmutablebinding-n-v-s",
-        "title": "SetMutableBinding ( N, V, S )",
+        "title": "SetMutableBinding ( name, value, strict )",
         "number": "9.1.1.4.5"
       },
       "definedIn": "heading",
@@ -5313,7 +5313,7 @@
       "id": "sec-global-environment-records-getbindingvalue-n-s",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-getbindingvalue-n-s",
       "linkingText": [
-        "GetBindingValue(N, S)"
+        "GetBindingValue(name, strict)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5325,7 +5325,7 @@
       "heading": {
         "id": "sec-global-environment-records-getbindingvalue-n-s",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-getbindingvalue-n-s",
-        "title": "GetBindingValue ( N, S )",
+        "title": "GetBindingValue ( name, strict )",
         "number": "9.1.1.4.6"
       },
       "definedIn": "heading",
@@ -5335,7 +5335,7 @@
       "id": "sec-global-environment-records-deletebinding-n",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-deletebinding-n",
       "linkingText": [
-        "DeleteBinding(N)"
+        "DeleteBinding(name)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5347,7 +5347,7 @@
       "heading": {
         "id": "sec-global-environment-records-deletebinding-n",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-global-environment-records-deletebinding-n",
-        "title": "DeleteBinding ( N )",
+        "title": "DeleteBinding ( name )",
         "number": "9.1.1.4.7"
       },
       "definedIn": "heading",
@@ -5446,7 +5446,7 @@
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-haslexicaldeclaration",
       "linkingText": [
         "HasLexicalDeclaration",
-        "HasLexicalDeclaration(envRec, N)"
+        "HasLexicalDeclaration(envRec, name)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5456,7 +5456,7 @@
       "heading": {
         "id": "sec-haslexicaldeclaration",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-haslexicaldeclaration",
-        "title": "HasLexicalDeclaration ( envRec, N )",
+        "title": "HasLexicalDeclaration ( envRec, name )",
         "number": "9.1.1.4.12"
       },
       "definedIn": "heading",
@@ -5467,7 +5467,7 @@
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hasrestrictedglobalproperty",
       "linkingText": [
         "HasRestrictedGlobalProperty",
-        "HasRestrictedGlobalProperty(envRec, N)"
+        "HasRestrictedGlobalProperty(envRec, name)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5477,7 +5477,7 @@
       "heading": {
         "id": "sec-hasrestrictedglobalproperty",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hasrestrictedglobalproperty",
-        "title": "HasRestrictedGlobalProperty ( envRec, N )",
+        "title": "HasRestrictedGlobalProperty ( envRec, name )",
         "number": "9.1.1.4.13"
       },
       "definedIn": "heading",
@@ -5488,7 +5488,7 @@
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-candeclareglobalvar",
       "linkingText": [
         "CanDeclareGlobalVar",
-        "CanDeclareGlobalVar(envRec, N)"
+        "CanDeclareGlobalVar(envRec, name)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5498,7 +5498,7 @@
       "heading": {
         "id": "sec-candeclareglobalvar",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-candeclareglobalvar",
-        "title": "CanDeclareGlobalVar ( envRec, N )",
+        "title": "CanDeclareGlobalVar ( envRec, name )",
         "number": "9.1.1.4.14"
       },
       "definedIn": "heading",
@@ -5509,7 +5509,7 @@
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-candeclareglobalfunction",
       "linkingText": [
         "CanDeclareGlobalFunction",
-        "CanDeclareGlobalFunction(envRec, N)"
+        "CanDeclareGlobalFunction(envRec, name)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5519,7 +5519,7 @@
       "heading": {
         "id": "sec-candeclareglobalfunction",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-candeclareglobalfunction",
-        "title": "CanDeclareGlobalFunction ( envRec, N )",
+        "title": "CanDeclareGlobalFunction ( envRec, name )",
         "number": "9.1.1.4.15"
       },
       "definedIn": "heading",
@@ -5530,7 +5530,7 @@
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalvarbinding",
       "linkingText": [
         "CreateGlobalVarBinding",
-        "CreateGlobalVarBinding(envRec, N, D)"
+        "CreateGlobalVarBinding(envRec, name, deletable)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5540,7 +5540,7 @@
       "heading": {
         "id": "sec-createglobalvarbinding",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalvarbinding",
-        "title": "CreateGlobalVarBinding ( envRec, N, D )",
+        "title": "CreateGlobalVarBinding ( envRec, name, deletable )",
         "number": "9.1.1.4.16"
       },
       "definedIn": "heading",
@@ -5551,7 +5551,7 @@
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalfunctionbinding",
       "linkingText": [
         "CreateGlobalFunctionBinding",
-        "CreateGlobalFunctionBinding(envRec, N, V, D)"
+        "CreateGlobalFunctionBinding(envRec, name, value, deletable)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5561,7 +5561,7 @@
       "heading": {
         "id": "sec-createglobalfunctionbinding",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalfunctionbinding",
-        "title": "CreateGlobalFunctionBinding ( envRec, N, V, D )",
+        "title": "CreateGlobalFunctionBinding ( envRec, name, value, deletable )",
         "number": "9.1.1.4.17"
       },
       "definedIn": "heading",
@@ -5594,7 +5594,7 @@
       "id": "sec-module-environment-records-getbindingvalue-n-s",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-module-environment-records-getbindingvalue-n-s",
       "linkingText": [
-        "GetBindingValue(N, S)"
+        "GetBindingValue(name, strict)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5606,7 +5606,7 @@
       "heading": {
         "id": "sec-module-environment-records-getbindingvalue-n-s",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-module-environment-records-getbindingvalue-n-s",
-        "title": "GetBindingValue ( N, S )",
+        "title": "GetBindingValue ( name, strict )",
         "number": "9.1.1.5.1"
       },
       "definedIn": "heading",
@@ -5616,7 +5616,7 @@
       "id": "sec-module-environment-records-deletebinding-n",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-module-environment-records-deletebinding-n",
       "linkingText": [
-        "DeleteBinding(N)"
+        "DeleteBinding(name)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5628,7 +5628,7 @@
       "heading": {
         "id": "sec-module-environment-records-deletebinding-n",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-module-environment-records-deletebinding-n",
-        "title": "DeleteBinding ( N )",
+        "title": "DeleteBinding ( name )",
         "number": "9.1.1.5.2"
       },
       "definedIn": "heading",
@@ -5683,7 +5683,7 @@
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createimportbinding",
       "linkingText": [
         "CreateImportBinding",
-        "CreateImportBinding(envRec, N, M, N2)"
+        "CreateImportBinding(envRec, name, targetModule, targetName)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5693,7 +5693,7 @@
       "heading": {
         "id": "sec-createimportbinding",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createimportbinding",
-        "title": "CreateImportBinding ( envRec, N, M, N2 )",
+        "title": "CreateImportBinding ( envRec, name, targetModule, targetName )",
         "number": "9.1.1.5.5"
       },
       "definedIn": "heading",
@@ -5725,7 +5725,7 @@
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newdeclarativeenvironment",
       "linkingText": [
         "NewDeclarativeEnvironment",
-        "NewDeclarativeEnvironment(E)"
+        "NewDeclarativeEnvironment(outerEnv)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5735,7 +5735,7 @@
       "heading": {
         "id": "sec-newdeclarativeenvironment",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newdeclarativeenvironment",
-        "title": "NewDeclarativeEnvironment ( E )",
+        "title": "NewDeclarativeEnvironment ( outerEnv )",
         "number": "9.1.2.2"
       },
       "definedIn": "heading",
@@ -5746,7 +5746,7 @@
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newobjectenvironment",
       "linkingText": [
         "NewObjectEnvironment",
-        "NewObjectEnvironment(O, W, E)"
+        "NewObjectEnvironment(obj, isWithEnvironment, outerEnv)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5756,7 +5756,7 @@
       "heading": {
         "id": "sec-newobjectenvironment",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newobjectenvironment",
-        "title": "NewObjectEnvironment ( O, W, E )",
+        "title": "NewObjectEnvironment ( obj, isWithEnvironment, outerEnv )",
         "number": "9.1.2.3"
       },
       "definedIn": "heading",
@@ -5767,7 +5767,7 @@
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newfunctionenvironment",
       "linkingText": [
         "NewFunctionEnvironment",
-        "NewFunctionEnvironment(F, newTarget)"
+        "NewFunctionEnvironment(func, newTarget)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5777,7 +5777,7 @@
       "heading": {
         "id": "sec-newfunctionenvironment",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newfunctionenvironment",
-        "title": "NewFunctionEnvironment ( F, newTarget )",
+        "title": "NewFunctionEnvironment ( func, newTarget )",
         "number": "9.1.2.4"
       },
       "definedIn": "heading",
@@ -5788,7 +5788,7 @@
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newglobalenvironment",
       "linkingText": [
         "NewGlobalEnvironment",
-        "NewGlobalEnvironment(G, thisValue)"
+        "NewGlobalEnvironment(obj, thisValue)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5798,7 +5798,7 @@
       "heading": {
         "id": "sec-newglobalenvironment",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newglobalenvironment",
-        "title": "NewGlobalEnvironment ( G, thisValue )",
+        "title": "NewGlobalEnvironment ( obj, thisValue )",
         "number": "9.1.2.5"
       },
       "definedIn": "heading",
@@ -5809,7 +5809,7 @@
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newmoduleenvironment",
       "linkingText": [
         "NewModuleEnvironment",
-        "NewModuleEnvironment(E)"
+        "NewModuleEnvironment(outerEnv)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5819,7 +5819,7 @@
       "heading": {
         "id": "sec-newmoduleenvironment",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newmoduleenvironment",
-        "title": "NewModuleEnvironment ( E )",
+        "title": "NewModuleEnvironment ( outerEnv )",
         "number": "9.1.2.6"
       },
       "definedIn": "heading",
@@ -6553,7 +6553,7 @@
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostcalljobcallback",
       "linkingText": [
         "HostCallJobCallback",
-        "HostCallJobCallback(jobCallback, V, argumentsList)"
+        "HostCallJobCallback(jobCallback, value, argumentsList)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -6563,7 +6563,7 @@
       "heading": {
         "id": "sec-hostcalljobcallback",
         "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostcalljobcallback",
-        "title": "HostCallJobCallback ( jobCallback, V, argumentsList )",
+        "title": "HostCallJobCallback ( jobCallback, value, argumentsList )",
         "number": "9.5.3"
       },
       "definedIn": "heading",
@@ -6987,7 +6987,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarygetprototypeof",
       "linkingText": [
         "OrdinaryGetPrototypeOf",
-        "OrdinaryGetPrototypeOf(O)"
+        "OrdinaryGetPrototypeOf(obj)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -6997,7 +6997,7 @@
       "heading": {
         "id": "sec-ordinarygetprototypeof",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarygetprototypeof",
-        "title": "OrdinaryGetPrototypeOf ( O )",
+        "title": "OrdinaryGetPrototypeOf ( obj )",
         "number": "10.1.1.1"
       },
       "definedIn": "heading",
@@ -7008,7 +7008,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarysetprototypeof",
       "linkingText": [
         "OrdinarySetPrototypeOf",
-        "OrdinarySetPrototypeOf(O, V)"
+        "OrdinarySetPrototypeOf(obj, proto)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7018,7 +7018,7 @@
       "heading": {
         "id": "sec-ordinarysetprototypeof",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarysetprototypeof",
-        "title": "OrdinarySetPrototypeOf ( O, V )",
+        "title": "OrdinarySetPrototypeOf ( obj, proto )",
         "number": "10.1.2.1"
       },
       "definedIn": "heading",
@@ -7029,7 +7029,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryisextensible",
       "linkingText": [
         "OrdinaryIsExtensible",
-        "OrdinaryIsExtensible(O)"
+        "OrdinaryIsExtensible(obj)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7039,7 +7039,7 @@
       "heading": {
         "id": "sec-ordinaryisextensible",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryisextensible",
-        "title": "OrdinaryIsExtensible ( O )",
+        "title": "OrdinaryIsExtensible ( obj )",
         "number": "10.1.3.1"
       },
       "definedIn": "heading",
@@ -7050,7 +7050,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarypreventextensions",
       "linkingText": [
         "OrdinaryPreventExtensions",
-        "OrdinaryPreventExtensions(O)"
+        "OrdinaryPreventExtensions(obj)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7060,7 +7060,7 @@
       "heading": {
         "id": "sec-ordinarypreventextensions",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarypreventextensions",
-        "title": "OrdinaryPreventExtensions ( O )",
+        "title": "OrdinaryPreventExtensions ( obj )",
         "number": "10.1.4.1"
       },
       "definedIn": "heading",
@@ -7071,7 +7071,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarygetownproperty",
       "linkingText": [
         "OrdinaryGetOwnProperty",
-        "OrdinaryGetOwnProperty(O, P)"
+        "OrdinaryGetOwnProperty(obj, propertyKey)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7081,7 +7081,7 @@
       "heading": {
         "id": "sec-ordinarygetownproperty",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarygetownproperty",
-        "title": "OrdinaryGetOwnProperty ( O, P )",
+        "title": "OrdinaryGetOwnProperty ( obj, propertyKey )",
         "number": "10.1.5.1"
       },
       "definedIn": "heading",
@@ -7092,7 +7092,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarydefineownproperty",
       "linkingText": [
         "OrdinaryDefineOwnProperty",
-        "OrdinaryDefineOwnProperty(O, P, Desc)"
+        "OrdinaryDefineOwnProperty(obj, propertyKey, desc)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7102,7 +7102,7 @@
       "heading": {
         "id": "sec-ordinarydefineownproperty",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarydefineownproperty",
-        "title": "OrdinaryDefineOwnProperty ( O, P, Desc )",
+        "title": "OrdinaryDefineOwnProperty ( obj, propertyKey, desc )",
         "number": "10.1.6.1"
       },
       "definedIn": "heading",
@@ -7113,7 +7113,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-iscompatiblepropertydescriptor",
       "linkingText": [
         "IsCompatiblePropertyDescriptor",
-        "IsCompatiblePropertyDescriptor(Extensible, Desc, Current)"
+        "IsCompatiblePropertyDescriptor(extensible, desc, current)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7123,7 +7123,7 @@
       "heading": {
         "id": "sec-iscompatiblepropertydescriptor",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-iscompatiblepropertydescriptor",
-        "title": "IsCompatiblePropertyDescriptor ( Extensible, Desc, Current )",
+        "title": "IsCompatiblePropertyDescriptor ( extensible, desc, current )",
         "number": "10.1.6.2"
       },
       "definedIn": "heading",
@@ -7134,7 +7134,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-validateandapplypropertydescriptor",
       "linkingText": [
         "ValidateAndApplyPropertyDescriptor",
-        "ValidateAndApplyPropertyDescriptor(O, P, extensible, Desc, current)"
+        "ValidateAndApplyPropertyDescriptor(obj, propertyKey, extensible, desc, current)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7144,7 +7144,7 @@
       "heading": {
         "id": "sec-validateandapplypropertydescriptor",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-validateandapplypropertydescriptor",
-        "title": "ValidateAndApplyPropertyDescriptor ( O, P, extensible, Desc, current )",
+        "title": "ValidateAndApplyPropertyDescriptor ( obj, propertyKey, extensible, desc, current )",
         "number": "10.1.6.3"
       },
       "definedIn": "heading",
@@ -7155,7 +7155,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryhasproperty",
       "linkingText": [
         "OrdinaryHasProperty",
-        "OrdinaryHasProperty(O, P)"
+        "OrdinaryHasProperty(obj, propertyKey)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7165,7 +7165,7 @@
       "heading": {
         "id": "sec-ordinaryhasproperty",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryhasproperty",
-        "title": "OrdinaryHasProperty ( O, P )",
+        "title": "OrdinaryHasProperty ( obj, propertyKey )",
         "number": "10.1.7.1"
       },
       "definedIn": "heading",
@@ -7176,7 +7176,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryget",
       "linkingText": [
         "OrdinaryGet",
-        "OrdinaryGet(O, P, Receiver)"
+        "OrdinaryGet(obj, propertyKey, receiver)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7186,7 +7186,7 @@
       "heading": {
         "id": "sec-ordinaryget",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryget",
-        "title": "OrdinaryGet ( O, P, Receiver )",
+        "title": "OrdinaryGet ( obj, propertyKey, receiver )",
         "number": "10.1.8.1"
       },
       "definedIn": "heading",
@@ -7197,7 +7197,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryset",
       "linkingText": [
         "OrdinarySet",
-        "OrdinarySet(O, P, V, Receiver)"
+        "OrdinarySet(obj, propertyKey, value, receiver)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7207,7 +7207,7 @@
       "heading": {
         "id": "sec-ordinaryset",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryset",
-        "title": "OrdinarySet ( O, P, V, Receiver )",
+        "title": "OrdinarySet ( obj, propertyKey, value, receiver )",
         "number": "10.1.9.1"
       },
       "definedIn": "heading",
@@ -7218,7 +7218,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarysetwithowndescriptor",
       "linkingText": [
         "OrdinarySetWithOwnDescriptor",
-        "OrdinarySetWithOwnDescriptor(O, P, V, Receiver, ownDesc)"
+        "OrdinarySetWithOwnDescriptor(obj, propertyKey, value, receiver, ownDesc)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7228,7 +7228,7 @@
       "heading": {
         "id": "sec-ordinarysetwithowndescriptor",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarysetwithowndescriptor",
-        "title": "OrdinarySetWithOwnDescriptor ( O, P, V, Receiver, ownDesc )",
+        "title": "OrdinarySetWithOwnDescriptor ( obj, propertyKey, value, receiver, ownDesc )",
         "number": "10.1.9.2"
       },
       "definedIn": "heading",
@@ -7239,7 +7239,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarydelete",
       "linkingText": [
         "OrdinaryDelete",
-        "OrdinaryDelete(O, P)"
+        "OrdinaryDelete(obj, propertyKey)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7249,7 +7249,7 @@
       "heading": {
         "id": "sec-ordinarydelete",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarydelete",
-        "title": "OrdinaryDelete ( O, P )",
+        "title": "OrdinaryDelete ( obj, propertyKey )",
         "number": "10.1.10.1"
       },
       "definedIn": "heading",
@@ -7260,7 +7260,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryownpropertykeys",
       "linkingText": [
         "OrdinaryOwnPropertyKeys",
-        "OrdinaryOwnPropertyKeys(O)"
+        "OrdinaryOwnPropertyKeys(obj)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7270,7 +7270,7 @@
       "heading": {
         "id": "sec-ordinaryownpropertykeys",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryownpropertykeys",
-        "title": "OrdinaryOwnPropertyKeys ( O )",
+        "title": "OrdinaryOwnPropertyKeys ( obj )",
         "number": "10.1.11.1"
       },
       "definedIn": "heading",
@@ -7344,7 +7344,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-requireinternalslot",
       "linkingText": [
         "RequireInternalSlot",
-        "RequireInternalSlot(O, internalSlot)"
+        "RequireInternalSlot(obj, internalSlot)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7354,7 +7354,7 @@
       "heading": {
         "id": "sec-requireinternalslot",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-requireinternalslot",
-        "title": "RequireInternalSlot ( O, internalSlot )",
+        "title": "RequireInternalSlot ( obj, internalSlot )",
         "number": "10.1.15"
       },
       "definedIn": "heading",
@@ -7411,7 +7411,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-prepareforordinarycall",
       "linkingText": [
         "PrepareForOrdinaryCall",
-        "PrepareForOrdinaryCall(F, newTarget)"
+        "PrepareForOrdinaryCall(func, newTarget)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7421,7 +7421,7 @@
       "heading": {
         "id": "sec-prepareforordinarycall",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-prepareforordinarycall",
-        "title": "PrepareForOrdinaryCall ( F, newTarget )",
+        "title": "PrepareForOrdinaryCall ( func, newTarget )",
         "number": "10.2.1.1"
       },
       "definedIn": "heading",
@@ -7432,7 +7432,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarycallbindthis",
       "linkingText": [
         "OrdinaryCallBindThis",
-        "OrdinaryCallBindThis(F, calleeContext, thisArgument)"
+        "OrdinaryCallBindThis(func, calleeContext, thisArgument)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7442,7 +7442,7 @@
       "heading": {
         "id": "sec-ordinarycallbindthis",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarycallbindthis",
-        "title": "OrdinaryCallBindThis ( F, calleeContext, thisArgument )",
+        "title": "OrdinaryCallBindThis ( func, calleeContext, thisArgument )",
         "number": "10.2.1.2"
       },
       "definedIn": "heading",
@@ -7453,7 +7453,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarycallevaluatebody",
       "linkingText": [
         "OrdinaryCallEvaluateBody",
-        "OrdinaryCallEvaluateBody(F, argumentsList)"
+        "OrdinaryCallEvaluateBody(func, argumentsList)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7463,7 +7463,7 @@
       "heading": {
         "id": "sec-ordinarycallevaluatebody",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarycallevaluatebody",
-        "title": "OrdinaryCallEvaluateBody ( F, argumentsList )",
+        "title": "OrdinaryCallEvaluateBody ( func, argumentsList )",
         "number": "10.2.1.4"
       },
       "definedIn": "heading",
@@ -7474,7 +7474,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryfunctioncreate",
       "linkingText": [
         "OrdinaryFunctionCreate",
-        "OrdinaryFunctionCreate(functionPrototype, sourceText, ParameterList, Body, thisMode, env, privateEnv)"
+        "OrdinaryFunctionCreate(functionPrototype, sourceText, parameterList, body, thisMode, env, privateEnv)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7484,7 +7484,7 @@
       "heading": {
         "id": "sec-ordinaryfunctioncreate",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryfunctioncreate",
-        "title": "OrdinaryFunctionCreate ( functionPrototype, sourceText, ParameterList, Body, thisMode, env, privateEnv )",
+        "title": "OrdinaryFunctionCreate ( functionPrototype, sourceText, parameterList, body, thisMode, env, privateEnv )",
         "number": "10.2.3"
       },
       "definedIn": "heading",
@@ -7495,7 +7495,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-addrestrictedfunctionproperties",
       "linkingText": [
         "AddRestrictedFunctionProperties",
-        "AddRestrictedFunctionProperties(F, realm)"
+        "AddRestrictedFunctionProperties(func, realm)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7505,7 +7505,7 @@
       "heading": {
         "id": "sec-addrestrictedfunctionproperties",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-addrestrictedfunctionproperties",
-        "title": "AddRestrictedFunctionProperties ( F, realm )",
+        "title": "AddRestrictedFunctionProperties ( func, realm )",
         "number": "10.2.4"
       },
       "definedIn": "heading",
@@ -7536,7 +7536,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-makeconstructor",
       "linkingText": [
         "MakeConstructor",
-        "MakeConstructor(F, writablePrototype, prototype)"
+        "MakeConstructor(func, writablePrototype, prototype)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7546,7 +7546,7 @@
       "heading": {
         "id": "sec-makeconstructor",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-makeconstructor",
-        "title": "MakeConstructor ( F [ , writablePrototype [ , prototype ] ] )",
+        "title": "MakeConstructor ( func [ , writablePrototype [ , prototype ] ] )",
         "number": "10.2.5"
       },
       "definedIn": "heading",
@@ -7557,7 +7557,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-makeclassconstructor",
       "linkingText": [
         "MakeClassConstructor",
-        "MakeClassConstructor(F)"
+        "MakeClassConstructor(func)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7567,7 +7567,7 @@
       "heading": {
         "id": "sec-makeclassconstructor",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-makeclassconstructor",
-        "title": "MakeClassConstructor ( F )",
+        "title": "MakeClassConstructor ( func )",
         "number": "10.2.6"
       },
       "definedIn": "heading",
@@ -7578,7 +7578,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-makemethod",
       "linkingText": [
         "MakeMethod",
-        "MakeMethod(F, homeObject)"
+        "MakeMethod(func, homeObject)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7588,7 +7588,7 @@
       "heading": {
         "id": "sec-makemethod",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-makemethod",
-        "title": "MakeMethod ( F, homeObject )",
+        "title": "MakeMethod ( func, homeObject )",
         "number": "10.2.7"
       },
       "definedIn": "heading",
@@ -7620,7 +7620,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname",
       "linkingText": [
         "SetFunctionName",
-        "SetFunctionName(F, name, prefix)"
+        "SetFunctionName(func, name, prefix)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7630,7 +7630,7 @@
       "heading": {
         "id": "sec-setfunctionname",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionname",
-        "title": "SetFunctionName ( F, name [ , prefix ] )",
+        "title": "SetFunctionName ( func, name [ , prefix ] )",
         "number": "10.2.9"
       },
       "definedIn": "heading",
@@ -7641,7 +7641,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength",
       "linkingText": [
         "SetFunctionLength",
-        "SetFunctionLength(F, length)"
+        "SetFunctionLength(func, length)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7651,7 +7651,7 @@
       "heading": {
         "id": "sec-setfunctionlength",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-setfunctionlength",
-        "title": "SetFunctionLength ( F, length )",
+        "title": "SetFunctionLength ( func, length )",
         "number": "10.2.10"
       },
       "definedIn": "heading",
@@ -7683,7 +7683,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-builtincallorconstruct",
       "linkingText": [
         "BuiltinCallOrConstruct",
-        "BuiltinCallOrConstruct(F, thisArgument, argumentsList, newTarget)"
+        "BuiltinCallOrConstruct(func, thisArgument, argumentsList, newTarget)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7693,7 +7693,7 @@
       "heading": {
         "id": "sec-builtincallorconstruct",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-builtincallorconstruct",
-        "title": "BuiltinCallOrConstruct ( F, thisArgument, argumentsList, newTarget )",
+        "title": "BuiltinCallOrConstruct ( func, thisArgument, argumentsList, newTarget )",
         "number": "10.3.3"
       },
       "definedIn": "heading",
@@ -7834,7 +7834,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arraysetlength",
       "linkingText": [
         "ArraySetLength",
-        "ArraySetLength(A, Desc)"
+        "ArraySetLength(array, desc)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7844,7 +7844,7 @@
       "heading": {
         "id": "sec-arraysetlength",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arraysetlength",
-        "title": "ArraySetLength ( A, Desc )",
+        "title": "ArraySetLength ( array, desc )",
         "number": "10.4.2.4"
       },
       "definedIn": "heading",
@@ -7899,7 +7899,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-stringgetownproperty",
       "linkingText": [
         "StringGetOwnProperty",
-        "StringGetOwnProperty(S, P)"
+        "StringGetOwnProperty(str, propertyKey)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -7909,7 +7909,7 @@
       "heading": {
         "id": "sec-stringgetownproperty",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-stringgetownproperty",
-        "title": "StringGetOwnProperty ( S, P )",
+        "title": "StringGetOwnProperty ( str, propertyKey )",
         "number": "10.4.3.5"
       },
       "definedIn": "heading",
@@ -8176,7 +8176,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-istypedarrayfixedlength",
       "linkingText": [
         "IsTypedArrayFixedLength",
-        "IsTypedArrayFixedLength(O)"
+        "IsTypedArrayFixedLength(obj)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -8186,7 +8186,7 @@
       "heading": {
         "id": "sec-istypedarrayfixedlength",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-istypedarrayfixedlength",
-        "title": "IsTypedArrayFixedLength ( O )",
+        "title": "IsTypedArrayFixedLength ( obj )",
         "number": "10.4.5.15"
       },
       "definedIn": "heading",
@@ -8197,7 +8197,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-isvalidintegerindex",
       "linkingText": [
         "IsValidIntegerIndex",
-        "IsValidIntegerIndex(O, index)"
+        "IsValidIntegerIndex(obj, index)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -8207,7 +8207,7 @@
       "heading": {
         "id": "sec-isvalidintegerindex",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-isvalidintegerindex",
-        "title": "IsValidIntegerIndex ( O, index )",
+        "title": "IsValidIntegerIndex ( obj, index )",
         "number": "10.4.5.16"
       },
       "definedIn": "heading",
@@ -8218,7 +8218,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarraygetelement",
       "linkingText": [
         "TypedArrayGetElement",
-        "TypedArrayGetElement(O, index)"
+        "TypedArrayGetElement(obj, index)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -8228,7 +8228,7 @@
       "heading": {
         "id": "sec-typedarraygetelement",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarraygetelement",
-        "title": "TypedArrayGetElement ( O, index )",
+        "title": "TypedArrayGetElement ( obj, index )",
         "number": "10.4.5.17"
       },
       "definedIn": "heading",
@@ -8239,7 +8239,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarraysetelement",
       "linkingText": [
         "TypedArraySetElement",
-        "TypedArraySetElement(O, index, value)"
+        "TypedArraySetElement(obj, index, value)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -8249,7 +8249,7 @@
       "heading": {
         "id": "sec-typedarraysetelement",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarraysetelement",
-        "title": "TypedArraySetElement ( O, index, value )",
+        "title": "TypedArraySetElement ( obj, index, value )",
         "number": "10.4.5.18"
       },
       "definedIn": "heading",
@@ -8260,7 +8260,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-isarraybufferviewoutofbounds",
       "linkingText": [
         "IsArrayBufferViewOutOfBounds",
-        "IsArrayBufferViewOutOfBounds(O)"
+        "IsArrayBufferViewOutOfBounds(obj)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -8270,7 +8270,7 @@
       "heading": {
         "id": "sec-isarraybufferviewoutofbounds",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-isarraybufferviewoutofbounds",
-        "title": "IsArrayBufferViewOutOfBounds ( O )",
+        "title": "IsArrayBufferViewOutOfBounds ( obj )",
         "number": "10.4.5.19"
       },
       "definedIn": "heading",
@@ -8348,7 +8348,7 @@
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-set-immutable-prototype",
       "linkingText": [
         "SetImmutablePrototype",
-        "SetImmutablePrototype(O, V)"
+        "SetImmutablePrototype(obj, proto)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -8358,7 +8358,7 @@
       "heading": {
         "id": "sec-set-immutable-prototype",
         "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-set-immutable-prototype",
-        "title": "SetImmutablePrototype ( O, V )",
+        "title": "SetImmutablePrototype ( obj, proto )",
         "number": "10.4.7.2"
       },
       "definedIn": "heading",
@@ -12015,7 +12015,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-instanceofoperator",
       "linkingText": [
         "InstanceofOperator",
-        "InstanceofOperator(V, target)"
+        "InstanceofOperator(value, target)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -12025,7 +12025,7 @@
       "heading": {
         "id": "sec-instanceofoperator",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-instanceofoperator",
-        "title": "InstanceofOperator ( V, target )",
+        "title": "InstanceofOperator ( value, target )",
         "number": "13.10.2"
       },
       "definedIn": "heading",
@@ -13358,7 +13358,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-enumerate-object-properties",
       "linkingText": [
         "EnumerateObjectProperties",
-        "EnumerateObjectProperties(O)"
+        "EnumerateObjectProperties(obj)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -13368,7 +13368,7 @@
       "heading": {
         "id": "sec-enumerate-object-properties",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-enumerate-object-properties",
-        "title": "EnumerateObjectProperties ( O )",
+        "title": "EnumerateObjectProperties ( obj )",
         "number": "14.7.5.9"
       },
       "definedIn": "heading",
@@ -13623,7 +13623,7 @@
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-runtime-semantics-caseclauseisselected",
       "linkingText": [
         "CaseClauseIsSelected",
-        "CaseClauseIsSelected(C, input)"
+        "CaseClauseIsSelected(constructor, input)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -13633,7 +13633,7 @@
       "heading": {
         "id": "sec-runtime-semantics-caseclauseisselected",
         "href": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-runtime-semantics-caseclauseisselected",
-        "title": "CaseClauseIsSelected ( C, input )",
+        "title": "CaseClauseIsSelected ( constructor, input )",
         "number": "14.12.3"
       },
       "definedIn": "heading",
@@ -16419,7 +16419,7 @@
       "id": "sec-eval-x",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-eval-x",
       "linkingText": [
-        "eval(x)"
+        "eval(source)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -16431,7 +16431,7 @@
       "heading": {
         "id": "sec-eval-x",
         "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-eval-x",
-        "title": "eval ( x )",
+        "title": "eval ( source )",
         "number": "19.2.1"
       },
       "definedIn": "heading",
@@ -16453,7 +16453,7 @@
       "heading": {
         "id": "sec-eval-x",
         "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-eval-x",
-        "title": "eval ( x )",
+        "title": "eval ( source )",
         "number": "19.2.1"
       },
       "definedIn": "prose",
@@ -16464,7 +16464,7 @@
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-performeval",
       "linkingText": [
         "PerformEval",
-        "PerformEval(x, strictCaller, direct)"
+        "PerformEval(source, strictCaller, direct)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -16474,7 +16474,7 @@
       "heading": {
         "id": "sec-performeval",
         "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-performeval",
-        "title": "PerformEval ( x, strictCaller, direct )",
+        "title": "PerformEval ( source, strictCaller, direct )",
         "number": "19.2.1.1"
       },
       "definedIn": "heading",
@@ -17025,7 +17025,7 @@
       "id": "sec-object.create",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.create",
       "linkingText": [
-        "create(O, Properties)"
+        "create(proto, properties)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17037,7 +17037,7 @@
       "heading": {
         "id": "sec-object.create",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.create",
-        "title": "Object.create ( O, Properties )",
+        "title": "Object.create ( proto, properties )",
         "number": "20.1.2.2"
       },
       "definedIn": "heading",
@@ -17047,7 +17047,7 @@
       "id": "sec-object.defineproperties",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineproperties",
       "linkingText": [
-        "defineProperties(O, Properties)"
+        "defineProperties(obj, properties)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17059,7 +17059,7 @@
       "heading": {
         "id": "sec-object.defineproperties",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineproperties",
-        "title": "Object.defineProperties ( O, Properties )",
+        "title": "Object.defineProperties ( obj, properties )",
         "number": "20.1.2.3"
       },
       "definedIn": "heading",
@@ -17070,7 +17070,7 @@
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-objectdefineproperties",
       "linkingText": [
         "ObjectDefineProperties",
-        "ObjectDefineProperties(O, Properties)"
+        "ObjectDefineProperties(obj, properties)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -17080,7 +17080,7 @@
       "heading": {
         "id": "sec-objectdefineproperties",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-objectdefineproperties",
-        "title": "ObjectDefineProperties ( O, Properties )",
+        "title": "ObjectDefineProperties ( obj, properties )",
         "number": "20.1.2.3.1"
       },
       "definedIn": "heading",
@@ -17090,7 +17090,7 @@
       "id": "sec-object.defineproperty",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineproperty",
       "linkingText": [
-        "defineProperty(O, P, Attributes)"
+        "defineProperty(obj, propertyKey, attributes)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17102,7 +17102,7 @@
       "heading": {
         "id": "sec-object.defineproperty",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineproperty",
-        "title": "Object.defineProperty ( O, P, Attributes )",
+        "title": "Object.defineProperty ( obj, propertyKey, attributes )",
         "number": "20.1.2.4"
       },
       "definedIn": "heading",
@@ -17112,7 +17112,7 @@
       "id": "sec-object.entries",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.entries",
       "linkingText": [
-        "entries(O)"
+        "entries(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17124,7 +17124,7 @@
       "heading": {
         "id": "sec-object.entries",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.entries",
-        "title": "Object.entries ( O )",
+        "title": "Object.entries ( obj )",
         "number": "20.1.2.5"
       },
       "definedIn": "heading",
@@ -17134,7 +17134,7 @@
       "id": "sec-object.freeze",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.freeze",
       "linkingText": [
-        "freeze(O)"
+        "freeze(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17146,7 +17146,7 @@
       "heading": {
         "id": "sec-object.freeze",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.freeze",
-        "title": "Object.freeze ( O )",
+        "title": "Object.freeze ( obj )",
         "number": "20.1.2.6"
       },
       "definedIn": "heading",
@@ -17178,7 +17178,7 @@
       "id": "sec-object.getownpropertydescriptor",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertydescriptor",
       "linkingText": [
-        "getOwnPropertyDescriptor(O, P)"
+        "getOwnPropertyDescriptor(obj, propertyKey)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17190,7 +17190,7 @@
       "heading": {
         "id": "sec-object.getownpropertydescriptor",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertydescriptor",
-        "title": "Object.getOwnPropertyDescriptor ( O, P )",
+        "title": "Object.getOwnPropertyDescriptor ( obj, propertyKey )",
         "number": "20.1.2.8"
       },
       "definedIn": "heading",
@@ -17200,7 +17200,7 @@
       "id": "sec-object.getownpropertydescriptors",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertydescriptors",
       "linkingText": [
-        "getOwnPropertyDescriptors(O)"
+        "getOwnPropertyDescriptors(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17212,7 +17212,7 @@
       "heading": {
         "id": "sec-object.getownpropertydescriptors",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertydescriptors",
-        "title": "Object.getOwnPropertyDescriptors ( O )",
+        "title": "Object.getOwnPropertyDescriptors ( obj )",
         "number": "20.1.2.9"
       },
       "definedIn": "heading",
@@ -17222,7 +17222,7 @@
       "id": "sec-object.getownpropertynames",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertynames",
       "linkingText": [
-        "getOwnPropertyNames(O)"
+        "getOwnPropertyNames(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17234,7 +17234,7 @@
       "heading": {
         "id": "sec-object.getownpropertynames",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertynames",
-        "title": "Object.getOwnPropertyNames ( O )",
+        "title": "Object.getOwnPropertyNames ( obj )",
         "number": "20.1.2.10"
       },
       "definedIn": "heading",
@@ -17244,7 +17244,7 @@
       "id": "sec-object.getownpropertysymbols",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertysymbols",
       "linkingText": [
-        "getOwnPropertySymbols(O)"
+        "getOwnPropertySymbols(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17256,7 +17256,7 @@
       "heading": {
         "id": "sec-object.getownpropertysymbols",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertysymbols",
-        "title": "Object.getOwnPropertySymbols ( O )",
+        "title": "Object.getOwnPropertySymbols ( obj )",
         "number": "20.1.2.11"
       },
       "definedIn": "heading",
@@ -17267,7 +17267,7 @@
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-getownpropertykeys",
       "linkingText": [
         "GetOwnPropertyKeys",
-        "GetOwnPropertyKeys(O, type)"
+        "GetOwnPropertyKeys(value, type)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -17277,7 +17277,7 @@
       "heading": {
         "id": "sec-getownpropertykeys",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-getownpropertykeys",
-        "title": "GetOwnPropertyKeys ( O, type )",
+        "title": "GetOwnPropertyKeys ( value, type )",
         "number": "20.1.2.11.1"
       },
       "definedIn": "heading",
@@ -17287,7 +17287,7 @@
       "id": "sec-object.getprototypeof",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getprototypeof",
       "linkingText": [
-        "getPrototypeOf(O)"
+        "getPrototypeOf(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17299,7 +17299,7 @@
       "heading": {
         "id": "sec-object.getprototypeof",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getprototypeof",
-        "title": "Object.getPrototypeOf ( O )",
+        "title": "Object.getPrototypeOf ( obj )",
         "number": "20.1.2.12"
       },
       "definedIn": "heading",
@@ -17331,7 +17331,7 @@
       "id": "sec-object.hasown",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.hasown",
       "linkingText": [
-        "hasOwn(O, P)"
+        "hasOwn(obj, propertyKey)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17343,7 +17343,7 @@
       "heading": {
         "id": "sec-object.hasown",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.hasown",
-        "title": "Object.hasOwn ( O, P )",
+        "title": "Object.hasOwn ( obj, propertyKey )",
         "number": "20.1.2.14"
       },
       "definedIn": "heading",
@@ -17375,7 +17375,7 @@
       "id": "sec-object.isextensible",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.isextensible",
       "linkingText": [
-        "isExtensible(O)"
+        "isExtensible(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17387,7 +17387,7 @@
       "heading": {
         "id": "sec-object.isextensible",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.isextensible",
-        "title": "Object.isExtensible ( O )",
+        "title": "Object.isExtensible ( obj )",
         "number": "20.1.2.16"
       },
       "definedIn": "heading",
@@ -17397,7 +17397,7 @@
       "id": "sec-object.isfrozen",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.isfrozen",
       "linkingText": [
-        "isFrozen(O)"
+        "isFrozen(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17409,7 +17409,7 @@
       "heading": {
         "id": "sec-object.isfrozen",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.isfrozen",
-        "title": "Object.isFrozen ( O )",
+        "title": "Object.isFrozen ( obj )",
         "number": "20.1.2.17"
       },
       "definedIn": "heading",
@@ -17419,7 +17419,7 @@
       "id": "sec-object.issealed",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.issealed",
       "linkingText": [
-        "isSealed(O)"
+        "isSealed(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17431,7 +17431,7 @@
       "heading": {
         "id": "sec-object.issealed",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.issealed",
-        "title": "Object.isSealed ( O )",
+        "title": "Object.isSealed ( obj )",
         "number": "20.1.2.18"
       },
       "definedIn": "heading",
@@ -17441,7 +17441,7 @@
       "id": "sec-object.keys",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.keys",
       "linkingText": [
-        "keys(O)"
+        "keys(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17453,7 +17453,7 @@
       "heading": {
         "id": "sec-object.keys",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.keys",
-        "title": "Object.keys ( O )",
+        "title": "Object.keys ( obj )",
         "number": "20.1.2.19"
       },
       "definedIn": "heading",
@@ -17463,7 +17463,7 @@
       "id": "sec-object.preventextensions",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.preventextensions",
       "linkingText": [
-        "preventExtensions(O)"
+        "preventExtensions(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17475,7 +17475,7 @@
       "heading": {
         "id": "sec-object.preventextensions",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.preventextensions",
-        "title": "Object.preventExtensions ( O )",
+        "title": "Object.preventExtensions ( obj )",
         "number": "20.1.2.20"
       },
       "definedIn": "heading",
@@ -17485,7 +17485,7 @@
       "id": "sec-object.seal",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.seal",
       "linkingText": [
-        "seal(O)"
+        "seal(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17497,7 +17497,7 @@
       "heading": {
         "id": "sec-object.seal",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.seal",
-        "title": "Object.seal ( O )",
+        "title": "Object.seal ( obj )",
         "number": "20.1.2.22"
       },
       "definedIn": "heading",
@@ -17507,7 +17507,7 @@
       "id": "sec-object.setprototypeof",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.setprototypeof",
       "linkingText": [
-        "setPrototypeOf(O, proto)"
+        "setPrototypeOf(obj, proto)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17519,7 +17519,7 @@
       "heading": {
         "id": "sec-object.setprototypeof",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.setprototypeof",
-        "title": "Object.setPrototypeOf ( O, proto )",
+        "title": "Object.setPrototypeOf ( obj, proto )",
         "number": "20.1.2.23"
       },
       "definedIn": "heading",
@@ -17529,7 +17529,7 @@
       "id": "sec-object.values",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.values",
       "linkingText": [
-        "values(O)"
+        "values(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17541,7 +17541,7 @@
       "heading": {
         "id": "sec-object.values",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.values",
-        "title": "Object.values ( O )",
+        "title": "Object.values ( obj )",
         "number": "20.1.2.24"
       },
       "definedIn": "heading",
@@ -17571,7 +17571,7 @@
       "id": "sec-object.prototype.hasownproperty",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.hasownproperty",
       "linkingText": [
-        "hasOwnProperty(V)"
+        "hasOwnProperty(value)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17583,7 +17583,7 @@
       "heading": {
         "id": "sec-object.prototype.hasownproperty",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.hasownproperty",
-        "title": "Object.prototype.hasOwnProperty ( V )",
+        "title": "Object.prototype.hasOwnProperty ( value )",
         "number": "20.1.3.2"
       },
       "definedIn": "heading",
@@ -17593,7 +17593,7 @@
       "id": "sec-object.prototype.isprototypeof",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.isprototypeof",
       "linkingText": [
-        "isPrototypeOf(V)"
+        "isPrototypeOf(value)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17605,7 +17605,7 @@
       "heading": {
         "id": "sec-object.prototype.isprototypeof",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.isprototypeof",
-        "title": "Object.prototype.isPrototypeOf ( V )",
+        "title": "Object.prototype.isPrototypeOf ( value )",
         "number": "20.1.3.3"
       },
       "definedIn": "heading",
@@ -17615,7 +17615,7 @@
       "id": "sec-object.prototype.propertyisenumerable",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.propertyisenumerable",
       "linkingText": [
-        "propertyIsEnumerable(V)"
+        "propertyIsEnumerable(value)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -17627,7 +17627,7 @@
       "heading": {
         "id": "sec-object.prototype.propertyisenumerable",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.propertyisenumerable",
-        "title": "Object.prototype.propertyIsEnumerable ( V )",
+        "title": "Object.prototype.propertyIsEnumerable ( value )",
         "number": "20.1.3.4"
       },
       "definedIn": "heading",
@@ -17934,19 +17934,19 @@
       "id": "sec-function.prototype-%symbol.hasinstance%",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-function.prototype-%25symbol.hasinstance%25",
       "linkingText": [
-        "Function.prototype %Symbol.hasInstance% (V)"
+        "Function.prototype %Symbol.hasInstance% (value)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "Function.prototype [ %Symbol.hasInstance% ] ( V )"
+        "Function.prototype [ %Symbol.hasInstance% ] ( value )"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "sec-function.prototype-%symbol.hasinstance%",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-function.prototype-%25symbol.hasinstance%25",
-        "title": "Function.prototype [ %Symbol.hasInstance% ] ( V )",
+        "title": "Function.prototype [ %Symbol.hasInstance% ] ( value )",
         "number": "20.2.3.6"
       },
       "definedIn": "heading",
@@ -19332,7 +19332,7 @@
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-installerrorcause",
       "linkingText": [
         "InstallErrorCause",
-        "InstallErrorCause(O, options)"
+        "InstallErrorCause(obj, options)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -19342,7 +19342,7 @@
       "heading": {
         "id": "sec-installerrorcause",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-installerrorcause",
-        "title": "InstallErrorCause ( O, options )",
+        "title": "InstallErrorCause ( obj, options )",
         "number": "20.5.8.1"
       },
       "definedIn": "heading",
@@ -23769,7 +23769,7 @@
       "id": "sec-string.prototype.match",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.match",
       "linkingText": [
-        "match(regexp)"
+        "match(regexpOrPattern)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23781,7 +23781,7 @@
       "heading": {
         "id": "sec-string.prototype.match",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.match",
-        "title": "String.prototype.match ( regexp )",
+        "title": "String.prototype.match ( regexpOrPattern )",
         "number": "22.1.3.13"
       },
       "definedIn": "heading",
@@ -23791,7 +23791,7 @@
       "id": "sec-string.prototype.matchall",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.matchall",
       "linkingText": [
-        "matchAll(regexp)"
+        "matchAll(regexpOrPattern)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -23803,7 +23803,7 @@
       "heading": {
         "id": "sec-string.prototype.matchall",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.matchall",
-        "title": "String.prototype.matchAll ( regexp )",
+        "title": "String.prototype.matchAll ( regexpOrPattern )",
         "number": "22.1.3.14"
       },
       "definedIn": "heading",
@@ -23880,7 +23880,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpaddingbuiltinsimpl",
       "linkingText": [
         "StringPaddingBuiltinsImpl",
-        "StringPaddingBuiltinsImpl(O, maxLength, fillString, placement)"
+        "StringPaddingBuiltinsImpl(thisValue, maxLength, fillString, placement)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -23890,7 +23890,7 @@
       "heading": {
         "id": "sec-stringpaddingbuiltinsimpl",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpaddingbuiltinsimpl",
-        "title": "StringPaddingBuiltinsImpl ( O, maxLength, fillString, placement )",
+        "title": "StringPaddingBuiltinsImpl ( thisValue, maxLength, fillString, placement )",
         "number": "22.1.3.17.1"
       },
       "definedIn": "heading",
@@ -23901,7 +23901,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpad",
       "linkingText": [
         "StringPad",
-        "StringPad(S, maxLength, fillString, placement)"
+        "StringPad(str, maxLength, fillString, placement)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -23911,7 +23911,7 @@
       "heading": {
         "id": "sec-stringpad",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpad",
-        "title": "StringPad ( S, maxLength, fillString, placement )",
+        "title": "StringPad ( str, maxLength, fillString, placement )",
         "number": "22.1.3.17.2"
       },
       "definedIn": "heading",
@@ -24029,7 +24029,7 @@
       "id": "sec-string.prototype.search",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.search",
       "linkingText": [
-        "search(regexp)"
+        "search(regexpOrPattern)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -24041,7 +24041,7 @@
       "heading": {
         "id": "sec-string.prototype.search",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.search",
-        "title": "String.prototype.search ( regexp )",
+        "title": "String.prototype.search ( regexpOrPattern )",
         "number": "22.1.3.21"
       },
       "definedIn": "heading",
@@ -25850,7 +25850,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-repeatmatcher-abstract-operation",
       "linkingText": [
         "RepeatMatcher",
-        "RepeatMatcher(m, min, max, greedy, x, c, parenIndex, parenCount)"
+        "RepeatMatcher(m, min, max, greedy, matchState, continue, parenIndex, parenCount)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -25860,7 +25860,7 @@
       "heading": {
         "id": "sec-runtime-semantics-repeatmatcher-abstract-operation",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-repeatmatcher-abstract-operation",
-        "title": "RepeatMatcher ( m, min, max, greedy, x, c, parenIndex, parenCount )",
+        "title": "RepeatMatcher ( m, min, max, greedy, matchState, continue, parenIndex, parenCount )",
         "number": "22.2.2.3.1"
       },
       "definedIn": "heading",
@@ -25934,7 +25934,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-iswordchar-abstract-operation",
       "linkingText": [
         "IsWordChar",
-        "IsWordChar(rer, Input, e)"
+        "IsWordChar(regexpRecord, input, e)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -25944,7 +25944,7 @@
       "heading": {
         "id": "sec-runtime-semantics-iswordchar-abstract-operation",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-iswordchar-abstract-operation",
-        "title": "IsWordChar ( rer, Input, e )",
+        "title": "IsWordChar ( regexpRecord, input, e )",
         "number": "22.2.2.4.1"
       },
       "definedIn": "heading",
@@ -25955,7 +25955,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-charactersetmatcher-abstract-operation",
       "linkingText": [
         "CharacterSetMatcher",
-        "CharacterSetMatcher(rer, A, invert, direction)"
+        "CharacterSetMatcher(regexpRecord, charSet, invert, direction)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -25965,7 +25965,7 @@
       "heading": {
         "id": "sec-runtime-semantics-charactersetmatcher-abstract-operation",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-charactersetmatcher-abstract-operation",
-        "title": "CharacterSetMatcher ( rer, A, invert, direction )",
+        "title": "CharacterSetMatcher ( regexpRecord, charSet, invert, direction )",
         "number": "22.2.2.7.1"
       },
       "definedIn": "heading",
@@ -25976,7 +25976,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-backreference-matcher",
       "linkingText": [
         "BackreferenceMatcher",
-        "BackreferenceMatcher(rer, ns, direction)"
+        "BackreferenceMatcher(regexpRecord, ns, direction)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -25986,7 +25986,7 @@
       "heading": {
         "id": "sec-backreference-matcher",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-backreference-matcher",
-        "title": "BackreferenceMatcher ( rer, ns, direction )",
+        "title": "BackreferenceMatcher ( regexpRecord, ns, direction )",
         "number": "22.2.2.7.2"
       },
       "definedIn": "heading",
@@ -25997,7 +25997,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-canonicalize-ch",
       "linkingText": [
         "Canonicalize",
-        "Canonicalize(rer, ch)"
+        "Canonicalize(regexpRecord, ch)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26007,7 +26007,7 @@
       "heading": {
         "id": "sec-runtime-semantics-canonicalize-ch",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-canonicalize-ch",
-        "title": "Canonicalize ( rer, ch )",
+        "title": "Canonicalize ( regexpRecord, ch )",
         "number": "22.2.2.7.3"
       },
       "definedIn": "heading",
@@ -26018,7 +26018,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-updatemodifiers",
       "linkingText": [
         "UpdateModifiers",
-        "UpdateModifiers(rer, add, remove)"
+        "UpdateModifiers(regexpRecord, add, remove)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26028,7 +26028,7 @@
       "heading": {
         "id": "sec-updatemodifiers",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-updatemodifiers",
-        "title": "UpdateModifiers ( rer, add, remove )",
+        "title": "UpdateModifiers ( regexpRecord, add, remove )",
         "number": "22.2.2.7.4"
       },
       "definedIn": "heading",
@@ -26039,7 +26039,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-characterrange-abstract-operation",
       "linkingText": [
         "CharacterRange",
-        "CharacterRange(A, B)"
+        "CharacterRange(charSet, otherSet)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26049,7 +26049,7 @@
       "heading": {
         "id": "sec-runtime-semantics-characterrange-abstract-operation",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-characterrange-abstract-operation",
-        "title": "CharacterRange ( A, B )",
+        "title": "CharacterRange ( charSet, otherSet )",
         "number": "22.2.2.9.1"
       },
       "definedIn": "heading",
@@ -26060,7 +26060,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-haseitherunicodeflag-abstract-operation",
       "linkingText": [
         "HasEitherUnicodeFlag",
-        "HasEitherUnicodeFlag(rer)"
+        "HasEitherUnicodeFlag(regexpRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26070,7 +26070,7 @@
       "heading": {
         "id": "sec-runtime-semantics-haseitherunicodeflag-abstract-operation",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-haseitherunicodeflag-abstract-operation",
-        "title": "HasEitherUnicodeFlag ( rer )",
+        "title": "HasEitherUnicodeFlag ( regexpRecord )",
         "number": "22.2.2.9.2"
       },
       "definedIn": "heading",
@@ -26081,7 +26081,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-wordcharacters",
       "linkingText": [
         "WordCharacters",
-        "WordCharacters(rer)"
+        "WordCharacters(regexpRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26091,7 +26091,7 @@
       "heading": {
         "id": "sec-wordcharacters",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-wordcharacters",
-        "title": "WordCharacters ( rer )",
+        "title": "WordCharacters ( regexpRecord )",
         "number": "22.2.2.9.3"
       },
       "definedIn": "heading",
@@ -26102,7 +26102,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-allcharacters",
       "linkingText": [
         "AllCharacters",
-        "AllCharacters(rer)"
+        "AllCharacters(regexpRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26112,7 +26112,7 @@
       "heading": {
         "id": "sec-allcharacters",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-allcharacters",
-        "title": "AllCharacters ( rer )",
+        "title": "AllCharacters ( regexpRecord )",
         "number": "22.2.2.9.4"
       },
       "definedIn": "heading",
@@ -26123,7 +26123,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-maybesimplecasefolding",
       "linkingText": [
         "MaybeSimpleCaseFolding",
-        "MaybeSimpleCaseFolding(rer, A)"
+        "MaybeSimpleCaseFolding(regexpRecord, charSet)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26133,7 +26133,7 @@
       "heading": {
         "id": "sec-maybesimplecasefolding",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-maybesimplecasefolding",
-        "title": "MaybeSimpleCaseFolding ( rer, A )",
+        "title": "MaybeSimpleCaseFolding ( regexpRecord, charSet )",
         "number": "22.2.2.9.5"
       },
       "definedIn": "heading",
@@ -26153,7 +26153,7 @@
       "heading": {
         "id": "sec-maybesimplecasefolding",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-maybesimplecasefolding",
-        "title": "MaybeSimpleCaseFolding ( rer, A )",
+        "title": "MaybeSimpleCaseFolding ( regexpRecord, charSet )",
         "number": "22.2.2.9.5"
       },
       "definedIn": "prose",
@@ -26164,7 +26164,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-charactercomplement",
       "linkingText": [
         "CharacterComplement",
-        "CharacterComplement(rer, S)"
+        "CharacterComplement(regexpRecord, complement)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26174,7 +26174,7 @@
       "heading": {
         "id": "sec-charactercomplement",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-charactercomplement",
-        "title": "CharacterComplement ( rer, S )",
+        "title": "CharacterComplement ( regexpRecord, complement )",
         "number": "22.2.2.9.6"
       },
       "definedIn": "heading",
@@ -26185,7 +26185,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchproperty-p",
       "linkingText": [
         "UnicodeMatchProperty",
-        "UnicodeMatchProperty(rer, p)"
+        "UnicodeMatchProperty(regexpRecord, p)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26195,7 +26195,7 @@
       "heading": {
         "id": "sec-runtime-semantics-unicodematchproperty-p",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchproperty-p",
-        "title": "UnicodeMatchProperty ( rer, p )",
+        "title": "UnicodeMatchProperty ( regexpRecord, p )",
         "number": "22.2.2.9.7"
       },
       "definedIn": "heading",
@@ -26227,7 +26227,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpcreate",
       "linkingText": [
         "RegExpCreate",
-        "RegExpCreate(P, F)"
+        "RegExpCreate(pattern, flags)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26237,7 +26237,7 @@
       "heading": {
         "id": "sec-regexpcreate",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpcreate",
-        "title": "RegExpCreate ( P, F )",
+        "title": "RegExpCreate ( pattern, flags )",
         "number": "22.2.3.1"
       },
       "definedIn": "heading",
@@ -26309,7 +26309,7 @@
       "id": "sec-regexp-pattern-flags",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-pattern-flags",
       "linkingText": [
-        "RegExp(pattern, flags)"
+        "RegExp(patternOrRegexp, flags)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -26321,7 +26321,7 @@
       "heading": {
         "id": "sec-regexp-pattern-flags",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-pattern-flags",
-        "title": "RegExp ( pattern, flags )",
+        "title": "RegExp ( patternOrRegexp, flags )",
         "number": "22.2.4.1"
       },
       "definedIn": "heading",
@@ -26331,7 +26331,7 @@
       "id": "sec-regexp.escape",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.escape",
       "linkingText": [
-        "escape(S)"
+        "escape(str)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -26343,7 +26343,7 @@
       "heading": {
         "id": "sec-regexp.escape",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.escape",
-        "title": "RegExp.escape ( S )",
+        "title": "RegExp.escape ( str )",
         "number": "22.2.5.1"
       },
       "definedIn": "heading",
@@ -26461,7 +26461,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexphasflag",
       "linkingText": [
         "RegExpHasFlag",
-        "RegExpHasFlag(R, codeUnit)"
+        "RegExpHasFlag(regexp, codeUnit)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26471,7 +26471,7 @@
       "heading": {
         "id": "sec-regexphasflag",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexphasflag",
-        "title": "RegExpHasFlag ( R, codeUnit )",
+        "title": "RegExpHasFlag ( regexp, codeUnit )",
         "number": "22.2.6.4.1"
       },
       "definedIn": "heading",
@@ -26680,7 +26680,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-escaperegexppattern",
       "linkingText": [
         "EscapeRegExpPattern",
-        "EscapeRegExpPattern(P, F)"
+        "EscapeRegExpPattern(pattern, flags)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26690,7 +26690,7 @@
       "heading": {
         "id": "sec-escaperegexppattern",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-escaperegexppattern",
-        "title": "EscapeRegExpPattern ( P, F )",
+        "title": "EscapeRegExpPattern ( pattern, flags )",
         "number": "22.2.6.13.1"
       },
       "definedIn": "heading",
@@ -26744,7 +26744,7 @@
       "id": "sec-regexp.prototype.test",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype.test",
       "linkingText": [
-        "test(S)"
+        "test(str)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -26756,7 +26756,7 @@
       "heading": {
         "id": "sec-regexp.prototype.test",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype.test",
-        "title": "RegExp.prototype.test ( S )",
+        "title": "RegExp.prototype.test ( str )",
         "number": "22.2.6.16"
       },
       "definedIn": "heading",
@@ -26833,7 +26833,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpexec",
       "linkingText": [
         "RegExpExec",
-        "RegExpExec(R, S)"
+        "RegExpExec(regexp, str)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26843,7 +26843,7 @@
       "heading": {
         "id": "sec-regexpexec",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpexec",
-        "title": "RegExpExec ( R, S )",
+        "title": "RegExpExec ( regexp, str )",
         "number": "22.2.7.1"
       },
       "definedIn": "heading",
@@ -26854,7 +26854,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpbuiltinexec",
       "linkingText": [
         "RegExpBuiltinExec",
-        "RegExpBuiltinExec(R, S)"
+        "RegExpBuiltinExec(regexp, str)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26864,7 +26864,7 @@
       "heading": {
         "id": "sec-regexpbuiltinexec",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpbuiltinexec",
-        "title": "RegExpBuiltinExec ( R, S )",
+        "title": "RegExpBuiltinExec ( regexp, str )",
         "number": "22.2.7.2"
       },
       "definedIn": "heading",
@@ -26875,7 +26875,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-advancestringindex",
       "linkingText": [
         "AdvanceStringIndex",
-        "AdvanceStringIndex(S, index, unicode)"
+        "AdvanceStringIndex(str, index, unicode)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26885,7 +26885,7 @@
       "heading": {
         "id": "sec-advancestringindex",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-advancestringindex",
-        "title": "AdvanceStringIndex ( S, index, unicode )",
+        "title": "AdvanceStringIndex ( str, index, unicode )",
         "number": "22.2.7.3"
       },
       "definedIn": "heading",
@@ -26896,7 +26896,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-getstringindex",
       "linkingText": [
         "GetStringIndex",
-        "GetStringIndex(S, codePointIndex)"
+        "GetStringIndex(str, codePointIndex)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26906,7 +26906,7 @@
       "heading": {
         "id": "sec-getstringindex",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-getstringindex",
-        "title": "GetStringIndex ( S, codePointIndex )",
+        "title": "GetStringIndex ( str, codePointIndex )",
         "number": "22.2.7.4"
       },
       "definedIn": "heading",
@@ -26940,7 +26940,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-getmatchstring",
       "linkingText": [
         "GetMatchString",
-        "GetMatchString(S, match)"
+        "GetMatchString(str, match)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26950,7 +26950,7 @@
       "heading": {
         "id": "sec-getmatchstring",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-getmatchstring",
-        "title": "GetMatchString ( S, match )",
+        "title": "GetMatchString ( str, match )",
         "number": "22.2.7.6"
       },
       "definedIn": "heading",
@@ -26961,7 +26961,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-getmatchindexpair",
       "linkingText": [
         "GetMatchIndexPair",
-        "GetMatchIndexPair(S, match)"
+        "GetMatchIndexPair(str, match)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26971,7 +26971,7 @@
       "heading": {
         "id": "sec-getmatchindexpair",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-getmatchindexpair",
-        "title": "GetMatchIndexPair ( S, match )",
+        "title": "GetMatchIndexPair ( str, match )",
         "number": "22.2.7.7"
       },
       "definedIn": "heading",
@@ -26982,7 +26982,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-makematchindicesindexpairarray",
       "linkingText": [
         "MakeMatchIndicesIndexPairArray",
-        "MakeMatchIndicesIndexPairArray(S, indices, groupNames, hasGroups)"
+        "MakeMatchIndicesIndexPairArray(str, indices, groupNames, hasGroups)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -26992,7 +26992,7 @@
       "heading": {
         "id": "sec-makematchindicesindexpairarray",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-makematchindicesindexpairarray",
-        "title": "MakeMatchIndicesIndexPairArray ( S, indices, groupNames, hasGroups )",
+        "title": "MakeMatchIndicesIndexPairArray ( str, indices, groupNames, hasGroups )",
         "number": "22.2.7.8"
       },
       "definedIn": "heading",
@@ -27026,7 +27026,7 @@
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-createregexpstringiterator",
       "linkingText": [
         "CreateRegExpStringIterator",
-        "CreateRegExpStringIterator(R, S, global, fullUnicode)"
+        "CreateRegExpStringIterator(regexp, str, global, fullUnicode)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -27036,7 +27036,7 @@
       "heading": {
         "id": "sec-createregexpstringiterator",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-createregexpstringiterator",
-        "title": "CreateRegExpStringIterator ( R, S, global, fullUnicode )",
+        "title": "CreateRegExpStringIterator ( regexp, str, global, fullUnicode )",
         "number": "22.2.9.1"
       },
       "definedIn": "heading",
@@ -27281,7 +27281,7 @@
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-isconcatspreadable",
       "linkingText": [
         "IsConcatSpreadable",
-        "IsConcatSpreadable(O)"
+        "IsConcatSpreadable(obj)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -27291,7 +27291,7 @@
       "heading": {
         "id": "sec-isconcatspreadable",
         "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-isconcatspreadable",
-        "title": "IsConcatSpreadable ( O )",
+        "title": "IsConcatSpreadable ( obj )",
         "number": "23.1.3.2.1"
       },
       "definedIn": "heading",
@@ -27500,7 +27500,7 @@
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-findviapredicate",
       "linkingText": [
         "FindViaPredicate",
-        "FindViaPredicate(O, len, direction, predicate, thisArg)"
+        "FindViaPredicate(obj, len, direction, predicate, thisArg)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -27510,7 +27510,7 @@
       "heading": {
         "id": "sec-findviapredicate",
         "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-findviapredicate",
-        "title": "FindViaPredicate ( O, len, direction, predicate, thisArg )",
+        "title": "FindViaPredicate ( obj, len, direction, predicate, thisArg )",
         "number": "23.1.3.12.1"
       },
       "definedIn": "heading",
@@ -27938,7 +27938,7 @@
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-sortindexedproperties",
       "linkingText": [
         "SortIndexedProperties",
-        "SortIndexedProperties(obj, len, SortCompare, holes)"
+        "SortIndexedProperties(obj, len, sortCompare, holes)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -27948,7 +27948,7 @@
       "heading": {
         "id": "sec-sortindexedproperties",
         "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-sortindexedproperties",
-        "title": "SortIndexedProperties ( obj, len, SortCompare, holes )",
+        "title": "SortIndexedProperties ( obj, len, sortCompare, holes )",
         "number": "23.1.3.30.1"
       },
       "definedIn": "heading",
@@ -27970,7 +27970,7 @@
       "heading": {
         "id": "sec-sortindexedproperties",
         "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-sortindexedproperties",
-        "title": "SortIndexedProperties ( obj, len, SortCompare, holes )",
+        "title": "SortIndexedProperties ( obj, len, sortCompare, holes )",
         "number": "23.1.3.30.1"
       },
       "definedIn": "prose",
@@ -27992,7 +27992,7 @@
       "heading": {
         "id": "sec-sortindexedproperties",
         "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-sortindexedproperties",
-        "title": "SortIndexedProperties ( obj, len, SortCompare, holes )",
+        "title": "SortIndexedProperties ( obj, len, sortCompare, holes )",
         "number": "23.1.3.30.1"
       },
       "definedIn": "prose",
@@ -29572,7 +29572,7 @@
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-validatetypedarray",
       "linkingText": [
         "ValidateTypedArray",
-        "ValidateTypedArray(O, order)"
+        "ValidateTypedArray(obj, order)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -29582,7 +29582,7 @@
       "heading": {
         "id": "sec-validatetypedarray",
         "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-validatetypedarray",
-        "title": "ValidateTypedArray ( O, order )",
+        "title": "ValidateTypedArray ( obj, order )",
         "number": "23.2.4.4"
       },
       "definedIn": "heading",
@@ -29593,7 +29593,7 @@
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarrayelementsize",
       "linkingText": [
         "TypedArrayElementSize",
-        "TypedArrayElementSize(O)"
+        "TypedArrayElementSize(obj)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -29603,7 +29603,7 @@
       "heading": {
         "id": "sec-typedarrayelementsize",
         "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarrayelementsize",
-        "title": "TypedArrayElementSize ( O )",
+        "title": "TypedArrayElementSize ( obj )",
         "number": "23.2.4.5"
       },
       "definedIn": "heading",
@@ -29614,7 +29614,7 @@
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarrayelementtype",
       "linkingText": [
         "TypedArrayElementType",
-        "TypedArrayElementType(O)"
+        "TypedArrayElementType(obj)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -29624,7 +29624,7 @@
       "heading": {
         "id": "sec-typedarrayelementtype",
         "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarrayelementtype",
-        "title": "TypedArrayElementType ( O )",
+        "title": "TypedArrayElementType ( obj )",
         "number": "23.2.4.6"
       },
       "definedIn": "heading",
@@ -29699,7 +29699,7 @@
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromtypedarray",
       "linkingText": [
         "InitializeTypedArrayFromTypedArray",
-        "InitializeTypedArrayFromTypedArray(O, srcArray)"
+        "InitializeTypedArrayFromTypedArray(obj, srcArray)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -29709,7 +29709,7 @@
       "heading": {
         "id": "sec-initializetypedarrayfromtypedarray",
         "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromtypedarray",
-        "title": "InitializeTypedArrayFromTypedArray ( O, srcArray )",
+        "title": "InitializeTypedArrayFromTypedArray ( obj, srcArray )",
         "number": "23.2.5.1.2"
       },
       "definedIn": "heading",
@@ -29720,7 +29720,7 @@
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromarraybuffer",
       "linkingText": [
         "InitializeTypedArrayFromArrayBuffer",
-        "InitializeTypedArrayFromArrayBuffer(O, buffer, byteOffset, length)"
+        "InitializeTypedArrayFromArrayBuffer(obj, buffer, byteOffset, length)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -29730,7 +29730,7 @@
       "heading": {
         "id": "sec-initializetypedarrayfromarraybuffer",
         "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromarraybuffer",
-        "title": "InitializeTypedArrayFromArrayBuffer ( O, buffer, byteOffset, length )",
+        "title": "InitializeTypedArrayFromArrayBuffer ( obj, buffer, byteOffset, length )",
         "number": "23.2.5.1.3"
       },
       "definedIn": "heading",
@@ -29741,7 +29741,7 @@
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromlist",
       "linkingText": [
         "InitializeTypedArrayFromList",
-        "InitializeTypedArrayFromList(O, values)"
+        "InitializeTypedArrayFromList(obj, values)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -29751,7 +29751,7 @@
       "heading": {
         "id": "sec-initializetypedarrayfromlist",
         "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromlist",
-        "title": "InitializeTypedArrayFromList ( O, values )",
+        "title": "InitializeTypedArrayFromList ( obj, values )",
         "number": "23.2.5.1.4"
       },
       "definedIn": "heading",
@@ -29762,7 +29762,7 @@
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromarraylike",
       "linkingText": [
         "InitializeTypedArrayFromArrayLike",
-        "InitializeTypedArrayFromArrayLike(O, arrayLike)"
+        "InitializeTypedArrayFromArrayLike(obj, arrayLike)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -29772,7 +29772,7 @@
       "heading": {
         "id": "sec-initializetypedarrayfromarraylike",
         "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromarraylike",
-        "title": "InitializeTypedArrayFromArrayLike ( O, arrayLike )",
+        "title": "InitializeTypedArrayFromArrayLike ( obj, arrayLike )",
         "number": "23.2.5.1.5"
       },
       "definedIn": "heading",
@@ -29783,7 +29783,7 @@
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-allocatetypedarraybuffer",
       "linkingText": [
         "AllocateTypedArrayBuffer",
-        "AllocateTypedArrayBuffer(O, length)"
+        "AllocateTypedArrayBuffer(obj, length)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -29793,7 +29793,7 @@
       "heading": {
         "id": "sec-allocatetypedarraybuffer",
         "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-allocatetypedarraybuffer",
-        "title": "AllocateTypedArrayBuffer ( O, length )",
+        "title": "AllocateTypedArrayBuffer ( obj, length )",
         "number": "23.2.5.1.6"
       },
       "definedIn": "heading",
@@ -33696,7 +33696,7 @@
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-entercriticalsection",
       "linkingText": [
         "EnterCriticalSection",
-        "EnterCriticalSection(WL)"
+        "EnterCriticalSection(waiterList)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -33706,7 +33706,7 @@
       "heading": {
         "id": "sec-entercriticalsection",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-entercriticalsection",
-        "title": "EnterCriticalSection ( WL )",
+        "title": "EnterCriticalSection ( waiterList )",
         "number": "25.4.3.6"
       },
       "definedIn": "heading",
@@ -33728,7 +33728,7 @@
       "heading": {
         "id": "sec-entercriticalsection",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-entercriticalsection",
-        "title": "EnterCriticalSection ( WL )",
+        "title": "EnterCriticalSection ( waiterList )",
         "number": "25.4.3.6"
       },
       "definedIn": "prose",
@@ -33739,7 +33739,7 @@
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-leavecriticalsection",
       "linkingText": [
         "LeaveCriticalSection",
-        "LeaveCriticalSection(WL)"
+        "LeaveCriticalSection(waiterList)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -33749,7 +33749,7 @@
       "heading": {
         "id": "sec-leavecriticalsection",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-leavecriticalsection",
-        "title": "LeaveCriticalSection ( WL )",
+        "title": "LeaveCriticalSection ( waiterList )",
         "number": "25.4.3.7"
       },
       "definedIn": "heading",
@@ -33760,7 +33760,7 @@
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-addwaiter",
       "linkingText": [
         "AddWaiter",
-        "AddWaiter(WL, waiterRecord)"
+        "AddWaiter(waiterList, waiterRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -33770,7 +33770,7 @@
       "heading": {
         "id": "sec-addwaiter",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-addwaiter",
-        "title": "AddWaiter ( WL, waiterRecord )",
+        "title": "AddWaiter ( waiterList, waiterRecord )",
         "number": "25.4.3.8"
       },
       "definedIn": "heading",
@@ -33781,7 +33781,7 @@
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiter",
       "linkingText": [
         "RemoveWaiter",
-        "RemoveWaiter(WL, waiterRecord)"
+        "RemoveWaiter(waiterList, waiterRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -33791,7 +33791,7 @@
       "heading": {
         "id": "sec-removewaiter",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiter",
-        "title": "RemoveWaiter ( WL, waiterRecord )",
+        "title": "RemoveWaiter ( waiterList, waiterRecord )",
         "number": "25.4.3.9"
       },
       "definedIn": "heading",
@@ -33802,7 +33802,7 @@
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiters",
       "linkingText": [
         "RemoveWaiters",
-        "RemoveWaiters(WL, c)"
+        "RemoveWaiters(waiterList, count)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -33812,7 +33812,7 @@
       "heading": {
         "id": "sec-removewaiters",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-removewaiters",
-        "title": "RemoveWaiters ( WL, c )",
+        "title": "RemoveWaiters ( waiterList, count )",
         "number": "25.4.3.10"
       },
       "definedIn": "heading",
@@ -33823,7 +33823,7 @@
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-suspendthisagent",
       "linkingText": [
         "SuspendThisAgent",
-        "SuspendThisAgent(WL, waiterRecord)"
+        "SuspendThisAgent(waiterList, waiterRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -33833,7 +33833,7 @@
       "heading": {
         "id": "sec-suspendthisagent",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-suspendthisagent",
-        "title": "SuspendThisAgent ( WL, waiterRecord )",
+        "title": "SuspendThisAgent ( waiterList, waiterRecord )",
         "number": "25.4.3.11"
       },
       "definedIn": "heading",
@@ -33844,7 +33844,7 @@
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-notifywaiter",
       "linkingText": [
         "NotifyWaiter",
-        "NotifyWaiter(WL, waiterRecord)"
+        "NotifyWaiter(waiterList, waiterRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -33854,7 +33854,7 @@
       "heading": {
         "id": "sec-notifywaiter",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-notifywaiter",
-        "title": "NotifyWaiter ( WL, waiterRecord )",
+        "title": "NotifyWaiter ( waiterList, waiterRecord )",
         "number": "25.4.3.12"
       },
       "definedIn": "heading",
@@ -33907,7 +33907,7 @@
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-enqueueatomicswaitasynctimeoutjob",
       "linkingText": [
         "EnqueueAtomicsWaitAsyncTimeoutJob",
-        "EnqueueAtomicsWaitAsyncTimeoutJob(WL, waiterRecord)"
+        "EnqueueAtomicsWaitAsyncTimeoutJob(waiterList, waiterRecord)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -33917,7 +33917,7 @@
       "heading": {
         "id": "sec-enqueueatomicswaitasynctimeoutjob",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-enqueueatomicswaitasynctimeoutjob",
-        "title": "EnqueueAtomicsWaitAsyncTimeoutJob ( WL, waiterRecord )",
+        "title": "EnqueueAtomicsWaitAsyncTimeoutJob ( waiterList, waiterRecord )",
         "number": "25.4.3.15"
       },
       "definedIn": "heading",
@@ -34337,7 +34337,7 @@
       "id": "sec-json.israwjson",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.israwjson",
       "linkingText": [
-        "isRawJSON(O)"
+        "isRawJSON(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -34349,7 +34349,7 @@
       "heading": {
         "id": "sec-json.israwjson",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-json.israwjson",
-        "title": "JSON.isRawJSON ( O )",
+        "title": "JSON.isRawJSON ( obj )",
         "number": "25.5.1"
       },
       "definedIn": "heading",
@@ -34577,7 +34577,7 @@
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-unicodeescape",
       "linkingText": [
         "UnicodeEscape",
-        "UnicodeEscape(C)"
+        "UnicodeEscape(constructor)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -34587,7 +34587,7 @@
       "heading": {
         "id": "sec-unicodeescape",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-unicodeescape",
-        "title": "UnicodeEscape ( C )",
+        "title": "UnicodeEscape ( constructor )",
         "number": "25.5.4.4"
       },
       "definedIn": "heading",
@@ -35132,7 +35132,7 @@
       "id": "sec-iterator.from",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.from",
       "linkingText": [
-        "from(O)"
+        "from(obj)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -35144,7 +35144,7 @@
       "heading": {
         "id": "sec-iterator.from",
         "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.from",
-        "title": "Iterator.from ( O )",
+        "title": "Iterator.from ( obj )",
         "number": "27.1.3.2.2"
       },
       "definedIn": "heading",
@@ -35737,7 +35737,7 @@
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-newpromisecapability",
       "linkingText": [
         "NewPromiseCapability",
-        "NewPromiseCapability(C)"
+        "NewPromiseCapability(constructor)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -35747,7 +35747,7 @@
       "heading": {
         "id": "sec-newpromisecapability",
         "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-newpromisecapability",
-        "title": "NewPromiseCapability ( C )",
+        "title": "NewPromiseCapability ( constructor )",
         "number": "27.2.1.5"
       },
       "definedIn": "heading",
@@ -35758,7 +35758,7 @@
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-ispromise",
       "linkingText": [
         "IsPromise",
-        "IsPromise(x)"
+        "IsPromise(value)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -35768,7 +35768,7 @@
       "heading": {
         "id": "sec-ispromise",
         "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-ispromise",
-        "title": "IsPromise ( x )",
+        "title": "IsPromise ( value )",
         "number": "27.2.1.6"
       },
       "definedIn": "heading",
@@ -36118,7 +36118,7 @@
       "id": "sec-promise.reject",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.reject",
       "linkingText": [
-        "reject(r)"
+        "reject(reason)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -36130,7 +36130,7 @@
       "heading": {
         "id": "sec-promise.reject",
         "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.reject",
-        "title": "Promise.reject ( r )",
+        "title": "Promise.reject ( reason )",
         "number": "27.2.4.6"
       },
       "definedIn": "heading",
@@ -36140,7 +36140,7 @@
       "id": "sec-promise.resolve",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.resolve",
       "linkingText": [
-        "resolve(x)"
+        "resolve(resolution)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -36152,7 +36152,7 @@
       "heading": {
         "id": "sec-promise.resolve",
         "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.resolve",
-        "title": "Promise.resolve ( x )",
+        "title": "Promise.resolve ( resolution )",
         "number": "27.2.4.7"
       },
       "definedIn": "heading",
@@ -36163,7 +36163,7 @@
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-resolve",
       "linkingText": [
         "PromiseResolve",
-        "PromiseResolve(C, x)"
+        "PromiseResolve(constructor, resolution)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -36173,7 +36173,7 @@
       "heading": {
         "id": "sec-promise-resolve",
         "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-resolve",
-        "title": "PromiseResolve ( C, x )",
+        "title": "PromiseResolve ( constructor, resolution )",
         "number": "27.2.4.7.1"
       },
       "definedIn": "heading",
@@ -37601,7 +37601,7 @@
       "id": "sec-reflect.set",
       "href": "https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.set",
       "linkingText": [
-        "set(target, propertyKey, V, receiver)"
+        "set(target, propertyKey, value, receiver)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -37613,7 +37613,7 @@
       "heading": {
         "id": "sec-reflect.set",
         "href": "https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.set",
-        "title": "Reflect.set ( target, propertyKey, V [ , receiver ] )",
+        "title": "Reflect.set ( target, propertyKey, value [ , receiver ] )",
         "number": "28.1.12"
       },
       "definedIn": "heading",
@@ -38110,7 +38110,7 @@
       "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-composewriteeventbytes",
       "linkingText": [
         "ComposeWriteEventBytes",
-        "ComposeWriteEventBytes(execution, byteIndex, Ws)"
+        "ComposeWriteEventBytes(execution, byteIndex, writes)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -38120,7 +38120,7 @@
       "heading": {
         "id": "sec-composewriteeventbytes",
         "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-composewriteeventbytes",
-        "title": "ComposeWriteEventBytes ( execution, byteIndex, Ws )",
+        "title": "ComposeWriteEventBytes ( execution, byteIndex, writes )",
         "number": "29.5.4"
       },
       "definedIn": "heading",
@@ -38131,7 +38131,7 @@
       "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-valueofreadevent",
       "linkingText": [
         "ValueOfReadEvent",
-        "ValueOfReadEvent(execution, R)"
+        "ValueOfReadEvent(execution, readEvent)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -38141,7 +38141,7 @@
       "heading": {
         "id": "sec-valueofreadevent",
         "href": "https://tc39.es/ecma262/multipage/memory-model.html#sec-valueofreadevent",
-        "title": "ValueOfReadEvent ( execution, R )",
+        "title": "ValueOfReadEvent ( execution, readEvent )",
         "number": "29.5.5"
       },
       "definedIn": "heading",
@@ -38967,7 +38967,7 @@
       "href": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-runtime-semantics-characterrangeorunion-abstract-operation",
       "linkingText": [
         "CharacterRangeOrUnion",
-        "CharacterRangeOrUnion(rer, A, B)"
+        "CharacterRangeOrUnion(regexpRecord, charSet, otherSet)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -38977,7 +38977,7 @@
       "heading": {
         "id": "sec-runtime-semantics-characterrangeorunion-abstract-operation",
         "href": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-runtime-semantics-characterrangeorunion-abstract-operation",
-        "title": "CharacterRangeOrUnion ( rer, A, B )",
+        "title": "CharacterRangeOrUnion ( regexpRecord, charSet, otherSet )",
         "number": "B.1.2.8.1"
       },
       "definedIn": "heading",
@@ -39076,7 +39076,7 @@
       "href": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-createhtml",
       "linkingText": [
         "CreateHTML",
-        "CreateHTML(string, tag, attribute, value)"
+        "CreateHTML(contents, tag, attribute, attrValue)"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -39086,7 +39086,7 @@
       "heading": {
         "id": "sec-createhtml",
         "href": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-createhtml",
-        "title": "CreateHTML ( string, tag, attribute, value )",
+        "title": "CreateHTML ( contents, tag, attribute, attrValue )",
         "number": "B.2.2.2.1"
       },
       "definedIn": "heading",
