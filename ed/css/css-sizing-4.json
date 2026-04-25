@@ -431,12 +431,49 @@
       "href": "https://drafts.csswg.org/css-sizing-4/#propdef-frame-sizing",
       "value": "auto | content-width | content-height | content-block-size | content-inline-size",
       "initial": "auto",
-      "appliesTo": "iframe elements",
+      "appliesTo": "replaced elements (but see below for details)",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "specified keyword",
+      "computedValue": "as specified",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
+      "values": [
+        {
+          "name": "auto",
+          "prose": "The element’s internal layout intrinsic size, if any, is ignored.",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-frame-sizing-auto",
+          "type": "value",
+          "value": "auto"
+        },
+        {
+          "name": "content-width",
+          "prose": "If the element has an internal layout intrinsic size, its intrinsic size takes the corresponding dimension (either width or height) from the internal layout intrinsic size. (The other dimension is determined normally.) Logical directions resolve based on the writing mode of the element. (Not the embedded document.)",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-frame-sizing-content-width",
+          "type": "value",
+          "value": "content-width"
+        },
+        {
+          "name": "content-height",
+          "prose": "If the element has an internal layout intrinsic size, its intrinsic size takes the corresponding dimension (either width or height) from the internal layout intrinsic size. (The other dimension is determined normally.) Logical directions resolve based on the writing mode of the element. (Not the embedded document.)",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-frame-sizing-content-height",
+          "type": "value",
+          "value": "content-height"
+        },
+        {
+          "name": "content-block-size",
+          "prose": "If the element has an internal layout intrinsic size, its intrinsic size takes the corresponding dimension (either width or height) from the internal layout intrinsic size. (The other dimension is determined normally.) Logical directions resolve based on the writing mode of the element. (Not the embedded document.)",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-frame-sizing-content-block-size",
+          "type": "value",
+          "value": "content-block-size"
+        },
+        {
+          "name": "content-inline-size",
+          "prose": "If the element has an internal layout intrinsic size, its intrinsic size takes the corresponding dimension (either width or height) from the internal layout intrinsic size. (The other dimension is determined normally.) Logical directions resolve based on the writing mode of the element. (Not the embedded document.)",
+          "href": "https://drafts.csswg.org/css-sizing-4/#valdef-frame-sizing-content-inline-size",
+          "type": "value",
+          "value": "content-inline-size"
+        }
+      ],
       "styleDeclaration": [
         "frame-sizing",
         "frameSizing"
