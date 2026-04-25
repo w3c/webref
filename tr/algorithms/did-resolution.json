@@ -161,8 +161,8 @@
       ]
     },
     {
-      "name": "resolution cycle",
-      "href": "https://www.w3.org/TR/did-resolution/#dfn-resolution-cycle",
+      "name": "dereferencing cycle",
+      "href": "https://www.w3.org/TR/did-resolution/#dfn-dereferencing-cycle",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -255,7 +255,7 @@
                   ]
                 },
                 {
-                  "html": "Resolving a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> — particularly one that is a DID — might\n\t\t\t\t\t\t\t\t\t\t\tresult in a <dfn id=\"dfn-resolution-cycle\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">resolution cycle</dfn>, which is a set of steps that result in\n\t\t\t\t\t\t\t\t\t\t\tan infinite loop. For example, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> might indirectly point\n\t\t\t\t\t\t\t\t\t\t\tback through a sequence of resolutions to a previously dereferenced identifier.\n\t\t\t\t\t\t\t\t\t\t\tA <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-resolvers\">DID resolver</a> recursively resolving a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> is advised\n\t\t\t\t\t\t\t\t\t\t\tto detect and handle such a cycle to prevent an infinite loop or resolution failure.\n\t\t\t\t\t\t\t\t\t\t\tFor further guidance, see Section <a href=\"https://www.w3.org/TR/did-resolution/#security-cycles-resolution\">Resolution Cycles</a>.",
+                  "html": "Dereferencing a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> — particularly one that is a DID — might\n\t\t\t\t\t\t\t\t\t\t\tresult in a <dfn id=\"dfn-dereferencing-cycle\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">dereferencing cycle</dfn>, which is a set of steps that result in\n\t\t\t\t\t\t\t\t\t\t\tan infinite loop. For example, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> might indirectly point\n\t\t\t\t\t\t\t\t\t\t\tback through a sequence of dereferencing processes to a previously dereferenced identifier.\n\t\t\t\t\t\t\t\t\t\t\tA <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-url-dereferencers\">DID URL dereferencer</a> recursively dereferencing a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-service-endpoints\">DID service endpoint</a> is advised\n\t\t\t\t\t\t\t\t\t\t\tto detect and handle such a cycle to prevent an infinite loop or dereferencing failure.\n\t\t\t\t\t\t\t\t\t\t\tFor further guidance, see Section <a href=\"https://www.w3.org/TR/did-resolution/#security-cycles-dereferencing\">Dereferencing Cycles</a>.",
                   "rationale": ".algorithm",
                   "steps": [
                     {
