@@ -1503,7 +1503,7 @@
         "href": "https://streams.spec.whatwg.org/#readablebytestreamcontroller"
       },
       "ReadableStreamBYOBRequest": {
-        "fragment": "[Exposed=*]\ninterface ReadableStreamBYOBRequest {\n  readonly attribute ArrayBufferView? view;\n\n  undefined respond([EnforceRange] unsigned long long bytesWritten);\n  undefined respondWithNewView(ArrayBufferView view);\n};",
+        "fragment": "[Exposed=*]\ninterface ReadableStreamBYOBRequest {\n  readonly attribute Uint8Array? view;\n\n  undefined respond([EnforceRange] unsigned long long bytesWritten);\n  undefined respondWithNewView(ArrayBufferView view);\n};",
         "type": "interface",
         "name": "ReadableStreamBYOBRequest",
         "inheritance": null,
@@ -1517,7 +1517,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "ArrayBufferView"
+              "idlType": "Uint8Array"
             },
             "extAttrs": [],
             "special": "",
@@ -3237,6 +3237,7 @@
         "ArrayBufferView"
       ],
       "ReadableStreamBYOBRequest": [
+        "Uint8Array",
         "ArrayBufferView"
       ],
       "WritableStream": [
@@ -3287,6 +3288,7 @@
     "externalDependencies": [
       "AbortSignal",
       "ArrayBufferView",
+      "Uint8Array",
       "Function"
     ],
     "hasObsoleteIdl": false
