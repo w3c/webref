@@ -179,6 +179,11 @@ partial interface Window {
     undefined navigate(SpatialNavigationDirection dir);
 };
 
+// Source: CSS Box Sizing Module Level 4 (https://www.w3.org/TR/css-sizing-4/)
+partial interface Window {
+  undefined requestResize();
+};
+
 // Source: CSS Viewport Module Level 1 (https://www.w3.org/TR/css-viewport-1/)
 partial interface Window {
 [SameObject, Replaceable] readonly attribute Viewport viewport;

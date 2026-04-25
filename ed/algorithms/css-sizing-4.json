@@ -1,0 +1,31 @@
+{
+  "spec": {
+    "title": "CSS Box Sizing Module Level 4",
+    "url": "https://drafts.csswg.org/css-sizing-4/"
+  },
+  "algorithms": [
+    {
+      "name": "Window/requestResize()",
+      "href": "https://drafts.csswg.org/css-sizing-4/#dom-window-requestresize",
+      "html": "When <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Window\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-window-requestresize\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>requestResize()</code></dfn> is invoked:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>navigable</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable\" id=\"ref-for-navigable\">navigable</a> that has <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a> as its <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#content-window\" id=\"ref-for-content-window\">content window</a>.\nIf <var>navigable</var> is not a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#child-navigable\" id=\"ref-for-child-navigable\">child navigable</a>,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">NotAllowedError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>host element</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#navigable-container\" id=\"ref-for-navigable-container\">navigable container</a> whose <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#content-navigable\" id=\"ref-for-content-navigable\">content navigable</a> is <var>navigable</var>.\nIf <var>host element</var> is not an HTML <code><a data-link-type=\"element\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element\" id=\"ref-for-the-iframe-element⑧\">iframe</a></code> element,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">NotAllowedError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>document</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①\">this’s</a> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>.\nIf <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-4/#document-responsive-embedded-sizing-flag\" id=\"ref-for-document-responsive-embedded-sizing-flag②\">responsive embedded sizing flag</a>\nis unset or false,\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw②\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror②\">NotAllowedError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>document</var> has pending style or layout changes,\nperform them.</p>"
+        },
+        {
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-sizing-4/#internal-layout-intrinsic-size\" id=\"ref-for-internal-layout-intrinsic-size①①\">internal layout intrinsic size</a> of <var>host element</var>\nto the width and height of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#scrolling-area\" id=\"ref-for-scrolling-area\">scrolling area</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②\">this</a>.</p>"
+        }
+      ]
+    }
+  ]
+}
