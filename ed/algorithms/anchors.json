@@ -97,7 +97,7 @@
           "html": "<p>Add <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#update-anchors\" id=\"ref-for-update-anchors\">update anchors</a> algorithm to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-frame-updates\" id=\"ref-for-xrsession-list-of-frame-updates\">list of frame updates</a> if it is not already present there.</p>"
         },
         {
-          "html": "<p>Let <var>device</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device\">XR device</a>.</p>"
+          "html": "<p>Let <var>device</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①\">XR device</a>.</p>"
         },
         {
           "html": "<p>Let <var>effective origin</var> be <var>space</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrspace-effective-origin\" id=\"ref-for-xrspace-effective-origin\">effective origin</a>.</p>"
@@ -121,7 +121,7 @@
     },
     {
       "name": "restore-persistent-anchor-from-frame",
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xrsession-restorepersistentanchor\" id=\"ref-for-dom-xrsession-restorepersistentanchor\">restorePersistentAnchor(uuid)</a></code> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession④\">XRSession</a></code> <var>session</var> with <var>uuid</var>, MUST run the following steps:",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xrsession-restorepersistentanchor\" id=\"ref-for-dom-xrsession-restorepersistentanchor\">restorePersistentAnchor(uuid)</a></code> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑤\">XRSession</a></code> <var>session</var> with <var>uuid</var>, MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -155,7 +155,7 @@
     },
     {
       "name": "delete-peristence-from-anchor",
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xrsession-deletepersistentanchor\" id=\"ref-for-dom-xrsession-deletepersistentanchor\">deletePersistentAnchor()</a></code> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑤\">XRSession</a></code> <var>session</var> with <var>uuid</var>, MUST run the following steps:",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/anchors/#dom-xrsession-deletepersistentanchor\" id=\"ref-for-dom-xrsession-deletepersistentanchor\">deletePersistentAnchor()</a></code> method, when invoked on an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr/#xrsession\" id=\"ref-for-xrsession⑥\">XRSession</a></code> <var>session</var> with <var>uuid</var>, MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -199,7 +199,7 @@
           "html": "<p>Add <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#update-anchors\" id=\"ref-for-update-anchors①\">update anchors</a> algorithm to <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-frame-updates\" id=\"ref-for-xrsession-list-of-frame-updates①\">list of frame updates</a> if it is not already present there.</p>"
         },
         {
-          "html": "<p>Let <var>device</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①\">XR device</a>.</p>"
+          "html": "<p>Let <var>device</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②\">XR device</a>.</p>"
         },
         {
           "html": "<p>Let <var>nativeEntity</var> be the <var>hitTestResult</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrhittestresult-native-entity\" id=\"ref-for-xrhittestresult-native-entity①\">native entity</a>.</p>"
@@ -231,7 +231,7 @@
           "html": "<p>Let <var>session</var> be a <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session②\">session</a>.</p>"
         },
         {
-          "html": "<p>Let <var>device</var> be a <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②\">XR device</a>.</p>"
+          "html": "<p>Let <var>device</var> be a <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device③\">XR device</a>.</p>"
         },
         {
           "html": "For each <var>anchor</var> in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xrsession-set-of-tracked-anchors\" id=\"ref-for-xrsession-set-of-tracked-anchors③\">set of tracked anchors</a>, run:",
@@ -284,7 +284,7 @@
           "html": "<p>Let <var>session</var> be an <var>anchor</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session③\">session</a>.</p>"
         },
         {
-          "html": "<p>Let <var>device</var> be a <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device③\">XR device</a>.</p>"
+          "html": "<p>Let <var>device</var> be a <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device④\">XR device</a>.</p>"
         },
         {
           "html": "<p>Let <var>native origin</var> be an <var>anchor</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/anchors/#xranchor-native-origin\" id=\"ref-for-xranchor-native-origin③\">native origin</a>.</p>"
