@@ -219,7 +219,7 @@
           "html": "Otherwise, <var>C1</var> and <var>C2</var> are in different <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-color-4/#typedef-color-space\" id=\"ref-for-typedef-color-space①\">&lt;color-space&gt;</a>s.\n\t\t\tIf either color has at least one <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component①③\">missing component</a>,\n\t\t\treturn false."
         },
         {
-          "html": "Otherwise, neither color has any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component①④\">missing component</a>.\n\t\t\tConvert both <var>C1</var> and <var>C2</var> to <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-oklab-oklab\" id=\"ref-for-valdef-oklab-oklab①\">oklab</a>,\n\t\t\tthen return true if and only if\n\t\t\tall components (including alpha) of the converted colors\n\t\t\tcompare as equal,\n\t\t\tusing an implementation-defined ε as in step 2."
+          "html": "Otherwise, neither color has any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-color-4/#missing-color-component\" id=\"ref-for-missing-color-component①④\">missing component</a>.\n\t\t\tConvert both <var>C1</var> and <var>C2</var> to <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-color-4/#valdef-oklab-oklab\" id=\"ref-for-valdef-oklab-oklab①\">oklab</a>,\n\t\t\tthen return true if and only if\n\t\t\tall components (including alpha) of the converted colors\n\t\t\tcompare as equal,\n\t\t\tusing a standardized Oklab ε of <strong>0.00001</strong>."
         }
       ]
     },
