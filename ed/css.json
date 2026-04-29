@@ -18058,8 +18058,8 @@
     },
     {
       "name": "attr-unit",
-      "prose": "The <attr-unit> production matches any identifier that is an ASCII case-insensitive match for the name of a CSS dimension unit, such as px, or the <delim-token> %. It is not expanded literally here, as the set of units expands over time.",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-unit",
+      "syntax": "<custom-ident>",
       "extended": []
     },
     {
@@ -19848,7 +19848,7 @@
     {
       "name": "navigation-location-keyword",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-keyword",
-      "syntax": "at | other | from | to",
+      "syntax": "at | with | from | to",
       "extended": []
     },
     {
@@ -19866,7 +19866,7 @@
     {
       "name": "navigation-match-target",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-match-target",
-      "syntax": "navigation-other | navigation-current | navigation-from | navigation-to",
+      "syntax": "navigation-at | navigation-with | navigation-from | navigation-to",
       "extended": []
     },
     {
@@ -20259,7 +20259,7 @@
     {
       "name": "random-key",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-random-key",
-      "syntax": "auto | <random-name> | fixed <number [0,1]>",
+      "syntax": "auto | <random-cache-key> | fixed <number [0,1]>",
       "extended": []
     },
     {
@@ -20278,7 +20278,7 @@
     {
       "name": "ray-size",
       "href": "https://drafts.csswg.org/motion-1/#typedef-ray-size",
-      "syntax": "closest-side | closest-corner | farthest-side | farthest-corner | sides",
+      "syntax": "<radial-extent> | sides",
       "extended": []
     },
     {
