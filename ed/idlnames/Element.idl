@@ -93,6 +93,11 @@ partial interface Element {
     [CEReactions] attribute DOMString? containertimingIgnore;
 };
 
+// Source: HTML Sanitizer API (https://wicg.github.io/sanitizer-api/)
+partial interface Element {
+  [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});
+};
+
 // Source: CSS Spatial Navigation Module Level 1 (https://www.w3.org/TR/css-nav-1/)
 partial interface Element {
     Node getSpatialNavigationContainer();
