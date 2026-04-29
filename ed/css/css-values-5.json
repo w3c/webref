@@ -653,16 +653,16 @@
       "value": "type( <syntax> ) | raw-string | number | <attr-unit>"
     },
     {
+      "name": "<attr-unit>",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-unit",
+      "type": "type",
+      "value": "<custom-ident>"
+    },
+    {
       "name": "<attr-args>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-args",
       "type": "type",
       "value": "attr( <declaration-value>, <declaration-value>? )"
-    },
-    {
-      "name": "<attr-unit>",
-      "prose": "The <attr-unit> production matches any identifier that is an ASCII case-insensitive match for the name of a CSS dimension unit, such as px, or the <delim-token> %. It is not expanded literally here, as the set of units expands over time.",
-      "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-unit",
-      "type": "type"
     },
     {
       "name": "ident()",
@@ -701,7 +701,7 @@
       "name": "<random-key>",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-random-key",
       "type": "type",
-      "value": "auto | <random-name> | fixed <number [0,1]>",
+      "value": "auto | <random-cache-key> | fixed <number [0,1]>",
       "values": [
         {
           "name": "auto",
