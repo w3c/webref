@@ -7,7 +7,7 @@
     {
       "name": "overscroll-behavior",
       "href": "https://drafts.csswg.org/css-overscroll-1/#propdef-overscroll-behavior",
-      "value": "[ contain | none | auto ]{1,2}",
+      "value": "[ contain | none | auto | chain ]{1,2}",
       "initial": "auto auto",
       "appliesTo": "scroll container elements",
       "inherited": "no",
@@ -32,6 +32,13 @@
           "value": "none"
         },
         {
+          "name": "chain",
+          "prose": "This value indicates that the element may perform non-local boundary default actions such as scroll chaining or navigation. However, the element must not perform local boundary default actions, such as showing any overscroll affordances.",
+          "href": "https://drafts.csswg.org/css-overscroll-1/#valdef-overscroll-behavior-chain",
+          "type": "value",
+          "value": "chain"
+        },
+        {
           "name": "auto",
           "prose": "This value indicates that the user agent should perform the usual boundary default action with respect to scroll chaining, overscroll and navigation gestures.",
           "href": "https://drafts.csswg.org/css-overscroll-1/#valdef-overscroll-behavior-auto",
@@ -47,7 +54,7 @@
     {
       "name": "overscroll-behavior-x",
       "href": "https://drafts.csswg.org/css-overscroll-1/#propdef-overscroll-behavior-x",
-      "value": "contain | none | auto",
+      "value": "contain | none | auto | chain",
       "initial": "auto",
       "appliesTo": "scroll container elements",
       "inherited": "no",
@@ -71,6 +78,13 @@
           "href": "https://drafts.csswg.org/css-overscroll-1/#valdef-overscroll-behavior-none",
           "type": "value",
           "value": "none"
+        },
+        {
+          "name": "chain",
+          "prose": "This value indicates that the element may perform non-local boundary default actions such as scroll chaining or navigation. However, the element must not perform local boundary default actions, such as showing any overscroll affordances.",
+          "href": "https://drafts.csswg.org/css-overscroll-1/#valdef-overscroll-behavior-chain",
+          "type": "value",
+          "value": "chain"
         },
         {
           "name": "auto",
@@ -88,7 +102,7 @@
     {
       "name": "overscroll-behavior-y",
       "href": "https://drafts.csswg.org/css-overscroll-1/#propdef-overscroll-behavior-y",
-      "value": "contain | none | auto",
+      "value": "contain | none | auto | chain",
       "initial": "auto",
       "appliesTo": "scroll container elements",
       "inherited": "no",
@@ -112,6 +126,13 @@
           "href": "https://drafts.csswg.org/css-overscroll-1/#valdef-overscroll-behavior-none",
           "type": "value",
           "value": "none"
+        },
+        {
+          "name": "chain",
+          "prose": "This value indicates that the element may perform non-local boundary default actions such as scroll chaining or navigation. However, the element must not perform local boundary default actions, such as showing any overscroll affordances.",
+          "href": "https://drafts.csswg.org/css-overscroll-1/#valdef-overscroll-behavior-chain",
+          "type": "value",
+          "value": "chain"
         },
         {
           "name": "auto",
@@ -129,7 +150,7 @@
     {
       "name": "overscroll-behavior-inline",
       "href": "https://drafts.csswg.org/css-overscroll-1/#propdef-overscroll-behavior-inline",
-      "value": "contain | none | auto",
+      "value": "contain | none | auto | chain",
       "initial": "auto",
       "appliesTo": "scroll container elements",
       "inherited": "no",
@@ -153,6 +174,13 @@
           "href": "https://drafts.csswg.org/css-overscroll-1/#valdef-overscroll-behavior-none",
           "type": "value",
           "value": "none"
+        },
+        {
+          "name": "chain",
+          "prose": "This value indicates that the element may perform non-local boundary default actions such as scroll chaining or navigation. However, the element must not perform local boundary default actions, such as showing any overscroll affordances.",
+          "href": "https://drafts.csswg.org/css-overscroll-1/#valdef-overscroll-behavior-chain",
+          "type": "value",
+          "value": "chain"
         },
         {
           "name": "auto",
@@ -170,7 +198,7 @@
     {
       "name": "overscroll-behavior-block",
       "href": "https://drafts.csswg.org/css-overscroll-1/#propdef-overscroll-behavior-block",
-      "value": "contain | none | auto",
+      "value": "contain | none | auto | chain",
       "initial": "auto",
       "appliesTo": "scroll container elements",
       "inherited": "no",
@@ -194,6 +222,13 @@
           "href": "https://drafts.csswg.org/css-overscroll-1/#valdef-overscroll-behavior-none",
           "type": "value",
           "value": "none"
+        },
+        {
+          "name": "chain",
+          "prose": "This value indicates that the element may perform non-local boundary default actions such as scroll chaining or navigation. However, the element must not perform local boundary default actions, such as showing any overscroll affordances.",
+          "href": "https://drafts.csswg.org/css-overscroll-1/#valdef-overscroll-behavior-chain",
+          "type": "value",
+          "value": "chain"
         },
         {
           "name": "auto",
