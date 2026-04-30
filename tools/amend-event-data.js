@@ -410,6 +410,14 @@ const patches = {
       }
     }
   ],
+  // No event processing in the Prompt API for now
+  'prompt-api': [
+    {
+      pattern: { type: /overflow$/ },
+      matched: 2,
+      change: { interface: "Event" }
+    }
+  ],
   'savedata': [
     {
       pattern: { type: "change" },
