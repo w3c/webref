@@ -1,0 +1,35 @@
+{
+  "spec": {
+    "title": "Verifiable Credentials Data Model v2.1",
+    "url": "https://w3c.github.io/vc-data-model/"
+  },
+  "algorithms": [
+    {
+      "html": "The verification algorithm is as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Ensure that the securing mechanism has properly protected the\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-model/#dfn-conforming-document\" class=\"internalDFN\" id=\"ref-for-dfn-conforming-document-33\">conforming document</a> by performing the following steps:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Set the <var>verifyProof</var> function by using the <var>inputMediaType</var> and the\n<a data-cite=\"?VC-EXTENSIONS#securing-mechanisms\" href=\"https://w3c.github.io/vc-extensions/#securing-mechanisms\">Securing Mechanisms</a>\nsection of the <cite><a data-cite=\"?VC-EXTENSIONS\" data-matched-text=\"[[[?VC-EXTENSIONS]]]\" href=\"https://w3c.github.io/vc-extensions/\">Verifiable Credential Extensions</a></cite> document, or other mechanisms known to the\nimplementation, to determine the cryptographic suite to use when verifying the\nsecuring mechanism. The <var>verifyProof</var> function <em class=\"rfc2119\">MUST</em> implement the interface\ndescribed in <a href=\"https://w3c.github.io/vc-data-model/#securing-mechanism-specifications\" data-matched-text=\"[[[#securing-mechanism-specifications]]]\" class=\"sec-ref\"><bdi class=\"secno\">5.13 </bdi>Securing Mechanism Specifications</a>."
+            },
+            {
+              "html": "If the <var>verifyProof</var> function expects a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"byte-sequence\" href=\"https://infra.spec.whatwg.org/#byte-sequence\">byte sequence</a>, provide\n<var>inputMediaType</var> and <var>inputData</var> to the algorithm. If the <var>verifyProof</var> function\nexpects a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>, provide <var>inputMediaType</var> and the result of <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"parse-json-bytes-to-an-infra-value\" href=\"https://infra.spec.whatwg.org/#parse-json-bytes-to-an-infra-value\">parse JSON bytes to an Infra value</a> given <var>inputData</var>. Set <var>result</var> to the result of the\ncall to the <var>verifyProof</var> function. If the call was successful, <var>result</var> will\ncontain the <var>status</var>, <var>document</var>, <var>mediaType</var>, <var>controller</var>,\n<var>controlledIdentifierDocument</var>, <var>warnings</var>, and <var>errors</var> properties."
+            },
+            {
+              "html": "If <var>result</var>.<var>status</var> is set to <code>false</code>, add a\n<a href=\"https://w3c.github.io/vc-data-model/#CRYPTOGRAPHIC_SECURITY_ERROR\">CRYPTOGRAPHIC_SECURITY_ERROR</a> to\n<var>result</var>.<var>errors</var>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>result</var>.<var>status</var> is set to <code>true</code>, ensure that\n<var>result</var>.<var>document</var> is a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-model/#dfn-conforming-document\" class=\"internalDFN\" id=\"ref-for-dfn-conforming-document-34\">conforming document</a>. If it is\nnot, set <var>result</var>.<var>status</var> to <code>false</code>, remove the\n<var>document</var> property from <var>result</var>, and add at least\none <a href=\"https://w3c.github.io/vc-data-model/#MALFORMED_VALUE_ERROR\">MALFORMED_VALUE_ERROR</a> to\n<var>result</var>.<var>errors</var>. Other warnings and errors <em class=\"rfc2119\">MAY</em> be included\nto aid any debugging process."
+        },
+        {
+          "html": "Return <var>result</var>."
+        }
+      ]
+    }
+  ]
+}

@@ -36,17 +36,9 @@ partial interface HTMLIFrameElement {
   attribute boolean credentialless;
 };
 
-// Source: Shared Storage API (https://wicg.github.io/shared-storage/)
-HTMLIFrameElement includes HTMLSharedStorageWritableElementUtils;
-
 // Source: Private State Token API (https://wicg.github.io/trust-token-api/)
 partial interface HTMLIFrameElement {
   [SecureContext] attribute DOMString privateToken;
-};
-
-// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
-partial interface HTMLIFrameElement {
-  [CEReactions] attribute boolean adAuctionHeaders;
 };
 
 // Source: Content Security Policy: Embedded Enforcement (https://www.w3.org/TR/csp-embedded-enforcement/)

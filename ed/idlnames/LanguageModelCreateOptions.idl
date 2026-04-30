@@ -1,0 +1,7 @@
+// Source: Prompt API (https://webmachinelearning.github.io/prompt-api/)
+dictionary LanguageModelCreateOptions : LanguageModelCreateCoreOptions {
+  AbortSignal signal;
+  CreateMonitorCallback monitor;
+
+  sequence<LanguageModelMessage> initialPrompts;
+};

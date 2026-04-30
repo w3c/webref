@@ -1,0 +1,8 @@
+// Source: Prompt API (https://webmachinelearning.github.io/prompt-api/)
+// The argument to the prompt() method and others like it
+
+typedef (
+  sequence<LanguageModelMessage>
+  // Shorthand for `[{ role: "user", content: [{ type: "text", value: providedValue }] }]`
+  or DOMString
+) LanguageModelPrompt;

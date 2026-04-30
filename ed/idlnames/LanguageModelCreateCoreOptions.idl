@@ -1,0 +1,13 @@
+// Source: Prompt API (https://webmachinelearning.github.io/prompt-api/)
+dictionary LanguageModelCreateCoreOptions {
+  // Note: these two have custom out-of-range handling behavior, not in the IDL layer.
+  // They are unrestricted double so as to allow +Infinity without failing.
+  // **EXPERIMENTAL**: Only available in extension and experimental contexts.
+  unrestricted double topK;
+  // **EXPERIMENTAL**: Only available in extension and experimental contexts.
+  unrestricted double temperature;
+
+  sequence<LanguageModelExpected> expectedInputs;
+  sequence<LanguageModelExpected> expectedOutputs;
+  sequence<LanguageModelTool> tools;
+};

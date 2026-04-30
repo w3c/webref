@@ -37,12 +37,6 @@ interface XMLHttpRequest : XMLHttpRequestEventTarget {
   [Exposed=Window] readonly attribute Document? responseXML;
 };
 
-// Source: Attribution Reporting (https://wicg.github.io/attribution-reporting-api/)
-partial interface XMLHttpRequest {
-  [SecureContext]
-  undefined setAttributionReporting(AttributionReportingRequestOptions options);
-};
-
 // Source: Private State Token API (https://wicg.github.io/trust-token-api/)
 partial interface XMLHttpRequest {
   undefined setPrivateToken(PrivateToken privateToken);

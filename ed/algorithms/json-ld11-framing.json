@@ -11,7 +11,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>frame</var> is an <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>, set <var>frame</var> to the value of the <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>, which <em class=\"rfc2119\">MUST</em> be a valid <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-frame\">frame</a>.\n    If <var>frame</var> is determined to be invalid,\n    an <a data-link-for=\"JsonLdFramingErrorCode\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldframingerrorcode-invalid-frame\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-jsonldframingerrorcode-invalid-frame-1\"><code>invalid frame</code></a>\n    error has been detected and processing is aborted.",
+          "html": "If <var>frame</var> is an <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>, set <var>frame</var> to the value of the <a data-cite=\"INFRA#list\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\">array</a>, which <em class=\"rfc2119\">MUST</em> be a valid <a data-cite=\"__SPEC__#dfn-frame\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-frame\">frame</a>.\n    If <var>frame</var> is determined to be invalid,\n    an <a data-link-for=\"JsonLdFramingErrorCode\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldframingerrorcode-invalid-frame\" class=\"internalDFN\" data-link-type=\"idl\" id=\"ref-for-dom-jsonldframingerrorcode-invalid-frame-1\"><code>invalid frame</code></a>\n    error has been detected and processing is aborted.",
           "rationale": "if",
           "steps": [
             {
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "html": "Initialize flags <var>embed</var>, <var>explicit</var>, and <var>requireAll</var> from\n    <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-object-embed-flag\">object embed flag</a>, <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-explicit-inclusion-flag\">explicit inclusion flag</a>, and\n    <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-require-all-flag\">require all flag</a> in <var>state</var> overriding from any property values\n    for <code>@embed</code>, <code>@explicit</code>, and <code>@requireAll</code> in <var>frame</var>."
+          "html": "Initialize flags <var>embed</var>, <var>explicit</var>, and <var>requireAll</var> from\n    <a data-cite=\"__SPEC__#dfn-object-embed-flag\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-object-embed-flag\">object embed flag</a>, <a data-cite=\"__SPEC__#dfn-explicit-inclusion-flag\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-explicit-inclusion-flag\">explicit inclusion flag</a>, and\n    <a data-cite=\"__SPEC__#dfn-require-all-flag\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-require-all-flag\">require all flag</a> in <var>state</var> overriding from any property values\n    for <code>@embed</code>, <code>@explicit</code>, and <code>@requireAll</code> in <var>frame</var>."
         },
         {
           "html": "Create a list of matched subjects by filtering <var>subjects</var> against <var>frame</var>\n    using the <a href=\"https://w3c.github.io/json-ld-framing/#frame-matching\">Frame Matching algorithm</a>\n    with <var>state</var>, <var>subjects</var>, <var>frame</var>, and <var>requireAll</var>."
@@ -116,13 +116,13 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "Let <var>item</var> be the first value in <var>objects</var>, which <em class=\"rfc2119\">MUST</em> be a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-frame-object\">frame object</a>."
+                      "html": "Let <var>item</var> be the first value in <var>objects</var>, which <em class=\"rfc2119\">MUST</em> be a <a data-cite=\"__SPEC__#dfn-frame-object\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-frame-object\">frame object</a>."
                     },
                     {
-                      "html": "Set <var>property frame</var> to the first value in <var>objects</var> or a newly created <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-frame-object\">frame object</a> if value is <var>objects</var>.\n                <var>property frame</var> <em class=\"rfc2119\">MUST</em> be a <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>."
+                      "html": "Set <var>property frame</var> to the first value in <var>objects</var> or a newly created <a data-cite=\"__SPEC__#dfn-frame-object\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-frame-object\">frame object</a> if value is <var>objects</var>.\n                <var>property frame</var> <em class=\"rfc2119\">MUST</em> be a <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>."
                     },
                     {
-                      "html": "Skip <var>property</var> and <var>property frame</var> if <var>property frame</var> contains\n                <code>@omitDefault</code> with a value of <code>true</code>,\n                or does not contain <code>@omitDefault</code> and the value of\n                the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-omit-default-flag\">omit default flag</a> in <var>state</var> is <code>true</code>."
+                      "html": "Skip <var>property</var> and <var>property frame</var> if <var>property frame</var> contains\n                <code>@omitDefault</code> with a value of <code>true</code>,\n                or does not contain <code>@omitDefault</code> and the value of\n                the <a data-cite=\"__SPEC__#dfn-omit-default-flag\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-omit-default-flag\">omit default flag</a> in <var>state</var> is <code>true</code>."
                     },
                     {
                       "html": "Add <var>property</var> to <var>output</var> with a\n                new <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> having a property <code>@preserve</code> and\n                a value that is a copy of the value of <code>@default</code> in\n                <var>frame</var> if it exists, or the string <code>@null</code>\n                otherwise."
@@ -137,7 +137,7 @@
                       "html": "Create a <code>@reverse</code> property in <var>output</var> with a new <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>reverse dict</var> as its value."
                     },
                     {
-                      "html": "For each <var>reverse id</var> and <var>node</var> in the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-map-of-flattened-subjects\">map of flattened subjects</a> that has the property\n                <var>reverse property</var> containing a <a data-cite=\"JSON-LD11#dfn-node-reference\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-node-reference\">node reference</a> with an <code>@id</code> of <var>id</var>:",
+                      "html": "For each <var>reverse id</var> and <var>node</var> in the <a data-cite=\"__SPEC__#dfn-map-of-flattened-subjects\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-map-of-flattened-subjects\">map of flattened subjects</a> that has the property\n                <var>reverse property</var> containing a <a data-cite=\"JSON-LD11#dfn-node-reference\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-node-reference\">node reference</a> with an <code>@id</code> of <var>id</var>:",
                       "rationale": "add",
                       "steps": [
                         {
@@ -209,7 +209,7 @@
               "html": "If <var>property</var> is <code>@id</code> or <code>@type</code> and does not match,\n        <var>node</var> does not match, and processing is terminated."
             },
             {
-              "html": "Otherwise, the value of <var>property</var> in <var>frame</var> <em class=\"rfc2119\">MUST</em> be empty, or an array\n        containing a valid <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-frame\">frame</a>."
+              "html": "Otherwise, the value of <var>property</var> in <var>frame</var> <em class=\"rfc2119\">MUST</em> be empty, or an array\n        containing a valid <a data-cite=\"__SPEC__#dfn-frame\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-frame\">frame</a>."
             },
             {
               "html": "<var>property</var> matches if <var>values</var> is empty, or non existent,\n        the value of <var>property</var> in <var>frame</var>\n        is a <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> containing only the <code>@default</code> <a data-cite=\"INFRA#map-entry\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-entry\">entry</a> with any value,\n        and any other property in <var>node</var> has a non-default match."
@@ -228,7 +228,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "Let <var>value subjects</var> be the list of subjects from the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-map-of-flattened-subjects\">map of flattened subjects</a> matching the <a data-cite=\"JSON-LD11#dfn-node-object\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-node-object\">node object</a> values from <var>values</var>."
+                  "html": "Let <var>value subjects</var> be the list of subjects from the <a data-cite=\"__SPEC__#dfn-map-of-flattened-subjects\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-map-of-flattened-subjects\">map of flattened subjects</a> matching the <a data-cite=\"JSON-LD11#dfn-node-object\" data-link-type=\"dfn\" href=\"https://www.w3.org/TR/json-ld11/#dfn-node-object\">node object</a> values from <var>values</var>."
                 },
                 {
                   "html": "Let <var>matched subjects</var> be the result of calling this algorithm recursively using\n            <var>state</var>, <var>value subjects</var> for <var>subjects</var>,\n            <var>node pattern</var> for <var>frame</var>, and the <var>requireAll</var> flag."
@@ -311,23 +311,23 @@
           "html": "If <a data-lt=\"JsonLdProcessor-frame-frame\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-frame\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-frame-8\">frame</a> has a top-level\n        property which expands to <code>@graph</code> set the <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-framedefault\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-framedefault-1\"><code>frameDefault</code></a>\n        option to <a data-lt=\"JsonLdProcessor-frame-options\" href=\"https://w3c.github.io/json-ld-framing/#dfn-jsonldprocessor-frame-options\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-jsonldprocessor-frame-options-7\">options</a> with the\n        value <code>true</code>."
         },
         {
-          "html": "Initialize a new <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-framing-state\">framing state</a> (<var>state</var>) to an empty <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>.",
+          "html": "Initialize a new <a data-cite=\"__SPEC__#dfn-framing-state\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-framing-state\">framing state</a> (<var>state</var>) to an empty <a data-cite=\"INFRA#ordered-map\" data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>.",
           "rationale": "set",
           "steps": [
             {
-              "html": "Set <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-object-embed-flag\">object embed flag</a> in <var>state</var> to\n            <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-embed\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-embed-2\"><code>embed</code></a>\n            with the default value <code>@once</code>."
+              "html": "Set <a data-cite=\"__SPEC__#dfn-object-embed-flag\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-object-embed-flag\">object embed flag</a> in <var>state</var> to\n            <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-embed\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-embed-2\"><code>embed</code></a>\n            with the default value <code>@once</code>."
             },
             {
               "html": "Set the <dfn id=\"dfn-embedded-flag\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">embedded flag</dfn> in <var>state</var> to <code>false</code>"
             },
             {
-              "html": "Set <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-explicit-inclusion-flag\">explicit inclusion flag</a> in <var>state</var> to\n            <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-explicit\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-explicit-2\"><code>explicit</code></a>\n            with the default value <code>false</code>."
+              "html": "Set <a data-cite=\"__SPEC__#dfn-explicit-inclusion-flag\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-explicit-inclusion-flag\">explicit inclusion flag</a> in <var>state</var> to\n            <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-explicit\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-explicit-2\"><code>explicit</code></a>\n            with the default value <code>false</code>."
             },
             {
-              "html": "Set <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-require-all-flag\">require all flag</a> in <var>state</var> to\n            <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-requireall\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-requireall-1\"><code>requireAll</code></a>\n            with the default value <code>false</code>."
+              "html": "Set <a data-cite=\"__SPEC__#dfn-require-all-flag\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-require-all-flag\">require all flag</a> in <var>state</var> to\n            <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-requireall\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-requireall-1\"><code>requireAll</code></a>\n            with the default value <code>false</code>."
             },
             {
-              "html": "Set <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-omit-default-flag\">omit default flag</a> in <var>state</var> to\n            <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-omitdefault\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-omitdefault-2\"><code>omitDefault</code></a>\n            with the default value <code>false</code>."
+              "html": "Set <a data-cite=\"__SPEC__#dfn-omit-default-flag\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-omit-default-flag\">omit default flag</a> in <var>state</var> to\n            <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-omitdefault\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-omitdefault-2\"><code>omitDefault</code></a>\n            with the default value <code>false</code>."
             },
             {
               "html": "Set the <var>graph name</var> in <var>state</var> to\n            either <code>@default</code> if <a data-link-type=\"idl\" data-xref-type=\"attribute|dict-member|const\" data-link-for=\"JsonLdOptions\" data-xref-for=\"JsonLdOptions\" href=\"https://w3c.github.io/json-ld-framing/#dom-jsonldoptions-framedefault\" class=\"internalDFN\" id=\"ref-for-dom-jsonldoptions-framedefault-2\"><code>frameDefault</code></a> is <code>true</code>,\n            otherwise to <code>false</code>."
@@ -342,7 +342,7 @@
               ]
             },
             {
-              "html": "Set <var>subject map</var> in <var>state</var>\n            to the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-map-of-flattened-subjects\">map of flattened subjects</a> which is the value of <var>graph name</var>\n            in <var>graph map</var>."
+              "html": "Set <var>subject map</var> in <var>state</var>\n            to the <a data-cite=\"__SPEC__#dfn-map-of-flattened-subjects\" data-link-type=\"dfn\" href=\"https://w3c.github.io/json-ld-framing/#dfn-map-of-flattened-subjects\">map of flattened subjects</a> which is the value of <var>graph name</var>\n            in <var>graph map</var>."
             }
           ]
         },

@@ -17,27 +17,12 @@ dictionary RequestInit {
   any window; // can only be set to null
 };
 
-// Source: Attribution Reporting (https://wicg.github.io/attribution-reporting-api/)
-partial dictionary RequestInit {
-  AttributionReportingRequestOptions attributionReporting;
-};
-
 // Source: Local Network Access (https://wicg.github.io/local-network-access/)
 partial dictionary RequestInit {
   IPAddressSpace targetAddressSpace;
 };
 
-// Source: Shared Storage API (https://wicg.github.io/shared-storage/)
-partial dictionary RequestInit {
-  boolean sharedStorageWritable;
-};
-
 // Source: Private State Token API (https://wicg.github.io/trust-token-api/)
 partial dictionary RequestInit {
   PrivateToken privateToken;
-};
-
-// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
-partial dictionary RequestInit {
-  boolean adAuctionHeaders;
 };

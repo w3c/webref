@@ -1,0 +1,61 @@
+{
+  "name": "LanguageModel",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Prompt API",
+      "url": "https://webmachinelearning.github.io/prompt-api/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface LanguageModel : EventTarget {\n  static Promise<LanguageModel> create(optional LanguageModelCreateOptions options = {});\n  static Promise<Availability> availability(optional LanguageModelCreateCoreOptions options = {});\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  static Promise<LanguageModelParams?> params();\n\n  // These will throw \"NotSupportedError\" DOMExceptions if role = \"system\"\n  Promise<DOMString> prompt(\n    LanguageModelPrompt input,\n    optional LanguageModelPromptOptions options = {}\n  );\n  ReadableStream promptStreaming(\n    LanguageModelPrompt input,\n    optional LanguageModelPromptOptions options = {}\n  );\n  Promise<undefined> append(\n    LanguageModelPrompt input,\n    optional LanguageModelAppendOptions options = {}\n  );\n\n  Promise<double> measureContextUsage(\n    LanguageModelPrompt input,\n    optional LanguageModelPromptOptions options = {}\n  );\n  readonly attribute double contextUsage;\n  readonly attribute unrestricted double contextWindow;\n  attribute EventHandler oncontextoverflow;\n\n  // **DEPRECATED**: This method is only available in extension contexts.\n  Promise<double> measureInputUsage(\n    LanguageModelPrompt input,\n    optional LanguageModelPromptOptions options = {}\n  );\n  // **DEPRECATED**: This attribute is only available in extension contexts.\n  readonly attribute double inputUsage;\n  // **DEPRECATED**: This attribute is only available in extension contexts.\n  readonly attribute unrestricted double inputQuota;\n  // **DEPRECATED**: This attribute is only available in extension contexts.\n  attribute EventHandler onquotaoverflow;\n\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  readonly attribute unsigned long topK;\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  readonly attribute float temperature;\n\n  Promise<LanguageModel> clone(optional LanguageModelCloneOptions options = {});\n};",
+    "href": "https://webmachinelearning.github.io/prompt-api/#languagemodel"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Prompt API",
+        "url": "https://webmachinelearning.github.io/prompt-api/"
+      },
+      "fragment": "LanguageModel includes DestroyableModel;"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [
+      {
+        "spec": {
+          "title": "Observable",
+          "url": "https://wicg.github.io/observable/"
+        },
+        "fragment": "partial interface EventTarget {\n  Observable when(DOMString type, optional ObservableEventListenerOptions options = {});\n};"
+      }
+    ],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [
+    {
+      "name": "DestroyableModel",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Writing Assistance APIs",
+          "url": "https://webmachinelearning.github.io/writing-assistance-apis/"
+        },
+        "fragment": "interface mixin DestroyableModel {\n  undefined destroy();\n};",
+        "href": "https://webmachinelearning.github.io/writing-assistance-apis/#destroyablemodel"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

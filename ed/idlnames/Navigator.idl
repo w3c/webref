@@ -107,62 +107,6 @@ partial interface Navigator {
 // Source: Storage Buckets API (https://wicg.github.io/storage-buckets/)
 Navigator includes NavigatorStorageBuckets;
 
-// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
-[SecureContext]
-partial interface Navigator {
-  Promise<undefined> joinAdInterestGroup(AuctionAdInterestGroup group);
-};
-
-// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
-[SecureContext]
-partial interface Navigator {
-  Promise<undefined> leaveAdInterestGroup(optional AuctionAdInterestGroupKey group = {});
-};
-
-// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
-[SecureContext]
-partial interface Navigator {
-  Promise<undefined> clearOriginJoinedAdInterestGroups(
-      USVString owner, optional sequence<USVString> interestGroupsToKeep = []);
-};
-
-// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
-[SecureContext]
-partial interface Navigator {
-  Promise<(USVString or FencedFrameConfig)?> runAdAuction(AuctionAdConfig config);
-  readonly attribute boolean deprecatedRunAdAuctionEnforcesKAnonymity;
-};
-
-// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
-[SecureContext]
-partial interface Navigator {
-  boolean canLoadAdAuctionFencedFrame();
-};
-
-// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
-[SecureContext]
-partial interface Navigator {
-  Promise<AdAuctionData> getInterestGroupAdAuctionData(optional AdAuctionDataConfig config = {});
-};
-
-// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
-[SecureContext]
-partial interface Navigator {
-  Promise<DOMString> createAuctionNonce();
-};
-
-// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
-[SecureContext]
-partial interface Navigator {
-  undefined updateAdInterestGroups();
-};
-
-// Source: Protected Audience (formerly FLEDGE) (https://wicg.github.io/turtledove/)
-[SecureContext]
-partial interface Navigator {
-  [SameObject] readonly attribute ProtectedAudience protectedAudience;
-};
-
 // Source: User-Agent Client Hints (https://wicg.github.io/ua-client-hints/)
 Navigator includes NavigatorUA;
 

@@ -1,0 +1,9 @@
+// Source: Prompt API (https://webmachinelearning.github.io/prompt-api/)
+dictionary LanguageModelMessage {
+  required LanguageModelMessageRole role;
+
+  // The DOMString branch is shorthand for `[{ type: "text", value: providedValue }]`
+  required (DOMString or sequence<LanguageModelMessageContent>) content;
+
+  boolean prefix = false;
+};

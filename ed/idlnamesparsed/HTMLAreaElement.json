@@ -30,13 +30,6 @@
         "url": "https://html.spec.whatwg.org/multipage/"
       },
       "fragment": "partial interface HTMLAreaElement {\n  [CEReactions, Reflect] attribute boolean noHref;\n};"
-    },
-    {
-      "spec": {
-        "title": "Attribution Reporting",
-        "url": "https://wicg.github.io/attribution-reporting-api/"
-      },
-      "fragment": "HTMLAreaElement includes HTMLAttributionSrcElementUtils;"
     }
   ],
   "inheritance": {
@@ -598,21 +591,6 @@
         },
         "fragment": "interface mixin HTMLHyperlinkElementUtils {\n  [CEReactions, ReflectSetter] stringifier attribute USVString href;\n};",
         "href": "https://html.spec.whatwg.org/multipage/links.html#htmlhyperlinkelementutils"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
-      "name": "HTMLAttributionSrcElementUtils",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "Attribution Reporting",
-          "url": "https://wicg.github.io/attribution-reporting-api/"
-        },
-        "fragment": "interface mixin HTMLAttributionSrcElementUtils {\n    [CEReactions, SecureContext] attribute USVString attributionSrc;\n};",
-        "href": "https://wicg.github.io/attribution-reporting-api/#htmlattributionsrcelementutils"
       },
       "extended": [],
       "inheritance": null,

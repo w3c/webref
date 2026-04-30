@@ -1,0 +1,911 @@
+{
+  "spec": {
+    "title": "Prompt API",
+    "url": "https://webmachinelearning.github.io/prompt-api/"
+  },
+  "algorithms": [
+    {
+      "name": "LanguageModel/create(options)",
+      "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodel-create",
+      "html": "The static <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LanguageModel\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"create(options)|create()\" id=\"dom-languagemodel-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>create(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#create-an-ai-model-object\" id=\"ref-for-create-an-ai-model-object\">creating an AI model object</a> given <var>options</var>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#permissiondef-language-model\" id=\"ref-for-permissiondef-language-model\">language-model</a></code>\", <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#validate-and-canonicalize-language-model-options\" id=\"ref-for-validate-and-canonicalize-language-model-options\">validate and canonicalize language model options</a>, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#compute-language-model-options-availability\" id=\"ref-for-compute-language-model-options-availability\">compute language model options availability</a>, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#download-the-language-model\" id=\"ref-for-download-the-language-model\">download the language model</a>, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#initialize-the-language-model\" id=\"ref-for-initialize-the-language-model\">initialize the language model</a>, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#create-a-language-model-object\" id=\"ref-for-create-a-language-model-object\">create a language model object</a>, and false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "validate and canonicalize language model options",
+      "href": "https://webmachinelearning.github.io/prompt-api/#validate-and-canonicalize-language-model-options",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"validate-and-canonicalize-language-model-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">validate and canonicalize language model options</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelcreatecoreoptions\" id=\"ref-for-dictdef-languagemodelcreatecoreoptions②\">LanguageModelCreateCoreOptions</a></code> <var>options</var>, perform the following steps. They mutate <var>options</var> in place to canonicalize and deduplicate language tags, and throw an exception if any are invalid.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-expectedinputs\" id=\"ref-for-dom-languagemodelcreatecoreoptions-expectedinputs\">expectedInputs</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">for each</a> <var>expected</var> of <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-expectedinputs\" id=\"ref-for-dom-languagemodelcreatecoreoptions-expectedinputs①\">expectedInputs</a></code>\"]:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>expected</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelexpected-languages\" id=\"ref-for-dom-languagemodelexpected-languages\">languages</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a>, then <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#validate-and-canonicalize-language-tags\" id=\"ref-for-validate-and-canonicalize-language-tags\">Validate and canonicalize language tags</a> given <var>expected</var> and \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelexpected-languages\" id=\"ref-for-dom-languagemodelexpected-languages①\">languages</a></code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-expectedoutputs\" id=\"ref-for-dom-languagemodelcreatecoreoptions-expectedoutputs\">expectedOutputs</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②\">exists</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">for each</a> <var>expected</var> of <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-expectedoutputs\" id=\"ref-for-dom-languagemodelcreatecoreoptions-expectedoutputs①\">expectedOutputs</a></code>\"]:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>expected</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelexpected-languages\" id=\"ref-for-dom-languagemodelexpected-languages②\">languages</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists③\">exists</a>, then <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#validate-and-canonicalize-language-tags\" id=\"ref-for-validate-and-canonicalize-language-tags①\">Validate and canonicalize language tags</a> given <var>expected</var> and \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelexpected-languages\" id=\"ref-for-dom-languagemodelexpected-languages③\">languages</a></code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreateoptions-initialprompts\" id=\"ref-for-dom-languagemodelcreateoptions-initialprompts\">initialPrompts</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a>, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>expectedInputs</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-expectedinputs\" id=\"ref-for-dom-languagemodelcreatecoreoptions-expectedinputs②\">expectedInputs</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑤\">exists</a>; otherwise an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>expectedInputTypes</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#get-the-expected-content-types\" id=\"ref-for-get-the-expected-content-types\">get the expected content types</a> given <var>expectedInputs</var>.</p>"
+            },
+            {
+              "html": "<p>Perform <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#validate-and-canonicalize-a-prompt\" id=\"ref-for-validate-and-canonicalize-a-prompt\">validating and canonicalizing a prompt</a> given <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreateoptions-initialprompts\" id=\"ref-for-dom-languagemodelcreateoptions-initialprompts①\">initialPrompts</a></code>\"], <var>expectedInputTypes</var>, and false.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "download the language model",
+      "href": "https://webmachinelearning.github.io/prompt-api/#download-the-language-model",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"download-the-language-model\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">download the language model</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelcreatecoreoptions\" id=\"ref-for-dictdef-languagemodelcreatecoreoptions③\">LanguageModelCreateCoreOptions</a></code> <var>options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Initiate the download process for everything the user agent needs to prompt a language model according to <var>options</var>. This could include a base AI model, fine-tunings for specific languages or option values, or other resources.</p>"
+        },
+        {
+          "html": "<p>If the download process cannot be started for any reason, then return false.</p>"
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "initialize the language model",
+      "href": "https://webmachinelearning.github.io/prompt-api/#initialize-the-language-model",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-the-language-model\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize the language model</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelcreateoptions\" id=\"ref-for-dictdef-languagemodelcreateoptions①\">LanguageModelCreateOptions</a></code> <var>options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>.</p>"
+        },
+        {
+          "html": "Let <var>availability</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#compute-language-model-options-availability\" id=\"ref-for-compute-language-model-options-availability①\">compute language model options availability</a> given <var>options</var>.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>availability</var> is null or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-unavailable\" id=\"ref-for-dom-availability-unavailable\">unavailable</a></code>, then return a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information\">DOMException error information</a> whose <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information-name\" id=\"ref-for-domexception-error-information-name\">name</a> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror\">NotSupportedError</a></code>\" and whose <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information-details\" id=\"ref-for-domexception-error-information-details\">details</a> contain appropriate detail.</p>"
+            }
+          ]
+        },
+        {
+          "html": "This could include loading the appropriate model and any fine-tunings necessary to support <var>options</var> into memory.",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreateoptions-initialprompts\" id=\"ref-for-dom-languagemodelcreateoptions-initialprompts②\">initialPrompts</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑥\">exists</a>, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>expectedInputs</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-expectedinputs\" id=\"ref-for-dom-languagemodelcreatecoreoptions-expectedinputs③\">expectedInputs</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑦\">exists</a>; otherwise an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>expectedInputTypes</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#get-the-expected-content-types\" id=\"ref-for-get-the-expected-content-types①\">get the expected content types</a> given <var>expectedInputs</var>.</p>"
+                },
+                {
+                  "html": "<p>Let <var>initialMessages</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#validate-and-canonicalize-a-prompt\" id=\"ref-for-validate-and-canonicalize-a-prompt①\">validating and canonicalizing a prompt</a> given <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreateoptions-initialprompts\" id=\"ref-for-dom-languagemodelcreateoptions-initialprompts③\">initialPrompts</a></code>\"], <var>expectedInputTypes</var>, and false.</p>"
+                },
+                {
+                  "html": "<p>Load <var>initialMessages</var> into the model’s context window.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-tools\" id=\"ref-for-dom-languagemodelcreatecoreoptions-tools\">tools</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑧\">exists</a>, then load <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-tools\" id=\"ref-for-dom-languagemodelcreatecoreoptions-tools①\">tools</a></code>\"] into the model’s context window.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If initialization failed because the process of loading <var>options</var> resulted in using up all of the model’s context window, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>requested</var> be the amount of context window needed to encode <var>options</var>. The encoding of <var>options</var> as input is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>maximum</var> be the maximum context window size that the user agent supports.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: <var>requested</var> is greater than <var>maximum</var>. (That is how we reached this error branch.)</p>"
+            },
+            {
+              "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#quota-exceeded-error-information\" id=\"ref-for-quota-exceeded-error-information\">quota exceeded error information</a> whose <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror-requested\" id=\"ref-for-quotaexceedederror-requested\">requested</a> is <var>requested</var> and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror-quota\" id=\"ref-for-quotaexceedederror-quota\">quota</a> is <var>maximum</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If initialization failed for any other reason, then return a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information①\">DOMException error information</a> whose <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information-name\" id=\"ref-for-domexception-error-information-name①\">name</a> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror\">OperationError</a></code>\" and whose <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information-details\" id=\"ref-for-domexception-error-information-details①\">details</a> contain appropriate detail.</p>"
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a language model object",
+      "href": "https://webmachinelearning.github.io/prompt-api/#create-a-language-model-object",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-language-model-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a language model object</dfn>, given a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm\">realm</a> <var>realm</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelcreateoptions\" id=\"ref-for-dictdef-languagemodelcreateoptions②\">LanguageModelCreateOptions</a></code> <var>options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: these steps are running on <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop\" id=\"ref-for-concept-agent-event-loop\">event loop</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>contextWindowSize</var> be the amount of context window that is available to the user agent for this model. (This value is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a>, and may be +∞ if there are no specific limits beyond, e.g., the user’s memory, or the limits of JavaScript strings.)</p>"
+        },
+        {
+          "html": "<p>Let <var>initialMessages</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelmessage\" id=\"ref-for-dictdef-languagemodelmessage②\">LanguageModelMessage</a></code>s.</p>"
+        },
+        {
+          "html": "<p>Let <var>initialMessagesUsage</var> be 0.</p>"
+        },
+        {
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreateoptions-initialprompts\" id=\"ref-for-dom-languagemodelcreateoptions-initialprompts④\">initialPrompts</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists⑨\">exists</a>, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>expectedInputs</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-expectedinputs\" id=\"ref-for-dom-languagemodelcreatecoreoptions-expectedinputs④\">expectedInputs</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⓪\">exists</a>; otherwise an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③\">list</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>expectedInputTypes</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#get-the-expected-content-types\" id=\"ref-for-get-the-expected-content-types②\">get the expected content types</a> given <var>expectedInputs</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>initialMessages</var> to the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#validate-and-canonicalize-a-prompt\" id=\"ref-for-validate-and-canonicalize-a-prompt②\">validating and canonicalizing a prompt</a> given <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreateoptions-initialprompts\" id=\"ref-for-dom-languagemodelcreateoptions-initialprompts⑤\">initialPrompts</a></code>\"], <var>expectedInputTypes</var>, and false.</p>"
+            },
+            {
+              "html": "<p>Set <var>initialMessagesUsage</var> to the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#measure-language-model-context-usage\" id=\"ref-for-measure-language-model-context-usage\">measure language model context usage</a> given <var>initialMessages</var>, and <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreateoptions-signal\" id=\"ref-for-dom-languagemodelcreateoptions-signal\">signal</a></code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel\" id=\"ref-for-languagemodel③\">LanguageModel</a></code> object, created in <var>realm</var>, with</p>\n      <dl class=\"props\">\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-initial-messages\" id=\"ref-for-languagemodel-initial-messages\">initial messages</a>\n       </dt><dd data-md=\"\">\n        <p><var>initialMessages</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-top-k\" id=\"ref-for-languagemodel-top-k\">top K</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-topk\" id=\"ref-for-dom-languagemodelcreatecoreoptions-topk\">topK</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①①\">exists</a>; otherwise an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined②\">implementation-defined</a> value</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-temperature\" id=\"ref-for-languagemodel-temperature\">temperature</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-temperature\" id=\"ref-for-dom-languagemodelcreatecoreoptions-temperature\">temperature</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①②\">exists</a>; otherwise an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined③\">implementation-defined</a> value</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-expected-inputs\" id=\"ref-for-languagemodel-expected-inputs\">expected inputs</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-expectedinputs\" id=\"ref-for-dom-languagemodelcreatecoreoptions-expectedinputs⑤\">expectedInputs</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①③\">exists</a>; otherwise an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-expected-outputs\" id=\"ref-for-languagemodel-expected-outputs\">expected outputs</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-expectedoutputs\" id=\"ref-for-dom-languagemodelcreatecoreoptions-expectedoutputs②\">expectedOutputs</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①④\">exists</a>; otherwise an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-tools\" id=\"ref-for-languagemodel-tools\">tools</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-tools\" id=\"ref-for-dom-languagemodelcreatecoreoptions-tools②\">tools</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑤\">exists</a>; otherwise an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-context-window-size\" id=\"ref-for-languagemodel-context-window-size\">context window size</a>\n       </dt><dd data-md=\"\">\n        <p><var>contextWindowSize</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-current-context-usage\" id=\"ref-for-languagemodel-current-context-usage\">current context usage</a>\n       </dt><dd data-md=\"\">\n        <p><var>initialMessagesUsage</var></p>\n      </dd></dl>"
+        }
+      ]
+    },
+    {
+      "name": "LanguageModel/availability(options)",
+      "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodel-availability",
+      "html": "The static <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LanguageModel\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"availability(options)|availability()\" id=\"dom-languagemodel-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>availability(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#compute-ai-model-availability\" id=\"ref-for-compute-ai-model-availability\">computing AI model availability</a> given <var>options</var>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#permissiondef-language-model\" id=\"ref-for-permissiondef-language-model①\">language-model</a></code>\", <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#validate-and-canonicalize-language-model-options\" id=\"ref-for-validate-and-canonicalize-language-model-options①\">validate and canonicalize language model options</a>, and <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#compute-language-model-options-availability\" id=\"ref-for-compute-language-model-options-availability②\">compute language model options availability</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "compute language model options availability",
+      "href": "https://webmachinelearning.github.io/prompt-api/#compute-language-model-options-availability",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-language-model-options-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute language model options availability</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelcreatecoreoptions\" id=\"ref-for-dictdef-languagemodelcreatecoreoptions④\">LanguageModelCreateCoreOptions</a></code> <var>options</var>, perform the following steps. They return either an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#enumdef-availability\" id=\"ref-for-enumdef-availability①\">Availability</a></code> value or null, and they mutate <var>options</var> in place to update language tags to their best-fit matches.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>availability</var> be the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#language-model-non-options-availability\" id=\"ref-for-language-model-non-options-availability\">language model non-options availability</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>availability</var> is null, then return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>availabilities</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a> containing <var>availability</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputPartition</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#get-the-language-availabilities-partition\" id=\"ref-for-get-the-language-availabilities-partition\">getting the language availabilities partition</a> given the purpose of prompting a language model with text in that language.</p>"
+        },
+        {
+          "html": "<p>Let <var>outputPartition</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#get-the-language-availabilities-partition\" id=\"ref-for-get-the-language-availabilities-partition①\">getting the language availabilities partition</a> given the purpose of producing language model output in that language.</p>"
+        },
+        {
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-expectedinputs\" id=\"ref-for-dom-languagemodelcreatecoreoptions-expectedinputs⑥\">expectedInputs</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑥\">exists</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">for each</a> <var>expected</var> of <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-expectedinputs\" id=\"ref-for-dom-languagemodelcreatecoreoptions-expectedinputs⑦\">expectedInputs</a></code>\"]:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>expected</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelexpected-languages\" id=\"ref-for-dom-languagemodelexpected-languages④\">languages</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑦\">exists</a>, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>inputLanguageAvailability</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#compute-language-availability\" id=\"ref-for-compute-language-availability\">computing language availability</a> given <var>expected</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelexpected-languages\" id=\"ref-for-dom-languagemodelexpected-languages⑤\">languages</a></code>\"] and <var>inputPartition</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>inputLanguageAvailability</var> to <var>availabilities</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>inputTypeAvailability</var> be the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#language-model-content-type-availability\" id=\"ref-for-language-model-content-type-availability\">language model content type availability</a> given <var>expected</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelexpected-type\" id=\"ref-for-dom-languagemodelexpected-type\">type</a></code>\"] and true.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>inputTypeAvailability</var> to <var>availabilities</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-expectedoutputs\" id=\"ref-for-dom-languagemodelcreatecoreoptions-expectedoutputs③\">expectedOutputs</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑧\">exists</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">for each</a> <var>expected</var> of <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-expectedoutputs\" id=\"ref-for-dom-languagemodelcreatecoreoptions-expectedoutputs④\">expectedOutputs</a></code>\"]:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>expected</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelexpected-languages\" id=\"ref-for-dom-languagemodelexpected-languages⑥\">languages</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①⑨\">exists</a>, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>outputLanguageAvailability</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#compute-language-availability\" id=\"ref-for-compute-language-availability①\">computing language availability</a> given <var>expected</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelexpected-languages\" id=\"ref-for-dom-languagemodelexpected-languages⑦\">languages</a></code>\"] and <var>outputPartition</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> <var>outputLanguageAvailability</var> to <var>availabilities</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>outputTypeAvailability</var> be the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#language-model-content-type-availability\" id=\"ref-for-language-model-content-type-availability①\">language model content type availability</a> given <var>expected</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelexpected-type\" id=\"ref-for-dom-languagemodelexpected-type①\">type</a></code>\"] and false.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append③\">Append</a> <var>outputTypeAvailability</var> to <var>availabilities</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#availability-minimum-availability\" id=\"ref-for-availability-minimum-availability\">minimum availability</a> given <var>availabilities</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "language model non-options availability",
+      "href": "https://webmachinelearning.github.io/prompt-api/#language-model-non-options-availability",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"language-model-non-options-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">language model non-options availability</dfn> is given by the following steps. They return an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#enumdef-availability\" id=\"ref-for-enumdef-availability②\">Availability</a></code> value or null.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>If there is some error attempting to determine whether the user agent <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports\">can support</a> prompting a language model, which the user agent believes to be transient (such that re-querying could stop producing such an error), then return null.</p>"
+        },
+        {
+          "html": "<p>If the user agent <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports①\">currently supports</a> prompting a language model, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-available\" id=\"ref-for-dom-availability-available\">available</a></code>\".</p>"
+        },
+        {
+          "html": "<p>If the user agent believes it will be able to <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports②\">support</a> prompting a language model, but only after finishing a download that is already ongoing, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloading\" id=\"ref-for-dom-availability-downloading\">downloading</a></code>\".</p>"
+        },
+        {
+          "html": "<p>If the user agent believes it will be able to <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports③\">support</a> prompting a language model, but only after performing a not-currently-ongoing download, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloadable\" id=\"ref-for-dom-availability-downloadable\">downloadable</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Otherwise, return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-unavailable\" id=\"ref-for-dom-availability-unavailable①\">unavailable</a></code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "language model content type availability",
+      "href": "https://webmachinelearning.github.io/prompt-api/#language-model-content-type-availability",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"language-model-content-type-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">language model content type availability</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#enumdef-languagemodelmessagetype\" id=\"ref-for-enumdef-languagemodelmessagetype②\">LanguageModelMessageType</a></code> <var>type</var> and a boolean <var>isInput</var>, is given by the following steps. They return an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#enumdef-availability\" id=\"ref-for-enumdef-availability③\">Availability</a></code> value.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>If the user agent <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports④\">currently supports</a> <var>type</var> as an input if <var>isInput</var> is true, or as an output if <var>isInput</var> is false, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-available\" id=\"ref-for-dom-availability-available①\">available</a></code>\".</p>"
+        },
+        {
+          "html": "<p>If the user agent believes it will be able to <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports⑤\">support</a> <var>type</var> as such, but only after finishing a download that is already ongoing, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloading\" id=\"ref-for-dom-availability-downloading①\">downloading</a></code>\".</p>"
+        },
+        {
+          "html": "<p>If the user agent believes it will be able to <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports⑥\">support</a> <var>type</var> as such, but only after performing a not-currently-ongoing download, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloadable\" id=\"ref-for-dom-availability-downloadable①\">downloadable</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Otherwise, return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-unavailable\" id=\"ref-for-dom-availability-unavailable②\">unavailable</a></code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "LanguageModel/prompt(input, options)",
+      "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodel-prompt",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LanguageModel\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"prompt(input, options)|prompt(input)\" id=\"dom-languagemodel-prompt\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>prompt(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>responseConstraint</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelpromptoptions-responseconstraint\" id=\"ref-for-dom-languagemodelpromptoptions-responseconstraint\">responseConstraint</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⓪\">exists</a>; otherwise null.</p>"
+        },
+        {
+          "html": "<p>Let <var>omitResponseConstraintInput</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelpromptoptions-omitresponseconstraintinput\" id=\"ref-for-dom-languagemodelpromptoptions-omitresponseconstraintinput\">omitResponseConstraintInput</a></code>\"].</p>"
+        },
+        {
+          "html": "Let <var>operation</var> be an algorithm step which takes arguments <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>, and performs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>prefillSuccess</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#prefill\" id=\"ref-for-prefill\">prefilling</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>, <var>input</var>, <var>omitResponseConstraintInput</var>, <var>responseConstraint</var>, <var>error</var>, and <var>stopProducing</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>prefillSuccess</var> is true, then <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#generate\" id=\"ref-for-generate\">generate</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>, <var>responseConstraint</var>, <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#get-an-aggregated-ai-model-result\" id=\"ref-for-get-an-aggregated-ai-model-result\">getting an aggregated AI model result</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>, <var>options</var>, and <var>operation</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "LanguageModel/promptStreaming(input, options)",
+      "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodel-promptstreaming",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LanguageModel\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"promptStreaming(input, options)|promptStreaming(input)\" id=\"dom-languagemodel-promptstreaming\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>promptStreaming(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>responseConstraint</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelpromptoptions-responseconstraint\" id=\"ref-for-dom-languagemodelpromptoptions-responseconstraint①\">responseConstraint</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②①\">exists</a>; otherwise null.</p>"
+        },
+        {
+          "html": "<p>Let <var>omitResponseConstraintInput</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelpromptoptions-omitresponseconstraintinput\" id=\"ref-for-dom-languagemodelpromptoptions-omitresponseconstraintinput①\">omitResponseConstraintInput</a></code>\"].</p>"
+        },
+        {
+          "html": "Let <var>operation</var> be an algorithm step which takes arguments <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>, and performs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>prefillSuccess</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#prefill\" id=\"ref-for-prefill①\">prefilling</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>, <var>input</var>, <var>omitResponseConstraintInput</var>, <var>responseConstraint</var>, <var>error</var>, and <var>stopProducing</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>prefillSuccess</var> is true, then <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#generate\" id=\"ref-for-generate①\">generate</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>, <var>responseConstraint</var>, <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#get-a-streaming-ai-model-result\" id=\"ref-for-get-a-streaming-ai-model-result\">getting a streaming AI model result</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>, <var>options</var>, and <var>operation</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "LanguageModel/append(input, options)",
+      "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodel-append",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LanguageModel\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"append(input, options)|append(input)\" id=\"dom-languagemodel-append\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>append(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>operation</var> be an algorithm step which takes arguments <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>, and performs the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>prefillSuccess</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#prefill\" id=\"ref-for-prefill③\">prefilling</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>, <var>input</var>, false, null, <var>error</var>, and <var>stopProducing</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>prefillSuccess</var> is true and <var>done</var> is not null, then perform <var>done</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#get-an-aggregated-ai-model-result\" id=\"ref-for-get-an-aggregated-ai-model-result①\">getting an aggregated AI model result</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>, <var>options</var>, and <var>operation</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "LanguageModel/measureContextUsage(input, options)",
+      "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodel-measurecontextusage",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LanguageModel\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"measureContextUsage(input, options)|measureContextUsage(input)\" id=\"dom-languagemodel-measurecontextusage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>measureContextUsage(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelpromptoptions-omitresponseconstraintinput\" id=\"ref-for-dom-languagemodelpromptoptions-omitresponseconstraintinput②\">omitResponseConstraintInput</a></code>\"] is true and <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelpromptoptions-responseconstraint\" id=\"ref-for-dom-languagemodelpromptoptions-responseconstraint②\">responseConstraint</a></code>\"] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②②\">exist</a>, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>expectedInputTypes</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#get-the-expected-content-types\" id=\"ref-for-get-the-expected-content-types③\">get the expected content types</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-expected-inputs\" id=\"ref-for-languagemodel-expected-inputs①\">expected inputs</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>messages</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#validate-and-canonicalize-a-prompt\" id=\"ref-for-validate-and-canonicalize-a-prompt③\">validating and canonicalizing a prompt</a> given <var>input</var>, <var>expectedInputTypes</var>, and false.</p>"
+        },
+        {
+          "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelpromptoptions-responseconstraint\" id=\"ref-for-dom-languagemodelpromptoptions-responseconstraint③\">responseConstraint</a></code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②③\">exists</a> and is not null and <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelpromptoptions-omitresponseconstraintinput\" id=\"ref-for-dom-languagemodelpromptoptions-omitresponseconstraintinput③\">omitResponseConstraintInput</a></code>\"] is false, then implementations may insert an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelmessage\" id=\"ref-for-dictdef-languagemodelmessage④\">LanguageModelMessage</a></code> to <var>messages</var> to guide the model’s behavior.</p>"
+        },
+        {
+          "html": "<p>Let <var>measureUsage</var> be an algorithm step which takes argument <var>stopMeasuring</var>, and returns the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#measure-language-model-context-usage\" id=\"ref-for-measure-language-model-context-usage①\">measuring language model context usage</a> given <var>messages</var>, and <var>stopMeasuring</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#measure-ai-model-input-usage\" id=\"ref-for-measure-ai-model-input-usage\">measuring AI model input usage</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>, <var>options</var>, and <var>measureUsage</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "LanguageModel/measureInputUsage(input, options)",
+      "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodel-measureinputusage",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LanguageModel\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"measureInputUsage(input, options)|measureInputUsage(input)\" id=\"dom-languagemodel-measureinputusage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>measureInputUsage(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return the result of running the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodel-measurecontextusage\" id=\"ref-for-dom-languagemodel-measurecontextusage①\">measureContextUsage()</a></code> method steps given <var>input</var> and <var>options</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "LanguageModel/clone(options)",
+      "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodel-clone",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"LanguageModel\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"clone(options)|clone()\" id=\"dom-languagemodel-clone\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>clone(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#clone-a-language-model\" id=\"ref-for-clone-a-language-model\">cloning a language model</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a> and <var>options</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "prefill",
+      "href": "https://webmachinelearning.github.io/prompt-api/#prefill",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"prefill\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">prefill</dfn> given:\n\n\n    <ul>\n     <li data-md=\"\">\n      <p>a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel\" id=\"ref-for-languagemodel①④\">LanguageModel</a></code> <var>model</var>,</p>\n     </li><li data-md=\"\">\n      <p>a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#typedefdef-languagemodelprompt\" id=\"ref-for-typedefdef-languagemodelprompt⑤\">LanguageModelPrompt</a></code> <var>input</var>,</p>\n     </li><li data-md=\"\">\n      <p>a boolean <var>omitResponseConstraintInput</var>,</p>\n     </li><li data-md=\"\">\n      <p>an object-or-null <var>responseConstraint</var>,</p>\n     </li><li data-md=\"\">\n      <p>an algorithm-or-null <var>error</var> that takes <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#error-information\" id=\"ref-for-error-information\">error information</a> and returns nothing, and</p>\n     </li><li data-md=\"\">\n      <p>an algorithm-or-null <var>stopPrefilling</var> that takes no arguments and returns a boolean,</p>\n    </li></ul>\n    <p>perform the following steps:</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">in parallel</a>.</p>"
+        },
+        {
+          "html": "If this throws an exception <var>e</var>, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>error</var> is not null, perform <var>error</var> given a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information②\">DOMException error information</a> whose <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information-name\" id=\"ref-for-domexception-error-information-name②\">name</a> is <var>e</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#domexception-name\" id=\"ref-for-domexception-name\">name</a> and whose <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information-details\" id=\"ref-for-domexception-error-information-details②\">details</a> contain appropriate detail.</p>"
+            },
+            {
+              "html": "<p>Return false.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>responseConstraint</var> is not null and <var>omitResponseConstraintInput</var> is false, then implementations may insert an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑤\">implementation-defined</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelmessage\" id=\"ref-for-dictdef-languagemodelmessage⑤\">LanguageModelMessage</a></code> to <var>messages</var> to guide the model’s behavior.</p>"
+        },
+        {
+          "html": "<p>Let <var>requested</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#measure-language-model-context-usage\" id=\"ref-for-measure-language-model-context-usage②\">measuring language model context usage</a> given <var>messages</var>, and <var>stopPrefilling</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>requested</var> is null, then return false.</p>"
+        },
+        {
+          "html": "If <var>requested</var> is an <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#error-information\" id=\"ref-for-error-information①\">error information</a>, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>error</var> is not null, perform <var>error</var> given <var>requested</var>.</p>"
+            },
+            {
+              "html": "<p>Return false.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: <var>requested</var> is a number.</p>"
+        },
+        {
+          "html": "If <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-current-context-usage\" id=\"ref-for-languagemodel-current-context-usage④\">current context usage</a> + <var>requested</var> is greater than <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-context-window-size\" id=\"ref-for-languagemodel-context-window-size③\">context window size</a>, then:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>error</var> is not null, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>errorInfo</var> be a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#quota-exceeded-error-information\" id=\"ref-for-quota-exceeded-error-information①\">quota exceeded error information</a> with a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror-requested\" id=\"ref-for-quotaexceedederror-requested①\">requested</a> of <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-current-context-usage\" id=\"ref-for-languagemodel-current-context-usage⑤\">current context usage</a> + <var>requested</var> and a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#quotaexceedederror-quota\" id=\"ref-for-quotaexceedederror-quota①\">quota</a> of <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-context-window-size\" id=\"ref-for-languagemodel-context-window-size④\">context window size</a>.</p>"
+                },
+                {
+                  "html": "<p>Perform <var>error</var> given <var>errorInfo</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return false.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Let <var>expectedInputTypes</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#get-the-expected-content-types\" id=\"ref-for-get-the-expected-content-types④\">get the expected content types</a> given <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-expected-inputs\" id=\"ref-for-languagemodel-expected-inputs②\">expected inputs</a>.</p>"
+        },
+        {
+          "html": "If an error occurred during prefilling:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let the error be represented as <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#error-information\" id=\"ref-for-error-information②\">error information</a> <var>errorInfo</var> according to the guidance in <a href=\"https://webmachinelearning.github.io/prompt-api/#language-model-errors\">§ 3.3.4 Errors</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>error</var> is not null, perform <var>error</var> given <var>errorInfo</var>.</p>"
+            },
+            {
+              "html": "<p>Return false.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Set <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-current-context-usage\" id=\"ref-for-languagemodel-current-context-usage⑥\">current context usage</a> to <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-current-context-usage\" id=\"ref-for-languagemodel-current-context-usage⑦\">current context usage</a> + <var>requested</var>.</p>"
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "generate",
+      "href": "https://webmachinelearning.github.io/prompt-api/#generate",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"generate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">generate</dfn> given:\n\n\n    <ul>\n     <li data-md=\"\">\n      <p>a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel\" id=\"ref-for-languagemodel①⑤\">LanguageModel</a></code> <var>model</var>,</p>\n     </li><li data-md=\"\">\n      <p>an object-or-null <var>responseConstraint</var>,</p>\n     </li><li data-md=\"\">\n      <p>an algorithm-or-null <var>chunkProduced</var> that takes a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> and returns nothing,</p>\n     </li><li data-md=\"\">\n      <p>an algorithm-or-null <var>done</var> that takes no arguments and returns nothing,</p>\n     </li><li data-md=\"\">\n      <p>an algorithm-or-null <var>error</var> that takes <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#error-information\" id=\"ref-for-error-information③\">error information</a> and returns nothing, and</p>\n     </li><li data-md=\"\">\n      <p>an algorithm-or-null <var>stopProducing</var> that takes no arguments and returns a boolean,</p>\n    </li></ul>\n    <p>perform the following steps:</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑥\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>In an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑦\">implementation-defined</a> manner, subject to the following guidelines, begin the process of producing a response from the language model based on its current internal state.</p>\n      <p>The process should use <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-initial-messages\" id=\"ref-for-languagemodel-initial-messages②\">initial messages</a>, <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-top-k\" id=\"ref-for-languagemodel-top-k③\">top K</a>, <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-temperature\" id=\"ref-for-languagemodel-temperature③\">temperature</a>, <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-expected-inputs\" id=\"ref-for-languagemodel-expected-inputs④\">expected inputs</a>, <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-expected-outputs\" id=\"ref-for-languagemodel-expected-outputs②\">expected outputs</a>, <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-tools\" id=\"ref-for-languagemodel-tools②\">tools</a>, and <var>responseConstraint</var> to guide the model’s behavior.</p>\n      <p>The prompting process must conform to the guidance given in <a href=\"https://webmachinelearning.github.io/prompt-api/#privacy\">§ 4 Privacy considerations</a> and <a href=\"https://webmachinelearning.github.io/prompt-api/#security\">§ 5 Security considerations</a>.</p>\n      <p>If <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-tools\" id=\"ref-for-languagemodel-tools③\">tools</a> is not empty, the model may use the provided tools by calling their <var>execute</var> functions.</p>"
+        },
+        {
+          "html": "While true:",
+          "rationale": "wait",
+          "steps": [
+            {
+              "html": "<p>Wait for the next chunk of response data to be produced, for the process to finish, or for the result of calling <var>stopProducing</var> to become true.</p>"
+            },
+            {
+              "html": "If such a chunk is successfully produced:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let it be represented as a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a> <var>chunk</var>.</p>"
+                },
+                {
+                  "html": "<p>If <var>chunkProduced</var> is not null, perform <var>chunkProduced</var> given <var>chunk</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "Otherwise, if the process has finished:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>done</var> is not null, perform <var>done</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">Break</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise, if <var>stopProducing</var> returns true, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break①\">break</a>.</p>"
+            },
+            {
+              "html": "Otherwise, if an error occurred during prompting:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let the error be represented as <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#error-information\" id=\"ref-for-error-information④\">error information</a> <var>errorInfo</var> according to the guidance in <a href=\"https://webmachinelearning.github.io/prompt-api/#language-model-errors\">§ 3.3.4 Errors</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>error</var> is not null, perform <var>error</var> given <var>errorInfo</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break②\">Break</a>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "measure language model context usage",
+      "href": "https://webmachinelearning.github.io/prompt-api/#measure-language-model-context-usage",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"measure-language-model-context-usage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">measure language model context usage</dfn> given:\n\n\n    <ul>\n     <li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①②\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelmessage\" id=\"ref-for-dictdef-languagemodelmessage⑥\">LanguageModelMessage</a></code> <var>messages</var>,</p>\n     </li><li data-md=\"\">\n      <p>an algorithm <var>stopMeasuring</var> that takes no arguments and returns a boolean,</p>\n    </li></ul>\n    <p>perform the following steps:</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①⓪\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑦\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputToModel</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑧\">implementation-defined</a> input that would be sent to the underlying model in order to <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#prefill\" id=\"ref-for-prefill④\">prefill</a> given <var>messages</var>.</p>\n      \n      <p>If during this process <var>stopMeasuring</var> starts returning true, then return null.</p>\n      <p>If an error occurs during this process, then return an appropriate <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information③\">DOMException error information</a> according to the guidance in <a href=\"https://webmachinelearning.github.io/prompt-api/#language-model-errors\">§ 3.3.4 Errors</a>.</p>"
+        },
+        {
+          "html": "<p>Return the amount of context usage needed to represent <var>inputToModel</var> when given to the underlying model. The exact calculation procedure is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑨\">implementation-defined</a>, subject to the following constraints.</p>\n      <p>The returned context usage must be nonnegative and finite. It should be roughly proportional to the amount of data in <var>inputToModel</var>.</p>\n      \n      <p>If during this process <var>stopMeasuring</var> starts returning true, then instead return null.</p>\n      <p>If an error occurs during this process, then instead return an appropriate <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information④\">DOMException error information</a> according to the guidance in <a href=\"https://webmachinelearning.github.io/prompt-api/#language-model-errors\">§ 3.3.4 Errors</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "get the expected content types",
+      "href": "https://webmachinelearning.github.io/prompt-api/#get-the-expected-content-types",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-expected-content-types\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the expected content types</dfn> given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①③\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelexpected\" id=\"ref-for-dictdef-languagemodelexpected④\">LanguageModelExpected</a></code>s <var>expectedContents</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>expectedTypes</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①④\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#enumdef-languagemodelmessagetype\" id=\"ref-for-enumdef-languagemodelmessagetype③\">LanguageModelMessageType</a></code>s.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>expected</var> of <var>expectedContents</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>expectedTypes</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <var>expected</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelexpected-type\" id=\"ref-for-dom-languagemodelexpected-type②\">type</a></code>\"], then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append④\">append</a> <var>expected</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelexpected-type\" id=\"ref-for-dom-languagemodelexpected-type③\">type</a></code>\"] to <var>expectedTypes</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>expectedTypes</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain①\">contain</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagetype-text\" id=\"ref-for-dom-languagemodelmessagetype-text\">text</a></code>\", then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑤\">append</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagetype-text\" id=\"ref-for-dom-languagemodelmessagetype-text①\">text</a></code>\" to <var>expectedTypes</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>expectedTypes</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "validate and canonicalize a prompt",
+      "href": "https://webmachinelearning.github.io/prompt-api/#validate-and-canonicalize-a-prompt",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"validate and canonicalize a prompt|validating and canonicalizing a prompt\" id=\"validate-and-canonicalize-a-prompt\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">validate and canonicalize a prompt</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#typedefdef-languagemodelprompt\" id=\"ref-for-typedefdef-languagemodelprompt⑥\">LanguageModelPrompt</a></code> <var>input</var>, a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑤\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#enumdef-languagemodelmessagetype\" id=\"ref-for-enumdef-languagemodelmessagetype④\">LanguageModelMessageType</a></code>s <var>expectedTypes</var>, and a boolean <var>hasAppendedInput</var>, perform the following steps. The return value will be a non-empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑥\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelmessage\" id=\"ref-for-dictdef-languagemodelmessage⑦\">LanguageModelMessage</a></code>s in their \"longhand\" form.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①①\">Assert</a>: <var>expectedTypes</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain②\">contains</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagetype-text\" id=\"ref-for-dom-languagemodelmessagetype-text②\">text</a></code>\".</p>"
+        },
+        {
+          "html": "<p>If <var>input</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a>, then return <span style=\"white-space: pre-wrap\">«\n  «[\n    \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-role\" id=\"ref-for-dom-languagemodelmessage-role\">role</a></code>\" → \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagerole-user\" id=\"ref-for-dom-languagemodelmessagerole-user\">user</a></code>\",\n    \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-content\" id=\"ref-for-dom-languagemodelmessage-content\">content</a></code>\" → «\n      «[\n        \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-type\" id=\"ref-for-dom-languagemodelmessagecontent-type\">type</a></code>\" → \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagetype-text\" id=\"ref-for-dom-languagemodelmessagetype-text③\">text</a></code>\",\n        \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-value\" id=\"ref-for-dom-languagemodelmessagecontent-value\">value</a></code>\" → <var>input</var>\n      ]»\n    »,\n    \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-prefix\" id=\"ref-for-dom-languagemodelmessage-prefix\">prefix</a></code>\" → false\n  ]»\n»</span>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①②\">Assert</a>: <var>input</var> is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑦\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelmessage\" id=\"ref-for-dictdef-languagemodelmessage⑧\">LanguageModelMessage</a></code>s.</p>"
+        },
+        {
+          "html": "<p>If <var>input</var> is an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑧\">list</a>, then return <span style=\"white-space: pre-wrap\">«\n  «[\n    \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-role\" id=\"ref-for-dom-languagemodelmessage-role①\">role</a></code>\" → \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagerole-user\" id=\"ref-for-dom-languagemodelmessagerole-user①\">user</a></code>\",\n    \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-content\" id=\"ref-for-dom-languagemodelmessage-content①\">content</a></code>\" → «\n      «[\n        \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-type\" id=\"ref-for-dom-languagemodelmessagecontent-type①\">type</a></code>\" → \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagetype-text\" id=\"ref-for-dom-languagemodelmessagetype-text④\">text</a></code>\",\n        \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-value\" id=\"ref-for-dom-languagemodelmessagecontent-value①\">value</a></code>\" → \"\"\n      ]»\n    »,\n    \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-prefix\" id=\"ref-for-dom-languagemodelmessage-prefix①\">prefix</a></code>\" → false\n  ]»\n»</span>.</p>"
+        },
+        {
+          "html": "<p>Let <var>messages</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑨\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelmessage\" id=\"ref-for-dictdef-languagemodelmessage⑨\">LanguageModelMessage</a></code>s.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>message</var> of <var>input</var>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>message</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-content\" id=\"ref-for-dom-languagemodelmessage-content②\">content</a></code>\"] is a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a>, then set <var>message</var> to <span style=\"white-space: pre-wrap\">«[\n  \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-role\" id=\"ref-for-dom-languagemodelmessage-role②\">role</a></code>\" → <var>message</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-role\" id=\"ref-for-dom-languagemodelmessage-role③\">role</a></code>\"],\n  \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-content\" id=\"ref-for-dom-languagemodelmessage-content③\">content</a></code>\" → «\n    «[\n      \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-type\" id=\"ref-for-dom-languagemodelmessagecontent-type②\">type</a></code>\" → \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagetype-text\" id=\"ref-for-dom-languagemodelmessagetype-text⑤\">text</a></code>\",\n      \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-value\" id=\"ref-for-dom-languagemodelmessagecontent-value②\">value</a></code>\" → <var>message</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-content\" id=\"ref-for-dom-languagemodelmessage-content④\">content</a></code>\"]\n    ]»\n  »,\n  \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-prefix\" id=\"ref-for-dom-languagemodelmessage-prefix②\">prefix</a></code>\" → <var>message</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-prefix\" id=\"ref-for-dom-languagemodelmessage-prefix③\">prefix</a></code>\"]\n]»</span>.</p>"
+            },
+            {
+              "html": "If <var>message</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-prefix\" id=\"ref-for-dom-languagemodelmessage-prefix④\">prefix</a></code>\"] is true, then:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>message</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-role\" id=\"ref-for-dom-languagemodelmessage-role④\">role</a></code>\"] is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagerole-assistant\" id=\"ref-for-dom-languagemodelmessagerole-assistant\">assistant</a></code>\", then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">SyntaxError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>message</var> is not the last item in <var>messages</var>, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror①\">SyntaxError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "If <var>message</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-role\" id=\"ref-for-dom-languagemodelmessage-role⑤\">role</a></code>\"] is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagerole-system\" id=\"ref-for-dom-languagemodelmessagerole-system\">system</a></code>\", then:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>hasAppendedInput</var> is true, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "If <var>message</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-content\" id=\"ref-for-dom-languagemodelmessage-content⑤\">content</a></code>\"] is an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⓪\">list</a>, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>emptyContent</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelmessagecontent\" id=\"ref-for-dictdef-languagemodelmessagecontent①\">LanguageModelMessageContent</a></code> initialized with <span style=\"white-space: pre-wrap\">«[\n  \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-type\" id=\"ref-for-dom-languagemodelmessagecontent-type③\">type</a></code>\" → \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagetype-text\" id=\"ref-for-dom-languagemodelmessagetype-text⑥\">text</a></code>\",\n  \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-value\" id=\"ref-for-dom-languagemodelmessagecontent-value③\">value</a></code>\" → \"\"\n]»</span>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑥\">append</a> <var>emptyContent</var> to <var>message</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-content\" id=\"ref-for-dom-languagemodelmessage-content⑥\">content</a></code>\"].</p>"
+                }
+              ]
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑥\">For each</a> <var>content</var> of <var>message</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-content\" id=\"ref-for-dom-languagemodelmessage-content⑦\">content</a></code>\"]:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>message</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-role\" id=\"ref-for-dom-languagemodelmessage-role⑥\">role</a></code>\"] is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagerole-assistant\" id=\"ref-for-dom-languagemodelmessagerole-assistant①\">assistant</a></code>\" and <var>content</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-type\" id=\"ref-for-dom-languagemodelmessagecontent-type④\">type</a></code>\"] is not \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagetype-text\" id=\"ref-for-dom-languagemodelmessagetype-text⑦\">text</a></code>\", then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①\">NotSupportedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code>.</p>"
+                },
+                {
+                  "html": "<p>If <var>content</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-type\" id=\"ref-for-dom-languagemodelmessagecontent-type⑤\">type</a></code>\"] is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagetype-text\" id=\"ref-for-dom-languagemodelmessagetype-text⑧\">text</a></code>\" and <var>content</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-value\" id=\"ref-for-dom-languagemodelmessagecontent-value④\">value</a></code>\"] is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④\">string</a>, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>.</p>"
+                },
+                {
+                  "html": "If <var>content</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-type\" id=\"ref-for-dom-languagemodelmessagecontent-type⑥\">type</a></code>\"] is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagetype-image\" id=\"ref-for-dom-languagemodelmessagetype-image\">image</a></code>\", then:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>expectedTypes</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contain</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagetype-image\" id=\"ref-for-dom-languagemodelmessagetype-image①\">image</a></code>\", then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror②\">NotSupportedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>content</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-value\" id=\"ref-for-dom-languagemodelmessagecontent-value⑤\">value</a></code>\"] is not an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#imagebitmapsource\" id=\"ref-for-imagebitmapsource①\">ImageBitmapSource</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource①\">BufferSource</a></code>, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code>.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "If <var>content</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-type\" id=\"ref-for-dom-languagemodelmessagecontent-type⑦\">type</a></code>\"] is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagetype-audio\" id=\"ref-for-dom-languagemodelmessagetype-audio\">audio</a></code>\", then:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "<p>If <var>expectedTypes</var> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain④\">contain</a> \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagetype-audio\" id=\"ref-for-dom-languagemodelmessagetype-audio①\">audio</a></code>\", then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③\">NotSupportedError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>If <var>content</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-value\" id=\"ref-for-dom-languagemodelmessagecontent-value⑥\">value</a></code>\"] is not an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioBuffer\" id=\"ref-for-AudioBuffer①\">AudioBuffer</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource②\">BufferSource</a></code>, or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob\">Blob</a></code>, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code>.</p>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "<p>Let <var>contentWithContiguousTextCollapsed</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②①\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelmessagecontent\" id=\"ref-for-dictdef-languagemodelmessagecontent②\">LanguageModelMessageContent</a></code>s.</p>"
+            },
+            {
+              "html": "<p>Let <var>lastTextContent</var> be null.</p>"
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑦\">For each</a> <var>content</var> of <var>message</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-content\" id=\"ref-for-dom-languagemodelmessage-content⑧\">content</a></code>\"]:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>content</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-type\" id=\"ref-for-dom-languagemodelmessagecontent-type⑧\">type</a></code>\"] is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagetype-text\" id=\"ref-for-dom-languagemodelmessagetype-text⑨\">text</a></code>\":",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>lastTextContent</var> is null:",
+                      "rationale": "append",
+                      "steps": [
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑦\">Append</a> <var>content</var> to <var>contentWithContiguousTextCollapsed</var>.</p>"
+                        },
+                        {
+                          "html": "<p>Set <var>lastTextContent</var> to <var>content</var>.</p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>Otherwise, set <var>lastTextContent</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-value\" id=\"ref-for-dom-languagemodelmessagecontent-value⑦\">value</a></code>\"] to the concatenation of <var>lastTextContent</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-value\" id=\"ref-for-dom-languagemodelmessagecontent-value⑧\">value</a></code>\"] and <var>content</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessagecontent-value\" id=\"ref-for-dom-languagemodelmessagecontent-value⑨\">value</a></code>\"].</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "Otherwise:",
+                  "rationale": "append",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑧\">Append</a> <var>content</var> to <var>contentWithContiguousTextCollapsed</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>lastTextContent</var> to null.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>Set <var>message</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelmessage-content\" id=\"ref-for-dom-languagemodelmessage-content⑨\">content</a></code>\"] to <var>contentWithContiguousTextCollapsed</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append⑨\">Append</a> <var>message</var> to <var>messages</var>.</p>"
+            },
+            {
+              "html": "<p>Set <var>hasAppendedInput</var> to true.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>If <var>messages</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is empty</a>, then throw a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror②\">SyntaxError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Return <var>messages</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "clone a language model",
+      "href": "https://webmachinelearning.github.io/prompt-api/#clone-a-language-model",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"clone-a-language-model\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">clone a language model</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel\" id=\"ref-for-languagemodel①⑥\">LanguageModel</a></code> <var>model</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelcloneoptions\" id=\"ref-for-dictdef-languagemodelcloneoptions①\">LanguageModelCloneOptions</a></code> <var>options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>global</var> be <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①③\">Assert</a>: <var>global</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window\">Window</a></code> object.</p>"
+        },
+        {
+          "html": "<p>If <var>global</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active\">fully active</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> an \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①③\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>signals</var> be « <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#destroyablemodel-destruction-abort-controller\" id=\"ref-for-destroyablemodel-destruction-abort-controller\">destruction abort controller</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortcontroller-signal\" id=\"ref-for-abortcontroller-signal\">signal</a> ».</p>"
+        },
+        {
+          "html": "<p>If <var>options</var>[\"<code>signal</code>\"] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②④\">exists</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">append</a> it to <var>signals</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>compositeSignal</var> be the result of <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#create-a-dependent-abort-signal\" id=\"ref-for-create-a-dependent-abort-signal\">creating a dependent abort signal</a> given <var>signals</var> using <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal④\">AbortSignal</a></code> and <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant realm</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>compositeSignal</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted\">aborted</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> <var>compositeSignal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason\">abort reason</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>signal</var> be <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcloneoptions-signal\" id=\"ref-for-dom-languagemodelcloneoptions-signal\">signal</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists②⑤\">exists</a>; otherwise null.</p>"
+        },
+        {
+          "html": "<p>If <var>signal</var> is not null and is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①\">aborted</a>, then return a promise rejected with <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①\">abort reason</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> created in <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>abortedDuringOperation</var> be false.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add\">Add the following abort steps</a> to <var>compositeSignal</var>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "<p>Set <var>abortedDuringOperation</var> to true.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">Reject</a> <var>promise</var> with <var>compositeSignal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason②\">abort reason</a>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑨\">In parallel</a>:",
+          "rationale": "queue",
+          "steps": [
+            {
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#ai-task-source\" id=\"ref-for-ai-task-source\">AI task source</a> to perform the following steps:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <var>abortedDuringOperation</var> is true, then return.</p>"
+                },
+                {
+                  "html": "<p>Let <var>clonedModel</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel\" id=\"ref-for-languagemodel①⑦\">LanguageModel</a></code> object with:</p>\n          <ul>\n           <li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-initial-messages\" id=\"ref-for-languagemodel-initial-messages③\">initial messages</a> set to <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-initial-messages\" id=\"ref-for-languagemodel-initial-messages④\">initial messages</a>.</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-top-k\" id=\"ref-for-languagemodel-top-k④\">top K</a> set to <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-top-k\" id=\"ref-for-languagemodel-top-k⑤\">top K</a>.</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-temperature\" id=\"ref-for-languagemodel-temperature④\">temperature</a> set to <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-temperature\" id=\"ref-for-languagemodel-temperature⑤\">temperature</a>.</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-expected-inputs\" id=\"ref-for-languagemodel-expected-inputs⑤\">expected inputs</a> set to <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-expected-inputs\" id=\"ref-for-languagemodel-expected-inputs⑥\">expected inputs</a>.</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-expected-outputs\" id=\"ref-for-languagemodel-expected-outputs③\">expected outputs</a> set to <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-expected-outputs\" id=\"ref-for-languagemodel-expected-outputs④\">expected outputs</a>.</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-tools\" id=\"ref-for-languagemodel-tools④\">tools</a> set to <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-tools\" id=\"ref-for-languagemodel-tools⑤\">tools</a>.</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-context-window-size\" id=\"ref-for-languagemodel-context-window-size⑤\">context window size</a> set to <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-context-window-size\" id=\"ref-for-languagemodel-context-window-size⑥\">context window size</a>.</p>\n           </li><li data-md=\"\">\n            <p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-current-context-usage\" id=\"ref-for-languagemodel-current-context-usage⑧\">current context usage</a> set to <var>model</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/prompt-api/#languagemodel-current-context-usage\" id=\"ref-for-languagemodel-current-context-usage⑨\">current context usage</a>.</p>\n          </li></ul>"
+                },
+                {
+                  "html": "<p>In an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①①\">implementation-defined</a> manner, copy any other state from <var>model</var> to <var>clonedModel</var>.</p>"
+                },
+                {
+                  "html": "If the copy operation fails:",
+                  "rationale": "reject",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">Reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror①\">OperationError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①④\">DOMException</a></code>.</p>"
+                    },
+                    {
+                      "html": "<p>Return.</p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">Resolve</a> <var>promise</var> with <var>clonedModel</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>promise</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

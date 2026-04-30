@@ -1,7 +1,7 @@
 {
   "spec": {
-    "title": "Verifiable Credential Data Integrity 1.1",
-    "url": "https://w3c.github.io/vc-data-integrity/"
+    "title": "Verifiable Credential Data Integrity 1.0",
+    "url": "https://www.w3.org/TR/vc-data-integrity/"
   },
   "links": {
     "rawlinks": {
@@ -73,7 +73,6 @@
       "https://www.w3.org/TR/WebCryptoAPI/": {},
       "https://www.w3.org/TR/cid-1.0/": {
         "anchors": [
-          "terminology",
           "multibase-0",
           "multibase",
           "multihash",
@@ -105,7 +104,6 @@
       "https://www.w3.org/TR/turtle/": {},
       "https://www.w3.org/TR/vc-data-model-2.0/": {
         "anchors": [
-          "terminology",
           "type-specific-credential-processing",
           "representing-time",
           "base-context",
@@ -141,11 +139,16 @@
       "https://www.w3.org/groups/wg/vc/ipr": {},
       "https://www.w3.org/policies/patent-policy/": {
         "anchors": [
+          "sec-Requirements",
           "def-essential",
           "sec-Disclosure"
         ]
       },
-      "https://www.w3.org/policies/process/20250818/": {}
+      "https://www.w3.org/policies/process/20231103/": {
+        "anchors": [
+          "recs-and-notes"
+        ]
+      }
     },
     "autolinks": {
       "https://infra.spec.whatwg.org/": {
@@ -173,17 +176,10 @@
           "concept-domain"
         ]
       },
-      "https://www.w3.org/TR/cid-1.0/": {
-        "anchors": [
-          "dfn-verification-method",
-          "dfn-controlled-identifier-document"
-        ]
-      },
       "https://www.w3.org/TR/vc-data-model-2.0/": {
         "anchors": [
           "dfn-verifiable-credential",
           "dfn-verifiable-presentation",
-          "dfn-verifier",
           "dfn-holders"
         ]
       }

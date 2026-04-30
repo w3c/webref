@@ -1,0 +1,15 @@
+{
+  "name": "LanguageModelTool",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Prompt API",
+      "url": "https://webmachinelearning.github.io/prompt-api/"
+    },
+    "fragment": "// A description of a tool call that a language model can invoke.\ndictionary LanguageModelTool {\n  required DOMString name;\n  required DOMString description;\n  // JSON schema for the input parameters.\n  required object inputSchema;\n  // The function to be invoked by user agent on behalf of language model.\n  required LanguageModelToolFunction execute;\n};",
+    "href": "https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodeltool"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

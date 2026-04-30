@@ -1,9 +1,0 @@
-// Source: Private Aggregation API (https://patcg-individual-drafts.github.io/private-aggregation-api/)
-[Exposed=(InterestGroupScriptRunnerGlobalScope,SharedStorageWorklet),
- SecureContext]
-interface PrivateAggregation {
-  undefined contributeToHistogram(PAHistogramContribution contribution);
-  undefined contributeToHistogramOnEvent(DOMString event,
-                                         record<DOMString, any> contribution);
-  undefined enableDebugMode(optional PADebugModeOptions options = {});
-};

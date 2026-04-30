@@ -1,9 +1,0 @@
-// Source: Shared Storage API (https://wicg.github.io/shared-storage/)
-[Exposed=(Window)]
-interface SharedStorageWorklet : Worklet {
-  Promise<SharedStorageResponse> selectURL(DOMString name,
-                               sequence<SharedStorageUrlWithMetadata> urls,
-                               optional SharedStorageRunOperationMethodOptions options = {});
-  Promise<any> run(DOMString name,
-                   optional SharedStorageRunOperationMethodOptions options = {});
-};

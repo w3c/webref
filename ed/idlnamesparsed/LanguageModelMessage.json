@@ -1,0 +1,15 @@
+{
+  "name": "LanguageModelMessage",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Prompt API",
+      "url": "https://webmachinelearning.github.io/prompt-api/"
+    },
+    "fragment": "dictionary LanguageModelMessage {\n  required LanguageModelMessageRole role;\n\n  // The DOMString branch is shorthand for `[{ type: \"text\", value: providedValue }]`\n  required (DOMString or sequence<LanguageModelMessageContent>) content;\n\n  boolean prefix = false;\n};",
+    "href": "https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelmessage"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

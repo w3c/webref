@@ -1,0 +1,10 @@
+// Source: Prompt API (https://webmachinelearning.github.io/prompt-api/)
+// A description of a tool call that a language model can invoke.
+dictionary LanguageModelTool {
+  required DOMString name;
+  required DOMString description;
+  // JSON schema for the input parameters.
+  required object inputSchema;
+  // The function to be invoked by user agent on behalf of language model.
+  required LanguageModelToolFunction execute;
+};
