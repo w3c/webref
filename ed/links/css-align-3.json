@@ -21,9 +21,6 @@
           "ignore"
         ]
       },
-      "http://www.w3.org/TR/css-flexbox/": {},
-      "http://www.w3.org/TR/css-grid/": {},
-      "http://www.w3.org/TR/css3-multicol/": {},
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/align-content": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/align-items": {},
@@ -37,11 +34,9 @@
       "https://developer.mozilla.org/en-US/docs/Web/CSS/place-items": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/place-self": {},
       "https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap": {},
+      "https://drafts.csswg.org/css-align/": {},
       "https://drafts.csswg.org/css-anchor-position-1/": {},
-      "https://drafts.csswg.org/css-backgrounds/": {},
       "https://drafts.csswg.org/css-box-4/": {},
-      "https://drafts.csswg.org/css-break-4/": {},
-      "https://drafts.csswg.org/css-break/": {},
       "https://drafts.csswg.org/css-cascade-5/": {},
       "https://drafts.csswg.org/css-display-4/": {},
       "https://drafts.csswg.org/css-display/": {},
@@ -53,10 +48,14 @@
       },
       "https://drafts.csswg.org/css-flexbox/": {},
       "https://drafts.csswg.org/css-fonts-4/": {},
+      "https://drafts.csswg.org/css-gaps-1/": {
+        "anchors": [
+          "gaps"
+        ]
+      },
       "https://drafts.csswg.org/css-grid-1/": {
         "anchors": [
-          "grid-item-sizing",
-          "gutters"
+          "grid-item-sizing"
         ]
       },
       "https://drafts.csswg.org/css-grid-2/": {},
@@ -100,6 +99,7 @@
       "https://github.com/w3c/csswg-drafts/issues/12102": {},
       "https://github.com/w3c/csswg-drafts/issues/12106": {},
       "https://github.com/w3c/csswg-drafts/issues/12920": {},
+      "https://github.com/w3c/csswg-drafts/issues/13089": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
       "https://tc39.es/ecma426/": {},
@@ -156,11 +156,6 @@
           "generated-content"
         ]
       },
-      "https://www.w3.org/TR/css-sizing-3/": {
-        "anchors": [
-          "percentage-sizing"
-        ]
-      },
       "https://www.w3.org/TR/css-values-3/": {
         "anchors": [
           "value-defs"
@@ -201,14 +196,14 @@
       "https://www.w3.org/policies/process/20250818/": {}
     },
     "autolinks": {
+      "https://drafts.csswg.org/css-align-3/": {
+        "anchors": [
+          "gutter"
+        ]
+      },
       "https://drafts.csswg.org/css-anchor-position-1/": {
         "anchors": [
           "propdef-position-area"
-        ]
-      },
-      "https://drafts.csswg.org/css-backgrounds-3/": {
-        "anchors": [
-          "typedef-line-width"
         ]
       },
       "https://drafts.csswg.org/css-box-4/": {
@@ -218,14 +213,7 @@
           "box-box-edge",
           "margin",
           "margin-box",
-          "propdef-margin",
-          "propdef-padding",
           "content-edge"
-        ]
-      },
-      "https://drafts.csswg.org/css-break-4/": {
-        "anchors": [
-          "fragmentation-break"
         ]
       },
       "https://drafts.csswg.org/css-cascade-5/": {
@@ -234,7 +222,6 @@
           "shorthand-property",
           "computed-value",
           "inherited-value",
-          "legacy-name-alias",
           "initial-value"
         ]
       },
@@ -319,15 +306,13 @@
       },
       "https://drafts.csswg.org/css-multicol-1/": {
         "anchors": [
-          "multi-column-container",
-          "column-box"
+          "multi-column-container"
         ]
       },
       "https://drafts.csswg.org/css-multicol-2/": {
         "anchors": [
           "valdef-column-width-auto",
           "propdef-column-width",
-          "propdef-column-height",
           "multi-column-spanner"
         ]
       },
@@ -366,8 +351,7 @@
           "automatic-size",
           "fit-content-size",
           "available",
-          "stretch-fit-size",
-          "cyclic-percentage-size"
+          "stretch-fit-size"
         ]
       },
       "https://drafts.csswg.org/css-sizing-4/": {
@@ -386,8 +370,7 @@
           "css-wide-keywords",
           "comb-one",
           "mult-opt",
-          "comb-all",
-          "typedef-length-percentage"
+          "comb-all"
         ]
       },
       "https://drafts.csswg.org/css-writing-modes-3/": {
@@ -434,7 +417,6 @@
           "valdef-vertical-align-middle",
           "propdef-min-height",
           "propdef-min-width",
-          "propdef-border-spacing",
           "line-box"
         ]
       },

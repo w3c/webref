@@ -1,0 +1,221 @@
+{
+  "spec": {
+    "title": "Verifiable Credential Data Integrity 1.1",
+    "url": "https://w3c.github.io/vc-data-integrity/"
+  },
+  "algorithms": [
+    {
+      "html": "The processing model used by a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-conforming-processor\" class=\"internalDFN\" id=\"ref-for-dfn-conforming-processor-4\">conforming processor</a> and its\napplication-specific software is described in this section. When software\nis to ensure information is tamper-evident, it performs the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The software arranges the information into a document, such as a JSON or\nJSON-LD document."
+        },
+        {
+          "html": "If the document is a JSON-LD document, the software selects one or more\nJSON-LD Contexts and expresses them using the <code>@context</code> property."
+        },
+        {
+          "html": "The software selects one or more cryptography suites that meet the needs of\nthe use case, such as one that provides full, selective, or unlinkable\ndisclosure, using acceptable cryptographic key material."
+        },
+        {
+          "html": "The software uses the applicable algorithm(s) provided in Section <a href=\"https://w3c.github.io/vc-data-integrity/#add-proof\" data-matched-text=\"[[[#add-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2 </bdi>Add Proof</a>\nor Section <a href=\"https://w3c.github.io/vc-data-integrity/#add-proof-set-chain\" data-matched-text=\"[[[#add-proof-set-chain]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.3 </bdi>Add Proof Set/Chain</a> to add one or more proofs."
+        }
+      ]
+    },
+    {
+      "html": "When software needs to use information that was transmitted to it using\na mechanism described by this specification, it performs the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "The software transforms the incoming data into a document that can be understood\nby the applicable algorithm provided in Section <a href=\"https://w3c.github.io/vc-data-integrity/#verify-proof\" data-matched-text=\"[[[#verify-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4 </bdi>Verify Proof</a> or Section\n<a href=\"https://w3c.github.io/vc-data-integrity/#verify-proof-sets-and-chains\" data-matched-text=\"[[[#verify-proof-sets-and-chains]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5 </bdi>Verify Proof Sets and Chains</a>."
+        },
+        {
+          "html": "The software uses JSON Schema or an equivalent mechanism to validate that the\nincoming document follows an expected schema used by the application."
+        },
+        {
+          "html": "The software uses the applicable algorithm(s) provided in Section <a href=\"https://w3c.github.io/vc-data-integrity/#verify-proof\" data-matched-text=\"[[[#verify-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4 </bdi>Verify Proof</a>\nor Section <a href=\"https://w3c.github.io/vc-data-integrity/#verify-proof-sets-and-chains\" data-matched-text=\"[[[#verify-proof-sets-and-chains]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.5 </bdi>Verify Proof Sets and Chains</a> to verify the integrity of the\nincoming document."
+        },
+        {
+          "html": "If the document is a JSON-LD document, the software uses the algorithm provided\nin Section <a href=\"https://w3c.github.io/vc-data-integrity/#context-validation\" data-matched-text=\"[[[#context-validation]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.6 </bdi>Context Validation</a>, or one providing equivalent protections,\nto validate all JSON-LD Context values used in the document."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how a digital proof can be added to an <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-input-document\" class=\"internalDFN\" id=\"ref-for-dfn-input-document-2\">input document</a>, and can then be used to verify the output document's authenticity\nand integrity. Required inputs are an <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-input-document\" class=\"internalDFN\" id=\"ref-for-dfn-input-document-3\">input document</a> (<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>\n<var>inputDocument</var>), a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-data-integrity-cryptographic-suite-instance\" class=\"internalDFN\" id=\"ref-for-dfn-data-integrity-cryptographic-suite-instance-3\">cryptosuite instance</a> (<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"struct\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a> <var>cryptosuite</var>), and a\nset of options (<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>options</var>). Output is a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-secured-data-document\" class=\"internalDFN\" id=\"ref-for-dfn-secured-data-document-3\">secured data document</a>\n(<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>) or an error. Whenever this algorithm encodes strings, it <em class=\"rfc2119\">MUST</em> use\nUTF-8 encoding.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>proof</var> be the result of calling the <a data-link-type=\"dfn|abstract-op\" data-link-for=\"cryptosuite instance\" data-xref-for=\"cryptosuite instance\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-createproof\" class=\"internalDFN\" id=\"ref-for-dfn-createproof-1\">createProof</a>\nalgorithm specified in <var>cryptosuite</var>.<var>createProof</var> with <var>inputDocument</var>\nand <var>options</var> passed as a parameters. If the algorithm produces an error,\nthe error <em class=\"rfc2119\">MUST</em> be propagated and <em class=\"rfc2119\">SHOULD</em> convey the error type."
+        },
+        {
+          "html": "If one or more of the <var>proof</var>.<var>type</var>, <var>proof</var>.<var>verificationMethod</var>, and\n<var>proof</var>.<var>proofPurpose</var> values is not set, an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em>\nconvey an error type of\n<a href=\"https://w3c.github.io/vc-data-integrity/#PROOF_GENERATION_ERROR\">PROOF_GENERATION_ERROR</a>."
+        },
+        {
+          "html": "If <var>options</var> has a non-null <var>domain</var> <a data-link-type=\"dfn\" data-link-for=\"struct\" data-xref-for=\"struct\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"struct-item\" href=\"https://infra.spec.whatwg.org/#struct-item\">item</a>, it <em class=\"rfc2119\">MUST</em> be equal to\n<var>proof</var>.<var>domain</var> or an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey\nan error type of <a href=\"https://w3c.github.io/vc-data-integrity/#PROOF_GENERATION_ERROR\">PROOF_GENERATION_ERROR</a>."
+        },
+        {
+          "html": "If <var>options</var> has a non-null <var>challenge</var> <a data-link-type=\"dfn\" data-link-for=\"struct\" data-xref-for=\"struct\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"struct-item\" href=\"https://infra.spec.whatwg.org/#struct-item\">item</a>, it <em class=\"rfc2119\">MUST</em> be equal to\n<var>proof</var>.<var>challenge</var> or an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em>\nconvey an error type of\n<a href=\"https://w3c.github.io/vc-data-integrity/#PROOF_GENERATION_ERROR\">PROOF_GENERATION_ERROR</a>."
+        },
+        {
+          "html": "Let <var>securedDataDocument</var> be a copy of <var>inputDocument</var>."
+        },
+        {
+          "html": "Set <var>securedDataDocument</var>.<var>proof</var> to the value of <var>proof</var>."
+        },
+        {
+          "html": "Return <var>securedDataDocument</var> as the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-secured-data-document\" class=\"internalDFN\" id=\"ref-for-dfn-secured-data-document-4\">secured data document</a>."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to incrementally add a proof to a proof\nset or proof chain starting with a secured document containing either a proof or\nproof set/chain. Required inputs are a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-secured-data-document\" class=\"internalDFN\" id=\"ref-for-dfn-secured-data-document-5\">secured data document</a> (<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>\n<var>securedDocument</var>), a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-cryptosuite\" class=\"internalDFN\" id=\"ref-for-dfn-cryptosuite-11\">cryptographic suite</a> (<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-data-integrity-cryptographic-suite-instance\" class=\"internalDFN\" id=\"ref-for-dfn-data-integrity-cryptographic-suite-instance-4\">cryptosuite instance</a> <var>suite</var>), and a set of options (<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>options</var>). Output is a new\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-secured-data-document\" class=\"internalDFN\" id=\"ref-for-dfn-secured-data-document-6\">secured data document</a> (<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>). Whenever this algorithm encodes strings, it\n<em class=\"rfc2119\">MUST</em> use UTF-8 encoding.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>proof</var> be set to <var>securedDocument</var>.<var>proof</var>. Let\n<var>allProofs</var> be an empty list. If <var>proof</var> is a list, copy all\nthe elements of <var>proof</var> to <var>allProofs</var>. If <var>proof</var>\nis an object add a copy of that object to <var>allProofs</var>."
+        },
+        {
+          "html": "Let the <var>inputDocument</var> be a copy of the <var>securedDocument</var>\nwith the <var>proof</var> attribute removed. Let <var>output</var> be a copy of\nthe <var>inputDocument</var>."
+        },
+        {
+          "html": "Let <var>matchingProofs</var> be an empty list."
+        },
+        {
+          "html": "If <var>options</var> has a <code>previousProof</code> <a data-link-type=\"dfn\" data-link-for=\"struct\" data-xref-for=\"struct\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"struct-item\" href=\"https://infra.spec.whatwg.org/#struct-item\">item</a> that is a string, add the\nelement from <var>allProofs</var> with an <code>id</code> attribute matching <code>previousProof</code> to\n<var>matchingProofs</var>. If a proof with <code>id</code> equal to <code>previousProof</code> does not exist in\n<var>allProofs</var>, an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://w3c.github.io/vc-data-integrity/#PROOF_GENERATION_ERROR\">PROOF_GENERATION_ERROR</a>."
+        },
+        {
+          "html": "If <var>options</var> has a <code>previousProof</code> <a data-link-type=\"dfn\" data-link-for=\"struct\" data-xref-for=\"struct\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"struct-item\" href=\"https://infra.spec.whatwg.org/#struct-item\">item</a> that is an array, add each\nelement from <var>allProofs</var> with an <code>id</code> attribute that matches an element of that\narray. If any element of <code>previousProof</code> <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" href=\"https://infra.spec.whatwg.org/#list\">list</a> has an <code>id</code> attribute that does\nnot match the <code>id</code> attribute of any element of <var>allProofs</var>, an error <em class=\"rfc2119\">MUST</em> be\nraised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://w3c.github.io/vc-data-integrity/#PROOF_GENERATION_ERROR\">PROOF_GENERATION_ERROR</a>."
+        },
+        {
+          "html": "Set <var>inputDocument</var>.<var>proof</var> to <var>matchingProofs</var>."
+        },
+        {
+          "html": "Run steps 1 through 6 of the algorithm in section <a href=\"https://w3c.github.io/vc-data-integrity/#add-proof\" data-matched-text=\"[[[#add-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.2 </bdi>Add Proof</a>, passing\n<var>inputDocument</var>, <var>suite</var>, and <var>options</var>. If no exceptions are raised, append\nthe generated <var>proof</var> value to the <var>allProofs</var>; otherwise, raise the exception."
+        },
+        {
+          "html": "Set <var>output</var>.<var>proof</var> to the value of <var>allProofs</var>."
+        },
+        {
+          "html": "Return <var>output</var> as the new <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-secured-data-document\" class=\"internalDFN\" id=\"ref-for-dfn-secured-data-document-7\">secured data document</a>."
+        }
+      ]
+    },
+    {
+      "html": "When a step says \"an error <em class=\"rfc2119\">MUST</em> be raised\", it means that a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-1\">verification result</a> <em class=\"rfc2119\">MUST</em> be returned with a <a data-link-type=\"dfn|abstract-op\" data-link-for=\"verification result\" data-xref-for=\"verification result\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verified-0\" class=\"internalDFN\" id=\"ref-for-dfn-verified-0-3\">verified</a> value of\n<code>false</code> and a non-empty <a data-link-type=\"dfn|abstract-op\" data-link-for=\"verification result\" data-xref-for=\"verification result\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-errors\" class=\"internalDFN\" id=\"ref-for-dfn-errors-1\">errors</a> list.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var data-type=\"map\">securedDocument</var> be the result of running <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"parse-json-bytes-to-an-infra-value\" href=\"https://infra.spec.whatwg.org/#parse-json-bytes-to-an-infra-value\">parse JSON bytes to an Infra value</a> on <var>documentBytes</var>."
+        },
+        {
+          "html": "If either <var data-type=\"map\">securedDocument</var> is not a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> or <var data-type=\"map\">securedDocument</var>.<var>proof</var>\nis not a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>, an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://www.w3.org/TR/VC-DATA-MODEL-2.0#PARSING_ERROR\">\nPARSING_ERROR</a>."
+        },
+        {
+          "html": "Let <var data-type=\"map\">proof</var> be <var data-type=\"map\">securedDocument</var>.<var data-type=\"map\">proof</var>."
+        },
+        {
+          "html": "If one or more of <var data-type=\"map\">proof</var>.<var>type</var>,\n<var data-type=\"map\">proof</var>.<var>verificationMethod</var>, and\n<var data-type=\"map\">proof</var>.<var>proofPurpose</var> does not <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://w3c.github.io/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "If <var>expectedProofPurpose</var> was given, and it does not match\n<var data-type=\"map\">proof</var>.<var>proofPurpose</var>,\nan error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://w3c.github.io/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+        },
+        {
+          "html": "If <var>domain</var> was given, and it does not contain the same <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">strings</a> as\n<var data-type=\"map\">proof</var>.<var>domain</var> (treating a single <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a> as a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-set\" href=\"https://infra.spec.whatwg.org/#ordered-set\">set</a> containing just\nthat <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>), an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of <a href=\"https://w3c.github.io/vc-data-integrity/#INVALID_DOMAIN_ERROR\">INVALID_DOMAIN_ERROR</a>."
+        },
+        {
+          "html": "If <var>challenge</var> was given, and it does not match\n<var data-type=\"map\">proof</var>.<var>challenge</var>, an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em>\nconvey an error type of\n<a href=\"https://w3c.github.io/vc-data-integrity/#INVALID_CHALLENGE_ERROR\">INVALID_CHALLENGE_ERROR</a>."
+        },
+        {
+          "html": "Let <var>cryptosuiteVerificationResult</var> be the result of running the\n<var>cryptosuite</var>.<a data-link-type=\"dfn|abstract-op\" data-link-for=\"cryptosuite instance\" data-xref-for=\"cryptosuite instance\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verifyproof\" class=\"internalDFN\" id=\"ref-for-dfn-verifyproof-1\">verifyProof</a> algorithm with\n<var data-type=\"map\">securedDocument</var> provided as input."
+        },
+        {
+          "html": "Return a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-2\">verification result</a> with <a data-link-type=\"dfn\" data-link-for=\"struct\" data-xref-for=\"struct\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"struct-item\" href=\"https://infra.spec.whatwg.org/#struct-item\">items</a>:\n            <dl data-link-for=\"verification result\">\n              <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verified-0\" class=\"internalDFN\" id=\"ref-for-dfn-verified-0-4\">verified</a></dt>\n              <dd><var>cryptosuiteVerificationResult</var>.<var>verified</var></dd>\n              <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verifieddocument-0\" class=\"internalDFN\" id=\"ref-for-dfn-verifieddocument-0-1\">verifiedDocument</a></dt>\n              <dd><var>cryptosuiteVerificationResult</var>.<var>verifiedDocument</var></dd>\n              <dt><a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-mediatype\" class=\"internalDFN\" id=\"ref-for-dfn-mediatype-1\">mediaType</a></dt>\n              <dd><var>mediaType</var></dd>\n            </dl>"
+        }
+      ]
+    },
+    {
+      "html": "Required input is a <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-secured-data-document\" class=\"internalDFN\" id=\"ref-for-dfn-secured-data-document-11\">secured data document</a> (<var>securedDocument</var>). A list of\n<a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-3\">verification results</a> corresponding to each proof in <var>allProofs</var> is\ngenerated, and a single combined <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-4\">verification result</a> is returned as output.\nImplementations <em class=\"rfc2119\">MAY</em> return any of the other <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-5\">verification result</a>s and/or any\nother metadata alongside the combined <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/vc-data-integrity/#dfn-verification-result\" class=\"internalDFN\" id=\"ref-for-dfn-verification-result-6\">verification result</a>.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>allProofs</var> to <var>securedDocument</var>.<var>proof</var>."
+        },
+        {
+          "html": "Set <var>verificationResults</var> to an empty list."
+        },
+        {
+          "html": "For each <var>proof</var> in <var>allProofs</var>, do the following steps:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Let <var>matchingProofs</var> be an empty list."
+            },
+            {
+              "html": "If <var>proof</var> contains a <code>previousProof</code> attribute and the value of that\nattribute is a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, add the element from <var>allProofs</var> with an <code>id</code>\nattribute value matching the value of <code>previousProof</code> to <code>matchingProofs</code>.\nIf a proof with <code>id</code> value equal to the value of <code>previousProof</code> does not\nexist in <var>allProofs</var>, an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error\ntype of\n<a href=\"https://w3c.github.io/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>. If the\n<code>previousProof</code> attribute is a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" href=\"https://infra.spec.whatwg.org/#list\">list</a>, add each element from <var>allProofs</var>\nwith an <code>id</code> attribute value that matches the value of an element of that\n<a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" href=\"https://infra.spec.whatwg.org/#list\">list</a>. If any element of <code>previousProof</code> <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" href=\"https://infra.spec.whatwg.org/#list\">list</a> has an <code>id</code> attribute\nvalue that does not match the <code>id</code> attribute value of any element of\n<var>allProofs</var>, an error <em class=\"rfc2119\">MUST</em> be raised and <em class=\"rfc2119\">SHOULD</em> convey an error type of\n<a href=\"https://w3c.github.io/vc-data-integrity/#PROOF_VERIFICATION_ERROR\">PROOF_VERIFICATION_ERROR</a>."
+            },
+            {
+              "html": "Let <var>inputDocument</var> be a copy of <var>securedDocument</var> with the proof value\nremoved and then set <var>inputDocument</var>.<var>proof</var> to <var>matchingProofs</var>."
+            },
+            {
+              "html": "Run steps 4 through 8 of the algorithm in section <a href=\"https://w3c.github.io/vc-data-integrity/#verify-proof\" data-matched-text=\"[[[#verify-proof]]]\" class=\"sec-ref\"><bdi class=\"secno\">4.4 </bdi>Verify Proof</a> on\n<var>inputDocument</var>; if no exceptions are raised, append <var>cryptosuiteVerificationResult</var>\nto <var>verificationResults</var>."
+            }
+          ]
+        },
+        {
+          "html": "Set <var>successfulVerificationResults</var> to an empty list."
+        },
+        {
+          "html": "Let <var>combinedVerificationResult</var> be an empty struct. Set <var>combinedVerificationResult</var>.<var>status</var>\nto <code>true</code>, <var>combinedVerificationResult</var>.<var>document</var> to <code>null</code>, and\n<var>combinedVerificationResult</var>.<var>mediaType</var> to <code>null</code>."
+        },
+        {
+          "html": "For each <var>cryptosuiteVerificationResult</var> in <var>verificationResults</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>cryptosuiteVerificationResult</var>.<var>verified</var> is <code>false</code>, set <var>combinedVerificationResult</var>.<var>verified</var>\nto <code>false</code>."
+            },
+            {
+              "html": "Otherwise, set <var>combinedVerificationResult</var>.<var>document</var> to\n<var>cryptosuiteVerificationResult</var>.<var>verifiedDocument</var>, set\n<var>combinedVerificationResult</var>.<var>mediaType</var> to <var>cryptosuiteVerificationResult</var>.<var>mediaType</var>, and\nappend <var>cryptosuiteVerificationResult</var> to <var>successfulVerificationResults</var>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>combinedVerificationResult</var>.<var>status</var> is <code>false</code>, set\n<var>combinedVerificationResult</var>.<var>document</var> to <code>null</code> and\n<var>combinedVerificationResult</var>.<var>mediaType</var> to <code>null</code>."
+        },
+        {
+          "html": "Return <var>combinedVerificationResult</var>, <var>successfulVerificationResults</var>."
+        }
+      ]
+    },
+    {
+      "html": "The context validation algorithm is as follows:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>result</var>.<var>validated</var> to <code>false</code>, <var>result</var>.<var>warnings</var> to an empty list,\n<var>result</var>.<var>errors</var> to an empty list, <var>compactionContext</var> to an empty list;\nand clone <var>inputDocument</var> to <var>result</var>.<var>validatedDocument</var>."
+        },
+        {
+          "html": "Let <var>contextValue</var> be the value of the <code>@context</code> property of <var>result</var>.<var>validatedDocument</var>,\nwhich might be undefined."
+        },
+        {
+          "html": "If <var>contextValue</var> does not deeply equal <var>knownContext</var>, any subtree in\n<var>result</var>.<var>validatedDocument</var> contains an <code>@context</code> property, or any URI in\n<var>contextValue</var> dereferences to a JSON-LD Context file that does not match a\nknown good value or cryptographic hash, then perform the applicable action:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "If <var>recompact</var> is <code>true</code>, set <var>result</var>.<var>validatedDocument</var> to the result\nof running the <a data-cite=\"JSON-LD11-API#compaction-algorithm\" href=\"https://www.w3.org/TR/json-ld11-api/#compaction-algorithm\">\nJSON-LD Compaction Algorithm</a> with the <var>inputDocument</var> and\n<var>knownContext</var> as inputs. If the compaction fails, add at least one error\nto <var>result</var>.<var>errors</var>."
+            },
+            {
+              "html": "If <var>recompact</var> is not <code>true</code>, add at least one error to <var>result</var>.<var>errors</var>."
+            }
+          ]
+        },
+        {
+          "html": "If <var>result</var>.<var>errors</var> is empty, set <var>result</var>.<var>validated</var> to <code>true</code>; otherwise, set\n<var>result</var>.<var>validated</var> to <code>false</code>, and remove the <var>document</var> property from <var>result</var>."
+        },
+        {
+          "html": "Return the value of <var>result</var>."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1421 @@
+{
+  "spec": {
+    "title": "Verifiable Credentials Data Model v2.1",
+    "url": "https://w3c.github.io/vc-data-model/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/vc-data-model/#title",
+      "level": 1,
+      "title": "Verifiable Credentials Data Model v2.1"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/vc-data-model/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/vc-data-model/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "what-is-a-verifiable-credential",
+      "href": "https://w3c.github.io/vc-data-model/#what-is-a-verifiable-credential",
+      "level": 3,
+      "title": "What is a Verifiable Credential?",
+      "alternateIds": [
+        "x1-1-what-is-a-verifiable-credential"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "ecosystem-overview",
+      "href": "https://w3c.github.io/vc-data-model/#ecosystem-overview",
+      "level": 3,
+      "title": "Ecosystem Overview",
+      "alternateIds": [
+        "x1-2-ecosystem-overview"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/vc-data-model/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-3-conformance"
+      ],
+      "number": "1.3"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/vc-data-model/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "alternateIds": [
+        "x2-terminology"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "core-data-model",
+      "href": "https://w3c.github.io/vc-data-model/#core-data-model",
+      "level": 2,
+      "title": "Core Data Model",
+      "alternateIds": [
+        "x3-core-data-model"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "claims",
+      "href": "https://w3c.github.io/vc-data-model/#claims",
+      "level": 3,
+      "title": "Claims",
+      "alternateIds": [
+        "x3-1-claims"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "credentials",
+      "href": "https://w3c.github.io/vc-data-model/#credentials",
+      "level": 3,
+      "title": "Credentials",
+      "alternateIds": [
+        "x3-2-credentials"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "presentations",
+      "href": "https://w3c.github.io/vc-data-model/#presentations",
+      "level": 3,
+      "title": "Presentations",
+      "alternateIds": [
+        "x3-3-presentations"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "basic-concepts",
+      "href": "https://w3c.github.io/vc-data-model/#basic-concepts",
+      "level": 2,
+      "title": "Basic Concepts",
+      "alternateIds": [
+        "x4-basic-concepts"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "getting-started",
+      "href": "https://w3c.github.io/vc-data-model/#getting-started",
+      "level": 3,
+      "title": "Getting Started",
+      "alternateIds": [
+        "x4-1-getting-started"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "verifiable-credentials",
+      "href": "https://w3c.github.io/vc-data-model/#verifiable-credentials",
+      "level": 3,
+      "title": "Verifiable Credentials",
+      "alternateIds": [
+        "x4-2-verifiable-credentials"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "contexts",
+      "href": "https://w3c.github.io/vc-data-model/#contexts",
+      "level": 3,
+      "title": "Contexts",
+      "alternateIds": [
+        "x4-3-contexts"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "identifiers",
+      "href": "https://w3c.github.io/vc-data-model/#identifiers",
+      "level": 3,
+      "title": "Identifiers",
+      "alternateIds": [
+        "x4-4-identifiers"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "sd-jwt-claim-LlIL499fJ4hZsw6r5PjI1o38GfvyRB_N_FSySDr0X6A",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-LlIL499fJ4hZsw6r5PjI1o38GfvyRB_N_FSySDr0X6A",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-uelmZo2_S0E_jxSF2jZ6lPqlZiAVIPoOpirfCwXz--c",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-uelmZo2_S0E_jxSF2jZ6lPqlZiAVIPoOpirfCwXz--c",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-tVTjKr6hlmj83FZp2fNTQUrP-aK9HCNWtJ2rLbeFhHc",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-tVTjKr6hlmj83FZp2fNTQUrP-aK9HCNWtJ2rLbeFhHc",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-yY6_mQYOpmMAd8WecJFc7eaJi1e_n9kNaH-g1b48FLE",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-yY6_mQYOpmMAd8WecJFc7eaJi1e_n9kNaH-g1b48FLE",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "types",
+      "href": "https://w3c.github.io/vc-data-model/#types",
+      "level": 3,
+      "title": "Types",
+      "alternateIds": [
+        "x4-5-types"
+      ],
+      "number": "4.5"
+    },
+    {
+      "id": "sd-jwt-claim-LHFvJfiTZKjN5oy2lmGJmjDZHBK9p3fNAuYnjCgKHuM",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-LHFvJfiTZKjN5oy2lmGJmjDZHBK9p3fNAuYnjCgKHuM",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-0fWUaacWyHAUgNYTDc_K3TW-essu3goAK9vrCs5sdzY",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-0fWUaacWyHAUgNYTDc_K3TW-essu3goAK9vrCs5sdzY",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-ZsJOyNmm8yJkiivuOdfujJZggSKQcRPEexrP3i_b2B8",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-ZsJOyNmm8yJkiivuOdfujJZggSKQcRPEexrP3i_b2B8",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-8feZkJayEb8CmgJS6dJebMZLdwDIU3M7U3ZClRsQID8",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-8feZkJayEb8CmgJS6dJebMZLdwDIU3M7U3ZClRsQID8",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "names-and-descriptions",
+      "href": "https://w3c.github.io/vc-data-model/#names-and-descriptions",
+      "level": 3,
+      "title": "Names and Descriptions",
+      "alternateIds": [
+        "x4-6-names-and-descriptions"
+      ],
+      "number": "4.6"
+    },
+    {
+      "id": "sd-jwt-claim-rqlTtyeGkTB59GEgaTN_Ajutnvy4n9a0NlZXI77saaQ",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-rqlTtyeGkTB59GEgaTN_Ajutnvy4n9a0NlZXI77saaQ",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-Th8PVoeIeZf8kCruBRv1pHA5wGMcWJRxzBy6UKVeZWk",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-Th8PVoeIeZf8kCruBRv1pHA5wGMcWJRxzBy6UKVeZWk",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-Fd1V1P1n15lt2v8uY4qXE64-CzBwgw8TxV3gbaqEtjk",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-Fd1V1P1n15lt2v8uY4qXE64-CzBwgw8TxV3gbaqEtjk",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-D7Uhy4ogdJJutqswdJAVPuCXR_peYAGA0AT46-dHM8g",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-D7Uhy4ogdJJutqswdJAVPuCXR_peYAGA0AT46-dHM8g",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim--uKxNzO3-TmYeqkAZ5SQ2pyjb6DdhzmnajdaDamygK8",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim--uKxNzO3-TmYeqkAZ5SQ2pyjb6DdhzmnajdaDamygK8",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "issuer",
+      "href": "https://w3c.github.io/vc-data-model/#issuer",
+      "level": 3,
+      "title": "Issuer",
+      "alternateIds": [
+        "x4-7-issuer"
+      ],
+      "number": "4.7"
+    },
+    {
+      "id": "sd-jwt-claim-uSlN721Yugy4ZtAcJrpLtbm7n20PZshsLKisAdo9jz0",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-uSlN721Yugy4ZtAcJrpLtbm7n20PZshsLKisAdo9jz0",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-_9bRLTIgYLSxyriw0sS95LFLEDMaYNDGfIMa01jOCCI",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-_9bRLTIgYLSxyriw0sS95LFLEDMaYNDGfIMa01jOCCI",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-kpeW3itmrtIpxWcwyueosYbZ7nrai0T7Vj17UVlJl1g",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-kpeW3itmrtIpxWcwyueosYbZ7nrai0T7Vj17UVlJl1g",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-CnfBMnkAdMb4QwPDuUfRj-AUjgaR3r-0uh6eivi0daA",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-CnfBMnkAdMb4QwPDuUfRj-AUjgaR3r-0uh6eivi0daA",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-Nf3dCgwNbM4kZBfp0A-497IaDdd00at49Cg17aI8QC0",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-Nf3dCgwNbM4kZBfp0A-497IaDdd00at49Cg17aI8QC0",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-QIt2Yi4ShoIlWzdlcffgrp6bWeZaKVSHmeaLstfPEjU",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-QIt2Yi4ShoIlWzdlcffgrp6bWeZaKVSHmeaLstfPEjU",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-3PLEs4CNR2SGTB2j_CgOrgEvS_oOxgSFrPnr8yp5XFk",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-3PLEs4CNR2SGTB2j_CgOrgEvS_oOxgSFrPnr8yp5XFk",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-y57-CEexLrwyOhYTG1c4YgwAHZXYkFcOTjrtmp1Pcbc",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-y57-CEexLrwyOhYTG1c4YgwAHZXYkFcOTjrtmp1Pcbc",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-fQBYi7dBBQYQInY5XbfcukFoJHkD1ZQRTKWQlUU5WQ4",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-fQBYi7dBBQYQInY5XbfcukFoJHkD1ZQRTKWQlUU5WQ4",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "credential-subject",
+      "href": "https://w3c.github.io/vc-data-model/#credential-subject",
+      "level": 3,
+      "title": "Credential Subject",
+      "alternateIds": [
+        "x4-8-credential-subject"
+      ],
+      "number": "4.8"
+    },
+    {
+      "id": "sd-jwt-claim-5WtMOlgMfccRC4yJkU_-7F3q90kdtcdEOGbJToiG1Jk",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-5WtMOlgMfccRC4yJkU_-7F3q90kdtcdEOGbJToiG1Jk",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-tCpStWO-5eFvYR3ENq_WxRy-kCpI_PBA6iRLn53qTmY",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-tCpStWO-5eFvYR3ENq_WxRy-kCpI_PBA6iRLn53qTmY",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-d8j-rD2P9Oevsghn1U5m0vyP482v0EKnl3_gM67Sy9k",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-d8j-rD2P9Oevsghn1U5m0vyP482v0EKnl3_gM67Sy9k",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-tavpQzE9EjORxFy7Awl24IVGPjviqhkZvdIdrGs7tYQ",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-tavpQzE9EjORxFy7Awl24IVGPjviqhkZvdIdrGs7tYQ",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "validity-period",
+      "href": "https://w3c.github.io/vc-data-model/#validity-period",
+      "level": 3,
+      "title": "Validity Period",
+      "alternateIds": [
+        "x4-9-validity-period"
+      ],
+      "number": "4.9"
+    },
+    {
+      "id": "sd-jwt-claim-st7ihC4O1JxS7W9K9OjT7wRJPT3rUd_Sm7Eikln82fA",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-st7ihC4O1JxS7W9K9OjT7wRJPT3rUd_Sm7Eikln82fA",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-W5MUkXDQZw7t4nvqfCQRXH74MHwpB-5NR9CtPRNbuig",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-W5MUkXDQZw7t4nvqfCQRXH74MHwpB-5NR9CtPRNbuig",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-nSEDNfiN9PtR5rc3tS-7P_7CORsc9UXMFk3v_sfQzvs",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-nSEDNfiN9PtR5rc3tS-7P_7CORsc9UXMFk3v_sfQzvs",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-Jt1_s4jhxtOdykaFtWfCeqbiJQu5Vt7eHXzowDwcDtU",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-Jt1_s4jhxtOdykaFtWfCeqbiJQu5Vt7eHXzowDwcDtU",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "status",
+      "href": "https://w3c.github.io/vc-data-model/#status",
+      "level": 3,
+      "title": "Status",
+      "alternateIds": [
+        "x4-10-status"
+      ],
+      "number": "4.10"
+    },
+    {
+      "id": "data-schemas",
+      "href": "https://w3c.github.io/vc-data-model/#data-schemas",
+      "level": 3,
+      "title": "Data Schemas",
+      "alternateIds": [
+        "x4-11-data-schemas"
+      ],
+      "number": "4.11"
+    },
+    {
+      "id": "securing-mechanisms",
+      "href": "https://w3c.github.io/vc-data-model/#securing-mechanisms",
+      "level": 3,
+      "title": "Securing Mechanisms",
+      "alternateIds": [
+        "x4-12-securing-mechanisms"
+      ],
+      "number": "4.12"
+    },
+    {
+      "id": "verifiable-presentations",
+      "href": "https://w3c.github.io/vc-data-model/#verifiable-presentations",
+      "level": 3,
+      "title": "Verifiable Presentations",
+      "alternateIds": [
+        "x4-13-verifiable-presentations"
+      ],
+      "number": "4.13"
+    },
+    {
+      "id": "enveloped-verifiable-credentials",
+      "href": "https://w3c.github.io/vc-data-model/#enveloped-verifiable-credentials",
+      "level": 4,
+      "title": "Enveloped Verifiable Credentials"
+    },
+    {
+      "id": "enveloped-verifiable-presentations",
+      "href": "https://w3c.github.io/vc-data-model/#enveloped-verifiable-presentations",
+      "level": 4,
+      "title": "Enveloped Verifiable Presentations"
+    },
+    {
+      "id": "presentations-using-derived-credentials",
+      "href": "https://w3c.github.io/vc-data-model/#presentations-using-derived-credentials",
+      "level": 4,
+      "title": "Presentations Using Derived Credentials"
+    },
+    {
+      "id": "presentations-including-holder-claims",
+      "href": "https://w3c.github.io/vc-data-model/#presentations-including-holder-claims",
+      "level": 4,
+      "title": "Presentations Including Holder Claims"
+    },
+    {
+      "id": "advanced-concepts",
+      "href": "https://w3c.github.io/vc-data-model/#advanced-concepts",
+      "level": 2,
+      "title": "Advanced Concepts",
+      "alternateIds": [
+        "x5-advanced-concepts"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "trust-model",
+      "href": "https://w3c.github.io/vc-data-model/#trust-model",
+      "level": 3,
+      "title": "Trust Model",
+      "alternateIds": [
+        "x5-1-trust-model"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "extensibility",
+      "href": "https://w3c.github.io/vc-data-model/#extensibility",
+      "level": 3,
+      "title": "Extensibility",
+      "alternateIds": [
+        "x5-2-extensibility"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "sd-jwt-claim-jgB3LYF5Kpoa1fx-3NDgzkUFpF2EXMNkj11ouhOvUdQ",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-jgB3LYF5Kpoa1fx-3NDgzkUFpF2EXMNkj11ouhOvUdQ",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-2-AxABRyo0oTH11RKh4pzcZbbXRtgOluBNMEGoH_fDo",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-2-AxABRyo0oTH11RKh4pzcZbbXRtgOluBNMEGoH_fDo",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-Z8YS3F0FfuiBeTkuBoKIPyacp2fENsn6GQp7wTyEaqA",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-Z8YS3F0FfuiBeTkuBoKIPyacp2fENsn6GQp7wTyEaqA",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "semantic-interoperability",
+      "href": "https://w3c.github.io/vc-data-model/#semantic-interoperability",
+      "level": 4,
+      "title": "Semantic Interoperability"
+    },
+    {
+      "id": "integrity-of-related-resources",
+      "href": "https://w3c.github.io/vc-data-model/#integrity-of-related-resources",
+      "level": 3,
+      "title": "Integrity of Related Resources",
+      "alternateIds": [
+        "x5-3-integrity-of-related-resources"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "refreshing",
+      "href": "https://w3c.github.io/vc-data-model/#refreshing",
+      "level": 3,
+      "title": "Refreshing",
+      "alternateIds": [
+        "x5-4-refreshing"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "terms-of-use",
+      "href": "https://w3c.github.io/vc-data-model/#terms-of-use",
+      "level": 3,
+      "title": "Terms of Use",
+      "alternateIds": [
+        "x5-5-terms-of-use"
+      ],
+      "number": "5.5"
+    },
+    {
+      "id": "evidence",
+      "href": "https://w3c.github.io/vc-data-model/#evidence",
+      "level": 3,
+      "title": "Evidence",
+      "alternateIds": [
+        "x5-6-evidence"
+      ],
+      "number": "5.6"
+    },
+    {
+      "id": "zero-knowledge-proofs",
+      "href": "https://w3c.github.io/vc-data-model/#zero-knowledge-proofs",
+      "level": 3,
+      "title": "Zero-Knowledge Proofs",
+      "alternateIds": [
+        "x5-7-zero-knowledge-proofs"
+      ],
+      "number": "5.7"
+    },
+    {
+      "id": "representing-time",
+      "href": "https://w3c.github.io/vc-data-model/#representing-time",
+      "level": 3,
+      "title": "Representing Time",
+      "alternateIds": [
+        "x5-8-representing-time"
+      ],
+      "number": "5.8"
+    },
+    {
+      "id": "authorization",
+      "href": "https://w3c.github.io/vc-data-model/#authorization",
+      "level": 3,
+      "title": "Authorization",
+      "alternateIds": [
+        "x5-9-authorization"
+      ],
+      "number": "5.9"
+    },
+    {
+      "id": "reserved-extension-points",
+      "href": "https://w3c.github.io/vc-data-model/#reserved-extension-points",
+      "level": 3,
+      "title": "Reserved Extension Points",
+      "alternateIds": [
+        "x5-10-reserved-extension-points"
+      ],
+      "number": "5.10"
+    },
+    {
+      "id": "ecosystem-compatibility",
+      "href": "https://w3c.github.io/vc-data-model/#ecosystem-compatibility",
+      "level": 3,
+      "title": "Ecosystem Compatibility",
+      "alternateIds": [
+        "x5-11-ecosystem-compatibility"
+      ],
+      "number": "5.11"
+    },
+    {
+      "id": "verifiable-credential-graphs",
+      "href": "https://w3c.github.io/vc-data-model/#verifiable-credential-graphs",
+      "level": 3,
+      "title": "Verifiable Credential Graphs",
+      "alternateIds": [
+        "x5-12-verifiable-credential-graphs"
+      ],
+      "number": "5.12"
+    },
+    {
+      "id": "securing-mechanism-specifications",
+      "href": "https://w3c.github.io/vc-data-model/#securing-mechanism-specifications",
+      "level": 3,
+      "title": "Securing Mechanism Specifications",
+      "alternateIds": [
+        "x5-13-securing-mechanism-specifications"
+      ],
+      "number": "5.13"
+    },
+    {
+      "id": "syntaxes",
+      "href": "https://w3c.github.io/vc-data-model/#syntaxes",
+      "level": 2,
+      "title": "Syntaxes",
+      "alternateIds": [
+        "x6-syntaxes"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "json-ld",
+      "href": "https://w3c.github.io/vc-data-model/#json-ld",
+      "level": 3,
+      "title": "JSON-LD",
+      "alternateIds": [
+        "x6-1-json-ld"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "notable-json-ld-features",
+      "href": "https://w3c.github.io/vc-data-model/#notable-json-ld-features",
+      "level": 4,
+      "title": "Notable JSON-LD Features"
+    },
+    {
+      "id": "restrictions-on-json-ld",
+      "href": "https://w3c.github.io/vc-data-model/#restrictions-on-json-ld",
+      "level": 4,
+      "title": "Restrictions on JSON-LD"
+    },
+    {
+      "id": "lists-and-arrays",
+      "href": "https://w3c.github.io/vc-data-model/#lists-and-arrays",
+      "level": 4,
+      "title": "Lists and Arrays"
+    },
+    {
+      "id": "media-types",
+      "href": "https://w3c.github.io/vc-data-model/#media-types",
+      "level": 3,
+      "title": "Media Types",
+      "alternateIds": [
+        "x6-2-media-types"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "media-type-precision",
+      "href": "https://w3c.github.io/vc-data-model/#media-type-precision",
+      "level": 4,
+      "title": "Media Type Precision"
+    },
+    {
+      "id": "type-specific-credential-processing",
+      "href": "https://w3c.github.io/vc-data-model/#type-specific-credential-processing",
+      "level": 3,
+      "title": "Type-Specific Credential Processing",
+      "alternateIds": [
+        "x6-3-type-specific-credential-processing"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://w3c.github.io/vc-data-model/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "alternateIds": [
+        "x7-algorithms"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "verification",
+      "href": "https://w3c.github.io/vc-data-model/#verification",
+      "level": 3,
+      "title": "Verification",
+      "alternateIds": [
+        "x7-1-verification"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "problem-details",
+      "href": "https://w3c.github.io/vc-data-model/#problem-details",
+      "level": 3,
+      "title": "Problem Details",
+      "alternateIds": [
+        "x7-2-problem-details"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/vc-data-model/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "x8-privacy-considerations"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "spectrum-of-privacy",
+      "href": "https://w3c.github.io/vc-data-model/#spectrum-of-privacy",
+      "level": 3,
+      "title": "Spectrum of Privacy",
+      "alternateIds": [
+        "x8-1-spectrum-of-privacy"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "software-trust-boundaries",
+      "href": "https://w3c.github.io/vc-data-model/#software-trust-boundaries",
+      "level": 3,
+      "title": "Software Trust Boundaries",
+      "alternateIds": [
+        "x8-2-software-trust-boundaries"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "personally-identifiable-information",
+      "href": "https://w3c.github.io/vc-data-model/#personally-identifiable-information",
+      "level": 3,
+      "title": "Personally Identifiable Information",
+      "alternateIds": [
+        "x8-3-personally-identifiable-information"
+      ],
+      "number": "8.3"
+    },
+    {
+      "id": "identifier-based-correlation",
+      "href": "https://w3c.github.io/vc-data-model/#identifier-based-correlation",
+      "level": 3,
+      "title": "Identifier-Based Correlation",
+      "alternateIds": [
+        "x8-4-identifier-based-correlation"
+      ],
+      "number": "8.4"
+    },
+    {
+      "id": "signature-based-correlation",
+      "href": "https://w3c.github.io/vc-data-model/#signature-based-correlation",
+      "level": 3,
+      "title": "Signature-Based Correlation",
+      "alternateIds": [
+        "x8-5-signature-based-correlation"
+      ],
+      "number": "8.5"
+    },
+    {
+      "id": "metadata-based-correlation",
+      "href": "https://w3c.github.io/vc-data-model/#metadata-based-correlation",
+      "level": 3,
+      "title": "Metadata-based Correlation",
+      "alternateIds": [
+        "x8-6-metadata-based-correlation"
+      ],
+      "number": "8.6"
+    },
+    {
+      "id": "device-tracking-and-fingerprinting",
+      "href": "https://w3c.github.io/vc-data-model/#device-tracking-and-fingerprinting",
+      "level": 3,
+      "title": "Device Tracking and Fingerprinting",
+      "alternateIds": [
+        "x8-7-device-tracking-and-fingerprinting"
+      ],
+      "number": "8.7"
+    },
+    {
+      "id": "favor-abstract-claims",
+      "href": "https://w3c.github.io/vc-data-model/#favor-abstract-claims",
+      "level": 3,
+      "title": "Favor Abstract Claims",
+      "alternateIds": [
+        "x8-8-favor-abstract-claims"
+      ],
+      "number": "8.8"
+    },
+    {
+      "id": "the-principle-of-data-minimization",
+      "href": "https://w3c.github.io/vc-data-model/#the-principle-of-data-minimization",
+      "level": 3,
+      "title": "The Principle of Data Minimization",
+      "alternateIds": [
+        "x8-9-the-principle-of-data-minimization"
+      ],
+      "number": "8.9"
+    },
+    {
+      "id": "bearer-credentials",
+      "href": "https://w3c.github.io/vc-data-model/#bearer-credentials",
+      "level": 3,
+      "title": "Bearer Credentials",
+      "alternateIds": [
+        "x8-10-bearer-credentials"
+      ],
+      "number": "8.10"
+    },
+    {
+      "id": "sd-jwt-claim-4R3Iz_p8x_N_z2ecx5z3YuZBUPpOCZUGpvj93inMuWk",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-4R3Iz_p8x_N_z2ecx5z3YuZBUPpOCZUGpvj93inMuWk",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-Wr3GWtJxciNedUKqDJEuSE7DtZ5Fec6aywvwVPAORWs",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-Wr3GWtJxciNedUKqDJEuSE7DtZ5Fec6aywvwVPAORWs",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-uks8J3w3QOW8P6OUeL-1LLfysDPvbuH_nGi_6SXrnKM",
+      "href": "https://w3c.github.io/vc-data-model/#sd-jwt-claim-uks8J3w3QOW8P6OUeL-1LLfysDPvbuH_nGi_6SXrnKM",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "correlation-during-validation",
+      "href": "https://w3c.github.io/vc-data-model/#correlation-during-validation",
+      "level": 3,
+      "title": "Correlation During Validation",
+      "alternateIds": [
+        "x8-11-correlation-during-validation"
+      ],
+      "number": "8.11"
+    },
+    {
+      "id": "storage-providers-and-data-mining",
+      "href": "https://w3c.github.io/vc-data-model/#storage-providers-and-data-mining",
+      "level": 3,
+      "title": "Storage Providers and Data Mining",
+      "alternateIds": [
+        "x8-12-storage-providers-and-data-mining"
+      ],
+      "number": "8.12"
+    },
+    {
+      "id": "aggregation-of-credentials",
+      "href": "https://w3c.github.io/vc-data-model/#aggregation-of-credentials",
+      "level": 3,
+      "title": "Aggregation of Credentials",
+      "alternateIds": [
+        "x8-13-aggregation-of-credentials"
+      ],
+      "number": "8.13"
+    },
+    {
+      "id": "patterns-of-use",
+      "href": "https://w3c.github.io/vc-data-model/#patterns-of-use",
+      "level": 3,
+      "title": "Patterns of Use",
+      "alternateIds": [
+        "x8-14-patterns-of-use"
+      ],
+      "number": "8.14"
+    },
+    {
+      "id": "legal-processes",
+      "href": "https://w3c.github.io/vc-data-model/#legal-processes",
+      "level": 3,
+      "title": "Legal Processes",
+      "alternateIds": [
+        "x8-15-legal-processes"
+      ],
+      "number": "8.15"
+    },
+    {
+      "id": "sharing-information-with-the-wrong-party",
+      "href": "https://w3c.github.io/vc-data-model/#sharing-information-with-the-wrong-party",
+      "level": 3,
+      "title": "Sharing Information with the Wrong Party",
+      "alternateIds": [
+        "x8-16-sharing-information-with-the-wrong-party"
+      ],
+      "number": "8.16"
+    },
+    {
+      "id": "data-theft",
+      "href": "https://w3c.github.io/vc-data-model/#data-theft",
+      "level": 3,
+      "title": "Data Theft",
+      "alternateIds": [
+        "x8-17-data-theft"
+      ],
+      "number": "8.17"
+    },
+    {
+      "id": "frequency-of-claim-issuance",
+      "href": "https://w3c.github.io/vc-data-model/#frequency-of-claim-issuance",
+      "level": 3,
+      "title": "Frequency of Claim Issuance",
+      "alternateIds": [
+        "x8-18-frequency-of-claim-issuance"
+      ],
+      "number": "8.18"
+    },
+    {
+      "id": "prefer-single-use-credentials",
+      "href": "https://w3c.github.io/vc-data-model/#prefer-single-use-credentials",
+      "level": 3,
+      "title": "Prefer Single-Use Credentials",
+      "alternateIds": [
+        "x8-19-prefer-single-use-credentials"
+      ],
+      "number": "8.19"
+    },
+    {
+      "id": "private-browsing",
+      "href": "https://w3c.github.io/vc-data-model/#private-browsing",
+      "level": 3,
+      "title": "Private Browsing",
+      "alternateIds": [
+        "x8-20-private-browsing"
+      ],
+      "number": "8.20"
+    },
+    {
+      "id": "issuer-cooperation-impacts-on-privacy",
+      "href": "https://w3c.github.io/vc-data-model/#issuer-cooperation-impacts-on-privacy",
+      "level": 3,
+      "title": "Issuer Cooperation Impacts on Privacy",
+      "alternateIds": [
+        "x8-21-issuer-cooperation-impacts-on-privacy"
+      ],
+      "number": "8.21"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/vc-data-model/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "x9-security-considerations"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "cryptography-suites-and-libraries",
+      "href": "https://w3c.github.io/vc-data-model/#cryptography-suites-and-libraries",
+      "level": 3,
+      "title": "Cryptography Suites and Libraries",
+      "alternateIds": [
+        "x9-1-cryptography-suites-and-libraries"
+      ],
+      "number": "9.1"
+    },
+    {
+      "id": "key-management",
+      "href": "https://w3c.github.io/vc-data-model/#key-management",
+      "level": 3,
+      "title": "Key Management",
+      "alternateIds": [
+        "x9-2-key-management"
+      ],
+      "number": "9.2"
+    },
+    {
+      "id": "content-integrity-protection",
+      "href": "https://w3c.github.io/vc-data-model/#content-integrity-protection",
+      "level": 3,
+      "title": "Content Integrity Protection",
+      "alternateIds": [
+        "x9-3-content-integrity-protection"
+      ],
+      "number": "9.3"
+    },
+    {
+      "id": "unsigned-claims",
+      "href": "https://w3c.github.io/vc-data-model/#unsigned-claims",
+      "level": 3,
+      "title": "Unsigned Claims",
+      "alternateIds": [
+        "x9-4-unsigned-claims"
+      ],
+      "number": "9.4"
+    },
+    {
+      "id": "man-in-the-middle-mitm-replay-and-cloning-attacks",
+      "href": "https://w3c.github.io/vc-data-model/#man-in-the-middle-mitm-replay-and-cloning-attacks",
+      "level": 3,
+      "title": "Man-in-the-Middle (MITM), Replay, and Cloning Attacks",
+      "alternateIds": [
+        "x9-5-man-in-the-middle-mitm-replay-and-cloning-attacks"
+      ],
+      "number": "9.5"
+    },
+    {
+      "id": "man-in-the-middle-mitm-attack",
+      "href": "https://w3c.github.io/vc-data-model/#man-in-the-middle-mitm-attack",
+      "level": 4,
+      "title": "Man-in-the-Middle (MITM) Attack",
+      "alternateIds": [
+        "x9-5-1-man-in-the-middle-mitm-attack"
+      ],
+      "number": "9.5.1"
+    },
+    {
+      "id": "replay-attack",
+      "href": "https://w3c.github.io/vc-data-model/#replay-attack",
+      "level": 4,
+      "title": "Replay Attack",
+      "alternateIds": [
+        "x9-5-2-replay-attack"
+      ],
+      "number": "9.5.2"
+    },
+    {
+      "id": "spoofing-attack",
+      "href": "https://w3c.github.io/vc-data-model/#spoofing-attack",
+      "level": 4,
+      "title": "Spoofing Attack",
+      "alternateIds": [
+        "x9-5-3-spoofing-attack"
+      ],
+      "number": "9.5.3"
+    },
+    {
+      "id": "highly-dynamic-information",
+      "href": "https://w3c.github.io/vc-data-model/#highly-dynamic-information",
+      "level": 3,
+      "title": "Highly Dynamic Information",
+      "alternateIds": [
+        "x9-6-highly-dynamic-information"
+      ],
+      "number": "9.6"
+    },
+    {
+      "id": "device-theft-and-impersonation",
+      "href": "https://w3c.github.io/vc-data-model/#device-theft-and-impersonation",
+      "level": 3,
+      "title": "Device Theft and Impersonation",
+      "alternateIds": [
+        "x9-7-device-theft-and-impersonation"
+      ],
+      "number": "9.7"
+    },
+    {
+      "id": "acceptable-use",
+      "href": "https://w3c.github.io/vc-data-model/#acceptable-use",
+      "level": 3,
+      "title": "Acceptable Use",
+      "alternateIds": [
+        "x9-8-acceptable-use"
+      ],
+      "number": "9.8"
+    },
+    {
+      "id": "unauthorized-use",
+      "href": "https://w3c.github.io/vc-data-model/#unauthorized-use",
+      "level": 4,
+      "title": "Unauthorized Use",
+      "alternateIds": [
+        "x9-8-1-unauthorized-use"
+      ],
+      "number": "9.8.1"
+    },
+    {
+      "id": "inappropriate-use",
+      "href": "https://w3c.github.io/vc-data-model/#inappropriate-use",
+      "level": 4,
+      "title": "Inappropriate Use",
+      "alternateIds": [
+        "x9-8-2-inappropriate-use"
+      ],
+      "number": "9.8.2"
+    },
+    {
+      "id": "code-injection",
+      "href": "https://w3c.github.io/vc-data-model/#code-injection",
+      "level": 3,
+      "title": "Code Injection",
+      "alternateIds": [
+        "x9-9-code-injection"
+      ],
+      "number": "9.9"
+    },
+    {
+      "id": "accessibility-considerations",
+      "href": "https://w3c.github.io/vc-data-model/#accessibility-considerations",
+      "level": 2,
+      "title": "10. Accessibility Considerations",
+      "alternateIds": [
+        "x10-accessibility-considerations"
+      ]
+    },
+    {
+      "id": "data-first-approaches",
+      "href": "https://w3c.github.io/vc-data-model/#data-first-approaches",
+      "level": 3,
+      "title": "Data First Approaches",
+      "alternateIds": [
+        "x10-1-data-first-approaches"
+      ],
+      "number": "10.1"
+    },
+    {
+      "id": "internationalization-considerations",
+      "href": "https://w3c.github.io/vc-data-model/#internationalization-considerations",
+      "level": 2,
+      "title": "11. Internationalization Considerations",
+      "alternateIds": [
+        "x11-internationalization-considerations"
+      ]
+    },
+    {
+      "id": "language-and-base-direction",
+      "href": "https://w3c.github.io/vc-data-model/#language-and-base-direction",
+      "level": 3,
+      "title": "Language and Base Direction",
+      "alternateIds": [
+        "x11-1-language-and-base-direction"
+      ],
+      "number": "11.1"
+    },
+    {
+      "id": "providing-default-language-and-direction",
+      "href": "https://w3c.github.io/vc-data-model/#providing-default-language-and-direction",
+      "level": 3,
+      "title": "Providing Default Language and Direction",
+      "alternateIds": [
+        "x11-2-providing-default-language-and-direction"
+      ],
+      "number": "11.2"
+    },
+    {
+      "id": "validation",
+      "href": "https://w3c.github.io/vc-data-model/#validation",
+      "level": 2,
+      "title": "Validation",
+      "alternateIds": [
+        "a-validation"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "credential-type",
+      "href": "https://w3c.github.io/vc-data-model/#credential-type",
+      "level": 3,
+      "title": "Credential Type",
+      "alternateIds": [
+        "a-1-credential-type"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "credential-subject-0",
+      "href": "https://w3c.github.io/vc-data-model/#credential-subject-0",
+      "level": 3,
+      "title": "Credential Subject",
+      "alternateIds": [
+        "a-2-credential-subject"
+      ],
+      "number": "A.2"
+    },
+    {
+      "id": "issuer-0",
+      "href": "https://w3c.github.io/vc-data-model/#issuer-0",
+      "level": 3,
+      "title": "Issuer",
+      "alternateIds": [
+        "a-3-issuer"
+      ],
+      "number": "A.3"
+    },
+    {
+      "id": "holder",
+      "href": "https://w3c.github.io/vc-data-model/#holder",
+      "level": 3,
+      "title": "Holder",
+      "alternateIds": [
+        "a-4-holder"
+      ],
+      "number": "A.4"
+    },
+    {
+      "id": "issuance-date",
+      "href": "https://w3c.github.io/vc-data-model/#issuance-date",
+      "level": 3,
+      "title": "Issuance Date",
+      "alternateIds": [
+        "a-5-issuance-date"
+      ],
+      "number": "A.5"
+    },
+    {
+      "id": "proofs-signatures",
+      "href": "https://w3c.github.io/vc-data-model/#proofs-signatures",
+      "level": 3,
+      "title": "Proofs (Signatures)",
+      "alternateIds": [
+        "a-6-proofs-signatures"
+      ],
+      "number": "A.6"
+    },
+    {
+      "id": "validity-periods",
+      "href": "https://w3c.github.io/vc-data-model/#validity-periods",
+      "level": 3,
+      "title": "Validity Periods",
+      "alternateIds": [
+        "a-7-validity-periods"
+      ],
+      "number": "A.7"
+    },
+    {
+      "id": "status-0",
+      "href": "https://w3c.github.io/vc-data-model/#status-0",
+      "level": 3,
+      "title": "Status",
+      "alternateIds": [
+        "a-8-status"
+      ],
+      "number": "A.8"
+    },
+    {
+      "id": "schema",
+      "href": "https://w3c.github.io/vc-data-model/#schema",
+      "level": 3,
+      "title": "Schema",
+      "alternateIds": [
+        "a-9-schema"
+      ],
+      "number": "A.9"
+    },
+    {
+      "id": "fitness-for-purpose",
+      "href": "https://w3c.github.io/vc-data-model/#fitness-for-purpose",
+      "level": 3,
+      "title": "Fitness for Purpose",
+      "alternateIds": [
+        "a-10-fitness-for-purpose"
+      ],
+      "number": "A.10"
+    },
+    {
+      "id": "artificial-intelligence-and-machine-learning",
+      "href": "https://w3c.github.io/vc-data-model/#artificial-intelligence-and-machine-learning",
+      "level": 3,
+      "title": "\"Artificial Intelligence\" and \"Machine Learning\"",
+      "alternateIds": [
+        "a-11-artificial-intelligence-and-machine-learning"
+      ],
+      "number": "A.11"
+    },
+    {
+      "id": "contexts-vocabularies-types-and-credential-schemas",
+      "href": "https://w3c.github.io/vc-data-model/#contexts-vocabularies-types-and-credential-schemas",
+      "level": 2,
+      "title": "Contexts, Vocabularies, Types, and Credential Schemas",
+      "alternateIds": [
+        "b-contexts-vocabularies-types-and-credential-schemas"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "base-context",
+      "href": "https://w3c.github.io/vc-data-model/#base-context",
+      "level": 3,
+      "title": "Base Context",
+      "alternateIds": [
+        "b-1-base-context"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "vocabularies",
+      "href": "https://w3c.github.io/vc-data-model/#vocabularies",
+      "level": 3,
+      "title": "Vocabularies",
+      "alternateIds": [
+        "b-2-vocabularies"
+      ],
+      "number": "B.2"
+    },
+    {
+      "id": "datatypes",
+      "href": "https://w3c.github.io/vc-data-model/#datatypes",
+      "level": 3,
+      "title": "Datatypes",
+      "alternateIds": [
+        "b-3-datatypes"
+      ],
+      "number": "B.3"
+    },
+    {
+      "id": "the-sristring-datatype",
+      "href": "https://w3c.github.io/vc-data-model/#the-sristring-datatype",
+      "level": 4,
+      "title": "The sriString Datatype",
+      "alternateIds": [
+        "b-3-1-the-sristring-datatype"
+      ],
+      "number": "B.3.1"
+    },
+    {
+      "id": "differences-between-contexts-types-and-credentialschemas",
+      "href": "https://w3c.github.io/vc-data-model/#differences-between-contexts-types-and-credentialschemas",
+      "level": 3,
+      "title": "Differences between Contexts, Types, and CredentialSchemas",
+      "alternateIds": [
+        "b-4-differences-between-contexts-types-and-credentialschemas"
+      ],
+      "number": "B.4"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://w3c.github.io/vc-data-model/#iana-considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "alternateIds": [
+        "c-iana-considerations"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "vc-ld-media-type",
+      "href": "https://w3c.github.io/vc-data-model/#vc-ld-media-type",
+      "level": 3,
+      "title": "application/vc",
+      "alternateIds": [
+        "c-1-application-vc"
+      ],
+      "number": "C.1"
+    },
+    {
+      "id": "vp-ld-media-type",
+      "href": "https://w3c.github.io/vc-data-model/#vp-ld-media-type",
+      "level": 3,
+      "title": "application/vp",
+      "alternateIds": [
+        "c-2-application-vp"
+      ],
+      "number": "C.2"
+    },
+    {
+      "id": "additional-diagrams-for-verifiable-presentations",
+      "href": "https://w3c.github.io/vc-data-model/#additional-diagrams-for-verifiable-presentations",
+      "level": 2,
+      "title": "Additional Diagrams for Verifiable Presentations",
+      "alternateIds": [
+        "d-additional-diagrams-for-verifiable-presentations"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "revision-history",
+      "href": "https://w3c.github.io/vc-data-model/#revision-history",
+      "level": 2,
+      "title": "Revision History",
+      "alternateIds": [
+        "e-revision-history"
+      ],
+      "number": "E"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/vc-data-model/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "f-acknowledgements"
+      ],
+      "number": "F"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/vc-data-model/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "g-references"
+      ],
+      "number": "G"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/vc-data-model/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "g-1-normative-references"
+      ],
+      "number": "G.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/vc-data-model/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "g-2-informative-references"
+      ],
+      "number": "G.2"
+    }
+  ]
+}

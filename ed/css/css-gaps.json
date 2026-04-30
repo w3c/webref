@@ -1,9 +1,83 @@
 {
   "spec": {
-    "title": "CSS Gap Decorations Module Level 1",
+    "title": "CSS Gaps Module Level 1",
     "url": "https://drafts.csswg.org/css-gaps-1/"
   },
   "properties": [
+    {
+      "name": "row-gap",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-gap",
+      "value": "normal | <length-percentage [0,∞]> | <line-width>",
+      "initial": "normal",
+      "appliesTo": "multi-column containers, flex containers, grid containers",
+      "inherited": "no",
+      "percentages": "see § 2.3 Percentages In gap Properties",
+      "computedValue": "specified keyword, else a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "The value normal represents a used value of 1em on multi-column containers, and a used value of 0px in all other contexts.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-row-gap-normal",
+          "type": "value",
+          "value": "normal"
+        }
+      ],
+      "styleDeclaration": [
+        "row-gap",
+        "rowGap"
+      ]
+    },
+    {
+      "name": "column-gap",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-gap",
+      "value": "normal | <length-percentage [0,∞]> | <line-width>",
+      "initial": "normal",
+      "appliesTo": "multi-column containers, flex containers, grid containers",
+      "inherited": "no",
+      "percentages": "see § 2.3 Percentages In gap Properties",
+      "computedValue": "specified keyword, else a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "The value normal represents a used value of 1em on multi-column containers, and a used value of 0px in all other contexts.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-row-gap-normal",
+          "type": "value",
+          "value": "normal"
+        }
+      ],
+      "styleDeclaration": [
+        "column-gap",
+        "columnGap"
+      ]
+    },
+    {
+      "name": "gap",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-gap",
+      "value": "<'row-gap'> <'column-gap'>?",
+      "initial": "see individual properties",
+      "appliesTo": "multi-column containers, flex containers, grid containers",
+      "inherited": "no",
+      "percentages": "refer to corresponding dimension of the content area",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "values": [
+        {
+          "name": "normal",
+          "prose": "The value normal represents a used value of 1em on multi-column containers, and a used value of 0px in all other contexts.",
+          "href": "https://drafts.csswg.org/css-gaps-1/#valdef-row-gap-normal",
+          "type": "value",
+          "value": "normal"
+        }
+      ],
+      "styleDeclaration": [
+        "gap"
+      ]
+    },
     {
       "name": "column-rule-break",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-break",
@@ -99,8 +173,8 @@
       ]
     },
     {
-      "name": "column-rule-edge-inset-start",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-edge-inset-start",
+      "name": "column-rule-inset-cap-start",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-cap-start",
       "value": "<length-percentage>",
       "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
@@ -110,13 +184,13 @@
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "styleDeclaration": [
-        "column-rule-edge-inset-start",
-        "columnRuleEdgeInsetStart"
+        "column-rule-inset-cap-start",
+        "columnRuleInsetCapStart"
       ]
     },
     {
-      "name": "column-rule-edge-inset-end",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-edge-inset-end",
+      "name": "column-rule-inset-cap-end",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-cap-end",
       "value": "<length-percentage>",
       "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
@@ -126,13 +200,13 @@
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "styleDeclaration": [
-        "column-rule-edge-inset-end",
-        "columnRuleEdgeInsetEnd"
+        "column-rule-inset-cap-end",
+        "columnRuleInsetCapEnd"
       ]
     },
     {
-      "name": "column-rule-interior-inset-start",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-interior-inset-start",
+      "name": "column-rule-inset-junction-start",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-junction-start",
       "value": "<length-percentage>",
       "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
@@ -142,13 +216,13 @@
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "styleDeclaration": [
-        "column-rule-interior-inset-start",
-        "columnRuleInteriorInsetStart"
+        "column-rule-inset-junction-start",
+        "columnRuleInsetJunctionStart"
       ]
     },
     {
-      "name": "column-rule-interior-inset-end",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-interior-inset-end",
+      "name": "column-rule-inset-junction-end",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-junction-end",
       "value": "<length-percentage>",
       "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
@@ -158,13 +232,13 @@
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "styleDeclaration": [
-        "column-rule-interior-inset-end",
-        "columnRuleInteriorInsetEnd"
+        "column-rule-inset-junction-end",
+        "columnRuleInsetJunctionEnd"
       ]
     },
     {
-      "name": "row-rule-edge-inset-start",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-edge-inset-start",
+      "name": "row-rule-inset-cap-start",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-cap-start",
       "value": "<length-percentage>",
       "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
@@ -174,13 +248,13 @@
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "styleDeclaration": [
-        "row-rule-edge-inset-start",
-        "rowRuleEdgeInsetStart"
+        "row-rule-inset-cap-start",
+        "rowRuleInsetCapStart"
       ]
     },
     {
-      "name": "row-rule-edge-inset-end",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-edge-inset-end",
+      "name": "row-rule-inset-cap-end",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-cap-end",
       "value": "<length-percentage>",
       "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
@@ -190,13 +264,13 @@
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "styleDeclaration": [
-        "row-rule-edge-inset-end",
-        "rowRuleEdgeInsetEnd"
+        "row-rule-inset-cap-end",
+        "rowRuleInsetCapEnd"
       ]
     },
     {
-      "name": "row-rule-interior-inset-start",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-interior-inset-start",
+      "name": "row-rule-inset-junction-start",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-junction-start",
       "value": "<length-percentage>",
       "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
@@ -206,13 +280,13 @@
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "styleDeclaration": [
-        "row-rule-interior-inset-start",
-        "rowRuleInteriorInsetStart"
+        "row-rule-inset-junction-start",
+        "rowRuleInsetJunctionStart"
       ]
     },
     {
-      "name": "row-rule-interior-inset-end",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-interior-inset-end",
+      "name": "row-rule-inset-junction-end",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-junction-end",
       "value": "<length-percentage>",
       "initial": "0",
       "appliesTo": "grid containers, flex containers, multicol containers, and grid lanes containers",
@@ -222,8 +296,8 @@
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
       "styleDeclaration": [
-        "row-rule-interior-inset-end",
-        "rowRuleInteriorInsetEnd"
+        "row-rule-inset-junction-end",
+        "rowRuleInsetJunctionEnd"
       ]
     },
     {
@@ -231,7 +305,7 @@
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-start",
       "value": "<length-percentage>",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-inset-cap-start, column-rule-inset-junction-start, column-rule-inset-cap-end, column-rule-inset-junction-end, row-rule-inset-cap-start, row-rule-inset-junction-start, row-rule-inset-cap-end, and row-rule-inset-junction-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -247,7 +321,7 @@
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-end",
       "value": "<length-percentage>",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-inset-cap-start, column-rule-inset-junction-start, column-rule-inset-cap-end, column-rule-inset-junction-end, row-rule-inset-cap-start, row-rule-inset-junction-start, row-rule-inset-cap-end, and row-rule-inset-junction-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -263,7 +337,7 @@
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-start",
       "value": "<length-percentage>",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-inset-cap-start, column-rule-inset-junction-start, column-rule-inset-cap-end, column-rule-inset-junction-end, row-rule-inset-cap-start, row-rule-inset-junction-start, row-rule-inset-cap-end, and row-rule-inset-junction-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -279,7 +353,7 @@
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-end",
       "value": "<length-percentage>",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-interior-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-interior-inset-start, row-rule-edge-inset-end, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-inset-cap-start, column-rule-inset-junction-start, column-rule-inset-cap-end, column-rule-inset-junction-end, row-rule-inset-cap-start, row-rule-inset-junction-start, row-rule-inset-cap-end, and row-rule-inset-junction-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -323,107 +397,107 @@
       ]
     },
     {
-      "name": "column-rule-edge-inset",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-edge-inset",
+      "name": "column-rule-inset-cap",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-cap",
       "value": "<length-percentage> [ <length-percentage> ]?",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-inset-cap-start, column-rule-inset-cap-end, column-rule-inset-junction-start, column-rule-inset-junction-end, row-rule-inset-cap-start, row-rule-inset-cap-end, row-rule-inset-junction-start, and row-rule-inset-junction-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
       "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
-        "column-rule-edge-inset",
-        "columnRuleEdgeInset"
+        "column-rule-inset-cap",
+        "columnRuleInsetCap"
       ]
     },
     {
-      "name": "column-rule-interior-inset",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-interior-inset",
+      "name": "column-rule-inset-junction",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset-junction",
       "value": "<length-percentage> [ <length-percentage> ]?",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-inset-cap-start, column-rule-inset-cap-end, column-rule-inset-junction-start, column-rule-inset-junction-end, row-rule-inset-cap-start, row-rule-inset-cap-end, row-rule-inset-junction-start, and row-rule-inset-junction-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
       "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
-        "column-rule-interior-inset",
-        "columnRuleInteriorInset"
+        "column-rule-inset-junction",
+        "columnRuleInsetJunction"
       ]
     },
     {
-      "name": "row-rule-edge-inset",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-edge-inset",
+      "name": "row-rule-inset-cap",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-cap",
       "value": "<length-percentage> [ <length-percentage> ]?",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-inset-cap-start, column-rule-inset-cap-end, column-rule-inset-junction-start, column-rule-inset-junction-end, row-rule-inset-cap-start, row-rule-inset-cap-end, row-rule-inset-junction-start, and row-rule-inset-junction-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
       "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
-        "row-rule-edge-inset",
-        "rowRuleEdgeInset"
+        "row-rule-inset-cap",
+        "rowRuleInsetCap"
       ]
     },
     {
-      "name": "row-rule-interior-inset",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-interior-inset",
+      "name": "row-rule-inset-junction",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset-junction",
       "value": "<length-percentage> [ <length-percentage> ]?",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset-start, column-rule-edge-inset-end, column-rule-interior-inset-start, column-rule-interior-inset-end, row-rule-edge-inset-start, row-rule-edge-inset-end, row-rule-interior-inset-start, and row-rule-interior-inset-end",
+      "appliesTo": "Same as column-rule-inset-cap-start, column-rule-inset-cap-end, column-rule-inset-junction-start, column-rule-inset-junction-end, row-rule-inset-cap-start, row-rule-inset-cap-end, row-rule-inset-junction-start, and row-rule-inset-junction-end",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
       "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
-        "row-rule-interior-inset",
-        "rowRuleInteriorInset"
+        "row-rule-inset-junction",
+        "rowRuleInsetJunction"
       ]
     },
     {
-      "name": "rule-edge-inset",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-edge-inset",
-      "value": "<'column-rule-edge-inset'>",
+      "name": "rule-inset-cap",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-inset-cap",
+      "value": "<'column-rule-inset-cap'>",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset and row-rule-edge-inset",
+      "appliesTo": "Same as column-rule-inset-cap and row-rule-inset-cap",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
       "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
-        "rule-edge-inset",
-        "ruleEdgeInset"
+        "rule-inset-cap",
+        "ruleInsetCap"
       ]
     },
     {
-      "name": "rule-interior-inset",
-      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-interior-inset",
-      "value": "<'column-rule-interior-inset'>",
+      "name": "rule-inset-junction",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-rule-inset-junction",
+      "value": "<'column-rule-inset-junction'>",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-interior-inset and row-rule-interior-inset",
+      "appliesTo": "Same as column-rule-inset-junction and row-rule-inset-junction",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
       "animationType": "see individual properties",
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
-        "rule-interior-inset",
-        "ruleInteriorInset"
+        "rule-inset-junction",
+        "ruleInsetJunction"
       ]
     },
     {
       "name": "column-rule-inset",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-column-rule-inset",
-      "value": "<'column-rule-edge-inset'> [ / <'column-rule-interior-inset'> ]?",
+      "value": "<'column-rule-inset-cap'> [ / <'column-rule-inset-junction'> ]?",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset, column-rule-interior-inset, row-rule-edge-inset, and row-rule-interior-inset",
+      "appliesTo": "Same as column-rule-inset-cap, column-rule-inset-junction, row-rule-inset-cap, and row-rule-inset-junction",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -437,9 +511,9 @@
     {
       "name": "row-rule-inset",
       "href": "https://drafts.csswg.org/css-gaps-1/#propdef-row-rule-inset",
-      "value": "<'column-rule-edge-inset'> [ / <'column-rule-interior-inset'> ]?",
+      "value": "<'column-rule-inset-cap'> [ / <'column-rule-inset-junction'> ]?",
       "initial": "see individual properties",
-      "appliesTo": "Same as column-rule-edge-inset, column-rule-interior-inset, row-rule-edge-inset, and row-rule-interior-inset",
+      "appliesTo": "Same as column-rule-inset-cap, column-rule-inset-junction, row-rule-inset-cap, and row-rule-inset-junction",
       "inherited": "see individual properties",
       "percentages": "see individual properties",
       "computedValue": "see individual properties",
@@ -795,6 +869,33 @@
       "canonicalOrder": "per grammar",
       "styleDeclaration": [
         "rule"
+      ]
+    },
+    {
+      "name": "grid-row-gap",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-grid-row-gap",
+      "legacyAliasOf": "row-gap",
+      "styleDeclaration": [
+        "grid-row-gap",
+        "gridRowGap"
+      ]
+    },
+    {
+      "name": "grid-column-gap",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-grid-column-gap",
+      "legacyAliasOf": "column-gap",
+      "styleDeclaration": [
+        "grid-column-gap",
+        "gridColumnGap"
+      ]
+    },
+    {
+      "name": "grid-gap",
+      "href": "https://drafts.csswg.org/css-gaps-1/#propdef-grid-gap",
+      "legacyAliasOf": "gap",
+      "styleDeclaration": [
+        "grid-gap",
+        "gridGap"
       ]
     }
   ],
