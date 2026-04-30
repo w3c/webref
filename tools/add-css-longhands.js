@@ -286,31 +286,31 @@ const MANUAL_EXPANSIONS = {
   'rule-inset-start': ['column-rule-inset-start', 'row-rule-inset-start'],
   'rule-inset-end': ['column-rule-inset-end', 'row-rule-inset-end'],
 
-  // CSS Gap Decorations - edge/interior inset shorthands
-  'column-rule-edge-inset': ['column-rule-edge-inset-start', 'column-rule-edge-inset-end'],
-  'row-rule-edge-inset': ['row-rule-edge-inset-start', 'row-rule-edge-inset-end'],
-  'column-rule-interior-inset': ['column-rule-interior-inset-start', 'column-rule-interior-inset-end'],
-  'row-rule-interior-inset': ['row-rule-interior-inset-start', 'row-rule-interior-inset-end'],
+  // CSS Gap Decorations - cap/junction inset shorthands
+  'column-rule-inset-cap': ['column-rule-inset-cap-start', 'column-rule-inset-cap-end'],
+  'column-rule-inset-junction': ['column-rule-inset-junction-start', 'column-rule-inset-junction-end'],
+  'row-rule-inset-cap': ['row-rule-inset-cap-start', 'row-rule-inset-cap-end'],
+  'row-rule-inset-junction': ['row-rule-inset-junction-start', 'row-rule-inset-junction-end'],
 
   // CSS Gap Decorations - combined inset shorthands (set both edge and interior)
   'column-rule-inset': [
-    'column-rule-edge-inset-start',
-    'column-rule-edge-inset-end',
-    'column-rule-interior-inset-start',
-    'column-rule-interior-inset-end'
+    'column-rule-inset-cap-start',
+    'column-rule-inset-cap-end',
+    'column-rule-inset-junction-start',
+    'column-rule-inset-junction-end'
   ],
   'row-rule-inset': [
-    'row-rule-edge-inset-start',
-    'row-rule-edge-inset-end',
-    'row-rule-interior-inset-start',
-    'row-rule-interior-inset-end'
+    'row-rule-inset-cap-start',
+    'row-rule-inset-cap-end',
+    'row-rule-inset-junction-start',
+    'row-rule-inset-junction-end'
   ],
 
   // CSS Gap Decorations - start/end inset shorthands
-  'column-rule-inset-start': ['column-rule-edge-inset-start', 'column-rule-interior-inset-start'],
-  'column-rule-inset-end': ['column-rule-edge-inset-end', 'column-rule-interior-inset-end'],
-  'row-rule-inset-start': ['row-rule-edge-inset-start', 'row-rule-interior-inset-start'],
-  'row-rule-inset-end': ['row-rule-edge-inset-end', 'row-rule-interior-inset-end'],
+  'column-rule-inset-start': ['column-rule-inset-cap-start', 'column-rule-inset-junction-start'],
+  'column-rule-inset-end': ['column-rule-inset-cap-end', 'column-rule-inset-junction-end'],
+  'row-rule-inset-start': ['row-rule-inset-cap-start', 'row-rule-inset-junction-start'],
+  'row-rule-inset-end': ['row-rule-inset-cap-end', 'row-rule-inset-junction-end'],
 
   // CSS UI - interest-delay
   'interest-delay': ['interest-delay-start', 'interest-delay-end'],
