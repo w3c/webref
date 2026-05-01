@@ -1,0 +1,639 @@
+{
+  "spec": {
+    "title": "Verifiable Credential Data Integrity 1.1",
+    "url": "https://www.w3.org/TR/vc-data-integrity-1.1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#title",
+      "level": 1,
+      "title": "Verifiable Credential Data Integrity 1.1"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#subtitle",
+      "level": 2,
+      "title": "Securing the Integrity of Verifiable Credential Data"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "how-it-works",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#how-it-works",
+      "level": 3,
+      "title": "How it Works",
+      "alternateIds": [
+        "x1-1-how-it-works"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "design-goals-and-rationale",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#design-goals-and-rationale",
+      "level": 3,
+      "title": "Design Goals and Rationale",
+      "alternateIds": [
+        "x1-2-design-goals-and-rationale"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-3-conformance"
+      ],
+      "number": "1.3"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "alternateIds": [
+        "x1-4-terminology"
+      ],
+      "number": "1.4"
+    },
+    {
+      "id": "data-model",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#data-model",
+      "level": 2,
+      "title": "Data Model",
+      "alternateIds": [
+        "x2-data-model"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "proofs",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#proofs",
+      "level": 3,
+      "title": "Proofs",
+      "alternateIds": [
+        "x2-1-proofs"
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "proof-sets",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#proof-sets",
+      "level": 4,
+      "title": "Proof Sets",
+      "alternateIds": [
+        "x2-1-1-proof-sets"
+      ],
+      "number": "2.1.1"
+    },
+    {
+      "id": "proof-chains",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#proof-chains",
+      "level": 4,
+      "title": "Proof Chains",
+      "alternateIds": [
+        "x2-1-2-proof-chains"
+      ],
+      "number": "2.1.2"
+    },
+    {
+      "id": "proof-graphs",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#proof-graphs",
+      "level": 4,
+      "title": "Proof Graphs",
+      "alternateIds": [
+        "x2-1-3-proof-graphs"
+      ],
+      "number": "2.1.3"
+    },
+    {
+      "id": "proof-purposes",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#proof-purposes",
+      "level": 3,
+      "title": "Proof Purposes",
+      "alternateIds": [
+        "x2-2-proof-purposes"
+      ],
+      "number": "2.2"
+    },
+    {
+      "id": "resource-integrity",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#resource-integrity",
+      "level": 3,
+      "title": "Resource Integrity",
+      "alternateIds": [
+        "x2-3-resource-integrity"
+      ],
+      "number": "2.3"
+    },
+    {
+      "id": "contexts-and-vocabularies",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#contexts-and-vocabularies",
+      "level": 3,
+      "title": "Contexts and Vocabularies",
+      "alternateIds": [
+        "x2-4-contexts-and-vocabularies"
+      ],
+      "number": "2.4"
+    },
+    {
+      "id": "validating-contexts",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#validating-contexts",
+      "level": 4,
+      "title": "Validating Contexts",
+      "alternateIds": [
+        "x2-4-1-validating-contexts"
+      ],
+      "number": "2.4.1"
+    },
+    {
+      "id": "context-injection",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#context-injection",
+      "level": 4,
+      "title": "Context Injection",
+      "alternateIds": [
+        "x2-4-2-context-injection"
+      ],
+      "number": "2.4.2"
+    },
+    {
+      "id": "securing-data-losslessly",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#securing-data-losslessly",
+      "level": 4,
+      "title": "Securing Data Losslessly",
+      "alternateIds": [
+        "x2-4-3-securing-data-losslessly"
+      ],
+      "number": "2.4.3"
+    },
+    {
+      "id": "datatypes",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#datatypes",
+      "level": 4,
+      "title": "Datatypes",
+      "alternateIds": [
+        "x2-4-4-datatypes"
+      ],
+      "number": "2.4.4"
+    },
+    {
+      "id": "the-cryptosuitestring-datatype",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#the-cryptosuitestring-datatype",
+      "level": 5,
+      "title": "The cryptosuiteString Datatype",
+      "alternateIds": [
+        "cryptosuiteString"
+      ],
+      "number": "2.4.4.1"
+    },
+    {
+      "id": "relationship-to-linked-data",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#relationship-to-linked-data",
+      "level": 3,
+      "title": "Relationship to Linked Data",
+      "alternateIds": [
+        "x2-5-relationship-to-linked-data"
+      ],
+      "number": "2.5"
+    },
+    {
+      "id": "relationship-to-verifiable-credentials",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#relationship-to-verifiable-credentials",
+      "level": 3,
+      "title": "Relationship to Verifiable Credentials",
+      "alternateIds": [
+        "x2-6-relationship-to-verifiable-credentials"
+      ],
+      "number": "2.6"
+    },
+    {
+      "id": "cryptographic-suites",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#cryptographic-suites",
+      "level": 2,
+      "title": "Cryptographic Suites",
+      "alternateIds": [
+        "x3-cryptographic-suites"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "dataintegrityproof",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#dataintegrityproof",
+      "level": 3,
+      "title": "DataIntegrityProof",
+      "alternateIds": [
+        "x3-1-dataintegrityproof"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "alternateIds": [
+        "x4-algorithms"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "processing-model",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#processing-model",
+      "level": 3,
+      "title": "Processing Model",
+      "alternateIds": [
+        "x4-1-processing-model"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "add-proof",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#add-proof",
+      "level": 3,
+      "title": "Add Proof",
+      "alternateIds": [
+        "x4-2-add-proof"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "add-proof-set-chain",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#add-proof-set-chain",
+      "level": 3,
+      "title": "Add Proof Set/Chain",
+      "alternateIds": [
+        "x4-3-add-proof-set-chain"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "verify-proof",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof",
+      "level": 3,
+      "title": "Verify Proof",
+      "alternateIds": [
+        "x4-4-verify-proof"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "verify-proof-sets-and-chains",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#verify-proof-sets-and-chains",
+      "level": 3,
+      "title": "Verify Proof Sets and Chains",
+      "alternateIds": [
+        "x4-5-verify-proof-sets-and-chains"
+      ],
+      "number": "4.5"
+    },
+    {
+      "id": "context-validation",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#context-validation",
+      "level": 3,
+      "title": "Context Validation",
+      "alternateIds": [
+        "x4-6-context-validation"
+      ],
+      "number": "4.6"
+    },
+    {
+      "id": "processing-errors",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#processing-errors",
+      "level": 3,
+      "title": "Processing Errors",
+      "alternateIds": [
+        "x4-7-processing-errors"
+      ],
+      "number": "4.7"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "x5-security-considerations"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "versioning-cryptography-suites",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#versioning-cryptography-suites",
+      "level": 3,
+      "title": "Versioning Cryptography Suites",
+      "alternateIds": [
+        "x5-1-versioning-cryptography-suites"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "protecting-application-developers",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#protecting-application-developers",
+      "level": 3,
+      "title": "Protecting Application Developers",
+      "alternateIds": [
+        "x5-2-protecting-application-developers"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "conventions-for-naming-cryptography-suites",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#conventions-for-naming-cryptography-suites",
+      "level": 3,
+      "title": "Conventions for Naming Cryptography Suites",
+      "alternateIds": [
+        "x5-3-conventions-for-naming-cryptography-suites"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "agility-and-layering",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#agility-and-layering",
+      "level": 3,
+      "title": "Agility and Layering",
+      "alternateIds": [
+        "x5-4-agility-and-layering"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "safer-abstractions",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#safer-abstractions",
+      "level": 3,
+      "title": "Safer Abstractions",
+      "alternateIds": [
+        "x5-5-safer-abstractions"
+      ],
+      "number": "5.5"
+    },
+    {
+      "id": "transformations",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#transformations",
+      "level": 3,
+      "title": "Transformations",
+      "alternateIds": [
+        "x5-6-transformations"
+      ],
+      "number": "5.6"
+    },
+    {
+      "id": "protected-information",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#protected-information",
+      "level": 3,
+      "title": "Protected Information",
+      "alternateIds": [
+        "x5-7-protected-information"
+      ],
+      "number": "5.7"
+    },
+    {
+      "id": "data-opacity",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#data-opacity",
+      "level": 3,
+      "title": "Data Opacity",
+      "alternateIds": [
+        "x5-8-data-opacity"
+      ],
+      "number": "5.8"
+    },
+    {
+      "id": "verification-method-binding",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#verification-method-binding",
+      "level": 3,
+      "title": "Verification Method Binding",
+      "alternateIds": [
+        "x5-9-verification-method-binding"
+      ],
+      "number": "5.9"
+    },
+    {
+      "id": "verification-relationship-validation",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#verification-relationship-validation",
+      "level": 3,
+      "title": "Verification Relationship Validation",
+      "alternateIds": [
+        "x5-10-verification-relationship-validation"
+      ],
+      "number": "5.10"
+    },
+    {
+      "id": "proof-purpose-validation",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#proof-purpose-validation",
+      "level": 3,
+      "title": "Proof Purpose Validation",
+      "alternateIds": [
+        "x5-11-proof-purpose-validation"
+      ],
+      "number": "5.11"
+    },
+    {
+      "id": "canonicalization-method-security",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#canonicalization-method-security",
+      "level": 3,
+      "title": "Canonicalization Method Security",
+      "alternateIds": [
+        "x5-12-canonicalization-method-security"
+      ],
+      "number": "5.12"
+    },
+    {
+      "id": "canonicalization-method-correctness",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#canonicalization-method-correctness",
+      "level": 3,
+      "title": "Canonicalization Method Correctness",
+      "alternateIds": [
+        "x5-13-canonicalization-method-correctness"
+      ],
+      "number": "5.13"
+    },
+    {
+      "id": "network-requests",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#network-requests",
+      "level": 3,
+      "title": "Network Requests",
+      "alternateIds": [
+        "x5-14-network-requests"
+      ],
+      "number": "5.14"
+    },
+    {
+      "id": "other-security-considerations",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#other-security-considerations",
+      "level": 3,
+      "title": "Other Security Considerations",
+      "alternateIds": [
+        "x5-15-other-security-considerations"
+      ],
+      "number": "5.15"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "x6-privacy-considerations"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "unlinkability",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#unlinkability",
+      "level": 3,
+      "title": "Unlinkability",
+      "alternateIds": [
+        "x6-1-unlinkability"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "selective-disclosure",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#selective-disclosure",
+      "level": 3,
+      "title": "Selective Disclosure",
+      "alternateIds": [
+        "x6-2-selective-disclosure"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "previous-proofs",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#previous-proofs",
+      "level": 3,
+      "title": "Previous Proofs",
+      "alternateIds": [
+        "x6-3-previous-proofs"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "fingerprinting-network-requests",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#fingerprinting-network-requests",
+      "level": 3,
+      "title": "Fingerprinting Network Requests",
+      "alternateIds": [
+        "x6-4-fingerprinting-network-requests"
+      ],
+      "number": "6.4"
+    },
+    {
+      "id": "canonicalization-method-privacy",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#canonicalization-method-privacy",
+      "level": 3,
+      "title": "Canonicalization Method Privacy",
+      "alternateIds": [
+        "x6-5-canonicalization-method-privacy"
+      ],
+      "number": "6.5"
+    },
+    {
+      "id": "other-privacy-considerations",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#other-privacy-considerations",
+      "level": 3,
+      "title": "Other Privacy Considerations",
+      "alternateIds": [
+        "x6-6-other-privacy-considerations"
+      ],
+      "number": "6.6"
+    },
+    {
+      "id": "accessibility-considerations",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#accessibility-considerations",
+      "level": 2,
+      "title": "Accessibility Considerations",
+      "alternateIds": [
+        "x7-accessibility-considerations"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "presenting-time-values",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#presenting-time-values",
+      "level": 3,
+      "title": "Presenting Time Values",
+      "alternateIds": [
+        "x7-1-presenting-time-values"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "understanding-proof-sets-and-proof-chains",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#understanding-proof-sets-and-proof-chains",
+      "level": 2,
+      "title": "Understanding Proof Sets and Proof Chains",
+      "alternateIds": [
+        "a-understanding-proof-sets-and-proof-chains"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "revision-history",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#revision-history",
+      "level": 2,
+      "title": "Revision History",
+      "alternateIds": [
+        "b-revision-history"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "c-acknowledgements"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "d-references"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "d-1-normative-references"
+      ],
+      "number": "D.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/vc-data-integrity-1.1/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "d-2-informative-references"
+      ],
+      "number": "D.2"
+    }
+  ]
+}

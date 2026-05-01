@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-04-30T01:39:38.077Z",
+  "date": "2026-05-01T01:50:02.498Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -34,7 +34,6 @@
       "css-conditional-values-1",
       "css-extensions-1",
       "css-gcpm-4",
-      "css-image-animation-1",
       "css-images-5",
       "css-link-params-1",
       "css-navigation-1",
@@ -61,11 +60,8 @@
       "infra",
       "mimesniff",
       "notifications",
-      "private-aggregation-api",
-      "topics",
       "nav-tracking-mitigations",
       "private-click-measurement",
-      "requestStorageAccessFor",
       "saa-non-cookie-storage",
       "storage-access-headers",
       "storage-access",
@@ -145,6 +141,7 @@
       "testutils",
       "url",
       "urlpattern",
+      "web-nfc",
       "login-status",
       "at-driver",
       "shacl12-cs",
@@ -153,7 +150,6 @@
       "execCommand",
       "element-timing",
       "gamepad-extensions",
-      "long-animation-frames",
       "mathml-aam",
       "media-playback-quality",
       "mediacapture-automation",
@@ -167,7 +163,7 @@
       "trace-context-binary",
       "trace-context-mqtt",
       "tracestate-ids-registry",
-      "web-nfc",
+      "vc-recognized-entities",
       "web-share-target",
       "webextensions",
       "webrtc-ice",
@@ -193,13 +189,13 @@
       "web-bluetooth",
       "web-bluetooth-scanning",
       "webidl",
+      "prompt-api",
       "translation-api",
       "webmcp",
       "writing-assistance-apis",
       "websockets",
       "anonymous-iframe",
       "aom",
-      "attribution-reporting-api",
       "audio-context-playout-stats",
       "autofill-event",
       "background-fetch",
@@ -262,13 +258,11 @@
       "serial",
       "shape-detection-api",
       "text-detection-api",
-      "shared-storage",
       "signature-based-sri",
       "sms-one-time-codes",
       "soft-navigations",
       "storage-buckets",
       "trust-token-api",
-      "turtledove",
       "ua-client-hints",
       "user-preference-media-features-headers",
       "video-rvfc",
@@ -405,6 +399,7 @@
       "css-grid-2",
       "css-grid-3",
       "css-highlight-api-1",
+      "css-image-animation-1",
       "css-images-3",
       "css-images-4",
       "css-inline-3",
@@ -530,6 +525,7 @@
       "json-ld11-framing",
       "json-ld11",
       "largest-contentful-paint",
+      "long-animation-frames",
       "longtasks-1",
       "magnetometer",
       "manifest-app-info",
@@ -647,12 +643,17 @@
       "uievents",
       "upgrade-insecure-requests",
       "user-timing",
+      "vc-barcodes-1.0",
       "vc-bitstring-status-list",
       "vc-confidence-method",
+      "vc-data-integrity-1.1",
       "vc-data-integrity",
       "vc-data-model-2.0",
+      "vc-data-model-2.1",
       "vc-di-bbs",
+      "vc-di-ecdsa-1.1",
       "vc-di-ecdsa",
+      "vc-di-eddsa-1.1",
       "vc-di-eddsa",
       "vc-jose-cose",
       "vc-json-schema",
@@ -756,10 +757,10 @@
     ]
   },
   "stats": {
-    "crawled": 403,
+    "crawled": 410,
     "errors": 0
   },
-  "crawler": "reffy-20.0.15",
+  "crawler": "reffy-20.0.16",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -805,7 +806,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "30 April 2026",
+      "date": "1 May 2026",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -979,11 +980,11 @@
       ],
       "crawled": "https://www.w3.org/TR/accname-1.2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Apr 2026 09:52:44 GMT"
+        "lastModified": "Thu, 30 Apr 2026 06:50:25 GMT"
       },
       "generator": "respec",
-      "date": "24 April 2026",
-      "revision": "acac6dee9c4cdbbfd49fdae260d2853f4096a4ae",
+      "date": "30 April 2026",
+      "revision": "350d2f029d98aa0ad6d2631ad5a5534565da9a02",
       "algorithms": "algorithms/accname-1.2.json",
       "links": "links/accname-1.2.json",
       "refs": "refs/accname-1.2.json",
@@ -1226,11 +1227,11 @@
       ],
       "crawled": "https://www.w3.org/TR/attribution/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 29 Apr 2026 12:14:10 GMT"
+        "lastModified": "Thu, 30 Apr 2026 12:28:55 GMT"
       },
       "generator": "bikeshed",
-      "date": "29 April 2026",
-      "revision": "cd3441a8166bcbbac165311e033557dded032541",
+      "date": "30 April 2026",
+      "revision": "73afdeef361abda3b11f6b42236c30a98d7973f2",
       "algorithms": "algorithms/attribution.json",
       "links": "links/attribution.json",
       "refs": "refs/attribution.json",
@@ -2280,11 +2281,11 @@
       ],
       "crawled": "https://www.w3.org/TR/core-aam-1.2/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Apr 2026 09:52:33 GMT"
+        "lastModified": "Thu, 30 Apr 2026 06:50:20 GMT"
       },
       "generator": "respec",
-      "date": "24 April 2026",
-      "revision": "acac6dee9c4cdbbfd49fdae260d2853f4096a4ae",
+      "date": "30 April 2026",
+      "revision": "350d2f029d98aa0ad6d2631ad5a5534565da9a02",
       "algorithms": "algorithms/core-aam-1.2.json",
       "links": "links/core-aam-1.2.json",
       "refs": "refs/core-aam-1.2.json",
@@ -5914,6 +5915,68 @@
       "dfns": "dfns/css-highlight-api-1.json",
       "headings": "headings/css-highlight-api-1.json",
       "ids": "ids/css-highlight-api-1.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/css-image-animation-1/",
+      "seriesComposition": "full",
+      "shortname": "css-image-animation-1",
+      "series": {
+        "shortname": "css-image-animation",
+        "currentSpecification": "css-image-animation-1",
+        "title": "CSS Image Animation Module",
+        "shortTitle": "CSS Image Animation",
+        "releaseUrl": "https://www.w3.org/TR/css-image-animation/",
+        "nightlyUrl": "https://drafts.csswg.org/css-image-animation/"
+      },
+      "seriesVersion": "1",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/groups/wg/css/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-image-animation-1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-image-animation-1/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-image-animation-1/",
+          "https://w3c.github.io/csswg-drafts/css-image-animation/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-image-animation-1/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Image Animation Module Level 1",
+      "source": "w3c",
+      "shortTitle": "CSS Image Animation 1",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/css-image-animation-1/",
+        "https://drafts.csswg.org/css-image-animation-1/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-image-animation-1/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 07 Apr 2026 14:21:19 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "9 April 2026",
+      "revision": "31747bd75fe0a61348bbb3b9fd7d7c72445dc104",
+      "links": "links/css-image-animation-1.json",
+      "refs": "refs/css-image-animation-1.json",
+      "css": "css/css-image-animation.json",
+      "dfns": "dfns/css-image-animation-1.json",
+      "headings": "headings/css-image-animation-1.json",
+      "ids": "ids/css-image-animation-1.json",
       "cddl": []
     },
     {
@@ -11147,11 +11210,11 @@
       ],
       "crawled": "https://www.w3.org/TR/edit-context/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 12 Nov 2025 17:24:20 GMT"
+        "lastModified": "Thu, 30 Apr 2026 18:48:28 GMT"
       },
       "generator": "respec",
-      "date": "12 November 2025",
-      "revision": "1a30b4bb8781c562aac0f2e33fbdc8e36529f91c",
+      "date": "30 April 2026",
+      "revision": "3127d3f9952ed7efa7e2195afe516c8215b1a242",
       "algorithms": "algorithms/edit-context.json",
       "links": "links/edit-context.json",
       "refs": "refs/edit-context.json",
@@ -13091,11 +13154,11 @@
       ],
       "crawled": "https://www.w3.org/TR/html-aam-1.0/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Apr 2026 09:52:52 GMT"
+        "lastModified": "Thu, 30 Apr 2026 06:50:44 GMT"
       },
       "generator": "respec",
-      "date": "24 April 2026",
-      "revision": "acac6dee9c4cdbbfd49fdae260d2853f4096a4ae",
+      "date": "30 April 2026",
+      "revision": "350d2f029d98aa0ad6d2631ad5a5534565da9a02",
       "algorithms": "algorithms/html-aam-1.0.json",
       "links": "links/html-aam-1.0.json",
       "refs": "refs/html-aam-1.0.json",
@@ -14005,6 +14068,71 @@
       "dfns": "dfns/largest-contentful-paint.json",
       "headings": "headings/largest-contentful-paint.json",
       "ids": "ids/largest-contentful-paint.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/long-animation-frames/",
+      "seriesComposition": "full",
+      "shortname": "long-animation-frames",
+      "series": {
+        "shortname": "long-animation-frames",
+        "currentSpecification": "long-animation-frames",
+        "title": "Long Animation Frames API",
+        "shortTitle": "Long Animation Frames API",
+        "releaseUrl": "https://www.w3.org/TR/long-animation-frames/",
+        "nightlyUrl": "https://w3c.github.io/long-animation-frames/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Performance Working Group",
+          "url": "https://www.w3.org/groups/wg/webperf/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/long-animation-frames/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/long-animation-frames/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/long-animation-frames",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Long Animation Frames API",
+      "source": "w3c",
+      "shortTitle": "Long Animation Frames API",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "long-animation-frame"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/long-animation-frames/",
+        "https://w3c.github.io/long-animation-frames/"
+      ],
+      "crawled": "https://www.w3.org/TR/long-animation-frames/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 24 Apr 2026 07:41:32 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "28 April 2026",
+      "revision": "e0215aa507b22d4e3f4069efefc443c019078628",
+      "algorithms": "algorithms/long-animation-frames.json",
+      "links": "links/long-animation-frames.json",
+      "refs": "refs/long-animation-frames.json",
+      "idl": "idl/long-animation-frames.idl",
+      "dfns": "dfns/long-animation-frames.json",
+      "headings": "headings/long-animation-frames.json",
+      "ids": "ids/long-animation-frames.json",
       "cddl": []
     },
     {
@@ -17514,7 +17642,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/rdf12-concepts/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -17536,11 +17664,10 @@
       ],
       "crawled": "https://www.w3.org/TR/rdf12-concepts/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 03 Apr 2026 14:37:07 GMT"
+        "lastModified": "Fri, 03 Apr 2026 14:37:02 GMT"
       },
       "generator": "respec",
-      "date": "03 April 2026",
-      "revision": "e0d243bd319077e6659f48afda9b781dff7d0cc5",
+      "date": "07 April 2026",
       "algorithms": "algorithms/rdf12-concepts.json",
       "links": "links/rdf12-concepts.json",
       "refs": "refs/rdf12-concepts.json",
@@ -17739,7 +17866,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/rdf12-semantics/",
-        "status": "Working Draft",
+        "status": "Candidate Recommendation Snapshot",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -20039,11 +20166,11 @@
       ],
       "crawled": "https://www.w3.org/TR/svg-aam-1.0/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Apr 2026 09:52:58 GMT"
+        "lastModified": "Thu, 30 Apr 2026 06:50:35 GMT"
       },
       "generator": "respec",
-      "date": "24 April 2026",
-      "revision": "5a1b83f464a0dda2baaa8eee980c5f4944d8d86f",
+      "date": "30 April 2026",
+      "revision": "350d2f029d98aa0ad6d2631ad5a5534565da9a02",
       "algorithms": "algorithms/svg-aam-1.0.json",
       "links": "links/svg-aam-1.0.json",
       "refs": "refs/svg-aam-1.0.json",
@@ -21315,6 +21442,66 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/vc-barcodes-1.0/",
+      "seriesComposition": "full",
+      "shortname": "vc-barcodes-1.0",
+      "series": {
+        "shortname": "vc-barcodes",
+        "currentSpecification": "vc-barcodes-1.0",
+        "title": "Verifiable Credential Barcodes",
+        "shortTitle": "Verifiable Credential Barcodes",
+        "releaseUrl": "https://www.w3.org/TR/vc-barcodes/",
+        "nightlyUrl": "https://w3c.github.io/vc-barcodes/"
+      },
+      "seriesVersion": "1.0",
+      "formerNames": [
+        "vc-barcodes"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-barcodes-1.0/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-barcodes/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-barcodes",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Verifiable Credential Barcodes v1.0",
+      "source": "w3c",
+      "shortTitle": "Verifiable Credential Barcodes v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-barcodes-1.0/",
+        "https://w3c.github.io/vc-barcodes/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-barcodes-1.0/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 28 Apr 2026 14:22:46 GMT"
+      },
+      "generator": "respec",
+      "date": "28 April 2026",
+      "revision": "baa1918ee247926d87c87dbb6d137e38b85c298a",
+      "algorithms": "algorithms/vc-barcodes-1.0.json",
+      "links": "links/vc-barcodes-1.0.json",
+      "refs": "refs/vc-barcodes-1.0.json",
+      "dfns": "dfns/vc-barcodes-1.0.json",
+      "headings": "headings/vc-barcodes-1.0.json",
+      "ids": "ids/vc-barcodes-1.0.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/vc-bitstring-status-list/",
       "seriesComposition": "full",
       "shortname": "vc-bitstring-status-list",
@@ -21425,6 +21612,63 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/vc-data-integrity-1.1/",
+      "seriesComposition": "full",
+      "shortname": "vc-data-integrity-1.1",
+      "series": {
+        "shortname": "vc-data-integrity",
+        "currentSpecification": "vc-data-integrity",
+        "title": "Verifiable Credential Data Integrity",
+        "shortTitle": "Verifiable Credential Data Integrity",
+        "releaseUrl": "https://www.w3.org/TR/vc-data-integrity/",
+        "nightlyUrl": "https://www.w3.org/TR/vc-data-integrity/"
+      },
+      "seriesVersion": "1.1",
+      "seriesPrevious": "vc-data-integrity",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-data-integrity-1.1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-data-integrity/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-data-integrity",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Verifiable Credential Data Integrity 1.1",
+      "source": "w3c",
+      "shortTitle": "Verifiable Credential Data Integrity 1.1",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-data-integrity-1.1/",
+        "https://w3c.github.io/vc-data-integrity/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-data-integrity-1.1/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 10 Apr 2026 16:00:52 GMT"
+      },
+      "generator": "respec",
+      "date": "16 April 2026",
+      "algorithms": "algorithms/vc-data-integrity-1.1.json",
+      "links": "links/vc-data-integrity-1.1.json",
+      "refs": "refs/vc-data-integrity-1.1.json",
+      "dfns": "dfns/vc-data-integrity-1.1.json",
+      "headings": "headings/vc-data-integrity-1.1.json",
+      "ids": "ids/vc-data-integrity-1.1.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/vc-data-integrity/",
       "seriesComposition": "full",
       "shortname": "vc-data-integrity",
@@ -21434,8 +21678,15 @@
         "title": "Verifiable Credential Data Integrity",
         "shortTitle": "Verifiable Credential Data Integrity",
         "releaseUrl": "https://www.w3.org/TR/vc-data-integrity/",
-        "nightlyUrl": "https://w3c.github.io/vc-data-integrity/"
+        "nightlyUrl": "https://www.w3.org/TR/vc-data-integrity/"
       },
+      "nightly": {
+        "url": "https://www.w3.org/TR/vc-data-integrity/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "filename": "index.html"
+      },
+      "seriesNext": "vc-data-integrity-1.1",
       "organization": "W3C",
       "groups": [
         {
@@ -21448,22 +21699,13 @@
         "status": "Recommendation",
         "filename": "Overview.html"
       },
-      "nightly": {
-        "url": "https://w3c.github.io/vc-data-integrity/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/vc-data-integrity",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
       "title": "Verifiable Credential Data Integrity 1.0",
       "source": "w3c",
       "shortTitle": "Verifiable Credential Data Integrity 1.0",
       "categories": [],
       "standing": "good",
       "versions": [
-        "https://www.w3.org/TR/vc-data-integrity/",
-        "https://w3c.github.io/vc-data-integrity/"
+        "https://www.w3.org/TR/vc-data-integrity/"
       ],
       "crawled": "https://www.w3.org/TR/vc-data-integrity/",
       "crawlCacheInfo": {
@@ -21489,9 +21731,16 @@
         "title": "Verifiable Credentials Data Model",
         "shortTitle": "Verifiable Credentials Data Model",
         "releaseUrl": "https://www.w3.org/TR/vc-data-model/",
-        "nightlyUrl": "https://w3c.github.io/vc-data-model/"
+        "nightlyUrl": "https://www.w3.org/TR/vc-data-model/"
       },
       "seriesVersion": "2.0",
+      "nightly": {
+        "url": "https://www.w3.org/TR/vc-data-model-2.0/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "filename": "index.html"
+      },
+      "seriesNext": "vc-data-model-2.1",
       "organization": "W3C",
       "groups": [
         {
@@ -21504,22 +21753,13 @@
         "status": "Recommendation",
         "filename": "Overview.html"
       },
-      "nightly": {
-        "url": "https://w3c.github.io/vc-data-model/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/vc-data-model",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
       "title": "Verifiable Credentials Data Model v2.0",
       "source": "w3c",
       "shortTitle": "Verifiable Credentials Data Model v2.0",
       "categories": [],
       "standing": "good",
       "versions": [
-        "https://www.w3.org/TR/vc-data-model-2.0/",
-        "https://w3c.github.io/vc-data-model/"
+        "https://www.w3.org/TR/vc-data-model-2.0/"
       ],
       "crawled": "https://www.w3.org/TR/vc-data-model-2.0/",
       "crawlCacheInfo": {
@@ -21533,6 +21773,64 @@
       "dfns": "dfns/vc-data-model-2.0.json",
       "headings": "headings/vc-data-model-2.0.json",
       "ids": "ids/vc-data-model-2.0.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vc-data-model-2.1/",
+      "seriesComposition": "full",
+      "shortname": "vc-data-model-2.1",
+      "series": {
+        "shortname": "vc-data-model",
+        "currentSpecification": "vc-data-model-2.0",
+        "title": "Verifiable Credentials Data Model",
+        "shortTitle": "Verifiable Credentials Data Model",
+        "releaseUrl": "https://www.w3.org/TR/vc-data-model/",
+        "nightlyUrl": "https://www.w3.org/TR/vc-data-model/"
+      },
+      "seriesVersion": "2.1",
+      "seriesPrevious": "vc-data-model-2.0",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-data-model-2.1/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-data-model/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-data-model",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Verifiable Credentials Data Model v2.1",
+      "source": "w3c",
+      "shortTitle": "Verifiable Credentials Data Model v2.1",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-data-model-2.1/",
+        "https://w3c.github.io/vc-data-model/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-data-model-2.1/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 29 Apr 2026 14:50:49 GMT"
+      },
+      "generator": "respec",
+      "date": "29 April 2026",
+      "revision": "2b8a84f3b196ce5433f51a3cc6e31036b618a3d9",
+      "algorithms": "algorithms/vc-data-model-2.1.json",
+      "links": "links/vc-data-model-2.1.json",
+      "refs": "refs/vc-data-model-2.1.json",
+      "dfns": "dfns/vc-data-model-2.1.json",
+      "headings": "headings/vc-data-model-2.1.json",
+      "ids": "ids/vc-data-model-2.1.json",
       "cddl": []
     },
     {
@@ -21592,6 +21890,63 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/vc-di-ecdsa-1.1/",
+      "seriesComposition": "full",
+      "shortname": "vc-di-ecdsa-1.1",
+      "series": {
+        "shortname": "vc-di-ecdsa",
+        "currentSpecification": "vc-di-ecdsa",
+        "title": "ECDSA Cryptosuite",
+        "shortTitle": "ECDSA Cryptosuite",
+        "releaseUrl": "https://www.w3.org/TR/vc-di-ecdsa/",
+        "nightlyUrl": "https://www.w3.org/TR/vc-di-ecdsa/"
+      },
+      "seriesVersion": "1.1",
+      "seriesPrevious": "vc-di-ecdsa",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-di-ecdsa-1.1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-di-ecdsa/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-di-ecdsa",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Data Integrity ECDSA Cryptosuites v1.1",
+      "source": "w3c",
+      "shortTitle": "Data Integrity ECDSA Cryptosuites v1.1",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-di-ecdsa-1.1/",
+        "https://w3c.github.io/vc-di-ecdsa/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-di-ecdsa-1.1/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 13 Apr 2026 12:27:15 GMT"
+      },
+      "generator": "respec",
+      "date": "16 April 2026",
+      "algorithms": "algorithms/vc-di-ecdsa-1.1.json",
+      "links": "links/vc-di-ecdsa-1.1.json",
+      "refs": "refs/vc-di-ecdsa-1.1.json",
+      "dfns": "dfns/vc-di-ecdsa-1.1.json",
+      "headings": "headings/vc-di-ecdsa-1.1.json",
+      "ids": "ids/vc-di-ecdsa-1.1.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/vc-di-ecdsa/",
       "seriesComposition": "full",
       "shortname": "vc-di-ecdsa",
@@ -21601,8 +21956,15 @@
         "title": "ECDSA Cryptosuite",
         "shortTitle": "ECDSA Cryptosuite",
         "releaseUrl": "https://www.w3.org/TR/vc-di-ecdsa/",
-        "nightlyUrl": "https://w3c.github.io/vc-di-ecdsa/"
+        "nightlyUrl": "https://www.w3.org/TR/vc-di-ecdsa/"
       },
+      "nightly": {
+        "url": "https://www.w3.org/TR/vc-di-ecdsa/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "filename": "index.html"
+      },
+      "seriesNext": "vc-di-ecdsa-1.1",
       "organization": "W3C",
       "groups": [
         {
@@ -21615,22 +21977,13 @@
         "status": "Recommendation",
         "filename": "Overview.html"
       },
-      "nightly": {
-        "url": "https://w3c.github.io/vc-di-ecdsa/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/vc-di-ecdsa",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
       "title": "Data Integrity ECDSA Cryptosuites v1.0",
       "source": "w3c",
       "shortTitle": "Data Integrity ECDSA Cryptosuites v1.0",
       "categories": [],
       "standing": "good",
       "versions": [
-        "https://www.w3.org/TR/vc-di-ecdsa/",
-        "https://w3c.github.io/vc-di-ecdsa/"
+        "https://www.w3.org/TR/vc-di-ecdsa/"
       ],
       "crawled": "https://www.w3.org/TR/vc-di-ecdsa/",
       "crawlCacheInfo": {
@@ -21647,6 +22000,63 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/vc-di-eddsa-1.1/",
+      "seriesComposition": "full",
+      "shortname": "vc-di-eddsa-1.1",
+      "series": {
+        "shortname": "vc-di-eddsa",
+        "currentSpecification": "vc-di-eddsa",
+        "title": "EdDSA Cryptosuite",
+        "shortTitle": "EdDSA Cryptosuite",
+        "releaseUrl": "https://www.w3.org/TR/vc-di-eddsa/",
+        "nightlyUrl": "https://www.w3.org/TR/vc-di-eddsa/"
+      },
+      "seriesVersion": "1.1",
+      "seriesPrevious": "vc-di-eddsa",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-di-eddsa-1.1/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-di-eddsa/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-di-eddsa",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Data Integrity EdDSA Cryptosuites v1.1",
+      "source": "w3c",
+      "shortTitle": "Data Integrity EdDSA Cryptosuites v1.1",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-di-eddsa-1.1/",
+        "https://w3c.github.io/vc-di-eddsa/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-di-eddsa-1.1/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 13 Apr 2026 12:25:42 GMT"
+      },
+      "generator": "respec",
+      "date": "16 April 2026",
+      "algorithms": "algorithms/vc-di-eddsa-1.1.json",
+      "links": "links/vc-di-eddsa-1.1.json",
+      "refs": "refs/vc-di-eddsa-1.1.json",
+      "dfns": "dfns/vc-di-eddsa-1.1.json",
+      "headings": "headings/vc-di-eddsa-1.1.json",
+      "ids": "ids/vc-di-eddsa-1.1.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/vc-di-eddsa/",
       "seriesComposition": "full",
       "shortname": "vc-di-eddsa",
@@ -21656,8 +22066,15 @@
         "title": "EdDSA Cryptosuite",
         "shortTitle": "EdDSA Cryptosuite",
         "releaseUrl": "https://www.w3.org/TR/vc-di-eddsa/",
-        "nightlyUrl": "https://w3c.github.io/vc-di-eddsa/"
+        "nightlyUrl": "https://www.w3.org/TR/vc-di-eddsa/"
       },
+      "nightly": {
+        "url": "https://www.w3.org/TR/vc-di-eddsa/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "filename": "index.html"
+      },
+      "seriesNext": "vc-di-eddsa-1.1",
       "organization": "W3C",
       "groups": [
         {
@@ -21670,22 +22087,13 @@
         "status": "Recommendation",
         "filename": "Overview.html"
       },
-      "nightly": {
-        "url": "https://w3c.github.io/vc-di-eddsa/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/vc-di-eddsa",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
       "title": "Data Integrity EdDSA Cryptosuites v1.0",
       "source": "w3c",
       "shortTitle": "Data Integrity EdDSA Cryptosuites v1.0",
       "categories": [],
       "standing": "good",
       "versions": [
-        "https://www.w3.org/TR/vc-di-eddsa/",
-        "https://w3c.github.io/vc-di-eddsa/"
+        "https://www.w3.org/TR/vc-di-eddsa/"
       ],
       "crawled": "https://www.w3.org/TR/vc-di-eddsa/",
       "crawlCacheInfo": {
@@ -21832,7 +22240,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/vc-render-method/",
-        "status": "First Public Working Draft",
+        "status": "Working Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -22517,11 +22925,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wasm-core-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 27 Apr 2026 21:51:23 GMT"
+        "lastModified": "Thu, 30 Apr 2026 15:54:44 GMT"
       },
       "generator": "bikeshed",
-      "date": "27 April 2026",
-      "revision": "965039e956019f45456548f49028ffee2ded1b9c",
+      "date": "30 April 2026",
+      "revision": "a6ed9b2b5f266953872660b1b9ad95d7ca1c4515",
       "algorithms": "algorithms/wasm-core-2.json",
       "links": "links/wasm-core-2.json",
       "refs": "refs/wasm-core-2.json",
@@ -22590,11 +22998,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wasm-js-api-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 27 Apr 2026 21:42:55 GMT"
+        "lastModified": "Thu, 30 Apr 2026 15:45:43 GMT"
       },
       "generator": "bikeshed",
-      "date": "27 April 2026",
-      "revision": "965039e956019f45456548f49028ffee2ded1b9c",
+      "date": "30 April 2026",
+      "revision": "a6ed9b2b5f266953872660b1b9ad95d7ca1c4515",
       "algorithms": "algorithms/wasm-js-api-2.json",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
@@ -22656,11 +23064,11 @@
       ],
       "crawled": "https://www.w3.org/TR/wasm-web-api-2/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 27 Apr 2026 21:42:37 GMT"
+        "lastModified": "Thu, 30 Apr 2026 15:45:38 GMT"
       },
       "generator": "bikeshed",
-      "date": "27 April 2026",
-      "revision": "965039e956019f45456548f49028ffee2ded1b9c",
+      "date": "30 April 2026",
+      "revision": "a6ed9b2b5f266953872660b1b9ad95d7ca1c4515",
       "algorithms": "algorithms/wasm-web-api-2.json",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
@@ -24440,11 +24848,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webdriver2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 01 Apr 2026 07:45:52 GMT"
+        "lastModified": "Thu, 30 Apr 2026 13:34:35 GMT"
       },
       "generator": "respec",
-      "date": "01 April 2026",
-      "revision": "370aeff6ecddb86241c0929b5f6b86f076da6eab",
+      "date": "30 April 2026",
+      "revision": "785bc01244fa655de267af91c88cf50183baff6e",
       "algorithms": "algorithms/webdriver2.json",
       "links": "links/webdriver2.json",
       "refs": "refs/webdriver2.json",

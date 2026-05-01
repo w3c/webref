@@ -1,0 +1,217 @@
+{
+  "spec": {
+    "title": "Verifiable Credential Barcodes v1.0",
+    "url": "https://www.w3.org/TR/vc-barcodes-1.0/"
+  },
+  "algorithms": [
+    {
+      "html": "The following algorithm specifies how to encode a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> into\na text string that can be expressed in a QR Code. Required inputs are a\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>inputDocument</var>), and a set of options\n(<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>options</var>). The output is an encoded <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>\n(<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>) or an error. Whenever this algorithm encodes strings, it <em class=\"rfc2119\">MUST</em> use\nUTF-8 encoding.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>typeTable</var> be the value of <var>options</var>.<var>typeTable</var>."
+        },
+        {
+          "html": "Let <var>registryEntryId</var> be the value of <var>options</var>.<var>registryEntryId</var>."
+        },
+        {
+          "html": "Let <var>cborldDocument</var> be the result of the\n<a href=\"https://w3c.github.io/cbor-ld/#json-ld-to-cbor-ld-compression-algorithm\">\nJSON-LD to CBOR-LD Compression Algorithm</a>, passing <var>inputDocument</var>,\n<var>typeTable</var>, and <var>registryEntryId</var> as inputs. If an encoding error occurs, an\nerror <em class=\"rfc2119\">MUST</em> be raised."
+        },
+        {
+          "html": "Let <var>base45Value</var> be the result of the\n<a href=\"https://www.w3.org/TR/cid-1.0/#base-encode\">Base Encoding</a> algorithm, passing\n<var>cborldDocument</var> as <var>bytes</var>, the integer <code>45</code> as <var>targetBase</var>, and\n<code>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:</code> as the <var>baseAlphabet</var>."
+        },
+        {
+          "html": "Let <var>qrCodeText</var> be the result of concatenating the following values: <code>VC1-</code>,\n<code>R</code> (the <a href=\"https://www.w3.org/TR/cid-1.0/#multibase-0\">Multibase</a> prefix for base45), and\n<var>base45Value</var>."
+        },
+        {
+          "html": "Return <var>qrCodeText</var> as the encoded <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>, which can then be\nprovided to any QR Code library as text to be encoded as a QR Code image."
+        }
+      ]
+    },
+    {
+      "html": "The following algorithm specifies how to decode a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> that\nhas been encoded into a QR Code. Required inputs are a text string (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\">string</a>\n<var>inputDocument</var>), and a set of options (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a> <var>options</var>). The output is a\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> (<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>) or an error. Whenever this algorithm encodes\nstrings, it <em class=\"rfc2119\">MUST</em> use UTF-8 encoding.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Ensure that the <var>inputDocument</var> starts with the text <code>VC1-R</code>. If it does not an\nerror <em class=\"rfc2119\">MUST</em> be raised."
+        },
+        {
+          "html": "Let <var>base45Value</var> be <var>inputDocument</var> with the first five characters (<code>VC1-R</code>)\nremoved."
+        },
+        {
+          "html": "Let <var>cborldDocument</var> be the result of the\n<a href=\"https://www.w3.org/TR/cid-1.0/#base-decode\">Base Decoding</a> algorithm, passing\n<var>base45Value</var> as <var>sourceEncoding</var>, the integer <code>45</code> as <var>sourceBase</var>, and\n<code>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:</code> as the <var>baseAlphabet</var>."
+        },
+        {
+          "html": "Let <var>jsonldDocument</var> be the result of\n<a href=\"https://w3c.github.io/cbor-ld/#cbor-ld-to-json-ld-decompression-algorithm\">\nCBOR-LD to JSON-LD Decompression Algorithm</a>, passing <var>cborldDocument</var> as\nthe input. If a decoding error occurs, an error <em class=\"rfc2119\">MUST</em> be raised."
+        },
+        {
+          "html": "Return <var>jsonldDocument</var> as the decoded <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>."
+        }
+      ]
+    },
+    {
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>opticalData</var> to the data in the optical barcode to be secured."
+        },
+        {
+          "html": "Set <var>statusListEntryVerbose</var> to the <code>BitstringStatusListCredential</code>\n(as defined in the <cite><a data-matched-text=\"[[[VC-BITSTRING-STATUS-LIST]]]\" href=\"https://www.w3.org/TR/vc-bitstring-status-list/\">Bitstring Status List v1.0</a></cite> specification) that the issuer\nwishes to add to the <code>OpticalBarcodeCredential</code>."
+        },
+        {
+          "html": "Let <var>statusListEntryTerse</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>. Set <var>statusListEntryTerse</var>.<var>type</var> to <code>TerseBitstringStatusListEntry</code> and <var>statusListEntryTerse</var>.<var>index</var> to the integer representation of <var>statusListEntryVerbose</var>.<var>statusListIndex</var>."
+        },
+        {
+          "html": "Set <var>issuerUrl</var> to the URL the issuer wishes to use for credential verification."
+        },
+        {
+          "html": "Set <var>unsignedStatus</var> to an <code>OpticalBarcodeCredential</code> with\n<var>unsignedStatus</var>.<var>issuer</var> set to <var>issuerUrl</var> and <var>unsignedStatus</var>.<var>credentialStatus</var>\nset to <var>statusListEntryTerse</var>."
+        },
+        {
+          "html": "Set <var>signedStatusVc</var> to the result of using the algorithm in\n<a href=\"https://www.w3.org/TR/vc-barcodes-1.0/#add-proof-ecdsa-xi-2023\" class=\"sec-ref\"><bdi class=\"secno\">3.2.4.1 </bdi>Add Proof (ecdsa-xi-2023)</a> to sign <var>opticalData</var>\nand <var>unsignedStatus</var>."
+        },
+        {
+          "html": "Encode <var>signedStatusVc</var> using CBOR-LD [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-barcodes-1.0/#bib-cbor-ld\" title=\"Compact Binary Object Representation for Linked Data v0.7\">CBOR-LD</a></cite>] and add it to the designated area of the <var>opticalData</var>."
+        },
+        {
+          "html": "Generate the machine-readable credential (MRZ or PDF417)."
+        }
+      ]
+    },
+    {
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>securedDocument</var> to the data in the PDF417 or MRZ."
+        },
+        {
+          "html": "Set <var>verificationResult</var> to the result of applying the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-barcodes-1.0/#verify-proof-ecdsa-xi-2023\" data-matched-text=\"[[[#verify-proof-ecdsa-xi-2023]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.2.4.2 </bdi>Verify Proof (ecdsa-xi-2023)</a>to <var>securedDocument</var>."
+        },
+        {
+          "html": "Set <var>credential</var> to the <code>OpticalBarcodeCredential</code> in <var>securedDocument</var>."
+        },
+        {
+          "html": "Set <var>statusListEntry</var> to the result of applying the algorithm in Section\n<a href=\"https://www.w3.org/TR/vc-barcodes-1.0/#convert-status-list-entries\" data-matched-text=\"[[[#convert-status-list-entries]]]\" class=\"sec-ref\"><bdi class=\"secno\">3.2.3 </bdi>Convert Status List Entries</a> to <var>credential</var>."
+        },
+        {
+          "html": "Set <var>statusResult</var> to the result of applying the algorithm in\n<a href=\"https://www.w3.org/TR/vc-bitstring-status-list/#validate-algorithm\">\nBitstring Status List v1.0: Validate Algorithm</a> to <var>statusListEntry</var>."
+        },
+        {
+          "html": "Return (<var>validationResult</var>, <var>statusResult</var>)."
+        }
+      ]
+    },
+    {
+      "html": "After <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a> verification has been performed, the\nalgorithm takes an <code>OpticalBarcodeCredential</code> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>\n(<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct\">struct</a> <var>vc</var>), an integer <var>listLength</var> containing the number of entries\nin the <code>BitstringStatusListCredential</code> associated with <var>vc</var>, and a string\n<var>statusPurpose</var> (e.g., 'revocation', 'suspension'...) as input and returns\na 'BitstringStatusListEntry' object.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>result</var> to be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\">map</a>."
+        },
+        {
+          "html": "Set <var>listIndex</var> to <var>vc</var>.<var>credentialStatus</var>.<var>terseStatusListIndex</var>/<var>listLength</var> rounded down\nto the next lowest integer (i.e., apply the <code>floor()</code> operation)."
+        },
+        {
+          "html": "Set <var>statusListIndex</var> to <var>vc</var>.<var>credentialStatus</var>.<var>terseStatusListIndex</var> % <var>listLength</var>."
+        },
+        {
+          "html": "Set <var>result</var>.<var>statusListCredential</var> to the concatenation of the following values:\n<var>vc</var>.<var>credentialStatus</var>.<var>terseStatusListBaseUrl</var>, '/', <var>statusPurpose</var>, '/', <var>listIndex</var>."
+        },
+        {
+          "html": "Set <var>result</var>.<var>type</var> to 'BitstringStatusListEntry'."
+        },
+        {
+          "html": "Set <var>result</var>.<var>statusListIndex</var> to <var>statusListIndex</var>."
+        },
+        {
+          "html": "Set <var>result</var>.<var>statusPurpose</var> to <var>statusPurpose</var>."
+        },
+        {
+          "html": "Return <var>result</var>."
+        }
+      ]
+    },
+    {
+      "html": "The hashing algorithm is what is defined in the\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#hashing-ecdsa-rdfc-2019\">\nHashing (ecdsa-rdfc-2019)</a> section of the <cite><a data-matched-text=\"[[[VC-DI-ECDSA]]]\" href=\"https://www.w3.org/TR/vc-di-ecdsa/\">Data Integrity ECDSA Cryptosuites v1.0</a></cite> with step 3\nreplaced with the following two steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Let <var>opticalDataHash</var> be the result of applying the same hash algorithm\nthat was applied to <var>hashData</var> to the <var>opticalDataBytes</var>\nvalue."
+        },
+        {
+          "html": "Let <var>hashData</var> be the result of joining <var>proofConfigHash</var> (the\nfirst hash), <var>transformedDocumentHash</var> (the second hash), and\n<var>opticalDataHash</var> (the third hash)."
+        }
+      ]
+    },
+    {
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>dataToCanonicalize</var> to an empty array."
+        },
+        {
+          "html": "Set <var>bitfieldDecoded</var> to be first 22 bits of the length 24 bitstring resulting from decoding\n  <code>credentialSubject.protectedComponentIndex</code> from multibase-base64url to binary."
+        },
+        {
+          "html": "Set <var>fieldsAlphabetized</var> to be an array containing the 22 AAMVA mandatory PDF417 Element IDs\n  [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/vc-barcodes-1.0/#bib-aamva-dl-id-card-design-standard\" title=\"AAMVA DL/ID Card Design Standard (2020)\">aamva-dl-id-card-design-standard</a></cite>] sorted in Unicode code point order (i.e., ['DAC', 'DAD' ... 'DDG'])."
+        },
+        {
+          "html": "For each bit with value <code>1</code> in <var>bitfieldDecoded</var>:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Set the string <var>fieldName</var> to <var>fieldsAlphabetized</var>[<var>i</var>], where <var>i</var> is the index of the bit in <var>bitfieldDecoded</var>."
+            },
+            {
+              "html": "Set the string <var>fieldData</var> to the data that will be in the PDF417 associated with that field name."
+            },
+            {
+              "html": "Concatenate <var>fieldData</var> to the end of <var>fieldName</var>, concatenate a newline character (<code>\\n</code>, <code>U+000A</code>) to the end,\nand append the result to <var>dataToCanonicalize</var>."
+            }
+          ]
+        },
+        {
+          "html": "Set <var>canonicalizedData</var> to the result of sorting <var>dataToCanonicalize</var> in Unicode code point order and then applying a join operation\nto create a single string from the array."
+        },
+        {
+          "html": "Hash <var>canonicalizedData</var> and return the result."
+        }
+      ]
+    },
+    {
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var>dataToCanonicalize</var> to an empty array."
+        },
+        {
+          "html": "For each line in the Machine Readable Zone on the credential:",
+          "rationale": ".algorithm",
+          "steps": [
+            {
+              "html": "Set <var>mrzLine</var> to a string containing the data in that line."
+            },
+            {
+              "html": "Append a newline character to the end of <var>mrzLine</var> and append <var>mrzLine</var> to <var>dataToCanonicalize</var>."
+            }
+          ]
+        },
+        {
+          "html": "Set <var>canonicalizedData</var> to the result of ordering the elements of <var>dataToCanonicalize</var> to match the order they appear\non the credential and then applying a join operation to create a single string from the array."
+        },
+        {
+          "html": "Hash <var>canonicalizedData</var> and return the result."
+        }
+      ]
+    },
+    {
+      "html": "The proof configuration algorithm is what is defined in the\n<a href=\"https://www.w3.org/TR/vc-di-ecdsa/#proof-configuration-ecdsa-rdfc-2019\">\nProof Configuration (ecdsa-rdfc-2019)</a> section of the <cite><a data-matched-text=\"[[[VC-DI-ECDSA]]]\" href=\"https://www.w3.org/TR/vc-di-ecdsa/\">Data Integrity ECDSA Cryptosuites v1.0</a></cite> with\nstep 4 replaced with the following step:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <var>options</var>.<var>type</var> is not set to <code>DataIntegrityProof</code> and\n<var>proofConfig</var>.<var>cryptosuite</var> is not set to <code>ecdsa-xi-2023</code>, an\n<code>INVALID_PROOF_CONFIGURATION</code> error <em class=\"rfc2119\">MUST</em> be raised."
+        }
+      ]
+    }
+  ]
+}

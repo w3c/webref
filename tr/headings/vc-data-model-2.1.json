@@ -1,0 +1,1421 @@
+{
+  "spec": {
+    "title": "Verifiable Credentials Data Model v2.1",
+    "url": "https://www.w3.org/TR/vc-data-model-2.1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#title",
+      "level": 1,
+      "title": "Verifiable Credentials Data Model v2.1"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "what-is-a-verifiable-credential",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#what-is-a-verifiable-credential",
+      "level": 3,
+      "title": "What is a Verifiable Credential?",
+      "alternateIds": [
+        "x1-1-what-is-a-verifiable-credential"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "ecosystem-overview",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#ecosystem-overview",
+      "level": 3,
+      "title": "Ecosystem Overview",
+      "alternateIds": [
+        "x1-2-ecosystem-overview"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-3-conformance"
+      ],
+      "number": "1.3"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "alternateIds": [
+        "x2-terminology"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "core-data-model",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#core-data-model",
+      "level": 2,
+      "title": "Core Data Model",
+      "alternateIds": [
+        "x3-core-data-model"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "claims",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#claims",
+      "level": 3,
+      "title": "Claims",
+      "alternateIds": [
+        "x3-1-claims"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "credentials",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#credentials",
+      "level": 3,
+      "title": "Credentials",
+      "alternateIds": [
+        "x3-2-credentials"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "presentations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#presentations",
+      "level": 3,
+      "title": "Presentations",
+      "alternateIds": [
+        "x3-3-presentations"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "basic-concepts",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#basic-concepts",
+      "level": 2,
+      "title": "Basic Concepts",
+      "alternateIds": [
+        "x4-basic-concepts"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "getting-started",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#getting-started",
+      "level": 3,
+      "title": "Getting Started",
+      "alternateIds": [
+        "x4-1-getting-started"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "verifiable-credentials",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#verifiable-credentials",
+      "level": 3,
+      "title": "Verifiable Credentials",
+      "alternateIds": [
+        "x4-2-verifiable-credentials"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "contexts",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#contexts",
+      "level": 3,
+      "title": "Contexts",
+      "alternateIds": [
+        "x4-3-contexts"
+      ],
+      "number": "4.3"
+    },
+    {
+      "id": "identifiers",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#identifiers",
+      "level": 3,
+      "title": "Identifiers",
+      "alternateIds": [
+        "x4-4-identifiers"
+      ],
+      "number": "4.4"
+    },
+    {
+      "id": "sd-jwt-claim-Ey6huGa0QxpHCU46i2t3ipU00IkDOYO2VO5jJ_zcJFU",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-Ey6huGa0QxpHCU46i2t3ipU00IkDOYO2VO5jJ_zcJFU",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-TlylOUVn6Y0oL9pBQeDW7Z_QIyD_C13oynPInn-dPIo",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-TlylOUVn6Y0oL9pBQeDW7Z_QIyD_C13oynPInn-dPIo",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-vc32pUh6VrJ5eqffKtTm4uAPmMdEfeUrlJVy9hppC-4",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-vc32pUh6VrJ5eqffKtTm4uAPmMdEfeUrlJVy9hppC-4",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-9xoFtpYHW35NtkNdnRyyIEMjIPOB7u5E7vZXJvia4NM",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-9xoFtpYHW35NtkNdnRyyIEMjIPOB7u5E7vZXJvia4NM",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "types",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#types",
+      "level": 3,
+      "title": "Types",
+      "alternateIds": [
+        "x4-5-types"
+      ],
+      "number": "4.5"
+    },
+    {
+      "id": "sd-jwt-claim-_O30yG2A46dQK8iCCb2E7ozwU5hQPy72rke-yVDd6Bs",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-_O30yG2A46dQK8iCCb2E7ozwU5hQPy72rke-yVDd6Bs",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-xV32uE8T7A0tmjv5lj3KQey1YtChqqHtn875H9_2ITs",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-xV32uE8T7A0tmjv5lj3KQey1YtChqqHtn875H9_2ITs",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-gpBCBln8s78KvN0XKd7Lca6ZEzUpy9al_s2R5T6ilG8",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-gpBCBln8s78KvN0XKd7Lca6ZEzUpy9al_s2R5T6ilG8",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-xMQMAAsjr48KF-7JdXb29EuB0vc75HFppmjiP-nM_Iw",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-xMQMAAsjr48KF-7JdXb29EuB0vc75HFppmjiP-nM_Iw",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "names-and-descriptions",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#names-and-descriptions",
+      "level": 3,
+      "title": "Names and Descriptions",
+      "alternateIds": [
+        "x4-6-names-and-descriptions"
+      ],
+      "number": "4.6"
+    },
+    {
+      "id": "sd-jwt-claim-9qH6hDSyZnZJWdpzJ37XnUatdRY-Ju1owb8pLvglQw4",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-9qH6hDSyZnZJWdpzJ37XnUatdRY-Ju1owb8pLvglQw4",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-z4TqPwNzSA9H3yHoyp7hoaol5cud-Uicv2nwNduBc54",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-z4TqPwNzSA9H3yHoyp7hoaol5cud-Uicv2nwNduBc54",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-3d2mpVnFqcIZJdk7Qwgr0f8LHpi8-BGNAIaxo8ADQAc",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-3d2mpVnFqcIZJdk7Qwgr0f8LHpi8-BGNAIaxo8ADQAc",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-_kBfPHCOXf7OiUK3nZCjK6w4qisjvQewUB9loSBqFa8",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-_kBfPHCOXf7OiUK3nZCjK6w4qisjvQewUB9loSBqFa8",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-3DhcdZb-zHe5VfKKxUgQokJXQC1X8FqxQ0N6U7ixN9Q",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-3DhcdZb-zHe5VfKKxUgQokJXQC1X8FqxQ0N6U7ixN9Q",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "issuer",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#issuer",
+      "level": 3,
+      "title": "Issuer",
+      "alternateIds": [
+        "x4-7-issuer"
+      ],
+      "number": "4.7"
+    },
+    {
+      "id": "sd-jwt-claim-xC3dmI3rXGkOxS5AJ4ccvY0aco4GSWmWjmNX9Z1jLNM",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-xC3dmI3rXGkOxS5AJ4ccvY0aco4GSWmWjmNX9Z1jLNM",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-iL-a57viuWNWG931lWuGnF9L-1NlyapllT4Jjhfskvk",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-iL-a57viuWNWG931lWuGnF9L-1NlyapllT4Jjhfskvk",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-wahWLv0ZA6G_AcJ5UarwBbQ3hh5510x1Wuo0cVu49DE",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-wahWLv0ZA6G_AcJ5UarwBbQ3hh5510x1Wuo0cVu49DE",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-m0lvY2CKbgpvuphHIZFnl2UUg0BvREAwRzl2MwWMIEs",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-m0lvY2CKbgpvuphHIZFnl2UUg0BvREAwRzl2MwWMIEs",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-LF1jKLcNoarz9oujwoGRysNGMjCeVm6mGmps2iSCUk4",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-LF1jKLcNoarz9oujwoGRysNGMjCeVm6mGmps2iSCUk4",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-QxK7j_aO02Jr58CtZT2KD_yY_ZOyPCfC0RXNqpRbftU",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-QxK7j_aO02Jr58CtZT2KD_yY_ZOyPCfC0RXNqpRbftU",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-FslbC2U3i8UqugQRxV7mz36d_aHoGq_7HyyIe5WBI8c",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-FslbC2U3i8UqugQRxV7mz36d_aHoGq_7HyyIe5WBI8c",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-2_ZDTogWsNrC63Sy7LXftg-awcFbWyuaLbr3rHS1GUU",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-2_ZDTogWsNrC63Sy7LXftg-awcFbWyuaLbr3rHS1GUU",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-6wtLP82ld38hkbUOiH6fELHRc416g3gWYJWzW0wkpfs",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-6wtLP82ld38hkbUOiH6fELHRc416g3gWYJWzW0wkpfs",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "credential-subject",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#credential-subject",
+      "level": 3,
+      "title": "Credential Subject",
+      "alternateIds": [
+        "x4-8-credential-subject"
+      ],
+      "number": "4.8"
+    },
+    {
+      "id": "sd-jwt-claim-J_wiN7mhcJKJPOPJg2ttGC_sFRzt83zkd4VNqsf6EtQ",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-J_wiN7mhcJKJPOPJg2ttGC_sFRzt83zkd4VNqsf6EtQ",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-uNLDmtbHrfa7a-4GfounJIi0GpTinlcEABziu-a0jRo",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-uNLDmtbHrfa7a-4GfounJIi0GpTinlcEABziu-a0jRo",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-AtcQkG-ch_IomBUReoZFcfMvmxesv9GP1TdkrQyuMC0",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-AtcQkG-ch_IomBUReoZFcfMvmxesv9GP1TdkrQyuMC0",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-_UadAnuPGiOgcQYAI6bcdQ5wwtH7k5XoDbHz13ykGwU",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-_UadAnuPGiOgcQYAI6bcdQ5wwtH7k5XoDbHz13ykGwU",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "validity-period",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#validity-period",
+      "level": 3,
+      "title": "Validity Period",
+      "alternateIds": [
+        "x4-9-validity-period"
+      ],
+      "number": "4.9"
+    },
+    {
+      "id": "sd-jwt-claim-3HUditLs_s6a2gC1gGbzKibSPPa1z5sUZ4d1Mf16ydY",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-3HUditLs_s6a2gC1gGbzKibSPPa1z5sUZ4d1Mf16ydY",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-D4PEqUT-WOgkzuv62oRDtXkFwdAr-CASgsp8Ze7Akxk",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-D4PEqUT-WOgkzuv62oRDtXkFwdAr-CASgsp8Ze7Akxk",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-h2eM-wMVH3yrWnpdK5DKBWGq63BxYY7Osni5rdmXTMs",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-h2eM-wMVH3yrWnpdK5DKBWGq63BxYY7Osni5rdmXTMs",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-Mw-NgloRDzMRGLNV1l5I2I8td6Esf_3ssQWs0O7Wr9E",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-Mw-NgloRDzMRGLNV1l5I2I8td6Esf_3ssQWs0O7Wr9E",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "status",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#status",
+      "level": 3,
+      "title": "Status",
+      "alternateIds": [
+        "x4-10-status"
+      ],
+      "number": "4.10"
+    },
+    {
+      "id": "data-schemas",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#data-schemas",
+      "level": 3,
+      "title": "Data Schemas",
+      "alternateIds": [
+        "x4-11-data-schemas"
+      ],
+      "number": "4.11"
+    },
+    {
+      "id": "securing-mechanisms",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#securing-mechanisms",
+      "level": 3,
+      "title": "Securing Mechanisms",
+      "alternateIds": [
+        "x4-12-securing-mechanisms"
+      ],
+      "number": "4.12"
+    },
+    {
+      "id": "verifiable-presentations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#verifiable-presentations",
+      "level": 3,
+      "title": "Verifiable Presentations",
+      "alternateIds": [
+        "x4-13-verifiable-presentations"
+      ],
+      "number": "4.13"
+    },
+    {
+      "id": "enveloped-verifiable-credentials",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#enveloped-verifiable-credentials",
+      "level": 4,
+      "title": "Enveloped Verifiable Credentials"
+    },
+    {
+      "id": "enveloped-verifiable-presentations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#enveloped-verifiable-presentations",
+      "level": 4,
+      "title": "Enveloped Verifiable Presentations"
+    },
+    {
+      "id": "presentations-using-derived-credentials",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#presentations-using-derived-credentials",
+      "level": 4,
+      "title": "Presentations Using Derived Credentials"
+    },
+    {
+      "id": "presentations-including-holder-claims",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#presentations-including-holder-claims",
+      "level": 4,
+      "title": "Presentations Including Holder Claims"
+    },
+    {
+      "id": "advanced-concepts",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#advanced-concepts",
+      "level": 2,
+      "title": "Advanced Concepts",
+      "alternateIds": [
+        "x5-advanced-concepts"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "trust-model",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#trust-model",
+      "level": 3,
+      "title": "Trust Model",
+      "alternateIds": [
+        "x5-1-trust-model"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "extensibility",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#extensibility",
+      "level": 3,
+      "title": "Extensibility",
+      "alternateIds": [
+        "x5-2-extensibility"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "sd-jwt-claim-qePiv3rGBGs_cqcDqGYmxHWZhnAu9mHQzNlCmy_H7cM",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-qePiv3rGBGs_cqcDqGYmxHWZhnAu9mHQzNlCmy_H7cM",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-XcYlaqY5jlbX4XB9CdLPymWe6NFbu_i4UgDhsdFjpSs",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-XcYlaqY5jlbX4XB9CdLPymWe6NFbu_i4UgDhsdFjpSs",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-5bpwTj2u8s_eO87rfYdOAx5QgMMXwuaP3DM-8g3VCiI",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-5bpwTj2u8s_eO87rfYdOAx5QgMMXwuaP3DM-8g3VCiI",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "semantic-interoperability",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#semantic-interoperability",
+      "level": 4,
+      "title": "Semantic Interoperability"
+    },
+    {
+      "id": "integrity-of-related-resources",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#integrity-of-related-resources",
+      "level": 3,
+      "title": "Integrity of Related Resources",
+      "alternateIds": [
+        "x5-3-integrity-of-related-resources"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "refreshing",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#refreshing",
+      "level": 3,
+      "title": "Refreshing",
+      "alternateIds": [
+        "x5-4-refreshing"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "terms-of-use",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#terms-of-use",
+      "level": 3,
+      "title": "Terms of Use",
+      "alternateIds": [
+        "x5-5-terms-of-use"
+      ],
+      "number": "5.5"
+    },
+    {
+      "id": "evidence",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#evidence",
+      "level": 3,
+      "title": "Evidence",
+      "alternateIds": [
+        "x5-6-evidence"
+      ],
+      "number": "5.6"
+    },
+    {
+      "id": "zero-knowledge-proofs",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#zero-knowledge-proofs",
+      "level": 3,
+      "title": "Zero-Knowledge Proofs",
+      "alternateIds": [
+        "x5-7-zero-knowledge-proofs"
+      ],
+      "number": "5.7"
+    },
+    {
+      "id": "representing-time",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#representing-time",
+      "level": 3,
+      "title": "Representing Time",
+      "alternateIds": [
+        "x5-8-representing-time"
+      ],
+      "number": "5.8"
+    },
+    {
+      "id": "authorization",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#authorization",
+      "level": 3,
+      "title": "Authorization",
+      "alternateIds": [
+        "x5-9-authorization"
+      ],
+      "number": "5.9"
+    },
+    {
+      "id": "reserved-extension-points",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#reserved-extension-points",
+      "level": 3,
+      "title": "Reserved Extension Points",
+      "alternateIds": [
+        "x5-10-reserved-extension-points"
+      ],
+      "number": "5.10"
+    },
+    {
+      "id": "ecosystem-compatibility",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#ecosystem-compatibility",
+      "level": 3,
+      "title": "Ecosystem Compatibility",
+      "alternateIds": [
+        "x5-11-ecosystem-compatibility"
+      ],
+      "number": "5.11"
+    },
+    {
+      "id": "verifiable-credential-graphs",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#verifiable-credential-graphs",
+      "level": 3,
+      "title": "Verifiable Credential Graphs",
+      "alternateIds": [
+        "x5-12-verifiable-credential-graphs"
+      ],
+      "number": "5.12"
+    },
+    {
+      "id": "securing-mechanism-specifications",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#securing-mechanism-specifications",
+      "level": 3,
+      "title": "Securing Mechanism Specifications",
+      "alternateIds": [
+        "x5-13-securing-mechanism-specifications"
+      ],
+      "number": "5.13"
+    },
+    {
+      "id": "syntaxes",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#syntaxes",
+      "level": 2,
+      "title": "Syntaxes",
+      "alternateIds": [
+        "x6-syntaxes"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "json-ld",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#json-ld",
+      "level": 3,
+      "title": "JSON-LD",
+      "alternateIds": [
+        "x6-1-json-ld"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "notable-json-ld-features",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#notable-json-ld-features",
+      "level": 4,
+      "title": "Notable JSON-LD Features"
+    },
+    {
+      "id": "restrictions-on-json-ld",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#restrictions-on-json-ld",
+      "level": 4,
+      "title": "Restrictions on JSON-LD"
+    },
+    {
+      "id": "lists-and-arrays",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#lists-and-arrays",
+      "level": 4,
+      "title": "Lists and Arrays"
+    },
+    {
+      "id": "media-types",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#media-types",
+      "level": 3,
+      "title": "Media Types",
+      "alternateIds": [
+        "x6-2-media-types"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "media-type-precision",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#media-type-precision",
+      "level": 4,
+      "title": "Media Type Precision"
+    },
+    {
+      "id": "type-specific-credential-processing",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#type-specific-credential-processing",
+      "level": 3,
+      "title": "Type-Specific Credential Processing",
+      "alternateIds": [
+        "x6-3-type-specific-credential-processing"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "alternateIds": [
+        "x7-algorithms"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "verification",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#verification",
+      "level": 3,
+      "title": "Verification",
+      "alternateIds": [
+        "x7-1-verification"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "problem-details",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#problem-details",
+      "level": 3,
+      "title": "Problem Details",
+      "alternateIds": [
+        "x7-2-problem-details"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "x8-privacy-considerations"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "spectrum-of-privacy",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#spectrum-of-privacy",
+      "level": 3,
+      "title": "Spectrum of Privacy",
+      "alternateIds": [
+        "x8-1-spectrum-of-privacy"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "software-trust-boundaries",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#software-trust-boundaries",
+      "level": 3,
+      "title": "Software Trust Boundaries",
+      "alternateIds": [
+        "x8-2-software-trust-boundaries"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "personally-identifiable-information",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#personally-identifiable-information",
+      "level": 3,
+      "title": "Personally Identifiable Information",
+      "alternateIds": [
+        "x8-3-personally-identifiable-information"
+      ],
+      "number": "8.3"
+    },
+    {
+      "id": "identifier-based-correlation",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#identifier-based-correlation",
+      "level": 3,
+      "title": "Identifier-Based Correlation",
+      "alternateIds": [
+        "x8-4-identifier-based-correlation"
+      ],
+      "number": "8.4"
+    },
+    {
+      "id": "signature-based-correlation",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#signature-based-correlation",
+      "level": 3,
+      "title": "Signature-Based Correlation",
+      "alternateIds": [
+        "x8-5-signature-based-correlation"
+      ],
+      "number": "8.5"
+    },
+    {
+      "id": "metadata-based-correlation",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#metadata-based-correlation",
+      "level": 3,
+      "title": "Metadata-based Correlation",
+      "alternateIds": [
+        "x8-6-metadata-based-correlation"
+      ],
+      "number": "8.6"
+    },
+    {
+      "id": "device-tracking-and-fingerprinting",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#device-tracking-and-fingerprinting",
+      "level": 3,
+      "title": "Device Tracking and Fingerprinting",
+      "alternateIds": [
+        "x8-7-device-tracking-and-fingerprinting"
+      ],
+      "number": "8.7"
+    },
+    {
+      "id": "favor-abstract-claims",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#favor-abstract-claims",
+      "level": 3,
+      "title": "Favor Abstract Claims",
+      "alternateIds": [
+        "x8-8-favor-abstract-claims"
+      ],
+      "number": "8.8"
+    },
+    {
+      "id": "the-principle-of-data-minimization",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#the-principle-of-data-minimization",
+      "level": 3,
+      "title": "The Principle of Data Minimization",
+      "alternateIds": [
+        "x8-9-the-principle-of-data-minimization"
+      ],
+      "number": "8.9"
+    },
+    {
+      "id": "bearer-credentials",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#bearer-credentials",
+      "level": 3,
+      "title": "Bearer Credentials",
+      "alternateIds": [
+        "x8-10-bearer-credentials"
+      ],
+      "number": "8.10"
+    },
+    {
+      "id": "sd-jwt-claim-EmZqhpR4RiAHkaNc7zAko6r18vkuZw9D-QzQazzxUFg",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-EmZqhpR4RiAHkaNc7zAko6r18vkuZw9D-QzQazzxUFg",
+      "level": 3,
+      "title": "Claim: id"
+    },
+    {
+      "id": "sd-jwt-claim-v4l9lb22w-qmjXlYD_r38YCvTtOZXsMsiq-9cE5Y8VU",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-v4l9lb22w-qmjXlYD_r38YCvTtOZXsMsiq-9cE5Y8VU",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "sd-jwt-claim-WC0he3T7Swmloa8QV_FaOenBel1HSl0JDn0-CzzE6oU",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sd-jwt-claim-WC0he3T7Swmloa8QV_FaOenBel1HSl0JDn0-CzzE6oU",
+      "level": 3,
+      "title": "Claim: type"
+    },
+    {
+      "id": "correlation-during-validation",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#correlation-during-validation",
+      "level": 3,
+      "title": "Correlation During Validation",
+      "alternateIds": [
+        "x8-11-correlation-during-validation"
+      ],
+      "number": "8.11"
+    },
+    {
+      "id": "storage-providers-and-data-mining",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#storage-providers-and-data-mining",
+      "level": 3,
+      "title": "Storage Providers and Data Mining",
+      "alternateIds": [
+        "x8-12-storage-providers-and-data-mining"
+      ],
+      "number": "8.12"
+    },
+    {
+      "id": "aggregation-of-credentials",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#aggregation-of-credentials",
+      "level": 3,
+      "title": "Aggregation of Credentials",
+      "alternateIds": [
+        "x8-13-aggregation-of-credentials"
+      ],
+      "number": "8.13"
+    },
+    {
+      "id": "patterns-of-use",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#patterns-of-use",
+      "level": 3,
+      "title": "Patterns of Use",
+      "alternateIds": [
+        "x8-14-patterns-of-use"
+      ],
+      "number": "8.14"
+    },
+    {
+      "id": "legal-processes",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#legal-processes",
+      "level": 3,
+      "title": "Legal Processes",
+      "alternateIds": [
+        "x8-15-legal-processes"
+      ],
+      "number": "8.15"
+    },
+    {
+      "id": "sharing-information-with-the-wrong-party",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#sharing-information-with-the-wrong-party",
+      "level": 3,
+      "title": "Sharing Information with the Wrong Party",
+      "alternateIds": [
+        "x8-16-sharing-information-with-the-wrong-party"
+      ],
+      "number": "8.16"
+    },
+    {
+      "id": "data-theft",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#data-theft",
+      "level": 3,
+      "title": "Data Theft",
+      "alternateIds": [
+        "x8-17-data-theft"
+      ],
+      "number": "8.17"
+    },
+    {
+      "id": "frequency-of-claim-issuance",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#frequency-of-claim-issuance",
+      "level": 3,
+      "title": "Frequency of Claim Issuance",
+      "alternateIds": [
+        "x8-18-frequency-of-claim-issuance"
+      ],
+      "number": "8.18"
+    },
+    {
+      "id": "prefer-single-use-credentials",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#prefer-single-use-credentials",
+      "level": 3,
+      "title": "Prefer Single-Use Credentials",
+      "alternateIds": [
+        "x8-19-prefer-single-use-credentials"
+      ],
+      "number": "8.19"
+    },
+    {
+      "id": "private-browsing",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#private-browsing",
+      "level": 3,
+      "title": "Private Browsing",
+      "alternateIds": [
+        "x8-20-private-browsing"
+      ],
+      "number": "8.20"
+    },
+    {
+      "id": "issuer-cooperation-impacts-on-privacy",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#issuer-cooperation-impacts-on-privacy",
+      "level": 3,
+      "title": "Issuer Cooperation Impacts on Privacy",
+      "alternateIds": [
+        "x8-21-issuer-cooperation-impacts-on-privacy"
+      ],
+      "number": "8.21"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "x9-security-considerations"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "cryptography-suites-and-libraries",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#cryptography-suites-and-libraries",
+      "level": 3,
+      "title": "Cryptography Suites and Libraries",
+      "alternateIds": [
+        "x9-1-cryptography-suites-and-libraries"
+      ],
+      "number": "9.1"
+    },
+    {
+      "id": "key-management",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#key-management",
+      "level": 3,
+      "title": "Key Management",
+      "alternateIds": [
+        "x9-2-key-management"
+      ],
+      "number": "9.2"
+    },
+    {
+      "id": "content-integrity-protection",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#content-integrity-protection",
+      "level": 3,
+      "title": "Content Integrity Protection",
+      "alternateIds": [
+        "x9-3-content-integrity-protection"
+      ],
+      "number": "9.3"
+    },
+    {
+      "id": "unsigned-claims",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#unsigned-claims",
+      "level": 3,
+      "title": "Unsigned Claims",
+      "alternateIds": [
+        "x9-4-unsigned-claims"
+      ],
+      "number": "9.4"
+    },
+    {
+      "id": "man-in-the-middle-mitm-replay-and-cloning-attacks",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#man-in-the-middle-mitm-replay-and-cloning-attacks",
+      "level": 3,
+      "title": "Man-in-the-Middle (MITM), Replay, and Cloning Attacks",
+      "alternateIds": [
+        "x9-5-man-in-the-middle-mitm-replay-and-cloning-attacks"
+      ],
+      "number": "9.5"
+    },
+    {
+      "id": "man-in-the-middle-mitm-attack",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#man-in-the-middle-mitm-attack",
+      "level": 4,
+      "title": "Man-in-the-Middle (MITM) Attack",
+      "alternateIds": [
+        "x9-5-1-man-in-the-middle-mitm-attack"
+      ],
+      "number": "9.5.1"
+    },
+    {
+      "id": "replay-attack",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#replay-attack",
+      "level": 4,
+      "title": "Replay Attack",
+      "alternateIds": [
+        "x9-5-2-replay-attack"
+      ],
+      "number": "9.5.2"
+    },
+    {
+      "id": "spoofing-attack",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#spoofing-attack",
+      "level": 4,
+      "title": "Spoofing Attack",
+      "alternateIds": [
+        "x9-5-3-spoofing-attack"
+      ],
+      "number": "9.5.3"
+    },
+    {
+      "id": "highly-dynamic-information",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#highly-dynamic-information",
+      "level": 3,
+      "title": "Highly Dynamic Information",
+      "alternateIds": [
+        "x9-6-highly-dynamic-information"
+      ],
+      "number": "9.6"
+    },
+    {
+      "id": "device-theft-and-impersonation",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#device-theft-and-impersonation",
+      "level": 3,
+      "title": "Device Theft and Impersonation",
+      "alternateIds": [
+        "x9-7-device-theft-and-impersonation"
+      ],
+      "number": "9.7"
+    },
+    {
+      "id": "acceptable-use",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#acceptable-use",
+      "level": 3,
+      "title": "Acceptable Use",
+      "alternateIds": [
+        "x9-8-acceptable-use"
+      ],
+      "number": "9.8"
+    },
+    {
+      "id": "unauthorized-use",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#unauthorized-use",
+      "level": 4,
+      "title": "Unauthorized Use",
+      "alternateIds": [
+        "x9-8-1-unauthorized-use"
+      ],
+      "number": "9.8.1"
+    },
+    {
+      "id": "inappropriate-use",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#inappropriate-use",
+      "level": 4,
+      "title": "Inappropriate Use",
+      "alternateIds": [
+        "x9-8-2-inappropriate-use"
+      ],
+      "number": "9.8.2"
+    },
+    {
+      "id": "code-injection",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#code-injection",
+      "level": 3,
+      "title": "Code Injection",
+      "alternateIds": [
+        "x9-9-code-injection"
+      ],
+      "number": "9.9"
+    },
+    {
+      "id": "accessibility-considerations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#accessibility-considerations",
+      "level": 2,
+      "title": "10. Accessibility Considerations",
+      "alternateIds": [
+        "x10-accessibility-considerations"
+      ]
+    },
+    {
+      "id": "data-first-approaches",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#data-first-approaches",
+      "level": 3,
+      "title": "Data First Approaches",
+      "alternateIds": [
+        "x10-1-data-first-approaches"
+      ],
+      "number": "10.1"
+    },
+    {
+      "id": "internationalization-considerations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#internationalization-considerations",
+      "level": 2,
+      "title": "11. Internationalization Considerations",
+      "alternateIds": [
+        "x11-internationalization-considerations"
+      ]
+    },
+    {
+      "id": "language-and-base-direction",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#language-and-base-direction",
+      "level": 3,
+      "title": "Language and Base Direction",
+      "alternateIds": [
+        "x11-1-language-and-base-direction"
+      ],
+      "number": "11.1"
+    },
+    {
+      "id": "providing-default-language-and-direction",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#providing-default-language-and-direction",
+      "level": 3,
+      "title": "Providing Default Language and Direction",
+      "alternateIds": [
+        "x11-2-providing-default-language-and-direction"
+      ],
+      "number": "11.2"
+    },
+    {
+      "id": "validation",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#validation",
+      "level": 2,
+      "title": "Validation",
+      "alternateIds": [
+        "a-validation"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "credential-type",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#credential-type",
+      "level": 3,
+      "title": "Credential Type",
+      "alternateIds": [
+        "a-1-credential-type"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "credential-subject-0",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#credential-subject-0",
+      "level": 3,
+      "title": "Credential Subject",
+      "alternateIds": [
+        "a-2-credential-subject"
+      ],
+      "number": "A.2"
+    },
+    {
+      "id": "issuer-0",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#issuer-0",
+      "level": 3,
+      "title": "Issuer",
+      "alternateIds": [
+        "a-3-issuer"
+      ],
+      "number": "A.3"
+    },
+    {
+      "id": "holder",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#holder",
+      "level": 3,
+      "title": "Holder",
+      "alternateIds": [
+        "a-4-holder"
+      ],
+      "number": "A.4"
+    },
+    {
+      "id": "issuance-date",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#issuance-date",
+      "level": 3,
+      "title": "Issuance Date",
+      "alternateIds": [
+        "a-5-issuance-date"
+      ],
+      "number": "A.5"
+    },
+    {
+      "id": "proofs-signatures",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#proofs-signatures",
+      "level": 3,
+      "title": "Proofs (Signatures)",
+      "alternateIds": [
+        "a-6-proofs-signatures"
+      ],
+      "number": "A.6"
+    },
+    {
+      "id": "validity-periods",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#validity-periods",
+      "level": 3,
+      "title": "Validity Periods",
+      "alternateIds": [
+        "a-7-validity-periods"
+      ],
+      "number": "A.7"
+    },
+    {
+      "id": "status-0",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#status-0",
+      "level": 3,
+      "title": "Status",
+      "alternateIds": [
+        "a-8-status"
+      ],
+      "number": "A.8"
+    },
+    {
+      "id": "schema",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#schema",
+      "level": 3,
+      "title": "Schema",
+      "alternateIds": [
+        "a-9-schema"
+      ],
+      "number": "A.9"
+    },
+    {
+      "id": "fitness-for-purpose",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#fitness-for-purpose",
+      "level": 3,
+      "title": "Fitness for Purpose",
+      "alternateIds": [
+        "a-10-fitness-for-purpose"
+      ],
+      "number": "A.10"
+    },
+    {
+      "id": "artificial-intelligence-and-machine-learning",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#artificial-intelligence-and-machine-learning",
+      "level": 3,
+      "title": "\"Artificial Intelligence\" and \"Machine Learning\"",
+      "alternateIds": [
+        "a-11-artificial-intelligence-and-machine-learning"
+      ],
+      "number": "A.11"
+    },
+    {
+      "id": "contexts-vocabularies-types-and-credential-schemas",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#contexts-vocabularies-types-and-credential-schemas",
+      "level": 2,
+      "title": "Contexts, Vocabularies, Types, and Credential Schemas",
+      "alternateIds": [
+        "b-contexts-vocabularies-types-and-credential-schemas"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "base-context",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#base-context",
+      "level": 3,
+      "title": "Base Context",
+      "alternateIds": [
+        "b-1-base-context"
+      ],
+      "number": "B.1"
+    },
+    {
+      "id": "vocabularies",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#vocabularies",
+      "level": 3,
+      "title": "Vocabularies",
+      "alternateIds": [
+        "b-2-vocabularies"
+      ],
+      "number": "B.2"
+    },
+    {
+      "id": "datatypes",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#datatypes",
+      "level": 3,
+      "title": "Datatypes",
+      "alternateIds": [
+        "b-3-datatypes"
+      ],
+      "number": "B.3"
+    },
+    {
+      "id": "the-sristring-datatype",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#the-sristring-datatype",
+      "level": 4,
+      "title": "The sriString Datatype",
+      "alternateIds": [
+        "b-3-1-the-sristring-datatype"
+      ],
+      "number": "B.3.1"
+    },
+    {
+      "id": "differences-between-contexts-types-and-credentialschemas",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#differences-between-contexts-types-and-credentialschemas",
+      "level": 3,
+      "title": "Differences between Contexts, Types, and CredentialSchemas",
+      "alternateIds": [
+        "b-4-differences-between-contexts-types-and-credentialschemas"
+      ],
+      "number": "B.4"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#iana-considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "alternateIds": [
+        "c-iana-considerations"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "vc-ld-media-type",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#vc-ld-media-type",
+      "level": 3,
+      "title": "application/vc",
+      "alternateIds": [
+        "c-1-application-vc"
+      ],
+      "number": "C.1"
+    },
+    {
+      "id": "vp-ld-media-type",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#vp-ld-media-type",
+      "level": 3,
+      "title": "application/vp",
+      "alternateIds": [
+        "c-2-application-vp"
+      ],
+      "number": "C.2"
+    },
+    {
+      "id": "additional-diagrams-for-verifiable-presentations",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#additional-diagrams-for-verifiable-presentations",
+      "level": 2,
+      "title": "Additional Diagrams for Verifiable Presentations",
+      "alternateIds": [
+        "d-additional-diagrams-for-verifiable-presentations"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "revision-history",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#revision-history",
+      "level": 2,
+      "title": "Revision History",
+      "alternateIds": [
+        "e-revision-history"
+      ],
+      "number": "E"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "f-acknowledgements"
+      ],
+      "number": "F"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "g-references"
+      ],
+      "number": "G"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "g-1-normative-references"
+      ],
+      "number": "G.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/vc-data-model-2.1/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "g-2-informative-references"
+      ],
+      "number": "G.2"
+    }
+  ]
+}
