@@ -1,0 +1,10 @@
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+interface mixin HTMLOrSVGOrMathMLElement {
+  [SameObject] readonly attribute DOMStringMap dataset;
+  attribute DOMString nonce; // intentionally no [CEReactions]
+
+  [CEReactions, Reflect] attribute boolean autofocus;
+  [CEReactions, ReflectSetter] attribute long tabIndex;
+  undefined focus(optional FocusOptions options = {});
+  undefined blur();
+};

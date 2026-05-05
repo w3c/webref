@@ -44,11 +44,11 @@
           "includes": "GlobalEventHandlers"
         },
         {
-          "fragment": "MathMLElement includes HTMLOrSVGElement;",
+          "fragment": "MathMLElement includes HTMLOrSVGOrMathMLElement;",
           "type": "includes",
           "extAttrs": [],
           "target": "MathMLElement",
-          "includes": "HTMLOrSVGElement"
+          "includes": "HTMLOrSVGOrMathMLElement"
         }
       ]
     },
@@ -62,7 +62,7 @@
       "MathMLElement": [
         "Element",
         "GlobalEventHandlers",
-        "HTMLOrSVGElement"
+        "HTMLOrSVGOrMathMLElement"
       ]
     },
     "externalDependencies": [

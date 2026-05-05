@@ -63,7 +63,7 @@
           "title": "HTML Standard",
           "url": "https://html.spec.whatwg.org/multipage/"
         },
-        "fragment": "HTMLElement includes HTMLOrSVGElement;"
+        "fragment": "HTMLElement includes HTMLOrSVGOrMathMLElement;"
       },
       {
         "spec": {
@@ -526,14 +526,14 @@
         "includes": []
       },
       {
-        "name": "HTMLOrSVGElement",
+        "name": "HTMLOrSVGOrMathMLElement",
         "type": "interface mixin",
         "defined": {
           "spec": {
             "title": "HTML Standard",
             "url": "https://html.spec.whatwg.org/multipage/"
           },
-          "fragment": "interface mixin HTMLOrSVGElement {\n  [SameObject] readonly attribute DOMStringMap dataset;\n  attribute DOMString nonce; // intentionally no [CEReactions]\n\n  [CEReactions, Reflect] attribute boolean autofocus;\n  [CEReactions, ReflectSetter] attribute long tabIndex;\n  undefined focus(optional FocusOptions options = {});\n  undefined blur();\n};",
+          "fragment": "interface mixin HTMLOrSVGOrMathMLElement {\n  [SameObject] readonly attribute DOMStringMap dataset;\n  attribute DOMString nonce; // intentionally no [CEReactions]\n\n  [CEReactions, Reflect] attribute boolean autofocus;\n  [CEReactions, ReflectSetter] attribute long tabIndex;\n  undefined focus(optional FocusOptions options = {});\n  undefined blur();\n};",
           "href": "https://html.spec.whatwg.org/multipage/dom.html#htmlorsvgelement"
         },
         "extended": [],

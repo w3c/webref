@@ -8749,11 +8749,11 @@
           "includes": "GlobalEventHandlers"
         },
         {
-          "fragment": "SVGElement includes HTMLOrSVGElement;",
+          "fragment": "SVGElement includes HTMLOrSVGOrMathMLElement;",
           "type": "includes",
           "extAttrs": [],
           "target": "SVGElement",
-          "includes": "HTMLOrSVGElement"
+          "includes": "HTMLOrSVGOrMathMLElement"
         }
       ],
       "SVGGraphicsElement": [
@@ -9228,7 +9228,7 @@
         "SVGSVGElement",
         "SVGElement",
         "GlobalEventHandlers",
-        "HTMLOrSVGElement"
+        "HTMLOrSVGOrMathMLElement"
       ],
       "SVGBoundingBoxOptions": [],
       "SVGGraphicsElement": [

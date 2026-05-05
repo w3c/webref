@@ -1674,10 +1674,10 @@
         "partial": false,
         "href": "https://html.spec.whatwg.org/multipage/dom.html#htmlunknownelement"
       },
-      "HTMLOrSVGElement": {
-        "fragment": "interface mixin HTMLOrSVGElement {\n  [SameObject] readonly attribute DOMStringMap dataset;\n  attribute DOMString nonce; // intentionally no [CEReactions]\n\n  [CEReactions, Reflect] attribute boolean autofocus;\n  [CEReactions, ReflectSetter] attribute long tabIndex;\n  undefined focus(optional FocusOptions options = {});\n  undefined blur();\n};",
+      "HTMLOrSVGOrMathMLElement": {
+        "fragment": "interface mixin HTMLOrSVGOrMathMLElement {\n  [SameObject] readonly attribute DOMStringMap dataset;\n  attribute DOMString nonce; // intentionally no [CEReactions]\n\n  [CEReactions, Reflect] attribute boolean autofocus;\n  [CEReactions, ReflectSetter] attribute long tabIndex;\n  undefined focus(optional FocusOptions options = {});\n  undefined blur();\n};",
         "type": "interface mixin",
-        "name": "HTMLOrSVGElement",
+        "name": "HTMLOrSVGOrMathMLElement",
         "inheritance": null,
         "members": [
           {
@@ -42183,11 +42183,11 @@
           "includes": "ElementContentEditable"
         },
         {
-          "fragment": "HTMLElement includes HTMLOrSVGElement;",
+          "fragment": "HTMLElement includes HTMLOrSVGOrMathMLElement;",
           "type": "includes",
           "extAttrs": [],
           "target": "HTMLElement",
-          "includes": "HTMLOrSVGElement"
+          "includes": "HTMLOrSVGOrMathMLElement"
         }
       ],
       "HTMLLinkElement": [
@@ -46992,7 +46992,7 @@
         "TogglePopoverOptions",
         "GlobalEventHandlers",
         "ElementContentEditable",
-        "HTMLOrSVGElement"
+        "HTMLOrSVGOrMathMLElement"
       ],
       "ShowPopoverOptions": [
         "HTMLElement"
@@ -47003,7 +47003,7 @@
       "HTMLUnknownElement": [
         "HTMLElement"
       ],
-      "HTMLOrSVGElement": [
+      "HTMLOrSVGOrMathMLElement": [
         "DOMStringMap",
         "FocusOptions"
       ],
