@@ -1,0 +1,164 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 User Interfaces",
+    "url": "https://w3c.github.io/data-shapes/shacl12-ui/"
+  },
+  "algorithms": [
+    {
+      "html": "Steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <strong>Shape node</strong> has a <strong>Widget IRI</strong> defined via <strong>Widget predicate:</strong>",
+          "rationale": "find",
+          "steps": [
+            {
+              "html": "Find the <code>shui:WidgetAcceptMatcher</code> instance <code>AM</code> with a matching <code>shui:widget</code> value."
+            },
+            {
+              "html": "If there is no <strong>Accept Matcher</strong> defined for the widget, return the <strong>Widget IRI</strong>."
+            },
+            {
+              "html": "Call the <strong>matcher</strong> function with the following inputs:\n                <ul>\n                  <li><strong>Focus node</strong> — The focus node or undefined if there are no focus nodes.</li>\n                  <li><strong>Data graph</strong> — The data graph containing the focus node.</li>\n                  <li><strong>Shape node</strong> — The shape node associated with the property shape.</li>\n                  <li><strong>Shapes graph</strong> — The shapes graph containing the shape node.</li>\n                  <li><strong>Matcher node</strong> — The <strong>Accept Matcher</strong> <code>AM</code>.</li>\n                  <li><strong>Scoring graph</strong> — The RDF graph containing <code>shui:WidgetScore</code> instances that define how widgets are scored.</li>\n                </ul>"
+            },
+            {
+              "html": "If the return value is <code>true</code>, return the <strong>Widget IRI</strong>."
+            },
+            {
+              "html": "If the return value is <code>false</code>, continue with the next step. When a widget is not accepted it falls through to scoring."
+            }
+          ]
+        },
+        {
+          "html": "Call the <strong>score</strong> function with the following inputs and store the return value in an array <code>matches</code>:\n            <ul>\n              <li><strong>Best</strong> — A boolean flag; must be <code>false</code>.</li>\n              <li><strong>Focus node</strong> — The focus node or undefined if there is no focus node.</li>\n              <li><strong>Data graph</strong> — The data graph containing the focus node.</li>\n              <li><strong>Shape node</strong> — The shape node associated with the property shape.</li>\n              <li><strong>Shapes graph</strong> — The shapes graph containing the shape node.</li>\n              <li><strong>Scoring graph</strong> — The RDF graph containing <code>shui:WidgetScore</code> instances that define how widgets are scored.</li>\n            </ul>"
+        },
+        {
+          "html": "For each score result in array <code>matches</code>",
+          "rationale": "find",
+          "steps": [
+            {
+              "html": "Get the <strong>Widget IRI</strong> from the score result as <code>WI</code>."
+            },
+            {
+              "html": "Find the <code>shui:WidgetAcceptMatcher</code> instance <code>AM</code> with a matching <code>shui:widget</code> value."
+            },
+            {
+              "html": "If there is no <strong>Accept Matcher</strong> defined for the widget, return <code>WI</code>."
+            },
+            {
+              "html": "Call the <strong>matcher</strong> function with the following inputs:\n                <ul>\n                  <li><strong>Focus node</strong> — The focus node or undefined if there is no focus node.</li>\n                  <li><strong>Data graph</strong> — The data graph containing the focus node.</li>\n                  <li><strong>Shape node</strong> — The shape node associated with the property shape.</li>\n                  <li><strong>Shapes graph</strong> — The shapes graph containing the shape node.</li>\n                  <li><strong>Matcher node</strong> — The <strong>Accept Matcher</strong> <code>AM</code>.</li>\n                  <li><strong>Scoring graph</strong> — The RDF graph containing <code>shui:WidgetScore</code> instances that define how widgets are scored.</li>\n                </ul>"
+            },
+            {
+              "html": "If the return value is <code>true</code>, return <code>WI</code>."
+            },
+            {
+              "html": "If the return value is <code>false</code>, continue with the next iteration."
+            }
+          ]
+        },
+        {
+          "html": "If there are no more <strong>score results</strong> in array <code>matches</code>, return undefined."
+        }
+      ]
+    },
+    {
+      "html": "Steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <strong>shape node</strong> is empty, return <code>true</code>."
+        },
+        {
+          "html": "If the <strong>focus node</strong> is not a subject in the <strong>target graph</strong>, return <code>false</code>."
+        },
+        {
+          "html": "Validate the <strong>focus node</strong> according to standard SHACL validation with the following:\n            <ul>\n              <li><strong>Focus node</strong> as <strong>focus node</strong>.</li>\n              <li><strong>Target graph</strong> as <strong>data graph</strong>.</li>\n              <li><strong>Shape node</strong> as <strong>shape node</strong>.</li>\n              <li><strong>Shapes graph</strong> as <strong>shapes graph</strong>.</li>\n            </ul>"
+        },
+        {
+          "html": "If the validation produces violations, return <code>false</code>."
+        },
+        {
+          "html": "If the validation conforms, return <code>true</code>."
+        }
+      ]
+    },
+    {
+      "html": "Steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If no <strong>focus node</strong> is given, a value for the <code>shui:dataGraphShape</code> property\n            is present, and no value for the <code>shui:shapesGraphShape</code> is present, return <code>false</code>."
+        },
+        {
+          "html": "Call the validation function with the following:\n            <ul>\n              <li><strong>Shape node</strong> as <strong>focus node</strong>.</li>\n              <li><strong>Shapes graph</strong> as <strong>target graph</strong>.</li>\n              <li>The value of the <code>shui:shapesGraphShape</code> property of <strong>matcher node</strong> as <strong>shape node</strong>.</li>\n              <li><strong>Scoring graph</strong> as <strong>shapes graph</strong>.</li>\n            </ul>"
+        },
+        {
+          "html": "If the function returns <code>false</code>, return <code>false</code>."
+        },
+        {
+          "html": "If no focus node is given, return <code>true</code>."
+        },
+        {
+          "html": "Call the validation function with the following:\n            <ul>\n              <li><strong>Focus node</strong> as <strong>focus node</strong>.</li>\n              <li><strong>Data graph</strong> as <strong>target graph</strong>.</li>\n              <li>The value of the <code>shui:dataGraphShape</code> property of <strong>matcher node</strong> as <strong>shape node</strong>.</li>\n              <li><strong>Shapes graph</strong> as <strong>shapes graph</strong>.</li>\n            </ul>"
+        },
+        {
+          "html": "If the function returns <code>false</code>, return <code>false</code>."
+        },
+        {
+          "html": "Otherwise, return <code>true</code>."
+        }
+      ]
+    },
+    {
+      "html": "Steps:",
+      "rationale": "initialize",
+      "steps": [
+        {
+          "html": "Initialize an empty list <code>results</code>."
+        },
+        {
+          "html": "Collect instances of <code>shui:WidgetScore</code> in the <strong>scoring graph</strong>, sorted by <code>shui:score</code> \n            in descending order and then lexicographically by the Unicode codepoint values of <code>shui:widget</code>."
+        },
+        {
+          "html": "For each instance <code>S</code> of type <code>shui:WidgetScore</code>",
+          "rationale": "find",
+          "steps": [
+            {
+              "html": "Find the <code>shui:WidgetAcceptMatcher</code> instance <code>M</code> with a matching <code>shui:widget</code> value."
+            },
+            {
+              "html": "Call the matcher function with the following:\n                <ul>\n                  <li><strong>Focus node</strong> as <strong>focus node</strong>.</li>\n                  <li><strong>Data graph</strong> as <strong>data graph</strong>.</li>\n                  <li><strong>Shape node</strong> as <strong>shape node</strong>.</li>\n                  <li><strong>Shapes graph</strong> as <strong>shapes graph</strong>.</li>\n                  <li><code>M</code> as <strong>matcher node</strong>.</li>\n                  <li><strong>Scoring graph</strong> as <strong>scoring graph</strong>.</li>\n                </ul>"
+            },
+            {
+              "html": "If the matcher function returns <code>true</code>, and <strong>best</strong> is <code>true</code>, return the object with the following:\n                <ul>\n                  <li>The <code>shui:widget</code> of <code>S</code>.</li>\n                  <li>The IRI of <code>S</code>.</li>\n                  <li>The <code>shui:score</code> of <code>S</code>.</li>\n                </ul>"
+            },
+            {
+              "html": "If the matcher function returns <code>true</code>, record widget score by appending the object to <code>results</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>results</code>."
+        }
+      ]
+    },
+    {
+      "html": "Steps:",
+      "rationale": "find",
+      "steps": [
+        {
+          "html": "Find the <code>shui:WidgetAcceptMatcher</code> instance <code>M</code> with a matching <code>shui:widget</code> value."
+        },
+        {
+          "html": "If no such instance <code>M</code> exists, return <code>true</code>."
+        },
+        {
+          "html": "Call the matcher function with the following:\n            <ul>\n              <li><strong>Focus node</strong> as <strong>focus node</strong>.</li>\n              <li><strong>Data graph</strong> as <strong>data graph</strong>.</li>\n              <li><strong>Shape node</strong> as <strong>shape node</strong>.</li>\n              <li><strong>Shapes graph</strong> as <strong>shapes graph</strong>.</li>\n              <li><code>M</code> as <strong>matcher node</strong>.</li>\n              <li><strong>Scoring graph</strong> as <strong>scoring graph</strong>.</li>\n            </ul>"
+        },
+        {
+          "html": "Return the return value of the matcher function."
+        }
+      ]
+    }
+  ]
+}
