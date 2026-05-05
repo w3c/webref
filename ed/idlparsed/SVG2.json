@@ -4135,27 +4135,11 @@
         "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#InterfaceGetSVGDocument"
       },
       "SVGStyleElement": {
-        "fragment": "[Exposed=Window]\ninterface SVGStyleElement : SVGElement {\n  attribute DOMString type;\n  attribute DOMString media;\n  attribute DOMString title;\n  attribute boolean disabled;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGStyleElement : SVGElement {\n  attribute DOMString media;\n  attribute DOMString title;\n  attribute boolean disabled;\n\n  // obsolete members\n  attribute DOMString type;\n};",
         "type": "interface",
         "name": "SVGStyleElement",
         "inheritance": "SVGElement",
         "members": [
-          {
-            "type": "attribute",
-            "name": "type",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/styling.html#__svg__SVGStyleElement__type"
-          },
           {
             "type": "attribute",
             "name": "media",
@@ -4202,6 +4186,22 @@
             "extAttrs": [],
             "special": "",
             "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://w3c.github.io/svgwg/svg2-draft/styling.html#__svg__SVGStyleElement__type"
           }
         ],
         "extAttrs": [
