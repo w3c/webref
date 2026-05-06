@@ -1538,7 +1538,7 @@
     },
     {
       "name": "image()",
-      "href": "https://drafts.csswg.org/css-images-4/#funcdef-image",
+      "href": "https://drafts.csswg.org/css-images-5/#funcdef-image",
       "syntax": "image( <image-tags>? [ <image-src>? , <color>? ]! )",
       "extended": []
     },
@@ -8527,7 +8527,7 @@
         "flow-tolerance",
         "flowTolerance"
       ],
-      "syntax": "normal | <length-percentage> | infinite",
+      "syntax": "normal | <length-percentage [0,∞]> | infinite",
       "extended": []
     },
     {
@@ -12715,7 +12715,7 @@
     {
       "name": "position-visibility",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-visibility",
-      "initial": "anchors-visible",
+      "initial": "anchor-visible",
       "appliesTo": "absolutely positioned boxes",
       "inherited": "no",
       "percentages": "n/a",
@@ -12726,7 +12726,7 @@
         "position-visibility",
         "positionVisibility"
       ],
-      "syntax": "always | [ anchors-valid || anchors-visible || no-overflow ]",
+      "syntax": "always | [ anchor-valid || anchor-visible || no-overflow ]",
       "extended": []
     },
     {
@@ -19290,13 +19290,13 @@
     },
     {
       "name": "image-src",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-image-src",
+      "href": "https://drafts.csswg.org/css-images-5/#typedef-image-src",
       "syntax": "[ <url> | <string> ]",
       "extended": []
     },
     {
       "name": "image-tags",
-      "href": "https://drafts.csswg.org/css-images-4/#typedef-image-tags",
+      "href": "https://drafts.csswg.org/css-images-5/#typedef-image-tags",
       "syntax": "[ ltr | rtl ]",
       "extended": []
     },

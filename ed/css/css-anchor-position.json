@@ -471,8 +471,8 @@
     {
       "name": "position-visibility",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#propdef-position-visibility",
-      "value": "always | [ anchors-valid || anchors-visible || no-overflow ]",
-      "initial": "anchors-visible",
+      "value": "always | [ anchor-valid || anchor-visible || no-overflow ]",
+      "initial": "anchor-visible",
       "appliesTo": "absolutely positioned boxes",
       "inherited": "no",
       "percentages": "n/a",
@@ -488,18 +488,18 @@
           "value": "always"
         },
         {
-          "name": "anchors-valid",
-          "prose": "If any of the box’s required anchor references do not resolve to a target anchor element, the box’s visibility property computes to force-hidden. What is a required anchor reference? anchor() functions that don’t have a fallback value; the default anchor *sometimes*? Need more detail here. Any anchors are missing, or all anchors are missing? I can see use-cases for either, potentially. Do we want to make a decision here, or make it controllable somehow?",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchors-valid",
+          "name": "anchor-valid",
+          "prose": "If the box references the default anchor box (e.g. using position-area, 'anchor()' or 'anchor-size()' functions, or anchor-center), but the default anchor box cannot be resolved, the box’s visibility property computes to force-hidden.",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchor-valid",
           "type": "value",
-          "value": "anchors-valid"
+          "value": "anchor-valid"
         },
         {
-          "name": "anchors-visible",
+          "name": "anchor-visible",
           "prose": "If the box has a default anchor box but that anchor box is invisible or clipped by intervening boxes, the box’s visibility property computes to force-hidden.",
-          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchors-visible",
+          "href": "https://drafts.csswg.org/css-anchor-position-1/#valdef-position-visibility-anchor-visible",
           "type": "value",
-          "value": "anchors-visible"
+          "value": "anchor-visible"
         },
         {
           "name": "no-overflow",
