@@ -1,31 +1,21 @@
-From 10569f42edbd3e03ee2aa3968225c1af8ffaa3c6 Mon Sep 17 00:00:00 2001
+From 8f3ed1a11128229948e2fcad50d59a94fb267f61 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Tue, 5 May 2026 11:02:49 +0200
+Date: Wed, 6 May 2026 09:18:20 +0200
 Subject: [PATCH] Fix IDL of SVG spec
 
 HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
-HTMLOrSVGOrMathMLElement: https://github.com/w3c/svgwg/pull/1103
 
 Also drop `SVGPathElement`, now that SVG Paths is also being crawled, pending
 clarification of status between SVG 2 and SVG Paths.
 ---
- ed/idl/SVG.idl | 21 +++++++++++++++------
- 1 file changed, 15 insertions(+), 6 deletions(-)
+ ed/idl/SVG.idl | 19 ++++++++++++++-----
+ 1 file changed, 14 insertions(+), 5 deletions(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index 6ab66cc7ed..22c73736ef 100644
+index 6edd6cac38..e8e070bb6f 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
-@@ -13,7 +13,7 @@ interface SVGElement : Element {
- };
- 
- SVGElement includes GlobalEventHandlers;
--SVGElement includes HTMLOrSVGElement;
-+SVGElement includes HTMLOrSVGOrMathMLElement;
- 
- dictionary SVGBoundingBoxOptions {
-   boolean fill = true;
-@@ -413,10 +413,6 @@ interface SVGAnimatedPreserveAspectRatio {
+@@ -415,10 +415,6 @@ interface SVGAnimatedPreserveAspectRatio {
    [SameObject] readonly attribute SVGPreserveAspectRatio animVal;
  };
  
@@ -36,7 +26,7 @@ index 6ab66cc7ed..22c73736ef 100644
  [Exposed=Window]
  interface SVGRectElement : SVGGeometryElement {
    [SameObject] readonly attribute SVGAnimatedLength x;
-@@ -666,7 +662,20 @@ interface SVGAElement : SVGGraphicsElement {
+@@ -668,7 +664,20 @@ interface SVGAElement : SVGGraphicsElement {
  };
  
  SVGAElement includes SVGURIReference;
