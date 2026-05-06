@@ -22,7 +22,7 @@
       ]
     },
     {
-      "html": "A <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-match\" id=\"ref-for-typedef-navigation-match②\">&lt;navigation-match&gt;</a> matches the URL <var>linkTarget</var>\n(with a URL Pattern <var>urlPattern</var> as context)\nif the following steps return true:",
+      "html": "A <u class=\"link-error production\" data-lt=\"&lt;navigation-match&gt;\" title=\"LINK ERROR: No 'type' refs found for '&lt;navigation-match&gt;'.\">&lt;navigation-match&gt;</u> matches the URL <var>linkTarget</var>\n(with a URL Pattern <var>urlPattern</var> as context)\nif the following steps return true:",
       "rationale": "let",
       "steps": [
         {
@@ -32,7 +32,7 @@
           "html": "<p>If <var>targetMatchResult</var> is null, return false.</p>"
         },
         {
-          "html": "<p>Let <var>matchRelation</var> be the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-relation\" id=\"ref-for-typedef-navigation-relation②\">&lt;navigation-relation&gt;</a> argument\nof the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-match\" id=\"ref-for-typedef-navigation-match③\">&lt;navigation-match&gt;</a>.</p>"
+          "html": "<p>Let <var>matchRelation</var> be the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-relation\" id=\"ref-for-typedef-navigation-relation②\">&lt;navigation-relation&gt;</a> argument\nof the <u class=\"link-error production\" data-lt=\"&lt;navigation-match&gt;\" title=\"LINK ERROR: No 'type' refs found for '&lt;navigation-match&gt;'.\">&lt;navigation-match&gt;</u>.</p>"
         },
         {
           "html": "<p>Let <var>navigationURL</var> be:</p>\n     <dl>\n      <dt data-md=\"\">If <var>matchRelation</var> is <span class=\"css\">at</span>,\n      </dt><dd data-md=\"\">\n       <p>the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#current-at-url\" id=\"ref-for-current-at-url①\">current at URL</a> of the document.</p>\n      </dd><dt data-md=\"\">Otherwise, if <var>matchRelation</var> is <span class=\"css\">with</span>,\n      </dt><dd data-md=\"\">\n       <p>the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#current-with-url\" id=\"ref-for-current-with-url①\">current with URL</a> of the document.</p>\n      </dd><dt data-md=\"\">Otherwise, if <var>matchRelation</var> is <span class=\"css\">from</span>,\n      </dt><dd data-md=\"\">\n       <p>the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#current-from-url\" id=\"ref-for-current-from-url②\">current from URL</a> of the document.</p>\n      </dd><dt data-md=\"\">Otherwise (Assert: <var>matchRelation</var> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-shapes-1/#valdef-shape-to\" id=\"ref-for-valdef-shape-to④\">to</a>),\n      </dt><dd data-md=\"\">\n       <p>the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#current-to-url\" id=\"ref-for-current-to-url②\">current to URL</a> of the document.</p>\n     </dd></dl>"
