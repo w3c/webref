@@ -115,15 +115,6 @@ export default {
     }
   },
 
-  // https://drafts.csswg.org/css-shapes-1/#supported-basic-shapes
-  "css-shapes-1": {
-    "<basic-shape>": `
-      <basic-shape-rect> |
-      <circle()> | <ellipse()> | <polygon()> |
-      <path()> | <shape()>
-    `
-  },
-
   // https://drafts.csswg.org/css-syntax-3/#the-anb-type
   "css-syntax-3": {
     "<n-dimension>": "<dimension-token>",
