@@ -15,12 +15,12 @@ jobs:
       run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
 
     - name: Checkout repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: Setup node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v6
       with:
-        node-version: 20
+        node-version: 24
         cache: 'npm'
 
     - name: Install dependencies
@@ -36,7 +36,7 @@ jobs:
     # Update another Webref checkout to reduce the chances that the version we
     # checked out is no longer in sync with origin by the time the crawl is over
     - name: Checkout webref once more
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         path: webref
 

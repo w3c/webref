@@ -23,16 +23,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout webref
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         # Need to checkout all history as curation job also needs to access
         # the curated branch
         fetch-depth: 0
 
     - name: Setup node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v6
       with:
-        node-version: 20
+        node-version: 24
         cache: 'npm'
 
     - name: Install dependencies
@@ -51,7 +51,7 @@ jobs:
         node tools/commit-curated.js curated stay-on-curated-branch
 
     - name: Push changes to curated branch
-      uses: ad-m/github-push-action@v0.8.0
+      uses: ad-m/github-push-action@v1.1.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: curated
