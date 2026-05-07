@@ -149,7 +149,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuobjectdescriptorbase"
       },
       "GPUSupportedLimits": {
-        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxBindGroupsPlusVertexBuffers;\n    readonly attribute unsigned long maxBindingsPerBindGroup;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersInVertexStage;\n    readonly attribute unsigned long maxStorageBuffersInFragmentStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesInVertexStage;\n    readonly attribute unsigned long maxStorageTexturesInFragmentStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long long maxUniformBufferBindingSize;\n    readonly attribute unsigned long long maxStorageBufferBindingSize;\n    readonly attribute unsigned long minUniformBufferOffsetAlignment;\n    readonly attribute unsigned long minStorageBufferOffsetAlignment;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long long maxBufferSize;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n    readonly attribute unsigned long maxInterStageShaderVariables;\n    readonly attribute unsigned long maxColorAttachments;\n    readonly attribute unsigned long maxColorAttachmentBytesPerSample;\n    readonly attribute unsigned long maxComputeWorkgroupStorageSize;\n    readonly attribute unsigned long maxComputeInvocationsPerWorkgroup;\n    readonly attribute unsigned long maxComputeWorkgroupSizeX;\n    readonly attribute unsigned long maxComputeWorkgroupSizeY;\n    readonly attribute unsigned long maxComputeWorkgroupSizeZ;\n    readonly attribute unsigned long maxComputeWorkgroupsPerDimension;\n};",
+        "fragment": "[Exposed=(Window, Worker), SecureContext]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxBindGroupsPlusVertexBuffers;\n    readonly attribute unsigned long maxImmediateSize;\n    readonly attribute unsigned long maxBindingsPerBindGroup;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersInVertexStage;\n    readonly attribute unsigned long maxStorageBuffersInFragmentStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesInVertexStage;\n    readonly attribute unsigned long maxStorageTexturesInFragmentStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long long maxUniformBufferBindingSize;\n    readonly attribute unsigned long long maxStorageBufferBindingSize;\n    readonly attribute unsigned long minUniformBufferOffsetAlignment;\n    readonly attribute unsigned long minStorageBufferOffsetAlignment;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long long maxBufferSize;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n    readonly attribute unsigned long maxInterStageShaderVariables;\n    readonly attribute unsigned long maxColorAttachments;\n    readonly attribute unsigned long maxColorAttachmentBytesPerSample;\n    readonly attribute unsigned long maxComputeWorkgroupStorageSize;\n    readonly attribute unsigned long maxComputeInvocationsPerWorkgroup;\n    readonly attribute unsigned long maxComputeWorkgroupSizeX;\n    readonly attribute unsigned long maxComputeWorkgroupSizeY;\n    readonly attribute unsigned long maxComputeWorkgroupSizeZ;\n    readonly attribute unsigned long maxComputeWorkgroupsPerDimension;\n};",
         "type": "interface",
         "name": "GPUSupportedLimits",
         "inheritance": null,
@@ -249,6 +249,22 @@
             "special": "",
             "readonly": true,
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maxbindgroupsplusvertexbuffers"
+          },
+          {
+            "type": "attribute",
+            "name": "maxImmediateSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpusupportedlimits-maximmediatesize"
           },
           {
             "type": "attribute",
@@ -5697,7 +5713,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#gpupipelinelayout"
       },
       "GPUPipelineLayoutDescriptor": {
-        "fragment": "dictionary GPUPipelineLayoutDescriptor\n         : GPUObjectDescriptorBase {\n    required sequence<GPUBindGroupLayout?> bindGroupLayouts;\n};",
+        "fragment": "dictionary GPUPipelineLayoutDescriptor\n         : GPUObjectDescriptorBase {\n    required sequence<GPUBindGroupLayout?> bindGroupLayouts;\n    GPUSize32 immediateSize = 0;\n};",
         "type": "dictionary",
         "name": "GPUPipelineLayoutDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -5726,6 +5742,25 @@
             "default": null,
             "required": true,
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpupipelinelayoutdescriptor-bindgrouplayouts"
+          },
+          {
+            "type": "field",
+            "name": "immediateSize",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize32"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false,
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpupipelinelayoutdescriptor-immediatesize"
           }
         ],
         "extAttrs": [],
@@ -9223,7 +9258,7 @@
         "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpucommandencoderdescriptor"
       },
       "GPUBindingCommandsMixin": {
-        "fragment": "interface mixin GPUBindingCommandsMixin {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup? bindGroup,\n        optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup? bindGroup,\n        [AllowShared] Uint32Array dynamicOffsetsData,\n        GPUSize64 dynamicOffsetsDataStart,\n        GPUSize32 dynamicOffsetsDataLength);\n};",
+        "fragment": "interface mixin GPUBindingCommandsMixin {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup? bindGroup,\n        optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup? bindGroup,\n        [AllowShared] Uint32Array dynamicOffsetsData,\n        GPUSize64 dynamicOffsetsDataStart,\n        GPUSize32 dynamicOffsetsDataLength);\n\n    undefined setImmediates(GPUSize32 rangeOffset, AllowSharedBufferSource data,\n        optional GPUSize64 dataOffset = 0, optional GPUSize64 dataSize);\n};",
         "type": "interface mixin",
         "name": "GPUBindingCommandsMixin",
         "inheritance": null,
@@ -9408,6 +9443,90 @@
             "extAttrs": [],
             "special": "",
             "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindingcommandsmixin-setbindgroup-index-bindgroup-dynamicoffsetsdata-dynamicoffsetsdatastart-dynamicoffsetsdatalength"
+          },
+          {
+            "type": "operation",
+            "name": "setImmediates",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "rangeOffset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize32"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "data",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AllowSharedBufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "dataOffset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize64"
+                },
+                "default": {
+                  "type": "number",
+                  "value": "0"
+                },
+                "optional": true,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "dataSize",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUSize64"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://gpuweb.github.io/gpuweb/#dom-gpubindingcommandsmixin-setimmediates"
           }
         ],
         "extAttrs": [],
@@ -14178,7 +14297,8 @@
       ],
       "GPUPipelineLayoutDescriptor": [
         "GPUObjectDescriptorBase",
-        "GPUBindGroupLayout"
+        "GPUBindGroupLayout",
+        "GPUSize32"
       ],
       "GPUShaderModule": [
         "GPUCompilationInfo",
@@ -14346,7 +14466,8 @@
         "GPUBufferDynamicOffset",
         "Uint32Array",
         "GPUSize64",
-        "GPUSize32"
+        "GPUSize32",
+        "AllowSharedBufferSource"
       ],
       "GPUDebugCommandsMixin": [],
       "GPUComputePassEncoder": [

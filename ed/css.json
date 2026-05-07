@@ -17918,7 +17918,7 @@
     {
       "name": "active-navigation-condition",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-active-navigation-condition",
-      "syntax": "<navigation-relation>? [ <navigation-location> | link-href ]?",
+      "syntax": "<navigation-relation>? [ <route-location> | link-href ]?",
       "extended": []
     },
     {
@@ -18201,7 +18201,7 @@
       "name": "basic-shape",
       "prose": "The <basic-shape> type can be specified using basic shape functions.",
       "href": "https://drafts.csswg.org/css-shapes-1/#typedef-basic-shape",
-      "syntax": "<basic-shape-rect> | <circle()> | <ellipse()> | <polygon()> | <path()>",
+      "syntax": "<basic-shape-rect> | <circle()> | <ellipse()> | <polygon()> | <path()> | <shape()>",
       "extended": []
     },
     {
@@ -19866,15 +19866,9 @@
       "extended": []
     },
     {
-      "name": "navigation-location",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location",
-      "syntax": "<route-name> | <url-pattern()>",
-      "extended": []
-    },
-    {
       "name": "navigation-location-between-test",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-between-test",
-      "syntax": "between : <navigation-location> and <navigation-location>",
+      "syntax": "between : <route-location> and <route-location>",
       "extended": []
     },
     {
@@ -19886,7 +19880,19 @@
     {
       "name": "navigation-location-test",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-test",
-      "syntax": "<navigation-location-keyword> : <navigation-location>",
+      "syntax": "<navigation-location-keyword> : <route-location>",
+      "extended": []
+    },
+    {
+      "name": "navigation-phase-keyword",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-phase-keyword",
+      "syntax": "loading | ready | committed",
+      "extended": []
+    },
+    {
+      "name": "navigation-phase-test",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-phase-test",
+      "syntax": "phase : <navigation-phase-keyword>",
       "extended": []
     },
     {
@@ -19898,7 +19904,7 @@
     {
       "name": "navigation-test",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-test",
-      "syntax": "<navigation-location-test> | <navigation-location-between-test> | <navigation-type-test>",
+      "syntax": "<navigation-location-test> | <navigation-location-between-test> | <navigation-type-test> | <navigation-phase-test>",
       "extended": []
     },
     {
@@ -20415,6 +20421,12 @@
       "prose": "If A is exactly equal to an integer multiple of B, round() resolves to A exactly (preserving whether A is 0⁻ or 0⁺, if relevant). Otherwise, there are two integer multiples of B that are potentially \"closest\" to A, lower B which is closer to −∞ and upper B which is closer to +∞. The following <rounding-strategy>s dictate how to choose between them:",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-rounding-strategy",
       "syntax": "nearest | up | down | to-zero | line-width",
+      "extended": []
+    },
+    {
+      "name": "route-location",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-location",
+      "syntax": "<route-name> | <url-pattern()> | <url>",
       "extended": []
     },
     {
