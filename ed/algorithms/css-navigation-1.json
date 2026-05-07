@@ -22,41 +22,53 @@
       ]
     },
     {
-      "html": "A <u class=\"link-error production\" data-lt=\"&lt;navigation-match&gt;\" title=\"LINK ERROR: No 'type' refs found for '&lt;navigation-match&gt;'.\">&lt;navigation-match&gt;</u> matches the URL <var>linkTarget</var>\n(with a URL Pattern <var>urlPattern</var> as context)\nif the following steps return true:",
+      "html": "An <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-active-navigation-condition\" id=\"ref-for-typedef-active-navigation-condition④\">&lt;active-navigation-condition&gt;</a> matches the target <var>linkTarget</var> of the link when\nthe following steps return true:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>targetMatchResult</var> be the result of\n<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" id=\"ref-for-url-pattern-match⑦\">match a URL pattern</a>\ngiven <var>urlPattern</var> and <var>linkTarget</var>.</p>"
-        },
-        {
-          "html": "<p>If <var>targetMatchResult</var> is null, return false.</p>"
-        },
-        {
-          "html": "<p>Let <var>matchRelation</var> be the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-relation\" id=\"ref-for-typedef-navigation-relation②\">&lt;navigation-relation&gt;</a> argument\nof the <u class=\"link-error production\" data-lt=\"&lt;navigation-match&gt;\" title=\"LINK ERROR: No 'type' refs found for '&lt;navigation-match&gt;'.\">&lt;navigation-match&gt;</u>.</p>"
-        },
-        {
-          "html": "<p>Let <var>navigationURL</var> be:</p>\n     <dl>\n      <dt data-md=\"\">If <var>matchRelation</var> is <span class=\"css\">at</span>,\n      </dt><dd data-md=\"\">\n       <p>the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#current-at-url\" id=\"ref-for-current-at-url①\">current at URL</a> of the document.</p>\n      </dd><dt data-md=\"\">Otherwise, if <var>matchRelation</var> is <span class=\"css\">with</span>,\n      </dt><dd data-md=\"\">\n       <p>the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#current-with-url\" id=\"ref-for-current-with-url①\">current with URL</a> of the document.</p>\n      </dd><dt data-md=\"\">Otherwise, if <var>matchRelation</var> is <span class=\"css\">from</span>,\n      </dt><dd data-md=\"\">\n       <p>the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#current-from-url\" id=\"ref-for-current-from-url②\">current from URL</a> of the document.</p>\n      </dd><dt data-md=\"\">Otherwise (Assert: <var>matchRelation</var> is <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-shapes-1/#valdef-shape-to\" id=\"ref-for-valdef-shape-to④\">to</a>),\n      </dt><dd data-md=\"\">\n       <p>the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#current-to-url\" id=\"ref-for-current-to-url②\">current to URL</a> of the document.</p>\n     </dd></dl>"
+          "html": "<p>Let <var>navigationURL</var> be\nthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#active-navigation-url\" id=\"ref-for-active-navigation-url\">active navigation URL</a> of the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-active-navigation-condition\" id=\"ref-for-typedef-active-navigation-condition⑤\">&lt;active-navigation-condition&gt;</a></p>"
         },
         {
           "html": "<p>If <var>navigationURL</var> is null, return false.</p>"
         },
         {
-          "html": "<p>Let <var>navigationMatchResult</var> be the result of\n <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" id=\"ref-for-url-pattern-match⑧\">match a URL pattern</a> given\n <var>navigationURL</var> and <var>urlPattern</var>.</p>"
-        },
-        {
-          "html": "<p>If <var>navigationMatchResult</var> is null, return false.</p>"
-        },
-        {
-          "html": "For each property <var>prop</var> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatternresult\" id=\"ref-for-dictdef-urlpatternresult\">URLPatternResult</a></code> that is a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatterncomponentresult\" id=\"ref-for-dictdef-urlpatterncomponentresult\">URLPatternComponentResult</a></code>:",
-          "rationale": "if",
+          "html": "If a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location\" id=\"ref-for-typedef-navigation-location②③\">&lt;navigation-location&gt;</a> is present:",
+          "rationale": "let",
           "steps": [
             {
-              "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterncomponentresult-groups\" id=\"ref-for-dom-urlpatterncomponentresult-groups\">groups</a></code> of <var>prop</var> of\n<var>targetMatchResult</var> is not equal to\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterncomponentresult-groups\" id=\"ref-for-dom-urlpatterncomponentresult-groups①\">groups</a></code> of <var>prop</var> of\n<var>navigationMatchResult</var>,\nthen return false.</p>"
+              "html": "<p>Let <var>targetMatchResult</var> be the result of\n<a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" id=\"ref-for-url-pattern-match③\">match a URL pattern</a>\ngiven <var>urlPattern</var> and <var>linkTarget</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>navigationMatchResult</var> be the result of\n <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" id=\"ref-for-url-pattern-match④\">match a URL pattern</a> given\n <var>urlPattern</var> and <var>navigationURL</var>.</p>"
+            },
+            {
+              "html": "<p>If <var>navigationMatchResult</var> or <var>targetMatchResult</var> is null, return false.</p>"
+            },
+            {
+              "html": "For each property <var>prop</var> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatternresult\" id=\"ref-for-dictdef-urlpatternresult\">URLPatternResult</a></code> that is a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatterncomponentresult\" id=\"ref-for-dictdef-urlpatterncomponentresult\">URLPatternComponentResult</a></code>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterncomponentresult-groups\" id=\"ref-for-dom-urlpatterncomponentresult-groups\">groups</a></code> of <var>prop</var> of\n<var>targetMatchResult</var> is not equal to\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterncomponentresult-groups\" id=\"ref-for-dom-urlpatterncomponentresult-groups①\">groups</a></code> of <var>prop</var> of\n<var>navigationMatchResult</var>,\nthen return false.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Return true.</p>"
             }
           ]
         },
         {
-          "html": "<p>Return true.</p>"
+          "html": "Otherwise:",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "<p>Return true if <var>linkTarget</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-equals\" id=\"ref-for-concept-url-equals\">equals</a> <var>navigationURL</var>.</p>"
+            },
+            {
+              "html": "<p>Return false.</p>"
+            }
+          ]
         }
       ]
     },
@@ -158,14 +170,14 @@
     {
       "name": "create a URL pattern for url-pattern()",
       "href": "https://drafts.csswg.org/css-navigation-1/#create-a-url-pattern-for-url-pattern",
-      "html": "This function represents a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern⑥\">URL pattern</a> that can be created\nusing the steps of the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-url-pattern-for-url-pattern\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a URL pattern for url-pattern()</dfn> algorithm:",
+      "html": "This function represents a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern③\">URL pattern</a> that can be created\nusing the steps of the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-url-pattern-for-url-pattern\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a URL pattern for url-pattern()</dfn> algorithm:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>arg</var> be the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#string-value\" id=\"ref-for-string-value②\">&lt;string&gt;</a> argument to the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern\" id=\"ref-for-funcdef-url-pattern⑨\">url-pattern()</a> function.</p>"
+          "html": "<p>Let <var>arg</var> be the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#string-value\" id=\"ref-for-string-value②\">&lt;string&gt;</a> argument to the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern\" id=\"ref-for-funcdef-url-pattern⑧\">url-pattern()</a> function.</p>"
         },
         {
-          "html": "<p>Let <var>baseURL</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#style-resource-base-url\" id=\"ref-for-style-resource-base-url①\">style resource base URL</a> of\nthe rule or declaration block containing the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern\" id=\"ref-for-funcdef-url-pattern①⓪\">url-pattern()</a> function.</p>"
+          "html": "<p>Let <var>baseURL</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#style-resource-base-url\" id=\"ref-for-style-resource-base-url①\">style resource base URL</a> of\nthe rule or declaration block containing the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern\" id=\"ref-for-funcdef-url-pattern⑨\">url-pattern()</a> function.</p>"
         },
         {
           "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-create\" id=\"ref-for-url-pattern-create①\">create a URL pattern</a> given\n<var>arg</var>, <var>baseURL</var>, and an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a>.</p>"
@@ -175,7 +187,7 @@
     {
       "name": "serialize a url-pattern() function",
       "href": "https://drafts.csswg.org/css-navigation-1/#serialize-a-url-pattern-function",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-url-pattern-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern\" id=\"ref-for-funcdef-url-pattern①④\">url-pattern()</a> function</dfn> <var>f</var>,\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-serialize-a-function\" id=\"ref-for-css-serialize-a-function\">serialize a function</a> <var>f</var>,\nusing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-string\" id=\"ref-for-serialize-a-string\">serialize a string</a> on the single argument\nto serialize <var>f</var>’s contents.",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-url-pattern-function\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern\" id=\"ref-for-funcdef-url-pattern①③\">url-pattern()</a> function</dfn> <var>f</var>,\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#css-serialize-a-function\" id=\"ref-for-css-serialize-a-function\">serialize a function</a> <var>f</var>,\nusing <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-1/#serialize-a-string\" id=\"ref-for-serialize-a-string\">serialize a string</a> on the single argument\nto serialize <var>f</var>’s contents.",
       "rationale": "To <dfn>"
     }
   ]

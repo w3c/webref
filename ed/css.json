@@ -107,7 +107,7 @@
     },
     {
       "name": "@container",
-      "prose": "The @container rule is a conditional group rule whose condition contains a container query, which is a boolean combination of container size queries and/or container style queries. Style declarations within the <block-contents> block of an @container rule are filtered by its condition to only match when the container query is true for their element’s query container.",
+      "prose": "The @container rule is a conditional group rule whose condition contains a container query, which is a boolean combination of container size queries and/or container style queries. Style declarations within the @container rule are filtered by its condition to only match when the container query is true for their element’s query container.",
       "href": "https://drafts.csswg.org/css-conditional-5/#at-ruledef-container",
       "descriptors": [
         {
@@ -188,7 +188,7 @@
           "syntax": "<length>"
         }
       ],
-      "syntax": "@container <container-condition># { <block-contents> }",
+      "syntax": "@container <container-condition># { <rule-list> }",
       "extended": []
     },
     {
@@ -1007,7 +1007,7 @@
     },
     {
       "name": "@route",
-      "prose": "The @route rule is an at-rule that associates a name with a URL pattern. This name can be referenced in @navigation rules and in :link-to() pseudo-classes.",
+      "prose": "The @route rule is an at-rule that associates a name with a URL pattern. This name can be referenced in @navigation rules and in :active-navigation() pseudo-classes.",
       "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-route",
       "descriptors": [],
       "syntax": "@route <dashed-ident> { [ <pattern-descriptors> | <init-descriptors> ] }",
@@ -16530,6 +16530,23 @@
       "extended": []
     },
     {
+      "name": "window-drag",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-window-drag",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "window-drag",
+        "windowDrag"
+      ],
+      "syntax": "none | move",
+      "extended": []
+    },
+    {
       "name": "word-break",
       "href": "https://drafts.csswg.org/css-text-4/#propdef-word-break",
       "initial": "normal",
@@ -17091,6 +17108,12 @@
       "prose": "The :active pseudo-class applies while an element is being “activated” by the user, as defined by the host language; for example, while a hyperlink is being triggered.",
       "href": "https://drafts.csswg.org/selectors-4/#active-pseudo",
       "syntax": ":active",
+      "extended": []
+    },
+    {
+      "name": ":active-navigation()",
+      "prose": "This specification defines a new :active-navigation() functional pseudo-class that matches link elements that link to a certain URL that is related to a navigation that is currently active.",
+      "href": "https://drafts.csswg.org/css-navigation-1/#active-navigation-pseudo",
       "extended": []
     },
     {
@@ -17876,6 +17899,12 @@
       "extended": []
     },
     {
+      "name": "active-navigation-condition",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-active-navigation-condition",
+      "syntax": "<navigation-relation>? [ <navigation-location> | link-href ]?",
+      "extended": []
+    },
+    {
       "for": [
         "voice-family"
       ],
@@ -18153,9 +18182,9 @@
     },
     {
       "name": "basic-shape",
-      "prose": "The <basic-shape> type can be specified using basic shape functions. When using this syntax to define shapes, the reference box is defined by each property that uses <basic-shape> values. The coordinate system for the shape has its origin on the top-left corner of the reference box with the x-axis running to the right and the y-axis running downwards. All the lengths expressed in percentages are resolved from the used dimensions of the reference box.",
+      "prose": "The <basic-shape> type can be specified using basic shape functions.",
       "href": "https://drafts.csswg.org/css-shapes-1/#typedef-basic-shape",
-      "syntax": "<basic-shape-rect> | <circle()> | <ellipse()> | <polygon()> | <path()> | <shape()>",
+      "syntax": "<basic-shape-rect> | <circle()> | <ellipse()> | <polygon()> | <path()>",
       "extended": []
     },
     {
@@ -19579,18 +19608,6 @@
       "name": "linear-gradient-syntax",
       "href": "https://drafts.csswg.org/css-images-4/#typedef-linear-gradient-syntax",
       "syntax": "[ [ <angle> | <zero> | to <side-or-corner> ] || <color-interpolation-method> ]? , <color-stop-list>",
-      "extended": []
-    },
-    {
-      "name": "link-condition",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-link-condition",
-      "syntax": "[ <navigation-relation> ]? <link-condition-base>",
-      "extended": []
-    },
-    {
-      "name": "link-condition-base",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-link-condition-base",
-      "syntax": "<navigation-location>",
       "extended": []
     },
     {

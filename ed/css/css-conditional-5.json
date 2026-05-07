@@ -119,7 +119,7 @@
     },
     {
       "name": "@container",
-      "prose": "The @container rule is a conditional group rule whose condition contains a container query, which is a boolean combination of container size queries and/or container style queries. Style declarations within the <block-contents> block of an @container rule are filtered by its condition to only match when the container query is true for their element’s query container.",
+      "prose": "The @container rule is a conditional group rule whose condition contains a container query, which is a boolean combination of container size queries and/or container style queries. Style declarations within the @container rule are filtered by its condition to only match when the container query is true for their element’s query container.",
       "href": "https://drafts.csswg.org/css-conditional-5/#at-ruledef-container",
       "descriptors": [
         {
@@ -504,7 +504,7 @@
           ]
         }
       ],
-      "value": "@container <container-condition># { <block-contents> }"
+      "value": "@container <container-condition># { <rule-list> }"
     },
     {
       "name": "@supports-condition",

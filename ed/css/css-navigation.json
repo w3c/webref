@@ -7,7 +7,7 @@
   "atrules": [
     {
       "name": "@route",
-      "prose": "The @route rule is an at-rule that associates a name with a URL pattern. This name can be referenced in @navigation rules and in :link-to() pseudo-classes.",
+      "prose": "The @route rule is an at-rule that associates a name with a URL pattern. This name can be referenced in @navigation rules and in :active-navigation() pseudo-classes.",
       "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-route",
       "descriptors": [],
       "value": "@route <dashed-ident> { [ <pattern-descriptors> | <init-descriptors> ] }"
@@ -25,6 +25,11 @@
       "name": ":link-to()",
       "prose": "This specification defines a new :link-to() functional pseudo-class that matches link elements that link to a certain URL.",
       "href": "https://drafts.csswg.org/css-navigation-1/#link-to-pseudo"
+    },
+    {
+      "name": ":active-navigation()",
+      "prose": "This specification defines a new :active-navigation() functional pseudo-class that matches link elements that link to a certain URL that is related to a navigation that is currently active.",
+      "href": "https://drafts.csswg.org/css-navigation-1/#active-navigation-pseudo"
     }
   ],
   "values": [
@@ -119,16 +124,10 @@
       "value": "traverse | back | forward | reload"
     },
     {
-      "name": "<link-condition>",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-link-condition",
+      "name": "<active-navigation-condition>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-active-navigation-condition",
       "type": "type",
-      "value": "[ <navigation-relation> ]? <link-condition-base>"
-    },
-    {
-      "name": "<link-condition-base>",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-link-condition-base",
-      "type": "type",
-      "value": "<navigation-location>"
+      "value": "<navigation-relation>? [ <navigation-location> | link-href ]?"
     },
     {
       "name": "<navigation-relation>",
