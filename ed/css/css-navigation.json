@@ -64,6 +64,25 @@
       "value": "protocol | hostname | port | pathname | search | hash | base-url"
     },
     {
+      "name": "url-pattern()",
+      "prose": "The url-pattern() function represents a URL pattern, which can be used to match URLs.",
+      "href": "https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern",
+      "type": "function",
+      "value": "url-pattern( <string> )"
+    },
+    {
+      "name": "<route-location>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-location",
+      "type": "type",
+      "value": "<route-name> | <url-pattern()> | <url>"
+    },
+    {
+      "name": "<route-name>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-name",
+      "type": "type",
+      "value": "<dashed-ident>"
+    },
+    {
       "name": "<navigation-condition>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-condition",
       "type": "type",
@@ -79,13 +98,13 @@
       "name": "<navigation-test>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-test",
       "type": "type",
-      "value": "<navigation-location-test> | <navigation-location-between-test> | <navigation-type-test>"
+      "value": "<navigation-location-test> | <navigation-location-between-test> | <navigation-type-test> | <navigation-phase-test>"
     },
     {
       "name": "<navigation-location-test>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-test",
       "type": "type",
-      "value": "<navigation-location-keyword> : <navigation-location>"
+      "value": "<navigation-location-keyword> : <route-location>"
     },
     {
       "name": "<navigation-location-keyword>",
@@ -94,22 +113,10 @@
       "value": "at | with | from | to"
     },
     {
-      "name": "<navigation-location>",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location",
-      "type": "type",
-      "value": "<route-name> | <url-pattern()>"
-    },
-    {
-      "name": "<route-name>",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-name",
-      "type": "type",
-      "value": "<dashed-ident>"
-    },
-    {
       "name": "<navigation-location-between-test>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-between-test",
       "type": "type",
-      "value": "between : <navigation-location> and <navigation-location>"
+      "value": "between : <route-location> and <route-location>"
     },
     {
       "name": "<navigation-type-test>",
@@ -124,23 +131,28 @@
       "value": "traverse | back | forward | reload"
     },
     {
+      "name": "<navigation-phase-test>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-phase-test",
+      "type": "type",
+      "value": "phase : <navigation-phase-keyword>"
+    },
+    {
+      "name": "<navigation-phase-keyword>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-phase-keyword",
+      "type": "type",
+      "value": "loading | ready | committed"
+    },
+    {
       "name": "<active-navigation-condition>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-active-navigation-condition",
       "type": "type",
-      "value": "<navigation-relation>? [ <navigation-location> | link-href ] ?"
+      "value": "<navigation-relation>? [ <route-location> | link-href ]?"
     },
     {
       "name": "<navigation-relation>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-relation",
       "type": "type",
       "value": "at | with | from | to"
-    },
-    {
-      "name": "url-pattern()",
-      "prose": "The url-pattern() function represents a URL pattern, which can be used to match URLs.",
-      "href": "https://drafts.csswg.org/css-navigation-1/#funcdef-url-pattern",
-      "type": "function",
-      "value": "url-pattern( <string> )"
     }
   ],
   "warnings": [
