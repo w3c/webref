@@ -942,6 +942,38 @@
       ]
     },
     {
+      "name": "window-drag",
+      "href": "https://drafts.csswg.org/css-ui-4/#propdef-window-drag",
+      "value": "none | move",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "values": [
+        {
+          "name": "none",
+          "prose": "Specifies that the element cannot be used as a drag area.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-window-drag-none",
+          "type": "value",
+          "value": "none"
+        },
+        {
+          "name": "move",
+          "prose": "Specifies that the element’s principal box can be used as a window drag area.",
+          "href": "https://drafts.csswg.org/css-ui-4/#valdef-window-drag-move",
+          "type": "value",
+          "value": "move"
+        }
+      ],
+      "styleDeclaration": [
+        "window-drag",
+        "windowDrag"
+      ]
+    },
+    {
       "name": "-webkit-appearance",
       "href": "https://drafts.csswg.org/css-ui-4/#propdef--webkit-appearance",
       "legacyAliasOf": "appearance",
