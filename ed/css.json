@@ -2773,7 +2773,7 @@
         "WebkitFlexWrap",
         "webkitFlexWrap"
       ],
-      "syntax": "nowrap | wrap | wrap-reverse",
+      "syntax": "nowrap | [ wrap | wrap-reverse ] || balance",
       "extended": []
     },
     {
@@ -8249,7 +8249,7 @@
     },
     {
       "name": "flex",
-      "href": "https://drafts.csswg.org/css-flexbox-1/#propdef-flex",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex",
       "initial": "0 1 auto",
       "appliesTo": "flex items",
       "inherited": "no",
@@ -8270,7 +8270,7 @@
     },
     {
       "name": "flex-basis",
-      "href": "https://drafts.csswg.org/css-flexbox-1/#propdef-flex-basis",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex-basis",
       "initial": "auto",
       "appliesTo": "flex items",
       "inherited": "no",
@@ -8287,7 +8287,7 @@
     },
     {
       "name": "flex-direction",
-      "href": "https://drafts.csswg.org/css-flexbox-1/#propdef-flex-direction",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex-direction",
       "initial": "row",
       "appliesTo": "flex containers",
       "inherited": "no",
@@ -8304,7 +8304,7 @@
     },
     {
       "name": "flex-flow",
-      "href": "https://drafts.csswg.org/css-flexbox-1/#propdef-flex-flow",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex-flow",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -8325,7 +8325,7 @@
     },
     {
       "name": "flex-grow",
-      "href": "https://drafts.csswg.org/css-flexbox-1/#propdef-flex-grow",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex-grow",
       "initial": "0",
       "appliesTo": "flex items",
       "inherited": "no",
@@ -8341,8 +8341,25 @@
       "extended": []
     },
     {
+      "name": "flex-line-count",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex-line-count",
+      "initial": "1",
+      "appliesTo": "multi-line flex containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "the specified integer, computed",
+      "canonicalOrder": "per grammar",
+      "animationType": "as integer",
+      "styleDeclaration": [
+        "flex-line-count",
+        "flexLineCount"
+      ],
+      "syntax": "<integer [1,∞]>",
+      "extended": []
+    },
+    {
       "name": "flex-shrink",
-      "href": "https://drafts.csswg.org/css-flexbox-1/#propdef-flex-shrink",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex-shrink",
       "initial": "1",
       "appliesTo": "flex items",
       "inherited": "no",
@@ -8359,7 +8376,7 @@
     },
     {
       "name": "flex-wrap",
-      "href": "https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex-wrap",
       "initial": "nowrap",
       "appliesTo": "flex containers",
       "inherited": "no",
@@ -8371,7 +8388,7 @@
         "flex-wrap",
         "flexWrap"
       ],
-      "syntax": "nowrap | wrap | wrap-reverse",
+      "syntax": "nowrap | [ wrap | wrap-reverse ] || balance",
       "extended": []
     },
     {

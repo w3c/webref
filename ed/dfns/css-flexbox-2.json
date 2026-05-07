@@ -1,0 +1,2106 @@
+{
+  "spec": {
+    "title": "CSS Flexible Box Layout Module Level 2",
+    "url": "https://drafts.csswg.org/css-flexbox-2/"
+  },
+  "dfns": [
+    {
+      "id": "flex-layout",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#flex-layout",
+      "linkingText": [
+        "flex layout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "intro",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#intro",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "flex-container",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#flex-container",
+      "linkingText": [
+        "flex container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "flex-item",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#flex-item",
+      "linkingText": [
+        "flex item"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "flex-direction",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#flex-direction",
+      "linkingText": [
+        "flex direction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "main-axis",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#main-axis",
+      "linkingText": [
+        "main axis",
+        "main-axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "main-dimension",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#main-dimension",
+      "linkingText": [
+        "main dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "main-start",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#main-start",
+      "linkingText": [
+        "main-start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "main-end",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#main-end",
+      "linkingText": [
+        "main-end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "main-size",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#main-size",
+      "linkingText": [
+        "main size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "main-size-property",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#main-size-property",
+      "linkingText": [
+        "main size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "min-main-size-property",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#min-main-size-property",
+      "linkingText": [
+        "min main size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "max-main-size-property",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#max-main-size-property",
+      "linkingText": [
+        "max main size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "min-main-size",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#min-main-size",
+      "linkingText": [
+        "min main size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "max-main-size",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#max-main-size",
+      "linkingText": [
+        "max main size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "cross-axis",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#cross-axis",
+      "linkingText": [
+        "cross axis",
+        "cross-axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "cross-dimension",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#cross-dimension",
+      "linkingText": [
+        "cross dimension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "cross-start",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#cross-start",
+      "linkingText": [
+        "cross-start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "cross-end",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#cross-end",
+      "linkingText": [
+        "cross-end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "cross-size",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#cross-size",
+      "linkingText": [
+        "cross size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "cross-size-property",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#cross-size-property",
+      "linkingText": [
+        "cross size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "min-cross-size-property",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#min-cross-size-property",
+      "linkingText": [
+        "min cross size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "max-cross-size-property",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#max-cross-size-property",
+      "linkingText": [
+        "max cross size property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "min-cross-size",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#min-cross-size",
+      "linkingText": [
+        "min cross size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "max-cross-size",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#max-cross-size",
+      "linkingText": [
+        "max cross size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box-model",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#box-model",
+        "title": "Flex Layout Box Model and Terminology",
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-display-flex",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-display-flex",
+      "linkingText": [
+        "flex"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-containers",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-containers",
+        "title": "Flex Containers: the flex and inline-flex display values",
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-display-inline-flex",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-display-inline-flex",
+      "linkingText": [
+        "inline-flex"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-containers",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-containers",
+        "title": "Flex Containers: the flex and inline-flex display values",
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "flex-formatting-context",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#flex-formatting-context",
+      "linkingText": [
+        "flex formatting context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-containers",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-containers",
+        "title": "Flex Containers: the flex and inline-flex display values",
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "flex-level",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#flex-level",
+      "linkingText": [
+        "flex-level"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-items",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-items",
+        "title": "Flex Items",
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "collapsed-flex-item",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#collapsed-flex-item",
+      "linkingText": [
+        "collapsed flex item"
+      ],
+      "localLinkingText": [
+        "collapsed"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "visibility-collapse",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#visibility-collapse",
+        "title": "Collapsed Items",
+        "number": "4.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "content-based-minimum-size",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#content-based-minimum-size",
+      "linkingText": [
+        "content-based minimum size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "min-size-auto",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#min-size-auto",
+        "title": "Automatic Minimum Size of Flex Items",
+        "number": "4.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "specified-size-suggestion",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#specified-size-suggestion",
+      "linkingText": [
+        "specified size suggestion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "min-size-auto",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#min-size-auto",
+        "title": "Automatic Minimum Size of Flex Items",
+        "number": "4.5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "transferred-size-suggestion",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#transferred-size-suggestion",
+      "linkingText": [
+        "transferred size suggestion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "min-size-auto",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#min-size-auto",
+        "title": "Automatic Minimum Size of Flex Items",
+        "number": "4.5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "content-size-suggestion",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#content-size-suggestion",
+      "linkingText": [
+        "content size suggestion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "min-size-auto",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#min-size-auto",
+        "title": "Automatic Minimum Size of Flex Items",
+        "number": "4.5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "propdef-flex-direction",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex-direction",
+      "linkingText": [
+        "flex-direction"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-direction-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-direction-property",
+        "title": "Flex Flow Direction: the flex-direction property",
+        "number": "5.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "valdef-flex-direction-row",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-direction-row",
+      "linkingText": [
+        "row"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-direction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-direction-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-direction-property",
+        "title": "Flex Flow Direction: the flex-direction property",
+        "number": "5.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-flex-direction-row-reverse",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-direction-row-reverse",
+      "linkingText": [
+        "row-reverse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-direction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-direction-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-direction-property",
+        "title": "Flex Flow Direction: the flex-direction property",
+        "number": "5.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-flex-direction-column",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-direction-column",
+      "linkingText": [
+        "column"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-direction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-direction-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-direction-property",
+        "title": "Flex Flow Direction: the flex-direction property",
+        "number": "5.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-flex-direction-column-reverse",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-direction-column-reverse",
+      "linkingText": [
+        "column-reverse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-direction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-direction-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-direction-property",
+        "title": "Flex Flow Direction: the flex-direction property",
+        "number": "5.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "propdef-flex-wrap",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex-wrap",
+      "linkingText": [
+        "flex-wrap"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-wrap-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-wrap-property",
+        "title": "Flex Line Wrapping: the flex-wrap property",
+        "number": "5.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "valdef-flex-wrap-nowrap",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-wrap-nowrap",
+      "linkingText": [
+        "nowrap"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-wrap"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-wrap-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-wrap-property",
+        "title": "Flex Line Wrapping: the flex-wrap property",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-flex-wrap-wrap",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-wrap-wrap",
+      "linkingText": [
+        "wrap"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-wrap"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-wrap-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-wrap-property",
+        "title": "Flex Line Wrapping: the flex-wrap property",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-flex-wrap-wrap-reverse",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-wrap-wrap-reverse",
+      "linkingText": [
+        "wrap-reverse"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-wrap"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-wrap-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-wrap-property",
+        "title": "Flex Line Wrapping: the flex-wrap property",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-flex-wrap-balance",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-wrap-balance",
+      "linkingText": [
+        "balance"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-wrap"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-wrap-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-wrap-property",
+        "title": "Flex Line Wrapping: the flex-wrap property",
+        "number": "5.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "propdef-flex-flow",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex-flow",
+      "linkingText": [
+        "flex-flow"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-flow-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-flow-property",
+        "title": "Flex Direction and Wrap: the flex-flow shorthand",
+        "number": "5.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "flex-line",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#flex-line",
+      "linkingText": [
+        "flex line"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-lines",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-lines",
+        "title": "Flex Lines",
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "single-line-flex-container",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#single-line-flex-container",
+      "linkingText": [
+        "single-line flex container"
+      ],
+      "localLinkingText": [
+        "single-line"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-lines",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-lines",
+        "title": "Flex Lines",
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "multi-line-flex-container",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#multi-line-flex-container",
+      "linkingText": [
+        "multi-line flex container"
+      ],
+      "localLinkingText": [
+        "multi-line"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-lines",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-lines",
+        "title": "Flex Lines",
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "balanced-flex-container",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#balanced-flex-container",
+      "linkingText": [
+        "balanced flex container"
+      ],
+      "localLinkingText": [
+        "balance"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-lines",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-lines",
+        "title": "Flex Lines",
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "propdef-flex-line-count",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex-line-count",
+      "linkingText": [
+        "flex-line-count"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-line-count-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-line-count-property",
+        "title": "Minimum Flex Lines: the flex-line-count property",
+        "number": "6.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "minimum-flex-line-count",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#minimum-flex-line-count",
+      "linkingText": [
+        "minimum flex line count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "flex-line-count-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-line-count-property",
+        "title": "Minimum Flex Lines: the flex-line-count property",
+        "number": "6.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "fully-inflexible",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#fully-inflexible",
+      "linkingText": [
+        "fully inflexible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "flexibility",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flexibility",
+        "title": "Flexibility",
+        "number": "7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "flexible",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#flexible",
+      "linkingText": [
+        "flexible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "flexibility",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flexibility",
+        "title": "Flexibility",
+        "number": "7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "propdef-flex",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex",
+      "linkingText": [
+        "flex"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-property",
+        "title": "The flex Shorthand",
+        "number": "7.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "flex-factor",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#flex-factor",
+      "linkingText": [
+        "flex factor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "flex-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-property",
+        "title": "The flex Shorthand",
+        "number": "7.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-flex-flex-grow",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-flex-grow",
+      "linkingText": [
+        "<'flex-grow'>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-property",
+        "title": "The flex Shorthand",
+        "number": "7.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "flex-flex-grow-factor",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#flex-flex-grow-factor",
+      "linkingText": [
+        "flex grow factor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "flex"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "flex-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-property",
+        "title": "The flex Shorthand",
+        "number": "7.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-flex-flex-shrink",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-flex-shrink",
+      "linkingText": [
+        "<'flex-shrink'>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-property",
+        "title": "The flex Shorthand",
+        "number": "7.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "flex-flex-shrink-factor",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#flex-flex-shrink-factor",
+      "linkingText": [
+        "flex shrink factor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "flex"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "flex-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-property",
+        "title": "The flex Shorthand",
+        "number": "7.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-flex-flex-basis",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-flex-basis",
+      "linkingText": [
+        "<'flex-basis'>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-property",
+        "title": "The flex Shorthand",
+        "number": "7.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "flex-flex-basis",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#flex-flex-basis",
+      "linkingText": [
+        "flex basis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "flex"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "flex-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-property",
+        "title": "The flex Shorthand",
+        "number": "7.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-flex-basis-auto",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-basis-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-basis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-property",
+        "title": "The flex Shorthand",
+        "number": "7.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-flex-basis-content",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-basis-content",
+      "linkingText": [
+        "content"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex-basis"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-property",
+        "title": "The flex Shorthand",
+        "number": "7.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-flex-none",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-flex-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "flex"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-property",
+        "title": "The flex Shorthand",
+        "number": "7.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "propdef-flex-grow",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex-grow",
+      "linkingText": [
+        "flex-grow"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-grow-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-grow-property",
+        "title": "The flex-grow property",
+        "number": "7.2.1"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "propdef-flex-shrink",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex-shrink",
+      "linkingText": [
+        "flex-shrink"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-shrink-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-shrink-property",
+        "title": "The flex-shrink property",
+        "number": "7.2.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "propdef-flex-basis",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-flex-basis",
+      "linkingText": [
+        "flex-basis"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-basis-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-basis-property",
+        "title": "The flex-basis property",
+        "number": "7.2.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "propdef-justify-content",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-justify-content",
+      "linkingText": [
+        "justify-content"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "justify-content-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#justify-content-property",
+        "title": "Axis Alignment: the justify-content property",
+        "number": "8.2"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "valdef-justify-content-flex-start",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-justify-content-flex-start",
+      "linkingText": [
+        "flex-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "justify-content-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#justify-content-property",
+        "title": "Axis Alignment: the justify-content property",
+        "number": "8.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-justify-content-flex-end",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-justify-content-flex-end",
+      "linkingText": [
+        "flex-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "justify-content-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#justify-content-property",
+        "title": "Axis Alignment: the justify-content property",
+        "number": "8.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-justify-content-center",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-justify-content-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "justify-content-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#justify-content-property",
+        "title": "Axis Alignment: the justify-content property",
+        "number": "8.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-justify-content-space-between",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-justify-content-space-between",
+      "linkingText": [
+        "space-between"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "justify-content-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#justify-content-property",
+        "title": "Axis Alignment: the justify-content property",
+        "number": "8.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-justify-content-space-around",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-justify-content-space-around",
+      "linkingText": [
+        "space-around"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "justify-content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "justify-content-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#justify-content-property",
+        "title": "Axis Alignment: the justify-content property",
+        "number": "8.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "propdef-align-items",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-align-items",
+      "linkingText": [
+        "align-items"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-items-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-items-property",
+        "title": "Cross-axis Alignment: the align-items and align-self properties",
+        "number": "8.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "propdef-align-self",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-align-self",
+      "linkingText": [
+        "align-self"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-items-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-items-property",
+        "title": "Cross-axis Alignment: the align-items and align-self properties",
+        "number": "8.3"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "valdef-align-items-auto",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-items-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-items",
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-items-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-items-property",
+        "title": "Cross-axis Alignment: the align-items and align-self properties",
+        "number": "8.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-align-items-flex-start",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-items-flex-start",
+      "linkingText": [
+        "flex-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-items",
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-items-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-items-property",
+        "title": "Cross-axis Alignment: the align-items and align-self properties",
+        "number": "8.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-align-items-flex-end",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-items-flex-end",
+      "linkingText": [
+        "flex-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-items",
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-items-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-items-property",
+        "title": "Cross-axis Alignment: the align-items and align-self properties",
+        "number": "8.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-align-items-center",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-items-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-items",
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-items-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-items-property",
+        "title": "Cross-axis Alignment: the align-items and align-self properties",
+        "number": "8.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-align-items-baseline",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-items-baseline",
+      "linkingText": [
+        "baseline"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-items",
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-items-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-items-property",
+        "title": "Cross-axis Alignment: the align-items and align-self properties",
+        "number": "8.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "baseline-participation",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#baseline-participation",
+      "linkingText": [
+        "participates in baseline alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "align-items",
+        "align-self"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "align-items-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-items-property",
+        "title": "Cross-axis Alignment: the align-items and align-self properties",
+        "number": "8.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "valdef-align-items-stretch",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-items-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-items",
+        "align-self"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-items-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-items-property",
+        "title": "Cross-axis Alignment: the align-items and align-self properties",
+        "number": "8.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "stretched",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#stretched",
+      "linkingText": [
+        "stretched"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "align-items-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-items-property",
+        "title": "Cross-axis Alignment: the align-items and align-self properties",
+        "number": "8.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "propdef-align-content",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#propdef-align-content",
+      "linkingText": [
+        "align-content"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-content-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-content-property",
+        "title": "Packing Flex Lines: the align-content property",
+        "number": "8.4"
+      },
+      "definedIn": "table",
+      "links": []
+    },
+    {
+      "id": "valdef-align-content-flex-start",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-content-flex-start",
+      "linkingText": [
+        "flex-start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-content-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-content-property",
+        "title": "Packing Flex Lines: the align-content property",
+        "number": "8.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-align-content-flex-end",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-content-flex-end",
+      "linkingText": [
+        "flex-end"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-content-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-content-property",
+        "title": "Packing Flex Lines: the align-content property",
+        "number": "8.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-align-content-center",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-content-center",
+      "linkingText": [
+        "center"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-content-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-content-property",
+        "title": "Packing Flex Lines: the align-content property",
+        "number": "8.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-align-content-space-between",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-content-space-between",
+      "linkingText": [
+        "space-between"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-content-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-content-property",
+        "title": "Packing Flex Lines: the align-content property",
+        "number": "8.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-align-content-space-around",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-content-space-around",
+      "linkingText": [
+        "space-around"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-content-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-content-property",
+        "title": "Packing Flex Lines: the align-content property",
+        "number": "8.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "valdef-align-content-stretch",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#valdef-align-content-stretch",
+      "linkingText": [
+        "stretch"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "align-content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "align-content-property",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#align-content-property",
+        "title": "Packing Flex Lines: the align-content property",
+        "number": "8.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "main-axis-baseline",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#main-axis-baseline",
+      "linkingText": [
+        "main-axis baseline set",
+        "first main-axis baseline set",
+        "last main-axis baseline set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-baselines",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-baselines",
+        "title": "Flex Container Baselines",
+        "number": "8.5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "cross-axis-baseline",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#cross-axis-baseline",
+      "linkingText": [
+        "cross-axis baseline set",
+        "first cross-axis baseline set",
+        "last cross-axis baseline set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "flex-baselines",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#flex-baselines",
+        "title": "Flex Container Baselines",
+        "number": "8.5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "flex-base-size",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#flex-base-size",
+      "linkingText": [
+        "flex base size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "line-sizing",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#line-sizing",
+        "title": "Line Length Determination",
+        "number": "9.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "hypothetical-main-size",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#hypothetical-main-size",
+      "linkingText": [
+        "hypothetical main size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "line-sizing",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#line-sizing",
+        "title": "Line Length Determination",
+        "number": "9.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "hypothetical-cross-size",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#hypothetical-cross-size",
+      "linkingText": [
+        "hypothetical cross size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cross-sizing",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#cross-sizing",
+        "title": "Cross Size Determination",
+        "number": "9.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "balance-flex-items",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#balance-flex-items",
+      "linkingText": [
+        "balance flex items"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-balance",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#algo-balance",
+        "title": "Balancing Flex Items",
+        "number": "9.7"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "target-main-size",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#target-main-size",
+      "linkingText": [
+        "target main size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resolve-flexible-lengths",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#resolve-flexible-lengths",
+        "title": "Resolving Flexible Lengths",
+        "number": "9.8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "initial-free-space",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#initial-free-space",
+      "linkingText": [
+        "initial free space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resolve-flexible-lengths",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#resolve-flexible-lengths",
+        "title": "Resolving Flexible Lengths",
+        "number": "9.8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "remaining-free-space",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#remaining-free-space",
+      "linkingText": [
+        "remaining free space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resolve-flexible-lengths",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#resolve-flexible-lengths",
+        "title": "Resolving Flexible Lengths",
+        "number": "9.8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "scaled-flex-shrink-factor",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#scaled-flex-shrink-factor",
+      "linkingText": [
+        "scaled flex shrink factor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resolve-flexible-lengths",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#resolve-flexible-lengths",
+        "title": "Resolving Flexible Lengths",
+        "number": "9.8"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "definite",
+      "href": "https://drafts.csswg.org/css-flexbox-2/#definite",
+      "linkingText": [
+        "definite",
+        "definite size",
+        "indefinite",
+        "indefinite size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definite-sizes",
+        "href": "https://drafts.csswg.org/css-flexbox-2/#definite-sizes",
+        "title": "Definite and Indefinite Sizes",
+        "number": "9.9"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}

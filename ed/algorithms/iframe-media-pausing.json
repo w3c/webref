@@ -1,0 +1,79 @@
+{
+  "spec": {
+    "title": "Iframe Media Pausing",
+    "url": "https://wicg.github.io/iframe-media-pausing/"
+  },
+  "algorithms": [
+    {
+      "name": "allowed to play media while not rendered",
+      "href": "https://wicg.github.io/iframe-media-pausing/#allowed-to-play-media-while-not-rendered",
+      "html": "To determine if a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①\">Document</a></code> <var>document</var> is <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"allowed-to-play-media-while-not-rendered\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">allowed to play media while not rendered</dfn>, run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>document</var> is <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use\">allowed to use</a> the \"<a data-link-type=\"dfn\" href=\"https://wicg.github.io/iframe-media-pausing/#media-playback-while-not-visible\" id=\"ref-for-media-playback-while-not-visible\"><code>media-playback-while-not-visible</code></a>\" feature, then return true.</p>"
+        },
+        {
+          "html": "<p>Return false otherwise.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When <var>navigableContainer</var> is not null and stops <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/rendering.html#being-rendered\" id=\"ref-for-being-rendered④\">being rendered</a>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/iframe-media-pausing/#allowed-to-play-media-while-not-rendered\" id=\"ref-for-allowed-to-play-media-while-not-rendered①\">allowed to play media while not rendered</a>:",
+          "rationale": "run",
+          "steps": [
+            {
+              "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#internal-pause-steps\" id=\"ref-for-internal-pause-steps\">internal pause steps</a> on <var>mediaElement</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "When <var>navigableContainer</var> is not null and stops <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/rendering.html#being-rendered\" id=\"ref-for-being-rendered⑧\">being rendered</a>:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/iframe-media-pausing/#allowed-to-play-media-while-not-rendered\" id=\"ref-for-allowed-to-play-media-while-not-rendered③\">allowed to play media while not rendered</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>audioContext</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state\">state</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running\">running</a></code>:",
+              "rationale": "start",
+              "steps": [
+                {
+                  "html": "<p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontext-interruption-start\" id=\"ref-for-dom-audiocontext-interruption-start\">Start an interruption</a></code> on <var>audioContext</var>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "When <var>navigableContainer</var> is not null and starts <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/rendering.html#being-rendered\" id=\"ref-for-being-rendered⑨\">being rendered</a> again:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://wicg.github.io/iframe-media-pausing/#allowed-to-play-media-while-not-rendered\" id=\"ref-for-allowed-to-play-media-while-not-rendered④\">allowed to play media while not rendered</a>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>audioContext</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state①\">state</a></code> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-interrupted\" id=\"ref-for-dom-audiocontextstate-interrupted①\">interrupted</a></code>:",
+              "rationale": "end",
+              "steps": [
+                {
+                  "html": "<p><code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontext-interruption-end\" id=\"ref-for-dom-audiocontext-interruption-end\">End the interruption</a></code> on <var>audioContext</var>.</p>"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
