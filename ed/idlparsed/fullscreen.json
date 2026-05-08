@@ -33,12 +33,50 @@
         "extAttrs": [],
         "href": "https://fullscreen.spec.whatwg.org/#enumdef-fullscreennavigationui"
       },
+      "FullscreenKeyboardLock": {
+        "fragment": "enum FullscreenKeyboardLock {\n  \"browser\",\n  \"none\"\n};",
+        "type": "enum",
+        "name": "FullscreenKeyboardLock",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "browser",
+            "href": "https://fullscreen.spec.whatwg.org/#dom-fullscreenkeyboardlock-browser"
+          },
+          {
+            "type": "enum-value",
+            "value": "none",
+            "href": "https://fullscreen.spec.whatwg.org/#dom-fullscreenkeyboardlock-none"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://fullscreen.spec.whatwg.org/#enumdef-fullscreenkeyboardlock"
+      },
       "FullscreenOptions": {
-        "fragment": "dictionary FullscreenOptions {\n  FullscreenNavigationUI navigationUI = \"auto\";\n};",
+        "fragment": "dictionary FullscreenOptions {\n  FullscreenKeyboardLock keyboardLock = \"none\";\n  FullscreenNavigationUI navigationUI = \"auto\";\n};",
         "type": "dictionary",
         "name": "FullscreenOptions",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "keyboardLock",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "FullscreenKeyboardLock"
+            },
+            "default": {
+              "type": "string",
+              "value": "none"
+            },
+            "required": false,
+            "href": "https://fullscreen.spec.whatwg.org/#dom-fullscreenoptions-keyboardlock"
+          },
           {
             "type": "field",
             "name": "navigationUI",
@@ -314,6 +352,7 @@
     "exposed": {},
     "dependencies": {
       "FullscreenOptions": [
+        "FullscreenKeyboardLock",
         "FullscreenNavigationUI"
       ],
       "Element": [
