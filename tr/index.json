@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-05-07T01:40:11.322Z",
+  "date": "2026-05-08T01:50:37.349Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -33,6 +33,7 @@
       "css-color-6",
       "css-conditional-values-1",
       "css-extensions-1",
+      "css-flexbox-2",
       "css-gcpm-4",
       "css-images-5",
       "css-link-params-1",
@@ -223,6 +224,7 @@
       "get-installed-related-apps",
       "handwriting-recognition",
       "idle-detection",
+      "iframe-media-pausing",
       "ink-enhancement",
       "input-device-capabilities",
       "intervention-reporting",
@@ -338,6 +340,7 @@
       "battery-status",
       "beacon",
       "capture-handle-identity",
+      "cbor-ld-10",
       "change-password-url",
       "cid-1.0",
       "clear-site-data",
@@ -353,6 +356,7 @@
       "css-2023",
       "css-2024",
       "css-2025",
+      "css-2026",
       "css-align-3",
       "css-anchor-position-1",
       "css-anchor-position-2",
@@ -731,6 +735,7 @@
       "wot-thing-description-2.0",
       "wot-thing-description11",
       "xml-entity-names",
+      "yaml-ld-10",
       "xhr"
     ],
     "post": [
@@ -757,10 +762,10 @@
     ]
   },
   "stats": {
-    "crawled": 410,
+    "crawled": 413,
     "errors": 0
   },
-  "crawler": "reffy-20.0.16",
+  "crawler": "reffy-21.0.0",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -806,7 +811,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "7 May 2026",
+      "date": "8 May 2026",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -1165,11 +1170,11 @@
       ],
       "crawled": "https://www.w3.org/TR/appmanifest/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 01 May 2026 22:37:28 GMT"
+        "lastModified": "Thu, 07 May 2026 11:55:19 GMT"
       },
       "generator": "respec",
-      "date": "01 May 2026",
-      "revision": "c0d4307a9098f4b54d03fa4b31b16f6e3f683f81",
+      "date": "07 May 2026",
+      "revision": "d5e2eeb1b48de8a0ee581c48f3f083730723d29e",
       "algorithms": "algorithms/appmanifest.json",
       "links": "links/appmanifest.json",
       "refs": "refs/appmanifest.json",
@@ -1795,6 +1800,61 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/cbor-ld-10/",
+      "seriesComposition": "full",
+      "shortname": "cbor-ld-10",
+      "series": {
+        "shortname": "cbor-ld",
+        "currentSpecification": "cbor-ld-10",
+        "title": "CBOR-LD",
+        "shortTitle": "CBOR-LD",
+        "releaseUrl": "https://www.w3.org/TR/cbor-ld/",
+        "nightlyUrl": "https://w3c.github.io/cbor-ld/"
+      },
+      "seriesVersion": "1.0",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "JSON-LD Working Group",
+          "url": "https://www.w3.org/groups/wg/json-ld/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/cbor-ld-10/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/cbor-ld/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/cbor-ld",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "CBOR-LD 1.0",
+      "source": "w3c",
+      "shortTitle": "CBOR-LD 1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/cbor-ld-10/",
+        "https://w3c.github.io/cbor-ld/"
+      ],
+      "crawled": "https://www.w3.org/TR/cbor-ld-10/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 23 Apr 2026 06:26:18 GMT"
+      },
+      "generator": "respec",
+      "date": "28 April 2026",
+      "algorithms": "algorithms/cbor-ld-10.json",
+      "links": "links/cbor-ld-10.json",
+      "refs": "refs/cbor-ld-10.json",
+      "headings": "headings/cbor-ld-10.json",
+      "ids": "ids/cbor-ld-10.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/change-password-url/",
       "seriesComposition": "full",
       "shortname": "change-password-url",
@@ -2411,11 +2471,11 @@
       ],
       "crawled": "https://www.w3.org/TR/csp-embedded-enforcement/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 22 Apr 2026 09:42:57 GMT"
+        "lastModified": "Thu, 07 May 2026 07:33:33 GMT"
       },
       "generator": "bikeshed",
-      "date": "22 April 2026",
-      "revision": "a1f5df7918848b1088308729a96c0afadd91ed4b",
+      "date": "7 May 2026",
+      "revision": "f102d0e58c50d5b7276b564650388d3fd05a6056",
       "algorithms": "algorithms/csp-embedded-enforcement.json",
       "links": "links/csp-embedded-enforcement.json",
       "refs": "refs/csp-embedded-enforcement.json",
@@ -2501,7 +2561,7 @@
       "shortname": "css-2022",
       "series": {
         "shortname": "css",
-        "currentSpecification": "css-2025",
+        "currentSpecification": "css-2026",
         "title": "CSS Snapshot",
         "shortTitle": "CSS Snapshot",
         "releaseUrl": "https://www.w3.org/TR/css/",
@@ -2562,7 +2622,7 @@
       "shortname": "css-2023",
       "series": {
         "shortname": "css",
-        "currentSpecification": "css-2025",
+        "currentSpecification": "css-2026",
         "title": "CSS Snapshot",
         "shortTitle": "CSS Snapshot",
         "releaseUrl": "https://www.w3.org/TR/css/",
@@ -2624,7 +2684,7 @@
       "shortname": "css-2024",
       "series": {
         "shortname": "css",
-        "currentSpecification": "css-2025",
+        "currentSpecification": "css-2026",
         "title": "CSS Snapshot",
         "shortTitle": "CSS Snapshot",
         "releaseUrl": "https://www.w3.org/TR/css/",
@@ -2686,7 +2746,7 @@
       "shortname": "css-2025",
       "series": {
         "shortname": "css",
-        "currentSpecification": "css-2025",
+        "currentSpecification": "css-2026",
         "title": "CSS Snapshot",
         "shortTitle": "CSS Snapshot",
         "releaseUrl": "https://www.w3.org/TR/css/",
@@ -2694,6 +2754,7 @@
       },
       "seriesVersion": "2025",
       "seriesPrevious": "css-2024",
+      "seriesNext": "css-2026",
       "organization": "W3C",
       "groups": [
         {
@@ -2739,6 +2800,67 @@
       "dfns": "dfns/css-2025.json",
       "headings": "headings/css-2025.json",
       "ids": "ids/css-2025.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/css-2026/",
+      "seriesComposition": "full",
+      "shortname": "css-2026",
+      "series": {
+        "shortname": "css",
+        "currentSpecification": "css-2026",
+        "title": "CSS Snapshot",
+        "shortTitle": "CSS Snapshot",
+        "releaseUrl": "https://www.w3.org/TR/css/",
+        "nightlyUrl": "https://drafts.csswg.org/css/"
+      },
+      "seriesVersion": "2026",
+      "seriesPrevious": "css-2025",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/groups/wg/css/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/css-2026/",
+        "status": "Note",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-2026/",
+        "status": "Editor's Draft",
+        "alternateUrls": [
+          "https://w3c.github.io/csswg-drafts/css-2026/"
+        ],
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-2026/Overview.bs",
+        "filename": "index.html"
+      },
+      "title": "CSS Snapshot 2026",
+      "source": "w3c",
+      "shortTitle": "CSS Snapshot 2026",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/css-2026/",
+        "https://drafts.csswg.org/css-2026/"
+      ],
+      "crawled": "https://www.w3.org/TR/css-2026/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 26 Mar 2026 22:31:34 GMT"
+      },
+      "generator": "bikeshed",
+      "date": "26 March 2026",
+      "revision": "3a27bfa7070848174200b824eed12513fd3fa7e2",
+      "links": "links/css-2026.json",
+      "refs": "refs/css-2026.json",
+      "dfns": "dfns/css-2026.json",
+      "headings": "headings/css-2026.json",
+      "ids": "ids/css-2026.json",
       "cddl": []
     },
     {
@@ -4100,11 +4222,11 @@
       ],
       "crawled": "https://www.w3.org/TR/css-color-5/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 02 May 2026 23:04:46 GMT"
+        "lastModified": "Thu, 07 May 2026 21:57:24 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 May 2026",
-      "revision": "095ac2c2281622c44e4ccaa4200a9feb40463a47",
+      "date": "7 May 2026",
+      "revision": "cb6bac6a79935ac8f091437bfca3d9d68652b8bc",
       "algorithms": "algorithms/css-color-5.json",
       "links": "links/css-color-5.json",
       "refs": "refs/css-color-5.json",
@@ -5172,6 +5294,7 @@
       },
       "seriesVersion": "1",
       "shortTitle": "CSS Flexbox 1",
+      "seriesNext": "css-flexbox-2",
       "organization": "W3C",
       "groups": [
         {
@@ -10913,11 +11036,11 @@
       ],
       "crawled": "https://www.w3.org/TR/digital-credentials/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 04 May 2026 05:44:26 GMT"
+        "lastModified": "Thu, 07 May 2026 06:19:43 GMT"
       },
       "generator": "respec",
-      "date": "04 May 2026",
-      "revision": "2c0af477533c5700511e567224d68ecfb413803a",
+      "date": "07 May 2026",
+      "revision": "9e4579cfa11e0009b3f41aedf5bccbc6bd39aa15",
       "algorithms": "algorithms/digital-credentials.json",
       "links": "links/digital-credentials.json",
       "refs": "refs/digital-credentials.json",
@@ -11270,11 +11393,11 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-hdcp-version-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Dec 2025 06:59:21 GMT"
+        "lastModified": "Thu, 07 May 2026 16:26:38 GMT"
       },
       "generator": "respec",
-      "date": "02 December 2025",
-      "revision": "084ca4fd322ea6cef5e84fc2d430e09f75f21cb1",
+      "date": "07 May 2026",
+      "revision": "d3e713b402006005661ec6a5c3a43843aa8b5669",
       "links": "links/eme-hdcp-version-registry.json",
       "refs": "refs/eme-hdcp-version-registry.json",
       "headings": "headings/eme-hdcp-version-registry.json",
@@ -11438,11 +11561,11 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-initdata-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Dec 2025 06:59:28 GMT"
+        "lastModified": "Thu, 07 May 2026 16:26:45 GMT"
       },
       "generator": "respec",
-      "date": "02 December 2025",
-      "revision": "084ca4fd322ea6cef5e84fc2d430e09f75f21cb1",
+      "date": "07 May 2026",
+      "revision": "d3e713b402006005661ec6a5c3a43843aa8b5669",
       "links": "links/eme-initdata-registry.json",
       "refs": "refs/eme-initdata-registry.json",
       "headings": "headings/eme-initdata-registry.json",
@@ -11605,11 +11728,11 @@
       ],
       "crawled": "https://www.w3.org/TR/eme-stream-registry/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 03 Dec 2025 06:06:09 GMT"
+        "lastModified": "Thu, 07 May 2026 16:26:31 GMT"
       },
       "generator": "respec",
-      "date": "03 December 2025",
-      "revision": "084ca4fd322ea6cef5e84fc2d430e09f75f21cb1",
+      "date": "07 May 2026",
+      "revision": "d3e713b402006005661ec6a5c3a43843aa8b5669",
       "links": "links/eme-stream-registry.json",
       "refs": "refs/eme-stream-registry.json",
       "headings": "headings/eme-stream-registry.json",
@@ -11726,11 +11849,11 @@
       ],
       "crawled": "https://www.w3.org/TR/encrypted-media-2/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 26 Nov 2025 19:41:06 GMT"
+        "lastModified": "Fri, 08 May 2026 00:09:08 GMT"
       },
       "generator": "respec",
-      "date": "26 November 2025",
-      "revision": "cb6de226a8c97a8c26d2791e8fffa818e162753d",
+      "date": "08 May 2026",
+      "revision": "83e80b5226fd1533ab1b4f36a0806059b5eb715e",
       "algorithms": "algorithms/encrypted-media-2.json",
       "links": "links/encrypted-media-2.json",
       "refs": "refs/encrypted-media-2.json",
@@ -24848,11 +24971,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webdriver2/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 30 Apr 2026 13:34:35 GMT"
+        "lastModified": "Thu, 07 May 2026 06:54:01 GMT"
       },
       "generator": "respec",
-      "date": "30 April 2026",
-      "revision": "785bc01244fa655de267af91c88cf50183baff6e",
+      "date": "07 May 2026",
+      "revision": "ef3f7fc7d13c470912e51164b61b728c52250713",
       "algorithms": "algorithms/webdriver2.json",
       "links": "links/webdriver2.json",
       "refs": "refs/webdriver2.json",
@@ -24913,11 +25036,11 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Mar 2026 21:41:43 GMT"
+        "lastModified": "Thu, 07 May 2026 13:41:21 GMT"
       },
       "generator": "bikeshed",
-      "date": "10 March 2026",
-      "revision": "1234113543bbd3222930b284f1645190ded6ade7",
+      "date": "7 May 2026",
+      "revision": "6bf9e4611a95afe51a519132b31e025217507d3d",
       "algorithms": "algorithms/webgpu.json",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
@@ -26212,11 +26335,11 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 10 Mar 2026 21:41:18 GMT"
+        "lastModified": "Thu, 07 May 2026 13:41:04 GMT"
       },
       "generator": "bikeshed",
-      "date": "10 March 2026",
-      "revision": "1234113543bbd3222930b284f1645190ded6ade7",
+      "date": "7 May 2026",
+      "revision": "6bf9e4611a95afe51a519132b31e025217507d3d",
       "algorithms": "algorithms/WGSL.json",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
@@ -26790,6 +26913,63 @@
       "refs": "refs/xml-entity-names.json",
       "headings": "headings/xml-entity-names.json",
       "ids": "ids/xml-entity-names.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/yaml-ld-10/",
+      "seriesComposition": "full",
+      "shortname": "yaml-ld-10",
+      "series": {
+        "shortname": "yaml-ld",
+        "currentSpecification": "yaml-ld-10",
+        "title": "YAML-LD",
+        "shortTitle": "YAML-LD",
+        "releaseUrl": "https://www.w3.org/TR/yaml-ld/",
+        "nightlyUrl": "https://w3c.github.io/yaml-ld/"
+      },
+      "seriesVersion": "1.0",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "JSON-LD Working Group",
+          "url": "https://www.w3.org/groups/wg/json-ld/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/yaml-ld-10/",
+        "status": "Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/yaml-ld/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/yaml-ld",
+        "sourcePath": "spec/index.html",
+        "filename": "index.html"
+      },
+      "title": "YAML-LD 1.0",
+      "source": "w3c",
+      "shortTitle": "YAML-LD 1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/yaml-ld-10/",
+        "https://w3c.github.io/yaml-ld/"
+      ],
+      "crawled": "https://www.w3.org/TR/yaml-ld-10/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 07 May 2026 06:50:53 GMT"
+      },
+      "generator": "respec",
+      "date": "07 May 2026",
+      "revision": "19c3973bb8cb35a53c39d1799d77f17c494f4d57",
+      "links": "links/yaml-ld-10.json",
+      "refs": "refs/yaml-ld-10.json",
+      "idl": "idl/yaml-ld.idl",
+      "dfns": "dfns/yaml-ld-10.json",
+      "headings": "headings/yaml-ld-10.json",
+      "ids": "ids/yaml-ld-10.json",
       "cddl": []
     }
   ]

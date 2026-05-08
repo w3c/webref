@@ -1,0 +1,629 @@
+{
+  "spec": {
+    "title": "CBOR-LD 1.0",
+    "url": "https://www.w3.org/TR/cbor-ld-10/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#title",
+      "level": 1,
+      "title": "CBOR-LD 1.0"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#subtitle",
+      "level": 2,
+      "title": "A CBOR-based Serialization for Linked Data"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "how-to-read-this-document",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#how-to-read-this-document",
+      "level": 3,
+      "title": "How to Read this Document",
+      "alternateIds": [
+        "x1-1-how-to-read-this-document"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#conformance",
+      "level": 4,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-1-1-conformance"
+      ],
+      "number": "1.1.1"
+    },
+    {
+      "id": "contributing",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#contributing",
+      "level": 3,
+      "title": "Contributing",
+      "alternateIds": [
+        "x1-2-contributing"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "design-goals-and-rationale",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#design-goals-and-rationale",
+      "level": 3,
+      "title": "Design Goals and Rationale",
+      "alternateIds": [
+        "x1-3-design-goals-and-rationale"
+      ],
+      "number": "1.3"
+    },
+    {
+      "id": "basic-concept",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#basic-concept",
+      "level": 2,
+      "title": "Basic Concept",
+      "alternateIds": [
+        "x2-basic-concept"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "semantic-compression",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#semantic-compression",
+      "level": 2,
+      "title": "Semantic Compression",
+      "alternateIds": [
+        "x3-semantic-compression"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "cbor-tags-for-cbor-ld",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#cbor-tags-for-cbor-ld",
+      "level": 2,
+      "title": "CBOR Tags for CBOR-LD",
+      "alternateIds": [
+        "x4-cbor-tags-for-cbor-ld"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "cbor-ld-registry",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#cbor-ld-registry",
+      "level": 3,
+      "title": "CBOR-LD Registry",
+      "alternateIds": [
+        "x4-1-cbor-ld-registry"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "registry",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#registry",
+      "level": 4,
+      "title": "Registry",
+      "alternateIds": [
+        "x4-1-1-registry"
+      ],
+      "number": "4.1.1"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "alternateIds": [
+        "x5-algorithms"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "encoding-and-decoding",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#encoding-and-decoding",
+      "level": 3,
+      "title": "Encoding and Decoding",
+      "alternateIds": [
+        "x5-1-encoding-and-decoding"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "json-ld-to-cbor-ld-encoding-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#json-ld-to-cbor-ld-encoding-algorithm",
+      "level": 4,
+      "title": "JSON-LD to CBOR-LD Encoding Algorithm",
+      "alternateIds": [
+        "x5-1-1-json-ld-to-cbor-ld-encoding-algorithm"
+      ],
+      "number": "5.1.1"
+    },
+    {
+      "id": "cbor-ld-to-json-ld-decoding-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#cbor-ld-to-json-ld-decoding-algorithm",
+      "level": 4,
+      "title": "CBOR-LD to JSON-LD Decoding Algorithm",
+      "alternateIds": [
+        "x5-1-2-cbor-ld-to-json-ld-decoding-algorithm"
+      ],
+      "number": "5.1.2"
+    },
+    {
+      "id": "conversion-algorithms",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#conversion-algorithms",
+      "level": 3,
+      "title": "Conversion Algorithms",
+      "alternateIds": [
+        "x5-2-conversion-algorithms"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "initialize-conversion-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#initialize-conversion-algorithm",
+      "level": 4,
+      "title": "Initialize Conversion Algorithm",
+      "alternateIds": [
+        "x5-2-1-initialize-conversion-algorithm"
+      ],
+      "number": "5.2.1"
+    },
+    {
+      "id": "convert-document-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#convert-document-algorithm",
+      "level": 4,
+      "title": "Convert Document Algorithm",
+      "alternateIds": [
+        "x5-2-2-convert-document-algorithm"
+      ],
+      "number": "5.2.2"
+    },
+    {
+      "id": "general-conversion-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#general-conversion-algorithm",
+      "level": 4,
+      "title": "General Conversion Algorithm",
+      "alternateIds": [
+        "x5-2-3-general-conversion-algorithm"
+      ],
+      "number": "5.2.3"
+    },
+    {
+      "id": "convert-value-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#convert-value-algorithm",
+      "level": 4,
+      "title": "Convert Value Algorithm",
+      "alternateIds": [
+        "x5-2-4-convert-value-algorithm"
+      ],
+      "number": "5.2.4"
+    },
+    {
+      "id": "compression-strategy-algorithms",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#compression-strategy-algorithms",
+      "level": 4,
+      "title": "Compression Strategy Algorithms",
+      "alternateIds": [
+        "x5-2-5-compression-strategy-algorithms"
+      ],
+      "number": "5.2.5"
+    },
+    {
+      "id": "convert-contexts-for-compression-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#convert-contexts-for-compression-algorithm",
+      "level": 5,
+      "title": "Convert Contexts for Compression Algorithm",
+      "alternateIds": [
+        "x5-2-5-1-convert-contexts-for-compression-algorithm"
+      ],
+      "number": "5.2.5.1"
+    },
+    {
+      "id": "convert-value-for-compression-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#convert-value-for-compression-algorithm",
+      "level": 5,
+      "title": "Convert Value for Compression Algorithm",
+      "alternateIds": [
+        "x5-2-5-2-convert-value-for-compression-algorithm"
+      ],
+      "number": "5.2.5.2"
+    },
+    {
+      "id": "get-input-entries-for-compression-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#get-input-entries-for-compression-algorithm",
+      "level": 5,
+      "title": "Get Input Entries for Compression Algorithm",
+      "alternateIds": [
+        "x5-2-5-3-get-input-entries-for-compression-algorithm"
+      ],
+      "number": "5.2.5.3"
+    },
+    {
+      "id": "get-object-types-for-compression-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#get-object-types-for-compression-algorithm",
+      "level": 5,
+      "title": "Get Object Types for Compression Algorithm",
+      "alternateIds": [
+        "x5-2-5-4-get-object-types-for-compression-algorithm"
+      ],
+      "number": "5.2.5.4"
+    },
+    {
+      "id": "decompression-strategy-algorithms",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#decompression-strategy-algorithms",
+      "level": 4,
+      "title": "Decompression Strategy Algorithms",
+      "alternateIds": [
+        "x5-2-6-decompression-strategy-algorithms"
+      ],
+      "number": "5.2.6"
+    },
+    {
+      "id": "convert-contexts-for-decompression-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#convert-contexts-for-decompression-algorithm",
+      "level": 5,
+      "title": "Convert Contexts for Decompression Algorithm",
+      "alternateIds": [
+        "x5-2-6-1-convert-contexts-for-decompression-algorithm"
+      ],
+      "number": "5.2.6.1"
+    },
+    {
+      "id": "convert-value-for-decompression-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#convert-value-for-decompression-algorithm",
+      "level": 5,
+      "title": "Convert Value for Decompression Algorithm",
+      "alternateIds": [
+        "x5-2-6-2-convert-value-for-decompression-algorithm"
+      ],
+      "number": "5.2.6.2"
+    },
+    {
+      "id": "get-input-entries-for-decompression-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#get-input-entries-for-decompression-algorithm",
+      "level": 5,
+      "title": "Get Input Entries for Decompression Algorithm",
+      "alternateIds": [
+        "x5-2-6-3-get-input-entries-for-decompression-algorithm"
+      ],
+      "number": "5.2.6.3"
+    },
+    {
+      "id": "get-object-types-for-decompression-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#get-object-types-for-decompression-algorithm",
+      "level": 5,
+      "title": "Get Object Types for Decompression Algorithm",
+      "alternateIds": [
+        "x5-2-6-4-get-object-types-for-decompression-algorithm"
+      ],
+      "number": "5.2.6.4"
+    },
+    {
+      "id": "active-context-processing",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#active-context-processing",
+      "level": 3,
+      "title": "Active Context Processing",
+      "alternateIds": [
+        "x5-3-active-context-processing"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "initialize-active-context-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#initialize-active-context-algorithm",
+      "level": 4,
+      "title": "Initialize Active Context Algorithm",
+      "alternateIds": [
+        "x5-3-1-initialize-active-context-algorithm"
+      ],
+      "number": "5.3.1"
+    },
+    {
+      "id": "apply-embedded-contexts-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#apply-embedded-contexts-algorithm",
+      "level": 4,
+      "title": "Apply Embedded Contexts Algorithm",
+      "alternateIds": [
+        "x5-3-2-apply-embedded-contexts-algorithm"
+      ],
+      "number": "5.3.2"
+    },
+    {
+      "id": "apply-property-scoped-contexts-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#apply-property-scoped-contexts-algorithm",
+      "level": 4,
+      "title": "Apply Property Scoped Contexts Algorithm",
+      "alternateIds": [
+        "x5-3-3-apply-property-scoped-contexts-algorithm"
+      ],
+      "number": "5.3.3"
+    },
+    {
+      "id": "apply-type-scoped-contexts-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#apply-type-scoped-contexts-algorithm",
+      "level": 4,
+      "title": "Apply Type Scoped Contexts Algorithm",
+      "alternateIds": [
+        "x5-3-4-apply-type-scoped-contexts-algorithm"
+      ],
+      "number": "5.3.4"
+    },
+    {
+      "id": "update-term-map-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#update-term-map-algorithm",
+      "level": 4,
+      "title": "Update Term Map Algorithm",
+      "alternateIds": [
+        "x5-3-5-update-term-map-algorithm"
+      ],
+      "number": "5.3.5"
+    },
+    {
+      "id": "revert-term-map-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#revert-term-map-algorithm",
+      "level": 4,
+      "title": "Revert Term Map Algorithm",
+      "alternateIds": [
+        "x5-3-6-revert-term-map-algorithm"
+      ],
+      "number": "5.3.6"
+    },
+    {
+      "id": "context-loading",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#context-loading",
+      "level": 3,
+      "title": "Context Loading",
+      "alternateIds": [
+        "x5-4-context-loading"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "initialize-context-loader-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#initialize-context-loader-algorithm",
+      "level": 4,
+      "title": "Initialize Context Loader Algorithm",
+      "alternateIds": [
+        "x5-4-1-initialize-context-loader-algorithm"
+      ],
+      "number": "5.4.1"
+    },
+    {
+      "id": "load-context-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#load-context-algorithm",
+      "level": 4,
+      "title": "Load Context Algorithm",
+      "alternateIds": [
+        "x5-4-2-load-context-algorithm"
+      ],
+      "number": "5.4.2"
+    },
+    {
+      "id": "add-context-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#add-context-algorithm",
+      "level": 4,
+      "title": "Add Context Algorithm",
+      "alternateIds": [
+        "x5-4-3-add-context-algorithm"
+      ],
+      "number": "5.4.3"
+    },
+    {
+      "id": "codecs",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#codecs",
+      "level": 3,
+      "title": "Codecs",
+      "alternateIds": [
+        "x5-5-codecs"
+      ],
+      "number": "5.5"
+    },
+    {
+      "id": "context-codec",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#context-codec",
+      "level": 4,
+      "title": "Context Codec",
+      "alternateIds": [
+        "x5-5-1-context-codec"
+      ],
+      "number": "5.5.1"
+    },
+    {
+      "id": "create-context-encoder",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#create-context-encoder",
+      "level": 5,
+      "title": "Create Context Encoder",
+      "alternateIds": [
+        "x5-5-1-1-create-context-encoder"
+      ],
+      "number": "5.5.1.1"
+    },
+    {
+      "id": "encode-context",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#encode-context",
+      "level": 5,
+      "title": "Encode Context",
+      "alternateIds": [
+        "x5-5-1-2-encode-context"
+      ],
+      "number": "5.5.1.2"
+    },
+    {
+      "id": "create-context-decoder",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#create-context-decoder",
+      "level": 5,
+      "title": "Create Context Decoder",
+      "alternateIds": [
+        "x5-5-1-3-create-context-decoder"
+      ],
+      "number": "5.5.1.3"
+    },
+    {
+      "id": "decode-context",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#decode-context",
+      "level": 5,
+      "title": "Decode Context",
+      "alternateIds": [
+        "x5-5-1-4-decode-context"
+      ],
+      "number": "5.5.1.4"
+    },
+    {
+      "id": "value-codec",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#value-codec",
+      "level": 4,
+      "title": "Value Codec",
+      "alternateIds": [
+        "x5-5-2-value-codec"
+      ],
+      "number": "5.5.2"
+    },
+    {
+      "id": "create-value-encoder",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#create-value-encoder",
+      "level": 5,
+      "title": "Create Value Encoder",
+      "alternateIds": [
+        "x5-5-2-1-create-value-encoder"
+      ],
+      "number": "5.5.2.1"
+    },
+    {
+      "id": "encode-value",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#encode-value",
+      "level": 5,
+      "title": "Encode Value",
+      "alternateIds": [
+        "x5-5-2-2-encode-value"
+      ],
+      "number": "5.5.2.2"
+    },
+    {
+      "id": "create-value-decoder",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#create-value-decoder",
+      "level": 5,
+      "title": "Create Value Decoder",
+      "alternateIds": [
+        "x5-5-2-3-create-value-decoder"
+      ],
+      "number": "5.5.2.3"
+    },
+    {
+      "id": "decode-value",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#decode-value",
+      "level": 5,
+      "title": "Decode Value",
+      "alternateIds": [
+        "x5-5-2-4-decode-value"
+      ],
+      "number": "5.5.2.4"
+    },
+    {
+      "id": "cbor-tag-processing",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#cbor-tag-processing",
+      "level": 3,
+      "title": "CBOR Tag Processing",
+      "alternateIds": [
+        "x5-6-cbor-tag-processing"
+      ],
+      "number": "5.6"
+    },
+    {
+      "id": "get-cbor-tag-structure-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#get-cbor-tag-structure-algorithm",
+      "level": 4,
+      "title": "Get CBOR Tag Structure Algorithm",
+      "alternateIds": [
+        "x5-6-1-get-cbor-tag-structure-algorithm"
+      ],
+      "number": "5.6.1"
+    },
+    {
+      "id": "get-registry-entry-id-algorithm",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#get-registry-entry-id-algorithm",
+      "level": 4,
+      "title": "Get Registry Entry ID Algorithm",
+      "alternateIds": [
+        "x5-6-2-get-registry-entry-id-algorithm"
+      ],
+      "number": "5.6.2"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "x6-security-considerations"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "x7-privacy-considerations"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#iana-considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "alternateIds": [
+        "x8-iana-considerations"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "cbor-tag",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#cbor-tag",
+      "level": 3,
+      "title": "CBOR Tag",
+      "alternateIds": [
+        "x8-1-cbor-tag"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "a-references"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "a-1-normative-references"
+      ],
+      "number": "A.1"
+    }
+  ]
+}

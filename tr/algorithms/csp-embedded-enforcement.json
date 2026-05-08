@@ -75,7 +75,16 @@
                   "html": "<p>Let <var>required policy</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webappsec-csp/#parse-serialized-csp\" id=\"ref-for-parse-serialized-csp\">parsing</a>\n  <var>requiredCSP</var> as \"<code>enforce</code>\".</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>required policy</var> to <var>result</var>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list\">CSP list</a>.</p>"
+                  "html": "<p>Let <var>response policies</var> be the result of <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/CSP3/#abstract-opdef-parse-a-responses-content-security-policies\" id=\"ref-for-abstract-opdef-parse-a-responses-content-security-policies\">parsing</a>\n  <var>response</var>’s Content Security Policies.</p>"
+                },
+                {
+                  "html": "If <a href=\"https://www.w3.org/TR/csp-embedded-enforcement/#subsume-csp-list\">§ 3.2.1 CSP List Subsumption</a> returns \"<code>Does Not Subsume</code>\" when executed upon\n  <var>required policy</var>, <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>, <var>response policies</var>,\n  and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url①\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①\">origin</a>:",
+                  "rationale": "append",
+                  "steps": [
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>required policy</var> to <var>result</var>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#policy-container-csp-list\" id=\"ref-for-policy-container-csp-list\">CSP list</a>.</p>"
+                    }
+                  ]
                 },
                 {
                   "html": "<p>Set <var>result</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/csp-embedded-enforcement/#policy-container-required-csp\" id=\"ref-for-policy-container-required-csp②\">required CSP</a> to <var>requiredCSP</var>.</p>"
@@ -742,7 +751,7 @@
           "html": "<p>If <var>policy list</var> is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty⑤\">is empty</a> or <code>null</code>, return \"<code>Does Not Subsume</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>effective policy</var> the result of executing <a href=\"https://www.w3.org/TR/csp-embedded-enforcement/#intersection-policy-list\">§ 3.1.1 CSP List intersectioni</a> given\n  <var>policy list</var> and <var>origin</var>.</p>"
+          "html": "<p>Let <var>effective policy</var> the result of executing <a href=\"https://www.w3.org/TR/csp-embedded-enforcement/#intersection-policy-list\">§ 3.1.1 CSP List intersection</a> given\n  <var>policy list</var> and <var>origin</var>.</p>"
         },
         {
           "html": "<p>Return the result of executing <a href=\"https://www.w3.org/TR/csp-embedded-enforcement/#subsume-policy\">§ 3.2.2 Policy Subsumption</a> given <var>subsuming policy</var>,\n  <var>subsuming origin</var>, <var>effective policy</var>, and <var>origin</var>.</p>"
@@ -1088,7 +1097,7 @@
           "html": "<p>If the <a href=\"https://www.w3.org/TR/csp-embedded-enforcement/#origin-allowed\">§ 4.2 Does response allow blanket enforcement of policy from request?</a> algorithm returns \"<code>Allowed</code>\" when executed upon <var>response</var> and\n  <var>request</var>, return \"<code>Allowed</code>\".</p>"
         },
         {
-          "html": "<p>If the <a href=\"https://www.w3.org/TR/csp-embedded-enforcement/#subsume-csp-list\">§ 3.2.1 CSP List Subsumption</a> algorithm returns \"<code>Subsumes</code>\" when executed upon\n  <var>required policy</var>, <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin④\">origin</a>, the result of\n  <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/CSP3/#abstract-opdef-parse-a-responses-content-security-policies\" id=\"ref-for-abstract-opdef-parse-a-responses-content-security-policies\">parsing</a> <var>response</var>’s Content Security\n  Policies, and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>, return \"<code>Allowed</code>\".</p>"
+          "html": "<p>If the <a href=\"https://www.w3.org/TR/csp-embedded-enforcement/#subsume-csp-list\">§ 3.2.1 CSP List Subsumption</a> algorithm returns \"<code>Subsumes</code>\" when executed upon\n  <var>required policy</var>, <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url②\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin②\">origin</a>, the result of\n  <a data-link-type=\"abstract-op\" href=\"https://www.w3.org/TR/CSP3/#abstract-opdef-parse-a-responses-content-security-policies\" id=\"ref-for-abstract-opdef-parse-a-responses-content-security-policies①\">parsing</a> <var>response</var>’s Content Security\n  Policies, and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url③\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin③\">origin</a>, return \"<code>Allowed</code>\".</p>"
         },
         {
           "html": "<p>Return \"<code>Blocked</code>\".</p>"
@@ -1100,7 +1109,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url①\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#local-scheme\" id=\"ref-for-local-scheme\">local scheme</a>, return \"<code>Allowed</code>\".</p>"
+          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url④\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#local-scheme\" id=\"ref-for-local-scheme\">local scheme</a>, return \"<code>Allowed</code>\".</p>"
         },
         {
           "html": "If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list\">header list</a> has a header named `<code><a data-link-type=\"http-header\" href=\"https://www.w3.org/TR/csp-embedded-enforcement/#http-headerdef-allow-csp-from\" id=\"ref-for-http-headerdef-allow-csp-from⑥\">Allow-CSP-From</a></code>` (<var>header</var>):",
@@ -1110,7 +1119,7 @@
               "html": "<p>If <var>header</var>’s value is \"<code>*</code>\", return \"<code>Allowed</code>\".</p>"
             },
             {
-              "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin⑤\">origin</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">serialized</a> and\n  <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encoded</a> is <var>header</var>’s value, return \"<code>Allowed</code>\".</p>"
+              "html": "<p>If <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-origin\" id=\"ref-for-concept-request-origin④\">origin</a>, <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#ascii-serialisation-of-an-origin\" id=\"ref-for-ascii-serialisation-of-an-origin\">serialized</a> and\n  <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encoded</a> is <var>header</var>’s value, return \"<code>Allowed</code>\".</p>"
             }
           ]
         },
