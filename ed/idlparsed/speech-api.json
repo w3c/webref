@@ -524,8 +524,32 @@
         "partial": false,
         "href": "https://webaudio.github.io/web-speech-api/#speechrecognition"
       },
+      "SpeechRecognitionQuality": {
+        "fragment": "enum SpeechRecognitionQuality {\n  \"command\",\n  \"dictation\",\n  \"conversation\"\n};",
+        "type": "enum",
+        "name": "SpeechRecognitionQuality",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "command",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionquality-command"
+          },
+          {
+            "type": "enum-value",
+            "value": "dictation",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionquality-dictation"
+          },
+          {
+            "type": "enum-value",
+            "value": "conversation",
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionquality-conversation"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://webaudio.github.io/web-speech-api/#enumdef-speechrecognitionquality"
+      },
       "SpeechRecognitionOptions": {
-        "fragment": "dictionary SpeechRecognitionOptions {\n  required sequence<DOMString> langs;\n  boolean processLocally = false;\n};",
+        "fragment": "dictionary SpeechRecognitionOptions {\n  required sequence<DOMString> langs;\n  boolean processLocally = false;\n  SpeechRecognitionQuality quality = \"command\";\n};",
         "type": "dictionary",
         "name": "SpeechRecognitionOptions",
         "inheritance": null,
@@ -573,6 +597,25 @@
             },
             "required": false,
             "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionoptions-processlocally"
+          },
+          {
+            "type": "field",
+            "name": "quality",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SpeechRecognitionQuality"
+            },
+            "default": {
+              "type": "string",
+              "value": "command"
+            },
+            "required": false,
+            "href": "https://webaudio.github.io/web-speech-api/#dom-speechrecognitionoptions-quality"
           }
         ],
         "extAttrs": [],
@@ -2529,7 +2572,9 @@
         "SpeechRecognitionOptions",
         "EventHandler"
       ],
-      "SpeechRecognitionOptions": [],
+      "SpeechRecognitionOptions": [
+        "SpeechRecognitionQuality"
+      ],
       "SpeechRecognitionErrorEvent": [
         "Event",
         "SpeechRecognitionErrorEventInit",

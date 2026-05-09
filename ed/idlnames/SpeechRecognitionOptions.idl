@@ -2,4 +2,5 @@
 dictionary SpeechRecognitionOptions {
   required sequence<DOMString> langs;
   boolean processLocally = false;
+  SpeechRecognitionQuality quality = "command";
 };
