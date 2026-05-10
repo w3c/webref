@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-05-09T18:54:10.328Z",
+  "date": "2026-05-10T01:25:53.899Z",
   "options": {
     "useCrawl": "curated",
     "output": "curated",
@@ -32,7 +32,7 @@
   },
   "stats": {
     "crawled": 739,
-    "errors": 2
+    "errors": 3
   },
   "crawler": "reffy-21.0.0",
   "results": [
@@ -6282,7 +6282,7 @@
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Sat, 09 May 2026 13:57:16 GMT"
+        "lastModified": "Sat, 09 May 2026 13:57:17 GMT"
       },
       "date": "9 May 2026",
       "links": "links/ecmascript.json",
@@ -36288,7 +36288,8 @@
       "refs": "refs/sparql12-results-json.json",
       "headings": "headings/sparql12-results-json.json",
       "ids": "ids/sparql12-results-json.json",
-      "cddl": []
+      "cddl": [],
+      "error": "Error: Loading https://w3c.github.io/sparql-results-json/spec/ triggered HTTP status 503\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 615)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/sparql12-results-xml/",
