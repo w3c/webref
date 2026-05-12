@@ -820,6 +820,13 @@
           "syntax": "rect | round"
         },
         {
+          "name": "ua-color-scheme",
+          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-ua-color-scheme",
+          "for": "@media",
+          "type": "discrete",
+          "syntax": "light | dark"
+        },
+        {
           "name": "update",
           "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-update",
           "for": "@media",
@@ -6371,7 +6378,7 @@
       "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "the keyword normal, or an ordered list of specified color scheme keywords",
+      "computedValue": "the keyword normal, or a color scheme support",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "styleDeclaration": [
@@ -6546,7 +6553,7 @@
         "column-rule-inset-cap-start",
         "column-rule-inset-cap-end"
       ],
-      "syntax": "<length-percentage> [ <length-percentage> ]?",
+      "syntax": "<inset-value> <inset-value>?",
       "extended": []
     },
     {
@@ -6563,7 +6570,7 @@
         "column-rule-inset-cap-end",
         "columnRuleInsetCapEnd"
       ],
-      "syntax": "<length-percentage>",
+      "syntax": "<inset-value>",
       "extended": []
     },
     {
@@ -6580,7 +6587,7 @@
         "column-rule-inset-cap-start",
         "columnRuleInsetCapStart"
       ],
-      "syntax": "<length-percentage>",
+      "syntax": "<inset-value>",
       "extended": []
     },
     {
@@ -6601,7 +6608,7 @@
         "column-rule-inset-cap-end",
         "column-rule-inset-junction-end"
       ],
-      "syntax": "<length-percentage>",
+      "syntax": "<inset-value>",
       "extended": []
     },
     {
@@ -6622,7 +6629,7 @@
         "column-rule-inset-junction-start",
         "column-rule-inset-junction-end"
       ],
-      "syntax": "<length-percentage> [ <length-percentage> ]?",
+      "syntax": "<inset-value> <inset-value>?",
       "extended": []
     },
     {
@@ -6639,7 +6646,7 @@
         "column-rule-inset-junction-end",
         "columnRuleInsetJunctionEnd"
       ],
-      "syntax": "<length-percentage>",
+      "syntax": "<inset-value>",
       "extended": []
     },
     {
@@ -6656,7 +6663,7 @@
         "column-rule-inset-junction-start",
         "columnRuleInsetJunctionStart"
       ],
-      "syntax": "<length-percentage>",
+      "syntax": "<inset-value>",
       "extended": []
     },
     {
@@ -6677,7 +6684,7 @@
         "column-rule-inset-cap-start",
         "column-rule-inset-junction-start"
       ],
-      "syntax": "<length-percentage>",
+      "syntax": "<inset-value>",
       "extended": []
     },
     {
@@ -11680,7 +11687,7 @@
       "name": "overflow-block",
       "href": "https://drafts.csswg.org/css-overflow-3/#propdef-overflow-block",
       "initial": "visible",
-      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT]",
+      "appliesTo": "block containers [CSS2], flex containers [CSS-FLEXBOX-1], grid containers [CSS-GRID-1], and table grid boxes [CSS-TABLES-3]",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "usually specified value, but see text",
@@ -11907,7 +11914,7 @@
       "name": "overflow-inline",
       "href": "https://drafts.csswg.org/css-overflow-3/#propdef-overflow-inline",
       "initial": "visible",
-      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT]",
+      "appliesTo": "block containers [CSS2], flex containers [CSS-FLEXBOX-1], grid containers [CSS-GRID-1], and table grid boxes [CSS-TABLES-3]",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "usually specified value, but see text",
@@ -11942,7 +11949,7 @@
       "name": "overflow-x",
       "href": "https://drafts.csswg.org/css-overflow-3/#propdef-overflow-x",
       "initial": "visible",
-      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT]",
+      "appliesTo": "block containers [CSS2], flex containers [CSS-FLEXBOX-1], grid containers [CSS-GRID-1], and table grid boxes [CSS-TABLES-3]",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "usually specified value, but see text",
@@ -11960,7 +11967,7 @@
       "name": "overflow-y",
       "href": "https://drafts.csswg.org/css-overflow-3/#propdef-overflow-y",
       "initial": "visible",
-      "appliesTo": "block containers [CSS2], flex containers [CSS3-FLEXBOX], grid containers [CSS3-GRID-LAYOUT]",
+      "appliesTo": "block containers [CSS2], flex containers [CSS-FLEXBOX-1], grid containers [CSS-GRID-1], and table grid boxes [CSS-TABLES-3]",
       "inherited": "no",
       "percentages": "N/A",
       "computedValue": "usually specified value, but see text",
@@ -13065,7 +13072,7 @@
         "row-rule-inset-cap-start",
         "row-rule-inset-cap-end"
       ],
-      "syntax": "<length-percentage> [ <length-percentage> ]?",
+      "syntax": "<inset-value> <inset-value>?",
       "extended": []
     },
     {
@@ -13082,7 +13089,7 @@
         "row-rule-inset-cap-end",
         "rowRuleInsetCapEnd"
       ],
-      "syntax": "<length-percentage>",
+      "syntax": "<inset-value>",
       "extended": []
     },
     {
@@ -13099,7 +13106,7 @@
         "row-rule-inset-cap-start",
         "rowRuleInsetCapStart"
       ],
-      "syntax": "<length-percentage>",
+      "syntax": "<inset-value>",
       "extended": []
     },
     {
@@ -13120,7 +13127,7 @@
         "row-rule-inset-cap-end",
         "row-rule-inset-junction-end"
       ],
-      "syntax": "<length-percentage>",
+      "syntax": "<inset-value>",
       "extended": []
     },
     {
@@ -13141,7 +13148,7 @@
         "row-rule-inset-junction-start",
         "row-rule-inset-junction-end"
       ],
-      "syntax": "<length-percentage> [ <length-percentage> ]?",
+      "syntax": "<inset-value> <inset-value>?",
       "extended": []
     },
     {
@@ -13158,7 +13165,7 @@
         "row-rule-inset-junction-end",
         "rowRuleInsetJunctionEnd"
       ],
-      "syntax": "<length-percentage>",
+      "syntax": "<inset-value>",
       "extended": []
     },
     {
@@ -13175,7 +13182,7 @@
         "row-rule-inset-junction-start",
         "rowRuleInsetJunctionStart"
       ],
-      "syntax": "<length-percentage>",
+      "syntax": "<inset-value>",
       "extended": []
     },
     {
@@ -13196,7 +13203,7 @@
         "row-rule-inset-cap-start",
         "row-rule-inset-junction-start"
       ],
-      "syntax": "<length-percentage>",
+      "syntax": "<inset-value>",
       "extended": []
     },
     {
@@ -19264,7 +19271,7 @@
     },
     {
       "name": "ident",
-      "prose": "CSS identifiers, generically denoted by <ident>, consist of a sequence of characters conforming to the <ident-token> grammar. [CSS-SYNTAX-3] Identifiers cannot be quoted; otherwise they would be interpreted as strings. CSS properties accept two classes of identifiers: pre-defined keywords and author-defined identifiers.",
+      "prose": "CSS identifiers, generically denoted by <ident>, represent names, and are written as an unquoted sequence of (potentially escaped) characters corresponding to the <ident-token> grammar. [CSS-SYNTAX-3] Identifiers cannot be quoted; otherwise they would be interpreted as strings. CSS properties accept two classes of identifiers: pre-defined keywords and author-defined identifiers.",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-ident",
       "extended": []
     },
@@ -19396,6 +19403,12 @@
       "name": "input-position",
       "href": "https://drafts.csswg.org/css-values-5/#typedef-calc-interpolate-input-position",
       "syntax": "<percentage> | <number> | <dimension>",
+      "extended": []
+    },
+    {
+      "name": "inset-value",
+      "href": "https://drafts.csswg.org/css-gaps-1/#typedef-inset-value",
+      "syntax": "<length-percentage> | overlap-join",
       "extended": []
     },
     {
@@ -20717,7 +20730,7 @@
     },
     {
       "name": "string",
-      "prose": "Strings are denoted by <string>. When written literally, they consist of a sequence of characters delimited by double quotes or single quotes, corresponding to the <string-token> production in the CSS Syntax Module [CSS-SYNTAX-3].",
+      "prose": "Strings, denoted by <string>, are sequences of characters representing arbitrary textual data. When written literally, they are delimited by double quotes or single quotes, and correspond to the <string-token> production. [CSS-SYNTAX-3].",
       "href": "https://drafts.csswg.org/css-values-4/#string-value",
       "extended": []
     },

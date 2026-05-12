@@ -637,15 +637,38 @@
           "values": [
             {
               "name": "light",
-              "prose": "Indicates that user has expressed the preference for a page that has a light theme (dark text on light background), or has not expressed an active preference (and thus should receive the \"web default\" of a light theme).",
+              "prose": "Indicates that the page color scheme is a light color scheme (dark text on light background).",
               "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-color-scheme-light",
               "type": "value",
               "value": "light"
             },
             {
               "name": "dark",
-              "prose": "Indicates that user has expressed the preference for a page that has a dark theme (light text on dark background).",
+              "prose": "Indicates that the page color scheme is a dark color scheme (light text on dark background).",
               "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-color-scheme-dark",
+              "type": "value",
+              "value": "dark"
+            }
+          ]
+        },
+        {
+          "name": "ua-color-scheme",
+          "href": "https://drafts.csswg.org/mediaqueries-5/#descdef-media-ua-color-scheme",
+          "for": "@media",
+          "value": "light | dark",
+          "type": "discrete",
+          "values": [
+            {
+              "name": "light",
+              "prose": "Indicates that the user’s preferred color scheme is a light color scheme (dark text on light background), or that the user has no preference. (If the user has not expressed an active preference, they will also receive the \"web default\" of a light theme).",
+              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-ua-color-scheme-light",
+              "type": "value",
+              "value": "light"
+            },
+            {
+              "name": "dark",
+              "prose": "Indicates that the user’s preferred color scheme is a dark color scheme (light text on dark background).",
+              "href": "https://drafts.csswg.org/mediaqueries-5/#valdef-media-ua-color-scheme-dark",
               "type": "value",
               "value": "dark"
             }

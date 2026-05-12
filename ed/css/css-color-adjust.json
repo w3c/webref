@@ -12,34 +12,34 @@
       "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "n/a",
-      "computedValue": "the keyword normal, or an ordered list of specified color scheme keywords",
+      "computedValue": "the keyword normal, or a color scheme support",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "values": [
         {
           "name": "normal",
-          "prose": "Indicates that the element supports the page’s supported color schemes, if they are set, or that it supports no color schemes at all otherwise.",
+          "prose": "The element color scheme is the same as the page color scheme. (This includes noting whether the color scheme was defaulted.)",
           "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-color-scheme-normal",
           "type": "value",
           "value": "normal"
         },
         {
           "name": "light",
-          "prose": "Indicates that the element supports a light color scheme.",
+          "prose": "Indicates that the element supports a light and/or dark color scheme, as appropriate. The element’s color scheme support will include the keywords, in the order they’re specified.",
           "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-color-scheme-light",
           "type": "value",
           "value": "light"
         },
         {
           "name": "dark",
-          "prose": "Indicates that the element supports a dark color scheme.",
+          "prose": "Indicates that the element supports a light and/or dark color scheme, as appropriate. The element’s color scheme support will include the keywords, in the order they’re specified.",
           "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-color-scheme-dark",
           "type": "value",
           "value": "dark"
         },
         {
           "name": "only",
-          "prose": "Forbids the user agent from overriding the color scheme for the element.",
+          "prose": "Forbids the user agent from overriding the color scheme for the element. The element’s color scheme support will have a flag indicating sole support.",
           "href": "https://drafts.csswg.org/css-color-adjust-1/#valdef-color-scheme-only",
           "type": "value",
           "value": "only"
