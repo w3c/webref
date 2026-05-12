@@ -22,6 +22,7 @@
           "ignore"
         ]
       },
+      "http://www.w3.org/TR/css-overflow-4/": {},
       "https://caniuse.com/": {
         "anchors": [
           "feat=css-scroll-behavior",
@@ -64,6 +65,7 @@
       "https://drafts.csswg.org/css-contain-2/": {},
       "https://drafts.csswg.org/css-display-4/": {},
       "https://drafts.csswg.org/css-display/": {},
+      "https://drafts.csswg.org/css-flexbox-2/": {},
       "https://drafts.csswg.org/css-flexbox/": {},
       "https://drafts.csswg.org/css-grid-1/": {},
       "https://drafts.csswg.org/css-grid-2/": {},
@@ -80,9 +82,11 @@
           "sbg-ext"
         ]
       },
+      "https://drafts.csswg.org/css-position-3/": {},
       "https://drafts.csswg.org/css-scroll-snap-1/": {},
       "https://drafts.csswg.org/css-scroll-snap-2/": {},
       "https://drafts.csswg.org/css-sizing-3/": {},
+      "https://drafts.csswg.org/css-tables-3/": {},
       "https://drafts.csswg.org/css-text-3/": {},
       "https://drafts.csswg.org/css-text-decor-4/": {},
       "https://drafts.csswg.org/css-transforms-2/": {},
@@ -95,7 +99,10 @@
       "https://drafts.csswg.org/css2/": {},
       "https://drafts.csswg.org/cssom-view/": {},
       "https://drafts.csswg.org/mediaqueries-5/": {},
+      "https://drafts.csswg.org/scroll-animations-1/": {},
       "https://github.com/w3c/csswg-drafts/issues": {},
+      "https://github.com/w3c/csswg-drafts/issues/10881": {},
+      "https://github.com/w3c/csswg-drafts/issues/12289": {},
       "https://github.com/w3c/csswg-drafts/issues/4957": {},
       "https://github.com/w3c/csswg-drafts/issues/7714": {},
       "https://github.com/w3c/csswg-drafts/issues/8607": {},
@@ -115,6 +122,7 @@
           "changes"
         ]
       },
+      "https://www.w3.org/TR/2025/WD-css-overflow-3-20251007/": {},
       "https://www.w3.org/TR/CSS/": {},
       "https://www.w3.org/TR/CSS1/": {},
       "https://www.w3.org/TR/CSS2/about.html": {
@@ -145,6 +153,8 @@
           "computed"
         ]
       },
+      "https://www.w3.org/TR/css-overscroll/": {},
+      "https://www.w3.org/TR/css-scroll-snap/": {},
       "https://www.w3.org/TR/css-text-decor-3/": {},
       "https://www.w3.org/TR/css-ui-3/": {
         "anchors": [
@@ -178,10 +188,10 @@
     "autolinks": {
       "https://drafts.csswg.org/css-align-3/": {
         "anchors": [
+          "baseline-alignment",
           "propdef-place-content",
           "content-distribution-properties",
           "alignment-subject",
-          "baseline-alignment",
           "content-distribute"
         ]
       },
@@ -189,9 +199,7 @@
         "anchors": [
           "propdef-box-shadow",
           "propdef-border-radius",
-          "box-shadow-outer-box-shadow",
-          "valdef-background-clip-border-box",
-          "valdef-background-clip-padding-box"
+          "box-shadow-outer-box-shadow"
         ]
       },
       "https://drafts.csswg.org/css-backgrounds-4/": {
@@ -202,10 +210,10 @@
       },
       "https://drafts.csswg.org/css-box-4/": {
         "anchors": [
-          "padding-box",
           "padding-edge",
           "typedef-visual-box",
           "border-edge",
+          "padding-box",
           "padding-area",
           "border-area",
           "content-area"
@@ -215,14 +223,15 @@
         "anchors": [
           "shorthand-property",
           "computed-value",
-          "used-value",
-          "css-legacy-value-alias"
+          "css-legacy-value-alias",
+          "used-value"
         ]
       },
       "https://drafts.csswg.org/css-contain-2/": {
         "anchors": [
+          "containment",
           "propdef-contain",
-          "containment"
+          "valdef-contain-paint"
         ]
       },
       "https://drafts.csswg.org/css-display-3/": {
@@ -234,27 +243,29 @@
         "anchors": [
           "containing-block-chain",
           "replaced-element",
-          "in-flow",
-          "out-of-flow",
+          "block-container",
           "block-box",
-          "establish-an-independent-formatting-context",
+          "independent-formatting-context",
           "propdef-visibility",
           "valdef-visibility-hidden",
           "valdef-visibility-collapse",
           "valdef-display-none",
-          "initial-containing-block"
+          "initial-containing-block",
+          "in-flow",
+          "out-of-flow"
         ]
       },
-      "https://drafts.csswg.org/css-flexbox-1/": {
+      "https://drafts.csswg.org/css-flexbox-2/": {
         "anchors": [
-          "flex-item",
           "flex-container",
           "main-start",
-          "cross-start"
+          "cross-start",
+          "flex-item"
         ]
       },
       "https://drafts.csswg.org/css-grid-2/": {
         "anchors": [
+          "grid-container",
           "grid-item"
         ]
       },
@@ -270,7 +281,8 @@
       },
       "https://drafts.csswg.org/css-masking-1/": {
         "anchors": [
-          "propdef-clip"
+          "propdef-clip",
+          "propdef-clip-path"
         ]
       },
       "https://drafts.csswg.org/css-overflow-4/": {
@@ -278,6 +290,11 @@
           "propdef-line-clamp",
           "propdef-max-lines",
           "propdef-block-ellipsis"
+        ]
+      },
+      "https://drafts.csswg.org/css-position-3/": {
+        "anchors": [
+          "sticky-position"
         ]
       },
       "https://drafts.csswg.org/css-scroll-snap-1/": {
@@ -294,6 +311,12 @@
         "anchors": [
           "propdef-height",
           "propdef-max-height"
+        ]
+      },
+      "https://drafts.csswg.org/css-tables-3/": {
+        "anchors": [
+          "table-grid-box",
+          "table-wrapper-box"
         ]
       },
       "https://drafts.csswg.org/css-text-decor-4/": {

@@ -8,8 +8,14 @@
   "selectors": [],
   "values": [
     {
+      "name": "<string>",
+      "prose": "Strings, denoted by <string>, are sequences of characters representing arbitrary textual data. When written literally, they are delimited by double quotes or single quotes, and correspond to the <string-token> production. [CSS-SYNTAX-3].",
+      "href": "https://drafts.csswg.org/css-values-4/#string-value",
+      "type": "type"
+    },
+    {
       "name": "<ident>",
-      "prose": "CSS identifiers, generically denoted by <ident>, consist of a sequence of characters conforming to the <ident-token> grammar. [CSS-SYNTAX-3] Identifiers cannot be quoted; otherwise they would be interpreted as strings. CSS properties accept two classes of identifiers: pre-defined keywords and author-defined identifiers.",
+      "prose": "CSS identifiers, generically denoted by <ident>, represent names, and are written as an unquoted sequence of (potentially escaped) characters corresponding to the <ident-token> grammar. [CSS-SYNTAX-3] Identifiers cannot be quoted; otherwise they would be interpreted as strings. CSS properties accept two classes of identifiers: pre-defined keywords and author-defined identifiers.",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-ident",
       "type": "type"
     },
@@ -23,12 +29,6 @@
       "name": "<dashed-ident>",
       "prose": "The <dashed-ident> production is a <custom-ident>, with all the case-sensitivity that implies, with the additional restriction that it must start with two dashes (U+002D HYPHEN-MINUS).",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-dashed-ident",
-      "type": "type"
-    },
-    {
-      "name": "<string>",
-      "prose": "Strings are denoted by <string>. When written literally, they consist of a sequence of characters delimited by double quotes or single quotes, corresponding to the <string-token> production in the CSS Syntax Module [CSS-SYNTAX-3].",
-      "href": "https://drafts.csswg.org/css-values-4/#string-value",
       "type": "type"
     },
     {
@@ -744,7 +744,7 @@
         },
         {
           "name": "line-width",
-          "prose": "If A is non-negative and B is omitted, A is snapped as a border width. Otherwise, if A is non-negative and B is specified, identical to nearest, except that if one of lower B or upper B is zero, always choose the non-zero one. Then snap as a border width. Otherwise (A is negative), identical to nearest. (No snapping occurs.)",
+          "prose": "If B is omitted, A is snapped as a line width. Otherwise round as for nearest, except that if one of lower B or upper B is zero, the non-zero one is chosen, and the final result is snapped as a line width.",
           "href": "https://drafts.csswg.org/css-values-4/#valdef-rounding-strategy-line-width",
           "type": "value",
           "value": "line-width"
@@ -875,6 +875,15 @@
       "name": "<quirky-length>",
       "prose": "When CSS is being parsed in quirks mode, <quirky-length> is a type of <length> that is only valid in certain properties:",
       "href": "https://drafts.csswg.org/css-values-4/#typedef-quirky-length",
+      "type": "type"
+    }
+  ],
+  "warnings": [
+    {
+      "msg": "Duplicate definition",
+      "name": "<string>",
+      "prose": "Strings, denoted by <string>, are sequences of characters representing arbitrary textual data. When written literally, they are delimited by double quotes or single quotes, and correspond to the <string-token> production. [CSS-SYNTAX-3].",
+      "href": "https://drafts.csswg.org/css-values-4/#string-value%E2%91%A0",
       "type": "type"
     }
   ]
