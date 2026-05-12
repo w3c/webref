@@ -5,30 +5,6 @@
   },
   "algorithms": [
     {
-      "html": "The <b>CBOR-LD Registry</b> is a global list that provides\nconsumers of CBOR-LD payloads the information they need to reconstruct the term codec map\nrequired for decompression. A <b>CBOR-LD Registry Entry</b> contains the following:",
-      "rationale": "use",
-      "steps": [
-        {
-          "html": "<code>Registry Entry ID</code>: a positive integer."
-        },
-        {
-          "html": "<code>Use Case</code>: what type of CBOR-LD payload this entry is used for."
-        },
-        {
-          "html": "<code>typeTables</code>: an array containing what <code>Type Tables</code> (use-case-specific compression tables for\ncompressing typed values rather than JSON-LD terms) are to be used for this registry entry."
-        },
-        {
-          "html": "<code>processingModel</code>: what processing model is used for this registry entry. A processing model\nspecifies the following:\n            \nThe <code>default</code> processing model uses semantic compression and includes the codecs specified in this document.",
-          "ignored": [
-            "Whether or not semantic compression is used for dynamic JSON-LD term compression, What codecs are used for dynamic typed value compression."
-          ]
-        },
-        {
-          "html": "Provisional: a yes/no flag indicating whether the entry is provisional. Provisional entries\nmay change or be removed."
-        }
-      ]
-    },
-    {
       "html": "This algorithm takes a map <code>typeTable</code>, an integer <code>registryEntryId</code>, and a JSON-LD\ndocument <code>jsonldDocument</code> as inputs, and returns a hexadecimal string <code>cborldBytes</code>.",
       "rationale": "set",
       "steps": [
