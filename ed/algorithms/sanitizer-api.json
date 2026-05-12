@@ -1150,7 +1150,13 @@
                       "html": "<p>Call <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitize-core\" id=\"ref-for-sanitize-core①\">sanitize core</a> on <var>child</var> with <var>configuration</var> and\n  <var>handleJavascriptNavigationUrls</var>.</p>"
                     },
                     {
-                      "html": "<p>Call <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-replace-all\" id=\"ref-for-concept-node-replace-all①\">replace all</a> with <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-child\" id=\"ref-for-concept-tree-child①\">children</a> within <var>child</var>.</p>"
+                      "html": "<p>Let <var>fragment</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#documentfragment\" id=\"ref-for-documentfragment②\">DocumentFragment</a></code> whose <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document②\">node document</a>\n  is <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document③\">node document</a>.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>innerChild</var> of <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-tree-child\" id=\"ref-for-concept-tree-child①\">children</a>,\n  <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-append\" id=\"ref-for-concept-node-append\">append</a> <var>innerChild</var> to <var>fragment</var>.</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-replace\" id=\"ref-for-concept-node-replace\">Replace</a> <var>child</var> with <var>fragment</var> within <var>node</var>.</p>"
                     },
                     {
                       "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">Continue</a>.</p>"
@@ -1212,7 +1218,7 @@
                   ]
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>attribute</var> in <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute\">attribute list</a>:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>attribute</var> in <var>child</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute\">attribute list</a>:",
                   "rationale": "let",
                   "steps": [
                     {
@@ -1410,7 +1416,7 @@
               "rationale": "for",
               "steps": [
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑨\">For each</a> <var>element</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements③⑦\">elements</a></code>\"]:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>element</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements③⑦\">elements</a></code>\"]:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -1464,7 +1470,7 @@
               "rationale": "for",
               "steps": [
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⓪\">For each</a> <var>element</var> in <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements③⑨\">elements</a></code>\"]:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>element</var> in <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements③⑨\">elements</a></code>\"]:",
                   "rationale": "if",
                   "steps": [
                     {
@@ -1515,7 +1521,7 @@
           "html": "<p>Let <var>result</var> be false.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①①\">For each</a> <var>element</var> in\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#built-in-safe-baseline-configuration\" id=\"ref-for-built-in-safe-baseline-configuration①\">built-in safe baseline configuration</a>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeelements\" id=\"ref-for-dom-sanitizerconfig-removeelements①⑥\">removeElements</a></code>\"]:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>element</var> in\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#built-in-safe-baseline-configuration\" id=\"ref-for-built-in-safe-baseline-configuration①\">built-in safe baseline configuration</a>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeelements\" id=\"ref-for-dom-sanitizerconfig-removeelements①⑥\">removeElements</a></code>\"]:",
           "rationale": "call",
           "steps": [
             {
@@ -1527,7 +1533,7 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①②\">For each</a> <var>attribute</var> in\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#built-in-safe-baseline-configuration\" id=\"ref-for-built-in-safe-baseline-configuration②\">built-in safe baseline configuration</a>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeattributes\" id=\"ref-for-dom-sanitizerconfig-removeattributes②②\">removeAttributes</a></code>\"]:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">For each</a> <var>attribute</var> in\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#built-in-safe-baseline-configuration\" id=\"ref-for-built-in-safe-baseline-configuration②\">built-in safe baseline configuration</a>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeattributes\" id=\"ref-for-dom-sanitizerconfig-removeattributes②②\">removeAttributes</a></code>\"]:",
           "rationale": "call",
           "steps": [
             {
@@ -1539,7 +1545,7 @@
           ]
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">For each</a> <var>attribute</var> listed in <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes\" id=\"ref-for-event-handler-content-attributes\">event handler content attributes</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <var>attribute</var> listed in <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#event-handler-content-attributes\" id=\"ref-for-event-handler-content-attributes\">event handler content attributes</a>:",
           "rationale": "call",
           "steps": [
             {
@@ -1607,7 +1613,7 @@
               "html": "<p>Let <var>elements</var> be « ».</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①④\">For each</a> <var>element</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements④③\">elements</a></code>\"] do:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>element</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-elements\" id=\"ref-for-dom-sanitizerconfig-elements④③\">elements</a></code>\"] do:",
               "rationale": "append",
               "steps": [
                 {
@@ -1628,7 +1634,7 @@
               "html": "<p>Let <var>elements</var> be « ».</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑤\">For each</a> <var>element</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeelements\" id=\"ref-for-dom-sanitizerconfig-removeelements②⓪\">removeElements</a></code>\"] do:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> <var>element</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeelements\" id=\"ref-for-dom-sanitizerconfig-removeelements②⓪\">removeElements</a></code>\"] do:",
               "rationale": "append",
               "steps": [
                 {
@@ -1649,7 +1655,7 @@
               "html": "<p>Let <var>elements</var> be « ».</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑥\">For each</a> <var>element</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-replacewithchildrenelements\" id=\"ref-for-dom-sanitizerconfig-replacewithchildrenelements①⑧\">replaceWithChildrenElements</a></code>\"] do:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> <var>element</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-replacewithchildrenelements\" id=\"ref-for-dom-sanitizerconfig-replacewithchildrenelements①⑧\">replaceWithChildrenElements</a></code>\"] do:",
               "rationale": "append",
               "steps": [
                 {
@@ -1670,7 +1676,7 @@
               "html": "<p>Let <var>processingInstructions</var> be « ».</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑦\">For each</a> <var>pi</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-processinginstructions\" id=\"ref-for-dom-sanitizerconfig-processinginstructions①⑧\">processingInstructions</a></code>\"]:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For each</a> <var>pi</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-processinginstructions\" id=\"ref-for-dom-sanitizerconfig-processinginstructions①⑧\">processingInstructions</a></code>\"]:",
               "rationale": "append",
               "steps": [
                 {
@@ -1691,7 +1697,7 @@
               "html": "<p>Let <var>processingInstructions</var> be « ».</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑧\">For each</a> <var>pi</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeprocessinginstructions\" id=\"ref-for-dom-sanitizerconfig-removeprocessinginstructions①③\">removeProcessingInstructions</a></code>\"]:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For each</a> <var>pi</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeprocessinginstructions\" id=\"ref-for-dom-sanitizerconfig-removeprocessinginstructions①③\">removeProcessingInstructions</a></code>\"]:",
               "rationale": "append",
               "steps": [
                 {
@@ -1712,7 +1718,7 @@
               "html": "<p>Let <var>attributes</var> be « ».</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①⑨\">For each</a> <var>attribute</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-attributes\" id=\"ref-for-dom-sanitizerconfig-attributes③⑤\">attributes</a></code>\"] do:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> <var>attribute</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-attributes\" id=\"ref-for-dom-sanitizerconfig-attributes③⑤\">attributes</a></code>\"] do:",
               "rationale": "append",
               "steps": [
                 {
@@ -1733,7 +1739,7 @@
               "html": "<p>Let <var>attributes</var> be « ».</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⓪\">For each</a> <var>attribute</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeattributes\" id=\"ref-for-dom-sanitizerconfig-removeattributes②⑥\">removeAttributes</a></code>\"] do:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>attribute</var> of <var>configuration</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-removeattributes\" id=\"ref-for-dom-sanitizerconfig-removeattributes②⑥\">removeAttributes</a></code>\"] do:",
               "rationale": "append",
               "steps": [
                 {
@@ -1775,7 +1781,7 @@
                   "html": "<p>Let <var>attributes</var> be « ».</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②①\">For each</a> <var>attribute</var> of <var>element</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerelementnamespacewithattributes-attributes\" id=\"ref-for-dom-sanitizerelementnamespacewithattributes-attributes④⑥\">attributes</a></code>\"]:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>attribute</var> of <var>element</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerelementnamespacewithattributes-attributes\" id=\"ref-for-dom-sanitizerelementnamespacewithattributes-attributes④⑥\">attributes</a></code>\"]:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -1796,7 +1802,7 @@
                   "html": "<p>Let <var>attributes</var> be « ».</p>"
                 },
                 {
-                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②②\">For each</a> <var>attribute</var> of <var>element</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerelementnamespacewithattributes-removeattributes\" id=\"ref-for-dom-sanitizerelementnamespacewithattributes-removeattributes③⑨\">removeAttributes</a></code>\"]:",
+                  "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>attribute</var> of <var>element</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://wicg.github.io/sanitizer-api/#dom-sanitizerelementnamespacewithattributes-removeattributes\" id=\"ref-for-dom-sanitizerelementnamespacewithattributes-removeattributes③⑨\">removeAttributes</a></code>\"]:",
                   "rationale": "append",
                   "steps": [
                     {
@@ -1878,7 +1884,7 @@
           "html": "<p>Set <var>removed</var> to false.</p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②③\">For each</a> <var>entry</var> of <var>list</var>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②④\">For each</a> <var>entry</var> of <var>list</var>:",
           "rationale": "if",
           "steps": [
             {
@@ -1959,7 +1965,7 @@
           "html": "<p>Let <var>result</var> be « ».</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑥\">For each</a> <var>entry</var> of <var>list</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-add\" id=\"ref-for-sanitizerconfig-add②\">add</a> <var>entry</var> to <var>result</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>entry</var> of <var>list</var>, <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#sanitizerconfig-add\" id=\"ref-for-sanitizerconfig-add②\">add</a> <var>entry</var> to <var>result</var>.</p>"
         },
         {
           "html": "<p>Return <var>result</var>.</p>"
@@ -1979,10 +1985,10 @@
           "html": "<p>Let <var>set B</var> be « [] ».</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑦\">For each</a> <var>entry</var> of <var>A</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">append</a> the result of\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-name\" id=\"ref-for-canonicalize-a-sanitizer-name⑤\">canonicalize a sanitizer name</a> <var>entry</var> to <var>set A</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <var>entry</var> of <var>A</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">append</a> the result of\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-name\" id=\"ref-for-canonicalize-a-sanitizer-name⑤\">canonicalize a sanitizer name</a> <var>entry</var> to <var>set A</var>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑧\">For each</a> <var>entry</var> of <var>B</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">append</a> the result of\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-name\" id=\"ref-for-canonicalize-a-sanitizer-name⑥\">canonicalize a sanitizer name</a> <var>entry</var> to <var>set B</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②⑨\">For each</a> <var>entry</var> of <var>B</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">append</a> the result of\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/sanitizer-api/#canonicalize-a-sanitizer-name\" id=\"ref-for-canonicalize-a-sanitizer-name⑥\">canonicalize a sanitizer name</a> <var>entry</var> to <var>set B</var>.</p>"
         },
         {
           "html": "<p>Retrun the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-intersection\" id=\"ref-for-set-intersection⑤\">intersection</a> of <var>set A</var> and <var>set B</var>.</p>"
