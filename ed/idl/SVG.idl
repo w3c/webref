@@ -324,8 +324,9 @@ interface mixin GetSVGDocument {
 
 [Exposed=Window]
 interface SVGStyleElement : SVGElement {
-  attribute DOMString media;
-  attribute DOMString title;
+  [Reflect] attribute DOMString type;
+  [Reflect] attribute DOMString media;
+  [Reflect] attribute DOMString title;
   attribute boolean disabled;
 
   // obsolete members
@@ -648,7 +649,7 @@ SVGPatternElement includes SVGURIReference;
 
 [Exposed=Window]
 interface SVGScriptElement : SVGElement {
-  attribute DOMString type;
+  [Reflect] attribute DOMString type;
   attribute DOMString? crossOrigin;
 };
 
@@ -656,13 +657,13 @@ SVGScriptElement includes SVGURIReference;
 
 [Exposed=Window]
 interface SVGAElement : SVGGraphicsElement {
-  [SameObject] readonly attribute SVGAnimatedString target;
-  attribute DOMString download;
-  attribute USVString ping;
-  attribute DOMString rel;
-  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;
-  attribute DOMString hreflang;
-  attribute DOMString type;
+  [Reflect, SameObject] readonly attribute SVGAnimatedString target;
+  [Reflect] attribute DOMString download;
+  [Reflect] attribute USVString ping;
+  [Reflect] attribute DOMString rel;
+  [Reflect="rel", SameObject, PutForwards=value] readonly attribute DOMTokenList relList;
+  [Reflect] attribute DOMString hreflang;
+  [Reflect] attribute DOMString type;
 
   attribute DOMString referrerPolicy;
 };
