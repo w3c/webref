@@ -46,12 +46,6 @@
           "section-6.1"
         ]
       },
-      "https://html.spec.whatwg.org/": {
-        "anchors": [
-          "tracking-user-activation",
-          "activation-triggering-input-event"
-        ]
-      },
       "https://html.spec.whatwg.org/multipage/": {},
       "https://httpwg.org/specs/rfc6265.html": {},
       "https://infra.spec.whatwg.org/": {},
@@ -120,6 +114,7 @@
       },
       "https://fetch.spec.whatwg.org/": {
         "anchors": [
+          "concept-response",
           "header-value",
           "concept-header-list",
           "concept-header",
@@ -135,7 +130,6 @@
           "concept-request-credentials-mode",
           "concept-request-referrer",
           "concept-fetch",
-          "concept-response",
           "concept-request-destination",
           "concept-response-url",
           "concept-header-list-get",
@@ -154,6 +148,14 @@
           "concept-origin-host",
           "scheme-and-host",
           "concept-origin-scheme",
+          "activation-triggering-input-event",
+          "descendent-navigables",
+          "nav-top",
+          "nav-document",
+          "transient-activation-duration",
+          "activation-notification",
+          "document-state",
+          "document-state-initiator-origin",
           "obtain-a-site"
         ]
       },
@@ -162,9 +164,17 @@
           "concept-origin-tuple"
         ]
       },
+      "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
+        "anchors": [
+          "navigate",
+          "user-navigation-involvement"
+        ]
+      },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
-          "child-navigable"
+          "child-navigable",
+          "navigable",
+          "node-navigable"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -198,12 +208,12 @@
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "concept-relevant-realm",
-          "concept-relevant-global",
           "concept-realm-global",
           "concept-realm-settings-object",
           "concept-environment-top-level-origin",
           "concept-settings-object-origin",
           "task-source",
+          "concept-relevant-global",
           "queue-a-task",
           "environment-settings-object",
           "secure-context"
@@ -237,6 +247,7 @@
           "map-set",
           "set-append",
           "map-exists",
+          "implementation-defined",
           "boolean",
           "assert",
           "the-range",
@@ -244,7 +255,6 @@
           "map-clear",
           "map-getting-the-keys",
           "map-remove",
-          "implementation-defined",
           "list-size",
           "struct",
           "map-entry",
@@ -349,6 +359,7 @@
         "anchors": [
           "dfn-duration",
           "dfn-moment",
+          "dfn-current-high-resolution-time",
           "dfn-wall-clock",
           "dfn-duration-from",
           "dfn-unix-epoch",
