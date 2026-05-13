@@ -73,6 +73,9 @@
           "html": "<p>If <var>site</var> is null, return failure.</p>"
         },
         {
+          "html": "<p>If <var>site</var> is \"<code>localhost</code>\" or if <var>site</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-unit-suffix\" id=\"ref-for-code-unit-suffix\">ends with</a> \"<code>.localhost</code>\",\nreturn failure.</p>"
+        },
+        {
           "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#scheme-and-host\" id=\"ref-for-scheme-and-host①\">scheme-and-host</a> tuple of (\"<code>https</code>\", <var>site</var>).</p>"
         }
       ]
@@ -595,10 +598,7 @@
           "html": "<p>If <var>document</var> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/iframe-embed-object.html#allowed-to-use\" id=\"ref-for-allowed-to-use①\">allowed to use</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature\" id=\"ref-for-policy-controlled-feature②\">policy-controlled feature</a> named\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/attribution/#dom-permissionpolicy-measure-conversion\" id=\"ref-for-dom-permissionpolicy-measure-conversion\">measure-conversion</a></code>\", return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑧\">a promise rejected with</a>\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror③\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code> in <var>realm</var>.</p>"
         },
         {
-          "html": "<p>Let <var>window</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant global object</a>.</p>"
-        },
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#check-attribution-api-activation\" id=\"ref-for-check-attribution-api-activation①\">Check attribution API activation</a>\ngiven <var>window</var>, returning <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑨\">a promise rejected with</a> any thrown reason.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#check-attribution-api-activation\" id=\"ref-for-check-attribution-api-activation①\">Check attribution API activation</a>\ngiven <var>document</var>, returning <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑨\">a promise rejected with</a> any thrown reason.</p>"
         },
         {
           "html": "<p>Let <var>validatedOptions</var> be the result of\n<a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validate-attributionconversionoptions\" id=\"ref-for-validate-attributionconversionoptions\">validating</a> <var>options</var>,\nreturning <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①⓪\">a promise rejected with</a> any thrown reason.</p>"
@@ -627,12 +627,12 @@
                   "operation": "switch",
                   "steps": [
                     {
-                      "case": "dap-15-histogram",
+                      "case": "dap-18-histogram",
                       "html": "Perform the following steps:",
                       "rationale": "let",
                       "steps": [
                         {
-                          "html": "<p>Let <var>encryptedReport</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#construct-a-dap-report\" id=\"ref-for-construct-a-dap-report\">construct a DAP report</a>,\ngiven <var>validatedOptions</var>,\n<var>implicitInputs</var>’ <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs-top-level-site\" id=\"ref-for-implicit-api-inputs-top-level-site③\">top-level site</a>,\n<var>implicitInputs</var>’ <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs-timestamp\" id=\"ref-for-implicit-api-inputs-timestamp③\">timestamp</a>, and <var>report</var>.</p>"
+                          "html": "<p>Let <var>encryptedReport</var> be the result of invoking <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#construct-a-dap-report\" id=\"ref-for-construct-a-dap-report\">construct a DAP report</a>,\ngiven <var>validatedOptions</var>,\n<var>implicitInputs</var>’ <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs-top-level-site\" id=\"ref-for-implicit-api-inputs-top-level-site③\">top-level site</a>,\n<var>implicitInputs</var>’ <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs-intermediary-site\" id=\"ref-for-implicit-api-inputs-intermediary-site③\">intermediary site</a>,\n<var>implicitInputs</var>’ <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#implicit-api-inputs-timestamp\" id=\"ref-for-implicit-api-inputs-timestamp③\">timestamp</a>, and <var>report</var>.</p>"
                         }
                       ]
                     }
@@ -1291,10 +1291,10 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>url</var> is a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url②\">potentially trustworthy URL</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme③\">scheme</a> is \"<code>https</code>\".</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②\">scheme</a> is \"<code>https</code>\".</p>"
         },
         {
-          "html": "<p>Let <var>headers</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list\">header list</a> containing a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header\">header</a> named\n<code>\"Content-Type\"</code> whose value is\n\"<code><a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#name-application-dap-report-medi\">application/dap-report</a></code>\".</p>"
+          "html": "<p>Let <var>headers</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list\" id=\"ref-for-concept-header-list\">header list</a> containing a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header\">header</a> named\n<code>\"Content-Type\"</code> whose value is\n\"<code><a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-16#name-application-dap-report-medi\">application/dap-report</a></code>\".</p>"
         },
         {
           "html": "<p>Let <var>request</var> be a new <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request\" id=\"ref-for-concept-request\">request</a> with the following properties:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method\">method</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>POST</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url\">URL</a>\n       </dt><dd data-md=\"\">\n        <p><var>url</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-header-list\" id=\"ref-for-concept-request-header-list\">header list</a>\n       </dt><dd data-md=\"\">\n        <p><var>headers</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-body\" id=\"ref-for-concept-request-body\">body</a>\n       </dt><dd data-md=\"\">\n        <p><var>report</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client\">client</a>\n       </dt><dd data-md=\"\">\n        <p><var>settings</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-mode\" id=\"ref-for-concept-request-mode\">mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>cors</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-cache-mode\" id=\"ref-for-concept-request-cache-mode\">cache mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>no-store</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#request-keepalive-flag\" id=\"ref-for-request-keepalive-flag\">keepalive</a>\n       </dt><dd data-md=\"\">\n        <p>true</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-credentials-mode\" id=\"ref-for-concept-request-credentials-mode\">credentials mode</a>\n       </dt><dd data-md=\"\">\n        <p>\"<code>omit</code>\"</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-referrer\" id=\"ref-for-concept-request-referrer\">referrer</a>\n       </dt><dd data-md=\"\">\n        <p><var>url</var></p>\n      </dd></dl>"
@@ -1320,7 +1320,7 @@
           "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url\">URL</a> is not a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url\" id=\"ref-for-potentially-trustworthy-url③\">potentially trustworthy URL</a>, return.</p>"
         },
         {
-          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url①\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme④\">scheme</a> is not \"<code>https</code>\", return.</p>"
+          "html": "<p>If <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url①\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme③\">scheme</a> is not \"<code>https</code>\", return.</p>"
         },
         {
           "html": "<p>Let <var>implicitInputs</var> be the result of <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#obtain-the-implicit-api-inputs\" id=\"ref-for-obtain-the-implicit-api-inputs②\">obtaining the implicit API inputs</a> from <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-client\" id=\"ref-for-concept-request-client②\">client</a>\nwith <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-url\" id=\"ref-for-concept-response-url②\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a>.</p>"
@@ -1394,29 +1394,41 @@
     {
       "name": "construct a DAP report",
       "href": "https://w3c.github.io/attribution/#construct-a-dap-report",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"construct-a-dap-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">construct a DAP report</dfn>,\nproducing a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①\">byte sequence</a> <var>report</var>,\ngiven <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validated-conversion-options\" id=\"ref-for-validated-conversion-options③\">validated conversion options</a> <var>options</var>,\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site④⓪\">site</a> <var>topLevelSite</var>,\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" id=\"ref-for-dfn-moment①③\">moment</a> <var>now</var>,\nand a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a> of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#integer\" id=\"ref-for-integer②②\">integers</a> <var>histogram</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"construct-a-dap-report\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">construct a DAP report</dfn>,\nproducing a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence①\">byte sequence</a> <var>report</var>,\ngiven <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validated-conversion-options\" id=\"ref-for-validated-conversion-options③\">validated conversion options</a> <var>options</var>,\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site④⓪\">site</a> <var>topLevelSite</var>,\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#site\" id=\"ref-for-site④①\">site</a> or <code>undefined</code> <var>intermediarySite</var>,\n<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-moment\" id=\"ref-for-dfn-moment①③\">moment</a> <var>now</var>,\nand a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑥\">list</a> of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/css-values-4/#integer\" id=\"ref-for-integer②②\">integers</a> <var>histogram</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>field</var> be Field128,\nas defined in <a href=\"https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf-15#section-6.1.3\">Section 6.1.3</a>\nof <a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-vdaf\" title=\"Verifiable Distributed Aggregation Functions\">[VDAF]</a>.</p>"
+          "html": "<p>Let <var>field</var> be Field128,\nas defined in <a href=\"https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf-18#section-6.1.3\">Section 6.1.3</a>\nof <a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-vdaf\" title=\"Verifiable Distributed Aggregation Functions\">[VDAF]</a>.</p>"
         },
         {
           "html": "<p>Let <var>length</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①⓪\">size</a> of <var>histogram</var>.</p>"
         },
         {
-          "html": "<p>Let <var>bits</var> be the base-2 logarithm\nof <var>options</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validated-conversion-options-max-value\" id=\"ref-for-validated-conversion-options-max-value②\">max value</a>,\nrounded toward positive Infinity.</p>"
+          "html": "<p>Let <var>maxValue</var> be <var>options</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validated-conversion-options-max-value\" id=\"ref-for-validated-conversion-options-max-value②\">max value</a>.</p>"
         },
         {
-          "html": "<p>Let <var>chunkLength</var> be the square root of (<var>bits</var> + 1) * <var>length</var>,\nrounded to the nearest integer.</p>"
+          "html": "<p>Let <var>chunkLength</var> be the square root of (<a href=\"https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.ceil\">Math.ceil</a>(<a href=\"https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math.log2\">log2</a>(<var>maxValue</var> + 1)) + 1) * <var>length</var>,\nrounded to the nearest integer.</p>"
         },
         {
-          "html": "<p>Let <var>vdaf</var> be a new PrioL1BoundSum VDAF <a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-prio-l1\" title=\"A Prio Instantiation for Vector Sums with an L1 Norm Bound on Contributions\">[PRIO-L1]</a> instance,\npassing <var>field</var>, <var>length</var>, <var>bits</var>, and <var>chunkLength</var>.</p>"
+          "html": "<p>Let <var>vdaf</var> be a new PrioL1BoundSum VDAF <a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-prio-l1\" title=\"A Prio Instantiation for Vector Sums with an L1 Norm Bound on Contributions\">[PRIO-L1]</a> instance,\npassing <var>field</var>, <var>length</var>, <var>maxValue</var>, and <var>chunkLength</var>.</p>"
         },
         {
-          "html": "<p>Let <var>taskID</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②\">byte sequence</a>\nfrom the hex string <code>b13e8440f1cdb4da51eed3967e0a2652d27f5005bc35f751daf188b4b746708b</code>\n<a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-dap-ext\" title=\"Distributed Aggregation Protocol (DAP) Report Binding Extensions\">[DAP-EXT]</a>.</p>"
+          "html": "<p>Let <var>microEpsilon</var> be <var>options</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validated-conversion-options-epsilon\" id=\"ref-for-validated-conversion-options-epsilon②\">epsilon</a>\nmultiplied by 1,000,000, then rounded toward positive Infinity.</p>"
         },
         {
-          "html": "<p>Let <var>ctx</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence③\">byte sequence</a> formed by concatenating\nthe <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-encode\" id=\"ref-for-isomorphic-encode\">encoded</a> string <code>dap-15</code>\nand <var>taskID</var>,\nas defined in <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\">Section 4.5.2</a>\nof <a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-dap\" title=\"Distributed Aggregation Protocol for Privacy Preserving Measurement\">[DAP]</a>.</p>"
+          "html": "<p>Let <var>caller</var> be <var>intermediarySite</var>,\nif <var>intermediarySite</var> is not <code>undefined</code>,\notherwise <var>topLevelSite</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>taskConfig</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence②\">byte sequences</a> produced by encoding a <code>TaskConfiguration</code> instance\nas defined in <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-18#section-4.2\">Section 4.2</a>\nof <a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-dap\" title=\"Distributed Aggregation Protocol for Privacy Preserving Measurement\">[DAP]</a>, with the following values:</p>",
+          "ignored": [
+            "An empty task_info. A leader_aggregator_endpoint set to the URL of the DAP Leader, taken from the implementation-defined definition of the selected aggregation service in options.Aggregation Service. The encoded value is produced by invoking the URL serializer with the configured URL and false (for exclude fragment). A helper_aggregator_endpoint set to the URL of the DAP Helper, taken from the implementation-defined definition of the selected aggregation service in options.Aggregation Service, produced using the same process as the leader_aggregator_endpoint value. A time_precision value of 5. A min_batch_size value of 20. A batch_mode value of TBD (see Distributed Aggregation Protocol (DAP) Extensions for the Attribution API § batch-mode). An empty batch_config. A vdaf_type value of 7 (see A Prio Instantiation for Vector Sums with an L1 Norm Bound on Contributions § dap). A vdaf_configuration encoded according to PrioL1BoundSum A Prio Instantiation for Vector Sums with an L1 Norm Bound on Contributions § dap, with length, maxValue, and chunkLength. A set of task extensions, extensions, a map of 16-bit unsigned integers to byte sequences: The extension codepoint for Collector identity, mapped to the serialized host component of caller. The extension codepoint for privacy budget source, mapped to the serialized host component of topLevelSite."
+          ]
+        },
+        {
+          "html": "<p>Let <var>taskID</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence④\">byte sequence</a> produced by the process described in <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-taskprov-03#task-id\">Task Binding and In-Band Provisioning for DAP § task-id</a>,\npassing <var>taskConfig</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>ctx</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑤\">byte sequence</a> formed by concatenating\nthe <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-encode\" id=\"ref-for-isomorphic-encode\">encoded</a> string <code>dap-18</code>\nand <var>taskID</var>,\nas defined in <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-18#client-behavior\">Section 4.4.2.1</a>\nof <a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-dap\" title=\"Distributed Aggregation Protocol for Privacy Preserving Measurement\">[DAP]</a>.</p>"
         },
         {
           "html": "<p>Let <var>reportID</var> be 16 bytes sampled from a cryptographically-secure random source <a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-rfc4086\" title=\"Randomness Requirements for Security\">[RFC4086]</a>.</p>"
@@ -1425,50 +1437,44 @@
           "html": "<p>Let <var>rand</var> be 128 bytes sampled from a cryptographically-secure random source <a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-rfc4086\" title=\"Randomness Requirements for Security\">[RFC4086]</a>.</p>"
         },
         {
-          "html": "<p>Let <var>publicShare</var>, <var>inputShares</var> be the result of invoking <var>vdaf</var>.<a href=\"https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf#section-4.1\"><code>shard()</code></a>,\nas defined in <a href=\"https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf-15#section-4.1\">Section 4.1</a>\nof <a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-vdaf\" title=\"Verifiable Distributed Aggregation Functions\">[VDAF]</a>,\nwith <var>ctx</var>, <var>histogram</var>, <var>reportID</var> (as the VDAF \"nonce\" parameter), and <var>rand</var>.</p>"
+          "html": "<p>Let <var>publicShare</var>, <var>inputShares</var> be the result of invoking <var>vdaf</var>.<a href=\"https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf-18#sec-def-shard\"><code>shard()</code></a>,\nas defined in <a href=\"https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf-18#section-4.1\">Section 4.1</a>\nof <a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-vdaf\" title=\"Verifiable Distributed Aggregation Functions\">[VDAF]</a>,\nwith <var>ctx</var>, <var>histogram</var>, <var>reportID</var> (as the VDAF \"nonce\" parameter), and <var>rand</var>.</p>"
         },
         {
-          "html": "<p>Let <var>time</var> be <var>now</var> as a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" id=\"ref-for-dfn-duration⑦\">duration</a> since the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-unix-epoch\" id=\"ref-for-dfn-unix-epoch②\">Unix epoch</a>,\ndivided by a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" id=\"ref-for-dfn-duration⑧\">duration</a> of 5 seconds.</p>"
+          "html": "<p>Let <var>time</var> be the integer resulting from dividing\nthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration-from\" id=\"ref-for-dfn-duration-from①\">duration from</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-unix-epoch\" id=\"ref-for-dfn-unix-epoch②\">Unix epoch</a> to <var>now</var>\nby a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" id=\"ref-for-dfn-duration⑦\">duration</a> of 5 seconds,\nrounding towards negative Infinity.</p>"
         },
         {
-          "html": "The extension codepoint for <a href=\"https://datatracker.ietf.org/doc/html/draft-thomson-ppm-dap-dp-ext-02#name-privacy-budget-consumption\">privacy budget</a>,\nmapped to the value of <var>encodedEpsilon</var>, derived as follows:",
+          "html": "<p>Let <var>extensions</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④\">map</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#16-bit-unsigned-integer\" id=\"ref-for-16-bit-unsigned-integer①\">16-bit unsigned integers</a> to <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑥\">byte sequences</a>,\ncomprised of:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>The extension codepoint for <a href=\"https://datatracker.ietf.org/doc/html/draft-thomson-ppm-dap-attribution-00#dp\">privacy budget</a>,\nmapped to the value of <var>microEpsilon</var>,\nencoded by invoking <a href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-numerictorawbytes\"><code>NumericToRawBytes</code></a>\nwith <a href=\"https://tc39.es/ecma262/multipage/indexed-collections.html#table-the-typedarray-constructors\">UINT32</a>,\nthe value <var>microEpsilon</var>,\nand <code>false</code> (for <code>isLittleEndian</code>).</p>\n      </li></ul>"
+        },
+        {
+          "html": "<p>Let <var>reportMetadata</var> be encoded DAP <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-18#section-4.4.2\"><code>ReportMetadata</code></a>\ngenerated from <var>reportID</var>, <var>time</var>, and <var>extensions</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>encryptedInputShares</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty①⑨\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">For each</a> <var>share</var> of <var>inputShares</var>,\nfollow the method for encrypting shares\ndescribed in <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-18#section-4.4.2.1\">Section 4.4.2.1</a>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>scaledEpsilon</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#32-bit-unsigned-integer\" id=\"ref-for-32-bit-unsigned-integer①⑥\">32-bit unsigned integer</a>\nthat is <var>options</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validated-conversion-options-epsilon\" id=\"ref-for-validated-conversion-options-epsilon②\">epsilon</a>,\nmultiplied by 1,000,000, then rounded toward positive Infinity.</p>"
+              "html": "<p>Let <var>pkR</var> be the public key of the corresponding role from\nthe <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#aggregation-service\" id=\"ref-for-aggregation-service①③\">aggregation service</a> <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-18#section-4.5.1\">HPKE configuration</a>\nobtained for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#aggregation-service\" id=\"ref-for-aggregation-service①④\">aggregation service</a>\nindicated by <var>options</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validated-conversion-options-aggregation-service\" id=\"ref-for-validated-conversion-options-aggregation-service④\">Aggregation Service</a>.</p>"
             },
             {
-              "html": "<p>Let <var>encodedEpsilon</var> be the result of invoking\n<a href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-numerictorawbytes\"><code>NumericToRawBytes</code></a>\nwith <a href=\"https://tc39.es/ecma262/multipage/indexed-collections.html#table-the-typedarray-constructors\">UINT32</a>, <var>scaledEpsilon</var>, and <code>false</code> (for <code>isLittleEndian</code>).</p>"
-            }
-          ]
-        },
-        {
-          "html": "<p>Let <var>reportMetadata</var> be encoded DAP <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\"><code>ReportMetadata</code></a>\ngenerated from <var>reportID</var>, <var>time</var>, and <var>extensions</var>.</p>"
-        },
-        {
-          "html": "<p>Let <var>encryptedInputShares</var> be an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty②⓪\">empty</a> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①③\">For each</a> <var>share</var> of <var>inputShares</var>,\nfollow the method for encrypting shares\ndescribed in <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\">Section 4.5.2</a>:",
-          "rationale": "let",
-          "steps": [
-            {
-              "html": "<p>Let <var>pkR</var> be the public key of the corresponding role from\nthe <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#aggregation-service\" id=\"ref-for-aggregation-service①①\">aggregation service</a> <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.1\">HPKE configuration</a>\nobtained for the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#aggregation-service\" id=\"ref-for-aggregation-service①②\">aggregation service</a>\nindicated by <var>options</var>.<a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#validated-conversion-options-aggregation-service\" id=\"ref-for-validated-conversion-options-aggregation-service②\">Aggregation Service</a>.</p>"
+              "html": "<p>Let <var>serverRole</var> be 2 for the first item (the Leader)\nand 3 for the second (the Helper).</p>"
             },
             {
-              "html": "<p>Let <var>serverRole</var> be 2 for the first item (the Leader)\nand 3 for the second (the Helper role).</p>"
+              "html": "<p>Let <var>info</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑦\">byte sequence</a> formed by concatenating:\nthe <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-encode\" id=\"ref-for-isomorphic-encode①\">encoded</a> value of the string <code>dap-18 input share</code>,\na byte with the value 0x01, and <var>serverRole</var>.</p>"
             },
             {
-              "html": "<p>Let <var>info</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑥\">byte sequence</a> formed by concatenating:\nthe <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-encode\" id=\"ref-for-isomorphic-encode②\">encoded</a> value of the string <code>dap-15 input share</code>,\na byte with the value 0x01, and <var>serverRole</var>.</p>"
+              "html": "<p>Let <var>inputShareAAD</var> be constructed from\n<var>taskID</var>, <var>reportMetadata</var>, <var>publicShare</var>, and <var>taskConfig</var>\nfollowing the structure for <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-18#section-4.4.2.1\"><code>InputShareAad</code></a>.</p>"
             },
             {
-              "html": "<p>Let <var>inputShareAAD</var> be constructed from\n<var>taskID</var>, <var>reportMetadata</var>, and <var>publicShare</var>,\nfollowing the structure for <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\"><code>InputShareAad</code></a>.</p>"
+              "html": "<p>Let <var>plaintextShare</var> be constructed from\nan empty set (for <code>private_extensions</code>) and <var>share</var> (for <code>payload</code>),\nfollowing the structure for <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-18#section-4.4.2.1\"><code>PlaintextInputShare</code></a>.</p>"
             },
             {
-              "html": "<p>Let <var>hpke</var> be an HPKE <a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-rfc9180\" title=\"Hybrid Public Key Encryption\">[RFC9180]</a> configuration\nthat is based on the same <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.1\">HPKE configuration</a>.</p>"
+              "html": "<p>Let <var>hpke</var> be an HPKE <a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-rfc9180\" title=\"Hybrid Public Key Encryption\">[RFC9180]</a> configuration\nthat is based on the same <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-18#section-4.4.1\">HPKE configuration</a>.</p>"
             },
             {
-              "html": "<p>Let <var>encryptedShare</var> be the result of invoking <var>hpke</var>.<a href=\"https://hpkewg.github.io/hpke/draft-ietf-hpke-hpke.html#section-6.1\"><code>Seal&lt;mode_base&gt;()</code></a>,\npassing <var>pkR</var>, <var>info</var>, <var>inputShareAAD</var>, and <var>share</var>.</p>"
+              "html": "<p>Let <var>encryptedShare</var> be the result of invoking <var>hpke</var>.<a href=\"https://hpkewg.github.io/hpke/draft-ietf-hpke-hpke.html#section-6.1\"><code>Seal&lt;mode_base&gt;()</code></a>,\npassing <var>pkR</var>, <var>info</var>, <var>inputShareAAD</var>, and <var>plaintextShare</var>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> <var>encryptedShare</var> to <var>encryptedInputShares</var>.</p>"
@@ -1476,7 +1482,7 @@
           ]
         },
         {
-          "html": "<p>Let <var>report</var> be an encoded DAP <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.2\"><code>Report</code></a>\ngenerated from <var>reportMetadata</var>, <var>publicShare</var>, <var>encryptedInputShares</var>\n(the two values being the leader and helper encrypted input shares respectively),\nand <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#aggregation-service\" id=\"ref-for-aggregation-service①③\">aggregation service</a> <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-15#section-4.5.1\">HPKE configuration</a>\nobtained from the DAP aggregators.</p>"
+          "html": "<p>Let <var>report</var> be an encoded DAP <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-18#section-4.4.2\"><code>Report</code></a>\ngenerated from <var>reportMetadata</var>, <var>publicShare</var>, <var>encryptedInputShares</var>\n(the two values being the leader and helper encrypted input shares respectively),\nand <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#aggregation-service\" id=\"ref-for-aggregation-service①⑤\">aggregation service</a> <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-ppm-dap-18#section-4.4.1\">HPKE configuration</a>\nobtained from the DAP aggregators.</p>"
         },
         {
           "html": "<p>Return <var>report</var>.</p>"

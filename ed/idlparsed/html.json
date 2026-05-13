@@ -3521,7 +3521,7 @@
         "href": "https://html.spec.whatwg.org/multipage/grouping-content.html#htmldivelement"
       },
       "HTMLAnchorElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLAnchorElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, Reflect] attribute DOMString target;\n  [CEReactions, Reflect] attribute DOMString download;\n  [CEReactions, Reflect] attribute USVString ping;\n  [CEReactions, Reflect] attribute DOMString rel;\n  [SameObject, PutForwards=value, Reflect=\"rel\"] readonly attribute DOMTokenList relList;\n  [CEReactions, Reflect] attribute DOMString hreflang;\n  [CEReactions, Reflect] attribute DOMString type;\n\n  [CEReactions] attribute DOMString text;\n\n  [CEReactions] attribute DOMString referrerPolicy;\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLAnchorElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, Reflect] attribute DOMString download;\n  [CEReactions, Reflect] attribute USVString ping;\n  [CEReactions, Reflect] attribute DOMString rel;\n  [SameObject, PutForwards=value, Reflect=\"rel\"] readonly attribute DOMTokenList relList;\n  [CEReactions, Reflect] attribute DOMString hreflang;\n  [CEReactions, Reflect] attribute DOMString type;\n\n  [CEReactions] attribute DOMString text;\n\n  [CEReactions] attribute DOMString referrerPolicy;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLAnchorElement",
         "inheritance": "HTMLElement",
@@ -3537,35 +3537,6 @@
                 "arguments": []
               }
             ]
-          },
-          {
-            "type": "attribute",
-            "name": "target",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              },
-              {
-                "type": "extended-attribute",
-                "name": "Reflect",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false,
-            "href": "https://html.spec.whatwg.org/multipage/text-level-semantics.html#dom-a-target"
           },
           {
             "type": "attribute",
@@ -4239,7 +4210,7 @@
         "href": "https://html.spec.whatwg.org/multipage/links.html#hyperlinkelementutils"
       },
       "HTMLHyperlinkElementUtils": {
-        "fragment": "interface mixin HTMLHyperlinkElementUtils {\n  [CEReactions, ReflectSetter] stringifier attribute USVString href;\n};",
+        "fragment": "interface mixin HTMLHyperlinkElementUtils {\n  [CEReactions, ReflectSetter] stringifier attribute USVString href;\n  [CEReactions, Reflect] attribute DOMString target;\n};",
         "type": "interface mixin",
         "name": "HTMLHyperlinkElementUtils",
         "inheritance": null,
@@ -4270,6 +4241,34 @@
               }
             ],
             "special": "stringifier",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "target",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
             "readonly": false
           }
         ],
@@ -9278,7 +9277,7 @@
         "href": "https://html.spec.whatwg.org/multipage/image-maps.html#htmlmapelement"
       },
       "HTMLAreaElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLAreaElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, Reflect] attribute DOMString alt;\n  [CEReactions, Reflect] attribute DOMString coords;\n  [CEReactions, Reflect] attribute DOMString shape;\n  [CEReactions, Reflect] attribute DOMString target;\n  [CEReactions, Reflect] attribute DOMString download;\n  [CEReactions, Reflect] attribute USVString ping;\n  [CEReactions, Reflect] attribute DOMString rel;\n  [SameObject, PutForwards=value, Reflect=\"rel\"] readonly attribute DOMTokenList relList;\n  [CEReactions] attribute DOMString referrerPolicy;\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLAreaElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions, Reflect] attribute DOMString alt;\n  [CEReactions, Reflect] attribute DOMString coords;\n  [CEReactions, Reflect] attribute DOMString shape;\n  [CEReactions, Reflect] attribute DOMString download;\n  [CEReactions, Reflect] attribute USVString ping;\n  [CEReactions, Reflect] attribute DOMString rel;\n  [SameObject, PutForwards=value, Reflect=\"rel\"] readonly attribute DOMTokenList relList;\n  [CEReactions] attribute DOMString referrerPolicy;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLAreaElement",
         "inheritance": "HTMLElement",
@@ -9381,35 +9380,6 @@
             "special": "",
             "readonly": false,
             "href": "https://html.spec.whatwg.org/multipage/image-maps.html#dom-area-shape"
-          },
-          {
-            "type": "attribute",
-            "name": "target",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "CEReactions",
-                "rhs": null,
-                "arguments": []
-              },
-              {
-                "type": "extended-attribute",
-                "name": "Reflect",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": false,
-            "href": "https://html.spec.whatwg.org/multipage/image-maps.html#dom-area-target"
           },
           {
             "type": "attribute",

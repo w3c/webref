@@ -1,4 +1,5 @@
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 interface mixin HTMLHyperlinkElementUtils {
   [CEReactions, ReflectSetter] stringifier attribute USVString href;
+  [CEReactions, Reflect] attribute DOMString target;
 };
