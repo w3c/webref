@@ -434,6 +434,45 @@
       ]
     },
     {
+      "name": "mathmlanchorelement-href-getter",
+      "html": "The <a href=\"https://w3c.github.io/mathml-core/#dom-mathmlanchorelement-href\" id=\"ref-for-dom-mathmlanchorelement-href-1\">href</a> getter steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<a href=\"https://w3c.github.io/mathml-core/#reinitialise-url\">Reinitialize url</a>."
+        },
+        {
+          "html": "Let <var>url</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-hyperlink-url\">url</a>."
+        },
+        {
+          "html": "If <var>url</var> is null and <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> has no <code><a data-link-type=\"element-attr\" href=\"https://w3c.github.io/mathml-core/#dfn-href\" class=\"internalDFN\" id=\"ref-for-dfn-href-3\">href</a></code> content attribute, then return the empty string."
+        },
+        {
+          "html": "Otherwise, if <var>url</var> is null, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <code><a data-link-type=\"element-attr\" href=\"https://w3c.github.io/mathml-core/#dfn-href\" class=\"internalDFN\" id=\"ref-for-dfn-href-4\">href</a></code> content attribute's value."
+        },
+        {
+          "html": "Return <var>url</var>, serialized."
+        }
+      ]
+    },
+    {
+      "name": "set the url",
+      "href": "https://w3c.github.io/mathml-core/#dfn-set-the-url",
+      "html": "The <dfn id=\"dfn-set-the-url\" class=\"externalDFN\" data-no-export=\"\" data-dfn-type=\"dfn\"><a href=\"https://html.spec.whatwg.org/#concept-hyperlink-url-set\">set the url</a></dfn> algorithm for a <code>MathMLAnchorElement</code> are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> element's <code><a data-link-type=\"element-attr\" href=\"https://w3c.github.io/mathml-core/#dfn-href\" class=\"internalDFN\" id=\"ref-for-dfn-href-5\">href</a></code> content attribute is absent, then return."
+        },
+        {
+          "html": "Let <var>url</var> be the result of <a href=\"https://w3c.github.io/mathml-core/#encoding-parsing-a-url\">encoding-parsing a URL</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> element's <code><a data-link-type=\"element-attr\" href=\"https://w3c.github.io/mathml-core/#dfn-href\" class=\"internalDFN\" id=\"ref-for-dfn-href-6\">href</a></code> content attribute's value, relative to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a> element's <a href=\"https://w3c.github.io/mathml-core/#concept-node-document\">node document</a>."
+        },
+        {
+          "html": "If <var>url</var> is not failure, then set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\">this</a>'s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#concept-hyperlink-url\">url</a> to <var>url</var>."
+        }
+      ]
+    },
+    {
       "html": "If the specified value of \n          <a data-link-type=\"css-property\" href=\"https://www.w3.org/TR/css-fonts-4/#propdef-font-size\">font-size</a>\n          is <code>math</code> then the\n          computed value of\n          <a data-link-type=\"css-property\" href=\"https://www.w3.org/TR/css-fonts-4/#propdef-font-size\">font-size</a>\n          is obtained by multiplying the inherited value of\n          <a data-link-type=\"css-property\" href=\"https://www.w3.org/TR/css-fonts-4/#propdef-font-size\">font-size</a>\n          by a nonzero scale factor calculated by the\n          following procedure:",
       "rationale": ".algorithm",
       "steps": [

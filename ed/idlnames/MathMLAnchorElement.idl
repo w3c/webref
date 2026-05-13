@@ -1,0 +1,9 @@
+// Source: MathML Core (https://www.w3.org/TR/mathml-core/)
+[Exposed=Window]
+interface MathMLAnchorElement : MathMLElement {
+  [ReflectSetter] attribute USVString href;
+  [Reflect] attribute DOMString target;
+};
+
+// Source: MathML Core (https://www.w3.org/TR/mathml-core/)
+MathMLAnchorElement includes HyperlinkElementUtils;
