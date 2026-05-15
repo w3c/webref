@@ -240,7 +240,7 @@
           "html": "<p>Let <var>top</var> be the result of getting <var>n</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/#nav-top\" id=\"ref-for-nav-top④\">top-level traversable</a>.</p>"
         },
         {
-          "html": "<p>Set <var>top</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#attribution-activation-timestamp\" id=\"ref-for-attribution-activation-timestamp\">attribution activation timestamp</a>\nto the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time①\">current high resolution time</a>.</p>"
+          "html": "<p>Set <var>top</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#attribution-activation-timestamp\" id=\"ref-for-attribution-activation-timestamp\">attribution activation timestamp</a>\nto the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time\">current high resolution time</a>.</p>"
         }
       ]
     },
@@ -276,7 +276,7 @@
           "html": "<p>Let <var>lastActivation</var> be <var>top</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#attribution-activation-timestamp\" id=\"ref-for-attribution-activation-timestamp①\">attribution activation timestamp</a>.</p>"
         },
         {
-          "html": "<p>If <var>lastActivation</var> plus the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#attribution-activation-duration\" id=\"ref-for-attribution-activation-duration①\">attribution activation duration</a>\nis less than the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time②\">current high resolution time</a>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+          "html": "<p>If <var>lastActivation</var> plus the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#attribution-activation-duration\" id=\"ref-for-attribution-activation-duration①\">attribution activation duration</a>\nis less than the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time\" id=\"ref-for-dfn-current-high-resolution-time①\">current high resolution time</a>,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
         },
         {
           "html": "<p>Set <var>top</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#attribution-enabled-flag\" id=\"ref-for-attribution-enabled-flag②\">attribution enabled flag</a> to true.</p>"
@@ -300,13 +300,13 @@
               "html": "<p>Let <var>rand</var> be <var>t</var> minus a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" id=\"ref-for-dfn-duration④\">duration</a>\nthat is randomly selected\nfrom between 0 (inclusive) and <var>period</var> (exclusive).</p>"
             },
             {
-              "html": "<p>Let <var>ms</var> be the number of milliseconds in\nthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration-from\" id=\"ref-for-dfn-duration-from\">duration from</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-unix-epoch\" id=\"ref-for-dfn-unix-epoch\">Unix epoch</a> to <var>rand</var>.</p>"
+              "html": "<p>Let <var>ms</var> be the number of milliseconds in\nthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration-from\" id=\"ref-for-dfn-duration-from\">duration from</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-unix-epoch\" id=\"ref-for-dfn-unix-epoch①\">Unix epoch</a> to <var>rand</var>.</p>"
             },
             {
               "html": "<p>Let <var>hour</var> be <var>ms</var> divided by 3600000\n(one hour in milliseconds)\nrounded towards zero\nthen multiplied by 3600000.</p>"
             },
             {
-              "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#epoch-start-time\" id=\"ref-for-epoch-start-time④\">epoch start time</a> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-unix-epoch\" id=\"ref-for-dfn-unix-epoch①\">Unix epoch</a>\nplus <var>hour</var> as a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" id=\"ref-for-dfn-duration⑤\">duration</a>.</p>"
+              "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/attribution/#epoch-start-time\" id=\"ref-for-epoch-start-time④\">epoch start time</a> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-unix-epoch\" id=\"ref-for-dfn-unix-epoch②\">Unix epoch</a>\nplus <var>hour</var> as a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" id=\"ref-for-dfn-duration⑤\">duration</a>.</p>"
             }
           ]
         },
@@ -1440,7 +1440,7 @@
           "html": "<p>Let <var>publicShare</var>, <var>inputShares</var> be the result of invoking <var>vdaf</var>.<a href=\"https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf-18#sec-def-shard\"><code>shard()</code></a>,\nas defined in <a href=\"https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-vdaf-18#section-4.1\">Section 4.1</a>\nof <a data-link-type=\"biblio\" href=\"https://w3c.github.io/attribution/#biblio-vdaf\" title=\"Verifiable Distributed Aggregation Functions\">[VDAF]</a>,\nwith <var>ctx</var>, <var>histogram</var>, <var>reportID</var> (as the VDAF \"nonce\" parameter), and <var>rand</var>.</p>"
         },
         {
-          "html": "<p>Let <var>time</var> be the integer resulting from dividing\nthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration-from\" id=\"ref-for-dfn-duration-from①\">duration from</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-unix-epoch\" id=\"ref-for-dfn-unix-epoch②\">Unix epoch</a> to <var>now</var>\nby a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" id=\"ref-for-dfn-duration⑦\">duration</a> of 5 seconds,\nrounding towards negative Infinity.</p>"
+          "html": "<p>Let <var>time</var> be the integer resulting from dividing\nthe <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration-from\" id=\"ref-for-dfn-duration-from①\">duration from</a> the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-unix-epoch\" id=\"ref-for-dfn-unix-epoch③\">Unix epoch</a> to <var>now</var>\nby a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/hr-time-3/#dfn-duration\" id=\"ref-for-dfn-duration⑦\">duration</a> of 5 seconds,\nrounding towards negative Infinity.</p>"
         },
         {
           "html": "<p>Let <var>extensions</var> be a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④\">map</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#16-bit-unsigned-integer\" id=\"ref-for-16-bit-unsigned-integer①\">16-bit unsigned integers</a> to <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#byte-sequence\" id=\"ref-for-byte-sequence⑥\">byte sequences</a>,\ncomprised of:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>The extension codepoint for <a href=\"https://datatracker.ietf.org/doc/html/draft-thomson-ppm-dap-attribution-00#dp\">privacy budget</a>,\nmapped to the value of <var>microEpsilon</var>,\nencoded by invoking <a href=\"https://tc39.es/ecma262/multipage/structured-data.html#sec-numerictorawbytes\"><code>NumericToRawBytes</code></a>\nwith <a href=\"https://tc39.es/ecma262/multipage/indexed-collections.html#table-the-typedarray-constructors\">UINT32</a>,\nthe value <var>microEpsilon</var>,\nand <code>false</code> (for <code>isLittleEndian</code>).</p>\n      </li></ul>"
