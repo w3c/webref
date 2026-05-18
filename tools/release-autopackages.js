@@ -25,28 +25,31 @@ async function releaseXrefPackage() {
   console.log();
   console.log(`Prepare the xref package`);
 
-  const packageFolder = path.join('packages-auto', 'xref', 'ed');
+  const packageFolder = path.join('packages-auto', 'xref');
   await createFolderIfNeeded(packageFolder);
 
-  for (const type of ['dfns', 'headings']) {
-    const dstDir = path.join(packageFolder, type);
-    await createFolderIfNeeded(dstDir);
-    const dstFiles = await fs.readdir(dstDir);
-    for (const file of dstFiles) {
-      if (file.endsWith(`.json`)) {
-        await fs.unlink(path.join(dstDir, file));
+  for (const version of ['ed', 'tr']) {
+    await createFolderIfNeeded(path.join(packageFolder, version));
+    for (const type of ['dfns', 'headings']) {
+      const dstDir = path.join(packageFolder, version, type);
+      await createFolderIfNeeded(dstDir);
+      const dstFiles = await fs.readdir(dstDir);
+      for (const file of dstFiles) {
+        if (file.endsWith(`.json`)) {
+          await fs.unlink(path.join(dstDir, file));
+        }
       }
-    }
-    console.log(`- cleaned ${dstDir} folder`);
+      console.log(`- cleaned ${dstDir} folder`);
 
-    const srcDir = path.join('ed', type);
-    const srcFiles = await fs.readdir(srcDir);
-    for (const file of srcFiles) {
-      if (file.endsWith(`.json`)) {
-        await fs.copyFile(path.join(srcDir, file), path.join(dstDir, file));
+      const srcDir = path.join(version, type);
+      const srcFiles = await fs.readdir(srcDir);
+      for (const file of srcFiles) {
+        if (file.endsWith(`.json`)) {
+          await fs.copyFile(path.join(srcDir, file), path.join(dstDir, file));
+        }
       }
+      console.log(`- ${type} extracts copied to ${dstDir}`);
     }
-    console.log(`- ${type} extracts copied to ${dstDir}`);
   }
 
   // TODO: Increase the version number in the package.json file

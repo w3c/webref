@@ -35,34 +35,38 @@ function indexUrl(url, what) {
 /**
  * Helper function to load either dfns or headings extracts in memory
  */
-function setupExtracts(type) {
-  const folder = path.join(scriptPath, 'ed', type);
-  const extracts = fs.readdirSync(folder);
-  for (const extract of extracts) {
-    if (!extract.endsWith('.json')) {
-      continue;
-    }
-    const spec = path.parse(extract).name;
-    const json = JSON.parse(
-      fs.readFileSync(path.join(folder, extract), 'utf8')
-    );
-    for (const entry of json[type]) {
-      entry.spec = spec;
-      xref[type].push(entry);
-
-      indexUrl(entry.href, { source: type, entry });
-
-      if (entry.links) {
-        for (const link of entry.links) {
-          indexUrl(link.href, { source: 'links', entry });
-        }
+function setupExtracts(type, rootFolder) {
+  for (const version of ['nightly', 'release']) {
+    const versionFolder = version === 'nightly' ? 'ed' : 'tr';
+    const folder = path.join(rootFolder, versionFolder, type);
+    const extracts = fs.readdirSync(folder);
+    for (const extract of extracts) {
+      if (!extract.endsWith('.json')) {
+        continue;
       }
-      if (entry.alternateIds) {
-        for (const id of entry.alternateIds) {
-          const url = new URL(entry.href);
-          url.hash = id;
-          const href = url.toString();
-          indexUrl(href, { source: 'alternateIds', entry });
+      const spec = path.parse(extract).name;
+      const json = JSON.parse(
+        fs.readFileSync(path.join(folder, extract), 'utf8')
+      );
+      for (const entry of json[type]) {
+        entry.spec = spec;
+        entry.version = version;
+        xref[type].push(entry);
+
+        indexUrl(entry.href, { source: type, entry });
+
+        if (entry.links) {
+          for (const link of entry.links) {
+            indexUrl(link.href, { source: 'links', entry });
+          }
+        }
+        if (entry.alternateIds) {
+          for (const id of entry.alternateIds) {
+            const url = new URL(entry.href);
+            url.hash = id;
+            const href = url.toString();
+            indexUrl(href, { source: 'alternateIds', entry });
+          }
         }
       }
     }
@@ -75,12 +79,12 @@ function setupExtracts(type) {
  *
  * Note: ~50MB of JSON data gets loaded and indexed.
  */
-export function setup() {
+export function setup(rootFolder = scriptPath) {
   if (initialized) {
     return;
   }
   for (const type of ['dfns', 'headings']) {
-    setupExtracts(type);
+    setupExtracts(type, rootFolder);
   }
   initialized = true;
 }
