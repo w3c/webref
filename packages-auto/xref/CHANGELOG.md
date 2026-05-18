@@ -1,7 +1,7 @@
 # Changelog
 
 This file documents breaking changes introduced in major releases of the
-`@webref/fragments` NPM package.
+`@webref/xref` NPM package.
 
 Webref adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
 applied to data. A new major version is released whenever a breaking change is
