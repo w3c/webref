@@ -9,8 +9,7 @@
       "name": "@route",
       "prose": "The @route rule is an at-rule that associates a name with a URL pattern. This name can be referenced in @navigation rules and in :active-navigation() pseudo-classes.",
       "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-route",
-      "descriptors": [],
-      "value": "@route <dashed-ident> { [ <pattern-descriptors> | <init-descriptors> ] }"
+      "descriptors": []
     },
     {
       "name": "@navigation",
@@ -34,22 +33,22 @@
   ],
   "values": [
     {
-      "name": "<pattern-descriptors>",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-pattern-descriptors",
+      "name": "<route-rule>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-rule",
       "type": "type",
-      "value": ";* <pattern-descriptor> ;*"
+      "value": "@route <dashed-ident> { <declaration-list> }"
+    },
+    {
+      "name": "<route-descriptor>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-descriptor",
+      "type": "type",
+      "value": "<pattern-descriptor> | <init-descriptor> | <base-descriptor>"
     },
     {
       "name": "<pattern-descriptor>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-pattern-descriptor",
       "type": "type",
       "value": "pattern : <url-pattern()>"
-    },
-    {
-      "name": "<init-descriptors>",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-init-descriptors",
-      "type": "type",
-      "value": ";* <init-descriptor> [ ;+ <init-descriptor> ]* ;*"
     },
     {
       "name": "<init-descriptor>",
@@ -61,7 +60,13 @@
       "name": "<init-descriptor-name>",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-init-descriptor-name",
       "type": "type",
-      "value": "protocol | hostname | port | pathname | search | hash | base-url"
+      "value": "protocol | hostname | port | pathname | search | hash"
+    },
+    {
+      "name": "<base-descriptor>",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-base-descriptor",
+      "type": "type",
+      "value": "base-url : stylesheet | document | <url>"
     },
     {
       "name": "url-pattern()",
