@@ -7,6 +7,6 @@ Webref adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
 applied to data. A new major version is released whenever a breaking change is
 made to the data structure or API.
 
-## v1.0.0 - 2026-dd-yy
+## v1.0.0 - 2026-05-19
 
 Initial release.
