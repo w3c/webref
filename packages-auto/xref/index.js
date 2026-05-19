@@ -57,7 +57,7 @@ function setupExtracts(type, rootFolder) {
 
         if (entry.links) {
           for (const link of entry.links) {
-            indexUrl(link.href, { source: 'links', entry });
+            indexUrl(link.href, { source: 'dfns', entry });
           }
         }
         if (entry.alternateIds) {
@@ -65,7 +65,7 @@ function setupExtracts(type, rootFolder) {
             const url = new URL(entry.href);
             url.hash = id;
             const href = url.toString();
-            indexUrl(href, { source: 'alternateIds', entry });
+            indexUrl(href, { source: 'headings', entry });
           }
         }
       }

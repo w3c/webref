@@ -42,7 +42,7 @@ describe('The @webref/xref code', function () {
     const url = 'https://html.spec.whatwg.org/multipage/introduction.html#typographic-conventions%3Ax-that';
     const res = lookup(url);
     assert(res?.length, 'No dfn found');
-    assert.strictEqual(res[0].source, 'links');
+    assert.strictEqual(res[0].source, 'dfns');
     const entry = res[0].entry;
     assert.strictEqual(entry.links?.[0]?.href, url);
     assert.strictEqual(entry.spec, 'html');
@@ -53,7 +53,7 @@ describe('The @webref/xref code', function () {
     const url = `https://drafts.csswg.org/css-ui-4/#${fragment}`;
     const res = lookup(url);
     assert(res?.length, 'No heading found');
-    assert.strictEqual(res[0].source, 'alternateIds');
+    assert.strictEqual(res[0].source, 'headings');
     const entry = res[0].entry;
     assert.strictEqual(entry.alternateIds?.[0], fragment);
     assert.strictEqual(entry.spec, 'css-ui-4');
