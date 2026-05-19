@@ -1,0 +1,50 @@
+# Publish the automatic packages (typically @webref/xref) on a periodic basis.
+
+name: "Publish automatic @webref packages if needed"
+
+permissions:
+  # Required to create/update references (release tags),
+  # includes "read", which is needed to retrieve a PR:
+  # https://docs.github.com/en/rest/git/refs#create-a-reference--fine-grained-access-tokens
+  # https://docs.github.com/en/rest/pulls/pulls#get-a-pull-request--fine-grained-access-tokens
+  contents: write
+
+  # Required for Open ID Connect (OIDC) authentication for npm publication:
+  # https://docs.npmjs.com/trusted-publishers#github-actions-configuration
+  id-token: write
+
+on:
+  schedule:
+    - cron: '30 4 * * 3'
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout latest version of release script
+      uses: actions/checkout@v6
+      with:
+        ref: main
+        # Need to checkout all history as job also needs to access
+        # the `@webref/xref@latest` branch
+        fetch-depth: 0
+
+    - name: Setup node.js
+      uses: actions/setup-node@v6
+      with:
+        node-version: 24
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Check xref package
+      run: node --test test/xref/*
+
+    - name: Release packages if needed
+      run: |
+        git config user.name "release-auto-bot"
+        git config user.email "<>"
+        git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+        node tools/release-autopackages.js
