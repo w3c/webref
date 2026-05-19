@@ -15,7 +15,7 @@ Two sync methods are exposed:
 Example:
 
 ```js
-import xref from '@webref/xref';
+import * as xref from '@webref/xref';
 
 xref.setup();
 
