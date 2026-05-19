@@ -110,6 +110,7 @@ Retrieve tokens from environment and kick things off
 *******************************************************************************/
 // An NPM token is needed to run the script from a local machine.
 // Authentication from a GitHub workflow rather relies on OpenID Connect
+const config = await loadJSON("config.json");
 const NPM_TOKEN = config?.NPM_TOKEN ?? process.env.NPM_TOKEN;
 
 releaseXrefPackage()
