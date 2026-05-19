@@ -128,10 +128,10 @@
       "number": "2.2"
     },
     {
-      "id": "rec-id",
-      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#rec-id",
+      "id": "rec-shapesgraph",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#rec-shapesgraph",
       "level": 3,
-      "title": "Identifying groups of SHACL Elements",
+      "title": "Identifying groups of SHACL elements",
       "alternateIds": [
         "x2-3-identifying-groups-of-shacl-elements"
       ],
@@ -328,24 +328,124 @@
       "number": "5"
     },
     {
-      "id": "classes",
-      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#classes",
+      "id": "cls-shapesgraph",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#cls-shapesgraph",
       "level": 3,
-      "title": "Classes",
+      "title": "Class: Shapes Graph",
       "alternateIds": [
-        "x5-1-classes"
+        "x5-1-class-shapes-graph"
       ],
       "number": "5.1"
     },
     {
-      "id": "properties",
-      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#properties",
-      "level": 3,
-      "title": "Properties",
+      "id": "prop-imports",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-imports",
+      "level": 4,
+      "title": "Property: imports",
       "alternateIds": [
-        "x5-2-properties"
+        "x5-1-1-property-imports"
+      ],
+      "number": "5.1.1"
+    },
+    {
+      "id": "prop-member",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-member",
+      "level": 4,
+      "title": "Property: member",
+      "alternateIds": [
+        "x5-1-2-property-member"
+      ],
+      "number": "5.1.2"
+    },
+    {
+      "id": "cls-datagraph",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#cls-datagraph",
+      "level": 3,
+      "title": "Class: Data Graph",
+      "alternateIds": [
+        "x5-2-class-data-graph"
       ],
       "number": "5.2"
+    },
+    {
+      "id": "prop-conformsto",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-conformsto",
+      "level": 4,
+      "title": "Property: conforms to",
+      "alternateIds": [
+        "x5-2-1-property-conforms-to"
+      ],
+      "number": "5.2.1"
+    },
+    {
+      "id": "prop-hasvalidationreport",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-hasvalidationreport",
+      "level": 4,
+      "title": "Property: validation report",
+      "alternateIds": [
+        "x5-2-2-property-validation-report"
+      ],
+      "number": "5.2.2"
+    },
+    {
+      "id": "cls-validationreport",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#cls-validationreport",
+      "level": 3,
+      "title": "Class: Validation Report",
+      "alternateIds": [
+        "x5-3-class-validation-report"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "prop-usedshapesgraph",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-usedshapesgraph",
+      "level": 4,
+      "title": "Property: used shapes graph",
+      "alternateIds": [
+        "x5-3-1-property-used-shapes-graph"
+      ],
+      "number": "5.3.1"
+    },
+    {
+      "id": "prop-conforms",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-conforms",
+      "level": 4,
+      "title": "Property: conforms",
+      "alternateIds": [
+        "x5-3-2-property-conforms"
+      ],
+      "number": "5.3.2"
+    },
+    {
+      "id": "cls-shape",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#cls-shape",
+      "level": 3,
+      "title": "Class: Shape",
+      "alternateIds": [
+        "x5-4-class-shape"
+      ],
+      "number": "5.4"
+    },
+    {
+      "id": "prop-isdefinedby",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#prop-isdefinedby",
+      "level": 4,
+      "title": "Property: is defined by",
+      "alternateIds": [
+        "x5-4-1-property-is-defined-by"
+      ],
+      "number": "5.4.1"
+    },
+    {
+      "id": "rule-conformsto",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#rule-conformsto",
+      "level": 3,
+      "title": "Rule: conforms to",
+      "alternateIds": [
+        "x5-5-rule-conforms-to"
+      ],
+      "number": "5.5"
     },
     {
       "id": "profiles",
@@ -398,14 +498,24 @@
       "number": "A.4"
     },
     {
+      "id": "10-profile",
+      "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#10-profile",
+      "level": 3,
+      "title": "SHACL 1.0 Profile",
+      "alternateIds": [
+        "a-5-shacl-1-0-profile"
+      ],
+      "number": "A.5"
+    },
+    {
       "id": "pp-profile",
       "href": "https://w3c.github.io/data-shapes/shacl12-profiling/#pp-profile",
       "level": 3,
       "title": "Pretty Print Profile",
       "alternateIds": [
-        "a-5-pretty-print-profile"
+        "a-6-pretty-print-profile"
       ],
-      "number": "A.5"
+      "number": "A.6"
     },
     {
       "id": "owl-consistent-profile",
@@ -413,9 +523,9 @@
       "level": 3,
       "title": "OWL Consistent Profile",
       "alternateIds": [
-        "a-6-owl-consistent-profile"
+        "a-7-owl-consistent-profile"
       ],
-      "number": "A.6"
+      "number": "A.7"
     },
     {
       "id": "null-profile-examples",

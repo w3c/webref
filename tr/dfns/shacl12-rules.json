@@ -28,6 +28,29 @@
       "links": []
     },
     {
+      "id": "dfn-condition",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-condition",
+      "linkingText": [
+        "Condition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rules-defns",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rules-defns",
+        "title": "Elements of the Abstract Syntax",
+        "alternateIds": [
+          "x3-1-elements-of-the-abstract-syntax"
+        ],
+        "number": "3.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "dfn-data-block",
       "href": "https://www.w3.org/TR/shacl12-rules/#dfn-data-block",
       "linkingText": [
@@ -101,8 +124,6 @@
       "id": "dfn-condition-element",
       "href": "https://www.w3.org/TR/shacl12-rules/#dfn-condition-element",
       "linkingText": [
-        "condition element",
-        "condition",
         "Condition element"
       ],
       "localLinkingText": [],
@@ -173,6 +194,7 @@
       "href": "https://www.w3.org/TR/shacl12-rules/#dfn-assignment-element",
       "linkingText": [
         "assignment element",
+        "assignment",
         "Assignment element"
       ],
       "localLinkingText": [],
@@ -523,6 +545,77 @@
       "links": []
     },
     {
+      "id": "dfn-closed-dependency",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-closed-dependency",
+      "linkingText": [
+        "closed dependency",
+        "closed rule dependency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-dependency",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rule-dependency",
+        "title": "Rule Dependency",
+        "alternateIds": [
+          "x3-3-rule-dependency"
+        ],
+        "number": "3.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-open-dependency",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-open-dependency",
+      "linkingText": [
+        "open dependency",
+        "open rule dependency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-dependency",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rule-dependency",
+        "title": "Rule Dependency",
+        "alternateIds": [
+          "x3-3-rule-dependency"
+        ],
+        "number": "3.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-triple-pattern-matching",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-triple-pattern-matching",
+      "linkingText": [
+        "Triple pattern matching"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-dependency",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rule-dependency",
+        "title": "Rule Dependency",
+        "alternateIds": [
+          "x3-3-rule-dependency"
+        ],
+        "number": "3.3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "dfn-triple-pattern-dependency",
       "href": "https://www.w3.org/TR/shacl12-rules/#dfn-triple-pattern-dependency",
       "linkingText": [
@@ -543,6 +636,56 @@
         "number": "3.3"
       },
       "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-depends-on-a-triple-template",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-depends-on-a-triple-template",
+      "linkingText": [
+        "depends on a triple template"
+      ],
+      "localLinkingText": [
+        "depends-pattern-template"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-dependency",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rule-dependency",
+        "title": "Rule Dependency",
+        "alternateIds": [
+          "x3-3-rule-dependency"
+        ],
+        "number": "3.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-depends-on-a-rule",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-depends-on-a-rule",
+      "linkingText": [
+        "depends on a rule"
+      ],
+      "localLinkingText": [
+        "depends-pattern-rule"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rule-dependency",
+        "href": "https://www.w3.org/TR/shacl12-rules/#rule-dependency",
+        "title": "Rule Dependency",
+        "alternateIds": [
+          "x3-3-rule-dependency"
+        ],
+        "number": "3.3"
+      },
+      "definedIn": "prose",
       "links": []
     },
     {
@@ -580,13 +723,13 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "rule-dependency",
-        "href": "https://www.w3.org/TR/shacl12-rules/#rule-dependency",
-        "title": "Rule Dependency",
+        "id": "dependency-graph",
+        "href": "https://www.w3.org/TR/shacl12-rules/#dependency-graph",
+        "title": "Dependency Graph",
         "alternateIds": [
-          "x3-3-rule-dependency"
+          "x3-3-1-dependency-graph"
         ],
-        "number": "3.3"
+        "number": "3.3.1"
       },
       "definedIn": "dt",
       "links": []
@@ -605,13 +748,13 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "rule-dependency",
-        "href": "https://www.w3.org/TR/shacl12-rules/#rule-dependency",
-        "title": "Rule Dependency",
+        "id": "dependency-graph",
+        "href": "https://www.w3.org/TR/shacl12-rules/#dependency-graph",
+        "title": "Dependency Graph",
         "alternateIds": [
-          "x3-3-rule-dependency"
+          "x3-3-1-dependency-graph"
         ],
-        "number": "3.3"
+        "number": "3.3.1"
       },
       "definedIn": "dt",
       "links": []
@@ -630,22 +773,25 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "rule-dependency",
-        "href": "https://www.w3.org/TR/shacl12-rules/#rule-dependency",
-        "title": "Rule Dependency",
+        "id": "dependency-graph",
+        "href": "https://www.w3.org/TR/shacl12-rules/#dependency-graph",
+        "title": "Dependency Graph",
         "alternateIds": [
-          "x3-3-rule-dependency"
+          "x3-3-1-dependency-graph"
         ],
-        "number": "3.3"
+        "number": "3.3.1"
       },
       "definedIn": "dt",
       "links": []
     },
     {
-      "id": "dfn-stratification",
-      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-stratification",
+      "id": "dfn-stratification-layer",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-stratification-layer",
       "linkingText": [
-        "Stratification"
+        "stratification layer",
+        "layer",
+        "stratum",
+        "Stratification layer"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -665,13 +811,10 @@
       "links": []
     },
     {
-      "id": "dfn-stratification-layer",
-      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-stratification-layer",
+      "id": "dfn-stratification",
+      "href": "https://www.w3.org/TR/shacl12-rules/#dfn-stratification",
       "linkingText": [
-        "stratification layer",
-        "layer",
-        "stratum",
-        "Stratification layer"
+        "Stratification"
       ],
       "localLinkingText": [],
       "type": "dfn",
