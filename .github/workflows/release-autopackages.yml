@@ -26,6 +26,9 @@ jobs:
       uses: actions/checkout@v6
       with:
         ref: main
+        # Need to checkout all history as job also needs to access
+        # the `@webref/xref@latest` branch
+        fetch-depth: 0
 
     - name: Setup node.js
       uses: actions/setup-node@v6
@@ -38,6 +41,4 @@ jobs:
 
     - name: Release packages if needed
       run: node tools/release-autopackages.js
-      env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
