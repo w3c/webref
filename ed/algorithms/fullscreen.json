@@ -14,10 +14,7 @@
           "html": "<p>Let <var>hideUntil</var> be the result of running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/popover.html#topmost-popover-ancestor\" id=\"ref-for-topmost-popover-ancestor\">topmost popover ancestor</a> given\n <var>element</var>, null, and false.\n\n </p>"
         },
         {
-          "html": "<p>If <var>hideUntil</var> is null, then set <var>hideUntil</var> to <var>element</var>’s\n <span>node document</span>.\n\n </p>"
-        },
-        {
-          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/popover.html#hide-all-popovers-until\" id=\"ref-for-hide-all-popovers-until\">hide all popovers until</a> given <var>hideUntil</var>, false, and true.\n\n </p>"
+          "html": "<p>Run <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/popover.html#hide-popovers-until\" id=\"ref-for-hide-popovers-until\">hide popovers until</a> given <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>,\n <var>hideUntil</var>, false, and true.\n\n </p>"
         },
         {
           "html": "<p>Set <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#fullscreen-flag\" id=\"ref-for-fullscreen-flag①\">fullscreen flag</a>.\n\n </p>"
@@ -53,7 +50,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>document</var> be <var>removedNode</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document\">node document</a>.\n\n </p>"
+          "html": "<p>Let <var>document</var> be <var>removedNode</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①\">node document</a>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>nodes</var> be <var>removedNode</var>’s\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-inclusive-descendant\" id=\"ref-for-concept-shadow-including-inclusive-descendant\">shadow-including inclusive descendants</a> that have their <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#fullscreen-flag\" id=\"ref-for-fullscreen-flag⑤\">fullscreen flag</a> set, in\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-shadow-including-tree-order\" id=\"ref-for-concept-shadow-including-tree-order\">shadow-including tree order</a>.\n\n </p>"
@@ -92,7 +89,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>target</var> be <var>element</var> if <var>element</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected\">connected</a>\n   and its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①\">node document</a> is <var>document</var>, and otherwise let <var>target</var> be\n   <var>document</var>.\n\n   </p>"
+              "html": "<p>Let <var>target</var> be <var>element</var> if <var>element</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#connected\" id=\"ref-for-connected\">connected</a>\n   and its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document②\">node document</a> is <var>document</var>, and otherwise let <var>target</var> be\n   <var>document</var>.\n\n   </p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">Fire an event</a> named <var>type</var>, with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-bubbles\" id=\"ref-for-dom-event-bubbles\">bubbles</a></code> and\n   <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#dom-event-composed\" id=\"ref-for-dom-event-composed\">composed</a></code> attributes set to true, at <var>target</var>.\n  </p>"
@@ -108,7 +105,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>pendingDoc</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document③\">node document</a>.\n\n </p>"
+          "html": "<p>Let <var>pendingDoc</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document④\">node document</a>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>promise</var> be a new promise.\n\n </p>"
@@ -132,7 +129,7 @@
           "html": "<p>If <var>error</var> is false, then resize <var>pendingDoc</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#node-navigable\" id=\"ref-for-node-navigable\">node navigable</a>’s\n  <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-top\" id=\"ref-for-nav-top\">top-level traversable</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document\">active document</a>’s viewport’s\n  dimensions, optionally taking into account\n  <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fullscreen.spec.whatwg.org/#dom-fullscreenoptions-navigationui\" id=\"ref-for-dom-fullscreenoptions-navigationui①\">navigationUI</a></code>\"]:\n\n  </p>\n      <table>\n       <thead>\n        <tr>\n         <th>value\n         </th><th>viewport dimensions\n       </th></tr></thead><tbody>\n        <tr>\n         <td>\"<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FullscreenNavigationUI\" data-dfn-type=\"enum-value\" data-export=\"\" data-lt=\"&quot;hide&quot;|hide\" id=\"dom-fullscreennavigationui-hide\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>hide</code></dfn>\"\n         </td><td>full dimensions of the screen of the output device\n        </td></tr><tr>\n         <td>\"<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FullscreenNavigationUI\" data-dfn-type=\"enum-value\" data-export=\"\" data-lt=\"&quot;show&quot;|show\" id=\"dom-fullscreennavigationui-show\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>show</code></dfn>\"\n         </td><td>dimensions of the screen of the output device clamped to allow the user agent to show page navigation controls\n        </td></tr><tr>\n         <td>\"<dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"FullscreenNavigationUI\" data-dfn-type=\"enum-value\" data-export=\"\" data-lt=\"&quot;auto&quot;|auto\" id=\"dom-fullscreennavigationui-auto\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>auto</code></dfn>\"\n         </td><td>user-agent defined, but matching one of the above\n      </td></tr></tbody></table>\n      <p>Optionally display a message how the end user can revert this.\n\n </p>"
         },
         {
-          "html": "<p>If any of the following conditions are false, then set <var>error</var> to true:\n\n  </p>\n      <ul>\n       <li>\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">This</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document④\">node document</a> is <var>pendingDoc</var>.\n\n   </p>\n       </li><li>\n        <p>The <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#fullscreen-element-ready-check\" id=\"ref-for-fullscreen-element-ready-check①\">fullscreen element ready check</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a> returns true.\n  </p>\n      </li></ul>"
+          "html": "<p>If any of the following conditions are false, then set <var>error</var> to true:\n\n  </p>\n      <ul>\n       <li>\n        <p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">This</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑤\">node document</a> is <var>pendingDoc</var>.\n\n   </p>\n       </li><li>\n        <p>The <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#fullscreen-element-ready-check\" id=\"ref-for-fullscreen-element-ready-check①\">fullscreen element ready check</a> for <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a> returns true.\n  </p>\n      </li></ul>"
         },
         {
           "html": "If <var>error</var> is true:",
@@ -172,7 +169,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>doc</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑤\">node document</a>.\n\n   </p>"
+              "html": "<p>Let <var>doc</var> be <var>element</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑥\">node document</a>.\n\n   </p>"
             },
             {
               "html": "<p>If <var>element</var> is <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#fullscreen-element\" id=\"ref-for-fullscreen-element①⓪\">fullscreen element</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a>.\n\n    </p>"
@@ -264,7 +261,7 @@
               "html": "<p>If <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://fullscreen.spec.whatwg.org/#iframe-fullscreen-flag\" id=\"ref-for-iframe-fullscreen-flag②\">iframe fullscreen flag</a> is set, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break③\">break</a>.\n\n   </p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append③\">Append</a> <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑥\">node document</a> to <var>docs</var>.\n  </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append③\">Append</a> <var>container</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document⑦\">node document</a> to <var>docs</var>.\n  </p>"
             }
           ]
         },
