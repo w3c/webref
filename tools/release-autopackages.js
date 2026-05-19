@@ -1,18 +1,19 @@
 /**
- * Publish the automatic packages to npm.
+ * Publish packages that can be published automatically to npm.
+ *
+ * Note: the script runs `git` CLI commands and expects that it can push to a
+ * remote named `origin`.
+ *
+ * Actual publication to NPM requires an NPM_TOKEN (if the script is run
+ * locally), or works through OpenID Connect by adding the release workflow as
+ * a trusted publisher, see: https://docs.npmjs.com/trusted-publishers
  */
 
-import Octokit from './octokit.js';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import os from 'node:os';
 import { execSync } from "node:child_process";
-import { rimraf } from "rimraf";
 import { npmPublish } from "@jsdevtools/npm-publish";
 import { createFolderIfNeeded, loadJSON } from "./utils.js";
-
-const owner = "w3c";
-const repo = "webref";
 
 
 /**
@@ -69,7 +70,7 @@ async function releaseXrefPackage() {
   await fs.writeFile(packageFile, JSON.stringify(packageContents, null, 2), 'utf8');
 
   console.log();
-  console.log('Commit new version');
+  console.log('Commit/Push new version');
   execSync(`git add ${packageFile}`);
   execSync(`git commit -m "Bump @webref/xref version from ${version} to ${newVersion}"`);
   execSync('git push origin HEAD:main');
@@ -78,7 +79,7 @@ async function releaseXrefPackage() {
 
   console.log();
   console.log('Publish new version to npm');
-  console.log(`- publish packages/${type} folder to npm`);
+  console.log(`- publish packages-auto/xref folder to npm`);
   const pubOptions = {
     package: packageFile
     //, debug: console.debug
@@ -109,9 +110,6 @@ Retrieve tokens from environment and kick things off
 *******************************************************************************/
 // An NPM token is needed to run the script from a local machine.
 // Authentication from a GitHub workflow rather relies on OpenID Connect
-// and the release workflow must be added as a trusted publisher for each
-// npm package that can be released, see:
-// https://docs.npmjs.com/trusted-publishers
 const NPM_TOKEN = config?.NPM_TOKEN ?? process.env.NPM_TOKEN;
 
 releaseXrefPackage()

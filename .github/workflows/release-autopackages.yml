@@ -40,5 +40,8 @@ jobs:
       run: npm ci
 
     - name: Release packages if needed
-      run: node tools/release-autopackages.js
-
+      run: |
+        git config user.name "release-auto-bot"
+        git config user.email "<>"
+        git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+        node tools/release-autopackages.js
