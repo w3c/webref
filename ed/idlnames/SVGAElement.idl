@@ -1,13 +1,13 @@
 // Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
 [Exposed=Window]
 interface SVGAElement : SVGGraphicsElement {
-  [SameObject] readonly attribute SVGAnimatedString target;
-  attribute DOMString download;
-  attribute USVString ping;
-  attribute DOMString rel;
-  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;
-  attribute DOMString hreflang;
-  attribute DOMString type;
+  [Reflect, SameObject] readonly attribute SVGAnimatedString target;
+  [Reflect] attribute DOMString download;
+  [Reflect] attribute USVString ping;
+  [Reflect] attribute DOMString rel;
+  [Reflect="rel", SameObject, PutForwards=value] readonly attribute DOMTokenList relList;
+  [Reflect] attribute DOMString hreflang;
+  [Reflect] attribute DOMString type;
 
   attribute DOMString referrerPolicy;
 };

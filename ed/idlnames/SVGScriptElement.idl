@@ -1,7 +1,7 @@
 // Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
 [Exposed=Window]
 interface SVGScriptElement : SVGElement {
-  attribute DOMString type;
+  [Reflect] attribute DOMString type;
   attribute DOMString? crossOrigin;
 };
 

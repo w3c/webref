@@ -1017,7 +1017,6 @@
       "prose": "The @route rule is an at-rule that associates a name with a URL pattern. This name can be referenced in @navigation rules and in :active-navigation() pseudo-classes.",
       "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-route",
       "descriptors": [],
-      "syntax": "@route <dashed-ident> { [ <pattern-descriptors> | <init-descriptors> ] }",
       "extended": []
     },
     {
@@ -10198,7 +10197,7 @@
       "initial": "normal",
       "appliesTo": "non-replaced inline boxes and SVG text content elements",
       "inherited": "yes",
-      "percentages": "see below",
+      "percentages": "computed relative to 1em",
       "computedValue": "the specified keyword, a number, or a computed <length> value",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value type",
@@ -18192,6 +18191,12 @@
       "extended": []
     },
     {
+      "name": "base-descriptor",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-base-descriptor",
+      "syntax": "base-url : stylesheet | document | <url>",
+      "extended": []
+    },
+    {
       "name": "baseline-metric",
       "prose": "The <baseline-metric> value, which identifies specific baseline metrics, expands to",
       "href": "https://drafts.csswg.org/css-inline-3/#typedef-baseline-metric",
@@ -19380,13 +19385,7 @@
     {
       "name": "init-descriptor-name",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-init-descriptor-name",
-      "syntax": "protocol | hostname | port | pathname | search | hash | base-url",
-      "extended": []
-    },
-    {
-      "name": "init-descriptors",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-init-descriptors",
-      "syntax": ";* <init-descriptor> [ ;+ <init-descriptor> ]* ;*",
+      "syntax": "protocol | hostname | port | pathname | search | hash",
       "extended": []
     },
     {
@@ -20084,12 +20083,6 @@
       "extended": []
     },
     {
-      "name": "pattern-descriptors",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-pattern-descriptors",
-      "syntax": ";* <pattern-descriptor> ;*",
-      "extended": []
-    },
-    {
       "name": "percentage",
       "prose": "Percentage values are denoted by <percentage>, and indicates a value that is some fraction of another reference value.",
       "href": "https://drafts.csswg.org/css-values-4/#percentage-value",
@@ -20437,6 +20430,12 @@
       "extended": []
     },
     {
+      "name": "route-descriptor",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-descriptor",
+      "syntax": "<pattern-descriptor> | <init-descriptor> | <base-descriptor>",
+      "extended": []
+    },
+    {
       "name": "route-location",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-location",
       "syntax": "<route-name> | <url-pattern()> | <url>",
@@ -20446,6 +20445,12 @@
       "name": "route-name",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-name",
       "syntax": "<dashed-ident>",
+      "extended": []
+    },
+    {
+      "name": "route-rule",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-rule",
+      "syntax": "@route <dashed-ident> { <declaration-list> }",
       "extended": []
     },
     {

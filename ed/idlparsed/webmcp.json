@@ -431,7 +431,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute ModelContext modelContext;\n};",
+          "fragment": "partial interface Navigator {\n  [SecureContext] readonly attribute ModelContext modelContext;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -451,12 +451,6 @@
                 {
                   "type": "extended-attribute",
                   "name": "SecureContext",
-                  "rhs": null,
-                  "arguments": []
-                },
-                {
-                  "type": "extended-attribute",
-                  "name": "SameObject",
                   "rhs": null,
                   "arguments": []
                 }

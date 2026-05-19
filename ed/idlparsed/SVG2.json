@@ -4135,11 +4135,33 @@
         "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#InterfaceGetSVGDocument"
       },
       "SVGStyleElement": {
-        "fragment": "[Exposed=Window]\ninterface SVGStyleElement : SVGElement {\n  attribute DOMString media;\n  attribute DOMString title;\n  attribute boolean disabled;\n\n  // obsolete members\n  attribute DOMString type;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGStyleElement : SVGElement {\n  [Reflect] attribute DOMString type;\n  [Reflect] attribute DOMString media;\n  [Reflect] attribute DOMString title;\n  attribute boolean disabled;\n};",
         "type": "interface",
         "name": "SVGStyleElement",
         "inheritance": "SVGElement",
         "members": [
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
           {
             "type": "attribute",
             "name": "media",
@@ -4151,10 +4173,16 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
-            "readonly": false,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/styling.html#__svg__SVGStyleElement__media"
+            "readonly": false
           },
           {
             "type": "attribute",
@@ -4167,10 +4195,16 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
-            "readonly": false,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/styling.html#__svg__SVGStyleElement__title"
+            "readonly": false
           },
           {
             "type": "attribute",
@@ -4186,22 +4220,6 @@
             "extAttrs": [],
             "special": "",
             "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "type",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/styling.html#__svg__SVGStyleElement__type"
           }
         ],
         "extAttrs": [
@@ -8494,7 +8512,7 @@
         "href": "https://w3c.github.io/svgwg/svg2-draft/pservers.html#InterfaceSVGPatternElement"
       },
       "SVGScriptElement": {
-        "fragment": "[Exposed=Window]\ninterface SVGScriptElement : SVGElement {\n  attribute DOMString type;\n  attribute DOMString? crossOrigin;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGScriptElement : SVGElement {\n  [Reflect] attribute DOMString type;\n  attribute DOMString? crossOrigin;\n};",
         "type": "interface",
         "name": "SVGScriptElement",
         "inheritance": "SVGElement",
@@ -8510,10 +8528,16 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
-            "readonly": false,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/interact.html#__svg__SVGScriptElement__type"
+            "readonly": false
           },
           {
             "type": "attribute",
@@ -8547,7 +8571,7 @@
         "href": "https://w3c.github.io/svgwg/svg2-draft/interact.html#InterfaceSVGScriptElement"
       },
       "SVGAElement": {
-        "fragment": "[Exposed=Window]\ninterface SVGAElement : SVGGraphicsElement {\n  [SameObject] readonly attribute SVGAnimatedString target;\n  attribute DOMString download;\n  attribute USVString ping;\n  attribute DOMString rel;\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  attribute DOMString hreflang;\n  attribute DOMString type;\n\n  attribute DOMString referrerPolicy;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGAElement : SVGGraphicsElement {\n  [Reflect, SameObject] readonly attribute SVGAnimatedString target;\n  [Reflect] attribute DOMString download;\n  [Reflect] attribute USVString ping;\n  [Reflect] attribute DOMString rel;\n  [Reflect=\"rel\", SameObject, PutForwards=value] readonly attribute DOMTokenList relList;\n  [Reflect] attribute DOMString hreflang;\n  [Reflect] attribute DOMString type;\n\n  attribute DOMString referrerPolicy;\n};",
         "type": "interface",
         "name": "SVGAElement",
         "inheritance": "SVGGraphicsElement",
@@ -8566,14 +8590,19 @@
             "extAttrs": [
               {
                 "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              },
+              {
+                "type": "extended-attribute",
                 "name": "SameObject",
                 "rhs": null,
                 "arguments": []
               }
             ],
             "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/linking.html#__svg__SVGAElement__target"
+            "readonly": true
           },
           {
             "type": "attribute",
@@ -8586,10 +8615,16 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
-            "readonly": false,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/linking.html#__svg__SVGAElement__download"
+            "readonly": false
           },
           {
             "type": "attribute",
@@ -8602,10 +8637,16 @@
               "union": false,
               "idlType": "USVString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
-            "readonly": false,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/linking.html#__svg__SVGAElement__ping"
+            "readonly": false
           },
           {
             "type": "attribute",
@@ -8618,10 +8659,16 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
-            "readonly": false,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/linking.html#__svg__SVGAElement__rel"
+            "readonly": false
           },
           {
             "type": "attribute",
@@ -8635,6 +8682,15 @@
               "idlType": "DOMTokenList"
             },
             "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": {
+                  "type": "string",
+                  "value": "\"rel\""
+                },
+                "arguments": []
+              },
               {
                 "type": "extended-attribute",
                 "name": "SameObject",
@@ -8652,8 +8708,7 @@
               }
             ],
             "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/linking.html#__svg__SVGAElement__relList"
+            "readonly": true
           },
           {
             "type": "attribute",
@@ -8666,10 +8721,16 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
-            "readonly": false,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/linking.html#__svg__SVGAElement__hreflang"
+            "readonly": false
           },
           {
             "type": "attribute",
@@ -8682,10 +8743,16 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Reflect",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
-            "readonly": false,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/linking.html#__svg__SVGAElement__type"
+            "readonly": false
           },
           {
             "type": "attribute",

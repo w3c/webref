@@ -353,8 +353,6 @@ interface HTMLAnchorElement : HTMLElement {
   [CEReactions, Reflect] attribute USVString ping;
   [CEReactions, Reflect] attribute DOMString rel;
   [SameObject, PutForwards=value, Reflect="rel"] readonly attribute DOMTokenList relList;
-  [CEReactions, Reflect] attribute DOMString hreflang;
-  [CEReactions, Reflect] attribute DOMString type;
 
   [CEReactions] attribute DOMString text;
 
@@ -402,6 +400,9 @@ interface mixin HyperlinkElementUtils {
   [CEReactions] attribute USVString pathname;
   [CEReactions] attribute USVString search;
   [CEReactions] attribute USVString hash;
+
+  [CEReactions, Reflect] attribute DOMString hreflang;
+  [CEReactions, Reflect] attribute DOMString type;
 };
 
 interface mixin HTMLHyperlinkElementUtils {
