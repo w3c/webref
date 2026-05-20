@@ -1616,23 +1616,95 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>\n                      If all the following conditions hold:\n                    </p>\n                    <ul>\n                      <li>\n                        <p>\n                          <var>mediaKeys</var> is not null,\n                        </p>\n                      </li>\n                      <li>\n                        <p>\n                          the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/encrypted-media/#dfn-cdm\" class=\"internalDFN\" id=\"ref-for-dfn-cdm-75\">CDM</a> instance represented by <var>mediaKeys</var> is already in\n                          use by another media element\n                        </p>\n                      </li>\n                      <li>\n                        <p>\n                          the user agent is unable to use it with this element\n                        </p>\n                      </li>\n                    </ul>\n                    <p>\n                      then let this object's <var>attaching media keys</var> value be false and\n                      reject <var>promise</var> with a <a data-link-type=\"idl\" data-lt=\"QuotaExceededError\" href=\"https://w3c.github.io/encrypted-media/#dfn-quotaexceedederror\" class=\"internalDFN\" id=\"ref-for-dfn-quotaexceedederror-5\"><code><code>QuotaExceededError</code></code></a>.\n                    </p>"
+              "html": "then run the following steps:",
+              "rationale": "queue",
+              "steps": [
+                {
+                  "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> to run the following steps:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>\n                              Let this object's <var>attaching media keys</var> value be false.\n                            </p>"
+                    },
+                    {
+                      "html": "<p>\n                              Reject <var>promise</var> with a <a data-link-type=\"idl\" data-lt=\"QuotaExceededError\" href=\"https://w3c.github.io/encrypted-media/#dfn-quotaexceedederror\" class=\"internalDFN\" id=\"ref-for-dfn-quotaexceedederror-5\"><code><code>QuotaExceededError</code></code></a>.\n                            </p>"
+                    }
+                  ]
+                },
+                {
+                  "html": "<p>\n                          Abort these steps.\n                        </p>"
+                }
+              ]
             },
             {
               "html": "If the <a data-link-type=\"idl\" href=\"https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-mediakeys\" class=\"internalDFN\" id=\"ref-for-dom-htmlmediaelement-mediakeys-4\"><code>mediaKeys</code></a> attribute is not null, run the\n                      following steps:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>\n                          If the user agent or <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/encrypted-media/#dfn-cdm\" class=\"internalDFN\" id=\"ref-for-dfn-cdm-76\">CDM</a> do not support removing the association, let\n                          this object's <var>attaching media keys</var> value be false and reject\n                          <var>promise</var> with a <a data-link-type=\"idl\" data-lt=\"NotSupportedError\" href=\"https://w3c.github.io/encrypted-media/#dfn-notsupportederror\" class=\"internalDFN\" id=\"ref-for-dfn-notsupportederror-8\"><code><code>NotSupportedError</code></code></a>.\n                        </p>"
+                  "html": "If the user agent or <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/encrypted-media/#dfn-cdm\" class=\"internalDFN\" id=\"ref-for-dfn-cdm-76\">CDM</a> do not support removing the association, run\n                          the following steps:",
+                  "rationale": "queue",
+                  "steps": [
+                    {
+                      "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> to run the following steps:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>\n                                  Let this object's <var>attaching media keys</var> value be false.\n                                </p>"
+                        },
+                        {
+                          "html": "<p>\n                                  Reject <var>promise</var> with a <a data-link-type=\"idl\" data-lt=\"NotSupportedError\" href=\"https://w3c.github.io/encrypted-media/#dfn-notsupportederror\" class=\"internalDFN\" id=\"ref-for-dfn-notsupportederror-8\"><code><code>NotSupportedError</code></code></a>.\n                                </p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>\n                              Abort these steps.\n                            </p>"
+                    }
+                  ]
                 },
                 {
-                  "html": "<p>\n                          If the association cannot currently be removed, let this object's\n                          <var>attaching media keys</var> value be false and reject\n                          <var>promise</var> with an <a data-link-type=\"idl\" data-lt=\"InvalidStateError\" href=\"https://w3c.github.io/encrypted-media/#dfn-invalidstateerror\" class=\"internalDFN\" id=\"ref-for-dfn-invalidstateerror-12\"><code><code>InvalidStateError</code></code></a>.\n                        </p>"
+                  "html": "If the association cannot currently be removed, run the following steps:",
+                  "rationale": "queue",
+                  "steps": [
+                    {
+                      "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> to run the following steps:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>\n                                  Let this object's <var>attaching media keys</var> value be false.\n                                </p>"
+                        },
+                        {
+                          "html": "<p>\n                                  Reject <var>promise</var> with an <a data-link-type=\"idl\" data-lt=\"InvalidStateError\" href=\"https://w3c.github.io/encrypted-media/#dfn-invalidstateerror\" class=\"internalDFN\" id=\"ref-for-dfn-invalidstateerror-12\"><code><code>InvalidStateError</code></code></a>.\n                                </p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>\n                              Abort these steps.\n                            </p>"
+                    }
+                  ]
                 },
                 {
                   "html": "<p>\n                          Stop using the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/encrypted-media/#dfn-cdm\" class=\"internalDFN\" id=\"ref-for-dfn-cdm-77\">CDM</a> instance represented by the\n                          <a data-link-type=\"idl\" href=\"https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-mediakeys\" class=\"internalDFN\" id=\"ref-for-dom-htmlmediaelement-mediakeys-5\"><code>mediaKeys</code></a> attribute to decrypt\n                          <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#media-data\">media data</a> and remove the association with the media\n                          element.\n                        </p>"
                 },
                 {
-                  "html": "<p>\n                          If the preceding step failed, let this object's <var>attaching media\n                          keys</var> value be false and reject <var>promise</var> with the\n                          appropriate <a href=\"https://w3c.github.io/encrypted-media/#error-names\">error name</a>.\n                        </p>"
+                  "html": "If the preceding step failed, run the following steps:",
+                  "rationale": "queue",
+                  "steps": [
+                    {
+                      "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> to run the following steps:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>\n                                  Let this object's <var>attaching media keys</var> value be false.\n                                </p>"
+                        },
+                        {
+                          "html": "<p>\n                                  Reject <var>promise</var> with the appropriate <a href=\"https://w3c.github.io/encrypted-media/#error-names\">error name</a>.\n                                </p>"
+                        }
+                      ]
+                    },
+                    {
+                      "html": "<p>\n                              Abort these steps.\n                            </p>"
+                    }
+                  ]
                 }
               ]
             },
@@ -1645,32 +1717,47 @@
                 },
                 {
                   "html": "If the preceding step failed, run the following steps:",
-                  "rationale": "set",
+                  "rationale": "queue",
                   "steps": [
                     {
-                      "html": "<p>\n                              Set the <a data-link-type=\"idl\" href=\"https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-mediakeys\" class=\"internalDFN\" id=\"ref-for-dom-htmlmediaelement-mediakeys-6\"><code>mediaKeys</code></a> attribute to null.\n                            </p>"
+                      "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> to run the following steps:",
+                      "rationale": "set",
+                      "steps": [
+                        {
+                          "html": "<p>\n                                  Set the <a data-link-type=\"idl\" href=\"https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-mediakeys\" class=\"internalDFN\" id=\"ref-for-dom-htmlmediaelement-mediakeys-6\"><code>mediaKeys</code></a> attribute to null.\n                                </p>"
+                        },
+                        {
+                          "html": "<p>\n                                  Let this object's <var>attaching media keys</var> value be false.\n                                </p>"
+                        },
+                        {
+                          "html": "<p>\n                                  Reject <var>promise</var> with a new <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> whose name\n                                  is the appropriate <a href=\"https://w3c.github.io/encrypted-media/#error-names\">error name</a>.\n                                </p>"
+                        }
+                      ]
                     },
                     {
-                      "html": "<p>\n                              Let this object's <var>attaching media keys</var> value be false.\n                            </p>"
-                    },
-                    {
-                      "html": "<p>\n                              Reject <var>promise</var> with a new <a data-link-type=\"interface\" data-lt=\"DOMException\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\"><code>DOMException</code></a> whose name is\n                              the appropriate <a href=\"https://w3c.github.io/encrypted-media/#error-names\">error name</a>.\n                            </p>"
+                      "html": "<p>\n                              Abort these steps.\n                            </p>"
                     }
                   ]
-                },
-                {
-                  "html": "<p>\n                          <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> to run the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/encrypted-media/#dfn-attempt-to-resume-playback-if-necessary\" class=\"internalDFN\" id=\"ref-for-dfn-attempt-to-resume-playback-if-necessary-2\">Attempt to Resume Playback If Necessary</a>\n                          algorithm on the media element.\n                        </p>"
                 }
               ]
             },
             {
-              "html": "<p>\n                      Set the <a data-link-type=\"idl\" href=\"https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-mediakeys\" class=\"internalDFN\" id=\"ref-for-dom-htmlmediaelement-mediakeys-7\"><code>mediaKeys</code></a> attribute to <var>mediaKeys</var>.\n                    </p>"
-            },
-            {
-              "html": "<p>\n                      Let this object's <var>attaching media keys</var> value be false.\n                    </p>"
-            },
-            {
-              "html": "<p>\n                      Resolve <var>promise</var> with <code>undefined</code>.\n                    </p>"
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\">Queue a task</a> to run the following steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>\n                          Set the <a data-link-type=\"idl\" href=\"https://w3c.github.io/encrypted-media/#dom-htmlmediaelement-mediakeys\" class=\"internalDFN\" id=\"ref-for-dom-htmlmediaelement-mediakeys-7\"><code>mediaKeys</code></a> attribute to <var>mediaKeys</var>.\n                        </p>"
+                },
+                {
+                  "html": "<p>\n                          Let this object's <var>attaching media keys</var> value be false.\n                        </p>"
+                },
+                {
+                  "html": "<p>\n                          Resolve <var>promise</var> with <code>undefined</code>.\n                        </p>"
+                },
+                {
+                  "html": "<p>\n                          If <var>mediaKeys</var> is not null, run the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/encrypted-media/#dfn-attempt-to-resume-playback-if-necessary\" class=\"internalDFN\" id=\"ref-for-dfn-attempt-to-resume-playback-if-necessary-2\">Attempt to Resume Playback If Necessary</a> algorithm on the media element.\n                        </p>"
+                }
+              ]
             }
           ]
         },
