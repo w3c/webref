@@ -17,6 +17,15 @@ on:
   schedule:
     - cron: '30 4 * * 3'
   workflow_dispatch:
+    inputs:
+      versionBump:
+        description: 'Version bump'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - patch
+          - minor
 
 jobs:
   release:
@@ -47,4 +56,6 @@ jobs:
         git config user.name "release-auto-bot"
         git config user.email "<>"
         git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-        node tools/release-autopackages.js
+        node tools/release-autopackages.js $VERSION_BUMP
+      env:
+        VERSION_BUMP: ${{ github.event_name == 'workflow_dispatch' && inputs.versionBump }}

@@ -22,7 +22,7 @@ import { createFolderIfNeeded, loadJSON } from "./utils.js";
  * @function
  * @param {Number} prNumber Pre-release PR number
  */
-async function releaseXrefPackage() {
+async function releaseXrefPackage(minorBump) {
   console.log();
   console.log(`Prepare the xref package`);
 
@@ -64,7 +64,7 @@ async function releaseXrefPackage() {
   const major = parseInt(versionTokens[1], 10);
   const minor = parseInt(versionTokens[2], 10);
   const patch = parseInt(versionTokens[3], 10);
-  const newVersion = `${major}.${minor}.${patch+1}`;
+  const newVersion = `${major}.${minorBump ? minor+1 : minor}.${minorBump ? patch : patch+1}`;
   console.log(`- new version: ${version}`);
   packageContents.version = newVersion;
   await fs.writeFile(packageFile, JSON.stringify(packageContents, null, 2), 'utf8');
@@ -113,7 +113,9 @@ Retrieve tokens from environment and kick things off
 const config = await loadJSON("config.json");
 const NPM_TOKEN = config?.NPM_TOKEN ?? process.env.NPM_TOKEN;
 
-releaseXrefPackage()
+const minorBump = process.argv[2] === "minor";
+
+releaseXrefPackage(minorBump)
   .then(() => {
     console.log();
     console.log("== The end ==");
