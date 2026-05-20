@@ -1,5 +1,7 @@
 // Source: WebMCP (https://webmachinelearning.github.io/webmcp/)
 [Exposed=Window, SecureContext]
-interface ModelContext {
+interface ModelContext : EventTarget {
   undefined registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});
+
+  attribute EventHandler ontoolchange;
 };

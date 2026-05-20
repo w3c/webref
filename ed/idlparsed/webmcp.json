@@ -15,10 +15,10 @@
     },
     "idlNames": {
       "ModelContext": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext {\n  undefined registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext : EventTarget {\n  undefined registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});\n\n  attribute EventHandler ontoolchange;\n};",
         "type": "interface",
         "name": "ModelContext",
-        "inheritance": null,
+        "inheritance": "EventTarget",
         "members": [
           {
             "type": "operation",
@@ -70,6 +70,22 @@
             "extAttrs": [],
             "special": "",
             "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-registertool"
+          },
+          {
+            "type": "attribute",
+            "name": "ontoolchange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false,
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontext-ontoolchange"
           }
         ],
         "extAttrs": [
@@ -307,7 +323,7 @@
         "href": "https://webmachinelearning.github.io/webmcp/#callbackdef-toolexecutecallback"
       },
       "ModelContextRegisterToolOptions": {
-        "fragment": "dictionary ModelContextRegisterToolOptions {\n  AbortSignal signal;\n};",
+        "fragment": "dictionary ModelContextRegisterToolOptions {\n  AbortSignal signal;\n  sequence<USVString> exposedTo;\n};",
         "type": "dictionary",
         "name": "ModelContextRegisterToolOptions",
         "inheritance": null,
@@ -327,6 +343,31 @@
             "default": null,
             "required": false,
             "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontextregistertooloptions-signal"
+          },
+          {
+            "type": "field",
+            "name": "exposedTo",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontextregistertooloptions-exposedto"
           }
         ],
         "extAttrs": [],
@@ -477,8 +518,10 @@
         "ModelContext"
       ],
       "ModelContext": [
+        "EventTarget",
         "ModelContextTool",
-        "ModelContextRegisterToolOptions"
+        "ModelContextRegisterToolOptions",
+        "EventHandler"
       ],
       "ModelContextTool": [
         "ToolExecuteCallback",
@@ -494,6 +537,8 @@
     },
     "externalDependencies": [
       "Navigator",
+      "EventTarget",
+      "EventHandler",
       "AbortSignal"
     ],
     "hasObsoleteIdl": false

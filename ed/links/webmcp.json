@@ -14,7 +14,10 @@
       "https://infra.spec.whatwg.org/": {},
       "https://json-schema.org/draft/2020-12/json-schema-core.html": {},
       "https://modelcontextprotocol.io/specification/latest": {},
+      "https://url.spec.whatwg.org/": {},
       "https://w3c.github.io/aria/": {},
+      "https://w3c.github.io/webappsec-permissions-policy/": {},
+      "https://w3c.github.io/webappsec-secure-contexts/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/webmachinelearning/": {}
@@ -28,6 +31,9 @@
       "https://dom.spec.whatwg.org/": {
         "anchors": [
           "document",
+          "concept-document-origin",
+          "concept-event-fire",
+          "eventtarget",
           "abortsignal-aborted",
           "abortsignal",
           "abortsignal-add",
@@ -36,15 +42,15 @@
       },
       "https://html.spec.whatwg.org/C": {
         "anchors": [
+          "associated-navigator",
           "is-initial-about:blank",
-          "initialise-the-document-object",
-          "associated-navigator"
+          "initialise-the-document-object"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
-          "same-origin",
-          "concept-origin"
+          "concept-origin",
+          "same-origin"
         ]
       },
       "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
@@ -54,9 +60,12 @@
       },
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
-          "top-level-traversable",
+          "node-navigable",
+          "nav-traversable",
+          "descendant-navigables",
           "nav-document",
           "fully-active",
+          "top-level-traversable",
           "inclusive-descendant-navigables",
           "navigable",
           "top-level-browsing-context",
@@ -67,6 +76,11 @@
         "anchors": [
           "the-form-element",
           "form-associated-element"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
+        "anchors": [
+          "allowed-to-use"
         ]
       },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
@@ -89,8 +103,15 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
-          "concept-relevant-realm",
+          "relevant-agent",
+          "concept-agent-event-loop",
+          "queue-a-global-task",
           "concept-relevant-global",
+          "concept-relevant-realm",
+          "eventhandler",
+          "event-handlers",
+          "event-handler-event-type",
+          "event-handler-idl-attributes",
           "event-loop"
         ]
       },
@@ -107,19 +128,40 @@
           "ascii-alphanumeric",
           "code-point",
           "boolean",
+          "list",
+          "list-empty",
           "assert",
+          "list-iterate",
+          "iteration-continue",
           "map-exists",
           "map-remove",
           "serialize-a-javascript-value-to-a-json-string",
+          "list-append",
           "user-agent",
-          "implementation-defined",
-          "list",
-          "list-iterate"
+          "implementation-defined"
+        ]
+      },
+      "https://url.spec.whatwg.org/": {
+        "anchors": [
+          "concept-url-parser",
+          "concept-url-origin"
         ]
       },
       "https://w3c.github.io/aria/": {
         "anchors": [
           "assistive-technology"
+        ]
+      },
+      "https://w3c.github.io/webappsec-permissions-policy/": {
+        "anchors": [
+          "policy-controlled-feature",
+          "policy-controlled-feature-default-allowlist",
+          "default-allowlist-self"
+        ]
+      },
+      "https://w3c.github.io/webappsec-secure-contexts/": {
+        "anchors": [
+          "is-origin-trustworthy"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
@@ -132,13 +174,16 @@
           "dfn-throw",
           "invalidstateerror",
           "idl-DOMException",
+          "notallowederror",
           "exceptiondef-typeerror",
+          "securityerror",
           "idl-DOMString",
           "idl-USVString",
           "idl-object",
           "idl-boolean",
           "idl-promise",
-          "idl-any"
+          "idl-any",
+          "idl-sequence"
         ]
       }
     }
