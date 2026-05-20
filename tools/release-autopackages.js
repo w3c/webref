@@ -64,7 +64,7 @@ async function releaseXrefPackage(minorBump) {
   const major = parseInt(versionTokens[1], 10);
   const minor = parseInt(versionTokens[2], 10);
   const patch = parseInt(versionTokens[3], 10);
-  const newVersion = `${major}.${minorBump ? minor+1 : minor}.${minorBump ? patch : patch+1}`;
+  const newVersion = `${major}.${minorBump ? minor+1 : minor}.${minorBump ? '0' : patch+1}`;
   console.log(`- new version: ${version}`);
   packageContents.version = newVersion;
   await fs.writeFile(packageFile, JSON.stringify(packageContents, null, 2), 'utf8');
