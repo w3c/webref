@@ -63,7 +63,7 @@ function setupExtracts(type, rootFolder) {
         if (entry.alternateIds) {
           for (const id of entry.alternateIds) {
             const url = new URL(entry.href);
-            url.hash = id;
+            url.hash = encodeURIComponent(id);
             const href = url.toString();
             indexUrl(href, { source: 'headings', entry });
           }
@@ -100,8 +100,33 @@ export function setup(rootFolder = scriptPath) {
  */
 export function lookup(url) {
   if (!initialized) {
-    throw new Error('Cannot run lookup before the `setup()` function gets called');
+    throw new Error('The `lookup()` function was called before `setup()`.');
   }
-  const res = urlIndex[url];
+  if (!url) {
+    throw new Error('The `lookup()` function was called without argument.');
+  }
+
+  // URL hashes in Webref extracts are percent-encoded. Goal is to support
+  // lookup of both percent-encoded and non percent-encoded URLs. To make sure
+  // that we end up with what we need, let's force a decode (this will be a
+  // no-op if the fragment is not percent-encoded) before we re-encode.
+  let parsedUrl;
+  try {
+    parsedUrl = new URL(url);
+  }
+  catch (err) {
+    throw new Error('The `lookup()` function was called with an invalid URL.', err);
+  }
+  let decodedHash;
+  try {
+    decodedHash = decodeURIComponent(parsedUrl.hash);
+  }
+  catch {
+    decodedHash = parsedUrl.hash;
+  }
+  parsedUrl.hash = encodeURIComponent(decodedHash.replace(/^#/, ''));
+  const lookupUrl = parsedUrl.toString();
+
+  const res = urlIndex[lookupUrl.toString()];
   return structuredClone(res) ?? [];
 }
