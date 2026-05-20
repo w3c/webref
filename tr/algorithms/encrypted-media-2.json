@@ -766,10 +766,10 @@
           "html": "<p>\n                  If the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-key-system\" class=\"internalDFN\" id=\"ref-for-dfn-key-system-21\">Key System</a> implementation represented by this object's <var>cdm\n                  implementation</var> value does not support server certificates, return a promise\n                  resolved with <code>false</code>.\n                </p>"
         },
         {
-          "html": "<p>\n                  If <var>serverCertificate</var> is an empty array, return a promise rejected with\n                  a newly created <a data-link-type=\"idl\" data-lt=\"TypeError\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-typeerror\" class=\"internalDFN\" id=\"ref-for-dfn-typeerror-5\"><code><code>TypeError</code></code></a>.\n                </p>"
+          "html": "<p>\n                  If <var>serverCertificate</var> is empty, return a promise rejected with a newly\n                  created <a data-link-type=\"idl\" data-lt=\"TypeError\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-typeerror\" class=\"internalDFN\" id=\"ref-for-dfn-typeerror-5\"><code><code>TypeError</code></code></a>.\n                </p>"
         },
         {
-          "html": "<p>\n                  Let <var>certificate</var> be a copy of the contents of the\n                  <var>serverCertificate</var> parameter.\n                </p>"
+          "html": "<p>\n                  Let <var>certificate</var> be the result of <a href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">get a copy of the bytes held by</a>\n                  <var>serverCertificate</var>.\n                </p>"
         },
         {
           "html": "<p>\n                  Let <var>promise</var> be a new promise.\n                </p>"
@@ -856,13 +856,13 @@
           "html": "<p>\n                  If <var>initDataType</var> is the empty string, return a promise rejected with a\n                  newly created <a data-link-type=\"idl\" data-lt=\"TypeError\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-typeerror\" class=\"internalDFN\" id=\"ref-for-dfn-typeerror-6\"><code><code>TypeError</code></code></a>.\n                </p>"
         },
         {
-          "html": "<p>\n                  If <var>initData</var> is an empty array, return a promise rejected with a newly\n                  created <a data-link-type=\"idl\" data-lt=\"TypeError\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-typeerror\" class=\"internalDFN\" id=\"ref-for-dfn-typeerror-7\"><code><code>TypeError</code></code></a>.\n                </p>"
+          "html": "<p>\n                  If <var>initData</var> is empty, return a promise rejected with a newly created\n                  <a data-link-type=\"idl\" data-lt=\"TypeError\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-typeerror\" class=\"internalDFN\" id=\"ref-for-dfn-typeerror-7\"><code><code>TypeError</code></code></a>.\n                </p>"
         },
         {
           "html": "<p>\n                  If the <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-key-system\" class=\"internalDFN\" id=\"ref-for-dfn-key-system-23\">Key System</a> implementation represented by this object's <var>cdm\n                  implementation</var> value does not support <var>initDataType</var> as an\n                  <a data-link-type=\"dfn|abstract-op\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-initialization-data-type\" class=\"internalDFN\" id=\"ref-for-dfn-initialization-data-type-5\">Initialization Data Type</a>, return a promise rejected with a\n                  <a data-link-type=\"idl\" data-lt=\"NotSupportedError\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-notsupportederror\" class=\"internalDFN\" id=\"ref-for-dfn-notsupportederror-5\"><code><code>NotSupportedError</code></code></a>. String comparison is case-sensitive.\n                </p>"
         },
         {
-          "html": "<p>\n                  Let <var>init data</var> be a copy of the contents of the <var>initData</var>\n                  parameter.\n                </p>"
+          "html": "<p>\n                  Let <var>init data</var> be the result of <a href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">get a copy of the bytes held by</a>\n                  <var>initData</var>.\n                </p>"
         },
         {
           "html": "<p>\n                  Let <var>session type</var> be this object's <var>session type</var>.\n                </p>"
@@ -1132,10 +1132,10 @@
           "html": "<p>\n                  If this object's <var>callable</var> value is false, return a promise rejected\n                  with an <a data-link-type=\"idl\" data-lt=\"InvalidStateError\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-invalidstateerror\" class=\"internalDFN\" id=\"ref-for-dfn-invalidstateerror-7\"><code><code>InvalidStateError</code></code></a>.\n                </p>"
         },
         {
-          "html": "<p>\n                  If <var>response</var> is an empty array, return a promise rejected with a newly\n                  created <a data-link-type=\"idl\" data-lt=\"TypeError\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-typeerror\" class=\"internalDFN\" id=\"ref-for-dfn-typeerror-14\"><code><code>TypeError</code></code></a>.\n                </p>"
+          "html": "<p>\n                  If <var>response</var> is empty, return a promise rejected with a newly created\n                  <a data-link-type=\"idl\" data-lt=\"TypeError\" href=\"https://www.w3.org/TR/encrypted-media-2/#dfn-typeerror\" class=\"internalDFN\" id=\"ref-for-dfn-typeerror-14\"><code><code>TypeError</code></code></a>.\n                </p>"
         },
         {
-          "html": "<p>\n                  Let <var>response copy</var> be a copy of the contents of the <var>response</var>\n                  parameter.\n                </p>"
+          "html": "<p>\n                  Let <var>response copy</var> be the result of <a href=\"https://webidl.spec.whatwg.org/#dfn-get-buffer-source-copy\">get a copy of the bytes held by</a>\n                  <var>response</var>.\n                </p>"
         },
         {
           "html": "<p>\n                  Let <var>promise</var> be a new promise.\n                </p>"
