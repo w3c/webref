@@ -102,4 +102,15 @@ describe('The @webref/xref lookup() function', function () {
       message: 'The `lookup()` function was called with an invalid URL.'
     });
   });
+
+  it('considers that a hash with a `%` not followed by digits is decoded', function () {
+    const hash = 'sec-%foriniteratorprototype%-object';
+    const baseUrl = 'https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#';
+    const url = baseUrl + hash;
+    const res = lookup(url);
+    assert(res?.length, 'No dfn found');
+    assert.strictEqual(res[0].source, 'dfns');
+    const entry = res[0].entry;
+    assert.strictEqual(entry.href, baseUrl + encodeURIComponent(hash));
+  });
 });

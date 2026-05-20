@@ -117,8 +117,14 @@ export function lookup(url) {
   catch (err) {
     throw new Error('The `lookup()` function was called with an invalid URL.', err);
   }
-  const decodedHash = decodeURIComponent(parsedUrl.hash).replace(/^#/, '');
-  parsedUrl.hash = encodeURIComponent(decodedHash);
+  let decodedHash;
+  try {
+    decodedHash = decodeURIComponent(parsedUrl.hash);
+  }
+  catch {
+    decodedHash = parsedUrl.hash;
+  }
+  parsedUrl.hash = encodeURIComponent(decodedHash.replace(/^#/, ''));
   const lookupUrl = parsedUrl.toString();
 
   const res = urlIndex[lookupUrl.toString()];
