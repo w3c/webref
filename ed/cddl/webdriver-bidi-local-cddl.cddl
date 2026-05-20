@@ -334,6 +334,8 @@ browsingContext.XPathLocator = {
 
 browsingContext.Navigation = text;
 
+browsingContext.Download = text;
+
 browsingContext.BaseNavigationInfo = (
   context: browsingContext.BrowsingContext,
   navigation: browsingContext.Navigation / null,
@@ -436,6 +438,7 @@ browsingContext.DownloadWillBegin = (
 )
 
 browsingContext.DownloadWillBeginParams = {
+  download: browsingContext.Download,
   suggestedFilename: text,
   browsingContext.BaseNavigationInfo
 }
@@ -454,11 +457,13 @@ browsingContext.DownloadEndParams = {
 
 browsingContext.DownloadCanceledParams = (
   status: "canceled",
+  download: browsingContext.Download,
   browsingContext.BaseNavigationInfo
 )
 
 browsingContext.DownloadCompleteParams = (
   status: "complete",
+  download: browsingContext.Download,
   filepath: text / null,
   browsingContext.BaseNavigationInfo
 )
@@ -1663,6 +1668,8 @@ browsingContext.XPathLocator = {
 }
 
 browsingContext.Navigation = text;
+
+browsingContext.Download = text;
 
 browsingContext.ReadinessState = "none" / "interactive" / "complete"
 
@@ -3358,6 +3365,8 @@ browsingContext.XPathLocator = {
 
 browsingContext.Navigation = text;
 
+browsingContext.Download = text;
+
 browsingContext.BaseNavigationInfo = (
   context: browsingContext.BrowsingContext,
   navigation: browsingContext.Navigation / null,
@@ -3460,6 +3469,7 @@ browsingContext.DownloadWillBegin = (
 )
 
 browsingContext.DownloadWillBeginParams = {
+  download: browsingContext.Download,
   suggestedFilename: text,
   browsingContext.BaseNavigationInfo
 }
@@ -3478,11 +3488,13 @@ browsingContext.DownloadEndParams = {
 
 browsingContext.DownloadCanceledParams = (
   status: "canceled",
+  download: browsingContext.Download,
   browsingContext.BaseNavigationInfo
 )
 
 browsingContext.DownloadCompleteParams = (
   status: "complete",
+  download: browsingContext.Download,
   filepath: text / null,
   browsingContext.BaseNavigationInfo
 )
