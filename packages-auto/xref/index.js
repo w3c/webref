@@ -9,7 +9,8 @@ const scriptPath = path.dirname(fileURLToPath(import.meta.url));
  */
 const xref = {
   dfns: [],
-  headings: []
+  headings: [],
+  specs: []
 };
 
 /**
@@ -83,6 +84,18 @@ export function setup(rootFolder = scriptPath) {
   if (initialized) {
     return;
   }
+  if (rootFolder === scriptPath) {
+    // We're in "package" mode, the root folder contains a `specs.json` file.
+    xref.specs = JSON.parse(fs.readFileSync(path.join(rootFolder, 'specs.json'), 'utf8'));
+  }
+  else {
+    // We're in "use crawl results" mode, the root folder won't contain a
+    // `specs.json` file, but the `ed` folder should have a crawl index with a
+    // list of specs.
+    const crawl = JSON.parse(fs.readFileSync(path.join(rootFolder, 'ed', 'index.json'), 'utf8'));
+    xref.specs = crawl.results;
+  }
+
   for (const type of ['dfns', 'headings']) {
     setupExtracts(type, rootFolder);
   }
@@ -94,11 +107,14 @@ export function setup(rootFolder = scriptPath) {
  * Lookup a URL in the loaded database
  *
  * The function returns an array of entries. Each entry is an object with a
- * `source` key set to "dfns", "headings", "links", or "alternateIds"; and a
- * `entry` key set to either a dfn object when `source` is "dfns" or "links",
- * or a heading object when `source` is "headings" or "alternateIds".
+ * `source` key set to "dfns" or "headings"; and a `entry` key set to either a
+ * dfn object when `source` is "dfns" or a heading object when `source` is
+ * "headings".
+ *
+ * The function accepts a lookup options object as second parameter that sets
+ * lookup capabilities and filters. Check the README for details.
  */
-export function lookup(url) {
+export function lookup(url, { standing, version, series } = {}) {
   if (!initialized) {
     throw new Error('The `lookup()` function was called before `setup()`.');
   }
@@ -125,8 +141,40 @@ export function lookup(url) {
     decodedHash = parsedUrl.hash;
   }
   parsedUrl.hash = encodeURIComponent(decodedHash.replace(/^#/, ''));
-  const lookupUrl = parsedUrl.toString();
+  let lookupUrl = parsedUrl.toString();
 
-  const res = urlIndex[lookupUrl.toString()];
-  return structuredClone(res) ?? [];
+  // If the series flag is set, the provided URL may also be a spec series URL,
+  // which we need to convert to the URL of the current spec in the series.
+  if (series) {
+    // Drop the hash to match spec URLs
+    const hash = parsedUrl.hash;
+    parsedUrl.hash = '';
+    const specUrl = parsedUrl.toString();
+    const spec = xref.specs.find(spec =>
+      spec.shortname === spec.series.currentSpecification &&
+      (spec.series.nightlyUrl === specUrl || spec.series.releaseUrl === specUrl)
+    );
+    if (spec) {
+      // The lookup URL matches a series URL indeed, let's change it to the URL
+      // of the current spec in the series
+      const currentUrl = new URL(
+        (spec.series.nightlyUrl === specUrl) ? spec.nightly.url : spec.release.url
+      );
+      currentUrl.hash = hash;
+      lookupUrl = currentUrl.toString();
+    }
+  }
+
+  // Look for the resulting URL and filter results as needed
+  let res = urlIndex[lookupUrl.toString()] ?? [];
+  const hasSpecFilter = standing || version;
+  if (hasSpecFilter) {
+    res = res.filter(match => {
+      const entry = match.entry;
+      const spec = xref.specs.find(spec => spec.shortname === entry.spec);
+      return (!standing || spec.standing === standing) &&
+        (!version || entry.version === version);
+    });
+  }
+  return structuredClone(res);
 }
