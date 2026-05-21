@@ -71,11 +71,9 @@ async function releaseXrefPackage(minorBump) {
       const srcDir = path.join(version, type);
       const srcFiles = await fs.readdir(srcDir);
       for (const file of srcFiles) {
-        if (file.endsWith(`.json`)) {
-          const spec = specs.find(s => `${s.shortname}.json` === file);
-          if (spec) {
-            await fs.copyFile(path.join(srcDir, file), path.join(dstDir, file));
-          }
+        if (file.endsWith(`.json`) &&
+            specs.find(s => `${s.shortname}.json` === file)) {
+          await fs.copyFile(path.join(srcDir, file), path.join(dstDir, file));
         }
       }
       console.log(`- ${type} extracts copied to ${dstDir}`);
