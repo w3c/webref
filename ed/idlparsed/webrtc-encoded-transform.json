@@ -7,8 +7,8 @@
     "jsNames": {
       "constructors": {
         "Window": [
-          "RTCSFrameSenderTransform",
-          "RTCSFrameReceiverTransform",
+          "RTCRtpSFrameEncrypter",
+          "RTCRtpSFrameDecrypter",
           "SFrameEncrypterStream",
           "SFrameDecrypterStream",
           "SFrameTransformErrorEvent",
@@ -34,7 +34,7 @@
     },
     "idlNames": {
       "RTCRtpSenderTransform": {
-        "fragment": "typedef (RTCSFrameSenderTransform or RTCRtpScriptTransform) RTCRtpSenderTransform;",
+        "fragment": "typedef (RTCRtpSFrameEncrypter or RTCRtpScriptTransform) RTCRtpSenderTransform;",
         "type": "typedef",
         "name": "RTCRtpSenderTransform",
         "idlType": {
@@ -50,7 +50,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "RTCSFrameSenderTransform"
+              "idlType": "RTCRtpSFrameEncrypter"
             },
             {
               "type": "typedef-type",
@@ -66,7 +66,7 @@
         "href": "https://w3c.github.io/webrtc-encoded-transform/#typedefdef-rtcrtpsendertransform"
       },
       "RTCRtpReceiverTransform": {
-        "fragment": "typedef (RTCSFrameReceiverTransform or RTCRtpScriptTransform) RTCRtpReceiverTransform;",
+        "fragment": "typedef (RTCRtpSFrameDecrypter or RTCRtpScriptTransform) RTCRtpReceiverTransform;",
         "type": "typedef",
         "name": "RTCRtpReceiverTransform",
         "idlType": {
@@ -82,7 +82,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "RTCSFrameReceiverTransform"
+              "idlType": "RTCRtpSFrameDecrypter"
             },
             {
               "type": "typedef-type",
@@ -192,10 +192,10 @@
         "extAttrs": [],
         "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-sframetype"
       },
-      "RTCSFrameSenderTransformOptions": {
-        "fragment": "dictionary RTCSFrameSenderTransformOptions : SFrameTransformOptions {\n    SFrameType type = \"per-frame\";\n};",
+      "RTCRtpSFrameEncrypterOptions": {
+        "fragment": "dictionary RTCRtpSFrameEncrypterOptions : SFrameTransformOptions {\n    SFrameType type = \"per-frame\";\n};",
         "type": "dictionary",
-        "name": "RTCSFrameSenderTransformOptions",
+        "name": "RTCRtpSFrameEncrypterOptions",
         "inheritance": "SFrameTransformOptions",
         "members": [
           {
@@ -215,12 +215,12 @@
               "value": "per-frame"
             },
             "required": false,
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcsframesendertransformoptions-type"
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframeencrypteroptions-type"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcsframesendertransformoptions"
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-rtcrtpsframeencrypteroptions"
       },
       "SmallCryptoKeyID": {
         "fragment": "typedef [EnforceRange] unsigned long long SmallCryptoKeyID;",
@@ -472,10 +472,10 @@
         "partial": false,
         "href": "https://w3c.github.io/webrtc-encoded-transform/#sframedecryptermanager"
       },
-      "RTCSFrameSenderTransform": {
-        "fragment": "[Exposed=Window]\ninterface RTCSFrameSenderTransform {\n    constructor(RTCSFrameSenderTransformOptions options);\n};",
+      "RTCRtpSFrameEncrypter": {
+        "fragment": "[Exposed=Window]\ninterface RTCRtpSFrameEncrypter {\n    constructor(RTCRtpSFrameEncrypterOptions options);\n};",
         "type": "interface",
-        "name": "RTCSFrameSenderTransform",
+        "name": "RTCRtpSFrameEncrypter",
         "inheritance": null,
         "members": [
           {
@@ -491,7 +491,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "RTCSFrameSenderTransformOptions"
+                  "idlType": "RTCRtpSFrameEncrypterOptions"
                 },
                 "default": null,
                 "optional": false,
@@ -499,7 +499,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcsframesendertransform-rtcsframesendertransform"
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframeencrypter-rtcrtpsframeencrypter"
           }
         ],
         "extAttrs": [
@@ -514,12 +514,12 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcsframesendertransform"
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpsframeencrypter"
       },
-      "RTCSFrameReceiverTransform": {
-        "fragment": "[Exposed=Window]\ninterface RTCSFrameReceiverTransform : EventTarget {\n    constructor(SFrameTransformOptions options);\n};",
+      "RTCRtpSFrameDecrypter": {
+        "fragment": "[Exposed=Window]\ninterface RTCRtpSFrameDecrypter : EventTarget {\n    constructor(SFrameTransformOptions options);\n};",
         "type": "interface",
-        "name": "RTCSFrameReceiverTransform",
+        "name": "RTCRtpSFrameDecrypter",
         "inheritance": "EventTarget",
         "members": [
           {
@@ -543,7 +543,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcsframereceivertransform-rtcsframereceivertransform"
+            "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframedecrypter-rtcrtpsframedecrypter"
           }
         ],
         "extAttrs": [
@@ -558,13 +558,13 @@
           }
         ],
         "partial": false,
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcsframereceivertransform"
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpsframedecrypter"
       },
       "SFrameEncrypterStream": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameEncrypterStream : EventTarget {\n    constructor(SFrameTransformOptions options);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameEncrypterStream {\n    constructor(SFrameTransformOptions options);\n};",
         "type": "interface",
         "name": "SFrameEncrypterStream",
-        "inheritance": "EventTarget",
+        "inheritance": null,
         "members": [
           {
             "type": "constructor",
@@ -1964,21 +1964,21 @@
           "partial": true
         }
       ],
-      "RTCSFrameSenderTransform": [
+      "RTCRtpSFrameEncrypter": [
         {
-          "fragment": "RTCSFrameSenderTransform includes SFrameEncrypterManager;",
+          "fragment": "RTCRtpSFrameEncrypter includes SFrameEncrypterManager;",
           "type": "includes",
           "extAttrs": [],
-          "target": "RTCSFrameSenderTransform",
+          "target": "RTCRtpSFrameEncrypter",
           "includes": "SFrameEncrypterManager"
         }
       ],
-      "RTCSFrameReceiverTransform": [
+      "RTCRtpSFrameDecrypter": [
         {
-          "fragment": "RTCSFrameReceiverTransform includes SFrameDecrypterManager;",
+          "fragment": "RTCRtpSFrameDecrypter includes SFrameDecrypterManager;",
           "type": "includes",
           "extAttrs": [],
-          "target": "RTCSFrameReceiverTransform",
+          "target": "RTCRtpSFrameDecrypter",
           "includes": "SFrameDecrypterManager"
         }
       ],
@@ -2046,8 +2046,8 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "RTCSFrameSenderTransform",
-        "RTCSFrameReceiverTransform",
+        "RTCRtpSFrameEncrypter",
+        "RTCRtpSFrameDecrypter",
         "SFrameEncrypterStream",
         "SFrameDecrypterStream",
         "SFrameTransformErrorEvent",
@@ -2076,7 +2076,7 @@
       "SFrameTransformOptions": [
         "SFrameCipherSuite"
       ],
-      "RTCSFrameSenderTransformOptions": [
+      "RTCRtpSFrameEncrypterOptions": [
         "SFrameTransformOptions",
         "SFrameType"
       ],
@@ -2089,17 +2089,16 @@
         "CryptoKeyID",
         "EventHandler"
       ],
-      "RTCSFrameSenderTransform": [
-        "RTCSFrameSenderTransformOptions",
+      "RTCRtpSFrameEncrypter": [
+        "RTCRtpSFrameEncrypterOptions",
         "SFrameEncrypterManager"
       ],
-      "RTCSFrameReceiverTransform": [
+      "RTCRtpSFrameDecrypter": [
         "EventTarget",
         "SFrameTransformOptions",
         "SFrameDecrypterManager"
       ],
       "SFrameEncrypterStream": [
-        "EventTarget",
         "SFrameTransformOptions",
         "GenericTransformStream",
         "SFrameEncrypterManager"

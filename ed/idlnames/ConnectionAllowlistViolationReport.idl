@@ -1,0 +1,7 @@
+// Source: Connection Allowlists (https://wicg.github.io/connection-allowlists/)
+dictionary ConnectionAllowlistViolationReport : ReportBody {
+  USVString url;
+  USVString connection;
+  sequence<DOMString> allowlist;
+  ConnectionAllowlistDisposition disposition;
+};

@@ -1,13 +1,13 @@
 {
-  "name": "RTCSFrameReceiverTransform",
+  "name": "RTCRtpSFrameDecrypter",
   "type": "interface",
   "defined": {
     "spec": {
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "[Exposed=Window]\ninterface RTCSFrameReceiverTransform : EventTarget {\n    constructor(SFrameTransformOptions options);\n};",
-    "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcsframereceivertransform"
+    "fragment": "[Exposed=Window]\ninterface RTCRtpSFrameDecrypter : EventTarget {\n    constructor(SFrameTransformOptions options);\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpsframedecrypter"
   },
   "extended": [
     {
@@ -15,7 +15,7 @@
         "title": "WebRTC Encoded Transform",
         "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
       },
-      "fragment": "RTCSFrameReceiverTransform includes SFrameDecrypterManager;"
+      "fragment": "RTCRtpSFrameDecrypter includes SFrameDecrypterManager;"
     }
   ],
   "inheritance": {

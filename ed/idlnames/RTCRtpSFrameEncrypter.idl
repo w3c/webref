@@ -1,8 +1,8 @@
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
 [Exposed=Window]
-interface RTCSFrameSenderTransform {
-    constructor(RTCSFrameSenderTransformOptions options);
+interface RTCRtpSFrameEncrypter {
+    constructor(RTCRtpSFrameEncrypterOptions options);
 };
 
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
-RTCSFrameSenderTransform includes SFrameEncrypterManager;
+RTCRtpSFrameEncrypter includes SFrameEncrypterManager;

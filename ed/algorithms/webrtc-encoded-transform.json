@@ -188,9 +188,9 @@
       ]
     },
     {
-      "name": "RTCSFrameSenderTransform/RTCSFrameSenderTransform(options)",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcsframesendertransform-rtcsframesendertransform",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCSFrameSenderTransform\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"RTCSFrameSenderTransform(options)|constructor(options)\" id=\"dom-rtcsframesendertransform-rtcsframesendertransform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new RTCSFrameSenderTransform(<var>options</var>)</code></dfn> constructor steps are:",
+      "name": "RTCRtpSFrameEncrypter/RTCRtpSFrameEncrypter(options)",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframeencrypter-rtcrtpsframeencrypter",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpSFrameEncrypter\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"RTCRtpSFrameEncrypter(options)|constructor(options)\" id=\"dom-rtcrtpsframeencrypter-rtcrtpsframeencrypter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new RTCRtpSFrameEncrypter(<var>options</var>)</code></dfn> constructor steps are:",
       "rationale": "let",
       "steps": [
         {
@@ -208,9 +208,9 @@
       ]
     },
     {
-      "name": "RTCSFrameReceiverTransform/RTCSFrameReceiverTransform(options)",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcsframereceivertransform-rtcsframereceivertransform",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCSFrameReceiverTransform\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"RTCSFrameReceiverTransform(options)|constructor(options)\" id=\"dom-rtcsframereceivertransform-rtcsframereceivertransform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new RTCSFrameReceiverTransform(<var>options</var>)</code></dfn> constructor steps are:",
+      "name": "RTCRtpSFrameDecrypter/RTCRtpSFrameDecrypter(options)",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframedecrypter-rtcrtpsframedecrypter",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpSFrameDecrypter\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"RTCRtpSFrameDecrypter(options)|constructor(options)\" id=\"dom-rtcrtpsframedecrypter-rtcrtpsframedecrypter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new RTCRtpSFrameDecrypter(<var>options</var>)</code></dfn> constructor steps are:",
       "rationale": "let",
       "steps": [
         {
@@ -271,11 +271,11 @@
           "html": "<p>Let <var>transformAlgorithm</var> be an algorithm which takes a <var>frame</var> as input and runs the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webrtc-encoded-transform/#sframe-transform-algorithm\" id=\"ref-for-sframe-transform-algorithm\">SFrame transform algorithm</a> with <var>this</var> and <var>frame</var>.</p>"
         },
         {
-          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcsframesendertransformoptions-type\" id=\"ref-for-dom-rtcsframesendertransformoptions-type\">type</a></code>\"] is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">present</a>, run these steps:",
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframeencrypteroptions-type\" id=\"ref-for-dom-rtcrtpsframeencrypteroptions-type\">type</a></code>\"] is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">present</a>, run these steps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcsframesendertransformoptions-type\" id=\"ref-for-dom-rtcsframesendertransformoptions-type①\">type</a></code>\"] is 'per-frame', use per-frame sending as defined in <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-rtp-sframe-payload\" title=\"RTP Payload Format for SFrame\">[RTP-SFRAME-PAYLOAD]</a>.</p>"
+              "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframeencrypteroptions-type\" id=\"ref-for-dom-rtcrtpsframeencrypteroptions-type①\">type</a></code>\"] is 'per-frame', use per-frame sending as defined in <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-rtp-sframe-payload\" title=\"RTP Payload Format for SFrame\">[RTP-SFRAME-PAYLOAD]</a>.</p>"
             },
             {
               "html": "<p>Otherwise, use per-packet sending as defined in <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-rtp-sframe-payload\" title=\"RTP Payload Format for SFrame\">[RTP-SFRAME-PAYLOAD]</a>.</p>"

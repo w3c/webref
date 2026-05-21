@@ -1,0 +1,29 @@
+{
+  "name": "ConnectionAllowlistViolationReport",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Connection Allowlists",
+      "url": "https://wicg.github.io/connection-allowlists/"
+    },
+    "fragment": "dictionary ConnectionAllowlistViolationReport : ReportBody {\n  USVString url;\n  USVString connection;\n  sequence<DOMString> allowlist;\n  ConnectionAllowlistDisposition disposition;\n};",
+    "href": "https://wicg.github.io/connection-allowlists/#dictdef-connectionallowlistviolationreport"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ReportBody",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Reporting API",
+        "url": "https://www.w3.org/TR/reporting-1/"
+      },
+      "fragment": "dictionary ReportBody {\n};",
+      "href": "https://w3c.github.io/reporting/#reportbody"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

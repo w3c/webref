@@ -1,13 +1,13 @@
 {
-  "name": "RTCSFrameSenderTransform",
+  "name": "RTCRtpSFrameEncrypter",
   "type": "interface",
   "defined": {
     "spec": {
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "[Exposed=Window]\ninterface RTCSFrameSenderTransform {\n    constructor(RTCSFrameSenderTransformOptions options);\n};",
-    "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcsframesendertransform"
+    "fragment": "[Exposed=Window]\ninterface RTCRtpSFrameEncrypter {\n    constructor(RTCRtpSFrameEncrypterOptions options);\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpsframeencrypter"
   },
   "extended": [
     {
@@ -15,7 +15,7 @@
         "title": "WebRTC Encoded Transform",
         "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
       },
-      "fragment": "RTCSFrameSenderTransform includes SFrameEncrypterManager;"
+      "fragment": "RTCRtpSFrameEncrypter includes SFrameEncrypterManager;"
     }
   ],
   "inheritance": null,
