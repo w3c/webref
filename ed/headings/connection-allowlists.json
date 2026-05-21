@@ -1,0 +1,228 @@
+{
+  "spec": {
+    "title": "Connection Allowlists",
+    "url": "https://wicg.github.io/connection-allowlists/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/connection-allowlists/#title",
+      "level": 1,
+      "title": "Connection Allowlists"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/connection-allowlists/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/connection-allowlists/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/connection-allowlists/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "contents"
+      ]
+    },
+    {
+      "id": "intro",
+      "href": "https://wicg.github.io/connection-allowlists/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "threat-model",
+      "href": "https://wicg.github.io/connection-allowlists/#threat-model",
+      "level": 3,
+      "title": "Threat Model",
+      "number": "1.1"
+    },
+    {
+      "id": "overlap-with-csp",
+      "href": "https://wicg.github.io/connection-allowlists/#overlap-with-csp",
+      "level": 3,
+      "title": "Overlap with Content Security Policy",
+      "number": "1.2"
+    },
+    {
+      "id": "allowlists",
+      "href": "https://wicg.github.io/connection-allowlists/#allowlists",
+      "level": 2,
+      "title": "Connection Allowlists",
+      "number": "2"
+    },
+    {
+      "id": "headers",
+      "href": "https://wicg.github.io/connection-allowlists/#headers",
+      "level": 2,
+      "title": "Connection Allowlist Headers",
+      "number": "3"
+    },
+    {
+      "id": "parsing",
+      "href": "https://wicg.github.io/connection-allowlists/#parsing",
+      "level": 3,
+      "title": "Parsing",
+      "number": "3.1"
+    },
+    {
+      "id": "matching",
+      "href": "https://wicg.github.io/connection-allowlists/#matching",
+      "level": 3,
+      "title": "Matching",
+      "number": "3.2"
+    },
+    {
+      "id": "reporting",
+      "href": "https://wicg.github.io/connection-allowlists/#reporting",
+      "level": 3,
+      "title": "Reporting",
+      "number": "3.3"
+    },
+    {
+      "id": "monkey-patching",
+      "href": "https://wicg.github.io/connection-allowlists/#monkey-patching",
+      "level": 2,
+      "title": "Monkey-Patches",
+      "number": "4"
+    },
+    {
+      "id": "fetch",
+      "href": "https://wicg.github.io/connection-allowlists/#fetch",
+      "level": 3,
+      "title": "Integration with Fetch",
+      "number": "4.1"
+    },
+    {
+      "id": "html",
+      "href": "https://wicg.github.io/connection-allowlists/#html",
+      "level": 3,
+      "title": "Integration with HTML",
+      "number": "4.2"
+    },
+    {
+      "id": "rtc",
+      "href": "https://wicg.github.io/connection-allowlists/#rtc",
+      "level": 3,
+      "title": "Integration with WebRTC",
+      "number": "4.3"
+    },
+    {
+      "id": "security",
+      "href": "https://wicg.github.io/connection-allowlists/#security",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "5"
+    },
+    {
+      "id": "security-same-origin",
+      "href": "https://wicg.github.io/connection-allowlists/#security-same-origin",
+      "level": 3,
+      "title": "Same-Origin Contexts",
+      "number": "5.1"
+    },
+    {
+      "id": "security-service-worker",
+      "href": "https://wicg.github.io/connection-allowlists/#security-service-worker",
+      "level": 3,
+      "title": "Service Workers",
+      "number": "5.2"
+    },
+    {
+      "id": "security-dns",
+      "href": "https://wicg.github.io/connection-allowlists/#security-dns",
+      "level": 3,
+      "title": "DNS",
+      "number": "5.3"
+    },
+    {
+      "id": "security-postmessage",
+      "href": "https://wicg.github.io/connection-allowlists/#security-postmessage",
+      "level": 3,
+      "title": "postMessage(...)",
+      "number": "5.4"
+    },
+    {
+      "id": "redirects",
+      "href": "https://wicg.github.io/connection-allowlists/#redirects",
+      "level": 3,
+      "title": "Redirects",
+      "number": "5.5"
+    },
+    {
+      "id": "webrtc",
+      "href": "https://wicg.github.io/connection-allowlists/#webrtc",
+      "level": 3,
+      "title": "WebRTC",
+      "number": "5.6"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/connection-allowlists/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/connection-allowlists/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/connection-allowlists/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/connection-allowlists/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/connection-allowlists/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/connection-allowlists/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/connection-allowlists/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/connection-allowlists/#informative",
+      "level": 3,
+      "title": "Non-Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/connection-allowlists/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://wicg.github.io/connection-allowlists/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}
