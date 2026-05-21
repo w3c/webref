@@ -145,7 +145,7 @@ export function lookup(url, { standing, version, series } = {}) {
 
   // If the series flag is set, the provided URL may also be a spec series URL,
   // which we need to convert to the URL of the current spec in the series.
-  if (series) {
+  if (series && !urlIndex[lookupUrl.toString()]) {
     // Drop the hash to match spec URLs
     const hash = parsedUrl.hash;
     parsedUrl.hash = '';
