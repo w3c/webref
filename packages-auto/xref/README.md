@@ -38,6 +38,83 @@ for (const url of urls) {
 
 *Note:* The function returns an array because the same URL may be used for a dfn and a heading.
 
+The `lookup()` function takes the URL to search for as first parameter. It also accepts a [lookup options](#lookup-options) object as second parameter.
+
+### Lookup options
+
+*Note:* Lookup options apply as a logical AND when combined.
+
+#### `series` option
+
+By default, the `lookup()` function assumes that the provided URL uses the nightly or release URL of a spec. Set the `series` boolean flag to find definitions and headings that match a URL that uses the [series](https://github.com/w3c/browser-specs/#series) URL of a spec.
+
+Internally, the series URL gets converted to the nightly or release URL of the spec known to be the [current spec](https://github.com/w3c/browser-specs/#seriescurrentspecification) in the series.
+
+```js
+import * as xref from '@webref/xref';
+xref.setup();
+
+// URL that targets the CSS Paged Media Module series
+const url = 'https://www.w3.org/TR/css-page/#page-selector';
+
+// Default lookup won't return anything
+const notfound = xref.lookup(url);
+
+// With the `series` flag, lookup will convert the series
+// URL to the URL of the current spec in the series. As of
+// May 2026, the current spec in the css-page series is
+// css-page-3. Returned dfn will have the URL:
+// https://www.w3.org/TR/css-page-3/#page-selector
+const found = xref.lookup(url, { series: true });
+```
+
+*Note:* The flag may be set even when the provided URL is not a series URL, lookup will just proceed as usual in this case.
+
+#### `standing` option
+
+The cross-references database contains definitions and headings from all crawled specs. The list of crawled specs in Webref matches the list of specs in [`browser-specs`](https://github.com/w3c/browser-specs) whose [`standing`](https://github.com/w3c/browser-specs/#standing) property is `"good"` or `"pending"`. For historical reasons, the list also include a few specific specs whose standing is `"discontinued"` (such as the DOM Level 2 Style spec).
+
+Set the `standing` option to one of the possible standing values to only keep results from specs whose standing match the specified one.
+
+```js
+import * as xref from '@webref/xref';
+xref.setup();
+
+// As of May 2026, the Direct Sockets proposal is "pending"
+const url = 'https://wicg.github.io/direct-sockets/#dfn-readable';
+
+// Default lookup will return a dfn
+const found = xref.lookup(url);
+
+// No result if lookup is restricted to specs in good standing
+const notfound = xref.lookup(url, { standing: 'good' });
+```
+
+#### `version` option
+
+The cross-references database contains definitions and headings from both nightly and release versions of the specs.
+
+Set the `version` option to one of `"nightly"` or `"release"` to only return results from the underlying version of a spec.
+
+```js
+import * as xref from '@webref/xref';
+xref.setup();
+
+// A URL that targets the release version of a spec
+const url = 'https://www.w3.org/TR/css-page-3/#page-selector';
+
+// Default lookup will return a dfn
+const found = xref.lookup(url);
+
+// No result if lookup is restricted to nightly versions
+const notfound = xref.lookup(url, { version: 'nightly' });
+
+// Note: This option is a convenience method for the
+// following, which achieves the exact same thing
+const same = xref.lookup(url)
+  .filter(match => match.entry.version === 'nightly');
+```
+
 ## Lookup matches
 
 A match returned by the `lookup()` function is an object with two keys: `source` and `entry`.

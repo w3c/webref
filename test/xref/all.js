@@ -113,4 +113,56 @@ describe('The @webref/xref lookup() function', function () {
     const entry = res[0].entry;
     assert.strictEqual(entry.href, baseUrl + encodeURIComponent(hash));
   });
+
+  it('can take an option argument', function () {
+    const url = 'https://html.spec.whatwg.org/multipage/webappapis.html#event-loop';
+    const res = lookup(url, {});
+    assert(res?.length, 'No dfn found');
+    assert.strictEqual(res[0].source, 'dfns');
+    const entry = res[0].entry;
+    assert.strictEqual(entry.href, url);
+    assert.strictEqual(entry.spec, 'html');
+  });
+
+  it('can filter on the spec\'s standing', function () {
+    const url = 'https://drafts.csswg.org/css-page-4/#page-box';
+
+    const resUnfiltered = lookup(url, { standing: 'pending' });
+    assert(resUnfiltered?.length, 'No dfn found');
+    assert.strictEqual(resUnfiltered[0].source, 'dfns');
+    const entryUnfiltered = resUnfiltered[0].entry;
+    assert.strictEqual(entryUnfiltered.href, url);
+    assert.strictEqual(entryUnfiltered.spec, 'css-page-4');
+
+    const resFiltered = lookup(url, { standing: 'good' });
+    assert.strictEqual(resFiltered?.length, 0, 'Dfn was not filtered');
+  });
+
+  it('can filter on the spec\'s version', function () {
+    const url = 'https://www.w3.org/TR/css-page-3/#page-selector';
+
+    const resUnfiltered = lookup(url, { version: 'release' });
+    assert(resUnfiltered?.length, 'No dfn found');
+    assert.strictEqual(resUnfiltered[0].source, 'dfns');
+    const entryUnfiltered = resUnfiltered[0].entry;
+    assert.strictEqual(entryUnfiltered.href, url);
+    assert.strictEqual(entryUnfiltered.spec, 'css-page-3');
+
+    const resFiltered = lookup(url, { version: 'nightly' });
+    assert.strictEqual(resFiltered?.length, 0, 'Dfn was not filtered');
+  });
+
+  it('can lookup series URLs', function () {
+    const url = 'https://www.w3.org/TR/css-page/#page-selector';
+
+    const resUnfiltered = lookup(url, { series: true });
+    assert(resUnfiltered?.length, 'No dfn found');
+    assert.strictEqual(resUnfiltered[0].source, 'dfns');
+    const entryUnfiltered = resUnfiltered[0].entry;
+    assert.strictEqual(entryUnfiltered.href, 'https://www.w3.org/TR/css-page-3/#page-selector');
+    assert.strictEqual(entryUnfiltered.spec, 'css-page-3');
+
+    const resFiltered = lookup(url, { series: false });
+    assert.strictEqual(resFiltered?.length, 0, 'Dfn was not filtered');
+  });
 });

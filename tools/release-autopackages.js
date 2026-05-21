@@ -15,6 +15,8 @@ import { execSync } from "node:child_process";
 import { npmPublish } from "@jsdevtools/npm-publish";
 import { createFolderIfNeeded, loadJSON } from "./utils.js";
 
+import crawl from "../ed/index.json" with { type: "json" };
+
 
 /**
  * Release package at the requested version.
@@ -28,6 +30,30 @@ async function releaseXrefPackage(minorBump) {
 
   const packageFolder = path.join('packages-auto', 'xref');
   await createFolderIfNeeded(packageFolder);
+
+  // Prepare the list of specs from the crawl's result, keeping information
+  // that we may use for filtering (or display purpose). This list is
+  // essentially web-specs.
+  // Note: we'll use the "ed" list, which should be more up-to-date than the
+  // "tr" one, and we'll ignore "tr" extracts that cannot be mapped to a spec.
+  const specs = crawl.results.map(result => Object.assign({
+    url: result.url,
+    seriesComposition: result.seriesComposition,
+    shortname: result.shortname,
+    series: result.series,
+    categories: result.categories,
+    organization: result.organization,
+    groups: result.groups,
+    nightly: result.nightly,
+    release: result.release,
+    title: result.title,
+    shortTitle: result.shortTitle,
+    standing: result.standing,
+    crawled: result.crawled,
+    date: result.date
+  }));
+  await fs.writeFile(path.join(packageFolder, 'specs.json'), JSON.stringify(specs, null, 2), 'utf8');
+  console.log('- wrote the list of specs');
 
   for (const version of ['ed', 'tr']) {
     await createFolderIfNeeded(path.join(packageFolder, version));
@@ -45,7 +71,8 @@ async function releaseXrefPackage(minorBump) {
       const srcDir = path.join(version, type);
       const srcFiles = await fs.readdir(srcDir);
       for (const file of srcFiles) {
-        if (file.endsWith(`.json`)) {
+        if (file.endsWith(`.json`) &&
+            specs.find(s => `${s.shortname}.json` === file)) {
           await fs.copyFile(path.join(srcDir, file), path.join(dstDir, file));
         }
       }
