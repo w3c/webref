@@ -35,12 +35,13 @@
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
+          "documentorshadowroot",
+          "element",
           "concept-document-origin",
           "concept-event-fire",
           "dom-event-bubbles",
-          "documentorshadowroot",
           "document",
-          "element",
+          "concept-node-document",
           "concept-shadow-root",
           "concept-documentfragment-host",
           "connected",
@@ -53,9 +54,9 @@
       },
       "https://fullscreen.spec.whatwg.org/": {
         "anchors": [
+          "fullscreen-flag",
           "dom-document-fullscreenelement",
-          "fully-exit-fullscreen",
-          "fullscreen-flag"
+          "fully-exit-fullscreen"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -91,20 +92,24 @@
       },
       "https://html.spec.whatwg.org/multipage/infrastructure.html": {
         "anchors": [
+          "parallel-queue",
+          "starting-a-new-parallel-queue",
+          "enqueue-the-following-steps",
           "in-parallel"
         ]
       },
       "https://html.spec.whatwg.org/multipage/interaction.html": {
         "anchors": [
-          "transient-activation",
-          "consume-user-activation",
           "visibility-state",
-          "system-visibility-state"
+          "system-visibility-state",
+          "transient-activation",
+          "consume-user-activation"
         ]
       },
       "https://html.spec.whatwg.org/multipage/media.html": {
         "anchors": [
           "htmlvideoelement",
+          "video",
           "dom-media-readystate",
           "dom-media-have_nothing",
           "media-element-event-task-source"
@@ -118,35 +123,42 @@
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
           "concept-relevant-global",
-          "relevant-settings-object",
           "queue-a-task",
+          "relevant-settings-object",
           "eventhandler",
+          "concept-relevant-realm",
+          "queue-a-global-task",
           "task-source"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "user-agent",
-          "list-item"
+          "list-item",
+          "list-append"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "notsupportederror",
-          "securityerror",
           "invalidstateerror",
-          "this",
-          "notallowederror",
           "NewObject",
           "idl-promise",
           "idl-boolean",
+          "a-promise-rejected-with",
+          "notsupportederror",
+          "idl-DOMException",
+          "this",
+          "notallowederror",
+          "a-promise-resolved-with",
           "a-new-promise",
           "resolve",
+          "reject",
           "idl-undefined",
           "Exposed",
           "idl-long",
           "idl-DOMString",
-          "SameObject"
+          "SameObject",
+          "securityerror"
         ]
       },
       "https://www.w3.org/TR/css-values-4/": {
