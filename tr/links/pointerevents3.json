@@ -118,21 +118,23 @@
       "https://www.w3.org/TR/css-overflow-3/": {},
       "https://www.w3.org/TR/cssom-view-1/": {},
       "https://www.w3.org/TR/pointerevents2/": {},
-      "https://www.w3.org/TR/pointerevents4/": {},
-      "https://www.w3.org/TR/pointerlock/": {},
+      "https://www.w3.org/TR/pointerevents4/": {
+        "anchors": [
+          "mouse-event-order",
+          "dom-mouseevent-relatedtarget",
+          "click",
+          "auxclick",
+          "contextmenu",
+          "interface-mouseevent"
+        ]
+      },
+      "https://www.w3.org/TR/pointerlock-2/": {},
       "https://www.w3.org/TR/touch-events/": {
         "anchors": [
           "mouse-events"
         ]
       },
-      "https://www.w3.org/TR/uievents/": {
-        "anchors": [
-          "events-mouseevent-event-order",
-          "event-type-click",
-          "event-type-auxclick",
-          "event-type-contextmenu"
-        ]
-      },
+      "https://www.w3.org/TR/uievents/": {},
       "https://www.w3.org/community/touchevents/": {},
       "https://www.w3.org/groups/wg/pointer-events": {},
       "https://www.w3.org/groups/wg/pointer-events/ipr": {},
@@ -219,17 +221,20 @@
           "scroll-container"
         ]
       },
-      "https://www.w3.org/TR/pointerlock/": {
+      "https://www.w3.org/TR/pointerevents4/": {
+        "anchors": [
+          "dom-mouseeventinit",
+          "dom-mouseevent"
+        ]
+      },
+      "https://www.w3.org/TR/pointerlock-2/": {
         "anchors": [
           "dom-documentorshadowroot-pointerlockelement"
         ]
       },
       "https://www.w3.org/TR/uievents/": {
         "anchors": [
-          "dictdef-mouseeventinit",
-          "mouseevent",
-          "dom-uievent-detail",
-          "dom-mouseeventinit-relatedtarget"
+          "dom-uievent-detail"
         ]
       }
     }

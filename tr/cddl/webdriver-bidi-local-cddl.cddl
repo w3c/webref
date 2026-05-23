@@ -75,6 +75,7 @@ ErrorCode = "invalid argument" /
 "no such network data" /
 "no such node" /
 "no such request" /
+"no such screencast" /
 "no such script" /
 "no such storage partition" /
 "no such user context" /
@@ -257,6 +258,8 @@ BrowsingContextResult = (
   browsingContext.ReloadResult /
   browsingContext.SetBypassCSPResult /
   browsingContext.SetViewportResult /
+  browsingContext.StartScreencastResult /
+  browsingContext.StopScreencastResult /
   browsingContext.TraverseHistoryResult
 )
 
@@ -387,6 +390,18 @@ browsingContext.ReloadResult = browsingContext.NavigateResult
 browsingContext.SetBypassCSPResult = EmptyResult
 
 browsingContext.SetViewportResult = EmptyResult
+
+browsingContext.StartScreencastResult = {
+   screencast: browsingContext.Screencast,
+   path: text
+}
+
+browsingContext.Screencast = text
+
+browsingContext.StopScreencastResult = {
+   path: text,
+   ? error: text
+}
 
 browsingContext.TraverseHistoryResult = EmptyResult
 
@@ -1621,6 +1636,8 @@ BrowsingContextCommand = (
   browsingContext.Reload //
   browsingContext.SetBypassCSP //
   browsingContext.SetViewport //
+  browsingContext.StartScreencast //
+  browsingContext.StopScreencast //
   browsingContext.TraverseHistory
 )
 
@@ -1855,6 +1872,37 @@ browsingContext.SetViewportParameters = {
 browsingContext.Viewport = {
   width: js-uint,
   height: js-uint,
+}
+
+browsingContext.StartScreencast = (
+  method: "browsingContext.startScreencast",
+  params: browsingContext.StartScreencastParameters
+)
+
+browsingContext.StartScreencastParameters = {
+  context: browsingContext.BrowsingContext,
+  ? mimeType: text,
+  ? streamOptions: browsingContext.MediaStreamOptions,
+}
+
+browsingContext.MediaStreamOptions = {
+   ? video: browsingContext.MediaTrackConstraints,
+   ? audio: bool .default false,
+}
+
+browsingContext.MediaTrackConstraints = {
+   ? width: js-uint,
+   ? height: js-uint,
+   ? frameRate: js-uint,
+}
+
+browsingContext.StopScreencast = (
+  method: "browsingContext.stopScreencast",
+  params: browsingContext.StopScreencastParameters
+)
+
+browsingContext.StopScreencastParameters = {
+  screencast: browsingContext.Screencast
 }
 
 browsingContext.TraverseHistory = (
@@ -3106,6 +3154,7 @@ ErrorCode = "invalid argument" /
             "no such network data" /
             "no such node" /
             "no such request" /
+            "no such screencast" /
             "no such script" /
             "no such storage partition" /
             "no such user context" /
@@ -3288,6 +3337,8 @@ BrowsingContextResult = (
   browsingContext.ReloadResult /
   browsingContext.SetBypassCSPResult /
   browsingContext.SetViewportResult /
+  browsingContext.StartScreencastResult /
+  browsingContext.StopScreencastResult /
   browsingContext.TraverseHistoryResult
 )
 
@@ -3418,6 +3469,18 @@ browsingContext.ReloadResult = browsingContext.NavigateResult
 browsingContext.SetBypassCSPResult = EmptyResult
 
 browsingContext.SetViewportResult = EmptyResult
+
+browsingContext.StartScreencastResult = {
+   screencast: browsingContext.Screencast,
+   path: text
+}
+
+browsingContext.Screencast = text
+
+browsingContext.StopScreencastResult = {
+   path: text,
+   ? error: text
+}
 
 browsingContext.TraverseHistoryResult = EmptyResult
 
