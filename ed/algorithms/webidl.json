@@ -7186,7 +7186,10 @@
           "html": "Set <var>serialized</var>.[[Message]] to <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#domexception-message\" id=\"ref-for-domexception-message⑥\">message</a>."
         },
         {
-          "html": "User agents should attach a serialized representation of any interesting accompanying data\n    which are not yet specified, notably the <code>stack</code> property, to\n    <var>serialized</var>."
+          "html": "Set <var>serialized</var>.[[Stack]] to an implementation-defined string derived from <var>value</var>.[[Stack]]."
+        },
+        {
+          "html": "User agents should attach a serialized representation of any interesting accompanying data\n    which are not yet specified, notably the <code>line</code> and <code>column</code> properties, to\n    <var>serialized</var>."
         }
       ]
     },
@@ -7199,6 +7202,9 @@
         },
         {
           "html": "Set <var>value</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#domexception-message\" id=\"ref-for-domexception-message⑦\">message</a> to <var>serialized</var>.[[Message]]."
+        },
+        {
+          "html": "Set <var>value</var>.[[Stack]] to <var>serialized</var>.[[Stack]]."
         },
         {
           "html": "If any other data is attached to <var>serialized</var>, then deserialize and attach it to\n    <var>value</var>."
