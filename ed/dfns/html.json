@@ -7274,6 +7274,26 @@
       "links": []
     },
     {
+      "id": "concept-element-sanitization",
+      "href": "https://html.spec.whatwg.org/multipage/dom.html#concept-element-sanitization",
+      "linkingText": [
+        "Sanitization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "element-definitions",
+        "href": "https://html.spec.whatwg.org/multipage/dom.html#element-definitions",
+        "title": "Element definitions",
+        "number": "3.2.4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
       "id": "concept-element-dom",
       "href": "https://html.spec.whatwg.org/multipage/dom.html#concept-element-dom",
       "linkingText": [
@@ -102127,6 +102147,110 @@
       ]
     },
     {
+      "id": "sanitizerpresets",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerpresets",
+      "linkingText": [
+        "SanitizerPresets"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dom-parsing-and-serialization",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization",
+        "title": "DOM parsing and serialization APIs",
+        "number": "8.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "sethtmloptions",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmloptions",
+      "linkingText": [
+        "SetHTMLOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dom-parsing-and-serialization",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization",
+        "title": "DOM parsing and serialization APIs",
+        "number": "8.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sethtmloptions-sanitizer",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sethtmloptions-sanitizer",
+      "linkingText": [
+        "sanitizer"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SetHTMLOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dom-parsing-and-serialization",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization",
+        "title": "DOM parsing and serialization APIs",
+        "number": "8.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "sethtmlunsafeoptions",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmlunsafeoptions",
+      "linkingText": [
+        "SetHTMLUnsafeOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dom-parsing-and-serialization",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization",
+        "title": "DOM parsing and serialization APIs",
+        "number": "8.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sethtmlunsafeoptions-sanitizer",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sethtmlunsafeoptions-sanitizer",
+      "linkingText": [
+        "sanitizer"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SetHTMLUnsafeOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dom-parsing-and-serialization",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsing-and-serialization",
+        "title": "DOM parsing and serialization APIs",
+        "number": "8.5"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
       "id": "gethtmloptions",
       "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#gethtmloptions",
       "linkingText": [
@@ -102411,10 +102535,10 @@
       "links": []
     },
     {
-      "id": "dom-element-sethtmlunsafe",
-      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-sethtmlunsafe",
+      "id": "dom-element-sethtml",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-sethtml",
       "linkingText": [
-        "setHTMLUnsafe(html)"
+        "setHTML(html, options)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -102424,32 +102548,32 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "unsafe-html-parsing-methods",
-        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods",
-        "title": "Unsafe HTML parsing methods",
+        "id": "html-parsing-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-parsing-methods",
+        "title": "HTML parsing methods",
         "number": "8.5.2"
       },
       "definedIn": "prose",
       "links": [
         {
           "type": "dev",
-          "id": "dom-element-sethtmlunsafe-dev",
-          "name": "element.setHTMLUnsafe(html)",
-          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-sethtmlunsafe-dev",
+          "id": "dom-element-sethtml-dev",
+          "name": "element.setHTML(html, options)",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-sethtml-dev",
           "heading": {
-            "id": "unsafe-html-parsing-methods",
-            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods",
-            "title": "Unsafe HTML parsing methods",
+            "id": "html-parsing-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-parsing-methods",
+            "title": "HTML parsing methods",
             "number": "8.5.2"
           }
         }
       ]
     },
     {
-      "id": "dom-shadowroot-sethtmlunsafe",
-      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-sethtmlunsafe",
+      "id": "dom-shadowroot-sethtml",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-sethtml",
       "linkingText": [
-        "setHTMLUnsafe(html)"
+        "setHTML(html, options)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -102459,9 +102583,79 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "unsafe-html-parsing-methods",
-        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods",
-        "title": "Unsafe HTML parsing methods",
+        "id": "html-parsing-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-parsing-methods",
+        "title": "HTML parsing methods",
+        "number": "8.5.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-shadowroot-sethtml-dev",
+          "name": "shadowRoot.setHTML(html, options)",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-sethtml-dev",
+          "heading": {
+            "id": "html-parsing-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-parsing-methods",
+            "title": "HTML parsing methods",
+            "number": "8.5.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-element-sethtmlunsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-sethtmlunsafe",
+      "linkingText": [
+        "setHTMLUnsafe(html, options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-parsing-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-parsing-methods",
+        "title": "HTML parsing methods",
+        "number": "8.5.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "dom-element-sethtmlunsafe-dev",
+          "name": "element.setHTMLUnsafe(html, options)",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-sethtmlunsafe-dev",
+          "heading": {
+            "id": "html-parsing-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-parsing-methods",
+            "title": "HTML parsing methods",
+            "number": "8.5.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-shadowroot-sethtmlunsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-sethtmlunsafe",
+      "linkingText": [
+        "setHTMLUnsafe(html, options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ShadowRoot"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-parsing-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-parsing-methods",
+        "title": "HTML parsing methods",
         "number": "8.5.2"
       },
       "definedIn": "prose",
@@ -102469,42 +102663,22 @@
         {
           "type": "dev",
           "id": "dom-shadowroot-sethtmlunsafe-dev",
-          "name": "shadowRoot.setHTMLUnsafe(html)",
+          "name": "shadowRoot.setHTMLUnsafe(html, options)",
           "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-sethtmlunsafe-dev",
           "heading": {
-            "id": "unsafe-html-parsing-methods",
-            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods",
-            "title": "Unsafe HTML parsing methods",
+            "id": "html-parsing-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-parsing-methods",
+            "title": "HTML parsing methods",
             "number": "8.5.2"
           }
         }
       ]
     },
     {
-      "id": "unsafely-set-html",
-      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafely-set-html",
+      "id": "dom-parsehtml",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsehtml",
       "linkingText": [
-        "unsafely set HTML"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "unsafe-html-parsing-methods",
-        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods",
-        "title": "Unsafe HTML parsing methods",
-        "number": "8.5.2"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "dom-parsehtmlunsafe",
-      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsehtmlunsafe",
-      "linkingText": [
-        "parseHTMLUnsafe(html)"
+        "parseHTML(html, options)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -102514,22 +102688,57 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "unsafe-html-parsing-methods",
-        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods",
-        "title": "Unsafe HTML parsing methods",
+        "id": "html-parsing-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-parsing-methods",
+        "title": "HTML parsing methods",
         "number": "8.5.2"
       },
       "definedIn": "prose",
       "links": [
         {
           "type": "dev",
-          "id": "unsafe-html-parsing-methods:dom-parsehtmlunsafe",
-          "name": "doc = Document.parseHTMLUnsafe(html)",
-          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods%3Adom-parsehtmlunsafe",
+          "id": "dom-parsehtml-dev",
+          "name": "doc = Document.parseHTML(html, options)",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsehtml-dev",
           "heading": {
-            "id": "unsafe-html-parsing-methods",
-            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#unsafe-html-parsing-methods",
-            "title": "Unsafe HTML parsing methods",
+            "id": "html-parsing-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-parsing-methods",
+            "title": "HTML parsing methods",
+            "number": "8.5.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-parsehtmlunsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsehtmlunsafe",
+      "linkingText": [
+        "parseHTMLUnsafe(html, options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "html-parsing-methods",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-parsing-methods",
+        "title": "HTML parsing methods",
+        "number": "8.5.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "html-parsing-methods:dom-parsehtmlunsafe",
+          "name": "doc = Document.parseHTMLUnsafe(html, options)",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-parsing-methods%3Adom-parsehtmlunsafe",
+          "heading": {
+            "id": "html-parsing-methods",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#html-parsing-methods",
+            "title": "HTML parsing methods",
             "number": "8.5.2"
           }
         }
@@ -102945,6 +103154,1609 @@
       ]
     },
     {
+      "id": "sanitizer",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer",
+      "linkingText": [
+        "Sanitizer"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "configuration",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#configuration",
+      "linkingText": [
+        "configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizer-constructor",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-constructor",
+      "linkingText": [
+        "new Sanitizer(configuration)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "configure-a-sanitizer",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#configure-a-sanitizer",
+      "linkingText": [
+        "configure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "canonicalize-the-configuration",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-the-configuration",
+      "linkingText": [
+        "canonicalize the configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "canonicalize-a-sanitizer-list",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-a-sanitizer-list",
+      "linkingText": [
+        "canonicalize a sanitizer list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "canonicalize-a-processing-instruction-list",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-a-processing-instruction-list",
+      "linkingText": [
+        "canonicalize a processing instruction list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "canonicalize-a-processing-instruction",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-a-processing-instruction",
+      "linkingText": [
+        "canonicalize a processing instruction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "canonicalize-a-sanitizer-name",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-a-sanitizer-name",
+      "linkingText": [
+        "canonicalize a sanitizer name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "canonicalize-a-sanitizer-element",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-a-sanitizer-element",
+      "linkingText": [
+        "canonicalize a sanitizer element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "canonicalize-a-sanitizer-element-list",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-a-sanitizer-element-list",
+      "linkingText": [
+        "canonicalize a sanitizer element list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "sanitizer-canonicalized-intersection",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-canonicalized-intersection",
+      "linkingText": [
+        "canonicalized intersection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizer-get",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-get",
+      "linkingText": [
+        "get()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "the-sanitizer-interface:dom-sanitizer-get-2",
+          "name": "config = sanitizer.get()",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface%3Adom-sanitizer-get-2",
+          "heading": {
+            "id": "the-sanitizer-interface",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+            "title": "The Sanitizer interface",
+            "number": "8.6.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-sanitizer-allowelement",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-allowelement",
+      "linkingText": [
+        "allowElement(element)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "the-sanitizer-interface:dom-sanitizer-allowelement-2",
+          "name": "sanitizer.allowElement(element)",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface%3Adom-sanitizer-allowelement-2",
+          "heading": {
+            "id": "the-sanitizer-interface",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+            "title": "The Sanitizer interface",
+            "number": "8.6.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-sanitizer-removeelement",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-removeelement",
+      "linkingText": [
+        "removeElement(element)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "the-sanitizer-interface:dom-sanitizer-removeelement-2",
+          "name": "sanitizer.removeElement(element)",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface%3Adom-sanitizer-removeelement-2",
+          "heading": {
+            "id": "the-sanitizer-interface",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+            "title": "The Sanitizer interface",
+            "number": "8.6.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-sanitizer-replaceelementwithchildren",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-replaceelementwithchildren",
+      "linkingText": [
+        "replaceElementWithChildren(element)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "the-sanitizer-interface:dom-sanitizer-replaceelementwithchildren-2",
+          "name": "sanitizer.replaceElementWithChildren(element)",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface%3Adom-sanitizer-replaceelementwithchildren-2",
+          "heading": {
+            "id": "the-sanitizer-interface",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+            "title": "The Sanitizer interface",
+            "number": "8.6.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-sanitizer-allowattribute",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-allowattribute",
+      "linkingText": [
+        "allowAttribute(attribute)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "the-sanitizer-interface:dom-sanitizer-allowattribute-2",
+          "name": "sanitizer.allowAttribute(attribute)",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface%3Adom-sanitizer-allowattribute-2",
+          "heading": {
+            "id": "the-sanitizer-interface",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+            "title": "The Sanitizer interface",
+            "number": "8.6.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-sanitizer-removeattribute",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-removeattribute",
+      "linkingText": [
+        "removeAttribute(attribute)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "the-sanitizer-interface:dom-sanitizer-removeattribute-2",
+          "name": "sanitizer.removeAttribute(attribute)",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface%3Adom-sanitizer-removeattribute-2",
+          "heading": {
+            "id": "the-sanitizer-interface",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+            "title": "The Sanitizer interface",
+            "number": "8.6.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-sanitizer-setcomments",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-setcomments",
+      "linkingText": [
+        "setComments(allow)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "the-sanitizer-interface:dom-sanitizer-setcomments-2",
+          "name": "sanitizer.setComments(allow)",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface%3Adom-sanitizer-setcomments-2",
+          "heading": {
+            "id": "the-sanitizer-interface",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+            "title": "The Sanitizer interface",
+            "number": "8.6.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-sanitizer-setdataattributes",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-setdataattributes",
+      "linkingText": [
+        "setDataAttributes(allow)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "the-sanitizer-interface:dom-sanitizer-setdataattributes-2",
+          "name": "sanitizer.setDataAttributes(allow)",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface%3Adom-sanitizer-setdataattributes-2",
+          "heading": {
+            "id": "the-sanitizer-interface",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+            "title": "The Sanitizer interface",
+            "number": "8.6.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-sanitizer-allowprocessinginstruction",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-allowprocessinginstruction",
+      "linkingText": [
+        "allowProcessingInstruction(pi)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "the-sanitizer-interface:dom-sanitizer-allowprocessinginstruction-2",
+          "name": "sanitizer.allowProcessingInstruction(pi)",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface%3Adom-sanitizer-allowprocessinginstruction-2",
+          "heading": {
+            "id": "the-sanitizer-interface",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+            "title": "The Sanitizer interface",
+            "number": "8.6.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-sanitizer-removeprocessinginstruction",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-removeprocessinginstruction",
+      "linkingText": [
+        "removeProcessingInstruction(pi)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "the-sanitizer-interface:dom-sanitizer-removeprocessinginstruction-2",
+          "name": "sanitizer.removeProcessingInstruction(pi)",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface%3Adom-sanitizer-removeprocessinginstruction-2",
+          "heading": {
+            "id": "the-sanitizer-interface",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+            "title": "The Sanitizer interface",
+            "number": "8.6.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-sanitizer-removeunsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-removeunsafe",
+      "linkingText": [
+        "removeUnsafe()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Sanitizer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-sanitizer-interface",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+        "title": "The Sanitizer interface",
+        "number": "8.6.2"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "the-sanitizer-interface:dom-sanitizer-removeunsafe-2",
+          "name": "sanitizer.removeUnsafe()",
+          "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface%3Adom-sanitizer-removeunsafe-2",
+          "heading": {
+            "id": "the-sanitizer-interface",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#the-sanitizer-interface",
+            "title": "The Sanitizer interface",
+            "number": "8.6.2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sanitizerelementnamespace",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerelementnamespace",
+      "linkingText": [
+        "SanitizerElementNamespace"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerelementnamespace-name",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespace-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerElementNamespace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerelementnamespace-namespace",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespace-namespace",
+      "linkingText": [
+        "_namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerElementNamespace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "sanitizerelementnamespacewithattributes",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerelementnamespacewithattributes",
+      "linkingText": [
+        "SanitizerElementNamespaceWithAttributes"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerelementnamespacewithattributes-attributes",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-attributes",
+      "linkingText": [
+        "attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerElementNamespaceWithAttributes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerelementnamespacewithattributes-removeattributes",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-removeattributes",
+      "linkingText": [
+        "removeAttributes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerElementNamespaceWithAttributes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "sanitizerattributenamespace",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerattributenamespace",
+      "linkingText": [
+        "SanitizerAttributeNamespace"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerattributenamespace-name",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerattributenamespace-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerAttributeNamespace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerattributenamespace-namespace",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerattributenamespace-namespace",
+      "linkingText": [
+        "_namespace"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerAttributeNamespace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "sanitizerprocessinginstruction",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerprocessinginstruction",
+      "linkingText": [
+        "SanitizerProcessingInstruction"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerprocessinginstruction-target",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerprocessinginstruction-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerProcessingInstruction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "sanitizerelement",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerelement",
+      "linkingText": [
+        "SanitizerElement"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "sanitizerelementwithattributes",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerelementwithattributes",
+      "linkingText": [
+        "SanitizerElementWithAttributes"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "sanitizerpi",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerpi",
+      "linkingText": [
+        "SanitizerPI"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "sanitizerattribute",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerattribute",
+      "linkingText": [
+        "SanitizerAttribute"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "sanitizerconfig",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerconfig",
+      "linkingText": [
+        "SanitizerConfig"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerconfig-elements",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-elements",
+      "linkingText": [
+        "elements"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerconfig-removeelements",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-removeelements",
+      "linkingText": [
+        "removeElements"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerconfig-replacewithchildrenelements",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-replacewithchildrenelements",
+      "linkingText": [
+        "replaceWithChildrenElements"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerconfig-processinginstructions",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-processinginstructions",
+      "linkingText": [
+        "processingInstructions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerconfig-removeprocessinginstructions",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-removeprocessinginstructions",
+      "linkingText": [
+        "removeProcessingInstructions"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerconfig-attributes",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes",
+      "linkingText": [
+        "attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerconfig-removeattributes",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-removeattributes",
+      "linkingText": [
+        "removeAttributes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerconfig-comments",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-comments",
+      "linkingText": [
+        "comments"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerconfig-dataattributes",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-dataattributes",
+      "linkingText": [
+        "dataAttributes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-configuration",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-configuration",
+        "title": "Sanitizer configuration",
+        "number": "8.6.3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerpresets-default",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerpresets-default",
+      "linkingText": [
+        "default"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "SanitizerPresets"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "configuration-invariants",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#configuration-invariants",
+        "title": "Configuration invariants",
+        "number": "8.6.3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "set-and-filter-html",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#set-and-filter-html",
+      "linkingText": [
+        "set and filter HTML"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-algorithms",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-algorithms",
+        "title": "Sanitization algorithms",
+        "number": "8.6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "get-a-sanitizer-instance-from-options",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#get-a-sanitizer-instance-from-options",
+      "linkingText": [
+        "get a sanitizer instance from options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-algorithms",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-algorithms",
+        "title": "Sanitization algorithms",
+        "number": "8.6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "sanitize",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitize",
+      "linkingText": [
+        "sanitize"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-algorithms",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-algorithms",
+        "title": "Sanitization algorithms",
+        "number": "8.6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "inner-sanitize-steps",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#inner-sanitize-steps",
+      "linkingText": [
+        "inner sanitize steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-algorithms",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-algorithms",
+        "title": "Sanitization algorithms",
+        "number": "8.6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "contains-a-javascript:-url",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#contains-a-javascript%3A-url",
+      "linkingText": [
+        "contains a javascript: URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-algorithms",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-algorithms",
+        "title": "Sanitization algorithms",
+        "number": "8.6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "remove-an-element-from-sanitizer-config",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#remove-an-element-from-sanitizer-config",
+      "linkingText": [
+        "remove an element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-algorithms",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-algorithms",
+        "title": "Sanitization algorithms",
+        "number": "8.6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "remove-an-attribute-from-sanitizer-config",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#remove-an-attribute-from-sanitizer-config",
+      "linkingText": [
+        "remove an attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-algorithms",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-algorithms",
+        "title": "Sanitization algorithms",
+        "number": "8.6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "remove-unsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#remove-unsafe",
+      "linkingText": [
+        "remove unsafe"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-algorithms",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-algorithms",
+        "title": "Sanitization algorithms",
+        "number": "8.6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "compare-sanitizer-items",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#compare-sanitizer-items",
+      "linkingText": [
+        "compare sanitizer items"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-algorithms",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-algorithms",
+        "title": "Sanitization algorithms",
+        "number": "8.6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "canonicalize-a-sanitizer-element-with-attributes",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#canonicalize-a-sanitizer-element-with-attributes",
+      "linkingText": [
+        "canonicalize"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-algorithms",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-algorithms",
+        "title": "Sanitization algorithms",
+        "number": "8.6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-sanitizerconfig-valid",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-valid",
+      "linkingText": [
+        "valid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-algorithms",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-algorithms",
+        "title": "Sanitization algorithms",
+        "number": "8.6.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "sanitization-category",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-category",
+      "linkingText": [
+        "sanitization category"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-constants",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-constants",
+        "title": "Sanitization constants",
+        "number": "8.6.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "sanitizer-category-default",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-category-default",
+      "linkingText": [
+        "Default"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-constants",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-constants",
+        "title": "Sanitization constants",
+        "number": "8.6.5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "sanitizer-category-unsafe",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-category-unsafe",
+      "linkingText": [
+        "Unsafe"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-constants",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-constants",
+        "title": "Sanitization constants",
+        "number": "8.6.5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "sanitizer-uncategorized",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer-uncategorized",
+      "linkingText": [
+        "Uncategorized"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-constants",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-constants",
+        "title": "Sanitization constants",
+        "number": "8.6.5"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "built-in-safe-baseline-configuration",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#built-in-safe-baseline-configuration",
+      "linkingText": [
+        "built-in safe baseline configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-constants",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-constants",
+        "title": "Sanitization constants",
+        "number": "8.6.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "built-in-safe-default-configuration",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#built-in-safe-default-configuration",
+      "linkingText": [
+        "built-in safe default configuration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-constants",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-constants",
+        "title": "Sanitization constants",
+        "number": "8.6.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "built-in-navigating-url-attributes-list",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#built-in-navigating-url-attributes-list",
+      "linkingText": [
+        "built-in navigating URL attributes list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-constants",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-constants",
+        "title": "Sanitization constants",
+        "number": "8.6.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "navigating-url-attributes",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#navigating-url-attributes",
+      "linkingText": [
+        "navigating URL attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-constants",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-constants",
+        "title": "Sanitization constants",
+        "number": "8.6.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "built-in-animating-url-attributes-list",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#built-in-animating-url-attributes-list",
+      "linkingText": [
+        "built-in animating URL attributes list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-constants",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-constants",
+        "title": "Sanitization constants",
+        "number": "8.6.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "built-in-non-replaceable-elements-list",
+      "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#built-in-non-replaceable-elements-list",
+      "linkingText": [
+        "built-in non-replaceable elements list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitization-constants",
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitization-constants",
+        "title": "Sanitization constants",
+        "number": "8.6.5"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "map-of-settimeout-and-setinterval-ids",
       "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#map-of-settimeout-and-setinterval-ids",
       "linkingText": [
@@ -102961,7 +104773,7 @@
         "id": "timers",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
         "title": "Timers",
-        "number": "8.6"
+        "number": "8.7"
       },
       "definedIn": "prose",
       "links": []
@@ -102983,7 +104795,7 @@
         "id": "timers",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
         "title": "Timers",
-        "number": "8.6"
+        "number": "8.7"
       },
       "definedIn": "prose",
       "links": [
@@ -102996,7 +104808,7 @@
             "id": "timers",
             "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
             "title": "Timers",
-            "number": "8.6"
+            "number": "8.7"
           }
         },
         {
@@ -103008,7 +104820,7 @@
             "id": "timers",
             "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
             "title": "Timers",
-            "number": "8.6"
+            "number": "8.7"
           }
         }
       ]
@@ -103030,7 +104842,7 @@
         "id": "timers",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
         "title": "Timers",
-        "number": "8.6"
+        "number": "8.7"
       },
       "definedIn": "prose",
       "links": [
@@ -103043,7 +104855,7 @@
             "id": "timers",
             "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
             "title": "Timers",
-            "number": "8.6"
+            "number": "8.7"
           }
         },
         {
@@ -103055,7 +104867,7 @@
             "id": "timers",
             "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
             "title": "Timers",
-            "number": "8.6"
+            "number": "8.7"
           }
         }
       ]
@@ -103077,7 +104889,7 @@
         "id": "timers",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
         "title": "Timers",
-        "number": "8.6"
+        "number": "8.7"
       },
       "definedIn": "prose",
       "links": [
@@ -103090,7 +104902,7 @@
             "id": "timers",
             "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
             "title": "Timers",
-            "number": "8.6"
+            "number": "8.7"
           }
         }
       ]
@@ -103112,7 +104924,7 @@
         "id": "timers",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
         "title": "Timers",
-        "number": "8.6"
+        "number": "8.7"
       },
       "definedIn": "prose",
       "links": [
@@ -103125,7 +104937,7 @@
             "id": "timers",
             "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
             "title": "Timers",
-            "number": "8.6"
+            "number": "8.7"
           }
         }
       ]
@@ -103145,7 +104957,7 @@
         "id": "timers",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
         "title": "Timers",
-        "number": "8.6"
+        "number": "8.7"
       },
       "definedIn": "prose",
       "links": []
@@ -103165,7 +104977,7 @@
         "id": "timers",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
         "title": "Timers",
-        "number": "8.6"
+        "number": "8.7"
       },
       "definedIn": "prose",
       "links": []
@@ -103185,7 +104997,7 @@
         "id": "timers",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
         "title": "Timers",
-        "number": "8.6"
+        "number": "8.7"
       },
       "definedIn": "prose",
       "links": []
@@ -103207,7 +105019,7 @@
         "id": "timers",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
         "title": "Timers",
-        "number": "8.6"
+        "number": "8.7"
       },
       "definedIn": "prose",
       "links": []
@@ -103227,7 +105039,7 @@
         "id": "timers",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers",
         "title": "Timers",
-        "number": "8.6"
+        "number": "8.7"
       },
       "definedIn": "prose",
       "links": []
@@ -103249,7 +105061,7 @@
         "id": "microtask-queuing",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#microtask-queuing",
         "title": "Microtask queuing",
-        "number": "8.7"
+        "number": "8.8"
       },
       "definedIn": "prose",
       "links": [
@@ -103262,7 +105074,7 @@
             "id": "microtask-queuing",
             "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#microtask-queuing",
             "title": "Microtask queuing",
-            "number": "8.7"
+            "number": "8.8"
           }
         }
       ]
@@ -103284,7 +105096,7 @@
         "id": "simple-dialogs",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#simple-dialogs",
         "title": "Simple dialogs",
-        "number": "8.8.1"
+        "number": "8.9.1"
       },
       "definedIn": "prose",
       "links": []
@@ -103306,7 +105118,7 @@
         "id": "simple-dialogs",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#simple-dialogs",
         "title": "Simple dialogs",
-        "number": "8.8.1"
+        "number": "8.9.1"
       },
       "definedIn": "prose",
       "links": [
@@ -103319,7 +105131,7 @@
             "id": "simple-dialogs",
             "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#simple-dialogs",
             "title": "Simple dialogs",
-            "number": "8.8.1"
+            "number": "8.9.1"
           }
         }
       ]
@@ -103341,7 +105153,7 @@
         "id": "simple-dialogs",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#simple-dialogs",
         "title": "Simple dialogs",
-        "number": "8.8.1"
+        "number": "8.9.1"
       },
       "definedIn": "prose",
       "links": [
@@ -103354,7 +105166,7 @@
             "id": "simple-dialogs",
             "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#simple-dialogs",
             "title": "Simple dialogs",
-            "number": "8.8.1"
+            "number": "8.9.1"
           }
         }
       ]
@@ -103376,7 +105188,7 @@
         "id": "simple-dialogs",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#simple-dialogs",
         "title": "Simple dialogs",
-        "number": "8.8.1"
+        "number": "8.9.1"
       },
       "definedIn": "prose",
       "links": [
@@ -103389,7 +105201,7 @@
             "id": "simple-dialogs",
             "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#simple-dialogs",
             "title": "Simple dialogs",
-            "number": "8.8.1"
+            "number": "8.9.1"
           }
         }
       ]
@@ -103409,7 +105221,7 @@
         "id": "simple-dialogs",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#simple-dialogs",
         "title": "Simple dialogs",
-        "number": "8.8.1"
+        "number": "8.9.1"
       },
       "definedIn": "prose",
       "links": []
@@ -103429,7 +105241,7 @@
         "id": "simple-dialogs",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#simple-dialogs",
         "title": "Simple dialogs",
-        "number": "8.8.1"
+        "number": "8.9.1"
       },
       "definedIn": "prose",
       "links": []
@@ -103451,7 +105263,7 @@
         "id": "printing",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#printing",
         "title": "Printing",
-        "number": "8.8.2"
+        "number": "8.9.2"
       },
       "definedIn": "prose",
       "links": [
@@ -103464,7 +105276,7 @@
             "id": "printing",
             "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#printing",
             "title": "Printing",
-            "number": "8.8.2"
+            "number": "8.9.2"
           }
         }
       ]
@@ -103484,7 +105296,7 @@
         "id": "printing",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#printing",
         "title": "Printing",
-        "number": "8.8.2"
+        "number": "8.9.2"
       },
       "definedIn": "prose",
       "links": []
@@ -103504,7 +105316,7 @@
         "id": "printing",
         "href": "https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#printing",
         "title": "Printing",
-        "number": "8.8.2"
+        "number": "8.9.2"
       },
       "definedIn": "prose",
       "links": []
@@ -103524,7 +105336,7 @@
         "id": "the-navigator-object",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object",
         "title": "The Navigator object",
-        "number": "8.9.1"
+        "number": "8.10.1"
       },
       "definedIn": "pre",
       "links": []
@@ -103544,7 +105356,7 @@
         "id": "the-navigator-object",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object",
         "title": "The Navigator object",
-        "number": "8.9.1"
+        "number": "8.10.1"
       },
       "definedIn": "prose",
       "links": []
@@ -103566,7 +105378,7 @@
         "id": "the-navigator-object",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object",
         "title": "The Navigator object",
-        "number": "8.9.1"
+        "number": "8.10.1"
       },
       "definedIn": "prose",
       "links": [
@@ -103579,7 +105391,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         },
         {
@@ -103591,7 +105403,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         },
         {
@@ -103603,7 +105415,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         },
         {
@@ -103615,7 +105427,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         },
         {
@@ -103627,7 +105439,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         },
         {
@@ -103639,7 +105451,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         },
         {
@@ -103651,7 +105463,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         },
         {
@@ -103663,7 +105475,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         },
         {
@@ -103675,7 +105487,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         },
         {
@@ -103687,7 +105499,7 @@
             "id": "language-preferences",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences",
             "title": "Language preferences",
-            "number": "8.9.1.2"
+            "number": "8.10.1.2"
           }
         },
         {
@@ -103699,7 +105511,7 @@
             "id": "language-preferences",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences",
             "title": "Language preferences",
-            "number": "8.9.1.2"
+            "number": "8.10.1.2"
           }
         },
         {
@@ -103711,7 +105523,7 @@
             "id": "navigator.online",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigator.online",
             "title": "Browser state",
-            "number": "8.9.1.3"
+            "number": "8.10.1.3"
           }
         },
         {
@@ -103723,7 +105535,7 @@
             "id": "custom-handlers",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
             "title": "Custom scheme handlers: the registerProtocolHandler() method",
-            "number": "8.9.1.4"
+            "number": "8.10.1.4"
           }
         },
         {
@@ -103735,7 +105547,7 @@
             "id": "custom-handlers",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
             "title": "Custom scheme handlers: the registerProtocolHandler() method",
-            "number": "8.9.1.4"
+            "number": "8.10.1.4"
           }
         },
         {
@@ -103747,7 +105559,7 @@
             "id": "cookies",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#cookies",
             "title": "Cookies",
-            "number": "8.9.1.5"
+            "number": "8.10.1.5"
           }
         },
         {
@@ -103759,7 +105571,7 @@
             "id": "pdf-viewing-support",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
             "title": "PDF viewing support",
-            "number": "8.9.1.6"
+            "number": "8.10.1.6"
           }
         }
       ]
@@ -103781,7 +105593,7 @@
         "id": "the-navigator-object",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object",
         "title": "The Navigator object",
-        "number": "8.9.1"
+        "number": "8.10.1"
       },
       "definedIn": "prose",
       "links": []
@@ -103801,7 +105613,7 @@
         "id": "client-identification",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
         "title": "Client identification",
-        "number": "8.9.1.1"
+        "number": "8.10.1.1"
       },
       "definedIn": "pre",
       "links": []
@@ -103821,7 +105633,7 @@
         "id": "client-identification",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
         "title": "Client identification",
-        "number": "8.9.1.1"
+        "number": "8.10.1.1"
       },
       "definedIn": "prose",
       "links": []
@@ -103843,7 +105655,7 @@
         "id": "client-identification",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
         "title": "Client identification",
-        "number": "8.9.1.1"
+        "number": "8.10.1.1"
       },
       "definedIn": "prose",
       "links": [
@@ -103856,7 +105668,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         }
       ]
@@ -103878,7 +105690,7 @@
         "id": "client-identification",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
         "title": "Client identification",
-        "number": "8.9.1.1"
+        "number": "8.10.1.1"
       },
       "definedIn": "prose",
       "links": [
@@ -103891,7 +105703,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         }
       ]
@@ -103913,7 +105725,7 @@
         "id": "client-identification",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
         "title": "Client identification",
-        "number": "8.9.1.1"
+        "number": "8.10.1.1"
       },
       "definedIn": "prose",
       "links": [
@@ -103926,7 +105738,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         }
       ]
@@ -103948,7 +105760,7 @@
         "id": "client-identification",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
         "title": "Client identification",
-        "number": "8.9.1.1"
+        "number": "8.10.1.1"
       },
       "definedIn": "prose",
       "links": [
@@ -103961,7 +105773,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         }
       ]
@@ -103983,7 +105795,7 @@
         "id": "client-identification",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
         "title": "Client identification",
-        "number": "8.9.1.1"
+        "number": "8.10.1.1"
       },
       "definedIn": "prose",
       "links": [
@@ -103996,7 +105808,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         }
       ]
@@ -104018,7 +105830,7 @@
         "id": "client-identification",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
         "title": "Client identification",
-        "number": "8.9.1.1"
+        "number": "8.10.1.1"
       },
       "definedIn": "prose",
       "links": [
@@ -104031,7 +105843,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         }
       ]
@@ -104053,7 +105865,7 @@
         "id": "client-identification",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
         "title": "Client identification",
-        "number": "8.9.1.1"
+        "number": "8.10.1.1"
       },
       "definedIn": "prose",
       "links": [
@@ -104066,7 +105878,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         }
       ]
@@ -104088,7 +105900,7 @@
         "id": "client-identification",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
         "title": "Client identification",
-        "number": "8.9.1.1"
+        "number": "8.10.1.1"
       },
       "definedIn": "prose",
       "links": [
@@ -104101,7 +105913,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         }
       ]
@@ -104123,7 +105935,7 @@
         "id": "client-identification",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
         "title": "Client identification",
-        "number": "8.9.1.1"
+        "number": "8.10.1.1"
       },
       "definedIn": "prose",
       "links": [
@@ -104136,7 +105948,7 @@
             "id": "client-identification",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
             "title": "Client identification",
-            "number": "8.9.1.1"
+            "number": "8.10.1.1"
           }
         }
       ]
@@ -104158,7 +105970,7 @@
         "id": "client-identification",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
         "title": "Client identification",
-        "number": "8.9.1.1"
+        "number": "8.10.1.1"
       },
       "definedIn": "prose",
       "links": []
@@ -104180,7 +105992,7 @@
         "id": "client-identification",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#client-identification",
         "title": "Client identification",
-        "number": "8.9.1.1"
+        "number": "8.10.1.1"
       },
       "definedIn": "prose",
       "links": []
@@ -104200,7 +106012,7 @@
         "id": "language-preferences",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences",
         "title": "Language preferences",
-        "number": "8.9.1.2"
+        "number": "8.10.1.2"
       },
       "definedIn": "pre",
       "links": []
@@ -104222,7 +106034,7 @@
         "id": "language-preferences",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences",
         "title": "Language preferences",
-        "number": "8.9.1.2"
+        "number": "8.10.1.2"
       },
       "definedIn": "prose",
       "links": [
@@ -104235,7 +106047,7 @@
             "id": "language-preferences",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences",
             "title": "Language preferences",
-            "number": "8.9.1.2"
+            "number": "8.10.1.2"
           }
         }
       ]
@@ -104257,7 +106069,7 @@
         "id": "language-preferences",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences",
         "title": "Language preferences",
-        "number": "8.9.1.2"
+        "number": "8.10.1.2"
       },
       "definedIn": "prose",
       "links": [
@@ -104270,7 +106082,7 @@
             "id": "language-preferences",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences",
             "title": "Language preferences",
-            "number": "8.9.1.2"
+            "number": "8.10.1.2"
           }
         }
       ]
@@ -104290,7 +106102,7 @@
         "id": "language-preferences",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#language-preferences",
         "title": "Language preferences",
-        "number": "8.9.1.2"
+        "number": "8.10.1.2"
       },
       "definedIn": "prose",
       "links": []
@@ -104310,7 +106122,7 @@
         "id": "navigator.online",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigator.online",
         "title": "Browser state",
-        "number": "8.9.1.3"
+        "number": "8.10.1.3"
       },
       "definedIn": "pre",
       "links": []
@@ -104332,7 +106144,7 @@
         "id": "navigator.online",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigator.online",
         "title": "Browser state",
-        "number": "8.9.1.3"
+        "number": "8.10.1.3"
       },
       "definedIn": "prose",
       "links": [
@@ -104345,7 +106157,7 @@
             "id": "navigator.online",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigator.online",
             "title": "Browser state",
-            "number": "8.9.1.3"
+            "number": "8.10.1.3"
           }
         }
       ]
@@ -104365,7 +106177,7 @@
         "id": "custom-handlers",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
         "title": "Custom scheme handlers: the registerProtocolHandler() method",
-        "number": "8.9.1.4"
+        "number": "8.10.1.4"
       },
       "definedIn": "pre",
       "links": []
@@ -104387,7 +106199,7 @@
         "id": "custom-handlers",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
         "title": "Custom scheme handlers: the registerProtocolHandler() method",
-        "number": "8.9.1.4"
+        "number": "8.10.1.4"
       },
       "definedIn": "prose",
       "links": [
@@ -104400,7 +106212,7 @@
             "id": "custom-handlers",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
             "title": "Custom scheme handlers: the registerProtocolHandler() method",
-            "number": "8.9.1.4"
+            "number": "8.10.1.4"
           }
         }
       ]
@@ -104420,7 +106232,7 @@
         "id": "custom-handlers",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
         "title": "Custom scheme handlers: the registerProtocolHandler() method",
-        "number": "8.9.1.4"
+        "number": "8.10.1.4"
       },
       "definedIn": "prose",
       "links": []
@@ -104440,7 +106252,7 @@
         "id": "custom-handlers",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
         "title": "Custom scheme handlers: the registerProtocolHandler() method",
-        "number": "8.9.1.4"
+        "number": "8.10.1.4"
       },
       "definedIn": "prose",
       "links": []
@@ -104460,7 +106272,7 @@
         "id": "custom-handlers",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
         "title": "Custom scheme handlers: the registerProtocolHandler() method",
-        "number": "8.9.1.4"
+        "number": "8.10.1.4"
       },
       "definedIn": "dt",
       "links": []
@@ -104480,7 +106292,7 @@
         "id": "custom-handlers",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
         "title": "Custom scheme handlers: the registerProtocolHandler() method",
-        "number": "8.9.1.4"
+        "number": "8.10.1.4"
       },
       "definedIn": "dt",
       "links": []
@@ -104500,7 +106312,7 @@
         "id": "custom-handlers",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
         "title": "Custom scheme handlers: the registerProtocolHandler() method",
-        "number": "8.9.1.4"
+        "number": "8.10.1.4"
       },
       "definedIn": "prose",
       "links": []
@@ -104522,7 +106334,7 @@
         "id": "custom-handlers",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
         "title": "Custom scheme handlers: the registerProtocolHandler() method",
-        "number": "8.9.1.4"
+        "number": "8.10.1.4"
       },
       "definedIn": "prose",
       "links": [
@@ -104535,7 +106347,7 @@
             "id": "custom-handlers",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
             "title": "Custom scheme handlers: the registerProtocolHandler() method",
-            "number": "8.9.1.4"
+            "number": "8.10.1.4"
           }
         }
       ]
@@ -104555,7 +106367,7 @@
         "id": "custom-handlers",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
         "title": "Custom scheme handlers: the registerProtocolHandler() method",
-        "number": "8.9.1.4"
+        "number": "8.10.1.4"
       },
       "definedIn": "prose",
       "links": []
@@ -104575,7 +106387,7 @@
         "id": "custom-handlers",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#custom-handlers",
         "title": "Custom scheme handlers: the registerProtocolHandler() method",
-        "number": "8.9.1.4"
+        "number": "8.10.1.4"
       },
       "definedIn": "prose",
       "links": []
@@ -104595,7 +106407,7 @@
         "id": "user-agent-automation",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#user-agent-automation",
         "title": "User agent automation",
-        "number": "8.9.1.4.2"
+        "number": "8.10.1.4.2"
       },
       "definedIn": "heading",
       "links": []
@@ -104615,7 +106427,7 @@
         "id": "user-agent-automation",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#user-agent-automation",
         "title": "User agent automation",
-        "number": "8.9.1.4.2"
+        "number": "8.10.1.4.2"
       },
       "definedIn": "prose",
       "links": []
@@ -104635,7 +106447,7 @@
         "id": "user-agent-automation",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#user-agent-automation",
         "title": "User agent automation",
-        "number": "8.9.1.4.2"
+        "number": "8.10.1.4.2"
       },
       "definedIn": "prose",
       "links": []
@@ -104655,7 +106467,7 @@
         "id": "cookies",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#cookies",
         "title": "Cookies",
-        "number": "8.9.1.5"
+        "number": "8.10.1.5"
       },
       "definedIn": "pre",
       "links": []
@@ -104677,7 +106489,7 @@
         "id": "cookies",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#cookies",
         "title": "Cookies",
-        "number": "8.9.1.5"
+        "number": "8.10.1.5"
       },
       "definedIn": "prose",
       "links": [
@@ -104690,7 +106502,7 @@
             "id": "cookies",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#cookies",
             "title": "Cookies",
-            "number": "8.9.1.5"
+            "number": "8.10.1.5"
           }
         }
       ]
@@ -104710,7 +106522,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "pre",
       "links": []
@@ -104730,7 +106542,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "pre",
       "links": []
@@ -104750,7 +106562,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "pre",
       "links": []
@@ -104770,7 +106582,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "pre",
       "links": []
@@ -104790,7 +106602,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "pre",
       "links": []
@@ -104810,7 +106622,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -104830,7 +106642,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -104850,7 +106662,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -104870,7 +106682,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -104890,7 +106702,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -104910,7 +106722,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -104930,7 +106742,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -104952,7 +106764,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -104974,7 +106786,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -104996,7 +106808,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105018,7 +106830,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": [
@@ -105031,7 +106843,7 @@
             "id": "pdf-viewing-support",
             "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
             "title": "PDF viewing support",
-            "number": "8.9.1.6"
+            "number": "8.10.1.6"
           }
         }
       ]
@@ -105053,7 +106865,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105075,7 +106887,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105097,7 +106909,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105119,7 +106931,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105141,7 +106953,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105163,7 +106975,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105185,7 +106997,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105205,7 +107017,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105227,7 +107039,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105249,7 +107061,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105271,7 +107083,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105293,7 +107105,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105315,7 +107127,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105337,7 +107149,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105357,7 +107169,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105379,7 +107191,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105401,7 +107213,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105423,7 +107235,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105445,7 +107257,7 @@
         "id": "pdf-viewing-support",
         "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
         "title": "PDF viewing support",
-        "number": "8.9.1.6"
+        "number": "8.10.1.6"
       },
       "definedIn": "prose",
       "links": []
@@ -105465,7 +107277,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "pre",
       "links": []
@@ -105485,7 +107297,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "pre",
       "links": []
@@ -105505,7 +107317,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "pre",
       "links": []
@@ -105525,7 +107337,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "pre",
       "links": []
@@ -105545,7 +107357,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": []
@@ -105567,7 +107379,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": [
@@ -105580,7 +107392,7 @@
             "id": "the-imagedata-interface",
             "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
             "title": "The ImageData interface",
-            "number": "8.10.1"
+            "number": "8.11.1"
           }
         }
       ]
@@ -105602,7 +107414,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": [
@@ -105615,7 +107427,7 @@
             "id": "the-imagedata-interface",
             "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
             "title": "The ImageData interface",
-            "number": "8.10.1"
+            "number": "8.11.1"
           }
         }
       ]
@@ -105635,7 +107447,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": []
@@ -105655,7 +107467,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": []
@@ -105675,7 +107487,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": []
@@ -105697,7 +107509,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": [
@@ -105710,7 +107522,7 @@
             "id": "the-imagedata-interface",
             "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
             "title": "The ImageData interface",
-            "number": "8.10.1"
+            "number": "8.11.1"
           }
         }
       ]
@@ -105732,7 +107544,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": [
@@ -105745,7 +107557,7 @@
             "id": "the-imagedata-interface",
             "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
             "title": "The ImageData interface",
-            "number": "8.10.1"
+            "number": "8.11.1"
           }
         }
       ]
@@ -105767,7 +107579,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": [
@@ -105780,7 +107592,7 @@
             "id": "the-imagedata-interface",
             "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
             "title": "The ImageData interface",
-            "number": "8.10.1"
+            "number": "8.11.1"
           }
         }
       ]
@@ -105802,7 +107614,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": []
@@ -105824,7 +107636,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": []
@@ -105846,7 +107658,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": [
@@ -105859,7 +107671,7 @@
             "id": "the-imagedata-interface",
             "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
             "title": "The ImageData interface",
-            "number": "8.10.1"
+            "number": "8.11.1"
           }
         }
       ]
@@ -105881,7 +107693,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": []
@@ -105903,7 +107715,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": []
@@ -105925,7 +107737,7 @@
         "id": "the-imagedata-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface",
         "title": "The ImageData interface",
-        "number": "8.10.1"
+        "number": "8.11.1"
       },
       "definedIn": "prose",
       "links": []
@@ -105945,7 +107757,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "pre",
       "links": []
@@ -105965,7 +107777,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "pre",
       "links": []
@@ -105985,7 +107797,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "pre",
       "links": []
@@ -106005,7 +107817,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "pre",
       "links": []
@@ -106025,7 +107837,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "pre",
       "links": []
@@ -106045,7 +107857,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "pre",
       "links": []
@@ -106065,7 +107877,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "pre",
       "links": []
@@ -106085,7 +107897,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106105,7 +107917,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106125,7 +107937,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106147,7 +107959,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": [
@@ -106160,7 +107972,7 @@
             "id": "the-imagebitmap-interface",
             "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
             "title": "The ImageBitmap interface",
-            "number": "8.10.2"
+            "number": "8.11.2"
           }
         },
         {
@@ -106172,7 +107984,7 @@
             "id": "the-imagebitmap-interface",
             "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
             "title": "The ImageBitmap interface",
-            "number": "8.10.2"
+            "number": "8.11.2"
           }
         }
       ]
@@ -106194,7 +108006,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106216,7 +108028,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106236,7 +108048,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106258,7 +108070,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106280,7 +108092,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106302,7 +108114,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106324,7 +108136,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "note",
       "links": []
@@ -106344,7 +108156,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "note",
       "links": []
@@ -106366,7 +108178,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106388,7 +108200,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106410,7 +108222,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106432,7 +108244,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106454,7 +108266,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106476,7 +108288,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106498,7 +108310,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106520,7 +108332,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": [
@@ -106533,7 +108345,7 @@
             "id": "the-imagebitmap-interface",
             "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
             "title": "The ImageBitmap interface",
-            "number": "8.10.2"
+            "number": "8.11.2"
           }
         }
       ]
@@ -106555,7 +108367,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": [
@@ -106568,7 +108380,7 @@
             "id": "the-imagebitmap-interface",
             "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
             "title": "The ImageBitmap interface",
-            "number": "8.10.2"
+            "number": "8.11.2"
           }
         }
       ]
@@ -106590,7 +108402,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": [
@@ -106603,7 +108415,7 @@
             "id": "the-imagebitmap-interface",
             "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
             "title": "The ImageBitmap interface",
-            "number": "8.10.2"
+            "number": "8.11.2"
           }
         }
       ]
@@ -106625,7 +108437,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106647,7 +108459,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106669,7 +108481,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106691,7 +108503,7 @@
         "id": "the-imagebitmap-interface",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagebitmap-interface",
         "title": "The ImageBitmap interface",
-        "number": "8.10.2"
+        "number": "8.11.2"
       },
       "definedIn": "prose",
       "links": []
@@ -106711,7 +108523,7 @@
         "id": "animation-frames",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
         "title": "Animation frames",
-        "number": "8.11"
+        "number": "8.12"
       },
       "definedIn": "pre",
       "links": []
@@ -106731,7 +108543,7 @@
         "id": "animation-frames",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
         "title": "Animation frames",
-        "number": "8.11"
+        "number": "8.12"
       },
       "definedIn": "pre",
       "links": []
@@ -106751,7 +108563,7 @@
         "id": "animation-frames",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
         "title": "Animation frames",
-        "number": "8.11"
+        "number": "8.12"
       },
       "definedIn": "prose",
       "links": []
@@ -106771,7 +108583,7 @@
         "id": "animation-frames",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
         "title": "Animation frames",
-        "number": "8.11"
+        "number": "8.12"
       },
       "definedIn": "prose",
       "links": []
@@ -106791,7 +108603,7 @@
         "id": "animation-frames",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
         "title": "Animation frames",
-        "number": "8.11"
+        "number": "8.12"
       },
       "definedIn": "prose",
       "links": []
@@ -106811,7 +108623,7 @@
         "id": "animation-frames",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
         "title": "Animation frames",
-        "number": "8.11"
+        "number": "8.12"
       },
       "definedIn": "prose",
       "links": []
@@ -106833,7 +108645,7 @@
         "id": "animation-frames",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
         "title": "Animation frames",
-        "number": "8.11"
+        "number": "8.12"
       },
       "definedIn": "prose",
       "links": []
@@ -106855,7 +108667,7 @@
         "id": "animation-frames",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
         "title": "Animation frames",
-        "number": "8.11"
+        "number": "8.12"
       },
       "definedIn": "prose",
       "links": []
@@ -106875,7 +108687,7 @@
         "id": "animation-frames",
         "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animation-frames",
         "title": "Animation frames",
-        "number": "8.11"
+        "number": "8.12"
       },
       "definedIn": "prose",
       "links": []
@@ -118044,8 +119856,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "introduction-16",
-        "href": "https://html.spec.whatwg.org/multipage/rendering.html#introduction-16",
+        "id": "introduction-17",
+        "href": "https://html.spec.whatwg.org/multipage/rendering.html#introduction-17",
         "title": "Introduction",
         "number": "15.1"
       },
@@ -118064,8 +119876,8 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "introduction-16",
-        "href": "https://html.spec.whatwg.org/multipage/rendering.html#introduction-16",
+        "id": "introduction-17",
+        "href": "https://html.spec.whatwg.org/multipage/rendering.html#introduction-17",
         "title": "Introduction",
         "number": "15.1"
       },
@@ -118084,8 +119896,8 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "introduction-16",
-        "href": "https://html.spec.whatwg.org/multipage/rendering.html#introduction-16",
+        "id": "introduction-17",
+        "href": "https://html.spec.whatwg.org/multipage/rendering.html#introduction-17",
         "title": "Introduction",
         "number": "15.1"
       },
