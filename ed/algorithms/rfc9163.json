@@ -33,7 +33,7 @@
       "rationale": "prepare",
       "steps": [
         {
-          "html": "Prepare a JSON object <code>report object</code> with the single key\n   \"expect<wbr>-ct<wbr>-report\",<wbr> whose value is the result of generating a\n   violation <code>report object</code> as described in <a href=\"https://www.rfc-editor.org/info/rfc9163/#generating-a-violation-report\" data-is-hyperlink=\"\" class=\"xref\">Section 3.1</a>.<a href=\"https://www.rfc-editor.org/info/rfc9163/#section-3.2-4.1\" data-is-hyperlink=\"\" class=\"pilcrow\">¶</a>"
+          "html": "Prepare a JSON object <code>report object</code> with the single key\n   \"expect<wbr>-ct<wbr>-report\", whose value is the result of generating a\n   violation <code>report object</code> as described in <a href=\"https://www.rfc-editor.org/info/rfc9163/#generating-a-violation-report\" data-is-hyperlink=\"\" class=\"xref\">Section 3.1</a>.<a href=\"https://www.rfc-editor.org/info/rfc9163/#section-3.2-4.1\" data-is-hyperlink=\"\" class=\"pilcrow\">¶</a>"
         },
         {
           "html": "Let <code>report body</code> be the JSON stringification of <code>report object</code>.<a href=\"https://www.rfc-editor.org/info/rfc9163/#section-3.2-4.2\" data-is-hyperlink=\"\" class=\"pilcrow\">¶</a>"
@@ -42,7 +42,7 @@
           "html": "Let <code>report-uri</code> be the value of the <code>report-uri</code> directive in the Expect-CT\nheader field.<a href=\"https://www.rfc-editor.org/info/rfc9163/#section-3.2-4.3\" data-is-hyperlink=\"\" class=\"pilcrow\">¶</a>"
         },
         {
-          "html": "Send an HTTP POST request to <code>report-uri</code> with a\n          <code>Content-Type</code> header field of\n          <code>application<wbr>/expect<wbr>-ct<wbr>-report+json<wbr></code> and an entity body\n          consisting of <code>report body</code>.<a href=\"https://www.rfc-editor.org/info/rfc9163/#section-3.2-4.4\" data-is-hyperlink=\"\" class=\"pilcrow\">¶</a>"
+          "html": "Send an HTTP POST request to <code>report-uri</code> with a\n          <code>Content-Type</code> header field of\n          <code>application<wbr>/expect<wbr>-ct<wbr>-report+json</code> and an entity body\n          consisting of <code>report body</code>.<a href=\"https://www.rfc-editor.org/info/rfc9163/#section-3.2-4.4\" data-is-hyperlink=\"\" class=\"pilcrow\">¶</a>"
         }
       ]
     }
