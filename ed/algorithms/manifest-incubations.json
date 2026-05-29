@@ -5,23 +5,151 @@
   },
   "algorithms": [
     {
-      "html": "The following steps are added to the <a data-link-type=\"dfn\" data-link-for=\"application manifest\" data-xref-for=\"application manifest\" data-cite=\"appmanifest\" data-cite-path=\"\" data-cite-frag=\"dfn-processing-extension-point\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processing-extension-point\">processing extension-point</a> in <a data-cite=\"appmanifest#dfn-steps-for-determining-the-web-app-s-chosen-display-mode\" href=\"https://www.w3.org/TR/appmanifest/#dfn-steps-for-determining-the-web-app-s-chosen-display-mode\">\n        determining the web app's chosen display mode</a>:",
+      "html": "The following steps are added to the <a data-link-type=\"dfn\" data-link-for=\"application manifest\" data-xref-for=\"application manifest\" data-cite=\"appmanifest\" data-cite-path=\"\" data-cite-frag=\"dfn-processing-extension-point\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processing-extension-point\">processing extension-point</a> in <a data-cite=\"appmanifest#dfn-steps-for-determining-the-web-app-s-chosen-display-mode\" href=\"https://www.w3.org/TR/appmanifest/#dfn-steps-for-determining-the-web-app-s-chosen-display-mode\">\n          determining the web app's chosen display mode</a>, which now also\n          takes an optional <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var>document URL</var>:",
       "rationale": "for",
       "steps": [
         {
-          "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-iterate\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"DisplayModeType\">candidate_display_mode</var> of\n        <var data-type=\"ordered map\">manifest</var>.<a data-link-type=\"dfn|abstract-op\" data-link-for=\"manifest\" data-xref-for=\"manifest\" href=\"https://wicg.github.io/manifest-incubations/#dfn-display_override\" class=\"internalDFN\" id=\"ref-for-dfn-display_override-3\"><code>display_override</code></a> member:",
+          "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-iterate\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var data-type=\"display override entry\">entry</var> of <var data-type=\"ordered map\">manifest</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"manifest\" data-xref-for=\"manifest\" href=\"https://wicg.github.io/manifest-incubations/#dfn-display_override\" class=\"internalDFN\" id=\"ref-for-dfn-display_override-3\"><code>display_override</code></a> member:",
           "rationale": ".algorithm",
           "steps": [
             {
-              "html": "If <a data-cite=\"appmanifest/#dfn-display-modes-list\" href=\"https://www.w3.org/TR/appmanifest/#dfn-display-modes-list\">display\n            modes list</a> contains <var data-type=\"DisplayModeType\">candidate_display_mode</var>,\n            return that <var data-type=\"DisplayModeType\">candidate_display_mode</var>"
+              "html": "Let <var>candidate display mode</var> be null."
             },
             {
-              "html": "If <var data-type=\"DisplayModeType\">candidate_display_mode</var> is <a data-link-type=\"dfn\" data-link-for=\"display mode\" data-xref-for=\"display mode\" data-cite=\"window-controls-overlay\" data-cite-path=\"\" data-cite-frag=\"dfn-window-controls-overlay-0\" href=\"https://wicg.github.io/window-controls-overlay/#dfn-window-controls-overlay-0\">window-controls-overlay</a> and the user agent supports this,\n            then return that <var data-type=\"DisplayModeType\">candidate_display_mode</var>."
+              "html": "If <var data-type=\"display override entry\">entry</var> is a <a data-link-type=\"dfn\" data-cite=\"appmanifest\" data-cite-path=\"\" data-cite-frag=\"dfn-display-mode\" href=\"https://www.w3.org/TR/appmanifest/#dfn-display-mode\">display mode</a>:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "Set <var>candidate display mode</var> to <var data-type=\"display override entry\">entry</var>."
+                }
+              ]
             },
             {
-              "html": "If <var data-type=\"DisplayModeType\">candidate_display_mode</var> is <a data-link-type=\"dfn|abstract-op\" data-link-for=\"display mode\" data-xref-for=\"display mode\" href=\"https://wicg.github.io/manifest-incubations/#dfn-tabbed\" class=\"internalDFN\" id=\"ref-for-dfn-tabbed-1\">tabbed</a> and the user agent supports this, then return that\n            <var data-type=\"DisplayModeType\">candidate_display_mode</var>."
+              "html": "Else if <var data-type=\"display override entry\">entry</var> is a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-displayoverrideentryobject\" class=\"internalDFN\" id=\"ref-for-dfn-displayoverrideentryobject-2\">DisplayOverrideEntryObject</a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var data-type=\"display override entry\">entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"DisplayOverrideEntryObject\" data-xref-for=\"DisplayOverrideEntryObject\" href=\"https://wicg.github.io/manifest-incubations/#dfn-url_patterns\" class=\"internalDFN\" id=\"ref-for-dfn-url_patterns-1\">url_patterns</a> <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-is-empty\" href=\"https://infra.spec.whatwg.org/#list-is-empty\">is empty</a>:",
+                  "rationale": "set",
+                  "steps": [
+                    {
+                      "html": "Set <var>candidate display mode</var> to <var data-type=\"display override entry\">entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"DisplayOverrideEntryObject\" data-xref-for=\"DisplayOverrideEntryObject\" href=\"https://wicg.github.io/manifest-incubations/#dfn-display\" class=\"internalDFN\" id=\"ref-for-dfn-display-1\">display</a>."
+                    }
+                  ]
+                },
+                {
+                  "html": "Else if <var>document URL</var> is not null:",
+                  "rationale": "for",
+                  "steps": [
+                    {
+                      "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-iterate\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var>pattern</var> of <var data-type=\"display override entry\">entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"DisplayOverrideEntryObject\" data-xref-for=\"DisplayOverrideEntryObject\" href=\"https://wicg.github.io/manifest-incubations/#dfn-url_patterns\" class=\"internalDFN\" id=\"ref-for-dfn-url_patterns-2\">url_patterns</a>:",
+                      "rationale": "if",
+                      "steps": [
+                        {
+                          "html": "If <var>pattern</var> <a data-link-type=\"dfn\" data-link-for=\"URL pattern\" data-xref-for=\"URL pattern\" data-cite=\"urlpattern\" data-cite-path=\"\" data-cite-frag=\"url-pattern-match\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\">matches</a> <var>document URL</var>, set <var>candidate display mode</var> to <var data-type=\"display override entry\">entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"DisplayOverrideEntryObject\" data-xref-for=\"DisplayOverrideEntryObject\" href=\"https://wicg.github.io/manifest-incubations/#dfn-display\" class=\"internalDFN\" id=\"ref-for-dfn-display-2\">display</a> and <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-break\" href=\"https://infra.spec.whatwg.org/#iteration-break\">break</a>."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "html": "If <var>candidate display mode</var> is null, <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+            },
+            {
+              "html": "If <a data-cite=\"appmanifest/#dfn-display-modes-list\" href=\"https://www.w3.org/TR/appmanifest/#dfn-display-modes-list\">display modes list</a> contains <var>candidate display mode</var>, return that <var>candidate display mode</var>."
+            },
+            {
+              "html": "If <var>candidate display mode</var> is <a data-link-type=\"dfn\" data-link-for=\"display mode\" data-xref-for=\"display mode\" data-cite=\"window-controls-overlay\" data-cite-path=\"\" data-cite-frag=\"dfn-window-controls-overlay-0\" href=\"https://wicg.github.io/window-controls-overlay/#dfn-window-controls-overlay-0\">window-controls-overlay</a> and the <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"user-agent\" href=\"https://infra.spec.whatwg.org/#user-agent\">user agent</a> supports this, then return that <var>candidate display mode</var>."
+            },
+            {
+              "html": "If <var>candidate display mode</var> is <a data-link-type=\"dfn|abstract-op\" data-link-for=\"display mode\" data-xref-for=\"display mode\" href=\"https://wicg.github.io/manifest-incubations/#dfn-tabbed\" class=\"internalDFN\" id=\"ref-for-dfn-tabbed-2\">tabbed</a> and the <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"user-agent\" href=\"https://infra.spec.whatwg.org/#user-agent\">user agent</a> supports this, then return that <var>candidate display mode</var>."
+            },
+            {
+              "html": "If <var>candidate display mode</var> is <a data-link-type=\"dfn|abstract-op\" data-link-for=\"display mode\" data-xref-for=\"display mode\" href=\"https://wicg.github.io/manifest-incubations/#dfn-unframed\" class=\"internalDFN\" id=\"ref-for-dfn-unframed-2\"><code>unframed</code></a>, the <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"user-agent\" href=\"https://infra.spec.whatwg.org/#user-agent\">user agent</a> supports this, and the application is an Isolated Web Application [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://wicg.github.io/manifest-incubations/#bib-isolated-web-apps\" title=\"Isolated Web Applications\">isolated-web-apps</a></cite>], then return that <var>candidate display mode</var>."
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "process the display_override member",
+      "href": "https://wicg.github.io/manifest-incubations/#dfn-process-the-display_override-member",
+      "html": "To <dfn id=\"dfn-process-the-display_override-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>display_override</code> member</dfn>, given <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>\n          <var data-type=\"ordered map\">json</var>, <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>, and <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a>\n          <var data-type=\"URL\">manifest URL</var>, run the following:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"display_override\"] to a new <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[\"display_override\"] does not <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a>, return."
+        },
+        {
+          "html": "If <var data-type=\"ordered map\">json</var>[\"display_override\"] is not a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" href=\"https://infra.spec.whatwg.org/#list\">list</a>, return."
+        },
+        {
+          "html": "Let <var data-type=\"list\">processed display override</var> be a new <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" href=\"https://infra.spec.whatwg.org/#list\">list</a>."
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-iterate\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var>entry</var> of <var data-type=\"ordered map\">json</var>[\"display_override\"]:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <var>entry</var> is a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If the <a data-cite=\"appmanifest#dfn-display-modes-list\" href=\"https://www.w3.org/TR/appmanifest/#dfn-display-modes-list\">display modes list</a> (including <a data-link-type=\"dfn|abstract-op\" data-lt=\"display mode extensions\" href=\"https://wicg.github.io/manifest-incubations/#dfn-display-mode-extensions\" class=\"internalDFN\" id=\"ref-for-dfn-display-mode-extensions-3\">extensions</a>) contains <var>entry</var>, <a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-append\" href=\"https://infra.spec.whatwg.org/#list-append\">append</a> <var>entry</var> to <var data-type=\"list\">processed display override</var>."
+                }
+              ]
+            },
+            {
+              "html": "Else if <var>entry</var> is an <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "If <var>entry</var>[\"display\"] does not <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or is not a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+                },
+                {
+                  "html": "If the <a data-cite=\"appmanifest#dfn-display-modes-list\" href=\"https://www.w3.org/TR/appmanifest/#dfn-display-modes-list\">display modes list</a> (including <a data-link-type=\"dfn|abstract-op\" data-lt=\"display mode extensions\" href=\"https://wicg.github.io/manifest-incubations/#dfn-display-mode-extensions\" class=\"internalDFN\" id=\"ref-for-dfn-display-mode-extensions-4\">extensions</a>) does not contain <var>entry</var>[\"display\"], <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+                },
+                {
+                  "html": "If the <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"user-agent\" href=\"https://infra.spec.whatwg.org/#user-agent\">user agent</a> does not support URL patterns for <var>entry</var>[\"display\"], <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+                },
+                {
+                  "html": "Let <var>override object</var> be a new <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-displayoverrideentryobject\" class=\"internalDFN\" id=\"ref-for-dfn-displayoverrideentryobject-3\">DisplayOverrideEntryObject</a> with its <a data-link-type=\"dfn|abstract-op\" data-link-for=\"DisplayOverrideEntryObject\" data-xref-for=\"DisplayOverrideEntryObject\" href=\"https://wicg.github.io/manifest-incubations/#dfn-display\" class=\"internalDFN\" id=\"ref-for-dfn-display-3\">display</a> set to <var>entry</var>[\"display\"]."
+                },
+                {
+                  "html": "If <var>entry</var>[\"url_patterns\"] <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a>:",
+                  "rationale": "if",
+                  "steps": [
+                    {
+                      "html": "If <var>entry</var>[\"url_patterns\"] is not a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list\" href=\"https://infra.spec.whatwg.org/#list\">list</a>, <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+                    },
+                    {
+                      "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-iterate\" href=\"https://infra.spec.whatwg.org/#list-iterate\">For each</a> <var>pattern entry</var> of <var>entry</var>[\"url_patterns\"]:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "Let <var data-type=\"URL pattern\">pattern</var> be the result of <a data-link-type=\"dfn\" data-cite=\"urlpattern\" data-cite-path=\"\" data-cite-frag=\"build-a-url-pattern-from-an-infra-value\" href=\"https://urlpattern.spec.whatwg.org/#build-a-url-pattern-from-an-infra-value\">build a URL pattern from an infra value</a> given <var>pattern entry</var> and <var data-type=\"URL\">manifest URL</var>.\n                            If this process throws or returns null, <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+                        },
+                        {
+                          "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-append\" href=\"https://infra.spec.whatwg.org/#list-append\">append</a> <var data-type=\"URL pattern\">pattern</var> to <var>override object</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"DisplayOverrideEntryObject\" data-xref-for=\"DisplayOverrideEntryObject\" href=\"https://wicg.github.io/manifest-incubations/#dfn-url_patterns\" class=\"internalDFN\" id=\"ref-for-dfn-url_patterns-3\">url_patterns</a>."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "html": "<a data-link-type=\"dfn\" data-link-for=\"list\" data-xref-for=\"list\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"list-append\" href=\"https://infra.spec.whatwg.org/#list-append\">append</a> <var>override object</var> to <var data-type=\"list\">processed display override</var>."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Set <var data-type=\"ordered map\">manifest</var>[\"display_override\"] to <var data-type=\"list\">processed display override</var>."
         }
       ]
     },
@@ -29,6 +157,9 @@
       "html": "To facilitate all of the new extension and incubation features added by\n        this specification, the user agent <em class=\"rfc2119\">SHOULD</em> run the following during the\n        <a data-cite=\"appmanifest#dfn-processing-extension-point-of-web-manifest\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processing-extension-point-of-web-manifest\">extension\n        point</a> in <a data-link-type=\"dfn\" data-cite=\"appmanifest\" data-cite-path=\"\" data-cite-frag=\"dfn-processing-a-manifest\" href=\"https://www.w3.org/TR/appmanifest/#dfn-processing-a-manifest\">processing a manifest</a> (having access to <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a>\n        <var data-type=\"URL\">document URL</var>, <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">manifest URL</var>, <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>\n        <var data-type=\"ordered map\">json</var>, and <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a> <var data-type=\"ordered map\">manifest</var>):",
       "rationale": "process",
       "steps": [
+        {
+          "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-process-the-display_override-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-display_override-member-1\">Process the <code>display_override</code> member</a>, passing <var data-type=\"ordered map\">json</var>, <var data-type=\"ordered map\">manifest</var> and\n        <var data-type=\"URL\">manifest URL</var>."
+        },
         {
           "html": "<a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-process-the-tab_strip-member\" class=\"internalDFN\" id=\"ref-for-dfn-process-the-tab_strip-member-1\">Process the <code>tab_strip</code> member</a>, passing <var data-type=\"ordered map\">json</var>, <var data-type=\"ordered map\">manifest</var> and\n        <var data-type=\"URL\">manifest URL</var>."
         },
@@ -66,7 +197,7 @@
           "html": "Instead of <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/nav-history-apis.html\" data-cite-frag=\"blocking-navigating\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#blocking-navigating\">navigating</a> the home-tab traversable,\n            <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/browsing-the-web.html\" data-cite-frag=\"navigate\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\">navigate</a> <var data-type=\"toplevel traversable\">tab</var> with the same parameters."
         },
         {
-          "html": "<a data-link-type=\"dfn|abstract-op\" data-lt=\"applied\" class=\"respec-offending-element\" title=\"No matching definition found.\" id=\"respec-offender-no-matching-definition-found\">Apply</a> the current <a data-link-type=\"dfn\" data-cite=\"appmanifest\" data-cite-path=\"\" data-cite-frag=\"dfn-manifest\" href=\"https://www.w3.org/TR/appmanifest/#dfn-manifest\">application manifest</a> to\n            <var data-type=\"toplevel traversable\">tab</var>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-browsing-context\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\">top-level browsing context</a>."
+          "html": "Apply the current <a data-link-type=\"dfn\" data-cite=\"appmanifest\" data-cite-path=\"\" data-cite-frag=\"dfn-manifest\" href=\"https://www.w3.org/TR/appmanifest/#dfn-manifest\">application manifest</a> to\n            <var data-type=\"toplevel traversable\">tab</var>'s <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-browsing-context\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-browsing-context\">top-level browsing context</a>."
         },
         {
           "html": "The user agent <em class=\"rfc2119\">SHOULD</em> place <var data-type=\"toplevel traversable\">tab</var> in the same window as the\n            home-tab navigable."
@@ -77,7 +208,7 @@
       ]
     },
     {
-      "html": "When <a data-link-type=\"dfn\" data-lt=\"navigate\" data-cite=\"html\" data-cite-path=\"/browsing-the-web.html\" data-cite-frag=\"navigate\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\">navigating</a> a <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-traversable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\">top-level traversable</a> with a\n            <a data-link-type=\"dfn\" data-cite=\"appmanifest\" data-cite-path=\"\" data-cite-frag=\"dfn-display-mode\" href=\"https://www.w3.org/TR/appmanifest/#dfn-display-mode\">display mode</a> of <a data-link-type=\"dfn|abstract-op\" data-link-for=\"display mode\" data-xref-for=\"display mode\" href=\"https://wicg.github.io/manifest-incubations/#dfn-tabbed\" class=\"internalDFN\" id=\"ref-for-dfn-tabbed-4\">tabbed</a> that is not associated\n            with a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-home-tab-context\" class=\"internalDFN\" id=\"ref-for-dfn-home-tab-context-9\">home tab context</a> (i.e. a non-home tab) to a <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a>\n            <var data-type=\"URL\">url</var> that is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-within-home-tab-scope\" class=\"internalDFN\" id=\"ref-for-dfn-within-home-tab-scope-6\">within home tab scope</a>, the following steps\n            are run:",
+      "html": "When <a data-link-type=\"dfn\" data-lt=\"navigate\" data-cite=\"html\" data-cite-path=\"/browsing-the-web.html\" data-cite-frag=\"navigate\" href=\"https://html.spec.whatwg.org/multipage/browsing-the-web.html#navigate\">navigating</a> a <a data-link-type=\"dfn\" data-cite=\"html\" data-cite-path=\"/document-sequences.html\" data-cite-frag=\"top-level-traversable\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#top-level-traversable\">top-level traversable</a> with a\n            <a data-link-type=\"dfn\" data-cite=\"appmanifest\" data-cite-path=\"\" data-cite-frag=\"dfn-display-mode\" href=\"https://www.w3.org/TR/appmanifest/#dfn-display-mode\">display mode</a> of <a data-link-type=\"dfn|abstract-op\" data-link-for=\"display mode\" data-xref-for=\"display mode\" href=\"https://wicg.github.io/manifest-incubations/#dfn-tabbed\" class=\"internalDFN\" id=\"ref-for-dfn-tabbed-5\">tabbed</a> that is not associated\n            with a <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-home-tab-context\" class=\"internalDFN\" id=\"ref-for-dfn-home-tab-context-9\">home tab context</a> (i.e. a non-home tab) to a <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a>\n            <var data-type=\"URL\">url</var> that is <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-within-home-tab-scope\" class=\"internalDFN\" id=\"ref-for-dfn-within-home-tab-scope-6\">within home tab scope</a>, the following steps\n            are run:",
       "rationale": "let",
       "steps": [
         {
@@ -198,7 +329,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var data-type=\"URL pattern\">pattern</var> be the result of <a data-link-type=\"dfn\" data-lt=\"build a URL pattern from an infra value\" data-cite=\"urlpattern\" data-cite-path=\"\" data-cite-frag=\"build-a-url-pattern-from-an-infra-value\" href=\"https://urlpattern.spec.whatwg.org/#build-a-url-pattern-from-an-infra-value\">building a URL pattern from an infra value</a> <var data-type=\"URLPatternInit\">entry</var> given <var data-type=\"URL\">manifest URL</var>. If this process\n                throws or returns null, continue."
+              "html": "Let <var data-type=\"URL pattern\">pattern</var> be the result of <a data-link-type=\"dfn\" data-cite=\"urlpattern\" data-cite-path=\"\" data-cite-frag=\"build-a-url-pattern-from-an-infra-value\" href=\"https://urlpattern.spec.whatwg.org/#build-a-url-pattern-from-an-infra-value\">build a URL pattern from an infra value</a> given <var data-type=\"URLPatternInit\">entry</var> and <var data-type=\"URL\">manifest URL</var>.\n                If this process throws or returns null, continue."
             },
             {
               "html": "Append <var data-type=\"URL pattern\">pattern</var> to <var data-type=\"list\">processed scope patterns</var>."
@@ -744,7 +875,7 @@
                   "html": "If <var data-type=\"URL\">id</var> is failure, <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
                 },
                 {
-                  "html": "Set <var data-type=\"ordered map\">processed_entry</var>[\"id\"] to <var data-type=\"URL\">id</var>."
+                  "html": "Set <var data-type=\"ordered map\">processed_entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_from_item\" data-xref-for=\"migrate_from_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-id\" class=\"internalDFN\" id=\"ref-for-dfn-id-1\"><code>id</code></a> to <var data-type=\"URL\">id</var>."
                 }
               ]
             },
@@ -753,35 +884,35 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If <var>entry</var>[\"id\"] does not <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or is not a\n                  <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
+                  "html": "If <var>entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_from_item\" data-xref-for=\"migrate_from_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-id\" class=\"internalDFN\" id=\"ref-for-dfn-id-2\"><code>id</code></a> does not <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or is not a\n                  <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>, <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
                 },
                 {
-                  "html": "Let <var data-type=\"URL\">id</var> be the result of <a data-link-type=\"dfn\" data-lt=\"URL Parser\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a>\n                  <var>entry</var>[\"id\"] with <var data-type=\"URL\">manifest URL</var> as the base URL."
+                  "html": "Let <var data-type=\"URL\">id</var> be the result of <a data-link-type=\"dfn\" data-lt=\"URL Parser\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a>\n                  <var>entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_from_item\" data-xref-for=\"migrate_from_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-id\" class=\"internalDFN\" id=\"ref-for-dfn-id-3\"><code>id</code></a> with <var data-type=\"URL\">manifest URL</var> as the base URL."
                 },
                 {
                   "html": "If <var data-type=\"URL\">id</var> is failure, <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
                 },
                 {
-                  "html": "Set <var data-type=\"ordered map\">processed_entry</var>[\"id\"] to <var data-type=\"URL\">id</var>."
+                  "html": "Set <var data-type=\"ordered map\">processed_entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_from_item\" data-xref-for=\"migrate_from_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-id\" class=\"internalDFN\" id=\"ref-for-dfn-id-4\"><code>id</code></a> to <var data-type=\"URL\">id</var>."
                 },
                 {
-                  "html": "If <var>entry</var>[\"install_url\"] <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a\n                  <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>:",
+                  "html": "If <var>entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_from_item\" data-xref-for=\"migrate_from_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-install_url\" class=\"internalDFN\" id=\"ref-for-dfn-install_url-1\"><code>install_url</code></a> <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a\n                  <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>:",
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "Let <var data-type=\"URL\">install_url</var> be the result of <a data-link-type=\"dfn\" data-lt=\"URL Parser\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a> <var>entry</var>[\"install_url\"] with <var>manifest\n                      URL</var> as the base URL."
+                      "html": "Let <var data-type=\"URL\">install_url</var> be the result of <a data-link-type=\"dfn\" data-lt=\"URL Parser\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a> <var>entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_from_item\" data-xref-for=\"migrate_from_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-install_url\" class=\"internalDFN\" id=\"ref-for-dfn-install_url-2\"><code>install_url</code></a> with <var>manifest\n                      URL</var> as the base URL."
                     },
                     {
-                      "html": "If <var data-type=\"URL\">install_url</var> is not failure, set\n                      <var data-type=\"ordered map\">processed_entry</var>[\"install_url\"] to <var data-type=\"URL\">install_url</var>."
+                      "html": "If <var data-type=\"URL\">install_url</var> is not failure, set\n                      <var data-type=\"ordered map\">processed_entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_from_item\" data-xref-for=\"migrate_from_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-install_url\" class=\"internalDFN\" id=\"ref-for-dfn-install_url-3\"><code>install_url</code></a> to <var data-type=\"URL\">install_url</var>."
                     }
                   ]
                 },
                 {
-                  "html": "If <var>entry</var>[\"behavior\"] <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a\n                  <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>:",
+                  "html": "If <var>entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_from_item\" data-xref-for=\"migrate_from_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-behavior\" class=\"internalDFN\" id=\"ref-for-dfn-behavior-1\"><code>behavior</code></a> <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a\n                  <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>:",
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "If <var>entry</var>[\"behavior\"] is \"suggest\" or \"force\", set\n                      <var data-type=\"ordered map\">processed_entry</var>[\"behavior\"] to <var>entry</var>[\"behavior\"]."
+                      "html": "If <var>entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_from_item\" data-xref-for=\"migrate_from_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-behavior\" class=\"internalDFN\" id=\"ref-for-dfn-behavior-2\"><code>behavior</code></a> is \"suggest\" or \"force\", set\n                      <var data-type=\"ordered map\">processed_entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_from_item\" data-xref-for=\"migrate_from_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-behavior\" class=\"internalDFN\" id=\"ref-for-dfn-behavior-3\"><code>behavior</code></a> to <var>entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_from_item\" data-xref-for=\"migrate_from_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-behavior\" class=\"internalDFN\" id=\"ref-for-dfn-behavior-4\"><code>behavior</code></a>."
                     }
                   ]
                 }
@@ -791,7 +922,7 @@
               "html": "Else, <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
             },
             {
-              "html": "Validate <var data-type=\"ordered map\">processed_entry</var>[\"id\"] using the algorithm from\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-validate-origin-migration\" class=\"internalDFN\" id=\"ref-for-dfn-validate-origin-migration-2\">validate origin migration</a>, given <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a>\n              <var data-type=\"ordered map\">processed_entry</var>[\"id\"] and <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">id_url</var>."
+              "html": "Validate <var data-type=\"ordered map\">processed_entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_from_item\" data-xref-for=\"migrate_from_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-id\" class=\"internalDFN\" id=\"ref-for-dfn-id-5\"><code>id</code></a> using the algorithm from\n              <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/manifest-incubations/#dfn-validate-origin-migration\" class=\"internalDFN\" id=\"ref-for-dfn-validate-origin-migration-2\">validate origin migration</a>, given <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a>\n              <var data-type=\"ordered map\">processed_entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_from_item\" data-xref-for=\"migrate_from_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-id\" class=\"internalDFN\" id=\"ref-for-dfn-id-6\"><code>id</code></a> and <a data-link-type=\"dfn\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url\" href=\"https://url.spec.whatwg.org/#concept-url\">URL</a> <var data-type=\"URL\">id_url</var>."
             },
             {
               "html": "If the previous step returned an error,\n              <a data-link-type=\"dfn\" data-link-for=\"iteration\" data-xref-for=\"iteration\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"iteration-continue\" href=\"https://infra.spec.whatwg.org/#iteration-continue\">continue</a>."
@@ -816,10 +947,10 @@
           "html": "Let <var data-type=\"ordered map\">entry</var> be <var data-type=\"ordered map\">json</var>[\"migrate_to\"]."
         },
         {
-          "html": "If <var data-type=\"ordered map\">entry</var>[\"id\"] does not <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or is not a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>,\n          return."
+          "html": "If <var data-type=\"ordered map\">entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_to_item\" data-xref-for=\"migrate_to_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-id-0\" class=\"internalDFN\" id=\"ref-for-dfn-id-0-1\"><code>id</code></a> does not <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exist</a> or is not a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>,\n          return."
         },
         {
-          "html": "Let <var data-type=\"URL\">id</var> be the result of <a data-link-type=\"dfn\" data-lt=\"URL Parser\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a>\n          <var data-type=\"ordered map\">entry</var>[\"id\"] with <var data-type=\"URL\">manifest URL</var> as the base URL."
+          "html": "Let <var data-type=\"URL\">id</var> be the result of <a data-link-type=\"dfn\" data-lt=\"URL Parser\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a>\n          <var data-type=\"ordered map\">entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_to_item\" data-xref-for=\"migrate_to_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-id-0\" class=\"internalDFN\" id=\"ref-for-dfn-id-0-2\"><code>id</code></a> with <var data-type=\"URL\">manifest URL</var> as the base URL."
         },
         {
           "html": "If <var data-type=\"URL\">id</var> is failure, return."
@@ -828,17 +959,17 @@
           "html": "Let <var data-type=\"ordered map\">processed_migrate_to</var> be a new <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\">ordered map</a>."
         },
         {
-          "html": "Set <var data-type=\"ordered map\">processed_migrate_to</var>[\"id\"] to <var data-type=\"URL\">id</var>."
+          "html": "Set <var data-type=\"ordered map\">processed_migrate_to</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_to_item\" data-xref-for=\"migrate_to_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-id-0\" class=\"internalDFN\" id=\"ref-for-dfn-id-0-3\"><code>id</code></a> to <var data-type=\"URL\">id</var>."
         },
         {
-          "html": "If <var data-type=\"ordered map\">entry</var>[\"install_url\"] <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>:",
+          "html": "If <var data-type=\"ordered map\">entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_to_item\" data-xref-for=\"migrate_to_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-install_url-0\" class=\"internalDFN\" id=\"ref-for-dfn-install_url-0-1\"><code>install_url</code></a> <a data-link-type=\"dfn\" data-link-for=\"map\" data-xref-for=\"map\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"map-exists\" href=\"https://infra.spec.whatwg.org/#map-exists\">exists</a> and is a <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"string\" href=\"https://infra.spec.whatwg.org/#string\">string</a>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "Let <var data-type=\"URL\">install_url</var> be the result of <a data-link-type=\"dfn\" data-lt=\"URL Parser\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a> <var data-type=\"ordered map\">entry</var>[\"install_url\"] with <var data-type=\"URL\">manifest URL</var> as\n              the base URL."
+              "html": "Let <var data-type=\"URL\">install_url</var> be the result of <a data-link-type=\"dfn\" data-lt=\"URL Parser\" data-cite=\"url\" data-cite-path=\"\" data-cite-frag=\"concept-url-parser\" href=\"https://url.spec.whatwg.org/#concept-url-parser\">parsing</a> <var data-type=\"ordered map\">entry</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_to_item\" data-xref-for=\"migrate_to_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-install_url-0\" class=\"internalDFN\" id=\"ref-for-dfn-install_url-0-2\"><code>install_url</code></a> with <var data-type=\"URL\">manifest URL</var> as\n              the base URL."
             },
             {
-              "html": "If <var data-type=\"URL\">install_url</var> is not failure, set\n              <var data-type=\"ordered map\">processed_migrate_to</var>[\"install_url\"] to <var data-type=\"URL\">install_url</var>."
+              "html": "If <var data-type=\"URL\">install_url</var> is not failure, set\n              <var data-type=\"ordered map\">processed_migrate_to</var>'s <a data-link-type=\"dfn|abstract-op\" data-link-for=\"migrate_to_item\" data-xref-for=\"migrate_to_item\" href=\"https://wicg.github.io/manifest-incubations/#dfn-install_url-0\" class=\"internalDFN\" id=\"ref-for-dfn-install_url-0-3\"><code>install_url</code></a> to <var data-type=\"URL\">install_url</var>."
             }
           ]
         },

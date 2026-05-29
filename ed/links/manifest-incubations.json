@@ -8,6 +8,7 @@
       "https://dom.spec.whatwg.org/": {},
       "https://fetch.spec.whatwg.org/": {},
       "https://fs.spec.whatwg.org/": {},
+      "https://github.com/WICG/isolated-web-apps": {},
       "https://github.com/WICG/manifest-incubations/issues/": {},
       "https://github.com/WICG/manifest-incubations/issues/97": {},
       "https://github.com/WICG/manifest-incubations/issues/98": {},
@@ -65,6 +66,11 @@
           "dfn-processed-manifest",
           "dfn-process-image-resources",
           "dfn-id"
+        ]
+      },
+      "https://www.w3.org/TR/mediaqueries-5/": {
+        "anchors": [
+          "descdef-media-display-mode"
         ]
       },
       "https://www.w3.org/community/": {},
@@ -156,15 +162,17 @@
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "list-iterate",
-          "ordered-map",
           "list",
-          "string",
-          "map-exists",
+          "ordered-map",
+          "list-is-empty",
+          "list-iterate",
+          "iteration-break",
           "iteration-continue",
-          "list-contain",
-          "list-append",
           "user-agent",
+          "map-exists",
+          "string",
+          "list-append",
+          "list-contain",
           "map-is-empty",
           "map-iterate",
           "list-empty",
@@ -192,15 +200,15 @@
       },
       "https://urlpattern.spec.whatwg.org/": {
         "anchors": [
-          "typedefdef-urlpatterninput",
+          "url-pattern",
           "url-pattern-match",
-          "dictdef-urlpatternresult",
-          "build-a-url-pattern-from-an-infra-value"
+          "build-a-url-pattern-from-an-infra-value",
+          "typedefdef-urlpatterninput",
+          "dictdef-urlpatternresult"
         ]
       },
       "https://webidl.spec.whatwg.org/": {
         "anchors": [
-          "idl-sequence",
           "this",
           "dfn-dictionary",
           "idl-frozen-array",
@@ -226,8 +234,8 @@
       },
       "https://www.w3.org/TR/appmanifest/": {
         "anchors": [
-          "dfn-display-mode",
           "dfn-manifest",
+          "dfn-display-mode",
           "dfn-display",
           "dfn-processing-extension-point",
           "dfn-application-context",
