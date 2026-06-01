@@ -28,7 +28,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>bytePoint</var> be the two bytes after <var>byte</var> in <var>input</var>,\n     <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-decode\" id=\"ref-for-isomorphic-decode\">decoded</a>, and then interpreted as hexadecimal number.\n\n     </p>"
+                  "html": "<p>Let <var>bytePoint</var> be the two bytes after <var>byte</var> in <var>input</var>,\n     <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-decode\" id=\"ref-for-isomorphic-decode\">decoded</a>, and then interpreted as a hexadecimal number.\n\n     </p>"
                 },
                 {
                   "html": "<p>Append a byte whose value is <var>bytePoint</var> to\n     <var>output</var>.\n\n     </p>"
@@ -507,7 +507,7 @@
               "html": "<p>Let <var>value</var> and <var>length</var> be 0.\n\n   </p>"
             },
             {
-              "html": "<p>While <var>length</var> is less than 4 and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑧\">c</a> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit④\">ASCII hex digit</a>, set\n   <var>value</var> to <var>value</var> × 0x10 + <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑨\">c</a> interpreted as hexadecimal number,\n   and increase <var>pointer</var> and <var>length</var> by 1.\n\n   </p>"
+              "html": "<p>While <var>length</var> is less than 4 and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑧\">c</a> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit④\">ASCII hex digit</a>, set\n   <var>value</var> to <var>value</var> × 0x10 + <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑨\">c</a> interpreted as a hexadecimal number,\n   and increase <var>pointer</var> and <var>length</var> by 1.\n\n   </p>"
             },
             {
               "html": "If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c①⓪\">c</a> is U+002E (.), then:",
