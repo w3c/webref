@@ -693,14 +693,14 @@
     {
       "id": "sec-numeric-types-number-unaryMinus",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-numeric-types-number-unaryMinus",
-      "title": "Number::unaryMinus ( x )",
+      "title": "Number::unaryMinus ( number )",
       "level": 5,
       "number": "6.1.6.1.1"
     },
     {
       "id": "sec-numeric-types-number-bitwiseNOT",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-numeric-types-number-bitwiseNOT",
-      "title": "Number::bitwiseNOT ( x )",
+      "title": "Number::bitwiseNOT ( number )",
       "level": 5,
       "number": "6.1.6.1.2"
     },
@@ -728,7 +728,7 @@
     {
       "id": "sec-numeric-types-number-remainder",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-numeric-types-number-remainder",
-      "title": "Number::remainder ( n, d )",
+      "title": "Number::remainder ( numerator, denominator )",
       "level": 5,
       "number": "6.1.6.1.6"
     },
@@ -840,14 +840,14 @@
     {
       "id": "sec-numeric-types-bigint-unaryMinus",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-numeric-types-bigint-unaryMinus",
-      "title": "BigInt::unaryMinus ( x )",
+      "title": "BigInt::unaryMinus ( bigint )",
       "level": 5,
       "number": "6.1.6.2.1"
     },
     {
       "id": "sec-numeric-types-bigint-bitwiseNOT",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-numeric-types-bigint-bitwiseNOT",
-      "title": "BigInt::bitwiseNOT ( x )",
+      "title": "BigInt::bitwiseNOT ( bigint )",
       "level": 5,
       "number": "6.1.6.2.2"
     },
@@ -875,7 +875,7 @@
     {
       "id": "sec-numeric-types-bigint-remainder",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-numeric-types-bigint-remainder",
-      "title": "BigInt::remainder ( n, d )",
+      "title": "BigInt::remainder ( numerator, denominator )",
       "level": 5,
       "number": "6.1.6.2.6"
     },
@@ -1092,56 +1092,56 @@
     {
       "id": "sec-ispropertyreference",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-ispropertyreference",
-      "title": "IsPropertyReference ( referenceRecord )",
+      "title": "IsPropertyReference ( refRecord )",
       "level": 4,
       "number": "6.2.5.1"
     },
     {
       "id": "sec-isunresolvablereference",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isunresolvablereference",
-      "title": "IsUnresolvableReference ( referenceRecord )",
+      "title": "IsUnresolvableReference ( refRecord )",
       "level": 4,
       "number": "6.2.5.2"
     },
     {
       "id": "sec-issuperreference",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-issuperreference",
-      "title": "IsSuperReference ( referenceRecord )",
+      "title": "IsSuperReference ( refRecord )",
       "level": 4,
       "number": "6.2.5.3"
     },
     {
       "id": "sec-isprivatereference",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isprivatereference",
-      "title": "IsPrivateReference ( referenceRecord )",
+      "title": "IsPrivateReference ( refRecord )",
       "level": 4,
       "number": "6.2.5.4"
     },
     {
       "id": "sec-getvalue",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-getvalue",
-      "title": "GetValue ( referenceRecord )",
+      "title": "GetValue ( refRecord )",
       "level": 4,
       "number": "6.2.5.5"
     },
     {
       "id": "sec-putvalue",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-putvalue",
-      "title": "PutValue ( referenceRecord, value )",
+      "title": "PutValue ( refRecord, value )",
       "level": 4,
       "number": "6.2.5.6"
     },
     {
       "id": "sec-getthisvalue",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-getthisvalue",
-      "title": "GetThisValue ( referenceRecord )",
+      "title": "GetThisValue ( refRecord )",
       "level": 4,
       "number": "6.2.5.7"
     },
     {
       "id": "sec-initializereferencedbinding",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-initializereferencedbinding",
-      "title": "InitializeReferencedBinding ( referenceRecord, value )",
+      "title": "InitializeReferencedBinding ( refRecord, value )",
       "level": 4,
       "number": "6.2.5.8"
     },
@@ -1162,28 +1162,28 @@
     {
       "id": "sec-isaccessordescriptor",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isaccessordescriptor",
-      "title": "IsAccessorDescriptor ( desc )",
+      "title": "IsAccessorDescriptor ( propertyDesc )",
       "level": 4,
       "number": "6.2.6.1"
     },
     {
       "id": "sec-isdatadescriptor",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isdatadescriptor",
-      "title": "IsDataDescriptor ( desc )",
+      "title": "IsDataDescriptor ( propertyDesc )",
       "level": 4,
       "number": "6.2.6.2"
     },
     {
       "id": "sec-isgenericdescriptor",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-isgenericdescriptor",
-      "title": "IsGenericDescriptor ( desc )",
+      "title": "IsGenericDescriptor ( propertyDesc )",
       "level": 4,
       "number": "6.2.6.3"
     },
     {
       "id": "sec-frompropertydescriptor",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-frompropertydescriptor",
-      "title": "FromPropertyDescriptor ( desc )",
+      "title": "FromPropertyDescriptor ( propertyDesc )",
       "level": 4,
       "number": "6.2.6.4"
     },
@@ -1197,7 +1197,7 @@
     {
       "id": "sec-completepropertydescriptor",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-completepropertydescriptor",
-      "title": "CompletePropertyDescriptor ( desc )",
+      "title": "CompletePropertyDescriptor ( propertyDesc )",
       "level": 4,
       "number": "6.2.6.6"
     },
@@ -1302,21 +1302,21 @@
     {
       "id": "sec-toboolean",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toboolean",
-      "title": "ToBoolean ( argument )",
+      "title": "ToBoolean ( arg )",
       "level": 3,
       "number": "7.1.2"
     },
     {
       "id": "sec-tonumeric",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tonumeric",
-      "title": "ToNumeric ( value )",
+      "title": "ToNumeric ( arg )",
       "level": 3,
       "number": "7.1.3"
     },
     {
       "id": "sec-tonumber",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tonumber",
-      "title": "ToNumber ( argument )",
+      "title": "ToNumber ( arg )",
       "level": 3,
       "number": "7.1.4"
     },
@@ -1330,7 +1330,7 @@
     {
       "id": "sec-stringtonumber",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-stringtonumber",
-      "title": "StringToNumber ( str )",
+      "title": "StringToNumber ( string )",
       "level": 5,
       "number": "7.1.4.1.1"
     },
@@ -1351,7 +1351,7 @@
     {
       "id": "sec-tointegerorinfinity",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tointegerorinfinity",
-      "title": "ToIntegerOrInfinity ( argument )",
+      "title": "ToIntegerOrInfinity ( arg )",
       "level": 3,
       "number": "7.1.5"
     },
@@ -1365,63 +1365,63 @@
     {
       "id": "sec-toint32",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint32",
-      "title": "ToInt32 ( argument )",
+      "title": "ToInt32 ( arg )",
       "level": 3,
       "number": "7.1.7"
     },
     {
       "id": "sec-touint32",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-touint32",
-      "title": "ToUint32 ( argument )",
+      "title": "ToUint32 ( arg )",
       "level": 3,
       "number": "7.1.8"
     },
     {
       "id": "sec-toint16",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint16",
-      "title": "ToInt16 ( argument )",
+      "title": "ToInt16 ( arg )",
       "level": 3,
       "number": "7.1.9"
     },
     {
       "id": "sec-touint16",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-touint16",
-      "title": "ToUint16 ( argument )",
+      "title": "ToUint16 ( arg )",
       "level": 3,
       "number": "7.1.10"
     },
     {
       "id": "sec-toint8",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toint8",
-      "title": "ToInt8 ( argument )",
+      "title": "ToInt8 ( arg )",
       "level": 3,
       "number": "7.1.11"
     },
     {
       "id": "sec-touint8",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-touint8",
-      "title": "ToUint8 ( argument )",
+      "title": "ToUint8 ( arg )",
       "level": 3,
       "number": "7.1.12"
     },
     {
       "id": "sec-touint8clamp",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-touint8clamp",
-      "title": "ToUint8Clamp ( argument )",
+      "title": "ToUint8Clamp ( arg )",
       "level": 3,
       "number": "7.1.13"
     },
     {
       "id": "sec-tobigint",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tobigint",
-      "title": "ToBigInt ( argument )",
+      "title": "ToBigInt ( arg )",
       "level": 3,
       "number": "7.1.14"
     },
     {
       "id": "sec-stringtobigint",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-stringtobigint",
-      "title": "StringToBigInt ( str )",
+      "title": "StringToBigInt ( string )",
       "level": 3,
       "number": "7.1.15"
     },
@@ -1442,56 +1442,56 @@
     {
       "id": "sec-tobigint64",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tobigint64",
-      "title": "ToBigInt64 ( argument )",
+      "title": "ToBigInt64 ( arg )",
       "level": 3,
       "number": "7.1.16"
     },
     {
       "id": "sec-tobiguint64",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tobiguint64",
-      "title": "ToBigUint64 ( argument )",
+      "title": "ToBigUint64 ( arg )",
       "level": 3,
       "number": "7.1.17"
     },
     {
       "id": "sec-tostring",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tostring",
-      "title": "ToString ( argument )",
+      "title": "ToString ( arg )",
       "level": 3,
       "number": "7.1.18"
     },
     {
       "id": "sec-toobject",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toobject",
-      "title": "ToObject ( argument )",
+      "title": "ToObject ( arg )",
       "level": 3,
       "number": "7.1.19"
     },
     {
       "id": "sec-topropertykey",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-topropertykey",
-      "title": "ToPropertyKey ( argument )",
+      "title": "ToPropertyKey ( arg )",
       "level": 3,
       "number": "7.1.20"
     },
     {
       "id": "sec-tolength",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-tolength",
-      "title": "ToLength ( argument )",
+      "title": "ToLength ( arg )",
       "level": 3,
       "number": "7.1.21"
     },
     {
       "id": "sec-canonicalnumericindexstring",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-canonicalnumericindexstring",
-      "title": "CanonicalNumericIndexString ( argument )",
+      "title": "CanonicalNumericIndexString ( arg )",
       "level": 3,
       "number": "7.1.22"
     },
     {
       "id": "sec-toindex",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-toindex",
-      "title": "ToIndex ( value )",
+      "title": "ToIndex ( arg )",
       "level": 3,
       "number": "7.1.23"
     },
@@ -1505,28 +1505,28 @@
     {
       "id": "sec-requireobjectcoercible",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-requireobjectcoercible",
-      "title": "RequireObjectCoercible ( argument )",
+      "title": "RequireObjectCoercible ( arg )",
       "level": 3,
       "number": "7.2.1"
     },
     {
       "id": "sec-isarray",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-isarray",
-      "title": "IsArray ( argument )",
+      "title": "IsArray ( arg )",
       "level": 3,
       "number": "7.2.2"
     },
     {
       "id": "sec-iscallable",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iscallable",
-      "title": "IsCallable ( argument )",
+      "title": "IsCallable ( arg )",
       "level": 3,
       "number": "7.2.3"
     },
     {
       "id": "sec-isconstructor",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-isconstructor",
-      "title": "IsConstructor ( argument )",
+      "title": "IsConstructor ( arg )",
       "level": 3,
       "number": "7.2.4"
     },
@@ -1540,7 +1540,7 @@
     {
       "id": "sec-isregexp",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-isregexp",
-      "title": "IsRegExp ( argument )",
+      "title": "IsRegExp ( arg )",
       "level": 3,
       "number": "7.2.6"
     },
@@ -1659,7 +1659,7 @@
     {
       "id": "sec-definepropertyorthrow",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-definepropertyorthrow",
-      "title": "DefinePropertyOrThrow ( obj, propertyKey, desc )",
+      "title": "DefinePropertyOrThrow ( obj, propertyKey, propertyDesc )",
       "level": 3,
       "number": "7.3.8"
     },
@@ -1694,14 +1694,14 @@
     {
       "id": "sec-call",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-call",
-      "title": "Call ( func, thisValue [ , argumentsList ] )",
+      "title": "Call ( func, thisValue [ , argList ] )",
       "level": 3,
       "number": "7.3.13"
     },
     {
       "id": "sec-construct",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-construct",
-      "title": "Construct ( constructor [ , argumentsList [ , newTarget ] ] )",
+      "title": "Construct ( ctor [ , argList [ , newTarget ] ] )",
       "level": 3,
       "number": "7.3.14"
     },
@@ -1743,21 +1743,21 @@
     {
       "id": "sec-invoke",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-invoke",
-      "title": "Invoke ( value, propertyKey [ , argumentsList ] )",
+      "title": "Invoke ( value, propertyKey [ , argList ] )",
       "level": 3,
       "number": "7.3.20"
     },
     {
       "id": "sec-ordinaryhasinstance",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-ordinaryhasinstance",
-      "title": "OrdinaryHasInstance ( constructor, instance )",
+      "title": "OrdinaryHasInstance ( ctor, instance )",
       "level": 3,
       "number": "7.3.21"
     },
     {
       "id": "sec-speciesconstructor",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-speciesconstructor",
-      "title": "SpeciesConstructor ( obj, defaultConstructor )",
+      "title": "SpeciesConstructor ( obj, defaultCtor )",
       "level": 3,
       "number": "7.3.22"
     },
@@ -1834,7 +1834,7 @@
     {
       "id": "sec-initializeinstanceelements",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-initializeinstanceelements",
-      "title": "InitializeInstanceElements ( obj, constructor )",
+      "title": "InitializeInstanceElements ( obj, ctor )",
       "level": 3,
       "number": "7.3.33"
     },
@@ -1953,7 +1953,7 @@
     {
       "id": "sec-iteratorcloseall",
       "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-iteratorcloseall",
-      "title": "IteratorCloseAll ( iters, completion )",
+      "title": "IteratorCloseAll ( iterators, completion )",
       "level": 3,
       "number": "7.4.12"
     },
@@ -2212,7 +2212,7 @@
     {
       "id": "sec-initializeboundname",
       "href": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html#sec-initializeboundname",
-      "title": "InitializeBoundName ( name, value, environment )",
+      "title": "InitializeBoundName ( name, value, envRecord )",
       "level": 4,
       "number": "8.6.2.1"
     },
@@ -2436,7 +2436,7 @@
     {
       "id": "sec-bindthisvalue",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-bindthisvalue",
-      "title": "BindThisValue ( envRec, value )",
+      "title": "BindThisValue ( envRecord, value )",
       "level": 5,
       "number": "9.1.1.3.1"
     },
@@ -2464,7 +2464,7 @@
     {
       "id": "sec-getsuperbase",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-getsuperbase",
-      "title": "GetSuperBase ( envRec )",
+      "title": "GetSuperBase ( envRecord )",
       "level": 5,
       "number": "9.1.1.3.5"
     },
@@ -2555,42 +2555,42 @@
     {
       "id": "sec-haslexicaldeclaration",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-haslexicaldeclaration",
-      "title": "HasLexicalDeclaration ( envRec, name )",
+      "title": "HasLexicalDeclaration ( envRecord, name )",
       "level": 5,
       "number": "9.1.1.4.12"
     },
     {
       "id": "sec-hasrestrictedglobalproperty",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hasrestrictedglobalproperty",
-      "title": "HasRestrictedGlobalProperty ( envRec, name )",
+      "title": "HasRestrictedGlobalProperty ( envRecord, name )",
       "level": 5,
       "number": "9.1.1.4.13"
     },
     {
       "id": "sec-candeclareglobalvar",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-candeclareglobalvar",
-      "title": "CanDeclareGlobalVar ( envRec, name )",
+      "title": "CanDeclareGlobalVar ( envRecord, name )",
       "level": 5,
       "number": "9.1.1.4.14"
     },
     {
       "id": "sec-candeclareglobalfunction",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-candeclareglobalfunction",
-      "title": "CanDeclareGlobalFunction ( envRec, name )",
+      "title": "CanDeclareGlobalFunction ( envRecord, name )",
       "level": 5,
       "number": "9.1.1.4.15"
     },
     {
       "id": "sec-createglobalvarbinding",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalvarbinding",
-      "title": "CreateGlobalVarBinding ( envRec, name, deletable )",
+      "title": "CreateGlobalVarBinding ( envRecord, name, deletable )",
       "level": 5,
       "number": "9.1.1.4.16"
     },
     {
       "id": "sec-createglobalfunctionbinding",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createglobalfunctionbinding",
-      "title": "CreateGlobalFunctionBinding ( envRec, name, value, deletable )",
+      "title": "CreateGlobalFunctionBinding ( envRecord, name, value, deletable )",
       "level": 5,
       "number": "9.1.1.4.17"
     },
@@ -2632,7 +2632,7 @@
     {
       "id": "sec-createimportbinding",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createimportbinding",
-      "title": "CreateImportBinding ( envRec, name, targetModule, targetName )",
+      "title": "CreateImportBinding ( envRecord, name, targetModule, targetName )",
       "level": 5,
       "number": "9.1.1.5.5"
     },
@@ -2646,7 +2646,7 @@
     {
       "id": "sec-getidentifierreference",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-getidentifierreference",
-      "title": "GetIdentifierReference ( env, name, strict )",
+      "title": "GetIdentifierReference ( envRecord, name, strict )",
       "level": 4,
       "number": "9.1.2.1"
     },
@@ -2660,7 +2660,7 @@
     {
       "id": "sec-newobjectenvironment",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-newobjectenvironment",
-      "title": "NewObjectEnvironment ( obj, isWithEnvironment, outerEnv )",
+      "title": "NewObjectEnvironment ( obj, isWithEnv, outerEnv )",
       "level": 4,
       "number": "9.1.2.3"
     },
@@ -2730,14 +2730,14 @@
     {
       "id": "sec-createintrinsics",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-createintrinsics",
-      "title": "CreateIntrinsics ( realmRec )",
+      "title": "CreateIntrinsics ( realmRecord )",
       "level": 3,
       "number": "9.3.2"
     },
     {
       "id": "sec-setdefaultglobalbindings",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-setdefaultglobalbindings",
-      "title": "SetDefaultGlobalBindings ( realmRec )",
+      "title": "SetDefaultGlobalBindings ( realmRecord )",
       "level": 3,
       "number": "9.3.3"
     },
@@ -2758,7 +2758,7 @@
     {
       "id": "sec-resolvebinding",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-resolvebinding",
-      "title": "ResolveBinding ( name [ , env ] )",
+      "title": "ResolveBinding ( name [ , envRecord ] )",
       "level": 3,
       "number": "9.4.2"
     },
@@ -2821,7 +2821,7 @@
     {
       "id": "sec-hostcalljobcallback",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-hostcalljobcallback",
-      "title": "HostCallJobCallback ( jobCallback, value, argumentsList )",
+      "title": "HostCallJobCallback ( jobCallback, value, argList )",
       "level": 3,
       "number": "9.5.3"
     },
@@ -2954,7 +2954,7 @@
     {
       "id": "sec-canbeheldweakly",
       "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-canbeheldweakly",
-      "title": "CanBeHeldWeakly ( v )",
+      "title": "CanBeHeldWeakly ( arg )",
       "level": 2,
       "number": "9.13"
     },
@@ -3045,28 +3045,28 @@
     {
       "id": "sec-ordinary-object-internal-methods-and-internal-slots-defineownproperty-p-desc",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinary-object-internal-methods-and-internal-slots-defineownproperty-p-desc",
-      "title": "[[DefineOwnProperty]] ( propertyKey, desc )",
+      "title": "[[DefineOwnProperty]] ( propertyKey, propertyDesc )",
       "level": 3,
       "number": "10.1.6"
     },
     {
       "id": "sec-ordinarydefineownproperty",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarydefineownproperty",
-      "title": "OrdinaryDefineOwnProperty ( obj, propertyKey, desc )",
+      "title": "OrdinaryDefineOwnProperty ( obj, propertyKey, propertyDesc )",
       "level": 4,
       "number": "10.1.6.1"
     },
     {
       "id": "sec-iscompatiblepropertydescriptor",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-iscompatiblepropertydescriptor",
-      "title": "IsCompatiblePropertyDescriptor ( extensible, desc, current )",
+      "title": "IsCompatiblePropertyDescriptor ( extensible, propertyDesc, current )",
       "level": 4,
       "number": "10.1.6.2"
     },
     {
       "id": "sec-validateandapplypropertydescriptor",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-validateandapplypropertydescriptor",
-      "title": "ValidateAndApplyPropertyDescriptor ( obj, propertyKey, extensible, desc, current )",
+      "title": "ValidateAndApplyPropertyDescriptor ( obj, propertyKey, extensible, propertyDesc, current )",
       "level": 4,
       "number": "10.1.6.3"
     },
@@ -3157,14 +3157,14 @@
     {
       "id": "sec-ordinarycreatefromconstructor",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarycreatefromconstructor",
-      "title": "OrdinaryCreateFromConstructor ( constructor, intrinsicDefaultProto [ , internalSlotsList ] )",
+      "title": "OrdinaryCreateFromConstructor ( ctor, intrinsicDefaultProto [ , internalSlotsList ] )",
       "level": 3,
       "number": "10.1.13"
     },
     {
       "id": "sec-getprototypefromconstructor",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-getprototypefromconstructor",
-      "title": "GetPrototypeFromConstructor ( constructor, intrinsicDefaultProto )",
+      "title": "GetPrototypeFromConstructor ( ctor, intrinsicDefaultProto )",
       "level": 3,
       "number": "10.1.14"
     },
@@ -3185,7 +3185,7 @@
     {
       "id": "sec-ecmascript-function-objects-call-thisargument-argumentslist",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ecmascript-function-objects-call-thisargument-argumentslist",
-      "title": "[[Call]] ( thisArgument, argumentsList )",
+      "title": "[[Call]] ( thisArg, argList )",
       "level": 3,
       "number": "10.2.1"
     },
@@ -3199,7 +3199,7 @@
     {
       "id": "sec-ordinarycallbindthis",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarycallbindthis",
-      "title": "OrdinaryCallBindThis ( func, calleeContext, thisArgument )",
+      "title": "OrdinaryCallBindThis ( func, calleeContext, thisArg )",
       "level": 4,
       "number": "10.2.1.2"
     },
@@ -3213,21 +3213,21 @@
     {
       "id": "sec-ordinarycallevaluatebody",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinarycallevaluatebody",
-      "title": "OrdinaryCallEvaluateBody ( func, argumentsList )",
+      "title": "OrdinaryCallEvaluateBody ( func, argList )",
       "level": 4,
       "number": "10.2.1.4"
     },
     {
       "id": "sec-ecmascript-function-objects-construct-argumentslist-newtarget",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ecmascript-function-objects-construct-argumentslist-newtarget",
-      "title": "[[Construct]] ( argumentsList, newTarget )",
+      "title": "[[Construct]] ( argList, newTarget )",
       "level": 3,
       "number": "10.2.2"
     },
     {
       "id": "sec-ordinaryfunctioncreate",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-ordinaryfunctioncreate",
-      "title": "OrdinaryFunctionCreate ( functionPrototype, sourceText, parameterList, body, thisMode, env, privateEnv )",
+      "title": "OrdinaryFunctionCreate ( proto, sourceText, paramList, body, thisMode, envRecord, privateEnv )",
       "level": 3,
       "number": "10.2.3"
     },
@@ -3248,7 +3248,7 @@
     {
       "id": "sec-makeconstructor",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-makeconstructor",
-      "title": "MakeConstructor ( func [ , writablePrototype [ , prototype ] ] )",
+      "title": "MakeConstructor ( func [ , writableProto [ , proto ] ] )",
       "level": 3,
       "number": "10.2.5"
     },
@@ -3262,14 +3262,14 @@
     {
       "id": "sec-makemethod",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-makemethod",
-      "title": "MakeMethod ( func, homeObject )",
+      "title": "MakeMethod ( func, homeObj )",
       "level": 3,
       "number": "10.2.7"
     },
     {
       "id": "sec-definemethodproperty",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-definemethodproperty",
-      "title": "DefineMethodProperty ( homeObject, key, closure, enumerable )",
+      "title": "DefineMethodProperty ( homeObj, name, closure, enumerable )",
       "level": 3,
       "number": "10.2.8"
     },
@@ -3290,7 +3290,7 @@
     {
       "id": "sec-functiondeclarationinstantiation",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-functiondeclarationinstantiation",
-      "title": "FunctionDeclarationInstantiation ( func, argumentsList )",
+      "title": "FunctionDeclarationInstantiation ( func, argList )",
       "level": 3,
       "number": "10.2.11"
     },
@@ -3304,28 +3304,28 @@
     {
       "id": "sec-built-in-function-objects-call-thisargument-argumentslist",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-built-in-function-objects-call-thisargument-argumentslist",
-      "title": "[[Call]] ( thisArgument, argumentsList )",
+      "title": "[[Call]] ( thisArg, argList )",
       "level": 3,
       "number": "10.3.1"
     },
     {
       "id": "sec-built-in-function-objects-construct-argumentslist-newtarget",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-built-in-function-objects-construct-argumentslist-newtarget",
-      "title": "[[Construct]] ( argumentsList, newTarget )",
+      "title": "[[Construct]] ( argList, newTarget )",
       "level": 3,
       "number": "10.3.2"
     },
     {
       "id": "sec-builtincallorconstruct",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-builtincallorconstruct",
-      "title": "BuiltinCallOrConstruct ( func, thisArgument, argumentsList, newTarget )",
+      "title": "BuiltinCallOrConstruct ( func, thisArg, argList, newTarget )",
       "level": 3,
       "number": "10.3.3"
     },
     {
       "id": "sec-createbuiltinfunction",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createbuiltinfunction",
-      "title": "CreateBuiltinFunction ( behaviour, length, name, additionalInternalSlotsList [ , realm [ , prototype [ , prefix [ , async ] ] ] ] )",
+      "title": "CreateBuiltinFunction ( behaviour, length, name, additionalInternalSlotsList [ , realm [ , proto [ , prefix [ , async ] ] ] ] )",
       "level": 3,
       "number": "10.3.4"
     },
@@ -3346,21 +3346,21 @@
     {
       "id": "sec-bound-function-exotic-objects-call-thisargument-argumentslist",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-bound-function-exotic-objects-call-thisargument-argumentslist",
-      "title": "[[Call]] ( thisArgument, argumentsList )",
+      "title": "[[Call]] ( thisArg, argList )",
       "level": 4,
       "number": "10.4.1.1"
     },
     {
       "id": "sec-bound-function-exotic-objects-construct-argumentslist-newtarget",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-bound-function-exotic-objects-construct-argumentslist-newtarget",
-      "title": "[[Construct]] ( argumentsList, newTarget )",
+      "title": "[[Construct]] ( argList, newTarget )",
       "level": 4,
       "number": "10.4.1.2"
     },
     {
       "id": "sec-boundfunctioncreate",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-boundfunctioncreate",
-      "title": "BoundFunctionCreate ( targetFunction, boundThis, boundArgs )",
+      "title": "BoundFunctionCreate ( targetFunc, boundThis, boundArgs )",
       "level": 4,
       "number": "10.4.1.3"
     },
@@ -3374,7 +3374,7 @@
     {
       "id": "sec-array-exotic-objects-defineownproperty-p-desc",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-array-exotic-objects-defineownproperty-p-desc",
-      "title": "[[DefineOwnProperty]] ( propertyKey, desc )",
+      "title": "[[DefineOwnProperty]] ( propertyKey, propertyDesc )",
       "level": 4,
       "number": "10.4.2.1"
     },
@@ -3395,7 +3395,7 @@
     {
       "id": "sec-arraysetlength",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arraysetlength",
-      "title": "ArraySetLength ( array, desc )",
+      "title": "ArraySetLength ( array, propertyDesc )",
       "level": 4,
       "number": "10.4.2.4"
     },
@@ -3416,7 +3416,7 @@
     {
       "id": "sec-string-exotic-objects-defineownproperty-p-desc",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-string-exotic-objects-defineownproperty-p-desc",
-      "title": "[[DefineOwnProperty]] ( propertyKey, desc )",
+      "title": "[[DefineOwnProperty]] ( propertyKey, propertyDesc )",
       "level": 4,
       "number": "10.4.3.2"
     },
@@ -3430,14 +3430,14 @@
     {
       "id": "sec-stringcreate",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-stringcreate",
-      "title": "StringCreate ( value, prototype )",
+      "title": "StringCreate ( value, proto )",
       "level": 4,
       "number": "10.4.3.4"
     },
     {
       "id": "sec-stringgetownproperty",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-stringgetownproperty",
-      "title": "StringGetOwnProperty ( str, propertyKey )",
+      "title": "StringGetOwnProperty ( string, propertyKey )",
       "level": 4,
       "number": "10.4.3.5"
     },
@@ -3458,7 +3458,7 @@
     {
       "id": "sec-arguments-exotic-objects-defineownproperty-p-desc",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-arguments-exotic-objects-defineownproperty-p-desc",
-      "title": "[[DefineOwnProperty]] ( propertyKey, desc )",
+      "title": "[[DefineOwnProperty]] ( propertyKey, propertyDesc )",
       "level": 4,
       "number": "10.4.4.2"
     },
@@ -3486,28 +3486,28 @@
     {
       "id": "sec-createunmappedargumentsobject",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createunmappedargumentsobject",
-      "title": "CreateUnmappedArgumentsObject ( argumentsList )",
+      "title": "CreateUnmappedArgumentsObject ( argList )",
       "level": 4,
       "number": "10.4.4.6"
     },
     {
       "id": "sec-createmappedargumentsobject",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-createmappedargumentsobject",
-      "title": "CreateMappedArgumentsObject ( func, formals, argumentsList, env )",
+      "title": "CreateMappedArgumentsObject ( func, formals, argList, envRecord )",
       "level": 4,
       "number": "10.4.4.7"
     },
     {
       "id": "sec-makearggetter",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-makearggetter",
-      "title": "MakeArgGetter ( name, env )",
+      "title": "MakeArgGetter ( name, envRecord )",
       "level": 5,
       "number": "10.4.4.7.1"
     },
     {
       "id": "sec-makeargsetter",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-makeargsetter",
-      "title": "MakeArgSetter ( name, env )",
+      "title": "MakeArgSetter ( name, envRecord )",
       "level": 5,
       "number": "10.4.4.7.2"
     },
@@ -3542,7 +3542,7 @@
     {
       "id": "sec-typedarray-defineownproperty",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarray-defineownproperty",
-      "title": "[[DefineOwnProperty]] ( propertyKey, desc )",
+      "title": "[[DefineOwnProperty]] ( propertyKey, propertyDesc )",
       "level": 4,
       "number": "10.4.5.4"
     },
@@ -3591,7 +3591,7 @@
     {
       "id": "sec-typedarraycreate",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-typedarraycreate",
-      "title": "TypedArrayCreate ( prototype )",
+      "title": "TypedArrayCreate ( proto )",
       "level": 4,
       "number": "10.4.5.11"
     },
@@ -3696,7 +3696,7 @@
     {
       "id": "sec-module-namespace-exotic-objects-defineownproperty-p-desc",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-module-namespace-exotic-objects-defineownproperty-p-desc",
-      "title": "[[DefineOwnProperty]] ( propertyKey, desc )",
+      "title": "[[DefineOwnProperty]] ( propertyKey, propertyDesc )",
       "level": 4,
       "number": "10.4.6.6"
     },
@@ -3808,7 +3808,7 @@
     {
       "id": "sec-proxy-object-internal-methods-and-internal-slots-defineownproperty-p-desc",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-defineownproperty-p-desc",
-      "title": "[[DefineOwnProperty]] ( propertyKey, desc )",
+      "title": "[[DefineOwnProperty]] ( propertyKey, propertyDesc )",
       "level": 3,
       "number": "10.5.6"
     },
@@ -3850,14 +3850,14 @@
     {
       "id": "sec-proxy-object-internal-methods-and-internal-slots-call-thisargument-argumentslist",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-call-thisargument-argumentslist",
-      "title": "[[Call]] ( thisArgument, argumentsList )",
+      "title": "[[Call]] ( thisArg, argList )",
       "level": 3,
       "number": "10.5.12"
     },
     {
       "id": "sec-proxy-object-internal-methods-and-internal-slots-construct-argumentslist-newtarget",
       "href": "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html#sec-proxy-object-internal-methods-and-internal-slots-construct-argumentslist-newtarget",
-      "title": "[[Construct]] ( argumentsList, newTarget )",
+      "title": "[[Construct]] ( argList, newTarget )",
       "level": 3,
       "number": "10.5.13"
     },
@@ -3892,7 +3892,7 @@
     {
       "id": "sec-utf16encodecodepoint",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-source-code.html#sec-utf16encodecodepoint",
-      "title": "Static Semantics: UTF16EncodeCodePoint ( cp )",
+      "title": "Static Semantics: UTF16EncodeCodePoint ( codePoint )",
       "level": 3,
       "number": "11.1.1"
     },
@@ -3955,7 +3955,7 @@
     {
       "id": "sec-isstrict",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-source-code.html#sec-isstrict",
-      "title": "Static Semantics: IsStrict ( node )",
+      "title": "Static Semantics: IsStrict ( parseNode )",
       "level": 4,
       "number": "11.2.2.1"
     },
@@ -4522,7 +4522,7 @@
     {
       "id": "sec-evaluate-property-access-with-expression-key",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-evaluate-property-access-with-expression-key",
-      "title": "EvaluatePropertyAccessWithExpressionKey ( baseValue, expression, strict )",
+      "title": "EvaluatePropertyAccessWithExpressionKey ( baseValue, expr, strict )",
       "level": 3,
       "number": "13.3.3"
     },
@@ -4550,7 +4550,7 @@
     {
       "id": "sec-evaluatenew",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-evaluatenew",
-      "title": "EvaluateNew ( constructExpr, arguments )",
+      "title": "EvaluateNew ( constructExpr, argumentsNode )",
       "level": 5,
       "number": "13.3.5.1.1"
     },
@@ -4571,7 +4571,7 @@
     {
       "id": "sec-evaluatecall",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-evaluatecall",
-      "title": "EvaluateCall ( func, ref, arguments, tailPosition )",
+      "title": "EvaluateCall ( func, thisValueRef, argumentListNode, tailPosition )",
       "level": 4,
       "number": "13.3.6.2"
     },
@@ -4655,7 +4655,7 @@
     {
       "id": "sec-evaluate-import-call",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-evaluate-import-call",
-      "title": "EvaluateImportCall ( specifierExpression [ , optionsExpression ] )",
+      "title": "EvaluateImportCall ( specifierExpr [ , optionsExpr ] )",
       "level": 4,
       "number": "13.3.10.2"
     },
@@ -5103,7 +5103,7 @@
     {
       "id": "sec-applystringornumericbinaryoperator",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html#sec-applystringornumericbinaryoperator",
-      "title": "ApplyStringOrNumericBinaryOperator ( lVal, opText, rVal )",
+      "title": "ApplyStringOrNumericBinaryOperator ( leftValue, opText, rightValue )",
       "level": 3,
       "number": "13.15.3"
     },
@@ -5222,7 +5222,7 @@
     {
       "id": "sec-blockdeclarationinstantiation",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-blockdeclarationinstantiation",
-      "title": "BlockDeclarationInstantiation ( code, env )",
+      "title": "BlockDeclarationInstantiation ( code, envRecord )",
       "level": 3,
       "number": "14.2.3"
     },
@@ -5530,7 +5530,7 @@
     {
       "id": "sec-createforiniterator",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-createforiniterator",
-      "title": "CreateForInIterator ( object )",
+      "title": "CreateForInIterator ( obj )",
       "level": 5,
       "number": "14.7.5.10.1"
     },
@@ -5656,7 +5656,7 @@
     {
       "id": "sec-runtime-semantics-caseclauseisselected",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-runtime-semantics-caseclauseisselected",
-      "title": "CaseClauseIsSelected ( constructor, input )",
+      "title": "CaseClauseIsSelected ( caseClauseNode, input )",
       "level": 3,
       "number": "14.12.3"
     },
@@ -6314,7 +6314,7 @@
     {
       "id": "sec-globaldeclarationinstantiation",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-globaldeclarationinstantiation",
-      "title": "GlobalDeclarationInstantiation ( script, env )",
+      "title": "GlobalDeclarationInstantiation ( script, envRecord )",
       "level": 3,
       "number": "16.1.7"
     },
@@ -6356,7 +6356,7 @@
     {
       "id": "sec-ModuleRequestsEqual",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-ModuleRequestsEqual",
-      "title": "ModuleRequestsEqual ( left, right )",
+      "title": "ModuleRequestsEqual ( x, y )",
       "level": 5,
       "number": "16.2.1.3.1"
     },
@@ -6629,7 +6629,7 @@
     {
       "id": "sec-AllImportAttributesSupported",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html#sec-AllImportAttributesSupported",
-      "title": "AllImportAttributesSupported ( attributes )",
+      "title": "AllImportAttributesSupported ( attrs )",
       "level": 4,
       "number": "16.2.1.12"
     },
@@ -6832,28 +6832,28 @@
     {
       "id": "sec-hostensurecancompilestrings",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-hostensurecancompilestrings",
-      "title": "HostEnsureCanCompileStrings ( calleeRealm, parameterStrings, bodyString, direct )",
+      "title": "HostEnsureCanCompileStrings ( calleeRealm, paramStrings, bodyString, direct )",
       "level": 4,
       "number": "19.2.1.2"
     },
     {
       "id": "sec-evaldeclarationinstantiation",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-evaldeclarationinstantiation",
-      "title": "EvalDeclarationInstantiation ( body, varEnv, lexEnv, privateEnv, strict )",
+      "title": "EvalDeclarationInstantiation ( body, variableEnv, lexicalEnv, privateEnv, strict )",
       "level": 4,
       "number": "19.2.1.3"
     },
     {
       "id": "sec-isfinite-number",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-isfinite-number",
-      "title": "isFinite ( number )",
+      "title": "isFinite ( value )",
       "level": 3,
       "number": "19.2.2"
     },
     {
       "id": "sec-isnan-number",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-isnan-number",
-      "title": "isNaN ( number )",
+      "title": "isNaN ( value )",
       "level": 3,
       "number": "19.2.3"
     },
@@ -7329,7 +7329,7 @@
     {
       "id": "sec-object.defineproperty",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.defineproperty",
-      "title": "Object.defineProperty ( obj, propertyKey, attributes )",
+      "title": "Object.defineProperty ( obj, key, attrs )",
       "level": 4,
       "number": "20.1.2.4"
     },
@@ -7357,7 +7357,7 @@
     {
       "id": "sec-object.getownpropertydescriptor",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.getownpropertydescriptor",
-      "title": "Object.getOwnPropertyDescriptor ( obj, propertyKey )",
+      "title": "Object.getOwnPropertyDescriptor ( obj, key )",
       "level": 4,
       "number": "20.1.2.8"
     },
@@ -7406,7 +7406,7 @@
     {
       "id": "sec-object.hasown",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.hasown",
-      "title": "Object.hasOwn ( obj, propertyKey )",
+      "title": "Object.hasOwn ( obj, key )",
       "level": 4,
       "number": "20.1.2.14"
     },
@@ -7567,28 +7567,28 @@
     {
       "id": "sec-object.prototype.__defineGetter__",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__defineGetter__",
-      "title": "Object.prototype.__defineGetter__ ( propertyKey, getter )",
+      "title": "Object.prototype.__defineGetter__ ( key, getter )",
       "level": 5,
       "number": "20.1.3.9.1"
     },
     {
       "id": "sec-object.prototype.__defineSetter__",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__defineSetter__",
-      "title": "Object.prototype.__defineSetter__ ( propertyKey, setter )",
+      "title": "Object.prototype.__defineSetter__ ( key, setter )",
       "level": 5,
       "number": "20.1.3.9.2"
     },
     {
       "id": "sec-object.prototype.__lookupGetter__",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__lookupGetter__",
-      "title": "Object.prototype.__lookupGetter__ ( propertyKey )",
+      "title": "Object.prototype.__lookupGetter__ ( key )",
       "level": 5,
       "number": "20.1.3.9.3"
     },
     {
       "id": "sec-object.prototype.__lookupSetter__",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object.prototype.__lookupSetter__",
-      "title": "Object.prototype.__lookupSetter__ ( propertyKey )",
+      "title": "Object.prototype.__lookupSetter__ ( key )",
       "level": 5,
       "number": "20.1.3.9.4"
     },
@@ -7616,14 +7616,14 @@
     {
       "id": "sec-function-p1-p2-pn-body",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-function-p1-p2-pn-body",
-      "title": "Function ( ...parameterArgs, bodyArg )",
+      "title": "Function ( ...paramArgs, bodyArg )",
       "level": 4,
       "number": "20.2.1.1"
     },
     {
       "id": "sec-createdynamicfunction",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-createdynamicfunction",
-      "title": "CreateDynamicFunction ( constructor, newTarget, kind, parameterArgs, bodyArg )",
+      "title": "CreateDynamicFunction ( ctor, newTarget, kind, paramArgs, bodyArg )",
       "level": 5,
       "number": "20.2.1.1.1"
     },
@@ -7791,7 +7791,7 @@
     {
       "id": "sec-thisbooleanvalue",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-thisbooleanvalue",
-      "title": "ThisBooleanValue ( value )",
+      "title": "ThisBooleanValue ( arg )",
       "level": 5,
       "number": "20.3.3.3.1"
     },
@@ -7868,7 +7868,7 @@
     {
       "id": "sec-symbol.keyfor",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.keyfor",
-      "title": "Symbol.keyFor ( sym )",
+      "title": "Symbol.keyFor ( symbol )",
       "level": 4,
       "number": "20.4.2.6"
     },
@@ -7973,7 +7973,7 @@
     {
       "id": "sec-symboldescriptivestring",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symboldescriptivestring",
-      "title": "SymbolDescriptiveString ( sym )",
+      "title": "SymbolDescriptiveString ( symbol )",
       "level": 5,
       "number": "20.4.3.3.1"
     },
@@ -7987,7 +7987,7 @@
     {
       "id": "sec-thissymbolvalue",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-thissymbolvalue",
-      "title": "ThisSymbolValue ( value )",
+      "title": "ThisSymbolValue ( arg )",
       "level": 5,
       "number": "20.4.3.4.1"
     },
@@ -8022,7 +8022,7 @@
     {
       "id": "sec-keyforsymbol",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-keyforsymbol",
-      "title": "KeyForSymbol ( sym )",
+      "title": "KeyForSymbol ( symbol )",
       "level": 4,
       "number": "20.4.5.1"
     },
@@ -8512,7 +8512,7 @@
     {
       "id": "sec-thisnumbervalue",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-thisnumbervalue",
-      "title": "ThisNumberValue ( value )",
+      "title": "ThisNumberValue ( arg )",
       "level": 5,
       "number": "21.1.3.7.1"
     },
@@ -8617,7 +8617,7 @@
     {
       "id": "sec-thisbigintvalue",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-thisbigintvalue",
-      "title": "ThisBigIntValue ( value )",
+      "title": "ThisBigIntValue ( arg )",
       "level": 5,
       "number": "21.2.3.4.1"
     },
@@ -9009,14 +9009,14 @@
     {
       "id": "sec-day",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-day",
-      "title": "Day ( t )",
+      "title": "Day ( tv )",
       "level": 4,
       "number": "21.4.1.3"
     },
     {
       "id": "sec-timewithinday",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-timewithinday",
-      "title": "TimeWithinDay ( t )",
+      "title": "TimeWithinDay ( tv )",
       "level": 4,
       "number": "21.4.1.4"
     },
@@ -9044,70 +9044,70 @@
     {
       "id": "sec-yearfromtime",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-yearfromtime",
-      "title": "YearFromTime ( t )",
+      "title": "YearFromTime ( tv )",
       "level": 4,
       "number": "21.4.1.8"
     },
     {
       "id": "sec-daywithinyear",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-daywithinyear",
-      "title": "DayWithinYear ( t )",
+      "title": "DayWithinYear ( tv )",
       "level": 4,
       "number": "21.4.1.9"
     },
     {
       "id": "sec-inleapyear",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-inleapyear",
-      "title": "InLeapYear ( t )",
+      "title": "InLeapYear ( tv )",
       "level": 4,
       "number": "21.4.1.10"
     },
     {
       "id": "sec-monthfromtime",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-monthfromtime",
-      "title": "MonthFromTime ( t )",
+      "title": "MonthFromTime ( tv )",
       "level": 4,
       "number": "21.4.1.11"
     },
     {
       "id": "sec-datefromtime",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-datefromtime",
-      "title": "DateFromTime ( t )",
+      "title": "DateFromTime ( tv )",
       "level": 4,
       "number": "21.4.1.12"
     },
     {
       "id": "sec-weekday",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-weekday",
-      "title": "WeekDay ( t )",
+      "title": "WeekDay ( tv )",
       "level": 4,
       "number": "21.4.1.13"
     },
     {
       "id": "sec-hourfromtime",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-hourfromtime",
-      "title": "HourFromTime ( t )",
+      "title": "HourFromTime ( tv )",
       "level": 4,
       "number": "21.4.1.14"
     },
     {
       "id": "sec-minfromtime",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-minfromtime",
-      "title": "MinFromTime ( t )",
+      "title": "MinFromTime ( tv )",
       "level": 4,
       "number": "21.4.1.15"
     },
     {
       "id": "sec-secfromtime",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-secfromtime",
-      "title": "SecFromTime ( t )",
+      "title": "SecFromTime ( tv )",
       "level": 4,
       "number": "21.4.1.16"
     },
     {
       "id": "sec-msfromtime",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-msfromtime",
-      "title": "msFromTime ( t )",
+      "title": "msFromTime ( tv )",
       "level": 4,
       "number": "21.4.1.17"
     },
@@ -9163,7 +9163,7 @@
     {
       "id": "sec-localtime",
       "href": "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-localtime",
-      "title": "LocalTime ( t )",
+      "title": "LocalTime ( tv )",
       "level": 4,
       "number": "21.4.1.25"
     },
@@ -9730,21 +9730,21 @@
     {
       "id": "sec-string.prototype.charat",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.charat",
-      "title": "String.prototype.charAt ( pos )",
+      "title": "String.prototype.charAt ( position )",
       "level": 4,
       "number": "22.1.3.2"
     },
     {
       "id": "sec-string.prototype.charcodeat",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.charcodeat",
-      "title": "String.prototype.charCodeAt ( pos )",
+      "title": "String.prototype.charCodeAt ( position )",
       "level": 4,
       "number": "22.1.3.3"
     },
     {
       "id": "sec-string.prototype.codepointat",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-string.prototype.codepointat",
-      "title": "String.prototype.codePointAt ( pos )",
+      "title": "String.prototype.codePointAt ( position )",
       "level": 4,
       "number": "22.1.3.4"
     },
@@ -9849,7 +9849,7 @@
     {
       "id": "sec-stringpad",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-stringpad",
-      "title": "StringPad ( str, maxLength, fillString, placement )",
+      "title": "StringPad ( string, maxLength, fillString, placement )",
       "level": 5,
       "number": "22.1.3.17.2"
     },
@@ -9877,7 +9877,7 @@
     {
       "id": "sec-getsubstitution",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-getsubstitution",
-      "title": "GetSubstitution ( matched, str, position, captures, namedCaptures, replacementTemplate )",
+      "title": "GetSubstitution ( matched, string, position, captures, namedCaptures, replacementTemplate )",
       "level": 5,
       "number": "22.1.3.19.1"
     },
@@ -9975,7 +9975,7 @@
     {
       "id": "sec-trimstring",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-trimstring",
-      "title": "TrimString ( string, where )",
+      "title": "TrimString ( arg, where )",
       "level": 5,
       "number": "22.1.3.32.1"
     },
@@ -10003,7 +10003,7 @@
     {
       "id": "sec-thisstringvalue",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-thisstringvalue",
-      "title": "ThisStringValue ( value )",
+      "title": "ThisStringValue ( arg )",
       "level": 5,
       "number": "22.1.3.35.1"
     },
@@ -10080,14 +10080,14 @@
     {
       "id": "sec-countleftcapturingparenswithin",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-countleftcapturingparenswithin",
-      "title": "Static Semantics: CountLeftCapturingParensWithin ( node )",
+      "title": "Static Semantics: CountLeftCapturingParensWithin ( parseNode )",
       "level": 4,
       "number": "22.2.1.2"
     },
     {
       "id": "sec-countleftcapturingparensbefore",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-countleftcapturingparensbefore",
-      "title": "Static Semantics: CountLeftCapturingParensBefore ( node )",
+      "title": "Static Semantics: CountLeftCapturingParensBefore ( parseNode )",
       "level": 4,
       "number": "22.2.1.3"
     },
@@ -10269,7 +10269,7 @@
     {
       "id": "sec-runtime-semantics-canonicalize-ch",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-canonicalize-ch",
-      "title": "Canonicalize ( regexpRecord, ch )",
+      "title": "Canonicalize ( regexpRecord, char )",
       "level": 5,
       "number": "22.2.2.7.3"
     },
@@ -10416,14 +10416,14 @@
     {
       "id": "sec-regexp.escape",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.escape",
-      "title": "RegExp.escape ( str )",
+      "title": "RegExp.escape ( string )",
       "level": 4,
       "number": "22.2.5.1"
     },
     {
       "id": "sec-encodeforregexpescape",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-encodeforregexpescape",
-      "title": "EncodeForRegExpEscape ( cp )",
+      "title": "EncodeForRegExpEscape ( codePoint )",
       "level": 5,
       "number": "22.2.5.1.1"
     },
@@ -10570,7 +10570,7 @@
     {
       "id": "sec-regexp.prototype.test",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp.prototype.test",
-      "title": "RegExp.prototype.test ( str )",
+      "title": "RegExp.prototype.test ( string )",
       "level": 4,
       "number": "22.2.6.16"
     },
@@ -10605,28 +10605,28 @@
     {
       "id": "sec-regexpexec",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpexec",
-      "title": "RegExpExec ( regexp, str )",
+      "title": "RegExpExec ( regexp, string )",
       "level": 4,
       "number": "22.2.7.1"
     },
     {
       "id": "sec-regexpbuiltinexec",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexpbuiltinexec",
-      "title": "RegExpBuiltinExec ( regexp, str )",
+      "title": "RegExpBuiltinExec ( regexp, string )",
       "level": 4,
       "number": "22.2.7.2"
     },
     {
       "id": "sec-advancestringindex",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-advancestringindex",
-      "title": "AdvanceStringIndex ( str, index, unicode )",
+      "title": "AdvanceStringIndex ( string, index, unicode )",
       "level": 4,
       "number": "22.2.7.3"
     },
     {
       "id": "sec-getstringindex",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-getstringindex",
-      "title": "GetStringIndex ( str, codePointIndex )",
+      "title": "GetStringIndex ( string, codePointIndex )",
       "level": 4,
       "number": "22.2.7.4"
     },
@@ -10640,21 +10640,21 @@
     {
       "id": "sec-getmatchstring",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-getmatchstring",
-      "title": "GetMatchString ( str, match )",
+      "title": "GetMatchString ( string, match )",
       "level": 4,
       "number": "22.2.7.6"
     },
     {
       "id": "sec-getmatchindexpair",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-getmatchindexpair",
-      "title": "GetMatchIndexPair ( str, match )",
+      "title": "GetMatchIndexPair ( string, match )",
       "level": 4,
       "number": "22.2.7.7"
     },
     {
       "id": "sec-makematchindicesindexpairarray",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-makematchindicesindexpairarray",
-      "title": "MakeMatchIndicesIndexPairArray ( str, indices, groupNames, hasGroups )",
+      "title": "MakeMatchIndicesIndexPairArray ( string, indices, groupNames, hasGroups )",
       "level": 4,
       "number": "22.2.7.8"
     },
@@ -10682,7 +10682,7 @@
     {
       "id": "sec-createregexpstringiterator",
       "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-createregexpstringiterator",
-      "title": "CreateRegExpStringIterator ( regexp, str, global, fullUnicode )",
+      "title": "CreateRegExpStringIterator ( regexp, string, global, fullUnicode )",
       "level": 4,
       "number": "22.2.9.1"
     },
@@ -10892,7 +10892,7 @@
     {
       "id": "sec-findviapredicate",
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-findviapredicate",
-      "title": "FindViaPredicate ( obj, len, direction, predicate, thisArg )",
+      "title": "FindViaPredicate ( obj, length, direction, predicate, thisArg )",
       "level": 5,
       "number": "23.1.3.12.1"
     },
@@ -10906,14 +10906,14 @@
     {
       "id": "sec-flattenintoarray",
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-flattenintoarray",
-      "title": "FlattenIntoArray ( target, source, sourceLen, start, depth [ , mapperFunction [ , thisArg ] ] )",
+      "title": "FlattenIntoArray ( target, source, sourceLength, start, depth [ , mapperFunc [ , thisArg ] ] )",
       "level": 5,
       "number": "23.1.3.13.1"
     },
     {
       "id": "sec-array.prototype.flatmap",
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array.prototype.flatmap",
-      "title": "Array.prototype.flatMap ( mapperFunction [ , thisArg ] )",
+      "title": "Array.prototype.flatMap ( mapperFunc [ , thisArg ] )",
       "level": 4,
       "number": "23.1.3.14"
     },
@@ -11032,7 +11032,7 @@
     {
       "id": "sec-sortindexedproperties",
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-sortindexedproperties",
-      "title": "SortIndexedProperties ( obj, len, sortCompare, holes )",
+      "title": "SortIndexedProperties ( obj, length, sortCompare, holes )",
       "level": 5,
       "number": "23.1.3.30.1"
     },
@@ -11529,7 +11529,7 @@
     {
       "id": "sec-typedarraycreatefromconstructor",
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarraycreatefromconstructor",
-      "title": "TypedArrayCreateFromConstructor ( constructor, argumentList )",
+      "title": "TypedArrayCreateFromConstructor ( ctor, argList )",
       "level": 4,
       "number": "23.2.4.1"
     },
@@ -11543,7 +11543,7 @@
     {
       "id": "typedarray-species-create",
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#typedarray-species-create",
-      "title": "TypedArraySpeciesCreate ( exemplar, argumentList )",
+      "title": "TypedArraySpeciesCreate ( exemplar, argList )",
       "level": 4,
       "number": "23.2.4.3"
     },
@@ -11592,14 +11592,14 @@
     {
       "id": "sec-allocatetypedarray",
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-allocatetypedarray",
-      "title": "AllocateTypedArray ( constructorName, newTarget, defaultProto [ , length ] )",
+      "title": "AllocateTypedArray ( ctorName, newTarget, defaultProto [ , length ] )",
       "level": 5,
       "number": "23.2.5.1.1"
     },
     {
       "id": "sec-initializetypedarrayfromtypedarray",
       "href": "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-initializetypedarrayfromtypedarray",
-      "title": "InitializeTypedArrayFromTypedArray ( obj, srcArray )",
+      "title": "InitializeTypedArrayFromTypedArray ( obj, sourceArray )",
       "level": 5,
       "number": "23.2.5.1.2"
     },
@@ -12530,7 +12530,7 @@
     {
       "id": "sec-allocatearraybuffer",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-allocatearraybuffer",
-      "title": "AllocateArrayBuffer ( constructor, byteLength [ , maxByteLength ] )",
+      "title": "AllocateArrayBuffer ( ctor, byteLength [ , maxByteLength ] )",
       "level": 4,
       "number": "25.1.3.1"
     },
@@ -12565,7 +12565,7 @@
     {
       "id": "sec-clonearraybuffer",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-clonearraybuffer",
-      "title": "CloneArrayBuffer ( srcBuffer, srcByteOffset, srcLength )",
+      "title": "CloneArrayBuffer ( sourceBuffer, sourceByteOffset, sourceLength )",
       "level": 4,
       "number": "25.1.3.6"
     },
@@ -12817,7 +12817,7 @@
     {
       "id": "sec-allocatesharedarraybuffer",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-allocatesharedarraybuffer",
-      "title": "AllocateSharedArrayBuffer ( constructor, byteLength [ , maxByteLength ] )",
+      "title": "AllocateSharedArrayBuffer ( ctor, byteLength [ , maxByteLength ] )",
       "level": 4,
       "number": "25.2.2.1"
     },
@@ -13265,7 +13265,7 @@
     {
       "id": "sec-validateintegertypedarray",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-validateintegertypedarray",
-      "title": "ValidateIntegerTypedArray ( typedArray, waitable )",
+      "title": "ValidateIntegerTypedArray ( ta, waitable )",
       "level": 4,
       "number": "25.4.3.1"
     },
@@ -13279,14 +13279,14 @@
     {
       "id": "sec-validateatomicaccessonintegertypedarray",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-validateatomicaccessonintegertypedarray",
-      "title": "ValidateAtomicAccessOnIntegerTypedArray ( typedArray, requestIndex )",
+      "title": "ValidateAtomicAccessOnIntegerTypedArray ( ta, requestIndex )",
       "level": 4,
       "number": "25.4.3.3"
     },
     {
       "id": "sec-revalidateatomicaccess",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-revalidateatomicaccess",
-      "title": "RevalidateAtomicAccess ( typedArray, byteIndexInBuffer )",
+      "title": "RevalidateAtomicAccess ( ta, byteIndexInBuffer )",
       "level": 4,
       "number": "25.4.3.4"
     },
@@ -13356,7 +13356,7 @@
     {
       "id": "sec-dowait",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-dowait",
-      "title": "DoWait ( mode, typedArray, index, value, timeout )",
+      "title": "DoWait ( mode, ta, index, value, timeout )",
       "level": 4,
       "number": "25.4.3.14"
     },
@@ -13377,7 +13377,7 @@
     {
       "id": "sec-atomicreadmodifywrite",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomicreadmodifywrite",
-      "title": "AtomicReadModifyWrite ( typedArray, index, value, op )",
+      "title": "AtomicReadModifyWrite ( ta, index, value, op )",
       "level": 4,
       "number": "25.4.3.17"
     },
@@ -13398,28 +13398,28 @@
     {
       "id": "sec-atomics.add",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.add",
-      "title": "Atomics.add ( typedArray, index, value )",
+      "title": "Atomics.add ( ta, index, value )",
       "level": 3,
       "number": "25.4.4"
     },
     {
       "id": "sec-atomics.and",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.and",
-      "title": "Atomics.and ( typedArray, index, value )",
+      "title": "Atomics.and ( ta, index, value )",
       "level": 3,
       "number": "25.4.5"
     },
     {
       "id": "sec-atomics.compareexchange",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.compareexchange",
-      "title": "Atomics.compareExchange ( typedArray, index, expectedValue, replacementValue )",
+      "title": "Atomics.compareExchange ( ta, index, expectedValue, replacementValue )",
       "level": 3,
       "number": "25.4.6"
     },
     {
       "id": "sec-atomics.exchange",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.exchange",
-      "title": "Atomics.exchange ( typedArray, index, value )",
+      "title": "Atomics.exchange ( ta, index, value )",
       "level": 3,
       "number": "25.4.7"
     },
@@ -13433,56 +13433,56 @@
     {
       "id": "sec-atomics.load",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.load",
-      "title": "Atomics.load ( typedArray, index )",
+      "title": "Atomics.load ( ta, index )",
       "level": 3,
       "number": "25.4.9"
     },
     {
       "id": "sec-atomics.or",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.or",
-      "title": "Atomics.or ( typedArray, index, value )",
+      "title": "Atomics.or ( ta, index, value )",
       "level": 3,
       "number": "25.4.10"
     },
     {
       "id": "sec-atomics.store",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.store",
-      "title": "Atomics.store ( typedArray, index, value )",
+      "title": "Atomics.store ( ta, index, value )",
       "level": 3,
       "number": "25.4.11"
     },
     {
       "id": "sec-atomics.sub",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.sub",
-      "title": "Atomics.sub ( typedArray, index, value )",
+      "title": "Atomics.sub ( ta, index, value )",
       "level": 3,
       "number": "25.4.12"
     },
     {
       "id": "sec-atomics.wait",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.wait",
-      "title": "Atomics.wait ( typedArray, index, value, timeout )",
+      "title": "Atomics.wait ( ta, index, value, timeout )",
       "level": 3,
       "number": "25.4.13"
     },
     {
       "id": "sec-atomics.waitasync",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.waitasync",
-      "title": "Atomics.waitAsync ( typedArray, index, value, timeout )",
+      "title": "Atomics.waitAsync ( ta, index, value, timeout )",
       "level": 3,
       "number": "25.4.14"
     },
     {
       "id": "sec-atomics.notify",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.notify",
-      "title": "Atomics.notify ( typedArray, index, count )",
+      "title": "Atomics.notify ( ta, index, count )",
       "level": 3,
       "number": "25.4.15"
     },
     {
       "id": "sec-atomics.xor",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.xor",
-      "title": "Atomics.xor ( typedArray, index, value )",
+      "title": "Atomics.xor ( ta, index, value )",
       "level": 3,
       "number": "25.4.16"
     },
@@ -13531,7 +13531,7 @@
     {
       "id": "sec-createjsonparserecord",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-createjsonparserecord",
-      "title": "CreateJSONParseRecord ( parseNode, key, val )",
+      "title": "CreateJSONParseRecord ( parseNode, key, value )",
       "level": 4,
       "number": "25.5.2.3"
     },
@@ -14203,14 +14203,14 @@
     {
       "id": "sec-newpromisecapability",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-newpromisecapability",
-      "title": "NewPromiseCapability ( constructor )",
+      "title": "NewPromiseCapability ( ctor )",
       "level": 4,
       "number": "27.2.1.5"
     },
     {
       "id": "sec-ispromise",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-ispromise",
-      "title": "IsPromise ( value )",
+      "title": "IsPromise ( arg )",
       "level": 4,
       "number": "27.2.1.6"
     },
@@ -14224,7 +14224,7 @@
     {
       "id": "sec-triggerpromisereactions",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-triggerpromisereactions",
-      "title": "TriggerPromiseReactions ( reactions, argument )",
+      "title": "TriggerPromiseReactions ( reactions, arg )",
       "level": 4,
       "number": "27.2.1.8"
     },
@@ -14245,7 +14245,7 @@
     {
       "id": "sec-newpromisereactionjob",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-newpromisereactionjob",
-      "title": "NewPromiseReactionJob ( reaction, argument )",
+      "title": "NewPromiseReactionJob ( reaction, arg )",
       "level": 4,
       "number": "27.2.2.1"
     },
@@ -14287,14 +14287,14 @@
     {
       "id": "sec-getpromiseresolve",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-getpromiseresolve",
-      "title": "GetPromiseResolve ( promiseConstructor )",
+      "title": "GetPromiseResolve ( promiseCtor )",
       "level": 5,
       "number": "27.2.4.1.1"
     },
     {
       "id": "sec-performpromiseall",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromiseall",
-      "title": "PerformPromiseAll ( iteratorRecord, constructor, resultCapability, promiseResolve )",
+      "title": "PerformPromiseAll ( iteratorRecord, ctor, resultCapability, promiseResolve )",
       "level": 5,
       "number": "27.2.4.1.2"
     },
@@ -14308,7 +14308,7 @@
     {
       "id": "sec-performpromiseallsettled",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromiseallsettled",
-      "title": "PerformPromiseAllSettled ( iteratorRecord, constructor, resultCapability, promiseResolve )",
+      "title": "PerformPromiseAllSettled ( iteratorRecord, ctor, resultCapability, promiseResolve )",
       "level": 5,
       "number": "27.2.4.2.1"
     },
@@ -14322,7 +14322,7 @@
     {
       "id": "sec-performpromiseany",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromiseany",
-      "title": "PerformPromiseAny ( iteratorRecord, constructor, resultCapability, promiseResolve )",
+      "title": "PerformPromiseAny ( iteratorRecord, ctor, resultCapability, promiseResolve )",
       "level": 5,
       "number": "27.2.4.3.1"
     },
@@ -14343,7 +14343,7 @@
     {
       "id": "sec-performpromiserace",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromiserace",
-      "title": "PerformPromiseRace ( iteratorRecord, constructor, resultCapability, promiseResolve )",
+      "title": "PerformPromiseRace ( iteratorRecord, ctor, resultCapability, promiseResolve )",
       "level": 5,
       "number": "27.2.4.5.1"
     },
@@ -14364,7 +14364,7 @@
     {
       "id": "sec-promise-resolve",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-resolve",
-      "title": "PromiseResolve ( constructor, resolution )",
+      "title": "PromiseResolve ( ctor, resolution )",
       "level": 5,
       "number": "27.2.4.7.1"
     },
@@ -14462,7 +14462,7 @@
     {
       "id": "sec-generatorfunction",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction",
-      "title": "GeneratorFunction ( ...parameterArgs, bodyArg )",
+      "title": "GeneratorFunction ( ...paramArgs, bodyArg )",
       "level": 4,
       "number": "27.3.1.1"
     },
@@ -14553,7 +14553,7 @@
     {
       "id": "sec-asyncgeneratorfunction",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction",
-      "title": "AsyncGeneratorFunction ( ...parameterArgs, bodyArg )",
+      "title": "AsyncGeneratorFunction ( ...paramArgs, bodyArg )",
       "level": 4,
       "number": "27.4.1.1"
     },
@@ -14693,28 +14693,28 @@
     {
       "id": "sec-generatorstart",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorstart",
-      "title": "GeneratorStart ( generator, generatorBody )",
+      "title": "GeneratorStart ( gen, genBody )",
       "level": 4,
       "number": "27.5.3.1"
     },
     {
       "id": "sec-generatorvalidate",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorvalidate",
-      "title": "GeneratorValidate ( generator, generatorBrand )",
+      "title": "GeneratorValidate ( gen, genBrand )",
       "level": 4,
       "number": "27.5.3.2"
     },
     {
       "id": "sec-generatorresume",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorresume",
-      "title": "GeneratorResume ( generator, value, generatorBrand )",
+      "title": "GeneratorResume ( gen, value, genBrand )",
       "level": 4,
       "number": "27.5.3.3"
     },
     {
       "id": "sec-generatorresumeabrupt",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorresumeabrupt",
-      "title": "GeneratorResumeAbrupt ( generator, abruptCompletion, generatorBrand )",
+      "title": "GeneratorResumeAbrupt ( gen, abruptCompletion, genBrand )",
       "level": 4,
       "number": "27.5.3.4"
     },
@@ -14735,14 +14735,14 @@
     {
       "id": "sec-yield",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-yield",
-      "title": "Yield ( value )",
+      "title": "Yield ( arg )",
       "level": 4,
       "number": "27.5.3.7"
     },
     {
       "id": "sec-createiteratorfromclosure",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-createiteratorfromclosure",
-      "title": "CreateIteratorFromClosure ( closure, generatorBrand, generatorPrototype [ , extraSlots ] )",
+      "title": "CreateIteratorFromClosure ( closure, genBrand, genProto [ , extraSlots ] )",
       "level": 4,
       "number": "27.5.3.8"
     },
@@ -14819,35 +14819,35 @@
     {
       "id": "sec-asyncgeneratorstart",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorstart",
-      "title": "AsyncGeneratorStart ( generator, generatorBody )",
+      "title": "AsyncGeneratorStart ( gen, genBody )",
       "level": 4,
       "number": "27.6.3.2"
     },
     {
       "id": "sec-asyncgeneratorvalidate",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorvalidate",
-      "title": "AsyncGeneratorValidate ( generator, generatorBrand )",
+      "title": "AsyncGeneratorValidate ( gen, genBrand )",
       "level": 4,
       "number": "27.6.3.3"
     },
     {
       "id": "sec-asyncgeneratorenqueue",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorenqueue",
-      "title": "AsyncGeneratorEnqueue ( generator, completion, promiseCapability )",
+      "title": "AsyncGeneratorEnqueue ( gen, completion, promiseCapability )",
       "level": 4,
       "number": "27.6.3.4"
     },
     {
       "id": "sec-asyncgeneratorcompletestep",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorcompletestep",
-      "title": "AsyncGeneratorCompleteStep ( generator, completion, done [ , realm ] )",
+      "title": "AsyncGeneratorCompleteStep ( gen, completion, done [ , realm ] )",
       "level": 4,
       "number": "27.6.3.5"
     },
     {
       "id": "sec-asyncgeneratorresume",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorresume",
-      "title": "AsyncGeneratorResume ( generator, completion )",
+      "title": "AsyncGeneratorResume ( gen, completion )",
       "level": 4,
       "number": "27.6.3.6"
     },
@@ -14861,21 +14861,21 @@
     {
       "id": "sec-asyncgeneratoryield",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratoryield",
-      "title": "AsyncGeneratorYield ( value )",
+      "title": "AsyncGeneratorYield ( arg )",
       "level": 4,
       "number": "27.6.3.8"
     },
     {
       "id": "sec-asyncgeneratorawaitreturn",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorawaitreturn",
-      "title": "AsyncGeneratorAwaitReturn ( generator )",
+      "title": "AsyncGeneratorAwaitReturn ( gen )",
       "level": 4,
       "number": "27.6.3.9"
     },
     {
       "id": "sec-asyncgeneratordrainqueue",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratordrainqueue",
-      "title": "AsyncGeneratorDrainQueue ( generator )",
+      "title": "AsyncGeneratorDrainQueue ( gen )",
       "level": 4,
       "number": "27.6.3.10"
     },
@@ -14896,7 +14896,7 @@
     {
       "id": "sec-async-function-constructor-arguments",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-constructor-arguments",
-      "title": "AsyncFunction ( ...parameterArgs, bodyArg )",
+      "title": "AsyncFunction ( ...paramArgs, bodyArg )",
       "level": 4,
       "number": "27.7.1.1"
     },
@@ -14966,7 +14966,7 @@
     {
       "id": "sec-async-functions-abstract-operations-async-function-start",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-functions-abstract-operations-async-function-start",
-      "title": "AsyncFunctionStart ( promiseCapability, asyncFunctionBody )",
+      "title": "AsyncFunctionStart ( promiseCapability, asyncFuncBody )",
       "level": 4,
       "number": "27.7.5.1"
     },
@@ -14980,7 +14980,7 @@
     {
       "id": "await",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#await",
-      "title": "Await ( value )",
+      "title": "Await ( arg )",
       "level": 4,
       "number": "27.7.5.3"
     },
@@ -15001,42 +15001,42 @@
     {
       "id": "sec-reflect.apply",
       "href": "https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.apply",
-      "title": "Reflect.apply ( target, thisArgument, argumentsList )",
+      "title": "Reflect.apply ( target, thisArg, args )",
       "level": 3,
       "number": "28.1.1"
     },
     {
       "id": "sec-reflect.construct",
       "href": "https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.construct",
-      "title": "Reflect.construct ( target, argumentsList [ , newTarget ] )",
+      "title": "Reflect.construct ( target, args [ , newTarget ] )",
       "level": 3,
       "number": "28.1.2"
     },
     {
       "id": "sec-reflect.defineproperty",
       "href": "https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.defineproperty",
-      "title": "Reflect.defineProperty ( target, propertyKey, attributes )",
+      "title": "Reflect.defineProperty ( target, key, attrs )",
       "level": 3,
       "number": "28.1.3"
     },
     {
       "id": "sec-reflect.deleteproperty",
       "href": "https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.deleteproperty",
-      "title": "Reflect.deleteProperty ( target, propertyKey )",
+      "title": "Reflect.deleteProperty ( target, key )",
       "level": 3,
       "number": "28.1.4"
     },
     {
       "id": "sec-reflect.get",
       "href": "https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.get",
-      "title": "Reflect.get ( target, propertyKey [ , receiver ] )",
+      "title": "Reflect.get ( target, key [ , receiver ] )",
       "level": 3,
       "number": "28.1.5"
     },
     {
       "id": "sec-reflect.getownpropertydescriptor",
       "href": "https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.getownpropertydescriptor",
-      "title": "Reflect.getOwnPropertyDescriptor ( target, propertyKey )",
+      "title": "Reflect.getOwnPropertyDescriptor ( target, key )",
       "level": 3,
       "number": "28.1.6"
     },
@@ -15050,7 +15050,7 @@
     {
       "id": "sec-reflect.has",
       "href": "https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.has",
-      "title": "Reflect.has ( target, propertyKey )",
+      "title": "Reflect.has ( target, key )",
       "level": 3,
       "number": "28.1.8"
     },
@@ -15078,7 +15078,7 @@
     {
       "id": "sec-reflect.set",
       "href": "https://tc39.es/ecma262/multipage/reflection.html#sec-reflect.set",
-      "title": "Reflect.set ( target, propertyKey, value [ , receiver ] )",
+      "title": "Reflect.set ( target, key, value [ , receiver ] )",
       "level": 3,
       "number": "28.1.12"
     },
