@@ -527,26 +527,6 @@
       "links": []
     },
     {
-      "id": "documents-navigation-api",
-      "href": "https://drafts.csswg.org/css-navigation-1/#documents-navigation-api",
-      "linkingText": [
-        "document’s navigation API"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "at-navigation",
-        "href": "https://drafts.csswg.org/css-navigation-1/#at-navigation",
-        "title": "Navigation queries: the @navigation rule",
-        "number": "2.1"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
       "id": "funcdef-when-navigation",
       "href": "https://drafts.csswg.org/css-navigation-1/#funcdef-when-navigation",
       "linkingText": [
@@ -691,10 +671,10 @@
       "links": []
     },
     {
-      "id": "active-navigation-url",
-      "href": "https://drafts.csswg.org/css-navigation-1/#active-navigation-url",
+      "id": "navigation-state",
+      "href": "https://drafts.csswg.org/css-navigation-1/#navigation-state",
       "linkingText": [
-        "active navigation URL"
+        "navigation state"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -702,39 +682,173 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "active-navigation-pseudo-class",
-        "href": "https://drafts.csswg.org/css-navigation-1/#active-navigation-pseudo-class",
-        "title": "The ::active-navigation() pseudo-class",
-        "number": "3.3"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "current-from-url",
-      "href": "https://drafts.csswg.org/css-navigation-1/#current-from-url",
-      "linkingText": [
-        "current from URL"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "current-nav-urls",
-        "href": "https://drafts.csswg.org/css-navigation-1/#current-nav-urls",
-        "title": "Definitions of current navigation state",
+        "id": "processing-model",
+        "href": "https://drafts.csswg.org/css-navigation-1/#processing-model",
+        "title": "Processing model",
         "number": "4"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "current-to-url",
-      "href": "https://drafts.csswg.org/css-navigation-1/#current-to-url",
+      "id": "navigation-state-old-url",
+      "href": "https://drafts.csswg.org/css-navigation-1/#navigation-state-old-url",
       "linkingText": [
-        "current to URL"
+        "old URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "navigation state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.csswg.org/css-navigation-1/#processing-model",
+        "title": "Processing model",
+        "number": "4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "navigation-state-new-url",
+      "href": "https://drafts.csswg.org/css-navigation-1/#navigation-state-new-url",
+      "linkingText": [
+        "new URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "navigation state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.csswg.org/css-navigation-1/#processing-model",
+        "title": "Processing model",
+        "number": "4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "navigation-state-type",
+      "href": "https://drafts.csswg.org/css-navigation-1/#navigation-state-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "navigation state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.csswg.org/css-navigation-1/#processing-model",
+        "title": "Processing model",
+        "number": "4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "navigation-state-old-index",
+      "href": "https://drafts.csswg.org/css-navigation-1/#navigation-state-old-index",
+      "linkingText": [
+        "old index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "navigation state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.csswg.org/css-navigation-1/#processing-model",
+        "title": "Processing model",
+        "number": "4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "navigation-state-new-index",
+      "href": "https://drafts.csswg.org/css-navigation-1/#navigation-state-new-index",
+      "linkingText": [
+        "new index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "navigation state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.csswg.org/css-navigation-1/#processing-model",
+        "title": "Processing model",
+        "number": "4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "navigation-state-phase",
+      "href": "https://drafts.csswg.org/css-navigation-1/#navigation-state-phase",
+      "linkingText": [
+        "phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "navigation state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.csswg.org/css-navigation-1/#processing-model",
+        "title": "Processing model",
+        "number": "4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "navigation-state-source-element",
+      "href": "https://drafts.csswg.org/css-navigation-1/#navigation-state-source-element",
+      "linkingText": [
+        "source element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "navigation state"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-model",
+        "href": "https://drafts.csswg.org/css-navigation-1/#processing-model",
+        "title": "Processing model",
+        "number": "4"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "current-navigation-state",
+      "href": "https://drafts.csswg.org/css-navigation-1/#current-navigation-state",
+      "linkingText": [
+        "current navigation state"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -742,19 +856,19 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "current-nav-urls",
-        "href": "https://drafts.csswg.org/css-navigation-1/#current-nav-urls",
-        "title": "Definitions of current navigation state",
+        "id": "processing-model",
+        "href": "https://drafts.csswg.org/css-navigation-1/#processing-model",
+        "title": "Processing model",
         "number": "4"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "current-at-url",
-      "href": "https://drafts.csswg.org/css-navigation-1/#current-at-url",
+      "id": "current-navigation-url",
+      "href": "https://drafts.csswg.org/css-navigation-1/#current-navigation-url",
       "linkingText": [
-        "current at URL"
+        "current navigation URL"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -762,29 +876,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "current-nav-urls",
-        "href": "https://drafts.csswg.org/css-navigation-1/#current-nav-urls",
-        "title": "Definitions of current navigation state",
-        "number": "4"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
-      "id": "current-with-url",
-      "href": "https://drafts.csswg.org/css-navigation-1/#current-with-url",
-      "linkingText": [
-        "current with URL"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "current-nav-urls",
-        "href": "https://drafts.csswg.org/css-navigation-1/#current-nav-urls",
-        "title": "Definitions of current navigation state",
+        "id": "processing-model",
+        "href": "https://drafts.csswg.org/css-navigation-1/#processing-model",
+        "title": "Processing model",
         "number": "4"
       },
       "definedIn": "prose",
@@ -802,19 +896,19 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "current-nav-urls",
-        "href": "https://drafts.csswg.org/css-navigation-1/#current-nav-urls",
-        "title": "Definitions of current navigation state",
+        "id": "processing-model",
+        "href": "https://drafts.csswg.org/css-navigation-1/#processing-model",
+        "title": "Processing model",
         "number": "4"
       },
       "definedIn": "prose",
       "links": []
     },
     {
-      "id": "current-navigation-delta",
-      "href": "https://drafts.csswg.org/css-navigation-1/#current-navigation-delta",
+      "id": "traversing-navigate-event",
+      "href": "https://drafts.csswg.org/css-navigation-1/#traversing-navigate-event",
       "linkingText": [
-        "current navigation delta"
+        "traversing navigate event"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -822,9 +916,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "current-nav-urls",
-        "href": "https://drafts.csswg.org/css-navigation-1/#current-nav-urls",
-        "title": "Definitions of current navigation state",
+        "id": "processing-model",
+        "href": "https://drafts.csswg.org/css-navigation-1/#processing-model",
+        "title": "Processing model",
         "number": "4"
       },
       "definedIn": "prose",

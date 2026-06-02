@@ -31,12 +31,7 @@
       "https://drafts.csswg.org/css-syntax/": {},
       "https://drafts.csswg.org/css-values-4/": {},
       "https://drafts.csswg.org/css-values-5/": {},
-      "https://drafts.csswg.org/css-view-transitions-1/": {},
-      "https://drafts.csswg.org/css-view-transitions-2/": {
-        "anchors": [
-          "cross-document-view-transitions"
-        ]
-      },
+      "https://drafts.csswg.org/css-view-transitions-2/": {},
       "https://drafts.csswg.org/cssom/": {},
       "https://drafts.csswg.org/mediaqueries-5/": {},
       "https://drafts.csswg.org/selectors-5/": {},
@@ -46,8 +41,6 @@
       "https://github.com/w3c/csswg-drafts/issues/12594": {},
       "https://github.com/w3c/csswg-drafts/issues/13163": {},
       "https://github.com/w3c/csswg-drafts/issues/8209": {},
-      "https://github.com/whatwg/html/issues/11690": {},
-      "https://github.com/whatwg/html/pull/11692": {},
       "https://html.spec.whatwg.org/multipage/": {},
       "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
@@ -60,8 +53,10 @@
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
         "anchors": [
-          "concept-document",
-          "concept-document-url"
+          "element",
+          "document",
+          "concept-document-url",
+          "concept-document"
         ]
       },
       "https://drafts.csswg.org/css-cascade-6/": {
@@ -115,11 +110,6 @@
           "typedef-if-test"
         ]
       },
-      "https://drafts.csswg.org/css-view-transitions-1/": {
-        "anchors": [
-          "capture-the-image"
-        ]
-      },
       "https://drafts.csswg.org/css-view-transitions-2/": {
         "anchors": [
           "view-transitions"
@@ -148,41 +138,35 @@
       },
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
         "anchors": [
-          "has-been-revealed"
+          "has-been-revealed",
+          "ongoing-navigation"
         ]
       },
-      "https://html.spec.whatwg.org/multipage/indices.html": {
+      "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
-          "event-pageswap"
+          "fully-active"
         ]
       },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
           "dom-navigationtype-traverse",
           "dom-navigationtype-reload",
-          "dom-navigationtransition-committed",
-          "window",
-          "concept-document-window",
+          "navigationtype",
           "window-navigation-api",
-          "dom-navigateevent-sourceelement",
-          "ongoing-navigate-event",
-          "concept-navigation-transition",
-          "concept-navigationtransition-from",
-          "dom-navigationhistoryentry-url",
-          "navigation-activation",
-          "dom-navigationactivation-from",
-          "dom-pageswapevent-activation",
+          "dom-navigation-activation",
           "dom-navigationactivation-entry",
+          "dom-navigationactivation-from",
+          "dom-navigationhistoryentry-url",
+          "dom-navigationactivation-navigationtype",
+          "dom-navigationhistoryentry-index",
+          "dom-history-pushstate",
+          "ongoing-navigate-event",
           "dom-navigateevent-destination",
           "dom-navigationdestination-url",
-          "dom-history-pushstate",
-          "navigationtype",
-          "dom-navigationtransition-navigationtype",
-          "dom-navigationactivation-navigationtype",
-          "dom-navigationtransition-to",
+          "dom-navigateevent-navigationtype",
+          "navigation-current-entry",
           "dom-navigationdestination-index",
-          "dom-navigationtransition-from",
-          "dom-navigationhistoryentry-index"
+          "dom-navigateevent-sourceelement"
         ]
       },
       "https://html.spec.whatwg.org/multipage/urls-and-fetching.html": {
@@ -192,16 +176,19 @@
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
         "anchors": [
-          "concept-task"
+          "concept-relevant-global"
         ]
       },
       "https://infra.spec.whatwg.org/": {
         "anchors": [
-          "ordered-map"
+          "ordered-map",
+          "struct",
+          "assert"
         ]
       },
       "https://url.spec.whatwg.org/": {
         "anchors": [
+          "concept-url",
           "concept-url-equals"
         ]
       },
