@@ -5,12 +5,7 @@
 
 [Exposed=Window]
 interface InteractionContentfulPaint : PerformanceEntry {
-    readonly attribute DOMHighResTimeStamp renderTime;
-    readonly attribute DOMHighResTimeStamp loadTime;
-    readonly attribute unsigned long long size;
-    readonly attribute DOMString id;
-    readonly attribute DOMString url;
-    readonly attribute Element? element;
+    readonly attribute LargestContentfulPaint largestContentfulPaint;
     readonly attribute unsigned long long interactionId;
 
     object toJSON();
@@ -19,13 +14,13 @@ interface InteractionContentfulPaint : PerformanceEntry {
 InteractionContentfulPaint includes PaintTimingMixin;
 
 [Exposed=Window]
-interface SoftNavigationEntry : PerformanceEntry {
+interface PerformanceSoftNavigation : PerformanceEntry {
     readonly attribute DOMString navigationType;
     readonly attribute unsigned long long interactionId;
-    readonly attribute InteractionContentfulPaint? largestInteractionContentfulPaint;
+    InteractionContentfulPaint? getLargestInteractionContentfulPaint();
 };
 
-SoftNavigationEntry includes PaintTimingMixin;
+PerformanceSoftNavigation includes PaintTimingMixin;
 
 [Exposed=(Window,Worker)]
 partial interface PerformanceEntry {
