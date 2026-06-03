@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-06-03T08:20:15.148Z",
+  "date": "2026-06-03T14:21:40.106Z",
   "options": {
     "fallback": "ed/index.json",
     "output": "report",
@@ -127,14 +127,20 @@
       "tc39-decorators",
       "tc39-defer-import-eval",
       "tc39-dynamic-code-brand-checks",
+      "tc39-error-stack-accessor",
       "tc39-explicit-resource-management",
       "tc39-import-text",
       "tc39-intl-duration-format",
       "tc39-intl-era-monthcode",
+      "tc39-intl-keep-trailing-zeros",
       "tc39-intl-locale-info",
+      "tc39-iterator-chunking",
+      "tc39-iterator-includes",
+      "tc39-iterator-join",
       "tc39-joint-iteration",
       "tc39-json-parse-with-source",
       "tc39-nonextensible-applies-to-private",
+      "tc39-regexp-buffer-boundaries",
       "tc39-shadowrealm",
       "tc39-source-phase-imports",
       "tc39-temporal",
@@ -144,9 +150,9 @@
       "web-nfc",
       "login-status",
       "at-driver",
+      "css-aam",
       "shacl12-cs",
       "shacl12-profiling",
-      "shacl12-ui",
       "execCommand",
       "element-timing",
       "gamepad-extensions",
@@ -163,7 +169,6 @@
       "trace-context-binary",
       "trace-context-mqtt",
       "tracestate-ids-registry",
-      "vc-recognized-entities",
       "web-share-target",
       "webextensions",
       "webrtc-ice",
@@ -253,7 +258,6 @@
       "portals",
       "prefer-current-tab",
       "responsive-image-client-hints",
-      "sanitizer-api",
       "savedata",
       "scheduling-apis",
       "scroll-to-text-fragment",
@@ -616,6 +620,7 @@
       "shacl12-node-expr",
       "shacl12-rules",
       "shacl12-sparql",
+      "shacl12-ui",
       "sparql12-entailment",
       "sparql12-federated-query",
       "sparql12-graph-store-protocol",
@@ -661,6 +666,7 @@
       "vc-di-eddsa",
       "vc-jose-cose",
       "vc-json-schema",
+      "vc-recognized-entities-1.0",
       "vc-render-method",
       "vibration",
       "virtual-keyboard",
@@ -771,10 +777,10 @@
     ]
   },
   "stats": {
-    "crawled": 740,
+    "crawled": 746,
     "errors": 51
   },
-  "crawler": "reffy-21.0.1",
+  "crawler": "reffy-21.0.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/afgs1-spec/",
@@ -2391,7 +2397,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-link-params-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 20:19:34 GMT"
+        "lastModified": "Tue, 02 Jun 2026 20:19:33 GMT"
       },
       "generator": "bikeshed",
       "date": "28 May 2026",
@@ -2637,7 +2643,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-shapes-2/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 20:19:34 GMT"
+        "lastModified": "Tue, 02 Jun 2026 20:19:33 GMT"
       },
       "generator": "bikeshed",
       "date": "6 May 2026",
@@ -3626,7 +3632,7 @@
       ],
       "crawled": "https://immersive-web.github.io/raw-camera-access/",
       "crawlCacheInfo": {
-        "lastModified": "Thu, 11 Dec 2025 23:07:06 GMT"
+        "lastModified": "Thu, 11 Dec 2025 23:07:05 GMT"
       },
       "generator": "bikeshed",
       "date": "11 December 2025",
@@ -5265,7 +5271,7 @@
       "links": "links/OES_standard_derivatives.json",
       "idl": "idl/OES_standard_derivatives.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 80)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
@@ -5837,7 +5843,7 @@
       "links": "links/WEBGL_compressed_texture_etc.json",
       "idl": "idl/WEBGL_compressed_texture_etc.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 91)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/",
@@ -6201,7 +6207,7 @@
       "links": "links/WEBGL_depth_texture.json",
       "idl": "idl/WEBGL_depth_texture.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 98)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
@@ -6305,7 +6311,7 @@
       "links": "links/WEBGL_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_draw_instanced_base_vertex_base_instance.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 100)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/",
@@ -6357,7 +6363,7 @@
       "links": "links/WEBGL_lose_context.json",
       "idl": "idl/WEBGL_lose_context.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 101)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
@@ -6409,7 +6415,7 @@
       "links": "links/WEBGL_multi_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_multi_draw_instanced_base_vertex_base_instance.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 102)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/",
@@ -6461,7 +6467,7 @@
       "links": "links/WEBGL_multi_draw.json",
       "idl": "idl/WEBGL_multi_draw.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 103)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
@@ -6513,7 +6519,7 @@
       "links": "links/WEBGL_provoking_vertex.json",
       "idl": "idl/WEBGL_provoking_vertex.idl",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 104)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/specs/latest/1.0/",
@@ -6571,7 +6577,7 @@
       "headings": "headings/webgl1.json",
       "ids": "ids/webgl1.json",
       "cddl": [],
-      "error": "Error: Loading https://registry.khronos.org/webgl/specs/latest/1.0/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 105)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://registry.khronos.org/webgl/specs/latest/1.0/ triggered HTTP status 403\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)"
     },
     {
       "url": "https://registry.khronos.org/webgl/specs/latest/2.0/",
@@ -6997,7 +7003,7 @@
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 03 Jun 2026 04:09:00 GMT"
+        "lastModified": "Wed, 03 Jun 2026 04:08:57 GMT"
       },
       "date": "3 June 2026",
       "links": "links/ecmascript.json",
@@ -7390,6 +7396,52 @@
       "cddl": []
     },
     {
+      "url": "https://tc39.es/proposal-error-stack-accessor/",
+      "seriesComposition": "full",
+      "shortname": "tc39-error-stack-accessor",
+      "series": {
+        "shortname": "tc39-error-stack-accessor",
+        "currentSpecification": "tc39-error-stack-accessor",
+        "title": "Error Stack Accessor",
+        "shortTitle": "Error Stack Accessor",
+        "nightlyUrl": "https://tc39.es/proposal-error-stack-accessor/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-error-stack-accessor/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-error-stack-accessor",
+        "sourcePath": "spec.emu",
+        "filename": "index.html"
+      },
+      "title": "Error Stack Accessor",
+      "source": "spec",
+      "shortTitle": "Error Stack Accessor",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/proposal-error-stack-accessor/"
+      ],
+      "crawled": "https://tc39.es/proposal-error-stack-accessor/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 21 May 2026 12:13:08 GMT"
+      },
+      "date": "21 May 2026",
+      "links": "links/tc39-error-stack-accessor.json",
+      "headings": "headings/tc39-error-stack-accessor.json",
+      "ids": "ids/tc39-error-stack-accessor.json",
+      "cddl": []
+    },
+    {
       "url": "https://tc39.es/proposal-explicit-resource-management/",
       "seriesComposition": "full",
       "shortname": "tc39-explicit-resource-management",
@@ -7576,6 +7628,52 @@
       "cddl": []
     },
     {
+      "url": "https://tc39.es/proposal-intl-keep-trailing-zeros/",
+      "seriesComposition": "full",
+      "shortname": "tc39-intl-keep-trailing-zeros",
+      "series": {
+        "shortname": "tc39-intl-keep-trailing-zeros",
+        "currentSpecification": "tc39-intl-keep-trailing-zeros",
+        "title": "Keep trailing zeros in Intl.NumberFormat and Intl.PluralRules",
+        "shortTitle": "Keep trailing zeros in Intl.NumberFormat and Intl.PluralRules",
+        "nightlyUrl": "https://tc39.es/proposal-intl-keep-trailing-zeros/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-intl-keep-trailing-zeros/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-intl-keep-trailing-zeros",
+        "sourcePath": "spec.emu",
+        "filename": "index.html"
+      },
+      "title": "Keep trailing zeros in Intl.NumberFormat and Intl.PluralRules",
+      "source": "spec",
+      "shortTitle": "Keep trailing zeros in Intl.NumberFormat and Intl.PluralRules",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/proposal-intl-keep-trailing-zeros/"
+      ],
+      "crawled": "https://tc39.es/proposal-intl-keep-trailing-zeros/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 19 May 2026 14:32:11 GMT"
+      },
+      "date": "19 May 2026",
+      "links": "links/tc39-intl-keep-trailing-zeros.json",
+      "headings": "headings/tc39-intl-keep-trailing-zeros.json",
+      "ids": "ids/tc39-intl-keep-trailing-zeros.json",
+      "cddl": []
+    },
+    {
       "url": "https://tc39.es/proposal-intl-locale-info/",
       "seriesComposition": "full",
       "shortname": "tc39-intl-locale-info",
@@ -7619,6 +7717,144 @@
       "links": "links/tc39-intl-locale-info.json",
       "headings": "headings/tc39-intl-locale-info.json",
       "ids": "ids/tc39-intl-locale-info.json",
+      "cddl": []
+    },
+    {
+      "url": "https://tc39.es/proposal-iterator-chunking/",
+      "seriesComposition": "full",
+      "shortname": "tc39-iterator-chunking",
+      "series": {
+        "shortname": "tc39-iterator-chunking",
+        "currentSpecification": "tc39-iterator-chunking",
+        "title": "Iterator Chunking",
+        "shortTitle": "Iterator Chunking",
+        "nightlyUrl": "https://tc39.es/proposal-iterator-chunking/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-iterator-chunking/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-iterator-chunking",
+        "sourcePath": "spec.emu",
+        "filename": "index.html"
+      },
+      "title": "Iterator Chunking",
+      "source": "spec",
+      "shortTitle": "Iterator Chunking",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/proposal-iterator-chunking/"
+      ],
+      "crawled": "https://tc39.es/proposal-iterator-chunking/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 29 May 2026 22:05:35 GMT"
+      },
+      "date": "29 May 2026",
+      "links": "links/tc39-iterator-chunking.json",
+      "headings": "headings/tc39-iterator-chunking.json",
+      "ids": "ids/tc39-iterator-chunking.json",
+      "cddl": []
+    },
+    {
+      "url": "https://tc39.es/proposal-iterator-includes/",
+      "seriesComposition": "full",
+      "shortname": "tc39-iterator-includes",
+      "series": {
+        "shortname": "tc39-iterator-includes",
+        "currentSpecification": "tc39-iterator-includes",
+        "title": "Iterator Includes",
+        "shortTitle": "Iterator Includes",
+        "nightlyUrl": "https://tc39.es/proposal-iterator-includes/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-iterator-includes/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-iterator-includes",
+        "sourcePath": "spec.emu",
+        "filename": "index.html"
+      },
+      "title": "Iterator Includes",
+      "source": "spec",
+      "shortTitle": "Iterator Includes",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/proposal-iterator-includes/"
+      ],
+      "crawled": "https://tc39.es/proposal-iterator-includes/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 29 May 2026 22:07:30 GMT"
+      },
+      "date": "29 May 2026",
+      "links": "links/tc39-iterator-includes.json",
+      "headings": "headings/tc39-iterator-includes.json",
+      "ids": "ids/tc39-iterator-includes.json",
+      "cddl": []
+    },
+    {
+      "url": "https://tc39.es/proposal-iterator-join/",
+      "seriesComposition": "full",
+      "shortname": "tc39-iterator-join",
+      "series": {
+        "shortname": "tc39-iterator-join",
+        "currentSpecification": "tc39-iterator-join",
+        "title": "Proposal Iterator Join",
+        "shortTitle": "Proposal Iterator Join",
+        "nightlyUrl": "https://tc39.es/proposal-iterator-join/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-iterator-join/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-iterator-join",
+        "sourcePath": "spec.html",
+        "filename": "index.html"
+      },
+      "title": "Proposal Iterator Join",
+      "source": "spec",
+      "shortTitle": "Proposal Iterator Join",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/proposal-iterator-join/"
+      ],
+      "crawled": "https://tc39.es/proposal-iterator-join/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 24 Dec 2025 23:17:36 GMT"
+      },
+      "date": "24 December 2025",
+      "links": "links/tc39-iterator-join.json",
+      "headings": "headings/tc39-iterator-join.json",
+      "ids": "ids/tc39-iterator-join.json",
       "cddl": []
     },
     {
@@ -7757,6 +7993,52 @@
       "links": "links/tc39-nonextensible-applies-to-private.json",
       "headings": "headings/tc39-nonextensible-applies-to-private.json",
       "ids": "ids/tc39-nonextensible-applies-to-private.json",
+      "cddl": []
+    },
+    {
+      "url": "https://tc39.es/proposal-regexp-buffer-boundaries/",
+      "seriesComposition": "full",
+      "shortname": "tc39-regexp-buffer-boundaries",
+      "series": {
+        "shortname": "tc39-regexp-buffer-boundaries",
+        "currentSpecification": "tc39-regexp-buffer-boundaries",
+        "title": "Regular Expression Buffer Boundaries for ECMAScript",
+        "shortTitle": "Regular Expression Buffer Boundaries for ECMAScript",
+        "nightlyUrl": "https://tc39.es/proposal-regexp-buffer-boundaries/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-regexp-buffer-boundaries/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/tc39/proposal-regexp-buffer-boundaries",
+        "sourcePath": "spec/index.html",
+        "filename": "index.html"
+      },
+      "title": "Regular Expression Buffer Boundaries for ECMAScript",
+      "source": "spec",
+      "shortTitle": "Regular Expression Buffer Boundaries for ECMAScript",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://tc39.es/proposal-regexp-buffer-boundaries/"
+      ],
+      "crawled": "https://tc39.es/proposal-regexp-buffer-boundaries/",
+      "crawlCacheInfo": {
+        "lastModified": "Thu, 21 May 2026 13:51:13 GMT"
+      },
+      "date": "21 May 2026",
+      "links": "links/tc39-regexp-buffer-boundaries.json",
+      "headings": "headings/tc39-regexp-buffer-boundaries.json",
+      "ids": "ids/tc39-regexp-buffer-boundaries.json",
       "cddl": []
     },
     {
@@ -8243,6 +8525,58 @@
       ]
     },
     {
+      "url": "https://w3c.github.io/css-aam/",
+      "seriesComposition": "full",
+      "shortname": "css-aam",
+      "series": {
+        "shortname": "css-aam",
+        "currentSpecification": "css-aam",
+        "title": "CSS Accessibility API Mappings",
+        "shortTitle": "CSS Accessibility API Mappings",
+        "nightlyUrl": "https://w3c.github.io/css-aam/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Accessible Rich Internet Applications Working Group",
+          "url": "https://www.w3.org/WAI/about/groups/ariawg/"
+        },
+        {
+          "name": "SVG Accessibility Task Force",
+          "url": "https://www.w3.org/WAI/PF/svg-a11y-tf/"
+        }
+      ],
+      "nightly": {
+        "url": "https://w3c.github.io/css-aam/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/aria",
+        "sourcePath": "css-aam/index.html",
+        "filename": "index.html"
+      },
+      "title": "CSS Accessibility API Mappings 1.0",
+      "source": "spec",
+      "shortTitle": "CSS Accessibility API Mappings 1.0",
+      "categories": [
+        "browser"
+      ],
+      "standing": "good",
+      "versions": [
+        "https://w3c.github.io/css-aam/"
+      ],
+      "crawled": "https://w3c.github.io/css-aam/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 29 May 2026 18:22:58 GMT"
+      },
+      "generator": "respec",
+      "date": "29 May 2026",
+      "links": "links/css-aam.json",
+      "refs": "refs/css-aam.json",
+      "headings": "headings/css-aam.json",
+      "ids": "ids/css-aam.json",
+      "cddl": []
+    },
+    {
       "url": "https://w3c.github.io/data-shapes/shacl12-cs/",
       "seriesComposition": "full",
       "shortname": "shacl12-cs",
@@ -8339,55 +8673,6 @@
       "dfns": "dfns/shacl12-profiling.json",
       "headings": "headings/shacl12-profiling.json",
       "ids": "ids/shacl12-profiling.json",
-      "cddl": []
-    },
-    {
-      "url": "https://w3c.github.io/data-shapes/shacl12-ui/",
-      "seriesComposition": "full",
-      "shortname": "shacl12-ui",
-      "series": {
-        "shortname": "shacl-ui",
-        "currentSpecification": "shacl12-ui",
-        "title": "SHACL 1.2 User Interfaces",
-        "shortTitle": "SHACL 1.2 User Interfaces",
-        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-ui/"
-      },
-      "seriesVersion": "1.2",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Data Shapes Working Group",
-          "url": "https://www.w3.org/groups/wg/data-shapes/"
-        }
-      ],
-      "nightly": {
-        "url": "https://w3c.github.io/data-shapes/shacl12-ui/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/data-shapes",
-        "sourcePath": "shacl12-ui/index.html",
-        "filename": "index.html"
-      },
-      "title": "SHACL 1.2 User Interfaces",
-      "source": "spec",
-      "shortTitle": "SHACL 1.2 User Interfaces",
-      "categories": [],
-      "standing": "good",
-      "versions": [
-        "https://w3c.github.io/data-shapes/shacl12-ui/"
-      ],
-      "crawled": "https://w3c.github.io/data-shapes/shacl12-ui/",
-      "crawlCacheInfo": {
-        "lastModified": "Wed, 03 Jun 2026 07:50:03 GMT"
-      },
-      "generator": "respec",
-      "date": "03 June 2026",
-      "algorithms": "algorithms/shacl12-ui.json",
-      "links": "links/shacl12-ui.json",
-      "refs": "refs/shacl12-ui.json",
-      "dfns": "dfns/shacl12-ui.json",
-      "headings": "headings/shacl12-ui.json",
-      "ids": "ids/shacl12-ui.json",
       "cddl": []
     },
     {
@@ -9189,56 +9474,6 @@
       "cddl": []
     },
     {
-      "url": "https://w3c.github.io/vc-recognized-entities/",
-      "seriesComposition": "full",
-      "shortname": "vc-recognized-entities",
-      "series": {
-        "shortname": "vc-recognized-entities",
-        "currentSpecification": "vc-recognized-entities",
-        "title": "Recognized Entities v1.0",
-        "shortTitle": "Recognized Entities v1.0",
-        "nightlyUrl": "https://w3c.github.io/vc-recognized-entities/"
-      },
-      "formerNames": [
-        "vc-recognition"
-      ],
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Verifiable Credentials Working Group",
-          "url": "https://www.w3.org/groups/wg/vc/"
-        }
-      ],
-      "nightly": {
-        "url": "https://w3c.github.io/vc-recognized-entities/",
-        "status": "Editor's Draft",
-        "alternateUrls": [],
-        "repository": "https://github.com/w3c/vc-recognized-entities",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "title": "Recognized Entities v1.0",
-      "source": "spec",
-      "shortTitle": "Recognized Entities v1.0",
-      "categories": [],
-      "standing": "good",
-      "versions": [
-        "https://w3c.github.io/vc-recognized-entities/"
-      ],
-      "crawled": "https://w3c.github.io/vc-recognized-entities/",
-      "crawlCacheInfo": {
-        "lastModified": "Tue, 26 May 2026 20:15:13 GMT"
-      },
-      "generator": "respec",
-      "date": "26 May 2026",
-      "links": "links/vc-recognized-entities.json",
-      "refs": "refs/vc-recognized-entities.json",
-      "dfns": "dfns/vc-recognized-entities.json",
-      "headings": "headings/vc-recognized-entities.json",
-      "ids": "ids/vc-recognized-entities.json",
-      "cddl": []
-    },
-    {
       "url": "https://w3c.github.io/web-share-target/",
       "seriesComposition": "full",
       "shortname": "web-share-target",
@@ -9558,7 +9793,7 @@
       "headings": "headings/wasm-js-api-2-fork-content-security-policy.json",
       "ids": "ids/wasm-js-api-2-fork-content-security-policy.json",
       "cddl": [],
-      "error": "Error: Loading https://webassembly.github.io/content-security-policy/js-api/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 163)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://webassembly.github.io/content-security-policy/js-api/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 168)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://webassembly.github.io/custom-descriptors/",
@@ -11811,7 +12046,7 @@
       ],
       "crawled": "https://wicg.github.io/direct-sockets/",
       "crawlCacheInfo": {
-        "lastModified": "Fri, 24 Apr 2026 12:51:05 GMT"
+        "lastModified": "Fri, 24 Apr 2026 12:51:04 GMT"
       },
       "generator": "respec",
       "date": "24 April 2026",
@@ -14080,64 +14315,6 @@
       "cddl": []
     },
     {
-      "url": "https://wicg.github.io/sanitizer-api/",
-      "seriesComposition": "full",
-      "shortname": "sanitizer-api",
-      "series": {
-        "shortname": "sanitizer-api",
-        "currentSpecification": "sanitizer-api",
-        "title": "HTML Sanitizer API",
-        "shortTitle": "HTML Sanitizer API",
-        "nightlyUrl": "https://wicg.github.io/sanitizer-api/"
-      },
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Web Platform Incubator Community Group",
-          "url": "https://www.w3.org/community/wicg/"
-        }
-      ],
-      "nightly": {
-        "url": "https://wicg.github.io/sanitizer-api/",
-        "status": "Draft Community Group Report",
-        "alternateUrls": [],
-        "repository": "https://github.com/WICG/sanitizer-api",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "title": "HTML Sanitizer API",
-      "source": "spec",
-      "shortTitle": "HTML Sanitizer API",
-      "categories": [
-        "browser"
-      ],
-      "standing": "good",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "sanitizer-api"
-        ]
-      },
-      "versions": [
-        "https://wicg.github.io/sanitizer-api/"
-      ],
-      "crawled": "https://wicg.github.io/sanitizer-api/",
-      "crawlCacheInfo": {
-        "lastModified": "Fri, 22 May 2026 09:18:30 GMT"
-      },
-      "generator": "bikeshed",
-      "date": "22 May 2026",
-      "revision": "c0f1ca8f8f5cbded5bb36ec7d822005e641b248b",
-      "algorithms": "algorithms/sanitizer-api.json",
-      "links": "links/sanitizer-api.json",
-      "refs": "refs/sanitizer-api.json",
-      "idl": "idl/sanitizer-api.idl",
-      "dfns": "dfns/sanitizer-api.json",
-      "headings": "headings/sanitizer-api.json",
-      "ids": "ids/sanitizer-api.json",
-      "cddl": []
-    },
-    {
       "url": "https://wicg.github.io/savedata/",
       "seriesComposition": "full",
       "shortname": "savedata",
@@ -14618,11 +14795,11 @@
       ],
       "crawled": "https://wicg.github.io/soft-navigations/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 19:03:13 GMT"
+        "lastModified": "Wed, 03 Jun 2026 13:13:09 GMT"
       },
       "generator": "bikeshed",
-      "date": "2 June 2026",
-      "revision": "409825024100d2fb6683e5c281e8939e61fb5165",
+      "date": "3 June 2026",
+      "revision": "9a213b4295448ee77868ee5584131a2c8a5ba7d5",
       "algorithms": "algorithms/soft-navigations.json",
       "links": "links/soft-navigations.json",
       "refs": "refs/soft-navigations.json",
@@ -15022,7 +15199,7 @@
       ],
       "crawled": "https://wicg.github.io/web-otp/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 04 Feb 2025 17:18:17 GMT"
+        "lastModified": "Tue, 04 Feb 2025 17:18:16 GMT"
       },
       "generator": "bikeshed",
       "date": "13 April 2021",
@@ -15059,7 +15236,7 @@
         "status": "Unofficial Proposal Draft",
         "alternateUrls": [],
         "repository": "https://github.com/WICG/web-smart-card",
-        "sourcePath": "index.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Web Smart Card API",
@@ -15074,7 +15251,7 @@
       ],
       "crawled": "https://wicg.github.io/web-smart-card/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 26 May 2026 14:58:20 GMT"
+        "lastModified": "Tue, 26 May 2026 14:58:19 GMT"
       },
       "generator": "bikeshed",
       "date": "26 May 2026",
@@ -15607,7 +15784,7 @@
       ]
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc2397",
+      "url": "https://www.rfc-editor.org/info/rfc2397/",
       "seriesComposition": "full",
       "shortname": "rfc2397",
       "series": {
@@ -15615,7 +15792,7 @@
         "currentSpecification": "rfc2397",
         "title": "The \"data\" URL scheme",
         "shortTitle": "The \"data\" URL scheme",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc2397"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc2397/"
       },
       "organization": "IETF",
       "groups": [
@@ -15625,13 +15802,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc2397",
+        "url": "https://www.rfc-editor.org/info/rfc2397/",
         "status": "Proposed Standard",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc2397",
           "https://tools.ietf.org/html/rfc2397"
-        ],
-        "filename": "rfc2397.html"
+        ]
       },
       "title": "RFC 2397: The \"data\" URL scheme | RFC Editor",
       "source": "ietf",
@@ -15641,9 +15817,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc2397"
+        "https://www.rfc-editor.org/info/rfc2397/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc2397/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:06:15 GMT"
+      },
       "date": "3 June 2026",
       "links": "links/rfc2397.json",
       "headings": "headings/rfc2397.json",
@@ -15651,7 +15830,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc4120",
+      "url": "https://www.rfc-editor.org/info/rfc4120/",
       "seriesComposition": "full",
       "shortname": "rfc4120",
       "series": {
@@ -15659,7 +15838,7 @@
         "currentSpecification": "rfc4120",
         "title": "The Kerberos Network Authentication Service (V5)",
         "shortTitle": "Kerberos",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc4120"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc4120/"
       },
       "shortTitle": "Kerberos",
       "organization": "IETF",
@@ -15670,13 +15849,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc4120",
+        "url": "https://www.rfc-editor.org/info/rfc4120/",
         "status": "Proposed Standard",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc4120",
           "https://tools.ietf.org/html/rfc4120"
-        ],
-        "filename": "rfc4120.html"
+        ]
       },
       "title": "RFC 4120: The Kerberos Network Authentication Service (V5) | RFC Editor",
       "source": "ietf",
@@ -15685,9 +15863,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc4120"
+        "https://www.rfc-editor.org/info/rfc4120/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc4120/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:06:22 GMT"
+      },
       "date": "3 June 2026",
       "links": "links/rfc4120.json",
       "headings": "headings/rfc4120.json",
@@ -15695,7 +15876,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc5861",
+      "url": "https://www.rfc-editor.org/info/rfc5861/",
       "seriesComposition": "full",
       "shortname": "rfc5861",
       "series": {
@@ -15731,7 +15912,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc5861",
+        "https://www.rfc-editor.org/info/rfc5861/",
         "https://httpwg.org/specs/rfc5861.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc5861.html",
@@ -15746,7 +15927,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc6265",
+      "url": "https://www.rfc-editor.org/info/rfc6265/",
       "seriesComposition": "full",
       "shortname": "rfc6265",
       "series": {
@@ -15782,7 +15963,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc6265",
+        "https://www.rfc-editor.org/info/rfc6265/",
         "https://httpwg.org/specs/rfc6265.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc6265.html",
@@ -15798,7 +15979,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc6266",
+      "url": "https://www.rfc-editor.org/info/rfc6266/",
       "seriesComposition": "full",
       "shortname": "rfc6266",
       "series": {
@@ -15834,7 +16015,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc6266",
+        "https://www.rfc-editor.org/info/rfc6266/",
         "https://httpwg.org/specs/rfc6266.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc6266.html",
@@ -15849,7 +16030,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc6386",
+      "url": "https://www.rfc-editor.org/info/rfc6386/",
       "seriesComposition": "full",
       "shortname": "rfc6386",
       "series": {
@@ -15857,7 +16038,7 @@
         "currentSpecification": "rfc6386",
         "title": "VP8 Data Format and Decoding Guide",
         "shortTitle": "VP8 Data Format and Decoding Guide",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc6386"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc6386/"
       },
       "organization": "IETF",
       "groups": [
@@ -15867,13 +16048,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc6386",
+        "url": "https://www.rfc-editor.org/info/rfc6386/",
         "status": "Informational",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc6386",
           "https://tools.ietf.org/html/rfc6386"
-        ],
-        "filename": "rfc6386.html"
+        ]
       },
       "title": "RFC 6386: VP8 Data Format and Decoding Guide | RFC Editor",
       "source": "ietf",
@@ -15883,9 +16063,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc6386"
+        "https://www.rfc-editor.org/info/rfc6386/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc6386/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:06:26 GMT"
+      },
       "date": "3 June 2026",
       "links": "links/rfc6386.json",
       "headings": "headings/rfc6386.json",
@@ -15893,7 +16076,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc6454",
+      "url": "https://www.rfc-editor.org/info/rfc6454/",
       "seriesComposition": "full",
       "shortname": "rfc6454",
       "series": {
@@ -15901,7 +16084,7 @@
         "currentSpecification": "rfc6454",
         "title": "The Web Origin Concept",
         "shortTitle": "The Web Origin Concept",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc6454"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc6454/"
       },
       "organization": "IETF",
       "groups": [
@@ -15911,13 +16094,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc6454",
+        "url": "https://www.rfc-editor.org/info/rfc6454/",
         "status": "Proposed Standard",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc6454",
           "https://tools.ietf.org/html/rfc6454"
-        ],
-        "filename": "rfc6454.html"
+        ]
       },
       "title": "RFC 6454: The Web Origin Concept | RFC Editor",
       "source": "ietf",
@@ -15927,9 +16109,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc6454"
+        "https://www.rfc-editor.org/info/rfc6454/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc6454/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:06:31 GMT"
+      },
       "date": "3 June 2026",
       "links": "links/rfc6454.json",
       "headings": "headings/rfc6454.json",
@@ -15937,7 +16122,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc6455",
+      "url": "https://www.rfc-editor.org/info/rfc6455/",
       "seriesComposition": "full",
       "shortname": "rfc6455",
       "series": {
@@ -15945,7 +16130,7 @@
         "currentSpecification": "rfc6455",
         "title": "The WebSocket Protocol",
         "shortTitle": "The WebSocket Protocol",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc6455"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc6455/"
       },
       "organization": "IETF",
       "groups": [
@@ -15955,13 +16140,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc6455",
+        "url": "https://www.rfc-editor.org/info/rfc6455/",
         "status": "Proposed Standard",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc6455",
           "https://tools.ietf.org/html/rfc6455"
-        ],
-        "filename": "rfc6455.html"
+        ]
       },
       "title": "RFC 6455: The WebSocket Protocol | RFC Editor",
       "source": "ietf",
@@ -15971,9 +16155,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc6455"
+        "https://www.rfc-editor.org/info/rfc6455/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc6455/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:06:34 GMT"
+      },
       "date": "3 June 2026",
       "links": "links/rfc6455.json",
       "headings": "headings/rfc6455.json",
@@ -15981,7 +16168,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc6797",
+      "url": "https://www.rfc-editor.org/info/rfc6797/",
       "seriesComposition": "full",
       "shortname": "rfc6797",
       "series": {
@@ -15989,7 +16176,7 @@
         "currentSpecification": "rfc6797",
         "title": "HTTP Strict Transport Security (HSTS)",
         "shortTitle": "HSTS",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc6797"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc6797/"
       },
       "organization": "IETF",
       "groups": [
@@ -15999,13 +16186,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc6797",
+        "url": "https://www.rfc-editor.org/info/rfc6797/",
         "status": "Proposed Standard",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc6797",
           "https://tools.ietf.org/html/rfc6797"
-        ],
-        "filename": "rfc6797.html"
+        ]
       },
       "title": "RFC 6797: HTTP Strict Transport Security (HSTS) | RFC Editor",
       "source": "ietf",
@@ -16015,9 +16201,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc6797"
+        "https://www.rfc-editor.org/info/rfc6797/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc6797/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:06:39 GMT"
+      },
       "date": "3 June 2026",
       "links": "links/rfc6797.json",
       "headings": "headings/rfc6797.json",
@@ -16025,7 +16214,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7034",
+      "url": "https://www.rfc-editor.org/info/rfc7034/",
       "seriesComposition": "full",
       "shortname": "rfc7034",
       "series": {
@@ -16033,7 +16222,7 @@
         "currentSpecification": "rfc7034",
         "title": "HTTP Header Field X-Frame-Options",
         "shortTitle": "HTTP Header Field X-Frame-Options",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc7034"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc7034/"
       },
       "organization": "IETF",
       "groups": [
@@ -16043,13 +16232,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc7034",
+        "url": "https://www.rfc-editor.org/info/rfc7034/",
         "status": "Informational",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc7034",
           "https://tools.ietf.org/html/rfc7034"
-        ],
-        "filename": "rfc7034.html"
+        ]
       },
       "title": "RFC 7034: HTTP Header Field X-Frame-Options | RFC Editor",
       "source": "ietf",
@@ -16059,9 +16247,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7034"
+        "https://www.rfc-editor.org/info/rfc7034/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc7034/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:06:44 GMT"
+      },
       "date": "3 June 2026",
       "links": "links/rfc7034.json",
       "headings": "headings/rfc7034.json",
@@ -16069,7 +16260,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7239",
+      "url": "https://www.rfc-editor.org/info/rfc7239/",
       "seriesComposition": "full",
       "shortname": "rfc7239",
       "series": {
@@ -16077,7 +16268,7 @@
         "currentSpecification": "rfc7239",
         "title": "Forwarded HTTP Extension",
         "shortTitle": "Forwarded HTTP Extension",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc7239"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc7239/"
       },
       "organization": "IETF",
       "groups": [
@@ -16087,13 +16278,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc7239",
+        "url": "https://www.rfc-editor.org/info/rfc7239/",
         "status": "Proposed Standard",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc7239",
           "https://tools.ietf.org/html/rfc7239"
-        ],
-        "filename": "rfc7239.html"
+        ]
       },
       "title": "RFC 7239: Forwarded HTTP Extension | RFC Editor",
       "source": "ietf",
@@ -16103,9 +16293,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7239"
+        "https://www.rfc-editor.org/info/rfc7239/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc7239/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:06:51 GMT"
+      },
       "date": "3 June 2026",
       "links": "links/rfc7239.json",
       "headings": "headings/rfc7239.json",
@@ -16113,7 +16306,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7240",
+      "url": "https://www.rfc-editor.org/info/rfc7240/",
       "seriesComposition": "full",
       "shortname": "rfc7240",
       "series": {
@@ -16149,7 +16342,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7240",
+        "https://www.rfc-editor.org/info/rfc7240/",
         "https://httpwg.org/specs/rfc7240.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc7240.html",
@@ -16165,7 +16358,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7469",
+      "url": "https://www.rfc-editor.org/info/rfc7469/",
       "seriesComposition": "full",
       "shortname": "rfc7469",
       "series": {
@@ -16173,7 +16366,7 @@
         "currentSpecification": "rfc7469",
         "title": "Public Key Pinning Extension for HTTP",
         "shortTitle": "Public Key Pinning Extension for HTTP",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc7469"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc7469/"
       },
       "organization": "IETF",
       "groups": [
@@ -16183,13 +16376,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc7469",
+        "url": "https://www.rfc-editor.org/info/rfc7469/",
         "status": "Proposed Standard",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc7469",
           "https://tools.ietf.org/html/rfc7469"
-        ],
-        "filename": "rfc7469.html"
+        ]
       },
       "title": "RFC 7469: Public Key Pinning Extension for HTTP | RFC Editor",
       "source": "ietf",
@@ -16199,9 +16391,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7469"
+        "https://www.rfc-editor.org/info/rfc7469/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc7469/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:06:58 GMT"
+      },
       "date": "3 June 2026",
       "links": "links/rfc7469.json",
       "headings": "headings/rfc7469.json",
@@ -16209,7 +16404,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7578",
+      "url": "https://www.rfc-editor.org/info/rfc7578/",
       "seriesComposition": "full",
       "shortname": "rfc7578",
       "series": {
@@ -16217,7 +16412,7 @@
         "currentSpecification": "rfc7578",
         "title": "Returning Values from Forms: multipart/form-data",
         "shortTitle": "Returning Values from Forms: multipart/form-data",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc7578"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc7578/"
       },
       "organization": "IETF",
       "groups": [
@@ -16227,13 +16422,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc7578",
+        "url": "https://www.rfc-editor.org/info/rfc7578/",
         "status": "Proposed Standard",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc7578",
           "https://tools.ietf.org/html/rfc7578"
-        ],
-        "filename": "rfc7578.html"
+        ]
       },
       "title": "RFC 7578: Returning Values from Forms: multipart/form-data | RFC Editor",
       "source": "ietf",
@@ -16243,9 +16437,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7578"
+        "https://www.rfc-editor.org/info/rfc7578/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc7578/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:07:06 GMT"
+      },
       "date": "3 June 2026",
       "links": "links/rfc7578.json",
       "headings": "headings/rfc7578.json",
@@ -16253,7 +16450,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7616",
+      "url": "https://www.rfc-editor.org/info/rfc7616/",
       "seriesComposition": "full",
       "shortname": "rfc7616",
       "series": {
@@ -16289,7 +16486,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7616",
+        "https://www.rfc-editor.org/info/rfc7616/",
         "https://httpwg.org/specs/rfc7616.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc7616.html",
@@ -16304,7 +16501,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7617",
+      "url": "https://www.rfc-editor.org/info/rfc7617/",
       "seriesComposition": "full",
       "shortname": "rfc7617",
       "series": {
@@ -16340,7 +16537,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7617",
+        "https://www.rfc-editor.org/info/rfc7617/",
         "https://httpwg.org/specs/rfc7617.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc7617.html",
@@ -16355,7 +16552,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7725",
+      "url": "https://www.rfc-editor.org/info/rfc7725/",
       "seriesComposition": "full",
       "shortname": "rfc7725",
       "series": {
@@ -16391,7 +16588,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7725",
+        "https://www.rfc-editor.org/info/rfc7725/",
         "https://httpwg.org/specs/rfc7725.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc7725.html",
@@ -16406,7 +16603,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7838",
+      "url": "https://www.rfc-editor.org/info/rfc7838/",
       "seriesComposition": "full",
       "shortname": "rfc7838",
       "series": {
@@ -16442,7 +16639,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7838",
+        "https://www.rfc-editor.org/info/rfc7838/",
         "https://httpwg.org/specs/rfc7838.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc7838.html",
@@ -16457,7 +16654,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7932",
+      "url": "https://www.rfc-editor.org/info/rfc7932/",
       "seriesComposition": "full",
       "shortname": "rfc7932",
       "series": {
@@ -16465,7 +16662,7 @@
         "currentSpecification": "rfc7932",
         "title": "Brotli Compressed Data Format",
         "shortTitle": "Brotli Compressed Data Format",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc7932"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc7932/"
       },
       "organization": "IETF",
       "groups": [
@@ -16475,13 +16672,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc7932",
+        "url": "https://www.rfc-editor.org/info/rfc7932/",
         "status": "Informational",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc7932",
           "https://tools.ietf.org/html/rfc7932"
-        ],
-        "filename": "rfc7932.html"
+        ]
       },
       "title": "RFC 7932: Brotli Compressed Data Format | RFC Editor",
       "source": "ietf",
@@ -16491,9 +16687,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7932"
+        "https://www.rfc-editor.org/info/rfc7932/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc7932/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:07:13 GMT"
+      },
       "date": "3 June 2026",
       "links": "links/rfc7932.json",
       "headings": "headings/rfc7932.json",
@@ -16501,7 +16700,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc8246",
+      "url": "https://www.rfc-editor.org/info/rfc8246/",
       "seriesComposition": "full",
       "shortname": "rfc8246",
       "series": {
@@ -16537,7 +16736,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc8246",
+        "https://www.rfc-editor.org/info/rfc8246/",
         "https://httpwg.org/specs/rfc8246.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc8246.html",
@@ -16552,7 +16751,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc8288",
+      "url": "https://www.rfc-editor.org/info/rfc8288/",
       "seriesComposition": "full",
       "shortname": "rfc8288",
       "series": {
@@ -16588,7 +16787,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc8288",
+        "https://www.rfc-editor.org/info/rfc8288/",
         "https://httpwg.org/specs/rfc8288.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc8288.html",
@@ -16604,7 +16803,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc8297",
+      "url": "https://www.rfc-editor.org/info/rfc8297/",
       "seriesComposition": "full",
       "shortname": "rfc8297",
       "series": {
@@ -16640,7 +16839,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc8297",
+        "https://www.rfc-editor.org/info/rfc8297/",
         "https://httpwg.org/specs/rfc8297.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc8297.html",
@@ -16655,7 +16854,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc8470",
+      "url": "https://www.rfc-editor.org/info/rfc8470/",
       "seriesComposition": "full",
       "shortname": "rfc8470",
       "series": {
@@ -16691,7 +16890,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc8470",
+        "https://www.rfc-editor.org/info/rfc8470/",
         "https://httpwg.org/specs/rfc8470.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc8470.html",
@@ -16707,7 +16906,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc8610",
+      "url": "https://www.rfc-editor.org/info/rfc8610/",
       "seriesComposition": "full",
       "shortname": "rfc8610",
       "series": {
@@ -16715,7 +16914,7 @@
         "currentSpecification": "rfc8610",
         "title": "Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures",
         "shortTitle": "CDDL",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc8610"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc8610/"
       },
       "shortTitle": "CDDL",
       "organization": "IETF",
@@ -16726,13 +16925,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc8610",
+        "url": "https://www.rfc-editor.org/info/rfc8610/",
         "status": "Proposed Standard",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc8610",
           "https://tools.ietf.org/html/rfc8610"
-        ],
-        "filename": "rfc8610.html"
+        ]
       },
       "title": "RFC 8610: Concise Data Definition Language (CDDL): A Notational Convention to Express Concise Binary Object Representation (CBOR) and JSON Data Structures | RFC Editor",
       "source": "ietf",
@@ -16741,9 +16939,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc8610"
+        "https://www.rfc-editor.org/info/rfc8610/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc8610/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:07:20 GMT"
+      },
       "date": "3 June 2026",
       "links": "links/rfc8610.json",
       "dfns": "dfns/rfc8610.json",
@@ -16752,7 +16953,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc8878",
+      "url": "https://www.rfc-editor.org/info/rfc8878/",
       "seriesComposition": "full",
       "shortname": "rfc8878",
       "series": {
@@ -16760,7 +16961,7 @@
         "currentSpecification": "rfc8878",
         "title": "Zstandard Compression and the 'application/zstd' Media Type",
         "shortTitle": "Zstandard Compression and the 'application/zstd' Media Type",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc8878"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc8878/"
       },
       "organization": "IETF",
       "groups": [
@@ -16770,13 +16971,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc8878",
+        "url": "https://www.rfc-editor.org/info/rfc8878/",
         "status": "Informational",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc8878",
           "https://tools.ietf.org/html/rfc8878"
-        ],
-        "filename": "rfc8878.html"
+        ]
       },
       "title": "RFC 8878: Zstandard Compression and the 'application/zstd' Media Type | RFC Editor",
       "source": "ietf",
@@ -16786,9 +16986,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc8878"
+        "https://www.rfc-editor.org/info/rfc8878/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc8878/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:07:27 GMT"
+      },
       "date": "3 June 2026",
       "links": "links/rfc8878.json",
       "refs": "refs/rfc8878.json",
@@ -16797,7 +17000,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc8942",
+      "url": "https://www.rfc-editor.org/info/rfc8942/",
       "seriesComposition": "full",
       "shortname": "rfc8942",
       "series": {
@@ -16833,7 +17036,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc8942",
+        "https://www.rfc-editor.org/info/rfc8942/",
         "https://httpwg.org/specs/rfc8942.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc8942.html",
@@ -16848,7 +17051,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc9110",
+      "url": "https://www.rfc-editor.org/info/rfc9110/",
       "seriesComposition": "full",
       "shortname": "rfc9110",
       "series": {
@@ -16884,7 +17087,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc9110",
+        "https://www.rfc-editor.org/info/rfc9110/",
         "https://httpwg.org/specs/rfc9110.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc9110.html",
@@ -16901,7 +17104,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc9111",
+      "url": "https://www.rfc-editor.org/info/rfc9111/",
       "seriesComposition": "full",
       "shortname": "rfc9111",
       "series": {
@@ -16937,7 +17140,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc9111",
+        "https://www.rfc-editor.org/info/rfc9111/",
         "https://httpwg.org/specs/rfc9111.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc9111.html",
@@ -16952,7 +17155,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc9112",
+      "url": "https://www.rfc-editor.org/info/rfc9112/",
       "seriesComposition": "full",
       "shortname": "rfc9112",
       "series": {
@@ -16988,7 +17191,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc9112",
+        "https://www.rfc-editor.org/info/rfc9112/",
         "https://httpwg.org/specs/rfc9112.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc9112.html",
@@ -17004,7 +17207,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc9113",
+      "url": "https://www.rfc-editor.org/info/rfc9113/",
       "seriesComposition": "full",
       "shortname": "rfc9113",
       "series": {
@@ -17040,7 +17243,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc9113",
+        "https://www.rfc-editor.org/info/rfc9113/",
         "https://httpwg.org/specs/rfc9113.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc9113.html",
@@ -17055,7 +17258,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc9114",
+      "url": "https://www.rfc-editor.org/info/rfc9114/",
       "seriesComposition": "full",
       "shortname": "rfc9114",
       "series": {
@@ -17091,7 +17294,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc9114",
+        "https://www.rfc-editor.org/info/rfc9114/",
         "https://httpwg.org/specs/rfc9114.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc9114.html",
@@ -17106,7 +17309,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc9163",
+      "url": "https://www.rfc-editor.org/info/rfc9163/",
       "seriesComposition": "full",
       "shortname": "rfc9163",
       "series": {
@@ -17114,18 +17317,17 @@
         "currentSpecification": "rfc9163",
         "title": "Expect-CT Extension for HTTP",
         "shortTitle": "Expect-CT Extension for HTTP",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc9163"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc9163/"
       },
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc9163",
+        "url": "https://www.rfc-editor.org/info/rfc9163/",
         "status": "Experimental",
         "repository": "https://github.com/httpwg/http-extensions",
         "sourcePath": "archive/draft-ietf-httpbis-expect-ct.md",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc9163",
           "https://tools.ietf.org/html/rfc9163"
-        ],
-        "filename": "rfc9163.html"
+        ]
       },
       "organization": "IETF",
       "groups": [
@@ -17142,9 +17344,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc9163"
+        "https://www.rfc-editor.org/info/rfc9163/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc9163/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:07:33 GMT"
+      },
       "date": "3 June 2026",
       "algorithms": "algorithms/rfc9163.json",
       "links": "links/rfc9163.json",
@@ -17154,7 +17359,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc9218",
+      "url": "https://www.rfc-editor.org/info/rfc9218/",
       "seriesComposition": "full",
       "shortname": "rfc9218",
       "series": {
@@ -17190,7 +17395,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc9218",
+        "https://www.rfc-editor.org/info/rfc9218/",
         "https://httpwg.org/specs/rfc9218.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc9218.html",
@@ -17205,7 +17410,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc9421",
+      "url": "https://www.rfc-editor.org/info/rfc9421/",
       "seriesComposition": "full",
       "shortname": "rfc9421",
       "series": {
@@ -17241,7 +17446,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc9421",
+        "https://www.rfc-editor.org/info/rfc9421/",
         "https://httpwg.org/specs/rfc9421.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc9421.html",
@@ -17257,7 +17462,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc9530",
+      "url": "https://www.rfc-editor.org/info/rfc9530/",
       "seriesComposition": "full",
       "shortname": "rfc9530",
       "series": {
@@ -17296,7 +17501,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc9530",
+        "https://www.rfc-editor.org/info/rfc9530/",
         "https://httpwg.org/specs/rfc9530.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc9530.html",
@@ -17311,7 +17516,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc9649",
+      "url": "https://www.rfc-editor.org/info/rfc9649/",
       "seriesComposition": "full",
       "shortname": "rfc9649",
       "series": {
@@ -17319,7 +17524,7 @@
         "currentSpecification": "rfc9649",
         "title": "WebP Image Format",
         "shortTitle": "WebP Image Format",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc9649"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc9649/"
       },
       "formerNames": [
         "webp"
@@ -17332,13 +17537,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc9649",
+        "url": "https://www.rfc-editor.org/info/rfc9649/",
         "status": "Informational",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc9649",
           "https://tools.ietf.org/html/rfc9649"
-        ],
-        "filename": "rfc9649.html"
+        ]
       },
       "title": "RFC 9649: WebP Image Format | RFC Editor",
       "source": "ietf",
@@ -17348,9 +17552,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc9649"
+        "https://www.rfc-editor.org/info/rfc9649/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc9649/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:07:36 GMT"
+      },
       "date": "3 June 2026",
       "algorithms": "algorithms/rfc9649.json",
       "links": "links/rfc9649.json",
@@ -17360,7 +17567,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc9659",
+      "url": "https://www.rfc-editor.org/info/rfc9659/",
       "seriesComposition": "full",
       "shortname": "rfc9659",
       "series": {
@@ -17368,7 +17575,7 @@
         "currentSpecification": "rfc9659",
         "title": "Window Sizing for Zstandard Content Encoding",
         "shortTitle": "Window Sizing for Zstandard Content Encoding",
-        "nightlyUrl": "https://www.rfc-editor.org/rfc/rfc9659"
+        "nightlyUrl": "https://www.rfc-editor.org/info/rfc9659/"
       },
       "organization": "IETF",
       "groups": [
@@ -17378,13 +17585,12 @@
         }
       ],
       "nightly": {
-        "url": "https://www.rfc-editor.org/rfc/rfc9659",
+        "url": "https://www.rfc-editor.org/info/rfc9659/",
         "status": "Informational",
         "alternateUrls": [
           "https://datatracker.ietf.org/doc/html/rfc9659",
           "https://tools.ietf.org/html/rfc9659"
-        ],
-        "filename": "rfc9659.html"
+        ]
       },
       "title": "RFC 9659: Window Sizing for Zstandard Content Encoding | RFC Editor",
       "source": "ietf",
@@ -17394,9 +17600,12 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc9659"
+        "https://www.rfc-editor.org/info/rfc9659/"
       ],
       "crawled": "https://www.rfc-editor.org/info/rfc9659/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 14:07:39 GMT"
+      },
       "date": "3 June 2026",
       "links": "links/rfc9659.json",
       "refs": "refs/rfc9659.json",
@@ -17405,7 +17614,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc9842",
+      "url": "https://www.rfc-editor.org/info/rfc9842/",
       "seriesComposition": "full",
       "shortname": "rfc9842",
       "series": {
@@ -17444,7 +17653,7 @@
       ],
       "standing": "good",
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc9842",
+        "https://www.rfc-editor.org/info/rfc9842/",
         "https://httpwg.org/specs/rfc9842.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc9842.html",
@@ -19687,7 +19896,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-2026/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 20:19:32 GMT"
+        "lastModified": "Tue, 02 Jun 2026 20:19:33 GMT"
       },
       "generator": "bikeshed",
       "date": "26 March 2026",
@@ -19754,7 +19963,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-align-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 20:19:33 GMT"
+        "lastModified": "Tue, 02 Jun 2026 20:19:34 GMT"
       },
       "generator": "bikeshed",
       "date": "30 October 2023",
@@ -20239,7 +20448,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-backgrounds-4/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 20:19:34 GMT"
+        "lastModified": "Tue, 02 Jun 2026 20:19:33 GMT"
       },
       "generator": "bikeshed",
       "date": "16 December 2025",
@@ -20648,7 +20857,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 20:19:34 GMT"
+        "lastModified": "Tue, 02 Jun 2026 20:19:33 GMT"
       },
       "generator": "bikeshed",
       "date": "17 December 2025",
@@ -22792,7 +23001,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-grid-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 20:19:33 GMT"
+        "lastModified": "Tue, 02 Jun 2026 20:19:32 GMT"
       },
       "generator": "bikeshed",
       "date": "6 May 2026",
@@ -23263,7 +23472,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-line-grid-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 20:19:33 GMT"
+        "lastModified": "Tue, 02 Jun 2026 20:19:34 GMT"
       },
       "generator": "bikeshed",
       "date": "7 January 2026",
@@ -23816,7 +24025,7 @@
       "headings": "headings/css-nav-1.json",
       "ids": "ids/css-nav-1.json",
       "cddl": [],
-      "error": "Error: Loading https://drafts.csswg.org/css-nav-1/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 410)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
+      "error": "Error: Loading https://drafts.csswg.org/css-nav-1/ triggered HTTP status 404\n    at processSpecification (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:486:19)\n    at async crawlSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:109:22)\n    at async processSpec (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:452:22)\n    at async ThrottledQueue.runThrottled (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/throttled-queue.js:78:22)\n    at async Promise.all (index 414)\n    at async crawlList (file:///home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:473:21)"
     },
     {
       "url": "https://www.w3.org/TR/css-nesting-1/",
@@ -24281,7 +24490,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-page-floats-3/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 20:19:34 GMT"
+        "lastModified": "Tue, 02 Jun 2026 20:19:33 GMT"
       },
       "generator": "bikeshed",
       "date": "22 December 2025",
@@ -27689,7 +27898,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/device-posture/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -28778,10 +28987,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/core/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 17:35:22 GMT"
+        "lastModified": "Wed, 03 Jun 2026 12:41:42 GMT"
       },
       "generator": "respec",
-      "date": "02 June 2026",
+      "date": "03 June 2026",
       "algorithms": "algorithms/epub-33.json",
       "links": "links/epub-33.json",
       "refs": "refs/epub-33.json",
@@ -28836,10 +29045,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/authoring/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 17:35:22 GMT"
+        "lastModified": "Wed, 03 Jun 2026 12:41:43 GMT"
       },
       "generator": "respec",
-      "date": "02 June 2026",
+      "date": "03 June 2026",
       "algorithms": "algorithms/epub-34.json",
       "links": "links/epub-34.json",
       "refs": "refs/epub-34.json",
@@ -28896,10 +29105,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/a11y/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 17:35:22 GMT"
+        "lastModified": "Wed, 03 Jun 2026 12:41:43 GMT"
       },
       "generator": "respec",
-      "date": "02 June 2026",
+      "date": "03 June 2026",
       "links": "links/epub-a11y-12.json",
       "refs": "refs/epub-a11y-12.json",
       "dfns": "dfns/epub-a11y-12.json",
@@ -28952,10 +29161,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub33/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 17:35:22 GMT"
+        "lastModified": "Wed, 03 Jun 2026 12:41:42 GMT"
       },
       "generator": "respec",
-      "date": "02 June 2026",
+      "date": "03 June 2026",
       "algorithms": "algorithms/epub-rs-33.json",
       "links": "links/epub-rs-33.json",
       "refs": "refs/epub-rs-33.json",
@@ -29009,10 +29218,10 @@
       ],
       "crawled": "https://w3c.github.io/epub-specs/epub34/rs/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 17:35:22 GMT"
+        "lastModified": "Wed, 03 Jun 2026 12:41:42 GMT"
       },
       "generator": "respec",
-      "date": "02 June 2026",
+      "date": "03 June 2026",
       "algorithms": "algorithms/epub-rs-34.json",
       "links": "links/epub-rs-34.json",
       "refs": "refs/epub-rs-34.json",
@@ -32656,7 +32865,7 @@
       ],
       "crawled": "https://w3c.github.io/mse-byte-stream-format-mpeg-audio/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 23 Jul 2024 08:09:25 GMT"
+        "lastModified": "Tue, 23 Jul 2024 08:09:24 GMT"
       },
       "generator": "respec",
       "date": "23 July 2024",
@@ -35347,7 +35556,7 @@
       ],
       "crawled": "https://drafts.csswg.org/resize-observer-1/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 02 Jun 2026 20:19:33 GMT"
+        "lastModified": "Tue, 02 Jun 2026 20:19:34 GMT"
       },
       "generator": "bikeshed",
       "date": "22 November 2022",
@@ -36141,7 +36350,7 @@
       ],
       "crawled": "https://w3c.github.io/server-timing/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 07 Apr 2026 04:24:19 GMT"
+        "lastModified": "Tue, 07 Apr 2026 04:24:18 GMT"
       },
       "generator": "bikeshed",
       "date": "7 April 2026",
@@ -36445,6 +36654,62 @@
       "dfns": "dfns/shacl12-sparql.json",
       "headings": "headings/shacl12-sparql.json",
       "ids": "ids/shacl12-sparql.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/shacl12-ui/",
+      "seriesComposition": "full",
+      "shortname": "shacl12-ui",
+      "series": {
+        "shortname": "shacl-ui",
+        "currentSpecification": "shacl12-ui",
+        "title": "SHACL User Interfaces",
+        "shortTitle": "SHACL User Interfaces",
+        "releaseUrl": "https://www.w3.org/TR/shacl-ui/",
+        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-ui/"
+      },
+      "seriesVersion": "1.2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Data Shapes Working Group",
+          "url": "https://www.w3.org/groups/wg/data-shapes/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/shacl12-ui/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/data-shapes/shacl12-ui/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/data-shapes",
+        "sourcePath": "shacl12-ui/index.html",
+        "filename": "index.html"
+      },
+      "title": "SHACL 1.2 User Interfaces",
+      "source": "w3c",
+      "shortTitle": "SHACL 1.2 User Interfaces",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/shacl12-ui/",
+        "https://w3c.github.io/data-shapes/shacl12-ui/"
+      ],
+      "crawled": "https://w3c.github.io/data-shapes/shacl12-ui/",
+      "crawlCacheInfo": {
+        "lastModified": "Wed, 03 Jun 2026 07:50:03 GMT"
+      },
+      "generator": "respec",
+      "date": "03 June 2026",
+      "algorithms": "algorithms/shacl12-ui.json",
+      "links": "links/shacl12-ui.json",
+      "refs": "refs/shacl12-ui.json",
+      "dfns": "dfns/shacl12-ui.json",
+      "headings": "headings/shacl12-ui.json",
+      "ids": "ids/shacl12-ui.json",
       "cddl": []
     },
     {
@@ -37900,7 +38165,7 @@
       ],
       "crawled": "https://w3c.github.io/trusted-types/dist/spec/",
       "crawlCacheInfo": {
-        "lastModified": "Tue, 24 Feb 2026 15:13:49 GMT"
+        "lastModified": "Tue, 24 Feb 2026 15:13:48 GMT"
       },
       "generator": "bikeshed",
       "date": "24 February 2026",
@@ -37920,11 +38185,11 @@
       "shortname": "ttml-imsc1.2",
       "series": {
         "shortname": "ttml-imsc",
-        "currentSpecification": "ttml-imsc1.2",
+        "currentSpecification": "ttml-imsc1.3",
         "title": "IMSC Text Profile",
         "shortTitle": "IMSC Text Profile",
         "releaseUrl": "https://www.w3.org/TR/ttml-imsc/",
-        "nightlyUrl": "https://www.w3.org/TR/ttml-imsc/"
+        "nightlyUrl": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html"
       },
       "seriesVersion": "1.2",
       "nightly": {
@@ -37975,11 +38240,11 @@
       "shortname": "ttml-imsc1.3",
       "series": {
         "shortname": "ttml-imsc",
-        "currentSpecification": "ttml-imsc1.2",
+        "currentSpecification": "ttml-imsc1.3",
         "title": "IMSC Text Profile",
         "shortTitle": "IMSC Text Profile",
         "releaseUrl": "https://www.w3.org/TR/ttml-imsc/",
-        "nightlyUrl": "https://www.w3.org/TR/ttml-imsc/"
+        "nightlyUrl": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html"
       },
       "seriesVersion": "1.3",
       "nightly": {
@@ -38001,7 +38266,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/ttml-imsc1.3/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Recommendation",
         "filename": "Overview.html"
       },
       "title": "IMSC Text Profile 1.3",
@@ -39164,6 +39429,65 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/vc-recognized-entities-1.0/",
+      "seriesComposition": "full",
+      "shortname": "vc-recognized-entities-1.0",
+      "series": {
+        "shortname": "vc-recognized-entities",
+        "currentSpecification": "vc-recognized-entities-1.0",
+        "title": "Recognized Entities",
+        "shortTitle": "Recognized Entities",
+        "releaseUrl": "https://www.w3.org/TR/vc-recognized-entities/",
+        "nightlyUrl": "https://w3c.github.io/vc-recognized-entities/"
+      },
+      "seriesVersion": "1.0",
+      "formerNames": [
+        "vc-recognized-entities",
+        "vc-recognition"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-recognized-entities-1.0/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-recognized-entities/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-recognized-entities",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Recognized Entities v1.0",
+      "source": "w3c",
+      "shortTitle": "Recognized Entities v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-recognized-entities-1.0/",
+        "https://w3c.github.io/vc-recognized-entities/"
+      ],
+      "crawled": "https://w3c.github.io/vc-recognized-entities/",
+      "crawlCacheInfo": {
+        "lastModified": "Tue, 26 May 2026 20:15:13 GMT"
+      },
+      "generator": "respec",
+      "date": "26 May 2026",
+      "links": "links/vc-recognized-entities-1.0.json",
+      "refs": "refs/vc-recognized-entities-1.0.json",
+      "dfns": "dfns/vc-recognized-entities-1.0.json",
+      "headings": "headings/vc-recognized-entities-1.0.json",
+      "ids": "ids/vc-recognized-entities-1.0.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/vc-render-method/",
       "seriesComposition": "full",
       "shortname": "vc-render-method",
@@ -39606,10 +39930,10 @@
       ],
       "crawled": "https://w3c.github.io/sdw-sosa-ssn/ssn/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 27 May 2026 17:20:23 GMT"
+        "lastModified": "Wed, 03 Jun 2026 11:16:08 GMT"
       },
       "generator": "respec",
-      "date": "27 May 2026",
+      "date": "03 June 2026",
       "links": "links/vocab-ssn-2023.json",
       "refs": "refs/vocab-ssn-2023.json",
       "dfns": "dfns/vocab-ssn-2023.json",
@@ -39866,11 +40190,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/core/bikeshed/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 27 May 2026 16:02:45 GMT"
+        "lastModified": "Wed, 03 Jun 2026 14:11:06 GMT"
       },
       "generator": "bikeshed",
-      "date": "27 May 2026",
-      "revision": "93c7fab69e647f9ee544b97c8b2d1368ef2b526a",
+      "date": "3 June 2026",
+      "revision": "21b053f79a2727fffcdd89ebe95b093eec68515a",
       "algorithms": "algorithms/wasm-core-2.json",
       "links": "links/wasm-core-2.json",
       "refs": "refs/wasm-core-2.json",
@@ -39939,11 +40263,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/js-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 27 May 2026 16:02:45 GMT"
+        "lastModified": "Wed, 03 Jun 2026 14:11:06 GMT"
       },
       "generator": "bikeshed",
-      "date": "27 May 2026",
-      "revision": "93c7fab69e647f9ee544b97c8b2d1368ef2b526a",
+      "date": "3 June 2026",
+      "revision": "21b053f79a2727fffcdd89ebe95b093eec68515a",
       "algorithms": "algorithms/wasm-js-api-2.json",
       "links": "links/wasm-js-api-2.json",
       "refs": "refs/wasm-js-api-2.json",
@@ -40005,11 +40329,11 @@
       ],
       "crawled": "https://webassembly.github.io/spec/web-api/",
       "crawlCacheInfo": {
-        "lastModified": "Wed, 27 May 2026 16:02:45 GMT"
+        "lastModified": "Wed, 03 Jun 2026 14:11:06 GMT"
       },
       "generator": "bikeshed",
-      "date": "27 May 2026",
-      "revision": "93c7fab69e647f9ee544b97c8b2d1368ef2b526a",
+      "date": "3 June 2026",
+      "revision": "21b053f79a2727fffcdd89ebe95b093eec68515a",
       "algorithms": "algorithms/wasm-web-api-2.json",
       "links": "links/wasm-web-api-2.json",
       "refs": "refs/wasm-web-api-2.json",
@@ -41854,10 +42178,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 01 Jun 2026 22:12:01 GMT"
+        "lastModified": "Wed, 03 Jun 2026 13:57:45 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 June 2026",
+      "date": "3 June 2026",
       "algorithms": "algorithms/webgpu.json",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
@@ -42466,7 +42790,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/webvtt1/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -43152,10 +43476,10 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "crawlCacheInfo": {
-        "lastModified": "Mon, 01 Jun 2026 22:12:01 GMT"
+        "lastModified": "Wed, 03 Jun 2026 13:57:44 GMT"
       },
       "generator": "bikeshed",
-      "date": "1 June 2026",
+      "date": "3 June 2026",
       "algorithms": "algorithms/WGSL.json",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
@@ -44032,7 +44356,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7230",
+      "url": "https://www.rfc-editor.org/info/rfc7230/",
       "seriesComposition": "full",
       "shortname": "rfc7230",
       "series": {
@@ -44072,7 +44396,7 @@
         "browser"
       ],
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7230",
+        "https://www.rfc-editor.org/info/rfc7230/",
         "https://httpwg.org/specs/rfc7230.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc7230.html",
@@ -44088,7 +44412,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7231",
+      "url": "https://www.rfc-editor.org/info/rfc7231/",
       "seriesComposition": "full",
       "shortname": "rfc7231",
       "series": {
@@ -44127,7 +44451,7 @@
         "browser"
       ],
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7231",
+        "https://www.rfc-editor.org/info/rfc7231/",
         "https://httpwg.org/specs/rfc7231.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc7231.html",
@@ -44144,7 +44468,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7232",
+      "url": "https://www.rfc-editor.org/info/rfc7232/",
       "seriesComposition": "full",
       "shortname": "rfc7232",
       "series": {
@@ -44183,7 +44507,7 @@
         "browser"
       ],
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7232",
+        "https://www.rfc-editor.org/info/rfc7232/",
         "https://httpwg.org/specs/rfc7232.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc7232.html",
@@ -44199,7 +44523,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7233",
+      "url": "https://www.rfc-editor.org/info/rfc7233/",
       "seriesComposition": "full",
       "shortname": "rfc7233",
       "series": {
@@ -44238,7 +44562,7 @@
         "browser"
       ],
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7233",
+        "https://www.rfc-editor.org/info/rfc7233/",
         "https://httpwg.org/specs/rfc7233.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc7233.html",
@@ -44253,7 +44577,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7234",
+      "url": "https://www.rfc-editor.org/info/rfc7234/",
       "seriesComposition": "full",
       "shortname": "rfc7234",
       "series": {
@@ -44292,7 +44616,7 @@
         "browser"
       ],
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7234",
+        "https://www.rfc-editor.org/info/rfc7234/",
         "https://httpwg.org/specs/rfc7234.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc7234.html",
@@ -44307,7 +44631,7 @@
       "cddl": []
     },
     {
-      "url": "https://www.rfc-editor.org/rfc/rfc7235",
+      "url": "https://www.rfc-editor.org/info/rfc7235/",
       "seriesComposition": "full",
       "shortname": "rfc7235",
       "series": {
@@ -44346,7 +44670,7 @@
         "browser"
       ],
       "versions": [
-        "https://www.rfc-editor.org/rfc/rfc7235",
+        "https://www.rfc-editor.org/info/rfc7235/",
         "https://httpwg.org/specs/rfc7235.html"
       ],
       "crawled": "https://httpwg.org/specs/rfc7235.html",
