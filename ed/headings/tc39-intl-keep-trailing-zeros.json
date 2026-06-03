@@ -1,0 +1,169 @@
+{
+  "spec": {
+    "title": "Keep trailing zeros in Intl.NumberFormat and Intl.PluralRules",
+    "url": "https://tc39.es/proposal-intl-keep-trailing-zeros/"
+  },
+  "headings": [
+    {
+      "id": "numberformat-objects",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#numberformat-objects",
+      "title": "NumberFormat Objects",
+      "level": 1,
+      "number": "16"
+    },
+    {
+      "id": "sec-intl-numberformat-constructor",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-intl-numberformat-constructor",
+      "title": "The Intl.NumberFormat Constructor",
+      "level": 2,
+      "number": "16.1"
+    },
+    {
+      "id": "sec-setnumberformatdigitoptions",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-setnumberformatdigitoptions",
+      "title": "SetNumberFormatDigitOptions ( intlObj, options, mnfdDefault, mxfdDefault, notation )",
+      "level": 3,
+      "number": "16.1.2"
+    },
+    {
+      "id": "sec-properties-of-intl-numberformat-instances",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-properties-of-intl-numberformat-instances",
+      "title": "Properties of Intl.NumberFormat Instances",
+      "level": 2,
+      "number": "16.4"
+    },
+    {
+      "id": "sec-numberformat-abstracts",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-numberformat-abstracts",
+      "title": "Abstract Operations for NumberFormat Objects",
+      "level": 2,
+      "number": "16.5"
+    },
+    {
+      "id": "sec-intl-mv-records",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-intl-mv-records",
+      "title": "Intl MV Records",
+      "level": 3,
+      "number": "16.5.1"
+    },
+    {
+      "id": "sec-formatnumerictostring",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-formatnumerictostring",
+      "title": "FormatNumericToString ( intlObject, x, digitCount, fractionDigitCount )",
+      "level": 3,
+      "number": "16.5.3"
+    },
+    {
+      "id": "sec-partitionnumberpattern",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-partitionnumberpattern",
+      "title": "PartitionNumberPattern ( numberFormat, x )",
+      "level": 3,
+      "number": "16.5.4"
+    },
+    {
+      "id": "sec-partitionnotationsubpattern",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-partitionnotationsubpattern",
+      "title": "PartitionNotationSubPattern ( numberFormat, x, n, exponent )",
+      "level": 3,
+      "number": "16.5.5"
+    },
+    {
+      "id": "sec-formatnumber",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-formatnumber",
+      "title": "FormatNumeric ( numberFormat, x )",
+      "level": 3,
+      "number": "16.5.6"
+    },
+    {
+      "id": "sec-torawprecision",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-torawprecision",
+      "title": "ToRawPrecision ( x, digitCount, fractionDigitCount, minPrecision, maxPrecision, unsignedRoundingMode )",
+      "level": 3,
+      "number": "16.5.8"
+    },
+    {
+      "id": "sec-torawfixed",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-torawfixed",
+      "title": "ToRawFixed ( x, digitCount, fractionDigitCount, minFraction, maxFraction, roundingIncrement, unsignedRoundingMode )",
+      "level": 3,
+      "number": "16.5.9"
+    },
+    {
+      "id": "sec-getnumberformatpattern",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-getnumberformatpattern",
+      "title": "GetNumberFormatPattern ( numberFormat, x )",
+      "level": 3,
+      "number": "16.5.11"
+    },
+    {
+      "id": "sec-computeexponent",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-computeexponent",
+      "title": "ComputeExponent ( numberFormat, x )",
+      "level": 3,
+      "number": "16.5.13"
+    },
+    {
+      "id": "sec-runtime-semantics-stringintlmv",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-runtime-semantics-stringintlmv",
+      "title": "Runtime Semantics: StringIntlMV",
+      "level": 3,
+      "number": "16.5.15"
+    },
+    {
+      "id": "sec-stringintlmvfromparts",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-stringintlmvfromparts",
+      "title": "StringIntlMVFromParts ( intPart, fracPart, e )",
+      "level": 3,
+      "number": "16.5.16"
+    },
+    {
+      "id": "sec-tointlmathematicalvalue",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-tointlmathematicalvalue",
+      "title": "ToIntlMathematicalValue ( value )",
+      "level": 3,
+      "number": "16.5.17"
+    },
+    {
+      "id": "sec-partitionnumberrangepattern",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-partitionnumberrangepattern",
+      "title": "PartitionNumberRangePattern ( numberFormat, x, y )",
+      "level": 3,
+      "number": "16.5.18"
+    },
+    {
+      "id": "pluralrules-objects",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#pluralrules-objects",
+      "title": "PluralRules Objects",
+      "level": 1,
+      "number": "17"
+    },
+    {
+      "id": "sec-properties-of-intl-pluralrules-instances",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-properties-of-intl-pluralrules-instances",
+      "title": "Properties of Intl.PluralRules Instances",
+      "level": 2,
+      "number": "17.4"
+    },
+    {
+      "id": "sec-intl-pluralrules-abstracts",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-intl-pluralrules-abstracts",
+      "title": "Abstract Operations for PluralRules Objects",
+      "level": 2,
+      "number": "17.5"
+    },
+    {
+      "id": "sec-resolveplural",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-resolveplural",
+      "title": "ResolvePlural ( pluralRules, n, intlMV )",
+      "level": 3,
+      "number": "17.5.2"
+    },
+    {
+      "id": "sec-resolvepluralrange",
+      "href": "https://tc39.es/proposal-intl-keep-trailing-zeros/#sec-resolvepluralrange",
+      "title": "ResolvePluralRange ( pluralRules, x, y )",
+      "level": 3,
+      "number": "17.5.4"
+    }
+  ]
+}

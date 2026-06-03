@@ -3639,13 +3639,13 @@
       "name": "Element/HTML-uppercased qualified name",
       "href": "https://dom.spec.whatwg.org/#element-html-uppercased-qualified-name",
       "html": "An <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑧③\">element</a>’s <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Element\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"element-html-uppercased-qualified-name\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">HTML-uppercased qualified name</dfn> is the return\nvalue of these steps:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>qualifiedName</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-qualified-name\" id=\"ref-for-concept-element-qualified-name④\">qualified name</a>.\n\n </p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦⓪\">this</a> is in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#html-namespace\" id=\"ref-for-html-namespace①⑥\">HTML namespace</a> and its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document④⑦\">node document</a> is an\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#html-document\" id=\"ref-for-html-document①①\">HTML document</a>, then set <var>qualifiedName</var> to <var>qualifiedName</var> in\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-uppercase\" id=\"ref-for-ascii-uppercase\">ASCII uppercase</a>.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦⓪\">this</a> is in the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#html-namespace\" id=\"ref-for-html-namespace①⑥\">HTML namespace</a> and its <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document④⑦\">node document</a> is an\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#html-document\" id=\"ref-for-html-document①①\">HTML document</a>, then return <var>qualifiedName</var> in <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-uppercase\" id=\"ref-for-ascii-uppercase\">ASCII uppercase</a>.\n\n </p>"
         },
         {
           "html": "Return <var>qualifiedName</var>."
@@ -3656,7 +3656,7 @@
       "name": "create an element",
       "href": "https://dom.spec.whatwg.org/#concept-create-element",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-create-element\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an element</dfn>, given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤⑥\">document</a>\n<var>document</var>, string <var>localName</var>, string-or-null <var>namespace</var>, and\noptionally a string-or-null <var>prefix</var> (default null), string-or-null <var>is</var> (default\nnull), boolean <var>synchronousCustomElements</var> (default false), and \"<code>default</code>\",\nnull, or a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#customelementregistry\" id=\"ref-for-customelementregistry①⑤\">CustomElementRegistry</a></code> object <var>registry</var> (default \"<code>default</code>\"):",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>result</var> be null.\n\n </p>"
@@ -3815,7 +3815,7 @@
       "name": "create an element internal",
       "href": "https://dom.spec.whatwg.org/#create-an-element-internal",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-an-element-internal\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create an element internal</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤⑦\">document</a> <var>document</var>, an\ninterface <var>interface</var> a string <var>localName</var>, a string-or-null <var>namespace</var>,\na string-or-null <var>prefix</var>, a string <var>state</var>, a string-or-null <var>is</var>, and\nnull or a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/custom-elements.html#customelementregistry\" id=\"ref-for-customelementregistry①⑥\">CustomElementRegistry</a></code> object <var>registry</var>:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>element</var> be a new <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑧④\">element</a> that implements <var>interface</var>,\n with <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-namespace\" id=\"ref-for-concept-element-namespace①⑤\">namespace</a> set to <var>namespace</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-namespace-prefix\" id=\"ref-for-concept-element-namespace-prefix①③\">namespace prefix</a>\n set to <var>prefix</var>, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-local-name\" id=\"ref-for-concept-element-local-name①③\">local name</a> set to <var>localName</var>,\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#element-custom-element-registry\" id=\"ref-for-element-custom-element-registry⑧\">custom element registry</a> set to <var>registry</var>,\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-custom-element-state\" id=\"ref-for-concept-element-custom-element-state⑤\">custom element state</a> set to <var>state</var>,\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-custom-element-definition\" id=\"ref-for-concept-element-custom-element-definition①\">custom element definition</a> set to null, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-is-value\" id=\"ref-for-concept-element-is-value②\"><code>is</code> value</a>\n set to <var>is</var>, and <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document④⑨\">node document</a> set to <var>document</var>.\n\n </p>"
@@ -3848,8 +3848,8 @@
     {
       "name": "change an attribute",
       "href": "https://dom.spec.whatwg.org/#concept-element-attributes-change",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"change an attribute\" id=\"concept-element-attributes-change\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">change</dfn> an\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\" id=\"ref-for-concept-attribute②⑤\">attribute</a> <var>attribute</var> to <var>value</var>, run these steps:",
-      "rationale": "let",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"change an attribute\" id=\"concept-element-attributes-change\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">change</dfn> an\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\" id=\"ref-for-concept-attribute②⑤\">attribute</a> <var>attribute</var> to <var>value</var>:",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>oldValue</var> be <var>attribute</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-value\" id=\"ref-for-concept-attribute-value①①\">value</a>.\n\n </p>"
@@ -3865,8 +3865,8 @@
     {
       "name": "append an attribute",
       "href": "https://dom.spec.whatwg.org/#concept-element-attributes-append",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"append an attribute\" id=\"concept-element-attributes-append\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append</dfn> an\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\" id=\"ref-for-concept-attribute②⑥\">attribute</a> <var>attribute</var> to an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑧⑨\">element</a> <var>element</var>, run these\nsteps:",
-      "rationale": "append",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"append an attribute\" id=\"concept-element-attributes-append\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">append</dfn> an\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\" id=\"ref-for-concept-attribute②⑥\">attribute</a> <var>attribute</var> to an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element\" id=\"ref-for-concept-element⑧⑨\">element</a> <var>element</var>:",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①④\">Append</a> <var>attribute</var> to <var>element</var>’s\n <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-element-attribute\" id=\"ref-for-concept-element-attribute①⓪\">attribute list</a>.\n\n </p>"
@@ -3885,8 +3885,8 @@
     {
       "name": "remove an attribute",
       "href": "https://dom.spec.whatwg.org/#concept-element-attributes-remove",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"remove an attribute\" id=\"concept-element-attributes-remove\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove</dfn> an\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\" id=\"ref-for-concept-attribute②⑦\">attribute</a> <var>attribute</var>, run these steps:",
-      "rationale": "let",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"remove an attribute\" id=\"concept-element-attributes-remove\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">remove</dfn> an\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\" id=\"ref-for-concept-attribute②⑦\">attribute</a> <var>attribute</var>:",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>element</var> be <var>attribute</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-element\" id=\"ref-for-concept-attribute-element⑧\">element</a>.\n\n </p>"
@@ -3906,7 +3906,7 @@
       "name": "replace an attribute",
       "href": "https://dom.spec.whatwg.org/#concept-element-attributes-replace",
       "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"replace an attribute\" id=\"concept-element-attributes-replace\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">replace</dfn> an\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\" id=\"ref-for-concept-attribute②⑧\">attribute</a> <var>oldAttribute</var> with an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute\" id=\"ref-for-concept-attribute②⑨\">attribute</a> <var>newAttribute</var>:",
-      "rationale": "let",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>element</var> be <var>oldAttribute</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-attribute-element\" id=\"ref-for-concept-attribute-element①⓪\">element</a>.\n\n </p>"

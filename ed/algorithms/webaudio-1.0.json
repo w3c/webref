@@ -205,6 +205,21 @@
                   "html": "<p>If <var>sinkId</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString⑥\">DOMString</a></code>, use the sample rate of the\noutput device identified by <var>sinkId</var>. Abort these substeps.</p>"
                 }
               ]
+            },
+            {
+              "html": "Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-render-quantum-size-slot\" id=\"ref-for-dom-baseaudiocontext-render-quantum-size-slot①\">[[render quantum size]]</a></code> of <var>context</var>\nbased on the value of the <code>contextOptions.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextoptions-rendersizehint\" id=\"ref-for-dom-audiocontextoptions-rendersizehint\">renderSizeHint</a></code></code>:",
+              "rationale": "if",
+              "steps": [
+                {
+                  "html": "<p>If it has the default value of <code>\"default\"</code>, set the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-render-quantum-size-slot\" id=\"ref-for-dom-baseaudiocontext-render-quantum-size-slot②\">[[render quantum size]]</a></code> private slot to 128.</p>"
+                },
+                {
+                  "html": "<p>Else, if it has the value of <code>\"hardware\"</code>, set the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-render-quantum-size-slot\" id=\"ref-for-dom-baseaudiocontext-render-quantum-size-slot③\">[[render quantum size]]</a></code> private slot to 0.</p>"
+                },
+                {
+                  "html": "<p>Else, if an integer has been passed, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑦\">NotSupportedError</a></code> MUST be\nthrown if the value is outside the range specified in\n<a href=\"https://webaudio.github.io/web-audio-api/#render-quantum-sizes\">§ 2.5 Supported Render Quantum Sizes</a>, otherwise set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-render-quantum-size-slot\" id=\"ref-for-dom-baseaudiocontext-render-quantum-size-slot④\">[[render quantum size]]</a></code>\nprivate slot to the passed value.</p>"
+                }
+              ]
             }
           ]
         },
@@ -256,13 +271,16 @@
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"ref-for-queue-a-media-element-task②\">Queue a media element task</a> to execute the following steps:",
-          "rationale": "set",
+          "rationale": "if",
           "steps": [
             {
-              "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state①\">state</a></code> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext②③\">AudioContext</a></code>\nto \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running③\">running</a></code>\".</p>"
+              "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-render-quantum-size-slot\" id=\"ref-for-dom-baseaudiocontext-render-quantum-size-slot⑤\">[[render quantum size]]</a></code> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext②③\">AudioContext</a></code> is 0,\nset it to the actual hardware render quantum size chosen during resource acquisition.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire②\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange\" id=\"ref-for-eventdef-baseaudiocontext-statechange\">statechange</a></code> at the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext②④\">AudioContext</a></code>.</p>"
+              "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state①\">state</a></code> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext②④\">AudioContext</a></code>\nto \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running③\">running</a></code>\".</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire②\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange\" id=\"ref-for-eventdef-baseaudiocontext-statechange\">statechange</a></code> at the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext②⑤\">AudioContext</a></code>.</p>"
             }
           ]
         }
@@ -294,13 +312,13 @@
           "html": "<p>Let <var>promise</var> be a new Promise.</p>"
         },
         {
-          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-control-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-control-thread-state-slot②\">[[control thread state]]</a></code> flag on the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext③⑤\">AudioContext</a></code> is <code>closed</code> reject the promise\nwith <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code>, abort these steps,\nreturning <var>promise</var>.</p>"
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-control-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-control-thread-state-slot②\">[[control thread state]]</a></code> flag on the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext③⑥\">AudioContext</a></code> is <code>closed</code> reject the promise\nwith <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code>, abort these steps,\nreturning <var>promise</var>.</p>"
         },
         {
-          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-control-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-control-thread-state-slot③\">[[control thread state]]</a></code> flag on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext③⑥\">AudioContext</a></code> to\n<code>closed</code>.</p>"
+          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-control-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-control-thread-state-slot③\">[[control thread state]]</a></code> flag on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext③⑦\">AudioContext</a></code> to\n<code>closed</code>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#queuing\" id=\"ref-for-queuing①\">Queue a control message</a> to close the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext③⑦\">AudioContext</a></code>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#queuing\" id=\"ref-for-queuing①\">Queue a control message</a> to close the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext③⑧\">AudioContext</a></code>.</p>"
         },
         {
           "html": "<p>Return <em>promise</em>.</p>"
@@ -309,7 +327,7 @@
     },
     {
       "name": "run a control message to close an AudioContext",
-      "html": "Running a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message\" id=\"ref-for-control-message③\">control message</a> to close an\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext③⑧\">AudioContext</a></code> means running these steps on the\n    <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread②\">rendering thread</a>:",
+      "html": "Running a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message\" id=\"ref-for-control-message③\">control message</a> to close an\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext③⑨\">AudioContext</a></code> means running these steps on the\n    <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread②\">rendering thread</a>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -329,14 +347,14 @@
               "html": "<p>Resolve <em>promise</em>.</p>"
             },
             {
-              "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state②\">state</a></code> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext③⑨\">AudioContext</a></code> is not already \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-closed\" id=\"ref-for-dom-audiocontextstate-closed①\">closed</a></code>\":",
+              "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state②\">state</a></code> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext④⓪\">AudioContext</a></code> is not already \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-closed\" id=\"ref-for-dom-audiocontextstate-closed①\">closed</a></code>\":",
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state③\">state</a></code> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext④⓪\">AudioContext</a></code> to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-closed\" id=\"ref-for-dom-audiocontextstate-closed②\">closed</a></code>\".</p>"
+                  "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state③\">state</a></code> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext④①\">AudioContext</a></code> to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-closed\" id=\"ref-for-dom-audiocontextstate-closed②\">closed</a></code>\".</p>"
                 },
                 {
-                  "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"6d54a0c54\">\nqueue a media element task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">fire\nan event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange\" id=\"ref-for-eventdef-baseaudiocontext-statechange②\">statechange</a></code> at the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext④①\">AudioContext</a></code>.</p>"
+                  "html": "<p><a href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"6d54a0c54\">\nqueue a media element task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">fire\nan event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange\" id=\"ref-for-eventdef-baseaudiocontext-statechange②\">statechange</a></code> at the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext④②\">AudioContext</a></code>.</p>"
                 }
               ]
             }
@@ -356,7 +374,7 @@
           "html": "<p>Let <var>promise</var> be a new Promise.</p>"
         },
         {
-          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-control-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-control-thread-state-slot④\">[[control thread state]]</a></code> on the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext④⑦\">AudioContext</a></code> is <code>closed</code> reject the\npromise with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑧\">InvalidStateError</a></code>, abort these steps,\nreturning <var>promise</var>.</p>"
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-control-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-control-thread-state-slot④\">[[control thread state]]</a></code> on the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext④⑧\">AudioContext</a></code> is <code>closed</code> reject the\npromise with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑧\">InvalidStateError</a></code>, abort these steps,\nreturning <var>promise</var>.</p>"
         },
         {
           "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontext-suspended-by-user-slot\" id=\"ref-for-dom-audiocontext-suspended-by-user-slot\">[[suspended by user]]</a></code> to <code>false</code>.</p>"
@@ -370,13 +388,13 @@
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state⑤\">state</a></code> attribute of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext④⑧\">AudioContext</a></code> to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-interrupted\" id=\"ref-for-dom-audiocontextstate-interrupted②\">interrupted</a></code>\".</p>"
+                  "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state⑤\">state</a></code> attribute of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext④⑨\">AudioContext</a></code> to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-interrupted\" id=\"ref-for-dom-audiocontextstate-interrupted②\">interrupted</a></code>\".</p>"
                 },
                 {
                   "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state-before-interruption-slot\" id=\"ref-for-dom-baseaudiocontext-state-before-interruption-slot①\">[[state before interruption]]</a></code> slot to\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running⑤\">running</a></code>\".</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"ref-for-queue-a-media-element-task④\">Queue a media element task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire④\">fire an event</a> named\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange\" id=\"ref-for-eventdef-baseaudiocontext-statechange③\">statechange</a></code> at the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext④⑨\">AudioContext</a></code>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"ref-for-queue-a-media-element-task④\">Queue a media element task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire④\">fire an event</a> named\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange\" id=\"ref-for-eventdef-baseaudiocontext-statechange③\">statechange</a></code> at the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤⓪\">AudioContext</a></code>.</p>"
                 }
               ]
             },
@@ -389,10 +407,10 @@
           "html": "<p>If the context is not <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#allowed-to-start\" id=\"ref-for-allowed-to-start①\">allowed to start</a>, append\n<var>promise</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-pending-promises-slot\" id=\"ref-for-dom-baseaudiocontext-pending-promises-slot③\">[[pending promises]]</a></code>\nand <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontext-pending-resume-promises-slot\" id=\"ref-for-dom-audiocontext-pending-resume-promises-slot\">[[pending resume promises]]</a></code> and abort\nthese steps, returning <var>promise</var>.</p>"
         },
         {
-          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-control-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-control-thread-state-slot⑥\">[[control thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤⓪\">AudioContext</a></code> to\n<code>running</code>.</p>"
+          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-control-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-control-thread-state-slot⑥\">[[control thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤①\">AudioContext</a></code> to\n<code>running</code>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#queuing\" id=\"ref-for-queuing②\">Queue a control message</a> to resume the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤①\">AudioContext</a></code> with <var>promise</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#queuing\" id=\"ref-for-queuing②\">Queue a control message</a> to resume the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤②\">AudioContext</a></code> with <var>promise</var>.</p>"
         },
         {
           "html": "<p>Return <var>promise</var>.</p>"
@@ -402,7 +420,7 @@
     {
       "name": "run a control message in AudioContext",
       "href": "https://webaudio.github.io/web-audio-api/#context-resume",
-      "html": "Running a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message\" id=\"ref-for-control-message⑤\">control message</a> to resume an\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤②\">AudioContext</a></code> means running these steps on the\n    <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread③\">rendering thread</a>:",
+      "html": "Running a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message\" id=\"ref-for-control-message⑤\">control message</a> to resume an\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤③\">AudioContext</a></code> means running these steps on the\n    <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread③\">rendering thread</a>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -412,7 +430,7 @@
           "html": "<p>Attempt to <a href=\"https://webaudio.github.io/web-audio-api/#acquiring\" id=\"ref-for-acquiring①\">acquire system resources</a>.</p>"
         },
         {
-          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot③\">[[rendering thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤③\">AudioContext</a></code> to <code>running</code>.</p>"
+          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot③\">[[rendering thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤④\">AudioContext</a></code> to <code>running</code>.</p>"
         },
         {
           "html": "<p>Start <a href=\"https://webaudio.github.io/web-audio-api/#rendering-loop\">rendering the audio graph</a>.</p>"
@@ -431,8 +449,11 @@
         },
         {
           "html": "<a href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"6d54a0c56\">\nqueue a media element task</a> to execute the following steps:",
-          "rationale": "resolve",
+          "rationale": "if",
           "steps": [
+            {
+              "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-render-quantum-size-slot\" id=\"ref-for-dom-baseaudiocontext-render-quantum-size-slot⑥\">[[render quantum size]]</a></code> of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤⑤\">AudioContext</a></code> is 0,\nset it to the actual hardware render quantum size chosen during resource acquisition.</p>"
+            },
             {
               "html": "<p>Resolve all promises from <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontext-pending-resume-promises-slot\" id=\"ref-for-dom-audiocontext-pending-resume-promises-slot③\">[[pending resume promises]]</a></code> in order.</p>"
             },
@@ -443,14 +464,14 @@
               "html": "<p>Resolve <var>promise</var>.</p>"
             },
             {
-              "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state⑥\">state</a></code> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤④\">AudioContext</a></code> is not already \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running⑥\">running</a></code>\":",
+              "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state⑥\">state</a></code> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤⑥\">AudioContext</a></code> is not already \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running⑥\">running</a></code>\":",
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state⑦\">state</a></code> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤⑤\">AudioContext</a></code> to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running⑦\">running</a></code>\".</p>"
+                  "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state⑦\">state</a></code> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤⑦\">AudioContext</a></code> to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running⑦\">running</a></code>\".</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"ref-for-queue-a-media-element-task⑤\">Queue a media element task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑤\">fire an event</a> named\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange\" id=\"ref-for-eventdef-baseaudiocontext-statechange④\">statechange</a></code> at the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤⑥\">AudioContext</a></code>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"ref-for-queue-a-media-element-task⑤\">Queue a media element task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑤\">fire an event</a> named\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange\" id=\"ref-for-eventdef-baseaudiocontext-statechange④\">statechange</a></code> at the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑤⑧\">AudioContext</a></code>.</p>"
                 }
               ]
             }
@@ -470,7 +491,7 @@
           "html": "<p>Let <var>promise</var> be a new Promise.</p>"
         },
         {
-          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-control-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-control-thread-state-slot⑦\">[[control thread state]]</a></code> on the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥⓪\">AudioContext</a></code> is <code>closed</code> reject the promise\nwith <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①①\">InvalidStateError</a></code>, abort these steps,\nreturning <var>promise</var>.</p>"
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-control-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-control-thread-state-slot⑦\">[[control thread state]]</a></code> on the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥②\">AudioContext</a></code> is <code>closed</code> reject the promise\nwith <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①①\">InvalidStateError</a></code>, abort these steps,\nreturning <var>promise</var>.</p>"
         },
         {
           "html": "<p>Append <var>promise</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-pending-promises-slot\" id=\"ref-for-dom-baseaudiocontext-pending-promises-slot⑥\">[[pending promises]]</a></code>.</p>"
@@ -479,10 +500,10 @@
           "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontext-suspended-by-user-slot\" id=\"ref-for-dom-audiocontext-suspended-by-user-slot①\">[[suspended by user]]</a></code> to <code>true</code>.</p>"
         },
         {
-          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-control-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-control-thread-state-slot⑧\">[[control thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥①\">AudioContext</a></code> to <code>suspended</code>.</p>"
+          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-control-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-control-thread-state-slot⑧\">[[control thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥③\">AudioContext</a></code> to <code>suspended</code>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#queuing\" id=\"ref-for-queuing③\">Queue a control message</a> to suspend the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥②\">AudioContext</a></code> with <var>promise</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#queuing\" id=\"ref-for-queuing③\">Queue a control message</a> to suspend the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥④\">AudioContext</a></code> with <var>promise</var>.</p>"
         },
         {
           "html": "<p>Return <var>promise</var>.</p>"
@@ -491,7 +512,7 @@
     },
     {
       "name": "run a control message to suspend an AudioContext",
-      "html": "Running a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message\" id=\"ref-for-control-message⑥\">control message</a> to suspend an\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥③\">AudioContext</a></code> means running these steps on the\n    <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread④\">rendering thread</a>:",
+      "html": "Running a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message\" id=\"ref-for-control-message⑥\">control message</a> to suspend an\n    <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥⑤\">AudioContext</a></code> means running these steps on the\n    <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread④\">rendering thread</a>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -501,10 +522,10 @@
           "html": "<p>Attempt to <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#releasing\" id=\"ref-for-releasing③\">release system resources</a>.</p>"
         },
         {
-          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot④\">[[rendering thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥④\">AudioContext</a></code> is\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-interrupted\" id=\"ref-for-dom-audiocontextstate-interrupted③\">interrupted</a></code>\", <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"ref-for-queue-a-media-element-task⑥\">queue a media element\ntask</a> to set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state-before-interruption-slot\" id=\"ref-for-dom-baseaudiocontext-state-before-interruption-slot②\">[[state before interruption]]</a></code> slot to\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended\" id=\"ref-for-dom-audiocontextstate-suspended③\">suspended</a></code>\".</p>"
+          "html": "<p>If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot④\">[[rendering thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥⑥\">AudioContext</a></code> is\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-interrupted\" id=\"ref-for-dom-audiocontextstate-interrupted③\">interrupted</a></code>\", <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"ref-for-queue-a-media-element-task⑥\">queue a media element\ntask</a> to set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state-before-interruption-slot\" id=\"ref-for-dom-baseaudiocontext-state-before-interruption-slot②\">[[state before interruption]]</a></code> slot to\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended\" id=\"ref-for-dom-audiocontextstate-suspended③\">suspended</a></code>\".</p>"
         },
         {
-          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot⑤\">[[rendering thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥⑤\">AudioContext</a></code> to\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended\" id=\"ref-for-dom-audiocontextstate-suspended④\">suspended</a></code>\".</p>"
+          "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot⑤\">[[rendering thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥⑦\">AudioContext</a></code> to\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended\" id=\"ref-for-dom-audiocontextstate-suspended④\">suspended</a></code>\".</p>"
         },
         {
           "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"ref-for-queue-a-media-element-task⑦\">Queue a media element task</a> to execute the following steps:",
@@ -514,14 +535,14 @@
               "html": "<p>Resolve <var>promise</var>.</p>"
             },
             {
-              "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state⑧\">state</a></code>\nattribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥⑥\">AudioContext</a></code> is not already \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended\" id=\"ref-for-dom-audiocontextstate-suspended⑤\">suspended</a></code>\":",
+              "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state⑧\">state</a></code>\nattribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥⑧\">AudioContext</a></code> is not already \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended\" id=\"ref-for-dom-audiocontextstate-suspended⑤\">suspended</a></code>\":",
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state⑨\">state</a></code> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥⑦\">AudioContext</a></code> to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended\" id=\"ref-for-dom-audiocontextstate-suspended⑥\">suspended</a></code>\".</p>"
+                  "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state⑨\">state</a></code> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥⑨\">AudioContext</a></code> to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended\" id=\"ref-for-dom-audiocontextstate-suspended⑥\">suspended</a></code>\".</p>"
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"ref-for-queue-a-media-element-task⑧\">Queue a media element task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑥\">fire an event</a> named\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange\" id=\"ref-for-eventdef-baseaudiocontext-statechange⑤\">statechange</a></code> at the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑥⑧\">AudioContext</a></code>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"ref-for-queue-a-media-element-task⑧\">Queue a media element task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑥\">fire an event</a> named\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange\" id=\"ref-for-eventdef-baseaudiocontext-statechange⑤\">statechange</a></code> at the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦⓪\">AudioContext</a></code>.</p>"
                 }
               ]
             }
@@ -578,7 +599,7 @@
           "html": "<p>Let <var>wasRunning</var> be true.</p>"
         },
         {
-          "html": "<p>Set <var>wasRunning</var> to false if the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot⑥\">[[rendering thread state]]</a></code> on\nthe <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦①\">AudioContext</a></code> is <code>\"suspended\"</code>.</p>"
+          "html": "<p>Set <var>wasRunning</var> to false if the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot⑥\">[[rendering thread state]]</a></code> on\nthe <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦③\">AudioContext</a></code> is <code>\"suspended\"</code>.</p>"
         },
         {
           "html": "<p>Pause the renderer after processing the current render quantum.</p>"
@@ -591,21 +612,21 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot⑦\">[[rendering thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦②\">AudioContext</a></code> to\n<code>\"suspended\"</code>.</p>"
+              "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot⑦\">[[rendering thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦④\">AudioContext</a></code> to\n<code>\"suspended\"</code>.</p>"
             },
             {
               "html": "<a href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"6d54a0c59\">\nQueue a media element task</a> to execute the following steps:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state①⓪\">state</a></code> attribute of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦③\">AudioContext</a></code> is not already \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended\" id=\"ref-for-dom-audiocontextstate-suspended⑦\">suspended</a></code>\":",
+                  "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state①⓪\">state</a></code> attribute of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦⑤\">AudioContext</a></code> is not already \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended\" id=\"ref-for-dom-audiocontextstate-suspended⑦\">suspended</a></code>\":",
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state①①\">state</a></code> attribute of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦④\">AudioContext</a></code> to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended\" id=\"ref-for-dom-audiocontextstate-suspended⑧\">suspended</a></code>\".</p>"
+                      "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state①①\">state</a></code> attribute of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦⑥\">AudioContext</a></code> to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-suspended\" id=\"ref-for-dom-audiocontextstate-suspended⑧\">suspended</a></code>\".</p>"
                     },
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑦\">Fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange\" id=\"ref-for-eventdef-baseaudiocontext-statechange⑥\">statechange</a></code> at the\nassociated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦⑤\">AudioContext</a></code>.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑦\">Fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange\" id=\"ref-for-eventdef-baseaudiocontext-statechange⑥\">statechange</a></code> at the\nassociated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦⑦\">AudioContext</a></code>.</p>"
                     }
                   ]
                 }
@@ -633,7 +654,7 @@
               "html": "<p>Resolve <var>p</var>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑧\">Fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-audiocontext-sinkchange\" id=\"ref-for-eventdef-audiocontext-sinkchange\">sinkchange</a></code> at the\nassociated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦⑥\">AudioContext</a></code>.</p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑧\">Fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-audiocontext-sinkchange\" id=\"ref-for-eventdef-audiocontext-sinkchange\">sinkchange</a></code> at the\nassociated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦⑧\">AudioContext</a></code>.</p>"
             }
           ]
         },
@@ -642,21 +663,21 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot⑧\">[[rendering thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦⑦\">AudioContext</a></code> to\n<code>\"running\"</code>.</p>"
+              "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot⑧\">[[rendering thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦⑨\">AudioContext</a></code> to\n<code>\"running\"</code>.</p>"
             },
             {
               "html": "<a href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"6d54a0c511\">\nQueue a media element task</a> to execute the following steps:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state①②\">state</a></code> attribute of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦⑧\">AudioContext</a></code> is not already \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running⑧\">running</a></code>\":",
+                  "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state①②\">state</a></code> attribute of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑧⓪\">AudioContext</a></code> is not already \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running⑧\">running</a></code>\":",
                   "rationale": "set",
                   "steps": [
                     {
-                      "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state①③\">state</a></code> attribute of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑦⑨\">AudioContext</a></code> to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running⑨\">running</a></code>\".</p>"
+                      "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state①③\">state</a></code> attribute of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑧①\">AudioContext</a></code> to \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running⑨\">running</a></code>\".</p>"
                     },
                     {
-                      "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑨\">Fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange\" id=\"ref-for-eventdef-baseaudiocontext-statechange⑦\">statechange</a></code> at the\nassociated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑧⓪\">AudioContext</a></code>.</p>"
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire⑨\">Fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#eventdef-baseaudiocontext-statechange\" id=\"ref-for-eventdef-baseaudiocontext-statechange⑦\">statechange</a></code> at the\nassociated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext⑧②\">AudioContext</a></code>.</p>"
                     }
                   ]
                 }
@@ -703,14 +724,14 @@
           "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-samplerate\" id=\"ref-for-dom-baseaudiocontext-samplerate③\">sampleRate</a></code> for <var>c</var>,\n based on the value of <code>contextOptions.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontextoptions-samplerate\" id=\"ref-for-dom-offlineaudiocontextoptions-samplerate\">sampleRate</a></code></code>.</p>"
         },
         {
-          "html": "Determine the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-render-quantum-size-slot\" id=\"ref-for-dom-baseaudiocontext-render-quantum-size-slot①\">[[render quantum size]]</a></code> for <var>c</var>,\n    based on the value of the <code>contextOptions.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontextoptions-rendersizehint\" id=\"ref-for-dom-offlineaudiocontextoptions-rendersizehint\">renderSizeHint</a></code></code>:",
+          "html": "Determine the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-render-quantum-size-slot\" id=\"ref-for-dom-baseaudiocontext-render-quantum-size-slot⑦\">[[render quantum size]]</a></code> for <var>c</var>,\n    based on the value of the <code>contextOptions.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-offlineaudiocontextoptions-rendersizehint\" id=\"ref-for-dom-offlineaudiocontextoptions-rendersizehint\">renderSizeHint</a></code></code>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If it has the default value of <code>\"default\"</code> or\n    <code>\"hardware</code>\", set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-render-quantum-size-slot\" id=\"ref-for-dom-baseaudiocontext-render-quantum-size-slot②\">[[render quantum size]]</a></code> private\n    slot to 128.</p>"
+              "html": "<p>If it has the default value of <code>\"default\"</code> or\n    <code>\"hardware</code>\", set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-render-quantum-size-slot\" id=\"ref-for-dom-baseaudiocontext-render-quantum-size-slot⑧\">[[render quantum size]]</a></code> private\n    slot to 128.</p>"
             },
             {
-              "html": "<p>Else, if an integer has been passed, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑦\">NotSupportedError</a></code> MUST be\n    thrown if the value is outside the range specified in\n    <a href=\"https://webaudio.github.io/web-audio-api/#render-quantum-sizes\">§ 2.5 Supported Render Quantum Sizes</a>, otherwise set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-render-quantum-size-slot\" id=\"ref-for-dom-baseaudiocontext-render-quantum-size-slot③\">[[render quantum size]]</a></code>\n    private slot to the passed value.</p>"
+              "html": "<p>Else, if an integer has been passed, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑧\">NotSupportedError</a></code> MUST be\n    thrown if the value is outside the range specified in\n    <a href=\"https://webaudio.github.io/web-audio-api/#render-quantum-sizes\">§ 2.5 Supported Render Quantum Sizes</a>, otherwise set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-render-quantum-size-slot\" id=\"ref-for-dom-baseaudiocontext-render-quantum-size-slot⑨\">[[render quantum size]]</a></code>\n    private slot to the passed value.</p>"
             }
           ]
         },
@@ -869,7 +890,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><span class=\"synchronous\">If any of the values in <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"argument\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiobuffer-constructor-options\" id=\"ref-for-dom-audiobuffer-constructor-options\">options</a></code> lie outside its nominal range, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror⑨\">NotSupportedError</a></code> exception and abort the following steps.</span></p>"
+          "html": "<p><span class=\"synchronous\">If any of the values in <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"argument\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiobuffer-constructor-options\" id=\"ref-for-dom-audiobuffer-constructor-options\">options</a></code> lie outside its nominal range, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①⓪\">NotSupportedError</a></code> exception and abort the following steps.</span></p>"
         },
         {
           "html": "<p>Let <var>b</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioBuffer\" id=\"ref-for-AudioBuffer②⑥\">AudioBuffer</a></code> object.</p>"
@@ -1051,7 +1072,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#queuing\" id=\"ref-for-queuing⑥\">Queue a control message</a> to start the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioScheduledSourceNode\" id=\"ref-for-AudioScheduledSourceNode①①\">AudioScheduledSourceNode</a></code>, including the parameter\nvalues in the message.</p>"
         },
         {
-          "html": "<p>Send a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message\" id=\"ref-for-control-message①⓪\">control message</a> to the associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⓪④\">AudioContext</a></code> to\n<a href=\"https://webaudio.github.io/web-audio-api/#context-resume\">start running its rendering thread</a> only when\nall the following conditions are met:</p>",
+          "html": "<p>Send a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message\" id=\"ref-for-control-message①⓪\">control message</a> to the associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⓪⑥\">AudioContext</a></code> to\n<a href=\"https://webaudio.github.io/web-audio-api/#context-resume\">start running its rendering thread</a> only when\nall the following conditions are met:</p>",
           "ignored": [
             "The context’s [[control thread state]] is \"suspended\". The context is allowed to start. [[suspended by user]] flag is false."
           ]
@@ -1139,7 +1160,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#acquire-the-content\" id=\"ref-for-acquire-the-content②\">Acquire the contents</a> of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-buffer\" id=\"ref-for-dom-audiobuffersourcenode-buffer①①\">buffer</a></code> if the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiobuffersourcenode-buffer\" id=\"ref-for-dom-audiobuffersourcenode-buffer①②\">buffer</a></code> has been set.</p>"
         },
         {
-          "html": "<p>Send a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message\" id=\"ref-for-control-message①②\">control message</a> to the associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⓪⑧\">AudioContext</a></code> to\n<a href=\"https://webaudio.github.io/web-audio-api/#context-resume\">start running its rendering thread</a> only when\nall the following conditions are met:</p>",
+          "html": "<p>Send a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message\" id=\"ref-for-control-message①②\">control message</a> to the associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①①⓪\">AudioContext</a></code> to\n<a href=\"https://webaudio.github.io/web-audio-api/#context-resume\">start running its rendering thread</a> only when\nall the following conditions are met:</p>",
           "ignored": [
             "The context’s [[control thread state]] is suspended. The context is allowed to start. [[suspended by user]] flag is false."
           ]
@@ -1182,7 +1203,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If the buffer <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiobuffer-numberofchannels\" id=\"ref-for-dom-audiobuffer-numberofchannels①\">number of channels</a></code> is not 1, 2, 4, or if the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiobuffer-samplerate\" id=\"ref-for-dom-audiobuffer-samplerate①\">sample-rate</a></code> of the buffer is not the same as the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-samplerate\" id=\"ref-for-dom-baseaudiocontext-samplerate⑦\">sample-rate</a></code> of its <a href=\"https://webaudio.github.io/web-audio-api/#associated\" id=\"ref-for-associated⑧\">associated</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#BaseAudioContext\" id=\"ref-for-BaseAudioContext⑥②\">BaseAudioContext</a></code>, a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror②⑥\">NotSupportedError</a></code> MUST be thrown.</p>"
+          "html": "<p>If the buffer <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiobuffer-numberofchannels\" id=\"ref-for-dom-audiobuffer-numberofchannels①\">number of channels</a></code> is not 1, 2, 4, or if the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiobuffer-samplerate\" id=\"ref-for-dom-audiobuffer-samplerate①\">sample-rate</a></code> of the buffer is not the same as the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-samplerate\" id=\"ref-for-dom-baseaudiocontext-samplerate⑦\">sample-rate</a></code> of its <a href=\"https://webaudio.github.io/web-audio-api/#associated\" id=\"ref-for-associated⑧\">associated</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#BaseAudioContext\" id=\"ref-for-BaseAudioContext⑥②\">BaseAudioContext</a></code>, a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror②⑦\">NotSupportedError</a></code> MUST be thrown.</p>"
         },
         {
           "html": "<p><a href=\"https://webaudio.github.io/web-audio-api/#acquire-the-content\" id=\"ref-for-acquire-the-content①⓪\">Acquire the content</a> of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioBuffer\" id=\"ref-for-AudioBuffer⑥⑨\">AudioBuffer</a></code>.</p>"
@@ -1493,13 +1514,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Up-sample the input samples to 2x or 4x the sample-rate of\nthe <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①④①\">AudioContext</a></code>. Thus for each <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#render-quantum\" id=\"ref-for-render-quantum①⑤\">render\nquantum</a>, generate twice (for 2x) or four times (for 4x) samples.</p>"
+          "html": "<p>Up-sample the input samples to 2x or 4x the sample-rate of\nthe <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①④③\">AudioContext</a></code>. Thus for each <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#render-quantum\" id=\"ref-for-render-quantum①⑤\">render\nquantum</a>, generate twice (for 2x) or four times (for 4x) samples.</p>"
         },
         {
           "html": "<p>Apply the shaping curve.</p>"
         },
         {
-          "html": "<p>Down-sample the result back to the sample-rate of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①④②\">AudioContext</a></code>. Thus taking the previously processed samples\nprocessed samples, generating a single render quantum worth of\nsamples as the final result.</p>"
+          "html": "<p>Down-sample the result back to the sample-rate of the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①④④\">AudioContext</a></code>. Thus taking the previously processed samples\nprocessed samples, generating a single render quantum worth of\nsamples as the final result.</p>"
         }
       ]
     },
@@ -1509,10 +1530,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>name</var> is an empty string,\n<span class=\"synchronous\">throw a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③⓪\">NotSupportedError</a></code></span>.</p>"
+          "html": "<p>If <var>name</var> is an empty string,\n<span class=\"synchronous\">throw a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③①\">NotSupportedError</a></code></span>.</p>"
         },
         {
-          "html": "<p>If <var>name</var> already exists as a key in the\n<a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#node-name-to-processor-constructor-map\" id=\"ref-for-node-name-to-processor-constructor-map①\">node name to processor constructor map</a>,\n<span class=\"synchronous\">throw a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③①\">NotSupportedError</a></code></span>.</p>"
+          "html": "<p>If <var>name</var> already exists as a key in the\n<a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#node-name-to-processor-constructor-map\" id=\"ref-for-node-name-to-processor-constructor-map①\">node name to processor constructor map</a>,\n<span class=\"synchronous\">throw a\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③②\">NotSupportedError</a></code></span>.</p>"
         },
         {
           "html": "<p>If the result of\n<code><a href=\"https://tc39.es/ecma262#sec-isconstructor\">IsConstructor</a>(argument=<var>processorCtor</var>)</code>\nis <code>false</code>,\n<span class=\"synchronous\">throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>\n</span>.</p>"
@@ -1541,7 +1562,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>paramName</var> be the value of\nthe member <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audioparamdescriptor-name\" id=\"ref-for-dom-audioparamdescriptor-name\">name</a></code>\nin <var>descriptor</var>. <span class=\"synchronous\">Throw\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③②\">NotSupportedError</a></code></span> if\n<var>paramNames</var> already\ncontains <var>paramName</var> value.</p>"
+                  "html": "<p>Let <var>paramName</var> be the value of\nthe member <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audioparamdescriptor-name\" id=\"ref-for-dom-audioparamdescriptor-name\">name</a></code>\nin <var>descriptor</var>. <span class=\"synchronous\">Throw\na <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③③\">NotSupportedError</a></code></span> if\n<var>paramNames</var> already\ncontains <var>paramName</var> value.</p>"
                 },
                 {
                   "html": "<p>Append <var>paramName</var> to\nthe <var>paramNames</var> array.</p>"
@@ -1706,14 +1727,14 @@
           "html": "<p>Let <var>node</var> be an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioWorkletNode\" id=\"ref-for-AudioWorkletNode③⑧\">AudioWorkletNode</a></code> instance that is\ngiven to this algorithm.</p>"
         },
         {
-          "html": "<p>If both <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-numberofinputs\" id=\"ref-for-dom-audioworkletnodeoptions-numberofinputs①\">numberOfInputs</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-numberofoutputs\" id=\"ref-for-dom-audioworkletnodeoptions-numberofoutputs①\">numberOfOutputs</a></code> are zero,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③③\">NotSupportedError</a></code> and abort the remaining steps.</p>"
+          "html": "<p>If both <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-numberofinputs\" id=\"ref-for-dom-audioworkletnodeoptions-numberofinputs①\">numberOfInputs</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-numberofoutputs\" id=\"ref-for-dom-audioworkletnodeoptions-numberofoutputs①\">numberOfOutputs</a></code> are zero,\nthrow a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③④\">NotSupportedError</a></code> and abort the remaining steps.</p>"
         },
         {
           "html": "If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-outputchannelcount\" id=\"ref-for-dom-audioworkletnodeoptions-outputchannelcount①\">outputChannelCount</a></code>\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a>,",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If any value in\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-outputchannelcount\" id=\"ref-for-dom-audioworkletnodeoptions-outputchannelcount②\">outputChannelCount</a></code> is zero\nor greater than the implementation’s maximum number\nof channels, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③④\">NotSupportedError</a></code> and abort\nthe remaining steps.</p>"
+              "html": "<p>If any value in\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-outputchannelcount\" id=\"ref-for-dom-audioworkletnodeoptions-outputchannelcount②\">outputChannelCount</a></code> is zero\nor greater than the implementation’s maximum number\nof channels, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③⑤\">NotSupportedError</a></code> and abort\nthe remaining steps.</p>"
             },
             {
               "html": "<p>If the length of\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-outputchannelcount\" id=\"ref-for-dom-audioworkletnodeoptions-outputchannelcount③\">outputChannelCount</a></code> does not\nequal <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audioworkletnodeoptions-numberofoutputs\" id=\"ref-for-dom-audioworkletnodeoptions-numberofoutputs②\">numberOfOutputs</a></code>,\nthrow an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#indexsizeerror\" id=\"ref-for-indexsizeerror②⑥\">IndexSizeError</a></code> and abort the remaining\nsteps.</p>"
@@ -1787,7 +1808,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>An <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①④⑤\">AudioContext</a></code> is created.</p>"
+          "html": "<p>An <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①④⑦\">AudioContext</a></code> is created.</p>"
         },
         {
           "html": "<p>In the main scope, <code>context.audioWorklet</code> is requested to add a script module.</p>"
@@ -1799,7 +1820,7 @@
           "html": "<p>The imported script is run in the newly created global scope.</p>"
         },
         {
-          "html": "<p>As part of running the imported script, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioWorkletProcessor\" id=\"ref-for-AudioWorkletProcessor③⑥\">AudioWorkletProcessor</a></code> is registered under\na key (<code>\"custom\"</code> in the above diagram) within the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioWorkletGlobalScope\" id=\"ref-for-AudioWorkletGlobalScope②⑤\">AudioWorkletGlobalScope</a></code>.\nThis populates maps both in the global scope and in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①④⑥\">AudioContext</a></code>.</p>"
+          "html": "<p>As part of running the imported script, an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioWorkletProcessor\" id=\"ref-for-AudioWorkletProcessor③⑥\">AudioWorkletProcessor</a></code> is registered under\na key (<code>\"custom\"</code> in the above diagram) within the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioWorkletGlobalScope\" id=\"ref-for-AudioWorkletGlobalScope②⑤\">AudioWorkletGlobalScope</a></code>.\nThis populates maps both in the global scope and in the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①④⑧\">AudioContext</a></code>.</p>"
         },
         {
           "html": "<p>The promise for the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/worklets.html#dom-worklet-addmodule\" id=\"ref-for-dom-worklet-addmodule②\">addModule()</a></code> call is resolved.</p>"
@@ -2234,7 +2255,7 @@
     {
       "name": "AudioContext/interruption-start",
       "href": "https://webaudio.github.io/web-audio-api/#dom-audiocontext-interruption-start",
-      "html": "Running a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message\" id=\"ref-for-control-message②①\">control message</a> to <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"AudioContext\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"interruption-start\" id=\"dom-audiocontext-interruption-start\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>interrupt an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑥②\">AudioContext</a></code></code></dfn> <var>context</var>\nmeans running these steps on the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread②①\">rendering thread</a>:",
+      "html": "Running a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message\" id=\"ref-for-control-message②①\">control message</a> to <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"AudioContext\" data-dfn-type=\"attribute\" data-export=\"\" data-lt=\"interruption-start\" id=\"dom-audiocontext-interruption-start\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>interrupt an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑥④\">AudioContext</a></code></code></dfn> <var>context</var>\nmeans running these steps on the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread②①\">rendering thread</a>:",
       "rationale": "if",
       "steps": [
         {
@@ -2288,7 +2309,7 @@
       ]
     },
     {
-      "html": "Running a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message\" id=\"ref-for-control-message②②\">control message</a> to end an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑥⑤\">AudioContext</a></code> <var>context</var>\n<a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#interruption\" id=\"ref-for-interruption③\">interruption</a> means running these steps on the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread②②\">rendering thread</a>:",
+      "html": "Running a <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#control-message\" id=\"ref-for-control-message②②\">control message</a> to end an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑥⑦\">AudioContext</a></code> <var>context</var>\n<a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#interruption\" id=\"ref-for-interruption③\">interruption</a> means running these steps on the <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread②②\">rendering thread</a>:",
       "rationale": "if",
       "steps": [
         {
@@ -2302,7 +2323,7 @@
               "html": "<p>Attempt to <a href=\"https://webaudio.github.io/web-audio-api/#acquiring\" id=\"ref-for-acquiring③\">acquire system resources</a>.</p>"
             },
             {
-              "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot①⑦\">[[rendering thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑥⑥\">AudioContext</a></code> to\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running①⑤\">running</a></code>\".</p>"
+              "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot①⑦\">[[rendering thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑥⑧\">AudioContext</a></code> to\n\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running①⑤\">running</a></code>\".</p>"
             },
             {
               "html": "<p>Start <a href=\"https://webaudio.github.io/web-audio-api/#rendering-loop\">rendering the audio graph</a>.</p>"
@@ -2312,7 +2333,7 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state①⑥\">state</a></code> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑥⑦\">AudioContext</a></code>\nis not already \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running①⑥\">running</a></code>\":",
+                  "html": "If the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-state\" id=\"ref-for-dom-baseaudiocontext-state①⑥\">state</a></code> attribute of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑥⑨\">AudioContext</a></code>\nis not already \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontextstate-running\" id=\"ref-for-dom-audiocontextstate-running①⑥\">running</a></code>\":",
                   "rationale": "set",
                   "steps": [
                     {
@@ -2332,7 +2353,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot①⑧\">[[rendering thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑥⑧\">AudioContext</a></code> to\n<code>suspended</code>.</p>"
+              "html": "<p>Set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-rendering-thread-state-slot\" id=\"ref-for-dom-baseaudiocontext-rendering-thread-state-slot①⑧\">[[rendering thread state]]</a></code> on the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑦⓪\">AudioContext</a></code> to\n<code>suspended</code>.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/media.html#queue-a-media-element-task\" id=\"ref-for-queue-a-media-element-task①⑤\">Queue a media element task</a> to execute the following steps:",
@@ -2351,7 +2372,7 @@
       ]
     },
     {
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑦⓪\">AudioContext</a></code> <var>audioContext</var> performs the following steps on <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread②③\">rendering thread</a> in the\n    event of an audio system resource error.",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑦②\">AudioContext</a></code> <var>audioContext</var> performs the following steps on <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread②③\">rendering thread</a> in the\n    event of an audio system resource error.",
       "rationale": "if",
       "steps": [
         {
@@ -2408,17 +2429,17 @@
       ]
     },
     {
-      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑦⓪\">AudioContext</a></code> <var>audioContext</var> performs the following steps on <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread②③\">rendering thread</a> in the\n    event of an audio system resource error.",
+      "html": "The <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑦②\">AudioContext</a></code> <var>audioContext</var> performs the following steps on <a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#rendering-thread\" id=\"ref-for-rendering-thread②③\">rendering thread</a> in the\n    event of an audio system resource error.",
       "rationale": "reject",
       "steps": [
         {
-          "html": "<p>Reject all the promises of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-pending-promises-slot\" id=\"ref-for-dom-baseaudiocontext-pending-promises-slot⑧\">[[pending promises]]</a></code> with\n<code>InvalidStateError</code>, for each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑦②\">AudioContext</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#OfflineAudioContext\" id=\"ref-for-OfflineAudioContext④⓪\">OfflineAudioContext</a></code> whose relevant global object is the same as\nthe document’s associated Window.</p>"
+          "html": "<p>Reject all the promises of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-pending-promises-slot\" id=\"ref-for-dom-baseaudiocontext-pending-promises-slot⑧\">[[pending promises]]</a></code> with\n<code>InvalidStateError</code>, for each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑦④\">AudioContext</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#OfflineAudioContext\" id=\"ref-for-OfflineAudioContext④⓪\">OfflineAudioContext</a></code> whose relevant global object is the same as\nthe document’s associated Window.</p>"
         },
         {
           "html": "<p>Stop all <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-decoding-thread\" id=\"ref-for-dom-baseaudiocontext-decoding-thread①\">decoding thread</a></code>s.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#queuing\" id=\"ref-for-queuing①③\">Queue a control message</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontext-close\" id=\"ref-for-dom-audiocontext-close②\">close()</a></code> the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑦③\">AudioContext</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#OfflineAudioContext\" id=\"ref-for-OfflineAudioContext④①\">OfflineAudioContext</a></code>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webaudio.github.io/web-audio-api/#queuing\" id=\"ref-for-queuing①③\">Queue a control message</a> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#dom-audiocontext-close\" id=\"ref-for-dom-audiocontext-close②\">close()</a></code> the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#AudioContext\" id=\"ref-for-AudioContext①⑦⑤\">AudioContext</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webaudio.github.io/web-audio-api/#OfflineAudioContext\" id=\"ref-for-OfflineAudioContext④①\">OfflineAudioContext</a></code>.</p>"
         }
       ]
     },

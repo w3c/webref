@@ -74,7 +74,8 @@ partial interface Element {
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface Element {
-  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html);
+  [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});
+  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html, optional SetHTMLUnsafeOptions options = {});
   DOMString getHTML(optional GetHTMLOptions options = {});
 
   [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;
@@ -91,11 +92,6 @@ partial interface Element {
 partial interface Element {
     [CEReactions] attribute DOMString containertiming;
     [CEReactions] attribute DOMString? containertimingIgnore;
-};
-
-// Source: HTML Sanitizer API (https://wicg.github.io/sanitizer-api/)
-partial interface Element {
-  [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});
 };
 
 // Source: CSS Spatial Navigation Module Level 1 (https://www.w3.org/TR/css-nav-1/)

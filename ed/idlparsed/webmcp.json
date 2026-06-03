@@ -470,11 +470,11 @@
       }
     },
     "idlExtendedNames": {
-      "Navigator": [
+      "Document": [
         {
-          "fragment": "partial interface Navigator {\n  [SecureContext] readonly attribute ModelContext modelContext;\n};",
+          "fragment": "partial interface Document {\n  [SecureContext, SameObject] readonly attribute ModelContext modelContext;\n};",
           "type": "interface",
-          "name": "Navigator",
+          "name": "Document",
           "inheritance": null,
           "members": [
             {
@@ -494,11 +494,17 @@
                   "name": "SecureContext",
                   "rhs": null,
                   "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
                 }
               ],
               "special": "",
               "readonly": true,
-              "href": "https://webmachinelearning.github.io/webmcp/#dom-navigator-modelcontext"
+              "href": "https://webmachinelearning.github.io/webmcp/#dom-document-modelcontext"
             }
           ],
           "extAttrs": [],
@@ -514,7 +520,7 @@
       ]
     },
     "dependencies": {
-      "Navigator": [
+      "Document": [
         "ModelContext"
       ],
       "ModelContext": [
@@ -536,7 +542,7 @@
       ]
     },
     "externalDependencies": [
-      "Navigator",
+      "Document",
       "EventTarget",
       "EventHandler",
       "AbortSignal"

@@ -91,6 +91,7 @@
           "PageTransitionEvent",
           "DOMParser",
           "XMLSerializer",
+          "Sanitizer",
           "ImageData",
           "MessageEvent",
           "EventSource",
@@ -34283,6 +34284,129 @@
         "partial": false,
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope"
       },
+      "SanitizerPresets": {
+        "fragment": "enum SanitizerPresets { \"default\" };",
+        "type": "enum",
+        "name": "SanitizerPresets",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "default",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerpresets-default"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerpresets"
+      },
+      "SetHTMLOptions": {
+        "fragment": "dictionary SetHTMLOptions {\n  (Sanitizer or SanitizerConfig or SanitizerPresets) sanitizer = \"default\";\n};",
+        "type": "dictionary",
+        "name": "SetHTMLOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "sanitizer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Sanitizer"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerConfig"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerPresets"
+                }
+              ]
+            },
+            "default": {
+              "type": "string",
+              "value": "default"
+            },
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sethtmloptions-sanitizer"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmloptions"
+      },
+      "SetHTMLUnsafeOptions": {
+        "fragment": "dictionary SetHTMLUnsafeOptions {\n  (Sanitizer or SanitizerConfig or SanitizerPresets) sanitizer = {};\n};",
+        "type": "dictionary",
+        "name": "SetHTMLUnsafeOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "sanitizer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Sanitizer"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerConfig"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerPresets"
+                }
+              ]
+            },
+            "default": {
+              "type": "dictionary"
+            },
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sethtmlunsafeoptions-sanitizer"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmlunsafeoptions"
+      },
       "GetHTMLOptions": {
         "fragment": "dictionary GetHTMLOptions {\n  boolean serializableShadowRoots = false;\n  sequence<ShadowRoot> shadowRoots = [];\n};",
         "type": "dictionary",
@@ -34528,6 +34652,921 @@
         ],
         "partial": false,
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#xmlserializer"
+      },
+      "Sanitizer": {
+        "fragment": "[Exposed=Window]\ninterface Sanitizer {\n  constructor(optional (SanitizerConfig or SanitizerPresets) configuration = \"default\");\n\n  // Query configuration:\n  SanitizerConfig get();\n\n  // Modify a Sanitizer's lists and fields:\n  boolean allowElement(SanitizerElementWithAttributes element);\n  boolean removeElement(SanitizerElement element);\n  boolean replaceElementWithChildren(SanitizerElement element);\n  boolean allowProcessingInstruction(SanitizerPI pi);\n  boolean removeProcessingInstruction(SanitizerPI pi);\n  boolean allowAttribute(SanitizerAttribute attribute);\n  boolean removeAttribute(SanitizerAttribute attribute);\n  boolean setComments(boolean allow);\n  boolean setDataAttributes(boolean allow);\n\n  // Remove markup that executes script.\n  boolean removeUnsafe();\n};",
+        "type": "interface",
+        "name": "Sanitizer",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "configuration",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "SanitizerConfig"
+                    },
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "SanitizerPresets"
+                    }
+                  ]
+                },
+                "default": {
+                  "type": "string",
+                  "value": "default"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "get",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SanitizerConfig"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-get"
+          },
+          {
+            "type": "operation",
+            "name": "allowElement",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "element",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerElementWithAttributes"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-allowelement"
+          },
+          {
+            "type": "operation",
+            "name": "removeElement",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "element",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerElement"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-removeelement"
+          },
+          {
+            "type": "operation",
+            "name": "replaceElementWithChildren",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "element",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerElement"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-replaceelementwithchildren"
+          },
+          {
+            "type": "operation",
+            "name": "allowProcessingInstruction",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "pi",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerPI"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-allowprocessinginstruction"
+          },
+          {
+            "type": "operation",
+            "name": "removeProcessingInstruction",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "pi",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerPI"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-removeprocessinginstruction"
+          },
+          {
+            "type": "operation",
+            "name": "allowAttribute",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "attribute",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerAttribute"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-allowattribute"
+          },
+          {
+            "type": "operation",
+            "name": "removeAttribute",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "attribute",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerAttribute"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-removeattribute"
+          },
+          {
+            "type": "operation",
+            "name": "setComments",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "allow",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-setcomments"
+          },
+          {
+            "type": "operation",
+            "name": "setDataAttributes",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "allow",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-setdataattributes"
+          },
+          {
+            "type": "operation",
+            "name": "removeUnsafe",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizer-removeunsafe"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizer"
+      },
+      "SanitizerElementNamespace": {
+        "fragment": "dictionary SanitizerElementNamespace {\n  required DOMString name;\n  DOMString? _namespace = \"http://www.w3.org/1999/xhtml\";\n};",
+        "type": "dictionary",
+        "name": "SanitizerElementNamespace",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespace-name"
+          },
+          {
+            "type": "field",
+            "name": "namespace",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "string",
+              "value": "http://www.w3.org/1999/xhtml"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerelementnamespace"
+      },
+      "SanitizerElementNamespaceWithAttributes": {
+        "fragment": "// Used by \"elements\"\ndictionary SanitizerElementNamespaceWithAttributes : SanitizerElementNamespace {\n  sequence<SanitizerAttribute> attributes;\n  sequence<SanitizerAttribute> removeAttributes;\n};",
+        "type": "dictionary",
+        "name": "SanitizerElementNamespaceWithAttributes",
+        "inheritance": "SanitizerElementNamespace",
+        "members": [
+          {
+            "type": "field",
+            "name": "attributes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerAttribute"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-attributes"
+          },
+          {
+            "type": "field",
+            "name": "removeAttributes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerAttribute"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerelementnamespacewithattributes-removeattributes"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerelementnamespacewithattributes"
+      },
+      "SanitizerAttributeNamespace": {
+        "fragment": "dictionary SanitizerAttributeNamespace {\n  required DOMString name;\n  DOMString? _namespace = null;\n};",
+        "type": "dictionary",
+        "name": "SanitizerAttributeNamespace",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "name",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerattributenamespace-name"
+          },
+          {
+            "type": "field",
+            "name": "namespace",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerattributenamespace"
+      },
+      "SanitizerProcessingInstruction": {
+        "fragment": "dictionary SanitizerProcessingInstruction {\n  required DOMString target;\n};",
+        "type": "dictionary",
+        "name": "SanitizerProcessingInstruction",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "target",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerprocessinginstruction-target"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerprocessinginstruction"
+      },
+      "SanitizerElement": {
+        "fragment": "typedef (DOMString or SanitizerElementNamespace) SanitizerElement;",
+        "type": "typedef",
+        "name": "SanitizerElement",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SanitizerElementNamespace"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerelement"
+      },
+      "SanitizerElementWithAttributes": {
+        "fragment": "typedef (DOMString or SanitizerElementNamespaceWithAttributes) SanitizerElementWithAttributes;",
+        "type": "typedef",
+        "name": "SanitizerElementWithAttributes",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SanitizerElementNamespaceWithAttributes"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerelementwithattributes"
+      },
+      "SanitizerPI": {
+        "fragment": "typedef (DOMString or SanitizerProcessingInstruction) SanitizerPI;",
+        "type": "typedef",
+        "name": "SanitizerPI",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SanitizerProcessingInstruction"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerpi"
+      },
+      "SanitizerAttribute": {
+        "fragment": "typedef (DOMString or SanitizerAttributeNamespace) SanitizerAttribute;",
+        "type": "typedef",
+        "name": "SanitizerAttribute",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SanitizerAttributeNamespace"
+            }
+          ]
+        },
+        "extAttrs": [],
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerattribute"
+      },
+      "SanitizerConfig": {
+        "fragment": "dictionary SanitizerConfig {\n  sequence<SanitizerElementWithAttributes> elements;\n  sequence<SanitizerElement> removeElements;\n  sequence<SanitizerElement> replaceWithChildrenElements;\n\n  sequence<SanitizerPI> processingInstructions;\n  sequence<SanitizerPI> removeProcessingInstructions;\n\n  sequence<SanitizerAttribute> attributes;\n  sequence<SanitizerAttribute> removeAttributes;\n\n  boolean comments;\n  boolean dataAttributes;\n};",
+        "type": "dictionary",
+        "name": "SanitizerConfig",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "elements",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerElementWithAttributes"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-elements"
+          },
+          {
+            "type": "field",
+            "name": "removeElements",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerElement"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-removeelements"
+          },
+          {
+            "type": "field",
+            "name": "replaceWithChildrenElements",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerElement"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-replacewithchildrenelements"
+          },
+          {
+            "type": "field",
+            "name": "processingInstructions",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerPI"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-processinginstructions"
+          },
+          {
+            "type": "field",
+            "name": "removeProcessingInstructions",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerPI"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-removeprocessinginstructions"
+          },
+          {
+            "type": "field",
+            "name": "attributes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerAttribute"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-attributes"
+          },
+          {
+            "type": "field",
+            "name": "removeAttributes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerAttribute"
+                }
+              ]
+            },
+            "default": null,
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-removeattributes"
+          },
+          {
+            "type": "field",
+            "name": "comments",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-comments"
+          },
+          {
+            "type": "field",
+            "name": "dataAttributes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sanitizerconfig-dataattributes"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sanitizerconfig"
       },
       "Navigator": {
         "fragment": "[Exposed=Window]\ninterface Navigator {\n  // objects implementing this interface also implement the interfaces given below\n};",
@@ -40724,7 +41763,7 @@
     "idlExtendedNames": {
       "Document": [
         {
-          "fragment": "[LegacyOverrideBuiltIns]\npartial interface Document {\n  static Document parseHTMLUnsafe((TrustedHTML or DOMString) html);\n\n  // resource metadata management\n  [PutForwards=href, LegacyUnforgeable] readonly attribute Location? location;\n  attribute USVString domain;\n  readonly attribute USVString referrer;\n  attribute USVString cookie;\n  readonly attribute DOMString lastModified;\n  readonly attribute DocumentReadyState readyState;\n\n  // DOM tree accessors\n  getter object (DOMString name);\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString dir;\n  [CEReactions] attribute HTMLElement? body;\n  readonly attribute HTMLHeadElement? head;\n  [SameObject] readonly attribute HTMLCollection images;\n  [SameObject] readonly attribute HTMLCollection embeds;\n  [SameObject] readonly attribute HTMLCollection plugins;\n  [SameObject] readonly attribute HTMLCollection links;\n  [SameObject] readonly attribute HTMLCollection forms;\n  [SameObject] readonly attribute HTMLCollection scripts;\n  NodeList getElementsByName(DOMString elementName);\n  readonly attribute HTMLOrSVGScriptElement? currentScript; // classic scripts in a document tree only\n\n  // dynamic markup insertion\n  [CEReactions] Document open(optional DOMString unused1, optional DOMString unused2); // both arguments are ignored\n  WindowProxy? open(USVString url, DOMString name, DOMString features);\n  [CEReactions] undefined close();\n  [CEReactions] undefined write((TrustedHTML or DOMString)... text);\n  [CEReactions] undefined writeln((TrustedHTML or DOMString)... text);\n\n  // user interaction\n  readonly attribute WindowProxy? defaultView;\n  boolean hasFocus();\n  [CEReactions] attribute DOMString designMode;\n  [CEReactions] boolean execCommand(DOMString commandId, optional boolean showUI = false, optional DOMString value = \"\");\n  boolean queryCommandEnabled(DOMString commandId);\n  boolean queryCommandIndeterm(DOMString commandId);\n  boolean queryCommandState(DOMString commandId);\n  boolean queryCommandSupported(DOMString commandId);\n  DOMString queryCommandValue(DOMString commandId);\n  readonly attribute boolean hidden;\n  readonly attribute DocumentVisibilityState visibilityState;\n\n  // special event handler IDL attributes that only apply to Document objects\n  [LegacyLenientThis] attribute EventHandler onreadystatechange;\n  attribute EventHandler onvisibilitychange;\n\n  // also has obsolete members\n};",
+          "fragment": "[LegacyOverrideBuiltIns]\npartial interface Document {\n  static Document parseHTMLUnsafe((TrustedHTML or DOMString) html, optional SetHTMLUnsafeOptions options = {});\n  static Document parseHTML(DOMString html, optional SetHTMLOptions options = {});\n\n  // resource metadata management\n  [PutForwards=href, LegacyUnforgeable] readonly attribute Location? location;\n  attribute USVString domain;\n  readonly attribute USVString referrer;\n  attribute USVString cookie;\n  readonly attribute DOMString lastModified;\n  readonly attribute DocumentReadyState readyState;\n\n  // DOM tree accessors\n  getter object (DOMString name);\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString dir;\n  [CEReactions] attribute HTMLElement? body;\n  readonly attribute HTMLHeadElement? head;\n  [SameObject] readonly attribute HTMLCollection images;\n  [SameObject] readonly attribute HTMLCollection embeds;\n  [SameObject] readonly attribute HTMLCollection plugins;\n  [SameObject] readonly attribute HTMLCollection links;\n  [SameObject] readonly attribute HTMLCollection forms;\n  [SameObject] readonly attribute HTMLCollection scripts;\n  NodeList getElementsByName(DOMString elementName);\n  readonly attribute HTMLOrSVGScriptElement? currentScript; // classic scripts in a document tree only\n\n  // dynamic markup insertion\n  [CEReactions] Document open(optional DOMString unused1, optional DOMString unused2); // both arguments are ignored\n  WindowProxy? open(USVString url, DOMString name, DOMString features);\n  [CEReactions] undefined close();\n  [CEReactions] undefined write((TrustedHTML or DOMString)... text);\n  [CEReactions] undefined writeln((TrustedHTML or DOMString)... text);\n\n  // user interaction\n  readonly attribute WindowProxy? defaultView;\n  boolean hasFocus();\n  [CEReactions] attribute DOMString designMode;\n  [CEReactions] boolean execCommand(DOMString commandId, optional boolean showUI = false, optional DOMString value = \"\");\n  boolean queryCommandEnabled(DOMString commandId);\n  boolean queryCommandIndeterm(DOMString commandId);\n  boolean queryCommandState(DOMString commandId);\n  boolean queryCommandSupported(DOMString commandId);\n  DOMString queryCommandValue(DOMString commandId);\n  readonly attribute boolean hidden;\n  readonly attribute DocumentVisibilityState visibilityState;\n\n  // special event handler IDL attributes that only apply to Document objects\n  [LegacyLenientThis] attribute EventHandler onreadystatechange;\n  attribute EventHandler onvisibilitychange;\n\n  // also has obsolete members\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -40773,11 +41812,80 @@
                   "default": null,
                   "optional": false,
                   "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "SetHTMLUnsafeOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
                 }
               ],
               "extAttrs": [],
               "special": "static",
               "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsehtmlunsafe"
+            },
+            {
+              "type": "operation",
+              "name": "parseHTML",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "Document"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "html",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "SetHTMLOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": "static",
+              "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsehtml"
             },
             {
               "type": "attribute",
@@ -43318,11 +44426,69 @@
       ],
       "Element": [
         {
-          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, (TrustedHTML or DOMString) string);\n};",
+          "fragment": "partial interface Element {\n  [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html, optional SetHTMLUnsafeOptions options = {});\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, (TrustedHTML or DOMString) string);\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
           "members": [
+            {
+              "type": "operation",
+              "name": "setHTML",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "html",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "SetHTMLOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-element-sethtml"
+            },
             {
               "type": "operation",
               "name": "setHTMLUnsafe",
@@ -43366,6 +44532,24 @@
                   },
                   "default": null,
                   "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "SetHTMLUnsafeOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
                   "variadic": false
                 }
               ],
@@ -43589,11 +44773,69 @@
       ],
       "ShadowRoot": [
         {
-          "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;\n};",
+          "fragment": "partial interface ShadowRoot {\n  [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html, optional SetHTMLUnsafeOptions options = {});\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;\n};",
           "type": "interface",
           "name": "ShadowRoot",
           "inheritance": null,
           "members": [
+            {
+              "type": "operation",
+              "name": "setHTML",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "html",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "SetHTMLOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-shadowroot-sethtml"
+            },
             {
               "type": "operation",
               "name": "setHTMLUnsafe",
@@ -43637,6 +44879,24 @@
                   },
                   "default": null,
                   "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "SetHTMLUnsafeOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
                   "variadic": false
                 }
               ],
@@ -46851,6 +48111,7 @@
         "NotRestoredReasons",
         "DOMParser",
         "XMLSerializer",
+        "Sanitizer",
         "Navigator",
         "PluginArray",
         "MimeTypeArray",
@@ -46940,6 +48201,8 @@
       "Document": [
         "Document",
         "TrustedHTML",
+        "SetHTMLUnsafeOptions",
+        "SetHTMLOptions",
         "Location",
         "DocumentReadyState",
         "HTMLElement",
@@ -47740,12 +49003,26 @@
         "EventHandler"
       ],
       "Element": [
+        "SetHTMLOptions",
         "TrustedHTML",
+        "SetHTMLUnsafeOptions",
         "GetHTMLOptions"
       ],
       "ShadowRoot": [
+        "SetHTMLOptions",
         "TrustedHTML",
+        "SetHTMLUnsafeOptions",
         "GetHTMLOptions"
+      ],
+      "SetHTMLOptions": [
+        "Sanitizer",
+        "SanitizerConfig",
+        "SanitizerPresets"
+      ],
+      "SetHTMLUnsafeOptions": [
+        "Sanitizer",
+        "SanitizerConfig",
+        "SanitizerPresets"
       ],
       "GetHTMLOptions": [
         "ShadowRoot"
@@ -47761,6 +49038,27 @@
       ],
       "XMLSerializer": [
         "Node"
+      ],
+      "Sanitizer": [
+        "SanitizerConfig",
+        "SanitizerPresets",
+        "SanitizerElementWithAttributes",
+        "SanitizerElement",
+        "SanitizerPI",
+        "SanitizerAttribute"
+      ],
+      "SanitizerElementNamespace": [],
+      "SanitizerElementNamespaceWithAttributes": [
+        "SanitizerElementNamespace",
+        "SanitizerAttribute"
+      ],
+      "SanitizerAttributeNamespace": [],
+      "SanitizerProcessingInstruction": [],
+      "SanitizerConfig": [
+        "SanitizerElementWithAttributes",
+        "SanitizerElement",
+        "SanitizerPI",
+        "SanitizerAttribute"
       ],
       "NavigatorID": [],
       "NavigatorLanguage": [],

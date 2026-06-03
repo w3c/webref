@@ -112,7 +112,7 @@
           "title": "HTML Standard",
           "url": "https://html.spec.whatwg.org/multipage/"
         },
-        "fragment": "partial interface Element {\n  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html);\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, (TrustedHTML or DOMString) string);\n};"
+        "fragment": "partial interface Element {\n  [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});\n  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html, optional SetHTMLUnsafeOptions options = {});\n  DOMString getHTML(optional GetHTMLOptions options = {});\n\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;\n  [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, (TrustedHTML or DOMString) string);\n};"
       },
       {
         "spec": {
@@ -127,13 +127,6 @@
           "url": "https://wicg.github.io/container-timing/"
         },
         "fragment": "partial interface Element {\n    [CEReactions] attribute DOMString containertiming;\n    [CEReactions] attribute DOMString? containertimingIgnore;\n};"
-      },
-      {
-        "spec": {
-          "title": "HTML Sanitizer API",
-          "url": "https://wicg.github.io/sanitizer-api/"
-        },
-        "fragment": "partial interface Element {\n  [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});\n};"
       },
       {
         "spec": {

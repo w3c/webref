@@ -60,10 +60,10 @@
       "number": "4"
     },
     {
-      "id": "navigator-extension",
-      "href": "https://webmachinelearning.github.io/webmcp/#navigator-extension",
+      "id": "document-extension",
+      "href": "https://webmachinelearning.github.io/webmcp/#document-extension",
       "level": 3,
-      "title": "Extensions to the Navigator Interface",
+      "title": "Extensions to Document",
       "number": "4.1"
     },
     {
@@ -140,8 +140,155 @@
       "id": "security-privacy",
       "href": "https://webmachinelearning.github.io/webmcp/#security-privacy",
       "level": 2,
-      "title": "Security and privacy considerations",
+      "title": "Security and Privacy Considerations",
       "number": "6"
+    },
+    {
+      "id": "approach-to-risk-assessment-and-mitigations",
+      "href": "https://webmachinelearning.github.io/webmcp/#approach-to-risk-assessment-and-mitigations",
+      "level": 3,
+      "title": "Approach to Risk Assessment and Mitigations",
+      "number": "6.1"
+    },
+    {
+      "id": "agent-baseline-capabilities",
+      "href": "https://webmachinelearning.github.io/webmcp/#agent-baseline-capabilities",
+      "level": 3,
+      "title": "Agent Baseline Capabilities",
+      "number": "6.2"
+    },
+    {
+      "id": "key-risks",
+      "href": "https://webmachinelearning.github.io/webmcp/#key-risks",
+      "level": 3,
+      "title": "Key Security and Privacy Risks",
+      "number": "6.3"
+    },
+    {
+      "id": "prompt-injection",
+      "href": "https://webmachinelearning.github.io/webmcp/#prompt-injection",
+      "level": 4,
+      "title": "Prompt Injection Attacks",
+      "number": "6.3.1"
+    },
+    {
+      "id": "metadata-description-attacks",
+      "href": "https://webmachinelearning.github.io/webmcp/#metadata-description-attacks",
+      "level": 5,
+      "title": "Metadata / Description Attacks (Tool Poisoning)",
+      "number": "6.3.1.1"
+    },
+    {
+      "id": "output-injection-attacks",
+      "href": "https://webmachinelearning.github.io/webmcp/#output-injection-attacks",
+      "level": 5,
+      "title": "Output Injection Attacks",
+      "number": "6.3.1.2"
+    },
+    {
+      "id": "tool-implementation-targets",
+      "href": "https://webmachinelearning.github.io/webmcp/#tool-implementation-targets",
+      "level": 5,
+      "title": "Tool Implementation as Attack Targets",
+      "number": "6.3.1.3"
+    },
+    {
+      "id": "misrepresentation-of-intent",
+      "href": "https://webmachinelearning.github.io/webmcp/#misrepresentation-of-intent",
+      "level": 4,
+      "title": "Misrepresentation of Intent",
+      "number": "6.3.2"
+    },
+    {
+      "id": "why-intent-matters",
+      "href": "https://webmachinelearning.github.io/webmcp/#why-intent-matters",
+      "level": 5,
+      "title": "Why This Matters",
+      "number": "6.3.2.1"
+    },
+    {
+      "id": "misalignment-types",
+      "href": "https://webmachinelearning.github.io/webmcp/#misalignment-types",
+      "level": 5,
+      "title": "Misalignment Types",
+      "number": "6.3.2.2"
+    },
+    {
+      "id": "scenario-ambiguous-finalization",
+      "href": "https://webmachinelearning.github.io/webmcp/#scenario-ambiguous-finalization",
+      "level": 5,
+      "title": "Scenario: Ambiguous Finalization (Accidental or Malicious)",
+      "number": "6.3.2.3"
+    },
+    {
+      "id": "intent-current-gaps",
+      "href": "https://webmachinelearning.github.io/webmcp/#intent-current-gaps",
+      "level": 5,
+      "title": "Current Gaps",
+      "number": "6.3.2.4"
+    },
+    {
+      "id": "privacy-leakage-over-parameterization",
+      "href": "https://webmachinelearning.github.io/webmcp/#privacy-leakage-over-parameterization",
+      "level": 4,
+      "title": "Privacy Leakage Through Over-Parameterization",
+      "number": "6.3.3"
+    },
+    {
+      "id": "privacy-risk",
+      "href": "https://webmachinelearning.github.io/webmcp/#privacy-risk",
+      "level": 5,
+      "title": "The Privacy Risk",
+      "number": "6.3.3.1"
+    },
+    {
+      "id": "attack-example-overparameterization",
+      "href": "https://webmachinelearning.github.io/webmcp/#attack-example-overparameterization",
+      "level": 5,
+      "title": "Example Attack",
+      "number": "6.3.3.2"
+    },
+    {
+      "id": "privacy-implications",
+      "href": "https://webmachinelearning.github.io/webmcp/#privacy-implications",
+      "level": 5,
+      "title": "Implications",
+      "number": "6.3.3.3"
+    },
+    {
+      "id": "violation-same-origin-boundaries",
+      "href": "https://webmachinelearning.github.io/webmcp/#violation-same-origin-boundaries",
+      "level": 4,
+      "title": "Violation of Same-Origin Boundaries",
+      "number": "6.3.4"
+    },
+    {
+      "id": "mitigations",
+      "href": "https://webmachinelearning.github.io/webmcp/#mitigations",
+      "level": 3,
+      "title": "Mitigations",
+      "number": "6.4"
+    },
+    {
+      "id": "mitigation-restrict-input-lengths",
+      "href": "https://webmachinelearning.github.io/webmcp/#mitigation-restrict-input-lengths",
+      "level": 4,
+      "title": "Restricting maximum input lengths",
+      "number": "6.4.1"
+    },
+    {
+      "id": "mitigation-shared-attack-evals",
+      "href": "https://webmachinelearning.github.io/webmcp/#mitigation-shared-attack-evals",
+      "level": 4,
+      "title": "Supporting interoperable probabilistic defense structures through shared attack eval datasets",
+      "number": "6.4.2"
+    },
+    {
+      "id": "mitigation-untrusted-annotation",
+      "href": "https://webmachinelearning.github.io/webmcp/#mitigation-untrusted-annotation",
+      "level": 4,
+      "title": "Untrusted Annotation for Tool Responses",
+      "number": "6.4.3"
     },
     {
       "id": "accessibility",
@@ -186,6 +333,12 @@
       "href": "https://webmachinelearning.github.io/webmcp/#normative",
       "level": 3,
       "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://webmachinelearning.github.io/webmcp/#informative",
+      "level": 3,
+      "title": "Non-Normative References"
     },
     {
       "id": "idl-index",

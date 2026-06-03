@@ -949,7 +949,7 @@
     },
     {
       "name": "@position-try",
-      "prose": "The @position-try rule defines a position option with a given name, specifying one or more sets of positioning properties that can be applied to a box via position-try-fallbacks,",
+      "prose": "The @position-try rule defines a position option with a given name, specifying one or more sets of positioning properties that can be applied to a box via position-try-fallbacks.",
       "href": "https://drafts.csswg.org/css-anchor-position-1/#at-ruledef-position-try",
       "descriptors": [],
       "syntax": "@position-try <dashed-ident> { <declaration-list> }",
@@ -16799,7 +16799,7 @@
       "percentages": "Converted to <number>",
       "computedValue": "as specified, but with <percentage> converted to the equivalent <number>",
       "canonicalOrder": "per grammar",
-      "animationType": "not animatable",
+      "animationType": "by computed value type",
       "media": "visual",
       "styleDeclaration": [
         "zoom"
@@ -17630,7 +17630,7 @@
     },
     {
       "name": ":picture-in-picture",
-      "prose": "The :picture-in-picture pseudo-class represents an element which is displayed in a mode that takes up most (usually all) of the viewport, and whose viewport is confined to part of the screen while being displayed over other content, for example when using the Picture-in-Picture API. [picture-in-picture]",
+      "prose": "The :picture-in-picture pseudo-class represents an element whose contents are being displayed in a “picture-in-picture” mode (i.e. displayed in a window confined to part of the screen and overlaying other content) rather than embedded in the document. For example, this pseudo-class can be used to style a video element’s box while its contents are being played in an overlaid window using the Picture-in-Picture API. [picture-in-picture]",
       "href": "https://drafts.csswg.org/selectors-4/#selectordef-picture-in-picture",
       "syntax": ":picture-in-picture",
       "extended": []
@@ -17786,6 +17786,13 @@
       "prose": "Exactly one scroll marker within each scroll marker group is determined to be active at a time. Such \"active\" scroll markers match the :target-current pseudo-class.",
       "href": "https://drafts.csswg.org/css-overflow-5/#selectordef-target-current",
       "syntax": ":target-current",
+      "extended": []
+    },
+    {
+      "name": ":trigger-link",
+      "prose": "This specification defines a new :trigger-link that matches link elements that trigger the current navigation.",
+      "href": "https://drafts.csswg.org/css-navigation-1/#trigger-link-pseudo",
+      "syntax": ":trigger-link",
       "extended": []
     },
     {

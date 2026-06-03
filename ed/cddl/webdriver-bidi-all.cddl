@@ -769,12 +769,8 @@ browsingContext.StartScreencast = (
 browsingContext.StartScreencastParameters = {
   context: browsingContext.BrowsingContext,
   ? mimeType: text,
-  ? streamOptions: browsingContext.MediaStreamOptions,
-}
-
-browsingContext.MediaStreamOptions = {
-   ? video: browsingContext.MediaTrackConstraints,
-   ? audio: bool .default false,
+  ? video: browsingContext.MediaTrackConstraints,
+  ? audio: bool .default false,
 }
 
 browsingContext.MediaTrackConstraints = {
@@ -3058,12 +3054,8 @@ browsingContext.StartScreencast = (
 browsingContext.StartScreencastParameters = {
   context: browsingContext.BrowsingContext,
   ? mimeType: text,
-  ? streamOptions: browsingContext.MediaStreamOptions,
-}
-
-browsingContext.MediaStreamOptions = {
-   ? video: browsingContext.MediaTrackConstraints,
-   ? audio: bool .default false,
+  ? video: browsingContext.MediaTrackConstraints,
+  ? audio: bool .default false,
 }
 
 browsingContext.MediaTrackConstraints = {
@@ -3071,6 +3063,8 @@ browsingContext.MediaTrackConstraints = {
    ? height: js-uint,
    ? frameRate: js-uint,
 }
+
+browsingContext.Screencast = text
 
 browsingContext.StopScreencast = (
   method: "browsingContext.stopScreencast",

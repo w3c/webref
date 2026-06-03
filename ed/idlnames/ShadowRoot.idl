@@ -16,13 +16,9 @@ ShadowRoot includes DocumentOrShadowRoot;
 
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 partial interface ShadowRoot {
-  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html);
+  [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});
+  [CEReactions] undefined setHTMLUnsafe((TrustedHTML or DOMString) html, optional SetHTMLUnsafeOptions options = {});
   DOMString getHTML(optional GetHTMLOptions options = {});
 
   [CEReactions] attribute (TrustedHTML or [LegacyNullToEmptyString] DOMString) innerHTML;
-};
-
-// Source: HTML Sanitizer API (https://wicg.github.io/sanitizer-api/)
-partial interface ShadowRoot {
-  [CEReactions] undefined setHTML(DOMString html, optional SetHTMLOptions options = {});
 };

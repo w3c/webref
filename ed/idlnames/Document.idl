@@ -73,7 +73,8 @@ partial interface Document {
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 [LegacyOverrideBuiltIns]
 partial interface Document {
-  static Document parseHTMLUnsafe((TrustedHTML or DOMString) html);
+  static Document parseHTMLUnsafe((TrustedHTML or DOMString) html, optional SetHTMLUnsafeOptions options = {});
+  static Document parseHTML(DOMString html, optional SetHTMLOptions options = {});
 
   // resource metadata management
   [PutForwards=href, LegacyUnforgeable] readonly attribute Location? location;
@@ -157,6 +158,11 @@ partial interface Document {
   Promise<undefined> requestStorageAccess();
 };
 
+// Source: WebMCP (https://webmachinelearning.github.io/webmcp/)
+partial interface Document {
+  [SecureContext, SameObject] readonly attribute ModelContext modelContext;
+};
+
 // Source: Prerendering Revamped (https://wicg.github.io/nav-speculation/prerendering.html)
 partial interface Document {
     readonly attribute boolean prerendering;
@@ -170,11 +176,6 @@ partial interface Document {
     attribute EventHandler onfreeze;
     attribute EventHandler onresume;
     readonly attribute boolean wasDiscarded;
-};
-
-// Source: HTML Sanitizer API (https://wicg.github.io/sanitizer-api/)
-partial interface Document {
-  static Document parseHTML(DOMString html, optional SetHTMLOptions options = {});
 };
 
 // Source: URL Fragment Text Directives (https://wicg.github.io/scroll-to-text-fragment/)

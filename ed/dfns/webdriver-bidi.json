@@ -822,6 +822,26 @@
       "links": []
     },
     {
+      "id": "emptyresult",
+      "href": "https://w3c.github.io/webdriver-bidi/#emptyresult",
+      "linkingText": [
+        "EmptyResult"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "protocol-definition",
+        "href": "https://w3c.github.io/webdriver-bidi/#protocol-definition",
+        "title": "Definition",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "cddl-type-extensible",
       "href": "https://w3c.github.io/webdriver-bidi/#cddl-type-extensible",
       "linkingText": [
@@ -15301,11 +15321,11 @@
       "links": []
     },
     {
-      "id": "cddl-key-browsingcontextstartscreencastparameters-streamoptions",
-      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextstartscreencastparameters-streamoptions",
+      "id": "cddl-key-browsingcontextstartscreencastparameters-video",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextstartscreencastparameters-video",
       "linkingText": [
-        "streamOptions",
-        "\"streamOptions\""
+        "video",
+        "\"video\""
       ],
       "localLinkingText": [],
       "type": "cddl-key",
@@ -15324,51 +15344,8 @@
       "links": []
     },
     {
-      "id": "cddl-type-browsingcontextmediastreamoptions",
-      "href": "https://w3c.github.io/webdriver-bidi/#cddl-type-browsingcontextmediastreamoptions",
-      "linkingText": [
-        "browsingContext.MediaStreamOptions"
-      ],
-      "localLinkingText": [],
-      "type": "cddl-type",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "command-browsingContext-startScreencast",
-        "href": "https://w3c.github.io/webdriver-bidi/#command-browsingContext-startScreencast",
-        "title": "The browsingContext.startScreencast Command",
-        "number": "7.3.3.13"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "cddl-key-browsingcontextmediastreamoptions-video",
-      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextmediastreamoptions-video",
-      "linkingText": [
-        "video",
-        "\"video\""
-      ],
-      "localLinkingText": [],
-      "type": "cddl-key",
-      "for": [
-        "browsingContext.MediaStreamOptions"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "command-browsingContext-startScreencast",
-        "href": "https://w3c.github.io/webdriver-bidi/#command-browsingContext-startScreencast",
-        "title": "The browsingContext.startScreencast Command",
-        "number": "7.3.3.13"
-      },
-      "definedIn": "pre",
-      "links": []
-    },
-    {
-      "id": "cddl-key-browsingcontextmediastreamoptions-audio",
-      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextmediastreamoptions-audio",
+      "id": "cddl-key-browsingcontextstartscreencastparameters-audio",
+      "href": "https://w3c.github.io/webdriver-bidi/#cddl-key-browsingcontextstartscreencastparameters-audio",
       "linkingText": [
         "audio",
         "\"audio\""
@@ -15376,7 +15353,7 @@
       "localLinkingText": [],
       "type": "cddl-key",
       "for": [
-        "browsingContext.MediaStreamOptions"
+        "browsingContext.StartScreencastParameters"
       ],
       "access": "private",
       "informative": false,

@@ -845,14 +845,14 @@
     {
       "name": "blocked Bluetooth service class UUID",
       "href": "https://wicg.github.io/serial/#dfn-blocked-bluetooth-service-class-uuid",
-      "html": "A {{BluetoothServiceUUID} <var data-type=\"BluetoothServiceUUID\">serviceUuid</var> is a\n        <dfn id=\"dfn-blocked-bluetooth-service-class-uuid\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">blocked Bluetooth service class UUID</dfn> if the following steps\n        return <code>true</code>:",
+      "html": "A <a data-link-type=\"typedef\" data-lt=\"BluetoothServiceUUID\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#typedefdef-bluetoothserviceuuid\"><code>BluetoothServiceUUID</code></a> <var data-type=\"BluetoothServiceUUID\">serviceUuid</var> is a\n        <dfn id=\"dfn-blocked-bluetooth-service-class-uuid\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">blocked Bluetooth service class UUID</dfn> if the following steps\n        return <code>true</code>:",
       "rationale": "let",
       "steps": [
         {
           "html": "Let <var data-type=\"UUID\">uuid</var> be the result of calling\n        <a data-link-type=\"interface\" data-lt=\"BluetoothUUID\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#bluetoothuuid\"><code>BluetoothUUID</code></a>.<a data-link-type=\"method\" data-lt=\"getService()\" href=\"https://webbluetoothcg.github.io/web-bluetooth/#dom-bluetoothuuid-getservice\"><code>getService</code></a><code>()</code> with <var data-type=\"BluetoothServiceUUID\">serviceUuid</var>."
         },
         {
-          "html": "Let <var data-type=\"list&lt;BluetoothServiceUUID&gt;\">blocklist</var> be the result of\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/serial/#dfn-parsing-the-bluetooth-service-class-id-blocklist\" class=\"internalDFN\" id=\"ref-for-dfn-parsing-the-bluetooth-service-class-id-blocklist-1\">parsing the Bluetooth service class ID blocklist</a> at <a href=\"https://github.com/WICG/serial/blob/main/blocklist.txt\">https://github.com/WICG/serial/blob/main/blocklist.txt</a>."
+          "html": "Let <var data-type=\"list&lt;BluetoothServiceUUID&gt;\">blocklist</var> be the result of\n        <a data-link-type=\"dfn|abstract-op\" href=\"https://wicg.github.io/serial/#dfn-parsing-the-bluetooth-service-class-id-blocklist\" class=\"internalDFN\" id=\"ref-for-dfn-parsing-the-bluetooth-service-class-id-blocklist-1\">parsing the Bluetooth service class ID blocklist</a> at <a href=\"https://github.com/WICG/serial/blob/main/bluetooth-service-blocklist.txt\">https://github.com/WICG/serial/blob/main/bluetooth-service-blocklist.txt</a>."
         },
         {
           "html": "If <var data-type=\"list&lt;BluetoothServiceUUID&gt;\">blocklist</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\">contains</a> <var data-type=\"UUID\">uuid</var>, return <code>true</code>."
