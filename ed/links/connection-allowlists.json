@@ -25,6 +25,7 @@
       "https://webbluetoothcg.github.io/web-bluetooth/": {},
       "https://webidl.spec.whatwg.org/": {},
       "https://wicg.github.io/document-policy/": {},
+      "https://wicg.github.io/web-smart-card/": {},
       "https://www.rfc-editor.org/rfc/rfc9651": {},
       "https://www.w3.org/community/about/agreements/cla/": {},
       "https://www.w3.org/community/wicg/": {},
@@ -85,7 +86,13 @@
           "environment",
           "environment-settings-object",
           "concept-settings-object-policy-container",
-          "concept-environment-creation-url"
+          "concept-environment-creation-url",
+          "relevant-settings-object"
+        ]
+      },
+      "https://html.spec.whatwg.org/multipage/workers.html": {
+        "anchors": [
+          "concept-workerglobalscope-policy-container"
         ]
       },
       "https://infra.spec.whatwg.org/": {
@@ -127,6 +134,9 @@
       },
       "https://w3c.github.io/ServiceWorker/": {
         "anchors": [
+          "windowclient",
+          "dom-windowclient-navigate",
+          "dom-clients-openwindow",
           "dfn-service-worker"
         ]
       },
@@ -160,12 +170,20 @@
         "anchors": [
           "idl-USVString",
           "idl-sequence",
-          "idl-DOMString"
+          "idl-DOMString",
+          "this",
+          "securityerror",
+          "idl-DOMException"
         ]
       },
       "https://wicg.github.io/document-policy/": {
         "anchors": [
           "required-document-policy"
+        ]
+      },
+      "https://wicg.github.io/web-smart-card/": {
+        "anchors": [
+          "transaction-state-promise"
         ]
       },
       "https://www.rfc-editor.org/rfc/rfc9651": {
