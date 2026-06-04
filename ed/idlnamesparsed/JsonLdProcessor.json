@@ -3,7 +3,7 @@
   "type": "interface",
   "defined": {
     "spec": {
-      "title": "JSON-LD 1.1 Processing Algorithms and API",
+      "title": "JSON-LD 1.2 Processing Algorithms and API",
       "url": "https://www.w3.org/TR/json-ld11-api/"
     },
     "fragment": "[Exposed=JsonLd]\ninterface JsonLdProcessor {\n  constructor();\n  static Promise<JsonLdRecord> compact(\n    JsonLdInput input,\n    optional JsonLdContext context = null,\n    optional JsonLdOptions options = {});\n  static Promise<sequence<JsonLdRecord>> expand(\n    JsonLdInput input,\n    optional JsonLdOptions options = {});\n  static Promise<JsonLdRecord> flatten(\n    JsonLdInput input,\n    optional JsonLdContext context = null,\n    optional JsonLdOptions options = {});\n  static Promise<sequence<JsonLdRecord>> fromRdf(\n    RdfDataset input,\n    optional JsonLdOptions options = {});\n  static Promise<RdfDataset> toRdf(\n    JsonLdInput input,\n    optional JsonLdOptions options = {});\n};",

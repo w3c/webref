@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "JSON-LD 1.1 Processing Algorithms and API",
+    "title": "JSON-LD 1.2 Processing Algorithms and API",
     "url": "https://w3c.github.io/json-ld-api/"
   },
   "idlparsed": {
@@ -949,7 +949,7 @@
         "href": "https://w3c.github.io/json-ld-api/#dom-rdfliteral"
       },
       "JsonLdOptions": {
-        "fragment": "dictionary JsonLdOptions {\n  USVString?             base = null;\n  boolean                compactArrays = true;\n  boolean                compactToRelative = true;\n  LoadDocumentCallback?  documentLoader = null;\n  (JsonLdRecord? or USVString) expandContext = null;\n  boolean                extractAllScripts = false;\n  boolean                frameExpansion = false;\n  boolean                ordered = false;\n  USVString              processingMode = \"json-ld-1.1\";\n  boolean                produceGeneralizedRdf = true;\n  USVString?             rdfDirection = null;\n  boolean                useNativeTypes = false;\n  boolean                useRdfType = false;\n};",
+        "fragment": "dictionary JsonLdOptions {\n  USVString?             base = null;\n  boolean                compactArrays = true;\n  boolean                compactToRelative = true;\n  LoadDocumentCallback?  documentLoader = null;\n  (JsonLdRecord? or USVString) expandContext = null;\n  boolean                extractAllScripts = false;\n  boolean                frameExpansion = false;\n  boolean                ordered = false;\n  USVString              processingMode = \"json-ld-1.2\";\n  boolean                produceGeneralizedRdf = true;\n  USVString?             rdfDirection = null;\n  boolean                useNativeTypes = false;\n  boolean                useRdfType = false;\n};",
         "type": "dictionary",
         "name": "JsonLdOptions",
         "inheritance": null,
@@ -1134,7 +1134,7 @@
             },
             "default": {
               "type": "string",
-              "value": "json-ld-1.1"
+              "value": "json-ld-1.2"
             },
             "required": false,
             "href": "https://w3c.github.io/json-ld-api/#dom-jsonldoptions-processingmode"
