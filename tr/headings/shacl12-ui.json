@@ -1,0 +1,1020 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 User Interfaces",
+    "url": "https://www.w3.org/TR/shacl12-ui/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/shacl12-ui/#title",
+      "level": 1,
+      "title": "SHACL 1.2 User Interfaces"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/shacl12-ui/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "specifications",
+      "href": "https://www.w3.org/TR/shacl12-ui/#specifications",
+      "level": 2,
+      "title": "SHACL Specifications",
+      "alternateIds": [
+        "shacl-specifications"
+      ]
+    },
+    {
+      "id": "document-outline",
+      "href": "https://www.w3.org/TR/shacl12-ui/#document-outline",
+      "level": 2,
+      "title": "Document Outline",
+      "alternateIds": [
+        "document-outline-0"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://www.w3.org/TR/shacl12-ui/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "scope",
+      "href": "https://www.w3.org/TR/shacl12-ui/#scope",
+      "level": 3,
+      "title": "Scope",
+      "alternateIds": [
+        "x1-1-scope"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/shacl12-ui/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "alternateIds": [
+        "x1-2-terminology"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "conventions",
+      "href": "https://www.w3.org/TR/shacl12-ui/#conventions",
+      "level": 3,
+      "title": "Document Conventions",
+      "alternateIds": [
+        "x1-3-document-conventions"
+      ],
+      "number": "1.3"
+    },
+    {
+      "id": "conformance",
+      "href": "https://www.w3.org/TR/shacl12-ui/#conformance",
+      "level": 3,
+      "title": "Conformance",
+      "alternateIds": [
+        "x1-4-conformance"
+      ],
+      "number": "1.4"
+    },
+    {
+      "id": "compatibility",
+      "href": "https://www.w3.org/TR/shacl12-ui/#compatibility",
+      "level": 3,
+      "title": "RDF Abstract Model Compatibility",
+      "alternateIds": [
+        "x1-5-rdf-abstract-model-compatibility"
+      ],
+      "number": "1.5"
+    },
+    {
+      "id": "shacl-ui",
+      "href": "https://www.w3.org/TR/shacl12-ui/#shacl-ui",
+      "level": 2,
+      "title": "SHACL UI",
+      "alternateIds": [
+        "x2-shacl-ui"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "renderer",
+      "href": "https://www.w3.org/TR/shacl12-ui/#renderer",
+      "level": 3,
+      "title": "SHACL Renderer",
+      "alternateIds": [
+        "x2-1-shacl-renderer"
+      ],
+      "number": "2.1"
+    },
+    {
+      "id": "node-ui-component",
+      "href": "https://www.w3.org/TR/shacl12-ui/#node-ui-component",
+      "level": 3,
+      "title": "Node UI Component",
+      "alternateIds": [
+        "x2-2-node-ui-component"
+      ],
+      "number": "2.2"
+    },
+    {
+      "id": "property-ui-component",
+      "href": "https://www.w3.org/TR/shacl12-ui/#property-ui-component",
+      "level": 3,
+      "title": "Property UI Component",
+      "alternateIds": [
+        "x2-3-property-ui-component"
+      ],
+      "number": "2.3"
+    },
+    {
+      "id": "scoring-system",
+      "href": "https://www.w3.org/TR/shacl12-ui/#scoring-system",
+      "level": 2,
+      "title": "Scoring System",
+      "alternateIds": [
+        "x3-scoring-system"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "scoring-system-intro",
+      "href": "https://www.w3.org/TR/shacl12-ui/#scoring-system-intro",
+      "level": 3,
+      "title": "Introduction",
+      "alternateIds": [
+        "x3-1-introduction"
+      ],
+      "number": "3.1"
+    },
+    {
+      "id": "select-function",
+      "href": "https://www.w3.org/TR/shacl12-ui/#select-function",
+      "level": 3,
+      "title": "Select Function",
+      "alternateIds": [
+        "x3-2-select-function"
+      ],
+      "number": "3.2"
+    },
+    {
+      "id": "select-function-processing",
+      "href": "https://www.w3.org/TR/shacl12-ui/#select-function-processing",
+      "level": 4,
+      "title": "Processing",
+      "alternateIds": [
+        "x3-2-1-processing"
+      ],
+      "number": "3.2.1"
+    },
+    {
+      "id": "scoring-algorithm-validation-function",
+      "href": "https://www.w3.org/TR/shacl12-ui/#scoring-algorithm-validation-function",
+      "level": 3,
+      "title": "Validation Function",
+      "alternateIds": [
+        "x3-3-validation-function"
+      ],
+      "number": "3.3"
+    },
+    {
+      "id": "scoring-algorithm-matcher-function",
+      "href": "https://www.w3.org/TR/shacl12-ui/#scoring-algorithm-matcher-function",
+      "level": 3,
+      "title": "Matcher Function",
+      "alternateIds": [
+        "x3-4-matcher-function"
+      ],
+      "number": "3.4"
+    },
+    {
+      "id": "scoring-algorithm-score-function",
+      "href": "https://www.w3.org/TR/shacl12-ui/#scoring-algorithm-score-function",
+      "level": 3,
+      "title": "Score Function",
+      "alternateIds": [
+        "x3-5-score-function"
+      ],
+      "number": "3.5"
+    },
+    {
+      "id": "scoring-algorithm-accept-function",
+      "href": "https://www.w3.org/TR/shacl12-ui/#scoring-algorithm-accept-function",
+      "level": 3,
+      "title": "Accept Function",
+      "alternateIds": [
+        "x3-6-accept-function"
+      ],
+      "number": "3.6"
+    },
+    {
+      "id": "scoring-algorithm-widget-selection",
+      "href": "https://www.w3.org/TR/shacl12-ui/#scoring-algorithm-widget-selection",
+      "level": 3,
+      "title": "Widget Selection",
+      "alternateIds": [
+        "x3-7-widget-selection"
+      ],
+      "number": "3.7"
+    },
+    {
+      "id": "select-function-widget-score-validation",
+      "href": "https://www.w3.org/TR/shacl12-ui/#select-function-widget-score-validation",
+      "level": 3,
+      "title": "Widget Score Validation",
+      "alternateIds": [
+        "x3-8-widget-score-validation"
+      ],
+      "number": "3.8"
+    },
+    {
+      "id": "widgets",
+      "href": "https://www.w3.org/TR/shacl12-ui/#widgets",
+      "level": 2,
+      "title": "Widgets",
+      "alternateIds": [
+        "x4-widgets"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "editors",
+      "href": "https://www.w3.org/TR/shacl12-ui/#editors",
+      "level": 3,
+      "title": "Editors",
+      "alternateIds": [
+        "x4-1-editors"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "viewers",
+      "href": "https://www.w3.org/TR/shacl12-ui/#viewers",
+      "level": 3,
+      "title": "Viewers",
+      "alternateIds": [
+        "x4-2-viewers"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "core-constraints",
+      "href": "https://www.w3.org/TR/shacl12-ui/#core-constraints",
+      "level": 2,
+      "title": "Core Constraints",
+      "alternateIds": [
+        "x5-core-constraints"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "property-paths",
+      "href": "https://www.w3.org/TR/shacl12-ui/#property-paths",
+      "level": 2,
+      "title": "Property Paths",
+      "alternateIds": [
+        "x6-property-paths"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "property-paths-view",
+      "href": "https://www.w3.org/TR/shacl12-ui/#property-paths-view",
+      "level": 3,
+      "title": "View Mode",
+      "alternateIds": [
+        "x6-1-view-mode"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "view-predicate-paths",
+      "href": "https://www.w3.org/TR/shacl12-ui/#view-predicate-paths",
+      "level": 4,
+      "title": "Predicate and Inverse Paths",
+      "alternateIds": [
+        "x6-1-1-predicate-and-inverse-paths"
+      ],
+      "number": "6.1.1"
+    },
+    {
+      "id": "view-complex-paths",
+      "href": "https://www.w3.org/TR/shacl12-ui/#view-complex-paths",
+      "level": 4,
+      "title": "Complex Paths",
+      "alternateIds": [
+        "x6-1-2-complex-paths"
+      ],
+      "number": "6.1.2"
+    },
+    {
+      "id": "property-paths-edit",
+      "href": "https://www.w3.org/TR/shacl12-ui/#property-paths-edit",
+      "level": 3,
+      "title": "Edit Mode",
+      "alternateIds": [
+        "x6-2-edit-mode"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "edit-predicate-paths",
+      "href": "https://www.w3.org/TR/shacl12-ui/#edit-predicate-paths",
+      "level": 4,
+      "title": "Predicate and Inverse Paths",
+      "alternateIds": [
+        "x6-2-1-predicate-and-inverse-paths"
+      ],
+      "number": "6.2.1"
+    },
+    {
+      "id": "edit-alternative-paths",
+      "href": "https://www.w3.org/TR/shacl12-ui/#edit-alternative-paths",
+      "level": 4,
+      "title": "Alternative Paths",
+      "alternateIds": [
+        "x6-2-2-alternative-paths"
+      ],
+      "number": "6.2.2"
+    },
+    {
+      "id": "edit-other-complex-paths",
+      "href": "https://www.w3.org/TR/shacl12-ui/#edit-other-complex-paths",
+      "level": 4,
+      "title": "Other Complex Paths",
+      "alternateIds": [
+        "x6-2-3-other-complex-paths"
+      ],
+      "number": "6.2.3"
+    },
+    {
+      "id": "label-and-lang",
+      "href": "https://www.w3.org/TR/shacl12-ui/#label-and-lang",
+      "level": 2,
+      "title": "Label and Language Resolution",
+      "alternateIds": [
+        "x7-label-and-language-resolution"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "lang-resolution",
+      "href": "https://www.w3.org/TR/shacl12-ui/#lang-resolution",
+      "level": 3,
+      "title": "Language Resolution",
+      "alternateIds": [
+        "x7-1-language-resolution"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "label-resolution",
+      "href": "https://www.w3.org/TR/shacl12-ui/#label-resolution",
+      "level": 3,
+      "title": "Label Resolution",
+      "alternateIds": [
+        "x7-2-label-resolution"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "label-resolution-property-labels",
+      "href": "https://www.w3.org/TR/shacl12-ui/#label-resolution-property-labels",
+      "level": 4,
+      "title": "Property Labels",
+      "alternateIds": [
+        "x7-2-1-property-labels"
+      ],
+      "number": "7.2.1"
+    },
+    {
+      "id": "label-resolution-value-node-labels",
+      "href": "https://www.w3.org/TR/shacl12-ui/#label-resolution-value-node-labels",
+      "level": 4,
+      "title": "Value Node Labels",
+      "alternateIds": [
+        "x7-2-2-value-node-labels"
+      ],
+      "number": "7.2.2"
+    },
+    {
+      "id": "label-resolution-local-name",
+      "href": "https://www.w3.org/TR/shacl12-ui/#label-resolution-local-name",
+      "level": 4,
+      "title": "Local Name Resolution",
+      "alternateIds": [
+        "x7-2-3-local-name-resolution"
+      ],
+      "number": "7.2.3"
+    },
+    {
+      "id": "patterns",
+      "href": "https://www.w3.org/TR/shacl12-ui/#patterns",
+      "level": 2,
+      "title": "Patterns",
+      "alternateIds": [
+        "x8-patterns"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "root-shapes-and-entry-point-forms",
+      "href": "https://www.w3.org/TR/shacl12-ui/#root-shapes-and-entry-point-forms",
+      "level": 3,
+      "title": "Root Shapes and Entry-Point Forms",
+      "alternateIds": [
+        "x8-1-root-shapes-and-entry-point-forms"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "conditional-shape-selection",
+      "href": "https://www.w3.org/TR/shacl12-ui/#conditional-shape-selection",
+      "level": 3,
+      "title": "Conditional Shape Selection",
+      "alternateIds": [
+        "x8-2-conditional-shape-selection"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "enumerations-select-lists-and-autocomplete",
+      "href": "https://www.w3.org/TR/shacl12-ui/#enumerations-select-lists-and-autocomplete",
+      "level": 3,
+      "title": "Enumerations, Select Lists, and Autocomplete",
+      "alternateIds": [
+        "x8-3-enumerations-select-lists-and-autocomplete"
+      ],
+      "number": "8.3"
+    },
+    {
+      "id": "ingredient-1-dynamic-shacl-with-a-service-clause",
+      "href": "https://www.w3.org/TR/shacl12-ui/#ingredient-1-dynamic-shacl-with-a-service-clause",
+      "level": 3,
+      "title": "Ingredient 1: Dynamic SHACL with a SERVICE clause"
+    },
+    {
+      "id": "ingredient-2-proposal-for-shui-displayprovider",
+      "href": "https://www.w3.org/TR/shacl12-ui/#ingredient-2-proposal-for-shui-displayprovider",
+      "level": 3,
+      "title": "Ingredient 2, Proposal for shui:DisplayProvider"
+    },
+    {
+      "id": "ingredient-3-proposal-for-shui-resourcefilter",
+      "href": "https://www.w3.org/TR/shacl12-ui/#ingredient-3-proposal-for-shui-resourcefilter",
+      "level": 3,
+      "title": "Ingredient 3, Proposal for shui:ResourceFilter"
+    },
+    {
+      "id": "example-using-all-ingredients-together",
+      "href": "https://www.w3.org/TR/shacl12-ui/#example-using-all-ingredients-together",
+      "level": 2,
+      "title": "Example using all ingredients together"
+    },
+    {
+      "id": "notes",
+      "href": "https://www.w3.org/TR/shacl12-ui/#notes",
+      "level": 3,
+      "title": "Notes"
+    },
+    {
+      "id": "fetching-values-from-named-graphs",
+      "href": "https://www.w3.org/TR/shacl12-ui/#fetching-values-from-named-graphs",
+      "level": 4,
+      "title": "Fetching values from named graphs",
+      "alternateIds": [
+        "x8-3-1-fetching-values-from-named-graphs"
+      ],
+      "number": "8.3.1"
+    },
+    {
+      "id": "grouping-ordering-and-layout-hints",
+      "href": "https://www.w3.org/TR/shacl12-ui/#grouping-ordering-and-layout-hints",
+      "level": 3,
+      "title": "Grouping, Ordering, and Layout Hints",
+      "alternateIds": [
+        "x8-4-grouping-ordering-and-layout-hints"
+      ],
+      "number": "8.4"
+    },
+    {
+      "id": "role-based-shapes",
+      "href": "https://www.w3.org/TR/shacl12-ui/#role-based-shapes",
+      "level": 3,
+      "title": "Role-Based Shapes",
+      "alternateIds": [
+        "x8-5-role-based-shapes"
+      ],
+      "number": "8.5"
+    },
+    {
+      "id": "default-namespace-and-local-name-generation",
+      "href": "https://www.w3.org/TR/shacl12-ui/#default-namespace-and-local-name-generation",
+      "level": 3,
+      "title": "Default Namespace and Local Name Generation",
+      "alternateIds": [
+        "x8-6-default-namespace-and-local-name-generation"
+      ],
+      "number": "8.6"
+    },
+    {
+      "id": "form-messages-and-error-handling",
+      "href": "https://www.w3.org/TR/shacl12-ui/#form-messages-and-error-handling",
+      "level": 3,
+      "title": "Form Messages and Error Handling",
+      "alternateIds": [
+        "x8-7-form-messages-and-error-handling"
+      ],
+      "number": "8.7"
+    },
+    {
+      "id": "displaying-validation-results",
+      "href": "https://www.w3.org/TR/shacl12-ui/#displaying-validation-results",
+      "level": 4,
+      "title": "Displaying Validation Results",
+      "alternateIds": [
+        "x8-7-1-displaying-validation-results"
+      ],
+      "number": "8.7.1"
+    },
+    {
+      "id": "builtin-widgets",
+      "href": "https://www.w3.org/TR/shacl12-ui/#builtin-widgets",
+      "level": 2,
+      "title": "Built-in Widgets",
+      "alternateIds": [
+        "x9-built-in-widgets"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "builtin-editors",
+      "href": "https://www.w3.org/TR/shacl12-ui/#builtin-editors",
+      "level": 3,
+      "title": "Editors",
+      "alternateIds": [
+        "x9-1-editors"
+      ],
+      "number": "9.1"
+    },
+    {
+      "id": "AutoCompleteEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#AutoCompleteEditor",
+      "level": 4,
+      "title": "shui:AutoCompleteEditor",
+      "alternateIds": [
+        "x9-1-1-shui-autocompleteeditor"
+      ],
+      "number": "9.1.1"
+    },
+    {
+      "id": "BlankNodeEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#BlankNodeEditor",
+      "level": 4,
+      "title": "shui:BlankNodeEditor",
+      "alternateIds": [
+        "x9-1-2-shui-blanknodeeditor"
+      ],
+      "number": "9.1.2"
+    },
+    {
+      "id": "BooleanEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#BooleanEditor",
+      "level": 4,
+      "title": "shui:BooleanEditor",
+      "alternateIds": [
+        "x9-1-3-shui-booleaneditor"
+      ],
+      "number": "9.1.3"
+    },
+    {
+      "id": "DatePickerEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#DatePickerEditor",
+      "level": 4,
+      "title": "shui:DatePickerEditor",
+      "alternateIds": [
+        "x9-1-4-shui-datepickereditor"
+      ],
+      "number": "9.1.4"
+    },
+    {
+      "id": "DateTimePickerEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#DateTimePickerEditor",
+      "level": 4,
+      "title": "shui:DateTimePickerEditor",
+      "alternateIds": [
+        "x9-1-5-shui-datetimepickereditor"
+      ],
+      "number": "9.1.5"
+    },
+    {
+      "id": "DetailsEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#DetailsEditor",
+      "level": 4,
+      "title": "shui:DetailsEditor",
+      "alternateIds": [
+        "x9-1-6-shui-detailseditor"
+      ],
+      "number": "9.1.6"
+    },
+    {
+      "id": "EnumSelectEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#EnumSelectEditor",
+      "level": 4,
+      "title": "shui:EnumSelectEditor",
+      "alternateIds": [
+        "x9-1-7-shui-enumselecteditor"
+      ],
+      "number": "9.1.7"
+    },
+    {
+      "id": "InstancesSelectEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#InstancesSelectEditor",
+      "level": 4,
+      "title": "shui:InstancesSelectEditor",
+      "alternateIds": [
+        "x9-1-8-shui-instancesselecteditor"
+      ],
+      "number": "9.1.8"
+    },
+    {
+      "id": "IRIEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#IRIEditor",
+      "level": 4,
+      "title": "shui:IRIEditor",
+      "alternateIds": [
+        "x9-1-9-shui-irieditor"
+      ],
+      "number": "9.1.9"
+    },
+    {
+      "id": "NumberFieldEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#NumberFieldEditor",
+      "level": 4,
+      "title": "shui:NumberFieldEditor",
+      "alternateIds": [
+        "x9-1-10-shui-numberfieldeditor"
+      ],
+      "number": "9.1.10"
+    },
+    {
+      "id": "RichTextEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#RichTextEditor",
+      "level": 4,
+      "title": "shui:RichTextEditor",
+      "alternateIds": [
+        "x9-1-11-shui-richtexteditor"
+      ],
+      "number": "9.1.11"
+    },
+    {
+      "id": "SubClassEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#SubClassEditor",
+      "level": 4,
+      "title": "shui:SubClassEditor",
+      "alternateIds": [
+        "x9-1-12-shui-subclasseditor"
+      ],
+      "number": "9.1.12"
+    },
+    {
+      "id": "TextAreaEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#TextAreaEditor",
+      "level": 4,
+      "title": "shui:TextAreaEditor",
+      "alternateIds": [
+        "x9-1-13-shui-textareaeditor"
+      ],
+      "number": "9.1.13"
+    },
+    {
+      "id": "TextAreaWithLangEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#TextAreaWithLangEditor",
+      "level": 4,
+      "title": "shui:TextAreaWithLangEditor",
+      "alternateIds": [
+        "x9-1-14-shui-textareawithlangeditor"
+      ],
+      "number": "9.1.14"
+    },
+    {
+      "id": "TextFieldEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#TextFieldEditor",
+      "level": 4,
+      "title": "shui:TextFieldEditor",
+      "alternateIds": [
+        "x9-1-15-shui-textfieldeditor"
+      ],
+      "number": "9.1.15"
+    },
+    {
+      "id": "TextFieldWithLangEditor",
+      "href": "https://www.w3.org/TR/shacl12-ui/#TextFieldWithLangEditor",
+      "level": 4,
+      "title": "shui:TextFieldWithLangEditor",
+      "alternateIds": [
+        "x9-1-16-shui-textfieldwithlangeditor"
+      ],
+      "number": "9.1.16"
+    },
+    {
+      "id": "builtin-viewers",
+      "href": "https://www.w3.org/TR/shacl12-ui/#builtin-viewers",
+      "level": 3,
+      "title": "Viewers",
+      "alternateIds": [
+        "x9-2-viewers"
+      ],
+      "number": "9.2"
+    },
+    {
+      "id": "BlankNodeViewer",
+      "href": "https://www.w3.org/TR/shacl12-ui/#BlankNodeViewer",
+      "level": 4,
+      "title": "shui:BlankNodeViewer",
+      "alternateIds": [
+        "x9-2-1-shui-blanknodeviewer"
+      ],
+      "number": "9.2.1"
+    },
+    {
+      "id": "DetailsViewer",
+      "href": "https://www.w3.org/TR/shacl12-ui/#DetailsViewer",
+      "level": 4,
+      "title": "shui:DetailsViewer",
+      "alternateIds": [
+        "x9-2-2-shui-detailsviewer"
+      ],
+      "number": "9.2.2"
+    },
+    {
+      "id": "HTMLViewer",
+      "href": "https://www.w3.org/TR/shacl12-ui/#HTMLViewer",
+      "level": 4,
+      "title": "shui:HTMLViewer",
+      "alternateIds": [
+        "x9-2-3-shui-htmlviewer"
+      ],
+      "number": "9.2.3"
+    },
+    {
+      "id": "HyperlinkViewer",
+      "href": "https://www.w3.org/TR/shacl12-ui/#HyperlinkViewer",
+      "level": 4,
+      "title": "shui:HyperlinkViewer",
+      "alternateIds": [
+        "x9-2-4-shui-hyperlinkviewer"
+      ],
+      "number": "9.2.4"
+    },
+    {
+      "id": "ImageViewer",
+      "href": "https://www.w3.org/TR/shacl12-ui/#ImageViewer",
+      "level": 4,
+      "title": "shui:ImageViewer",
+      "alternateIds": [
+        "x9-2-5-shui-imageviewer"
+      ],
+      "number": "9.2.5"
+    },
+    {
+      "id": "IRIViewer",
+      "href": "https://www.w3.org/TR/shacl12-ui/#IRIViewer",
+      "level": 4,
+      "title": "shui:IRIViewer",
+      "alternateIds": [
+        "x9-2-6-shui-iriviewer"
+      ],
+      "number": "9.2.6"
+    },
+    {
+      "id": "LabelViewer",
+      "href": "https://www.w3.org/TR/shacl12-ui/#LabelViewer",
+      "level": 4,
+      "title": "shui:LabelViewer",
+      "alternateIds": [
+        "x9-2-7-shui-labelviewer"
+      ],
+      "number": "9.2.7"
+    },
+    {
+      "id": "LangStringViewer",
+      "href": "https://www.w3.org/TR/shacl12-ui/#LangStringViewer",
+      "level": 4,
+      "title": "shui:LangStringViewer",
+      "alternateIds": [
+        "x9-2-8-shui-langstringviewer"
+      ],
+      "number": "9.2.8"
+    },
+    {
+      "id": "LiteralViewer",
+      "href": "https://www.w3.org/TR/shacl12-ui/#LiteralViewer",
+      "level": 4,
+      "title": "shui:LiteralViewer",
+      "alternateIds": [
+        "x9-2-9-shui-literalviewer"
+      ],
+      "number": "9.2.9"
+    },
+    {
+      "id": "ValueTableViewer",
+      "href": "https://www.w3.org/TR/shacl12-ui/#ValueTableViewer",
+      "level": 4,
+      "title": "shui:ValueTableViewer",
+      "alternateIds": [
+        "x9-2-10-shui-valuetableviewer"
+      ],
+      "number": "9.2.10"
+    },
+    {
+      "id": "property-roles",
+      "href": "https://www.w3.org/TR/shacl12-ui/#property-roles",
+      "level": 2,
+      "title": "10. Property Roles",
+      "alternateIds": [
+        "x10-property-roles"
+      ]
+    },
+    {
+      "id": "direct-role-annotation",
+      "href": "https://www.w3.org/TR/shacl12-ui/#direct-role-annotation",
+      "level": 3,
+      "title": "Direct Role Annotation",
+      "alternateIds": [
+        "x10-1-direct-role-annotation"
+      ],
+      "number": "10.1"
+    },
+    {
+      "id": "qualified-role-annotation",
+      "href": "https://www.w3.org/TR/shacl12-ui/#qualified-role-annotation",
+      "level": 3,
+      "title": "Qualified Role Annotation",
+      "alternateIds": [
+        "x10-2-qualified-role-annotation"
+      ],
+      "number": "10.2"
+    },
+    {
+      "id": "built-in-property-roles",
+      "href": "https://www.w3.org/TR/shacl12-ui/#built-in-property-roles",
+      "level": 3,
+      "title": "Built-in Property Roles",
+      "alternateIds": [
+        "x10-3-built-in-property-roles"
+      ],
+      "number": "10.3"
+    },
+    {
+      "id": "shui-labelrole",
+      "href": "https://www.w3.org/TR/shacl12-ui/#shui-labelrole",
+      "level": 4,
+      "title": "shui:LabelRole",
+      "alternateIds": [
+        "x10-3-1-shui-labelrole"
+      ],
+      "number": "10.3.1"
+    },
+    {
+      "id": "definitions",
+      "href": "https://www.w3.org/TR/shacl12-ui/#definitions",
+      "level": 3,
+      "title": "Definitions",
+      "alternateIds": [
+        "x10-4-definitions"
+      ],
+      "number": "10.4"
+    },
+    {
+      "id": "shui-propertyrole-class",
+      "href": "https://www.w3.org/TR/shacl12-ui/#shui-propertyrole-class",
+      "level": 4,
+      "title": "shui:PropertyRole Class",
+      "alternateIds": [
+        "x10-4-1-shui-propertyrole-class"
+      ],
+      "number": "10.4.1"
+    },
+    {
+      "id": "shui-propertyrole-property",
+      "href": "https://www.w3.org/TR/shacl12-ui/#shui-propertyrole-property",
+      "level": 4,
+      "title": "shui:propertyRole Property",
+      "alternateIds": [
+        "x10-4-2-shui-propertyrole-property"
+      ],
+      "number": "10.4.2"
+    },
+    {
+      "id": "syntax-rules",
+      "href": "https://www.w3.org/TR/shacl12-ui/#syntax-rules",
+      "level": 2,
+      "title": "Summary of Syntax Rules from this Specification",
+      "alternateIds": [
+        "a-summary-of-syntax-rules-from-this-specification"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "security",
+      "href": "https://www.w3.org/TR/shacl12-ui/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "b-security-considerations"
+      ],
+      "number": "B"
+    },
+    {
+      "id": "privacy",
+      "href": "https://www.w3.org/TR/shacl12-ui/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "c-privacy-considerations"
+      ],
+      "number": "C"
+    },
+    {
+      "id": "internationalization",
+      "href": "https://www.w3.org/TR/shacl12-ui/#internationalization",
+      "level": 2,
+      "title": "Internationalization Considerations",
+      "alternateIds": [
+        "d-internationalization-considerations"
+      ],
+      "number": "D"
+    },
+    {
+      "id": "ack",
+      "href": "https://www.w3.org/TR/shacl12-ui/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "alternateIds": [
+        "e-acknowledgements"
+      ],
+      "number": "E"
+    },
+    {
+      "id": "shacl-syntax-index",
+      "href": "https://www.w3.org/TR/shacl12-ui/#shacl-syntax-index",
+      "level": 2,
+      "title": "Summary of SHACL Core Syntax to SHACL UI Index",
+      "alternateIds": [
+        "f-summary-of-shacl-core-syntax-to-shacl-ui-index"
+      ],
+      "number": "F"
+    },
+    {
+      "id": "issue-summary",
+      "href": "https://www.w3.org/TR/shacl12-ui/#issue-summary",
+      "level": 2,
+      "title": "Issue summary",
+      "alternateIds": [
+        "g-issue-summary"
+      ],
+      "number": "G"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/shacl12-ui/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "h-references"
+      ],
+      "number": "H"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://www.w3.org/TR/shacl12-ui/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "h-1-normative-references"
+      ],
+      "number": "H.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://www.w3.org/TR/shacl12-ui/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "h-2-informative-references"
+      ],
+      "number": "H.2"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "spec": {
+    "title": "SHACL 1.2 User Interfaces",
+    "url": "https://www.w3.org/TR/shacl12-ui/"
+  },
+  "algorithms": [
+    {
+      "html": "Steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <strong>Shape node</strong> has a <strong>Widget IRI</strong> defined via <strong>Widget predicate:</strong>",
+          "rationale": "find",
+          "steps": [
+            {
+              "html": "Find the <code>shui:WidgetAcceptMatcher</code> instance <code>AM</code> with a matching <code>shui:widget</code> value."
+            },
+            {
+              "html": "If there is no <strong>Accept Matcher</strong> defined for the widget, return the <strong>Widget IRI</strong>."
+            },
+            {
+              "html": "Call the <strong>matcher</strong> function with the following inputs:\n                <ul>\n                  <li><strong>Focus node</strong> — The focus node or undefined if there are no focus nodes.</li>\n                  <li><strong>Data graph</strong> — The data graph containing the focus node.</li>\n                  <li><strong>Shape node</strong> — The shape node associated with the property shape.</li>\n                  <li><strong>Shapes graph</strong> — The shapes graph containing the shape node.</li>\n                  <li><strong>Matcher node</strong> — The <strong>Accept Matcher</strong> <code>AM</code>.</li>\n                  <li><strong>Scoring graph</strong> — The RDF graph containing <code>shui:WidgetScore</code> instances that define how widgets are scored.</li>\n                </ul>"
+            },
+            {
+              "html": "If the return value is <code>true</code>, return the <strong>Widget IRI</strong>."
+            },
+            {
+              "html": "If the return value is <code>false</code>, continue with the next step. When a widget is not accepted it falls through to scoring."
+            }
+          ]
+        },
+        {
+          "html": "Call the <strong>score</strong> function with the following inputs and store the return value in an array <code>matches</code>:\n            <ul>\n              <li><strong>Best</strong> — A boolean flag; must be <code>false</code>.</li>\n              <li><strong>Focus node</strong> — The focus node or undefined if there is no focus node.</li>\n              <li><strong>Data graph</strong> — The data graph containing the focus node.</li>\n              <li><strong>Shape node</strong> — The shape node associated with the property shape.</li>\n              <li><strong>Shapes graph</strong> — The shapes graph containing the shape node.</li>\n              <li><strong>Scoring graph</strong> — The RDF graph containing <code>shui:WidgetScore</code> instances that define how widgets are scored.</li>\n            </ul>"
+        },
+        {
+          "html": "For each score result in array <code>matches</code>",
+          "rationale": "find",
+          "steps": [
+            {
+              "html": "Get the <strong>Widget IRI</strong> from the score result as <code>WI</code>."
+            },
+            {
+              "html": "Find the <code>shui:WidgetAcceptMatcher</code> instance <code>AM</code> with a matching <code>shui:widget</code> value."
+            },
+            {
+              "html": "If there is no <strong>Accept Matcher</strong> defined for the widget, return <code>WI</code>."
+            },
+            {
+              "html": "Call the <strong>matcher</strong> function with the following inputs:\n                <ul>\n                  <li><strong>Focus node</strong> — The focus node or undefined if there is no focus node.</li>\n                  <li><strong>Data graph</strong> — The data graph containing the focus node.</li>\n                  <li><strong>Shape node</strong> — The shape node associated with the property shape.</li>\n                  <li><strong>Shapes graph</strong> — The shapes graph containing the shape node.</li>\n                  <li><strong>Matcher node</strong> — The <strong>Accept Matcher</strong> <code>AM</code>.</li>\n                  <li><strong>Scoring graph</strong> — The RDF graph containing <code>shui:WidgetScore</code> instances that define how widgets are scored.</li>\n                </ul>"
+            },
+            {
+              "html": "If the return value is <code>true</code>, return <code>WI</code>."
+            },
+            {
+              "html": "If the return value is <code>false</code>, continue with the next iteration."
+            }
+          ]
+        },
+        {
+          "html": "If there are no more <strong>score results</strong> in array <code>matches</code>, return undefined."
+        }
+      ]
+    },
+    {
+      "html": "Steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <strong>shape node</strong> is empty, return <code>true</code>."
+        },
+        {
+          "html": "If the <strong>focus node</strong> is not a subject in the <strong>target graph</strong>, return <code>false</code>."
+        },
+        {
+          "html": "Validate the <strong>focus node</strong> according to standard SHACL validation with the following:\n            <ul>\n              <li><strong>Focus node</strong> as <strong>focus node</strong>.</li>\n              <li><strong>Target graph</strong> as <strong>data graph</strong>.</li>\n              <li><strong>Shape node</strong> as <strong>shape node</strong>.</li>\n              <li><strong>Shapes graph</strong> as <strong>shapes graph</strong>.</li>\n            </ul>"
+        },
+        {
+          "html": "If the validation produces violations, return <code>false</code>."
+        },
+        {
+          "html": "If the validation conforms, return <code>true</code>."
+        }
+      ]
+    },
+    {
+      "html": "Steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If no <strong>focus node</strong> is given, a value for the <code>shui:dataGraphShape</code> property\n            is present, and no value for the <code>shui:shapesGraphShape</code> is present, return <code>false</code>."
+        },
+        {
+          "html": "Call the validation function with the following:\n            <ul>\n              <li><strong>Shape node</strong> as <strong>focus node</strong>.</li>\n              <li><strong>Shapes graph</strong> as <strong>target graph</strong>.</li>\n              <li>The value of the <code>shui:shapesGraphShape</code> property of <strong>matcher node</strong> as <strong>shape node</strong>.</li>\n              <li><strong>Scoring graph</strong> as <strong>shapes graph</strong>.</li>\n            </ul>"
+        },
+        {
+          "html": "If the function returns <code>false</code>, return <code>false</code>."
+        },
+        {
+          "html": "If no focus node is given, return <code>true</code>."
+        },
+        {
+          "html": "Call the validation function with the following:\n            <ul>\n              <li><strong>Focus node</strong> as <strong>focus node</strong>.</li>\n              <li><strong>Data graph</strong> as <strong>target graph</strong>.</li>\n              <li>The value of the <code>shui:dataGraphShape</code> property of <strong>matcher node</strong> as <strong>shape node</strong>.</li>\n              <li><strong>Shapes graph</strong> as <strong>shapes graph</strong>.</li>\n            </ul>"
+        },
+        {
+          "html": "If the function returns <code>false</code>, return <code>false</code>."
+        },
+        {
+          "html": "Otherwise, return <code>true</code>."
+        }
+      ]
+    },
+    {
+      "html": "Steps:",
+      "rationale": "initialize",
+      "steps": [
+        {
+          "html": "Initialize an empty list <code>results</code>."
+        },
+        {
+          "html": "Collect instances of <code>shui:WidgetScore</code> in the <strong>scoring graph</strong>, sorted by <code>shui:score</code> \n            in descending order and then lexicographically by the Unicode codepoint values of <code>shui:widget</code>."
+        },
+        {
+          "html": "For each instance <code>S</code> of type <code>shui:WidgetScore</code>",
+          "rationale": "find",
+          "steps": [
+            {
+              "html": "Find the <code>shui:WidgetAcceptMatcher</code> instance <code>M</code> with a matching <code>shui:widget</code> value."
+            },
+            {
+              "html": "Call the matcher function with the following:\n                <ul>\n                  <li><strong>Focus node</strong> as <strong>focus node</strong>.</li>\n                  <li><strong>Data graph</strong> as <strong>data graph</strong>.</li>\n                  <li><strong>Shape node</strong> as <strong>shape node</strong>.</li>\n                  <li><strong>Shapes graph</strong> as <strong>shapes graph</strong>.</li>\n                  <li><code>M</code> as <strong>matcher node</strong>.</li>\n                  <li><strong>Scoring graph</strong> as <strong>scoring graph</strong>.</li>\n                </ul>"
+            },
+            {
+              "html": "If the matcher function returns <code>true</code>, and <strong>best</strong> is <code>true</code>, return the object with the following:\n                <ul>\n                  <li>The <code>shui:widget</code> of <code>S</code>.</li>\n                  <li>The IRI of <code>S</code>.</li>\n                  <li>The <code>shui:score</code> of <code>S</code>.</li>\n                </ul>"
+            },
+            {
+              "html": "If the matcher function returns <code>true</code>, record widget score by appending the object to <code>results</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>results</code>."
+        }
+      ]
+    },
+    {
+      "html": "Steps:",
+      "rationale": "find",
+      "steps": [
+        {
+          "html": "Find the <code>shui:WidgetAcceptMatcher</code> instance <code>M</code> with a matching <code>shui:widget</code> value."
+        },
+        {
+          "html": "If no such instance <code>M</code> exists, return <code>true</code>."
+        },
+        {
+          "html": "Call the matcher function with the following:\n            <ul>\n              <li><strong>Focus node</strong> as <strong>focus node</strong>.</li>\n              <li><strong>Data graph</strong> as <strong>data graph</strong>.</li>\n              <li><strong>Shape node</strong> as <strong>shape node</strong>.</li>\n              <li><strong>Shapes graph</strong> as <strong>shapes graph</strong>.</li>\n              <li><code>M</code> as <strong>matcher node</strong>.</li>\n              <li><strong>Scoring graph</strong> as <strong>scoring graph</strong>.</li>\n            </ul>"
+        },
+        {
+          "html": "Return the return value of the matcher function."
+        }
+      ]
+    },
+    {
+      "html": "To determine the label for a <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-property-ui-component\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-property-ui-component-3\">property UI component</a> whose <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-property-shapes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-property-shapes-3\">property shape</a> has\n            <code>sh:path</code> pointing to a <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-property-paths\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-property-paths-2\">property path</a> <var>P</var>, implementations <em class=\"rfc2119\">MUST</em>\n            apply the following steps in order, stopping at the first step that yields a result:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-property-shapes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-property-shapes-4\">property shape</a> has one or more values for the configured <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-property-paths\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-property-paths-3\">property path</a> for\n              the property label resolution (defaulting to <code>sh:name</code>), select the best\n              matching value using <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-language-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-language-resolution-2\">language resolution</a>. If a match is found, use that literal\n              as the label."
+        },
+        {
+          "html": "If <var>P</var> is a predicate IRI and the <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-data-graphs\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-data-graphs-4\">data graph</a>\n              contains one or more <code>rdfs:label</code> triples with subject <var>P</var>, select\n              the best matching value using <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-language-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-language-resolution-3\">language resolution</a>. If a match is found, use\n              that literal as the label."
+        },
+        {
+          "html": "If <var>P</var> is a predicate IRI and the <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-shapes-graphs\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-shapes-graphs-6\">shapes graph</a>\n              contains one or more <code>rdfs:label</code> triples with subject <var>P</var>, select\n              the best matching value using <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-language-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-language-resolution-4\">language resolution</a>. If a match is found, use\n              that literal as the label."
+        },
+        {
+          "html": "If <var>P</var> is a predicate IRI, use the\n              <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-local-name-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-name-resolution-1\">local name resolution</a> of <var>P</var> as the label."
+        },
+        {
+          "html": "Otherwise, an implementation-specific translation algorithm should be applied to convert the complex property path\n              <var>P</var> into a human-readable string representation."
+        }
+      ]
+    },
+    {
+      "html": "To determine the label for a single <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-value-nodes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-value-nodes-2\">value node</a> <var>V</var>, implementations <em class=\"rfc2119\">MUST</em>\n            apply the following steps in order, stopping at the first step that yields a result:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <var>V</var> is a literal, use its lexical form as the label."
+        },
+        {
+          "html": "If the applicable <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-node-shapes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-node-shapes-4\">node shape</a> for <var>V</var> contains a <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-property-shapes\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-property-shapes-5\">property shape</a>\n              whose <code>sh:path</code> is annotated with\n              <code>shui:propertyRole shui:LabelRole</code>, retrieve the values of that path from\n              the <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-data-graphs\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-data-graphs-5\">data graph</a> for subject <var>V</var>. Select the best matching value using\n              <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-language-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-language-resolution-5\">language resolution</a>. If a match is found, use that literal as the label."
+        },
+        {
+          "html": "If the <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-data-graphs\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-data-graphs-6\">data graph</a> contains one or more values for the configured property path for\n              the value node label resolution (defaulting to <code>rdfs:label</code>) for <var>V</var>,\n              select the best matching value using <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-language-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-language-resolution-6\">language resolution</a>. If a match is found, use\n              that literal as the label."
+        },
+        {
+          "html": "If the <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-shapes-graphs\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-shapes-graphs-7\">shapes graph</a> contains one or more values for the configured property path for\n              the value node label resolution (defaulting to <code>rdfs:label</code>) for <var>V</var>,\n              select the best matching value using <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-language-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-language-resolution-7\">language resolution</a>. If a match is found, use\n              that literal as the label."
+        },
+        {
+          "html": "If <var>V</var> is an IRI, use the\n              <a href=\"https://www.w3.org/TR/shacl12-ui/#dfn-local-name-resolution\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-local-name-resolution-2\">local name resolution</a> of <var>V</var> as the\n              label."
+        },
+        {
+          "html": "If <var>V</var> is a blank node, use an implementation-specific placeholder string\n              (e.g., an empty string or an identifier derived from the blank node identifier) as\n              the label."
+        }
+      ]
+    }
+  ]
+}

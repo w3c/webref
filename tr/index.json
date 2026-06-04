@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2026-06-03T01:58:12.661Z",
+  "date": "2026-06-04T02:08:16.596Z",
   "options": {
     "fallback": "tr/index.json",
     "output": "report",
@@ -128,14 +128,20 @@
       "tc39-decorators",
       "tc39-defer-import-eval",
       "tc39-dynamic-code-brand-checks",
+      "tc39-error-stack-accessor",
       "tc39-explicit-resource-management",
       "tc39-import-text",
       "tc39-intl-duration-format",
       "tc39-intl-era-monthcode",
+      "tc39-intl-keep-trailing-zeros",
       "tc39-intl-locale-info",
+      "tc39-iterator-chunking",
+      "tc39-iterator-includes",
+      "tc39-iterator-join",
       "tc39-joint-iteration",
       "tc39-json-parse-with-source",
       "tc39-nonextensible-applies-to-private",
+      "tc39-regexp-buffer-boundaries",
       "tc39-shadowrealm",
       "tc39-source-phase-imports",
       "tc39-temporal",
@@ -145,9 +151,9 @@
       "web-nfc",
       "login-status",
       "at-driver",
+      "css-aam",
       "shacl12-cs",
       "shacl12-profiling",
-      "shacl12-ui",
       "execCommand",
       "element-timing",
       "gamepad-extensions",
@@ -164,7 +170,6 @@
       "trace-context-binary",
       "trace-context-mqtt",
       "tracestate-ids-registry",
-      "vc-recognized-entities",
       "web-share-target",
       "webextensions",
       "webrtc-ice",
@@ -254,7 +259,6 @@
       "portals",
       "prefer-current-tab",
       "responsive-image-client-hints",
-      "sanitizer-api",
       "savedata",
       "scheduling-apis",
       "scroll-to-text-fragment",
@@ -617,6 +621,7 @@
       "shacl12-node-expr",
       "shacl12-rules",
       "shacl12-sparql",
+      "shacl12-ui",
       "sparql12-entailment",
       "sparql12-federated-query",
       "sparql12-graph-store-protocol",
@@ -662,6 +667,7 @@
       "vc-di-eddsa",
       "vc-jose-cose",
       "vc-json-schema",
+      "vc-recognized-entities-1.0",
       "vc-render-method",
       "vibration",
       "virtual-keyboard",
@@ -763,10 +769,10 @@
     ]
   },
   "stats": {
-    "crawled": 413,
+    "crawled": 415,
     "errors": 0
   },
-  "crawler": "reffy-21.0.1",
+  "crawler": "reffy-21.0.2",
   "results": [
     {
       "url": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
@@ -812,7 +818,7 @@
         "https://aomediacodec.github.io/av1-spec/"
       ],
       "crawled": "https://aomediacodec.github.io/av1-spec/av1-spec.pdf",
-      "date": "3 June 2026",
+      "date": "4 June 2026",
       "links": "links/av1-spec.json",
       "cddl": []
     },
@@ -10835,7 +10841,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/device-posture/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -19632,6 +19638,62 @@
       "cddl": []
     },
     {
+      "url": "https://www.w3.org/TR/shacl12-ui/",
+      "seriesComposition": "full",
+      "shortname": "shacl12-ui",
+      "series": {
+        "shortname": "shacl-ui",
+        "currentSpecification": "shacl12-ui",
+        "title": "SHACL User Interfaces",
+        "shortTitle": "SHACL User Interfaces",
+        "releaseUrl": "https://www.w3.org/TR/shacl-ui/",
+        "nightlyUrl": "https://w3c.github.io/data-shapes/shacl-ui/"
+      },
+      "seriesVersion": "1.2",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Data Shapes Working Group",
+          "url": "https://www.w3.org/groups/wg/data-shapes/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/shacl12-ui/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/data-shapes/shacl12-ui/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/data-shapes",
+        "sourcePath": "shacl12-ui/index.html",
+        "filename": "index.html"
+      },
+      "title": "SHACL 1.2 User Interfaces",
+      "source": "w3c",
+      "shortTitle": "SHACL 1.2 User Interfaces",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/shacl12-ui/",
+        "https://w3c.github.io/data-shapes/shacl12-ui/"
+      ],
+      "crawled": "https://www.w3.org/TR/shacl12-ui/",
+      "crawlCacheInfo": {
+        "lastModified": "Fri, 22 May 2026 08:12:54 GMT"
+      },
+      "generator": "respec",
+      "date": "26 May 2026",
+      "algorithms": "algorithms/shacl12-ui.json",
+      "links": "links/shacl12-ui.json",
+      "refs": "refs/shacl12-ui.json",
+      "dfns": "dfns/shacl12-ui.json",
+      "headings": "headings/shacl12-ui.json",
+      "ids": "ids/shacl12-ui.json",
+      "cddl": []
+    },
+    {
       "url": "https://www.w3.org/TR/sparql12-entailment/",
       "seriesComposition": "full",
       "shortname": "sparql12-entailment",
@@ -21113,11 +21175,11 @@
       "shortname": "ttml-imsc1.2",
       "series": {
         "shortname": "ttml-imsc",
-        "currentSpecification": "ttml-imsc1.2",
+        "currentSpecification": "ttml-imsc1.3",
         "title": "IMSC Text Profile",
         "shortTitle": "IMSC Text Profile",
         "releaseUrl": "https://www.w3.org/TR/ttml-imsc/",
-        "nightlyUrl": "https://www.w3.org/TR/ttml-imsc/"
+        "nightlyUrl": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html"
       },
       "seriesVersion": "1.2",
       "nightly": {
@@ -21168,11 +21230,11 @@
       "shortname": "ttml-imsc1.3",
       "series": {
         "shortname": "ttml-imsc",
-        "currentSpecification": "ttml-imsc1.2",
+        "currentSpecification": "ttml-imsc1.3",
         "title": "IMSC Text Profile",
         "shortTitle": "IMSC Text Profile",
         "releaseUrl": "https://www.w3.org/TR/ttml-imsc/",
-        "nightlyUrl": "https://www.w3.org/TR/ttml-imsc/"
+        "nightlyUrl": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html"
       },
       "seriesVersion": "1.3",
       "nightly": {
@@ -21194,7 +21256,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/ttml-imsc1.3/",
-        "status": "Candidate Recommendation Draft",
+        "status": "Recommendation",
         "filename": "Overview.html"
       },
       "title": "IMSC Text Profile 1.3",
@@ -22356,6 +22418,65 @@
       "dfns": "dfns/vc-json-schema.json",
       "headings": "headings/vc-json-schema.json",
       "ids": "ids/vc-json-schema.json",
+      "cddl": []
+    },
+    {
+      "url": "https://www.w3.org/TR/vc-recognized-entities-1.0/",
+      "seriesComposition": "full",
+      "shortname": "vc-recognized-entities-1.0",
+      "series": {
+        "shortname": "vc-recognized-entities",
+        "currentSpecification": "vc-recognized-entities-1.0",
+        "title": "Recognized Entities",
+        "shortTitle": "Recognized Entities",
+        "releaseUrl": "https://www.w3.org/TR/vc-recognized-entities/",
+        "nightlyUrl": "https://w3c.github.io/vc-recognized-entities/"
+      },
+      "seriesVersion": "1.0",
+      "formerNames": [
+        "vc-recognized-entities",
+        "vc-recognition"
+      ],
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Verifiable Credentials Working Group",
+          "url": "https://www.w3.org/groups/wg/vc/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/vc-recognized-entities-1.0/",
+        "status": "First Public Working Draft",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/vc-recognized-entities/",
+        "status": "Editor's Draft",
+        "alternateUrls": [],
+        "repository": "https://github.com/w3c/vc-recognized-entities",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Recognized Entities v1.0",
+      "source": "w3c",
+      "shortTitle": "Recognized Entities v1.0",
+      "categories": [],
+      "standing": "good",
+      "versions": [
+        "https://www.w3.org/TR/vc-recognized-entities-1.0/",
+        "https://w3c.github.io/vc-recognized-entities/"
+      ],
+      "crawled": "https://www.w3.org/TR/vc-recognized-entities-1.0/",
+      "crawlCacheInfo": {
+        "lastModified": "Mon, 04 May 2026 05:50:23 GMT"
+      },
+      "generator": "respec",
+      "date": "12 May 2026",
+      "links": "links/vc-recognized-entities-1.0.json",
+      "refs": "refs/vc-recognized-entities-1.0.json",
+      "dfns": "dfns/vc-recognized-entities-1.0.json",
+      "headings": "headings/vc-recognized-entities-1.0.json",
+      "ids": "ids/vc-recognized-entities-1.0.json",
       "cddl": []
     },
     {
@@ -25667,7 +25788,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/webvtt1/",
-        "status": "Candidate Recommendation Snapshot",
+        "status": "Candidate Recommendation Draft",
         "filename": "Overview.html"
       },
       "nightly": {
