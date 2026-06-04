@@ -3,6 +3,11 @@
 // (https://github.com/w3c/webref)
 // Source: Soft Navigations and Interaction Contentful Paint (https://wicg.github.io/soft-navigations/)
 
+[Exposed=(Window,Worker)]
+partial interface PerformanceEntry {
+    readonly attribute unsigned long long navigationId;
+};
+
 [Exposed=Window]
 interface InteractionContentfulPaint : PerformanceEntry {
     readonly attribute LargestContentfulPaint largestContentfulPaint;
@@ -21,8 +26,3 @@ interface PerformanceSoftNavigation : PerformanceEntry {
 };
 
 PerformanceSoftNavigation includes PaintTimingMixin;
-
-[Exposed=(Window,Worker)]
-partial interface PerformanceEntry {
-    readonly attribute unsigned long long navigationId;
-};
