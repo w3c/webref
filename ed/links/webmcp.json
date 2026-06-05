@@ -18,6 +18,7 @@
       "https://infra.spec.whatwg.org/": {},
       "https://json-schema.org/draft/2020-12/json-schema-core.html": {},
       "https://modelcontextprotocol.io/specification/latest": {},
+      "https://tc39.es/ecma262/multipage/": {},
       "https://url.spec.whatwg.org/": {},
       "https://w3c.github.io/aria/": {},
       "https://w3c.github.io/webappsec-permissions-policy/": {},
@@ -47,7 +48,8 @@
       "https://html.spec.whatwg.org/multipage/browsers.html": {
         "anchors": [
           "concept-origin",
-          "same-origin"
+          "same-origin",
+          "concept-origin-scheme"
         ]
       },
       "https://html.spec.whatwg.org/multipage/common-microsyntaxes.html": {
@@ -105,6 +107,9 @@
           "concept-relevant-global",
           "concept-relevant-realm",
           "eventhandler",
+          "is-origin-keyed",
+          "relevant-settings-object",
+          "concept-settings-object-origin",
           "event-handlers",
           "event-handler-event-type",
           "event-handler-idl-attributes",
@@ -135,6 +140,12 @@
           "list-append",
           "user-agent",
           "implementation-defined"
+        ]
+      },
+      "https://tc39.es/ecma262/": {
+        "anchors": [
+          "surrounding-agent",
+          "sec-agent-clusters"
         ]
       },
       "https://url.spec.whatwg.org/": {
@@ -171,9 +182,9 @@
           "dfn-throw",
           "invalidstateerror",
           "idl-DOMException",
+          "securityerror",
           "notallowederror",
           "exceptiondef-typeerror",
-          "securityerror",
           "idl-DOMString",
           "idl-USVString",
           "idl-object",
