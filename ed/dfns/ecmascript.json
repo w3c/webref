@@ -18290,28 +18290,6 @@
       "links": []
     },
     {
-      "id": "sec-symbol.for",
-      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.for",
-      "linkingText": [
-        "GlobalSymbolRegistry List"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "ECMAScript"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-symbol.for",
-        "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.for",
-        "title": "Symbol.for ( key )",
-        "number": "20.4.2.2"
-      },
-      "definedIn": "prose",
-      "links": []
-    },
-    {
       "id": "sec-symbol.hasinstance",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol.hasinstance",
       "linkingText": [
@@ -18748,6 +18726,29 @@
       "links": []
     },
     {
+      "id": "sec-globalsymbolregistry-records",
+      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-globalsymbolregistry-records",
+      "linkingText": [
+        "GlobalSymbolRegistry Record",
+        "GlobalSymbolRegistry Records"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ECMAScript"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-globalsymbolregistry-records",
+        "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-globalsymbolregistry-records",
+        "title": "GlobalSymbolRegistry Records",
+        "number": "20.4.5.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
       "id": "sec-keyforsymbol",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-keyforsymbol",
       "linkingText": [
@@ -18763,7 +18764,7 @@
         "id": "sec-keyforsymbol",
         "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-keyforsymbol",
         "title": "KeyForSymbol ( symbol )",
-        "number": "20.4.5.1"
+        "number": "20.4.5.2"
       },
       "definedIn": "heading",
       "links": []
@@ -34203,6 +34204,28 @@
       "links": []
     },
     {
+      "id": "sec-atomics.notify",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.notify",
+      "linkingText": [
+        "notify(ta, index, count)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Atomics"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-atomics.notify",
+        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.notify",
+        "title": "Atomics.notify ( ta, index, count )",
+        "number": "25.4.10"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
       "id": "sec-atomics.or",
       "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.or",
       "linkingText": [
@@ -34219,7 +34242,29 @@
         "id": "sec-atomics.or",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.or",
         "title": "Atomics.or ( ta, index, value )",
-        "number": "25.4.10"
+        "number": "25.4.11"
+      },
+      "definedIn": "heading",
+      "links": []
+    },
+    {
+      "id": "sec-atomics.pause",
+      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.pause",
+      "linkingText": [
+        "pause()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Atomics"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-atomics.pause",
+        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.pause",
+        "title": "Atomics.pause ( )",
+        "number": "25.4.12"
       },
       "definedIn": "heading",
       "links": []
@@ -34241,7 +34286,7 @@
         "id": "sec-atomics.store",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.store",
         "title": "Atomics.store ( ta, index, value )",
-        "number": "25.4.11"
+        "number": "25.4.13"
       },
       "definedIn": "heading",
       "links": []
@@ -34263,7 +34308,7 @@
         "id": "sec-atomics.sub",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.sub",
         "title": "Atomics.sub ( ta, index, value )",
-        "number": "25.4.12"
+        "number": "25.4.14"
       },
       "definedIn": "heading",
       "links": []
@@ -34285,7 +34330,7 @@
         "id": "sec-atomics.wait",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.wait",
         "title": "Atomics.wait ( ta, index, value, timeout )",
-        "number": "25.4.13"
+        "number": "25.4.15"
       },
       "definedIn": "heading",
       "links": []
@@ -34307,50 +34352,6 @@
         "id": "sec-atomics.waitasync",
         "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.waitasync",
         "title": "Atomics.waitAsync ( ta, index, value, timeout )",
-        "number": "25.4.14"
-      },
-      "definedIn": "heading",
-      "links": []
-    },
-    {
-      "id": "sec-atomics.notify",
-      "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.notify",
-      "linkingText": [
-        "notify(ta, index, count)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "Atomics"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-atomics.notify",
-        "href": "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics.notify",
-        "title": "Atomics.notify ( ta, index, count )",
-        "number": "25.4.15"
-      },
-      "definedIn": "heading",
-      "links": []
-    },
-    {
-      "id": "Atomics.pause",
-      "href": "https://tc39.es/ecma262/multipage/structured-data.html#Atomics.pause",
-      "linkingText": [
-        "pause()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "Atomics"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "Atomics.pause",
-        "href": "https://tc39.es/ecma262/multipage/structured-data.html#Atomics.pause",
-        "title": "Atomics.pause ( )",
         "number": "25.4.16"
       },
       "definedIn": "heading",
