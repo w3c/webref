@@ -106,7 +106,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>stream</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream①\">ReadableStream</a></code> created in <var>blob</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a>.</p>"
+          "html": "<p>Let <var>stream</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://streams.spec.whatwg.org/#readablestream\" id=\"ref-for-readablestream②\">ReadableStream</a></code> created in <var>blob</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm\">relevant Realm</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support\" id=\"ref-for-readablestream-set-up-with-byte-reading-support\">Set up</a> <var>stream</var> with byte reading support.</p>"
@@ -358,6 +358,26 @@
       ]
     },
     {
+      "name": "Blob/textStream()",
+      "href": "https://www.w3.org/TR/FileAPI/#dom-blob-textstream",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Blob\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-blob-textstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>textStream()</code></dfn> method steps are:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream④\">get stream</a> on <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>decoder</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://encoding.spec.whatwg.org/#textdecoderstream\" id=\"ref-for-textdecoderstream\">TextDecoderStream</a></code> in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#set-up-a-text-decoder-stream\" id=\"ref-for-set-up-a-text-decoder-stream\">Set up</a> <var>decoder</var> with <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8\">UTF-8</a>.</p>"
+        },
+        {
+          "html": "<p>Return the result of calling <var>stream</var>, <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-pipe-through\" id=\"ref-for-readablestream-pipe-through\">piped through</a> <var>decoder</var>.</p>"
+        }
+      ]
+    },
+    {
       "html": "<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-file\" id=\"ref-for-dfn-file①⑤\">File</a></code> objects are <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serializable-objects\" id=\"ref-for-serializable-objects①\">serializable objects</a>. Their <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/structured-data.html#serialization-steps\" id=\"ref-for-serialization-steps①\">serialization steps</a>,\ngiven <var>value</var> and <var>serialized</var>, are:",
       "rationale": "set",
       "steps": [
@@ -467,7 +487,7 @@
           "html": "<p>Set <var>fr</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-error\" id=\"ref-for-filereader-error①\">error</a> to <code>null</code>.</p>"
         },
         {
-          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream④\">get stream</a> on <var>blob</var>.</p>"
+          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream⑤\">get stream</a> on <var>blob</var>.</p>"
         },
         {
           "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader③\">getting a reader</a> from <var>stream</var>.</p>"
@@ -580,22 +600,22 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-state\" id=\"ref-for-filereader-state⑦\">state</a> is <code>\"empty\"</code>\n or if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-state\" id=\"ref-for-filereader-state⑧\">state</a> is <code>\"done\"</code>\n set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-result\" id=\"ref-for-filereader-result③\">result</a> to <code>null</code>\n and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#terminate-an-algorithm\" id=\"ref-for-terminate-an-algorithm\">terminate this algorithm</a>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-state\" id=\"ref-for-filereader-state⑦\">state</a> is <code>\"empty\"</code>\n or if <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-state\" id=\"ref-for-filereader-state⑧\">state</a> is <code>\"done\"</code>\n set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-result\" id=\"ref-for-filereader-result③\">result</a> to <code>null</code>\n and <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#terminate-an-algorithm\" id=\"ref-for-terminate-an-algorithm\">terminate this algorithm</a>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-state\" id=\"ref-for-filereader-state⑨\">state</a> is <code>\"loading\"</code>\n set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-state\" id=\"ref-for-filereader-state①⓪\">state</a> to <code>\"done\"</code>\n and set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-result\" id=\"ref-for-filereader-result④\">result</a> to <code>null</code>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-state\" id=\"ref-for-filereader-state⑨\">state</a> is <code>\"loading\"</code>\n set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-state\" id=\"ref-for-filereader-state①⓪\">state</a> to <code>\"done\"</code>\n and set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-result\" id=\"ref-for-filereader-result④\">result</a> to <code>null</code>.</p>"
         },
         {
-          "html": "<p>If there are any <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task\">tasks</a> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>\n on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#fileReadingTaskSource\" id=\"ref-for-fileReadingTaskSource②\">file reading task source</a> in an affiliated <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑤\">task queue</a>,\n then remove those <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task①\">tasks</a> from that task queue.</p>"
+          "html": "<p>If there are any <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task\">tasks</a> from <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>\n on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#fileReadingTaskSource\" id=\"ref-for-fileReadingTaskSource②\">file reading task source</a> in an affiliated <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑤\">task queue</a>,\n then remove those <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-task\" id=\"ref-for-concept-task①\">tasks</a> from that task queue.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#terminate-an-algorithm\" id=\"ref-for-terminate-an-algorithm①\">Terminate the algorithm</a> for the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#read-method\" id=\"ref-for-read-method⑤\">read method</a> being processed.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#fire-a-progress-event\" id=\"ref-for-fire-a-progress-event⑦\">Fire a progress event</a> called <code class=\"idl\"><u class=\"link-error\" data-lt=\"abort\" title=\"LINK ERROR: Ambiguous for-less link for 'abort', please see &lt;https://speced.github.io/bikeshed/#ambi-for&gt; for instructions:\nLocal references:\nspec:fileapi; type:event; for:FileReader; text:abort\nfor-less references:\nspec:media-source-2; type:event; for:/; text:abort\nspec:media-source-2; type:event; for:/; text:abort\">abort</u></code> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#fire-a-progress-event\" id=\"ref-for-fire-a-progress-event⑦\">Fire a progress event</a> called <code class=\"idl\"><u class=\"link-error\" data-lt=\"abort\" title=\"LINK ERROR: Ambiguous for-less link for 'abort', please see &lt;https://speced.github.io/bikeshed/#ambi-for&gt; for instructions:\nLocal references:\nspec:fileapi; type:event; for:FileReader; text:abort\nfor-less references:\nspec:media-source-2; type:event; for:/; text:abort\nspec:media-source-2; type:event; for:/; text:abort\">abort</u></code> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>.</p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-state\" id=\"ref-for-filereader-state①①\">state</a> is not <code>\"loading\"</code>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#fire-a-progress-event\" id=\"ref-for-fire-a-progress-event⑧\">fire a progress event</a> called <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-loadend-event\" id=\"ref-for-dfn-loadend-event⑤\">loadend</a></code> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#filereader-state\" id=\"ref-for-filereader-state①①\">state</a> is not <code>\"loading\"</code>,\n <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#fire-a-progress-event\" id=\"ref-for-fire-a-progress-event⑧\">fire a progress event</a> called <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-loadend-event\" id=\"ref-for-dfn-loadend-event⑤\">loadend</a></code> at <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>.</p>"
         }
       ]
     },
@@ -624,7 +644,7 @@
           ]
         },
         {
-          "html": "<p>If <var>encoding</var> is failure, then set <var>encoding</var> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8\">UTF-8</a>.</p>"
+          "html": "<p>If <var>encoding</var> is failure, then set <var>encoding</var> to <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8②\">UTF-8</a>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#decode\" id=\"ref-for-decode\">Decode</a> <var>bytes</var> using fallback encoding <var>encoding</var>, and return the result.</p>"
@@ -638,7 +658,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream⑤\">get stream</a> on <var>blob</var>.</p>"
+          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream⑥\">get stream</a> on <var>blob</var>.</p>"
         },
         {
           "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader④\">getting a reader</a> from <var>stream</var>.</p>"
@@ -670,7 +690,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream⑥\">get stream</a> on <var>blob</var>.</p>"
+          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream⑦\">get stream</a> on <var>blob</var>.</p>"
         },
         {
           "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader⑤\">getting a reader</a> from <var>stream</var>.</p>"
@@ -702,7 +722,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream⑦\">get stream</a> on <var>blob</var>.</p>"
+          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream⑧\">get stream</a> on <var>blob</var>.</p>"
         },
         {
           "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader⑥\">getting a reader</a> from <var>stream</var>.</p>"
@@ -734,7 +754,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream⑧\">get stream</a> on <var>blob</var>.</p>"
+          "html": "<p>Let <var>stream</var> be the result of calling <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/FileAPI/#blob-get-stream\" id=\"ref-for-blob-get-stream⑨\">get stream</a> on <var>blob</var>.</p>"
         },
         {
           "html": "<p>Let <var>reader</var> be the result of <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-get-a-reader\" id=\"ref-for-readablestream-get-a-reader⑦\">getting a reader</a> from <var>stream</var>.</p>"
