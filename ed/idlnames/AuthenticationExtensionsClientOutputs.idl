@@ -2,12 +2,22 @@
 dictionary AuthenticationExtensionsClientOutputs {
 };
 
-// Source: Client to Authenticator Protocol (CTAP) (https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html)
+// Source: Client to Authenticator Protocol (CTAP) (https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html)
+partial dictionary AuthenticationExtensionsClientOutputs {
+  boolean credBlob;
+};
+
+// Source: Client to Authenticator Protocol (CTAP) (https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html)
+partial dictionary AuthenticationExtensionsClientOutputs {
+  ArrayBuffer getCredBlob;
+};
+
+// Source: Client to Authenticator Protocol (CTAP) (https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html)
 partial dictionary AuthenticationExtensionsClientOutputs {
   boolean hmacCreateSecret;
 };
 
-// Source: Client to Authenticator Protocol (CTAP) (https://fidoalliance.org/specs/fido-v2.1-ps-20210615/fido-client-to-authenticator-protocol-v2.1-ps-errata-20220621.html)
+// Source: Client to Authenticator Protocol (CTAP) (https://fidoalliance.org/specs/fido-v2.2-ps-20250714/fido-client-to-authenticator-protocol-v2.2-ps-20250714.html)
 partial dictionary AuthenticationExtensionsClientOutputs {
   HMACGetSecretOutput hmacGetSecret;
 };
