@@ -478,7 +478,7 @@
         "href": "https://fetch.spec.whatwg.org/#bodyinit"
       },
       "Body": {
-        "fragment": "interface mixin Body {\n  readonly attribute ReadableStream? body;\n  readonly attribute boolean bodyUsed;\n  [NewObject] Promise<ArrayBuffer> arrayBuffer();\n  [NewObject] Promise<Blob> blob();\n  [NewObject] Promise<Uint8Array> bytes();\n  [NewObject] Promise<FormData> formData();\n  [NewObject] Promise<any> json();\n  [NewObject] Promise<USVString> text();\n};",
+        "fragment": "interface mixin Body {\n  readonly attribute ReadableStream? body;\n  readonly attribute boolean bodyUsed;\n  [NewObject] Promise<ArrayBuffer> arrayBuffer();\n  [NewObject] Promise<Blob> blob();\n  [NewObject] Promise<Uint8Array> bytes();\n  [NewObject] Promise<FormData> formData();\n  [NewObject] Promise<any> json();\n  [NewObject] Promise<USVString> text();\n  [NewObject] ReadableStream textStream();\n};",
         "type": "interface mixin",
         "name": "Body",
         "inheritance": null,
@@ -706,6 +706,29 @@
             ],
             "special": "",
             "href": "https://fetch.spec.whatwg.org/#dom-body-text"
+          },
+          {
+            "type": "operation",
+            "name": "textStream",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ReadableStream"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "href": "https://fetch.spec.whatwg.org/#dom-body-textstream"
           }
         ],
         "extAttrs": [],
