@@ -60,7 +60,7 @@
         },
         {
           "name": "math-auto",
-          "prose": "See MathML Core § 4.2 New text-transform value.",
+          "prose": "See MathML Core § 4.2 The math-auto transform.",
           "href": "https://www.w3.org/TR/css-text-4/#valdef-text-transform-math-auto",
           "type": "value",
           "value": "math-auto"
@@ -123,7 +123,7 @@
       "value": "normal | pre | pre-wrap | pre-line | <'white-space-collapse'> || <'text-wrap-mode'> || <'white-space-trim'>",
       "initial": "normal",
       "appliesTo": "text",
-      "inherited": "individual properties",
+      "inherited": "see individual properties",
       "percentages": "n/a",
       "computedValue": "specified keyword",
       "canonicalOrder": "n/a",
@@ -288,14 +288,14 @@
       "values": [
         {
           "name": "wrap",
-          "prose": "Content may break across lines at allowed soft wrap opportunities, as determined by the line-breaking rules in effect, in order to minimize inline-axis overflow.",
+          "prose": "Lines may wrap at allowed soft wrap opportunities, as determined by the line-breaking rules in effect, in order to minimize inline-axis overflow.",
           "href": "https://www.w3.org/TR/css-text-4/#valdef-text-wrap-mode-wrap",
           "type": "value",
           "value": "wrap"
         },
         {
           "name": "nowrap",
-          "prose": "Inline-level content does not break across lines; content that does not fit within the block container overflows it.",
+          "prose": "Lines only break at forced line breaks; content that does not fit within the block container overflows it.",
           "href": "https://www.w3.org/TR/css-text-4/#valdef-text-wrap-mode-nowrap",
           "type": "value",
           "value": "nowrap"
@@ -461,7 +461,7 @@
     {
       "name": "text-wrap-style",
       "href": "https://www.w3.org/TR/css-text-4/#propdef-text-wrap-style",
-      "value": "auto | balance | stable | pretty",
+      "value": "auto | balance | stable | pretty | avoid-orphans",
       "initial": "auto",
       "appliesTo": "block containers hat establish an inline formatting context",
       "inherited": "yes",
@@ -479,7 +479,7 @@
         },
         {
           "name": "balance",
-          "prose": "Line breaks are chosen to balance the remaining (empty) space in each line box, if better balance than auto is possible. This should avoid changing—​and in the case of 5 or fewer lines must not change—​the number of line boxes the block would contain if text-wrap were set to auto. The remaining space to consider is that which remains after placing floats and inline content, but before any adjustments due to text justification. Line boxes are balanced when the standard deviation from the average inline-size of the remaining space in each line box is reduced over the block (including lines that end in a forced break). Groups of lines separated by a forced line break are processed separately. If the element is affected by line-clamp, the claming effect is applied first, then the remaining lines are balanced. The exact algorithm is UA-defined. UAs may treat this value as auto if there are more than ten lines to balance.",
+          "prose": "Line breaks are chosen to balance the remaining (empty) space in each line box, if better balance than auto is possible. This should avoid changing—​and in the case of 5 or fewer lines must not change—​the number of line boxes the block would contain if text-wrap were set to auto. The remaining space to consider is that which remains after placing floats and inline content, but before any adjustments due to text justification. Line boxes are balanced when the standard deviation from the average inline-size of the remaining space in each line box is reduced over the block (including lines that end in a forced line break). Groups of lines separated by a forced line break are processed separately. If the element is affected by line-clamp, the clamping effect is applied first, then the remaining lines are balanced. The exact algorithm is UA-defined. UAs may treat this value as auto if there are more than ten lines to balance.",
           "href": "https://www.w3.org/TR/css-text-4/#valdef-text-wrap-style-balance",
           "type": "value",
           "value": "balance"
@@ -493,10 +493,17 @@
         },
         {
           "name": "pretty",
-          "prose": "Specifies the UA should bias for better layout over speed, and is expected to consider multiple lines, when making break decisions. Otherwise equivalent to auto,",
+          "prose": "Specifies the UA should bias for better layout over speed, and is expected to consider multiple lines when making break decisions. Otherwise equivalent to auto. The user agent may among other things attempt to avoid excessively short last lines, similarly to avoid-orphans, but it should also improve the layout in additional ways. The precise set of improvements is user agent dependent, and may include things such as: reducing the variation in length between lines; avoiding typographic rivers; prioritizing different classes of soft wrap opportunities, hyphenation opportunities, or justification opportunities; avoiding hyphenation on too many consecutive lines… The necessary computations may be expensive, especially when applied to large amounts of text. Authors are encouraged to assess the impact on performance when using text-wrap-style: pretty, and possibly use it selectively where it matters most.",
           "href": "https://www.w3.org/TR/css-text-4/#valdef-text-wrap-style-pretty",
           "type": "value",
           "value": "pretty"
+        },
+        {
+          "name": "avoid-orphans",
+          "prose": "Specifies the UA should avoid excessively short last lines, and is expected to consider more than one line when making break decisions (for example, to avoid \"fixing\" an orphan by making the previous line too short). The user agent may decide against improving the last line when it would make some prior line(s) substantially unbalanced. The user agent should not attempt to improve other aspects of the layout beyond what auto if those improvements come at a significant performance cost. For instance, with the given line length, the following test would be wrapped with a single word on the last line, which could be judged too short. ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ πλάγχθη, ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν. Applying text-wrap-style: avoid-orphans could yield something like this instead, which is arguably more pleasing: ἄνδρα μοι ἔννεπε, μοῦσα, πολύτροπον, ὃς μάλα πολλὰ πλάγχθη, ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν. However, the following fragment is more vexing: Circumnavigating the Mississippi river An attempt to make the last line less short by wrapping the previous line earlier would result in the following: Circumnavigating the Mississippi river While the last line would indeed no longer be short, the penultimate line would be unsightly. In such cases, user agents are expected to prefer the first rendering despite text-wrap-style: avoid-orphans being set.",
+          "href": "https://www.w3.org/TR/css-text-4/#valdef-text-wrap-style-avoid-orphans",
+          "type": "value",
+          "value": "avoid-orphans"
         }
       ],
       "styleDeclaration": [
@@ -853,22 +860,6 @@
       ]
     },
     {
-      "name": "word-wrap",
-      "href": "https://www.w3.org/TR/css-text-4/#propdef-word-wrap",
-      "value": "normal | break-word | anywhere",
-      "initial": "normal",
-      "appliesTo": "text",
-      "inherited": "yes",
-      "percentages": "n/a",
-      "computedValue": "specified keyword",
-      "canonicalOrder": "n/a",
-      "animationType": "discrete",
-      "styleDeclaration": [
-        "word-wrap",
-        "wordWrap"
-      ]
-    },
-    {
       "name": "text-align",
       "href": "https://www.w3.org/TR/css-text-4/#propdef-text-align",
       "value": "start | end | left | right | center | <string> | justify | match-parent | justify-all",
@@ -930,7 +921,7 @@
         },
         {
           "name": "justify",
-          "prose": "Text is justified according to the method specified by the text-justify property, in order to exactly fill the line box. Unless otherwise specified by text-align-last, the last line before a forced break or the end of the block is start-aligned.",
+          "prose": "Text is justified according to the method specified by the text-justify property, in order to exactly fill the line box. Unless otherwise specified by text-align-last, the last line before a forced line break is start-aligned.",
           "href": "https://www.w3.org/TR/css-text-4/#valdef-text-align-justify",
           "type": "value",
           "value": "justify"
@@ -1130,7 +1121,7 @@
       "initial": "normal",
       "appliesTo": "text",
       "inherited": "yes",
-      "percentages": "relative to computed font-size, i.e. 1em",
+      "percentages": "relative to used font-size",
       "computedValue": "an absolute length and/or a percentage",
       "canonicalOrder": "n/a",
       "animationType": "by computed value type",
@@ -1162,7 +1153,7 @@
       "initial": "normal",
       "appliesTo": "inline boxes and text",
       "inherited": "yes",
-      "percentages": "relative to computed font-size, i.e. 1em",
+      "percentages": "relative to used font-size",
       "computedValue": "an absolute length and/or a percentage",
       "canonicalOrder": "n/a",
       "animationType": "by computed value type",
