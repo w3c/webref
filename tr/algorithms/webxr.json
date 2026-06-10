@@ -39,7 +39,7 @@
           ]
         },
         {
-          "html": "<p>The user agent MAY update the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#inline-xr-device\" id=\"ref-for-inline-xr-device⑤\">inline XR device</a> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-xr-device\" id=\"ref-for-immersive-xr-device⑧\">immersive XR device</a> if appropriate, or the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#default-inline-xr-device\" id=\"ref-for-default-inline-xr-device⑥\">default inline XR device</a> otherwise.</p>"
+          "html": "<p>The user agent MAY update the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#inline-xr-device\" id=\"ref-for-inline-xr-device⑥\">inline XR device</a> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-xr-device\" id=\"ref-for-immersive-xr-device⑧\">immersive XR device</a> if appropriate, or the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#default-inline-xr-device\" id=\"ref-for-default-inline-xr-device⑥\">default inline XR device</a> otherwise.</p>"
         },
         {
           "html": "<p>If this is the first time devices have been enumerated or <var>oldDevice</var> equals the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-xr-device\" id=\"ref-for-immersive-xr-device⑨\">immersive XR device</a>, abort these steps.</p>"
@@ -54,7 +54,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①\">Queue a task</a> to <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsystem-devicechange\" id=\"ref-for-eventdef-xrsystem-devicechange\">devicechange</a> on the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global\">relevant Global object</a>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/system-state.html#dom-navigator\" id=\"ref-for-dom-navigator\">navigator</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-navigator-xr\" id=\"ref-for-dom-navigator-xr①\">xr</a></code>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②\">Queue a task</a> to fire appropriate <code>change</code> events on any <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrpermissionstatus\" id=\"ref-for-xrpermissionstatus\">XRPermissionStatus</a></code> objects who are affected by the change in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-xr-device\" id=\"ref-for-immersive-xr-device①⓪\">immersive XR device</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#inline-xr-device\" id=\"ref-for-inline-xr-device⑥\">inline XR device</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②\">Queue a task</a> to fire appropriate <code>change</code> events on any <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrpermissionstatus\" id=\"ref-for-xrpermissionstatus\">XRPermissionStatus</a></code> objects who are affected by the change in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-xr-device\" id=\"ref-for-immersive-xr-device①⓪\">immersive XR device</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#inline-xr-device\" id=\"ref-for-inline-xr-device⑦\">inline XR device</a>.</p>"
         }
       ]
     },
@@ -91,7 +91,7 @@
           "html": "<p>If <var>mode</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsessionmode-inline\" id=\"ref-for-dom-xrsessionmode-inline②\">\"inline\"</a></code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve\">resolve</a> <var>promise</var> with <code>true</code> and return it.</p>"
         },
         {
-          "html": "<p>If the requesting document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> is not allowed to use the \"xr-spatial-tracking\" <a href=\"https://www.w3.org/TR/webxr/#permissions-policy\">permissions policy</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> and return it.</p>"
+          "html": "<p>If <var>mode</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session\">immersive session</a> mode and the requesting document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin\">origin</a> is not allowed to use the \"xr-spatial-tracking\" <a href=\"https://www.w3.org/TR/webxr/#permissions-policy\">permissions policy</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>promise</var> with a \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> and return it.</p>"
         },
         {
           "html": "Check whether the session <var>mode</var> is supported as follows:",
@@ -114,7 +114,7 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>device</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ensure-an-immersive-xr-device-is-selected\" id=\"ref-for-ensure-an-immersive-xr-device-is-selected\">ensuring an immersive XR device is selected</a>.</p>"
+                      "html": "<p>Let <var>device</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#obtain-the-current-device\" id=\"ref-for-obtain-the-current-device\">obtaining the current device</a> for <var>mode</var>, an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list④\">list</a>, and an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑤\">list</a>.</p>"
                     },
                     {
                       "html": "<p>If <var>device</var> is null, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#resolve\" id=\"ref-for-resolve③\">resolve</a> <var>promise</var> with <code>false</code> and abort these steps.</p>"
@@ -149,7 +149,7 @@
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new Promise</a> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a> of this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsystem\" id=\"ref-for-xrsystem⑥\">XRSystem</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>immersive</var> be <code>true</code> if <var>mode</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session\">immersive session</a> mode, and <code>false</code> otherwise.</p>"
+          "html": "<p>Let <var>immersive</var> be <code>true</code> if <var>mode</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session①\">immersive session</a> mode, and <code>false</code> otherwise.</p>"
         },
         {
           "html": "<p>Let <var>global object</var> be the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant Global object</a> for the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsystem\" id=\"ref-for-xrsystem⑦\">XRSystem</a></code> on which this method was invoked.</p>"
@@ -196,7 +196,7 @@
               "html": "<p>Let <var>optionalFeatures</var> be <var>options</var>’ <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsessioninit-optionalfeatures\" id=\"ref-for-dom-xrsessioninit-optionalfeatures\">optionalFeatures</a></code>.</p>"
             },
             {
-              "html": "<p>Set <var>device</var> to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#obtain-the-current-device\" id=\"ref-for-obtain-the-current-device\">obtaining the current device</a> for <var>mode</var>, <var>requiredFeatures</var>, and <var>optionalFeatures</var>.</p>"
+              "html": "<p>Set <var>device</var> to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#obtain-the-current-device\" id=\"ref-for-obtain-the-current-device①\">obtaining the current device</a> for <var>mode</var>, <var>requiredFeatures</var>, and <var>optionalFeatures</var>.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑥\">Queue a task</a> to perform the following steps:",
@@ -320,11 +320,11 @@
               "steps": [
                 {
                   "case": "If mode is an immersive session mode:",
-                  "html": "<p>Set <var>device</var> to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ensure-an-immersive-xr-device-is-selected\" id=\"ref-for-ensure-an-immersive-xr-device-is-selected①\">ensuring an immersive XR device is selected</a>.</p>"
+                  "html": "<p>Set <var>device</var> to the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ensure-an-immersive-xr-device-is-selected\" id=\"ref-for-ensure-an-immersive-xr-device-is-selected\">ensuring an immersive XR device is selected</a>.</p>"
                 },
                 {
                   "case": "Else if requiredFeatures or optionalFeatures are not empty:",
-                  "html": "<p>Set <var>device</var> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#inline-xr-device\" id=\"ref-for-inline-xr-device⑦\">inline XR device</a>.</p>"
+                  "html": "<p>Set <var>device</var> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#inline-xr-device\" id=\"ref-for-inline-xr-device⑧\">inline XR device</a>.</p>"
                 },
                 {
                   "case": "Otherwise:",
@@ -380,7 +380,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">Reject</a> any outstanding promises returned by <var>session</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code>, except for any promises returned by <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-end\" id=\"ref-for-dom-xrsession-end①\">end()</a></code>.</p>"
         },
         {
-          "html": "<p>If no other features of the user agent are actively using them, perform the necessary platform-specific steps to shut down the device’s tracking and rendering capabilities. This MUST include:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Releasing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#exclusive-access\" id=\"ref-for-exclusive-access③\">exclusive access</a> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device⑧\">XR device</a> if <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session①③\">immersive session</a>.</p>\n       </li><li data-md=\"\">\n        <p>Deallocating any graphics resources acquired by <var>session</var> for presentation to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device⑨\">XR device</a>.</p>\n       </li><li data-md=\"\">\n        <p>Putting the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①⓪\">XR device</a> in a state such that a different source may be able to initiate a session with the same device if <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session①④\">immersive session</a>.</p>\n      </li></ul>"
+          "html": "<p>If no other features of the user agent are actively using them, perform the necessary platform-specific steps to shut down the device’s tracking and rendering capabilities. This MUST include:</p>\n      <ul>\n       <li data-md=\"\">\n        <p>Releasing <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#exclusive-access\" id=\"ref-for-exclusive-access③\">exclusive access</a> to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device⑧\">XR device</a> if <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session①④\">immersive session</a>.</p>\n       </li><li data-md=\"\">\n        <p>Deallocating any graphics resources acquired by <var>session</var> for presentation to the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device⑨\">XR device</a>.</p>\n       </li><li data-md=\"\">\n        <p>Putting the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①⓪\">XR device</a> in a state such that a different source may be able to initiate a session with the same device if <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session①⑤\">immersive session</a>.</p>\n      </li></ul>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task⑧\">Queue a task</a> that fires an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsessionevent\" id=\"ref-for-xrsessionevent\">XRSessionEvent</a></code> named <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/webxr/#eventdef-xrsession-end\" id=\"ref-for-eventdef-xrsession-end\">end</a></code> on <var>session</var>.</p>"
@@ -522,7 +522,7 @@
           "html": "<p>If <var>newState</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrrenderstateinit-baselayer\" id=\"ref-for-dom-xrrenderstateinit-baselayer\">baseLayer</a></code> was created with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession③⑧\">XRSession</a></code> other than <var>session</var>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑥\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>newState</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrrenderstateinit-inlineverticalfieldofview\" id=\"ref-for-dom-xrrenderstateinit-inlineverticalfieldofview\">inlineVerticalFieldOfView</a></code> is set and <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session①⑤\">immersive session</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑦\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>newState</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrrenderstateinit-inlineverticalfieldofview\" id=\"ref-for-dom-xrrenderstateinit-inlineverticalfieldofview\">inlineVerticalFieldOfView</a></code> is set and <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session①⑥\">immersive session</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑦\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>If none of <var>newState</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrrenderstateinit-depthnear\" id=\"ref-for-dom-xrrenderstateinit-depthnear\">depthNear</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrrenderstateinit-depthfar\" id=\"ref-for-dom-xrrenderstateinit-depthfar\">depthFar</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrrenderstateinit-inlineverticalfieldofview\" id=\"ref-for-dom-xrrenderstateinit-inlineverticalfieldofview①\">inlineVerticalFieldOfView</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrrenderstateinit-baselayer\" id=\"ref-for-dom-xrrenderstateinit-baselayer①\">baseLayer</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrrenderstateinit-layers\" id=\"ref-for-dom-xrrenderstateinit-layers①\">layers</a></code> are set, abort these steps.</p>"
@@ -607,7 +607,7 @@
                   "operation": "switch",
                   "steps": [
                     {
-                      "case": "If session’s mode is \"inline\" and baseLayer is an instance of an XRWebGLLayer with composition enabled set to false:",
+                      "case": "If session is an inline session and baseLayer is an instance of an XRWebGLLayer with composition enabled set to false:",
                       "html": "<p>Set <var>activeState</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrrenderstate-composition-enabled\" id=\"ref-for-xrrenderstate-composition-enabled①\">composition enabled</a> boolean to <code>false</code>.</p>"
                     },
                     {
@@ -667,10 +667,10 @@
           "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-promise-resolved\" id=\"ref-for-xrsession-promise-resolved①\">promise resolved</a> flag is not set, abort these steps.</p>"
         },
         {
-          "html": "<p>Let <var>added primary sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑦\">list</a>.</p>"
+          "html": "<p>Let <var>added primary sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a>.</p>"
         },
         {
-          "html": "<p>Let <var>added tracked sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑧\">list</a>.</p>"
+          "html": "<p>Let <var>added tracked sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a>.</p>"
         },
         {
           "html": "For each new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source④\">XR input source</a>:",
@@ -688,7 +688,7 @@
                       "html": "<p>Add <var>inputSource</var> to <var>added primary sources</var>.</p>"
                     },
                     {
-                      "case": "Otherwise, if \"tracked-sources\" is included in session’s set of granted features:",
+                      "case": "Otherwise, if tracked-sources is included in session’s set of granted features:",
                       "html": "<p>Add <var>inputSource</var> to <var>added tracked sources</var>.</p>"
                     }
                   ]
@@ -727,10 +727,10 @@
           "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-promise-resolved\" id=\"ref-for-xrsession-promise-resolved②\">promise resolved</a> flag is not set, abort these steps.</p>"
         },
         {
-          "html": "<p>Let <var>removed primary sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list⑨\">list</a>.</p>"
+          "html": "<p>Let <var>removed primary sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①①\">list</a>.</p>"
         },
         {
-          "html": "<p>Let <var>removed tracked sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⓪\">list</a>.</p>"
+          "html": "<p>Let <var>removed tracked sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①②\">list</a>.</p>"
         },
         {
           "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑥\">XR input source</a> that is no longer available:",
@@ -748,7 +748,7 @@
                       "html": "<p>Add <var>inputSource</var> to <var>removed primary sources</var>.</p>"
                     },
                     {
-                      "case": "Otherwise, if \"tracked-sources\" is included in session’s set of granted features:",
+                      "case": "Otherwise, if tracked-sources is included in session’s set of granted features:",
                       "html": "<p>Add <var>inputSource</var> to <var>removed tracked sources</var>.</p>"
                     }
                   ]
@@ -787,16 +787,16 @@
           "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-promise-resolved\" id=\"ref-for-xrsession-promise-resolved③\">promise resolved</a> flag is not set, abort these steps.</p>"
         },
         {
-          "html": "<p>Let <var>added primary sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①①\">list</a>.</p>"
+          "html": "<p>Let <var>added primary sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①③\">list</a>.</p>"
         },
         {
-          "html": "<p>Let <var>removed primary sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①②\">list</a>.</p>"
+          "html": "<p>Let <var>removed primary sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①④\">list</a>.</p>"
         },
         {
-          "html": "<p>Let <var>added tracked sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①③\">list</a>.</p>"
+          "html": "<p>Let <var>added tracked sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑤\">list</a>.</p>"
         },
         {
-          "html": "<p>Let <var>removed tracked sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①④\">list</a>.</p>"
+          "html": "<p>Let <var>removed tracked sources</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑥\">list</a>.</p>"
         },
         {
           "html": "For each changed <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source⑨\">XR input source</a>:",
@@ -814,7 +814,7 @@
                       "html": "<p>Add <var>oldInputSource</var> to <var>removed primary sources</var>.</p>"
                     },
                     {
-                      "case": "Otherwise, if \"tracked-sources\" is included in session’s set of granted features:",
+                      "case": "Otherwise, if tracked-sources is included in session’s set of granted features:",
                       "html": "<p>Add <var>oldInputSource</var> to <var>removed tracked sources</var>.</p>"
                     }
                   ]
@@ -833,7 +833,7 @@
                       "html": "<p>Add <var>newInputSource</var> to <var>added primary sources</var>.</p>"
                     },
                     {
-                      "case": "Otherwise, if \"tracked-sources\" is included in session’s set of granted features:",
+                      "case": "Otherwise, if tracked-sources is included in session’s set of granted features:",
                       "html": "<p>Add <var>newInputSource</var> to <var>added tracked sources</var>.</p>"
                     }
                   ]
@@ -871,7 +871,7 @@
     {
       "name": "initialize-renderstate",
       "href": "https://www.w3.org/TR/webxr/#initialize-the-render-state",
-      "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrrenderstate\" id=\"ref-for-xrrenderstate⑨\">XRRenderState</a></code> object is created for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑦④\">XRSession</a></code> <var>session</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-the-render-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize the render state</dfn> by running the following steps:",
+      "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrrenderstate\" id=\"ref-for-xrrenderstate⑨\">XRRenderState</a></code> object is created for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑦②\">XRSession</a></code> <var>session</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-the-render-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize the render state</dfn> by running the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -953,7 +953,7 @@
     {
       "name": "check-layers-state",
       "href": "https://www.w3.org/TR/webxr/#check-the-layers-state",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-the-layers-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check the layers state</dfn> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-renderstate\" id=\"ref-for-dom-xrsession-renderstate②\">renderState</a></code> <var>state</var>, the user agent MUST run the following steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"check-the-layers-state\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">check the layers state</dfn> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-renderstate\" id=\"ref-for-dom-xrsession-renderstate①\">renderState</a></code> <var>state</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -967,14 +967,14 @@
     {
       "name": "should-be-rendered",
       "href": "https://www.w3.org/TR/webxr/#should-be-rendered",
-      "html": "To determine if a frame <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"should-be-rendered\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">should be rendered</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑦⑨\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+      "html": "To determine if a frame <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"should-be-rendered\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">should be rendered</dfn> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑦⑦\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#check-the-layers-state\" id=\"ref-for-check-the-layers-state\">check the layers state</a> with <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-renderstate\" id=\"ref-for-dom-xrsession-renderstate③\">renderState</a></code> is <code>false</code>, return <code>false</code>.</p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#check-the-layers-state\" id=\"ref-for-check-the-layers-state\">check the layers state</a> with <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-renderstate\" id=\"ref-for-dom-xrsession-renderstate②\">renderState</a></code> is <code>false</code>, return <code>false</code>.</p>"
         },
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-mode\" id=\"ref-for-xrsession-mode②\">mode</a> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsessionmode-inline\" id=\"ref-for-dom-xrsessionmode-inline①③\">\"inline\"</a></code> and <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-renderstate\" id=\"ref-for-dom-xrsession-renderstate④\">renderState</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrrenderstate-output-canvas\" id=\"ref-for-xrrenderstate-output-canvas⑧\">output canvas</a> is <code>null</code>, return <code>false</code>.</p>"
+          "html": "<p>If <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#inline-session\" id=\"ref-for-inline-session①⓪\">inline session</a> and <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-renderstate\" id=\"ref-for-dom-xrsession-renderstate③\">renderState</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrrenderstate-output-canvas\" id=\"ref-for-xrrenderstate-output-canvas⑨\">output canvas</a> is <code>null</code>, return <code>false</code>.</p>"
         },
         {
           "html": "<p>return <code>true</code>.</p>"
@@ -984,7 +984,7 @@
     {
       "name": "run-animation-frames",
       "href": "https://www.w3.org/TR/webxr/#xr-animation-frame",
-      "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑧⓪\">XRSession</a></code> <var>session</var> receives updated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#viewer\" id=\"ref-for-viewer⑤\">viewer</a> state for timestamp <var>frameTime</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①⑤\">XR device</a>, it runs an <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xr-animation-frame\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">XR animation frame</dfn>, which MUST run the following steps regardless of if the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-animation-frame-callbacks\" id=\"ref-for-list-of-animation-frame-callbacks③\">list of animation frame callbacks</a> is empty or not:",
+      "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑦⑧\">XRSession</a></code> <var>session</var> receives updated <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#viewer\" id=\"ref-for-viewer④\">viewer</a> state for timestamp <var>frameTime</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①⑥\">XR device</a>, it runs an <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xr-animation-frame\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">XR animation frame</dfn>, which MUST run the following steps regardless of if the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-animation-frame-callbacks\" id=\"ref-for-list-of-animation-frame-callbacks③\">list of animation frame callbacks</a> is empty or not:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1004,13 +1004,13 @@
               "html": "<p>Set <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-predicteddisplaytime\" id=\"ref-for-dom-xrframe-predicteddisplaytime\">predictedDisplayTime</a></code> to <var>frameTime</var>.</p>"
             },
             {
-              "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-mode\" id=\"ref-for-xrsession-mode③\">mode</a> is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsessionmode-inline\" id=\"ref-for-dom-xrsessionmode-inline①④\">\"inline\"</a></code>, set <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-predicteddisplaytime\" id=\"ref-for-dom-xrframe-predicteddisplaytime①\">predictedDisplayTime</a></code> to the average timestamp the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-compositor\" id=\"ref-for-xr-compositor⑤\">XR Compositor</a> is expected to display this <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-animation-frame\" id=\"ref-for-xr-animation-frame①\">XR animation frame</a>.</p>"
+              "html": "<p>If <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session②③\">immersive session</a>, set <var>frame</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-predicteddisplaytime\" id=\"ref-for-dom-xrframe-predicteddisplaytime①\">predictedDisplayTime</a></code> to the average timestamp the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-compositor\" id=\"ref-for-xr-compositor⑤\">XR Compositor</a> is expected to display this <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-animation-frame\" id=\"ref-for-xr-animation-frame①\">XR animation frame</a>.</p>"
             },
             {
-              "html": "<p>For each <var>view</var> in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views②\">list of views</a>, set <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-viewport-modifiable\" id=\"ref-for-view-viewport-modifiable\">viewport modifiable</a> flag to true.</p>"
+              "html": "<p>For each <var>view</var> in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑦\">list of views</a>, set <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-viewport-modifiable\" id=\"ref-for-view-viewport-modifiable\">viewport modifiable</a> flag to true.</p>"
             },
             {
-              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active①\">active</a> flag of any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view⑤\">view</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views③\">list of views</a> has changed since the last <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-animation-frame\" id=\"ref-for-xr-animation-frame②\">XR animation frame</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#update-the-viewports\" id=\"ref-for-update-the-viewports①\">update the viewports</a>.</p>"
+              "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active①\">active</a> flag of any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view④\">view</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑧\">list of views</a> has changed since the last <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-animation-frame\" id=\"ref-for-xr-animation-frame②\">XR animation frame</a>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#update-the-viewports\" id=\"ref-for-update-the-viewports①\">update the viewports</a>.</p>"
             },
             {
               "html": "If the frame <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#should-be-rendered\" id=\"ref-for-should-be-rendered\">should be rendered</a> for <var>session</var>:",
@@ -1038,7 +1038,7 @@
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#invoke-a-callback-function\" id=\"ref-for-invoke-a-callback-function\">Invoke</a> <var>entry</var> with « <var>now</var>, <var>frame</var> » and \"<code>report</code>\".</p>"
                 },
                 {
-                  "html": "<p>Set <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-currently-running-animation-frame-callbacks\" id=\"ref-for-list-of-currently-running-animation-frame-callbacks③\">list of currently running animation frame callbacks</a> to the empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑥\">list</a>.</p>"
+                  "html": "<p>Set <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-currently-running-animation-frame-callbacks\" id=\"ref-for-list-of-currently-running-animation-frame-callbacks③\">list of currently running animation frame callbacks</a> to the empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑧\">list</a>.</p>"
                 },
                 {
                   "html": "<p>Set <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active②\">active</a> boolean to <code>false</code>.</p>"
@@ -1055,7 +1055,7 @@
     {
       "name": "get-viewer-pose",
       "href": "https://www.w3.org/TR/webxr/#dom-xrframe-getviewerpose",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-getviewerpose\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getViewerPose(<var>referenceSpace</var>)</code></dfn> method provides the pose of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#viewer\" id=\"ref-for-viewer⑥\">viewer</a> relative to <var>referenceSpace</var> as an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrviewerpose\" id=\"ref-for-xrviewerpose①\">XRViewerPose</a></code>, at the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe\" id=\"ref-for-xrframe①⓪\">XRFrame</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-time\" id=\"ref-for-xrframe-time②\">time</a>.",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRFrame\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-xrframe-getviewerpose\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getViewerPose(<var>referenceSpace</var>)</code></dfn> method provides the pose of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#viewer\" id=\"ref-for-viewer⑤\">viewer</a> relative to <var>referenceSpace</var> as an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrviewerpose\" id=\"ref-for-xrviewerpose①\">XRViewerPose</a></code>, at the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrframe\" id=\"ref-for-xrframe①⓪\">XRFrame</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-time\" id=\"ref-for-xrframe-time②\">time</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1077,13 +1077,13 @@
           "html": "<p>If <var>pose</var> is <code>null</code> return <code>null</code>.</p>"
         },
         {
-          "html": "<p>Let <var>xrviews</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑦\">list</a>.</p>"
+          "html": "<p>Let <var>xrviews</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①⑨\">list</a>.</p>"
         },
         {
           "html": "<p>Let <var>offset</var> be <code>0</code>.</p>"
         },
         {
-          "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active②\">active</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view⑥\">view</a> <var>view</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views④\">list of views</a> on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session③\">session</a></code>, perform the following steps:",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active②\">active</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view⑤\">view</a> <var>view</var> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑨\">list of views</a> on <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session③\">session</a></code>, perform the following steps:",
           "rationale": "let",
           "steps": [
             {
@@ -1093,7 +1093,7 @@
               "html": "<p>Initialize <var>xrview</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-underlying-view\" id=\"ref-for-xrview-underlying-view\">underlying view</a> to <var>view</var>.</p>"
             },
             {
-              "html": "<p>Initialize <var>xrview</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrview-eye\" id=\"ref-for-dom-xrview-eye\">eye</a></code> to <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-eye\" id=\"ref-for-view-eye\">eye</a>.</p>"
+              "html": "<p>Initialize <var>xrview</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrview-eye\" id=\"ref-for-dom-xrview-eye\">eye</a></code> to <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-eye\" id=\"ref-for-view-eye⑥\">eye</a>.</p>"
             },
             {
               "html": "<p>Initialize <var>xrview</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrview-index\" id=\"ref-for-dom-xrview-index\">index</a></code> to <var>offset</var>.</p>"
@@ -1228,7 +1228,7 @@
     {
       "name": "create-reference-space",
       "href": "https://www.w3.org/TR/webxr/#create-a-reference-space",
-      "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrreferencespace\" id=\"ref-for-xrreferencespace①⑨\">XRReferenceSpace</a></code> is requested with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#enumdef-xrreferencespacetype\" id=\"ref-for-enumdef-xrreferencespacetype④\">XRReferenceSpaceType</a></code> <var>type</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑨⑤\">XRSession</a></code> <var>session</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-reference-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a reference space</dfn> by running the following steps:",
+      "html": "When an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrreferencespace\" id=\"ref-for-xrreferencespace①⑨\">XRReferenceSpace</a></code> is requested with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#enumdef-xrreferencespacetype\" id=\"ref-for-enumdef-xrreferencespacetype④\">XRReferenceSpaceType</a></code> <var>type</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑨②\">XRSession</a></code> <var>session</var>, the user agent MUST <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-reference-space\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a reference space</dfn> by running the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1264,26 +1264,26 @@
     {
       "name": "reference-space-supported",
       "href": "https://www.w3.org/TR/webxr/#reference-space-is-supported",
-      "html": "To check if a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"reference-space-is-supported\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">reference space is supported</dfn> for a given reference space type <var>type</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑨⑥\">XRSession</a></code> <var>session</var>, run the following steps:",
+      "html": "To check if a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"reference-space-is-supported\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">reference space is supported</dfn> for a given reference space type <var>type</var> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑨③\">XRSession</a></code> <var>session</var>, run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>type</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contained</a> in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-set-of-granted-features\" id=\"ref-for-xrsession-set-of-granted-features⑦\">set of granted features</a>, return <code>false</code>.</p>"
+          "html": "<p>If <var>type</var> is not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain⑥\">contained</a> in <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-set-of-granted-features\" id=\"ref-for-xrsession-set-of-granted-features①⓪\">set of granted features</a>, return <code>false</code>.</p>"
         },
         {
           "html": "<p>If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-viewer\" id=\"ref-for-dom-xrreferencespacetype-viewer⑤\">viewer</a></code>, return <code>true</code>.</p>"
         },
         {
-          "html": "<p>If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-local\" id=\"ref-for-dom-xrreferencespacetype-local⑥\">local</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-local-floor\" id=\"ref-for-dom-xrreferencespacetype-local-floor⑤\">local-floor</a></code>, and <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session②④\">immersive session</a>, return <code>true</code>.</p>"
+          "html": "<p>If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-local\" id=\"ref-for-dom-xrreferencespacetype-local⑥\">local</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-local-floor\" id=\"ref-for-dom-xrreferencespacetype-local-floor⑤\">local-floor</a></code>, and <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session②⑦\">immersive session</a>, return <code>true</code>.</p>"
         },
         {
-          "html": "<p>If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-local\" id=\"ref-for-dom-xrreferencespacetype-local⑦\">local</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-local-floor\" id=\"ref-for-dom-xrreferencespacetype-local-floor⑥\">local-floor</a></code>, and the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①⑧\">XR device</a> supports reporting orientation data, return <code>true</code>.</p>"
+          "html": "<p>If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-local\" id=\"ref-for-dom-xrreferencespacetype-local⑦\">local</a></code> or <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-local-floor\" id=\"ref-for-dom-xrreferencespacetype-local-floor⑥\">local-floor</a></code>, and the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①⑨\">XR device</a> supports reporting orientation data, return <code>true</code>.</p>"
         },
         {
-          "html": "<p>If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-bounded-floor\" id=\"ref-for-dom-xrreferencespacetype-bounded-floor⑦\">bounded-floor</a></code> and <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session②⑤\">immersive session</a>, return the result of whether <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#bounded-reference-spaces-are-supported\" id=\"ref-for-bounded-reference-spaces-are-supported\">bounded reference spaces are supported</a> by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device①⑨\">XR device</a>.</p>"
+          "html": "<p>If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-bounded-floor\" id=\"ref-for-dom-xrreferencespacetype-bounded-floor⑦\">bounded-floor</a></code> and <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session②⑧\">immersive session</a>, return the result of whether <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#bounded-reference-spaces-are-supported\" id=\"ref-for-bounded-reference-spaces-are-supported\">bounded reference spaces are supported</a> by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②⓪\">XR device</a>.</p>"
         },
         {
-          "html": "<p>If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-unbounded\" id=\"ref-for-dom-xrreferencespacetype-unbounded④\">unbounded</a></code>, <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session②⑥\">immersive session</a>, and the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②⓪\">XR device</a> supports stable tracking near the user over an unlimited distance, return <code>true</code>.</p>"
+          "html": "<p>If <var>type</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrreferencespacetype-unbounded\" id=\"ref-for-dom-xrreferencespacetype-unbounded④\">unbounded</a></code>, <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session②⑨\">immersive session</a>, and the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②①\">XR device</a> supports stable tracking near the user over an unlimited distance, return <code>true</code>.</p>"
         },
         {
           "html": "<p>Return <code>false</code>.</p>"
@@ -1336,10 +1336,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②①\">XR device</a> cannot report boundaries, return false.</p>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②②\">XR device</a> cannot report boundaries, return false.</p>"
         },
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②②\">XR device</a> cannot identify the height of the user’s physical floor, return false.</p>"
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②③\">XR device</a> cannot identify the height of the user’s physical floor, return false.</p>"
         },
         {
           "html": "<p>Return true.</p>"
@@ -1395,20 +1395,20 @@
     {
       "name": "update-the-viewports",
       "href": "https://www.w3.org/TR/webxr/#update-the-viewports",
-      "html": "When the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active④\">active</a> flag of any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view②③\">view</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑤\">list of views</a> changes, one can <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-viewports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the viewports</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⓪\">XRSession</a></code> <var>session</var> by performing the following steps:",
+      "html": "When the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active④\">active</a> flag of any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view②②\">view</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views①⓪\">list of views</a> changes, one can <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-viewports\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the viewports</dfn> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑨⑦\">XRSession</a></code> <var>session</var> by performing the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>layer</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-renderstate\" id=\"ref-for-dom-xrsession-renderstate⑤\">renderState</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrrenderstate-baselayer\" id=\"ref-for-dom-xrrenderstate-baselayer⑦\">baseLayer</a></code>.</p>"
+          "html": "<p>Let <var>layer</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-renderstate\" id=\"ref-for-dom-xrsession-renderstate④\">renderState</a></code>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrrenderstate-baselayer\" id=\"ref-for-dom-xrrenderstate-baselayer⑦\">baseLayer</a></code>.</p>"
         },
         {
           "html": "<p>If <var>layer</var> is <code>null</code> abort these steps.</p>"
         },
         {
-          "html": "<p>Set <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-viewport-objects\" id=\"ref-for-list-of-viewport-objects\">list of viewport objects</a> to the empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②⓪\">list</a>.</p>"
+          "html": "<p>Set <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-viewport-objects\" id=\"ref-for-list-of-viewport-objects\">list of viewport objects</a> to the empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list②②\">list</a>.</p>"
         },
         {
-          "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active⑤\">active</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view②④\">view</a> <var>view</var> in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views⑥\">list of views</a>:",
+          "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-active\" id=\"ref-for-view-active⑤\">active</a> <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view\" id=\"ref-for-view②③\">view</a> <var>view</var> in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-list-of-views\" id=\"ref-for-xrsession-list-of-views①①\">list of views</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -1424,7 +1424,7 @@
     {
       "name": "obtain-scaled-viewport",
       "href": "https://www.w3.org/TR/webxr/#xrview-obtain-a-scaled-viewport",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRView\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xrview-obtain-a-scaled-viewport\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a scaled viewport</dfn> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview①⓪\">XRView</a></code> <var>view</var> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪①\">XRSession</a></code> <var>session</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"XRView\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"xrview-obtain-a-scaled-viewport\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">obtain a scaled viewport</dfn> for a given <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview①⓪\">XRView</a></code> <var>view</var> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession⑨⑧\">XRSession</a></code> <var>session</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1586,7 +1586,7 @@
     },
     {
       "name": "on-input-start",
-      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source①⑦\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑦\">XRSession</a></code> <var>session</var> begins its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑤\">primary action</a> the UA MUST run the following steps:",
+      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source①⑦\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪④\">XRSession</a></code> <var>session</var> begins its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑤\">primary action</a> the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1599,7 +1599,7 @@
     },
     {
       "name": "on-input-end",
-      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source①⑧\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑧\">XRSession</a></code> <var>session</var> ends its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑥\">primary action</a> the UA MUST run the following steps:",
+      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source①⑧\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑤\">XRSession</a></code> <var>session</var> ends its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑥\">primary action</a> the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1621,7 +1621,7 @@
     },
     {
       "name": "on-squeeze-start",
-      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②⓪\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑨\">XRSession</a></code> <var>session</var> begins its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-squeeze-action\" id=\"ref-for-primary-squeeze-action④\">primary squeeze action</a> the UA MUST run the following steps:",
+      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②⓪\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑥\">XRSession</a></code> <var>session</var> begins its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-squeeze-action\" id=\"ref-for-primary-squeeze-action④\">primary squeeze action</a> the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1634,7 +1634,7 @@
     },
     {
       "name": "on-squeeze-end",
-      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②①\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①⓪\">XRSession</a></code> <var>session</var> ends its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-squeeze-action\" id=\"ref-for-primary-squeeze-action⑤\">primary squeeze action</a> the UA MUST run the following steps:",
+      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②①\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑦\">XRSession</a></code> <var>session</var> ends its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-squeeze-action\" id=\"ref-for-primary-squeeze-action⑤\">primary squeeze action</a> the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1656,7 +1656,7 @@
     },
     {
       "name": "on-input-cancelled",
-      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②③\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①①\">XRSession</a></code> <var>session</var> has its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑨\">primary action</a> cancelled the UA MUST run the following steps:",
+      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②③\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑧\">XRSession</a></code> <var>session</var> has its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-action\" id=\"ref-for-primary-action⑨\">primary action</a> cancelled the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1669,7 +1669,7 @@
     },
     {
       "name": "on-squeeze-cancelled",
-      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②④\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①②\">XRSession</a></code> <var>session</var> has its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-squeeze-action\" id=\"ref-for-primary-squeeze-action⑧\">primary squeeze action</a> cancelled the UA MUST run the following steps:",
+      "html": "When an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-input-source\" id=\"ref-for-xr-input-source②④\">XR input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⓪⑨\">XRSession</a></code> <var>session</var> has its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#primary-squeeze-action\" id=\"ref-for-primary-squeeze-action⑧\">primary squeeze action</a> cancelled the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1682,7 +1682,7 @@
     },
     {
       "name": "on-transient-input-start",
-      "html": "When a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-input-sources\" id=\"ref-for-transient-input-sources②\">transient input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①④\">XRSession</a></code> <var>session</var> begins its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action②\">transient action</a> the UA MUST run the following steps:",
+      "html": "When a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-input-sources\" id=\"ref-for-transient-input-sources②\">transient input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①⓪\">XRSession</a></code> <var>session</var> begins its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action②\">transient action</a> the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1707,7 +1707,7 @@
     },
     {
       "name": "on-transient-input-end",
-      "html": "When a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-input-sources\" id=\"ref-for-transient-input-sources③\">transient input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①⑤\">XRSession</a></code> <var>session</var> ends its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action④\">transient action</a> the UA MUST run the following steps:",
+      "html": "When a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-input-sources\" id=\"ref-for-transient-input-sources③\">transient input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①①\">XRSession</a></code> <var>session</var> ends its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action④\">transient action</a> the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1738,7 +1738,7 @@
     },
     {
       "name": "on-transient-input-cancelled",
-      "html": "When a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-input-sources\" id=\"ref-for-transient-input-sources④\">transient input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①⑥\">XRSession</a></code> <var>session</var> has its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action⑦\">transient action</a> cancelled the UA MUST run the following steps:",
+      "html": "When a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-input-sources\" id=\"ref-for-transient-input-sources④\">transient input source</a> <var>source</var> for <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①①②\">XRSession</a></code> <var>session</var> has its <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#transient-action\" id=\"ref-for-transient-action⑦\">transient action</a> cancelled the UA MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1777,7 +1777,7 @@
           "html": "<p>If <var>context</var> is lost, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①④\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session②⑦\">immersive session</a> and <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-compatible\" id=\"ref-for-xr-compatible①\">XR compatible</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑤\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session③⓪\">immersive session</a> and <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-compatible\" id=\"ref-for-xr-compatible①\">XR compatible</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑤\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>Initialize <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrwebgllayer-context\" id=\"ref-for-xrwebgllayer-context①\">context</a> to <var>context</var>.</p>"
@@ -1851,7 +1851,7 @@
                       "html": "<p>Initialize <var>layer</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrwebgllayer-framebuffer\" id=\"ref-for-dom-xrwebgllayer-framebuffer①\">framebuffer</a></code> to a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new③①\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.khronos.org/registry/webgl/specs/latest/1.0/#WebGLFramebuffer\" id=\"ref-for-WebGLFramebuffer①\">WebGLFramebuffer</a></code> in the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm③②\">relevant realm</a> of <var>context</var>, which is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#opaque-framebuffer\" id=\"ref-for-opaque-framebuffer\">opaque framebuffer</a> with the dimensions <var>framebufferSize</var> created with <var>context</var>, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#opaque-framebuffer-session\" id=\"ref-for-opaque-framebuffer-session\">session</a> initialized to <var>session</var>, and <var>layerInit</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrwebgllayerinit-depth\" id=\"ref-for-dom-xrwebgllayerinit-depth\">depth</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrwebgllayerinit-stencil\" id=\"ref-for-dom-xrwebgllayerinit-stencil\">stencil</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrwebgllayerinit-alpha\" id=\"ref-for-dom-xrwebgllayerinit-alpha\">alpha</a></code> values.</p>"
                     },
                     {
-                      "html": "<p>Allocate and initialize resources compatible with <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②⑦\">XR device</a>, including GPU accessible memory buffers, as required to support the compositing of <var>layer</var>.</p>"
+                      "html": "<p>Allocate and initialize resources compatible with <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②⑧\">XR device</a>, including GPU accessible memory buffers, as required to support the compositing of <var>layer</var>.</p>"
                     },
                     {
                       "html": "<p>If <var>layer</var>’s resources were unable to be created for any reason, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror\">OperationError</a></code> and abort these steps.</p>"
@@ -1893,7 +1893,7 @@
           "html": "<p>Let <var>frame</var> be <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-animation-frame\" id=\"ref-for-xrsession-animation-frame①\">animation frame</a>.</p>"
         },
         {
-          "html": "<p>If <var>session</var> is not equal to <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrwebgllayer-session\" id=\"ref-for-xrwebgllayer-session①\">session</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑥\">InvalidStateError</a></code> and abort these steps.</p>"
+          "html": "<p>If <var>session</var> is not equal to <var>layer</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrwebgllayer-session\" id=\"ref-for-xrwebgllayer-session③\">session</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑥\">InvalidStateError</a></code> and abort these steps.</p>"
         },
         {
           "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrframe-active\" id=\"ref-for-xrframe-active④\">active</a> boolean is <code>false</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑦\">InvalidStateError</a></code> and abort these steps.</p>"
@@ -1909,7 +1909,7 @@
               "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-current-viewport-scale\" id=\"ref-for-view-current-viewport-scale②\">current viewport scale</a> to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#view-requested-viewport-scale\" id=\"ref-for-view-requested-viewport-scale④\">requested viewport scale</a>.</p>"
             },
             {
-              "html": "<p>In the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-viewport-objects\" id=\"ref-for-list-of-viewport-objects②\">list of viewport objects</a>, set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrviewport\" id=\"ref-for-xrviewport⑧\">XRViewport</a></code> associated with <var>view</var> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrviewport\" id=\"ref-for-xrviewport⑨\">XRViewport</a></code> result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-obtain-a-scaled-viewport\" id=\"ref-for-xrview-obtain-a-scaled-viewport①\">obtaining a scaled viewport</a> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-full-sized-viewports\" id=\"ref-for-list-of-full-sized-viewports③\">list of full-sized viewports</a> associated with <var>view</var> for <var>session</var>.</p>"
+              "html": "<p>In the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-viewport-objects\" id=\"ref-for-list-of-viewport-objects②\">list of viewport objects</a>, set the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrviewport\" id=\"ref-for-xrviewport⑧\">XRViewport</a></code> associated with <var>view</var> to the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrviewport\" id=\"ref-for-xrviewport⑨\">XRViewport</a></code> result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrview-obtain-a-scaled-viewport\" id=\"ref-for-xrview-obtain-a-scaled-viewport①\">obtaining a scaled viewport</a> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#list-of-full-sized-viewports\" id=\"ref-for-list-of-full-sized-viewports④\">list of full-sized viewports</a> associated with <var>view</var> for <var>session</var>.</p>"
             }
           ]
         },
@@ -1926,14 +1926,14 @@
     },
     {
       "name": "native-webgl-framebuffer-resolution",
-      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#native-webgl-framebuffer-resolution\" id=\"ref-for-native-webgl-framebuffer-resolution\">native WebGL framebuffer resolution</a> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①②⑤\">XRSession</a></code> <var>session</var> is determined by running the following steps:",
+      "html": "The <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#native-webgl-framebuffer-resolution\" id=\"ref-for-native-webgl-framebuffer-resolution\">native WebGL framebuffer resolution</a> for an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①②①\">XRSession</a></code> <var>session</var> is determined by running the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-mode\" id=\"ref-for-xrsession-mode⑤\">mode</a> value is not <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsessionmode-inline\" id=\"ref-for-dom-xrsessionmode-inline②⓪\">\"inline\"</a></code>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#native-webgl-framebuffer-resolution\" id=\"ref-for-native-webgl-framebuffer-resolution①\">native WebGL framebuffer resolution</a> to the resolution required to have a 1:1 ratio between the pixels of a framebuffer large enough to contain all of the session’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview①⑦\">XRView</a></code>s and the physical screen pixels in the area of the display under the highest magnification and abort these steps. If no method exists to determine the native resolution as described, the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#recommended-webgl-framebuffer-resolution\" id=\"ref-for-recommended-webgl-framebuffer-resolution①\">recommended WebGL framebuffer resolution</a> MAY be used.</p>"
+          "html": "<p>If <var>session</var> is an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#inline-session\" id=\"ref-for-inline-session①⑧\">inline session</a>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#native-webgl-framebuffer-resolution\" id=\"ref-for-native-webgl-framebuffer-resolution①\">native WebGL framebuffer resolution</a> to the size of the <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-renderstate\" id=\"ref-for-dom-xrsession-renderstate⑤\">renderState</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrrenderstate-output-canvas\" id=\"ref-for-xrrenderstate-output-canvas①⓪\">output canvas</a> in physical display pixels, reevaluate these steps every time the size of the canvas changes or the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrrenderstate-output-canvas\" id=\"ref-for-xrrenderstate-output-canvas①①\">output canvas</a> is changed, and abort these steps.</p>"
         },
         {
-          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-mode\" id=\"ref-for-xrsession-mode⑥\">mode</a> value is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsessionmode-inline\" id=\"ref-for-dom-xrsessionmode-inline②①\">\"inline\"</a></code>, set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#native-webgl-framebuffer-resolution\" id=\"ref-for-native-webgl-framebuffer-resolution②\">native WebGL framebuffer resolution</a> to the size of the <var>session</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrsession-renderstate\" id=\"ref-for-dom-xrsession-renderstate⑥\">renderState</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrrenderstate-output-canvas\" id=\"ref-for-xrrenderstate-output-canvas⑨\">output canvas</a> in physical display pixels and reevaluate these steps every time the size of the canvas changes or the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrrenderstate-output-canvas\" id=\"ref-for-xrrenderstate-output-canvas①⓪\">output canvas</a> is changed.</p>"
+          "html": "<p>Set the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#native-webgl-framebuffer-resolution\" id=\"ref-for-native-webgl-framebuffer-resolution②\">native WebGL framebuffer resolution</a> to the resolution required to have a 1:1 ratio between the pixels of a framebuffer large enough to contain all of the session’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrview\" id=\"ref-for-xrview①⑧\">XRView</a></code>s and the physical screen pixels in the area of the display under the highest magnification. If no method exists to determine the native resolution as described, the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#recommended-webgl-framebuffer-resolution\" id=\"ref-for-recommended-webgl-framebuffer-resolution①\">recommended WebGL framebuffer resolution</a> MAY be used.</p>"
         }
       ]
     },
@@ -1974,7 +1974,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>device</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ensure-an-immersive-xr-device-is-selected\" id=\"ref-for-ensure-an-immersive-xr-device-is-selected④\">ensuring an immersive XR device is selected</a>.</p>"
+              "html": "<p>Let <var>device</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#ensure-an-immersive-xr-device-is-selected\" id=\"ref-for-ensure-an-immersive-xr-device-is-selected③\">ensuring an immersive XR device is selected</a>.</p>"
             },
             {
               "html": "Set <var>context</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-compatible\" id=\"ref-for-xr-compatible⑦\">XR compatible</a> boolean as follows:",
@@ -2120,7 +2120,7 @@
           "html": "<p>If the request was not made while the <var>global object</var> has <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation③\">transient activation</a> or when <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#launching-a-web-application\" id=\"ref-for-launching-a-web-application\">launching a web application</a>, return <code>false</code></p>"
         },
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#user-intent\" id=\"ref-for-user-intent①①\">user intent</a> to begin an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session③③\">immersive session</a> is not well understood, either via <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#explicit-consent\" id=\"ref-for-explicit-consent⑧\">explicit consent</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#implicit-consent\" id=\"ref-for-implicit-consent②\">implicit consent</a>, return <code>false</code></p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#user-intent\" id=\"ref-for-user-intent①①\">user intent</a> to begin an <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#immersive-session\" id=\"ref-for-immersive-session③⑥\">immersive session</a> is not well understood, either via <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#explicit-consent\" id=\"ref-for-explicit-consent⑧\">explicit consent</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#implicit-consent\" id=\"ref-for-implicit-consent②\">implicit consent</a>, return <code>false</code></p>"
         },
         {
           "html": "<p>Return <code>true</code></p>"
@@ -2134,7 +2134,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If the session request contained any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#required-features\" id=\"ref-for-required-features②\">required features</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#optional-features\" id=\"ref-for-optional-features①\">optional features</a> and the request was not made while the <var>global object</var> has <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation④\">transient activation</a> or when <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#launching-a-web-application\" id=\"ref-for-launching-a-web-application①\">launching a web application</a>, return <code>false</code>.</p>"
+          "html": "<p>Let <var>requiresUserIntent</var> be <code>true</code> if the session request contained any <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#required-features\" id=\"ref-for-required-features②\">required features</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#optional-features\" id=\"ref-for-optional-features①\">optional features</a> other than <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#feature-descriptor-inline-stereo\" id=\"ref-for-feature-descriptor-inline-stereo⑧\">inline-stereo</a>, and <code>false</code> otherwise.</p>"
+        },
+        {
+          "html": "<p>If <var>requiresUserIntent</var> is <code>true</code> and the request was not made while the <var>global object</var> has <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation④\">transient activation</a> or when <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#launching-a-web-application\" id=\"ref-for-launching-a-web-application①\">launching a web application</a>, return <code>false</code>.</p>"
         },
         {
           "html": "<p>If the <var>global object</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" id=\"ref-for-window⑥\">Window</a></code>, return <code>false</code>.</p>"
@@ -2147,7 +2150,7 @@
     {
       "name": "poses-allowed",
       "href": "https://www.w3.org/TR/webxr/#poses-may-be-reported",
-      "html": "To determine if <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"poses-may-be-reported\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">poses may be reported</dfn> to an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⑤⑥\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
+      "html": "To determine if <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"poses-may-be-reported\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">poses may be reported</dfn> to an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#xrsession\" id=\"ref-for-xrsession①⑤②\">XRSession</a></code> <var>session</var>, the user agent MUST run the following steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2261,7 +2264,7 @@
           "html": "<p>Let <var>optionalFeatures</var> be <var>descriptor</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrpermissiondescriptor-optionalfeatures\" id=\"ref-for-dom-xrpermissiondescriptor-optionalfeatures①\">optionalFeatures</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>device</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#obtain-the-current-device\" id=\"ref-for-obtain-the-current-device①\">obtaining the current device</a> for <var>mode</var>, <var>requiredFeatures</var>, and <var>optionalFeatures</var>.</p>"
+          "html": "<p>Let <var>device</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#obtain-the-current-device\" id=\"ref-for-obtain-the-current-device②\">obtaining the current device</a> for <var>mode</var>, <var>requiredFeatures</var>, and <var>optionalFeatures</var>.</p>"
         },
         {
           "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#resolve-the-requested-features\" id=\"ref-for-resolve-the-requested-features②\">resolving the requested features</a> given <var>requiredFeatures</var>,<var>optionalFeatures</var>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webxr/#dom-xrpermissiondescriptor-mode\" id=\"ref-for-dom-xrpermissiondescriptor-mode①\">mode</a></code>.</p>"
@@ -2292,7 +2295,13 @@
               "html": "<p>The user agent MAY at this point ask the user’s permission for the calling algorithm to use <var>feature</var>. The results of these prompts should be included when determining if there is a clear signal of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#user-intent\" id=\"ref-for-user-intent①⑤\">user intent</a> to enable <var>feature</var>.</p>"
             },
             {
-              "html": "<p>If a clear signal of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#user-intent\" id=\"ref-for-user-intent①⑥\">user intent</a> to enable <var>feature</var> has not been determined, set <var>status</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstatus-state\" id=\"ref-for-dom-permissionstatus-state⑦\">state</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied⑤\">\"denied\"</a></code> and abort these steps.</p>"
+              "html": "If a clear signal of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#user-intent\" id=\"ref-for-user-intent①⑥\">user intent</a> to enable <var>feature</var> has not been determined, run the following steps:",
+              "rationale": "set",
+              "steps": [
+                {
+                  "html": "<p>Set <var>status</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstatus-state\" id=\"ref-for-dom-permissionstatus-state⑦\">state</a></code> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-denied\" id=\"ref-for-dom-permissionstate-denied⑤\">\"denied\"</a></code> and abort these steps.</p>"
+                }
+              ]
             },
             {
               "html": "<p>If <var>feature</var> is not in <var>granted</var>, append <var>feature</var> to <var>granted</var>.</p>"
@@ -2332,16 +2341,16 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>consentRequired</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③⓪\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①⑤\">DOMString</a></code>.</p>"
+          "html": "<p>Let <var>consentRequired</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③②\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①⑤\">DOMString</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>consentOptional</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③①\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①⑥\">DOMString</a></code>.</p>"
+          "html": "<p>Let <var>consentOptional</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③③\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①⑥\">DOMString</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>granted</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③②\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①⑦\">DOMString</a></code>.</p>"
+          "html": "<p>Let <var>granted</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list③④\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①⑦\">DOMString</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>device</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#obtain-the-current-device\" id=\"ref-for-obtain-the-current-device②\">obtaining the current device</a> for <var>mode</var>, <var>requiredFeatures</var>, and <var>optionalFeatures</var>.</p>"
+          "html": "<p>Let <var>device</var> be the result of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#obtain-the-current-device\" id=\"ref-for-obtain-the-current-device③\">obtaining the current device</a> for <var>mode</var>, <var>requiredFeatures</var>, and <var>optionalFeatures</var>.</p>"
         },
         {
           "html": "<p>Let <var>previouslyEnabled</var> be <var>device</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xr-device-set-of-granted-features\" id=\"ref-for-xr-device-set-of-granted-features①\">set of granted features</a> for <var>mode</var>.</p>"
@@ -2356,7 +2365,7 @@
           ]
         },
         {
-          "html": "<p>Add every <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#feature-descriptor\" id=\"ref-for-feature-descriptor⑨\">feature descriptor</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#default-features\" id=\"ref-for-default-features①\">default features</a> table associated with <var>mode</var> to <var>granted</var> if it is not already present.</p>"
+          "html": "<p>Add every <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#feature-descriptor\" id=\"ref-for-feature-descriptor①⓪\">feature descriptor</a> in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#default-features\" id=\"ref-for-default-features①\">default features</a> table associated with <var>mode</var> to <var>granted</var> if it is not already present.</p>"
         },
         {
           "html": "For each <var>feature</var> in <var>requiredFeatures</var> perform the following steps:",
@@ -2366,7 +2375,7 @@
               "html": "<p>If the <var>feature</var> is <code>null</code>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue\">continue</a> to the next entry.</p>"
             },
             {
-              "html": "<p>If <var>feature</var> is not a valid <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#feature-descriptor\" id=\"ref-for-feature-descriptor①⓪\">feature descriptor</a>, return <code>null</code>.</p>"
+              "html": "<p>If <var>feature</var> is not a valid <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#feature-descriptor\" id=\"ref-for-feature-descriptor①①\">feature descriptor</a>, return <code>null</code>.</p>"
             },
             {
               "html": "<p>If <var>feature</var> is already in <var>granted</var>, continue to the next entry.</p>"
@@ -2375,7 +2384,7 @@
               "html": "<p>If the requesting document’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/origin.html#concept-origin\" id=\"ref-for-concept-origin⑦\">origin</a> is not allowed to use any <a href=\"https://www.w3.org/TR/webxr/#permissions-policy\">permissions policy</a> required by <var>feature</var> as indicated by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#feature-requirements\" id=\"ref-for-feature-requirements①\">feature requirements</a> table, return <code>null</code>.</p>"
             },
             {
-              "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device②⑨\">XR device</a> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#capable-of-supporting\" id=\"ref-for-capable-of-supporting①\">capable of supporting</a> the functionality described by <var>feature</var> or the user agent has otherwise determined to reject the feature, return <code>null</code>.</p>"
+              "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device③⓪\">XR device</a> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#capable-of-supporting\" id=\"ref-for-capable-of-supporting②\">capable of supporting</a> the functionality described by <var>feature</var> or the user agent has otherwise determined to reject the feature, return <code>null</code>.</p>"
             },
             {
               "html": "<p>If the functionality described by <var>feature</var> requires <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#explicit-consent\" id=\"ref-for-explicit-consent①⑥\">explicit consent</a> and <var>feature</var> is not in <var>previouslyEnabled</var>, append it to <var>consentRequired</var>.</p>"
@@ -2393,7 +2402,7 @@
               "html": "<p>If the <var>feature</var> is <code>null</code>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a> to the next entry.</p>"
             },
             {
-              "html": "<p>If <var>feature</var> is not a valid <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#feature-descriptor\" id=\"ref-for-feature-descriptor①①\">feature descriptor</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a> to the next entry.</p>"
+              "html": "<p>If <var>feature</var> is not a valid <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#feature-descriptor\" id=\"ref-for-feature-descriptor①②\">feature descriptor</a>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue②\">continue</a> to the next entry.</p>"
             },
             {
               "html": "<p>If <var>feature</var> is already in <var>granted</var>, continue to the next entry.</p>"
@@ -2402,7 +2411,7 @@
               "html": "<p>If the requesting document’s origin is not allowed to use any <a href=\"https://www.w3.org/TR/webxr/#permissions-policy\">permissions policy</a> required by <var>feature</var> as indicated by the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#feature-requirements\" id=\"ref-for-feature-requirements②\">feature requirements</a> table, continue to the next entry.</p>"
             },
             {
-              "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device③⓪\">XR device</a> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#capable-of-supporting\" id=\"ref-for-capable-of-supporting②\">capable of supporting</a> the functionality described by <var>feature</var> or the user agent has otherwise determined to reject the feature, continue to the next entry.</p>"
+              "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#xrsession-xr-device\" id=\"ref-for-xrsession-xr-device③①\">XR device</a> is not <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#capable-of-supporting\" id=\"ref-for-capable-of-supporting③\">capable of supporting</a> the functionality described by <var>feature</var> or the user agent has otherwise determined to reject the feature, continue to the next entry.</p>"
             },
             {
               "html": "<p>If the functionality described by <var>feature</var> requires <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webxr/#explicit-consent\" id=\"ref-for-explicit-consent①⑦\">explicit consent</a> and <var>feature</var> is not in <var>previouslyEnabled</var>, append it to <var>consentOptional</var>.</p>"
