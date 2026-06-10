@@ -1,7 +1,7 @@
 // Source: EditContext API (https://www.w3.org/TR/edit-context/)
 dictionary TextFormatInit {
-    unsigned long rangeStart;
-    unsigned long rangeEnd;
-    UnderlineStyle underlineStyle;
-    UnderlineThickness underlineThickness;
+    unsigned long rangeStart = 0;
+    unsigned long rangeEnd = 0;
+    UnderlineStyle underlineStyle = "none";
+    UnderlineThickness underlineThickness = "none";
 };

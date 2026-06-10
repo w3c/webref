@@ -1,8 +1,8 @@
 // Source: EditContext API (https://www.w3.org/TR/edit-context/)
 dictionary TextUpdateEventInit : EventInit {
-    unsigned long updateRangeStart;
-    unsigned long updateRangeEnd;
-    DOMString text;
-    unsigned long selectionStart;
-    unsigned long selectionEnd;
+    unsigned long updateRangeStart = 0;
+    unsigned long updateRangeEnd = 0;
+    DOMString text = "";
+    unsigned long selectionStart = 0;
+    unsigned long selectionEnd = 0;
 };

@@ -18,7 +18,7 @@
     },
     "idlNames": {
       "EditContextInit": {
-        "fragment": "dictionary EditContextInit {\n    DOMString text;\n    unsigned long selectionStart;\n    unsigned long selectionEnd;\n};",
+        "fragment": "dictionary EditContextInit {\n    DOMString text = \"\";\n    unsigned long selectionStart = 0;\n    unsigned long selectionEnd = 0;\n};",
         "type": "dictionary",
         "name": "EditContextInit",
         "inheritance": null,
@@ -35,7 +35,10 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": ""
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-editcontextinit-text"
           },
@@ -51,7 +54,10 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-editcontextinit-selectionstart"
           },
@@ -67,7 +73,10 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-editcontextinit-selectionend"
           }
@@ -555,7 +564,7 @@
         "href": "https://w3c.github.io/edit-context/#dom-editcontext"
       },
       "TextUpdateEventInit": {
-        "fragment": "dictionary TextUpdateEventInit : EventInit {\n    unsigned long updateRangeStart;\n    unsigned long updateRangeEnd;\n    DOMString text;\n    unsigned long selectionStart;\n    unsigned long selectionEnd;\n};",
+        "fragment": "dictionary TextUpdateEventInit : EventInit {\n    unsigned long updateRangeStart = 0;\n    unsigned long updateRangeEnd = 0;\n    DOMString text = \"\";\n    unsigned long selectionStart = 0;\n    unsigned long selectionEnd = 0;\n};",
         "type": "dictionary",
         "name": "TextUpdateEventInit",
         "inheritance": "EventInit",
@@ -572,7 +581,10 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-updaterangestart"
           },
@@ -588,7 +600,10 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-updaterangeend"
           },
@@ -604,7 +619,10 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": ""
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-text"
           },
@@ -620,7 +638,10 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-selectionstart"
           },
@@ -636,7 +657,10 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-selectionend"
           }
@@ -846,7 +870,7 @@
         "href": "https://w3c.github.io/edit-context/#dom-underlinethickness"
       },
       "TextFormatInit": {
-        "fragment": "dictionary TextFormatInit {\n    unsigned long rangeStart;\n    unsigned long rangeEnd;\n    UnderlineStyle underlineStyle;\n    UnderlineThickness underlineThickness;\n};",
+        "fragment": "dictionary TextFormatInit {\n    unsigned long rangeStart = 0;\n    unsigned long rangeEnd = 0;\n    UnderlineStyle underlineStyle = \"none\";\n    UnderlineThickness underlineThickness = \"none\";\n};",
         "type": "dictionary",
         "name": "TextFormatInit",
         "inheritance": null,
@@ -863,7 +887,10 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-textformatinit-rangestart"
           },
@@ -879,7 +906,10 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-textformatinit-rangeend"
           },
@@ -895,7 +925,10 @@
               "union": false,
               "idlType": "UnderlineStyle"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": "none"
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-textformatinit-underlinestyle"
           },
@@ -911,7 +944,10 @@
               "union": false,
               "idlType": "UnderlineThickness"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": "none"
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-textformatinit-underlinethickness"
           }
@@ -1031,7 +1067,7 @@
         "href": "https://w3c.github.io/edit-context/#dom-textformat"
       },
       "TextFormatUpdateEventInit": {
-        "fragment": "dictionary TextFormatUpdateEventInit : EventInit {\n    sequence<TextFormat> textFormats;\n};",
+        "fragment": "dictionary TextFormatUpdateEventInit : EventInit {\n    sequence<TextFormat> textFormats = [];\n};",
         "type": "dictionary",
         "name": "TextFormatUpdateEventInit",
         "inheritance": "EventInit",
@@ -1057,7 +1093,10 @@
                 }
               ]
             },
-            "default": null,
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-textformatupdateeventinit-textformats"
           }
@@ -1154,7 +1193,7 @@
         "href": "https://w3c.github.io/edit-context/#dom-textformatupdateevent"
       },
       "CharacterBoundsUpdateEventInit": {
-        "fragment": "dictionary CharacterBoundsUpdateEventInit : EventInit {\n    unsigned long rangeStart;\n    unsigned long rangeEnd;\n};",
+        "fragment": "dictionary CharacterBoundsUpdateEventInit : EventInit {\n    unsigned long rangeStart = 0;\n    unsigned long rangeEnd = 0;\n};",
         "type": "dictionary",
         "name": "CharacterBoundsUpdateEventInit",
         "inheritance": "EventInit",
@@ -1171,7 +1210,10 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-characterboundsupdateeventinit-rangestart"
           },
@@ -1187,7 +1229,10 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-characterboundsupdateeventinit-rangeend"
           }

@@ -6,7 +6,7 @@
       "title": "EditContext API",
       "url": "https://www.w3.org/TR/edit-context/"
     },
-    "fragment": "dictionary TextFormatInit {\n    unsigned long rangeStart;\n    unsigned long rangeEnd;\n    UnderlineStyle underlineStyle;\n    UnderlineThickness underlineThickness;\n};",
+    "fragment": "dictionary TextFormatInit {\n    unsigned long rangeStart = 0;\n    unsigned long rangeEnd = 0;\n    UnderlineStyle underlineStyle = \"none\";\n    UnderlineThickness underlineThickness = \"none\";\n};",
     "href": "https://w3c.github.io/edit-context/#dom-textformatinit"
   },
   "extended": [],
