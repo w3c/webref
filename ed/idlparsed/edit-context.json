@@ -555,7 +555,7 @@
         "href": "https://w3c.github.io/edit-context/#dom-editcontext"
       },
       "TextUpdateEventInit": {
-        "fragment": "dictionary TextUpdateEventInit : EventInit {\n    unsigned long updateRangeStart;\n    unsigned long updateRangeEnd;\n    DOMString text;\n    unsigned long selectionStart;\n    unsigned long selectionEnd;\n    unsigned long compositionStart;\n    unsigned long compositionEnd;\n};",
+        "fragment": "dictionary TextUpdateEventInit : EventInit {\n    unsigned long updateRangeStart;\n    unsigned long updateRangeEnd;\n    DOMString text;\n    unsigned long selectionStart;\n    unsigned long selectionEnd;\n};",
         "type": "dictionary",
         "name": "TextUpdateEventInit",
         "inheritance": "EventInit",
@@ -639,38 +639,6 @@
             "default": null,
             "required": false,
             "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-selectionend"
-          },
-          {
-            "type": "field",
-            "name": "compositionStart",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-compositionstart"
-          },
-          {
-            "type": "field",
-            "name": "compositionEnd",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false,
-            "href": "https://w3c.github.io/edit-context/#dom-textupdateeventinit-compositionend"
           }
         ],
         "extAttrs": [],

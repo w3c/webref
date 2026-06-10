@@ -15,7 +15,7 @@
     },
     "idlNames": {
       "ModelContext": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext : EventTarget {\n  undefined registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});\n\n  attribute EventHandler ontoolchange;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContext : EventTarget {\n  Promise<undefined> registerTool(ModelContextTool tool, optional ModelContextRegisterToolOptions options = {});\n\n  attribute EventHandler ontoolchange;\n};",
         "type": "interface",
         "name": "ModelContext",
         "inheritance": "EventTarget",
@@ -26,10 +26,19 @@
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "Promise",
               "nullable": false,
               "union": false,
-              "idlType": "undefined"
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
             },
             "arguments": [
               {

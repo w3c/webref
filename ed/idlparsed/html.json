@@ -34354,7 +34354,7 @@
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmloptions"
       },
       "SetHTMLUnsafeOptions": {
-        "fragment": "dictionary SetHTMLUnsafeOptions {\n  (Sanitizer or SanitizerConfig or SanitizerPresets) sanitizer = {};\n};",
+        "fragment": "dictionary SetHTMLUnsafeOptions {\n  (Sanitizer or SanitizerConfig or SanitizerPresets) sanitizer = {};\n  boolean runScripts = false;\n};",
         "type": "dictionary",
         "name": "SetHTMLUnsafeOptions",
         "inheritance": null,
@@ -34401,11 +34401,84 @@
             },
             "required": false,
             "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sethtmlunsafeoptions-sanitizer"
+          },
+          {
+            "type": "field",
+            "name": "runScripts",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-sethtmlunsafeoptions-runscripts"
           }
         ],
         "extAttrs": [],
         "partial": false,
         "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#sethtmlunsafeoptions"
+      },
+      "ParseHTMLUnsafeOptions": {
+        "fragment": "dictionary ParseHTMLUnsafeOptions {\n  (Sanitizer or SanitizerConfig or SanitizerPresets) sanitizer = {};\n};",
+        "type": "dictionary",
+        "name": "ParseHTMLUnsafeOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "sanitizer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Sanitizer"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerConfig"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SanitizerPresets"
+                }
+              ]
+            },
+            "default": {
+              "type": "dictionary"
+            },
+            "required": false,
+            "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#dom-parsehtmlunsafeoptions-sanitizer"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false,
+        "href": "https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#parsehtmlunsafeoptions"
       },
       "GetHTMLOptions": {
         "fragment": "dictionary GetHTMLOptions {\n  boolean serializableShadowRoots = false;\n  sequence<ShadowRoot> shadowRoots = [];\n};",
@@ -41763,7 +41836,7 @@
     "idlExtendedNames": {
       "Document": [
         {
-          "fragment": "[LegacyOverrideBuiltIns]\npartial interface Document {\n  static Document parseHTMLUnsafe((TrustedHTML or DOMString) html, optional SetHTMLUnsafeOptions options = {});\n  static Document parseHTML(DOMString html, optional SetHTMLOptions options = {});\n\n  // resource metadata management\n  [PutForwards=href, LegacyUnforgeable] readonly attribute Location? location;\n  attribute USVString domain;\n  readonly attribute USVString referrer;\n  attribute USVString cookie;\n  readonly attribute DOMString lastModified;\n  readonly attribute DocumentReadyState readyState;\n\n  // DOM tree accessors\n  getter object (DOMString name);\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString dir;\n  [CEReactions] attribute HTMLElement? body;\n  readonly attribute HTMLHeadElement? head;\n  [SameObject] readonly attribute HTMLCollection images;\n  [SameObject] readonly attribute HTMLCollection embeds;\n  [SameObject] readonly attribute HTMLCollection plugins;\n  [SameObject] readonly attribute HTMLCollection links;\n  [SameObject] readonly attribute HTMLCollection forms;\n  [SameObject] readonly attribute HTMLCollection scripts;\n  NodeList getElementsByName(DOMString elementName);\n  readonly attribute HTMLOrSVGScriptElement? currentScript; // classic scripts in a document tree only\n\n  // dynamic markup insertion\n  [CEReactions] Document open(optional DOMString unused1, optional DOMString unused2); // both arguments are ignored\n  WindowProxy? open(USVString url, DOMString name, DOMString features);\n  [CEReactions] undefined close();\n  [CEReactions] undefined write((TrustedHTML or DOMString)... text);\n  [CEReactions] undefined writeln((TrustedHTML or DOMString)... text);\n\n  // user interaction\n  readonly attribute WindowProxy? defaultView;\n  boolean hasFocus();\n  [CEReactions] attribute DOMString designMode;\n  [CEReactions] boolean execCommand(DOMString commandId, optional boolean showUI = false, optional DOMString value = \"\");\n  boolean queryCommandEnabled(DOMString commandId);\n  boolean queryCommandIndeterm(DOMString commandId);\n  boolean queryCommandState(DOMString commandId);\n  boolean queryCommandSupported(DOMString commandId);\n  DOMString queryCommandValue(DOMString commandId);\n  readonly attribute boolean hidden;\n  readonly attribute DocumentVisibilityState visibilityState;\n\n  // special event handler IDL attributes that only apply to Document objects\n  [LegacyLenientThis] attribute EventHandler onreadystatechange;\n  attribute EventHandler onvisibilitychange;\n\n  // also has obsolete members\n};",
+          "fragment": "[LegacyOverrideBuiltIns]\npartial interface Document {\n  static Document parseHTMLUnsafe((TrustedHTML or DOMString) html, optional ParseHTMLUnsafeOptions options = {});\n  static Document parseHTML(DOMString html, optional SetHTMLOptions options = {});\n\n  // resource metadata management\n  [PutForwards=href, LegacyUnforgeable] readonly attribute Location? location;\n  attribute USVString domain;\n  readonly attribute USVString referrer;\n  attribute USVString cookie;\n  readonly attribute DOMString lastModified;\n  readonly attribute DocumentReadyState readyState;\n\n  // DOM tree accessors\n  getter object (DOMString name);\n  [CEReactions] attribute DOMString title;\n  [CEReactions] attribute DOMString dir;\n  [CEReactions] attribute HTMLElement? body;\n  readonly attribute HTMLHeadElement? head;\n  [SameObject] readonly attribute HTMLCollection images;\n  [SameObject] readonly attribute HTMLCollection embeds;\n  [SameObject] readonly attribute HTMLCollection plugins;\n  [SameObject] readonly attribute HTMLCollection links;\n  [SameObject] readonly attribute HTMLCollection forms;\n  [SameObject] readonly attribute HTMLCollection scripts;\n  NodeList getElementsByName(DOMString elementName);\n  readonly attribute HTMLOrSVGScriptElement? currentScript; // classic scripts in a document tree only\n\n  // dynamic markup insertion\n  [CEReactions] Document open(optional DOMString unused1, optional DOMString unused2); // both arguments are ignored\n  WindowProxy? open(USVString url, DOMString name, DOMString features);\n  [CEReactions] undefined close();\n  [CEReactions] undefined write((TrustedHTML or DOMString)... text);\n  [CEReactions] undefined writeln((TrustedHTML or DOMString)... text);\n\n  // user interaction\n  readonly attribute WindowProxy? defaultView;\n  boolean hasFocus();\n  [CEReactions] attribute DOMString designMode;\n  [CEReactions] boolean execCommand(DOMString commandId, optional boolean showUI = false, optional DOMString value = \"\");\n  boolean queryCommandEnabled(DOMString commandId);\n  boolean queryCommandIndeterm(DOMString commandId);\n  boolean queryCommandState(DOMString commandId);\n  boolean queryCommandSupported(DOMString commandId);\n  DOMString queryCommandValue(DOMString commandId);\n  readonly attribute boolean hidden;\n  readonly attribute DocumentVisibilityState visibilityState;\n\n  // special event handler IDL attributes that only apply to Document objects\n  [LegacyLenientThis] attribute EventHandler onreadystatechange;\n  attribute EventHandler onvisibilitychange;\n\n  // also has obsolete members\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -41823,7 +41896,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "SetHTMLUnsafeOptions"
+                    "idlType": "ParseHTMLUnsafeOptions"
                   },
                   "default": {
                     "type": "dictionary"
@@ -48201,7 +48274,7 @@
       "Document": [
         "Document",
         "TrustedHTML",
-        "SetHTMLUnsafeOptions",
+        "ParseHTMLUnsafeOptions",
         "SetHTMLOptions",
         "Location",
         "DocumentReadyState",
@@ -49020,6 +49093,11 @@
         "SanitizerPresets"
       ],
       "SetHTMLUnsafeOptions": [
+        "Sanitizer",
+        "SanitizerConfig",
+        "SanitizerPresets"
+      ],
+      "ParseHTMLUnsafeOptions": [
         "Sanitizer",
         "SanitizerConfig",
         "SanitizerPresets"

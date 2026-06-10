@@ -73,7 +73,7 @@ partial interface Document {
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
 [LegacyOverrideBuiltIns]
 partial interface Document {
-  static Document parseHTMLUnsafe((TrustedHTML or DOMString) html, optional SetHTMLUnsafeOptions options = {});
+  static Document parseHTMLUnsafe((TrustedHTML or DOMString) html, optional ParseHTMLUnsafeOptions options = {});
   static Document parseHTML(DOMString html, optional SetHTMLOptions options = {});
 
   // resource metadata management

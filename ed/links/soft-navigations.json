@@ -7,9 +7,11 @@
     "rawlinks": {
       "http://www.w3.org/community/": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-display-4/": {},
       "https://github.com/WICG/container-timing": {},
       "https://github.com/kyraseevers/Partitioning-visited-links-history": {},
       "https://github.com/tc39/proposal-async-context": {},
+      "https://github.com/w3c/paint-timing/issues/126": {},
       "https://github.com/w3c/performance-timeline/issues/182": {
         "anchors": [
           "issuecomment-4460611895"
@@ -38,11 +40,21 @@
         "anchors": [
           "concept-document",
           "concept-event",
+          "document",
+          "concept-element",
+          "concept-node",
+          "concept-node-document",
+          "text",
+          "concept-tree-child",
           "concept-document-url",
-          "boundary-point-node",
-          "concept-event-dispatch",
           "concept-node-insert",
-          "concept-node-document"
+          "concept-event-dispatch",
+          "element"
+        ]
+      },
+      "https://drafts.csswg.org/css-display-4/": {
+        "anchors": [
+          "containing-block"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsing-the-web.html": {
@@ -71,8 +83,14 @@
           "struct-item",
           "map-exists",
           "map-set",
-          "string",
-          "ordered-map"
+          "ordered-set",
+          "ordered-map",
+          "list-iterate",
+          "set-append",
+          "map-iterate",
+          "map-with-default",
+          "map-remove",
+          "string"
         ]
       },
       "https://pr-preview.s3.amazonaws.com/mmocny/event-timing/pull/165.html": {
@@ -83,6 +101,14 @@
           "window-interactionid-increment",
           "initialize-and-record-event-timing-processing-start",
           "record-event-timing-processing-end"
+        ]
+      },
+      "https://pr-preview.s3.amazonaws.com/shaseley/largest-contentful-paint/pull/171.html": {
+        "anchors": [
+          "largest-contentful-paint-candidate",
+          "create-a-largestcontentfulpaint-entry",
+          "compute-a-new-largest-contentful-paint-candidate",
+          "report-largest-contentful-paint"
         ]
       },
       "https://w3c.github.io/event-timing/": {
@@ -102,11 +128,7 @@
       "https://w3c.github.io/largest-contentful-paint/": {
         "anchors": [
           "largestcontentfulpaint",
-          "dom-largestcontentfulpaint-rendertime",
-          "report-largest-contentful-paint",
-          "list-of-painted-images",
-          "list-of-painted-text",
-          "dom-largestcontentfulpaint-size"
+          "dom-largestcontentfulpaint-rendertime"
         ]
       },
       "https://w3c.github.io/navigation-timing/": {
@@ -119,8 +141,12 @@
           "paint-timing-mixin",
           "paint-timing-info",
           "default-paint-timestamp",
+          "pending-image-record",
+          "pending-image-record-element",
+          "exposed-for-paint-timing",
+          "timing-eligible",
           "dom-painttimingmixin-presentationtime",
-          "previously-reported-paints"
+          "mark-paint-timing"
         ]
       },
       "https://w3c.github.io/performance-timeline/": {

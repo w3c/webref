@@ -4098,20 +4098,6 @@
     "interface": "SpeechSynthesisEvent"
   },
   {
-    "href": "https://w3c.github.io/ServiceWorker/#service-worker-container-message-event",
-    "src": {
-      "format": "summary table",
-      "href": "https://w3c.github.io/ServiceWorker/#service-worker-container-message-event"
-    },
-    "type": "message",
-    "targets": [
-      {
-        "target": "ServiceWorkerContainer"
-      }
-    ],
-    "interface": "Event"
-  },
-  {
     "href": "https://w3c.github.io/ServiceWorker/#eventdef-serviceworkerglobalscope-message",
     "src": {
       "format": "summary table",
@@ -4180,6 +4166,20 @@
     ]
   },
   {
+    "href": "https://w3c.github.io/ServiceWorker/#service-worker-container-message-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-container-message-event"
+    },
+    "type": "message",
+    "targets": [
+      {
+        "target": "ServiceWorkerContainer"
+      }
+    ],
+    "interface": "MessageEvent"
+  },
+  {
     "href": "https://w3c.github.io/webrtc-pc/#event-datachannel-message",
     "src": {
       "format": "summary table",
@@ -4237,20 +4237,6 @@
     "interface": "MessageEvent"
   },
   {
-    "href": "https://w3c.github.io/ServiceWorker/#service-worker-container-messageerror-event",
-    "src": {
-      "format": "summary table",
-      "href": "https://w3c.github.io/ServiceWorker/#service-worker-container-messageerror-event"
-    },
-    "type": "messageerror",
-    "targets": [
-      {
-        "target": "ServiceWorkerContainer"
-      }
-    ],
-    "interface": "Event"
-  },
-  {
     "href": "https://w3c.github.io/ServiceWorker/#eventdef-serviceworkerglobalscope-messageerror",
     "src": {
       "format": "summary table",
@@ -4287,6 +4273,20 @@
       {
         "target": "Worker"
       },
+      {
+        "target": "ServiceWorkerContainer"
+      }
+    ],
+    "interface": "MessageEvent"
+  },
+  {
+    "href": "https://w3c.github.io/ServiceWorker/#service-worker-container-messageerror-event",
+    "src": {
+      "format": "summary table",
+      "href": "https://w3c.github.io/ServiceWorker/#service-worker-container-messageerror-event"
+    },
+    "type": "messageerror",
+    "targets": [
       {
         "target": "ServiceWorkerContainer"
       }
