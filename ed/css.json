@@ -14381,7 +14381,7 @@
     },
     {
       "name": "spatial-navigation-action",
-      "href": "https://drafts.csswg.org/css-nav-1/#propdef-spatial-navigation-action",
+      "href": "https://drafts.csswg.org/css-spatial-nav-1/#propdef-spatial-navigation-action",
       "initial": "auto",
       "appliesTo": "scroll containers",
       "inherited": "no",
@@ -14398,7 +14398,7 @@
     },
     {
       "name": "spatial-navigation-contain",
-      "href": "https://drafts.csswg.org/css-nav-1/#propdef-spatial-navigation-contain",
+      "href": "https://drafts.csswg.org/css-spatial-nav-1/#propdef-spatial-navigation-contain",
       "initial": "auto",
       "appliesTo": "all elements",
       "inherited": "no",
@@ -14415,7 +14415,7 @@
     },
     {
       "name": "spatial-navigation-function",
-      "href": "https://drafts.csswg.org/css-nav-1/#propdef-spatial-navigation-function",
+      "href": "https://drafts.csswg.org/css-spatial-nav-1/#propdef-spatial-navigation-function",
       "initial": "normal",
       "appliesTo": "spatial navigation containers",
       "inherited": "no",
@@ -15350,6 +15350,23 @@
         "textEmphasisStyle"
       ],
       "syntax": "none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>",
+      "extended": []
+    },
+    {
+      "name": "text-fit",
+      "href": "https://drafts.csswg.org/css-text-5/#propdef-text-fit",
+      "initial": "none",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified keywords or computed <percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "text-fit",
+        "textFit"
+      ],
+      "syntax": "[ none | grow | shrink ] [consistent | per-line | per-line-all]? <percentage>?",
       "extended": []
     },
     {

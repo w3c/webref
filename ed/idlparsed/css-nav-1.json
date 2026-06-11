@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "CSS Spatial Navigation Module Level 1",
-    "url": "https://drafts.csswg.org/css-nav-1/"
+    "url": "https://drafts.csswg.org/css-spatial-nav-1/"
   },
   "idlparsed": {
     "jsNames": {
@@ -21,26 +21,26 @@
           {
             "type": "enum-value",
             "value": "up",
-            "href": "https://drafts.csswg.org/css-nav-1/#dom-spatialnavigationdirection-up"
+            "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-spatialnavigationdirection-up"
           },
           {
             "type": "enum-value",
             "value": "down",
-            "href": "https://drafts.csswg.org/css-nav-1/#dom-spatialnavigationdirection-down"
+            "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-spatialnavigationdirection-down"
           },
           {
             "type": "enum-value",
             "value": "left",
-            "href": "https://drafts.csswg.org/css-nav-1/#dom-spatialnavigationdirection-left"
+            "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-spatialnavigationdirection-left"
           },
           {
             "type": "enum-value",
             "value": "right",
-            "href": "https://drafts.csswg.org/css-nav-1/#dom-spatialnavigationdirection-right"
+            "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-spatialnavigationdirection-right"
           }
         ],
         "extAttrs": [],
-        "href": "https://drafts.csswg.org/css-nav-1/#enumdef-spatialnavigationdirection"
+        "href": "https://drafts.csswg.org/css-spatial-nav-1/#enumdef-spatialnavigationdirection"
       },
       "FocusableAreaSearchMode": {
         "fragment": "enum FocusableAreaSearchMode {\n    \"visible\",\n    \"all\"\n};",
@@ -50,16 +50,16 @@
           {
             "type": "enum-value",
             "value": "visible",
-            "href": "https://drafts.csswg.org/css-nav-1/#dom-focusableareasearchmode-visible"
+            "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-focusableareasearchmode-visible"
           },
           {
             "type": "enum-value",
             "value": "all",
-            "href": "https://drafts.csswg.org/css-nav-1/#dom-focusableareasearchmode-all"
+            "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-focusableareasearchmode-all"
           }
         ],
         "extAttrs": [],
-        "href": "https://drafts.csswg.org/css-nav-1/#enumdef-focusableareasearchmode"
+        "href": "https://drafts.csswg.org/css-spatial-nav-1/#enumdef-focusableareasearchmode"
       },
       "FocusableAreasOption": {
         "fragment": "dictionary FocusableAreasOption {\n    FocusableAreaSearchMode mode;\n};",
@@ -81,12 +81,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://drafts.csswg.org/css-nav-1/#dom-focusableareasoption-mode"
+            "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-focusableareasoption-mode"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://drafts.csswg.org/css-nav-1/#dictdef-focusableareasoption"
+        "href": "https://drafts.csswg.org/css-spatial-nav-1/#dictdef-focusableareasoption"
       },
       "SpatialNavigationSearchOptions": {
         "fragment": "dictionary SpatialNavigationSearchOptions {\n    sequence<Node>? candidates;\n    Node? container;\n};",
@@ -117,7 +117,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://drafts.csswg.org/css-nav-1/#dom-spatialnavigationsearchoptions-candidates"
+            "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-spatialnavigationsearchoptions-candidates"
           },
           {
             "type": "field",
@@ -133,12 +133,12 @@
             },
             "default": null,
             "required": false,
-            "href": "https://drafts.csswg.org/css-nav-1/#dom-spatialnavigationsearchoptions-container"
+            "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-spatialnavigationsearchoptions-container"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://drafts.csswg.org/css-nav-1/#dictdef-spatialnavigationsearchoptions"
+        "href": "https://drafts.csswg.org/css-spatial-nav-1/#dictdef-spatialnavigationsearchoptions"
       },
       "NavigationEvent": {
         "fragment": "[Exposed=Window]\ninterface NavigationEvent : UIEvent {\n    constructor(DOMString type,\n                optional NavigationEventInit eventInitDict = {});\n    readonly attribute SpatialNavigationDirection dir;\n    readonly attribute EventTarget? relatedTarget;\n};",
@@ -185,7 +185,7 @@
               }
             ],
             "extAttrs": [],
-            "href": "https://drafts.csswg.org/css-nav-1/#dom-navigationevent-navigationevent"
+            "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-navigationevent-navigationevent"
           },
           {
             "type": "attribute",
@@ -201,7 +201,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://drafts.csswg.org/css-nav-1/#dom-navigationevent-dir"
+            "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-navigationevent-dir"
           },
           {
             "type": "attribute",
@@ -217,7 +217,7 @@
             "extAttrs": [],
             "special": "",
             "readonly": true,
-            "href": "https://drafts.csswg.org/css-nav-1/#dom-navigationevent-relatedtarget"
+            "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-navigationevent-relatedtarget"
           }
         ],
         "extAttrs": [
@@ -232,7 +232,7 @@
           }
         ],
         "partial": false,
-        "href": "https://drafts.csswg.org/css-nav-1/#navigationevent"
+        "href": "https://drafts.csswg.org/css-spatial-nav-1/#navigationevent"
       },
       "NavigationEventInit": {
         "fragment": "dictionary NavigationEventInit : UIEventInit {\n    SpatialNavigationDirection dir;\n    EventTarget? relatedTarget = null;\n};",
@@ -254,7 +254,7 @@
             },
             "default": null,
             "required": false,
-            "href": "https://drafts.csswg.org/css-nav-1/#dom-navigationeventinit-dir"
+            "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-navigationeventinit-dir"
           },
           {
             "type": "field",
@@ -272,12 +272,12 @@
               "type": "null"
             },
             "required": false,
-            "href": "https://drafts.csswg.org/css-nav-1/#dom-navigationeventinit-relatedtarget"
+            "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-navigationeventinit-relatedtarget"
           }
         ],
         "extAttrs": [],
         "partial": false,
-        "href": "https://drafts.csswg.org/css-nav-1/#dictdef-navigationeventinit"
+        "href": "https://drafts.csswg.org/css-spatial-nav-1/#dictdef-navigationeventinit"
       }
     },
     "idlExtendedNames": {
@@ -319,7 +319,7 @@
               ],
               "extAttrs": [],
               "special": "",
-              "href": "https://drafts.csswg.org/css-nav-1/#dom-window-navigate"
+              "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-window-navigate"
             }
           ],
           "extAttrs": [],
@@ -347,7 +347,7 @@
               "arguments": [],
               "extAttrs": [],
               "special": "",
-              "href": "https://drafts.csswg.org/css-nav-1/#dom-element-getspatialnavigationcontainer"
+              "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-element-getspatialnavigationcontainer"
             },
             {
               "type": "operation",
@@ -391,7 +391,7 @@
               ],
               "extAttrs": [],
               "special": "",
-              "href": "https://drafts.csswg.org/css-nav-1/#dom-element-focusableareas"
+              "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-element-focusableareas"
             },
             {
               "type": "operation",
@@ -442,7 +442,7 @@
               ],
               "extAttrs": [],
               "special": "",
-              "href": "https://drafts.csswg.org/css-nav-1/#dom-element-spatialnavigationsearch"
+              "href": "https://drafts.csswg.org/css-spatial-nav-1/#dom-element-spatialnavigationsearch"
             }
           ],
           "extAttrs": [],
