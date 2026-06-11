@@ -17535,7 +17535,7 @@
     {
       "name": ":nth()",
       "href": "https://drafts.csswg.org/css-gcpm-3/#selectordef-nth",
-      "syntax": ":nth( An+B [of <custom-ident>]? )",
+      "syntax": ":nth( <a-n-plus-b> [of <custom-ident>]? )",
       "extended": []
     },
     {
@@ -17890,6 +17890,12 @@
       "extended": []
     },
     {
+      "name": "a-n-plus-b",
+      "href": "https://drafts.csswg.org/css-syntax-3/#anb-production",
+      "syntax": "odd | even | <integer> | <n-dimension> | '+'? n | -n | <ndashdigit-dimension> | '+'? <ndashdigit-ident> | <dashndashdigit-ident> | <n-dimension> <signed-integer> | '+'? n <signed-integer> | -n <signed-integer> | <ndash-dimension> <signless-integer> | '+'? n- <signless-integer> | -n- <signless-integer> | <n-dimension> ['+' | '-'] <signless-integer> | '+'? n ['+' | '-'] <signless-integer> | -n ['+' | '-'] <signless-integer>",
+      "extended": []
+    },
+    {
       "name": "absolute-size",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-absolute-size",
       "syntax": "[ xx-small | x-small | small | medium | large | x-large | xx-large | xxx-large ]",
@@ -17917,12 +17923,6 @@
       "name": "alpha-value",
       "href": "https://drafts.csswg.org/css-color-4/#typedef-color-alpha-value",
       "syntax": "<number> | <percentage>",
-      "extended": []
-    },
-    {
-      "name": "an+b",
-      "href": "https://drafts.csswg.org/css-syntax-3/#anb-production",
-      "syntax": "odd | even | <integer> | <n-dimension> | '+'? n | -n | <ndashdigit-dimension> | '+'? <ndashdigit-ident> | <dashndashdigit-ident> | <n-dimension> <signed-integer> | '+'? n <signed-integer> | -n <signed-integer> | <ndash-dimension> <signless-integer> | '+'? n- <signless-integer> | -n- <signless-integer> | <n-dimension> ['+' | '-'] <signless-integer> | '+'? n ['+' | '-'] <signless-integer> | -n ['+' | '-'] <signless-integer>",
       "extended": []
     },
     {
