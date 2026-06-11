@@ -1,13 +1,13 @@
 {
-  "name": "SFrameEncrypterStream",
+  "name": "SFrameEncryptorStream",
   "type": "interface",
   "defined": {
     "spec": {
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameEncrypterStream {\n    constructor(SFrameTransformOptions options);\n};",
-    "href": "https://w3c.github.io/webrtc-encoded-transform/#sframeencrypterstream"
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameEncryptorStream {\n    constructor(SFrameTransformOptions options);\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#sframeencryptorstream"
   },
   "extended": [
     {
@@ -15,14 +15,14 @@
         "title": "WebRTC Encoded Transform",
         "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
       },
-      "fragment": "SFrameEncrypterStream includes GenericTransformStream;"
+      "fragment": "SFrameEncryptorStream includes GenericTransformStream;"
     },
     {
       "spec": {
         "title": "WebRTC Encoded Transform",
         "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
       },
-      "fragment": "SFrameEncrypterStream includes SFrameEncrypterManager;"
+      "fragment": "SFrameEncryptorStream includes SFrameEncryptorManager;"
     }
   ],
   "inheritance": null,
@@ -43,15 +43,15 @@
       "includes": []
     },
     {
-      "name": "SFrameEncrypterManager",
+      "name": "SFrameEncryptorManager",
       "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "WebRTC Encoded Transform",
           "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
         },
-        "fragment": "interface mixin SFrameEncrypterManager {\n    Promise<undefined> setEncryptionKey(CryptoKey key, CryptoKeyID keyId);\n};",
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframeencryptermanager"
+        "fragment": "interface mixin SFrameEncryptorManager {\n    Promise<undefined> setEncryptionKey(CryptoKey key, CryptoKeyID keyId);\n};",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframeencryptormanager"
       },
       "extended": [],
       "inheritance": null,

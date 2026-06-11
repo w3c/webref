@@ -1,13 +1,13 @@
 {
-  "name": "RTCRtpSFrameDecrypter",
+  "name": "RTCRtpSFrameDecryptor",
   "type": "interface",
   "defined": {
     "spec": {
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "[Exposed=Window]\ninterface RTCRtpSFrameDecrypter : EventTarget {\n    constructor(SFrameTransformOptions options);\n};",
-    "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpsframedecrypter"
+    "fragment": "[Exposed=Window]\ninterface RTCRtpSFrameDecryptor : EventTarget {\n    constructor(SFrameTransformOptions options);\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpsframedecryptor"
   },
   "extended": [
     {
@@ -15,7 +15,7 @@
         "title": "WebRTC Encoded Transform",
         "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
       },
-      "fragment": "RTCRtpSFrameDecrypter includes SFrameDecrypterManager;"
+      "fragment": "RTCRtpSFrameDecryptor includes SFrameDecryptorManager;"
     }
   ],
   "inheritance": {
@@ -43,15 +43,15 @@
   },
   "includes": [
     {
-      "name": "SFrameDecrypterManager",
+      "name": "SFrameDecryptorManager",
       "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "WebRTC Encoded Transform",
           "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
         },
-        "fragment": "interface mixin SFrameDecrypterManager {\n    Promise<undefined> addDecryptionKey(CryptoKey key, CryptoKeyID keyId);\n    Promise<undefined> removeDecryptionKey(CryptoKeyID keyId);\n    attribute EventHandler onerror;\n};",
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframedecryptermanager"
+        "fragment": "interface mixin SFrameDecryptorManager {\n    Promise<undefined> addDecryptionKey(CryptoKey key, CryptoKeyID keyId);\n    Promise<undefined> removeDecryptionKey(CryptoKeyID keyId);\n    attribute EventHandler onerror;\n};",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframedecryptormanager"
       },
       "extended": [],
       "inheritance": null,

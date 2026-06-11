@@ -8,8 +8,7 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "ModelContext",
-          "ModelContextClient"
+          "ModelContext"
         ]
       }
     },
@@ -274,7 +273,7 @@
         "href": "https://webmachinelearning.github.io/webmcp/#dictdef-toolannotations"
       },
       "ToolExecuteCallback": {
-        "fragment": "callback ToolExecuteCallback = Promise<any> (object input, ModelContextClient client);",
+        "fragment": "callback ToolExecuteCallback = Promise<any> (object input);",
         "type": "callback",
         "name": "ToolExecuteCallback",
         "idlType": {
@@ -306,22 +305,6 @@
               "nullable": false,
               "union": false,
               "idlType": "object"
-            },
-            "default": null,
-            "optional": false,
-            "variadic": false
-          },
-          {
-            "type": "argument",
-            "name": "client",
-            "extAttrs": [],
-            "idlType": {
-              "type": "argument-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "ModelContextClient"
             },
             "default": null,
             "optional": false,
@@ -382,100 +365,6 @@
         "extAttrs": [],
         "partial": false,
         "href": "https://webmachinelearning.github.io/webmcp/#dictdef-modelcontextregistertooloptions"
-      },
-      "ModelContextClient": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface ModelContextClient {\n  Promise<any> requestUserInteraction(UserInteractionCallback callback);\n};",
-        "type": "interface",
-        "name": "ModelContextClient",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "operation",
-            "name": "requestUserInteraction",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "any"
-                }
-              ]
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "callback",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "UserInteractionCallback"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "",
-            "href": "https://webmachinelearning.github.io/webmcp/#dom-modelcontextclient-requestuserinteraction"
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false,
-        "href": "https://webmachinelearning.github.io/webmcp/#modelcontextclient"
-      },
-      "UserInteractionCallback": {
-        "fragment": "callback UserInteractionCallback = Promise<any> ();",
-        "type": "callback",
-        "name": "UserInteractionCallback",
-        "idlType": {
-          "type": "return-type",
-          "extAttrs": [],
-          "generic": "Promise",
-          "nullable": false,
-          "union": false,
-          "idlType": [
-            {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "any"
-            }
-          ]
-        },
-        "arguments": [],
-        "extAttrs": [],
-        "href": "https://webmachinelearning.github.io/webmcp/#callbackdef-userinteractioncallback"
       }
     },
     "idlExtendedNames": {
@@ -524,8 +413,7 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "ModelContext",
-        "ModelContextClient"
+        "ModelContext"
       ]
     },
     "dependencies": {
@@ -545,9 +433,6 @@
       "ToolAnnotations": [],
       "ModelContextRegisterToolOptions": [
         "AbortSignal"
-      ],
-      "ModelContextClient": [
-        "UserInteractionCallback"
       ]
     },
     "externalDependencies": [

@@ -1,5 +1,5 @@
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
-interface mixin SFrameDecrypterManager {
+interface mixin SFrameDecryptorManager {
     Promise<undefined> addDecryptionKey(CryptoKey key, CryptoKeyID keyId);
     Promise<undefined> removeDecryptionKey(CryptoKeyID keyId);
     attribute EventHandler onerror;

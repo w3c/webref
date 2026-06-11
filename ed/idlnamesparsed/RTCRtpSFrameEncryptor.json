@@ -1,13 +1,13 @@
 {
-  "name": "RTCRtpSFrameEncrypter",
+  "name": "RTCRtpSFrameEncryptor",
   "type": "interface",
   "defined": {
     "spec": {
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "[Exposed=Window]\ninterface RTCRtpSFrameEncrypter {\n    constructor(RTCRtpSFrameEncrypterOptions options);\n};",
-    "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpsframeencrypter"
+    "fragment": "[Exposed=Window]\ninterface RTCRtpSFrameEncryptor {\n    constructor(RTCRtpSFrameEncryptorOptions options);\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpsframeencryptor"
   },
   "extended": [
     {
@@ -15,21 +15,21 @@
         "title": "WebRTC Encoded Transform",
         "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
       },
-      "fragment": "RTCRtpSFrameEncrypter includes SFrameEncrypterManager;"
+      "fragment": "RTCRtpSFrameEncryptor includes SFrameEncryptorManager;"
     }
   ],
   "inheritance": null,
   "includes": [
     {
-      "name": "SFrameEncrypterManager",
+      "name": "SFrameEncryptorManager",
       "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "WebRTC Encoded Transform",
           "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
         },
-        "fragment": "interface mixin SFrameEncrypterManager {\n    Promise<undefined> setEncryptionKey(CryptoKey key, CryptoKeyID keyId);\n};",
-        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframeencryptermanager"
+        "fragment": "interface mixin SFrameEncryptorManager {\n    Promise<undefined> setEncryptionKey(CryptoKey key, CryptoKeyID keyId);\n};",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sframeencryptormanager"
       },
       "extended": [],
       "inheritance": null,

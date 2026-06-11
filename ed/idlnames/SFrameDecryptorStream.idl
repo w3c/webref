@@ -1,11 +1,11 @@
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
 [Exposed=(Window,DedicatedWorker)]
-interface SFrameEncrypterStream {
+interface SFrameDecryptorStream : EventTarget {
     constructor(SFrameTransformOptions options);
 };
 
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
-SFrameEncrypterStream includes GenericTransformStream;
+SFrameDecryptorStream includes GenericTransformStream;
 
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
-SFrameEncrypterStream includes SFrameEncrypterManager;
+SFrameDecryptorStream includes SFrameDecryptorManager;
