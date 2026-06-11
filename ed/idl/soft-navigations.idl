@@ -20,7 +20,7 @@ InteractionContentfulPaint includes PaintTimingMixin;
 
 [Exposed=Window]
 interface PerformanceSoftNavigation : PerformanceEntry {
-    readonly attribute DOMString navigationType;
+    readonly attribute NavigationType navigationType;
     readonly attribute unsigned long long interactionId;
     InteractionContentfulPaint? getLargestInteractionContentfulPaint();
 };

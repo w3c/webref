@@ -45,7 +45,7 @@
     {
       "name": "get the current interaction context",
       "href": "https://wicg.github.io/soft-navigations/#get-the-current-interaction-context",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-current-interaction-context\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the current interaction context</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">Document</a> <var>document</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-current-interaction-context\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the current interaction context</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①\">Document</a> <var>document</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -60,11 +60,17 @@
       ]
     },
     {
-      "name": "get the context for an interaction",
-      "href": "https://wicg.github.io/soft-navigations/#get-the-context-for-an-interaction",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-the-context-for-an-interaction\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the context for an interaction</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document③\">Document</a> <var>document</var>, an\n  <var>interaction id</var>, and an <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event\" id=\"ref-for-concept-event\">Event</a> <var>event</var>:",
+      "name": "get or create the context for an interaction",
+      "href": "https://wicg.github.io/soft-navigations/#get-or-create-the-context-for-an-interaction",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"get-or-create-the-context-for-an-interaction\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get or create the context for an interaction</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">Document</a> <var>document</var> and a\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming\">PerformanceEventTiming</a></code> <var>timing entry</var>:",
       "rationale": ".algorithm",
       "steps": [
+        {
+          "html": "<p>Let <var>interaction id</var> be <var>timing entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceeventtiming-interactionid\" id=\"ref-for-dom-performanceeventtiming-interactionid①\">interactionId</a></code>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a> <var>interaction id</var> is greater than 0.</p>"
+        },
         {
           "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#document-interaction-id-to-interaction-context\" id=\"ref-for-document-interaction-id-to-interaction-context\">interaction id to interaction context</a>[<var>interaction id</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>,\n return <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#document-interaction-id-to-interaction-context\" id=\"ref-for-document-interaction-id-to-interaction-context①\">interaction id to interaction context</a>[<var>interaction id</var>].</p>"
         },
@@ -78,7 +84,7 @@
           "html": "<p>Set <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-context-document\" id=\"ref-for-interactioncontext-context-document①\">context document</a> to <var>document</var>.</p>"
         },
         {
-          "html": "<p>Set <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-start-time\" id=\"ref-for-interactioncontext-start-time\">start time</a> to <var>event</var>’s <code class=\"highlight\">startTime</code>.</p>"
+          "html": "<p>Set <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-start-time\" id=\"ref-for-interactioncontext-start-time\">start time</a> to <var>timing entry</var>’s\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/performance-timeline/#dom-performanceentry-starttime\" id=\"ref-for-dom-performanceentry-starttime\">startTime</a></code>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#document-interaction-id-to-interaction-context\" id=\"ref-for-document-interaction-id-to-interaction-context②\">interaction id to interaction context</a>[<var>interaction id</var>] to\n <var>interaction context</var>.</p>"
@@ -91,7 +97,7 @@
     {
       "name": "update the interaction contexts for an event",
       "href": "https://wicg.github.io/soft-navigations/#update-the-interaction-contexts-for-an-event",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-interaction-contexts-for-an-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the interaction contexts for an event</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document④\">Document</a> <var>document</var> and an\n  <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event\" id=\"ref-for-concept-event①\">Event</a> <var>event</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-interaction-contexts-for-an-event\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the interaction contexts for an event</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document③\">Document</a> <var>document</var> and an\n  <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event\" id=\"ref-for-concept-event\">Event</a> <var>event</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -101,7 +107,7 @@
           "html": "<p>Let <var>is scroll</var> be true if <var>event</var>’s type is \"scroll\", and false otherwise.</p>"
         },
         {
-          "html": "<p>Let <var>is input</var> be true if <var>event</var>’s type is an event type that would trigger\n <a data-link-type=\"dfn\" href=\"https://w3c.github.io/event-timing/#has-dispatched-input-event\" id=\"ref-for-has-dispatched-input-event\">has dispatched input event</a> (as defined in <a data-link-type=\"biblio\" href=\"https://wicg.github.io/soft-navigations/#biblio-event-timing\" title=\"Event Timing API\">[EVENT-TIMING]</a>), and false otherwise.</p>"
+          "html": "<p>Let <var>is input</var> be true if <var>event</var>’s type is an event type that would trigger\n <a data-link-type=\"dfn\" href=\"https://pr-preview.s3.amazonaws.com/mmocny/event-timing/pull/165.html#has-dispatched-input-event\" id=\"ref-for-has-dispatched-input-event\">has dispatched input event</a> (as defined in <a data-link-type=\"biblio\" href=\"https://wicg.github.io/soft-navigations/#biblio-event-timing\" title=\"Event Timing API\">[EVENT-TIMING]</a>), and false otherwise.</p>"
         },
         {
           "html": "<p>If <var>is scroll</var> is false and <var>is input</var> is false, return.</p>"
@@ -111,7 +117,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>is scroll</var> is true and <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-scroll-timestamp\" id=\"ref-for-interactioncontext-first-scroll-timestamp\">first scroll timestamp</a>\n is unset:",
+              "html": "If <var>is scroll</var> is true and <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-scroll-timestamp\" id=\"ref-for-interactioncontext-first-scroll-timestamp\">first scroll timestamp</a>\n is 0:",
               "rationale": "set",
               "steps": [
                 {
@@ -120,7 +126,7 @@
               ]
             },
             {
-              "html": "If <var>is input</var> is true and <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-input-timestamp\" id=\"ref-for-interactioncontext-first-input-timestamp\">first input timestamp</a>\n is unset:",
+              "html": "If <var>is input</var> is true and <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-input-timestamp\" id=\"ref-for-interactioncontext-first-input-timestamp\">first input timestamp</a>\n is 0:",
               "rationale": "set",
               "steps": [
                 {
@@ -135,20 +141,20 @@
     {
       "name": "set the current interaction context for event dispatch",
       "href": "https://wicg.github.io/soft-navigations/#set-the-current-interaction-context-for-event-dispatch",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-the-current-interaction-context-for-event-dispatch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the current interaction context for event dispatch</dfn> given null or a\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming\">PerformanceEventTiming</a></code> object <var>timingEntry</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"set-the-current-interaction-context-for-event-dispatch\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">set the current interaction context for event dispatch</dfn> given null or a\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#performanceeventtiming\" id=\"ref-for-performanceeventtiming①\">PerformanceEventTiming</a></code> object <var>timing entry</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>timingEntry</var> is null, return null.</p>"
+          "html": "<p>If <var>timing entry</var> is null, return null.</p>"
         },
         {
-          "html": "<p>Let <var>event</var> be <var>timingEntry</var>’s <a data-link-type=\"dfn\" href=\"https://pr-preview.s3.amazonaws.com/mmocny/event-timing/pull/165.html#performanceeventtiming-associated-event\" id=\"ref-for-performanceeventtiming-associated-event\">associated event</a>.</p>"
+          "html": "<p>Let <var>interaction id</var> be <var>timing entry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceeventtiming-interactionid\" id=\"ref-for-dom-performanceeventtiming-interactionid②\">interactionId</a></code>.</p>"
         },
         {
-          "html": "<p>Let <var>interaction id</var> be <var>timingEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/event-timing/#dom-performanceeventtiming-interactionid\" id=\"ref-for-dom-performanceeventtiming-interactionid\">interactionId</a></code>.</p>"
+          "html": "<p>If <var>interaction id</var> is 0, return null.</p>"
         },
         {
-          "html": "<p>If <var>interaction id</var> is null or 0, return null.</p>"
+          "html": "<p>Let <var>event</var> be <var>timing entry</var>’s <a data-link-type=\"dfn\" href=\"https://pr-preview.s3.amazonaws.com/mmocny/event-timing/pull/165.html#performanceeventtiming-associated-event\" id=\"ref-for-performanceeventtiming-associated-event\">associated event</a>.</p>"
         },
         {
           "html": "<p>Let <var>document</var> be <var>event</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global①\">relevant global object</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window\" id=\"ref-for-concept-document-window\">associated Document</a>.</p>"
@@ -157,7 +163,7 @@
           "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#update-the-interaction-contexts-for-an-event\" id=\"ref-for-update-the-interaction-contexts-for-an-event\">Update the interaction contexts for an event</a> given <var>document</var> and <var>event</var>.</p>"
         },
         {
-          "html": "<p>Let <var>interaction context</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#get-the-context-for-an-interaction\" id=\"ref-for-get-the-context-for-an-interaction\">geting the context for an interaction</a> given\n <var>document</var>, <var>interaction id</var>, and <var>event</var>.</p>"
+          "html": "<p>Let <var>interaction context</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#get-or-create-the-context-for-an-interaction\" id=\"ref-for-get-or-create-the-context-for-an-interaction\">getting or createing the context for an interaction</a> given <var>document</var> and\n <var>timing entry</var>.</p>"
         },
         {
           "html": "<p>Set the value of the internal <code class=\"highlight\">AsyncContext<c- p=\"\">.</c->Variable</code> <code class=\"highlight\"><c- p=\"\">[[</c->ActiveInteractionContext<c- p=\"\">]]</c-></code> to\n <var>interaction context</var>.</p>"
@@ -204,14 +210,14 @@
     {
       "name": "process a new attributed contentful paint candidate",
       "href": "https://wicg.github.io/soft-navigations/#process-a-new-attributed-contentful-paint-candidate",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-a-new-attributed-contentful-paint-candidate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a new attributed contentful paint candidate</dfn> given a\n  <a data-link-type=\"dfn\" href=\"https://pr-preview.s3.amazonaws.com/shaseley/largest-contentful-paint/pull/171.html#largest-contentful-paint-candidate\" id=\"ref-for-largest-contentful-paint-candidate①\">largest contentful paint candidate</a> <var>lcpCandidate</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">Document</a> <var>document</var>, an\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-interactioncontext\" id=\"ref-for-interactioncontext-interactioncontext④\">InteractionContext</a> <var>interaction context</var>, and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#paint-timing-info\" id=\"ref-for-paint-timing-info⑤\">paint timing info</a> <var>paintTimingInfo</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-a-new-attributed-contentful-paint-candidate\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a new attributed contentful paint candidate</dfn> given a\n  <a data-link-type=\"dfn\" href=\"https://pr-preview.s3.amazonaws.com/shaseley/largest-contentful-paint/pull/171.html#largest-contentful-paint-candidate\" id=\"ref-for-largest-contentful-paint-candidate①\">largest contentful paint candidate</a> <var>lcpCandidate</var>, a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document④\">Document</a> <var>document</var>, an\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-interactioncontext\" id=\"ref-for-interactioncontext-interactioncontext④\">InteractionContext</a> <var>interaction context</var>, and a <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#paint-timing-info\" id=\"ref-for-paint-timing-info⑤\">paint timing info</a> <var>paintTimingInfo</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-scroll-timestamp\" id=\"ref-for-interactioncontext-first-scroll-timestamp②\">first scroll timestamp</a> is set and\n <var>lcpEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/largest-contentful-paint/#dom-largestcontentfulpaint-rendertime\" id=\"ref-for-dom-largestcontentfulpaint-rendertime\">renderTime</a></code> is greater than <var>interaction context</var>’s\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-scroll-timestamp\" id=\"ref-for-interactioncontext-first-scroll-timestamp③\">first scroll timestamp</a>, return.</p>"
+          "html": "<p>If <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-scroll-timestamp\" id=\"ref-for-interactioncontext-first-scroll-timestamp②\">first scroll timestamp</a> is greater than 0 and\n <var>lcpEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/largest-contentful-paint/#dom-largestcontentfulpaint-rendertime\" id=\"ref-for-dom-largestcontentfulpaint-rendertime\">renderTime</a></code> is greater than <var>interaction context</var>’s\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-scroll-timestamp\" id=\"ref-for-interactioncontext-first-scroll-timestamp③\">first scroll timestamp</a>, return.</p>"
         },
         {
-          "html": "<p>If <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-input-timestamp\" id=\"ref-for-interactioncontext-first-input-timestamp②\">first input timestamp</a> is set and <var>lcpEntry</var>’s\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/largest-contentful-paint/#dom-largestcontentfulpaint-rendertime\" id=\"ref-for-dom-largestcontentfulpaint-rendertime①\">renderTime</a></code> is greater than <var>interaction context</var>’s\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-input-timestamp\" id=\"ref-for-interactioncontext-first-input-timestamp③\">first input timestamp</a>, return.</p>"
+          "html": "<p>If <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-input-timestamp\" id=\"ref-for-interactioncontext-first-input-timestamp②\">first input timestamp</a> is greater than 0 and\n <var>lcpEntry</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/largest-contentful-paint/#dom-largestcontentfulpaint-rendertime\" id=\"ref-for-dom-largestcontentfulpaint-rendertime①\">renderTime</a></code> is greater than <var>interaction context</var>’s\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-input-timestamp\" id=\"ref-for-interactioncontext-first-input-timestamp③\">first input timestamp</a>, return.</p>"
         },
         {
           "html": "<p>Let <var>lcpEntry</var> be the result of <a data-link-type=\"dfn\" href=\"https://pr-preview.s3.amazonaws.com/shaseley/largest-contentful-paint/pull/171.html#create-a-largestcontentfulpaint-entry\" id=\"ref-for-create-a-largestcontentfulpaint-entry\">creating a LargestContentfulPaint entry</a> with\n <var>lcpCandidate</var>, <var>paintTimingInfo</var>, and <var>document</var>.</p>"
@@ -223,7 +229,7 @@
           "html": "<p>Let <var>paint timing info</var> be <var>lcpEntry</var>’s associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#paint-timing-info\" id=\"ref-for-paint-timing-info⑥\">paint timing info</a>.</p>"
         },
         {
-          "html": "<p>Let <var>icpEntry</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#create-an-interaction-contentful-paint-entry\" id=\"ref-for-create-an-interaction-contentful-paint-entry\">create an interaction contentful paint entry</a> given\n <var>global</var>, <var>interaction context</var>, <var>lcpEntry</var>, and <var>paint timing info</var>.</p>"
+          "html": "<p>Let <var>icpEntry</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#create-an-interaction-contentful-paint-entry\" id=\"ref-for-create-an-interaction-contentful-paint-entry\">creating an interaction contentful paint entry</a> given\n <var>global</var>, <var>interaction context</var>, <var>lcpEntry</var>, and <var>paint timing info</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry\" id=\"ref-for-dfn-queue-a-performanceentry①\">Queue</a> <var>icpEntry</var>.</p>"
@@ -241,7 +247,7 @@
           ]
         },
         {
-          "html": "<p>Set <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-largest-contentful-paint\" id=\"ref-for-interactioncontext-largest-contentful-paint①\">largest contentful paint</a> to <var>icpEntry</var>.</p>"
+          "html": "<p>Set <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-largest-contentful-paint\" id=\"ref-for-interactioncontext-largest-contentful-paint\">largest contentful paint</a> to <var>icpEntry</var>.</p>"
         },
         {
           "html": "<p>Set <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-current-largest-contentful-paint-candidate\" id=\"ref-for-interactioncontext-current-largest-contentful-paint-candidate\">current largest contentful paint candidate</a>\n to <var>lcpCandidate</var>.</p>"
@@ -409,7 +415,7 @@
     {
       "name": "update the interaction context for a document and its descendants",
       "href": "https://wicg.github.io/soft-navigations/#update-the-interaction-context-for-a-document-and-its-descendants",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-interaction-context-for-a-document-and-its-descendants\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the interaction context for a document and its descendants</dfn> given a\n  <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑥\">Document</a> <var>document</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"update-the-interaction-context-for-a-document-and-its-descendants\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">update the interaction context for a document and its descendants</dfn> given a\n  <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑤\">Document</a> <var>document</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -447,12 +453,12 @@
                   "html": "<p>Set <var>inherited node state</var> to <var>node state</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>node</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node③\">node</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove\">Remove</a> <var>document</var>’s\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#document-marked-node-state\" id=\"ref-for-document-marked-node-state③\">marked node state</a>[<var>node</var>].</p>"
+                  "html": "<p>If <var>node</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text\">Text</a></code> <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-concept-node③\">node</a>, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove\">remove</a> <var>document</var>’s\n <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#document-marked-node-state\" id=\"ref-for-document-marked-node-state③\">marked node state</a>[<var>node</var>].</p>"
                 }
               ]
             },
             {
-              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove①\">Remove</a> <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#document-marked-node-state\" id=\"ref-for-document-marked-node-state④\">marked node state</a>[<var>node</var>].</p>"
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-remove\" id=\"ref-for-map-remove①\">remove</a> <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#document-marked-node-state\" id=\"ref-for-document-marked-node-state④\">marked node state</a>[<var>node</var>].</p>"
             }
           ]
         },
@@ -488,7 +494,7 @@
     {
       "name": "evaluate soft navigation emission",
       "href": "https://wicg.github.io/soft-navigations/#evaluate-soft-navigation-emission",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"evaluate-soft-navigation-emission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">evaluate soft navigation emission</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑦\">Document</a> <var>document</var> and an\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-interactioncontext\" id=\"ref-for-interactioncontext-interactioncontext⑨\">InteractionContext</a> <var>interaction context</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"evaluate-soft-navigation-emission\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">evaluate soft navigation emission</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑥\">Document</a> <var>document</var> and an\n  <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-interactioncontext\" id=\"ref-for-interactioncontext-interactioncontext⑨\">InteractionContext</a> <var>interaction context</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -498,7 +504,7 @@
           "html": "<p>If <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#document-active-soft-navigation-candidate\" id=\"ref-for-document-active-soft-navigation-candidate\">active soft navigation candidate</a> is not <var>interaction context</var>, return.</p>"
         },
         {
-          "html": "<p>If <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-url-value\" id=\"ref-for-interactioncontext-first-url-value①\">first URL value</a> is unset, return.</p>"
+          "html": "<p>If <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-url-value\" id=\"ref-for-interactioncontext-first-url-value①\">first URL value</a> is null, return.</p>"
         },
         {
           "html": "<p>If <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-contentful-paint\" id=\"ref-for-interactioncontext-first-contentful-paint②\">first contentful paint</a> is null, return.</p>"
@@ -507,7 +513,7 @@
           "html": "<p>Let <var>window</var> be <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a>.</p>"
         },
         {
-          "html": "<p>Let <var>entry</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#create-a-soft-navigation-entry\" id=\"ref-for-create-a-soft-navigation-entry\">create a soft navigation entry</a> given <var>window</var> and\n <var>interaction context</var>.</p>"
+          "html": "<p>Let <var>entry</var> be the result of <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#create-a-soft-navigation-entry\" id=\"ref-for-create-a-soft-navigation-entry\">creating a soft navigation entry</a> given <var>window</var> and\n <var>interaction context</var>.</p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#emit-a-soft-navigation-entry\" id=\"ref-for-emit-a-soft-navigation-entry\">Emit a soft navigation entry</a> given <var>window</var> and <var>entry</var>.</p>"
@@ -533,13 +539,10 @@
           "html": "<p>Let <var>first paint</var> be <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-contentful-paint\" id=\"ref-for-interactioncontext-first-contentful-paint③\">first contentful paint</a>.</p>"
         },
         {
-          "html": "If <var>first paint</var> is not null:",
-          "rationale": "set",
-          "steps": [
-            {
-              "html": "<p>Set <var>entry</var>’s associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#paint-timing-info\" id=\"ref-for-paint-timing-info⑨\">paint timing info</a> to <var>first paint</var>’s associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#paint-timing-info\" id=\"ref-for-paint-timing-info①⓪\">paint timing info</a>.</p>"
-            }
-          ]
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a> <var>first paint</var> is not null.</p>"
+        },
+        {
+          "html": "<p>Set <var>entry</var>’s associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#paint-timing-info\" id=\"ref-for-paint-timing-info⑨\">paint timing info</a> to <var>first paint</var>’s associated <a data-link-type=\"dfn\" href=\"https://w3c.github.io/paint-timing/#paint-timing-info\" id=\"ref-for-paint-timing-info①⓪\">paint timing info</a>.</p>"
         },
         {
           "html": "<p>Return <var>entry</var>.</p>"
@@ -566,7 +569,7 @@
     {
       "name": "process a same document commit",
       "href": "https://wicg.github.io/soft-navigations/#process-a-same-document-commit",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-a-same-document-commit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a same document commit</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑧\">Document</a> <var>document</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>url</var>,\n  and <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a> <var>navigation type</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"process-a-same-document-commit\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">process a same document commit</dfn> given a <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document⑦\">Document</a> <var>document</var>, <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string\">string</a> <var>url</var>,\n  and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#navigationtype\" id=\"ref-for-navigationtype②\">NavigationType</a></code> <var>navigation type</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -582,7 +585,7 @@
           "html": "<p>Set <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-last-url-value\" id=\"ref-for-interactioncontext-last-url-value\">last URL value</a> to <var>url</var>.</p>"
         },
         {
-          "html": "If <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-url-update-timestamp\" id=\"ref-for-interactioncontext-first-url-update-timestamp\">first URL update timestamp</a> is unset:",
+          "html": "If <var>interaction context</var>’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#interactioncontext-first-url-update-timestamp\" id=\"ref-for-interactioncontext-first-url-update-timestamp\">first URL update timestamp</a> is null:",
           "rationale": "set",
           "steps": [
             {
@@ -610,7 +613,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#record-a-node-as-modified-for-interaction-paint-timing\" id=\"ref-for-record-a-node-as-modified-for-interaction-paint-timing①\">Record a node as modified for interaction paint timing</a> given <var>node</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://wicg.github.io/soft-navigations/#record-a-node-as-modified-for-interaction-paint-timing\" id=\"ref-for-record-a-node-as-modified-for-interaction-paint-timing②\">Record a node as modified for interaction paint timing</a> given <var>node</var>.</p>"
         }
       ]
     },

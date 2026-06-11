@@ -66,7 +66,11 @@
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
         "anchors": [
           "window",
-          "concept-document-window"
+          "navigationtype",
+          "concept-document-window",
+          "dom-navigationtype-traverse",
+          "dom-navigationtype-push",
+          "dom-navigationtype-replace"
         ]
       },
       "https://html.spec.whatwg.org/multipage/webappapis.html": {
@@ -81,6 +85,7 @@
           "64-bit-unsigned-integer",
           "struct",
           "struct-item",
+          "assert",
           "map-exists",
           "map-set",
           "ordered-set",
@@ -95,7 +100,9 @@
       },
       "https://pr-preview.s3.amazonaws.com/mmocny/event-timing/pull/165.html": {
         "anchors": [
+          "has-dispatched-input-event",
           "performanceeventtiming-associated-event",
+          "dfn-interaction",
           "window-interaction-count",
           "window-initial-interactionid-value",
           "window-interactionid-increment",
@@ -113,11 +120,8 @@
       },
       "https://w3c.github.io/event-timing/": {
         "anchors": [
-          "interaction-id",
-          "has-dispatched-input-event",
-          "performanceeventtiming",
           "dom-performanceeventtiming-interactionid",
-          "dfn-interaction"
+          "performanceeventtiming"
         ]
       },
       "https://w3c.github.io/hr-time/": {
@@ -153,9 +157,9 @@
         "anchors": [
           "performanceentry",
           "dfn-queue-a-performanceentry",
+          "dom-performanceentry-starttime",
           "dom-performanceentry-name",
           "dom-performanceentry-entrytype",
-          "dom-performanceentry-starttime",
           "dom-performanceentry-duration",
           "performance-entry-buffer"
         ]
@@ -165,8 +169,7 @@
           "Exposed",
           "idl-unsigned-long-long",
           "this",
-          "idl-object",
-          "idl-DOMString"
+          "idl-object"
         ]
       }
     }
