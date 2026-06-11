@@ -188,9 +188,9 @@
       ]
     },
     {
-      "name": "RTCRtpSFrameEncrypter/RTCRtpSFrameEncrypter(options)",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframeencrypter-rtcrtpsframeencrypter",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpSFrameEncrypter\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"RTCRtpSFrameEncrypter(options)|constructor(options)\" id=\"dom-rtcrtpsframeencrypter-rtcrtpsframeencrypter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new RTCRtpSFrameEncrypter(<var>options</var>)</code></dfn> constructor steps are:",
+      "name": "RTCRtpSFrameEncryptor/RTCRtpSFrameEncryptor(options)",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframeencryptor-rtcrtpsframeencryptor",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpSFrameEncryptor\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"RTCRtpSFrameEncryptor(options)|constructor(options)\" id=\"dom-rtcrtpsframeencryptor-rtcrtpsframeencryptor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new RTCRtpSFrameEncryptor(<var>options</var>)</code></dfn> constructor steps are:",
       "rationale": "let",
       "steps": [
         {
@@ -208,9 +208,9 @@
       ]
     },
     {
-      "name": "RTCRtpSFrameDecrypter/RTCRtpSFrameDecrypter(options)",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframedecrypter-rtcrtpsframedecrypter",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpSFrameDecrypter\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"RTCRtpSFrameDecrypter(options)|constructor(options)\" id=\"dom-rtcrtpsframedecrypter-rtcrtpsframedecrypter\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new RTCRtpSFrameDecrypter(<var>options</var>)</code></dfn> constructor steps are:",
+      "name": "RTCRtpSFrameDecryptor/RTCRtpSFrameDecryptor(options)",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframedecryptor-rtcrtpsframedecryptor",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"RTCRtpSFrameDecryptor\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"RTCRtpSFrameDecryptor(options)|constructor(options)\" id=\"dom-rtcrtpsframedecryptor-rtcrtpsframedecryptor\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new RTCRtpSFrameDecryptor(<var>options</var>)</code></dfn> constructor steps are:",
       "rationale": "let",
       "steps": [
         {
@@ -228,9 +228,9 @@
       ]
     },
     {
-      "name": "SFrameEncrypterStream/SFrameEncrypterStream(options)",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeencrypterstream-sframeencrypterstream",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SFrameEncrypterStream\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"SFrameEncrypterStream(options)|constructor(options)\" id=\"dom-sframeencrypterstream-sframeencrypterstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new SFrameEncrypterStream(<var>options</var>)</code></dfn> constructor steps are:",
+      "name": "SFrameEncryptorStream/SFrameEncryptorStream(options)",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframeencryptorstream-sframeencryptorstream",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SFrameEncryptorStream\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"SFrameEncryptorStream(options)|constructor(options)\" id=\"dom-sframeencryptorstream-sframeencryptorstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new SFrameEncryptorStream(<var>options</var>)</code></dfn> constructor steps are:",
       "rationale": "let",
       "steps": [
         {
@@ -245,9 +245,9 @@
       ]
     },
     {
-      "name": "SFrameDecrypterStream/SFrameDecrypterStream(options)",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecrypterstream-sframedecrypterstream",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SFrameDecrypterStream\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"SFrameDecrypterStream(options)|constructor(options)\" id=\"dom-sframedecrypterstream-sframedecrypterstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new SFrameDecrypterStream(<var>options</var>)</code></dfn> constructor steps are:",
+      "name": "SFrameDecryptorStream/SFrameDecryptorStream(options)",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecryptorstream-sframedecryptorstream",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SFrameDecryptorStream\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"SFrameDecryptorStream(options)|constructor(options)\" id=\"dom-sframedecryptorstream-sframedecryptorstream\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>new SFrameDecryptorStream(<var>options</var>)</code></dfn> constructor steps are:",
       "rationale": "let",
       "steps": [
         {
@@ -271,11 +271,11 @@
           "html": "<p>Let <var>transformAlgorithm</var> be an algorithm which takes a <var>frame</var> as input and runs the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webrtc-encoded-transform/#sframe-transform-algorithm\" id=\"ref-for-sframe-transform-algorithm\">SFrame transform algorithm</a> with <var>this</var> and <var>frame</var>.</p>"
         },
         {
-          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframeencrypteroptions-type\" id=\"ref-for-dom-rtcrtpsframeencrypteroptions-type\">type</a></code>\"] is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">present</a>, run these steps:",
+          "html": "If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframeencryptoroptions-type\" id=\"ref-for-dom-rtcrtpsframeencryptoroptions-type\">type</a></code>\"] is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">present</a>, run these steps:",
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframeencrypteroptions-type\" id=\"ref-for-dom-rtcrtpsframeencrypteroptions-type①\">type</a></code>\"] is 'per-frame', use per-frame sending as defined in <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-rtp-sframe-payload\" title=\"RTP Payload Format for SFrame\">[RTP-SFRAME-PAYLOAD]</a>.</p>"
+              "html": "<p>If <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsframeencryptoroptions-type\" id=\"ref-for-dom-rtcrtpsframeencryptoroptions-type①\">type</a></code>\"] is 'per-frame', use per-frame sending as defined in <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-rtp-sframe-payload\" title=\"RTP Payload Format for SFrame\">[RTP-SFRAME-PAYLOAD]</a>.</p>"
             },
             {
               "html": "<p>Otherwise, use per-packet sending as defined in <a data-link-type=\"biblio\" href=\"https://w3c.github.io/webrtc-encoded-transform/#biblio-rtp-sframe-payload\" title=\"RTP Payload Format for SFrame\">[RTP-SFRAME-PAYLOAD]</a>.</p>"
@@ -337,13 +337,13 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If the processing fails on decryption side due to <var>data</var> not following the SFrame format, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecryptermanager-onerror\" id=\"ref-for-dom-sframedecryptermanager-onerror\">error</a></code> at <var>this</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventtype-syntax\" id=\"ref-for-dom-sframetransformerroreventtype-syntax\">syntax</a></code>\nand its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame\">frame</a></code> attribute set to <var>frame</var>.</p>"
+              "html": "<p>If the processing fails on decryption side due to <var>data</var> not following the SFrame format, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecryptormanager-onerror\" id=\"ref-for-dom-sframedecryptormanager-onerror\">error</a></code> at <var>this</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventtype-syntax\" id=\"ref-for-dom-sframetransformerroreventtype-syntax\">syntax</a></code>\nand its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame\">frame</a></code> attribute set to <var>frame</var>.</p>"
             },
             {
-              "html": "<p>If the processing fails on decryption side due to the key identifier parsed in <var>data</var> being unknown, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecryptermanager-onerror\" id=\"ref-for-dom-sframedecryptermanager-onerror①\">error</a></code> at <var>this</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent①\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype①\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventtype-keyid\" id=\"ref-for-dom-sframetransformerroreventtype-keyid\">keyID</a></code>,\nits <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame①\">frame</a></code> attribute set to <var>frame</var> and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-keyid\" id=\"ref-for-dom-sframetransformerrorevent-keyid\">keyID</a></code> attribute set to the keyID value parsed in the SFrame header.</p>"
+              "html": "<p>If the processing fails on decryption side due to the key identifier parsed in <var>data</var> being unknown, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire①\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecryptormanager-onerror\" id=\"ref-for-dom-sframedecryptormanager-onerror①\">error</a></code> at <var>this</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent①\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype①\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventtype-keyid\" id=\"ref-for-dom-sframetransformerroreventtype-keyid\">keyID</a></code>,\nits <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame①\">frame</a></code> attribute set to <var>frame</var> and its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-keyid\" id=\"ref-for-dom-sframetransformerrorevent-keyid\">keyID</a></code> attribute set to the keyID value parsed in the SFrame header.</p>"
             },
             {
-              "html": "<p>If the processing fails on decryption side due to validation of the authentication tag, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire②\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecryptermanager-onerror\" id=\"ref-for-dom-sframedecryptermanager-onerror②\">error</a></code> at <var>this</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent②\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype②\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventtype-authentication\" id=\"ref-for-dom-sframetransformerroreventtype-authentication\">authentication</a></code>\nand its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame②\">frame</a></code> attribute set to <var>frame</var>.</p>"
+              "html": "<p>If the processing fails on decryption side due to validation of the authentication tag, <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire②\">fire an event</a> named <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecryptormanager-onerror\" id=\"ref-for-dom-sframedecryptormanager-onerror②\">error</a></code> at <var>this</var>,\nusing the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#sframetransformerrorevent\" id=\"ref-for-sframetransformerrorevent②\">SFrameTransformErrorEvent</a></code> interface with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-errortype\" id=\"ref-for-dom-sframetransformerrorevent-errortype②\">errorType</a></code> attribute set to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerroreventtype-authentication\" id=\"ref-for-dom-sframetransformerroreventtype-authentication\">authentication</a></code>\nand its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webrtc-encoded-transform/#dom-sframetransformerrorevent-frame\" id=\"ref-for-dom-sframetransformerrorevent-frame②\">frame</a></code> attribute set to <var>frame</var>.</p>"
             },
             {
               "html": "<p>Abort these steps.</p>"
@@ -397,9 +397,9 @@
       ]
     },
     {
-      "name": "SFrameDecrypterManager/addDecryptionKey(key, keyId)",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecryptermanager-adddecryptionkey",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SFrameDecrypterManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-sframedecryptermanager-adddecryptionkey\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>addDecryptionKey(<var>key</var>, <var>keyId</var>)</code></dfn> method steps are:",
+      "name": "SFrameDecryptorManager/addDecryptionKey(key, keyId)",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecryptormanager-adddecryptionkey",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SFrameDecryptorManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-sframedecryptormanager-adddecryptionkey\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>addDecryptionKey(<var>key</var>, <var>keyId</var>)</code></dfn> method steps are:",
       "rationale": "let",
       "steps": [
         {
@@ -432,9 +432,9 @@
       ]
     },
     {
-      "name": "SFrameDecrypterManager/removeDecryptionKey(keyId)",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecryptermanager-removedecryptionkey",
-      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SFrameDecrypterManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-sframedecryptermanager-removedecryptionkey\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>removeDecryptionKey(<var>keyId</var>)</code></dfn> method steps are:",
+      "name": "SFrameDecryptorManager/removeDecryptionKey(keyId)",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-sframedecryptormanager-removedecryptionkey",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"SFrameDecryptorManager\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-sframedecryptormanager-removedecryptionkey\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>removeDecryptionKey(<var>keyId</var>)</code></dfn> method steps are:",
       "rationale": "let",
       "steps": [
         {
