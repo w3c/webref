@@ -331,10 +331,19 @@
     },
     {
       "name": "progress()",
-      "prose": "The progress() functional notation represents the proportional distance of a given value (the progress value) from one value (the progress start value) to another value (the progress end value), each represented as a calculation. It is a math function, and can be input into other calculations such as a math function or a mix notation.",
+      "prose": "The progress() functional notation represents the proportional distance of a given value (the progress value) from one value (the progress start value) to another value (the progress end value), each represented as a calculation. It is a math function, and can be input into other calculations such as a math function or a mix notation. The syntax of progress() is:",
       "href": "https://drafts.csswg.org/css-values-5/#funcdef-progress",
       "type": "function",
-      "value": "progress(<calc-sum>, <calc-sum>, <calc-sum>)"
+      "value": "progress(no-clamp? <calc-sum>, <calc-sum>, <calc-sum>)",
+      "values": [
+        {
+          "name": "no-clamp",
+          "prose": "If no-clamp is present, the progress() function can potentially resolve to any number; if omitted (the default), the return value is clamped to the range [0, 1].",
+          "href": "https://drafts.csswg.org/css-values-5/#valdef-progress-no-clamp",
+          "type": "value",
+          "value": "no-clamp"
+        }
+      ]
     },
     {
       "name": "calc-mix()",
