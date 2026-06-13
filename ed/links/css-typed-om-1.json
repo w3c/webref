@@ -150,12 +150,14 @@
       "https://drafts.csswg.org/css-contain-2/": {},
       "https://drafts.csswg.org/css-content-3/": {},
       "https://drafts.csswg.org/css-display-4/": {},
-      "https://drafts.csswg.org/css-flexbox/": {},
+      "https://drafts.csswg.org/css-flexbox-2/": {},
       "https://drafts.csswg.org/css-fonts-4/": {},
+      "https://drafts.csswg.org/css-gaps-1/": {},
       "https://drafts.csswg.org/css-gcpm-4/": {},
       "https://drafts.csswg.org/css-grid-2/": {},
       "https://drafts.csswg.org/css-images-3/": {},
       "https://drafts.csswg.org/css-images-4/": {},
+      "https://drafts.csswg.org/css-images-5/": {},
       "https://drafts.csswg.org/css-inline-3/": {},
       "https://drafts.csswg.org/css-line-grid/": {},
       "https://drafts.csswg.org/css-lists-3/": {},
@@ -270,18 +272,12 @@
           "typedef-self-position",
           "typedef-overflow-position",
           "propdef-align-self",
-          "propdef-column-gap",
-          "propdef-gap",
-          "propdef-grid-column-gap",
-          "propdef-grid-gap",
-          "propdef-grid-row-gap",
           "propdef-justify-content",
           "propdef-justify-items",
           "propdef-justify-self",
           "propdef-place-content",
           "propdef-place-items",
-          "propdef-place-self",
-          "propdef-row-gap"
+          "propdef-place-self"
         ]
       },
       "https://drafts.csswg.org/css-animations-1/": {
@@ -448,7 +444,7 @@
           "propdef-visibility"
         ]
       },
-      "https://drafts.csswg.org/css-flexbox-1/": {
+      "https://drafts.csswg.org/css-flexbox-2/": {
         "anchors": [
           "propdef-flex",
           "propdef-flex-basis",
@@ -478,6 +474,15 @@
           "propdef-font-variant-emoji",
           "propdef-font-variation-settings",
           "propdef-font-weight"
+        ]
+      },
+      "https://drafts.csswg.org/css-gaps-1/": {
+        "anchors": [
+          "propdef-gap",
+          "propdef-grid-column-gap",
+          "propdef-grid-gap",
+          "propdef-grid-row-gap",
+          "propdef-row-gap"
         ]
       },
       "https://drafts.csswg.org/css-gcpm-4/": {
@@ -513,9 +518,13 @@
       },
       "https://drafts.csswg.org/css-images-4/": {
         "anchors": [
-          "funcdef-image",
           "propdef-image-resolution",
           "propdef-object-fit"
+        ]
+      },
+      "https://drafts.csswg.org/css-images-5/": {
+        "anchors": [
+          "funcdef-image"
         ]
       },
       "https://drafts.csswg.org/css-inline-3/": {
@@ -1080,7 +1089,6 @@
       },
       "https://w3c.github.io/svgwg/svg2-draft/text.html": {
         "anchors": [
-          "ShapesubtractProperty",
           "TextAnchorProperty"
         ]
       },
@@ -1136,8 +1144,14 @@
       },
       "https://www.w3.org/TR/SVG2/text.html": {
         "anchors": [
+          "ShapesubtractProperty",
           "TextDecorationFillProperty",
           "TextDecorationStrokeProperty"
+        ]
+      },
+      "https://www.w3.org/TR/css-align-3/": {
+        "anchors": [
+          "propdef-column-gap"
         ]
       }
     }
