@@ -24,7 +24,7 @@
           "html": "Replace all instances of <a href=\"https://www.w3.org/TR/css-values/#angles\">&lt;angle&gt;</a> in <var>grammar</var> with\n  [<a href=\"https://www.w3.org/TR/css-values/#angles\">&lt;angle&gt;</a> | <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a>]."
         },
         {
-          "html": "Return the result of\n  <a href=\"http://dev.w3.org/csswg/css-syntax/#parse-grammar\">parsing\n  <var>value</var> with <var>grammar</var></a>."
+          "html": "Return the result of\n  <a href=\"https://drafts.csswg.org/css-syntax/#parse-grammar\">parsing\n  <var>value</var> with <var>grammar</var></a>."
         }
       ]
     },
@@ -538,7 +538,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If current element is a <a href=\"https://w3c.github.io/svgwg/svg2-draft/render.html#TermNonRenderedElement\">non-rendered element</a>, and the UA is not able to\n    compute the total length of the path, then throw an <a href=\"https://heycam.github.io/webidl/#invalidstateerror\">InvalidStateError</a>."
+          "html": "If current element is a <a href=\"https://w3c.github.io/svgwg/svg2-draft/render.html#TermNonRenderedElement\">non-rendered element</a>, and the UA is not able to\n    compute the total length of the path, then throw an <a href=\"https://webidl.spec.whatwg.org/#invalidstateerror\">InvalidStateError</a>."
         },
         {
           "html": "Let <var>length</var> be the user agent's computed value for the total\n  length of the path, in user units."
@@ -559,7 +559,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGNumber\">SVGNumber</a> is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyNumber\">read only</a>, then\n  <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGNumber\">SVGNumber</a> is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyNumber\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
           "html": "Set the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGNumber\">SVGNumber</a>'s <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#NumberValue\">value</a> to the\n  value being assigned to the <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGNumber__value\">value</a>\n  member."
@@ -647,7 +647,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
           "html": "Let <var>value</var> be the value being assigned to\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__value\">value</a>."
@@ -683,7 +683,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
           "html": "Let <var>value</var> be the value being assigned to\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueInSpecifiedUnits\">valueInSpecifiedUnits</a>."
@@ -743,7 +743,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
           "html": "Let <var>value</var> be the value being assigned to\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueAsString\">valueAsString</a>."
@@ -752,7 +752,7 @@
           "html": "Parse <var>value</var> using the CSS syntax\n  [ <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a> | <a href=\"https://www.w3.org/TR/css3-values/#lengths\">&lt;length&gt;</a> | <a href=\"https://www.w3.org/TR/css3-values/#percentages\">&lt;percentage&gt;</a> ]."
         },
         {
-          "html": "If parsing failed, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#syntaxerror\">SyntaxError</a>."
+          "html": "If parsing failed, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#syntaxerror\">SyntaxError</a>."
         },
         {
           "html": "Otherwise, parsing succeeded.  Set <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a>'s <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthValue\">value</a>\n  to the parsed value."
@@ -767,10 +767,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
-          "html": "If <var>unitType</var> is\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__SVG_LENGTHTYPE_UNKNOWN\">SVG_LENGTHTYPE_UNKNOWN</a>\n  or is a value that does not appear in the length unit type table above,\n  then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#notsupportederror\">NotSupportedError</a>."
+          "html": "If <var>unitType</var> is\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__SVG_LENGTHTYPE_UNKNOWN\">SVG_LENGTHTYPE_UNKNOWN</a>\n  or is a value that does not appear in the length unit type table above,\n  then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#notsupportederror\">NotSupportedError</a>."
         },
         {
           "html": "Set <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a>'s <a href=\"https://w3c.github.io/svgwg/svg2-draft/#LengthValue\">value</a> depending\n  on the value of <var>unitType</var>:",
@@ -805,10 +805,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
-          "html": "If <var>unitType</var> is\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__SVG_LENGTHTYPE_UNKNOWN\">SVG_LENGTHTYPE_UNKNOWN</a>\n  or is a value that does not appear in the length unit type table above,\n  then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#notsupportederror\">NotSupportedError</a>."
+          "html": "If <var>unitType</var> is\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__SVG_LENGTHTYPE_UNKNOWN\">SVG_LENGTHTYPE_UNKNOWN</a>\n  or is a value that does not appear in the length unit type table above,\n  then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#notsupportederror\">NotSupportedError</a>."
         },
         {
           "html": "Let <var>absolute</var> be the value that would be returned from the\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__value\">value</a> member."
@@ -932,7 +932,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAngle\">SVGAngle</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyAngle\">read only</a>, then\n  <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAngle\">SVGAngle</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyAngle\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
           "html": "Let <var>value</var> be the value being assigned to\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__value\">value</a>."
@@ -965,7 +965,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAngle\">SVGAngle</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyAngle\">read only</a>, then\n  <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAngle\">SVGAngle</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyAngle\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
           "html": "Let <var>value</var> be the value being assigned to\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__valueInSpecifiedUnits\">valueInSpecifiedUnits</a>."
@@ -1010,7 +1010,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAngle\">SVGAngle</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyAngle\">read only</a>, then\n  <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAngle\">SVGAngle</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyAngle\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
           "html": "Let <var>value</var> be the value being assigned to\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__valueAsString\">valueAsString</a>."
@@ -1019,7 +1019,7 @@
           "html": "Parse <var>value</var> using the CSS syntax\n  [ <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a> | <a href=\"https://www.w3.org/TR/css-values/#angles\">&lt;angle&gt;</a> ]."
         },
         {
-          "html": "If parsing failed, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#syntaxerror\">SyntaxError</a>."
+          "html": "If parsing failed, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#syntaxerror\">SyntaxError</a>."
         },
         {
           "html": "Otherwise, parsing succeeded.  Set <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAngle\">SVGAngle</a>'s <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#AngleValue\">value</a>\n  to the parsed value."
@@ -1034,10 +1034,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAngle\">SVGAngle</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyAngle\">read only</a>, then\n  <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAngle\">SVGAngle</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyAngle\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
-          "html": "If <var>unitType</var> is\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__SVG_ANGLETYPE_UNKNOWN\">SVG_ANGLETYPE_UNKNOWN</a>\n  or is a value that does not appear in the angle unit type table above,\n  then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#notsupportederror\">NotSupportedError</a>."
+          "html": "If <var>unitType</var> is\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__SVG_ANGLETYPE_UNKNOWN\">SVG_ANGLETYPE_UNKNOWN</a>\n  or is a value that does not appear in the angle unit type table above,\n  then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#notsupportederror\">NotSupportedError</a>."
         },
         {
           "html": "Set <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAngle\">SVGAngle</a>'s <a href=\"https://w3c.github.io/svgwg/svg2-draft/#AngleValue\">value</a> depending\n  on the value of <var>unitType</var>:",
@@ -1068,10 +1068,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAngle\">SVGAngle</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyAngle\">read only</a>, then\n  <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGAngle\">SVGAngle</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyAngle\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
-          "html": "If <var>unitType</var> is\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__SVG_ANGLETYPE_UNKNOWN\">SVG_ANGLETYPE_UNKNOWN</a>\n  or is a value that does not appear in the angle unit type table above,\n  then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#notsupportederror\">NotSupportedError</a>."
+          "html": "If <var>unitType</var> is\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__SVG_ANGLETYPE_UNKNOWN\">SVG_ANGLETYPE_UNKNOWN</a>\n  or is a value that does not appear in the angle unit type table above,\n  then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#notsupportederror\">NotSupportedError</a>."
         },
         {
           "html": "Let <var>degrees</var> be the value that would be returned from the\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__value\">value</a> member."
@@ -1305,7 +1305,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the list is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyList\">read only</a>, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a\n  <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the list is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyList\">read only</a>, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n  <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
           "html": "<a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermDetach\">Detach</a> and then remove all elements in the list."
@@ -1320,7 +1320,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the list is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyList\">read only</a>, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a\n  <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the list is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyList\">read only</a>, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n  <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
           "html": "<a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermDetach\">Detach</a> and then remove all elements in the list."
@@ -1347,7 +1347,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var>index</var> is greater than or equal to the length\n  of the list, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> an <a href=\"https://heycam.github.io/webidl/#indexsizeerror\">IndexSizeError</a>."
+          "html": "If <var>index</var> is greater than or equal to the length\n  of the list, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a href=\"https://webidl.spec.whatwg.org/#indexsizeerror\">IndexSizeError</a>."
         },
         {
           "html": "Return the element in the list at position <var>index</var>."
@@ -1359,7 +1359,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the list is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyList\">read only</a>, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a\n  <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the list is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyList\">read only</a>, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n  <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
           "html": "If <var>newItem</var> is an object type, and <var>newItem</var>\n  is not a detached object,  then set <var>newItem</var> to be\n  a newly created object of the same type as <var>newItem</var>\n  and which has the same (number or length) value."
@@ -1386,10 +1386,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the list is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyList\">read only</a>, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a\n  <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the list is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyList\">read only</a>, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n  <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
-          "html": "If <var>index</var> is greater than or equal to the length of\n  the list, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> an <a href=\"https://heycam.github.io/webidl/#indexsizeerror\">IndexSizeError</a>."
+          "html": "If <var>index</var> is greater than or equal to the length of\n  the list, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a href=\"https://webidl.spec.whatwg.org/#indexsizeerror\">IndexSizeError</a>."
         },
         {
           "html": "If <var>newItem</var> is an object type, and <var>newItem</var>\n  is not a detached object, then set <var>newItem</var> to be\n  a newly created object of the same type as <var>newItem</var>\n  and which has the same (number or length) value."
@@ -1416,10 +1416,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the list is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyList\">read only</a>, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a\n  <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the list is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyList\">read only</a>, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n  <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
-          "html": "If <var>index</var> is greater than or equal to the length of\n  the list, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> an <a href=\"https://heycam.github.io/webidl/#indexsizeerror\">IndexSizeError</a> with code."
+          "html": "If <var>index</var> is greater than or equal to the length of\n  the list, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a href=\"https://webidl.spec.whatwg.org/#indexsizeerror\">IndexSizeError</a> with code."
         },
         {
           "html": "Let <var>item</var> be the list element at index <var>index</var>."
@@ -1440,7 +1440,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the list is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyList\">read only</a>, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a\n  <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the list is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyList\">read only</a>, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a\n  <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
           "html": "If <var>newItem</var> is an object type, and <var>newItem</var>\n  is not a detached object, then set <var>newItem</var> to be\n  a newly created object of the same type as <var>newItem</var>\n  and which has the same (number or length) value."
@@ -1499,7 +1499,7 @@
           "html": "Let <var>value</var> be the value being assigned to\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedEnumeration__baseVal\">baseVal</a>."
         },
         {
-          "html": "If <var>value</var> is 0 or is not the <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermNumericTypeValue\">numeric type value</a>\n  for any value of the reflected attribute, then throw a <a href=\"https://heycam.github.io/webidl/#exceptiondef-typeerror\">TypeError</a>."
+          "html": "If <var>value</var> is 0 or is not the <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermNumericTypeValue\">numeric type value</a>\n  for any value of the reflected attribute, then throw a <a href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\">TypeError</a>."
         },
         {
           "html": "Otherwise, if the reflecting IDL attribute is\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/painting.html#__svg__SVGMarkerElement__orientType\">orientType</a>\n  and <var>value</var> is <a href=\"https://w3c.github.io/svgwg/svg2-draft/painting.html#__svg__SVGMarkerElement__SVG_MARKER_ORIENT_ANGLE\">SVG_MARKER_ORIENT_ANGLE</a>,\n  then set the reflected attribute to the string \"0\"."
@@ -2035,7 +2035,7 @@
                   ]
                 },
                 {
-                  "html": "If <var>clipped</var> is true and the value of <a class=\"property\" href=\"https://drafts.fxtf.org/css-masking-1/#the-clip-path\">clip-path</a> on <var>element</var> is not\n      <span class=\"prop-value\">none</span>, then set <var>box</var> to be the tightest rectangle\n      in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the clipping path."
+                  "html": "If <var>clipped</var> is true and the value of <a class=\"property\" href=\"https://drafts.csswg.org/css-masking-1/#the-clip-path\">clip-path</a> on <var>element</var> is not\n      <span class=\"prop-value\">none</span>, then set <var>box</var> to be the tightest rectangle\n      in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the clipping path."
                 },
                 {
                   "html": "Return <var>box</var>."
@@ -2078,7 +2078,7 @@
                   ]
                 },
                 {
-                  "html": "If <var>clipped</var> is true and the value of <a class=\"property\" href=\"https://drafts.fxtf.org/css-masking-1/#the-clip-path\">clip-path</a> on <var>element</var> is not\n      <span class=\"prop-value\">none</span>, then set <var>box</var> to be the tightest rectangle\n      in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the clipping path."
+                  "html": "If <var>clipped</var> is true and the value of <a class=\"property\" href=\"https://drafts.csswg.org/css-masking-1/#the-clip-path\">clip-path</a> on <var>element</var> is not\n      <span class=\"prop-value\">none</span>, then set <var>box</var> to be the tightest rectangle\n      in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the clipping path."
                 },
                 {
                   "html": "Return <var>box</var>."
@@ -2121,7 +2121,7 @@
                   ]
                 },
                 {
-                  "html": "If <var>clipped</var> is true and the value of <a class=\"property\" href=\"https://drafts.fxtf.org/css-masking-1/#the-clip-path\">clip-path</a> on <var>element</var> is not\n      <span class=\"prop-value\">none</span>, then set <var>box</var> to be the tightest rectangle\n      in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the clipping path."
+                  "html": "If <var>clipped</var> is true and the value of <a class=\"property\" href=\"https://drafts.csswg.org/css-masking-1/#the-clip-path\">clip-path</a> on <var>element</var> is not\n      <span class=\"prop-value\">none</span>, then set <var>box</var> to be the tightest rectangle\n      in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the clipping path."
                 },
                 {
                   "html": "Return <var>box</var>."
@@ -2152,7 +2152,7 @@
                   ]
                 },
                 {
-                  "html": "If <var>clipped</var> is true:\n        <ul>\n          <li>If the value of <a class=\"property\" href=\"https://drafts.fxtf.org/css-masking-1/#the-clip-path\">clip-path</a> on <var>element</var> is not\n          <span class=\"prop-value\">none</span>,\n          then set <var>box</var> to be the tightest rectangle\n          in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the clipping path.</li>\n          <li>If the <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/render.html#OverflowAndClipProperties\">overflow</a> property applies to the <var>element</var>\n          and does not have a value of <span class=\"prop-value\">visible</span>,\n          then set <var>box</var> to be the tightest rectangle\n          in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the element's overflow bounds.</li>\n          <li>If the <a class=\"property\" href=\"https://drafts.fxtf.org/css-masking-1/#propdef-clip\">clip</a> property applies to the <var>element</var>\n          and does not have a value of <span class=\"prop-value\">auto</span>,\n          then set <var>box</var> to be the tightest rectangle\n          in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the rectangle specified by <a class=\"property\" href=\"https://drafts.fxtf.org/css-masking-1/#propdef-clip\">clip</a>.</li>\n        </ul>"
+                  "html": "If <var>clipped</var> is true:\n        <ul>\n          <li>If the value of <a class=\"property\" href=\"https://drafts.csswg.org/css-masking-1/#the-clip-path\">clip-path</a> on <var>element</var> is not\n          <span class=\"prop-value\">none</span>,\n          then set <var>box</var> to be the tightest rectangle\n          in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the clipping path.</li>\n          <li>If the <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/render.html#OverflowAndClipProperties\">overflow</a> property applies to the <var>element</var>\n          and does not have a value of <span class=\"prop-value\">visible</span>,\n          then set <var>box</var> to be the tightest rectangle\n          in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the element's overflow bounds.</li>\n          <li>If the <a class=\"property\" href=\"https://drafts.csswg.org/css-masking-1/#propdef-clip\">clip</a> property applies to the <var>element</var>\n          and does not have a value of <span class=\"prop-value\">auto</span>,\n          then set <var>box</var> to be the tightest rectangle\n          in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the rectangle specified by <a class=\"property\" href=\"https://drafts.csswg.org/css-masking-1/#propdef-clip\">clip</a>.</li>\n        </ul>"
                 },
                 {
                   "html": "Return <var>box</var>."
@@ -2183,7 +2183,7 @@
                   ]
                 },
                 {
-                  "html": "If <var>clipped</var> is true:\n        <ul>\n          <li>If the value of <a class=\"property\" href=\"https://drafts.fxtf.org/css-masking-1/#the-clip-path\">clip-path</a> on <var>element</var> is not\n          <span class=\"prop-value\">none</span>,\n          then set <var>box</var> to be the tightest rectangle\n          in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the clipping path.</li>\n          <li>If the <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/render.html#OverflowAndClipProperties\">overflow</a> property applies to the <var>element</var>\n          and does not have a value of <span class=\"prop-value\">visible</span>,\n          then set <var>box</var> to be the tightest rectangle\n          in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the element's overflow bounds.</li>\n          <li>If the <a class=\"property\" href=\"https://drafts.fxtf.org/css-masking-1/#propdef-clip\">clip</a> property applies to the <var>element</var>\n          and does not have a value of <span class=\"prop-value\">auto</span>,\n          then set <var>box</var> to be the tightest rectangle\n          in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the rectangle specified by <a class=\"property\" href=\"https://drafts.fxtf.org/css-masking-1/#propdef-clip\">clip</a>.</li>\n        </ul>"
+                  "html": "If <var>clipped</var> is true:\n        <ul>\n          <li>If the value of <a class=\"property\" href=\"https://drafts.csswg.org/css-masking-1/#the-clip-path\">clip-path</a> on <var>element</var> is not\n          <span class=\"prop-value\">none</span>,\n          then set <var>box</var> to be the tightest rectangle\n          in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the clipping path.</li>\n          <li>If the <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/render.html#OverflowAndClipProperties\">overflow</a> property applies to the <var>element</var>\n          and does not have a value of <span class=\"prop-value\">visible</span>,\n          then set <var>box</var> to be the tightest rectangle\n          in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the element's overflow bounds.</li>\n          <li>If the <a class=\"property\" href=\"https://drafts.csswg.org/css-masking-1/#propdef-clip\">clip</a> property applies to the <var>element</var>\n          and does not have a value of <span class=\"prop-value\">auto</span>,\n          then set <var>box</var> to be the tightest rectangle\n          in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the rectangle specified by <a class=\"property\" href=\"https://drafts.csswg.org/css-masking-1/#propdef-clip\">clip</a>.</li>\n        </ul>"
                 },
                 {
                   "html": "Return <var>box</var>."
@@ -2199,7 +2199,7 @@
                   "html": "Let <var>box</var> be the tightest rectangle in coordinate space <var>space</var> that\n      contains the <a href=\"https://w3c.github.io/svgwg/svg2-draft/embedded.html#TermPositioningRectangle\">positioning rectangle</a> defined by the\n      <span class=\"attr-name\">‘x’</span>,\n      <span class=\"attr-name\">‘y’</span>,\n      <span class=\"attr-name\">‘width’</span> and\n      <span class=\"attr-name\">‘height’</span> geometric properties of the element."
                 },
                 {
-                  "html": "If <var>clipped</var> is true and the value of <a class=\"property\" href=\"https://drafts.fxtf.org/css-masking-1/#the-clip-path\">clip-path</a> on <var>element</var> is not\n      <span class=\"prop-value\">none</span>, then set <var>box</var> to be the tightest rectangle\n      in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the clipping path."
+                  "html": "If <var>clipped</var> is true and the value of <a class=\"property\" href=\"https://drafts.csswg.org/css-masking-1/#the-clip-path\">clip-path</a> on <var>element</var> is not\n      <span class=\"prop-value\">none</span>, then set <var>box</var> to be the tightest rectangle\n      in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the clipping path."
                 },
                 {
                   "html": "Return <var>box</var>."
@@ -2215,7 +2215,7 @@
                   "html": "Let <var>box</var> be the tightest rectangle in coordinate space <var>space</var> that\n      contains the <a href=\"https://w3c.github.io/svgwg/svg2-draft/embedded.html#TermPositioningRectangle\">positioning rectangle</a> defined by the\n      <span class=\"attr-name\">‘x’</span>,\n      <span class=\"attr-name\">‘y’</span>,\n      <span class=\"attr-name\">‘width’</span> and\n      <span class=\"attr-name\">‘height’</span> geometric properties of the element."
                 },
                 {
-                  "html": "If <var>clipped</var> is true and the value of <a class=\"property\" href=\"https://drafts.fxtf.org/css-masking-1/#the-clip-path\">clip-path</a> on <var>element</var> is not\n      <span class=\"prop-value\">none</span>, then set <var>box</var> to be the tightest rectangle\n      in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the clipping path."
+                  "html": "If <var>clipped</var> is true and the value of <a class=\"property\" href=\"https://drafts.csswg.org/css-masking-1/#the-clip-path\">clip-path</a> on <var>element</var> is not\n      <span class=\"prop-value\">none</span>, then set <var>box</var> to be the tightest rectangle\n      in coordinate system <var>space</var> that contains the intersection of <var>box</var> and the clipping path."
                 },
                 {
                   "html": "Return <var>box</var>."
@@ -2297,10 +2297,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#ReadOnlyTransform\">read only</a>, then\n  <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#ReadOnlyTransform\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
-          "html": "Let <var>newMatrix</var> be the result of <code><a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dommatrixreadonly\">DOMMatrixReadOnly</a>.fromMatrix(<var>matrix</var>)</code>,\n  including the <a href=\"https://drafts.fxtf.org/geometry/#dommatrixinit-dictionary\">validate and fix-up</a> steps for missing values.\n  If that method throws an error, then re-throw that error and abort these steps."
+          "html": "Let <var>newMatrix</var> be the result of <code><a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dommatrixreadonly\">DOMMatrixReadOnly</a>.fromMatrix(<var>matrix</var>)</code>,\n  including the <a href=\"https://drafts.csswg.org/geometry-1/#dommatrixinit-dictionary\">validate and fix-up</a> steps for missing values.\n  If that method throws an error, then re-throw that error and abort these steps."
         },
         {
           "html": "If <var>newMatrix</var>.is2D() would return true,\n  then set the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a> object's\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformValue\">value</a> to a <span class=\"prop-value\">matrix(…)</span>\n  value that represents the same matrix as <var>newMatrix</var>."
@@ -2321,7 +2321,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#ReadOnlyTransform\">read only</a>, then\n  <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#ReadOnlyTransform\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
           "html": "Set the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a> object's\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/#TransformValue\">value</a> to a new transform function\n  value, depending on which method was called:",
@@ -2403,7 +2403,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransformList\">SVGTransformList</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyList\">read only</a>,\n  then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransformList\">SVGTransformList</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyList\">read only</a>,\n  then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
           "html": "If the list is empty, return null."
@@ -2457,10 +2457,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGPreserveAspectRatio\">SVGPreserveAspectRatio</a> is <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#ReadOnlyPreserveAspectRatio\">read only</a>, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGPreserveAspectRatio\">SVGPreserveAspectRatio</a> is <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#ReadOnlyPreserveAspectRatio\">read only</a>, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
-          "html": "If <var>value</var> is\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#__svg__SVGPreserveAspectRatio__SVG_PRESERVEASPECTRATIO_UNKNOWN\">SVG_PRESERVEASPECTRATIO_UNKNOWN</a>\n  or does not have a corresponding entry in the\n  alignment keyword table above, then throw a <a href=\"https://heycam.github.io/webidl/#exceptiondef-typeerror\">TypeError</a>."
+          "html": "If <var>value</var> is\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#__svg__SVGPreserveAspectRatio__SVG_PRESERVEASPECTRATIO_UNKNOWN\">SVG_PRESERVEASPECTRATIO_UNKNOWN</a>\n  or does not have a corresponding entry in the\n  alignment keyword table above, then throw a <a href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\">TypeError</a>."
         },
         {
           "html": "Let <var>string</var> be the corresponding keyword\n  in the alignment keyword table above for <var>value</var>."
@@ -2499,10 +2499,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGPreserveAspectRatio\">SVGPreserveAspectRatio</a> is <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#ReadOnlyPreserveAspectRatio\">read only</a>, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> a <a href=\"https://heycam.github.io/webidl/#nomodificationallowederror\">NoModificationAllowedError</a>."
+          "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGPreserveAspectRatio\">SVGPreserveAspectRatio</a> is <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#ReadOnlyPreserveAspectRatio\">read only</a>, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
-          "html": "If <var>value</var> is\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#__svg__SVGPreserveAspectRatio__SVG_MEETORSLICE_UNKNOWN\">SVG_MEETORSLICE_UNKNOWN</a>\n  or does not have a corresponding entry in the\n  meet-or-slice keyword table above, then throw a <a href=\"https://heycam.github.io/webidl/#exceptiondef-typeerror\">TypeError</a>."
+          "html": "If <var>value</var> is\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#__svg__SVGPreserveAspectRatio__SVG_MEETORSLICE_UNKNOWN\">SVG_MEETORSLICE_UNKNOWN</a>\n  or does not have a corresponding entry in the\n  meet-or-slice keyword table above, then throw a <a href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\">TypeError</a>."
         },
         {
           "html": "Let <var>align</var> be the value that would be\n  returned from the\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#__svg__SVGPreserveAspectRatio__align\">align</a>\n  member on this <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGPreserveAspectRatio\">SVGPreserveAspectRatio</a>."
@@ -3323,7 +3323,7 @@
           "html": "Assign an index to each <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermAddressableCharacter\">addressable character</a> in the DOM within this element,\n  where the first character has index 0."
         },
         {
-          "html": "If <var>charnum</var> is greater than the highest index assigned\n  to a character or if <var>nchars</var> is negative, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> an <a href=\"https://heycam.github.io/webidl/#indexsizeerror\">IndexSizeError</a>."
+          "html": "If <var>charnum</var> is greater than the highest index assigned\n  to a character or if <var>nchars</var> is negative, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a href=\"https://webidl.spec.whatwg.org/#indexsizeerror\">IndexSizeError</a>."
         },
         {
           "html": "Let <var>length</var> be a length in user units, initialized to 0."
@@ -3388,7 +3388,7 @@
           "html": "Let <var>cluster</var> be the result of\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermFindTypographicCharacterForCharacter\">finding the typographic\n  character for the character</a> at index <var>charnum</var> within\n  the current element."
         },
         {
-          "html": "If <var>cluster</var> is null, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> an\n  <a href=\"https://heycam.github.io/webidl/#indexsizeerror\">IndexSizeError</a>."
+          "html": "If <var>cluster</var> is null, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n  <a href=\"https://webidl.spec.whatwg.org/#indexsizeerror\">IndexSizeError</a>."
         },
         {
           "html": "Let <var>p</var> be the\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermAlignmentPoint\">alignment point</a> of the <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermTypographicCharacterUnit\">typographic character</a>\n  that correspond to the character at index <var>charnum</var>,\n  in the coordinate system of the current element."
@@ -3406,7 +3406,7 @@
           "html": "Let <var>cluster</var> be the result of\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermFindTypographicCharacterForCharacter\">finding the typographic\n  character for the character</a> at index <var>charnum</var> within\n  the current element."
         },
         {
-          "html": "If <var>cluster</var> is null, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> an\n  <a href=\"https://heycam.github.io/webidl/#indexsizeerror\">IndexSizeError</a>."
+          "html": "If <var>cluster</var> is null, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n  <a href=\"https://webidl.spec.whatwg.org/#indexsizeerror\">IndexSizeError</a>."
         },
         {
           "html": "Let <var>p</var> be the\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermAlignmentPoint\">alignment point</a> of <var>cluster</var>\n  that correspond to the character at index <var>charnum</var>,\n  in the coordinate system of the current element."
@@ -3433,7 +3433,7 @@
           "html": "Let <var>cluster</var> be the result of\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermFindTypographicCharacterForCharacter\">finding the typographic\n  character for the character</a> at index <var>charnum</var> within\n  the current element."
         },
         {
-          "html": "If <var>cluster</var> is null, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> an\n  <a href=\"https://heycam.github.io/webidl/#indexsizeerror\">IndexSizeError</a>."
+          "html": "If <var>cluster</var> is null, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n  <a href=\"https://webidl.spec.whatwg.org/#indexsizeerror\">IndexSizeError</a>."
         },
         {
           "html": "Let <var>quad</var> be the potentially rotated rectangle in\n  the current element's coordinate system that\n  is the glyph cell for <var>cluster</var>."
@@ -3454,7 +3454,7 @@
           "html": "Let <var>cluster</var> be the result of\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermFindTypographicCharacterForCharacter\">finding the typographic\n  character for the character</a> at index <var>charnum</var> within\n  the current element."
         },
         {
-          "html": "If <var>cluster</var> is null, then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> an\n  <a href=\"https://heycam.github.io/webidl/#indexsizeerror\">IndexSizeError</a>."
+          "html": "If <var>cluster</var> is null, then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an\n  <a href=\"https://webidl.spec.whatwg.org/#indexsizeerror\">IndexSizeError</a>."
         },
         {
           "html": "Let <var>direction</var> be the angle in degrees that represents\n  the direction of the <var>cluster</var>'s advance.\n  This direction takes into account\n  the writing mode being used, the direction of the character,\n  the <a class=\"property\" href=\"https://www.w3.org/TR/css3-writing-modes/#text-orientation\">text-orientation</a>, <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#GlyphOrientationHorizontalProperty\">glyph-orientation-horizontal</a>\n  and <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#GlyphOrientationVerticalProperty\">glyph-orientation-vertical</a> properties,\n  any <span class=\"attr-name\">‘<a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextElementRotateAttribute\"><span>rotate</span></a>’</span> value that applies to <var>cluster</var>,\n  and any rotation applied to due a <span class=\"element-name\">‘<a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TextPathElement\"><span>textPath</span></a>’</span>."
@@ -3508,16 +3508,16 @@
           "html": "Let <var>end</var> = <var>charnum</var> + <var>nchars</var>."
         },
         {
-          "html": "If <var>charnum</var> ≥ <var>count</var> or <var>end</var> ≥ <var>count</var>,\n  then <a href=\"https://heycam.github.io/webidl/#dfn-throw\">throw</a> an <a href=\"https://heycam.github.io/webidl/#indexsizeerror\">IndexSizeError</a>."
+          "html": "If <var>charnum</var> ≥ <var>count</var> or <var>end</var> ≥ <var>count</var>,\n  then <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> an <a href=\"https://webidl.spec.whatwg.org/#indexsizeerror\">IndexSizeError</a>."
         },
         {
-          "html": "Remove all <a href=\"https://www.w3.org/TR/2014/WD-dom-20140204/#concept-range\">ranges</a>\n  from the document's <a href=\"http://w3c.github.io/selection-api/#dfn-selection\">selection</a>. [<a href=\"https://w3c.github.io/svgwg/svg2-draft/refs.html#ref-dom\">DOM</a>][<a href=\"https://w3c.github.io/svgwg/svg2-draft/refs.html#ref-editing\">EDITING</a>]"
+          "html": "Remove all <a href=\"https://www.w3.org/TR/2014/WD-dom-20140204/#concept-range\">ranges</a>\n  from the document's <a href=\"https://w3c.github.io/selection-api/#dfn-selection\">selection</a>. [<a href=\"https://w3c.github.io/svgwg/svg2-draft/refs.html#ref-dom\">DOM</a>][<a href=\"https://w3c.github.io/svgwg/svg2-draft/refs.html#ref-editing\">EDITING</a>]"
         },
         {
-          "html": "Set the <a href=\"http://w3c.github.io/selection-api/#dfn-selection\">selection</a>'s\n  <a href=\"http://w3c.github.io/selection-api/#dfn-direction\">direction</a> to\n  forwards."
+          "html": "Set the <a href=\"https://w3c.github.io/selection-api/#dfn-selection\">selection</a>'s\n  <a href=\"https://w3c.github.io/selection-api/#dfn-direction\">direction</a> to\n  forwards."
         },
         {
-          "html": "Add to the <a href=\"http://w3c.github.io/selection-api/#dfn-selection\">selection</a>\n  a new <a href=\"https://www.w3.org/TR/2014/WD-dom-20140204/#concept-range\">range</a> whose\n  <a href=\"https://www.w3.org/TR/2014/WD-dom-20140204/#concept-range-start\">start</a> is the\n  <a href=\"https://www.w3.org/TR/2014/WD-dom-20140204/#concept-range-bp\">boundary point</a>\n  tuple (<var>node</var>, <var>charnum</var>) and <a href=\"https://www.w3.org/TR/2014/WD-dom-20140204/#concept-range-end\">end</a>\n  is the <a href=\"https://www.w3.org/TR/2014/WD-dom-20140204/#concept-range-bp\">boundary point</a>\n  tuple (<var>node</var>, <var>end</var>)."
+          "html": "Add to the <a href=\"https://w3c.github.io/selection-api/#dfn-selection\">selection</a>\n  a new <a href=\"https://www.w3.org/TR/2014/WD-dom-20140204/#concept-range\">range</a> whose\n  <a href=\"https://www.w3.org/TR/2014/WD-dom-20140204/#concept-range-start\">start</a> is the\n  <a href=\"https://www.w3.org/TR/2014/WD-dom-20140204/#concept-range-bp\">boundary point</a>\n  tuple (<var>node</var>, <var>charnum</var>) and <a href=\"https://www.w3.org/TR/2014/WD-dom-20140204/#concept-range-end\">end</a>\n  is the <a href=\"https://www.w3.org/TR/2014/WD-dom-20140204/#concept-range-bp\">boundary point</a>\n  tuple (<var>node</var>, <var>end</var>)."
         }
       ]
     },
