@@ -1287,7 +1287,7 @@
         "href": "https://w3c.github.io/pointerevents/#dom-wheelevent"
       },
       "WheelEventInit": {
-        "fragment": "dictionary WheelEventInit : MouseEventInit {\n  double deltaX = 0.0;\n  double deltaY = 0.0;\n  double deltaZ = 0.0;\n  unsigned long deltaMode = 0;\n};",
+        "fragment": "dictionary WheelEventInit : MouseEventInit {\n  double deltaX = 0.0;\n  double deltaY = 0.0;\n  double deltaZ = 0.0;\n  unsigned long deltaMode = 0;\n  boolean momentum = false;\n};",
         "type": "dictionary",
         "name": "WheelEventInit",
         "inheritance": "MouseEventInit",
@@ -1367,6 +1367,25 @@
             },
             "required": false,
             "href": "https://w3c.github.io/pointerevents/#dom-wheeleventinit-deltamode"
+          },
+          {
+            "type": "field",
+            "name": "momentum",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false,
+            "href": "https://w3c.github.io/pointerevents/#dom-wheeleventinit-momentum"
           }
         ],
         "extAttrs": [],

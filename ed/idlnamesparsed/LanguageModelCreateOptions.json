@@ -18,7 +18,7 @@
         "title": "Prompt API",
         "url": "https://webmachinelearning.github.io/prompt-api/"
       },
-      "fragment": "dictionary LanguageModelCreateCoreOptions {\n  // Note: these two have custom out-of-range handling behavior, not in the IDL layer.\n  // They are unrestricted double so as to allow +Infinity without failing.\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  unrestricted double topK;\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  unrestricted double temperature;\n\n  sequence<LanguageModelExpected> expectedInputs;\n  sequence<LanguageModelExpected> expectedOutputs;\n  sequence<LanguageModelTool> tools;\n};",
+      "fragment": "dictionary LanguageModelCreateCoreOptions {\n  // Note: these two have custom out-of-range handling behavior, not in the IDL layer.\n  // They are unrestricted double so as to allow +Infinity without failing.\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  unrestricted double topK;\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  unrestricted double temperature;\n\n  LanguageModelSamplingMode samplingMode = \"default\";\n\n  sequence<LanguageModelExpected> expectedInputs;\n  sequence<LanguageModelExpected> expectedOutputs;\n  sequence<LanguageModelTool> tools;\n};",
       "href": "https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelcreatecoreoptions"
     },
     "extended": [],

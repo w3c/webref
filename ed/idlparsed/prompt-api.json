@@ -15,7 +15,7 @@
     },
     "idlNames": {
       "LanguageModel": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface LanguageModel : EventTarget {\n  static Promise<LanguageModel> create(optional LanguageModelCreateOptions options = {});\n  static Promise<Availability> availability(optional LanguageModelCreateCoreOptions options = {});\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  static Promise<LanguageModelParams?> params();\n\n  // These will throw \"NotSupportedError\" DOMExceptions if role = \"system\"\n  Promise<DOMString> prompt(\n    LanguageModelPrompt input,\n    optional LanguageModelPromptOptions options = {}\n  );\n  ReadableStream promptStreaming(\n    LanguageModelPrompt input,\n    optional LanguageModelPromptOptions options = {}\n  );\n  Promise<undefined> append(\n    LanguageModelPrompt input,\n    optional LanguageModelAppendOptions options = {}\n  );\n\n  Promise<double> measureContextUsage(\n    LanguageModelPrompt input,\n    optional LanguageModelPromptOptions options = {}\n  );\n  readonly attribute double contextUsage;\n  readonly attribute unrestricted double contextWindow;\n  attribute EventHandler oncontextoverflow;\n\n  // **DEPRECATED**: This method is only available in extension contexts.\n  Promise<double> measureInputUsage(\n    LanguageModelPrompt input,\n    optional LanguageModelPromptOptions options = {}\n  );\n  // **DEPRECATED**: This attribute is only available in extension contexts.\n  readonly attribute double inputUsage;\n  // **DEPRECATED**: This attribute is only available in extension contexts.\n  readonly attribute unrestricted double inputQuota;\n  // **DEPRECATED**: This attribute is only available in extension contexts.\n  attribute EventHandler onquotaoverflow;\n\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  readonly attribute unsigned long topK;\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  readonly attribute float temperature;\n\n  Promise<LanguageModel> clone(optional LanguageModelCloneOptions options = {});\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface LanguageModel : EventTarget {\n  static Promise<LanguageModel> create(optional LanguageModelCreateOptions options = {});\n  static Promise<Availability> availability(optional LanguageModelCreateCoreOptions options = {});\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  static Promise<LanguageModelParams?> params();\n\n  // These will throw \"NotSupportedError\" DOMExceptions if role = \"system\"\n  Promise<DOMString> prompt(\n    LanguageModelPrompt input,\n    optional LanguageModelPromptOptions options = {}\n  );\n  ReadableStream promptStreaming(\n    LanguageModelPrompt input,\n    optional LanguageModelPromptOptions options = {}\n  );\n  Promise<undefined> append(\n    LanguageModelPrompt input,\n    optional LanguageModelAppendOptions options = {}\n  );\n\n  Promise<double> measureContextUsage(\n    LanguageModelPrompt input,\n    optional LanguageModelPromptOptions options = {}\n  );\n  readonly attribute double contextUsage;\n  readonly attribute unrestricted double contextWindow;\n  attribute EventHandler oncontextoverflow;\n\n  // **DEPRECATED**: This method is only available in extension contexts.\n  Promise<double> measureInputUsage(\n    LanguageModelPrompt input,\n    optional LanguageModelPromptOptions options = {}\n  );\n  // **DEPRECATED**: This attribute is only available in extension contexts.\n  readonly attribute double inputUsage;\n  // **DEPRECATED**: This attribute is only available in extension contexts.\n  readonly attribute unrestricted double inputQuota;\n  // **DEPRECATED**: This attribute is only available in extension contexts.\n  attribute EventHandler onquotaoverflow;\n\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  readonly attribute unsigned long topK;\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  readonly attribute float temperature;\n\n  readonly attribute LanguageModelSamplingMode samplingMode;\n\n  Promise<LanguageModel> clone(optional LanguageModelCloneOptions options = {});\n};",
         "type": "interface",
         "name": "LanguageModel",
         "inheritance": "EventTarget",
@@ -553,6 +553,22 @@
             "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodel-temperature"
           },
           {
+            "type": "attribute",
+            "name": "samplingMode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "LanguageModelSamplingMode"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true,
+            "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodel-samplingmode"
+          },
+          {
             "type": "operation",
             "name": "clone",
             "idlType": {
@@ -826,7 +842,7 @@
         "href": "https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodeltool"
       },
       "LanguageModelCreateCoreOptions": {
-        "fragment": "dictionary LanguageModelCreateCoreOptions {\n  // Note: these two have custom out-of-range handling behavior, not in the IDL layer.\n  // They are unrestricted double so as to allow +Infinity without failing.\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  unrestricted double topK;\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  unrestricted double temperature;\n\n  sequence<LanguageModelExpected> expectedInputs;\n  sequence<LanguageModelExpected> expectedOutputs;\n  sequence<LanguageModelTool> tools;\n};",
+        "fragment": "dictionary LanguageModelCreateCoreOptions {\n  // Note: these two have custom out-of-range handling behavior, not in the IDL layer.\n  // They are unrestricted double so as to allow +Infinity without failing.\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  unrestricted double topK;\n  // **EXPERIMENTAL**: Only available in extension and experimental contexts.\n  unrestricted double temperature;\n\n  LanguageModelSamplingMode samplingMode = \"default\";\n\n  sequence<LanguageModelExpected> expectedInputs;\n  sequence<LanguageModelExpected> expectedOutputs;\n  sequence<LanguageModelTool> tools;\n};",
         "type": "dictionary",
         "name": "LanguageModelCreateCoreOptions",
         "inheritance": null,
@@ -862,6 +878,25 @@
             "default": null,
             "required": false,
             "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-temperature"
+          },
+          {
+            "type": "field",
+            "name": "samplingMode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "LanguageModelSamplingMode"
+            },
+            "default": {
+              "type": "string",
+              "value": "default"
+            },
+            "required": false,
+            "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodelcreatecoreoptions-samplingmode"
           },
           {
             "type": "field",
@@ -1351,6 +1386,40 @@
         "partial": false,
         "href": "https://webmachinelearning.github.io/prompt-api/#dictdef-languagemodelmessagecontent"
       },
+      "LanguageModelSamplingMode": {
+        "fragment": "enum LanguageModelSamplingMode { \"most-predictable\", \"predictable\", \"balanced\", \"creative\", \"most-creative\" };",
+        "type": "enum",
+        "name": "LanguageModelSamplingMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "most-predictable",
+            "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodelsamplingmode-most-predictable"
+          },
+          {
+            "type": "enum-value",
+            "value": "predictable",
+            "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodelsamplingmode-predictable"
+          },
+          {
+            "type": "enum-value",
+            "value": "balanced",
+            "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodelsamplingmode-balanced"
+          },
+          {
+            "type": "enum-value",
+            "value": "creative",
+            "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodelsamplingmode-creative"
+          },
+          {
+            "type": "enum-value",
+            "value": "most-creative",
+            "href": "https://webmachinelearning.github.io/prompt-api/#dom-languagemodelsamplingmode-most-creative"
+          }
+        ],
+        "extAttrs": [],
+        "href": "https://webmachinelearning.github.io/prompt-api/#enumdef-languagemodelsamplingmode"
+      },
       "LanguageModelMessageRole": {
         "fragment": "enum LanguageModelMessageRole { \"system\", \"user\", \"assistant\" };",
         "type": "enum",
@@ -1489,6 +1558,7 @@
         "ReadableStream",
         "LanguageModelAppendOptions",
         "EventHandler",
+        "LanguageModelSamplingMode",
         "LanguageModelCloneOptions",
         "DestroyableModel"
       ],
@@ -1497,6 +1567,7 @@
         "LanguageModelToolFunction"
       ],
       "LanguageModelCreateCoreOptions": [
+        "LanguageModelSamplingMode",
         "LanguageModelExpected",
         "LanguageModelTool"
       ],
