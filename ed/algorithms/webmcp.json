@@ -69,7 +69,7 @@
           "html": "<p>Let <var>tool map</var> be <var>modelContext</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#modelcontext-internal-context\" id=\"ref-for-modelcontext-internal-context\">internal context</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#model-context-tool-map\" id=\"ref-for-model-context-tool-map①\">tool map</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a> <var>tool map</var>[<var>tool name</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>.</p>"
+          "html": "<p>If <var>tool map</var>[<var>tool name</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exist</a>, then return.</p>"
         },
         {
           "html": "<p>Let <var>exposed origins</var> be <var>tool map</var>[<var>tool name</var>]'s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#tool-definition-exposed-origins\" id=\"ref-for-tool-definition-exposed-origins\">exposed origins</a>.</p>"
@@ -148,6 +148,9 @@
           "html": "<p>Let <var>untrusted content hint</var> be true if <var>tool</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webmcp/#dom-modelcontexttool-annotations\" id=\"ref-for-dom-modelcontexttool-annotations①\">annotations</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists④\">exists</a> and\n its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webmcp/#dom-toolannotations-untrustedcontenthint\" id=\"ref-for-dom-toolannotations-untrustedcontenthint\">untrustedContentHint</a></code> is true. Otherwise, let it be false.</p>"
         },
         {
+          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a>.</p>"
+        },
+        {
           "html": "<p>Let <var>signal</var> be <var>options</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webmcp/#dom-modelcontextregistertooloptions-signal\" id=\"ref-for-dom-modelcontextregistertooloptions-signal\">signal</a></code>.</p>"
         },
         {
@@ -155,10 +158,19 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>signal</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted\">aborted</a>, then optionally <a data-link-type=\"dfn\" href=\"https://console.spec.whatwg.org/#report-a-warning-to-the-console\" id=\"ref-for-report-a-warning-to-the-console\">report a warning to the console</a>\n  indicating that the tool was not registered because the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#abortsignal\" id=\"ref-for-abortsignal\">AbortSignal</a></code> was already\n  <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted①\">aborted</a>, and return.</p>"
+              "html": "<p>If <var>signal</var> is <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-aborted\" id=\"ref-for-abortsignal-aborted\">aborted</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a>\n  <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason\">abort reason</a>.</p>"
             },
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add\">Add an abort algorithm</a> to <var>signal</var> that <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#model-context-unregister-a-tool\" id=\"ref-for-model-context-unregister-a-tool\">unregisters a tool</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③\">this</a> and <var>tool name</var>.</p>"
+              "html": "<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-add\" id=\"ref-for-abortsignal-add\">Add the following abort steps</a> to <var>signal</var>:",
+              "rationale": "reject",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#model-context-unregister-a-tool\" id=\"ref-for-model-context-unregister-a-tool\">Unregister a tool</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a> and <var>tool name</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">Reject</a> <var>promise</var> with <var>signal</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#abortsignal-abort-reason\" id=\"ref-for-abortsignal-abort-reason①\">abort reason</a>.</p>"
+                }
+              ]
             }
           ]
         },
@@ -177,7 +189,7 @@
                   "html": "<p>Let <var>parsedURL</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">URL parser</a> on <var>origin</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>parsedURL</var> is failure or its <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a> is not <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-secure-contexts/#is-origin-trustworthy\" id=\"ref-for-is-origin-trustworthy\">potentially trustworthy</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a> a\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code>.</p>"
+                  "html": "<p>If <var>parsedURL</var> is failure or its <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin\">origin</a> is not <a data-link-type=\"abstract-op\" href=\"https://w3c.github.io/webappsec-secure-contexts/#is-origin-trustworthy\" id=\"ref-for-is-origin-trustworthy\">potentially trustworthy</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑧\">a promise rejected with</a> a\n \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#securityerror\" id=\"ref-for-securityerror①\">SecurityError</a></code>\" <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code>.</p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>parsedURL</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin①\">origin</a> to <var>exposed origins</var>.</p>"
@@ -190,10 +202,7 @@
           "html": "<p>Let <var>tool definition</var> be a new <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#tool-definition\" id=\"ref-for-tool-definition①\">tool definition</a>, with the following <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#struct-item\" id=\"ref-for-struct-item②\">items</a>:</p>\n      <dl>\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#tool-definition-name\" id=\"ref-for-tool-definition-name①\">name</a>\n       </dt><dd data-md=\"\">\n        <p><var>tool name</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#tool-definition-title\" id=\"ref-for-tool-definition-title\">title</a>\n       </dt><dd data-md=\"\">\n        <p><var>tool title</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#tool-definition-description\" id=\"ref-for-tool-definition-description\">description</a>\n       </dt><dd data-md=\"\">\n        <p><var>tool</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webmcp/#dom-modelcontexttool-description\" id=\"ref-for-dom-modelcontexttool-description②\">description</a></code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#tool-definition-input-schema\" id=\"ref-for-tool-definition-input-schema\">input schema</a>\n       </dt><dd data-md=\"\">\n        <p><var>stringified input schema</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#tool-definition-execute-steps\" id=\"ref-for-tool-definition-execute-steps\">execute steps</a>\n       </dt><dd data-md=\"\">\n        <p>steps that invoke <var>tool</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/webmcp/#dom-modelcontexttool-execute\" id=\"ref-for-dom-modelcontexttool-execute\">execute</a></code></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#tool-definition-read-only-hint\" id=\"ref-for-tool-definition-read-only-hint\">read-only hint</a>\n       </dt><dd data-md=\"\">\n        <p><var>read-only hint</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#tool-definition-untrusted-content-hint\" id=\"ref-for-tool-definition-untrusted-content-hint\">untrusted content hint</a>\n       </dt><dd data-md=\"\">\n        <p><var>untrusted content hint</var></p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#tool-definition-exposed-origins\" id=\"ref-for-tool-definition-exposed-origins①\">exposed origins</a>\n       </dt><dd data-md=\"\">\n        <p><var>exposed origins</var></p>\n      </dd></dl>"
         },
         {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#modelcontext-internal-context\" id=\"ref-for-modelcontext-internal-context②\">internal context</a>[<var>tool name</var>] to <var>tool definition</var>.</p>"
-        },
-        {
-          "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise\">a new promise</a> created in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a>.</p>"
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#modelcontext-internal-context\" id=\"ref-for-modelcontext-internal-context②\">internal context</a>[<var>tool name</var>] to <var>tool definition</var>.</p>"
         },
         {
           "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
@@ -230,10 +239,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: This algorithm is running in the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#browsers-agent\" id=\"ref-for-browsers-agent⑦\">browser agent</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#ai-agent-queue\" id=\"ref-for-ai-agent-queue\">AI agent queue</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: This algorithm is running in the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#browsers-agent\" id=\"ref-for-browsers-agent⑦\">browser agent</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#ai-agent-queue\" id=\"ref-for-ai-agent-queue\">AI agent queue</a>.</p>"
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①\">active document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active①\">fully active</a>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: <var>traversable</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#nav-document\" id=\"ref-for-nav-document①\">active document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active①\">fully active</a>.</p>"
         },
         {
           "html": "<p>Let <var>observation</var> be a new <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/webmcp/#observation\" id=\"ref-for-observation②\">observation</a>.</p>"
