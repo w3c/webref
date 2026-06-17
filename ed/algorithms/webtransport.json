@@ -970,8 +970,8 @@
     {
       "name": "WebTransport/getStats()",
       "href": "https://w3c.github.io/webtransport/#dom-webtransport-getstats",
-      "html": "When getStats is called, the user agent MUST run the following steps:",
-      "rationale": "let",
+      "html": "<dl>\n     <dt data-md=\"\"><dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebTransport\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-webtransport-getstats\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getStats()</code></dfn>\n     </dt><dd data-md=\"\">\n      <p>Gathers stats for this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#webtransport\" id=\"ref-for-webtransport②①\">WebTransport</a></code>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#underlying-connection\" id=\"ref-for-underlying-connection\">underlying connection</a>\n and reports the result asynchronously.</p>\n      <p>When getStats is called, the user agent MUST run the following steps:</p>\n      \n    </dd></dl>",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>transport</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>.</p>"
@@ -997,6 +997,9 @@
             },
             {
               "html": "<p>Let <var>gatheredStats</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of stats specific to the\n  <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#underlying-connection\" id=\"ref-for-underlying-connection①\">underlying connection</a> needed to populate the\n  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary-member\" id=\"ref-for-dfn-dictionary-member\">dictionary members</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dictdef-webtransportconnectionstats\" id=\"ref-for-dictdef-webtransportconnectionstats①\">WebTransportConnectionStats</a></code> and\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dictdef-webtransportdatagramstats\" id=\"ref-for-dictdef-webtransportdatagramstats\">WebTransportDatagramStats</a></code> accurately.</p>"
+            },
+            {
+              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webtransport/#dom-webtransport-newconnection-slot\" id=\"ref-for-dom-webtransport-newconnection-slot②\">[[NewConnection]]</a></code> is \"<code>no</code>\", then remove from\n  <var>gatheredStats</var> all stats not marked as <a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#pooled-connection-stat\" id=\"ref-for-pooled-connection-stat\">pooled connection stats</a>.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://w3c.github.io/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①①\">Queue a network task</a> with <var>transport</var> to run the following steps:",
