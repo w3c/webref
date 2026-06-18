@@ -22,10 +22,10 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>list</var> contains the focused box, remove all other boxes from <var>list</var>.</p>"
+              "html": "<p>If <var>list</var> contains one or more boxes\nthat are focused or have a focused descendant,\nremove all other boxes from <var>list</var></p>"
             },
             {
-              "html": "<p>If <var>list</var> contains the targeted box, remove all other boxes from <var>list</var>.</p>"
+              "html": "<p>Else if <var>list</var> contains one or more boxes\nthat are targetted or have a targetted descendant,\nremove all other boxes from <var>list</var>.</p>"
             },
             {
               "html": "For each <var>box</var> in <var>list</var>:",
