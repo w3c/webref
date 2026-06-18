@@ -514,6 +514,12 @@
       "rationale": ".algorithm",
       "steps": [
         {
+          "html": "<p>Let <var>value</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-value-normalize\" id=\"ref-for-concept-header-value-normalize\">normalizing</a> <var>value</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>value</var> is not a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#header-value\" id=\"ref-for-header-value\">header value</a>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with②\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
+        },
+        {
           "html": "<p>Let <var>promise</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑤\">a new promise</a>.</p>"
         },
         {
@@ -1242,10 +1248,10 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#verify-router-condition\" id=\"ref-for-verify-router-condition\">Verify Router Condition</a> algorithm with <var>rule</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-routerrule-condition\" id=\"ref-for-dom-routerrule-condition\">condition</a></code>\"] and <var>serviceWorker</var> returns false, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with②\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
+              "html": "<p>If running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#verify-router-condition\" id=\"ref-for-verify-router-condition\">Verify Router Condition</a> algorithm with <var>rule</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-routerrule-condition\" id=\"ref-for-dom-routerrule-condition\">condition</a></code>\"] and <var>serviceWorker</var> returns false, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with③\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
             },
             {
-              "html": "<p>If <var>rule</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-routerrule-source\" id=\"ref-for-dom-routerrule-source\">source</a></code>\"] is either of \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-routersourceenum-fetch-event\" id=\"ref-for-dom-routersourceenum-fetch-event\">fetch-event</a></code>\" or \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-routersourceenum-race-network-and-fetch-handler\" id=\"ref-for-dom-routersourceenum-race-network-and-fetch-handler①\">race-network-and-fetch-handler</a></code>\", and <var>serviceWorker</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-set-of-event-types-to-handle\" id=\"ref-for-dfn-set-of-event-types-to-handle\">set of event types to handle</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/service-workers/#service-worker-global-scope-fetch-event\" id=\"ref-for-service-worker-global-scope-fetch-event③\">fetch</a></code>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with③\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
+              "html": "<p>If <var>rule</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-routerrule-source\" id=\"ref-for-dom-routerrule-source\">source</a></code>\"] is either of \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-routersourceenum-fetch-event\" id=\"ref-for-dom-routersourceenum-fetch-event\">fetch-event</a></code>\" or \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/service-workers/#dom-routersourceenum-race-network-and-fetch-handler\" id=\"ref-for-dom-routersourceenum-race-network-and-fetch-handler①\">race-network-and-fetch-handler</a></code>\", and <var>serviceWorker</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#dfn-set-of-event-types-to-handle\" id=\"ref-for-dfn-set-of-event-types-to-handle\">set of event types to handle</a> does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain\">contain</a> <code class=\"idl\"><a class=\"idl-code\" data-link-type=\"event\" href=\"https://www.w3.org/TR/service-workers/#service-worker-global-scope-fetch-event\" id=\"ref-for-service-worker-global-scope-fetch-event③\">fetch</a></code>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with④\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
             }
           ]
         },
@@ -1278,7 +1284,7 @@
               ]
             },
             {
-              "html": "<p>If running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#check-router-registration-limit\" id=\"ref-for-check-router-registration-limit\">Check Router Registration Limit</a> with <var>allRules</var> returns false, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
+              "html": "<p>If running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#check-router-registration-limit\" id=\"ref-for-check-router-registration-limit\">Check Router Registration Limit</a> with <var>allRules</var> returns false, reject <var>promise</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code>.</p>"
             },
             {
               "html": "<p>Set <var>serviceWorker</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/service-workers/#service-worker-list-of-router-rules\" id=\"ref-for-service-worker-list-of-router-rules①\">list of router rules</a> to <var>allRules</var>.</p>"
@@ -1413,7 +1419,7 @@
                               "rationale": "error",
                               "steps": [
                                 {
-                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error\">error</a> <var>newStream</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code>.</p>"
+                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-error\" id=\"ref-for-readablestream-error\">error</a> <var>newStream</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code>.</p>"
                                 }
                               ]
                             }
@@ -1587,7 +1593,7 @@
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p>Set <var>r</var> to the associated <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request①\">request</a> of the result of invoking the initial value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request④\">Request</a></code> as constructor with <var>request</var> as its argument. If this <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throws</a> an exception, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with④\">a promise rejected with</a> that exception.</p>"
+                  "html": "<p>Set <var>r</var> to the associated <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request①\">request</a> of the result of invoking the initial value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request④\">Request</a></code> as constructor with <var>request</var> as its argument. If this <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throws</a> an exception, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑤\">a promise rejected with</a> that exception.</p>"
                 }
               ]
             }
@@ -1713,7 +1719,7 @@
               "html": "<p>Let <var>r</var> be <var>request</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request②\">request</a>.</p>"
             },
             {
-              "html": "<p>If <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url①\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is not one of \"<code>http</code>\" and \"<code>https</code>\", or <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method①\">method</a> is not `<code>GET</code>`, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑤\">a promise rejected with</a> a <code>TypeError</code>.</p>"
+              "html": "<p>If <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url①\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is not one of \"<code>http</code>\" and \"<code>https</code>\", or <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method①\">method</a> is not `<code>GET</code>`, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑥\">a promise rejected with</a> a <code>TypeError</code>.</p>"
             }
           ]
         },
@@ -1725,7 +1731,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>r</var> be the associated <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request③\">request</a> of the result of invoking the initial value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request⑥\">Request</a></code> as constructor with <var>request</var> as its argument. If this <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throws</a> an exception, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑥\">a promise rejected with</a> that exception.</p>"
+              "html": "<p>Let <var>r</var> be the associated <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request③\">request</a> of the result of invoking the initial value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request⑥\">Request</a></code> as constructor with <var>request</var> as its argument. If this <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throws</a> an exception, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a> that exception.</p>"
             },
             {
               "html": "If <var>r</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url②\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①\">scheme</a> is not one of \"<code>http</code>\" and \"<code>https</code>\", then:",
@@ -1735,7 +1741,7 @@
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑧\">For each</a> <var>fetchController</var> of <var>fetchControllers</var>, <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#fetch-controller-abort\" id=\"ref-for-fetch-controller-abort\">abort</a> <var>fetchController</var>.</p>"
                 },
                 {
-                  "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a> a <code>TypeError</code>.</p>"
+                  "html": "<p>Return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑧\">a promise rejected with</a> a <code>TypeError</code>.</p>"
                 }
               ]
             },
@@ -1897,7 +1903,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>requestObj</var> be the result of invoking <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request⑧\">Request</a></code>’s constructor with <var>request</var> as its argument. If this <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">throws</a> an <var>exception</var>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑧\">a promise rejected with</a> <var>exception</var>.</p>"
+              "html": "<p>Let <var>requestObj</var> be the result of invoking <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request⑧\">Request</a></code>’s constructor with <var>request</var> as its argument. If this <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">throws</a> an <var>exception</var>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑨\">a promise rejected with</a> <var>exception</var>.</p>"
             },
             {
               "html": "<p>Set <var>innerRequest</var> to <var>requestObj</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request⑤\">request</a>.</p>"
@@ -1905,13 +1911,13 @@
           ]
         },
         {
-          "html": "<p>If <var>innerRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url③\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②\">scheme</a> is not one of \"<code>http</code>\" and \"<code>https</code>\", or <var>innerRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method②\">method</a> is not `<code>GET</code>`, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑨\">a promise rejected with</a> a <code>TypeError</code>.</p>"
+          "html": "<p>If <var>innerRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-url\" id=\"ref-for-concept-request-url③\">url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②\">scheme</a> is not one of \"<code>http</code>\" and \"<code>https</code>\", or <var>innerRequest</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-method\" id=\"ref-for-concept-request-method②\">method</a> is not `<code>GET</code>`, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①⓪\">a promise rejected with</a> a <code>TypeError</code>.</p>"
         },
         {
           "html": "<p>Let <var>innerResponse</var> be <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-response\" id=\"ref-for-concept-response-response①\">response</a>.</p>"
         },
         {
-          "html": "<p>If <var>innerResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status①\">status</a> is <code>206</code>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①⓪\">a promise rejected with</a> a <code>TypeError</code>.</p>"
+          "html": "<p>If <var>innerResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-status\" id=\"ref-for-concept-response-status①\">status</a> is <code>206</code>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①①\">a promise rejected with</a> a <code>TypeError</code>.</p>"
         },
         {
           "html": "If <var>innerResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list①\">header list</a> contains a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header\" id=\"ref-for-concept-header①\">header</a> <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name①\">named</a> `<code>Vary</code>`, then:",
@@ -1925,14 +1931,14 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>fieldValue</var> matches \"<code>*</code>\", return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①①\">a promise rejected with</a> a <code>TypeError</code>.</p>"
+                  "html": "<p>If <var>fieldValue</var> matches \"<code>*</code>\", return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①②\">a promise rejected with</a> a <code>TypeError</code>.</p>"
                 }
               ]
             }
           ]
         },
         {
-          "html": "<p>If <var>innerResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body⑤\">body</a> is <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#is-readable-stream-disturbed\" id=\"ref-for-is-readable-stream-disturbed\">disturbed</a> or <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-locked\" id=\"ref-for-readablestream-locked\">locked</a>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①②\">a promise rejected with</a> a <code>TypeError</code>.</p>"
+          "html": "<p>If <var>innerResponse</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-body\" id=\"ref-for-concept-response-body⑤\">body</a> is <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#is-readable-stream-disturbed\" id=\"ref-for-is-readable-stream-disturbed\">disturbed</a> or <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-locked\" id=\"ref-for-readablestream-locked\">locked</a>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①③\">a promise rejected with</a> a <code>TypeError</code>.</p>"
         },
         {
           "html": "<p>Let <var>clonedResponse</var> be a <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-clone\" id=\"ref-for-concept-response-clone\">clone</a> of <var>innerResponse</var>.</p>"
@@ -2037,7 +2043,7 @@
           "rationale": "set",
           "steps": [
             {
-              "html": "<p>Set <var>r</var> to the associated <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request⑦\">request</a> of the result of invoking the initial value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request①⓪\">Request</a></code> as constructor with <var>request</var> as its argument. If this <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①①\">throws</a> an exception, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①③\">a promise rejected with</a> that exception.</p>"
+              "html": "<p>Set <var>r</var> to the associated <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request⑦\">request</a> of the result of invoking the initial value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request①⓪\">Request</a></code> as constructor with <var>request</var> as its argument. If this <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①①\">throws</a> an exception, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①④\">a promise rejected with</a> that exception.</p>"
             }
           ]
         },
@@ -2133,7 +2139,7 @@
               "rationale": "set",
               "steps": [
                 {
-                  "html": "<p>Set <var>r</var> to the associated <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request⑨\">request</a> of the result of invoking the initial value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request①②\">Request</a></code> as constructor with <var>request</var> as its argument. If this <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①③\">throws</a> an exception, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①④\">a promise rejected with</a> that exception.</p>"
+                  "html": "<p>Set <var>r</var> to the associated <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-request-request\" id=\"ref-for-concept-request-request⑨\">request</a> of the result of invoking the initial value of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://fetch.spec.whatwg.org/#request\" id=\"ref-for-request①②\">Request</a></code> as constructor with <var>request</var> as its argument. If this <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw①③\">throws</a> an exception, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①⑤\">a promise rejected with</a> that exception.</p>"
                 }
               ]
             }
