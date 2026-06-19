@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout latest version of release script
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         ref: main
         # Need to checkout all history as job also needs to access
