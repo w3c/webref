@@ -81,7 +81,7 @@
           "html": "<p>Let <var>timestamp</var> be a timestamp representing now.</p>"
         },
         {
-          "html": "<p>If <var>data</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource\">BufferSource</a></code> object, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>data</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource\">BufferSource</a></code> object, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>datagrams</var> be <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-datagrams-slot\" id=\"ref-for-dom-webtransport-datagrams-slot\">[[Datagrams]]</a></code>.</p>"
@@ -257,7 +257,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>value</var> is negative or NaN, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror\">RangeError</a></code>.</p>"
+          "html": "<p>If <var>value</var> is negative or NaN, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw③\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror\">RangeError</a></code>.</p>"
         },
         {
           "html": "<p>If <var>value</var> is <code>0</code>, set <var>value</var> to null.</p>"
@@ -285,7 +285,7 @@
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If <var>value</var> is negative or NaN, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror①\">RangeError</a></code>.</p>"
+          "html": "<p>If <var>value</var> is negative or NaN, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw④\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror①\">RangeError</a></code>.</p>"
         },
         {
           "html": "<p>If <var>value</var> is <code>0</code>, set <var>value</var> to null.</p>"
@@ -387,13 +387,13 @@
                   "html": "<p>Let <var>view</var> be <var>datagrams</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-readable-slot\" id=\"ref-for-dom-webtransportdatagramduplexstream-readable-slot③\">[[Readable]]</a></code>’s\n<a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#readablestream-current-byob-request-view\" id=\"ref-for-readablestream-current-byob-request-view①\">current BYOB request view</a>.</p>"
                 },
                 {
-                  "html": "<p>If <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-byte-length\" id=\"ref-for-buffersource-byte-length\">byte length</a> is less than the size of <var>datagram</var>, return\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror②\">RangeError</a></code>.</p>"
+                  "html": "<p>If <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-byte-length\" id=\"ref-for-buffersource-byte-length\">byte length</a> is less than the size of <var>datagram</var>, return\n<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with①\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror②\">RangeError</a></code>.</p>"
                 },
                 {
                   "html": "<p>Let <var>elementSize</var> be the element size specified in <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#table-49\" id=\"ref-for-table-49\">the typed array constructors table</a> for\n<var>view</var>.[[TypedArrayName]]. If <var>view</var> does not have a [[TypedArrayName]] internal slot\n(i.e. it is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DataView\" id=\"ref-for-idl-DataView\">DataView</a></code>), let <var>elementSize</var> be 0.</p>"
                 },
                 {
-                  "html": "<p>If <var>elementSize</var> is not 1, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with②\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror①\">TypeError</a></code>.</p>"
+                  "html": "<p>If <var>elementSize</var> is not 1, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with②\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror①\">TypeError</a></code>.</p>"
                 }
               ]
             },
@@ -524,13 +524,13 @@
           "html": "<p>Let <var>url</var> be the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url\">URL record</a> resulting from <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser\">parsing</a>\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-webtransport-url-options-url\" id=\"ref-for-dom-webtransport-webtransport-url-options-url\">url</a></code> with <var>baseURL</var>.</p>"
         },
         {
-          "html": "<p>If <var>url</var> is failure, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-syntaxerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-syntaxerror\">SyntaxError</a></code> exception.</p>"
+          "html": "<p>If <var>url</var> is failure, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑤\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror\">SyntaxError</a></code> exception.</p>"
         },
         {
-          "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is not <code>https</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-syntaxerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-syntaxerror①\">SyntaxError</a></code> exception.</p>"
+          "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme\">scheme</a> is not <code>https</code>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑥\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror①\">SyntaxError</a></code> exception.</p>"
         },
         {
-          "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment\">fragment</a> is not null, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-syntaxerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-syntaxerror②\">SyntaxError</a></code> exception.</p>"
+          "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment\">fragment</a> is not null, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑦\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror②\">SyntaxError</a></code> exception.</p>"
         },
         {
           "html": "<p>Let <var>newConnection</var> be \"<code>no</code>\" if <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-webtransport-url-options-options\" id=\"ref-for-dom-webtransport-webtransport-url-options-options\">options</a></code>’s\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportoptions-allowpooling\" id=\"ref-for-dom-webtransportoptions-allowpooling\">allowPooling</a></code> is true; otherwise \"<code>yes-and-dedicated</code>\".</p>"
@@ -554,7 +554,7 @@
           "html": "<p>Let <var>protocols</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-webtransport-url-options-options\" id=\"ref-for-dom-webtransport-webtransport-url-options-options④\">options</a></code>’s\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportoptions-protocols\" id=\"ref-for-dom-webtransportoptions-protocols\">protocols</a></code>.</p>"
         },
         {
-          "html": "<p>If any of the values in <var>protocols</var> occur more than once, fail to match\n the requirements for elements that comprise the value of the negotiated\n application protocol as defined by the WebTransport protocol, or have an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-encode\" id=\"ref-for-isomorphic-encode\">isomorphic encoded</a>\n length of 0 or exceeding 512, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-syntaxerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-syntaxerror③\">SyntaxError</a></code> exception.\n <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webtransport/#biblio-web-transport-overview\" title=\"WebTransport Protocol Framework\">[WEB-TRANSPORT-OVERVIEW]</a>\n <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview-11/#section-3.1\">Section 3.1</a>.</p>"
+          "html": "<p>If any of the values in <var>protocols</var> occur more than once, fail to match\n the requirements for elements that comprise the value of the negotiated\n application protocol as defined by the WebTransport protocol, or have an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-encode\" id=\"ref-for-isomorphic-encode\">isomorphic encoded</a>\n length of 0 or exceeding 512, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-throw\" id=\"ref-for-dfn-throw⑨\">throw</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#syntaxerror\" id=\"ref-for-syntaxerror③\">SyntaxError</a></code> exception.\n <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webtransport/#biblio-web-transport-overview\" title=\"WebTransport Protocol Framework\">[WEB-TRANSPORT-OVERVIEW]</a>\n <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview-11/#section-3.1\">Section 3.1</a>.</p>"
         },
         {
           "html": "<p>Let <var>anticipatedConcurrentIncomingUnidirectionalStreams</var> be <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-webtransport-url-options-options\" id=\"ref-for-dom-webtransport-webtransport-url-options-options⑤\">options</a></code>’s\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportoptions-anticipatedconcurrentincomingunidirectionalstreams\" id=\"ref-for-dom-webtransportoptions-anticipatedconcurrentincomingunidirectionalstreams\">anticipatedConcurrentIncomingUnidirectionalStreams</a></code>.</p>"
@@ -615,7 +615,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase\">ascii lowercase</a> <var>header</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name\">name</a> is \"<code>wt-available-protocols</code>\",\n then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror②\">TypeError</a></code>.</p>"
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-lowercase\" id=\"ref-for-ascii-lowercase\">ascii lowercase</a> <var>header</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-name\" id=\"ref-for-concept-header-name\">name</a> is \"<code>wt-available-protocols</code>\",\n then throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror②\">TypeError</a></code>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-headers-append\" id=\"ref-for-concept-headers-append\">append</a> <var>header</var> to <var>requestHeaders</var>.</p>"
@@ -970,8 +970,8 @@
     {
       "name": "WebTransport/getStats()",
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-getstats",
-      "html": "When getStats is called, the user agent MUST run the following steps:",
-      "rationale": "let",
+      "html": "<dl>\n     <dt data-md=\"\"><dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"WebTransport\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-webtransport-getstats\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getStats()</code></dfn>\n     </dt><dd data-md=\"\">\n      <p>Gathers stats for this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransport\" id=\"ref-for-webtransport②①\">WebTransport</a></code>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#underlying-connection\" id=\"ref-for-underlying-connection\">underlying connection</a>\n and reports the result asynchronously.</p>\n      <p>When getStats is called, the user agent MUST run the following steps:</p>\n      \n    </dd></dl>",
+      "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>transport</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③④\">this</a>.</p>"
@@ -997,6 +997,9 @@
             },
             {
               "html": "<p>Let <var>gatheredStats</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list\">list</a> of stats specific to the\n  <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#underlying-connection\" id=\"ref-for-underlying-connection①\">underlying connection</a> needed to populate the\n  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-dictionary-member\" id=\"ref-for-dfn-dictionary-member\">dictionary members</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dictdef-webtransportconnectionstats\" id=\"ref-for-dictdef-webtransportconnectionstats①\">WebTransportConnectionStats</a></code> and\n  <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dictdef-webtransportdatagramstats\" id=\"ref-for-dictdef-webtransportdatagramstats\">WebTransportDatagramStats</a></code> accurately.</p>"
+            },
+            {
+              "html": "<p>If <var>transport</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransport-newconnection-slot\" id=\"ref-for-dom-webtransport-newconnection-slot②\">[[NewConnection]]</a></code> is \"<code>no</code>\", then remove from\n  <var>gatheredStats</var> all stats not marked as <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#pooled-connection-stat\" id=\"ref-for-pooled-connection-stat\">pooled connection stats</a>.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①①\">Queue a network task</a> with <var>transport</var> to run the following steps:",
@@ -1027,7 +1030,7 @@
       ]
     },
     {
-      "name": "WebTransport/exportKeyingMaterial(label, context)",
+      "name": "WebTransport/exportKeyingMaterial(label, context, outputLength)",
       "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-exportkeyingmaterial",
       "html": "When <code>exportKeyingMaterial</code> is called, the user agent MUST run the following steps:",
       "rationale": "let",
@@ -1039,7 +1042,7 @@
           "html": "<p>Let <var>labelLength</var> be <var>label</var>.<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-byte-length\" id=\"ref-for-buffersource-byte-length①\">byte length</a>.</p>"
         },
         {
-          "html": "<p>If <var>labelLength</var> is more than 255, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with③\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror③\">RangeError</a></code>.</p>"
+          "html": "<p>If <var>labelLength</var> is more than 255, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with③\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror③\">RangeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>contextLength</var> be 0.</p>"
@@ -1048,7 +1051,10 @@
           "html": "<p>If <var>context</var> is given, set <var>contextLength</var> to <var>context</var>.<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#buffersource-byte-length\" id=\"ref-for-buffersource-byte-length②\">byte length</a>.</p>"
         },
         {
-          "html": "<p>If <var>contextLength</var> is more than 255, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with④\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror④\">RangeError</a></code>.</p>"
+          "html": "<p>If <var>contextLength</var> is more than 255, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with④\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror④\">RangeError</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>outputLength</var> is 0 or more than an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑥\">implementation-defined</a> value—​which <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSS2/conform.html#x0\" id=\"ref-for-x0\">must</a> be at least 4096—​return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑤\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror⑤\">RangeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>p</var> be a new promise.</p>"
@@ -1058,7 +1064,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>keyingMaterial</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array③\">Uint8Array</a></code> that is produced by invoking a TLS key exporter, as defined\n  in <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webtransport/#biblio-web-transport-overview\" title=\"WebTransport Protocol Framework\">[WEB-TRANSPORT-OVERVIEW]</a> <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview#section-4.1\">Section 4.1</a>,\n  with <var>labelLength</var>, <var>label</var>, <var>contextLength</var>, and if present, <var>context</var>.</p>"
+              "html": "<p>Let <var>keyingMaterial</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-Uint8Array\" id=\"ref-for-idl-Uint8Array③\">Uint8Array</a></code> that is produced by invoking a TLS key exporter, as defined\n  in <a data-link-type=\"biblio\" href=\"https://www.w3.org/TR/webtransport/#biblio-web-transport-overview\" title=\"WebTransport Protocol Framework\">[WEB-TRANSPORT-OVERVIEW]</a> <a href=\"https://datatracker.ietf.org/doc/html/draft-ietf-webtrans-overview#section-4.1\">Section 4.1</a>,\n  with <var>label</var>, <var>context</var>, and <var>outputLength</var>.</p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task\" id=\"ref-for-webtransport-queue-a-network-task①③\">Queue a network task</a> with <var>transport</var> to <a data-link-type=\"dfn\" href=\"http://www.ecma-international.org/ecma-262/6.0/index.html#sec-promise-objects\" id=\"ref-for-sec-promise-objects①④\">resolve</a> <var>p</var> with <var>keyingMaterial</var>.</p>"
@@ -1614,7 +1620,7 @@
           "html": "<p>Let <var>transport</var> be <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportsendstream-transport-slot\" id=\"ref-for-dom-webtransportsendstream-transport-slot②\">[[Transport]]</a></code>.</p>"
         },
         {
-          "html": "<p>If <var>chunk</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource④\">BufferSource</a></code>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑤\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror③\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>chunk</var> is not a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#BufferSource\" id=\"ref-for-BufferSource④\">BufferSource</a></code>, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑥\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror③\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Let <var>promise</var> be a new promise.</p>"
@@ -1651,7 +1657,7 @@
               ]
             },
             {
-              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#stream-send\" id=\"ref-for-stream-send\">send</a> <var>bytes</var> on <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportsendstream-internalstream-slot\" id=\"ref-for-dom-webtransportsendstream-internalstream-slot①\">[[InternalStream]]</a></code>\n and wait for the operation to complete.\n This sending MUST follow the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#send-order-rules\" id=\"ref-for-send-order-rules①\">send-order rules</a>.</p>\n        <p>The user-agent MAY have a buffer to improve the transfer performance. Such a buffer\n SHOULD have a fixed upper limit, to carry the backpressure information to the user of the\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream①⑤\">WebTransportSendStream</a></code>.</p>\n        <p>We access <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportsendstream-sendorder-slot\" id=\"ref-for-dom-webtransportsendstream-sendorder-slot③\">[[SendOrder]]</a></code> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①②\">in parallel</a> here.\n User agents SHOULD respond to live updates of these values during sending, though\n the details are <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined⑨\">implementation-defined</a>.</p>\n        \n        <p>This sending MUST NOT starve otherwise,\n except for <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#stream-signal-flow-control\" id=\"ref-for-stream-signal-flow-control②\">flow control</a> reasons or <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-error\" id=\"ref-for-writablestream-error③\"> error</a>.</p>\n        <p>The user agent SHOULD divide bandwidth fairly between all streams that aren’t starved.</p>"
+              "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#stream-send\" id=\"ref-for-stream-send\">send</a> <var>bytes</var> on <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportsendstream-internalstream-slot\" id=\"ref-for-dom-webtransportsendstream-internalstream-slot①\">[[InternalStream]]</a></code>\n and wait for the operation to complete.\n This sending MUST follow the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#send-order-rules\" id=\"ref-for-send-order-rules①\">send-order rules</a>.</p>\n        <p>The user-agent MAY have a buffer to improve the transfer performance. Such a buffer\n SHOULD have a fixed upper limit, to carry the backpressure information to the user of the\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportsendstream\" id=\"ref-for-webtransportsendstream①⑤\">WebTransportSendStream</a></code>.</p>\n        <p>We access <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportsendstream-sendorder-slot\" id=\"ref-for-dom-webtransportsendstream-sendorder-slot③\">[[SendOrder]]</a></code> <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①②\">in parallel</a> here.\n User agents SHOULD respond to live updates of these values during sending, though\n the details are <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①⓪\">implementation-defined</a>.</p>\n        \n        <p>This sending MUST NOT starve otherwise,\n except for <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/webtransport/#stream-signal-flow-control\" id=\"ref-for-stream-signal-flow-control②\">flow control</a> reasons or <a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestream-error\" id=\"ref-for-writablestream-error③\"> error</a>.</p>\n        <p>The user agent SHOULD divide bandwidth fairly between all streams that aren’t starved.</p>"
             },
             {
               "html": "<p>If the previous step failed due to a network error, abort the remaining steps.</p>"
@@ -1995,10 +2001,10 @@
               "html": "<p>Set <var>offset</var> to 0.</p>"
             },
             {
-              "html": "<p>Set <var>maxBytes</var> to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①②\">implementation-defined</a> size.</p>"
+              "html": "<p>Set <var>maxBytes</var> to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①③\">implementation-defined</a> size.</p>"
             },
             {
-              "html": "<p>Set <var>buffer</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①②\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-idl-ArrayBuffer\">ArrayBuffer</a></code> with <var>maxBytes</var> size. If allocating the\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-idl-ArrayBuffer①\">ArrayBuffer</a></code> fails, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑥\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-rangeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-rangeerror⑤\">RangeError</a></code>.</p>"
+              "html": "<p>Set <var>buffer</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①②\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-idl-ArrayBuffer\">ArrayBuffer</a></code> with <var>maxBytes</var> size. If allocating the\n <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-ArrayBuffer\" id=\"ref-for-idl-ArrayBuffer①\">ArrayBuffer</a></code> fails, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-rangeerror\" id=\"ref-for-exceptiondef-rangeerror⑥\">RangeError</a></code>.</p>"
             }
           ]
         },
@@ -2169,7 +2175,7 @@
           "html": "<p>Let <var>stream</var> be\n  <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤⑦\">this</a>.<a href=\"https://streams.spec.whatwg.org/#writablestreamdefaultwriter-stream\">stream</a>.</p>"
         },
         {
-          "html": "<p>If <var>stream</var> is undefined, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑦\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-typeerror\" id=\"ref-for-sec-native-error-types-used-in-this-standard-typeerror④\">TypeError</a></code>.</p>"
+          "html": "<p>If <var>stream</var> is undefined, return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑧\">a promise rejected with</a> a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#exceptiondef-typeerror\" id=\"ref-for-exceptiondef-typeerror④\">TypeError</a></code>.</p>"
         },
         {
           "html": "<p>Set <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportsendstream-insidesynchronousatomicwrite-slot\" id=\"ref-for-dom-webtransportsendstream-insidesynchronousatomicwrite-slot②\">[[InsideSynchronousAtomicWrite]]</a></code> to true.</p>"
@@ -2191,7 +2197,7 @@
               "html": "<p>If <var>stream</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#dom-webtransportsendstream-atomicwriterequests-slot\" id=\"ref-for-dom-webtransportsendstream-atomicwriterequests-slot⑥\">[[AtomicWriteRequests]]</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-contain\" id=\"ref-for-list-contain③\">contains</a> <var>p</var>,\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove⑧\">remove</a> <var>p</var>.</p>"
             },
             {
-              "html": "<p>If <var>p</var> was rejected with reason <var>r</var>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑧\">a promise rejected with</a> <var>r</var>.</p>"
+              "html": "<p>If <var>p</var> was rejected with reason <var>r</var>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-promise-rejected-with\" id=\"ref-for-a-promise-rejected-with⑨\">a promise rejected with</a> <var>r</var>.</p>"
             },
             {
               "html": "<p>Return undefined.</p>"
@@ -2221,7 +2227,7 @@
           "html": "<p>Let <var>writer</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new①④\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/webtransport/#webtransportwriter\" id=\"ref-for-webtransportwriter⑥\">WebTransportWriter</a></code>.</p>"
         },
         {
-          "html": "<p>Perform <a data-link-type=\"abstract-op\" href=\"https://streams.spec.whatwg.org/#set-up-writable-stream-default-writer\" id=\"ref-for-set-up-writable-stream-default-writer\">SetUpWritableStreamDefaultWriter</a>(<var>writer</var>, <var>stream</var>).</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://streams.spec.whatwg.org/#writablestreamdefaultwriter-set-up\" id=\"ref-for-writablestreamdefaultwriter-set-up\">Set up</a> <var>writer</var> for <var>stream</var>.</p>"
         },
         {
           "html": "<p>Return <var>writer</var>.</p>"

@@ -122,7 +122,6 @@
           "example-manual-write-dont-await"
         ]
       },
-      "https://tc39.es/ecma262/multipage/": {},
       "https://tc39.github.io/ecma262/": {
         "anchors": [
           "eqn-floor"
@@ -178,13 +177,13 @@
       "https://www.w3.org/2004/01/pp-impl/125908/status": {},
       "https://www.w3.org/TR/": {},
       "https://www.w3.org/TR/CSP3/": {},
+      "https://www.w3.org/TR/CSS2/": {},
       "https://www.w3.org/TR/hr-time-3/": {},
       "https://www.w3.org/TR/string-meta/": {
         "anchors": [
           "firststrong"
         ]
       },
-      "https://www.w3.org/TR/webrtc/": {},
       "https://www.w3.org/community/ortc/": {},
       "https://www.w3.org/groups/wg/webtransport": {},
       "https://www.w3.org/policies/patent-policy/": {
@@ -258,7 +257,8 @@
           "concept-header-list-delete",
           "typedefdef-headersinit",
           "concept-body-stream",
-          "http-origin"
+          "http-origin",
+          "dom-global-fetch"
         ]
       },
       "https://heycam.github.io/webidl/": {
@@ -356,7 +356,7 @@
           "readablestream-set-up-with-byte-reading-support-cancelalgorithm",
           "writablestreamdefaultwriter",
           "writablestreamdefaultwriter-write-a-chunk",
-          "set-up-writable-stream-default-writer",
+          "writablestreamdefaultwriter-set-up",
           "ws-abort",
           "ws-close",
           "default-writer-close",
@@ -364,13 +364,6 @@
           "rs-cancel",
           "generic-reader-cancel",
           "default-reader-read"
-        ]
-      },
-      "https://tc39.es/ecma262/multipage/fundamental-objects.html": {
-        "anchors": [
-          "sec-native-error-types-used-in-this-standard-typeerror",
-          "sec-native-error-types-used-in-this-standard-rangeerror",
-          "sec-native-error-types-used-in-this-standard-syntaxerror"
         ]
       },
       "https://url.spec.whatwg.org/": {
@@ -397,9 +390,11 @@
           "invalidstateerror",
           "BufferSource",
           "a-promise-rejected-with",
+          "exceptiondef-typeerror",
           "a-promise-resolved-with",
           "idl-unsigned-long",
           "idl-unrestricted-double",
+          "exceptiondef-rangeerror",
           "buffersource-byte-length",
           "idl-DataView",
           "idl-Uint8Array",
@@ -412,6 +407,7 @@
           "SameObject",
           "idl-DOMString",
           "idl-boolean",
+          "syntaxerror",
           "notsupportederror",
           "upon-fulfillment",
           "aborterror",
@@ -431,9 +427,19 @@
           "dom-domexception-code"
         ]
       },
+      "https://websockets.spec.whatwg.org/": {
+        "anchors": [
+          "websocket"
+        ]
+      },
       "https://www.w3.org/TR/CSP3/": {
         "anchors": [
           "webrtc"
+        ]
+      },
+      "https://www.w3.org/TR/CSS2/conform.html": {
+        "anchors": [
+          "x0"
         ]
       },
       "https://www.w3.org/TR/hr-time-3/": {
