@@ -291,7 +291,7 @@
         },
         {
           "name": "<string>",
-          "prose": "Render the specified string as the block overflow ellipsis at the end of the affected line box. The UA may truncate this string if it is absurdly long. When set to the empty string, the behavior is identical to the no-ellipsis value.",
+          "prose": "Render the specified string as the block overflow ellipsis at the end of the affected line box. The UA may truncate this string if it is absurdly long. When set to the empty string, the behavior is identical to the no-ellipsis value. All forced line breaks inside the specified string (regardless of white-space value) must be collapsed, as defined for collapsible segment breaks in CSS Text 3 § 4.1.3 Segment Break Transformation Rules.",
           "href": "https://drafts.csswg.org/css-overflow-4/#valdef-block-ellipsis-string",
           "type": "value",
           "value": "<string>"
