@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout webref
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         # Need to checkout all history as curation job also needs to access
         # the curated branch
