@@ -403,13 +403,13 @@
           "html": "let <var>origin_rgb</var> be <var>origin_OkLCh</var>\n\t\t\tconverted to the <em>linear-light</em> form of <var>destination</var>"
         },
         {
-          "html": "if <var>origin_rgb</var> is not in gamut\n\t\t\t\n      <ul>\n       <li>let <var>low</var> be 0.0 + 1E-6 <a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-1\"><sup>1</sup></a>\n       </li><li>let <var>high</var> be 1.0 - 1E-6 <a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-2\"><sup>2</sup></a>\n       </li><li>let <var>last</var> be <var>origin_rgb</var>\n       </li><li>\n        for (i=0; i&lt;4; i++)\n\t\t\t\t\t\n        <ul>\n         <li>\n          if (i &gt; 0)\n\t\t\t\t\t\t\t\n          <ul>\n           <li>let <var>current_OkLCh</var> be <var>origin_rgb</var> converted to OkLCh\n           </li><li>let the lightness of <var>current_OkLCh</var> be <var>l_origin</var>\n           </li><li>let the hue of <var>current_OkLCh</var> be <var>h_origin</var>\n\t\t\t\t\t\t\t\t\t<a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-3\"><sup>3</sup></a>\n           </li><li>let <var>origin_rgb</var> be <var>current_OkLCh</var>\n\t\t\t\t\t\t\t\t\tconverted to the <em>linear-light</em> form of <var>destination</var>\n\t\t\t\t\t\t\t\t\n          </li></ul>\n         </li><li><b>Cast a ray</b> from <var>start</var> = <var>anchor</var> to <var>end</var> = <var>origin_rgb</var>\n\t\t\t\t\t\t\tand let <var>intersection</var> be\n\t\t\t\t\t\t\tthe intersection of this ray\n\t\t\t\t\t\t\twith the gamut boundary\n\t\t\t\t\t\t\n         </li><li>if an intersection was not found,\n\t\t\t\t\t\t\tlet <var>origin_rgb</var> be <var>last</var> and exit the loop\n\t\t\t\t\t\t\t<a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-5\"><sup>5</sup></a>\n\t\t\t\t\t\t\n         </li><li>if (i &gt;0) AND (each component of <var>origin_rgb</var> is between <var>low</var> and <var>high</var>) then\n\t\t\t\t\t\t\tlet <var>anchor</var> be <var>origin_rgb</var>\n\t\t\t\t\t\t\t<a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-4\"><sup>4</sup></a>\n\t\t\t\t\t\t\n         </li><li>let <var>origin_rgb</var> be <var>intersection</var>\n         </li><li>let <var>last</var> be <var>intersection</var>\n        </li></ul>\n      </li></ul>"
+          "html": "if <var>origin_rgb</var> is not in gamut\n\t\t\t\n      <ul>\n       <li>let <var>low</var> be 0.0 + 1E-12 <a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-1\"><sup>1</sup></a>\n       </li><li>let <var>high</var> be 1.0 - 1E-12 <a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-2\"><sup>2</sup></a>\n       </li><li>let <var>last</var> be <var>origin_rgb</var>\n       </li><li>\n        for (i=0; i&lt;4; i++)\n\t\t\t\t\t\n        <ul>\n         <li>\n          if (i &gt; 0)\n\t\t\t\t\t\t\t\n          <ul>\n           <li>let <var>current_OkLCh</var> be <var>origin_rgb</var> converted to OkLCh\n           </li><li>let the lightness of <var>current_OkLCh</var> be <var>l_origin</var>\n           </li><li>let the hue of <var>current_OkLCh</var> be <var>h_origin</var>\n\t\t\t\t\t\t\t\t\t<a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-3\"><sup>3</sup></a>\n           </li><li>let <var>origin_rgb</var> be <var>current_OkLCh</var>\n\t\t\t\t\t\t\t\t\tconverted to the <em>linear-light</em> form of <var>destination</var>\n\t\t\t\t\t\t\t\t\n          </li></ul>\n         </li><li><b>Cast a ray</b> from <var>start</var> = <var>anchor</var> to <var>end</var> = <var>origin_rgb</var>\n\t\t\t\t\t\t\tand let <var>intersection</var> be\n\t\t\t\t\t\t\tthe intersection of this ray\n\t\t\t\t\t\t\twith the gamut boundary\n\t\t\t\t\t\t\n         </li><li>if an intersection was not found,\n\t\t\t\t\t\t\tlet <var>origin_rgb</var> be <var>last</var> and exit the loop\n\t\t\t\t\t\t\t<a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-5\"><sup>5</sup></a>\n\t\t\t\t\t\t\n         </li><li>if (i &gt;0) AND (each component of <var>origin_rgb</var> is between <var>low</var> and <var>high</var>) then\n\t\t\t\t\t\t\tlet <var>anchor</var> be <var>origin_rgb</var>\n\t\t\t\t\t\t\t<a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-4\"><sup>4</sup></a>\n\t\t\t\t\t\t\n         </li><li>let <var>origin_rgb</var> be <var>intersection</var>\n         </li><li>let <var>last</var> be <var>intersection</var>\n        </li></ul>\n      </li></ul>"
         },
         {
           "html": "let clip(<var>color</var>) be a function which converts <var>color</var> to <var>destination</var>,\n\t\tclamps each component to the bounds of the reference range for that component\n\t\tand returns the result"
         },
         {
-          "html": "set <var>clipped</var> to clip(<var>current</var>)"
+          "html": "set <var>clipped</var> to clip(<var>origin_rgb</var>)"
         },
         {
           "html": "return <var>clipped</var> as the gamut mapped color"
@@ -435,13 +435,16 @@
           "html": "let <var>direction</var> be a 3-element array"
         },
         {
-          "html": "for (i = 0; i &lt; 3; i++):\n\t\t\t\n       <ul>\n        <li>let <var>a</var> be <var>start</var> <i>[i]</i>\n        </li><li>let <var>b</var> be <var>end</var> <i>[i]</i>\n        </li><li>let <var>d</var> be <var>b</var> - <var>a</var>\n        </li><li>let <var>direction</var> <i>[i]</i> be <var>d</var>\n        </li><li>\n         if abs(<var>d</var>) &lt; 1E-12\n\t\t\t\t\t\n         <ul>\n          <li>let <var>inv_d</var> be 1 / <var>d</var>\n          </li><li>let <var>t1</var> be (<var>bmin</var> <i>[i]</i> - <var>a</var> ) * <var>inv_d</var> \n          </li><li>let <var>t2</var> be (<var>bmax</var> <i>[i]</i> - <var>a</var> ) * <var>inv_d</var> \n          </li><li>let <var>tnear</var> be max(min(<var>t1</var>, <var>t2</var>), <var>tnear</var> )\n          </li><li>let <var>tfar</var> be min(max(<var>t1</var>, <var>t2</var>), <var>tfar</var> )\n         </li></ul>\n        </li><li>\n         else if (<var>a</var> &lt; <var>bmin</var><i>[i]</i> or <var>a</var> &gt; <var>bmax</var><i>[i]</i>)\n\t\t\t\t\t\n         <ul>\n          <li>return INTERSECTION NOT FOUND\n         </li></ul>\n       </li></ul>"
+          "html": "for (i = 0; i &lt; 3; i++):\n\t\t\t\n       <ul>\n        <li>let <var>a</var> be <var>start</var> <i>[i]</i>\n        </li><li>let <var>b</var> be <var>end</var> <i>[i]</i>\n        </li><li>let <var>d</var> be <var>b</var> - <var>a</var>\n        </li><li>let <var>direction</var> <i>[i]</i> be <var>d</var>\n        </li><li>if abs(<var>d</var>) &gt; 1E-12 <a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-7\"><sup>7</sup></a>\n        <ul>\n         <li>let <var>inv_d</var> be 1 / <var>d</var>\n         </li><li>let <var>t1</var> be (<var>bmin</var> <i>[i]</i> - <var>a</var> ) * <var>inv_d</var> \n         </li><li>let <var>t2</var> be (<var>bmax</var> <i>[i]</i> - <var>a</var> ) * <var>inv_d</var> \n         </li><li>let <var>tnear</var> be max(min(<var>t1</var>, <var>t2</var>), <var>tnear</var> )\n         </li><li>let <var>tfar</var> be min(max(<var>t1</var>, <var>t2</var>), <var>tfar</var> )\n        </li></ul>\n       </li></ul>"
+        },
+        {
+          "html": "else if (<var>a</var> &lt; <var>bmin</var><i>[i]</i> or <var>a</var> &gt; <var>bmax</var><i>[i]</i>)\n\t\t\t\t\t\n       <ul>\n        <li>return INTERSECTION NOT FOUND\n       </li></ul>"
         },
         {
           "html": "if (<var>tnear</var> &gt; <var>tfar</var> or <var>tfar</var> &lt; 0)\n\t\t\t\n       <ul>\n        <li>return INTERSECTION NOT FOUND\n       </li></ul>"
         },
         {
-          "html": "if <var>tnear</var> &lt; 0\n\t\t\t\n       <ul>\n        <li>let <var>tnear</var> be <var>tfar</var>\n\t\t\t\t\t<a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-7\"><sup>7</sup></a>\n\t\t\t\t\n       </li></ul>"
+          "html": "if <var>tnear</var> &lt; 0\n\t\t\t\n       <ul>\n        <li>let <var>tnear</var> be <var>tfar</var>\n\t\t\t\t\t<a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-8\"><sup>8</sup></a>\n\t\t\t\t\n       </li></ul>"
         },
         {
           "html": "if <var>tnear</var> is infinite (or matches the initial very large value)\n\t\t\t\n       <ul>\n        <li>return INTERSECTION NOT FOUND\n       </li></ul>"
@@ -461,7 +464,7 @@
       "rationale": "for",
       "steps": [
         {
-          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-1\"></a>\n\t\t\tIt is assumed the minimum value is 0\n\t\t\tand that all channels have the same minimum.\n\t\t\tThe value should be small relative to the unit type.\n\t\t\t64 bit could easily be as small as 1e-14, but 1e-6 is fine in practice."
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-1\"></a>\n\t\t\tIt is assumed the minimum value is 0\n\t\t\tand that all channels have the same minimum.\n\t\t\tThe value should be small relative to the unit type.\n\t\t\tThe specifed value of 1e-12 is for 64-bit, but for 32-bit, 1e-6 should be used."
         },
         {
           "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-2\"></a>\n\t\t\t1.0 represents the maximum in-gamut channel value,\n\t\t\tand it is assumed all channels have the same maximum."
@@ -479,7 +482,10 @@
           "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-6\"></a>\n\t\t\tFor typical RGB spaces\n\t\t\twhere the gamut bounds are 0 and 1 for each component\n\t\t\tthis simplifies to a single constant\n\t\t\trather than a 3-element array."
         },
         {
-          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-7\"></a>\n\t\t\tfavoring the first intersection in the direction <var>start</var> -&gt; <var>end</var> ."
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-7\"></a>\n\t\t\tThe value should be small relative to the unit type.\n\t\t\tThe specifed value of 1e-12 is for 64-bit, but for 32-bit, 1e-6 should be used."
+        },
+        {
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-8\"></a>\n\t\t\tfavoring the first intersection in the direction <var>start</var> -&gt; <var>end</var> ."
         }
       ]
     },
