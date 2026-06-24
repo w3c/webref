@@ -123,6 +123,23 @@
       ]
     },
     {
+      "name": "serialize a functional notation",
+      "href": "https://drafts.csswg.org/css-values-4/#serialize-a-functional-notation",
+      "html": "Unless otherwise specified,\n\t\tto <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"serialize-a-functional-notation\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">serialize a functional notation</dfn>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>s</var> be a string containing\nthe function’s name in lowercase,\nfollowed by “(” (U+0028 LEFT PARENTHESIS).</p>"
+        },
+        {
+          "html": "<p>Append to <var>s</var>\nthe serializations of the arguments of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#functional-notation\" id=\"ref-for-functional-notation⑦\">functional notation</a>\nper their individual grammars,\nin the order the grammars are written in,\njoining space-separated tokens with a single space,\nand following each serialized comma, colon, semi-colon, or slash\nwith a single space (U+0020 SPACE).\nWhen serializing the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value①⑤\">computed value</a> or its derivatives\n(not <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#specified-value\" id=\"ref-for-specified-value④\">specified</a> or <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#declared-value\" id=\"ref-for-declared-value\">declared</a> values),\nomit components when possible without changing the meaning.</p>"
+        },
+        {
+          "html": "<p>Append “)” (U+0029 RIGHT PARENTHESIS) to <var>s</var>.</p>"
+        }
+      ]
+    },
+    {
       "name": "determine the type of a calculation",
       "href": "https://drafts.csswg.org/css-values-4/#determine-the-type-of-a-calculation",
       "html": "Anything else is a terminal value,\nwhose <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-type\" id=\"ref-for-cssnumericvalue-type①①\">type</a> is determined based on its CSS type.\n(Unless otherwise specified,\nthe type’s associated <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint\" id=\"ref-for-cssnumericvalue-percent-hint\">percent hint</a> is null.)",
@@ -205,7 +222,7 @@
           "steps": [
             {
               "case": "calc()",
-              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#css-internal-representation\" id=\"ref-for-css-internal-representation①\">internal representation</a> of a <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-4/#funcdef-calc\" id=\"ref-for-funcdef-calc①⑦\">calc()</a> function\nis the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#parse-a-calculation\" id=\"ref-for-parse-a-calculation\">parsing a calculation</a> from its argument.</p>"
+              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://drafts.css-houdini.org/css-typed-om-1/#css-internal-representation\" id=\"ref-for-css-internal-representation①\">internal representation</a> of a <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-values-4/#funcdef-calc\" id=\"ref-for-funcdef-calc①⑧\">calc()</a> function\nis the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#parse-a-calculation\" id=\"ref-for-parse-a-calculation\">parsing a calculation</a> from its argument.</p>"
             },
             {
               "case": "any other math function",
@@ -427,7 +444,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If the root of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#calculation-tree\" id=\"ref-for-calculation-tree⑤\">calculation tree</a> <var>fn</var> represents\nis a numeric value\n(number, percentage, or dimension),\nand the serialization being produced is of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value②⓪\">computed value</a> or later,\nthen clamp the value to the range allowed for its context\n(if necessary),\nthen serialize the value as normal\nand return the result.</p>"
+          "html": "<p>If the root of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-values-4/#calculation-tree\" id=\"ref-for-calculation-tree⑤\">calculation tree</a> <var>fn</var> represents\nis a numeric value\n(number, percentage, or dimension),\nand the serialization being produced is of a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-cascade-5/#computed-value\" id=\"ref-for-computed-value②③\">computed value</a> or later,\nthen clamp the value to the range allowed for its context\n(if necessary),\nthen serialize the value as normal\nand return the result.</p>"
         },
         {
           "html": "If <var>fn</var> represents an infinite or NaN value:",
