@@ -15,7 +15,7 @@
           "html": "Let <var>registryEntryId</var> be the value of <var>options</var>.<var>registryEntryId</var>."
         },
         {
-          "html": "Let <var>cborldDocument</var> be the result of the\n<a href=\"https://w3c.github.io/cbor-ld/#json-ld-to-cbor-ld-compression-algorithm\">\nJSON-LD to CBOR-LD Compression Algorithm</a>, passing <var>inputDocument</var>,\n<var>typeTable</var>, and <var>registryEntryId</var> as inputs. If an encoding error occurs, an\nerror <em class=\"rfc2119\">MUST</em> be raised."
+          "html": "Let <var>cborldDocument</var> be the result of the\n<a href=\"https://w3c.github.io/cbor-ld/#json-ld-to-cbor-ld-encoding-algorithm\">\nJSON-LD to CBOR-LD Encoding Algorithm</a>, passing <var>inputDocument</var>,\n<var>typeTable</var>, and <var>registryEntryId</var> as inputs. If an encoding error occurs, an\nerror <em class=\"rfc2119\">MUST</em> be raised."
         },
         {
           "html": "Let <var>base45Value</var> be the result of the\n<a href=\"https://www.w3.org/TR/cid-1.0/#base-encode\">Base Encoding</a> algorithm, passing\n<var>cborldDocument</var> as <var>bytes</var>, the integer <code>45</code> as <var>targetBase</var>, and\n<code>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:</code> as the <var>baseAlphabet</var>."
@@ -42,7 +42,7 @@
           "html": "Let <var>cborldDocument</var> be the result of the\n<a href=\"https://www.w3.org/TR/cid-1.0/#base-decode\">Base Decoding</a> algorithm, passing\n<var>base45Value</var> as <var>sourceEncoding</var>, the integer <code>45</code> as <var>sourceBase</var>, and\n<code>0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:</code> as the <var>baseAlphabet</var>."
         },
         {
-          "html": "Let <var>jsonldDocument</var> be the result of\n<a href=\"https://w3c.github.io/cbor-ld/#cbor-ld-to-json-ld-decompression-algorithm\">\nCBOR-LD to JSON-LD Decompression Algorithm</a>, passing <var>cborldDocument</var> as\nthe input. If a decoding error occurs, an error <em class=\"rfc2119\">MUST</em> be raised."
+          "html": "Let <var>jsonldDocument</var> be the result of\n<a href=\"https://w3c.github.io/cbor-ld/#cbor-ld-to-json-ld-decoding-algorithm\">\nCBOR-LD to JSON-LD Decoding Algorithm</a>, passing <var>cborldDocument</var> as\nthe input. If a decoding error occurs, an error <em class=\"rfc2119\">MUST</em> be raised."
         },
         {
           "html": "Return <var>jsonldDocument</var> as the decoded <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/vc-data-model-2.0/#dfn-verifiable-credential\">verifiable credential</a>."

@@ -392,7 +392,7 @@
           "html": "<ins>If <var>urlString</var> is not failure, then return <var>urlString</var>.</ins>"
         },
         {
-          "html": "<ins>Return <var>contentAttributeValue</var>, converted to a scalar value string.\n</ins>"
+          "html": "<ins>Return <var>contentAttributeValue</var>, converted to a scalar value string.</ins>"
         }
       ]
     },
@@ -491,7 +491,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#policy-directive-set\" id=\"ref-for-policy-directive-set\">directive set</a> does not contain a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directives\" id=\"ref-for-directives③\">directive</a>\nwhose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-name\" id=\"ref-for-directive-name②\">name</a> is <code>\"require-trusted-types-for\"</code>, skip to the next <var>policy</var>.</p>"
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set\">directive set</a> does not contain a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directives\" id=\"ref-for-directives③\">directive</a>\nwhose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-name\" id=\"ref-for-directive-name②\">name</a> is <code>\"require-trusted-types-for\"</code>, skip to the next <var>policy</var>.</p>"
             },
             {
               "html": "<p>Let <var>directive</var> be the <var>policy</var>’s <var>directive set</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directives\" id=\"ref-for-directives④\">directive</a> whose name\nis <code>\"require-trusted-types-for\"</code></p>"
@@ -500,7 +500,7 @@
               "html": "<p>If <var>directive</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-value\" id=\"ref-for-directive-value③\">value</a> does not contain a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/trusted-types/#trusted-types-sink-group\" id=\"ref-for-trusted-types-sink-group③\">trusted-types-sink-group</a> which is a match\nfor <var>sinkGroup</var>, skip to the next <var>policy</var>.</p>"
             },
             {
-              "html": "<p>Let <var>enforced</var> be true if <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#policy-disposition\" id=\"ref-for-policy-disposition\">disposition</a> is <code>\"enforce\"</code>, and false otherwise.</p>"
+              "html": "<p>Let <var>enforced</var> be true if <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#content-security-policy-object-disposition\" id=\"ref-for-content-security-policy-object-disposition\">disposition</a> is <code>\"enforce\"</code>, and false otherwise.</p>"
             },
             {
               "html": "<p>If <var>enforced</var> is true, return true.</p>"
@@ -550,7 +550,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#policy-directive-set\" id=\"ref-for-policy-directive-set①\">directive set</a> does not contain a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directives\" id=\"ref-for-directives⑤\">directive</a>\nwhose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-name\" id=\"ref-for-directive-name③\">name</a> is <code>\"require-trusted-types-for\"</code>, skip to the next <var>policy</var>.</p>"
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set①\">directive set</a> does not contain a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directives\" id=\"ref-for-directives⑤\">directive</a>\nwhose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directive-name\" id=\"ref-for-directive-name③\">name</a> is <code>\"require-trusted-types-for\"</code>, skip to the next <var>policy</var>.</p>"
             },
             {
               "html": "<p>Let <var>directive</var> be the <var>policy</var>’s <var>directive set</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directives\" id=\"ref-for-directives⑥\">directive</a> whose name\nis <code>\"require-trusted-types-for\"</code></p>"
@@ -574,7 +574,7 @@
               "html": "<p>Execute <a href=\"https://www.w3.org/TR/CSP3/#report-violation\">Report a violation</a> on <var>violation</var>.</p>"
             },
             {
-              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#policy-disposition\" id=\"ref-for-policy-disposition①\">disposition</a> is <code>\"enforce\"</code>, then set <var>result</var> to\n<code>\"Blocked\"</code>.</p>"
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#content-security-policy-object-disposition\" id=\"ref-for-content-security-policy-object-disposition①\">disposition</a> is <code>\"enforce\"</code>, then set <var>result</var> to\n<code>\"Blocked\"</code>.</p>"
             }
           ]
         },
@@ -600,7 +600,7 @@
               "html": "<p>Let <var>createViolation</var> be false.</p>"
             },
             {
-              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#policy-directive-set\" id=\"ref-for-policy-directive-set②\">directive set</a> does not contain a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directives\" id=\"ref-for-directives⑦\">directive</a>\nwhich name is <code>\"trusted-types\"</code>, skip to the next <var>policy</var>.</p>"
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#content-security-policy-object-directive-set\" id=\"ref-for-content-security-policy-object-directive-set②\">directive set</a> does not contain a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directives\" id=\"ref-for-directives⑦\">directive</a>\nwhich name is <code>\"trusted-types\"</code>, skip to the next <var>policy</var>.</p>"
             },
             {
               "html": "<p>Let <var>directive</var> be the <var>policy</var>’s <var>directive set</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#directives\" id=\"ref-for-directives⑧\">directive</a> which name\nis <code>\"trusted-types\"</code></p>"
@@ -630,7 +630,7 @@
               "html": "<p>Execute <a href=\"https://www.w3.org/TR/CSP3/#report-violation\">Report a violation</a> on <var>violation</var>.</p>"
             },
             {
-              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#policy-disposition\" id=\"ref-for-policy-disposition②\">disposition</a> is <code>\"enforce\"</code>, then set <var>result</var> to\n<code>\"Blocked\"</code>.</p>"
+              "html": "<p>If <var>policy</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/CSP3/#content-security-policy-object-disposition\" id=\"ref-for-content-security-policy-object-disposition②\">disposition</a> is <code>\"enforce\"</code>, then set <var>result</var> to\n<code>\"Blocked\"</code>.</p>"
             }
           ]
         },
