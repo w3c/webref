@@ -1,7 +1,17 @@
 // Source: DOM Standard (https://dom.spec.whatwg.org/)
 [Exposed=Window]
 interface ProcessingInstruction : CharacterData {
+  constructor(DOMString target, optional DOMString data = "");
+
   readonly attribute DOMString target;
+
+  boolean hasAttributes();
+  sequence<DOMString> getAttributeNames();
+  DOMString? getAttribute(DOMString name);
+  undefined setAttribute(DOMString name, DOMString value);
+  undefined removeAttribute(DOMString name);
+  boolean toggleAttribute(DOMString name, optional boolean force);
+  boolean hasAttribute(DOMString name);
 };
 
 // Source: CSS Object Model (CSSOM) Module Level 1 (https://www.w3.org/TR/cssom-1/)

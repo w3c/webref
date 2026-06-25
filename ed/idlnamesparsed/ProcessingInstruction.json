@@ -6,7 +6,7 @@
       "title": "DOM Standard",
       "url": "https://dom.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=Window]\ninterface ProcessingInstruction : CharacterData {\n  readonly attribute DOMString target;\n};",
+    "fragment": "[Exposed=Window]\ninterface ProcessingInstruction : CharacterData {\n  constructor(DOMString target, optional DOMString data = \"\");\n\n  readonly attribute DOMString target;\n\n  boolean hasAttributes();\n  sequence<DOMString> getAttributeNames();\n  DOMString? getAttribute(DOMString name);\n  undefined setAttribute(DOMString name, DOMString value);\n  undefined removeAttribute(DOMString name);\n  boolean toggleAttribute(DOMString name, optional boolean force);\n  boolean hasAttribute(DOMString name);\n};",
     "href": "https://dom.spec.whatwg.org/#processinginstruction"
   },
   "extended": [

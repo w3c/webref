@@ -17,6 +17,7 @@
           "Document",
           "DocumentFragment",
           "Text",
+          "ProcessingInstruction",
           "Comment",
           "StaticRange",
           "Range",
@@ -42,7 +43,6 @@
           "Attr",
           "CharacterData",
           "CDATASection",
-          "ProcessingInstruction",
           "AbstractRange",
           "NodeIterator",
           "TreeWalker",
@@ -8208,11 +8208,53 @@
         "href": "https://dom.spec.whatwg.org/#cdatasection"
       },
       "ProcessingInstruction": {
-        "fragment": "[Exposed=Window]\ninterface ProcessingInstruction : CharacterData {\n  readonly attribute DOMString target;\n};",
+        "fragment": "[Exposed=Window]\ninterface ProcessingInstruction : CharacterData {\n  constructor(DOMString target, optional DOMString data = \"\");\n\n  readonly attribute DOMString target;\n\n  boolean hasAttributes();\n  sequence<DOMString> getAttributeNames();\n  DOMString? getAttribute(DOMString name);\n  undefined setAttribute(DOMString name, DOMString value);\n  undefined removeAttribute(DOMString name);\n  boolean toggleAttribute(DOMString name, optional boolean force);\n  boolean hasAttribute(DOMString name);\n};",
         "type": "interface",
         "name": "ProcessingInstruction",
         "inheritance": "CharacterData",
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "target",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "data",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": {
+                  "type": "string",
+                  "value": ""
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "href": "https://dom.spec.whatwg.org/#dom-processinginstruction-processinginstruction"
+          },
           {
             "type": "attribute",
             "name": "target",
@@ -8228,6 +8270,244 @@
             "special": "",
             "readonly": true,
             "href": "https://dom.spec.whatwg.org/#dom-processinginstruction-target"
+          },
+          {
+            "type": "operation",
+            "name": "hasAttributes",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://dom.spec.whatwg.org/#dom-processinginstruction-hasattributes"
+          },
+          {
+            "type": "operation",
+            "name": "getAttributeNames",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://dom.spec.whatwg.org/#dom-processinginstruction-getattributenames"
+          },
+          {
+            "type": "operation",
+            "name": "getAttribute",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "name",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://dom.spec.whatwg.org/#dom-processinginstruction-getattribute"
+          },
+          {
+            "type": "operation",
+            "name": "setAttribute",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "name",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://dom.spec.whatwg.org/#dom-processinginstruction-setattribute"
+          },
+          {
+            "type": "operation",
+            "name": "removeAttribute",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "name",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://dom.spec.whatwg.org/#dom-processinginstruction-removeattribute"
+          },
+          {
+            "type": "operation",
+            "name": "toggleAttribute",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "name",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "force",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "boolean"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://dom.spec.whatwg.org/#dom-processinginstruction-toggleattribute"
+          },
+          {
+            "type": "operation",
+            "name": "hasAttribute",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "name",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "",
+            "href": "https://dom.spec.whatwg.org/#dom-processinginstruction-hasattribute"
           }
         ],
         "extAttrs": [
