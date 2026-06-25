@@ -464,7 +464,17 @@ interface CDATASection : Text {
 };
 [Exposed=Window]
 interface ProcessingInstruction : CharacterData {
+  constructor(DOMString target, optional DOMString data = "");
+
   readonly attribute DOMString target;
+
+  boolean hasAttributes();
+  sequence<DOMString> getAttributeNames();
+  DOMString? getAttribute(DOMString name);
+  undefined setAttribute(DOMString name, DOMString value);
+  undefined removeAttribute(DOMString name);
+  boolean toggleAttribute(DOMString name, optional boolean force);
+  boolean hasAttribute(DOMString name);
 };
 [Exposed=Window]
 interface Comment : CharacterData {
