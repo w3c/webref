@@ -6,7 +6,7 @@
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransformErrorEvent : Event {\n    constructor(DOMString type, SFrameTransformErrorEventInit eventInitDict);\n\n    readonly attribute SFrameTransformErrorEventType errorType;\n    readonly attribute CryptoKeyID? keyID;\n    readonly attribute any frame;\n};",
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransformErrorEvent : Event {\n    constructor(DOMString type, SFrameTransformErrorEventInit eventInitDict);\n\n    readonly attribute SFrameTransformErrorEventType errorType;\n    readonly attribute CryptoKeyID? keyID;\n    readonly attribute (RTCEncodedVideoFrame or RTCEncodedAudioFrame) frame;\n};",
     "href": "https://w3c.github.io/webrtc-encoded-transform/#sframetransformerrorevent"
   },
   "extended": [],

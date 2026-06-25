@@ -687,7 +687,7 @@
         "href": "https://w3c.github.io/webrtc-encoded-transform/#enumdef-sframetransformerroreventtype"
       },
       "SFrameTransformErrorEvent": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransformErrorEvent : Event {\n    constructor(DOMString type, SFrameTransformErrorEventInit eventInitDict);\n\n    readonly attribute SFrameTransformErrorEventType errorType;\n    readonly attribute CryptoKeyID? keyID;\n    readonly attribute any frame;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransformErrorEvent : Event {\n    constructor(DOMString type, SFrameTransformErrorEventInit eventInitDict);\n\n    readonly attribute SFrameTransformErrorEventType errorType;\n    readonly attribute CryptoKeyID? keyID;\n    readonly attribute (RTCEncodedVideoFrame or RTCEncodedAudioFrame) frame;\n};",
         "type": "interface",
         "name": "SFrameTransformErrorEvent",
         "inheritance": "Event",
@@ -771,8 +771,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "any"
+              "union": true,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RTCEncodedVideoFrame"
+                },
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RTCEncodedAudioFrame"
+                }
+              ]
             },
             "extAttrs": [],
             "special": "",
@@ -802,7 +819,7 @@
         "href": "https://w3c.github.io/webrtc-encoded-transform/#sframetransformerrorevent"
       },
       "SFrameTransformErrorEventInit": {
-        "fragment": "dictionary SFrameTransformErrorEventInit : EventInit {\n    required SFrameTransformErrorEventType errorType;\n    required any frame;\n    CryptoKeyID? keyID;\n};",
+        "fragment": "dictionary SFrameTransformErrorEventInit : EventInit {\n    required SFrameTransformErrorEventType errorType;\n    required (RTCEncodedVideoFrame or RTCEncodedAudioFrame) frame;\n    CryptoKeyID? keyID;\n};",
         "type": "dictionary",
         "name": "SFrameTransformErrorEventInit",
         "inheritance": "EventInit",
@@ -832,8 +849,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "any"
+              "union": true,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RTCEncodedVideoFrame"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "RTCEncodedAudioFrame"
+                }
+              ]
             },
             "default": null,
             "required": true,
@@ -2113,11 +2147,15 @@
         "Event",
         "SFrameTransformErrorEventInit",
         "SFrameTransformErrorEventType",
-        "CryptoKeyID"
+        "CryptoKeyID",
+        "RTCEncodedVideoFrame",
+        "RTCEncodedAudioFrame"
       ],
       "SFrameTransformErrorEventInit": [
         "EventInit",
         "SFrameTransformErrorEventType",
+        "RTCEncodedVideoFrame",
+        "RTCEncodedAudioFrame",
         "CryptoKeyID"
       ],
       "RTCEncodedFrameMetadata": [

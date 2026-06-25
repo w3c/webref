@@ -5,5 +5,5 @@ interface SFrameTransformErrorEvent : Event {
 
     readonly attribute SFrameTransformErrorEventType errorType;
     readonly attribute CryptoKeyID? keyID;
-    readonly attribute any frame;
+    readonly attribute (RTCEncodedVideoFrame or RTCEncodedAudioFrame) frame;
 };

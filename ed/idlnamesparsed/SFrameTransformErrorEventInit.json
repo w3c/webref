@@ -6,7 +6,7 @@
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "dictionary SFrameTransformErrorEventInit : EventInit {\n    required SFrameTransformErrorEventType errorType;\n    required any frame;\n    CryptoKeyID? keyID;\n};",
+    "fragment": "dictionary SFrameTransformErrorEventInit : EventInit {\n    required SFrameTransformErrorEventType errorType;\n    required (RTCEncodedVideoFrame or RTCEncodedAudioFrame) frame;\n    CryptoKeyID? keyID;\n};",
     "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-sframetransformerroreventinit"
   },
   "extended": [],
