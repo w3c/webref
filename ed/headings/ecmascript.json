@@ -2007,6 +2007,48 @@
       "number": "7.4.19"
     },
     {
+      "id": "sec-operations-on-disposable-objects",
+      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-operations-on-disposable-objects",
+      "title": "Operations on Disposable Objects",
+      "level": 2,
+      "number": "7.5"
+    },
+    {
+      "id": "sec-disposableresource-records",
+      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-disposableresource-records",
+      "title": "DisposableResource Records",
+      "level": 3,
+      "number": "7.5.1"
+    },
+    {
+      "id": "sec-adddisposableresource",
+      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-adddisposableresource",
+      "title": "AddDisposableResource ( disposableResourceStack, value, kind [ , method ] )",
+      "level": 3,
+      "number": "7.5.2"
+    },
+    {
+      "id": "sec-createdisposableresource",
+      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-createdisposableresource",
+      "title": "CreateDisposableResource ( value, kind [ , method ] )",
+      "level": 3,
+      "number": "7.5.3"
+    },
+    {
+      "id": "sec-getdisposemethod",
+      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-getdisposemethod",
+      "title": "GetDisposeMethod ( value, kind )",
+      "level": 3,
+      "number": "7.5.4"
+    },
+    {
+      "id": "sec-disposeresources",
+      "href": "https://tc39.es/ecma262/multipage/abstract-operations.html#sec-disposeresources",
+      "title": "DisposeResources ( disposableResourceStack, completion )",
+      "level": 3,
+      "number": "7.5.5"
+    },
+    {
       "id": "sec-syntax-directed-operations",
       "href": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html#sec-syntax-directed-operations",
       "title": "Syntax-Directed Operations",
@@ -2049,60 +2091,74 @@
       "number": "8.2.3"
     },
     {
+      "id": "sec-static-semantics-isusingdeclaration",
+      "href": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html#sec-static-semantics-isusingdeclaration",
+      "title": "Static Semantics: IsUsingDeclaration",
+      "level": 3,
+      "number": "8.2.4"
+    },
+    {
+      "id": "sec-static-semantics-isawaitusingdeclaration",
+      "href": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html#sec-static-semantics-isawaitusingdeclaration",
+      "title": "Static Semantics: IsAwaitUsingDeclaration",
+      "level": 3,
+      "number": "8.2.5"
+    },
+    {
       "id": "sec-static-semantics-lexicallydeclarednames",
       "href": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html#sec-static-semantics-lexicallydeclarednames",
       "title": "Static Semantics: LexicallyDeclaredNames",
       "level": 3,
-      "number": "8.2.4"
+      "number": "8.2.6"
     },
     {
       "id": "sec-static-semantics-lexicallyscopeddeclarations",
       "href": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html#sec-static-semantics-lexicallyscopeddeclarations",
       "title": "Static Semantics: LexicallyScopedDeclarations",
       "level": 3,
-      "number": "8.2.5"
+      "number": "8.2.7"
     },
     {
       "id": "sec-static-semantics-vardeclarednames",
       "href": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html#sec-static-semantics-vardeclarednames",
       "title": "Static Semantics: VarDeclaredNames",
       "level": 3,
-      "number": "8.2.6"
+      "number": "8.2.8"
     },
     {
       "id": "sec-static-semantics-varscopeddeclarations",
       "href": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html#sec-static-semantics-varscopeddeclarations",
       "title": "Static Semantics: VarScopedDeclarations",
       "level": 3,
-      "number": "8.2.7"
+      "number": "8.2.9"
     },
     {
       "id": "sec-static-semantics-toplevellexicallydeclarednames",
       "href": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html#sec-static-semantics-toplevellexicallydeclarednames",
       "title": "Static Semantics: TopLevelLexicallyDeclaredNames",
       "level": 3,
-      "number": "8.2.8"
+      "number": "8.2.10"
     },
     {
       "id": "sec-static-semantics-toplevellexicallyscopeddeclarations",
       "href": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html#sec-static-semantics-toplevellexicallyscopeddeclarations",
       "title": "Static Semantics: TopLevelLexicallyScopedDeclarations",
       "level": 3,
-      "number": "8.2.9"
+      "number": "8.2.11"
     },
     {
       "id": "sec-static-semantics-toplevelvardeclarednames",
       "href": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html#sec-static-semantics-toplevelvardeclarednames",
       "title": "Static Semantics: TopLevelVarDeclaredNames",
       "level": 3,
-      "number": "8.2.10"
+      "number": "8.2.12"
     },
     {
       "id": "sec-static-semantics-toplevelvarscopeddeclarations",
       "href": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html#sec-static-semantics-toplevelvarscopeddeclarations",
       "title": "Static Semantics: TopLevelVarScopedDeclarations",
       "level": 3,
-      "number": "8.2.11"
+      "number": "8.2.13"
     },
     {
       "id": "sec-syntax-directed-operations-labels",
@@ -2243,6 +2299,13 @@
       "title": "Static Semantics: PropName",
       "level": 3,
       "number": "8.6.5"
+    },
+    {
+      "id": "sec-static-semantics-containsusing",
+      "href": "https://tc39.es/ecma262/multipage/syntax-directed-operations.html#sec-static-semantics-containsusing",
+      "title": "Static Semantics: ContainsUsing",
+      "level": 3,
+      "number": "8.6.6"
     },
     {
       "id": "sec-executable-code-and-execution-contexts",
@@ -2803,6 +2866,13 @@
       "title": "RunSuspendedContext ( context, completionRecord )",
       "level": 3,
       "number": "9.4.7"
+    },
+    {
+      "id": "sec-runcallercontext",
+      "href": "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#sec-runcallercontext",
+      "title": "RunCallerContext ( value )",
+      "level": 3,
+      "number": "9.4.8"
     },
     {
       "id": "sec-jobs",
@@ -5243,7 +5313,7 @@
     {
       "id": "sec-let-and-const-declarations",
       "href": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-let-and-const-declarations",
-      "title": "Let and Const Declarations",
+      "title": "Let, Const, Using, and Await Using Declarations",
       "level": 3,
       "number": "14.3.1"
     },
@@ -5260,6 +5330,13 @@
       "title": "Runtime Semantics: Evaluation",
       "level": 4,
       "number": "14.3.1.2"
+    },
+    {
+      "id": "sec-bindingevaluation",
+      "href": "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html#sec-bindingevaluation",
+      "title": "Runtime Semantics: BindingEvaluation",
+      "level": 4,
+      "number": "14.3.1.3"
     },
     {
       "id": "sec-variable-statement",
@@ -6963,277 +7040,298 @@
       "number": "19.3.3"
     },
     {
+      "id": "sec-constructor-properties-of-the-global-object-asyncdisposablestack",
+      "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-asyncdisposablestack",
+      "title": "AsyncDisposableStack ( . . . )",
+      "level": 3,
+      "number": "19.3.4"
+    },
+    {
       "id": "sec-constructor-properties-of-the-global-object-bigint",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-bigint",
       "title": "BigInt ( . . . )",
       "level": 3,
-      "number": "19.3.4"
+      "number": "19.3.5"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-bigint64array",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-bigint64array",
       "title": "BigInt64Array ( . . . )",
       "level": 3,
-      "number": "19.3.5"
+      "number": "19.3.6"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-biguint64array",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-biguint64array",
       "title": "BigUint64Array ( . . . )",
       "level": 3,
-      "number": "19.3.6"
+      "number": "19.3.7"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-boolean",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-boolean",
       "title": "Boolean ( . . . )",
       "level": 3,
-      "number": "19.3.7"
+      "number": "19.3.8"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-dataview",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-dataview",
       "title": "DataView ( . . . )",
       "level": 3,
-      "number": "19.3.8"
+      "number": "19.3.9"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-date",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-date",
       "title": "Date ( . . . )",
       "level": 3,
-      "number": "19.3.9"
+      "number": "19.3.10"
+    },
+    {
+      "id": "sec-constructor-properties-of-the-global-object-disposablestack",
+      "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-disposablestack",
+      "title": "DisposableStack ( . . . )",
+      "level": 3,
+      "number": "19.3.11"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-error",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-error",
       "title": "Error ( . . . )",
       "level": 3,
-      "number": "19.3.10"
+      "number": "19.3.12"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-evalerror",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-evalerror",
       "title": "EvalError ( . . . )",
       "level": 3,
-      "number": "19.3.11"
+      "number": "19.3.13"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-finalization-registry",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-finalization-registry",
       "title": "FinalizationRegistry ( . . . )",
       "level": 3,
-      "number": "19.3.12"
+      "number": "19.3.14"
     },
     {
       "id": "sec-float16array",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-float16array",
       "title": "Float16Array ( . . . )",
       "level": 3,
-      "number": "19.3.13"
+      "number": "19.3.15"
     },
     {
       "id": "sec-float32array",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-float32array",
       "title": "Float32Array ( . . . )",
       "level": 3,
-      "number": "19.3.14"
+      "number": "19.3.16"
     },
     {
       "id": "sec-float64array",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-float64array",
       "title": "Float64Array ( . . . )",
       "level": 3,
-      "number": "19.3.15"
+      "number": "19.3.17"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-function",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-function",
       "title": "Function ( . . . )",
       "level": 3,
-      "number": "19.3.16"
+      "number": "19.3.18"
     },
     {
       "id": "sec-int8array",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-int8array",
       "title": "Int8Array ( . . . )",
       "level": 3,
-      "number": "19.3.17"
+      "number": "19.3.19"
     },
     {
       "id": "sec-int16array",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-int16array",
       "title": "Int16Array ( . . . )",
       "level": 3,
-      "number": "19.3.18"
+      "number": "19.3.20"
     },
     {
       "id": "sec-int32array",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-int32array",
       "title": "Int32Array ( . . . )",
       "level": 3,
-      "number": "19.3.19"
+      "number": "19.3.21"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-iterator",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-iterator",
       "title": "Iterator ( . . . )",
       "level": 3,
-      "number": "19.3.20"
+      "number": "19.3.22"
     },
     {
       "id": "sec-map",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-map",
       "title": "Map ( . . . )",
       "level": 3,
-      "number": "19.3.21"
+      "number": "19.3.23"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-number",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-number",
       "title": "Number ( . . . )",
       "level": 3,
-      "number": "19.3.22"
+      "number": "19.3.24"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-object",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-object",
       "title": "Object ( . . . )",
       "level": 3,
-      "number": "19.3.23"
+      "number": "19.3.25"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-promise",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-promise",
       "title": "Promise ( . . . )",
       "level": 3,
-      "number": "19.3.24"
+      "number": "19.3.26"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-proxy",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-proxy",
       "title": "Proxy ( . . . )",
       "level": 3,
-      "number": "19.3.25"
+      "number": "19.3.27"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-rangeerror",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-rangeerror",
       "title": "RangeError ( . . . )",
       "level": 3,
-      "number": "19.3.26"
+      "number": "19.3.28"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-referenceerror",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-referenceerror",
       "title": "ReferenceError ( . . . )",
       "level": 3,
-      "number": "19.3.27"
+      "number": "19.3.29"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-regexp",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-regexp",
       "title": "RegExp ( . . . )",
       "level": 3,
-      "number": "19.3.28"
+      "number": "19.3.30"
     },
     {
       "id": "sec-set",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-set",
       "title": "Set ( . . . )",
       "level": 3,
-      "number": "19.3.29"
+      "number": "19.3.31"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-sharedarraybuffer",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-sharedarraybuffer",
       "title": "SharedArrayBuffer ( . . . )",
       "level": 3,
-      "number": "19.3.30"
+      "number": "19.3.32"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-string",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-string",
       "title": "String ( . . . )",
       "level": 3,
-      "number": "19.3.31"
+      "number": "19.3.33"
+    },
+    {
+      "id": "sec-constructor-properties-of-the-global-object-suppressederror",
+      "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-suppressederror",
+      "title": "SuppressedError ( . . . )",
+      "level": 3,
+      "number": "19.3.34"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-symbol",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-symbol",
       "title": "Symbol ( . . . )",
       "level": 3,
-      "number": "19.3.32"
+      "number": "19.3.35"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-syntaxerror",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-syntaxerror",
       "title": "SyntaxError ( . . . )",
       "level": 3,
-      "number": "19.3.33"
+      "number": "19.3.36"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-typeerror",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-typeerror",
       "title": "TypeError ( . . . )",
       "level": 3,
-      "number": "19.3.34"
+      "number": "19.3.37"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-uint8array",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-uint8array",
       "title": "Uint8Array ( . . . )",
       "level": 3,
-      "number": "19.3.35"
+      "number": "19.3.38"
     },
     {
       "id": "sec-uint8clampedarray",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-uint8clampedarray",
       "title": "Uint8ClampedArray ( . . . )",
       "level": 3,
-      "number": "19.3.36"
+      "number": "19.3.39"
     },
     {
       "id": "sec-uint16array",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-uint16array",
       "title": "Uint16Array ( . . . )",
       "level": 3,
-      "number": "19.3.37"
+      "number": "19.3.40"
     },
     {
       "id": "sec-uint32array",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-uint32array",
       "title": "Uint32Array ( . . . )",
       "level": 3,
-      "number": "19.3.38"
+      "number": "19.3.41"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-urierror",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-urierror",
       "title": "URIError ( . . . )",
       "level": 3,
-      "number": "19.3.39"
+      "number": "19.3.42"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-weakmap",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-weakmap",
       "title": "WeakMap ( . . . )",
       "level": 3,
-      "number": "19.3.40"
+      "number": "19.3.43"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-weakref",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-weakref",
       "title": "WeakRef ( . . . )",
       "level": 3,
-      "number": "19.3.41"
+      "number": "19.3.44"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-weakset",
       "href": "https://tc39.es/ecma262/multipage/global-object.html#sec-constructor-properties-of-the-global-object-weakset",
       "title": "WeakSet ( . . . )",
       "level": 3,
-      "number": "19.3.42"
+      "number": "19.3.45"
     },
     {
       "id": "sec-other-properties-of-the-global-object",
@@ -8314,18 +8412,88 @@
       "number": "20.5.7.4"
     },
     {
+      "id": "sec-suppressederror-objects",
+      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-suppressederror-objects",
+      "title": "SuppressedError Objects",
+      "level": 3,
+      "number": "20.5.8"
+    },
+    {
+      "id": "sec-suppressederror-constructor",
+      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-suppressederror-constructor",
+      "title": "The SuppressedError Constructor",
+      "level": 4,
+      "number": "20.5.8.1"
+    },
+    {
+      "id": "sec-suppressederror",
+      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-suppressederror",
+      "title": "SuppressedError ( error, suppressed, message )",
+      "level": 5,
+      "number": "20.5.8.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-suppressederror-constructor",
+      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-properties-of-the-suppressederror-constructor",
+      "title": "Properties of the SuppressedError Constructor",
+      "level": 4,
+      "number": "20.5.8.2"
+    },
+    {
+      "id": "sec-suppressederror.prototype",
+      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-suppressederror.prototype",
+      "title": "SuppressedError.prototype",
+      "level": 5,
+      "number": "20.5.8.2.1"
+    },
+    {
+      "id": "sec-properties-of-the-suppressederror-prototype-object",
+      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-properties-of-the-suppressederror-prototype-object",
+      "title": "Properties of the SuppressedError Prototype Object",
+      "level": 4,
+      "number": "20.5.8.3"
+    },
+    {
+      "id": "sec-suppressederror.prototype.constructor",
+      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-suppressederror.prototype.constructor",
+      "title": "SuppressedError.prototype.constructor",
+      "level": 5,
+      "number": "20.5.8.3.1"
+    },
+    {
+      "id": "sec-suppressederror.prototype.message",
+      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-suppressederror.prototype.message",
+      "title": "SuppressedError.prototype.message",
+      "level": 5,
+      "number": "20.5.8.3.2"
+    },
+    {
+      "id": "sec-suppressederror.prototype.name",
+      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-suppressederror.prototype.name",
+      "title": "SuppressedError.prototype.name",
+      "level": 5,
+      "number": "20.5.8.3.3"
+    },
+    {
+      "id": "sec-properties-of-suppressederror-instances",
+      "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-properties-of-suppressederror-instances",
+      "title": "Properties of SuppressedError Instances",
+      "level": 4,
+      "number": "20.5.8.4"
+    },
+    {
       "id": "sec-abstract-operations-for-error-objects",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-abstract-operations-for-error-objects",
       "title": "Abstract Operations for Error Objects",
       "level": 3,
-      "number": "20.5.8"
+      "number": "20.5.9"
     },
     {
       "id": "sec-installerrorcause",
       "href": "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-installerrorcause",
       "title": "InstallErrorCause ( obj, options )",
       "level": 4,
-      "number": "20.5.8.1"
+      "number": "20.5.9.1"
     },
     {
       "id": "sec-numbers-and-dates",
@@ -14089,32 +14257,39 @@
       "number": "27.1.3.3.12"
     },
     {
+      "id": "sec-iterator.prototype-%symbol.dispose%",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype-%25symbol.dispose%25",
+      "title": "Iterator.prototype [ %Symbol.dispose% ] ( )",
+      "level": 5,
+      "number": "27.1.3.3.13"
+    },
+    {
       "id": "sec-iterator.prototype-%symbol.iterator%",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype-%25symbol.iterator%25",
       "title": "Iterator.prototype [ %Symbol.iterator% ] ( )",
       "level": 5,
-      "number": "27.1.3.3.13"
+      "number": "27.1.3.3.14"
     },
     {
       "id": "sec-iterator.prototype-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator.prototype-%25symbol.tostringtag%25",
       "title": "Iterator.prototype [ %Symbol.toStringTag% ]",
       "level": 5,
-      "number": "27.1.3.3.14"
+      "number": "27.1.3.3.15"
     },
     {
       "id": "sec-get-iterator.prototype-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-get-iterator.prototype-%25symbol.tostringtag%25",
       "title": "get Iterator.prototype [ %Symbol.toStringTag% ]",
       "level": 6,
-      "number": "27.1.3.3.14.1"
+      "number": "27.1.3.3.15.1"
     },
     {
       "id": "sec-set-iterator.prototype-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-set-iterator.prototype-%25symbol.tostringtag%25",
       "title": "set Iterator.prototype [ %Symbol.toStringTag% ]",
       "level": 6,
-      "number": "27.1.3.3.14.2"
+      "number": "27.1.3.3.15.2"
     },
     {
       "id": "sec-abstract-operations-for-iterators",
@@ -14138,11 +14313,18 @@
       "number": "27.1.4"
     },
     {
+      "id": "sec-%asynciteratorprototype%-%symbol.asyncdispose%",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25asynciteratorprototype%25-%25symbol.asyncdispose%25",
+      "title": "%AsyncIteratorPrototype% [ %Symbol.asyncDispose% ] ( )",
+      "level": 4,
+      "number": "27.1.4.1"
+    },
+    {
       "id": "sec-%asynciteratorprototype%-%symbol.asynciterator%",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-%25asynciteratorprototype%25-%25symbol.asynciterator%25",
       "title": "%AsyncIteratorPrototype% [ %Symbol.asyncIterator% ] ( )",
       "level": 4,
-      "number": "27.1.4.1"
+      "number": "27.1.4.2"
     },
     {
       "id": "sec-async-from-sync-iterator-objects",
@@ -14201,837 +14383,1089 @@
       "number": "27.1.5.4"
     },
     {
+      "id": "sec-resource-management",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-resource-management",
+      "title": "Resource Management",
+      "level": 2,
+      "number": "27.2"
+    },
+    {
+      "id": "sec-common-resource-management-interfaces",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-common-resource-management-interfaces",
+      "title": "Common Resource Management Interfaces",
+      "level": 3,
+      "number": "27.2.1"
+    },
+    {
+      "id": "sec-disposable-interface",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-disposable-interface",
+      "title": "The Disposable Interface",
+      "level": 4,
+      "number": "27.2.1.1"
+    },
+    {
+      "id": "sec-asyncdisposable-interface",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncdisposable-interface",
+      "title": "The AsyncDisposable Interface",
+      "level": 4,
+      "number": "27.2.1.2"
+    },
+    {
+      "id": "sec-disposablestack-objects",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-disposablestack-objects",
+      "title": "DisposableStack Objects",
+      "level": 2,
+      "number": "27.3"
+    },
+    {
+      "id": "sec-disposablestack-constructor",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-disposablestack-constructor",
+      "title": "The DisposableStack Constructor",
+      "level": 3,
+      "number": "27.3.1"
+    },
+    {
+      "id": "sec-disposablestack",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-disposablestack",
+      "title": "DisposableStack ( )",
+      "level": 4,
+      "number": "27.3.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-disposablestack-constructor",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-the-disposablestack-constructor",
+      "title": "Properties of the DisposableStack Constructor",
+      "level": 3,
+      "number": "27.3.2"
+    },
+    {
+      "id": "sec-disposablestack.prototype",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-disposablestack.prototype",
+      "title": "DisposableStack.prototype",
+      "level": 4,
+      "number": "27.3.2.1"
+    },
+    {
+      "id": "sec-properties-of-the-disposablestack-prototype-object",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-the-disposablestack-prototype-object",
+      "title": "Properties of the DisposableStack Prototype Object",
+      "level": 3,
+      "number": "27.3.3"
+    },
+    {
+      "id": "sec-disposablestack.prototype.adopt",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-disposablestack.prototype.adopt",
+      "title": "DisposableStack.prototype.adopt ( value, onDispose )",
+      "level": 4,
+      "number": "27.3.3.1"
+    },
+    {
+      "id": "sec-disposablestack.prototype.constructor",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-disposablestack.prototype.constructor",
+      "title": "DisposableStack.prototype.constructor",
+      "level": 4,
+      "number": "27.3.3.2"
+    },
+    {
+      "id": "sec-disposablestack.prototype.defer",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-disposablestack.prototype.defer",
+      "title": "DisposableStack.prototype.defer ( onDispose )",
+      "level": 4,
+      "number": "27.3.3.3"
+    },
+    {
+      "id": "sec-disposablestack.prototype.dispose",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-disposablestack.prototype.dispose",
+      "title": "DisposableStack.prototype.dispose ( )",
+      "level": 4,
+      "number": "27.3.3.4"
+    },
+    {
+      "id": "sec-get-disposablestack.prototype.disposed",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-get-disposablestack.prototype.disposed",
+      "title": "get DisposableStack.prototype.disposed",
+      "level": 4,
+      "number": "27.3.3.5"
+    },
+    {
+      "id": "sec-disposablestack.prototype.move",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-disposablestack.prototype.move",
+      "title": "DisposableStack.prototype.move ( )",
+      "level": 4,
+      "number": "27.3.3.6"
+    },
+    {
+      "id": "sec-disposablestack.prototype.use",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-disposablestack.prototype.use",
+      "title": "DisposableStack.prototype.use ( value )",
+      "level": 4,
+      "number": "27.3.3.7"
+    },
+    {
+      "id": "sec-disposablestack.prototype-%symbol.dispose%",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-disposablestack.prototype-%25symbol.dispose%25",
+      "title": "DisposableStack.prototype [ %Symbol.dispose% ] ( )",
+      "level": 4,
+      "number": "27.3.3.8"
+    },
+    {
+      "id": "sec-disposablestack.prototype-%symbol.tostringtag%",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-disposablestack.prototype-%25symbol.tostringtag%25",
+      "title": "DisposableStack.prototype [ %Symbol.toStringTag% ]",
+      "level": 4,
+      "number": "27.3.3.9"
+    },
+    {
+      "id": "sec-properties-of-disposablestack-instances",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-disposablestack-instances",
+      "title": "Properties of DisposableStack Instances",
+      "level": 3,
+      "number": "27.3.4"
+    },
+    {
+      "id": "sec-asyncdisposablestack-objects",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncdisposablestack-objects",
+      "title": "AsyncDisposableStack Objects",
+      "level": 2,
+      "number": "27.4"
+    },
+    {
+      "id": "sec-asyncdisposablestack-constructor",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncdisposablestack-constructor",
+      "title": "The AsyncDisposableStack Constructor",
+      "level": 3,
+      "number": "27.4.1"
+    },
+    {
+      "id": "sec-asyncdisposablestack",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncdisposablestack",
+      "title": "AsyncDisposableStack ( )",
+      "level": 4,
+      "number": "27.4.1.1"
+    },
+    {
+      "id": "sec-properties-of-the-asyncdisposablestack-constructor",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-the-asyncdisposablestack-constructor",
+      "title": "Properties of the AsyncDisposableStack Constructor",
+      "level": 3,
+      "number": "27.4.2"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncdisposablestack.prototype",
+      "title": "AsyncDisposableStack.prototype",
+      "level": 4,
+      "number": "27.4.2.1"
+    },
+    {
+      "id": "sec-properties-of-the-asyncdisposablestack-prototype-object",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-the-asyncdisposablestack-prototype-object",
+      "title": "Properties of the AsyncDisposableStack Prototype Object",
+      "level": 3,
+      "number": "27.4.3"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype.adopt",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncdisposablestack.prototype.adopt",
+      "title": "AsyncDisposableStack.prototype.adopt ( value, onDisposeAsync )",
+      "level": 4,
+      "number": "27.4.3.1"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype.constructor",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncdisposablestack.prototype.constructor",
+      "title": "AsyncDisposableStack.prototype.constructor",
+      "level": 4,
+      "number": "27.4.3.2"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype.defer",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncdisposablestack.prototype.defer",
+      "title": "AsyncDisposableStack.prototype.defer ( onDisposeAsync )",
+      "level": 4,
+      "number": "27.4.3.3"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype.disposeAsync",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncdisposablestack.prototype.disposeAsync",
+      "title": "AsyncDisposableStack.prototype.disposeAsync ( )",
+      "level": 4,
+      "number": "27.4.3.4"
+    },
+    {
+      "id": "sec-get-asyncdisposablestack.prototype.disposed",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-get-asyncdisposablestack.prototype.disposed",
+      "title": "get AsyncDisposableStack.prototype.disposed",
+      "level": 4,
+      "number": "27.4.3.5"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype.move",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncdisposablestack.prototype.move",
+      "title": "AsyncDisposableStack.prototype.move ( )",
+      "level": 4,
+      "number": "27.4.3.6"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype.use",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncdisposablestack.prototype.use",
+      "title": "AsyncDisposableStack.prototype.use ( value )",
+      "level": 4,
+      "number": "27.4.3.7"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype-%symbol.asyncdispose%",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncdisposablestack.prototype-%25symbol.asyncdispose%25",
+      "title": "AsyncDisposableStack.prototype [ %Symbol.asyncDispose% ] ( )",
+      "level": 4,
+      "number": "27.4.3.8"
+    },
+    {
+      "id": "sec-asyncdisposablestack.prototype-%symbol.tostringtag%",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncdisposablestack.prototype-%25symbol.tostringtag%25",
+      "title": "AsyncDisposableStack.prototype [ %Symbol.toStringTag% ]",
+      "level": 4,
+      "number": "27.4.3.9"
+    },
+    {
+      "id": "sec-properties-of-asyncdisposablestack-instances",
+      "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-asyncdisposablestack-instances",
+      "title": "Properties of AsyncDisposableStack Instances",
+      "level": 3,
+      "number": "27.4.4"
+    },
+    {
       "id": "sec-promise-objects",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-objects",
       "title": "Promise Objects",
       "level": 2,
-      "number": "27.2"
+      "number": "27.5"
     },
     {
       "id": "sec-promise-abstract-operations",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-abstract-operations",
       "title": "Promise Abstract Operations",
       "level": 3,
-      "number": "27.2.1"
+      "number": "27.5.1"
     },
     {
       "id": "sec-promisecapability-records",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promisecapability-records",
       "title": "PromiseCapability Records",
       "level": 4,
-      "number": "27.2.1.1"
+      "number": "27.5.1.1"
     },
     {
       "id": "sec-ifabruptrejectpromise",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-ifabruptrejectpromise",
       "title": "IfAbruptRejectPromise ( value, capability )",
       "level": 5,
-      "number": "27.2.1.1.1"
+      "number": "27.5.1.1.1"
     },
     {
       "id": "sec-promisereaction-records",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promisereaction-records",
       "title": "PromiseReaction Records",
       "level": 4,
-      "number": "27.2.1.2"
+      "number": "27.5.1.2"
     },
     {
       "id": "sec-createresolvingfunctions",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-createresolvingfunctions",
       "title": "CreateResolvingFunctions ( toResolve )",
       "level": 4,
-      "number": "27.2.1.3"
+      "number": "27.5.1.3"
     },
     {
       "id": "sec-fulfillpromise",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-fulfillpromise",
       "title": "FulfillPromise ( promise, value )",
       "level": 4,
-      "number": "27.2.1.4"
+      "number": "27.5.1.4"
     },
     {
       "id": "sec-newpromisecapability",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-newpromisecapability",
       "title": "NewPromiseCapability ( ctor )",
       "level": 4,
-      "number": "27.2.1.5"
+      "number": "27.5.1.5"
     },
     {
       "id": "sec-ispromise",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-ispromise",
       "title": "IsPromise ( arg )",
       "level": 4,
-      "number": "27.2.1.6"
+      "number": "27.5.1.6"
     },
     {
       "id": "sec-rejectpromise",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-rejectpromise",
       "title": "RejectPromise ( promise, reason )",
       "level": 4,
-      "number": "27.2.1.7"
+      "number": "27.5.1.7"
     },
     {
       "id": "sec-triggerpromisereactions",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-triggerpromisereactions",
       "title": "TriggerPromiseReactions ( reactions, arg )",
       "level": 4,
-      "number": "27.2.1.8"
+      "number": "27.5.1.8"
     },
     {
       "id": "sec-host-promise-rejection-tracker",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-host-promise-rejection-tracker",
       "title": "HostPromiseRejectionTracker ( promise, operation )",
       "level": 4,
-      "number": "27.2.1.9"
+      "number": "27.5.1.9"
     },
     {
       "id": "sec-promise-jobs",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-jobs",
       "title": "Promise Jobs",
       "level": 3,
-      "number": "27.2.2"
+      "number": "27.5.2"
     },
     {
       "id": "sec-newpromisereactionjob",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-newpromisereactionjob",
       "title": "NewPromiseReactionJob ( reaction, arg )",
       "level": 4,
-      "number": "27.2.2.1"
+      "number": "27.5.2.1"
     },
     {
       "id": "sec-newpromiseresolvethenablejob",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-newpromiseresolvethenablejob",
       "title": "NewPromiseResolveThenableJob ( promiseToResolve, thenable, then )",
       "level": 4,
-      "number": "27.2.2.2"
+      "number": "27.5.2.2"
     },
     {
       "id": "sec-promise-constructor",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-constructor",
       "title": "The Promise Constructor",
       "level": 3,
-      "number": "27.2.3"
+      "number": "27.5.3"
     },
     {
       "id": "sec-promise-executor",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-executor",
       "title": "Promise ( executor )",
       "level": 4,
-      "number": "27.2.3.1"
+      "number": "27.5.3.1"
     },
     {
       "id": "sec-properties-of-the-promise-constructor",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-the-promise-constructor",
       "title": "Properties of the Promise Constructor",
       "level": 3,
-      "number": "27.2.4"
+      "number": "27.5.4"
     },
     {
       "id": "sec-promise.all",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.all",
       "title": "Promise.all ( iterable )",
       "level": 4,
-      "number": "27.2.4.1"
+      "number": "27.5.4.1"
     },
     {
       "id": "sec-getpromiseresolve",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-getpromiseresolve",
       "title": "GetPromiseResolve ( promiseCtor )",
       "level": 5,
-      "number": "27.2.4.1.1"
+      "number": "27.5.4.1.1"
     },
     {
       "id": "sec-performpromiseall",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromiseall",
       "title": "PerformPromiseAll ( iteratorRecord, ctor, resultCapability, promiseResolve )",
       "level": 5,
-      "number": "27.2.4.1.2"
+      "number": "27.5.4.1.2"
     },
     {
       "id": "sec-promise.allsettled",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.allsettled",
       "title": "Promise.allSettled ( iterable )",
       "level": 4,
-      "number": "27.2.4.2"
+      "number": "27.5.4.2"
     },
     {
       "id": "sec-performpromiseallsettled",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromiseallsettled",
       "title": "PerformPromiseAllSettled ( iteratorRecord, ctor, resultCapability, promiseResolve )",
       "level": 5,
-      "number": "27.2.4.2.1"
+      "number": "27.5.4.2.1"
     },
     {
       "id": "sec-promise.any",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.any",
       "title": "Promise.any ( iterable )",
       "level": 4,
-      "number": "27.2.4.3"
+      "number": "27.5.4.3"
     },
     {
       "id": "sec-performpromiseany",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromiseany",
       "title": "PerformPromiseAny ( iteratorRecord, ctor, resultCapability, promiseResolve )",
       "level": 5,
-      "number": "27.2.4.3.1"
+      "number": "27.5.4.3.1"
     },
     {
       "id": "sec-promise.prototype",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.prototype",
       "title": "Promise.prototype",
       "level": 4,
-      "number": "27.2.4.4"
+      "number": "27.5.4.4"
     },
     {
       "id": "sec-promise.race",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.race",
       "title": "Promise.race ( iterable )",
       "level": 4,
-      "number": "27.2.4.5"
+      "number": "27.5.4.5"
     },
     {
       "id": "sec-performpromiserace",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromiserace",
       "title": "PerformPromiseRace ( iteratorRecord, ctor, resultCapability, promiseResolve )",
       "level": 5,
-      "number": "27.2.4.5.1"
+      "number": "27.5.4.5.1"
     },
     {
       "id": "sec-promise.reject",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.reject",
       "title": "Promise.reject ( reason )",
       "level": 4,
-      "number": "27.2.4.6"
+      "number": "27.5.4.6"
     },
     {
       "id": "sec-promise.resolve",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.resolve",
       "title": "Promise.resolve ( resolution )",
       "level": 4,
-      "number": "27.2.4.7"
+      "number": "27.5.4.7"
     },
     {
       "id": "sec-promise-resolve",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-resolve",
       "title": "PromiseResolve ( ctor, resolution )",
       "level": 5,
-      "number": "27.2.4.7.1"
+      "number": "27.5.4.7.1"
     },
     {
       "id": "sec-promise.try",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.try",
       "title": "Promise.try ( callback, ...args )",
       "level": 4,
-      "number": "27.2.4.8"
+      "number": "27.5.4.8"
     },
     {
       "id": "sec-promise.withResolvers",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.withResolvers",
       "title": "Promise.withResolvers ( )",
       "level": 4,
-      "number": "27.2.4.9"
+      "number": "27.5.4.9"
     },
     {
       "id": "sec-get-promise-%symbol.species%",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-get-promise-%25symbol.species%25",
       "title": "get Promise [ %Symbol.species% ]",
       "level": 4,
-      "number": "27.2.4.10"
+      "number": "27.5.4.10"
     },
     {
       "id": "sec-properties-of-the-promise-prototype-object",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-the-promise-prototype-object",
       "title": "Properties of the Promise Prototype Object",
       "level": 3,
-      "number": "27.2.5"
+      "number": "27.5.5"
     },
     {
       "id": "sec-promise.prototype.catch",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.prototype.catch",
       "title": "Promise.prototype.catch ( onRejected )",
       "level": 4,
-      "number": "27.2.5.1"
+      "number": "27.5.5.1"
     },
     {
       "id": "sec-promise.prototype.constructor",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.prototype.constructor",
       "title": "Promise.prototype.constructor",
       "level": 4,
-      "number": "27.2.5.2"
+      "number": "27.5.5.2"
     },
     {
       "id": "sec-promise.prototype.finally",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.prototype.finally",
       "title": "Promise.prototype.finally ( onFinally )",
       "level": 4,
-      "number": "27.2.5.3"
+      "number": "27.5.5.3"
     },
     {
       "id": "sec-promise.prototype.then",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.prototype.then",
       "title": "Promise.prototype.then ( onFulfilled, onRejected )",
       "level": 4,
-      "number": "27.2.5.4"
+      "number": "27.5.5.4"
     },
     {
       "id": "sec-performpromisethen",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-performpromisethen",
       "title": "PerformPromiseThen ( promise, onFulfilled, onRejected [ , resultCapability ] )",
       "level": 5,
-      "number": "27.2.5.4.1"
+      "number": "27.5.5.4.1"
     },
     {
       "id": "sec-promise.prototype-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise.prototype-%25symbol.tostringtag%25",
       "title": "Promise.prototype [ %Symbol.toStringTag% ]",
       "level": 4,
-      "number": "27.2.5.5"
+      "number": "27.5.5.5"
     },
     {
       "id": "sec-properties-of-promise-instances",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-promise-instances",
       "title": "Properties of Promise Instances",
       "level": 3,
-      "number": "27.2.6"
+      "number": "27.5.6"
     },
     {
       "id": "sec-generatorfunction-objects",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction-objects",
       "title": "GeneratorFunction Objects",
       "level": 2,
-      "number": "27.3"
+      "number": "27.6"
     },
     {
       "id": "sec-generatorfunction-constructor",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction-constructor",
       "title": "The GeneratorFunction Constructor",
       "level": 3,
-      "number": "27.3.1"
+      "number": "27.6.1"
     },
     {
       "id": "sec-generatorfunction",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction",
       "title": "GeneratorFunction ( ...paramArgs, bodyArg )",
       "level": 4,
-      "number": "27.3.1.1"
+      "number": "27.6.1.1"
     },
     {
       "id": "sec-properties-of-the-generatorfunction-constructor",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-the-generatorfunction-constructor",
       "title": "Properties of the GeneratorFunction Constructor",
       "level": 3,
-      "number": "27.3.2"
+      "number": "27.6.2"
     },
     {
       "id": "sec-generatorfunction.prototype",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction.prototype",
       "title": "GeneratorFunction.prototype",
       "level": 4,
-      "number": "27.3.2.1"
+      "number": "27.6.2.1"
     },
     {
       "id": "sec-properties-of-the-generatorfunction-prototype-object",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-the-generatorfunction-prototype-object",
       "title": "Properties of the GeneratorFunction Prototype Object",
       "level": 3,
-      "number": "27.3.3"
+      "number": "27.6.3"
     },
     {
       "id": "sec-generatorfunction.prototype.constructor",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction.prototype.constructor",
       "title": "GeneratorFunction.prototype.constructor",
       "level": 4,
-      "number": "27.3.3.1"
+      "number": "27.6.3.1"
     },
     {
       "id": "sec-generatorfunction.prototype.prototype",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction.prototype.prototype",
       "title": "GeneratorFunction.prototype.prototype",
       "level": 4,
-      "number": "27.3.3.2"
+      "number": "27.6.3.2"
     },
     {
       "id": "sec-generatorfunction.prototype-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction.prototype-%25symbol.tostringtag%25",
       "title": "GeneratorFunction.prototype [ %Symbol.toStringTag% ]",
       "level": 4,
-      "number": "27.3.3.3"
+      "number": "27.6.3.3"
     },
     {
       "id": "sec-generatorfunction-instances",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction-instances",
       "title": "GeneratorFunction Instances",
       "level": 3,
-      "number": "27.3.4"
+      "number": "27.6.4"
     },
     {
       "id": "sec-generatorfunction-instances-length",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction-instances-length",
       "title": "length",
       "level": 4,
-      "number": "27.3.4.1"
+      "number": "27.6.4.1"
     },
     {
       "id": "sec-generatorfunction-instances-name",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction-instances-name",
       "title": "name",
       "level": 4,
-      "number": "27.3.4.2"
+      "number": "27.6.4.2"
     },
     {
       "id": "sec-generatorfunction-instances-prototype",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction-instances-prototype",
       "title": "prototype",
       "level": 4,
-      "number": "27.3.4.3"
+      "number": "27.6.4.3"
     },
     {
       "id": "sec-asyncgeneratorfunction-objects",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction-objects",
       "title": "AsyncGeneratorFunction Objects",
       "level": 2,
-      "number": "27.4"
+      "number": "27.7"
     },
     {
       "id": "sec-asyncgeneratorfunction-constructor",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction-constructor",
       "title": "The AsyncGeneratorFunction Constructor",
       "level": 3,
-      "number": "27.4.1"
+      "number": "27.7.1"
     },
     {
       "id": "sec-asyncgeneratorfunction",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction",
       "title": "AsyncGeneratorFunction ( ...paramArgs, bodyArg )",
       "level": 4,
-      "number": "27.4.1.1"
+      "number": "27.7.1.1"
     },
     {
       "id": "sec-properties-of-asyncgeneratorfunction",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-asyncgeneratorfunction",
       "title": "Properties of the AsyncGeneratorFunction Constructor",
       "level": 3,
-      "number": "27.4.2"
+      "number": "27.7.2"
     },
     {
       "id": "sec-asyncgeneratorfunction-prototype",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction-prototype",
       "title": "AsyncGeneratorFunction.prototype",
       "level": 4,
-      "number": "27.4.2.1"
+      "number": "27.7.2.1"
     },
     {
       "id": "sec-properties-of-asyncgeneratorfunction-prototype",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-asyncgeneratorfunction-prototype",
       "title": "Properties of the AsyncGeneratorFunction Prototype Object",
       "level": 3,
-      "number": "27.4.3"
+      "number": "27.7.3"
     },
     {
       "id": "sec-asyncgeneratorfunction-prototype-constructor",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction-prototype-constructor",
       "title": "AsyncGeneratorFunction.prototype.constructor",
       "level": 4,
-      "number": "27.4.3.1"
+      "number": "27.7.3.1"
     },
     {
       "id": "sec-asyncgeneratorfunction-prototype-prototype",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction-prototype-prototype",
       "title": "AsyncGeneratorFunction.prototype.prototype",
       "level": 4,
-      "number": "27.4.3.2"
+      "number": "27.7.3.2"
     },
     {
       "id": "sec-asyncgeneratorfunction-prototype-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction-prototype-%25symbol.tostringtag%25",
       "title": "AsyncGeneratorFunction.prototype [ %Symbol.toStringTag% ]",
       "level": 4,
-      "number": "27.4.3.3"
+      "number": "27.7.3.3"
     },
     {
       "id": "sec-asyncgeneratorfunction-instances",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction-instances",
       "title": "AsyncGeneratorFunction Instances",
       "level": 3,
-      "number": "27.4.4"
+      "number": "27.7.4"
     },
     {
       "id": "sec-asyncgeneratorfunction-instance-length",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction-instance-length",
       "title": "length",
       "level": 4,
-      "number": "27.4.4.1"
+      "number": "27.7.4.1"
     },
     {
       "id": "sec-asyncgeneratorfunction-instance-name",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction-instance-name",
       "title": "name",
       "level": 4,
-      "number": "27.4.4.2"
+      "number": "27.7.4.2"
     },
     {
       "id": "sec-asyncgeneratorfunction-instance-prototype",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction-instance-prototype",
       "title": "prototype",
       "level": 4,
-      "number": "27.4.4.3"
+      "number": "27.7.4.3"
     },
     {
       "id": "sec-generator-objects",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator-objects",
       "title": "Generator Objects",
       "level": 2,
-      "number": "27.5"
+      "number": "27.8"
     },
     {
       "id": "sec-properties-of-generator-prototype",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-generator-prototype",
       "title": "The %GeneratorPrototype% Object",
       "level": 3,
-      "number": "27.5.1"
+      "number": "27.8.1"
     },
     {
       "id": "sec-generator.prototype.constructor",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator.prototype.constructor",
       "title": "%GeneratorPrototype%.constructor",
       "level": 4,
-      "number": "27.5.1.1"
+      "number": "27.8.1.1"
     },
     {
       "id": "sec-generator.prototype.next",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator.prototype.next",
       "title": "%GeneratorPrototype%.next ( value )",
       "level": 4,
-      "number": "27.5.1.2"
+      "number": "27.8.1.2"
     },
     {
       "id": "sec-generator.prototype.return",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator.prototype.return",
       "title": "%GeneratorPrototype%.return ( value )",
       "level": 4,
-      "number": "27.5.1.3"
+      "number": "27.8.1.3"
     },
     {
       "id": "sec-generator.prototype.throw",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator.prototype.throw",
       "title": "%GeneratorPrototype%.throw ( exception )",
       "level": 4,
-      "number": "27.5.1.4"
+      "number": "27.8.1.4"
     },
     {
       "id": "sec-generator.prototype-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator.prototype-%25symbol.tostringtag%25",
       "title": "%GeneratorPrototype% [ %Symbol.toStringTag% ]",
       "level": 4,
-      "number": "27.5.1.5"
+      "number": "27.8.1.5"
     },
     {
       "id": "sec-properties-of-generator-instances",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-generator-instances",
       "title": "Properties of Generator Instances",
       "level": 3,
-      "number": "27.5.2"
+      "number": "27.8.2"
     },
     {
       "id": "sec-generator-abstract-operations",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator-abstract-operations",
       "title": "Generator Abstract Operations",
       "level": 3,
-      "number": "27.5.3"
+      "number": "27.8.3"
     },
     {
       "id": "sec-generatorstart",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorstart",
       "title": "GeneratorStart ( gen, genBody )",
       "level": 4,
-      "number": "27.5.3.1"
+      "number": "27.8.3.1"
     },
     {
       "id": "sec-generatorvalidate",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorvalidate",
       "title": "GeneratorValidate ( gen, genBrand )",
       "level": 4,
-      "number": "27.5.3.2"
+      "number": "27.8.3.2"
     },
     {
       "id": "sec-generatorresume",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorresume",
       "title": "GeneratorResume ( gen, value, genBrand )",
       "level": 4,
-      "number": "27.5.3.3"
+      "number": "27.8.3.3"
     },
     {
       "id": "sec-generatorresumeabrupt",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorresumeabrupt",
       "title": "GeneratorResumeAbrupt ( gen, abruptCompletion, genBrand )",
       "level": 4,
-      "number": "27.5.3.4"
+      "number": "27.8.3.4"
     },
     {
       "id": "sec-getgeneratorkind",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-getgeneratorkind",
       "title": "GetGeneratorKind ( )",
       "level": 4,
-      "number": "27.5.3.5"
+      "number": "27.8.3.5"
     },
     {
       "id": "sec-generatoryield",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatoryield",
       "title": "GeneratorYield ( iteratorResult )",
       "level": 4,
-      "number": "27.5.3.6"
+      "number": "27.8.3.6"
     },
     {
       "id": "sec-yield",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-yield",
       "title": "Yield ( arg )",
       "level": 4,
-      "number": "27.5.3.7"
+      "number": "27.8.3.7"
     },
     {
       "id": "sec-createiteratorfromclosure",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-createiteratorfromclosure",
       "title": "CreateIteratorFromClosure ( closure, genBrand, genProto [ , extraSlots ] )",
       "level": 4,
-      "number": "27.5.3.8"
+      "number": "27.8.3.8"
     },
     {
       "id": "sec-asyncgenerator-objects",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-objects",
       "title": "AsyncGenerator Objects",
       "level": 2,
-      "number": "27.6"
+      "number": "27.9"
     },
     {
       "id": "sec-properties-of-asyncgenerator-prototype",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-asyncgenerator-prototype",
       "title": "The %AsyncGeneratorPrototype% Object",
       "level": 3,
-      "number": "27.6.1"
+      "number": "27.9.1"
     },
     {
       "id": "sec-asyncgenerator-prototype-constructor",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-prototype-constructor",
       "title": "%AsyncGeneratorPrototype%.constructor",
       "level": 4,
-      "number": "27.6.1.1"
+      "number": "27.9.1.1"
     },
     {
       "id": "sec-asyncgenerator-prototype-next",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-prototype-next",
       "title": "%AsyncGeneratorPrototype%.next ( value )",
       "level": 4,
-      "number": "27.6.1.2"
+      "number": "27.9.1.2"
     },
     {
       "id": "sec-asyncgenerator-prototype-return",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-prototype-return",
       "title": "%AsyncGeneratorPrototype%.return ( value )",
       "level": 4,
-      "number": "27.6.1.3"
+      "number": "27.9.1.3"
     },
     {
       "id": "sec-asyncgenerator-prototype-throw",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-prototype-throw",
       "title": "%AsyncGeneratorPrototype%.throw ( exception )",
       "level": 4,
-      "number": "27.6.1.4"
+      "number": "27.9.1.4"
     },
     {
       "id": "sec-asyncgenerator-prototype-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-prototype-%25symbol.tostringtag%25",
       "title": "%AsyncGeneratorPrototype% [ %Symbol.toStringTag% ]",
       "level": 4,
-      "number": "27.6.1.5"
+      "number": "27.9.1.5"
     },
     {
       "id": "sec-properties-of-asyncgenerator-intances",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-properties-of-asyncgenerator-intances",
       "title": "Properties of AsyncGenerator Instances",
       "level": 3,
-      "number": "27.6.2"
+      "number": "27.9.2"
     },
     {
       "id": "sec-asyncgenerator-abstract-operations",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-abstract-operations",
       "title": "AsyncGenerator Abstract Operations",
       "level": 3,
-      "number": "27.6.3"
+      "number": "27.9.3"
     },
     {
       "id": "sec-asyncgeneratorrequest-records",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorrequest-records",
       "title": "AsyncGeneratorRequest Records",
       "level": 4,
-      "number": "27.6.3.1"
+      "number": "27.9.3.1"
     },
     {
       "id": "sec-asyncgeneratorstart",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorstart",
       "title": "AsyncGeneratorStart ( gen, genBody )",
       "level": 4,
-      "number": "27.6.3.2"
+      "number": "27.9.3.2"
     },
     {
       "id": "sec-asyncgeneratorvalidate",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorvalidate",
       "title": "AsyncGeneratorValidate ( gen, genBrand )",
       "level": 4,
-      "number": "27.6.3.3"
+      "number": "27.9.3.3"
     },
     {
       "id": "sec-asyncgeneratorenqueue",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorenqueue",
       "title": "AsyncGeneratorEnqueue ( gen, completion, promiseCapability )",
       "level": 4,
-      "number": "27.6.3.4"
+      "number": "27.9.3.4"
     },
     {
       "id": "sec-asyncgeneratorcompletestep",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorcompletestep",
       "title": "AsyncGeneratorCompleteStep ( gen, completion, done [ , realm ] )",
       "level": 4,
-      "number": "27.6.3.5"
+      "number": "27.9.3.5"
     },
     {
       "id": "sec-asyncgeneratorresume",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorresume",
       "title": "AsyncGeneratorResume ( gen, completion )",
       "level": 4,
-      "number": "27.6.3.6"
+      "number": "27.9.3.6"
     },
     {
       "id": "sec-asyncgeneratorunwrapyieldresumption",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorunwrapyieldresumption",
       "title": "AsyncGeneratorUnwrapYieldResumption ( resumptionValue )",
       "level": 4,
-      "number": "27.6.3.7"
+      "number": "27.9.3.7"
     },
     {
       "id": "sec-asyncgeneratoryield",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratoryield",
       "title": "AsyncGeneratorYield ( arg )",
       "level": 4,
-      "number": "27.6.3.8"
+      "number": "27.9.3.8"
     },
     {
       "id": "sec-asyncgeneratorawaitreturn",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorawaitreturn",
       "title": "AsyncGeneratorAwaitReturn ( gen )",
       "level": 4,
-      "number": "27.6.3.9"
+      "number": "27.9.3.9"
     },
     {
       "id": "sec-asyncgeneratordrainqueue",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratordrainqueue",
       "title": "AsyncGeneratorDrainQueue ( gen )",
       "level": 4,
-      "number": "27.6.3.10"
+      "number": "27.9.3.10"
     },
     {
       "id": "sec-async-function-objects",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-objects",
       "title": "AsyncFunction Objects",
       "level": 2,
-      "number": "27.7"
+      "number": "27.10"
     },
     {
       "id": "sec-async-function-constructor",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-constructor",
       "title": "The AsyncFunction Constructor",
       "level": 3,
-      "number": "27.7.1"
+      "number": "27.10.1"
     },
     {
       "id": "sec-async-function-constructor-arguments",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-constructor-arguments",
       "title": "AsyncFunction ( ...paramArgs, bodyArg )",
       "level": 4,
-      "number": "27.7.1.1"
+      "number": "27.10.1.1"
     },
     {
       "id": "sec-async-function-constructor-properties",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-constructor-properties",
       "title": "Properties of the AsyncFunction Constructor",
       "level": 3,
-      "number": "27.7.2"
+      "number": "27.10.2"
     },
     {
       "id": "sec-async-function-constructor-prototype",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-constructor-prototype",
       "title": "AsyncFunction.prototype",
       "level": 4,
-      "number": "27.7.2.1"
+      "number": "27.10.2.1"
     },
     {
       "id": "sec-async-function-prototype-properties",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-prototype-properties",
       "title": "Properties of the AsyncFunction Prototype Object",
       "level": 3,
-      "number": "27.7.3"
+      "number": "27.10.3"
     },
     {
       "id": "sec-async-function-prototype-properties-constructor",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-prototype-properties-constructor",
       "title": "AsyncFunction.prototype.constructor",
       "level": 4,
-      "number": "27.7.3.1"
+      "number": "27.10.3.1"
     },
     {
       "id": "sec-async-function-prototype-%symbol.tostringtag%",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-prototype-%25symbol.tostringtag%25",
       "title": "AsyncFunction.prototype [ %Symbol.toStringTag% ]",
       "level": 4,
-      "number": "27.7.3.2"
+      "number": "27.10.3.2"
     },
     {
       "id": "sec-async-function-instances",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-instances",
       "title": "AsyncFunction Instances",
       "level": 3,
-      "number": "27.7.4"
+      "number": "27.10.4"
     },
     {
       "id": "sec-async-function-instances-length",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-instances-length",
       "title": "length",
       "level": 4,
-      "number": "27.7.4.1"
+      "number": "27.10.4.1"
     },
     {
       "id": "sec-async-function-instances-name",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-instances-name",
       "title": "name",
       "level": 4,
-      "number": "27.7.4.2"
+      "number": "27.10.4.2"
     },
     {
       "id": "sec-async-functions-abstract-operations",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-functions-abstract-operations",
       "title": "Async Functions Abstract Operations",
       "level": 3,
-      "number": "27.7.5"
+      "number": "27.10.5"
     },
     {
       "id": "sec-async-functions-abstract-operations-async-function-start",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-functions-abstract-operations-async-function-start",
       "title": "AsyncFunctionStart ( promiseCapability, asyncFuncBody )",
       "level": 4,
-      "number": "27.7.5.1"
+      "number": "27.10.5.1"
     },
     {
       "id": "sec-asyncblockstart",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncblockstart",
       "title": "AsyncBlockStart ( promiseCapability, asyncBody, asyncContext )",
       "level": 4,
-      "number": "27.7.5.2"
+      "number": "27.10.5.2"
     },
     {
       "id": "await",
       "href": "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#await",
       "title": "Await ( arg )",
       "level": 4,
-      "number": "27.7.5.3"
+      "number": "27.10.5.3"
     },
     {
       "id": "sec-reflection",
