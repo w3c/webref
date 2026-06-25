@@ -21,7 +21,7 @@
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>types</var> be a list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#mandatory-data-types\" id=\"ref-for-mandatory-data-types①\">mandatory data types</a> available on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard②\">system clipboard</a>.</p>"
+              "html": "<p>Let <var>types</var> be a list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#mandatory-data-types\" id=\"ref-for-mandatory-data-types①\">mandatory data types</a> available on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard③\">system clipboard</a>.</p>"
             },
             {
               "html": "<p>Let <var>changeId</var> be the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#generate-a-changeid\" id=\"ref-for-generate-a-changeid\">generate a changeId</a> given <var>document</var>.</p>"
@@ -59,7 +59,7 @@
               "html": "<p>Set <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#document-clipboardchange-pending-flag\" id=\"ref-for-document-clipboardchange-pending-flag①\">clipboardchange pending flag</a> to false.</p>"
             },
             {
-              "html": "<p>Let <var>types</var> be a list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#mandatory-data-types\" id=\"ref-for-mandatory-data-types②\">mandatory data types</a> available on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard③\">system clipboard</a>.</p>"
+              "html": "<p>Let <var>types</var> be a list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#mandatory-data-types\" id=\"ref-for-mandatory-data-types②\">mandatory data types</a> available on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard④\">system clipboard</a>.</p>"
             },
             {
               "html": "<p>Let <var>changeId</var> be the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#generate-a-changeid\" id=\"ref-for-generate-a-changeid①\">generate a changeId</a> given <var>document</var>.</p>"
@@ -98,7 +98,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>globalChangeId</var> be a user agent-specific unique identifier representing the current state of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard⑦\">system clipboard</a>. This identifier changes each time the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard⑧\">system clipboard</a> is modified, and is reset when the user agent restarts.</p>"
+          "html": "<p>Let <var>globalChangeId</var> be a user agent-specific unique identifier representing the current state of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard⑧\">system clipboard</a>. This identifier changes each time the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard⑨\">system clipboard</a> is modified, and is reset when the user agent restarts.</p>"
         },
         {
           "html": "<p>Let <var>storageKey</var> be the result of running <a href=\"https://storage.spec.whatwg.org/#obtain-a-storage-key-for-non-storage-purposes\">obtain a storage key for non-storage purposes</a> given <var>document</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#relevant-settings-object\" id=\"ref-for-relevant-settings-object\">relevant settings object</a>.</p>"
@@ -129,11 +129,11 @@
     {
       "name": "create a ClipboardItem object",
       "href": "https://www.w3.org/TR/clipboard-apis/#create-a-clipboarditem-object",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-clipboarditem-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem\" id=\"ref-for-clipboarditem⑥\">ClipboardItem</a></code> object</dfn>, given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-item\" id=\"ref-for-clipboard-item①⑨\">clipboard item</a> <var>clipboardItem</var> and a Realm <var>realm</var>, run these steps:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-clipboarditem-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem\" id=\"ref-for-clipboarditem①③\">ClipboardItem</a></code> object</dfn>, given a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-item\" id=\"ref-for-clipboard-item①⑨\">clipboard item</a> <var>clipboardItem</var> and a Realm <var>realm</var>, run these steps:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>clipboardItemObject</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem\" id=\"ref-for-clipboarditem⑦\">ClipboardItem</a></code> with <var>realm</var>.</p>"
+          "html": "<p>Let <var>clipboardItemObject</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#new\" id=\"ref-for-new\">new</a> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem\" id=\"ref-for-clipboarditem①④\">ClipboardItem</a></code> with <var>realm</var>.</p>"
         },
         {
           "html": "<p>Set <var>clipboardItemObject</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-item\" id=\"ref-for-clipboard-item②⓪\">clipboard item</a> to <var>clipboardItem</var>.</p>"
@@ -159,7 +159,7 @@
           "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-clipboard-item\" id=\"ref-for-clipboarditem-clipboard-item①\">clipboard item</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#presentation-style\" id=\"ref-for-presentation-style\">presentation style</a> to <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/clipboard-apis/#dom-clipboarditemoptions-presentationstyle\" id=\"ref-for-dom-clipboarditemoptions-presentationstyle\">presentationStyle</a></code>\"].</p>"
         },
         {
-          "html": "<p>Let <var>types</var> be a list of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①③\">DOMString</a></code>.</p>"
+          "html": "<p>Let <var>types</var> be a list of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①④\">DOMString</a></code>.</p>"
         },
         {
           "html": "For each (<var>key</var>, <var>value</var>) in <var>items</var>:",
@@ -224,7 +224,7 @@
           ]
         },
         {
-          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-types-array\" id=\"ref-for-clipboarditem-types-array\">types array</a> to the result of running <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-frozen-array\" id=\"ref-for-dfn-create-frozen-array\">create a frozen array</a> from <var>types</var>.</p>"
+          "html": "<p>Set <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-types-array\" id=\"ref-for-clipboarditem-types-array①\">types array</a> to the result of running <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-frozen-array\" id=\"ref-for-dfn-create-frozen-array\">create a frozen array</a> from <var>types</var>.</p>"
         }
       ]
     },
@@ -268,8 +268,94 @@
           "steps": [
             {
               "html": "If <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-mime-type\" id=\"ref-for-representation-mime-type⑦\">MIME type</a> is <var>mimeType</var> and <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-iscustom\" id=\"ref-for-representation-iscustom②\">isCustom</a> is <var>isCustom</var>, then:",
-              "rationale": "let",
+              "rationale": "if",
               "steps": [
+                {
+                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-clipboard-change-count-at-read\" id=\"ref-for-clipboarditem-clipboard-change-count-at-read\">clipboard change count at read</a> is not null, and the current <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-change-count\" id=\"ref-for-clipboard-change-count\">clipboard change count</a> is not equal to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-clipboard-change-count-at-read\" id=\"ref-for-clipboarditem-clipboard-change-count-at-read①\">clipboard change count at read</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">\"InvalidStateError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> in <var>realm</var>, and return <var>p</var>.</p>"
+                },
+                {
+                  "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-clipboard-change-count-at-read\" id=\"ref-for-clipboarditem-clipboard-change-count-at-read③\">clipboard change count at read</a> is not null, then:",
+                  "rationale": "let",
+                  "steps": [
+                    {
+                      "html": "<p>Let <var>key</var> be <var>mimeType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence\">essence</a>. If <var>isCustom</var> is true, prefix <var>key</var> with `\"web \"`.</p>"
+                    },
+                    {
+                      "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-representations-with-resolvers\" id=\"ref-for-clipboarditem-representations-with-resolvers①\">representations with resolvers</a>[<var>key</var>] <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>, then return <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-representations-with-resolvers\" id=\"ref-for-clipboarditem-representations-with-resolvers②\">representations with resolvers</a>[<var>key</var>].</p>"
+                    },
+                    {
+                      "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">Set</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-representations-with-resolvers\" id=\"ref-for-clipboarditem-representations-with-resolvers③\">representations with resolvers</a>[<var>key</var>] to <var>p</var>.</p>"
+                    },
+                    {
+                      "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+                      "rationale": "let",
+                      "steps": [
+                        {
+                          "html": "<p>Let <var>clipboardItem</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-originating-system-clipboard-item\" id=\"ref-for-clipboarditem-originating-system-clipboard-item\">originating system clipboard item</a>.</p>"
+                        },
+                        {
+                          "html": "<p>If <var>clipboardItem</var> is null, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-task-source\" id=\"ref-for-clipboard-task-source\">clipboard task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global\">global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">reject</a> <var>p</var> with an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">\"InvalidStateError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> in <var>realm</var>, then abort these steps.</p>"
+                        },
+                        {
+                          "html": "If <var>isCustom</var> is true, then:",
+                          "rationale": "let",
+                          "steps": [
+                            {
+                              "html": "<p>Let <var>mapName</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#os-specific-custom-map-name\" id=\"ref-for-os-specific-custom-map-name\">os specific custom map name</a>.</p>"
+                            },
+                            {
+                              "html": "<p>Let <var>mapRepresentation</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation\" id=\"ref-for-system-clipboard-representation①\">system clipboard representation</a> in <var>clipboardItem</var>’s list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation\" id=\"ref-for-system-clipboard-representation②\">system clipboard representation</a>s whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation-name\" id=\"ref-for-system-clipboard-representation-name\">name</a> is <var>mapName</var>. If there is no such <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation\" id=\"ref-for-system-clipboard-representation③\">system clipboard representation</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-task-source\" id=\"ref-for-clipboard-task-source①\">clipboard task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global①\">global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>p</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror\">\"NotFoundError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> in <var>realm</var>, then abort these steps.</p>"
+                            },
+                            {
+                              "html": "<p>Let <var>webCustomFormatMapString</var> be the JSON string deserialized from <var>mapRepresentation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation-data\" id=\"ref-for-system-clipboard-representation-data\">data</a>.</p>"
+                            },
+                            {
+                              "html": "<p>Let <var>osFormatName</var> be the value in <var>webCustomFormatMapString</var> whose key matches <var>mimeType</var> <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#serialize-a-mime-type\" id=\"ref-for-serialize-a-mime-type①\">serialized</a>.</p>"
+                            },
+                            {
+                              "html": "<p>If <var>osFormatName</var> is not found, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task②\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-task-source\" id=\"ref-for-clipboard-task-source②\">clipboard task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global②\">global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>p</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror①\">\"NotFoundError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> in <var>realm</var>, then abort these steps.</p>"
+                            }
+                          ]
+                        },
+                        {
+                          "html": "<p>Else, let <var>osFormatName</var> be the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#os-specific-well-known-format\" id=\"ref-for-os-specific-well-known-format\">os specific well-known format</a> given <var>mimeType</var>.</p>"
+                        },
+                        {
+                          "html": "<p>Let <var>clipboardRepresentation</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation\" id=\"ref-for-system-clipboard-representation④\">system clipboard representation</a> in <var>clipboardItem</var>’s list of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation\" id=\"ref-for-system-clipboard-representation⑤\">system clipboard representation</a>s whose <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation-name\" id=\"ref-for-system-clipboard-representation-name①\">name</a> is <var>osFormatName</var>. If there is no such <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation\" id=\"ref-for-system-clipboard-representation⑥\">system clipboard representation</a>, then <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task③\">queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-task-source\" id=\"ref-for-clipboard-task-source③\">clipboard task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global③\">global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">reject</a> <var>p</var> with a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror②\">\"NotFoundError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code> in <var>realm</var>, then abort these steps.</p>"
+                        },
+                        {
+                          "html": "<p>Let <var>rawData</var> be <var>clipboardRepresentation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation-data\" id=\"ref-for-system-clipboard-representation-data①\">data</a>.</p>"
+                        },
+                        {
+                          "html": "<p>Let <var>cleanData</var> be a copy of <var>rawData</var>.</p>"
+                        },
+                        {
+                          "html": "<p>If <var>mimeType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence①\">essence</a> is in <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-unsanitized-mime-types\" id=\"ref-for-clipboarditem-unsanitized-mime-types\">unsanitized MIME types</a> and <var>mimeType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence②\">essence</a> is in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#optional-unsanitized-data-types\" id=\"ref-for-optional-unsanitized-data-types③\">optional unsanitized data types</a> list, then do nothing.</p>"
+                        },
+                        {
+                          "html": "<p>Else, if <var>mimeType</var>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence③\">essence</a> is not \"image/png\", the user agent MAY sanitize <var>cleanData</var>.</p>"
+                        },
+                        {
+                          "html": "<p>Let <var>blob</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑤\">Blob</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type\">type</a></code> is <var>mimeType</var> <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#serialize-a-mime-type\" id=\"ref-for-serialize-a-mime-type②\">serialized</a> and whose underlying byte sequence is <var>cleanData</var>.</p>"
+                        },
+                        {
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task④\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-task-source\" id=\"ref-for-clipboard-task-source④\">clipboard task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global④\">global object</a>, to resolve <var>p</var> with <var>blob</var>.</p>"
+                        }
+                      ]
+                    }
+                  ],
+                  "additional": [
+                    {
+                      "html": "If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-clipboard-change-count-at-read\" id=\"ref-for-clipboarditem-clipboard-change-count-at-read③\">clipboard change count at read</a> is not null, then:",
+                      "rationale": "return",
+                      "steps": [
+                        {
+                          "html": "<p>Return <var>p</var>.</p>"
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   "html": "<p>Let <var>representationDataPromise</var> be the <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-data\" id=\"ref-for-representation-data①\">data</a>.</p>"
                 },
@@ -282,14 +368,14 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "If <var>v</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①④\">DOMString</a></code>, then follow the below steps:",
+                          "html": "If <var>v</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①⑤\">DOMString</a></code>, then follow the below steps:",
                           "rationale": "let",
                           "steps": [
                             {
                               "html": "<p>Let <var>dataAsBytes</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode\">UTF-8 encoding</a> <var>v</var>.</p>"
                             },
                             {
-                              "html": "<p>Let <var>blobData</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob④\">Blob</a></code> created using <var>dataAsBytes</var> with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type\">type</a></code> set to <var>mimeType</var>, <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#serialize-a-mime-type\" id=\"ref-for-serialize-a-mime-type①\">serialized</a>.</p>"
+                              "html": "<p>Let <var>blobData</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑥\">Blob</a></code> created using <var>dataAsBytes</var> with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①\">type</a></code> set to <var>mimeType</var>, <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#serialize-a-mime-type\" id=\"ref-for-serialize-a-mime-type③\">serialized</a>.</p>"
                             },
                             {
                               "html": "<p>Resolve <var>p</var> with <var>blobData</var>.</p>"
@@ -297,7 +383,7 @@
                           ]
                         },
                         {
-                          "html": "If <var>v</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑤\">Blob</a></code>, then follow the below steps:",
+                          "html": "If <var>v</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑦\">Blob</a></code>, then follow the below steps:",
                           "rationale": "resolve",
                           "steps": [
                             {
@@ -312,7 +398,7 @@
                       "rationale": "reject",
                       "steps": [
                         {
-                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject\">Reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror\">\"NotFoundError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code> in <var>realm</var>.</p>"
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">Reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror③\">\"NotFoundError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code> in <var>realm</var>.</p>"
                         }
                       ]
                     }
@@ -326,7 +412,7 @@
           ]
         },
         {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①\">Reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror①\">\"NotFoundError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code> in <var>realm</var>.</p>"
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">Reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror④\">\"NotFoundError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code> in <var>realm</var>.</p>"
         },
         {
           "html": "<p>Return <var>p</var>.</p>"
@@ -348,11 +434,11 @@
     {
       "name": "clipboard-read",
       "href": "https://www.w3.org/TR/clipboard-apis/#dom-clipboard-read",
-      "html": "<h4 class=\"dfn-paneled heading idl-code settled has-dfn-panel\" data-dfn-for=\"Clipboard\" data-dfn-type=\"method\" data-export=\"\" data-level=\"7.3.1\" data-lt=\"read(formats)|read()\" id=\"dom-clipboard-read\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"secno\">7.3.1. </span><span class=\"content\">read(<var>formats</var>)</span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#dom-clipboard-read\" id=\"ref-for-dom-clipboard-read⑥\"></a></h4>\n     \n\t\tThe <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/clipboard-apis/#dom-clipboard-read\" id=\"ref-for-dom-clipboard-read⑤\">read(formats)</a></code> method must run these steps:",
+      "html": "<h4 class=\"dfn-paneled heading idl-code settled has-dfn-panel\" data-dfn-for=\"Clipboard\" data-dfn-type=\"method\" data-export=\"\" data-level=\"7.3.1\" data-lt=\"read(formats)|read()\" id=\"dom-clipboard-read\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"secno\">7.3.1. </span><span class=\"content\">read(<var>formats</var>)</span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#dom-clipboard-read\" id=\"ref-for-dom-clipboard-read①④\"></a></h4>\n     \n\t\tThe <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/clipboard-apis/#dom-clipboard-read\" id=\"ref-for-dom-clipboard-read①③\">read(formats)</a></code> method must run these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a>.</p>"
+          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm①\">relevant realm</a>.</p>"
         },
         {
           "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise①\">a new promise</a> in <var>realm</var>.</p>"
@@ -366,14 +452,14 @@
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>format</var> is not in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#optional-unsanitized-data-types\" id=\"ref-for-optional-unsanitized-data-types④\">optional unsanitized data types</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject②\">reject</a> <var>p</var> with <var>format</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code> in <var>realm</var>.</p>"
+                  "html": "<p>If <var>format</var> is not in <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#optional-unsanitized-data-types\" id=\"ref-for-optional-unsanitized-data-types⑤\">optional unsanitized data types</a>, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑦\">reject</a> <var>p</var> with <var>format</var> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code> in <var>realm</var>.</p>"
                 }
               ]
             }
           ]
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -384,7 +470,7 @@
               "rationale": "queue",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#permissions-task-source\" id=\"ref-for-permissions-task-source\">permission task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global\">global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject③\">reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code> in <var>realm</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑤\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#permissions-task-source\" id=\"ref-for-permissions-task-source\">permission task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑤\">global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑧\">reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror①\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code> in <var>realm</var>.</p>"
                 },
                 {
                   "html": "<p>Abort these steps.</p>"
@@ -392,10 +478,13 @@
               ]
             },
             {
-              "html": "<p>Let <var>data</var> be a copy of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-data\" id=\"ref-for-system-clipboard-data②\">system clipboard data</a>.</p>"
+              "html": "<p>Let <var>data</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-data\" id=\"ref-for-system-clipboard-data③\">system clipboard data</a>.</p>"
             },
             {
-              "html": "<p>Let <var>items</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence⑤\">sequence</a>&lt;<a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-item\" id=\"ref-for-clipboard-item②④\">clipboard item</a>&gt;.</p>"
+              "html": "<p>Let <var>snapshotChangeCount</var> be the current <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-change-count\" id=\"ref-for-clipboard-change-count①\">clipboard change count</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>items</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence⑥\">sequence</a> of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①\">ordered maps</a>, each entry having keys \"item\" (a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-item\" id=\"ref-for-clipboard-item②④\">clipboard item</a>) and \"originating\" (a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-item\" id=\"ref-for-system-clipboard-item②\">system clipboard item</a> or null).</p>"
             },
             {
               "html": "For each <var>systemClipboardItem</var> in <var>data</var>:",
@@ -409,54 +498,27 @@
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>mimeType</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#well-known-mime-type-from-os-specific-format\" id=\"ref-for-well-known-mime-type-from-os-specific-format\">well-known mime type from os specific format</a> algorithm given <var>systemClipboardRepresentation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation-name\" id=\"ref-for-system-clipboard-representation-name\">name</a>.</p>"
+                      "html": "<p>Let <var>mimeType</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#well-known-mime-type-from-os-specific-format\" id=\"ref-for-well-known-mime-type-from-os-specific-format\">well-known mime type from os specific format</a> algorithm given <var>systemClipboardRepresentation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation-name\" id=\"ref-for-system-clipboard-representation-name③\">name</a>.</p>"
                     },
                     {
                       "html": "<p>If <var>mimeType</var> is null, continue this loop.</p>"
                     },
                     {
-                      "html": "<p>Let <var>representation</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation\" id=\"ref-for-representation⑥\">representation</a>.</p>"
+                      "html": "<p>Let <var>representation</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation\" id=\"ref-for-representation⑦\">representation</a>.</p>"
                     },
                     {
                       "html": "<p>Set <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-mime-type\" id=\"ref-for-representation-mime-type⑨\">MIME type</a> to <var>mimeType</var>.</p>"
                     },
                     {
-                      "html": "<p>Let <var>isUnsanitized</var> be <var>false</var>.</p>"
-                    },
-                    {
-                      "html": "If <var>formats</var> is not empty, then:",
-                      "rationale": "for",
-                      "steps": [
-                        {
-                          "html": "For each <var>format</var> in <var>formats</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/clipboard-apis/#dom-clipboardunsanitizedformats-unsanitized\" id=\"ref-for-dom-clipboardunsanitizedformats-unsanitized④\">unsanitized</a></code>\"]:",
-                          "rationale": "if",
-                          "steps": [
-                            {
-                              "html": "<p>If <var>format</var> is equal to <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-mime-type\" id=\"ref-for-representation-mime-type①⓪\">MIME type</a>, set <var>isUnsanitized</var> to true.</p>"
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "html": "<p>Resolve <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-data\" id=\"ref-for-representation-data②\">data</a> with <var>systemClipboardRepresentation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation-data\" id=\"ref-for-system-clipboard-representation-data\">data</a>.</p>"
-                    },
-                    {
-                      "html": "<p>The user agent, MAY sanitize <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-data\" id=\"ref-for-representation-data③\">data</a>, unless <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-mime-type\" id=\"ref-for-representation-mime-type①①\">MIME type</a>’s essence is \"image/png\", which should remain unsanitized to preserve meta data, or if it satisfies the below conditions:</p>",
-                      "ignored": [
-                        "representation’s MIME type is in optional unsanitized data types list. isUnsanitized is true."
-                      ]
+                      "html": "<p>Set <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-data\" id=\"ref-for-representation-data②\">data</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a> in <var>realm</var>.</p>"
                     },
                     {
                       "html": "<p>Append <var>representation</var> to <var>item</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#list-of-representations\" id=\"ref-for-list-of-representations④\">list of representations</a>.</p>"
-                    },
-                    {
-                      "html": "<p>Set <var>isUnsanitized</var> to <var>false</var>.</p>"
                     }
                   ]
                 },
                 {
-                  "html": "<p>If <var>item</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#list-of-representations\" id=\"ref-for-list-of-representations⑤\">list of representations</a> size is greater than 0, append <var>item</var> to <var>items</var>.</p>"
+                  "html": "<p>If <var>item</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#list-of-representations\" id=\"ref-for-list-of-representations⑤\">list of representations</a> size is greater than 0, append the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②\">ordered map</a> «[ \"item\" → <var>item</var>, \"originating\" → <var>systemClipboardItem</var> ]» to <var>items</var>.</p>"
                 }
               ]
             },
@@ -465,7 +527,7 @@
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>firstItem</var> be <var>items</var>[0]</p>"
+                  "html": "<p>Let <var>firstItem</var> be <var>items</var>[0][\"item\"]</p>"
                 },
                 {
                   "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#read-web-custom-format\" id=\"ref-for-read-web-custom-format\">read web custom format</a> algorithm given <var>firstItem</var>.</p>"
@@ -483,23 +545,32 @@
                   "html": "<p>Run the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#read-web-custom-format\" id=\"ref-for-read-web-custom-format①\">read web custom format</a> algorithm given <var>customItem</var>.</p>"
                 },
                 {
-                  "html": "<p>If <var>customItem</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#list-of-representations\" id=\"ref-for-list-of-representations⑥\">list of representations</a> size is greater than 0, append <var>customItem</var> to <var>items</var>.</p>"
+                  "html": "<p>If <var>customItem</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#list-of-representations\" id=\"ref-for-list-of-representations⑥\">list of representations</a> size is greater than 0, append the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map③\">ordered map</a> «[ \"item\" → <var>customItem</var>, \"originating\" → null ]» to <var>items</var>.</p>"
                 }
               ]
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-task-source\" id=\"ref-for-clipboard-task-source\">clipboard task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global①\">global object</a>, to perform the below steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑥\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-task-source\" id=\"ref-for-clipboard-task-source⑤\">clipboard task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑥\">global object</a>, to perform the below steps:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>clipboardItems</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence⑥\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem\" id=\"ref-for-clipboarditem①②\">ClipboardItem</a></code>&gt;.</p>"
+                  "html": "<p>Let <var>clipboardItems</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence⑦\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem\" id=\"ref-for-clipboarditem②③\">ClipboardItem</a></code>&gt;.</p>"
                 },
                 {
-                  "html": "For each <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-item\" id=\"ref-for-clipboard-item②⑦\">clipboard item</a> <var>underlyingItem</var> of <var>items</var>:",
+                  "html": "For each <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map④\">ordered map</a> <var>entry</var> of <var>items</var>:",
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "<p>Let <var>clipboardItem</var> be the result of running the steps of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#create-a-clipboarditem-object\" id=\"ref-for-create-a-clipboarditem-object\">create a ClipboardItem object</a> given <var>underlyingItem</var> and <var>realm</var>.</p>"
+                      "html": "<p>Let <var>clipboardItem</var> be the result of running the steps of <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#create-a-clipboarditem-object\" id=\"ref-for-create-a-clipboarditem-object\">create a ClipboardItem object</a> given <var>entry</var>[\"item\"] and <var>realm</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>clipboardItem</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-clipboard-change-count-at-read\" id=\"ref-for-clipboarditem-clipboard-change-count-at-read④\">clipboard change count at read</a> to <var>snapshotChangeCount</var>.</p>"
+                    },
+                    {
+                      "html": "<p>Set <var>clipboardItem</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-originating-system-clipboard-item\" id=\"ref-for-clipboarditem-originating-system-clipboard-item①\">originating system clipboard item</a> to <var>entry</var>[\"originating\"].</p>"
+                    },
+                    {
+                      "html": "<p>If <var>formats</var> is not empty, set <var>clipboardItem</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-unsanitized-mime-types\" id=\"ref-for-clipboarditem-unsanitized-mime-types①\">unsanitized MIME types</a> to <var>formats</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/clipboard-apis/#dom-clipboardunsanitizedformats-unsanitized\" id=\"ref-for-dom-clipboardunsanitizedformats-unsanitized④\">unsanitized</a></code>\"].</p>"
                     },
                     {
                       "html": "<p>Append <var>clipboardItem</var> to <var>clipboardItems</var>.</p>"
@@ -525,13 +596,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm②\">relevant realm</a>.</p>"
+          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm②\">relevant realm</a>.</p>"
         },
         {
-          "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise②\">a new promise</a> in <var>realm</var>.</p>"
+          "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise③\">a new promise</a> in <var>realm</var>.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -542,7 +613,7 @@
               "rationale": "queue",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task②\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#permissions-task-source\" id=\"ref-for-permissions-task-source①\">permission task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global②\">global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject④\">reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror②\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code> in <var>realm</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑦\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#permissions-task-source\" id=\"ref-for-permissions-task-source①\">permission task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑦\">global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror②\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code> in <var>realm</var>.</p>"
                 },
                 {
                   "html": "<p>Abort these steps.</p>"
@@ -550,10 +621,10 @@
               ]
             },
             {
-              "html": "<p>Let <var>data</var> be a copy of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-data\" id=\"ref-for-system-clipboard-data③\">system clipboard data</a>.</p>"
+              "html": "<p>Let <var>data</var> be a copy of the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-data\" id=\"ref-for-system-clipboard-data④\">system clipboard data</a>.</p>"
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task③\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-task-source\" id=\"ref-for-clipboard-task-source①\">clipboard task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global③\">global object</a>, to perform the below steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑧\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-task-source\" id=\"ref-for-clipboard-task-source⑥\">clipboard task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑧\">global object</a>, to perform the below steps:",
               "rationale": "for",
               "steps": [
                 {
@@ -565,23 +636,23 @@
                       "rationale": "let",
                       "steps": [
                         {
-                          "html": "<p>Let <var>mimeType</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#well-known-mime-type-from-os-specific-format\" id=\"ref-for-well-known-mime-type-from-os-specific-format①\">well-known mime type from os specific format</a> algorithm given <var>systemClipboardRepresentation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation-name\" id=\"ref-for-system-clipboard-representation-name①\">name</a>.</p>"
+                          "html": "<p>Let <var>mimeType</var> be the result of running the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#well-known-mime-type-from-os-specific-format\" id=\"ref-for-well-known-mime-type-from-os-specific-format①\">well-known mime type from os specific format</a> algorithm given <var>systemClipboardRepresentation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard-representation-name\" id=\"ref-for-system-clipboard-representation-name④\">name</a>.</p>"
                         },
                         {
                           "html": "<p>If <var>mimeType</var> is null, continue this loop.</p>"
                         },
                         {
-                          "html": "<p>Let <var>representation</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation\" id=\"ref-for-representation⑦\">representation</a>.</p>"
+                          "html": "<p>Let <var>representation</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation\" id=\"ref-for-representation⑨\">representation</a>.</p>"
                         },
                         {
-                          "html": "If <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-mime-type\" id=\"ref-for-representation-mime-type①③\">MIME type</a> <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence\">essence</a> is \"text/plain\", then:",
+                          "html": "If <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-mime-type\" id=\"ref-for-representation-mime-type①⓪\">MIME type</a> <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence④\">essence</a> is \"text/plain\", then:",
                           "rationale": "set",
                           "steps": [
                             {
-                              "html": "<p>Set <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-mime-type\" id=\"ref-for-representation-mime-type①④\">MIME type</a> to <var>mimeType</var>.</p>"
+                              "html": "<p>Set <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-mime-type\" id=\"ref-for-representation-mime-type①①\">MIME type</a> to <var>mimeType</var>.</p>"
                             },
                             {
-                              "html": "<p>Let <var>representationDataPromise</var> be the <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-data\" id=\"ref-for-representation-data④\">data</a>.</p>"
+                              "html": "<p>Let <var>representationDataPromise</var> be the <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-data\" id=\"ref-for-representation-data③\">data</a>.</p>"
                             },
                             {
                               "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-perform-steps-once-promise-is-settled\" id=\"ref-for-dfn-perform-steps-once-promise-is-settled①\">React</a> to <var>representationDataPromise</var>:",
@@ -592,7 +663,7 @@
                                   "rationale": "if",
                                   "steps": [
                                     {
-                                      "html": "If <var>v</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString①⑨\">DOMString</a></code>, then follow the below steps:",
+                                      "html": "If <var>v</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString②⓪\">DOMString</a></code>, then follow the below steps:",
                                       "rationale": "resolve",
                                       "steps": [
                                         {
@@ -604,7 +675,7 @@
                                       ]
                                     },
                                     {
-                                      "html": "If <var>v</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑥\">Blob</a></code>, then follow the below steps:",
+                                      "html": "If <var>v</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑧\">Blob</a></code>, then follow the below steps:",
                                       "rationale": "let",
                                       "steps": [
                                         {
@@ -625,7 +696,7 @@
                                   "rationale": "reject",
                                   "steps": [
                                     {
-                                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑤\">Reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror②\">\"NotFoundError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code> in <var>realm</var>.</p>"
+                                      "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⓪\">Reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror⑤\">\"NotFoundError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪\">DOMException</a></code> in <var>realm</var>.</p>"
                                     },
                                     {
                                       "html": "<p>Return <var>p</var>.</p>"
@@ -641,7 +712,7 @@
                   ]
                 },
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑥\">Reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror③\">\"NotFoundError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code> in <var>realm</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①①\">Reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notfounderror\" id=\"ref-for-notfounderror⑥\">\"NotFoundError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①①\">DOMException</a></code> in <var>realm</var>.</p>"
                 },
                 {
                   "html": "<p>Return <var>p</var>.</p>"
@@ -659,13 +730,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm③\">relevant realm</a>.</p>"
+          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm③\">relevant realm</a>.</p>"
         },
         {
-          "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise③\">a new promise</a> in <var>realm</var>.</p>"
+          "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise④\">a new promise</a> in <var>realm</var>.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -676,7 +747,7 @@
               "rationale": "queue",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task④\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#permissions-task-source\" id=\"ref-for-permissions-task-source②\">permission task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global④\">global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑦\">reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror③\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code> in <var>realm</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑨\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#permissions-task-source\" id=\"ref-for-permissions-task-source②\">permission task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑨\">global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①②\">reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror③\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①②\">DOMException</a></code> in <var>realm</var>.</p>"
                 },
                 {
                   "html": "<p>Abort these steps.</p>"
@@ -684,17 +755,17 @@
               ]
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑤\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-task-source\" id=\"ref-for-clipboard-task-source②\">clipboard task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑤\">global object</a>, to perform the below steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①⓪\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-task-source\" id=\"ref-for-clipboard-task-source⑦\">clipboard task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global①⓪\">global object</a>, to perform the below steps:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>itemList</var> and <var>cleanItemList</var> be an empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence⑦\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑦\">Blob</a></code>&gt;.</p>"
+                  "html": "<p>Let <var>itemList</var> and <var>cleanItemList</var> be an empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence⑧\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑨\">Blob</a></code>&gt;.</p>"
                 },
                 {
-                  "html": "<p>Let <var>dataList</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence⑧\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem\" id=\"ref-for-clipboarditem①③\">ClipboardItem</a></code>&gt;.</p>"
+                  "html": "<p>Let <var>dataList</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence⑨\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem\" id=\"ref-for-clipboarditem②④\">ClipboardItem</a></code>&gt;.</p>"
                 },
                 {
-                  "html": "<p>If <var>data</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is greater than 1, and the current operating system does not support multiple native clipboard items on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard②②\">system clipboard</a>, then add <var>data</var>[0] to <var>dataList</var>, else, set <var>dataList</var> to <var>data</var>.</p>"
+                  "html": "<p>If <var>data</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is greater than 1, and the current operating system does not support multiple native clipboard items on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard③①\">system clipboard</a>, then add <var>data</var>[0] to <var>dataList</var>, else, set <var>dataList</var> to <var>data</var>.</p>"
                 },
                 {
                   "html": "For each <var>clipboardItem</var> in <var>dataList</var>:",
@@ -705,7 +776,7 @@
                       "rationale": "let",
                       "steps": [
                         {
-                          "html": "<p>Let <var>representationDataPromise</var> be the <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-data\" id=\"ref-for-representation-data⑤\">data</a>.</p>"
+                          "html": "<p>Let <var>representationDataPromise</var> be the <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-data\" id=\"ref-for-representation-data④\">data</a>.</p>"
                         },
                         {
                           "html": "<a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-perform-steps-once-promise-is-settled\" id=\"ref-for-dfn-perform-steps-once-promise-is-settled②\">React</a> to <var>representationDataPromise</var>:",
@@ -716,14 +787,14 @@
                               "rationale": "if",
                               "steps": [
                                 {
-                                  "html": "If <var>v</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString②⓪\">DOMString</a></code>, then follow the below steps:",
+                                  "html": "If <var>v</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMString\" id=\"ref-for-idl-DOMString②①\">DOMString</a></code>, then follow the below steps:",
                                   "rationale": "let",
                                   "steps": [
                                     {
                                       "html": "<p>Let <var>dataAsBytes</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode①\">UTF-8 encoding</a> <var>v</var>.</p>"
                                     },
                                     {
-                                      "html": "<p>Let <var>blobData</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑧\">Blob</a></code> created using <var>dataAsBytes</var> with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①\">type</a></code> set to <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-mime-type\" id=\"ref-for-representation-mime-type①⑤\">MIME type</a>.</p>"
+                                      "html": "<p>Let <var>blobData</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⓪\">Blob</a></code> created using <var>dataAsBytes</var> with its <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type②\">type</a></code> set to <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-mime-type\" id=\"ref-for-representation-mime-type①②\">MIME type</a>.</p>"
                                     },
                                     {
                                       "html": "<p>Add <var>blobData</var> to <var>itemList</var>.</p>"
@@ -731,7 +802,7 @@
                                   ]
                                 },
                                 {
-                                  "html": "<p>If <var>v</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob⑨\">Blob</a></code>, then add <var>v</var> to <var>itemList</var>.</p>"
+                                  "html": "<p>If <var>v</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①①\">Blob</a></code>, then add <var>v</var> to <var>itemList</var>.</p>"
                                 }
                               ]
                             },
@@ -740,7 +811,7 @@
                               "rationale": "reject",
                               "steps": [
                                 {
-                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑧\">Reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror④\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑧\">DOMException</a></code> in <var>realm</var>.</p>"
+                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①③\">Reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror④\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①③\">DOMException</a></code> in <var>realm</var>.</p>"
                                 },
                                 {
                                   "html": "<p>Abort these steps.</p>"
@@ -756,10 +827,10 @@
                       "rationale": "let",
                       "steps": [
                         {
-                          "html": "<p>Let <var>type</var> be the <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type②\">type</a></code>.</p>"
+                          "html": "<p>Let <var>type</var> be the <var>blob</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type③\">type</a></code>.</p>"
                         },
                         {
-                          "html": "<p>If <var>type</var> is not in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#mandatory-data-types\" id=\"ref-for-mandatory-data-types⑦\">mandatory data types</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#optional-data-types\" id=\"ref-for-optional-data-types③\">optional data types</a> list, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject⑨\">reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror⑤\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code> in <var>realm</var> and abort these steps.</p>"
+                          "html": "<p>If <var>type</var> is not in the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#mandatory-data-types\" id=\"ref-for-mandatory-data-types⑦\">mandatory data types</a> or <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#optional-data-types\" id=\"ref-for-optional-data-types③\">optional data types</a> list, then <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①④\">reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror⑤\">\"NotAllowedError\"</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①④\">DOMException</a></code> in <var>realm</var> and abort these steps.</p>"
                         },
                         {
                           "html": "<p>Let <var>cleanItem</var> be an optionally sanitized copy of <var>blob</var>.</p>"
@@ -769,7 +840,7 @@
                           "rationale": "reject",
                           "steps": [
                             {
-                              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⓪\">Reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror⑥\">\"NotAllowedError\"</a></code> DOMException in <var>realm</var>.</p>"
+                              "html": "<p><a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑤\">Reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror⑥\">\"NotAllowedError\"</a></code> DOMException in <var>realm</var>.</p>"
                             },
                             {
                               "html": "<p>Abort these steps.</p>"
@@ -808,13 +879,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm④\">relevant realm</a>.</p>"
+          "html": "<p>Let <var>realm</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-realm\" id=\"ref-for-concept-relevant-realm④\">relevant realm</a>.</p>"
         },
         {
-          "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise④\">a new promise</a> in <var>realm</var>.</p>"
+          "html": "<p>Let <var>p</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑤\">a new promise</a> in <var>realm</var>.</p>"
         },
         {
-          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>:",
+          "html": "Run the following steps <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>:",
           "rationale": "let",
           "steps": [
             {
@@ -825,7 +896,7 @@
               "rationale": "queue",
               "steps": [
                 {
-                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑥\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#permissions-task-source\" id=\"ref-for-permissions-task-source③\">permission task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑥\">global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①①\">reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror⑦\">\"NotAllowedError\"</a></code> DOMException in <var>realm</var>.</p>"
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①①\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://w3c.github.io/permissions/#permissions-task-source\" id=\"ref-for-permissions-task-source③\">permission task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global①①\">global object</a>, to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#reject\" id=\"ref-for-reject①⑥\">reject</a> <var>p</var> with <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notallowederror\" id=\"ref-for-notallowederror⑦\">\"NotAllowedError\"</a></code> DOMException in <var>realm</var>.</p>"
                 },
                 {
                   "html": "<p>Abort these steps.</p>"
@@ -833,14 +904,14 @@
               ]
             },
             {
-              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task⑦\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-task-source\" id=\"ref-for-clipboard-task-source③\">clipboard task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global⑦\">global object</a>, to perform the below steps:",
+              "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-global-task\" id=\"ref-for-queue-a-global-task①②\">Queue a global task</a> on the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-task-source\" id=\"ref-for-clipboard-task-source⑧\">clipboard task source</a>, given <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-realm-global\" id=\"ref-for-concept-realm-global①②\">global object</a>, to perform the below steps:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>itemList</var> be an empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence⑨\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⓪\">Blob</a></code>&gt;.</p>"
+                  "html": "<p>Let <var>itemList</var> be an empty <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence①⓪\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①②\">Blob</a></code>&gt;.</p>"
                 },
                 {
-                  "html": "<p>Let <var>textBlob</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①①\">Blob</a></code> created with:\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type③\">type</a></code> attribute set to \"<code>text/plain;charset=utf-8</code>\", and\nits underlying byte sequence set to the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode②\">UTF-8 encoding</a> of <var>data</var>.</p>"
+                  "html": "<p>Let <var>textBlob</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①③\">Blob</a></code> created with:\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type④\">type</a></code> attribute set to \"<code>text/plain;charset=utf-8</code>\", and\nits underlying byte sequence set to the <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-encode\" id=\"ref-for-utf-8-encode②\">UTF-8 encoding</a> of <var>data</var>.</p>"
                 },
                 {
                   "html": "<p>Add <var>textBlob</var> to <var>itemList</var>.</p>"
@@ -1082,7 +1153,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>hasGesture</var> be true if the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑥\">this</a> has\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a>, false otherwise.</p>"
+          "html": "<p>Let <var>hasGesture</var> be true if the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global②\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑥\">this</a> has\n<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation\">transient activation</a>, false otherwise.</p>"
         },
         {
           "html": "If <var>hasGesture</var> then,",
@@ -1111,7 +1182,7 @@
           "html": "<p>If <var>writeWithoutGesture</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/permissions/#dom-permissionstate-granted\" id=\"ref-for-dom-permissionstate-granted\">granted</a></code>, then return true.</p>"
         },
         {
-          "html": "<p>Let <var>hasGesture</var> be true if the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>\nhas <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation①\">transient activation</a>, false otherwise.</p>"
+          "html": "<p>Let <var>hasGesture</var> be true if the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global\" id=\"ref-for-concept-relevant-global③\">relevant global object</a> of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②⑦\">this</a>\nhas <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/interaction.html#transient-activation\" id=\"ref-for-transient-activation①\">transient activation</a>, false otherwise.</p>"
         },
         {
           "html": "If <var>hasGesture</var> then,",
@@ -1219,28 +1290,28 @@
     {
       "name": "write-blobs-to-clipboard",
       "href": "https://www.w3.org/TR/clipboard-apis/#write-blobs-and-option-to-the-clipboard",
-      "html": "<h3 class=\"heading settled\" id=\"to-write-blobs-to-clipboard\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-blobs-and-option-to-the-clipboard\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write blobs and option to the clipboard</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-write-blobs-to-clipboard\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>items</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence①⓪\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①②\">Blob</a></code>&gt;</p>\n     </dd><dd data-md=\"\">\n      <p><var>presentationStyle</var>, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-clipboard-item\" id=\"ref-for-clipboarditem-clipboard-item⑧\">clipboard item</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#presentation-style\" id=\"ref-for-presentation-style③\">presentation style</a></p>\n     </dd><dt data-md=\"\">Output\n     </dt><dd data-md=\"\">\n      <p>None</p>\n    </dd></dl>",
+      "html": "<h3 class=\"heading settled\" id=\"to-write-blobs-to-clipboard\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-blobs-and-option-to-the-clipboard\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write blobs and option to the clipboard</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-write-blobs-to-clipboard\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>items</var>, a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence①①\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①④\">Blob</a></code>&gt;</p>\n     </dd><dd data-md=\"\">\n      <p><var>presentationStyle</var>, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboarditem-clipboard-item\" id=\"ref-for-clipboarditem-clipboard-item⑧\">clipboard item</a>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#presentation-style\" id=\"ref-for-presentation-style③\">presentation style</a></p>\n     </dd><dt data-md=\"\">Output\n     </dt><dd data-md=\"\">\n      <p>None</p>\n    </dd></dl>",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>webCustomFormats</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence①①\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①③\">Blob</a></code>&gt;.</p>"
+          "html": "<p>Let <var>webCustomFormats</var> be a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence①②\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⑤\">Blob</a></code>&gt;.</p>"
         },
         {
           "html": "For each <var>item</var> in <var>items</var>:",
           "rationale": "let",
           "steps": [
             {
-              "html": "<p>Let <var>formatString</var> be the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#os-specific-well-known-format\" id=\"ref-for-os-specific-well-known-format\">os specific well-known format</a> given <var>item</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type④\">type</a></code>.</p>"
+              "html": "<p>Let <var>formatString</var> be the result of running <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#os-specific-well-known-format\" id=\"ref-for-os-specific-well-known-format①\">os specific well-known format</a> given <var>item</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type⑤\">type</a></code>.</p>"
             },
             {
               "html": "If <var>formatString</var> is empty then follow the below steps:",
               "rationale": "let",
               "steps": [
                 {
-                  "html": "<p>Let <var>webCustomFormatString</var> be the <var>item</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type⑤\">type</a></code>.</p>"
+                  "html": "<p>Let <var>webCustomFormatString</var> be the <var>item</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type⑥\">type</a></code>.</p>"
                 },
                 {
-                  "html": "<p>Let <var>webCustomFormat</var> be an empty <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type⑥\">type</a></code>.</p>"
+                  "html": "<p>Let <var>webCustomFormat</var> be an empty <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type⑦\">type</a></code>.</p>"
                 },
                 {
                   "html": "<p>If <var>webCustomFormatString</var> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-starts-with\" id=\"ref-for-string-starts-with③\">starts with</a> `\"web \"` prefix, then remove the `\"web \"` prefix and store the remaining string in <var>webMimeTypeString</var>.</p>"
@@ -1252,10 +1323,10 @@
                   "html": "<p>If <var>webMimeType</var> is failure, then abort all steps.</p>"
                 },
                 {
-                  "html": "<p>Let <var>webCustomFormat</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type⑦\">type</a></code>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence①\">essence</a> equal to <var>webMimeType</var>.</p>"
+                  "html": "<p>Let <var>webCustomFormat</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type⑧\">type</a></code>’s <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type-essence\" id=\"ref-for-mime-type-essence⑤\">essence</a> equal to <var>webMimeType</var>.</p>"
                 },
                 {
-                  "html": "<p>Set <var>item</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type⑧\">type</a></code> to <var>webCustomFormat</var>.</p>"
+                  "html": "<p>Set <var>item</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type⑨\">type</a></code> to <var>webCustomFormat</var>.</p>"
                 },
                 {
                   "html": "<p>Append <var>webCustomFormat</var> to <var>webCustomFormats</var>.</p>"
@@ -1266,7 +1337,7 @@
               "html": "<p>Let <var>payload</var> be the result of <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode\" id=\"ref-for-utf-8-decode①\">UTF-8 decoding</a> <var>item</var>’s underlying byte sequence.</p>"
             },
             {
-              "html": "<p>Insert <var>payload</var> and <var>presentationStyle</var> into the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard②③\">system clipboard</a> using <var>formatString</var> as the native clipboard format.</p>"
+              "html": "<p>Insert <var>payload</var> and <var>presentationStyle</var> into the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard③②\">system clipboard</a> using <var>formatString</var> as the native clipboard format.</p>"
             }
           ]
         },
@@ -1278,7 +1349,7 @@
     {
       "name": "os-specific-well-known-format",
       "href": "https://www.w3.org/TR/clipboard-apis/#os-specific-well-known-format",
-      "html": "<h3 class=\"heading settled\" id=\"to-os-specific-well-known-format\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"os-specific-well-known-format\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">os specific well-known format</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-os-specific-well-known-format\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>mimeType</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type⑨\">type</a></code></p>\n     </dd><dt data-md=\"\">Output\n     </dt><dd data-md=\"\">\n      <p><var>wellKnownFormat</var>, a platform specific string type. On Mac it’s NSPasteboardType, on Windows it’s LPCWSTR and Linux it’s a const char*.</p>\n    </dd></dl>",
+      "html": "<h3 class=\"heading settled\" id=\"to-os-specific-well-known-format\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"os-specific-well-known-format\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">os specific well-known format</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-os-specific-well-known-format\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>mimeType</var>, a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⓪\">type</a></code></p>\n     </dd><dt data-md=\"\">Output\n     </dt><dd data-md=\"\">\n      <p><var>wellKnownFormat</var>, a platform specific string type. On Mac it’s NSPasteboardType, on Windows it’s LPCWSTR and Linux it’s a const char*.</p>\n    </dd></dl>",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1408,7 +1479,7 @@
     {
       "name": "well-known-mime-type-from-os-specific-format",
       "href": "https://www.w3.org/TR/clipboard-apis/#well-known-mime-type-from-os-specific-format",
-      "html": "<h3 class=\"heading settled\" id=\"to-well-known-mime-type-from-os-specific-format\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"well-known-mime-type-from-os-specific-format\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">well-known mime type from os specific format</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-well-known-mime-type-from-os-specific-format\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>osFormatName</var>, a platform specific string type. On Mac it’s NSPasteboardType, on Windows it’s LPCWSTR and Linux it’s a const char*.</p>\n     </dd><dt data-md=\"\">Output\n     </dt><dd data-md=\"\">\n      <p><var>mimeType</var>, a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type③\">MIME type</a></p>\n    </dd></dl>\n    \n    <p>On Windows, follow the convention described below:</p>\n    \n    <p>On MacOS, follow the convention described below:</p>\n    \n    <p>On Linux, ChromeOS, and Android, follow the convention described below:</p>",
+      "html": "<h3 class=\"heading settled\" id=\"to-well-known-mime-type-from-os-specific-format\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"well-known-mime-type-from-os-specific-format\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">well-known mime type from os specific format</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-well-known-mime-type-from-os-specific-format\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>osFormatName</var>, a platform specific string type. On Mac it’s NSPasteboardType, on Windows it’s LPCWSTR and Linux it’s a const char*.</p>\n     </dd><dt data-md=\"\">Output\n     </dt><dd data-md=\"\">\n      <p><var>mimeType</var>, a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type④\">MIME type</a></p>\n    </dd></dl>\n    \n    <p>On Windows, follow the convention described below:</p>\n    \n    <p>On MacOS, follow the convention described below:</p>\n    \n    <p>On Linux, ChromeOS, and Android, follow the convention described below:</p>",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1428,7 +1499,7 @@
     {
       "name": "well-known-mime-type-from-os-specific-format",
       "href": "https://www.w3.org/TR/clipboard-apis/#well-known-mime-type-from-os-specific-format",
-      "html": "<h3 class=\"heading settled\" id=\"to-well-known-mime-type-from-os-specific-format\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"well-known-mime-type-from-os-specific-format\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">well-known mime type from os specific format</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-well-known-mime-type-from-os-specific-format\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>osFormatName</var>, a platform specific string type. On Mac it’s NSPasteboardType, on Windows it’s LPCWSTR and Linux it’s a const char*.</p>\n     </dd><dt data-md=\"\">Output\n     </dt><dd data-md=\"\">\n      <p><var>mimeType</var>, a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type③\">MIME type</a></p>\n    </dd></dl>\n    \n    <p>On Windows, follow the convention described below:</p>\n    \n    <p>On MacOS, follow the convention described below:</p>\n    \n    <p>On Linux, ChromeOS, and Android, follow the convention described below:</p>",
+      "html": "<h3 class=\"heading settled\" id=\"to-well-known-mime-type-from-os-specific-format\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"well-known-mime-type-from-os-specific-format\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">well-known mime type from os specific format</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-well-known-mime-type-from-os-specific-format\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>osFormatName</var>, a platform specific string type. On Mac it’s NSPasteboardType, on Windows it’s LPCWSTR and Linux it’s a const char*.</p>\n     </dd><dt data-md=\"\">Output\n     </dt><dd data-md=\"\">\n      <p><var>mimeType</var>, a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type④\">MIME type</a></p>\n    </dd></dl>\n    \n    <p>On Windows, follow the convention described below:</p>\n    \n    <p>On MacOS, follow the convention described below:</p>\n    \n    <p>On Linux, ChromeOS, and Android, follow the convention described below:</p>",
       "rationale": "if",
       "steps": [
         {
@@ -1448,7 +1519,7 @@
     {
       "name": "well-known-mime-type-from-os-specific-format",
       "href": "https://www.w3.org/TR/clipboard-apis/#well-known-mime-type-from-os-specific-format",
-      "html": "<h3 class=\"heading settled\" id=\"to-well-known-mime-type-from-os-specific-format\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"well-known-mime-type-from-os-specific-format\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">well-known mime type from os specific format</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-well-known-mime-type-from-os-specific-format\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>osFormatName</var>, a platform specific string type. On Mac it’s NSPasteboardType, on Windows it’s LPCWSTR and Linux it’s a const char*.</p>\n     </dd><dt data-md=\"\">Output\n     </dt><dd data-md=\"\">\n      <p><var>mimeType</var>, a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type③\">MIME type</a></p>\n    </dd></dl>\n    \n    <p>On Windows, follow the convention described below:</p>\n    \n    <p>On MacOS, follow the convention described below:</p>\n    \n    <p>On Linux, ChromeOS, and Android, follow the convention described below:</p>",
+      "html": "<h3 class=\"heading settled\" id=\"to-well-known-mime-type-from-os-specific-format\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"well-known-mime-type-from-os-specific-format\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">well-known mime type from os specific format</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-well-known-mime-type-from-os-specific-format\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>osFormatName</var>, a platform specific string type. On Mac it’s NSPasteboardType, on Windows it’s LPCWSTR and Linux it’s a const char*.</p>\n     </dd><dt data-md=\"\">Output\n     </dt><dd data-md=\"\">\n      <p><var>mimeType</var>, a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type④\">MIME type</a></p>\n    </dd></dl>\n    \n    <p>On Windows, follow the convention described below:</p>\n    \n    <p>On MacOS, follow the convention described below:</p>\n    \n    <p>On Linux, ChromeOS, and Android, follow the convention described below:</p>",
       "rationale": "if",
       "steps": [
         {
@@ -1468,7 +1539,7 @@
     {
       "name": "well-known-mime-type-from-os-specific-format",
       "href": "https://www.w3.org/TR/clipboard-apis/#well-known-mime-type-from-os-specific-format",
-      "html": "<h3 class=\"heading settled\" id=\"to-well-known-mime-type-from-os-specific-format\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"well-known-mime-type-from-os-specific-format\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">well-known mime type from os specific format</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-well-known-mime-type-from-os-specific-format\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>osFormatName</var>, a platform specific string type. On Mac it’s NSPasteboardType, on Windows it’s LPCWSTR and Linux it’s a const char*.</p>\n     </dd><dt data-md=\"\">Output\n     </dt><dd data-md=\"\">\n      <p><var>mimeType</var>, a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type③\">MIME type</a></p>\n    </dd></dl>\n    \n    <p>On Windows, follow the convention described below:</p>\n    \n    <p>On MacOS, follow the convention described below:</p>\n    \n    <p>On Linux, ChromeOS, and Android, follow the convention described below:</p>",
+      "html": "<h3 class=\"heading settled\" id=\"to-well-known-mime-type-from-os-specific-format\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"well-known-mime-type-from-os-specific-format\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">well-known mime type from os specific format</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-well-known-mime-type-from-os-specific-format\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>osFormatName</var>, a platform specific string type. On Mac it’s NSPasteboardType, on Windows it’s LPCWSTR and Linux it’s a const char*.</p>\n     </dd><dt data-md=\"\">Output\n     </dt><dd data-md=\"\">\n      <p><var>mimeType</var>, a <a data-link-type=\"dfn\" href=\"https://mimesniff.spec.whatwg.org/#mime-type\" id=\"ref-for-mime-type④\">MIME type</a></p>\n    </dd></dl>\n    \n    <p>On Windows, follow the convention described below:</p>\n    \n    <p>On MacOS, follow the convention described below:</p>\n    \n    <p>On Linux, ChromeOS, and Android, follow the convention described below:</p>",
       "rationale": "let",
       "steps": [
         {
@@ -1482,14 +1553,14 @@
     {
       "name": "read-web-custom-format",
       "href": "https://www.w3.org/TR/clipboard-apis/#read-web-custom-format",
-      "html": "<h3 class=\"heading settled\" id=\"to-read-web-custom-format\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-web-custom-format\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read web custom format</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-read-web-custom-format\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>item</var>, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-item\" id=\"ref-for-clipboard-item②⑧\">clipboard item</a></p>\n    </dd></dl>",
+      "html": "<h3 class=\"heading settled\" id=\"to-read-web-custom-format\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"read-web-custom-format\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">read web custom format</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-read-web-custom-format\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>item</var>, a <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#clipboard-item\" id=\"ref-for-clipboard-item②⑦\">clipboard item</a></p>\n    </dd></dl>",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>webCustomFormatMap</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#os-specific-custom-map-name\" id=\"ref-for-os-specific-custom-map-name\">os specific custom map name</a>.</p>"
+          "html": "<p>Let <var>webCustomFormatMap</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#os-specific-custom-map-name\" id=\"ref-for-os-specific-custom-map-name①\">os specific custom map name</a>.</p>"
         },
         {
-          "html": "<p>Read <var>webCustomFormatMap</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard②④\">system clipboard</a>.</p>"
+          "html": "<p>Read <var>webCustomFormatMap</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard③③\">system clipboard</a>.</p>"
         },
         {
           "html": "<p>If <var>webCustomFormatMap</var> is empty, then return <var>item</var>.</p>"
@@ -1508,19 +1579,16 @@
               "html": "<p>If <var>mimeType</var> is failure, then continue the loop.</p>"
             },
             {
-              "html": "<p>Let <var>representation</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation\" id=\"ref-for-representation⑧\">representation</a>.</p>"
+              "html": "<p>Let <var>representation</var> be a new <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation\" id=\"ref-for-representation①⓪\">representation</a>.</p>"
             },
             {
-              "html": "<p>Set <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-mime-type\" id=\"ref-for-representation-mime-type①⑥\">MIME type</a> to <var>mimeType</var>.</p>"
+              "html": "<p>Set <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-mime-type\" id=\"ref-for-representation-mime-type①③\">MIME type</a> to <var>mimeType</var>.</p>"
             },
             {
               "html": "<p>Set <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-iscustom\" id=\"ref-for-representation-iscustom③\">isCustom</a> flag to <var>true</var>.</p>"
             },
             {
-              "html": "<p>Read <var>webCustomFormat</var> from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard②⑤\">system clipboard</a> given <var>value</var>.</p>"
-            },
-            {
-              "html": "<p>If the read is successful, then set <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-data\" id=\"ref-for-representation-data⑥\">data</a> to the resulting data from the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard②⑥\">system clipboard</a>, else continue the loop.</p>"
+              "html": "<p>Set <var>representation</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#representation-data\" id=\"ref-for-representation-data⑤\">data</a> to <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#a-new-promise\" id=\"ref-for-a-new-promise⑥\">a new promise</a>.</p>"
             },
             {
               "html": "<p>Append <var>representation</var> to <var>item</var>’s <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#list-of-representations\" id=\"ref-for-list-of-representations⑧\">list of representations</a>.</p>"
@@ -1532,14 +1600,14 @@
     {
       "name": "write-web-custom-format",
       "href": "https://www.w3.org/TR/clipboard-apis/#write-web-custom-formats",
-      "html": "<h3 class=\"heading settled\" id=\"to-write-web-custom-formats\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-web-custom-formats\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write web custom formats</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-write-web-custom-formats\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>items</var>,  a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence①②\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①④\">Blob</a></code>&gt;</p>\n    </dd></dl>",
+      "html": "<h3 class=\"heading settled\" id=\"to-write-web-custom-formats\"><span class=\"content\"><dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"write-web-custom-formats\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">write web custom formats</dfn></span><a class=\"self-link\" href=\"https://www.w3.org/TR/clipboard-apis/#to-write-web-custom-formats\"></a></h3>\n    <dl>\n     <dt data-md=\"\">Input\n     </dt><dd data-md=\"\">\n      <p><var>items</var>,  a <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#idl-sequence\" id=\"ref-for-idl-sequence①③\">sequence</a>&lt;<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-Blob\" id=\"ref-for-dfn-Blob①⑥\">Blob</a></code>&gt;</p>\n    </dd></dl>",
       "rationale": ".algorithm",
       "steps": [
         {
           "html": "<p>Let <var>idx</var> be a number initialized to 0.</p>"
         },
         {
-          "html": "<p>Let <var>webCustomFormatMap</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#os-specific-custom-map-name\" id=\"ref-for-os-specific-custom-map-name①\">os specific custom map name</a>.</p>"
+          "html": "<p>Let <var>webCustomFormatMap</var> be the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#os-specific-custom-map-name\" id=\"ref-for-os-specific-custom-map-name②\">os specific custom map name</a>.</p>"
         },
         {
           "html": "<p>Let <var>webCustomFormatMapString</var> be an empty JSON string.</p>"
@@ -1555,10 +1623,10 @@
               "html": "<p>Let <var>webCustomFormatIdx</var> be the result of appending <var>idx</var> to <var>webCustomFormat</var>.</p>"
             },
             {
-              "html": "<p>Insert <var>item</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①⓪\">type</a></code> as key and <var>webCustomFormatIdx</var> as value into the <var>webCustomFormatMapString</var> using a JSON serializer.</p>"
+              "html": "<p>Insert <var>item</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://www.w3.org/TR/FileAPI/#dfn-type\" id=\"ref-for-dfn-type①①\">type</a></code> as key and <var>webCustomFormatIdx</var> as value into the <var>webCustomFormatMapString</var> using a JSON serializer.</p>"
             },
             {
-              "html": "<p>Insert the <var>item</var> into the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard②⑦\">system clipboard</a> using <var>webCustomFormatIdx</var> as the format.</p>"
+              "html": "<p>Insert the <var>item</var> into the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard③④\">system clipboard</a> using <var>webCustomFormatIdx</var> as the format.</p>"
             },
             {
               "html": "<p>Increment <var>idx</var>.</p>"
@@ -1569,7 +1637,7 @@
           ]
         },
         {
-          "html": "<p>Insert the <var>webCustomFormatMapString</var> into the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard②⑧\">system clipboard</a> using <var>webCustomFormatMap</var> as the format.</p>"
+          "html": "<p>Insert the <var>webCustomFormatMapString</var> into the <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/clipboard-apis/#system-clipboard\" id=\"ref-for-system-clipboard③⑤\">system clipboard</a> using <var>webCustomFormatMap</var> as the format.</p>"
         }
       ]
     },
