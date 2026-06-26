@@ -177,9 +177,9 @@
       ]
     },
     {
-      "name": "domain to ASCII",
+      "name": "domain parser",
       "href": "https://url.spec.whatwg.org/#concept-domain-to-ascii",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-domain-to-ascii\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">domain to ASCII</dfn> algorithm, given a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④\">string</a>\n<var>domain</var> and a boolean <var>beStrict</var>, runs these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-domain-to-ascii\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">domain parser</dfn> algorithm, given a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string④\">scalar value string</a> <var>domain</var> and a boolean <var>beStrict</var>, runs these\nsteps. They return failure or a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain\" id=\"ref-for-concept-domain⑧\">domain</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -238,11 +238,11 @@
     {
       "name": "domain to Unicode",
       "href": "https://url.spec.whatwg.org/#concept-domain-to-unicode",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-domain-to-unicode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">domain to Unicode</dfn> algorithm, given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain\" id=\"ref-for-concept-domain⑧\">domain</a>\n<var>domain</var> and a boolean <var>beStrict</var>, runs these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-domain-to-unicode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">domain to Unicode</dfn> algorithm, given a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain\" id=\"ref-for-concept-domain⑨\">domain</a>\n<var>domain</var>, runs these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>result</var> be the result of running\n <a data-link-type=\"abstract-op\" href=\"https://www.unicode.org/reports/tr46/#ToUnicode\" id=\"ref-for-ToUnicode\">Unicode ToUnicode</a> with <i>domain_name</i> set to <var>domain</var>,\n <i>CheckHyphens</i> set to <var>beStrict</var>, <i>CheckBidi</i> set to true, <i>CheckJoiners</i>\n set to true, <i>UseSTD3ASCIIRules</i> set to <var>beStrict</var>, <i>Transitional_Processing</i>\n set to false, and <i>IgnoreInvalidPunycode</i> set to false. <a data-link-type=\"biblio\" href=\"https://url.spec.whatwg.org/#biblio-uts46\" title=\"Unicode IDNA Compatibility Processing\">[UTS46]</a>\n\n </p>"
+          "html": "<p>Let <var>result</var> be the result of running\n <a data-link-type=\"abstract-op\" href=\"https://www.unicode.org/reports/tr46/#ToUnicode\" id=\"ref-for-ToUnicode\">Unicode ToUnicode</a> with <i>domain_name</i> set to <var>domain</var>,\n <i>CheckHyphens</i> set to false, <i>CheckBidi</i> set to true, <i>CheckJoiners</i> set to true,\n <i>UseSTD3ASCIIRules</i> set to false, <i>Transitional_Processing</i> set to false, and\n <i>IgnoreInvalidPunycode</i> set to false. <a data-link-type=\"biblio\" href=\"https://url.spec.whatwg.org/#biblio-uts46\" title=\"Unicode IDNA Compatibility Processing\">[UTS46]</a>\n\n </p>"
         },
         {
           "html": "<p>If an error was recorded, then return <var>domain</var>.\n\n  </p>"
@@ -255,11 +255,11 @@
     {
       "name": "valid domain",
       "href": "https://url.spec.whatwg.org/#valid-domain",
-      "html": "A <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>input</var> is a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"valid-domain\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid domain</dfn> if these steps return true:",
+      "html": "A <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string④\">string</a> <var>input</var> is a <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"valid-domain\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">valid domain</dfn> if these steps return true:",
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>domain</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain-to-ascii\" id=\"ref-for-concept-domain-to-ascii①\">domain to ASCII</a> with <var>input</var>\n and true.\n\n </p>"
+          "html": "<p>Let <var>domain</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain-to-ascii\" id=\"ref-for-concept-domain-to-ascii①\">domain parser</a> with <var>input</var>\n and true.\n\n </p>"
         },
         {
           "html": "<p>Return false if <var>domain</var> is failure; otherwise true.\n</p>"
@@ -269,7 +269,7 @@
     {
       "name": "host parser",
       "href": "https://url.spec.whatwg.org/#concept-host-parser",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"host parser|host parsing\" id=\"concept-host-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">host parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string④\">scalar value string</a> <var>input</var> with an optional boolean <var>isOpaque</var> (default\nfalse), and then runs these steps. They return failure or a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①②\">host</a>.",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" data-lt=\"host parser|host parsing\" id=\"concept-host-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">host parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑤\">scalar value string</a> <var>input</var> with an optional boolean <var>isOpaque</var> (default\nfalse), and then runs these steps. They return failure or a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-host\" id=\"ref-for-concept-host①②\">host</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -294,7 +294,7 @@
           "html": "<p>Let <var>domain</var> be the result of running <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8-decode-without-bom\" id=\"ref-for-utf-8-decode-without-bom①\">UTF-8 decode without BOM</a> on the\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-percent-decode\" id=\"ref-for-string-percent-decode④\">percent-decoding</a> of <var>input</var>.\n\n  </p>"
         },
         {
-          "html": "<p>Let <var>asciiDomain</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain-to-ascii\" id=\"ref-for-concept-domain-to-ascii③\">domain to ASCII</a> with\n <var>domain</var> and false.\n\n </p>"
+          "html": "<p>Let <var>asciiDomain</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain-to-ascii\" id=\"ref-for-concept-domain-to-ascii③\">domain parser</a> with\n <var>domain</var> and false.\n\n </p>"
         },
         {
           "html": "<p>If <var>asciiDomain</var> is failure, then return failure.\n\n </p>"
@@ -484,7 +484,7 @@
     {
       "name": "IPv6 parser",
       "href": "https://url.spec.whatwg.org/#concept-ipv6-parser",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-ipv6-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IPv6 parser</dfn> takes a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑤\">scalar value string</a>\n<var>input</var> and then runs these steps. They return failure or an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①③\">IPv6 address</a>.",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-ipv6-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IPv6 parser</dfn> takes a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑥\">scalar value string</a>\n<var>input</var> and then runs these steps. They return failure or an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①③\">IPv6 address</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -669,7 +669,7 @@
     {
       "name": "opaque-host parser",
       "href": "https://url.spec.whatwg.org/#concept-opaque-host-parser",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-opaque-host-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">opaque-host parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑥\">scalar value string</a> <var>input</var>, and then runs these steps. They return failure or an\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#opaque-host\" id=\"ref-for-opaque-host①③\">opaque host</a>.",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-opaque-host-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">opaque-host parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑦\">scalar value string</a> <var>input</var>, and then runs these steps. They return failure or an\n<a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#opaque-host\" id=\"ref-for-opaque-host①③\">opaque host</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -699,7 +699,7 @@
           "html": "<p>Otherwise, if <var>host</var> is an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①⑤\">IPv6 address</a>, return U+005B ([), followed by the\n result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-serializer\" id=\"ref-for-concept-ipv6-serializer\">IPv6 serializer</a> on <var>host</var>, followed by U+005D (]).\n\n </p>"
         },
         {
-          "html": "<p>Otherwise, <var>host</var> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain\" id=\"ref-for-concept-domain⑨\">domain</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#opaque-host\" id=\"ref-for-opaque-host①④\">opaque host</a>, or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#empty-host\" id=\"ref-for-empty-host①\">empty host</a>,\n return <var>host</var>.\n</p>"
+          "html": "<p>Otherwise, <var>host</var> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain\" id=\"ref-for-concept-domain①⓪\">domain</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#opaque-host\" id=\"ref-for-opaque-host①④\">opaque host</a>, or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#empty-host\" id=\"ref-for-empty-host①\">empty host</a>,\n return <var>host</var>.\n</p>"
         }
       ]
     },
@@ -895,7 +895,7 @@
     {
       "name": "URL parser",
       "href": "https://url.spec.whatwg.org/#concept-url-parser",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-url-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">URL parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑧\">scalar value string</a> <var>input</var>, with an optional null or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url①①\">base URL</a>\n<var>base</var> (default null) and an optional <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding①\">encoding</a> <var>encoding</var> (default\n<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑤\">UTF-8</a>), and then runs these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-url-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">URL parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑨\">scalar value string</a> <var>input</var>, with an optional null or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url①①\">base URL</a>\n<var>base</var> (default null) and an optional <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding①\">encoding</a> <var>encoding</var> (default\n<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑤\">UTF-8</a>), and then runs these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -918,7 +918,7 @@
     {
       "name": "basic URL parser",
       "href": "https://url.spec.whatwg.org/#concept-basic-url-parser",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-basic-url-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">basic URL parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑨\">scalar value string</a> <var>input</var>, with an optional null or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url①②\">base URL</a>\n<var>base</var> (default null), an optional <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding②\">encoding</a> <var>encoding</var> (default\n<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑥\">UTF-8</a>), an optional <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④①\">URL</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"basic URL parser\" data-dfn-type=\"dfn\" data-export=\"\" id=\"basic-url-parser-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>url</var></dfn>,\nand an optional state override <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"basic URL parser\" data-dfn-type=\"dfn\" data-export=\"\" id=\"basic-url-parser-state-override\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>state override</var></dfn>,\nand then runs these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-basic-url-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">basic URL parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①⓪\">scalar value string</a> <var>input</var>, with an optional null or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url①②\">base URL</a>\n<var>base</var> (default null), an optional <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding②\">encoding</a> <var>encoding</var> (default\n<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑥\">UTF-8</a>), an optional <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④①\">URL</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"basic URL parser\" data-dfn-type=\"dfn\" data-export=\"\" id=\"basic-url-parser-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>url</var></dfn>,\nand an optional state override <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"basic URL parser\" data-dfn-type=\"dfn\" data-export=\"\" id=\"basic-url-parser-state-override\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>state override</var></dfn>,\nand then runs these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -2078,7 +2078,7 @@
           "rationale": "assert",
           "steps": [
             {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>tuple</var>’s name and <var>tuple</var>’s value are\n   <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①⓪\">scalar value strings</a>.\n\n   </p>"
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: <var>tuple</var>’s name and <var>tuple</var>’s value are\n   <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①①\">scalar value strings</a>.\n\n   </p>"
             },
             {
               "html": "<p>Let <var>name</var> be the result of running\n   <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-percent-encode-after-encoding\" id=\"ref-for-string-percent-encode-after-encoding⑥\">percent-encode after encoding</a> with <var>encoding</var>, <var>tuple</var>’s\n   name, and the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#application-x-www-form-urlencoded-percent-encode-set\" id=\"ref-for-application-x-www-form-urlencoded-percent-encode-set⑤\"><code>application/x-www-form-urlencoded</code> percent-encode set</a>.\n\n   </p>"
@@ -2102,7 +2102,7 @@
     {
       "name": "API URL parser",
       "href": "https://url.spec.whatwg.org/#api-url-parser",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"api-url-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">API URL parser</dfn> takes a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①②\">scalar value string</a> <var>url</var> and an optional\nnull-or-<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①③\">scalar value string</a> <var>base</var> (default null), and then runs these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"api-url-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">API URL parser</dfn> takes a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①③\">scalar value string</a> <var>url</var> and an optional\nnull-or-<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①④\">scalar value string</a> <var>base</var> (default null), and then runs these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
