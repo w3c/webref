@@ -279,8 +279,26 @@
       },
       "https://drafts.csswg.org/geometry-1/": {
         "anchors": [
+          "domrect",
+          "dom-domrect-x",
+          "dom-domrect-y",
+          "dom-domrect-width",
+          "dom-domrect-height",
+          "dompoint",
+          "dommatrix",
+          "dictdef-dompointinit",
+          "rectangle-x-coordinate",
+          "rectangle-y-coordinate",
+          "rectangle-width-dimension",
+          "rectangle-height-dimension",
           "dictdef-dommatrix2dinit",
-          "dommatrixinit-dictionary"
+          "dommatrixreadonly",
+          "dommatrixinit-dictionary",
+          "dom-dommatrixreadonly-is2d",
+          "dom-dompointreadonly-x",
+          "dom-dompointreadonly-y",
+          "dom-dompointreadonly-w",
+          "dom-dompointreadonly-z"
         ]
       },
       "https://drafts.csswg.org/selectors/": {
@@ -345,6 +363,7 @@
       "https://github.com/w3c/svgwg/issues/60": {},
       "https://github.com/w3c/svgwg/issues/647": {},
       "https://github.com/w3c/svgwg/issues/685": {},
+      "https://github.com/w3c/svgwg/issues/706": {},
       "https://github.com/w3c/svgwg/issues/773": {},
       "https://github.com/w3c/svgwg/issues/828": {},
       "https://github.com/w3c/svgwg/issues/893": {},
@@ -985,7 +1004,6 @@
           "syntax"
         ]
       },
-      "https://www.w3.org/TR/2014/CR-geometry-1-20141125/": {},
       "https://www.w3.org/TR/2014/CR-html5-20140204/dom.html": {
         "anchors": [
           "custom-data-attribute",
@@ -998,23 +1016,6 @@
           "concept-range-start",
           "concept-range-bp",
           "concept-range-end"
-        ]
-      },
-      "https://www.w3.org/TR/2014/WD-geometry-1-20140522/": {
-        "anchors": [
-          "dom-domrectreadonly-domrect-x",
-          "dom-domrectreadonly-domrect-y",
-          "dom-domrectreadonly-domrect-width",
-          "dom-domrectreadonly-domrect-height",
-          "x-coordinate",
-          "y-coordinate",
-          "width",
-          "height",
-          "dom-dommatrixreadonly-is2d",
-          "dom-dompointreadonly-dompoint-x",
-          "dom-dompointreadonly-dompoint-y",
-          "dom-dompointreadonly-dompoint-w",
-          "dom-dompointreadonly-dompoint-z"
         ]
       },
       "https://www.w3.org/TR/2015/CR-compositing-1-20150113": {},
@@ -1319,18 +1320,7 @@
       },
       "https://www.w3.org/TR/filter-effects-1/": {},
       "https://www.w3.org/TR/filter-effects/": {},
-      "https://www.w3.org/TR/geometry-1/": {
-        "anchors": [
-          "DOMRect",
-          "dom-dompoint",
-          "DOMMatrix",
-          "dictdef-dompointinit",
-          "domrectreadonly",
-          "dom-dompointreadonly",
-          "dommatrixreadonly",
-          "dommatrix"
-        ]
-      },
+      "https://www.w3.org/TR/geometry-1/": {},
       "https://www.w3.org/TR/graphics-aria-1.0/": {
         "anchors": [
           "roles"
