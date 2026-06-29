@@ -164,7 +164,23 @@
           "href": "https://drafts.csswg.org/css-view-transitions-2/#descdef-view-transition-types",
           "for": "@view-transition",
           "value": "none | <custom-ident>+",
-          "initial": "none"
+          "initial": "none",
+          "values": [
+            {
+              "name": "none",
+              "prose": "No transition types are set.",
+              "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-types-none",
+              "type": "value",
+              "value": "none"
+            },
+            {
+              "name": "<custom-ident>+",
+              "prose": "Sets the active types for the transition to the specified custom identifiers. The <custom-ident> none, as well as any <custom-ident> starting with -ua-, are ignored.",
+              "href": "https://drafts.csswg.org/css-view-transitions-2/#valdef-view-transition-types-custom-ident",
+              "type": "value",
+              "value": "<custom-ident>+"
+            }
+          ]
         }
       ],
       "value": "@view-transition { <declaration-list> }"
