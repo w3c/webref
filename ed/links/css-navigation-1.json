@@ -87,21 +87,23 @@
       },
       "https://drafts.csswg.org/css-syntax-3/": {
         "anchors": [
+          "typedef-any-value",
           "typedef-declaration-list",
           "typedef-rule-list"
         ]
       },
       "https://drafts.csswg.org/css-values-4/": {
         "anchors": [
-          "comb-one",
           "url-value",
+          "comb-one",
+          "mult-opt",
           "typedef-dashed-ident",
+          "mult-comma",
+          "typedef-ident",
           "string-value",
           "identifier-value",
-          "typedef-ident",
           "funcdef-url",
           "style-resource-base-url",
-          "mult-opt",
           "mult-zero-plus"
         ]
       },
@@ -183,6 +185,9 @@
       "https://infra.spec.whatwg.org/": {
         "anchors": [
           "ordered-map",
+          "list-iterate",
+          "map-exists",
+          "map-set",
           "struct",
           "assert"
         ]
@@ -195,15 +200,20 @@
       },
       "https://urlpattern.spec.whatwg.org/": {
         "anchors": [
-          "url-pattern-match",
           "url-pattern",
+          "url-pattern-match",
+          "dictdef-urlpatternresult",
+          "dom-urlpatternresult-protocol",
+          "dom-urlpatternresult-hostname",
+          "dom-urlpatternresult-port",
+          "dom-urlpatternresult-pathname",
+          "dom-urlpatternresult-search",
+          "dom-urlpatternresult-hash",
+          "dom-urlpatterncomponentresult-groups",
           "url-pattern-create",
           "dictdef-urlpatterninit",
           "pattern-string",
-          "urlpattern",
-          "dictdef-urlpatternresult",
-          "dictdef-urlpatterncomponentresult",
-          "dom-urlpatterncomponentresult-groups"
+          "urlpattern"
         ]
       }
     }

@@ -1769,6 +1769,249 @@
       ]
     },
     {
+      "name": "get the complete transform",
+      "href": "https://drafts.csswg.org/cssom-view-1/#get-the-complete-transform",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"get-the-complete-transform\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the complete transform</dfn> of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#typedefdef-geometrynode\" id=\"ref-for-typedefdef-geometrynode④\">GeometryNode</a></code> <var>node</var>\n    relative to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#typedefdef-geometrynode\" id=\"ref-for-typedefdef-geometrynode⑤\">GeometryNode</a></code> <var>ancestor</var>,\n    run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>current</var> be <var>node</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>transformationMatrix</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix\">DOMMatrix</a></code>.</p>"
+        },
+        {
+          "html": "While <var>current</var> is not null:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "<p>If <var>current</var> is <var>ancestor</var>, return <var>transformationMatrix</var>.</p>"
+            },
+            {
+              "html": "<p>Let <var>nextAncestor</var> be null.</p>"
+            },
+            {
+              "html": "If <var>current</var> is an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#element\" id=\"ref-for-element①⓪\">Element</a></code>, then:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>currentTransformationMatrix</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix①\">DOMMatrix</a></code>\nrepresenting the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-transforms-1/#current-transformation-matrix\" id=\"ref-for-current-transformation-matrix\">current transformation matrix</a> of <var>current</var>. <a data-link-type=\"biblio\" href=\"https://drafts.csswg.org/cssom-view-1/#biblio-css-transforms-1\" title=\"CSS Transforms Module Level 1\">[CSS-TRANSFORMS-1]</a></p>"
+                },
+                {
+                  "html": "<p>Set <var>transformationMatrix</var> to the result of multiplying\n<var>currentTransformationMatrix</var> by <var>transformationMatrix</var>.</p>"
+                },
+                {
+                  "html": "<p>If there is an element that establishes the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#containing-block\" id=\"ref-for-containing-block⑧\">containing block</a> of <var>current</var>,\nlet <var>nextAncestor</var> be that element.\nOtherwise, let <var>nextAncestor</var> be <var>current</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①①\">node document</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>nextAncestor</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①③\">Document</a></code>,\nlet <var>offsetX</var> be the horizontal offset and <var>offsetY</var>\nbe the vertical offset from the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-edge\" id=\"ref-for-border-edge①⓪\">border edge</a> of <var>current</var>\nto the origin of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#initial-containing-block\" id=\"ref-for-initial-containing-block②⑧\">initial containing block</a>,\nignoring any <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#transforms\" id=\"ref-for-transforms②③\">transforms</a> that apply to <var>current</var> and its ancestors.\nOtherwise, let <var>offsetX</var> be the horizontal offset and <var>offsetY</var>\nbe the vertical offset from the <span id=\"ref-for-border-edge①①\">border edge</span> of <var>current</var>\nto the <span id=\"ref-for-border-edge①②\">border edge</span> of <var>nextAncestor</var>,\nignoring any <span id=\"ref-for-transforms②④\">transforms</span> that apply to <var>current</var> and its ancestors.</p>"
+                },
+                {
+                  "html": "<p>Let <var>translationMatrix</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dommatrix\" id=\"ref-for-dommatrix②\">DOMMatrix</a></code> representing a\ntranslation by <var>offsetX</var> and <var>offsetY</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>transformationMatrix</var> to the result of multiplying\n<var>translationMatrix</var> by <var>transformationMatrix</var>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>Otherwise, if <var>current</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text③\">Text</a></code>, set <var>nextAncestor</var> to <var>current</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#parent-element\" id=\"ref-for-parent-element①\">parent element</a>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if <var>current</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-pseudo-4/#csspseudoelement\" id=\"ref-for-csspseudoelement②\">CSSPseudoElement</a></code>, set <var>nextAncestor</var> to <var>current</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#originating-element\" id=\"ref-for-originating-element\">originating element</a>.</p>"
+            },
+            {
+              "html": "<p>Set <var>current</var> to <var>nextAncestor</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>transformationMatrix</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "adjust a point to the border box",
+      "href": "https://drafts.csswg.org/cssom-view-1/#adjust-a-point-to-the-border-box",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"adjust-a-point-to-the-border-box\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">adjust a point to the border box</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\" id=\"ref-for-dompoint①\">DOMPoint</a></code> <var>point</var>,\n    a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#typedefdef-geometrynode\" id=\"ref-for-typedefdef-geometrynode⑥\">GeometryNode</a></code> <var>node</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#enumdef-cssboxtype\" id=\"ref-for-enumdef-cssboxtype③\">CSSBoxType</a></code> <var>box</var>,\n    run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>adjustedPoint</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\" id=\"ref-for-dompoint②\">DOMPoint</a></code> with the same\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-dompointreadonly-x\" id=\"ref-for-dom-dompointreadonly-x\">x</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-dompointreadonly-y\" id=\"ref-for-dom-dompointreadonly-y\">y</a></code> as <var>point</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>node</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①④\">Document</a></code> or a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text④\">Text</a></code>, return <var>adjustedPoint</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>box</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-cssboxtype-margin\" id=\"ref-for-dom-cssboxtype-margin\">\"margin\"</a></code>,\nadjust <var>adjustedPoint</var> so that it refers to the same physical point\nin <var>node</var>’s local coordinate space,\nbut with coordinates measured from the top-left corner of <var>node</var>’s\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-box\" id=\"ref-for-border-box②\">border box</a> rather than the top-left corner of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#margin-box\" id=\"ref-for-margin-box\">margin box</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>box</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-cssboxtype-padding\" id=\"ref-for-dom-cssboxtype-padding\">\"padding\"</a></code>,\nadjust <var>adjustedPoint</var> so that it refers to the same physical point\nin <var>node</var>’s local coordinate space,\nbut with coordinates measured from the top-left corner of <var>node</var>’s\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-box\" id=\"ref-for-border-box③\">border box</a> rather than the top-left corner of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#padding-box\" id=\"ref-for-padding-box\">padding box</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>box</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-cssboxtype-content\" id=\"ref-for-dom-cssboxtype-content\">\"content\"</a></code>,\nadjust <var>adjustedPoint</var> so that it refers to the same physical point\nin <var>node</var>’s local coordinate space,\nbut with coordinates measured from the top-left corner of <var>node</var>’s\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-box\" id=\"ref-for-border-box④\">border box</a> rather than the top-left corner of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#content-box\" id=\"ref-for-content-box\">content box</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>adjustedPoint</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "adjust a point from the border box",
+      "href": "https://drafts.csswg.org/cssom-view-1/#adjust-a-point-from-the-border-box",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"adjust-a-point-from-the-border-box\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">adjust a point from the border box</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\" id=\"ref-for-dompoint③\">DOMPoint</a></code> <var>point</var>,\n    a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#typedefdef-geometrynode\" id=\"ref-for-typedefdef-geometrynode⑦\">GeometryNode</a></code> <var>node</var>, and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#enumdef-cssboxtype\" id=\"ref-for-enumdef-cssboxtype④\">CSSBoxType</a></code> <var>box</var>,\n    run the following steps:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>adjustedPoint</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\" id=\"ref-for-dompoint④\">DOMPoint</a></code> with the same\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-dompointreadonly-x\" id=\"ref-for-dom-dompointreadonly-x①\">x</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-dompointreadonly-y\" id=\"ref-for-dom-dompointreadonly-y①\">y</a></code> as <var>point</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>node</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑤\">Document</a></code> or a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text⑤\">Text</a></code>, return <var>adjustedPoint</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>box</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-cssboxtype-margin\" id=\"ref-for-dom-cssboxtype-margin①\">\"margin\"</a></code>,\nadjust <var>adjustedPoint</var> so that it refers to the same physical point\nin <var>node</var>’s local coordinate space,\nbut with coordinates measured from the top-left corner of <var>node</var>’s\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#margin-box\" id=\"ref-for-margin-box①\">margin box</a> rather than the top-left corner of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-box\" id=\"ref-for-border-box⑤\">border box</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>box</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-cssboxtype-padding\" id=\"ref-for-dom-cssboxtype-padding①\">\"padding\"</a></code>,\nadjust <var>adjustedPoint</var> so that it refers to the same physical point\nin <var>node</var>’s local coordinate space,\nbut with coordinates measured from the top-left corner of <var>node</var>’s\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#padding-box\" id=\"ref-for-padding-box①\">padding box</a> rather than the top-left corner of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-box\" id=\"ref-for-border-box⑥\">border box</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>box</var> is <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-cssboxtype-content\" id=\"ref-for-dom-cssboxtype-content①\">\"content\"</a></code>,\nadjust <var>adjustedPoint</var> so that it refers to the same physical point\nin <var>node</var>’s local coordinate space,\nbut with coordinates measured from the top-left corner of <var>node</var>’s\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#content-box\" id=\"ref-for-content-box①\">content box</a> rather than the top-left corner of its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-box\" id=\"ref-for-border-box⑦\">border box</a>.</p>"
+        },
+        {
+          "html": "<p>Return <var>adjustedPoint</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "GeometryUtils/getBoxQuads(options)",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-geometryutils-getboxquads",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"GeometryUtils\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"getBoxQuads(options)|getBoxQuads()\" id=\"dom-geometryutils-getboxquads\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>getBoxQuads(<var>options</var>)</code></dfn> method must run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>node</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①④\">this</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>node</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑥\">Document</a></code>, let <var>document</var> be <var>node</var>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, if <var>node</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/css-pseudo-4/#csspseudoelement\" id=\"ref-for-csspseudoelement③\">CSSPseudoElement</a></code>, let <var>document</var> be <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/selectors-4/#originating-element\" id=\"ref-for-originating-element①\">originating element</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①②\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>Otherwise, let <var>document</var> be <var>node</var>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①③\">node document</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-boxquadoptions-relativeto\" id=\"ref-for-dom-boxquadoptions-relativeto①\">relativeTo</a></code> is specified,\nlet <var>relativeTo</var> be <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-boxquadoptions-relativeto\" id=\"ref-for-dom-boxquadoptions-relativeto②\">relativeTo</a></code>.\nOtherwise, let <var>relativeTo</var> be <var>document</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>result</var> be an empty <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html#sec-list-and-record-specification-type\" id=\"ref-for-sec-list-and-record-specification-type\">list</a> of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domquad\" id=\"ref-for-domquad④\">DOMQuad</a></code> objects.</p>"
+        },
+        {
+          "html": "If <var>node</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑦\">Document</a></code>, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>rect</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrect\" id=\"ref-for-domrect②⓪\">DOMRect</a></code> whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-x\" id=\"ref-for-dom-domrect-x②\">x</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-y\" id=\"ref-for-dom-domrect-y②\">y</a></code> are 0,\nand whose <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-width\" id=\"ref-for-dom-domrect-width②\">width</a></code> and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-height\" id=\"ref-for-dom-domrect-height②\">height</a></code> are the width and height\nof the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#layout-viewport\" id=\"ref-for-layout-viewport④\">layout viewport</a>.</p>"
+            },
+            {
+              "html": "<p>Let <var>quad</var> be the result of invoking <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domquad-fromrect\" id=\"ref-for-dom-domquad-fromrect\">fromRect()</a></code> with <var>rect</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> the result of invoking the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-geometryutils-convertquadfromnode\" id=\"ref-for-dom-geometryutils-convertquadfromnode①\">convertQuadFromNode()</a></code> method on <var>relativeTo</var>\nwith <var>quad</var> and <var>document</var> to <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, if <var>node</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#text\" id=\"ref-for-text⑥\">Text</a></code>, then:",
+          "rationale": "for",
+          "steps": [
+            {
+              "html": "For each <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrect\" id=\"ref-for-domrect②①\">DOMRect</a></code> <var>rect</var> returned by invoking the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-range-getclientrects\" id=\"ref-for-dom-range-getclientrects③\">getClientRects()</a></code> method\non a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#range\" id=\"ref-for-range③\">Range</a></code> whose boundary-points select exactly <var>node</var>, in content order:",
+              "rationale": "let",
+              "steps": [
+                {
+                  "html": "<p>Let <var>quad</var> be the result of invoking <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domquad-fromrect\" id=\"ref-for-dom-domquad-fromrect①\">fromRect()</a></code> with <var>rect</var>.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append①\">Append</a> the result of invoking the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-geometryutils-convertquadfromnode\" id=\"ref-for-dom-geometryutils-convertquadfromnode②\">convertQuadFromNode()</a></code> method on <var>relativeTo</var>\nwith <var>quad</var> and <var>document</var> to <var>result</var>.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, for each <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#box-fragment\" id=\"ref-for-box-fragment①\">box fragment</a> of <var>node</var>,\nin content order, run the following steps:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>rect</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrect\" id=\"ref-for-domrect②②\">DOMRect</a></code> describing the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-area\" id=\"ref-for-border-area\">border area</a> of\nthe <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-break-4/#box-fragment\" id=\"ref-for-box-fragment②\">box fragment</a>, positioned in the fragment’s local coordinate space\nwith its <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-edge\" id=\"ref-for-border-edge①③\">border edge</a> at <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-x\" id=\"ref-for-dom-domrect-x③\">x</a></code> = 0 and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-y\" id=\"ref-for-dom-domrect-y③\">y</a></code> = 0.</p>"
+            },
+            {
+              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-boxquadoptions-box\" id=\"ref-for-dom-boxquadoptions-box\">box</a></code> is\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-cssboxtype-margin\" id=\"ref-for-dom-cssboxtype-margin②\">\"margin\"</a></code>,\nlet <var>rect</var> instead be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrect\" id=\"ref-for-domrect②③\">DOMRect</a></code> describing the fragment’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#margin-area\" id=\"ref-for-margin-area\">margin area</a>\nin the same local coordinate space,\nwith the fragment’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-edge\" id=\"ref-for-border-edge①④\">border edge</a> still at <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-x\" id=\"ref-for-dom-domrect-x④\">x</a></code> = 0 and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-y\" id=\"ref-for-dom-domrect-y④\">y</a></code> = 0.</p>"
+            },
+            {
+              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-boxquadoptions-box\" id=\"ref-for-dom-boxquadoptions-box①\">box</a></code> is\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-cssboxtype-padding\" id=\"ref-for-dom-cssboxtype-padding②\">\"padding\"</a></code>,\nlet <var>rect</var> instead be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrect\" id=\"ref-for-domrect②④\">DOMRect</a></code> describing the fragment’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#padding-area\" id=\"ref-for-padding-area\">padding area</a>\nin the same local coordinate space,\nwith the fragment’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-edge\" id=\"ref-for-border-edge①⑤\">border edge</a> still at <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-x\" id=\"ref-for-dom-domrect-x⑤\">x</a></code> = 0 and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-y\" id=\"ref-for-dom-domrect-y⑤\">y</a></code> = 0.</p>"
+            },
+            {
+              "html": "<p>If <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-boxquadoptions-box\" id=\"ref-for-dom-boxquadoptions-box②\">box</a></code> is\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-cssboxtype-content\" id=\"ref-for-dom-cssboxtype-content②\">\"content\"</a></code>,\nlet <var>rect</var> instead be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#domrect\" id=\"ref-for-domrect②⑤\">DOMRect</a></code> describing the fragment’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#content-area\" id=\"ref-for-content-area\">content area</a>\nin the same local coordinate space,\nwith the fragment’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-box-4/#border-edge\" id=\"ref-for-border-edge①⑥\">border edge</a> still at <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-x\" id=\"ref-for-dom-domrect-x⑥\">x</a></code> = 0 and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-y\" id=\"ref-for-dom-domrect-y⑥\">y</a></code> = 0.</p>"
+            },
+            {
+              "html": "<p>Let <var>quad</var> be the result of invoking <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/geometry-1/#dom-domquad-fromrect\" id=\"ref-for-dom-domquad-fromrect②\">fromRect()</a></code> with <var>rect</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append②\">Append</a> the result of invoking the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-geometryutils-convertquadfromnode\" id=\"ref-for-dom-geometryutils-convertquadfromnode③\">convertQuadFromNode()</a></code> method on <var>relativeTo</var>\nwith <var>quad</var> and <var>node</var> to <var>result</var>.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>result</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "GeometryUtils/convertRectFromNode(rect, from, options)",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-geometryutils-convertrectfromnode",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"GeometryUtils\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"convertRectFromNode(rect, from, options)|convertRectFromNode(rect, from)\" id=\"dom-geometryutils-convertrectfromnode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>convertRectFromNode(<var>rect</var>, <var>from</var>, <var>options</var>)</code></dfn> method\nmust run the following steps:",
+      "rationale": "create",
+      "steps": [
+        {
+          "html": "<p>create a DOMQuad from the rect via DOMQuad.fromRect</p>"
+        },
+        {
+          "html": "<p>transform each point of the DOMQuad from 1. via convertPointFromNode</p>"
+        }
+      ]
+    },
+    {
+      "name": "GeometryUtils/convertPointFromNode(point, from, options)",
+      "href": "https://drafts.csswg.org/cssom-view-1/#dom-geometryutils-convertpointfromnode",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"GeometryUtils\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"convertPointFromNode(point, from, options)|convertPointFromNode(point, from)\" id=\"dom-geometryutils-convertpointfromnode\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>convertPointFromNode(<var>point</var>, <var>from</var>, <var>options</var>)</code></dfn>\nmethod returns a point flattened to 2D and must run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>node</var> be <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑤\">this</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>thisTransformToViewport</var> be the result of\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#get-the-complete-transform\" id=\"ref-for-get-the-complete-transform\">getting the complete transform</a> of <var>node</var>\nrelative to null.</p>"
+        },
+        {
+          "html": "<p>Let <var>fromTransformToViewport</var> be the result of\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#get-the-complete-transform\" id=\"ref-for-get-the-complete-transform①\">getting the complete transform</a> of <var>from</var>\nrelative to null.</p>"
+        },
+        {
+          "html": "<p>Let <var>adjustedPoint</var> be the result of\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#adjust-a-point-to-the-border-box\" id=\"ref-for-adjust-a-point-to-the-border-box\">adjusting a point to the border box</a> given <var>point</var>,\n<var>from</var>, and <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-convertcoordinateoptions-frombox\" id=\"ref-for-dom-convertcoordinateoptions-frombox\">fromBox</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>adjustedPoint</var> to the result of transforming\n<var>adjustedPoint</var> by <var>fromTransformToViewport</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>adjustedPoint</var> to the result of transforming\n<var>adjustedPoint</var> by the inverse of <var>thisTransformToViewport</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#adjust-a-point-from-the-border-box\" id=\"ref-for-adjust-a-point-from-the-border-box\">adjusting a point from the border box</a>\ngiven <var>adjustedPoint</var>, <var>node</var>,\nand <var>options</var>.<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#dom-convertcoordinateoptions-tobox\" id=\"ref-for-dom-convertcoordinateoptions-tobox\">toBox</a></code>.</p>"
+        }
+      ]
+    },
+    {
       "name": "VisualViewport/offsetLeft",
       "href": "https://drafts.csswg.org/cssom-view-1/#dom-visualviewport-offsetleft",
       "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"VisualViewport\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-visualviewport-offsetleft\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>offsetLeft</code></dfn> attribute must run these steps:",
@@ -1778,7 +2021,7 @@
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visual-viewport\" id=\"ref-for-visual-viewport②\">visual viewport</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport-associated-document\" id=\"ref-for-visualviewport-associated-document①\">associated document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active①\">fully active</a>, return 0.</p>"
         },
         {
-          "html": "<p>Otherwise, return the offset of the left edge of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visual-viewport\" id=\"ref-for-visual-viewport③\">visual viewport</a> from the left edge\nof the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#layout-viewport\" id=\"ref-for-layout-viewport③\">layout viewport</a>.</p>"
+          "html": "<p>Otherwise, return the offset of the left edge of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visual-viewport\" id=\"ref-for-visual-viewport③\">visual viewport</a> from the left edge\nof the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#layout-viewport\" id=\"ref-for-layout-viewport⑤\">layout viewport</a>.</p>"
         }
       ]
     },
@@ -1792,7 +2035,7 @@
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visual-viewport\" id=\"ref-for-visual-viewport④\">visual viewport</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport-associated-document\" id=\"ref-for-visualviewport-associated-document②\">associated document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active②\">fully active</a>, return 0.</p>"
         },
         {
-          "html": "<p>Otherwise, return the offset of the top edge of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visual-viewport\" id=\"ref-for-visual-viewport⑤\">visual viewport</a> from the top edge\nof the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#layout-viewport\" id=\"ref-for-layout-viewport④\">layout viewport</a>.</p>"
+          "html": "<p>Otherwise, return the offset of the top edge of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visual-viewport\" id=\"ref-for-visual-viewport⑤\">visual viewport</a> from the top edge\nof the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#layout-viewport\" id=\"ref-for-layout-viewport⑥\">layout viewport</a>.</p>"
         }
       ]
     },
@@ -1806,7 +2049,7 @@
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visual-viewport\" id=\"ref-for-visual-viewport⑥\">visual viewport</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport-associated-document\" id=\"ref-for-visualviewport-associated-document③\">associated document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active③\">fully active</a>, return 0.</p>"
         },
         {
-          "html": "<p>Otherwise, return the offset of the left edge of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visual-viewport\" id=\"ref-for-visual-viewport⑦\">visual viewport</a> from the left edge\nof the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#initial-containing-block\" id=\"ref-for-initial-containing-block②⑧\">initial containing block</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#layout-viewport\" id=\"ref-for-layout-viewport⑤\">layout viewport</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①\">document</a>.</p>"
+          "html": "<p>Otherwise, return the offset of the left edge of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visual-viewport\" id=\"ref-for-visual-viewport⑦\">visual viewport</a> from the left edge\nof the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#initial-containing-block\" id=\"ref-for-initial-containing-block②⑨\">initial containing block</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#layout-viewport\" id=\"ref-for-layout-viewport⑦\">layout viewport</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document①\">document</a>.</p>"
         }
       ]
     },
@@ -1820,7 +2063,7 @@
           "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visual-viewport\" id=\"ref-for-visual-viewport⑧\">visual viewport</a>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport-associated-document\" id=\"ref-for-visualviewport-associated-document④\">associated document</a> is not <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active\" id=\"ref-for-fully-active④\">fully active</a>, return 0.</p>"
         },
         {
-          "html": "<p>Otherwise, return the offset of the top edge of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visual-viewport\" id=\"ref-for-visual-viewport⑨\">visual viewport</a> from the top edge\nof the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#initial-containing-block\" id=\"ref-for-initial-containing-block②⑨\">initial containing block</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#layout-viewport\" id=\"ref-for-layout-viewport⑥\">layout viewport</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">document</a>.</p>"
+          "html": "<p>Otherwise, return the offset of the top edge of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visual-viewport\" id=\"ref-for-visual-viewport⑨\">visual viewport</a> from the top edge\nof the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-display-4/#initial-containing-block\" id=\"ref-for-initial-containing-block③⓪\">initial containing block</a> of the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#layout-viewport\" id=\"ref-for-layout-viewport⑧\">layout viewport</a>’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-document\" id=\"ref-for-concept-document②\">document</a>.</p>"
         }
       ]
     },
@@ -1872,7 +2115,7 @@
     {
       "name": "Document/run the resize steps",
       "href": "https://drafts.csswg.org/cssom-view-1/#document-run-the-resize-steps",
-      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"document-run-the-resize-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run the resize steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①③\">Document</a></code> <var>doc</var>, run these steps:",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"document-run-the-resize-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run the resize steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑨\">Document</a></code> <var>doc</var>, run these steps:",
       "rationale": "if",
       "steps": [
         {
@@ -1888,7 +2131,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>doc</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/#viewport%E2%91%A0\" id=\"ref-for-viewport%E2%91%A0⑨③\">viewport’s</a> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑤\">Document</a></code>.</p>"
+          "html": "<p>Let <var>doc</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/#viewport%E2%91%A0\" id=\"ref-for-viewport%E2%91%A0⑨③\">viewport’s</a> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②①\">Document</a></code>.</p>"
         },
         {
           "html": "<p>If <var>doc</var> is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-container\" id=\"ref-for-scroll-snap-container①\">snap container</a>,\nrun the steps to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-update-scrollsnapchanging-targets\" id=\"ref-for-document-update-scrollsnapchanging-targets\">update scrollsnapchanging targets</a>\nfor <var>doc</var> with <var>doc</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#eventual-snap-target\" id=\"ref-for-eventual-snap-target\">eventual snap target</a> in the block axis\nas newBlockTarget and <var>doc</var>’s <span id=\"ref-for-eventual-snap-target①\">eventual snap target</span> in the inline axis\nas newInlineTarget.</p>"
@@ -1906,7 +2149,7 @@
       "rationale": "let",
       "steps": [
         {
-          "html": "<p>Let <var>doc</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①①\">node document</a>.</p>"
+          "html": "<p>Let <var>doc</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①④\">node document</a>.</p>"
         },
         {
           "html": "<p>If the element is a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-container\" id=\"ref-for-scroll-snap-container②\">snap container</a>,\nrun the steps to <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-update-scrollsnapchanging-targets\" id=\"ref-for-document-update-scrollsnapchanging-targets①\">update scrollsnapchanging targets</a>\nfor the element with the element’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#eventual-snap-target\" id=\"ref-for-eventual-snap-target②\">eventual snap target</a> in the block axis\nas newBlockTarget and the element’s <span id=\"ref-for-eventual-snap-target③\">eventual snap target</span> in the inline axis\nas newInlineTarget.</p>"
@@ -1940,7 +2183,7 @@
     {
       "name": "Document/run the scroll steps",
       "href": "https://drafts.csswg.org/cssom-view-1/#document-run-the-scroll-steps",
-      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"document-run-the-scroll-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run the scroll steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑥\">Document</a></code> <var>doc</var>, run these steps:",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"Document\" data-dfn-type=\"dfn\" data-export=\"\" id=\"document-run-the-scroll-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run the scroll steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②②\">Document</a></code> <var>doc</var>, run these steps:",
       "rationale": "for",
       "steps": [
         {
@@ -1948,7 +2191,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>box</var> belongs to a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/#viewport%E2%91%A0\" id=\"ref-for-viewport%E2%91%A0⑨④\">viewport</a>, let <var>doc</var> be the <span id=\"ref-for-viewport%E2%91%A0⑨⑤\">viewport’s</span> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑦\">Document</a></code> and <var>target</var> be the <span id=\"ref-for-viewport%E2%91%A0⑨⑥\">viewport</span>.\nIf <var>box</var> belongs to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport\" id=\"ref-for-visualviewport⑨\">VisualViewport</a></code>, let <var>doc</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport\" id=\"ref-for-visualviewport①⓪\">VisualViewport</a></code>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport-associated-document\" id=\"ref-for-visualviewport-associated-document⑨\">associated document</a> and <var>target</var>\nbe the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport\" id=\"ref-for-visualviewport①①\">VisualViewport</a></code>. Otherwise, <var>box</var> belongs to an element and let <var>doc</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①②\">node document</a> and <var>target</var> be the element.</p>"
+              "html": "<p>If <var>box</var> belongs to a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css2/#viewport%E2%91%A0\" id=\"ref-for-viewport%E2%91%A0⑨④\">viewport</a>, let <var>doc</var> be the <span id=\"ref-for-viewport%E2%91%A0⑨⑤\">viewport’s</span> associated <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②③\">Document</a></code> and <var>target</var> be the <span id=\"ref-for-viewport%E2%91%A0⑨⑥\">viewport</span>.\nIf <var>box</var> belongs to a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport\" id=\"ref-for-visualviewport⑨\">VisualViewport</a></code>, let <var>doc</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport\" id=\"ref-for-visualviewport①⓪\">VisualViewport</a></code>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport-associated-document\" id=\"ref-for-visualviewport-associated-document⑨\">associated document</a> and <var>target</var>\nbe the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://drafts.csswg.org/cssom-view-1/#visualviewport\" id=\"ref-for-visualviewport①①\">VisualViewport</a></code>. Otherwise, <var>box</var> belongs to an element and let <var>doc</var> be the element’s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-concept-node-document①⑤\">node document</a> and <var>target</var> be the element.</p>"
             },
             {
               "html": "<p>If <var>box</var> belongs to a <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-1/#scroll-snap-container\" id=\"ref-for-scroll-snap-container③\">snap container</a>, <var>snapcontainer</var>,\nrun the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-scroll-snap-2/#document-update-scrollsnapchange-targets\" id=\"ref-for-document-update-scrollsnapchange-targets\">update scrollsnapchange targets</a> steps for <var>snapcontainer</var>.</p>"
@@ -1966,7 +2209,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>target</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①⑧\">Document</a></code>, and <var>type</var> is <code>\"scroll\"</code> or <code>\"scrollend\"</code>,\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">fire an event</a> named <var>type</var> that bubbles at <var>target</var>.</p>"
+              "html": "<p>If <var>target</var> is a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②④\">Document</a></code>, and <var>type</var> is <code>\"scroll\"</code> or <code>\"scrollend\"</code>,\n<a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\" id=\"ref-for-concept-event-fire③\">fire an event</a> named <var>type</var> that bubbles at <var>target</var>.</p>"
             },
             {
               "html": "Otherwise, if <var>type</var> is <code>\"scrollsnapchange\"</code>, then:",
@@ -2029,7 +2272,7 @@
     {
       "name": "run snapshot post-layout state steps",
       "href": "https://drafts.csswg.org/cssom-view-1/#run-snapshot-post-layout-state-steps",
-      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"run-snapshot-post-layout-state-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run snapshot post-layout state steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②③\">Document</a></code> <var>doc</var>, run these steps:",
+      "html": "When asked to <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"run-snapshot-post-layout-state-steps\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">run snapshot post-layout state steps</dfn> for a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document②⑨\">Document</a></code> <var>doc</var>, run these steps:",
       "rationale": "for",
       "steps": [
         {
