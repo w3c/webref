@@ -1361,6 +1361,743 @@
       ]
     },
     {
+      "html": "This algorithm takes maps <code>state</code>, <code>termInfo</code>, and a\nstring <code>valueToEncode</code>, and returns an encoder object or\n<code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>valueToEncode</code> is not a string, throw an\n<code>ERR_UNSUPPORTED_JSON_TYPE</code> error."
+        },
+        {
+          "html": "Set <code>termId</code> to the result of looking up\n<code>valueToEncode</code> in <code>state.termToId</code>."
+        },
+        {
+          "html": "If <code>termId</code> is an integer, return an encoder that, when\ninvoked via <a href=\"https://www.w3.org/TR/cbor-ld-10/#encode-url\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.3 </bdi>Encode URL</a>, encodes <code>termId</code> as\na Major Type 0 (unsigned integer) CBOR item."
+        },
+        {
+          "html": "Attempt to parse the URI scheme from <code>valueToEncode</code>.\nIf parsing fails (the value is not a valid URI), return\n<code>undefined</code>."
+        },
+        {
+          "html": "Set <code>scheme</code> to the longest matching prefix of\n<code>valueToEncode</code> that appears in the <a href=\"https://www.w3.org/TR/cbor-ld-10/#dfn-url-scheme-table\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-url-scheme-table-1\">URL Scheme Table</a>."
+        },
+        {
+          "html": "If <code>scheme</code> starts with <code>\"https\"</code> or\n<code>\"http\"</code>, return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-http-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.6.1 </bdi>Create HTTP URL Encoder</a> passing\n<code>valueToEncode</code> and <code>scheme</code>."
+        },
+        {
+          "html": "If <code>scheme</code> is <code>\"urn:uuid\"</code>, return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-uuid-urn-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.7.1 </bdi>Create UUID URN Encoder</a> passing\n<code>valueToEncode</code>."
+        },
+        {
+          "html": "If <code>scheme</code> is <code>\"data\"</code>, return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-data-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.8.1 </bdi>Create Data URL Encoder</a> passing\n<code>valueToEncode</code>."
+        },
+        {
+          "html": "If <code>scheme</code> is <code>\"did:v1:nym\"</code> or\n<code>\"did:key\"</code>, return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-base58-did-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.9.1 </bdi>Create Base58 DID URL Encoder</a> passing\n<code>valueToEncode</code> and <code>scheme</code>."
+        },
+        {
+          "html": "Return <code>undefined</code> (no compression possible for this URI)."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes an encoder object produced by\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.2 </bdi>Create URL Encoder</a>, and returns CBOR binary data.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the encoder was created for a term-ID match (step 3 of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.2 </bdi>Create URL Encoder</a>), return a CBOR encoding of\n<code>termId</code> as a Major Type 0 (unsigned integer) object."
+        },
+        {
+          "html": "Otherwise, invoke the <code>encode</code> method of the appropriate\nURI-scheme sub-encoder and return the resulting CBOR binary data."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes maps <code>state</code>, <code>termInfo</code>, and a\nvalue <code>valueToDecode</code>, and returns a decoder object or\n<code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>valueToDecode</code> is a string, return <code>undefined</code>\n(value is already an uncompressed URL string; pass through)."
+        },
+        {
+          "html": "If <code>valueToDecode</code> is an array:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>schemeId</code> to the first element of\n<code>valueToDecode</code>."
+            },
+            {
+              "html": "Set <code>scheme</code> to the value of <code>schemeId</code> in the\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#dfn-url-scheme-reverse-table\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-url-scheme-reverse-table-1\">URL Scheme Reverse Table</a>."
+            },
+            {
+              "html": "If <code>scheme</code> is <code>\"http://\"</code> or\n<code>\"https://\"</code>, return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-http-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.6.3 </bdi>Create HTTP URL Decoder</a> passing\n<code>valueToDecode</code>."
+            },
+            {
+              "html": "If <code>scheme</code> is <code>\"urn:uuid:\"</code>, return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-uuid-urn-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.7.3 </bdi>Create UUID URN Decoder</a> passing\n<code>valueToDecode</code>."
+            },
+            {
+              "html": "If <code>scheme</code> is <code>\"data:\"</code>, return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-data-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.8.3 </bdi>Create Data URL Decoder</a> passing\n<code>valueToDecode</code>."
+            },
+            {
+              "html": "If <code>scheme</code> is <code>\"did:v1:nym:\"</code> or\n<code>\"did:key:\"</code>, return the result of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-base58-did-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.9.4 </bdi>Create Base58 DID URL Decoder</a> passing\n<code>valueToDecode</code>."
+            },
+            {
+              "html": "Otherwise, throw an <code>ERR_UNKNOWN_COMPRESSED_VALUE</code> error."
+            }
+          ]
+        },
+        {
+          "html": "If <code>valueToDecode</code> is an integer, set <code>term</code> to the\nresult of looking up <code>valueToDecode</code> in\n<code>state.idToTerm</code> and return a decoder whose\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#decode-url\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.5 </bdi>Decode URL</a> invocation returns <code>term</code>."
+        },
+        {
+          "html": "Return <code>undefined</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a decoder object produced by\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.4 </bdi>Create URL Decoder</a>, and returns a string value.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If the decoder was created for an integer term-ID value (step 3 of\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.4 </bdi>Create URL Decoder</a>), return the associated\n<code>term</code> string."
+        },
+        {
+          "html": "Otherwise, invoke the <code>decode</code> method of the appropriate\nURI-scheme sub-decoder and return the resulting string."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a string <code>value</code> and a string\n<code>scheme</code> (either <code>\"https://\"</code> or\n<code>\"http://\"</code>), and returns an encoder object or\n<code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>value</code> starts with <code>\"https://\"</code>, set\n<code>scheme</code> to <code>\"https://\"</code>."
+        },
+        {
+          "html": "Otherwise, if <code>value</code> starts with <code>\"http://\"</code>, set\n<code>scheme</code> to <code>\"http://\"</code>."
+        },
+        {
+          "html": "Otherwise, return <code>undefined</code>."
+        },
+        {
+          "html": "Return an encoder object containing <code>value</code> and\n<code>scheme</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-http-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.6.1 </bdi>Create HTTP URL Encoder</a>, and returns CBOR binary data.",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set <code>schemeId</code> to the value of <code>encoderData.scheme</code>\nin the <a href=\"https://www.w3.org/TR/cbor-ld-10/#dfn-url-scheme-table\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-url-scheme-table-3\">URL Scheme Table</a>."
+        },
+        {
+          "html": "Set <code>rest</code> to the substring of <code>encoderData.value</code>\nbeginning after <code>encoderData.scheme</code>."
+        },
+        {
+          "html": "Return a CBOR encoding of a two-element array\n<code>[schemeId, rest]</code>: Major Type 4 (array) containing a\nMajor Type 0 (unsigned integer) item followed by a Major Type 3\n(text string) item."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a CBOR array <code>valueToDecode</code>, and\nreturns a decoder object or <code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>valueToDecode</code> has exactly two elements and the second\nelement is a text string:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>scheme</code> to the value of <code>valueToDecode[0]</code>\nin the <a href=\"https://www.w3.org/TR/cbor-ld-10/#dfn-url-scheme-reverse-table\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-url-scheme-reverse-table-2\">URL Scheme Reverse Table</a>."
+            },
+            {
+              "html": "Return a decoder object containing <code>scheme</code>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, return <code>undefined</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a decoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-http-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.6.3 </bdi>Create HTTP URL Decoder</a> and a CBOR array\n<code>valueToDecode</code>, and returns a string.",
+      "rationale": "return",
+      "steps": [
+        {
+          "html": "Return the concatenation of <code>decoderData.scheme</code> and\n<code>valueToDecode[1]</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a string <code>value</code>, and returns an encoder\nobject or <code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>value</code> does not start with <code>\"urn:uuid:\"</code>,\nreturn <code>undefined</code>."
+        },
+        {
+          "html": "Return an encoder object containing <code>value</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes an encoder object, and returns CBOR binary data.",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set <code>schemeId</code> to <code>3</code> (the entry for\n<code>\"urn:uuid:\"</code> in the <a href=\"https://www.w3.org/TR/cbor-ld-10/#dfn-url-scheme-table\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-url-scheme-table-4\">URL Scheme Table</a>)."
+        },
+        {
+          "html": "Set <code>rest</code> to the substring of <code>encoderData.value</code>\nbeginning after <code>\"urn:uuid:\"</code>."
+        },
+        {
+          "html": "If <code>rest</code> is entirely lowercase:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>uuidBytes</code> to the 16-byte binary representation of the\nUUID obtained by parsing <code>rest</code> according to\n[<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/cbor-ld-10/#bib-rfc4122\" title=\"A Universally Unique IDentifier (UUID) URN Namespace\">RFC4122</a></cite>]."
+            },
+            {
+              "html": "Return a CBOR encoding of a two-element array\n<code>[3, uuidBytes]</code>: Major Type 4 (array) containing a\nMajor Type 0 (unsigned integer) item followed by a Major Type 2\n(byte string) item of length 16."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, return a CBOR encoding of a two-element array\n<code>[3, rest]</code>: Major Type 4 (array) containing a\nMajor Type 0 (unsigned integer) item followed by a Major Type 3\n(text string) item."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a CBOR array <code>valueToDecode</code>, and returns\na decoder object or <code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>valueToDecode</code> has exactly two elements, and the second\nelement is either a byte string or a text string, return a decoder object."
+        },
+        {
+          "html": "Otherwise, return <code>undefined</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a decoder object and a CBOR array\n<code>valueToDecode</code>, and returns a string.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>valueToDecode[1]</code> is a text string, set <code>uuid</code>\nto <code>valueToDecode[1]</code>."
+        },
+        {
+          "html": "Otherwise, set <code>uuid</code> to the UUID string representation of the\n16-byte binary value <code>valueToDecode[1]</code> per [<cite><a class=\"bibref\" data-link-type=\"biblio\" href=\"https://www.w3.org/TR/cbor-ld-10/#bib-rfc4122\" title=\"A Universally Unique IDentifier (UUID) URN Namespace\">RFC4122</a></cite>]\n(lowercase, hyphen-delimited form)."
+        },
+        {
+          "html": "Return the concatenation of <code>\"urn:uuid:\"</code> and\n<code>uuid</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a string <code>value</code>, and returns an encoder\nobject or <code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>value</code> does not start with <code>\"data:\"</code>, return\n<code>undefined</code>."
+        },
+        {
+          "html": "Attempt to match <code>value</code> against the pattern\n<code>data:(?&lt;mediatype&gt;.*);base64,(?&lt;data&gt;.*)</code>."
+        },
+        {
+          "html": "If the match succeeds:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>data</code> to the value of the <code>data</code> capture\ngroup."
+            },
+            {
+              "html": "Verify round-trip integrity: decode <code>data</code> from base64 and\nre-encode to base64. If the result equals <code>data</code>, return an\nencoder object with <code>value</code> and <code>base64</code> set to\n<code>true</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return an encoder object with <code>value</code> and <code>base64</code>\nset to <code>false</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-data-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.8.1 </bdi>Create Data URL Encoder</a>, and returns CBOR binary data.",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set <code>schemeId</code> to <code>4</code> (the entry for\n<code>\"data:\"</code> in the <a href=\"https://www.w3.org/TR/cbor-ld-10/#dfn-url-scheme-table\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-url-scheme-table-5\">URL Scheme Table</a>)."
+        },
+        {
+          "html": "If <code>encoderData.base64</code> is <code>true</code>:",
+          "rationale": "parse",
+          "steps": [
+            {
+              "html": "Parse <code>encoderData.value</code> to extract <code>mediatype</code>\n(the substring between <code>\"data:\"</code> and <code>\";base64,\"</code>)\nand <code>dataBytes</code> (the binary decoding of the base64 data\nportion)."
+            },
+            {
+              "html": "Return a CBOR encoding of a three-element array\n<code>[schemeId, mediatype, dataBytes]</code>: Major Type 4 (array)\ncontaining a Major Type 0 integer, a Major Type 3 text string, and a\nMajor Type 2 byte string."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>rest</code> to the substring of <code>encoderData.value</code>\nbeginning after <code>\"data:\"</code>."
+            },
+            {
+              "html": "Return a CBOR encoding of a two-element array\n<code>[schemeId, rest]</code>: Major Type 4 (array) containing a\nMajor Type 0 integer and a Major Type 3 text string."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a CBOR array <code>valueToDecode</code>, and returns\na decoder object or <code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>valueToDecode</code> has exactly three elements, the second\nelement is a text string, and the third element is a byte string, return\na decoder object (base64 mode)."
+        },
+        {
+          "html": "Otherwise, if <code>valueToDecode</code> has exactly two elements and\nthe second element is a text string, return a decoder object\n(non-base64 mode)."
+        },
+        {
+          "html": "Otherwise, return <code>undefined</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a decoder object and a CBOR array\n<code>valueToDecode</code>, and returns a string.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>valueToDecode</code> has three elements (base64 mode):",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>mediatype</code> to <code>valueToDecode[1]</code>."
+            },
+            {
+              "html": "Set <code>encodedData</code> to the base64 encoding of the byte string\n<code>valueToDecode[2]</code>."
+            },
+            {
+              "html": "Return the concatenation of <code>\"data:\"</code>,\n<code>mediatype</code>, <code>\";base64,\"</code>, and\n<code>encodedData</code>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise (non-base64 mode), return the concatenation of\n<code>\"data:\"</code> and <code>valueToDecode[1]</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a string <code>value</code> and a string\n<code>scheme</code>, and returns an encoder object or\n<code>undefined</code>.",
+      "rationale": "for",
+      "steps": [
+        {
+          "html": "For each <code>[scheme, schemeId]</code> pair in the\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#dfn-url-scheme-table\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-url-scheme-table-6\">URL Scheme Table</a> where the scheme starts with\n<code>\"did:\"</code>:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <code>value</code> starts with <code>scheme</code>, return an encoder\nobject containing <code>value</code>, <code>scheme</code>, and\n<code>schemeId</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>undefined</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-base58-did-url-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.9.1 </bdi>Create Base58 DID URL Encoder</a>, and returns CBOR binary\ndata.",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set <code>suffix</code> to the substring of <code>encoderData.value</code>\nbeginning after <code>encoderData.scheme</code>."
+        },
+        {
+          "html": "Split <code>suffix</code> on the first occurrence of <code>'#'</code>\nto produce <code>authority</code> and, if present,\n<code>fragment</code>."
+        },
+        {
+          "html": "Set <code>authorityEncoded</code> to the result of applying the\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#dfn-multibase-base58-to-cbor-token\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-multibase-base58-to-cbor-token-1\">Multibase Base58 to CBOR Token</a> algorithm to\n<code>authority</code>."
+        },
+        {
+          "html": "Initialize <code>entries</code> to\n<code>[encoderData.schemeId, authorityEncoded]</code>."
+        },
+        {
+          "html": "If <code>fragment</code> is defined:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>fragmentEncoded</code> to the result of applying the\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#dfn-multibase-base58-to-cbor-token\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-multibase-base58-to-cbor-token-2\">Multibase Base58 to CBOR Token</a> algorithm to\n<code>fragment</code>."
+            },
+            {
+              "html": "Append <code>fragmentEncoded</code> to <code>entries</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return a CBOR encoding of <code>entries</code> as a Major Type 4\n(array)."
+        }
+      ]
+    },
+    {
+      "name": "Multibase Base58 to CBOR Token",
+      "href": "https://www.w3.org/TR/cbor-ld-10/#dfn-multibase-base58-to-cbor-token",
+      "html": "The <dfn id=\"dfn-multibase-base58-to-cbor-token\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">Multibase Base58 to CBOR Token</dfn> algorithm takes a string\n<code>str</code> and returns either a Major Type 2 (byte string) CBOR\ntoken (if the value is a base58btc multibase string) or a Major Type 3\n(text string) CBOR token.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>str</code> starts with <code>'z'</code>:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>decoded</code> to the result of decoding the base58btc content\nof <code>str</code> (i.e. <code>str[1:]</code>)."
+            },
+            {
+              "html": "If decoding succeeds, return a Major Type 2 (byte string) CBOR token\nfor <code>decoded</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return a Major Type 3 (text string) CBOR token for <code>str</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a CBOR array <code>valueToDecode</code>, and returns\na decoder object or <code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>valueToDecode</code> has exactly two or three elements:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>prefix</code> to the value of <code>valueToDecode[0]</code>\nin the <a href=\"https://www.w3.org/TR/cbor-ld-10/#dfn-url-scheme-reverse-table\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-url-scheme-reverse-table-3\">URL Scheme Reverse Table</a>."
+            },
+            {
+              "html": "Return a decoder object containing <code>prefix</code>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, return <code>undefined</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a decoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-base58-did-url-decoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.3.9.4 </bdi>Create Base58 DID URL Decoder</a> and a CBOR array\n<code>valueToDecode</code>, and returns a string.",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set <code>url</code> to <code>decoderData.prefix</code>."
+        },
+        {
+          "html": "If <code>valueToDecode[1]</code> is a byte string, append\n<code>'z'</code> followed by the base58btc encoding of\n<code>valueToDecode[1]</code> to <code>url</code>."
+        },
+        {
+          "html": "Otherwise, append <code>valueToDecode[1]</code> to <code>url</code>."
+        },
+        {
+          "html": "If <code>valueToDecode</code> has more than two elements:",
+          "rationale": "if",
+          "steps": [
+            {
+              "html": "If <code>valueToDecode[2]</code> is a byte string, append\n<code>\"#z\"</code> followed by the base58btc encoding of\n<code>valueToDecode[2]</code> to <code>url</code>."
+            },
+            {
+              "html": "Otherwise, append <code>\"#\"</code> followed by\n<code>valueToDecode[2]</code> to <code>url</code>."
+            }
+          ]
+        },
+        {
+          "html": "Return <code>url</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a string <code>value</code>, and returns an encoder\nobject or <code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>value</code> contains the character <code>'T'</code> (indicating\na time component), return <code>undefined</code> (this value is\ncompressed instead by the <a href=\"https://www.w3.org/TR/cbor-ld-10/#xsd-datetime-codec\">XSD DateTime\nCodec</a>)."
+        },
+        {
+          "html": "Set <code>parsed</code> to the result of parsing <code>value</code> as\nan ISO 8601 date string, expressed as the number of milliseconds since\nthe Unix epoch."
+        },
+        {
+          "html": "If <code>parsed</code> is not a valid number, return\n<code>undefined</code>."
+        },
+        {
+          "html": "Return an encoder object containing <code>value</code> and\n<code>parsed</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-xsd-date-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.4.1 </bdi>Create XSD Date Encoder</a>, and returns CBOR binary data.",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set <code>secondsSinceEpoch</code> to\n<code>floor(encoderData.parsed / 1000)</code>."
+        },
+        {
+          "html": "Set <code>reconstituted</code> to the ISO 8601 string for the instant\n<code>secondsSinceEpoch × 1000</code> milliseconds since the Unix\nepoch."
+        },
+        {
+          "html": "Set <code>expectedDate</code> to the substring of\n<code>reconstituted</code> preceding the first occurrence of\n<code>'T'</code>."
+        },
+        {
+          "html": "If <code>encoderData.value</code> is not equal to\n<code>expectedDate</code>, the compression would be lossy. Return a CBOR\nencoding of <code>encoderData.value</code> as a Major Type 3 (text\nstring) object."
+        },
+        {
+          "html": "If <code>secondsSinceEpoch</code> is greater than or equal to\n<code>0</code>, return a CBOR encoding of\n<code>secondsSinceEpoch</code> as a Major Type 0 (unsigned integer)\nobject."
+        },
+        {
+          "html": "Otherwise, return a CBOR encoding of <code>secondsSinceEpoch</code>\nas a Major Type 1 (negative integer) object."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a value <code>valueToDecode</code>, and returns a\ndecoder object or <code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>valueToDecode</code> is an integer (positive, negative, or\nzero), return a decoder object."
+        },
+        {
+          "html": "Otherwise, return <code>undefined</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a decoder object and an integer value\n<code>value</code>, and returns a string.",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set <code>dateString</code> to the ISO 8601 string for the instant\n<code>value * 1000</code> milliseconds since the Unix epoch."
+        },
+        {
+          "html": "Return the substring of <code>dateString</code> preceding the first\noccurrence of <code>'T'</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a string <code>value</code>, and returns an encoder\nobject or <code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>value</code> does not contain the character <code>'T'</code>,\nreturn <code>undefined</code> (this value is compressed instead by the\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#xsd-date-codec\">XSD Date Codec</a>)."
+        },
+        {
+          "html": "Set <code>parsed</code> to the result of parsing <code>value</code> as an\nISO 8601 datetime string, expressed as the number of milliseconds since\nthe Unix epoch."
+        },
+        {
+          "html": "If <code>parsed</code> is not a valid number, return\n<code>undefined</code>."
+        },
+        {
+          "html": "Return an encoder object containing <code>value</code> and\n<code>parsed</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-xsd-datetime-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.5.1 </bdi>Create XSD DateTime Encoder</a>, and returns CBOR binary\ndata.",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set <code>secondsSinceEpoch</code> to\n<code>floor(encoderData.parsed / 1000)</code>."
+        },
+        {
+          "html": "If <code>encoderData.value</code> does not contain the character\n<code>'.'</code> (no millisecond component):",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>expectedDate</code> to the ISO 8601 string for the instant\n<code>secondsSinceEpoch * 1000</code> milliseconds since the Unix\nepoch, with the substring <code>\".000Z\"</code> replaced by\n<code>\"Z\"</code>."
+            },
+            {
+              "html": "If <code>encoderData.value</code> is not equal to\n<code>expectedDate</code>, the compression would be lossy. Return a\nCBOR encoding of <code>encoderData.value</code> as a Major Type 3\n(text string) object."
+            },
+            {
+              "html": "If <code>secondsSinceEpoch</code> is greater than or equal to\n<code>0</code>, return a CBOR encoding of\n<code>secondsSinceEpoch</code> as a Major Type 0 (unsigned integer)\nobject."
+            },
+            {
+              "html": "Otherwise, return a CBOR encoding of <code>secondsSinceEpoch</code> as\na Major Type 1 (negative integer) object."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise (millisecond component is present):",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>millisecondIndex</code> to the index of the first\n<code>'.'</code> in <code>encoderData.value</code>."
+            },
+            {
+              "html": "Set <code>milliseconds</code> to the integer value of the digits of\n<code>encoderData.value</code> beginning at position\n<code>millisecondIndex + 1</code>."
+            },
+            {
+              "html": "Set <code>expectedDate</code> to the ISO 8601 string for the instant\n<code>secondsSinceEpoch * 1000 + milliseconds</code> milliseconds\nsince the Unix epoch."
+            },
+            {
+              "html": "If <code>encoderData.value</code> is not equal to\n<code>expectedDate</code>, the compression would be lossy. Return a\nCBOR encoding of <code>encoderData.value</code> as a Major Type 3\n(text string) object."
+            },
+            {
+              "html": "Return a CBOR encoding of the two-element array\n<code>[secondsSinceEpoch, milliseconds]</code>: Major Type 4 (array)\ncontaining two Major Type 0 (unsigned integer) items."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a value <code>valueToDecode</code>, and returns a\ndecoder object or <code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>valueToDecode</code> is an integer, return a decoder object."
+        },
+        {
+          "html": "If <code>valueToDecode</code> is an array of exactly two elements where\nboth elements are numbers, return a decoder object."
+        },
+        {
+          "html": "Otherwise, return <code>undefined</code>."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a decoder object and a value <code>value</code>\n(either an integer or a two-element array of integers), and returns a\nstring.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>value</code> is an integer:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>instantMs</code> to <code>value * 1000</code>."
+            },
+            {
+              "html": "Set <code>dateString</code> to the ISO 8601 string for the instant\n<code>instantMs</code> milliseconds since the Unix epoch."
+            },
+            {
+              "html": "Return <code>dateString</code> with the substring <code>\".000Z\"</code>\nreplaced by <code>\"Z\"</code>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise (<code>value</code> is a two-element array):",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <code>instantMs</code> to\n<code>value[0] * 1000 + value[1]</code>."
+            },
+            {
+              "html": "Return <code>instantMs</code>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a value <code>value</code>, and returns an encoder\nobject or <code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>value</code> is not a string, return <code>undefined</code>."
+        },
+        {
+          "html": "If the first character of <code>value</code> is <code>'z'</code>,\n<code>'u'</code>, or <code>'M'</code>, return an encoder object\ncontaining <code>value</code>."
+        },
+        {
+          "html": "Otherwise, return <code>undefined</code> (unsupported multibase\nencoding)."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes an encoder object from\n<a href=\"https://www.w3.org/TR/cbor-ld-10/#create-multibase-encoder\" class=\"sec-ref\"><bdi class=\"secno\">5.5.6.1 </bdi>Create Multibase Encoder</a>, and returns CBOR binary data.",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set <code>prefixChar</code> to the first character of\n<code>encoderData.value</code>."
+        },
+        {
+          "html": "Set <code>prefixByte</code> to the <a href=\"https://www.w3.org/TR/cbor-ld-10/#dfn-multibase-prefix-byte\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-multibase-prefix-byte-2\">Multibase Prefix Byte</a>\ncorresponding to <code>prefixChar</code>."
+        },
+        {
+          "html": "Set <code>content</code> to the substring of\n<code>encoderData.value</code> beginning after the first character."
+        },
+        {
+          "html": "If <code>prefixChar</code> is <code>'z'</code>, set\n<code>suffixBytes</code> to the base58btc decoding of\n<code>content</code>."
+        },
+        {
+          "html": "Otherwise, if <code>prefixChar</code> is <code>'u'</code>, set\n<code>suffixBytes</code> to the base64url decoding of\n<code>content</code>."
+        },
+        {
+          "html": "Otherwise (<code>prefixChar</code> is <code>'M'</code>), set\n<code>suffixBytes</code> to the base64pad decoding of\n<code>content</code>."
+        },
+        {
+          "html": "Set <code>bytes</code> to a byte array of length\n<code>1 + length(suffixBytes)</code>, with the first byte set to\n<code>prefixByte</code> and the remaining bytes set to\n<code>suffixBytes</code>."
+        },
+        {
+          "html": "Return a CBOR encoding of <code>bytes</code> as a Major Type 2 (byte\nstring) object."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a value <code>valueToDecode</code>, and returns a\ndecoder object or <code>undefined</code>.",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "If <code>valueToDecode</code> is not a byte string, return\n<code>undefined</code>."
+        },
+        {
+          "html": "If the first byte of <code>valueToDecode</code> is <code>0x7a</code>,\n<code>0x75</code>, or <code>0x4d</code>, return a decoder object."
+        },
+        {
+          "html": "Otherwise, return <code>undefined</code> (unsupported multibase\nprefix byte)."
+        }
+      ]
+    },
+    {
+      "html": "This algorithm takes a decoder object and a byte string\n<code>value</code>, and returns a string.",
+      "rationale": "set",
+      "steps": [
+        {
+          "html": "Set <code>prefixByte</code> to the first byte of <code>value</code>."
+        },
+        {
+          "html": "Set <code>suffix</code> to the remaining bytes of <code>value</code>\n(i.e., all bytes after the first)."
+        },
+        {
+          "html": "If <code>prefixByte</code> is <code>0x7a</code> (<code>'z'</code>):",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "Return the concatenation of <code>\"z\"</code> and the base58btc encoding\nof <code>suffix</code>."
+            }
+          ]
+        },
+        {
+          "html": "If <code>prefixByte</code> is <code>0x75</code> (<code>'u'</code>):",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "Return the concatenation of <code>\"u\"</code> and the base64url encoding\n(no padding) of <code>suffix</code>."
+            }
+          ]
+        },
+        {
+          "html": "If <code>prefixByte</code> is <code>0x4d</code> (<code>'M'</code>):",
+          "rationale": "return",
+          "steps": [
+            {
+              "html": "Return the concatenation of <code>\"M\"</code> and the base64pad encoding\nof <code>suffix</code>."
+            }
+          ]
+        },
+        {
+          "html": "Otherwise, return <code>value</code>."
+        }
+      ]
+    },
+    {
       "rationale": "set",
       "steps": [
         {
