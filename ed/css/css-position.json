@@ -25,21 +25,21 @@
         },
         {
           "name": "relative",
-          "prose": "The box is laid out as for static, then offset from the resulting position. This offsetting is a purely visual effect, and, unless otherwise specified, does not affect the size or position of any other non-descendant box except insofar as it increases the scrollable overflow area of its ancestors. This positioning scheme is called relative positioning.",
+          "prose": "The box is laid out as for static, then offset from the resulting position with the inset properties. This offsetting is a purely visual effect, and, unless otherwise specified, does not affect the size or position of any other non-descendant box except insofar as it increases the scrollable overflow area of its ancestors. This positioning scheme is called relative positioning. See § 3.3 Relative Positioning for more details.",
           "href": "https://drafts.csswg.org/css-position-3/#valdef-position-relative",
           "type": "value",
           "value": "relative"
         },
         {
           "name": "sticky",
-          "prose": "Identical to relative, except that its offsets are automatically adjusted in reference to the nearest ancestor scroll container’s scrollport (as modified by the inset properties) in whichever axes the inset properties are not both auto, to try to keep the box in view within its containing block as the user scrolls. This positioning scheme is called sticky positioning.",
+          "prose": "Same as relative, except the offsets are calculated automatically to keep the element in view as the user scrolls. This positioning scheme is called sticky positioning. See § 3.4 Sticky positioning for more details.",
           "href": "https://drafts.csswg.org/css-position-3/#valdef-position-sticky",
           "type": "value",
           "value": "sticky"
         },
         {
           "name": "absolute",
-          "prose": "The box is taken out of flow such that it has no impact on the size or position of its siblings and ancestors, and does not participate in its parent’s formatting context. Instead, the box is positioned and sized solely in reference to its absolute positioning containing block, as modified by the box’s inset properties, see § 4 Absolute Positioning Layout Model. It can overlap in-flow content or other absolutely positioned elements, and is included in the scrollable overflow area of the box that generates is containing block. This positioning scheme is called absolute positioning.",
+          "prose": "The box is taken out of flow such that it has no impact on the size or position of its siblings and ancestors, and does not participate in its parent’s formatting context. Instead, the box is positioned and sized solely in reference to its absolute positioning containing block, as modified by the box’s inset properties, see § 4 Absolute Positioning Layout Model and § 3.5 Absolute (and Fixed) Positioning. It can overlap in-flow content or other absolutely positioned elements, and is included in the scrollable overflow area of the box that generates is containing block. This positioning scheme is called absolute positioning.",
           "href": "https://drafts.csswg.org/css-position-3/#valdef-position-absolute",
           "type": "value",
           "value": "absolute"
