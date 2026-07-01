@@ -256,7 +256,13 @@
           "html": "<p>Let <var>domain</var> be the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain-to-ascii\" id=\"ref-for-concept-domain-to-ascii①\">domain parser</a> with <var>input</var>\n and true.\n\n </p>"
         },
         {
-          "html": "<p>Return false if <var>domain</var> is failure; otherwise true.\n</p>"
+          "html": "<p>If <var>domain</var> is failure, then return false.\n\n </p>"
+        },
+        {
+          "html": "<p>If running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ends-in-a-number-checker\" id=\"ref-for-ends-in-a-number-checker\">ends in a number checker</a> on <var>domain</var> returns true, then\n return false.\n\n </p>"
+        },
+        {
+          "html": "<p>Return true.\n</p>"
         }
       ]
     },
@@ -297,7 +303,7 @@
           "html": "<p>If <var>asciiDomain</var> is failure, then return failure.\n\n </p>"
         },
         {
-          "html": "<p>If <var>asciiDomain</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ends-in-a-number-checker\" id=\"ref-for-ends-in-a-number-checker\">ends in a number</a>, then return\n the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv4-parser\" id=\"ref-for-concept-ipv4-parser\">IPv4 parsing</a> <var>asciiDomain</var>.\n\n </p>"
+          "html": "<p>If <var>asciiDomain</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ends-in-a-number-checker\" id=\"ref-for-ends-in-a-number-checker①\">ends in a number</a>, then return\n the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv4-parser\" id=\"ref-for-concept-ipv4-parser\">IPv4 parsing</a> <var>asciiDomain</var>.\n\n </p>"
         },
         {
           "html": "<p>Return <var>asciiDomain</var>.\n</p>"
@@ -311,25 +317,19 @@
       "rationale": ".algorithm",
       "steps": [
         {
+          "html": "<p>Assert: <var>input</var> is not the empty string.\n\n </p>"
+        },
+        {
           "html": "<p>Let <var>parts</var> be the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#strictly-split\" id=\"ref-for-strictly-split①\">strictly splitting</a> <var>input</var> on\n U+002E (.).\n\n </p>"
         },
         {
-          "html": "If the last <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">item</a> in <var>parts</var> is the empty string, then:",
-          "rationale": "if",
-          "steps": [
-            {
-              "html": "<p>If <var>parts</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is 1, then return false.\n\n   </p>"
-            },
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">Remove</a> the last <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①\">item</a> from <var>parts</var>.\n  </p>"
-            }
-          ]
+          "html": "<p>If the last <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item\">item</a> in <var>parts</var> is the empty string, then\n <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove\">remove</a> the last <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item①\">item</a> from <var>parts</var>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>last</var> be the last <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item②\">item</a> in <var>parts</var>.\n\n </p>"
         },
         {
-          "html": "<p>If <var>last</var> is non-empty and contains only <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-digit\" id=\"ref-for-ascii-digit③\">ASCII digits</a>, then return true.\n\n  </p>"
+          "html": "<p>If <var>last</var> is not the empty string and contains only <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-digit\" id=\"ref-for-ascii-digit③\">ASCII digits</a>, then return\n  true.\n\n  </p>"
         },
         {
           "html": "<p>If parsing <var>last</var> as an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-number-parser\" id=\"ref-for-ipv4-number-parser\">IPv4 number</a> does not return\n  failure, then return true.\n\n  </p>"
@@ -342,7 +342,7 @@
     {
       "name": "IPv4 parser",
       "href": "https://url.spec.whatwg.org/#concept-ipv4-parser",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-ipv4-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IPv4 parser</dfn> takes an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string⑨\">ASCII string</a> <var>input</var>\nand then runs these steps. They return failure or an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv4\" id=\"ref-for-concept-ipv4①②\">IPv4 address</a>.",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-ipv4-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IPv4 parser</dfn> takes an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string⑨\">ASCII string</a> <var>input</var>\nand then runs these steps. They return failure or an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv4\" id=\"ref-for-concept-ipv4①③\">IPv4 address</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -356,12 +356,15 @@
               "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-empty-part\" id=\"ref-for-ipv4-empty-part\">IPv4-empty-part</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑦\">validation error</a>.\n\n   </p>"
             },
             {
-              "html": "<p>If <var>parts</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> is greater than 1, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">remove</a>\n   the last <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item④\">item</a> from <var>parts</var>.\n  </p>"
+              "html": "<p>If <var>parts</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size\">size</a> is greater than 1, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-remove\" id=\"ref-for-list-remove①\">remove</a>\n   the last <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item④\">item</a> from <var>parts</var>.\n  </p>"
             }
           ]
         },
         {
-          "html": "<p>If <var>parts</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a> is greater than 4, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-too-many-parts\" id=\"ref-for-ipv4-too-many-parts\">IPv4-too-many-parts</a>\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑧\">validation error</a>, return failure.\n\n </p>"
+          "html": "<p>If <var>parts</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size①\">size</a> is less than 4, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-too-few-parts\" id=\"ref-for-ipv4-too-few-parts\">IPv4-too-few-parts</a>\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑧\">validation error</a>.\n\n </p>"
+        },
+        {
+          "html": "<p>If <var>parts</var>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size②\">size</a> is greater than 4, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-too-many-parts\" id=\"ref-for-ipv4-too-many-parts\">IPv4-too-many-parts</a>\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑨\">validation error</a>, return failure.\n\n </p>"
         },
         {
           "html": "<p>Let <var>numbers</var> be an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list\" id=\"ref-for-list①\">list</a>.\n\n </p>"
@@ -374,10 +377,10 @@
               "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-number-parser\" id=\"ref-for-ipv4-number-parser①\">parsing</a>\n   <var>part</var>.\n\n   </p>"
             },
             {
-              "html": "<p>If <var>result</var> is failure, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-non-numeric-part\" id=\"ref-for-ipv4-non-numeric-part\">IPv4-non-numeric-part</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑨\">validation error</a>,\n   return failure.\n\n   </p>"
+              "html": "<p>If <var>result</var> is failure, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-non-numeric-part\" id=\"ref-for-ipv4-non-numeric-part\">IPv4-non-numeric-part</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①⓪\">validation error</a>,\n   return failure.\n\n   </p>"
             },
             {
-              "html": "<p>If <var>result</var>[1] is true, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-non-decimal-part\" id=\"ref-for-ipv4-non-decimal-part\">IPv4-non-decimal-part</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①⓪\">validation error</a>.\n\n   </p>"
+              "html": "<p>If <var>result</var>[1] is true, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-non-decimal-part\" id=\"ref-for-ipv4-non-decimal-part\">IPv4-non-decimal-part</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①①\">validation error</a>.\n\n   </p>"
             },
             {
               "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-append\" id=\"ref-for-list-append\">Append</a> <var>result</var>[0] to <var>numbers</var>.\n  </p>"
@@ -385,7 +388,7 @@
           ]
         },
         {
-          "html": "<p>If any item in <var>numbers</var> is greater than 255, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-out-of-range-part\" id=\"ref-for-ipv4-out-of-range-part\">IPv4-out-of-range-part</a>\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①①\">validation error</a>.\n\n </p>"
+          "html": "<p>If any item in <var>numbers</var> is greater than 255, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-out-of-range-part\" id=\"ref-for-ipv4-out-of-range-part\">IPv4-out-of-range-part</a>\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①②\">validation error</a>.\n\n </p>"
         },
         {
           "html": "<p>If any but the last <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-item\" id=\"ref-for-list-item⑤\">item</a> in <var>numbers</var> is greater than 255, then\n return failure.\n\n </p>"
@@ -471,7 +474,7 @@
           "html": "<p>If <var>input</var> contains a code point that is not a radix-<var>R</var> digit, then\n return failure.\n\n </p>"
         },
         {
-          "html": "<p>Let <var>output</var> be the mathematical integer value that is represented by\n <var>input</var> in radix-<var>R</var> notation, using <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit③\">ASCII hex digits</a> for digits with\n values 0 through 15.\n\n </p>"
+          "html": "<p>Let <var>output</var> be the mathematical integer value that is represented by\n <var>input</var> in radix-<var>R</var> notation, using <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit④\">ASCII hex digits</a> for digits with\n values 0 through 15.\n\n </p>"
         },
         {
           "html": "<p>Return (<var>output</var>, <var>validationError</var>).\n</p>"
@@ -481,11 +484,11 @@
     {
       "name": "IPv6 parser",
       "href": "https://url.spec.whatwg.org/#concept-ipv6-parser",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-ipv6-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IPv6 parser</dfn> takes a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑦\">scalar value string</a>\n<var>input</var> and then runs these steps. They return failure or an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①③\">IPv6 address</a>.",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-ipv6-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IPv6 parser</dfn> takes a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string⑦\">scalar value string</a>\n<var>input</var> and then runs these steps. They return failure or an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①④\">IPv6 address</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>Let <var>address</var> be a new <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①④\">IPv6 address</a> whose <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece\">pieces</a>\n are all 0.\n\n </p>"
+          "html": "<p>Let <var>address</var> be a new <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①⑤\">IPv6 address</a> whose <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece①\">pieces</a>\n are all 0.\n\n </p>"
         },
         {
           "html": "<p>Let <var>pieceIndex</var> be 0.\n\n </p>"
@@ -501,7 +504,7 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining③\">remaining</a> does not start with U+003A (:), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-invalid-compression\" id=\"ref-for-ipv6-invalid-compression\">IPv6-invalid-compression</a>\n   <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①②\">validation error</a>, return failure.\n\n   </p>"
+              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining③\">remaining</a> does not start with U+003A (:), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-invalid-compression\" id=\"ref-for-ipv6-invalid-compression\">IPv6-invalid-compression</a>\n   <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①③\">validation error</a>, return failure.\n\n   </p>"
             },
             {
               "html": "<p>Increase <var>pointer</var> by 2.\n\n   </p>"
@@ -516,14 +519,14 @@
           "rationale": "if",
           "steps": [
             {
-              "html": "<p>If <var>pieceIndex</var> is 8, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-too-many-pieces\" id=\"ref-for-ipv6-too-many-pieces\">IPv6-too-many-pieces</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①③\">validation error</a>, return\n   failure.\n\n   </p>"
+              "html": "<p>If <var>pieceIndex</var> is 8, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-too-many-pieces\" id=\"ref-for-ipv6-too-many-pieces\">IPv6-too-many-pieces</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①④\">validation error</a>, return\n   failure.\n\n   </p>"
             },
             {
               "html": "If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑦\">c</a> is U+003A (:), then:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>compress</var> is non-null, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-multiple-compression\" id=\"ref-for-ipv6-multiple-compression\">IPv6-multiple-compression</a>\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①④\">validation error</a>, return failure.\n\n     </p>"
+                  "html": "<p>If <var>compress</var> is non-null, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-multiple-compression\" id=\"ref-for-ipv6-multiple-compression\">IPv6-multiple-compression</a>\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①⑤\">validation error</a>, return failure.\n\n     </p>"
                 },
                 {
                   "html": "Increase <var>pointer</var> and <var>pieceIndex</var> by 1, set <var>compress</var> to\n     <var>pieceIndex</var>, and then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-continue\" id=\"ref-for-iteration-continue①\">continue</a>."
@@ -534,20 +537,20 @@
               "html": "<p>Let <var>value</var> and <var>length</var> be 0.\n\n   </p>"
             },
             {
-              "html": "<p>While <var>length</var> is less than 4 and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑧\">c</a> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit④\">ASCII hex digit</a>, set\n   <var>value</var> to <var>value</var> × 0x10 + <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑨\">c</a> interpreted as a hexadecimal number,\n   and increase <var>pointer</var> and <var>length</var> by 1.\n\n   </p>"
+              "html": "<p>While <var>length</var> is less than 4 and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑧\">c</a> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit⑤\">ASCII hex digit</a>, set\n   <var>value</var> to <var>value</var> × 0x10 + <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑨\">c</a> interpreted as a hexadecimal number,\n   and increase <var>pointer</var> and <var>length</var> by 1.\n\n   </p>"
             },
             {
               "html": "If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c①⓪\">c</a> is U+002E (.), then:",
               "rationale": "if",
               "steps": [
                 {
-                  "html": "<p>If <var>length</var> is 0, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-invalid-code-point\" id=\"ref-for-ipv4-in-ipv6-invalid-code-point\">IPv4-in-IPv6-invalid-code-point</a>\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①⑤\">validation error</a>, return failure.\n\n     </p>"
+                  "html": "<p>If <var>length</var> is 0, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-invalid-code-point\" id=\"ref-for-ipv4-in-ipv6-invalid-code-point\">IPv4-in-IPv6-invalid-code-point</a>\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①⑥\">validation error</a>, return failure.\n\n     </p>"
                 },
                 {
                   "html": "<p>Decrease <var>pointer</var> by <var>length</var>.\n\n     </p>"
                 },
                 {
-                  "html": "<p>If <var>pieceIndex</var> is greater than 6, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-too-many-pieces\" id=\"ref-for-ipv4-in-ipv6-too-many-pieces\">IPv4-in-IPv6-too-many-pieces</a>\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①⑥\">validation error</a>, return failure.\n\n     </p>"
+                  "html": "<p>If <var>pieceIndex</var> is greater than 6, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-too-many-pieces\" id=\"ref-for-ipv4-in-ipv6-too-many-pieces\">IPv4-in-IPv6-too-many-pieces</a>\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①⑦\">validation error</a>, return failure.\n\n     </p>"
                 },
                 {
                   "html": "<p>Let <var>numbersSeen</var> be 0.\n\n     </p>"
@@ -567,12 +570,12 @@
                           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c①②\">c</a> is a U+002E (.) and <var>numbersSeen</var> is less than 4, then increase\n         <var>pointer</var> by 1.\n\n         </p>"
                         },
                         {
-                          "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-invalid-code-point\" id=\"ref-for-ipv4-in-ipv6-invalid-code-point①\">IPv4-in-IPv6-invalid-code-point</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①⑦\">validation error</a>, return\n         failure."
+                          "html": "Otherwise, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-invalid-code-point\" id=\"ref-for-ipv4-in-ipv6-invalid-code-point①\">IPv4-in-IPv6-invalid-code-point</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①⑧\">validation error</a>, return\n         failure."
                         }
                       ]
                     },
                     {
-                      "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c①③\">c</a> is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-digit\" id=\"ref-for-ascii-digit④\">ASCII digit</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-invalid-code-point\" id=\"ref-for-ipv4-in-ipv6-invalid-code-point②\">IPv4-in-IPv6-invalid-code-point</a>\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①⑧\">validation error</a>, return failure.\n\n       </p>"
+                      "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c①③\">c</a> is not an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-digit\" id=\"ref-for-ascii-digit④\">ASCII digit</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-invalid-code-point\" id=\"ref-for-ipv4-in-ipv6-invalid-code-point②\">IPv4-in-IPv6-invalid-code-point</a>\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①⑨\">validation error</a>, return failure.\n\n       </p>"
                     },
                     {
                       "html": "While <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c①④\">c</a> is an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-digit\" id=\"ref-for-ascii-digit⑤\">ASCII digit</a>:",
@@ -585,13 +588,13 @@
                           "html": "<p>If <var>ipv4Piece</var> is null, then set <var>ipv4Piece</var> to <var>number</var>.\n\n         </p>"
                         },
                         {
-                          "html": "<p>Otherwise, if <var>ipv4Piece</var> is 0, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-invalid-code-point\" id=\"ref-for-ipv4-in-ipv6-invalid-code-point③\">IPv4-in-IPv6-invalid-code-point</a>\n         <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error①⑨\">validation error</a>, return failure.\n\n         </p>"
+                          "html": "<p>Otherwise, if <var>ipv4Piece</var> is 0, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-invalid-code-point\" id=\"ref-for-ipv4-in-ipv6-invalid-code-point③\">IPv4-in-IPv6-invalid-code-point</a>\n         <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⓪\">validation error</a>, return failure.\n\n         </p>"
                         },
                         {
                           "html": "<p>Otherwise, set <var>ipv4Piece</var> to <var>ipv4Piece</var> × 10 +\n         <var>number</var>.\n\n         </p>"
                         },
                         {
-                          "html": "<p>If <var>ipv4Piece</var> is greater than 255, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-out-of-range-part\" id=\"ref-for-ipv4-in-ipv6-out-of-range-part\">IPv4-in-IPv6-out-of-range-part</a>\n         <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⓪\">validation error</a>, return failure.\n\n         </p>"
+                          "html": "<p>If <var>ipv4Piece</var> is greater than 255, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-out-of-range-part\" id=\"ref-for-ipv4-in-ipv6-out-of-range-part\">IPv4-in-IPv6-out-of-range-part</a>\n         <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②①\">validation error</a>, return failure.\n\n         </p>"
                         },
                         {
                           "html": "<p>Increase <var>pointer</var> by 1.\n        </p>"
@@ -610,7 +613,7 @@
                   ]
                 },
                 {
-                  "html": "<p>If <var>numbersSeen</var> is not 4, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-too-few-parts\" id=\"ref-for-ipv4-in-ipv6-too-few-parts\">IPv4-in-IPv6-too-few-parts</a>\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②①\">validation error</a>, return failure.\n\n     </p>"
+                  "html": "<p>If <var>numbersSeen</var> is not 4, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv4-in-ipv6-too-few-parts\" id=\"ref-for-ipv4-in-ipv6-too-few-parts\">IPv4-in-IPv6-too-few-parts</a>\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②②\">validation error</a>, return failure.\n\n     </p>"
                 },
                 {
                   "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">Break</a>.\n    </p>"
@@ -625,12 +628,15 @@
                   "html": "<p>Increase <var>pointer</var> by 1.\n\n     </p>"
                 },
                 {
-                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c①⑦\">c</a> is the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#eof-code-point\" id=\"ref-for-eof-code-point⑤\">EOF code point</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-invalid-code-point\" id=\"ref-for-ipv6-invalid-code-point\">IPv6-invalid-code-point</a>\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②②\">validation error</a>, return failure.\n    </p>"
+                  "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c①⑦\">c</a> is the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#eof-code-point\" id=\"ref-for-eof-code-point⑤\">EOF code point</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-invalid-code-point\" id=\"ref-for-ipv6-invalid-code-point\">IPv6-invalid-code-point</a>\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②③\">validation error</a>, return failure.\n    </p>"
                 }
               ]
             },
             {
-              "html": "<p>Otherwise, if <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c①⑧\">c</a> is not the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#eof-code-point\" id=\"ref-for-eof-code-point⑥\">EOF code point</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-invalid-code-point\" id=\"ref-for-ipv6-invalid-code-point①\">IPv6-invalid-code-point</a>\n   <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②③\">validation error</a>, return failure.\n\n   </p>"
+              "html": "<p>Otherwise, if <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c①⑧\">c</a> is not the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#eof-code-point\" id=\"ref-for-eof-code-point⑥\">EOF code point</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-invalid-code-point\" id=\"ref-for-ipv6-invalid-code-point①\">IPv6-invalid-code-point</a>\n   <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②④\">validation error</a>, return failure.\n\n   </p>"
+            },
+            {
+              "html": "<p>If <var>length</var> is greater than 1 and <var>value</var> is less than\n   0x10<sup><var>length</var> − 1</sup>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-piece-leading-zero\" id=\"ref-for-ipv6-piece-leading-zero\">IPv6-piece-leading-zero</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⑤\">validation\n   error</a>.\n\n   </p>"
             },
             {
               "html": "<p>Set <var>address</var>[<var>pieceIndex</var>] to <var>value</var>.\n\n   </p>"
@@ -656,7 +662,7 @@
           ]
         },
         {
-          "html": "<p>Otherwise, if <var>compress</var> is null and <var>pieceIndex</var> is not 8,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-too-few-pieces\" id=\"ref-for-ipv6-too-few-pieces\">IPv6-too-few-pieces</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②④\">validation error</a>, return failure.\n\n </p>"
+          "html": "<p>Otherwise, if <var>compress</var> is null and <var>pieceIndex</var> is not 8,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#ipv6-too-few-pieces\" id=\"ref-for-ipv6-too-few-pieces\">IPv6-too-few-pieces</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⑥\">validation error</a>, return failure.\n\n </p>"
         },
         {
           "html": "<p>Return <var>address</var>.\n</p>"
@@ -670,13 +676,13 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>input</var> contains a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#forbidden-host-code-point\" id=\"ref-for-forbidden-host-code-point③\">forbidden host code point</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-invalid-code-point\" id=\"ref-for-host-invalid-code-point\">host-invalid-code-point</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⑤\">validation error</a>, return failure.\n\n </p>"
+          "html": "<p>If <var>input</var> contains a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#forbidden-host-code-point\" id=\"ref-for-forbidden-host-code-point③\">forbidden host code point</a>,\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-invalid-code-point\" id=\"ref-for-host-invalid-code-point\">host-invalid-code-point</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⑦\">validation error</a>, return failure.\n\n </p>"
         },
         {
-          "html": "<p>If <var>input</var> contains a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑥\">code point</a> that is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-code-points\" id=\"ref-for-url-code-points\">URL code point</a> and not\n U+0025 (%), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⑥\">validation error</a>.\n\n </p>"
+          "html": "<p>If <var>input</var> contains a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑥\">code point</a> that is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-code-points\" id=\"ref-for-url-code-points\">URL code point</a> and not\n U+0025 (%), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⑧\">validation error</a>.\n\n </p>"
         },
         {
-          "html": "<p>If <var>input</var> contains a U+0025 (%) and the two <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑦\">code points</a> following it are\n not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit⑤\">ASCII hex digits</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit①\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⑦\">validation error</a>.\n\n </p>"
+          "html": "<p>If <var>input</var> contains a U+0025 (%) and the two <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#code-point\" id=\"ref-for-code-point⑦\">code points</a> following it are\n not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit⑥\">ASCII hex digits</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit①\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error②⑨\">validation error</a>.\n\n </p>"
         },
         {
           "html": "<p>Return the result of running <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#string-utf-8-percent-encode\" id=\"ref-for-string-utf-8-percent-encode②\">UTF-8 percent-encode</a> on <var>input</var>\n using the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c0-control-percent-encode-set\" id=\"ref-for-c0-control-percent-encode-set②\">C0 control percent-encode set</a>.\n</p>"
@@ -690,10 +696,10 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>host</var> is an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv4\" id=\"ref-for-concept-ipv4①④\">IPv4 address</a>, return the result of\n running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv4-serializer\" id=\"ref-for-concept-ipv4-serializer\">IPv4 serializer</a> on <var>host</var>.\n\n </p>"
+          "html": "<p>If <var>host</var> is an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv4\" id=\"ref-for-concept-ipv4①⑤\">IPv4 address</a>, return the result of\n running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv4-serializer\" id=\"ref-for-concept-ipv4-serializer\">IPv4 serializer</a> on <var>host</var>.\n\n </p>"
         },
         {
-          "html": "<p>Otherwise, if <var>host</var> is an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①⑤\">IPv6 address</a>, return U+005B ([), followed by the\n result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-serializer\" id=\"ref-for-concept-ipv6-serializer\">IPv6 serializer</a> on <var>host</var>, followed by U+005D (]).\n\n </p>"
+          "html": "<p>Otherwise, if <var>host</var> is an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①⑥\">IPv6 address</a>, return U+005B ([), followed by the\n result of running the <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-serializer\" id=\"ref-for-concept-ipv6-serializer\">IPv6 serializer</a> on <var>host</var>, followed by U+005D (]).\n\n </p>"
         },
         {
           "html": "<p>Otherwise, <var>host</var> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-domain\" id=\"ref-for-concept-domain①⓪\">domain</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#opaque-host\" id=\"ref-for-opaque-host①④\">opaque host</a>, or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#empty-host\" id=\"ref-for-empty-host①\">empty host</a>,\n return <var>host</var>.\n</p>"
@@ -703,7 +709,7 @@
     {
       "name": "IPv4 serializer",
       "href": "https://url.spec.whatwg.org/#concept-ipv4-serializer",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-ipv4-serializer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IPv4 serializer</dfn> takes an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv4\" id=\"ref-for-concept-ipv4①⑤\">IPv4 address</a>\n<var>address</var> and then runs these steps. They return an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string①②\">ASCII string</a>.",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-ipv4-serializer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IPv4 serializer</dfn> takes an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv4\" id=\"ref-for-concept-ipv4①⑥\">IPv4 address</a>\n<var>address</var> and then runs these steps. They return an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string①②\">ASCII string</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -735,7 +741,7 @@
     {
       "name": "IPv6 serializer",
       "href": "https://url.spec.whatwg.org/#concept-ipv6-serializer",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-ipv6-serializer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IPv6 serializer</dfn> takes an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①⑥\">IPv6 address</a>\n<var>address</var> and then runs these steps. They return an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string①③\">ASCII string</a>.",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"concept-ipv6-serializer\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">IPv6 serializer</dfn> takes an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①⑦\">IPv6 address</a>\n<var>address</var> and then runs these steps. They return an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-string\" id=\"ref-for-ascii-string①③\">ASCII string</a>.",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -748,7 +754,7 @@
           "html": "<p>Let <var>ignore0</var> be false.\n\n </p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>pieceIndex</var> of <var>address</var>’s\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece①\">pieces</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices\">indices</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>pieceIndex</var> of <var>address</var>’s\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece②\">pieces</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices\">indices</a>:",
           "rationale": "if",
           "steps": [
             {
@@ -788,7 +794,7 @@
     {
       "name": "find the IPv6 address compressed piece index",
       "href": "https://url.spec.whatwg.org/#find-the-ipv6-address-compressed-piece-index",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-the-ipv6-address-compressed-piece-index\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find the IPv6 address compressed piece index</dfn> given an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①⑦\">IPv6 address</a>\n<var>address</var>:",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"find-the-ipv6-address-compressed-piece-index\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">find the IPv6 address compressed piece index</dfn> given an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6\" id=\"ref-for-concept-ipv6①⑧\">IPv6 address</a>\n<var>address</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -804,11 +810,11 @@
           "html": "<p>Let <var>foundSize</var> be 0.\n\n </p>"
         },
         {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>pieceIndex</var> of <var>address</var>’s\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece②\">pieces</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices①\">indices</a>:",
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>pieceIndex</var> of <var>address</var>’s\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece③\">pieces</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-get-the-indices\" id=\"ref-for-list-get-the-indices①\">indices</a>:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If <var>address</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece③\">pieces</a>[<var>pieceIndex</var>] is not 0:",
+              "html": "If <var>address</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-ipv6-piece\" id=\"ref-for-concept-ipv6-piece④\">pieces</a>[<var>pieceIndex</var>] is not 0:",
               "rationale": "if",
               "steps": [
                 {
@@ -867,7 +873,7 @@
     {
       "name": "relative-URL string",
       "href": "https://url.spec.whatwg.org/#relative-url-string",
-      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"relative-url-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"syntax-url-relative\"></span>relative-URL string</dfn> must be one of the following,\nswitching on <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url⑦\">base URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①①\">scheme</a>:",
+      "html": "A <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"relative-url-string\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><span class=\"bs-old-id\" id=\"syntax-url-relative\"></span>relative-URL string</dfn> must be one of the following,\nswitching on <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url⑧\">base URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme①①\">scheme</a>:",
       "rationale": ".switch",
       "steps": [
         {
@@ -892,7 +898,7 @@
     {
       "name": "URL parser",
       "href": "https://url.spec.whatwg.org/#concept-url-parser",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-url-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">URL parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①⓪\">scalar value string</a> <var>input</var>, with an optional null or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url①①\">base URL</a>\n<var>base</var> (default null) and an optional <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding①\">encoding</a> <var>encoding</var> (default\n<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑤\">UTF-8</a>), and then runs these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-url-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">URL parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①⓪\">scalar value string</a> <var>input</var>, with an optional null or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url①②\">base URL</a>\n<var>base</var> (default null) and an optional <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding①\">encoding</a> <var>encoding</var> (default\n<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑤\">UTF-8</a>), and then runs these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -915,7 +921,7 @@
     {
       "name": "basic URL parser",
       "href": "https://url.spec.whatwg.org/#concept-basic-url-parser",
-      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-basic-url-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">basic URL parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①①\">scalar value string</a> <var>input</var>, with an optional null or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url①②\">base URL</a>\n<var>base</var> (default null), an optional <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding②\">encoding</a> <var>encoding</var> (default\n<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑥\">UTF-8</a>), an optional <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④①\">URL</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"basic URL parser\" data-dfn-type=\"dfn\" data-export=\"\" id=\"basic-url-parser-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>url</var></dfn>,\nand an optional state override <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"basic URL parser\" data-dfn-type=\"dfn\" data-export=\"\" id=\"basic-url-parser-state-override\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>state override</var></dfn>,\nand then runs these steps:",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"concept-basic-url-parser\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">basic URL parser</dfn> takes a\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#scalar-value-string\" id=\"ref-for-scalar-value-string①①\">scalar value string</a> <var>input</var>, with an optional null or <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-base-url\" id=\"ref-for-concept-base-url①③\">base URL</a>\n<var>base</var> (default null), an optional <a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#encoding\" id=\"ref-for-encoding②\">encoding</a> <var>encoding</var> (default\n<a data-link-type=\"dfn\" href=\"https://encoding.spec.whatwg.org/#utf-8\" id=\"ref-for-utf-8⑥\">UTF-8</a>), an optional <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④①\">URL</a> <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"basic URL parser\" data-dfn-type=\"dfn\" data-export=\"\" id=\"basic-url-parser-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>url</var></dfn>,\nand an optional state override <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-for=\"basic URL parser\" data-dfn-type=\"dfn\" data-export=\"\" id=\"basic-url-parser-state-override\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><var>state override</var></dfn>,\nand then runs these steps:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -926,7 +932,7 @@
               "html": "<p>Set <var>url</var> to a new <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url④③\">URL</a>.\n\n   </p>"
             },
             {
-              "html": "<p>If <var>input</var> contains any leading or trailing <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#c0-control-or-space\" id=\"ref-for-c0-control-or-space\">C0 control or space</a>,\n   <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit②\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③⓪\">validation error</a>.\n\n   </p>"
+              "html": "<p>If <var>input</var> contains any leading or trailing <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#c0-control-or-space\" id=\"ref-for-c0-control-or-space\">C0 control or space</a>,\n   <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit②\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③②\">validation error</a>.\n\n   </p>"
             },
             {
               "html": "<p>Remove any leading and trailing <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#c0-control-or-space\" id=\"ref-for-c0-control-or-space①\">C0 control or space</a> from <var>input</var>.\n  </p>"
@@ -934,7 +940,7 @@
           ]
         },
         {
-          "html": "<p>If <var>input</var> contains any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-tab-or-newline\" id=\"ref-for-ascii-tab-or-newline\">ASCII tab or newline</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit③\">invalid-URL-unit</a>\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③①\">validation error</a>.\n\n </p>"
+          "html": "<p>If <var>input</var> contains any <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-tab-or-newline\" id=\"ref-for-ascii-tab-or-newline\">ASCII tab or newline</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit③\">invalid-URL-unit</a>\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③③\">validation error</a>.\n\n </p>"
         },
         {
           "html": "<p>Remove all <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-tab-or-newline\" id=\"ref-for-ascii-tab-or-newline①\">ASCII tab or newline</a> from <var>input</var>.\n\n </p>"
@@ -1030,7 +1036,7 @@
                           "rationale": "if",
                           "steps": [
                             {
-                              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining④\">remaining</a> does not start with \"<code>//</code>\",\n         <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-scheme-missing-following-solidus\" id=\"ref-for-special-scheme-missing-following-solidus\">special-scheme-missing-following-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③②\">validation error</a>.\n\n         </p>"
+                              "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining④\">remaining</a> does not start with \"<code>//</code>\",\n         <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-scheme-missing-following-solidus\" id=\"ref-for-special-scheme-missing-following-solidus\">special-scheme-missing-following-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③④\">validation error</a>.\n\n         </p>"
                             },
                             {
                               "html": "<p>Set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#file-state\" id=\"ref-for-file-state\">file state</a>.\n        </p>"
@@ -1042,7 +1048,7 @@
                           "rationale": "assert",
                           "steps": [
                             {
-                              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>base</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special③\">is special</a> (and therefore does not have\n         an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path④\">opaque path</a>).\n\n         </p>"
+                              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: <var>base</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special③\">is special</a> (and therefore does not have\n         an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path⑤\">opaque path</a>).\n\n         </p>"
                             },
                             {
                               "html": "<p>Set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-relative-or-authority-state\" id=\"ref-for-special-relative-or-authority-state\">special relative or authority state</a>.\n        </p>"
@@ -1074,10 +1080,10 @@
                   "rationale": "if",
                   "steps": [
                     {
-                      "html": "<p>If <var>base</var> is null, or <var>base</var> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path⑤\">opaque path</a> and\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c②④\">c</a> is not U+0023 (#), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#missing-scheme-non-relative-url\" id=\"ref-for-missing-scheme-non-relative-url\">missing-scheme-non-relative-URL</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③③\">validation error</a>,\n     return failure.\n\n     </p>"
+                      "html": "<p>If <var>base</var> is null, or <var>base</var> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path⑥\">opaque path</a> and\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c②④\">c</a> is not U+0023 (#), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#missing-scheme-non-relative-url\" id=\"ref-for-missing-scheme-non-relative-url\">missing-scheme-non-relative-URL</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③⑤\">validation error</a>,\n     return failure.\n\n     </p>"
                     },
                     {
-                      "html": "<p>Otherwise, if <var>base</var> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path⑥\">opaque path</a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c②⑤\">c</a> is\n     U+0023 (#), set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②①\">scheme</a> to\n     <var>base</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②②\">scheme</a>,\n     <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path⑥\">path</a> to\n     <var>base</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path⑦\">path</a>,\n     <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query③\">query</a> to\n     <var>base</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query④\">query</a>,\n     <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment②\">fragment</a> to the empty string, and set <var>state</var> to\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#fragment-state\" id=\"ref-for-fragment-state\">fragment state</a>.\n\n     </p>"
+                      "html": "<p>Otherwise, if <var>base</var> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path⑦\">opaque path</a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c②⑤\">c</a> is\n     U+0023 (#), set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②①\">scheme</a> to\n     <var>base</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②②\">scheme</a>,\n     <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path⑥\">path</a> to\n     <var>base</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path⑦\">path</a>,\n     <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query③\">query</a> to\n     <var>base</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-query\" id=\"ref-for-concept-url-query④\">query</a>,\n     <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment②\">fragment</a> to the empty string, and set <var>state</var> to\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#fragment-state\" id=\"ref-for-fragment-state\">fragment state</a>.\n\n     </p>"
                     },
                     {
                       "html": "<p>Otherwise, if <var>base</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②③\">scheme</a> is not \"<code>file</code>\", set\n     <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#relative-state\" id=\"ref-for-relative-state\">relative state</a> and decrease <var>pointer</var> by 1.\n\n     </p>"
@@ -1096,7 +1102,7 @@
                       "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c②⑥\">c</a> is U+002F (/) and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining⑥\">remaining</a> starts with U+002F (/), then set\n     <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-authority-ignore-slashes-state\" id=\"ref-for-special-authority-ignore-slashes-state\">special authority ignore slashes state</a> and increase\n     <var>pointer</var> by 1.\n\n     </p>"
                     },
                     {
-                      "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-scheme-missing-following-solidus\" id=\"ref-for-special-scheme-missing-following-solidus①\">special-scheme-missing-following-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③④\">validation error</a>, set\n     <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#relative-state\" id=\"ref-for-relative-state①\">relative state</a> and decrease <var>pointer</var> by 1.\n    </p>"
+                      "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-scheme-missing-following-solidus\" id=\"ref-for-special-scheme-missing-following-solidus①\">special-scheme-missing-following-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③⑥\">validation error</a>, set\n     <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#relative-state\" id=\"ref-for-relative-state①\">relative state</a> and decrease <var>pointer</var> by 1.\n    </p>"
                     }
                   ]
                 },
@@ -1128,7 +1134,7 @@
                       "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c②⑧\">c</a> is U+002F (/), then set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#relative-slash-state\" id=\"ref-for-relative-slash-state\">relative slash state</a>.\n\n     </p>"
                     },
                     {
-                      "html": "<p>Otherwise, if <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special⑤\">is special</a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c②⑨\">c</a> is U+005C (\\),\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-reverse-solidus\" id=\"ref-for-invalid-reverse-solidus\">invalid-reverse-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③⑤\">validation error</a>, set <var>state</var> to\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#relative-slash-state\" id=\"ref-for-relative-slash-state①\">relative slash state</a>.\n\n     </p>"
+                      "html": "<p>Otherwise, if <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special⑤\">is special</a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c②⑨\">c</a> is U+005C (\\),\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-reverse-solidus\" id=\"ref-for-invalid-reverse-solidus\">invalid-reverse-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③⑦\">validation error</a>, set <var>state</var> to\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#relative-slash-state\" id=\"ref-for-relative-slash-state①\">relative slash state</a>.\n\n     </p>"
                     },
                     {
                       "html": "Otherwise:",
@@ -1172,7 +1178,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c③④\">c</a> is U+005C (\\), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-reverse-solidus\" id=\"ref-for-invalid-reverse-solidus①\">invalid-reverse-solidus</a>\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③⑥\">validation error</a>.\n\n       </p>"
+                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c③④\">c</a> is U+005C (\\), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-reverse-solidus\" id=\"ref-for-invalid-reverse-solidus①\">invalid-reverse-solidus</a>\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③⑧\">validation error</a>.\n\n       </p>"
                         },
                         {
                           "html": "<p>Set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-authority-ignore-slashes-state\" id=\"ref-for-special-authority-ignore-slashes-state①\">special authority ignore slashes state</a>.\n      </p>"
@@ -1196,7 +1202,7 @@
                       "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c③⑥\">c</a> is U+002F (/) and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining⑦\">remaining</a> starts with U+002F (/), then set\n     <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-authority-ignore-slashes-state\" id=\"ref-for-special-authority-ignore-slashes-state②\">special authority ignore slashes state</a> and increase\n     <var>pointer</var> by 1.\n\n     </p>"
                     },
                     {
-                      "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-scheme-missing-following-solidus\" id=\"ref-for-special-scheme-missing-following-solidus②\">special-scheme-missing-following-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③⑦\">validation error</a>, set\n     <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-authority-ignore-slashes-state\" id=\"ref-for-special-authority-ignore-slashes-state③\">special authority ignore slashes state</a> and decrease\n     <var>pointer</var> by 1.\n    </p>"
+                      "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-scheme-missing-following-solidus\" id=\"ref-for-special-scheme-missing-following-solidus②\">special-scheme-missing-following-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③⑨\">validation error</a>, set\n     <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-authority-ignore-slashes-state\" id=\"ref-for-special-authority-ignore-slashes-state③\">special authority ignore slashes state</a> and decrease\n     <var>pointer</var> by 1.\n    </p>"
                     }
                   ]
                 },
@@ -1209,7 +1215,7 @@
                       "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c③⑦\">c</a> is neither U+002F (/) nor U+005C (\\), then set <var>state</var> to\n     <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#authority-state\" id=\"ref-for-authority-state②\">authority state</a> and decrease <var>pointer</var> by 1.\n\n     </p>"
                     },
                     {
-                      "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-scheme-missing-following-solidus\" id=\"ref-for-special-scheme-missing-following-solidus③\">special-scheme-missing-following-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③⑧\">validation error</a>.\n    </p>"
+                      "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#special-scheme-missing-following-solidus\" id=\"ref-for-special-scheme-missing-following-solidus③\">special-scheme-missing-following-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④⓪\">validation error</a>.\n    </p>"
                     }
                   ]
                 },
@@ -1223,7 +1229,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-credentials\" id=\"ref-for-invalid-credentials\">Invalid-credentials</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error③⑨\">validation error</a>.\n\n       </p>"
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-credentials\" id=\"ref-for-invalid-credentials\">Invalid-credentials</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④①\">validation error</a>.\n\n       </p>"
                         },
                         {
                           "html": "<p>If <var>atSignSeen</var> is true, then prepend \"<code>%40</code>\" to\n       <var>buffer</var>.\n\n       </p>"
@@ -1259,7 +1265,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <var>atSignSeen</var> is true and <var>buffer</var> is the empty string,\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-missing\" id=\"ref-for-host-missing\">host-missing</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④⓪\">validation error</a>, return failure.\n\n       </p>"
+                          "html": "<p>If <var>atSignSeen</var> is true and <var>buffer</var> is the empty string,\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-missing\" id=\"ref-for-host-missing\">host-missing</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④②\">validation error</a>, return failure.\n\n       </p>"
                         },
                         {
                           "html": "<p>Decrease <var>pointer</var> by <var>buffer</var>’s\n       <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-code-point-length\" id=\"ref-for-string-code-point-length①\">code point length</a> + 1, set <var>buffer</var> to the empty string, and set\n       <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-state\" id=\"ref-for-host-state\">host state</a>.\n      </p>"
@@ -1284,7 +1290,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <var>buffer</var> is the empty string, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-missing\" id=\"ref-for-host-missing①\">host-missing</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④①\">validation error</a>,\n       return failure.\n\n       </p>"
+                          "html": "<p>If <var>buffer</var> is the empty string, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-missing\" id=\"ref-for-host-missing①\">host-missing</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④③\">validation error</a>,\n       return failure.\n\n       </p>"
                         },
                         {
                           "html": "<p>If <var>state override</var> is given and <var>state override</var> is\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#hostname-state\" id=\"ref-for-hostname-state\">hostname state</a>, then return failure.\n\n       </p>"
@@ -1305,7 +1311,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special⑨\">is special</a> and <var>buffer</var> is the empty string,\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-missing\" id=\"ref-for-host-missing②\">host-missing</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④②\">validation error</a>, return failure.\n\n       </p>"
+                          "html": "<p>If <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special⑨\">is special</a> and <var>buffer</var> is the empty string,\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-missing\" id=\"ref-for-host-missing②\">host-missing</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④④\">validation error</a>, return failure.\n\n       </p>"
                         },
                         {
                           "html": "<p>Otherwise, if <var>state override</var> is given, <var>buffer</var> is the empty\n       string, and either <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#include-credentials\" id=\"ref-for-include-credentials②\">includes credentials</a> or <var>url</var>’s\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port⑧\">port</a> is non-null, then return failure.\n\n       </p>"
@@ -1354,7 +1360,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <var>buffer</var> is the empty string, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-missing\" id=\"ref-for-host-missing①\">host-missing</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④①\">validation error</a>,\n       return failure.\n\n       </p>"
+                          "html": "<p>If <var>buffer</var> is the empty string, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-missing\" id=\"ref-for-host-missing①\">host-missing</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④③\">validation error</a>,\n       return failure.\n\n       </p>"
                         },
                         {
                           "html": "<p>If <var>state override</var> is given and <var>state override</var> is\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#hostname-state\" id=\"ref-for-hostname-state\">hostname state</a>, then return failure.\n\n       </p>"
@@ -1375,7 +1381,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special⑨\">is special</a> and <var>buffer</var> is the empty string,\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-missing\" id=\"ref-for-host-missing②\">host-missing</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④②\">validation error</a>, return failure.\n\n       </p>"
+                          "html": "<p>If <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special⑨\">is special</a> and <var>buffer</var> is the empty string,\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-missing\" id=\"ref-for-host-missing②\">host-missing</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④④\">validation error</a>, return failure.\n\n       </p>"
                         },
                         {
                           "html": "<p>Otherwise, if <var>state override</var> is given, <var>buffer</var> is the empty\n       string, and either <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#include-credentials\" id=\"ref-for-include-credentials②\">includes credentials</a> or <var>url</var>’s\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port⑧\">port</a> is non-null, then return failure.\n\n       </p>"
@@ -1431,7 +1437,7 @@
                               "html": "<p>Let <var>port</var> be the mathematical integer value that is represented\n         by <var>buffer</var> in radix-10 using <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-digit\" id=\"ref-for-ascii-digit⑧\">ASCII digits</a> for digits with values\n         0 through 9.\n\n         </p>"
                             },
                             {
-                              "html": "<p>If <var>port</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#16-bit-unsigned-integer\" id=\"ref-for-16-bit-unsigned-integer③\">16-bit unsigned integer</a>,\n         <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#port-out-of-range\" id=\"ref-for-port-out-of-range\">port-out-of-range</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④③\">validation error</a>, return failure.\n\n         </p>"
+                              "html": "<p>If <var>port</var> is not a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#16-bit-unsigned-integer\" id=\"ref-for-16-bit-unsigned-integer③\">16-bit unsigned integer</a>,\n         <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#port-out-of-range\" id=\"ref-for-port-out-of-range\">port-out-of-range</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④⑤\">validation error</a>, return failure.\n\n         </p>"
                             },
                             {
                               "html": "<p>Set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-port\" id=\"ref-for-concept-url-port⑨\">port</a> to null, if <var>port</var> is\n         <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-scheme\" id=\"ref-for-concept-url-scheme②⑧\">scheme</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#default-port\" id=\"ref-for-default-port③\">default port</a>; otherwise to <var>port</var>.\n\n         </p>"
@@ -1453,7 +1459,7 @@
                       ]
                     },
                     {
-                      "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#port-invalid\" id=\"ref-for-port-invalid\">port-invalid</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④④\">validation error</a>, return failure.\n    </p>"
+                      "html": "<p>Otherwise, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#port-invalid\" id=\"ref-for-port-invalid\">port-invalid</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④⑥\">validation error</a>, return failure.\n    </p>"
                     }
                   ]
                 },
@@ -1473,7 +1479,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑤③\">c</a> is U+005C (\\), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-reverse-solidus\" id=\"ref-for-invalid-reverse-solidus②\">invalid-reverse-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④⑤\">validation error</a>.\n\n       </p>"
+                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑤③\">c</a> is U+005C (\\), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-reverse-solidus\" id=\"ref-for-invalid-reverse-solidus②\">invalid-reverse-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④⑦\">validation error</a>.\n\n       </p>"
                         },
                         {
                           "html": "<p>Set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#file-slash-state\" id=\"ref-for-file-slash-state\">file slash state</a>.\n      </p>"
@@ -1508,7 +1514,7 @@
                               "rationale": "set",
                               "steps": [
                                 {
-                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#file-invalid-windows-drive-letter\" id=\"ref-for-file-invalid-windows-drive-letter\">File-invalid-Windows-drive-letter</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④⑥\">validation error</a>.\n\n           </p>"
+                                  "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#file-invalid-windows-drive-letter\" id=\"ref-for-file-invalid-windows-drive-letter\">File-invalid-Windows-drive-letter</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④⑧\">validation error</a>.\n\n           </p>"
                                 },
                                 {
                                   "html": "<p>Set <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path①④\">path</a> to « ».\n          </p>"
@@ -1537,7 +1543,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑤⑧\">c</a> is U+005C (\\), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-reverse-solidus\" id=\"ref-for-invalid-reverse-solidus③\">invalid-reverse-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④⑦\">validation error</a>.\n\n       </p>"
+                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑤⑧\">c</a> is U+005C (\\), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-reverse-solidus\" id=\"ref-for-invalid-reverse-solidus③\">invalid-reverse-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④⑨\">validation error</a>.\n\n       </p>"
                         },
                         {
                           "html": "<p>Set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#file-host-state\" id=\"ref-for-file-host-state①\">file host state</a>.\n      </p>"
@@ -1577,7 +1583,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <var>state override</var> is not given and <var>buffer</var> is a\n        <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#windows-drive-letter\" id=\"ref-for-windows-drive-letter③\">Windows drive letter</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#file-invalid-windows-drive-letter-host\" id=\"ref-for-file-invalid-windows-drive-letter-host\">file-invalid-Windows-drive-letter-host</a>\n        <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④⑧\">validation error</a>, set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#path-state\" id=\"ref-for-path-state⑥\">path state</a>.\n\n        </p>"
+                          "html": "<p>If <var>state override</var> is not given and <var>buffer</var> is a\n        <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#windows-drive-letter\" id=\"ref-for-windows-drive-letter③\">Windows drive letter</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#file-invalid-windows-drive-letter-host\" id=\"ref-for-file-invalid-windows-drive-letter-host\">file-invalid-Windows-drive-letter-host</a>\n        <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤⓪\">validation error</a>, set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#path-state\" id=\"ref-for-path-state⑥\">path state</a>.\n\n        </p>"
                         },
                         {
                           "html": "Otherwise, if <var>buffer</var> is the empty string, then:",
@@ -1635,7 +1641,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑥①\">c</a> is U+005C (\\), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-reverse-solidus\" id=\"ref-for-invalid-reverse-solidus④\">invalid-reverse-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error④⑨\">validation error</a>.\n\n       </p>"
+                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑥①\">c</a> is U+005C (\\), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-reverse-solidus\" id=\"ref-for-invalid-reverse-solidus④\">invalid-reverse-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤①\">validation error</a>.\n\n       </p>"
                         },
                         {
                           "html": "<p>Set <var>state</var> to <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#path-state\" id=\"ref-for-path-state⑧\">path state</a>.\n\n       </p>"
@@ -1678,7 +1684,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special①③\">is special</a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑦⓪\">c</a> is U+005C (\\),\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-reverse-solidus\" id=\"ref-for-invalid-reverse-solidus⑤\">invalid-reverse-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤⓪\">validation error</a>.\n\n       </p>"
+                          "html": "<p>If <var>url</var> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#is-special\" id=\"ref-for-is-special①③\">is special</a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑦⓪\">c</a> is U+005C (\\),\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-reverse-solidus\" id=\"ref-for-invalid-reverse-solidus⑤\">invalid-reverse-solidus</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤②\">validation error</a>.\n\n       </p>"
                         },
                         {
                           "html": "If <var>buffer</var> is a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#double-dot-path-segment\" id=\"ref-for-double-dot-path-segment②\">double-dot URL path segment</a>, then:",
@@ -1723,10 +1729,10 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑦⑦\">c</a> is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-code-points\" id=\"ref-for-url-code-points③\">URL code point</a> and not U+0025 (%),\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit④\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤①\">validation error</a>.\n\n       </p>"
+                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑦⑦\">c</a> is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-code-points\" id=\"ref-for-url-code-points③\">URL code point</a> and not U+0025 (%),\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit④\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤③\">validation error</a>.\n\n       </p>"
                         },
                         {
-                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑦⑧\">c</a> is U+0025 (%) and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining⑧\">remaining</a> does not start with two\n       <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit⑥\">ASCII hex digits</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit⑤\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤②\">validation error</a>.\n\n       </p>"
+                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑦⑧\">c</a> is U+0025 (%) and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining⑧\">remaining</a> does not start with two\n       <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit⑦\">ASCII hex digits</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit⑤\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤④\">validation error</a>.\n\n       </p>"
                         },
                         {
                           "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#utf-8-percent-encode\" id=\"ref-for-utf-8-percent-encode③\">UTF-8 percent-encode</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑦⑨\">c</a> using the\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#path-percent-encode-set\" id=\"ref-for-path-percent-encode-set①\">path percent-encode set</a> and append the result to <var>buffer</var>.\n      </p>"
@@ -1751,7 +1757,7 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit⑥\">Invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤③\">validation error</a>.\n\n       </p>"
+                          "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit⑥\">Invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤⑤\">validation error</a>.\n\n       </p>"
                         },
                         {
                           "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining⑨\">remaining</a> starts with U+003F (?) or U+0023 (#), then append\n       \"<code>%20</code>\" to <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path②④\">path</a>.\n\n       </p>"
@@ -1766,10 +1772,10 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑧④\">c</a> is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-code-points\" id=\"ref-for-url-code-points④\">URL code point</a> and not U+0025 (%), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit⑦\">invalid-URL-unit</a>\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤④\">validation error</a>.\n\n       </p>"
+                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑧④\">c</a> is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-code-points\" id=\"ref-for-url-code-points④\">URL code point</a> and not U+0025 (%), <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit⑦\">invalid-URL-unit</a>\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤⑥\">validation error</a>.\n\n       </p>"
                         },
                         {
-                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑧⑤\">c</a> is U+0025 (%) and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining①⓪\">remaining</a> does not start with two\n       <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit⑦\">ASCII hex digits</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit⑧\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤⑤\">validation error</a>.\n\n       </p>"
+                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑧⑤\">c</a> is U+0025 (%) and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining①⓪\">remaining</a> does not start with two\n       <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit⑧\">ASCII hex digits</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit⑧\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤⑦\">validation error</a>.\n\n       </p>"
                         },
                         {
                           "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#utf-8-percent-encode\" id=\"ref-for-utf-8-percent-encode④\">UTF-8 percent-encode</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑧⑥\">c</a> using the\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c0-control-percent-encode-set\" id=\"ref-for-c0-control-percent-encode-set③\">C0 control percent-encode set</a> and append the result to <var>url</var>’s\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path②⑥\">path</a>.\n      </p>"
@@ -1809,10 +1815,10 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑨①\">c</a> is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-code-points\" id=\"ref-for-url-code-points⑤\">URL code point</a> and not U+0025 (%),\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit⑨\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤⑥\">validation error</a>.\n\n       </p>"
+                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑨①\">c</a> is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-code-points\" id=\"ref-for-url-code-points⑤\">URL code point</a> and not U+0025 (%),\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit⑨\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤⑧\">validation error</a>.\n\n       </p>"
                         },
                         {
-                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑨②\">c</a> is U+0025 (%) and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining①①\">remaining</a> does not start with two\n       <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit⑧\">ASCII hex digits</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit①⓪\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤⑦\">validation error</a>.\n\n       </p>"
+                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑨②\">c</a> is U+0025 (%) and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining①①\">remaining</a> does not start with two\n       <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit⑨\">ASCII hex digits</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit①⓪\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤⑨\">validation error</a>.\n\n       </p>"
                         },
                         {
                           "html": "<p>Append <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑨③\">c</a> to <var>buffer</var>.\n      </p>"
@@ -1831,10 +1837,10 @@
                       "rationale": "if",
                       "steps": [
                         {
-                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑨⑤\">c</a> is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-code-points\" id=\"ref-for-url-code-points⑥\">URL code point</a> and not U+0025 (%),\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit①①\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤⑧\">validation error</a>.\n\n       </p>"
+                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑨⑤\">c</a> is not a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-code-points\" id=\"ref-for-url-code-points⑥\">URL code point</a> and not U+0025 (%),\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit①①\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑥⓪\">validation error</a>.\n\n       </p>"
                         },
                         {
-                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑨⑥\">c</a> is U+0025 (%) and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining①②\">remaining</a> does not start with two\n       <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit⑨\">ASCII hex digits</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit①②\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑤⑨\">validation error</a>.\n\n       </p>"
+                          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑨⑥\">c</a> is U+0025 (%) and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#remaining\" id=\"ref-for-remaining①②\">remaining</a> does not start with two\n       <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ascii-hex-digit\" id=\"ref-for-ascii-hex-digit①⓪\">ASCII hex digits</a>, <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#invalid-url-unit\" id=\"ref-for-invalid-url-unit①②\">invalid-URL-unit</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#validation-error\" id=\"ref-for-validation-error⑥①\">validation error</a>.\n\n       </p>"
                         },
                         {
                           "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#utf-8-percent-encode\" id=\"ref-for-utf-8-percent-encode⑤\">UTF-8 percent-encode</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#c\" id=\"ref-for-c⑨⑦\">c</a> using the\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#fragment-percent-encode-set\" id=\"ref-for-fragment-percent-encode-set①\">fragment percent-encode set</a> and append the result to <var>url</var>’s\n       <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-fragment\" id=\"ref-for-concept-url-fragment⑨\">fragment</a>.\n      </p>"
@@ -1904,7 +1910,7 @@
           ]
         },
         {
-          "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host②④\">host</a> is null, <var>url</var> does not have an\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path⑦\">opaque path</a>, <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path②⑦\">path</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑤\">size</a> is greater\n  than 1, and <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path②⑧\">path</a>[0] is the empty string, then append U+002F (/)\n  followed by U+002E (.) to <var>output</var>.\n\n  </p>"
+          "html": "<p>If <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-host\" id=\"ref-for-concept-url-host②④\">host</a> is null, <var>url</var> does not have an\n  <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path⑧\">opaque path</a>, <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path②⑦\">path</a>’s <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-size\" id=\"ref-for-list-size⑤\">size</a> is greater\n  than 1, and <var>url</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path②⑧\">path</a>[0] is the empty string, then append U+002F (/)\n  followed by U+002E (.) to <var>output</var>.\n\n  </p>"
         },
         {
           "html": "<p>Append the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-path-serializer\" id=\"ref-for-url-path-serializer\">URL path serializing</a> <var>url</var> to <var>output</var>.\n\n </p>"
@@ -1927,7 +1933,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <var>url</var> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path⑧\">opaque path</a>, then return <var>url</var>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path②⑨\">path</a>.\n\n </p>"
+          "html": "<p>If <var>url</var> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path⑨\">opaque path</a>, then return <var>url</var>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path②⑨\">path</a>.\n\n </p>"
         },
         {
           "html": "<p>Let <var>output</var> be the empty string.\n\n </p>"
@@ -2282,7 +2288,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①⑤\">URL</a> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path⑨\">opaque path</a>, then return.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑦\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①⑤\">URL</a> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path①⓪\">opaque path</a>, then return.\n\n </p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser⑨\">Basic URL parse</a> the given value with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⑧\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url①⑥\">URL</a> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url①\"><i>url</i></a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#host-state\" id=\"ref-for-host-state①\">host state</a> as\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override①\"><i>state override</i></a>.\n</p>"
@@ -2309,7 +2315,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⓪\">URL</a> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path①⓪\">opaque path</a>, then return.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②②\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⓪\">URL</a> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path①①\">opaque path</a>, then return.\n\n </p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-basic-url-parser\" id=\"ref-for-concept-basic-url-parser①⓪\">Basic URL parse</a> the given value with <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this②③\">this</a>’s\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②①\">URL</a> as <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-url\" id=\"ref-for-basic-url-parser-url②\"><i>url</i></a> and <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#hostname-state\" id=\"ref-for-hostname-state①\">hostname state</a> as\n <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#basic-url-parser-state-override\" id=\"ref-for-basic-url-parser-state-override②\"><i>state override</i></a>.\n</p>"
@@ -2352,7 +2358,7 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⑧\">URL</a> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path①①\">opaque path</a>, then return.\n\n </p>"
+          "html": "<p>If <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⑧\">URL</a> has an <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#url-opaque-path\" id=\"ref-for-url-opaque-path①②\">opaque path</a>, then return.\n\n </p>"
         },
         {
           "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-empty\" id=\"ref-for-list-empty\">Empty</a> <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this③①\">this</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-url\" id=\"ref-for-concept-url-url②⑨\">URL</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-path\" id=\"ref-for-concept-url-path③②\">path</a>.\n\n </p>"
