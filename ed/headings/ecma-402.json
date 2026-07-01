@@ -175,7 +175,7 @@
     {
       "id": "sec-string-split-to-list",
       "href": "https://tc39.es/ecma402/#sec-string-split-to-list",
-      "title": "StringSplitToList ( S, separator )",
+      "title": "StringSplitToList ( string, separator )",
       "level": 3,
       "number": "6.5.4"
     },
@@ -455,7 +455,7 @@
     {
       "id": "sec-resolveoptions",
       "href": "https://tc39.es/ecma402/#sec-resolveoptions",
-      "title": "ResolveOptions ( constructor, localeData, locales, options [ , specialBehaviours [ , modifyResolutionOptions ] ] )",
+      "title": "ResolveOptions ( ctor, localeData, locales, options [ , specialBehaviours [ , modifyResolutionOptions ] ] )",
       "level": 3,
       "number": "9.2.8"
     },
@@ -476,14 +476,14 @@
     {
       "id": "sec-getoption",
       "href": "https://tc39.es/ecma402/#sec-getoption",
-      "title": "GetOption ( options, property, type, values, default )",
+      "title": "GetOption ( options, propertyKey, type, values, default )",
       "level": 3,
       "number": "9.2.11"
     },
     {
       "id": "sec-getbooleanorstringnumberformatoption",
       "href": "https://tc39.es/ecma402/#sec-getbooleanorstringnumberformatoption",
-      "title": "GetBooleanOrStringNumberFormatOption ( options, property, stringValues, fallback )",
+      "title": "GetBooleanOrStringNumberFormatOption ( options, propertyKey, stringValues, fallback )",
       "level": 3,
       "number": "9.2.12"
     },
@@ -497,7 +497,7 @@
     {
       "id": "sec-getnumberoption",
       "href": "https://tc39.es/ecma402/#sec-getnumberoption",
-      "title": "GetNumberOption ( options, property, minimum, maximum, fallback )",
+      "title": "GetNumberOption ( options, propertyKey, minimum, maximum, fallback )",
       "level": 3,
       "number": "9.2.14"
     },
@@ -1148,7 +1148,7 @@
     {
       "id": "sec-tointegerifintegral",
       "href": "https://tc39.es/ecma402/#sec-tointegerifintegral",
-      "title": "ToIntegerIfIntegral ( argument )",
+      "title": "ToIntegerIfIntegral ( arg )",
       "level": 3,
       "number": "13.5.2"
     },
@@ -1918,7 +1918,7 @@
     {
       "id": "sec-formatnumerictostring",
       "href": "https://tc39.es/ecma402/#sec-formatnumerictostring",
-      "title": "FormatNumericToString ( intlObject, x )",
+      "title": "FormatNumericToString ( intlObj, x )",
       "level": 3,
       "number": "16.5.3"
     },
@@ -1932,7 +1932,7 @@
     {
       "id": "sec-partitionnotationsubpattern",
       "href": "https://tc39.es/ecma402/#sec-partitionnotationsubpattern",
-      "title": "PartitionNotationSubPattern ( numberFormat, x, n, exponent )",
+      "title": "PartitionNotationSubPattern ( numberFormat, x, formattedString, exponent )",
       "level": 3,
       "number": "16.5.5"
     },
@@ -2170,7 +2170,7 @@
     {
       "id": "sec-pluralruleselect",
       "href": "https://tc39.es/ecma402/#sec-pluralruleselect",
-      "title": "PluralRuleSelect ( locale, type, notation, compactDisplay, s )",
+      "title": "PluralRuleSelect ( locale, type, notation, compactDisplay, decimalString )",
       "level": 3,
       "number": "17.5.1"
     },
@@ -2569,7 +2569,7 @@
     {
       "id": "sec-transform-case",
       "href": "https://tc39.es/ecma402/#sec-transform-case",
-      "title": "TransformCase ( S, locales, targetCase )",
+      "title": "TransformCase ( string, locales, targetCase )",
       "level": 4,
       "number": "20.1.2.1"
     },
