@@ -131,12 +131,12 @@
                   "html": "Set the content attribute to the value that would be returned\n      from getting <var>value</var>'s <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAngle__valueAsString\">valueAsString</a>\n      member."
                 },
                 {
-                  "case": "DOMRect",
+                  "case": "SVGRect",
                   "html": "",
                   "rationale": "let",
                   "steps": [
                     {
-                      "html": "Let <var>components</var> be a list of four values, being the values of the\n          <a href=\"https://www.w3.org/TR/2014/WD-geometry-1-20140522/#dom-domrectreadonly-domrect-x\">x</a>,\n          <a href=\"https://www.w3.org/TR/2014/WD-geometry-1-20140522/#dom-domrectreadonly-domrect-y\">y</a>,\n          <a href=\"https://www.w3.org/TR/2014/WD-geometry-1-20140522/#dom-domrectreadonly-domrect-width\">width</a> and\n          <a href=\"https://www.w3.org/TR/2014/WD-geometry-1-20140522/#dom-domrectreadonly-domrect-height\">height</a>\n          members of <var>value</var>."
+                      "html": "Let <var>components</var> be a list of four values, being the values of the\n          <a href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-x\">x</a>,\n          <a href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-y\">y</a>,\n          <a href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-width\">width</a> and\n          <a href=\"https://drafts.csswg.org/geometry-1/#dom-domrect-height\">height</a>\n          members of <var>value</var>."
                     },
                     {
                       "html": "Let <var>serialized components</var> be a list of four strings,\n          where each is an implementation specific string that, if parsed\n          as a <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a> using CSS syntax, would return the number\n          value closest to the corresponding value in <var>components</var>, given\n          the implementation's supported <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#Precision\">real number precision</a>."
@@ -174,7 +174,7 @@
                               "html": "The string is the value that would be returned\n              from getting the value's <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueAsString\">valueAsString</a>\n              member."
                             },
                             {
-                              "case": "a DOMPoint object",
+                              "case": "a SVGPoint object",
                               "html": "The string value is computed as follows:",
                               "rationale": "let",
                               "steps": [
@@ -182,7 +182,7 @@
                                   "html": "Let <var>string</var> be an empty string."
                                 },
                                 {
-                                  "html": "Let <var>x</var> and <var>y</var> be the values of the\n                  <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> object's x and y coordinates, respectively."
+                                  "html": "Let <var>x</var> and <var>y</var> be the values of the\n                  <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> object's x and y coordinates, respectively."
                                 },
                                 {
                                   "html": "Append to <var>string</var> an implementation specific string\n                  that, if parsed as <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a> using CSS syntax, would return the number\n                  value closest to <var>x</var>, given\n                  the implementation's supported <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#Precision\">real number precision</a>."
@@ -239,7 +239,7 @@
                               "html": "The string is the value that would be returned\n              from getting the value's <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueAsString\">valueAsString</a>\n              member."
                             },
                             {
-                              "case": "a DOMPoint object",
+                              "case": "a SVGPoint object",
                               "html": "The string value is computed as follows:",
                               "rationale": "let",
                               "steps": [
@@ -247,7 +247,7 @@
                                   "html": "Let <var>string</var> be an empty string."
                                 },
                                 {
-                                  "html": "Let <var>x</var> and <var>y</var> be the values of the\n                  <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> object's x and y coordinates, respectively."
+                                  "html": "Let <var>x</var> and <var>y</var> be the values of the\n                  <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> object's x and y coordinates, respectively."
                                 },
                                 {
                                   "html": "Append to <var>string</var> an implementation specific string\n                  that, if parsed as <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a> using CSS syntax, would return the number\n                  value closest to <var>x</var>, given\n                  the implementation's supported <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#Precision\">real number precision</a>."
@@ -304,7 +304,7 @@
                               "html": "The string is the value that would be returned\n              from getting the value's <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueAsString\">valueAsString</a>\n              member."
                             },
                             {
-                              "case": "a DOMPoint object",
+                              "case": "a SVGPoint object",
                               "html": "The string value is computed as follows:",
                               "rationale": "let",
                               "steps": [
@@ -312,7 +312,7 @@
                                   "html": "Let <var>string</var> be an empty string."
                                 },
                                 {
-                                  "html": "Let <var>x</var> and <var>y</var> be the values of the\n                  <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> object's x and y coordinates, respectively."
+                                  "html": "Let <var>x</var> and <var>y</var> be the values of the\n                  <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> object's x and y coordinates, respectively."
                                 },
                                 {
                                   "html": "Append to <var>string</var> an implementation specific string\n                  that, if parsed as <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a> using CSS syntax, would return the number\n                  value closest to <var>x</var>, given\n                  the implementation's supported <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#Precision\">real number precision</a>."
@@ -369,7 +369,7 @@
                               "html": "The string is the value that would be returned\n              from getting the value's <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueAsString\">valueAsString</a>\n              member."
                             },
                             {
-                              "case": "a DOMPoint object",
+                              "case": "a SVGPoint object",
                               "html": "The string value is computed as follows:",
                               "rationale": "let",
                               "steps": [
@@ -377,7 +377,7 @@
                                   "html": "Let <var>string</var> be an empty string."
                                 },
                                 {
-                                  "html": "Let <var>x</var> and <var>y</var> be the values of the\n                  <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> object's x and y coordinates, respectively."
+                                  "html": "Let <var>x</var> and <var>y</var> be the values of the\n                  <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> object's x and y coordinates, respectively."
                                 },
                                 {
                                   "html": "Append to <var>string</var> an implementation specific string\n                  that, if parsed as <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a> using CSS syntax, would return the number\n                  value closest to <var>x</var>, given\n                  the implementation's supported <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#Precision\">real number precision</a>."
@@ -434,7 +434,7 @@
                               "html": "The string is the value that would be returned\n              from getting the value's <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGLength__valueAsString\">valueAsString</a>\n              member."
                             },
                             {
-                              "case": "a DOMPoint object",
+                              "case": "a SVGPoint object",
                               "html": "The string value is computed as follows:",
                               "rationale": "let",
                               "steps": [
@@ -442,7 +442,7 @@
                                   "html": "Let <var>string</var> be an empty string."
                                 },
                                 {
-                                  "html": "Let <var>x</var> and <var>y</var> be the values of the\n                  <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> object's x and y coordinates, respectively."
+                                  "html": "Let <var>x</var> and <var>y</var> be the values of the\n                  <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> object's x and y coordinates, respectively."
                                 },
                                 {
                                   "html": "Append to <var>string</var> an implementation specific string\n                  that, if parsed as <a href=\"https://www.w3.org/TR/css3-values/#numbers\">&lt;number&gt;</a> using CSS syntax, would return the number\n                  value closest to <var>x</var>, given\n                  the implementation's supported <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#Precision\">real number precision</a>."
@@ -511,7 +511,7 @@
           ]
         },
         {
-          "html": "Return a newly created, <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#MatrixMode\">detached</a>\n  <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#DOMMatrix\">DOMMatrix</a> object that represents the same matrix as <var>ctm</var>."
+          "html": "Return a newly created, <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#MatrixMode\">detached</a>\n  <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dommatrix\">SVGMatrix</a> object that represents the same matrix as <var>ctm</var>."
         }
       ]
     },
@@ -529,7 +529,7 @@
           "html": "Let <var>ctm</var> be a matrix that transforms the coordinate\n  space of the current element (including its <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformProperty\">transform</a> property)\n  to the coordinate space of the document's viewport."
         },
         {
-          "html": "Return a newly created, <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#MatrixMode\">detached</a>\n  <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#DOMMatrix\">DOMMatrix</a> object that represents the same matrix as <var>ctm</var>."
+          "html": "Return a newly created, <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#MatrixMode\">detached</a>\n  <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dommatrix\">SVGMatrix</a> object that represents the same matrix as <var>ctm</var>."
         }
       ]
     },
@@ -550,7 +550,7 @@
           "html": "Let (<var>x</var>, <var>y</var>) be the point on the path at distance\n  <var>distance</var>."
         },
         {
-          "html": "Return a newly created, <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointMode\">detached</a>\n  <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> object representing the point\n  (<var>x</var>, <var>y</var>)."
+          "html": "Return a newly created, <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointMode\">detached</a>\n  <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> object representing the point\n  (<var>x</var>, <var>y</var>)."
         }
       ]
     },
@@ -1115,7 +1115,7 @@
           "html": "Let <var>new length</var> be the number of values in <var>value</var>.\n  If <var>value</var> is the keyword <span class=\"prop-value\">none</span>\n  (as supported by the <a class=\"property\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformProperty\">transform</a> property), <var>new length</var>\n  is 0."
         },
         {
-          "html": "If the list element type is <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGNumber\">SVGNumber</a>, <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a>, <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> or <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a>, then:",
+          "html": "If the list element type is <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGNumber\">SVGNumber</a>, <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a>, <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> or <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a>, then:",
           "rationale": "if",
           "steps": [
             {
@@ -1206,8 +1206,8 @@
               "html": "Set the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a> to no longer be\n    <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthAssociatedElement\">associated</a> with any element.\n    If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a> is <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#ReadOnlyLength\">read only</a>,\n    set it to be no longer read only.  Set the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGLength\">SVGLength</a> to have\n    unspecified <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#LengthAssociatedElement\">directionality</a>."
             },
             {
-              "case": "DOMPoint",
-              "html": "Set the <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> to no longer be\n    <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointAssociatedElement\">associated</a> with any element.\n    If the <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> is <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#ReadOnlyPoint\">read only</a>,\n    set it to be no longer read only."
+              "case": "SVGPoint",
+              "html": "Set the <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> to no longer be\n    <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointAssociatedElement\">associated</a> with any element.\n    If the <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> is <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#ReadOnlyPoint\">read only</a>,\n    set it to be no longer read only."
             },
             {
               "case": "SVGTransform",
@@ -1269,8 +1269,8 @@
               ]
             },
             {
-              "case": "DOMPoint",
-              "html": "<a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointAssociatedElement\">Associate</a> the\n    <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> with the element that the <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermListInterface\">list interface</a>\n    object is associated with.\n    Additionally, depending on which IDL attribute the <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermListInterface\">list interface</a>\n    object is reflected through:",
+              "case": "SVGPoint",
+              "html": "<a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointAssociatedElement\">Associate</a> the\n    <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> with the element that the <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermListInterface\">list interface</a>\n    object is associated with.\n    Additionally, depending on which IDL attribute the <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermListInterface\">list interface</a>\n    object is reflected through:",
               "rationale": ".switch",
               "steps": [
                 {
@@ -1278,11 +1278,11 @@
                   "steps": [
                     {
                       "case": "baseVal",
-                      "html": "Set the <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> to <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointMode\">reflect an\n        element of the base value</a>."
+                      "html": "Set the <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> to <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointMode\">reflect an\n        element of the base value</a>."
                     },
                     {
                       "case": "animVal",
-                      "html": "Set the <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> to <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointMode\">reflect an\n        element of the base value</a>."
+                      "html": "Set the <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> to <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointMode\">reflect an\n        element of the base value</a>."
                     }
                   ]
                 }
@@ -1684,7 +1684,7 @@
       ]
     },
     {
-      "html": "Upon creation of the <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedRect__baseVal\">baseVal</a>\nor <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedRect__animVal\">animVal</a>\n<a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#DOMRect\">DOMRect</a> objects, and afterwards whenever the reflected content attribute\nis added, removed, or changed, the following steps are run:",
+      "html": "Upon creation of the <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedRect__baseVal\">baseVal</a>\nor <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#__svg__SVGAnimatedRect__animVal\">animVal</a>\n<a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#domrect\">SVGRect</a> objects, and afterwards whenever the reflected content attribute\nis added, removed, or changed, the following steps are run:",
       "rationale": ".algorithm",
       "steps": [
         {
@@ -1694,7 +1694,7 @@
           "html": "Let <var>x</var>, <var>y</var>, <var>width</var> and <var>height</var>\n  be those corresponding components of <var>value</var>."
         },
         {
-          "html": "Set the <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#DOMRect\">DOMRect</a> object's\n  <a href=\"https://www.w3.org/TR/2014/WD-geometry-1-20140522/#x-coordinate\">x coordinate</a>,\n  <a href=\"https://www.w3.org/TR/2014/WD-geometry-1-20140522/#y-coordinate\">y coordinate</a>,\n  <a href=\"https://www.w3.org/TR/2014/WD-geometry-1-20140522/#width\">width</a> and\n  <a href=\"https://www.w3.org/TR/2014/WD-geometry-1-20140522/#height\">height</a>\n  to <var>x</var>, <var>y</var>, <var>width</var> and <var>height</var>,\n  respectively."
+          "html": "Set the <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#domrect\">SVGRect</a> object's\n  <a href=\"https://drafts.csswg.org/geometry-1/#rectangle-x-coordinate\">x coordinate</a>,\n  <a href=\"https://drafts.csswg.org/geometry-1/#rectangle-y-coordinate\">y coordinate</a>,\n  <a href=\"https://drafts.csswg.org/geometry-1/#rectangle-width-dimension\">width</a> and\n  <a href=\"https://drafts.csswg.org/geometry-1/#rectangle-height-dimension\">height</a>\n  to <var>x</var>, <var>y</var>, <var>width</var> and <var>height</var>,\n  respectively."
         }
       ]
     },
@@ -2300,7 +2300,7 @@
           "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a> object is <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#ReadOnlyTransform\">read only</a>, then\n  <a href=\"https://webidl.spec.whatwg.org/#dfn-throw\">throw</a> a <a href=\"https://webidl.spec.whatwg.org/#nomodificationallowederror\">NoModificationAllowedError</a>."
         },
         {
-          "html": "Let <var>newMatrix</var> be the result of <code><a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dommatrixreadonly\">DOMMatrixReadOnly</a>.fromMatrix(<var>matrix</var>)</code>,\n  including the <a href=\"https://drafts.csswg.org/geometry-1/#dommatrixinit-dictionary\">validate and fix-up</a> steps for missing values.\n  If that method throws an error, then re-throw that error and abort these steps."
+          "html": "Let <var>newMatrix</var> be the result of <code><a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dommatrixreadonly\">DOMMatrixReadOnly</a>.fromMatrix(<var>matrix</var>)</code>,\n  including the <a href=\"https://drafts.csswg.org/geometry-1/#dommatrixinit-dictionary\">validate and fix-up</a> steps for missing values.\n  If that method throws an error, then re-throw that error and abort these steps."
         },
         {
           "html": "If <var>newMatrix</var>.is2D() would return true,\n  then set the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a> object's\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformValue\">value</a> to a <span class=\"prop-value\">matrix(…)</span>\n  value that represents the same matrix as <var>newMatrix</var>."
@@ -2363,18 +2363,18 @@
       ]
     },
     {
-      "html": "When assigning to any of a writable <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#DOMMatrix\">DOMMatrix</a>'s\nIDL attributes, or when invoking any of its mutable transform methods,\nthe following steps are run after updating the internal matrix value:",
+      "html": "When assigning to any of a writable <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dommatrix\">SVGMatrix</a>'s\nIDL attributes, or when invoking any of its mutable transform methods,\nthe following steps are run after updating the internal matrix value:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#DOMMatrix\">DOMMatrix</a> <a href=\"https://w3c.github.io/svgwg/svg2-draft/#MatrixMode\">reflects an SVGTransform</a>,\n  then:",
+          "html": "If the <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dommatrix\">SVGMatrix</a> <a href=\"https://w3c.github.io/svgwg/svg2-draft/#MatrixMode\">reflects an SVGTransform</a>,\n  then:",
           "rationale": "if",
           "steps": [
             {
-              "html": "If the <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#DOMMatrix\">DOMMatrix</a> would return true from its\n      <a href=\"https://www.w3.org/TR/2014/WD-geometry-1-20140522/#dom-dommatrixreadonly-is2d\">is2d</a>\n      method, then set the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a> object's\n      <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformValue\">value</a> to a <span class=\"prop-value\">matrix(…)</span>\n      value that represents the same matrix as the <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#DOMMatrix\">DOMMatrix</a>."
+              "html": "If the <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dommatrix\">SVGMatrix</a> would return true from its\n      <a href=\"https://drafts.csswg.org/geometry-1/#dom-dommatrixreadonly-is2d\">is2d</a>\n      method, then set the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a> object's\n      <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformValue\">value</a> to a <span class=\"prop-value\">matrix(…)</span>\n      value that represents the same matrix as the <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dommatrix\">SVGMatrix</a>."
             },
             {
-              "html": "Otherwise, set the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a> object's\n      <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformValue\">value</a> to a <span class=\"prop-value\">matrix3d(…)</span>\n      value that represents the same matrix as the <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#DOMMatrix\">DOMMatrix</a>."
+              "html": "Otherwise, set the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a> object's\n      <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformValue\">value</a> to a <span class=\"prop-value\">matrix3d(…)</span>\n      value that represents the same matrix as the <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dommatrix\">SVGMatrix</a>."
             },
             {
               "html": "If the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#InterfaceSVGTransform\">SVGTransform</a> object\n      <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformMode\">reflects an element of a\n      presentation attribute value</a>, then <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize\">reserialize</a> the\n      reflected attribute."
@@ -2421,7 +2421,7 @@
           "html": "Set the components of <var>transform</var>'s\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformMatrixObject\">matrix object</a> to the component values in\n  <var>matrix</var>."
         },
         {
-          "html": "If <var>transform</var>'s\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformMatrixObject\">matrix object</a> would return true from its\n  <a href=\"https://www.w3.org/TR/2014/WD-geometry-1-20140522/#dom-dommatrixreadonly-is2d\">is2d</a>\n  method, then set <var>transform</var>'s\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformValue\">value</a> to a <span class=\"prop-value\">matrix(…)</span>\n  value that represents the same matrix as the <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformMatrixObject\">matrix object</a>."
+          "html": "If <var>transform</var>'s\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformMatrixObject\">matrix object</a> would return true from its\n  <a href=\"https://drafts.csswg.org/geometry-1/#dom-dommatrixreadonly-is2d\">is2d</a>\n  method, then set <var>transform</var>'s\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformValue\">value</a> to a <span class=\"prop-value\">matrix(…)</span>\n  value that represents the same matrix as the <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformMatrixObject\">matrix object</a>."
         },
         {
           "html": "Otherwise, set <var>transform</var>'s\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformValue\">value</a> to a <span class=\"prop-value\">matrix3d(…)</span>\n  value that represents the same matrix as the <a href=\"https://w3c.github.io/svgwg/svg2-draft/coords.html#TransformMatrixObject\">matrix object</a>."
@@ -2594,21 +2594,21 @@
       ]
     },
     {
-      "html": "When assigning to a writable <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a>'s\n<a href=\"https://www.w3.org/TR/2014/WD-geometry-1-20140522/#dom-dompointreadonly-dompoint-x\">x</a>,\n<a href=\"https://www.w3.org/TR/2014/WD-geometry-1-20140522/#dom-dompointreadonly-dompoint-y\">y</a>,\n<a href=\"https://www.w3.org/TR/2014/WD-geometry-1-20140522/#dom-dompointreadonly-dompoint-w\">w</a> or\n<a href=\"https://www.w3.org/TR/2014/WD-geometry-1-20140522/#dom-dompointreadonly-dompoint-z\">z</a>\nIDL attribute, the following steps are run after updating\nthe internal coordinate value:",
+      "html": "When assigning to a writable <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a>'s\n<a href=\"https://drafts.csswg.org/geometry-1/#dom-dompointreadonly-x\">x</a>,\n<a href=\"https://drafts.csswg.org/geometry-1/#dom-dompointreadonly-y\">y</a>,\n<a href=\"https://drafts.csswg.org/geometry-1/#dom-dompointreadonly-w\">w</a> or\n<a href=\"https://drafts.csswg.org/geometry-1/#dom-dompointreadonly-z\">z</a>\nIDL attribute, the following steps are run after updating\nthe internal coordinate value:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If the <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointMode\">reflects an element of the\n  base value</a> of a <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\">reflected</a> attribute, then <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize\">reserialize</a>\n  the reflected attribute using the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#InterfaceSVGPointList\">SVGPointList</a> that reflects\n  the attribute's base value."
+          "html": "If the <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointMode\">reflects an element of the\n  base value</a> of a <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReflect\">reflected</a> attribute, then <a href=\"https://w3c.github.io/svgwg/svg2-draft/types.html#TermReserialize\">reserialize</a>\n  the reflected attribute using the <a class=\"idlinterface\" href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#InterfaceSVGPointList\">SVGPointList</a> that reflects\n  the attribute's base value."
         },
         {
-          "html": "Otherwise, if the <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> <a href=\"https://w3c.github.io/svgwg/svg2-draft/#PointMode\">represents\n  the current translation</a> of an <span class=\"element-name\">‘<a href=\"https://w3c.github.io/svgwg/svg2-draft/struct.html#SVGElement\"><span>svg</span></a>’</span> element and that\n  element is the <a href=\"https://w3c.github.io/svgwg/svg2-draft/struct.html#TermOutermostSVGElement\">outermost svg element</a>, then:",
+          "html": "Otherwise, if the <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> <a href=\"https://w3c.github.io/svgwg/svg2-draft/#PointMode\">represents\n  the current translation</a> of an <span class=\"element-name\">‘<a href=\"https://w3c.github.io/svgwg/svg2-draft/struct.html#SVGElement\"><span>svg</span></a>’</span> element and that\n  element is the <a href=\"https://w3c.github.io/svgwg/svg2-draft/struct.html#TermOutermostSVGElement\">outermost svg element</a>, then:",
           "rationale": "let",
           "steps": [
             {
               "html": "Let [<var>a</var> <var>b</var> <var>c</var> <var>d</var> <var>e</var> <var>f</var>]\n      be the 2x3 matrix that represents the document's magnification and panning\n      transform."
             },
             {
-              "html": "Let <var>x</var> and <var>y</var> be the x and y coordinates of the\n      <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> object, respectively."
+              "html": "Let <var>x</var> and <var>y</var> be the x and y coordinates of the\n      <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> object, respectively."
             },
             {
               "html": "Set the document's magnification and panning transform to\n      [<var>a</var> 0 0 <var>d</var> <var>x</var> <var>y</var>]."
@@ -3394,7 +3394,7 @@
           "html": "Let <var>p</var> be the\n  <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermAlignmentPoint\">alignment point</a> of the <a href=\"https://w3c.github.io/svgwg/svg2-draft/text.html#TermTypographicCharacterUnit\">typographic character</a>\n  that correspond to the character at index <var>charnum</var>,\n  in the coordinate system of the current element."
         },
         {
-          "html": "Return a newly created, <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointMode\">detached</a>\n  <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> object representing the point <var>p</var>."
+          "html": "Return a newly created, <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointMode\">detached</a>\n  <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> object representing the point <var>p</var>."
         }
       ]
     },
@@ -3421,7 +3421,7 @@
           "html": "Set <var>p</var> to <var>p</var> + <var>advance</var> · <var>direction</var>."
         },
         {
-          "html": "Return a newly created, <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointMode\">detached</a>\n  <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#dom-dompoint\">DOMPoint</a> object representing the point <var>p</var>."
+          "html": "Return a newly created, <a href=\"https://w3c.github.io/svgwg/svg2-draft/shapes.html#PointMode\">detached</a>\n  <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#dompoint\">SVGPoint</a> object representing the point <var>p</var>."
         }
       ]
     },
@@ -3442,7 +3442,7 @@
           "html": "Let <var>rect</var> be the rectangle that forms the tightest\n  bounding box around <var>quad</var> in the current element's\n  coordinate system."
         },
         {
-          "html": "Return a newly created <a class=\"idlinterface\" href=\"https://www.w3.org/TR/geometry-1/#DOMRect\">DOMRect</a> object representing the\n  rectangle <var>rect</var>."
+          "html": "Return a newly created <a class=\"idlinterface\" href=\"https://drafts.csswg.org/geometry-1/#domrect\">SVGRect</a> object representing the\n  rectangle <var>rect</var>."
         }
       ]
     },

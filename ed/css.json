@@ -1014,7 +1014,7 @@
     },
     {
       "name": "@route",
-      "prose": "The @route rule is an at-rule that associates an author-defined name with a URL pattern. This name can be referenced in @navigation rules and in :active-navigation() pseudo-classes.",
+      "prose": "The @route rule is an at-rule that associates an author-defined name with a URL pattern. This name can be referenced in @navigation rules and in :link-to() pseudo-classes.",
       "href": "https://drafts.csswg.org/css-navigation-1/#at-ruledef-route",
       "descriptors": [],
       "syntax": "<route-rule>",
@@ -1132,7 +1132,7 @@
           "href": "https://drafts.csswg.org/css-view-transitions-2/#descdef-view-transition-types",
           "for": "@view-transition",
           "initial": "none",
-          "syntax": "none | <custom-ident>+"
+          "syntax": "none | <view-transition-type>+"
         }
       ],
       "syntax": "@view-transition { <declaration-list> }",
@@ -2287,7 +2287,7 @@
     },
     {
       "name": "view()",
-      "prose": "The view() functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a view progress timeline in reference to the nearest ancestor scroll container. Its syntax is",
+      "prose": "The view() functional notation can be used as a <single-animation-timeline> value in animation-timeline and specifies a view progress timeline in reference to the nearest ancestor scroll container that’s scrollable in the specified axis. Its syntax is",
       "href": "https://drafts.csswg.org/scroll-animations-1/#funcdef-view",
       "syntax": "view( [ <axis> || <'view-timeline-inset'> ]? )",
       "extended": []
@@ -17129,12 +17129,6 @@
       "extended": []
     },
     {
-      "name": ":active-navigation()",
-      "prose": "This specification defines a new :active-navigation() functional pseudo-class that matches link elements that link to a certain URL that is related to a navigation that is currently active.",
-      "href": "https://drafts.csswg.org/css-navigation-1/#active-navigation-pseudo",
-      "extended": []
-    },
-    {
       "name": ":active-view-transition",
       "prose": "The :active-view-transition pseudo-class applies to the root element of the document, if it has an active view transition.",
       "href": "https://drafts.csswg.org/css-view-transitions-2/#active-view-transition-pseudo",
@@ -17513,6 +17507,13 @@
       "extended": []
     },
     {
+      "name": ":nav-source",
+      "prose": "This specification defines a :nav-source pseudo-class, matching the element that triggered the current navigation. It is a CSS reflection of the sourceElement property in the Navigation API. The trigger element can be an [^a^], [^area^], [^form^], a [^input/type/submit^] input, or a [^button^].",
+      "href": "https://drafts.csswg.org/css-navigation-1/#nav-source-pseudo",
+      "syntax": ":nav-source",
+      "extended": []
+    },
+    {
       "name": ":not()",
       "prose": "The negation pseudo-class, :not(), is a functional pseudo-class taking a <complex-real-selector-list> as an argument. It represents an element that is not represented by its argument.",
       "href": "https://drafts.csswg.org/selectors-4/#negation-pseudo",
@@ -17783,13 +17784,6 @@
       "extended": []
     },
     {
-      "name": ":trigger-link",
-      "prose": "This specification defines a new :trigger-link that matches link elements that trigger the current navigation.",
-      "href": "https://drafts.csswg.org/css-navigation-1/#trigger-link-pseudo",
-      "syntax": ":trigger-link",
-      "extended": []
-    },
-    {
       "name": ":unchecked",
       "prose": "When such elements are toggled “on” the :checked pseudo-class applies. For example, [HTML5] defines that checked checkboxes, radio buttons, and selected <option> elements match :checked. Similarly, when such elements are toggled “off”, the :unchecked pseudo-class applies.",
       "href": "https://drafts.csswg.org/selectors-4/#unchecked-pseudo",
@@ -17927,12 +17921,6 @@
       "name": "absolute-size",
       "href": "https://drafts.csswg.org/css-fonts-4/#typedef-absolute-size",
       "syntax": "[ xx-small | x-small | small | medium | large | x-large | xx-large | xxx-large ]",
-      "extended": []
-    },
-    {
-      "name": "active-navigation-condition",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-active-navigation-condition",
-      "syntax": "<navigation-relation>? [ <route-location> | link-href ]?",
       "extended": []
     },
     {
@@ -19886,15 +19874,9 @@
       "extended": []
     },
     {
-      "name": "navigation-location-keyword",
-      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-keyword",
-      "syntax": "at | with | from | to",
-      "extended": []
-    },
-    {
       "name": "navigation-location-test",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-navigation-location-test",
-      "syntax": "<navigation-location-keyword> : <route-location>",
+      "syntax": "<navigation-relation> : <route-location>",
       "extended": []
     },
     {
@@ -20440,7 +20422,7 @@
     {
       "name": "route-location",
       "href": "https://drafts.csswg.org/css-navigation-1/#typedef-route-location",
-      "syntax": "<route-name> | <url-pattern()> | <url>",
+      "syntax": "<url> | [ [ <route-name> | <url-pattern()> ] <url-pattern-param-matcher>? ]",
       "extended": []
     },
     {
@@ -21104,6 +21086,18 @@
       "extended": []
     },
     {
+      "name": "url-pattern-param",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-url-pattern-param",
+      "syntax": "<ident>: <any-value>",
+      "extended": []
+    },
+    {
+      "name": "url-pattern-param-matcher",
+      "href": "https://drafts.csswg.org/css-navigation-1/#typedef-url-pattern-param-matcher",
+      "syntax": "with (<url-pattern-param># | [ all from <url> ])",
+      "extended": []
+    },
+    {
       "for": [
         "cursor"
       ],
@@ -21131,6 +21125,12 @@
       "name": "vertical-line-command",
       "href": "https://drafts.csswg.org/css-shapes-1/#typedef-shape-vertical-line-command",
       "syntax": "vline [ to [ <length-percentage> | top | center | bottom | y-start | y-end ] | by <length-percentage> ]",
+      "extended": []
+    },
+    {
+      "name": "view-transition-type",
+      "prose": "where <view-transition-type> is any <custom-ident> other than none, and not starting with the string \"-ua-\".",
+      "href": "https://drafts.csswg.org/css-view-transitions-2/#typedef-view-transition-type",
       "extended": []
     },
     {

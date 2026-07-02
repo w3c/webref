@@ -8,21 +8,21 @@ interface SVGSVGElement : SVGGraphicsElement {
   [SameObject] readonly attribute SVGAnimatedLength height;
 
   attribute float currentScale;
-  [SameObject] readonly attribute DOMPointReadOnly currentTranslate;
+  [SameObject] readonly attribute SVGPoint currentTranslate;
 
-  NodeList getIntersectionList(DOMRectReadOnly rect, SVGElement? referenceElement);
-  NodeList getEnclosureList(DOMRectReadOnly rect, SVGElement? referenceElement);
-  boolean checkIntersection(SVGElement element, DOMRectReadOnly rect);
-  boolean checkEnclosure(SVGElement element, DOMRectReadOnly rect);
+  NodeList getIntersectionList(SVGRect rect, SVGElement? referenceElement);
+  NodeList getEnclosureList(SVGRect rect, SVGElement? referenceElement);
+  boolean checkIntersection(SVGElement element, SVGRect rect);
+  boolean checkEnclosure(SVGElement element, SVGRect rect);
 
   undefined deselectAll();
 
   [NewObject] SVGNumber createSVGNumber();
   [NewObject] SVGLength createSVGLength();
   [NewObject] SVGAngle createSVGAngle();
-  [NewObject] DOMPoint createSVGPoint();
-  [NewObject] DOMMatrix createSVGMatrix();
-  [NewObject] DOMRect createSVGRect();
+  [NewObject] SVGPoint createSVGPoint();
+  [NewObject] SVGMatrix createSVGMatrix();
+  [NewObject] SVGRect createSVGRect();
   [NewObject] SVGTransform createSVGTransform();
   [NewObject] SVGTransform createSVGTransformFromMatrix(optional DOMMatrix2DInit matrix = {});
 

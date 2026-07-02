@@ -6,7 +6,7 @@
       "title": "Scalable Vector Graphics (SVG) 2",
       "url": "https://www.w3.org/TR/SVG2/"
     },
-    "fragment": "[Exposed=Window]\ninterface SVGSVGElement : SVGGraphicsElement {\n\n  [SameObject] readonly attribute SVGAnimatedLength x;\n  [SameObject] readonly attribute SVGAnimatedLength y;\n  [SameObject] readonly attribute SVGAnimatedLength width;\n  [SameObject] readonly attribute SVGAnimatedLength height;\n\n  attribute float currentScale;\n  [SameObject] readonly attribute DOMPointReadOnly currentTranslate;\n\n  NodeList getIntersectionList(DOMRectReadOnly rect, SVGElement? referenceElement);\n  NodeList getEnclosureList(DOMRectReadOnly rect, SVGElement? referenceElement);\n  boolean checkIntersection(SVGElement element, DOMRectReadOnly rect);\n  boolean checkEnclosure(SVGElement element, DOMRectReadOnly rect);\n\n  undefined deselectAll();\n\n  [NewObject] SVGNumber createSVGNumber();\n  [NewObject] SVGLength createSVGLength();\n  [NewObject] SVGAngle createSVGAngle();\n  [NewObject] DOMPoint createSVGPoint();\n  [NewObject] DOMMatrix createSVGMatrix();\n  [NewObject] DOMRect createSVGRect();\n  [NewObject] SVGTransform createSVGTransform();\n  [NewObject] SVGTransform createSVGTransformFromMatrix(optional DOMMatrix2DInit matrix = {});\n\n  Element? getElementById(DOMString elementId);\n\n  // Deprecated methods that have no effect when called,\n  // but which are kept for compatibility reasons.\n  unsigned long suspendRedraw(unsigned long maxWaitMilliseconds);\n  undefined unsuspendRedraw(unsigned long suspendHandleID);\n  undefined unsuspendRedrawAll();\n  undefined forceRedraw();\n};",
+    "fragment": "[Exposed=Window]\ninterface SVGSVGElement : SVGGraphicsElement {\n\n  [SameObject] readonly attribute SVGAnimatedLength x;\n  [SameObject] readonly attribute SVGAnimatedLength y;\n  [SameObject] readonly attribute SVGAnimatedLength width;\n  [SameObject] readonly attribute SVGAnimatedLength height;\n\n  attribute float currentScale;\n  [SameObject] readonly attribute SVGPoint currentTranslate;\n\n  NodeList getIntersectionList(SVGRect rect, SVGElement? referenceElement);\n  NodeList getEnclosureList(SVGRect rect, SVGElement? referenceElement);\n  boolean checkIntersection(SVGElement element, SVGRect rect);\n  boolean checkEnclosure(SVGElement element, SVGRect rect);\n\n  undefined deselectAll();\n\n  [NewObject] SVGNumber createSVGNumber();\n  [NewObject] SVGLength createSVGLength();\n  [NewObject] SVGAngle createSVGAngle();\n  [NewObject] SVGPoint createSVGPoint();\n  [NewObject] SVGMatrix createSVGMatrix();\n  [NewObject] SVGRect createSVGRect();\n  [NewObject] SVGTransform createSVGTransform();\n  [NewObject] SVGTransform createSVGTransformFromMatrix(optional DOMMatrix2DInit matrix = {});\n\n  Element? getElementById(DOMString elementId);\n\n  // Deprecated methods that have no effect when called,\n  // but which are kept for compatibility reasons.\n  unsigned long suspendRedraw(unsigned long maxWaitMilliseconds);\n  undefined unsuspendRedraw(unsigned long suspendHandleID);\n  undefined unsuspendRedrawAll();\n  undefined forceRedraw();\n};",
     "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#InterfaceSVGSVGElement"
   },
   "extended": [
@@ -40,7 +40,7 @@
         "title": "Scalable Vector Graphics (SVG) 2",
         "url": "https://www.w3.org/TR/SVG2/"
       },
-      "fragment": "[Exposed=Window]\ninterface SVGGraphicsElement : SVGElement {\n  [SameObject] readonly attribute SVGAnimatedTransformList transform;\n\n  DOMRect getBBox(optional SVGBoundingBoxOptions options = {});\n  DOMMatrix? getCTM();\n  DOMMatrix? getScreenCTM();\n};",
+      "fragment": "[Exposed=Window]\ninterface SVGGraphicsElement : SVGElement {\n  [SameObject] readonly attribute SVGAnimatedTransformList transform;\n\n  SVGRect getBBox(optional SVGBoundingBoxOptions options = {});\n  SVGMatrix? getCTM();\n  SVGMatrix? getScreenCTM();\n};",
       "href": "https://w3c.github.io/svgwg/svg2-draft/types.html#InterfaceSVGGraphicsElement"
     },
     "extended": [
@@ -367,7 +367,7 @@
                 "title": "CSSOM View Module Level 1",
                 "url": "https://www.w3.org/TR/cssom-view-1/"
               },
-              "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
+              "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {});\n};",
               "href": "https://drafts.csswg.org/cssom-view-1/#geometryutils"
             },
             "extended": [],

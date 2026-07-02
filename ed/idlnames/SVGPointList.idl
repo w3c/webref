@@ -6,11 +6,11 @@ interface SVGPointList {
   readonly attribute unsigned long numberOfItems;
 
   undefined clear();
-  DOMPoint initialize(DOMPoint newItem);
-  getter DOMPoint getItem(unsigned long index);
-  DOMPoint insertItemBefore(DOMPoint newItem, unsigned long index);
-  DOMPoint replaceItem(DOMPoint newItem, unsigned long index);
-  DOMPoint removeItem(unsigned long index);
-  DOMPoint appendItem(DOMPoint newItem);
-  setter undefined (unsigned long index, DOMPoint newItem);
+  SVGPoint initialize(SVGPoint newItem);
+  getter SVGPoint getItem(unsigned long index);
+  SVGPoint insertItemBefore(SVGPoint newItem, unsigned long index);
+  SVGPoint replaceItem(SVGPoint newItem, unsigned long index);
+  SVGPoint removeItem(unsigned long index);
+  SVGPoint appendItem(SVGPoint newItem);
+  setter undefined (unsigned long index, SVGPoint newItem);
 };

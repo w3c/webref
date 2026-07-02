@@ -561,6 +561,7 @@
       "https://infra.spec.whatwg.org/": {},
       "https://lists.w3.org/Archives/Public/public-css-archive/": {},
       "https://lists.w3.org/Archives/Public/www-style/": {},
+      "https://tc39.es/ecma262/multipage/": {},
       "https://w3c.github.io/pointerevents/": {},
       "https://w3c.github.io/svgwg/svg2-draft/": {},
       "https://w3c.github.io/webdriver-bidi/": {},
@@ -840,7 +841,14 @@
           "margin-edge",
           "padding-edge",
           "border-edge",
-          "border-box"
+          "border-box",
+          "margin-box",
+          "padding-box",
+          "content-box",
+          "border-area",
+          "margin-area",
+          "padding-area",
+          "content-area"
         ]
       },
       "https://drafts.csswg.org/css-break-4/": {
@@ -937,6 +945,12 @@
           "typographic-character-unit"
         ]
       },
+      "https://drafts.csswg.org/css-transforms-1/": {
+        "anchors": [
+          "current-transformation-matrix",
+          "funcdef-transform-scale"
+        ]
+      },
       "https://drafts.csswg.org/css-ui-4/": {
         "anchors": [
           "propdef-pointer-events"
@@ -989,7 +1003,12 @@
           "dictdef-domquadinit",
           "domrectreadonly",
           "dompoint",
-          "dictdef-dompointinit"
+          "dictdef-dompointinit",
+          "dommatrix",
+          "dom-dompointreadonly-x",
+          "dom-dompointreadonly-y",
+          "dom-domquad-fromrect",
+          "dom-domquad-p1"
         ]
       },
       "https://drafts.csswg.org/mediaqueries-5/": {
@@ -999,7 +1018,8 @@
       },
       "https://drafts.csswg.org/selectors-4/": {
         "anchors": [
-          "pseudo-element"
+          "pseudo-element",
+          "originating-element"
         ]
       },
       "https://html.spec.whatwg.org/multipage/browsers.html": {
@@ -1080,7 +1100,13 @@
           "ordered-map",
           "map-exists",
           "list-contain",
-          "tuple"
+          "tuple",
+          "list-append"
+        ]
+      },
+      "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html": {
+        "anchors": [
+          "sec-list-and-record-specification-type"
         ]
       },
       "https://w3c.github.io/pointerevents/": {

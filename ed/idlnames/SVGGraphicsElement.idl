@@ -3,9 +3,9 @@
 interface SVGGraphicsElement : SVGElement {
   [SameObject] readonly attribute SVGAnimatedTransformList transform;
 
-  DOMRect getBBox(optional SVGBoundingBoxOptions options = {});
-  DOMMatrix? getCTM();
-  DOMMatrix? getScreenCTM();
+  SVGRect getBBox(optional SVGBoundingBoxOptions options = {});
+  SVGMatrix? getCTM();
+  SVGMatrix? getScreenCTM();
 };
 
 // Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
