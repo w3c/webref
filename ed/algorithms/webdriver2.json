@@ -2517,14 +2517,14 @@
     {
       "name": "not in the same tree",
       "href": "https://w3c.github.io/webdriver/#dfn-not-in-the-same-tree",
-      "html": "To determine if <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-index-term-node-1\">node</a> is <dfn id=\"dfn-not-in-the-same-tree\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">not in the same tree</dfn>\n as another <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-index-term-node-2\">node</a>, <var>other</var>,\n run the following substeps:",
+      "html": "To determine if a <a data-link-type=\"interface\" data-lt=\"Node\" href=\"https://dom.spec.whatwg.org/#node\" id=\"ref-for-index-term-node-interface-1\"><code>Node</code></a> <var>node</var> is <dfn id=\"dfn-not-in-the-same-tree\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">not in the same tree</dfn> as a <a data-link-type=\"interface\" data-lt=\"Node\" href=\"https://dom.spec.whatwg.org/#node\" id=\"ref-for-index-term-node-interface-2\"><code>Node</code></a> <var>other</var>,\n run the following substeps:",
       "rationale": "if",
       "steps": [
         {
-          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-index-term-node-3\">node</a>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-index-term-node-document-for-node-3\">node document</a>\n  is not <var>other</var>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-index-term-node-document-for-node-4\">node document</a>,\n  return true.\n\n </p>"
+          "html": "<p>If <var>node</var>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-index-term-node-document-for-node-3\">node document</a>\n  is not <var>other</var>'s <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node-document\" id=\"ref-for-index-term-node-document-for-node-4\">node document</a>,\n  return true.\n\n </p>"
         },
         {
-          "html": "<p>Return true if the result of calling the <a data-link-type=\"dfn\" href=\"https://dom.spec.whatwg.org/#concept-node\" id=\"ref-for-index-term-node-4\">node</a>'s\n  <a data-link-type=\"method\" data-lt=\"compareDocumentPosition()\" href=\"https://dom.spec.whatwg.org/#dom-node-comparedocumentposition\" id=\"ref-for-index-term-comparedocumentposition-for-node-1\"><code>compareDocumentPosition</code></a><code>()</code> with <var>other</var> as argument\n  is <a data-link-type=\"const\" href=\"https://dom.spec.whatwg.org/#dom-node-document_position_disconnected\" id=\"ref-for-index-term-document_position_disconnected-for-node-1\"><code>DOCUMENT_POSITION_DISCONNECTED</code></a> (1),\n  otherwise return false.\n</p>"
+          "html": "<p>Return true if the result of calling <var>node</var>'s\n  <a data-link-type=\"method\" data-lt=\"compareDocumentPosition()\" href=\"https://dom.spec.whatwg.org/#dom-node-comparedocumentposition\" id=\"ref-for-index-term-comparedocumentposition-for-node-1\"><code>compareDocumentPosition</code></a><code>()</code> with <var>other</var> as argument\n  is <a data-link-type=\"const\" href=\"https://dom.spec.whatwg.org/#dom-node-document_position_disconnected\" id=\"ref-for-index-term-document_position_disconnected-for-node-1\"><code>DOCUMENT_POSITION_DISCONNECTED</code></a> (1),\n  otherwise return false.\n</p>"
         }
       ]
     },
