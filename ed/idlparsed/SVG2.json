@@ -3811,7 +3811,7 @@
         "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#InterfaceSVGSymbolElement"
       },
       "SVGUseElement": {
-        "fragment": "[Exposed=Window]\ninterface SVGUseElement : SVGGraphicsElement {\n  [SameObject] readonly attribute SVGAnimatedLength x;\n  [SameObject] readonly attribute SVGAnimatedLength y;\n  [SameObject] readonly attribute SVGAnimatedLength width;\n  [SameObject] readonly attribute SVGAnimatedLength height;\n  [SameObject] readonly attribute SVGElement? instanceRoot;\n  [SameObject] readonly attribute SVGElement? animatedInstanceRoot;\n};",
+        "fragment": "[Exposed=Window]\ninterface SVGUseElement : SVGGraphicsElement {\n  [SameObject] readonly attribute SVGAnimatedLength x;\n  [SameObject] readonly attribute SVGAnimatedLength y;\n  [SameObject] readonly attribute SVGAnimatedLength width;\n  [SameObject] readonly attribute SVGAnimatedLength height;\n};",
         "type": "interface",
         "name": "SVGUseElement",
         "inheritance": "SVGGraphicsElement",
@@ -3907,52 +3907,6 @@
             "special": "",
             "readonly": true,
             "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#__svg__SVGUseElement__height"
-          },
-          {
-            "type": "attribute",
-            "name": "instanceRoot",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "SVGElement"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#__svg__SVGUseElement__instanceRoot"
-          },
-          {
-            "type": "attribute",
-            "name": "animatedInstanceRoot",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "SVGElement"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true,
-            "href": "https://w3c.github.io/svgwg/svg2-draft/struct.html#__svg__SVGUseElement__animatedInstanceRoot"
           }
         ],
         "extAttrs": [
@@ -9397,7 +9351,6 @@
       "SVGUseElement": [
         "SVGGraphicsElement",
         "SVGAnimatedLength",
-        "SVGElement",
         "SVGURIReference"
       ],
       "SVGUseElementShadowRoot": [
