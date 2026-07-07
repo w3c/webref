@@ -6,7 +6,7 @@
       "title": "DOM Standard",
       "url": "https://dom.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=Window]\ninterface Attr : Node {\n  readonly attribute DOMString? namespaceURI;\n  readonly attribute DOMString? prefix;\n  readonly attribute DOMString localName;\n  readonly attribute DOMString name;\n  [CEReactions] attribute DOMString value;\n\n  readonly attribute Element? ownerElement;\n\n  readonly attribute boolean specified; // useless; always returns true\n};",
+    "fragment": "[Exposed=Window]\ninterface Attr : Node {\n  readonly attribute DOMString? namespaceURI;\n  readonly attribute DOMString? prefix;\n  readonly attribute DOMString localName;\n  readonly attribute DOMString name;\n  [CEReactions] attribute DOMString value;\n\n  readonly attribute Element? ownerElement;\n\n  readonly attribute boolean specified; // historical; always returns true\n};",
     "href": "https://dom.spec.whatwg.org/#attr"
   },
   "extended": [],

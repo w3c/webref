@@ -5372,7 +5372,7 @@
         "href": "https://dom.spec.whatwg.org/#dictdef-importnodeoptions"
       },
       "DOMImplementation": {
-        "fragment": "[Exposed=Window]\ninterface DOMImplementation {\n  [NewObject] DocumentType createDocumentType(DOMString name, DOMString publicId, DOMString systemId);\n  [NewObject] XMLDocument createDocument(DOMString? namespace, [LegacyNullToEmptyString] DOMString qualifiedName, optional DocumentType? doctype = null);\n  [NewObject] Document createHTMLDocument(optional DOMString title);\n\n  boolean hasFeature(); // useless; always returns true\n};",
+        "fragment": "[Exposed=Window]\ninterface DOMImplementation {\n  [NewObject] DocumentType createDocumentType(DOMString name, DOMString publicId, DOMString systemId);\n  [NewObject] XMLDocument createDocument(DOMString? namespace, [LegacyNullToEmptyString] DOMString qualifiedName, optional DocumentType? doctype = null);\n  [NewObject] Document createHTMLDocument(optional DOMString title);\n\n  boolean hasFeature(); // historical; always returns true\n};",
         "type": "interface",
         "name": "DOMImplementation",
         "inheritance": null,
@@ -7640,7 +7640,7 @@
         "href": "https://dom.spec.whatwg.org/#namednodemap"
       },
       "Attr": {
-        "fragment": "[Exposed=Window]\ninterface Attr : Node {\n  readonly attribute DOMString? namespaceURI;\n  readonly attribute DOMString? prefix;\n  readonly attribute DOMString localName;\n  readonly attribute DOMString name;\n  [CEReactions] attribute DOMString value;\n\n  readonly attribute Element? ownerElement;\n\n  readonly attribute boolean specified; // useless; always returns true\n};",
+        "fragment": "[Exposed=Window]\ninterface Attr : Node {\n  readonly attribute DOMString? namespaceURI;\n  readonly attribute DOMString? prefix;\n  readonly attribute DOMString localName;\n  readonly attribute DOMString name;\n  [CEReactions] attribute DOMString value;\n\n  readonly attribute Element? ownerElement;\n\n  readonly attribute boolean specified; // historical; always returns true\n};",
         "type": "interface",
         "name": "Attr",
         "inheritance": "Node",

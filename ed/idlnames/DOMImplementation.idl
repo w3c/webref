@@ -5,5 +5,5 @@ interface DOMImplementation {
   [NewObject] XMLDocument createDocument(DOMString? namespace, [LegacyNullToEmptyString] DOMString qualifiedName, optional DocumentType? doctype = null);
   [NewObject] Document createHTMLDocument(optional DOMString title);
 
-  boolean hasFeature(); // useless; always returns true
+  boolean hasFeature(); // historical; always returns true
 };
