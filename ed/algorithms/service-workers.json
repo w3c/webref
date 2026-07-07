@@ -2915,16 +2915,13 @@
               ]
             },
             {
-              "html": "<p>Let <var>serviceWorkerAllowed</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#extract-header-list-values\" id=\"ref-for-extract-header-list-values\">extracting header list values</a> given `<code>Service-Worker-Allowed</code>` and <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list④\">header list</a>.</p>"
+              "html": "<p>Let <var>serviceWorkerAllowed</var> be the result of <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-header-list-get\" id=\"ref-for-concept-header-list-get\">get</a> `<code>Service-Worker-Allowed</code>` from <var>response</var>’s <a data-link-type=\"dfn\" href=\"https://fetch.spec.whatwg.org/#concept-response-header-list\" id=\"ref-for-concept-response-header-list④\">header list</a>.</p>"
+            },
+            {
+              "html": "<p>If <var>serviceWorkerAllowed</var> is not null, then set <var>serviceWorkerAllowed</var> to the result of <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#isomorphic-decode\" id=\"ref-for-isomorphic-decode\">isomorphic decode</a> <var>serviceWorkerAllowed</var>.</p>"
             },
             {
               "html": "<p>Set <var>policyContainer</var> to the result of <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/browsers.html#creating-a-policy-container-from-a-fetch-response\" id=\"ref-for-creating-a-policy-container-from-a-fetch-response\">creating a policy container from a fetch response</a> given <var>response</var>.</p>"
-            },
-            {
-              "html": "<p>If <var>serviceWorkerAllowed</var> is failure, then:</p>",
-              "ignored": [
-                "Asynchronously complete these steps with a network error."
-              ]
             },
             {
               "html": "<p>Let <var>scopeURL</var> be <var>registration</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-scope-url\" id=\"ref-for-dfn-scope-url①③\">scope url</a>.</p>"
@@ -2950,6 +2947,12 @@
               "steps": [
                 {
                   "html": "<p>Let <var>maxScope</var> be the result of <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-parser\" id=\"ref-for-concept-url-parser⑦\">parsing</a> <var>serviceWorkerAllowed</var> using <var>job</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-job-script-url\" id=\"ref-for-dfn-job-script-url⑨\">script url</a> as the <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-script-base-url\" id=\"ref-for-concept-script-base-url①\">base URL</a>.</p>"
+                },
+                {
+                  "html": "<p>If <var>maxScope</var> is failure, then:</p>",
+                  "ignored": [
+                    "Asynchronously complete these steps with a network error."
+                  ]
                 },
                 {
                   "html": "If <var>maxScope</var>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin⑥\">origin</a> is <var>job</var>’s <a data-link-type=\"dfn\" href=\"https://w3c.github.io/ServiceWorker/#dfn-job-script-url\" id=\"ref-for-dfn-job-script-url①⓪\">script url</a>’s <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-origin\" id=\"ref-for-concept-url-origin⑦\">origin</a>, then:",
