@@ -15,93 +15,17 @@
           "steps": [
             {
               "case": "the <route-location> is a <route-name>",
-              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern\">URL pattern</a> represented by the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-navigation-1/#at-ruledef-route\" id=\"ref-for-at-ruledef-route\">@route</a> rule referenced by the name <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#match-url-pattern-with-params\" id=\"ref-for-match-url-pattern-with-params\">matches</a> <var>input</var> given the provided <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-url-pattern-param-matcher\" id=\"ref-for-typedef-url-pattern-param-matcher②\">&lt;url-pattern-param-matcher&gt;</a> (if exists).</p>"
+              "html": "<p>The <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern\">URL pattern</a> represented by the <a class=\"css\" data-link-type=\"maybe\" href=\"https://drafts.csswg.org/css-navigation-1/#at-ruledef-route\" id=\"ref-for-at-ruledef-route\">@route</a> rule referenced by the name <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" id=\"ref-for-url-pattern-match\">matching</a> <var>input</var>.</p>"
             },
             {
               "case": "the <route-location> is a <url-pattern()>",
-              "html": "<p>The provided <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern①\">URL pattern</a> <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#match-url-pattern-with-params\" id=\"ref-for-match-url-pattern-with-params①\">matches</a> <var>input</var> given the provided <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-url-pattern-param-matcher\" id=\"ref-for-typedef-url-pattern-param-matcher③\">&lt;url-pattern-param-matcher&gt;</a> (if exists).</p>"
+              "html": "<p>The provided <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern①\">URL pattern</a><a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" id=\"ref-for-url-pattern-match①\">matches</a> <var>input</var>.</p>"
             },
             {
               "case": "the <route-location> is a <url>",
               "html": "<p>The provided <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url①\">URL</a> <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url-equals\" id=\"ref-for-concept-url-equals\">equals</a> <var>input</var>.</p>"
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "match URL pattern with params",
-      "href": "https://drafts.csswg.org/css-navigation-1/#match-url-pattern-with-params",
-      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"match-url-pattern-with-params\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">match URL pattern with params</dfn>\n  given a <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern\" id=\"ref-for-url-pattern②\">URL pattern</a> <var>urlPattern</var>,\n  a <a data-link-type=\"dfn\" href=\"https://url.spec.whatwg.org/#concept-url\" id=\"ref-for-concept-url②\">URL</a> <var>input</var>,\n  and an optional <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-url-pattern-param-matcher\" id=\"ref-for-typedef-url-pattern-param-matcher④\">&lt;url-pattern-param-matcher&gt;</a> <var>paramMatcher</var> (default null):",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Let <var>result</var> be the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" id=\"ref-for-url-pattern-match\">matching</a> <var>urlPattern</var> against <var>input</var>.</p>"
-        },
-        {
-          "html": "<p>If <var>result</var> is null, return false.</p>"
-        },
-        {
-          "html": "<p>If <var>paramMatcher</var> is null, return true.</p>"
-        },
-        {
-          "html": "<p>Let <var>paramMap</var> be null.</p>"
-        },
-        {
-          "html": "<p>If <var>paramMatcher</var> is `all from ` <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#url-value\" id=\"ref-for-url-value③\" title=\"Expands to: local url flag\">&lt;url&gt;</a>, then:</p>"
-        },
-        {
-          "html": "<p>Let <var>urlMatchResult</var> be the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-match\" id=\"ref-for-url-pattern-match①\">matching</a> <var>urlPattern</var> against the URL represented by the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-values-4/#url-value\" id=\"ref-for-url-value④\" title=\"Expands to: local url flag\">&lt;url&gt;</a> in <var>paramMatcher</var>.</p>"
-        },
-        {
-          "html": "<p>If <var>urlMatchResult</var> is null, return false.</p>"
-        },
-        {
-          "html": "<p>Set <var>paramMap</var> to <var>urlMatchResult</var>’s <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#combined-url-pattern-result-groups\" id=\"ref-for-combined-url-pattern-result-groups\">combined URL pattern result groups</a>.</p>"
-        },
-        {
-          "html": "<p>Otherwise, set <var>paramMap</var> to an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">ordered map</a> that reflects the <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-url-pattern-param\" id=\"ref-for-typedef-url-pattern-param②\">&lt;url-pattern-param&gt;</a> entries in <var>paramMatcher</var>.</p>"
-        },
-        {
-          "html": "<p>Let <var>combinedResult</var> be the <a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#combined-url-pattern-result-groups\" id=\"ref-for-combined-url-pattern-result-groups①\">combined URL pattern result groups</a> of <var>result</var>.</p>"
-        },
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> (<var>groupName</var>, <var>groupValue</var>) in <var>paramMap</var>:</p>"
-        },
-        {
-          "html": "<p>If <var>combinedResult</var>[<var>groupName</var>] does not <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a> or is not <var>groupValue</var>, return false.</p>"
-        },
-        {
-          "html": "<p>Return true.</p>"
-        }
-      ]
-    },
-    {
-      "name": "combined URL pattern result groups",
-      "href": "https://drafts.csswg.org/css-navigation-1/#combined-url-pattern-result-groups",
-      "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"combined-url-pattern-result-groups\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">combined URL pattern result groups</dfn> of a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dictdef-urlpatternresult\" id=\"ref-for-dictdef-urlpatternresult\">URLPatternResult</a></code> <var>result</var>:",
-      "rationale": ".algorithm",
-      "steps": [
-        {
-          "html": "<p>Let <var>combinedResult</var> be a new <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map①\">ordered map</a>.</p>"
-        },
-        {
-          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> <var>key</var> in <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-protocol\" id=\"ref-for-dom-urlpatternresult-protocol\">protocol</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-hostname\" id=\"ref-for-dom-urlpatternresult-hostname\">hostname</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-port\" id=\"ref-for-dom-urlpatternresult-port\">port</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-pathname\" id=\"ref-for-dom-urlpatternresult-pathname\">pathname</a></code>, <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-search\" id=\"ref-for-dom-urlpatternresult-search\">search</a></code>, and <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatternresult-hash\" id=\"ref-for-dom-urlpatternresult-hash\">hash</a></code>:</p>"
-        },
-        {
-          "html": "<p>Let <var>component</var> be <var>result</var>[<var>key</var>].</p>"
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> (<var>name</var>, <var>value</var>) in <var>component</var>[<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://urlpattern.spec.whatwg.org/#dom-urlpatterncomponentresult-groups\" id=\"ref-for-dom-urlpatterncomponentresult-groups\">groups</a></code>]:",
-          "rationale": "set",
-          "steps": [
-            {
-              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-set\" id=\"ref-for-map-set\">set</a> <var>combinedResult</var>[<var>name</var>] = <var>value</var>.</p>"
-            }
-          ]
-        },
-        {
-          "html": "<p>Return <var>combinedResult</var>.</p>"
         }
       ]
     },
@@ -115,7 +39,7 @@
           "html": "<p>Let <var>baseURL</var> be the result of\n<a data-link-type=\"dfn\" href=\"https://drafts.csswg.org/css-navigation-1/#create-a-url-for-a-base-descriptor\" id=\"ref-for-create-a-url-for-a-base-descriptor①\">create a URL for a base descriptor</a> given <var>baseURLSpecifier</var>.</p>"
         },
         {
-          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-create\" id=\"ref-for-url-pattern-create①\">create a URL pattern</a> given\n<var>arg</var>, <var>baseURL</var>, and an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map②\">map</a>.</p>"
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://urlpattern.spec.whatwg.org/#url-pattern-create\" id=\"ref-for-url-pattern-create①\">create a URL pattern</a> given\n<var>arg</var>, <var>baseURL</var>, and an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-ordered-map\">map</a>.</p>"
         }
       ]
     },
@@ -209,7 +133,7 @@
     {
       "name": "current navigation URL",
       "href": "https://drafts.csswg.org/css-navigation-1/#current-navigation-url",
-      "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"current-navigation-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current navigation URL</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①\">Document</a></code> <var>document</var> and a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-relation\" id=\"ref-for-typedef-navigation-relation④\">&lt;navigation-relation&gt;</a> <var>relation</var>:",
+      "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"current-navigation-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current navigation URL</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①\">Document</a></code> <var>document</var> and a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-relation\" id=\"ref-for-typedef-navigation-relation③\">&lt;navigation-relation&gt;</a> <var>relation</var>:",
       "rationale": "let",
       "steps": [
         {
@@ -226,7 +150,7 @@
     {
       "name": "current navigation URL",
       "href": "https://drafts.csswg.org/css-navigation-1/#current-navigation-url",
-      "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"current-navigation-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current navigation URL</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①\">Document</a></code> <var>document</var> and a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-relation\" id=\"ref-for-typedef-navigation-relation④\">&lt;navigation-relation&gt;</a> <var>relation</var>:",
+      "html": "To get the <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"current-navigation-url\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">current navigation URL</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://dom.spec.whatwg.org/#document\" id=\"ref-for-document①\">Document</a></code> <var>document</var> and a <a class=\"css production\" data-link-type=\"type\" href=\"https://drafts.csswg.org/css-navigation-1/#typedef-navigation-relation\" id=\"ref-for-typedef-navigation-relation③\">&lt;navigation-relation&gt;</a> <var>relation</var>:",
       "rationale": ".switch",
       "steps": [
         {
