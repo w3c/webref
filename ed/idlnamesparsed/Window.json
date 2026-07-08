@@ -246,7 +246,7 @@
         "title": "Window Management",
         "url": "https://www.w3.org/TR/window-management/"
       },
-      "fragment": "partial interface Window {\n  [SecureContext]\n  Promise<ScreenDetails> getScreenDetails();\n};"
+      "fragment": "partial interface Window {\n  [SecureContext]\n  Promise<ScreenDetails> getScreenDetails();\n\n  [SecureContext]\n  Promise<undefined> minimize();\n\n  [SecureContext]\n  Promise<undefined> maximize();\n\n  [SecureContext]\n  Promise<undefined> restore();\n\n  [SecureContext]\n  Promise<undefined> setResizable(boolean resizable);\n};"
     }
   ],
   "inheritance": {

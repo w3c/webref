@@ -260,4 +260,16 @@ partial interface Window {
 partial interface Window {
   [SecureContext]
   Promise<ScreenDetails> getScreenDetails();
+
+  [SecureContext]
+  Promise<undefined> minimize();
+
+  [SecureContext]
+  Promise<undefined> maximize();
+
+  [SecureContext]
+  Promise<undefined> restore();
+
+  [SecureContext]
+  Promise<undefined> setResizable(boolean resizable);
 };
