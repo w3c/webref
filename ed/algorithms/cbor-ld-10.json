@@ -54,13 +54,13 @@
       "rationale": "set",
       "steps": [
         {
+          "html": "Set <code>state</code> to an empty map."
+        },
+        {
           "html": "Set <code>result</code> to the result of passing <code>cborldBytes</code> to\n<a href=\"https://w3c.github.io/cbor-ld/#get-registry-entry-id-algorithm\" class=\"sec-ref\"><bdi class=\"secno\">5.6.2 </bdi>Get Registry Entry ID Algorithm</a>."
         },
         {
           "html": "Set <code>state</code>.<code>registryEntryId</code> to <code>result</code>.<code>registryEntryId</code> and <code>suffix</code> to <code>result</code>.<code>suffix</code>."
-        },
-        {
-          "html": "Set <code>state</code> to an empty map."
         },
         {
           "html": "If the registry entry associated with <code>state</code>.<code>registryEntryId</code> uses semantic compression:",
@@ -333,7 +333,7 @@
           "html": "If <code>isArray</code> is <code>true</code>, set <code>id</code> to the value of \"@context\" in <code>state.keywordsMap</code> plus 1\nand set the value of <code>id</code> in <code>output</code> to <code>encodedContexts</code>."
         },
         {
-          "html": "Otherwise, set <code>id</code> to the value of \"@context\" in <code>state.keywordMap</code> and set the value of\n<code>id</code> in <code>output</code> to the first element of <code>encodedContexts</code>."
+          "html": "Otherwise, set <code>id</code> to the value of \"@context\" in <code>state.keywordsMap</code> and set the value of\n<code>id</code> in <code>output</code> to the first element of <code>encodedContexts</code>."
         },
         {
           "html": "Set <code>result.output</code> to <code>output</code>, <code>result.state</code> to <code>state</code>, and <code>result.activeContext</code>\nto <code>activeContext</code>."
