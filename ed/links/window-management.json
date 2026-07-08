@@ -7,6 +7,7 @@
     "rawlinks": {
       "https://datatracker.ietf.org/doc/html/rfc2119": {},
       "https://dom.spec.whatwg.org/": {},
+      "https://drafts.csswg.org/css-conditional-3/": {},
       "https://drafts.csswg.org/css-values-4/": {},
       "https://drafts.csswg.org/css2/": {
         "anchors": [
@@ -36,12 +37,18 @@
           "privacy--security"
         ]
       },
+      "https://github.com/w3c/window-management/blob/main/EXPLAINER_additional_windowing_controls.md": {
+        "anchors": [
+          "security--privacy-considerations"
+        ]
+      },
       "https://github.com/w3c/window-management/blob/main/EXPLAINER_initiating_multi_screen_experiences.md": {
         "anchors": [
           "security-considerations"
         ]
       },
       "https://github.com/w3c/window-management/blob/main/security_and_privacy.md": {},
+      "https://github.com/w3c/window-management/blob/main/security_and_privacy_additional_windowing_controls.md": {},
       "https://github.com/w3c/window-management/blob/main/security_and_privacy_initiating_multi_screen_experiences.md": {},
       "https://github.com/w3c/window-management/issues": {},
       "https://github.com/w3c/window-management/issues/114": {},
@@ -56,6 +63,7 @@
       "https://tc39.es/ecma262/multipage/": {},
       "https://w3c.github.io/fingerprinting-guidance/": {},
       "https://w3c.github.io/hr-time/": {},
+      "https://w3c.github.io/manifest/": {},
       "https://w3c.github.io/permissions/": {},
       "https://w3c.github.io/screen-orientation/": {},
       "https://w3c.github.io/webappsec-permissions-policy/": {},
@@ -67,17 +75,17 @@
       "https://webidl.spec.whatwg.org/": {},
       "https://webscreens.github.io/form-factors/": {},
       "https://www.w3.org/2004/01/pp-impl/74168/status": {},
-      "https://www.w3.org/2023/Process-20231103/": {},
-      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {
+      "https://www.w3.org/TR/": {},
+      "https://www.w3.org/TR/cssom-view-1/": {},
+      "https://www.w3.org/community/webscreens/": {},
+      "https://www.w3.org/groups/wg/secondscreen": {},
+      "https://www.w3.org/policies/patent-policy/20200915/": {
         "anchors": [
           "def-essential",
           "sec-Disclosure"
         ]
       },
-      "https://www.w3.org/TR/": {},
-      "https://www.w3.org/TR/cssom-view-1/": {},
-      "https://www.w3.org/community/webscreens/": {},
-      "https://www.w3.org/groups/wg/secondscreen": {}
+      "https://www.w3.org/policies/process/20250818/": {}
     },
     "autolinks": {
       "https://dom.spec.whatwg.org/": {
@@ -85,6 +93,11 @@
           "eventtarget",
           "concept-event-fire",
           "concept-document"
+        ]
+      },
+      "https://drafts.csswg.org/css-conditional-3/": {
+        "anchors": [
+          "at-ruledef-media"
         ]
       },
       "https://drafts.csswg.org/css-values-4/": {
@@ -124,7 +137,8 @@
       "https://html.spec.whatwg.org/multipage/document-sequences.html": {
         "anchors": [
           "top-level-browsing-context",
-          "nav-document"
+          "nav-document",
+          "browsing-context"
         ]
       },
       "https://html.spec.whatwg.org/multipage/iframe-embed-object.html": {
@@ -139,8 +153,8 @@
       },
       "https://html.spec.whatwg.org/multipage/interaction.html": {
         "anchors": [
-          "consume-user-activation",
-          "transient-activation"
+          "transient-activation",
+          "consume-user-activation"
         ]
       },
       "https://html.spec.whatwg.org/multipage/nav-history-apis.html": {
@@ -173,8 +187,14 @@
       },
       "https://w3c.github.io/hr-time/": {
         "anchors": [
-          "dom-domhighrestimestamp",
+          "typedefdef-domhighrestimestamp",
           "dfn-current-high-resolution-time"
+        ]
+      },
+      "https://w3c.github.io/manifest/": {
+        "anchors": [
+          "dfn-installed-web-application",
+          "dfn-application-context"
         ]
       },
       "https://w3c.github.io/permissions/": {
@@ -197,6 +217,7 @@
           "idl-boolean",
           "this",
           "idl-promise",
+          "idl-undefined",
           "a-new-promise",
           "reject",
           "notallowederror",
@@ -209,12 +230,12 @@
           "idl-DOMString"
         ]
       },
-      "https://www.w3.org/Consortium/Patent-Policy-20200915/": {},
       "https://www.w3.org/TR/fingerprinting-guidance/": {
         "anchors": [
           "dfn-active-fingerprinting"
         ]
-      }
+      },
+      "https://www.w3.org/policies/patent-policy/20200915/": {}
     }
   }
 }
