@@ -435,10 +435,7 @@
           "html": "let <var>direction</var> be a 3-element array"
         },
         {
-          "html": "for (i = 0; i &lt; 3; i++):\n\t\t\t\n       <ul>\n        <li>let <var>a</var> be <var>start</var> <i>[i]</i>\n        </li><li>let <var>b</var> be <var>end</var> <i>[i]</i>\n        </li><li>let <var>d</var> be <var>b</var> - <var>a</var>\n        </li><li>let <var>direction</var> <i>[i]</i> be <var>d</var>\n        </li><li>if abs(<var>d</var>) &gt; 1E-12 <a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-7\"><sup>7</sup></a>\n        <ul>\n         <li>let <var>inv_d</var> be 1 / <var>d</var>\n         </li><li>let <var>t1</var> be (<var>bmin</var> <i>[i]</i> - <var>a</var> ) * <var>inv_d</var> \n         </li><li>let <var>t2</var> be (<var>bmax</var> <i>[i]</i> - <var>a</var> ) * <var>inv_d</var> \n         </li><li>let <var>tnear</var> be max(min(<var>t1</var>, <var>t2</var>), <var>tnear</var> )\n         </li><li>let <var>tfar</var> be min(max(<var>t1</var>, <var>t2</var>), <var>tfar</var> )\n        </li></ul>\n       </li></ul>"
-        },
-        {
-          "html": "else if (<var>a</var> &lt; <var>bmin</var><i>[i]</i> or <var>a</var> &gt; <var>bmax</var><i>[i]</i>)\n\t\t\t\t\t\n       <ul>\n        <li>return INTERSECTION NOT FOUND\n       </li></ul>"
+          "html": "for (i = 0; i &lt; 3; i++):\n\t\t\t\n       <ul>\n        <li>let <var>a</var> be <var>start</var> <i>[i]</i>\n        </li><li>let <var>b</var> be <var>end</var> <i>[i]</i>\n        </li><li>let <var>d</var> be <var>b</var> - <var>a</var>\n        </li><li>let <var>direction</var> <i>[i]</i> be <var>d</var>\n        </li><li>\n         if abs(<var>d</var>) &gt; 1E-12 <a href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-7\"><sup>7</sup></a>\n\t\t\t\t\t\n         <ul>\n          <li>let <var>inv_d</var> be 1 / <var>d</var>\n          </li><li>let <var>t1</var> be (<var>bmin</var> <i>[i]</i> - <var>a</var> ) * <var>inv_d</var> \n          </li><li>let <var>t2</var> be (<var>bmax</var> <i>[i]</i> - <var>a</var> ) * <var>inv_d</var> \n          </li><li>let <var>tnear</var> be max(min(<var>t1</var>, <var>t2</var>), <var>tnear</var> )\n          </li><li>let <var>tfar</var> be min(max(<var>t1</var>, <var>t2</var>), <var>tfar</var> )\n         </li></ul>\n        </li><li>\n         else if (<var>a</var> &lt; <var>bmin</var><i>[i]</i> or <var>a</var> &gt; <var>bmax</var><i>[i]</i>)\n\t\t\t\t\t\n         <ul>\n          <li>return INTERSECTION NOT FOUND\n         </li></ul>\n       </li></ul>"
         },
         {
           "html": "if (<var>tnear</var> &gt; <var>tfar</var> or <var>tfar</var> &lt; 0)\n\t\t\t\n       <ul>\n        <li>return INTERSECTION NOT FOUND\n       </li></ul>"
@@ -470,7 +467,7 @@
           "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-2\"></a>\n\t\t\t1.0 represents the maximum in-gamut channel value,\n\t\t\tand it is assumed all channels have the same maximum."
         },
         {
-          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-3\"></a>\n\t\t\tThis places the <var>current</var> color back on the chroma reduction curve,\n\t\t\tif it has deviated."
+          "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-3\"></a>\n\t\t\tThis places the current color back on the chroma reduction curve,\n\t\t\tif it has deviated."
         },
         {
           "html": "<a class=\"self-link\" href=\"https://drafts.csswg.org/css-color-4/#raytrace-footnote-4\"></a>\n\t\t\tThis means <var>origin_rgb</var> is below the gamut surface,\n\t\t\tso we use it as an anchor closer to the gamut surface."
