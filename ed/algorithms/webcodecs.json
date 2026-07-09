@@ -594,6 +594,9 @@
               "html": "<p>Configure <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videodecoder-codec-implementation-slot\" id=\"ref-for-dom-videodecoder-codec-implementation-slot④\">[[codec implementation]]</a></code> with <var>config</var>.</p>"
             },
             {
+              "html": "<p>Assign <var>config</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videodecoder-active-decoder-config-slot\" id=\"ref-for-dom-videodecoder-active-decoder-config-slot①\">[[active decoder config]]</a></code>.</p>"
+            },
+            {
               "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task①①\">queue a task</a> to run the following steps:",
               "rationale": "assign",
               "steps": [
@@ -857,13 +860,13 @@
               "html": "<p>Let <var>displayAspectWidth</var> and <var>displayAspectHeight</var> be undefined.</p>"
             },
             {
-              "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videodecoderconfig-displayaspectwidth\" id=\"ref-for-dom-videodecoderconfig-displayaspectwidth\">displayAspectWidth</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videodecoderconfig-displayaspectheight\" id=\"ref-for-dom-videodecoderconfig-displayaspectheight\">displayAspectHeight</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exist</a> in the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videodecoder-active-decoder-config-slot\" id=\"ref-for-dom-videodecoder-active-decoder-config-slot①\">[[active decoder config]]</a></code>, assign their values to\n<var>displayAspectWidth</var> and <var>displayAspectHeight</var> respectively.</p>"
+              "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videodecoderconfig-displayaspectwidth\" id=\"ref-for-dom-videodecoderconfig-displayaspectwidth\">displayAspectWidth</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videodecoderconfig-displayaspectheight\" id=\"ref-for-dom-videodecoderconfig-displayaspectheight\">displayAspectHeight</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exist</a> in the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videodecoder-active-decoder-config-slot\" id=\"ref-for-dom-videodecoder-active-decoder-config-slot②\">[[active decoder config]]</a></code>, assign their values to\n<var>displayAspectWidth</var> and <var>displayAspectHeight</var> respectively.</p>"
             },
             {
               "html": "<p>Let <var>colorSpace</var> be the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videocolorspace\" id=\"ref-for-videocolorspace③\">VideoColorSpace</a></code> for <var>output</var> as detected\nby the codec implementation. If no <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#videocolorspace\" id=\"ref-for-videocolorspace④\">VideoColorSpace</a></code> is detected,\nlet <var>colorSpace</var> be <code>undefined</code>.</p>"
             },
             {
-              "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videodecoderconfig-colorspace\" id=\"ref-for-dom-videodecoderconfig-colorspace①\">colorSpace</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a> in the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videodecoder-active-decoder-config-slot\" id=\"ref-for-dom-videodecoder-active-decoder-config-slot②\">[[active decoder config]]</a></code>, assign its value to\n<var>colorSpace</var>.</p>"
+              "html": "<p>If <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videodecoderconfig-colorspace\" id=\"ref-for-dom-videodecoderconfig-colorspace①\">colorSpace</a></code> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists①\">exists</a> in the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videodecoder-active-decoder-config-slot\" id=\"ref-for-dom-videodecoder-active-decoder-config-slot③\">[[active decoder config]]</a></code>, assign its value to\n<var>colorSpace</var>. In that case, User Agents MAY replace <code>null</code> members\nof <var>colorSpace</var> with the corresponding values detected by the codec\nimplementation.\nFIXME: Properly specify the case of <code>null</code> members.</p>"
             },
             {
               "html": "<p>Assign the values of <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videodecoderconfig-rotation\" id=\"ref-for-dom-videodecoderconfig-rotation\">rotation</a></code> and\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videodecoderconfig-flip\" id=\"ref-for-dom-videodecoderconfig-flip\">flip</a></code> to <var>rotation</var> and <var>flip</var> respectively.</p>"
@@ -1042,6 +1045,9 @@
             },
             {
               "html": "<p>Configure <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audioencoder-codec-implementation-slot\" id=\"ref-for-dom-audioencoder-codec-implementation-slot④\">[[codec implementation]]</a></code> with <var>config</var>.</p>"
+            },
+            {
+              "html": "<p>Assign <var>config</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audioencoder-active-encoder-config-slot\" id=\"ref-for-dom-audioencoder-active-encoder-config-slot①\">[[active encoder config]]</a></code>.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②⓪\">queue a task</a> to run the following steps:",
@@ -1313,7 +1319,7 @@
               "html": "<p>Let <var>chunkMetadata</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-encodedaudiochunkmetadata\" id=\"ref-for-dictdef-encodedaudiochunkmetadata①\">EncodedAudioChunkMetadata</a></code>.</p>"
             },
             {
-              "html": "<p>Let <var>encoderConfig</var> be the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audioencoder-active-encoder-config-slot\" id=\"ref-for-dom-audioencoder-active-encoder-config-slot①\">[[active encoder config]]</a></code>.</p>"
+              "html": "<p>Let <var>encoderConfig</var> be the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audioencoder-active-encoder-config-slot\" id=\"ref-for-dom-audioencoder-active-encoder-config-slot②\">[[active encoder config]]</a></code>.</p>"
             },
             {
               "html": "Let <var>outputConfig</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-audiodecoderconfig\" id=\"ref-for-dictdef-audiodecoderconfig③\">AudioDecoderConfig</a></code> that describes\n<var>output</var>. Initialize <var>outputConfig</var> as follows:",
@@ -1365,7 +1371,7 @@
           "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audioencoder-state-slot\" id=\"ref-for-dom-audioencoder-state-slot⑦\">[[state]]</a></code> to <code>\"unconfigured\"</code>.</p>"
         },
         {
-          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audioencoder-active-encoder-config-slot\" id=\"ref-for-dom-audioencoder-active-encoder-config-slot②\">[[active encoder config]]</a></code> to <code>null</code>.</p>"
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audioencoder-active-encoder-config-slot\" id=\"ref-for-dom-audioencoder-active-encoder-config-slot③\">[[active encoder config]]</a></code> to <code>null</code>.</p>"
         },
         {
           "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-audioencoder-active-output-config-slot\" id=\"ref-for-dom-audioencoder-active-output-config-slot③\">[[active output config]]</a></code> to <code>null</code>.</p>"
@@ -1525,6 +1531,9 @@
             },
             {
               "html": "<p>Configure <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-codec-implementation-slot\" id=\"ref-for-dom-videoencoder-codec-implementation-slot④\">[[codec implementation]]</a></code> with <var>config</var>.</p>"
+            },
+            {
+              "html": "<p>Assign <var>config</var> to <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-active-encoder-config-slot\" id=\"ref-for-dom-videoencoder-active-encoder-config-slot①\">[[active encoder config]]</a></code>.</p>"
             },
             {
               "html": "<a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#queue-a-task\" id=\"ref-for-queue-a-task②⑨\">queue a task</a> to run the following steps:",
@@ -1802,7 +1811,7 @@
               "html": "<p>Let <var>chunkMetadata</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-encodedvideochunkmetadata\" id=\"ref-for-dictdef-encodedvideochunkmetadata①\">EncodedVideoChunkMetadata</a></code>.</p>"
             },
             {
-              "html": "<p>Let <var>encoderConfig</var> be the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-active-encoder-config-slot\" id=\"ref-for-dom-videoencoder-active-encoder-config-slot①\">[[active encoder config]]</a></code>.</p>"
+              "html": "<p>Let <var>encoderConfig</var> be the\n<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-active-encoder-config-slot\" id=\"ref-for-dom-videoencoder-active-encoder-config-slot②\">[[active encoder config]]</a></code>.</p>"
             },
             {
               "html": "Let <var>outputConfig</var> be a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dictdef-videodecoderconfig\" id=\"ref-for-dictdef-videodecoderconfig⑤\">VideoDecoderConfig</a></code> that describes\n<var>output</var>. Initialize <var>outputConfig</var> as follows:",
@@ -1896,7 +1905,7 @@
           "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-state-slot\" id=\"ref-for-dom-videoencoder-state-slot⑦\">[[state]]</a></code> to <code>\"unconfigured\"</code>.</p>"
         },
         {
-          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-active-encoder-config-slot\" id=\"ref-for-dom-videoencoder-active-encoder-config-slot②\">[[active encoder config]]</a></code> to <code>null</code>.</p>"
+          "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-active-encoder-config-slot\" id=\"ref-for-dom-videoencoder-active-encoder-config-slot③\">[[active encoder config]]</a></code> to <code>null</code>.</p>"
         },
         {
           "html": "<p>Set <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://w3c.github.io/webcodecs/#dom-videoencoder-active-output-config-slot\" id=\"ref-for-dom-videoencoder-active-output-config-slot③\">[[active output config]]</a></code> to <code>null</code>.</p>"
