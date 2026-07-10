@@ -228,7 +228,7 @@
               "rationale": ".algorithm",
               "steps": [
                 {
-                  "html": "If the <var>input <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> contains\nthe <a href=\"https://www.w3.org/TR/did-resolution/#did-parameters\">DID parameter</a> <code>service</code>:\nSelect the <a href=\"https://www.w3.org/TR/did-core/#services\">service</a> if its\n<code>id</code> property matches the value of the\n<code>service</code> DID parameter. If the\n<code>id</code> property or the <code>service</code> DID\nparameter or both contain relative references, the\ncorresponding absolute URIs <em class=\"rfc2119\">MUST</em> be resolved and used for\ndetermining the match, using the rules specified in\n<a href=\"https://www.rfc-editor.org/rfc/rfc3986#section-5\">RFC3986 Section 5: Reference Resolution</a> and in section\n<a href=\"https://www.w3.org/TR/did-core/#relative-did-urls\">Relative DID URLs</a> in <cite><a data-matched-text=\"[[[DID-CORE]]]\" href=\"https://www.w3.org/TR/did-core/\">Decentralized Identifiers (DIDs) v1.0</a></cite>."
+                  "html": "If the <var>input <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> contains\nthe <a href=\"https://www.w3.org/TR/did-resolution/#did-parameters\">DID parameter</a> <code>service</code>:\nSelect the <a href=\"https://www.w3.org/TR/did-core/#services\">service</a> if its\n<code>id</code> property matches the value of the\n<code>service</code> DID parameter. If the\n<code>id</code> property or the <code>service</code> DID\nparameter or both contain relative references, the\ncorresponding absolute URIs <em class=\"rfc2119\">MUST</em> be resolved and used for\ndetermining the match, using the rules specified in\n<a href=\"https://www.rfc-editor.org/info/rfc3986/#section-5\">RFC3986 Section 5: Reference Resolution</a> and in section\n<a href=\"https://www.w3.org/TR/did-core/#relative-did-urls\">Relative DID URLs</a> in <cite><a data-matched-text=\"[[[DID-CORE]]]\" href=\"https://www.w3.org/TR/did-core/\">Decentralized Identifiers (DIDs) v1.0</a></cite>."
                 },
                 {
                   "html": "If the <var>input <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-did-urls\">DID URL</a></var> contains\nthe <a href=\"https://www.w3.org/TR/did-resolution/#did-parameters\">DID parameter</a>\n<code>serviceType</code>: Select the\n<a href=\"https://www.w3.org/TR/did-core/#services\">service</a> if its\n<code>type</code> property matches the value of the\n<code>serviceType</code> DID parameter."
@@ -459,7 +459,7 @@
               "rationale": ".algorithm",
               "steps": [
                 {
-                  "html": "The <var>input <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers\">DID</a></var> <em class=\"rfc2119\">MUST</em> be\nURL-encoded (as specified in\n<a href=\"https://www.rfc-editor.org/rfc/rfc3986#section-2.1\">RFC3986 Section 2.1</a>)."
+                  "html": "The <var>input <a data-link-type=\"dfn\" href=\"https://www.w3.org/TR/did-core/#dfn-decentralized-identifiers\">DID</a></var> <em class=\"rfc2119\">MUST</em> be\nURL-encoded (as specified in\n<a href=\"https://www.rfc-editor.org/info/rfc3986/#section-2.1\">RFC3986 Section 2.1</a>)."
                 },
                 {
                   "html": "Encode all <var>resolution options</var> except\n<b>accept</b> as query parameters in the\n<var>request HTTP(S) URL</var>."
