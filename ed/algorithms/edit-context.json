@@ -186,14 +186,14 @@
           "html": "Let <var>newActiveEditContext</var> be the result of running the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/edit-context/#dfn-determine-the-active-editcontext\" class=\"internalDFN\" id=\"ref-for-dfn-determine-the-active-editcontext-1\">determine the active EditContext</a> given <var>document</var>."
         },
         {
-          "html": "If <var>oldActiveEditContext</var> is not null, then run the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/edit-context/#dfn-deactivate-an-editcontext\" class=\"internalDFN\" id=\"ref-for-dfn-deactivate-an-editcontext-3\">deactivate an EditContext</a> given <var>oldActiveEditContext</var>."
+          "html": "If <var>oldActiveEditContext</var> is not null and is not equal to <var>newActiveEditContext</var>, then run the steps to <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/edit-context/#dfn-deactivate-an-editcontext\" class=\"internalDFN\" id=\"ref-for-dfn-deactivate-an-editcontext-3\">deactivate an EditContext</a> given <var>oldActiveEditContext</var>."
         },
         {
           "html": "If <var>newActiveEditContext</var> is not null, then:",
           "rationale": "update",
           "steps": [
             {
-              "html": "Update the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/edit-context/#dfn-text-edit-context\" class=\"internalDFN\" id=\"ref-for-dfn-text-edit-context-20\">Text Edit Context</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/edit-context/#dfn-text-state\" class=\"internalDFN\" id=\"ref-for-dfn-text-state-4\">text state</a> to match the values in <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/edit-context/#dfn-text-state\" class=\"internalDFN\" id=\"ref-for-dfn-text-state-5\">text state</a>."
+              "html": "Update the <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/edit-context/#dfn-text-edit-context\" class=\"internalDFN\" id=\"ref-for-dfn-text-edit-context-20\">Text Edit Context</a>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/edit-context/#dfn-text-state\" class=\"internalDFN\" id=\"ref-for-dfn-text-state-4\">text state</a> to match the values in <var>newActiveEditContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/edit-context/#dfn-text-state\" class=\"internalDFN\" id=\"ref-for-dfn-text-state-5\">text state</a>."
             }
           ]
         },
@@ -261,10 +261,16 @@
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "Set <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/edit-context/#dfn-is-composing\" class=\"internalDFN\" id=\"ref-for-dfn-is-composing-10\">is composing</a> to false."
-        },
-        {
-          "html": "<a data-link-type=\"dfn\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-event-fire\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named\n            <a href=\"https://w3c.github.io/uievents/#event-type-compositionend\">compositionend</a>\n            at <var>editContext</var> using <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"CompositionEvent\" data-cite=\"uievents\" data-cite-path=\"\" data-cite-frag=\"compositionevent\" href=\"https://www.w3.org/TR/uievents/#compositionevent\"><code>CompositionEvent</code></a>."
+          "html": "If <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/edit-context/#dfn-is-composing\" class=\"internalDFN\" id=\"ref-for-dfn-is-composing-10\">is composing</a> is true, then:",
+          "rationale": "set",
+          "steps": [
+            {
+              "html": "Set <var>editContext</var>'s <a data-link-type=\"dfn|abstract-op\" href=\"https://w3c.github.io/edit-context/#dfn-is-composing\" class=\"internalDFN\" id=\"ref-for-dfn-is-composing-11\">is composing</a> to false."
+            },
+            {
+              "html": "<a data-link-type=\"dfn\" data-cite=\"dom\" data-cite-path=\"\" data-cite-frag=\"concept-event-fire\" href=\"https://dom.spec.whatwg.org/#concept-event-fire\">Fire an event</a> named\n                    <a href=\"https://w3c.github.io/uievents/#event-type-compositionend\">compositionend</a>\n                    at <var>editContext</var> using <a data-xref-type=\"_IDL_\" data-link-type=\"interface\" data-lt=\"CompositionEvent\" data-cite=\"uievents\" data-cite-path=\"\" data-cite-frag=\"compositionevent\" href=\"https://www.w3.org/TR/uievents/#compositionevent\"><code>CompositionEvent</code></a>."
+            }
+          ]
         }
       ]
     },
