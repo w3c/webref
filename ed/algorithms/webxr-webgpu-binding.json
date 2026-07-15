@@ -1,0 +1,214 @@
+{
+  "spec": {
+    "title": "WebXR/WebGPU Binding Module - Level 1",
+    "url": "https://immersive-web.github.io/webxr-webgpu-binding/"
+  },
+  "algorithms": [
+    {
+      "name": "XRGPUBinding/XRGPUBinding(session, device)",
+      "href": "https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-xrgpubinding",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"XRGPUBinding\" data-dfn-type=\"constructor\" data-export=\"\" data-lt=\"XRGPUBinding(session, device)|constructor(session, device)\" id=\"dom-xrgpubinding-xrgpubinding\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>XRGPUBinding(<var>session</var>, <var>device</var>)</code></dfn> constructor MUST perform the following steps when invoked:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>session</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#dom-xrsession-ended\" id=\"ref-for-dom-xrsession-ended\">ended</a> value is <code>true</code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>session</var> is NOT a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#webgpu-compatible-session\" id=\"ref-for-webgpu-compatible-session④\">WebGPU-compatible session</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>device</var> has been <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#destroyed\" id=\"ref-for-destroyed\">destroyed</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror②\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>device</var> was NOT created from an <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xr-compatible-adapter\" id=\"ref-for-xr-compatible-adapter①\">XR-compatible adapter</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror③\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException③\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>binding</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding\" id=\"ref-for-xrgpubinding⑥\">XRGPUBinding</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>binding</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-session\" id=\"ref-for-xrgpubinding-session\">session</a> to <var>session</var>.</p>"
+        },
+        {
+          "html": "<p>Set <var>binding</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-device\" id=\"ref-for-xrgpubinding-device\">device</a> to <var>device</var>.</p>"
+        },
+        {
+          "html": "<p>Return <var>binding</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When invoked, the user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-session\" id=\"ref-for-xrgpubinding-session①\">session</a> has <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#dom-xrsession-ended\" id=\"ref-for-dom-xrsession-ended①\">ended</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror④\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException④\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-device\" id=\"ref-for-xrgpubinding-device①\">device</a> has been <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#destroyed\" id=\"ref-for-destroyed①\">destroyed</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑤\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑤\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>colorFormat</var> be <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpuprojectionlayerinit-colorformat\" id=\"ref-for-dom-xrgpuprojectionlayerinit-colorformat\">colorFormat</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>colorFormat</var> is not a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#supported-color-format\" id=\"ref-for-supported-color-format\">supported color format</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑥\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑥\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpuprojectionlayerinit-depthstencilformat\" id=\"ref-for-dom-xrgpuprojectionlayerinit-depthstencilformat\">depthStencilFormat</a></code> is present and is not a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#supported-depth-stencil-format\" id=\"ref-for-supported-depth-stencil-format\">supported depth-stencil format</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑦\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑦\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>scaleFactor</var> be <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpuprojectionlayerinit-scalefactor\" id=\"ref-for-dom-xrgpuprojectionlayerinit-scalefactor①\">scaleFactor</a></code>, clamped to the range [0.2, max(<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpubinding-nativeprojectionscalefactor\" id=\"ref-for-dom-xrgpubinding-nativeprojectionscalefactor②\">nativeProjectionScaleFactor</a></code>, 1.0)].</p>"
+        },
+        {
+          "html": "<p>Let <var>recommendedSize</var> be the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#recommended-webgpu-texture-resolution\" id=\"ref-for-recommended-webgpu-texture-resolution②\">recommended WebGPU texture resolution</a> for the session’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-device\" id=\"ref-for-xr-device⑦\">XR device</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>textureSize</var> be <var>recommendedSize</var> scaled by <var>scaleFactor</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>depthStencilSize</var> be the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#recommended-webgpu-depth-stencil-texture-resolution\" id=\"ref-for-recommended-webgpu-depth-stencil-texture-resolution①\">recommended WebGPU depth-stencil texture resolution</a> for the session’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-device\" id=\"ref-for-xr-device⑧\">XR device</a>, scaled by <var>scaleFactor</var>.</p>"
+        },
+        {
+          "html": "<p>Let <var>maxDimension</var> be the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-device\" id=\"ref-for-xrgpubinding-device②\">device</a>’s <code>maxTextureDimension2D</code> limit.</p>"
+        },
+        {
+          "html": "<p>If either dimension of <var>textureSize</var> exceeds <var>maxDimension</var>, scale <var>textureSize</var> proportionally so the largest dimension equals <var>maxDimension</var>.</p>"
+        },
+        {
+          "html": "<p>If either dimension of <var>depthStencilSize</var> exceeds <var>maxDimension</var>, scale <var>depthStencilSize</var> proportionally so the largest dimension equals <var>maxDimension</var>.</p>"
+        },
+        {
+          "html": "<p>Create a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer④\">XRProjectionLayer</a></code> with color textures of size <var>textureSize</var> and format <var>colorFormat</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpuprojectionlayerinit-depthstencilformat\" id=\"ref-for-dom-xrgpuprojectionlayerinit-depthstencilformat①\">depthStencilFormat</a></code> is present, let <var>depthStencilFormat</var> be <var>init</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpuprojectionlayerinit-depthstencilformat\" id=\"ref-for-dom-xrgpuprojectionlayerinit-depthstencilformat②\">depthStencilFormat</a></code> and allocate depth/stencil textures of size <var>depthStencilSize</var> and format <var>depthStencilFormat</var>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-session\" id=\"ref-for-xrgpubinding-session②\">session</a> was created with the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#feature-descriptor-space-warp\" id=\"ref-for-feature-descriptor-space-warp③\">space-warp</a> <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#feature-descriptor\" id=\"ref-for-feature-descriptor⑥\">feature descriptor</a>, allocate motion vector textures of size <var>depthStencilSize</var> and format <code>\"rgba16float\"</code>.</p>"
+        },
+        {
+          "html": "<p>Return the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/layers/#xrprojectionlayer\" id=\"ref-for-xrprojectionlayer⑤\">XRProjectionLayer</a></code>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When any of these methods are invoked, the user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-session\" id=\"ref-for-xrgpubinding-session③\">session</a> has <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#dom-xrsession-ended\" id=\"ref-for-dom-xrsession-ended②\">ended</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑧\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException⑨\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-device\" id=\"ref-for-xrgpubinding-device③\">device</a> has been <a data-link-type=\"dfn\" href=\"https://gpuweb.github.io/gpuweb/#destroyed\" id=\"ref-for-destroyed②\">destroyed</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror⑨\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⓪\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If the <code>\"layers\"</code> <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#feature-descriptor\" id=\"ref-for-feature-descriptor⑧\">feature descriptor</a> is not enabled for the session, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror①\">NotSupportedError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①①\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>init</var>’s color format is not a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#supported-color-format\" id=\"ref-for-supported-color-format①\">supported color format</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⓪\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①②\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>init</var>’s depth/stencil format is present and is not a <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#supported-depth-stencil-format\" id=\"ref-for-supported-depth-stencil-format①\">supported depth-stencil format</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①①\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①③\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Create and return a new layer of the appropriate type using the remaining fields of <var>init</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When invoked, the user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If the <code>\"layers\"</code> <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#feature-descriptor\" id=\"ref-for-feature-descriptor①⓪\">feature descriptor</a> is not enabled for the session, throw a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#notsupportederror\" id=\"ref-for-notsupportederror③\">NotSupportedError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑤\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>layer</var> was not created by this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding\" id=\"ref-for-xrgpubinding⑧\">XRGPUBinding</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①②\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑥\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#dom-xrframe-session\" id=\"ref-for-dom-xrframe-session\">session</a> is not the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-session\" id=\"ref-for-xrgpubinding-session④\">session</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①③\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑦\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>frame</var> is not an active <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xr-animation-frame\" id=\"ref-for-xr-animation-frame\">XR animation frame</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①④\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑧\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>subImage</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpusubimage\" id=\"ref-for-xrgpusubimage⑤\">XRGPUSubImage</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>subImage</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpusubimage-colortexture\" id=\"ref-for-dom-xrgpusubimage-colortexture\">colorTexture</a></code> to the layer’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#current-color-texture\" id=\"ref-for-current-color-texture\">current color texture</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>subImage</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpusubimage-depthstenciltexture\" id=\"ref-for-dom-xrgpusubimage-depthstenciltexture\">depthStencilTexture</a></code> to the layer’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#current-depth-stencil-texture\" id=\"ref-for-current-depth-stencil-texture\">current depth-stencil texture</a>, or <code>null</code> if no depth/stencil format was specified during layer creation.</p>"
+        },
+        {
+          "html": "<p>Set <var>subImage</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpusubimage-motionvectortexture\" id=\"ref-for-dom-xrgpusubimage-motionvectortexture\">motionVectorTexture</a></code> to <code>null</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>subImage</var>’s viewport based on the <var>eye</var> parameter and the layer’s layout.</p>"
+        },
+        {
+          "html": "<p>Set <var>subImage</var>’s array layer index based on the <var>eye</var> parameter.</p>"
+        },
+        {
+          "html": "<p>Return <var>subImage</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When invoked, the user agent MUST run the following steps:",
+      "rationale": "if",
+      "steps": [
+        {
+          "html": "<p>If <var>layer</var> was not created by this <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding\" id=\"ref-for-xrgpubinding⑨\">XRGPUBinding</a></code>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑤\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException①⑨\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>If <var>view</var>’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#xrview-session\" id=\"ref-for-xrview-session\">session</a> is not the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpubinding-session\" id=\"ref-for-xrgpubinding-session⑤\">session</a>, throw an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#invalidstateerror\" id=\"ref-for-invalidstateerror①⑥\">InvalidStateError</a></code> <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-DOMException\" id=\"ref-for-idl-DOMException②⓪\">DOMException</a></code>.</p>"
+        },
+        {
+          "html": "<p>Let <var>subImage</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#xrgpusubimage\" id=\"ref-for-xrgpusubimage⑦\">XRGPUSubImage</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>subImage</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpusubimage-colortexture\" id=\"ref-for-dom-xrgpusubimage-colortexture①\">colorTexture</a></code> to the layer’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#current-color-texture\" id=\"ref-for-current-color-texture①\">current color texture</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>subImage</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpusubimage-depthstenciltexture\" id=\"ref-for-dom-xrgpusubimage-depthstenciltexture①\">depthStencilTexture</a></code> to the layer’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#current-depth-stencil-texture\" id=\"ref-for-current-depth-stencil-texture①\">current depth-stencil texture</a>, or <code>null</code> if no depth/stencil format was specified during layer creation.</p>"
+        },
+        {
+          "html": "<p>Set <var>subImage</var>’s <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpusubimage-motionvectortexture\" id=\"ref-for-dom-xrgpusubimage-motionvectortexture①\">motionVectorTexture</a></code> to the layer’s <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#current-motion-vector-texture\" id=\"ref-for-current-motion-vector-texture\">current motion vector texture</a>, or <code>null</code> if the <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/layers/#feature-descriptor-space-warp\" id=\"ref-for-feature-descriptor-space-warp④\">space-warp</a> <a data-link-type=\"dfn\" href=\"https://immersive-web.github.io/webxr/#feature-descriptor\" id=\"ref-for-feature-descriptor①①\">feature descriptor</a> was not enabled when the session was created.</p>"
+        },
+        {
+          "html": "<p>Set <var>subImage</var>’s array layer index to the view’s index.</p>"
+        },
+        {
+          "html": "<p>Set <var>subImage</var>’s viewport to the region of the <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://immersive-web.github.io/webxr-webgpu-binding/#dom-xrgpusubimage-colortexture\" id=\"ref-for-dom-xrgpusubimage-colortexture②\">colorTexture</a></code> corresponding to <var>view</var>, adjusted by the current viewport scale.</p>"
+        },
+        {
+          "html": "<p>Return <var>subImage</var>.</p>"
+        }
+      ]
+    },
+    {
+      "html": "When invoked, the user agent MUST run the following steps:",
+      "rationale": "let",
+      "steps": [
+        {
+          "html": "<p>Let <var>descriptor</var> be a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://gpuweb.github.io/gpuweb/#dictdef-gputextureviewdescriptor\" id=\"ref-for-dictdef-gputextureviewdescriptor④\">GPUTextureViewDescriptor</a></code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>descriptor</var>’s <code>dimension</code> to <code>\"2d\"</code>.</p>"
+        },
+        {
+          "html": "<p>Set <var>descriptor</var>’s <code>mipLevelCount</code> to 1.</p>"
+        },
+        {
+          "html": "<p>Set <var>descriptor</var>’s <code>arrayLayerCount</code> to 1.</p>"
+        },
+        {
+          "html": "<p>Set <var>descriptor</var>’s <code>baseArrayLayer</code> to the array layer index corresponding to this sub image’s view (e.g., 0 for the left eye, 1 for the right eye).</p>"
+        },
+        {
+          "html": "<p>Return <var>descriptor</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

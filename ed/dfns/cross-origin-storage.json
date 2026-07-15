@@ -1,0 +1,978 @@
+{
+  "spec": {
+    "title": "Cross-Origin Storage",
+    "url": "https://wicg.github.io/cross-origin-storage/"
+  },
+  "dfns": [
+    {
+      "id": "cos-hash",
+      "href": "https://wicg.github.io/cross-origin-storage/#cos-hash",
+      "linkingText": [
+        "COS hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hashes",
+        "href": "https://wicg.github.io/cross-origin-storage/#hashes",
+        "title": "Hashes",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "cos-hash-algorithm",
+      "href": "https://wicg.github.io/cross-origin-storage/#cos-hash-algorithm",
+      "linkingText": [
+        "algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "COS hash"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hashes",
+        "href": "https://wicg.github.io/cross-origin-storage/#hashes",
+        "title": "Hashes",
+        "number": "2.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "cos-hash-value",
+      "href": "https://wicg.github.io/cross-origin-storage/#cos-hash-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "COS hash"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hashes",
+        "href": "https://wicg.github.io/cross-origin-storage/#hashes",
+        "title": "Hashes",
+        "number": "2.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "cos-hash-equal",
+      "href": "https://wicg.github.io/cross-origin-storage/#cos-hash-equal",
+      "linkingText": [
+        "equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "COS hash"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hashes",
+        "href": "https://wicg.github.io/cross-origin-storage/#hashes",
+        "title": "Hashes",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "content-addressable",
+      "href": "https://wicg.github.io/cross-origin-storage/#content-addressable",
+      "linkingText": [
+        "content-addressable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hashes",
+        "href": "https://wicg.github.io/cross-origin-storage/#hashes",
+        "title": "Hashes",
+        "number": "2.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "cos-registry",
+      "href": "https://wicg.github.io/cross-origin-storage/#cos-registry",
+      "linkingText": [
+        "COS registry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cos-entries",
+        "href": "https://wicg.github.io/cross-origin-storage/#cos-entries",
+        "title": "COS entries",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "cos-entry",
+      "href": "https://wicg.github.io/cross-origin-storage/#cos-entry",
+      "linkingText": [
+        "COS entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cos-entries",
+        "href": "https://wicg.github.io/cross-origin-storage/#cos-entries",
+        "title": "COS entries",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "cos-entry-hash",
+      "href": "https://wicg.github.io/cross-origin-storage/#cos-entry-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "COS entry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cos-entries",
+        "href": "https://wicg.github.io/cross-origin-storage/#cos-entries",
+        "title": "COS entries",
+        "number": "2.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "cos-entry-bytes",
+      "href": "https://wicg.github.io/cross-origin-storage/#cos-entry-bytes",
+      "linkingText": [
+        "bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "COS entry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cos-entries",
+        "href": "https://wicg.github.io/cross-origin-storage/#cos-entries",
+        "title": "COS entries",
+        "number": "2.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "cos-entry-state",
+      "href": "https://wicg.github.io/cross-origin-storage/#cos-entry-state",
+      "linkingText": [
+        "state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "COS entry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cos-entries",
+        "href": "https://wicg.github.io/cross-origin-storage/#cos-entries",
+        "title": "COS entries",
+        "number": "2.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "cos-entry-origins",
+      "href": "https://wicg.github.io/cross-origin-storage/#cos-entry-origins",
+      "linkingText": [
+        "origins"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "COS entry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cos-entries",
+        "href": "https://wicg.github.io/cross-origin-storage/#cos-entries",
+        "title": "COS entries",
+        "number": "2.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "cos-entry-storing-origins",
+      "href": "https://wicg.github.io/cross-origin-storage/#cos-entry-storing-origins",
+      "linkingText": [
+        "storing origins"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "COS entry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cos-entries",
+        "href": "https://wicg.github.io/cross-origin-storage/#cos-entries",
+        "title": "COS entries",
+        "number": "2.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "cross-origin-storage-queue",
+      "href": "https://wicg.github.io/cross-origin-storage/#cross-origin-storage-queue",
+      "linkingText": [
+        "Cross-Origin Storage queue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cos-entries",
+        "href": "https://wicg.github.io/cross-origin-storage/#cos-entries",
+        "title": "COS entries",
+        "number": "2.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-public-hash-list",
+      "href": "https://wicg.github.io/cross-origin-storage/#dfn-public-hash-list",
+      "linkingText": [
+        "Public Hash List"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "public-hash-list",
+        "href": "https://wicg.github.io/cross-origin-storage/#public-hash-list",
+        "title": "The Public Hash List",
+        "number": "2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "phl",
+      "href": "https://wicg.github.io/cross-origin-storage/#phl",
+      "linkingText": [
+        "PHL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "public-hash-list",
+        "href": "https://wicg.github.io/cross-origin-storage/#public-hash-list",
+        "title": "The Public Hash List",
+        "number": "2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "on-the-phl",
+      "href": "https://wicg.github.io/cross-origin-storage/#on-the-phl",
+      "linkingText": [
+        "on the PHL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "public-hash-list",
+        "href": "https://wicg.github.io/cross-origin-storage/#public-hash-list",
+        "title": "The Public Hash List",
+        "number": "2.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "crossoriginstoragemanager",
+      "href": "https://wicg.github.io/cross-origin-storage/#crossoriginstoragemanager",
+      "linkingText": [
+        "CrossOriginStorageManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-crossoriginstoragemanager-interface",
+        "href": "https://wicg.github.io/cross-origin-storage/#the-crossoriginstoragemanager-interface",
+        "title": "The CrossOriginStorageManager interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-crossoriginstoragemanager-requestfilehandle-hash-options-hash",
+      "href": "https://wicg.github.io/cross-origin-storage/#dom-crossoriginstoragemanager-requestfilehandle-hash-options-hash",
+      "linkingText": [
+        "hash"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CrossOriginStorageManager/requestFileHandle(hash, options)",
+        "CrossOriginStorageManager/requestFileHandle(hash)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-crossoriginstoragemanager-interface",
+        "href": "https://wicg.github.io/cross-origin-storage/#the-crossoriginstoragemanager-interface",
+        "title": "The CrossOriginStorageManager interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-crossoriginstoragemanager-requestfilehandle-hash-options-options",
+      "href": "https://wicg.github.io/cross-origin-storage/#dom-crossoriginstoragemanager-requestfilehandle-hash-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CrossOriginStorageManager/requestFileHandle(hash, options)",
+        "CrossOriginStorageManager/requestFileHandle(hash)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-crossoriginstoragemanager-interface",
+        "href": "https://wicg.github.io/cross-origin-storage/#the-crossoriginstoragemanager-interface",
+        "title": "The CrossOriginStorageManager interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dictdef-crossoriginstoragerequestfilehandlehash",
+      "href": "https://wicg.github.io/cross-origin-storage/#dictdef-crossoriginstoragerequestfilehandlehash",
+      "linkingText": [
+        "CrossOriginStorageRequestFileHandleHash"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-crossoriginstoragemanager-interface",
+        "href": "https://wicg.github.io/cross-origin-storage/#the-crossoriginstoragemanager-interface",
+        "title": "The CrossOriginStorageManager interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-crossoriginstoragerequestfilehandlehash-value",
+      "href": "https://wicg.github.io/cross-origin-storage/#dom-crossoriginstoragerequestfilehandlehash-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CrossOriginStorageRequestFileHandleHash"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-crossoriginstoragemanager-interface",
+        "href": "https://wicg.github.io/cross-origin-storage/#the-crossoriginstoragemanager-interface",
+        "title": "The CrossOriginStorageManager interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-crossoriginstoragerequestfilehandlehash-algorithm",
+      "href": "https://wicg.github.io/cross-origin-storage/#dom-crossoriginstoragerequestfilehandlehash-algorithm",
+      "linkingText": [
+        "algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CrossOriginStorageRequestFileHandleHash"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-crossoriginstoragemanager-interface",
+        "href": "https://wicg.github.io/cross-origin-storage/#the-crossoriginstoragemanager-interface",
+        "title": "The CrossOriginStorageManager interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dictdef-crossoriginstoragerequestfilehandleoptions",
+      "href": "https://wicg.github.io/cross-origin-storage/#dictdef-crossoriginstoragerequestfilehandleoptions",
+      "linkingText": [
+        "CrossOriginStorageRequestFileHandleOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-crossoriginstoragemanager-interface",
+        "href": "https://wicg.github.io/cross-origin-storage/#the-crossoriginstoragemanager-interface",
+        "title": "The CrossOriginStorageManager interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-crossoriginstoragerequestfilehandleoptions-create",
+      "href": "https://wicg.github.io/cross-origin-storage/#dom-crossoriginstoragerequestfilehandleoptions-create",
+      "linkingText": [
+        "create"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CrossOriginStorageRequestFileHandleOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-crossoriginstoragemanager-interface",
+        "href": "https://wicg.github.io/cross-origin-storage/#the-crossoriginstoragemanager-interface",
+        "title": "The CrossOriginStorageManager interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-crossoriginstoragerequestfilehandleoptions-create",
+          "name": "handle = await navigator . crossOriginStorage . requestFileHandle(hash, { create: true })",
+          "href": "https://wicg.github.io/cross-origin-storage/#ref-for-dom-crossoriginstoragerequestfilehandleoptions-create",
+          "heading": {
+            "id": "requestfilehandle",
+            "href": "https://wicg.github.io/cross-origin-storage/#requestfilehandle",
+            "title": "The requestFileHandle() method",
+            "number": "3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-crossoriginstoragerequestfilehandleoptions-create①",
+          "name": "handle = await navigator . crossOriginStorage . requestFileHandle(hash, { create: true, origins: \"*\" })",
+          "href": "https://wicg.github.io/cross-origin-storage/#ref-for-dom-crossoriginstoragerequestfilehandleoptions-create%E2%91%A0",
+          "heading": {
+            "id": "requestfilehandle",
+            "href": "https://wicg.github.io/cross-origin-storage/#requestfilehandle",
+            "title": "The requestFileHandle() method",
+            "number": "3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-crossoriginstoragerequestfilehandleoptions-create②",
+          "name": "handle = await navigator . crossOriginStorage . requestFileHandle(hash, { create: true, origins: [\"https://a.example\", \"https://b.example\"] })",
+          "href": "https://wicg.github.io/cross-origin-storage/#ref-for-dom-crossoriginstoragerequestfilehandleoptions-create%E2%91%A1",
+          "heading": {
+            "id": "requestfilehandle",
+            "href": "https://wicg.github.io/cross-origin-storage/#requestfilehandle",
+            "title": "The requestFileHandle() method",
+            "number": "3.1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dom-crossoriginstoragerequestfilehandleoptions-origins",
+      "href": "https://wicg.github.io/cross-origin-storage/#dom-crossoriginstoragerequestfilehandleoptions-origins",
+      "linkingText": [
+        "origins"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CrossOriginStorageRequestFileHandleOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-crossoriginstoragemanager-interface",
+        "href": "https://wicg.github.io/cross-origin-storage/#the-crossoriginstoragemanager-interface",
+        "title": "The CrossOriginStorageManager interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-crossoriginstoragerequestfilehandleoptions-origins",
+          "name": "handle = await navigator . crossOriginStorage . requestFileHandle(hash, { create: true, origins: \"*\" })",
+          "href": "https://wicg.github.io/cross-origin-storage/#ref-for-dom-crossoriginstoragerequestfilehandleoptions-origins",
+          "heading": {
+            "id": "requestfilehandle",
+            "href": "https://wicg.github.io/cross-origin-storage/#requestfilehandle",
+            "title": "The requestFileHandle() method",
+            "number": "3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-crossoriginstoragerequestfilehandleoptions-origins①",
+          "name": "handle = await navigator . crossOriginStorage . requestFileHandle(hash, { create: true, origins: [\"https://a.example\", \"https://b.example\"] })",
+          "href": "https://wicg.github.io/cross-origin-storage/#ref-for-dom-crossoriginstoragerequestfilehandleoptions-origins%E2%91%A0",
+          "heading": {
+            "id": "requestfilehandle",
+            "href": "https://wicg.github.io/cross-origin-storage/#requestfilehandle",
+            "title": "The requestFileHandle() method",
+            "number": "3.1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "navigatorcrossoriginstorage",
+      "href": "https://wicg.github.io/cross-origin-storage/#navigatorcrossoriginstorage",
+      "linkingText": [
+        "NavigatorCrossOriginStorage"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-crossoriginstoragemanager-interface",
+        "href": "https://wicg.github.io/cross-origin-storage/#the-crossoriginstoragemanager-interface",
+        "title": "The CrossOriginStorageManager interface",
+        "number": "3"
+      },
+      "definedIn": "pre",
+      "links": []
+    },
+    {
+      "id": "dom-navigatorcrossoriginstorage-crossoriginstorage",
+      "href": "https://wicg.github.io/cross-origin-storage/#dom-navigatorcrossoriginstorage-crossoriginstorage",
+      "linkingText": [
+        "crossOriginStorage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NavigatorCrossOriginStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-crossoriginstoragemanager-interface",
+        "href": "https://wicg.github.io/cross-origin-storage/#the-crossoriginstoragemanager-interface",
+        "title": "The CrossOriginStorageManager interface",
+        "number": "3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dom-crossoriginstoragemanager-requestfilehandle",
+      "href": "https://wicg.github.io/cross-origin-storage/#dom-crossoriginstoragemanager-requestfilehandle",
+      "linkingText": [
+        "requestFileHandle(hash, options)",
+        "requestFileHandle(hash)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CrossOriginStorageManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "requestfilehandle",
+        "href": "https://wicg.github.io/cross-origin-storage/#requestfilehandle",
+        "title": "The requestFileHandle() method",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": [
+        {
+          "type": "dev",
+          "id": "ref-for-dom-crossoriginstoragemanager-requestfilehandle④",
+          "name": "handle = await navigator . crossOriginStorage . requestFileHandle(hash)",
+          "href": "https://wicg.github.io/cross-origin-storage/#ref-for-dom-crossoriginstoragemanager-requestfilehandle%E2%91%A3",
+          "heading": {
+            "id": "requestfilehandle",
+            "href": "https://wicg.github.io/cross-origin-storage/#requestfilehandle",
+            "title": "The requestFileHandle() method",
+            "number": "3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-crossoriginstoragemanager-requestfilehandle⑤",
+          "name": "handle = await navigator . crossOriginStorage . requestFileHandle(hash, { create: true })",
+          "href": "https://wicg.github.io/cross-origin-storage/#ref-for-dom-crossoriginstoragemanager-requestfilehandle%E2%91%A4",
+          "heading": {
+            "id": "requestfilehandle",
+            "href": "https://wicg.github.io/cross-origin-storage/#requestfilehandle",
+            "title": "The requestFileHandle() method",
+            "number": "3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-crossoriginstoragemanager-requestfilehandle⑥",
+          "name": "handle = await navigator . crossOriginStorage . requestFileHandle(hash, { create: true, origins: \"*\" })",
+          "href": "https://wicg.github.io/cross-origin-storage/#ref-for-dom-crossoriginstoragemanager-requestfilehandle%E2%91%A5",
+          "heading": {
+            "id": "requestfilehandle",
+            "href": "https://wicg.github.io/cross-origin-storage/#requestfilehandle",
+            "title": "The requestFileHandle() method",
+            "number": "3.1"
+          }
+        },
+        {
+          "type": "dev",
+          "id": "ref-for-dom-crossoriginstoragemanager-requestfilehandle⑦",
+          "name": "handle = await navigator . crossOriginStorage . requestFileHandle(hash, { create: true, origins: [\"https://a.example\", \"https://b.example\"] })",
+          "href": "https://wicg.github.io/cross-origin-storage/#ref-for-dom-crossoriginstoragemanager-requestfilehandle%E2%91%A6",
+          "heading": {
+            "id": "requestfilehandle",
+            "href": "https://wicg.github.io/cross-origin-storage/#requestfilehandle",
+            "title": "The requestFileHandle() method",
+            "number": "3.1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "validate-a-cos-request",
+      "href": "https://wicg.github.io/cross-origin-storage/#validate-a-cos-request",
+      "linkingText": [
+        "validate a COS request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "requestfilehandle",
+        "href": "https://wicg.github.io/cross-origin-storage/#requestfilehandle",
+        "title": "The requestFileHandle() method",
+        "number": "3.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "complete-a-read-request",
+      "href": "https://wicg.github.io/cross-origin-storage/#complete-a-read-request",
+      "linkingText": [
+        "complete a read request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reading-files",
+        "href": "https://wicg.github.io/cross-origin-storage/#reading-files",
+        "title": "Reading files",
+        "number": "3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "determine-cos-disclosure",
+      "href": "https://wicg.github.io/cross-origin-storage/#determine-cos-disclosure",
+      "linkingText": [
+        "determine COS disclosure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reading-files",
+        "href": "https://wicg.github.io/cross-origin-storage/#reading-files",
+        "title": "Reading files",
+        "number": "3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "apply-availability-gating",
+      "href": "https://wicg.github.io/cross-origin-storage/#apply-availability-gating",
+      "linkingText": [
+        "apply availability gating"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "reading-files",
+        "href": "https://wicg.github.io/cross-origin-storage/#reading-files",
+        "title": "Reading files",
+        "number": "3.2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "filesystemfilehandle-requested-origins",
+      "href": "https://wicg.github.io/cross-origin-storage/#filesystemfilehandle-requested-origins",
+      "linkingText": [
+        "requested origins"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FileSystemFileHandle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "creating-and-writing-files",
+        "href": "https://wicg.github.io/cross-origin-storage/#creating-and-writing-files",
+        "title": "Creating and writing files",
+        "number": "3.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "complete-a-create-request",
+      "href": "https://wicg.github.io/cross-origin-storage/#complete-a-create-request",
+      "linkingText": [
+        "complete a create request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "creating-and-writing-files",
+        "href": "https://wicg.github.io/cross-origin-storage/#creating-and-writing-files",
+        "title": "Creating and writing files",
+        "number": "3.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "normalize-requested-origins",
+      "href": "https://wicg.github.io/cross-origin-storage/#normalize-requested-origins",
+      "linkingText": [
+        "normalize requested origins"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "creating-and-writing-files",
+        "href": "https://wicg.github.io/cross-origin-storage/#creating-and-writing-files",
+        "title": "Creating and writing files",
+        "number": "3.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "verify-and-store",
+      "href": "https://wicg.github.io/cross-origin-storage/#verify-and-store",
+      "linkingText": [
+        "verify and store"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "creating-and-writing-files",
+        "href": "https://wicg.github.io/cross-origin-storage/#creating-and-writing-files",
+        "title": "Creating and writing files",
+        "number": "3.3"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "upgrade-resource-visibility",
+      "href": "https://wicg.github.io/cross-origin-storage/#upgrade-resource-visibility",
+      "linkingText": [
+        "upgrade resource visibility"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resource-visibility-upgrades",
+        "href": "https://wicg.github.io/cross-origin-storage/#resource-visibility-upgrades",
+        "title": "Resource visibility upgrades",
+        "number": "3.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "cross-origin-storage-file-system",
+      "href": "https://wicg.github.io/cross-origin-storage/#cross-origin-storage-file-system",
+      "linkingText": [
+        "Cross-Origin Storage file system"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cos-file-system",
+        "href": "https://wicg.github.io/cross-origin-storage/#cos-file-system",
+        "title": "The Cross-Origin Storage file system",
+        "number": "4"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "maximum-origins-list-length",
+      "href": "https://wicg.github.io/cross-origin-storage/#maximum-origins-list-length",
+      "linkingText": [
+        "maximum origins list length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-limits",
+        "href": "https://wicg.github.io/cross-origin-storage/#storage-limits",
+        "title": "Storage limits",
+        "number": "5.1"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "permissionspolicy-cross-origin-storage",
+      "href": "https://wicg.github.io/cross-origin-storage/#permissionspolicy-cross-origin-storage",
+      "linkingText": [
+        "cross-origin-storage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PermissionsPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-policy-integration",
+        "href": "https://wicg.github.io/cross-origin-storage/#permissions-policy-integration",
+        "title": "Permissions Policy integration",
+        "number": "6"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "greaseing",
+      "href": "https://wicg.github.io/cross-origin-storage/#greaseing",
+      "linkingText": [
+        "GREASE’ing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "greasing",
+        "href": "https://wicg.github.io/cross-origin-storage/#greasing",
+        "title": "GREASE’ing",
+        "number": "7.4"
+      },
+      "definedIn": "prose",
+      "links": []
+    }
+  ]
+}

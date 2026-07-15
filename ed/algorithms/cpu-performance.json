@@ -1,0 +1,46 @@
+{
+  "spec": {
+    "title": "CPU Performance API",
+    "url": "https://wicg.github.io/cpu-performance/"
+  },
+  "algorithms": [
+    {
+      "html": "In particular, web applications may want to use performance information to:",
+      "rationale": "run",
+      "steps": [
+        {
+          "html": "<p>Control non-essential tasks and requests; e.g.,\nallow or block 3rd party scripts,\nuse or avoid heavy libraries.</p>"
+        },
+        {
+          "html": "<p>Adjust the complexity of web content; e.g.,\nthe resolution and format for images and video,\nthe compression level for uploading data,\nenable or disable computationally heavy operations such as animations,\nimprove resource management (lazy loading, prefetching, prerendering).</p>"
+        },
+        {
+          "html": "<p>Improve real user monitoring; e.g.,\nbetter understand if users have faster or slower devices,\nfocus development effort more appropriately.</p>"
+        },
+        {
+          "html": "<p>Run computations on the client side vs. on the server side; e.g.,\nuse server-side rendering,\nrun AI applications and LLMs on the client side.</p>"
+        },
+        {
+          "html": "<p>Select ads that are better suited for the user device.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Navigator/cpuPerformance",
+      "href": "https://wicg.github.io/cpu-performance/#dom-navigator-cpuperformance",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Navigator\" data-dfn-type=\"attribute\" data-export=\"\" id=\"dom-navigator-cpuperformance\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>cpuPerformance</code></dfn> getter\n  steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>tier</var> be an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#idl-unsigned-short\" id=\"ref-for-idl-unsigned-short①\">unsigned short</a></code> representing the <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cpu-performance/#performance-tier\" id=\"ref-for-performance-tier①⑦\">performance tier</a> of the device’s <a data-link-type=\"dfn\" href=\"https://wicg.github.io/cpu-performance/#cpu\" id=\"ref-for-cpu①⓪\">CPU</a>, generated in an\n<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined①\">implementation-defined</a> way, considering the recommendations\nand constraints described in <a href=\"https://wicg.github.io/cpu-performance/#computing-performance-tier-value\">§ 3.1 Computing Performance Tier Value</a>.</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: 0 ≤ <var>tier</var> ≤ 4.</p>"
+        },
+        {
+          "html": "<p>Return <var>tier</var>.</p>"
+        }
+      ]
+    }
+  ]
+}

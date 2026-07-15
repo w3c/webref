@@ -1,0 +1,269 @@
+{
+  "spec": {
+    "title": "Cross-Origin Storage",
+    "url": "https://wicg.github.io/cross-origin-storage/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/cross-origin-storage/#title",
+      "level": 1,
+      "title": "Cross-Origin Storage"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/cross-origin-storage/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/cross-origin-storage/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/cross-origin-storage/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://wicg.github.io/cross-origin-storage/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "concepts",
+      "href": "https://wicg.github.io/cross-origin-storage/#concepts",
+      "level": 2,
+      "title": "Concepts",
+      "number": "2"
+    },
+    {
+      "id": "hashes",
+      "href": "https://wicg.github.io/cross-origin-storage/#hashes",
+      "level": 3,
+      "title": "Hashes",
+      "number": "2.1"
+    },
+    {
+      "id": "cos-entries",
+      "href": "https://wicg.github.io/cross-origin-storage/#cos-entries",
+      "level": 3,
+      "title": "COS entries",
+      "number": "2.2"
+    },
+    {
+      "id": "public-hash-list",
+      "href": "https://wicg.github.io/cross-origin-storage/#public-hash-list",
+      "level": 3,
+      "title": "The Public Hash List",
+      "number": "2.3"
+    },
+    {
+      "id": "the-crossoriginstoragemanager-interface",
+      "href": "https://wicg.github.io/cross-origin-storage/#the-crossoriginstoragemanager-interface",
+      "level": 2,
+      "title": "The CrossOriginStorageManager interface",
+      "number": "3"
+    },
+    {
+      "id": "requestfilehandle",
+      "href": "https://wicg.github.io/cross-origin-storage/#requestfilehandle",
+      "level": 3,
+      "title": "The requestFileHandle() method",
+      "number": "3.1"
+    },
+    {
+      "id": "reading-files",
+      "href": "https://wicg.github.io/cross-origin-storage/#reading-files",
+      "level": 3,
+      "title": "Reading files",
+      "number": "3.2"
+    },
+    {
+      "id": "creating-and-writing-files",
+      "href": "https://wicg.github.io/cross-origin-storage/#creating-and-writing-files",
+      "level": 3,
+      "title": "Creating and writing files",
+      "number": "3.3"
+    },
+    {
+      "id": "resource-visibility-upgrades",
+      "href": "https://wicg.github.io/cross-origin-storage/#resource-visibility-upgrades",
+      "level": 3,
+      "title": "Resource visibility upgrades",
+      "number": "3.4"
+    },
+    {
+      "id": "original-storer-access",
+      "href": "https://wicg.github.io/cross-origin-storage/#original-storer-access",
+      "level": 4,
+      "title": "Original storer access",
+      "number": "3.4.1"
+    },
+    {
+      "id": "cos-file-system",
+      "href": "https://wicg.github.io/cross-origin-storage/#cos-file-system",
+      "level": 2,
+      "title": "The Cross-Origin Storage file system",
+      "number": "4"
+    },
+    {
+      "id": "storage-management",
+      "href": "https://wicg.github.io/cross-origin-storage/#storage-management",
+      "level": 2,
+      "title": "Storage management",
+      "number": "5"
+    },
+    {
+      "id": "storage-limits",
+      "href": "https://wicg.github.io/cross-origin-storage/#storage-limits",
+      "level": 3,
+      "title": "Storage limits",
+      "number": "5.1"
+    },
+    {
+      "id": "eviction",
+      "href": "https://wicg.github.io/cross-origin-storage/#eviction",
+      "level": 3,
+      "title": "Eviction",
+      "number": "5.2"
+    },
+    {
+      "id": "manually-added-entries",
+      "href": "https://wicg.github.io/cross-origin-storage/#manually-added-entries",
+      "level": 3,
+      "title": "Manually added entries",
+      "number": "5.3"
+    },
+    {
+      "id": "permissions-policy-integration",
+      "href": "https://wicg.github.io/cross-origin-storage/#permissions-policy-integration",
+      "level": 2,
+      "title": "Permissions Policy integration",
+      "number": "6"
+    },
+    {
+      "id": "privacy-and-security-considerations",
+      "href": "https://wicg.github.io/cross-origin-storage/#privacy-and-security-considerations",
+      "level": 2,
+      "title": "Privacy and security considerations",
+      "number": "7"
+    },
+    {
+      "id": "resource-integrity",
+      "href": "https://wicg.github.io/cross-origin-storage/#resource-integrity",
+      "level": 3,
+      "title": "Resource integrity",
+      "number": "7.1"
+    },
+    {
+      "id": "cross-site-probing",
+      "href": "https://wicg.github.io/cross-origin-storage/#cross-site-probing",
+      "level": 3,
+      "title": "Cross-site probing",
+      "number": "7.2"
+    },
+    {
+      "id": "availability-gating",
+      "href": "https://wicg.github.io/cross-origin-storage/#availability-gating",
+      "level": 3,
+      "title": "Availability gating",
+      "number": "7.3"
+    },
+    {
+      "id": "greasing",
+      "href": "https://wicg.github.io/cross-origin-storage/#greasing",
+      "level": 3,
+      "title": "GREASE’ing",
+      "number": "7.4"
+    },
+    {
+      "id": "fingerprinting",
+      "href": "https://wicg.github.io/cross-origin-storage/#fingerprinting",
+      "level": 3,
+      "title": "Fingerprinting",
+      "number": "7.5"
+    },
+    {
+      "id": "integration-with-other-specifications",
+      "href": "https://wicg.github.io/cross-origin-storage/#integration-with-other-specifications",
+      "level": 2,
+      "title": "Integration with other specifications",
+      "number": "8"
+    },
+    {
+      "id": "acks",
+      "href": "https://wicg.github.io/cross-origin-storage/#acks",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/cross-origin-storage/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/cross-origin-storage/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/cross-origin-storage/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/cross-origin-storage/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/cross-origin-storage/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/cross-origin-storage/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/cross-origin-storage/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/cross-origin-storage/#informative",
+      "level": 3,
+      "title": "Non-Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/cross-origin-storage/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://wicg.github.io/cross-origin-storage/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "spec": {
+    "title": "Proofreader API",
+    "url": "https://webmachinelearning.github.io/proofreader-api/"
+  },
+  "algorithms": [
+    {
+      "name": "Proofreader/create(options)",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#dom-proofreader-create",
+      "html": "The static <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Proofreader\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"create(options)|create()\" id=\"dom-proofreader-create\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>create(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#create-an-ai-model-object\" id=\"ref-for-create-an-ai-model-object\">creating an AI model object</a> given <var>options</var>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader\" id=\"ref-for-proofreader①\">Proofreader</a></code>\", <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#validate-and-canonicalize-proofreader-options\" id=\"ref-for-validate-and-canonicalize-proofreader-options\">validate and canonicalize proofreader options</a>, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#compute-proofreader-options-availability\" id=\"ref-for-compute-proofreader-options-availability\">compute proofreader options availability</a>, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#download-the-proofreader-model\" id=\"ref-for-download-the-proofreader-model\">download the proofreader model</a>, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#initialize-the-proofreader-model\" id=\"ref-for-initialize-the-proofreader-model\">initialize the proofreader model</a>, <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#create-a-proofreader-object\" id=\"ref-for-create-a-proofreader-object\">create a proofreader object</a>, and false.</p>"
+        }
+      ]
+    },
+    {
+      "name": "validate and canonicalize proofreader options",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#validate-and-canonicalize-proofreader-options",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"validate-and-canonicalize-proofreader-options\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">validate and canonicalize proofreader options</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dictdef-proofreadercreatecoreoptions\" id=\"ref-for-dictdef-proofreadercreatecoreoptions②\">ProofreaderCreateCoreOptions</a></code> <var>options</var>, perform the following steps. They mutate <var>options</var> in place to canonicalize and deduplicate language tags, and throw an exception if any are invalid.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#validate-and-canonicalize-language-tags\" id=\"ref-for-validate-and-canonicalize-language-tags\">Validate and canonicalize language tags</a> given <var>options</var> and \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dom-proofreadercreatecoreoptions-expectedinputlanguages\" id=\"ref-for-dom-proofreadercreatecoreoptions-expectedinputlanguages\">expectedInputLanguages</a></code>\".</p>"
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#validate-and-canonicalize-language-tags\" id=\"ref-for-validate-and-canonicalize-language-tags①\">Validate and canonicalize language tags</a> given <var>options</var> and \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dom-proofreadercreatecoreoptions-correctionexplanationlanguage\" id=\"ref-for-dom-proofreadercreatecoreoptions-correctionexplanationlanguage\">correctionExplanationLanguage</a></code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "download the proofreader model",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#download-the-proofreader-model",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"download-the-proofreader-model\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">download the proofreader model</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dictdef-proofreadercreatecoreoptions\" id=\"ref-for-dictdef-proofreadercreatecoreoptions③\">ProofreaderCreateCoreOptions</a></code> <var>options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert\">Assert</a>: these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Initiate the download process for everything the user agent needs to proofread text according to <var>options</var>. This could include a base AI model, fine-tunings for specific languages or option values, or other resources.</p>"
+        },
+        {
+          "html": "<p>If the download process cannot be started for any reason, then return false.</p>"
+        },
+        {
+          "html": "<p>Return true.</p>"
+        }
+      ]
+    },
+    {
+      "name": "initialize the proofreader model",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#initialize-the-proofreader-model",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"initialize-the-proofreader-model\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">initialize the proofreader model</dfn>, given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dictdef-proofreadercreateoptions\" id=\"ref-for-dictdef-proofreadercreateoptions①\">ProofreaderCreateOptions</a></code> <var>options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert①\">Assert</a>: these steps are running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel①\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Perform any necessary initialization operations for the AI model backing the user agent’s proofreading capabilities.</p>\n      <p>This could include loading the model into memory, or loading any fine-tunings necessary to support the other options expressed by <var>options</var>.</p>"
+        },
+        {
+          "html": "<p>If initialization failed for any other reason, then return a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information\">DOMException error information</a> whose <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information-name\" id=\"ref-for-domexception-error-information-name\">name</a> is \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webidl.spec.whatwg.org/#operationerror\" id=\"ref-for-operationerror\">OperationError</a></code>\" and whose <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information-details\" id=\"ref-for-domexception-error-information-details\">details</a> contain appropriate detail.</p>"
+        },
+        {
+          "html": "<p>Return null.</p>"
+        }
+      ]
+    },
+    {
+      "name": "create a proofreader object",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#create-a-proofreader-object",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"create-a-proofreader-object\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">create a proofreader object</dfn>, given a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#realm\" id=\"ref-for-realm\">realm</a> <var>realm</var> and a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dictdef-proofreadercreateoptions\" id=\"ref-for-dictdef-proofreadercreateoptions②\">ProofreaderCreateOptions</a></code> <var>options</var>:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert②\">Assert</a>: these steps are running on <var>realm</var>’s <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html#surrounding-agent\" id=\"ref-for-surrounding-agent\">surrounding agent</a>’s <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/webappapis.html#concept-agent-event-loop\" id=\"ref-for-concept-agent-event-loop\">event loop</a>.</p>"
+        },
+        {
+          "html": "<p>Return a new <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader\" id=\"ref-for-proofreader②\">Proofreader</a></code> object, created in <var>realm</var>, with</p>\n      <dl class=\"props\">\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-include-correction-type\" id=\"ref-for-proofreader-include-correction-type\">include correction types</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dom-proofreadercreatecoreoptions-includecorrectiontypes\" id=\"ref-for-dom-proofreadercreatecoreoptions-includecorrectiontypes\">includeCorrectionTypes</a></code>\"] default to false</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-include-correction-explanations\" id=\"ref-for-proofreader-include-correction-explanations\">include correction explanations</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dom-proofreadercreatecoreoptions-includecorrectionexplanations\" id=\"ref-for-dom-proofreadercreatecoreoptions-includecorrectionexplanations\">includeCorrectionExplanations</a></code>\"] default to false</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-expected-input-languages\" id=\"ref-for-proofreader-expected-input-languages\">expected input languages</a>\n       </dt><dd data-md=\"\">\n        <p>the result of <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#dfn-create-frozen-array\" id=\"ref-for-dfn-create-frozen-array\">creating a frozen array</a> given <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dom-proofreadercreatecoreoptions-expectedinputlanguages\" id=\"ref-for-dom-proofreadercreatecoreoptions-expectedinputlanguages①\">expectedInputLanguages</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-is-empty\" id=\"ref-for-list-is-empty\">is not empty</a>; otherwise null</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-correction-explanation-language\" id=\"ref-for-proofreader-correction-explanation-language\">correction explanation language</a>\n       </dt><dd data-md=\"\">\n        <p><var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dom-proofreadercreatecoreoptions-correctionexplanationlanguage\" id=\"ref-for-dom-proofreadercreatecoreoptions-correctionexplanationlanguage①\">correctionExplanationLanguage</a></code>\"] if it <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#map-exists\" id=\"ref-for-map-exists\">exists</a>; otherwise null</p>\n      </dd></dl>"
+        }
+      ]
+    },
+    {
+      "name": "Proofreader/availability(options)",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#dom-proofreader-availability",
+      "html": "The static <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Proofreader\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"availability(options)|availability()\" id=\"dom-proofreader-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>availability(<var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#compute-ai-model-availability\" id=\"ref-for-compute-ai-model-availability\">computing AI model availability</a> given <var>options</var>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader\" id=\"ref-for-proofreader③\">Proofreader</a></code>\", <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#validate-and-canonicalize-proofreader-options\" id=\"ref-for-validate-and-canonicalize-proofreader-options①\">validate and canonicalize proofreader options</a>, and <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#compute-proofreader-options-availability\" id=\"ref-for-compute-proofreader-options-availability①\">compute proofreader options availability</a>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "compute proofreader options availability",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#compute-proofreader-options-availability",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"compute-proofreader-options-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute proofreader options availability</dfn> given a <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dictdef-proofreadercreatecoreoptions\" id=\"ref-for-dictdef-proofreadercreatecoreoptions④\">ProofreaderCreateCoreOptions</a></code> <var>options</var>, perform the following steps. They return either an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#enumdef-availability\" id=\"ref-for-enumdef-availability①\">Availability</a></code> value or null, and they mutate <var>options</var> in place to update language tags to their best-fit matches.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert③\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel②\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>availability</var> be the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-non-language-options-availability\" id=\"ref-for-proofreader-non-language-options-availability\">proofreader non-language options availability</a> given <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dom-proofreadercreatecoreoptions-includecorrectiontypes\" id=\"ref-for-dom-proofreadercreatecoreoptions-includecorrectiontypes①\">includeCorrectionTypes</a></code>\"], <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dom-proofreadercreatecoreoptions-includecorrectionexplanations\" id=\"ref-for-dom-proofreadercreatecoreoptions-includecorrectionexplanations①\">includeCorrectionExplanations</a></code>\"].</p>"
+        },
+        {
+          "html": "<p>Let <var>double</var> be the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-language-availabilities-double\" id=\"ref-for-proofreader-language-availabilities-double\">proofreader language availabilities double</a>.</p>"
+        },
+        {
+          "html": "<p>If <var>double</var> is null, then return null.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputLanguageAvailability</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#compute-language-availability\" id=\"ref-for-compute-language-availability\">computing language availability</a> given <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dom-proofreadercreatecoreoptions-expectedinputlanguages\" id=\"ref-for-dom-proofreadercreatecoreoptions-expectedinputlanguages②\">expectedInputLanguages</a></code>\"] and <var>double</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#language-availabilities-double-input-languages\" id=\"ref-for-language-availabilities-double-input-languages\">input languages</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>correctionExplanationLanguagesList</var> be « <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dom-proofreadercreatecoreoptions-correctionexplanationlanguage\" id=\"ref-for-dom-proofreadercreatecoreoptions-correctionexplanationlanguage②\">correctionExplanationLanguage</a></code>\"] ».</p>"
+        },
+        {
+          "html": "<p>Let <var>correctionExplanationLanguageAvailability</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#compute-language-availability\" id=\"ref-for-compute-language-availability①\">computing language availability</a> given <var>correctionExplanationLanguagesList</var> and <var>double</var>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#language-availabilities-double-correction-explanation-languages\" id=\"ref-for-language-availabilities-double-correction-explanation-languages\">correction explanation languages</a>.</p>"
+        },
+        {
+          "html": "<p>Set <var>options</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/proofreader-api/#dom-proofreadercreatecoreoptions-correctionexplanationlanguage\" id=\"ref-for-dom-proofreadercreatecoreoptions-correctionexplanationlanguage③\">correctionExplanationLanguage</a></code>\"] to <var>correctionExplanationLanguagesList</var>[0].</p>"
+        },
+        {
+          "html": "<p>Return the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#availability-minimum-availability\" id=\"ref-for-availability-minimum-availability\">minimum availability</a> given « <var>availability</var>, <var>inputLanguageAvailability</var>, <var>correctionExplanationLanguageAvailability</var> ».</p>"
+        }
+      ]
+    },
+    {
+      "name": "proofreader non-language options availability",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#proofreader-non-language-options-availability",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"proofreader-non-language-options-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">proofreader non-language options availability</dfn>, given a boolean <var>includeCorrectionTypes</var> and a boolean <var>includeCorrectionExplanations</var>, is given by the following steps. They return an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#enumdef-availability\" id=\"ref-for-enumdef-availability②\">Availability</a></code> value or null.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert④\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel③\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>If there is some error attempting to determine whether the user agent <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports\">can support</a> proofreading text, which the user agent believes to be transient (such that re-querying could stop producing such an error), then return null.</p>"
+        },
+        {
+          "html": "<p>If the user agent <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports①\">currently supports</a> proofreading text with/without correction types as described by <var>includeCorrectionTypes</var> and with/without correction explanations as described by <var>includeCorrectionExplanations</var>, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-available\" id=\"ref-for-dom-availability-available\">available</a></code>\".</p>"
+        },
+        {
+          "html": "<p>If the user agent believes it will be able to <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports②\">support</a> proofreading text according to <var>includeCorrectionTypes</var> and <var>includeCorrectionExplanations</var>, but only after finishing a download that is already ongoing, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloading\" id=\"ref-for-dom-availability-downloading\">downloading</a></code>\".</p>"
+        },
+        {
+          "html": "<p>If the user agent believes it will be able to <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports③\">support</a> proofreading text according to <var>includeCorrectionTypes</var> and <var>includeCorrectionExplanations</var>, but only after performing a not-currently-ongoing download, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloadable\" id=\"ref-for-dom-availability-downloadable\">downloadable</a></code>\".</p>"
+        },
+        {
+          "html": "<p>Otherwise, return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-unavailable\" id=\"ref-for-dom-availability-unavailable\">unavailable</a></code>\".</p>"
+        }
+      ]
+    },
+    {
+      "name": "proofreader language availabilities double",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#proofreader-language-availabilities-double",
+      "html": "The <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"proofreader-language-availabilities-double\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">proofreader language availabilities double</dfn> is given by the following steps. They return a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#language-availabilities-double\" id=\"ref-for-language-availabilities-double\">language availabilities double</a> or null.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑤\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel④\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>If there is some error attempting to determine whether the user agent <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports④\">can support</a> proofreading text, which the user agent believes to be transient (such that re-querying could stop producing such an error), then return null.</p>"
+        },
+        {
+          "html": "<p>Return a <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#language-availabilities-double\" id=\"ref-for-language-availabilities-double①\">language availabilities double</a> with:</p>\n      <dl class=\"props\">\n       <dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#language-availabilities-double-input-languages\" id=\"ref-for-language-availabilities-double-input-languages①\">input languages</a>\n       </dt><dd data-md=\"\">\n        <p>the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#get-the-language-availabilities-partition\" id=\"ref-for-get-the-language-availabilities-partition\">getting the language availabilities partition</a> given the purpose of proofreading text written in that language</p>\n       </dd><dt data-md=\"\"><a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#language-availabilities-double-correction-explanation-languages\" id=\"ref-for-language-availabilities-double-correction-explanation-languages①\">correction explanation languages</a>\n       </dt><dd data-md=\"\">\n        <p>the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#get-the-language-availabilities-partition\" id=\"ref-for-get-the-language-availabilities-partition①\">getting the language availabilities partition</a> given the purpose of producing text explanations of proofreading corrections in that language</p>\n      </dd></dl>"
+        }
+      ]
+    },
+    {
+      "name": "get the language availabilities partition",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#get-the-language-availabilities-partition",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"get-the-language-availabilities-partition\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">get the language availabilities partition</dfn> given a description <var>purpose</var> of the purpose for which we’re checking language availability:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>partition</var> be «[ \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-available\" id=\"ref-for-dom-availability-available③\">available</a></code>\" → an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set①\">set</a>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloading\" id=\"ref-for-dom-availability-downloading②\">downloading</a></code>\" → an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set②\">set</a>, \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloadable\" id=\"ref-for-dom-availability-downloadable③\">downloadable</a></code>\" → an empty <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set③\">set</a> ]».</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate\">For each</a> human language <var>languageTag</var>, represented as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#sec-language-tags\" id=\"ref-for-sec-language-tags①\">Unicode canonicalized locale identifier</a>, for which the user agent <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports⑤\">currently supports</a> <var>purpose</var>:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append\">Append</a> <var>languageTag</var> to <var>partition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-available\" id=\"ref-for-dom-availability-available④\">available</a></code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate①\">For each</a> human language <var>languageTag</var>, represented as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#sec-language-tags\" id=\"ref-for-sec-language-tags②\">Unicode canonicalized locale identifier</a>, for which the user agent believes it will be able to <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports⑥\">support</a> <var>purpose</var>, but only after finishing a download that is already ongoing:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append①\">Append</a> <var>languageTag</var> to <var>partition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloading\" id=\"ref-for-dom-availability-downloading③\">downloading</a></code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate②\">For each</a> human language <var>languageTag</var>, represented as a <a data-link-type=\"dfn\" href=\"https://tc39.es/ecma402/#sec-language-tags\" id=\"ref-for-sec-language-tags③\">Unicode canonicalized locale identifier</a>, for which the user agent believes it will be able to <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#model-availability-currently-supports\" id=\"ref-for-model-availability-currently-supports⑦\">support</a> <var>purpose</var>, but only after performing a not-currently-ongoing download:",
+          "rationale": "append",
+          "steps": [
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append②\">Append</a> <var>languageTag</var> to <var>partition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloadable\" id=\"ref-for-dom-availability-downloadable④\">downloadable</a></code>\"].</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑥\">Assert</a>: <var>partition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-available\" id=\"ref-for-dom-availability-available⑤\">available</a></code>\"], <var>partition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloading\" id=\"ref-for-dom-availability-downloading④\">downloading</a></code>\"], and <var>partition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloadable\" id=\"ref-for-dom-availability-downloadable⑤\">downloadable</a></code>\"] are disjoint.</p>"
+        },
+        {
+          "html": "If the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-union\" id=\"ref-for-set-union\">union</a> of <var>partition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-available\" id=\"ref-for-dom-availability-available⑥\">available</a></code>\"], <var>partition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloading\" id=\"ref-for-dom-availability-downloading⑤\">downloading</a></code>\"], and <var>partition</var>[\"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloadable\" id=\"ref-for-dom-availability-downloadable⑥\">downloadable</a></code>\"] does not meet the language tag set completeness rules, then:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>missingLanguageTags</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set④\">set</a> of missing language tags necessary for that union to meet the language tag set completeness rules.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate③\">For each</a> <var>languageTag</var> of <var>missingLanguageTags</var>:</p>"
+            },
+            {
+              "html": "<p><span id=\"language-tag-completeness-implementation-defined\"></span> <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#set-append\" id=\"ref-for-set-append③\">Append</a> <var>languageTag</var> to one of the three sets. Which of the sets to append to is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined\">implementation-defined</a>, and should be guided by considerations similar to that of <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma402/#sec-lookupmatchinglocalebybestfit\" id=\"ref-for-sec-lookupmatchinglocalebybestfit①\">LookupMatchingLocaleByBestFit</a> in terms of keeping \"best fallback languages\" together.</p>"
+            },
+            {
+              "html": "<p>Return <var>partition</var>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "compute language availability",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#compute-language-availability",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-export=\"\" id=\"compute-language-availability\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">compute language availability</dfn> given an <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#ordered-set\" id=\"ref-for-ordered-set⑤\">ordered set</a> of strings <var>requestedLanguages</var> and a  <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#language-availabilities-partition\" id=\"ref-for-language-availabilities-partition②\">language availabilities partition</a> <var>partition</var>, perform the following steps. They return an <code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#enumdef-availability\" id=\"ref-for-enumdef-availability③\">Availability</a></code> value, and they mutate <var>requestedLanguages</var> in place to update language tags to their best-fit matches.",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>availability</var> be \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-available\" id=\"ref-for-dom-availability-available⑦\">available</a></code>\".</p>"
+        },
+        {
+          "html": "<a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate④\">For each</a> <var>language</var> of <var>requestedLanguages</var>:",
+          "rationale": "let",
+          "steps": [
+            {
+              "html": "<p>Let <var>unavailable</var> be true.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-iterate\" id=\"ref-for-list-iterate⑤\">For each</a> <var>availabilityToCheck</var> of « \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-available\" id=\"ref-for-dom-availability-available⑧\">available</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloading\" id=\"ref-for-dom-availability-downloading⑥\">downloading</a></code>\", \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-downloadable\" id=\"ref-for-dom-availability-downloadable⑦\">downloadable</a></code>\" »:</p>"
+            },
+            {
+              "html": "<p>Let <var>languagesWithThisAvailability</var> be <var>partition</var>[<var>availabilityToCheck</var>].</p>"
+            },
+            {
+              "html": "<p>Let <var>bestMatch</var> be <a data-link-type=\"abstract-op\" href=\"https://tc39.es/ecma402/#sec-lookupmatchinglocalebybestfit\" id=\"ref-for-sec-lookupmatchinglocalebybestfit②\">LookupMatchingLocaleByBestFit</a>(<var>languagesWithThisAvailability</var>, « <var>language</var> »).</p>"
+            },
+            {
+              "html": "If <var>bestMatch</var> is not undefined, then:",
+              "rationale": "replace",
+              "steps": [
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#list-replace\" id=\"ref-for-list-replace\">Replace</a> <var>language</var> with <var>bestMatch</var>.[[locale]] in <var>requestedLanguages</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>availability</var> to the <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#availability-minimum-availability\" id=\"ref-for-availability-minimum-availability①\">minimum availability</a> given <var>availability</var> and <var>availabilityToCheck</var>.</p>"
+                },
+                {
+                  "html": "<p>Set <var>unavailable</var> to false.</p>"
+                },
+                {
+                  "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break\">Break</a>.</p>"
+                }
+              ]
+            },
+            {
+              "html": "<p>If <var>unavailable</var> is true, then return \"<code class=\"idl\"><a data-link-type=\"idl\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#dom-availability-unavailable\" id=\"ref-for-dom-availability-unavailable①\">unavailable</a></code>\".</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p>Return <var>availability</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Proofreader/proofread(input, options)",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#dom-proofreader-proofread",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Proofreader\" data-dfn-type=\"method\" data-export=\"\" data-lt=\"proofread(input, options)|proofread(input)\" id=\"dom-proofreader-proofread\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>proofread(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>operation</var> be an algorithm step which takes arguments <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>, and proofreads <var>input</var> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this④\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-include-correction-type\" id=\"ref-for-proofreader-include-correction-type②\">include correction types</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑤\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-include-correction-explanations\" id=\"ref-for-proofreader-include-correction-explanations②\">include correction explanations</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑥\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-correction-explanation-language\" id=\"ref-for-proofreader-correction-explanation-language②\">correction explanation language</a>, <var>chunkProduced</var>, <var>done</var>, <var>error</var>, and <var>stopProducing</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#get-an-aggregated-ai-model-result\" id=\"ref-for-get-an-aggregated-ai-model-result\">getting an aggregated AI model result</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑦\">this</a>, <var>options</var>, and <var>operation</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Proofreader/measureInputUsage(input, options)",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#dom-proofreader-measureinputusage",
+      "html": "The <dfn class=\"dfn-paneled idl-code has-dfn-panel\" data-dfn-for=\"Proofreader\" data-dfn-type=\"method\" data-export=\"\" id=\"dom-proofreader-measureinputusage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\"><code>measureInputUsage(<var>input</var>, <var>options</var>)</code></dfn> method steps are:",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p>Let <var>measureUsage</var> be an algorithm step which takes argument <var>stopMeasuring</var>, and returns the result of measuring proofreader input usage given <var>input</var>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑧\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-include-correction-type\" id=\"ref-for-proofreader-include-correction-type③\">include correction types</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this⑨\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-include-correction-explanations\" id=\"ref-for-proofreader-include-correction-explanations③\">include correction explanations</a>, <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①⓪\">this</a>’s <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-correction-explanation-language\" id=\"ref-for-proofreader-correction-explanation-language③\">correction explanation language</a>, and <var>stopMeasuring</var>.</p>"
+        },
+        {
+          "html": "<p>Return the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#measure-ai-model-input-usage\" id=\"ref-for-measure-ai-model-input-usage\">measuring AI model input usage</a> given <a data-link-type=\"dfn\" href=\"https://webidl.spec.whatwg.org/#this\" id=\"ref-for-this①①\">this</a>, <var>options</var>, and <var>measureUsage</var>.</p>"
+        }
+      ]
+    },
+    {
+      "name": "proofread",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#proofread",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"proofread\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">proofread</dfn> given:\n\n\n    <ul>\n     <li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string①\">string</a> <var>input</var>,</p>\n     </li><li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean②\">boolean</a> <var>includeCorrectionTypes</var>,</p>\n     </li><li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean③\">boolean</a> <var>includeCorrectionExplanations</var>,</p>\n     </li><li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string②\">string</a>-or-null <var>correctionExplanationLanguage</var>,</p>\n     </li><li data-md=\"\">\n      <p>an algorithm <var>chunkProduced</var> that takes a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string③\">string</a> and returns nothing,</p>\n     </li><li data-md=\"\">\n      <p>an algorithm <var>done</var> that takes no arguments and returns nothing,</p>\n     </li><li data-md=\"\">\n      <p>an algorithm <var>error</var> that takes <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#error-information\" id=\"ref-for-error-information\">error information</a> and returns nothing, and</p>\n     </li><li data-md=\"\">\n      <p>an algorithm <var>stopProducing</var> that takes no arguments and returns a boolean,</p>\n    </li></ul>\n    <p>perform the following steps:</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑦\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑤\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>requested</var> be the result of <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#measure-proofreader-input-usage\" id=\"ref-for-measure-proofreader-input-usage\">measuring proofreader input usage</a> given <var>input</var>, <var>includeCorrectionTypes</var>, <var>correctionExplanationLanguage</var>, <var>correctionExplanationLanguage</var>, and <var>stopProducing</var>.</p>"
+        },
+        {
+          "html": "<p>If <var>requested</var> is null, then return.</p>"
+        },
+        {
+          "html": "If <var>requested</var> is an <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#error-information\" id=\"ref-for-error-information①\">error information</a>, then:",
+          "rationale": "perform",
+          "steps": [
+            {
+              "html": "<p>Perform <var>error</var> given <var>requested</var>.</p>"
+            },
+            {
+              "html": "<p>Return.</p>"
+            }
+          ]
+        },
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑧\">Assert</a>: <var>requested</var> is a number.</p>"
+        },
+        {
+          "html": "Implementers should do their utmost to ensure that the result is an actual proofread result of <var>input</var>, and is not arbitrary output prompted by <var>input</var>.",
+          "rationale": "wait",
+          "steps": [
+            {
+              "html": "<p>Wait for the next chunk of proofreading data to be produced, for the proofreading process to finish, or for the result of calling <var>stopProducing</var> to become true.</p>"
+            },
+            {
+              "html": "<p>If such a chunk is successfully produced:</p>"
+            },
+            {
+              "html": "<p>Let it be represented as a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑤\">string</a> <var>chunk</var>.</p>"
+            },
+            {
+              "html": "<p>Perform <var>chunkProduced</var> given <var>chunk</var>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if the proofreading process has finished:</p>"
+            },
+            {
+              "html": "<p>Perform <var>done</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break①\">Break</a>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if <var>stopProducing</var> returns true, then <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break②\">break</a>.</p>"
+            },
+            {
+              "html": "<p>Otherwise, if an error occurred during proofreading:</p>"
+            },
+            {
+              "html": "<p>Let the error be represented as <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#error-information\" id=\"ref-for-error-information②\">error information</a> <var>errorInfo</var> according to the guidance in <a href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-errors\">§ 3.5.4 Errors</a>.</p>"
+            },
+            {
+              "html": "<p>Perform <var>error</var> given <var>errorInfo</var>.</p>"
+            },
+            {
+              "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#iteration-break\" id=\"ref-for-iteration-break③\">Break</a>.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "measure proofreader input usage",
+      "href": "https://webmachinelearning.github.io/proofreader-api/#measure-proofreader-input-usage",
+      "html": "To <dfn class=\"dfn-paneled has-dfn-panel\" data-dfn-type=\"dfn\" data-noexport=\"\" id=\"measure-proofreader-input-usage\" role=\"button\" aria-expanded=\"false\" tabindex=\"0\">measure proofreader input usage</dfn>, given:\n\n\n    <ul>\n     <li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑥\">string</a> <var>input</var>,</p>\n     </li><li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean④\">boolean</a> <var>includeCorrectionTypes</var>,</p>\n     </li><li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#boolean\" id=\"ref-for-boolean⑤\">boolean</a> <var>includeCorrectionExplanations</var>,</p>\n     </li><li data-md=\"\">\n      <p>a <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string\" id=\"ref-for-string⑦\">string</a>-or-null <var>correctionExplanationLanguage</var>, and</p>\n     </li><li data-md=\"\">\n      <p>an algorithm <var>stopMeasuring</var> that takes no arguments and returns a boolean,</p>\n    </li></ul>\n    <p>perform the following steps:</p>",
+      "rationale": ".algorithm",
+      "steps": [
+        {
+          "html": "<p><a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#assert\" id=\"ref-for-assert⑨\">Assert</a>: this algorithm is running <a data-link-type=\"dfn\" href=\"https://html.spec.whatwg.org/multipage/infrastructure.html#in-parallel\" id=\"ref-for-in-parallel⑥\">in parallel</a>.</p>"
+        },
+        {
+          "html": "<p>Let <var>inputToModel</var> be the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined③\">implementation-defined</a> string that would be sent to the underlying model in order to <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/proofreader-api/#proofread\" id=\"ref-for-proofread\">proofread</a> given <var>input</var>, <var>includeCorrectionTypes</var>, <var>includeCorrectionExplanations</var>, and <var>correctionExplanationLanguage</var>.</p>\n      <p>If during this process <var>stopMeasuring</var> starts returning true, then return null.</p>\n      <p>If an error occurs during this process, then return an appropriate <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information①\">DOMException error information</a> according to the guidance in <a href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-errors\">§ 3.5.4 Errors</a>.</p>"
+        },
+        {
+          "html": "<p>Return the amount of input usage needed to represent <var>inputToModel</var> when given to the underlying model. The exact calculation procedure is <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#implementation-defined\" id=\"ref-for-implementation-defined④\">implementation-defined</a>, subject to the following constraints.</p>\n      <p>The returned input usage must be nonnegative and finite. It must be 0, if there are no usage quotas for the proofreading process. Otherwise, it must be positive and should be roughly proportional to the <a data-link-type=\"dfn\" href=\"https://infra.spec.whatwg.org/#string-length\" id=\"ref-for-string-length\">length</a> of <var>inputToModel</var>.</p>\n      \n      <p>If during this process <var>stopMeasuring</var> starts returning true, then instead return null.</p>\n      <p>If an error occurs during this process, then instead return an appropriate <a data-link-type=\"dfn\" href=\"https://webmachinelearning.github.io/writing-assistance-apis/#domexception-error-information\" id=\"ref-for-domexception-error-information②\">DOMException error information</a> according to the guidance in <a href=\"https://webmachinelearning.github.io/proofreader-api/#proofreader-errors\">§ 3.5.4 Errors</a>.</p>"
+        }
+      ]
+    }
+  ]
+}

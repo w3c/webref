@@ -19,11 +19,11 @@
     {
       "name": "process the share_target member",
       "href": "https://w3c.github.io/web-share-target/#dfn-process-the-share_target-member",
-      "html": "To <dfn id=\"dfn-process-the-share_target-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>share_target</code> member</dfn> given <a data-link-type=\"dfn|abstract-op\" data-cite=\"JSON#section-4\" href=\"https://www.rfc-editor.org/rfc/rfc8259#section-4\" id=\"ref-for-index-term-object-type-3\">object</a>\n          <var data-type=\"JSON\">json</var> and <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-1\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
+      "html": "To <dfn id=\"dfn-process-the-share_target-member\" tabindex=\"0\" aria-haspopup=\"dialog\" data-dfn-type=\"dfn\">process the <code>share_target</code> member</dfn> given <a data-link-type=\"dfn|abstract-op\" data-cite=\"JSON#section-4\" href=\"https://www.rfc-editor.org/info/rfc8259/#section-4\" id=\"ref-for-index-term-object-type-3\">object</a>\n          <var data-type=\"JSON\">json</var> and <a data-link-type=\"dfn\" data-cite=\"infra\" data-cite-path=\"\" data-cite-frag=\"ordered-map\" href=\"https://infra.spec.whatwg.org/#ordered-map\" id=\"ref-for-index-term-ordered-map-1\">ordered map</a> <var data-type=\"ordered map\">manifest</var>:",
       "rationale": ".algorithm",
       "steps": [
         {
-          "html": "If <var data-type=\"JSON\">json</var>[\"share_target\"] is not an <a data-link-type=\"dfn|abstract-op\" data-cite=\"JSON#section-4\" href=\"https://www.rfc-editor.org/rfc/rfc8259#section-4\" id=\"ref-for-index-term-object-type-4\">object</a>, return."
+          "html": "If <var data-type=\"JSON\">json</var>[\"share_target\"] is not an <a data-link-type=\"dfn|abstract-op\" data-cite=\"JSON#section-4\" href=\"https://www.rfc-editor.org/info/rfc8259/#section-4\" id=\"ref-for-index-term-object-type-4\">object</a>, return."
         },
         {
           "html": "Let <var data-type=\"object\">target</var> be <var data-type=\"JSON\">json</var>[\"share_target\"]."
@@ -91,7 +91,7 @@
                   "html": "If <var data-type=\"object\">target</var>[\"param\"] doesn't have a property <var data-type=\"string\">member</var>,\n                  continue."
                 },
                 {
-                  "html": "If <var data-type=\"object\">target</var>[\"param\"][member] is not a <a data-link-type=\"dfn|abstract-op\" data-cite=\"JSON#section-7\" href=\"https://www.rfc-editor.org/rfc/rfc8259#section-7\" id=\"ref-for-index-term-string-2\">string</a>, return."
+                  "html": "If <var data-type=\"object\">target</var>[\"param\"][member] is not a <a data-link-type=\"dfn|abstract-op\" data-cite=\"JSON#section-7\" href=\"https://www.rfc-editor.org/info/rfc8259/#section-7\" id=\"ref-for-index-term-string-2\">string</a>, return."
                 },
                 {
                   "html": "Set <var data-type=\"ordered map\">params</var>[member] to <var data-type=\"object\">target</var>[\"param\"][member]."

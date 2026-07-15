@@ -1,0 +1,468 @@
+{
+  "spec": {
+    "title": "Verifiable Credential Forgery Defense v1.0",
+    "url": "https://w3c.github.io/vc-forgery-defense/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-conforming-document",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-conforming-document",
+      "linkingText": [
+        "conforming document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/vc-forgery-defense/#conformance",
+        "title": "Conformance",
+        "alternateIds": [
+          "x2-conformance"
+        ],
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-conforming-processor",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-conforming-processor",
+      "linkingText": [
+        "conforming processor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/vc-forgery-defense/#conformance",
+        "title": "Conformance",
+        "alternateIds": [
+          "x2-conformance"
+        ],
+        "number": "2"
+      },
+      "definedIn": "prose",
+      "links": []
+    },
+    {
+      "id": "dfn-witness",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-witness",
+      "linkingText": [
+        "witness"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-forgery-defense/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-witness-list",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-witness-list",
+      "linkingText": [
+        "witness list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-forgery-defense/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-witness-list-credential",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-witness-list-credential",
+      "linkingText": [
+        "witness list credential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-forgery-defense/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-witness-list-entry",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-witness-list-entry",
+      "linkingText": [
+        "witness list entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-forgery-defense/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-witness-seed",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-witness-seed",
+      "linkingText": [
+        "witness seed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-forgery-defense/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-witness-index",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-witness-index",
+      "linkingText": [
+        "witness index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-forgery-defense/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-witness-length",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-witness-length",
+      "linkingText": [
+        "witness length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-forgery-defense/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-witness-count",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-witness-count",
+      "linkingText": [
+        "witness count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-forgery-defense/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-encoded-witnesses",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-encoded-witnesses",
+      "linkingText": [
+        "encoded witnesses"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-forgery-defense/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-implicit-mode",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-implicit-mode",
+      "linkingText": [
+        "implicit mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-forgery-defense/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-explicit-mode",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-explicit-mode",
+      "linkingText": [
+        "explicit mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-forgery-defense/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-standalone-mode",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-standalone-mode",
+      "linkingText": [
+        "standalone mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://w3c.github.io/vc-forgery-defense/#terminology",
+        "title": "Terminology",
+        "alternateIds": [
+          "x3-terminology"
+        ],
+        "number": "3"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-witnessseed",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-witnessseed",
+      "linkingText": [
+        "witnessSeed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "witness-list-properties",
+        "href": "https://w3c.github.io/vc-forgery-defense/#witness-list-properties",
+        "title": "Witness List Properties",
+        "alternateIds": [
+          "x4-1-1-witness-list-properties"
+        ],
+        "number": "4.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-witnesslength",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-witnesslength",
+      "linkingText": [
+        "witnessLength"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "witness-list-properties",
+        "href": "https://w3c.github.io/vc-forgery-defense/#witness-list-properties",
+        "title": "Witness List Properties",
+        "alternateIds": [
+          "x4-1-1-witness-list-properties"
+        ],
+        "number": "4.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-witnesscount",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-witnesscount",
+      "linkingText": [
+        "witnessCount"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "witness-list-properties",
+        "href": "https://w3c.github.io/vc-forgery-defense/#witness-list-properties",
+        "title": "Witness List Properties",
+        "alternateIds": [
+          "x4-1-1-witness-list-properties"
+        ],
+        "number": "4.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-encodedwitnesses",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-encodedwitnesses",
+      "linkingText": [
+        "encodedWitnesses"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "witness-list-properties",
+        "href": "https://w3c.github.io/vc-forgery-defense/#witness-list-properties",
+        "title": "Witness List Properties",
+        "alternateIds": [
+          "x4-1-1-witness-list-properties"
+        ],
+        "number": "4.1.1"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-witnesslistcredential",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-witnesslistcredential",
+      "linkingText": [
+        "witnessListCredential"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "witness-list-entry",
+        "href": "https://w3c.github.io/vc-forgery-defense/#witness-list-entry",
+        "title": "Witness List Entry",
+        "alternateIds": [
+          "x4-2-witness-list-entry"
+        ],
+        "number": "4.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    },
+    {
+      "id": "dfn-witnessindex",
+      "href": "https://w3c.github.io/vc-forgery-defense/#dfn-witnessindex",
+      "linkingText": [
+        "witnessIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "witness-list-entry",
+        "href": "https://w3c.github.io/vc-forgery-defense/#witness-list-entry",
+        "title": "Witness List Entry",
+        "alternateIds": [
+          "x4-2-witness-list-entry"
+        ],
+        "number": "4.2"
+      },
+      "definedIn": "dt",
+      "links": []
+    }
+  ]
+}

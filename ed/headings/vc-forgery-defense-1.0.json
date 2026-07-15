@@ -1,0 +1,359 @@
+{
+  "spec": {
+    "title": "Verifiable Credential Forgery Defense v1.0",
+    "url": "https://w3c.github.io/vc-forgery-defense/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/vc-forgery-defense/#title",
+      "level": 1,
+      "title": "Verifiable Credential Forgery Defense v1.0"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://w3c.github.io/vc-forgery-defense/#subtitle",
+      "level": 2,
+      "title": "An anti-forgery mechanism for Verifiable Credentials using indexed hash witnesses"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/vc-forgery-defense/#toc",
+      "level": 2,
+      "title": "Table of Contents",
+      "alternateIds": [
+        "table-of-contents"
+      ]
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/vc-forgery-defense/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "alternateIds": [
+        "x1-introduction"
+      ],
+      "number": "1"
+    },
+    {
+      "id": "design-goals",
+      "href": "https://w3c.github.io/vc-forgery-defense/#design-goals",
+      "level": 3,
+      "title": "Design Goals",
+      "alternateIds": [
+        "x1-1-design-goals"
+      ],
+      "number": "1.1"
+    },
+    {
+      "id": "usage-overview",
+      "href": "https://w3c.github.io/vc-forgery-defense/#usage-overview",
+      "level": 3,
+      "title": "Usage Overview",
+      "alternateIds": [
+        "x1-2-usage-overview"
+      ],
+      "number": "1.2"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/vc-forgery-defense/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "alternateIds": [
+        "x2-conformance"
+      ],
+      "number": "2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/vc-forgery-defense/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "alternateIds": [
+        "x3-terminology"
+      ],
+      "number": "3"
+    },
+    {
+      "id": "data-model",
+      "href": "https://w3c.github.io/vc-forgery-defense/#data-model",
+      "level": 2,
+      "title": "Data Model",
+      "alternateIds": [
+        "x4-data-model"
+      ],
+      "number": "4"
+    },
+    {
+      "id": "witness-list-credential",
+      "href": "https://w3c.github.io/vc-forgery-defense/#witness-list-credential",
+      "level": 3,
+      "title": "Witness List Credential",
+      "alternateIds": [
+        "x4-1-witness-list-credential"
+      ],
+      "number": "4.1"
+    },
+    {
+      "id": "witness-list-properties",
+      "href": "https://w3c.github.io/vc-forgery-defense/#witness-list-properties",
+      "level": 4,
+      "title": "Witness List Properties",
+      "alternateIds": [
+        "x4-1-1-witness-list-properties"
+      ],
+      "number": "4.1.1"
+    },
+    {
+      "id": "witness-list-entry",
+      "href": "https://w3c.github.io/vc-forgery-defense/#witness-list-entry",
+      "level": 3,
+      "title": "Witness List Entry",
+      "alternateIds": [
+        "x4-2-witness-list-entry"
+      ],
+      "number": "4.2"
+    },
+    {
+      "id": "algorithms",
+      "href": "https://w3c.github.io/vc-forgery-defense/#algorithms",
+      "level": 2,
+      "title": "Algorithms",
+      "alternateIds": [
+        "x5-algorithms"
+      ],
+      "number": "5"
+    },
+    {
+      "id": "generate-witness-list",
+      "href": "https://w3c.github.io/vc-forgery-defense/#generate-witness-list",
+      "level": 3,
+      "title": "Generate Witness List",
+      "alternateIds": [
+        "x5-1-generate-witness-list"
+      ],
+      "number": "5.1"
+    },
+    {
+      "id": "generate-witness-list-credential",
+      "href": "https://w3c.github.io/vc-forgery-defense/#generate-witness-list-credential",
+      "level": 3,
+      "title": "Generate Witness List Credential",
+      "alternateIds": [
+        "x5-2-generate-witness-list-credential"
+      ],
+      "number": "5.2"
+    },
+    {
+      "id": "verify-witness",
+      "href": "https://w3c.github.io/vc-forgery-defense/#verify-witness",
+      "level": 3,
+      "title": "Verify a Credential Witness",
+      "alternateIds": [
+        "x5-3-verify-a-credential-witness"
+      ],
+      "number": "5.3"
+    },
+    {
+      "id": "usage-modes",
+      "href": "https://w3c.github.io/vc-forgery-defense/#usage-modes",
+      "level": 2,
+      "title": "Usage Modes",
+      "alternateIds": [
+        "x6-usage-modes"
+      ],
+      "number": "6"
+    },
+    {
+      "id": "implicit-mode",
+      "href": "https://w3c.github.io/vc-forgery-defense/#implicit-mode",
+      "level": 3,
+      "title": "Implicit Mode",
+      "alternateIds": [
+        "x6-1-implicit-mode"
+      ],
+      "number": "6.1"
+    },
+    {
+      "id": "explicit-mode",
+      "href": "https://w3c.github.io/vc-forgery-defense/#explicit-mode",
+      "level": 3,
+      "title": "Explicit Mode",
+      "alternateIds": [
+        "x6-2-explicit-mode"
+      ],
+      "number": "6.2"
+    },
+    {
+      "id": "explicit-mode-verification",
+      "href": "https://w3c.github.io/vc-forgery-defense/#explicit-mode-verification",
+      "level": 4,
+      "title": "Verification in Explicit Mode",
+      "alternateIds": [
+        "x6-2-1-verification-in-explicit-mode"
+      ],
+      "number": "6.2.1"
+    },
+    {
+      "id": "standalone-mode",
+      "href": "https://w3c.github.io/vc-forgery-defense/#standalone-mode",
+      "level": 3,
+      "title": "Standalone Mode",
+      "alternateIds": [
+        "x6-3-standalone-mode"
+      ],
+      "number": "6.3"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/vc-forgery-defense/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "alternateIds": [
+        "x7-security-considerations"
+      ],
+      "number": "7"
+    },
+    {
+      "id": "quantum-key-compromise",
+      "href": "https://w3c.github.io/vc-forgery-defense/#quantum-key-compromise",
+      "level": 3,
+      "title": "Quantum Key Compromise",
+      "alternateIds": [
+        "x7-1-quantum-key-compromise"
+      ],
+      "number": "7.1"
+    },
+    {
+      "id": "seed-confidentiality",
+      "href": "https://w3c.github.io/vc-forgery-defense/#seed-confidentiality",
+      "level": 3,
+      "title": "Seed Confidentiality",
+      "alternateIds": [
+        "x7-2-seed-confidentiality"
+      ],
+      "number": "7.2"
+    },
+    {
+      "id": "false-positive-rate",
+      "href": "https://w3c.github.io/vc-forgery-defense/#false-positive-rate",
+      "level": 3,
+      "title": "False Positive Rate",
+      "alternateIds": [
+        "x7-3-false-positive-rate"
+      ],
+      "number": "7.3"
+    },
+    {
+      "id": "list-integrity",
+      "href": "https://w3c.github.io/vc-forgery-defense/#list-integrity",
+      "level": 3,
+      "title": "Witness List Integrity",
+      "alternateIds": [
+        "x7-4-witness-list-integrity"
+      ],
+      "number": "7.4"
+    },
+    {
+      "id": "issuer-information-leaks",
+      "href": "https://w3c.github.io/vc-forgery-defense/#issuer-information-leaks",
+      "level": 3,
+      "title": "Issuer Information Leaks",
+      "alternateIds": [
+        "x7-5-issuer-information-leaks"
+      ],
+      "number": "7.5"
+    },
+    {
+      "id": "rollback",
+      "href": "https://w3c.github.io/vc-forgery-defense/#rollback",
+      "level": 3,
+      "title": "List Replacement and Rollback",
+      "alternateIds": [
+        "x7-6-list-replacement-and-rollback"
+      ],
+      "number": "7.6"
+    },
+    {
+      "id": "issuer-repudiation",
+      "href": "https://w3c.github.io/vc-forgery-defense/#issuer-repudiation",
+      "level": 3,
+      "title": "Issuer Repudiation via Witness Replacement",
+      "alternateIds": [
+        "x7-7-issuer-repudiation-via-witness-replacement"
+      ],
+      "number": "7.7"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://w3c.github.io/vc-forgery-defense/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "alternateIds": [
+        "x8-privacy-considerations"
+      ],
+      "number": "8"
+    },
+    {
+      "id": "group-privacy",
+      "href": "https://w3c.github.io/vc-forgery-defense/#group-privacy",
+      "level": 3,
+      "title": "Group Privacy and List Size",
+      "alternateIds": [
+        "x8-1-group-privacy-and-list-size"
+      ],
+      "number": "8.1"
+    },
+    {
+      "id": "correlation",
+      "href": "https://w3c.github.io/vc-forgery-defense/#correlation",
+      "level": 3,
+      "title": "Correlation Risk",
+      "alternateIds": [
+        "x8-2-correlation-risk"
+      ],
+      "number": "8.2"
+    },
+    {
+      "id": "context",
+      "href": "https://w3c.github.io/vc-forgery-defense/#context",
+      "level": 2,
+      "title": "JSON-LD Context",
+      "alternateIds": [
+        "x9-json-ld-context"
+      ],
+      "number": "9"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/vc-forgery-defense/#references",
+      "level": 2,
+      "title": "References",
+      "alternateIds": [
+        "a-references"
+      ],
+      "number": "A"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/vc-forgery-defense/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "alternateIds": [
+        "a-1-normative-references"
+      ],
+      "number": "A.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/vc-forgery-defense/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "alternateIds": [
+        "a-2-informative-references"
+      ],
+      "number": "A.2"
+    }
+  ]
+}
